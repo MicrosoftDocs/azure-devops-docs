@@ -88,7 +88,7 @@ Versions in the server column are linked to the appropriate download location. Y
     </thead>
     <tbody>
         <tr>
-            <td rowspan="25">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services)</td>
+            <td rowspan="25">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services.md)</td>
             <td>New Queries experience</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -189,7 +189,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="29">[28 Aug 2017](/articles/news/2017/aug-28-team-services)</td>
+            <td rowspan="29">[28 Aug 2017](2017/aug-28-team-services.md)</td>
             <td>Work Items hub</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -306,7 +306,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
 		<tr>
-            <td rowspan="30">[4 Aug 2017](/articles/news/2017/aug-04-team-services)</td>
+            <td rowspan="30">[4 Aug 2017](2017/aug-04-team-services.md)</td>
             <td>Copy work item processes</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -427,7 +427,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
 	    <tr>
-            <td rowspan="20">[14 Jul 2017](/articles/news/2017/jul-14-team-services)</td>
+            <td rowspan="20">[14 Jul 2017](2017/jul-14-team-services.md)</td>
             <td>Migrate team projects between two inherited processes with the same parent</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -508,7 +508,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="24">[22 Jun 2017](/articles/news/2017/jun-22-team-services)</td>
+            <td rowspan="24">[22 Jun 2017](2017/jun-22-team-services.md)</td>
             <td>Fields can be shared across processes</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -605,7 +605,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>      
         <tr>
-            <td rowspan="19">[1 Jun 2017](/articles/news/2017/jun-01-team-services)</td>
+            <td rowspan="19">[1 Jun 2017](2017/jun-01-team-services.md)</td>
             <td>Mobile work item form general availability</td>
             <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
@@ -682,7 +682,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="25">[11 May 2017](/articles/news/2017/may-11-team-services)</td>
+            <td rowspan="25">[11 May 2017](2017/may-11-team-services.md)</td>
             <td>VM deployment (Public Preview)</td>
             <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
@@ -783,7 +783,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="19">[19 Apr 2017](/articles/news/2017/apr-19-team-services)</td>
+            <td rowspan="19">[19 Apr 2017](2017/apr-19-team-services.md)</td>
             <td>Delivery timeline markers</td>
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
@@ -860,7 +860,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="17">[29 Mar 2017](/articles/news/2017/mar-29-team-services)</td>
+            <td rowspan="17">[29 Mar 2017](2017/mar-29-team-services.md)</td>
             <td>Work item search for discussions</td>
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
@@ -929,7 +929,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="14">[8 Mar 2017](/articles/news/2017/mar-08-team-services)</td>
+            <td rowspan="14">[8 Mar 2017](2017/mar-08-team-services.md)</td>
             <td>Delivery Plans field criteria</td>
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
@@ -986,7 +986,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
-            <td rowspan="13">[15 Feb 2017](/articles/news/2017/feb-15-team-services)</td>
+            <td rowspan="13">[15 Feb 2017](2017/feb-15-team-services.md)</td>
             <td>Improved support for team PR notifications</td>
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
@@ -1039,7 +1039,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
-            <td rowspan="17">[25 Jan 2017](/articles/news/2017/jan-25-team-services)</td>
+            <td rowspan="17">[25 Jan 2017](2017/jan-25-team-services.md)</td>
             <td>Delivery Plans</td>
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
@@ -1108,7 +1108,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
-            <td rowspan="21">[5 Jan 2017](/articles/news/2017/jan-05-team-services)</td>
+            <td rowspan="21">[5 Jan 2017](2017/jan-05-team-services.md)</td>
             <td>New account and project home pages</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
@@ -1193,7 +1193,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td rowspan="14">[23 Nov 2016](/articles/news/2016/nov-23-team-services)</td>
+            <td rowspan="14">[23 Nov 2016](2016/nov-23-team-services.md)</td>
             <td>Search for commits in branches</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
@@ -1250,7 +1250,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td rowspan="4">[16 Nov 2016](/articles/news/2016/nov-16-team-services)</td>
+            <td rowspan="4">[16 Nov 2016](2016/nov-16-team-services.md)</td>
             <td>Package Management General Availability</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -1267,7 +1267,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
-            <td rowspan="13">[2 Nov 2016](/articles/news/2016/nov-02-team-services)</td>
+            <td rowspan="13">[2 Nov 2016](2016/nov-02-team-services.md)</td>
             <td>Package Management in India and Brazil</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -1320,7 +1320,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td rowspan="15">[12 Oct 2016](/articles/news/2016/oct-12-team-services)</td>
+            <td rowspan="15">[12 Oct 2016](2016/oct-12-team-services.md)</td>
             <td>New navigation on by default</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
@@ -1381,7 +1381,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="13">[21 Sep 2016](/articles/news/2016/sep-21-team-services)</td>
+            <td rowspan="13">[21 Sep 2016](2016/sep-21-team-services.md)</td>
             <td>Attachments live preview</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
@@ -1434,7 +1434,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td rowspan="14">[2 Sep 2016](/articles/news/2016/sep-02-team-services)</td>
+            <td rowspan="14">[2 Sep 2016](2016/sep-02-team-services.md)</td>
             <td>Custom work item types</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -1491,7 +1491,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="22">[17 Aug 2016](/articles/news/2016/aug-17-team-services)</td>
+            <td rowspan="22">[17 Aug 2016](2016/aug-17-team-services.md)</td>
             <td>Pull Request improvements: <br />
                 Redesigned UI <br />
                 Overview <br />
@@ -1586,7 +1586,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="9">[29 Jul 2016](/articles/news/2016/jul-29-team-services) </td>
+            <td rowspan="9">[29 Jul 2016](2016/jul-29-team-services.md) </td>
             <td>Git and TFVC – History view and diff view updates</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -1629,7 +1629,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="18">[7 Jul 2016](/articles/news/2016/jul-07-team-services)  </td>
+            <td rowspan="18">[7 Jul 2016](2016/jul-07-team-services.md)  </td>
             <td>Resizable WIT charts on dashboards</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -1702,7 +1702,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="22">[17 Jun 2016](/articles/news/2016/jun-17-team-services)</td>
+            <td rowspan="22">[17 Jun 2016](2016/jun-17-team-services.md)</td>
             <td>Git &amp; TFVC – Browsing branches</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -1796,7 +1796,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="15">[1 Jun 2016](/articles/news/2016/jun-01-team-services)</td>
+            <td rowspan="15">[1 Jun 2016](2016/jun-01-team-services.md)</td>
             <td>Filtering in Kanban board</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -1857,7 +1857,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="19">[6 May 2016](/articles/news/2016/may-06-team-services)</td>
+            <td rowspan="19">[6 May 2016](2016/may-06-team-services.md)</td>
             <td>Email improvements</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -1934,7 +1934,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="17">[13 Apr 2016](/articles/news/2016/apr-13-team-services)</td>
+            <td rowspan="17">[13 Apr 2016](2016/apr-13-team-services.md)</td>
             <td>Follow a work item</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -2003,7 +2003,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="11">[24 Mar 2016](/articles/news/2016/mar-24-team-services)</td>
+            <td rowspan="11">[24 Mar 2016](2016/mar-24-team-services.md)</td>
             <td>Commit traceability</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
@@ -2048,7 +2048,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="13">[3 Mar 2016](/articles/news/2016/mar-03-team-services)</td>
+            <td rowspan="13">[3 Mar 2016](2016/mar-03-team-services.md)</td>
             <td>View test results for each release environment</td>
             <td style="background:rgb(198, 239, 200);">[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)</td>
         </tr>
@@ -2101,7 +2101,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="13">[16 Feb 2016](/articles/news/2016/feb-16-team-services)</td>
+            <td rowspan="13">[16 Feb 2016](2016/feb-16-team-services.md)</td>
             <td>Package management is now available in Europe and Australia</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -2154,7 +2154,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(198, 239, 200);">[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)</td>
         </tr>
         <tr>
-            <td rowspan="17">[25 Jan 2016](/articles/news/2016/jan-25-team-services)</td>
+            <td rowspan="17">[25 Jan 2016](2016/jan-25-team-services.md)</td>
             <td>Public preview of the dashboard widget SDK</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -2223,7 +2223,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="8">[10 Dec 2015](/articles/news/2015/dec-10-team-services)</td>
+            <td rowspan="8">[10 Dec 2015](2015/dec-10-team-services.md)</td>
             <td>Custom work item fields</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -2256,7 +2256,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(198, 239, 200);">[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)</td>
         </tr>
         <tr>
-            <td rowspan="7">[24 Nov 2015](/articles/news/2015/nov-24-team-services)</td>
+            <td rowspan="7">[24 Nov 2015](2015/nov-24-team-services.md)</td>
             <td>Git and TFVC in the same team project</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2285,7 +2285,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(198, 239, 200);">[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)</td>
         </tr>
         <tr>
-            <td rowspan="7">[18 Nov 2015](/articles/news/2015/nov-18-team-services)</td>
+            <td rowspan="7">[18 Nov 2015](2015/nov-18-team-services.md)</td>
             <td>Extensions and Marketplace</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -2314,7 +2314,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="6">[30 Oct 2015](/articles/news/2015/oct-30-team-services)</td>
+            <td rowspan="6">[30 Oct 2015](2015/oct-30-team-services.md)</td>
             <td>Dashboards</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2339,7 +2339,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="5">[8 Oct 2015](/articles/news/2015/oct-08-team-services)</td>
+            <td rowspan="5">[8 Oct 2015](2015/oct-08-team-services.md)</td>
             <td>Azure Active Directory Group support</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
@@ -2360,7 +2360,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td rowspan="7">[18 Sep 2015](/articles/news/2015/sep-18-team-services)</td>
+            <td rowspan="7">[18 Sep 2015](2015/sep-18-team-services.md)</td>
             <td>Inline tasks on the Kanban board</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2389,7 +2389,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td rowspan="4">[26 Aug 2015](/articles/news/2015/aug-26-team-services)</td>
+            <td rowspan="4">[26 Aug 2015](2015/aug-26-team-services.md)</td>
             <td>Rename columns in place</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2406,7 +2406,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td rowspan="4">[7 Aug 2015](/articles/news/2015/aug-07-team-services)</td>
+            <td rowspan="4">[7 Aug 2015](2015/aug-07-team-services.md)</td>
             <td>Multi-select items on the product backlog</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2428,7 +2428,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
-            <td rowspan="7">[17 Jul 2015](/articles/news/2015/jul-17-team-services)</td>
+            <td rowspan="7">[17 Jul 2015](2015/jul-17-team-services.md)</td>
             <td>Multiple activities per team member</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2457,7 +2457,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td rowspan="3">[7 Jul 2015](/articles/news/2015/jul-07-team-services)</td>
+            <td rowspan="3">[7 Jul 2015](2015/jul-07-team-services.md)</td>
             <td>Card coloring on Kanban board</td>
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2470,7 +2470,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td rowspan="4">[3 Jun 2015](/articles/news/2015/jun-03-team-services)</td>
+            <td rowspan="4">[3 Jun 2015](2015/jun-03-team-services.md)</td>
             <td>Kanban swim lanes</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2487,7 +2487,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td rowspan="7">[15 May 2015](/articles/news/2015/may-15-team-services)</td>
+            <td rowspan="7">[15 May 2015](2015/may-15-team-services.md)</td>
             <td>Build vNext</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2516,7 +2516,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>[11 May 2015](/articles/news/2015/may-11-team-services)</td>
+            <td>[11 May 2015](2015/may-11-team-services.md)</td>
             <td>Application Insights: <br />
                 iOS and Android support <br />
                 Performance counters for Java applications <br />
@@ -2540,7 +2540,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(198, 239, 200);">2015.2</td>
         </tr>
         <tr>
-            <td rowspan="4">[27 Apr 2015](/articles/news/2015/apr-27-team-services)</td>
+            <td rowspan="4">[27 Apr 2015](2015/apr-27-team-services.md)</td>
             <td>Adding fields to cards</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2557,12 +2557,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>[24 Apr 2015](/articles/news/2015/apr-24-team-services)</td>
+            <td>[24 Apr 2015](2015/apr-24-team-services.md)</td>
             <td>Team Project Rename</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>[22 Apr 2015](/articles/news/2015/apr-22-team-services)</td>
+            <td>[22 Apr 2015](2015/apr-22-team-services.md)</td>
             <td>Application Insights: <br />
                 Synthetic data filtering <br />
                 New usage experience for ASP.NET, Java and other applications <br />
@@ -2575,7 +2575,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="4">[10 Apr 2015](/articles/news/2015/apr-10-team-services)</td>
+            <td rowspan="4">[10 Apr 2015](2015/apr-10-team-services.md)</td>
             <td>Configure cards</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2592,12 +2592,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>[27 Mar 2015](/articles/news/2015/mar-27-team-services)</td>
+            <td>[27 Mar 2015](2015/mar-27-team-services.md)</td>
             <td>Application Insights: Save search page, pause export and export on alert fail</td>
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="7">[10 Mar 2015](/articles/news/2015/mar-10-team-services)</td>
+            <td rowspan="7">[10 Mar 2015](2015/mar-10-team-services.md)</td>
             <td>Current iteration query token</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2631,7 +2631,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="4">[18 Feb 2015](/articles/news/2015/feb-18-team-services)</td>
+            <td rowspan="4">[18 Feb 2015](2015/feb-18-team-services.md)</td>
             <td>Adding and editing directly from the board</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2658,7 +2658,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="4">[27 Jan 2015](/articles/news/2015/jan-27-team-services)</td>
+            <td rowspan="4">[27 Jan 2015](2015/jan-27-team-services.md)</td>
             <td>Basic license upgraded</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2680,7 +2680,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="6">[17 Dec 2014](/articles/news/2014/dec-17-team-services)</td>
+            <td rowspan="6">[17 Dec 2014](2014/dec-17-team-services.md)</td>
             <td>Quick code editing</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2714,7 +2714,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="5">[2 Dec 2014](/articles/news/2014/dec-02-team-services)</td>
+            <td rowspan="5">[2 Dec 2014](2014/dec-02-team-services.md)</td>
             <td>Identity control and avatars</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2735,12 +2735,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>[12 Nov 2014](/articles/news/2014/dec-02-team-services#nov12)</td>
+            <td>[12 Nov 2014](2014/dec-02-team-services#nov12)</td>
             <td>Release Management Preview as VSTS service</td>
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="7">[4 Nov 2014](/articles/news/2014/nov-04-team-services)</td>
+            <td rowspan="7">[4 Nov 2014](2014/nov-04-team-services.md)</td>
             <td>Bugs on the backlog</td>
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
@@ -2769,7 +2769,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td rowspan="3">[28 Oct 2014](/articles/news/2014/oct-28-team-services)</td>
+            <td rowspan="3">[28 Oct 2014](2014/oct-28-team-services.md)</td>
             <td>European Datacenter</td>
             <td>--</td>
         </tr>
@@ -2782,7 +2782,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="2">[14 Oct 2014](/articles/news/2014/oct-14-team-services)</td>
+            <td rowspan="2">[14 Oct 2014](2014/oct-14-team-services.md)</td>
             <td>Test artifacts as work items</td>
             <td style="background:rgb(216, 194, 239);">[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -2791,7 +2791,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td rowspan="3">[23 Sep 2014](/articles/news/2014/sep-23-team-services)</td>
+            <td rowspan="3">[23 Sep 2014](2014/sep-23-team-services.md)</td>
             <td>Maximizing text area fields</td>
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
@@ -2804,7 +2804,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td rowspan="6">[4 Sep 2014](/articles/news/2014/sep-04-team-services)</td>
+            <td rowspan="6">[4 Sep 2014](2014/sep-04-team-services.md)</td>
             <td>Work Item query improvements</td>
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
@@ -2829,12 +2829,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>[27 Aug 2014](/articles/news/2014/aug-27-team-services)</td>
+            <td>[27 Aug 2014](2014/aug-27-team-services.md)</td>
             <td>A license for Stakeholders</td>
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td rowspan="2">[18 Aug 2014](/articles/news/2014/aug-18-team-services)</td>
+            <td rowspan="2">[18 Aug 2014](2014/aug-18-team-services.md)</td>
             <td>Project Welcome pages</td>
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
@@ -2843,7 +2843,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td rowspan="5">[21 Jul 2014](/articles/news/2014/jul-21-team-services)</td>
+            <td rowspan="5">[21 Jul 2014](2014/jul-21-team-services.md)</td>
             <td>Using corporate identities with existing accounts</td>
             <td>--</td>
         </tr>
@@ -2864,7 +2864,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[1 Jul 2014](/articles/news/2014/jul-01-team-services)</td>
+            <td rowspan="3">[1 Jul 2014](2014/jul-01-team-services.md)</td>
             <td>Hiding work in progress on the backlog</td>
             <td style="background:rgb(216, 194, 239);">[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -2877,12 +2877,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td>[10 Jun 2014](/articles/news/2014/jun-10-team-services)</td>
+            <td>[10 Jun 2014](2014/jun-10-team-services.md)</td>
             <td>Pull Requests</td>
             <td style="background:rgb(231, 179, 249);">[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)</td>
         </tr>
         <tr>
-            <td rowspan="3">[20 May 2014](/articles/news/2014/may-20-team-services)</td>
+            <td rowspan="3">[20 May 2014](2014/may-20-team-services.md)</td>
             <td>Using corporate identities</td>
             <td>--</td>
         </tr>
@@ -2895,7 +2895,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="2">[12 May 2014](/articles/news/2014/may-12-team-services)</td>
+            <td rowspan="2">[12 May 2014](2014/may-12-team-services.md)</td>
             <td>Integrate with Visual Studio Team Services</td>
             <td>--</td>
         </tr>
@@ -2904,7 +2904,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[3 Apr 2014](/articles/news/2014/apr-03-team-services)</td>
+            <td rowspan="3">[3 Apr 2014](2014/apr-03-team-services.md)</td>
             <td>General Availability of Visual Studio Team Services</td>
             <td>--</td>
         </tr>
@@ -2917,7 +2917,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td rowspan="2">[18 Mar 2014](/articles/news/2014/mar-18-team-services)</td>
+            <td rowspan="2">[18 Mar 2014](2014/mar-18-team-services.md)</td>
             <td>Getting started with Application Insights</td>
             <td>--</td>
         </tr>
@@ -2926,7 +2926,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[28 Feb 2014](/articles/news/2014/feb-28-team-services)</td>
+            <td rowspan="3">[28 Feb 2014](2014/feb-28-team-services.md)</td>
             <td>Build support for Java code managed in Git</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -2939,7 +2939,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="2">[10 Feb 2014](/articles/news/2014/feb-10-team-services)</td>
+            <td rowspan="2">[10 Feb 2014](2014/feb-10-team-services.md)</td>
             <td>Exporting test artifacts</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -2948,7 +2948,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td rowspan="3">[22 Jan 2014](/articles/news/2014/jan-22-team-services)</td>
+            <td rowspan="3">[22 Jan 2014](2014/jan-22-team-services.md)</td>
             <td>Querying tags</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -2961,7 +2961,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td rowspan="3">[11 Dec 2013](/articles/news/2013/dec-11-team-services)</td>
+            <td rowspan="3">[11 Dec 2013](2013/dec-11-team-services.md)</td>
             <td>Application Insights – Response Stacked Distribution</td>
             <td>--</td>
         </tr>
@@ -2974,7 +2974,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td rowspan="3">[13 Nov 2013](/articles/news/2013/nov-13-team-services)</td>
+            <td rowspan="3">[13 Nov 2013](2013/nov-13-team-services.md)</td>
             <td>Commercial preview</td>
             <td>--</td>
         </tr>
@@ -2987,22 +2987,22 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>[8 Nov 2013](/articles/news/2013/nov-08-team-services)</td>
+            <td>[8 Nov 2013](2013/nov-08-team-services.md)</td>
             <td>Work item chart pinning</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td>[21 Oct 2013](/articles/news/2013/oct-21-team-services)</td>
+            <td>[21 Oct 2013](2013/oct-21-team-services.md)</td>
             <td>New account and project pages</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td>[17 Oct 2013](/articles/news/2013/oct-17-team-services)</td>
+            <td>[17 Oct 2013](2013/oct-17-team-services.md)</td>
             <td>Build images updated to VS 2013</td>
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[30 Sep 2013](/articles/news/2013/sep-30-team-services)</td>
+            <td rowspan="3">[30 Sep 2013](2013/sep-30-team-services.md)</td>
             <td>New languages supported for code syntax highlighting</td>
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
@@ -3015,7 +3015,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(229, 212, 247);">[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)</td>
         </tr>
         <tr>
-            <td rowspan="4">[9 Sep 2013](/articles/news/2013/sep-09-team-services)</td>
+            <td rowspan="4">[9 Sep 2013](2013/sep-09-team-services.md)</td>
             <td>Work item charts</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3032,12 +3032,12 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td>[19 Aug 2013](/articles/news/2013/aug-19-team-services)</td>
+            <td>[19 Aug 2013](2013/aug-19-team-services.md)</td>
             <td>Improved code commenting</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="3">[29 Jul 2013](/articles/news/2013/jul-29-team-services)</td>
+            <td rowspan="3">[29 Jul 2013](2013/jul-29-team-services.md)</td>
             <td>Improved permission management for Git repos</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3050,7 +3050,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="2" style="text-align:left;">[10 Jul 2013](/articles/news/2013/jul-10-team-services)</td>
+            <td rowspan="2" style="text-align:left;">[10 Jul 2013](2013/jul-10-team-services.md)</td>
             <td>Backlog mapping</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3059,7 +3059,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="3">[26 Jun 2013](/articles/news/2013/jun-26-team-services)</td>
+            <td rowspan="3">[26 Jun 2013](2013/jun-26-team-services.md)</td>
             <td>Windows 8.1 support in hosted build</td>
             <td>--</td>
         </tr>
@@ -3072,7 +3072,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="3">[19 Jun 2013](/articles/news/2013/jun-19-team-services)</td>
+            <td rowspan="3">[19 Jun 2013](2013/jun-19-team-services.md)</td>
             <td>Agile Portfolio Management updates – view filter and quick decompose</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3085,7 +3085,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="5">[3 Jun 2013](/articles/news/2013/jun-03-team-services)</td>
+            <td rowspan="5">[3 Jun 2013](2013/jun-03-team-services.md)</td>
             <td>Agile Portfolio Management</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3106,7 +3106,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[28 May 2013](/articles/news/2013/may-28-team-services)</td>
+            <td rowspan="3">[28 May 2013](2013/may-28-team-services.md)</td>
             <td>Build IaaS</td>
             <td>--</td>
         </tr>
@@ -3119,7 +3119,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="4">[13 May 2013](/articles/news/2013/may-13-team-services)</td>
+            <td rowspan="4">[13 May 2013](2013/may-13-team-services.md)</td>
             <td>Work item colors based on process template settings</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3136,7 +3136,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="2">[22 Mar 2013](/articles/news/2013/mar-22-team-services)</td>
+            <td rowspan="2">[22 Mar 2013](2013/mar-22-team-services.md)</td>
             <td>Branches view for Git</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3145,7 +3145,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="4">[4 Mar 2013](/articles/news/2013/mar-04-team-services)</td>
+            <td rowspan="4">[4 Mar 2013](2013/mar-04-team-services.md)</td>
             <td>Customizable Kanban columns</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3162,7 +3162,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
         <tr>
-            <td rowspan="4">[11 Feb 2013](/articles/news/2013/feb-11-team-services)</td>
+            <td rowspan="4">[11 Feb 2013](2013/feb-11-team-services.md)</td>
             <td>Continuous Integration for Git</td>
             <td style="background:rgb(243, 232, 255);">[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)</td>
         </tr>
@@ -3179,7 +3179,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td rowspan="3">[30 Jan 2013](/articles/news/2013/jan-30-team-services)</td>
+            <td rowspan="3">[30 Jan 2013](2013/jan-30-team-services.md)</td>
             <td>Work item tagging</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3192,17 +3192,17 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td>[21 Jan 2013](/articles/news/2013/jan-21-team-services)</td>
+            <td>[21 Jan 2013](2013/jan-21-team-services.md)</td>
             <td>Changeset context menu in Web UI</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td>[9 Jan 2013](/articles/news/2013/jan-09-team-services)</td>
+            <td>[9 Jan 2013](2013/jan-09-team-services.md)</td>
             <td>Account rename of Team Foundation Service account</td>
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="5">[7 Jan 2013](/articles/news/2013/jan-07-team-services)</td>
+            <td rowspan="5">[7 Jan 2013](2013/jan-07-team-services.md)</td>
             <td>Email work items from backlog</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3223,7 +3223,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td rowspan="3">[10 Dec 2012](/articles/news/2012/dec-10-team-services)</td>
+            <td rowspan="3">[10 Dec 2012](2012/dec-10-team-services.md)</td>
             <td>Renamed Source to Code in Web UI hub</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3236,7 +3236,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="2">[19 Nov 2012](/articles/news/2012/nov-19-team-services)</td>
+            <td rowspan="2">[19 Nov 2012](2012/nov-19-team-services.md)</td>
             <td>Send work items in email from TFS web access</td>
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3245,22 +3245,22 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(189, 214, 238);">[2012.2](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td>[31 Oct 2012](/articles/news/2012/oct-31-team-services)</td>
+            <td>[31 Oct 2012](2012/oct-31-team-services.md)</td>
             <td>General availability of Team Foundation Service</td>
             <td>--</td>
         </tr>
         <tr>
-            <td>[29 Oct 2012](/articles/news/2012/oct-29-team-services)</td>
+            <td>[29 Oct 2012](2012/oct-29-team-services.md)</td>
             <td>Build drops</td>
             <td>--</td>
         </tr>
         <tr>
-            <td>[8 Oct 2012](/articles/news/2012/oct-08-team-services)</td>
+            <td>[8 Oct 2012](2012/oct-08-team-services.md)</td>
             <td>400 character server paths for version control</td>
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td rowspan="3">[17 Sep 2012](/articles/news/2012/sep-17-team-services)</td>
+            <td rowspan="3">[17 Sep 2012](2012/sep-17-team-services.md)</td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3273,7 +3273,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td rowspan="4">[27 Aug 2012](/articles/news/2012/aug-27-team-services)</td>
+            <td rowspan="4">[27 Aug 2012](2012/aug-27-team-services.md)</td>
             <td>Improved source browsing, viewing, and searching</td>
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3290,7 +3290,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td rowspan="3">[13 Aug 2012](/articles/news/2012/aug-13-team-services)</td>
+            <td rowspan="3">[13 Aug 2012](2012/aug-13-team-services.md)</td>
             <td>Kanban board</td>
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
@@ -3303,7 +3303,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
         <tr>
-            <td rowspan="2">[6 Aug 2012](/articles/news/2012/aug-06-team-services)</td>
+            <td rowspan="2">[6 Aug 2012](2012/aug-06-team-services.md)</td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
             <td>[2012.1](https://www.microsoft.com/en-us/download/details.aspx?id=39305)</td>
         </tr>
