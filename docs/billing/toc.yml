@@ -50,6 +50,14 @@
       href: vs-subscriptions/manage-vs-subscriptions.md
     - name: View Visual Studio subscriptions
       href: vs-subscriptions/view-vs-subscriptions.md
+  - name: Cloud Solution Provider
+    items:
+    - name: Set up customer and billing
+      href: csp/set-up-csp-customer.md
+    - name: Buy VSTS for customers
+      href: csp/buy-csp-vsts.md
+    - name: Buy and manage VS subscriptions for customers
+      href: csp/buy-manage-vs-subs.md
 - name: Troubleshooting
   items:
   - name: Billing signup
