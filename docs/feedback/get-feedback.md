@@ -11,11 +11,11 @@ ms.date: 08/15/2017
 
 # Get feedback
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
->**Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) or [Basic access level](../../security/change-access-levels.md). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../security/change-access-levels.md) to request feedback. 
+>**Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../security/change-access-levels.md) to request feedback. 
 >
->In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../manual-test/stakeholder/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
+>In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../manual-test/stakeholder/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
  
 Once you have working software, you're ready to get feedback from your stakeholders. You can ask reviewers to provide videos, screenshots, type-written comments, and ratings. Their feedback is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 
@@ -28,9 +28,9 @@ To request feedback, you fill out a form that generates an email request to your
 
 	![Request feedback link in Homepage](_img/request-feedback-link.png)  
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../customize/configure-features-after-upgrade.md).</blockquote>  
+	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../work/customize/configure-features-after-upgrade.md).</blockquote>  
 
-	If the following message appears, you need to [configure an SMTP server](../../tfs-server/admin/setup-customize-alerts.md).
+	If the following message appears, you need to [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md).
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 
@@ -76,7 +76,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	![Screenshot icon and Comment text box on Provide page](_img/ALM_GF_AddScreenshot.png)  
 
 	> [!NOTE]
-	> **Security Note:** Unless you stop recording, everything is recorded&mdash;all steps that you take as well as anything you say. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. </blockquote>   
+	> **Security Note:** Unless you stop recording, everything is recorded&mdash;all steps that you take as well as anything you say. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box.   
 
 6. Reviewers can modify or even delete parts of their feedback, such as a recording, before they submit their feedback.
 
@@ -106,7 +106,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	With the feedback experience, you can engage stakeholders frequently to provide continuous feedback. Interacting with your working apps, your stakeholders can record rich and actionable data that the system automatically stores in the form of video or audio recordings, comments, and annotated screenshots. You can then take action on each feedback response by assigning it to a team member or creating bugs or backlog items to the linked feedback. 
 
 ##Related feedback notes  
-- You can only request feedback from a team project hosted on VSTS or an on-premises TFS. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
-- You can [change the audio device or annotation tool](https://msdn.microsoft.com/library/hh561374.aspx) using the Settings icon change settings icon on the Microsoft Feedback Client.  
-- If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](https://msdn.microsoft.com/library/hh420489.aspx).  
+- You can only request feedback from a team project hosted on VSTS or an on-premises TFS. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
+- You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
+- If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
 - You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  

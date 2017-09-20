@@ -49,7 +49,7 @@ The role of project manager typically encompasses planning the feature set to de
   
 To get started, see [Get started with Agile tools to plan and track work](../work/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers  
 
@@ -67,7 +67,7 @@ To get started, see the overviews provided here: [Build &amp; Release](../build-
 ### Stakeholders 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../security/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
 ## Administrator roles  

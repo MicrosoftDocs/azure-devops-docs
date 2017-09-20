@@ -11,7 +11,7 @@ ms.date: 02/22/2017
 
 # Enable remote audio capture
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To record audio, you must have an audio recording device configured on your computer, or on a remote machine if you access Microsoft Feedback Client, Test Runner, or Exploratory Testing from a remote device.  
   
@@ -61,6 +61,6 @@ To record audio as part of a feedback or testing session on a remote machine tha
      You must restart you client in order for it to register the audio settings.  
   
 ## Related notes
- [Exploratory testing](../../manual-test/getting-started/perform-exploratory-tests.md)   
- [Run your tests](../../manual-test/getting-started/run-manual-tests.md)   
- [Provide feedback using the Microsoft Feedback Manager](../connect/give-feedback.md)
+ [Exploratory testing](../manual-test/getting-started/perform-exploratory-tests.md)   
+ [Run your tests](../manual-test/getting-started/run-manual-tests.md)   
+ [Provide feedback using the Microsoft Feedback Manager](give-feedback.md)

@@ -198,22 +198,22 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
-    ![Create a list connection between Excel and the data store](../work/office/_img/bulk-modify-excel-blank-list.png)
+    ![Create a list connection between Excel and the data store](../work/backlogs/office/_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
 4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../accounts/add-users.md).
 
-    ![Connect to server](../work/office/_img/IC680074.png)
+    ![Connect to server](../work/backlogs/office/_img/IC680074.png)
 
     If it is your first time connecting from Excel or Project, you might have to add the VSTS account or TFS server to the list of recognized servers.
 
-    ![Add account or server](../work/office/_img/IC658167.png)
+    ![Add account or server](../work/backlogs/office/_img/IC658167.png)
 
 5.  Your worksheet or project plan is now bound to your team project. What this means is that you can add work items to the team project from the Office document or add work items to the Office document from the team project.
 
-    To learn more, see [Bulk add work items with Excel](../work/office/bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](../work/office/create-your-backlog-tasks-using-project.md).
+    To learn more, see [Bulk add work items with Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md).
 
 >[!NOTE]  
 >If the team project is moved to a different team project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the team project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
@@ -281,7 +281,7 @@ To connect to a team project, you need your user account added to the team proje
 
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 <a name="proxy"></a>
 ## Configure Visual Studio to connect to TFS Proxy
@@ -311,9 +311,9 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse) 
-- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md) 
+- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md) 
+- [Microsoft Feedback Client](../feedback/give-feedback.md) 
 
 ### Requirements and client compatibility 
 

@@ -102,7 +102,7 @@ Feedback
 <li>Add work item colors for Feedback Request and Feedback Response to ProcessConfiguration</li>
 </ul>
 </li>
-<li>To verify, [create a feedback request](../connect/get-feedback.md).  </li>
+<li>To verify, [create a feedback request](../../feedback/get-feedback.md).  </li>
 </ol>
 
 </td>
@@ -149,7 +149,7 @@ Storyboarding
 <td>
 <ol>
 <li>[Edit WITs](#edit-wit): Add  ```StoryboardsControl``` to the ```FORM``` section of those WITs you include in the Requirement Category; for example, add it to the User Story (Agile), Requirement (CMMI), or Product backlog item (Scrum)  </li>
-<li>To verify, [open Storyboarding from the WIT you updated](../office/storyboard-your-ideas-using-powerpoint.md).  </li>
+<li>To verify, [open Storyboarding from the WIT you updated](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).  </li>
 </ol>
 </td>
 </tr>

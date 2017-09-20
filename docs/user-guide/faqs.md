@@ -38,25 +38,25 @@ See [Software development roles](roles.md).
 ### Q: Can stakeholders who don't use Visual Studio participate on our team?  
  **A**: Yes. You can provide access to stakeholders who have no CAL for the following activities:  
   
--   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../quickstart/get-started-stakeholder.md).  
+-   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  
   
      To grant stakeholders access, add them to the [Stakeholder access group](../security/change-access-levels.md).  
   
--   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../work/connect/give-permissions-feedback.md).  
+-   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../feedback/give-permissions-feedback.md).  
   
 
 ### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?  
 **A:** Yes. You can connect to a team project from one of these clients:  
-- [Excel](../work/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
-- [Project](../work/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  
+- [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
+- [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  
 - [Project Professional](../work/tfs-ps-sync/synchronize-tfs-project-server.md)   
-- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
+- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md)  
+- [Microsoft Feedback Client](../feedback/give-feedback.md)  
 
 >[!NOTE]  
->Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See [Synchronize TFS with Project Server](../work/office/sync-ps-tfs.md) for details.  
+>Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details.  
 >Test Manager is deprecated for TFS 2017.   
 
 Also, you can find several open-source clients that have been added to [Marketplace extensions](https://marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:  

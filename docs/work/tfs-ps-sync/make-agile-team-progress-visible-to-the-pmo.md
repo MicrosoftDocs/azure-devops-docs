@@ -72,7 +72,7 @@ As a team lead, you can use the backlog, task board, and work item pages in the 
 -   [Submit User Stories to Project Server](#SubmitStories)   
 -   [Update Remaining and Completed Work](#UpdateWork)  
   
-You can also export a shared query to Excel to perform bulk updates of user stories and tasks. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md).  
+You can also export a shared query to Excel to perform bulk updates of user stories and tasks. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
   
 <a name="DefineStories"></a> 
 ### Define user stories and tasks  

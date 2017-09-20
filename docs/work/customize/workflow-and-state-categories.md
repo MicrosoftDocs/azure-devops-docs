@@ -112,7 +112,7 @@ In the following circumstances the system won't automatically update the work it
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
 - The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
 
-To learn more about process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+To learn more about process models, see [Customize your work tracking experience](customize-work.md).  
 
 ## Related notes
 
@@ -120,4 +120,4 @@ To learn more about process models, see [Customize your work tracking experience
 - [Customize a workflow for a process (Inheritance process model)](../process/customize-process-workflow.md)
 - [Change the workflow for a work item type](../reference/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md)
-- [Customize your work tracking experience](../customize/customize-work.md) 
+- [Customize your work tracking experience](customize-work.md) 

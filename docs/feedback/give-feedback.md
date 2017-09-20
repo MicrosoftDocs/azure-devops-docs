@@ -39,7 +39,8 @@ You can skip this procedure if you already have Microsoft Feedback Client instal
 
 1. Open your email request, and then choose the **Start your local feedback session** link
 
-	<blockquote style="font-size: 13px"><b>Note: </b>  If you are viewing the email from an internet-based email client, you might need to copy the address behind the link and paste it into the address bar of your browser.</blockquote>
+	> [!NOTE]   
+	> If you are viewing the email from an internet-based email client, you might need to copy the address behind the link and paste it into the address bar of your browser. 
 
 	If you're accessing the feedback tool on a remote computer, open the shortcut menu for the **Start your local feedback session** link, and then choose **Copy Hyperlink**. On the remote computer, choose **Start**, choose **Run**, paste the hyperlink into the box, and then choose the **OK** button.
 	
@@ -58,7 +59,7 @@ The feedback tool opens to the Start page. Launch the application by following t
 
 3. Follow any additional instructions provided to login or access the application.
 
-	For example, you would choose the **http://staging.fabrikamfiber.com/customer.aspx** link and then enter the user name and password provided. 
+	For example, you would choose the `http://staging.fabrikamfiber.com/customer.aspx` link and then enter the user name and password provided. 
 
 ## Provide feedback on requested items
 
@@ -98,7 +99,7 @@ You can change settings defined for the audio device and annotation tool at any 
  
 You can add text, capture a screenshot, annotate a screenshot, or attach a file as part of your feedback. You can perform these operations while you continue to record your feedback. 
 
-By annotating screenshots, you can indicate corrections or improvements by adding text or images to the screenshot that you captured. By default, Microsoft Paint opens automatically when you open a screenshot image that you captured within the feedback tool. You can also configure another annotation tool to open automatically whenever you capture a screenshot. For more information, see [Change the audio device or annotation tool](../reference/change-audio-device-annotation-tool.md).
+By annotating screenshots, you can indicate corrections or improvements by adding text or images to the screenshot that you captured. By default, Microsoft Paint opens automatically when you open a screenshot image that you captured within the feedback tool. You can also configure another annotation tool to open automatically whenever you capture a screenshot. For more information, see [Change the audio device or annotation tool](change-audio-device-annotation-tool.md).
 
 ![Add Txt Screenshot or File](_img/ALM_FB_StartStopDeleteRecording.png)
 
@@ -150,14 +151,14 @@ After you enter your feedback for each item, you can review, make corrections or
 ## Related notes
 
 - You [Initiate a feedback request](get-feedback.md) from the home page of your web portal or using the Other links widget from a team dashboard.  
-- You can [change the audio device or annotation tool](../reference/change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
-- If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](../reference/enable-remote-audio-capture.md).  
-- To record audio, you must have an audio recording device configured on your computer. If you access the feedback tool from a remote device, you might have to [enable remote audio capture](../reference/enable-remote-audio-capture.md).  
+- You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
+- If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
+- To record audio, you must have an audio recording device configured on your computer. If you access the feedback tool from a remote device, you might have to [enable remote audio capture](enable-remote-audio-capture.md).  
 
 
 ### Requirements to provide feedback 
 
 - To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to VSTS or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).  
-- Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=40768).  
+- Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142).
 
 

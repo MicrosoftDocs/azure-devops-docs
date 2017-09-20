@@ -137,7 +137,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	>[!TIP]  
 	>Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 	>
-	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../troubleshoot/resolve-backlog-reorder-issues.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
 
 <a id="adjust-work">  </a>
@@ -213,7 +213,7 @@ When you need to change the order of an item, simply drag the item to its new lo
 
 Ordering and re-parenting backlog items requires that you don't nest items of the same type within each other. That is, you don't create product backlog items that are children of other product backlog items, or tasks that are children of tasks. You can only re-parent tasks under backlog items, backlog items under features, and features under epics. 
 
-If you receive the following message, [you can fix it by removing nested child items](../troubleshoot/resolve-backlog-reorder-issues.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json).
+If you receive the following message, [you can fix it by removing nested child items](../backlogs/resolve-backlog-reorder-issues.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json).
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 

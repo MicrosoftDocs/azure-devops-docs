@@ -41,5 +41,5 @@ For definitions of each repository permission, see [Git repository permissions](
 <img src="_img/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #CCCCCC;" />  
 
 >[!NOTE]  
->Users with [Stakeholder access](../quickstart/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
+>Users with [Stakeholder access](../security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
 

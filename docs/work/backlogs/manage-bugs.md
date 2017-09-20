@@ -172,7 +172,7 @@ Add and review comments made about the work being performed by going to the disc
 
 
 >[!TIP]
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
+>Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
 
 
 ## Capture bugs using test tools

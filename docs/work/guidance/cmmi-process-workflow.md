@@ -32,7 +32,7 @@ To support additional CMMI processes, teams can track change requests, risks, is
 
 ## Define requirements 
 
-Create requirements from the quick add panel on the [product backlog page](../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../office//bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md).
+Create requirements from the quick add panel on the [product backlog page](../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 <img src="_img/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
 
@@ -170,7 +170,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 <tr>
 	<td><p>[Start Date/Finish Date](../track/query-by-date-or-current-iteration.md) </p></td>
-	<td><p>The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](../office/create-your-backlog-tasks-using-project.md) when you use it for scheduling.</p>
+	<td><p>The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md) when you use it for scheduling.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
@@ -298,7 +298,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
+>Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
 
 
 ## Track progress

@@ -47,7 +47,7 @@ As the following image shows, each work item form comes with a number of control
 | ![Clone icon](../_img/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Email icon](../_img/icons/email-icon.png) | [Email work item](../how-to/email-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Delete icon](../_img/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
-| ![Storyboard icon](../_img/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
+| ![Storyboard icon](../_img/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 
 <a id="update-work-status">  </a>
 ## Update work status  
@@ -162,7 +162,7 @@ From the web portal, simply copy the URL from the web browser address or hover o
 ## Start storyboarding  
 
 >[!NOTE]  
-><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
+><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 
@@ -191,7 +191,7 @@ From the [New work item widget](../../Report/widget-catalog.md#new-work-item-wid
 
 ![Add work item from a New work item widget](../../_img/alm-feature-new-work-item-widget.png)  
 
-If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md).
+If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../overview.md#scale).
 -->

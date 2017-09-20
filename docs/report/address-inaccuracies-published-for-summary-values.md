@@ -64,4 +64,4 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
 ## Related notes 
  [Add or change Project-to-TFS field mapping](../work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md)   
- [Create your backlog and tasks using Project](../work/office/create-your-backlog-tasks-using-project.md)
+ [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)

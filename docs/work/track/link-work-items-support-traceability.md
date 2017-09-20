@@ -127,7 +127,7 @@ These features let you quickly link or change links that use the parent-child li
 -   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/sprint-planning.md); from the web portal you can also drag-and-drop items to change the link structure. 
 -   To indent (![Indent](_img/IC588323.png)), outdent (![Outdent](_img/IC588324.png)), and change the link structure of a tree hierarchy, you can [re-parent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md#reparent) or use a [tree query in Team Explorer](using-queries.md#tree-query).
 
-You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
+You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 
 ## Link test cases, shared steps, and test results
@@ -194,7 +194,7 @@ For process templates associated with TFS 2015 and earlier versions, the  **Stor
 
 ![Storyboard links control](_img/IC589934.png)
 
-By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to VSTSusing this link type as described [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).
+By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to VSTSusing this link type as described [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
 
 
@@ -260,7 +260,7 @@ Restrictions and recommendations:
 
 Use this directional link to create one-to-many relationships between a single parent to one or more child items. Typical uses include:  
 <ul>
-<li><p>Create a work breakdown structure (WBS). See [Schedule tasks and assign resources using Microsoft Project](../office/create-your-backlog-tasks-using-project.md).</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see [Organize your backlog](../backlogs/organize-backlog.md).</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md).</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same team project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
+<li><p>Create a work breakdown structure (WBS). See [Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md).</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see [Organize your backlog](../backlogs/organize-backlog.md).</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same team project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
 
 <tr>
@@ -345,7 +345,7 @@ For additional information, see these topics:
 - [Add link to multiple work items](../backlogs/add-link.md)  
 - [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
-- [Bulk modify links using Excel](../office/bulk-add-modify-work-items-excel.md)  
+- [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
 ### Visualize related work and other objects 
 

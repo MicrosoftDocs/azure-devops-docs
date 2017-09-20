@@ -11,13 +11,13 @@ ms.date: 05/10/2017
 
 # Storyboard your ideas using PowerPoint
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
 
 ## Use storyboard shapes and PowerPoint features
 
-1.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../accounts/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
+1.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../../accounts/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
 
 2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
 
@@ -34,7 +34,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
     Or, from the web portal and the new work item form, click the **Start storyboarding** menu option from any valid work item.     
 
-	<img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 2px solid #C3C3C3;" /> 
 
 4.  Add a background shape that's appropriate for your app. To add a shape, just drag it onto the slide.
 
@@ -69,7 +69,7 @@ When you share your storyboards to a shared network location, you can link the s
 	>[!NOTE]  
 	>The **Storyboards** tab is no longer supported in the web form from VSTS  or TFS 2017 with the new web form enabled. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
 
-3.  If you're not already connected to a team project, [connect now](../../connect/connect-team-projects.md). If you can't connect, [get added as a team member](../scale/multiple-teams.md#add-team-members).
+3.  If you're not already connected to a team project, [connect now](../../../connect/connect-team-projects.md). If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).
 
     ![Connect to TFS](_img/IC652016.png)
 

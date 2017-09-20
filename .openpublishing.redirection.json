@@ -2617,33 +2617,123 @@
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/git-branching-guidance.md",
-            "redirect_url": "/vsts/git/concepts/git-branching-guidance",
+            "source_path": "docs/work/connect/get-feedback.md",
+            "redirect_url": "/vsts/feedback/get-feedback",
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/mapping-my-tfvc-actions-to-git.md",
-            "redirect_url": "/vsts/git/concepts/mapping-my-tfvc-actions-to-git",
+            "source_path": "docs/work/connect/give-feedback.md",
+            "redirect_url": "/vsts/feedback/give-feedback",
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/branching-strategies-with-tfvc.md",
-            "redirect_url": "/vsts/tfvc/branching-strategies-with-tfvc",
+            "source_path": "docs/work/connect/give-permissions-feedback.md",
+            "redirect_url": "/vsts/feedback/give-permissions-feedback",
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/adopting-vsts.md",
-            "redirect_url": "/vsts/user-guide/about-vsts-tfs",
+            "source_path": "docs/work/reference/change-audio-device-annotation-tool.md",
+            "redirect_url": "/vsts/feedback/change-audio-device-annotation-tool",
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/overview.md",
-            "redirect_url": "/vsts/articles/index",
+            "source_path": "docs/work/reference/enable-remote-audio-capture.md",
+            "redirect_url": "/vsts/feedback/enable-remote-audio-capture",
             "redirect_document_id": false
        },
        {
-            "source_path": "docs/articles/vso-security-whitepaper.md",
-            "redirect_url": "/vsts/articles/team-services-security-whitepaper",
+            "source_path": "docs/quickstart/get-started-stakeholder.md",
+            "redirect_url": "/vsts/security/get-started-stakeholder",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/concepts/agile-glossary.md",
+            "redirect_url": "/vsts/work/work-items/agile-glossary",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/concepts/workflow-and-state-categories.md",
+            "redirect_url": "/vsts/work/customize/workflow-and-state-categories",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/concepts/work-item-form-controls.md",
+            "redirect_url": "/vsts/work/work-items/work-item-form-controls",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/troubleshoot/resolve-backlog-reorder-issues.md",
+            "redirect_url": "/vsts/backlogs/resolve-backlog-reorder-issues",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/sync-ps-tfs.md",
+            "redirect_url": "/vsts/work/tfs-ps-sync/sync-ps-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/remove-tfs-ps-integration.md",
+            "redirect_url": "/vsts/work/tfs-ps-sync/remove-tfs-ps-integration",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/add-share-storyboard-shapes.md",
+            "redirect_url": "/vsts/work/backlogs/office/add-share-storyboard-shapes",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/bulk-add-modify-work-items-excel.md",
+            "redirect_url": "/vsts/work/backlogs/office/bulk-add-modify-work-items-excel",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/create-your-backlog-tasks-using-project.md",
+            "redirect_url": "/vsts/work/backlogs/office/create-your-backlog-tasks-using-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/resolve-excel-data-conflicts-publish-refresh.md",
+            "redirect_url": "/vsts/work/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/resolve-excel-data-validation-errors.md",
+            "redirect_url": "/vsts/work/backlogs/office/resolve-excel-data-validation-errors",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/resolve-excel-invalid-links-tree-list.md",
+            "redirect_url": "/vsts/work/backlogs/office/resolve-excel-invalid-links-tree-list",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/resolve-problems-excel-workbooks-sharepoint.md",
+            "redirect_url": "/vsts/work/backlogs/office/resolve-problems-excel-workbooks-sharepoint",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/rollup-estimated-and-actual-work-using-project.md",
+            "redirect_url": "/vsts/work/backlogs/office/rollup-estimated-and-actual-work-using-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/schedule-projects-using-microsoft-project.md",
+            "redirect_url": "/vsts/work/backlogs/office/schedule-projects-using-microsoft-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/storyboard-your-ideas-using-powerpoint.md",
+            "redirect_url": "/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/tfs-office-integration-issues.md",
+            "redirect_url": "/vsts/work/backlogs/office/tfs-office-integration-issues",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/office/track-work-vsts-tfs.md",
+            "redirect_url": "/vsts/work/backlogs/office/track-work-vsts-tfs",
             "redirect_document_id": false
        }
     ]

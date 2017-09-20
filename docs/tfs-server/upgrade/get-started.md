@@ -54,8 +54,8 @@ We recommend that you review [handling a TFS 2018 upgrade from old form to new f
 
 If you use TFS-Project Server integration to synchronize data between TFS and Project Server, then you'll want to review the following two topics:  
 
-- [Synchronize TFS with Project Server](../../work/office/sync-ps-tfs.md) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
-- [Remove integration of TFS with Project Server](../../work/office/remove-tfs-ps-integration.md) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
+- [Synchronize TFS with Project Server](../../work/tfs-ps-sync/sync-ps-tfs.md) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
+- [Remove integration of TFS with Project Server](../../work/tfs-ps-sync/remove-tfs-ps-integration.md) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
 
 Also, we recommend that you review the options you have when [you upgrade from TFS 2008 or TFS 2010](../../work/customize/upgrade-tfs-2008-or-2010.md). Depending on the amount of customization you've made to your work tracking process, you'll want to choose between the options described.  
 

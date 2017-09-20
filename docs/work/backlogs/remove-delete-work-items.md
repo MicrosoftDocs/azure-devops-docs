@@ -42,7 +42,7 @@ You only have access to those actions that are supported on your platform and fo
 **Notes:**  
 
 <ol>
-<li>You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../concepts/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
+<li>You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 </li>
 <li>From the web portal, you can[ multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. </li>
 <li>Changing the State to Remove causes work items to be removed from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).</li>
@@ -78,7 +78,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 
 >[!TIP]    
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../backlogs/copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](../office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
+When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../backlogs/copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
 
 1. Select the ![Change team project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 
@@ -97,7 +97,7 @@ When you connect to TFS, you can't change the work item type for an existing wor
 
 	![Change work item type dialog](_img/change-work-item-type-dialog.png)  
 
-	Comments are automatically added to the [Discussion control](../concepts/work-item-form-controls.md#discussion). 
+	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
 
 3. Save the work item to complete the change.  
  
@@ -131,7 +131,7 @@ When you discover that a work item belongs to a different team project within yo
 
 	![Work item form, Change team project menu option](_img/move-work-item-dialog.png)  
 
-	Comments are automatically added to the [Discussion control](../concepts/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
  
 
 <a id="remove"> </a>  

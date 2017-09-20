@@ -22,8 +22,10 @@
     href: on-premises-xml-process-model.md
   - name: Differences between cloud and on-premises process customizations
     href: /vsts/work/import-process/differences?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+  - name: "Workflow states & state categories"
+    href: workflow-and-state-categories.md
   - name: Agile glossary
-    href: /vsts/work/concepts/agile-glossary?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: Configure team settings

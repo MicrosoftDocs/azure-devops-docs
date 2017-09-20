@@ -15,7 +15,7 @@ ms.date: 04/05/2017
 
 You can use the Microsoft Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [Agile](../../work/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
 
-If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/office/bulk-add-modify-work-items-excel.md). Or, if you want to create an Excel report from a query, see [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md).  
+If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md). Or, if you want to create an Excel report from a query, see [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md).  
  
 > [!NOTE]
 > These reports require your team project portal to be configured with SharePoint Server Enterprise Edition. Also, you can view these reports in your team project's [dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  

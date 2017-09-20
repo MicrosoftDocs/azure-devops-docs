@@ -7,7 +7,7 @@ If you have a team project, start tracking work:
 -   [Create a backlog](../backlogs/create-your-backlog.md) - to develop your product backlog   
 -   [Plan a sprint](../scrum/sprint-planning.md) - to start working in Scrum    
 -   [Kanban](../kanban/kanban-basics.md)  - to start working in Kanban  
--   [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) - to create a work breakdown structure   
+-   [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) - to create a work breakdown structure   
 
 For more information on Agile tools:
 

@@ -59,12 +59,12 @@ Adds support for automatic update of bug status when using My Work. Use to autom
 Feedback
 </td>
 <td>
-You can [request feedback](../connect/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
+You can [request feedback](../../feedback/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 </td>
 <td>
 **Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
 **Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
-**Required:** [Grant stakeholders permission](../connect/give-permissions-feedback.md).
+**Required:** [Grant stakeholders permission](../../feedback/give-permissions-feedback.md).
 
 </td>
 </tr>
@@ -107,7 +107,7 @@ If you've upgraded your TFS instance from [TFS 2010](#update-from-2010) or [TFS 
 Storyboarding
 </td>
 <td>
-With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).  
+With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).  
 </td>
 <td>
 **Required:** [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)<br/>

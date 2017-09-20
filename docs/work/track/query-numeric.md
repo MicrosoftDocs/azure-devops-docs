@@ -319,7 +319,7 @@ For more information on using work items and queries, see:
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md)  
--[Rollup estimated and actual work using Project](../office/rollup-estimated-and-actual-work-using-project.md)  
+-[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 
 <a id="category"/>

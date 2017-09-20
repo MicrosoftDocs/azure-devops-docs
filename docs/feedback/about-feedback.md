@@ -22,7 +22,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide two 
 
 To request feedback, you use these methods: 
 - From within the work item form for a user story or product backlog item, as shown in the following image:<br/>![Request feedback from the Test & Feedback extension](/vsts/manual-test/stakeholder/_img/request-stakeholder-feedback/request-stakeholder-feedback-01.png) 
-- From the dashboard widget that contains other links, as shown:<br/>![Request feedback from the dashboard](/vsts/work/connect/_img/request-feedback-link.png)
+- From the dashboard widget that contains other links, as shown:<br/>![Request feedback from the dashboard](/vsts/feedback/_img/request-feedback-link.png)
 
 Both tools generate a Feedback Request work item. Each response provided by a stakeholder generates a Feedback Response work item. You can then track requests and responses easily from the **Work>Queries** page.
 

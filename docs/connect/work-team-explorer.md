@@ -90,7 +90,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Home|Work Items  |Build |
 > |-------------|----------|----------|
-> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../collaborate/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../build-release/tasks/index.md)<br/>- [View and manage builds](../build-release/overview.md)<br/>- [Manage the build queue](../build-release/concepts/agents/pools-queues.md) |
+> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../collaborate/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../build-release/tasks/index.md)<br/>- [View and manage builds](../build-release/overview.md)<br/>- [Manage the build queue](../build-release/concepts/agents/pools-queues.md) |
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
@@ -142,11 +142,11 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/docs/tools/eclipse) 
-- [Office Excel](../work/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-- [Office Project](../work/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json)   
+- [Microsoft Feedback Client](../feedback/give-feedback.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json)   
 
 
 ### Refresh Team Explorer 

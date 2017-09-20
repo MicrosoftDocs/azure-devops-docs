@@ -11,7 +11,7 @@ ms.date: 07/21/2017
 
 # Create your backlog and tasks using Project 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
@@ -28,7 +28,7 @@ Use this topic to learn how to:
 
 
 >[!NOTE] 
->You can also manage projects using Project Professional and [Project Server synchronized with TFS](../tfs-ps-sync/synchronize-tfs-project-server.md) , but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
+>You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../tfs-ps-sync/synchronize-tfs-project-server.md) , but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
 
 ## Add tasks and publish work items
 
@@ -53,7 +53,7 @@ Use this topic to learn how to:
 
     >**Tip:**  If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to TFS and the team project that you want to plan. If you can't connect, [get added as a team member](../scale/multiple-teams.md).
+4.  Connect to TFS and the team project that you want to plan. If you can't connect, [get added as a team member](../../scale/multiple-teams.md).
 
     ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 
@@ -89,7 +89,7 @@ Use this topic to learn how to:
 
 ## Indent tasks to create parent-child links
 
-When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [task board](../scrum/task-board.md) when they are assigned to the current sprint.
+When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [task board](../../scrum/task-board.md) when they are assigned to the current sprint.
 
 ![Link tasks to create parent-child links](_img/create-your-backlog-tasks-using-project/IC658913.png)
 
@@ -155,13 +155,13 @@ You can manage your project plan using Project and all the features that Project
 ## Related notes  
 
 - [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
-- [Create your backlog](../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](../../accounts/requirements.md) 
+- [Create your backlog](../../backlogs/create-your-backlog.md)
+- [Requirements and compatibility](../../../accounts/requirements.md) 
 
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../backlogs/remove-delete-work-items.md).
+You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
 
 ### Differences working in Project versus Excel
 

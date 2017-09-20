@@ -31,9 +31,11 @@
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
   - name: "Workflow states & state categories"
-    href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: /vsts/work/customize/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
     href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Agile glossary
+    href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: "Filter backlogs & queries"

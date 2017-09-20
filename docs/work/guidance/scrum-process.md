@@ -57,7 +57,7 @@ To list work items for a current sprint or the product backlog, use the shared q
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this topic.   
 
-You can open a query from the work items page and then use the [query editor to apply different filter criteria](../track/using-queries.md). Also, you can [add queries to team dashboards](../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
+You can open a query from the work items page and then use the [query editor to apply different filter criteria](../track/using-queries.md). Also, you can [add queries to team dashboards](../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 
 <blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../track/query-by-date-or-current-iteration.md). </blockquote>  
 

@@ -7,7 +7,7 @@ ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017  
+ms.date: 09/19/2017  
 ---
 
 # Remove integration of TFS with Project Server  
@@ -36,15 +36,15 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 
 ###Required permissions
 
-To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the team project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412654.aspx).
+To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the team project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
 
 To run the **witadmin** commands you must be a member of the Team Foundation Administrators security group or the Project Collection Administrators security group.
 
 <a id="list">  </a>
 ## 1. List mapped elements (before you upgrade)
 
->[!NOTE]  
->Upgrading to TFS 2017 removes the **TFSAdmin** command line tool. In order to have a list of all mapped elements to remove in procedures 3 through 6, you'll want to perform the following steps. 
+> [!NOTE]  
+> Upgrading to TFS 2017 removes the **TFSAdmin** command line tool. In order to have a list of all mapped elements to remove in procedures 3 through 6, you'll want to perform the following steps. 
 
 1. To get a list of all mapped collections, run this command on the application tier server for TFS:  
 	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl ```  
@@ -267,8 +267,8 @@ DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource
 ## Related notes
 
 - [Synchronize TFS with Project Server, third party support](sync-ps-tfs.md)  
-- [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](../tfs-ps-sync/synchronize-tfs-project-server.md)    
+- [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](synchronize-tfs-project-server.md)    
 - [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
-- [Map integration components (TFSAdmin command line tool)](../tfs-ps-sync/map-integration-components.md)  
+- [Map integration components (TFSAdmin command line tool)](map-integration-components.md)  
 - [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/09/16/microsoft-discontinuing-project-server-tfs-integration/)
 

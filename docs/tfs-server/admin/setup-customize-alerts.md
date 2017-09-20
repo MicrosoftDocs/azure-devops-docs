@@ -43,7 +43,7 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
     Create an alert and then perform an action that will trigger the alert. You can [set alerts for yourself or for a team](../../work/track/alerts-and-notifications.md).
 
-This task supports [Request and review feedback](../../work/connect/get-feedback.md) and [Set alerts, get notified when changes occur](../../work/track/alerts-and-notifications.md).
+This task supports [Request and review feedback](../../feedback/get-feedback.md) and [Set alerts, get notified when changes occur](../../work/track/alerts-and-notifications.md).
 
 
 ## Customize the format for TFS email alerts

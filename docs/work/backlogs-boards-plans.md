@@ -272,7 +272,7 @@ These reasons can cause work items that belong to the Task Category to not appea
 	>[!NOTE]  
 	>In VSTS and TFS 2015.2 and later versions, tasks not linked to a parent appear under an *Unparented* section. 
 
-- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](./troubleshoot/resolve-backlog-reorder-issues.md#leaf-nodes). 
+- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](./backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). 
 
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
 	>[!NOTE]  

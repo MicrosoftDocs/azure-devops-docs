@@ -1,7 +1,7 @@
 - name: Overview (TFS-PS)
   items:
   - name: Third-party support for synchronization
-    href: ../office/sync-ps-tfs.md
+    href: sync-ps-tfs.md
   - name: Native synchronization support
     href: synchronize-tfs-project-server.md
   - name: Synchronization overview
@@ -41,7 +41,7 @@
   - name: Upgrade Project Server 2010 to Project Server 2013
     href: upgrade-ps-2010-to-ps-2013.md
   - name: Remove TFS-Project Server integration
-    href: ../office/remove-tfs-ps-integration.md
+    href: remove-tfs-ps-integration.md
   - name: Map a previously bound project plan
     href: map-project-plan-previously-bound.md
   - name: Change your deployment configuration
@@ -97,7 +97,7 @@
   - name: Resolve validation errors
     href: resolve-validation-errors.md
   - name: Resolve TFS-Office integration issues
-    href: ../office/tfs-office-integration-issues.md
+    href: ../backlogs/office/tfs-office-integration-issues.md
   - name: View error messages
     href: view-synch-error-messages.md
   - name: Verify synchronization

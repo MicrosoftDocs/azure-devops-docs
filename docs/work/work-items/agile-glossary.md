@@ -35,7 +35,7 @@ A node on the Common Structure Services hierarchy that represents a feature area
 A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
 
 ## Category
-Defines groups that associate a type of work item with a category. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). 
+Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). 
 
 ## Delivery plan 
  
@@ -50,11 +50,15 @@ Defines a list of menu items or pick list items that are shared across WITs and 
 ## Global workflow 
 Specifies both work item fields and global lists that multiple team projects and types of work items can share. Learn more: [Manage global workflow](../reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
 
-
-
 <a id="hidden-types"> </a> 
-## Hidden types category   
-You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. Learn more: [Hidden Types Category](../reference/use-categories-to-group-work-item-types.md#hiddentypes).
+## Hidden types categories  
+Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
+-   [Code Review Request and Code Review Response](../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
+-   [Feedback Request and Feedback Response](../../feedback/get-feedback.md)    
+-   [Shared Steps and Shared Parameter](../../manual-test/getting-started/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../manual-test/getting-started/create-a-test-plan.md)  
+  
+You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 
 
 ## Iteration path
@@ -125,7 +129,7 @@ Specifies the fields, workflow, and form used to track an item of work. Each WIT
 
 ## Workflow 
 
-Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../concepts/workflow-and-state-categories.md).
+Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../customize/workflow-and-state-categories.md).
 
 
 <!--- SEE ALSO https://msdn.microsoft.com/en-us/library/ms243130(v=vs.100).aspx --> 

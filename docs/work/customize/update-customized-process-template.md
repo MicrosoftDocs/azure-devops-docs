@@ -409,7 +409,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	<td>
 	Feedback
 	</td>
-	<td>[Request feedback](../connect/get-feedback.md). <br/>
+	<td>[Request feedback](../../feedback/get-feedback.md). <br/>
 	</td>
 	</tr>
 	<tr>
@@ -424,7 +424,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	<td>
 	Storyboarding
 	</td>
-	<td>[Launch Storyboarding or link a storyboard to a work item](../office/storyboard-your-ideas-using-powerpoint.md).
+	<td>[Launch Storyboarding or link a storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 	</td>
 	</tr>
 	<tr>

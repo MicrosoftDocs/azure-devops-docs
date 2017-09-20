@@ -55,7 +55,7 @@ You can obtain rollup of additional data fields in VSTS or TFS data by using one
   
  ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
- To learn how, see [Rollup estimated and actual work](../office/rollup-estimated-and-actual-work-using-project.md).  
+ To learn how, see [Rollup estimated and actual work](../backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
   
 ### Microsoft Excel  
  You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel and TFS integration, see [Bulk add or modify work items with Excel](http://msdn.microsoft.com/en-us/67595fec-a872-43e3-b934-9dd1a766218c).  

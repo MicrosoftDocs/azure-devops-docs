@@ -405,10 +405,10 @@ Using work item templates can help your team be more productive by predefining f
 
 You can't create templates that contain default links to work items. 
 
-However, you can quickly copy tasks, test cases, bugs, and other items using [Excel](../office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. To learn more, see:  
+However, you can quickly copy tasks, test cases, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. To learn more, see:  
 - [Add task checklists](../kanban/add-task-checklists.md)
 - [Add, run, and update inline tests](../kanban/add-run-update-tests.md) 
 - [Add features and epics](../kanban/kanban-epics-features-stories.md)  
 
-Another option is to use [Excel](../office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
+Another option is to use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
 
