@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 09/09/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
