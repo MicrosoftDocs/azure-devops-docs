@@ -50,14 +50,6 @@
       href: vs-subscriptions/manage-vs-subscriptions.md
     - name: View Visual Studio subscriptions
       href: vs-subscriptions/view-vs-subscriptions.md
-  - name: Cloud Service Provider
-    items:
-    - name: Buy and manage VSTS subscriptions
-      href: csp/buy-manage-vsts-subs.md
-    - name: Buy and manage VS subscriptions
-      href: csp/buy-manage-vs-subs.md
-    - name: CSP Subscriptions FAQ
-      href: csp/subscriptions-faq.md
 - name: Troubleshooting
   items:
   - name: Billing signup
