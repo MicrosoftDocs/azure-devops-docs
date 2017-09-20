@@ -1903,17 +1903,17 @@
         },
         {
             "source_path": "docs/alm-devops-features.md",
-            "redirect_url": "/vsts/services?toc=/vsts/user-guide/",
+            "redirect_url": "/vsts/user-guide/alm-devops-features",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/alm-devops-feature-index.md",
-            "redirect_url": "/vsts/services?toc=/vsts/user-guide/",
+            "redirect_url": "/vsts/user-guide/alm-devops-features?toc=/vsts/user-guide/",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/vsts-tfs-overview.md",
-            "redirect_url": "/vsts/services?toc=/vsts/user-guide/",
+            "redirect_url": "/vsts/user-guide/alm-devops-overview?toc=/vsts/user-guide/",
             "redirect_document_id": false
         },
         {
@@ -2582,47 +2582,47 @@
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/about-vsts-tfs.md",
+            "source_path": "docs/about-vsts-tfs.md",
             "redirect_url": "/vsts/user-guide/about-vsts-tfs",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/concepts.md",
+            "source_path": "docs/concepts.md",
             "redirect_url": "/vsts/user-guide/concepts",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/faqs.md",
+            "source_path": "docs/faqs.md",
             "redirect_url": "/vsts/user-guide/faqs",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/devops-alm-overview.md",
+            "source_path": "docs/devops-alm-overview.md",
             "redirect_url": "/vsts/user-guide/devops-alm-overview",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/provide-feedback.md",
+            "source_path": "docs/provide-feedback.md",
             "redirect_url": "/vsts/user-guide/provide-feedback",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/roles.md",
+            "source_path": "docs/roles.md",
             "redirect_url": "/vsts/user-guide/roles",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/services.md",
+            "source_path": "docs/services.md",
             "redirect_url": "/vsts/user-guide/services",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/tools.md",
+            "source_path": "docs/tools.md",
             "redirect_url": "/vsts/user-guide/tools",
             "redirect_document_id": false
        },
        {
-            "source_path": "vsts/migrate-to-vsts-from-tfs.md",
+            "source_path": "docs/migrate-to-vsts-from-tfs.md",
             "redirect_url": "/vsts/articles/migrate-to-vsts-from-tfs",
             "redirect_document_id": false
        },

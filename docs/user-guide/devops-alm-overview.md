@@ -15,7 +15,7 @@ ms.date: 06/22/2017
 
 Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including iOS, Android, Java, Linux or Windows.  
  
-![Continuous planning and delivery](../_img/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
+![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
 VSTS and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
