@@ -222,7 +222,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../report/dashboards.md), or from the **New** menu on the Queries page. 
 
-![Add work item from a New work item widget](../../_img/alm-feature-new-work-item-widget.png)  
+![Add work item from a New work item widget](../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
 Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
  

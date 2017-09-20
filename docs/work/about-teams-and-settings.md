@@ -133,6 +133,19 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 - [Portfolio management](scale/portfolio-management.md)
 - [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](scale/scaled-agile-framework.md)
 
+<a id="team-group"> </a>
+## Team groups 
+
+You can use this group to filter queries. The name of team groups follows the pattern [Team Project Name]\Team Name. For example, the following query finds work assigned to members of the [Fabrikam Fiber]\Email team group.
+
+<img src="scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
+
+## Work on more than one team
+
+Can a user account belong to more than one team?  
+
+Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](scale/capacity-planning.md). 
+
 
 ## Summary 
 - Every team owns their own backlog, to create a new backlog you [create a new team](scale/multiple-teams.md) 
@@ -150,18 +163,6 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 -	[Configure team settings ](scale/manage-team-assets.md)      
 -	[Work effectively from your account hub ](../connect/account-home-pages.md)  
 
-<a id="team-group"> </a>
-### Team groups 
-
-You can use this group to filter queries. The name of team groups follows the pattern [Team Project Name]\Team Name. For example, the following query finds work assigned to members of the [Fabrikam Fiber]\Email team group.
-
-<img src="scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
-
-### Work on more than one team
-
-Can a user account belong to more than one team?  
-
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](scale/capacity-planning.md). 
 
 
  

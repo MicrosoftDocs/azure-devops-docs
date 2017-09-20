@@ -34,7 +34,7 @@ Each team project provides a number of shared resources that support all teams a
 
 |Area path pick lists | Sprint/iteration pick lists | 
 |-------------|----------| 
-|Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../_img/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/> ![Iterations or sprints](../../_img/alm-feature-define-sprints.png) |
+|Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/> ![Iterations or sprints](../../user-guide/_img/features/alm-feature-define-sprints.png) |
  
 
 
