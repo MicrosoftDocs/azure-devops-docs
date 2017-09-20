@@ -126,7 +126,7 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 ## Try this next
 
 Here are some useful tips when working with the Kanban board:
-- To focus on select work items, [filter your Kanban board](../how-to/filter-backlog-or-board.md)
+- To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
 - To quickly assign items to a team member, add the Assign To field to display on the cards (see [Customize cards](../customize/customize-cards.md))    
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements (see [Swimlanes](expedite-work.md))   
 - Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../customize/customize-cards.md)) 

@@ -141,7 +141,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 
 <tr>
-<td>[Filter the Kanban board](../how-to/filter-backlog-or-board.md)   
+<td>[Filter the Kanban board](../kanban/filter-kanban-board.md)   
 </td>
 <td>![checkmark](../_img/icons/checkmark.png)   
 </td>
@@ -293,7 +293,7 @@ To filter the Kanban board using tags, make sure that you first [customize cards
 >[!NOTE]  
 ><b>Feature availability: </b>This feature is currently supported only on the Kanban board from VSTS or the web portal for TFS 2015 Update 1 or later version. 
 
-To learn more about filtering, see [Filter your backlog or board](../how-to/filter-backlog-or-board.md).  
+To learn more about filtering, see [Filter your backlog or board](../backlogs/filter-backlogs.md).  
 
 ###Limits on number of tags
 While no hard limit exists, creating more than 100K tags for a team project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  

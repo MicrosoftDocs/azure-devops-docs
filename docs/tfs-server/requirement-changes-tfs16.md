@@ -1,6 +1,6 @@
 ---
 title: Changes to required for TFS 2018
-titleSuffix: |TFS 2018
+titleSuffix: TFS 2018
 description: Describes changes to requirements between TFS 2017 and TFS 2018 RC1 that impact Setup, Upgrade, and Administration
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin

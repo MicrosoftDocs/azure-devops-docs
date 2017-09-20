@@ -1,7 +1,7 @@
 ---
 title: Syntax usage for Markdown files and widgets
-titleSuffix: | VSTS & TFS 
-description: Use markdown syntax within pull requests, project pages, readme files, dashboards, and markdown widgets to share information within and across teams  
+titleSuffix: VSTS & TFS 
+description: Share information using markdown  within pull requests, project pages, readme files, dashboards, and markdown widgets
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
@@ -275,9 +275,11 @@ The path to the image file can be a relative path or the absolute path in Git or
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/image.png)``` </li>
 <li>Absolute path in TFVC:<br/> ```![Image alt text]($/project/folder/_img/image.png)```  </li>
-<li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/image.png WIDTHxHEIGHT)```  </li>
+<li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/image.png =WIDTHxHEIGHT)```  </li>
 </ul>
 
+> [!NOTE]   
+> **Feature availability**: The syntax to support image resizing is only supported in pull requests and the Wiki.    
 
 ## Tables
 

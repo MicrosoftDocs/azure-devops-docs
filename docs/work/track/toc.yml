@@ -42,6 +42,8 @@
     href: linking-attachments.md 
 - name: How-to Guides
   items:
+  - name: Add tags to work items
+    href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: "Filter backlogs & queries"
     href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Copy list of work items 
