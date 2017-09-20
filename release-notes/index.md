@@ -2735,7 +2735,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 255, 234);">[2015](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>[12 Nov 2014](2014/dec-02-team-services#nov12)</td>
+            <td>[12 Nov 2014](2014/dec-02-team-services.md)</td>
             <td>Release Management Preview as VSTS service</td>
             <td>--</td>
         </tr>
