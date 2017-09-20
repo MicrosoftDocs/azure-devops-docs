@@ -40,7 +40,7 @@ For a detailed description and suggested replacements, read [Features removed wh
 | TFS 2013 | Supported       | Supported       | Not Supported   |
 | TFS 2015 | Supported       | Supported       | Not Supported   |
 | TFS 2017 | Supported       | Supported       | See **Upgrade to SharePoint 2016** below|
-| TFS 2018 | Not Supported   | See **Upgrade to TFS 2018** below   | See **Upgrade to SharePoint 2016** below     |
+| TFS 2018 | See **Upgrade to TFS 2018** below  | See **Upgrade to TFS 2018** below   | See **Upgrade to SharePoint 2016** below     |
 
 ## Upgrade to SharePoint 2016
 TFS 2017 does not support installing the TFS Extension for SharePoint on SharePoint 2016. If you have a TFS 2017 server configured to integrate with SharePoint 2013, upgrading to SharePoint 2016 will encounter errors (e.g.: MissingSiteDefinition, MissingFeature, MissingWebPart)
@@ -52,7 +52,9 @@ For more information, read [Upgrade from SharePoint 2013 with TFS integration to
 ## Upgrade to TFS 2018
 TFS 2018 does not include the TFS Extension for SharePoint. If you are upgrading from a previous version configured to integrate with SharePoint, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load.
 
-We have created a solution that disables SharePoint integration on a SharePoint 2013 server. It ensures your TFS SharePoint sites display properly.
+We have created a solution that disables SharePoint integration on a **SharePoint 2013** server. It ensures your TFS SharePoint sites display properly.
+
+If you are currently running **SharePoint 2010** and want to upgrade to TFS 2018, please reach out to us at [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com). 
 
 For more information, read [Disable SharePoint integration after TFS 2018 upgrade](disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
 
