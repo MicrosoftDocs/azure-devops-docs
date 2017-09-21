@@ -13,8 +13,8 @@ ms.date: 9/15/2017
 # Buy and manage Visual Studio cloud subscriptions for your customers
 
 Partners in the CSP program can 
-purchase Professional or Enterprise [Visual Studio cloud subscriptions](https://www.visualstudio.com/vs/pricing), 
-including annual and monthly subscriptions.
+purchase Professional or Enterprise [Visual Studio cloud subscriptions](https://www.visualstudio.com/vs/pricing) for 
+their customers, including annual and monthly subscriptions.
 
 ## How to buy
 
