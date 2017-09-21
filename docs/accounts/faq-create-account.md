@@ -40,7 +40,7 @@ who also get Basic features, and in some cases, additional features with specifi
 ####Q:  Which Visual Studio subscriptions can I use with VSTS?
 
 A:	Go here to find 
-[Visual Studio subscriptions that include VSTS](https://azure.microsoft.com/pricing/details/visual-studio-team-services/).
+[Visual Studio subscriptions that include VSTS](faq-add-delete-users.md#EligibleMSDNSubscriptions).
 
 ####Q:	Why am I asked to provide profile details?
 

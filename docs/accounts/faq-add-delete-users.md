@@ -50,7 +50,6 @@ but you don't have a valid and active Visual Studio subscription, you can only
 [work as a stakeholder](../security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
-
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
 A:  These subscriptions include VSTS at no extra charge 
@@ -70,7 +69,7 @@ Not eligible:
 
 *	MSDN Operating Systems
 *	MSDN Essentials
-*	Visual Studio Professional (MPN)
+*	Visual Studio Professional -- from the Microsoft Partner Network (MPN) "Action Pack" program
 
 Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing/).
 
