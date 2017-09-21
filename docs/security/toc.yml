@@ -42,6 +42,10 @@
     href: change-access-levels.md  
   - name: Restrict access to resources
     href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+- name: Troubleshooting
+  items:
+  - name: Network connections
+    href: faq-network-connections.md
 - name: Reference
   items:
   - name: Permission lookup guide 
