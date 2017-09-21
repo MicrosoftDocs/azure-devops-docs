@@ -1,5 +1,5 @@
 ---
-title: Set up Content Solution Provider customer for billing
+title: Set up Content Solution Provider customer for billing in Partner Center
 description: Cloud Service Provider (CSP) partners can purchase and manage various VSTS, VS, HockeyApp, etc., subscriptions for their customers
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -11,7 +11,7 @@ ms.date: 9/15/2017
 
 **VSTS**
 
-# Set up Cloud Solution Provider customer and billing
+# Set up Cloud Solution Provider customer and billing in Partner Center
 
 Partners in the [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program 
 can purchase Visual Studio cloud services for their customers 
@@ -28,11 +28,12 @@ in Partner Center.
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-Customer-Provisioning/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
 
-To view Visual Studio pricing, go to the [Partner Center](https://partnercenter.microsoft.com).  Choose 
+To view Visual Studio pricing for CSP partners, log into the [Partner Center](https://partnercenter.microsoft.com).  Choose 
 **Pricing and offers** from the left nav.  Choose the current month pricing file under **usage-based services** in 
-the upper right. Once the Excel sheet downloads, filter the **Meter Category** column to **Visual Studio**.
+the upper right. Once the Excel spreadsheet downloads, go to the **Azure Price List** sheet, and 
+filter the **Meter Category** column to **Visual Studio**.
 
 > NOTE: 
 > Partners purchase Visual Studio in the CSP program through the Partner Center. At this time, there is no API 
-> for automation.  At this time, There is no API for automation.
+> for automation.
 
