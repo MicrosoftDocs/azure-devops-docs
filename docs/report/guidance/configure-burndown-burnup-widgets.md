@@ -33,9 +33,11 @@ Use this topic to learn how to:
 A burndown chart is a useful tool to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. A bug burndown chart can also be used to track completion of a set of bugs by a certain date. 
 
 **Burndown widget configured to display a Release Burndown**
+
 ![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-release-burndown.png)
 
 **Burndown widget configured to display a Bug Burndown**
+
 ![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-bug-burndown.png)
 
  
@@ -43,15 +45,15 @@ A burndown chart is a useful tool to track completion of a predefined scope of w
 
 Burndown and burnup charts provide an easy way to monitor progress across teams and sprints by showing work remaining over time. Work remaining is the vertical axis and time is the horizontal axis. You can define remaining work to be calculated as a sum of a particular field, such as Story Points, or count of a particular work item type. 
 
-In addition, each chart calculates and displays the average burndown or burnup rate and added scope over the course of the project. The Burndown chart calculates a projected completion date for when the work is expected to be done based on historical burndown and scope increase trends. Using burndown, teams can stay on top of their progress and see the immediate impact of their work on their delivery date. 
+In addition, each chart calculates and displays the average burndown or burnup rate and added scope over the course of the project. The Burndown chart calculates a projected completion date for when the work is expected to be done based on historical burndown and scope increase. Using burndown, teams can stay on top of their progress and see the immediate impact of their work on their delivery date. 
 
 To help you answer the question: *Are we on track to complete this set of work by the end date?*, the widgets provide these useful metrics:
 * Percentage work complete
 * Average burndown rate
 * Total scope increase
 * Number of work items not estimated with Story Points (or whichever field you are burning down on)
-* Projected burndown trend, based on historical burndown rate
-* Projected scope increase trend, based on historical scope increase rate
+* Projected burndown, based on historical burndown rate
+* Projected scope increase, based on historical scope increase rate
 * Projected completion date, based on historical burndown and scope increase rates
 
 <!---
@@ -172,14 +174,14 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 ## Choose additional options 
 
 Check the boxes of the following options that you want to add to your chart.    
-* **Show burndown trendline**: Displays both the historical and projected future burndown trend
-* **Show total scope treadnline**: Displays both the historical and projected scope increase trend
+* **Show burndown**: Displays both the historical and projected future burndown
+* **Show total scope**: Displays both the historical and projected scope increase
 * **Show completed work**: In addition to remaining work, it also displays completed work as as stack bar
 * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Interpret a Burndown or Burnup widget chart
 
-Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown trendlines are not straight lines. The team never moves at exactly one fixed velocity and scope might be added on the way. For example, if your projected completion date as moved, you may want to ask
+Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown lines are not straight lines. The team never moves at exactly one fixed velocity and scope might be added on the way. For example, if your projected completion date as moved, you may want to ask
 * Are we adding too much scope?
 * Is the average burnrate changing, and if so, why?
 
@@ -200,8 +202,8 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |**Total&nbsp;Scope&nbsp;Increase** |show how much work was added to the original scope since the burndown started.|
 |**Projected&nbsp;completion** |Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it will draw a vertical line on the interval/interation when the work should be complete. If the projected completion date is after the specified **End Date**, then it will display the projected completion date and how many additional intervals/iterations are needed to complete the work.|
 |**Original&nbsp;Scope** |Original scope is all remaining work as of the specified **Start Date**. The chart burns down from the original scope. **% Complete** and **Total Scope Increase** are calculated based on your original scope.|
-|**Total&nbsp;Scope&nbsp;trendline** |Represents to the total scope of the burndown, including both completed and remaining work. A total scope trendline tells you how much scope creep your project has. For past data points, the plotted total scope represents actual total scope as of the end of each interval/iteration. For future data points, the plotted total scope represents a projected future trend, based on scope changes.|
-|**Burndown&nbsp;trendline**|Represents the burndown. A burndown trendline tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected future trend, based on past burndown. |
+|**Total&nbsp;Scope** |Represents to the total scope of the burndown. The plotted points include both completed and remaining work. The total scope line tells you how much scope change your project has. For past data points, the plotted total scope represents actual total scope as of the end of each interval/iteration. For future data points, the plotted total scope represents a projected scope change, based on past scope changes.|
+|**Burndown**|Represents the burndown. The burndown line tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown.
 
 
 ## Configure the Burnup widget
@@ -209,6 +211,7 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
 
 **Burnup Widget displaying a Stories Burnup**
+
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)
 
 
