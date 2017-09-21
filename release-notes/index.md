@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-description: VSTS feature updates and release notes
+description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
 ---
 
 # VSTS Features Timeline
@@ -76,7 +76,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 ## Current features
 
 The features timeline lists significant features delivered to VSTS and the corresponding version of Team Foundation Server.
-Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](#build_numbers).
+Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers).
 
 <table>
     <thead>
@@ -88,7 +88,7 @@ Versions in the server column are linked to the appropriate download location. Y
     </thead>
     <tbody>
         <tr>
-            <td rowspan="25">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services.md)</td>
+            <td rowspan="25">[15 Sep 2017](2017/sep-15-team-services.md)</td>
             <td>New Queries experience</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
