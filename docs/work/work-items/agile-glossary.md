@@ -123,6 +123,10 @@ A repository for source code and a place for a group of developers and teams to 
 ## User story
 A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](../guidance/agile-process-workflow.md).   
 
+## Widget 
+Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts created by the system. Learn more: [Widget catalog](../../report/widget-catalog.md).
+
+
 ## Work item type (WIT) 
 
 Specifies the fields, workflow, and form used to track an item of work. Each WIT is associated with 30+ system fields and several more type-specific fields. You use work items to plan and track the work required to develop your project. For an overview of predefined WITs provided with the default processes, see [Choose a process](../guidance/choose-process.md).  
