@@ -15,7 +15,7 @@ ms.date: 08/10/2017
 
 <a id="add-charts"></a>
 
-All charts listed in the following table are available from VSTS and TFS 2017.1. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015. and earlier versions, some charts require you to add them to a team dashboard from the hub. 
+All charts listed in the following table are available from VSTS and TFS 2017.2 and later versions. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015 and earlier versions, some charts require you to add them to a team dashboard from their respective hub. 
 
 <table >
 <thead align="center">
@@ -130,7 +130,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 ## Add a test status or result chart  
 
 >[!NOTE]  
-><b>Feature availability: </b> This feature is supported from VSTS and TFS 2015.  
+><b>Feature availability: </b> This feature is supported from VSTS and TFS 2015. From VSTS, you can add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
 
@@ -144,7 +144,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 ## Add a test quality trend chart   
 
 >[!NOTE]  
-><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.2 or later versions. From VSTS and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a team dashboard. 
+><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.2 or later versions. From VSTS and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a dashboard. 
 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../build-release/test/getting-started-with-continuous-testing.md).  

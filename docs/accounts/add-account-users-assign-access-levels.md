@@ -84,10 +84,11 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
  > [!NOTE]
  > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
- > external to your Azure AD, first 
- > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
- > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
- > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
+ > in a different organization (regardless of whether that organization uses Azure AD) to your Azure AD, you can use  
+ > [business-to-business (B2B) collaboration](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
+ > [add these users](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
+  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
+ > existing Microsoft account**.  After completing those steps, follow the steps below to add the B2B 
  > user to VSTS.
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)

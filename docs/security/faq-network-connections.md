@@ -35,7 +35,7 @@ A more general list of URLs for signing in to VSTS and Azure:
 * *.live.com
 * cdn.vsassets.io -- hosts our CDN content
 * *.gallerycdn.vsassets.io -- hosts VSTS extensions
-* static2.sharepointonline.com -- hosts some resources that we use in ‘office fabric’ UI kit (fonts, etc). 
+* static2.sharepointonline.com -- hosts some resources that we use in "office fabric" UI kit (fonts, etc). 
 
 
 NuGet connections:

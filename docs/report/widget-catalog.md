@@ -6,21 +6,23 @@ ms.technology: vs-devops-reporting
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/10/2017
+ms.date: 09/13/2017
 ---
 
 # Widget catalog 
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**  
 
+Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
+
+To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
+
+
 > [!NOTE]  
 > **Feature availability**: You can access the widget catalog from VSTS or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for VSTS. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  
 >
 > With TFS 2015, you have access to a [single team dashboard](team-dashboard.md) with which you can pin items but can't add widgets to the dashboard. Install [TFS 2015 Update 1](https://www.visualstudio.com/news/tfs2015-update1-vs.aspx) or later version to get access to the widget catalog and [multiple team dashboards](dashboards.md). 
 To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../user-guide/provide-feedback.md#platform-version). 
-
-
-To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).  
 
 ## User-focused and team-scoped widgets 
 
@@ -75,9 +77,37 @@ Displays the list of work items currently assigned to the currently logged in us
  
 
 
-
  
 
+----
+### Burndown chart  
+<a id="chart-wit-widget"></a> 
+	
+
+![Burndown chart widget](_img/widget-burndown-chart.png)  
+
+
+> [!NOTE]  
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.    
+
+Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](./guidance/configure-burndown-burnup-widgets.md).  
+
+
+
+----
+### Burnup chart  
+<a id="chart-wit-widget"></a> 
+	
+
+![Burnup chart widget](_img/widget-burnup-chart.png)  
+
+
+> [!NOTE]  
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.    
+
+Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](./guidance/configure-burndown-burnup-widgets.md).  
+
+ 
 ----
 ### Chart for work items  
 <a id="chart-wit-widget"></a> 
@@ -88,10 +118,9 @@ Displays the list of work items currently assigned to the currently logged in us
 > [!NOTE]  
 > **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add shared query charts to a dashboard.    
 
-Adds a tile to display a progress or trend chart that builds off a shared work item query. 
+Adds a tile to display a progress or trend chart that builds off a shared work item query.  
 From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
 
-  
 ----
 
 <a id="cfd-widget"></a> 
@@ -144,7 +173,6 @@ Each marker on the chart corresponds to one or more work items with a particular
 <a id="new-work-item-widget"></a>
 ### New Work item (team-scoped) 
 	
-
 ![New work item widget](_img/widget-new-work-items.png)
 
 Enables you to add work items from the dashboard. You [use work items to plan and track work](../work/backlogs/add-work-items.md).  <br/><br/>
@@ -275,6 +303,21 @@ Adds a tile to display a histogram of all builds run for the configured build de
 From the configuration dialog, select the build you want to monitor. 
 Hover over a bar to learn how long the build took to complete. Click the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
+
+
+----
+<a id="chart-test-plan-widget"></a> 
+### Chart for test plans  
+	
+![Chart work item query widget](_img/widget-chart-test-plans.png)  
+
+> [!NOTE]  
+> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add other supported chart types to a dashboard.    
+
+Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
+
+To learn more, see [Track your test results](../manual-test/getting-started/track-test-status.md).
+
 ---- 
 
 <a id="deployment-status-widget"></a> 
@@ -328,8 +371,7 @@ Adds a configurable tile that displays the trend of test results, such as passed
 
 From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. 
 
-To learn more about creating charts for tracking test results, see [Track your test results](../manual-test/getting-started/track-test-status.md). 
-
+To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../build-release/test/review-continuous-test-results-after-build.md). 
 
 ## Informational content and other links 
 
