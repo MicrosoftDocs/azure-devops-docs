@@ -27,6 +27,28 @@ in Partner Center.
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-Customer-Provisioning/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
+## Customer setup steps from video
+
+0. First, sign in to your [Partner Center](https://partnercenter.microsoft.com) account.
+). On the Dashboard, click **Add new customer**, or add a new customer from the **Customers** page.  Provide the customer's 
+details and advance to the customer's subscriptions.
+0. Add an Azure subscription, which the marketplace uses for billing.  Customers can have as many Azure subscriptions 
+as needed. Choose **Add subscription** and then **Microsoft Azure** to add more.
+0. Review your order and **submit**.
+
+New subscriptions will initially have the subscription name "Microsoft Azure", so be sure to give subscriptions 
+appropriate nicknames. Simply choose the subscription name, enter a new subscription nickname, and submit.
+
+Now you're ready to buy Visual Studio. To purchase Visual Studio for a customer, choose the appropriate customer and 
+then choose **service management**.  If you haven't added an Azure subscription for the customer, the **Visual Studio 
+Marketplace** and **Manage Visual Studio Subscriptions** links won't appear.
+
+The Visual Studio Marketplace is where you go to purchase Visual Studio cloud subscriptions and VSTS resources for your 
+customers.  Choose **Manage Visual Studio Subscriptions** to assign subscriptions you've already purchased for your
+customer's end user.  You can also delete existing assigned subscriptions or reassign them to a different user.
+
+
+## View Visual Studio pricing for CSP partners
 
 To view Visual Studio pricing for CSP partners, log into the [Partner Center](https://partnercenter.microsoft.com).  Choose 
 **Pricing and offers** from the left nav.  Choose the current month pricing file under **usage-based services** in 
