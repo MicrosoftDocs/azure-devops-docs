@@ -20,9 +20,46 @@ their customers, including annual and monthly subscriptions.
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
+
+0. Log into the [Microsoft Partner Center](https://partnercenter.microsoft.com).
+0. Choose **Customers** and select a customer to buy for.
+0. Choose **Service Management**.
+0. Choose **Visual Studio Marketplace**.
+0. Make sure you're customer's name is in the upper right corner.
+0. Choose **Subscriptions**.
+0. Choose Enterprise or Professional and choose monthly or annual for Visual Studio.
+0. Choose **Buy**.
+0. Choose the Azure subscription to bill for the purchase.
+0. Enter the number of users your customer needs.
+0. Review the order and **Confirm** it.
+
+Once you confirm the purchase, you can choose **Manage** to assign subscriptions to your customer's end users.  You can 
+also access the Subscription Administration portal from the Partner Center by choosing **Service management**.  From there see the steps or video below.
+
+
 ## How to manage
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+
+0. Log into the [Microsoft Partner Center](https://partnercenter.microsoft.com).
+0. Choose **Customers** and the customer's name.
+0. Choose **Service Management**.
+0. choose **Manage Visual Studio Subscriptions**.
+
+If you have more than one Azure subscription for this customer, use the dropdown to choose the Azure subscription for which 
+you made the purchases.  The **License Summary** shows you the number of subscriptions that have been assigned and how many 
+are available for each Visual Studio cloud subscription.  The summary also allows you to purchase additional subscriptions 
+or reduce the number of subscriptions.
+
+Choose **add** to assign a subscription to a new user.  The displayed count updates, and the Partner Center sends 
+the end user receives an email notification.  The end user can then log in using the email address you provided.
+
+To reassign a license, you can delete the current subscriber and add a new subscriber, or you can edit a subscriber 
+to change the user to which you assigned the.
+
+If a subscriber hasn't activated their subscription, they may have missed the invitation email.  You can resend the 
+activation invitation to the email address you provided.
+
 
 [Learn more](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions) about 
 managing Visual Studio subscriptions.

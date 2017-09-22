@@ -19,3 +19,14 @@ Hosted Pipelines.
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-VSTS/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
+0. Log into the [Partner Center](https://partnercenter.microsoft.com).
+0. Choose the customer for whom you are purchasing.
+0. Choose **Service Management**.
+0. Choose **Visual Studio Marketplace**
+0. Make sure that you're in the VSTS tab, and then search for and choose **Team Services Users**.
+0. Choose the **Get** button, and move through the purchase process. Choose the VSTS account that needs more users and 
+choose the Azure subscription to bill for the purchase.  Enter the number of users your customer needs.  Review the 
+order and complete it.
+
+You can purchase extensions the same way by, for example, searching for **Test Manager** after choosing **Visual Studio 
+Marketplace**.
