@@ -27,7 +27,7 @@ and it should target the `ms.vss-work-web.work-item-form` contribution.
         "type": "ms.vss-work-web.work-item-form-control",
         "description": "Custom work item form control",
         "targets": [
-            "ms.vss-work-web.work-item-control"
+            "ms.vss-work-web.work-item-form"
         ],
         "properties": {
             "name": "My Control",
