@@ -23,7 +23,7 @@ the problems that you find.
 
 This quickstart shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md) task. 
+[Visual Studio Test](test-with-unified-agent-and-phases.md) task. 
 
 <a name="beforestart"></a>
 ## Before you start
@@ -46,10 +46,13 @@ solution - on the same build machine.
 
 1. Edit the Visual Studio Test task. You can add filter criteria to run specific tests, enable code coverage, 
    run tests from [other unit test frameworks](reference-qa.md), and so on.
-   For information about the option settings of the Visual Studio Test task, see
-   [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
 
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
+
+   For information about the option settings of the Visual Studio Test task, see:
+   
+   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 
    > The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [these blog posts](https://blogs.msdn.microsoft.com/devops/?s=test+impact).
 

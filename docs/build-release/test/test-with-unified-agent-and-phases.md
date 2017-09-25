@@ -20,6 +20,11 @@ The new version of the task also integrates intelligently with
 This topic explores how you can use this task, and explains how
 it works in a range of scenarios.  
 
+For more information about the tasks see:
+
+* [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+
 You select the [specific version](../../build-release/concepts/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top
 of the task properties pane. Use the **i** icon to show more information about the task or
