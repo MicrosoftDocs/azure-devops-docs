@@ -100,6 +100,11 @@ You will need:
 
    ![Specifying the properties for the Visual Studio Test task](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
+   For information about the option settings of the Visual Studio Test task, see:
+   
+   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
+   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+
 1. Choose the **Agent phase** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
    tests. If your tests require special machines from the agent pool,

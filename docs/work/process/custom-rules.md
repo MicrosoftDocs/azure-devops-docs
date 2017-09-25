@@ -9,13 +9,9 @@ ms.author: kaelli
 ms.date: 09/01/2017
 ---
 
-# Add a rule to a work item type (Inheritance process model)  
+# Add a rule to a work item type  
 
->[!IMPORTANT]  
->This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.
->
->For the Hosted XML process model, you customize your team projects by importing a custom process template; and for the On-premises XML process model, you customize a team project by importing modified XML definition files. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md#process-models).    
-
+[!INCLUDE [temp](../_shared/process-feature-availability.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 
@@ -26,7 +22,6 @@ With a custom rule, you can define a number of actions based on one or two condi
 - When a change was made to the value of Remaining Work, then make Completed Work a required field
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make make the following fields required: Priority, Risk, and  Effort
-
 
 ## Rule composition  
 

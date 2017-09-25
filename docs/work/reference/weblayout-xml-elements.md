@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/08/2017
+ms.date: 09/22/2017
 ---
 
 # WebLayout and Control elements  
@@ -20,11 +20,16 @@ ms.date: 09/08/2017
 
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](../reference/all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
-The **WebLayout** element is a required child element of the **FORM** element.   
+The **WebLayout** element is a required child element of the **FORM** element. This topic documents the **WebLayout** element and its child elements. Use this as a guide to further customize a WIT definition that contains the new **WebLayout** section. To learn more about these changes, see the blog post, [Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/).
+
+<a id="customize">  </a>  
+To modify the web layout, use the information provided in this topic to modify the XML definition file for a specific work item type. To import and export your changes, see [Customize the work item tracking web form](../customize/customize-wit-form.md).   
+
+To customize the windows client layout, the [Layout XML element](layout-xml-element-reference.md).  
 
 [!INCLUDE [temp](../_shared/new-form-xml-elements-availability.md)]
 
-##Summary of new and deprecated elements and attributes
+## Summary of new and deprecated elements and attributes
 
 The **WebLayout** and updated **Control** elements introduce several new elements and deprecate several elements and attributes. Overall, it's a much simpler syntax structure than its predecessor. 
 
@@ -35,7 +40,16 @@ The **WebLayout** and updated **Control** elements introduce several new element
 > |- ControlContribution<br/>- GroupContribution<br/>- Input<br/>- Inputs<br/>- Page<br/>- PageContribution<br/>- Section<br/>- SystemControls<br/>- WebLayout|- FORM<br/>- Layout<br/>- Group<br/>- Control |- Column<br/>- Splitter<br/>- Tab<br/>- TabGroup |- ControlSpacing<br/>- FixedWidth<br/>- LabelPosition<br/>- LabelSpacing<br/>- Margin<br/>- MinimumSize<br/>- Padding<br/>- PercentWidth |
 
 
-In the new web form layout, the system manages the header elements shown below. These include the display of the work item ID, Title, State, Assigned To, Area and Iteration fields, tags, as well as the pages to display ![History page icon](../_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../_img/icons/icon-attachments-tab-wi.png) Attachments.  
+
+> [!TIP]  
+> The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
+
+<a id="header-customization" />
+## Header customization
+
+In the new web form layout, the system manages several header elements within the **SystemControls** element. These include: 
+- **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
+- **Pages**: ![History page icon](../_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../_img/icons/icon-attachments-tab-wi.png) Attachments.  
 
 <img src="_img/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" /> 
 
@@ -55,20 +69,27 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
       <Control Label="Links" Type="LinksControl" Name="Links" />
       <Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />
     </SystemControls>
-...
 ```
 
-You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the System.Title field. In general, we recommend you don't customize this section much more than that. 
+**For TFS 2017 On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
 
-The other layout elements that you can customize are those associated with a page, such as the Details page, or  other custom pages that you add. 
+**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can hide or replace select fields defined within the **SystemControls** section.  
 
+For example, to hide the Reason field, you modify the **Control** element with the `Visible` attribute.
+   
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Control Label="Reason" Type="FieldControl" FieldName="System.Reason" Visible="false" />
+```
 
-> [!TIP]  
-> The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
+To replace the Reason field with another field, use the `Replaces` attribute.
 
-This topic provides you with a quick reference to the **WebLayout** element and it's child elements. Use this as a guide to further customize a WIT definition that's been transformed and contains the new **WebLayout** section. 
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Control Label="Milestone" Type="FieldControl" FieldName="Fabrikam.Milestone" Replaces="System.Reason" />
+```
 
-To customize the windows client layout, the [Layout XML element](layout-xml-element-reference.md). 
+You can hide or replace the Reason, Area Path, and Iteration Path fields. You can add these fields, if you want, to the Details page, or other custom page. You can't hide or replace the Title, Assigned To, or State fields. 
 
 ## WebLayout example
 
@@ -148,33 +169,25 @@ The following example specifies the syntax for the Details page shown previously
 </FORM>
 ```
 
-<a id="customize">  </a>  
-## Customize the web layout  
-
-To modify the web layout, use the information provided in this topic to modify the XML definition file for a specific work item type. To import and export your changes, see [Customize the work item tracking web form](../customize/customize-wit-form.md).   
-
 
 <a id="weblayout-element">  </a>  
-
 ## WebLayout element syntax
 
 You can specify how information and work item fields are grouped and appear in a work item form using the elements that are described in the following table.
 
-
->[!NOTE]  
->For **WebLayout**, you no longer add controls for attachments, links, and history. The system automatically adds these controls (```AttachmentControl```, ```LinksControl```, ```WorkItemClassificationControl``` and ```WorkItemLogControl```) to the web form of each WIT.  
-
-
-
 ### Nest elements 
  
-You nest the following elements: 
+Within a **Page** element within the **WebLayout** element, you can nest the following elements: 
 
-- ```Page``` elements within a single ```WebLayout``` element  
-- ```Section``` elements within a ```Page``` element, limit the number of ```Section```  elements to four within a ```Page```  
-- ```Group``` elements within a ```Section``` element  
-- ```Control``` elements within a ```Group``` element.  
+- **Page** elements within a single **WebLayout** element  
+- **Section** elements within a **Page**  element, limit the number of **Section**  elements to four within a **Page**  
+- **Group** elements within a **Section** element  
+- **Control** elements within a **Group** element.  
  
+Within a **PinnedControls** element within the WebLayout element, you can nest the following elements (requires TFS 2018 (RC2) or Hosted XMl process model): 
+
+- **Section** elements within a single **PinnedControls** element, limit the number of **Section** elements to three 
+- **Control** elements within a **Section** element, limit the number of **Control** elements to three  
 
 >[!TIP]  
 >The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).   
@@ -191,13 +204,13 @@ You nest the following elements:
 	<td><p>**Control**</p></td>
 	<td><p>Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
 <pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | 
-FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
+FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; 
+Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
 ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 
 <p>See [Control element attributes](#control-attributes) and [control type](#control-types) for information about each attribute.</p></td>
 </tr>
-
 
 <tr>
 	<td><p>**ControlContribution**</p></td>
@@ -310,8 +323,8 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </tr>
 
 <tr>
-	<td><p>**Section**</p></td>
-	<td><p>Required child element of **Page**. Defines the layout of a section within a page of the web form. Sections form groups that [support variable resizing](../customize/customize-wit-form.md#resizing). A limit of four sections can be defined within a **Page**. </p>
+<td><p>**Section**</p></td>
+<td><p>Required child element of **Page**. Defines the layout of a section within a page of the web form. Sections form groups that [support variable resizing](../customize/customize-wit-form.md#resizing). A limit of four sections can be defined within a **Page**. </p>
 <pre><code>&lt;Page&gt;  
    &lt;Section&gt;  
 	   &lt;Group&gt; . . . 
@@ -326,17 +339,17 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 
 <tr>
 <td>**SystemControls**</td>
-<td><p>Optional child element for **WebLayout**. Allows you to define the labels and empty text values for controls present in the header of the new work item form (built-in controls). This also includes, the labels for the History, Links, and Attachments tabs.</p>
+<td><p>Required child element for **WebLayout**. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the History, Links, and Attachments pages.</p>
 <pre><code>&lt;SystemControls&gt;  
-	&lt;Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /&gt; 
-	&lt;Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" /&gt;
-	&lt;Control Label="Stat&amp;e" Type="FieldControl" FieldName="System.State" /&gt;
-	&lt;Control Label="Reason" Type="FieldControl" FieldName="System.Reason" /&gt;
-	&lt;Control Label="&amp;Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" /&gt;
-	&lt;Control Label="Ite&amp;ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" /&gt;
-	&lt;Control Label="History" Type="WorkItemLogControl" FieldName="System.History" /&gt;
-	&lt;Control Label="Links" Type="LinksControl" Name="Links" /&gt;
-	&lt;Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" /&gt;
+   &lt;Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /&gt; 
+   &lt;Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" /&gt;
+   &lt;Control Label="Stat&amp;e" Type="FieldControl" FieldName="System.State" /&gt;
+   &lt;Control Label="Reason" Type="FieldControl" FieldName="System.Reason" /&gt;
+   &lt;Control Label="&amp;Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" /&gt;
+   &lt;Control Label="Ite&amp;ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" /&gt;
+   &lt;Control Label="History" Type="WorkItemLogControl" FieldName="System.History" /&gt;
+   &lt;Control Label="Links" Type="LinksControl" Name="Links" /&gt;
+   &lt;Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" /&gt;
 &lt;/SystemControls&gt;</code></pre>
 
 </td>
@@ -361,20 +374,21 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </table>
 
 <a id="control-element">  </a>  
-### Control element syntax 
+## Control element syntax 
 
 You use the **Control** element to define a work item field, text, hyperlink, or other form type to display in a work item form. The **Control** element you specify within the **WebLayout** section should conform to the following syntax:
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<Control FieldName="FieldName" Type="DateTimeControl | FieldControl | HtmlFieldControl |  
-LabelControl | WebpageControl&quot; Label="LabelText" LabelPosition="Top | Bottom | Left | Right"
-EmptyText="TextString" ReadOnly="True | False" Name="InstanceName" />
+<Control FieldName="FieldRefName" Type="DateTimeControl | FieldControl | 
+HtmlFieldControl | LabelControl | WebpageControl&quot; Label="LabelText" 
+LabelPosition="Top | Bottom | Left | Right" EmptyText="TextString" 
+ReadOnly="True | False" Name="InstanceName" [Visible="false" | 
+FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 ```
 
-
 <a id="control-attributes">  </a>
-### Control element attribute syntax  
+## Control element attribute syntax  
 
 <table width="100%" >
 <tbody valign="top" >
@@ -431,10 +445,23 @@ EmptyText="TextString" ReadOnly="True | False" Name="InstanceName" />
 </blockquote>  
 </td>
 </tr>
+
+<tr>
+<td><strong>Visible</strong></td>
+<td>Optional. Specify `Visible="false"` when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Replaces` attribute. 
+</td>
+</tr>
+
+<tr>
+<td><strong>Replaces</strong></td>
+<td>Optional. Specify `FieldName="ReplacementFieldRefName" Replaces="FieldRefName"` when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Visible` attribute. 
+</td>
+</tr>
+
 </tbody> 
 </table>
 
-### Control element Type attribute syntax
+## Control element Type attribute syntax
 <table width="100%">
 <tbody valign="top">
 <tr>
@@ -444,8 +471,8 @@ EmptyText="TextString" ReadOnly="True | False" Name="InstanceName" />
 
 <tr>
 <td>**DateTimeControl**</td>
-<td>Use to display formatted date fields with a data type of DateTime. 
-<p>Use ```FieldControl``` to provide a text field for the input or display of a DateTime field.</p>
+<td>Use to display formatted date fields with a data type of `DateTime`. 
+<p>Use `FieldControl` to provide a text field for the input or display of a DateTime field.</p>
 <pre><code>&lt;Control FieldName=&quot; MyCompany.Group1.StartDate &quot; Type=&quot;FieldControl&quot; 
 Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
@@ -475,7 +502,7 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 
 <tr>
 <td>**HTMLFieldControl**</td>
-<td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of ```Type=HTML```.  
+<td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of `Type=HTML`.  
 
 ![HTML field shown on work item form](_img/html-field-control.png)  
 
@@ -488,14 +515,14 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 
 <tr>
 <td>**LabelControl**</td>
-<td>Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the LabelText, Link and Text elements. See [LabelText and Text XML elements reference](../reference/labeltext-and-text-xml-elements-reference.md
+<td>Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements. See [LabelText and Text XML elements reference](../reference/labeltext-and-text-xml-elements-reference.md
 ) and [Link and Param XML elements reference](../reference/link-param-xml-elements-reference.md).</td>
 </tr
 
 
 <tr>
 <td>**WebpageControlOptions**</td>
-<td><p>Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the WebpageControlOptions element.</p>
+<td><p>Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the **WebpageControlOptions** element.</p>
 <p>The **WebpageControlOptions** element and its child elements have the following syntax structure:</p>
  
 <pre><code>&lt;WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" &gt;  
@@ -507,7 +534,7 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
    &lt;Content/&gt;  
 &lt;WebpageControlOptions/&gt;</code></pre>  
 
-<p>You use the ```Content```, ```LabelText```, and ```Link```elements to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. See [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md) for details about the syntax.</p>
+<p>You use the **Content**, **LabelText**, and **Link** elements to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. See [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md) for details about the syntax.</p>
 
  </td>
 </tr>
@@ -519,19 +546,17 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 If you're just getting started with the new form, see these additional topics to manage the roll out or customize it: 
 - [Manage new form rollout](../customize/manage-new-form-rollout.md)
 - [New work item experience](../process/new-work-item-experience.md)
-- [Customize a web form for a process](../process/customize-process-form.md) (Inheritance process model)
 - [Customize the new form](../customize/customize-wit-form.md) (Hosted XML and On-premises XML process models)
-- [LinksControlOptions elements](linkscontroloptions-xml-elements.md) 
 
 To learn more about process models and what's supported with each, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 <a id="marketplace-extensions">  </a>
-### Marketplace extensions  
+## Marketplace extensions  
 
 Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
 
 <a id="extensions">  </a>
-### Form extensions 
+## Form extensions 
 
 The **ControlContribution**, **GroupContribution**, and **PageContribution** elements reference the ```Id``` of contributions from the extensions that have been installed for a project collection or account. You install an extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). To create an extension, see [Create your first extension](../../extend/get-started/node.md).
 
