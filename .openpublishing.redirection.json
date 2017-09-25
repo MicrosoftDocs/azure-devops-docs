@@ -1023,7 +1023,7 @@
         },
         {
             "source_path": "docs/package/build/team-build-npm.md",
-            "redirect_url": "/vsts/package/get-started-npm",
+            "redirect_url": "/vsts/build-release/packages/nuget-pack-publish?toc=/vsts/package/toc.json",
             "redirect_document_id": false
         },
         {
