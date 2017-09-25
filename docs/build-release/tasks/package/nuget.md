@@ -229,7 +229,7 @@ None
             <ul>
                 <li>Default value: ```$(Build.ArtifactStagingDirectory)/*.nupkg```</li>
                 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
-                <li>Use single-folder wildcards (```*```) and recursive wildcards (```**```) to publish multiple packages.</li>
+                <li>Use [file matching patterns](../file-matching-patterns.md) to publish multiple packages. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.</li>
                 <li>Use [variables](../../concepts/definitions/build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
             </ul>
         </td>
