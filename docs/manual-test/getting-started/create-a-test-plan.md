@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Create a test plan and test suite

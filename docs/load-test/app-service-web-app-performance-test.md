@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ---
 

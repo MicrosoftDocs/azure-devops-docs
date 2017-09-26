@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/26/2016
+ms.date: 09/26/2017
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension

@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Collect diagnostic data while testing

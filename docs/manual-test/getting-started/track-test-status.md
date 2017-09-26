@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Track test status

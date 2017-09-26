@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/09/2016
+ms.date: 09/26/2017
 ---
 
 # Exploratory Testing

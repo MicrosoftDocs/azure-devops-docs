@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Test different configurations

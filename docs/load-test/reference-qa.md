@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 07/04/2017
+ms.date: 09/26/2017
 ---
 
 # FAQs for load testing
