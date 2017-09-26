@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Set up environments to run continuous test tasks with your build tasks

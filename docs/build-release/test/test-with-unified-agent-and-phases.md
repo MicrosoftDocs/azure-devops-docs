@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Testing with unified agents and phases

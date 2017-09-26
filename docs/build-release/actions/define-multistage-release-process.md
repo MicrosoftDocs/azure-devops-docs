@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 07/31/2017
+ms.date: 09/26/2017
 ms.custom: mvc
 ---
 

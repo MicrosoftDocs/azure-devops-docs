@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 05/12/2017
+ms.date: 09/26/2017
 ---
 
 # How To: Provision agents for deployment groups
