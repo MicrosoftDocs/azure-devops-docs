@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Run Apache JMeter load tests with VSTS

@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Tutorial: Load test your app before release

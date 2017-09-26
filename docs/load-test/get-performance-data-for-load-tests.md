@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 <a name="ApplicationInsights"></a>

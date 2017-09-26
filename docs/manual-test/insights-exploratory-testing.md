@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Get insights across your exploratory testing sessions

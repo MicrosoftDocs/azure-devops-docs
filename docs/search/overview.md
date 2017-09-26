@@ -7,7 +7,7 @@ ms.technology: vs-devops-search
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/04/2016
+ms.date: 09/26/2017
 ---
 
 # Search across all your code and work items

@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ---
 
 # Control how long to keep test results in VSTS

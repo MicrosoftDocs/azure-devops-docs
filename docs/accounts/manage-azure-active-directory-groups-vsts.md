@@ -38,6 +38,7 @@ but want to check it out? Learn more about
 and differences in how you 
 [control VSTS account access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
+
 ## Before you start
 
 * Your VSTS account must be connected 

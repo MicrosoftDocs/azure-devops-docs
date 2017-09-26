@@ -54,3 +54,6 @@ Next, configure these options:
 ![Team Build npm publish step configuration](_img/team-build-npm-publish.png)
 
 Finally, save your build.
+
+> [!NOTE]
+> Team Build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. Ensure your working folder has a `.npmrc` file with a `registry=` line, as detailed in the Connect to feed screen in your feed.

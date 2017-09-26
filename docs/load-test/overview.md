@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ---
 

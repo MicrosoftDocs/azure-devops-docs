@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: douge
-ms.date: 08/04/2016
+ms.date: 09/26/2017
 ---
 
 # How To: Use Code Search
