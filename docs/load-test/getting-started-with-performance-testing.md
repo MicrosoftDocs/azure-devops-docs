@@ -7,7 +7,7 @@ ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/12/2016
+ms.date: 
 ---
 
 <a name="cloudloadtest"></a>
