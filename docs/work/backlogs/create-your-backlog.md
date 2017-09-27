@@ -57,6 +57,13 @@ Begin building your backlog by entering a title and click Add. Repeat this step 
   
 <img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 2px solid #C3C3C3;" />  
 
+
+>[!NOTE]  
+>Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+>
+>By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
 After you've got some items on your backlog, you can order them and create a prioritized list of work. Frequently reviewing and prioritizing your backlog can help your team know what's most important to deliver next.

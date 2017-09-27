@@ -78,35 +78,35 @@
     - name: Add or modify a field
       href: add-modify-field.md
     - name: Apply a field rule
-      href: /reference/apply-rule-work-item-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/apply-rule-work-item-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define pick lists
-      href: /reference/define-pick-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/define-pick-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Expand list and exclude groups
-      href: /reference/expand-list-items-and-exclude-groups-from-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/expand-list-items-and-exclude-groups-from-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Combine list types
-      href: /reference/combine-list-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/combine-list-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change reporting attributes (TFS)
-      href: /reference/add-or-modify-work-item-fields-to-support-reporting.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/add-or-modify-work-item-fields-to-support-reporting.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Change the workflow
-    href: /reference/change-workflow-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ./reference/change-workflow-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work item type or form
     items:
     - name: Add or modify a work item type
       href: add-modify-wit.md
     - name: Design the work item form
-      href: /reference/design-work-item-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/design-work-item-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add the Attachments control
-      href: /reference/add-the-attachments-control.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/add-the-attachments-control.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: "Provide help text, hyperlinks, or web content"
-      href: /reference/provide-help-text-hyperlinks-web-content-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/provide-help-text-hyperlinks-web-content-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add web content to a form
-      href: /reference/edit-wit-definition-add-web-content-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/edit-wit-definition-add-web-content-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change the work item form layout
-      href: /reference/change-work-item-form-layout.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/change-work-item-form-layout.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Specify work item form controls
-      href: /reference/specify-work-item-form-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/specify-work-item-form-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define link controls
-      href: /reference/define-link-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/define-link-controls.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Backlogs and boards
     items:
     - name: Add work item types
@@ -114,13 +114,13 @@
     - name: Add portfolio backlogs
       href: add-portfolio-backlogs.md
     - name: Use categories to group work item types
-      href: /reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Process templates
     items:
     - name: Upload/download process templates
       href: ../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a process template
-      href: /reference/process-templates/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: On-premises TFS only
     items:
     - name: Configure features after an upgrade
@@ -136,9 +136,9 @@
     - name: When upgrading from TFS 2008 or TFS 2010  
       href: upgrade-tfs-2008-or-2010.md
     - name: Define a custom link type
-      href: /reference/define-custom-link-type.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/define-custom-link-type.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change the maximum attachment size for work items
-      href: /reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Use team fields instead of area paths
       href: use-team-fields-instead-area-paths.md
 - name: Reference
@@ -152,165 +152,165 @@
   - name: Work tracking XML element reference
     items:
     - name: XML element reference
-      href: /reference/xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: All WITD elements
-      href: /reference/all-witd-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/all-witd-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Localization and globalization XML elements
-      href: /reference/localization-and-globalization-of-witd-child-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/localization-and-globalization-of-witd-child-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: All FIELD (Definition) elements
-      href: /reference/all-field-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/all-field-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
       - name: FIELD (Definition)
-        href: /reference/field-definition-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/field-definition-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: "COPY, DEFAULT, and SERVERDEFAULT"
-        href: /reference/define-default-copy-value-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/define-default-copy-value-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: GLOBALLIST XML element reference
-        href: /reference/define-global-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/define-global-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Global workflow XML element reference
-        href: /reference/global-workflow-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/global-workflow-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Apply pattern matching
-        href: /reference/apply-pattern-matching-to-string-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/apply-pattern-matching-to-string-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Conditional rules
-        href: /reference/assign-conditional-based-values-and-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/assign-conditional-based-values-and-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: WORKFLOW elements
-      href: /reference/all-workflow-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/all-workflow-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
       - name: FIELD (Workflow)
-        href: /reference/field-workflow-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/field-workflow-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: ACTION
-        href: /reference/automate-field-assignments-state-transition-reason.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/automate-field-assignments-state-transition-reason.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: TRANSITION
-        href: /reference/transition-xml-element.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/transition-xml-element.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: New web form layout
       items:
       - name: WebLayout and Control elements
-        href: /reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: LinksControlOptions (web)
-        href: /reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Old (web and client) form layout
       items:
       - name: All FORM elements
-        href: /reference/all-form-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/all-form-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Layout
-        href: /reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Control
-        href: /reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Tab
-        href: /reference/tab-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/tab-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: LinksControlOptions (web/client)
-        href: /reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: LabelText and Text
-      href: /reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Link and Param
-      href: /reference/link-param-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/link-param-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: WebpageControlOptions
-      href: /reference/webpagecontroloptions-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/webpagecontroloptions-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: LinkTypes elements reference 
-      href: /reference/link-type-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/link-type-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: CATEGORIES XML reference
-      href: /reference/categories-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/categories-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: ProcessConfiguration XML reference
-      href: /reference/process-configuration-xml-element.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-configuration-xml-element.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Process template
     items:
     - name: XML element index
-      href: /reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Process template files
-      href: /reference/process-templates/overview-process-template-files.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/overview-process-template-files.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define root tasks
-      href: /reference/process-templates/define-root-tasks-process-template-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-root-tasks-process-template-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Process template XML elements
-      href: /reference/process-templates/process-template-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/process-template-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define tasks and task group dependencies
-      href: /reference/process-templates/define-dependencies-plug-ins-groups-tasks.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-dependencies-plug-ins-groups-tasks.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define tasks to process
-      href: /reference/process-templates/define-tasks-to-process-a-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-tasks-to-process-a-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define the Classification plug-in
-      href: /reference/process-templates/define-classification-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-classification-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define the Portal plug-in
-      href: /reference/process-templates/define-project-portal-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-project-portal-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define the Reporting plug-in
-      href: /reference/process-templates/add-reports-to-the-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/add-reports-to-the-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: "Configure initial groups, teams, members, and permissions"
-      href: /reference/process-templates/configure-initial-groups-teams-members-permissions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/configure-initial-groups-teams-members-permissions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
       - name: Define the Groups and Permissions plug-in
-        href: /reference/process-templates/define-groups-teams-permissions-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-groups-teams-permissions-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Define the work item tracking plug-in
-      href: /reference/process-templates/define-objects-track-work-items-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/define-objects-track-work-items-plug-in.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
       - name: Add work item types
-        href: /reference/process-templates/add-wit-definitions-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/add-wit-definitions-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Add link types
-        href: /reference/process-templates/add-link-type-definitions-to-a-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/add-link-type-definitions-to-a-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Add categories
-        href: /reference/process-templates/add-type-wit-category-definitions-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/add-type-wit-category-definitions-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Add work item queries
-        href: /reference/process-templates/add-work-item-queries-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/add-work-item-queries-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Define a work item query
-        href: /reference/process-templates/define-work-item-query-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-work-item-query-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Add a work item instance
-        href: /reference/process-templates/add-work-item-instance-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/add-work-item-instance-process-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Control access to functional areas
-      href: /reference/process-templates/control-access-to-functional-areas.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/process-templates/control-access-to-functional-areas.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
       - name: Define the TFVC plug-in
-        href: /reference/process-templates/define-initial-configuration-version-control.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-initial-configuration-version-control.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Define the Test Management plug-in
-        href: /reference/process-templates/define-initial-configuration-test-manager.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-initial-configuration-test-manager.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Define the Build plug-in
-        href: /reference/process-templates/define-initial-configuration-build.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-initial-configuration-build.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Define the Lab Management plug-in
-        href: /reference/process-templates/define-initial-configuration-lab-management.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+        href: ./reference/process-templates/define-initial-configuration-lab-management.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: witAdmin command line reference
-    href: /reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ./reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     items:
     - name: Import and export categories
-      href: /reference/witadmin/witadmin-import-export-categories.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/witadmin-import-export-categories.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Import and export global workflow
-      href: /reference/witadmin/witadmin-import-export-global-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/witadmin-import-export-global-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Import and export process configuration
-      href: /reference/witadmin/witadmin-import-export-process-configuration.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/witadmin-import-export-process-configuration.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: "Import, export, and manage work item types"
-      href: /reference/witadmin/witadmin-import-export-manage-wits.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/witadmin-import-export-manage-wits.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Manage global lists for work item types
-      href: /reference/witadmin/manage-global-lists-for-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/manage-global-lists-for-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Manage link types
-      href: /reference/witadmin/manage-link-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/manage-link-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Manage work item fields
-      href: /reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Rebuild the client cache
-      href: /reference/witadmin/rebuild-client-cache.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/rebuild-client-cache.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Remove work items permanently
-      href: /reference/witadmin/remove-work-items-permanently.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/remove-work-items-permanently.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Project-to-TFS field mapping
     items:
     - name: Change how fields map
-      href: /reference/add-or-change-how-project-fields-map-to-tfs-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/add-or-change-how-project-fields-map-to-tfs-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize the Project field mapping
-      href: /reference/customize-project-field-mapping-file.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/customize-project-field-mapping-file.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Map Project fields
-      href: /reference/map-microsoft-project-fields-to-tf-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/map-microsoft-project-fields-to-tf-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Project field mappings
-      href: /reference/field-mappings-in-microsoft-project.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/field-mappings-in-microsoft-project.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Upload/download the Project mapping file
-      href: /reference/upload-or-download-the-microsoft-project-mapping-file.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/upload-or-download-the-microsoft-project-mapping-file.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: On-premises TFS Only
     items:
     - name: Support rollup (TFS)
-      href: /reference/support-rollup-of-work-and-other-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/support-rollup-of-work-and-other-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Field data type and reportable attributes
-      href: /reference/define-modify-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/define-modify-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize and manage the test experience
-      href: /reference/witadmin/tcm-customize-manage-test-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/witadmin/tcm-customize-manage-test-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: API SDK reference
     items:
     - name: IProcessTemplates.AddUpdateTemplate
-      href: /reference/api-ref/iprocess-templates-add-update-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/api-ref/iprocess-templates-add-update-template.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: WorkItem.Open method
-      href: /reference/api-ref/open.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/api-ref/open.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: WorkItem.PartialOpen method
-      href: /reference/api-ref/partialopen.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ./reference/api-ref/partialopen.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Work items

@@ -22,7 +22,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 -->
 
 ## 5-Minute Quickstarts  
-- [Unsubscribe from a notification](unsubscribe-default-notification.md)  
+- [View your subscriptions, opt-out as needed](unsubscribe-default-notification.md)  
 - [Change your preferred email address](change-email-address.md)  
  
 

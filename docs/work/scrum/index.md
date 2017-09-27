@@ -33,24 +33,24 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 - [Plan a sprint](sprint-planning.md)  
 - [Add and update tasks](task-board.md)  
-- [Plan capacity](/vsts/work/scale/capacity-planning?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
+- [Plan capacity](../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 - [Sprint burndown](sprint-burndown.md)  
 - [Forecast](forecast.md) 
-- [Velocity](/vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
+- [Velocity](../../report/guidance/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
  
 
 ## Concepts          
 - [Scrum best practices](best-practices-scrum.md) 
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)      
 - [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
-- [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
+- [Share work plans](../track/share-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
 
 
 ## How-to Guides
 
-* [Filter backlogs & queries](/vsts/work/backlogs/filter-backlogs?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
-* [Copy list of work items](/vsts/work/backlogs/copy-list?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
-* [Bulk add or modify (Web)](/vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)   
+* [Filter backlogs & queries](../backlogs/filter-backlogs.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+* [Copy list of work items](../backlogs/copy-list.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
+* [Bulk add or modify (Web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)   
 
 
 ## Reference   

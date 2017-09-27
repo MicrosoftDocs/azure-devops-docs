@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/25/2017
+ms.date: 09/26/2017
 ---
 
 # WebLayout and Control elements  
@@ -83,7 +83,8 @@ For example, to hide the Reason field, you modify the **Control** element with t
 <Control Label="Reason" Type="FieldControl" FieldName="System.Reason" Visible="false" />
 ```
 
-To replace the Reason field with another field, use the `Replaces` attribute.
+To replace the Reason field with another field, use the `Replaces` attribute. Also, remove the entry for the Reason field from within the section. 
+
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -462,7 +463,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 
 <tr>
 <td><strong>Replaces</strong></td>
-<td>Optional. Specify `FieldName="ReplacementFieldRefName" Replaces="FieldRefName"` when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Visible` attribute. 
+<td>Optional. Specify `FieldName="ReplacementFieldRefName" Replaces="FieldRefName"` when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Visible` attribute. Also, you need to remove the entry for the field you are replacing from within the section. 
 </td>
 </tr>
 
