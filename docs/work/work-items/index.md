@@ -37,9 +37,10 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## Concepts 
 
-- [Agile process guidance](guidance/agile-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [CMMI process guidance](guidance/cmmi-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [Scrum process guidance](guidance/scrum-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)         
+- [Choose a process](guidance/choose-process.md)  
+- [Agile process guidance](guidance/agile-process.md)  
+- [CMMI process guidance](guidance/cmmi-process.md)  
+- [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 
 
 ## How-to Guides

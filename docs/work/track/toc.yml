@@ -5,16 +5,20 @@
   - name: Create managed queries to list, update, or chart work items
     href: example-queries.md
   - name: Adhoc vs managed queries
-    href: /vsts/work/track/adhoc-vs-managed-queries?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+    href: adhoc-vs-managed-queries.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: Search box query 
+  - name: View, run, or email a query 
+    href: view-run-query.md
+  - name: Perform an adhoc search (search box query) 
     href: search-box-queries.md
 - name: Tutorials
   items:
-  - name: Edit a query
+  - name: Create managed queries
     href: using-queries.md
-  - name: Bulk modify (web)
+  - name: Triage work items  
+    href: triage-work-items.md
+  - name: Bulk modify work items
     href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Concepts
   items:
@@ -42,22 +46,28 @@
     href: linking-attachments.md 
 - name: How-to Guides
   items:
-  - name: Add tags to work items
-    href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: "Filter backlogs & queries"
-    href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: Copy list of work items 
-    href: /vsts/work/backlogs/copy-list?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Organize queries, add a query folder
+    href: organize-queries.md
+  - name: Set query permissions 
+    href: set-query-permissions.md
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Add tags to work items
+    href: add-tags-to-work-items.md
+  - name: "Filter backlogs & queries"
+    href: ../backlogs/filter-backlogs.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Copy list of work items 
+    href: ../backlogs/copy-list.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Define a query as a hyperlink 
+    href: define-query-hyperlink.md 
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
   - name: Work item field index
-    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+    href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
-    href: /vsts/collaborate/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+    href: ../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: Keyboard shortcuts
     href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Resources

@@ -51,7 +51,9 @@
   - name: "Use @mentions to further discussion"
     href: ../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "Use #ID to link to work items"
-    href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: Navigate using your account home page
+    href: account-home-pages.md
   - name: View permissions
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile

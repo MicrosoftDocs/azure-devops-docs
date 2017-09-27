@@ -15,25 +15,20 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 <!---
 ## Overview  
-  * name: Individual versus shared queries
-    href: my-shared-queries.md
-  * name: View and run a query (IN PROGRESS) 
-    href: view-run-query.md
 * [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
-*   name: Organize and run managed queries (IN PROGRESS) 
-    href: organize-view-run-queries.md
-   name: Triage work items (IN PROGRESS) 
-    href: triage-work-items.md 
+
 -->
  
 ## 5-Minute Quickstarts  
 
-- [Perform an adhoc search](search-box-queries.md)
+- [View, run, or email a query](view-run-query.md)
+- [Perform an adhoc search (search box query)](search-box-queries.md)
 
 ## Step-by-Step Tutorials
 
-- [Edit a query](using-queries.md)
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Create or edit a managed query](using-queries.md)
+- [Triage work items](triage-work-items.md)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 
 
 ## Concepts
@@ -42,7 +37,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## Samples
-- [Example search box queries](search-box-queries.md)
+
 - [Query by title, ID, or description](titles-ids-descriptions.md)
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)  
 - [Query by area or iteration path](query-by-area-iteration-path.md)   
@@ -55,9 +50,9 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## How-to Guides
+- [Organize queries, add a query folder](organize-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 - [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [Filter product and portfolio backlogs](../backlogs/filter-backlogs.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 
 
 ## Reference 
@@ -65,6 +60,8 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
 - [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+ 
+
  
 ## Resources
 - [Backlogs](../backlogs/index.md)

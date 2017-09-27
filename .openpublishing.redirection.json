@@ -873,7 +873,7 @@
         },
         {
             "source_path": "docs/connect/user-focused-features.md",
-            "redirect_url": "/vsts/connect/account-home-pages",
+            "redirect_url": "/vsts/user-guide/account-home-pages",
             "redirect_document_id": false
         },
         {

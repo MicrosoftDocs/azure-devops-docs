@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017  
+ms.date: 09/29/2017  
 ---
 
 
@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
-You can use the WIQL syntax to [construct a query that you submit from a web browser](../work/track/using-queries.md#define-query-hyperlink) or using the [Work Item Query Language (REST API)](https://www.visualstudio.com/docs/integrate/api/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](../work/track/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](https://www.visualstudio.com/docs/integrate/api/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 

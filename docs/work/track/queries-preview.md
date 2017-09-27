@@ -8,7 +8,7 @@ ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 09/07/2017
+ms.date: 09/29/2017  
 ---
 
 # New Queries experience
@@ -20,9 +20,7 @@ ms.date: 09/07/2017
 
 We have launched a preview version of a modernized Queries Hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
-## What's new in the Queries hub
-
-### User Focused Navigation
+## User focused navigation
 When you enable the preview of the **Work>Queries** hub, you’ll notice that the left pane is gone. To navigate quickly between your favorite queries, use the dropdown in the query title.
 
 <img src="_img/queries-favorite-picker.png" alt="List of favorite queries to run" style="border: 1px solid #cccccc;"/>
@@ -37,12 +35,12 @@ In addition the directory pages highlight new metadata for each query including:
     * Who last modified it
     * When it was last modified
 
-### Find queries faster with filtering
+## Find queries faster with filtering
 The query directory pages now include a filter bar that lets you quickly search for any query you care about.
 
 <img src="_img/queries-all-filter.png" alt="List of all queries in the project filtered by WIT IQ criteria" style="border: 1px solid #cccccc;"/>
 
-### Other improvements
+## Other improvements
 Besides the big changes listed above, here are some other improvements:
 * Create and edit followed work item queries with the @Follows macro
 * "Save as" now copies charts to the new query
@@ -58,4 +56,5 @@ Let us know what you think in the comment box that appears when you toggle the n
 
 ## Related notes
 
+- [View or run a query](view-run-query.md)
 - [Work from the account home page](../../user-guide/account-home-pages.md)

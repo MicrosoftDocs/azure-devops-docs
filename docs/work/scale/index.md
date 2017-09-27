@@ -19,7 +19,7 @@ Manage portfolios and gain visibility across teams.
 
 - [Manage portfolios](portfolio-management.md)
 - [Review delivery plans](review-team-plans.md) 
-- [Set team favorites](/vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  
+- [Set team favorites](../../collaborate/set-favorites.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  
 
 ## Concepts 
        
@@ -30,7 +30,7 @@ Manage portfolios and gain visibility across teams.
 
 ## How-to Guides
 - [Scaled Agile Framework](scaled-agile-framework.md)   
-- [Define a work item template](/vsts/work/backlogs/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+- [Define a work item template](../backlogs/work-item-template.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 - [Configure team settings](manage-team-assets.md) 
 - [Set team defaults](set-team-defaults.md) 
 

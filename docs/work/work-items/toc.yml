@@ -29,16 +29,8 @@
     href: ../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Concepts
   items:
-  - name: "Link types & link relationships"
-    href: ../track/link-work-items-support-traceability.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
-  - name: Share work plans
-    href: ../track/share-plans.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: "Workflow states & state categories"
-    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
-  - name: New work item experience
-    href: ../customize/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
-  - name: Permissions and access for work tracking
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: Choose a process
+    href: guidance/choose-process.md
   - name: Agile process guidance
     href: guidance/agile-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     items:
@@ -91,7 +83,17 @@
       - name: Track bugs
         href: guidance/cmmi/track-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Agile glossary
-    href: /vsts/work/work-items/agile-glossary.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: agile-glossary.md
+  - name: "Link types & link relationships"
+    href: ../track/link-work-items-support-traceability.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
+  - name: Share work plans
+    href: ../track/share-plans.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Workflow states & state categories"
+    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+  - name: New work item experience
+    href: ../customize/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+  - name: Permissions and access for work tracking
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: "Use @mentions to further discussion" 

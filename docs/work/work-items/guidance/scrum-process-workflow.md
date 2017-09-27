@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE�[temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -70,7 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   </blockquote>   
+<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   </blockquote>Â Â Â 
 
 ## Track progress
 
@@ -162,7 +162,7 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
-[!INCLUDE�[temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
 
 ## Related notes

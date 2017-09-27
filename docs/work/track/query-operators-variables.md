@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017   
+ms.date: 09/29/2017  
 ---
 
 
@@ -269,7 +269,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@Follows</b></td>
+	<td>**@Follows**</td>
 	<td>Use in conjuction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
 <blockquote><strong>Feature availability:</strong> The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
 </blockquote>
