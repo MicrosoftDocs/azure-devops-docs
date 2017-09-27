@@ -33,7 +33,7 @@
     - name: Recover account
       href: recover-your-vsts-account.md
     - name: Sign in with different credentials
-      href: ../connect/connect-team-projects.md#logindifferentcred
+      href: ../user-guide/connect-team-projects.md#logindifferentcred
     - name: Change account preferences
       href: account-preferences.md
   - name: Manage team projects
