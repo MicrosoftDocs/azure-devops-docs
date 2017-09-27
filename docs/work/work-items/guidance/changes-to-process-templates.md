@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/21/2017
+ms.date: 09/29/2017
 ---
 
-#Changes made to process templates  
+# Changes made to process templates  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDEÂ [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 >[!NOTE]  
 >This topic describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both VSTS and TFS. 

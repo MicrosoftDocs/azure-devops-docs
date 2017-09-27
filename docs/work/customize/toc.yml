@@ -69,8 +69,6 @@
       href: import-process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Import a process
       href: import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Resolve validation errors
-      href: import-process/resolve-errors.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize form layout
       href: customize-wit-form.md
   - name: Fields
@@ -141,6 +139,12 @@
       href: ./reference/change-maximum-attachment-size-work-items.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Use team fields instead of area paths
       href: use-team-fields-instead-area-paths.md
+- name: Troubleshooting
+  items:
+    - name: Resolve validation errors
+      href: ./import-process/resolve-errors.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Troubleshoot process configuration
+      href: troubleshoot-process-configuration.md 
 - name: Reference
   items:
   - name: Changes made to process templates

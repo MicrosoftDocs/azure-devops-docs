@@ -39,6 +39,8 @@
     href: ../customize/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Permissions and access for work tracking
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: Choose a process
+    href: guidance/choose-process.md
   - name: Agile process guidance
     href: guidance/agile-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     items:

@@ -5,9 +5,9 @@ ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 07/25/2017  
+ms.author: kaelli 
 ms.topic: get-started-article
+ms.date: 09/29/2017  
 ---
 
 # Copy or clone work items  

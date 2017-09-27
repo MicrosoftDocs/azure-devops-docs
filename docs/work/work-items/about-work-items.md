@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/03/2017
+ms.date: 09/29/2017  
 ---
 
 # About work items 
@@ -39,7 +39,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 
 <a id="assign-work-items"></a>
-## Assign work items  to a team member
+## Assign work items to a team member
 
 You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by VSTS or TFS. 
 
@@ -75,6 +75,54 @@ Note the following:
 
 To schedule work items to be worked on during at specific time period, you assign the Iteration field. to learn more, see [Schedule sprints](../scrum/define-sprints.md). 
 
+
+<a id="track"> </a>
+## Track bugs as requirements or tasks 
+
+Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task.  
+
+Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
+
+Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
+<table>
+<tbody valign="top">
+<tr>
+<th>Bug tracking options</th>
+<th>Choose this option </th>
+</tr>
+<tr>
+<td>
+<p>**Bugs appear as part of the product backlog**</p>
+<p>Bugs appear on backlogs and boards with requirements </p> 
+</td>
+<td>
+<p>When your team or product owner wants to manage bugs similar to requirements. Bugs can be added and prioritize along with PBIs or user stories on the [product backlog](../backlogs/create-your-backlog.md). </p>
+<p>With this option, the team can estimate the effort or story points for bugs which are then included against team velocity and cumulative flow. </p> 
+</td>
+</tr>
+<tr>
+<td>
+<p>**Bug backlog is separate from the product backlog** </p>
+<p>Bugs appear on backlogs and boards with tasks </p>
+</td>
+<td>
+<p>When your team links bugs to PBIs or user stories, and manages them similar to tasks.</p> 
+<p>With this option, the team can estimate remaining work for bugs and track progress against the sprint capacity and sprint burndown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>**Bugs don't appear on backlogs and boards** </p>
+</td>
+<td>
+<p>When your team manages bugs separate from requirements or tasks, or a different team is tasked with addressing bugs. </p> 
+</td>
+</tr>
+</tbody>
+</table>  
+
+
 ## Find or list work items 
 
 You can use the search box to perform an adhoc search to find specific work items based on select field criteria. 
@@ -82,11 +130,11 @@ You can use the search box to perform an adhoc search to find specific work item
 Or, you can create a query to perform a managed search which will list work items based on your query criteria. With manage searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
-- [Queries overview](../track/example-queries.md)  
+- [Create managed queries to list, update, or chart work items ](../track/example-queries.md)  
+- [View, run, or email a query](../track/view-run-query.md)  
 - [Adhoc vs managed queries](../track/adhoc-vs-managed-queries.md)  
-- [Managed queries](../track/using-queries.md)  
 - [Charts](../../report/charts.md)  
-- [Dashboards](../../report/dashboards.md)  
+
 
 ## Customize a WIT 
 

@@ -11,7 +11,7 @@ ms.date: 04/13/2017
 
 #Upload or download a process template
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 >[!NOTE]  

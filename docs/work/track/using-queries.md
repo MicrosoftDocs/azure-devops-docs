@@ -1,5 +1,5 @@
 ---
-title: Create managed queries with the Query Editor | VSTS & TFS
+title: Create managed queries with the Query Editor
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,10 +7,10 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/11/2017  
+ms.date: 09/29/2017  
 ---
 
-# Use the query editor to create managed queries  
+# Create managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -46,8 +46,12 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, click **View>Team Explorer** from the top level menu.   
 
 2.	Edit the query to find closed bugs and then run the query. 
-	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   
-	
+	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
+
+	**VSTS, New queries experience:**  	
+
+	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" /> 
+
 	**VSTS, TFS 2017, TFS 2015:**  
 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />  
@@ -68,7 +72,7 @@ You can start a fresh, new query from the Queries page in the web portal or the 
 
 <img src="_img/using-queries-new-query-ts.png" alt="Queries page, Choose New query from the drop down menu" style="border: 2px solid #C3C3C3;" /> 
 
-### Group clauses
+## Group clauses
 
 Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
 
@@ -92,7 +96,7 @@ If your query results do not return your expected set of work items, follow thes
 - Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
 
 <a id="tree-query" />
-### Use a tree query to view hierarchies  
+## Use a tree query to view hierarchies  
 
 Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.
 
@@ -161,13 +165,6 @@ All fields from all WITs defined in all team projects in the collection always a
 
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
 
-<a id="favorite-query">  </a>
-## Add a query to the dashboard or share it with your team 
-To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards.md).   
-
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../accounts/add-users.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
-
-You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
 
 ## Related notes
 
@@ -178,11 +175,10 @@ If you want to export a query to Excel, you can do that from [Excel or Visual St
 See also: 
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Chart a flat-list query](../../report/charts.md)  
-- [Create Excel reports from a query (TFS)](../../report/excel/create-status-and-trend-excel-reports.md)
 - [Change column options](../backlogs/set-column-options.md)
-
+- [Define a query as a hyperlink](define-query-hyperlink.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 
 ### Task board versus query list items
 
@@ -190,82 +186,6 @@ You may notice and wonder why the contents of the task board differ from those l
  
 ### Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
-
-<a id="define-query-hyperlink" />  
-### Define a query as a hyperlink  
-The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../collaborate/wiql-syntax.md).
-
-VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
-
-TFS 2013 and previous versions didn't require encoding.  
-
->[!NOTE]  
->Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
-
-
-**VSTS syntax**
-
-```  
-https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
-```
-For example, the following hyperlink lists the ID and title of all active bugs defined under the FabrikamFiber/Web area path for the fabrikam.visualstudio.com account.
-
-```  
-https://fabrikam.visualstudio.com/DefaultCollection/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.State%5D%3D'Active'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'
-```
-
-The decoded WIQL conforms to: 
-
-```
-SELECT [System.ID], [System.Title]
-   FROM WorkItems 
-   WHERE [System.TeamProject]='FabrikamFiber' 
-   AND [System.WorkItemType]='Bug'
-   AND [System.State]='Active'
-   AND [System.AreaPath]='FabrikamFiber\Web'
-```
-
-**TFS 2015 syntax**
-
-```  
-https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
-```
-
-The ```_workitems?``` entry has replaced the ```q.aspx?``` entry used in the syntax for TFS 2013 and previous versions.  
-
-For example, the following hyperlink lists the ID, title, and state of all bugs under the FabrikamFiber/Web area path hosted on the fabrikam server.
-
-```
-http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%2C%20%5BSystem.State%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'%20%20
-```
-
-Which is comparable to the non-encoded entry:  
-
-```
-http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=
-SELECT [System.ID], [System.Title], [System.State] 
-   FROM WorkItems 
-   WHERE [System.TeamProject]='FabrikamFiber' 
-   AND [System.WorkItemType]='Bug' 
-   AND [System.AreaPath]='FabrikamFiber\Web'   
-```
-
-**TFS 2013 and previous versions syntax**
-
-```  
-https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
-```
-For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber team project hosted on the fabrikam server. 
-
-```
-http://fabrikam:8080/tfs/DefaultCollection/q.aspx?pname=FabrikamFiber&wiql=
-SELECT [System.ID], [System.Title], [System.State] 
-	FROM WorkItems 
-	WHERE [System.TeamProject]='FabrikamFiber' 
-	AND [System.WorkItemType]='Bug' 
-	AND [System.FoundIn]='9.0.30304' 
-```
-
 
 
 ### Programmatically query for work items 
@@ -276,7 +196,7 @@ You can create dynamic queries using one of the following resources:
 
 
 See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../collaborate/wiql-syntax.md)  
+- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 > [!NOTE]  
