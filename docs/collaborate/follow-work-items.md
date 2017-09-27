@@ -77,9 +77,9 @@ From this view, you can view all items you're following across all team projects
 
 However, this view isn't based on a query so you can't modify the parameters of the view. 
 
-You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../connect/account-home-pages.md#follow-work). 
+You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../user-guide/account-home-pages.md#follow-work). 
 
-<img src="../connect/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #CCCCCC;" />   
+<img src="../user-guide/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #CCCCCC;" />   
 
 ## Related notes  
 

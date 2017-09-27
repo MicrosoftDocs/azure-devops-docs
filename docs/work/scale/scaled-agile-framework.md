@@ -16,7 +16,7 @@ ms.date: 07/22/2017
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 
-If you're interested in using SAFe, you can configure projects created with the [Scrum](../guidance/scrum-process.md), [Agile](../guidance/agile-process.md),  or [CMMI](../guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as your Agile tools support Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
+If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md),  or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as your Agile tools support Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
 
 In this article you'll learn how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure your Agile tools to support SAFe.  
 
@@ -33,7 +33,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -330,13 +330,13 @@ There's no customization required to implement SAFe when working in VSTS or an o
 
 ###Resources
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  
-- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../guidance/scrum-process.md), [Agile](../guidance/agile-process.md), and [CMMI](../guidance/cmmi-process.md).  
+- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
 - [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
-- [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
+- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 - [Synchronize Team Foundation Server with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md): Describes how project managers and development teams can use the tools that they prefer and share information transparently by enabling data to flow from work items in TFS to tasks in enterprise project plans in Project Server.  
 - [Track your work when assigned to two or more teams](capacity-planning.md): Shows how a developer or tester can track work when they support more than one feature team.  

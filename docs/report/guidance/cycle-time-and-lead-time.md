@@ -110,7 +110,7 @@ We recommend your team review the lead/cycle time charts before or during each r
 - [Kanban basics](../../work/kanban/kanban-basics.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md)
-- [Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), and [CMMI](../../work/guidance/cmmi-process.md) processes
+- [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes
 
  
 <!---
@@ -125,7 +125,7 @@ We recommend your team review the lead/cycle time charts before or during each r
 
 ### Lead time versus cycle time   
 
-Your team can use the lead time and cycle time control charts whether they follow Scrum, Kanban, or other methods or the team project is based on the [Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), or [CMMI](../../work/guidance/cmmi-process.md) processes. 
+Your team can use the lead time and cycle time control charts whether they follow Scrum, Kanban, or other methods or the team project is based on the [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md) processes. 
 
 The diagram below illustrates how lead time differs from cycle time. These measures are calculated based on when work items are created (lead time), when work is started (cycle time), and when they are completed (both lead and cycle time). The system determines these times based on the workflow state, such as New, Proposed, or Approved, and the state category it is mapped to.  
 

@@ -44,7 +44,7 @@ You can compare any two files using the Compare dialog. The files can both resid
 
 Compare your work with the latest version on your Team Foundation Server while continuing to make changes.
 
-1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../connect/connect-team-projects.md).
+1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../user-guide/connect-team-projects.md).
 
 2.  From **Team Explorer**, open the **Pending Changes** view.
 

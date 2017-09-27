@@ -55,16 +55,16 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## How-to Guides
-- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
-- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [Filter product and portfolio backlogs](/vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
+- [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
+- [Filter product and portfolio backlogs](../backlogs/filter-backlogs.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
+- [WIQL syntax](../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
  
 ## Resources
 - [Backlogs](../backlogs/index.md)

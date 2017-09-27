@@ -49,7 +49,7 @@
   - name: Copy list of work items 
     href: /vsts/work/backlogs/copy-list?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Change column options
-    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+    href: ../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
@@ -57,9 +57,9 @@
   - name: Work item field index
     href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
-    href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+    href: /vsts/collaborate/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: Keyboard shortcuts
-    href: ../../reference/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+    href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Work Items

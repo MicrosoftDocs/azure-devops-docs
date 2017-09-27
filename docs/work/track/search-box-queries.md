@@ -106,7 +106,7 @@ You can perform partial or exact match queries on a keyword or a phrase containe
 
 ## Find items based on specific fields and field values
 
-To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that is not listed on the form, see [Work item field index](../guidance/work-item-field.md).
+To find work items based on a keyword or phrase contained within other text string fields, specify either the friendly name or the reference name of the field. Enclose each phrase in quotation marks. You can determine the friendly name of a field by hovering over the field within a work item form. To determine the reference name of commonly used fields or to find a field that is not listed on the form, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 |Filter for items that meet this criteria:|Type the following string:|  
 |---|---|  
@@ -201,7 +201,7 @@ The following examples show how to use operators when you create a search string
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Use the query editor to list and manage queries](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../guidance/work-item-field.md)     
+- [Work item field index](../work-items/guidance/work-item-field.md)     
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 

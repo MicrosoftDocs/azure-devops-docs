@@ -15,7 +15,7 @@ ms.date: 03/16/2017
 
 
 >[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../process/customize-process.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).   
 
@@ -42,14 +42,14 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 ###Hosted XML process model customization sequence  
 >[!NOTE]  
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../process/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](process/customize-process-wit.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
 
 - If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
-- [Export the process you want to update](../import-process/import-process.md) 
+- [Export the process you want to update](import-process/import-process.md) 
 -  If you're new to customizing a process, familiarize yourself with the following resources:
-	- [Customize a process for import to VSTS](../import-process/customize-process.md)
+	- [Customize a process for import to VSTS](import-process/customize-process.md)
 
 
 
@@ -64,7 +64,7 @@ You'll first export your work tracking definition files, update them, and then i
 -  If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
 	- [Add or modify a field](add-modify-field.md)  
 	- [Add or modify a work item type](add-modify-wit.md)  
-	- [ProcessConfiguration XML reference](../reference/process-configuration-xml-element.md). 
+	- [ProcessConfiguration XML reference](reference/process-configuration-xml-element.md). 
 
 
 <a id="wits-as-requirements">  </a>
@@ -207,7 +207,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	```<WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />```  
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT 
 		b. Categories  
@@ -372,7 +372,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	```<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Task" />```
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT  
 		b. Categories   
@@ -426,7 +426,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 	```<WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />```
 
 6.	Update your team project:  
-	- **Hosted XML:**  [Import your process](../import-process/import-process.md).  
+	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. WIT  
 		b. Categories   
@@ -438,7 +438,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 
 <a id="import-export">  </a>
 ##Import and export definition files (On-premises XML) 
-Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
+Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 

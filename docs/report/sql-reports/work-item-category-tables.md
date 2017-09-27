@@ -27,5 +27,5 @@ You can query for categories of work items by using the FactWorkItemToCategory a
   
 ## Related notes 
 -  [Test cases and work items](perspective-test-analyze-report-work.md)   
--  [Use categories to group work item types](../../work/reference/use-categories-to-group-work-item-types.md)   
+-  [Use categories to group work item types](../../work/customize/reference/use-categories-to-group-work-item-types.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

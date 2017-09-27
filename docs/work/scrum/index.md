@@ -18,7 +18,7 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 <!---
 ## Overview  
 [About Scrum](scrum-overview.md) 
-[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
+[About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 -->
 
 ## 5-Minute Quickstarts  
@@ -42,7 +42,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 ## Concepts          
 - [Scrum best practices](best-practices-scrum.md) 
 - [Scrum and sprint planning tools](scrum-sprint-planning-tools.md)      
-- [About permissions and access](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
 
 
@@ -54,8 +54,8 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 
 ## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 
 
 ## Resources 

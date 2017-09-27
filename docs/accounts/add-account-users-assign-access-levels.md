@@ -184,20 +184,20 @@ you can [add them to team projects](add-team-members-vs.md).
 
 	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Visual Studio](../connect/connect-team-projects.md), 
+	[Visual Studio](../user-guide/connect-team-projects.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](../connect/connect-team-projects.md), or 
+	[Visual Studio](../user-guide/connect-team-projects.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) 
 to plan, organize, and track your work, 
-[manage your process](../work/process/manage-process.md), 
-or [customize your process](../work/process/customize-process.md)
+[manage your process](../work/customize/process/manage-process.md), 
+or [customize your process](../work/customize/process/customize-process.md)
 
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)
 

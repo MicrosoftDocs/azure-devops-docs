@@ -24,16 +24,16 @@ To track different types of work, different work item types (WITs) are defined. 
 
 For example, the following WITs are available to you when you choose the Agile team project. 
 
-<img src="../guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+<img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
-To learn more about processes and process templates, see [Choose a process](../guidance/choose-process.md).
+To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
  
 ## Work item form 
 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the History field. 
 
-Each form contains a number of controls as shown below and described in [Work item form controls](../work-items/work-item-form-controls.md). 
+Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
@@ -67,7 +67,7 @@ Note the following:
 
 
 >[!NOTE]  
->**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../reference/apply-rule-work-item-field.md).
+>**On-premises TFS only**: To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
 
 <a id="assign-to-sprint"></a>
@@ -107,11 +107,11 @@ Based on the platform or version you use, you can perform the following tasks.
  
 Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
 
-If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../customize/process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
 
 You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 
-Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../reference/markdown-guidance.md).  
+Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../collaborate/markdown-guidance.md).  
 
 To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md).  
  
@@ -119,7 +119,7 @@ To learn more, see [Use templates to add and update work items](../backlogs/work
 ## Try this next 
 
 > [!div class="nextstepaction"]
-> [Add a work item](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 
 
 ### Required permissions
@@ -128,17 +128,17 @@ As a member added to the Contributors group of a team project, you can use most 
 
 If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
 
 <a id="clients"></a>  
 ### Clients that support tracking work items  
 You can add work items from various clients, such as: 
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
-- From the [Team Explorer add-in to Visual Studio](../../connect/work-team-explorer.md), you can add most types of work items from the Work page.  
+- From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
 - If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](https://www.visualstudio.com/products/team-explorer-everywhere-vs). 
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
-- You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
+- You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
 For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
 

@@ -36,7 +36,7 @@ and cloud-based load testing.
 
 ## Connect to your account
 After VSTS creates your account, 
-[connect to your account](../connect/connect-team-projects.md) 
+[connect to your account](../user-guide/connect-team-projects.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 

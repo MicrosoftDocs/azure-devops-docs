@@ -18,7 +18,7 @@ ms.date: 12/02/2016
 <a name="set_up"></a>
 <a name="pat"></a>
 
-Visual Studio's [Team Explorer](../connect/work-team-explorer.md) lets you perform most common Git tasks you'll need for your day to day work right from Visual Studio. 
+Visual Studio's [Team Explorer](../user-guide/work-team-explorer.md) lets you perform most common Git tasks you'll need for your day to day work right from Visual Studio. 
 Open Team Explorer through the **View** menu in Visual Studio, or with the **Ctrl+\, Ctrl+M** hotkey.   
 
 Team Explorer and the Git command line work great together. When you make updates and perform commands through one interface, you'll see those changes reflected in the other.

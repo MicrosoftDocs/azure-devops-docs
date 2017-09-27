@@ -67,7 +67,7 @@ You can create links between work items by using one of the links control tabs w
 ### VSTS
 <a id="team-services-link" /> 
 
-From the new work item form (available from the web portal of [VSTS and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
+From the new work item form (available from the web portal of [VSTS and TFS 2017](../customize/process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
 
 Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to add a link. 
    
@@ -75,7 +75,7 @@ Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to
 
 Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
 
-<img src="../reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />
+<img src="../customize/reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />
 
 From the **Related Work** or **Links** tab, you can also perform these actions: 
 
@@ -156,7 +156,7 @@ As you develop your software, you can capture which code changes and builds supp
 >[!NOTE]  
 >The link types, **Found in build** and **Integrated in build** are available from VSTS and only work with the current build processes (not XAML builds). To learn more about using these link types, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).   
 
-You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../process/new-work-item-experience.md). 
+You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
 
 ## Link work items and Git code development  
 
@@ -227,7 +227,7 @@ For query examples, see [Link and attachment queries](linking-attachments.md).
 <a id="link-type-guidance"></a>
 ## Link type descriptions and guidance 
  
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following table to choose which link type to use based on the types of queries and reports you'll want to create. To learn more about link type restrictions and topologies, see [LinksControlOptions elements](../reference/link-type-element-reference.md#topology).
+Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following table to choose which link type to use based on the types of queries and reports you'll want to create. To learn more about link type restrictions and topologies, see [LinksControlOptions elements](../customize/reference/link-type-element-reference.md#topology).
 
 
 <table>

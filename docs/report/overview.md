@@ -119,7 +119,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../work/s
 ### Add custom fields  
 You can add data to support reporting requirements in the following ways:
 
-- [Add a custom field (Inheritance process model, VSTS)](../work/process/customize-process-field.md)
+- [Add a custom field (Inheritance process model, VSTS)](../work/customize/process/customize-process-field.md)
 - [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
 
 ### Extensibility 

@@ -178,22 +178,22 @@ If you want to export a query to Excel, you can do that from [Excel or Visual St
 See also: 
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Chart a flat-list query](../../report/charts.md)  
 - [Create Excel reports from a query (TFS)](../../report/excel/create-status-and-trend-excel-reports.md)
-- [Change column options](../how-to/set-column-options.md)
+- [Change column options](../backlogs/set-column-options.md)
 
 
 ### Task board versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
  
 ### Export a query  
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../reference/process-templates/define-work-item-query-process-template.md). 
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
 
 <a id="define-query-hyperlink" />  
 ### Define a query as a hyperlink  
-The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md).
+The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../collaborate/wiql-syntax.md).
 
 VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -276,7 +276,7 @@ You can create dynamic queries using one of the following resources:
 
 
 See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Syntax for the Work Item Query Language (WIQL)](../../collaborate/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 > [!NOTE]  

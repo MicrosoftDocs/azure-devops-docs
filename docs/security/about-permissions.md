@@ -138,7 +138,7 @@ read access, such as **View build resources**, **View project-level
 information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
-If you need to restrict view access, then you can [set restrictions through the area path node](../work/how-to/set-permissions-access-work-tracking.md).
+If you need to restrict view access, then you can [set restrictions through the area path node](../security/set-permissions-access-work-tracking.md).
 For additional methods, see [Restrict access in TFS](../accounts/restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,

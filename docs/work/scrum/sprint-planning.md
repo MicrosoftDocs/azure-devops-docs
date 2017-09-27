@@ -35,9 +35,9 @@ In this topic you'll learn how to:
 > * Share your sprint plan      
 
 >[!NOTE]
->Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
+>Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 >
->For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../overview.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json).  
+>For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../backlogs/overview.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json).  
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. 
 By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
@@ -74,7 +74,7 @@ To plan sprints, you should be a member of the team and belong to the Contributo
 	
 	<img src="_img/sp-check-total-effort-level.png" alt="Sprint backlog page, determine total level of effort" style="border: 2px solid #C3C3C3;" />   
 	
-	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../how-to/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
+	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../backlogs/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
 
 	Your initial plan should identify the subset of requirements that's within your team's capacity based on estimated effort and team velocity. Velocity corresponds to the total Effort or Story Points a team can complete within the sprint time period.  
 
@@ -178,7 +178,7 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure your team remains on track throughout the sprint. 
 
-You can use [hotkeys and keyboard shortcuts](../../reference/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
+You can use [hotkeys and keyboard shortcuts](../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
 
 ## Related notes
 

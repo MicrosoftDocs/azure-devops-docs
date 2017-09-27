@@ -20,10 +20,10 @@ As the following image shows, each work item form comes with a number of control
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
 >[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../guidance/scrum-process.md), 
-[Agile](../guidance/agile-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the team project was created&mdash;[Scrum](./guidance/scrum-process.md), 
+[Agile](./guidance/agile-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all three processes, see [Choose a process](../guidance/choose-process.md). 
+> For an overview of all three processes, see [Choose a process](./guidance/choose-process.md). 
 	 
 <a id="wi-controls"></a>  
 
@@ -45,7 +45,7 @@ As the following image shows, each work item form comes with a number of control
 | ![Change work item type icon](../_img/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Change team project icon](../_img/icons/change-team-project-icon.png) | [Move work item to a different team project](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Clone icon](../_img/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
-| ![Email icon](../_img/icons/email-icon.png) | [Email work item](../how-to/email-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
+| ![Email icon](../_img/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  |  
 | ![Delete icon](../_img/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 | ![Storyboard icon](../_img/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 
@@ -79,7 +79,7 @@ While the workflow states differ for different work item types, they usually fol
 </ul>
 </td>
 <td>
-![Product backlog item workflow, Scrum process](../guidance/_img/ALM_PT_Agile_WF_UserStory.png)    
+![Product backlog item workflow, Scrum process](./guidance/_img/ALM_PT_Agile_WF_UserStory.png)    
 </td>
 </tr>
 </tbody>
@@ -100,7 +100,7 @@ By linking work items using Related or Dependent link types, you can track work 
 
 There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.  
 
-<img src="../reference/_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 2px solid #C3C3C3;" />  
+<img src="../customize/reference/_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 2px solid #C3C3C3;" />  
 
 
 ## Add links  
@@ -111,7 +111,7 @@ From each links control, you can perform these actions:
 - To delete a link, highlight it and click the ![delete icon](../_img/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="../reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />  
+<img src="../customize/reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />  
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
@@ -189,9 +189,9 @@ Keep in mind that the work item tracking experience and forms that appear in Vis
 
 From the [New work item widget](../../Report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../Report/dashboards.md), you can choose the type of work item you want to create.  
 
-![Add work item from a New work item widget](../../_img/alm-feature-new-work-item-widget.png)  
+![Add work item from a New work item widget](../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
 If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
-If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../overview.md#scale).
+If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../backlogs/overview.md#scale).
 -->

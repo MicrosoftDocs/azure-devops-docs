@@ -105,7 +105,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 
@@ -291,7 +291,7 @@ The following table describes the activity-based and numeric fields that you can
 1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).   
 2.  The values displayed in the [Capacity page](../scale/capacity-planning.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p>
 
-3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../reference/process-configuration-xml-element.md).
+3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
 
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
@@ -309,7 +309,7 @@ For more information on using work items and queries, see:
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md) 
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Create managed queries](example-queries.md)  
 
 <a id="show-bugs"/>
@@ -318,7 +318,7 @@ For more information on using work items and queries, see:
 ### Rollup numeric values across work item types  
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
-- [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md)  
+- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 

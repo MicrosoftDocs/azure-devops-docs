@@ -68,5 +68,5 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
 -   How much work for the sprint is in progress?  
   
 ## Related notes
- [Scrum process](../../work/guidance/scrum-process.md)   
+ [Scrum process](../../work/work-items/guidance/scrum-process.md)   
 [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) 

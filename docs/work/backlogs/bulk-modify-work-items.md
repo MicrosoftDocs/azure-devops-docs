@@ -46,7 +46,7 @@ All of the following actions can be performed by team members that belong to the
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
-4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).  
+4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
@@ -161,7 +161,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 #### VSTS and TFS 2017 
 
-1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
+1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	<img src="_img/bulk-modify-edit-fields-ts.png" alt="VSTS and TFS 2017, Query results page, bulk edit fields" style="border: 2px solid #C3C3C3;" />
 
@@ -171,7 +171,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 #### TFS 2015 and TFS 2013
 
-1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
+1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
 

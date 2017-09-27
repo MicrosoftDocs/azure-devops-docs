@@ -166,7 +166,7 @@ As a first step, you'll see that you can change the card display for each work i
 	Here we choose User Story. Your choices will vary based on the following:   
 	<ul>
 	<li>You connect to VSTS or an on-premises TFS</li>
-	<li>[Process](../guidance/choose-process.md) used to create your team project</li>
+	<li>[Process](../work-items/guidance/choose-process.md) used to create your team project</li>
 	<li>Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md) </li>
 
 	**Card field options:** <br/>
@@ -194,7 +194,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 1. Once you've clicked a WIT, select all the options that you want for that work item type.
 
-	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../guidance/scrum-process.md)), Story Points ([Agile](../guidance/agile-process.md)), and Size ([CMMI](../guidance/cmmi-process.md)) field.
+	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../work-items/guidance/scrum-process.md)), Story Points ([Agile](../work-items/guidance/agile-process.md)), and Size ([CMMI](../work-items/guidance/cmmi-process.md)) field.
 
 2. To add a field to a card, click ![add icon](../_img/icons/add_icon.png) to select a field from the drop-down menu. <br/>
 

@@ -5,7 +5,7 @@ A:	Change these when you sign up for your VSTS account.
 <img alt="Change account details" src="../_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 
 VSTS uses Agile as the default 
-[process](https://msdn.microsoft.com/Library/vs/alm/Work/guidance/choose-process) 
+[process](https://msdn.microsoft.com/Library/vs/alm/work/work-items/guidance/choose-process) 
 to organize your work. And your account's default location is based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available. For a better experience, 

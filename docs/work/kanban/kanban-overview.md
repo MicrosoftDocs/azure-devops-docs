@@ -24,7 +24,7 @@ Your Kanban board is fully customizable to support your team's workflow.
 
 The main steps you'll typically want to follow are outlined below. 
 
-[![Configure Kanban board](../_img/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../_img/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../_img/gs-planning-monitor-kanban.png)](../../report/guidance/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/guidance/cumulative-flow.md)
 
 Once you've configured your Kanban board, you can add work items directly to the board. You then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
 

@@ -93,4 +93,4 @@ Service accounts don't require a TFS CAL or other purchase.
 
 - [Change access levels](change-access-levels.md)
 - [Permissions & access](permissions-access.md)  
-- [Work in the web portal](../connect/work-web-portal.md)  
+- [Work in the web portal](../user-guide/work-web-portal.md)  

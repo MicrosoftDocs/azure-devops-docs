@@ -38,7 +38,7 @@ To create a pull request in VSTS:
 
   ![Creating a pull request in VSTS](_img/createpullrequest.gif)   
 
-0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../connect/connect-team-projects.md) and select **New Pull Request** to open a pull request for your current branch:   
+0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../user-guide/connect-team-projects.md) and select **New Pull Request** to open a pull request for your current branch:   
 
   ![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
 

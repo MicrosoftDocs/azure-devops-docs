@@ -148,7 +148,7 @@
     - name: Review code with pull requests
       href: pull-requests.md
     - name: Format comments with markdown
-      href: ../reference/markdown-guidance.md
+      href: ../collaborate/markdown-guidance.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
   - name: Git REST APIs

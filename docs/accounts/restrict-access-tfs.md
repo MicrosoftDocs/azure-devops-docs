@@ -46,16 +46,16 @@ For additional information, see [Permission reference for Team Foundation Server
 
 ### Changing work items
 
-By [setting permissions on an area path](../work/how-to/set-permissions-access-work-tracking.md), you can deny a group or individual the ability to create or edit work items assigned under an area path.
+By [setting permissions on an area path](../security/set-permissions-access-work-tracking.md), you can deny a group or individual the ability to create or edit work items assigned under an area path.
 
-[Set a condition field rule](../work/reference/apply-rule-work-item-field.md), [a condition-based field rule](https://msdn.microsoft.com/library/ms194966.aspx) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements.
+[Set a condition field rule](../work/customize/reference/apply-rule-work-item-field.md), [a condition-based field rule](https://msdn.microsoft.com/library/ms194966.aspx) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements.
 
 ### Creating specific types of work items
 
 You can restrict access in one of two ways:
 
 -   By [adding WITs to the Hidden Categories group](https://msdn.microsoft.com/library/dd695775.aspx), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](https://msdn.microsoft.com/library/ff407162.aspx) that opens the work item form and share that link with those team members who you do want to create them.  
--   By adding [a field rule to the workflow](../work/reference/apply-rule-work-item-field.md) for the System.CreatedBy field, you can effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
+-   By adding [a field rule to the workflow](../work/customize/reference/apply-rule-work-item-field.md) for the System.CreatedBy field, you can effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
         <TRANSITION from=" " to="New">
            <FIELDS>
@@ -70,5 +70,5 @@ see [Modify or add a custom work item type (WIT)](../work/customize/add-modify-w
 
 ## Work item queries
 
-[Set permissions on a shared query or query folder](../work/how-to/set-permissions-access-work-tracking.md) 
+[Set permissions on a shared query or query folder](../security/set-permissions-access-work-tracking.md) 
 to restrict who can modify the query or queries within the folder.

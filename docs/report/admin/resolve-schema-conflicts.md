@@ -108,7 +108,7 @@ You can review the event log on the application-tier server to obtain more infor
 	
 	* Relabel the reporting reference name of the field in conflict. You should take this action when the fields are used in different ways or you must maintain a different field. In this case, the field is not used by teams that work in different project collections for cross-project reporting. 
 	
-	For more information, see [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).
+	For more information, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).
 	
 	* Mark a field as non-reportable for one or more collections. You should take this action when the field is not used for reports about those project collections. 
 	
@@ -143,6 +143,6 @@ You can verify that the schema conflicts have been resolved by [manually process
 ## Related content
 
 - [Manage work item fields using **witadmin**](https://msdn.microsoft.com/library/dd236909.aspx)  
-- [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md)  
+- [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md)  
 - [Dashboards and reports](../overview.md)  
 - [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)  

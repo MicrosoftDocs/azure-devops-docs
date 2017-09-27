@@ -43,7 +43,7 @@
     - name: Save team project data
       href: save-team-project-data.md
     - name: Connect to team projects
-      href: /vsts/connect/connect-team-projects?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+      href: /vsts/user-guide/connect-team-projects?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Manage account access
     items:
     - name: Add users and assign access

@@ -39,7 +39,7 @@ Open a browser window and click the **Dashboards** hub.
 - VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 -->
-If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../connect/account-home-pages.md).    
+If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../user-guide/account-home-pages.md).    
 
 ## Add and name your dashboard 
 
@@ -47,7 +47,7 @@ From the dashboards tab, click the ![plus icon](../Work/_img/icons/green_plus_ic
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
 

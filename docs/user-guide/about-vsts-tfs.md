@@ -175,10 +175,10 @@ process customization features which are not yet available and cannot wait for t
 customization in VSTS is available, referred to as **Hosted XML** process model, and in private preview and by request only. 
 
 With this option, you 
-[import customized process templates](../work/import-process/import-process.md).
+[import customized process templates](../work/customize/import-process/import-process.md).
 This option is quite similar to using custom process templates in TFS, except that:
 
-* [Restrictions](../work/import-process/import-process.md) exist in the customizations 
+* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations 
 that can be imported into VSTS. 
 
 * Process templates are associated with all team projects created from them, and changes made to the process are reflected 

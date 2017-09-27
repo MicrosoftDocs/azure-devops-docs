@@ -42,8 +42,8 @@ The following image shows the basic steps to create a rollup chart. In step ![st
 
 After you have your initial chart, you can change the chart type from Table to Matrix and add the State field to the Column to expand the number of columns in the chart. 
 
-If you use the [Scrum](../../work/guidance/scrum-process.md) or 
-[CMMI](../../work/guidance/cmmi-process.md) processes, you can create similar charts by first choosing the Parent Product Backlog Items/Product Backlog or Parent Requirements/Requirement fields for the first column of the matrix in ![step 4](../_img/icons/step4.png). 
+If you use the [Scrum](../../work/work-items/guidance/scrum-process.md) or 
+[CMMI](../../work/work-items/guidance/cmmi-process.md) processes, you can create similar charts by first choosing the Parent Product Backlog Items/Product Backlog or Parent Requirements/Requirement fields for the first column of the matrix in ![step 4](../_img/icons/step4.png). 
 
 if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 

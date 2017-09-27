@@ -268,7 +268,7 @@ DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource
 
 - [Synchronize TFS with Project Server, third party support](sync-ps-tfs.md)  
 - [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](synchronize-tfs-project-server.md)    
-- [witAdmin: Customize and manage objects for tracking work](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
+- [witAdmin: Customize and manage objects for tracking work](../customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
 - [Map integration components (TFSAdmin command line tool)](map-integration-components.md)  
 - [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/09/16/microsoft-discontinuing-project-server-tfs-integration/)
 

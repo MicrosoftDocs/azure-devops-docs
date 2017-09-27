@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Extend
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=integration
+    items:
+    - name: SharePoint Integration
+      tocHref: /vsts/
+      topicHref: /vsts/report/sharepoint-dashboards/index

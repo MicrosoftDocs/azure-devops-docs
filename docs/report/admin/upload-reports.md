@@ -77,14 +77,14 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 2. From Team Explorer, download the latest process template that is compatible with the one used to create your team project.  
 
-	![Download process template](../../Work/guidance/_img/process-template-manager.png)  
+	![Download process template](../../work/work-items/guidance/_img/process-template-manager.png)  
 
-	To determine the type of process template that was used to create your team project, review the work item types that appear in the **New Work Item** menu for Team Explorer and then compare them with the work item types shown in [Process template correlation with an existing team project](../../Work/guidance/manage-process-templates.md#wit_correlation). If your work item types differ from those shown listed, then a custom process template might have been used.
+	To determine the type of process template that was used to create your team project, review the work item types that appear in the **New Work Item** menu for Team Explorer and then compare them with the work item types shown in [Process template correlation with an existing team project](../../work/work-items/guidance/manage-process-templates.md#wit_correlation). If your work item types differ from those shown listed, then a custom process template might have been used.
 
 	>[!NOTE]  
 	>In general, you can use the most recent version of the process template that was used to create your team project. For example, you can upload reports from Scrum, even if your team project was created with Visual Studio Scrum 2.0.  <br/><br/>
 	To download a process template, you need to be an administrator for the team project collection, and you must connect to TFS using the same version of Visual Studio. For example, connect to TFS 2015 from Visual Studio Community 2015. <br/><br/>
-	>To learn more about process templates and work item types, see [Choose a process](../../work/guidance/choose-process.md). 
+	>To learn more about process templates and work item types, see [Choose a process](../../work/work-items/guidance/choose-process.md). 
 
 3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
 
@@ -139,7 +139,7 @@ To learn about which reports are provided with which process templates, see [Rev
 **A:** Reports will be out of date when all or some data stops flowing into the data warehouse. To verify the data flow, run the **GetProcessStatus** of the [Warehouse Control Web service](manually-process-data-warehouse-and-cube.md). Also, fix any [schema conflicts that may be occurring](resolve-schema-conflicts.md).
 
 ####Q: What tasks does tfpt addprojectreports perform?
-**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../work/reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
+**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../work/customize/reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
 
 ####Q: What if I just want to upload a single report?
 **A:** You can upload a single report using **Upload file** in Report Manager. You'll need to define the report's data source and possibly other parameters.

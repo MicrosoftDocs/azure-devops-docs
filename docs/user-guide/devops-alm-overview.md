@@ -117,7 +117,7 @@ As your team grows, your tools will grow with you. You can easily add teams whic
  
 ## Related notes
 
-Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../connect/work-web-portal.md).    
+Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](work-web-portal.md).    
 
 Other topics of interest:  
  

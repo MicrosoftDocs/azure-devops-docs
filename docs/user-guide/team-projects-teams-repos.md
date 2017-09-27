@@ -35,12 +35,12 @@ However, for enterprise-level organizations, it may be necessary to scale up, to
 <tr>
 <td width="40%">
 **Single team project, team defined within an account/collection**  
-![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)  
+![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)  
 </td>
 
 <td width="60%">
 **Multiple team projects and teams defined within an account/collection**   
-![Scaled collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-scale-concept.png)  
+![Scaled collection-project-team conceptual image](_img/web-portal-account-project-team-scale-concept.png)  
 
 </td>
 </tr>

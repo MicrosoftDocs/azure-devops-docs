@@ -13,7 +13,7 @@ ms.date: 12/30/2016
 
 The test team can take advantage of the Office Excel reports in the **Test Team Management** folder to monitor progress and identify the volume, status, and effectiveness of their test activities. The test management reports display team-project information that is stored in the data warehouse. The four Office Excel workbooks provide 17 reports, and each report appears in on its own worksheet.  
   
- These reports are available only for team projects that were created using the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) process templates.  
+ These reports are available only for team projects that were created using the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) process templates.  
   
 > [!NOTE]
 >  You can access the **Test Team Management** folder from the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Server with Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  

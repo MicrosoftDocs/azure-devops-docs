@@ -27,7 +27,7 @@ If you have a team project already, and want to start coding an application proj
 >[!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
->If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/reference/process-templates/overview-process-template-files.md#client-support).  
+>If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 
 ### From the web
@@ -92,7 +92,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
     ![ALM\_CTP\_NameProject](_img/IC671598.png)
 
-8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../work/guidance/choose-process.md).
+8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../work/work-items/guidance/choose-process.md).
 
     ![ALM\_CTP\_SelectTemplate](_img/IC795955.png)
 
@@ -133,7 +133,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
 Also, with the team project created, you can start [developing your app in Team Foundation version control](https://msdn.microsoft.com/library/ms181382.aspx) or [use Git](../git/overview.md).
 
-To start planning work and collaborating as a team, see [Agile tools](../work/overview.md).
+To start planning work and collaborating as a team, see [Agile tools](../work/backlogs/overview.md).
 
 
 <a id="git-and-tfvs-repos">  </a>
@@ -185,7 +185,7 @@ Contact the TFS system administrator and request that they verify the server con
 
 ###Q: How do I add my custom process template to the list?
 
-**A:** You’ll need to first [upload your template](../work/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](https://msdn.microsoft.com/library/ms243782.aspx).
+**A:** You’ll need to first [upload your template](../work/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](https://msdn.microsoft.com/library/ms243782.aspx).
 
 <a id="log-file">  </a>
 ###Q: Where is the log file located?

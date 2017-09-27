@@ -3,9 +3,9 @@
 - name: Overview
   items:
   - name: "Backlogs, boards, & plans"
-    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: backlogs-boards-plans.md
   - name: About teams and Agile tools
-    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Create your backlog
@@ -17,7 +17,7 @@
   - name: Organize your backlog (map or reparent)
     href: organize-backlog.md
   - name: Link work items
-    href: /vsts/work/backlogs/add-link?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: add-link.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Groom your backlog
@@ -29,7 +29,7 @@
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Agile glossary
-    href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../work-items/agile-glossary.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: Filter product and portfolio backlogs
@@ -37,35 +37,35 @@
   - name: Copy list
     href: copy-list.md 
   - name: Change column options
-    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../backlogs/set-column-options.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Bulk add or modify (Excel)
-    href: /vsts/work/backlogs/office/bulk-add-modify-work-items-excel?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Create backlog items & tasks (Project)"
-    href: /vsts/work/backlogs/office/create-your-backlog-tasks-using-project?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Storyboard your ideas
-    href: /vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
+    href: office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
   - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
   - name: Schedule projects using Project
-    href: /vsts/work/backlogs/office/schedule-projects-using-microsoft-project?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/schedule-projects-using-microsoft-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Rollup estimated & actual work using Project"
-    href: /vsts/work/backlogs/office/rollup-estimated-and-actual-work-using-project?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/rollup-estimated-and-actual-work-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Resolve Excel data conflicts
-    href: /vsts/work/backlogs/office/resolve-excel-data-conflicts-publish-refresh?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/resolve-excel-data-conflicts-publish-refresh.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Resolve Excel data validation errors
-    href: /vsts/work/backlogs/office/resolve-excel-data-validation-errors?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/resolve-excel-data-validation-errors.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Resolve invalid links in an Excel tree list
-    href: /vsts/work/backlogs/office/resolve-excel-invalid-links-tree-list?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: office/resolve-excel-invalid-links-tree-list.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Product backlog controls
     href: product-backlog-controls.md 
   - name: "Permissions & access for work tracking"
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: Kanban

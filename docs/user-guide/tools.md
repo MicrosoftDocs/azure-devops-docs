@@ -50,12 +50,12 @@ To understand what features you get with the Visual Studio versions, see [Compar
 
 **Team Explorer plug-in**
 
-Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual Studio to team projects defined in VSTS or TFS. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](../connect/work-team-explorer.md).
+Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual Studio to team projects defined in VSTS or TFS. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](work-team-explorer.md).
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |
 > |-------------|----------|
-> |<img src="../connect/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../connect/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
+> |<img src="../user-guide/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../user-guide/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
 
 ##Office integration tools 
@@ -96,7 +96,7 @@ TFS 2013       |             | 9 and later       | 5 and later    | most recent 
 
 Edge, Firefox, and Chrome automatically update themselves, so VSTS and TFS support the most recent version. 
 
-To learn more, see [Work in the web portal](../connect/work-web-portal.md).
+To learn more, see [Work in the web portal](work-web-portal.md).
 
 ### Browser-based extensions
 
@@ -143,7 +143,7 @@ You can perform many code development and administrative tasks using command lin
 - [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md)
 - [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)
 - [TFSServiceControl](../tfs-server/command-line/tfsservicecontrol-cmd.md)
-- [witadmin (work item tracking)](../work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
+- [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
 ##Marketplace extensions

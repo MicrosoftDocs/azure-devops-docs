@@ -39,7 +39,7 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 ### To suspend current work and begin work on a different task
 
  ![Suspending some work](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591024.png)
-1.  **Connect:** If you are not already connected to the team project that you want to work in, then [connect to the team project](../connect/connect-team-projects.md):
+1.  **Connect:** If you are not already connected to the team project that you want to work in, then [connect to the team project](../user-guide/connect-team-projects.md):
 
     1.  In **Team Explorer**, choose ![Home icon](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC547418.png) **Home**, and then choose ![My Work icon](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC588354.png) **My Work**.
 

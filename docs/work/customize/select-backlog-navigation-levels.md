@@ -19,7 +19,7 @@ ms.date: 03/20/2017
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
-- **Inheritance**: [Customize your backlogs or boards for a process](../process/customize-process-backlogs-boards.md)  
+- **Inheritance**: [Customize your backlogs or boards for a process](process/customize-process-backlogs-boards.md)  
 - **Hosted XML or On-premises XML**: [Add portfolio backlogs](add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](customize-work.md).
@@ -82,8 +82,8 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 ## Related notes
 
-- [Get started with Agile tools to plan and track work](../overview.md)
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)
+- [Get started with Agile tools to plan and track work](../backlogs/overview.md)
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Define features and epics](../backlogs/define-features-epics.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)   

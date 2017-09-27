@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level) |[Preview features per account](#account-level) | 
 > |-------------|----------|
-> |- [New Account Landing page](../connect/account-home-pages.md)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)|- [Combine email recipients](manage-team-notifications.md) (TFS 2017.1)<br/>- [Preview features per account](#account-level)<br/>- [New Account Landing page](../connect/account-home-pages.md)<br/>- [Preview features per account](#account-level)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Preview features per account](#account-level)[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)<br/>- [Preview features per account](#account-level)<br/>- [Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)<br/>- [Preview features per account](#account-level)[Wiki](#wiki) (VSTS) |
+> |- [New Account Landing page](../user-guide/account-home-pages.md)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)|- [Combine email recipients](manage-team-notifications.md) (TFS 2017.1)<br/>- [Preview features per account](#account-level)<br/>- [New Account Landing page](../user-guide/account-home-pages.md)<br/>- [Preview features per account](#account-level)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Preview features per account](#account-level)[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)<br/>- [Preview features per account](#account-level)<br/>- [Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)<br/>- [Preview features per account](#account-level)[Wiki](#wiki) (VSTS) |
 
 <a id="user-level">  </a>
 ## Enable features for my use  
@@ -46,7 +46,7 @@ To enable or disable a feature in preview, access the Preview features option fr
 > 
 >For TFS 2017.1, the account hub is automatically enabled for all users and cannot be disabled.
     
-Here, we enable the New Account Landing page. This hub is associated with the account collection and not any one team project or team. To learn more about this feature, see [Work effectively from your account hub](../connect/account-home-pages.md). When you enable the New Account Landing page, you also enable the project page where you can [share your project vision with your team](project-vision-status.md).
+Here, we enable the New Account Landing page. This hub is associated with the account collection and not any one team project or team. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md). When you enable the New Account Landing page, you also enable the project page where you can [share your project vision with your team](project-vision-status.md).
 
 <img src="../_shared/_img/preview-features-account-landing-off-on.png" alt="Account Landing Page has been enabled " style="border: 1px solid #CCCCCC;" /> 
 

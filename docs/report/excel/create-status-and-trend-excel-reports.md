@@ -76,7 +76,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 2. Connect to the team project and choose the query.   
 
-   If the server you need isn't listed, [add it now](../../connect/connect-team-projects.md).  
+   If the server you need isn't listed, [add it now](../../user-guide/connect-team-projects.md).  
 
 3. Choose the reports to generate (steps 3 and 4 from the previous procedure).  
 

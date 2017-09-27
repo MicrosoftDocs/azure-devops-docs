@@ -538,7 +538,7 @@ On every client computer from which users access Team Foundation, you must insta
 
 -   In Visual Studio, connect to Team Foundation Server by using the new HTTPS URL.
 
-    For more information, see [Connect to team projects in Team Foundation Server](../../connect/connect-team-projects.md).
+    For more information, see [Connect to team projects in Team Foundation Server](../../user-guide/connect-team-projects.md).
 
 <a name="config-git"></a>
 ## Configuring Git

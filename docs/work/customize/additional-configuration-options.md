@@ -88,7 +88,7 @@ Additional options that you can configure:<br/>
 <li>[Set team working days off](../customize/set-working-days.md)</li>
 <li>[Define additional sprints or releases](../scrum/define-sprints.md).</li>
 </ul> 
-In addition, you can customize the following options by modifying the [ProcessConfiguration](../reference/process-configuration-xml-element.md) definition:<br/>
+In addition, you can customize the following options by modifying the [ProcessConfiguration](reference/process-configuration-xml-element.md) definition:<br/>
 <ul>
 <li>Add fields to the quick add panel of backlogs</li>
 <li>Change the color used to display work items</li>
@@ -158,8 +158,8 @@ You can customize the test plan and test suite WITs in the same way you can cust
 <li>[Field customizations](add-modify-field.md): Add a custom field, modify a pick list, or add a field rule.</li>
 <li>[Work item form customizations](add-modify-wit.md) : Modify the form layout for the bug, test case, test plan, or test suite.</li>
 <li>[Workflow customizations](add-modify-wit.md) : Modify the workflow definitions for the bug, test case, test plan, or test suite.</li>
-<li>[Test failure types](../reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the reasons why a test run failed. The default configuration includes: Regression, New Issue, Known Issue, and Unknown.</li>
-<li>[Test resolution states](../reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the action to take after a test run failure. The default configuration includes: Needs investigation, Test issue, Product issue, and Configuration issue.</li>
+<li>[Test failure types](reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the reasons why a test run failed. The default configuration includes: Regression, New Issue, Known Issue, and Unknown.</li>
+<li>[Test resolution states](reference/witadmin/tcm-customize-manage-test-experience.md): Specifies the action to take after a test run failure. The default configuration includes: Needs investigation, Test issue, Product issue, and Configuration issue.</li>
 </ul> 
 If you add or change the workflow states for the test plan or test suite type definitions, review the [additional configuration requirements when working with  Visual Studio 2013.2 or earlier versions](#test-case-management). 
 </td>
@@ -184,7 +184,7 @@ To get started, each team must choose their preference as described in [Show bug
 
 If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../accounts/add-users.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
 
-If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](../reference/update-the-workflow-for-agile-team-projects.md).
+If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
 
 <a id="test-case-management">   </a> 
 
@@ -193,7 +193,7 @@ If you add or change the workflow states for the test plan or test suite type de
 
 ![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
 
-To resolve this error, see [Import and export process configuration [witadmin]](../reference/witadmin/witadmin-import-export-process-configuration.md).  
+To resolve this error, see [Import and export process configuration [witadmin]](reference/witadmin/witadmin-import-export-process-configuration.md).  
 
 <a id="update-from-2012">   </a> 
 ###Recommended updates to team projects created from TFS 2012 process templates 
@@ -208,15 +208,15 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../guidance/changes-to-process-templates.md).
+For details, see [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md).
 
 
-If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../guidance/manage-process-templates.md) that is compatible with the one used to create your team project and then [import the updated WITs](../reference/witadmin/witadmin-import-export-manage-wits.md).
+If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your team project and then [import the updated WITs](reference/witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 
 ###Recommended updates to team projects created from TFS 2010 process templates 
 
-If you've updated a team project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](../reference/update-the-workflow-for-agile-team-projects.md). 
+If you've updated a team project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](reference/update-the-workflow-for-agile-team-projects.md). 
 
 If you don't update the workflow, then the task board provides only two states, Active and Closed. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.
 

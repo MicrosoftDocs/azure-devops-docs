@@ -28,7 +28,7 @@ From Visual Studio, go to the Team Explorer Connect page (Keyboard: Ctrl + 0, C)
 ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC750752.png)
 
 (If the team project you want to open is not listed, choose **Select Team Projects** and then 
-[connect to the team project](../connect/connect-team-projects.md).)
+[connect to the team project](../user-guide/connect-team-projects.md).)
 
 Map the team project to a folder on your dev machine.
 

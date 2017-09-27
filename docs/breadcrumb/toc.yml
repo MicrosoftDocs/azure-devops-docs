@@ -69,24 +69,6 @@
     - name: Agile at Scale
       tocHref: /vsts/work/scale/
       topicHref: /vsts/work/scale/index
-    - name: Process guidance
-      tocHref: /vsts/work/guidance/
-      topicHref: /vsts/work/work-items/index
-    - name: Backlogs
-      tocHref: /vsts/work/offices/
-      topicHref: /vsts/work/backlogs/index
-    - name: Concepts
-      tocHref: /vsts/work/concepts/
-      topicHref: /vsts/work/work-items/index
-    - name: Inheritance Process Model
-      tocHref: /vsts/work/process/
-      topicHref: /vsts/work/customize/index
-    - name: Import Process Model
-      tocHref: /vsts/work/import-process/
-      topicHref: /vsts/work/customize/index
-    - name: On-premises XML Process Model
-      tocHref: /vsts/work/reference/
-      topicHref: /vsts/work/customize/index
   - name: Analytics
     tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=analytics
@@ -135,6 +117,9 @@
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
+    - name: Technical Articles
+      tocHref: /vsts/articles/
+      topicHref: /vsts/articles/index
   - name: Extend
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=integration
@@ -148,12 +133,9 @@
     - name: Integrate
       tocHref: /vsts/integrate/
       topicHref: /vsts/integrate/index
-    - name: SharePoint integration
-      tocHref: /vsts/ecosystem/sharepoint/
-      topicHref: /vsts/ecosystem/sharepoint/index
     - name: SharePoint Integration
       tocHref: /vsts/report/sharepoint-dashboards/
-      topicHref: /vsts/ecosystem/sharepoint/index
+      topicHref: /vsts/report/sharepoint-dashboards/index
     - name: TFS-Project Server integration
       tocHref: /vsts/work/tfs-ps-sync/
       topicHref: /vsts/work/tfs-ps-sync/index

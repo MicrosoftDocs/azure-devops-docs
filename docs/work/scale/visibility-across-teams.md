@@ -139,7 +139,7 @@ As you can see, there are a number of ways you can monitor progress and trends a
 
 Here are some additional topics that address working with multiple teams: 
 
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Review team plans](review-team-plans.md)  
 - [Multiple teams](multiple-teams.md)  
 - [Portfolio management](portfolio-management.md)  

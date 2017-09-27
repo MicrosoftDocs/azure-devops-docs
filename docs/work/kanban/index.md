@@ -16,7 +16,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 <!---
 ## Overview  
 [About Kanban and Agile project management](kanban-overview.md) 
-[Backlogs, boards, & plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)   
+[Backlogs, boards, & plans](../backlogs/backlogs-boards-plans.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)   
 -->
 
 ## 5-Minute Quickstarts  
@@ -29,13 +29,13 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
 - [Add inline tests](add-run-update-tests.md)
-- [Cumulative flow](/vsts/report/guidance/cumulative-flow?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/guidance/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
 ## Concepts 
       
 - [Kanban best practices](best-practices-kanban.md)      
-- [About teams and Agile tools](../about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
 ## How-to Guides
@@ -46,13 +46,13 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Split columns](split-columns.md)  
 - [Expedite work (swimlanes)](expedite-work.md)  
 - [Definition of done](definition-of-done.md)  
-- [Customize cards](/vsts/work/customize/customize-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
-- [Card reordering](/vsts/work/customize/reorder-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
-- [Use work item form controls](/vsts/work/work-items/work-item-form-controls?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Customize cards](../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Card reordering](../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Use work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 
 ## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
  
   
 ## Resources 

@@ -18,7 +18,7 @@ Workflow states support tracking the status of work as it moves from a new state
 >[!NOTE]  
 ><b>Feature availability: </b>Kanban query fields are available from VSTS and TFS 2015.1 or later version. 
 
-Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your team project. 
+Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your team project. 
 
 Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it is reassigned to the tester who created it.  
 
@@ -279,7 +279,7 @@ For example, you can list items based on the team area path, and if they are in 
 <a id="kanban-query-results">  </a>
 
 >[!IMPORTANT] 
->Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (VSTS)](../process/customize-process-workflow.md) which all teams can use.</blockquote>  
+>Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (VSTS)](../customize/process/customize-process-workflow.md) which all teams can use.</blockquote>  
 
 
 <a id="workflow-fields">  </a>
@@ -287,7 +287,7 @@ For example, you can list items based on the team area path, and if they are in 
 ##Workflow and Kanban board fields
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another, or you move an item in the [Kanban board](../kanban/kanban-basics.md) to a different column or swimlane. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
 
-For information about data types and default field attributes, see [Work item data type reference](../reference/define-modify-work-item-fields.md).
+For information about data types and default field attributes, see [Work item data type reference](../customize/reference/define-modify-work-item-fields.md).
 
 <table width="100%">
 <thead>
@@ -430,7 +430,7 @@ For information about data types and default field attributes, see [Work item da
 <tr>
   <td>State  <sup>2, 3</sup>  </td>
   <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
-   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to VSTS, see [Customize the workflow for a process](../process/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../reference/change-workflow-wit.md).</p>
+   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to VSTS, see [Customize the workflow for a process](../customize/process/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../customize/reference/change-workflow-wit.md).</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
   <td>All</td>
@@ -453,11 +453,11 @@ For information about data types and default field attributes, see [Work item da
 <a id="sync">  </a>
 1.  By default, system synchronizes system-defined person-name fields with Active Directory (TFS) or Azure Active Directory (VSTS). These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).  
 
-	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](https://msdn.microsoft.com/library/aa337627.aspx).  
+	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](https://msdn.microsoft.com/library/aa337627.aspx).  
 
-2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield** command](../reference/witadmin/manage-work-item-fields.md) to change the reportable attribute for a field.  
+2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield** command](../customize/reference/witadmin/manage-work-item-fields.md) to change the reportable attribute for a field.  
 
-3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
+3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../customize/reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 
 4. Available only from VSTS or from TFS 2015.1 or later version.  
 

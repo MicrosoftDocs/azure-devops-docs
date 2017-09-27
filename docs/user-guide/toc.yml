@@ -7,7 +7,7 @@
   - name: "What is Team Foundation Server?"
     href: what-is-tfs.md
   - name: Overview of services
-    href: /vsts/services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Sign up and invite some teammates 
@@ -15,21 +15,21 @@
   - name: Code with Git
     href: code-with-git.md
   - name: Set up continuous integration & delivery
-    href: /vsts/build-release/actions/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+    href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Plan & track work 
     href: plan-track-work.md 
   - name: Add and run manual tests
     href: add-run-manual-tests.md
   - name: Install a Marketplace extension
-    href: /vsts/marketplace/install-vsts-extension?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
-    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: ../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Get started as a Stakeholder
-    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Key concepts 
@@ -37,7 +37,7 @@
   - name: Source control 
     href: source-control.md
   - name: Kanban & Agile tools
-    href: /vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Clients & Tools
     href: tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Software development roles
@@ -47,39 +47,39 @@
 - name: How-to Guides
   items:
   - name: Enable preview features
-    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../collaborate/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Use @mentions to further discussion"
-    href: /vsts/notifications/at-mentions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "Use #ID to link to work items"
-    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: View permissions
-    href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile
-    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../collaborate/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Manage your notifications
-    href: /vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
-    href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Sign-in to the web or a client
-    href: /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: connect-team-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
-    href: /vsts/connect/troubleshoot-connection?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Features index
     href: alm-devops-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Permissions & access
-    href: /vsts/security/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Keyboard shortcuts
-    href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Markdown guidance
-    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json   
+    href: ../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json   
   - name: Navigate in the web portal
-    href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Navigate in Team Explorer
-    href: /vsts/connect/work-team-explorer?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: work-team-explorer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: FAQs
     href: faqs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Resources

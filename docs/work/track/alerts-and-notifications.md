@@ -51,7 +51,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	
 	![Fill out the custom alerts form](_img/personal/ALM_AN_DefiningAlerts.png)
 	
-	For a list of available fields, see [Index of work item fields](../guidance/work-item-field.md).
+	For a list of available fields, see [Index of work item fields](../work-items/guidance/work-item-field.md).
 
 6.	For even more options, open the Select New Alert Template. 
 	
@@ -123,4 +123,4 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 - [Manage your notifications](../../notifications/manage-personal-notifications.md) (VSTS, TFS 2017.1)
 - [Manage notifications for a team](../../collaborate/manage-team-notifications.md) (VSTS, TFS 2017.1) 
 - [Account preferences](../../accounts/account-preferences.md)  
-- [Work effectively from your account hub](../../connect/account-home-pages.md) (VSTS, TFS 2017.1)
+- [Work effectively from your account hub](../../user-guide/account-home-pages.md) (VSTS, TFS 2017.1)

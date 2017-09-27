@@ -258,7 +258,7 @@ To query for items based on text entered in the History field, see
 - [Create managed queries to list, update, or chart work items ](example-queries.md)    
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
-- [Work item field index](../guidance/work-item-field.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)
 
 

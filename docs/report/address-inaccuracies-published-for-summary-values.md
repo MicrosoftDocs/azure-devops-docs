@@ -16,7 +16,7 @@ ms.date: 12/30/2016
 If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this topic. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
   
 > [!NOTE]  
->  When you use Office Project to create parent and child tasks, it assigns parent tasks the rollup of hours that are defined for all its child tasks. Rollup hours are not published to Team Foundation so that the hours are not double-counted in certain reports. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the publication to Team Foundation of the hours that are assigned to summary tasks. You can view the rollup of hours for summary tasks in Office Project but not in Team Foundation. For more information, see [Customize the Microsoft Project field mapping file](../work/reference/map-microsoft-project-fields-to-tf-fields.md).  
+>  When you use Office Project to create parent and child tasks, it assigns parent tasks the rollup of hours that are defined for all its child tasks. Rollup hours are not published to Team Foundation so that the hours are not double-counted in certain reports. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the publication to Team Foundation of the hours that are assigned to summary tasks. You can view the rollup of hours for summary tasks in Office Project but not in Team Foundation. For more information, see [Customize the Microsoft Project field mapping file](../work/customize/reference/map-microsoft-project-fields-to-tf-fields.md).  
   
  When both summary tasks and their child tasks contain hours in the effort fields, you essentially have double-counting of the level of task effort. To address these inaccuracies, you must clear the **Original Estimate** (or **Baseline Work** for team projects that have been upgraded), **Remaining Work**, and **Completed Work** fields for the summary or parent tasks.  
   
@@ -63,5 +63,5 @@ If you see that hours are counted twice in reports that contain task hours, you 
 10. Verify that the changes have been picked up by viewing the Progress dashboard or other work report.  
   
 ## Related notes 
- [Add or change Project-to-TFS field mapping](../work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md)   
+ [Add or change Project-to-TFS field mapping](../work/customize/reference/add-or-change-how-project-fields-map-to-tfs-fields.md)   
  [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)

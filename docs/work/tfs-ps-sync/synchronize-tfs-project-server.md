@@ -111,7 +111,7 @@ When the project manager rejects an update to a work item, you must address the 
   
 
 ## Related notes  
--  [Agile tools and work tracking](../overview.md)    
+-  [Agile tools and work tracking](../backlogs/overview.md)    
 
 <a name="demos"></a>  
 ###  Demonstration videos  

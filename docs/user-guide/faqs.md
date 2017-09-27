@@ -19,7 +19,7 @@ ms.date: 03/02/2016
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](../tfs-server/install/get-started.md) for details.  
 - If you need to create a team project, create one in [VSTSs](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).   
 - If you don't have access to the team project, [get invited to the team](../accounts/add-users.md).  
-- If it's your first time connecting to a team project, see [Connect to a team project](../connect/connect-team-projects.md).  
+- If it's your first time connecting to a team project, see [Connect to a team project](connect-team-projects.md).  
 
 **A: To get started with a client tool:** 
 Go to one of these pages to download a version of Visual Studio or client tool plug-in that will support connecting to a team project: 
@@ -60,7 +60,7 @@ See [Software development roles](roles.md).
 >Test Manager is deprecated for TFS 2017.   
 
 Also, you can find several open-source clients that have been added to [Marketplace extensions](https://marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:  
-- For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/process/new-work-item-experience.md). 
+- For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/customize/process/new-work-item-experience.md). 
 - For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) which provides enhancements, tools, and command-line utilities that support increased productivity.
 
 > [!NOTE]  

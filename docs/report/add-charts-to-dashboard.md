@@ -94,7 +94,7 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 
 Each time a build is run, it logs information about the build, including the run time, errors and warnings, and whether it successfully completed or failed.   
 
-1. Select your [team context](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard.   
+1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard.   
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -115,7 +115,7 @@ Each time a build is run, it logs information about the build, including the run
 
 Each time a [release is deployed](../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
-1. Select your [team context](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
+1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
@@ -134,7 +134,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
 
-1. Select your [team context](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -149,7 +149,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../build-release/test/getting-started-with-continuous-testing.md).  
 
-1. Select your [team context](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -171,7 +171,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../work/how-to/switch-team-context-work.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
 2. If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
@@ -194,7 +194,7 @@ Open the Markdown file defined in your repository and make sure you are in your 
 
 Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](../Report/dashboards.md) for more info.  
 
-<img src="../reference/_img/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 <a id="markdown-widget">  </a>
 ## Markdown widgets   
@@ -206,13 +206,13 @@ Use these widgets to support your team and stakeholders by adding information su
 
 Here's an example:  
 
-<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  
 >Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
+>For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../collaborate/markdown-guidance.md#relative-links). 
 
 To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/add-team-administrator.md). 
 

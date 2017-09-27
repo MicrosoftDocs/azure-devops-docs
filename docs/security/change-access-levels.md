@@ -123,11 +123,11 @@ Also, stakeholders can create and modify work items using Team Foundation client
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
 
 - [Permissions and group reference](permissions.md)   
-- [About teams and team tools](../work/about-teams-and-settings.md)   
+- [About teams and team tools](../teams/about-teams-and-settings.md)   
 
 ## Related notes  
 <a id="test-manager"  >  </a>
 - [About access levels](access-levels.md)
 - [Permissions & access](permissions-access.md)  
-- [Work in the web portal](../connect/work-web-portal.md)  
+- [Work in the web portal](../user-guide/work-web-portal.md)  
 

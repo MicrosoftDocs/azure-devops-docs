@@ -72,7 +72,7 @@ Specifically, from the **Work** you can perform these tasks:
 - Visualize the work flow and update status using Kanban boards	 				
 - Manage portfolios by grouping stories under features and features under epics   
 
-See [Backlogs, boards, and plans](../work/backlogs-boards-plans.md) for an overview of each.   
+See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for an overview of each.   
  
 ## Build & Release 
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 

@@ -24,7 +24,6 @@ Repository README files and team project Wikis are great ways to share informati
 - [Share your project vision](project-vision-status.md)
 
 
-
 ## Step-by-Step Tutorials
 
 - [Add & edit a wiki](add-edit-wiki.md)  
@@ -33,6 +32,11 @@ Repository README files and team project Wikis are great ways to share informati
 - [Create a readme for your repo](/vsts/git/create-a-readme?toc=/vsts/collaborate/toc.json) 
 - [Share work plans](/vsts/work/track/share-plans?toc=/vsts/collaborate/toc.json)  
   
+## Reference 
+
+- [Markdown guidance](markdown-guidance.md)
+- [Navigate in the web portal](../user-guide/work-web-portal.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
+ 
 ## Resources 
 
-  - [Dashboards](../report/dashboards.md)
+- [Dashboards](../report/dashboards.md)

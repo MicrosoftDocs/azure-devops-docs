@@ -58,4 +58,4 @@ Let us know what you think in the comment box that appears when you toggle the n
 
 ## Related notes
 
-- [Work from the account home page](../../connect/account-home-pages.md)
+- [Work from the account home page](../../user-guide/account-home-pages.md)

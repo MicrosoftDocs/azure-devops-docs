@@ -25,9 +25,9 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 
 >[!NOTE]  
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow (Inheritance process model](../customize/customize-work.md) or [Add or modify a work item type (Hosted XML or On-premises XML process models](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../how-to/set-column-options.md).   
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow (Inheritance process model](../customize/customize-work.md) or [Add or modify a work item type (Hosted XML or On-premises XML process models](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md).
+>For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 
 <a id="map-the-flow-of-work">  </a>
 
@@ -95,7 +95,7 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 You'll see different column titles and choices based on the following:  
 	
 - You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
-- The [Process](../guidance/choose-process.md) you used to create your team project  
+- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 - Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
 <br/>
   
@@ -135,7 +135,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../process/customize-process-workflow.md).  
+	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../customize/process/customize-process-workflow.md).  
  
 #### TFS 2015.1
 
@@ -210,7 +210,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 	You'll see different column titles and choices based on the following:  
 	
 	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
-	- The [Process](../guidance/choose-process.md) you used to create your team project  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
 	**VSTS and TFS 2015 Update 1 options:**  
@@ -267,7 +267,7 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 
 * Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
 * Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../process/customize-process-workflow.md) or [TFS](../reference/change-workflow-wit.md)  
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. 
 

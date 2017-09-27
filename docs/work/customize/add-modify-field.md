@@ -13,7 +13,7 @@ ms.date: 04/05/2017
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your team project contains 100 or more data fields, based on the process&#151;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
+Your team project contains 100 or more data fields, based on the process&#151;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
 You can modify an existing field or add a custom field to support tracking additional data requirements. For example, you can customize the pick list within a drop-down menu, add a rule to specify a default value or restrict the value it can take, or change a field attribute.  
 
@@ -35,17 +35,17 @@ You use work item fields to track data for a work item type and to define the fi
 
 Work item fields are maintained for a team project collection. You add fields when you perform one of the following tasks:
 
--   **Create a team project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a team project. For a list of these fields, see [Work item field index](../guidance/work-item-field.md).
+-   **Create a team project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a team project. For a list of these fields, see [Work item field index](../work-items/guidance/work-item-field.md).
 
--   **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](../reference/all-witd-xml-elements-reference.md).
+-   **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](reference/all-witd-xml-elements-reference.md).
 
--   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](../reference/global-workflow-xml-element-reference.md).
+-   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](reference/global-workflow-xml-element-reference.md).
 
 -   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](../tfs-ps-sync/project-server-fields-added-to-tfs.md).
 
 All fields that are defined in all WITs and all global workflows for all team projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises TFS and reporting. 
 
-To add or customize a field for a collection, modify the XML content for the  WIT definition. Define each field through a **FIELD** element within the **FIELDS** section of the WIT definition. For information about the structure and location of these files, see [All FIELD XML elements reference](../reference/all-field-xml-elements-reference.md).
+To add or customize a field for a collection, modify the XML content for the  WIT definition. Define each field through a **FIELD** element within the **FIELDS** section of the WIT definition. For information about the structure and location of these files, see [All FIELD XML elements reference](reference/all-field-xml-elements-reference.md).
 
 <a id="modify-field">  </a>
 ##Add a field, or apply a rule, or change an attribute 
@@ -63,7 +63,7 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
-Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../guidance/work-item-field.md).
+Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 <a id="boolean-field">  </a>
 ### Add a checkbox or Boolean field 
@@ -124,7 +124,7 @@ To modify the pick list for most string or integer fields within a work item for
 
 Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or team projects.
 
-When you use a list in several WITs or across several team projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or team projects, you can define a global list for part of a pick list. See see [Define pick lists](https://msdn.microsoft.com/library/ms194947.aspx) and [Define global lists](../reference/define-global-lists.md).
+When you use a list in several WITs or across several team projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or team projects, you can define a global list for part of a pick list. See see [Define pick lists](https://msdn.microsoft.com/library/ms194947.aspx) and [Define global lists](reference/define-global-lists.md).
 
 <a id="add-rules">  </a>
 ### Add rules to a field
@@ -154,7 +154,7 @@ You apply rules to accomplish the following actions:
 
 System fields, whose names all start with the "System" prefix (for example, System.ID), are limited in terms of the rules you can apply to them. For example, you can't copy or set to empty fields used to track who created, changed, or closed a work item, or date-time fields used by the system.
 
-For more information about applying field rules and restrictions, see [Apply a rule to a work item field](../reference/apply-rule-work-item-field.md).
+For more information about applying field rules and restrictions, see [Apply a rule to a work item field](reference/apply-rule-work-item-field.md).
 
 <a id="add-custom-field">  </a>
 ### To add a custom field
@@ -183,7 +183,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 	```
 
     >[!TIP]  
-    >Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../reference/naming-restrictions.md#WorkItemFields). 
+    >Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../collaborate/naming-restrictions.md#WorkItemFields). 
 
 0.  Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
 
@@ -202,7 +202,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 	```
 
 	> [!TIP]  
-	> The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](../reference/control-xml-element-reference.md).   
+	> The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](reference/control-xml-element-reference.md).   
 
 0.  Import the WIT definition file according to the process model you use.
 
@@ -252,7 +252,7 @@ Or, you can add a custom control which is available through the [Visual Studio M
 -   [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.    
 
 
-To add a custom control to the new web form, see [WebLayout and Control elements](../reference/weblayout-xml-elements.md). 
+To add a custom control to the new web form, see [WebLayout and Control elements](reference/weblayout-xml-elements.md). 
 
 <a id="limit-account-names">  </a>
 ## Limit the Assigned To field list of names
@@ -290,13 +290,13 @@ You use **witadmin changefield** to change the attributes of an existing field. 
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.Type /name:"Evaluation Method"
 ```  
 
-The following table summarizes the attributes you can change using [witadmin changefield](../reference/witadmin/manage-work-item-fields.md).
+The following table summarizes the attributes you can change using [witadmin changefield](reference/witadmin/manage-work-item-fields.md).
 
 | Attribute | Description |
 |---|---|
 | Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
 | Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a team project collection. The friendly name may differ from the form label that appears on the work item form. |
-| Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](../reference/reportable-fields-reference.md). For more information about reportable attributes, see [Field data type and reportable attributes](../reference/define-modify-work-item-fields.md). |
+| Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](reference/reportable-fields-reference.md). For more information about reportable attributes, see [Field data type and reportable attributes](reference/define-modify-work-item-fields.md). |
 | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
 
@@ -309,20 +309,20 @@ The following table summarizes the attributes you can change using [witadmin cha
  
 You can enable indexing for a field to improve query response times when filtering on the field. By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type.  
 
-To enable or disable indexing for a field, use the [**witadmin indexfield** command](../reference/witadmin/manage-work-item-fields.md). 
+To enable or disable indexing for a field, use the [**witadmin indexfield** command](reference/witadmin/manage-work-item-fields.md). 
 
 ## Related notes
 
-This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
+This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
 
 Other related topics or resources: 
 
 - [Work tracking object limits](../customize/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
-- [Field data type and field attributes](../reference/define-modify-work-item-fields.md)    
-- [WebLayout and Control elements](../reference/weblayout-xml-elements.md)
+- [Field data type and field attributes](reference/define-modify-work-item-fields.md)    
+- [WebLayout and Control elements](reference/weblayout-xml-elements.md)
 - [Guide to administrative tasks](../../accounts/account-management.md)  
-- [Import, export, and manage work item fields (witadmin)](../reference/witadmin/manage-work-item-fields.md).
+- [Import, export, and manage work item fields (witadmin)](reference/witadmin/manage-work-item-fields.md).
 - [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 
 
@@ -342,7 +342,7 @@ To get added as an administrator, [Add administrators](../../security/set-projec
 <a id="list-fields"></a> 
 ### List or review fields  
 
-To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../guidance/work-item-field.md).  
+To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../work-items/guidance/work-item-field.md).  
 
 <table>
 <tr valign="bottom">
@@ -355,7 +355,7 @@ To list or review fields, you can use one of the following tools, depending on t
 <tbody valign="top" align="center">
 
 <tr>
-<td align="left">[Web portal: List inherited and custom-defined fields](../process/customize-process-field.md#review-fields)</td>
+<td align="left">[Web portal: List inherited and custom-defined fields](process/customize-process-field.md#review-fields)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)<sup>1</sup></td>
 <td> </td>
@@ -369,7 +369,7 @@ To list or review fields, you can use one of the following tools, depending on t
 </tr>
 
 <tr>
-<td align="left">[witadmin listfields command line tool](../reference/witadmin/manage-work-item-fields.md)</td>
+<td align="left">[witadmin listfields command line tool](reference/witadmin/manage-work-item-fields.md)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -419,7 +419,7 @@ For more information, see [Query based on build and test integration fields](../
 >[!NOTE]  
 >**Feature availability**: You can change the reportable attributes for a field only from an on-premises TFS. 
 
-You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](../reference/add-or-modify-work-item-fields-to-support-reporting.md).
+You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](reference/add-or-modify-work-item-fields-to-support-reporting.md).
 
 
 <a id="delete-field">  </a>
@@ -449,7 +449,7 @@ When you remove a field from a specific type of work item, that field is not rem
 
 4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../../Report/admin/rebuild-data-warehouse-and-cube.md).
 
-For more information, see [Manage work item fields](../reference/witadmin/manage-work-item-fields.md).  
+For more information, see [Manage work item fields](reference/witadmin/manage-work-item-fields.md).  
 
 <!---
 1.  If you don't have project administrator permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  

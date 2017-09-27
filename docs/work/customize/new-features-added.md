@@ -41,7 +41,7 @@ Update
 New web form
 </td>
 <td>
-<p>Adds the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the [new work tracking experience in the web portal](../process/new-work-item-experience.md). It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships. To learn more, see [WebLayout and Control elements](../reference/weblayout-xml-elements.md) and [LinksControlOptions XML elements (Web form)](../reference/linkscontroloptions-xml-elements.md).</p>
+<p>Adds the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the [new work tracking experience in the web portal](process/new-work-item-experience.md). It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships. To learn more, see [WebLayout and Control elements](reference/weblayout-xml-elements.md) and [LinksControlOptions XML elements (Web form)](reference/linkscontroloptions-xml-elements.md).</p>
 <p>**Note**: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add team projects to a collection. (You don't have to run the Configure Feature Wizard.) For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md). The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.</p>
 </td>
 <td>
@@ -95,7 +95,7 @@ Adds or updates process configuration that supports using the Agile tools: [prod
 
 Agile tools depend on the WITs, categories, and process configuration definitions that are made.  Definitions are interdependent. <br/>
 
-See [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) to learn more about defining the process configuration for your team project.  
+See [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md) to learn more about defining the process configuration for your team project.  
 </td>
 <td>
 TFS 2012
@@ -199,6 +199,6 @@ The Test Plan and Test Suite WITs are added when you run the TFS Upgrade Wizard.
       <p>The History field for test-related artifacts now provides a consolidated view of changes made to work item fields as well as changes to related artifacts such as test points and test configurations. A new field, the Test Suite Audit field, available in the test suite work item form, captures and displays these related artifact changes in the work item history.</p>
     </li>
   </ul>
-  <p>The server upgrade automatically converts existing test plans and test suites to WITs and migrates test data and links. If it encounters a problem, a warning message appears in the server log. To learn more, see [Update a team project manually to support test management](../reference/update-a-team-project-manually-to-support-test-management.md).</p>
+  <p>The server upgrade automatically converts existing test plans and test suites to WITs and migrates test data and links. If it encounters a problem, a warning message appears in the server log. To learn more, see [Update a team project manually to support test management](reference/update-a-team-project-manually-to-support-test-management.md).</p>
   <p>To learn about changes introduced to Test Manager and the web portal, see [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md).</p>
 

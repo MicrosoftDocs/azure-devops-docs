@@ -23,9 +23,9 @@ Different types of work items are used to track features, user experiences, code
 ![Work item form to track features or user stories](_img/work-item-form-to-track-user-stories.png)
 
 >[!NOTE]  
->Depending on the process you chose when creating your team project--[Scrum](../guidance/scrum-process.md), 
-[Agile](../guidance/agile-process.md), or [CMMI](../guidance/cmmi-process.md)--the types of work items you can create will differ. For example, backlog items may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to deliver and the work to be performed.<br/>  
-For an overview of all three processes, see [Choose a process](../guidance/choose-process.md). 
+>Depending on the process you chose when creating your team project--[Scrum](../work-items/guidance/scrum-process.md), 
+[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)--the types of work items you can create will differ. For example, backlog items may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to deliver and the work to be performed.<br/>  
+For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
  
 
 
@@ -39,7 +39,7 @@ You can start adding work items once you connect to a team project. Here we show
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 

@@ -53,6 +53,6 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 - [Create your backlog](create-your-backlog.md) 
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see  these topics for details: 
-- **Inheritance process model** (VSTS): [Customize your backlogs or boards](../process/customize-process-backlogs-boards.md)
+- **Inheritance process model** (VSTS): [Customize your backlogs or boards](../customize/process/customize-process-backlogs-boards.md)
 - **Hosted XML process model** (VSTS): [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md)
 - **On-premises XML process model** (TFS): [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md)

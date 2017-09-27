@@ -60,6 +60,6 @@ If your team has completed multiple sprints, you can forecast release and produc
 -   What is the average velocity of your team?  
   
 ## Related notes
- [Scrum process](../../work/guidance/scrum-process.md)   
+ [Scrum process](../../work/work-items/guidance/scrum-process.md)   
  [Define iteration paths (sprints)](../../work/customize/set-iteration-paths-sprints.md)   
  [Velocity chart and widget](../guidance/team-velocity.md)

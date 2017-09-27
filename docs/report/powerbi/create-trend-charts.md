@@ -21,10 +21,10 @@ By following steps ![step 1](../_img/icons/step1.png) through ![step 4](../_img/
   
 ![Story Points VSTS   trend chart in power bi](_img/powerbi-story-points-trend.png) 
 
-Story points provide an estimate of the amount of work required to complete a user story ([Agile](../../work/guidance/agile-process.md) process) using any unit of measurement your team prefers, such as t-shirt size, story points, or time. 
+Story points provide an estimate of the amount of work required to complete a user story ([Agile](../../work/work-items/guidance/agile-process.md) process) using any unit of measurement your team prefers, such as t-shirt size, story points, or time. 
 
-If you use the [Scrum](../../work/guidance/scrum-process.md) or 
-[CMMI](../../work/guidance/cmmi-process.md) processes, you can create similar charts by filtering on the Effort or Size fields. 
+If you use the [Scrum](../../work/work-items/guidance/scrum-process.md) or 
+[CMMI](../../work/work-items/guidance/cmmi-process.md) processes, you can create similar charts by filtering on the Effort or Size fields. 
 
 <a id="basic-steps"></a>
 ##Basic steps to create a trend chart

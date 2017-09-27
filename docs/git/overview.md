@@ -75,7 +75,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
         <ul>
             <li>[Review code with pull requests](pull-requests.md)</li>
             <li>[Squash merge pull requests (TFS 2017 only)](merging-with-squash.md)</li>
-            <li>[Comment with markdown (TFS 2017 only)](../reference/markdown-guidance.md)</li>
+            <li>[Comment with markdown (TFS 2017 only)](../collaborate/markdown-guidance.md)</li>
             <li>[Set up branch policies](branch-policies.md)</li>
         </ul>
     </div>

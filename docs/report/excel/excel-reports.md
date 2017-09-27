@@ -13,7 +13,7 @@ ms.date: 04/05/2017
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
-You can use the Microsoft Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [Agile](../../work/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
+You can use the Microsoft Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [Agile](../../work/work-items/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
 
 If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md). Or, if you want to create an Excel report from a query, see [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md).  
  

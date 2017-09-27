@@ -24,7 +24,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	The URL follows this pattern: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 
-	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](account-home-pages.md).  
 
 0. Click **Board** to open the Kanban board. 
 

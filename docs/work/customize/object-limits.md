@@ -35,7 +35,7 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 | Global lists defined for a process | - | 64  |
 | List items defined within a global list | - | 512 | 
 
-For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](../import-process/customize-process.md).
+For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](import-process/customize-process.md).
 
 >[!NOTE]  
 >For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs. 
@@ -45,6 +45,6 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 
 ## Related notes
 
-- [Customize a process when using Hosted XML](../import-process/customize-process.md)
-- [Create an Inheritance process](../process/manage-process.md)
+- [Customize a process when using Hosted XML](import-process/customize-process.md)
+- [Create an Inheritance process](process/manage-process.md)
 - [Customize your work tracking experience](customize-work.md)

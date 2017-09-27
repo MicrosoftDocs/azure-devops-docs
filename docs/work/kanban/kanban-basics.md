@@ -50,7 +50,7 @@ If you don't have a team project yet, create one in [VSTS](../../accounts/set-up
 <meta name="description" content="Kanban workflow" />
 Kanban literally means signboard or billboard. As a first step, you customize your board to map to how your team works.
 
-When you first open your Kanban board, you'll see one column for each [workflow state](../guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../guidance/choose-process.md) used to create your team project.
+When you first open your Kanban board, you'll see one column for each [workflow state](../work-items/guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project.
 
 For user stories, the New, Active, Resolved, and Closed states track progress from idea to completion.
 <table>
@@ -134,7 +134,7 @@ Here are some useful tips when working with the Kanban board:
 
 
 > [!NOTE]  
-> Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
+> Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../scale/multiple-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 

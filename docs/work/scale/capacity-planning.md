@@ -56,7 +56,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 
 >[!NOTE]
->For VSTS, the task board always shows "h" for hours. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label. For details, see [Process configuration XML element reference, Agile tool fields](../reference/process-configuration-xml-element.md#fields).  
+>For VSTS, the task board always shows "h" for hours. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label. For details, see [Process configuration XML element reference, Agile tool fields](../customize/reference/process-configuration-xml-element.md#fields).  
 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).

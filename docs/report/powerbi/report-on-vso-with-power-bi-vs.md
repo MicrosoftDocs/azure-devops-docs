@@ -49,7 +49,7 @@ The VSTS content pack generates a single report with several pages.
 </tr>
 <tr>
 <td>Open Bug Status</td>
-<td>This is a general bug status report which is applicable to all three of the [out-of-the-box processes (Agile, CMMI, and Scrum](../../Work/guidance/choose-process.md). All charts exclude closed bugs (State=Closed or Done). </td>
+<td>This is a general bug status report which is applicable to all three of the [out-of-the-box processes (Agile, CMMI, and Scrum](../../work/work-items/guidance/choose-process.md). All charts exclude closed bugs (State=Closed or Done). </td>
 </tr>
 <tr>
 <td>Git Activity</td>
@@ -65,15 +65,15 @@ The VSTS content pack generates a single report with several pages.
 </tr>
 <tr>
 <td>Agile Project Status &#42; </td>
-<td> basic report that details data pertinent to a team project created with a version of the [Agile process](../../Work/guidance/agile-process.md). </td>
+<td> basic report that details data pertinent to a team project created with a version of the [Agile process](../../work/work-items/guidance/agile-process.md). </td>
 </tr>
 <tr>
 <td>Scrum Project Status &#42; </td>
-<td> basic report that details data pertinent to a team project created with a version of the [Scrum process](../../Work/guidance/scrum-process.md). </td>
+<td> basic report that details data pertinent to a team project created with a version of the [Scrum process](../../work/work-items/guidance/scrum-process.md). </td>
 </tr>
 <tr>
 <td>CMMI Project Status &#42; </td>
-<td>A basic report that details data pertinent to a team project created with a version of the [CMMI process](../../Work/guidance/cmmi-process.md). </td>
+<td>A basic report that details data pertinent to a team project created with a version of the [CMMI process](../../work/work-items/guidance/cmmi-process.md). </td>
 </tr>
 <tr>
 <td>Pull Requests</td>

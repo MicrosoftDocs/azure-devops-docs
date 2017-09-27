@@ -35,7 +35,7 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 ## Before you get started
 
 If you don't have a team project yet, 
-[create your team project first](../connect/connect-team-projects.md).
+[create your team project first](../user-guide/connect-team-projects.md).
 To add members to team projects, you'll need 
 [project administrator](add-administrator-team-project.md), 
 [project collection administrator, or account owner](faq-add-team-members.md#find-pca-owner) permissions.
@@ -111,6 +111,6 @@ Add them one at a time or all at the same time.
 
 ####	Next
 
-*	[Connect to VSTS](../connect/connect-team-projects.md) to share code from Xcode, Eclipse, or Visual Studio
+*	[Connect to VSTS](../user-guide/connect-team-projects.md) to share code from Xcode, Eclipse, or Visual Studio
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)

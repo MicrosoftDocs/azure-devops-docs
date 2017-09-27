@@ -35,7 +35,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 
 
 <p><b>Browsers</b></p>
-[Connect to the web portal](../connect/connect-team-projects.md) from the latest versions of these supported browsers:  
+[Connect to the web portal](connect-team-projects.md) from the latest versions of these supported browsers:  
 - Chrome  
 - Edge    
 - Firefox   
@@ -53,7 +53,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)   
 - [Visual Studio Code](hhttp://java.visualstudio.com/Docs/tools/vscode)   
  
-To learn how to connect, see [Connect to a team project](../connect/connect-team-projects.md).  
+To learn how to connect, see [Connect to a team project](connect-team-projects.md).  
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
@@ -82,14 +82,14 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../work/connect/work-as-a-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (VSTS)](../accounts/add-account-users-assign-access-levels.md)   
-- [Change access levels (TFS)](../work/connect/change-access-levels.md)  
+- [Change access levels (TFS)](../security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)  
+- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
 - [Build & Release](../security/set-build-release-permissions.md)  
 - [Git](../security/set-git-tfvc-repository-permissions.md)  
 - [TFVC](../security/set-git-tfvc-repository-permissions.md)  
@@ -175,12 +175,12 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Request feedback</b></p>
-<p>[Request feedback on working software](../work/connect/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
+<p>[Request feedback on working software](../feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
 ![Request feedback](_img/features/feature-request-feedback.png)  
  <br/>
 
 <p><b>Feedback client</b></p>
-<p>Provide the free [Microsoft feedback client](../work/connect/give-feedback.md) to capture their responses to your feedback requests. </p>
+<p>Provide the free [Microsoft feedback client](../feedback/give-feedback.md) to capture their responses to your feedback requests. </p>
 
 </td>
 </tr>
@@ -239,7 +239,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>New work item experience</b></p>
-<p>The [new work item experience](../work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../work/customize/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 
 <p><b>Manage bugs</b></p>
@@ -295,7 +295,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([VSTS](../work/process/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([VSTS](../work/customize/process/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -303,7 +303,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Field index </b></p>
-<p>Find descriptions and usage information for each field from the [work item field index](../work/guidance/work-item-field.md). </p>
+<p>Find descriptions and usage information for each field from the [work item field index](../work/work-items/guidance/work-item-field.md). </p>
 
 
 
@@ -324,28 +324,28 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](../work/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a team project is to [create an inherited process](../work/customize/process/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/features/customize-vsts-process.png)   
 <br/>
 
 <p><b>New work item experience </b></p>
-<p>The [new work item experience](../work/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../work/customize/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 <p><b>Customize a process</b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../work/process/customize-process-wit.md) </li>
-<li>[Add a custom control](../work/process/custom-controls-process.md) </li>
+<li>[Add and modify fields](../work/customize/process/customize-process-field.md)</li>
+<li>[Modify the web form layout](../work/customize/process/customize-process-form.md)</li>
+<li>[Modify the workflow states](../work/customize/process/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../work/customize/process/customize-process-wit.md) </li>
+<li>[Add a custom control](../work/customize/process/custom-controls-process.md) </li>
 </ul>
 
 <p><b>Change the process used by a team project</b></p>
-<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../work/process/manage-process.md#migrate).  </p>
+<p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../work/customize/process/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../work/process/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../work/customize/process/manage-process.md#enable-process).  </p>
 
 
 
@@ -354,12 +354,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../work/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
 <p><b>Remove a field from a form</b></p>
-<p>You can [remove a custom field and select inherited fields from a work item form](../work/process/customize-process-field.md#remove-field). You can also [relabel the fields](../work/process/customize-process-field.md#rename-field) that appear on the form.   </p>
+<p>You can [remove a custom field and select inherited fields from a work item form](../work/customize/process/customize-process-field.md#remove-field). You can also [relabel the fields](../work/customize/process/customize-process-field.md#rename-field) that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
 <p>Change the [pick list of area paths](../work/customize/set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
@@ -379,30 +379,30 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can [review the list of fields](../work/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/guidance/work-item-field.md). </p>
+<p>You can [review the list of fields](../work/customize/process/customize-process-field.md#review-fields) defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). </p>
 
 <p><b>Delete a field from the collection</b></p>
-<p>You can [delete a custom field](../work/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
+<p>You can [delete a custom field](../work/customize/process/customize-process-field.md#delete-field) if you find it's no longer required. </p>
 
 
 
 <p><b>Customize the web form</b></p>
-<p>For each work item type, you can [add custom pages to group additional custom fields](../work/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
+<p>For each work item type, you can [add custom pages to group additional custom fields](../work/customize/process/customize-process-form.md) and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
 ![Add custom group](_img/features/index-add-group.png)   
 <br/>
 
 <p><b>Add a custom work item type</b></p>
-<p>You can [add and modify a custom work item type](../work/process/customize-process-wit.md).    </p>
+<p>You can [add and modify a custom work item type](../work/customize/process/customize-process-wit.md).    </p>
 
 <p><b>Customize the workflow</b></p>
-<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../work/process/customize-process-workflow.md).    </p>
+<p>For each work item type, you can [add custom workflow states to support your business tracking needs](../work/customize/process/customize-process-workflow.md).    </p>
 
 
 <p><b>Delete a process</b></p>
 <p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
 
 <p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/customize/process/manage-process.md#process-permissions).  </p>
 
 </td>
 
@@ -427,7 +427,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Add rules to a field </b></p>
-<p>Apply [various rules to custom fields](../work/reference/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
+<p>Apply [various rules to custom fields](../work/customize/reference/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
 
 
 <p><b>Remove a field </b></p>
@@ -488,7 +488,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with [lightweight tasks checklists](../work/kanban/add-task-checklists.md). </p>
-![Track tasks with a checklist](../work/_img/kanban-task-checklist.png)  
+![Track tasks with a checklist](../work/backlogs/_img/overview/kanban-task-checklist.png)  
 <br/>
 
 <p><b>Filter</b></p>
@@ -690,13 +690,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>What is workflow? </b></p>
 <p>You use workflow to track the progress of work as it moves from new, active, to complete or closed. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.  </p>
-![User story workflow](../work/guidance/_img/ALM_PT_Agile_WF_Bug.png)   
+![User story workflow](../work/work-items/guidance/_img/ALM_PT_Agile_WF_Bug.png)   
 
 <br/>
 
 
 <p><b>Default workflows</b></p>
-<p>Each process [defines the workflow](../work/guidance/choose-process.md#main-distinctions) for each work item type to track progress from newly defined, to in progress, to completed or closed. </p>
+<p>Each process [defines the workflow](../work/work-items/guidance/choose-process.md#main-distinctions) for each work item type to track progress from newly defined, to in progress, to completed or closed. </p>
 
 
 
@@ -711,7 +711,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For VSTS: [add custom workflow states to support your business tracking needs](../work/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
+<p>For VSTS: [add custom workflow states to support your business tracking needs](../work/customize/process/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to [track the status of work](https://msdn.microsoft.com/library/ms194981.aspx). For  example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.</p>
@@ -731,11 +731,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [define rules that change a field value](https://msdn.microsoft.com/library/ms194981.aspx) whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (TFS)  </b></p>
-<p>You can define rules that [change a field value based on the contents of other fields](../work/reference/apply-rule-work-item-field.md) during workflow changes. </p>
+<p>You can define rules that [change a field value based on the contents of other fields](../work/customize/reference/apply-rule-work-item-field.md) during workflow changes. </p>
 
 
 <p><b>Restrict who can make changes during workflow transitions (TFS)  </b></p>
-<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../work/reference/apply-rule-work-item-field.md).  </p>
+<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../work/customize/reference/apply-rule-work-item-field.md).  </p>
 
 
 <p><b>Event-generated workflow changes or field assignments (TFS)</b></p>
@@ -1366,7 +1366,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../work/connect/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1472,7 +1472,7 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Reporting Services reports</b></p>
-<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../work/guidance/choose-process.md) - that you choose.   </p>
+<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../work/work-items/guidance/choose-process.md) - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
 <p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
@@ -2057,12 +2057,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Operational hubs</b></p>
-<p>Each hub&mdash;[Home, Code, Work, build, and Test](../connect/work-web-portal.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
+<p>Each hub&mdash;[Home, Code, Work, build, and Test](work-web-portal.md)&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
 ![Operational hubs](_img/features/alm-feature-op-hubs-2.png)  
 <br/>
 
 <p><b>Account hub </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](../connect/account-home-pages.md). </p>
+<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
 <p>Click your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
@@ -2082,14 +2082,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Keyboard shortcuts</b></p>
-<p>Increase your productivity by working with [hot keys and shortcuts](../reference/keyboard-shortcuts.md).</p>
+<p>Increase your productivity by working with [hot keys and shortcuts](../collaborate/keyboard-shortcuts.md).</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](../reference/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](../collaborate/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
@@ -2127,8 +2127,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](../connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2294,11 +2294,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)</li>
+<li>[Area and iteration paths](../security/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../work/track/set-query-permissions.md)</li>
 <li>[Work item tags](../security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../work/how-to/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Permanently delete work items](../work/how-to/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Move work items to another team project](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Permanently delete work items](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Provide feedback through the Microsoft Feedback client](../feedback/give-permissions-feedback.md)</li>
 </ul>
 <br/>
@@ -2326,7 +2326,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Stakeholder access</b></p>
-<p>[Grant stakeholders, non-licensed users, limited access](../work/connect/change-access-levels.md) to contribute ideas and access team dashboards.</p>
+<p>[Grant stakeholders, non-licensed users, limited access](../security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to [create shared queries and query folders](../work/track/set-query-permissions.md).</p>
@@ -2334,7 +2334,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/customize/process/manage-process.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
 <p>Understand how [valid user groups are populated and the permissions they're granted](../security/about-permissions.md#validusers).</p>
@@ -2425,29 +2425,29 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process?</b></p>
-<p>A [process defines the building blocks](../work/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
+<p>A [process defines the building blocks](../work/work-items/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
 
 
 <p><b>Compare and choose a process</b></p>
-<p>Compare the three core system processes--[Agile, Scrum, CMMI](../work/guidance/choose-process.md)--before you choose one to create a team project. </p>
+<p>Compare the three core system processes--[Agile, Scrum, CMMI](../work/work-items/guidance/choose-process.md)--before you choose one to create a team project. </p>
 
 
 <p><b>Agile process </b></p>
-<p>Choose [Agile](../work/guidance/agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
+<p>Choose [Agile](../work/work-items/guidance/agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
 ![Agile process work item types](_img/features/features-agile-wits.png)  
 <br/>
 
 <p><b>Customize a process (VSTS) </b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
 <ul>
-<li>[Add and modify fields](../work/process/customize-process-field.md)</li>
-<li>[Modify the web form layout](../work/process/customize-process-form.md)</li>
-<li>[Modify the workflow states](../work/process/customize-process-workflow.md) </li>
-<li>[Add a custom work item type](../work/process/customize-process-wit.md) </li>
+<li>[Add and modify fields](../work/customize/process/customize-process-field.md)</li>
+<li>[Modify the web form layout](../work/customize/process/customize-process-form.md)</li>
+<li>[Modify the workflow states](../work/customize/process/customize-process-workflow.md) </li>
+<li>[Add a custom work item type](../work/customize/process/customize-process-wit.md) </li>
 </ul>
 
 <p><b>Manage processes (VSTS) </b></p>
-<p>[Create inherited processes and migrate team projects to use them](../work/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
+<p>[Create inherited processes and migrate team projects to use them](../work/customize/process/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
 
 
 
@@ -2461,18 +2461,18 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Scrum process</b></p>
-<p>Choose [Scrum](../work/guidance/scrum-process.md) when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
+<p>Choose [Scrum](../work/work-items/guidance/scrum-process.md) when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
 ![Scrum process work item types](_img/features/features-scrum-wits.png)   
 <br/>
 
 <p><b>Scrum work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the Scrum process](../work/guidance/scrum-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the Scrum process](../work/work-items/guidance/scrum-process-workflow.md).  </p>
 
 <p><b>Agile work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the Agile process](../work/guidance/agile-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the Agile process](../work/work-items/guidance/agile-process-workflow.md).  </p>
 
 <p><b>Work item field index</b></p>
-<p>For descriptions and usage of each field used by the core and inherited processes, see [Work item field index](../work/guidance/work-item-field.md).   </p>
+<p>For descriptions and usage of each field used by the core and inherited processes, see [Work item field index](../work/work-items/guidance/work-item-field.md).   </p>
 
 
 </td>
@@ -2485,13 +2485,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
-<p>Choose [CMMI](../work/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
+<p>Choose [CMMI](../work/work-items/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
 ![CMMI work item types](_img/features/features-cmmi-wits.png)  
 <br/>
 
 
 <p><b>CMMI work items and workflow process guidance</b></p>
-<p>Plan and track your work using the [work item types and workflow supported by the CMMI process](../work/guidance/cmmi-process-workflow.md).  </p>
+<p>Plan and track your work using the [work item types and workflow supported by the CMMI process](../work/work-items/guidance/cmmi-process-workflow.md).  </p>
 
 
 </td>
@@ -2512,7 +2512,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your team project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
 
 <p><b>Manage process templates </b></p>
-<p>[Download and upload process templates](../work/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
+<p>[Download and upload process templates](../work/work-items/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
 
 
 </td>
@@ -2531,7 +2531,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Changes made to process templates</b></p>
-<p>For a catalog of changes, see [Changes made to process templates](../work/guidance/changes-to-process-templates.md).</p>
+<p>For a catalog of changes, see [Changes made to process templates](../work/work-items/guidance/changes-to-process-templates.md).</p>
 
 
 
@@ -2574,19 +2574,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Collection-project-team structure</b></p>
-<p>The [collection-project-team structure](../connect/work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)
+<p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
+![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
-<p>You [change the process of a team project](../work/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../work/process/customize-process.md) defined for that process.  </p>
+<p>You [change the process of a team project](../work/customize/process/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../work/customize/process/customize-process.md) defined for that process.  </p>
 
 
 </td>
 <td width="33%">
 
 <p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [account hub](../connect/account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p>From your [account hub](account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2633,7 +2633,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Support stakeholders</b></p>
-<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../work/connect/work-as-a-stakeholder.md).  </p>
+<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  </p>
 </td>
 <td width="33%">
 
@@ -2643,7 +2643,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Team welcome page</b></p>
-<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../reference/markdown-guidance.md).  </p>
+<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../collaborate/markdown-guidance.md).  </p>
 
 
 
@@ -2676,7 +2676,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../work/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../teams/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>

@@ -20,7 +20,7 @@ For example, you can create three swimlanes&mdash;Expedite, Standard, and Park&m
 <img src="_img/ALM_EW_IntroChart_3C.png" alt="Kanban board showing three swimlanes" style="border: 2px solid #C3C3C3;" /> 
 
 >[!TIP]
->Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">o</span> to expand all swimlanes and <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">u</span> to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows. For more tips, see [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).
+>Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">o</span> to expand all swimlanes and <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">u</span> to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows. For more tips, see [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
 
 
 ## Types of swimlanes  

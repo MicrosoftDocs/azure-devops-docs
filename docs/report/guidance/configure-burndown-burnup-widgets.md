@@ -95,7 +95,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > The list of selectable backlogs, work item types, and fields are based on your current team project. 
    > 
    > For example, if you select a work item type that doesn't exist in another team project, the burndown will not include work items from that team project. If you select a field that doesn't exist in another team project, that field will be considered blank for the burndown. 
-   > Therefore, a burndown created across multiple team projects will only work if the [Process](../..//work/guidance/choose-process.md) for those projects are the same, or at least very similar.
+   > Therefore, a burndown created across multiple team projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
 
 1. Choose your work items. The burndown can include work based on items in your **Backlog** or by **Work item type**.   
 	You can select a **Backlog**, which include all the work items in that backlog.    
@@ -104,7 +104,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../work/process/customize-process-wit.md).   
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../work/customize/process/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
@@ -220,7 +220,7 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 * [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
 * [Select sprints for a team](../../work/scale/set-team-defaults.md)
-* [Add a custom field to a work item type](../../work/process/customize-process-field.md)
+* [Add a custom field to a work item type](../../work/customize/process/customize-process-field.md)
 
 ####Industry resources 
 

@@ -14,7 +14,7 @@ ms.date: 03/02/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](../import-process/import-process.md).
+>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
 
 When the Configure Features wizard can't update your team project, it's because your team project was created from a process template other than those TFS provides, or you've customized your team project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing team projects: 
 
@@ -39,7 +39,7 @@ When the Configure Features wizard can't update your team project, it's because 
 
 	Choose this option when you have dozens of team projects that were created from the same process template.
 
-><b>Tip: </b>Review [Changes made to process templates](../guidance/changes-to-process-templates.md) to learn about changes made to the default process templates to enable new features. 
+><b>Tip: </b>Review [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md) to learn about changes made to the default process templates to enable new features. 
 
 ## 1. Download the latest process template
 
@@ -53,7 +53,7 @@ When the Configure Features wizard can't update your team project, it's because 
 
 1. If you aren't a member of the Project Collection Administrators group, [get added](https://msdn.microsoft.com/library/dd547204.aspx). You need the **Manage process template permission** set to Allow to download and manage process templates.
 
-1. After TFS has been upgraded, [download the latest process template from TFS](../guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your team project. 
+1. After TFS has been upgraded, [download the latest process template from TFS](../work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your team project. 
 
 	To download or upload process templates, you must connect to TFS 2015 from either Visual Studio 2015 or Team Explorer 2015.
 
@@ -65,7 +65,7 @@ When the Configure Features wizard can't update your team project, it's because 
  
 Copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
 
-Review [Changes made to process templates](../guidance/changes-to-process-templates.md) to learn about all the changes made to the default process templates to enable new features. 
+Review [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md) to learn about all the changes made to the default process templates to enable new features. 
 
 ###Add a WIT to a process template  
 
@@ -91,7 +91,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 1. Copy the ProcessConfiguration file from the **WorkItem Tracking/Process** folder of the downloaded process template to your customized template folder in the same location. 
 
-	Incorporate any customizations that you made to your ProcessConfiguration definition. For more information, see [Process Configuration XML Reference](../reference/process-configuration-xml-element.md).
+	Incorporate any customizations that you made to your ProcessConfiguration definition. For more information, see [Process Configuration XML Reference](reference/process-configuration-xml-element.md).
 
 
 ## 3. Apply your customizations to the process template (Option B)
@@ -102,7 +102,7 @@ Perform the following steps for each WIT that you add to your process template. 
 1. Apply the customizations that you've made to the new process template folder:
 	* Apply customizations you've made to the default work item type (WIT) definitions. This could include additions of fields or modifications to the workflow or form. 
 	
-	* Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](../reference/process-templates/add-wit-definitions-process-template.md).
+	* Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](reference/process-templates/add-wit-definitions-process-template.md).
 	
 		If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name that that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
 		
@@ -110,7 +110,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 	* Apply customizations to the **ProcessConfiguration** definition file. Check that the WITs that you want are represented in the correct categories and that all workflow states are mapped to metastates.
 	
-	* Copy any additional process template files that you've customized to the appropriate process template folder. For a complete list of process template files and information about customizing them, see [Overview of process template files](../reference/process-templates/overview-process-template-files.md).
+	* Copy any additional process template files that you've customized to the appropriate process template folder. For a complete list of process template files and information about customizing them, see [Overview of process template files](reference/process-templates/overview-process-template-files.md).
 
 1. Review your changes against this checklist to make sure that you have applied all the required customizations:
 	<table>
@@ -370,7 +370,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	The Configure Features wizard uses the ```version``` statement to determine which process template within a category is the latest version and automatically selects that version. 
 	
 	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a team project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a team project.
-1. [Upload the process template](../guidance/manage-process-templates.md).
+1. [Upload the process template](../work-items/guidance/manage-process-templates.md).
 
 	To verify your changes, create a test project. See [create a team project](../../accounts/create-team-project.md).
 
@@ -465,17 +465,17 @@ Perform the following steps for each WIT that you add to your process template. 
 ##Related update notes
 
 Keep these tips in mind when modifying process template files:
-* See [Overview of process template files](../reference/process-templates/overview-process-template-files.md) for information about each folder and file contained within the interdependent set of files.
+* See [Overview of process template files](reference/process-templates/overview-process-template-files.md) for information about each folder and file contained within the interdependent set of files.
 * Don't remove a file or a task from the set unless you know what the file is and that you will have no use for it. 
 * To locate the customizations that you have made, you can perform a diff operation on comparable files that exist in the two templates. However, you could receive some false positives because the sequence of element definitions might have changed between two versions.
 * You can search for the **dependency** element across all plug-in files to learn what tasks depend on other tasks that are being completed. For example, Microsoft Test Manager and Lab Management require the SharedSteps and TestCase work item types, the SharedSteps and TestedBy links types, and categories. See [Define dependencies for task groups and tasks in plug-in files](https://msdn.microsoft.com/library/ms243800.aspx).
 
 You can learn more about each process template definition files from these resources:
 
-* [Customize a process template](../reference/process-templates/customize-process.md)
-* [All WITD XML Elements Reference](../reference/all-witd-xml-elements-reference.md)
+* [Customize a process template](reference/process-templates/customize-process.md)
+* [All WITD XML Elements Reference](reference/all-witd-xml-elements-reference.md)
 * [Categories XML Element Reference](https://msdn.microsoft.com/library/dd286631.aspx)
-* [Process Configuration XML Element Reference](../reference/process-configuration-xml-element.md)
+* [Process Configuration XML Element Reference](reference/process-configuration-xml-element.md)
 
 You can post a question or search for answers to your update questions in one of these forums: [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) or [the web portal](http://go.microsoft.com/fwlink/?LinkId=257843).
 
@@ -493,7 +493,7 @@ The following changes made to a process template can interfere with the Configur
 * Renamed states or customized workflow states defined for WITs that belong to the Requirement Category or Task Category. Metastates define how planning tools treat each workflow state. At least one workflow state must map to the **InProgress** and to the **Completed** metastates
 * Removal of fields defined for WITs that belong to the Requirement Category or Task Category. These fields are defined in the ProcessConfiguration definition file and include the fields used to manage backlog priority, effort, task activity or discipline, and remaining work. 
 
-To learn more, see [Process configuration XML element reference](../reference/process-configuration-xml-element.md).  
+To learn more, see [Process configuration XML element reference](reference/process-configuration-xml-element.md).  
  
 ###Add portfolio backlog levels
 
