@@ -165,6 +165,8 @@
   - name: Upgrade TFS
     href: ./upgrade/get-started.md
     items:
+    - name: Clean up data
+      href: upgrade/clean-up-data.md
     - name: Pre-upgrade
       href: ./upgrade/pre-upgrade.md
     - name: Pre-production

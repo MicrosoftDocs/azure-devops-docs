@@ -76,7 +76,7 @@ prepare for the worst; and finally, do the upgrade.
 
 Your TFS deployment will be offline for the duration of the upgrade. Upgrade times can be measured in minutes for 
 very small deployments or in days for very large deployments. You can keep 
-your upgrades comparably speedy by [cleaning up unnecessary data](../../accounts/clean-up-data.md). If you're keeping up 
+your upgrades comparably speedy by [cleaning up unnecessary data](../../tfs-server/upgrade/clean-up-data.md). If you're keeping up 
 with the latest versions of TFS, that helps a lot, too. 
 
 If you're upgrading a very large database to TFS 2015, consider using the [TfsPreUpgrade tool](pre-upgrade.md). 

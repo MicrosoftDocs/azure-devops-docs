@@ -1,6 +1,6 @@
 ---
-title: Delete users from your VSTS account
-description: Delete users from your VSTS account
+title: Delete users from your VSTS account if you turned off User Hub
+description: Delete users from your VSTS account if you turned off User Hub
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 6be2e639-2d40-4406-8f34-2a08018b4383
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#	Delete users from your account in VSTS
+#	Delete users from your account in VSTS (if you turned off User Hub)
 
 **VSTS**
 

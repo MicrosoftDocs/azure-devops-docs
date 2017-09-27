@@ -1,18 +1,18 @@
 ---
-title: Add users to a team project and groups
-description: Add users to a team project and groups
+title: Add users to a TFS team project, sharepoint, and groups
+description: Add users to a TFS team project, sharepoint, and groups
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vs-devops-tfs
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2017
 ms.topic: get-started-article
 ---
 
-# Add users to a team project
+# Add users to a TFS team project and sharepoint 
 
-**VSTS** | **TFS 2015** | **TFS 2013**
+**TFS 2015** | **TFS 2013**
 
 As roles and responsibilities change,
 you might need to change the membership or permission levels for individual members of a team project.
@@ -66,6 +66,9 @@ or [shared queries](../work/customize/set-area-paths.md).
 You can also control access to projects, version control, build, and work items;
 learn how in [Restrict access in TFS](restrict-access-tfs.md).
 
+
+## Add users to Sharepoint
+
 If your TFS deployment is integrated with SharePoint Foundation,
 you'll need to manage membership in the SharePoint groups to grant permissions to the team project portal
 for your TFS users.
@@ -95,23 +98,9 @@ to navigate to the top-level administration context.
 The membership information will be exported to a comma-delimited file.
 Save or open the file.
 
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-
-#### Q: How do I add someone as an administrator?
-
-A: You'll need to add that user to groups
+To add an administrator you need to add that user to groups
 at the [project-collection level](add-administrator-project-collection.md)
 or at the [server-level for TFS](../tfs-server/add-administrator-tfs.md).
 
-#### Q: Can I restrict access to a team project or to functional areas within a team project?
-
-A: Yes. Learn how in [Restrict access in TFS](restrict-access-tfs.md).
-
-<a name="users-delay"></a>
-
-[!INCLUDE [user-delay](../_shared/qa-user-delay.md)]
-
-<!-- ENDSECTION --> 
+To restrict access to a team project or to functional areas within a team project, 
+see [Restrict access in TFS](restrict-access-tfs.md).

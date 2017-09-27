@@ -1,6 +1,6 @@
 ---
-title: Delete users using the user hub for VSTS
-description: Delete users using the user hub for VSTS
+title: Delete users for Visual Studio Team Services
+description: Delete users for Visual Studio Team Services
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
@@ -9,14 +9,9 @@ ms.author: estfan
 ms.date: 8/1/2017
 ---
 
-#	Delete users using the user hub for VSTS
+#	Delete users for Visual Studio Team Services (VSTS)
 
-**VSTS Streamlined User Management Preview**
-
-If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
- 
-![Choose Preview features from your user menu in the upper right corner](_img/user-hub/preview-features.png)
-
+**VSTS**
 
 ## How does *access* differ from *permissions*?
 

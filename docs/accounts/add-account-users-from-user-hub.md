@@ -1,6 +1,6 @@
 ---
-title: Add account users from the user hub for VSTS
-description: Add users and assign access levels in user hub VSTS
+title: Add account users for Visual Studio Team Services
+description: Add users for Visual Studio Team Services
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -10,13 +10,9 @@ ms.author: estfan
 ms.date: 4/17/2017
 ---
 
-#	Add account users from the user hub for VSTS
+#	Add account users for Visual Studio Team Services (VSTS)
 
-**VSTS Streamlined User Management Preview**
-
-If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
- 
-![Choose Preview features from your user menu in the upper right corner](_img/user-hub/preview-features.png)
+**VSTS**
 
 Add users to your VSTS account and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS account for free:

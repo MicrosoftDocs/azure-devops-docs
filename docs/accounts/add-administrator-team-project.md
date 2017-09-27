@@ -13,9 +13,13 @@ ms.date: 03/29/2017
 
 **VSTS**
 
-0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administraton page.
+[Learn more](../security/set-project-collection-level-permissions.md) about team project permissions.
 
-0. Add the user to the **Project Administrators** group.
+0. From the team page, choose the ![Settings icon](_img/admin-gear-icon.png) in the upper right.
+
+0. Choose the **Security** page in the top nav bar and choose the **Project Administrators** group in the left nav.
+
+0. Choose **Add...** to add the user to the **Project Administrators** group.
 
 0. If you use SharePoint with TFS, go to the team project portal and choose **Share** to give the user **Full Control**.
 
