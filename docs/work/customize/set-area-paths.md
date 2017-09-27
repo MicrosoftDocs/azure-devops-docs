@@ -26,7 +26,7 @@ Newly created team projects contain a single, root area that corresponds to the 
 
 From the web portal, open the admin page for the team project.
 
-You define both areas and iterations from the Work hub of the team project admin context. From the user context,you open the admin context by clicking the ![gear icon](../../connect/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
+You define both areas and iterations from the Work hub of the team project admin context. From the user context,you open the admin context by clicking the ![gear icon](../../user-guide/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
 
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
@@ -157,7 +157,7 @@ As you can see, areas play a major role in supporting Agile tools and managing w
 *	[Add another team](../scale/multiple-teams.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  
 *	[Configure team settings and add team administrators](../scale/manage-team-assets.md)   
-*	[Agile tools that rely on areas or iterations](../about-teams-and-settings.md)
+*	[Agile tools that rely on areas or iterations](../../teams/about-teams-and-settings.md)
 
 
  

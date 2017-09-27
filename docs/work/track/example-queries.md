@@ -61,7 +61,7 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 
 ## Related notes
 
-- [Work item field index](../guidance/work-item-field.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../customize/customize-work.md). 

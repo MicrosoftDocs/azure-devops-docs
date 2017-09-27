@@ -399,7 +399,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 Adds a configurable tile to display any type of information, guidance, or links that you want.
 From the configuration dialog, add the information you want to share with your team. 
 
-To learn more about markdown format, see [Markdown guidance](../reference/markdown-guidance.md). 
+To learn more about markdown format, see [Markdown guidance](../collaborate/markdown-guidance.md). 
 
 
 ---- 
@@ -430,7 +430,7 @@ Team rooms support increased team productivity by providing a space to discuss w
 
 ![Visual Studio widget](_img/widget-visual-studio.png)
 
-Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../connect/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
+Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
 
 ---- 
 <a id="how-to-widget"></a>

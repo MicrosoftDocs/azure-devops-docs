@@ -7,7 +7,7 @@ ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 07/03/2017
+ms.date: 09/26/2017
 ---
 
 # Run tests with your builds

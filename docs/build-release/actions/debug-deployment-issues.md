@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 37894F28-12AA-44DE-9371-AB1F0CDDDC71
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/16/2017
+ms.date: 09/26/2017
 ---
 
 # How To: Monitor releases and debug deployment issues

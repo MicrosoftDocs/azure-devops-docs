@@ -42,7 +42,7 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
   
  ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")  
   
- The process templates for [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](../excel/bug-reactivations-excel-report.md).  
+ The process templates for [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](../excel/bug-reactivations-excel-report.md).  
   
 ### Select and filter pivot fields  
  ![Pivot Fields for Bug Reactivations Report](_img/alm_rpt_pivot_bugreactivations.png "ALM_RPT_Pivot_BugReactivations")  
@@ -83,7 +83,7 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
   
 <a name="measures"></a> 
 ##  Work item measures  
- The following table describes the measures that you can use to filter or report on the status or progress of work. With the Work Item Count measure, you can report on the total number of work items in a particular state at a particular point in time. To report activity that occurred on a particular day, you can use the State Change Count or Revision Count measures. The Work Item measure group contains additional measures when custom fields in the definitions of work item types specify `Measure` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).  
+ The following table describes the measures that you can use to filter or report on the status or progress of work. With the Work Item Count measure, you can report on the total number of work items in a particular state at a particular point in time. To report activity that occurred on a particular day, you can use the State Change Count or Revision Count measures. The Work Item measure group contains additional measures when custom fields in the definitions of work item types specify `Measure` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).  
   
 > [!NOTE]  
 > The Agile and CMMI process templates include calculated measures that are associated with the scheduling work fields. When a measure in the cube is based on a field in a process template, the label for the measure is based on the reference name of the originating field. However, a localized translation appears for the measure labels when you browse the cube with Excel or other reporting tools.  
@@ -173,7 +173,7 @@ You can use **Date Filters** and **Numeric Filters** to filter a report based on
 <tbody>
 <tr valign="top">
 <td>
-For information about each field, see [Work item field index](../../work/guidance/work-item-field.md). Only fields that have `reportable="Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
+For information about each field, see [Work item field index](../../work/work-items/guidance/work-item-field.md). Only fields that have `reportable="Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
 </td>
 <td>
 ![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders") 
@@ -196,7 +196,7 @@ For information about each field, see [Work item field index](../../work/guidanc
 |Created Date Hierarchy by Week|Hierarchical tree that supports filtering and reporting on the set of work items based on the week in which the team created the items.|  
 |Iteration|As the following illustration shows, contains a 14-level hierarchy that correlates the measures in the cube according to the iteration classifications with which they are associated. You can use this parent-child hierarchy to summarize or filter measures according to their levels within the iteration hierarchy.<br /><br /> ![Iteration Hierarchy Dimension](_img/alm_rpt_iteration_hierarchy.png "ALM_RPT_Iteration_Hierarchy")<br /><br /> For more information, see [Create and Modify Areas and Iterations](../../work/customize/set-area-paths.md).|  
 |Iteration Path|Flat list of the set of iteration paths that are defined for all team projects.|  
-|Previous State|The only field under **More fields** is **Previous State**, which you can use to filter a report based on the State to which a work item was assigned before it was assigned to its current state. State is an attribute of the workflow for a type of work item. For more information, see [Change the workflow](../../work/reference/change-workflow-wit.md).|  
+|Previous State|The only field under **More fields** is **Previous State**, which you can use to filter a report based on the State to which a work item was assigned before it was assigned to its current state. State is an attribute of the workflow for a type of work item. For more information, see [Change the workflow](../../work/customize/reference/change-workflow-wit.md).|  
   
 <a name="linked_work_item"></a> 
 ###  Filter by Link Type or Fields That Are Defined for a Linked Work Item  
@@ -204,7 +204,7 @@ For information about each field, see [Work item field index](../../work/guidanc
   
 <a name="linktype_attribute"></a> 
 ####  Filter Based on an Attribute of a Link Type  
- By specifying one or more of the attributes in the following table, you can filter work items that have at least one link relationship whose link type meets the criteria that you specify. For more information, see [LinkTypes](../../work/reference/link-type-element-reference.md) and [Manage link types](../../work/reference/witadmin/manage-link-types.md).  
+ By specifying one or more of the attributes in the following table, you can filter work items that have at least one link relationship whose link type meets the criteria that you specify. For more information, see [LinkTypes](../../work/customize/reference/link-type-element-reference.md) and [Manage link types](../../work/customize/reference/witadmin/manage-link-types.md).  
   
 > [!NOTE]  
 >  You can use any of the attributes in the following table to filter the report, but you will find the Link Name and Link Reference Name attributes most useful. All Boolean attributes have a value of either `True` or `False`.  
@@ -249,7 +249,7 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
   
 <a name="category"></a> 
 ###  Filter By category  
- The **Work Item to Category** entry in the combo box contains the Work Item and Work Item Category dimensions. Choose this entry when you want to filter the set of work items by their associated categories. You use categories when your team projects contain types of work item that are similar but named differently. For more information, see [Use categories to group work item types](../../work/reference/use-categories-to-group-work-item-types.md).  
+ The **Work Item to Category** entry in the combo box contains the Work Item and Work Item Category dimensions. Choose this entry when you want to filter the set of work items by their associated categories. You use categories when your team projects contain types of work item that are similar but named differently. For more information, see [Use categories to group work item types](../../work/customize/reference/use-categories-to-group-work-item-types.md).  
   
  The following table describes the attributes in the Work Item Category dimension.  
   
@@ -270,7 +270,7 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
   
  ![Work Item Tree](_img/alm_rpt_workitemtree.png "ALM_RPT_WorkItemTree")  
   
- The following table describes the attributes in the Work Item Tree dimension. You use link types that are based on the tree topology to create multi-level, hierarchical relationships among work items. In addition to supporting multi-level, hierarchical views, hierarchical link types support directionality and restrict circular relationships. For more information, see [LinkTypes](../../work/reference/link-type-element-reference.md).  
+ The following table describes the attributes in the Work Item Tree dimension. You use link types that are based on the tree topology to create multi-level, hierarchical relationships among work items. In addition to supporting multi-level, hierarchical views, hierarchical link types support directionality and restrict circular relationships. For more information, see [LinkTypes](../../work/customize/reference/link-type-element-reference.md).  
   
 |Attribute|Description|  
 |---------------|-----------------|  
@@ -287,7 +287,7 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
   
 -   **Create work items**. Team members must create work items to manage the backlog of user stories or bugs, to track work by using tasks, and to manage test cases. Update the state of work items based on the process guidance for each type of work item.  
   
-     For more information, see [Agile work items and workflow](../../work/guidance/agile-process-workflow.md), [CMMI work items and workflow](../../work/guidance/cmmi-process-workflow.md), or [Scrum work items and workflow](../../work/guidance/scrum-process-workflow.md).  
+     For more information, see [Agile work items and workflow](../../work/work-items/guidance/agile-process-workflow.md), [CMMI work items and workflow](../../work/work-items/guidance/cmmi-process-workflow.md), or [Scrum work items and workflow](../../work/work-items/guidance/scrum-process-workflow.md).  
   
 -   **Link work items to other work items or changesets**. To track relationships between work items, team members must create links between, for example, user stories and tasks. Team members can create other useful links such as those between user stories and test cases, bugs and test cases, and changesets and user stories, tasks, and bugs. Team members can show relatedness, dependency, or hierarchy by specifying the appropriate type of link.  
   

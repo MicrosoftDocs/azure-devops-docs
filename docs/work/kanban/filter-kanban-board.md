@@ -76,7 +76,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 >[!TIP]  
 >Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f</span> to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
->For more tips, see [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).
+>For more tips, see [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
  
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
 

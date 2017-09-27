@@ -45,7 +45,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
      ![Analysis Services Data Cube Measure Groups](_img/rpt_measuregroups.png "RPT_MeasureGroups")  
   
--   [Reportable fields reference](../../work/reference/reportable-fields-reference.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
+-   [Reportable fields reference](../../work/customize/reference/reportable-fields-reference.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
   
 ## Tools for creating reports  
  You can access both the relational data warehouse and the Analysis Services cube to create highly customized reports by using these authoring tools.  

@@ -31,8 +31,8 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2016/193/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2016/194/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/user-guide/2016/193/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/user-guide/2016/194/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
 | | |
 
 ## Step-by-Step Tutorials
@@ -53,7 +53,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 * [FAQs for manual testing](reference-qa.md)
 * [REST API for test management](../integrate/index.md)
-* [Unable to connect](../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
+* [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
 
 ## Resources
 

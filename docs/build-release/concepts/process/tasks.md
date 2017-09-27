@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: alewis
-ms.date: 4/19/2017
+ms.date: 09/26/2017
 ---
 
 # Tasks for Build and Release

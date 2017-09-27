@@ -16,7 +16,7 @@ ms.date: 08/25/2017
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
-You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../about-teams-and-settings.md).
+You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../teams/about-teams-and-settings.md).
 
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
@@ -70,7 +70,7 @@ To create or modify areas or iterations, you must either be a member of the **Pr
 <a name="name-restrictions"></a>
 ## Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
 | Restriction type                 | Restriction                                 | 
 | -------------------------------- | ------------------------------------------- | 
@@ -98,7 +98,7 @@ You can't export the structure of tree paths for one team project to use with an
 <a name="field-rules"></a>
 ### Supported field rules (TFS)  
 
-You can [specify only a small subset of rules](../reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
+You can [specify only a small subset of rules](reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
 
 <a name="team-field"></a>

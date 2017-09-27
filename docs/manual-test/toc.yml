@@ -85,7 +85,7 @@
   - name: FAQs
     href: reference-qa.md
   - name: Unable to connect
-    href: ../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
+    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Get Stakeholder feedback

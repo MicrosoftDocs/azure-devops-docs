@@ -23,7 +23,7 @@ Customizations you make occur at one of three levels:
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
 
 >[!NOTE]  
->If you're new to tracking work in VSTS and TFS, see [Get started with Agile tools to plan and track work](../overview.md). 
+>If you're new to tracking work in VSTS and TFS, see [Get started with Agile tools to plan and track work](../backlogs/overview.md). 
 
 
 
@@ -118,14 +118,14 @@ The following table summarizes the differences between the three supported proce
 </tr>
 
 <tr>
-<td align="left">Update Microsoft field mappings using the [**TFSFieldMapping**](../reference/upload-or-download-the-microsoft-project-mapping-file.md) command-line tool</td>
+<td align="left">Update Microsoft field mappings using the [**TFSFieldMapping**](reference/upload-or-download-the-microsoft-project-mapping-file.md) command-line tool</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
-<td align="left">Use the [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit team projects</td>
+<td align="left">Use the [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit team projects</td>
 <td> </td>
 <td> </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -172,7 +172,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (VSTS)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+> |- [Add team members (VSTS)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
 
 <a id="test-experience"></a>
@@ -180,14 +180,14 @@ Otherwise, to grant or restrict access to select features or functions, review o
 
 Several WITs support the test experience within the web portal Test hub and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
-  ![Test management work item types](../guidance/_img/ALM_PT_WITS_TestExperience.png)
+  ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
 
 See the following resources for additional usage and customization information:
 
 - [Test configurations and test variables](../../manual-test/test-different-configurations.md)  
-- [Test resolution states](../reference/witadmin/tcm-customize-manage-test-experience.md) (TFS)
-- [Failure types](../reference/witadmin/tcm-customize-manage-test-experience.md)  
-- [Define the initial test management configuration (process template)](../reference/process-templates/define-initial-configuration-test-manager.md)
+- [Test resolution states](reference/witadmin/tcm-customize-manage-test-experience.md) (TFS)
+- [Failure types](reference/witadmin/tcm-customize-manage-test-experience.md)  
+- [Define the initial test management configuration (process template)](reference/process-templates/define-initial-configuration-test-manager.md)
 - [Query based on build and test integration fields](../track/build-test-integration.md)
 
 <a id="person-name-field"></a>
@@ -200,9 +200,9 @@ You can only perform the following customizations when working with the Hosted X
 <a id="limits">  </a>
 ### Backlog and board limits (Hosted XML, On-premises XML) 
 
-To limit the display load time to acceptable parameters, the task board is restricted to a maximum of 1000 work items. For details, see [Process configuration XML element reference](../reference/process-configuration-xml-element.md). 
+To limit the display load time to acceptable parameters, the task board is restricted to a maximum of 1000 work items. For details, see [Process configuration XML element reference](reference/process-configuration-xml-element.md). 
 
-You can increase this value up to a maximum of 1500 by specifying a value for the `workItemCountLimit` attribute of the **TaskBacklog** element. For details, see [Process configuration XML element reference](../reference/process-configuration-xml-element.md#backlog_page). 
+You can increase this value up to a maximum of 1500 by specifying a value for the `workItemCountLimit` attribute of the **TaskBacklog** element. For details, see [Process configuration XML element reference](reference/process-configuration-xml-element.md#backlog_page). 
 
     <TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="800" >
     . . .
@@ -214,7 +214,7 @@ You can increase this value up to a maximum of 1500 by specifying a value for th
 
 You can change the work item fields that are used in calculating capacity, burndown charts, forecasting, and velocity. Any change you make to one of the default assignments should correspond to a change made to the WIT used to define and capture information for that value. 
 
-For example, if you change the `refname` assigned to `type="Activity"` then you should include the same field in the WIT definition assigned to the Task Category which captures the activity information. For details, see [Process configuration XML element reference](../reference/process-configuration-xml-element.md#fields). 
+For example, if you change the `refname` assigned to `type="Activity"` then you should include the same field in the WIT definition assigned to the Task Category which captures the activity information. For details, see [Process configuration XML element reference](reference/process-configuration-xml-element.md#fields). 
 
 The fields you assign are used by the following tools: 
 

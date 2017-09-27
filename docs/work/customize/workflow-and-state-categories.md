@@ -29,7 +29,7 @@ The natural progressions and regressions of the user story, product backlog item
 > [!div class="mx-tdBreakAll"]  
 > |User Story, Agile process  |Product backlog item, Scrum process |Requirement, CMMI process  |  
 > |-------------|----------|---------| 
-> |<img src="../guidance/_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />|<img src="../guidance/_img/ALM_PT_Scrum_WF_PBI.png" title="Product backlog item workflow states, Scrum process template" style="padding-left:20px;" alt="Product backlog item workflow states, Scrum process template" />|<img src="../guidance/_img/ALM_PT_CMMI_WF_Requirement.png" title="Requirement workflow states, CMMI process " style="padding-left:20px;" alt="Requirement workflow states, CMMI process " /> |
+> |<img src="../work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />|<img src="../work-items/guidance/_img/ALM_PT_Scrum_WF_PBI.png" title="Product backlog item workflow states, Scrum process template" style="padding-left:20px;" alt="Product backlog item workflow states, Scrum process template" />|<img src="../work-items/guidance/_img/ALM_PT_CMMI_WF_Requirement.png" title="Requirement workflow states, CMMI process " style="padding-left:20px;" alt="Requirement workflow states, CMMI process " /> |
 
 
 <a id="state-categories">  </a>  
@@ -117,7 +117,7 @@ To learn more about process models, see [Customize your work tracking experience
 ## Related notes
 
 - [Lead Time and Cycle Time control charts (widgets)](../../report/guidance/cycle-time-and-lead-time.md)
-- [Customize a workflow for a process (Inheritance process model)](../process/customize-process-workflow.md)
-- [Change the workflow for a work item type](../reference/change-workflow-wit.md)
-- [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md)
+- [Customize a workflow for a process (Inheritance process model)](process/customize-process-workflow.md)
+- [Change the workflow for a work item type](reference/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md)
 - [Customize your work tracking experience](customize-work.md) 

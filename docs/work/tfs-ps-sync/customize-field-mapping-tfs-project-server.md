@@ -59,7 +59,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 |Finish Date|Task Finish|Resource Finish|Task and User Story|Task and Requirement|None|  
   
 ###  <a name="scrummodifications"></a> Required changes to make when mapping to a team project that was created from the Scrum process template  
- There are two changes you must make to enable data flow from a team project created from a [Scrum process](../guidance/scrum-process.md) process template. You must add the Completed Work and Original Estimate fields to the Task work item type, and you must remove the elements that require the Remaining Work field to be empty when a team member changes the state to **Done** or **Removed**.  
+ There are two changes you must make to enable data flow from a team project created from a [Scrum process](../work-items/guidance/scrum-process.md) process template. You must add the Completed Work and Original Estimate fields to the Task work item type, and you must remove the elements that require the Remaining Work field to be empty when a team member changes the state to **Done** or **Removed**.  
   
 ##### To update the Scrum task type definition  
   
@@ -115,12 +115,12 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 9. Refresh your team project or work items page to verify the changes.  
   
- For more information, see [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx), [Modify a field or add a custom field](../customize/add-modify-field.md), and [Design and customize a work item form](../reference/design-work-item-form.md).  
+ For more information, see [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx), [Modify a field or add a custom field](../customize/add-modify-field.md), and [Design and customize a work item form](../customize/reference/design-work-item-form.md).  
   
 ##  <a name="dadditional"></a> Determine additional fields to map  
  Determine the following information for each field that you want to synchronize in addition to the default fields:  
   
--   The reference name of the TFS field. If you want to synchronize a field in Project Server with a field that you must create in TFS, first create the field in each type of work item that you are synchronizing. For more information, see [Index of work item fields](..//guidance/work-item-field.md) and [Modify a field or add a custom field](../customize/add-modify-field.md).  
+-   The reference name of the TFS field. If you want to synchronize a field in Project Server with a field that you must create in TFS, first create the field in each type of work item that you are synchronizing. For more information, see [Index of work item fields](../work-items/guidance/work-item-field.md) and [Modify a field or add a custom field](../customize/add-modify-field.md).  
   
 -   The name of the field in Project Server that will update the TFS field. For a list of available fields, see [Restrictions on mapping fields](restrictions-mapping-ps-fields.md).  
   

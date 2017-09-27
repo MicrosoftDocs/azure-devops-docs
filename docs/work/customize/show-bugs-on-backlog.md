@@ -22,7 +22,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 
 >[!NOTE]  
 >If you want to track custom WITs on your backlogs or boards, you can.<br/>
-> - For VSTS and the Inheritance process model, see [Customize your backlogs or boards for a process](../process/customize-process-backlogs-boards.md).   
+> - For VSTS and the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process-backlogs-boards.md).   
 > - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 >  
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  

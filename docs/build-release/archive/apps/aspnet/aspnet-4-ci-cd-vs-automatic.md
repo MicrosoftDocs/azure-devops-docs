@@ -40,7 +40,7 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../../../connect/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect to your team project](../../../../user-guide/connect-team-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 

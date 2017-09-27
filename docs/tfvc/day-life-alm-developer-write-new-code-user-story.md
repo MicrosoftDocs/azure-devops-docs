@@ -35,7 +35,7 @@ In **Team Explorer**, Peter opens the **My Work** page. The team has agreed that
  ![To Do List on My Work Page in Team Navigator](_img/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
 
 1.  In **Team Explorer**:  
-    1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../connect/connect-team-projects.md).  
+    1.  If you are not already connected to the team project that you want to work in, then [connect to the team project](../user-guide/connect-team-projects.md).  
     2.  Choose ![Home icon](_img/day-life-alm-developer-write-new-code-user-story/IC547418.png) **Home**, and then choose ![My Work icon](_img/day-life-alm-developer-write-new-code-user-story/IC588354.png) **My Work**.  
 2.  On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
 

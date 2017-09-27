@@ -40,7 +40,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	The features listed depend on the TFS version of software installed. To get the latest features, upgrade your server to the latest version. 
 
-	If Test Plan and Test Suite are not configured, you'll need to [manually import the WIT definitions and migrate data](../reference/update-a-team-project-manually-to-support-test-management.md).  
+	If Test Plan and Test Suite are not configured, you'll need to [manually import the WIT definitions and migrate data](reference/update-a-team-project-manually-to-support-test-management.md).  
 
 	If you don't see the **Configure Features** link, you can start using the [new features](new-features-added.md) as they're already enabled.
 
@@ -67,11 +67,11 @@ When this occurs, you'll need to perform some manual updates according to one of
 
 *	If your team project is based on a process template other than those that TFS provides, [update the customized process template used to create the team project](update-customized-process-template.md), and then run the Configure Features wizard. 
 
-	TFS process templates correspond to Scrum, Agile, and CMMI  as described in [Choose a process](../guidance/choose-process.md).
+	TFS process templates correspond to Scrum, Agile, and CMMI  as described in [Choose a process](../work-items/guidance/choose-process.md).
 
 * If your team project has been heavily customized, but not the process template, [add the new features manually](add-features-manually.md). 
 
-* If your team project was based on a v4.2 or earlier process template version, first [apply the updates to comply with TFS 2012 manually](../reference/update-a-team-project-v4-dot-2-process-template.md). Then run the Configure Features wizard.
+* If your team project was based on a v4.2 or earlier process template version, first [apply the updates to comply with TFS 2012 manually](reference/update-a-team-project-v4-dot-2-process-template.md). Then run the Configure Features wizard.
 
 ##Try this next
 You'll be able to start using several of the new features after they've been enabled. However, a few features require [additional configuration, or provide configuration options](additional-configuration-options.md).  
@@ -96,7 +96,7 @@ See the following resources as they relate to updating your team project:
 - [Add features using a manual update process](add-features-manually.md)
 - [Before you upgrade TFS](upgrade-tfs-2008-or-2010.md)
 - [Additional configuration options](additional-configuration-options.md)
-- [Changes made to process templates to support new features](../guidance/changes-to-process-templates.md)
+- [Changes made to process templates to support new features](../work-items/guidance/changes-to-process-templates.md)
 
 If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 
@@ -111,7 +111,7 @@ If the team projects were created from the same process template, you should be 
 
 ###Resolve warning or error messages related to the update of test management artifacts
 
-See [Manual updates to support test plans and test suites](../reference/update-a-team-project-manually-to-support-test-management.md).
+See [Manual updates to support test plans and test suites](reference/update-a-team-project-manually-to-support-test-management.md).
 
 ###Understand how  the Configure Features wizard works 
  
@@ -121,7 +121,7 @@ Here's what the Configure Features wizard does:
 
 1. Scans the definitions in the team project to determine which features are and aren't configured.  
 2. Determines which process template stored in the team project collection contains the best match of definitions to configure missing features.  
-3. For each feature that can be configured, uploads the definitions for new objects or modifies existing definitions. To learn how the wizard configures each specific feature, see [Changes made to process templates](../guidance/changes-to-process-templates.md).
+3. For each feature that can be configured, uploads the definitions for new objects or modifies existing definitions. To learn how the wizard configures each specific feature, see [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md).
 
 
 ###Required objects used by the Configure Features wizard  

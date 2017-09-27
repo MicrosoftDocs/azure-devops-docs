@@ -164,6 +164,6 @@ Test planning reports support monitoring the test progress and coverage of backl
 **A:**  See [Bulk modify work items](../../work/backlogs/bulk-modify-work-items.md).
 
 ###Q: Do you want to add a field to track additional data?
-**A:**  See [Add or modify a work item field to support reporting](../../work/reference/add-or-modify-work-item-fields-to-support-reporting.md).  
+**A:**  See [Add or modify a work item field to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md).  
 
 <!-- ENDSECTION -->

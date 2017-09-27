@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
 <a name="groups"></a>
 ## Groups
@@ -549,7 +549,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 ### Collection-level permissions
 
-You manage collection-level permissions through the [web portal admin context](../connect/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+You manage collection-level permissions through the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
 
 <table valign="top" width="100%">
@@ -618,7 +618,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../work/process/manage-process.md).
+			Can [create an inherited process](../work/customize/process/manage-process.md).
 			<blockquote>
 				Applies to VSTS only, not TFS.
 			</blockquote>
@@ -627,7 +627,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../work/process/manage-process.md).
+			Can [delete an inherited process](../work/customize/process/manage-process.md).
 			<blockquote>
 				Applies to VSTS only, not TFS.
 			</blockquote>
@@ -680,7 +680,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../work/process/customize-process.md).
+			Can edit a [custom inherited process](../work/customize/process/customize-process.md).
 			<blockquote>
 				Applies to VSTS only, not TFS.
 			</blockquote>
@@ -745,7 +745,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 ### Project-level permissions
 
-You manage project-level permissions from the [web portal admin context](../connect/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
+You manage project-level permissions from the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
 
 <table valign="top" width="100%">
@@ -1347,7 +1347,7 @@ In version control permissions, explicit deny takes precedence over administrato
 
 ### Area path permissions (object-level)     
 
-You manage the security of each area path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1466,9 +1466,9 @@ When that's the case, you can set up teams that are associated with an area.
 Permissions for the team's work items are assigned by assigning permissions to the area. 
 There are other [team settings](../work/scale/manage-team-assets.md) 
 that configure the team's agile planning tools.
-<p>To learn more, see [Set permissions to restrict access to work items](../work/how-to/set-permissions-access-work-tracking.md).</p>
+<p>To learn more, see [Set permissions to restrict access to work items](../security/set-permissions-access-work-tracking.md).</p>
 
-You manage the security of each iteration path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#iteration-permissions). 
+You manage the security of each iteration path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#iteration-permissions). 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a team project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.
 
 Iteration level permissions grant or restrict access to create and manage iteration paths.

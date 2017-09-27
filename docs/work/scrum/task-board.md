@@ -34,9 +34,9 @@ In this topic you'll learn how to:
 
 
 >[!NOTE]
->Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
+>Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 >
->In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items).
+>In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 
 <a id="review-progress">  </a>
@@ -48,7 +48,7 @@ During your daily Scrum, you can filter your task board to help focus on items o
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 >[!TIP]    
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+>If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 
 
@@ -141,7 +141,7 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../customize/customize-cards.md)    |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).     
+See also [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).     
 
 
 ### Customize the task board 
@@ -150,8 +150,8 @@ Each team can customize their task board in the following ways:
 - [Show bugs on the task board](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
    
 An administrator can customize the task board for all teams in the following ways:    
-- [Add a custom workflow state to the task WIT for a process (Inheritance process model)](../process/customize-process-workflow.md), or [modify the workflow for the task WIT definition] (Hosted and On-premises XML process models)](../reference/change-workflow-wit.md).
-- [Add a custom work item type to the task board for a process (Inheritance process model)](../process/customize-process-backlogs-boards.md), or [add a work item type to a backlog and board] (Hosted and On-premises XML process models)](../customize/add-wits-to-backlogs-and-boards.md).
+- [Add a custom workflow state to the task WIT for a process (Inheritance process model)](../customize/process/customize-process-workflow.md), or [modify the workflow for the task WIT definition] (Hosted and On-premises XML process models)](../customize/reference/change-workflow-wit.md).
+- [Add a custom work item type to the task board for a process (Inheritance process model)](../customize/process/customize-process-backlogs-boards.md), or [add a work item type to a backlog and board] (Hosted and On-premises XML process models)](../customize/add-wits-to-backlogs-and-boards.md).
 
  
 <a id="reduce-task-board-items">  </a> 

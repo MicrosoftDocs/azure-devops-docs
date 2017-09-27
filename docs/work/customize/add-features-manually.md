@@ -21,7 +21,7 @@ ms.date: 03/16/2017
 You can update team projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. You should update team projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
 
 >[!NOTE]   
->If you're upgrading a team project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a team project based on a MSF v4.2 process template](../reference/update-a-team-project-v4-dot-2-process-template.md). If you have several team projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
+>If you're upgrading a team project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md). If you have several team projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
 
 
 ##Update a team project 
@@ -78,7 +78,7 @@ My Work
 <li>[Update ProcessConfiguration](#update-processconfig): Add the ```BugWorkItems``` section and verify or add custom state-to-metastate mappings to the ```BugWorkItems``` section</li>
 <li>To verify, [check in a code fix and check that the bug state automatically updates](https://msdn.microsoft.com/library/hh474795.aspx#bug_investigate).</li>
 </ol>
-<blockquote style="font-size: 13px">**Note:** If you use other WITs to support bug tracking or you've customized the workflow for the WITs you include in the Bug Category, see [Support bug update status using My Work](../reference/support-bug-update-status-using-my-work.md).</blockquote>
+<blockquote style="font-size: 13px">**Note:** If you use other WITs to support bug tracking or you've customized the workflow for the WITs you include in the Bug Category, see [Support bug update status using My Work](reference/support-bug-update-status-using-my-work.md).</blockquote>
 </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ Planning Tools
 <ul>
 <li>Add fields that support planning tools to WITs that you include for the Requirement Category, Task Category, and Bug Category  </li>
 <li>Edit the workflow of WITs that you include for the Requirement Category, Task Category, and Bug Category to support any-to-any transitions; add Removed state if not present. <br/>
-If you're upgrading a team project that was based on version 5.0 of the Microsoft Solutions Framework (MSF) Agile process template, follow the procedures provided in [Update the workflow for agile team projects](../reference/update-the-workflow-for-agile-team-projects.md).  </li>
+If you're upgrading a team project that was based on version 5.0 of the Microsoft Solutions Framework (MSF) Agile process template, follow the procedures provided in [Update the workflow for agile team projects](reference/update-the-workflow-for-agile-team-projects.md).  </li>
 </ul>
 </li>
 <li>[Update Categories](#update-categories): 
@@ -271,11 +271,11 @@ The quickest way to make many of these updates is to copy definition files from 
 
 2.	Open the Process Template Manager from the **Team, Team Project Collection Settings** menu. 
 
-	 ![Open Process Template Manager](../guidance/_img/open-process-template-manager.png)
+	 ![Open Process Template Manager](../work-items/guidance/_img/open-process-template-manager.png)
 
 	You'll see a list of each process template that has been uploaded to the team project collection.  
 
-	 ![Select process template to work with](../guidance/_img/process-template-manager.png)
+	 ![Select process template to work with](../work-items/guidance/_img/process-template-manager.png)
 
 	The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
  
@@ -283,9 +283,9 @@ The quickest way to make many of these updates is to copy definition files from 
 
 	Choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
  
-You can determine which process template to select based on the [work item types defined for your existing team project](../guidance/manage-process-templates.md#wit_correlation).
+You can determine which process template to select based on the [work item types defined for your existing team project](../work-items/guidance/manage-process-templates.md#wit_correlation).
 
-To learn more about managing process templates, see, [Upload or download a process template](../guidance/manage-process-templates.md).
+To learn more about managing process templates, see, [Upload or download a process template](../work-items/guidance/manage-process-templates.md).
 
 <a id="import-wit">   </a>
 
@@ -432,7 +432,7 @@ Depending on the customizations that you've made and the features you want to en
 ##Update Categories  
 
 >[!TIP]  
->See also [Use categories to group work items](../reference/use-categories-to-group-work-item-types.md) and [Import and export categories](../reference/witadmin/witadmin-import-export-categories.md).  
+>See also [Use categories to group work items](reference/use-categories-to-group-work-item-types.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).  
 
 1.	Export your categories file. 
 
@@ -462,7 +462,7 @@ Depending on the customizations that you've made and the features you want to en
  
 	```witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"```
 
-<blockquote style="font-size: 13px">**Additional resources:** [Use categories to group work items](../reference/use-categories-to-group-work-item-types.md), [Import and export categories](../reference/witadmin/witadmin-import-export-categories.md
+<blockquote style="font-size: 13px">**Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md
 )</blockquote>  
 
 <a id="update-processconfig">   </a>
@@ -478,7 +478,7 @@ Agile planning tools and Portfolio Backlogs depend on the WITs, categories, and 
 
 <p>If you don't have a ProcessConfiguration file, then copy the one from a default process template. ProcessConfiguration was introduced with TFS 2013 and replaced the CommonConfiguration and AgileConfiguration files.</p>
 </li>
-<li>Make the updates required to support your team project and add new features. If you've customized the workflow for WITs defined in the Requirement, Task, Bug, Epic, or Feature categories, review [Process configuration, Map workflow states to metastates](../reference/process-configuration-xml-element.md#map).  <br/>
+<li>Make the updates required to support your team project and add new features. If you've customized the workflow for WITs defined in the Requirement, Task, Bug, Epic, or Feature categories, review [Process configuration, Map workflow states to metastates](reference/process-configuration-xml-element.md#map).  <br/>
 
 <p>Here's a checklist of updates to make:</p>
 <table>
@@ -593,7 +593,7 @@ Add the ```Properties``` section.  For example: <br/>
 </ol>
 
 >[!TIP]  
->See also [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md). 
+>See also [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md). 
 
 
 <a id="run-tfsconfig">   </a>
@@ -645,9 +645,9 @@ See [Additional configuration options](additional-configuration-options.md) for 
 ##Related notes 
 You can learn more about the objects used to track work and support Agile tools from these topics:  
 
-- [Choose a process](../guidance/choose-process.md) 
+- [Choose a process](../work-items/guidance/choose-process.md) 
 - [Customize your work tracking experience](customize-work.md)
-- [Customize a process template](../reference/process-templates/customize-process.md) 
-- [Overview of process template files](../reference/process-templates/overview-process-template-files.md)
+- [Customize a process template](reference/process-templates/customize-process.md) 
+- [Overview of process template files](reference/process-templates/overview-process-template-files.md)
  
 If you need to rename a WIT, use **witadmin renamewitd** command to change the name, and then update the Categories definition file. See [Add or modify a work item type](add-modify-wit.md).

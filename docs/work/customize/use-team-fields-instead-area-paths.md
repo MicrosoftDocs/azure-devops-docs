@@ -111,7 +111,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     >[!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
-3.  Add the **Team** field to the [Layout section](../reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](../reference/weblayout-xml-elements.md) of the WIT definition. 
+3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
 
         <FORM>
         . . . 
@@ -205,9 +205,9 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 ##Related notes
 
 - [Add a team, add team members](../scale/multiple-teams.md)
-- [Customize a process template](../reference/process-templates/customize-process.md)  
-- [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
-- [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) 
+- [Customize a process template](reference/process-templates/customize-process.md)  
+- [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
+- [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md) 
 
 
 ### Q: Why don't teams that I add to a team project show up in the Team field?
@@ -222,7 +222,7 @@ Use the global list to add new teams and then configure them as described in [Co
 
 1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads/#team-foundation-server-2017).
 
-2.  [Download the process template](../guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
+2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
 	>[!IMPORTANT]  
 	>Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
@@ -240,7 +240,7 @@ Use the global list to add new teams and then configure them as described in [Co
 
 5.  As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
 
-6.  [Upload the process template](../guidance/manage-process-templates.md) that you just modified.
+6.  [Upload the process template](../work-items/guidance/manage-process-templates.md) that you just modified.
 
 7.  [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 

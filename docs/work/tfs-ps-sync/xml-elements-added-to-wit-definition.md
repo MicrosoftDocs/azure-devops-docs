@@ -64,7 +64,7 @@ ms.date: 01/12/2017
   
   
 ##  <a name="form"></a> Elements to add to the FORM section  
- To manually add the **Project Server** tab to a work item type, open the type definition file, find the `FORM` section, and then add the following syntax to the `TabGroup` section. For more information, see [Design the work item form](../reference/design-work-item-form.md).  
+ To manually add the **Project Server** tab to a work item type, open the type definition file, find the `FORM` section, and then add the following syntax to the `TabGroup` section. For more information, see [Design the work item form](../customize/reference/design-work-item-form.md).  
   
 > [!NOTE]
 >  You can assign any label to the `name` attribute for each `Control` element as long as the label is unique within the type definition. You use the `name` attribute when you want the same field to appear in more than one location on the form. Several fields on the **Project Server** tab appear elsewhere on the work item form. For more information, see [Control](https://msdn.microsoft.com/library/aa337625.aspx).  
@@ -115,5 +115,5 @@ ms.date: 01/12/2017
 ## Related notes  
  [Add or modify a field](../customize/add-modify-field.md)   
  [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx)   
- [Design the work item form](../reference/design-work-item-form.md)   
+ [Design the work item form](../customize/reference/design-work-item-form.md)   
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)

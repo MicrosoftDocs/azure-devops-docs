@@ -47,5 +47,5 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 
 - [Define features and epics](define-features-epics.md)
 - [Organize your backlog](organize-backlog.md)
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)  
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)  

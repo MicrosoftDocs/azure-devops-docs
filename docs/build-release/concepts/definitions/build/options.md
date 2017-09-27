@@ -120,7 +120,7 @@ You can also select if you want to assign the work item to the requestor. For ex
 | ```System.Title``` | ```Build $(Build.BuildNumber) failed``` |
 | ```System.Reason``` |  ```Build failure``` |
 
-**Q:** What other work item fields can I set? **A:**  [Work item field index](../../../../work/guidance/work-item-field.md)
+**Q:** What other work item fields can I set? **A:**  [Work item field index](../../../../work/work-items/guidance/work-item-field.md)
 
 
 ## Allow scripts to access the OAuth token

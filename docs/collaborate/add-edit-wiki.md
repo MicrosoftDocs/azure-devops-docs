@@ -54,7 +54,7 @@ Learn how to:
 	> 
 	> However, you can navigate to it from the URL `https://<AccountName>.visualstudio.com/DefaultCollection/_git/<TeamProjectName>.wiki`. 
 
-4.	A new page opens in which you can specify a title and add content. You author pages using [markdown format](../reference/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links as well as add rich formatted text.  
+4.	A new page opens in which you can specify a title and add content. You author pages using [markdown format](../collaborate/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links as well as add rich formatted text.  
 
 	<img src="_img/wiki/new-page-added.png" alt="Add a wiki page" style="border: 1px solid #CCCCCC;" /> 
 
@@ -145,7 +145,7 @@ To find a page, enter a title or keyword into the **Filter pages** box.
 
 ## Related notes
 
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../reference/markdown-guidance.md)  
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../collaborate/markdown-guidance.md)  
 - [Get Started with Git](../git/gitquickstart.md)
 - [Git repository permissions](../security/permissions.md#git-repository)
 

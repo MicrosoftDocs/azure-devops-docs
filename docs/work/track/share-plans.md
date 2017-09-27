@@ -74,7 +74,7 @@ In addition, if you have stakeholders who don't contribute code but want to cont
 
 To convey detailed information, you can format text and insert images inline within the description field or any HTML field type.   
 
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../process/customize-process.md), and the platform you work on.   
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../customize/process/customize-process.md), and the platform you work on.   
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
@@ -140,7 +140,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 2px solid #C3C3C3;" />  
 
 > [!TIP]    
-> From VSTS, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from VSTS and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach).  
+> From VSTS, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from VSTS and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../collaborate/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 

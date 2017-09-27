@@ -7,7 +7,7 @@ VSTS currently supports one team project collection.
 To create team projects, you'll need VSTS 
 project collection administrator or account owner permissions. 
 
-If you've [turned on the Account Landing preview](../connect/account-home-pages.md), 
+If you've [turned on the Account Landing preview](../user-guide/account-home-pages.md), 
 go to your **Projects** page (```https://{youraccount}.visualstudio.com/_projects```).
 
 Projects page:

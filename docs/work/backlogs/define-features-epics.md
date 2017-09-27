@@ -31,7 +31,7 @@ Use this topic to learn how to:
 > * Add features and epics  
 > * Add child items   
 
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).  
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
 >[!NOTE]  
 >**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
@@ -63,7 +63,7 @@ You can add epics in the same way. Simply open the Epics backlog.
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.
 
 >[!NOTE]  
->**Reminder:** The following screenshots illustrate the work item form for VSTS. Your forms may differ depending on what you have enabled, what process you chose when creating your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;and what platform you're working from, VSTS and TFS.  
+>**Reminder:** The following screenshots illustrate the work item form for VSTS. Your forms may differ depending on what you have enabled, what process you chose when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;and what platform you're working from, VSTS and TFS.  
 
 <img src="_img/org-backlog-feature-form-ts-new-nav.png" alt="Feature work item form, Agile process, Add details to a feature" style="border: 2px solid #C3C3C3;" /> 
  
@@ -145,7 +145,7 @@ For Scrum team projects, your hierarchy is as shown:
 
 Because [teams can also set bugs as tasks](../customize/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
-The work item types you'll see depends on the [process you selected to create your team project](../guidance/choose-process.md). 
+The work item types you'll see depends on the [process you selected to create your team project](../work-items/guidance/choose-process.md). 
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../customize/show-bugs-on-backlog.md). 
 
@@ -168,7 +168,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 
 > [!NOTE]
-> To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
+> To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
   
 
 

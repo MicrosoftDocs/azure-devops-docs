@@ -179,7 +179,7 @@ So now you've got an idea of how to use plans to create a project schedule view 
 
 For additional resources for working with multiple teams, see these additional topics: 
 
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Multiple teams](multiple-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Configure team settings](manage-team-assets.md)  
@@ -207,7 +207,7 @@ Plans are an object within a team project. You manage plan permissions for each 
 <a id="plans-keyboard-shortcuts">  </a>
 ### Plans view, keyboard shortcuts  
  
-From a Delivery Plan page, enter **?** to open the keyboard shortcuts pane. For additional shortcuts, see [hotkeys and keyboard shortcuts](../../reference/keyboard-shortcuts.md).
+From a Delivery Plan page, enter **?** to open the keyboard shortcuts pane. For additional shortcuts, see [hotkeys and keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
 
 <img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 2px solid #C3C3C3;" /> 
 

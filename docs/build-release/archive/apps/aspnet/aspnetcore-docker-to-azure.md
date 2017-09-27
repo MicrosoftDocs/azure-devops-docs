@@ -56,7 +56,7 @@ ms.date: 11/10/2016
 > 
 > Docker-enabled ASP.NET Core projects are supported only in Visual Studio 2017 RC.3 and higher.
 
-1. In Visual Studio, [connect first to a Team Project](../../../../connect/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect first to a Team Project](../../../../user-guide/connect-team-projects.md#visual-studio).
  
 1. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a Team Project first and using the command in Team Explorer, the new project is automatically added to source control in the Team Project.)
  

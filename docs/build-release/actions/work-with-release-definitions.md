@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: A38FB217-B259-4DD1-B5BF-D945278493C2
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/16/2017
+ms.date: 09/26/2017
 ---
 
 # How to: Work with release definitions

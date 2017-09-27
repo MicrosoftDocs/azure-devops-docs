@@ -48,4 +48,4 @@ ms.date: 09/05/2017
 ## Resources
 
 - [TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)
-- [TFS & SharePoint integration](../../ecosystem/sharepoint/index.md)
+- [SharePoint integration](../sharepoint-dashboards/index.md)

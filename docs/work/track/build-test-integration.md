@@ -73,7 +73,7 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 
 ## Build and test data fields  
 
-The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../reference/define-modify-work-item-fields.md).
+The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../customize/reference/define-modify-work-item-fields.md).
 
 To customize a field or pick list, see [Add or modify a field to support queries, reports, and workflow](../customize/add-modify-field.md).
 
@@ -265,7 +265,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 ## Related notes
 
-- [Work item field index](../guidance/work-item-field.md)  
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md)  
 - [Link and attachment queries](linking-attachments.md)

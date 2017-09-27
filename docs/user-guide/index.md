@@ -44,7 +44,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 - [Key concepts](concepts.md)    
 - [Source control](source-control.md)   
-- [Kanban & Agile tools](../work/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Kanban & Agile tools](../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
 - [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
 - [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
@@ -52,8 +52,8 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Reference
 - [Permissions and access](../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Keyboard shortcuts](../reference/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Markdown guidance](../reference/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Keyboard shortcuts](../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Markdown guidance](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 
 
 ## Resources

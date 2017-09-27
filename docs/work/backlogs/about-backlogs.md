@@ -17,18 +17,18 @@ You plan and track your project using the suite of Agile tools you access from t
 
 You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/) for an overview.
 
-<img src="../_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 2px solid #C3C3C3;" />  
 
-Most Agile tools are [scoped to a team](/vsts/work/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json). This supports team autonomy as well as scaling the system. 
+Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json). This supports team autonomy as well as scaling the system. 
  
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. Portfolio backlogs provide support for organizing work in a hierarchical fashion and tracking major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more. 
 
-[![Define stories](../_img/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](organize-backlog.md)
+[![Define stories](_img/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog](_img/overview/gs-planning-organize-backlog.png)](organize-backlog.md)
 
 ## Related notes
 
-You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
+You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 
 For an overview of all your customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
 

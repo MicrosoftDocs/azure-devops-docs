@@ -21,40 +21,40 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## 5-Minute Quickstarts  
  
-- [Add work items](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Drive Git development](/vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
+- [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
 
 ## Step-by-Step Tutorials
 
-- [Manage bugs](/vsts/work/backlogs/manage-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Manage issues](/vsts/work/backlogs/manage-issues-impediments?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Move, change, or delete items](/vsts/work/backlogs/remove-delete-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Copy/clone work items](/vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Link work items](/vsts/work/backlogs/add-link?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Bulk modify (web)](/vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Follow work](/vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Copy/clone work items](../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Link work items](../backlogs/add-link.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 
 
 ## Concepts 
 
-- [Agile process guidance](/vsts/work/guidance/agile-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [CMMI process guidance](/vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [Scrum process guidance](/vsts/work/guidance/scrum-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)         
+- [Agile process guidance](guidance/agile-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
+- [CMMI process guidance](guidance/cmmi-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
+- [Scrum process guidance](guidance/scrum-process.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)         
 - [Agile glossary](agile-glossary.md) 
 
 ## How-to Guides
-- [Use @mentions to further discussion](/vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Use work item form controls](/vsts/work/work-items/work-item-form-controls?toc=/vsts/work/work-items/toc.json)
-- [Add tags to work items](/vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json)
-- [Use work item templates](/vsts/work/backlogs/work-item-template?toc=/vsts/work/work-items/toc.json)
-- [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [Email/print work items](../how-to/email-work-items.md)      
-- [Bulk add or modify (Excel)](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
+- [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Use work item form controls](work-item-form-controls.md?toc=/vsts/work/work-items/toc.json)
+- [Add tags to work items](../track/add-tags-to-work-items.md?toc=/vsts/work/work-items/toc.json)
+- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json)
+- [Go mobile](../../collaborate/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
+- [Email/print work items](email-work-items.md)      
+- [Bulk add or modify (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/work-items/toc.json)
 
 ## Reference
 - [Work item form controls](work-item-form-controls.md)     
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)    
+- [Work item field index](guidance/work-item-field.md)    
   
 
 ## Resources 

@@ -55,7 +55,7 @@ Work items can be filtered by typing a keyword or using one or more of the field
 Fill out the comment box that appears when you turn the feature off. See also our [comprehensive feedback and support page](../../user-guide/provide-feedback.md).
 
 ## Related notes
-- [Work from the account home page](../../connect/account-home-pages.md)
+- [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
 
 

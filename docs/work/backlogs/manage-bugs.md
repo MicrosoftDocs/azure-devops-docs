@@ -47,13 +47,13 @@ You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team
 The bug work item form tracks similar information to the one shown for the Scrum process.  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). 
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). 
 
 
 #### VSTS | TFS 2017 (new form enabled)
 
  
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../process/new-work-item-experience.md). 
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 </div>
@@ -165,7 +165,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
  
 <sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../customize/customize-work.md). The customization method depends on the process model used by your team project. 
 
-For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../guidance/work-item-field.md). 
+For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
 Add and review comments made about the work being performed by going to the discussion section. 
@@ -274,12 +274,12 @@ Bug fixes that involve more than a single section of code may require significan
 
 ### Bug workflow lifecycle  
 
-Once you fix a bug, you should update its workflow State. State choices vary depending on the process you use&mdash;[Scrum](../guidance/scrum-process.md), 
-[Agile](../guidance/agile-process.md), or [CMMI](../guidance/cmmi-process.md). The following images illustrate the workflow lifecycle defined for the default bug workflow for the Agile, Scrum, and CMMI processes. 
+Once you fix a bug, you should update its workflow State. State choices vary depending on the process you use&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
+[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The following images illustrate the workflow lifecycle defined for the default bug workflow for the Agile, Scrum, and CMMI processes. 
 
 | Agile | Scrum | CMMI | 
 |------------|------------|-----------| 
-| ![Bug workflow states, Agile process template](../guidance/_img/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../guidance/_img/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../guidance/_img/ALM_PT_CMMI_WF_Bug.png) |  
+| ![Bug workflow states, Agile process template](../work-items/guidance/_img/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/_img/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/_img/ALM_PT_CMMI_WF_Bug.png) |  
 
 For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 

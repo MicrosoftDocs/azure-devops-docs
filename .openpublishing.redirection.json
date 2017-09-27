@@ -3415,6 +3415,71 @@
             "source_path": "docs/test/test-machines/install-configure-test-agents.md",
             "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
             "redirect_document_id": false
-        }
+       },
+       {
+            "source_path": "docs/work/how-to/email-work-items.md",
+            "redirect_url": "/vsts/work/work-items/email-work-items",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/how-to/set-column-options.md",
+            "redirect_url": "/vsts/work/backlogs/set-column-options",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/how-to/set-permissions-access-work-tracking.md",
+            "redirect_url": "/vsts/security/set-permissions-access-work-tracking",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/markdown-guidance.md",
+            "redirect_url": "/vsts/collaborate/markdown-guidance",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/keyboard-shortcuts.md",
+            "redirect_url": "/vsts/collaborate/keyboard-shortcuts",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/integration-bestpractices.md",
+            "redirect_url": "/vsts/collaborate/integration-bestpractices",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/naming-restrictions.md",
+            "redirect_url": "/vsts/collaborate/naming-restrictions",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/rate-limits.md",
+            "redirect_url": "/vsts/collaborate/rate-limits",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/reference/wiql-syntax.md",
+            "redirect_url": "/vsts/collaborate/wiql-syntax",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/about-sharepoint-integration.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/about-sharepoint-integration",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/configure-sharepoint-tfs-2017-earlier.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration",
+            "redirect_document_id": false
+       }
     ]
 }

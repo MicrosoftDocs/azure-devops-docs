@@ -22,13 +22,13 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 
 Here's an example:  
 
-<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  
 >Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
+>For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../collaborate/markdown-guidance.md#relative-links). 
 
 To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/add-team-administrator.md). 
 

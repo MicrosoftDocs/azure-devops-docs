@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: "About teams & Agile tools"
-    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Manage portfolios
@@ -42,13 +42,13 @@
     - name: Manage team notifications
       href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: "Scale & Configure Teams"

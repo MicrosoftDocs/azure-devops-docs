@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/07/2017
----     
+ms.date: 09/29/2017
+---    
 
 #  View and update work items via the mobile browser   
 
-**VSTS**
+**VSTS | TFS 2018**
 
 
 
 >[!NOTE]  
-><b>Feature availability: </b>The mobile browser is only available for VSTS at this time. To sign up for VSTS, go to [VSTS](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features of VSTS. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
+><b>Feature availability: </b>The mobile browser is available for VSTS and TFS 2018 and later versions. To sign up for VSTS, go to [VSTS](https://www.visualstudio.com/team-services/). To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features of VSTS. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
@@ -93,7 +93,7 @@ Then, click **Work items**.
 
 ![Click Work items](_img/mobile-work-click-work-items.png)
 
-The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../connect/account-home-pages.md). 
+The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../user-guide/account-home-pages.md). 
 
 <img src="_img/mobile-work-account-work-items-pages.png" alt="Mobile work item form, Change State action" style="border: 1px solid #CCCCCC;" />
 

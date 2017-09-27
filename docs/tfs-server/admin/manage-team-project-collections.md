@@ -91,7 +91,7 @@ Before creating a team project collection, jump to this [section to learn more a
 
     For the **Name**, specify a unique name with
     no more than 64 characters (the shorter the better), and don't
-    specify slashes, or other special characters listed in [Naming restrictions in Team Foundation](../../reference/naming-restrictions.md).
+    specify slashes, or other special characters listed in [Naming restrictions in Team Foundation](../../collaborate/naming-restrictions.md).
 
     The wizard supports configuration of the following resources. Some
     resources can only be configured if the application-tier server that
@@ -350,11 +350,11 @@ In addition, the following objects are managed at the collection level:
 -   **Source control (TFVC)**: [File types](https://msdn.microsoft.com/library/ms181457(v=vs.100).aspx)
     and [enabling/disabling asynchronous checkout in server workspaces](../../tfvc/decide-between-using-local-server-workspace.md).
 
--   **Work item tracking**: [Process templates](../../work/guidance/manage-process-templates.md),
+-   **Work item tracking**: [Process templates](../../work/work-items/guidance/manage-process-templates.md),
     [work item types](../../work/customize/add-modify-wit.md),
     [link types](https://msdn.microsoft.com/en-us/library/dd728085(v=vs.120).aspx),
     [work item fields](../../work/customize/add-modify-field.md),
-    [global lists](../../work/reference/define-global-lists.md),
+    [global lists](../../work/customize/reference/define-global-lists.md),
     and [global workflow](https://msdn.microsoft.com/en-us/library/gg534720(v=vs.120).aspx).
 
     All fields defined for all team projects defined within a collection

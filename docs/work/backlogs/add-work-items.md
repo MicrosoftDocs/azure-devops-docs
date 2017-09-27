@@ -27,17 +27,17 @@ You can start adding work items once you connect to a team project. If you don't
 Here we show how to add work items from the web portal. 
 
 >[!IMPORTANT]   
-><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new). 
+><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../customize/process/new-work-item-experience.md#switch-new). 
 
 1.  From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
 	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
-	>Depending on the process chosen when the team project was created&mdash;[Scrum](../guidance/scrum-process.md), 
-	[Agile](../guidance/agile-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+	>Depending on the process chosen when the team project was created&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
+	[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 	>
-	> For an overview of all three processes, see [Choose a process](../guidance/choose-process.md). 
+	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 	
 	Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 <!---
@@ -51,7 +51,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).
 
 That's it! 
 
@@ -86,6 +86,6 @@ For additional clients that you can use to add work items, see [Clients that sup
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more.  
 
-For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
 
 

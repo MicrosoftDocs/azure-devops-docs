@@ -114,7 +114,7 @@ You import data from the Analytics Service for VSTS into Power BI using a data c
 
 11. **Select relevant columns**. As you can see in the preview, the *Work Items - Today* table 
 	has many columns, one for each field available in any Work Item used in the project. 
-	Depending on the process  referenced by the team project&mdash;[Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), or [CMMI](../../work/guidance/cmmi-process.md)&mdash;the number of columns can be very large, reaching even hundreds. Of course, not all of them will be relevant to your reporting scenarios.
+	Depending on the process  referenced by the team project&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;the number of columns can be very large, reaching even hundreds. Of course, not all of them will be relevant to your reporting scenarios.
 
 	> [!TIP]
 	> By selecting only those columns of interest you decrease the load time, speed up queries, and make the data model easier to work with.

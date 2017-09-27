@@ -144,7 +144,7 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 2.  Identify the fields in Team Foundation and their reference field names to add to Project Server.  
   
-     For more information, see [Index of work item fields](../../work/guidance/work-item-field.md).  
+     For more information, see [Index of work item fields](../work-items/guidance/work-item-field.md).  
   
 3.  Modify the file that maps fields in Project Server.  
   

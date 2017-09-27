@@ -116,7 +116,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 	You'll see different column titles and choices based on the following:
 	
 	- You connect to VSTS or an on-premises TFS
-	- The [Process](../guidance/choose-process.md) you used to create your team project  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
 	**VSTS and TFS 2015.1 and later versions**  

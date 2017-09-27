@@ -18,8 +18,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 <!---
 ## Overview  
 
-[Backlogs, boards, and plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)  
-[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+[Backlogs, boards, and plans](backlogs-boards-plans.md)  
+[About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 -->
 
 
@@ -37,24 +37,24 @@ Build your backlog and then start driving your code development efforts.
 
 ## Concepts 
   
-- [Groom your backlog](/vsts/work/backlogs/best-practices-product-backlog?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)           
-- [About permissions and access](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Groom your backlog](best-practices-product-backlog.md)           
+- [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
-- [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Share work plans](../track/share-plans.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 
 ## How-to Guides
 
 
-* [[Filter product and portfolio backlogs](/vsts/work/backlogs/filter-backlogs?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-* [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-* [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-* [Define area paths](/vsts/work/customize/set-area-paths?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+* [[Filter product and portfolio backlogs](filter-backlogs.md)
+* [Change column options](set-column-options.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+* [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+* [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+* [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 
 
 ## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 
 
 ## Resources 

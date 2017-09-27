@@ -15,7 +15,7 @@ ms.date: 12/05/2016
 <b>VSTS | TFS 2018 | TFS 2017</b>  
 
 >[!IMPORTANT]  
-><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
+><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
 
@@ -32,12 +32,12 @@ You customize transformed WITs in much the same way as you have previously.  The
 
 Use this sequence when you use the On-premises XML process model, i.e., you manage your TFS work tracking customization  through import of individual XML definition files. 
 
-[![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](reference/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
 ### Import/export process zip files 
 Use this sequence when you use the Hosted XML process model, i.e., you manage your VSTS work tracking customization by importing a process or process template. 
 
-[![Export process](_img/cust-wit-form-export-process.png)](../import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
 
 The main difference is that there are now two main layout sections within the **FORM** node. The first section, contained within the **Layout** element, defines the form layout when viewed through a client such as Visual Studio. The second section, contained within the **WebLayout** element, defines the form layout when viewed through a web browser. 
@@ -55,9 +55,9 @@ The main difference is that there are now two main layout sections within the **
 
 See the following topics to make the indicated customizations: 
  
-- To customize the form for the web portal (**WebLayout** node), see [WebLayout and Control XML elements](../reference/weblayout-xml-elements.md)
-- To add a scoped links control to the form for the web portal (**LinksControlOptions**), see [LinksControlOptions XML elements](../reference/linkscontroloptions-xml-elements.md)
-- To customize the client form (**Layout** node), see [Layout XML elements](../reference/layout-xml-element-reference.md).
+- To customize the form for the web portal (**WebLayout** node), see [WebLayout and Control XML elements](reference/weblayout-xml-elements.md)
+- To add a scoped links control to the form for the web portal (**LinksControlOptions**), see [LinksControlOptions XML elements](reference/linkscontroloptions-xml-elements.md)
+- To customize the client form (**Layout** node), see [Layout XML elements](reference/layout-xml-element-reference.md).
 
 
 <a id="witadmin">  </a>  
@@ -77,7 +77,7 @@ See the following topics to make the indicated customizations:
 
     An example of a *CollectionURL* for a VSTS account is https://*MyAccountName*.visualstudio.com/DefaultCollection.
 
-4.  Edit the file. For details, see [WebLayout XML elements](../reference/weblayout-xml-elements.md).  
+4.  Edit the file. For details, see [WebLayout XML elements](reference/weblayout-xml-elements.md).  
 
 5.  Import the WIT definition file.  
 
@@ -87,7 +87,7 @@ See the following topics to make the indicated customizations:
 
     The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
 
-    For more information about using **witadmin**, see [Import, export, and manage work item types](../reference/witadmin/witadmin-import-export-manage-wits.md).
+    For more information about using **witadmin**, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md).
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
@@ -110,8 +110,8 @@ When the display width won't accommodate the columnar display of each section, s
 If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md). 
 
 - [Manage new form rollout](manage-new-form-rollout.md)
-- [New work item experience](../process/new-work-item-experience.md)
-- [WebLayout and Control XML elements](../reference/weblayout-xml-elements.md)
+- [New work item experience](process/new-work-item-experience.md)
+- [WebLayout and Control XML elements](reference/weblayout-xml-elements.md)
 
 
 ### Import warnings and errors

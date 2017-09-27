@@ -28,7 +28,7 @@ ms.date: 08/03/2017
 
 ## How-to Guides
 
-- [Assign permissions (Security)](/vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json)  
+- [Assign permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)  
 
 ### Power BI Content Pack 
 
@@ -40,19 +40,19 @@ ms.date: 08/03/2017
 ### Power BI Data Connector
  
 - [Connect to Power BI via the Data Connector](data-connector-connect.md)     
-- [Power BI desktop and OData aggregations](/vsts/report/analytics/using-odata-aggregations-with-power-bi-desktop?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
-- [Share reports, publish to PowerBI.com](/vsts/report/analytics/publishing-power-bi-desktop-to-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Power BI desktop and OData aggregations](../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Share reports, publish to PowerBI.com](../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 
   
 ## Reference
 - [Power BI available data](vso-pbi-whats-available-vs.md)    
 - [Data Connector available functions](data-connector-functions.md)    
-- [Analytics Service overview](/vsts/report/analytics/overview-analytics-service?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Analytics Service overview](../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 
 
 ## Resources 
   
-- [Dashboards, charts, & widgets](/vsts/report/index)  
+- [Dashboards, charts, & widgets](../index.md)  
 - [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
 - [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
 - [Insights Lab Power BI Widget](https://marketplace.visualstudio.com/items?itemName=InsightsLab.powerbiWidget) 

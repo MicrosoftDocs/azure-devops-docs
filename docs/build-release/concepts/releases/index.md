@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/16/2017
+ms.date: 09/26/2017
 ---
 
 # Releases in Release Management

@@ -29,7 +29,7 @@ You add iteration paths under this root. To understand how the system uses area 
 
 From the web portal, open the admin page for the team project.
 
-You define both areas and iterations from the Work hub of the team project admin context. From the user context,you open the admin context by clicking the ![gear icon](../../connect/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
+You define both areas and iterations from the Work hub of the team project admin context. From the user context,you open the admin context by clicking the ![gear icon](../../user-guide/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
 
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
@@ -214,7 +214,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 <a name="name-restrictions"></a>
 ### Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
 | Restriction type                 | Restriction                                 | 
 | -------------------------------- | ------------------------------------------- | 

@@ -39,7 +39,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="portal_enabled"></a> Determine if your team project portal is enabled  
  If you cannot access Excel reports or dashboards, you might want to verify whether a portal has been enabled for your team project.  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](../../connect/connect-team-projects.md).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](../../user-guide/connect-team-projects.md).  
   
 2.  Open Portal Settings.  
   
@@ -135,7 +135,7 @@ The project portal is a site associated with a team project for the purposes of 
   
 ## Related notes 
 
-The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//work/guidance/choose-process.md).  
+The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//work/work-items/guidance/choose-process.md).  
   
 - [SharePoint Online Tutorial](http://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
 

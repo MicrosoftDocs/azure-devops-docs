@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Ecosystem
+  - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=ecosystem
+    topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Technical Articles
       tocHref: /vsts/

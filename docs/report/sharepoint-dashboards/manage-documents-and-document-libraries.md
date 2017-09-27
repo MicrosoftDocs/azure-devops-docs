@@ -20,7 +20,7 @@ You can share documents and files that you want to make available to all team me
   
  You can view documents by double-clicking them. You can also upload, delete, move, and perform other tasks on the documents, libraries, and folders.  
   
- When you create a team project, the process template that you use determines the default names and content of the folders that are located under the **Documents** node of Team Explorer. For a description of the documents that are provided with the Microsoft Solutions Framework (MSF) process templates, see [Agile process template](../../work/guidance/agile-process.md) or [CMMI process template](../../work/guidance/cmmi-process.md). You can add other folders to the Documents node. The folders and subfolders always appear in alphabetical order.  
+ When you create a team project, the process template that you use determines the default names and content of the folders that are located under the **Documents** node of Team Explorer. For a description of the documents that are provided with the Microsoft Solutions Framework (MSF) process templates, see [Agile process template](../../work/work-items/guidance/agile-process.md) or [CMMI process template](../../work/work-items/guidance/cmmi-process.md). You can add other folders to the Documents node. The folders and subfolders always appear in alphabetical order.  
   
  You can use Team Explorer or your project portal to manage documents and document libraries. For information about how to manage documents in the project portal, see the help information that is provided for SharePoint Products.  
   
@@ -82,7 +82,7 @@ You can share documents and files that you want to make available to all team me
 2.  Right-click the target folder, and then click **Paste**.  
   
     > [!NOTE]
-    >  If you create a list of work items as a document in one team project and then move or copy that list to another team project, the bindings and references in that list continue to the first team project. For example, if a list of work items is contained in a Microsoft Excel (.xls) or Microsoft Project (.mpp) file, these files continue to be bound to the team project where the work items are defined. If you move the files to another team project, you do not change the server bindings. For information about how to change the server to which a document is bound, see [Connect Excel or Project to a team project](../../connect/connect-team-projects.md).  
+    >  If you create a list of work items as a document in one team project and then move or copy that list to another team project, the bindings and references in that list continue to the first team project. For example, if a list of work items is contained in a Microsoft Excel (.xls) or Microsoft Project (.mpp) file, these files continue to be bound to the team project where the work items are defined. If you move the files to another team project, you do not change the server bindings. For information about how to change the server to which a document is bound, see [Connect Excel or Project to a team project](../../user-guide/connect-team-projects.md).  
   
 #### To delete a document or folder  
   
@@ -105,4 +105,4 @@ You can share documents and files that you want to make available to all team me
     >  You cannot change the file name extension for a document by using Team Explorer or the project portal.  
   
 ## Related notes  
- [Work in Team Explorer](../../connect/work-team-explorer.md)
+ [Work in Team Explorer](../../user-guide/work-team-explorer.md)

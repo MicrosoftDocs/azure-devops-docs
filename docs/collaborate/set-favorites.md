@@ -44,7 +44,7 @@ Delivery Plans requires installation of the [Delivery Plans extension](../work/s
 
 ## Favorite a code repository
 
-From your web browser, open the **Code** hub, open the repository menu and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the repository you want to favorite. 
+From your web browser, open the **Code** hub, open the repository menu and click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the repository you want to favorite. 
 
 <img src="_img/set-favorites-repository.png" alt="Web portal, Code, Favorite a repo" style="border: 1px solid #CCCCCC;" />
 
@@ -62,11 +62,11 @@ From your web browser, open the **Work** hub, Queries page. Next, open  the cont
 
 ## Favorite a Delivery Plan 
 
-To mark a Delivery Plan as a favorite, open the **Work>Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the Delivery Plan.
+To mark a Delivery Plan as a favorite, open the **Work>Plans** page and click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the Delivery Plan.
 
 ## Favorite a test plan    
 
-To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
 
 ## Favorite a team or team project   
@@ -77,9 +77,9 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 
 0. You'll see something similar to the following welcome page.
 
-	<img src="../connect/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
+	<img src="../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
 
-0. From the **Projects** page, click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the team or team project you want to favorite.  
+0. From the **Projects** page, click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the team or team project you want to favorite.  
 
 
 <a id="view-favorites">  </a>
@@ -87,7 +87,7 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 
 From your account hub, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
-<img src="../connect/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
 <a id="unfavorite">  </a>
 ## Unfavorite an object
@@ -116,6 +116,6 @@ From your team context, drag shared queries, builds, and folders to Team favorit
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Work effectively from the account home page](../connect/account-home-pages.md)
+> [Work effectively from the account home page](../user-guide/account-home-pages.md)
 > or
 > [Manage personal notifications](../notifications/manage-personal-notifications.md)

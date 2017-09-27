@@ -57,7 +57,7 @@ After you've run the build, you're ready to create a release definition to deplo
 
 <h3 id="new_solution">How do I create an Azure cloud service solution?</h3>
 
-0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
+0. In Visual Studio, [connect to your team project](../../../user-guide/connect-team-projects.md#visual-studio).
 
 0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 

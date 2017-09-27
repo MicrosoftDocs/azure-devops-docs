@@ -124,7 +124,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 -   You cannot change the hierarchical structure of work items after they have been linked to Project tasks. For more information, see [Summary Tasks, Task Hierarchy, and Submissions of Work Items that Are Nested at Multiple Levels](understand-how-updates-to-specific-fields-managed.md#updates_nested_tasks).  
   
--   Rules that have been added to a mapped work item type can result in validation errors when you publish the project plan. For example, a conditional rule can restrict what values users can assign to a field. For more information, see [Apply a field rule](../../work/reference/apply-rule-work-item-field.md).  
+-   Rules that have been added to a mapped work item type can result in validation errors when you publish the project plan. For example, a conditional rule can restrict what values users can assign to a field. For more information, see [Apply a field rule](../../work/customize/reference/apply-rule-work-item-field.md).  
   
 -   Basic rules, such as lookup tables, that correspond to definitions of fields in Project Server can cause errors during status synchronization. For example, an error will result if you use a lookup table to define valid values for a field in Project, map that field to a field in Team Foundation, and then set the field in Team Foundation to a value that is not in the lookup table.  
   

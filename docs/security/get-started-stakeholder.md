@@ -45,7 +45,7 @@ Use this topic to learn:
 <a id="create-work-item">  </a> 
 ## Add a work item
 
-You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/guidance/scrum-process.md), [Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md). 
+You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/work-items/guidance/scrum-process.md), [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). 
 
 
 >[!NOTE]  
@@ -72,13 +72,13 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../work//how-to/switch-team-context-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../teams/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 	
 >[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 
-[Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
+[Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >	
-> For an overview of all three processes, see [Choose a process](../work/guidance/choose-process.md). 
+> For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 
 
 
 
@@ -135,7 +135,7 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 > [!div class="mx-tdBreakAll"]  
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
+> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  

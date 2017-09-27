@@ -40,7 +40,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
  ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
   
- The [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) process templates include the Build Status report in Excel. For more information, see [Build Status](../excel/build-status-excel-report.md).  
+ The [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) process templates include the Build Status report in Excel. For more information, see [Build Status](../excel/build-status-excel-report.md).  
   
 ### Pivot field selection and filters  
 

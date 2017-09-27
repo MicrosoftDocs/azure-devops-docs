@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 5C348EA7-3DC3-42E4-A66D-9A602441CDF3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 02/16/2017
+ms.date: 09/26/2017
 ---
 
 # How to: View and manage releases

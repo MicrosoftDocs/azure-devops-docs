@@ -30,7 +30,7 @@ Open a browser window and click the **Dashboards** hub. If you haven't been adde
 
 ![Open the Dashboards hub](_img/dashboards-go-to.png) 
 
-If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../user-guide/account-home-pages.md).  
 
 >[!NOTE]  
 ><b>Feature availability: </b> You can access the [widget catalog](widget-catalog.md) from the web portal for VSTS or TFS 2015.1 or later version. The widget catalog provides widgets for all tiles supported in previous releases of TFS for the team homepage. For on-premises TFS 2015, you can add select charts to the team home page using the [Pin to home page](team-dashboard.md) feature.   

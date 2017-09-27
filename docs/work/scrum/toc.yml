@@ -5,7 +5,7 @@
   - name: About Scrum
     href: scrum-overview.md
   - name: "Backlogs, boards, & plans"
-    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Schedule sprints
@@ -33,7 +33,7 @@
   - name: "Workflow states & state categories"
     href: /vsts/work/customize/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
-    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Agile glossary
     href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: How-to Guides
@@ -45,19 +45,19 @@
   - name: Bulk add or modify (Web)
     href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Change column options
-    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../backlogs/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc
+    href: ../../teams/switch-team-context.md?toc
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Work item field index
     href: /vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Keyboard shortcuts
-    href: ../../reference/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Backlogs

@@ -60,7 +60,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 	You'll see different column titles and choices based on the following:
 	
 	- You connect to VSTS or an on-premises TFS  
-	- The [Process](../guidance/choose-process.md) you used to create your team project  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md). 

@@ -57,6 +57,13 @@ Begin building your backlog by entering a title and click Add. Repeat this step 
   
 <img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 2px solid #C3C3C3;" />  
 
+
+>[!NOTE]  
+>Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+>
+>By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
 After you've got some items on your backlog, you can order them and create a prioritized list of work. Frequently reviewing and prioritizing your backlog can help your team know what's most important to deliver next.
@@ -149,7 +156,7 @@ With [Sprint planning](../scrum/sprint-planning.md), teams define a sprint sched
 -->
 
 >[!NOTE]  
->Depending on the process chosen to create your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;
+>Depending on the process chosen to create your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
 >By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
@@ -166,16 +173,16 @@ If you've already defined a long list of items, you don't have to reenter them o
 
 To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
-If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
+If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
  
 
 >[!NOTE]  
->Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).   
+>Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).   
 
 ### Treat bugs like requirements or tasks
 You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [task board](../scrum/task-board.md).
 
-If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a team project based on the [Agile or CMMI processes](../guidance/choose-process.md), bugs don't automatically appear on your backlog.
+If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a team project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs and then [change your team settings](../customize/show-bugs-on-backlog.md) accordingly.
 

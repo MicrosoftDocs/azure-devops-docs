@@ -114,7 +114,7 @@ ms.date: 01/12/2017
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
 |`field`||Specifies the field in Team Foundation to be mapped and how the field should be mapped.|  
-||`tfsName`|Specifies the reference name of the field in Team Foundation to synchronize. You must specify a field that is defined in the team project collection. You can list all fields in a collection by running the **witadmin listfields** command. For more information, see [Manage work item fields](../reference/witadmin/manage-work-item-fields.md)
+||`tfsName`|Specifies the reference name of the field in Team Foundation to synchronize. You must specify a field that is defined in the team project collection. You can list all fields in a collection by running the **witadmin listfields** command. For more information, see [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md)
 ).|  
 ||`tfsMirrorName`|Required. Specifies the reference name under which to store the value of the Project Server field in Team Foundation Server. You can prefix the reference name with "Mirror." For example, you can specify Mirror.System.Title for System.Title. **Note:**  Mirror fields that you specify are created automatically. You do not have to add mirror fields to the type definition of a work item.|  
 ||`displayTfsField`|Optional. By default, this attribute is set to **true**. If this attribute is set to **true**, the field appears on the **Project Server** tab of the work item form in Team Foundation. If this attribute is set to `false`, the field does not appear on the form. By default, only the Completed Work and Remaining Work fields appear on the form.|  

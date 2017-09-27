@@ -17,7 +17,7 @@ ms.topic: get-started-article
 
 
 >[!NOTE]  
-><b>Feature availability: </b>The Development section appears in the work item web form for VSTS and TFS 2017 or later versions, configured with the [new work item tracking experience](../process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../accounts/create-team-project.md#git-and-tfvs-repos).   
+><b>Feature availability: </b>The Development section appears in the work item web form for VSTS and TFS 2017 or later versions, configured with the [new work item tracking experience](../customize/process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../accounts/create-team-project.md#git-and-tfvs-repos).   
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -153,7 +153,7 @@ Learn more about tracking work with work items and developing with Git from thes
 - [Create your backlog](create-your-backlog.md)   
 
 > [!NOTE]     
-> To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../reference/linkscontroloptions-xml-elements.md#development-links-control).    
+> To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control).    
 
 Keep in mind that the Development section only appears when using the web portal for VSTS and TFS 2017 or later versions. The work item tracking experience and forms that appear in Visual Studio will be missing several of the features that the web portal makes available.  
 

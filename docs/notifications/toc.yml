@@ -6,15 +6,15 @@
     href: about-notifications.md
 - name: Quickstarts
   items:
-  - name: Unsubscribe from a notification
+  - name: View your subscriptions, opt-out as needed
     href: unsubscribe-default-notification.md
   - name: Change your preferred email address 
     href: change-email-address.md
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Set your personal notifications
+    href: ../collaborate/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Manage your personal notifications
     href: manage-personal-notifications.md
 - name: How-to Guides
   items:
@@ -23,7 +23,7 @@
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
   - name: Manage team notifications
-    href: /vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Get notified with Campfire
     href: ../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Get notified with Flowdock

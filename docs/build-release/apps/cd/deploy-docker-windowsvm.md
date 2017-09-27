@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/02/2017
+ms.date: 09/26/2017
 ---
 
 # Deploy a Docker-enabled app to a Windows VM

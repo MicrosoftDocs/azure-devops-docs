@@ -59,7 +59,7 @@ You can share your project vision and objective, as well as ways for team member
 
 To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) or have your Edit project-level information permission set to allow. 
 
-You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../git/create-a-readme.md) and [Markdown guidance](../reference/markdown-guidance.md). 
+You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../git/create-a-readme.md) and [Markdown guidance](../collaborate/markdown-guidance.md). 
 
 <img src="_img/project-home-page-sample-vs-code-readme.png" alt="Example project home page" style="border: 1px solid #CCCCCC;" />  
 
@@ -145,12 +145,12 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Work effectively from your account hub](../connect/account-home-pages.md)
+> [Work effectively from your account hub](../user-guide/account-home-pages.md)
 
 
 ## Related notes  
 
-- [Markdown guidance](../reference/markdown-guidance.md) 
+- [Markdown guidance](../collaborate/markdown-guidance.md) 
 
 
 

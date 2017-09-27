@@ -72,7 +72,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project.  
 
-	<img src="../connect/_img/ALM_CAL_OpenAdminPage.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
+	<img src="../user-guide/_img/ALM_CAL_OpenAdminPage.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 

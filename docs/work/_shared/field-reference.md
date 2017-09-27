@@ -2,11 +2,11 @@
 
 ### What is a field? How are field names used?  
 
-Each [work item type](../backlogs/add-work-items.md) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
+Each [work item type](/vsts/work/backlogs/add-work-items) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
 
 Each field supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can create queries to determine status and trends.    
 
-For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](../guidance/choose-process.md)&mdash;see [Work item field index](../guidance/work-item-field.md).  
+For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](/vsts/work/work-items/guidance/choose-process)&mdash;see [Work item field index](/vsts/work/work-items/guidance/work-item-field).  
 
 #### Field names  
 A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  

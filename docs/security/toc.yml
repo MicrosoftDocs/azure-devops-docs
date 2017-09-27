@@ -29,7 +29,7 @@
   - name: Set build and release permissions 
     href: /vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Set permissions and access for work tracking
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+    href: set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: "Set permissions for READMEs & Wikis"
     href: /vsts/collaborate/manage-readme-wiki-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Add accounts using streamlined user management (VSTS)

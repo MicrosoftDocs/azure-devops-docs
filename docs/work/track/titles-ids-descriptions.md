@@ -149,7 +149,7 @@ Title
 Work Item Type
   </td>
   <td>
-    <p>The name of the work item type. Work item types are defined based on the process used when you created your team project. For an overview, see [Choose process](../guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../customize/add-modify-wit.md). </p>
+    <p>The name of the work item type. Work item types are defined based on the process used when you created your team project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../customize/add-modify-wit.md). </p>
 <p>To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.   
 	<p>Reference name=System.WorkItemType, Data type=String</p>
   </td>
@@ -162,12 +162,12 @@ Work Item Type
 ####Notes:   
 
 0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
-0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../reference/witadmin/manage-work-item-fields.md).
+0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../customize/reference/witadmin/manage-work-item-fields.md).
 
 ## Related notes
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md)  
+- [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Create managed queries](example-queries.md)   
 
 <a id="category"/>

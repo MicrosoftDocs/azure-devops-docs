@@ -12,7 +12,7 @@ ms.author: elbatk
 
 # Add extensions in work item form via work item type definition xml
 
-A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walkthrough, you will add the page, group and control contibutions to the layout.  [Read more information on WebLayout XML](/vsts/work/reference/weblayout-xml-elements). In this example, we will add the control to the Agile "User Story" work item type.
+A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walkthrough, you will add the page, group and control contibutions to the layout.  [Read more information on WebLayout XML](/vsts/work/customize/reference/weblayout-xml-elements). In this example, we will add the control to the Agile "User Story" work item type.
 
 **Step 1:**  Install work item form extensions in TFS.
 

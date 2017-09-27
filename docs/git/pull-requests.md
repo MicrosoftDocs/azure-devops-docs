@@ -63,7 +63,7 @@ Pick the branch you wish to have reviewed and the branch you want to merge the c
 
 Create pull requests directly from Visual Studio. 
 
-0. [Connect to your Team Project from Visual Studio](../connect/connect-team-projects.md)
+0. [Connect to your Team Project from Visual Studio](../user-guide/connect-team-projects.md)
 0. Open Team Explorer (select **View**, then **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey)
 0. Select **Pull Requests** from the navigation drop-down menu or select the **Pull Requests** button.
 

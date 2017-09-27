@@ -26,7 +26,7 @@ Here we show how to add work items from the web portal.
 
 	The URL follows this pattern: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 
-	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](account-home-pages.md).  
 
 2.	From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -52,7 +52,7 @@ Or, [learn more about planning and tracking work](../work/work-items/index.md).
  
 
 >[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 
-[Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
+[Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all three processes, see [Choose a process](../work/guidance/choose-process.md). 
+> For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 

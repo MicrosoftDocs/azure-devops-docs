@@ -12,7 +12,7 @@ ms.date: 09/06/2017
 # Agile glossary 
 
 The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Agile tools on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms. See also: 
-- [Work item field index](../guidance/work-item-field.md)   
+- [Work item field index](guidance/work-item-field.md)   
 
 <!--- 
 <a id="object-definitions"></a>
@@ -26,7 +26,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 
 ## Agile tools
-A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods—Scrum and Kanban—used by software development teams today. Learn more: [About Agile tools and Agile project management](../overview.md).
+A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods—Scrum and Kanban—used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
 
 ## Area path
 A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
@@ -35,20 +35,20 @@ A node on the Common Structure Services hierarchy that represents a feature area
 A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
 
 ## Category
-Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). 
+Groups one or more work item types to support flexible reporting, queries, and other functions made available through Agile tools. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../customize/reference/use-categories-to-group-work-item-types.md). 
 
 ## Delivery plan 
  
 A configurable view that displays work from multiple teams and projects laid out within a calendar based on each team's iterations. Each row in the view represents the work from a team's product or portfolio backlog, with each card corresponding to a work item&mdash;user story, feature, or epic. Learn more: [Review team delivery plans](../scale/review-team-plans.md).
 
 ## Field 
-Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../guidance/work-item-field.md).   
+Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
 
 ## Global list 
-Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
+Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../customize/reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
 
 ## Global workflow 
-Specifies both work item fields and global lists that multiple team projects and types of work items can share. Learn more: [Manage global workflow](../reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
+Specifies both work item fields and global lists that multiple team projects and types of work items can share. Learn more: [Manage global workflow](../customize/reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
 
 <a id="hidden-types"> </a> 
 ## Hidden types categories  
@@ -69,7 +69,7 @@ An interactive, electronic sign board that supports visualization of the flow of
 
  
 ## Link type
-Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../track/link-work-items-support-traceability.md) and [LinkTypes elements reference](../reference/link-type-element-reference.md).  
+Specifies an object used to form link relationships between different WITs. Learn more: [Link work items to support traceability and manage dependencies](../track/link-work-items-support-traceability.md) and [LinkTypes elements reference](../customize/reference/link-type-element-reference.md).  
 
 ## Pick list
 
@@ -81,7 +81,7 @@ An interactive list of work items, similar to the product backlog, that supports
 
 ## Process
 
-Defines the building blocks of the work tracking system. To customize a process, you first create an inherited process from one of the default system processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). Changes you make to a process are seen by all team projects that use it. (Only supported for Inheritance process model)  
+Defines the building blocks of the work tracking system. To customize a process, you first create an inherited process from one of the default system processes&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). Changes you make to a process are seen by all team projects that use it. (Only supported for Inheritance process model)  
 
 ## Process configuration
 Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and task board. (Only supported for Hosted XML and On-premises XML process models)  
@@ -90,7 +90,7 @@ Specifies the default configuration and functional capabilities that your teams 
 The work tracking customization method supported by your account or collection. One of three process models are supported, Inheritance and Hosted XML for VSTS and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../customize/customize-work.md) 
 
 ## Process template
-Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). You can create a team project and then customize it, or customize a process template that you then use to create a team project. (Only supported for Hosted XML and On-premises XML process models) 
+Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a team project and then customize it, or customize a process template that you then use to create a team project. (Only supported for Hosted XML and On-premises XML process models) 
 
 ## Product backlog 
 An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
@@ -98,7 +98,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../backlogs/create-your-backlog.md).   
 
 ## Product backlog item
-A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items which are defined defined with the Scrum process.  Learn more: [Scrum process work item types and workflow](../guidance/scrum-process-workflow.md).   
+A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank product backlog items which are defined defined with the Scrum process.  Learn more: [Scrum process work item types and workflow](guidance/scrum-process-workflow.md).   
 
 
 
@@ -114,14 +114,14 @@ An interactive board of work items that support reviewing and updating tasks def
 
 
 ## Team 
-With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 ## Team project
 
 A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../accounts/create-team-project.md).   
 
 ## User story
-A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](../guidance/agile-process-workflow.md).   
+A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](guidance/agile-process-workflow.md).   
 
 ## Widget 
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts created by the system. Learn more: [Widget catalog](../../report/widget-catalog.md).
@@ -129,7 +129,7 @@ Widgets display information and charts on dashboards. Many of them are configura
 
 ## Work item type (WIT) 
 
-Specifies the fields, workflow, and form used to track an item of work. Each WIT is associated with 30+ system fields and several more type-specific fields. You use work items to plan and track the work required to develop your project. For an overview of predefined WITs provided with the default processes, see [Choose a process](../guidance/choose-process.md).  
+Specifies the fields, workflow, and form used to track an item of work. Each WIT is associated with 30+ system fields and several more type-specific fields. You use work items to plan and track the work required to develop your project. For an overview of predefined WITs provided with the default processes, see [Choose a process](guidance/choose-process.md).  
 
 ## Workflow 
 

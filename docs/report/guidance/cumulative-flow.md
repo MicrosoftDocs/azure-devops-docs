@@ -19,7 +19,7 @@ You use cumulative flow diagrams (CFD) to monitor the flow of work through a sys
 >[!NOTE]   
 ><b>Feature availability:</b> The CFD widget is available only for VSTS at this time. 
 
-The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), or ([CMMI](../../work/guidance/cmmi-process.md)) you've selected.
+The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or ([CMMI](../../work/work-items/guidance/cmmi-process.md)) you've selected.
 
 Use this topic to learn how to: 
 

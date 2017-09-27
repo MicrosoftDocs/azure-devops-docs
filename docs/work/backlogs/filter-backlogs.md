@@ -38,7 +38,7 @@ To learn more about filtering using Tags, see [Add tags to work items to categor
 
 ## Related notes  
 - [Tags](../track/add-tags-to-work-items.md) 
-- [Set column options](../how-to/set-column-options.md)  
+- [Set column options](set-column-options.md)  
 
 
 

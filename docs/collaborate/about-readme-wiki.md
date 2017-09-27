@@ -22,7 +22,7 @@ To share information with your team, you can create README files for a repositor
 
 You can define a README file, or multiple files, for each repo or team project. 
 
-Write your readme in [Markdown](../reference/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Write your readme in [Markdown](../collaborate/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 
@@ -43,4 +43,4 @@ To learn more, see [Add and edit a wiki](add-edit-wiki.md).
 ## Related notes
 - [Add and edit a wiki](add-edit-wiki.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Markdown guidance](vsts/reference/markdown-guidance
+- [Markdown guidance](vsts/collaborate/markdown-guidance

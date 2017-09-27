@@ -1,18 +1,18 @@
 ---
-title: Unsubscribe from a default notification
-description: Understand how notifications or alerts are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+title: View subscribed notifications, unsubscribe or opt-out  
+description: View your notifications and unsubscribe from a default or built-in notfication in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
 ms.assetid: 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/01/2017
+ms.date: 09/29/2017
 ---
 
 
 
-# Unsubscribe from a notification  
+# View your subscriptions, opt-out as needed 
 
 **VSTS | TFS 2018 | TFS 2017.1**
 
