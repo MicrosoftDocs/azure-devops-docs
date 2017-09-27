@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 09/20/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -14,74 +14,72 @@ description: VSTS feature updates roadmap, release notes, release timeline, and 
 
 ## Features under development
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The “Planned Date” reflects when the feature will be available on VSTS, the “Server” column reflects when it will be available in TFS on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
 
-<table>
-      <thead>
-        <tr><th>Planned Date</th>
-		<th>Feature</th>
-		<th>Server</th>
-        <th>Area</th>
-        </tr>
-    </thead>
-        <tbody>
-        <tr><td>2017 Q3</td><td>Work Items – Query page refresh</td><td>TBD</td><td>Work</td></tr>
-        <tr><td>2017 Q3</td><td>Work Items – Favoriting Backlogs, Boards, and Sprints</td><td>TBD</td><td>Work</td></tr>
-        <tr><td>2017 Q3</td><td>Work Items – New project work items hub</td><td>TBD</td><td>Work</td></tr>
-        <tr><td>2017 Q3</td><td>Code search – indexing of multiple Git branches</td><td>TBD</td><td>Code</td></tr>
-        <tr><td>2017 Q3</td><td>Git – Fork a repository and create pull requests for upstream</td><td>TFS 2018</td><td>Code</td></tr>
-        <tr><td>2017 Q3</td><td>Git – Project and repo policies for file size and casing</td><td>TBD</td><td>Code</td></tr>
-        <tr><td>2017 Q3</td><td>Git – Improved Branch Updates design and searching for deleted branches</td><td>TFS 2018</td><td>Code</td></tr>
-        <tr><td>2017 Q3</td><td>[CI/CD – Concurrent pipelines](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-pipelines-ts#pipeline-issues) – design improvement to not consume a pipeline until an agent is assigned</td><td>TFS 2018</td><td>Build</td></tr>
-        <tr><td>2017 Q3</td><td>[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – UX improvements, Sharing of VMs</td><td>TFS 2018</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>[Release Management – New RM editor and templates](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/26/new-release-definition-editor-in-team-services/)</td><td>TFS 2018</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>Release Management improved orchestration – Better notifications on Releases, Branch triggers with include/exclude filters, and ag based triggers and Selective Artifacts</td><td>TBD</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>Release Management better traceability – Integration with Jenkins, Code, Work, and Package hubs</td><td>TBD</td><td>Release</td></tr>
-        <tr><td>2017 Q3/Q4</td><td>Azure Portal Continuous Delivery support – Azure App Services (AppTypes/Repos), VMs, and ACS Containers</td><td>TBD</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>Azure Deployments first class support and task improvements – Kubernetes, VMScaleSet, Azure Functions, and Service Fabric Clusters</td><td>TBD</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>Package Management – Upstreams sources for public registries (NuGet.org, Maven Central, etc.) and VSTS feeds across the organization and/or account</td><td>TBD</td><td>Package</td></tr>
-        <tr><td>2017 Q3</td><td>Package Management – Maven general availability</td><td>TFS 2018</td><td>Package</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Ability to configure a batch size for better distribution across agents and frequent results publishing</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Parallel testing on multiple agents in a pool in build</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Support for running ordered tests in build/release pipelines</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Re-run failed tests in Build and RM</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Automation agents do not need Visual Studio to run tests (test platform acquisition through alternate means)</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Manual and Exploratory Testing (XT) – Show requirements based suites (RBS) on Kanban and enable Basic XT users to provide feedback</td><td>TBD</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Manual and XT – XT support for Edge</td><td>TBD</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>[Improved user management – bulk editing](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>[Support for Cloud Solution Providers in managing VSTS accounts and purchases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/09/cloud-solution-provider-purchase-from-visual-studio-marketplace-roadmap/)</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>[Multiple accounts per “organization”](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account.aspx)</td><td>--</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>Notifications – CC/BCC (carbon copy) recipient support for email notifications</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>Simplified experience to more easily acquire VSTS extensions and Visual Studio subscriptions</td><td>--</td><td>Marketplace</td></tr>
-        <tr><td>2017 Q4</td><td>Work Items – Markdown support</td><td>TBD</td><td>Work</td></tr>
-        <tr><td>2017 Q4</td><td>Updated Windows shell extension for TFVC</td><td>--</td><td>Code</td></tr>
-        <tr><td>2017 Q4</td><td>CI/CD – Private Azure agent pools for Build and RM – provide your own image, we manage the lifetime</td><td>--</td><td>Build</td></tr>
-        <tr><td>2017 Q4</td><td>CI – YAML builds (config as code)</td><td>TFS 2018</td><td>Build</td></tr>
-        <tr><td>2017 Q4</td><td>VSTS Symbol Server public preview</td><td>TBD</td><td>Build</td></tr>
-        <tr><td>2017 Q4</td><td>Build – Bring your own subscription</td><td> </td><td>Build</td></tr>
-        <tr><td>2017 Q4</td><td>Greenlighting – Azure monitoring integration for automated deployments</td><td> </td><td>Release</td></tr>
-        <tr><td>2017 Q4</td><td>Package Management – CI/CD improvements including release views automation and CI versioning for packages</td><td>TBD</td><td>Package</td></tr>
-        <tr><td>2017 Q4</td><td>Package Management – Retention policies and package statistics</td><td>TBD</td><td>Package</td></tr>
-        <tr><td>2017 Q4</td><td>Automated Testing – Support for .NET Core</td><td>TFS 2018</td><td>Test</td></tr>
-        <tr><td>2017 Q4</td><td>Cloud Load Testing – Integration with Application insights (any subscription)</td><td>--</td><td>Test</td></tr>
-        <tr><td>2017 Q4</td><td>Public preview for cloud reporting experience</td><td>--</td><td>Reporting</td></tr>
-        <tr><td>2017 Q4</td><td>[TFS Data Import Service for VSTS](https://www.visualstudio.com/articles/migration-overview) general availability</td><td>--</td><td>Shared</td></tr>
-        <tr><td>2017 Q4</td><td>[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)</td><td>--</td><td>Shared</td></tr>
-        <tr><td>2017 Q4</td><td>Publisher certification process</td><td>--</td><td>Marketplace</td></tr>
-    </tbody>
-</table>
+### 2017 Q3
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Work Items – Query page refresh     |Work         |TBD         |
+|Work Items – Favoriting Backlogs, Boards, and Sprints     |Work         |TBD         |
+|Work Items – New project work items hub     |Work         |TBD         |
+|Code search – indexing of multiple Git branches     |Code         |TBD         |
+|Git – Fork a repository and create pull requests for upstream     |Code         |2018         |
+|Git – Project and repo policies for file size and casing     |Code         |TBD         |
+|Git – Improved Branch Updates design and searching for deleted branches     |Code         |2018         |
+|[CI/CD – Concurrent pipelines](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-pipelines-ts#pipeline-issues) – design improvement to not consume a pipeline until an agent is assigned     |Build         |2018         |
+|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – UX improvements, Sharing of VMs     |Release         |2018         |
+|[Release Management – New RM editor and templates](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/26/new-release-definition-editor-in-team-services/)     |Release         |2018         |
+|Release Management improved orchestration – Better notifications on Releases, Branch triggers with include/exclude filters, and ag based triggers and Selective Artifacts     |Release         |TBD         |
+|Release Management better traceability – Integration with Jenkins, Code, Work, and Package hubs     |Release         |TBD         |
+|Azure Deployments first class support and task improvements – Kubernetes, VMScaleSet, Azure Functions, and Service Fabric Clusters     |Release         |TBD         |
+|Package Management – Upstreams sources for public registries (NuGet.org, Maven Central, etc.) and VSTS feeds across the organization and/or account     |Package         |TBD         |
+|Package Management – Maven general availability     |Package         |2018         |
+|Automated Testing – Ability to configure a batch size for better distribution across agents and frequent results publishing     |Test         |2018         |
+|Automated Testing – Parallel testing on multiple agents in a pool in build     |Test         |2018         |
+|Automated Testing – Support for running ordered tests in build/release pipelines     |Test         |2018         |
+|Automated Testing – Re-run failed tests in Build and RM     |Test         |2018         |
+|Automated Testing – Automation agents do not need Visual Studio to run tests (test platform acquisition through alternate means)     |Test         |2018         |
+|Manual and Exploratory Testing (XT) – Show requirements based suites (RBS) on Kanban and enable Basic XT users to provide feedback     |Test         |TBD         |
+|Manual and XT – XT support for Edge     |Test         |TBD         |
+|[Improved user management – bulk editing](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)     |Admin         |TBD         |
+|[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)     |Admin         |TBD         |
+|[Support for Cloud Solution Providers in managing VSTS accounts and purchases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/09/cloud-solution-provider-purchase-from-visual-studio-marketplace-roadmap/)     |Admin         |TBD         |
+|[Multiple accounts per “organization”](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account.aspx)     |Admin         |--         |
+|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)     |Admin         |TBD         |
+|Notifications – CC/BCC (carbon copy) recipient support for email notifications     |Admin         |TBD         |
+|Simplified experience to more easily acquire VSTS extensions and Visual Studio subscriptions     |Marketplace         |--         |
+
+### 2017 Q4
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Work Items – Markdown support  |Work  |TBD  |
+|Updated Windows shell extension for TFVC  |Code  |--  |
+|CI/CD – Private Azure agent pools for Build and RM – provide your own image, we manage the lifetime |Build  |-- |
+|CI – YAML builds (config as code)  |Build  |2018 |
+|VSTS Symbol Server public preview  |Build  |TBD |
+|Build – Bring your own subscription  |Build  |-- |
+|Azure Portal Continuous Delivery support – Azure App Services (AppTypes/Repos), VMs, and ACS Containers  |Release  |TBD |
+|Greenlighting – Azure monitoring integration for automated deployments  |Release  |-- |
+|Package Management – CI/CD improvements including release views automation and CI versioning for packages  |Package  |TBD |
+|Package Management – Retention policies and package statistics  |Package  |TBD |
+|Automated Testing – Support for .NET Core  |Test  |2018 |
+|Cloud Load Testing – Integration with Application insights (any subscription)  |Test  |-- |
+|Public preview for cloud reporting experience  |Reporting  |-- |
+|[TFS Data Import Service for VSTS](https://www.visualstudio.com/articles/migration-overview) general availability  |Shared  |-- |
+|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)  |Shared  |-- |
+|Publisher certification process  |Marketplace  |-- |
 
 ## Current features
 
-The features timeline lists significant features delivered to VSTS and the corresponding version of Team Foundation Server.
-Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers).
+The features timeline lists significant features delivered to VSTS and the corresponding version of TFS.
+Versions in the “Server” column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers).
 
 <table>
     <thead>
         <tr>
-            <th>Service</th>
+            <th>Service Update</th>
             <th>Feature</th>
             <th>Server</th>
         </tr>
@@ -696,7 +694,7 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
         <tr>
             <td>Azure Web App deployment updates</td>
-            <<td style="background:rgb(155, 192, 230);">2017.2</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td>Install an SSH key during a build or release</td>
