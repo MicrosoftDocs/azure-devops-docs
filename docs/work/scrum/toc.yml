@@ -17,13 +17,13 @@
   - name: "Add & update tasks (Task board)"
     href: task-board.md
   - name: Plan capacity
-    href: /vsts/work/scale/capacity-planning?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Sprint burndown
     href: sprint-burndown.md
   - name: Forecast
     href: forecast.md
   - name: Velocity
-    href: /vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../report/guidance/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Scrum best practices
@@ -31,19 +31,19 @@
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
   - name: "Workflow states & state categories"
-    href: /vsts/work/customize/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
     href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Agile glossary
-    href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../work-items/agile-glossary.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: "Filter backlogs & queries"
-    href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../backlogs/filter-backlogs.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Copy list
-    href: /vsts/work/backlogs/copy-list?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../backlogs/copy-list.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Bulk add or modify (Web)
-    href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Manage permissions & access"
@@ -55,7 +55,7 @@
   - name: "Permissions & access for work tracking"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Work item field index
-    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Keyboard shortcuts
     href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Resources
