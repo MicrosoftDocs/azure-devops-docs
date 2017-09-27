@@ -24,7 +24,11 @@ After you commit and push a code change, it is automatically built and then depl
 
 ## Define your CI build process
 
-You'll need a continuous integration (CI) build process that publishes a Docker container image. To set up a CI build process, see [Build your ASP.NET Core Container app](../aspnet/build-aspnet-core-docker.md).
+You'll need a continuous integration (CI) build process that publishes a Docker container image.
+To set up a CI build process, see:
+
+* [Build your ASP.NET Core Container app](../aspnet/build-aspnet-core-docker.md).
+* [Build your NodeJS Container app](../nodejs/build-nodejs-docker.md).
 
 ## Prerequisites
 

@@ -16,3 +16,11 @@
    The web app you created here will host an instance of that image and expose it as a website.
 
 1. Wait until the new web app has been created.
+
+   > You can configure the web app for containers to automatically configure deployment as part of the
+   > CI/CD process so that the web app is automatically updated when a new image is pushed to the container.
+   > However, by using a separate release definition in VSTS or TFS you gain extra flexibility. You can:
+   >
+   > * Specify a tag that is used to select the deployment target for multi-environment deployments.
+   > * Use separate container registries for different environments.
+   > * Use parameterized start-up commands to, for example, set the values of variables based on the target environment.
