@@ -1,6 +1,6 @@
 ---
 title: Billing for VSTS  
-description: Index to topics for account billing for Visual Studio Team Services (VSTS)
+description: Make purchases and manage billing for VSTS extensions, Visual Studio subscriptions, Visual Studio Code, HockeyApp, Xamarin University, and CSP customers
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
@@ -11,7 +11,12 @@ ms.date: 07/12/2017
 
 # Billing
 
-**VSTS** | **TFS** | **HockeyApp** | **Xamarin University** | **VS Subscriptions**
+**VSTS** | **TFS 2017** | **TFS 2015**
+
+Make purchases and manage billing for VSTS and TFS extensions (for example, Test Manager or Package Management), 
+Visual Studio subscriptions, Visual Studio and Visual Studio Code extensions, HockeyApp, Xamarin University, 
+and Cloud Solution Provider customers.
+
 
 ## 5-Minute Quickstarts  
 

@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Billing overview
+  - name: Billing
     href: overview.md
 - name: Quickstarts
   items:
@@ -16,7 +16,7 @@
     href: ../accounts/change-azure-active-directory-vsts-account.md
 - name: Concepts
   items:
-  - name: Billing and Microsoft Azure
+  - name: Billing with Azure Subscriptions
     href: billing-concepts.md
   - name: Use MSDN subscription with organizational account
     href: link-msdn-subscription-concept.md
@@ -32,9 +32,9 @@
       href: change-azure-subscription.md
   - name: Link work accounts to Visual Studio with MSDN subscriptions
     href: link-msdn-subscription-to-organizational-account-vs.md
-  - name: How to buy build pipelines
+  - name: Buy build pipelines
     href: buy-more-build-vs.md
-  - name: How to buy load testing services
+  - name: Buy load testing services
     href: buy-load-testing-vs.md
   - name: Buy basic access to TFS Test hub
     href: buy-access-tfs-test-hub.md
@@ -42,6 +42,16 @@
     href: get-hockeyapp.md
   - name: Buy Xamarin University
     href: xamarin-univ.md
+  - name: Manage extensions
+    items:
+    - name: Change number of paid extension users
+      href: change-number-paid-extension-users.md
+    - name: Approve requests for VSTS extensions
+      href: ../marketplace/approve-vsts-extensions.md
+    - name: Assign paid extensions access
+      href: ../marketplace/assign-paid-extensions.md
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md
   - name: Manage Visual Studio subscriptions
     items:
     - name: Buy Visual Studio subscriptions

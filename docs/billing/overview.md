@@ -15,8 +15,11 @@ ms.date: 04/28/2017
 VSTS billing covers:
 
 * Purchasing extensions for Visual Studio, VSTS, Team Foundation Server (TFS), and Visual Studio Code
-
-* Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
+* Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users).
+* Hockeyapp
+* Xamarin University
+* Visual Studio subscriptions
+* Cloud Solution Provider purchases for customers
 
 
 ## What are extensions

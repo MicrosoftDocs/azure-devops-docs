@@ -30,3 +30,7 @@ order and complete it.
 
 You can purchase extensions the same way by, for example, searching for **Test Manager** after choosing **Visual Studio 
 Marketplace**.
+
+ > Note: Customers with existing paid VSTS resources can choose to migrate to a CSP-based Azure subscription by 
+ > [changing the Azure subscription their VSTS account uses for billing](../change-azure-subscription.md).
+ 

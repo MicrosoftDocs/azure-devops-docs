@@ -13,11 +13,18 @@ ms.date: 07/12/2017
 
 **VSTS**
 
-You can be up and running with a free account within 5 minutes. 
+Plan, code, and ship with Visual Studio Team Services (VSTS) devops.
+
 
 ## 5-Minute Quickstarts  
 
 * [Create your VSTS account](create-account-msa-or-work-student.md)
+<!-- Can't add "add user" which is really obvious quick start thing because it must then be in the quick starts in
+     the toc, and there's a rule that you must not duplicate TOC entries for browsing.  There is a hard call here that
+     users are more likely to ignore quick starts after first blush usage, so they are more likely to find adding users
+     in the How-to Guides section.  The ripple effect is that truly new users using the index page won't be guided as
+     well as repeat users who need to find common tasks readily if they are browsing.
+     -->
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
@@ -29,6 +36,7 @@ You can be up and running with a free account within 5 minutes.
 ## Reference 
 
 * [Permissions and access](/vsts/security/permissions-access?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
+* [Access with Azure AD](access-with-azure-ad.md)
 
 
 ## Resources 

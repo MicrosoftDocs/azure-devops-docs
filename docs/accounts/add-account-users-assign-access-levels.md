@@ -1,5 +1,5 @@
 ---
-title: Add user accounts and assign access level in VSTS
+title: Add user accounts and assign access level in VSTS if you turned off User Hub
 description: Add users and assign access levels in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#	Manage users and access in VSTS
+#	Manage users and access in VSTS (if you turned off User Hub)
 
 **VSTS**
 

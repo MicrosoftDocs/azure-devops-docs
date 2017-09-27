@@ -16,7 +16,7 @@ ms.date: 03/29/2017
 In TFS and VSTS, each team project collection is its own grouping
 of projects that can share reports, work items, and other items, all stored in a single database.
 Project collection administrators maintain the collection and administer permissions and security
-for other roles at the collection level.
+for other roles at the collection level.  [Learn more](../security/set-project-collection-level-permissions.md) about project collection permissions.
 
 1.  Open the web portal and switch to administration mode by choosing the gear icon ![Settings icon](_img/admin-gear-icon.png).
 

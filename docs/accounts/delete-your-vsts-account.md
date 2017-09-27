@@ -1,6 +1,6 @@
 ---
 title: Delete or recover VSTS account
-description: How to delete, quit, stop using, restore, or recover your VSTS account
+description: How to delete your Visual Studio Team Services account and what happens to user accounts
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
@@ -131,7 +131,4 @@ permissions to restore your VSTS account.
 	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 
-## Troubleshooting
-
-[Troubleshooting](faq-delete-restore-vsts-account.md)
 
