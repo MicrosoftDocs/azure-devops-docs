@@ -568,7 +568,12 @@
         },
         {
             "source_path": "docs/work/backlogs-vs-boards.md",
-            "redirect_url": "/vsts/work/backlogs-boards-plans",
+            "redirect_url": "/vsts/work/backlogs/backlogs-boards-plans",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/work/backlogs-boards-plans.md",
+            "redirect_url": "/vsts/work/backlogs/backlogs-boards-plans",
             "redirect_document_id": false
         },
         {
@@ -1849,11 +1854,6 @@
         {
             "source_path": "docs/work/plan.md",
             "redirect_url": "/vsts/work/overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/work/productivity/productivity-tips.md",
-            "redirect_url": "/vsts/connect/account-home-pages",
             "redirect_document_id": false
         },
         {
@@ -3494,6 +3494,911 @@
        {
             "source_path": "docs/ecosystem/sharepoint/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md",
             "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
+            "redirect_url": "/vsts/work/customize/reference/add-or-change-how-project-fields-map-to-tfs-fields",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/add-or-modify-work-item-fields-to-support-reporting.md",
+            "redirect_url": "/vsts/work/customize/reference/add-or-modify-work-item-fields-to-support-reporting",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/add-the-attachments-control.md",
+            "redirect_url": "/vsts/work/customize/reference/add-the-attachments-control",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/all-field-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/all-field-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/all-form-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/all-form-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/all-witd-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/all-witd-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/all-workflow-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/all-workflow-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/apply-pattern-matching-to-string-field.md",
+            "redirect_url": "/vsts/work/customize/reference/apply-pattern-matching-to-string-field",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/apply-rule-work-item-field.md",
+            "redirect_url": "/vsts/work/customize/reference/apply-rule-work-item-field",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/assign-conditional-based-values-and-rules.md",
+            "redirect_url": "/vsts/work/customize/reference/assign-conditional-based-values-and-rules",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/automate-field-assignments-state-transition-reason.md",
+            "redirect_url": "/vsts/work/customize/reference/automate-field-assignments-state-transition-reason",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/categories-xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/categories-xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/change-maximum-attachment-size-work-items.md",
+            "redirect_url": "/vsts/work/customize/reference/change-maximum-attachment-size-work-items",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/change-work-item-form-layout.md",
+            "redirect_url": "/vsts/work/customize/reference/change-work-item-form-layout",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/change-workflow-wit.md",
+            "redirect_url": "/vsts/work/customize/reference/change-workflow-wit",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/combine-list-types.md",
+            "redirect_url": "/vsts/work/customize/reference/combine-list-types",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/configure-network-adapter-automatically-adjust-speed.md",
+            "redirect_url": "/vsts/work/customize/reference/configure-network-adapter-automatically-adjust-speed",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/control-xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/control-xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/customize-project-field-mapping-file.md",
+            "redirect_url": "/vsts/work/customize/reference/customize-project-field-mapping-file",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-custom-link-type.md",
+            "redirect_url": "/vsts/work/customize/reference/define-custom-link-type",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-default-copy-value-field.md",
+            "redirect_url": "/vsts/work/customize/reference/define-default-copy-value-field",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-global-lists.md",
+            "redirect_url": "/vsts/work/customize/reference/define-global-lists",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-link-controls.md",
+            "redirect_url": "/vsts/work/customize/reference/define-link-controls",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-modify-work-item-fields.md",
+            "redirect_url": "/vsts/work/customize/reference/define-modify-work-item-fields",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/define-pick-lists.md",
+            "redirect_url": "/vsts/work/customize/reference/define-pick-lists",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/design-work-item-form.md",
+            "redirect_url": "/vsts/work/customize/reference/design-work-item-form",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/edit-wit-definition-add-web-content-form.md",
+            "redirect_url": "/vsts/work/customize/reference/edit-wit-definition-add-web-content-form",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/expand-list-items-and-exclude-groups-from-lists.md",
+            "redirect_url": "/vsts/work/customize/reference/cexpand-list-items-and-exclude-groups-from-lists",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/field-definition-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/field-definition-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/field-mappings-in-microsoft-project.md",
+            "redirect_url": "/vsts/work/customize/reference/field-mappings-in-microsoft-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/field-workflow-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/field-workflow-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/global-workflow-xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/global-workflow-xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/labeltext-and-text-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/labeltext-and-text-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/layout-xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/layout-xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/link-param-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/link-param-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/link-type-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/link-type-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/linkscontroloptions-elements.md",
+            "redirect_url": "/vsts/work/customize/reference/linkscontroloptions-elements",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/linkscontroloptions-xml-elements.md",
+            "redirect_url": "/vsts/work/customize/reference/linkscontroloptions-xml-elements",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/localization-and-globalization-of-witd-child-elements.md",
+            "redirect_url": "/vsts/work/customize/reference/localization-and-globalization-of-witd-child-elements",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/map-microsoft-project-fields-to-tf-fields.md",
+            "redirect_url": "/vsts/work/customize/reference/map-microsoft-project-fields-to-tf-fields",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-configuration-xml-element.md",
+            "redirect_url": "/vsts/work/customize/reference/process-configuration-xml-element",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/provide-help-text-hyperlinks-web-content-form.md",
+            "redirect_url": "/vsts/work/customize/reference/provide-help-text-hyperlinks-web-content-form",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/reportable-fields-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/reportable-fields-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/resolve-errors-received-when-configuring-features.md",
+            "redirect_url": "/vsts/work/customize/reference/resolve-errors-received-when-configuring-features",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/specify-work-item-form-controls.md",
+            "redirect_url": "/vsts/work/customize/reference/specify-work-item-form-controls",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/support-bug-update-status-using-my-work.md",
+            "redirect_url": "/vsts/work/customize/reference/support-bug-update-status-using-my-work",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/support-rollup-of-work-and-other-fields.md",
+            "redirect_url": "/vsts/work/customize/reference/support-rollup-of-work-and-other-fields",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/tab-xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/tab-xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/transition-xml-element.md",
+            "redirect_url": "/vsts/work/customize/reference/transition-xml-element",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/update-a-team-project-manually-to-support-test-management.md",
+            "redirect_url": "/vsts/work/customize/reference/update-a-team-project-manually-to-support-test-management",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/update-a-team-project-v4-dot-2-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/update-a-team-project-v4-dot-2-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/update-the-workflow-for-agile-team-projects.md",
+            "redirect_url": "/vsts/work/customize/reference/update-the-workflow-for-agile-team-projects",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/upload-or-download-the-microsoft-project-mapping-file.md",
+            "redirect_url": "/vsts/work/customize/reference/upload-or-download-the-microsoft-project-mapping-file",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/use-categories-to-group-work-item-types.md",
+            "redirect_url": "/vsts/work/customize/reference/use-categories-to-group-work-item-types",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/weblayout-xml-elements.md",
+            "redirect_url": "/vsts/work/customize/reference/weblayout-xml-elements",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/webpagecontroloptions-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/webpagecontroloptions-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/work-item-save-is-slow-to-complete.md",
+            "redirect_url": "/vsts/work/customize/reference/work-item-save-is-slow-to-complete",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/xml-element-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/xml-element-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/manage-global-lists-for-work-item-types.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/manage-global-lists-for-work-item-types",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/manage-link-types.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/manage-link-types",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/manage-work-item-fields.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/manage-work-item-fields",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/rebuild-client-cache.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/rebuild-client-cache",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/remove-work-items-permanently.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/remove-work-items-permanently",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/tcm-customize-manage-test-experience.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/tcm-customize-manage-test-experience",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/witadmin-import-export-categories.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/witadmin-import-export-categories",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/witadmin-import-export-global-workflow.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/witadmin-import-export-global-workflow",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/witadmin-import-export-manage-wits.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/witadmin-import-export-manage-wits",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/witadmin/witadmin-import-export-process-configuration.md",
+            "redirect_url": "/vsts/work/customize/reference/witadmin/witadmin-import-export-process-configuration",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-link-type-definitions-to-a-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-link-type-definitions-to-a-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-reports-to-the-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-reports-to-the-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-type-wit-category-definitions-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-type-wit-category-definitions-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-wit-definitions-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-wit-definitions-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-work-item-instance-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-work-item-instance-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/add-work-item-queries-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/add-work-item-queries-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/configure-initial-groups-teams-members-permissions.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/configure-initial-groups-teams-members-permissions",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/control-access-to-functional-areas.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/control-access-to-functional-areas",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/customize-process.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/ustomize-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-classification-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-classification-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-dependencies-plug-ins-groups-tasks.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-groups-teams-permissions-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-groups-teams-permissions-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-initial-configuration-build.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-initial-configuration-build",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-initial-configuration-lab-management.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-initial-configuration-lab-management",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-initial-configuration-test-manager.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-initial-configuration-test-manager",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-initial-configuration-version-control.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-initial-configuration-version-control",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-objects-track-work-items-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-objects-track-work-items-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-project-portal-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-project-portal-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-root-tasks-process-template-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-root-tasks-process-template-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-tasks-to-process-a-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-tasks-to-process-a-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/define-work-item-query-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/define-work-item-query-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/overview-process-template-files.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/overview-process-template-files",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/process-template-plug-ins-xml-elements-index.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/process-template-plug-ins-xml-elements-index",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/process-templates/process-template-xml-elements-reference.md",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/process-template-xml-elements-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/api-ref/iprocess-templates-add-update-template.md",
+            "redirect_url": "/vsts/work/customize/reference/api-ref/iprocess-templates-add-update-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/api-ref/open.md",
+            "redirect_url": "/vsts/work/customize/reference/api-ref/open",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/api-ref/partialopen.md",
+            "redirect_url": "/vsts/work/customize/reference/api-ref/partialopen",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/attachment-upload-failed.md",
+            "redirect_url": "/vsts/work/customize/reference/error/attachment-upload-failed",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf237002-cannot-open-document-excel-not-installed.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf237002-cannot-open-document-excel-not-installed",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf24023-tfs-configuration-failure.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf24023-tfs-configuration-failure",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30004-ntpw-encountered- error-initializing-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30004-ntpw-encountered-error-initializing-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30022-ntpw-no-connect-sharepoint.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30022-ntpw-no-connect-sharepoint",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30026-cannot-change-file-name-extension.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30026-cannot-change-file-name-extension",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30030-team-explorer-could-not-connect-to-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30030-team-explorer-could-not-connect-to-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30031-team-explorer-no-open-document-service-no-run.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30031-team-explorer-no-open-document-service-no-run",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30034-you-do-not-have-permission-to-create-team-project.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30034-you-do-not-have-permission-to-create-team-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30082-team-explorer-error-launching-document.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30082-team-explorer-error-launching-document",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30168-ntpw-failure-check-permission-create-projects.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30168-ntpw-failure-check-permission-create-projects",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30169-ntpw-no-download-process-template.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30169-ntpw-no-download-process-template",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30170-the-plug-in-failed-during-task-from-group.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30170-the-plug-in-failed-during-task-from-group",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30172-you-do-not-have-permission-to-create-team-project.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30172-you-do-not-have-permission-to-create-team-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30247-ntpw-no-load-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30247-ntpw-no-load-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30249-ntpw-no-retrieve-process-template-info.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30249-ntpw-no-retrieve-process-template-info",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30320-ntpw-no- retrieve-list-team-projects-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30320-ntpw-no-retrieve-list-team-projects-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30321-name -in-use-team-project.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30321-name-in-use-team-project",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30323-ntpw-no-retrieve- wizard-page-plug-in.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30323-ntpw-no-retrieve-wizard-page-plug-in",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf31001-tfs-no-retrieve-team-projects.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf31001-tfs-no-retrieve-team-projects",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf31002-unable-connect-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf31002-unable-connect-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf31003-user-account-no-permission-connect-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf31003-user-account-no-permission-connect-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/tf31004-tf-error-connecting-tfs.md",
+            "redirect_url": "/vsts/work/customize/reference/error/tf31004-tf-error-connecting-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/reference/error/underlying-connection-was-closed.md",
+            "redirect_url": "/vsts/work/customize/reference/error/underlying-connection-was-closed",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/agile-process-workflow.md",
+            "redirect_url": "/vsts/work/work-items/guidance/agile-process-workflow",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/agile-process.md",
+            "redirect_url": "/vsts/work/work-items/guidance/agile-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/changes-to-process-templates.md",
+            "redirect_url": "/vsts/work/work-items/guidance/changes-to-process-templates",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/choose-process.md",
+            "redirect_url": "/vsts/work/work-items/guidance/choose-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi-process-workflow.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi-process-workflow",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi-process.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/guidance-code-review-feedback-field-reference.md",
+            "redirect_url": "/vsts/work/work-items/guidance/guidance-code-review-feedback-field-reference",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/manage-process-templates.md",
+            "redirect_url": "/vsts/work/work-items/guidance/manage-process-templates",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/scrum-process-workflow.md",
+            "redirect_url": "/vsts/work/work-items/guidance/scrum-process-workflow",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/scrum-process.md",
+            "redirect_url": "/vsts/work/work-items/guidance/scrum-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/work-item-field.md",
+            "redirect_url": "/vsts/work/work-items/guidance/work-item-field",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-background-to-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-background-to-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-build-product.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-build-product",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-architecture",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-develop-requirements.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-develop-requirements",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-engineering.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-engineering",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-implement-development-tasks.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-implement-development-tasks",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-iteration-activities.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-iteration-activities",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-manage-change.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-change",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-manage-issues-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-manage-risks.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-risks",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-plan-a-project-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-project-activities.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-activities",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-project-inception.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-inception",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-project-management.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-management",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/guidance/cmmi/track-bugs.md",
+            "redirect_url": "/vsts/work/work-items/guidance/cmmi/track-bugs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/connect/account-home-pages.md",
+            "redirect_url": "/vsts/user-guide/account-home-pages",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/connect/connect-team-projects.md",
+            "redirect_url": "/vsts/user-guide/connect-team-projects",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/connect/work-team-explorer.md",
+            "redirect_url": "/vsts/user-guide/work-team-explorer",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/connect/work-web-portal.md",
+            "redirect_url": "/vsts/user-guide/work-web-portal",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/custom-controls-process.md",
+            "redirect_url": "/vsts/work/customize/process/custom-controls-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/custom-rules.md",
+            "redirect_url": "/vsts/work/customize/process/custom-rules",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process-backlogs-boards.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process-backlogs-boards",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process-field.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process-field",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process-form.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process-form",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process-wit.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process-wit",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process-workflow.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process-workflow",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/customize-process.md",
+            "redirect_url": "/vsts/work/customize/process/customize-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/manage-process.md",
+            "redirect_url": "/vsts/work/customize/process/manage-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/process/new-work-item-experience.md",
+            "redirect_url": "/vsts/work/customize/process/new-work-item-experience",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/import-process/import-process.md",
+            "redirect_url": "/vsts/work/customize/import-process/import-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/import-process/customize-process.md",
+            "redirect_url": "/vsts/work/customize/import-process/customize-process",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/import-process/differences.md",
+            "redirect_url": "/vsts/work/customize/import-process/differences",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/import-process/resolve-errors.md",
+            "redirect_url": "/vsts/work/customize/import-process/resolve-errors",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/productivity/productivity-tips.md",
+            "redirect_url": "/vsts/collaborate/index",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/overview.md",
+            "redirect_url": "/vsts/work/backlogs/overview",
             "redirect_document_id": false
        }
     ]

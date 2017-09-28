@@ -1,6 +1,6 @@
 ---
 title: Understand how to buy VSTS services
-description: Understand what you need to setup to pay for VSTS users, build & release pipelines, extensions, and cload testing for VSTS
+description: What you need to set up billing for VSTS users, build & release pipelines, extensions, and cload testing for VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e8991424-ab10-4188-aa44-66e9af288c11

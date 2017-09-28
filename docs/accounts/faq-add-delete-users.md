@@ -1,6 +1,6 @@
 ---
-title: Manage users and access user hub VSTS
-description: Add users and assign access levels in user hub VSTS (Visual Studio Online, VSO, VSTS)
+title: Troubleshoot adding and deleting account users in the VSTS user hub
+description: Troubleshoot adding and deleting account users in the VSTS user hub
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 4/17/2017
 ---
 
-#	Troubleshoot adding and deleting users in the VSTS user hub
+#	Troubleshoot adding and deleting account users in the VSTS user hub
 
 **VSTS**
 
