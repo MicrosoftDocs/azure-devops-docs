@@ -136,11 +136,17 @@
     - name: SharePoint Integration
       tocHref: /vsts/report/sharepoint-dashboards/
       topicHref: /vsts/report/sharepoint-dashboards/index
+    - name: SharePoint Integration
+      tocHref: /vsts/report/excel/
+      topicHref: /vsts/report/excel/index
     - name: TFS-Project Server integration
       tocHref: /vsts/work/tfs-ps-sync/
       topicHref: /vsts/work/tfs-ps-sync/index
     - name: "Data Warehouse & SQL Reports"
       tocHref: /vsts/report/sql-reports/
+      topicHref: /vsts/report/sql-reports/index
+    - name: "Data Warehouse & SQL Reports"
+      tocHref: /vsts/report/admin/
       topicHref: /vsts/report/sql-reports/index
   - name: Marketplace
     tocHref: /vsts/extend/
