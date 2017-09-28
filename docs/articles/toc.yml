@@ -1,4 +1,4 @@
-- name: VSTS Public Articles
+- name: Technical Articles 
   href: index.md
 - name: Security
   items:
@@ -40,3 +40,11 @@
       href: build-deployment-best-practices.md
     - name: Ring-based Phased Feature Rollouts
       href: phase-rollout-with-rings.md
+- name: Journey articles
+  items:
+    - name: Agile
+      href: https://www.visualstudio.com/learn/what-is-agile/
+    - name: Devops
+      href: https://www.visualstudio.com/learn/what-is-devops/
+    - name: Git at Scale
+      href: https://www.visualstudio.com/learn/git-at-scale/

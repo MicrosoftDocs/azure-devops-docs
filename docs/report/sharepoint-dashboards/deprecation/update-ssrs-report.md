@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -34,16 +34,19 @@ If any of these changes are made, then you must replace the URL in the Page View
 
 Follow these steps to replace the URL:
 
-1. Step 1
-1. Step 2
-1. Step 3
+1. Edit the Page Viewer web part
+1. Paste the following into the URL field
+```
+http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2fDashboards%2fREPORTNAME&rc%3aToolbar=false
+```
+3. Replace **REPORTSERVER** with the name of your TFS SSRS server
+1. Replace **COLLECTIONNAME** with the name of the TFS Collection. Typically, this is "DefaultCollection"
+1. Replace **PROJECTNAME** with the name of your team project
+1. Replace **REPORTNAME** with the name of your report.
 
-<!---
-> TODO: insert the URL format to display a SSRS Report in SharePoint
+    **NOTE**: You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
 
-> TODO:<insert how to get the URL to the SSRS report
-
--->
+1. Save your changes to the PageViewer web part.
 
 # Referenced topics
 * [SSRS Report URL Access Parameter Reference](https://docs.microsoft.com/sql/reporting-services/url-access-parameter-reference)

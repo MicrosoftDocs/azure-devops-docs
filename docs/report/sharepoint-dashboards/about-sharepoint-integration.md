@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid:  
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/08/07
+ms.date: 09/28/2017
 ms.topic: get-started-article
 ---
 
@@ -36,13 +36,13 @@ You may want to ask yourself whether the integration benefits outweigh the costs
 
 If you are running TFS 2017 or earlier and want to configure your integration with SharePoint 2010 or 2013, read [Configure SharePoint Integration - TFS 2017 and Earlier](./configure-sharepoint-tfs-2017-earlier.md)
 
-**If you are running TFS 2017, configured to integrate with SharePoint 2013, and want to upgrade to SharePoint 2016**, you will need to disable SharePoint integration during the upgrade, or your upgrade will fail. For more information, read [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md).
+**If you are running TFS 2017, configured to integrate with SharePoint 2013, and want to upgrade to SharePoint 2016**, you will need to disable SharePoint integration during the SharePoint upgrade, or your upgrade will fail. For more information, read [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md).
 
 
 ## TFS 2018 and later versions
 Starting with TFS 2018, we will no longer offer the TFS Extension for SharePoint. Additionally, we won't support TFS 2017 integration with SharePoint 2016 (the TFS Extension for SharePoint only supports Sharepoint 2013 and earlier versions). TFS 2017 and earlier versions will continue to work with their supported versions of SharePoint. For more information, read [Discontinue TFS 2017 (and earlier versions) SharePoint integration](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 
-**If you are upgrading to TFS 2018 from a previous version configured to integrate with SharePoint**, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load. For more information, read [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
+**If you are upgrading to TFS 2018 from a previous version configured to integrate with SharePoint 2010 or 2013**, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load. For more information, read [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
 
 ## Future plans for TFS and VSTS SharePoint integration
 

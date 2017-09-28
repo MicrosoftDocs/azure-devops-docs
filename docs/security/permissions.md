@@ -7,7 +7,7 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.date: 09/27/2017
 ---
 
 
@@ -45,7 +45,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-## Server-level groups (TFS)
+##&nbsp;&nbsp;&nbsp;Server-level (TFS only)
 
 Server groups apply to TFS only. When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
@@ -167,8 +167,8 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]/Team Foundation Administrators**.
 
-
-### Collection-level groups
+<a name="collection"></a>
+##&nbsp;&nbsp;&nbsp;Collection-level 
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
@@ -182,11 +182,6 @@ Project Collection Test Service Accounts
 Project Collection Valid Users
 -->
 
-
-<a name="collection"></a>
-## Collection
-
-When you create a collection, these groups are created that have permissions in that collection.
 
 <img src="_img/permissions/collection-groups-and-permissions.png" style="border: 1px solid #CCCCCC" />
 
@@ -261,12 +256,7 @@ When you create a collection, these groups are created that have permissions in 
 	</tr>
 	<tr>
 		<td>Project Collection Valid Users</td>
-		<td><p>Has permissions to access team projects in the collection.</p>
-			<blockquote>
-				If you set the <strong>View collection-level information</strong> permission
-				to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-				no users will be able to access the collection.
-			</blockquote>
+		<td><p>Has permissions to access team projects and view information in the collection.</p>
 		</td>
 		<td>
 			<p>
@@ -296,7 +286,7 @@ Release Administrators (TFS 2017, VSTS)
 -->
 
 <a id="project-level-groups" />
-### Project-level groups
+##&nbsp;&nbsp;&nbsp;Project-level
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
@@ -385,7 +375,7 @@ Show bugs on backlogs and boards
 -->
 
 
-### Team administrator role
+##&nbsp;&nbsp;&nbsp;Team administrator role
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.  
 
@@ -438,7 +428,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server-permissions">  </a>
 
 
-### Server-level permissions (TFS)
+##&nbsp;&nbsp;&nbsp;Server-level (TFS)
 
 You manage server-level permissions through the [Team Foundation Administration Console](../tfs-server/add-administrator-tfs.md) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
@@ -547,7 +537,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 <a id="collection">  </a>
 <a id="collection-level"> </a>
 
-### Collection-level permissions
+##&nbsp;&nbsp;&nbsp;Collection-level
 
 You manage collection-level permissions through the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
@@ -727,8 +717,13 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td>Can view, but not use, build controllers and build agents that are configured for the collection.</td>
 	</tr>
 	<tr>
-		<td id="view-collection-level-information-permission">View collection-level information</td>
-		<td>Can view collection level group membership and permissions.</td>
+		<td id="view-collection-level-information-permission">View instance-level information<br/>or View collection-level information</td>
+		<td>Can view collection level group membership and permissions.
+			<blockquote>
+				If you set the <strong>View instance-level information</strong> permission
+				to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+				no users will be able to access the collection.
+			</blockquote></td>
 	</tr>
 	<tr>
 		<td id="view-system-synchronization-information-permission">View system synchronization information</td>
@@ -743,7 +738,7 @@ You manage collection-level permissions through the [web portal admin context](.
 <a name="team-project-level-permissions">  </a>
 <a name="project-level-permissions" />
 
-### Project-level permissions
+##&nbsp;&nbsp;&nbsp;Project-level
 
 You manage project-level permissions from the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
@@ -850,13 +845,10 @@ You manage project-level permissions from the [web portal admin context](../user
 </tbody>
 </table>
 
-## Object permissions
-
-
 
 <a name="build"></a>
 
-### Build permissions (object-level)
+##&nbsp;&nbsp;&nbsp;Build (object-level)
 
 You manage build permissions [for each build defined in the web portal](../build-release/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
 
@@ -1000,8 +992,8 @@ The following permissions are defined in Build. All of these can be set at both 
 
 <a id="git-repo">  </a>
 <a id="git-repository">  </a>
-<a id="git-repository-permissions-objectlevel">  </a>
-### Git repository permissions (object-level)
+<a id="git-repository-permissions-object-level">  </a>
+##&nbsp;&nbsp;&nbsp;Git repository (object-level)
 
 <!---
 Contribute 
@@ -1154,14 +1146,9 @@ To manage Git repo and branch permissions, see [Set branch permissions](../git/b
 
 <a id="tfvc">  </a>
 
-### TFVC permissions (object-level)
+##&nbsp;&nbsp;&nbsp;TFVC (object-level)
 
 You manage the security of each TFVC branch from the [web portal](../accounts/restrict-access-tfs.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a team project that's been configured to use Team Foundation Version Control as the source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
-
-
-
-<a name="tfvc"></a> 
-### TFVC
 
 These permissions appear only for a team project set up to use Team Foundation Version Control as the source control system.
 
@@ -1345,7 +1332,7 @@ In version control permissions, explicit deny takes precedence over administrato
 
 <a name="area-permissions"></a>
 
-### Area path permissions (object-level)     
+##&nbsp;&nbsp;&nbsp;Area path (object-level)     
 
 You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
@@ -1459,7 +1446,7 @@ and to the work items in those areas.
 
 
 <a name="iteration-path-permissions"></a>
-### Iterations permissions (object-level) 
+##&nbsp;&nbsp;&nbsp;Iteration Path (object-level) 
 
 Multiple teams may contribute to a team project. 
 When that's the case, you can set up teams that are associated with an area. 
@@ -1535,7 +1522,7 @@ permissions to create, edit, or delete iteration nodes.
 
 <a id="query">  </a>
 
-### Work item query and folder permissions (object-level)
+##&nbsp;&nbsp;&nbsp;Work item query and folder (object-level)
 
 You manage query and query folder permissions through the [web portal](../work/track/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the team project.
 
@@ -1576,7 +1563,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 <a id="plan-permissions">  </a>
 
-### Plan permissions (object-level) (VSTS)  
+##&nbsp;&nbsp;&nbsp;Delivery Plans (object-level) (VSTS)  
 
 You manage plan permissions through the [web portal](../work/scale/review-team-plans.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
@@ -1612,7 +1599,7 @@ You manage plan permissions through the [web portal](../work/scale/review-team-p
 
 <a id="tags">  </a>
 
-### Work item tags
+##&nbsp;&nbsp;&nbsp;Work item tags
 
 You manage tagging permissions mostly from the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
 
@@ -1711,7 +1698,7 @@ View releases
 
 <a id="release_management">  </a>
 
-### Release management permissions (object-level) (VSTS, TFS 2017)
+##&nbsp;&nbsp;&nbsp;Release (object-level) (VSTS, TFS 2017)
 
 Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
@@ -1752,7 +1739,7 @@ are denied all permissions except **View release definition** and
 
 <a id="lab">  </a>
 
-### Lab Management permissions (TFS 2015, TFS 2013)
+##&nbsp;&nbsp;&nbsp;Lab Management (TFS 2015, TFS 2013)
 
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
 You can set these permissions by using the [TFSLabConfig permissions command-line tool](../tfs-server/command-line/tfslabconfig-cmd.md#permissions).
@@ -1859,7 +1846,7 @@ By default, the team project level and collection-level Readers groups have only
 
 <a id="alerts">  </a>
 
-### Alert permissions
+##&nbsp;&nbsp;&nbsp;Notifications or alerts
 
 There are no UI permissions associated with [managing email notifications or alerts](../work/track/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
 

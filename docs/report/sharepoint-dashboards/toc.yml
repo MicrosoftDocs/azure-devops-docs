@@ -32,6 +32,8 @@
       href: ./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md 
     - name: Update an Excel worksheet on a SharePoint site
       href: ./deprecation/update-excel-chart.md
+    - name: Update an SSRS report on a SharePoint site
+      href: ./deprecation/update-ssrs-report.md
   - name: "TFS 2017 & earlier versions"
     items:
     - name: Configure SharePoint integration

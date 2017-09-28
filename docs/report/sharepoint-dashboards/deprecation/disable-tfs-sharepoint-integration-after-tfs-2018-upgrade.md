@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -15,12 +15,9 @@ ms.topic:
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read [Discontinuing the pre-TFS 2018 SharePoint integration](./discontinue-pre-tfs-2017-sharepoint-integration.md).
 
-> [!IMPORTANT]  
-> **If you are upgrading from a previous version configured to integrate with SharePoint, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load.**
+**If you are upgrading from a previous version configured to integrate with SharePoint, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load.**
 
-This topic provides instructions on how to disable integration on a **SharePoint 2013** server after upgrading to TFS 2018. 
-
-If you are currently running **SharePoint 2010** and want to upgrade to TFS 2018, please reach out to us at [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com). 
+This topic provides instructions on how to disable integration on a **SharePoint 2010 or 2013** server after upgrading to TFS 2018. 
 
 If you wish to upgrade to **SharePoint 2016**, please see [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./upgrade-from-sharepoint2013-to-sharepoint-2106.md)
 
@@ -53,14 +50,25 @@ The solution is to install the **TFS Disconnector for SharePoint** on the ShareP
 
 The **TFS Disconnector for SharePoint** installs all the required references for TFS sites to display properly, while disabling TFS-SharePoint integration. 
 
-To install the TFS Disconnector for SharePoint, follow these steps:
+### **SharePoint 2010**: To install the TFS Disconnector for SharePoint on a SharePoint 2010 Server, follow these steps:
 
-1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2013 server. Unzip the files. You will be running **uninstall.ps1** and **script.ps1** later. **Currently, the TFS Disconnector for SharePoint supports only English. It will be updated shortly with support for other languages.** 
+1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2010 server. Unzip the files. You will be running **uninstall-2010.ps1** and **script-2010.ps1** later.  
+
+1. Run "SharePoint 2010 Management Shell" as an administrator. 
+1. From the shell, run **uninstall-2010.ps1** and complete all sections of the script. 
+1. From the shell, run **script-2010.ps1** and complete all sections of the script.
+1. Open **Central Administration>Monitoring>Check Job Status>Running** section and verify that the uninstall jobs finished prior to proceeding
+
+### **SharePoint 2013**: To install the TFS Disconnector for SharePoint on a SharePoint 2013 Server, follow these steps:
+
+1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2013 server. Unzip the files. You will be running **uninstall-2013.ps1** and **script-2013.ps1** later.  
 
 1. Run "SharePoint 2013 Management Shell" as an administrator. 
-1. From the shell, run **uninstall.ps1** and complete all sections of the script. 
-1. From the shell, run **script.ps1** and complete all sections of the script.
+1. From the shell, run **uninstall-2013.ps1** and complete all sections of the script. 
+1. From the shell, run **script-2013.ps1** and complete all sections of the script.
 1. Open **Central Administration>Monitoring>Check Job Status>Running** section and verify that the uninstall jobs finished prior to proceeding
+
+> If you have have problems running the scripts, please reach out to [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com)
 
 After the upgrade, your TFS SharePoint sites will display, but all integration functionality is disabled. The following image shows what the site will look like after you upgrade and disable SharePoint integration.
 

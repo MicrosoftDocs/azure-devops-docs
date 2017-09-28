@@ -7,10 +7,10 @@ ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/07/2017
+ms.date: 09/28/2017
 ---
 
-# Track work and issues, add and update a work item 
+# Add and follow a work item 
 
 <b>VSTS | TFS 2018 | TFS 2017</b> 
 
@@ -51,7 +51,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 That's it! 
 
@@ -74,7 +74,10 @@ To stop following changes, click the ![Following icon](../../work/_img/icons/fol
 
 ## Try this next  
 
-From the **Work** hub you can add the most common types of work items.  
+From the **Work** hub you can add the most common types of work items. To view 
+
+> [!div class="nextstepaction"]
+> [Create your backlog](create-your-backlog.md)
 
 To quickly add backlog items, such as user stories or requirements, see these topics:  
 > [!div class="nextstepaction"]

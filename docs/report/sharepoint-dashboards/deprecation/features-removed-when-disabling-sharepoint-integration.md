@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -85,7 +85,7 @@ The **tfsRedirect.aspx** looks up the location of the SQL Services Reporting Ser
 * Rename your team project
 * Rename your collection
 
-If any of these changes are made, then you can replace the URL in the [Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with the full URL to the SSRS Report. 
+If any of these changes are made, then you can replace the URL in the [Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with the full URL to the SSRS Report. See [How to update a SSRS report on a SharePoint site](./update-ssrs-report.md) 
 
 ## Quick links on a SharePoint site
 Quick links are listed on the left side navigation pane of a TFS SharePoint site. Quick links were supported by **tfsRedirect.aspx**. TFS SharePoint sites were created with the following Quick Links: 

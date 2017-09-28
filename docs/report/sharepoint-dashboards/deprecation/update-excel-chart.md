@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -48,3 +48,5 @@ Follow these steps to update the Data Connection string:
 Provider=MSOLAP.7;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=<**DATABASENAME**>;Location=<**SERVERNAME**>;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error;Update Isolation Level=2
 ```
 
+# Referenced topics
+* [Upload and refresh Excel reports in the team project portal](../upload-refresh-excel-reports.md)

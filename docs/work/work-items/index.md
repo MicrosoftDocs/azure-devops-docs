@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/28/2017
+ms.date: 09/28/2017
 ---
 
 # Work Items
@@ -21,6 +21,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## 5-Minute Quickstarts  
  
+- [View and add work items](view-add-work-items.md)  
 - [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
 
