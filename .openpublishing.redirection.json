@@ -4400,6 +4400,31 @@
             "source_path": "docs/work/overview.md",
             "redirect_url": "/vsts/work/backlogs/overview",
             "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/index.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/index",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/features-removed-when-disabling-sharepoint-integration.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/features-removed-when-disabling-sharepoint-integration",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/update-excel-chart.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/update-excel-chart",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/update-ssrs-report.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/update-ssrs-report",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/ecosystem/sharepoint/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md",
+            "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106",
+            "redirect_document_id": false
        }
     ]
 }
