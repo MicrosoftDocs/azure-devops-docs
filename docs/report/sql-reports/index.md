@@ -13,9 +13,9 @@ ms.date: 09/05/2017
 # Data Warehouse & SQL Server Reports    
 
 > [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json ).  
+> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json).  
 > 
-> For information on what is supported for VSTS, see [Dashboards and reports overview](../overview.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). 
+> For information on what is supported for VSTS, see [Dashboards and reports overview](../overview.md?toc=/vsts/report/sql-reports/toc.json). 
 
 
 <!---
@@ -24,19 +24,19 @@ ms.date: 09/05/2017
 -->
 
 ## 5-Minute Quickstarts  
-- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)  
+- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/vsts/report/sql-reports/toc.json)  
 
 
 ## Concepts 
 
 - [Choose data source and authoring tool](../choose-source-data-authoring-tool.md)
-- [Components of the data warehouse](components-data-warehouse.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)  
+- [Components of the data warehouse](components-data-warehouse.md?toc=/vsts/report/sql-reports/toc.json)  
 
 ## How-to Guides
 
-- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
-- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
-- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
+- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json)
+- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/vsts/report/sql-reports/toc.json)
+- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/vsts/report/sql-reports/toc.json)
 
   
 ## Reference

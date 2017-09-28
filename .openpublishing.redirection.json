@@ -3883,7 +3883,7 @@
        },
        {
             "source_path": "docs/work/reference/process-templates/customize-process.md",
-            "redirect_url": "/vsts/work/customize/reference/process-templates/ustomize-process",
+            "redirect_url": "/vsts/work/customize/reference/process-templates/customize-process",
             "redirect_document_id": false
        },
        {
@@ -4424,6 +4424,11 @@
        {
             "source_path": "docs/ecosystem/sharepoint/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md",
             "redirect_url": "/vsts/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/work/index.md",
+            "redirect_url": "vsts/#pivot=services&panel=agile",
             "redirect_document_id": false
        }
     ]
