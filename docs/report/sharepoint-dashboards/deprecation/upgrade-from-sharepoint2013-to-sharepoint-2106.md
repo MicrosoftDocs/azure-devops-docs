@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -95,11 +95,13 @@ Remedy          : One or more web parts are referenced in the database [WSS_Cont
 The solution is to install the TFS Disconnector for SharePoint on the SharePoint 2016 server first. To do this, follow these steps:
 
 1. Execute the guidelines described in [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420%28v=office.16%29.aspx), until you get to the "[Verify custom components](https://technet.microsoft.com/en-us/library/cc263299%28v=office.16%29.aspx)" step. 
-1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2016 server. Unzip the files. You will be running script.ps1 later. **Currently, the TFS Disconnector for SharePoint supports only  English. It will be updated shortly with support for other languages.**
+1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2016 server. Unzip the files. You will be running script-2016.ps1 later.
 1. Run “SharePoint 2016 Management Shell” as administrator. 
-1. From the shell, run script.ps1 and answer all the prompts.
+1. From the shell, run script-2016.ps1 and answer all the prompts.
 1. Open Central Administration -> Monitoring -> Check Job Status -> Running section and verify that the uninstall jobs finished prior to proceeding
 1. Proceed with "[Verify custom components](https://technet.microsoft.com/en-us/library/cc263299%28v=office.16%29.aspx)" step. 
+
+> If you have have problems running the scripts, please reach out to [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com)
 
 This installs all the required references for TFS Sites to display properly, while disabling TFS/SharePoint integration. 
 

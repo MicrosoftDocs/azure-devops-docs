@@ -5,7 +5,7 @@ ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
-ms.date: 09/19/17
+ms.date: 09/28/2017
 ms.topic: 
 ---
 
@@ -32,7 +32,9 @@ Discontinuing support for the TFS Extension for SharePoint removes support for t
 
 For a detailed description and suggested replacements, read [Features removed when disabling SharePoint integration](./features-removed-when-disabling-sharepoint-integration.md)
 
-# Support Matrix
+## TFS Extension for SharePoint - Support Matrix
+The following matrix shows where the TFS Extension for SharePoint is supported, and where we provide an upgrade path away from this old-style integration.
+
 | TFS version | SharePoint 2010 | SharePoint 2013 | SharePoint 2016 |
 | ---      | ---             | ---             | ---             |
 | TFS 2010 | Supported       | Supported       | Not Supported   |
@@ -52,9 +54,7 @@ For more information, read [Upgrade from SharePoint 2013 with TFS integration to
 ## Upgrade to TFS 2018
 TFS 2018 does not include the TFS Extension for SharePoint. If you are upgrading from a previous version configured to integrate with SharePoint, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load.
 
-We have created a solution that disables SharePoint integration on a **SharePoint 2013** server. It ensures your TFS SharePoint sites display properly.
-
-If you are currently running **SharePoint 2010** and want to upgrade to TFS 2018, please reach out to us at [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com). 
+We have created a solution that disables SharePoint integration on a **SharePoint 2010 or 2013** server. It ensures your TFS SharePoint sites display properly after upgrade.
 
 For more information, read [Disable SharePoint integration after TFS 2018 upgrade](disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
 
