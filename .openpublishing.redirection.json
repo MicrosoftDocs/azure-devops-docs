@@ -12,6 +12,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/articles/adopting-vsts.md",
+            "redirect_url": "/vsts/articles/migrate-to-vsts-from-tfs",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "articles/news/features-timeline.md",
             "redirect_url": "/vsts/release-notes/index",
             "redirect_document_id": false

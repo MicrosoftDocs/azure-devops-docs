@@ -1,15 +1,17 @@
 ---
-title: VSTS Public Articles 
+title: Technical Articles 
 description: A public collection of VSTS-specific topics shared for partners.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-ms.date: 06/01/2016
-ms.author: samgu
-author: mlearned
+ms.date: 09/29/2016
+ms.author: kaelli
+author: kaelli
 ---
 
-# Articles about DevOps and VSTS
+# Technical Articles
+
+**VSTS | TFS**
 
 Here you'll find more resources to support your development efforts with VSTS, Team Foundation Server, and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
@@ -38,12 +40,11 @@ Here you'll find more resources to support your development efforts with VSTS, T
 
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Phase the roll-out of your application through rings](phase-rollout-with-rings.md)
+ 
 
-## DevOps at Microsoft
+## Journey articles
 
-*   [Articles](https://www.visualstudio.com/learn/what-is-devops/) about how we use DevOps at Microsoft, best practices research, lessons learned, etc.
-
-## Journey content
+Learn more about how we use DevOps and Agile practices at Microsoft, best practices research, lessons learned, and more.
 
 *   [Agile](https://www.visualstudio.com/learn/what-is-agile/)
 *   [DevOps](https://www.visualstudio.com/learn/what-is-devops/)
