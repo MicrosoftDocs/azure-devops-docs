@@ -7,3 +7,5 @@ _themes*/
 
 .openpublishing.buildcore.ps1
 *.bmp
+/scract_redirect.json
+/scract_redirect.json
