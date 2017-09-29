@@ -33,7 +33,6 @@ using just a web browser.
 
 ## Resources
 
-| | | |
-| --- | --- | --- |
-| [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) | [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) | [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
-| | | |
+* [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
+* [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+* [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)

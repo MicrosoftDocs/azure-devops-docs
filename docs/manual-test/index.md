@@ -31,8 +31,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/user-guide/2016/193/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/user-guide/2016/194/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
 | | |
 
 ## Step-by-Step Tutorials
@@ -41,25 +40,27 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## How-to Guides
 
-* [Explore work items](explore-workitems-exploratory-testing.md)
-* [Get insights from tests](insights-exploratory-testing.md)
 * [Track test status](getting-started/track-test-status.md)
 * [Perform user acceptance testing](getting-started/user-acceptance-testing.md)
 * [Test different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](getting-started/how-long-to-keep-test-results.md)
+* [Explore work items](explore-workitems-exploratory-testing.md)
+* [Get insights from tests](insights-exploratory-testing.md)
 
 ## Reference
 
 * [FAQs for manual testing](reference-qa.md)
-* [REST API for test management](../integrate/index.md)
 * [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
 
 ## Resources
 
-| | | |
-| --- | --- | --- |
-| [Get Stakeholder feedback](../feedback/index.md) | [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
-| [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management) | |
-| [Load and performance testing](../load-test/index.md) | [Continuous testing](../build-release/test/index.md) | [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios) |
-| | | |
+* [Get Stakeholder feedback](../feedback/index.md)
+* [REST API for test management](../integrate/index.md)
+* [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/)
+* [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
+* [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx)
+* [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
+* [Load and performance testing](../load-test/index.md)
+* [Continuous testing](../build-release/test/index.md)
+* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)
