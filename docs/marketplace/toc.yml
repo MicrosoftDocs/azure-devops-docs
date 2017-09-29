@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Marketplace overview
+  - name: Discover extensions in the Marketplace
     href: overview.md
 - name: Quickstarts
   items:
@@ -22,9 +22,9 @@
     href: extension-report.md
 - name: Troubleshooting
   items:
-  - name: Getting and paying for extensions
+  - name: FAQs about getting and paying for extensions
     href: faq-extensions.md
-  - name: Marketplace support
+  - name: FAQs about the Marketplace
     href: marketplace-billing-qa.md
 - name: Resources
   items:
