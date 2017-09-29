@@ -11,11 +11,7 @@ ms.date: 4/17/2017
 
 #	Manage users in user hub table view for VSTS
 
-**VSTS Streamlined User Management Preview**
-
-If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
- 
-![Choose Preview features from your user menu in the upper right corner](_img/user-hub/preview-features.png)
+**VSTS**
 
 Add users to your VSTS account and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS account for free:
@@ -83,4 +79,3 @@ a user has. The same operations from the table's context menu are available in t
 ![User details view](_img/user-hub/user-details.png)
 
 
-[Troubleshooting](faq-add-delete-users.md)

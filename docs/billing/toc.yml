@@ -84,7 +84,7 @@
     href: faq-link-msdn-subscription-org-account.md
 - name: Reference
   items:
-  - name: Permissions and access for VSTS
+  - name: VSTS Permissions 
     href: ../security/permissions.md
 - name: Resources
   items:
