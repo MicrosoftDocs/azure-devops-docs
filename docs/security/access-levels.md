@@ -47,7 +47,7 @@ See [Stakeholder access](../security/get-started-stakeholder.md) for details of 
 
 ## VS Enterprise
 
-Assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/get-tfs-extensions.md#assign-extension).
+Assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/how-to/assign-paid-extension-access.md).
 
 **TFS 2017.2**
 
@@ -59,7 +59,7 @@ For TFS 2017 and earlier versions, you should assign the **Advanced** level to t
 These include a TFS CAL plus the rights to access the full set of Test features.  
 - A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](change-access-levels.md#test-manager). 
 
-For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension).
+For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md).
 	
 
 **TFS 2017, TFS 2017.1**

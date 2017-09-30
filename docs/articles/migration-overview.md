@@ -6,7 +6,7 @@ ms.technology: vs-devops-overview
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ---
 
-# Migration overview
+# Migrate data from TFS to VSTS
 
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.

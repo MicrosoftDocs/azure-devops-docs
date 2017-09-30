@@ -10,7 +10,7 @@ ms.author: elbatk
 ms.date: 04/28/2017
 ---
 
-#  Visual Studio Marketplace overview
+#  Discover extensions in the Marketplace
 
 The Visual Studio Marketplace provides support for the following: 
 - Discover and install extensions for Visual Studio, **Visual Studio Team Services (VSTS)**, **Team Foundation Server (TFS)**, and Visual Studio Code

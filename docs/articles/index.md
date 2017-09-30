@@ -13,19 +13,15 @@ author: kaelli
 
 **VSTS | TFS**
 
-Here you'll find more resources to support your development efforts with VSTS, Team Foundation Server, and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
+Here you'll find more resources to support your development efforts with Visual Studio Team Services (VSTS), Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
 > [!NOTE]
-> For the full VSTS documentation, go to [VSTS Documentation](/vsts).
+> For the full documentation set, go to [VSTS Documentation](../index.md).
    
 ##	Migration and integration
 
 *   [Migrate data from TFS to VSTS](migration-overview.md)
-*   [High fidelity migration from TFS to VSTS](migrate-to-vsts-from-tfs.md)  
-
-##	Security
-
-*   [VSTS Data Protection](team-services-security-whitepaper.md)
+*   [Migration options](migrate-to-vsts-from-tfs.md)  
 
 ## Version Control
 
@@ -40,6 +36,10 @@ Here you'll find more resources to support your development efforts with VSTS, T
 
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Phase the roll-out of your application through rings](phase-rollout-with-rings.md)
+
+##	Security
+
+*   [VSTS Data Protection](team-services-security-whitepaper.md)
  
 
 ## Journey articles

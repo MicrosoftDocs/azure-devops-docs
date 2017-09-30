@@ -1,5 +1,5 @@
 ---
-title: Migrate from TFS to VSTS | VSTS & TFS  
+title: Migratoptions for migrating from TFS to VSTS
 description: Learn about migrating from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-overview
@@ -10,7 +10,7 @@ ms.date: 06/22/2017
 ---
 
 
-# Migrate data from TFS to VSTS
+# Migration options
 
 When you decide to make the move from TFS to VSTS, you might start fresh with an empty account. Often, however,
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
