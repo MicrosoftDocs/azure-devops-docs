@@ -1,15 +1,11 @@
 - name: Technical Articles 
   href: index.md
-- name: Security
-  items:
-  - name: VSTS Data Protection
-    href: team-services-security-whitepaper.md
 - name: High-Fidelity Migration
   items:
-  - name: Migration options
-    href: migrate-to-vsts-from-tfs.md
-  - name: Overview
+  - name: Migrate data from TFS to VSTS
     href: migration-overview.md
+  - name: Migrate options
+    href: migrate-to-vsts-from-tfs.md
   - name: Import
     href: migration-import.md
   - name: Process Templates
@@ -36,10 +32,14 @@
       href: remove-binaries.md
 - name: DevOps
   items:
-    - name: CI/CD Best Practices Case Study
+    - name: Build and Deployment Automation Case Study
       href: build-deployment-best-practices.md
-    - name: Ring-based Phased Feature Rollouts
+    - name: Phase the roll-out of your application through rings
       href: phase-rollout-with-rings.md
+- name: Security
+  items:
+  - name: VSTS Data Protection
+    href: team-services-security-whitepaper.md
 - name: Journey articles
   items:
     - name: Agile
