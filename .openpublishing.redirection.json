@@ -4433,22 +4433,22 @@
        },
        {
             "source_path": "docs/work/index.md",
-            "redirect_url": "vsts/#pivot=services&panel=agile",
+            "redirect_url": "/vsts/#pivot=services&panel=agile",
             "redirect_document_id": false
        },
        {
             "source_path": "docs/articles/git-branching-guidance.md",
-            "redirect_url": "vsts/git/concepts/git-branching-guidance",
+            "redirect_url": "/vsts/git/concepts/git-branching-guidance",
             "redirect_document_id": false
        },
        {
             "source_path": "docs/articles/mapping-my-tfvc-actions-to-git.md",
-            "redirect_url": "vsts/git/concepts/mapping-my-tfvc-actions-to-git",
+            "redirect_url": "/vsts/git/concepts/mapping-my-tfvc-actions-to-git",
             "redirect_document_id": false
        },
        {
             "source_path": "docs/articles/branching-strategies-with-tfvc.md",
-            "redirect_url": "vsts/tfvc/branching-strategies-with-tfvc",
+            "redirect_url": "/vsts/tfvc/branching-strategies-with-tfvc",
             "redirect_document_id": false
        }
     ]
