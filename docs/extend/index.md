@@ -36,24 +36,23 @@ Check out the quick starts to get you started:
     * [Package and publish integrations](publish/integration.md)
 
 ## Reference
-* Development
-    * [Manifest reference](develop/manifest.md)
-    * [Build task reference](develop/build-task-schema.md)
-    * [Endpoint authentication schemes](develop/auth-schemes.md)
-    * [Content hosting](develop/static-content.md)
-    * [Modal dialog](develop/using-host-dialog.md)
-    * [Host page navigation](develop/host-navigation.md)
-    * [Basic styles for widgets](develop/styles-from-widget-sdk.md)
-    * [Auth and security](develop/auth.md)
-    * [Deploy web content to Azure](publish/publish-azure.md)
-    * UI controls
-        * [Combo](reference/client/controls/combo.md)
-        * [Grid](reference/client/controls/grid.md)
-        * [TreeView](reference/client/controls/tree.md)
-        * [MenuBar](reference/client/controls/menubar.md)
-        * [Modal Dialog](reference/client/controls/modaldialog.md)
-        * [Splitter](reference/client/controls/splitter.md)
-        * [WaitControl](reference/client/controls/waitcontrol.md)
+* [Manifest reference](develop/manifest.md)
+* [Build task reference](develop/build-task-schema.md)
+* [Endpoint authentication schemes](develop/auth-schemes.md)
+* [Content hosting](develop/static-content.md)
+* [Modal dialog](develop/using-host-dialog.md)
+* [Host page navigation](develop/host-navigation.md)
+* [Basic styles for widgets](develop/styles-from-widget-sdk.md)
+* [Auth and security](develop/auth.md)
+* [Deploy web content to Azure](publish/publish-azure.md)
+* UI controls
+    * [Combo](reference/client/controls/combo.md)
+    * [Grid](reference/client/controls/grid.md)
+    * [TreeView](reference/client/controls/tree.md)
+    * [MenuBar](reference/client/controls/menubar.md)
+    * [Modal Dialog](reference/client/controls/modaldialog.md)
+    * [Splitter](reference/client/controls/splitter.md)
+    * [WaitControl](reference/client/controls/waitcontrol.md)
 
 
 

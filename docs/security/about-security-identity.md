@@ -7,8 +7,8 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
 ms.topic: get-started-article
+ms.date: 10/02/2017
 ---
 
 # About security and identity  

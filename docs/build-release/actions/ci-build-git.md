@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 08/07/2017
+ms.date: 10/02/2017
 ms.custom: mvc
 ---
 
@@ -23,43 +23,42 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a fu
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Set up CI for feature branches
+> * Set up a CI trigger for feature branches
 > * Execute CI for a topic branch
 > * Exclude or include tasks for builds based on the branch being built
 > * Keep code quality high by building your pull requests
 > * Use retention policies to clean up your completed builds
 
 ## Prerequisites
+* Git repository in VSTS or TFS
 * A working build definition for a Git repository in VSTS
+	* If needed, complete one of the following:  [Build and deploy to an Azure Web App](../../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md), [Build your Java app with Maven](../../build-release/apps/java/build-maven.md), or [Build your Node.js with Gulp](../../build-release/apps/nodejs/build-gulp.md).
 
-## Set up CI for a topic branch
+## Set up a CI trigger for a topic branch
 
-A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.  Follow the steps below to create a branch from master and setup Continuous Integration (CI) to ensure your branch remains at high quality during the development cycle.
+A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.  VSTS allows you to create and delete topic branches to take advantage of CI without having to edit the build definition.  You can use naming conventions, wildcards, and branch filters to initiate builds that match a particular pattern.  Follow the steps below to create a CI trigger that will execute a build for feature branches.
 
-1. Navigate to the **Code** hub in the VSTS portal.    
-2. Select a **repository** that currently has your CI build configured for the master branch.  
-3. Click **Branches**, then click **New Branch**.
-4. Enter **features/feature-123**  for the **Name** of your branch.  Ensure you leave "Based on" set to **master** and click **Create branch**.  
-5. Click **Build & Release** menu and click **Builds**.
-6. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.
-7. Click the **Triggers** menu for your build.  Ensure you have **Continuous Integration** enabled.
-8.  Click the **+ Add** icon under **Branch Filters**.
-9.  Type **features/*** in the **Branch specification** dropdown.  The trigger supports CI for feature branches that match the wildcard and the master branch.    
+1. Click **Build & Release** menu and click **Builds**.
+2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.
+3. Click the **Triggers** menu for your build.  Ensure you have **Continuous Integration** enabled.
+4.  Click the **+ Add** icon under **Branch Filters**.
+5.  Type **features/*** in the **Branch specification** dropdown.  The trigger supports CI for feature branches that match the wildcard as well as the master branch.    
     ![Code hub in VSTS portal](_img/ci-build-git/triggerwildcard.png)
-11.  Click the **Save & queue** menu and then click **Save**.
+6.  Click the **Save & queue** menu and then click **Save**.
 
 ##  Execute CI for a topic branch
 
-Your topic branch is now ready for CI.  Every code change for the branch will use an automated build process to ensure the quality of your code remains high.  Practicing CI for your topic branches is a good practice and helps to minimize risk when merging back to master.
+Your build definition is now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build process to ensure the quality of your code remains high.  Follow the steps below to edit a file and create a new topic branch. 
 
 1.  Navigate to the **Code** hub in VSTS.
-2.  Choose your **repository** and click **Branches**.  Choose your **topic branch**.
-3.  Click the **Files** menu.  Make a quick code change by selecting a file and clicking **Edit**.  Add some text and click **Commit**.  The code is committed directly to your topic branch repository.
-     ![Edit code in browser](_img/ci-build-git/editcode.png)
-4.  Navigate to the **Build & Release** menu in VSTS and click **Builds**.
-5.  Click **Queued** under **Build Definitions** to view the queued builds.  You should now see your new build definition executing for the topic branch.  Wait for the build to finish.
+2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.
+3.  Click the **Files** menu.  Make a quick code change by selecting a file and clicking **Edit**.  Add some text and click **Commit**.  For **Branch name**, remove master and type **features/feature-123**.
+4.  Click **Commit**. This workflow creates a new topic branch under a parent named **features** and commits your code edits to the new branch.    
+     ![Create new branch](_img/ci-build-git/createnewbranch.png)
+5.  Navigate to the **Build & Release** menu in VSTS and click **Builds**.
+6.  Click **Queued** under **Build Definitions** to view the queued builds.  You should now see your new build definition executing for the topic branch.  This build was initiated by the trigger you created earlier.  Wait for the build to finish.
 
-Your typical development process typically includes developing code locally and periodically pushing to your remote topic branch.  Each push you make will result in a build process executing in the background.  The build process helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  
+Your typical development process typically includes developing code locally and periodically pushing to your remote topic branch.  Each push you make will result in a build process executing in the background.  The build process helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
 
 ## Exclude or include tasks for builds based on the branch being built
 
@@ -76,7 +75,7 @@ The master branch typically produces deployable artifacts such as binaries.  You
 and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 ```
 7.  Click the **Save & queue** menu and then click **Save & queue**. 
-8.  Choose your **topic branch** from the dialogue.  Click **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
+8.  Choose your **topic branch**.  Click **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
 9.  Click the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task step.
      
 
@@ -88,7 +87,7 @@ Use policies to protect your branches by requiring successful builds before merg
 2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.  3. You will implement a branch policy to protect the master branch.  Click the **ellipsis** to the right of your branch name and click **Branch policies**.    
 4.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.    
 5.  Under the **Build validation** menu choose **Add build policy**.
-6.  On the dialogue box, choose the appropriate **build definition**.
+6.  Choose the appropriate **build definition**.
 7.  Ensure **Trigger** is set to automatic and the **Policy requirement** is set to required.
 8.  Enter a descriptive **Display name** to describe the policy.  
 9.  Click **Save** to create and enable the policy.  Click **Save changes** at the top left of your screen.
@@ -101,10 +100,10 @@ Once the work is completed in the topic branch and merged to master, you can del
 
 ## Use retention policies to clean up your completed builds
 
-For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  Retention policies allow you to control and automate the cleanup of your various builds.
+Retention policies allow you to control and automate the cleanup of your various builds.  For shorter-lived branches like topic branches, you may want to retain less history to reduce clutter and storage costs.  If you create CI builds on multiple related branches, it will become less important to keep builds for all of your branches.  
 
 1.  Navigate to the **Build and Release** menu in VSTS.
-2.  Click the **Build** that you setup for your topic branch.
+2.  Click the **Build** that you set up for your topic branch.
 3.  Click **Edit** at the top right of your screen.
 4.  Under the build definition name, click the **Retention** tab.  Click **Add** to add a new retention policy.
     ![Retention menu](_img/ci-build-git/retentionpolicy.png)
@@ -116,7 +115,7 @@ Policies are evaluated in order, applying the first matching policy to each buil
 
 ## Next steps
 
-In this tutorial, you learned how to setup and manage CI with Git and VSTS.
+In this tutorial, you learned how to set up and manage CI with Git and VSTS.
 
 You learned how to:
 
