@@ -1,4 +1,4 @@
-- name: "Build Extensions"
+- name: "Develop Extensions"
   href: index.md
 - name: Overview
   items:
@@ -20,6 +20,10 @@
     href: develop/contributions-overview.md
 - name: How-to Guides
   items:
+  - name: Add a hub
+    href: develop/add-hub.md
+  - name: Add a menu action
+    href: develop/add-action.md
   - name: Add a build task
     href: develop/add-build-task.md
   - name: Add a dashboard widget
@@ -34,10 +38,6 @@
     href: develop/data-storage.md
   - name: Add Work hub extensions
     items:
-    - name: Add a hub
-      href: develop/add-hub.md
-    - name: Add a menu action
-      href: develop/add-action.md
     - name: Add backlog tabs
       href: develop/add-backlog-tabs.md
     - name: Add backlog panels
@@ -94,44 +94,42 @@
       href: extension-statistics-powerbi-contentpack.md
 - name: Reference
   items:
-  - name: Development
+  - name: Manifest reference
+    href: develop/manifest.md
+  - name: Build task reference
+    href: develop/build-task-schema.md
+  - name: Endpoint authentication schemes
+    href: develop/auth-schemes.md
+  - name: Content hosting
+    href: develop/static-content.md
+  - name: Modal dialog
+    href: develop/using-host-dialog.md
+  - name: Host page navigation
+    href: develop/host-navigation.md
+  - name: Basic styles for widgets
+    href: develop/styles-from-widget-sdk.md
+  - name: Auth and security
+    href: develop/auth.md
+  - name: Deploy web content to Azure
+    href: publish/publish-azure.md
+  - name: UI controls
     items:
-    - name: Manifest reference
-      href: develop/manifest.md
-    - name: Build task reference
-      href: develop/build-task-schema.md
-    - name: Endpoint authentication schemes
-      href: develop/auth-schemes.md
-    - name: Content hosting
-      href: develop/static-content.md
-    - name: Modal dialog
-      href: develop/using-host-dialog.md
-    - name: Host page navigation
-      href: develop/host-navigation.md
-    - name: Basic styles for widgets
-      href: develop/styles-from-widget-sdk.md
-    - name: Auth and security
-      href: develop/auth.md
-    - name: Deploy web content to Azure
-      href: publish/publish-azure.md
-    - name: UI controls
-      items:
-      - name: Combo
-        href: reference/client/controls/combo.md
-      - name: Grid
-        href: reference/client/controls/grid.md
-      - name: TreeView
-        href: reference/client/controls/tree.md
-      - name: MenuBar
-        href: reference/client/controls/menubar.md
-      - name: Modal Dialog
-        href: reference/client/controls/modaldialog.md
-      - name: Splitter
-        href: reference/client/controls/splitter.md
-      - name: WaitControl
-        href: reference/client/controls/waitcontrol.md
-      - name: How to get help
-        href: support/help.md
+    - name: Combo
+      href: reference/client/controls/combo.md
+    - name: Grid
+      href: reference/client/controls/grid.md
+    - name: TreeView
+      href: reference/client/controls/tree.md
+    - name: MenuBar
+      href: reference/client/controls/menubar.md
+    - name: Modal Dialog
+      href: reference/client/controls/modaldialog.md
+    - name: Splitter
+      href: reference/client/controls/splitter.md
+    - name: WaitControl
+      href: reference/client/controls/waitcontrol.md
+    - name: How to get help
+      href: support/help.md
 - name: Resources
   items:
   - name: Visual Studio Marketplace

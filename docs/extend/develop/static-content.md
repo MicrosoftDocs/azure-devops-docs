@@ -13,6 +13,10 @@ ms.date: 08/04/2016
 
 You have the option of hosting static content for your extension (like HTML, CSS, and JavaScript files) on your own service, a third-party hosting service (like Azure or Heroku), or on VSTS directly.
 
+>[!IMPORTANT]
+>If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom
+>tables should be created in a seperate schema. For example, '**YourExtensionName**'.
+
 ## Host on VSTS
 
 In this model, static content is packaged with your extension's .vsix file and is served from a public endpoint at `https://publisher.gallery.vsassets.io`. 

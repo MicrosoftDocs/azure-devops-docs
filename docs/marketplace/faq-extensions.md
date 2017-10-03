@@ -11,7 +11,7 @@ ms.date: 08/01/2017
 
 # Troubleshooting getting and paying for extensions for VSTS
 
-**VSTS**
+**VSTS** | **TFS 2017**
 
 
 ## General
