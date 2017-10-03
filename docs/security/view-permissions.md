@@ -5,12 +5,12 @@ ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
-ms.author: elbatk
-ms.date: 08/04/2017
+ms.author: kaelli
+ms.date: 10/02/2017
 ---
 
 
-## View permissions for yourself or others  
+# View permissions for yourself or others  
 
 **VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
 
