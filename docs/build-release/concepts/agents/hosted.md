@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: douge
 ms.author: alewis
-ms.date: 11/28/2016
+ms.date: 10/04/2017
 ---
 
 # Hosted agents
