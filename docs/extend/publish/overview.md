@@ -64,19 +64,29 @@ Before an extension can be installed into a VSTS account, it must be shared with
 
 To share an extension so it can be installed:
 
-1. Click an extension from the list of displayed items 
+1. Click on the ellipses of an extension item to bring up the menu
 2. Click the **Share** button
-3. Specify the name of the VSTS account to make this extension visible to.
+
+  ![Share Extensions](../_img/share-extension.png)
+
+3. Specify the name of the VSTS account to make this extension visible to
   - For example, to make an extension visible to the fabrikam-fiber-inc.visualstudio.com account, specify `fabrikam-fiber-inc`.
+
+
+
 
 ## Install 
 
 To install an extension that has been shared:
 
 1. From your VSTS account home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
-<center>![Manage Extensions](_img/manage-extensions.png)</center>
+
+  ![Manage Extensions](_img/manage-extensions.png)
+
 2. Find the extension under the **Shared with this account** category:
-<center>![Shared with me](./_img/extensions-tab-shared.png)</center>
+
+  ![Shared with me](./_img/extensions-tab-shared.png)
+
 3. Click the card to open the item in the Marketplace
 4. From the item's details page, click the **Install** button
 5. Choose the account you shared the extension with and proceed through the installation process. 
