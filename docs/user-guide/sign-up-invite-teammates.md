@@ -97,10 +97,20 @@ You provide others access to your account by adding their email address.
  
 	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
+	> [!NOTE]   
+	> You must add email addresses for 
+	> ["personal" Microsoft accounts](https://www.microsoft.com/account) 
+	> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+	> to authenticates users and control account access.  
+	> If your users don't have Microsoft accounts, 
+	> have them [sign up](https://signup.live.com/).
+
 ## Next steps  
  
 > [!div class="nextstepaction"]
 > [Add code to your Git repository](code-with-git.md) 
 > or 
 > [Plan and track work](plan-track-work.md) 
+
+For more information on managing users and account access, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md).
  

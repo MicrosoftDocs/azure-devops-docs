@@ -11,12 +11,13 @@ ms.date: 08/02/2017
 
 
 
-<a id="inheritance"> </a> 
+
 # Hosted XML process model  
 
 **VSTS**
 
 <a id="hosted-xml-process-model">  </a>
+
 
 You can perform the following tasks with the Hosted XML process model. 
 

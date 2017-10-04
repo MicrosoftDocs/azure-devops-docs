@@ -6,14 +6,14 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/28/2017
+ms.date: 10/04/2017
 ---
 
 # Agile at Scale  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage portfolios and gain visibility across teams. 
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
 
 ## Step-by-Step Tutorials
 

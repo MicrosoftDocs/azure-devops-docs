@@ -28,6 +28,8 @@
     href: stack-rank-backlog-position.md
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: Work in Excel or Project
+    href: office/track-work-vsts-tfs.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
@@ -43,7 +45,9 @@
   - name: "Create backlog items & tasks (Project)"
     href: office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Storyboard your ideas
-    href: office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
+    href: office/add-share-storyboard-shapes.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
+  - name: Add and share storyboard shapes
+    href: office/add-share-storyboard-shapes.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
   - name: "Manage permissions & access"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Troubleshooting

@@ -6,7 +6,7 @@ ms.technology: vs-devops-overview
 ms.assetid: 35ea128b-7565-4ee3-8266-b9f0d32aecf4   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 08/05/2017
 ---
 
 # Keyboard shortcuts 

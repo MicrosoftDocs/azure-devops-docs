@@ -142,6 +142,11 @@
       href: ../../report/excel/testing-gaps-excel-report-cmmi.md 
     - name: Excel reports (CMMI)
       href: ../../report/excel/excel-reports-cmmi.md  
+  - name: Excel workbooks 
+    items:
+    - name: Issues and Triage workbooks
+      href: ../guidance/workbooks.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
+
 - name: Resources
   items:
   - name: Microsoft Teams

@@ -9,13 +9,15 @@ ms.author: kaelli
 ms.date: 08/28/2017
 ---
   
-<a id="filter"></a>
+
 
 # Filter your Kanban board
 
 <b>VSTS | TFS 2017 | TFS 2015</b>  
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
+<a id="filter"></a>
+
  
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
 

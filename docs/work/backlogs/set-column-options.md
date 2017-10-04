@@ -6,14 +6,16 @@ ms.prod: vs-devops-alm
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/01/2017
+ms.date: 08/28/2017
 ---
 
 
-<a id="column-options">  </a>
+
 # Change column options 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+<a id="column-options">  </a>
 
 From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. 
 

@@ -7,7 +7,7 @@ ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.date: 03/02/2016
+ms.date: 10/02/2017
 ---
 
 # Requirements and compatibility
@@ -143,9 +143,9 @@ We recommend Standard or Enterprise for all other scenarios.
 <a name="sharepoint"></a>
 ## SharePoint
 
-**TFS 2018 discontinues support for the TFS Extension for SharePoint. 
-For more information, go here: 
-[https://go.microsoft.com/fwlink/?linkid=852977](https://go.microsoft.com/fwlink/?linkid=852977).**
+> [!IMPORTANT]  
+> TFS 2018 discontinues support for the TFS Extension for SharePoint. 
+> For more information, see [Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
 
 SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
 

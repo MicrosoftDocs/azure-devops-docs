@@ -11,7 +11,13 @@ ms.date: 09/19/2017
 
 # Feedback 
  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
+
+>[!NOTE]  
+><b>Feature availability: </b>The Test & Feedback extension is available for VSTS and TFS 2017 and later versions.  
+
 
 <!---
 ## Overview  

@@ -1,20 +1,27 @@
 ---
-title: Excel workbooks supported with the Agile and CMMI process templates for TFS   
-description: Use the workbook to rank and assign bugs to be worked on for an iteration, also referred to as a sprint.
+title: Excel workbooks uploaded to the project portal with Agile and CMMI   
+description: Use a workbook to track work 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
 ms.assetid: ac07307f-e87c-43d5-a044-01023cea2e50
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/03/2017
 ---
+
+
 # Workbooks 
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+**TFS 2017 | TFS 2015 | TFS 2013**  
+
+>[!IMPORTANT]  
+>Excel workbooks, Excel reports, and SharePoint dashboards are only supported for on-premises TFS. For information on what is supported for VSTS, see [Dashboards, charts, & widgets](/vsts/report/overview).
+> 
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
   
- You can open the workbook from the Documents page in Team Explorer.  
+You can open a workbook from the Documents page in Team Explorer. Or, you can open a query and use the [triage mode to update work items](../../work/track/triage-work-items.md). 
   
- **Requirements**  
+**Requirements**  
   
 -   Your team project must be provisioned with SharePoint Products and the project portal enabled. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
   
@@ -44,4 +51,4 @@ ms.date: 12/30/2016
 ## Q & A  
   
 ### Q: How can I create my own workbooks?  
- **A:** See [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).
+ **A:** Yes. You can define your own queries and then open them in Excel. For details, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).

@@ -11,7 +11,13 @@ ms.date: 08/03/2017
 
 # READMEs & Wikis 
 
+**VSTS | TFS 2018 | TFS 2017**
+
 Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
+
+>[!NOTE]  
+><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS and TFS 2018 and later versions.
+
 
 <!--- There isn't really any how-to guidance about creating or working with README file, what we have is conceptual --> 
 

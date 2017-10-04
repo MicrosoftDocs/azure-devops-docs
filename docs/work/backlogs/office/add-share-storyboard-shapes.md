@@ -6,7 +6,7 @@ ms.technology: vs-devops-wit
 ms.assetid: c8f3136e-a560-4ea5-83fd-602f89c74155
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/22/2017
+ms.date: 06/22/2017
 ---
 
 # Add and share storyboard shapes
