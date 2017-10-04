@@ -2,6 +2,11 @@
     "redirections": 
 	[
         {
+            "source_path": "docs/accounts/requirements.md",
+            "redirect_url": "/vsts/tfs-server/requirements.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/test/test-redirect-2.md",
             "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
@@ -193,7 +198,7 @@
         },
         {
             "source_path": "docs/setup-admin/requirements.md",
-            "redirect_url": "/vsts/accounts/requirements",
+            "redirect_url": "/vsts/tfs-server/requirements.md",
             "redirect_document_id": false
         },
         {
@@ -1204,11 +1209,6 @@
         {
             "source_path": "docs/tfs-server/rename-team-project.md",
             "redirect_url": "/vsts/accounts/rename-team-project",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/tfs-server/requirements.md",
-            "redirect_url": "/vsts/accounts/requirements",
             "redirect_document_id": false
         },
         {

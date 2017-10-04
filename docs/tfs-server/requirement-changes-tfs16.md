@@ -18,7 +18,7 @@ ms.date: 07/11/2017
 There are a number of changes coming to Team Foundation Server
 requirements in TFS 2018. Details on requirements across versions 
 of TFS can be found in 
-[requirements and compatibility](../accounts/requirements.md). This document
+[requirements and compatibility](requirements.md). This document
 is intended to help current users of TFS 2017 who are upgrading
 to TFS 2018.
 

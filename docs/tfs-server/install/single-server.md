@@ -16,7 +16,7 @@ ms.topic: get-started-article
 **TFS 2017** | **TFS 2015**
 
 The simplest way to set up TFS is to put everything on a single server. 
-Make sure to review our [hardware recommendations](../../accounts/requirements.md#hardware-recommendations)
+Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations)
 to confirm that this configuration seems appropriate for your team. If not, 
 consider a [dual server](dual-server.md) or [multiple server](multiple-server.md)
 configuration instead.
@@ -24,10 +24,10 @@ configuration instead.
 ## Preparation
 
 0. Prepare a single computer that satisfies the 
-[system requirements](../../accounts/requirements.md) for TFS. 
+[system requirements](../requirements.md) for TFS. 
 
 0. If you do not plan to use SQL Express, set up an
-[appropriate version of SQL Server](../../accounts/requirements.md#sql-server).
+[appropriate version of SQL Server](../requirements.md#sql-server).
 When you set SQL Server up for TFS, install at least the database
 engine and full text search services.
 

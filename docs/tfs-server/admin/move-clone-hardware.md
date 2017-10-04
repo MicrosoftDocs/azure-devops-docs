@@ -121,7 +121,7 @@ To configure a new server or servers for TFS, you must first install and configu
 
 -   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
 
-    For more information, see [the system requirements for Team Foundation Server](../../accounts/requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
+    For more information, see [the system requirements for Team Foundation Server](../requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
 
 
 

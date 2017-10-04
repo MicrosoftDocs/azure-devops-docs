@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 You have several choices
 in how to deploy TFS, from putting everything on a single server all the way to using multiple 
 application tiers, multiple SQL instances, and a SharePoint farm. See our
-[hardware recommendations](../../accounts/requirements.md#hardware-recommendations) for more detailed help 
+[hardware recommendations](../requirements.md#hardware-recommendations) for more detailed help 
 in determining the right type of deployment for your team. 
 
 * [Single server](single-server.md)    

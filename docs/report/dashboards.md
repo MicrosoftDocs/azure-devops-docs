@@ -29,7 +29,7 @@ If you need to add a team first, see [add teams and team members](../work/scale/
 
 ## Connect to the web portal for your team project 
 
-To add and manage dashboards, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
+To add and manage dashboards, you connect to your team project using a [supported web browser](../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
 
 Open a browser window and click the **Dashboards** hub. 
 

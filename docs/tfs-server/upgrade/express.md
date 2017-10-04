@@ -19,7 +19,7 @@ do not support SharePoint or reporting, etc.
 
 ## Prepare your environment
 
-As with any upgrade, you will need to check [system requirements](../../accounts/requirements.md) to
+As with any upgrade, you will need to check [system requirements](../requirements.md) to
 ensure that your current configuration is supported. For an Express deployment this will mean 
 checking the OS. The TFS 2015 Express upgrade process will attempt to upgrade SQL Express to
 SQL 2014 SP1 Express, which typically requires the latest service pack of whatever version

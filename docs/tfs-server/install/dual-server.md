@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 You can enable your TFS deployment to handle more load than a single server 
 configuration by deploying the application and data tiers on separate servers.
-Make sure to review our [hardware recommendations](../../accounts/requirements.md#hardware-recommendations)
+Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations)
 to confirm that this configuration seems appropriate for your team. If not, 
 consider a [single server](single-server.md) or 
 [mutliple server](multiple-server.md) configuration instead.
@@ -24,13 +24,13 @@ consider a [single server](single-server.md) or
 ## Preparation
 
 0. Prepare an application tier server that satisfies the 
-[system requirements](../../accounts/requirements.md) for TFS.
+[system requirements](../requirements.md) for TFS.
 
 0. Prepare a data tier server that meets the 
-[hardware recommendations](../../accounts/requirements.md#hardware-recommendations)
+[hardware recommendations](../requirements.md#hardware-recommendations)
 for your team. 
 
-	Set up an [appropriate version of SQL Server](../../accounts/requirements.md#sql-server) 
+	Set up an [appropriate version of SQL Server](../requirements.md#sql-server) 
 	on the data tier. When you set SQL Server up for TFS, install at least the 
 	database engine and the full text search services.
 
@@ -73,7 +73,7 @@ engine from the application tier.
 0. If you're going to enable SharePoint integration, 
 prepare one of the servers for that.
 
-	Install [an appropriate version of SharePoint](../../accounts/requirements.md#sharepoint). 
+	Install [an appropriate version of SharePoint](../requirements.md#sharepoint). 
 	If you already have SharePoint deployed, you can use that deployment instead of 
 	installing it on one of your new servers - just install TFS on the SharePoint 
 	server and run the Configure Extensions for SharePoint Products wizard.

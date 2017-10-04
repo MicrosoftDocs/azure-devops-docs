@@ -16,7 +16,7 @@ ms.date: 09/09/2017
 To integrate team projects with SharePoint sites, you must add one or
 more SharePoint Web applications to standard and advanced installations
 of Team Foundation Server (TFS). The version of SharePoint Products must
-also be compatible with TFS. For more information, see [SharePoint Products requirements for Team Foundation Server](../../accounts/requirements.md#sharepoint).
+also be compatible with TFS. For more information, see [SharePoint Products requirements for Team Foundation Server](../requirements.md#sharepoint).
 
 For guidance about how to install SharePoint Products for TFS, see
 Manually Install SharePoint Products. For guidance about how to add an

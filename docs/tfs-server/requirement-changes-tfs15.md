@@ -17,7 +17,7 @@ ms.date: 09/26/2016
 There are a number of changes coming to Team Foundation Server
 requirements in TFS 2017. Details on requirements across versions 
 of TFS can be found in 
-[requirements and compatibility](../accounts/requirements.md). This document
+[requirements and compatibility](requirements.md). This document
 is intended to help current users of TFS 2015 who are upgrading
 to TFS 2017.
 

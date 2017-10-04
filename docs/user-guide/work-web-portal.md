@@ -28,7 +28,7 @@ If you don't have a team project yet, create one in [VSTS](../accounts/create-ac
 >[!NOTE]  
 >**Feature availability**: The features available to you depend on the platform (VSTS or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to VSTS. Many of these features are then made available to [on-premises TFS through regular updates](/vsts/release-notes/index).  
 
-To get started, from a [supported web browser](../accounts/requirements.md#browsers) enter the following URL:
+To get started, from a [supported web browser](../tfs-server/requirements.md#browsers) enter the following URL:
 
 **VSTS:**
 	<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i> </code></pre>

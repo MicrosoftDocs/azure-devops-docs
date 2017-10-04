@@ -23,7 +23,7 @@ application tier and a second serving as the data tier for both the config/colle
 reporting and analysis services databases. Both machines are currently running Windows Server 2008 SP2, and
 the data tier is currently running SQL Server 2008 R2. 
 
-Our first step is to check the [system requirements](../../accounts/requirements.md) for TFS 2015. Unfortunately,
+Our first step is to check the [system requirements](../requirements.md) for TFS 2015. Unfortunately,
 neither the OS nor the SQL version we are using are still supported, so we will need to make some changes. We
 decide to take the opportunity to acquire two more powerful machines, and we install Windows Server 2012 R2 on
 both of them. We install SQL Server 2014 on the data tier, making sure to include Reporting Services and
