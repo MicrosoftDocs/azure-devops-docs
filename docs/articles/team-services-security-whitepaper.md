@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.author: mlearned
-ms.date: 10/03/2017
+ms.date: 10/04/2017
 ---
 
 
@@ -365,7 +365,7 @@ appropriately restricting usage so that your data is used only for
 legitimate reasons.
 
 
-## Data residency and sovereignty
+### Data residency and sovereignty
 
 We know our customers care deeply about data security and privacy. 
 VSTS is available in the following 6 regions across the world: US Central, 
