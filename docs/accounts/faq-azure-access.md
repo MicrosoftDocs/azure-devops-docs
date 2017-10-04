@@ -34,8 +34,6 @@ that's **not** from one of these offers:
 
 * A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
 
-* From the [Cloud Solution Provider program](https://partner.microsoft.com/en-US/Solutions/cloud-reseller-overview)
-
 You must then associate that subscription with your Office 365 Azure AD. You'll also need additional subscription 
 administrator permissions beyond Co-administrator permissions.
 
@@ -304,7 +302,6 @@ and connect your Azure AD to your VSTS account. Learn
 
 	*	An [Azure Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
 	*	A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
-	*	From the [Cloud Solution Provider program](https://partner.microsoft.com/en-US/Solutions/cloud-reseller-overview)
 
 	You must then associate that subscription with your Office 365 Azure AD. 
 	To do this for your Office 365 Azure AD, 

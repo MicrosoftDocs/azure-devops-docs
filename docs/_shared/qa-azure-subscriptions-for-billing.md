@@ -8,7 +8,6 @@ that's not:
 
 *	An [Azure Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
 *	A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
-*	From the [Cloud Solution Provider program](https://partner.microsoft.com/en-US/Solutions/cloud-reseller-overview)
 
 If you have one of these subscriptions, set up a separate 
 [Pay-As-You-Go Azure subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/) 
