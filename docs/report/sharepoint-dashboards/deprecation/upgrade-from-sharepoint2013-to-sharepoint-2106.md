@@ -96,6 +96,7 @@ The solution is to install the TFS Disconnector for SharePoint on the SharePoint
 
 1. Execute the guidelines described in [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420%28v=office.16%29.aspx), until you get to the "[Verify custom components](https://technet.microsoft.com/en-us/library/cc263299%28v=office.16%29.aspx)" step. 
 1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2016 server. Unzip the files. You will be running script-2016.ps1 later.
+    > The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English and SharePoint 2010 was added.
 1. Run “SharePoint 2016 Management Shell” as administrator. 
 1. From the shell, run script-2016.ps1 and answer all the prompts.
 1. Open Central Administration -> Monitoring -> Check Job Status -> Running section and verify that the uninstall jobs finished prior to proceeding

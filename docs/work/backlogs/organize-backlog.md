@@ -7,8 +7,8 @@ ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 06/19/2017
---- 
+ms.date: 08/29/2017
+---
 
 # Organize your backlog, map child work items to parents 
 

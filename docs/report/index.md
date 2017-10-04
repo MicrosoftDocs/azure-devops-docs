@@ -11,6 +11,9 @@ ms.date: 06/22/2017
 
 # Dashboards 
 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+
 Start gaining visibility into how your team is progressing by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress.  
 
 <!---

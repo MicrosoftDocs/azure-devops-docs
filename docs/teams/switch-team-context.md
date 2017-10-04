@@ -6,13 +6,15 @@ ms.prod: vs-devops-alm
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/01/2017
+ms.date: 09/29/2017  
 ---
-<a id="switch-team-context">  </a>
+
 
 # Switch team project or team focus   
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+<a id="switch-team-context">  </a>
 
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 

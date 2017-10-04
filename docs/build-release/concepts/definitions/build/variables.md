@@ -120,7 +120,7 @@ You can pass environment variables of the build machine into build steps. For ex
             <td style="font-size:80%">Agent</td>
             <td>
                 <p style="font-size:80%">
-                    The directory the agent is installed into. This contains the agent software. For example: `c:\agent\`.
+                    The directory the agent is installed into. This contains the agent software. For example: `c:\agent`.
                 </p>
                 <p style="font-size:80%">If you are using an on-premises agent, this directory is specified by you. See [Agents](../../../concepts/agents/agents.md).</p>
             </td>

@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 09/07/2017
 ---
+
+
 # Locate reports after the upgrade to TFS 2010
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

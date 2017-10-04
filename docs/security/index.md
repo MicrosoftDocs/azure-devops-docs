@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Security & Identity 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!---
 ## Overview  

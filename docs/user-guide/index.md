@@ -11,6 +11,8 @@ ms.date: 08/18/2017
 
 # New User Guide
 
+**VSTS | TFS**
+
 New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? 
 
 We'll walk you through the basics of the web interface and some common tasks.  
@@ -27,7 +29,7 @@ We'll walk you through the basics of the web interface and some common tasks.
 
 Get started with a free account, share your code using Git, and track your work using a Kanban board.  
 
-- [Set up/sign up with VSTS](sign-up-invite-teammates.md)  
+- [Sign up and invite some teammates](sign-up-invite-teammates.md)  
 - [Code with Git](code-with-git.md)
 - [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Plan & track work](plan-track-work.md)

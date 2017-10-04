@@ -11,6 +11,8 @@ ms.date: 09/12/2017
 
 # Queries
 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+
 List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 
 <!---

@@ -12,8 +12,10 @@ ms.date: 09/29/2017
 ---
 
 
-<a id="define-query-hyperlink" />  
+
 # Define a query as a hyperlink  
+
+<a id="define-query-hyperlink" />  
 
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md).
 

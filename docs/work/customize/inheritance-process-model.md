@@ -11,10 +11,12 @@ ms.date: 08/02/2017
 
 
 
-<a id="inheritance"> </a> 
+
 # Inheritance process model  
 
 **VSTS**
+
+<a id="inheritance"> </a> 
 
 You can perform the following tasks with the Inheritance process model. 
 

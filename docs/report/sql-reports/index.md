@@ -12,6 +12,8 @@ ms.date: 09/05/2017
 
 # Data Warehouse & SQL Server Reports    
 
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+
 > [!IMPORTANT]  
 > Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json).  
 > 

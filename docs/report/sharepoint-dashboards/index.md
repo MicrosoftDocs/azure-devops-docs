@@ -11,6 +11,8 @@ ms.date: 09/05/2017
 
 # SharePoint Integration  
   
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+
 
 ## Overview 
 - [About SharePoint integration](about-sharepoint-integration.md)

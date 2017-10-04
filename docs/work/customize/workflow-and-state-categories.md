@@ -6,7 +6,7 @@ ms.technology: vs-devops-wit
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.manager: douge
-ms.date: 03/31/2017
+ms.date: 09/29/2017
 ---
 
 # Workflow states and state categories

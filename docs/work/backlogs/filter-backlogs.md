@@ -9,13 +9,14 @@ ms.author: kaelli
 ms.date: 08/28/2017
 ---
   
-<a id="filter"></a>
+
 
 # Filter product and portfolio backlogs 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
+<a id="filter"></a>
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set.  
 

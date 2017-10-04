@@ -1174,7 +1174,7 @@ ms.date: 07/26/2017
                                 <h3>REST APIs</h3>
                                 <ul class="noBullet">
                                     <li>
-                                        <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
+                                        <a class="barLink" href="/vsts/integrate/index">Get Started</a>
                                     </li>
                                     <li>
                                         <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">API reference</a>
