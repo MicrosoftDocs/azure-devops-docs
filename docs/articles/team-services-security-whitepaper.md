@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.author: mlearned
-ms.date: 09/08/2017
+ms.date: 10/03/2017
 ---
 
 
@@ -126,7 +126,7 @@ has procedures to protect data from accidental or malicious deletion.
 To protect data in the case of hardware or service failures, Microsoft
 Azure storage typically geo-replicates customer data between two locations within
 the same region that are hundreds of miles apart; for instance, between
-North and West Europe or between North and South United States*. For
+North and West Europe or between North and South United States (except Brazil). For
 Azure blobs, customer data is replicated three times within a single
 data center and is replicated asynchronously to a second data center
 hundreds of miles away. As such, Azure maintains the equivalent of six
@@ -136,8 +136,9 @@ also providing local redundancy for hardware failures within a data
 center. For Azure SQL database storage, daily backups are maintained
 offsite in the case of data center disasters.
 
-* Because there is only one region in Brazil, customer data in Brazil is replicated 
-to South Central US for disaster recovery purposes.
+>[!NOTE]
+>Because there is only one region in Brazil, customer data in Brazil is 
+>replicated to South Central US for disaster recovery purposes.
 
 ### Mistakes happen
 
@@ -362,6 +363,21 @@ We want you to have confidence that your data is being handled
 appropriately and for legitimate uses. Part of that assurance involves
 appropriately restricting usage so that your data is used only for
 legitimate reasons.
+
+
+## Data residency and sovereignty
+
+We know our customers care deeply about data security and privacy. 
+VSTS is available in the following 6 regions across the world: US Central, 
+Canada Central, West Europe, India South, Australia East, Brazil South. 
+While we default your account to your closest region, you have the option to choose 
+a different region. If you change your mind later, our CSS team can help you 
+migrate your account to a different region. VSTS will not move or replicate 
+customer data outside of the chosen region. Our backup procedures geo-replicates 
+customer data between a second data center within the same region 
+except for accounts located in Brazil, these are replicated to South Central US 
+for disaster recovery purposes.
+
 
 ### Law enforcement access
 
