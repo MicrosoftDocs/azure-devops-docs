@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
     - name: Feedback
-      tocHref: /vsts/
+      tocHref: /vsts/feedback/
       topicHref: /vsts/feedback/index

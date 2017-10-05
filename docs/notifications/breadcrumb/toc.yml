@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
     - name: Notifications
-      tocHref: /vsts/
+      tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index

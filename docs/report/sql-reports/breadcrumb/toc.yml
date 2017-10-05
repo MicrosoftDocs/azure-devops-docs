@@ -3,9 +3,9 @@
   topicHref: /vsts/index
   items: 
   - name: Reporting
-    tocHref: /vsts/report/
+    tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=analytics
     items:
-    - name: Dashboards
-      tocHref: /vsts/report/
-      topicHref: /vsts/report/index
+    - name: TFS Reporting
+      tocHref: /vsts/
+      topicHref: /vsts/report/sql-reports/index
