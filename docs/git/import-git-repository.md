@@ -7,18 +7,18 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/30/2017
+ms.date: 10/05/2017
 ---
 
 # Import a Git repo
-#### VSTS | TFS 2017 Update 1
+#### VSTS | TFS 2018, TFS 2017 Update 1
 
-This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Team Project. 
+This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 
 ## Prerequisites
 
 * A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
-  * If you are using TFS, you must have TFS 2017 Update 1 or higher.
+  * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM, see [Manually import a repo](#manually-import-a-repo).
 
 ## Import into a new repo
 
@@ -34,9 +34,39 @@ If the source repository is private but can be accessed using basic authenticati
 
 ## Import into an existing empty repo
 
-On the **Files** page of the empty Git repository, select **Import repository** and [enter the clone URL](tutorial/clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
+On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](tutorial/clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
 
 ![Import Repository into an existing repository](_img/Import-Repo/ImportRepofromEmptyRepo.png)
+
+
+## Manually import a repo
+
+The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM, you can use the following steps to manually import a repo into TFS 2017 RTM. You can also follow these steps to manually import a repo into a VSTS repo by replacing TFS with VSTS in the following steps.
+
+0. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
+
+    ```
+    git clone --bare https://github.com/contoso/old-contoso-repo.git
+    cd old-contoso-repo.git
+    ```
+
+0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+
+0. Run the following command to copy the source repo to the target repo.
+
+    ```
+    git push --mirror https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo
+    ``` 
+
+0. Delete the temporary folder by running the following commands.
+
+    ```
+    cd ..
+    rm -rf old-contoso-repo.git
+    ```
+
+
+
 
 ## Frequently asked questions
 
@@ -46,6 +76,7 @@ Although most of the time the import is successful, the following conditions can
 * [What if my source repository does not support multi_ack?](#what-if-my-source-repository-does-not-support-multiack)
 * [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
 * [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
+* [Can I import from TFVC?](#can-i-import-from-tfvc)
 
 ### What if my source repository is behind two-factor authentication?
 
@@ -70,6 +101,10 @@ One way to check if the username / password you are using are basic auth or not 
 git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 ```
 
+### Can I import from TFVC?
+
+You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. For more information, see [Import from TFVC to Git](import-from-tfvc.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -77,3 +112,4 @@ git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)
+
