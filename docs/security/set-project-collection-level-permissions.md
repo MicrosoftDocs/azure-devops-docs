@@ -10,12 +10,11 @@ ms.author: kaelli
 ms.date: 08/24/2017
 ---
 
-# Set permissions at the project-level or project collection-level
+# Add administrators, set permissions at the project-level or project collection-level
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Several permissions are set at the team project or at the account/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a VSTS/TFS security group within a level and add members to that group. You can then change the default permission settings.    
-
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -104,8 +103,11 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ## Related notes
 
+For on-premises TFS, see [Add a user as a TFS server administrator](../tfs-server/add-administrator-tfs.md). 
+
 - [About permissions and groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Team administrator permissions](../work/scale/team-administrator-permissions.md)
 - [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md)
+

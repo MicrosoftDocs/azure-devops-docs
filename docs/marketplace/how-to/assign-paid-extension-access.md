@@ -31,7 +31,7 @@ so they can start using that extension's capabilities.
 
 ## Who can assign paid extensions to users?
 
-[Project collection administrators](../../accounts/add-administrator-project-collection.md) 
+[Project collection administrators](../../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../../security/permissions.md#collection) 
 can assign paid extensions to users.
 

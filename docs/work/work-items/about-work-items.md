@@ -58,7 +58,7 @@ Within the work item form, such as the web form shown, click the Assigned To fie
 
 Note the following: 
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [VSTS account](../../accounts/add-team-members-vs.md) or [TFS team project](../../accounts/add-users.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).    
+- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [VSTS account](../../accounts/add-team-members-vs.md) or [TFS team project](../../security/add-users-team-project.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).    
 - Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
 - Over time, the drop-down menu of person-name fields will display most recently selected names  
 - The system shows the display name and adds the account name when required to disambiguate identical display names  

@@ -24,6 +24,6 @@ You might receive this error when you try to connect to VSTS (VSTS) or an on-pre
 |Your user account doesn't have sufficient permissions to connect.|Check with your VSTS account administrator or TFS administrator or that you have the necessary permissions to connect. For VSTS, you must have an active, valid license. See [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md) for details.|  
   
 ## Related notes 
-- [Add users to team projects (TFS)](../../../../accounts/add-users.md)   
+- [Add users to team projects (TFS)](../../../../security/add-users-team-project.md)   
 - [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md)
 - [Permission reference](../../../../security/permissions.md)

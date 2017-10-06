@@ -10,7 +10,7 @@ ms.topic: get-started-article
 ms.date: 09/07/2017
 ---
 
-# Dashboards
+# Add and manage dashboards
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3</b>
 

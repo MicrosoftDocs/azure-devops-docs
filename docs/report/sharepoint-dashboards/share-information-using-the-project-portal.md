@@ -45,7 +45,7 @@ Teams use project portals to share information and support how their team works.
   
      To learn more about SharePoint dashboards, see [Project portal dashboards](project-portal-dashboards.md).  
   
-     If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../accounts/add-users.md).  
+     If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../security/set-sharepoint-permissions.md).  
   
   
 ## Related notes

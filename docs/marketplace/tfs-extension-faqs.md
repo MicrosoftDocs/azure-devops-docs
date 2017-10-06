@@ -46,7 +46,7 @@ included with their subscriptions as benefits. They can use these extensions aft
 
 A: This might happen for these reasons: 
 
-* You must be a member of the [Project Collection Administrators group](../accounts/add-administrator-project-collection.md) 
+* You must be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) in the team project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
 
 * If you get an error that your extension is already installed or requested, check with your project collection administrator and ask them to assign the extension to you.

@@ -35,7 +35,7 @@ so you can install [free, preview, and paid extensions](#difference).
 
 ### What do I need to install extensions?
 
-[Project collection administrators](../accounts/add-administrator-project-collection.md) 
+[Project collection administrators](../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
@@ -121,7 +121,7 @@ can upload extensions.
 
 ### Who can install extensions?
 
-[Project collection administrators](../accounts/add-administrator-project-collection.md) 
+[Project collection administrators](../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 

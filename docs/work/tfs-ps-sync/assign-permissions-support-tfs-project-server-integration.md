@@ -373,7 +373,7 @@ ms.date: 03/16/2017
   
 -   **Reader** role: Users who modify enterprise project plans that are mapped to a team project.  
   
- For more info, see [Add users to team projects](../../accounts/add-users.md).
+ For more info, see [Add users to team projects](../../security/add-users-team-project.md).
   
 ## Permission checklist  
  Use the following checklist to review that all permissions have been set according to your version and authentication mode. Remember that permissions must be granted to accounts for all PWA instances, team projects, and project collections that will participate in data synchronization between TFS and Project Server. If you customize a role or security categories for a role, you might inadvertently remove required permissions.  

@@ -20,7 +20,7 @@ Access levels control which features are available to users, while permissions c
 For TFS, learn [how to change access levels](../security/change-access-levels.md) 
 or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
 
-To control access to account resources instead, learn [how to add permissions](add-users.md) or 
+To control access to account resources instead, learn [how to add permissions](../security/add-users-team-project.md) or 
 [restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
 VSTS account, 
 learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
@@ -41,7 +41,7 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
  ![Account level table of users with key information per user](_img/user-hub/acct-level-users.png)
 
-0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](add-users.md). 
+0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
 
  [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 

@@ -30,7 +30,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Open the administration page](../../feedback/_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you're not a team project administrator, [get added as one](../../accounts/add-users.md). Only project administrators or TFS administrators can run the wizard.
+	If you're not a team project administrator, [get added as one](../../security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
 
 3. If you see a **Configure Features link**, run the wizard. 
 

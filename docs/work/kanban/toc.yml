@@ -29,7 +29,7 @@
   - name: About teams and Agile tools
     href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary
-    href: /vsts/work/work-items/agile-glossary?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../work-items/agile-glossary.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: How-to guides
   items:
   - name: Filter your Kanban board

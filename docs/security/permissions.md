@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [add-users-team-project](add-users-team-project.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md) |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
 <a name="groups"></a>
 ## Groups
@@ -210,7 +210,7 @@ Project Collection Valid Users
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
-				consider [adding the members of this group](../accounts/add-administrator-project-collection.md)
+				consider [adding the members of this group](../security/set-project-collection-level-permissions.md)
 				to the Site Collection Administrators group in SharePoint
 				and the Team Foundation Content Managers groups in Reporting Services.
 			</blockquote>
@@ -1875,7 +1875,7 @@ You can manage alert permissions using [TFSSecurity](../tfs-server/command-line/
 
 - [About permissions](about-permissions.md)  
 - [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
-- [Add users to a team project](../accounts/add-users.md) (TFS)   
+- [Add users to a team project](../security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)   
 - [Make a user a team admin](../work/scale/manage-team-assets.md)  
 - [Change groups and permissions with TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)

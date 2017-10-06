@@ -38,7 +38,7 @@ You can upload, download, and delete process templates for a team project collec
 
 	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
-	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../accounts/add-administrator-project-collection.md).  
+	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../security/set-project-collection-level-permissions.md).  
 
 2.	From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
 

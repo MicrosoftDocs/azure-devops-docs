@@ -99,7 +99,7 @@ The membership information will be exported to a comma-delimited file.
 Save or open the file.
 
 To add an administrator you need to add that user to groups
-at the [project-collection level](add-administrator-project-collection.md)
+at the [project-collection level](../security/set-project-collection-level-permissions.md)
 or at the [server-level for TFS](../tfs-server/add-administrator-tfs.md).
 
 To restrict access to a team project or to functional areas within a team project, 
