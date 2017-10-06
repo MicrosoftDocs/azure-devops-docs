@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/19/2017
+ms.date: 10/6/2017
 ---
 
 #	Troubleshooting deleting or restoring VSTS acounts

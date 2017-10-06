@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e8991424-ab10-4188-aa44-66e9af288c11
 ms.manager: douge
 ms.author: estfan
-ms.date: 04/28/2017
+ms.date: 10/6/2017
 ---
 
 #  VSTS billing concepts

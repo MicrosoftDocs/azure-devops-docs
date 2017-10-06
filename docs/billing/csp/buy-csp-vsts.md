@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.manager: douge
 ms.author: estfan
-ms.date: 9/15/2017
+ms.date: 10/6/2017
 ---
 
 **VSTS**

@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.manager: douge
 ms.author: estfan
-ms.date: 10/21/2016
+ms.date: 10/6/2017
 ---
 
 # Buy access to Team Foundation Server or TFS Test hub

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: elbatk
-ms.date: 04/13/2017
+ms.date: 10/6/2017
 ms.topic: get-started-article
 ---
 

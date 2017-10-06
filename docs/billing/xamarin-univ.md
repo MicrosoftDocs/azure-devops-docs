@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.manager: douge
 ms.author: esther
-ms.date: 03/29/2017
+ms.date: 10/6/2017
 ---
 
 #	Buy Xamarin University

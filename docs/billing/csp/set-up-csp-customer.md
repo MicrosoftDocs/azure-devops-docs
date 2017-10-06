@@ -1,12 +1,12 @@
 ---
-title: Set up Content Solution Provider customer for billing in Partner Center
+title: Set up Cloud Solution Provider customer for billing in Partner Center
 description: Cloud Service Provider (CSP) partners can purchase and manage various VSTS, VS, HockeyApp, etc., subscriptions for their customers
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 7c2d014a-c6b4-40e7-9217-326b6d8cd74c
 ms.manager: douge
 ms.author: estfan
-ms.date: 9/15/2017
+ms.date: 10/6/2017
 ---
 
 **VSTS**

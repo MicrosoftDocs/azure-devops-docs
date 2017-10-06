@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.manager: douge
 ms.author: estfan
-ms.date: 08/01/2017
+ms.date: 10/6/2017
 ---
 
 # Access VSTS with Azure Active Directory (Azure AD)

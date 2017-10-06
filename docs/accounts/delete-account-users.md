@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 6be2e639-2d40-4406-8f34-2a08018b4383
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/13/2017
+ms.date: 10/6/2017
 ---
 
 #	Delete users from your account in VSTS (if you turned off User Hub)

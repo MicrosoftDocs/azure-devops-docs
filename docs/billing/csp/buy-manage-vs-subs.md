@@ -5,7 +5,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 7c1960ac-01d1-4376-9366-9c1ad5b9060e
 ms.manager: douge
 ms.author: douge
-ms.date: 9/15/2017
+ms.date: 10/6/2017
 ---
 
 **Visual Studio**

@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: f5fab296-1942-47c9-b4c8-61bf347b3d87
 ms.manager: douge
 ms.author: elbatk
-ms.date: 11/29/2016
+ms.date: 10/6/2017
 ---
 
 #	Buy Visual Studio Professional and Visual Studio Enterprise subscriptions

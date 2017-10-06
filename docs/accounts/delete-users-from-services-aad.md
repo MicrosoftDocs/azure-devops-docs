@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: eb0d51c2-fb28-4c55-9fcd-33a5942130f0
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/19/2017
+ms.date: 10/6/2017
 ---
 
 #	Delete users from VSTS connected to Azure AD

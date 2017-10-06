@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.manager: douge
 ms.author: estfan
-ms.date: 08/08/2016
+ms.date: 10/6/2017
 ---
 
 # Authenticate access with personal access tokens for VSTS and TFS

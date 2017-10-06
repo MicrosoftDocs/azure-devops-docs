@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge  
 ms.author: estfan  
-ms.date: 03/29/2017
+ms.date: 10/6/2017
 ---
 
 # Add administrators to project collections

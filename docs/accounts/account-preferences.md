@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 30821EA7-F20F-4A15-B4E3-A023C39FFF72
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.date: 10/6/2017
 ---
 
 #Set your account preferences

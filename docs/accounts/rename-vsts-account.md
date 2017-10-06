@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.manager: douge
 ms.author: estfan
-ms.date: 10/31/2016
+ms.date: 10/6/2017
 ---
 
 # Rename your VSTS account

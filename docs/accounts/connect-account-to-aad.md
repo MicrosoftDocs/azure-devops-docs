@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/19/2017
+ms.date: 10/6/2017
 ---
 
 #	Connect VSTS account to Azure Active Directory (Azure AD)

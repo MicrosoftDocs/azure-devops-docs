@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Account management
+  - name: Manage your account
     href: account-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
@@ -14,8 +14,18 @@
     href: /vsts/billing/try-additional-features-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Change Azure AD tenant
+  - name: "1 - Change Azure AD tenant: setup"
     href: change-azure-active-directory-vsts-account.md
+  - name: "2 - Change Azure AD tenant: prepare source directory"
+    href: change-azure-ad-vsts-account-prep-src.md
+  - name: "3 - Change Azure AD tenant: prepare target directory"
+    href: change-azure-ad-vsts-account-prep-target.md
+  - name: "4 - Change Azure AD tenant: disconnect from source directory"
+    href: change-azure-ad-vsts-account-disconnect.md
+  - name: "5 - Change Azure AD tenant: connect to target directory"
+    href: change-azure-ad-vsts-account-connect.md
+  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
+    href: change-azure-ad-vsts-account-reassign-owner.md
 - name: Concepts
   items:
   - name: Adding Basic or VS subscription users to your account

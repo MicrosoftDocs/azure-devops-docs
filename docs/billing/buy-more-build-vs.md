@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/28/2017
+ms.date: 10/6/2017
 ---
 
 #  How to buy more pipeline capacity for builds and releases in VSTS

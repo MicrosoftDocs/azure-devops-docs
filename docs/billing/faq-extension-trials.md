@@ -1,13 +1,12 @@
 ---
 title: Troubleshooting paid extensions trials for VSTS
 description: Troubleshooting paid extensions trials for VSTS
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/13/2017
+ms.date: 10/6/2017
 ---
 
 # Troubleshooting paid extensions trials for VSTS
