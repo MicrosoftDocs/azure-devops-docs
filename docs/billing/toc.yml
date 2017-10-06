@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Billing
+  - name: How billing works
     href: overview.md
 - name: Quickstarts
   items:
@@ -12,8 +12,18 @@
     href: try-additional-features-vs.md
 - name: Tutorials
   items:
-  - name: Change Azure AD tenant
+  - name: "1 - Change Azure AD tenant: setup"
     href: ../accounts/change-azure-active-directory-vsts-account.md
+  - name: "2 - Change Azure AD tenant: prepare source directory"
+    href: ../accounts/change-azure-ad-vsts-account-prep-src.md
+  - name: "3 - Change Azure AD tenant: prepare target directory"
+    href: ../accounts/change-azure-ad-vsts-account-prep-target.md
+  - name: "4 - Change Azure AD tenant: disconnect from source directory"
+    href: ../accounts/change-azure-ad-vsts-account-disconnect.md
+  - name: "5 - Change Azure AD tenant: connect to target directory"
+    href: ../accounts/change-azure-ad-vsts-account-connect.md
+  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
+    href: ../accounts/change-azure-ad-vsts-account-reassign-owner.md
 - name: Concepts
   items:
   - name: Billing with Azure Subscriptions

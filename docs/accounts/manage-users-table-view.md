@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.manager: douge
 ms.author: estfan
-ms.date: 4/17/2017
+ms.date: 10/6/2017
 ---
 
 #	Manage users in user hub table view for VSTS

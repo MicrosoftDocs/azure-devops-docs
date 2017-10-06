@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
 author: douge
-ms.date: 07/17/2017
+ms.date: 10/6/2017
 ---
 
 #  Using the Visual Studio Subscriptions Administrator Portal

@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 01e4ac42-3d2b-419b-ad17-1d0bb5d96f85
 ms.manager: douge
 ms.author: estfan
-ms.date: 11/29/2016
+ms.date: 10/6/2017
 ---
 
 # Why add work or school accounts to Visual Studio with MSDN subscriptions

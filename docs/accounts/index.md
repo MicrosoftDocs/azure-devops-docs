@@ -6,20 +6,20 @@ ms.technology: vs-devops-setup
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.manager: douge
 ms.author: estfan
-ms.date: 07/12/2017
+ms.date: 10/6/2017
 ---
 
 # Account Management 
 
 **VSTS**
 
-Plan, code, and ship with Visual Studio Team Services (VSTS) devops.
+Sign up for a VSTS account, add users, and manage permissions and access.
 
 
 ## 5-Minute Quickstarts  
 
 * [Create your VSTS account](create-account-msa-or-work-student.md)
-<!-- Can't add "add user" which is really obvious quick start thing because it must then be in the quick starts in
+<!-- Can't add "add user" which is really obvious quick start item because it must then be in the quick starts in
      the toc, and there's a rule that you must not duplicate TOC entries for browsing.  There is a hard call here that
      users are more likely to ignore quick starts after first blush usage, so they are more likely to find adding users
      in the How-to Guides section.  The ripple effect is that truly new users using the index page won't be guided as

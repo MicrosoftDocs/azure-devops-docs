@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 01/10/2017
+ms.date: 10/6/2017
 ---
 
 # Change number of paid extension users for VSTS

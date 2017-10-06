@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.manager: douge
 ms.author: estfan
-ms.date: 12/01/2016
+ms.date: 10/6/2017
 ---
 
 # VSTS: Access with Azure Active Directory (Azure AD) groups

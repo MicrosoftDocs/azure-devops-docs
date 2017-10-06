@@ -1918,7 +1918,7 @@
         },
         {
             "source_path": "docs/vsts-tfs-overview.md",
-            "redirect_url": "/vsts/user-guide/alm-devops-overview?toc=/vsts/user-guide/",
+            "redirect_url": "/vsts/user-guide/devops-alm-overview?toc=/vsts/user-guide/",
             "redirect_document_id": false
         },
         {
@@ -4449,6 +4449,21 @@
        {
             "source_path": "docs/articles/branching-strategies-with-tfvc.md",
             "redirect_url": "/vsts/tfvc/branching-strategies-with-tfvc",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/accounts/add-administrator-project-collection.md",
+            "redirect_url": "/vsts/security/set-project-collection-level-permissions",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/accounts/add-administrator-team-project.md",
+            "redirect_url": "/vsts/security/set-project-collection-level-permissions",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/accounts/add-users.md",
+            "redirect_url": "/vsts/security/add-users-team-project",
             "redirect_document_id": false
        }
     ]

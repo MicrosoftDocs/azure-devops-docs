@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.manager: douge
 ms.author: estfan
-ms.date: 05/05/2017
+ms.date: 10/6/2017
 ---
 
 #	Manage conditional access to VSTS

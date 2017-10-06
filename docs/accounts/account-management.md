@@ -7,11 +7,11 @@ ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: estfan
-ms.date: 04/04/2017
+ms.date: 10/6/2017
 ---
 
 
-# Account management for VSTS
+# Manage your account
 
 **VSTS**
 

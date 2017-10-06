@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/10/2017
+ms.date: 10/6/2017
 ---
 
 # Pay for VSTS users who need Basic access
@@ -60,7 +60,7 @@ you can still [find those steps here](faq-pay-for-basic-users.md#update-paid-use
 > or [buy more access to TFS or the Test hub here](buy-access-tfs-test-hub.md). 
 >
 > To manage permissions for VSTS or TFS instead, 
-> learn how to [add permissions here](../accounts/add-users.md) or 
+> learn how to [add permissions here](../security/add-users-team-project.md) or 
 > [restrict permissions here](../accounts/restrict-access-tfs.md).
 > </div>
 

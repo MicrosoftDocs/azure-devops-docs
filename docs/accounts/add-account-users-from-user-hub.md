@@ -1,13 +1,12 @@
 ---
 title: Add account users for Visual Studio Team Services
 description: Add users for Visual Studio Team Services
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: estfan
-ms.date: 4/17/2017
+ms.date: 10/6/2017
 ---
 
 #	Add account users for Visual Studio Team Services (VSTS)

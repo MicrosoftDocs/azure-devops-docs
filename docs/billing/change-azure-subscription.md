@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
 ms.author: estfan
-ms.date: 04/28/2017
+ms.date: 10/6/2017
 ---
 
 # Change the Azure subscription your VSTS account uses for billing
@@ -86,8 +86,10 @@ Finish relinking your account.
  your selected Azure subscription.  For more details, see 
  [how to link your VSTS account to an Azure subscription](set-up-billing-for-your-account-vs.md#AzurePortal).
 
-0. Follow these steps to restore any 
-[paid users](buy-basic-access-add-users.md) or 
-[agents](buy-more-build-vs.md) 
-that you had in Azure.
+0. You need to add paid users, extensions, pipelines, etc., by repurchasing them and 
+resetting previous quantities in the Azure portal.  If you've paid for any Microsoft resources this month, 
+those resources won't be billed again, but billing treats rebuying non-Microsoft extensions 
+as new purchases and bills immediately to your new Azure subscription.  Follow these steps to restore any 
+[paid users](buy-basic-access-add-users.md), [agents](buy-more-build-vs.md), or 
+[extensions](../marketplace/install-vsts-extension.md).
 

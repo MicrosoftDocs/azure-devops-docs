@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: douge
-ms.date: 08/04/2017
+ms.date: 10/6/2017
 ---
 
 # Restrict access in VSTS and TFS

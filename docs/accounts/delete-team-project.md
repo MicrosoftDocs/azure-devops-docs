@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: estfan
-ms.date: 08/11/2016
+ms.date: 10/6/2017
 ---
 
 # Delete a team project

@@ -56,7 +56,7 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 ### Try this next
 
--    [Add users to team projects](../../accounts/add-users.md) 
+-    [Add users to team projects](../../security/add-users-team-project.md) 
 
 ## Q & A
 

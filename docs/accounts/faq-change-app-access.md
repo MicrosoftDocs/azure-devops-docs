@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
 ms.manager: douge
 ms.author: estfan
-ms.date: 08/04/2016
+ms.date: 10/6/2017
 ---
 
 #   Troubleshootig changing app access policies for your account

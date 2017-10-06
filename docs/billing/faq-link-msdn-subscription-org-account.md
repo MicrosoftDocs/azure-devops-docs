@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
 ms.manager: douge
 ms.author: estfan
-ms.date: 11/29/2016
+ms.date: 10/6/2017
 ---
 
 # Troubleshooting linking work or school accounts to MSDN subscriptions

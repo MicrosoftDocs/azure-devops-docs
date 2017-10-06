@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/19/2017
+ms.date: 10/6/2017
 ---
 
 #  Disconnect your VSTS account from your directory

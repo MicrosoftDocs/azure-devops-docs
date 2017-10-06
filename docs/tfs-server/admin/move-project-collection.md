@@ -188,7 +188,7 @@ After you configure administrators for the moved collection, either you or those
 
 ### To add users to team projects
 
--   For information about this task, see [Add users to team projects](../../accounts/add-users.md).
+-   For information about this task, see [Add users to team projects](../../security/add-users-team-project.md).
 
 ### To add resources to moved team projects
 

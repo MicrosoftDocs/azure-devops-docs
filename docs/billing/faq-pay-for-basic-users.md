@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
 ms.author: estfan
-ms.date: 1/10/2017
+ms.date: 10/6/2017
 ---
 
 # Troubleshooting paying for VSTS Basic access

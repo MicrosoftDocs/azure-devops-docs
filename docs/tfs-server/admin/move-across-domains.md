@@ -169,7 +169,7 @@ If account names are the same in both domains, and the only difference is the do
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
     > [!NOTE]
-    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../accounts/add-users.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md).
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../security/add-users-team-project.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 

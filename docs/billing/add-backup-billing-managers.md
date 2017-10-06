@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.manager: douge
 ms.author: estfan
-ms.date: 04/28/2017
+ms.date: 10/6/2017
 ---
 
 #  Add backup billing managers for your VSTS account

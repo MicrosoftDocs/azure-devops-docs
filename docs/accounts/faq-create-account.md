@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.manager: douge
 ms.author: estfan
-ms.date: 03/30/2017
+ms.date: 10/6/2017
 ---
 
 #	Troubleshoot creating a VSTS account
