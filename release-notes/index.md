@@ -14,6 +14,9 @@ description: VSTS feature updates roadmap, release notes, release timeline, and 
 
 ## Features under development
 
+> [!NOTE]
+> Revisions for 2017 Q4 and 2018 Q1 are coming soon.
+
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
 
 ### 2017 Q3
@@ -85,6 +88,55 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="12">[06 Oct 2017](2017/oct-06-vsts.md)</td>
+            <td>New experience for code and work items search</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Pull request comments follow renamed files</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Enhanced filter capability for commits with more than 1000 files changed</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Ctrl+S to save Wiki page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Reference work items in Wiki</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Enable Wiki home page to show on the Project description page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Custom Project image on Project description page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Use Azure Key Vault secrets in your CI build</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>New software updates available on hosted VS2017 agents</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Bulk Deploy environments manually from Release view</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Process parameters for deployment templates</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Default properties for Git/GitHub artifact types</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
         <tr>
             <td rowspan="25">[15 Sep 2017](2017/sep-15-team-services.md)</td>
             <td>New Queries experience</td>
