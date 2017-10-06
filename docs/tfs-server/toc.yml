@@ -14,13 +14,15 @@
     href: ./install/single-server.md
   - name: Create a team project
     href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
-  - name: Add users to projects
-    href: ../accounts/add-users.md?toc=/vsts/tfs-server/toc.json
+  - name: Add users to a team project or a team
+    href: ../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json
   - name: Configure an SMTP server
     href: ./admin/setup-customize-alerts.md
+  - name: Add administrators or set permissions at the project or collection level
+    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json
 - name: Tutorials
   items:
-  - name: Add administrators
+  - name: Add TFS server administrators
     href: add-administrator-tfs.md
   - name: Manage team project collections
     href: ./admin/manage-team-project-collections.md

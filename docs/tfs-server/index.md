@@ -26,10 +26,10 @@ ms.date: 06/22/2017
 Once you've installed TFS, you're ready to create a team project, add users, and configure some key resources.       
 
 - [Install TFS on a single server](install/single-server.md)
-- [Create a team project](/vsts/accounts/create-team-project?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
-- [Add users to projects](/vsts/accounts/add-users?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
+- [Create a team project](../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
+- [Add users to a team project or team](../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
 - [Configure a backup server](admin/backup/config-backup-sched-plan.md)  
-
+- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json)
 
 
 ## Step-by-step tutorials

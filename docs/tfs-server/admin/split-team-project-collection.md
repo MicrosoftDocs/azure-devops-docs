@@ -291,7 +291,7 @@ After you configure administrators for both collections, either you or those adm
 
 ### To configure access for users to team projects
 
--   For more information, see [Add users to team projects](../../accounts/add-users.md) and [Add team members](../../work/scale/multiple-teams.md#add-team-members).
+-   For more information, see [Add users to team projects or teams](../../security/add-users-team-project.md).
 
 <a name="q-and-a"></a>
 ## Q & A

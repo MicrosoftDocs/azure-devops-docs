@@ -27,7 +27,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level) |[Preview features per account](#account-level) | 
 > |-------------|----------|
-> |- [Build Yaml Definitions](https://go.microsoft.com/fwlink/?linkid=852344)<br/>-  [New Queries Experience](../work/track/view-run-query.md)<br/>-  New User Experience in Code & Work Item Search<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) |- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- Pull Request Status Policy<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) <br/>- [Wiki](#wiki) |
+> |- [Build Yaml Definitions](https://go.microsoft.com/fwlink/?linkid=852344)<br/>-  [New Queries Experience](../work/track/view-run-query.md)<br/>-  [New User Experience in Code & Work Item Search](https://docs.microsoft.com/en-us/vsts/release-notes/2017/oct-06-vsts#code)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) |- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- Pull Request Status Policy<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) <br/>- [Wiki](#wiki) |
 
 **Features now enabled for all VSTS accounts:**
 - [Combine email recipients](manage-team-notifications.md)  

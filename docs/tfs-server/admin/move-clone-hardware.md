@@ -291,7 +291,7 @@ After you move to new hardware, make sure that all users, groups, and service ac
 
 -   Open Team Web Access and verify that team sites and teams appear as expected.
 
-Not sure what groups and permissions to expect? For more information, see [Add users to team projects](../../accounts/add-users.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
+Not sure what groups and permissions to expect? For more information, see [Add users to team projects](../../security/add-users-team-project.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
 
 <a name="refresh-caches-clients"></a>
 ## Refresh the data cache on client computers
