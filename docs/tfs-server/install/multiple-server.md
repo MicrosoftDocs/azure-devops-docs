@@ -23,7 +23,7 @@ and you can ensure high availability by using SQL Server AlwaysOn Availability G
 
 ## Data tier
 
-0. Set up your SQL Server deployment using an [appropriate version of SQL Server](../../accounts/requirements.md#sql-server).
+0. Set up your SQL Server deployment using an [appropriate version of SQL Server](../requirements.md#sql-server).
 Your deployment can be a single instance of SQL Server or an [AlwaysOn Availability Group](https://msdn.microsoft.com/library/gg509118.aspx).
 When you set up SQL Server up for TFS, install the database engine and the full text search services.
 
@@ -58,7 +58,7 @@ to [allow access to Reporting Services](https://msdn.microsoft.com/library/bb934
 
 If you're going to enable SharePoint integration, prepare the data tier servers for that.
 
-0. Install [an appropriate version of SharePoint](../../accounts/requirements.md#sharepoint).
+0. Install [an appropriate version of SharePoint](../requirements.md#sharepoint).
 
 	You can install SharePoint Products on the server or AlwaysOn Availability Group where you installed the database engine,
 	Analyisis Services, or Reporting Services,

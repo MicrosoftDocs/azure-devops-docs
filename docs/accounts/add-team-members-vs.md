@@ -16,7 +16,7 @@ ms.date: 1/11/2017
 Add members to your team project in VSTS, 
 so you can share code and work with your team, track their status, 
 coordinate dev, build, test, and release activities, and more. 
-For Team Foundation Server, learn [how to add team project members here](add-users.md).
+For Team Foundation Server, learn [how to add team project members here](../security/add-users-team-project.md).
 
 When you add members to team projects, 
 VSTS will automatically assign them 
@@ -30,7 +30,7 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 > To manually assign access levels, 
 > [add members to your account instead](add-account-users-assign-access-levels.md). 
 > To control access to account resources, 
-> [add permissions](add-users.md) or [restrict permissions](restrict-access-tfs.md) instead.
+> [add permissions](../security/add-users-team-project.md) or [restrict permissions](restrict-access-tfs.md) instead.
 
 ## Before you get started
 

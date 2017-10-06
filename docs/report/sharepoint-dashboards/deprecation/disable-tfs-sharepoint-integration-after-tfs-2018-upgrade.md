@@ -53,7 +53,9 @@ The **TFS Disconnector for SharePoint** installs all the required references for
 ### **SharePoint 2010**: To install the TFS Disconnector for SharePoint on a SharePoint 2010 Server, follow these steps:
 
 1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2010 server. Unzip the files. You will be running **uninstall-2010.ps1** and **script-2010.ps1** later.  
-    > The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English and SharePoint 2010 was added.
+
+   *The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English and SharePoint 2010 was added.*
+
 1. Run "SharePoint 2010 Management Shell" as an administrator. 
 1. From the shell, run **uninstall-2010.ps1** and complete all sections of the script. 
 1. From the shell, run **script-2010.ps1** and complete all sections of the script.
@@ -62,7 +64,9 @@ The **TFS Disconnector for SharePoint** installs all the required references for
 ### **SharePoint 2013**: To install the TFS Disconnector for SharePoint on a SharePoint 2013 Server, follow these steps:
 
 1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2013 server. Unzip the files. You will be running **uninstall-2013.ps1** and **script-2013.ps1** later.  
-    > The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English and SharePoint 2010 was added.
+
+   *The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English and SharePoint 2010 was added.*
+
 1. Run "SharePoint 2013 Management Shell" as an administrator. 
 1. From the shell, run **uninstall-2013.ps1** and complete all sections of the script. 
 1. From the shell, run **script-2013.ps1** and complete all sections of the script.

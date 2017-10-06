@@ -249,17 +249,17 @@ like?](http://blogs.msdn.com/b/granth/archive/2013/10/08/what-does-a-well-mainta
 
 -   The installation guide includes details about these elements:
 
-    -   [system requirements](../../accounts/requirements.md)
+    -   [system requirements](../requirements.md)
 
-    -   [SQL Server requirements](../../accounts/requirements.md#sql-server)
+    -   [SQL Server requirements](../requirements.md#sql-server)
 
-    -   [Active Directory requirements](../../accounts/requirements.md)
+    -   [Active Directory requirements](../requirements.md)
 
-    -   [SharePoint Products requirements](../../accounts/requirements.md#sharepoint)
+    -   [SharePoint Products requirements](../requirements.md#sharepoint)
 
-    -   [account requirements](../../accounts/requirements.md#accounts)
+    -   [account requirements](../requirements.md#accounts)
 
-    -   [language requirements](../../accounts/requirements.md#languages)
+    -   [language requirements](../requirements.md#languages)
 
     -   [port requirements](../architecture/required-ports.md).
 

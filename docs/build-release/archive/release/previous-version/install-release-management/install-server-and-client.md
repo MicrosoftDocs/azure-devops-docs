@@ -72,7 +72,7 @@ administration console. Scroll down to **Data Tier Summary** and look for
    or specify alternates. For more information, see 
    [Ports required for installation of Team Foundation Server](../../../../../tfs-server/architecture/required-ports.md)
    and
-   [Accounts required for installation of Team Foundation Server](../../../../../accounts/requirements.md#accounts).
+   [Accounts required for installation of Team Foundation Server](../../../../../tfs-server/requirements.md#accounts).
    Release Management server uses the identity set here for its Application 
    Pools in IIS and the Release Management Monitor Windows service. 
 

@@ -335,7 +335,7 @@ By default, team members inherit the permissions afforded to members of the team
 
 ![Default permissions assigned to team contributors](../work/scale/_img/default-permissions-assigned-to-team-contributors.png)  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../accounts/add-users.md). 
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) and [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md).
 
 
 ## Related notes 

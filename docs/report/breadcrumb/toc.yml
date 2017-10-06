@@ -2,10 +2,10 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Analytics
-    tocHref: /vsts/
+  - name: Reporting
+    tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=analytics
     items:
     - name: Dashboards
-      tocHref: /vsts/
+      tocHref: /vsts/report/
       topicHref: /vsts/report/index

@@ -7,12 +7,12 @@ ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/04/2016
+ms.date: 10/05/2017
 ---
 
 # Rename a team project
 
-**VSTS** | **TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 A team project rename updates all of your version control paths, work items, queries, and other team project artifacts to reflect the new name. 
 Team projects can be renamed multiple times and older names can be reused as well. 
@@ -30,7 +30,7 @@ You can change the name of a team project from its administration overview page.
 
 	![Enter a new project name](_img/rename-team-project/projectrename1.png)
 	
-	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](add-users.md) to the Project Administrators group.
+	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
 
 ### From the project collection administration page
 
@@ -42,7 +42,7 @@ You can also change the name of a team project from the project collection admin
 
 	![Rename menu item in the team project context menu on the project collection administration page](_img/rename-team-project/collection-rename.png)
 
-	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](add-users.md) to the Project Administrators group.
+	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
 
 
 <a id="more-work"></a>

@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
     - name: "README & Wikis"
-      tocHref: /vsts/
+      tocHref: /vsts/collaborate/
       topicHref: /vsts/collaborate/index

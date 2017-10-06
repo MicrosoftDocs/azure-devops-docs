@@ -24,8 +24,10 @@
     href: team-administrator-permissions.md	
 - name: How-to Guides
   items:
-  - name: Scaled Agile Framework
-    href: scaled-agile-framework.md
+  - name: Use work item templates
+    href: ../backlogs/work-item-template.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: Manage team notifications
+    href: ../../collaborate/manage-team-notifications.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json   
   - name: Configure team settings
     href: manage-team-assets.md 
     items:
@@ -37,8 +39,8 @@
       href: ../customize/show-bugs-on-backlog.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: Set working days
       href: ../customize/set-working-days.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Manage team notifications
-      href: ../../collaborate/manage-team-notifications.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: Scaled Agile Framework
+    href: scaled-agile-framework.md
   - name: Switch project or team focus
     href: ../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "Manage permissions & access"

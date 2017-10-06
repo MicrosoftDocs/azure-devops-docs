@@ -21,7 +21,7 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 
 ### Who can uninstall or disable extensions?
 
-[Project collection administrators](../../accounts/add-administrator-project-collection.md) 
+[Project collection administrators](../../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../../security/permissions.md#collection) 
 can uninstall or disable extensions. 
 

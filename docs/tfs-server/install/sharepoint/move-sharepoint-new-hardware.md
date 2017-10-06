@@ -52,7 +52,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
     3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
 
-        For more information, see [Accounts required for installation of Team Foundation Server](../../../accounts/requirements.md#accounts)
+        For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
 4.  On the **Review** page, review the settings and choose ** Next**.
 

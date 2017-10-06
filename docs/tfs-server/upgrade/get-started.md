@@ -16,7 +16,7 @@ ms.date: 09/26/2016
 
 The general process for upgrading an existing deployment of Team Foundation Server is to:
 
-1.	**Prepare your environment**. New [system requirements](../../accounts/requirements.md) may require you to upgrade hardware or software. 
+1.	**Prepare your environment**. New [system requirements](../requirements.md) may require you to upgrade hardware or software. 
 And regardless, an upgrade is a good time to consider whether your current environment is meeting your needs, 
 or whether it makes sense to make changes. 
 

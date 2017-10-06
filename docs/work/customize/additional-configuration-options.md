@@ -182,7 +182,7 @@ To get started, each team must choose their preference as described in [Show bug
 
 ##Related notes 
 
-If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../accounts/add-users.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
+If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
 
 If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
 

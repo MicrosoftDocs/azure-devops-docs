@@ -46,8 +46,8 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 <img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
 
 
-## Related notes
+## Try this next
+> [!div class="nextstepaction"]
+> [Add users to a team project or team](add-users-team-project.md) 
 
-- [Add users to a team](../work/scale/multiple-teams.md)  
-- [Add users to a team project](../accounts/add-users.md)
 

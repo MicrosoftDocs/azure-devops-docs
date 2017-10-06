@@ -49,7 +49,7 @@ Team Foundation Server contains dashboards that use SharePoint Products feature
 
 ## What if I already have SharePoint?
 
-If your existing SharePoint installation meets the TFS requirements for SharePoint, you can [verify your existing SharePoint deployment](verify-sharepoint.md) and then integrate it with TFS. Before you verify, review the [SharePoint requirements for TFS](../../../accounts/requirements.md#sharepoint).
+If your existing SharePoint installation meets the TFS requirements for SharePoint, you can [verify your existing SharePoint deployment](verify-sharepoint.md) and then integrate it with TFS. Before you verify, review the [SharePoint requirements for TFS](../../requirements.md#sharepoint).
 
 > [!TIP]
 > You can use a remote SharePoint installation—an instance of SharePoint that is not installed on the TFS server—but to do this you’ll need to install the TFS extensions for SharePoint on the SharePoint server. See [How to: Install Remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md).
@@ -68,7 +68,7 @@ Remember that you’ll need a single domain account to act as the TFS Report Rea
 
 1.  Insert the SharePoint Server 2013 DVD and launch default.hta, or [download SharePoint Foundation 2013](https://www.microsoft.com/download/details.aspx?id=35488) and run sharepoint.exe.
 
-    You can find detailed information about [SharePoint Products requirements for Team Foundation Server](../../../accounts/requirements.md#sharepoint) on MSDN, but this instruction will guide you through typical installations.
+    You can find detailed information about [SharePoint Products requirements for Team Foundation Server](../../requirements.md#sharepoint) on MSDN, but this instruction will guide you through typical installations.
 
 2.  Choose **Install software prerequisites**.
 

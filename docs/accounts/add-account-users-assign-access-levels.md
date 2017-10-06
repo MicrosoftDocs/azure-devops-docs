@@ -60,7 +60,7 @@ For TFS, learn [how to change access levels](../security/change-access-levels.md
 or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
 
 To control access to account resources instead, 
-learn [how to add permissions](add-users.md) or 
+learn [how to add permissions](../security/add-users-team-project.md) or 
 [restrict permissions](restrict-access-tfs.md).
 To change how many users can access 
 paid extensions in your VSTS account, 

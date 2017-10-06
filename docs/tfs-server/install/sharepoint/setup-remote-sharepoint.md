@@ -24,7 +24,7 @@ You can install and configure SharePoint Foundation 2013 during the extensions c
 
 ## To install Team Foundation Server Extensions for SharePoint Products
 
-![Step 1](../_img/ic646324.png) Verify that the operating system and hardware or the existing SharePoint Products installation meets the requirements for Team Foundation Server Extensions for SharePoint Products. If you don't want to use SharePoint Foundation 2013, you can install any supported version of SharePoint Products. If you install the Enterprise version of SharePoint Server, you must configure it for dashboards. For more information: [SharePoint Products requirements for Team Foundation Server](../../../accounts/requirements.md#sharepoint), [Verify SharePoint products for Team Foundation Server](verify-sharepoint.md), [Manually Install SharePoint products for Team Foundation Server](install-sharepoint.md).
+![Step 1](../_img/ic646324.png) Verify that the operating system and hardware or the existing SharePoint Products installation meets the requirements for Team Foundation Server Extensions for SharePoint Products. If you don't want to use SharePoint Foundation 2013, you can install any supported version of SharePoint Products. If you install the Enterprise version of SharePoint Server, you must configure it for dashboards. For more information: [SharePoint Products requirements for Team Foundation Server](../../requirements.md#sharepoint), [Verify SharePoint products for Team Foundation Server](verify-sharepoint.md), [Manually Install SharePoint products for Team Foundation Server](install-sharepoint.md).
 
 
 
@@ -38,7 +38,7 @@ You can install and configure SharePoint Foundation 2013 during the extensions c
 
 You must add the service account for Team Foundation Server to the Farm Administrators group on the SharePoint administration site. If you are using Network Service for the TFS service account and SharePoint is not running on the same server as TFS, you must add the machine name of the server that is running TFS instead of Network Service. The machine name is the server name followed by the $ symbol. For example, *Domain\ServerName$*.
 
-For more information about service accounts, see [Accounts required for installation of Team Foundation Server](../../../accounts/requirements.md#accounts).
+For more information about service accounts, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts).
 
 Required permissions: To follow this procedure, you must be a member of the Windows **Administrators** security group on the server that is running SharePoint. 
 
@@ -89,7 +89,7 @@ From Windows **Start**, run **Team Foundation Server Administration Console**.
 
 	2. Type a user account and password for the service account for SharePoint.
 
-	3. For more information, see [Accounts required for installation of Team Foundation Server](../../../accounts/requirements.md#accounts)
+	3. For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
 		On the **Review** page, review the settings and choose ** Next** to let the wizard validate your configuration.
 
@@ -105,4 +105,4 @@ The Team Foundation Server Administration Console appears.
 
 ## See Also
 
-[TFS upgrade requirements](../../../accounts/requirements.md)
+[TFS upgrade requirements](../../requirements.md)

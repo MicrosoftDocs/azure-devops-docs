@@ -19,7 +19,7 @@ To cancel paid access to an extension, reduce your users to zero (0). [How do yo
 
 ### Who can change the number of paid extension users?
 
-[Project collection administrators](../../accounts/add-administrator-project-collection.md) 
+[Project collection administrators](../../security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../../security/permissions.md#collection) 
 can change the number of paid extension users whose access that you pay for.
 

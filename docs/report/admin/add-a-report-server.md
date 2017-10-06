@@ -64,7 +64,7 @@ Jump to the bottom of this topic to confirm that reports are available for the t
 1.	Find out what version and edition of SQL Server you haveby following the instructions provided in [Validate a SQL Server Installation](https://technet.microsoft.com/library/bb510455.aspx). 
 	If the answer is SQL Server Express, keep following these steps. If it's any other edition, but you don't see any version and edition information about reporting or analysis services, jump ahead to [Add Reporting Services](#AddRSandAS). If you do see information about these services, then your SQL Server already has them installed, and you can jump ahead to [Add Reporting to TFS](#AddRStoTFS).  
 
-2.	If your deployment is using SQL Server Express, [upgrade to a different edition](https://msdn.microsoft.com/library/cc707783.aspx). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](../../accounts/requirements.md#sql-server). 
+2.	If your deployment is using SQL Server Express, [upgrade to a different edition](https://msdn.microsoft.com/library/cc707783.aspx). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](../../tfs-server/requirements.md#sql-server). 
 
 <a id="AddRSandAS">  </a>
 
@@ -183,7 +183,7 @@ Now that you've added reporting to the server and to the team project collection
 ##Related content
 You can learn more about installing and configuring SQL Server for use with on-premises TFS from these topics:  
 
-*  [Supported versions and editions](../../accounts/requirements.md#sql-server)  
+*  [Supported versions and editions](../../tfs-server/requirements.md#sql-server)  
 *  [Working with named instances](../../tfs-server/install/sql-server/install-sql-server.md)  
 *  [Using SQL Server 2012 AlwaysOn](../../tfs-server/install/sql-server/use-always-on-groups.md)  
 *  [Understanding how TFS, SQL Server, and Reporting all work together](../../tfs-server/architecture/sql-server-databases.md)   

@@ -46,7 +46,7 @@ User accounts identify users in VSTS or TFS. These accounts might correspond to 
 You add existing user accounts. You can't create a user account. To add user accounts to a team project, see:  
 
 *	VSTS: [Add team members](../accounts/add-team-members-vs.md)  
-*	On-premises TFS: [Add users to team projects](../accounts/add-users.md)   
+*	On-premises TFS: [Add users to team projects](../security/add-users-team-project.md)   
 
 User accounts that you add must conform to the following restrictions.  
 

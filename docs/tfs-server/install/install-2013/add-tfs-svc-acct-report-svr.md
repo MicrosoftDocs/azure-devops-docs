@@ -18,7 +18,7 @@ If the report server and Team Foundation Server are not on the same server, you 
 
 If you are using Network Service for TFSSERVICE, you must add the machine name of the server that is running Team Foundation Server instead of Network Service. The machine name is the server name followed by the $ symbol. For example, *Domain\ServerName$*.
 
-For more information about service accounts, see [Accounts Required for Installation of Team Foundation Server](../../../accounts/requirements.md#accounts).
+For more information about service accounts, see [Accounts Required for Installation of Team Foundation Server](../../requirements.md#accounts).
 
 **Required Permissions:**
 

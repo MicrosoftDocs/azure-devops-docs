@@ -19,7 +19,7 @@ the team, the team project, and the team project collection.
 
 In TFS, there are also server-level administrators.
 
-See adding administrators to [project collections](../accounts/add-administrator-project-collection.md) and 
+See adding administrators to [project collections](../security/set-project-collection-level-permissions.md) and 
 [projects](../accounts/add-administrator-team-project.md).
 
 

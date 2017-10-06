@@ -30,7 +30,7 @@ then choose **Delete**.
     ![Delete users from the Users hub](_img/assign-licenses/vso-usershub-deleteuser.png)
 
 0.	To make sure that you've removed the user completely, 
-check your [security groups and permissions](add-users.md). 
+check your [security groups and permissions](../security/add-users-team-project.md). 
 
 	[Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 

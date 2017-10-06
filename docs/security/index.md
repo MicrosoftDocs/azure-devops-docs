@@ -13,6 +13,8 @@ ms.date: 08/04/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
+For anyone to access a team project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Permissions and access](permissions-access.md)
+
 <!---
 ## Overview  
 [About security and identity](about-permissions.md)
@@ -22,8 +24,9 @@ ms.date: 08/04/2017
 ## 5-Minute Quickstarts  
   
 - [View permissions](view-permissions.md)
+- [Add users to a team project or team](add-users-team-project.md)
 - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
-- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md)  
 
 
 ## Concepts 

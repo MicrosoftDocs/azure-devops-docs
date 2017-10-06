@@ -641,7 +641,7 @@ You set [dashboard permissions at the team level](../report/dashboard-permission
 
 ## Related notes
 
-- [Add users to a team project](../accounts/add-users.md)  
+- [Add users to a team project](../security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
 - [Change access levels](change-access-levels.md) 

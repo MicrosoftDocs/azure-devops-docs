@@ -29,7 +29,7 @@ You can delete a team project from VSTS or from an on-premises deployment of Tea
 
 	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](add-administrator-project-collection.md).
+    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
 3.  You must type the name of the team project in order to initiate the delete operation. 
 

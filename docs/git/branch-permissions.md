@@ -32,7 +32,7 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Add users or groups
 
-> Avoid trouble:  You can only add permissions for users and groups already in your Team Project. [Add new users and groups to your Team Project](../accounts/add-users.md) before setting branch permissions. 
+> Avoid trouble:  You can only add permissions for users and groups already in your Team Project. [Add new users and groups to your Team Project](../security/add-users-team-project.md) before setting branch permissions. 
 
 Add users or groups to your branch permissions by selecting **Add**, then choosing **Add user** or **Add VSTS group**. 
 Enter the display name or their Microsoft Account, then select **Save Changes**.

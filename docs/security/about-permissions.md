@@ -106,7 +106,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
  > and test case management features,
  > you'll want to [change access levels](change-access-levels.md), not permissions.
 
-Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../accounts/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
+Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project or a team](add-users-team-project.md).
 
 
 ## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups
@@ -126,12 +126,9 @@ if your team project doesn't use SQL Server Reporting Services or a SharePoint s
 ## Valid user groups
 
 When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
-
--   *Server*\\Team Foundation Valid Users: All members added to server-level groups.
-
--   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
-
--   *TeamProjectName*\\Project Valid Users: All members added to team project-level groups.
+-   *Server*\\Team Foundation Valid Users: All members added to server-level groups.  
+-   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.  
+-   *TeamProjectName*\\Project Valid Users: All members added to team project-level groups.  
 
 The default permissions assigned to these groups are primarily limited to 
 read access, such as **View build resources**, **View project-level 
@@ -151,37 +148,7 @@ In addition, the `VALIDUSER` element can be used [to allow or restrict access fo
 
 You set most permissions through the web portal. You can use the tools listed in the following table to set permissions.
 Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
-You use the [TFS web portal administration context](../accounts/add-users.md) to set most permissions.  
-
-|Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Server-level](permissions.md#server)||![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
-|[Collection-level](permissions.md#collection)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
-|[Team project and test level](permissions.md#project_test)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Build level](permissions.md#build)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Git repository](permissions.md#git-repo)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
-|[Team Foundation Version Control](permissions.md#tfvc)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
-|[Area level for work item tracking](permissions.md#area-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Iteration level for work item tracking](permissions.md#iteration-path-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Work item query](permissions.md#query)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Work item tags](permissions.md#tags)|||![check mark](../_img/check.png)|||
-|[Alerts](permissions.md#alerts)|||![check mark](../_img/check.png)|||
-|[Release Management](permissions.md#release_management) |![check mark](../_img/check.png)||||| |
-|[Lab Management](permissions.md#lab)|||||![check mark](../_img/check.png)|
-
-
-
-## SQL Server reports (TFS) 
-
-For information about how to set permissions in Reporting Services,
-see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
-
-
-## Tools used to set permissions
-
-You can use the tools listed in the following table to set permissions.
-Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
-You use the [TFS web portal administration context](../accounts/add-users.md) to set most permissions.  
+You use the [web portal administration context](../security/add-users-team-project.md) to set most permissions.  
 
 |Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -202,20 +169,17 @@ You use the [TFS web portal administration context](../accounts/add-users.md) to
 
 
 
-## On-premises TFS 
-
-### SharePoint integration    
+## Setting permissions for SharePoint integration (TFS only)    
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
-see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
+see [Set SharePoint site permissions](../security/set-sharepoint-permissions.md).
 
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
 
-## SQL Server reports (TFS) 
+## Setting permissions for SQL Server reports (TFS only) 
 
 For information about how to set permissions in Reporting Services,
-see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
+see [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md).
 
 
-<!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections. -->  

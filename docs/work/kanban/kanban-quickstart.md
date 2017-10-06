@@ -83,7 +83,7 @@ All members of a team project will be able to view and contribute to your Kanban
 
 To add users to your team project, see these topics:   
 -  **VSTS**: [Add and manage users](../../accounts/add-account-users-assign-access-levels.md)   
--  **On-premises TFS**: [Add users to a team project](../../accounts/add-users.md)   
+-  **On-premises TFS**: [Add users to a team project](../../security/add-users-team-project.md)   
 
 
 ## Try this next 

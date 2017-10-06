@@ -81,7 +81,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
-2.  If you're not a member of a TFS security group, [get added as one](../accounts/add-users.md).
+2.  If you're not a member of a TFS security group, [get added as one](../security/add-users-team-project.md).
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
@@ -203,7 +203,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../accounts/add-users.md).
+4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
 
     ![Connect to server](../work/backlogs/office/_img/IC680074.png)
 

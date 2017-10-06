@@ -21,8 +21,9 @@
   - name: Import repo - Web
     href: import-git-repository.md
 - name: Tutorials
-  href: gitquickstart.md
   items:
+  - name: Commit, share, and sync your code
+    href: gitquickstart.md
   - name: Create a new repo
     href: tutorial/creatingrepo.md
   - name: Clone an existing repo

@@ -261,7 +261,7 @@ By default, the drop-down menu for the Assigned To field displays all users who 
 
 The most efficient way to apply security restrictions is to create custom groups that you manage either in Windows or a collection or team project  group.
 
-1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../accounts/add-users.md).
+1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../security/add-users-team-project.md).
 
 2.  Modify the definition file for each work item type that you want to limit the user set. Add the **VALIDUSER** element to the **FIELD** element definition for the Assigned To field, and specify the TFS group.
 
