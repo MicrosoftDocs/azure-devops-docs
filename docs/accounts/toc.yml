@@ -12,8 +12,6 @@
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: /vsts/billing/try-additional-features-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Add administrators or set permissions at the project or collection level
-    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: "1 - Change Azure AD tenant: setup"
@@ -73,7 +71,7 @@
     - name: Manage conditional access
       href: manage-conditional-access.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
-      href: /vsts/billing/link-msdn-subscription-to-organizational-account-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+      href: ../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Authenticate with personal access tokens
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
@@ -96,6 +94,8 @@
         href: delete-users-from-services-aad.md
   - name: Permissions and access
     items:
+    - name: Set permissions/administrators for projects or a project collection
+      href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
     - name: Restrict access to resources
       href: restrict-access-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Manage extensions
@@ -129,9 +129,9 @@
 - name: Reference
   items:
   - name: Permissions and access
-    href: ../security/permissions-access.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+    href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Permissions and groups reference
-    href: ../security/permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+    href: ../security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: New User Guide
