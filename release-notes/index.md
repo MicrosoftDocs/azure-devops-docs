@@ -89,7 +89,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[06 Oct 2017](2017/oct-06-vsts.md)</td>
+            <td rowspan="13">[06 Oct 2017](2017/oct-06-vsts.md)</td>
             <td>New experience for code and work items search</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -115,6 +115,10 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Custom Project image on Project description page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Updated Plans navigation</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
