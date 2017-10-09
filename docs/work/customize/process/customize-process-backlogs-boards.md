@@ -38,7 +38,7 @@ You customize the backlogs and boards for an inherited process in the following 
 - Rename or change the color of any portfolio or product backlog 
 - Delete the top-level portfolio backlog (but not Epics nor Features) 
 
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions). 
+To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 

@@ -7,7 +7,7 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 06/13/2017
+ms.date: 10/09/2017
 ---
 
 
@@ -68,7 +68,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 2px solid #C3C3C3;" /> 
 
-	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Permissions to create and edit plans](../../security/set-permissions-access-work-tracking.md#plan-permissions).  
+	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../security/set-permissions-access-work-tracking.md#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 

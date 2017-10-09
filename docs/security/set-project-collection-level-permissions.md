@@ -7,8 +7,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/24/2017
+ms.date: 10/09/2017
 ---
+
 
 # Add administrators, set permissions at the project-level or project collection-level
 

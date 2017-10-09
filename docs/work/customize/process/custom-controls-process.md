@@ -119,7 +119,7 @@ Additional topics of interest:
 
 ### Required permissions  
 
-To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).
+To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).
 
 <a id="process-rest-api">  </a>
 ### Programmatically add custom controls 

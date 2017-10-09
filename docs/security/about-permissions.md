@@ -7,7 +7,7 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 10/09/2017
 ---
 
 # About permissions and groups 
@@ -132,7 +132,6 @@ information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
 If you need to restrict view access, then you can [set restrictions through the area path node](../security/set-permissions-access-work-tracking.md).
-For additional methods, see [Restrict access in TFS](../accounts/restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
 no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.

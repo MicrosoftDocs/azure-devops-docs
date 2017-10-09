@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 10/09/2017
 ---
 
 # Configure team settings 
@@ -51,9 +51,8 @@ You can configure most of your team settings from the common configuration dialo
 
 To create additional teams, see [Add teams and team members](multiple-teams.md).  
 
-If team members don't have access to all the features they want, check that they have [the access level needed for those features](../../security/change-access-levels.md).  
+If team members don't have access to all the features they want, check that they have [the permissions needed for those features](../../security/set-permissions-access-work-tracking.md).  
 
-You can also [restrict access to select features and functions](../../accounts/restrict-access-tfs.md).
 
 
 ### Team name, description, and picture

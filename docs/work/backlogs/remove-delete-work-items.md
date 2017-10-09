@@ -7,8 +7,9 @@ ms.prod: vs-devops-alm
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017  
+ms.date: 10/09/2017
 ---
+
 
 # Move, change, or delete work items 
 
@@ -78,7 +79,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 
 >[!TIP]    
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../backlogs/copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
+When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
 
 1. Select the ![Change team project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 

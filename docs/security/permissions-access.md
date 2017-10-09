@@ -7,9 +7,10 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/02/2017
 ms.topic: get-started-article
+ms.date: 10/09/2017
 ---
+
 
 # Permissions and access for VSTS and TFS 
 

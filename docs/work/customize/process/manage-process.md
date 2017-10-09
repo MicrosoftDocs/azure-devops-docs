@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 10/09/2017
 ---
 
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
@@ -31,7 +31,7 @@ For example, as shown in the picture below, you see a list of team projects defi
 
 <img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 2px solid #C3C3C3;" />  
 
-To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../../security/set-project-collection-level-permissions.md). 
+To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).  To get added to an admin group, see [Add administrators](../../../security/set-project-collection-level-permissions.md). 
 - Import Process (only supported for accounts that use the [Hosted XML process model](../hosted-xml-process-model.md)) 
 - Create an inherited process   
 - Customize a process  
@@ -55,7 +55,7 @@ You can create an inherited process from any one of the three system processes: 
 
 	<img src="_img/mprocess-create-inherited-process.png" alt="Process, choose Create inherited process" style="border: 2px solid #C3C3C3;" />  
 
-	If you don't have access to these options, ask your project collection admin to [grant you permissions](#process-permissions). 
+	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
 0.	Enter a name for your process and optionally a description. (For naming restrictions, see [Process name restrictions](#process-naming) later in this topic.)
 
@@ -67,7 +67,7 @@ Once you've defined the inherited process, you can perform these actions:
 - [Change team projects to use the inherited process](#migrate)        
 
 <a id="migrate"></a>
-##Change the process used by team projects   
+## Change the process used by team projects   
 
 >[!IMPORTANT]  
 >When you change a team project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
@@ -109,36 +109,10 @@ You can change the process a team project uses from a system process or inherite
 
 0. The Create new project page opens. For details, see [Create your team project](../../../accounts/create-team-project.md).
 
-##Related notes  
-
-An inherited process supports team projects defined in accounts that use the Inherited process models. For an overview of all process models, see [Customize the work tracking experience](../customize-work.md). 
-
-For an overview of what you can customize, see [Customize a process](customize-process.md).  
-
-
-<a id="process-permissions"></a>
-###Grant or restrict permissions to create and modify an inherited process  
-
-By default, only Project Collection Administrators can create and edit processes. However, these admins can grant permissions to other team members by explicitly setting the **Create process**, **Delete process**, or **Edit process** permissions at the collection level for a specific user. 
-
-To customize a process, you need to grant **Edit process**  permissions to a user account for the specific process. 
-
-1. Open the &hellip; context menu for the inherited process and choose Security.   
-
-	<img src="_img/mprocess-open-security-dialog-inherited.png" alt="Open security dialog" style="border: 2px solid #C3C3C3;" />  
-
-2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. For more information about setting permissions, see [Restrict access](../../../accounts/restrict-access-tfs.md).
-
-	Here we add Christie Church and allow her to edit the process.  
- 
-	<img src="_img/mprocess-security-dialog-inherited.png" alt="Permissions for a process dialogue" style="border: 2px solid #C3C3C3;" />    
-
->[!NOTE]  	  
-> Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 
 <a id="enable-process">  </a>
-###Enable/disable a process
+##Enable/disable a process
 
 To prevent team projects being created from a process, you disable it. You might choose this option when you want to apply several customizations and don't want the process used until they are complete. Or, you might want to retire use of a process in favor of moving team projects to a new process. 
 
@@ -150,13 +124,23 @@ All system processes and newly created inherited processes are enabled by defaul
 
 
 <a id="default-process">  </a>
-###Set the default process
+##Set the default process
 
 Set a process as the default to have it pre-selected for any additional team projects you plan to create. 
 
 To set a process as the default, open the &hellip; context menu for the process and choose **Set as default process**. 
 
 Account owners and Project Collection Administrators can add team projects from the admin Overview page or the [account My Projects page](../../../user-guide/account-home-pages.md). VSTS will automatically preselect the default selection.   
+
+
+## Related notes  
+
+An inherited process supports team projects defined in accounts that use the Inherited process models. For an overview of all process models, see [Customize the work tracking experience](../customize-work.md). 
+
+For an overview of what you can customize, see [Customize a process](customize-process.md).  
+
+
+
 
 <a id="process-naming"></a>
 ###Process name restrictions  
