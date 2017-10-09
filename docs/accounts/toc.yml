@@ -116,16 +116,22 @@
     href: faq-add-delete-users.md
   - name: Add team members
     href: faq-add-team-members.md
+  - name: Create team project
+    href: faq-create-team-project.md
+  - name: Rename team project
+    href: faq-rename-team-project.md
   - name: Access with Azure Active Directory
     href: faq-azure-access.md
   - name: Change app access
     href: faq-change-app-access.md
   - name: Add administrators
     href: faq-add-administrators.md
+  - name: Change account ownership
+    href: faq-change-account-ownership.md
   - name: Delete and restore account
     href: faq-delete-restore-vsts-account.md
-  - name: Rename team project
-    href: faq-rename-team-project.md
+  - name: Set up Visual Studio
+    href: faq-set-up-vs.md
 - name: Reference
   items:
   - name: Permissions and access

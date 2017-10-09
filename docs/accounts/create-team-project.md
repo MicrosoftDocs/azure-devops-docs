@@ -1,6 +1,6 @@
 ---
-title: Create a team project Team Foundation Server (TFS)
-description: Add a team project to an on-premises Team Foundation Server (TFS)
+title: Create a team project in VSTS or Team Foundation Server (TFS)
+description: Add a team project in VSTS or on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -30,7 +30,7 @@ If you have a team project already, and want to start coding an application proj
 >If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 
-### From the web
+## From the web
 
 If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](../tfs-server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
 
@@ -50,7 +50,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
     ![Create team project dialog](_img/create-team-project/createproject.png)
 
-### From Team Explorer
+## From Team Explorer
 
 You can create a team project from Team Explorer after you have connected to an on-premises server. 
 
@@ -144,73 +144,3 @@ From the admin context of the web portal, you can add additional repositories to
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>The ability to work from both Git and TFVC repositories from the same team project is only supported when you connect to VSTS or an on-premises application server that you've upgraded to TFS 2015 Update 1. Additional steps to address permissions may be required. See [Git team projects](../git/team-projects.md) or [TFVC team projects](../git/team-projects.md).</blockquote>  
 
-##Resolve errors
-
-###To resolve permission related errors
-If you receive an error message that states you don’t have permission, go get those permissions: become a member of the [Project Collection Administrators group](https://msdn.microsoft.com/library/dd547204.aspx), [Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md) become a member of the, and [Full Control permissions](https://msdn.microsoft.com/library/dd547204.aspx) on the server that hosts SharePoint Products.  
-
-###To resolve Error TF30169
-
-**Error TF30169: The New Team Project Wizard was unable to download the process template {0}.**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint Products.
-
-Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](requirements.md).
-
-###To resolve Error TF30321 
-
-**Error TF30321: The name you typed is already used for another team project on the Team Foundation Server** indicates that you should use a different name for your team project. The name you entered is either in active use or has undergone partial deletion, but not full deletion.  
-
-Even when you've deleted a team project, you may get the same name error. If a team project create or delete operation doesn’t successfully finish, some components could be created or deleted even though others are not. In this event, you can’t reuse the name associated with the team project.
-
-To verify project deletion or remove remaining components associated with a partially deleted team project, use the [Delete a team project [TFSDeleteProject]](https://msdn.microsoft.com/library/ms181482). Then try again to create the team project with the same name.
-
-Even with troubleshooting, you might not be able to use the same name. Some components of the deleted team project could be scheduled for deletion but not yet deleted.
-
-
-###To resolve an error message related to a plug-in 
-
-The process template used to create the team project contains several XML plug-in files. If one of these files contains a format or other error, an error message appears.
-
-Review the project creation log to determine the plug-in that caused the error. After you discover the problem, you can either contact the developer or vendor that provided the plug-in, or attempt to fix the problem yourself. For more information, see [Customize a Process Template](https://msdn.microsoft.com/library/ms243782.aspx).
-
-###To resolve a problem connecting to a server
-
-If you receive an error message about a problem connecting to a server, retrieving information from a server, or checking permissions to create projects, it could be caused by an incorrectly configured server in the deployment. This problem is especially common after a server move, failover, or other maintenance activity.
-
-Contact the TFS system administrator and request that they verify the server configuration.
-
-<a id="q-a">  </a>
-## Q & A  
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-###Q: How do I add my custom process template to the list?
-
-**A:** You’ll need to first [upload your template](../work/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](https://msdn.microsoft.com/library/ms243782.aspx).
-
-<a id="log-file">  </a>
-###Q: Where is the log file located?
-
-**A:** The log file is stored in $:\\Users\\*user name*\\AppData\\Local\\Temp and labeled vso\_TeamProjectCreation\_*yyyy\_mm\_dd\_hh\_mm\_ss*.log.
-
-The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. You can review the log entries to find network or file related issues by searching for **Exception** or **Error**.
-
-###Q: How do I delete a team project?
-
-**A:** You can delete a team project you no longer use, which helps simplify the navigation to team projects that are in use. See [Delete a team project](delete-team-project.md).
-
-###Q: How do I add reporting or SharePoint portal resources?
-
-**A:** See one of these topics:
-
--   To add reporting: [Add reports to a team project](../report/admin/add-reports-to-a-team-project.md).
-
--   To add a SharePoint web application: [Add SharePoint products to your deployment](../tfs-server/admin/add-sharepoint-to-tfs.md).
-
--   To configure a team project portal to use an existing website or SharePoint site: [Configure a project portal](https://msdn.microsoft.com/library/ms242865.aspx).
-
-###Q: Where can I go if I have more questions?
-
-**A:** You can post a question or search for answers in the [Team Foundation Server – Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
-
-
-<!-- ENDSECTION -->

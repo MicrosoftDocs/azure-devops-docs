@@ -83,8 +83,6 @@ and sign in with the identity used to purchase these subscriptions.
 They won't renew at the end of the month.
 
 
-## Marketplace and Billing Q&A
-
 Visit [Marketplace support](../../marketplace/marketplace-billing-qa.md), 
 [Visual Studio subscriptions troubleshooting](../faq-vs-subscriptions.md), or 
 [Azure billing troubleshooting](../faq-azure-billing.md) to 
