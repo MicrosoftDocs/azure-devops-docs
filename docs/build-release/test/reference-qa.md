@@ -272,7 +272,7 @@ sources, set this option to
 from different sources, set this option to
 **Allow only one active deployment at a time**. 
 
-<a name="faq-errors".</a>
+<a name="faq-errors"></a>
 ### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
 
 **A:** Check and resolve issues as follows:
