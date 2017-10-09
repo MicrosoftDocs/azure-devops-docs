@@ -34,7 +34,7 @@
     href: ../work-items/agile-glossary.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
   items:
-  - name: Filter product and portfolio backlogs
+  - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Copy list
     href: copy-list.md 

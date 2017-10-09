@@ -7,7 +7,7 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 06/13/2017
+ms.date: 10/09/2017
 ---
 
 
@@ -50,7 +50,6 @@ For example, we use Delivery Plans internally to share the schedule of Features 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
 
-
 ### Pre-requisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
@@ -69,7 +68,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 2px solid #C3C3C3;" /> 
 
-	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Permissions to create and edit plans](#plan-permissions).  
+	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../security/set-permissions-access-work-tracking.md#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
@@ -183,26 +182,6 @@ For additional resources for working with multiple teams, see these additional t
 - [Multiple teams](multiple-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Configure team settings](manage-team-assets.md)  
-
-<a id="configure-plan-permissions">  </a>
-<a id="plan-permissions">  </a>
-### Permissions to create and edit plans 
-
-The creator of a plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans.  
-
-Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../track/set-query-permissions.md). 
- 
-0. To grant permissions to a group or user to manage or edit a specific plan, click the  ![actions icon](../_img/icons/actions-icon.png) actions icon to open the Security dialog for the plan.  
-
-<img src="_img/review-tp-open-security-dialog.png" alt="Open the Permissions dialog for a plan" style="border: 2px solid #C3C3C3;" />    
-
-0. Add a user or group who you want to grant permissions to or restrict access. By default, non-administrators can't delete or edit a plan that you create. 
-
-0. With the user or group selected, set the permission you want them to have to Allow. 
-
-	For example, here we grant permission to Raisa to edit the plan.
-
-	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 2px solid #C3C3C3;" />   
 
 <a id="plans-keyboard-shortcuts">  </a>
 ### Plans view, keyboard shortcuts  

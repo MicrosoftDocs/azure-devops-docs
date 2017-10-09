@@ -33,7 +33,7 @@ When adding custom fields, note the following limits:
 
 In addition, you can [add an existing inherited or custom field](#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.    
 
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  
+To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).  
 
 **What you can't customize**
 - You can't change the field name or data type once you've defined it  
@@ -252,7 +252,7 @@ Prior to deleting a field, you must first remove it from the form for each WIT t
 
 	<img src="_img/cpfield-delete-field.png" alt="Delete field" style="border: 2px solid #C3C3C3;" />  
 
-	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions). 
+	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the field as shown. 
 

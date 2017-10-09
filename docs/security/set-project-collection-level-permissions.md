@@ -4,11 +4,12 @@ description: How-to guide to set project-level permissions in Visual Studio Team
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 
-toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.topic: get-started-article
+ms.date: 10/09/2017
 ---
+
 
 # Add administrators, set permissions at the project-level or project collection-level
 

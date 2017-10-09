@@ -28,7 +28,7 @@ You customize the workflow for a WIT by adding a custom state. Each customizable
 > |-------------|----------|
 > |- [View workflow states](#hide-state)<br/>- [Hide a state](#hide-state) |- [Add a state](#add-states)<br/>- [Edit a state (change color or category)](#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |  
 
-To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  
+To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).  
 
 **What you can't customize**  
 - You can't modify an inherited state (you can't change its name, color, or category)

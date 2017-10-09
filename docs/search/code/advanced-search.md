@@ -44,18 +44,24 @@ for example, a search for "valid" will not find instances of the word
 "validation". However, searches are _not_ case-sensitive.
 
 When you search from inside a project, the default is to search only within that 
-project. 
+project. You can navigate up to the account level to broaden your search.
+
+In a Git project, you see a list of the repositories it contains. 
+Use the project and repository checkboxes to widen your search to more or all projects, or to 
+narrow your search to fewer projects and repositories. If there is more than a few 
+projects or repositories, use the **Show more** link to see them all.
+
+Code Search can index multiple branches in a Git repository - by default it indexes 
+files in only the default branch of your Git repositories (usually this is the **master** branch).
+Specify up to five additional branches for each repository that you want Code Search to index
+in the **Options** section of the **Version Control** tab in the **Settings** page. 
+
+![Opening the Version Control settings page](_img/advanced-search/version-control.png)
 
 In a TFVC project, you see a list of folder paths in that project for 
 which you have read access - you won't see any projects and folders 
 for which you don't have read permission. Select paths in the folder tree 
 to narrow your search if required.
-  
-In a Git project, you see a list of the repositories it contains (Code Search indexes 
-files in only the default branch of your Git repositories; usually this is the **master** branch). 
-Use the project and repository checkboxes to widen your search to more or all projects, or to 
-narrow your search to fewer projects and repositories. If there is more than a few 
-projects or repositories, use the **Show more** link to see them all.
 
 Code Search remembers your last settings, such as the project and repository or path you
 searched in. Clear all the checkboxes to search across all projects. Do this quickly and 

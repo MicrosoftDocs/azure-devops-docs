@@ -221,10 +221,11 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Analytics</h3>
+                                    <h3>Reporting</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">PowerBI</a></li>
+                                        <li><a class="barLink" href="/vsts/report/sql-reports/">TFS Reporting</a></li>
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
@@ -707,8 +708,8 @@ ms.date: 07/26/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#analytics">Analytics</a>
-                        <ul id="analytics" class="cardsA">
+                        <a href="#reporting">Reporting</a>
+                        <ul id="reporting" class="cardsA">
                             <li>
                                 <a href="/vsts/report/index">
                                     <div class="cardSize">
@@ -742,6 +743,25 @@ ms.date: 07/26/2017
                                                     <h3>PowerBI</h3>
                                                     <p>Gain insight and analyze the progress and quality of your team projects
                                                         across your enterprise.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/report/sql-reports/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>TFS Reporting</h3>
+                                                    <p>Configure a Data Warehouse, SQL Server Analysis Services, and SQL Server Reporting Services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -946,6 +966,44 @@ ms.date: 07/26/2017
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
                                                     <p>Install or remove Marketplace extensions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/report/sharepoint-dashboards/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_sharepoint.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SharePoint Integration</h3>
+                                                    <p>Configure integration for TFS 2017 and prior. Upgrade integration for TFS 2018 and after.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/work/tfs-ps-sync/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_project-server.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Project Server Integration</h3>
+                                                    <p>Native solution deprecated with TFS 2017. Find Microsoft partners who provide this integration.</p>
                                                 </div>
                                             </div>
                                         </div>

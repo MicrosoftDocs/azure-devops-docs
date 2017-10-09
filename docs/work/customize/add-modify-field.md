@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 10/09/2017
 ---
 
 # Add or modify a field  
@@ -275,7 +275,6 @@ The most efficient way to apply security restrictions is to create custom groups
 
     By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.
 
-See also [Restrict access](../../accounts/restrict-access-tfs.md).  
 
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field (On-premises XML) 

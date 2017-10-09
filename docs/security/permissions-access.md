@@ -7,9 +7,10 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/02/2017
 ms.topic: get-started-article
+ms.date: 10/09/2017
 ---
+
 
 # Permissions and access for VSTS and TFS 
 
@@ -134,7 +135,7 @@ From the team project admin content for Version Control, you can set permissions
 
 You can connect to work items from the Work hub of the web portal and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../work/backlogs/overview.md). Stakeholders have limited access to select work tracking functions as described in [Work as a stakeholder](../security/get-started-stakeholder.md).  
 
-In addition to the permissions set at the project level via the built-in groups, you can set permissions for the following objects: [area and iteration paths](../security/set-permissions-access-work-tracking.md), [queries and query folders](../work/track/set-query-permissions.md), and [delivery plans](../work/scale/review-team-plans.md#plan-permissions).  
+In addition to the permissions set at the project level via the built-in groups, you can set permissions for the following objects: [area and iteration paths](../security/set-permissions-access-work-tracking.md), [queries and query folders](../work/track/set-query-permissions.md), and [delivery plans](set-permissions-access-work-tracking.md#plan-permissions).  
 
 The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/add-team-administrator.md). 
 

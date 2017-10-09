@@ -7,7 +7,7 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/27/2017
+ms.date: 10/09/2017
 ---
 
 
@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [add-users-team-project](add-users-team-project.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md) |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [add-users-team-project](add-users-team-project.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md) |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](set-build-release-permissions.md)<br/>- [Release definition security](set-build-release-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
 <a name="groups"></a>
 ## Groups
@@ -45,7 +45,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-##&nbsp;&nbsp;&nbsp;Server-level (TFS only)
+##&nbsp;&nbsp;&nbsp;Server-level groups(TFS only)
 
 Server groups apply to TFS only. When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
@@ -168,7 +168,7 @@ You can't remove or delete the default server level groups.
 > **[Team Foundation]/Team Foundation Administrators**.
 
 <a name="collection"></a>
-##&nbsp;&nbsp;&nbsp;Collection-level 
+##&nbsp;&nbsp;&nbsp;Collection-level groups
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
@@ -286,7 +286,7 @@ Release Administrators (TFS 2017, VSTS)
 -->
 
 <a id="project-level-groups" />
-##&nbsp;&nbsp;&nbsp;Project-level
+##&nbsp;&nbsp;&nbsp;Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
@@ -651,6 +651,8 @@ You manage collection-level permissions through the [web portal admin context](.
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
 					<li>Edit team project level and collection level permission ACLs</li>
+					<li>Manage process templates</li>
+					<li>Customize a team project or process</li>
 					<li>Create and modify global lists</li>
 					<li>Edit [event subscriptions](#alerts) (email or SOAP) on team project or collection level events.</li>
 				</ul>
@@ -790,6 +792,8 @@ You manage project-level permissions from the [web portal admin context](../user
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
 					<li>Edit team project level permission ACLs</li>
+					<li>Manage process templates</li>
+					<li>Customize a team project</li>
 					<li>Create and modify global lists</li>
 					<li>Edit [event subscriptions](#alerts) (email or SOAP) on team project level events.</li>
 				</ul>
@@ -850,7 +854,7 @@ You manage project-level permissions from the [web portal admin context](../user
 
 ##&nbsp;&nbsp;&nbsp;Build (object-level)
 
-You manage build permissions [for each build defined in the web portal](../build-release/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
+You manage build permissions [for each build defined in the web portal](set-build-release-permissions.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
 
 <img src="_img/permissions/build-permissions.png" style="border: 1px solid #CCCCCC" />
 
@@ -1148,7 +1152,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../git/b
 
 ##&nbsp;&nbsp;&nbsp;TFVC (object-level)
 
-You manage the security of each TFVC branch from the [web portal](../accounts/restrict-access-tfs.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a team project that's been configured to use Team Foundation Version Control as the source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a team project that's been configured to use Team Foundation Version Control as the source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a team project set up to use Team Foundation Version Control as the source control system.
 
@@ -1334,7 +1338,7 @@ In version control permissions, explicit deny takes precedence over administrato
 
 ##&nbsp;&nbsp;&nbsp;Area path (object-level)     
 
-You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1565,7 +1569,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 ##&nbsp;&nbsp;&nbsp;Delivery Plans (object-level) (VSTS)  
 
-You manage plan permissions through the [web portal](../work/scale/review-team-plans.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 > [!NOTE]  
 > **Feature availability**: Plans is in preview and available only on VSTS. You access plans by installing the Plans Marketplace [extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).

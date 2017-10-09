@@ -41,7 +41,6 @@ For anyone to access a team project, you must add them to a security group. For 
 - [Set build and release permissions](set-build-release-permissions.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
-- [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
 
 ## Reference 
 - [Permissions lookup guide](permissions-lookup-guide.md)

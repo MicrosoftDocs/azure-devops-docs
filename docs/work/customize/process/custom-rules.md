@@ -45,7 +45,7 @@ As an example, you can make a field required based on value assignments made to 
  
 ## Add a custom rule 
 
-You add fields to a selected work item type. To add custom rules, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  
+You add fields to a selected work item type. To add custom rules, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).  
 
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 

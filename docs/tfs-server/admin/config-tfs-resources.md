@@ -3,7 +3,7 @@ title: Configure and manage TFS resources
 description: Configure and manage TFS resources
 ms.assetid: 634a401e-a919-4dac-b964-51ece1bb43c0
 ms.manager: douge
-ms.author: billchi
+ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin

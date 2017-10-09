@@ -8,7 +8,7 @@ ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 09/20/2017
+ms.date: 10/09/2017
 ---
 
 # Features
@@ -98,7 +98,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [Team admin role](../work/scale/team-administrator-permissions.md)  
 - [Test](../security/set-project-collection-level-permissions.md)  
 - [Work item tags](../security/permissions.md#tags)  
-- [Restrict access](../accounts/restrict-access-tfs.md)   
+
 
 </td>
 </tr>
@@ -402,7 +402,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
 
 <p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/customize/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 </td>
 
@@ -2318,7 +2318,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can [restrict access to several features and tasks](../accounts/restrict-access-tfs.md) by setting the permission state to Deny through to individual accounts or a security group.</p>
+<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual accounts or a security group.</p>
 
 
 </td>
@@ -2334,7 +2334,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../work/customize/process/manage-process.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
 <p>Understand how [valid user groups are populated and the permissions they're granted](../security/about-permissions.md#validusers).</p>

@@ -7,7 +7,7 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 10/09/2017
 ---
 
 # About permissions and groups 
@@ -27,17 +27,13 @@ Here's what you need to know about permission settings:
 
 -   **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.  
 
--   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Inherited allow** and **Inherited deny**.  
+-   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.  
 
 -   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.  
 
     For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong.
 
--   Changing a permission for a group changes that permission for all users who are granted that permission through their membership in that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
-
-Two useful tips for understanding the effects of change: The **Member of** tab shows the groups that an individual user or group belongs to. You can also hover over an inherited permission, and a **Why?** icon will appear. If you choose it, a dialog box will open with more information.
-
-<img src="../feedback/_img/control-panel-contributors-group-permissions.png" alt="Control panel, team project, Security tab, Contributors group, permissions" style="border: 2px solid #C3C3C3;" />  
+-   Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
 
 <a name="inheritance"></a>
@@ -136,12 +132,9 @@ information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
 If you need to restrict view access, then you can [set restrictions through the area path node](../security/set-permissions-access-work-tracking.md).
-For additional methods, see [Restrict access in TFS](../accounts/restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
 no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.
-
-In addition, the `VALIDUSER` element can be used [to allow or restrict access for work item tracking](../accounts/restrict-access-tfs.md#work-items).
 
 
 ## Tools used to set permissions

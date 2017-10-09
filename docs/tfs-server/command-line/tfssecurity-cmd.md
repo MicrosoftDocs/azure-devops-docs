@@ -1200,6 +1200,7 @@ Sample output:
 |[Update tag definition](../../security/permissions.md#update-tag-definition-permission)|Tagging|UPDATE|
 
 <a id="area-permissions"</a>
+<a id="area"</a>
 ### Area
 
 |Permission|Namespace|Action|
