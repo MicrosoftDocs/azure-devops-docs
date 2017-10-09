@@ -61,5 +61,3 @@ including yourself as the VSTS account owner, if not in the directory already.
 0.  After adding your account users to your directory, 
 connect your VSTS account to your directory. 
 
-
-[Troubleshooting Q&A](faq-azure-access.md)

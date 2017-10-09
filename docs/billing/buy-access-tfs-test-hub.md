@@ -15,6 +15,7 @@ ms.date: 10/6/2017
 
 > **Required:** TFS 2015.2 or later to buy monthly access
 
+
 For [TFS](https://www.visualstudio.com/tfs/) 
 and [VSTS](https://www.visualstudio.com/team-services/), 
 you usually pay per user so they can access your TFS or your VSTS account. 
@@ -112,29 +113,4 @@ so they can use the Test hub.
 
 	If you stop paying for these VSTS users, 
 	your TFS administrator should remove those users from TFS.
-
-## Q&A
-
-<!-- BEGINSECTION class="m-qanda" -->
-
-####Q: Why should I pay for VSTS users to access TFS or the Test hub?
-
-A: You get many benefits, for example:
-
-*	VSTS users give you the flexibility 
-to access both TFS and VSTS.
-*	You get a simpler way to manage users who need temporary access.
-*	You get all the purchasing capabilities that Azure offers, 
-like payment by credit card and more.
-
-####Q:	Where can I learn more about TFS CALs and access levels for the Test hub?
-
-A: See [Change access levels](../security/change-access-levels.md).
-
-####Q:	Where can I find more VSTS extensions and more info about the Visual Studio Marketplace?
-
-A:	See [VSTS extensions](https://marketplace.visualstudio.com/vsts) 
-and [Visual Studio Marketplace Overview](/vsts/marketplace/overview).
-
-<!-- ENDSECTION --> 
 

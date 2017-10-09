@@ -78,5 +78,3 @@ Select your VSTS account.
 	[More questions about disconnecting?](faq-azure-access.md#faq-disconnect)
 
 
-[Troubleshooting Q&A](faq-azure-access.md)
-

@@ -41,6 +41,3 @@ VSTS account.
 from your VSTS account and reassign their access levels, if necessary.
 
 
-
-[Troubleshooting Q&A](faq-azure-access.md)
-
