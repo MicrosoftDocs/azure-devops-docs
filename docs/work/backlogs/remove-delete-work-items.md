@@ -36,7 +36,7 @@ You only have access to those actions that are supported on your platform and fo
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
-> |- [Change work item type](#change-type)&#160;<sup>1, 2</sup> (VSTS)<br/>- [Remove work items (change State)](#remove)&#160;<sup>2, 3</sup><br/>- [Delete work items](#delete)&#160;<sup>1, 2</sup>  (VSTS, TFS 2015.2)<br/>- [Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)|- [Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup><br/>- [Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup><br/>- [Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1)|  
+> |- [Change work item type](#change-type)&#160;<sup>1, 2</sup> (VSTS)<br/>- [Remove work items (change State)](#remove)&#160;<sup>2, 3</sup><br/>- [Delete work items](#delete)&#160;<sup>1, 2</sup>  (VSTS, TFS 2015.2)<br/>- [Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)|- [Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup> (VSTS)<br/>- [Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup><br/>- [Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1)|  
 
 
 **Notes:**  
@@ -156,8 +156,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	![Delete work item from the form](_img/delete-work-item.png)  
 
 	To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** set to Allow. By default, this permission is Not Set for Contributors. 
-	- For VSTS and TFS 2015.2 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default. 
-	- For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.     
+	- For VSTS and TFS 2015.2 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default. 
+	- For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.     
 
 2. Confirm you want to actually delete the item(s).  
 

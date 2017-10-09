@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [add-users-team-project](add-users-team-project.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md) |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [add-users-team-project](add-users-team-project.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md) |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
 <a name="groups"></a>
 ## Groups
@@ -1334,7 +1334,7 @@ In version control permissions, explicit deny takes precedence over administrato
 
 ##&nbsp;&nbsp;&nbsp;Area path (object-level)     
 
-You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1565,7 +1565,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 ##&nbsp;&nbsp;&nbsp;Delivery Plans (object-level) (VSTS)  
 
-You manage plan permissions through the [web portal](../work/scale/review-team-plans.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 > [!NOTE]  
 > **Feature availability**: Plans is in preview and available only on VSTS. You access plans by installing the Plans Marketplace [extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
