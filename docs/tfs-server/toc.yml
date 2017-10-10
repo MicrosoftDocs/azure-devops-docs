@@ -230,7 +230,7 @@
 - name: Reference
   items:
   - name: Requirements
-    href: /vsts/accounts/requirements?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
+    href: ./requirements.md
   - name: Changes to requirements for TFS 2018
     href: requirement-changes-tfs16.md
   - name: Changes to requirements for TFS 2017
