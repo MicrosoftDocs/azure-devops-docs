@@ -32,6 +32,8 @@
     href: develop/service-endpoints.md
   - name: Add a service hook
     href: develop/add-service-hook.md
+  - name: Create a PR status server
+    href: ../git/how-to/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
   - name: Add a chart
     href: develop/add-chart.md
   - name: Store data and settings
