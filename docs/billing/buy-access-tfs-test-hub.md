@@ -1,6 +1,6 @@
 ---
-title: Buy access to TFS or Test hub | Team Foundation Server (TFS)
-description: Get more access to Team Foundation Server (TFS) or the Test hub
+title: Buy TFS CALs or access to the TFS Test hub | Team Foundation Server (TFS)
+description: Buy Team Foundation Server (TFS) client access licenses (CALs) or access to the TFS Test hub 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 10/6/2017
 ---
 
-# Buy access to Team Foundation Server or TFS Test hub
+# Buy access to Team Foundation Server or the TFS Test hub
 
 **TFS 2015.2**
 
@@ -24,7 +24,7 @@ Some users are free, like [Visual Studio subscribers](https://www.visualstudio.c
 and 5 users in each VSTS account. 
 If you need to add more than these users, 
 you can just pay monthly for these users in your VSTS account. 
-This works for TFS too because each paid 
+Paying for VSTS users works for TFS too because each paid 
 [VSTS user](https://www.visualstudio.com/team-services/pricing/) 
 can also access your TFS. You don't have to use VSTS; 
 you can just create a VSTS account to pay for more TFS users.
