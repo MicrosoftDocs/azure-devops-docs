@@ -30,6 +30,8 @@
     href: get-started/authentication/oauth.md
   - name: Create service hooks subscriptions programmatically
     href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+  - name: Create a PR status server
+    href: ../git/how-to/create-pr-status-server.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Service hooks consumers and actions

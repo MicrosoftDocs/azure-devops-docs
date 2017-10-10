@@ -5,7 +5,7 @@ ms.assetid: b1262306-214c-4422-8eda-d03d05825241
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/29/2016
 ---
 

@@ -4,8 +4,8 @@ description: Use the branches page to delete a Git branch in VSTS or Team Founda
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
-ms.manager: sdanie
-ms.author: routlaw
+ms.manager: douge
+ms.author: sdanie
 ms.date: 09/07/2017
 ---
 

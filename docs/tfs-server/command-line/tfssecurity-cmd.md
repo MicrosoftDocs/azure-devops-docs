@@ -1199,8 +1199,8 @@ Sample output:
 |[Enumerate tag definition](../../security/permissions.md#enumerate-tag-definition-permission)|Tagging|ENUMERATE|
 |[Update tag definition](../../security/permissions.md#update-tag-definition-permission)|Tagging|UPDATE|
 
-<a id="area-permissions"</a>
-<a id="area"</a>
+
+<a id="area-permissions"></a>
 ### Area
 
 |Permission|Namespace|Action|

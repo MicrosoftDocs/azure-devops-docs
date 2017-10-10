@@ -36,17 +36,17 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
-2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon in the top right.
+2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page. (Hover and select *Server settings* for TFS).
 
 3. Open the collection administration page for the collection you want to create the team project in. 
 
     ![Collection administration link](_img/create-team-project/adminoverview.png)
     
-4. Click New team project.
+4. Click **New team project...**.
 
     ![New team project button](_img/create-team-project/collectionoverview.png)
 
-5. Provide a name for your new Team project, select it's initial source control type, and select a process to create a team project.
+5. Provide a name for your new Team project, select its initial source control type, and select a process to create a team project.
 
     ![Create team project dialog](_img/create-team-project/createproject.png)
 

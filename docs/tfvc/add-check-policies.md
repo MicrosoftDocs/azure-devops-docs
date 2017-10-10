@@ -5,7 +5,7 @@ ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/18/2016
 ---
 
