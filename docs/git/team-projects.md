@@ -6,7 +6,7 @@ toc: show
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
+ms.author: sdanie
 ms.date: 08/04/2016
 ---
 
