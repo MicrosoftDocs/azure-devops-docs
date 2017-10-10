@@ -138,7 +138,7 @@ ms.date: 07/26/2017
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; manual testing</a></li>
                                                     <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
                                                 </ul>
                                             </div>
