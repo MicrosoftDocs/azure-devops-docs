@@ -6,11 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/17/2017
+ms.date: 10/09/2017
 ---
 
 #  Squash merge pull requests
-#### VSTS | TFS 2017
+
+#### VSTS | TFS 2018, 2017, 2015 | Visual Studio 2017, 2015
 
 ## Pull requests and Git history
 

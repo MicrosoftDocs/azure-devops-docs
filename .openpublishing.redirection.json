@@ -4465,6 +4465,11 @@
             "source_path": "docs/accounts/add-users.md",
             "redirect_url": "/vsts/security/add-users-team-project",
             "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/git/concepts/pull-requests.md",
+            "redirect_url": "/vsts/git/concepts/pull-requests-overview",
+            "redirect_document_id": false
        }
     ]
 }
