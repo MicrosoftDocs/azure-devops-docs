@@ -191,6 +191,8 @@ For each artifact that is referenced in a release, you can use the following art
 > | Release.Artifacts.{Artifact alias}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
 > | Release.Artifacts.{Artifact alias}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
 
+See also [Artifact source alias](artifacts.md#source-alias)
+
 ### Primary artifact variables
 
 You designate one of the artifacts as a primary artifact in a release definition. For the designated primary artifact, Release Management populates the following variables.

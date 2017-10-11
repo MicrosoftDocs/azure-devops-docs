@@ -16,6 +16,8 @@ ms.date: 09/26/2017
 <a name="testplans"></a>
 ## Creating manual test plans
 
+[Go to related topic &gt;](getting-started/create-a-test-plan.md)
+
 ### Q: Can I rename my test plan?
 
 **A:** Yes, open the test plan from the shortcut menu and rename it.
@@ -91,6 +93,8 @@ For example, adding and removing test cases from a test suite are tracked in thi
 
 <a name="testcases"></a>
 ## Creating manual test cases
+
+[Go to related topic &gt;](getting-started/create-test-cases.md)
 
 ### Q: Can I rename or permanently delete test cases?
 
@@ -282,6 +286,8 @@ again to see the correct test suite and tests.
 <a name="runtests"></a>
 ## Running manual tests
 
+[Go to related topic &gt;](getting-started/run-manual-tests.md)
+
 <a name="qanda"></a>
 ### Q: How do I rerun a test?
 
@@ -366,6 +372,8 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 <a name="trackstatus"></a>
 ## Tracking test status
 
+[Go to related topic &gt;](getting-started/track-test-status.md)
+
 ### Q: Can I view the recent test results for an individual test case?
 
 **A:**  Yes, select the test case within a test suite and then 
@@ -401,6 +409,8 @@ is counted for each of the test suites separately.
 <a name="repeatdifferent"><a/>
 ## Repeating a test with different data
 
+[Go to related topic &gt;](repeat-test-with-different-data.md)
+
 ### Q: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
 
 **A**: It's better to use [test configurations](test-different-configurations.md) for that.
@@ -421,6 +431,8 @@ your grid back into Excel if you need to.
 
 <a name="manageresults"><a/>
 ## Managing test results
+
+[Go to related topic &gt;](getting-started/how-long-to-keep-test-results.md)
 
 ### Q: What are the default retention limits?
 
@@ -457,6 +469,8 @@ Test results are often deleted before you can analyze them.
 <a name="sharesteps"><a/>
 ## Sharing steps between test cases
 
+[Go to related topic &gt;](mtm/share-steps-between-test-cases.md)
+
 ### Q: How do I use shared steps in Microsoft Test Manager?**  
 
 **A:** It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
@@ -479,6 +493,8 @@ You don't have to provide values in the shared steps definition. However, you ca
 
 <a name="tandfext"><a/>
 ## Test &amp; Feedback extension
+
+[Go to related topic &gt;](getting-started/perform-exploratory-tests.md)
 
 <a name="browser-support"><a/>
 ### Q: Which web browsers does the extension support?
@@ -538,6 +554,8 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 
 <a name="mtmqna"></a>
 ## Microsoft Test Manager
+
+[Go to related topic &gt;](mtm/run-manual-tests-with-microsoft-test-manager.md)
 
 ### Q: Can I record a test in one test plan and play it back in another?
   

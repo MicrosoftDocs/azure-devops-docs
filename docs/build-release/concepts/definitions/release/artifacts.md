@@ -360,6 +360,7 @@ wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
 
+<a name="source-alias"></a>
 <h2 id="source-alias">Artifact source alias</h2>
 
 To ensure the uniqueness of every artifact download, each artifact source

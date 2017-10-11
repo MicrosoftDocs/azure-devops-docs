@@ -16,6 +16,8 @@ ms.date: 09/26/2017
 <a name="gentopics"></a>
 ## General topics
 
+[Go to related topic &gt;](getting-started-with-continuous-testing.md)
+
 ### Q: How do I run tests from different unit test frameworks with my build?
 
 **A**: First, set up your test frameworks in your development tool. For example, in Visual Studio:
@@ -104,6 +106,8 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 <a name="associate"></a>
 ## Associating tests with test cases
 
+[Go to related topic &gt;](associate-automated-test-with-test-case.md)
+
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
@@ -139,6 +143,8 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 <a name="test-hub"></a>
 ## Running automated tests from the Test hub
+
+[Go to related topic &gt;](run-automated-tests-from-test-hub.md)
 
 ### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
 
