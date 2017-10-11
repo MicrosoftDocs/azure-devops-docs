@@ -16,7 +16,7 @@ ms.date: 06/02/2017
 
 
 >[!NOTE]  
->**Feature availability:**&#160;&#160;The Work item search feature is available from VSTS.     
+>**Feature availability:**&#160;&#160;The Work item search feature is available from VSTS and TFS 2017 and later versions.     
 
 You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
 
