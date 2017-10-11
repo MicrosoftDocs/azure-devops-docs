@@ -133,7 +133,7 @@ See these additional resources to help you support your team:
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](/vsts/extend/develop/add-dashboard-widget). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/en-us/docs/integrate/api/overviewdashboard/dashboards).  
+Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/docs/integrate/api/dashboard/overview).  
 
 
 <!---  

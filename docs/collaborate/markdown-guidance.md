@@ -8,7 +8,7 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 09/02/2017
+ms.date: 10/10/2017
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -157,7 +157,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
+In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, within pull requests, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
 
 In markdown files and widgets, you can set text hyperlinks for your URL using the standard markdown link syntax:
 

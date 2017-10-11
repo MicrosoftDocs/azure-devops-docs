@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/02/2017
+ms.date: 10/10/2017
 ---
 
 # Add tags to work items to categorize and filter lists and boards  
@@ -202,15 +202,20 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 
 
-By default, all Contributors are granted permissions to create and modify tags.  
-
-
 <a id="assign"></a>
 ## Add and assign tags   
 
 1. From the web portal, open a work item and add a tag. Click Add and type your keyword. Or, select from the list of previously assigned tags.  
 
 	![Add one or more tags to a work item](_img/add-tags-to-work-items-vso-tfs.png)  
+
+	> [!NOTE]   
+	> By default, all Contributors are granted permissions to create and modify 
+	> tags. Stakeholders can add tags that are already defined, but not create 
+	> new tags. To grant or restrict permissions to create new tags, you set 
+	> the permission **Create tag definition** at the project-level. To learn
+	> more, see [Add administrators, set permissions at the project-level or  
+	> project collection-level](../../security/set-project-collection-level-permissions.md).
 
 2. To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
@@ -274,7 +279,15 @@ From the web portal, you can filter backlogs, boards, and query results.
 
 3. To show all items, choose All or choose the Tag filter image on backlog and queries pages filter icon to turn filtering off.   
 
-##Related notes
+## Delete, remove, or manage tags 
+
+You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after 3 days of disuse.  
+
+If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within 3 days.  
+
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a page under the Work hub to manage tags. 
+
+## Related notes
 
 Tags are a shared resource, they're associated with a team project and not a team. If your team project contains multiple teams, all teams will add to and work from the same set of tags. 
 - [Use the query editor to list and manage queries](using-queries.md) 
@@ -284,7 +297,7 @@ Tags are a shared resource, they're associated with a team project and not a tea
 
 See also the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=tags&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) for extensions that support managing tags.
 
-###Filter backlogs or boards using tags  
+### Filter backlogs or boards using tags  
 
 If you've added tags to your backlog or board items, you can filter your backlog list using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter.   
 
@@ -295,7 +308,7 @@ To filter the Kanban board using tags, make sure that you first [customize cards
 
 To learn more about filtering, see [Filter your backlog or board](../backlogs/filter-backlogs.md).  
 
-###Limits on number of tags
+### Limits on number of tags
 While no hard limit exists, creating more than 100K tags for a team project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
@@ -306,17 +319,12 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
-###Delete or remove tags 
 
-You can't delete a tag itself. However, if you delete a tag from all work items to which it's currently assigned, the system will delete the tag. The system automatically deletes unassigned tags after 3 days of disuse.  
-
-If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within 3 days.  
-
-###Add tags to the default column view on the product backlog 
+### Add tags to the default column view on the product backlog 
 
 Modify the ProcessConfiguration file to include ```System.Tags``` in the set of fields to display. See Process configuration XML element reference.
 
-###Add or modify tags using an API 
+### Add or modify tags using an API 
 You can use ```WorkItem.Fields``` or Work Item Field Explorer, provided with the Process Editor, to determine if the Tags field is editable (IsEditable). To acquire the Process Editor: 
 > - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). 
 > - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 

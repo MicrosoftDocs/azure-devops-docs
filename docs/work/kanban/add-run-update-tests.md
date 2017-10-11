@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
 ms.topic: get-started-article
+ms.date: 10/10/2017
 ---
 
 #Add, run, and update inline tests
@@ -15,7 +15,7 @@ ms.topic: get-started-article
 [!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
 
 >[!NOTE]  
-><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017.   
+><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017 and later versions.   
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 

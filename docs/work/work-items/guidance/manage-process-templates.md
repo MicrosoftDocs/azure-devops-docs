@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/13/2017
+ms.date: 10/11/2017
 ---
 
 #Upload or download a process template
@@ -15,7 +15,7 @@ ms.date: 04/13/2017
 
 
 >[!NOTE]  
-><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. For the Hosted XML and On-premises XML process models, you work with process templates to customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).  Â 
+><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. For the Hosted XML and On-premises XML process models, you work with process templates to customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).   
 
 When you choose to create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises TFS. It supports Hosted XML and On-premises XMl process models which support customization of team projects through the modification and import of XML definition files. 
 

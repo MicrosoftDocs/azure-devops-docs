@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
 ms.topic: get-started-article
+ms.date: 10/10/2017
 ---
 
 # Add teams and team members  
@@ -159,7 +159,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 	Email team: ```http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Email```   
 	Voice team: ```http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Voice```   
  
- -->
+-->
 
 ## Move work items under teams 
 Now that your two feature teams are configured, you'll want to move existing work items from their current assignments to the team's default area path. This way, the work items will show up on each feature team's backlog. 
@@ -207,15 +207,22 @@ One last step in moving from one team to two teams requires configuring the defa
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
-- [Create and edit child nodes under their default area path](../customize/set-area-paths.md)  
-- [Create and edit child nodes under an existing iteration node](../customize/set-area-paths.md)  
-- [Create shared queries and folders under the Shared Queries folder](../track/set-query-permissions.md).  
+- Create and edit child nodes under their default area path
+- Create and edit child nodes under an existing iteration node 
+- Create shared queries and folders under the Shared Queries folder
+
+For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md).
  
-By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and [check in work to the team's code base](https://msdn.microsoft.com/library/ms181407.aspx) or [collaborate on a Git team project](../../git/gitquickstart.md).  
+By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git team project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](_img/default-permissions-assigned-to-team-contributors.png)  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../../security/add-users-team-project.md). 
+You can also choose to limit access to select features by making a user a [Stakeholder](../../security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
+
+If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
+
+-  [Set SharePoint site permissions](../../security/set-sharepoint-permissions.md) 
+-  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
 
 
 ## Try this next 
