@@ -7,7 +7,7 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/19/2017
+ms.date: 10/10/2017
 ---
 
 
@@ -37,7 +37,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
 
-Of course, if you have several teams or more complex release and sprint cadences to accomodate, then you'll need to read further. 
+Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
 
 >[!NOTE]  
 >**Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../customize/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
@@ -72,7 +72,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Plan a sprint](sprint-planning.md) 
+> [Plan a sprint](sprint-planning.md) or [Define iterations for the team project](../customize/set-iteration-paths-sprints.md) 
 
 ## Related notes 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../scale/set-team-defaults.md).  

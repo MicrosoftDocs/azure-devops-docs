@@ -63,8 +63,15 @@
   - name: Branch organization
     href: concepts/git-branching-guidance.md
   - name: Pull requests
-    href: concepts/pull-requests.md
-    name: Forks
+    href: concepts/pull-requests-overview.md
+    items:
+    - name: Review code with pull requests
+      href: pull-requests.md
+    - name: Format comments with markdown
+      href: ../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    - name: Squash merge pull requests
+      href: merging-with-squash.md
+  - name: Forks
     href: concepts/forks.md
   - name: Authentication
     href: auth-overview.md
@@ -144,14 +151,6 @@
       href: commit-history.md
     - name: Commit details
       href: commit-details.md
-  - name: Pull requests
-    items:
-    - name: Review code with pull requests
-      href: pull-requests.md
-    - name: Format comments with markdown
-      href: ../collaborate/markdown-guidance.md
-    - name: Squash merge pull requests
-      href: merging-with-squash.md
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/git/overview
 - name: Resources

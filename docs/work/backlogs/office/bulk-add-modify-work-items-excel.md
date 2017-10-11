@@ -1,12 +1,12 @@
 ---
-title: Bulk modify using Excel | VSTS & TFS  
-description: Use Excel to save you time to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
+title: Bulk modify using Excel  
+description: Use Excel to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
+ms.date: 10/10/2017
 ---
 
 # Bulk add or modify work items with Excel 
@@ -29,17 +29,17 @@ In this topic you'll learn:
   
 
 >[!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS.
+>You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test cases or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017, you'll need Project 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 	
 	>[!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -48,7 +48,7 @@ In this topic you'll learn:
     >[!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).  
+4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../security/add-users-team-project.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
@@ -98,7 +98,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 >[!NOTE]  
-><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://go.microsoft.com/fwlink/?LinkId=832491). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://www.visualstudio.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 

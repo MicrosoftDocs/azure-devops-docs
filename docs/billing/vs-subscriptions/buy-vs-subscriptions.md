@@ -13,8 +13,7 @@ ms.date: 10/6/2017
 
 You can buy [Visual Studio Professional and Visual Studio Enterprise subscriptions](https://www.visualstudio.com/subscriptions/) 
 from the [Visual Studio Marketplace](https://marketplace.visualstudio.com). 
-Learn about the [full benefits for these subscriptions](https://www.visualstudio.com/subscriptions/), 
-[compare their benefits](https://www.visualstudio.com/vs/compare/), or [subscription pricing](https://www.visualstudio.com/vs/pricing/).
+These are what we call cloud subscriptions. [Compare cloud subscription benefits and pricing](https://www.visualstudio.com/vs/pricing/).
 
 ## Before you start
 

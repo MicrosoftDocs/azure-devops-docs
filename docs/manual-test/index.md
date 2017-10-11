@@ -1,5 +1,5 @@
 ---
-title: Exploratory Testing
+title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Exploratory Testing
+# Exploratory &amp; Manual Testing
  
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 

@@ -23,11 +23,19 @@ If you use VSTS, to build or deploy your app, then it's more convenient to use o
 
 To use a hosted agent, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab, for the **Default agent queue**, and then select either:
 
-* **Hosted** if your team uses Visual Studio 2013 or Visual Studio 2015
-
 * **Hosted VS2017** if your team uses Visual Studio 2017
 
 * **Hosted Linux** if your team uses development tools on Ubuntu
+
+* **Hosted** if your team uses Visual Studio 2013 or Visual Studio 2015
+
+<h2 id="software">Software</h2>
+
+We update the software on the hosted agents once every month.
+
+* [Inventory of software currently installed on Hosted VS2017 agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.01/vs2017-on-windows-2016/image.md)
+* [Inventory of software currently installed on Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile)
+* [Inventory of software currently installed on Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.01/vs2015-on-windows-2012r2/image.md)
 
 ## Capabilities and limitations
 
@@ -35,7 +43,7 @@ Hosted agents:
 
 * Run as a service.
 
-* Have [this software](#software). You can also add software using our [tool installers](../process/tasks.md#tool-installers).
+* Have [the above software](#software). You can also add software using our [tool installers](../process/tasks.md#tool-installers).
 
 * Provide 10GB of storage.
 
@@ -58,10 +66,6 @@ If our hosted agents don't meet your needs, then you can [deploy your own privat
 ## Avoid hard coded references
 
 When you use a hosted agent, you should always use [variables](../../concepts/definitions/build/variables.md) to construct any references to resources used by your build. We recommend you avoid making hard-coded presumptions about resources provided by the hosted agent (for example, the drive letter of folder that contains the repo).
-
-<h2 id="software">Software</h2>
-
-[!INCLUDE [temp](_shared/hosted-software.md)]
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

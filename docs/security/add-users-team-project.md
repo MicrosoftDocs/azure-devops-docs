@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/05/2017
 ms.topic: get-started-article
+ms.date: 10/10/2017
 ---
 
 # Add users to a team project or specific team  

@@ -1,3 +1,16 @@
+
+#### Q: How do I find the region where my VSTS account is located? 
+
+A: To find your account's region
+
+0. Sign in to your Team Services account: ```https://{youraccount}.visualstudio.com```
+
+0. On your account toolbar, choose the gear icon, and choose **Settings**: ```https://{youraccount}.visualstudio.com/_admin/_home/settings```
+
+0. Look under **Region**.
+
+
+
 ####Q: How do I change my team project name, account location, or process? 
 
 A:	Change these when you sign up for your VSTS account. 

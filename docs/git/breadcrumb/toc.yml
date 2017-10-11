@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items:
+  - name: Code
+    tocHref: /vsts/git/
+    topicHref: /vsts/index#pivot=services&panel=code
+    items:
+    - name: Git
+      tocHref: /vsts/
+      topicHref: /vsts/git/index

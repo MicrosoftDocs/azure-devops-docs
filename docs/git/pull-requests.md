@@ -5,13 +5,13 @@ ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: sdanie
-ms.date: 08/17/2016
+ms.author: routlaw
+ms.date: 10/09/2017
 ---
 
 #  Review code with pull requests
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018, 2017, 2015 | Visual Studio 2017, 2015
 
 Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch.

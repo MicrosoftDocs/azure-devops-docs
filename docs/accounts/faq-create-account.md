@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.manager: douge
 ms.author: estfan
-ms.date: 10/6/2017
+ms.date: 10/10/2017
 ---
 
 #	Troubleshoot creating a VSTS account
@@ -140,8 +140,8 @@ A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-vsts-
 [!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
 *	Choose **Work or school account** if you want to use your organization's directory 
-to authenticate VSTS users and to control VSTS account access. 
-This limits access to members in your organization's directory. 
+to authenticate VSTS users and to control VSTS account access.  This limits access to members in your 
+organization's directory. 
 All other users must sign in with work or school accounts too. 
 
 *	Choose **Personal account** if you want to use your Microsoft account with VSTS. 
