@@ -10,7 +10,7 @@
     href: ./admin/config-tfs-resources.md
 - name: Quickstarts
   items:
-  - name: Single server install
+  - name: Install TFS
     href: ./install/single-server.md
   - name: Create a team project
     href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
