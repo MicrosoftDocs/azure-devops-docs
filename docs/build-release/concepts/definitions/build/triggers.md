@@ -96,7 +96,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 If your code is in a [Team Foundation version control (TFVC)](../../../../tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
-By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings on the [repository tab](repository.md#tfvc).
+By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](repository.md).
 
 Otherwise, you can clear this check box and specify the paths in the trigger.
 

@@ -67,7 +67,7 @@ Select this check box if you want to enable your team to modify the value when t
 
 | Variable Name | Description |
 | ------------- | ----------- |
-| Build.Clean | Modifies how the build agent cleans things up. See [Repository tab](repository.md). |
+| Build.Clean | Modifies how the build agent cleans things up. See [Source repositories](repository.md). |
 | System.Debug | If you need more detailed logs to debug build problems, define and set it to `true`. |
 
 ## Environment variables
@@ -402,7 +402,7 @@ You can pass environment variables of the build machine into build steps. For ex
             </td>
             <td style="font-size:80%">Agent</td>
             <td>
-                <p style="font-size:80%">The value you've selected for **Clean** on the [repository tab](repository.md).</p>
+                <p style="font-size:80%">The value you've selected for **Clean** in the [source repository settings](repository.md).</p>
             </td>
         </tr>
         <tr>

@@ -24,10 +24,8 @@ From the Release Management UI you can also
 [restore deleted releases](#restore-release),
 respond to [approval requests](#approve-release),
 [redeploy](#redeploy-release) a release, get [release notifications](#notifications),
-send [email notifications](#send-email),
-and view [release history](#release-history).
-You might also want to add a [releases widget](#add-widget)
-to your team dashboard.
+send [status emails](#send-email), and view [release history](#release-history).
+You might also want to add a [releases widget](#add-widget) to your team dashboard.
 
 <h2 id="release-list">List of releases</h2>
 
@@ -389,15 +387,16 @@ Release Management automatically defines a set of built-in notifications that
 are integrated with the VSTS and TFS notifications system. You can view, opt out,
 disable, and manage these notifications in the **Notifications** tab of the **Services** hub.
 
-![Managing release notificatoins](_img/view-manage-releases/notifications-settings.png)
+![Managing release notifications](_img/view-manage-releases/notifications-settings.png)
 
 For more information about notifications, see [Manage notifications for a team](../../collaborate/manage-team-notifications.md).
 
-<h2 id="send-email">Send email notifications</h2>
+<h2 id="send-email">Release status emails</h2>
 
-Release Management can send a range of notifications by email to users and
-administrators. In addition, it can send detailed emails that show the status
-of a release. During a release or after a release has finished (irrespective
+In addition to the range of [release notifications](../../collaborate/manage-team-notifications.md),
+Release Management can send detailed emails that show the status
+of a release to individual users and to groups of users.
+During a release or after a release has finished (irrespective
 of whether it was successful), choose the **Send Email** link on the toolbar of
 the **Logs** page  
 

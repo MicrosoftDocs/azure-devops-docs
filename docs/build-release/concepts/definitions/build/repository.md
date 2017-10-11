@@ -1,179 +1,120 @@
 ---
-title: Build definition sources
+title: Build definition source repositories
 description: Specify the sources and repository that contains the code you want to build on VSTS and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
+ms.date: 09/27/2017
 ---
 
-# Build definition sources
+# Build definition source repositories
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
-At the beginning of the build process, the build agent downloads the files from your remote repository into a local sources directory. After you select the repository, you can specify options for how the files are downloaded.
+At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. To specify the source repository:
 
-## Git
+* **VSTS, TFS 2017.2, and newer:** Click the **Tasks** tab, and then click **Get sources**, and then select the type of repo that contains your source files.
 
-> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the name of the Git repo.
->
-> * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** select **Git**.
+* **TFS 2017 RTM and older:** Click the **Repository** tab, and then select the type of repo that contains your source files.
 
-**Repository:**  Select a repository in your team project.
+You can choose from the following repository types:
 
-**Branch** (default): Select the branch that you want to be the default when you manually queue this build.
+| Repository type            | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+|----------------------------|------|--------------------------------|--------------|
+| Git repo in a team project |Yes|Yes|Yes|
+| Git repo in GitHub         |Yes|No|No|
+| Git repo in Bitbucket      |Yes|No|No|
+| Git repo (remote external) |Yes|Yes|Yes|
+| Team Foundation Version Control (TFVC) repo in a team project|Yes|Yes|Yes|
+| Subversion                 |Yes|Yes|No|
 
-> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
+> [!NOTE]
+> To build code in Subversion, you must install the Subversion client on your [build agents](../../../concepts/agents/agents.md#install).
 
-[!INCLUDE [temp](_shared/git-clean-option.md)]
+## Git options
+
+When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git repo), you've got the following options.
+
+| Feature | VSTS | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
+|---------|------|----------|------------|--------------|------------|--------------|
+|Clean|Yes|Yes|Yes|Yes|Yes|Yes|
+|Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
+|Tag or label sources|Team project|Team project|Team project|Team project|Team project|No|
+|Report build status|Yes|Yes|Yes|Yes|No|No|
+|Checkout files from LFS|Yes|Yes|Yes|OSX and Linux agents|OSX and Linux agents|OSX and Linux agents|
+|Don't sync sources|Yes|Yes|Yes|No|No|No|
+|Shallow fetch|Yes|Yes|Yes|OSX and Linux agents|OSX and Linux agents|OSX and Linux agents|
+
+> [!NOTE]
+> **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** to see some of the following options.
+
+### Repository
+
+Select a repository.
+
+### Branch
+
+(On **TFS 2017 RTM** or older, **Default branch**): Select the branch that you want to be the default when you manually queue this build.
+
+### Clean the local repo on the agent
+
+[!INCLUDE [include](_shared/build-clean-intro.md)]
+
+#### VSTS, TFS 2018, TFS 2017.2
+
+[//]: # (TODO: build.clean variable still works and overrides if clean is set to fale)
+
+If you want to clean the repo, then select **true**, and then select one of the following options:
+
+* **Sources**: The build process performs an undo of any changes in `$(Build.SourcesDirectory)`.
+
+* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
+
+* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
+
+* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
+
+#### TFS 2017 RTM
+
+[//]: # (TODO: I wonder if this material from the product tooltip is wrong. The info for 2015.4 below is older version and would make more sense here.)
+
+If you select **True** then the build process performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
+
+[!INCLUDE [temp](_shared/build-clean-variable.md)]
+
+#### TFS 2015.4
+
+[//]: # (TODO: clarify. which build variable exactly is the source folder?)
+
+If you select **True**, then: 
+
+* If you have git.exe installed on the agent, then this command is run in the repository folder: `git clean -fdx` and `git reset -hard HEAD`.
+
+* Otherwise, if git.exe is not installed on the agent, or if any of these commands exit with non-zero return code, then the repsitory folder is deleted.
+
+[!INCLUDE [temp](_shared/build-clean-variable.md)]
+
+#### TFS 2015 RTM
+
+[//]: # (TODO: clarify folder)
+
+Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
 The build process labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
-Note: Some build variables might yield a value that is not a valid label. For example variables such as `$(Build.RequestedFor)` and `Build.DefinitionName` can contain white space. If the value contains white space, the tag is not created.
+Some build variables might yield a value that is not a valid label. For example variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
-[!INCLUDE [temp](_shared/git-options.md)]
+### Report build status
 
-<a name="tfvc"></a>
-## Team Foundation Version Control
+Displays a badge on the Code tab to indicate whether the build is passing or failing.
 
-> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the TFVC repo (for example, `$TeamProject`).
->
-> * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** the TFVC repo (for example, `$TeamProject`).
+### Checkout submodules
 
-**Repository**  Ignore this option.
-
-**Mappings** (workspace): Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**. [When would I need to change TFVC mappings. How should I do it?](#tfvc_mappings)
-
-> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
-
-[!INCLUDE [include](_shared/label-sources.md)]
-
-The build process labels your sources with a [TFVC label](../../../../tfvc/use-labels-take-snapshot-your-files.md).
-
-**Clean:**
-
-* If you set it to true, the build agent cleans the repo this way:
-
- - undo pending changes
-
- - scorch
-
- [How can I clean the repo a different way?](#build_clean_variable)
-
-* Set this to false if you want to define an incremental build to improve performance.
-
- > [!TIP]
- >
- > In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
-
-* This setting has no effect if you are using a [hosted agent](../../../concepts/agents/hosted.md).
-
-## GitHub
-
-> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, and then click **GitHub**.
->
-> * **TFS 2017 RTM and older:** This option is not available, but you can instead use the [External git](#external-git) option.
-
-### Connect using your GitHub user account
-
-> [!NOTE]
-> If you're using a pop-up blocker, you'll need to allow your VSTS account to display pop-up windows.
-
-This is the easier way to authorize your account. This approach grants your VSTS account access to GitHub via OAuth.
-
-0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
-
- 0. Click **New Service Endpoint** and choose **GitHub**.
-
- 0. In the **Add New GitHub Service Connection** dialog box, select **Grant authorization**, and then click **Authorize**.
-
- 0. In the new browser window, sign in to GitHub and follow the instructions to authorize VSTS to access your GitHub account.
-
-0. On the **Repository** tab, select the **Connection** you created.
-
-0. Select the **Repository** that contains the code you want to build.
-
-### Connect using a personal access token
-
-0. Sign in to GitHub and make sure you have permission to read the repository.
-
-0. In GitHub, [create an access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
-
- 0. Select the **repo**, **user**, and **admin:repo_hook** scopes.
-
- 0. Copy the token to your clipboard.
-
-0. Sign on to VSTS and create a build definition.
-
-0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
-
- 0. Click **New Service Endpoint** and choose **GitHub**.
-
- 0. In the **Add New GitHub Service Connection** dialog box, select **Personal access token**.
-
- 0. Paste the token and give the connection a name.
-
-0. On the **Repository** tab, select the **Connection** you created.
-
-0. Select the **Repository** that contains the code you want to build.
-
-### Other options
-
-**Default branch:**  Select the branch that you want to be the default when you manually queue this build.
-
-> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
-
-[!INCLUDE [temp](_shared/git-clean-option.md)]
-
-[!INCLUDE [temp](_shared/git-options.md)]
-
-<a name="external-git"></a>
-## External Git (remote repository)
-
-0. Sign in to the external Git service (for example, BitBucket) and make sure you have permission to read the repository.
-
-0. Sign on to the VSTS or Team Foundation Server web portal and create a build definition.
-
-0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
-
- 0. Click **New Service Endpoint** and choose **External Git**.
-
- 0. Fill in the **Add New External Git Repository Connection** dialog box.
-
-0. On the **Repository** tab, select the **Connection** you created.
-
-0. Select the **Repository** that contains the code you want to build.
-
-**Branch** (default):  Select the branch that you want to be the default when you manually queue this build.
-
-> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
-
-[!INCLUDE [temp](_shared/git-clean-option.md)]
-
-[!INCLUDE [temp](_shared/git-options.md)]
-
-## Subversion
-
-You can build code you manage in Subversion. You must install the Subversion client on your [build agents](../../../concepts/agents/agents.md#install).
-
-## Q&A  
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
-
-### How do I reference the sources directory on the build agent?
-
-Use the [Build.SourcesDirectory variable](variables.md).
-
-
-### What kinds of submodules can I check out?
-
-If you select **Checkout submodules**, the build process will check out your Git submodules so long as they are:
+Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). The build process will check out your Git submodules so long as they are:
 
 * **Children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
 
@@ -185,19 +126,62 @@ If you select **Checkout submodules**, the build process will check out your Git
 
  - Added by using a relative url from main repository. For example this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
 
+### Checkout files from LFS
+ 
+Select if you want to download files from [large file storage (LFS)](https://www.visualstudio.com/en-us/docs/git/manage-large-files#use-git-large-file-storage-lfs).
 
-### Which GitHub repositories can I build?
+* **VSTS:** Select the check box to enable this option.
 
-You can build repositories you are authorized to push to.
+* **TFS 2017 and TFS 2015 (OSX and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
 
-### What protocols can the build agent use with Git?
+### Don't sync sources
 
-We support HTTPS.
+Use this option if you want to skip fetching new commits. This option can be useful in cases such as when you want to:
 
-We do not yet support SSH. See [User Voice: Allow build to use ssh authentication while checking out git sub modules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
+* Git init, config, and fetch using your own custom options.
 
-<a name="tfvc_mappings"></a>
-### When would I need to change TFVC mappings. How should I do it?
+* Use a build process to just run automation (for example some scripts) that do not depend on code in version control.
+
+If you want to disable downloading sources:
+
+* **VSTS, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+
+* **TFS 2017 RTM and older:** Define `Build.SyncSources` on the **Variables** and set its value to false.
+
+### Shallow fetch
+
+Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build process more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files. 
+
+In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download. 
+
+#### VSTS, TFS 2018, TFS 2017.2
+
+After you select the check box to enable this option, in the **Depth** box specify the number of commits. 
+
+> **Tip:** The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can can modify the setting when you queue the build.
+
+#### TFS 2017 RTM, TFS 2015 (MacOS and Linux only)
+
+On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set its value to the number of commits in history you want to download. Specify 0 to set no limit.
+
+## TFVC options
+
+| Feature | VSTS, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+|---------|--------------------------------------|--------------|
+| Clean   |Yes|Yes|
+| Specify local path |Yes|No|
+| Label sources|Yes|No|
+
+> [!NOTE]
+> **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** to see some of the following options.
+
+### Repository name
+
+Ignore this text box (**TFS 2017 RTM** or older).
+
+### Mappings (workspace)
+
+Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**.
 
 Make sure that you **Map** all folders that contain files that your build process requires. For example, if you add another project, you might have to add another mapping to the workspace.
 
@@ -209,13 +193,56 @@ If this is a CI build, in most cases you should make sure that these mappings ma
 
 For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../../../tfvc/optimize-your-workspace.md).
 
-### Is it possible to disable downloading files?
+### Clean the local repo on the agent
 
-If you want to disable downloading sources:
+[!INCLUDE [include](_shared/build-clean-intro.md)]
 
-* **VSTS, TFS 2017 Update 2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+#### VSTS, TFS 2018, TFS 2017.2
 
-* **TFS 2017 RTM and older:** Define `Build.SyncSources` on the [variables tab](variables.md) and set it to false.
+If you want to clean the repo, then select **true**, and then select one of the following options:
+
+* **Sources**: The build process performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
+
+* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
+
+* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
+
+* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
+
+#### TFS 2017 RTM, TFS 2015.4
+
+If you select **True** then the build process performs an undo of any changes and scorches the workspace.
+
+[!INCLUDE [temp](_shared/build-clean-variable.md)]
+
+#### TFS 2015 RTM
+
+[//]: # (TODO: confirm this is correct for TFVC; clarify folder)
+
+Select **true** to delete the repository folder.
+
+[!INCLUDE [include](_shared/label-sources.md)]
+
+The build process labels your sources with a [TFVC label](../../../../tfvc/use-labels-take-snapshot-your-files.md).
+
+## Q&A  
+
+<!-- BEGINSECTION class="md-qanda" -->
+
+### How do I reference the directories on the build agent?
+
+Reference directories using build variables such as `$(Build.SourcesDirectory)` and `$(Build.BinariesDirectory)`. To learn more, see [Build variables](variables.md).
+
+### What protocols can the build agent use with Git?
+
+We support HTTPS.
+
+We don't yet support SSH. See [User Voice: Allow build to use ssh authentication while checking out git sub modules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
+
+### What is scorch?
+
+Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server 2015 Power Tools
+](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 

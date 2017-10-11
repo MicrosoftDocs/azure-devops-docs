@@ -43,4 +43,4 @@ To learn more, see [Add and edit a wiki](add-edit-wiki.md).
 ## Related notes
 - [Add and edit a wiki](add-edit-wiki.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Markdown guidance](vsts/collaborate/markdown-guidance
+- [Markdown guidance](markdown-guidance.md)

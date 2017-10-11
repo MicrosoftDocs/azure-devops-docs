@@ -16,6 +16,8 @@ ms.date: 09/26/2017
 <a name="qageneral"></a>
 ## General
 
+[Go to related topic &gt;](get-started-simple-cloud-load-test.md)
+
 ### Q: How do I learn more about Cloud-based Load Testing?
 
 **A**: Watch this video, or check out the 
@@ -36,11 +38,10 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 ### Q: Can I run cloud-based load tests on any app, even behind a firewall?
 
 **A**:  Yes, you can load test apps or sites that are only available to your company, 
-like internal or pre-release apps, staging or preproduction deployments. To learn more, see 
+such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
 [Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
 
-Or, you can 
-[run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
 
 ### Q: What are virtual users?
 
@@ -198,6 +199,8 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 <a name="qavisualstudio"></a>
 ## Visual Studio load testing
 
+[Go to related topic &gt;](getting-started-with-performance-testing.md)
+
 ### Q: How can I increase the capacity of my load tests?
 
 **A**: You can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257), so you can run your tests across multiple virtual machines in the cloud.
@@ -235,6 +238,8 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 <a name="qaazure"></a>
 ## Azure load testing
+
+[Go to related topic &gt;](app-service-web-app-performance-test.md)
 
 ### Q: Why can't I see my existing VSTS account to run load tests? 
 
@@ -302,6 +307,8 @@ features and services help your team collaborate more easily and deploy continuo
 
 <a name="set-up-tests"></a>
 ## Setting up tests
+
+[Go to related topic &gt;](getting-started-with-performance-testing.md)
 
 ### Q: Can I have other test types, besides web performance tests, in a load test mix?
 
@@ -383,6 +390,8 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 <a name="jmeter-tests"></a>
 ## Apache JMeter tests
 
+[Go to related topic &gt;](get-started-jmeter-test.md)
+
 ### Q: What are the supported JMeter versions?
 
 **A**: The latest supported version of Apache JMeter is version 3.2.
@@ -405,6 +414,8 @@ when you set up the test, and it will be applied when the load test runs.
 
 <a name="run-monitor-tests"></a>
 ## Running and monitoring load tests
+
+[Go to related topic &gt;](performance-reports.md)
 
 ### Q:  Can I use mstest to run load tests with VSTS?
 
@@ -472,6 +483,8 @@ For better performance as you download more reports, use SQL Server.
 <a name="recordreplay"></a>
 ## Recording and replaying tests
 
+[Go to related topic &gt;](record-and-replay-cloud-load-tests.md)
+
 ### Q: Can I simulate actions from different users and data-drive my test?
 
 **A**: No, this capability is planned but is not available at present.
@@ -498,6 +511,8 @@ allows you to run cloud-based load tests. See
 
 <a name="qaappinsights"></a>
 ## Application Insights
+
+[Go to related topic &gt;](get-performance-data-for-load-tests.md)
 
 ### Q: Can I get more detailed profiler information?
 

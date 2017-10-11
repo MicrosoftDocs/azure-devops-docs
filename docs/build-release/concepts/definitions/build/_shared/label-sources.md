@@ -1,3 +1,5 @@
+### Label sources
+
 **Label sources:** Select either **On successful build** or **On every build** if you want to label your source code files to enable your team to easily identify which version of each file is included in the completed build.
 
 In the **Label format** you can use user-defined and predefined variables that have a scope of "All." For example:
