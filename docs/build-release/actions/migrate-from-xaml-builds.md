@@ -91,7 +91,7 @@ In each of the following sections we show the XAML user interface, and then prov
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition respository: TFVC](../concepts/definitions/build/repository.md#tfvc).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../concepts/definitions/build/repository.md).
 
 #### Git
 
@@ -101,7 +101,7 @@ The new build definition offers you some new options. The specific extra options
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition repository: Git](../concepts/definitions/build/repository.md#git).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../concepts/definitions/build/repository.md).
 
 ### Trigger tab
 
@@ -154,7 +154,7 @@ The new build definition offers you some new options. For example:
 | Get version | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
-The new build definition offers you some new options. See [Build definition repository](../concepts/definitions/build/repository.md#tfvc).
+The new build definition offers you some new options. See [Build definition source repositories](../concepts/definitions/build/repository.md).
 
 #### Git
 
@@ -165,7 +165,7 @@ The new build definition offers you some new options. See [Build definition repo
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. |
 
-The new build definition offers you some new options. See [Build definition repository](../concepts/definitions/build/repository.md#git).
+The new build definition offers you some new options. See [Build definition source repositories](../concepts/definitions/build/repository.md).
 
 #### Build
 
