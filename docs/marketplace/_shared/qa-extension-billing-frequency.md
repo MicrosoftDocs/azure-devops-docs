@@ -1,3 +1,4 @@
+<a name="uninstall-cancel-ext"/>
 #### Q: How do you bill for extension purchases or changes?
 
 A: For Microsoft extensions:
