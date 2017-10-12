@@ -5,8 +5,8 @@ ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
-ms.author: routlaw
-ms.date: 10/09/2017
+ms.author: sdanie
+ms.date: 10/12/2017
 ---
 
 #  Review code with pull requests
@@ -218,7 +218,7 @@ Linked work items will also updated showing the pull request completion.
 
 Select **Auto-complete** from the **Complete** button drop-down to complete the pull request and merge the changes as soon as all [branch policies](branch-policies.md) are met.
 Auto-completion lets you skip having to come back to the pull request to complete it after the build finishes successfully and the reviewers approve the changes.
-If there's a problem completing the pull request, you'll get an email notifying you what the problem is so you can fix it.
+When the conditions are satisfied for auto-complete, the pull request is completed and you are notified via email. If there is a conflict or an error completing the pull request, you will get an email notifying you of the issue so you can resolve it.
 
 Once auto-complete has been set, the pull request will display a banner confirming that the changes will be merged as soon as the policies are satisfied.
 Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state.
