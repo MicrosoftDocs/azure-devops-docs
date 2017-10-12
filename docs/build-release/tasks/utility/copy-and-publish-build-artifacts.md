@@ -6,18 +6,18 @@ ms.technology: vs-devops-build
 ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/10/2016
+ms.date: 10/12/2017
 ---
 
 # Utility: Copy and Publish Build Artifacts
 
-**[VSTS](publish-build-artifacts.md) | [TFS 2017](publish-build-artifacts.md) | [TFS 2015 Update 3](publish-build-artifacts.md) | TFS 2015 RTM | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
+**[VSTS](publish-build-artifacts.md) | [TFS 2015.3 and newer](publish-build-artifacts.md) | TFS 2015 RTM | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
 
 ![](_img/copy-and-publish-build-artifacts.png) Copy build artifacts to a staging folder and then publish them to the server or a file share.
 
 > [!IMPORTANT]
 > 
-> Are you using VSTS, Team Foundation Server (TFS) 2015 Update 3, or newer? If so, then we recommend that you do not use this task; it's deprecated. Instead, you should use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
+> Are you using Visual Studio Team Services (VSTS), Team Foundation Server (TFS) 2015 Update 3, or newer? If so, then we recommend that you do not use this task; it's deprecated. Instead, you should use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
 >
 > You should use this task only if you're using Team Foundation Server (TFS) 2015 RTM. In that version of TFS this task is listed under the **Build** category and it's called **Publish Build Artifacts**.
 > 
@@ -55,7 +55,16 @@ None
 </ul>
 </td>
 </tr>
-[!INCLUDE [temp](_shared/artifact-arguments.md)]
+<tr>
+<td>Artifact Name</td>
+<td>Specify the name of the artifact. For example: `drop`</td>
+</tr>
+<tr>
+<td>Artifact Type</td>
+<td>
+<p>Choose **server** to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).</p>
+</td>
+</tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 

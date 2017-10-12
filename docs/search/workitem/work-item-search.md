@@ -16,6 +16,8 @@ ms.date: 09/26/2017
 
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
 
+See also: [Adhoc vs managed work item queries](../../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json)
+
 <a name="start-search"></a>
 ## Get searching
 
@@ -78,7 +80,6 @@ Work Item Search provides fast and flexible search across all your work items ov
    and states, by using the drop-down selector lists at the top of the results page.
 
    ![Selector drop-down lists](_img/get-started/area-selectors.png)    
-
 
    >Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
 
