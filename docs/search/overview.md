@@ -33,3 +33,5 @@ You can narrow down your results and focus in on what you need by using filters.
 ![Code Search](_img/_shared/codesearch-icon.png) &nbsp; **[Code Search](code/code-search.md)**
 
 ![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](workitem/work-item-search.md)**
+
+See also: [Adhoc vs managed work item queries](../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json)
