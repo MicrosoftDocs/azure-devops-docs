@@ -48,6 +48,8 @@
   items:
   - name: CI builds for Git in VSTS
     href: actions/ci-build-git.md
+  - name: CI builds for GitHub repo
+    href: actions/ci-build-github.md  
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
 - name: Concepts
