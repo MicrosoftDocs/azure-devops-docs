@@ -221,10 +221,15 @@ collection (you will need read access to these
 repositories). No additional setup is required when
 deploying version control artifacts within the same collection.
 
-When you link a **Git repository** and select a branch,
-you can specify the commit that will to be deployed
-when creating a release. When you link a **TFVC branch**,
-you can specify the changeset to be deployed
+When you link a **Git** or **GitHub** repository and select a branch,
+you can edit the default properties of the artifact types after the artifact has been saved.
+This is particularly useful in scenarios where the branch for the stable
+version of the artifact changes, and continuous delivery releases should use
+this branch to obtain newer versions of the artifact. You can also specify details
+of the checkout, such as whether check out submodules and LFS-tracked files, and the
+shallow fetch depth.
+
+When you link a **TFVC branch**, you can specify the changeset to be deployed
 when creating a release.
 
 The following features are available when using TFVC, Git, and GitHub sources:
