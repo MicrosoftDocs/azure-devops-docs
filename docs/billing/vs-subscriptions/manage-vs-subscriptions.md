@@ -4,7 +4,7 @@ description: How to use the Visual Studio Subscriptions Administrator portal to 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
-author: douge
+author: billchi
 ms.date: 10/6/2017
 ---
 

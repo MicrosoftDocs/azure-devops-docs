@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.manager: douge
-ms.author: estfan
+ms.author: billchi
 ms.date: 10/05/2017
 ---
 
