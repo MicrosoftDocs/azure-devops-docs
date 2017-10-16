@@ -3,7 +3,7 @@
 	[
         {
             "source_path": "docs/accounts/requirements.md",
-            "redirect_url": "/vsts/tfs-server/requirements.md",
+            "redirect_url": "/vsts/tfs-server/requirements",
             "redirect_document_id": false
         },
         {
@@ -198,7 +198,7 @@
         },
         {
             "source_path": "docs/setup-admin/requirements.md",
-            "redirect_url": "/vsts/tfs-server/requirements.md",
+            "redirect_url": "/vsts/tfs-server/requirements",
             "redirect_document_id": false
         },
         {
