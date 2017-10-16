@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Deploy a Docker-enabled app to a Windows VM
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017 Update 2**
 
 We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure VM using
 Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS). You can use the steps in this quickstart

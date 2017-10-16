@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # What is Release Management?
 
-**VSTS | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 **Release Management** is a service in Visual Studio Team Services (VSTS)
 and Team Foundation Server (TFS, Update 2 and later) and an essential

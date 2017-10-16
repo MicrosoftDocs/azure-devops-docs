@@ -1,5 +1,5 @@
 ---
-title: Record and play back manual tests | Visual Studio 
+title: Record and play back manual tests
 description: Record and play back manual tests
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual

@@ -51,10 +51,11 @@ Use the project and repository checkboxes to widen your search to more or all pr
 narrow your search to fewer projects and repositories. If there is more than a few 
 projects or repositories, use the **Show more** link to see them all.
 
-Code Search can index multiple branches in a Git repository - by default it indexes 
+In VSTS, Code Search can index multiple branches in a Git repository - by default it indexes 
 files in only the default branch of your Git repositories (usually this is the **master** branch).
-Specify up to five additional branches for each repository that you want Code Search to index
-in the **Options** section of the **Version Control** tab in the **Settings** page. 
+Specify up to five additional branches for each repository that you want Code
+Search to index in the **Options** section of the **Version Control** tab in the **Settings** page. 
+This capability is planned for future releases of TFS.
 
 ![Opening the Version Control settings page](_img/advanced-search/version-control.png)
 

@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Service endpoints for Build and Release
 
-**TFS 2015 | TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 You will typically need to connect to external and remote services to execute tasks
 for a build or deployment. For example, you may need to connect to your Microsoft Azure
