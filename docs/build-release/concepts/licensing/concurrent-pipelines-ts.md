@@ -13,7 +13,7 @@ ms.date: 10/20/2016
 **[TFS 2017](concurrent-pipelines-tfs.md) | VSTS**
 
 > [!NOTE]
-> August 2017 update: We�re temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in September 2017.
+> October 2017 update: We're temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in November 2017.
 
 A VSTS _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in VSTS.
 
