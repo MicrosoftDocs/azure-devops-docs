@@ -23,7 +23,7 @@ ms.date: 08/23/2016
    
 0. From your Team Project, select the **Code** view. Make sure you're working with the right repo, then select **Branches**.
 
-   ![Branches nav view in the web interface](_img/branches/branches_nav.png)
+   ![Branches nav view in the web portal](_img/branches/branches_nav.png)
 
 0. Select the **New branch** button in the upper right corner of the page.
 

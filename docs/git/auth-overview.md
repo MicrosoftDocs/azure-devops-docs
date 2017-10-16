@@ -40,7 +40,7 @@ Use personal access tokens to authenticate if you don't already have SSH keys se
 ### Use credential managers to generate tokens
 
 [Git credential managers](set-up-credential-managers.md) are an optional tool that makes it easy to create personal access tokens when working with the Git and VSTS. 
-Normally you'd need to log into the VSTS web interface, generate a token, then use the token as your password when connecting to VSTS. 
+Normally you'd need to log into the VSTS web portal, generate a token, then use the token as your password when connecting to VSTS. 
 
 Personal access tokens are generated on demand when you have the credential manager installed. 
 The credential manager creates the token in VSTS and saves it locally for use with the Git command line or other client. 
