@@ -6,12 +6,10 @@ ms.technology: vs-devops-overview
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ---
 
-# Process Templates
-
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
->
-> It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
+
+# Process Templates
 
 TfsMigrator could flag errors which need to be corrected prior to performing a migration. Below are the most common process related errors that are encountered when prepping for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
 
