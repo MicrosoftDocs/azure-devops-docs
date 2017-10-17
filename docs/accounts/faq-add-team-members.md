@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
+title: Troubleshoot adding members to team projects in VSTS
 description: Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup

@@ -101,5 +101,5 @@ will be billed on the 1st day of the calendar month after the anniversary date o
 [Visual Studio subscriptions troubleshooting](faq-vs-subscriptions.md), or 
 [Azure billing troubleshooting](faq-azure-billing.md). 
 
-For the billing frequency of extensions, see [Get extensions for VSTS](/vsts/marketplace/install-vsts-extension#bill-period).
+For the billing frequency of extensions, see [Get extensions for VSTS](../marketplace/faq-extensions.md#bill-period).
 

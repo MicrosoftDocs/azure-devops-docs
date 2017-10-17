@@ -109,4 +109,3 @@ to [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) agai
 - [Connect VSTS account to Azure AD](connect-account-to-aad.md) 
 - [Disconnect VSTS account from Azure AD](disconnect-account-from-aad.md)  
 - [Delete users from VSTS connected to Azure AD](delete-users-from-services-aad.md) 
-- 

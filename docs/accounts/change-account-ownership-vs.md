@@ -20,7 +20,7 @@ you can change your VSTS account owner to another user.
 ## Before you start
 
 You must have at least Basic access, not Stakeholder, and VSTS 
-[project collection administrator or account owner permissions](#find-owner-pca). 
+[project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca). 
 If no one has these permissions, contact 
 [VSTS Support](https://www.visualstudio.com/team-services/support).
 
@@ -39,7 +39,7 @@ and agreed to the Terms of Service.
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-change-account-ownership.md#ChooseOrgAcctMSAcct)
 
 0.	To find the current account owner, 
 go to your VSTS account settings
@@ -58,7 +58,7 @@ go to your VSTS account settings
 
 	![Find and select owner](_img/change-account-ownership/vsofindnewaccountowner.png)
 
-	[Can't find the person you want?](#NoNewOwner) 
+	[Can't find the person you want?](faq-change-account-ownership.md#NoNewOwner) 
 
 0.	Save your changes.
 

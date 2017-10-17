@@ -1,5 +1,5 @@
 ---
-title: Change Azure AD tenant -- Reassign VSTS account ownership to a directory member
+title: Change Azure AD tenant -- Reassign VSTS account owner to a directory member
 description: Change Azure AD tenant -- Reassign VSTS account ownership to a directory member
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup

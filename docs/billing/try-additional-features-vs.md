@@ -28,7 +28,7 @@ comprehensive manual and exploratory testing features.
 As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), 
 you can start extension trials for your VSTS account. 
 Otherwise, you can 
-[request extensions](/vsts/marketplace/install-vsts-extension#request) 
+[request extensions](../marketplace/request-vsts-extension.md) 
 instead. Learn about other 
 [VSTS extensions](https://marketplace.visualstudio.com/vsts).
 

@@ -11,6 +11,8 @@ ms.date: 08/01/2017
 
 # Assign paid extension access to users for VSTS
 
+**VSTS**
+
 After you install a paid extension, 
 you must assign that extension to users who need access, 
 so they can start using that extension's capabilities. 

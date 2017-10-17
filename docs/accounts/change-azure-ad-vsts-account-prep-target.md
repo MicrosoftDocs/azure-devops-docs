@@ -21,7 +21,7 @@ so they can get VSTS account access as directory members.
 
 ## Set up your Microsoft account as Azure subscription Co-administrator
 
-[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator.md).
+[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator).
 
 [Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 

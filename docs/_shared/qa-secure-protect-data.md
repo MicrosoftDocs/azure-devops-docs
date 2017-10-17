@@ -10,7 +10,7 @@ We follow industry best practices, and have enterprise-grade
 security measures to help protect your code and project data. 
 Also, all communication between your computer and the service 
 takes place over an encrypted HTTPS connection. Learn 
-[how VSTS secures and protects your data](http://aka.ms/VSOSecurity).
+[how VSTS secures and protects your data](../articles/team-services-security-whitepaper.md).
 
 ####Q:		Do I still own my code and intellectual property? What do you do with my personal information?
 

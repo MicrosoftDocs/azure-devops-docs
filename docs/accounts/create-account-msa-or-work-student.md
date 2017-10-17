@@ -1,5 +1,5 @@
 ---
-title: Create your VSTS account with a Microsoft account or a work/school/organization account
+title: Create a VSTS account with a Microsoft account or a work/organization account
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
