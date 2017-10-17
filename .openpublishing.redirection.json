@@ -2,6 +2,11 @@
     "redirections": 
 	[
         {
+            "source_path": "docs/integrate/get-started/client-libraries/dotnet.md",
+            "redirect_url": "/vsts/integrate/concepts/dotnet-client-libraries",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/accounts/requirements.md",
             "redirect_url": "/vsts/tfs-server/requirements",
             "redirect_document_id": false
