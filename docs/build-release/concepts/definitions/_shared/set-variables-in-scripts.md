@@ -58,7 +58,7 @@ Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed to
 
 Arguments
 
-```
+```arguments
 -sauceArgument "$(sauce)" -secretSauceArgument "$(secretSauce)"
 ```
 
@@ -89,7 +89,7 @@ echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes
 
 Arguments
 
-```
+```arguments
 "$(sauce)" "$(secretSauce)"
 ```
 
