@@ -44,86 +44,64 @@ that you can link to your VSTS account for billing.
 [Co-administrator permissions](add-backup-billing-managers.md)
 for the Azure subscription that's linked to your VSTS account for billing.
 
-You can follow the steps below for the Azure classic portal
-or the Azure portal. Both portals will give you the same results.
+You can follow the steps below for the Azure portal or Azure classic portal. Both portals will give you the same results.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#buy-load-testing"></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#azure-classic-portal-0">Azure classic portal</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#azure-portal-0">Azure portal</a></li>
-</ul>
+**Azure Portal**
 
-<div id="buy-load-testing" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="azure-portal-0" class="tab-pane fade in active">
-<p>**Azure portal**
-<p>
-<ol>
-<li>[Sign in to the Azure portal](https://portal.azure.com/).
-<p>If you experience browser problems with Azure,
-make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
-<li>Go to **More services** > **Developer tools** > **VSTS accounts**.
-Select your VSTS account.
-<p>
-<p>![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
-<p>
-<p>[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
-<p>
-<li>Select **Cloud-based load testing**.
-<p>
-<p>![Click Settings, select Clouse-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
-<p>
-<li>Turn on paid load testing.
-<p>
-<p>If you want, set a monthly limit on the virtual user minutes that you use.
-When you're done, save your changes.
-<p>
-<p>![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
-<p>
-</ol>
-</div>
+0. [Sign in to the Azure portal](https://portal.azure.com/).
 
-<div class="tab-pane fade" id="azure-classic-portal-0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<p>**Azure classic portal**
-<p>
-<ol>
-<li>[Sign in to the Azure classic portal](https://manage.windowsazure.com/)
+ If you experience browser problems with Azure,
+ make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+
+0. Go to **More services** > **Developer tools** > **VSTS accounts**.  Select your VSTS account.
+
+ ![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+
+ [Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
+
+0. Select **Cloud-based load testing**.
+
+ ![Click Settings, select Clouse-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
+
+0. Turn on paid load testing.
+
+ If you want, set a monthly limit on the virtual user minutes that you use.
+ When you're done, save your changes.
+
+ ![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+
+**Azure classic portal**
+
+0. [Sign in to the Azure classic portal](https://manage.windowsazure.com/)
 as your Azure subscription Co-administrator.
-<p>
-<p>If you experience browser problems with Azure,
-make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
-<p>
-<li>Select your VSTS account.
-<p>
-<p>![Select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
-<p>
-<p>[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
-<p>
-<li>Go to **Scale**.
-<p>
-<p>![Click Scale](_img/_shared/azurescalelicensesresources.png)
-<p>
-<li>Turn on paid Load Testing.
-You can also set monthly limits on the amounts that your account uses.
-<p>
-<p>You're not charged until your account goes above the free monthly amounts.
-<p>
-<p>![Turn on paid Load Testing. Select optional monthly limits](_img/get-more-build-load-testing/azuremanageresources.png)
-<p>
-<li>When you're done, save your changes.
-<p>
-<p>![Save changes](_img/_shared/save-changes.png)
-<p>
-<p>To check the amounts used by your account,
-you can come back to the Azure classic portal.
-<p>
-<p>![Check amounts used on your account dashboard in Azure](_img/get-more-build-load-testing/azuredashboard.png)
-<p>
-</ol>
-</div>
 
+ If you experience browser problems with Azure,
+ make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-</div></div>
+0. Select your VSTS account.
+
+ ![Select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
+
+ [Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
+
+0. Go to **Scale**.
+
+ ![Click Scale](_img/_shared/azurescalelicensesresources.png)
+
+0. Turn on paid Load Testing.  You can also set monthly limits on the amounts that your account uses.
+
+ You're not charged until your account goes above the free monthly amounts.
+
+ ![Turn on paid Load Testing. Select optional monthly limits](_img/get-more-build-load-testing/azuremanageresources.png)
+
+0. When you're done, save your changes.
+
+ ![Save changes](_img/_shared/save-changes.png)
+
+ To check the amounts used by your account, you can come back to the Azure classic portal.
+
+ ![Check amounts used on your account dashboard in Azure](_img/get-more-build-load-testing/azuredashboard.png)
+
 
 ## Related notes  
 

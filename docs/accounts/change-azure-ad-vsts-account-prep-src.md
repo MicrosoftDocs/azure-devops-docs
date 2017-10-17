@@ -19,7 +19,7 @@ so you can perform the migration.
 
 ## Set up your Microsoft account as Azure subscription co-administrator
 
-[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator.md).
+[See steps here](/azure/billing/billing-add-change-azure-subscription-administrator).
 
 
 [Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
@@ -27,7 +27,7 @@ so you can perform the migration.
 
 ## Set up your Microsoft account as global administrator in your source directory
 
-[Add your account to the directory](/azure/active-directory/active-directory-create-users.md), and in the **Tell us about this user** step, choose **User with an existing Microsoft account**.  In the **user profile** step, choose **Global Admin**.
+[Add your account to the directory](/azure/active-directory/active-directory-create-users), and in the **Tell us about this user** step, choose **User with an existing Microsoft account**.  In the **user profile** step, choose **Global Admin**.
 
 
 ## Set up your Microsoft account as your VSTS account owner

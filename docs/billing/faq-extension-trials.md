@@ -47,7 +47,7 @@ A:	Check the extension pane in your Users hub.
 ####Q:   How do I cancel my trial?
 
 A: To stop your trial, just 
-[uninstall the extension](/vsts/marketplace/install-vsts-extension#uninstall-disable-extension) 
+[uninstall the extension](../marketplace/uninstall-disable-vsts-extensions.md) 
 from your VSTS account.
 
 <a name="feature-access"></a>

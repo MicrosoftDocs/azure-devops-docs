@@ -140,7 +140,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
     If the Next button is active, you can configure your project portal.
 
-    If the wizard encounters a problem, you’ll receive an error message and a link to the project creation log. Review the [log file](#log-file) for specific errors and exceptions. 
+    If the wizard encounters a problem, you’ll receive an error message and a link to the project creation log. Review the [log file](faq-create-team-project.md#log-file) for specific errors and exceptions. 
 
 11. When you’re finished, you can see your team project in Team Explorer. You can also choose the **Web Access** link to connect to your team project from the web portal.
 

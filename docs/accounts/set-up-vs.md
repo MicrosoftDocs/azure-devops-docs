@@ -45,7 +45,7 @@ If you want, you can also use VSTS with any IDE or code editor, like:
 
 0.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
-[Which versions can I use with VSTS?](#vs-versions)
+[Which versions can I use with VSTS?](faq-set-up-vs.md#vs-versions)
 
 	If you have a Visual Studio subscription that 
 	includes the Visual Studio IDE, get the version 
@@ -56,13 +56,13 @@ then sign in to create your profile.
 
 	This profile saves your settings and roams with you 
 	when you sign in to Visual Studio on any computer. 
-	[Why else should I sign in?](#why-sign-in)
+	[Why else should I sign in?](faq-set-up-vs.md#why-sign-in)
 	If you're a Visual Studio subscriber, 
 	use the sign-in address for your subscription. 
 
 	![Sign in to Visual Studio](_img/set-up-vs/sign-in-visual-studio.png)
 
-	[Can't sign in?](#cannot-sign-in)
+	[Can't sign in?](faq-set-up-vs.md#cannot-sign-in)
 
 0.	Enter your sign-in address, 
 then enter your password.
@@ -76,7 +76,7 @@ and confirm its location.
 
 	![Name your account, confirm its location](_img/set-up-vs/profile-account-details2.png)
 
-	[How can I create a VSTS account later](#WhatIsVSO) or [change its location?](#change-location)
+	[How can I create a VSTS account later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
 
 0.	Create your first team project to store your code, 
 work items, backlog, builds, tests, and other assets. 
@@ -102,7 +102,7 @@ or change them later in Visual Studio options.
 0.	To view your new VSTS account, 
 	sign in to ```https://{youraccount}.visualstudio.com```. 
 
-    [Having browser problems with VSTS?](#browser-problems)
+    [Having browser problems with VSTS?](faq-set-up-vs.md#browser-problems)
 
 ####	Next
 
