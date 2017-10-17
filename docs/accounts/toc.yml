@@ -46,6 +46,8 @@
       href: ../user-guide/connect-team-projects.md#logindifferentcred
     - name: Change account preferences
       href: account-preferences.md
+    - name: Change account location (region)
+      href: change-account-location.md
   - name: Manage team projects
     items:
     - name: Create team project

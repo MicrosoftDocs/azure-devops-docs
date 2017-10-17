@@ -1,14 +1,7 @@
 
 #### Q: How do I find the region where my VSTS account is located? 
 
-A: To find your account's region
-
-0. Sign in to your Team Services account: ```https://{youraccount}.visualstudio.com```
-
-0. On your account toolbar, choose the gear icon, and choose **Settings**: ```https://{youraccount}.visualstudio.com/_admin/_home/settings```
-
-0. Look under **Region**.
-
+A: [Find your account's region](../accounts/change-account-location.md)
 
 
 ####Q: How do I change my team project name, account location, or process? 
@@ -22,7 +15,8 @@ VSTS uses Agile as the default
 to organize your work. And your account's default location is based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available. For a better experience, 
-select a location that's closest to most users in your account. 
+select a location that's closest to most users in your account. If a new VSTS region or location opens later, you can 
+[change your account location or region](../accounts/change-account-location.md).
 You can select another process, like Scrum, if that works best for you.
 
 <img alt="Rename team project, change account location, or select another process" src="../_shared/_img/change-details-standard2.png" style="border: 1px solid #CCCCCC">
