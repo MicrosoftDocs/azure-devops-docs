@@ -38,3 +38,42 @@ For .NET developers building Windows apps and services that integrate with Visua
 <div class="alert alert-info">
 **Tip**: If you have an existing Windows app or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient
 </div>
+
+### Installing
+
+From a NuGet package manager command prompt:
+```cmd
+PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
+```
+
+## Pattern for use
+
+In general, you will first create an authenticated connection to VSTS or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
+Example:
+```csharp
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.Client;
+using Microsoft.TeamFoundation.SourceControl.WebApi;
+using Microsoft.VisualStudio.Services.WebApi;
+
+const String c_collectionUri = "https://fabrikam.visualstudio.com/DefaultCollection";
+const String c_projectName = "MyGreatProject";
+const String c_repoName = "MyRepo";
+
+// Interactively ask the user for credentials, caching them so the user isn't constantly prompted
+VssCredentials creds = new VssClientCredentials();
+creds.Storage = new VssClientCredentialStorage();
+
+// Connect to VSTS
+VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
+
+// Get a GitHttpClient to talk to the Git endpoints
+GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
+
+// Get data about a specific repository
+var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+```
+
+## Samples
+
+You can check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/Microsoft/vsts-dotnet-samples).

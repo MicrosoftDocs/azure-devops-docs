@@ -40,8 +40,12 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 >[!NOTE]  
 >For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs. 
  
-## Tags
+## Work items
+- A long text field can contain 1M characters.
 - You can't assign more than 100 tags to a work item.
+- You can't add more than 1,000 links to a work item.
+- You can't add more than 100 attachments to a work item.
+- You can't add an attachment size larger than 60MB to a work item.
 
 ## Related notes
 

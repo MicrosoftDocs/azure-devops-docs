@@ -1,6 +1,6 @@
 ---
 description: PowerShell on Target Machines build task
-title: PowerShell on Target Machines build and release task for Microsoft VSTS and Microsoft Team Foundation Server
+title: PowerShell on Target Machines build and release task for VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
