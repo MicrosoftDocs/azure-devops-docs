@@ -81,24 +81,10 @@
     href: concepts/git-names.md
   - name: Git preferences and settings
     href: concepts/git-config.md
-  - name: IDE integration and extension
-    items:
-    - name: Visual Studio
-      href: ../accounts/set-up-vs.md
-    - name: Visual Studio Code
-      href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
-    - name: Eclipse
-      href: http://java.visualstudio.com/Docs/tools/eclipse
-    - name: IntelliJ IDEA
-      href: https://java.visualstudio.com/Docs/tools/intelliJ
   - name: Scale
     items:
-    - name: Large teams
-      href: https://visualstudio.com/git-at-scale
     - name: Manage large files
       href: manage-large-files.md
-  - name: Map TFVC actions to Git
-    href: concepts/mapping-my-tfvc-actions-to-git.md
 - name: How-to Guides
   items:
   - name: Authenticate with SSH
@@ -139,6 +125,8 @@
       href: branch-policies.md
     - name: Branch permissions
       href: branch-permissions.md
+  - name: Map TFVC actions to Git
+    href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
     href: ../build-release/concepts/definitions/build/triggers.md
 - name: Reference
@@ -153,11 +141,23 @@
       href: commit-history.md
     - name: Commit details
       href: commit-details.md
-  - name: Git REST APIs
-    href: https://visualstudio.com/docs/integrate/api/git/overview
 - name: Resources
   items:
+  - name: Git REST APIs
+    href: https://visualstudio.com/docs/integrate/api/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
     name: Learn Git
     href: https://www.visualstudio.com/learn-git/
+  - name: IDE integration and extension
+    items:
+    - name: Visual Studio
+      href: ../accounts/set-up-vs.md
+    - name: Visual Studio Code
+      href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
+    - name: Eclipse
+      href: http://java.visualstudio.com/Docs/tools/eclipse
+    - name: IntelliJ IDEA
+      href: https://java.visualstudio.com/Docs/tools/intelliJ
+  - name: Large teams
+    href: https://visualstudio.com/git-at-scale

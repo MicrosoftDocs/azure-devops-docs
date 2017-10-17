@@ -31,7 +31,7 @@ VSTS and TFS projects contain Git repositories, work items, builds, and releases
 
 0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
-  ![Choose new repository from the web interface](_img/repo-mgmt/create-vsts-repo.png)    
+  ![Choose new repository from the web portal](_img/repo-mgmt/create-vsts-repo.png)    
 
 0. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](./tutorial/ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 

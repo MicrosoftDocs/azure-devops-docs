@@ -40,7 +40,7 @@ In this tutorial you learn how to:
 
 Before you can clone an existing repo, you'll need a URL that points to the existing repo. This URL represents the source of the repo you're going to copy during the clone.
 
-If you're using VSTS or Team Foundation Server 2017, you can find this clone URL in the web interface. 
+If you're using VSTS or Team Foundation Server 2017, you can find this clone URL in the web portal. 
 When viewing your repo from the **Code** tab in the interface, select **Clone** in the upper right.
 
 ![Get a clone a URL from VSTS](./_img/get_clone_url.gif)

@@ -10,7 +10,7 @@ ms.date: 09/26/2017
 ---
 # How to: Troubleshoot Azure Resource Manager service endpoints
 
-**VSTS | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 This topic will help you resolve issues you may encounter when creating
 a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint.

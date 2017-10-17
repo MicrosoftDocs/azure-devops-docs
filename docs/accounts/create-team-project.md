@@ -30,29 +30,58 @@ If you have a team project already, and want to start coding an application proj
 >If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 
+
 ## From the web
 
-If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](../tfs-server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
+# [VSTS](#tab/vsts)
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
-2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page. (Hover and select *Server settings* for TFS).
+2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page.
 
-3. Open the collection administration page for the collection you want to create the team project in. 
+3. Click **New team project...**.
 
-    ![Collection administration link](_img/create-team-project/adminoverview.png)
-    
-4. Click **New team project...**.
+    ![New Team Project VSTS](_img/create-team-project/newteamprojectvsts.png)
 
-    ![New team project button](_img/create-team-project/collectionoverview.png)
 
-5. Provide a name for your new Team project, select its initial source control type, and select a process to create a team project.
+4. Provide a name for your new Team project, select its initial source control type, select a process, and choose who to share the project with to create a team project.
 
-    ![Create team project dialog](_img/create-team-project/createproject.png)
+    See [choosing the right version control for your project](../tfvc/comparison-git-tfvc.md) and [choose a process](../work/work-items/guidance/choose-process.md) for guidance. 
+
+
+    ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
+
+
+# [TFS](#tab/tfs) 
+
+If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](../tfs-server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
+
+> [!NOTE]   
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
+
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
+
+2. Navigate to the administation overview page by hovering over the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page and selecting *Server settings*.
+
+3. Select the collection administration page for the collection you want to create the team project in from the left pane, and select *Create a new team project..*.
+
+    ![Collection administration link](_img/create-team-project/createprojecttfs.png)
+
+4. Provide a name for your new Team project, select its initial source control type, and select a process to create a team project.
+
+    See [choosing the right version control for your project](../tfvc/comparison-git-tfvc.md) and [choose a process](../work/work-items/guidance/choose-process.md) for guidance. 
+
+    ![Create team project dialog](_img/create-team-project/clickcreatetfs.png)
+
+---
 
 ## From Team Explorer
-
 You can create a team project from Team Explorer after you have connected to an on-premises server. 
+
+> [!NOTE]
+> For TFS 2018 and later versions, users will be redirected to the web. They will no longer be able to create a team project from Visual Studio. 
+> 
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
@@ -129,15 +158,16 @@ You can create a team project from Team Explorer after you have connected to an 
 
 ## Try this next
 
-[Add team members](../work/scale/multiple-teams.md#add-team-members) to enable other users to connect to your team project.
+[Add team members](../security/add-users-team-project.md) to enable other users to connect to your team project.
 
 Also, with the team project created, you can start [developing your app in Team Foundation version control](https://msdn.microsoft.com/library/ms181382.aspx) or [use Git](../git/overview.md).
 
 To start planning work and collaborating as a team, see [Agile tools](../work/backlogs/overview.md).
 
 
-<a id="git-and-tfvs-repos">  </a>
-##Add repositories
+<a id="git-and-tfvs-repos" />
+
+### Add repositories
 From the admin context of the web portal, you can add additional repositories to a team project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a team project.  
 
 ![Add repositories to an existing team project](_img/create-team-project-add-repositories.png) 

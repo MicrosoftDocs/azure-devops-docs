@@ -9,7 +9,7 @@ ms.author: kangan
 ms.date: 08/11/2017
 ---
 
-# Restore a deleted Git branch from the web interface
+# Restore a deleted Git branch from the web portal
 
 #### VSTS | TFS 2018
 
@@ -24,9 +24,9 @@ ms.date: 08/11/2017
 0. Click the link to **Search for exact match in deleted branches**. If there is a deleted branch that matches your search, you will be able to see which commit it pointed to when it was deleted,
 who deleted it, and when it was deleted.
 
-    ![Search for exact match in deleted branches in the VSTS/TFS web interface](_img/branches/search_deleted_branches.png)
+    ![Search for exact match in deleted branches in the VSTS/TFS web portal](_img/branches/search_deleted_branches.png)
 
 0. To restore the branch, select the **...** icon next to the branch name and then select **Restore branch** from the menu. The branch will be recreated at the last commit to which it pointed.
 Note that branch policies and permissions will **not** be restored.
 
-    ![Restore your deleted branch in the VSTS/TFS web interface](_img/branches/restore_deleted_branch.png)
+    ![Restore your deleted branch in the VSTS/TFS web portal](_img/branches/restore_deleted_branch.png)

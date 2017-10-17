@@ -9,7 +9,7 @@ ms.author: sdanie
 ms.date: 09/07/2017
 ---
 
-# Delete a Git branch from the web interface
+# Delete a Git branch from the web portal
 
 #### VSTS | TFS 2017
 
@@ -23,4 +23,4 @@ ms.date: 09/07/2017
 
 0. Select the trashcan icon next to the branch you want to delete. 
 
-    ![Delete your branch in the VSTS/TFS web interface](_img/branches/delete_branch.png)
+    ![Delete your branch in the VSTS/TFS web portal](_img/branches/delete_branch.png)

@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Deploy a Java app to a Linux VM
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017 Update 2**
 
 We'll show you how to set up continuous deployment of your Java app to Tomcat server running on an Azure Linux VM using
 Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS). You can use the steps in this quickstart

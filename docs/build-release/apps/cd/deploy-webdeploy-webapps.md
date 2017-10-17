@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Deploy to Azure web app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017 Update 2**
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an Azure web app using
 Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS). You can use the steps in this quickstart

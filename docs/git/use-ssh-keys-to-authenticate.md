@@ -71,7 +71,7 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 Associate the public key generated in the previous step with your user ID.
 
-0.  Open your security settings by browsing to the web interface and selecting your name in the upper right of the
+0.  Open your security settings by browsing to the web portal and selecting your name in the upper right of the
 user interface. Select **My security** in the menu that appears.
 
     ![Accessing User Profile in VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
@@ -92,7 +92,7 @@ user interface. Select **My security** in the menu that appears.
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web interface:
+0. Copy the SSH clone URL from the web portal:
 
    ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
    

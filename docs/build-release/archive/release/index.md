@@ -11,7 +11,7 @@ ms.date: 08/19/2016
 
 # Release Management for Visual Studio, VSTS, and Team Foundation Server
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**  
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2015 | VS 2013**  
 
 **Release Management** helps you support a rapid release cadence and manage simultaneous releases.
 You can:
