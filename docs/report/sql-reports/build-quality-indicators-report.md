@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Build Quality Indicators Report
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

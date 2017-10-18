@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Create an aggregate report using Report Designer and the Analysis Services Cube
 

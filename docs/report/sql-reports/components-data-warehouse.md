@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
 manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Components of the TFS data warehouse
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

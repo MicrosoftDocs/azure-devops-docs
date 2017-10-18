@@ -6,8 +6,9 @@ ms.technology: vs-devops-reporting
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/05/2017
+ms.date: 10/17/17
 ---
+
 
 # Create and manage Reporting Services reports
 

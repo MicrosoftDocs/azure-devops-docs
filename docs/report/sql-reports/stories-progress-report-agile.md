@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Stories Progress Report (Agile)
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

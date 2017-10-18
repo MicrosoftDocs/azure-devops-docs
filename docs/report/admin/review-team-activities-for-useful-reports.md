@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/21/17
+ms.date: 10/17/17
 ---
 
 #Review team activities to support useful reports 

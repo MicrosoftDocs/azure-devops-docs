@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 4868da2c-9402-444e-a4a4-6b99e71a27ac
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Run Coverage tables
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Work Item Link History tables
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

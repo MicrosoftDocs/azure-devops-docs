@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Create a Detailed Report using Report Designer
 

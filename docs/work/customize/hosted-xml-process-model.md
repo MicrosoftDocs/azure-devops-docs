@@ -19,6 +19,12 @@ ms.date: 08/02/2017
 <a id="hosted-xml-process-model">  </a>
 
 
+> [!NOTE]   
+> **Feature availability**:  The Hosted XML process model is only supported for select accounts of Visual Studio Team Services.  
+
+
+The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a team project by modifying and importing a process template. Updates made to the process template are applied to team projects that were created using that process.
+
 You can perform the following tasks with the Hosted XML process model. 
 
 > [!div class="mx-tdBreakAll"]  

@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Release Burndown
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

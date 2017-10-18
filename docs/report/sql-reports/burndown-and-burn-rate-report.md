@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Burndown and Burn Rate Report
 

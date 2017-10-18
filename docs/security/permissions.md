@@ -7,7 +7,7 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+ms.date:10/17/2017
 ---
 
 
@@ -206,7 +206,7 @@ Project Collection Valid Users
 			</p>
 			<p>
 				This group should be restricted to the smallest possible number of users
-				who need total administrative control over the collection.
+				who need total administrative control over the collection. For VSTS, assign to administrators who will customize work tracking. 
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
@@ -325,8 +325,8 @@ For each team project that you create, the system creates the followings team pr
 	</tr>
 	<tr>
 		<td>Project Administrators</td>
-		<td>Has permissions to administer all aspects of the team project, although they can&#x2019;t create team projects.</td>
-		<td>Assign to users who will manage user permissions, create teams, define area an iteration paths, or customize work item tracking.</td>
+		<td>Has permissions to administer all aspects of teams and team project, although they can't create team projects.</td>
+		<td>Assign to users who will manage user permissions, create or edit teams, modify team settings, define area an iteration paths, or customize work item tracking.</td>
 	</tr>
 	<tr>
 		<td>Project Valid Users</td>
@@ -476,7 +476,6 @@ You manage server-level permissions through the [Team Foundation Administration 
 					for all team projects defined in all collections defined for the instance:
 				</p>
 				<ul>
-					<li>Add and administer teams and all team-related features</li>
 					<li>Create and modify areas and iterations</li>
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>
@@ -787,7 +786,6 @@ You manage project-level permissions from the [web portal admin context](../user
 					to perform these tasks for the team project:
 				</p>
 				<ul>
-					<li>Add and administer teams and all team-related features</li>
 					<li>Create and modify areas and iterations</li>
 					<li>Edit check-in policies</li>
 					<li>Edit shared work item queries</li>

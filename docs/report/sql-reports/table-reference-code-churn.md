@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Code Churn tables

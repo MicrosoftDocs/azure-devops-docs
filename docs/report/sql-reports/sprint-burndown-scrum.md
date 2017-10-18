@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: f7422ba3-c309-4092-87cf-17a83c77ac01
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Sprint Burndown (Scrum)
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

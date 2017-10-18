@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: ae8ea834-400f-4cda-98d4-a7e612c91cce
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 
 # Work Item Category tables
 

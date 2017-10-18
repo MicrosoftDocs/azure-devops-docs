@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Build Changeset tables

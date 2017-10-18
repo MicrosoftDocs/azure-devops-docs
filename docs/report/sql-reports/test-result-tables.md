@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Test Result tables

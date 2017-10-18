@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Build Details tables
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

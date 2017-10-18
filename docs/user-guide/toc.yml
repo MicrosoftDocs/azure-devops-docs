@@ -16,9 +16,9 @@
     href: code-with-git.md
   - name: Set up continuous integration & delivery
     href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: Plan & track work 
+  - name: "Plan & track work"
     href: plan-track-work.md 
-  - name: Add and run manual tests
+  - name: "Add & run manual tests"
     href: add-run-manual-tests.md
   - name: Install a Marketplace extension
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  

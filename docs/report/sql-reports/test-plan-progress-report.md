@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
 
 # Test Plan Progress Report

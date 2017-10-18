@@ -7,7 +7,7 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date:10/17/2017
 ---
 
 # Add teams and team members  
@@ -36,7 +36,7 @@ In this topic you'll learn:
 ## Move from one team to two teams 
 As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
 
-If you're not a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md). Only project administrators can add teams.  
+If you're not a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md). Only project administrators can add teams.   
 
 ### Add two feature teams 
 

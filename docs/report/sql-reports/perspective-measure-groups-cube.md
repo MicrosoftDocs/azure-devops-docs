@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Perspectives and measure groups 
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

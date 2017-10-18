@@ -6,7 +6,7 @@ ms.technology:  vs-devops-reporting
 ms.assetid: 0f398cef-add1-4112-85e8-016108de10b3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 10/17/17
 ---
 
 # Table reference for the relational warehouse database

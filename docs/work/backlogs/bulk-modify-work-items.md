@@ -27,8 +27,7 @@ In this topic you'll learn:
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Add or remove tags from several work items  
-> * Assign work from a backlog to a sprint using drag-and-drop (TO BE ADDED)  
- 
+> * Assign work from a backlog to a sprint using drag-and-drop 
 
 >[!NOTE]  
 >**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
@@ -39,7 +38,7 @@ All of the following actions can be performed by team members that belong to the
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) (TFS 2015.1)<br/>**Link work items**<br/><br/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md) (TFS 2017) <sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags) (TFS 2017)<br/>- [Update from template](work-item-template.md) (VSTS) <sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md) <sup>3</sup><br/>- [Change work item type](remove-delete-work-items.md#change-type) (VSTS) <sup>1</sup><br/>- [Move items to another team project](remove-delete-work-items.md#move) (VSTS)&#160;<sup>1, 4</sup>|                
+> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) (TFS 2015.1)<br/><br/>**Link work items**<hr/><br/><br/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md) (TFS 2017) <sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags) (TFS 2017)<br/>- [Update from template](work-item-template.md) (VSTS) <sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md) <sup>3</sup><br/>- [Change work item type](remove-delete-work-items.md#change-type) (VSTS) <sup>1</sup><br/>- [Move items to another team project](remove-delete-work-items.md#move) (VSTS)&#160;<sup>1, 4</sup>|                
 
 
 **Notes:**  
@@ -178,6 +177,9 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
 	![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
+
+
+[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
 
 
 <a id="tags"></a>
