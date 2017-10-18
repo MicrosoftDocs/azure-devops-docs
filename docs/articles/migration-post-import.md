@@ -6,10 +6,12 @@ ms.technology: vs-devops-overview
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ---
 
+# Post Import
+
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
-
-# Post Import
+>
+> It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
 A Visual Studio Team Services (VSTS) account is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the account up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
 

@@ -6,10 +6,12 @@ ms.technology: vs-devops-overview
 ms.contentid: f069d4ab-c824-4eb4-94ea-8e24942d5dcd
 ---
 
+# Advanced Topics
+
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
-
-# Advanced Topics
+>
+> It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
 ## Overriding Licensing Map Values
 To learn more about [licensing in Visual Studio Team Services (VSTS)](https://www.visualstudio.com/en-us/products/visual-studio-team-services-pricing-vs.aspx), visit our website. Generated identity mapping files provide a best guess as to what level of access each user will require. Upon inspecting the file you will notice one the following entries for each row’s license field:
