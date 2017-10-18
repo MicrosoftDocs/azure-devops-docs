@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/05/2017
 ms.topic: get-started-article
+ms.date: 10/18/2017
 ---
 
 
@@ -15,14 +15,49 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2018 | TFS 2017**
 
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within  a team project Wiki, content you add to a dashboard, or within your team project README file, or other repository README file.  
+
+
+## Markdown 
+
+Markdown makes it easy to format text, include images, and link as needed to additional documentation within your project pages, readme files, dashboards, and pull request comments.   
+
+You can provide guidance to your team in these places using Markdown:   
+  
+- [Add Markdown to a dashboard](../report/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Add and edit wiki pages](add-edit-wiki.md)    
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md) 
+ 
+For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../collaborate/markdown-guidance.md).
+
+
+## Wiki
+
+Use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.    
+
+To learn more, see [Create a wiki for your team project](wiki-create-repo.md).
+  
+
+>[!NOTE]  
+><b>Feature availability: </b>The built-in wiki is available with VSTS and TFS 2018 and later versions. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level). 
+>
+>To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
 
 ## READMEs
 
-To share information with your team, you can create README files for a repository, or create and add pages to a team project Wiki. Wiki files are managed in a wiki repository. You can edit these files using Markdown format.  
+You can define a README file, or multiple files, for each repo or team project. Write your readme in Markdown instead of plain text. 
 
-You can define a README file, or multiple files, for each repo or team project. 
-
-Write your readme in [Markdown](../collaborate/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Use README pages to orient contributors to working within your project. Consider adding guidance about:
+- The project focus 
+- Prerequisites
+- Setting up the environment
+- Tips for getting things done within the project
+- Purpose or use of specific files
+- Project-specific terms and acronyms
+- Workflow guidance about committing or uploading changes and adding branches
+- Project sponsors or contacts  
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 
@@ -31,16 +66,5 @@ Here are some great readmes that use this format and speak to all three audience
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
 
-## Wiki
 
-Use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.   website that allows collaborative editing of its content and structure.
 
-To learn more, see [Add and edit a wiki](add-edit-wiki.md).
-
->[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
-
-## Related notes
-- [Add and edit a wiki](add-edit-wiki.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Markdown guidance](markdown-guidance.md)

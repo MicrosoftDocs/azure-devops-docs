@@ -399,7 +399,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 Adds a configurable tile to display any type of information, guidance, or links that you want.
 From the configuration dialog, add the information you want to share with your team. 
 
-To learn more about markdown format, see [Markdown guidance](../collaborate/markdown-guidance.md). 
+To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
 
 
 ---- 

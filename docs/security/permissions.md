@@ -1025,9 +1025,7 @@ These permissions appear only for a team project including a Git repository.
 
 Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
 
-Individual repositories inherit permissions from  the top-level **Git Repositories** entry.     
-
-Branches inherit permissions from assignments made at the repository level.   
+Individual repositories inherit permissions from  the top-level **Git Repositories** entry. Branches inherit permissions from assignments made at the repository level.   
 
 By default, the team project level and collection level Readers groups have only Read permissions.
 
@@ -1058,11 +1056,6 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 
-	<tr>
-		<td id="git-contribute-permission">Contribute</td>
-		<td>At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../git/branch-policies.md). At the branch level, can push their changes to the branch and lock the branch.
-		</td>
-	</tr>
 	<tr>
 		<td id="git-create-branch-permission">Create Branch</td>
 		<td>

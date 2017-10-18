@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/05/2017
----    
+ms.date: 10/18/2017
+---   
 
 # Migrate pages from Wiki extension to a team project wiki
 
 **VSTS**
 
->[!NOTE]  
-><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the VSTS Wiki. The **Wiki*** hub is in Preview and available for VSTS and TFS 2018 and later versions. To learn more, see [Add and edit your team project Wiki](add-edit-wiki.md).  
-
 With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project.  
+
+>[!NOTE]  
+><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the VSTS Wiki. The **Wiki*** hub is in Preview and available for VSTS and TFS 2018 and later versions. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level). To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  
 
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with these steps:  
 1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
@@ -34,15 +34,15 @@ Here are the detailed steps for Wiki migration:
 
 2.  Compile the project under the path **Tools/MigrateToVSTSWiki** to generate the migration tool EXE.
   
-3.  From a web browser, open your VSTS team project and [create your first wiki page](add-edit-wiki.md#create-wiki).   
+3.  From a web browser, open your VSTS team project and [create your first wiki page](wiki-create-repo.md).   
  
-4.	Get the URL to clone your wiki. See [Clone your wiki and edit wiki pages offline](add-edit-wiki.md#edit-wiki-offline).  
+4.	Get the URL to clone your wiki. See [Clone your wiki and edit wiki pages offline](wiki-update-offline.md).  
 	
 	Let the clone location be identified as "LocationA" for the purposes of these procedures.
 	
 5.	Clone your Wiki repo using your IDE or **git clone** command.
 
-	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #C3C3C3;" /> 
 
 6.	Clone the Wiki extension repo. The Wiki will be mapped to a folder given to you during the wiki creation. You can check that by going to "manage wiki" option in the existing wiki as shown below.
 
@@ -52,8 +52,8 @@ Here are the detailed steps for Wiki migration:
 
 	Let this location be identified as "LocationB" for the purposes of these procedures.
  
-7.	Create an empty folder in any path of your choosing in your local machine and let that be "LocationC" for the purposes of these procedures.
- 
+7.	Create an empty folder in any path of your choosing in your local machine and let that be "LocationC" for the purposes of these procedures.  
+
 	**In summary:** 
 	- Location A = VSTS Wiki repo
 	- Location B = Wiki extension repo 
@@ -83,7 +83,7 @@ Here are the detailed steps for Wiki migration:
 ## Related notes 
   
 - [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)  
-- [Edit wiki pages offline](add-edit-wiki.md#edit-wiki-offline)  
+- [Clone and update wiki pages offline](wiki-update-offline.md)  
 - [Source code for the wiki tools](https://github.com/Microsoft/vsts-wikiTools)  
 - [Git quickstart](../git/gitquickstart.md)
  

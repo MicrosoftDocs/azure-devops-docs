@@ -8,20 +8,26 @@
   items:
   - name: Share your project vision
     href: project-vision-status.md
-- name: Tutorials
-  items:
-  - name: "Add & edit a wiki"
-    href: add-edit-wiki.md
+  - name: Add Markdown to a dashboard
+    href: ../report/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Create a readme for your repo
     href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
-  - name: Share work plans
-    href: ../work/track/share-plans.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
 - name: How-to guides
   items:
-  - name: "Manage README & Wiki permissions"
+  - name: Create a wiki for your team project
+    href: wiki-create-repo.md
+  - name: "Add & edit wiki pages"
+    href: add-edit-wiki.md
+  - name: Update wiki pages offline 
+    href: wiki-update-offline.md
+  - name: View wiki history and revert
+    href: wiki-view-history.md
+  - name: "Manage README & Wiki permissions (security)"
     href: manage-readme-wiki-permissions.md
+  - name: Migrate pages from Wiki extension to a team project wiki
+    href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
   - name: Markdown guidance
