@@ -77,7 +77,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 <a id="test-manager"  >  </a>
 ## Access to the Test hub and Marketplace extensions
 
-Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Visual Studio VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
 
 To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
 

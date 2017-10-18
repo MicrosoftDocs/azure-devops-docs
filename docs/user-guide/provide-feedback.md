@@ -1,6 +1,6 @@
 ---
 title: Provide product and content feedback | VSTS & TFS
-description: Guide to providing product and content feedback as well as accessing other resources when using Visual Studio VSTS (VSTS) and Team Foundation Server (TFS) 
+description: Guide to providing product and content feedback as well as accessing other resources when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  

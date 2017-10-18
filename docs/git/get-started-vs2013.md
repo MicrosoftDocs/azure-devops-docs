@@ -73,7 +73,7 @@ Let's add a new app to the repo so we can make some changes.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Visual Studio VSTS.
+0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to VSTS.
 If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
@@ -163,7 +163,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="create_team_project"></a>
-#### Q: How do I create a team project on Visual Studio VSTS?
+#### Q: How do I create a team project on VSTS?
 * [Sign up and create your team project](../accounts/create-account-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
@@ -183,7 +183,7 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the CODE hub in Visual Studio VSTS.
+* Get the clone URL from the CODE hub in VSTS.
 
 For the Fabrikam project on VSTS, the command to clone would look like this:
 

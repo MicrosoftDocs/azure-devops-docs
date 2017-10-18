@@ -13,7 +13,7 @@ ms.date: 02/22/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-You might receive this error when you try to connect to VSTS (VSTS) or an on-premises Team Foundation Server (TFS).  
+You might receive this error when you try to connect to Visual Studio Team Services (VSTS) or an on-premises Team Foundation Server (TFS).  
   
 |Problem|Resolution|  
 |-------------|----------------|  

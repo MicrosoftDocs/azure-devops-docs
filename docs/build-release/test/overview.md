@@ -20,7 +20,7 @@ choose the technologies and frameworks, then test
 your changes continuously in a fast, scalable, and 
 efficient manner. 
 
-![Test with Visual Studio VSTS and Team Foundation Server](_img/continuous-testing/test-types.png)
+![Test with VSTS and Team Foundation Server](_img/continuous-testing/test-types.png)
 
 <a name="maintain-quality"></a>
 ## Maintain quality and find problems as you develop

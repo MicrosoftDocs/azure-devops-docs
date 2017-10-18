@@ -1,16 +1,16 @@
 ---
 title: Connect to your Git repos using credential managers | VSTS & TFS
-description: Authenticate to Visual Studio VSTS and TFS Git repos using credential managers
+description: Authenticate to VSTS and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/09/2017
+ms.date: 10/17/2017
 ---
 
-#  Use Git Credential Managers to Authenticate to Visual Studio VSTS
-#### VSTS | TFS 2015 & 2017| Visual Studio 2015 & 2017
+#  Use Git Credential Managers to Authenticate to VSTS
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git Credential Managers simplify authentication with your VSTS/TFS Git repos. Credential Managers let you use the same credentials that you use for the VSTS/TFS web portal and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with VSTS, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
 
@@ -19,7 +19,7 @@ VSTS provides IDE support for MSA and AAD authentication through [Team Explorer 
 ## Install the Git Credential Manager
  
 ### Windows 
-Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes the Git Credential Manager for Windows. Make sure to leave the Git Credntial Manager installation option enabled when prompted.
+Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes the Git Credential Manager for Windows. Make sure to leave the Git Credential Manager installation option enabled when prompted.
 
    ![Select Enable Git Credential Manager during Git for Windows install](_img/install-with-gcm.png)   
 
@@ -34,11 +34,11 @@ On Mac OS X and Linux, there are [several install options](https://github.com/Mi
 
 ## Using the Git Credential Manager
 
-When you connect to a VSTS Git repository from your Git client for the first time, the credential manager will prompt for your Microsoft Account or Azure Active Directory credentials. If your account has multi-factor authentication enabled, you will go through that experience as well.
+When you connect to a VSTS Git repository from your Git client for the first time, the credential manager  prompts for your Microsoft Account or Azure Active Directory credentials. If your account has multi-factor authentication enabled, you are prompted to go through that experience as well.
 
 ![Git Credential Manager prompting during Git pull](_img/gcm_login_prompt.gif)
    
-Once authenticated, the credential manager will create and cache a [personal access token](../accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account will not prompt for user credentials until the token expires or is revoked through VSTS/TFS.
+Once authenticated, the credential manager creates and caches a [personal access token](../accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires or is revoked through VSTS/TFS.
 
 ### Getting help 
 

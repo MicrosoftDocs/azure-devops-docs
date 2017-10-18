@@ -311,7 +311,7 @@ Stakeholder access provides free access to VSTS and to on-premises TFS team proj
 
 Only account owners or members of the [Team Foundation Server Administration group](set-project-collection-level-permissions.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
 
-   **VSTS:**&#160;&#160;[Add users in Visual Studio VSTS](../accounts/add-account-users-assign-access-levels.md)  
+   **VSTS:**&#160;&#160;[Add users in VSTS](../accounts/add-account-users-assign-access-levels.md)  
    **On-premises TFS:**&#160;&#160;[Change access levels](../security/change-access-levels.md)  
 
 With stakeholder access, anyone on your team can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to project plans by adding and modifying work items.  
@@ -350,6 +350,6 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
-- **VSTS**: [Add users and assign licenses in Visual Studio VSTS](../accounts/add-account-users-assign-access-levels.md)
+- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-account-users-assign-access-levels.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
