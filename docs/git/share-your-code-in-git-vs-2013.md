@@ -23,7 +23,7 @@ Whether your software project is large, small, or brand new,
 in most cases you'll be better off if you use version control 
 as early as possible. Here, we'll show you how to get started with 
 Git, a distributed system. If you want to work in a centralized system, 
-you can instead use [TFVC with Visual Studio VSTS](../tfvc/share-your-code-in-tfvc-vs.md).
+you can instead use [TFVC with VSTS](../tfvc/share-your-code-in-tfvc-vs.md).
 
 [!INCLUDE [temp](_shared/open-team-project-in-vs.md)]
 

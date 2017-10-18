@@ -32,21 +32,26 @@ Or, you can [import an existing repo](import-git-repository.md) from GitHub, Bit
 
 Learn the basics of working in Git with these tutorials which show tasks performed using Visual Studio or the command line.  
 
-- [Create a new repo](tutorial/creatingrepo.md)  
 - [Clone an existing repo](tutorial/clone.md)  
 - [Save work with commits](tutorial/commits.md)  
 - [Create work in branches](tutorial/branches.md)  
 - [Share code with push](tutorial/pushing.md)  
 - [Update code with fetch and pull](tutorial/pulling.md)  
 - [Review code with pull requests](tutorial/pullrequest.md)  
-- [Apply changes with rebase](tutorial/rebase.md)  
-- [Copy changes with cherry-pick](tutorial/cherry-pick.md)  
-- [Resolve merge conflicts](tutorial/merging.md)  
-- [Undo changes](tutorial/undo.md)  
-- [Ignore files](tutorial/ignore-files.md)  
 - [Review history](tutorial/history.md)  
 
+## Concepts
 
+- [Authentication](auth-overview.md)
+- [History in Git](concepts/history.md)
+- [Branch organization](concepts/git-branching-guidance.md)
+- [Forks](concepts/forks.md)
+
+## Reference
+
+- [Format comments with markdown](../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json)
+- [Command reference](command-prompt.md)
+- [Frequently asked questions](tutorial/howto.md)
 
 ## Resources 
 

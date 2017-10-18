@@ -6,14 +6,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/16/2017
+ms.date: 10/17/2017
 ---
 
 # How names work in Git
 
 When you commit to your local repo, Git includes your name and email address as part of the commit.
 This can sometimes lead to confusion.
-The name and email on your commits may not match the identity you log in with on a Git host like Visual Studio VSTS.
+The name and email on your commits may not match the identity you log in with on a Git host like VSTS.
 Further, you may have commits under several different names and email addresses even though you were the author for each of them.
 
 ## Why are there multiple names for me in my repo?
@@ -52,9 +52,7 @@ git config --global user.name "Frances Totten"
 git config --global user.email "frances_t@fabrikam.com"
 ```
 
-In VSTS, you can update your profile by clicking your picture in the upper right corner and choosing *My profile*.
-
-![My profile menu](../_img/me-menu.png)
+In VSTS, you can update your profile by clicking your picture in the upper right corner and choosing [My profile](../../accounts/account-preferences.md).
 
 ## How do I change the author displayed for past commits?
 

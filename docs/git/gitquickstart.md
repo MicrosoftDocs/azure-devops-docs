@@ -55,7 +55,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 0. Open the VSTS web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in Visual Studio VSTS](_shared/_img/cloneURL.png)
+  ![Finding the Clone URL for your Git Repository in VSTS](_shared/_img/cloneURL.png)
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, paste the command you copied from the command line instructions. It will look like this
@@ -146,11 +146,11 @@ team, you complete the pull request through the web browser.
 
 0. Open up the VSTS project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in Visual Studio VSTS](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in VSTS](_shared/_img/vstsCreatePullReq.png)   
 
 0. Create the pull request, adding in team members to review and approve the code changes.
 
-0. Once the changes are approved, complete the pull request in Visual Studio VSTS. 
+0. Once the changes are approved, complete the pull request in VSTS. 
 This will pull your changes from the branch into the master branch of the code.
 
 ---

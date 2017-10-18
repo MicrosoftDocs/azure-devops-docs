@@ -24,7 +24,7 @@ Start gaining visibility into how your team is progressing by adding one or more
 ## 5-Minute Quickstarts  
 - [Add and manage dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
-
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 
 ## Step-by-Step Tutorials
 
@@ -41,7 +41,6 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 ## How-to Guides
 - [Add charts to a dashboard](add-charts-to-dashboard.md)  
-- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 - [Configure work item query-based charts](charts.md)
 - [Configure test status, progress, and result charts](/vsts/manual-test/getting-started/track-test-status?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json)  
 - [Set dashboard permissions](dashboard-permissions.md)  

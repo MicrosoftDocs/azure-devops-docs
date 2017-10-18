@@ -101,7 +101,6 @@ Some widgets are pre-sized and can't be changed. Others are configurable through
 
 For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
 
-
 <img src="_img/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
 
 

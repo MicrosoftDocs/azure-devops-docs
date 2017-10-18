@@ -1,4 +1,4 @@
-- name: Git
+- name: Git Repositories
   href: index.md
 - name: Overview
   items:
@@ -143,12 +143,24 @@
       href: commit-details.md
 - name: Resources
   items:
+  - name: What is Git?
+    href: https://www.visualstudio.com/learn/what-is-git/
+  - name: What is version control?
+    href: https://www.visualstudio.com/learn/what-is-version-control/
+  - name: Plan your migration to Git
+    href: https://www.visualstudio.com/learn/centralized-to-git/
+  - name: Migrate from TFVC to Git
+    href: https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
     name: Learn Git
     href: https://www.visualstudio.com/learn-git/
+  - name: Git at Scale
+    href: https://visualstudio.com/git-at-scale
+  - name: Marketplace extensions
+    href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
   - name: IDE integration and extension
     items:
     - name: Visual Studio
@@ -159,5 +171,3 @@
       href: http://java.visualstudio.com/Docs/tools/eclipse
     - name: IntelliJ IDEA
       href: https://java.visualstudio.com/Docs/tools/intelliJ
-  - name: Large teams
-    href: https://visualstudio.com/git-at-scale

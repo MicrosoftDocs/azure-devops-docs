@@ -23,7 +23,7 @@ You can provide guidance to your team in these places using markdown:
 - [Team project wiki](add-edit-wiki.md)    
 - [Readme files](../git/create-a-readme.md) 
 - [Pull request comments](../git/pull-requests.md) 
-- [Markdown widget on a team dashboard](../report/widget-catalog.md#markdown-widget)  
+- [Add Markdown to a dashboard](../report/add-markdown-to-dashboard.md)    
 
 In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [Github-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
@@ -44,7 +44,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**      
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />  
 
 ## Paragraphs and line breaks
 
@@ -329,7 +329,7 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
 <br/>
 **Result:**  
  
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #CCCCCC;" />
+<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 
  
@@ -487,7 +487,7 @@ In pull request comments and wiki pages, you can use emojis to add character and
 
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper-right of the comment box or the format pane in wiki page. 
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />  
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 

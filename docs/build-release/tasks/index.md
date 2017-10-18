@@ -1,6 +1,6 @@
 ---
 title: Catalog of the built-in tasks for build-release and VSTS & TFS 
-description: Catalog of the built-in tasks on Visual Studio VSTS and Team Foundation Server
+description: Catalog of the built-in tasks on VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
@@ -64,11 +64,11 @@ ms.date: 08/18/2016
 | Task | Versions |
 | ---- | -------- |
 | ![icon](test/_img/apache-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest). Runs the Apache JMeter load test in cloud | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with Visual Studio VSTS | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with Visual Studio VSTS | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/mobile-center-test-icon.png) [Mobile Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest). Test mobile app packages with Visual Studio Mobile Center | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015 Update 3 and newer |
-| ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to Visual Studio VSTS/TFS | VSTS, TFS 2015 RTM and newer |
+| ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](test/_img/visual-studio-test-icon.png) [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment](test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | VSTS, TFS 2015 RTM and newer |

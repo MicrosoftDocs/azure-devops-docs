@@ -49,7 +49,7 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ## Publish your code to VSTS
 
-0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio VSTS**.
+0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to VSTS**.
 
  ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
 

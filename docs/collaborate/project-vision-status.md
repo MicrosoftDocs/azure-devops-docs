@@ -14,26 +14,32 @@ ms.date: 08/29/2017
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**  
 
-> [!NOTE]  
+> [!NOTE]   
 > **Feature availability**: The project page described in this topic is available for VSTS and TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
 
 You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of VSTS and to perform the following activities:
 
   
-> [!NOTE]  
+> [!NOTE]    
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../accounts/create-team-project.md).  
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Git repository |TFVC repository  |K
-> |-------------|----------| 
-> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity)|- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity)
+> [!div class="mx-tdBreakAll"]   
+> |Git repository |TFVC repository |  
+> |-------------|----------|  
+> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity)|- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
+
+## Prerequisites
+
+To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md). 
+
+To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../security/about-permissions.md#validusers). 
 
 
 ## Open the project home page
-From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.   
+From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, [create one in VSTS](../user-guide/sign-up-invite-teammates.md)<!---or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.   
 
-<img src="_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" />
 
 <!--- <b>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i></b>
 -->  
@@ -45,12 +51,12 @@ Upon [adding another team project](../accounts/create-team-project.md) to your a
 
 **Git repository**
 
-<img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />   
 
 
 **TFVC repository**
 
-<img src="_img/project-home-page-1.png" alt="TFVC new project" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/project-home-page-1.png" alt="TFVC new project" style="border: 1px solid #C3C3C3;" />   
 
 
 ##Share your project vision
@@ -61,17 +67,7 @@ To edit the project README.md file, click the Edit button. You'll need to be a m
 
 You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../git/create-a-readme.md) and [Markdown guidance](../collaborate/markdown-guidance.md). 
 
-<img src="_img/project-home-page-sample-vs-code-readme.png" alt="Example project home page" style="border: 1px solid #CCCCCC;" />  
-
-Use these pages to orient contributors to working within your project. Consider adding guidance about:
-- The project focus 
-- Prerequisites
-- Setting up the environment
-- Tips for getting things done within the project
-- Purpose or use of specific files
-- Project-specific terms and acronyms
-- Workflow guidance about committing or uploading changes and adding branches
-- Project sponsors or contacts  
+<img src="_img/project-home-page-sample-vs-code-readme.png" alt="Example project home page" style="border: 1px solid #C3C3C3;" />   
 
 
 <a id="cross-project-activity">  </a>
@@ -79,15 +75,14 @@ Use these pages to orient contributors to working within your project. Consider 
 
 In addition to sharing information, the project home page pulls data from the various functional hubs to give visitors a bird's-eye view of your project activity. 
 
-<img src="_img/project-home-page-activity.png" alt="Project Home Page, Activity" style="border: 1px solid #CCCCCC;" />  
-
+<img src="_img/project-home-page-activity.png" alt="Project Home Page, Activity" style="border: 1px solid #C3C3C3;" />   
 
 To add team members or manage membership in the team project, click ![Add team members button](_img/project-home-page-add-team-members.png) Add button. 
 
 
 
 <a id="welcome-pages"></a> 
-## Repository welcome pages
+## Create a Repository README or Welcome page 
 
 > [!NOTE]  
 > **Feature availability**: The Welcome pages are available from the web portal of TFS 2017 and earlier versions.  
@@ -96,25 +91,15 @@ Here's an example of a Welcome page:
 
 ![Sample Welcome Markdown page](_img/markdown-welcome-page.png)
 
-Use these pages to orient contributors to working within a Git repository or Team Foundation version (TFVC) control project folder. Consider adding guidance about:
-- The project focus 
-- Prerequisites
-- Setting up the environment
-- Tips for getting things done within the project
-- Purpose or use of specific files
-- Project-specific terms and acronyms
-- Workflow guidance about committing or uploading changes and adding branches
-- Project sponsors or contacts 
-
 
 ### Edit or create additional pages
 
-> [!NOTE]  
+> [!NOTE]   
 > If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
 
 1. You can start editing directly from the Welcome page.
 
-	<img src="_img/markdown-welcome-page-edit.png" alt="Web portal, Project page, Edit Welcome Markdown page" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/markdown-welcome-page-edit.png" alt="Web portal, Project page, Edit Welcome Markdown page" style="border: 1px solid #C3C3C3;" /> 
 	
 	To edit a page, you must be a contributor to the repository or branch or have the Contribute permissions set to allow.  
 
@@ -125,11 +110,10 @@ Use these pages to orient contributors to working within a Git repository or Tea
 3. After you save the file, click the link. Respond to the prompt to edit the file and commit it to your repository.  
 
 
-
 ### Location of the Welcome pages
 The Welcome page corresponds to the README.md file defined in the Git repository or TFVC project folder (i.e. $/TeamProject/ReadMe.md). Additional pages you create show up in the same location.
 
-<img src="_img/markdown-multiple-pages-explorer-view.png" alt="Web portal, Code hub, Markdown pages in the repository" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/markdown-multiple-pages-explorer-view.png" alt="Web portal, Code hub, Markdown pages in the repository" style="border: 1px solid #C3C3C3;" />  
 
 You can edit and manage these files in the same way you manage all other files under source control. 
 
@@ -145,20 +129,14 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Work effectively from your account hub](../user-guide/account-home-pages.md)
+> [Create a wiki for your team project](wiki-create-repo.md) 
 
 
 ## Related notes  
 
 - [Markdown guidance](../collaborate/markdown-guidance.md) 
+- [Work effectively from your account hub](../user-guide/account-home-pages.md)
 
-
-
-### Required permissions 
-
-To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to allow. 
-
-To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../security/about-permissions.md#validusers). 
 
  
 

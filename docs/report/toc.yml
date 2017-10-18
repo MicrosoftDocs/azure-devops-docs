@@ -10,6 +10,8 @@
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
+  - name: Add Markdown to a dashboard
+    href: add-markdown-to-dashboard.md
 - name: Tutorials
   items:
   - name: Configure burndown or burnup widgets
@@ -34,8 +36,6 @@
   items:
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
-  - name: Add Markdown to a dashboard
-    href: add-markdown-to-dashboard.md
   - name: Configure work item query-based charts
     href: charts.md
   - name: "Configure test status, progress, & result charts"

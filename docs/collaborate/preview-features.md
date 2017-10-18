@@ -42,7 +42,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 0. To access the Preview features options, open your user account menu, and select **Preview features**. 
 
-	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 1px solid #C3C3C3;" />  
 
 0. To enable or disable a feature, click the slider. 
 
@@ -60,7 +60,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 <img src="_img/preview-features-account-s124.png" alt="Preview features options for the account" style="border: 2px solid #C3C3C3;" />
 
 <!---
-<img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" />  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
+<img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #C3C3C3;" />   <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 -->
 
 
@@ -82,11 +82,11 @@ You can enable a built-in Wiki for your team project or for an account. This fea
     
 Here, we enable the New Account Landing page. This hub is associated with the account collection and not any one team project or team. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md). When you enable the New Account Landing page, you also enable the project page where you can [share your project vision with your team](project-vision-status.md).
 
-<img src="../_shared/_img/preview-features-account-landing-off-on.png" alt="Account Landing Page has been enabled " style="border: 1px solid #CCCCCC;" /> 
+<img src="../_shared/_img/preview-features-account-landing-off-on.png" alt="Account Landing Page has been enabled " style="border: 1px solid #C3C3C3;" />  
 
 If you have administrative privileges, you'll see a menu from which to choose whether the feature is for you, or for all users who work within the account. 
 
-<img src="_img/preview-features-user-level.png" alt="Preview features options, for me, logged-in user" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/preview-features-user-level.png" alt="Preview features options, for me, logged-in user" style="border: 1px solid #C3C3C3;" />   
 
 
 

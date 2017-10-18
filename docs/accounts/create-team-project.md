@@ -48,7 +48,6 @@ If you have a team project already, and want to start coding an application proj
 
     See [choosing the right version control for your project](../tfvc/comparison-git-tfvc.md) and [choose a process](../work/work-items/guidance/choose-process.md) for guidance. 
 
-
     ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
 
 

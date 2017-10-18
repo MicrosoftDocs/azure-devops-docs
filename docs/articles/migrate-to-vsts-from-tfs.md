@@ -50,7 +50,7 @@ guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportDat
 </a>
 
 Because the TFS Database Import Service operates at a database level, it can provide a very high fidelity migration. 
-If you want to move your existing TFS data into Visual Studio VSTS, we strongly recommend using this option.
+If you want to move your existing TFS data into VSTS, we strongly recommend using this option.
 
 ### Option 3: Using public API-based tools for higher fidelity migration
 

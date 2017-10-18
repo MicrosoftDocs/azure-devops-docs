@@ -42,7 +42,7 @@ Developers have access to a variety of tools through these versions of Visual St
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process  
 - **[Eclipse/Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)**: Free plug-in to support teams targeting platforms like Mac, iOS, Android, and Linux that connects to VSTS or TFS from Eclipse-based environments and non-Windows platforms  
 - **[Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
-- **[IntelliJ with the Visual Studio VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)**: Free plug-in to support developers who use IntelliJ IDEA to connect to Git repositories on VSTSs or TFS 
+- **[IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)**: Free plug-in to support developers who use IntelliJ IDEA to connect to Git repositories on VSTSs or TFS 
 - **[Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)**: Free, open-source code editor with a free extension to support connecting to  Git repositories on VSTS or TFS.  
 
 To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). To download any Visual Studio version, go to the [downloads page](https://www.visualstudio.com/downloads/).
