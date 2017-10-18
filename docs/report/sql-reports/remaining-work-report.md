@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Remaining Work Report
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

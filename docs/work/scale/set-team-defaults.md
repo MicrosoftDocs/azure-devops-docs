@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/28/2017
---- 
+ms.date:10/17/2017
+---
 
 
 # Set team defaults  

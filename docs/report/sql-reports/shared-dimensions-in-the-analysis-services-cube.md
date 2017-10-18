@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 7e4570e4-443b-4589-9d16-5699f51664b5
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Shared dimensions in the Analysis Services Cube
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

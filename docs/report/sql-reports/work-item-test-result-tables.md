@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 33dbfef7-c17b-4884-9a33-cfc61a1d7cd6
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Work Item Test Result tables
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

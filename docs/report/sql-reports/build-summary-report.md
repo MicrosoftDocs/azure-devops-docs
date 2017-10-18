@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 
 # Build Summary Report
 

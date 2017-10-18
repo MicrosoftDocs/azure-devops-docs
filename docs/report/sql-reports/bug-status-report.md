@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
 ms.author: kaelli
 ms.manager: douge
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Bug Status Report
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

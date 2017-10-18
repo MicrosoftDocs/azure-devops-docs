@@ -83,6 +83,7 @@ You can pass environment variables of the build machine into build steps. For ex
 
 ## Predefined variables
 
+<div class="mx-tdBreakAll">
 <table>
     <thead>
         <tr>
@@ -865,6 +866,7 @@ You can pass environment variables of the build machine into build steps. For ex
         </tr>
     </tbody>
 </table>
+</div>
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 8f70c31b-1c6f-4d5b-8413-3948a298d879
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Current Work Item tables

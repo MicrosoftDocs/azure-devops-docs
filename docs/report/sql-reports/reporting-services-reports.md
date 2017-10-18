@@ -7,7 +7,7 @@ ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date: 10/17/17
 ---
 
 # Reporting Services Reports

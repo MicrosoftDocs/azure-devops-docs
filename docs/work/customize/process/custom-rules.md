@@ -70,7 +70,7 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 
 
 <a id="delete-disable">  </a>
-### Delete or disable a rule     
+## Delete or disable a rule     
 
 You can temporarily disable a rule or delete it altogether.  
 

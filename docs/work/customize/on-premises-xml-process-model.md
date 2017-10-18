@@ -17,7 +17,14 @@ ms.date: 08/02/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 
-You can perform the following tasks when you work with the On-prem XML process model. 
+> [!NOTE]   
+> **Feature availability**:  The On-premises XML process model is supported for on-premises TFS.  
+
+
+The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a team project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
+
+
+You can perform the following tasks when you work with the On-premises XML process model. 
 
 <a id="on-prem-xml-process-model"></a>
 

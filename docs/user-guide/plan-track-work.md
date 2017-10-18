@@ -42,6 +42,10 @@ Create as many work items as you need of the type you need to track the work you
 
 
 ## Try this next  
+ 
+> [!div class="nextstepaction"]
+> [Add & run manual tests](add-run-manual-tests.md)
+ 
 
 To quickly add backlog items, such as user stories or requirements, see these topics:  
 > [!div class="nextstepaction"]

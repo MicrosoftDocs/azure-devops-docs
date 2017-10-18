@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
 
 # Test Case Readiness report

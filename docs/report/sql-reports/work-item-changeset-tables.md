@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
+
+
 # Work Item Changeset tables  
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Status on All Iterations Report
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

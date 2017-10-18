@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 10/17/17
 ---
 
 # Stories Overview Report (Agile)

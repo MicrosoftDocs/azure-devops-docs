@@ -79,7 +79,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Build & release an app](../build-release/actions/ci-build-git.md)
+> [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 > or
 > [Plan & track work](plan-track-work.md)
 

@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
 ms.topic: get-started-article
+ms.date:10/17/2017
 ---
 
 # Add a team administrator 

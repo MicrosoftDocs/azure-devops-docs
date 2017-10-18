@@ -18,6 +18,13 @@ ms.date: 08/02/2017
 
 <a id="inheritance"> </a> 
 
+> [!NOTE]   
+> **Feature availability**:  The Inheritance process model is only supported for Visual Studio Team Services at this time.  
+
+
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. Team projects inherit the customizations made to a process.
+
+
 You can perform the following tasks with the Inheritance process model. 
 
 > [!div class="mx-tdBreakAll"]  

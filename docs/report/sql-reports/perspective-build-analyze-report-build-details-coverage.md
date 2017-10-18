@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Analyze and report on build details and build coverage using the Build perspective

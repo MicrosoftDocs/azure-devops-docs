@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 10/17/17
 ---
+
+
 # Reactivations Report
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

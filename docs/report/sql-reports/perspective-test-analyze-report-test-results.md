@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/09/2017
+ms.date: 10/17/17
 ---
 
 # Analyze and report on test results using the test perspective 

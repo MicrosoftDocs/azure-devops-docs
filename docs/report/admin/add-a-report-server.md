@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
+ms.date: 10/17/17
 ---
 
 # Add a report server
 
-**TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
 >[!IMPORTANT]
 >**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).

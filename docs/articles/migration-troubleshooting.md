@@ -6,10 +6,12 @@ ms.technology: vs-devops-overview
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ---
 
+# Troubleshooting
+
 > [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
-
-# Troubleshooting
+>
+> It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
 TfsMigrator could flag errors which need to be corrected prior to performing a migration. Below are the most common errors that are encountered when prepping 
 for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
@@ -219,7 +221,9 @@ Please add "Integrated Security=False" to your SQL connection string.
 
     VS403263: The User ID {0} must be member of the database role {1}.
 
-This error means that your SQL login user does not have the required database role. Please make sure ['TFSEXECROLE'](migration-import.md#importing-large-collections) is assigned to the login.   
+This error means that your SQL login user does not have the required database role. Please make sure ['TFSEXECROLE'](migration-import.md#importing-large-collections) is assigned to the login. 
+
+There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership is not applied until all open connections using that identity are closed. If you're hitting the above error and have confirmed your identity has this role, it's recommended that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at https://aka.ms/VSTSImportLargeCollection.
     
     VS403264: The database is not a TFS Collection database, it cannot be used for import.
     

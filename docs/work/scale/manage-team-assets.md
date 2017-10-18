@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+ms.date:10/17/2017
 ---
 
 # Configure team settings 
@@ -19,7 +19,7 @@ ms.date: 10/09/2017
 
 Within a team project, you [add teams](multiple-teams.md) to support the needs of several feature teams, or an enterprise organized to deliver different products. Each team is then able to configure the Agile tools the way that works for their team, supporting each team to collaborate most effectively in planning and managing their work.  
 
-As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. 
+As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. Members of the Project Administrators group can manage all team-related activities for all teams. 
 
 Team admin permissions are role-based, unlike project admin permissions which are set through the user interface. Also, because team administrators are members of the Contributor role they have permissions assigned to that role.  
 

@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/22/2017
+ms.date: 10/17/17
 ---
+
+
 
 # Backlog overview (Scrum)
 

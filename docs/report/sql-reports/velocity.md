@@ -6,8 +6,11 @@ ms.technology: vs-devops-reporting
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/21/17
+ms.date: 10/17/17
 ---
+
+
+
 # Velocity
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 

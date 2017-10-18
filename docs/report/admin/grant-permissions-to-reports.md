@@ -6,13 +6,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
 ms.topic: get-started-article
+ms.date: 10/17/17
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
 
 >[!IMPORTANT]

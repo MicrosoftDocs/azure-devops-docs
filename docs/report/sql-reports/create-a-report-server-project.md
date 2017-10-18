@@ -6,8 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/15/2017
+ms.date: 10/17/17
 ---
+
+
 
 # Create a Report Server project 
 
