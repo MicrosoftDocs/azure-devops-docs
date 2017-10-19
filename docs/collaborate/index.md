@@ -38,7 +38,6 @@ Repository README files and team project Wikis are great ways to share informati
 ## How-to Guides
 - [Create a wiki for your team project](wiki-create-repo.md) 
 - [Add & edit wiki pages](add-edit-wiki.md)
-- [Update wiki pages offline](wiki-update-offline.md)
 - [View wiki history and revert](wiki-view-history.md)
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 - 

@@ -88,7 +88,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 
 <a id="connect-dialog" /> 
-<a id="vs-2015-connect-dialog" / 
+<a id="vs-2015-connect-dialog" /> 
 
 ### Visual Studio 2015 
 From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.

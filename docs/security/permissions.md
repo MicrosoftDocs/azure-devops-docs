@@ -1,5 +1,5 @@
 ---
-title: Permissions and groups reference for VSTS & TFS
+title: Permissions and groups reference
 description: Manage groups, security, and permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
