@@ -6,14 +6,14 @@ ms.technology: vs-devops-admin
 ms.assetid: a92e7f03-61d0-458d-9155-eefa40e228cc
 toc: show
 ms.manager: douge
-ms.author: douge
-ms.date: 08/04/2016
+ms.author: elbatk
+ms.date: 10/19/2017
 ms.topic: get-started-article
 ---
 
 # Configure a backup schedule and plan for Team Foundation Server
 
-**TFS 2017** | **TFS 2015**
+**TFS 2018 ** | **TFS 2017** | **TFS 2015**
 
 If you administer systems, you're probably already familiar with all the
 reasons why a good backup set is crucial. No one wants to be the

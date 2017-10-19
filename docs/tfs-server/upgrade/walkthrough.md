@@ -1,6 +1,6 @@
 ---
-title: Upgrade Walkthrough On-premises
-description: Walkthrough of a standard upgrade scenario
+title: Walkthrough an upgrade scenario for Team Foundation Server (TFS)
+description: Walkthrough of a standard upgrade of a two server deployment from TFS 2012 to TFS 2015.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: aa4c0088-6a0e-4bdd-801c-a7a4eaa15bf2
@@ -9,34 +9,24 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Upgrade walkthrough
+# Upgrade scenario walkthrough for Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-Let's walk through a typical TFS upgrade scenario to get a sense of what the high level steps discussed in
-the [overview](../../accounts/account-management.md) might look like in a real world example.
+This quickstart covers a typical Team Foundation Server (TFS) upgrade scenario to get a sense of what the high level steps discussed in the [overview](../../accounts/account-management.md) might look like in a real world example.
 
 ## Prepare your environment
 
-Our starting point for this upgrade is a TFS 2012 Update 4 environment with two machines - one serving as the
-application tier and a second serving as the data tier for both the config/collection databases, and the 
-reporting and analysis services databases. Both machines are currently running Windows Server 2008 SP2, and
-the data tier is currently running SQL Server 2008 R2. 
+Our starting point for this upgrade is a TFS 2012 Update 4 environment with two machines - one serving as the application tier and a second serving as the data tier for both the config/collection databases, and the reporting and analysis services databases. Both machines are currently running Windows Server 2008 SP2, and the data tier is currently running SQL Server 2008 R2. 
 
-Our first step is to check the [system requirements](../requirements.md) for TFS 2015. Unfortunately,
-neither the OS nor the SQL version we are using are still supported, so we will need to make some changes. We
-decide to take the opportunity to acquire two more powerful machines, and we install Windows Server 2012 R2 on
-both of them. We install SQL Server 2014 on the data tier, making sure to include Reporting Services and
-Analysis Services, since we are using those features in our deployment. Our environment is prepared.
+Our first step is to check the [system requirements](../requirements.md) for TFS 2015. Unfortunately, neither the OS nor the SQL version we are using are still supported, so we will need to make some changes. We decide to take the opportunity to acquire two more powerful machines, and we install Windows Server 2012 R2 on
+both of them. We install SQL Server 2014 on the data tier, making sure to include Reporting Services and Analysis Services, since we are using those features in our deployment. Our environment is prepared.
 
 ## Expect the best, prepare for the worst
 
-We have been using [scheduled backups](../admin/backup/config-backup-sched-plan.md) to ensure that we always
-have backups in place in case something goes wrong. 
+We have been using [scheduled backups](../admin/backup/config-backup-sched-plan.md) to ensure that we always have backups in place in case something goes wrong. 
 
-Because we are moving to new hardware anyways, we will not bother setting up a separate pre-production environment
-to do our [dry run](pre-production.md). Instead, we will use that new hardware to do a dry run first, and then
-we will wipe everything clean and use it again for the production upgrade.
+Because we are moving to new hardware anyways, we will not bother setting up a separate pre-production environmentto do our [dry run](pre-production.md). Instead, we will use that new hardware to do a dry run first, and thenwe will wipe everything clean and use it again for the production upgrade.
 
 For our dry run, the steps for our upgrade will be:
 
