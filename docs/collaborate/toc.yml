@@ -20,10 +20,10 @@
     href: wiki-create-repo.md
   - name: "Add & edit wiki pages"
     href: add-edit-wiki.md
-  - name: Update wiki pages offline 
-    href: wiki-update-offline.md
   - name: View wiki history and revert
     href: wiki-view-history.md
+  - name: Update wiki pages offline 
+    href: wiki-update-offline.md
   - name: "Manage README & Wiki permissions (security)"
     href: manage-readme-wiki-permissions.md
   - name: Migrate pages from Wiki extension to a team project wiki
