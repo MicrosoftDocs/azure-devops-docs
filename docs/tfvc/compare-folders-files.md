@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Compare folders and files
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 This section explains how to compare folders and files. You can compare server folders and local folders to each other, and view the differences between the contents of each folder. You can compare two server files, two local files, or a server file against a local file and view the differences between the files.
 

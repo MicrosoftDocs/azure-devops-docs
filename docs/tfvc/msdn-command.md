@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Msdn Command
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays a help topic from the MSDN library that contains detailed information about a Team Foundation version control command.
 

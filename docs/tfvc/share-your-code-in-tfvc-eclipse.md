@@ -12,7 +12,7 @@ ms.date: 08/10/2016
 
 # Share your code in TFVC using Eclipse
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Share your code with your team with VSTS and Eclipse.
 

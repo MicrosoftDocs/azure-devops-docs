@@ -17,7 +17,7 @@ ms.date: 08/29/2017
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
    
-#### VSTS | TFS 2015 & TFS 2017  
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015  
 
 Share your Visual Studio solution in a new VSTS or Team Foundation Server Git repo.
 

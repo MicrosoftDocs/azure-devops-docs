@@ -11,6 +11,7 @@ author: willys
 ---
 
 # Branching strategies with TFVC
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)), and are wondering how to best use branches? We will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
 

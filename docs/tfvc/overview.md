@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 # Use Team Foundation Version Control
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 

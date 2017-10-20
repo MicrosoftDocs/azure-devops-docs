@@ -11,7 +11,7 @@ ms.date: 05/12/2017
 
 # Create and work with workspaces
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Your workspace is your local copy of the team’s codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don’t have to edit it.
 

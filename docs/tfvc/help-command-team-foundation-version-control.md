@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Help Command (Team Foundation Version Control)
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays help on the command line that contains information about syntax for a Team Foundation version control command.
 

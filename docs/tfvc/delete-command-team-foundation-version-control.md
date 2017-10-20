@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Delete Command (Team Foundation Version Control)
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Removes files and folders from the Team Foundation version control server and deletes them from the disk.
 

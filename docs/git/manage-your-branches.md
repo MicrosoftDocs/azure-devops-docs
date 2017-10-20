@@ -11,7 +11,7 @@ ms.date: 08/23/2016
 
 # Manage branches
 
-###### VSTS | TFS 2017
+#### VSTS | TFS 2018 | TFS 2017
 
 Manage the work in your team's VSTS Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.

@@ -11,7 +11,7 @@ ms.date: 10/09/2017
 
 # Get feedback with pull requests
 
-#### VSTS | TFS 2018, 2017, 2015 | Visual Studio 2017, 2015
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Pull requests combine the review and merge of your code into a single collaborative process.
 Once you're done fixing a bug or new feature in a branch, create a new pull request.

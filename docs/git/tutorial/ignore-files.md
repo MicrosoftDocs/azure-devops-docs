@@ -12,7 +12,7 @@ ms.date: 08/30/2017
 
 # Ignore file changes with Git
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Not every file created or updated in your code should be committed to Git. Temporary files from your development environment, test outputs and logs are all examples
 of files that you create but are not part of your codebase. Customize which files Git tracks through the gitignore feature.

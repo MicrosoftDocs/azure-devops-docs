@@ -11,7 +11,7 @@ ms.date: 08/23/2016
 
 # Set branch permissions
 
-###### VSTS 
+#### VSTS | TFS 2018 | TFS 2017 Update 1
 
 ## Overview
 

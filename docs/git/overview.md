@@ -10,7 +10,7 @@ ms.date: 04/17/2017
 ---
 
 #  Git and VSTS
-#### VSTS | TFS 2015 & 2017  | Visual Studio 2015 & 2017 | [Previous version](overview-2013.md)
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Host and manage your code in Git version control with VSTS and Team Foundation Server. 
 

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Merge Command
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **merge** command applies changes from one branch into another.
 

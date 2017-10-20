@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Lock and unlock folders or files in Team Foundation Version Control
 
-**VSTS | TFS 2015 | Visual Studio 2013 | Visual Studio 2015**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!NOTE]
 > This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/en-us/sysinternals/bb896655.aspx) and

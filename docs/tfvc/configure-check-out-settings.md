@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Configure Check-Out Settings
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Administrators of Team Foundation version control can configure source control check-out settings. Check-out settings in Team Foundation version control enable files to be edited by more than one person at the same time. The following procedure shows you how to configure check-out settings.
 

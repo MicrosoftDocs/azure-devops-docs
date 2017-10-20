@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # View and manage past versions
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 One advantage of building your app under version control is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation Version Control (TFVC) maintains historical data related to every version of every file that has ever been checked in.
 

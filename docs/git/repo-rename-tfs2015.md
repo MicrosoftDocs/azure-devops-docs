@@ -10,9 +10,12 @@ ms.date: 08/04/2016
 ---
 
 #  Rename a Git repository in TFS 2015
-#### TFS 2015 | Visual Studio 2015 & 2017 | [TFS 2017 & VSTS](repo-rename.md)
+#### TFS 2015 | VS 2017 | VS 2015
 
 You can rename a Git repository in a team project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.
+
+>[!NOTE]
+>The steps in this article refer to TFS 2015. For VSTS and TFS 2017 and higher, see [Rename a Git repository](repo-rename.md).
 
 ## Rename the repo on the server
 

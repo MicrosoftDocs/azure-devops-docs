@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 #  Undo changes
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 

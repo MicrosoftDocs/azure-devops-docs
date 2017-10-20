@@ -11,7 +11,7 @@ ms.date: 08/23/2017
 
 #  Improve code quality with branch policies
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Branch policies help teams protect their important [branches](tutorial/branches.md) of development. 
 Policies enforce your team's code quality and change management standards.

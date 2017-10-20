@@ -11,6 +11,8 @@ ms.date: 08/04/2016
 
 # Manage and store large files in Git
 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 
 Git's fast performance comes from its ability to address and switch to all versions of a file from its local storage.   

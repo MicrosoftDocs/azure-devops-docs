@@ -11,7 +11,7 @@ ms.date: 08/30/2017
 ---
 
 # Share your code in Git using Eclipse
-#### VSTS | TFS 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 

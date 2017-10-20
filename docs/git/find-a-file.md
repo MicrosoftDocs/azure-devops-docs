@@ -10,7 +10,7 @@ ms.date: 01/09/2017
 ---
 
 # Find a file or folder in your Git repository
-#### VSTS | TFS 2017
+#### VSTS | TFS 2018 | TFS 2017
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Code** hub. 
 

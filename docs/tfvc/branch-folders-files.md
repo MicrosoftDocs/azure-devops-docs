@@ -11,7 +11,7 @@ ms.date: 05/12/2017
 
 # Branch folders and files
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use branches to accomplish the following goals:  
 -   Manage concurrent work by multiple teams on the same codebase  
