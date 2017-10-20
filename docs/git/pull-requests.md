@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/12/2017
+ms.date: 10/20/2017
 ---
 
 #  Review code with pull requests
 
-#### VSTS | TFS 2018, 2017, 2015 | Visual Studio 2017, 2015
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch.
@@ -35,9 +35,9 @@ Create a new pull request from:
 
 When you publish or update a feature branch in your VSTS Git repo, you will get a prompt asking if would like to create a pull request in the **Code** view on the web.
 
-![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create_pr_from_push.png)
+![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create-pr-from-push.png)
 
-Select the **New pull request** link to go to a page where you will [enter your pull request details](pull-requests.md#finish) and create the pull request.
+Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
 ### From a linked work item
 
@@ -46,7 +46,7 @@ Create a pull request directly from a work item linked to the branch.
 0. From the **Backlogs** or **Queries** tab in the **Work** view , open the work item with the linked branch. 
 0. In the **Development** area of the work item, you will see a link to create a pull request under the branch name.  
 
-![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](_img/pull-requests/create_pr_from_work_item.png)
+![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](_img/pull-requests/create-pr-from-work-item.png)
 
 Select the link to go to a page where you will [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -57,21 +57,23 @@ Create pull requests from any branch from the **Pull Request** tab in the **Code
 Select **New pull request** in the upper right to go to a page where you will [enter your pull request details](pull-requests.md#finish) and create the pull request.
 Pick the branch you wish to have reviewed and the branch you want to merge the changes into, such as the master branch.  
 
-![Choosing source and target branches for a pull request in VSTS](_img/pull-requests/pr_branch_targets.png)
+![Choosing source and target branches for a pull request in VSTS](_img/pull-requests/pr-branch-targets.png)
 
 ### From Visual Studio
 
-Create pull requests directly from Visual Studio. 
+Initiate pull requests directly from Visual Studio. 
 
 0. [Connect to your Team Project from Visual Studio](../user-guide/connect-team-projects.md)
 0. Open Team Explorer (select **View**, then **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey)
-0. Select **Pull Requests** from the navigation drop-down menu or select the **Pull Requests** button.
+0. Open **Pull Requests** in Team Explorer by selecting the **Home** icon and choosing **Pull Requests**.
 
-   ![Create a Pull Request from Visual Studio](_img/pull-requests/pr_create_from_vs.png)
+  ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-0. Select the **New Pull Request** link to open up a browser window to create a new pull request on the web.
+0. From the **Pull Requests** view you can you pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal.
 
-Create pull requests from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your Team Project.
+  ![Pull Requests](_img/pull-requests/new-pull-request.png)
+
+  You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your VSTS Project.
 
 <a name="finish"></a>
 
