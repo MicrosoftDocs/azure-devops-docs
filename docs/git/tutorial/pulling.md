@@ -12,7 +12,7 @@ ms.date: 09/14/2017
 
 #   Update code with fetch and pull
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Update the code in your local repo with the changes from other members of your team using the following commands:
 

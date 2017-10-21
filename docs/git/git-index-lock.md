@@ -10,7 +10,7 @@ ms.date: 06/22/2017
 ---
 
 #  Git index.lock file
-#### VSTS | TFS 2015 & 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ## What is a Git index.lock file?
 

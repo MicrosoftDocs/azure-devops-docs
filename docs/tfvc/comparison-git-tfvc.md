@@ -12,7 +12,7 @@ ms.date: 05/12/2017
 
 # Choosing the right version control for your project
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. VSTS supports two types of version control: [Git](../git/gitquickstart.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).

@@ -12,7 +12,7 @@ ms.date: 09/08/2017
 
 # Create a new Git repo in your project
 
-#### VSTS | TFS 2015 & TFS 2017 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 VSTS and TFS projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal for either VSTS (VSTS - hosted on Azure) or Team Foundation Server (TFS - on-premises).
 

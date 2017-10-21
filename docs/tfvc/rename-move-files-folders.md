@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Rename or move files and folders in TFVC
 
-**VSTS | TFS 2015 & TFS 2017 | Visual Studio 2013 | Visual Studio 2015**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!IMPORTANT]
 > If you're not using TFVC for version control, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to

@@ -36,6 +36,8 @@
       href: build-deployment-best-practices.md
     - name: Phase the roll-out of your application through rings
       href: phase-rollout-with-rings.md
+    - name: CI/CD security validation 
+      href: security-validation-cicd-pipeline.md  
 - name: Security
   items:
   - name: VSTS Data Protection

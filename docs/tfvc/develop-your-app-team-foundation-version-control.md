@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Develop your app in Team Foundation version control
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When your codebase is under version control, you can develop your app—create and open files in Solution Explorer and write your code—while version control does other work for you. When you check files in and out, it keeps track of your changes and creates a history of your project.
 

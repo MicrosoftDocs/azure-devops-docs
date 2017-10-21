@@ -6,10 +6,13 @@ ms.prod: vs-devops-alm
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/16/2017
+ms.date: 10/20/2017
 --- 
 
 # Kanban best practices
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
 
 Having worked through the four configuration steps provided in [Kanban basics](../kanban/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
 

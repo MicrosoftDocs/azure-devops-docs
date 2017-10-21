@@ -11,7 +11,7 @@ ms.date: 05/12/2017
 
 # Compare files
 
-**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [comparing files with Git and Visual Studio](../git/tutorial/history.md).  
 

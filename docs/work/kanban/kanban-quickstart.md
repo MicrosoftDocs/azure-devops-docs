@@ -12,7 +12,7 @@ ms.date: 08/15/2017
 
 # Get started using your Kanban board
 
-<b>VSTS | TFS 2017</b> 
+<b>VSTS | TFS 2018 | TFS 2017</b> 
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work.  
 

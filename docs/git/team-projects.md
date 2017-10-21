@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 ---
 
 #  Use Git and TFVC repos in the same team project
-#### VSTS | TFS 2015
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 1
 
 In Team Foundation Server 2015 Update 1, a project administrator can add a Git repo to a team project created with Team Foundation Version Control (TFVC). You can also add a TFVC repo to a team project created with Git. This allows you to adopt a new version control system while preserving all the data in your team project. 
 

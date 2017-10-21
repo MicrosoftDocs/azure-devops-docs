@@ -11,7 +11,7 @@ ms.date: 09/05/2017
 
 # Create a pull request status server with Node.js
 
-#### VSTS | TFS 2018 RC1 
+#### VSTS | TFS 2018
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository.
 

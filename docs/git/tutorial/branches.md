@@ -12,7 +12,7 @@ ms.date: 09/14/2017
 
 #  Create work in branches  
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git branches aren't much more than a small reference that keeps an exact history of commits, so they are very cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.

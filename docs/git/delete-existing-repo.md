@@ -10,7 +10,7 @@ ms.date: 12/15/2016
 ---
 
 # Delete a Git repo from your team project
-#### VSTS | TFS 2015 & TFS 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Remove unused Git repos from your team project when they are no longer needed. 
 

@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Authentication overview
 
-#### VSTS | TFS 2015 Update 3 & TFS 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Choose a method to securely login and access the code in your VSTS Git repo.
 Use these credentials with Git on the command line or from any Git client that supports HTTPS or SSH authentication.

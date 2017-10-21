@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 #  Create a pull request
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.

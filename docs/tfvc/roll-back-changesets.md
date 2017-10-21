@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Roll back changesets
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 A [changeset](find-view-changesets.md) is a permanent part of the history of your version-controlled items and cannot be undone or removed. However, you can roll back the effects of one or more changesets.
 

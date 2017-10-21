@@ -12,7 +12,7 @@ ms.date: 09/14/2017
 
 #  Share code with push
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Share changes made in [commits](commits.md) and [branches](branches.md) using the `push` command. 
 Push your branches to the remote repository, where Git takes the commits and adds them to an existing branch on the remote or creates a new branch with the same commits as your local branch.

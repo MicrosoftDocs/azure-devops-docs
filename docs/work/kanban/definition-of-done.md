@@ -6,13 +6,13 @@ ms.prod: vs-devops-alm
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 10/20/2017
 ---
 
 
 # Definition of Done
 
-<b>VSTS | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what “done” means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
 

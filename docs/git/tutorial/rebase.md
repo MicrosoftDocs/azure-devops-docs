@@ -12,7 +12,7 @@ ms.date: 09/08/2017
 
 #  Apply changes with rebase
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
 Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the master branch with [pull requests](pullrequest.md).  

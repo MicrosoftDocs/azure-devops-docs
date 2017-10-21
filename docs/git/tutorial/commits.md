@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 #  Save work with commits
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 (Update 2) & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 

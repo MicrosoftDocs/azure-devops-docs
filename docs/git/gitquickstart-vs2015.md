@@ -16,7 +16,7 @@ ms.date: 04/03/2017
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-###### VSTS | TFS 2015 & TFS 2017 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 This guide covers the basics so you can get up and running using Git with code already in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 Explore our [full tutorial](tutorial/gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 

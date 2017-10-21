@@ -17,7 +17,7 @@ ms.date: 08/28/2017
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### VSTS | TFS 2015 
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 

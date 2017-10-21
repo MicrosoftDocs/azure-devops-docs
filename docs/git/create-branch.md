@@ -10,7 +10,8 @@ ms.date: 08/23/2016
 ---
 
 # Create a new Git branch
-#### VSTS | TFS 2017
+
+#### VSTS | TFS 2018 | TFS 2017
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](tutorial/branches.md).   

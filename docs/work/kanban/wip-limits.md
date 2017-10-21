@@ -6,13 +6,13 @@ ms.prod: vs-devops-alm
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date:10/20/2017
 ---
 
 
 # Work in Progress limits
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 An essential Kanban practice─Work in Progress limits, aka “WIP limits”─constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 

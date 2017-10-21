@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 
 # Develop and share your code in TFVC using Visual Studio
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 

@@ -11,7 +11,7 @@ ms.date: 08/29/2016
 
 #  Frequently Asked Git Questions
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ### Is there an easy way to get a remote branch downloaded into my local repository?
 

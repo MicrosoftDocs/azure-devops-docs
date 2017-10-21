@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Changeset Command
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about and lets you change the attributes, such as comments and check-in notes, that are associated with a changeset.
 

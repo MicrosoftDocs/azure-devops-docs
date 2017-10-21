@@ -11,7 +11,7 @@ ms.date: 10/05/2017
 ---
 
 # Import a Git repo
-#### VSTS | TFS 2018, TFS 2017 Update 1
+#### VSTS | TFS 2018 | TFS 2017 Update 1
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Associate a file type with a merge tool
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The diff/merge tool included in Team Foundation opens when the user tries to compare two files (or two versions of a file), or when the user elects to perform a manual merge of a file that has conflicting changes.
 

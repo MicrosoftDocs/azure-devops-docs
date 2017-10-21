@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Status command
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about pending changes to files and folders in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
 

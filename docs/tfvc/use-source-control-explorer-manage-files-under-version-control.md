@@ -11,7 +11,7 @@ ms.date: 12/05/2016
 
 # Use Source Control Explorer to manage files in TFVC 
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation version control (TFVC). 
 

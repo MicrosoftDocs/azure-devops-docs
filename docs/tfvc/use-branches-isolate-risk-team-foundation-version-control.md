@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Use branches to isolate risk in Team Foundation Version Control
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
 

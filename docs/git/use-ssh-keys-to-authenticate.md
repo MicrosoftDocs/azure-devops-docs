@@ -10,7 +10,7 @@ ms.date: 08/04/2016
 ---
 
 # Use SSH key authentication
-#### VSTS | TFS 2015 Update 3 | TFS 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.

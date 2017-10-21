@@ -10,6 +10,7 @@ ms.date: 10/11/2017
 ---
 
 # Git preferences and settings
+#### VSTS | TFS 2018
 
 Git has a set of configuration files that define any non-default behavior that you specify.
 You can specify your name and email address, your preferred diff and merge tools, command aliases, formatting, and much more. 

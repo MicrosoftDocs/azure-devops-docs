@@ -26,7 +26,7 @@ To get added as a team administrator, ask another team admin, the account owner,
 
 1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. 
 
-	If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->. If you need to add a team, see [Add teams and team members](multiple-teams.md).
+	If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->. If you need to add a team, see [Add teams and team members](multiple-teams.md).
 
 2. From a web browser, open the team admin context. Click the ![gear icon](../_img/icons/gear_icon.png) gear icon from your team home page.  
  

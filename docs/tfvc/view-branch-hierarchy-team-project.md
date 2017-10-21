@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # View the branch hierarchy of a team project
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 As a project grows, typically the branch structure also grows and becomes more complex. Your team members, especially those who are new, will require answers to simple questions such as the following:
 

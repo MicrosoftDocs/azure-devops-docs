@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../build-release/concepts/definitions/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 

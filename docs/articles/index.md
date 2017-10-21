@@ -36,6 +36,7 @@ Here you'll find more resources to support your development efforts with Visual 
 
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Phase the roll-out of your application through rings](phase-rollout-with-rings.md)
+*   [Adding Continuous Security Validation to your CI/CD Pipeline](security-validation-cicd-pipeline.md)
 
 ##	Security
 

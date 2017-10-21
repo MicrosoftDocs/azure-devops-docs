@@ -7,12 +7,12 @@ ms.prod: vs-devops-alm
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 10/20/2017
 --- 
 
 # Kanban basics
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -98,21 +98,21 @@ Once you've configured your Kanban board to match how your team works, you're re
 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by moving it to a downstream stage.
 
-![Kanban board, move an item](_img/ALM_CC_MoveCard.png)
+<img src="_img/ALM_CC_MoveCard.png" alt="Kanban board, move a card to update status" style="border: 2px solid #C3C3C3;" />   
 
 > [!NOTE]  
-> ** Feature availability:** You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
+> **Feature availability:** You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
-![Kanban, assign items](_img/ALM_CC_UpdateFieldOnCard.png)
+<img src="_img/ALM_CC_UpdateFieldOnCard.png" alt="Kanban, assign items" style="border: 2px solid #C3C3C3;" />   
 
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 
 ## 4. Monitor metrics and fine tune
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
-<img src="_img/ALM_KB_Board5.png" alt="Open the cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
+<img src="_img/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started.  
 

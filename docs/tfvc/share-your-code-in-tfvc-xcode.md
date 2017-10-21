@@ -12,7 +12,7 @@ ms.date: 08/10/2016
 
 # Share your code in TFVC using Xcode
 
-**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
 

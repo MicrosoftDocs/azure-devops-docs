@@ -12,7 +12,7 @@ ms.date: 09/08/2017
 
 # Copy changes with cherry-pick
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 (Update 2) & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 

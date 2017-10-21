@@ -12,7 +12,7 @@ ms.date: 09/08/2017
 
 # VSTS Plugin for IntelliJ IDEA and Android Studio
 
-#### VSTS | TFS 2015 & TFS 2017  
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The VSTS Plugin for IntelliJ allows you to connect to your Git repositories on VSTS and Team Foundation Server (TFS) in a seamless and intuitive way.

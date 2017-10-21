@@ -11,7 +11,7 @@ ms.date: 08/30/2017
 ---
 
 #  Share your code in Git using Xcode
-#### VSTS | TFS 2015 & 2017
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 This guide shows you how to share your Xcode projects in a VSTS Git repo. 
 
