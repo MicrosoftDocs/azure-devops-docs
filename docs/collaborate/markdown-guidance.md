@@ -1,5 +1,5 @@
 ---
-title: Syntax usage for Markdown files and widgets
+title: Syntax usage for Markdown files, widgets, wikis, and pull request 
 titleSuffix: VSTS & TFS 
 description: Share information using markdown  within pull requests, project pages, readme files, dashboards, and markdown widgets
 ms.prod: vs-devops-alm

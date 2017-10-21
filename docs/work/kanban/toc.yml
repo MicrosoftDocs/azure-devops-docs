@@ -8,7 +8,7 @@
     href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Quickstarts
   items:
-  - name: Kanban
+  - name: Kanban quickstart
     href: kanban-quickstart.md
 - name: Tutorials
   items:

@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 10/20/2017
 ---
 
 # Split columns
 
-<b>VSTS | TFS 2017 | TFS 2015 </b>
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 

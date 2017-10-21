@@ -14,7 +14,7 @@ ms.topic: get-started-article
 # Kanban board features and epics  
 
 
-<b>VSTS | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  

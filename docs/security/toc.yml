@@ -14,6 +14,8 @@
     href: add-users-team-project.md
   - name: Set Git or TFVC repository permissions
     href: set-git-tfvc-repository-permissions.md
+  - name: Add a team administrator
+    href: ../work/scale/add-team-administrator.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Add administrators or set permissions at the project or collection level
     href: set-project-collection-level-permissions.md 
 - name: Concepts

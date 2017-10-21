@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017
+ms.date: 10/20/2017
 ---
 
 # Expedite work
 
-<b>VSTS | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 

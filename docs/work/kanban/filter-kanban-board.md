@@ -13,7 +13,7 @@ ms.date: 08/28/2017
 
 # Filter your Kanban board
 
-<b>VSTS | TFS 2017 | TFS 2015</b>  
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
 <a id="filter"></a>

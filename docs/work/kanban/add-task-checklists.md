@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 #Add task checklists
 
-<b>VSTS | TFS 2017 | TFS 2015.1</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1</b> 
 
 
 > [!NOTE]  
