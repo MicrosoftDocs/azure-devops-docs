@@ -101,8 +101,7 @@ Microsoft Azure makes it easy to set up VMs to use as servers
 in your environment. Azure adds your VMs to
 **[cloud services](http://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**. 
 You'll need a Microsoft Azure account to create your VMs. 
-If you don't have one yet, sign up 
-**[here](http://azure.microsoft.com/pricing/free-trial/)**.
+If you don't have one yet, sign up for free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
 In Release Management, you'll create an Azure environment 
 for each release stage. 

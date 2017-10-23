@@ -13,9 +13,7 @@ If you have an existing Azure account, you can certainly use a new or existing A
 
 <p><a data-toggle="collapse" href="#create-azure-account">How do I create a new Azure account with free credits? &#x25BC;</a></p>
 <div class="collapse" id="create-azure-account">
-If you don't yet have an Azure account, you can get started with free credits at [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/).
-
-Alternately, consider signing up for [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/) which gives you $25/month in Azure credit each month for a full year.
+If you don't yet have an Azure account, you can get started for free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 <p></p>
 </div>
 

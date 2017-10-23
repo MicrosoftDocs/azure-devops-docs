@@ -19,7 +19,7 @@ In this quickstart you learn how to define CI process for your Docker-enabled AS
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* An Azure subscription. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
 [!INCLUDE [create-azure-container-registry](../_shared/create-azure-container-registry.md)]
 
