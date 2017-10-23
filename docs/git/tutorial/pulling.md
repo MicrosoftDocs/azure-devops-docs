@@ -1,6 +1,6 @@
 ---
 title: Pull changes to your local Git repo | VSTS & TFS
-description: Using Git Pull, fetch, and  to get code from others.
+description: Using Git Pull, fetch, and merge to get code from others
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 

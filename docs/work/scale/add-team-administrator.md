@@ -7,7 +7,7 @@ ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date:10/17/2017
+ms.date: 10/17/2017
 ---
 
 # Add a team administrator 

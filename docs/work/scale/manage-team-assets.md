@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date:10/17/2017
+ms.date: 10/17/2017
 ---
 
 # Configure team settings 

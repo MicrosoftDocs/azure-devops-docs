@@ -23,7 +23,7 @@ Once users have been added to a team project, you can browse for that name by di
 <a name="add-users-team-project"></a>
 ## Add users to a team project
 
-If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json).  
 
 0. Open the web portal and choose the team project where you want to add users or groups. Click the ![gear icon](../_img/icons/gear-icon.png) gear icon to open the administrative context. 
  

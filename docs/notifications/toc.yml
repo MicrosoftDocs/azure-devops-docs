@@ -4,6 +4,8 @@
   items:
   - name: About notifications
     href: about-notifications.md
+  - name: Default permissions set for collaboration tools 
+    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json   
 - name: Quickstarts
   items:
   - name: View your subscriptions, opt-out as needed

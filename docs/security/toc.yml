@@ -28,6 +28,10 @@
     href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: How-to Guides
   items:
+  - name: Add users to your account (VSTS)
+    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: Change access levels (TFS)
+    href: change-access-levels.md  
   - name: Set Git branch permissions
     href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Set build and release permissions 
@@ -36,16 +40,18 @@
     href: set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: "Set permissions for READMEs & Wikis"
     href: ../collaborate/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Add users to your account (VSTS)
-    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: "Change access levels (TFS)" 
-    href: change-access-levels.md  
+  - name: Set feedback permissions
+    href: ../feedback/give-permissions-feedback.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Restrict access to resources
     href: ../accounts/restrict-access-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: Set permissions to view or create SQL Server reports
+    href: ../report/admin/grant-permissions-to-reports.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+  - name: Set permissions to access a SharePoint project portal
+    href: set-sharepoint-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Sign-in to the web or a client
     href: ../user-guide/connect-team-projects.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: Authenticate access with personal access tokens
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
 - name: Troubleshooting
   items:
   - name: Network connections

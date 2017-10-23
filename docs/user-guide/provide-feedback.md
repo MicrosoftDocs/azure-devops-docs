@@ -58,6 +58,7 @@ The best feedback we get is clear and precise. For example:
 
 The more details, the better!
 
+<a id="platform-version" />
 ## What platform/version am I using? 
 
 You can tell what platform you use from the URL you use to connect to VSTS or TFS. 

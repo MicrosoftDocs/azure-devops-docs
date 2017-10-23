@@ -333,8 +333,47 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 <td>![check mark](_img/checkmark.png)</td>
 </tr>
 
+<tr>
+<td align="left">READMEs</td>
+<td>Can view team project READMEs, but not READMEs defined for a repository.</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">READMEs & Wikis</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Request feedback</td>
+<td> </td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Provide feedback</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
 </tbody>
 </table>
+
+>[!NOTE]  
+>Team (chat) rooms have been deprecated for VSTS and TFS 2018 and later versions.  
 
 
 ## Build and release
