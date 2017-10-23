@@ -67,7 +67,9 @@
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
-    href: troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: Get support
+    href: provide-feedback.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Features index

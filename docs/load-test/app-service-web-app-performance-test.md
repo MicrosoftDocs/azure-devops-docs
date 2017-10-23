@@ -21,9 +21,7 @@ confident that your app can handle the traffic during peak use or at your next m
 <a name="preparetests"></a>
 ## Prepare your environment
 
-* You'll need an [Azure subscription](https://account.windowsazure.com/subscriptions), 
-  if you don't have one already. Learn how you can 
-  [open an Azure account for free](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
+* You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
 
 * You'll need a [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
   account to keep your performance test history. A suitable account will be created 
