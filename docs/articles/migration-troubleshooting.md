@@ -181,54 +181,79 @@ Hit a failure when running your import? Failures in the import space fall into o
 ### Verification Failures
 Verification failures happen when the import fails to start. Issues falling into this category mean that something with your import request isn't valid. Look up you error message below and follow the recommended guidance on how to resolve the error. After that your team can try to queue the import again. 
 
+**VS403252**
+
     VS403252: The specified import code {0} is not valid, expired, or is already in use.
 
 This error means that something is wrong with your import code. Either it has already been successfully used for another import, it expired, or it isn't valid. Double check the code that you've placed in the import specification file against the codes that you were given as part of the preview.  
+
+
+**VS403253**
 
     VS403253: Queuing an import requires an import code.
 
 An import code was not provided in the import specification file. Open your import specification file and be sure that you've placed one of your team's import codes into the "ImportCode" parameter. 
 
+**VS403254**
+
     VS403254: Region {0} may not be used for the Import, it is not a supported region.
 
 The region that you entered for your VSTS import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
 
+**VS403249**
+
     VS403249: The account {0} already exists. Please select a different name and try the import again.
 
 All VSTS imports go into a new account that is created at import time. This error indicates that the account name your team has selected is already being used by an existing account. Select a different name and update the import specification file before retrying the import. 
+
+**VS403250 & VS403286**
 
     VS403250: The dacpac is not a detached TFS Collection database.
     VS403286: The dacpac is from a TFS Configuration database. You must use a detached TFS Collection database.
 
 The DACPAC is not built off a detached collection. The collection database will need to be [detached](migration-import.md#detaching-your-collection) and the DACPAC generated again.
 
+**VS403243**
+
     VS403243: Unable to connect to the database using the provided SQL Connection String {0}.
 
 Unable to make a connection to the database using the provided SQL Connection String. Review the parameters that were provided to ensure they’re correct and try again.
+
+**VS403260 & VS403351**
 
     VS403260: The database is not detached.
     VS403351: The DACPAC or source database is missing an expected table. It’s possible that the database was not correctly detached from TFS.
 
 The database is not detached. It will need to be [detached](migration-import.md#detaching-your-collection) and the import queued again. 
 
+**VS403261**
+
     VS403261: The SQL connection string must use encryption.
     
 The connection string must be encrypted otherwise the password will be sent in the clear. Please add "Encrypt=true" to your SQL connection string.
 
+**VS403262**
+
     VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.
 
 Please add "Integrated Security=False" to your SQL connection string.
+
+**VS403263**
 
     VS403263: The User ID {0} must be member of the database role {1}.
 
 This error means that your SQL login user does not have the required database role. Please make sure ['TFSEXECROLE'](migration-import.md#importing-large-collections) is assigned to the login. 
 
 There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership is not applied until all open connections using that identity are closed. If you're hitting the above error and have confirmed your identity has this role, it's recommended that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at https://aka.ms/VSTSImportLargeCollection.
+
+**VS403264**
     
     VS403264: The database is not a TFS Collection database, it cannot be used for import.
     
 The connection string does not point to a TFS Collection database. 
-    
+
+**VS40325**
+
     VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later
 
 The TFS Update has queued the file migration job. Imports cannot be performed until this job has completed. The completion time for this job is dependent on the size of the collection. Job progress can be tracked by running the below query on the collection database:
@@ -240,11 +265,15 @@ WHERE   PartitionId > 0
         AND MigrateFileId IS NOT NULL
 ```
 
-Once the number of files remaining to migrate is zero you can run TfsMigrator.    
+Once the number of files remaining to migrate is zero you can run TfsMigrator. 
+
+**VS403282**   
 
     VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the import specification file.
 
 There is a new line character in the source location value, this could have been left over when copying the SAS key from your windows console, please remove the line break and try again.
+
+**VS403285**
     
     VS403285: Invalid identity mapping file - {0}
 
@@ -252,7 +281,9 @@ Identity mapping file has unexpected (invalid) content. This error may be report
 - File may be completely empty
 - File may have single line with column names but no actual content (identity mapping entries)
 - File may not be parsed as CSV file (usually it happens when text editor used to edit generated mapping file didn't save it as proper CSV file)
-- File may have duplicated records for the same identity    
+- File may have duplicated records for the same identity 
+
+**VS403271**   
 
     VS403271: It appears that your DACPAC was uploaded to East US. It’s required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import. 
 
@@ -261,6 +292,12 @@ Your import files and DACPAC are not located in the **required** Azure region to
 ```cmdline
 AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /SourceKey:"primary access key" /Dest:https://accountCUS.blob.core.windows.net/mycontainer /DestKey:"primary access key" /S
 ```
+
+**VS403316**
+
+    VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Visual Studio Team Services. Please reach out to https://aka.ms/VSTSCustomerSupport for assistance with addressing this issue.
+
+An inconsistency was detected in some TFVC files within your collection. To resolve the error you will need to work VSTS [customer support](https://aka.ms/VSTSCustomerSupport). Please open a support ticket and they will assist you with correcting the error. 
 
 ### Import Failures
 When an imports fails the individual that queued the import will receive an email. In this case, your team will need to roll back by bringing your Team Foundation Server instance back online and attaching your collection. This will allow your team members to continue working. Once your team is back up and working again, follow the instructions in the failure email and file a [support case](https://www.visualstudio.com/team-services/support/#vsts-support) to get assistance. 

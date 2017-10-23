@@ -164,7 +164,7 @@ VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/r
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
-|    Canada                       |    Central Canada              |      CCA                    |
+|    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity Map
 Arguably the identity map is of equal importance to the actual data that you will be migrating to VSTS. Before opening the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into VSTS whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active.

@@ -14,6 +14,11 @@ ms.contentid: f069d4ab-c824-4eb4-94ea-8e24942d5dcd
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
 ## Overriding Licensing Map Values
+
+> [!NOTE]
+> The ability to override licenses on import will be removed on Monday, October 30th. After that time imports will assign the best equivalent license possible. Changing licenses to your final desired state can be handled post import during the grace period.
+
+
 To learn more about [licensing in Visual Studio Team Services (VSTS)](https://www.visualstudio.com/en-us/products/visual-studio-team-services-pricing-vs.aspx), visit our website. Generated identity mapping files provide a best guess as to what level of access each user will require. Upon inspecting the file you will notice one the following entries for each row’s license field:
 
 * **Stakeholder** - This license is free for people that just need to use work items. Team Service accounts can have as many stakeholder users as they wish.
