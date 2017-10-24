@@ -236,7 +236,9 @@ The **Manage test plans** permission enables users to:
 - Change test plan properties such as build and test settings 
 
 
-## Project-level resources
+## Resources defined for the team project
+
+You set project-level information permissions from the admin page for a team project. You set permissions for area and iteration paths under the admin context **Work** hub for their respective objects. These resources are defined for a team project which all valid users of the team project can view. 
 
 <table>
 <tr valign="bottom">
@@ -249,7 +251,7 @@ The **Manage test plans** permission enables users to:
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View project-level information 
+<td align="left">[View project-level information](set-project-collection-level-permissions.md) 
 </td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
@@ -280,7 +282,7 @@ The **Manage test plans** permission enables users to:
 
 
 <tr>
-<td align="left">Edit project-level information    
+<td align="left">[Edit project-level information](set-project-collection-level-permissions.md)     
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -291,14 +293,17 @@ The **Manage test plans** permission enables users to:
 
 </tbody>
 </table>
-**Edit project-level information** includes the ability to perform these tasks for the team project:
-- Add teams and team administrators 
+
+
+The **Edit project-level information** permission includes the ability to perform these tasks for the team project:
 - Create and modify areas and iterations  
 - Edit check-in policies  
 - Edit shared work item queries  
 - Edit team project level permission ACLs  
 - Create and modify global lists  
 - Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on team project level events.
+
+
 
 
 ## Team administrator role and permissions  

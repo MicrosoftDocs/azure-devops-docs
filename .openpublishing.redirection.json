@@ -2,6 +2,11 @@
     "redirections": 
 	[
         {
+            "source_path": "docs/marketplace/rating-and-review.md",
+            "redirect_url": "/vsts/extend/publish/manage-ratings-review.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/get-started/client-libraries/dotnet.md",
             "redirect_url": "/vsts/integrate/concepts/dotnet-client-libraries",
             "redirect_document_id": false

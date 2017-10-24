@@ -1,5 +1,5 @@
 ---
-title: @CurrentIteration query token, Kanban reordering and DoD – Mar 10
+title: CurrentIteration query macro, Kanban reordering and DoD – Mar 10
 description: VSTS release notes for March 10 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles

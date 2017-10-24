@@ -210,6 +210,14 @@ You can use query operators in the following table to specify how each value in 
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
+	<td><p><strong>Not In</strong></p></td>
+	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
+<blockquote><strong>Important:</strong>  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
+</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support for TFS 2018 is planned for a future update.</blockquote>
+</td>
+	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
+<tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a category or a TFS group. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]\ <em>Team Name</em>.</p><p>You can't specify a security or email distribution group as a value.</p><p>For worked examples, see [Create managed queries](example-queries.md).</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>

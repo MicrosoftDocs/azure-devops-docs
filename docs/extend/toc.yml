@@ -20,58 +20,60 @@
     href: develop/contributions-overview.md
 - name: How-to Guides
   items:
-  - name: Add a hub
-    href: develop/add-hub.md
-  - name: Add a menu action
-    href: develop/add-action.md
-  - name: Add a build task
-    href: develop/add-build-task.md
-  - name: Add a dashboard widget
-    href: develop/add-dashboard-widget.md
-  - name: Add a new service endpoint
-    href: develop/service-endpoints.md
-  - name: Add a service hook
-    href: develop/add-service-hook.md
-  - name: Create a PR status server
-    href: ../git/how-to/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
-  - name: Add a chart
-    href: develop/add-chart.md
-  - name: Store data and settings
-    href: develop/data-storage.md
-  - name: Add Work hub extensions
+  - name: Develop
     items:
-    - name: Add backlog tabs
-      href: develop/add-backlog-tabs.md
-    - name: Add backlog panels
-      href: develop/add-backlog-panel.md
-    - name: Extend the work item form
-      href: develop/add-workitem-extension.md
-    - name: Add a custom control to the work item form
-      href: develop/custom-control.md
-    - name: Configure work item form extensions in TFS
-      href: develop/configure-workitemform-extensions.md
-  - name: Call a REST API
-    href: develop/call-rest-api.md
-  - name: Use a platform UI control
-    items:
-    - name: Configure
-      href: develop/ui-controls/configure.md
-    - name: Use grid
-      href: develop/ui-controls/grido.md
-    - name: Use menubar
-      href: develop/ui-controls/menubaro.md
-    - name: Use treeview
-      href: develop/ui-controls/treeviewo.md
-    - name: Use combo
-      href: develop/ui-controls/comboo.md
-    - name: Use modal dialog
-      href: develop/ui-controls/modaldialogo.md
-    - name: Use splitter
-      href: develop/ui-controls/splittero.md
-    - name: Use wait control
-      href: develop/ui-controls/waitcontrolo.md
-    - name: Use pivot filter
-      href: develop/ui-controls/pivotfiltero.md
+    - name: Add a hub
+      href: develop/add-hub.md
+    - name: Add a menu action
+      href: develop/add-action.md
+    - name: Add a build task
+      href: develop/add-build-task.md
+    - name: Add a dashboard widget
+      href: develop/add-dashboard-widget.md
+    - name: Add a new service endpoint
+      href: develop/service-endpoints.md
+    - name: Add a service hook
+      href: develop/add-service-hook.md
+    - name: Create a PR status server
+      href: ../git/how-to/create-pr-status-server.md?toc=/vsts/extend/toc.json&bc=/vsts/extend/breadcrumb/toc.json
+    - name: Add a chart
+      href: develop/add-chart.md
+    - name: Store data and settings
+      href: develop/data-storage.md
+    - name: Add Work hub extensions
+      items:
+      - name: Add backlog tabs
+        href: develop/add-backlog-tabs.md
+      - name: Add backlog panels
+        href: develop/add-backlog-panel.md
+      - name: Extend the work item form
+        href: develop/add-workitem-extension.md
+      - name: Add a custom control to the work item form
+        href: develop/custom-control.md
+      - name: Configure work item form extensions in TFS
+        href: develop/configure-workitemform-extensions.md
+    - name: Call a REST API
+      href: develop/call-rest-api.md
+    - name: Use a platform UI control
+      items:
+      - name: Configure
+        href: develop/ui-controls/configure.md
+      - name: Use grid
+        href: develop/ui-controls/grido.md
+      - name: Use menubar
+        href: develop/ui-controls/menubaro.md
+      - name: Use treeview
+        href: develop/ui-controls/treeviewo.md
+      - name: Use combo
+        href: develop/ui-controls/comboo.md
+      - name: Use modal dialog
+        href: develop/ui-controls/modaldialogo.md
+      - name: Use splitter
+        href: develop/ui-controls/splittero.md
+      - name: Use wait control
+        href: develop/ui-controls/waitcontrolo.md
+      - name: Use pivot filter
+        href: develop/ui-controls/pivotfiltero.md
   - name: Package and publish
     items:
     - name: Package and publish extensions
@@ -82,6 +84,8 @@
       href: publish/publicize.md
     - name: Publish via command line
       href: publish/command-line.md
+    - name: Respond to Marketplace reviews
+      href: publish/manage-ratings-reviews.md
   - name: Test and debug
     items:
     - name: Debug a web extension

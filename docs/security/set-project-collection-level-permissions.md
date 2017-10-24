@@ -31,8 +31,14 @@ For a description of each group and each permission, see [Permissions and groups
 
 
 > [!TIP] 
-> For users who will manage features provided at the project-level admin context &mdash;such as, teams, area and iteration paths, repositories, service hooks, and service end points&mdashadd;them to the Project Administrators group. 
-> For users who will manage features provided at the collection-level admin context &mdash;such as, team projects, processes, retention policies and resource limits, agent pools, and extensions&mdashadd;them to the Project Administrators group.  
+> For users who will manage features provided at the project-level admin 
+> context&mdash;such as, teams, area and iteration paths, repositories, 
+> service hooks, and service end points&mdash;add them to the Project  
+> Administrators group. 
+> For users who will manage features provided at the collection-level admin 
+> context &mdash;such as, team projects, processes, retention policies and 
+> resource limits, agent pools, and extensions&mdash;add them to the Project  
+> Administrators group.  
 
 <a id="project-level" />
 ## Add a user or group to a security group
