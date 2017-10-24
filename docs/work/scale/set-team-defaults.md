@@ -1,5 +1,5 @@
 ---
-title: Set team defaults | VSTS & TFS 
+title: Set team defaults 
 description: Configure the default area and iteration paths or sprints for a team with VSTS or TFS   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

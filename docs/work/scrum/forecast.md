@@ -1,27 +1,25 @@
 ---
-title: Velocity and forecasting | VSTS & TFS
-description: Use the velocity chart and forecast tool to determine how much work your team can deliver across several sprints    
+title: Forecasting  
+description: Use the forecast tool to determine how much work your team can deliver across several sprints    
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/11/2017
 ms.topic: get-started-article
+ms.date: 10/24/2017
 ---
 
-# Forecasting
+# Forecast your product backlog
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/guidance/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
-
 Use this topic to learn: 
 
 > [!div class="checklist"] 
-> * How to forecast upcoming sprints  
-> * Tips for using the forecast tool        
+> * How to forecast upcoming sprints     
 > * Required and recommended team activities to support forecasting       
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
@@ -33,50 +31,67 @@ Use this topic to learn:
 
 You can use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team has activated.   
 
-To forecast your sprint, turn forecasting on and enter your team's predicted velocity. If Forecast doesn't appear, set Parents to Hide. Also, make sure that you're on the product backlog page. You can only forecast the product backlog of Stories, Backlog items, or Requirements. 
+<img src="_img/forecast-tool-settings.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #C3C3C3;" />
+
+To forecast your product backlog, perform the following actions: 
+
+*	Open your product backlog. You can only forecast the product backlog of Stories, Backlog items, or Requirements.
+*	Set **Forecast** to **On** and enter your team's predicted velocity.If the Forecasting bar doesn't appear, set Parents to Hide. 
+*	Set **In progress** items to **Hide** to hide those items that that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
+*	Select enough [future sprints for your team](../scale/set-team-defaults.md#activate) to forecast your entire product backlog.
+*	Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.  
+*	Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 
+*	Question forecast results where the effort of an item is near to, or greater than, team velocity.  
 
 The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.   
 
+
+
+### VSTS and TFS 2017.3 and later versions
+
+In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
+
+The forecast tool shows between two and four items can be worked on during Iterations 2 thorugh 6 based on the amount of Story Points assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
+
+- **Iteration 2**: 13 Story Points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
+- **Iteration 3**: 24 Story Points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint   
+- **Iteration 4**: 21 Story points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint   
+- **Iteration 5**: 16 Story points, items 9 through  12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint   
+- **Iteration 6**: 23 Story points, items 13 through 16 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint   
+
+<img src="_img/forecast-s125.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #C3C3C3;" />
+ 
+### TFS 2017.2 
+
 >[!NOTE]  
->The forecast logic has changed for VSTS. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused Effort points from the previous sprint. 
+>The forecast logic changed for TFS 2017.2. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused velocity points from the previous sprint. 
 >
->Now, all items listed between the lines can be started in the sprint labeled by the first line, but may not be completed within the sprint. The velocity points that can't be completed in one sprint is carried over to the next sprint. For example, for a velocity of 15, if Item 1 has 35 story points, 20 velocity points are carried over to next sprint, then again 5 velocity points are carried over to sprint after that. 
+>Now, all items listed between the lines can be started in the sprint labeled by the first line, but may not be completed within the sprint. The amount of effort (Effort, Story Points, Size) that can't be completed in one sprint are carried over to the next sprint. For example, for a velocity of 15, if Item 1 has 35 Effort points, 20 Effort points are carried over to next sprint, then again 5 Effort points are carried over to the sprint after that.
 
-### VSTS and TFS 2017.2 
+In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be started or completed during the first six sprints based on the amount of Effort assigned to each work item. The forecast logic carries over effort points from one sprint to the next. 
 
-In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be worked on during the first five sprints based on the amount of Effort assigned to each work item. The forecast logic carries over velocity points from one sprint to the next. 
+- **Sprint 1**: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 Effort points are carried over into the next sprint.
+- **Sprint 2**: 13 Effort points, item 3 from the previous sprint can be completed, item 4 can be completed, and item 5 can be started; 2 Effort points are carried over into the next sprint.
+- **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed, and item 9 can be started; 2 Effort points are carried over into the next sprint. 
+- **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed; no Effort points are carried over into the next sprint.
+- **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
 
-- Sprint 1: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 velocity points are carried over to the next sprint
-- Sprint 2: 13 Effort points, item 3 from the previous sprint can be completed and the next 2 items can be started; 2 velocity points are carried over to the next sprint   
-- Sprint 3: 15 Effort points, item 5 from the previous sprint can be completed and 4 new items can be started; 2 velocity points are carried over to the next sprint  
-- Sprint 4: 13 Effort points, item 9 from the previous sprint can be completed, 2 new items can be started and completed 
-- Sprint 5: 19 Effort points, 3 items can be started 
-
-
-<img src="_img/vel-forecast-forecast-ts.png" alt="Web portal, Backlog, Forecast On" style="border: 2px solid #C3C3C3;" />
+<img src="_img/vel-forecast-forecast-ts.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #C3C3C3;" />
 
 ### TFS 2013 - TFS 2017.1 
 
-The forecast tool shows only those work items that can be completed within a sprint between the forecast lines. Unused velocity points from one sprint are considered in the forecast of the following sprint.  
+The forecast tool shows only those work items that can be completed within a sprint between the forecast lines. Unused velocity points from one sprint are considered in the forecast of the following sprint. The forecasted sprint is listed along with the last item that can be completed during that sprint. 
 
-The forecasted sprint is listed along with the last item that can be completed during that sprint. For example, The first two items with a total of 13 Effort points can be completed in Sprint 2.
+In this example, a velocity of 20 is used. The first two items with a total of 13 Effort points can be completed in Sprint 2.
 
-In summary: 
-- Sprint 2: 13 Effort points, which reflects 7 unused velocity points 
-- Sprint 3: 24 Effort points, which uses 4 of the 7 unused velocity points from Sprint 1 
-- Sprint 4: 21 Effort points, which uses 1 of the 3 unused velocity points from Sprint 1  
-- Sprint 5: 16 Effort points, which reflects 4 unused velocity points 
-- Sprint 6: 19 Effort points  
+In summary:  
+- **Sprint 2**: 13 Effort points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint  
+- **Sprint 3**: 24 Effort points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint  
+- **Sprint 4**: 21 Effort points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint     
+- **Sprint 5**: 16 Effort points, items 9 through  12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint    
+- **Sprint 6**: 19 Effort points, items 13 through 15 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint     
 
-<img src="_img/ALM_VF_Forecast_1.png" alt="Web portal, Enter a velocity to show forecast lines" style="border: 2px solid #C3C3C3;" />
-
-## Tips for using the forecast tool
-
-*	Set **In progress** items to **Hide** to hide those items that that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
-*	Select enough future sprints for your team to forecast your entire product backlog
-*	Check the results manually to understand discrepancies in what you expect and what the forecast tool displays  
-*	Check the amount of effort (story points or size) forecasted per sprint 
-*	Question forecast results where the effort of an item is near to, or greater than, team velocity  
+<img src="_img/ALM_VF_Forecast_1.png" alt="Web portal, Enter a velocity to show forecast lines" style="border: 1px solid #C3C3C3;" />
 
 ## Determine the velocity needed to complete all items in the backlog
 Another way to use the forecast tool is to enter different velocity values until all the backlog items are complete within a given set of sprints. This provides an estimate of what velocity is required to complete your backlog of items. 

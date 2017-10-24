@@ -1,5 +1,5 @@
 ---
-title: Application Insights: Public Preview; iOS and Android; performance counters and unhandled exceptions for Java apps; and time range selection
+title: Application Insights Public Preview for iOS and Android, performance counters and unhandled exceptions for Java apps,and time range selection
 description: VSTS release notes for May 11 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
