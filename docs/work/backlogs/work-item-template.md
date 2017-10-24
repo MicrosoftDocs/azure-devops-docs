@@ -1,19 +1,21 @@
 ---
-title: Work item templates | VSTS & TFS
-description: Increase productivity, add, manage, administrate work item templates to pre-populate fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Work item templates  
+description: Add and manage work item templates to pre-populate fields in VSTS and TFS work item forms  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.date: 10/23/2017
 ---
+
+
 
 # Use templates to add and update work items 
 
-<!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
-
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Visual Studio 2013 </b>  
+
+<!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 

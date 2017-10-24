@@ -1,13 +1,13 @@
 ---
-title: Move, change, or delete work items | VSTS & TFS
-description: Guide to removing/deleting working items and test artifacts from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
+title: Move, change, or delete work items  
+description: Guide to removing or deleting working items and test artifacts from VSTS and TFS 
 ms.technology: vs-devops-wit
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+ms.date: 10/23/2017
 ---
 
 
