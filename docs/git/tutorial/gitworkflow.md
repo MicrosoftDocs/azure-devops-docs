@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Git tutorial | VSTS & TFS
+title: VSTS Git tutorial | VSTS & TFS
 description: Learn Git with the VSTS/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: vs-devops-alm
@@ -7,14 +7,16 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+ms.date: 10/24/2017
 ---
 
-#  Learn about version control and Git
+#  VSTS Git tutorial
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+
+The steps in the following tutorials show how to perform common version controls tasks using the following version control workflow.
 
 ## Version control workflow
 
