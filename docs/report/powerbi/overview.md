@@ -13,16 +13,15 @@ ms.date: 08/23/2017
 # Power BI integration overview
 
 <b>VSTS</b>
-
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in VSTS.
 Currently, you can choose between two different options depending on your reporting requirements.
 
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 The first option, the **Content Pack**, contains a complete analytic data model (tables, relationships and measures), a set of default reports and a default dashboard. Reports and dashboard are fully customizable but the data model is not. All VSTS customers can use the Content Pack to generate dashboards and reports. 
 
 This option is great for users who want to get quick insights without the need of building custom models. The data model is shared between all users and therefore does not support process customization, this is one of the primary reasons to consider the second option. To learn more, see [Connect to VSTS with Power BI Content Pack](connect-vso-pbi-vs.md). 
-
 
 The second option, **Data Connector**, has been released with the *Power BI Desktop January 2017 Update*. 
 This option is available in the *Power BI Desktop*.  It allows users to select the data they are interested in, which includes support for a fully customized data model by including project-specific fields, work item customizations, and adding tables from additional data sources.
@@ -187,7 +186,7 @@ The following table contains a detailed comparison of both options.
 </table>
 
 **Notes:**  
-1. The Analytics Service is in close preview at this time.
+1. The Analytics Service is in closed preview at this time.
 2. The data model is created in *Power BI Desktop*. Then, it can be published and refreshed in *Power BI Service*.
 3. There is a limit on how long a refresh operation can take before it gets terminated by the system.
 Using the number of work items as a proxy measure for the size of account, an account is considered "large" accounts when it has over 400k work items.
