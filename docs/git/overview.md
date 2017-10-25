@@ -6,81 +6,15 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/17/2017
+ms.date: 10/24/2017
 ---
 
 #  Git and VSTS
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Host and manage your code in Git version control with VSTS and Team Foundation Server. 
+Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
 New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code.
-
-<div class="row">
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Get started</strong>
-        <ul>
-            <li>[VSTS Git quick start](gitquickstart.md)</li>
-            <li>[Visual Studio](share-your-code-in-git-vs.md)</li>
-            <li>[Command line](share-your-code-in-git-cmdline.md)</li>
-            <li>[Xcode](share-your-code-in-git-xcode.md)</li>
-            <li>[Eclipse](share-your-code-in-git-eclipse.md)</li>
-        </ul>
-    </div>
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Git tutorial</strong>
-        <ul>
-            <li>[Git workflow](tutorial/gitworkflow.md)</li>
-            <li>[Create a new repo](tutorial/creatingrepo.md)</li>
-            <li>[Clone an existing repo](tutorial/clone.md)</li>
-            <li>[Commit your work](tutorial/commits.md)</li>
-            <li>[Push your changes](tutorial/pushing.md)</li>
-            <li>[Sync with others](tutorial/pulling.md)</li>
-            <li>[Undo changes](tutorial/undo.md)</li>
-        </ul>
-    </div>
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Authenticate</strong>
-        <ul>
-            <li>[Authentication overview](auth-overview.md)</li>
-            <li>[Git credential managers](set-up-credential-managers.md)</li>
-            <li>[SSH](use-ssh-keys-to-authenticate.md)</li>
-        </ul>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Repos</strong>
-        <ul>
-            <li>[Create a repo](create-new-repo.md)</li>
-            <li>[Delete a repo](delete-existing-repo.md)</li>
-            <li>[Import a repo](import-git-repository.md)</li>
-            <li>[Git and TFVC repos](team-projects.md)</li>
-            <li>[Set repo permissions](../security/set-git-tfvc-repository-permissions.md#git-repository)</li> 
-            <li>[Work with large files](manage-large-files.md)</li>
-        </ul>
-    </div>
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Branches</strong>
-        <ul>
-            <li>[Manage your branches](manage-your-branches.md)</li>
-            <li>[Create a branch strategy](concepts/git-branching-guidance.md)</li>
-            <li>[Set branch permissions](branch-permissions.md)</li>
-            <li>[Lock branches](lock-branches.md)</li>
-            <li>[Delete a branch](delete-branch.md)</li>
-        </ul>
-    </div>
-    <div class="col-sm-3 col-md-4">
-        <strong style="text-align:center;">Pull requests</strong>
-        <ul>
-            <li>[Review code with pull requests](pull-requests.md)</li>
-            <li>[Squash merge pull requests (TFS 2017 only)](merging-with-squash.md)</li>
-            <li>[Comment with markdown (TFS 2017 only)](../collaborate/markdown-guidance.md)</li>
-            <li>[Set up branch policies](branch-policies.md)</li>
-        </ul>
-    </div>
-</div>
-
 
 ## Get started
 
@@ -95,8 +29,8 @@ VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](http://java.visualstudio.com/Docs/tools/eclipse), 
 and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 
-<p>New to Git? Learn how to share code with Git and VSTS with getting started guides for [Visual Studio](share-your-code-in-git-vs.md) , 
-[Eclipse](share-your-code-in-git-eclipse.md) , [Xcode](share-your-code-in-git-xcode.md), and the [command line](share-your-code-in-git-cmdline.md).</p>
+<p>New to Git? Learn how to share code with Git and VSTS with getting started guides for [Visual Studio](share-your-code-in-git-vs.md), 
+[Eclipse](share-your-code-in-git-eclipse.md), [Xcode](share-your-code-in-git-xcode.md), [IntelliJ](create-repo-intellij.md), and the [command line](share-your-code-in-git-cmdline.md).</p>
 </div>
 </div>
 
@@ -106,7 +40,7 @@ and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 <div class="col-sm-6 col-md-6">
 <p>Get up and running with Git and VSTS in just a few minutes with the [VSTS Git quick start](gitquickstart.md).</p>
 
-<p>The [VSTS Git tutorial](tutorial/gitworkflow.md) walks you through Git tasks like [creating repos](tutorial/creatingrepo.md), [working in branches](tutorial/branches.md), [saving your work](tutorial/commits.md) , and [sharing your changes](tutorial/pushing.md). 
+<p>The [VSTS Git tutorial](tutorial/gitworkflow.md) walks you through Git tasks like [creating repos](tutorial/creatingrepo.md), [working in branches](tutorial/branches.md), [saving your work](tutorial/commits.md), and [sharing your changes](tutorial/pushing.md). 
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
@@ -134,6 +68,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>
 <li>[Get Started with Xcode](share-your-code-in-git-xcode.md)</li>
 <li>[Get Started with Eclipse](share-your-code-in-git-eclipse.md)</li>
+<li>[Get Started with IntelliJ](create-repo-intellij.md)</li>
 </ul>
 
 </div>
@@ -165,7 +100,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Review code with pull requests in VSTS and TFS](_img/overview/IC784012.png)
+![Review code with pull requests in VSTS and TFS](_img/overview/pull-request.png)
 
 </div>
 <div class="col-sm-6 col-md-6"> 

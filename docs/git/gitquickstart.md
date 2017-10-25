@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/20/2017
+ms.date: 10/23/2017
 ---
 
 #  Get Started with Git and VSTS
@@ -49,14 +49,14 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 # [Command Line](#tab/command-line)
 
 0. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
-0. Open the VSTS web portal in your browser by avitagting to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
+0. Open the VSTS web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
 
   ![Finding the Clone URL for your Git Repository in VSTS](_img/gitquickstart-vs2017/clone-url.png)
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
 
-    ```
+    ```cmd
     git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/_git/FabrikamFiber
     ```
 
@@ -108,7 +108,7 @@ uses a new branch for every feature or fix you work on. You make [commits](tutor
 
 0. Create a branch where you will work with the code and make your changes. If you are collaborating with someone using a branch they've created, you can skip to the following `git checkout` step.
 
-    ```
+    ```cmd
     git branch ReadMeFix
     ```
 
@@ -116,7 +116,7 @@ uses a new branch for every feature or fix you work on. You make [commits](tutor
 
 0. Checkout your branch so you can start working in it. 
 
-    ```
+    ```cmd
     git checkout ReadMeFix
     ```
 
@@ -125,7 +125,7 @@ uses a new branch for every feature or fix you work on. You make [commits](tutor
 0. Make changes using your favorite tools on the code. 
 0. When you're satisfied with the changes, even if you aren't ready to share the work, save them in Git using a commit. Your changes won't be shared until you push them, as described in the following section.
 
-    ```
+    ```cmd
     git commit -a -m "Descriptive message"
     ```
 
@@ -163,7 +163,7 @@ branch of the code.
 
   ![Pull Requests](_img/gitquickstart-vs2017/pull-requests.png)
 
-0. From the **Pull Requests** view you can you pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal.
+0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal.
 
   ![Pull Requests](_img/gitquickstart-vs2017/new-pull-request.png)
 
@@ -177,7 +177,7 @@ branch of the code.
 
 0. Push your branch so that others can see the changes you've saved.
 
-    ```
+    ```cmd
     git push -u origin ReadMeFix
     ```
 
@@ -185,7 +185,9 @@ branch of the code.
 
   ![Creating a new Pull Request in VSTS](_img/gitquickstart-vs2017/create-pull-request-web-portal.png)   
 
-0. Create the pull request, adding in team members to review and approve the code changes.
+0. Verify your branches (in this example we want to merge the commits from the `ReadMeFix` branch into the `master` branch), enter a title and optional description, specify any reviewers, optionally associate any work items, and select **Create**.
+
+  ![Create a Pull Request in the VSTS web portal](_img/gitquickstart-vs2017/create-pull-request.png)
 
 0. Once the changes are approved, complete the pull request in VSTS. 
 This will pull your changes from the branch into the master branch of the code.
@@ -220,15 +222,15 @@ pull your branches regularly to keep them up to date with the changes from other
 
 # [Command Line](#tab/command-line)
 
-0. Switch to the branch where you want to download the changes others have made. In theis example the `ReadMeFix` branch is used.
+0. Switch to the branch where you want to download the changes others have made. In this example changes made by others on your team to the `ReadMeFix` branch are pulled down to your local copy of the branch.
 
-    ```
+    ```cmd
     git checkout ReadMeFix
     ```
 
 0. Pull in the changes made by others to your local branch.
 
-    ```
+    ```cmd
     git pull
     ```
 

@@ -12,6 +12,7 @@ ms.date: 08/04/2017
 # Create rollup charts
 
 **VSTS**
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. You can create rollups based on counts of work items or selected measures, such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks. 
 

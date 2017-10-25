@@ -12,6 +12,7 @@ ms.date: 08/04/2017
 # Connect to VSTS with Power BI Content Pack
 
 **VSTS**
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for VSTS. 
 

@@ -12,6 +12,7 @@ ms.date: 03/02/2017
 #What is available in the Power BI Content Pack for VSTS
 
 <b>VSTS</b>
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 Power BI Content Pack for VSTS gathers data from different feature areas and combines them into a single coherent analytical model.
 

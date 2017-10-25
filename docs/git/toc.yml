@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: Learn about Git
-    href: tutorial/gitworkflow.md
+    href: overview.md
 - name: Quickstarts
   items:
   - name: Create repo - Web
@@ -21,6 +21,7 @@
   - name: Import repo - Web
     href: import-git-repository.md
 - name: Tutorials
+  href: tutorial/gitworkflow.md
   items:
   - name: Commit, share, and sync your code
     href: gitquickstart.md
@@ -67,8 +68,6 @@
     items:
     - name: Review code with pull requests
       href: pull-requests.md
-    - name: Format comments with markdown
-      href: ../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
     - name: Squash merge pull requests
       href: merging-with-squash.md
   - name: Forks
@@ -91,12 +90,14 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-  - name: Import a repo from TFVC
-    href: import-from-TFVC.md
   - name: Create a pull request status server
     href: how-to/create-pr-status-server.md
   - name: Configure branch policy for an external service
     href: how-to/pr-status-policy.md
+  - name: Drive Git development from a work item
+    href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Import a repo from TFVC
+    href: import-from-TFVC.md
   - name: Manage repos
     items:
     - name: Delete a repo
@@ -133,6 +134,8 @@
   items:
   - name: Command reference
     href: command-prompt.md
+  - name: Format comments with markdown
+    href: ../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Frequently asked questions
     href: tutorial/howto.md
   - name: History
