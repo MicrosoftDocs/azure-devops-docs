@@ -227,7 +227,7 @@ your team's success. Because of this, we publish a service level
 agreement (SLA) and provide a financial guarantee to ensure we meet this
 agreement each month. For more specifics on our SLA and financial
 guarantees, please see 
-[VSTS SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
+[VSTS SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/).
 
 Of course, sometimes our partner teams or dependencies have incidents
 that affect VSTS. All our partner teams follow similar approaches to
