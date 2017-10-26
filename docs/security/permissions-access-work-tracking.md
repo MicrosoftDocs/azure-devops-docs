@@ -16,211 +16,23 @@ ms.date: 10/23/2017
 
 You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
-For a simplified view of permissions assigned to built-in groups, see [Permissions and access](permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](permissions.md). 
+For a simplified view of permissions assigned to built-in groups, see [Permissions and access](permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions and groups reference](permissions.md). 
 
 In addition to permissions, access to premium features are controlled by either the Advanced or VS Enterprise [access level](access-levels.md). Contributors and administrators should be added to Basic access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. For more details on Stakeholder access, jump to [Stakeholder access](#stakeholder-access). 
 
 The team administrator role supports configuration of team settings. To be added as a team administrator, see [Add team administrators](../work/scale/add-team-administrator.md). Project administrators con configure settings at the project level. See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
 
 ## Default work tracking permissions and access 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View work items, including bugs, requirements, and tasks</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
 
-
-<tr>
-<td align="left">Create and edit work items, follow a work item</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Change work item type </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Move or delete work items </td>
-<td> </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Search and query work items, save work item queries
-</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>Can't save queries</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">View backlogs, boards, and plans
-</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Provide feedback
-</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Request feedback
-</td>
-<td> </td>
-<td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management)
-</td>
-<td> limited interactions </td>
-<td> view only</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Configure Agile tools, set team defaults 
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Create and add tags](../work/track/add-tags-to-work-items.md)</td>
-<td>Can assign existing tags</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-
-</tr>
-
-
-<tr>
-<td align="left">View, add, and configure Delivery Plans</td>
-<td> </td>
-<td>view only</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-
-</tr>
-
-
-
-<tr>
-<td align="left">Customize project information (area paths, iteration paths, and work tracking processes) 
-</td>
-<td>  </td>
-<td> </td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-</tbody>
-</table>
-
+[!INCLUDE [temp](_shared/work.md)]
 
 
 ## Test management permissions   
 
-Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You manage test permissions at the project-level and area-path level. 
+Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View test runs</td>
-<td></td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
+[!INCLUDE [temp](_shared/test.md)]
 
-<tr>
-<td align="left">Create and delete test runs</td>
-<td></td>
-<td></td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">Manage test configurations and test environments</td>
-<td></td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Manage test plans and test suites</td>
-<td></td>
-<td></td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-</tbody>
-</table>
 
 Area permissions for web-based test case management and test execution control access to the following actions.  
 

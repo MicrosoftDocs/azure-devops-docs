@@ -25,7 +25,7 @@
     - name: Connect to VSTS 
       href: data-connector-connect.md
     - name: Access data through Power BI desktop
-      href: /../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+      href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Power BI desktop and OData aggregations
       href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: "Share reports, publish to PowerBI.com"
