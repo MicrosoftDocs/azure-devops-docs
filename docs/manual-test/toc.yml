@@ -78,8 +78,8 @@
       href: mtm/test-configurations-specifying-test-platforms.md
     - name: Collect more diagnostic data
       href: mtm/collect-more-diagnostic-data-in-manual-tests.md
-    - name: Test Windows Store apps
-      href: mtm/testing-windows-store-apps.md
+    - name: Test Microsoft Store apps
+      href: mtm/testing-microsoft-store-apps.md
 - name: Reference
   items:
   - name: FAQs

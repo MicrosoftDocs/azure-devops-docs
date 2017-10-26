@@ -1,6 +1,6 @@
 ---
-title: Testing Windows Store apps
-description: Manual and exploratory testing - Testing Windows Store apps
+title: Testing Microsoft Store apps
+description: Manual and exploratory testing - Testing Microsoft Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -9,11 +9,11 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Testing Windows Store apps
+# Testing Microsoft Store apps
 
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
-You have two options if you want to test Windows Store apps on a phone, tablet, or other device:  
+You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   
 - Plan and perform your tests using the web portal, using a browser on the device or on another computer. When you use the web portal for testing, the test runner doesn't interact with the software that you're testing; it simply acts as a checklist of the test steps. Therefore, you don't have to run it on the device that you're testing.  
   
@@ -52,11 +52,11 @@ You have two options if you want to test Windows Store apps on a phone, tablet, 
   
 1. Choose the **Test** link to verify that Microsoft Test Manager can communicate with the remote device.  
   
-### Install your Windows Store app  
+### Install your Microsoft Store app  
   
-1. Choose **Install Windows Store App**, and then enter the path and name of the .appx file for the Windows Store app that you want to install.  
+1. Choose **Install Microsoft Store App**, and then enter the path and name of the .appx file for the Microsoft Store app that you want to install.  
   
-   ![Install Windows Store app from MTM](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
+   ![Install Microsoft Store app from MTM](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
   
 1. Follow the steps in the installation wizard.  
   
@@ -64,7 +64,7 @@ You have two options if you want to test Windows Store apps on a phone, tablet, 
   
    ![Test certificate dialog](_img/testing-windows-store-apps/mtr_win8_testcertdialog.png)  
   
-### Test your Windows Store app  
+### Test your Microsoft Store app  
   
 1. Choose **Start Test**.  
   

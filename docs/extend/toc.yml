@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-    - name: Create a custom extension
+    - name: Extensions overview
       href: ./overview.md
 - name: Quickstarts
   items:

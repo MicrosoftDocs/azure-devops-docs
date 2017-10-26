@@ -95,6 +95,6 @@ Tests begin in the Active state, meaning that they are ready to run. When a bug 
 * [Test configurations: specifying test platforms](../test-different-configurations.md)   
 * [Record and play back manual tests](../getting-started/record-play-back-manual-tests.md)   
 * [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)   
-* [Testing Windows Store apps](testing-windows-store-apps.md)
+* [Testing Microsoft Store apps](testing-windows-store-apps.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

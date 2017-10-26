@@ -4477,6 +4477,11 @@
             "redirect_document_id": false
        },
        {
+            "source_path": "docs/manual-test/mtm/testing-windows-store-apps.md",
+            "redirect_url": "/vsts/manual-test/mtm/testing-microsoft-store-apps",
+            "redirect_document_id": false
+       },
+       {
             "source_path": "docs/git/concepts/pull-requests.md",
             "redirect_url": "/vsts/git/concepts/pull-requests-overview",
             "redirect_document_id": false
