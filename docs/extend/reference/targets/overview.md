@@ -155,8 +155,9 @@ Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`
 Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img/backlog-pane/iteration-backlog-pane.png)
 
 <a name="serviceHooks"></a>
+
 ## Service hooks
 Service hook publishers define a set of events. Subscriptions listen for the events and define actions to take based on the event. 
 Subscriptions also target consumers, which are external services that can perform their own actions, when an event occurs.
 
-### Consumers
+Check out how to [add service hooks](../../develop/add-service-hook.md).
