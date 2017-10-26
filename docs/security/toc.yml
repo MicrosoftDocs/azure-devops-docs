@@ -4,8 +4,6 @@
   items:
   - name: About security and identity  
     href: about-security-identity.md
-  - name: Default permission and access assignments
-    href: permissions-access.md
 - name: Quickstart
   items:
   - name: View permissions 
@@ -58,6 +56,8 @@
     href: faq-network-connections.md
 - name: Reference
   items:
+  - name: Default permission and access assignments
+    href: permissions-access.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
   - name: Permissions and groups reference

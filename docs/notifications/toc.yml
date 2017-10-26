@@ -44,6 +44,8 @@
     href: oob-built-in-notifications.md 
   - name: FAQs 
     href: faq-notifications.md 
+  - name: Default permissions and access set for collaboration tools 
+    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Resources    
   items:
   - name: Git

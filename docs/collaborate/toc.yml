@@ -3,9 +3,7 @@
 - name: Overview
   items:
   - name: "About READMEs & Wikis"
-    href: about-readme-wiki.md
-  - name: Default permissions set for collaboration tools 
-    href: collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json   
+    href: about-readme-wiki.md  
 - name: Quickstarts
   items:
   - name: Share your project vision
@@ -36,6 +34,8 @@
     href: markdown-guidance.md
   - name: Navigate in the web portal
     href: ../user-guide/work-web-portal.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
+  - name: Default permissions and access set for collaboration tools 
+    href: collaboration-tool-permissions.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
 - name: Resources 
   items:
   - name: Dashboards

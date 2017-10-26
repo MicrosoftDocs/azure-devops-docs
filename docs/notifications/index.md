@@ -50,6 +50,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [FAQs](faq-notifications.md) 
+- [Default permissions and access set for collaboration tools](../collaborate/collaboration-tool-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 
 
 ## Resources 

@@ -6,19 +6,18 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 10/24/2017
 ---
 
 # Security & Identity 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-For anyone to access a team project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Permissions and access](permissions-access.md)
+For anyone to access a team project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
 <!---
 ## Overview  
 [About security and identity](about-permissions.md)
-[Default permission and access assignments](/vsts/accounts/permissions-access?toc=/vsts/security/toc.json)
 -->
 
 ## 5-Minute Quickstarts  
@@ -43,6 +42,7 @@ For anyone to access a team project, you must add them to a security group. For 
 - [Change access levels (TFS)](change-access-levels.md)
 
 ## Reference 
+- [Default permission and access assignments](/vsts/accounts/permissions-access?toc=/vsts/security/toc.json)
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
 
