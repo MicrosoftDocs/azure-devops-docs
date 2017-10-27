@@ -1,5 +1,5 @@
 ---
-ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
+ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
 title: CD of an Azure VM using a Resource Manager template
 description: Provision a VM using ARM templates in Microsoft Release Management in VSTS and TFS
 ms.prod: vs-devops-alm

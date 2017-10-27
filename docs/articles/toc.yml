@@ -32,6 +32,8 @@
       href: remove-binaries.md
 - name: DevOps
   items:
+    - name: Phase the features of your app with feature flags
+      href: phase-features-with-feature-flags.md
     - name: Build and Deployment Automation Case Study
       href: build-deployment-best-practices.md
     - name: Phase the roll-out of your application through rings
