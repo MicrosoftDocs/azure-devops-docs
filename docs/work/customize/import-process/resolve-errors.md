@@ -1269,7 +1269,7 @@ FeedbackRequest.xml
 ```
 
 <a id="TF402556"></a>
-### TF402556: For field *[refName]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldType]*.
+### TF402556: For field *[refName]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldType]*. Provided *[refName]* is *[fieldName]* and type is *[fieldType]*.
 
 If you are on TFS and running tfsMigrator, this error is usually generated when your process is out-of-date and a system field is not properly defined. In the majority of those cases you need to use the ```witadmin /changefield``` command to properly rename the field.
 
@@ -1286,6 +1286,8 @@ Reserved System.*XXX* and Microsoft.VSTS.*XXX* fields have required name and typ
 | Microsoft.VSTS.Scheduling.CompletedWork                  | Completed Work              | Double           |
 
 #### Error example
+TF402556: For field Microsoft.VSTS.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.VSTS.TCM.ReproSteps is My Repro Steps and type is HTML.
+
 In Bug.xml, the friendly field name has been changed to "My Repro Steps".
 ```
   <FIELD name="My Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
