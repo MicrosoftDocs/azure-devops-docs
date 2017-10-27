@@ -1,7 +1,7 @@
 ---
 title: Secure files for VSTS and Team Foundation Server
 description: Understand secure files for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
+ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: dastahel

@@ -7,7 +7,7 @@ author: mlearned
 manager: douge
 editor: ''
 
-ms.assetid: E13DEB83-A128-4704-A051-8465AD39B5AE
+ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: acs
