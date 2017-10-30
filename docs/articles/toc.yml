@@ -12,8 +12,6 @@
     href: migration-processtemplates.md
   - name: Post-Import
     href: migration-post-import.md
-  - name: Advanced Topics
-    href: migration-advanced-topics.md
   - name: Troubleshooting
     href: migration-troubleshooting.md
 - name: Version Control

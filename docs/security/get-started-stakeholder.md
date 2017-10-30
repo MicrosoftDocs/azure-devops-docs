@@ -97,7 +97,7 @@ Work appears in the backlog in priority order.
 
 ## Check work in progress  
 
-To view the team's work status, open the Kanban board. Chick the title of an item to open or edit it. 
+To view the team's work status, open the Kanban board. Click the title of an item to open or edit it. 
 
 <img src="_img/work-as-a-stakeholder-view-kanban-board.png" alt="View Kanban board" style="border: 1px solid #CCCCCC;" />
 

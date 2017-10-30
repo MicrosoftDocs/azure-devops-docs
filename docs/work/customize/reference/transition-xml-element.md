@@ -6,11 +6,13 @@ ms.technology: vs-devops-wit
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.manager: douge
 ms.author: kaelli
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ---
+
+
+
 # TRANSITION XML element  
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
@@ -96,6 +98,15 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 </TRANSITION>  
 ```  
   
+## Auto completion of work items with pull requests  
+
+When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. 
+
+> [!NOTE]   
+> **Feature availability**: The **Complete linked work items after merging** option is available from VSTS only at this time. It will become available with the release of TFS 2018 RTW.
+
+To learn more, see [Workflow states & state categories](../workflow-and-state-categories.md).
+
 ## Related notes 
 - [Change the workflow](change-workflow-wit.md)
 - [Customize your work tracking experience](../customize-work.md)   
