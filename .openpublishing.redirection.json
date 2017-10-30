@@ -4485,6 +4485,11 @@
             "source_path": "docs/git/concepts/pull-requests.md",
             "redirect_url": "/vsts/git/concepts/pull-requests-overview",
             "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/articles/migration-advanced-topics.md",
+            "redirect_url": "/vsts/articles/migration-overview",
+            "redirect_document_id": false
        }
     ]
 }
