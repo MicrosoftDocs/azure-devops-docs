@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 09/27/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -88,6 +88,55 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="12">[30 Oct 2017](2017/oct-30-vsts.md)</td>
+            <td>Modernized column options</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Added support for Not In query operator</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Filtering on Plans</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Add support for read-only to work item rules</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Mention a pull request</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Toggle word wrap and white space in diff views</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Filtering in Package Management</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Revamped create release experience</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Inline GitHub connection as a release artifact source</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Azure Resource Group task - Deployment outputs as variables</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Circle avatars</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Project tags</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
         <tr>
             <td rowspan="13">[06 Oct 2017](2017/oct-06-vsts.md)</td>
             <td>New experience for code and work items search</td>
