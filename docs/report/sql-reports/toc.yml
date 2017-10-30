@@ -150,5 +150,7 @@
     href: ../admin/resolve-schema-conflicts.md?toc=/vsts/report/sql-reports/toc.json
 - name: Resources
   items:
+  - name: Server Administration (TFS)
+    href: ../../tfs-server/index.md
   - name: TFS - Reporting & Warehouse forum
     href: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting

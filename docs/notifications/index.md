@@ -41,9 +41,8 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 - [Use @mentions to further discussion](at-mentions.md)
 - [Use #ID to link to work items](add-links-to-work-items.md) 
 - [Set team notifications](../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Microsoft Teams integration](../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 - [Get notified with Campfire](../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Flowdock](../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Hipchat](../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 - [Get notified with Slack](../service-hooks/services//slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
   
 ## Reference

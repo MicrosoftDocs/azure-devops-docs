@@ -16,7 +16,7 @@ ms.date: 03/07/2017
 >[!IMPORTANT]  
 >This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.
 >
->To customize your backlogs or bpards for the Hosted XML or On-premises XML process models, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) or [Add a portfolio backlog level](../add-portfolio-backlogs.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).    
+>To customize your backlogs or boards for the Hosted XML or On-premises XML process models, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) or [Add a portfolio backlog level](../add-portfolio-backlogs.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
