@@ -80,5 +80,5 @@
     href: ../integrate/get-started/authentication/authentication-guidance.md
   - name: Security REST APIs
     href: https://www.visualstudio.com/docs/integrate/api/security/overview
- - name: Technical Articles
+  - name: Technical Articles
     href: ../articles/index.md

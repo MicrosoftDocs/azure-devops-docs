@@ -130,7 +130,7 @@
   - name: Query by assignment or workflow changes
     href: ../track/query-by-workflow-changes.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Query by area or iteration path
-    href: .../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
+    href: ../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
   - name: Query history
     href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json     
   - name: Work item field index

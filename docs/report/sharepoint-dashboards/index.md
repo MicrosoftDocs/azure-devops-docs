@@ -37,7 +37,7 @@ ms.date: 09/05/2017
 
 - [Configure SharePoint integrationl](configure-sharepoint-tfs-2017-earlier.md)    
 - [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md )
-- [Set permissions to access a SharePoint project portal](set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Set permissions to access a SharePoint project portal](../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
 
 
 ## Reference
@@ -46,5 +46,5 @@ ms.date: 09/05/2017
 
 
 ## Resources
-- [Microsoft Teams](../../service-hooks/teams.md)
+- [Microsoft Teams](../../service-hooks/services/teams.md)
 - [OneDrive for Business sync client](https://support.office.com/en-us/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49)
