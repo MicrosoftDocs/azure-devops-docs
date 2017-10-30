@@ -1,5 +1,6 @@
 # [Features timeline](index.md)
 # 2017
+## [October 30](2017/oct-30-vsts.md)
 ## [October 6](2017/oct-06-vsts.md)
 ## [September 15](2017/sep-15-team-services.md)
 ## [August 28](2017/aug-28-team-services.md)
