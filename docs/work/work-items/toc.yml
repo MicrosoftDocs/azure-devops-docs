@@ -124,7 +124,15 @@
 - name: Reference
   items:
   - name: Work item form controls 
-    href: work-item-form-controls.md  
+    href: work-item-form-controls.md 
+  - name: Query by title, ID, or description
+    href: ../track/titles-ids-descriptions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: Query by assignment or workflow changes
+    href: ../track/query-by-workflow-changes.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Query by area or iteration path
+    href: ../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
+  - name: Query history
+    href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json     
   - name: Work item field index
     href: guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
     items:

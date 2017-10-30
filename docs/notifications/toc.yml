@@ -26,6 +26,8 @@
     href: add-links-to-work-items.md
   - name: Manage team notifications
     href: ../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Microsoft Teams Integration
+    href: ../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Get notified with Campfire
     href: ../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Get notified with Flowdock
@@ -52,8 +54,6 @@
     href: ../git/index.md
   - name: Work items
     href: ../work/work-items/index.md
-  - name: Microsoft Teams Integration
-    href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
   - name: Service Hooks
     href: ../service-hooks/index.md
   - name: REST API

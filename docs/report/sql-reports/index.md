@@ -49,4 +49,5 @@ ms.date: 09/05/2017
 
 ## Resources
 
+- [Server Administration (TFS)](../../tfs-server/index.md)
 - [TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)
