@@ -1,6 +1,4 @@
 {
-  "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "release-notes",
@@ -43,9 +41,12 @@
     "pacort@microsoft.com"
   ],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/vsts-docs",
+  "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "enable_incremental_build": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -54,21 +55,27 @@
       "branch_mapping": {}
     },
     {
-			"path_to_root": "_themes.pdf",
-			"url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-			"branch": "master"
-		}
-
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    }
   ],
-
-  "Targets": {  
-    "Pdf": {  
-    "template_folder": "_themes.pdf"  
-    }  
-   },
-
   "branch_target_mapping": {
-      "live": ["Publish", "Pdf"], 
-      "master": ["Publish", "Pdf"]
-}
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
+  "need_generate_intellisense": false,
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  }
 }

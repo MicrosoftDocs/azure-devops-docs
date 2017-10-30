@@ -37,12 +37,12 @@ GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}
 
 ### Supported versions
 
-| Product                     | 1.0    | 2.0    | 3.0    |
-|:----------------------------|:------:|:------:|:------:|
-| Visual Studio Team Services | X      | X      | X      |
-| Team Foundation Server 2018 | X      | X      | X      |
-| Team Foundation Server 2017 | X      | X      | X      |
-| Team Foundation Server 2015 | X      | X      | -      |
+| Product                     | 1.0    | 2.0    | 3.0    | 4.0    |
+|:----------------------------|:------:|:------:|:------:|:------:|
+| Visual Studio Team Services | X      | X      | X      | X      |
+| Team Foundation Server 2018 | X      | X      | X      | X      |
+| Team Foundation Server 2017 | X      | X      | X      | -      |
+| Team Foundation Server 2015 | X      | X      | -      | -      |
 
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
