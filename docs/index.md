@@ -1214,7 +1214,6 @@ ms.date: 07/26/2017
                                         <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus-deploy.svg" alt="" />Octopus Deploy</a>
                                     </li>
                                 </ul>
-
                             </li>
                             <li class="fullSpan">
                                 <div>
@@ -1252,6 +1251,7 @@ ms.date: 07/26/2017
                                     </li>
                                 </ul>
                             </li>
+                            <li><!-- for spacing --></li>
                         </ul>
                     </li>
                 </ul>
