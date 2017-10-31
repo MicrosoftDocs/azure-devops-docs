@@ -1,6 +1,9 @@
 ### Label sources
 
-**Label sources:** Select either **On successful build** or **On every build** if you want to label your source code files to enable your team to easily identify which version of each file is included in the completed build.
+You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
+
+> [!NOTE]
+> You can only use this feature when the source repository in your build is a Git or TFVC repository from your team project.
 
 In the **Label format** you can use user-defined and predefined variables that have a scope of "All." For example:
 
@@ -8,4 +11,4 @@ In the **Label format** you can use user-defined and predefined variables that h
 $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber)_$(My.Variable)
 ```
 
-The first three variables are predefined. `My.Variable` is defined by you on the [variables tab](../variables.md).
+The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](../variables.md).
