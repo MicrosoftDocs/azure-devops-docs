@@ -140,6 +140,8 @@
       href: unshelve-command.md
     - name: Branch
       href: branch-command.md
+    - name: Branches
+      href: branches-command.md
     - name: Changeset
       href: changeset-command.md
     - name: Configure
