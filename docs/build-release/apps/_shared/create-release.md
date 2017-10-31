@@ -52,7 +52,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 1. Choose **+ Release** and select **Create Release**.
 
-1. In the **Create new release** dialog, check that the artifact version you want to use is selected and choose **Queue**.
+1. In the **Create new release** panel, check that the artifact version you want to use is selected and choose **Create**.
 
 1. Choose the release link in the information bar message. For example: "Release **Release-1** has been created".
 
