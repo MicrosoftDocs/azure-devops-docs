@@ -33,9 +33,9 @@ To use a hosted agent, while [editing your build definition](../../actions/ci-cd
 
 We update the software on the hosted agents once every month.
 
-* [Inventory of software currently installed on Hosted VS2017 agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.01/vs2017-on-windows-2016/image.md)
+* [Inventory of software currently installed on Hosted VS2017 agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2017-on-windows-2016/image.md)
 * [Inventory of software currently installed on Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile)
-* [Inventory of software currently installed on Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.01/vs2015-on-windows-2012r2/image.md)
+* [Inventory of software currently installed on Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md)
 
 ## Capabilities and limitations
 
