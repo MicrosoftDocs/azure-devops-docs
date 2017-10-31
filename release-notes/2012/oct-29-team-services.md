@@ -16,7 +16,7 @@ The update to the service this week contains a lot of bug fixes & one new featur
 
 ##Build drops
 
-With this update we are introducing a new option for hosted build drops. First some background. With the on-premise version of TFS, outputs from a build are dropped onto a file share. When we first introduced the hosted build service, dropping the outputs to a file share wasn’t an option since the build service does not have access to file shares inside your firewall. We solved this problem by putting the build outputs into a /drops folder in version control.
+With this update we are introducing a new option for hosted build drops. First some background. With the on-premises version of TFS, outputs from a build are dropped onto a file share. When we first introduced the hosted build service, dropping the outputs to a file share wasn’t an option since the build service does not have access to file shares inside your firewall. We solved this problem by putting the build outputs into a /drops folder in version control.
 
 Beyond solving the immediate problem of where to put the build output, this also had some very nice characteristics. It allowed build drops to go into a location managed by TFS. Meaning you didn’t have to get a separate file share setup & the build outputs are backed up with all of your other TFS data. However, it also came with some drawbacks. For example, users now had to be sure to cloak the drops folder or their syncs would get increasingly long. In addition, each build drop generated multiple new commits, which effected the history for the entire repo & triggering unwanted version control notifications.
 

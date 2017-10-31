@@ -15,7 +15,7 @@ ms.date: 08/11/2017
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
-You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in Visual Studio Team Services (VSTS) or within an on-premise Team Foundation Server (TFS). 
+You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in Visual Studio Team Services (VSTS) or within an on-premises Team Foundation Server (TFS). 
 
 If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
@@ -408,7 +408,7 @@ Services
 Test
 
 ##To Be Covered:
-- Client/server - When to use a client--Visual Studio/Eclipse/Visual Studio code/IntelliJ -- and when to use the web portal
+- Client/server - When to use a client--Visual Studio/Eclipse/Visual Studio Code/IntelliJ -- and when to use the web portal
 - IMG: Collection > Team Projects > Teams > Personal
 
 - Understand teams

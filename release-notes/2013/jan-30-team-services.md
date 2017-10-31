@@ -52,7 +52,7 @@ Explore changes, etc.
 
 ![Explore changes](./_img/1_30_07.png)
 
-But it’s genuine Git and can be accessed from any Git client – like XCode, any OSS Git command line, etc.
+But it’s genuine Git and can be accessed from any Git client – like Xcode, any OSS Git command line, etc.
 
 ![Access from Xcode](./_img/1_30_08.png)
 

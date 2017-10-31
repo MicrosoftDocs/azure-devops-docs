@@ -24,7 +24,7 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 * **TFS 2017:** You can use either a domain user or a local Windows user on each of your TFS application tiers.
 
-* **TFS 2015 (applies only to OSX and Linux):** We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+* **TFS 2015 (applies only to macOS and Linux):** We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
 ### Confirm the user has permission
 

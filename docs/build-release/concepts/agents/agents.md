@@ -31,7 +31,7 @@ We provide hosted agents to you in the hosted pool. If you need to run more than
 
 An agent that you set up and manage on your own to run build and deployment jobs is a **private agent**. You can use private agents in VSTS or Team Foundation Server (TFS). Private agents give you more control to install dependent software needed for your builds and deployments.
 
-You can install the agent on Windows, Linux, or OSX machines. You can also install an agent on a Linux Docker container.
+You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container.
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
@@ -41,7 +41,7 @@ After you've installed the agent on a machine, you can install any other softwar
 > Is your code in VSTS? If so, before you install an agent you might want to see if the hosted pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
 
 * [Windows agent v2](../../actions/agents/v2-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
@@ -49,7 +49,7 @@ After you've installed the agent on a machine, you can install any other softwar
 ### Install and connect to TFS 2015
 
 * [Windows agent v1](../../actions/agents/v1-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
@@ -101,7 +101,7 @@ The payload of the messages exchanged between the agent and TFS/VSTS are secured
 
 In TFS 2015:
 
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for OSX and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
+* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for macOS and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
 * The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../../security/websitesettings.md) between the agent and TFS.
 

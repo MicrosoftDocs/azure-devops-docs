@@ -127,7 +127,7 @@ To learn more, see [Microsoft Azure - Application Insights](https://azure.micros
 
 ####Monitor mobile applications with HockeyApp  
 With HockeyApp you can develop, distribute, and beta-test your mobile apps. HockeyApp supports:
-- Android, Cordova, iOS, OS X, Unity, Windows, and Xamarin apps
+- Android, Cordova, iOS, macOS, Unity, Windows, and Xamarin apps
 - Live, reliable crash reports
 - Collect in-app feedback from real users
 - Open-source SDKs to let you know what code is running in your apps

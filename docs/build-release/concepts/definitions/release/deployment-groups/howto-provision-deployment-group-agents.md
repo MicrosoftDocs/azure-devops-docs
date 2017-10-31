@@ -170,7 +170,7 @@ To use the template:
 
 * [Run on machine group phase](../../../process/phases.md#deployment-group-phase)
 * [Deploy an agent on Windows](../../../../actions/agents/v2-windows.md)
-* [Deploy an agent on OSX](../../../../actions/agents/v2-osx.md)
+* [Deploy an agent on macOS](../../../../actions/agents/v2-osx.md)
 * [Deploy an agent on Linux](../../../../actions/agents/v2-linux.md)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

@@ -60,7 +60,7 @@ the agent machine:
 1. Install an agent on the **agent machine**:
 
    * [Deploy an agent on Windows](../../actions/agents/v2-windows.md)
-   * [Deploy an agent on OSX](../../actions/agents/v2-osx.md)
+   * [Deploy an agent on macOS](../../actions/agents/v2-osx.md)
    * [Deploy an agent on Linux](../../actions/agents/v2-linux.md)<p />
 
 1. Install the VMware extension 

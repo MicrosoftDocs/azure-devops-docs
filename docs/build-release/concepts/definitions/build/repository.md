@@ -48,9 +48,9 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 |Tag or label sources|Team project|Team project|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
-|Checkout files from LFS|Yes|Yes|Yes|OSX and Linux agents|OSX and Linux agents|OSX and Linux agents|
+|Checkout files from LFS|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
 |Don't sync sources|Yes|Yes|Yes|No|No|No|
-|Shallow fetch|Yes|Yes|Yes|OSX and Linux agents|OSX and Linux agents|OSX and Linux agents|
+|Shallow fetch|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
 
 > [!NOTE]
 > **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
@@ -179,7 +179,7 @@ Select if you want to download files from [large file storage (LFS)](../../../..
 
 * **VSTS:** Select the check box to enable this option.
 
-* **TFS 2017 and TFS 2015 (OSX and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
+* **TFS 2017 and TFS 2015 (macOS and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
 
 If you use a private agent for your build, then you must install git-lfs to make this option work.
 

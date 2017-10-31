@@ -34,7 +34,7 @@ This article currently covers:
   3. Enter a filename and password. Take note of the password as we will need this later.
 
       ![Xcode Export Cert](_img/secure-certs/secure-certs-1.png)
-  Alternatively you can follow a similar process using the "Keychain Access" app on OSX or even generate a signing certificate on Windows. Use the procedure [described in this article](http://docs.build.phonegap.com/en_US/signing_signing-ios.md.html#_windows_users) if you would prefer to head this direction instead.  
+  Alternatively you can follow a similar process using the "Keychain Access" app on macOS or even generate a signing certificate on Windows. Use the procedure [described in this article](http://docs.build.phonegap.com/en_US/signing_signing-ios.md.html#_windows_users) if you would prefer to head this direction instead.  
 
 2. Next, get a copy of the provisioning profile you want to use.
 

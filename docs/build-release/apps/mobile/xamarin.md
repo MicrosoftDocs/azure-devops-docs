@@ -24,7 +24,7 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 * You will build the sample app on Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use hosted agent for Xamarin.Android, but if you use TFS or to build Xamarin.iOS, you also need a private agent. Set up a private agent and [Install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your dev machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for Mac.
 
- |Build | [Hosted agents](../../concepts/agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [OSX](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
+ |Build | [Hosted agents](../../concepts/agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [macOS](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
  | Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
  | Xamarin.iOS | No | No | Yes (with Xamarin installed) |

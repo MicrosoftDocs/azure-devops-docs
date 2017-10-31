@@ -1,6 +1,6 @@
 ---
 title: Deploy an agent on OSX
-description: Deploy an OSX agent to build and deploy your iOS application.
+description: Deploy a macOS agent to build and deploy your iOS application.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
@@ -8,17 +8,17 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
 ---
-# Deploy an agent on OSX
+# Deploy an agent on macOS
 
 **VSTS | TFS 2017 | TFS 2015**
 
-To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one OSX agent. This agent can also build and deploy Java and Android apps.
+To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [OSX system prerequisites](https://aka.ms/vstsagentosxsystem). 
+Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem). 
 
 <h2 id="permissions">Prepare permissions</h2>
 

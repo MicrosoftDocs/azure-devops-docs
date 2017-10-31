@@ -18,7 +18,7 @@ Today we take a very significant step in the evolution of our developer services
 
 ![New branding for Visual Studio Online](_img/11_13_01.png)
 
-The first thing you will notice is that we’ve changed our name. What was Team Foundation Service is now Visual Studio Online. The name change is not due to any one change we are making today but rather an indicator that Visual Studio Online is the services component of our developer tools. It will, of course, continue to support all the kinds of development you do – Windows, Azure, Java, iOS, etc. and the IDE you need – Visual Studio, Eclipse, XCode, Android Studio, etc. But the name does indicate a continued broadening of our offering – you’ll see some more on this below if you continue to read.
+The first thing you will notice is that we’ve changed our name. What was Team Foundation Service is now Visual Studio Online. The name change is not due to any one change we are making today but rather an indicator that Visual Studio Online is the services component of our developer tools. It will, of course, continue to support all the kinds of development you do – Windows, Azure, Java, iOS, etc. and the IDE you need – Visual Studio, Eclipse, Xcode, Android Studio, etc. But the name does indicate a continued broadening of our offering – you’ll see some more on this below if you continue to read.
 
 ![New Visual Studio Online site](_img/11_13_02.png)
 

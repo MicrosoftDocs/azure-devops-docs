@@ -70,7 +70,7 @@ Use the 'npm install' command to retrieve the SDK:
 npm install vss-web-extension-sdk
 ```
 
->To learn more about the SDK, visit the [Client SDK Github Page](https://github.com/Microsoft/vss-sdk).
+>To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 ### Step 2: Your HTML page - `hello-world.html`
 This is the glue that holds your layout together and includes references to CSS and JavaScript. 

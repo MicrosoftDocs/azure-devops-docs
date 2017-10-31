@@ -21,7 +21,7 @@ natively support Microsoft account and Azure AD authentication, so you can direc
 to sign in. 
 
 For non-Microsoft tools that integrate into VSTS but do not support Microsoft account or Azure AD authentication
-interactions (for example, Git, NuGet, or XCode), you need to set up personal access tokens by using 
+interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens by using 
 [Git credential managers](../git/set-up-credential-managers.md) or by creating PATs manually (see below).  You can also use personal access tokens when there is no "pop up UI" such as with command-line tools, integrating tools or tasks into build pipelines, or using  [REST APIs](../integrate/get-started/rest/basics.md).
 
 Personal access tokens essentially are alternate passwords that you create in a secure way using your normal authentication, 

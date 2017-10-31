@@ -76,4 +76,4 @@ Limit the number of links per work item as much as possible. We recommend that y
 ## Queries for Reporting
 Using queries and individual get work item calls is the number one way to get rate limits enforced on your account. Don't execute queries to return large lists of work items. Use the reporting [work item links](https://www.visualstudio.com/docs/integrate/api/wit/reporting-work-item-links) and [work item revisions](https://www.visualstudio.com/en-us/integrate/api/wit/reporting-work-item-revisions) REST API's instead.
 
-You can see our [C# Sample on Github](https://github.com/sferg-msft/vsts-wit-reporting-example)
+You can see our [C# Sample on GitHub](https://github.com/sferg-msft/vsts-wit-reporting-example)

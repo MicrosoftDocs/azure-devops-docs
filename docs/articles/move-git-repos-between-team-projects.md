@@ -32,7 +32,7 @@ As shown, we need to move the MigrationDemo repo, from the FabrikamOld to the ne
 You have 2 options as outlined below. Import functionality is easier, but is only available in VSTS and TFS 2017 Update 1 and above.  
 
 ### Use Import Git repository functionality
-Using Import Repository, you can import a Git repository to your team project from TFS/VSTS or any other Git source code provider like Github. 
+Using Import Repository, you can import a Git repository to your team project from TFS/VSTS or any other Git source code provider like GitHub. 
 Review the [import repository documentation](../git/import-git-repository.md) for more details.
 
 ### Manually migrate the Git repo in 5 easy steps:

@@ -15,7 +15,7 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
 
-* **Integrated** Not supported on OSX or Linux.
+* **Integrated** Not supported on macOS or Linux.
 
 * **Negotiate** (Default) Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
 

@@ -14,7 +14,7 @@ author: yukom
 
 ##Send work items in email
 
-Have you ever wanted to grab a set of work items or a query result and send them in email? In this sprint we added the ability to do just that. This feature was in previous releases of Team Foundation Server, but unfortunately was omitted in the 2012 release. Today, we’ve added it back to the service, and will be shipping it to on-premise customers as a part of VS Update 2.
+Have you ever wanted to grab a set of work items or a query result and send them in email? In this sprint we added the ability to do just that. This feature was in previous releases of Team Foundation Server, but unfortunately was omitted in the 2012 release. Today, we’ve added it back to the service, and will be shipping it to on-premises customers as a part of VS Update 2.
 
 How does it work? You start from a query in the work items hub. From the toolbar, click the email icon. You can also select individual work items (or multiple items by holding down the CTRL key) and then click Email selected work items from the context menu.
 

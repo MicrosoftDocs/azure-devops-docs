@@ -26,7 +26,7 @@ Get started by creating a repo, uploading your code, and inviting developers to 
 
 </div>
 
-Or, you can [import an existing repo](import-git-repository.md) from GitHub, BitBucket, GitLab, or other location to a new, empty repo. 
+Or, you can [import an existing repo](import-git-repository.md) from GitHub, Bitbucket, GitLab, or other location to a new, empty repo. 
 
 ## Step-by-Step Tutorials  
 
