@@ -15,23 +15,23 @@
 - name: Tutorials
   items:
   - name: Configure burndown or burnup widgets
-    href: guidance/configure-burndown-burnup-widgets.md
+    href: ../guidance/configure-burndown-burnup-widgets.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Configure a cumulative flow chart
-    href: guidance/cumulative-flow.md
+    href: ../guidance/cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Configure a lead/cycle time widget
-    href: guidance/cycle-time-and-lead-time.md
+    href: ../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Configure or view Velocity charts
-    href: guidance/team-velocity.md
+    href: ../guidance/team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Work with sprint burndown
-    href: ../work/scrum/sprint-burndown.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Cumulative flow, lead time, and cycle time guidance
-    href: guidance/cumulative-flow-cycle-lead-time-guidance.md
+    href: ../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Velocity guidance
-    href: guidance/velocity-guidance.md
+    href: ../guidance/velocity-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Burndown guidance
-    href: guidance/burndown-guidance.md
+    href: ../guidance/burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Add charts to a dashboard
@@ -39,7 +39,7 @@
   - name: Configure work item query-based charts
     href: charts.md
   - name: "Configure test status, progress, & result charts"
-    href: ../manual-test/getting-started/track-test-status.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: dashboard-permissions.md
 - name: Reference
@@ -47,7 +47,7 @@
   - name: Widget catalog
     href: widget-catalog.md
   - name: Markdown guidance
-    href: ../collaborate/markdown-guidance.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
+    href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Default dashboard permissions and access
     href: charts-dashboard-permissions-access.md
 - name: Resources
@@ -57,6 +57,6 @@
   - name: Testing
     href: /vsts/#pivot=services&panel=testing
   - name: Build a dashboard widget
-    href: /vsts/extend/develop/add-dashboard-widget
+    href: ../../extend/develop/add-dashboard-widget.md
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance

@@ -125,7 +125,7 @@ featureFlags:
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
                                                     <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
+                                                    <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -225,7 +225,7 @@ featureFlags:
                                     </ul>
                                     <h3>Reporting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
+                                        <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting (TFS)</a></li>
@@ -717,7 +717,7 @@ featureFlags:
                         <a href="#reporting">Reporting</a>
                         <ul id="reporting" class="cardsA">
                             <li>
-                                <a href="/vsts/report/index">
+                                <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -42,7 +42,7 @@ For example, type **g c** to open the Code hub, and then type **c p** to create 
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f,p&nbsp;&nbsp;&nbsp;</span>Focus previous section  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,b&nbsp;&nbsp;&nbsp;</span>Go to [build](../build-release/overview.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,c&nbsp;&nbsp;&nbsp;</span>Go to [code](../git/overview.md)  
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,h&nbsp;&nbsp;&nbsp;</span>Go to [home](../report/dashboards.md)  
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,h&nbsp;&nbsp;&nbsp;</span>Go to [home](../report/dashboards/dashboards.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,k&nbsp;&nbsp;&nbsp;</span>Go to wiki  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,s&nbsp;&nbsp;&nbsp;</span>Go to [settings](../work/scale/manage-team-assets.md)   
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,t&nbsp;&nbsp;&nbsp;</span>Go to [test](../manual-test/index.md)  

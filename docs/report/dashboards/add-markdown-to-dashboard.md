@@ -23,17 +23,17 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 
 Here's an example:  
 
-<img src="../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 ## Connect to the web portal for your team project 
 
-To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.
+To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
 
-Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
+Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
 ![Open the Dashboards hub](_img/dashboards-go-to.png) 
 
-If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../user-guide/account-home-pages.md).  
+If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).  
  
 
 ## Add the markdown widget to a dashboard  
@@ -48,7 +48,7 @@ If you don't see the team or team project you want, click the ![project icon](..
      
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
-0. Click the ![gear icon](../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
+0. Click the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
 
 	To edit a markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. To learn more, see (../report/dashboard-permissions.md). 
 
@@ -56,7 +56,7 @@ If you don't see the team or team project you want, click the ![project icon](..
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../collaborate/markdown-guidance.md).
+0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -70,7 +70,7 @@ If you don't see the team or team project you want, click the ![project icon](..
 
 	This renders the following widget: 
 
-	<img src="../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -89,7 +89,7 @@ If you don't see the team or team project you want, click the ![project icon](..
 
 - [Add and manage dashboards](dashboards.md)
 - [Add a widget to a dashboard](add-widget-to-dashboard.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../collaborate/markdown-guidance.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 

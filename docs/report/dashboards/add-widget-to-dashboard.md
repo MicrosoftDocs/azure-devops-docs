@@ -24,18 +24,18 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../tfs-server/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
 
-Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
+Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
 ![Open the Dashboards hub](_img/dashboards-go-to.png) 
 
-If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../user-guide/account-home-pages.md).  
+If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).  
 
 >[!NOTE]  
 ><b>Feature availability: </b> You can access the [widget catalog](widget-catalog.md) from the web portal for VSTS or TFS 2015.1 or later version. The widget catalog provides widgets for all tiles supported in previous releases of TFS for the team homepage. For on-premises TFS 2015, you can add select charts to the team home page using the [Pin to home page](team-dashboard.md) feature.   
 >
->To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../user-guide/provide-feedback.md#platform-version).   
+>To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../../user-guide/provide-feedback.md#platform-version).   
 
 ## Add a widget to a dashboard  
  
@@ -78,7 +78,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 >[!NOTE]  
 >**Feature availability:**  This feature is only available from VSTS.    
 
-To copy a configured widget to another team dashboard, click the ![Actions icon](../work/_img/icons/actions-icon.png) actions icon and select **Add to dashboard**. 
+To copy a configured widget to another team dashboard, click the ![Actions icon](../../work/_img/icons/actions-icon.png) actions icon and select **Add to dashboard**. 
 
 <img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
 
@@ -93,7 +93,7 @@ To copy a configured widget to another team dashboard, click the ![Actions icon]
 
 
 ### Extensibility  
-In addition to the widgets described in the Widget catalog, you can create your own widgets using the [Widget REST APIs](https://www.visualstudio.com/extend/develop/add-dashboard-widget). 
+In addition to the widgets described in the Widget catalog, you can create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
 
 ### Widget size
 

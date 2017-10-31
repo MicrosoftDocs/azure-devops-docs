@@ -247,7 +247,7 @@ Additional topics of interest:
 - [About teams and Agile tools](../../teams/about-teams-and-settings.md)   
 - [Add work items](add-work-items.md)   
 - [Adhoc vs managed work item queries](../track/adhoc-vs-managed-queries.md)   
-- [Dashboards](../../report/dashboards.md)   
+- [Dashboards](../../report/dashboards/dashboards.md)   
 - [Customize work tracking](../customize/customize-work.md)   
 
 ### Additional tools from the Marketplace 

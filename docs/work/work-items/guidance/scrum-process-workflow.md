@@ -176,7 +176,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 Use the impediment WIT to track events that may block progress or ship a PBI. Use the Bug WIT exclusively to track code defects.  
 
-You can add an impediment from the [New work item widget](../../../Report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../Report/dashboards.md), or from the **New** menu on the Queries page. 
+You can add an impediment from the [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../Report/dashboards.md), or from the **New** menu on the Queries page. 
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 

@@ -28,7 +28,7 @@ Repository README files and team project Wikis are great ways to share informati
 
 ## 5-Minute Quickstarts  
 - [Share your project vision](project-vision-status.md)
-- [Add markdown to your dashboard](../report/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json)
+- [Add markdown to your dashboard](../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json)
 
  
 ## Concepts 
@@ -48,4 +48,4 @@ Repository README files and team project Wikis are great ways to share informati
  
 ## Resources 
 
-- [Dashboards](../report/dashboards.md)
+- [Dashboards](../report/dashboards/dashboards.md)

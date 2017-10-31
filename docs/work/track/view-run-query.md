@@ -118,7 +118,7 @@ Click the ![Actions icon](../_img/icons/actions-icon.png) Actions icon to open t
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).  
 
-<img src="_img/view-run-queries/copy-url-old-exp.png" alt=alt="Web portal, Query Editor/Results, Copy query URL" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/view-run-queries/copy-url-old-exp.png" alt=alt="Web portal, Query Editor/Results, Copy query URL" style="border: 2px solid #C3C3C3;" /> 
 
 -->
 

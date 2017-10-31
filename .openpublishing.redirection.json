@@ -1153,12 +1153,12 @@
         },
         {
             "source_path": "docs/report/add-a-chart-dashboard.md",
-            "redirect_url": "/vsts/report/add-charts-to-dashboard",
+            "redirect_url": "/vsts/report/dashboards/add-charts-to-dashboard",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/report/monitor-progress-trends.md",
-            "redirect_url": "/vsts/report/overview",
+            "redirect_url": "/vsts/report/dashboards/overview",
             "redirect_document_id": false
         },
         {
@@ -4489,6 +4489,66 @@
        {
             "source_path": "docs/articles/migration-advanced-topics.md",
             "redirect_url": "/vsts/articles/migration-overview",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/dashboards.md",
+            "redirect_url": "/vsts/report/dashboards/dashboards.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/add-charts-to-dashboard.md",
+            "redirect_url": "/vsts/report/dashboards/add-charts-to-dashboard.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/add-markdown-to-dashboard.md",
+            "redirect_url": "/vsts/report/dashboards/add-markdown-to-dashboard.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/address-inaccuracies-published-for-summary-values.md",
+            "redirect_url": "/vsts/report/dashboards/address-inaccuracies-published-for-summary-values.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/add-widget-to-dashboard.md",
+            "redirect_url": "/vsts/report/dashboards/add-widget-to-dashboard.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/charts.md",
+            "redirect_url": "/vsts/report/dashboards/charts.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/charts-dashboard-permissions-access.md",
+            "redirect_url": "/vsts/report/dashboards/charts-dashboard-permissions-access.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/choose-source-data-authoring-tool.md",
+            "redirect_url": "/vsts/report/dashboards/choose-source-data-authoring-tool.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/dashboard-permissions.md",
+            "redirect_url": "/vsts/report/dashboards/dashboard-permissions.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/overview.md",
+            "redirect_url": "/vsts/report/dashboards/overview.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/team-dashboard.md",
+            "redirect_url": "/vsts/report/dashboards/team-dashboard.md",
+            "redirect_document_id": false
+       }, 
+       {
+            "source_path": "docs/report/widget-catalog.md",
+            "redirect_url": "/vsts/report/dashboards/widget-catalog.md",
             "redirect_document_id": false
        }
     ]

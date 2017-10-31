@@ -1,4 +1,4 @@
-- name: "VSTS & PowerBI"
+- name: "PowerBI (VSTS)"
   href: index.md
 - name: Overview
   items:
@@ -41,7 +41,7 @@
 - name: Resources
   items:
   - name: "Dashboards, charts, & widgets"
-    href: ../index.md
+    href: ../dashboards/index.md
   - name: PowerBI Desktop
     href: https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/
   - name: PowerBI Documentation

@@ -1,6 +1,6 @@
 ---
-title: VSTS & Power BI | VSTS 
-description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS and and Team Foundation Server (TFS)  
+title: PowerBI (VSTS)
+description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS 
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 10/30/2017
 ---
 
-# VSTS & PowerBI 
+# PowerBI (VSTS)
 
 <b>VSTS</b> 
 
@@ -17,11 +17,6 @@ ms.date: 10/30/2017
 > **Feature availability:**  Using the Power BI Content Pack, you can generate PowerBI dashboards and reports. The Power BI Data Connector, however, requires access to the Analytics Service. The Analytics Service is in a closed preview at this time.  
 >  
 > Both the Power BI Content Pack and Power BI Data Connector are only available for VSTS.  
-
-<!--
-## Overview
-- [Power BI integration overview](../powerbi/overview.md)
--->
 
 ## How-to Guides
 
@@ -54,15 +49,16 @@ Future:
 - [Power BI available data](vso-pbi-whats-available-vs.md)    
 - [Data Connector available functions](data-connector-functions.md)    
 - [Analytics Service overview](../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+
 <!-- Note: The above document will be cut, once all content is verified as moved to extend\Analytics-->
 
 ## Resources 
 - [Analytics](../analytics/index.md)    
 - [Extend on Analytics](../extend-analytics/index.md)    
-- [Dashboards, charts, & widgets](../index.md)  
+- [Dashboards, charts, & widgets](../dashboards/index.md)  
 - [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
 - [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
-- [Developer Community: PowerBI support forum] (https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI)
+- [Developer Community: PowerBI support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)
 
  

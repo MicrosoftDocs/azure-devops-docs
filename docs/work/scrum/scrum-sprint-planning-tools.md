@@ -139,14 +139,14 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 **TFS 2015**
 <a id="tfs2015-sprints" />
 
 For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ## Related notes 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  

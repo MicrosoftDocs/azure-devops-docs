@@ -56,7 +56,7 @@ Click the chart to display it in a larger view.
 ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 
 >[!NOTE]  
->You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
+>You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
 
 
 In particular you can review your sprint burndown charts to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
@@ -90,7 +90,7 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 ##Current and past sprint burndown charts
 As you complete each sprint, the system maintains a history of your activity. You can always review past sprints and sprint burndown charts by choosing the sprint listed under the Past section.  
 
-<img src="_img/ALM_DS_PastSprints.png" alt="Past sprints provide historical record" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_DS_PastSprints.png" alt="Past sprints provide historical record" style="border: 2px solid #C3C3C3;" />
 
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  

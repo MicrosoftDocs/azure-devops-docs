@@ -22,13 +22,13 @@ From the web portal, you can view pinned items on the home page, including flat-
 
 ![Team dashboard](_img/on-premises-tfs-team-dashboard.png)
 
-If you need to add a team first, see [Multiple teams](../work/scale/multiple-teams.md).
+If you need to add a team first, see [Multiple teams](../../work/scale/multiple-teams.md).
 
 ##Pin items to a dashboard 
 
 You pin an item to the team dashboard from the code, work, and build pages.
 
-1.  If you aren't a team administrator, [get added as one](../work/scale/manage-team-assets.md).  
+1.  If you aren't a team administrator, [get added as one](../../work/scale/manage-team-assets.md).  
 
 2.	Pin a work item query from its context menu.
 
@@ -58,9 +58,9 @@ Either choose the context menu for the item that you want to remove and select U
 
 ##Related notes
 
-- [Define queries](../work/track/using-queries.md) 
-- [Define builds](../build-release/overview.md) 
-- [Test charts](../manual-test/getting-started/track-test-status.md) 
+- [Define queries](../../work/track/using-queries.md) 
+- [Define builds](../../build-release/overview.md) 
+- [Test charts](../../manual-test/getting-started/track-test-status.md) 
 
 
 <a id="switch-team-context">  </a>

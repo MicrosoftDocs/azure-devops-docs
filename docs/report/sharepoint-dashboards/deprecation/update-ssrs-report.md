@@ -15,7 +15,7 @@ ms.topic:
 
 Displaying SSRS Reports on a SharePoint will continue to work, even after disabling SharePoint integration. Displaying SSRS Reports in SharePoint is based on SharePoint and SQL Server Reporting Services technologies. It doesn’t require the TFS Extension for SharePoint to operate. 
 
-<img src="_img/update-ssrs-report.png" alt="TFS/SharePoint Integration - Update SSRS Report" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/update-ssrs-report.png" alt="TFS/SharePoint Integration - Update SSRS Report" style="border: 2px solid #C3C3C3;" />
 
 The TFS site used the standard [SharePoint Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with a URL to the SSRS Report.
 

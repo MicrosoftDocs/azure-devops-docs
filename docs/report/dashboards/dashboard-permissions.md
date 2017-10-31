@@ -25,5 +25,5 @@ From the **Permissions** tab you can grant or restrict permissions to your team 
 
 ## Related notes
 
-- [Add a team administrator](../work/scale/add-team-administrator.md)
+- [Add a team administrator](../../work/scale/add-team-administrator.md)
  

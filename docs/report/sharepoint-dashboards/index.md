@@ -42,7 +42,7 @@ ms.date: 09/05/2017
 
 ## Reference
 - [Project portal dashboards](project-portal-dashboards.md)
-- [Excel reports](../excel/excel-reports.md) 
+- [Excel reports](../excel/excel-reports.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
 
 
 ## Resources

@@ -192,8 +192,8 @@ VSTS upgrades.
 Both TFS and VSTS have a variety of tools to give you insight into the progress as well as the quality of
 your software projects. These include:
 
-* [Dashboards](../report/dashboards.md) and lightweight 
-[charts](../report/charts.md), available in both TFS and VSTS. These are 
+* [Dashboards](../report/dashboards/dashboards.md) and lightweight 
+[charts](../report/dashboards/charts.md), available in both TFS and VSTS. These are 
 very easy to set up and use, but are also fairly limited in what they can do.
 
 The following reports and dashboards&mdash;which are more complicated to use, but also more powerful&mdash;are only available in TFS: 

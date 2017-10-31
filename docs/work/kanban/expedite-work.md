@@ -17,7 +17,7 @@ Your Kanban board supports your ability to visualize the flow of work as it move
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Park&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
-<img src="_img/ALM_EW_IntroChart_3C.png" alt="Kanban board showing three swimlanes" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_EW_IntroChart_3C.png" alt="Kanban board showing three swimlanes" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]
 >Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">o</span> to expand all swimlanes and <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">u</span> to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows. For more tips, see [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
@@ -36,11 +36,11 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 ## Track work in swimlanes  
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
 
-<img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" />
 
 You can also focus on a single swimlane by collapsing all other lanes.
 
-<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 2px solid #C3C3C3;" /> 
 
 ## Configure swimlanes 
 So, what swimlanes will support your tracking needs?  
@@ -57,7 +57,7 @@ Once you've identified one or two, add them to your working Kanban board.
 	
 	**VSTS and TFS 2015.1:**  
 
-	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 2px solid #C3C3C3;" />    
+	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 2px solid #C3C3C3;" />   
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
 

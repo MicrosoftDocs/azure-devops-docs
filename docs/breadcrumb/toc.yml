@@ -71,15 +71,18 @@
       topicHref: /vsts/work/scale/index
   - name: Reporting
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=analytics
+    topicHref: /vsts/index#pivot=services&panel=reporting
     items:
     - name: Dashboards
-      tocHref: /vsts/report/
-      topicHref: /vsts/report/index
-    - name: "VSTS & PowerBI"
+      tocHref: /vsts/report/dashboards
+      topicHref: /vsts/report/dashboards/index
+    - name: Analytics (VSTS)
+      tocHref: /vsts/report/analytics/
+      topicHref: /vsts/report/analytics/index
+    - name: Power BI (VSTS)
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-    - name: TFS Reports
+    - name: SQL Server Reports (TFS)
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
   - name: Collaboration

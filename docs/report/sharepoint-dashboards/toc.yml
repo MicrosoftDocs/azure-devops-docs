@@ -64,7 +64,7 @@
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
-    href: ../../work/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md 
+    href: ../../work/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: SharePoint dashboards 

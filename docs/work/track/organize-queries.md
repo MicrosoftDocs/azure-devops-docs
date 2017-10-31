@@ -79,7 +79,7 @@ You add query folders from the **Work>Queries** page.
 
 <a id="favorite-query">  </a>
 ### Add a query to the dashboard or share it with your team 
-To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards.md).   
+To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards/dashboards.md).   
 
 Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../security/add-users-team-project.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 

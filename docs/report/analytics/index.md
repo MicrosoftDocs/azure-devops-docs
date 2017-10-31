@@ -1,6 +1,6 @@
 ---
-title: Analytics Service | VSTS 
-description: Index to topics for using Analytics Service on VSTS  
+title: Analytics Service (VSTS) 
+description: Index to topics for using the Analytics Service on VSTS  
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -9,7 +9,7 @@ ms.author: pantal
 ms.date: 10/10/2017
 ---
 
-# Analytics Service
+# Analytics (VSTS) 
 
 **VSTS**  
 

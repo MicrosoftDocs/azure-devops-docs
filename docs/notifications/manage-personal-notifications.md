@@ -32,11 +32,11 @@ Use this topic to learn how to:
 
 From the web portal, click the icon with your initials or picture icon, and select **Notification settings** from the drop-down menu. 
 
-<img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
 
 This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the the State as **On**. 
 
-<img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 
 A subscription can be just for you, or if you are a team admin, can be shared by everyone in the team. 
 
@@ -46,24 +46,24 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 1. From your Notifications page, click **New subscription**. 
 
-	<img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
 
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
 	Here we choose to get notified when a pull request is created within a specific team project, Fabrikam Fiber.   
 
-	<img src="_img/manage-personal-notifications-new-subscription-dialog.png" alt="New subscription dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/manage-personal-notifications-new-subscription-dialog.png" alt="New subscription dialog" style="border: 2px solid #C3C3C3;" />
 
 3. Modify the description to help you identify the subscription later. Also choose an email address for notifications to be delivered to. By default, your preferred email address is used. optionally, include one or more fields to further specify the event criteria. 
 
-	<img src="_img/manage-personal-notifications-complete-pull-request-subscription.png" alt="Updated subscription dialog with field criteria" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/manage-personal-notifications-complete-pull-request-subscription.png" alt="Updated subscription dialog with field criteria" style="border: 2px solid #C3C3C3;" />
 
 	> [!NOTE]   
 	> The fields available for filtering event criteria differ depending on the category and template you select.   
 
 4. Click **Finish** when done. The subscription now appears in the list under the category you selected. 
 
-	<img src="_img/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
 
 ## Unsubscribe or opt out of a team or OOB subscription
@@ -74,7 +74,7 @@ To unsubscribe from any notification, even one that you've defined, slide the St
  
 For example, here we turn off the Build completes subscription.   
 
-<img src="_img/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >Whether you are an administrator or not, toggling a shared team subscription from your notification settings only impacts you and not other team members.

@@ -22,7 +22,7 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 > **Feature availability**: You can access the widget catalog from VSTS or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for VSTS. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  
 >
 > With TFS 2015, you have access to a [single team dashboard](team-dashboard.md) with which you can pin items but can't add widgets to the dashboard. Install [TFS 2015 Update 1](https://www.visualstudio.com/news/tfs2015-update1-vs.aspx) or later version to get access to the widget catalog and [multiple team dashboards](dashboards.md). 
-To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../user-guide/provide-feedback.md#platform-version). 
+To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../../user-guide/provide-feedback.md#platform-version). 
 
 ## User-focused and team-scoped widgets 
 
@@ -55,7 +55,7 @@ Adds a configurable tile to display the summary of a code folder or Git reposito
 Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
 
 You need to add a widget for each Git repository of interest.
-To learn more about pull requests, see [Review code with pull requests](../git/pull-requests.md).
+To learn more about pull requests, see [Review code with pull requests](../../git/pull-requests.md).
 
 
 
@@ -88,9 +88,9 @@ Displays the list of work items currently assigned to the currently logged in us
 
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.    
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.    
 
-Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](./guidance/configure-burndown-burnup-widgets.md).  
+Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](../guidance/configure-burndown-burnup-widgets.md).  
 
 
 
@@ -103,9 +103,9 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.    
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.    
 
-Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](./guidance/configure-burndown-burnup-widgets.md).  
+Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](../guidance/configure-burndown-burnup-widgets.md).  
 
  
 ----
@@ -129,12 +129,12 @@ From the configuration dialog, select a shared query and [specify the chart type
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. 
 
-From the configuration dialog, [specify the team, backlog level, and other parameters you want](guidance/cumulative-flow.md#configure-widget).
+From the configuration dialog, [specify the team, backlog level, and other parameters you want](../guidance/cumulative-flow.md#configure-widget).
 
 Hover over each color within the chart to see the count of items for a particular Kanban column.  
 
@@ -146,7 +146,7 @@ Hover over each color within the chart to see the count of items for a particula
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
@@ -161,7 +161,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ![Lead time widget](_img/widget-lead-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created. 
@@ -175,9 +175,9 @@ Each marker on the chart corresponds to one or more work items with a particular
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
-Enables you to add work items from the dashboard. You [use work items to plan and track work](../work/backlogs/add-work-items.md).  <br/><br/>
+Enables you to add work items from the dashboard. You [use work items to plan and track work](../../work/backlogs/add-work-items.md).  <br/><br/>
 
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint (TFS) or the default iteration (VSTS). To change team defaults, see [Set team defaults](../work/scale/set-team-defaults.md).
+Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint (TFS) or the default iteration (VSTS). To change team defaults, see [Set team defaults](../../work/scale/set-team-defaults.md).
 
 
 ----
@@ -189,8 +189,8 @@ Work items that you add using this widget are automatically scoped to the team's
 
 Provides links to the following features: 
 - Opens a form to initiate a [request to provide feedback](/vsts/feedback/get-feedback?toc=/vsts/feedback/toc.json).
-- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../work/scrum/define-sprints.md).
-- Opens the team's quick dialog to modify your [team's area path](../work/scale/set-team-defaults.md).
+- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
+- Opens the team's quick dialog to modify your [team's area path](../../work/scale/set-team-defaults.md).
 
 For on-premises TFS, additional links are displayed when the corresponding resource is configured for the team project: 
 
@@ -198,9 +198,9 @@ For on-premises TFS, additional links are displayed when the corresponding resou
 
 ![Other links widget](_img/widget-other-links-tfs.png)  
 
-- [View project portal](sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the team project's portal.  
-- [View process guidance](sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
-- [View reports](sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](./admin/add-reports-to-a-team-project.md). 
+- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the team project's portal.  
+- [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
+- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
  
 
 ----
@@ -213,7 +213,7 @@ For on-premises TFS, additional links are displayed when the corresponding resou
 
 Adds a configurable tile that lists the results of a shared query. 
 From the configuration dialog, select either a team favorite or shared query.  
-To create a shared query, see [Use the query editor to list and manage queries](../work/track/using-queries.md). 
+To create a shared query, see [Use the query editor to list and manage queries](../../work/track/using-queries.md). 
 
 
 ----
@@ -224,7 +224,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 Adds a configurable tile to display the summary of a shared query results.
 From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
-To create a shared query, see [Use the query editor to list and manage queries](../Work/track/using-queries.md). 
+To create a shared query, see [Use the query editor to list and manage queries](../../Work/track/using-queries.md). 
   
 
 ---- 
@@ -236,7 +236,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
-Teams [use the burndown chart to mitigate risk and check for scope creep](../work/scrum/sprint-burndown.md) throughout the sprint cycle. 
+Teams [use the burndown chart to mitigate risk and check for scope creep](../../work/scrum/sprint-burndown.md) throughout the sprint cycle. 
 
 
 ---- 
@@ -248,7 +248,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../wor
 
 
 Inserts the team's capacity bar chart for the current sprint.
-Teams [specify their capacity to plan and monitor their sprint resources](../work/scale/capacity-planning.md).  
+Teams [specify their capacity to plan and monitor their sprint resources](../../work/scale/capacity-planning.md).  
 
 ---- 
 <a id="sprint-overview-widget"></a> 
@@ -260,7 +260,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../wor
 For VSTS, inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.  
 For on-premises TFS, inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started.
 
-Teams [plan their sprints by defining sprints](../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../work/scrum/sprint-planning.md). 
+Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/sprint-planning.md). 
 
 ---- 
 <a id="velocity-widget"></a> 
@@ -269,11 +269,11 @@ Teams [plan their sprints by defining sprints](../work/scale/set-team-defaults.m
 ![Sprint velocity widget](_img/widget-velocity.png)
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.
 
 
 The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    
-For additional guidance, see [Velocity](guidance/team-velocity.md). 
+For additional guidance, see [Velocity](../guidance/team-velocity.md). 
 
 
 ---- 
@@ -283,10 +283,10 @@ For additional guidance, see [Velocity](guidance/team-velocity.md).
 ![Work links widget](_img/widget-work-links.png)
 Provides quick access to open the following Agile tools and team resources:
 
-- [Backlog](../Work/backlogs/create-your-backlog.md)  
-- [Kanban Board](../Work/kanban/kanban-basics.md)  
-- [Task board](../Work/scrum/task-board.md)  
-- [Queries](../Work/track/using-queries.md)  
+- [Backlog](../../Work/backlogs/create-your-backlog.md)  
+- [Kanban Board](../../Work/kanban/kanban-basics.md)  
+- [Task board](../../Work/scrum/task-board.md)  
+- [Queries](../../Work/track/using-queries.md)  
 
 
 ## Build, test, release   
@@ -316,7 +316,7 @@ Hover over a bar to learn how long the build took to complete. Click the bar to 
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
-To learn more, see [Track your test results](../manual-test/getting-started/track-test-status.md).
+To learn more, see [Track your test results](../../manual-test/getting-started/track-test-status.md).
 
 ---- 
 
@@ -330,7 +330,7 @@ To learn more, see [Track your test results](../manual-test/getting-started/trac
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
 
-To learn more, see [View and manage releases](../build-release/actions/view-manage-releases.md#release-overview).
+To learn more, see [View and manage releases](../../build-release/actions/view-manage-releases.md#release-overview).
 
 
 ---- 
@@ -343,7 +343,7 @@ To learn more, see [View and manage releases](../build-release/actions/view-mana
 > **Feature availability:**  You can access this widget from VSTS.   
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
-To learn more, see [Add release information to the dashboard](../build-release/actions/view-manage-releases.md#add-widget). 
+To learn more, see [Add release information to the dashboard](../../build-release/actions/view-manage-releases.md#add-widget). 
 
 ---- 
 <a id="requirements-quality-widget"></a> 
@@ -356,7 +356,7 @@ To learn more, see [Add release information to the dashboard](../build-release/a
 > **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
-To learn more, see [Associate automated test results with requirements](../build-release/test/associate-automated-results-with-requirements.md). 
+To learn more, see [Associate automated test results with requirements](../../build-release/test/associate-automated-results-with-requirements.md). 
 
 ---- 
 <a id="test-results-widget"></a>
@@ -371,7 +371,7 @@ Adds a configurable tile that displays the trend of test results, such as passed
 
 From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. 
 
-To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../build-release/test/review-continuous-test-results-after-build.md). 
+To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../../build-release/test/review-continuous-test-results-after-build.md). 
 
 ## Informational content and other links 
 
@@ -409,11 +409,11 @@ To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md).
 ![Team members widget](_img/widget-team-members.png)
 
 Sows team member profiles and, on-hover, their user account alias.
-For team admins, supports access to the quick dialog to [add or remove team members](../work/scale/multiple-teams.md).  
+For team admins, supports access to the quick dialog to [add or remove team members](../../work/scale/multiple-teams.md).  
 
 
 > [!NOTE]  
-> This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../work/scale/multiple-teams.md#add-team-members). 
+> This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../work/scale/multiple-teams.md#add-team-members). 
 
 ---- 
 <a id="team-room-widget"></a> 
@@ -421,7 +421,7 @@ For team admins, supports access to the quick dialog to [add or remove team memb
 
 ![Team room widget](_img/widget-team-room.png)
 
-Provides status and access to [team rooms](../collaborate/collaborate-in-a-team-room.md).
+Provides status and access to [team rooms](../../collaborate/collaborate-in-a-team-room.md).
 Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
 
 ---- 
@@ -430,7 +430,7 @@ Team rooms support increased team productivity by providing a space to discuss w
 
 ![Visual Studio widget](_img/widget-visual-studio.png)
 
-Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
+Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
 
 ---- 
 <a id="how-to-widget"></a>
@@ -457,6 +457,6 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards](https://www.visualstudio.com/en-us/docs/integrate/api/dashboard/dashboards).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards](https://www.visualstudio.com/en-us/docs/integrate/api/dashboard/dashboards).
 
 

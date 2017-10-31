@@ -84,25 +84,25 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
     >[!NOTE]  
     >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
-    <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
 
 3.  Choose the file to upload. Your [custom process must meet specific constraints](customize-process.md) in order to pass validation checks during import.  
 
-	<img src="_img/import-process-dialog.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" /> 	 
+	<img src="_img/import-process-dialog.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />	 
 
 	>[!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
 3.  Upon successful import, you'll see the following messsage.  
 
-    <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
 
     If the process doesn't pass the validation checks performed on import, you'll receive a list of error messages.  
     [Correct each error](resolve-errors.md) and then retry the import. 
 
 4.  You can immediately create a team project using the newly imported process. 
 
-	<img src="_img/import-process-new-team-project.png" alt="Create team project from imported process" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/import-process-new-team-project.png" alt="Create team project from imported process" style="border: 2px solid #C3C3C3;" />
 
 <a id="update-process">  </a>
 ## Update an existing process
@@ -116,21 +116,21 @@ Once you've added a process, you can update it by importing a zip file where you
 
 2.  Confirm that you want to update the existing process.  
 
-    <img src="_img/ALM_IP_UpdateProcessConfirm.png" alt="Import process confirmation dialog" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/ALM_IP_UpdateProcessConfirm.png" alt="Import process confirmation dialog" style="border: 2px solid #C3C3C3;" />
 
 3.  You'll see the following dialog while the system updates all team projects that were created using the updated process.  
 
-    <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
 4.  Upon successful import, you'll see the following messsage. All team projects that were created with the process are updated with the modifications. 
 
-    <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and team projects updated" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and team projects updated" style="border: 2px solid #C3C3C3;" />
 
 5.  If you renamed or deleted fields or work item types, you will receive a confirmation message. 
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
-    <img src="_img/ALM_IP_InfoMessage.png" alt="Deleted field confirmation dialog" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/ALM_IP_InfoMessage.png" alt="Deleted field confirmation dialog" style="border: 2px solid #C3C3C3;" />
 
      
 
@@ -139,7 +139,7 @@ Once you've added a process, you can update it by importing a zip file where you
 
 Set a process as the default to have it preselected for all new team projects you plan to create. 
 
-<img src="_img/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" />
 
 <a id="export-process">  </a>
 ## Export a process

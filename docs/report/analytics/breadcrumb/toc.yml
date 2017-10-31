@@ -4,7 +4,7 @@
   items: 
   - name: Reporting
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=analytics
+    topicHref: /vsts/index#pivot=services&panel=reporting
     items:
     - name: Analytics Service
       tocHref: /vsts/report/analytics/

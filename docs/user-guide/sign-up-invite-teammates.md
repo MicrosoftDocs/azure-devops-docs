@@ -29,13 +29,13 @@ Enter your email address for your Microsoft account.
 	and get VSTS as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
-	<img src="../accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" />
 
 0.	On the Microsoft account sign-in page, 
 enter your email address for your Microsoft account. 
 Then enter your password, and finish signing in.
 
-	<img src="../accounts/_img/_shared/sign-in-msa2.png" alt="Enter password for your Microsoft account" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/_shared/sign-in-msa2.png" alt="Enter password for your Microsoft account" style="border: 2px solid #C3C3C3;" />
 
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
@@ -43,7 +43,7 @@ Then enter your password, and finish signing in.
 0.	Name your  account. 
 To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 2px solid #C3C3C3;" />
 
 	Learn which version control ([Git](../git/overview.md) 
 	or [Team Foundation Version Control](../tfvc/overview.md)) 
@@ -51,7 +51,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 0.	Confirm your account's location. 
 
-	<img src="../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
 	
 	VSTS will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
@@ -61,7 +61,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 0.	After VSTS creates your account and team project, 
 you can invite others to join your project, add code, or start planning and tracking using work items.
 
-	<img src="../accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
 
 	Congratulations, you're now a VSTS account owner! 
 

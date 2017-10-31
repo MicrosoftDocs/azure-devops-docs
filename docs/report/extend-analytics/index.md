@@ -9,7 +9,7 @@ ms.author: pantal
 ms.date: 10/30/2017
 ---
 
-# Extend with the OData Analytics Service
+#  Extend on Analytics with OData
 
 **VSTS**  
 
