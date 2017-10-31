@@ -1,0 +1,16 @@
+- name: "Analytics"
+  href: index.md
+- name: Overview
+  items:
+  - name: What is the Analytics Service
+    href: overview-analytics-service.md
+- name: How-to Guides
+  items:
+  - name: Set permissions for Analytics Service
+    href: analytics-security.md
+- name: Resources
+  items:
+  - name: VSTS & Power BI
+    href: ../powerbi/index.md
+  - name: Extend on Analytics
+    href: ../extend-analytics/index.md

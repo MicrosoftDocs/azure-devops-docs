@@ -6,9 +6,8 @@ ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 10/30/2017
 ---
-
 
 # Client authentication options 
 
@@ -153,6 +152,6 @@ If you receive an access denied message, you may need to change your authenticat
 - [Analytics service overview](overview-analytics-service.md)  
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
-- [Access data throughPower BI desktop](access-analytics-power-bi.md)  
+- [Access data through Power BI desktop](access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to PowerBI.com](publishing-power-bi-desktop-to-power-bi.md)  
 

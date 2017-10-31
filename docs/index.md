@@ -224,7 +224,8 @@ ms.date: 07/26/2017
                                     <h3>Reporting</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
-                                        <li><a class="barLink" href="/vsts/report/powerbi/index">PowerBI</a></li>
+                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
+                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting (TFS)</a></li>
                                     </ul>
                                     <h3>Collaboration</h3>
@@ -254,6 +255,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
+                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Analytics (VSTS)</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
@@ -732,6 +734,25 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/report/analytics/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_analytics.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Analytics (VSTS)</h3>
+                                                    <p>Gain insights. Make data-driven decisions. Evaluate progress.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/report/powerbi/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -742,9 +763,8 @@ ms.date: 07/26/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PowerBI</h3>
-                                                    <p>Gain insight and analyze the progress and quality of your team projects
-                                                        across your enterprise.</p>
+                                                    <h3>Power BI (VSTS)</h3>
+                                                    <p>Use Power BI to drive ad hoc analysis, produce beautiful reports, and publish them for enterprise consumption.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1069,6 +1089,25 @@ ms.date: 07/26/2017
                                                     <h3>Service Hooks</h3>
                                                     <p>Create subscriptions and configure the integration of VSTS or TFS with
                                                         third-party apps.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/report/extend-analytics/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_analytics.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Analytics (VSTS)</h3>
+                                                    <p>Use the Analytics Service OData API's to create custom visualizations and reports.</p>
                                                 </div>
                                             </div>
                                         </div>

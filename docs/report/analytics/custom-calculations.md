@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 9EB84AC2-9A2B-43EF-821D-3418810F5D32
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 10/30/2017
 ---
 
 #Create custom calculations with Power Query
@@ -24,7 +24,7 @@ In this topic we'll add a simple but useful column - an Age In Days column.
 
 1. First, navigate to the correct location within the file:  
 	- For Excel: [Access data through Excel](access-analytics-excel.md)   
-	- For PowerBI: [Access data through Power BI desktop](access-analytics-power-bi.md).  
+	- For Power BI: [Access data through Power BI desktop](access-analytics-power-bi.md).  
 
 2. Choose to Edit Queries:  
 

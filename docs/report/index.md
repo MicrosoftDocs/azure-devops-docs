@@ -51,7 +51,8 @@ Start gaining visibility into how your team is progressing by adding one or more
  
 ## Resources 
 
-- [Build a dashboard widget](/vsts/extend/develop/add-dashboard-widget)  
+- [Build a widget with Work Item Tracking data](/vsts/extend/develop/add-dashboard-widget)  
+- [Build a widget with a chart](/vsts/extend/develop/add-chart)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
  
    

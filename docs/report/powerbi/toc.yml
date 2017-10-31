@@ -6,8 +6,20 @@
     href: overview.md
 - name: How-to Guides
   items:
-  - name: Client authentication 
-    href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Assign permissions (Security)
+    href: ../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json  
+  - name: Power BI Data Connector
+    items:
+    - name: Client authentication 
+      href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    - name: Connect to VSTS 
+      href: data-connector-connect.md
+    - name: Access data through Power BI desktop
+      href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    - name: Power BI desktop and OData aggregations
+      href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    - name: "Share reports, publish to PowerBI.com"
+      href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Power BI Content Pack
     items:
     - name: Connect to VSTS with Power BI Content Pack
@@ -17,23 +29,7 @@
     - name: Create trend charts
       href: create-trend-charts.md
     - name: Create rollup charts
-      href: create-rollup-charts.md
-  - name: Power BI Data Connector
-    items:
-    - name: Assign permissions (Security)
-      href: ../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: Connect to VSTS 
-      href: data-connector-connect.md
-    - name: Access data through Power BI desktop
-      href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: Power BI desktop and OData aggregations
-      href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: "Share reports, publish to PowerBI.com"
-      href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-- name: Samples
-  items:
-  - name: Power BI example reports
-    href: data-connector-examples.md
+      href: create-rollup-charts.md      
 - name: Reference
   items:
   - name: Power BI available data
@@ -50,5 +46,3 @@
     href: https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/
   - name: PowerBI Documentation
     href: https://powerbi.microsoft.com/documentation/powerbi-landing-page/
-  - name: Insights Lab Power BI Widget
-    href: https://marketplace.visualstudio.com/items?itemName=InsightsLab.powerbiWidget
