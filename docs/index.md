@@ -7,7 +7,9 @@ ms.technology: vs-devops-overview
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 07/26/2017 
+ms.date: 07/26/2017
+featureFlags:
+- clicktale 
 ---
 
 <div id="main" class="v2">
