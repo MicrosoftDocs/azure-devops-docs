@@ -38,7 +38,7 @@ A few options are available for you to [configure your chart](#configure) or [co
 ## Configure the CFD widget    
 
 >[!NOTE]   
-><b>Feature availability:</b> For VSTS, you can add the [CFD widget](../widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.  
+><b>Feature availability:</b> For VSTS, you can add the [CFD widget](../dashboards/widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
 [Manage team assets](../../work/scale/add-team-administrator.md)to get added as a team admin. 

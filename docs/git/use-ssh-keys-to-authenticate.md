@@ -34,12 +34,12 @@ The following steps cover configuration of SSH key authentication on the followi
 
 --- 
 - Linux
-- Mac OS X running at least Leopard (10.5)
+- macOS running at least Leopard (10.5)
 - Windows systems running  [Git for Windows](http://www.git-scm.com/download/win)   
 
 ---
 
-Configure SSH using the command line. `bash` is the common shell on Linux and Mac OS X and the Git for Windows installation adds a shortcut to Git Bash in the Start Menu.
+Configure SSH using the command line. `bash` is the common shell on Linux and macOS and the Git for Windows installation adds a shortcut to Git Bash in the Start menu.
 Other shell environments will work, but are not covered in this article.
 
 ### Step 1: Create your SSH keys
@@ -199,5 +199,5 @@ eval `ssh-agent`
 
 You can find `ssh-add` as part of the Git for Windows distribution and also run it in any shell environment on Windows. 
 
-On Mac OS X and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
+On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
 takes care of starting `ssh-agent` for you.

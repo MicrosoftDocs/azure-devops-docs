@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2016
+ms.date: 10/31/2017
 ---
 
 # Checkin command
@@ -156,8 +156,6 @@ Almost every change that you make to the files on your dev machine is stored in 
     c:\code\SiteApp\Main>tf checkin
 
 Displays the **Check In** dialog box, which displays all pending changes in the current workspace. You can use the **Check In** dialog box to select or clear the pending changes you want to check in, add a comment, associate work items, and perform other tasks and then choose the **Check In** button when you are ready to proceed.
-
-### Check in all pending changes with a comment
 
 ### Check in all pending changes with a comment
 

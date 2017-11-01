@@ -22,7 +22,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 * While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-* You need a build agent configured on a Mac machine. Simply open the OSX Terminal app on your Mac and follow these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start up the agent for the first time.
+* You need a build agent configured on a Mac machine. Simply open the macOS Terminal app on your Mac and follow these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start up the agent for the first time.
 
 * Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
@@ -44,7 +44,7 @@ https://github.com/adventworks/xcode-sample
 
 ---
 
-The sample provided here is an iOS app, but the concepts described here essentially translate to other Xcode builds. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed on the OSX machine as this is not part of Xcode itself.
+The sample provided here is an iOS app, but the concepts described here essentially translate to other Xcode builds. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed on the macOS machine as this is not part of Xcode itself.
 
 ## Set up continuous integration
 

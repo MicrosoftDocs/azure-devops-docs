@@ -222,7 +222,7 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 <blockquote><span style="font-size:1.0em;"><b>Feature availability: </b>Kanban query fields are currently available from VSTS or from TFS 2015 Update 1 or later versions. </span></blockquote>
 
-Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../Report/charts.md) based on these queries. 
+Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 

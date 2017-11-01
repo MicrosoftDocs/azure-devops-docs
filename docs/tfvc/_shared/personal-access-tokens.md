@@ -19,7 +19,7 @@
 0.  Select the [scopes](/vsts/integrate/get-started/authentication/oauth#scopes) 
 that this token will authorize for **your specific tasks**.
 
-	For example, to build and release apps with a Windows, OSX, or Linux agent, 
+	For example, to build and release apps with a Windows, macOS, or Linux agent, 
 	[limit your token's scope to **Agent Pools (read, manage)**](/vsts/build-release/concepts/agents/agents).
    
 0. When you're done, make sure to *copy the token*. You'll use this token as your password.
@@ -33,7 +33,7 @@ that this token will authorize for **your specific tasks**.
 	so that you don't have to enter your credentials every time. 
 	Here are some recommended credential managers:
     
-	*	Git: [Git Credential Manager for Mac OS X and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux) 
+	*	Git: [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux) 
 	or [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) 
 	(Requires [Git for Windows](https://www.git-scm.com/download/win))
 	*	NuGet: [NuGet Credential Provider](/vsts/package/nuget/nuget-exe)

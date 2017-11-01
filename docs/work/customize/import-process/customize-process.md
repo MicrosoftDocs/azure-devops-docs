@@ -84,7 +84,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 1.  From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
     
-	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
   
     Save the zip file and extract all files.
 

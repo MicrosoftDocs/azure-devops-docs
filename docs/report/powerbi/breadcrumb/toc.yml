@@ -4,8 +4,8 @@
   items: 
   - name: Reporting
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=analytics
+    topicHref: /vsts/index#pivot=services&panel=reporting
     items:
-    - name: "VSTS & Power BI"
+    - name: Power BI (VSTS)
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index

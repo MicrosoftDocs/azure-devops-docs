@@ -27,8 +27,8 @@ In addition, the TFS ecosystem provides support for adding extensions, integrati
 
 When you deploy TFS, you can also configure the following servers or integration points: 
 
-- **Build server**: supports on-premise builds, you can use a combination of on-premises builds and cloud-hosted builds   
-- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube 
+- **Build server**: supports on-premises and cloud-hosted builds
+- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube
 
 
 

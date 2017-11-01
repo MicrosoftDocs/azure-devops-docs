@@ -148,7 +148,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 	If additional portfolio backlogs are needed --for example, Scenarios or Initiatives--you can [add them as well](../customize/add-portfolio-backlogs.md).  
 
-- **[Configure dashboards](../../Report/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create. 
+- **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create. 
 
 - **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md). 
 

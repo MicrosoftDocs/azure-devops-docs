@@ -33,7 +33,7 @@ For information about client tools, see [Tools](tools.md).
 ## Dashboards  
 From the **Dashboards** hub you gain access to user-configurable dashboards.   
 
-<img src="../report/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" /> 
+<img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" />
 
 Tasks you can perform in this hub include: 
 - Add, configure, and manage dashboards   
@@ -41,14 +41,14 @@ Tasks you can perform in this hub include:
 - Quickly navigate to different areas of your team project 
  
 
-To learn more, see [Dashboards](../report/dashboards.md). 
+To learn more, see [Dashboards](../report/dashboards/dashboards.md). 
 
 
 ## Code 
 
 From the **Code** hub you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.   
 
-<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" />
 
 From the Code hub for Git you can perform these tasks:  
 - Review, download, and edit files and review the change history for a file  
@@ -61,7 +61,7 @@ To learn more, see the overviews for [Git](../git/overview.md) or [TFVC](../tfvc
 ## Plan and track work 		
 From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
 
-<img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
 Specifically, from the **Work** you can perform these tasks:   			
 - Add and update work items 
@@ -78,7 +78,7 @@ See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
 
 
-<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" />
 
 You use this hub to implement continuous integration and continuous delivery. 
 - **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
@@ -91,7 +91,7 @@ To learn more, see [Continuous integration on any platform](../build-release/ove
 ## Test 
 Test features support manual and exploratory testing, load or performace testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
 
-<img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" />
 
 Test **Test** hub provides support for the following:  
 - Customization of workflows with test plan, test suite and test case work items  
@@ -150,7 +150,7 @@ For continuous delivery to Azure from VSTS, see [Automatically build and deploy 
 There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.   
 
 
-<img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
 > [!div class="mx-tdBreakAll"]  
 > |Account Management (VSTS)  | Administration (TFS)  | 

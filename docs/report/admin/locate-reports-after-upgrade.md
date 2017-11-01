@@ -27,7 +27,7 @@ To view a pre-upgrade report, you may have to modify it to address changes that 
 Two sets of data warehouse resources
 
 
-<img src="_img/locate-reports-db-names.png" alt="Two sets of reports and two locations" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/locate-reports-db-names.png" alt="Two sets of reports and two locations" style="border: 2px solid #C3C3C3;" />
 
 
 

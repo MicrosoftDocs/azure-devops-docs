@@ -203,7 +203,7 @@ Open a shared query or [use the query editor](../track/using-queries.md) to crea
 - Bugs to fix for a target release (```Tags Contains RTM```)
 - Recent bugs - bugs opened within the last 3 weeks (```Created Date > @Today-21```) 
 
-Once you have the queries of interest to your team, you can [create status or trend charts](../../report/charts.md) that you can also pin to a [team dashboard](../../report/dashboards.md).  
+Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md) that you can also pin to a [team dashboard](../../report/dashboards/dashboards.md).  
 
 ### Triage mode in query results
 
@@ -273,7 +273,7 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 ![Bug trend chart from query](_img/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](_img/manage-bugs-priority-chart.png)   
 
-To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md) and [Charts](../../report/charts.md), and [Dashboards](../../report/dashboards.md).    
+To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
 ## Customize the bug form
 

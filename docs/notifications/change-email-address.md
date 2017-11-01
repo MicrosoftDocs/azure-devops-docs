@@ -28,11 +28,11 @@ Notifications are sent by default to the preferred email address for your accoun
 
 2. From your Profile/Information page, click **Edit**. 
 
-	<img src="_img/change-email-address-open-profile.png" alt="VSTS, Profile page" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/change-email-address-open-profile.png" alt="VSTS, Profile page" style="border: 2px solid #C3C3C3;" />  
 
 2. Change the address and save your changes.    
 
-	<img src="_img/change-email-address-edit-profile.png" alt="VSTS, Profile page" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/change-email-address-edit-profile.png" alt="VSTS, Profile page" style="border: 2px solid #C3C3C3;" />  
 
 <!---
  Change profile settings (TFS)    

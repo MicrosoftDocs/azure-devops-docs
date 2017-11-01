@@ -144,7 +144,7 @@ When you delete an area or an iteration node, the system automatically updates t
 
 ## Chart progress by area or iteration
 
-You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/charts.md) as shown in the following stacked bar chart.  
+You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
 <img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 2px solid #C3C3C3;" /> 
 

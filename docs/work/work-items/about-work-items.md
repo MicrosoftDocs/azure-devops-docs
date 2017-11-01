@@ -133,7 +133,7 @@ To learn more, see these topics:
 - [Create managed queries to list, update, or chart work items ](../track/example-queries.md)  
 - [View, run, or email a query](../track/view-run-query.md)  
 - [Adhoc vs managed queries](../track/adhoc-vs-managed-queries.md)  
-- [Charts](../../report/charts.md)  
+- [Charts](../../report/dashboards/charts.md)  
 
 
 ## Customize a WIT 

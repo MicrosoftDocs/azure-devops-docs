@@ -4,8 +4,8 @@
   items: 
   - name: Reporting
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=analytics
+    topicHref: /vsts/index#pivot=services&panel=reporting
     items:
-    - name: TFS Reporting
+    - name: SQL Server Reporting (TFS)
       tocHref: /vsts/
       topicHref: /vsts/report/sql-reports/index

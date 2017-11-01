@@ -12,7 +12,7 @@ ms.date: 8/22/2017
 
 # Dashboards, charts, & widgets    
 
-[!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
 
 Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
@@ -28,7 +28,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 **Sample chart widgets**  
 
-![Lead time widget](guidance/_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](guidance/_img/cfd-exampe-rolling-30-days.png)   
+![Lead time widget](../guidance/_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](../guidance/_img/cfd-exampe-rolling-30-days.png)   
 
 **Sequence for adding and customizing a dashboard**
 
@@ -61,10 +61,10 @@ With flat-list queries, you can create various charts to monitor status, progres
 
 **Sequence for adding query-based charts to a dashboard**   
 
-[![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
+[![Edit query](_img/gs-chart-query.png)](../../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
 
-Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/backlogs/create-your-backlog.md). 
+Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../work/backlogs/create-your-backlog.md). 
 
 
 ## Test progress, results, and trends  
@@ -79,7 +79,7 @@ And, just like work item query-based charts, you can add these charts to a dashb
 
 **Sequence for adding test progress and result charts to a dashboard**  
 
-[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+[![Edit query](_img/gs-chart-test-type.png)](../../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
 
@@ -88,18 +88,18 @@ And, just like work item query-based charts, you can add these charts to a dashb
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
 
-- [Cumulative flow](guidance/cumulative-flow.md)
-- [Team velocity](guidance/team-velocity.md)
-- - [Sprint burndown chart](../work/scrum/sprint-burndown.md)  
+- [Cumulative flow](../guidance/cumulative-flow.md)
+- [Team velocity](../guidance/team-velocity.md)
+- - [Sprint burndown chart](../../work/scrum/sprint-burndown.md)  
 
 
 ## Sprint charts     
 
-Each sprint provides access to two charts. The first [tracks capacity](../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../work/scrum/sprint-burndown.md) in terms of remaining work. 
+Each sprint provides access to two charts. The first [tracks capacity](../../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../../work/scrum/sprint-burndown.md) in terms of remaining work. 
 
 | Capacity bars | Burndown  |
 |-------| ----- |
-|![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
+|![Capacity bars](../../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
 
 
 **Sprint chart widgets**  
@@ -119,12 +119,12 @@ Each sprint provides access to two charts. The first [tracks capacity](../work/s
 ### Add custom fields  
 You can add data to support reporting requirements in the following ways:
 
-- [Add a custom field (Inheritance process model, VSTS)](../work/customize/process/customize-process-field.md)
-- [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
+- [Add a custom field (Inheritance process model, VSTS)](../../work/customize/process/customize-process-field.md)
+- [Add or modify a field (Hosted XML or On-premises XML)](../../work/customize/add-modify-field.md)  
 
 ### Extensibility 
 
-Using the REST API service, you can [create a custom widget](../extend/develop/add-dashboard-widget.md). 
+Using the REST API service, you can [create a custom widget](../../extend/develop/add-dashboard-widget.md). 
  
 
 
@@ -155,10 +155,10 @@ Using the REST API service, you can [create a custom widget](../extend/develop/a
 
 -->
 
-[excel-adhoc-query-report]: ./excel/create-status-and-trend-excel-reports.md
-[add-a-team]: ../Work/scale/multiple-teams.md
-[team-assets]: ../Work/scale/manage-team-assets.md
-[add-team-members]: ../Work/scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../work/scale/add-team-administrator.md
+[excel-adhoc-query-report]: ../excel/create-status-and-trend-excel-reports.md
+[add-a-team]: ../../work/scale/multiple-teams.md
+[team-assets]: ../../work/scale/manage-team-assets.md
+[add-team-members]: ../../work/scale/multiple-teams.md#add-team-members
+[add-team-admin]: ../../work/scale/add-team-administrator.md
    
 

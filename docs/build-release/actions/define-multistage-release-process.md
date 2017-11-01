@@ -182,9 +182,9 @@ the source code will start a new build and, from that, a new release. However, i
 
    ![Creating a new release](_img/define-multistage-release-process/create-release.png)
 
-1. Enter a description for the release, check that the correct artifacts are selected, and then choose **Queue**.
+1. Enter a description for the release, check that the correct artifacts are selected, and then choose **Create**.
 
-   ![Queuing the new release](_img/define-multistage-release-process/queue-release.png)
+   ![Creating the new release](_img/define-multistage-release-process/queue-release.png)
 
 1. After a few moments, a banner appears indicating that the new release was created.
    Choose the link (the name of the release).

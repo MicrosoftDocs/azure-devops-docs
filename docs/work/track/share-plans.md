@@ -225,7 +225,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
 
-- [Dashboards](../../report/dashboards.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
 
 ### SharePoint project portal (on-premises TFS)  

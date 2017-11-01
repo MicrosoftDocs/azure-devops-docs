@@ -26,7 +26,7 @@ The most common numeric fields track effort for items in the Requirements catego
 - Save changes you make to your query prior to adding or modifying a chart. 
 - To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause. 
 
-For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../customize/add-modify-field.md).
+For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../customize/add-modify-field.md).
 
 ### Useful filters 
 <table width="100%">

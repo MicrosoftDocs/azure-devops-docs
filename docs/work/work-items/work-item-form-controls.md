@@ -187,7 +187,7 @@ Keep in mind that the work item tracking experience and forms that appear in Vis
 <!---
 
 
-From the [New work item widget](../../Report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../Report/dashboards.md), you can choose the type of work item you want to create.  
+From the [New work item widget](../../Report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../report/dashboards/dashboards.md), you can choose the type of work item you want to create.  
 
 ![Add work item from a New work item widget](../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 

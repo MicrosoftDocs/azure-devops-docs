@@ -16,7 +16,7 @@ author: yukom
 
 Today we are releasing a preview of a new way to extend and integrate with Visual Studio Online using REST, OAuth, and service hooks. With this deployment you can:
 
--Integrate with many of the most popular cloud services; such as Trello, Campfire, Github, UserVoice, Zendesk and many more
+-Integrate with many of the most popular cloud services; such as Trello, Campfire, GitHub, UserVoice, Zendesk and many more
 -Develop custom apps and services that extend the power of Visual Studio Online
 
 You can find more information about the types of scenarios now possible at our [Visual Studio Online Integration](https://www.visualstudio.com/integrate/explore/explore-vso-vsi) hub.

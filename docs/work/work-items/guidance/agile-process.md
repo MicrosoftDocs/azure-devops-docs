@@ -62,12 +62,12 @@ From Team Explorer, you can open any [work item query in Excel](../../backlogs/o
 
 ## Monitor progress  
 
-All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal. 
+All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal. 
  
 ### Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/_img/gs-chart-query.png)](../../track/using-queries.md)[![Create chart](../../../report/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../track/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 

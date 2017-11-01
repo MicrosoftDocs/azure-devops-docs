@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 This guide show you how to share your code in a VSTS Git repo using the command line.
 
-The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
+The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 ## Prerequisites
 

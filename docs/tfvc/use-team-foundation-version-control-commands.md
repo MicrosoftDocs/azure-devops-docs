@@ -217,7 +217,7 @@ Let’s review the arguments from this example:
 
 You can use itemspecs and versionspecs to specify which items are affected by a command.
 
-<a name="itemspec">
+<a name="itemspec"></a>
 
 #### Use an itemspec argument to specify affected items
 

@@ -18,7 +18,7 @@ Our systems support two types of source control: Git (distributed) or Team Found
 You manage your repos, branches, and other code development operations from the **Code** hub.   
 
 
-<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" />
 
 
 With Git, each developer has a copy on their dev machine of the source repository including all branch and history information. Each developer works directly with his or her own local repository, and changes are shared between repositories as a separate step.

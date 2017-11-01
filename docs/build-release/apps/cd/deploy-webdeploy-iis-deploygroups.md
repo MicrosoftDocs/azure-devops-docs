@@ -83,11 +83,11 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
 
-1. To test the release definition, click **Release** and then **Create Release**.
+1. To test the release definition, choose **Release** and then **Create release**.
 
-1. On the Create new release dialog box, click **Queue**. Notice that a new release was created. Click the link to navigate to the release.
+1. In the Create new release panel, choose **Create**. Choose the link near the top of the window that indicates a new release was created. 
 
-1. Click the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+1. Open the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`, where `<publicIpAddress>` is the IP address of your web site on your IIS web server.
 

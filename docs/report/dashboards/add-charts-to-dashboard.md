@@ -32,9 +32,9 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 <tr>
 <td align="left">[Build history chart](#build-history) <sup> 1</sup></td>
 <td>  </td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
@@ -42,36 +42,36 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">[Test status or result chart](#test-result) <sup> 2</sup> </td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 <tr>
 <td align="left">[Test quality trend chart](#test-quality) <sup>1</sup>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 <tr>
 <td align="left">[Work item query](#work-item-query) <sup> 2</sup></td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 <tr>
 <td align="left">[Work item query chart](#work-item-query) <sup> 2</sup></td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../Work/_img/icons/checkmark.png)</td>
-<td>![checkmark](../work/_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
+<td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 
 </tbody>
@@ -83,7 +83,7 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 
 
 >[!NOTE]  
->**Required permissions:** You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboards.md#manage). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
+>**Required permissions:** You must be a team admin to add a chart to a team dashboard or homepage, or be [granted permissions to manage a dashboard](dashboard-permissions.md). Or, if you're a member of the Project Administrators group, you can add charts to any team's dashboards or home page. 
  
 
 <a id="build-history"></a>
@@ -94,11 +94,11 @@ All charts listed in the following table are available from VSTS and TFS 2017.2 
 
 Each time a build is run, it logs information about the build, including the run time, errors and warnings, and whether it successfully completed or failed.   
 
-1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard.   
+1. Select your [team context](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Build hub to add a build history chart to a team dashboard.   
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
-	If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
@@ -113,13 +113,13 @@ Each time a build is run, it logs information about the build, including the run
 >[!NOTE]  
 ><b>Feature availability: </b> This chart is supported from VSTS and TFS 2017.1 and later versions. You can also add it to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
-Each time a [release is deployed](../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
+Each time a [release is deployed](../../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
-1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
+1. Select your [team context](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open the Release hub to add a release definition chart to a team dashboard.   
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
-	If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Release definition charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
@@ -132,9 +132,9 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 >[!NOTE]  
 ><b>Feature availability: </b> This feature is supported from VSTS and TFS 2015. From VSTS, you can add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
+As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../manual-test/getting-started/track-test-status.md).  
 
-1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -147,19 +147,19 @@ As you create and run tests, you can track your status by defining [lightweight 
 ><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.2 or later versions. From VSTS and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a dashboard. 
 
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../build-release/test/getting-started-with-continuous-testing.md).  
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).  
 
-1. Select your [team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
 	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
 
-3. Click the ![Actions icon](../work/_img/icons/actions-icon.png) Actions menu and choose the dashboard to add the chart to.  
+3. Click the ![Actions icon](_img/icons/actions-icon.png) Actions menu and choose the dashboard to add the chart to.  
 
 	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
 
-	Learn more about [reviewing automated test results after a build](../build-release/test/review-continuous-test-results-after-build.md).  
+	Learn more about [reviewing automated test results after a build](../../build-release/test/review-continuous-test-results-after-build.md).  
 
 
 <a id="work-item-query"></a>
@@ -171,9 +171,9 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
-2. If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
+2. If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
 3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
 
@@ -192,9 +192,9 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
-Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](../Report/dashboards.md) for more info.  
+Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](dashboards.md) for more info.  
 
-<img src="../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 <a id="markdown-widget">  </a>
 ## Markdown widgets   
@@ -206,21 +206,21 @@ Use these widgets to support your team and stakeholders by adding information su
 
 Here's an example:  
 
-<img src="../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  
 >Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../collaborate/markdown-guidance.md#relative-links). 
+>For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../../collaborate/markdown-guidance.md#relative-links). 
 
-To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/add-team-administrator.md). 
+To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../../work/scale/add-team-administrator.md). 
 
 ## System-generated work tracking charts 
 
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
-- [Team velocity](./guidance/team-velocity.md)
-- [Sprint burndown chart](../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
-- [Cumulative flow](guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+- [Team velocity](../guidance/team-velocity.md)
+- [Sprint burndown chart](../../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
+- [Cumulative flow](../guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
 

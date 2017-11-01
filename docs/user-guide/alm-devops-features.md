@@ -1218,7 +1218,7 @@ build-release\tasks\build\_img
 <br />
 
 <p><b>Add release summary to dashboard (VSTS) </b></p>
-<p>[Add a release summary chart](../report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
+<p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
 <p>[Create workflows tailored to your process](../build-release/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
@@ -1330,13 +1330,13 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Multiple team dashboards</b></p>
-<p>Each team can create several [team dashboards](../report/dashboards.md) to help keep both the team and stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
+<p>Each team can create several [team dashboards](../report/dashboards/dashboards.md) to help keep both the team and stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
 ![Add a dashboard control](_img/features/alm-feature-add-a-dashboard.png)  
  <br/>
 
 
 <p><b>Build history charts</b></p>
-<p>[Add build history charts to your dashboards](../report/add-charts-to-dashboard.md#build-history).  </p>
+<p>[Add build history charts to your dashboards](../report/dashboards/add-charts-to-dashboard.md#build-history).  </p>
 ![build summary chart](_img/features/alm-feature-build-summary-widget.png)  
  <br/>
 
@@ -1348,7 +1348,7 @@ build-release\tasks\build\_img
  <br/>
 
 <p><b>Test quality trend charts</b></p>
-<p>Add [failure and duration charts for tests run as part of your build](../report/add-charts-to-dashboard.md#test-quality) to your team dashboard. </p>
+<p>Add [failure and duration charts for tests run as part of your build](../report/dashboards/add-charts-to-dashboard.md#test-quality) to your team dashboard. </p>
 ![Test quality failure and duration charts](_img/features/alm-dashboards-test-quality-failure-duration-charts.png)  
  <br/>
 
@@ -1356,11 +1356,11 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Restrict or allow team members to manage dashboards (VSTS)</b></p>
-<p>Set permissions to [restrict or allow team members to manage dashboards](../report/dashboards.md#manage).  </p>
+<p>Set permissions to [restrict or allow team members to manage dashboards](../report/dashboards/dashboards.md#manage).  </p>
 
 
 <p><b>Capacity planning and tracking</b></p>
-<p>Easily track how much work your team has completed and has left to do in a sprint by adding the [sprint capacity chart widget](../report/widget-catalog.md#sprint-capacity-widget) to your dashboard.  </p>
+<p>Easily track how much work your team has completed and has left to do in a sprint by adding the [sprint capacity chart widget](../report/dashboards/widget-catalog.md#sprint-capacity-widget) to your dashboard.  </p>
 ![Sprint capacity chart](_img/features/alm-feature-capacity-widget.png)  
 <br/>
 
@@ -1380,31 +1380,31 @@ build-release\tasks\build\_img
 <br/>
 
 <p><b>Add release summary to dashboard (VSTS) </b></p>
-<p>[Add a release summary chart](../report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
+<p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
-<p>Add, remove, move, and configure widgets by [clicking the Edit dashboard icon](../report/dashboards.md). Click the checkmark icon to exit.  </p>
-![Edit dashboard icon](../report/_img/edit-dashboard-icon.png) | ![Exit dashboard edit mode icon](../report/_img/exit-edit-dashboard-mode-icon.png)  
+<p>Add, remove, move, and configure widgets by [clicking the Edit dashboard icon](../report/dashboards/dashboards.md). Click the checkmark icon to exit.  </p>
+![Edit dashboard icon](../report/dashboards/_img/edit-dashboard-icon.png) | ![Exit dashboard edit mode icon](../report/dashboards/_img/exit-edit-dashboard-mode-icon.png)  
 <br/>
 
 <p><b>Auto-refresh dashboards </b></p>
-<p>You can [enable auto-refresh for any team dashboard](../report/dashboards.md#manage), and it will automatically update every five minutes. This is a useful feature for when your dashboard serves as a team wallboard.   </p>
+<p>You can [enable auto-refresh for any team dashboard](../report/dashboards/dashboards.md#manage), and it will automatically update every five minutes. This is a useful feature for when your dashboard serves as a team wallboard.   </p>
 
 
 <p><b>Widget catalog</b></p>
-<p>Add [widgets](../report/widget-catalog.md) to your dashboard to provide  information and monitor the data your team needs.</p>
-![add a widget icon](../report/_img/add-widget-icon.png)  
+<p>Add [widgets](../report/dashboards/widget-catalog.md) to your dashboard to provide  information and monitor the data your team needs.</p>
+![add a widget icon](../report/dashboards/_img/add-widget-icon.png)  
 <br/>
 
 <p><b>Work item query charts</b></p>
-<p>View the status of work in progress by [charting the results of a flat-list query](../report/charts.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query. Optionally add these charts to a dashboard.</p>
+<p>View the status of work in progress by [charting the results of a flat-list query](../report/dashboards/charts.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query. Optionally add these charts to a dashboard.</p>
 
 
 
 <p><b>Drag-n-drop layout</b></p>
-<p>Configure the layout to your specifications by [dragging tiles into the sequence you want](../report/dashboards.md). </p>
+<p>Configure the layout to your specifications by [dragging tiles into the sequence you want](../report/dashboards/dashboards.md). </p>
 
 <p><b>Cumulative flow diagrams</b></p>
 <p>Track the progress of work on your backlogs [through the CFD charts](../report/guidance/cumulative-flow.md).  </p>
@@ -1559,44 +1559,44 @@ build-release\tasks\build\_img
 
 
 <p><b>What is a widget?</b></p>
-<p>You build your dashboards by adding information tiles or widgets. The [widget catalog](../report/widget-catalog.md) provides a number of predefined widgets.</p>
+<p>You build your dashboards by adding information tiles or widgets. The [widget catalog](../report/dashboards/widget-catalog.md) provides a number of predefined widgets.</p>
 
 <p><b>Drag-and-drop widgets</b></p>
-<p>Drag widgets, tiles, or charts anywhere on a dashboard to [configure the layout you want](../report/dashboards.md). </p>
+<p>Drag widgets, tiles, or charts anywhere on a dashboard to [configure the layout you want](../report/dashboards/dashboards.md). </p>
 
 <h4><i>Informational content and other links</i></h4>
 
 
 <p><b>Markdown widget</b></p>
-<p>Adds a configurable tile to your dashboard to [display any type of information, guidance, or links](../report/widget-catalog.md#markdown-widget) that you want using markdown syntax.   </p>
+<p>Adds a configurable tile to your dashboard to [display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget) that you want using markdown syntax.   </p>
 ![Markdown widget](_img/features/alm-feature-markdown-widget.png)  
 <br/>
 
 
 <p><b>Team member </b></p>
-<p>Opens the team's quick dialog to [add or remove team members](../report/widget-catalog.md#team-members-widget).</p>
+<p>Opens the team's quick dialog to [add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget).</p>
 ![Team member widget](_img/features/alm-feature-manage-members-widget.png)  
 
 <p><b>Team rooms </b></p>
-<p>Provides [status and access to a team room](../report/widget-catalog.md#team-room-widget), an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+<p>Provides [status and access to a team room](../report/dashboards/widget-catalog.md#team-room-widget), an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
 
 <p><b>Visual Studio widget</b></p>
-<p>[Provides links to open or download Visual Studio](../report/widget-catalog.md#visual-studio-widget). The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren't available through the web portal). </p>
+<p>[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget). The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren't available through the web portal). </p>
 
 
 <p><b>Welcome widget</b></p>
-<p>Provides quick access to [getting started info on how to track work, code, build, and test](../report/widget-catalog.md#how-to-widget). </p>
-![How to links widget](../report/_img/widget-how-to.png)  
+<p>Provides quick access to [getting started info on how to track work, code, build, and test](../report/dashboards/widget-catalog.md#how-to-widget). </p>
+![How to links widget](../report/dashboards/_img/widget-how-to.png)  
 <br/>
 
 <h4><i>Code widgets</i></h4>
 
 <p><b>Code tile </b></p>
-<p>Configurable tile to display [status and links to a Git or TFVC code repository, branch, or folder](../report/widget-catalog.md#code-tile-widget).
+<p>Configurable tile to display [status and links to a Git or TFVC code repository, branch, or folder](../report/dashboards/widget-catalog.md#code-tile-widget).
  </p>
 
 <p><b>Pull request </b></p>
-<p>Adds a configurable tile to display [active pull requests requested by the team, or assigned to or requested by the person logged in](../report/widget-catalog.md#pull-request-widget). You select the Git repository for the pull requests of interest.  </p>
+<p>Adds a configurable tile to display [active pull requests requested by the team, or assigned to or requested by the person logged in](../report/dashboards/widget-catalog.md#pull-request-widget). You select the Git repository for the pull requests of interest.  </p>
 ![Pull request widget](_img/features/feature-widget-pull-request.png)
 
 
@@ -1608,35 +1608,35 @@ build-release\tasks\build\_img
 
 
 <p><b>Assigned to me widget  </b></p>
-<p>Provides quick access to [work items assigned to the logged in user](../report/widget-catalog.md#assigned-to-me-widget). </p>
+<p>Provides quick access to [work items assigned to the logged in user](../report/dashboards/widget-catalog.md#assigned-to-me-widget). </p>
 
 
 <p><b>Chart for work items</b></p>
-<p>Adds a configurable tile to display the [chart for a shared query](../report/widget-catalog.md#chart-wit-widget).  </p>
+<p>Adds a configurable tile to display the [chart for a shared query](../report/dashboards/widget-catalog.md#chart-wit-widget).  </p>
 ![Chart work widget](_img/features/alm-feature-chart-work.png)  
 <br/>
 
 <p><b>New work item </b></p>
-<p>[Add work items](../report/widget-catalog.md#new-work-item-widget) pre-scoped to your team's default area and iteration paths.</p>
+<p>[Add work items](../report/dashboards/widget-catalog.md#new-work-item-widget) pre-scoped to your team's default area and iteration paths.</p>
 ![Add new work item widget](_img/features/alm-feature-new-work-item-widget.png)  
 <br/>
 
 
 <p><b>Other links widget</b></p>
-<p>Provides quick access links from a team dashboard to [request feedback, define sprints, and modify your team's area paths](../report/widget-catalog.md#other-links-widget).</p>
+<p>Provides quick access links from a team dashboard to [request feedback, define sprints, and modify your team's area paths](../report/dashboards/widget-catalog.md#other-links-widget).</p>
 ![Request feedback](_img/features/alm-feature-widget-other-links.png)  
 <br/>
 
 <p><b>Query tile </b></p>
-<p>Configurable tile to display the [results and link to a shared query](../report/widget-catalog.md#query-tile-widget). </p>
+<p>Configurable tile to display the [results and link to a shared query](../report/dashboards/widget-catalog.md#query-tile-widget). </p>
 ![Query tile widget](_img/features/alm-feature-widget-query-tile.png)  
 <br/>
 
 <p><b>Query results </b></p>
-<p>Adds a configurable [query results list](../report/widget-catalog.md#query-results-widget) to a team dashboard. </p>
+<p>Adds a configurable [query results list](../report/dashboards/widget-catalog.md#query-results-widget) to a team dashboard. </p>
 
 <p><b>Requirements quality </b></p>
-<p>Displays a configurable widget that you can use to [track quality continuously from a build or release definition](../report/widget-catalog.md#requirements-quality-widget).</p>
+<p>Displays a configurable widget that you can use to [track quality continuously from a build or release definition](../report/dashboards/widget-catalog.md#requirements-quality-widget).</p>
 
 </td>
 <td width="33%">
@@ -1651,38 +1651,38 @@ build-release\tasks\build\_img
 -->
 
 <p><b>Sprint burndown </b></p>
-<p>Adds [a burndown chart](../report/widget-catalog.md#sprint-burndown-widget) for tracking a team's Scrum progress for the current sprint. </p>
+<p>Adds [a burndown chart](../report/dashboards/widget-catalog.md#sprint-burndown-widget) for tracking a team's Scrum progress for the current sprint. </p>
 
 
 <p><b>Sprint capacity </b></p>
-<p>Adds [a chart for tracking remaining capacity](../report/widget-catalog.md#sprint-capacity-widget) when tracking a team's Scrum progress for the current sprint. </p>
+<p>Adds [a chart for tracking remaining capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget) when tracking a team's Scrum progress for the current sprint. </p>
 ![Sprint capacity chart](_img/features/alm-feature-capacity-widget.png)  
 <br/>
 
 <p><b>Sprint overview </b></p>
-<p>Displays a visual overview of the [current sprint progress](../report/widget-catalog.md#sprint-overview-widget) for tracking a team's Scrum progress for the current sprint, indicating the number of backlog items in progress, completed, or not started.</p>
+<p>Displays a visual overview of the [current sprint progress](../report/dashboards/widget-catalog.md#sprint-overview-widget) for tracking a team's Scrum progress for the current sprint, indicating the number of backlog items in progress, completed, or not started.</p>
 
 <p><b>Work links </b></p>
-<p>Provides quick access links from a team dashboard to open the [team backlog, Kanban board, task board, and queries](../report/widget-catalog.md#work-links-widget).   </p>
+<p>Provides quick access links from a team dashboard to open the [team backlog, Kanban board, task board, and queries](../report/dashboards/widget-catalog.md#work-links-widget).   </p>
 
 
 <h4><i>Build and test widgets</i></h4>
 
 <p><b>Chart for build history </b></p>
-<p>Configurable tile to display the [histogram for a specific build definition](../report/widget-catalog.md#build-history-widget).
+<p>Configurable tile to display the [histogram for a specific build definition](../report/dashboards/widget-catalog.md#build-history-widget).
  </p>
 
 <p><b>Deployment status (VSTS)</b></p>
-<p>Configurable tile that shows you a consolidated view of the [deployment status and test pass rate across multiple environments for a recent set of builds](../report/widget-catalog.md#deployment-status-widget).  
+<p>Configurable tile that shows you a consolidated view of the [deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md#deployment-status-widget).  
  </p>
 
 <p><b>Release definition overview</b></p>
-<p>Configurable tile to view and track the status of a release definition. The widget [shows the release as a series of environments, with the name of the release and the date or time it was started](../report/widget-catalog.md#release-definition-widget).
+<p>Configurable tile to view and track the status of a release definition. The widget [shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md#release-definition-widget).
  </p>
 
 <p><b>Test trend results </b></p>
-<p>Provides [trend of test results](../report/widget-catalog.md#test-results-widget), such as passed or failed tests, for a selected build definition.</p>
-![Test results trend widget](../report/_img/widgets-test-trend-results.png)
+<p>Provides [trend of test results](../report/dashboards/widget-catalog.md#test-results-widget), such as passed or failed tests, for a selected build definition.</p>
+![Test results trend widget](../report/dashboards/_img/widgets-test-trend-results.png)
 <br/>
 
 
@@ -2089,13 +2089,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](../collaborate/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](../collaborate/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
 
 <p><b>Build</b></p>
 <p>[Define and monitor builds](../build-release/overview.md) and set up continuous builds to improve the quality of your app. </p>
@@ -2197,7 +2197,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Charts</b></p>
-<p>[Turn your queries into a status or trend chart](../report/charts.md) and share them with your team, organization, and stakeholders.</p>
+<p>[Turn your queries into a status or trend chart](../report/dashboards/charts.md) and share them with your team, organization, and stakeholders.</p>
 ![Create status and trend charts from flat list queries](_img/features/alm-feature-test-chart.png)  
 <br/>
 
@@ -2638,7 +2638,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Team dashboards</b></p>
-<p>Share progress, status, and guidance with your team using [configurable team dashboards](../report/dashboards.md).  </p>
+<p>Share progress, status, and guidance with your team using [configurable team dashboards](../report/dashboards/dashboards.md).  </p>
 ![Team dashboards](_img/features/alm-feature-add-a-dashboard-2.png)   
 <br/>
 

@@ -46,9 +46,9 @@ Permissions you set on an area path allow you to permit or restrict access to ed
 
 1. From the web portal admin context, open the **Work>Areas** page, and then click the context menu for the node you want to manage.  
 	
-	<img src="_img/set-permissions-area-node-open.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/set-permissions-area-node-open.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" />
 <!---
-	<img src="../work/customize/_img/ALM_CW_OpenSecurityDialog.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" /> -->
+	<img src="../work/customize/_img/ALM_CW_OpenSecurityDialog.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" />-->
 
 2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 

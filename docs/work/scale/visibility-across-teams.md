@@ -95,13 +95,13 @@ Review [Agile culture](agile-culture.md) and [Practices that scale](practices-th
 
 
 #### Project health and progress against goals dashboard 
-Use the [Query Results widget](../../report/widget-catalog.md#query-results-widget) to provide a list of features by state: 
+Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state: 
 
 - Completed features (Done or Closed) 
 - New features (New or Proposed) 
 - Features being actively worked (In Progress or Active)   
 
-Use the [Chart for work items widget](../../report/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/charts.md).  
+Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).  
 
 
 <!---TIPS

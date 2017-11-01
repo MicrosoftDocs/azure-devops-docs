@@ -98,9 +98,9 @@ Write-host "##vso[task.uploadfile]<filename>"
 
 The file is then available as part of the release logs. When you download all the logs associated with the release, you will be able to retrieve this file as well.
 
-###Github artifacts for RM
+###GitHub artifacts for RM
 
-Continuing with the work we started last sprint on using Git and TFVC as artifact sources directly in RM, for this Sprint, we enabled the same for Github. If you need to deploy Node.js, JS, or PHP applications, where an explicit build step is not needed, and if you are using Github for managing your code, then you can now directly configure a Github artifact source in a release definition.
+Continuing with the work we started last sprint on using Git and TFVC as artifact sources directly in RM, for this Sprint, we enabled the same for GitHub. If you need to deploy Node.js, JS, or PHP applications, where an explicit build step is not needed, and if you are using GitHub for managing your code, then you can now directly configure a GitHub artifact source in a release definition.
 
 ###.NET SQL Extension
 

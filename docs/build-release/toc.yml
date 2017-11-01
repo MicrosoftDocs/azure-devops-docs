@@ -143,7 +143,7 @@
       href: actions/agents/v2-windows.md
     - name: Windows (TFS 2015)
       href: actions/agents/v1-windows.md
-    - name: OSX
+    - name: macOS
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md

@@ -27,7 +27,7 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 
 > Review the [system and software requirements](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#system-requirements) before installing the credential manager.
  
-On Mac OS X and Linux, there are [several install options](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md) that use native package managers to install the credential manager. After installing the package for your platform, run the following command to configure Git to use the credential manager :
+On macOS and Linux, there are [several install options](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md) that use native package managers to install the credential manager. After installing the package for your platform, run the following command to configure Git to use the credential manager :
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git-credential-manager install</pre>
@@ -45,10 +45,10 @@ Once authenticated, the credential manager creates and caches a [personal access
 You can open up and report issues with the Git Credential Manager for Windows on the [project GitHub](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues). 
 Frequently Asked Questions for the Git Credential Manager for Windows are available in [the online readme](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md). 
 
-Manual installation steps for the [Windows Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/README.md#manual-installation) and the [Mac OS X and Linux Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#installing-on-mac-or-linux-without-a-package-manager) are available. Use these steps to install the credential manager if the recommended steps above are not suitable for your environment.
+Manual installation steps for the [Windows Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/README.md#manual-installation) and the [macOS and Linux Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#installing-on-mac-or-linux-without-a-package-manager) are available. Use these steps to install the credential manager if the recommended steps above are not suitable for your environment.
 
 ### Learn more
 
-In addition to providing full source code, we've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [Mac OS X and Linux Git Credential Manager](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/18/visual-studio-team-services-git-credential-manager-for-mac-and-linux.aspx) and the 
+In addition to providing full source code, we've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [macOS and Linux Git Credential Manager](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/18/visual-studio-team-services-git-credential-manager-for-mac-and-linux.aspx) and the 
 [Windows Credential Manager](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/08/announcing-the-git-credential-manager-for-windows-1-0.aspx). There is also
 [an article on the project GitHub](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/wiki/How-the-Git-Credential-Managers-works) with information on the low-level internals of the Git Credential Manager for Windows.    

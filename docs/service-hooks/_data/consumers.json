@@ -1685,7 +1685,7 @@
 "id": "appVeyor",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/appVeyor",
 "name": "AppVeyor",
-"description": "Continuous Integration service for Windows developers that securely builds and tests code in parallel and then deploys successful bits to on-premise or cloud environments",
+"description": "Continuous Integration service for Windows developers that securely builds and tests code in parallel and then deploys successful bits to on-premises or cloud environments",
 "imageUrl": "",
 "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396758",
 "authenticationType": "external",

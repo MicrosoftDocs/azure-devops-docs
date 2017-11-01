@@ -82,7 +82,7 @@ If your agent is version 2.114.0 or newer, you can trace the HTTP traffic header
 Windows:
     set VSTS_AGENT_HTTPTRACE=true
 
-OSX/Linux:
+macOS/Linux:
     export VSTS_AGENT_HTTPTRACE=true
 ```
 
@@ -107,7 +107,7 @@ set VSTS_HTTP_PROXY=http://127.0.0.1:8888
 0. Restart the agent.
 
 
-##### OSX and Linux
+##### macOS and Linux
 
 Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of the agent.
 

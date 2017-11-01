@@ -1,0 +1,42 @@
+- name: "Extend on Analytics with OData"
+  href: index.md
+- name: Overview
+  items:
+  - name: What is the Analytics Service
+    href: ..\analytics\overview-analytics-service.md
+- name: 5-Minute QuickStarts
+  items:
+  - name: Get Work Item Tracking data with OData 
+    href: ..\analytics\wit-analytics.md
+- name: Step-by-Step Tutorials
+  items:
+  - name: Aggregate data using OData
+    href: ..\analytics\aggregated-data-analytics.md
+  - name: Query for trend data
+    href: ..\analytics\querying-for-trend-data.md
+  - name: Query for Work item links
+    href: ..\analytics\work-item-links.md
+- name: Concepts
+  items:
+  - name: Data Model for Work Item Tracking Analytics
+    href: ..\analytics\data-model-analytics-service.md
+- name: Samples
+  items:
+  - name: Work Item Tracking Analytics Query Examples
+    href: ..\analytics\analytics-recipes.md
+  - name: Hub extension
+    href: ..\analytics\building-extension-against-analytics-service.md
+  - name: Widget View
+    href: ..\analytics\widget-extensions-against-analytics-service.md
+  - name: Widget View
+    href: ..\analytics\widget-extension-against-analytics-service-configuration.md
+- name: Reference
+  items:
+  - name: Supported OData feature & Operations
+    href: ..\analytics\wit-analytics.md
+- name: Resources
+  items:
+  - name: VSTS Analytics Service
+    href: ../analytics/index.md
+  - name: OData Extension for Data Aggregation Version 4.0
+    href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

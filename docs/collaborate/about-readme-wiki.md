@@ -24,7 +24,7 @@ Markdown makes it easy to format text, include images, and link as needed to add
 
 You can provide guidance to your team in these places using Markdown:   
   
-- [Add Markdown to a dashboard](../report/add-markdown-to-dashboard.md)  
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
 - [Add and edit wiki pages](add-edit-wiki.md)    
 - [Repository Readme files](../git/create-a-readme.md) 

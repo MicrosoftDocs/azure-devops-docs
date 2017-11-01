@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
-VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) that supports OSX. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
+VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) that supports macOS. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
 
 To streamline CI for Cordova-based projects, we have created a series of build tasks (or steps) that you can use: **[Cordova Build](./cordova-build.md)**, **Cordova Command**, **Ionic Command**, and **PhoneGap Command**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
@@ -36,13 +36,13 @@ Available Settings:
   - **Cordova Version**: Version of the Cordova CLI you want to use to run the command. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in VSTS) and falls back to the latest version if no environment variable is set.
   - **Advanced &gt; Working Directory**: Location of the Cordova project itself inside your solution (not the solution root).
 
-Next, given the task is cross-platform, if you want to be sure this build definition only runs on Windows or OSX, you will need to add a demand that "cmd" exists for Windows...
+Next, given the task is cross-platform, if you want to be sure this build definition only runs on Windows or macOS, you will need to add a demand that "cmd" exists for Windows...
 
 ![Windows Build Definition - Demand](_img/cordova-command/cordova-command-1.png)
 
-... or "xcode" exists for OSX...  
+... or "xcode" exists for macOS...  
 
-![OSX Build Definition - Demand](_img/cordova-command/cordova-command-2.png)
+![macOS Build Definition - Demand](_img/cordova-command/cordova-command-2.png)
 
 ## The Ionic Command task
 The Ionic Command task is similar to the Cordova one. Add the Ionic Command task to your build definition by going to the "Build" tab, adding a new build step, and selecting **Ionic Command** from the **Build** category

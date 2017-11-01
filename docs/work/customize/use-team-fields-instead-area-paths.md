@@ -167,7 +167,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
 1.  Refresh your web portal, and from the team project home page, open a product backlog item, PBI or user story. Verify that the changes appear as you expect and that you can select a team.
 
-    <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 2px solid #C3C3C3;" />
 
 2.  If you haven't yet created teams to match those that are in your global list, do that now. See [Multiple teams, Add another team](../scale/multiple-teams.md).
 
@@ -197,7 +197,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
 From the product backlog page for the team project, you can create backlog items and assign them to teams by opening each item and selecting the Team field. Assigned items will show up on the team's backlog, and they can then work with them using their sprint backlog and task board.
 
-<img src="_img/use-team-fields-instead-area-paths-support-teams/IC778365.png" alt="Work from a common backlog" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/use-team-fields-instead-area-paths-support-teams/IC778365.png" alt="Work from a common backlog" style="border: 2px solid #C3C3C3;" />
 
 For backlog items you create from a team's backlog page, TFS assigns the default value associated with the team to the Team field.
 

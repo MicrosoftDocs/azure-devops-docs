@@ -34,10 +34,10 @@ you may need to [deploy](#deploy-command) (and redeploy) it manually.
 
    ![Creating a new release manually](_img/create-deploy-releases/create-release-manually-02.png)
 
-1. In the **Create new release** dialog, optionally enter a description
+1. In the **Create new release** panel, optionally enter a description
    for this release. Then select the version of the linked build artifacts
    you want to include in this release. If the version you want to use is not
-   shown in the list, type the version number.
+   shown in the list, type the version number. Then choose **Create**.
 
    ![Specifying details of a release](_img/create-deploy-releases/create-release-manually-03.png)
 
@@ -54,8 +54,7 @@ For more details, see [Approvals](../concepts/definitions/release/environments.m
 
 If you have not set the [continuous deployment trigger](../concepts/definitions/release/triggers.md),
 or you have not defined a fully orchestrated pipeline for deploying the artifacts
-specified in your releases, you will need to manually initiate the deployment
-for some environments.
+specified in your releases, you will need to manually initiate the deployment for some environments.
 
 1. Open the **Builds** tab of the **Build & Release** hub and select a build result
    (not the build definition name).

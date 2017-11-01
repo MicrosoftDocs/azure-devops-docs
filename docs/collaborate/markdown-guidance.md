@@ -23,9 +23,9 @@ You can provide guidance to your team in these places using markdown:
 - [Team project wiki](add-edit-wiki.md)    
 - [Readme files](../git/create-a-readme.md) 
 - [Pull request comments](../git/pull-requests.md) 
-- [Add Markdown to a dashboard](../report/add-markdown-to-dashboard.md)    
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)    
 
-In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [Github-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 ## Headers
 
@@ -173,7 +173,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 <li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
 <li>URL: ```[text to display](http://address.com)```  </li>
 </ul>
-<p>**Supported links for [Markdown widget](../report/widget-catalog.md#markdown-widget):**</p>
+<p>**Supported links for [Markdown widget](../report/dashboards/widget-catalog.md#markdown-widget):**</p>
 <ul>
 <li>URL: ```[text to display](http://address.com)```  </li>
 </ul>
@@ -555,8 +555,8 @@ In wiki pages, you can also create rich content using HTML tags.
 - [Project vision page or Welcome pages](project-vision-status.md) 
 - [Readme files](../git/create-a-readme.md) 
 - [Pull requests](../git/pull-requests.md) 
-- [Markdown widget](../report/add-markdown-to-dashboard.md)  
-- [Dashboards](../report/dashboards.md)
-- [Widget catalog](../report/widget-catalog.md) 
+- [Markdown widget](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Dashboards](../report/dashboards/dashboards.md)
+- [Widget catalog](../report/dashboards/widget-catalog.md) 
 - [Wiki](add-edit-wiki.md)
   

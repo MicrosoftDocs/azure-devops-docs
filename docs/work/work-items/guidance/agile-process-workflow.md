@@ -220,7 +220,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 ### Track issues 
 
-Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../../report/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards.md), or from the **New** menu on the Queries page. 
+Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards.md), or from the **New** menu on the Queries page. 
 
 ![Add work item from a New work item widget](../../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 

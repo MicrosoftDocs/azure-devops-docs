@@ -81,7 +81,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/sprint-planning.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards.md)
+[![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/sprint-planning.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
  
 
 You also gain access to a [rich set of customization capabilities](../work/customize/customize-work.md). 
@@ -164,6 +164,6 @@ Monitor your web and device apps to gain actionable insight to improve performan
   
 [Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or J2EE servers.  
 
-[Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on iOS, Android, Mac OS X, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
+[Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on iOS, Android, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  
  

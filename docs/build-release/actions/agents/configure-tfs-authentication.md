@@ -50,7 +50,7 @@ Personal access token (PAT) authentication is available in TFS 2015 Update 3 or 
 ### TFS 2017
 
 * [Windows agent v2](../../actions/agents/v2-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
@@ -58,7 +58,7 @@ Personal access token (PAT) authentication is available in TFS 2015 Update 3 or 
 ### TFS 2015
 
 * [Windows agent v1](../../actions/agents/v1-windows.md)
-* [OSX agent](../../actions/agents/v2-osx.md)
+* [macOS agent](../../actions/agents/v2-osx.md)
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)

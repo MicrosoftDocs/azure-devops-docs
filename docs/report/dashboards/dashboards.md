@@ -17,19 +17,19 @@ ms.date: 09/07/2017
 > [!NOTE]   
 > **Feature availability:** Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from Visual Studio Team Services (VSTS) and from the web portal for TFS 2015.1 or later version. 
 >
-> If you connect to an on-premises TFS running TFS 2015 or earlier version, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](sharepoint-dashboards/project-portal-dashboards.md).  
+> If you connect to an on-premises TFS running TFS 2015 or earlier version, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
 
-Anyone with access to the team project, including [stakeholders](../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
+Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 
-If you need to add a team first, see [add teams and team members](../work/scale/multiple-teams.md). 
+If you need to add a team first, see [add teams and team members](../../work/scale/multiple-teams.md). 
 
 ## Connect to the web portal for your team project 
 
-To add and manage dashboards, you connect to your team project using a [supported web browser](../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
+To add and manage dashboards, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
 
 Open a browser window and click the **Dashboards** hub. 
 
@@ -39,15 +39,15 @@ Open a browser window and click the **Dashboards** hub.
 - VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 -->
-If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../user-guide/account-home-pages.md).    
+If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).    
 
 ## Add and name your dashboard 
 
-From the dashboards tab, click the ![plus icon](../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
+From the dashboards tab, click the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
 
@@ -83,7 +83,7 @@ To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png)
 <a id="permissions">  </a>
 ### Required permissions
  
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../work/scale/add-team-administrator.md). 
 
 If you work in VSTS, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](dashboard-permissions.md). 
 
@@ -101,7 +101,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 <!---
 ### TFS 2015.1 - TFS 2015.3 
 
-1. Click the ![gear icon](../work/_img/icons/team-settings-gear-icon.png) gear icon to open manage dashboards.</p>  
+1. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon to open manage dashboards.</p>  
 
 	<img src="_img/dashboards-open-manage-dashboards-tfs.png" alt="Open manage dashboards dialog - TFS web portal" style="border: 2px solid #C3C3C3;" />  
 
@@ -109,7 +109,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 
 	![Manage dashboards](_img/manage-dashboards.png)  
 
-3. Click ![delete icon](../work/_img/icons/delete-icon.png) to delete a dashboard and then click Done.   
+3. Click ![delete icon](../../work/_img/icons/delete-icon.png) to delete a dashboard and then click Done.   
 
 4. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
 
@@ -133,7 +133,7 @@ See these additional resources to help you support your team:
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/docs/integrate/api/dashboard/overview).  
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/docs/integrate/api/dashboard/overview).  
 
 
 <!---  
@@ -144,7 +144,7 @@ To add an item, see [add items to the dashboard](#pin-items).
 
 You can reorder dashboard widgets through drag-and-drop. And remove widgets or items.
 
-Click ![add icon](../Work/_img/icons/green_plus_icon.png) to [add another dashboard.  
+Click ![add icon](../../Work/_img/icons/green_plus_icon.png) to [add another dashboard.  
 
  Or add items to this dashboard and re-sequence tiles. Each tile provides team members quick access to the progress of their builds, work item status and trends, Git repositories or version control folders.
 
@@ -224,4 +224,4 @@ And then select the query and specify any rules you want. (For TFS 2015.1 and la
 
 
 
-[!INCLUDE [temp](_shared/help-support-shared.md)]  
+[!INCLUDE [temp](../_shared/help-support-shared.md)]  

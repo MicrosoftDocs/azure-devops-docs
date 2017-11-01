@@ -137,7 +137,7 @@ $(NodeVersionSpec)
 where
 ```
 
-* Tool (if you're running on an OSX or Linux agent)
+* Tool (if you're running on a macOS or Linux agent)
  ```
 which
 ```

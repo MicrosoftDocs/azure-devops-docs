@@ -38,7 +38,7 @@ To disable a work item type, go to the work item type’s **Overview** tab on th
 
 ##Import repository
 
-Customers can now import a Git repository from GitHub, BitBucket, GitLab, or other locations. You can import into either a new or an existing empty repository.
+Customers can now import a Git repository from GitHub, Bitbucket, GitLab, or other locations. You can import into either a new or an existing empty repository.
 
 ###Import into a new repository
 From the repository selector drop-down, click **Import repository**. 

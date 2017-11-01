@@ -381,6 +381,8 @@ Release Management does not handle this.
 If you need to change the release definition before you redeploy, you must
 [create a new release](create-deploy-releases.md) from the updated release definition.
 
+[What permission do I need to deploy a release?](../concepts/policies/permissions.md#release-permissions)
+
 <h2 id="notifications">Release notifications</h2>
 
 Release Management automatically defines a set of built-in notifications that

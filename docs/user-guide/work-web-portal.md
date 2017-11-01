@@ -15,7 +15,7 @@ ms.date: 08/11/2017
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
-You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in Visual Studio Team Services (VSTS) or within an on-premise Team Foundation Server (TFS). 
+You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in Visual Studio Team Services (VSTS) or within an on-premises Team Foundation Server (TFS). 
 
 If you don't have a team project yet, create one in [VSTS](../accounts/create-account-msa-or-work-student.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
@@ -170,9 +170,9 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 
 
 > [!div class="mx-tdBreakAll"]  
-> |[Home](../report/overview.md) |[Work](../work/work-items/index.md)|
+> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
 > |-------------|----------|
-> |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/guidance/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/guidance/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
+> |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/guidance/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/guidance/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
 
 
 ### Source code control: Git and TFVC repositories
@@ -368,7 +368,7 @@ Although you can access source code, work items, and builds from both clients, s
 <td><ul>
 <li><p>[Product backlog](../work/backlogs/create-your-backlog.md), [Portfolio backlogs](../work/kanban/kanban-epics-features-stories.md), [Sprint backlogs](../work/scrum/sprint-planning.md), [Task boards](../work/scrum/task-board.md), [Capacity planning](../work/scale/capacity-planning.md) </p></li>
 <li><p>[Kanban board](../work/kanban/kanban-basics.md)</p></li>
-<li><p>[Dashboards](../report/dashboards.md), [Widgets](../report/widget-catalog.md), and [Charts](../report/charts.md)</p></li>
+<li><p>[Dashboards](../report/dashboards/dashboards.md), [Widgets](../report/dashboards/widget-catalog.md), and [Charts](../report/dashboards/charts.md)</p></li>
 <li><p>[Team rooms](../collaborate/collaborate-in-a-team-room.md)</p></li>
 <li><p>[Request feedback](../feedback/get-feedback.md)</p></li>
 <li><p>Web-based Test Management</p></li>
@@ -408,7 +408,7 @@ Services
 Test
 
 ##To Be Covered:
-- Client/server - When to use a client--Visual Studio/Eclipse/Visual Studio code/IntelliJ -- and when to use the web portal
+- Client/server - When to use a client--Visual Studio/Eclipse/Visual Studio Code/IntelliJ -- and when to use the web portal
 - IMG: Collection > Team Projects > Teams > Personal
 
 - Understand teams

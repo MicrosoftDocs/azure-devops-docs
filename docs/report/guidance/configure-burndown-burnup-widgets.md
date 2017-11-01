@@ -19,7 +19,7 @@ The Burndown and Burnup widgets provide the flexibility to create burndown or bu
 <!---You can use the Burndown widget to create a Release Burndown, a Bug Burndown, or a burndown of a specific type of work.--> 
 
 > [!NOTE]   
-> **Feature availability:** The Burndown and Burnup widgets are available only for VSTS at this time. For on-premises TFS, you can add the [Sprint Burndown widget](../widget-catalog.md#sprint-burndown-widget) to your dashboard. 
+> **Feature availability:** The Burndown and Burnup widgets are available only for VSTS at this time. For on-premises TFS, you can add the [Sprint Burndown widget](../dashboards/widget-catalog.md#sprint-burndown-widget) to your dashboard. 
 
 Both burndown and burnup charts help answer the question: **Are we on track to complete this set of work by the end date?**
 
