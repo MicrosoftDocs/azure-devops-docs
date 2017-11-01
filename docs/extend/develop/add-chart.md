@@ -53,7 +53,7 @@ To do so, in the `home` folder for your project, create a `chart.html` file with
 </body>
 </html>
 ```
-> Use the **npm install** command to retrieve the SDK: `npm install vss-web-extension-sdk`. To learn more about the SDK, visit the [Client SDK Github Page](https://github.com/Microsoft/vss-sdk).
+> Use the **npm install** command to retrieve the SDK: `npm install vss-web-extension-sdk`. To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 Ensure that the `VSS.SDK.js` file is inside the `sdk/scripts` folder so that the path is `home/sdk/scripts/VSS.SDK.js`.
 

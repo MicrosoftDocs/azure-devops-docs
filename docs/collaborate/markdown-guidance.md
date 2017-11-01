@@ -25,7 +25,7 @@ You can provide guidance to your team in these places using markdown:
 - [Pull request comments](../git/pull-requests.md) 
 - [Add Markdown to a dashboard](../report/add-markdown-to-dashboard.md)    
 
-In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [Github-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 ## Headers
 

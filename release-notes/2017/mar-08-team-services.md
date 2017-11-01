@@ -54,7 +54,7 @@ Ensure that all comments in your pull requests are being addressed with the new 
 ##Build agent upgrade status
 When an agent is being upgraded, it now indicates the status of the upgrade in the queue and pool management portal.
 
-##Github pull request builds
+##GitHub pull request builds
 For a while, we’ve provided CI builds from your GitHub repo. Now we’re adding a new trigger so you can build your GitHub pull requests automatically. After the build is done, we report back with a comment in your GitHub pull request.
 
 For security, we only build pull requests when both the source and target are within the same repo. We don’t build pull requests from a forked repo.

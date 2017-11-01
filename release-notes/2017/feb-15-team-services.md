@@ -1,5 +1,5 @@
 ---
-title: PR usability improvements & richer Github build integration – Feb 15
+title: PR usability improvements & richer GitHub build integration – Feb 15
 description: VSTS release notes for Feb 15 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
 ms.prod: vs-devops-alm
@@ -8,7 +8,7 @@ ms.author: egeaney
 author: egeaney
 ---
 
-#PR usability improvements & richer Github build integration – Feb 15
+#PR usability improvements & richer GitHub build integration – Feb 15
 
 **Note:** The improvements discussed in this post are features that will be rolling out over the next three weeks.
 

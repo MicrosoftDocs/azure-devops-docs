@@ -39,7 +39,7 @@ Use the 'npm install' command via the command line (requires [Node](https://node
 npm install vss-web-extension-sdk
 ```
 
-> To learn more about the SDK, visit the [Client SDK Github Page](https://github.com/Microsoft/vss-sdk).
+> To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 ## Your hub page: `hello-world.html`
 * Every hub displays a web page

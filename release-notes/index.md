@@ -1016,7 +1016,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
-            <td>Github pull request builds</td>
+            <td>GitHub pull request builds</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
@@ -1736,7 +1736,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
-            <td>Github artifacts for RM</td>
+            <td>GitHub artifacts for RM</td>
             <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>

@@ -276,7 +276,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 
 ####[Git improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#vc)
 <ul>
-<li>Import a Git repository from GitHub, BitBucket, GitLab, or other locations</li>
+<li>Import a Git repository from GitHub, Bitbucket, GitLab, or other locations</li>
 <li>Add .gitignore during repo creation</li>
 <li>Restart pull request merge</li>
 <li>Markdown in pull request description</li>
