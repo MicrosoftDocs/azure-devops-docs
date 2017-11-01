@@ -29,16 +29,16 @@ For guidance on managing several teams, see [Agile at Scale](../work/scale/index
 ## How-to Guides
 - [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)    
 - [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json) 
-
+- [Switch team context](switch-team-context.md)
 
 
 ## Reference
 - [Permissions and access](../security/permissions-access.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)    
 
 
-## Resources  
+## Resources 
+- [Agile at Scale](../work/scale/index.md) 
 - [Customization](../work/customize/index.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
-- [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)  
-- [Integrate with service hooks](../service-hooks/index.md)  
+ 

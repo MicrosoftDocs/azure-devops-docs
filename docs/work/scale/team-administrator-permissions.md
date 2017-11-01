@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-# Permissions granted to the team administrator role
+# Team administrator role and permissions
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

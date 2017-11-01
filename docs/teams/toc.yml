@@ -22,7 +22,7 @@
     href: ../work/scale/set-team-defaults.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json    
   - name: Configure team settings
     href: ../work/scale/manage-team-assets.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json  
-  - name: Set team defaults
+  - name: Switch team context
     href: switch-team-context.md
   - name: "Manage permissions & access"
     href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json
@@ -32,10 +32,14 @@
     href: ../security/permissions-access-work-tracking.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: Agile at Scale
+    href: ../work/scale/index.md
   - name: Customization
     href: ../work/customize/index.md
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture
   - name: Scale Agile to large teams
-    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+    href: https://www.visualstudio.com/learn/scale-agile-large-teams
   - name: Microsoft Teams Integration
     href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
   - name: Integrate with service hooks
