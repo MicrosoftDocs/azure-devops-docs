@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/09/2017
+ms.date: 10/31/2017
 ---
 
 # Get feedback with pull requests
