@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 10/31/2017
 ---
 
 #  Create a pull request
@@ -34,17 +34,21 @@ In this tutorial you learn how to:
 To create a pull request in VSTS:
 
 0. [Push](pushing.md) your local branch.
-0. Create a pull request for the branch in VSTS.   
+0. Create a pull request for the branch in VSTS. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
 
-  ![Creating a pull request in VSTS](_img/createpullrequest.gif)   
+  ![Creating Pull Request through pushed branch in VSTS](../_img/pull-requests/create-pr-from-push.png)
 
-0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../user-guide/connect-team-projects.md) and select **New Pull Request** to open a pull request for your current branch:   
+  ![Creating Pull Request through pushed branch in VSTS](../_img/pull-requests/create-pr-from-push-files-tab.png)
+ 
+  You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../user-guide/connect-team-projects.md).
 
-  ![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
+  ![Pull Requests](../_img/pull-requests/pull-requests.png)
 
-0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes.
+  From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal for your current branch.   
 
-0. Add any team member who you would like to review the changes. 
+  ![Pull Requests](../_img/pull-requests/new-pull-request.png)
+
+0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 
   ![Adding detail to a pull request](_img/pull-request-detail.png)
 
@@ -69,11 +73,24 @@ Once you get the team's feedback, you can keep the pull request open to continue
 
 ## Complete a pull request
 
-![Completing a pull request in VSTS](_img/completepull.gif)
+Complete your pull request after the reviewers approve of the changes by selecting **Complete** in the upper right of the pull request view.
 
-Once all reviewers have approved the changes, you can now complete the pull request. You'll be prompted for a descriptive message about the changes proposed by the pull
-request. You can choose to delete the pull request branch when the pull request is complete. Git retains the commit history in the `master` branch after the pull request is complete, 
-so unless you plan on doing more work in the branch, it is safe to remove. 
+![Complete button on the pull request view with its drop-down options](../_img/pull-requests/complete_pr_options.png)
+
+- **Complete**: Complete the pull request now and merge the changes to the target branch.
+- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. Fore more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](../pull-requests.md#complete-automatically).
+- **Abandon**: Choose **Abandon** to close the pull request without merging the changes. 
+
+Enter the message used for the [merge commit](merging.md) and update the pull request description as needed in the dialog that follows. 
+
+![Complete pull request dialog](./_img/complete-pull-request-dialog.png)
+
+- Check **Complete linked work items after merging** to complete any linked work items.
+- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `master` branch after the pull request is complete, 
+so unless you plan on doing more work in the branch, it is safe to remove.
+- Check **Squash changes when merging** to [squash merge](../merging-with-squash.md) your pull request.
+- Check **Override branch policies and enable merge** to force merge even if all branch policies haven't been satisfied. This option is only available if you have [Exempt from policy enforcement](../branch-policies.md#bypass-branch-policies) permissions.
+
 
 ### What happens when a pull request is merged?
 You must resolve any [merge conflicts](merging.md) between the pull request branch the target branch. Git adds

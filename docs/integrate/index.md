@@ -43,3 +43,6 @@ Check out the quick starts to get you started:
 ## Resources
 * [REST API reference](https://www.visualstudio.com/en-us/docs/integrate/api/overview)
 
+> [!NOTE]
+> You can also check out the [preview of the new REST API reference docs](https://docs.microsoft.com/en-us/rest/api/vsts/).
+

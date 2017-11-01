@@ -15,6 +15,11 @@ ms.date: 10/04/2017
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
 
+## Quickstarts
+
+- [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+
+
 ## Step-by-Step Tutorials
 
 - [Manage portfolios](portfolio-management.md)
@@ -29,11 +34,10 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 - [Team administrator role and permissions](team-administrator-permissions.md)
 
 ## How-to Guides
-- [Scaled Agile Framework](scaled-agile-framework.md)   
 - [Define a work item template](../backlogs/work-item-template.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 - [Configure team settings](manage-team-assets.md) 
 - [Set team defaults](set-team-defaults.md) 
-
+- [Scaled Agile Framework](scaled-agile-framework.md)   
 
 ## Resources  
 - [Scale & Configure Teams](../../teams/index.md)
