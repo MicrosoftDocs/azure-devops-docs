@@ -82,7 +82,7 @@
     - name: Power BI (VSTS)
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-    - name: SQL Server Reports (TFS)
+    - name: SQL Server Reporting (TFS)
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
   - name: Collaboration

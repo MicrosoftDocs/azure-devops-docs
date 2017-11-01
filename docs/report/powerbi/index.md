@@ -1,5 +1,5 @@
 ---
-title: PowerBI (VSTS)
+title: Power BI (VSTS)
 description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS 
 ms.assetid:  
 ms.prod: vs-devops-alm
