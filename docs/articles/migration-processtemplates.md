@@ -13,33 +13,14 @@ ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 >
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
-TfsMigrator could flag errors which need to be corrected prior to performing a migration. Below are the most common process related errors that are encountered when prepping for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
+TfsMigrator could flag errors which need to be corrected before you start a migration. Below are the most common process related errors that you may encounter when preparing for a migration. After you have corrected each error, you will need to run TfsMigrator's validate command again.
 
 <a id="process-validation-types"></a>
 ## Process Validation Types
 
-There are two types of process validation done by the tfsMigrator. First, it checks to see if your projects have been customized and can be imported using the xml process customization model. Second, it checks to see if any of your projects can be converted into the new inherited process customization model. Two log files are generated. TfsMigrator.log and TryMatchOobProcesses.log. 
-
-<table class="table table-striped">
-<tbody>
-    <tr>
-        <td ="col-md-8">
-            <b>TfsMigrator.log</b>
-        </td>
-        <td ="col-md-8">TfsMigrator.log contains the logs that prevent your collection from being imported becuase of process errors. By default your projects will land under the xml process customization model.  This is the most flexible as it allows for most customizations such as custom fields, work item types, and workflows. You must fix all the errors in this file in order to proceed with the data import.</td>
-    </tr>
-	<tr>
-        <td ="col-md-8">
-            <b>TryMatchOobProcesses.log</b>
-        </td>
-        <td ="col-md-8">TryMatchOobProcesses.log file will be generated and contains the list of errors that the validator found for your projects land in the inherited model. TfsMigrator will look at your projects and determine if that project is using an OOB process such as Agile, Scrum, or CMMI. If it is, and does not contain and customizations, will we bring that project into the inherited model. Errors in this file will not prevent you from doing the data import.</td>
-    </tr>
-</tbody>
-</table>
-
-Most customers have a mix of projects that have been customized (i.e. custom fields) and projects that are using an OOB process template. TfsMigrator checks each project and validates it accordingly. It is very possible you will have some projects that will be mapped to an OOB process and some projects will use the xml for process customization.
-
-We recommend that for any project that has not been customized, that you review the TryMatchOobProcesses.log to determine if there are any errors. If so, make the adjustments accordingly so that the project can be mapped to an OOB process upon data import.
+During the validation, the TfsMigrator will determine the target process model for each project. If the project was created with the Agile, Scrum, or CMMI process template, and was never customized, the project will use the Inheritance process model. In all other cases, the tfsMigrator considers the project as customized, and the project will use the Hosted XML process model. When the Hosted XML process is the target process model, the tfsMigrator validates the customizations can be migrated. The tfsMigrator generates two files during the validation: 
+1. __TfsMigrator.log__: contains the errors when your collection can't be imported due to process validation errors. You must fix all these process errors to proceed with the Import Service.
+2. __TryMatchOobProcesses.log__: lists for each project the target process model (Inheritance or Hosted XML), and describes for the ones that target the Hosted XML process why they are considered customized. You don't have to fix these errors, but they give you guidance what to do in case you want to migrate into the Inheritance process model. Note that once a collection is imported, it is not possible to migrate a project to the Inheritance process model. That is on our roadmap for end of 2018.
 
 ## Update to a System Process
 
@@ -62,7 +43,7 @@ Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: T
 Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField ApplicationType.
 Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF400572: The Project Process Settings must be configured for this feature to be used.
 ```
-<br/>
+
 If you have never customized your project (added fields, work item types, etc.), then fixing these is actually pretty simple.
 
 > If you customized your process, then this approach will not work. You will need to manually change the process templates so that your customizations do not get overwritten.
@@ -74,7 +55,7 @@ Use the "ConformProject.ps1" script to conform a project of your choosing to the
 ```
 .\ConformProjects.ps1 "<collection url>" "<project name>" "c:\process-customization-scripts\import\agile" 
 ```
-<br/>
+
 Make sure you do this for each and every project. 
 
 <a id="dealing-with-process-errors"></a>
@@ -166,9 +147,3 @@ By default, VSTS will support 64 global lists. You will typically run across thi
 * [Resolve validation errors](../work/customize/import-process/resolve-errors.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 * [Defining global lists in TFS](../work/customize/reference/define-global-lists.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 * [Process customization PowerShell scripts](https://github.com/Microsoft/process-customization-scripts)
-
-
-
-
-
-
