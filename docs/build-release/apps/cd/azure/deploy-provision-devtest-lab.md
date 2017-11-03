@@ -146,7 +146,7 @@ release definition in Release Management.
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
-   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory/Contoso/ARMTemplates/CreateVMTemplate.json`.
+   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory)/Contoso/ARMTemplates/CreateVMTemplate.json`.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the environment, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
