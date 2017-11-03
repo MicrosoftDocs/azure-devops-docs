@@ -84,24 +84,22 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  ---
 
-1. Set the following parameters for the **Xcode test** task:
-
-  * **Scheme**: Name of the scheme shared.
-  * **Advanced &gt; Create App Package**: Unchecked.
-  * **Advanced &gt; Use xcpretty**: Checked.
-  * **Advanced &gt; Xcode Developer Path**: allows you to specify the path of a different version of Xcode than is installed by default. Ex: /Applications/Xcode6.4.app/Contents/Developer.
-
-  > **Troubleshooting Tip**: The "Release" configuration is not testable by default. You'll either need to use "Debug" or enable testability in for the configuration in Xcode. Also, be sure to pay attention to capitalization as "Debug" will work but "debug" may not.
+1. Disable the **Xcode test** task.
 
 1. Set the following parameters for the **Xcode build** task:
 
- * Scheme: Name of the scheme shared.
+ * **Version**:  2.*
+ * Scheme: `iOSHelloWorld`
 
-1. On the **Variables** tab in the build definition, add the following variables:
+1. On the **Variables** tab in the build definition, make sure the following variables are set:
 
- * **Configuration**: Debug or Release
+ * **Configuration**: `Release`
+ * **TestConfiguration**: `Debug`
  * **SDK**: iphoneos
  * **TestSDK**: iphonesimulator
+
+  > [!NOTE]
+  > Be sure to pay attention to capitalization. For example, "Debug" will work but "debug" might not.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
@@ -109,12 +107,11 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
- > **Troubleshooting Tip**: If you encounter a "User interaction not allowed" error when running the agent as a launch agent, you will either need check the "Unlock default keychain" option or switch to referencing signing certificates using a file. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
+## Troubleshooting tips
 
- > **Troubleshooting Tip**: If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
+If you encounter a "User interaction not allowed" error when running the agent as a launch agent, you will either need check the "Unlock default keychain" option or switch to referencing signing certificates using a file. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
 
-[//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
 
 ## View the build summary
 
