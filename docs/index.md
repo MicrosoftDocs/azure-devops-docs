@@ -258,7 +258,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                                         <li><a class="barLink" href="/vsts/report/extend-analytics/index">Analytics (VSTS)</a></li>
-                                        <li><a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">REST APIs</a></li>
+                                        <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                     <h3>Marketplace</h3>
@@ -1277,7 +1277,7 @@ featureFlags:
                                         <a class="barLink" href="/vsts/integrate/index">Get Started</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">API reference</a>
+                                        <a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">API reference</a>
                                     </li>
                                 </ul>
                             </li>
