@@ -98,25 +98,46 @@ For a Windows VM, create an ARM template and add a resources element under the
 `Microsoft.Compute/virtualMachine` resource as shown here:
 
 ```ARMTemplate
-{
-   "publisher": "Microsoft.VisualStudio.Services",
-   "type": "Team ServicesAgent",
-   "typeHandlerVersion": "1.0",
-   "autoUpgradeMinorVersion": true,
-   "settings": {
-      "VSTSAccountName": "[Required. The VSTS account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify "contoso"]",
-      "TeamProject": "[Required. The Team Project that has the deployment group defined within it]",
-      "DeploymentGroup": "[Required. The deployment group against which deployment agent will be registered]",
-      "AgentName": "[Optional. If not specified, the VM name with -DG appended will be used]",
-      "Tags": "[Optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters]"
-    },
-   "protectedSettings": {
-     "PATToken": "[Required. The Personal Access Token that will be used to authenticate against the VSTS account to download and configure the agent]"
+"resources": [
+  {
+    "name": "[concat(parameters('vmNamePrefix'),copyIndex(),'/TeamServicesAgent')]",
+    "type": "Microsoft.Compute/virtualMachines/extensions",
+    "location": "[parameters('location')]",
+    "apiVersion": "2015-06-15",
+    "dependsOn": [
+        "[resourceId('Microsoft.Compute/virtualMachines/',
+                      concat(parameters('vmNamePrefix'),copyindex()))]"
+    ],
+    "properties": {
+      "publisher": "Microsoft.VisualStudio.Services",
+      "type": "TeamServicesAgent",
+      "typeHandlerVersion": "1.0",
+      "autoUpgradeMinorVersion": true,
+      "settings": {
+        "VSTSAccountName": "[parameters('VSTSAccountName')]",
+        "TeamProject": "[parameters('TeamProject')]",
+        "DeploymentGroup": "[parameters('DeploymentGroup')]",
+        "AgentName": "[parameters('AgentName')]",
+        "Tags": "[parameters('Tags')]"
+      },
+      "protectedSettings": {
+      "PATToken": "[parameters('PATToken')]"
+     }
    }
-}
+  }
+]
 ```
 
->**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `Team ServicesAgentLinux`.
+where:
+
+* **VSTSAccountName** is required. The VSTS account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify `contoso`
+* **TeamProject** is required. The Team Project that has the deployment group defined within it
+* **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
+* **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used
+* **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
+* **PATToken** is required. The Personal Access Token that will be used to authenticate against the VSTS account to download and configure the agent
+
+>**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
 To use the template:
 

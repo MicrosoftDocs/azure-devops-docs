@@ -43,7 +43,7 @@
   - name: IIS Basic Authentication and PATs
     href: get-started/authentication/iis-basic-auth.md
 - name: REST API Reference
-  href: https://www.visualstudio.com/en-us/docs/integrate/api/overview
+  href: https://docs.microsoft.com/rest/api/vsts/
 - name: How to get help
   href: ../extend/support/help.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Visual Studio extensions
