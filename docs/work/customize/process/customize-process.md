@@ -163,7 +163,7 @@ You can determine the processes defined for an account using the REST API: [Proc
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 
 
