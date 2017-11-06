@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: alewis
-ms.date: 09/27/2017
+ms.date: 11/05/2017
 ---
 
 # Build definition source repositories
