@@ -3436,7 +3436,11 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>16.121.26818.00</td>
         </tr>
         <tr>
-          <td style="background:rgb(155, 192, 230);">2017.2</td>
+          <td>[2017.3](https://aka.ms/relnotes-tfs2017-update3)</td>
+          <td>15.117.27024.0</td>
+        </tr>
+        <tr>
+          <td style="background:rgb(155, 192, 230);">[2017.2](https://aka.ms/relnotes-tfs2017-update2)</td>
           <td>15.117.26714.00</td>
         </tr>
         <tr>
