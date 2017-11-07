@@ -153,7 +153,5 @@ To rename a process, open the &hellip; context menu for the process and choose *
 You can determine the processes defined for an account using the REST API: [Processes](https://www.visualstudio.com/en-us/docs/integrate/api/tfs/processes).
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
-
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 

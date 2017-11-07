@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 11/07/2017
 ---
 
 
@@ -95,4 +95,3 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 
 <!-- ENDSECTION --> 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]
