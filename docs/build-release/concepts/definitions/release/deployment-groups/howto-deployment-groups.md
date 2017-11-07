@@ -11,8 +11,7 @@ ms.date: 09/26/2017
 
 # How to: Use deployment groups
 
->**VSTS:** Deployment groups are not yet available to all VSTS accounts.  
->**TFS:** At present, deployment groups are not available in Team Foundation Server.
+**VSTS | TFS 2018**
 
 ## View and manage deployment groups
 

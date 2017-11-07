@@ -51,8 +51,8 @@ Follow these steps to create and check-in a new Resource Manager template.
    Visual Studio **File | Add | New project** menu.
 
 1. Save the entire solution (not just the project) and 
-   commit the changes into a Team Foundation Server or 
-   VSTS Git repository.
+   commit the changes into a [Team Foundation Server](../../../../tfvc/index.md) or 
+   [VSTS Git](../../../../git/index.md) repository.
 
 ### Create the build definition
 

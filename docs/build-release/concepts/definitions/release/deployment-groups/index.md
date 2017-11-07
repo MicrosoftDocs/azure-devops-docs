@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Deployment groups
 
->**TFS:** At present, deployment groups are not available in Team Foundation Server.
+**VSTS | TFS 2018**
 
 A deployment group is a logical set of deployment target machines 
 that have agents installed on each one. Deployment groups represent the physical environments;

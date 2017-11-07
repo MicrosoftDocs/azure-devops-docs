@@ -159,6 +159,8 @@ just the ones that you want to bulk edit using the grid.
 To return to the test suite view, switch the view 
 from Grid back to List.
 
+<a name="copyclonetce"></a>
+
 ### Q: Can I copy, clone, and move test plans and test suites?
 
 **A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.

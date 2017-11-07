@@ -184,7 +184,7 @@ The Bug category is a special category that is designed to allow teams to manage
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 
 
