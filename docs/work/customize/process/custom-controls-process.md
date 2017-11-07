@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017 
+ms.date: 11/07/2017 
 ---
 
 # Add a custom control to a work item type (Inheritance process model)  
@@ -150,3 +150,5 @@ o add a custom control, you begin by adding it first through the Extensions page
 	<img src="_img/custom-controls-field-extension-dialog.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
 -->  
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

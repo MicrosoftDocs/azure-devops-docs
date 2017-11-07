@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize a work item type (Inheritance process model)    
@@ -143,7 +143,7 @@ Additional topics of interest:
 	<img src="_img/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 2px solid #C3C3C3;" />  
  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
