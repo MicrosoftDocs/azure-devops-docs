@@ -273,4 +273,4 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

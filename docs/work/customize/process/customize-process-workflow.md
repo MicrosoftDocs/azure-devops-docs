@@ -148,7 +148,7 @@ Additional topics of interest:
 
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 <!---
 UPDATE CONTENT FOR THIS FWLINK: http://go.microsoft.com/fwlink/?LinkId=286303. 

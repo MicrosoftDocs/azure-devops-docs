@@ -13,10 +13,12 @@ ms.date: 09/26/2017
 
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
-There are several ways to duplicate test suites and test cases when you are [planning tests](../getting-started/create-a-test-plan.md) in Team Foundation Server (TFS).  
-  
-It's important to understand that a test suite or plan contains a set of *references* to test cases. If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in Team Foundation, and you can find it with a query.  
-  
+There are several ways to duplicate test suites and test cases.
+It's important to understand that a test suite or plan contains a set of *references* to test cases.
+If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in VSTS or TFS, and you can find it there with a query.  
+
+For details about copying tests in VSTS or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
+
 ## Copying and cloning in Microsoft Test Manager  
 
 All these procedures are performed in Microsoft Test Manager. Choose **Testing Center**, **Plan**, **Contents**. (You can also [clone from the command line](#tcm).)  
