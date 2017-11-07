@@ -1,8 +1,8 @@
-- name: Exploratory Testing
+- name: Exploratory & Manual Testing
   href: index.md
 - name: Overview
   items:
-  - name: About exploratory testing
+  - name: About exploratory and manual testing
     href: overview.md
 - name: Quickstarts
   items:
