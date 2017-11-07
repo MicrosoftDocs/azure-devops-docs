@@ -11,6 +11,8 @@ ms.date: 09/26/2017
 
 # How To: Provision agents for deployment groups
 
+**VSTS | TFS 2018**
+
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
 and install the required agent on each machine. This topic explains how to create a deployment group,
 and install and provision the agent on each virtual or physical machine in your deployment group.
