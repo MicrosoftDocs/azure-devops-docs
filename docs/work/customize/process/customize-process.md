@@ -161,8 +161,6 @@ See also:
 
 You can determine the processes defined for an account using the REST API: [Processes](https://visualstudio.com/integrate/api/tfs/processes.md).
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
-
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 

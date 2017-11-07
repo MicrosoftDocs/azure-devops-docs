@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize the web form for a work item type (Inheritance process model)  
@@ -201,7 +201,6 @@ Additional topics of interest:
 - [Customize cards on boards](../customize-cards.md)  
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 

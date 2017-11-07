@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/01/2017
+ms.date: 11/07/2017 
 ---
 
 
@@ -121,3 +121,5 @@ If you're familiar with the [XML elements for applying rules to fields](../refer
 	- **EMPTY**
 
 -->
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
