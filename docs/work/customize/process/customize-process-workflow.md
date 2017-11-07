@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize the workflow (Inheritance process model)   
@@ -146,7 +146,6 @@ Additional topics of interest:
 - [Add or edit Kanban columns](../../kanban/add-columns.md)  
 - [Query by workflow or Kanban board changes](../../track/query-by-workflow-changes.md)    
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 

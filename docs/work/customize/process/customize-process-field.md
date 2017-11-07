@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Add a custom field to a work item type (Inheritance process model)  
@@ -270,7 +270,5 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 
 [!INCLUDE [temp](../../_shared/field-reference.md)]  
-
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
