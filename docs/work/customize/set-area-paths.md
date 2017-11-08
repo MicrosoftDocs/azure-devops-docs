@@ -43,11 +43,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
  
@@ -56,11 +56,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.  
  
@@ -69,11 +69,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. 
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
  
@@ -83,7 +83,7 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
  
 1. From the web portal user context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
 
@@ -97,11 +97,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 	If you haven't added any areas or teams, you'll see that only one area is defined.   
 
-	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #C3C3C3;" />  
 
 2.  Add a new child node to the area you have selected. 
 
-	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="tfs-15-area-paths" />
 
@@ -111,11 +111,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 	If you haven't added any areas or teams, you'll see that only one area is defined.   
 
-	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #C3C3C3;" />  
 
 2. Add a new child node to the area you have selected.  
 
-	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #C3C3C3;" /> 
  
 
 
@@ -125,7 +125,7 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. Open the **Areas** tab.  
 
-	<img src="_img/ALM_CW_OpenAreas.png" alt="Open the areas page defined for team project" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/ALM_CW_OpenAreas.png" alt="Open the areas page defined for team project" style="border: 1px solid #C3C3C3;" />  
 
 	From the areas page, you can set the default area path used to filter the backlog.  The default area path is also used when new work items a user creates new work items. 
 
@@ -146,7 +146,7 @@ When you delete an area or an iteration node, the system automatically updates t
 
 You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
-<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #C3C3C3;" /> 
 
 
 

@@ -62,11 +62,11 @@ In order to add and configure a plan, you must have the following in place:
 
 Once you have [installed Delivery Plans](#install-plans), the Plans page appears under the Work hub.
 
-<img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 1px solid #C3C3C3;" /> 
 
 0. To add a plan, click New Plan from the Plans page. 
 
-	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 1px solid #C3C3C3;" /> 
 
 	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../security/set-permissions-access-work-tracking.md#plan-permissions).  
 
@@ -188,7 +188,7 @@ For additional resources for working with multiple teams, see these additional t
  
 From a Delivery Plan page, enter **?** to open the keyboard shortcuts pane. For additional shortcuts, see [hotkeys and keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
 
-<img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a id="install-plans">  </a>

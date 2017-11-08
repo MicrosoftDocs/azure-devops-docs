@@ -19,7 +19,7 @@ To support your work tracking requirements, you can customize each WIT to add cu
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
 
-<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
 
 ##What you can customize   
 
@@ -88,7 +88,7 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose New group.    
 
-	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
 
 2. Label the group and choose the column it should appear in.
 

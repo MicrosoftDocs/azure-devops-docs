@@ -21,16 +21,16 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="team-services" /> 
 #### VSTS, TFS 2017
     
-<img src="_img/hist-audit-query-ts-bt.png" alt="Search for items based on words contained in the History field" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-query-ts-bt.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
 
 #### TFS 2015, TFS 2013
 
-<img src="_img/ALM_HA_HistoryQuery.png" alt="Search for items based on words contained in the History field" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_HA_HistoryQuery.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="tee-query-history" />
 <a id="team-explorer" />
 #### Visual Studio, Team Explorer, Team Explorer Everywhere
-<img src="_img/hist-audit-query-team-explorer.png" alt="Search for items based on words contained in the History field" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-query-team-explorer.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
 
 
 ##List items based on the contents of the History field 
@@ -109,7 +109,7 @@ An entry is made to the History field each time a work item is saved. To view th
 <a id="team-services-tab" /> 
 #### VSTS, TFS 2017
      
-<img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - VSTS" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - VSTS" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]  
 > The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
@@ -119,11 +119,11 @@ An entry is made to the History field each time a work item is saved. To view th
 #### TFS 2015, TFS 2013 and Team Explorer
 To view only the comments that were added to the log, choose the <b>Discussion Only</b> tab. To view all changes made to the item, choose the <b>All Changes</b> tab, and then choose the <b>show all changes</b> link for a specific date and time.  
  
-<img src="_img/hist-audit-choose-history-tab-tfs.png" alt="View History tab - TFS Web portal, Team Explorer" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-choose-history-tab-tfs.png" alt="View History tab - TFS Web portal, Team Explorer" style="border: 1px solid #C3C3C3;" /> 
 
 If you open the work item from the web portal, you'll see the state change history diagram. To see the entire history of state changes, choose **Show all**.
 
-<img src="_img/state-change-history-diagram.png" alt="State change history diagram (web portal only)" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/state-change-history-diagram.png" alt="State change history diagram (web portal only)" style="border: 1px solid #C3C3C3;" /> 
 
 The history details shown depend on the platform, version, and client you user. 
 
@@ -132,7 +132,7 @@ The history details shown depend on the platform, version, and client you user.
 
 Click an entry in the left pane to view the details of changes made.
      
-<img src="_img/hist-audit-wi-form.png" alt="History tab - VSTS" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-wi-form.png" alt="History tab - VSTS" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a id="explorer" /> 
@@ -140,7 +140,7 @@ Click an entry in the left pane to view the details of changes made.
 
 To view only the comments that were added to the log, choose the <b>Discussion Only</b> tab. To view all changes made to the item, choose the <b>All Changes</b> tab, and then choose the <b>show all changes</b> link for a specific date and time. 
  
-<img src="_img/ALM_HA_AllChanges.png" alt="View change history" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_HA_AllChanges.png" alt="View change history" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Fields that support history, auditing, and revision tracking 

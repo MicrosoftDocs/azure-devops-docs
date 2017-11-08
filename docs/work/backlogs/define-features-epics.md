@@ -45,7 +45,7 @@ you can [enable them for your team](../customize/select-backlog-navigation-level
 
 For example, when you click Epics, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-<img src="_img/org-backlog-epics-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-epics-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #C3C3C3;" />  
 
 Click Features to see a list of all features in your team's active area paths.  
 
@@ -56,7 +56,7 @@ Click Features to see a list of all features in your team's active area paths.
 Just as you can [add items to your product backlog](create-your-backlog.md), you can add items to your features and epics backlogs. 
 Here, we've added six features. 
 
-<img src="_img/org-backlog-features-ts-new-nav.png" alt="Features backlog" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-features-ts-new-nav.png" alt="Features backlog" style="border: 1px solid #C3C3C3;" />  
 
 You can add epics in the same way. Simply open the Epics backlog.  
 
@@ -65,7 +65,7 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 >[!NOTE]  
 >**Reminder:** The following screenshots illustrate the work item form for VSTS. Your forms may differ depending on what you have enabled, what process you chose when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;and what platform you're working from, VSTS and TFS.  
 
-<img src="_img/org-backlog-feature-form-ts-new-nav.png" alt="Feature work item form, Agile process, Add details to a feature" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/org-backlog-feature-form-ts-new-nav.png" alt="Feature work item form, Agile process, Add details to a feature" style="border: 1px solid #C3C3C3;" /> 
  
 <table>
 <tbody valign="top">
@@ -133,7 +133,7 @@ You can add features to epics, and backlog items to features.
  
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
-<img src="_img/org-backlog-features-add-child-ts.png" alt="Add a child item to a backlog work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-features-add-child-ts.png" alt="Add a child item to a backlog work item" style="border: 1px solid #C3C3C3;" />  
 
 
 Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png) , you can add a child item. 
