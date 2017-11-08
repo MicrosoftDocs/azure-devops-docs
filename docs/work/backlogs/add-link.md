@@ -44,7 +44,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 	Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
-	<img src="_img/add-link-existing-backlog-ts.png" alt="VSTS, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-existing-backlog-ts.png" alt="VSTS, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 1px solid #C3C3C3;" /> 
 
 #### TFS 2017  
 
@@ -54,7 +54,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 	Here we multi-select from the Queries page and choose <b>Link to a new item&hellip;</b>.</p>
 
-	<img src="_img/add-link-query-new-work-item-2016.png" alt="TFS 2017, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-query-new-work-item-2016.png" alt="TFS 2017, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 
 #### TFS 2015  
 
@@ -64,7 +64,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 	Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item**&hellip;. 
 
-	<img src="_img/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="link-existing"> </a>  
 ### Link to an existing work item    
@@ -82,12 +82,12 @@ When you link work items, you select a link type. In general, use the following 
 
 # [Browser](#tab/browser) 
 
-	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 2px solid #C3C3C3;" />  		
+	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 1px solid #C3C3C3;" />  		
 		
 
 # [Visual Studio](#tab/visual-studio) 
 
-	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 2px solid #C3C3C3;" />  		
+	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #C3C3C3;" />  		
 
 	To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu or Browse button (Visual Studio) to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
@@ -95,11 +95,11 @@ When you link work items, you select a link type. In general, use the following 
 
 	<img src="_img/add-link-related-specify-id.png" alt="Add link dialog" style="border: 2px solid #C3C3C3;" />
 
-	<img src="_img/add-link-info-icon-clicked.png" alt="Add link dialog, show the work items selected for linking" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-info-icon-clicked.png" alt="Add link dialog, show the work items selected for linking" style="border: 1px solid #C3C3C3;" /> 
 
 0. If you are working from the Query Results page (web portal or Visual Studio), you'll need to bulk save the work items you've modified. Work items are automatically saved when you work from a backlog page.
 
-	<img src="_img/bulk-modify-link-existing-bulk-save-ts.png" alt="Query results page, multi-select items, bulk save modified work items" style="border: 2px solid #C3C3C3;" /> 	
+	<img src="_img/bulk-modify-link-existing-bulk-save-ts.png" alt="Query results page, multi-select items, bulk save modified work items" style="border: 1px solid #C3C3C3;" /> 	
 
 ---
 
@@ -109,8 +109,8 @@ Here, we have selected to add a link to the selected work items.
 
 0. Specify the link type, work item type, and title of the new work item. Click OK.
 
-	<img src="_img/add-link-related-new-item-issue.png" alt="Query results page, multi-select items, select Link to an existing work item" style="border: 2px solid #C3C3C3;" /> 
-	<!---<img src="_img/bulk-modify-link-new-ts.png" alt="Query results page, multi-select items, select Link to an existing work item" style="border: 2px solid #C3C3C3;" />  -->
+	<img src="_img/add-link-related-new-item-issue.png" alt="Query results page, multi-select items, select Link to an existing work item" style="border: 1px solid #C3C3C3;" /> 
+	<!---<img src="_img/bulk-modify-link-new-ts.png" alt="Query results page, multi-select items, select Link to an existing work item" style="border: 1px solid #C3C3C3;" />  -->
 
 0. A work item of the type selected opens. Specify any additional fields you want and then save it. 
 
@@ -125,7 +125,7 @@ You can add a new git branch and link them to existing work items at the same ti
 
 From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch.  
 
-<img src="_img/add-link-new-branch.png" alt="Query results page, multi-select items, select Link to a new work item" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/add-link-new-branch.png" alt="Query results page, multi-select items, select Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 
 To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 
@@ -135,7 +135,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 0.  From the Add link dialog, click the &hellip; context menu or Browse button (Visual Studio) to open the following dialog. 
 
-	<img src="_img/add-link-choose-linked-work-item-by-title.png" alt="Choose Linked work items" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-choose-linked-work-item-by-title.png" alt="Choose Linked work items" style="border: 1px solid #C3C3C3;" /> 
 
 	If the work items are defined in another team project, then first select the Project. Then, make your selections: 
 

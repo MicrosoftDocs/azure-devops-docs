@@ -162,7 +162,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 2. Confirm you want to actually delete the item(s).  
 
-	<img src="_img/remove-delete-wi-confirm-delete.png" alt="Confirm delete dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/remove-delete-wi-confirm-delete.png" alt="Confirm delete dialog" style="border: 1px solid #C3C3C3;" />  
 
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
@@ -184,11 +184,11 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. To restore deleted items, open the Recycle bin from the web portal.  
 
-	<img src="_img/remove-delete-recycle.png" alt="Open Recycle bin" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/remove-delete-recycle.png" alt="Open Recycle bin" style="border: 1px solid #C3C3C3;" />  
 
 2.	Select the items you want to restore and then choose restore or to permanently delete the items.  
 
-	<img src="_img/remove-delete-restore.png" alt="Restore selected items" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/remove-delete-restore.png" alt="Restore selected items" style="border: 1px solid #C3C3C3;" /> 
 
 	>[!NOTE] 
 	>You'll only see the Permanently delete option if your [Permanently delete work items permission](../../security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
@@ -238,14 +238,14 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or VSTS a
 
 1. To delete a test case, open it from the web portal and choose the Permanently delete option from the actions menu. (Bulk deletion is not supported from a query results page.)     
 
-	<img src="_img/delete-test-artifacts-form.png" alt="Delete a test case and associated test artifacts from the web form" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/delete-test-artifacts-form.png" alt="Delete a test case and associated test artifacts from the web form" style="border: 1px solid #C3C3C3;" />  
 
 	>[!NOTE] 
 	>You'll only see the Permanently delete option if you have the necessary permissions and access. You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Advanced](../../security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from the work hub that aren't linked to any test plans or test suites. 
 
 2. Confirm you want to actually delete the item.  
 
-	<img src="_img/delete-test-artifacts-form-dialog-confirm.png" alt="Confirm delete" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/delete-test-artifacts-form-dialog-confirm.png" alt="Confirm delete" style="border: 1px solid #C3C3C3;" />  
 
 3. You can also delete test plans and test suites directly from the Test hub. 
 

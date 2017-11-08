@@ -18,7 +18,7 @@ Your Kanban board provides you with a visual interactive space for you and your 
 
 Each card on the board corresponds to a user story or work item the team is tracking.
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
 Your Kanban board is fully customizable to support your team's workflow. 
 

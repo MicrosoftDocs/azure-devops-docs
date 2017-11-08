@@ -35,12 +35,12 @@ To get added as a team administrator, ask another team admin, the account owner,
 	<img src="_img/add-team-admin-link.png" alt="Web portal, VSTS & TFS 2017, Open  team administrator context" style="border: 2px solid #C3C3C3;" />
 <!---	***TFS 2015** 
 
-	<img src="_img/add-account-as-team-admin.png" alt="Web portal, TFS 2015, Open team administration context" style="border: 2px solid #C3C3C3;" />    -->
+	<img src="_img/add-account-as-team-admin.png" alt="Web portal, TFS 2015, Open team administration context" style="border: 1px solid #C3C3C3;" />    -->
 
 4. Enter the identities you want to add to the team administrator role.  
 <!---	**VSTS and TFS 2017**   -->
 
-	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 1px solid #C3C3C3;" /> 
 
 <!---	**TFS 2015** 
 

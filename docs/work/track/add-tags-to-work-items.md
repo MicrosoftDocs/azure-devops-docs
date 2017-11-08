@@ -249,7 +249,7 @@ To query work items based on tags, add a clause for each tag you want to use to 
 
 For example, here we query for all work items that are tagged either ```performance``` or ```security```. 
 
-<img src="_img/add-tags-query.png" alt="Query based on tags" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/add-tags-query.png" alt="Query based on tags" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="show-tags"></a>
 ##Show tags in your backlog or query results  

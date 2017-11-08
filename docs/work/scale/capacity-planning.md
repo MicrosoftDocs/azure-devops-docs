@@ -41,15 +41,15 @@ From the Capacity page, enter the capacity and days off for each member of your 
 For example, Christie Church's capacity is 6 hours/day for design work. 
 
 #### VSTS and TFS 2017
-<img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="VSTS, Set Capacity" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="VSTS, Set Capacity" style="border: 1px solid #C3C3C3;" /> 
  
 
 #### TFS 2015.1
-<img src="_img/capacity-planning-set-capacity-tfs-2015.1.png" alt="TFS 2015.1, Set Capacity" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/capacity-planning-set-capacity-tfs-2015.1.png" alt="TFS 2015.1, Set Capacity" style="border: 1px solid #C3C3C3;" /> 
 
 
 #### TFS 2015  
-<img src="_img/set-sprint1-capacity.png" alt="TFS '15', Set Capacity" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/set-sprint1-capacity.png" alt="TFS '15', Set Capacity" style="border: 1px solid #C3C3C3;" /> 
 
 
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete.
@@ -73,7 +73,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 
-<img src="_img/copy-capacity-from-previous-sprint.png" alt="Copy capacity from the previous iteration" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/copy-capacity-from-previous-sprint.png" alt="Copy capacity from the previous iteration" style="border: 1px solid #C3C3C3;" /> 
 
 Notice that only the capacity per day and activity are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
 
@@ -86,12 +86,12 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 Click ![Add user icon](_img/capacity-planning-add-user-icon.png) to add a specific account to your capacity planning, or ![Add missing team members](_img/capacity-planning-add-missing-users-icon.png) to add all missing team members. 
 
-<img src="_img/capacity-planning-add-missing-team-members.png" alt="Capacity planning, Add missing team members" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/capacity-planning-add-missing-team-members.png" alt="Capacity planning, Add missing team members" style="border: 1px solid #C3C3C3;" /> 
 
 
 To remove a user, click the option from the users Action menu. 
 
-<img src="_img/capacity-planning-remove-user.png" alt="Capacity planning, Remove a user"  style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/capacity-planning-remove-user.png" alt="Capacity planning, Remove a user"  style="border: 1px solid #C3C3C3;" /> 
 
 <a id="track-multiple-activities">  </a>
 ##Track capacity when performing multiple activities
@@ -103,7 +103,7 @@ Because individual team members have different sets of skills and duties, you ca
 
 Here, Jamal divides his time between Deployment and Development. 
 
-<img src="_img/add-activity-to-capacity-planning.png" alt="Add activity to capacity tracking for an individual" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/add-activity-to-capacity-planning.png" alt="Add activity to capacity tracking for an individual" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="track-capacity-per-team">  </a>
@@ -114,16 +114,16 @@ If you work on more than one team, you'll want to switch between teams easily an
 Switch to another team when you work on items for that team. From the web portal, choose Browse All if the name you want doesn't appear.  
 
 
-<img src="_img/vso-team-selector.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/vso-team-selector.png" alt="Choose another team from the team project menu" style="border: 1px solid #C3C3C3;" />  
 
 ###Specify sprint capacity for each team you work on
 If you work on more than one team during a sprint cycle, you'll probably allocate some percentage of your time to each team.  
 
 For example, both Christie and Raisa split their time between the Web and Phone teams. They therefore allocate 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
 
-<img src="_img/set-capacity-web-team.png" alt="Allocate capacity for team Web" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/set-capacity-web-team.png" alt="Allocate capacity for team Web" style="border: 1px solid #C3C3C3;" />  
 <br/>
-<img src="_img/set-capacity-phone-team.png" alt="Allocate capacity for team Phone" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/set-capacity-phone-team.png" alt="Allocate capacity for team Phone" style="border: 1px solid #C3C3C3;" />  
  
 If your name isn't listed in the capacity view, you need to be added as a team member. 
 
