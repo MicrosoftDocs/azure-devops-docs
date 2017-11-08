@@ -27,21 +27,21 @@ and more. Because the most important work appears at the top of the list, your t
 
 From your web browser, open your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md).   
  
-<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" /> 
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #C3C3C3;" /> 
 
 The URL follows this pattern: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
  
  
 <!---
 ### TFS
-<img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #C3C3C3;" />  
 
 The URL follows this pattern:
 ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```
 
 If you don't see the team or team project you want, open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
+<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #C3C3C3;" /> 
 
 If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
 
@@ -55,7 +55,7 @@ Begin building your backlog by entering a title and click Add. Repeat this step 
 > [!TIP]  
 > Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view.     
   
-<img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 1px solid #C3C3C3;" />  
 
 
 >[!NOTE]  
@@ -70,7 +70,7 @@ After you've got some items on your backlog, you can order them and create a pri
 
 Reorder your backlog by simply dragging work items. Or, if you prefer the keyboard, hold the Alt key  and use the up and down arrows.
 
-<img src="_img/cyb-order-backlog.png" alt="Reorder work items" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-order-backlog.png" alt="Reorder work items" style="border: 1px solid #C3C3C3;" />  
 
 
 >[!TIP]  
@@ -96,11 +96,11 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 
 <p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
 
-<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 1px solid #C3C3C3;" />  
  
 <p>For details on adding work items using the old form, see [add work items (TFS)](add-work-items.md).</p>  
 
-<img src="_img/ALM_CB_CreateWorkItem.png" alt="Product backlog item - TFS - Add details to a work item" style="border: 2px solid #C3C3C3;" />   
+<img src="_img/ALM_CB_CreateWorkItem.png" alt="Product backlog item - TFS - Add details to a work item" style="border: 1px solid #C3C3C3;" />   
 -->
 
 <table valign="top" width="100%">

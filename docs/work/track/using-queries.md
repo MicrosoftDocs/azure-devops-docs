@@ -54,7 +54,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 
 	**VSTS, TFS 2017, TFS 2015:**  
 	
-	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 
 	**TFS 2013:**  
 	![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
@@ -145,7 +145,7 @@ By default, shared queries and new queries are scoped to the current team projec
 ### VSTS and TFS 2015.1  
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
-<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 1px solid #C3C3C3;" /> 
 
 With the Query across projects checked, you can add the Team Project field to filter to a select number of team projects.   
 

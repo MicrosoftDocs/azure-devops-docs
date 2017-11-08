@@ -30,7 +30,7 @@ Open the Settings dialog from the Capacity page to set Working days.
 
 Open your team settings from the Overview tab of your team's admin context.  
 
-<img src="../scale/_img/ALM_DS_WorkingDaysOff.png" alt="Team settings page for default working days" style="border: 2px solid #C3C3C3;" /> 
+<img src="../scale/_img/ALM_DS_WorkingDaysOff.png" alt="Team settings page for default working days" style="border: 1px solid #C3C3C3;" /> 
 </div>
 
 <a id="tfs-2015-1-work-days" />
@@ -45,5 +45,5 @@ Open the Settings dialog from the Capacity page to set Working days.
 
 Open the Settings dialog from the Capacity page to set Working days.
 
-<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="TFS '15', Set Capacity" style="border: 2px solid #C3C3C3;" /> 
+<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="TFS '15', Set Capacity" style="border: 1px solid #C3C3C3;" /> 
 

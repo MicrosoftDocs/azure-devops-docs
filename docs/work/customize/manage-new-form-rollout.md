@@ -35,7 +35,7 @@ You enable the new form from the project collection admin page.
 
 1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the team project collection.  
 
-	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
 <!---   
 	![Open admin context](../_img/icons/ALM_OpenAdminContext.png)  
  -->

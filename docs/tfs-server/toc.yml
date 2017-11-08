@@ -197,20 +197,6 @@
         href: ./upgrade/run-upgrade-wizard.md
     - name: Upgrade from TFS 2005
       href: ./upgrade/tfs-2005-to-2015.md
-  - name: Migrate from TFS to VSTS
-    items:
-      - name: Migrate data from TFS to VSTS
-        href: ../articles/migrate-to-vsts-from-tfs.md
-      - name: Migration overview
-        href: ../articles/migration-overview.md
-      - name: Migration import
-        href: ../articles/migration-import.md
-      - name: Process templates
-        href: ../articles/migration-processtemplates.md
-      - name: Post import
-        href: ../articles/migration-post-import.md
-      - name: Advanced migration topics
-        href: ../articles/migration-advanced-topics.md
   - name: Configure Lab Management for SCVMM environments
     href: ./admin/config-lab-scvmm-envs.md
   - name: Set up secure sockets layer
@@ -223,10 +209,6 @@
     href: ./install/install-proxy-setup-remote.md
   - name: Change site and certificate settings
     href: ../security/websitesettings.md?toc=/vsts/tfs-server/toc.json
-- name: Troubleshooting  
-  items:
-  - name: Troubleshooting migration 
-    href: ../articles/migration-troubleshooting.md
 - name: Reference
   items:
   - name: Requirements
@@ -263,6 +245,8 @@
       href: ./command-line/tfsservicecontrol-cmd.md
 - name: Resources
   items:
+  - name: Migrate to TFS
+    href: ../articles/migration-overview.md
   - name: Get started user guide
     href: ../user-guide/index.md
   - name: "Security & Identity"

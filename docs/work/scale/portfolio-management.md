@@ -45,7 +45,7 @@ The Fabrikam Account Management portfolio owner has several campaigns to initiat
 
 With the hierarchical structure implemented, portfolio owners working in Account Management can view the epic, feature, and product backlogs for their area. 
 
-<img src="_img/pm-account-management-backlog-view.png" alt="Epic backlog of account management team" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/pm-account-management-backlog-view.png" alt="Epic backlog of account management team" style="border: 1px solid #C3C3C3;" /> 
 
 All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
 
@@ -58,7 +58,7 @@ All work items under the Fabrikam/Account Management area path appear in their b
 
 The Customer Profile feature team's view of the backlog only includes those work items assigned to their area path, Fabrikam/Account Management/Customer Profile. Here we show parents which provides a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
 
-<img src="_img/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" style="border: 1px solid #C3C3C3;" /> 
 
 >[!TIP]    
 >Add **Node Name** to the column options to show the team assigned to the work item.   
@@ -70,7 +70,7 @@ While the hierarchical team and backlog structure works well to support autonomo
 
 In this Account Management view, all Product Backlog Items still under Account Management have yet to be assigned.
 
-<img src="_img/pm-assign-items-from-common-backlog.png" alt="Backlog view-Assign items from a common backlog" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/pm-assign-items-from-common-backlog.png" alt="Backlog view-Assign items from a common backlog" style="border: 1px solid #C3C3C3;" /> 
 
 During the planning meeting, you can open each item, make notes, and assign the item to the team to work on it. 
 
@@ -115,7 +115,7 @@ You'll need to be a [project administrator](../../security/set-project-collectio
 
 	You do this by opening each area path associated with a feature team and change its location to be under the management area path. For example, here we move the Customer Profile area path to under Account Management
 
-	<img src="_img/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" />  
 
 	Repeat this step for all feature team area paths. 
 
@@ -123,17 +123,17 @@ You'll need to be a [project administrator](../../security/set-project-collectio
 
 	Here we choose to include sub-area paths for the Account Management area.  
 
-	<img src="_img/pm-include-sub-area-paths.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/pm-include-sub-area-paths.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" /> 
 
 	Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
 4. Add team administrators for each feature team and management area. You do this from the Overview page of the team admin context.   
 
-	<img src="_img/pm-add-team-admins.png" alt="Open team administration context" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/pm-add-team-admins.png" alt="Open team administration context" style="border: 1px solid #C3C3C3;" />  
 
 	Add the account identity, for example the product owner, development lead, or other team member who has primary responsibility for planning and reporting progress.  
 
-	<img src="_img/add-team-admin-dialog.png" alt="Add account as a team administrator" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/add-team-admin-dialog.png" alt="Add account as a team administrator" style="border: 1px solid #C3C3C3;" />  
 
 	In this way, the team administrators can add additional team admins and team members. They can also configure their team settings and manage their Agile tools and team assets.  
 
@@ -146,7 +146,7 @@ If your feature teams use Scrum and work in sprints, you'll want to set up a ser
 
 You do this from the team project admin context. 
 
-<img src="_img/setup-sprint-schedule.png" alt="Setup sprint schedule" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/setup-sprint-schedule.png" alt="Setup sprint schedule" style="border: 1px solid #C3C3C3;" /> 
 
 Here we've defined the start and end dates of the first 6 sprints corresponding to a 3-week cadence.  
  

@@ -86,6 +86,8 @@
     href: reference-qa.md
   - name: Unable to connect
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
+  - name: Default permissions and access
+    href: manual-test-permissions.md
 - name: Resources
   items:
   - name: Get Stakeholder feedback

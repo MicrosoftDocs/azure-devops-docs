@@ -67,12 +67,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog menu </p>
-<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 1px solid #C3C3C3;" />  
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" /> 
 </td>
 </tr>
 </table>
@@ -83,12 +83,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
-<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" />  
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 2px solid #C3C3C3;" />  
+<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #C3C3C3;" />  
 </td>
 </tr>
 </table>
@@ -99,12 +99,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
-<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" /> 
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
-<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" />  
 </td>
 </tr>
 </table>

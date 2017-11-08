@@ -40,7 +40,7 @@ Once you've set up your swimlanes, you can drag items into a swimlane as well as
 
 You can also focus on a single swimlane by collapsing all other lanes.
 
-<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
 
 ## Configure swimlanes 
 So, what swimlanes will support your tracking needs?  
@@ -49,7 +49,7 @@ Once you've identified one or two, add them to your working Kanban board.
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Swimlanes.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -57,7 +57,7 @@ Once you've identified one or two, add them to your working Kanban board.
 	
 	**VSTS and TFS 2015.1:**  
 
-	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />   
 
 	The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board. 
 
@@ -97,7 +97,7 @@ You can track Kanban board swimlane moves using the [Board Lane field](../track/
 
 Similar to the way [column moves are tracked](add-columns.md), swimlane moves are captured in the history field.  
 
-<img src="_img/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" style="border: 2px solid #C3C3C3;" />   
+<img src="_img/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" style="border: 1px solid #C3C3C3;" />   
 
 For TFS 2015 and earlier versions, you can't [query](../track/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../track/add-tags-to-work-items.md) each item in a similar way.  
 

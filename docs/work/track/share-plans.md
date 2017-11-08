@@ -139,7 +139,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 # [Browser](#tab/browser)
 #### VSTS &  TFS 2017, Attachment control toolbar 
 
-<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
 
 > [!TIP]    
 > From VSTS, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from VSTS and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../collaborate/markdown-guidance.md#attach).  
@@ -155,7 +155,7 @@ You can edit, open, save, or delete an attachment by clicking an attachment and 
 <a id="tfs-portal" />
 #### TFS 2015, TFS 2013, & Team Explorer Everywhere, Attachment control toolbar 
 
-<img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #C3C3C3;" />  
 
 Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  
 
@@ -197,7 +197,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
-<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
 
 To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 
@@ -208,7 +208,7 @@ To link to an existing storyboard, click the ![Links page icon](../_img/icons/ic
 
 From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
-<img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="team-explorer-storyboard" />

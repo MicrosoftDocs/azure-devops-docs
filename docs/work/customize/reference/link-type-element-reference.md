@@ -80,7 +80,7 @@ Link types come in two flavors. Work item link types support creating relationsh
 Work item link types are system-defined, process-defined, or user-defined (custom). Most links are system defined. Each link type defines the link labels, topology type, and restrictions that are used when links between work items are constructed. For example, the parent-child link type defines two labels (Parent and Child), supports a hierarchical or tree topology, and prevents circular references from being created between work items.
 
 
-<img src="_img/linkscontrol-work-item-link-types.png" alt="Work item link types, conceptual mapping" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/linkscontrol-work-item-link-types.png" alt="Work item link types, conceptual mapping" style="border: 1px solid #C3C3C3;" />  
 
 The following table lists the work item link types you can specify within the **WorkItemLinksFilter** element.  
 
@@ -184,7 +184,7 @@ What link type is used to link test cases to test suites and test suites to test
 
 Test related link types link test case management work items to one another, or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, and which test suites are defined for a test plan. However, these objects aren't linked to each other through link types.
 
-<img src="_img/linkscontrol-test-related-links.png" alt="Test-related link types, conceptual mapping" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/linkscontrol-test-related-links.png" alt="Test-related link types, conceptual mapping" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a id="external-link-types">  </a>
@@ -192,7 +192,7 @@ Test related link types link test case management work items to one another, or 
                
 External link types are all system-defined and support linking work items to other objects as shown in the following image. 
 
-<img src="_img/linkscontrol-external-link-types.png" alt="External link types, conceptual mapping" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/linkscontrol-external-link-types.png" alt="External link types, conceptual mapping" style="border: 1px solid #C3C3C3;" />  
 
 
 The following table describes the external link types you can specify to scope a links control using the **ExternalLinksFilter** element. 
