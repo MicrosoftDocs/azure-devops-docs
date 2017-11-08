@@ -108,8 +108,8 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
-                                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -139,9 +139,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; manual testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
                                                 </ul>
                                             </div>
                                         </div>
