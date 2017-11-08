@@ -32,18 +32,18 @@ In this topic you'll learn:
 
 From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
 
 Or, from the Queries page, you can add a new work item.  
 
-<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 1px solid #C3C3C3;" />  
 
 
 #### TFS 2015 | TFS 2013 (old web form) 
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
-<img src="_img/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Related notes 

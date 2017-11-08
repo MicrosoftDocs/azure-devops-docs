@@ -31,7 +31,7 @@ Here we show how to add work items from the web portal.
 
 1.  From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Depending on the process chosen when the team project was created&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
@@ -47,7 +47,7 @@ Here we show how to add work items from the web portal.
 -->
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #C3C3C3;" />  
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 

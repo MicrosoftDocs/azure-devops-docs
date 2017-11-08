@@ -35,7 +35,7 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 
 You access your backlogs and boards from the **Work** hub. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
 
-<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 ## Three classes of backlogs, two types of boards  
 
@@ -225,7 +225,7 @@ With Delivery Plans, you gain  tailor-made views across several teams and their 
 
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../scale/review-team-plans.md). 
 
-<img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Related notes   

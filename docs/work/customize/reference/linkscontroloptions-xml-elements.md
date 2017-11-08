@@ -85,7 +85,7 @@ When ```ListViewOptions GroupLinks="true"```, links are grouped within the web f
 <td>Composite display of link information</td>
 <td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called *Link* as shown:  
 
-<img src="_img/linkscontrol-composite-field.png" alt="Composite field" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" />  
 <p>When the links control width is less than 460 pixels, the field also displays the item's State and the time of its Latest Update (the creation or latest modification of the item). See [Responsive design and dynamic resizing](#dynamic-sizing) for details.
 </td>
 <td>Not supported</td>
@@ -108,7 +108,7 @@ From the scoped links control, you can perform the same actions provided from th
 - To delete a link, highlight it and click the ![delete icon](../../_img/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="dynamic-sizing"></a>
@@ -124,7 +124,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 Core system processes&mdash;[Agile, Scrum, CMMI](../../work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
-<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response
