@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/none.png) Ensure the number of matching items returned by a work item query in within the configured threshold.
+![](_img/query-work-items.png) Ensure the number of matching items returned by a work item query in within the configured threshold.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
