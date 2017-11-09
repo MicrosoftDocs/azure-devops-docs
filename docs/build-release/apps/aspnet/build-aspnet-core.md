@@ -109,4 +109,4 @@ Next, choose which kind of Git service you're using:
 
 ## Next steps
 
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+[!INCLUDE [include](../_shared/ci-web-app-next-steps-with-containers.md)]
