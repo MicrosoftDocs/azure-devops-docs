@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/none.png) Invoke a HTTP triggered function in an Azure function app and parse the response.
+![](_img/azure-function.png) Invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ## Demands
 

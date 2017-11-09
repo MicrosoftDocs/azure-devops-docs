@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Release approvals and gates
 
-**| VSTS |**
+**VSTS**
 
 A release definition specifies the end-to-end release process for an app to be deployed across a range of environments.
 Deployments to each environment are fully automated by using 

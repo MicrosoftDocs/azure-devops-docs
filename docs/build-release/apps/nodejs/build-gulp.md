@@ -107,4 +107,4 @@ Choose your version control system to get specific instructions for copying the 
 
 ## Next steps
 
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+[!INCLUDE [include](../_shared/ci-web-app-next-steps-with-containers.md)]

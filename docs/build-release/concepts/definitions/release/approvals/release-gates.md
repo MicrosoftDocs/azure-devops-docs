@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Release gates
 
-**| VSTS |**
+**VSTS**
 
 ## Overview
 
