@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/none.png) Observe the configured Azure monitor rules for active alerts.
+![](_img/azure-monitor.png) Observe the configured Azure monitor rules for active alerts.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
