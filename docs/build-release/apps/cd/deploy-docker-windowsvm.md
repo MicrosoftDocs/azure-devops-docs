@@ -20,9 +20,9 @@ as long as your continuous integration process publishes a Docker-enabled packag
 ## Prerequisites
 
 Before you begin, you'll need a CI build that publishes your Docker-enabled package.
-To set up CI for your specific type of app, see:
+To set up CI for your app, see:
 
-* [Build your ASP.NET Core app as a container](../aspnet/build-aspnet-core-docker.md)
+* [Build and push your container app](../containers/build.md)
 
 You'll also need an Azure VM where you will deploy the app.
 
