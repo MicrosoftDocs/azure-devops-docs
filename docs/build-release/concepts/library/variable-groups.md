@@ -34,26 +34,24 @@ at the end of the row. When you're finished adding variables, choose **Save**.
 
 Variable groups follow the [library security model](index.md#security).
 
-## Link secrets from an Azure Key vault as variables
+## Link secrets from an Azure key vault as variables
 
 Link an existing Azure key Vault to a variable group and map selective vault secrets to the variable group.
 
-1. Choose **Link secrets from an Azure key vault as variables**, and specify your Azure subscription end point
-   and the name of the vault containing your secrets.
+1. Enable **Link secrets from an Azure key vault as variables**, and check that you meet the
+   prerequisites shown. You need an existing key vault containing your secrets. 
 
    ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
 
-1. Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
-   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
+1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
+   Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
+   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
    Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
 
    - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
-
    - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
-
    - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
-
    - Choose **OK** to save the changes.<p />
 
 1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group. 
