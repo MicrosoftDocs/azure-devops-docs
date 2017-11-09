@@ -9,3 +9,9 @@ A:  If you're the Azure Account Administrator,
 A: Check the 
 [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/documentation/articles/billing-subscription-faq/), 
 or try [Azure Support](https://azure.microsoft.com/en-us/support/options/).
+
+###Q: Why can't I link more VSTS accounts to my Azure subscription?  What does the error "The resource is blocked to receive any update" mean?
+
+A: There a limit to the number of VSTS accounts that you can link to your Azure subscription.  After you add 25 
+accounts, Azure stops you from adding more accounts.
+

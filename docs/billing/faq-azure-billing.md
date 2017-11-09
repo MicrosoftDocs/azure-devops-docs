@@ -119,6 +119,8 @@ after the anniversary date of your subscription purchase.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
+
 [!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
 
 
