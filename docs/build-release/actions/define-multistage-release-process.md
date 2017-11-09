@@ -152,14 +152,13 @@ you want the deployment to pause after _successful_ deployment to the test websi
 you deploy to production. In this section, you will add an approval step to the release definition to achieve this.
 
 1. Back in the **Pipeline** tab of the release definition, choose the **Pre-deployment conditions** icon in the **Environments** section
-   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and expand it using the "down arrow" icon.
-   You can see that the approval type is set to **Automatic**, which means that deployment to this environment, when initiated by any
-   of the environment triggers, will be approved without user intervention - and deployment will commence immediately.  
+   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvals.
 
    ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
 
-1. Change the approval type to **Specific users** and choose your account from the list. You
-   can type part of a name to search for matches.
+1. In the **Approvers** section, choose your account from the list. You
+   can type part of a name to search for matches. Also make sure clear (untick) the checkbox 
+   **Users requesting a release...** so that you can approve your own releases.
 
    ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
 
