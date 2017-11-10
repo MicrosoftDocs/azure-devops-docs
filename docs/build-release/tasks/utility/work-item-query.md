@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/query-work-items.png) Ensure the number of matching items returned by a work item query in within the configured threshold.
+![](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
@@ -23,11 +23,11 @@ None
 
 | Parameter | Comments |
 | --- | --- |
-| **Project Name** | Required. List all projects in the current VSTS account. Defaults to current project. |
-| **Query** | Required. Show all WIT queries saved in the project. Same control as that used in the dashboard widget. |
+| **Project Name** | Required. Select the project in the current VSTS or TFS account. Defaults to the current project. |
+| **Query** | Required. Select a work item query within the project. Can be a built-in or custom query. |
 | **Threshold (max) number of results** | Required. Default value = 0 |
 | **Threshold (min) number of results** | Required. Default value = 0 |
-| **Tags to filter results on** | Optional. List of tags that should be present on the resulting workitems. |
+| **Tags to filter results on** | Optional. A list of tags that must be present on the work items. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maximum-threshold_

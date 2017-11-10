@@ -25,23 +25,23 @@ systems until specific conditions are verified.
 In addition, you can configure a **Manual Intervention** task to pause the
 deployment process and prompt users to carry out manual tasks, then resume or reject the deployment.
 
-The following diagram shows how these features are combined in a release environment.
+The following diagram shows how these features are combined in an environment of a release definition.
 
 ![Schematic view of approvals and gates in an environment](_img/approvals-gates.png)
 
-By using approvals, gates, and manual intervention, you can take full control of your releases
+By using approvals, gates, and manual intervention you can take full control of your releases
 to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention
 are useful include the following.
 
 | Scenario | Feature(s) to use |
 | --- | --- |
-| Some users must manually validate the change request and approve the deployment to an environment | [Pre-deployment approvals](release-approvals.md) |
-| Some users must manually sign off the app after deployment before the release is promotoed to other environments | [Post-deployment approvals](release-approvals.md) |
-| You want to ensure there are no active issues in the work item or problem management system before deploying a build to an environment  | [Pre-deployment gates](release-gates.md) |
-| You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release | [Post-deployment gates](release-gates.md) |
-| After deployment you want to wait for a specified time before prompting some users for a manual sign-off  | [Post-deployment gates](release-gates.md) and [post-deployment approvals](release-approvals.md) |
-| During the deployment process a user must manually follow specific instructions and then resume the deployment | [Manual Intervention](../../../../tasks/utility/manual-intervention.md) | 
-| During the deployment process you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases  | Planned | 
+| Some users must manually validate the change request and approve the deployment to an environment. | [Pre-deployment approvals](release-approvals.md) |
+| Some users must manually sign off the app after deployment before the release is promoted to other environments. | [Post-deployment approvals](release-approvals.md) |
+| You want to ensure there are no active issues in the work item or problem management system before deploying a build to an environment.  | [Pre-deployment gates](release-gates.md) |
+| You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](release-gates.md) |
+| After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](release-gates.md) and [post-deployment approvals](release-approvals.md) |
+| During the deployment process a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../../../../tasks/utility/manual-intervention.md) | 
+| During the deployment process you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases.  | Planned | 
 
 You can, of course, combine all three techniques within a release definition to fully achieve your own process and deployment requirements.
 
