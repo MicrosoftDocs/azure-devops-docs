@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/azure-monitor.png) Observe the configured Azure monitor rules for active alerts.
+![](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
@@ -24,10 +24,10 @@ None
 | Parameter | Comments |
 | --- | --- |
 | **Azure subscription** | Required. Select an Azure Resource Manager service endpoint. |
-| **Resource group name** | Required. Automatically populated with a list of available resource groups in the subscription. |
-| **Resource type(s)** | Optional. Lists available resource types in the selected group. Treats empty as all resource types in the resource group. |
-| **Resource(s)** | Optional. Lists available resources of the chosen types in the selected group. Treats empty as all matching resources. |
-| **Select alert rules** | Required. Lists the currently configured alert rules in the resource group. Filter the displayed list for selected resource types and resources. |
+| **Resource group name** | Required. The resource group in the subscription containing the monitor functions. |
+| **Resource type(s)** | Optional. Select the resource type in the selected group. Leave empty to use all the resource types in the resource group. |
+| **Resource(s)** | Optional. Select the resources of the chosen types in the selected group. Leave empty to use all matching resources. |
+| **Select alert rules** | Required. Select from the currently configured alert rules in the resource group. Filter the displayed list for selected resource types and resources. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Succeeds if none of the alert rules are activated at the time of sampling.

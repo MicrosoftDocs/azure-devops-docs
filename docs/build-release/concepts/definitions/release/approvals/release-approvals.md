@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
-You can enable manual approval for each environment in a release definition.
+You can enable manual approvals for each environment in a release definition.
 When a release is created from a release definition that defines
 approvals, the deployment stops at each point where approval is required
 until the specified approver grants approval or rejects the release (or
@@ -32,9 +32,9 @@ You can define pre-deployment approvers, post-deployment approvers, or both for 
 You can select one or more approvers for an approval step, and add multiple approvers for both pre-deployment
 and post-deployment settings. These approvers can be individual users or groups of users. 
 When a group is specified as an approver, only one of the users in that group needs to approve
-in order for the release to move forward.
+for the release to move forward.
 
-* If you are using **VSTS** (VSTS), you
+* If you are using **Visual Studio Team Services** (VSTS), you
   can use local groups managed in VSTS or
   Azure Active Directory (AAD) groups if they have been
   added into VSTS.
@@ -45,9 +45,9 @@ in order for the release to move forward.
 
 
 The creator of a deployment is considered to be a separate user
-role for deployments. Either the release creator or the deployment
-creator can be restricted from approving deployments. For more details,
+role for deployments. For more details,
 see [Release permissions](../../../policies/permissions.md#release-permissions).
+Either the release creator or the deployment creator can be restricted from approving deployments. 
 
 ### Approval options
 
@@ -119,8 +119,8 @@ about the progress and status of the release. Pre-deployment and post-deployment
 items are included; choose the **Action** icon next to them to see the approval
 action log entry.
 
-For example, in this screenshot pre-deployment approval was granted and the
-**Action** link displays the name of the approver, and the message entered by that user
+For example, in this screenshot pre-deployment approval was granted, and the
+**Action** link displays the name of the approver and the message entered by that user
 when approving (or rejecting) the release.  
 
 ![Gates log results ](_img/approve-05.png)
