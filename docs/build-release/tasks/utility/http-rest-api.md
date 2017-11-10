@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![icon](_img/http-rest-api.png) Invoke an HTTP API and parse the response.
+![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
 
 ## Demands
 
@@ -24,19 +24,18 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | Parameter | Comments |
 | --- | --- | --- |
 | **Generic endpoint** | Required. Select a Generic service endpoint. |
-| **Method** | Required. For example **GET**, **PUT**, **UPDATE**. |
+| **Method** | Required. For example, **GET**, **PUT**, or **UPDATE**. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
 | **Body** | Optional. The request body for the function call. |
-| **Execution mode** | Required. Synchronous mode (the default) or Asynchronous call where the function calls back to update the timeline record. |
+| **Execution mode** | Required. **Synchronous mode** (the default), or **Asynchronous call** where the function calls back to update the timeline record. |
 | **Response parse expression** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Succeeds if the function returns success and the response body parsing is successful.
 
-The **Invoke REST API task** task does not perform deployment actions directly.
+The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. For example,
-it can be used to invoke specific processing with an Azure function.
+pipeline and, optionally, wait for it to be completed. 
 
 ![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 

@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/azure-function.png) Invoke a HTTP triggered function in an Azure function app and parse the response.
+![](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ## Demands
 
@@ -23,11 +23,11 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 | Parameter | Comments |
 | --- | --- |
-| **Azure function Url | Required. The URL of the Azure function to be invoked. |
+| **Azure function URL** | Required. The URL of the Azure function to be invoked. |
 | **Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
 | **Request body** | Optional. The request body for the Azure function call. |
-| **Execution mode** | Required. Synchronous mode (the default) or Asynchronous call where the Azure function calls back to update the timeline record. |
+| **Execution mode** | Required. **Synchronous mode** (the default), or **Asynchronous call** where the Azure function calls back to update the timeline record. |
 | **Response parse expression** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
