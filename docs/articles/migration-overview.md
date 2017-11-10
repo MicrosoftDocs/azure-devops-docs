@@ -31,6 +31,7 @@ Normal release cadence for new TFS versions is once every three-to-four months. 
 The following features can be included with your import, but are currently in a preview state. 
 
 * [Release Management](https://www.visualstudio.com/team-services/release-management/)
+* [Package Management](https://www.visualstudio.com/team-services/package-management/)
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new VSTS account along with all your other data. Should you choose to not include these features then their data will not be copied.
 
