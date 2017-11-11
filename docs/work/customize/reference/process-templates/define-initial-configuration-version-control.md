@@ -6,11 +6,11 @@ ms.technology: vs-devops-wit
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/08/2017
+ms.date: 10/11/2017
 ---
 
 
-# Define the initial configuration of Team Foundation version control
+# Define the initial configuration of Git and TFVC
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
@@ -23,10 +23,17 @@ The names of the file, the folder, and the plug-in for the default process templ
 **File name**: VersionControl.xml  
 **Folder name**: Version Control  
 **Plug-in name**: Microsoft.ProjectCreationWizard.VersionControl    
-  
+ 
+You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
+ 
 > [!NOTE]  
->  You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
+>  For VSTS and for TFS 2017.4 and later versions, you create team projects from the web 
+>  portal, which ignores this plug-in. Instead, default permissions are set for 
+>  project-level and collection-level security groups. After you create a team project, 
+>  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
+>  [permissions](../../../../security/set-git-tfvc-repository-permissions.md) from the web portal.    
   
+ 
 ##  <a name="Exclusive"></a> Exclusive Check Out  
  You can control whether multiple people can check out a file at the same time by specifying the **exclusive_checkout** element.  
 
@@ -98,6 +105,34 @@ The following example shows how to create an additional check-in note labeled "D
 ##  Permissions    
 Version control has a specific set of permissions that you can configure for a process template. By specifying permissions, you define what actions security groups and individuals can perform on items that are under version control. For more information, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
+The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the team project from the web UI, see [Set repository permissions for Git or TFVC](../../../../security/set-git-tfvc-repository-permissions.md).
+
+ 
+> [!div class="tabbedCodeSnippets"]
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+  <task id="VersionControlTask" name="Create Version Control area" plugin="Microsoft.ProjectCreationWizard.VersionControl" completionMessage="Version control Task completed.">
+    <dependencies />
+    <taskXml>
+      <permission allow="Read, PendChange, Checkin, Label, Lock, ReviseOther, UnlockOther, UndoOther, LabelOther, AdminProjectRights, CheckinOther, Merge, ManageBranch" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />
+      <permission allow="Read, PendChange, Checkin, Label, Lock, Merge" identity="[$$PROJECTNAME$$]\Contributors" />
+      <permission allow="Read, PendChange, Checkin, Label, Lock, Merge" identity="[$$PROJECTNAME$$]\Build Administrators" />
+      <permission allow="Read" identity="[$$PROJECTNAME$$]\Readers" />
+      <exclusive_checkout required="false" />
+      <get_latest_on_checkout required="false" />
+      <git>
+        <permission allow="GenericRead, GenericContribute, Administer, CreateBranch, CreateTag, ManageNote" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />
+        <permission allow="GenericRead, GenericContribute, CreateBranch, CreateTag, ManageNote" identity="[$$PROJECTNAME$$]\Contributors" />
+        <permission allow="GenericRead, GenericContribute, CreateBranch, CreateTag, ManageNote" identity="[$$PROJECTNAME$$]\Build Administrators" />
+        <permission allow="GenericRead" identity="[$$PROJECTNAME$$]\Readers" />        
+      </git>
+    </taskXml>
+  </task>
+</tasks> 
+```  
+
+
 ## Related notes  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Code](../../../../git/overview.md)
