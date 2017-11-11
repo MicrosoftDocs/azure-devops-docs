@@ -1,12 +1,13 @@
 ---
-title: Understand what access levels are supported in VSTS & TFS 
-description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise  
+title: What access levels does VSTS & TFS support?
+description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise access  
 ms.technology: vs-devops-admin
 ms.prod: vs-devops-alm
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.manager: douge
+ms.reviewer: jrice 
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 11/03/2017
 ---
 
 # About access levels
@@ -47,7 +48,7 @@ See [Stakeholder access](../security/get-started-stakeholder.md) for details of 
 
 ## VS Enterprise
 
-Assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/how-to/assign-paid-extension-access.md).
+Assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/how-to/assign-paid-extension-access.md).
 
 **TFS 2017.2**
 
@@ -55,31 +56,36 @@ Assign **VS Enterprise** to those users for whom you've purchased Visual Studio 
 
 ## Advanced 
 For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
-- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN platform subscriptions.
+- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
 These include a TFS CAL plus the rights to access the full set of Test features.  
 - A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](change-access-levels.md#test-manager). 
 
-For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md).
+For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/how-to/assign-paid-extension-access.md).
 	
 
-**TFS 2017, TFS 2017.1**
+**TFS 2017.2**
 
 <img src="_img/access-levels-2017-update2-vs-t.png" alt="TFS 2017.2, Advanced Access" style="border: 1px solid #CCCCCC;" />
 
-**TFS 2015, TFS 2013**
+**TFS 2017.1**
+
+> [!NOTE]   
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../billing/buy-access-tfs-test-hub.md). 
+
+**TFS 2017, TFS 2015, TFS 2013**
 
 <img src="_img/access-levels-2015-advanced.png" alt="Advanced access features" style="border: 1px solid #CCCCCC;" />  
 
 > [!NOTE]   
-> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the Advanced access level and the Test Manager extension.  
+> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the **Advanced** access level and the Test Manager extension.  
  
  
 <a id="test-manager"  >  </a>
 ## Access to the Test hub and Marketplace extensions
 
-Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access. Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
 
-To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
+To learn how to grant access to an extension, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
 
 ## What features are accessible to users who belong to two different groups?
 If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
