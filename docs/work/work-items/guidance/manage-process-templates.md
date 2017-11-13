@@ -15,9 +15,9 @@ ms.date: 10/11/2017
 
 
 >[!NOTE]  
-><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. For the Hosted XML and On-premises XML process models, you work with process templates to customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).   
+><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. 
 
-When you choose to create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises TFS. It supports Hosted XML and On-premises XMl process models which support customization of team projects through the modification and import of XML definition files. 
+When you create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises TFS. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).   
 
 
 >[!IMPORTANT]  
@@ -146,8 +146,7 @@ Periodically, updates are made to the process templates to support new features.
 - [Create a team project](../../../accounts/create-team-project.md)   
 - [Customize a process template](../../customize/reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../../customize/reference/process-templates/overview-process-template-files.md)  
-- [Import and update a process (Hosted XML)](../../customize/import-process/import-process.md)   
-- [Customize a process (Inheritance process model)](../../customize/process/customize-process.md)  
+- [Import and update a process (Hosted XML)](../../customize/import-process/import-process.md)     
 - [Customize your work tracking experience](../../customize/customize-work.md)  
 
 
@@ -155,7 +154,7 @@ Periodically, updates are made to the process templates to support new features.
 When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../customize/configure-features-after-upgrade.md), you may need to [update a customized process template](../../customize/update-customized-process-template.md). 
 
 ### Add another team project 
-You can add a team project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a team project from the web portal. For details, see   [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support). 
+You can add a team project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a team project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support). 
 
 
 

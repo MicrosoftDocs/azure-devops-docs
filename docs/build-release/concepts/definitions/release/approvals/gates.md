@@ -1,5 +1,5 @@
 ---
-title: Release gates in Release Management
+title: Gates in Release Management
 description: Understand gated releases in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Release gates
+# Gates
 
 **VSTS**
 
@@ -95,8 +95,7 @@ about the evaluation of all the gates you configured for the release.
 
 ## Related topics
 
-* [Approvals overview](index.md)
-* [Release approvals](release-approvals.md)
+* [Approvals and gates overview](index.md)
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)

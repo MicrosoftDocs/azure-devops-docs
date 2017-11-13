@@ -17,7 +17,10 @@ ms.date: 04/13/2017
 By adding work items to your process template, you define a set of tasks or other items that act as reminders for each project manager to perform after the team project is created. For example, you can create one task each to assign permissions to team members, define product areas and milestones, set up build definitions, and determine the branch strategy for version control.  
   
 > [!NOTE]  
->  Defining work item instances is optional. The default process templates don't contain any work item instances. Support for work item instances is not supported for Hosted XML. 
+> **Feature availability**: This feature has been deprecated for VSTS and TFS 2018 and later
+>  versions. Defining work item instances is optional. The default process templates don't 
+>  contain any work item instances. For VSTS and TFS 2018 and later versions, any work item 
+>  instances you define will be ignored.  
   
 <a name="defining"></a> 
 ##Define a work item instance   
