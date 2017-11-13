@@ -6,16 +6,16 @@ ms.technology: vs-devops-reporting
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated charts and tables, you can share those with others by creating a dashboard on PowerBI.com. This process walks you through how to do that.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 0. Open the **Power BI Desktop** file with your data.  
 
@@ -68,7 +68,7 @@ At this point the data will update on your scheduled basis using the credentials
 
 ## Related notes
 
-- [Analytics service overview](overview-analytics-service.md)  
+- [Analytics Service](index.md)  
 - [Client Authentication Options](client-authentication-options.md)
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  

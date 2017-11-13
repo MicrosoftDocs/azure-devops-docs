@@ -1425,7 +1425,7 @@ build-release\tasks\build\_img
 <table>
 <tbody>
 <tr valign="top">
-<td width="33%">
+<td width="50%">
 
 
 <p><b>Basic Power BI concepts</b></p>
@@ -1439,26 +1439,17 @@ build-release\tasks\build\_img
  
 
 </td>
-<td width="33%">
+<td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your VSTS account](../report/powerbi/connect-vso-pbi-vs.md).</p>
+<p>[Steps required to authorize Power BI to access your VSTS account](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
-<p>The [Power BI data model](../report/powerbi/vso-pbi-whats-available-vs.md) currently supports building reports that track status and trends of work items, build, and source code.</p>
+<p>The [Power BI data model](../report/powerbi/data-connector-available-data.md) currently supports building reports that track status and trends of work items.</p>
 
 </td>
-<td width="33%">
 
-<p><b>Create rollup charts</b></p>
-<p>Rollup provides summed values of select fields for all child work items of a parent. You can [create rollups based on counts of work items or selected measures](../report/powerbi/create-rollup-charts.md), such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks.</p>
-
-<p><b>Create trend charts </b></p>
-<p>[Trend charts show progress or activity over time](../report/powerbi/create-trend-charts.md). Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity..</p>
-
-
-</td>
 </tr>
 </tbody>
 </table>

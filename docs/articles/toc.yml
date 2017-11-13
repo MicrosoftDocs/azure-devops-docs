@@ -28,6 +28,8 @@
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
+    - name: Migrate from SVN to Git
+      href: perform-migration-from-svn-to-git.md
 - name: DevOps
   items:
     - name: Phase the features of your app with feature flags

@@ -6,18 +6,18 @@ ms.technology: vs-devops-reporting
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Build a hub extension  
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Building an extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 To build an extension, see [Write your first extension for VSTS](../../extend/get-started/node.md).
 We won't be building a grid control to hold the results though - we'll be building a chart. For the purposes of this
@@ -114,12 +114,12 @@ Once the token is retrieved, you need to add it to the request for data from the
     // Get the token
     var authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
 
-    //Get the account name so that we're calling a valid analytics service endpoint
+    //Get the account name so that we're calling a valid Analytics Service endpoint
     var accountName = VSS.getWebContext().account.name;
 
     $.ajax({
     type: "GET",
-    url: "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/_odata/WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))",
+    url: "https://" + accountName + ".analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     beforeSend: function (xhr) {
@@ -268,7 +268,7 @@ do exist but they have no content. They must exist otherwise the extension canno
 There are a few key things to note here:
 * This extension adds a work-hub-group (extension points are described in [Extension points](../../extend/reference/targets/overview.md))
 * The name of the hub is "Analytics Sample" and it will load the page "Analytics.html"
-* The scope is **vso.analytics** which is the OAuth scope required to access the analytics service
+* The scope is **vso.analytics** which is the OAuth scope required to access the Analytics Service
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described 
 in the [Create your first extension for VSTS](../../extend/get-started/node.md) documentation, starting from the Create your publisher section.
@@ -278,4 +278,4 @@ Once the solution is deployed you should see something similar to the following:
 ## Build a widget extension  
 
 Widgets allow you to place items on a [dashboard](../dashboards.md) and to compose those items as required. Detailed information
-on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../extend/develop/add-dashboard-widget.md). This topic covers how to call out to the analytics service specifically.
+on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../extend/develop/add-dashboard-widget.md). This topic covers how to call out to the Analytics Service specifically.
