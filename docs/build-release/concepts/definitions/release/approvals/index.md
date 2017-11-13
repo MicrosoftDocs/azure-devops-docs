@@ -1,5 +1,5 @@
 ---
-title: Release approvals and gates in VSTS and TFS
+title: Approvals and gates in VSTS and TFS
 description: Understand release approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Release approvals and gates
+# Approvals and gates
 
 **VSTS**
 
@@ -35,11 +35,11 @@ are useful include the following.
 
 | Scenario | Feature(s) to use |
 | --- | --- |
-| Some users must manually validate the change request and approve the deployment to an environment. | [Pre-deployment approvals](release-approvals.md) |
-| Some users must manually sign off the app after deployment before the release is promoted to other environments. | [Post-deployment approvals](release-approvals.md) |
-| You want to ensure there are no active issues in the work item or problem management system before deploying a build to an environment.  | [Pre-deployment gates](release-gates.md) |
-| You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](release-gates.md) |
-| After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](release-gates.md) and [post-deployment approvals](release-approvals.md) |
+| Some users must manually validate the change request and approve the deployment to an environment. | [Pre-deployment approvals](approvals.md) |
+| Some users must manually sign off the app after deployment before the release is promoted to other environments. | [Post-deployment approvals](approvals.md) |
+| You want to ensure there are no active issues in the work item or problem management system before deploying a build to an environment.  | [Pre-deployment gates](gates.md) |
+| You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
+| After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During the deployment process a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../../../../tasks/utility/manual-intervention.md) | 
 | During the deployment process you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases.  | Planned | 
 
@@ -47,9 +47,9 @@ You can, of course, combine all three techniques within a release definition to 
 
 ## Related topics
 
-* [Release approvals](release-approvals.md)
-* [Release gates](release-gates.md)
-* [Manual intervention task](../../../../tasks/utility/manual-intervention.md)
+* [Approvals](approvals.md)
+* [Gates](gates.md)
+* [Manual intervention](../../../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
 

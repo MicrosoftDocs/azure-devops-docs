@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/07/2017
+ms.date: 10/11/2017
 ---
 
 # Groom your backlog  
@@ -56,23 +56,22 @@ we start digging into the acceptance criteria for each story on our backlog.
 Inevitably we all start with our own ideas about what "done" means for a given story. 
 </p>
 <p>However, as we begin to discuss the acceptance criteria presented by the product owner what 
-ensues is a series of "<a href="http://www.bing.com/search?q=Ah-ha moments">ah-ha moments</a>." 
+ensues is a series of "[ah-ha moments](http://www.bing.com/search?q=Ah-ha moments)." 
 A shared understanding of the story begins to emerge. A comment one team member might elicit 
 the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."
 </p><p>Regardless of who is being enlightened, the power is in the fact that the product owner and 
 the team are building together a shared understanding of what "done" means for each backlog item.
-And, this is happening before the team has written a single line of code. . .  before any work has been done. . .  
-before commitments have been made. . .  and before the sprint has begun.</p>
+And, this is happening before the team has written a single line of code&hellip;  before any work has been done&hellip;  
+before commitments have been made&hellip;  and before the sprint has begun.</p>
 <p>By collaborating on acceptance criteria the team is minimizing risk and greatly increasing the chance of delivering successfully. 
 I don't think it's a coincidence that the first bullet in the 
-<a href="http://agilemanifesto.org/">Agile Manifesto</a> states ". . . we have come to value 
+[Agile Manifesto](http://agilemanifesto.org/) states ". . . we have come to value 
 <b>individual and interactions</b> over processes and tools".
 Agile teams work together. And by working together, they create better software.</p> 
 <p>Start learning to love acceptance criteria and see if your team isn't more successful delivering software.</p>
 
-<p>--Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
-blog post: <a href="http://blogs.msdn.com/b/aaronbjork/archive/2010/05/04/msf-agile-5-0-tip-5-learn-to-love-acceptance-criteria.aspx">
-Agile Tip #5 – Learn to Love Acceptance Criteria</a></p> 
+<p>&mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
+blog post: [Agile Tip #5 – Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)</p> 
 
 </blockquote>  
 
@@ -88,17 +87,11 @@ Backlog refinement supports your sprint planning efforts and helps minimize thes
 * Inability to forecast  
 
 A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to perform these activities:  
-
 * Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.  
-
 * Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.  
-
 * Reorder the backlog to represent today's priorities and business value focus.  
-
 * Ensure well defined acceptance criteria has been added to each item.  
-
 * Revisit estimates made to backlog items and adjust upwards or downwards based on recent understanding about scope and acceptance criteria.  
-
 * Review all potential backlog items to consider for the upcoming sprint to make sure they are well understood and that any additional work required to support their development is well understood by both product owner and the team.  
 
 You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fullly.    
