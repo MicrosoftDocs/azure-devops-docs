@@ -27,6 +27,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/accounts/delete-account-users-users-hub.md",
+            "redirect_url": "/vsts/accounts/delete-account-users",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/accounts/add-account-users-assign-access-levels.md",
+            "redirect_url": "/vsts/accounts/add-account-users-from-user-hub",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/test/test-redirect-2.md",
             "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
@@ -4593,3 +4603,4 @@
        }
     ]
 }
+
