@@ -107,7 +107,7 @@ Use `VSTS.Feed` function to count the number of work items in a project.
 Basic Query:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)")
 in
     Source
@@ -116,7 +116,7 @@ in
 Query with Columns Selected:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"Count"})
 in
@@ -132,8 +132,8 @@ Use `VSTS.Feed` function to load a count of User Stories for each Iteration Path
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))")
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))")
 in
     #"Source"
 ```
@@ -141,8 +141,8 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))"),
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))"),
     #"Expanded Iteration" = Table.ExpandRecordColumn(Source, "Iteration", {"IterationPath"}, {"Iteration.IterationPath"}),
     #"Removed Other Columns" = Table.SelectColumns(#"Expanded Iteration",{"Count", "Iteration.IterationPath"})
 in
@@ -158,7 +158,7 @@ Use VSTS.Feed function to load detailed information about bugs.
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'")
 in
     #"Source"
@@ -166,7 +166,7 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"WorkItemId", "State"})
 in

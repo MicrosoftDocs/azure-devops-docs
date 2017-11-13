@@ -257,7 +257,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
-                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Analytics (VSTS)</a></li>
+                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                         <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
@@ -1108,7 +1108,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Analytics (VSTS)</h3>
+                                                    <h3>Extend Analytics with OData</h3>
                                                     <p>Use the Analytics Service OData API's to create custom visualizations and reports.</p>
                                                 </div>
                                             </div>

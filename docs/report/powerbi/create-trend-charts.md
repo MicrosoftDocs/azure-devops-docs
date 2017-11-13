@@ -76,7 +76,6 @@ The sprint burndown chart based on Story Points provides you with a daily update
 
 ###Get started using Power BI and the VSTS connector 
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
-- [What's available in the Power BI VSTS connector](vso-pbi-whats-available-vs.md)
 - [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)
 - [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)
 

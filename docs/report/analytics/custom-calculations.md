@@ -13,12 +13,12 @@ ms.date: 10/30/2017
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 
 One of the benefits of using Power BI or Excel is the ability to add calculated fields to the
 data set. There are several ways to add a calculated column and you can use either [Power Query](https://msdn.microsoft.com/en-us/library/mt211003.aspx) or 
 [DAX](https://support.office.com/article/Data-Analysis-Expressions-DAX-in-Power-Pivot-BAB3FBE3-2385-485A-980B-5F64D3B0F730).  
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 In this topic we'll add a simple but useful column - an Age In Days column.  
 
