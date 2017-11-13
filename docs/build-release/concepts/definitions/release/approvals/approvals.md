@@ -1,5 +1,5 @@
 ---
-title: Release approvals in VSTS and TFS
+title: Approvals in VSTS and TFS
 description: Understand release approvals in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Release approvals
+# Approvals
 
 [!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
@@ -131,8 +131,7 @@ the release can be approved or rejected.
 
 ## Related topics
 
-* [Approvals overview](index.md)
-* [Release gates](release-gates.md)
+* [Approvals and gates overview](index.md)
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
