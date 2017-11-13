@@ -100,7 +100,7 @@ meets a wide range or criteria, without requiring user intervention.
    >The sampling interval and timeout work together so that the gates will call their functions
    at suitable intervals, and reject the deployment if they don't all succeed during the same sampling
    interval and within the timeout period.
-   For more details, see [Release gates](../concepts/definitions/release/approvals/release-gates.md).
+   For more details, see [Release gates](../concepts/definitions/release/approvals/gates.md).
 
 1. Save you release definition.
 

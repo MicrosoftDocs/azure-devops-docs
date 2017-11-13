@@ -11,12 +11,7 @@ ms.date: 10/6/2017
 
 # Add more users with Basic features or Visual Studio subscriptions
 
-**VSTS Streamlined User Management Preview**
-
-
-If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
- 
-![Choose Preview features from your user menu in the upper right corner](_img/user-hub/preview-features.png)
+**VSTS**
 
 
 When your account stays within the free limits, you don't have to pay for users to join your account.

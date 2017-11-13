@@ -6,7 +6,7 @@ ms.technology: vs-devops-wit
 ms.assetid: 93d86d59-dd49-43de-9bab-f4a9e17071a1
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/08/2017
+ms.date: 10/11/2017
 ---
 
 
@@ -16,8 +16,12 @@ ms.date: 09/08/2017
 
 You can customize a team project's initial build permissions that are used by Team Foundation Build. The build.xml plug-in file specifies the security permissions for build activities of all team projects that are created with the same process template. The following template files are uploaded to the team project database:  
   
-> [!NOTE]  
->  Starting with TFS 2013, the build.xml plug-in no longer uploads build template files.  
+> [!IMPORTANT]  
+>  For TFS 2013 and later versions, the build.xml plug-in no longer uploads 
+>  build template files. Also, for VSTS and for TFS 2018 and later versions, 
+>  customization of build permissions using the build plug-in isn't supported. 
+>  Instead, default permissions are set for project-level and collection-level  
+>  security groups for [build definitions (object-level)](../../../../security/permissions.md#build). 
    
   
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  
@@ -30,10 +34,11 @@ The names of the file, the folder, and the plug-in for the default process templ
 > [!NOTE]  
 > You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
   
- In the Build.xml file, you specify one or more tasks and their dependencies. The TSF plug-in file specifies the permissions that are assigned to specific TFS default groups. For information about how to customize the initial security configuration for Lab Management, see [Control access to functional areas](control-access-to-functional-areas.md). For more information about the **task**, **taskXml**, and **dependency** elements, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) and [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
+ In the Build.xml file, you specify one or more tasks and their dependencies. The TSF plug-in file specifies the permissions that are assigned to specific default security groups. For more information about the **task**, **taskXml**, and **dependency** elements, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) and [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
- The following code represents the default build.xml file that is defined for the TFS process templates:  
+ The following code represents the default build.xml file that is defined for all default process templates.   
   
+
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <?xml version="1.0" encoding="utf-8"?>  
