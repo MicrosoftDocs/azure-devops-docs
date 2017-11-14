@@ -43,6 +43,11 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 - [Set permissions for the Analytics Service](analytics-security.md)
 
 
+## Reference 
+- [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [API versioning](../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+
+
 <!---
 Future:
 Analytics Views

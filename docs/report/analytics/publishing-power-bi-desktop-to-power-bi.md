@@ -1,5 +1,6 @@
 ---
-title: Publish a Power BI Desktop file to PowerBI.com | VSTS  
+title: Publish a Power BI Desktop file to PowerBI.com  
+titleSuffix: VSTS 
 description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -28,7 +29,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
     If you are already signed in, the dialog will go away and you will see a Publishing to Power BI message.
     After the publishing is complete you'll see a success message.
 
-     ![Publishing successful](_img/publish-2.png)
+     <img src="_img/publish-2.png" alt="Publishing successful" style="border: 1px solid #C3C3C3;" />
 
 0. Click the **Open 'file name' in Power BI** link
 
@@ -44,7 +45,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 0. Click the Edit credentials link next to ODATA under Data source credentials as shown here:
 
-     ![Update odata credentials](_img/publish-4.png)
+     <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
 0. Select the appropriate authentication option (as discussed in [Client Authentication Options](client-authentication-options.md)). 
 * Use **oAuth2**  for Azure Active Directory (AAD) credentials.

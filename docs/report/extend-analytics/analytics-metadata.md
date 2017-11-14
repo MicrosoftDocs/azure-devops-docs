@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 
 **VSTS**
 
-Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Analytics OData v4 endpoint](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
+Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Data model for the Analytics Service](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
 In this topic you'll learn how to:
 >[!div class="checklist"]
@@ -217,6 +217,10 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
    </Record>
 </Annotation>
 ```
+## Try this next
+> [!div class="nextstepaction"]
+> [Data model for the Analytics Service](data-model-analytics-service.md)
+
 
 ## Related notes
 - [Data model for the Analytics Service](data-model-analytics-service.md)

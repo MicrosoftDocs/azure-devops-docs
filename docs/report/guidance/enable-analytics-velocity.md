@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
-ms.date: 11/15/2017
+ms.date: 11/13/2017
 ---
 
 # Add an Analytics widget to a dashboard
@@ -20,20 +20,18 @@ Follow this short guide to get started in a few simple steps.
 In this topic we walk you through the steps for adding the Analytics-based Velocity widget to a dashboard. For a review of all Analytics-based widgets, see [Widgets based on the Analytics Service](analytics-widgets-vsts.md) 
 
 
-## Sign up for a VSTS account 
+## Prerequisites
 
-If you haven't yet created a VSTS account, do that now. See [Sign up for a free VSTS account and invite others to join your team](../../user-guide/sign-up-invite-teammates.md).   
+- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
+- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
+
+   
 
 ## Install the Analytics extension on your VSTS account
 1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in VSTS Market place. 
 0.	Click to **Install** the Analytics extension. You might need to log in with your VSTS account.
-0. Select a Visual Studio Team Services account where you would like to install this extension and confirm. Learn more about [Installing extensions for VSTS](../../marketplace/install-vsts-extension.md).
+0. Select a VSTS account where you would like to install this extension and confirm. Learn more about [Installing extensions for VSTS](../../marketplace/install-vsts-extension.md).
 
-<!--- ![Select VSTS account for this extension](./_img/get-vsts-extensions/account.png) 
-c:\Users\romik\source\repos\vsts-docs-pr\docs\marketplace\install-vsts-extension.md
-
-	<img alt="Select VSTS account for this extension" src="_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
---> 
 
 ## Add the Velocity widget to your dashboard 
 
@@ -55,7 +53,7 @@ To add a widget to a dashboard, you connect to your team project using a [suppor
 Congratulations! A new Velocity widget has been added to your dashboard. 
 
 > [!TIP]  
-> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work   defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
+> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
 
 

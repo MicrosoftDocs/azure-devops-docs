@@ -1,30 +1,39 @@
 ---
 title: Account and project scope queries
 titleSuffix: VSTS 
-description: How to query the OData Analytics service on account and project level  
+description: How to query the OData Analytics service for an account or at the project-level  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
-ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.manager: trevorc
-ms.author: kokosins
+ms.assetid: 
+ms.date: 11/13/2017
+ms.reviewer: kokosins
+ms.manager: douge
+ms.author: kaelli
 ms.date: 11/13/2017
 ---
 
-#Account and project-scoped queries
+# Project and account-scoped queries
 
 **VSTS**  
 
-Project-scope queries help answer questions about a single project. And at the same time, account-scope queries allow you to answer questions which cross project boundaries. However, account scoped queries require broader user permissions or careful scoping restrictions to ensure that the query isn’t blocked due to a lack of project permissions.
+Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct project or account-scoped queries to return work items of interest. You run these queries directly in your browser.
+
+Project-scope queries help answer questions about a single project whereas account-scope queries allow you to answer questions which cross project boundaries. Account scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn’t blocked due to a lack of project permissions.
+
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Base URL for account level queries:
-```
-https://{account}.analytics.visualstudio.com/_odata/v1.0
-```
+## Prerequistes 
+
+- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
+- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+
+
 ## Project-scoped queries
 Base URL for project level queries:
- ```OData
+
+```OData
 https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 ```
 
@@ -67,11 +76,17 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Parent($filter=ProjectName eq 'ProjectA')
 ```
-##  Account-scoped queries and security related restrictions
+##  Account-scoped queries  
+
+The Base URL for account level queries is as shown:
+
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0
+```
 
 When using an account-scoped query with an ```$expand``` option you must provide an additional filter.
 
-For example, the following account-scoped query, which uses an ```$expand``` to retrieve the children of all work items:
+For example, the following account-scoped query, which uses an ```$expand``` to retrieve the children of all work items&hellip;
 	
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
@@ -79,7 +94,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &$expand=Children
 ```
 
-requires an additional filter to verify the children are limited to the specified project:
+&hellip;requires an additional filter to verify the children are limited to the specified project:
 	
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
@@ -87,7 +102,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
 ```
 
-This query, which uses an ```$expand``` option to retrieve the parent of all work items:
+The following query, which uses an ```$expand``` option to retrieve the parent of all work items&hellip;
 
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
@@ -107,32 +122,38 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 Without the additional filter, the request will fail if the parent of any work item references work items in a project that you do not have read access to.
 
 
+## Project-level security restrictions
+
 The Analytics Service has a few additional restrictions on query syntax related to project level security.
 
-The ```any``` or ```all``` filters apply to the base Entity on an ```$expand```.  For filters based on a Project we explicitly ignore the filter when using an ```$expand```:
+The `any` or `all` filters apply to the base Entity on an `$expand`.  For filters based on a Project we explicitly ignore the filter when using an `$expand`:
 
-For example, the following query:
+For example, the following query&hellip;
+
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Children($filter=Project/ProjectName eq 'ProjectA')
 ```
-is interpreted as:
+
+&hellip;is interpreted as:
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Children
 ```
+
 and will fail if you don’t have access to all projects.
 	
-To workaround the restriction, you need to add an extra expression in the ```$filter```:
+To workaround the restriction, you need to add an extra expression in the `$filter`:
+
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectName eq 'ProjectA' and Children/any(r: r/ProjectName eq 'ProjectA')
   &$expand=Children
 ```
 
-Using ```$level``` is only supported if you have access to all projects in the collection or when using a project-scoped query:
+Using `$level` is only supported if you have access to all projects in the collection or when using a project-scoped query:
 	
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
@@ -148,3 +169,9 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
     $filter=TargetWorkItem/Project/ProjectName eq $it/Project/ProjectName)
 ```
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Query aggregate data](aggregated-data-analytics.md)
+
+## Related notes
+- [Query guidelines](odata-query-guidelines.md) 

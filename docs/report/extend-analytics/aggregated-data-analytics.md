@@ -292,7 +292,6 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 > [Query trend data](querying-for-trend-data.md)
 
 
-
 ## Related notes 
 
 - [Query your work tracking data using the OData Analytics service](wit-analytics.md)  
