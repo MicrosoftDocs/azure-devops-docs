@@ -22,9 +22,10 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 * While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-* You need a build agent configured on a Mac machine. Simply open the macOS Terminal app on your Mac and follow these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start up the agent for the first time.
+* You need a build agent configured on a Mac machine. You may use one of the following:
+  1. The **Hosted macOS Preview** agent provided by VSTS, or
 
-* Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
+  1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
 ## Get the sample code
 
@@ -44,7 +45,7 @@ https://github.com/adventworks/xcode-sample
 
 ---
 
-The sample provided here is an iOS app, but the concepts described here essentially translate to other Xcode builds. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed on the macOS machine as this is not part of Xcode itself.
+The sample provided here is an iOS app, but the concepts described here translate to other Xcode builds such as for macOS, tvOS, and watchOS apps. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed if you are using your own Mac machine to perform builds, since xcpretty is not part of Xcode itself.
 
 ## Set up continuous integration
 
@@ -58,7 +59,7 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -70,7 +71,11 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**, select a queue that includes the Mac agent you set up.
+1. For the **Agent queue**, select **Hosted macOS Preview** or a queue that includes the Mac agent you set up.
+
+1. For the **Scheme**, enter `iOSHelloWorld`
+
+1. Make sure that each of the Xcode steps are set to use version **4.*** or later.
 
 1. Click **Get sources** and then:
 
@@ -84,34 +89,17 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  ---
 
-1. Disable the **Xcode test** task.
-
-1. Set the following parameters for the **Xcode build** task:
-
- * **Version**:  2.*
- * Scheme: `iOSHelloWorld`
-
-1. On the **Variables** tab in the build definition, make sure the following variables are set:
-
- * **Configuration**: `Release`
- * **TestConfiguration**: `Debug`
- * **SDK**: iphoneos
- * **TestSDK**: iphonesimulator
-
-  > [!NOTE]
-  > Be sure to pay attention to capitalization. For example, "Debug" will work but "debug" might not.
-
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 ## Troubleshooting tips
 
-If you encounter a "User interaction not allowed" error when running the agent as a launch agent, you will either need check the "Unlock default keychain" option or switch to referencing signing certificates using a file. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
+If you encounter a "User interaction not allowed" error when running the agent as a launch agent, on the **Xcode** task, you will either need enable the "Unlock default keychain" option, or switch to referencing signing certificates using a file. See [Sign your mobile app](secure-certs.md) for details.
 
-If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
+If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times, you can add the **Command Line** task to run the `killall` tool with "Simulator" as an argument (i.e. `killall "Simulator"`). This will force the simulator to shut down in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.
 
 ## View the build summary
 
@@ -119,14 +107,14 @@ If you run into issues with your tests hanging and/or not being able to start th
 
 ## Next steps
 
-If you plan to use your own Xcode project for this quickstart, there is really only one additional step required for configuring the project for a CI environment that is not done by default when you create the Xcode project. Xcode has the concept of schemes and you'll need to set one of these as "Shared" and add it to source control so it can be used during your CI builds.  Follow these steps:
+To sign your application with a certificate and provisioning profile as part of CI, see [Sign your mobile app](secure-certs.md).
 
-1. In Xcode, open your project and go to **Product Scheme Manage Schemes...**
+If you plan to use your own Xcode project for this quickstart, an additional step is required to configure your project for a CI environment. Mark a scheme of your Xcode project as "Shared" and add it to source control to be used during your CI builds.  Follow these steps:
 
-2. Check **Shared** next to the Scheme you want to use during CI. Remember the name of the scheme you shared as we will reference it later.
+1. In Xcode, open your project and go to **Product** > **Scheme** > **Manage Schemes...**
+
+2. Enable **Shared** next to the scheme you want to use during CI. Remember the name of the scheme you shared as we will reference it later.
 
 3. Now add the new files and folders in your .xcodeproj folder (specifically the xcsharedata folder to source control).
 
  ![Shared Scheme](_img/xcode-ios/xcode-1.png)
-
-To sign your application with a certificate as part of CI, see [How to: Secure Xcode App](secure-certs.md).

@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/23/2017
+ms.date: 11/14/2017
 ---
 
 #  Get Started with Git and VSTS
@@ -216,9 +216,6 @@ pull your branches regularly to keep them up to date with the changes from other
 0. You can download the latest changes to the branch you are on using the **Pull** link. (There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one as they both do the same thing.) 
 
   ![Download changes to your local repo](_img/gitquickstart-vs2017/incoming-commits.png)
-
-  >[!NOTE]
-  >Visual Studio updates the incoming commits list by running the `fetch` command in the background every few minutes. To manually refresh the list, select the **Fetch** link. For more information on `fetch` and `pull`, see [Update code with fetch and pull](tutorial/pulling.md).
 
 # [Command Line](#tab/command-line)
 

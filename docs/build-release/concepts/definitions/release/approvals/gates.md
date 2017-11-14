@@ -13,62 +13,70 @@ ms.date: 09/26/2017
 
 **VSTS**
 
-## Overview
+Gates allow you to query a range of external services, and wait for a positive input from all of
+them before continuing with a deployment to an environment. When a release is created from a definition
+that contains gates, the deployment stops until the health signals from all the configured services are successful.   
 
-Release gates allow you to configure information-driven approvals for deployments of a release
-to an environment, based on the result of a query against a range of external services.
+## Define a gate for an environment
 
-## Define a release gate for an environment
+1. Enable gates in the **Pre-deployment conditions** or **Post-deployment conditions** panel for an environment. 
 
-Enable release gates in the **Pre-deployment conditions** or 
-**Post-deployment conditions** panel for an environment. 
+   ![Opening the deployment conditions panel](_img/gated-releases-01.png)
 
-![Opening the deployment conditions panel](_img/gated-releases-01.png)
+1. Specify the **Delay before evaluation** for all the gates
+   you intend to use. This is a time delay at the beginning of the initial gate evaluation 
+   process that allows the gates to initialize, stabilize, and begin providing accurate results
+   for the current deployment.
 
-Specify the **Delay before evaluation** for all the gates
-you intend to use. This is a stabilization time delay at the beginning of the initial gate evaluation 
-process that allows the gates to initialize and start providing results relevant
-to the current release. 
+   ![Enabling gates and specifying the delay before evaluation](_img/gated-releases-01a.png)
 
-![Enabling gates and specifying the stabilization time](_img/gated-releases-01a.png)
+   As an example:
 
->As an example, for **pre-deployment gates**, stabilization time would be the time
-required for all bugs to be logged against the artifacts being deployed.  
->For **post-deployment gates**, stabilization time would be the
-maximum time taken for the deployed app to reach a steady operational state,
-the time taken for execution of all the required tests on the deployed
-environment, and the least time it takes for incidents to be logged after the deployment.       
+   * For **pre-deployment gates**, the delay would be the time required for all bugs to be logged
+     against the artifacts being deployed.  
+   * For **post-deployment gates**, the delay would be the maximum time taken for the deployed app
+     to reach a steady operational state, the time taken for execution of all the required tests on
+     the deployed environment, and the least time it takes for incidents to be logged after the deployment.<p />
 
-Choose **+ Add**, and select the type of release gate you require.
+1. Choose **+ Add**, and select the type of release gate you require.
 
-![Adding a gate function](_img/gated-releases-02.png)
+   ![Adding a gate function](_img/gated-releases-02.png)
 
-Select and enter the required parameters, depending on the type of gate you chose.
-At present the gate types include:
+   At present the available gates include:
 
-[!INCLUDE [gate-task-list](_shared/gate-task-list.md)]
+   * **Azure function**: Trigger execution of an Azure function and ensure a successful completion.
+     For more details, see [Azure function task](../../../../tasks/utility/azure-function.md).
+   * **Azure monitor**: Observe the configured Azure monitor alert rules for active alerts.
+     For more details, see [Azure monitor task](../../../../tasks/utility/azure-monitor.md).
+   * **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response.
+     For more details, see [HTTP REST API task](../../../../tasks/utility/http-rest-api.md).
+   * **Work item query**: Ensure the number of matching work items returned from a query is within a threshold.
+     For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
 
-![Setting the parameters for a gate function](_img/gated-releases-03.png)
+1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
-Set the options that apply to all the gates you added:
+   ![Setting the arguments for a gate function](_img/gated-releases-03.png)
 
-* **Timeout**. The maximum evaluation period for all gates. 
-  The deployment will be rejected if the timeout is reached before
-  all gates succeed during the same sampling interval. 
+1.  Set the options that apply to all the gates you added:
 
-* **Sampling interval**. The time interval between each evaluation of 
-  all the gates, effectively the frequency and duration of gate evaluation. 
-  At each sampling interval, new requests are sent concurrently to each gate
-  for fresh results. The sampling interval must be greater than the longest
-  typical response time of any configured gate to allow time for all responses to be received.     
+   * **Timeout**. The maximum evaluation period for all gates. 
+     The deployment will be rejected if the timeout is reached before
+     all gates succeed during the same sampling interval. 
 
-* **Execution order**. Select the required order of execution for gates and approvals if you have configured both.
-  For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
-  This saves the system from evaluating the gate functions if the release is rejected by the user. 
-  For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
-  This ensures the approvers have all the information required for a quality sign-off. 
+   * **Sampling interval**. The time interval between each evaluation of 
+     all the gates. At each sampling interval, new requests are sent concurrently to each gate
+     for fresh results. The sampling interval must be greater than the longest
+     typical response time of any configured gate to allow time for all responses to be received.     
 
-![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
+   * **Execution order**. Select the required order of execution for gates and approvals if you have configured both.
+     For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
+     This saves the system from evaluating the gate functions if the release is rejected by the user. 
+     For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
+     This ensures the approvers have all the information required for a sign-off. 
+
+   ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
+
+### Gate evaluation flow examples
 
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period and three sampling intervals, the deployment is approved.
@@ -83,15 +91,15 @@ this case, after the timeout period expires, the deployment is rejected.
 
 ## View and monitor gate results
  
-As a release executes, the **Summary** page shows a pop-up message when you choose
-the **(i)** icon for an environment. Use this to see the current status of your release.
+1. Open the **Summary** page for your release. As the release executes, the pop-up message when you choose
+   the ![info](_img/info-icon.png) icon for an environment indicates the current status of your deployment to each environment.
 
-![Gates evaluation during a release](_img/gate-inprogress.png)
+   ![Gates evaluation during a release](_img/gate-inprogress.png)
 
-During and after a deployment, the **Logs** page shows comprehensive information
+1. Open the **Logs** page for your release. During and after a deployment, it shows comprehensive information
 about the evaluation of all the gates you configured for the release.
 
-![Gates log results ](_img/gate-results-view.png)
+   ![Gates log results ](_img/gate-results-view.png)
 
 ## Related topics
 

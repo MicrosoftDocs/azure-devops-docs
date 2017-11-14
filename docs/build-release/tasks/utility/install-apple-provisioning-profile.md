@@ -13,7 +13,7 @@ ms.date: 05/22/2017
 
 **VSTS**
 
-![](../build/_img/xcode-build.png) Install an Apple provisioning profile required to build on a macOS agent
+![](../build/_img/xcode.png) Install an Apple provisioning profile required to build on a macOS agent
 
 This task allows installing an Apple provisioning profile that is stored as a [secure file](../../concepts/library/secure-files.md) on the server. You can use this task to install additional provisioning profiles needed to build Apple WatchKit Apps and Extensions. 
 

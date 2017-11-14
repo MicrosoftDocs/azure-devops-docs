@@ -50,16 +50,16 @@ Arguments that you want to pass to CMake.
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How do I enable CMake for the hosted pool?
+### How do I enable CMake for hosted agents?
 
 The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but you must manually add the [capability](../../concepts/agents/agents.md#capabilities) to use the CMake build step.
 
 <ol>
-<li><p>Open the Agent pools control panel tab:
+<li><p>Open the Agent Pools control panel tab:
 [!INCLUDE [agent-pools-tab](../../concepts/agents/_shared/agent-pools-tab.md)]
 </li>
 
-<li>In the left column, click **Hosted**. In the right column click **Capabilities**.</li>
+<li>In the left column, click the name of the hosted pool that you are using. In the right column click **Capabilities**.</li>
 
 <li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
 
@@ -71,7 +71,7 @@ The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but y
 <ol>
 <li>[Deploy an agent](../../concepts/agents/agents.md#install).</li>
 
-<li>[Install CMake](https://cmake.org/install/) and make sure to add it to the PATH of your agent machine.</li>
+<li>[Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.</li>
 
 
 <li><p>In your web browser, navigate to the **Agent pools** control panel tab:</p>
@@ -80,7 +80,7 @@ The [hosted agents](../../concepts/agents/hosted.md) have CMake installed, but y
 
 </li>
 
-<li>In the left column, click **Hosted**. In the right column click **Capabilities**. </li>
+<li>In the left column, click the name of your agent pool. In the right column click **Capabilities**. </li>
 
 <li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
 

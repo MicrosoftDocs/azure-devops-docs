@@ -296,7 +296,8 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
 ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log.png)
 
-> In many cases, you probably would want to edit the release process so that the production deployment happens only after some testing and approvals are in place. See [Environments in Release Management](../concepts/definitions/release/environments.md).
+> In many cases, you probably would want to edit the release process so that the production deployment happens
+  only after some testing and approvals are in place. See [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
 
 ## Put CI/CD to work for you
 
