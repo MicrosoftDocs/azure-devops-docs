@@ -155,7 +155,7 @@ The cloned environment has the same tasks, task properties, and
 configuration settings as the original.
 
 Select the cloned environment to open the properties panel, and update the
-[pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
+[pre-deployment approver](../concepts/definitions/release/approvals/approvals.md),
 [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
 [queue](../concepts/agents/pools-queues.md) settings for the cloned environment as required.
 
@@ -236,9 +236,9 @@ definition settings, see:
 
 * [Triggers](../concepts/definitions/release/triggers.md)
 
-* [Approvals](../concepts/definitions/release/environments.md#approvals)
-
 * [Variables](../concepts/definitions/release/variables.md)
+
+* [Approvals and gates](../concepts/definitions/release/approvals/index.md)
 
 * [Retention](../concepts/policies/retention.md)
 
