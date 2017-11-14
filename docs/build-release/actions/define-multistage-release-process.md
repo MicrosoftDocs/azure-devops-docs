@@ -257,4 +257,4 @@ running the release in debug mode. For more information, see
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Use approvals and gates to control your deployment](deploy-using-approvals.md)
