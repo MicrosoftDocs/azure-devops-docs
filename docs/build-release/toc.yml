@@ -254,8 +254,8 @@
       href: tasks/build/xamarin-android.md
     - name: Xamarin.iOS
       href: tasks/build/xamarin-ios.md
-    - name: Xcode Build
-      href: tasks/build/xcode-build.md
+    - name: Xcode
+      href: tasks/build/xcode.md
     - name: Xcode Package iOS
       href: tasks/build/xcode-package-ios.md
   - name: Utility tasks
