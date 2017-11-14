@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 09/26/2017
 ---
 
-# Utility: Work item query
+# Utility: Query Work Items
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
