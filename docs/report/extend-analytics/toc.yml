@@ -1,42 +1,54 @@
-- name: "Extend on Analytics with OData"
+- name: "Extend Analytics with OData"
   href: index.md
 - name: Overview
   items:
-  - name: What is the Analytics Service
-    href: ..\analytics\overview-analytics-service.md
-- name: 5-Minute QuickStarts
+  - name: "What is Analytics?"
+    href: ../analytics/what-is-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+- name: Quickstarts
   items:
-  - name: Get Work Item Tracking data with OData 
-    href: ..\analytics\wit-analytics.md
-- name: Step-by-Step Tutorials
+  - name: Query work item tracking data 
+    href: wit-analytics.md
+  - name: "Project & account-scoped queries" 
+    href: account-scoped-queries.md
+- name: Tutorials
   items:
-  - name: Aggregate data using OData
-    href: ..\analytics\aggregated-data-analytics.md
-  - name: Query for trend data
-    href: ..\analytics\querying-for-trend-data.md
-  - name: Query for Work item links
-    href: ..\analytics\work-item-links.md
-- name: Concepts
-  items:
-  - name: Data Model for Work Item Tracking Analytics
-    href: ..\analytics\data-model-analytics-service.md
+  - name: Query aggregate data
+    href: aggregated-data-analytics.md
+  - name: Query trend data
+    href: querying-for-trend-data.md
+  - name: Query work item links
+    href: work-item-links.md
+  - name: Explore Analytics metadata
+    href: analytics-metadata.md
 - name: Samples
   items:
-  - name: Work Item Tracking Analytics Query Examples
-    href: ..\analytics\analytics-recipes.md
-  - name: Hub extension
-    href: ..\analytics\building-extension-against-analytics-service.md
-  - name: Widget View
-    href: ..\analytics\widget-extensions-against-analytics-service.md
-  - name: Widget View
-    href: ..\analytics\widget-extension-against-analytics-service-configuration.md
+  - name: Work item tracking queries
+    href: analytics-recipes.md
+  - name: Create an Analytics widget
+    href: example-analytics-widget.md  
+- name: Concepts
+  items:
+  - name: Performance and latency
+    href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+  - name: Query guidelines
+    href: odata-query-guidelines.md  
+- name: How-to Guides
+  items:
+  - name: Set permissions (Security) 
+    href: ../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Supported OData feature & Operations
-    href: ..\analytics\wit-analytics.md
+  - name: Data model
+    href: data-model-analytics-service.md
+  - name: "Supported functions & clauses"
+    href: odata-supported-features.md 
+  - name: API versioning
+    href: odata-api-version.md 
 - name: Resources
   items:
-  - name: VSTS Analytics Service
+  - name: "Analytics (VSTS)"
     href: ../analytics/index.md
+  - name: "Power BI (VSTS)"
+    href: ../powerbi/index.md
   - name: OData Extension for Data Aggregation Version 4.0
     href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

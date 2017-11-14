@@ -4,18 +4,20 @@ description: Step-by-step guidance on how to connect to Power BI Data Connector 
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
-ms.date: 05/21/2017
+ms.author: kaelli
+ms.date: 11/13/2017
 ---
 
 # Connect to VSTS with Power BI Data Connector
 
-<b>VSTS</b>
+**VSTS**
+
+
+The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development.  The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-You import data from the Analytics Service for VSTS into Power BI using a data connector.  
 
 ## Import data
 
@@ -131,7 +133,7 @@ You import data from the Analytics Service for VSTS into Power BI using a data c
 	> [!IMPORTANT]  
 	> Power BI automatically translates filtering and columns selection steps into queries to the underlying data source provided that they appear at the beginning of *Applied steps* list. Always start with filtering and columns selection before you apply more advanced transformations such as adding custom columns.
 
-	![](./_img/data-connector-get-data-13a.png)
+	<img src="./_img/data-connector-get-data-13a.png" alt="Product backlog" style="border: 1px solid #C3C3C3;" /> 
 
 13. **Wait for the data to load**. Closing the *Query Editor* triggers the load operation. 
 	You can observe its progress by looking at the status messages, which appear directly under 
@@ -168,17 +170,6 @@ In the example below the most important part of the error message is:
 >Query result exceeds maximum size. Please reduce the number of records by applying additional filters.
 
 ![QueryExceedsPreferedMaxSizeException](./_img/QueryExceedsPreferedMaxSizeException.png)
-
-<a id="QueryExceedsPreferedMaxSizeException">  </a>
-### Q: How do I resolve error: *The Analytics Service is in preview and only available to select customers...*?
-
-You encountered an error while trying to connect.   
-
-> **The Analytics Service is in preview and only available to select customers of VSTS at this time.** If your account has been enabled please contact the Microsoft employee who set up the service for assistance.
-
-**A:** Data Connector is built on top of the Analytics Service, which is currently in the preview stage.
-
-![The Analytics Service is in preview and only available to select customers...](./_img/AnalyticsNotEnabledError.png)
 
 <a id="QueryExceedsPreferedMaxSizeException">  </a>
 

@@ -1,48 +1,36 @@
 - name: "Power BI (VSTS)"
   href: index.md
-- name: Overview
+- name: Concepts
   items:
-  - name: Power BI integration overview
+  - name: Power BI integration
     href: overview.md
 - name: How-to Guides
   items:
-  - name: Assign permissions (Security)
+  - name: Client authentication 
+    href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Connect to VSTS 
+    href: data-connector-connect.md
+  - name: Access data
+    href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: OData aggregations
+    href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Create custom calculations
+    href: ../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: "Publish to PowerBI.com"
+    href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json   
+  - name: Set permissions (Security)
     href: ../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json  
-  - name: Power BI Data Connector
-    items:
-    - name: Client authentication 
-      href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: Connect to VSTS 
-      href: data-connector-connect.md
-    - name: Access data through Power BI desktop
-      href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: Power BI desktop and OData aggregations
-      href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-    - name: "Share reports, publish to PowerBI.com"
-      href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: Power BI Content Pack
-    items:
-    - name: Connect to VSTS with Power BI Content Pack
-      href: connect-vso-pbi-vs.md
-    - name: Create dashboards
-      href: report-on-vso-with-power-bi-vs.md
-    - name: Create trend charts
-      href: create-trend-charts.md
-    - name: Create rollup charts
-      href: create-rollup-charts.md      
 - name: Reference
   items:
-  - name: Power BI available data
-    href: vso-pbi-whats-available-vs.md
-  - name: Data Connector available functions
+  - name: Data Connector functions
     href: data-connector-functions.md
-  - name: Analytics Service overview 
-    href: ../analytics/overview-analytics-service.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: "Dashboards, charts, & widgets"
+  - name: Dashboards
     href: ../dashboards/index.md
-  - name: PowerBI Desktop
+  - name: "Analytics (VSTS)"
+    href: ../analytics/index.md
+  - name: Power BI Desktop
     href: https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/
-  - name: PowerBI Documentation
+  - name: Power BI Documentation
     href: https://powerbi.microsoft.com/documentation/powerbi-landing-page/

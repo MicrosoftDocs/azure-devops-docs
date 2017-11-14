@@ -4,19 +4,19 @@ description: Get started using Power BI to analyze data collected for team proje
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
 ms.assetid: 2915605A-E3F1-4FE0-ACA5-7A4D734DB679
+ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Connect to VSTS with Power BI Content Pack
 
 **VSTS**
-[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for VSTS. 
 
-For a list of currently available data, see [What's available in the Power BI VSTS Connector](vso-pbi-whats-available-vs.md). 
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 ## Authorize Power BI to access your account data
 Your first step requires you to authorize Power BI to access your VSTS account. Choose between one of these two connection scenarios when connecting to Power BI:
@@ -93,8 +93,6 @@ If your cached credentials work, you won't get prompted. If you don't have cache
 ## Related notes
 
 To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of articles](https://support.powerbi.com/).
-
-Always check into updates of [What's available in the Power BI VSTS Connector](vso-pbi-whats-available-vs.md) to learn about the latest data and changes made to the VSTS Connector.  
 
 To understand the default reports available, see [Create reports with data from using Power BI for VSTS](report-on-vso-with-power-bi-vs.md).
 

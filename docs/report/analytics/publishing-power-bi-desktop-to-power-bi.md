@@ -1,21 +1,22 @@
 ---
-title: Publish a Power BI Desktop file to PowerBI.com | VSTS  
+title: Publish a Power BI Desktop file to PowerBI.com  
+titleSuffix: VSTS 
 description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated charts and tables, you can share those with others by creating a dashboard on PowerBI.com. This process walks you through how to do that.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 0. Open the **Power BI Desktop** file with your data.  
 
@@ -28,7 +29,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
     If you are already signed in, the dialog will go away and you will see a Publishing to Power BI message.
     After the publishing is complete you'll see a success message.
 
-     ![Publishing successful](_img/publish-2.png)
+     <img src="_img/publish-2.png" alt="Publishing successful" style="border: 1px solid #C3C3C3;" />
 
 0. Click the **Open 'file name' in Power BI** link
 
@@ -44,7 +45,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 0. Click the Edit credentials link next to ODATA under Data source credentials as shown here:
 
-     ![Update odata credentials](_img/publish-4.png)
+     <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
 0. Select the appropriate authentication option (as discussed in [Client Authentication Options](client-authentication-options.md)). 
 * Use **oAuth2**  for Azure Active Directory (AAD) credentials.
@@ -68,7 +69,7 @@ At this point the data will update on your scheduled basis using the credentials
 
 ## Related notes
 
-- [Analytics service overview](overview-analytics-service.md)  
+- [Analytics Service](index.md)  
 - [Client Authentication Options](client-authentication-options.md)
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
