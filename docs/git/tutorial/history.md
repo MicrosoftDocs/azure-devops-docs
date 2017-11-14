@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 11/14/2017
 ---
 
 # Review history
@@ -34,17 +34,15 @@ Compare the changes between two versions of a file in your Git repo.
 
 # [Visual Studio](#tab/visual-studio)
 
-VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
-
 0. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
-    ![View history in your repo for a file](_img/vs_history_view.png)     
+    ![View history in your repo for a file](_img/history/vs-history-view.png)     
 
 0. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
 0. View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
 0. The diff view shows lines removed from the older commit and added in the new one.
 
-    ![View diff changes in Visual Studio](_img/vs_diff_changes.png)
+    ![View diff changes in Visual Studio](_img/history/vs-diff-changes.png)
 
 # [Command Line](#tab/command-line)
 
@@ -91,23 +89,48 @@ View changes between two commits using `git diff`:
 ## Retrieve files
 
 Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
-Retrieving a older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
+Retrieving an older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
 your branch.
 
 # [Visual Studio](#tab/visual-studio)
+
+To retrieve a previous version of a file that exists in your Visual Studio project:
+
+0. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
+You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
+   
+  ![View file versions in Visual Studio](_img/history/vs-history-view.png)   
+
+To retrieve a previous version of a file that was deleted in a previous commit:
+
+0. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
+
+  ![View changes](_img/history/team-explorer-changes.png) 
+
+0. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
+
+  ![View changes](_img/history/vs-view-commit-details.png) 
+
+0. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
+
+  ![View deleted files in your Git repo with Visual Studio](_img/history/vs-open-deleted-file.png)
+
+>[!NOTE]
+>The retrieved version of a file is not automatically saved to your project. To save the retrieved version to your project, select **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
+an existing one, you'll need to commit your changes to add the previous version to your local branch.
 
 # [Command Line](#tab/command-line)
 
 Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
 
-Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](history.md#compare-files) above.
+Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](history.md#compare-files?tabs=command-line) above.
 Restore the version in its current location using `git checkout`:
    
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git checkout <font color="#b5bd68">85435fac src/app.ts</font>
 </pre>
 
- Using `git checkout` this way will rewrite the current verison of the file at that path location.
+Using `git checkout` this way will rewrite the current verison of the file at that path location.
 
 Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
 
@@ -117,28 +140,6 @@ Restore a file to any location by using `git show`. This command prints the file
 
 ---
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample2">How to retrieve files</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline2">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs2">Visual Studio</a></li>
-</ul>
-
-<div id="changeexample2" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs2" class="tab-pane fade in active">
-<h6>VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
-<p>Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
-You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
-   
-<p>![View file versions in Visual Studio](_img/vs_view_file_commit_details.png)    
-<p>Retrieve deleted files in your repo by opening the **Changes** view in Team Explorer. Select **View History** from the **Actions** drop-down. Right-click the commit
-containing the version of the file you want to restore and select **View Commit Details**. 
-<p>![View deleted files in your Git repo with Visual Studio](_img/vs_view_commit_details.png)
-<p>Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
-<p>Save the version to your project by selecting **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
-an existing one, you'll need to commit your changes to add the previous version to your local branch.
-
-</div>
 
 
 
@@ -150,17 +151,17 @@ changes others have made will affect your work.
 
 # [Visual Studio](#tab/visual-studio)
 
-VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
+Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
-Browse to your repo in VSTS or TFS. Select **Branches** from the menu under **Code**:   
+![Web portal](_img/history/vs-browse-web-portal.png) 
 
-![Open the branches view in VSTS/TFS](_img/branches_view_team_services.png)   
+Select **Branches** from the menu under **Code**. Locate your branch and select the **...** icon to view the branch options. Select **Compare branches**.  
 
-Locate your branch and select the **...** icon to  view the branch options. Select **Compare branches**.   
+![Compare branches](_img/history/compare-branches.png) 
 
-![Select the ellipses icon to open branch options, then select VSTS](_img/team_services_branch_options.png)
-   
 Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
+
+![Comparing branches](_img/history/comparing-branches.png) 
 
 
 # [Command Line](#tab/command-line)

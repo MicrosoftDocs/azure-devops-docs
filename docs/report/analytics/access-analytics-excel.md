@@ -1,23 +1,23 @@
 ---
-title: Access data through Excel | VSTS  
+title: Access data through Excel   
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Access data through Excel 
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can access data through Excel, generate reports and then publish the charts to PowerBI.com or use the Excel file
 as a basis for Power BI reports. At this time you will need to have alternate credentials enabled to access data
 the Analytics Service via Excel.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 1. To get started, Open Excel 2016 (this will work with earlier versions of Excel. You will need to have installed
 the Power Query add-in which you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
@@ -31,15 +31,15 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 4. Enter the URL in the format below and click OK:  
 
 	```
-	https://AccountName.analytics.visualstudio.com/DefaultCollection/_odata
+	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
 	![Select OData Feed ](_img/pbi3.png)  
 
-	If the *AccountName* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/DefaultCollection/_odata```.
+	If the *account* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://[collection name].analytics.visualstudio.com/DefaultCollection/ProjectName/_odata``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md)
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return

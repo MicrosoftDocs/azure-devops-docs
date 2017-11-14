@@ -1,5 +1,5 @@
 ---
-title: Deploy an agent on OSX
+title: Deploy an agent on macOS
 description: Deploy a macOS agent to build and deploy your iOS application.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -13,6 +13,10 @@ ms.date: 08/26/2016
 **VSTS | TFS 2017 | TFS 2015**
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+
+> Before you begin:
+> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 

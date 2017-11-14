@@ -23,7 +23,7 @@ Start by opening the Column Options.  Unlike a query result, you can't sort a ba
 
 Each user can set their own column options which persist for each product or portfolio backlog across user sessions.  
 
-<img src="_img/overview/b-vs-b-column-options.png" alt="Open column options" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/overview/b-vs-b-column-options.png" alt="Open column options" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Related notes

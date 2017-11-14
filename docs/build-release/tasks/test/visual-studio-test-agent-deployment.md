@@ -63,10 +63,9 @@ The supported options for these scenarios are:
   - On-premises and VSTS<p />
 * **Build and release agents**
   - Hosted and on-premises agents are supported.
-  - The XPlat agent is not supported for any build/deploy/test tasks
   - The agent must be able to communicate with all test machines. 
-    If the test machines are on-premises, the Hosted agent pool in
-    VSTS cannot be used.
+    If the test machines are on-premises behind a firewall, a VSTS hosted agent
+    cannot be used because it will not be able to communicate with the test machines.
   - The agent must have Internet access to download test agents. 
     If this is not the case, the test agent must be manually 
     downloaded, uploaded to a network location accessible to
@@ -78,8 +77,8 @@ The supported options for these scenarios are:
     Release Management workflows.<p /> 
 * **Machine group configuration**
   - Only Windows-based machines are supported inside a 
-    machine group for build/deploy/test tasks. Linux, iOS, or 
-    other platforms are not supported inside a machines group.
+    machine group for build/deploy/test tasks. Linux, macOS, or 
+    other platforms are not supported inside a machine group.
   - Installing any version of Visual Studio on any of the 
     test machines is not supported.
   - Installing any older version of the test agent on any of the 

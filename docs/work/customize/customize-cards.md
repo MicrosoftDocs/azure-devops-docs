@@ -157,7 +157,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 1. From your Kanban board, open Settings (for on-premises TFS, choose Cards).   
 
-	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customizationd" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customizationd" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
 
@@ -198,13 +198,13 @@ As a first step, you'll see that you can change the card display for each work i
 
 2. To add a field to a card, click ![add icon](../_img/icons/add_icon.png) to select a field from the drop-down menu. <br/>
 
-	<img src="_img/customize-cards-add-fields.png" alt="Kanban board, Add fields to a card" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/customize-cards-add-fields.png" alt="Kanban board, Add fields to a card" style="border: 1px solid #C3C3C3;" />  
 
 3. To add a custom field, you must first [add it to the WIT definition](add-modify-field.md). <br/>
 
 	Here we've added three fields:<br/>
 
-	<img src="_img/customize-cards-three-fields-added.png" alt="Kanban board, three fields added" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/customize-cards-three-fields-added.png" alt="Kanban board, three fields added" style="border: 1px solid #C3C3C3;" />  
 
 	You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields.  
 
@@ -220,7 +220,7 @@ You change the way cards display on the task board the same way you change the K
 
 1.	Open Settings from your task board (for on-premises TFS, choose Cards).  
 
-	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.  
 
@@ -228,11 +228,11 @@ You change the way cards display on the task board the same way you change the K
 
 	**VSTS and TFS 2015 Update 1 options:**   
 	
-	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 	**TFS 2015 options:**  
 
-	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/ALM_CC_TaskCardOptions.png" alt="Task board, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
 3.	Repeat this step for each WIT you want to change. Don't be surprised if the options change when you click on a different WIT. For example, Show Remaining Work only applies to tasks and perhaps bugs, but not to PBIs or requirements.  
 
@@ -246,7 +246,7 @@ You change the way cards display on the task board the same way you change the K
 
 1.	To cause a card on the Kanban board to change color based on criteria you specify, open Styles. Add a styling rule and set the criteria for the rule.  
 
-	<img src="_img/vso-card-styling.png" alt="Kanban board, Style dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/vso-card-styling.png" alt="Kanban board, Style dialog" style="border: 1px solid #C3C3C3;" />  
 
 	Follow these rules when creating and ordering your style rules:
 	- The criteria you specify works in a similar fashion as when [constructing a query](../track/using-queries.md) 
@@ -270,7 +270,7 @@ You change the way cards display on the task board the same way you change the K
 
 2.	To add color to Kanban cards, open Tag colors and select a tag and the color you want it to display.  
 
-	<img src="_img/kanban-card-customize-tag-colors.png" alt="Kanban board, tag colors" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/kanban-card-customize-tag-colors.png" alt="Kanban board, tag colors" style="border: 1px solid #C3C3C3;" />  
  
 	If tags don't display on the cards, open Fields and make sure that you've checked Show Tags. 
 
@@ -288,7 +288,7 @@ As shown in the following examples, the Task and Test annotations indicate that 
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
 > |-------------|----------|----------|    
-> |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 2px solid #C3C3C3;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 2px solid #C3C3C3;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 2px solid #C3C3C3;" /> | 
+> |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
 
 To learn more about using these features, see [Add task checklists](../kanban/add-task-checklists.md) and [Add, run, and update inline tests](../kanban/add-run-update-tests.md).  
 
@@ -296,13 +296,13 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Annotations tab, check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
-	<img src="_img/annotate-settings.png" alt="Kanban board, Settings dialog, Annotations tab" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/annotate-settings.png" alt="Kanban board, Settings dialog, Annotations tab" style="border: 1px solid #C3C3C3;" />  
 
 	The setting you choose applies to all active Kanban boards for your team, i.e., backlog, features, and epics.  
 
@@ -321,7 +321,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
 
-	<img src="_img/c-cards-test-settings.png" alt="Kanban board, Settings dialog, Tests tab" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/c-cards-test-settings.png" alt="Kanban board, Settings dialog, Tests tab" style="border: 1px solid #C3C3C3;" />  
 
 3. Save your changes. 
 	  
@@ -329,7 +329,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Click the ![open icon](../_img/icons/open-icon.png) open icon to open another browser tab showing the Test hub and associated test plan and test suite that controls the inline tests.
 
-<img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Related notes

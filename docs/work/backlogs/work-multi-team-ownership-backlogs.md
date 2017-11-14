@@ -21,13 +21,13 @@ Your team's product backlog lists only those items whose area path matches those
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" />  
 
 Here's another example that shows the Epics backlog for the Fabrikam Fiber team. 
 Drilling down, you can see all the backlog items and features, even though they 
 belong to one of three different teams - Customer Service, Phone, and Web.  
  
-<img src="_img/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 1px solid #C3C3C3;" />  
 
 From these views, you can reparent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  

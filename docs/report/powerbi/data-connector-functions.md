@@ -1,22 +1,25 @@
 ---
-title: Functions available in Power BI Data Connector | VSTS  
-description: Description of functions available from the Power BI Data Connector and the Analytics Service for VSTS
+title: Functions available in Power BI Data Connector 
+titleSuffix: VSTS 
+description: Descriptions of functions available from the Power BI Data Connector and the Analytics Service for VSTS
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
-ms.date: 01/17/2017
+ms.author: kaelli
+ms.date: 11/13/2017
 ---
 
 # Functions available in Power BI Data Connector
 
-<b>VSTS</b>
+**VSTS**  
+
+The Data Connector for VSTS contributes functions which can be used by query authors. For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  
+
+We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-The Data Connector for VSTS contributes functions which can be used by query authors.  For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
-
 
 <table>
     <tr>
@@ -107,7 +110,7 @@ Use `VSTS.Feed` function to count the number of work items in a project.
 Basic Query:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)")
 in
     Source
@@ -116,7 +119,7 @@ in
 Query with Columns Selected:
 ```
 let
-    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    Source = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$apply=aggregate($count as Count)"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"Count"})
 in
@@ -132,8 +135,8 @@ Use `VSTS.Feed` function to load a count of User Stories for each Iteration Path
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))")
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))")
 in
     #"Source"
 ```
@@ -141,8 +144,8 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
-        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate(Count with sum as Count))"),
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
+        & "WorkItems?$apply=groupby((Iteration/IterationPath), aggregate($count as Count))"),
     #"Expanded Iteration" = Table.ExpandRecordColumn(Source, "Iteration", {"IterationPath"}, {"Iteration.IterationPath"}),
     #"Removed Other Columns" = Table.SelectColumns(#"Expanded Iteration",{"Count", "Iteration.IterationPath"})
 in
@@ -158,7 +161,7 @@ Use VSTS.Feed function to load detailed information about bugs.
 Basic Query:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'")
 in
     #"Source"
@@ -166,7 +169,7 @@ in
 Query with Columns Selected:
 ```
 let
-    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/"
+    #"Source" = VSTS.Feed("https://fabrikam-fiber-inc.analytics.visualstudio.com/Fabrikam-Fiber-Git/_odata/v1.0-preview/"
         & "WorkItems?$select=WorkItemId,State&$filter=WorkItemType eq 'Bug'"),
     #"Removed Other Columns" = Table.SelectColumns(Source,{"WorkItemId", "State"})
 in

@@ -68,8 +68,6 @@
       href: add-account-users-from-user-hub.md
     - name: Manage users in user hub
       href: manage-users-table-view.md
-    - name: "Add users and assign access (pre-User Hub)"
-      href: add-account-users-assign-access-levels.md
     - name: Manage conditional access
       href: manage-conditional-access.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
@@ -79,8 +77,6 @@
     - name: Change app access policies
       href: change-application-access-policies-vs.md
     - name: Delete users from your account
-      href: delete-account-users-users-hub.md
-    - name: "Delete users from your account (pre-User Hub)"
       href: delete-account-users.md
     - name: Access with Azure AD
       items:

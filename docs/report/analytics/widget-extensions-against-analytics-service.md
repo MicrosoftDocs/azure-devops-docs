@@ -1,23 +1,23 @@
 ---
-title: Build a dashboard widget that calls the analytics service | VSTS
+title: Build a dashboard widget that calls the Analytics Service | VSTS
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from a dashboard widget extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: CA782CE8-2BDF-4CDE-BEC7-F3FCF761B1A9
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Build a dashboard widget extension that calls the Analytics Service
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Building an dashboard widget extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 The following topics describe how to build an extension and a widet extension:  
 - [Overview of extensions for VSTS](../../extend/get-started/node.md)  
@@ -106,7 +106,7 @@ Next, add the following code to the **analytics.js** file:
         //Widget reload function
         VSS.notifyLoadSucceeded();
     });
-    //Reusable function to call the analytics service and build the chart
+    //Reusable function to call the Analytics Service and build the chart
 ```
 
 The init method does just what it says, it initializes the SDK. The second block of code you will make changes to over the next several steps and it does the 
@@ -124,7 +124,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "VSS/Authentication/Services"], fun
     });
     VSS.notifyLoadSucceeded();
 });
-//Reusable function to call the analytics service and build the chart
+//Reusable function to call the Analytics Service and build the chart
 ```
 
 The [register](https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk#method_register) method takes the name of the widget, 
@@ -132,9 +132,9 @@ as defined in the manifest which hasn't been created yet, and a function to exec
 
 **Retrieve data and build the chart**
 
-The next step is to retrieve data from the analytics service. To do that we first need an OAuth access token that we can use to authenticate
+The next step is to retrieve data from the Analytics Service. To do that we first need an OAuth access token that we can use to authenticate
 against the service. Once we have the token, we need to append it to the header of our request and we're good to go. Update the code in the **analytics.js**
-file by replacing the **//Reusable function to call the analytics service** comment:
+file by replacing the **//Reusable function to call the Analytics Service** comment:
 
 ```
 function createChart(VSS_Auth_Service, WidgetHelpers) {
@@ -143,8 +143,8 @@ function createChart(VSS_Auth_Service, WidgetHelpers) {
 
         var accountName = VSS.getWebContext().account.name;
         var projectName = VSS.getWebContext().project.name;
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/" + projectName
-            + "/_odata/WorkItems?$apply=groupby((WorkItemType), aggregate(Count with sum as Count))";
+        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
+            + "/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))";
 
         $.ajax({
             type: "GET",
@@ -167,10 +167,10 @@ function createChart(VSS_Auth_Service, WidgetHelpers) {
 
 VSS.getAccessToken retrieves the authentication token for us. Once we have the token, an authorization header is created based on the token.
 
-The next three lines are used to construct the analytics service URL to retrieve the data. This initial URL will return a count of work items 
+The next three lines are used to construct the Analytics Service URL to retrieve the data. This initial URL will return a count of work items 
 for the account and project the widget is in, grouped by work item type.
 
-The ajax call actually retrieves the data from the analytics service. The beforeSend function adds the authetication token to the header. The error function
+The ajax call actually retrieves the data from the Analytics Service. The beforeSend function adds the authetication token to the header. The error function
 called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the the chart is
 built.
 
@@ -333,7 +333,7 @@ For details on extension manifests, see [Extension manifest reference](../../ext
 There are a few key things to note here:
 
 * This extension will show up in the widget gallery as denoted by this target: **ms.vss-dashboards-web.widget-catalog**
-* The scope is **vso.analytics** which is the OAuth scope required to access the analytics service
+* The scope is **vso.analytics** which is the OAuth scope required to access the Analytics Service
 * The supported size is 330x330 which is a 2x2 sized tile (160+160+10 pixels for spacing)
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described in 
@@ -343,5 +343,4 @@ You should end up with a widget that looks like this:
 
 ![widget-extension-2.png](_img/widget-extension-2.png)
 
-Continue to the next topic, [Add configuration to the analytics chart](widget-extension-against-analytics-service-configuration.md) to learn how to give users the ability to customize
-your extension.
+Continue to the next topic, [Add configuration to the analytics chart](widget-extension-against-analytics-service-configuration.md) to learn how to give users the ability to customize your extension.

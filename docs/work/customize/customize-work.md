@@ -7,7 +7,7 @@ ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/09/2017
+ms.date: 11/07/2017
 ---
 
 # Customize your work tracking experience 
@@ -243,7 +243,7 @@ Here are a few options available to you:
 
  
  
-[!INCLUDE [temp](../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
 <!--- ADDRESS THESE VERBATIMS: 
 Configure bug reporting
