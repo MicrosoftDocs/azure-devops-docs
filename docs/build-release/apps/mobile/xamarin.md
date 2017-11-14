@@ -22,12 +22,12 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 * While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-* You will build the sample app on Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use hosted agent for Xamarin.Android, but if you use TFS or to build Xamarin.iOS, you also need a private agent. Set up a private agent and [Install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your dev machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for Mac.
+* You will build the sample app for Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use a hosted agent for both. If you use TFS, you will need a private agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a private agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
 
  |Build | [Hosted agents](../../concepts/agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [macOS](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
  | Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
- | Xamarin.iOS | No | No | Yes (with Xamarin installed) |
+ | Xamarin.iOS | Yes | No | Yes (with Xamarin installed) |
  | UWP | Yes | Yes (Windows 10) | No |
 
 ## Get the sample code
@@ -66,11 +66,11 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+ Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
  ---
 
@@ -78,11 +78,11 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted VS2017_. This hosted pool of agents has the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [macOS](../../actions/agents/v2-osx.md) or [Windows](../../actions/agents/v2-windows.md) build agent.
 
 1. Click **Get sources** and then:
 
@@ -96,13 +96,13 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  ---
 
-1. Select **Build Xamarin.Android Project** task. In the properties for this task, select `JDK 8` as the **JDK Version**, and `x64` as the **JDK Architecture**.
+1. Select the **Build Xamarin.Android Project** task. In the properties for this task, select `JDK 8` as the **JDK Version**, and `x64` as the **JDK Architecture**.
 
-1. Select **Build solution **/test*.csproj** task. In the properties for this task, uncheck **Enabled** under **Control Options**. There are no tests in the sample repository.
+1. Select the **Build solution **/test*.csproj** task. In the properties for this task, uncheck **Enabled** under **Control Options**. There are no tests in the sample repository.
 
-1. Select **Xamarin Test Cloud** task. Remove this task from the definition.
+1. Select the **Xamarin Test Cloud** task. Remove this task from the definition by right-clicking it and selecting **Remove selected task(s)**.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
@@ -111,15 +111,19 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 ### Define your Xamarin.iOS build
 
-Repeat the same steps as above to create another build definition, but this time select the **Xamarin.iOS** template.
+Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition. This time, select the **Xamarin.iOS** template.
 
-1. For the **Default agent queue**, select the queue that includes your MAC agent.
+1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS Preview**, or the private queue that includes your macOS agent.
 
-1. Remove **Xamanrin Test Cloud** task.
+1. For the **Solution to build**, enter `HelloXamarinFormsWorld.sln`.
 
-1. Click the **Variables** tab and modify these variables:
+1. Remove the **Xamarin Test Cloud** task by right-clicking it and selecting **Remove selected task(s)**.
 
- * `BuildConfiguration` = `iOS Release`
+1. Select the **Build Xamarin.iOS solution** task. In the properties for this task, enable the **Build for iOS Simulator** check box.
+
+1. Click **Save & queue** to kick off the Xamarin.iOS build. On the **Save build definition and queue** dialog box, click **Save & queue**.
+
+1. A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 ## View the build summary
 
