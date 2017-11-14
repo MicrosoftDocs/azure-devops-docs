@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize the web form for a work item type (Inheritance process model)  
@@ -19,7 +19,7 @@ To support your work tracking requirements, you can customize each WIT to add cu
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
 
-<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
 
 ##What you can customize   
 
@@ -88,7 +88,7 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose New group.    
 
-	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
 
 2. Label the group and choose the column it should appear in.
 
@@ -201,8 +201,7 @@ Additional topics of interest:
 - [Customize cards on boards](../customize-cards.md)  
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 

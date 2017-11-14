@@ -18,14 +18,9 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 ## Hosted agents
 
-If you're using VSTS, you've got the option to build and deploy using a **hosted agent**. When you use a hosted agent, we take care of the maintenance and upgrades. So for many teams this is the simplest way to build and deploy. You can try it first and see if it works for your build or deployment. If not, you can set up a private agent.
+[!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
-> [!NOTE]
-> Hosted agents are available only in VSTS, not in Team Foundation Server (TFS).
-
-We provide hosted agents to you in the hosted pool. If you need to run more than one job at a time, you'll need to get more [concurrent pipelines](../licensing/concurrent-pipelines-ts.md).
-
- [Learn more about hosted agents](hosted.md).
+[Learn more about hosted agents](hosted.md).
 
 <h2 id="install">Private agents</h2>
 

@@ -1086,7 +1086,7 @@ We added approval options that enable you to configure
 multiple approvers for an environment, and control
 whether these approvers can approve in parallel or in
 a specified order.
-See [Approvals and approvers](../../concepts/definitions/release/environments.md#approvals).
+See [Approvals and approvers](../../concepts/definitions/release/approvals/approvals.md).
 
 ![Configuring approval policies](_img/rm-archived/release-notes-06.png)
 

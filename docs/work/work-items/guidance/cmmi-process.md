@@ -15,7 +15,7 @@ ms.date: 08/11/2017
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs and more. These artifacts are created when you create a team project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 
-<img src="_img/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
 
@@ -185,4 +185,4 @@ You can use the following Excel workbooks to review open issues and to rank and 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

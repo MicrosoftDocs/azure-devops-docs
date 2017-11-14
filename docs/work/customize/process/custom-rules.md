@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/01/2017
+ms.date: 11/07/2017 
 ---
 
 
@@ -54,7 +54,7 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 	
 0. Select the WIT to which you want to add a rule, click **Rules** and then click ![plu sign](../../_img/icons/add-light-icon.png) Create rule.   
 
-    <img src="_img/custom-rule-create-rule.png" alt="Process Work Item Types page, User Story, Create rule" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/custom-rule-create-rule.png" alt="Process Work Item Types page, User Story, Create rule" style="border: 1px solid #C3C3C3;" /> 
 
 0. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
 
@@ -63,7 +63,7 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 	
 	Here we define that the Acceptance Criteria field is required when the State changes to Active and it is currently empty. 
 
-    <img src="_img/custom-rule-create-rule-form.png" alt="New rule form" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" /> 
  
 	>[!NOTE]  
 	>The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT. 
@@ -76,7 +76,7 @@ You can temporarily disable a rule or delete it altogether.
 
 You delete or disable the rule from the actions menu of the rule.  
 
-<img src="_img/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />  
 
 <!---
 <a id="system-rules">  </a>
@@ -121,3 +121,5 @@ If you're familiar with the [XML elements for applying rules to fields](../refer
 	- **EMPTY**
 
 -->
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

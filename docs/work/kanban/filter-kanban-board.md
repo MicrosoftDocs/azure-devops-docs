@@ -95,7 +95,7 @@ You can filter by select field values using the Kanban board for your product ba
 
 To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. 
 
-<img src="_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 1px solid #C3C3C3;" />  
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated  as follows: 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned  
@@ -106,7 +106,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 
 For example, here we filter for all items assigned to Jamal and Raisa. 
 
-<img src="../kanban/_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 2px solid #C3C3C3;" />  
+<img src="../kanban/_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 1px solid #C3C3C3;" />  
 
 Filters remain in place until you explicitly clear them by clicking <span style="color:blue">Clear filters</span>.   When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
 
@@ -129,7 +129,7 @@ To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-
 
 Here, we choose two features on which to filter the board.  
 
-<img src="_img/filter-kb-choose-parent-work-items.png" alt="Kanban board, Filter on parent work items" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/filter-kb-choose-parent-work-items.png" alt="Kanban board, Filter on parent work items" style="border: 1px solid #C3C3C3;" />  
 
 The final board displays just those stories linked as child work items to the selected features.
 

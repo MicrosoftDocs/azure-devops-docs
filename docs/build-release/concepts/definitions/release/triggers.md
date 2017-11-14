@@ -106,7 +106,7 @@ deployment to both the **QA** and **Pre-prod** environments.
 ![Configuring a parallel (forked and joined) deployment pipeline](_img/trigger-03.png)
 
 In combination with the ability to define
-[pre- and post-deployment approvals](environments.md#approvals),
+[pre- and post-deployment approvals](approvals/approvals.md),
 this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  

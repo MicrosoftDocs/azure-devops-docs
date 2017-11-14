@@ -152,20 +152,19 @@ you want the deployment to pause after _successful_ deployment to the test websi
 you deploy to production. In this section, you will add an approval step to the release definition to achieve this.
 
 1. Back in the **Pipeline** tab of the release definition, choose the **Pre-deployment conditions** icon in the **Environments** section
-   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and expand it using the "down arrow" icon.
-   You can see that the approval type is set to **Automatic**, which means that deployment to this environment, when initiated by any
-   of the environment triggers, will be approved without user intervention - and deployment will commence immediately.  
+   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvals.
 
    ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
 
-1. Change the approval type to **Specific users** and choose your account from the list. You
-   can type part of a name to search for matches.
+1. In the **Approvers** section, choose your account from the list. You
+   can type part of a name to search for matches. Also make sure you clear (untick) the checkbox 
+   **User requesting a release...** so that you can approve your own releases.
 
    ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
 
    You can add as many approvers as you need, both individual accounts and account groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
-   For more information, see [Environments in Release Management](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Approvals and gates overview](../../build-release/concepts/definitions/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 
 1. Save the modified release definition.
 
@@ -225,6 +224,9 @@ from the release you created in the previous section.
 
    ![Viewing the live deployment log](_img/define-multistage-release-process/live-logs-deployment.png)
 
+   >Choose the icon in the **Action** column for a pre-deployment or post-deployment approval to see details
+   of who approved (or rejected) the deployment, and the message that user provided.
+
 1. After the deployment is complete, the entire log file is displayed in the right pane.
    Select any of the process steps in the left pane to show just the log file contents for that step.
    This makes it easier to trace and debug individual parts of the overall deployment. Alternatively, download
@@ -255,4 +257,4 @@ running the release in debug mode. For more information, see
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Use approvals and gates to control your deployment](deploy-using-approvals.md)

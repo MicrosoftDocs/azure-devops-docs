@@ -12,7 +12,7 @@ ms.date: 10/20/2016
 
 **TFS 2017 | [VSTS](concurrent-pipelines-ts.md)**
 
-This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017). We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or later. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _concurrent pipeline_ gives you the ability to run a single release at a time in a team project collection. You can keep hundreds or even thousands of release definitions in your collection. But, to run more than one release at a time, you need additional concurrent pipelines.
 

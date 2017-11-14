@@ -1448,7 +1448,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
-            <td>Xcode 8 Signing and Exporting Packages in the Xcode Build Task</td>
+            <td>Xcode 8 Signing and Exporting Packages in the Xcode Task</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
@@ -1517,7 +1517,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td>Xcode Build task xcpretty formatting</td>
+            <td>Xcode task xcpretty formatting</td>
             <td style="background:rgb(189, 214, 238);">[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>

@@ -1,21 +1,24 @@
 ---
-title: Access data from Power BI desktop | VSTS  
+title: Access data from Power BI desktop  
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop   
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 11/13/2017
 ---
 
 # Access data through Power BI desktop 
 
 **VSTS**  
 
+You can access the Analytics Service data through the Power BI Desktop Visual Studio Team Services Connector and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-You can access the Analytics Service data through the Power BI Desktop and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+>[!IMPORTANT]
+>The default experience for the Power BI OData Connector is not intended for use on accounts with over 50,000 work items. On larger accounts the data set needs to reduced by writing OData queries.  OData queries can be directly used in Power BI through the [VSTS.Feed](../powerbi/data-connector-functions.md) function .
 
 ##Retrieve data manually
 
@@ -27,20 +30,20 @@ You can access the Analytics Service data through the Power BI Desktop and then 
 
 3. Next, select Other > OData Feed and click Connect.  
 
-	![Select OData Feed ](_img/pbi2.png)  
+	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
 
-4.	Enter the URL in the format:  
+4.	Enter the URL in the format into a supported browser:  
 
-	```
-	https://[account].analytics.visualstudio.com/DefaultCollection/_odata
+	```OData
+	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
-	![Select OData Feed ](_img/pbi3.png)  
+	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
 
-	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/DefaultCollection/_odata```.
+	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).  
 6. Next, select the entities you want to retrieve data for by checking those entities.
@@ -48,11 +51,11 @@ You can access the Analytics Service data through the Power BI Desktop and then 
 	>[!IMPORTANT]  
 	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load correctly. In order to perform trend analysis, narrow the scope of data being retrieved to the specific items and time frame and pull this information in with a separate OData query.  
 
-	![Select the entities of data to retrieve](_img/pbi4.png)  
+	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
 	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
 
-###Handle relationships
+### Handle relationships
  
 By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
 
@@ -85,33 +88,4 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
     ![Expand Project options](_img/pbi-relationships-3.png) 
 
 Now you can list Areas by Project and get a count of Areas in each project.
-
-## Use a Power BI template
-
-With Power BI Desktop, you can create a templated Power BI file and prompt
-the user for various parameters. We have created such a file with several basic capabilities for reporting on the current
-state of work items to get you started. As we include additional data types, we will improve this file.
-
-The current VSTS work items template file supports a single project only.
-
-**What's included**
-
-* A basic bug status report with five charts  
-* Area hierarchy  
-* Iteration hierarchy  
-* Age in Days column in the WorkItems table  
-
-**How to use this file**
-
-1. [Download Power BI Desktop](https://go.microsoft.com/fwlink/?LinkId=521662&clcid=0x409), the April version or later.  
-
-2. Download the [VSTS work items template file](http://go.microsoft.com/fwlink/?LinkId=797544).  
-
-3. Double-click the downloaded file to open it and enter the account and project as noted here:  
-
-    ![Enter parameters](_img/pbi10.png)  
-
-4. Click **OK**.  
-
-	After the data is downloaded you can create your own reports.
 

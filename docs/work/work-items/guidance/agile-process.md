@@ -208,4 +208,4 @@ You can use the following Excel workbooks to review open issues and to rank and 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

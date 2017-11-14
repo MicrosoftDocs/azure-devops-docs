@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 11/07/2017
 ---
 
 
@@ -31,17 +31,17 @@ You set permissions from the web portal. By default, only members of the Project
 
 2. Create a folder.  
 
-	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 1px solid #C3C3C3;" />  
 
 3.  Open permissions for the folder you just created.
 
-	<img src="_img/set-permissions-query-folder-security.png" alt="Permissions dialog for a query" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/set-permissions-query-folder-security.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
 4.  Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
 
 	Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-	<img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 2px solid #C3C3C3;" />    
+	<img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />    
 
     Use the **Add** menu to add a user identity or group.
 
@@ -55,13 +55,13 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 0.  Open permissions for the query.
 
-	<img src="_img/set-query-perm-security-menu-option.png" alt="Permissions dialog for a query" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/set-query-perm-security-menu-option.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
 4.  Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
 	Here we deny permissions for project admins.  
 
-	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 1px solid #C3C3C3;" />  
 
 ## Related notes  
 
@@ -95,4 +95,3 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 
 <!-- ENDSECTION --> 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]

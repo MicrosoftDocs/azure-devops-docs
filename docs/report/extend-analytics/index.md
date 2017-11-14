@@ -1,67 +1,75 @@
 ---
-title: Extend on Analytics with OData | VSTS 
+title: Extend Analytics with OData (VSTS)  
 description: Index to topics for using OData backed Analytics Service on VSTS  
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: aacathca
 ms.author: pantal
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ---
 
-#  Extend on Analytics with OData
+#  Extend Analytics with OData (Preview) 
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]  
-<!--
-## Overview
-- [What is the Analytics Service](..\analytics\overview-analytics-service.md) 
--->
+Using OData, you can directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Visual Studio Team Services (VSTS) account.   
 
-## 5-Minute QuickStarts
 
-- [Get Work Item Tracking data with OData](..\analytics\wit-analytics.md)
- 
+## 5-Minute Quickstarts
+
+- [Query work item tracking data](wit-analytics.md)
+- [Project & account-scoped queries](account-scoped-queries.md)
+
+
 ## Step-by-Step Tutorials
-- [Aggregate data using OData](..\analytics\aggregated-data-analytics.md)
-- [Query for trend data](..\analytics\querying-for-trend-data.md)
-- [Query for Work item links](..\analytics\work-item-links.md)
+- [Query aggregate data](aggregated-data-analytics.md)
+- [Query trend data](querying-for-trend-data.md)
+- [Query work item links](work-item-links.md)
+- [Explore Analytics metadata](analytics-metadata.md) 
 
- <!--
-Planned:
-Explore Metadata
+
+## Samples
+- [Work item tracking queries](analytics-recipes.md)
+- [Create an Analytics widget](example-analytics-widget.md)
+
+<!---
+- [Build a hub extension](..\analytics\building-extension-against-analytics-service.md)
+- [Build a dashboard widget extension](..\analytics\widget-extensions-against-analytics-service.md)
+- [Add widget configuration to an extension](..\analytics\widget-extension-against-analytics-service-configuration.md)
 -->
-  
+
+ 
 ## Concepts
-- [Data Model for Work Item Tracking Analytics](..\analytics\data-model-analytics-service.md)
+- [Performance and latency](../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json)
+- [Query guidelines](odata-query-guidelines.md) 
+
 
 <!--
 Planned:
 Understand Agile process data
-
-## How-to Guides
-Query Metadata
-Use Agile process data
-
 -->
 
-## Samples
-- [Work Item Tracking Analytics Query Examples](..\analytics\analytics-recipes.md)
-- [Hub extension](..\analytics\building-extension-against-analytics-service.md)
-- [Widget View](..\analytics\widget-extensions-against-analytics-service.md)
-- [Widget Configuration](..\analytics\widget-extension-against-analytics-service-configuration.md)
+## How-to Guides
+
+<!--
+Use Agile process data
+-->
 
 <!--
 Planned:
 Build a widget that uses the Analytics Service
 -->
 
-## Reference
-- [Supported OData feature & Operations](..\analytics\wit-analytics.md)    
-   
+## Reference 
+- [Analytics OData v4 endpoint](data-model-analytics-service.md)
+- [Supported functions & clauses](odata-supported-features.md) 
+- [API versioning](odata-api-version.md)
+
+ 
 ## Resources
-- [VSTS Analytics Service](../analytics/index.md)
+- [Analytics (VSTS)](../analytics/index.md)
+- [PowerBI (VSTS)](../powerbi/index.md)
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
-- [Developer Community: Analytics support forum] (https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+analytics+)
+- [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+analytics+)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)

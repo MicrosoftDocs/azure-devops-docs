@@ -46,9 +46,9 @@ you may need to [deploy](#deploy-command) (and redeploy) it manually.
 
 >Specifying manual deployment for an environment is one way to prevent a deployment
 happening until you are sure it is ready to go. However, you can also use
-approvals at intermediate stages to pause a release and allow
+approvals, gates, and manual intervention at intermediate stages to pause a release and allow
 it to be cancelled before it reaches the target or final environment.
-For more details, see [Approvals](../concepts/definitions/release/environments.md#approvals).
+For more details, see [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
 
 <h2 id="create-from-build">Create a release from the Builds tab</h2>
 

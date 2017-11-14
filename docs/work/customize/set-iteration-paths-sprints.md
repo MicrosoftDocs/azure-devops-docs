@@ -45,11 +45,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  
 
-	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
 
 2.	Open the **Work** hub.   
 
@@ -60,11 +60,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. </p>
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
  
@@ -74,11 +74,11 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. 
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
  
@@ -89,7 +89,7 @@ Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on nam
 
 1. From the web portal user context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" /> 
 
 2. Open the **Work** hub.   
  
@@ -113,7 +113,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 2. Schedule the start and end dates for each sprint your teams will use. Click Set dates or choose to edit the iteration from the ![Actions icon](../_img/icons/actions-icon.png) actions menu for the sprint. 
 
-	<img src="../scrum/_img/dsprints-edit-sprint-1-set-start-date.png" alt="Edit iteration, schedule start date, VSTS platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/dsprints-edit-sprint-1-set-start-date.png" alt="Edit iteration, schedule start date, VSTS platform" style="border: 1px solid #C3C3C3;" />  
 
 3. When you're finished, you'll have a set of sprints scheduled - like this: 
 
@@ -129,13 +129,13 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 	For Scrum-based team projects, you'll see these set of sprints. 
 
-	<img src="../scrum/_img/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />  
 
 	You can change the name, location within the tree hierarchy, or set dates for any sprint. Simply open it (double-click or press Enter key) and specify the info you want.
 
 2. Schedule the start and end dates for those sprints you plan to use. 
 
-	<img src="../scrum/_img/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
 
 	After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates, based on the same iteration length you specified for the first. For example, if you set a three week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks. You can accept or change these dates.  
 
@@ -149,13 +149,13 @@ From the **Iterations** page, you can add and select the iterations that will be
 <!---
 0. Teams can choose which iterations they work in by checking the check box next to each iteration.  
 
-	<img src="_img/ALM_CW_OpenIterations.png" alt="Open the iterations page" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/ALM_CW_OpenIterations.png" alt="Open the iterations page" style="border: 1px solid #C3C3C3;" />   
 
 0. Each iteration can have a start and end date.  After you set the start and end dates for one iteration, the calendar tool automatically defaults the next set of dates, based on the same iteration length you specified for the first.
 
 	**Example:** if you set a 3 week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks.  
 
-	<img src="_img/ALM_CW_SetIterationDate.png" alt="Define start and end dates for a sprint" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/ALM_CW_SetIterationDate.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
 
 	![Define start and end dates for a sprint](_img/ALM_CW_SetIterationDate.png)  
 
@@ -165,7 +165,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 You can quickly generate [queries](../track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
-<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a name="rename-delete"></a>
@@ -200,14 +200,14 @@ Add iterations to support these requirements:
 
 In the following example, Backlog, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication team project.  
 
-<img src="_img/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 As you create the backlog of product features and tasks, you can start to assign them to the milestones by which you expect the team to finish the features and tasks.
 As your needs change, you can add events under each major milestone that reflect how your team schedules and manages its work.  
 
 As the following example shows, the Beta 1 iteration now contains three child nodes, one for each sprint in the Beta 1 time period.  
 
-<img src="_img/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 

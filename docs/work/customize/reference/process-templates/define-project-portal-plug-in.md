@@ -1,29 +1,38 @@
 ---
-title: Define the project portal plug-in for a process template | VSTS & TFS
+title: Define the project portal plug-in for a process template 
+titleSuffix: TFS
 description: Use the portal plug-in to define the initial document libraries, library structure, and documents of a team project's portal - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/12/2017
+ms.date: 10/11/2017
 ---
 
 
 # Define the project portal plug-in for a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-When you create a team project, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
+> [!IMPORTANT]   
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](../../../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you.
+
+
+When you create a team project, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. (VSTS doesn't support SharePoint integration.)
 
 By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [team project's portal](../../../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../../work-items/guidance/choose-process.md).  
   
 The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a team project](../../../../accounts/create-team-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](../../../../tfs-server/requirements.md#sharepoint). 
 
->[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the  WssTasks.xml plug-in file that would create a SharePoint site is ignored. 
->
->For VSTS, the SharePoint site isn't supported. If you want to add a SharePoint site for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
+
+> [!IMPORTANT]  
+> When you create a team project from the web portal, the WssTasks.xml 
+> plug-in file is ignored. To add SharePoint integration after you create your team project, 
+> see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+> Clients that support team project creation vary depending on the TFS version. 
+> For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).    
+
 
   
 <a name="name"></a> 

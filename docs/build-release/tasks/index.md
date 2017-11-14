@@ -34,7 +34,7 @@ ms.date: 08/18/2016
 | ![icon](build/_img/visual-studio-build.png) [Visual Studio Build](build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-android.png) [Xamarin.Android](build/xamarin-android.md). Build an Android app with Xamarin | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/xcode-build.png) [Xcode Build](build/xcode-build.md). Build an Xcode workspace on Mac OS | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/xcode.png) [Xcode](build/xcode.md). Build an Xcode workspace on Mac OS | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xcode-package-ios.png) [Xcode Package iOS](build/xcode-package-ios.md). Generate an .ipa file from Xcode build output | VSTS, TFS 2015 RTM and newer |
 
 ## Utility
@@ -42,18 +42,25 @@ ms.date: 08/18/2016
 | Task | Versions |
 | ---- | -------- |
 | ![icon](utility/_img/archive-files.png) [Archive Files](utility/archive-files.md). Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip. | VSTS, TFS 2017 |
+| ![icon](utility/_img/azure-function.png) [Azure function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | VSTS |
+| ![icon](utility/_img/azure-monitor.png) [Azure monitor](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
 | ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the environment | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/command-line.png) [Command Line](utility/command-line.md). Run a command line with arguments | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/copy-and-publish-build-artifacts.png) [Copy and Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on VSTS and newer versions of TFS. |
 | ![icon](utility/_img/copy-files.png) [Copy Files](utility/copy-files.md). Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths). | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](utility/_img/curl-upload-files.png) [cURL Upload Files](utility/curl-upload-files.md). Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more) | VSTS, TFS 2015 RTM and newer |
+| ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the process for a fixed delay time. | VSTS |
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | VSTS, TFS 2017 |
 | ![icon](utility/_img/ftp-upload.png) [FTP Upload](utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | VSTS, TFS 2017 |
-| ![icon](build/_img/xcode-build.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS |
-| ![icon](build/_img/xcode-build.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS |
+| ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS |
+| ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS |
+| ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | VSTS |
+| ![icon](utility/_img/manual-intervention.png) [Manual intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps. | VSTS |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | VSTS, TFS Update 3 and newer |
+| ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | VSTS |
+| ![icon](utility/_img/query-work-items.png) [Query Work Items](utility/work-item-query.md). Ensure the number of matching items returned by a work item query in within the configured thresholds. | VSTS |
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | VSTS |
 | ![icon](utility/_img/shell-script.png) [Shell Script](utility/shell-script.md). Run a shell script using bash | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/azure-service-fabric.png) [Update Service Fabric App Versions](utility/service-fabric-versioning.md). Automatically updates the versions of a packaged Service Fabric application | VSTS, TFS 2017 |
