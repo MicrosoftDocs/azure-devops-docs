@@ -243,6 +243,10 @@
       href: ./command-line/tfssecurity-cmd.md
     - name: TFSServiceControl
       href: ./command-line/tfsservicecontrol-cmd.md
+- name: Troubleshooting
+  items:
+  - name: Collection upgrade failures
+    href: ./upgrade/collection-upgrade-failure.md
 - name: Resources
   items:
   - name: Migrate to TFS
