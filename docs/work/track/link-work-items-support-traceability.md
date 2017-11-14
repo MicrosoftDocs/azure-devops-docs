@@ -36,7 +36,7 @@ This topic describes the link types available for your use. For details on linki
 
 There are several system link types used to link work items to each other: two tree topology, one dependency topology, and one network as indicated in the table. Tree topology links support nested hierarchies, tree queries, and several reports. Dependent links support tracking tasks that must be completed before others can be started. And, the **Related** link type supports connecting work items that are at the same level.
 
-<img src="_img/link-tracking-work-item-link-types.png" alt="Work item link types" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/link-tracking-work-item-link-types.png" alt="Work item link types" style="border: 1px solid #C3C3C3;" />  
 
 All two-way link types are characterized by a *Forward* and *Reverse* name, such as Parent/Child and Duplicate/Duplicate Of. When you link using one of these names, the linked work item is updated to include a link with the corresponding link type. For example, if you add a Parent link to a work item, the linked work item contains a Child link. 
 
@@ -151,7 +151,7 @@ From the Test hub you can add test plans, test suites, and test cases&mdash;whic
 
 As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base. The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
-<img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
 >[!NOTE]  
 >The link types, **Found in build** and **Integrated in build** are available from VSTS and only work with the current build processes (not XAML builds). To learn more about using these link types, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).   
@@ -169,13 +169,13 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - You can use the [git-commit](http://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 - And, with the new work item form (available from VSTS and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
-	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 2px solid #C3C3C3;" />   
+	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />   
 
 ## Link work item and TFVC code development  
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../tfvc/check-your-work-team-codebase.md).
 
-<img src="../../tfvc/_img/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 2px solid #C3C3C3;" />  
+<img src="../../tfvc/_img/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 1px solid #C3C3C3;" />  
 
 
 
@@ -186,7 +186,7 @@ You can use the Hyperlinks or Storyboard link type to link a work item to a Web 
 
 For TFS 2015 and earlier versions, select work item types may show a Storyboards tab which you can use to link to Storyboards.  
 
-<img src="_img/link-tracking-work-item-to-url-link-types.png" alt="Artifact-to-artifact link types" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/link-tracking-work-item-to-url-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
 From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control is only available from the web and client work item form for TFS 2015. However, you can still use the Storyboard link type from VSTS and the web portal of TFS 2017 and later versions.
 
@@ -202,7 +202,7 @@ By using the Storyboard link type, you differentiate the link your adding to spe
 
 You choose the **Model** link type when you want to link a work item to an architectural diagram created using Visual Studio Enterprise. This link type is only available when you work from Visual Studio Enterprise. With this link type, you can  track tasks, test cases, bugs, requirements, issues, or other kinds of work that are associated with specific parts of your model. 
 
-<img src="_img/link-tracking-work-item-to-model-diagrams-link-types.png" alt="Model link type links work items to diagrams" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/link-tracking-work-item-to-model-diagrams-link-types.png" alt="Model link type links work items to diagrams" style="border: 1px solid #C3C3C3;" /> 
 
 To link a work item to a diagram, open the work item in Visual Studio, choose the **All Links** or **Other Links** tab and choose the **Model** link type. You can also open the linked diagram from the links tab. 
 

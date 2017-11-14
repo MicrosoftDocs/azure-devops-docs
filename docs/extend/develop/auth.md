@@ -56,44 +56,117 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 ### Parse and validate the token
 
 Here is a sample of parsing the token.  First download and store the secret for your extension.  You can get this from your publisher page.  This secret will need to be available to your application.
-You will need add 2 references to get this sample to compile.  
-1. Open the nuget package manager and add a reference to System.IdentityModel.Tokens.Jwt.  This sample was built with version 4.0.2.206221351 of this package.
-2. Right click on the references in your project and select "Add reference".  Check System.IdentityModel and then click Ok.
+
+#### .NET Framework
+
+You will need to add 2 references to get this sample to compile.
+
+1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 4.0.2.206221351 of this package.
+2. Right click on the references in your project and select "Add reference". Check *System.IdentityModel* and then click Ok.
 
 ```
-	using System.Collections.Generic;
-	using System.IdentityModel.Tokens;
-	using System.ServiceModel.Security.Tokens;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens;
+using System.ServiceModel.Security.Tokens;
 
-	namespace TokenSample
+namespace TokenSample
+{
+	class Program
 	{
-		class Program
+		static void Main(string[] args)
 		{
-			static void Main(string[] args)
-			{
-				string secret = ""; // Load your extension's secret
-				string issuedToken = ""; // Token you are validating
+			string secret = ""; // Load your extension's secret
+			string issuedToken = ""; // Token you are validating
 				
-				var validationParameters = new TokenValidationParameters()
+			var validationParameters = new TokenValidationParameters()
+			{
+				IssuerSigningTokens = new List<BinarySecretSecurityToken>()
 				{
-					IssuerSigningTokens = new List<BinarySecretSecurityToken>()
-					{
-						new BinarySecretSecurityToken (System.Text.UTF8Encoding.UTF8.GetBytes(secret))
-					},
-					ValidateIssuer = false,
-					RequireSignedTokens = true,
-					RequireExpirationTime = true,
-					ValidateLifetime = true,
-					ValidateAudience = false,
-					ValidateActor = false
-				};
+					new BinarySecretSecurityToken (System.Text.UTF8Encoding.UTF8.GetBytes(secret))
+				},
+				ValidateIssuer = false,
+				RequireSignedTokens = true,
+				RequireExpirationTime = true,
+				ValidateLifetime = true,
+				ValidateAudience = false,
+				ValidateActor = false
+			};
 
-				SecurityToken token = null;
-				var tokenHandler = new JwtSecurityTokenHandler();
-				var principal = tokenHandler.ValidateToken(issuedToken, validationParameters, out token);
-			}
+			SecurityToken token = null;
+			var tokenHandler = new JwtSecurityTokenHandler();
+			var principal = tokenHandler.ValidateToken(issuedToken, validationParameters, out token);
 		}
 	}
+}
 ```
 
+#### .NET Core - WebAPI
+
+You will need to add 1 reference to get this sample to compile.
+
+1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.1.4 of this package.
+
+**Startup.cs**
+
+```
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+
+namespace TokenSample.Core.API
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc();
+
+            string _secret = "ey9asfasdmax..<the secret key downloaded from the VSTS publisher page>.9faf7eh";
+	    
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer((o) =>
+                    {
+                        o.TokenValidationParameters = new TokenValidationParameters()
+                        {
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secret)),
+                            ValidateIssuer = false,
+                            ValidateAudience = false,
+                            ValidateActor = false,
+                            RequireSignedTokens = true,
+                            RequireExpirationTime = true,
+                            ValidateLifetime = true
+                        };    
+                    });*
+        }
+
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            app.UseAuthentication();
+            app.UseMvc();
+            app.UseStaticFiles();
+        }
+    }
+}
+```
+
+**Your API Controllers:**
+
+```
+[Route("api/[controller]"), 
+ Authorize()]
+public class SampleLogicController : Controller
+{
+   // ...
+}
+```
 

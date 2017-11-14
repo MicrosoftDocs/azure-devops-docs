@@ -1,5 +1,5 @@
 ---
-title: Continuous testing with VS Test
+title: Run tests with your builds
 description: Get started with continuous testing. Run tests with your builds for continuous integration in VSTS and Team Foundation Server TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build

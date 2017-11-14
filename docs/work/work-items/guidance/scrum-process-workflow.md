@@ -30,7 +30,7 @@ When you define a product backlog item, you want to focus on the value that your
 
 You can create PBIs and bugs from the [quick add panel on the product backlog page](../../backlogs/create-your-backlog.md).  
 
-<img src="_img/IC675707.png" alt="Web portal, Agile process, Quick add panel " style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/IC675707.png" alt="Web portal, Agile process, Quick add panel " style="border: 1px solid #C3C3C3;" /> 
 
 Later, you can open each PBI or bug to provide more details and estimate the effort. Also, by prioritizing the PBIs and bugs on the backlog page (which is captured in the Backlog Priority field), product owners can indicate which items should be given higher priority.  
 
@@ -77,7 +77,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="_img/scrum-bug-workflow-header-form.png" alt="Bug work item form, header area" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/scrum-bug-workflow-header-form.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 
 ### Scrum workflow states 
@@ -120,7 +120,7 @@ When your team manages their work in sprints, they can use the sprint backlog pa
 
 Name the task and estimate the work it will take.
 
-<img src="_img/scrum-task-form.png" alt="Scrum process, Task work item form" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/scrum-task-form.png" alt="Scrum process, Task work item form" style="border: 1px solid #C3C3C3;" />  
 
 Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
 
@@ -149,7 +149,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 From the web portal or Test Manager, you can [create test cases that automatically link to a PBI or bug](../../../manual-test/getting-started/create-test-cases.md). Or, you can link a PBI or bug to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab).  
 
 
-<img src="_img/IC793453.png" alt="Web portal, Select the test suite and add a test case" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/IC793453.png" alt="Web portal, Select the test suite and add a test case" style="border: 1px solid #C3C3C3;" /> 
 
 
 The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../track/build-test-integration.md).
@@ -284,4 +284,4 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

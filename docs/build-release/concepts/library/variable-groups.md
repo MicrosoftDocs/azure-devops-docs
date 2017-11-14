@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/01/2017
 ---
 
 # Variable groups
@@ -17,47 +17,42 @@ Use a variable group to store values that you want to make available across
 multiple build and release definitions. Variable groups are defined and managed in the **Library** tab of the
 **Build &amp; Release** hub.
 
-## Use a variable group
+## Create a variable group
 
-To use a variable group, open the definition, select the **Variables**
-tab, select **Variable groups**, and then choose **Link variable group**. 
+1. Open the **Library** tab to see a list of existing variable groups for your project.
+Choose **+ Variable group**.
 
-![Linking a variable group](_img/link-variable-group.png)
+   ![Creating a variable group](_img/create-variable-group.png) 
 
-When a variable group is linked to a definition, you can access the value of the variables in exactly
-the same way as variables you define within the definition itself. For example, to access the
-value of a variable named **customer** in a variable group linked to the definition,
-use `$(customer)` in a task parameter or a script. However, [secret variables](../definitions/release/variables.md#custom-variables)
-cannot be accessed directly in scripts - instead they must be passed as parameters to the task. 
+1. Enter a name and description for the group. Then enter the name and value for each
+   [variable](../definitions/release/variables.md#custom-variables)
+   you want to include in the group, choosing **+ Add** for each one.
+   If you want to encrypt and securely store the value, choose the "lock" icon 
+   at the end of the row. When you're finished adding variables, choose **Save**.
 
-> You cannot link a variable group to a specific environment in a release definition at present.
-All the variables in the group are available for use in all environments of that definition.
+   ![Saving a variable group](_img/save-variable-group.png) 
 
-Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
-will automatically be made available to all the definitions in which the variable group is used.
+>Variable groups follow the [library security model](index.md#security).
 
-Variable groups follow the [library security model](index.md#security).
+## Link secrets from an Azure key vault as variables
 
-## Link secrets from an Azure Key vault as variables
+Link an existing Azure key vault to a variable group and map selective vault secrets to the variable group.
 
-Link an existing Azure key Vault to a variable group and map selective vault secrets to the variable group.
-
-1. Choose **Link secrets from an Azure key vault as variables**, and specify your Azure subscription end point
-   and the name of the vault containing your secrets.
+1. In the **Variable groups** page, enable **Link secrets from an Azure key vault as variables**.
+   You'll need an existing key vault containing your secrets. You can create a 
+   key vault using the [Azure portal](https://portal.azure.com).
 
    ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
 
-1. Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
-   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
+1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
+   Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
+   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
    Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
 
    - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
-
    - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
-
    - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
-
    - Choose **OK** to save the changes.<p />
 
 1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group. 
@@ -77,5 +72,24 @@ Link an existing Azure key Vault to a variable group and map selective vault sec
 * Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
   Currently, VSTS variable group integration supports mapping only secrets from the Azure key vault.
   Cryptographic keys and certificates are not yet supported
+
+## Use a variable group
+
+To use a variable group, open the definition, select the **Variables**
+tab, select **Variable groups**, and then choose **Link variable group**. 
+
+![Linking a variable group](_img/link-variable-group.png)
+
+When a variable group is linked to a definition, you can access the value of the variables in exactly
+the same way as [variables you define within the definition itself](../definitions/release/variables.md#custom-variables).
+For example, to access the value of a variable named **customer** in a variable group linked to the definition,
+use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
+cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
+
+> You cannot link a variable group to a specific environment in a release definition at present.
+All the variables in the group are available for use in all environments of that definition.
+
+Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
+will automatically be made available to all the definitions in which the variable group is used.
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

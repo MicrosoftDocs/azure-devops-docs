@@ -22,7 +22,7 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 You access your Kanban board from the from the **Work** hub, **Backlogs** page. You then click **Board**. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
 
-<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" />   
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #C3C3C3;" />   
 
 The URL follows this pattern:  
 - **VSTS**: ```https://<account-name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
@@ -38,18 +38,18 @@ If you don't have access to the team project, ask the account owner or project a
 <!---
 ### TFS 2015, TFS 2013
 
-<img src="../backlogs/_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 2px solid #C3C3C3;" />  
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #C3C3C3;" />  
 
 The URL follows this pattern:  
 ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
 
 If you don't see the team or team project you want, open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
+<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #C3C3C3;" /> 
 
 To view your Kanban board, click the **Board** link from the **Work>Backlogs** page. 
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 -->
 
 
@@ -58,7 +58,7 @@ To view your Kanban board, click the **Board** link from the **Work>Backlogs** p
 
 To add a work item, simply click the ![plus icon](../_img/icons/add_icon.png) and enter a title for the item. 
 
-<img src="_img/kanban-qs-add-new-item.png" alt="Kanban board, Agile template, add a work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/kanban-qs-add-new-item.png" alt="Kanban board, Agile template, add a work item" style="border: 1px solid #C3C3C3;" />  
 
 <a id="update-status">  </a>
 ## Update the status of work items via drag-and-drop
@@ -67,7 +67,7 @@ To add a work item, simply click the ![plus icon](../_img/icons/add_icon.png) an
 
 As work completes in one stage, update the status of an item by dragging and dropping it to a downstream stage. 
 
-<img src="_img/ALM_CC_MoveCard.png" alt="Kanban board, Agile template, update status of work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_CC_MoveCard.png" alt="Kanban board, Agile template, update status of work item" style="border: 1px solid #C3C3C3;" />  
 
 ## Update fields from the card 
 

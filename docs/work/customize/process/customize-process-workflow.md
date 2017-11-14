@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize the workflow (Inheritance process model)   
@@ -17,7 +17,7 @@ Each work item type is associated with a workflow that supports tracking the sta
 
 Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
 
-<img src="_img/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 ##What you can customize   
 
@@ -69,17 +69,17 @@ You can open the admin context Process hub from a work item form or by choosing 
 
 0. From the Work Item Types tab, choose the work item type you want to modify, choose States, and then choose New State.    
 
-	<img src="_img/cpworkflow-add-state.png" alt="Process page, Bug WIT, States tab, Add state" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpworkflow-add-state.png" alt="Process page, Bug WIT, States tab, Add state" style="border: 1px solid #C3C3C3;" />  
 
 0. Enter the name of the State, choose its category and color, and then click Save. The color you specify will appear throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
-	<img src="_img/cpw-new-state-triaged.png" alt="State dialog box" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpw-new-state-triaged.png" alt="State dialog box" style="border: 1px solid #C3C3C3;" />  
 	
 0. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
 
 	Here we show the state drop down field with Triaged selected. 
 
-	<img src="_img/cpw-added-triage-state-in-form.png" alt="Bug form, Triaged state added" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpw-added-triage-state-in-form.png" alt="Bug form, Triaged state added" style="border: 1px solid #C3C3C3;" /> 
 
 0. Remember, when you add a state to a WIT which is associated with a backlog level, each team that uses the Kanban board will need to [update their column settings](../../kanban/add-columns.md).
 
@@ -90,7 +90,7 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 0. Choose Edit from the &hellip; context menu for the state you want to modify.  
   
-	<img src="_img/cpworkflow-edit-state.png" alt="Bug WIT, Edit custom state" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpworkflow-edit-state.png" alt="Bug WIT, Edit custom state" style="border: 1px solid #C3C3C3;" /> 
 
 0. Modify the category or color, and then click Save. 
 
@@ -114,7 +114,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 	Here we hide the Resolved state for the Bug WIT. 
 
-	<img src="_img/cpworkflow-hide-state.png" alt="Hide an inherited state" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpworkflow-hide-state.png" alt="Hide an inherited state" style="border: 1px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board will need to [update their column settings](../../kanban/add-columns.md).
@@ -128,7 +128,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 0. From the Remove State dialog, click Remove.   
 
-	<img src="_img/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
 0.  If teams use the Kanban board to update their status, each team will need to update their [column settings](../../kanban/add-columns.md).    
  
@@ -146,9 +146,8 @@ Additional topics of interest:
 - [Add or edit Kanban columns](../../kanban/add-columns.md)  
 - [Query by workflow or Kanban board changes](../../track/query-by-workflow-changes.md)    
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 <!---
 UPDATE CONTENT FOR THIS FWLINK: http://go.microsoft.com/fwlink/?LinkId=286303. 

@@ -31,11 +31,11 @@ You add query folders from the **Work>Queries>All** page.
 
 0. From your web browser, open your product backlog from the **Work** hub, **Queries** page. 
  
-	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
 0. If you see the following message, click **Try it!** to enable the new queries experience.   
  
-	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
 	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
  
@@ -63,13 +63,13 @@ You add query folders from the **Work>Queries** page.
 
 0. From your web browser, open the **Work** hub, **Queries** page. 
  
-	<img src="_img/organize-queries/open-queries-old-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/organize-queries/open-queries-old-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
 0. To add a folder, click the ![context icon](../_img/icons/context_menu.png)  context menu for an existing folder or the top container folder, My Queries or Shared Queries, and choose **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
-	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 1px solid #C3C3C3;" /> 
 
 0. To move items into a folder, drag-and-drop a query onto the folder. 
 

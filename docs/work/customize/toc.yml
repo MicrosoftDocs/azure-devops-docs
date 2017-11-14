@@ -258,7 +258,7 @@
     - name: Control access to functional areas
       href: ./reference/process-templates/control-access-to-functional-areas.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       items:
-      - name: Define the TFVC plug-in
+      - name: Define the Version Control plug-in
         href: ./reference/process-templates/define-initial-configuration-version-control.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Define the Test Management plug-in
         href: ./reference/process-templates/define-initial-configuration-test-manager.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json

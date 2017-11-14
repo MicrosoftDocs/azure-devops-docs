@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017 
+ms.date: 11/07/2017 
 ---
 
 # Add a custom control to a work item type (Inheritance process model)  
@@ -35,7 +35,7 @@ Browse the Marketplace to determine what extension(s) you want to add. To instal
 
 From the admin context, Extensions hub, you can view the extensions that are already installed.    
 
-<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 1px solid #C3C3C3;" />  
 
 You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions. 
 
@@ -51,7 +51,7 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 3. With the WIT selected, click **Add custom control**. 
 
-	<img src="_img/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 1px solid #C3C3C3;" />  
 
 	>[!NOTE]  
 	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been installed. 
@@ -60,7 +60,7 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 	For example, here we choose the Toggle control that you can associate with a Boolean field.   
 
-	<img src="_img/custom-control-add-field-level-control-to-bug.png" alt="Add a  custom control dialog, Definition tab" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/custom-control-add-field-level-control-to-bug.png" alt="Add a  custom control dialog, Definition tab" style="border: 1px solid #C3C3C3;" />  
 
 4. Click the Options tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
 
@@ -145,8 +145,10 @@ o add a custom control, you begin by adding it first through the Extensions page
 	>[!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize-work.md).
 
-	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
 
 	<img src="_img/custom-controls-field-extension-dialog.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
 -->  
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

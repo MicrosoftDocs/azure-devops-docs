@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: macoope
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ---
 
 # Forks

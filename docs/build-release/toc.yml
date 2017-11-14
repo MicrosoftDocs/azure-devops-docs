@@ -12,20 +12,18 @@
       items:
       - name: ASP.NET Core
         href: apps/aspnet/build-aspnet-core.md
-      - name: ASP.NET Core Container
-        href: apps/aspnet/build-aspnet-core-docker.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
       - name: .NET for Windows
         href: apps/windows/dot-net.md
       - name: Node.js
         href: apps/nodejs/build-gulp.md
-      - name: Node.js Container
-        href: apps/nodejs/build-nodejs-docker.md
       - name: Java
         href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
+      - name: Containers
+        href: apps/containers/build.md
       - name: Xcode
         href: apps/mobile/xcode-ios.md
       - name: Xamarin
@@ -49,7 +47,7 @@
   - name: CI builds for Git in VSTS
     href: actions/ci-build-git.md
   - name: CI builds for GitHub repo
-    href: actions/ci-build-github.md  
+    href: actions/ci-build-github.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
 - name: Concepts

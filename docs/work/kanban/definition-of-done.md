@@ -37,7 +37,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	**VSTS and TFS 2015.1 and later versions**  
 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done). 
 
-	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />  
 
 	**TFS 2015**   
 

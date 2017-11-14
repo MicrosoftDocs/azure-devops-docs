@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Customize a work item type (Inheritance process model)    
@@ -17,7 +17,7 @@ You use different work item types (WITs) to plan and track different types of wo
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
-<img src="_img/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/custom-wit-new-ticket-form.png" alt="Custom Ticket work item form" style="border: 1px solid #C3C3C3;" /> 
 
 
 ##What you can customize   
@@ -66,15 +66,15 @@ You can open the admin context Process hub from a work item form or by choosing 
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
-	<img src="_img/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. 
  
-	<img src="../reference/_img/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../reference/_img/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 1px solid #C3C3C3;" /> 
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. For details, see [Customize a field](customize-process-field.md) or [Customize a web form for a process](customize-process-form.md).    
 
-	<img src="_img/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 2px solid #C3C3C3;" /> 	
+	<img src="_img/cpwit-new-ticket-define.png" alt="New WIT, customize layout" style="border: 1px solid #C3C3C3;" /> 	
 
 0. Open the States page to view the default workflow states. Optionally, [customize the workflow states](customize-process-workflow.md). 
 
@@ -82,7 +82,7 @@ You can open the admin context Process hub from a work item form or by choosing 
 
 0. Verify the custom work item type appears as expected. Either navigate to the backlog or board to which you added the custom WIT, or open the Work hub menu and open a new work item of the type you added.  
 
-	<img src="_img/cpwit-new-custom-work-item-ticket.png" alt="stories Kanban board, add new custom ticket work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpwit-new-custom-work-item-ticket.png" alt="stories Kanban board, add new custom ticket work item" style="border: 1px solid #C3C3C3;" /> 
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
@@ -93,7 +93,7 @@ To change the description, icon or color of a custom WIT, choose Edit from the W
 
 Here we change the description, icon and color for the Ticket custom WIT.  
 
-<img src="_img/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="enable-disable"></a>
 ## Enable or disable a custom WIT  
@@ -140,12 +140,12 @@ Additional topics of interest:
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 
-	<img src="_img/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 
 <!---

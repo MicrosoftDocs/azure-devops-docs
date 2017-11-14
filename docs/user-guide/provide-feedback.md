@@ -91,8 +91,9 @@ A page similar to the one shown will open showing the version number.
 
 |&#160;&#160;TFS release&#160;&#160;|&#160;&#160;Update&#160;&#160;|&#160;&#160;Version number&#160;&#160;| 
 |-------------|--------|----------------| 
-|TFS 2017.2   | RTW | 15.117.26714.0 |
-|TFS 2017.1   | RTW | 15.112.26307.0 |
+|  | Update 3 | 15.117.27024.0 |
+|  | Update 2 | 15.117.26714.0 |
+|  | Update 1 | 15.112.26307.0 |
 |TFS 2017   | RTW | 15.105.25910.0 |
 |TFS 2017   | RC1 | 15.103.25603.0 | 
 |TFS 2015   | Update 3 | 14.102.25423.0 | 

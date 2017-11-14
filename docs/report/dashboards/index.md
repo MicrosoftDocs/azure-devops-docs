@@ -45,14 +45,17 @@ Start gaining visibility into how your team is progressing by adding one or more
 - [Configure test status, progress, and result charts](../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)  
 - [Set dashboard permissions](dashboard-permissions.md)  
 
+## Samples
+- [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)  
+- [Add a chart widget](../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Add an Analytics widget](../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ## Reference 
 - [Widget catalog](widget-catalog.md)  
  
 ## Resources 
-
-- [Build a widget with Work Item Tracking data](../../extend/develop/add-dashboard-widget.md)  
-- [Build a widget with a chart](../../extend/develop/add-chart.md)
+- [Agile](/vsts/#pivot=services&panel=agile)
+- [Testing](/vsts/#pivot=services&panel=testing)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
  
    

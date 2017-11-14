@@ -1,28 +1,22 @@
 ---
-title: Client authentication options | VSTS  
-description: Client authentication options to use when connecting to the Analytics service for VSTS using Power BI or Excel
+title: Client authentication options
+titleSuffix: VSTS   
+description: Client authentication options to use when connecting to the Analytics Service for VSTS using Power BI or Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ---
 
 # Client authentication options 
 
 **VSTS**  
 
+In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
+
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s) then Alternate Access Credentials (**AAC**s).
-
-<!---
-
-> [!NOTE]  
-> If you are using Team Foundation Server, you should use Integrated Authentication wherever possible as that is the most secure authentication scheme.
- 
---> 
 
 ## Azure Active Directory (AAD) 
 
@@ -50,44 +44,32 @@ the **oAuth2** option.
 - If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to VSTS.
 
 
-0. Log in to VSTS, and choose My security from your account menu options.  
+0. Log in to VSTS, open your user account menu, and select  **Security**.  
 
-	<img src="_img/client-auth-profile-security.png" alt="User Profile, My Security menu option" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../_shared/_img/open-security.png" alt="User Profile, My Security menu option" style="border: 1px solid #C3C3C3;" /> 
 
-0. From the Personal access tokens page, click Add:  
+0. From the Personal access tokens page, click **Add**:  
 
-	<img src="_img/client-auth-security-pat.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+	<img src="../../_shared/_img/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
 
-
-0. Click Add, and fill out the required information: 
+0. Enter the required information: 
 	- Add a description  
 	- Set the expiration period  
 	- Select the account 
 	- Choose Selected scopes
 	- Check the **Analytics (read)**
 	
-	And, then click Create Token.  
+	And, then click **Create Token**.  
 
-	<img src="_img/client-auth-authentication-3.png" alt="Create personal access token" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/client-authentication/personal-access-tokens-scoped-analytics.png" alt="Create personal access token" style="border: 2px solid #C3C3C3;" />   
 
-0. Copy the token that displays. If you navigate away from the page, you won't  be able to retrieve it later.  
+0. Copy the token that displays. If you navigate away from the page, you won't be able to retrieve it later.  
 
-	<img src="_img/authentication-4.png" alt="PAT created" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/client-authentication/copy-personal-access-token.png" alt="PAT created" style="border: 2px solid #C3C3C3;" />  
 
-0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be deniedaccess to VSTS.
+0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be denied access to VSTS.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
-
-
-## Create an Alternate Access Credential 
-
-Alternate Access Credentials should be used as a last resort, but if you have to use them, do the following:
-
-0. From the Security page, open Alternate authentication credentials.
-
-	<img src="_img/client-auth-create-aac.png" alt="Alternate Access Credentials" style="border: 2px solid #C3C3C3;" />
-
-0. Check Enabled alternate access credentials, enter a password, confirm the password and then click Save.
 
 ## Enter credentials within a client
 
@@ -148,8 +130,7 @@ If you receive an access denied message, you may need to change your authenticat
 6. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**.
 
 ## Related notes
-
-- [Analytics service overview](overview-analytics-service.md)  
+ 
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

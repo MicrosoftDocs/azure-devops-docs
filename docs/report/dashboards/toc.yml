@@ -2,61 +2,71 @@
   href: index.md
 - name: Overview
   items:
-  - name: "Charts, dashboards, and widgets"
+  - name: "Dashboards & widgets"
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Add and manage dashboards
+  - name: "Add & manage dashboards"
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
-  - name: Add Markdown to a dashboard
+  - name: Add markdown to a dashboard
     href: add-markdown-to-dashboard.md
 - name: Tutorials
   items:
-  - name: Configure burndown or burnup widgets
+  - name: "Configure burndown/burnup"
     href: ../guidance/configure-burndown-burnup-widgets.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Configure a cumulative flow chart
+  - name: Configure cumulative flow
     href: ../guidance/cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Configure a lead/cycle time widget
+  - name: "Configure lead/cycle time" 
     href: ../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Configure or view Velocity charts
+  - name: Configure velocity 
     href: ../guidance/team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Work with sprint burndown
     href: ../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Cumulative flow, lead time, and cycle time guidance
+  - name: Burndown guidance
+    href: ../guidance/burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Cumulative flow & lead/cycle time guidance"
     href: ../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Velocity guidance
     href: ../guidance/velocity-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Burndown guidance
-    href: ../guidance/burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Analytics widgets (VSTS)"
+    href: ../guidance/analytics-widgets-vsts.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
-  - name: Configure work item query-based charts
+  - name: "Add an Analytics widget to a dashboard (VSTS)"  
+    href: ../guidance/enable-analytics-velocity.md
+  - name: Create work tracking charts
     href: charts.md
-  - name: "Configure test status, progress, & result charts"
+  - name: "Create test progress & result charts"
     href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Set dashboard permissions
     href: dashboard-permissions.md
+- name: Samples
+  items:
+  - name: "Add a dashboard widget"  
+    href: ../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Add a chart widget"  
+    href: ../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: "Add an Analytics widget"  
+    href: ../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json    
 - name: Reference
   items:
   - name: Widget catalog
     href: widget-catalog.md
   - name: Markdown guidance
     href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Default dashboard permissions and access
+  - name: "Default permissions & access"
     href: charts-dashboard-permissions-access.md
 - name: Resources
   items:
   - name: Agile
     href: /vsts/#pivot=services&panel=agile
   - name: Testing
-    href: /vsts/#pivot=services&panel=testing
-  - name: Build a dashboard widget
-    href: ../../extend/develop/add-dashboard-widget.md
+    href: /vsts/#pivot=services&panel=testing 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance

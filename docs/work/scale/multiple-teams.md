@@ -121,7 +121,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
  
 3. Now these users are members of the Email team. You can always return to this page to add or remove members. 
 
-	<img src="_img/add-teams-team-members-added.png" alt="Web portal, team admin context, Overview page, Team members added" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-teams-team-members-added.png" alt="Web portal, team admin context, Overview page, Team members added" style="border: 1px solid #C3C3C3;" /> 
 
 4. To add an account as a team administrator, click **Add** located in the Team Profile page. For details, see [Configure team settings and add team administrators](manage-team-assets.md).
 
@@ -136,13 +136,13 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 1. From the Overview tab for your team, add a user account.  
 
-	<img src="_img/scale-agile-add-team-account.png" alt="Web portal, admin context, team project, Overview page, Add a Windows user or group account" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/scale-agile-add-team-account.png" alt="Web portal, admin context, team project, Overview page, Add a Windows user or group account" style="border: 1px solid #C3C3C3;" /> 
 
 2. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. 
 
 	The first time an account is added to TFS, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). </p>
 
-	<img src="_img/scale-agile-add-team-members-user-accounts.png" alt="Type the account aliases and check name" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/scale-agile-add-team-members-user-accounts.png" alt="Type the account aliases and check name" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!TIP]    
 	> You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.  
@@ -166,11 +166,11 @@ Now that your two feature teams are configured, you'll want to move existing wor
 
 1.	The quickest way to do this, is to [create a query](../track/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../backlogs/bulk-modify-work-items.md). 
 
-	<img src="_img/scale-agile-bulk-modify-area-path-co.png" alt="Web portal, Queries page, Bulk modify select work items" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/scale-agile-bulk-modify-area-path-co.png" alt="Web portal, Queries page, Bulk modify select work items" style="border: 1px solid #C3C3C3;" /> 
 
 2.	After you bulk modify, do a bulk save. 
  
-	<img src="_img/scale-agile-bulk-save-area-path-co.png" alt="Web portal, Queries page, Bulk save selected work items" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/scale-agile-bulk-save-area-path-co.png" alt="Web portal, Queries page, Bulk save selected work items" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="include-area-paths"> </a>  
 
@@ -179,17 +179,17 @@ One last step in moving from one team to two teams requires configuring the defa
 
 1. Open the Areas tab administration page for the team project, and change the setting as shown.  
 
-	<img src="_img/multiple-teams-exclude-sub-area-paths.png" alt="Web portal, Admin context, default team project, Exclude work items defined in sub-area paths" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/multiple-teams-exclude-sub-area-paths.png" alt="Web portal, Admin context, default team project, Exclude work items defined in sub-area paths" style="border: 1px solid #C3C3C3;" /> 
 
 2.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam\Account Management area path.  
 
-	<img src="_img/multiple-teams-product-backlog-default-team.png" alt="Web portal, Backlog view of default team" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/multiple-teams-product-backlog-default-team.png" alt="Web portal, Backlog view of default team" style="border: 1px solid #C3C3C3;" /> 
 
 ## Delete a team 
 
 1. To delete a team, open the team project admin context, open the &hellip; context menu for the team you want to delete, and choose the **Delete** option.   
 
-	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 1px solid #C3C3C3;" />  
 
 	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/permissions.md#edit-team-project-level-information-permission) to delete a team project. 
  
@@ -198,7 +198,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 
-	<img src="_img/multiple-teams-delete-team-confirmation-dialog.png" alt="Delete team confirmation dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/multiple-teams-delete-team-confirmation-dialog.png" alt="Delete team confirmation dialog" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="grant-add-permissions"></a>  

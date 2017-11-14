@@ -19,7 +19,7 @@ Any changes you make to the inherited process will automatically show up in the 
 
 For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.
 
-<img src="_img/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a id="what-you-can-customize">  </a>
@@ -88,20 +88,20 @@ The easiest way to start customizing a process is to start from the work item of
 
 0. From the web portal, open the WIT you want to customize, open the context menu, and choose the Customize. 
 
-	<img src="_img/cprocess-web-form-user-story-choose-customize.png" alt="Web portal, web form, open context menu, choose Customizee" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cprocess-web-form-user-story-choose-customize.png" alt="Web portal, web form, open context menu, choose Customizee" style="border: 1px solid #C3C3C3;" />  
 
 	- If the team project already uses an inherited process, then the **Layout** page for the corresponding WIT will open. 
 
 		For example, the MyAgile process, User Story WIT, Layout page appears.   
 
-		<img src="_img/cprocess-myagile-user-story-layout.png" alt="Web portal, web form, open context menu, choose Customize" style="border: 2px solid #C3C3C3;" />  
+		<img src="_img/cprocess-myagile-user-story-layout.png" alt="Web portal, web form, open context menu, choose Customize" style="border: 1px solid #C3C3C3;" />  
 
 		>[!NOTE]  
 		>The **Add custom control** option only appears when [qualifying extensions have been added from the Marketplace](custom-controls-process.md). 
 
 	- If the team project uses a system process, but a valid inherited process has been defined, then you have the option to select which inherited process you want the team project to use. 
 
-	 	<img src="_img/cprocess-choose-inherited-process.png" alt="Web portal, Choose process dialoge" style="border: 2px solid #C3C3C3;" /> 
+	 	<img src="_img/cprocess-choose-inherited-process.png" alt="Web portal, Choose process dialoge" style="border: 1px solid #C3C3C3;" /> 
 
 		Upon choosing, the Layout page for the corresponding process and WIT opens.
 
@@ -121,11 +121,11 @@ You can also start customizing an inherited process by navigating to the inherit
 	>[!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize-work.md).
 
-	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
 
 0. Click Process and then select the inherited process you want to customize. If you haven't yet created an inherited process, do that now. See [Create an inherited process](manage-process.md#create-inherited-process).  
 
-	<img src="../process/_img/cpfield-choose-select-process.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 2px solid #C3C3C3;" />  
+	<img src="../process/_img/cpfield-choose-select-process.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 1px solid #C3C3C3;" />  
 
 0. From the Work Item Types page, choose the WIT that you want to customize.  
 
@@ -142,7 +142,7 @@ The customizations you make only impact the work item forms displayed in a web b
 ## Return to the process list  
 To return to the Process page, simply click the Process hub or the **All processes** breadcrumb link.   
 
-<img src="_img/cprocess-open-all-processes.png" alt="Return to process overview page" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cprocess-open-all-processes.png" alt="Return to process overview page" style="border: 1px solid #C3C3C3;" />  
 
 To return to a specific process and choose another WIT to customize, click the process name from the breadcrumb link.  
 
@@ -161,9 +161,7 @@ See also:
 
 You can determine the processes defined for an account using the REST API: [Processes](https://visualstudio.com/integrate/api/tfs/processes.md).
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
-
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 
 

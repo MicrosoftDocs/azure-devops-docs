@@ -6,18 +6,18 @@ ms.technology: vs-devops-reporting
 ms.assetid: 5B665450-00DB-4F59-9948-BDA0BDF8EEC7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 # Add configuration to an extension that calls the Analytics Service
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 [Access analytics data through a dashboard widget extension](widget-extensions-against-analytics-service.md) describes how to create a chart that pulls a
-pre-determined set of data from the analytics service. Rarely will consumers of your extension want to pull just the data
+pre-determined set of data from the Analytics Service. Rarely will consumers of your extension want to pull just the data
 that has been coded into the widget. Therefore, you can give your users the ability to alter the data returned and to chart that appropriately.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 In this topic, we'll take the chart on the left and give users the ability to slice it by another data point creating the chart on the right. We'll also let the user change the title of the widget.
 
@@ -175,7 +175,7 @@ loadSelector($("#groupBySelector"), dataList, true);
 ```
 
 This code simply provides the users with two drop downs to select the category and group for the chart. Note that the
-"value" of the option is the item needed by the analytics service to group the data, that's why the value for Area
+"value" of the option is the item needed by the Analytics Service to group the data, that's why the value for Area
 is **Area/AreaName** because it is a navigation property from the WorkItems entity to the Areas entity. This code also
 adds a **(none)** option to the group by selector. When a user has (none) selected they will get a standard bar chart
 instead of a stacked area bar chart.
@@ -303,9 +303,9 @@ following:
 
 This work is dependent on the charting framework that you
 use. Some of the frameworks don't require this type of manipulation. For any D3 based charting framework, the data is
-expected in a very specific form for stacked bar charts and this is not the form that the analytics service returns.
+expected in a very specific form for stacked bar charts and this is not the form that the Analytics Service returns.
 
-The analytics service returns data in this form (in part):
+The Analytics Service returns data in this form (in part):
 
 ```
 {
@@ -365,8 +365,8 @@ function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
             groupBy = "";
         }
 
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/DefaultCollection/" + projectName
-            + "/_odata/WorkItems?$apply=groupby((" + groupByClause + "), aggregate(Count with sum as Count))";
+        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
+            + "/_odata/v1.0-preview/WorkItems?$apply=groupby((" + groupByClause + "), aggregate($count as Count))";
 
         $.ajax({
             type: "GET",

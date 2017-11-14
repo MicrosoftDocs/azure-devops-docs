@@ -13,7 +13,7 @@ ms.date: 09/26/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![icon](_img/delay.png) Pause execution of the process for a fixed delay time.
+![icon](_img/delay.png) &nbsp; Pause execution of the process for a fixed delay time.
 
 ## Demands
 
@@ -23,8 +23,8 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 | Parameter | Comments |
 | --- | --- |
-| Display name | Required. The name to display for this task. |
-| Delay Time (minutes) | Required. The number of minutes to delay execution. |
+| **Display name** | Required. The name to display for this task. |
+| **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).

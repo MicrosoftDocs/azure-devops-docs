@@ -1,12 +1,12 @@
 ---
-title: Process template and plug-in files | VSTS & TFS
+title: Process template and plug-in files 
 description: Describes each process template and plug-in file and what is supported when you create a team project via Visual Studio or the web portal  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/13/2017
+ms.date: 10/19/2017
 ---
 
 
@@ -22,25 +22,31 @@ For information about the default process templates, see [Choose a process](../.
 <a name="client-support"></a> 
 ## Client support for team project creation
 
-When you choose to create a team project, the Project Creation Wizard (PCW) reads the root process template file and its specified plug-in files defined within the process or process template you select. These files define the tasks and the screens that appear when the PCW is run. (No screens appear when you create a team project from the web portal.)   
+Depending on whether you work from the VSTS or TFS, you can create a team project from the web portal or from Visual Studio/Team Explorer.
 
-For example, if a process template includes the plug-in for Windows SharePoint Services, then a screen appears that requests information about the project portal. 
-
-Depending on whether you work from the cloud or an on-premises server, you can create a team project from one of the following clients.
-
-| Client | VSTS | On-premises TFS | 
-|--------|---------------|-----------------| 
-|Visual Studio| ![not supported](../../../_img/icons/delete_icon.png) | ![supported](../../../_img/icons/checkmark.png)|
-|Team Explorer| ![not supported](../../../_img/icons/delete_icon.png) | ![supported](../../../_img/icons/checkmark.png) |
-|Web portal | ![supported](../../../_img/icons/checkmark.png)| ![supported](../../../_img/icons/checkmark.png) |
+| Client | VSTS | TFS 2018 and TFS 2017 |  TFS 2015 and earlier versions |  
+|--------|---------------|-----------------|-----------------|  
+|Web portal | ![supported](../../../_img/icons/checkmark.png)| ![supported](../../../_img/icons/checkmark.png) | ![not supported](../../../_img/icons/delete_icon.png)  |
+|Visual Studio/Team Explorer | ![not supported](../../../_img/icons/delete_icon.png) | ![supported](../../../_img/icons/checkmark.png) |![supported](../../../_img/icons/checkmark.png)|  
 
 (![supported](../../../_img/icons/checkmark.png)- Supported; ![not supported](../../../_img/icons/delete_icon.png) - Not supported)  
 
+When you create a team project from the web portal, the following plug-in files are ignored. 
+
+- **Build**: Default security permissions are defined for build functions.
+- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](../../../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Reports**: See [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the team project. 
+- **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
+- **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. 
+- **Custom plug-ins**: Not supported.
+
+For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
+
+
+<!---
 >[!NOTE]  
->For VSTS, even if you initiate creating a team project from Visual Studio or Team Explorer, you'll be taken to the web portal to complete the operation.  
-
-When you create a team project from the web portal, there are several plug-ins that aren't supported. They are simply ignored by the PCW. For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).   
-
+>For VSTS, even if you initiate creating a team project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.4 and later versions, you'll be redirected to the web portal to create a team project. 
+--> 
   
 <a name="Root"></a> 
 ##  The root process template file  
@@ -48,17 +54,18 @@ When you create a team project from the web portal, there are several plug-ins t
    
  
 <a name="PlugInFiles"></a> 
-## Plug-in files 
+## Plug-in file descriptions and PCW support   
 
-Each plug-in file configures a specific functional area by defining one or more tasks. Tasks specify to upload a file, set permissions for a group, or configure some other functional area.  
+Each plug-in file configures a specific functional area by defining one or more tasks. Tasks specify to upload a file, set permissions for a group, or configure some other functional area. For example, the Work Item Tracking plug-in configures the work item types, queries, categories, and process configuration for a team project. 
 
-For example, the Work Item Tracking plug-in configures the work item types, queries, categories, and process configuration for a new team project. 
+The following table describes each plug-in file and whether or not it is supported when creating a team project from Visual Studio/Team Explorer or the web portal.The order in which the plug-ins are called is determined by the root process template file. Except for the Classification plug-in, plug-ins can also be deleted from the process template.  
+ 
+(![supported](../../../_img/icons/checkmark.png)- Supported; ![not supported](../../../_img/icons/delete_icon.png) - Not supported)
 
-## Plug-in file descriptions and PCW support  
-
-Each default process template includes the plug-in files described in the following table. The order in which the plug-ins are called is determined by the root process template file. Except for the Classification plug-in, plug-ins can also be deleted from the process template.  
-
-All plug-ins are supported (![supported](../../../_img/icons/checkmark.png)) when you create your team project from a supported client. However, when you create the team project from the cloud or the web portal for an on-premises TFS, several plug-ins are ignored or not supported (![not supported](../../../_img/icons/delete_icon.png)) as indicated in the following table. 
+<!---
+> [!IMPORTANT]  
+> Starting with TFS 2018 and later versions, you will only be able to create a team project creation from the web portal. No custom plug-ins are supported.  
+--> 
 
 <table>
 
@@ -76,8 +83,11 @@ All plug-ins are supported (![supported](../../../_img/icons/checkmark.png)) whe
 <td>Build<br/>
 &nbsp;&nbsp;&nbsp;[Build.xml](define-initial-configuration-build.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
-<td>![supported](../../../_img/icons/checkmark.png)</td>
-<td>Defines the initial security permissions used by Team Foundation Build and uploads build template files. </td>
+<td>![not supported](../../../_img/icons/delete_icon.png)</td>
+<td>Defines the initial security permissions used by Team Foundation Build and uploads build template files.
+<blockquote>
+For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only default permissions are defined. 
+</blockquote></td>
 </tr>
 
 
@@ -104,11 +114,10 @@ All plug-ins are supported (![supported](../../../_img/icons/checkmark.png)) whe
 &nbsp;&nbsp;&nbsp;[Lab.xml](define-initial-configuration-lab-management.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
-<td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. <!---[Learn more about Lab Management](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).-->
+<td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
 
 <blockquote>
-![](../../../_img/icons/note-icon.png)<br/>
-Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>
@@ -121,10 +130,10 @@ Going forward, native build and release management tools replace the previous la
 &nbsp;&nbsp;&nbsp;[ReportsTasks.xml](add-reports-to-the-process-template.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
-<td>Creates the Report Manager site for the team project and uploads the Reporting Services reports. Only supported for on-premises TFS.
-
-<p>
-To add reports after creating a team project, see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).</p>
+<td>Creates the Report Manager site for the team project and uploads the Reporting Services reports. Only supported for on-premises TFS. 
+<blockquote>
+ For TFS 2017.4 and later versions, you can only create team projects through the web portal which ignores this plug-in. To add reports after creating a team project, see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).
+</blockquote>
 </td>
 </tr>
 
@@ -154,9 +163,11 @@ Test Management<br/>
 <td>Version Control<br/>
 &nbsp;&nbsp;&nbsp;[VersionControl.xml](define-initial-configuration-version-control.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
-<td>![supported](../../../_img/icons/checkmark.png)</td>
-<td>Defines the initial security permissions for Git or Team Foundation version control (TFVC),l and for TFVC, tcheck-in notes and whether exclusive check-out is required.
-
+<td>![not supported](../../../_img/icons/delete_icon.png)</td>
+<td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
+<blockquote>
+For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a team project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../security/set-git-tfvc-repository-permissions.md) from the web portal.
+</blockquote>
 </td>
 </tr>
 
@@ -167,20 +178,24 @@ Windows SharePoint Services<br/>
 &nbsp;&nbsp;&nbsp;[WssTasks.xml](define-project-portal-plug-in.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
-<td>Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS. This plug-in also uploads the information contained in the following files and folders: 
+<td>
+
+<p>Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS. 
+
+<blockquote>
+TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a team project, see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). Creating a team project from the web portal will ignore the WssTasks.xml plug-in. 
+</blockquote>
+
+<p>This plug-in also uploads the information contained in the following files and folders:</p> 
 <ul>
 <li>**Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
 <li>**Samples and Templates**: Uploads one or more Excel workbooks (.xslx files) to support bug triage and track issues. </li> 
 <li>**Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.</li>  
 </ul>
-<p>
-To add a project portal site after creating a team project, see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).</p>
 
 <blockquote>
-![](../../../_img/icons/note-icon.png)<br/>Process template files do not include dashboards or Microsoft Excel reports. These files are added to the team project, depending on selections that are made when a team project is created. If no SharePoint site is provisioned for the team project, no dashboards or Office Excel reports are available. For more information about these artifacts, see the following topics: [Project portal dashboards](../../../../report/sharepoint-dashboards/project-portal-dashboards.md), [Excel reports (Agile)](../../../../report/excel/excel-reports.md), and [Excel reports (CMMI)](../../../../report/excel/excel-reports-cmmi.md).  
+Process template files do not include dashboards or Microsoft Excel reports. These files are added to the team project, depending on selections that are made when a team project is created. If no SharePoint site is provisioned for the team project, no dashboards or Office Excel reports are available. For more information about these artifacts, see the following topics: [Project portal dashboards](../../../../report/sharepoint-dashboards/project-portal-dashboards.md), [Excel reports (Agile)](../../../../report/excel/excel-reports.md), and [Excel reports (CMMI)](../../../../report/excel/excel-reports-cmmi.md).  
 </blockquote>
-
-
 </td>
 </tr>
 
@@ -210,7 +225,7 @@ Work Item Tracking <br/>
 <li>**[TypeDefinitions](add-wit-definitions-process-template.md)**: Defines the 15 or more work item type XML definition files contained within the TypeDefinition folder. The definitions differ depending on the process template selected. </li>
 <li>**[Work items](add-work-item-instance-process-template.md)**: Defines one or more work items. No definitions are defined within the default process templates. 
 <blockquote>
-Support for work item instances isn't supported for Hosted XML.</blockquote></li>
+For VSTS and TFS 2017.4 and later versions, definitions for work item instances will be ignored when creating team projects.  </blockquote></li>
 </ul> 
 
 </td>
@@ -220,8 +235,6 @@ Support for work item instances isn't supported for Hosted XML.</blockquote></li
 </tbody>
 </table>
 
- 
- 
   
 ## Related notes
 
@@ -230,4 +243,4 @@ The schema definition for process templates uses a mix of camel-case and all cap
 -  [Choose a process or process template](../../../work-items/guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../../customize-work.md)
--  [Testing overview](/vsts/manual-test/index)
+

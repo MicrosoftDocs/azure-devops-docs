@@ -14,7 +14,7 @@ ms.date: 9/27/2017
 
 **TFS**
 
-As a project collection administrator, you'll get email when another team project member requests an extension. When you approve the request, TFS automatically installs the extension.
+As a project collection administrator, you'll get an email when another team project member requests an extension. When you approve the request, TFS automatically installs the extension.
 
 To approve extensions, you must also have 
 [**Edit collection-level information** permissions](../../security/permissions.md#collection).
@@ -25,11 +25,11 @@ To approve extensions, you must also have
 
 **TFS 2015 Update 3**
 
-    <img alt="Manage extensions" src="../_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+<img alt="Manage extensions" src="../_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
 **TFS 2017**
 
-    <img alt="Manage extensions" src="../_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
+<img alt="Manage extensions" src="../_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
 
 0. Review and approve your requested extensions.
 
