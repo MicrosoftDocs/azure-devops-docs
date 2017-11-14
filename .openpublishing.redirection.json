@@ -4600,6 +4600,11 @@
             "source_path": "docs/reporting.md",
             "redirect_url": "/vsts/#pivot=services&panel=reporting",
             "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
+        "redirect_url": "/vsts/build-release/concepts/definitions/release/approvals/index",
+        "redirect_document_id": false
        }
     ]
 }
