@@ -19,7 +19,7 @@ Git creates this history as you save your code in your [commits](commits.md) and
 This generated history can get complicated when you need to update a feature branch with changes from the main branch to catch up on work committed by others. 
 Your commit history will diverge from the master branch at multiple points, making it hard to follow.
 
-Use`rebase` to address the problem of updating your branch with the latest changes from the main branch. 
+Use `rebase` to address the problem of updating your branch with the latest changes from the main branch. 
 `Rebase` takes the changes made in the commits in your current branch and replays them on the history of another branch. 
 The commit history of your current branch will be rewritten so that it starts from the most recent commit in the target branch of the rebase.
 Rebasing your changes in your feature branch off the latest changes in the main branch lets you test your changes on the most recent version in the main branch while keeping

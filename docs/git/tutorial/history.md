@@ -151,7 +151,7 @@ changes others have made will affect your work.
 
 # [Visual Studio](#tab/visual-studio)
 
-Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio. To browse to your repo from within Visual Studio, select the home icon and choose **Web Portal**. 
+Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
 ![Web portal](_img/history/vs-browse-web-portal.png) 
 
