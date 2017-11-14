@@ -19,7 +19,7 @@ ms.date: 08/10/2016
 
 msbuild
 
-> **VSTS and Team Foundation Server 2017:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
+> **VSTS:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
 ## Arguments
 
@@ -39,7 +39,7 @@ msbuild
 <p>Make the sure the projects you specify are downloaded by this build definition. On the Repository tab:</p>
 <ul>
 <li>
-If you use TFVC, make sure that the  project is a child of one of the mappings on the Repository tab. 
+If you use TFVC, make sure that the  project is a child of one of the mappings on the Repository tab.
 </li>
 <li>If you use Git, make sure that the project or project is in your Git repo, in a branch that you're building.</li>
 </ul>

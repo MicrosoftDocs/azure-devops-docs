@@ -20,7 +20,7 @@ ms.date: 03/07/2017
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
-<img src="_img/process-backlog-boards-intro.png" alt="Changes made to the backlog levels" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/process-backlog-boards-intro.png" alt="Changes made to the backlog levels" style="border: 1px solid #C3C3C3;" /> 
 
 Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
@@ -42,7 +42,7 @@ To perform any of these actions, you must be a member of the Project Collection 
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 
-<img src="_img/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
 
 
 **What you can't customize**  
@@ -63,15 +63,15 @@ To get started, you'll want to open the Backlog levels page of your custom inher
 	>[!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 
-	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 2px solid #C3C3C3;" /> -->
+	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 1px solid #C3C3C3;" /> -->
 
 0. Click Process, and then click the inherited process that you've created previously. 
 
-	<!---  <img src="_img/admin-process-select-process.png" alt="Web portal, Admin context, Process page, select Process" style="border: 2px solid #C3C3C3;" />  -->
+	<!---  <img src="_img/admin-process-select-process.png" alt="Web portal, Admin context, Process page, select Process" style="border: 1px solid #C3C3C3;" />  -->
 
 0. Open the Backlog levels page.
 
-	<img src="_img/process-backlog-levels-open.png" alt="Web portal, Admin context, Process page, open Backlog levels" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/process-backlog-levels-open.png" alt="Web portal, Admin context, Process page, open Backlog levels" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="portfolio-backlogs">  </a>
@@ -87,15 +87,15 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 0. From the Backlog levels page, open the Add portfolio backlog dialog. 
   
-	<img src="_img/process-new-portfolio-backlog.png" alt="Web portal, Admin context, Process page, select Process" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/process-new-portfolio-backlog.png" alt="Web portal, Admin context, Process page, select Process" style="border: 1px solid #C3C3C3;" /> 
 
 0. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click Add. 
 
-	<img src="_img/process-add-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Add new work item type" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/process-add-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Add new work item type" style="border: 1px solid #C3C3C3;" /> 
 
 0. If you are associating only one work type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
 
-	<img src="_img/process-add-portfolio-backlog-dialog-save.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/process-add-portfolio-backlog-dialog-save.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 1px solid #C3C3C3;" /> 
 
 
 <a id="edit-portfolio-backlog">  </a>
@@ -182,9 +182,9 @@ The Bug category is a special category that is designed to allow teams to manage
 --> 
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+
 
 
 

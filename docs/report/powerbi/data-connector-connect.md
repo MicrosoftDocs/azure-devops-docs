@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: stansw
-ms.date: 05/21/2017
+ms.date: 10/31/2017
 ---
 
 # Connect to VSTS with Power BI Data Connector
@@ -15,7 +15,7 @@ ms.date: 05/21/2017
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-You import data from the Analytics Service for VSTS into Power BI using a data connector.  
+The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development.  The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
 
 ## Import data
 
@@ -168,17 +168,6 @@ In the example below the most important part of the error message is:
 >Query result exceeds maximum size. Please reduce the number of records by applying additional filters.
 
 ![QueryExceedsPreferedMaxSizeException](./_img/QueryExceedsPreferedMaxSizeException.png)
-
-<a id="QueryExceedsPreferedMaxSizeException">  </a>
-### Q: How do I resolve error: *The Analytics Service is in preview and only available to select customers...*?
-
-You encountered an error while trying to connect.   
-
-> **The Analytics Service is in preview and only available to select customers of VSTS at this time.** If your account has been enabled please contact the Microsoft employee who set up the service for assistance.
-
-**A:** Data Connector is built on top of the Analytics Service, which is currently in the preview stage.
-
-![The Analytics Service is in preview and only available to select customers...](./_img/AnalyticsNotEnabledError.png)
 
 <a id="QueryExceedsPreferedMaxSizeException">  </a>
 

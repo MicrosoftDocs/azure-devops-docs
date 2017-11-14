@@ -31,11 +31,11 @@ In this topic you'll learn:
 ## Show parents and expand the tree hierarchy  
 From the product backlog page, set Parents to Show when you want to drill up or down within the hierarchy, set Parents to Show. You can also drag and drop items to reparent items from this view. 
 
-<img src="_img/org-backlog-intro-show-parents-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-intro-show-parents-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #C3C3C3;" />  
 
 Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
   
-<img src="_img/org-backlog-collapse-backlog-ts-new-nav.png" alt="Collapsed hierachical view" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-collapse-backlog-ts-new-nav.png" alt="Collapsed hierachical view" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="mapping">  </a>
@@ -47,7 +47,7 @@ To map a backlog item under a feature, you first turn mapping on from your backl
  
 Drag items that are currently unparented to the feature under which they belong. Also, you can drag a backlog item to a different feature to change its parent. This mapping creates parent-child links from feature to user stories, which is captured in the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png) (links) tab.
 
-<img src="_img/org-backlog-map-pbi-to-feature-ts-new-nav.png" alt="Map a backlog item to a portfolio backlog work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/org-backlog-map-pbi-to-feature-ts-new-nav.png" alt="Map a backlog item to a portfolio backlog work item" style="border: 1px solid #C3C3C3;" />  
 
 >[!NOTE]  
 ><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from VSTS and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
@@ -61,7 +61,7 @@ When you need to change the order or grouping, simply drag the item to its new l
 
 You can re-parent an item using the mapping pane, or simply drag it within the hierarchy to change its parent.  
 
-<img src="_img/ALM_OB_ReparentAnItem.png" alt="Reparent or reorder work items on a backlog" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/ALM_OB_ReparentAnItem.png" alt="Reparent or reorder work items on a backlog" style="border: 1px solid #C3C3C3;" />  
 
  You can only re-parent backlog items under other features, and features under other epics. 
 
@@ -78,7 +78,7 @@ This works the same as when you [moved items into priority order on your product
 
 From the product backlog you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item item. 
 
-<img src="_img/org-backlog-change-parent.png" alt="Change parent of several backlog items" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/org-backlog-change-parent.png" alt="Change parent of several backlog items" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Related topics  

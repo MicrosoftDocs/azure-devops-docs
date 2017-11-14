@@ -84,7 +84,7 @@ The two areas of most interest to management teams is project health and bug deb
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks. 
 
-<img src="_img/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 2px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 2px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
+<img src="_img/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 1px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 1px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
 
 
 When defining multi-team dashboards, consider the following:

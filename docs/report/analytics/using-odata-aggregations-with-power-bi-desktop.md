@@ -6,26 +6,26 @@ ms.technology: vs-devops-reporting
 ms.assetid: 48FFCA0B-D30B-4C59-B057-0B130577912F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 11/13/2017
 ---
 
 #Using OData Aggregations with Power BI desktop  
 
 **VSTS**  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Currently, Power Query (the underlying technology in both Power BI Desktop and Excel) does not support OData Aggregation Extensions.
 However, Power Query is extremely flexible and as such has an easy mechanism for allowing this content to be used. This article
 walks you through this process.
 
-In order to use Aggregation Extensions with Power BI Desktop, you must create the URL by hand which requires knowledge of [OData](wit-analytics.md) and the
-[Aggreation Extensions](aggregated-data-analytics.md) specifically. Please review these two topics before continuing.
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+In order to use Aggregation Extensions with Power BI Desktop, you must create the URL by hand which requires knowledge of [OData on Analytics Service](../extend-analytics/index.md) and the
+[Aggregation Extensions](../extend-analytics/aggregated-data-analytics.md) specifically. Please review these two topics before continuing.
 
 For the purposes of this walkthrough, we'll create a simple aggregation query which returns the count of work items by Work Item Type and State. The URL for this query is shown below.
 
 ```
-https://[account].analytics.visualstudio.com/DefaultCollection/[project name]/_odata/WorkItems?$apply=groupby((WorkItemType,State), aggregate(Count with sum as Count))  
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType,State), aggregate($count as Count))  
 ```
 
 Execute this query in your browser to make sure it works first. Replace the account and project names with the appropriate values.

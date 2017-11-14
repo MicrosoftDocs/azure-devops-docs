@@ -108,8 +108,8 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
-                                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -139,9 +139,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; manual testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -257,8 +257,8 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
-                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Analytics (VSTS)</a></li>
-                                        <li><a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">REST APIs</a></li>
+                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                                        <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                     <h3>Marketplace</h3>
@@ -1108,7 +1108,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Analytics (VSTS)</h3>
+                                                    <h3>Extend Analytics with OData</h3>
                                                     <p>Use the Analytics Service OData API's to create custom visualizations and reports.</p>
                                                 </div>
                                             </div>
@@ -1277,7 +1277,7 @@ featureFlags:
                                         <a class="barLink" href="/vsts/integrate/index">Get Started</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">API reference</a>
+                                        <a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">API reference</a>
                                     </li>
                                 </ul>
                             </li>

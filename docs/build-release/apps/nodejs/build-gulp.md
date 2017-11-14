@@ -1,6 +1,6 @@
 ---
 title: CI build for a Node.js app with Gulp
-description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS or Team Foundation Server
+description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article
@@ -12,15 +12,15 @@ ms.date: 08/28/2017
 
 # Build your Node.js app with Gulp
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017 Update 3**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Follow these steps to quickly set up a CI process for your Node.js app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). The sample app we use here is a Node server that echoes "Hello world". Tests for the app are written using mocha framework. A gulp file is used to run the tests and to convert the results into junit format so that they can be published to VSTS or TFS.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project with npm, node, gulp, and other necessary software installed.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have Node and Gulp installed on the agent machine.
 
 ## Get sample app code
 
@@ -30,17 +30,19 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 https://github.com/adventworks/nodejs-sample
 ```
 
-# [VSTS or TFS repo](#tab/vsts)
+Choose your version control system to get specific instructions for copying the sample app code:
+
+# [VSTS Git](#tab/vstsgit)
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-# [GitHub repo](#tab/github)
+# [GitHub](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ---
 
-The sample app in this repository is a simple server that echoes "Hello world". Tests for the applications are written using mocha framework. A gulp file is used to run the tests and to convert the published results into junit format as that is a supported rendering format by VSTS and TFS.
+[!INCLUDE [include](../_shared/get-sample-code-other-repos-vsts.md)]
 
 ## Set up continuous integration
 
@@ -105,4 +107,4 @@ The sample app in this repository is a simple server that echoes "Hello world". 
 
 ## Next steps
 
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+[!INCLUDE [include](../_shared/ci-web-app-next-steps-with-containers.md)]

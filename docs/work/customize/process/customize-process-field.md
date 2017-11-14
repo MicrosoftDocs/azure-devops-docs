@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+ms.date: 11/07/2017 
 ---
 
 # Add a custom field to a work item type (Inheritance process model)  
@@ -57,7 +57,7 @@ You can add fields and specify the group and page where they should appear. Also
 	
 0. With the WIT selected, click the ![add new field icon](_img/new-field-icon.png) (New Field icon).  
 
-    <img src="_img/cpfield-bug-new-field.png" alt="Process Work Item Types page, Add a field to a WIT" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/cpfield-bug-new-field.png" alt="Process Work Item Types page, Add a field to a WIT" style="border: 1px solid #C3C3C3;" /> 
 
 0. Name the field and select the field type from one of the supported data types. Optionally, add a description.  
 
@@ -66,19 +66,19 @@ You can add fields and specify the group and page where they should appear. Also
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
-    <img src="_img/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 2px solid #C3C3C3;" /> 
+    <img src="_img/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
 	<a id="options">  </a>
 0.	(Optional) On the Options tab, indicate if the field is required and specify a default value. Or leave these blank. By making a field Required, users must specify a value for the field in order to save it. The default value you specified is set when you create a work item as well as every time a work item is opened and the field is empty.
 
-	<img src="_img/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
 
 	<a id="layout">  </a>
 0.	(Optional) On the Layout tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field will appear on the form. 
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
-	<img src="_img/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	>[!NOTE]  
 	>While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../customize-cards.md#fields), [task board](../customize-cards.md#task-board)) or [creating queries](../../track/using-queries.md) based on the field.   
@@ -98,13 +98,13 @@ You can add fields and specify the group and page where they should appear. Also
 
 1. Start by clicking ![add new field icon](_img/new-field-icon.png) (New Field), then specify the pick list type&mdash;integer or string&mdash;and then add the items to appear in the pick list. You can simply add an item and then press Enter to add another item.
 
-	<img src="_img/add-a-field-pick-list-up1.png" alt="Add a custom pick list" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/add-a-field-pick-list-up1.png" alt="Add a custom pick list" style="border: 1px solid #C3C3C3;" />  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../_img/icons/delete_icon.png) delete icon.  
 
 2. (Optional) Click the Options tab to define the field as required, specify  a default, or allow users to enter their own values. 
 
-	<img src="_img/add-a-field-pick-list-options.png" alt="Allow values in a custom pick list" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/add-a-field-pick-list-options.png" alt="Allow values in a custom pick list" style="border: 1px solid #C3C3C3;" />  
 
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -122,7 +122,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 1. Start by clicking ![add new field icon](_img/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
 
-	<img src="_img/cpfield-identity.png" alt="Add a custom pick list" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-identity.png" alt="Add a custom pick list" style="border: 1px solid #C3C3C3;" />  
 
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -134,11 +134,11 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 2. Choose Text (multiple lines) as the type. Here we label the field as Customer request to capture customer verbatims.   
 
-    <img src="_img/cpfield-add-html-field-to-bug.png" alt="Process Work Item Types page, Add a rich-text field to the Bug form" style="border: 2px solid #C3C3C3;" />  
+    <img src="_img/cpfield-add-html-field-to-bug.png" alt="Process Work Item Types page, Add a rich-text field to the Bug form" style="border: 1px solid #C3C3C3;" />  
 
 2. The field is added to the first column under all system-defined rich-text fields, but before the Discussion control.   
 
-	<img src="_img/customize-process-field-show-custom-html-field-up1.png" alt="Bug form, Customer request field added to first column in form" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/customize-process-field-show-custom-html-field-up1.png" alt="Bug form, Customer request field added to first column in form" style="border: 1px solid #C3C3C3;" />   
 
 <a id="boolean-field">  </a>
 ### Add a checkbox field  
@@ -147,11 +147,11 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 2. Choose Boolean as the type, and give it a label. Here we label the field as Triaged to track the triage state of the bug.  
 
-	<img src="_img/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" style="border: 1px solid #C3C3C3;" />   
 
 3. (Optional) Open the Options tab and specify if the field should be required. 
 
-	<img src="_img/cpfield-edit-boolean-field-options-up1.png" alt="Set options for boolean field" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/cpfield-edit-boolean-field-options-up1.png" alt="Set options for boolean field" style="border: 1px solid #C3C3C3;" /> 
 
 4. By default, the field is added to the last group defined in the second column. Open the Layout tab to drag and drop the field to another group on the form.  
 
@@ -167,7 +167,7 @@ For a list of all work item fields defined for all WITs and processes, see the [
 
 Here we add the Customer Ticket field to the User Story WIT.  
 
-<img src="_img/cpfield-add-existing-field.png" alt="Add existing field to bug" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cpfield-add-existing-field.png" alt="Add existing field to bug" style="border: 1px solid #C3C3C3;" />  
 
 
 
@@ -188,7 +188,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 0. Open the context menu for the inherited field and choose Hide from layout.
 
-	<img src="_img/cpfield-hide-inherited-field.png" alt="Bug layout, inherited field, open context menu, choose Hide from layout" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-hide-inherited-field.png" alt="Bug layout, inherited field, open context menu, choose Hide from layout" style="border: 1px solid #C3C3C3;" />  
 
 0. To add a hidden field to the form, choose **Show on layout**.  
 
@@ -196,11 +196,11 @@ You can choose to show or hide an inherited field or a custom control from appea
 ### Remove a custom field from a form
 1. Choose Remove from the context menu of the field you want to remove. 
 
-	<img src="_img/cpfield-remove-customer-ticket.png" alt="Remove field from bug work item type" style="border: 2px solid #C3C3C3;" />    
+	<img src="_img/cpfield-remove-customer-ticket.png" alt="Remove field from bug work item type" style="border: 1px solid #C3C3C3;" />    
 
 2. Confirm that you want to remove the field.  
 
-	<img src="_img/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 1px solid #C3C3C3;" />   
 
 0. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
@@ -250,13 +250,13 @@ Prior to deleting a field, you must first remove it from the form for each WIT t
 
 1. You delete the field from a collection from the **Fields** page for all processes.  
 
-	<img src="_img/cpfield-delete-field.png" alt="Delete field" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-delete-field.png" alt="Delete field" style="border: 1px solid #C3C3C3;" />  
 
 	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the field as shown. 
 
-	<img src="_img/cpfield-delete-confirmation.png" alt="Delete field, confirmation dialog" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/cpfield-delete-confirmation.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
 <a id="rename-field">  </a>
 ### Can a field be renamed or its field type changed?   
@@ -271,6 +271,4 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 [!INCLUDE [temp](../../_shared/field-reference.md)]  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]
-
-[!INCLUDE [temp](../../_shared/custom-help.md)]
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

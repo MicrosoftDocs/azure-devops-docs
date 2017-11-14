@@ -29,11 +29,11 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 1. Choose the sprint listed under Current and then click **Set dates**.  
 
-	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
 
-	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
 

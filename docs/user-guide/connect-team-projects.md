@@ -85,7 +85,25 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+
+<a id="vs-2017-connect-dialog" />
+
+### Visual Studio 2017 
+Select the connect icon in Team Explorer to open up the **Connect** page. Choose the **Connect to Team Project** link to select a team project to connect to.
+
+![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+
+The **Connect to a Project** dialog will appear and show the team projects you can connect to, along with the repos in those projects.
+
+![Connect to a Project dialog box](_img/connect-team-projects-tfs/vs2017_connect_dialog.png)
+
+Select the **Add Server** link to connect to a team project in Team Foundation Server. Enter the URL to your TFS server and select **Add**. 
+
+![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/vs2017_add_tfs_server.png)
+
+Select a team project from the list and select **Connect**. 
+      
+
 
 <a id="connect-dialog" /> 
 <a id="vs-2015-connect-dialog" /> 
@@ -106,24 +124,6 @@ If it's your first time connecting, add TFS to the list of recognized servers.
 If you selected just one team project, you'll see the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
 	
    
-<a id="vs-2017-connect-dialog" />
-
-### Visual Studio 2017 
-Select the connect icon in Team Explorer to open up the **Connect** page. Choose the **Connect to Team Project** link to select a team project to connect to.
-
-![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
-
-The **Connect to a Project** dialog will appear and show the team projects you can connect to, along with the repos in those projects.
-
-![Connect to a Project dialog box](_img/connect-team-projects-tfs/vs2017_connect_dialog.png)
-
-Select the **Add Server** link to connect to a team project in Team Foundation Server. Enter the URL to your TFS server and select **Add**. 
-
-![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/vs2017_add_tfs_server.png)
-
-Select a team project from the list and select **Connect**. 
-      
----
 
 Team Explorer will display the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
 
@@ -141,6 +141,17 @@ Your client remembers the set of connections you've configured. You can quickly 
 <a id="connect-account-dialog" /> 
 <a id="vs-2015-connect-account-dialog" /> 
  
+### Visual Studio 2017 
+
+1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
+
+	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+
+	Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
+
+	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
+
+2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
 ### Visual Studio 2015 
 
@@ -155,17 +166,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
 
-### Visual Studio 2017 
 
-1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
-
-	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
-
-	Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
-
-	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
-
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
 ### To change accounts 
 

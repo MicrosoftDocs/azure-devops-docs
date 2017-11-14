@@ -66,16 +66,10 @@ Go to the User Hub:
 
 ![go to the user hub](_img/_shared/users-hub-updated.png)
 
-Choose a user in the table and then choose the **...** in the name column to see the context menu.  The menu supports **Change access level**, **Manage project**, **Manage extension** (if there are extensions), and **Remove from account** (deletes user).
+Choose a user or group of users in the table and then choose the **...** in the name column to see the context 
+menu.  The menu supports **Change access levels**, **Manage projects**, **Manage extensions** (if there are extensions), 
+and **Remove from account** (deletes user).
 
-![Account level table of users with key information per user](_img/user-hub/acct-level-users.png)
-
-
-##	Detailed view of individual users
-
-Using the detailed user view, you can change the access level, service extensions, and project group memberships that 
-a user has. The same operations from the table's context menu are available in this dialog.
-
-![User details view](_img/user-hub/user-details.png)
+![Account level table of users with key information per user](_img/user-hub/acct-level-users-718.png)
 
 

@@ -3,9 +3,9 @@
   topicHref: /vsts/index
   items: 
   - name: Reporting
-    tocHref: /vsts/
+    tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=reporting
     items:
-    - name: Analytics Service
+    - name: "Analytics (VSTS)" 
       tocHref: /vsts/report/analytics/
       topicHref: /vsts/report/analytics/index
