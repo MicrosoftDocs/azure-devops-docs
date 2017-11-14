@@ -69,9 +69,9 @@ This topic shows you how to:
    ![Setting the pre-deployment options](_img/work-with-release-definitions/set-conditions.png)
 
 1. Open the **Tasks** tab and select the default **Run on agent** item. In the properties
-   panel, under **Agent selection**, check that **Hosted** is selected to use the default 
-   queue and agent available in VSTS. If you want to use a different agent that you have 
-   [previously installed](../concepts/agents/pools-queues.md), such as an on-premises agent in TFS, select the agents queue.
+   panel, under **Agent selection**, check that a hosted agent is selected to use the default 
+   queues and agents available in VSTS. If you want to use a different agent that you have 
+   [previously installed](../concepts/agents/pools-queues.md), such as an on-premises agent in TFS, select that agent's queue.
 
    ![Setting the deployment queue](_img/work-with-release-definitions/check-queue.png)
 

@@ -81,7 +81,7 @@ will automatically execute the unit tests it contains.
 
    ![Choosing the build type](_img/example-continuous-testing/example-continuous-testing-21.png)
 
-1. In the new build definition, select the **Process** item and then select the **Hosted** agent queue. 
+1. In the new build definition, select the **Process** item and then select the **Hosted VS2017** agent queue. 
 
    ![Choosing the default agent queue](_img/example-continuous-testing/example-continuous-testing-21a.png)
 
