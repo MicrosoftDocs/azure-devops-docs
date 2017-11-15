@@ -300,6 +300,8 @@
       href: tasks/utility/delay.md
     - name: Delete Files
       href: tasks/utility/delete-files.md
+    - name: Download Secure File
+      href: tasks/utility/download-secure-file.md
     - name: Extract Files
       href: tasks/utility/extract-files.md
     - name: FTP Upload
@@ -402,6 +404,8 @@
     items:
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
+    - name: Java Tool Installer
+      href: tasks/tool/java-tool-installer.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform

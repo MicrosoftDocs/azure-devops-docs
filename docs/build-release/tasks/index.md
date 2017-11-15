@@ -51,10 +51,11 @@ ms.date: 08/18/2016
 | ![icon](utility/_img/curl-upload-files.png) [cURL Upload Files](utility/curl-upload-files.md). Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more) | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the process for a fixed delay time. | VSTS |
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | VSTS, TFS 2015 Update 3 and newer |
+| ![icon](utility/_img/secure-file.png) [Download Secure File](utility/download-secure-file.md). Download a secure file to a temporary location on the build or release agent. | VSTS |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | VSTS, TFS 2017 |
 | ![icon](utility/_img/ftp-upload.png) [FTP Upload](utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | VSTS, TFS 2017 |
-| ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS |
-| ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS |
+| ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS, TFS 2018 |
+| ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS, TFS 2018 |
 | ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | VSTS |
 | ![icon](utility/_img/manual-intervention.png) [Manual intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps. | VSTS |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
@@ -121,6 +122,7 @@ ms.date: 08/18/2016
 | Task | Versions |
 |------|----------|
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
+| <img alt="icon" width="32" height="32" alt="icon" src="https://docs.microsoft.com/media/logos/logo_java.svg"> [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
 
