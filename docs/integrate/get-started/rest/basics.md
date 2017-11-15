@@ -46,7 +46,7 @@ Authorization: Basic BASE64PATSTRING
 Here it is in C# using the [HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
-public static async void GetProjects()
+public static async Task GetProjects()
 {
 	try
 	{
@@ -62,8 +62,8 @@ public static async void GetProjects()
 					System.Text.ASCIIEncoding.ASCII.GetBytes(
 						string.Format("{0}:{1}", "", personalaccesstoken))));
 
-			using (HttpResponseMessage response = client.GetAsync(
-						"https://{account}.visualstudio.com/DefaultCollection/_apis/projects").Result)
+			using (HttpResponseMessage response = await client.GetAsync(
+						"https://{account}.visualstudio.com/DefaultCollection/_apis/projects"))
 			{
 				response.EnsureSuccessStatusCode();
 				string responseBody = await response.Content.ReadAsStringAsync();
