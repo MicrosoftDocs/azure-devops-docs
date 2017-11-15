@@ -193,6 +193,10 @@
     items:
     - name: Test as you build
       href: test/index.md
+  - name: Publish symbols for debugging
+    items:
+    - name: Publish symbols
+      href: symbols/index.md
   - name: Use packages in CI/CD
     items:
     - name: NuGet

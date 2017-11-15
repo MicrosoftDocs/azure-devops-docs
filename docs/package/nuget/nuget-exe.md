@@ -16,12 +16,12 @@ ms.date: 09/01/2017
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore) and [publish](/vsts/build-release/packages/nuget-pack-publish) packages. 
 
-[!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
+[!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
 
 ## Add a feed to NuGet 3 or later
 NuGet 3 and later supports the Credential Provider, which automatically acquires feed credentials when needed.
 
-[!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
+[!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
 
 Then, run any [nuget command](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference).
 
@@ -30,7 +30,7 @@ NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
 
-[!INCLUDE [get-endpoint-URL](../_shared/nuget-consume-endpoint.md)]
+[!INCLUDE [get-endpoint-URL](../_shared/nuget/nuget-consume-endpoint.md)]
 
 Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
 
