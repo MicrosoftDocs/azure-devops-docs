@@ -4,26 +4,23 @@ description: Install an Apple certificate required to build on a macOS agent on 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
-ms.manager: dastahel
-ms.author: madhurig
-ms.date: 05/22/2017
+ms.manager: douge
+ms.author: alewis
+ms.reviewer: dastahel
+ms.date: 11/14/2017
 ---
 
 # Utility: Install Apple Certificate
 
-**VSTS**
+**VSTS** | **TFS 2018**
 
-![](../build/_img/xcode-build.png) Install an Apple certificate required to build on a macOS agent
+![](../build/_img/xcode.png) Install an Apple certificate required to build on a macOS agent
 
-This task allows installing an Apple certificate that is stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
+You can use this task to install an Apple certificate that is stored as a [secure file](../../concepts/library/secure-files.md) on the server. 
 
 ## Demands
 
 xcode
-
-## Agent version
-
-2.116.0 or higher is required
 
 ## Arguments
 

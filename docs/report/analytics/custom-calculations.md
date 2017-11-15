@@ -1,12 +1,13 @@
 ---
-title: Custom calculations with Power Query | VSTS  
+title: Custom calculations with Power Query 
+titleSuffix: VSTS 
 description: Adding custom columns with custom calculations in Power BI Desktop and Excel using Power Query  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 9EB84AC2-9A2B-43EF-821D-3418810F5D32
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ---
 
 #Create custom calculations with Power Query
@@ -44,11 +45,11 @@ In this topic we'll add a simple but useful column - an Age In Days column.
 
 4. On the **Add column** tab, click **Add Custom Column**  
 
-    ![Add Custom Column](_img/custom-queries-3.png)  
+    <img src="_img/custom-queries-3.png" alt="CAdd Custom Column" style="border: 1px solid #C3C3C3;" />    
 
 5. Enter the calculation as shown in the following image:  
 
-    ![Custom calculation](_img/custom-queries-4.png)  
+    <img src="_img/custom-queries-4.png" alt="Custom calculation" style="border: 1px solid #C3C3C3;" />  
 
     This formula simply calculates the duration between the current date and time and when the work item was created. It then turns the duration into days.  
 

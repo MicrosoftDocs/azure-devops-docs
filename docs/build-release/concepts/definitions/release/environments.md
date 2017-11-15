@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Environments in Release Management
@@ -63,76 +63,13 @@ Here are some suggestions and examples for environments:
   the same shared deployment, you risk overriding the shared environment with a newer build while testing
   of the previous builds is still in progress.
 
+<a name="approvals"></a><a name="conditions"></a>
 The deployment process of a release to an environment is defined in terms of [phases](../../process/phases.md) and [tasks](../../process/tasks.md).
-The physical deployment of a release to an environment is controlled through three features: 
-[approvals](#approvals), [deployment conditions](triggers.md#env-triggers),
+The physical deployment of a release to an environment is controlled through  
+[approvals and gates](approvals/index.md), [deployment conditions and triggers](triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).
 
 ![Environment](_img/definition-02.png)
-
-<h2 id="approvals">Approvals</h2>
-
-You can define approvers for each environment in a release definition.
-When a release is created from a release definition that contains
-approvers, the deployment stops at each point where approval is required
-until the specified approver grants approval or rejects the release (or
-re-assigns the approval to another user).
-
-You can define pre-deployment approvers, post-deployment approvers, or both for an environment.
-
-![Pre-deployment approvals settings](_img/environments-01.png)
-
-![Post-deployment approvals settings](_img/environments-01a.png)
-
-The **Automatic** option allows you to approve a deployment automatically.
-When you select the **Specific Users** option, you can select
-one or more approvers for an approval step. You can add multiple approvers for both pre-deployment
-and post-deployment settings. 
-
-When you add multiple approvers, you can control how they can approve the
-deployment. The options are:
-
-* **All users in any order**:
-  Choose this option if you want sign-off from a set of users,
-  all of them must approve, and it does
-  not matter in what order they approve.
-
-* **All users in sequential order**:
-  Choose this option if you want sign-off from a
-  set of users, all of them must approve, and you want
-  them to approve in the specified order. For example,
-  the second user can approve only after the first user
-  approves, and so on.
-
-* **Any one user**: Choose this option
-  if you want sign-off from only one of a set of users.
-  When any one of the users approves, the release
-  moves forward.
-
-You can also specify account (user) groups as approvers.
-When a group is specified as an approver, only one of
-the users in that group needs to approve in order for the release
-to move forward.
-
-* If you are using **VSTS** (VSTS), you
-  can use local groups managed in VSTS or
-  Azure Active Directory (AAD) groups if they have been
-  added into VSTS.
-
-* If you are using **Team Foundation Server** (TFS),
-  you can use local groups managed in TFS or Active
-  Directory (AD) groups if they have been added into TFS.
-
-The creator of a deployment is considered to be a separate user
-role for deployments. Either the release creator or the deployment
-creator can be restricted from approving deployments. For more details,
-see [Release permissions](../../policies/permissions.md#release-permissions).
-  
-<h2 id="conditions">Deployment conditions</h2>
-
-You control when a release should be deployed to an environment
-using deployment conditions. For more information about deployment conditions,
-see [triggers](triggers.md#env-triggers).
 
 ## Queuing policies
 

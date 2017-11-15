@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 37894F28-12AA-44DE-9371-AB1F0CDDDC71
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # How To: Monitor releases and debug deployment issues
@@ -52,8 +52,8 @@ icon shows the current sorting column).
 ![Hiding the live log file and sorting the results](_img/debug-deployment-issues/summary-details-off-01.png)
 
 As the list of environments and tasks grows, including the history for earlier releases,
-it may be more difficult to find individual items. Filter the list to show just
-approvals or just tasks using the **View** drop-down list at the top right of the page.  
+it may be more difficult to find individual items. Filter the list using the **View**
+drop-down list at the top right of the page.  
 
 ![Viewing just approvals or just tasks in the Logs page](_img/debug-deployment-issues/summary-approvals-only-01.png)
 

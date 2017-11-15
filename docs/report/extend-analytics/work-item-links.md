@@ -244,3 +244,8 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$se
 	}]
 }
 ```
+
+
+## Try this next
+> [!div class="nextstepaction"]
+> [Explore Analytics metadata](analytics-metadata.md) 

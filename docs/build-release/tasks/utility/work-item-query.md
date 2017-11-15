@@ -6,10 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
-# Utility: Work item query
+# Utility: Query Work Items
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
@@ -32,7 +32,7 @@ None
 
 Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maximum-threshold_
 
-For more information about using this task, see [Release approvals and gates](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 

@@ -6,60 +6,66 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Approvals
 
 [!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
-You can enable manual approvals for each environment in a release definition.
 When a release is created from a release definition that defines
 approvals, the deployment stops at each point where approval is required
 until the specified approver grants approval or rejects the release (or
 re-assigns the approval to another user).
+You can enable manual deployment approvals for each environment in a release definition.
 
-[What's the difference between a release definition and a release?](../../../releases/index.md)
+## Define a deployment approval
 
-## Define manual approvals
+1. Decide if you need pre-deployment approvers, post-deployment approvers, or both
+   for an environment. Then open the appropriate conditions panel(s). 
 
-You can define pre-deployment approvers, post-deployment approvers, or both for an environment.
+   For a **pre-deployment** approval, choose the icon at the entry point of the environment
+   and enable pre-deployment approvers.
 
-![Pre-deployment approvals settings](_img/environments-01.png)
+   ![Pre-deployment approvals settings](_img/environments-01.png)
 
-![Post-deployment approvals settings](_img/environments-01a.png)
+   For a **post-deployment** approval, choose the icon at the exit point of the environment
+   and enable post-deployment approvers.
 
-You can select one or more approvers for an approval step, and add multiple approvers for both pre-deployment
-and post-deployment settings. These approvers can be individual users or groups of users. 
-When a group is specified as an approver, only one of the users in that group needs to approve
-for the release to move forward.
+   ![Post-deployment approvals settings](_img/environments-01a.png)
 
-* If you are using **Visual Studio Team Services** (VSTS), you
-  can use local groups managed in VSTS or
-  Azure Active Directory (AAD) groups if they have been
-  added into VSTS.
+1. Select one or more **Approvers** for the approval step. You can add multiple approvers for both pre-deployment
+   and post-deployment settings. These approvers can be individual users or groups of users. 
+   When a group is specified as an approver, only one of the users in that group needs to approve
+   for the deployment to occur or the release to move forward.
 
-* If you are using **Team Foundation Server** (TFS),
-  you can use local groups managed in TFS or Active
-  Directory (AD) groups if they have been added into TFS.
+   * If you are using **Visual Studio Team Services** (VSTS), you
+     can use local groups managed in VSTS or
+     Azure Active Directory (AAD) groups if they have been
+     added into VSTS.
+   * If you are using **Team Foundation Server** (TFS),
+     you can use local groups managed in TFS or Active
+     Directory (AD) groups if they have been added into TFS.
 
+   The creator of a deployment is considered to be a separate user
+   role for deployments. For more details,
+   see [Release permissions](../../../policies/permissions.md#release-permissions).
+   Either the release creator or the deployment creator can be restricted from approving deployments. 
 
-The creator of a deployment is considered to be a separate user
-role for deployments. For more details,
-see [Release permissions](../../../policies/permissions.md#release-permissions).
-Either the release creator or the deployment creator can be restricted from approving deployments. 
+1. Specify the **Timeout** for the approval. If no approval is granted within the timeout period you
+   specify, the deployment is rejected.
 
-### Approval options
+1. Specify the **Approval policies** you require:
 
-If no approval is granted within the **Timeout** period you specify, the release is rejected.
+   * You can specify that the user who requested (initiated or created) the release cannot approve it.
+     If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. 
+   * You can reduce user workload by automatically approving subsequent prompts if the specified
+     user has already approved the deployment to a previous environment in the pipeline
+     (applies to pre-deployment approvals only). Take care when using this option; for example, you may
+     want to require a user to physically approve a deployment to production even though that user has
+     previously approved a deployment to a QA environment in the same release pipeline.  
 
-You can implement a release approvals policy by specifying that the user who requested (initiated or created) the release cannot approve it.
-
-You can reduce user workload by automatically approving subsequent prompts if the specified
-user has already approved the release to a previous environment in the pipeline. Take care
-when using this option; for example, you may want to require a user to physically approve a release
-to production even though that user has previously approved a release to a QA environment
-in the same release pipeline.  
+   ![Pre-deployment approval policy settings](_img/environments-02.png)
 
 ### Approval notifications
 
@@ -73,14 +79,14 @@ where the user can approve or reject the release.
 
 <a name="approve-release"></a>
 
-## Approve or reject a release
+## Approve or reject a deployment
 
 During a release, the deployment pipeline will stop at any stage that requires approval, and
 will display an alert or indicator to the user. In the **Releases**, **Summary**, and **Logs** pages
 and lists, it displays the ![Waiting for approver icon](_img/approve-icon.png)
-icon when the release is waiting for approval by the current user, or the
+icon when the deployment is waiting for approval by the current user, or the
 ![Waiting for different user icon](_img/approve-other-icon.png) icon
-when the release is waiting for approval by a different user.
+when the deployment is waiting for approval by a different user.
 This link or icon displays the approval dialog.
  
 ![A release in the Releases page paused waiting for approval](_img/approve-01.png)
@@ -96,7 +102,7 @@ from needing to interact with each approval request individually.
 Use the approvers pop-up dialog to:
 
 * Enter a comment
-* Approve or reject the release
+* Approve or reject the deployment
 * Reassign the approval to somebody else
 * Defer the deployment to a specified date and time
 
@@ -109,7 +115,7 @@ In this case, the approvers pop-up dialog contains an
 This enables the administrator to enter comments, approve,
 reject, reassign, or defer the deployment.
 
-You can also approve and reject pending releases by accessing the
+You can also approve and reject pending deployments by accessing the
 [Release Management REST API](../../../../../integrate/index.md).
 
 ## View and monitor manual approvals
@@ -121,13 +127,13 @@ action log entry.
 
 For example, in this screenshot pre-deployment approval was granted, and the
 **Action** link displays the name of the approver and the message entered by that user
-when approving (or rejecting) the release.  
+when approving (or rejecting) the deployment.  
 
 ![Gates log results ](_img/approve-05.png)
 
 Notice that this release is now waiting for post-deployment approval.
 Choosing the **Action** item for this will display the approval dialog where 
-the release can be approved or rejected.
+the deployment can be approved or rejected.
 
 ## Related topics
 

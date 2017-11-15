@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.manager: douge
-ms.author: alewis
-ms.date: 08/10/2016
+ms.author: dastahel
+ms.date: 11/13/2017
 ---
 
 # Build: Xcode Package iOS
@@ -15,7 +15,10 @@ ms.date: 08/10/2016
 
 ![](_img/xcode-package-ios.png) Generate an .ipa file from Xcode build output
 
-This step is relevant if you are using Xcode 6.4.
+## Deprecated
+**The Xcode Package iOS task has been deprecated.
+It is relevant only if you are using Xcode 6.4.
+Otherwise, use the latest version of the Xcode task.**
 
 ## Demands
 
