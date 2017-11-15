@@ -463,7 +463,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Pull Request Status Extensibility in Public Preview</td>
-            <td style="background:rgb(232, 232, 232);">2018 RC1 only and Future</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
 		<tr>
             <td>Let contributed build sections control section visibility</td>
@@ -3427,6 +3427,10 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td style="background:rgb(243, 232, 255);">[2018 RTW](https://aka.ms/relnotes-tfs2018)</td>
+          <td>16.122.27102.1</td>
+        </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
           <td>16.122.26918.3</td>
