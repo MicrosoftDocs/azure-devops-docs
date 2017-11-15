@@ -125,6 +125,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	![Burndown Widget - Configuration - Select burndown on count](./_img/burndown-widget/burndownup-config-select-burndown-on-count.png)  
 	And, here we choose a sum based on Story Points.   
 	![Burndown Widget - Configuration - Select burndown on field](./_img/burndown-widget/burndownup-config-select-burndown-on-field.png)  
+	
+	> [!NOTE]  
+	> Burndown works best when aggregating size fields like story points. If you choose to Burndown on fields that change during the sprint, like Remaining Work for Tasks, the calculation of “Items not Estimated” will grow as items are closed. 
 
 	<!---You can select from one of several fields such as Remaining Work, Total Remaining, Average Burn Rate, and Projected Completion Date.  You may select to burndown by on a count of work items -->
 
@@ -206,12 +209,7 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |**Total&nbsp;Scope** |Represents to the total scope of the burndown. The plotted points include both completed and remaining work. The total scope line tells you how much scope change your project has. For past data points, the plotted total scope represents actual total scope as of the end of each interval/iteration. For future data points, the plotted total scope represents a projected scope change, based on past scope changes.|
 |**Burndown**|Represents the burndown. The burndown line tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown.
 
-
-## Configure the Burnup widget
-
-Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
-
-## Example: Configure a sprint burndown 
+## Example: Configuring the Burndown widget to act as a Sprint Burndown 
 One of the most common burndowns is the sprint burndown. A Sprint burndown is useful to determine if your team is on track to complete their sprint plan. You can use the following example on how to configure your Burndown widget to represent a sprint burndown. For this example we'll choose to show burndown for the Fabrikam Fiber - Website team for Sprint 120. The sprint starts on 10/30/2017  and ends on 11/19/2017.
 
 
@@ -223,12 +221,16 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png) 
 
-3. Optional - You can choose to add any field criteria to filter your burndown. You can also select how you want to calculate burndown. For this example use Count of work items and leave the field criteria empty. This should be selected by default when adding a new widget.
-4.Set the start date to be the first day of your sprint. For example, 10/22/2017.
+3. Select the iteration path you want to create the sprint burndown for. Add a field criteria on "Iteration Path" to match your sprint. You can also choose to add other field criteria like Priority to filter your burndown.
+
+	![Burndown Widget - Configuration - Field criteria](./_img/burndown-widget/sprint-burndownup-config-filters.png)
+
+4. Select how you want to calculate burndown. You can use Count of work items, or sum of any field.
 
 	![Sprint Burndown Widget - Configuration - Select plot by](./_img/burndown-widget/sprint-burndownup-config-wit-default.png) 
 
-5. Set the start date to be the first day of your sprint. For example 10/23/2017.
+4. Set the start date to be the first day of your sprint. For example, 10/22/2017.
+
 6. Set **Plot burndown by** to Date.
 7.	Set the end date to be the last day of your sprint. For example 11/9/2017.
 
@@ -236,8 +238,11 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for Sprint 120. The burndown shows a count of work items completed per day. To change the sprint this widget is monitoring, for example Sprint 121, you will need to manually change the dates in the widget configuration.
 
-	![Sprint Burndown Widget](./_img/burndown-widget/burndownup-sprint-burndown.png)
-	
+
+## Configure the Burnup widget
+
+Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
+
 **Burnup Widget displaying a Stories Burnup**
 
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)

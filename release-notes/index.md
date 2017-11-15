@@ -46,7 +46,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Simplified publisher onboarding and member management|Marketplace|--|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
 
-### 2017 Q1
+### 2018 Q1
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
