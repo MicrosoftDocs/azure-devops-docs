@@ -332,7 +332,7 @@
       href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
       href: tasks/test/cloud-based-web-performance-test.md
-    - name: Mobile Center Test
+    - name: App Center Test
       href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
       href: tasks/test/publish-code-coverage-results.md
@@ -382,7 +382,7 @@
       href: tasks/deploy/iis-deploy.md
     - name: IIS Web App Manage
       href: tasks/deploy/iis-manage.md
-    - name: Mobile Center Upload
+    - name: App Center Distribute
       href: tasks/deploy/mobile-center-upload.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
