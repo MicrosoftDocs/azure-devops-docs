@@ -18,16 +18,12 @@
       items:
       - name: ASP.NET Core
         href: apps/aspnet/build-aspnet-core.md
-      - name: ASP.NET Core Container
-        href: apps/aspnet/build-aspnet-core-docker.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
       - name: .NET for Windows
         href: apps/windows/dot-net.md
       - name: Node.js
         href: apps/nodejs/build-gulp.md
-      - name: Node.js Container
-        href: apps/nodejs/build-nodejs-docker.md
       - name: Java
         href: apps/java/build-maven.md
       - name: C++
@@ -336,7 +332,7 @@
       href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
       href: tasks/test/cloud-based-web-performance-test.md
-    - name: Mobile Center Test
+    - name: App Center Test
       href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
       href: tasks/test/publish-code-coverage-results.md
@@ -386,7 +382,7 @@
       href: tasks/deploy/iis-deploy.md
     - name: IIS Web App Manage
       href: tasks/deploy/iis-manage.md
-    - name: Mobile Center Upload
+    - name: App Center Distribute
       href: tasks/deploy/mobile-center-upload.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md

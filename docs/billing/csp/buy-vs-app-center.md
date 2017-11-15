@@ -17,7 +17,7 @@ To enable the customer to purchase App Center resources using a CSP-based Azure 
 
  * Co-owner role permissions to the CSP-based Azure subscription
 
- ![Get co-owner role permissions through the Azure Portal](../_ing/csp/app-center-permissions.png)
+ ![Get co-owner role permissions through the Azure Portal](../_img/csp/app-center-permissions.png)
  
  * Org admin rights in App Center  
 
