@@ -20,6 +20,9 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > [!TIP]
 > Looking for help to get started? See the how-to's for [restoring](../../../package/nuget/consume.md) and [publishing](../../../package/nuget/publish.md) packages.
 
+> [!TIP]
+> This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
+
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
@@ -258,6 +261,9 @@ None
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+### Publishing symbols
+When you push packages to a Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md). 
 
 ## Custom NuGet command
 

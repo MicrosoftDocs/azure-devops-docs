@@ -30,15 +30,15 @@ You can access the Analytics Service data through the Power BI Desktop Visual St
 
 3. Next, select Other > OData Feed and click Connect.  
 
-	![Select OData Feed ](_img/pbi2.png)  
+	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
 
-4.	Enter the URL in the format:  
+4.	Enter the URL in the format into a supported browser:  
 
-	```
+	```OData
 	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
-	![Select OData Feed ](_img/pbi3.png)  
+	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
 
 	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
@@ -51,11 +51,11 @@ You can access the Analytics Service data through the Power BI Desktop Visual St
 	>[!IMPORTANT]  
 	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load correctly. In order to perform trend analysis, narrow the scope of data being retrieved to the specific items and time frame and pull this information in with a separate OData query.  
 
-	![Select the entities of data to retrieve](_img/pbi4.png)  
+	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
 	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
 
-###Handle relationships
+### Handle relationships
  
 By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
 

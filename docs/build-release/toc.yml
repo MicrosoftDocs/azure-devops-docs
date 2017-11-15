@@ -8,6 +8,12 @@
     href: overview-azure.md
 - name: Quickstarts
   items:
+    - name: Azure DevOps for your app
+      items:
+      - name: ASP.NET Core
+        href: apps/cd/azure/azure-devops-project-aspnetcore.md
+      - name: Node.js
+        href: apps/cd/azure/azure-devops-project-nodejs.md
     - name: Build your app
       items:
       - name: ASP.NET Core
@@ -48,8 +54,14 @@
     href: actions/ci-build-git.md
   - name: CI builds for GitHub repo
     href: actions/ci-build-github.md
+  - name: YAML builds configured as code
+    href: actions/build-yaml-get-started.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
+  - name: Use approvals and gates
+    href: actions/deploy-using-approvals.md
+  - name: Azure DevOps Project for GitHub
+    href: actions/azure-devops-project-github.md  
 - name: Concepts
   items:
   - name: Agents
@@ -90,6 +102,8 @@
         href: concepts/definitions/release/triggers.md
       - name: Variables
         href: concepts/definitions/release/variables.md
+      - name: Approvals and gates
+        href: concepts/definitions/release/approvals/index.md
       - name: Templates
         href: concepts/definitions/release/env-templates.md
   - name: Process
@@ -147,6 +161,8 @@
       href: actions/agents/v2-linux.md
     - name: Configure TFS authentication
       href: actions/agents/configure-tfs-authentication.md
+  - name: Configure YAML builds as code
+    href: actions/build-yaml.md
   - name: Build more app types
     items:
     - name: Azure Cloud Service
@@ -189,6 +205,10 @@
     items:
     - name: Test as you build
       href: test/index.md
+  - name: Publish symbols for debugging
+    items:
+    - name: Publish symbols
+      href: symbols/index.md
   - name: Use packages in CI/CD
     items:
     - name: NuGet
@@ -254,14 +274,18 @@
       href: tasks/build/xamarin-android.md
     - name: Xamarin.iOS
       href: tasks/build/xamarin-ios.md
-    - name: Xcode Build
-      href: tasks/build/xcode-build.md
+    - name: Xcode
+      href: tasks/build/xcode.md
     - name: Xcode Package iOS
       href: tasks/build/xcode-package-ios.md
   - name: Utility tasks
     items:
     - name: Archive files
       href: tasks/utility/archive-files.md
+    - name: Azure Function
+      href: tasks/utility/azure-function.md
+    - name: Azure Monitor
+      href: tasks/utility/azure-monitor.md
     - name: Batch script
       href: tasks/utility/batch-script.md
     - name: Command line
@@ -272,6 +296,8 @@
       href: tasks/utility/copy-files.md
     - name: cURL Upload Files
       href: tasks/utility/curl-upload-files.md
+    - name: Delay
+      href: tasks/utility/delay.md
     - name: Delete Files
       href: tasks/utility/delete-files.md
     - name: Extract Files
@@ -282,10 +308,18 @@
       href: tasks/utility/install-apple-certificate.md
     - name: Install Apple Provisioning Profile
       href: tasks/utility/install-apple-provisioning-profile.md
+    - name: Invoke REST API
+      href: tasks/utility/http-rest-api.md
+    - name: Manual Intervention
+      href: tasks/utility/manual-intervention.md
     - name: PowerShell
       href: tasks/utility/powershell.md
     - name: Publish Build Artifacts
       href: tasks/utility/publish-build-artifacts.md
+    - name: Publish to Azure Service Bus
+      href: tasks/utility/publish-to-azure-service-bus.md
+    - name: Query Work Items
+      href: tasks/utility/work-item-query.md
     - name: Service Fabric PowerShell
       href: tasks/utility/service-fabric-powershell.md
     - name: Shell script
@@ -302,7 +336,7 @@
       href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
       href: tasks/test/cloud-based-web-performance-test.md
-    - name: Mobile Center Test
+    - name: App Center Test
       href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
       href: tasks/test/publish-code-coverage-results.md
@@ -352,7 +386,7 @@
       href: tasks/deploy/iis-deploy.md
     - name: IIS Web App Manage
       href: tasks/deploy/iis-manage.md
-    - name: Mobile Center Upload
+    - name: App Center Distribute
       href: tasks/deploy/mobile-center-upload.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md

@@ -96,7 +96,7 @@ Let's observe how a change triggers and moves through our ring based deployment 
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving us two opportunities to validate the change and hotfix critical bugs before we release to production.
 
 > [!NOTE]
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/build-release/concepts/definitions/release/environments#approvals) for detailed documentation of our pipelines and the approval features for release management.
+> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/build-release/concepts/definitions/release/approvals/index) for detailed documentation of our pipelines and the approval features for release management.
 
 ## Dealing with monitoring and noise
 

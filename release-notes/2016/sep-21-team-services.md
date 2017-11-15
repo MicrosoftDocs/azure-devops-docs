@@ -79,7 +79,7 @@ You can now verify a bug by re-running the tests which identified the bug. You c
 
 ![verify bugs](_img/9_21_05.png)
 
-##Xcode Build task xcpretty formatting
+##Xcode task xcpretty formatting
 
 You can now format your xcodebuild output with [xcpretty](https://github.com/supermarin/xcpretty). You can also publish JUnit test results to Team Services with xcodebuild. Previously, [xctool](https://github.com/facebook/xctool) had to be used as the build tool to publish test results. Now, to enable xcpretty, check **Use xcpretty** and uncheck **Use xctool** in the **Advanced** section of the Xcode task.
 

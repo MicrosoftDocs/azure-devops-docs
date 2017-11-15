@@ -4,18 +4,20 @@ description: Step-by-step guidance on how to connect to Power BI Data Connector 
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
-ms.date: 10/31/2017
+ms.author: kaelli
+ms.date: 11/13/2017
 ---
 
 # Connect to VSTS with Power BI Data Connector
 
-<b>VSTS</b>
+**VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development.  The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Import data
 
@@ -131,7 +133,7 @@ The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January
 	> [!IMPORTANT]  
 	> Power BI automatically translates filtering and columns selection steps into queries to the underlying data source provided that they appear at the beginning of *Applied steps* list. Always start with filtering and columns selection before you apply more advanced transformations such as adding custom columns.
 
-	![](./_img/data-connector-get-data-13a.png)
+	<img src="./_img/data-connector-get-data-13a.png" alt="Product backlog" style="border: 1px solid #C3C3C3;" /> 
 
 13. **Wait for the data to load**. Closing the *Query Editor* triggers the load operation. 
 	You can observe its progress by looking at the status messages, which appear directly under 

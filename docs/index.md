@@ -173,6 +173,20 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Command-line tool</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -1267,6 +1281,9 @@ featureFlags:
                                 <ul class="noBullet">
                                     <li>
                                         <a class="barLink" href="/vsts/extend">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="/vsts/report/extend-analytics/index">Get Started with Analytics</a>
                                     </li>
                                 </ul>
                             </li>

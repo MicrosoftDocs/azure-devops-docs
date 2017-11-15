@@ -86,7 +86,7 @@ Custom picklist fields can be configured to allow users to enter their own value
 
 This feature also enables users to use picklist fields with the multi-value control extension available in the [marketplace](https://marketplace.visualstudio.com/).
 
-##Xcode 8 signing and exporting packages in the Xcode Build Task
+##Xcode 8 signing and exporting packages in the Xcode task
 The Xcode task now supports building your projects using Xcode 8 automatic signing. You can install the certs and provisioning profiles on the build server manually, or have the task install them by specifying the __File Contents__ options.
 
 ![Xcode signing](_img/10_12_01.png)
