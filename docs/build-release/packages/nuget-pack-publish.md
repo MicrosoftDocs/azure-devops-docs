@@ -76,3 +76,7 @@ Next, configure these options:
 ![Publish packages from team build](_img/publish-packages-from-team-build.png)
 
 Finally, save your build.
+
+<a name="publish-symbols-for-your-packages"></a>
+## Publish symbols for your packages
+When you push packages to a Package Management feed, you can also [publish symbols](/vsts/build-release/symbols/index). 

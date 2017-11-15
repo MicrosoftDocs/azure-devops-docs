@@ -6,23 +6,27 @@ ms.technology: vs-devops-build
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/10/2016
+ms.date: 11/14/2017
 ---
 
 # Build: Index Sources & Publish Symbols
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to a SymStore file share.
+> [!NOTE]
+> A symbol server is available with Package Management in **VSTS** and works best with **Visual Studio 2017 Update 4 or later**.
+> **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-Indexing enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
+![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+
+Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
+
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/vsts/package/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/vsts/build-release/symbols/index).
 
 > [!NOTE]
 > This build step works only:
 > 
 > * For code in Git or TFVC stored in Team Foundation Server (TFS) or VSTS. It does not work for any other type of repository.
-> 
-> * Using a [private agent](../../concepts/agents/agents.md#install). It does not work on a hosted agent.
 
 ## Demands
 
@@ -31,62 +35,103 @@ None
 ## Arguments
 
 <table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Path to publish symbols</td>
-<td><p>If you want to publish your symbols, specify the path to the SymStore file share.
-</p>
-<p>To prepare your SymStore symbol store:</p>
-<ol>
-<li>Set up a folder on a file-sharing server to store the symbols. For example, set up \\fabrikam-share\symbols.</li>
-<li>Grant full control permission to the [build agent service account](../../concepts/agents/agents.md#account).</li>
-</ol>
-<p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See [Publish Build Artifacts](../utility/publish-build-artifacts.md)).
-</p>
-</td>
-</tr>
-<tr>
-<td>Search pattern</td>
-<td>
-<p>Specify search criterea to find the .pdb files in the folder that you specify in **Path to symbols folder** argument. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).</p>
-<p> For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirectories named *bin*.</p>
-</td>
-</tr>
-<tr>
-<td>Path to symbols folder </td>
-<td>The path to the folder you want to search for symbol files.  If you leave it blank, the path used is [Build.SourcesDirectory](../../concepts/definitions/build/variables.md).</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Warn if not indexed</td>
-<td><p>Enable this option if you want the build summary to show a warning when sources are not indexed for a PDB file. A common cause of sources to not be indexed are when your solution depends on binaries that it doesn't build.</p>
-<p>Even if you don't select this option, the messages are written in log.
-</p></td>
-</tr>
-<tr>
-<td>Max wait time (min) </td>
-<td>If you want to set a time limit for this step, specify the number of minutes here. The build fails when the limit is reached. If you leave it blank, limit is 2 hours.</td>
-</tr>
-<tr>
-<td>Product</td>
-<td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank, [$(Build.DefinitionName)](../../concepts/definitions/build/variables.md) is passed.</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe.  If blank, [$(Build.BuildNumber)](../../concepts/definitions/build/variables.md) is passed.</td>
-</tr>
-<tr>
-<td>Artifact name</td>
-<td>Specify the pattern used for the name of the link from the artifact tab in the build summary to the file share where you are publishing your symbols. For example, if you specify ```Symbols_$(BuildConfiguration)```, then the name of the link to your published release symbols would be *Symbols_release*</td>
-</tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>Path to symbols folder</td>
+        <td>
+            <p>The root path that is searched for symbol files using the search patterns supplied in the next input.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Search pattern</td>
+        <td>
+            <p>[File matching pattern(s)](../file-matching-patterns.md) (rooted at the path supplied in the previous input) used to discover `pdbs` that contain symbols.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Index sources</td>
+        <td>
+            <p>Adds information about the location of the source repository to the symbols. This enables users using these symbols to navigate to the relevant source code.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Publish symbols</td>
+        <td>
+            <p>Publishes symbols to the symbol server selected in the next inputs.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Symbol server type</td>
+        <td>
+            **Package Management in Visual Studio Team Services:**
+            <ul>
+                <li>Select this option to use the symbol server built into the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed).</li>
+            </ul>
+            **File share:**
+            <ul>
+                <li>Select this option to use the file share supplied in the next input.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Path to publish symbols</td>
+        <td>
+            <p>The path to the SymStore file share.
+            </p>
+            <p>To prepare your SymStore symbol store:</p>
+            <ol>
+                <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \\fabrikam-share\symbols.</li>
+                <li>Grant full control permission to the [build agent service account](../../concepts/agents/agents.md#account).</li>
+            </ol>
+            <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See [Publish Build Artifacts](../utility/publish-build-artifacts.md)).
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <th style="text-align: center" colspan="2">Advanced</th>
+    </tr>
+    <tr>
+        <tr>
+            <td>Verbose logging</td>
+            <td>
+                Enables additional log details.
+            </td>
+        </tr>
+        <td>Warn if not indexed</td>
+        <td>
+            <p>Enable this option if you want the build summary to show a warning when sources are not indexed for a PDB file.
+                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn't build.</p>
+            <p>Even if you don't select this option, the messages are written in log.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>Max wait time (min) </td>
+        <td>If you want to set a time limit for this step, specify the number of minutes here. The build fails when the limit
+            is reached. If you leave it blank, limit is 2 hours.</td>
+    </tr>
+    <tr>
+        <td>Product</td>
+        <td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank,
+            [$(Build.DefinitionName)](../../concepts/definitions/build/variables.md) is passed.</td>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe. If blank,
+            [$(Build.BuildNumber)](../../concepts/definitions/build/variables.md) is passed.</td>
+    </tr>
+    <tr>
+        <td>Artifact name</td>
+        <td>Specify the pattern used for the name of the link from the artifact tab in the build summary to the file share where
+            you are publishing your symbols. For example, if you specify ```Symbols_$(BuildConfiguration)```, then the name
+            of the link to your published release symbols would be *Symbols_release*</td>
+    </tr>
+    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Use indexed symbols to debug your app
@@ -168,7 +213,5 @@ tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamprojec
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

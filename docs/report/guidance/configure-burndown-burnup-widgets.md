@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 11/08/2017
 ---
 
 
@@ -28,7 +28,8 @@ Use this topic to learn how to:
 > [!div class="checklist"]
 > * Install and configure the burndown or burnup widgets  
 > * How burndown metrics should be used  
-> * How to work with the burndown chart      
+> * How to work with the burndown chart    
+> * How to configure a sprint burndown     
 
 A burndown chart is a useful tool to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. A bug burndown chart can also be used to track completion of a set of bugs by a certain date. 
 
@@ -210,6 +211,33 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 
 Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
 
+## Example: Configure a sprint burndown 
+One of the most common burndowns is the sprint burndown. A Sprint burndown is useful to determine if your team is on track to complete their sprint plan. You can use the following example on how to configure your Burndown widget to represent a sprint burndown. For this example we'll choose to show burndown for the Fabrikam Fiber - Website team for Sprint 120. The sprint starts on 10/30/2017  and ends on 11/19/2017.
+
+
+1. Select a single team that you want to burndown for.
+
+	![Sprint-Burndown - Configuration - Select team](./_img/burndown-widget/sprint-burndownup-config-select-team.png)    
+
+2. Choose your work items. For this example choose the story backlog.
+
+	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png) 
+
+3. Optional - You can choose to add any field criteria to filter your burndown. You can also select how you want to calculate burndown. For this example use Count of work items and leave the field criteria empty. This should be selected by default when adding a new widget.
+4.Set the start date to be the first day of your sprint. For example, 10/22/2017.
+
+	![Sprint Burndown Widget - Configuration - Select plot by](./_img/burndown-widget/sprint-burndownup-config-wit-default.png) 
+
+5. Set the start date to be the first day of your sprint. For example 10/23/2017.
+6. Set **Plot burndown by** to Date.
+7.	Set the end date to be the last day of your sprint. For example 11/9/2017.
+
+	![Sprint Burndown Widget - Configuration - Dates](./_img/burndown-widget/sprint-burndownup-config-dates.png) 
+
+8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for Sprint 120. The burndown shows a count of work items completed per day. To change the sprint this widget is monitoring, for example Sprint 121, you will need to manually change the dates in the widget configuration.
+
+	![Sprint Burndown Widget](./_img/burndown-widget/burndownup-sprint-burndown.png)
+	
 **Burnup Widget displaying a Stories Burnup**
 
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)

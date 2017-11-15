@@ -35,7 +35,7 @@ However, any workflow that publishes malformed packages will break when moving t
 
 ### NuGet 3.x is recommended
 
-[!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
+[!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
 
 ### Authentication and authorization
 

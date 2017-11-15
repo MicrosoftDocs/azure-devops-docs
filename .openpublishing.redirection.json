@@ -762,6 +762,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/package/symbol/setup.md",
+            "redirect_url": "/vsts/package/symbols/debug-with-symbols",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build-release/apps/mobile/cordova-build.md",
             "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-build",
             "redirect_document_id": false

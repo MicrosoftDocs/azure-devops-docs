@@ -2,7 +2,7 @@ Publish NuGet packages to a feed in Package Management to share them with your t
 
 First, get the tools and your feed URL:
 
-[!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
+[!INCLUDE [](nuget-publish-endpoint.md)]
 
 Then, use the push command in step 3 above. You can also manually construct a push command as follows:  
 
