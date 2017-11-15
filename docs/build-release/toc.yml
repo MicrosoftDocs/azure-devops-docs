@@ -54,6 +54,8 @@
     href: actions/ci-build-git.md
   - name: CI builds for GitHub repo
     href: actions/ci-build-github.md
+  - name: YAML builds configured as code
+    href: actions/build-yaml-get-started.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
   - name: Use approvals and gates
@@ -159,6 +161,8 @@
       href: actions/agents/v2-linux.md
     - name: Configure TFS authentication
       href: actions/agents/configure-tfs-authentication.md
+  - name: Configure YAML builds as code
+    href: actions/build-yaml.md
   - name: Build more app types
     items:
     - name: Azure Cloud Service
