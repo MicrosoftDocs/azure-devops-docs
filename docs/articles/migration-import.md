@@ -9,8 +9,6 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 # Import
 
 > [!NOTE]
-> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
->
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 >
 > Be sure that you're on a [supported version](migration-overview.md#supported-tfs-versions-for-import) of TFS before continuing the other import tasks.
@@ -72,12 +70,12 @@ simply open the ```ProjectProcessMap.log``` file to see everything that was run 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you’re trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to VSTS and can be ignored. 
 
 ## Generating Import Files
-By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed – generating the import files. These two files specify your identity map between Active Directory (AD) and Azure Active Directory (AAD), and the import specification that will be used to kick off your migration. 
+By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed – generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (AAD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare Command
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map and then tries to connect to AAD to find each identity’s match. If your company has employed the Azure Active Directory Connect tool (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool), then TfsMigrator should find the matching identities and mark them as OK. If it doesn't find a match you will need to investigate why the user wasn't included in your directory sync. The Import specification file should be filled out prior to importing. 
+The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to AAD to find each identity’s match. Your company will need to employ the Azure Active Directory Connect [tool](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
 
-Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to AAD in order to populate the identity mapping file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
+Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to AAD in order to populate the identity map log file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
 ```cmdline
 TfsMigrator prepare /help
@@ -110,17 +108,15 @@ is the one you want your future VSTS account to be backed with. For our Fabrikam
 
 ![AAD login prompt](_img/migration-import/aadLogin.png)
 
-A successful run of TfsMigrator prepare will result in a set of logs and import files. 
+A successful run of TfsMigrator prepare will result in a set of logs and two import files. 
 
-![Import files generated by TfsMigrator](_img/migration-import/importFiles.png)
-
-After opening the log directory noted in TfsMigrator's output you will notice that there are two files and a Logs folder. ```IdentityMap.csv``` 
+After opening the log directory noted in TfsMigrator's output you will notice that there are two files and a Logs folder. ```IdentityMapLog.csv``` 
 contains the generated mapping of AD to AAD identities. ```import.json``` is the import specification file which needs to be filled out. 
-It's recommended that you take time to fill out the import specification file and review the identity mapping file for completeness. 
+It's recommended that you take time to fill out the import specification file, ```import.json```, and review the identity map log file, ```IdentityMapLog.csv```, for completeness before kicking off an import. 
 
 ### Import Specification File
 
-The import specification is a JSON file that serves as the file to provide import settings. It includes information such as the desired account name, storage account information, and location of the identity mapping file. Most of fields are auto-populated, some fields require user input prior to attempting an import.
+The import specification, ```import.json```, is a JSON file which provides import settings. It includes information such as the desired account name, storage account information, etc. Most of fields are auto-populated, some fields require user input prior to attempting an import.
 
 ![Newly generated import specification file](_img/migration-import/importSpecNotFilledOut.png)
 
@@ -132,15 +128,11 @@ Here is the breakdown of the fields and what action needs to be taken:
 |    ValidationData     |    Contains information needed to help drive your import experience                                        |    The 'ValidationData' section is generated by TfsMigrator. It contains information needed to help drive your import experience, so it's important that you don't edit the values inside of this section or your import could fail to start.   |
 |    Files              |    Name of the files containing import data.                                                               |    None - Review information for subfield actions below. |
 |    Target             |    Properties describing the new VSTS account to import into.                                     |    None - Review information for subfield actions below. | 
-|    AccountName        |    Desired name for the account that will be created during the import.                                  |    Select a name. This name can be quickly changed later after the import has completed. Note – do **NOT** create the account before   running the import. The account will be created as part of the import   process.                 |
-|    Location    |    SAS Key to the Azure storage account hosting the DACPAC and identity mapping file.                    |    None – This will be covered in a later step.                                                                                                                                                                                           |
-|    Dacpac         |    A file that packages up your collection database that is used to bring the data in during import.     |    None - In a later step you'll generate this file using your collection and will upload it to an Azure storage account. It will need to be updated based on the name you use when generating the DACPAC later in this process.    |
-|    IdentityMapping   |    Name of the identity mapping file to use.                                                               |    None - In a later step you'll upload this file along with the DACPAC to an Azure storage account. If you change the name of the file be sure to update it here as well.                                                            |
-|    ImportType        |    The type of import that you want to run.      |    None - In a later step you will select the type of import to run. 
+|    AccountName        |    Desired name for the account that will be created during the import.                                  |    Select a name. This name can be quickly changed later after the import has completed. Note – do **NOT** create a VSTS account with tis name before running the import. The account will be created as part of the import   process.                 |
+|    Location    |    SAS Key to the Azure storage account hosting the DACPAC.                    |    None – This will be covered in a later step.                                                                                                                                                                                           |
+|    Dacpac         |    A file that packages up your collection database that is used to bring the data in during import.     |    None - In a later step you'll generate this file using your collection and will upload it to an Azure storage account. It will need to be updated based on the name you use when generating the DACPAC later in this process.    |    
+|    ImportType        |    The type of import that you want to run.      |    None - In a later step you will select the type of import to run. |
  
-
-> [!IMPORTANT] 
-> If you have selected to import your collection into a region outside of the United States or Europe, then your data will be held in a secured location in the United States for up to 7 days as a staging point for the data import process. After that period has ended your staged data will be deleted.
 
 After following the above instructions, you should have a file that looks somewhat like the below. 
 
@@ -164,49 +156,48 @@ VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/r
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
+|    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
-### Identity Map
-Arguably the identity map is of equal importance to the actual data that you will be migrating to VSTS. Before opening the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into VSTS whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active.
-
-> When reviewing and editing the identity mapping file in Excel, ensure that the file is saved as a comma delimited CSV. Mapping files that are saved using a non-comma delimiter can't be used for import. 
+### Identity Map Log
+Arguably the identity map log is of equal importance to the actual data that you will be migrating to VSTS. When reviewing the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into VSTS whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active. 
 
 #### Active Identities
-Active identities refer to identities that will be users in VSTS post-import. On VSTS, these identities will be licensed and show up as a user in the account after migration. These identities will have a completed mapping between on-prem AD and hosted AAD in the identity mapping file.
+Active identities refer to identities that will be users in VSTS post-import. On VSTS, these identities will be licensed and show up as a user in the account after migration. These identities are marked as 'active' in the "Expected Import Status" column in the identity map log file.
 
 <a id="historical-identities"></a>
 #### Historical Identities
-These are identities that do **NOT** have completed mappings specified in the identity mapping file. This can either mean that there is no line entry present in the file for that identity or it could also be the case that there is a line in the file for that identity, but it isn't completely filled out. For example, no AAD user principal name was provided for a user. 
+These are identities that are mapped as 'historical' in the "Expected Import Status" column in the identity map log file. Also, identities that have no line entry present in the file will also become historical. An example of an identity with no entry would be an employee that no longer works at a company. 
 Historical Identities do **NOT** have access to a VSTS account after migration, do **NOT** have a licenses, and do **NOT** show up as a user in the account. All that is persisted is the notion of that identity's name in the account. This way their history can be searched at a later date. It's recommended that historical identities be used for users that are no longer at the company or won't ever be needing access to the VSTS account. Identities imported historically **CANNOT** be migrated later to become active identities. 
 
-### Understanding an Identity Map
-It's recommended that the identity mapping file be opened up in Excel. This will make it easier to both read and make edits. After opening the file, you will be presented with something similar to the below example. 
+### Understanding an Identity Map Log
+After opening the identity map log file, you will be presented with something similar to the below example. 
 
-
-![Identity mapping file generated by TfsMigrator](_img/migration-import/identityMapNewlyGenerated.png)
+![Identity map log file generated by TfsMigrator](_img/migration-import/identityMapNewlyGenerated.png)
 
 The table below explains what each column is used for. 
 
 
 > [!NOTE]   
-> The UserPrincipalName[Target] column **CANNOT** be manually updated. Users marked as "NO MATCH" will need to be investigated with your AAD admin to see why they aren't part of your Azure AD Connect sync. 
+> Users marked as "No Match Found (Check AAD Sync)" who you wanted to be added as full account members will need to be investigated with your AAD admin to see why they aren't part of your Azure AD Connect sync. 
 
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    User                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
-|    AD:SecurityIdentifier[Source]    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
-|    AAD:UserPrincipalName[Target]    |    The identifier for the matching AAD identity.   Entries in this column will show the identity that users will log into after   the migration. Everything belonging to the TFS identity will be remastered to   this AAD identity if the map is valid.                                                                                                                                                                |
-|    License                        |    Expected license that a user will be assigned during the import. This can be changed post import via the [users hub](https://docs.microsoft.com/en-us/vsts/accounts/add-account-users-assign-access-levels).                                                                                                                                                                                                        |
-|    License Assignment Override (**Not Supported**)     |    This feature is no longer supported. Users will be given the best matching licenses in VSTS for free. These free license are good until the 1st of the next month. Licensing changes can be made post import in the users hub.                                                                                                                                                                                  |
-|    Status                           |    Indication of whether or not the identity mapped   on this line is valid or not.                                                                                                                                                                          |
-|    Validation Date                  |    Last time the identity map was validated.                                                                                                                                                                                                                 |
+|    AD - User (TFS)                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
+|    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
+|    AAD - Expected Import User (VSTS)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check AAD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
+|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and AAD or "Historical" if we could not match the AD identity in your AAD.                                                                                                                                                                                                        |
+|    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
-Reading through the file you will notice the status column has either "OK" or "NO MATCH". OK indicates that it's expected that the identity on this row will map correctly on import and will become active. No matches will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
+Reading through the file you will notice the Expected Import Status column has either 'Active' or 'Historical'. Active indicates that it's expected that the identity on this row will map correctly on import and will become active. Historical will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
 
-Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct AAD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and have setup correctly. Check the [documentation](https://aks.ms/azureADconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
+> [!IMPORTANT]  
+> Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your AAD that was imported actively, recreating a new user in AAD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created AAD identity, but it will cause an import failure as this isn't supported. 
 
-Next, review the identities that are labeled as 'NO MATCH'. This implies that a matching AAD identity couldn't be found. This could be for one of four reasons.
+Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct AAD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises AD identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. 
+
+Next, review the identities that are labeled as 'Historical'. This implies that a matching AAD identity couldn't be found. This could be for one of four reasons.
 
 1. The identity hasn't been setup for sync between on-premises AD and Azure AD. 
 2. The identity hasn't been populated in your AAD yet; new employee scenario. 
@@ -215,25 +206,22 @@ Next, review the identities that are labeled as 'NO MATCH'. This implies that a 
 
 In the first two cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. 
 
+For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability.
 
-For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability. 
-
-> The UserPrincipalName[Target] column **CANNOT** be manually updated. Users marked as "NO MATCH" will need to be investigated with your AAD admin to see why they aren't part of your directory sync. 
-
-#### No Matched Identities 
+#### Historical Identities (Small Teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
 
-In cases where the Azure AD Connect hasn't been configured and run previously, you will notice that all users in the identity mapping file will be marked as 'NO MATCH'. Running an import with a complete set of no match identities will result in all users getting imported [historically](#historical-identities). It's strongly recommended that you configure [Azure AD Connect](https://aka.ms/azureadconnect) to ensure that your users are imported as active. 
+In cases where the Azure AD Connect hasn't been configured, you will notice that all users in the identity map log file will be marked as 'Historical'. Running an import this way will result in all users getting imported [historically](#historical-identities). It's strongly recommended that you configure [Azure AD Connect](https://aka.ms/azureadconnect) to ensure that your users are imported as active. 
 
-> Running an import with all no matches has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
+> Running an import with all historical identities has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
 
-To import with all no matches, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the account as the account owner. All other users will be imported historically. The account owner will then be able to [add users](../accounts/add-account-users-assign-access-levels.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) back in using their AAD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the AAD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
+To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the account as the account owner. All other users will be imported historically. The account owner will then be able to [add users](../accounts/add-account-users-assign-access-levels.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) back in using their AAD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the AAD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
 
-TfsMigrator will warn if it detects the complete no match scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
+TfsMigrator will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
 ### Visual Studio Subscriptions
-TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity mapping file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, VSTS will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
+TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, VSTS will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
 You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in VSTS. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the account.  
 
@@ -250,9 +238,8 @@ By this point you will have everything ready to execute on your import. You will
 > [!NOTE]   
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
-
 ### Detaching your Collection
-[Detaching the collection](/vsts/tfs-server/admin/move-project-collection) is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+[Detaching the collection](/vsts/tfs-server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
 If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/vsts/tfs-server/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
@@ -313,7 +300,7 @@ The output of the command will be a DACPAC that is generated from the collection
 
 DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to VSTS. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
-Before going any further, it’s always recommended to see if [old data can be cleaned up](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it’s always recommended to see if [old data can be cleaned up](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
 If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you’re still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. We’ll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
@@ -338,6 +325,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
 |    Central Canada               |    Central Canada              |
+|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
 > While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
 
@@ -349,10 +337,10 @@ Below are some additional recommended configurations for your SQL Azure VM.
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
 3. [Configure](https://docs.microsoft.com/en-us/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
-#### Configuring IP Firewall Rules for VSTS
+#### Configuring IP Firewall Rules for VSTS 
 
 It's highly recommended that you restrict access to your VM to only IPs from VSTS. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
@@ -372,6 +360,7 @@ Next you will need to grant access to the TFS Database Import Service itself. Yo
 |    Import Service - Brazil South                |    104.41.24.164    |
 |    Import Service - India South                 |    13.71.120.31     |
 |    Import Service - Canada Central              |    52.237.18.100    |
+|    Import Service - East Asia (Hong Kong)       |    13.75.106.194    |
   
 Next you will need to grant VSTS access. Again, you only need to grant an exception for the VSTS instance in the region that you're importing into.  
 
@@ -383,6 +372,7 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - Brazil South                          |    191.232.37.247   |
 |    VSTS - India South                           |    104.211.227.29   |
 |    VSTS - Canada Central                        |    52.237.19.6      |
+|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40     |
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
 
@@ -396,38 +386,41 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - Brazil South            |    191.235.94.154   |
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
+|    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
 
-**Pacakage Management IPs**
+**Package Management IPs**
 
 You will need to add execptions for all three services that make up Package Management.
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    Package Management - United States           |    52.173.148.93    |
-|    Package Management - West Europe             |    104.46.45.12     |
-|    Package Management - Australia East          |    40.127.64.137    |
-|    Package Management - Brazil South            |    191.234.179.224  |
-|    Package Management - India South             |    52.172.11.191    |
-|    Package Management - Canada Central          |    52.237.24.224    |
+|    Service                                         |    IP               |
+|----------------------------------------------------|---------------------|
+|    Package Management - United States              |    52.173.148.93    |
+|    Package Management - West Europe                |    104.46.45.12     |
+|    Package Management - Australia East             |    40.127.64.137    |
+|    Package Management - Brazil South               |    191.234.179.224  |
+|    Package Management - India South                |    52.172.11.191    |
+|    Package Management - Canada Central             |    52.237.24.224    |
+|    Package Management - East Asia (Hong Kong)      |    52.229.175.18    |
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    Package Management Feed - United States      |    52.173.251.89    |
-|    Package Management Feed - West Europe        |    104.47.155.93    |
-|    Package Management Feed - Australia East     |    40.127.95.106    |
-|    Package Management Feed - Brazil South       |    191.235.93.87    |
-|    Package Management Feed - India South        |    52.172.8.41      |
-|    Package Management Feed - Canada Central     |    52.237.19.70     |
+|    Service                                         |    IP               |
+|----------------------------------------------------|---------------------|
+|    Package Management Feed - United States         |    52.173.251.89    |
+|    Package Management Feed - West Europe           |    104.47.155.93    |
+|    Package Management Feed - Australia East        |    40.127.95.106    |
+|    Package Management Feed - Brazil South          |    191.235.93.87    |
+|    Package Management Feed - India South           |    52.172.8.41      |
+|    Package Management Feed - Canada Central        |    52.237.19.70     |
+|    Package Management Feed - East Asia (Hong Kong) |    52.229.163.155   |
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    Package Management Blob - United States      |    70.37.94.103     |
-|    Package Management Blob - West Europe        |    23.97.221.25     |
-|    Package Management Blob - Australia East     |    40.127.86.30     |
-|    Package Management Blob - Brazil South       |    191.235.90.183   |
-|    Package Management Blob - India South        |    52.172.54.122    |
-|    Package Management Blob - Canada Central     |    52.237.16.145    |
-
+|    Service                                          |    IP               |
+|-----------------------------------------------------|---------------------|
+|    Package Management Blob - United States          |    70.37.94.103     |
+|    Package Management Blob - West Europe            |    23.97.221.25     |
+|    Package Management Blob - Australia East         |    40.127.86.30     |
+|    Package Management Blob - Brazil South           |    191.235.90.183   |
+|    Package Management Blob - India South            |    52.172.54.122    |
+|    Package Management Blob - Canada Central         |    52.237.16.145    |
+|    Package Management Blob - East Asia (Hong Kong)  |    13.94.26.58      |
 
 Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
 
@@ -493,15 +486,14 @@ Following the Fabrikam example, the import specification would look like the fol
 
 Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to VSTS. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
 
-### Uploading the DACPAC and Import Files
+### Uploading the DACPAC
 
 > [!NOTE]   
-> If you're using the SQL Azure VM method then you only need to upload the identity mapping file.  
+> If you're using the SQL Azure VM method then you only need to provide the connection string. You will not have to upload any files and can skip this step.  
 
-All of the files required to run the import need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
+Your DACPAC will need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
 
 VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start successfully. Your data needs to be placed into the same region that you will be importing into. Placing it somewhere else will result in the import being unable to start. The below table covers the acceptable regions to create your storage account and upload your data.
- 
 
 |    Desired Import Region        |    Storage Account Region      |
 |---------------------------------|--------------------------------|
@@ -511,17 +503,16 @@ VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/region
 |    Brazil South                 |    Brazil South                |
 |    India South                  |    India South                 |
 |    Canada Central               |    Canada Central              |
+|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
 
-[Creating a blob container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following files:
-
-* Identity Map CSV 
+[Creating a blob container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 * Collection DACPAC 
 
 After the import has been completed you can delete the blob container and accompanying storage account.
 
-This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) or any other Azure storage [explorer tool](https://storageexplorer.com/). 
+This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) or any other Azure storage explorer tool like [Microsoft Azure Storage Explorer](https://storageexplorer.com/). 
 
 > [!NOTE]   
 > If your DACPAC is larger than 10GB then it's recommended that you use AzCopy. AzCopy has multi-threaded upload support for faster uploads.
@@ -563,7 +554,6 @@ Earlier in the process you partially filled out the import specification file ge
 
 * **Location** - Place the SAS Key generated from the script in the last step here.
 * **Dacpac** - Ensure the name in field is the same as the DACPAC file you uploaded to the storage account. Including the ".dacpac" extension. 
-* **IdentityMapping** - Ensure the name in the field is the same as the identity mapping file you uploaded to the Azure storage container. Including the ".csv" extension. 
 
 Using the Fabrikam example, the final import specification file should look like the following:
 
@@ -585,7 +575,7 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
 ### Considerations for Roll Back Planning
-A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings and identity map that you provide to the TFS Database Import Service.
+A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.
 
 Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
 
@@ -614,9 +604,9 @@ Here is an example of a completed import command:
 TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 ```
 
-Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity mapping file was built against. The user that signs in will become the owner of the imported account. 
+Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity map log file was built against. The user that signs in will become the owner of the imported account. 
 
 > [!NOTE]
 > Imports are limited to 5 against a single AAD tenant per 24 hour period. Only imports that are queued count against this cap.
 
-After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
+After the import starts the user that queued the import will receive an email. Around 5-10 minutes after queueing the import your team will be able to navigate to the account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
