@@ -120,25 +120,6 @@ steps:
 
 Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux Preview** or **Hosted macOS Preview**. You'll get different kinds of greetings from each of these typs of agent.
 
-## Example: Create an artifact
-
-This build archives your entire repo into a .ZIP file and publishes it as an artifact.
-
-```YAML
-steps:
-
-- archiveFiles@1
-  rootFolder: $(Build.SourcesDirectory)
-  displayName: Zip it
-# ommitting archiveFile because has default value of $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
- 
-- publishBuildArtifacts@1
-  pathToPublish: $(Build.ArtifactStagingDirectory)
-  artifactName: drop
-  artifactType: Container
-```
-Notice how you don't have to supply the default arguments such as `archiveFile`.
-
 ## Look up tasks
 
 To look up the syntax of the tasks that are built into VSTS and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks. 
