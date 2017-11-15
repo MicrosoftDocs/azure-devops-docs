@@ -14,6 +14,9 @@ ms.date: 11/13/2017
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
+> [!IMPORTANT]
+> To use the nuget.org upstream source, ensure you've [installed Package Management](../install.md) and [enabled the NuGet.org upstream source preview](../install.md#nuget-org-upstream-source).
+
 The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Package Management feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/feeds/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
 
 The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the nuget client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
