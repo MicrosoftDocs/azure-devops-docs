@@ -22,7 +22,7 @@ By using different task phases in a build or release definition, you can:
 
 | Activity | Release in VSTS | Release in TFS 2017 | Release in TFS 2018 | Build in VSTS |
 | --- | --- | --- | --- | --- |
-| Partition your deployment process into sections that run on agents and sections that run without an agent | Yes | Yes | Yes | Planned |
+| Partition your deployment process into sections that run on agents and sections that run without an agent | Yes | Yes | Yes | Yes |
 | Partition your build or deployment process into sections where tasks in each section can target a different set of private agents using different demands | Yes | Yes | Yes | Yes |
 | Partition your deployment process into sections where tasks in each section can target a different agent queue | Yes | Yes | Yes | Planned |
 | Introduce a manual intervention task where deployment pauses while an operator carries out manual processes or validates the state of the system before continuing the deployment | Yes | Yes | Yes | No |
@@ -30,7 +30,7 @@ By using different task phases in a build or release definition, you can:
 | Switch off checking out code for sets of tasks that include their own logic for accessing sources, or that do not require sources, which can reduce build time | No | No | No | Planned |
 | Publish build artifacts in one phase and consume those in subsequent phases | No | No | No | Yes |
 | Run multiple phases in parallel | Planned | Planned | Planned | Planned |
-| Permit access to OAuth tokens for only the tasks that need to interact with VSTS or TFS | Yes | Yes | Yes | Planned |
+| Permit access to OAuth tokens for only the tasks that need to interact with VSTS or TFS | Yes | Yes | Yes | Yes |
 | Specify different execution timeouts for different sets of tasks to maximize deployment performance and control | Yes | Yes | Yes | Yes |
 | Specify the conditions under which the tasks in the phase will execute; for example, when a previous phase has failed or when a [custom condition](conditions.md) defined by an expression is true | Yes | No | Yes | Planned |
 
