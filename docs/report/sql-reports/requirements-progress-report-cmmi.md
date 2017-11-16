@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Requirements Progress Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Requirements Progress report lists all requirements, filtered by product area and iteration in order of importance.  
   

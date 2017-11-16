@@ -8,7 +8,7 @@ ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/08/2017
+ms.date: 11/16/2017
 ---
 
 
@@ -216,5 +216,5 @@ If you receive the following message, [you can fix it by removing nested child i
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
 

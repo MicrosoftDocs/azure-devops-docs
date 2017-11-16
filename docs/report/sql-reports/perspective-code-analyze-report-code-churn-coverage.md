@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Analyze and report on code churn and coverage using the code churn and run coverage perspectives
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can report on the software quality by using the Code Churn and Run Coverage perspectives from the SQL Server Analysis Services cube for Visual Studio Team Foundation Server.  By using these perspectives, you can view just the measures, dimensions, and attributes that are associated with the changes in lines of codes and the extent to which code is covered in builds and test runs.  
   

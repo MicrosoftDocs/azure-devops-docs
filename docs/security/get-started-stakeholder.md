@@ -124,7 +124,8 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 - [Add work items](../work/backlogs/add-work-items.md)  
 - [Create your backlog](../work/backlogs/create-your-backlog.md)
 - [Kanban quickstart](../work/kanban/kanban-quickstart.md)
- 
+
+If you want to provide a group of users access to provide feedback, then you don't need to give them Stakeholder access. Instead, simply [give reviewers permissions to provide feedback](../feedback/give-permissions-feedback.md). 
 
 <a id="feature-access">  </a> 
 ### Stakeholder feature access

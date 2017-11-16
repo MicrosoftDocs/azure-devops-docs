@@ -11,7 +11,7 @@ ms.date: 10/31/2017
 ---
 # Address inaccuracies published for summary values
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this topic. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
   

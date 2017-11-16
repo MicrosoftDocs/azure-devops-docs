@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Status on All Iterations Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After work has progressed on several iterations, also known as sprints, you can view the team progress by viewing the Status on All Iterations report. This report helps you track the team's performance over successive iterations.  
   

@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 # Table reference for the relational warehouse database
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can create reports and query for data by using the warehouse database. The data in the warehouse is collected from the TFS operational stores and organized in a set of tables, views, and table-valued functions that are designed for creating reports.  
   

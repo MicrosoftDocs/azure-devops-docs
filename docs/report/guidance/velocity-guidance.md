@@ -1,18 +1,19 @@
 ---
-title: Velocity guidance | VSTS & TFS
+title: Velocity guidance
+titleSuffix: VSTS & TFS 
 description: Guidance for working with velocity charts
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 11/16/2017
 ---
 
  
 # Velocity metrics and usage guidance 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
  
 Velocity provides a useful metric for these activities:  
 - Support sprint planning  
@@ -57,8 +58,11 @@ For example, you can create a chart of the number of Product backlog items and b
 
 > [!div class="nextstepaction"]
 > [Configure or view velocity chart](team-velocity.md) 
-> [Forecast your sprints](../../work/scrum/forecast.md)
-> [Plan your sprint](../../work/scrum/sprint-planning.md).
+
+
+See also:
+- [Forecast your sprints](../../work/scrum/forecast.md)
+- [Plan your sprint](../../work/scrum/sprint-planning.md).
 
 
 ### Industry resources

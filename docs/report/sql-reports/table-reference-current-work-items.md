@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 # Current Work Item tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 You can query for data about the current state of bugs, tasks, and other types of work items by using the FactCurrentWorkItem table and the associated dimension tables.  

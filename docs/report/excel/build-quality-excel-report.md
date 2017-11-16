@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Build Quality Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build definitions for a team project.  

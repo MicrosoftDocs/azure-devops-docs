@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017
+ms.date: 11/15/2017
 ---
 
-#Change a process control setting for the data warehouse or Analysis Services cube
+# Change a process control setting for the data warehouse or Analysis Services cube
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 
