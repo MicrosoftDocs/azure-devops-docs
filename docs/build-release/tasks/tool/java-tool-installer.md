@@ -14,7 +14,7 @@ ms.date: 11/15/2017
 
 **VSTS**
 
-<img alt="icon" width="32" height="32" alt="icon" src="https://docs.microsoft.com/media/logos/logo_java.svg"> Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
+![icon](_img/java.png) Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
 
 ## Demands
 
