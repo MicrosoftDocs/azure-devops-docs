@@ -21,6 +21,10 @@ Hosted Pipelines.
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-VSTS/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
 
+## Create a VSTS account for your customers
+
+You may need to create a VSTS account for your customers. Follow these steps to create one.
+
 * Log into the [Partner Center](https://partnercenter.microsoft.com).
 * Choose the customer for whom you are creating the VSTS account.
 * Choose **Service Management**.
