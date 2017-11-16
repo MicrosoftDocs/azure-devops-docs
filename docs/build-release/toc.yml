@@ -404,6 +404,8 @@
     items:
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
+    - name: Java Tool Installer
+      href: tasks/tool/java-tool-installer.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform

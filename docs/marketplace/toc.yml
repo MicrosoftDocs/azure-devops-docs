@@ -6,8 +6,12 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install VSTS extensions
+  - name: Install free VSTS extensions
     href: install-vsts-extension.md
+  - name: Preview paid VSTS extensions
+    href: start-trial-vsts-extension.md
+  - name: Buy and install paid VSTS extensions
+    href: install-paid-vsts-extension.md
   - name: Install TFS extensions
     href: get-tfs-extensions.md
   - name: Assign paid extensions
