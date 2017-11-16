@@ -8,6 +8,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
+hide_comments: true
 ---
 
 # VSTS Features Timeline
@@ -3524,3 +3525,11 @@ Versions in the “Server” column are linked to the appropriate download locat
       </tbody>
     </table>
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
+
+## Feedback
+
+We would love to hear what you think about these features. Report any problems through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) or provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) if you have ideas on things you’d like to see us prioritize.
+
+<img src="2017/_img/125_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
