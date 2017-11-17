@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Shared dimensions in the Analysis Services Cube
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can report data from across team project collections because all reportable data in a deployment of Team Foundation is written to the SQL Server Analysis Services cube for Visual Studio Team Foundation Server. You can use the Team Project dimension to show the data for only those team projects that you specify. You can use the Date dimension to create trend reports that show changes over a day, a week, a month, or a year. All perspectives in the cube share these dimensions.  
   

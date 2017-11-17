@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Bug Status Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After the team has started to find and fix bugs, you can track the team's progress toward resolving and closing bugs by viewing the Bug Status report. This report shows the cumulative bug count based on the bug state, priority, and severity.  
   

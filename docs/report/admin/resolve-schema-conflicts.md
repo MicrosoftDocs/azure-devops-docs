@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Resolve data warehouse schema conflicts
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 
 Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. When a schema conflict occurs, fields that are not in conflict are processed as usual but fields that are in conflict are assigned null values until you resolve the conflicts and then process as usual. In addition, the system generates a notification event for each conflict that it detects. By subscribing to the event, you can receive alerts when schema conflicts occur for any team projects that are defined for a collection. You must correct all schema conflicts to unblock the processing of the associated data for the warehouse and to enable the associated reports to display current data. 
 

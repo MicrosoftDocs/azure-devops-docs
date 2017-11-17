@@ -1,10 +1,12 @@
 ---
-title: Configure and view Velocity charts in VSTS & TFS
+title: Configure and view Velocity charts
+titleSuffix: VSTS & TFS 
 description: Track team velocity across several sprints using the velocity chart or widget       
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: get-started-article
+ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/01/2017
@@ -15,7 +17,7 @@ ms.date: 09/01/2017
 
 # Configure and view Velocity charts 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 
