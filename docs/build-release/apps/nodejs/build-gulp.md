@@ -92,6 +92,18 @@ Choose your version control system to get specific instructions for copying the 
 
 1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to **Publish to TFS/VSTS**.
 
+1. <a name="build-for-linux"></a>If you are creating a build that you want to deploy to Linux, you must follow these additional steps:
+
+   * Select the **Archive Files** task and either remove it or, in the **Control Options** section of the 
+     task arguments panel, uncheck the **Enable** checkbox.
+
+   * Select the **Copy Publish Artifact** task, change the **Copy Root** argument to `$(Build.SourcesDirectory)`
+     and the **Contents** argument to just `**` 
+   
+   >By default, the build template creates a ZIP file for deploying to Azure Web Apps or a Windows VM.
+   These changes cause the build to generate a set of uncompressed files and folders suitable for deployment
+   to a Linux VM running the **nginx** web server.   
+
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
