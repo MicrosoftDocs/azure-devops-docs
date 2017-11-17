@@ -390,13 +390,13 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 
 **Package Management IPs**
 
-You will need to add execptions for all three services that make up Package Management.
+You will need to add exceptions for all three services that make up Package Management.
 
 |    Service                                         |    IP               |
 |----------------------------------------------------|---------------------|
 |    Package Management - United States              |    52.173.148.93    |
 |    Package Management - West Europe                |    104.46.45.12     |
-|    Package Management - Australia East             |    40.127.64.137    |
+|    Package Management - Australia East             |    13.73.100.166    |
 |    Package Management - Brazil South               |    191.234.179.224  |
 |    Package Management - India South                |    52.172.11.191    |
 |    Package Management - Canada Central             |    52.237.24.224    |
@@ -406,7 +406,7 @@ You will need to add execptions for all three services that make up Package Mana
 |----------------------------------------------------|---------------------|
 |    Package Management Feed - United States         |    52.173.251.89    |
 |    Package Management Feed - West Europe           |    104.47.155.93    |
-|    Package Management Feed - Australia East        |    40.127.95.106    |
+|    Package Management Feed - Australia East        |    13.70.143.138    |
 |    Package Management Feed - Brazil South          |    191.235.93.87    |
 |    Package Management Feed - India South           |    52.172.8.41      |
 |    Package Management Feed - Canada Central        |    52.237.19.70     |
