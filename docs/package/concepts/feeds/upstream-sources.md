@@ -27,7 +27,7 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 - Simplicity: your NuGet.config, .npmrc, or settings.xml contains exactly one feed (your product feed). 
 - Determinism: your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
 - Provenance: your feed knows the provenance of packages it saved from upstream sources, so you can be sure that you're using the original package, not a custom or malicious copy published to your feed
-- Peace of mind (currently nuget.org only): packages used from upstream sources are guaranteed to be saved in the feed on first use; if the [upstream source goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
+- Peace of mind (currently nuget.org only): packages used from upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, [goes down](#offline-upstreams), or deletes a package you depend on, you can continue to develop and build
 
 > [!IMPORTANT]
 > Right now, only the nuget.org upstream source guarantees that every package is saved in the feed on first use; the npmjs.com upstream source will be updated early in 2018 to provide the same guarantee.
@@ -47,7 +47,9 @@ To take advantage of the determinism provided by upstream sources, you should en
 
 ### Shadowing in the nuget.org upstream source
 
-In the nuget.org upstream source, shadowing is allowed at the granularity of a single package-version. So, if a user pushes `Newtonsoft.Json 10.0.1` to the feed, all subsequent requests for `Newtonsoft.Json 10.0.1` will receive the feed's copy of the package. However, the first request for `Newtonsoft.Json 10.0.2` would retrieve that version from nuget.org via the upstream source. The feed will save a copy of version 10.0.2, and subsequent requests for `Newtonsoft.Json 10.0.2` would retrieve that saved copy.
+In the nuget.org upstream source, shadowing occurs at the package-version level for packages already in the feed when the upstream is enabled. So, if a user pushes `Newtonsoft.Json 10.0.1` to the feed before the nuget.org upstream source is enabled, all subsequent requests for `Newtonsoft.Json 10.0.1` will receive the feed's copy of the package (regardless of the status of the nuget.org upstream source). Continuing the example, once the nuget.org upstream source is enabled, the first request for `Newtonsoft.Json 10.0.2` would retrieve that version from nuget.org via the upstream source. The feed will save a copy of version 10.0.2, and subsequent requests for `Newtonsoft.Json 10.0.2` would retrieve that saved copy.
+
+If you're already using the nuget.org upstream source and you need to push a package-version that would shadow a package-version on nuget.org, you must disable the nuget.org upstream source, push your package, then re-enable the nuget.org upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages are retained in the feed, even if the upstream source is disabled or removed. Continuing the above example, pushing `Newtonsoft.Json 10.0.2` would not be possible, even if the nuget.org upstream source was disabled, because the feed already contains a saved copy of that package-version. See the [immutability doc](../../feeds/immutability.md) for more info.
 
 ### Shadowing in the npmjs.com upstream source
 
@@ -66,14 +68,13 @@ When you enable an upstream source, packages installed from the upstream source 
 > [!IMPORTANT]
 > Right now, only the nuget.org upstream source guarantees that every package is saved in the feed on first use; the npmjs.com upstream source will be updated early in 2018 to provide the same guarantee.
 
-Caching can improve download performance and save network bandwidth, esp. for TFS servers located on internal/dedicated networks.
-
+Saving can improve download performance and save network bandwidth, esp. for TFS servers located on internal/dedicated networks.
 
 <a name="upstream-metadata-cache"></a>
 
 ## Upstream metadata cache
 
-When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. This means that list and ranged queries (like those commonly used in NuGet PackageRef projects) may not include a new version published to the public source within the last 24 hours. You can still install new versions by specifying an explicit version in your package install command.
+When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. This means that you may not be able to install a package that was published to the upstream source within the last 24 hours. 
 
 <a name="offline-upstreams"></a>
 
@@ -83,7 +84,7 @@ Upstream sources protect you and your CI/CD infrastructure from outages in publi
 
 For outages lasting less than 12 hours, you can continue to use the feed as normal thanks to the [metadata cache](#upstream-metadata-cache).
 
-For outages lasting more than 12 hours, which are quite infrequent, the feed will error when responding to list and range queries because those queries require the metadata cache which will have expired 12 hours after the outage began. In these scenarios, you can disable either the offline upstream or all upstreams of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-enable it.
+For outages lasting more than 12 hours, which are quite infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can disable either the offline upstream or all upstreams of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-enable it.
 
 ## npmjs.com only: online requirement
 
