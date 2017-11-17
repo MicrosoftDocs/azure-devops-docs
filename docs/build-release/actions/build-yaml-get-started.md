@@ -52,55 +52,55 @@ Next, choose which kind of Git service you're using:
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build defniition.
 
-* Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-* Choose the **.vsts-ci.yml** file, and then click **Edit**.
+2. Choose the **.vsts-ci.yml** file, and then click **Edit**.
 
-* Replace the contents of the file with the following:
+3. Replace the contents of the file with the following:
 
-```YAML
-steps:
+   ```YAML
+   steps:
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: restore
+       projects: "**/*.csproj"
+       displayName: dotnet restore
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: build
+       projects: "**/*.csproj"
+       arguments: --configuration release
+       displayName: dotnet build
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: test 
+       projects: "**/*Tests/*.csproj"
+       arguments: --configuration release
+       displayName: dotnet build
+   
+   - task: dotNetCoreCLI@1
+     inputs:
+       command: publish
+       arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
+   	   zipAfterPublish: true
+       displayName: dotnet publish
+   
+   - task: publishBuildArtifacts@1
+     inputs:
+       PathtoPublish: $(Build.ArtifactStagingDirectory)
+       ArtifactName: drop
+       ArtifactType: Container
+   ```
+4. Commit your change to the master branch.
 
-- task: dotNetCoreCLI@1
-  inputs:
-    command: restore
-    projects: "**/*.csproj"
-  displayName: dotnet restore
+5. Navigate to the **Build and Release** hub.
 
-- task: dotNetCoreCLI@1
-  inputs:
-    command: build
-    projects: "**/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
+6. Observe that there's a new build definitionnamed _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
 
-- task: dotNetCoreCLI@1
-  inputs:
-    command: test 
-    projects: "**/*Tests/*.csproj"
-    arguments: --configuration release
-  displayName: dotnet build
-
-- task: dotNetCoreCLI@1
-  inputs:
-    command: publish
-    arguments: --configuration release --output $(Build.ArtifactStagingDirectory)
-	zipAfterPublish: true
-  displayName: dotnet publish
-
-- task: publishBuildArtifacts@1
-  inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
-    ArtifactName: drop
-    ArtifactType: Container
-```
-* Commit your change to the master branch.
-
-* Navigate to the **Build and Release** hub.
-
-* Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Click the number of the build: _{year}{month}{day}.1_.
-
-* In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+7. In the left column of the running build, click **Job**. After a hosted agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
 For this example, to learn some of the basics, you changed the YAML file to use the  `dotNetCoreCLI` task instead of calling the `dotnet` command directly in a script. The changes you made affect how the build output is organized. Each step is shown and can be inspected in the build summary, instead of all the output combined in one log from a single script.
 
