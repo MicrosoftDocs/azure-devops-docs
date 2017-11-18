@@ -118,10 +118,10 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
-By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/guidance/cumulative-flow.md) 
+By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
  
 >[!NOTE]  
-><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
+><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/dashboards/cumulative-flow.md), [Lead Time and Cycle Time](../../report/dashboards/cycle-time-and-lead-time.md), and [Velocity](../../report/dashboards/team-velocity.md) widgets to a team dashboard.  
 
 ## Try this next
 

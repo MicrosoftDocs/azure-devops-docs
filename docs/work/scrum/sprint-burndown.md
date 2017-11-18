@@ -23,7 +23,7 @@ Use this topic to learn
 > * How to view current and past sprint burndowns 
 > * Required and recommended activities to support sprint burndown    
 
-For usage guidance, see [Burndown guidance](../../report/guidance/burndown-guidance.md).
+For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
 
 >[!NOTE]  
@@ -95,7 +95,7 @@ As you complete each sprint, the system maintains a history of your activity. Yo
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
-You can use your team [velocity](../../report/guidance/team-velocity.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
+You can use your team [velocity](../../report/dashboards/team-velocity.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
 
 
 ##Related notes

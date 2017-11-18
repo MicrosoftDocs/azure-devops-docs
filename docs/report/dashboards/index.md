@@ -28,15 +28,15 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 ## Step-by-Step Tutorials
 
-- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
-- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
-- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Configure or view Velocity chart](team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [View sprint burndown charts](../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ## Concepts
-- [Cumulative flow, lead time, and cycle time guidance](../guidance/cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
-- [Velocity metrics and usage guidance](../guidance/velocity-guidance.md)
-- [Burndown guidance](../guidance/burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Velocity metrics and usage guidance](velocity-guidance.md)
+- [Burndown guidance](burndown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 
 ## How-to Guides

@@ -121,7 +121,7 @@ Then, add a stacked bar chart that sums the Story Points.
 <img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
->For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/guidance/cumulative-flow.md).
+>For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
 ###Show a burnup chart of user stories for an iteration 
 

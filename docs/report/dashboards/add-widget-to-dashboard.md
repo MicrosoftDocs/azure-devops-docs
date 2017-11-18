@@ -85,8 +85,8 @@ To copy a configured widget to another team dashboard, click the ![Actions icon]
 
 ## Widgets and the Analytics Service (VSTS) 
 The Analytics Service is available for VSTS accounts. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../guidance/analytics-widgets-vsts.md)
-- [Add an Analytics widget to a dashboard](../guidance/enable-analytics-velocity.md)
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 
 

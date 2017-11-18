@@ -53,7 +53,7 @@ After the team has started to find and fix bugs, you can track the team's progre
  For the Bug Status report to be useful and accurate, the team must perform the following activities:  
   
 > [!NOTE]
->  The team can use the Triage Workbook to review, rank, prioritize, and assign bugs. For more information, see [Workbooks](../guidance/workbooks.md) .  
+>  The team can use the Triage Workbook to review, rank, prioritize, and assign bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md) .  
   
 -   Define bugs, and specify their **Iteration** and **Area** paths.  
   
@@ -145,7 +145,7 @@ After the team has started to find and fix bugs, you can track the team's progre
 ## Related notes  
  [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)  
  [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)   
- [Workbooks](../guidance/workbooks.md)  
+ [Workbooks](../sharepoint-dashboards/workbooks.md)  
  [Bug Trends](bug-trends-report.md)   
  [Reactivations](reactivations-report.md)   
  [Reporting Services Reports](reporting-services-reports.md)

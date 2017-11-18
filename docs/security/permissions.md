@@ -409,7 +409,7 @@ For each team that you add, you can assign one or more team members as administr
 	* [Board: Swimlanes](../work/kanban/expedite-work.md)  
 	* [Board: Card reordering](../work/customize/reorder-cards.md)  
 	* [Board: Definition of Done](../work/kanban/definition-of-done.md)  
-	* [Charts: Cumulative flow](../report/guidance/cumulative-flow.md#configure) 
+	* [Charts: Cumulative flow](../report/dashboards/cumulative-flow.md#configure) 
 - **Manage team dashboards**  
 	Can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboards/dashboard-permissions.md#set-permissions).  
 - **Set working days off**    	

@@ -80,7 +80,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
 -   Specify and update the **Completed** and **Remaining** fields for each task or subtask as it is worked on.  
   
     > [!IMPORTANT]
-    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](../address-inaccuracies-published-for-summary-values.md).  
+    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task, story, and bug as it progresses from active to closed.  
   
