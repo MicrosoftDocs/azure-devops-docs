@@ -14,7 +14,7 @@ ms.date: 10/24/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/guidance/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
+Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
 Use this topic to learn: 
 
@@ -109,7 +109,7 @@ Here's what needs to happen for you and your team to gain the greatest utility f
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done show up on the velocity chart. 
 
 **Recommended:**  
-*	Define and size backlog items to [minimize variability](../../report/guidance/velocity-guidance.md#minimize-variability).  
+*	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../customize/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../scale/set-team-defaults.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list─only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
@@ -120,7 +120,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 
 ## Related notes
 
-*	[Team velocity](../../report/guidance/team-velocity.md)  
+*	[Team velocity](../../report/dashboards/team-velocity.md)  
 *	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md)  
 *	[Select sprints for a team](../scale/set-team-defaults.md)  
 *	Use the [task board](task-board.md) to track work during your sprint

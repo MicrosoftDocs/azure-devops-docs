@@ -4610,6 +4610,76 @@
         "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
         "redirect_url": "/vsts/build-release/concepts/definitions/release/approvals/index",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/configure-burndown-burnup-widgets.md",
+        "redirect_url": "/vsts/report/dashboards/configure-burndown-burnup-widgets",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/burndown-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/burndown-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cumulative-flow.md",
+        "redirect_url": "/vsts/report/dashboards/cumulative-flow",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cumulative-flow-cycle-lead-time-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/cumulative-flow-cycle-lead-time-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cycle-time-and-lead-time.md",
+        "redirect_url": "/vsts/report/dashboards/cycle-time-and-lead-time",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/team-velocity.md",
+        "redirect_url": "/vsts/report/dashboards/team-velocity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/velocity-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/velocity-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/analytics-widgets-VSTS.md",
+        "redirect_url": "/vsts/report/analytics/analytics-widgets-VSTS",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/enable-analytics-velocity.md",
+        "redirect_url": "/vsts/report/analytics/enable-analytics-velocity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/workbooks.md",
+        "redirect_url": "/vsts/report/sharepoint-dashboards/workbooks",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/dashboards/address-inaccuracies-published-for-summary-values.md",
+        "redirect_url": "/vsts/report/sql-reports/address-inaccuracies-published-for-summary-values",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/building-extension-against-analytics-service.md",
+        "redirect_url": "/vsts/report/extend-analytics/building-extension-against-analytics-service",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/widget-extension-against-analytics-service-configuration.md",
+        "redirect_url": "/vsts/report/extend-analytics/widget-extension-against-analytics-service-configuration",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/widget-extensions-against-analytics-service.md",
+        "redirect_url": "/vsts/report/extend-analytics/widget-extensions-against-analytics-service",
+        "redirect_document_id": false
        }
     ]
 }

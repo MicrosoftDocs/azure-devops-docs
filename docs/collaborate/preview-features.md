@@ -24,7 +24,7 @@ Some features provide a new user interface and functionality, which can be manag
 >[!NOTE]  
 >**Feature availability**:  You can turn on or off select features for VSTS (cloud service), or from the web portal of TFS. The features available will differ depening on the platform or version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as noted. To determine your platform or TFS version, see [Provide product and content feedback](../user-guide/provide-feedback.md#platform-version).
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level) |[Preview features per account](#account-level) | 
 > |-------------|----------|
 > |- [Build Yaml Definitions](https://go.microsoft.com/fwlink/?linkid=852344)<br/>-  [New Queries Experience](../work/track/view-run-query.md)<br/>-  [New User Experience in Code & Work Item Search](https://docs.microsoft.com/en-us/vsts/release-notes/2017/oct-06-vsts#code)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) |- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- Pull Request Status Policy<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) <br/>- [Wiki](#wiki) |
@@ -32,7 +32,7 @@ Some features provide a new user interface and functionality, which can be manag
 **Features now enabled for all VSTS accounts:**
 - [Combine email recipients](manage-team-notifications.md)  
 - [New Account Landing page](../user-guide/account-home-pages.md)
-- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) 
+-Â [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) 
 - [Team expansion for notifications](#team-expansion-notifications) 
 
 <a id="user-level">  </a>
@@ -42,7 +42,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 0. To access the Preview features options, open your user account menu, and select **Preview features**. 
 
-	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 1px solid #C3C3C3;" />� 
+	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 1px solid #C3C3C3;" />  
 
 0. To enable or disable a feature, click the slider. 
 
@@ -60,7 +60,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 <img src="_img/preview-features-account-s124.png" alt="Preview features options for the account" style="border: 2px solid #C3C3C3;" />
 
 <!---
-<img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #C3C3C3;" />�  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
+<img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #C3C3C3;" />   <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 -->
 
 
@@ -82,11 +82,11 @@ You can enable a built-in Wiki for your team project or for an account. This fea
     
 Here, we enable the New Account Landing page. This hub is associated with the account collection and not any one team project or team. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md). When you enable the New Account Landing page, you also enable the project page where you can [share your project vision with your team](project-vision-status.md).
 
-<img src="../_shared/_img/preview-features-account-landing-off-on.png" alt="Account Landing Page has been enabled " style="border: 1px solid #C3C3C3;" />� 
+<img src="../_shared/_img/preview-features-account-landing-off-on.png" alt="Account Landing Page has been enabled " style="border: 1px solid #C3C3C3;" />  
 
 If you have administrative privileges, you'll see a menu from which to choose whether the feature is for you, or for all users who work within the account. 
 
-<img src="_img/preview-features-user-level.png" alt="Preview features options, for me, logged-in user" style="border: 1px solid #C3C3C3;" />�  
+<img src="_img/preview-features-user-level.png" alt="Preview features options, for me, logged-in user" style="border: 1px solid #C3C3C3;" />   
 
 
 
@@ -123,3 +123,11 @@ We're adding some tool installer tasks to enable your build or release process t
 Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](manage-team-notifications.md).  
  
 
+<!---
+New features with S126: 
+* Approve gates in release - https://aka.ms/vsrmgates; individual and account 
+* New boards Hub
+* New Dashboards Experience
+* New experience in Code & Work Item search and new Wiki search
+
+--> 

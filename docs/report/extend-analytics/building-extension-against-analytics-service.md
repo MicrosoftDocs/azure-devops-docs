@@ -88,7 +88,7 @@ VSS.notifyLoadSucceeded();
 
 ### Handle authentication 
 
-For a more comprehensive discussion of authentication, see [Choosing the right authentication mechanism](/vsts/integrate/get-started/authentication/authentication-guidance).
+For a more comprehensive discussion of authentication, see [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md).
 To get an authorization token, replace the **Get authentication token** comment from the code above with the following:
 
 ```
@@ -180,7 +180,7 @@ var chart = c3.generate({
 
 ### Create the manifest   
 
-Full documentation on extension manifests can be found in the [Extension manifest reference](/vsts/extend/develop/manifest) documentation.
+Full documentation on extension manifests can be found in the [Extension manifest reference](../../extend/develop/manifest.md) documentation.
 For the purposes of this sample, use the following manifest and copy it into a file called vss-extension.json in the root folder.
 
 ```
@@ -277,5 +277,5 @@ Once the solution is deployed you should see something similar to the following:
 
 ## Build a widget extension  
 
-Widgets allow you to place items on a [dashboard](../dashboards.md) and to compose those items as required. Detailed information
+Widgets allow you to place items on a [dashboard](../dashboards/dashboards.md) and to compose those items as required. Detailed information
 on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../extend/develop/add-dashboard-widget.md). This topic covers how to call out to the Analytics Service specifically.

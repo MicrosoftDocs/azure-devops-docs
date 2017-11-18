@@ -133,8 +133,8 @@ Now you know how to create status and trend charts for work items. A few things 
 
 Also, from the web portal, you can view the following charts:  
 
-- [Cumulative flow diagram](../guidance/cumulative-flow.md)  
-- [Team velocity](../guidance/team-velocity.md)  
+- [Cumulative flow diagram](cumulative-flow.md)  
+- [Team velocity](team-velocity.md)  
 - [Sprint burndown charts](../../work/scrum/sprint-burndown.md)  
 - [Test progress and test results](../../manual-test/getting-started/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
