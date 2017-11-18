@@ -38,11 +38,15 @@ Fields that support the “In” [query operator](/vsts/work/track/query-operato
 
 <img src="_img/125_02.png" alt="Not In query operator" style="border:1px solid Silver; display: block; margin: auto;" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T22wcpQCVns" frameborder="0" gesture="media" allowfullscreen="true"></iframe>
+
 ### Filtering on Plans
 
 The [**Delivery Plans**](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans) extension now makes use of our common filtering component, and is consistent with our grid filtering experiences for work items and **Boards**. This filtering control brings improved usability and a consistent interface to all members of your team.
 
 <img src="_img/125_03.png" alt="Filtering on Plans" style="border:1px solid Silver; display: block; margin: auto;" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H3-5PTV4oS4" frameborder="0" gesture="media" allowfullscreen="true"></iframe>
 
 ### Read-only work item rules
 
@@ -53,6 +57,8 @@ Earlier this year, we introduced [customizable work item rules](/vsts/release-no
 - When the value of **Approved** is true, then make **Reviewed By** read-only
 
 <img src="_img/125_04.png" alt="read-only work item rules" style="border:1px solid Silver; display: block; margin: auto;" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IlNcLa-W_q8" frameborder="0" gesture="media" allowfullscreen="true"></iframe>
 
 ## Code
 
@@ -108,11 +114,15 @@ Circle avatars are here! All profile pictures in the service will now display in
 
 <img src="_img/125_12.png" alt="Circle avatars" style="border:1px solid Silver; display: block; margin: auto;" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7kCFfQdlxPk" frameborder="0" gesture="media" allowfullscreen="true"></iframe>
+
 ### Project tags
 
 You can now adorn projects with important keywords (tags). Tags are easily added and deleted directly from the project home page (by administrators) allowing users to quickly understand more about the purpose and scope of the project. We’ve got more planned for how project tags can be leveraged, so stay tuned for more news here.
 
 <img src="_img/125_11.png" alt="Project tags" style="border:1px solid Silver; display: block; margin: auto;" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BQcOSWHvgZA" frameborder="0" gesture="media" allowfullscreen="true"></iframe>
 
 ## Feedback
 
