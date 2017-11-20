@@ -35,7 +35,7 @@ The Burndown widget lets you display a trend of remaining work across multiple t
 
 
 
-To learn more, see [Configure a Burndown or Burnup widget](./configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md).  
 
 ## Burnup
 The Burnup widget lets you display a trend of completed work across multiple teams and multiple sprints. You can use it to create a release burnup, a bug burnup, or a burnup on any scope of work over time. When completed work meets total scope, your project is done! 
@@ -44,7 +44,7 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 ![Burnup Widget - Release Burnup Example](./_img/burnup-ax-catalog.png)
 
-To learn more, see [Configure a Burndown or Burnup widget](./configure-burndown-burnup-widgets.md).  
+To learn more, see [Configure a Burndown or Burnup widget](../dashboards/configure-burndown-burnup-widgets.md).  
 
 ## Cumulative Flow Diagram (CFD)
 The CFD widget shows the count of work items (over time) for each column of a Kanban board. This allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 
@@ -55,7 +55,7 @@ The CFD widget shows the count of work items (over time) for each column of a Ka
 
 ![Cumulative flow diagram widget](./_img/cdf-big-widget.png) 
 
-To learn more, see [Cumulative flow diagram widget](./cumulative-flow.md).  
+To learn more, see [Cumulative flow diagram widget](../dashboards/cumulative-flow.md).  
 
 ## Cycle Time
 The Cycle time widget will help you analyze the time it takes for your team to complete work items once they begin actively working on them. A lower cycle time is typically indicative of a healthier team process. Using the Cycle time widget you will be able to answer questions like: 
@@ -64,9 +64,9 @@ The Cycle time widget will help you analyze the time it takes for your team to c
 
 **Cycle time widget showing 30 days of data**
 
-![Cycle time widget](./_img/cycle-time-planning.png) 
+![Cycle time widget](../dashboards/_img/cycle-time-planning.png) 
 
-To learn more, see [Cycle time and lead time control charts](./cycle-time-and-lead-time.md).  
+To learn more, see [Cycle time and lead time control charts](../dashboards/cycle-time-and-lead-time.md).  
 
 ## Lead Time
 The Lead time widget will help you analyze the time it takes to deliver work from your backlog. Lead time measures the total time elapsed from the creation of work items to their completion. Using the Lead time widget you will be able to answer questions like: 
@@ -76,9 +76,9 @@ The Lead time widget will help you analyze the time it takes to deliver work fro
 
 **Lead time widget showing 60 days of data**
 
-![Lead time widget](./_img/lead-time-control-chart.png) 
+![Lead time widget](../dashboards/_img/lead-time-control-chart.png) 
 
-To learn more, see [Cycle time and lead time control charts](./cycle-time-and-lead-time.md). 
+To learn more, see [Cycle time and lead time control charts](../dashboards/cycle-time-and-lead-time.md). 
 
 ## Velocity
  The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. You can also compare the work delivered against your plan and track work completed late. Using the Velocity widget, you will be able to answer questions like:
@@ -92,7 +92,7 @@ To learn more, see [Cycle time and lead time control charts](./cycle-time-and-le
 ![Velocity widget](./_img/Velocity-ax-catalog.png)
  
 
-To learn more, see [Configure and view Velocity widgets](./team-velocity.md).  
+To learn more, see [Configure and view Velocity widgets](../dashboards/team-velocity.md).  
 
 <!---
 

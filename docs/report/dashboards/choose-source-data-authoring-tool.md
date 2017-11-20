@@ -11,7 +11,7 @@ ms.date: 03/03/2017
 
 # Choose the source of data and authoring tool
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 When you create reports that show data from Team Foundation Server (TFS), you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
 

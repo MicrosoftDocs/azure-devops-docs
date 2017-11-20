@@ -24,7 +24,7 @@ To get started, read [What is Analytics?](what-is-analytics.md)
  
 
 ## 5-Minute Quickstarts
- - [Add an Analytics widget to a dashboard](../guidance/enable-analytics-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+ - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
 
 ## Step-by-Step Tutorials
@@ -35,7 +35,7 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 
 
 ## Concepts
-- [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Analytics widgets](analytics-widgets-vsts.md)
 - [Performance and latency](performance-latency.md)
 
 

@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Bugs dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 You can monitor Bug activity for a team project by using the Bugs dashboard, which shows the following charts:  
@@ -47,7 +47,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
 |![Step 2](_img/procguid_2.png "ProcGuid_2")|Line chart that shows the rolling average of the number of Bugs that the team has opened, resolved, and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")|[Bug Trends](../excel/bug-trends-excel-report.md)|  
 |![Step 3](_img/procguid_3.png "ProcGuid_3")|A visual representation of the cumulative count of all Bugs, grouped by their priority, for the past four weeks.<br /><br /> ![Bugs by priority chart](_img/procguid_bypriority.png "ProcGuid_ByPriority")|[Bugs by Priority](../excel/bugs-by-priority-excel-report.md)|  
 |![Step 4](_img/procguid_4.png "ProcGuid_4")|A horizontal bar chart with the total count of active Bugs that each team member has currently assigned to them, grouped by priority.<br /><br /> ![Bugs by Assignment chart](_img/procguid_byassignment.png "ProcGuid_ByAssignment")|[Bugs by Assignment](../excel/bugs-by-assignment-excel-report.md)|  
-|![Step 5](_img/procguid_6.png "ProcGuid_6")|List of the active Bugs. The list is derived from a Team Web Access Web Part.<br /><br /> ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")|[Workbooks](../guidance/workbooks.md)|  
+|![Step 5](_img/procguid_6.png "ProcGuid_6")|List of the active Bugs. The list is derived from a Team Web Access Web Part.<br /><br /> ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")|[Workbooks](workbooks.md)|  
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of upcoming events. The list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|Not applicable|  
 |![Step 7](_img/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a build by choosing it. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../build-release/overview.md)|  
