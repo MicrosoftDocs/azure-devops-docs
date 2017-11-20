@@ -19,6 +19,9 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
 
+> [!NOTE]
+> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest)**.
+
 ## Create a new pull request
 
 Create a new pull request from:
