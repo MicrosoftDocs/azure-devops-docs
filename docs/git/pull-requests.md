@@ -17,7 +17,7 @@ Create pull requests to review and merge code in a [Git team project](../account
 Pull requests let your team review code and give feedback on changes before
 merging it into the master branch.  Pull requests can come from either
 topic branches within the same repository, or from a branch in a
-[fork](concepts/forks) of the original repository.
+[fork](concepts/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
