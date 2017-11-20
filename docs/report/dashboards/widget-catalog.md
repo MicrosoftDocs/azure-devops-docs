@@ -90,7 +90,7 @@ Displays the list of work items currently assigned to the currently logged in us
 > [!NOTE]  
 > **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.    
 
-Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](../guidance/configure-burndown-burnup-widgets.md).  
+Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
 
 
@@ -105,7 +105,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 > [!NOTE]  
 > **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.    
 
-Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](../guidance/configure-burndown-burnup-widgets.md).  
+Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
  
 ----
@@ -134,7 +134,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 
 Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. 
 
-From the configuration dialog, [specify the team, backlog level, and other parameters you want](../guidance/cumulative-flow.md#configure-widget).
+From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).
 
 Hover over each color within the chart to see the count of items for a particular Kanban column.  
 
@@ -273,7 +273,7 @@ Teams [plan their sprints by defining sprints](../../work/scale/set-team-default
 
 
 The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    
-For additional guidance, see [Velocity](../guidance/team-velocity.md). 
+For additional guidance, see [Velocity](team-velocity.md). 
 
 
 ---- 

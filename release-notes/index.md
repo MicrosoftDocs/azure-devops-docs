@@ -3440,86 +3440,121 @@ Versions in the “Server” column are linked to the appropriate download locat
 <thead>
         <tr>
           <th>Release</th>
+          <th>Date</th>
           <th>Build</th>
         </tr>
 </thead>
 <tbody>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RTW](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Nov. 15, 2017</td>
           <td>16.122.27102.1</td>
         </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Sept. 25, 2017</td>
           <td>16.122.26918.3</td>
         </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Aug. 30, 2017</td>
           <td>16.121.26818.00</td>
         </tr>
         <tr>
           <td>[2017.3](https://aka.ms/relnotes-tfs2017-update3)</td>
+          <td>Nov. 6, 2017</td>
           <td>15.117.27024.0</td>
         </tr>
         <tr>
           <td style="background:rgb(155, 192, 230);">[2017.2](https://aka.ms/relnotes-tfs2017-update2)</td>
+          <td>Jul. 24, 2017</td>
           <td>15.117.26714.00</td>
         </tr>
         <tr>
           <td style="background:rgb(189, 214, 238);">2017.1</td>
+          <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td>15.112.26307.00
           (15.112.26301.0)[*](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">2017 RTM</td>
+          <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
         </tr>
         <tr>
+          <td style="background:rgb(177, 232, 179);">2015.4</td>
+          <td>Apr. 11, 2017</td>
+          <td>14.114.26403.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(177, 232, 179);">2015.3</td>
+          <td>Jun. 27, 2016</td>
           <td>14.102.25423.00</td>
         </tr>
         <tr>
           <td style="background:rgb(198, 239, 200);">2015.2</td>
+          <td>May 5, 2016</td>
           <td>14.95.25122.00</td>
         </tr>
         <tr />
         <tr>
           <td style="background:rgb(217, 247, 219);">2015.1</td>
+          <td>Nov. 30, 2015</td>
           <td>14.0.24720.00</td>
         </tr>
         <tr>
           <td style="background:rgb(232, 255, 234);">2015 RTM</td>
+          <td>Aug. 6, 2015</td>
           <td>14.0.23128.00*</td>
         </tr>
         <tr>
+          <td>2013.5</td>
+          <td>Jul. 19, 2015</td>
+          <td>12.0.40629.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(231, 179, 249);">2013.4</td>
+          <td>Nov. 11, 2014</td>
           <td>12.0.31101.00</td>
         </tr>
         <tr>
           <td style="background:rgb(216, 194, 239);">2013.3</td>
+          <td>Aug. 4, 2014</td>
           <td>12.0.30723.00</td>
         </tr>
         <tr>
           <td style="background:rgb(229, 212, 247);">2013.2</td>
+          <td>Apr. 2, 2014</td>
           <td>12.0.30324.00</td>
         </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">2013 RTM</td>
+          <td>Nov. 18, 2013</td>
           <td>12.0.21005.01</td>
         </tr>
         <tr>
+          <td>2012.4</td>
+          <td>Nov. 12, 2013</td>
+          <td>11.0.61030.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(155, 192, 230);">2012.3</td>
+          <td>Jun. 26, 2013</td>
           <td>11.0.60610.01</td>
         </tr>
         <tr>
           <td style="background:rgb(189, 214, 238);">2012.2</td>
+          <td>Apr. 4, 2013</td>
           <td>11.0.60315.01</td>
         </tr>
         <tr>
           <td>2012.1</td>
+          <td>Dec. 12, 2012</td>
           <td>11.0.51106.01</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">2012 RTM</td>
+          <td>Aug. 15, 2012</td>
           <td>11.0.50727.01</td>
         </tr>
       </tbody>

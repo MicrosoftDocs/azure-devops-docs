@@ -74,7 +74,7 @@
     items:
     - name: Set up customer and billing
       href: csp/set-up-csp-customer.md
-    - name: Buy VSTS subscriptions
+    - name: Buy VSTS resources
       href: csp/buy-csp-vsts.md
     - name: Buy and manage VS subscriptions
       href: csp/buy-manage-vs-subs.md

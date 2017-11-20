@@ -23,24 +23,23 @@ The nuget.org upstream source allows you to merge the contents of nuget.org into
 
 To learn more about the concept of upstream sources, please see the [concepts page](../concepts/feeds/upstream-sources.md).
 
-> [!NOTE]
->During public preview, you can only enable the nuget.org upstream source on feeds created after November 15th, 2017. 
+## Enable the upstream on a new feed
 
-## Enable nuget.org as an upstream source
+To use the nuget.org upstream source, you'll need to enable the preview feature then create a new feed.
 
-To use nuget.org as an upstream source, either create a new feed or edit an existing feed created after November 15th, 2017.
-
-### On a new feed
-
+1. [Enable the NuGet.org upstream source preview](../install.md#nuget-org-upstream-source).
 1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 
-### On an existing feed
+## Enable the upstream on an existing feed
+
+> [!NOTE]
+>During public preview, you can only enable the nuget.org upstream source on feeds created after you enabled the NuGet.org upstream source preview feature.
 
 1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
-2. Select the **Upstream sources** pivot.
-3. Select **Add upstream source** in the CommandBar.
-4. Select **Select a feed URL** and select **nuget.org (https://api.nuget.org/v3/index.json)**. If you like, customize the upstream name.
-5. Select **Add**.
+1. Select the **Upstream sources** pivot.
+1. Select **Add upstream source** in the CommandBar.
+1. Select **Select a feed URL** and select **nuget.org (https://api.nuget.org/v3/index.json)**. If you like, customize the upstream name.
+1. Select **Add**.
 
 ## Update your NuGet configuration
 

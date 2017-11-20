@@ -42,6 +42,8 @@
         href: apps/cd/azure/aspnet-core-to-azure-webapp.md
       - name: Windows VM
         href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+      - name: Linux VM
+        href: apps/cd/deploy-linuxvm-deploygroups.md
       - name: Web App for Containers
         href: apps/cd/deploy-docker-webapp.md
     - name: Test your app

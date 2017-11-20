@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 
 # Velocity
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 If your team has completed multiple sprints, you can forecast release and product completion dates and plan future projects more accurately by reviewing the velocity report. Based on the velocity of previous sprints that the report illustrates, you can accomplish the following goals:  
   

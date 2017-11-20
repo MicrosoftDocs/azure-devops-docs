@@ -36,6 +36,6 @@ You can customize how data is published and refreshed by modifying the Microsoft
      **Use the TFSFieldMapping command**. To modify the Microsoft Project field mapping file for a team project, you must first download the file.  
   
 ## Related notes 
--  [Address inaccuracies published for summary values](../../../report/address-inaccuracies-published-for-summary-values.md)   
+-  [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
 -  [Work in Excel and Project](../../backlogs/office/track-work-vsts-tfs.md)   
 -  [Create your backlog and tasks using Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)

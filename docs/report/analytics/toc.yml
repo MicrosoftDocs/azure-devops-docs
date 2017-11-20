@@ -7,21 +7,21 @@
 - name: Quickstarts
   items:
   - name: Add an Analytics widget to the dashboard
-    href: ../guidance/enable-analytics-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: enable-analytics-velocity.md
 - name: Tutorials
   items:
   - name: Configure burndown or burnup
-    href: ../guidance/configure-burndown-burnup-widgets.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/configure-burndown-burnup-widgets.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
   - name: Configure cumulative flow 
-    href: ../guidance/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
   - name: Configure lead/cycle time
-    href: ../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
   - name: Configure velocity
-    href: ../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Analytics widgets
-    href: ../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: analytics-widgets-vsts.md
   - name: Performance and latency
     href: performance-latency.md
 - name: How-to Guides

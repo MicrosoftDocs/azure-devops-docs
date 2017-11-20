@@ -24,7 +24,7 @@ Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md)
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 
 > |-------------|----------|---------|---------|   
-> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/guidance/team-velocity.md)<br/>|    
+> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>|    
 
 >[!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
@@ -33,7 +33,7 @@ Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md)
 ## Kanban method and tools
 Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
 
-[![Configure Kanban board](_img/overview/gs-planning-configure-kanban.png)](../kanban/kanban-basics.md)[![Update the Kanban board](_img/overview/gs-planning-track-kanban.png)](../kanban/kanban-basics.md)[![Monitor progress](_img/overview/gs-planning-monitor-kanban.png)](../../report/guidance/cumulative-flow.md)
+[![Configure Kanban board](_img/overview/gs-planning-configure-kanban.png)](../kanban/kanban-basics.md)[![Update the Kanban board](_img/overview/gs-planning-track-kanban.png)](../kanban/kanban-basics.md)[![Monitor progress](_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 You update the status of work by dragging card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
 

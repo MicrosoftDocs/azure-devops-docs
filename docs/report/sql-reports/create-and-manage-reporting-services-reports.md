@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Create and manage Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json ).  
   

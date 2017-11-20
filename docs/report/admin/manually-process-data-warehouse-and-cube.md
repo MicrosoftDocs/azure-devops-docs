@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 
 # Manually process the TFS data warehouse and analysis services cube
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 
 When you need the freshest data in your reports, when errors have occurred, or after you've resolved schema conflicts, you can manually process the Team Foundation Server (TFS) relational database (Tfs\_Warehouse) or SQL Server Analysis Services cube (Tfs\_Analysis).
 
