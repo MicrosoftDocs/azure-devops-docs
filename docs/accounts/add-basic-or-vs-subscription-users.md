@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/13/2017
 ---
 
 # Add more users with Basic features or Visual Studio subscriptions
