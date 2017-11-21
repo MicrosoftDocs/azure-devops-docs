@@ -12,8 +12,6 @@ author: yukom
 
 #Pull Requests refresh and much, much more – Aug 17
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week.
-
 Lots of stuff this sprint, lets jump in…
 
 ##Pull requests

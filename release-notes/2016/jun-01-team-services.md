@@ -14,8 +14,6 @@ author: yukom
 
 With this release we’re introducing new agile features as well as enhancements to dashboards, coding, package management, test, and build and release management.
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Agile
 
 ###Filtering in Kanban board
