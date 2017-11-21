@@ -146,7 +146,7 @@ namespace TokenSample.Core.API
                             RequireExpirationTime = true,
                             ValidateLifetime = true
                         };    
-                    });*
+                    });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
