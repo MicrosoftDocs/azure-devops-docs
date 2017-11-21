@@ -10,8 +10,6 @@ author: alexn
 
 # Git Tags web view, build definition import/export, and improved user management – June 22
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks.
-
 Relax, sit back, and get comfortable. You’re going to be here for a while. We’ve got lots of updates this sprint across the entire product.  
 
 You’ve probably noticed that we’ve been continuing to evolve our web portal for a while now. We know it’s the primary way folks interact with the product. We want to have a great overall web experience and we’ve been working to get there in incremental steps. Having a great web experience means multiple things to us. It means you can accomplish the work you need to do with ease. It means that it’s an accessible experience, so everyone on your team can use it. It also means an experience that is visually appealing and a pleasant place to do your work.

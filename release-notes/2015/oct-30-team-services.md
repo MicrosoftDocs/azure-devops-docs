@@ -12,8 +12,6 @@ author: yukom
 
 #Dashboards, improved pull requests, test results and more – Oct 30
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Dashboards
 
 I’m excited to announce that we have released our [dashboards feature](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/26/agile-project-management-futures-august-2015.aspx) in Visual Studio Online! Dashboards are a customizable canvas and replace your existing Team Overview page. They enable your team to visualize status and monitor progress across your project.

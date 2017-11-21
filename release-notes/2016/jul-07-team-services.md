@@ -12,8 +12,6 @@ author: yukom
 
 #Resize charts, PR comment tracking, RM updates and more – Jul 7
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Work
 
 ###Resizable WIT charts on dashboards

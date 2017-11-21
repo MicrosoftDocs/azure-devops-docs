@@ -12,8 +12,6 @@ author: yukom
 
 #Turn bugs on/off on your backlog – Nov 4
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 Lots to cover this sprint, so let’s jump right in…
 
 ##Bugs on the backlog

@@ -10,8 +10,6 @@ author: egeaney
 
 #New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have a lot of new features rolling out this sprint!
 
 ##New navigation experience is On by default
