@@ -10,8 +10,6 @@ author: egeaney
 
 #Follow a PR, task versioning, and search for commits in branches – Nov 23
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have a bunch of new features rolling out this sprint.
 
 ##Search for commits in branches

@@ -10,8 +10,6 @@ author: egeaney
 
 # New Visual Studio Enterprise pipeline benefit, mobile work item form GA, and source based release triggers – June 1
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks.
-
 This week we have something for just about everyone, with a broad set of changes across the entire product:
 * Our WIT mobile forms have GA’d and the first experiences on our new analytics services are here.
 * Build and Release have a host of new improvements from our customer request list and VS Enterprise users got a nice new benefit.

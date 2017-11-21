@@ -10,8 +10,6 @@ author: egeaney
 
 #Delivery Plans and mobile work item form – Jan 25
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have some big new features to introduce this sprint! Let’s get right into it...
 
 ##Delivery plans
