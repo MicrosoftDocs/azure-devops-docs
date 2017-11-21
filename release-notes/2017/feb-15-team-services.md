@@ -10,8 +10,6 @@ author: egeaney
 
 #PR usability improvements & richer GitHub build integration – Feb 15
 
-**Note:** The improvements discussed in this post are features that will be rolling out over the next three weeks.
-
 We have a few feature improvements this sprint. Let’s get right into it...
 
 ##Improved support for team PR notifications

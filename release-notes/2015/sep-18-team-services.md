@@ -12,8 +12,6 @@ author: yukom
 
 #Kanban Updates, new Branch Policies, and more... – Sep 18
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Inline tasks on the Kanban board
 
 This sprint we’ve enabled a new feature that lets you break down stories on your Kanban board, without having to leave the board. Tasks can now be added, edited, and marked as done directly from the parent card on your board. A summary of the roll-up status indicates how many Tasks have been completed and how many remain.

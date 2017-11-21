@@ -12,8 +12,6 @@ author: yukom
 
 #Git and TFVC together, Package Management build tasks, and more – Nov 24
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
- 
 ##Git and TFVC in the same team project
  
 Big news! In this sprint, we’ve added the ability to add Git repositories to a team project that was created with TFVC or vice versa. This makes it easier for you to migrate some or all of your code to Git while keeping all the important data in your team project, such as build definitions and work items.
