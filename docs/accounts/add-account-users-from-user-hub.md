@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/13/2017
 ---
 
 #	Add account users for Visual Studio Team Services (VSTS)
