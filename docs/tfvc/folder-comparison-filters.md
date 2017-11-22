@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2016
+ms.date: 11/22/2017
 ---
 
 # Folder comparison filters
@@ -56,18 +56,18 @@ The following table lists filter name mask examples.
 
 |**Name Mask**|**Description**|
 |---|---|
-|.cs|Matches all C# files.|
-|My*.bmp|Matches all bitmap files that begin with My.|
-|!*.exe|Excludes all executable files.|
-|!objd\\|Excludes all objd folders.|
+|.cs | Matches all C# files.|
+|My*.bmp | Matches all bitmap files that begin with My.|
+|!*.exe | Excludes all executable files.|
+|!objd\\ | Excludes all objd folders.|
 
 
 The following table lists filter examples.
 
 |**Filter**|**Description**|
 |---|---|
-|.cs;!objd\;!obj\;!bin\\|Matches all C# files except those in objd, obj, or bin folders.|
-|!*.resx;!*ini;!resources\;!\*junk*\\|Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
+|.cs;!objd\;!obj\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
+|!*.resx;!*ini;!resources\;!\*junk*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
 
 ## See Also
