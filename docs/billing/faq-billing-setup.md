@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/09/2017
 ---
 
 # Billing troubleshooting

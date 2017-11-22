@@ -6,7 +6,7 @@ ms.technology: vs-devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/01/2017
+ms.date: 10/17/2017
 ---
 
 # Assign paid extension access to users for VSTS
