@@ -116,7 +116,7 @@ In addition to the above "hub" services, the following services work across hubs
 - Reporting    						
 
 >[!NOTE]  
->Team rooms are deprecated for TFS 2017.2. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with VSTS and TFS 2015 and later versions.
+>Team rooms are deprecated for TFS 2017.2. Instead, we recommend you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md). 
 
 
 ## Service hooks
