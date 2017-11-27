@@ -50,7 +50,7 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Workspace or project path</td>
 <td>
-(Optional) Enter a relative path from the root of the repository to the Xcode workspace or project. For example, `MyApp/MyApp.xcworkspace` or `MyApp/MyApp.xcworkspace/MyApp.xcodeproj`.
+(Optional) Enter a relative path from the root of the repository to the Xcode workspace or project. For example, `MyApp/MyApp.xcworkspace` or `MyApp/MyApp.xcodeproj`.
 </td>
 </tr>
 <tr>
