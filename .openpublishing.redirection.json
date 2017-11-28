@@ -2883,7 +2883,7 @@
         },
         {
             "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest",
+            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
             "redirect_document_id": false
         },
         {
@@ -3533,7 +3533,7 @@
        },
        {
             "source_path": "docs/build-release/tasks/test/mobile-center-test.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
             "redirect_document_id": false
        },
        {
