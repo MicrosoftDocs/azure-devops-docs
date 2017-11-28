@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/15/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -32,13 +32,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
 |Scheduled builds – Do not schedule build if nothing has changed in repo|Build|TBD|
 |CI – GitHub Enterprise integration|Build|TBD|
-|Better Jenkins Integration – JIRA Items Integration, Multibranch Pipeline|Release|TBD|
 |Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
 |Azure Portal Continuous Delivery support – VMs|Release|TBD|
-|Greenlighting – Azure monitoring integration for automated deployments|Release|TBD|
 |Package Management – Maven general availability (GA)|Package|TBD|
-|Package Management – Upstreams sources for public registries (NuGet.org)|Package|TBD|
 |Search/Filter tests in build/release summary|Test|TBD|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|--|
 |Request workflow for account (project collection) admins who don't have payment access|Admin|TBD|
@@ -105,6 +102,53 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="43">[28 Nov 2017](2017/nov-28-vsts.md)</td>
+            <td>Azure DevOps Project</td>
+            <td style="background:rgb(232, 232, 232);">--</td>
+        </tr>
+        <tr><td>Configuration as code (YAML) builds in Public Preview</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release gates in Public Preview</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Hosted Mac agents for CI/CD pipelines in Public Preview</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>TFS Database Import Service now Generally Available</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>VSTS CLI in Public Preview</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>Query last run by information</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Create work items from the Queries hub</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Expand/collapse requirements/people on the Task board</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Grant the bypassrule permission to specific users</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Rendered markdown in email notifications</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request comment notifications include the thread context</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request service hooks merge events</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved error messages for work items completing with a pull request</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Azure Active Directory integration for pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Path filters for pull request policies</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request suggestions for forks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Editor settings</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Recently used reviewers</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>SSH: Support additional ciphers/keys and deprecate outdated ciphers</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved repository settings performance</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Use VSTS as a symbol server</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Agentless build tasks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Apple provisioning profiles can be installed from source repositories</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Secure files can be downloaded to agents during build or release</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Specific Java Development Kits (JDKs) can be installed during builds and releases</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Xcode build configuration</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Updates to the Hosted VS2017 pool</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>Docker Hub or Azure Container Registry as an artifact source</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Enable Continuous Monitoring on Azure web apps</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Save packages from NuGet.org in your feed</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Easier feed creation and editing</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Previous package versions are now a full-page list</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Promote, unlist, and deprecate multiple packages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki Search</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Link work items and Wiki pages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Rich markdown rendering in code repo markdown</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki supports mathematical formulas</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Analytics OData in Public Preview</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>Deprecating the PowerBI.com Content Pack</td><td style="background:rgb(232, 232, 232);">--</td></tr>
+        <tr><td>Inviting directory guests to Azure AD-backed VSTS accounts</td><td style="background:rgb(232, 232, 232);">--</td></tr>
         <tr>
             <td rowspan="12">[30 Oct 2017](2017/oct-30-vsts.md)</td>
             <td>Modernized column options</td>

@@ -8,7 +8,7 @@
     href: overview-azure.md
 - name: Quickstarts
   items:
-    - name: Azure DevOps for your app
+    - name: Azure DevOps projects
       items:
       - name: ASP.NET Core
         href: apps/cd/azure/azure-devops-project-aspnetcore.md
@@ -63,7 +63,7 @@
   - name: Use approvals and gates
     href: actions/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
-    href: actions/azure-devops-project-github.md  
+    href: actions/azure-devops-project-github.md
 - name: Concepts
   items:
   - name: Agents
@@ -366,6 +366,8 @@
       href: tasks/package/xamarin-component-restore.md
   - name: Deploy tasks
     items:
+    - name: App Center Distribute
+      href: tasks/deploy/mobile-center-upload.md
     - name: Azure App Service Deploy
       href: tasks/deploy/azure-app-service-deploy.md
     - name: Azure App Service Manage
@@ -389,9 +391,7 @@
     - name: IIS Web App Deploy
       href: tasks/deploy/iis-deploy.md
     - name: IIS Web App Manage
-      href: tasks/deploy/iis-manage.md
-    - name: App Center Distribute
-      href: tasks/deploy/mobile-center-upload.md
+      href: tasks/deploy/iis-manage.md    
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
