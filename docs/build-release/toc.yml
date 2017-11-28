@@ -8,7 +8,7 @@
     href: overview-azure.md
 - name: Quickstarts
   items:
-    - name: Azure DevOps for your app
+    - name: Azure DevOps projects
       items:
       - name: ASP.NET Core
         href: apps/cd/azure/azure-devops-project-aspnetcore.md
@@ -63,7 +63,7 @@
   - name: Use approvals and gates
     href: actions/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
-    href: actions/azure-devops-project-github.md  
+    href: actions/azure-devops-project-github.md
 - name: Concepts
   items:
   - name: Agents
