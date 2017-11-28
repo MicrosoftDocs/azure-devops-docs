@@ -25,15 +25,20 @@ Here is an example of what a typical manifest will look like:
 
 [!INCLUDE [](../_shared/manifest-core.md)]
 
-[!INCLUDE [](../_shared/manifest-extension-runtime.md)]
-
 ### Examples of required attributes
 
 [!code-json[](../_data/extension-core.json)]
+
+## Optional attributes
+
+### Runtime attributes
+[!INCLUDE [](../_shared/manifest-extension-runtime.md)]
+
 [!code-json[](../_data/extension-runtime.json)]
 
 <a name="discoveryprops"></a>
-## Additional attributes
+
+### Discovery attributes
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
