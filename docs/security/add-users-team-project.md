@@ -102,12 +102,12 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 For on-premises TFS, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md). 
 
-## Add users or groups to Sharepoint or SQL Server Reports (TFS only)
+## Add users or groups to SharePoint or SQL Server Reports (TFS only)
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 
 -  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
--  [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
+-  [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md)
 
 <!---
 ## Verify
