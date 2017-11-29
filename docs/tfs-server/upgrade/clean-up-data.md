@@ -32,7 +32,7 @@ below commands, since SQL will reserve the space for later use.
 ## Team Projects
 
 If you have whole team projects that are no longer needed, deleting them can potentially have a very large impact, 
-since this will remove all content for the team project across all feature areas. There are three ways to delete a 
+since this will remove all content for the team project across all feature areas. There are two ways to delete a 
 team project:
 
 1. From the [Team Foundation Server Administration Console](../../accounts/delete-team-project.md#delete-team-proj).
@@ -73,6 +73,6 @@ with the [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/f017b1
 
 When builds in TFS are deleted, a subset of the information they produced is preserved in order to avoid losing 
 reporting data the next time the [warehouse is rebuilt](../../report/admin/rebuild-data-warehouse-and-cube.md). Build 
-data can be physically deleted using the [destroy command](https://msdn.microsoft.com/library/ee794689.aspx) vis 
+data can be physically deleted using the [destroy command](https://msdn.microsoft.com/library/ee794689.aspx) via 
 tfsbuild.exe.
 
