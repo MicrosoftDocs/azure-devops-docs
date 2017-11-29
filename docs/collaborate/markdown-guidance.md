@@ -494,7 +494,7 @@ If you have an image in your clipboard, you can paste it from the clipboard into
 Attachments support the following file formats:
 
 - Images: PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg)
-- Documents:  Word (.docx), Excel (.xlsx), and Powerpoint (.pptx), text files (.txt), and PDFs (.pdf)
+- Documents:  Word (.docx), Excel (.xlsx and .csv), and Powerpoint (.pptx), text files (.txt), and PDFs (.pdf)
 - Compressed files: ZIP (.zip) and GZIP (.gz)
 - Video files: MOV (.mov), MP4 (.mp4)
 

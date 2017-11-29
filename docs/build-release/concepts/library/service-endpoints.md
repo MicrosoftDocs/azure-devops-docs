@@ -463,6 +463,9 @@ You can control who can define new service endpoints in a library, and who can u
 | User | Members of this role can use the endpoint when authoring build or release definitions. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
-A special group called **Endpoint administrators** is added to every team project. Members of this group can create new endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every team project. 
+Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Members of the Endpoint creators group can create new endpoints. By default, project contributors are added as members of this group. 
+
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
