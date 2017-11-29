@@ -41,12 +41,13 @@ Otherwise, they won't have access until you add them to
 VSTS as new users. They can migrate everything except work history, 
 relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
 
+	> [!NOTE]
+	> VSTS will support disconnecting your VSTS account from an Azure directory in the Azure portal in a few weeks.  In the meantime, 
+	> you can open a [support case](https://go.microsoft.com/fwlink/?linkid=864081) for someone to walk you through the process.
+
+
 0.	[Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
 with your Microsoft account as the VSTS account owner.
-
-	> [!NOTE]
-	> You can disconnect your VSTS account 
-	> from your directory only through the Azure classic portal.
 
 	[Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
