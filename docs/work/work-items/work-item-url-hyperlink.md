@@ -28,7 +28,6 @@ Examples in this topic use the following conventions:
 -   *TeamProjectName* specifies the team project name
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
- 
 
 ##VSTS
 
