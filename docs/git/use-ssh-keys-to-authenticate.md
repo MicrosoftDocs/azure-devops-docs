@@ -21,6 +21,9 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 > - Select **SSH** and copy the new SSH URL.
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.
 
+>[!VERIFY SSH/HTTP URLS]
+> - In your Git client, run ```git remote -v ```
+
 >[!NOTE]
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
