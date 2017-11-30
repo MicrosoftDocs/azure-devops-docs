@@ -19,7 +19,7 @@ This page shows different samples about the wait control.
 ### Start and end
 This sample shows basic start and end operations for the wait control. 
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import StatusIndicator = require("VSS/Controls/StatusIndicator");
 
@@ -42,7 +42,7 @@ This sample shows basic start and end operations for the wait control.
 ### Long running operation
 This sample shows a cancellable long running operation which simulates 10 steps. This operation can be cancelled at any time using cancel link or ESC key.
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import StatusIndicator = require("VSS/Controls/StatusIndicator");
 
