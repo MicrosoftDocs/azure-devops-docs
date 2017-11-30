@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/23/2016
+ms.date: 11/30/2017
 ---
 
 # Manage branches
@@ -16,19 +16,22 @@ ms.date: 08/23/2016
 Manage the work in your team's VSTS Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
 
-Access the view by selecting **Branches** while viewing your repo on the web.    
+View your repo's branches by selecting **Branches** while viewing your repo on the web.    
 
 ![Access the branches view from your Git repo in Team Explorer](_img/branches/branches_nav.png)
 
 ## Organize your branches
 
-The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite. The default branch for the repo, such as `master`, is listed at the top.
-Select the **All** tab to view all branches in the repo. 
-Filter the shown branches for a specific name or pattern in either view by entering text in the **Search all branches** box in the upper right.
+The default **Mine** tab on the branches page shows branches you've created, pushed changes to, or set as a favorite, along with the default branch for the repo, such as `master`. The **All** tab lists all branches in the repo, and the **Stale** tab lists branches in the repo that haven't had any commits in three months or longer.
 
-![Search and filter branches viewed using the search all branches field](_img/branches/search_branches.png)   
+![My branches](_img/branches/my-branches.png)
 
-Your repo's default branch (for example, `master`) will always sit at top of the list. If your team uses a forward slash separator in your branch names, you'll see a collapsible tree view for those branches.
+If you don't see the branch you're looking for and you think it might have been deleted, see [Restore a deleted branch](restore-deleted-branch.md).
+
+Filter the listed branches in any of the branch views by entering a specific name or pattern in the **Search all branches** box in the upper right.
+
+![Search and filter branches viewed using the search all branches field](_img/branches/search_branches.png)  
+If your team uses a forward slash separator in your branch names, you'll see a collapsible tree view for those branches.
 
 >[!TIP]   
 > Using a naming convention for your branches is highly recommended. For suggestions on how to name your branches, see [Adopt a Git branching strategy](concepts/git-branching-guidance.md).   
@@ -50,7 +53,7 @@ Remove favorites by toggling the star off or by selecting the **...** to the rig
 Each branch name has the name of the last contributor to the branch and a link to the latest commit on the branch. Select the date or time of the last commit to review the updates to the branch.
 The branch view also shows the number of commits the branch is ahead of and behind the branch labeled **Compare**. Use this information to quickly check how far a branch has diverged from another.
 
-If the branch has a pull request open, you can see its current status based on the voting in the pull request. Select the pull request to open it up so you can review the details.
+If the branch has a pull request open, you can see its pull request ID. Select the pull request to open it up so you can review the details.
 
 ![See how far a branch is ahead of and behind the compare branch](_img/branches/branches_ahead_behind.png)
 
@@ -62,8 +65,7 @@ your branches shown on the page are to another branch in your repo:
 0. Select the **...** next to the branch you want to set as the baseline for comparison.   
 0. Select **Set as compare branch**.
 
-The **Compare** label will move to this branch and the branch will move to top of the list on the Branches page. The other branches on the page will have the number of commits ahead/behind updated to reflect
-the new comparison.
+The **Compare** label will move to this branch and the other branches on the page will have the number of commits ahead/behind updated to reflect the new comparison.
 
 ## View branch history
 

@@ -49,7 +49,9 @@
   - name: Sign-in to the web or a client
     href: ../user-guide/connect-team-projects.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: Export user accounts or audit log
+    href: export-users-audit-log.md   
 - name: Troubleshooting
   items:
   - name: Network connections

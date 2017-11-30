@@ -31,7 +31,7 @@ ms.date: 11/09/2017
 
 <a name="billing"></a>
 
-[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)]
 
 <a name="QALicensesResources"></a>
 

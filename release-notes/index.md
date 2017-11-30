@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 11/28/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -15,7 +15,7 @@ hide_comments: true
 
 ## Features under development
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
 ### 2017 Q4
 
@@ -30,6 +30,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Wiki – GA |Code|TBD|
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
+|Updated Windows shell extension for TFVC|Code|--|
 |Scheduled builds – Do not schedule build if nothing has changed in repo|Build|TBD|
 |CI – GitHub Enterprise integration|Build|TBD|
 |Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
@@ -40,7 +41,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|--|
 |Request workflow for account (project collection) admins who don't have payment access|Admin|TBD|
 |Change Azure subscription when purchase is blocked|Admin|TBD|
-|Licensing users and extensions using AAD groups|Admin|TBD|
 |Simplified publisher onboarding and member management|Marketplace|--|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
 
@@ -86,7 +86,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Rerun failed tests in CI/CD workflows to overcome flaky tests|Test|TBD|
 |View in-progress test results in CI/CD workflows|Test|TBD|
 |Test insights related to Top failing tests & Long running tests at a Build definition level|Test|TBD|
+|[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|--|
 |Release views – support for multiple versions of extensions|Marketplace|--|
+
+### 2018 Q3
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)|Admin|TBD|
 
 ## Current features
 

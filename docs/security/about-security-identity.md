@@ -113,7 +113,7 @@ VSTS and TFS control access through these three inter-connected functional areas
 
 Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
 
-<img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
 You can create local groups or Active Directory (AD) [groups to manage your users](../tfs-server/admin/setup-ad-groups.md). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.  
 

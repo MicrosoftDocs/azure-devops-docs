@@ -27,23 +27,23 @@ Permissions are set at the collection, team project, and object level as describ
 
 0. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that being with the characters you type.  
 
-	<img src="_img/view-permissions-search-user-name.png" alt="Find a user account name" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/view-permissions-search-user-name.png" alt="Find a user account name" style="border: 1px solid #C3C3C3;" />  
 
 0. Click the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
 
-	<img src="_img/view-permissions-project-level.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/view-permissions-project-level.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 1px solid #C3C3C3;" />   
 
 0. Click **Member of** to see which security groups the user belongs to.  
 
 	Here we see that the user account, Jamal Hartnett, belongs to several teams as well as the Project Collection Administrators group. 
 
-	<img src="_img/view-permissions-member-of.png" alt="Web portal, Security tab, User name, Members tab" style="border: 2px solid #C3C3C3;" />    
+	<img src="_img/view-permissions-member-of.png" alt="Web portal, Security tab, User name, Members tab" style="border: 1px solid #C3C3C3;" />    
 
 ## Determine who is a member of the Project Administrators group   
 
 If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by clicking on that group and seeing who are members. 
  
-<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
+<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 1px solid #C3C3C3;" />
 
 
 ## Try this next

@@ -53,18 +53,18 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Click the security group, Project Administrators, and then click Members, and then click **Add**.  
 
-	<img src="_img/project-level-permissions-add-member.png" alt="Web portal, Admin context, Security hub, Add member" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-member.png" alt="Web portal, Admin context, Security hub, Add member" style="border: 1px solid #C3C3C3;" /> 
 
 0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Click the match(es) that meets your choice. 
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 0. Click Save changes and you'll notice the user Project Administrators, and then click Members, and then click **Add**.  
  
-	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Change the permission level for a project-level group 
@@ -75,7 +75,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
-	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 1px solid #C3C3C3;" />  
 
 	For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
@@ -91,13 +91,13 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Click Create group to open the dialog for adding a group. 
 
-	<img src="_img/project-level-permissions-create-group.png" alt="Create security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-create-group.png" alt="Create security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 0. Enter a name for the group, and optionally a description. 
  
 	For example, here we define a Work Tracking Administrators group.  
 
-	<img src="_img/project-level-permissions-add-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
@@ -105,7 +105,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	Here we grant this group permissions to [manage customizations for the Inheritance process model](../work/customize/process/manage-process.md). 
 
-	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 0. Click **Save changes**.   
 

@@ -7,7 +7,7 @@ ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
-ms.date: 11/03/2017
+ms.date: 11/28/2017
 ---
 
 # About access levels
@@ -97,6 +97,8 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ## Related notes  
 
-- [Change access levels](change-access-levels.md)
-- [Permissions & access](permissions-access.md)  
+- [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md)
+- [Change access levels (TFS)](change-access-levels.md)
+- [Export users (VSTS) or the audit log (TFS)](export-users-audit-log.md)
+- [Default permissions and access for VSTS and TFS](permissions-access.md)
 - [Work in the web portal](../user-guide/work-web-portal.md)  
