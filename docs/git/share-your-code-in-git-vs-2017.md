@@ -8,7 +8,7 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/07/2017
+ms.date: 11/29/2017
 ---
 
 # Share your code with Visual Studio 2017 and VSTS Git
@@ -22,7 +22,7 @@ ms.date: 09/07/2017
 
 Share your Visual Studio solution in a new VSTS or Team Foundation Server Git repo.
 
-This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a VSTS account. 
+This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others. 
 
 If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
 
@@ -32,69 +32,66 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ##  Create a local Git repo for your project
 
-Create a new local Git repo for your project by selecting ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png) on the status bar in the lower right hand corner of Visual Studio.
-This will create a new repo in the folder the solution is in and commit your code into that repo.
+Create a new local Git repo for your project by selecting ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar in the lower right hand corner of Visual Studio.
+This will create a new repo in the folder the solution is in and commit your code into that repo. You can also right-click your solution in Solution Explorer and choose **Add Solution to Source Control**.
 
 Once you have a local repo, select items in the status bar to quickly navigate between Git tasks in Team Explorer.
 
-![Visual Studio Git status bar](_img/share-your-code-in-git-vs/vs-status-bar.png)
+![Visual Studio Git status bar](_img/share-your-code-in-git-vs-2017/vs-status-bar.png)
 
-----
-- ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) shows the number of unpublished commits in your local branch. Selecting this will open the **Sync** view in Team Explorer.
-- ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_pending_changes.png) shows the number of uncommitted file changes. Selecting this will open the **Changes** view in Team Explorer.
-- ![Visual Studio Repo Status Bar icon](_img/share-your-code-in-git-vs/vs_current_repo.png) shows the current Git repo. Selecting this will open the **Connect** view in Team Explorer.
-- ![Visual Studio branch status bar icon](_img/share-your-code-in-git-vs/vs_branch_picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
- 
-----
+- ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) shows the number of unpublished commits in your local branch. Selecting this opens the **Synchronization** view in Team Explorer.
+- ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png) shows the number of uncommitted file changes. Selecting this opens the **Changes** view in Team Explorer.
+- ![Visual Studio Repo Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-current-repo.png) shows the current Git repo. Selecting this opens the **Connect** view in Team Explorer.
+- ![Visual Studio branch status bar icon](_img/share-your-code-in-git-vs-2017/vs-branch-picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
 
 ## Publish your code to VSTS
 
-0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to VSTS**.
+0. Navigate to the **Push** view in Team Explorer by choosing the ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) icon in the status bar. You can also select **Sync** from the **Home** view in Team Explorer.
 
- ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
+0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
 
-0. Verify your email and select your account in the **VSTS Domain** drop down. 
+ ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs-2017/publish-git-repo.png)
 
-0. Enter your repository name and select **Publish Repository**. 
+0. Verify your email and select your account in the **Team Services Domain** drop-down. 
 
- ![Publish your VS project to a new VSTS Git repo](_img/share-your-code-in-git-vs/vsts_publish_repo.png)
+0. Enter your repository name and select **Publish repository**. 
 
-   This creates a new Team Project in your account with the same name as the repository. To create the repo in an existing Team Project, click **Advanced** next to **Repository name** and select a team project.
+ ![Publish your VS project to a new VSTS Git repo](_img/share-your-code-in-git-vs-2017/vsts-publish-repo.png)
 
-Your code is now in a VSTS repo. You can view your code on the web by selecting **See it on the web** .
+   This creates a new project in your account with the same name as the repository. To create the repo in an existing project, click **Advanced** next to **Repository name** and select a project.
+
+0. Your code is now in a VSTS repo. You can view your code on the web by selecting **See it on the web** .
   
-![View your VSTS Git repo on the Web](_img/share-your-code-in-git-vs/vsts_view_on_web.png)
+  ![View your VSTS Git repo on the Web](_img/share-your-code-in-git-vs-2017/vsts-view-on-web.png)
   
 ## Commit and push updates
 
 0. As you write your code, your changes are automatically tracked by Visual Studio. 
-You can [commit](tutorial/commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_pending_changes.png) from the status bar.
+You can [commit](tutorial/commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png) from the status bar.
 
 0. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
 
- ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/vs_commit_te.png)
+ ![Add a comment and choose Commit](_img/share-your-code-in-git-vs-2017/vs-commit-changes.png)
 
-0. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) or the **Sync** view in Team Explorer. Select **Push** to 
+0. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) (or select **Sync** from the **Home** view in Team Explorer). Select **Push** to 
 update your code in VSTS/TFS.
 
- ![Push your changes](_img/share-your-code-in-git-vs/vspush.png)
+ ![Push your changes](_img/share-your-code-in-git-vs-2017/vs-push-commits.png)
 
 ## Get changes from others
 
 Sync your local repo with changes from your team as they make updates.
 
-0. From the **Sync** view in Team Explorer, fetch the [commits](tutorial/commits.md) that your team has made. 
+0. From the **Synchronization** view in Team Explorer, fetch the [commits](tutorial/commits.md) that your team has made. 
 Double-click a commit to view its file changes.
 
- ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs/vs_fetch_commits.png)
+ ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs-2017/fetch-commits.png)
 
 0. Select **Sync** to merge the fetched commits into your local repo and then [push](tutorial/pushing.md) any unpublished changes to VSTS.
 
- ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs/vs_sync_commits.png)
+ ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs-2017/sync-commits.png)
 
 0. The changes from your team are now in your local repo and visible in Visual Studio.
-
- ![The changes are now in your local repo](_img/share-your-code-in-git-vs/vs_pull_complete.png)
  
 ## Frequently asked questions
 
@@ -106,7 +103,7 @@ Double-click a commit to view its file changes.
 
 ### I don't see the **Add to Source Control** button in the status bar.
 
-The **Add to Source Control** button in the status bar ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png)  was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
+The ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) button in the status bar was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
 
 If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. 
 
@@ -114,19 +111,19 @@ You can create a local Git repo for an existing solution by right-clicking your 
 
 ### How can I see what changes are in a commit before I pull it into my local branch?
 
-To see what's changed in a commit, go to the **Syncrhonization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
+To see what's changed in a commit, go to the **Synchronization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
 You can then right-click on any file modified by the commit and select **Compare with Previous...** to view the changes compared to the previous 
 version of the file.
 
- ![Choose Compare with Previous from the context menu](_img/share-your-code-in-git-vs/vs_compare_with_previous.png)
+ ![Choose Compare with Previous from the context menu](_img/share-your-code-in-git-vs-2017/compare-with-previous.png)
 
 ### How do I associate my commits with work items?
 
 You can include work items in your commits through **Related Work Items** in the **Changes** page in Team Explorer. 
 
-![Adding work items to changes](_img/share-your-code-in-git-vs/vs_linked_work_items.png)
+![Adding work items to changes](_img/share-your-code-in-git-vs-2017/linked-work-items.png)
 
-Work items can be included in commits by adding #_ID_ into the commit message. For example, "Fixing bug #23 in the reporting tools" would link work item 23
+Work items can be included in commits by adding `#ID` into the commit message. For example, `Fixing bug #23 in the reporting tools` would link work item 23
 to the commit. The work item is linked when the commit is pushed to VSTS.
 
 ### Can I use the Git command prompt with Visual Studio?
