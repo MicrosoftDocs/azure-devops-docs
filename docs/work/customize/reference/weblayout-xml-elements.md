@@ -200,7 +200,7 @@ You can specify how information and work item fields are grouped and appear in a
   
 |Attribute|Description|  
 |---------------|-----------------|    
-|`ShowReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `True` to display read-only and empty fields (default_, and `False` to hide these fields.|  
+|`ShowReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `True` to display read-only and empty fields (default), and `False` to hide these fields.|  
 
 
 ### Nest elements 
