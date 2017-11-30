@@ -14,7 +14,9 @@ ms.date: 11/28/2017
 
 **TFS 2018** | **TFS 2017** | **TFS 2015**
 
-You can enable your Team Foundation Server (TFS) deployment to handle more load than a single server configuration by deploying the application and data tiers on separate servers. Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations) to confirm that this configuration seems appropriate for your team. If not, consider a [single server](single-server.md) or [mutliple server](multiple-server.md) configuration instead.
+You can enable your Team Foundation Server (TFS) deployment to handle more load than a single server configuration by deploying the application and data tiers on separate servers. Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations) to confirm that this configuration seems appropriate for your team. If not, consider a [single server](single-server.md) or [multiple server](multiple-server.md) configuration instead.
+
+> If you're upgrading to TFS 2018 from another version, you may want to look at the [requirement changes](../requirement-changes-tfs16.md) and [release notes](../whats-new.md#tfs-2018-rc1).
 
 ## Preparation
 
@@ -97,9 +99,9 @@ When selecting a SQL Server instance in the wizard, be sure to point to the data
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
 
-- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is NT AUTHORITY\NETWORK SERVICE in domain joined scenarios, and LOCAL SERVICE in workgroup scenarios.
+- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is `NT AUTHORITY\NETWORK SERVICE` in domain joined scenarios, and `LOCAL SERVICE` in workgroup scenarios.
 - Whether to enable SSH, along with the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
-- The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path TfsData\ApplicationTier\_fileCache on the local drive which has the most free space.
+- The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path `TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
 - Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure these features. Note that these options are not available on client  operating systems.
 - Whether to create a team project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named `DefaultCollection`.
 

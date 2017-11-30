@@ -77,17 +77,17 @@ Deployment - Advanced scenario instead.
 With the *New Deployment - Basic* scenario, you will need to choose:
 
 - **Language**: Which language you would like to configure TFS for.
-- **SQL Service Instance**: Whether to install SQL Express or use an existing SQL Server instance.
+- **SQL Server Instance**: Whether to install SQL Express or use an existing SQL Server instance.
 - **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](../../security/websitesettings.md) for more information.
 - **Search**: Whether to install and configure Code Search features. See [configuring search](../../search/code/administration.md#config-tfs) 
 for more information.
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
 
-- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is NT AUTHORITY\NETWORK SERVICE in domain joined scenarios, and LOCAL SERVICE in workgroup scenarios.
+- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is `NT AUTHORITY\NETWORK SERVICE` in domain joined scenarios, and `LOCAL SERVICE` in workgroup scenarios.
 - Whether to enable SSH, along with the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
 - The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path
-TfsData\ApplicationTier\_fileCache on the local drive which has the most free space.
+`TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
 - Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure
 these features. Note that these options are not available on client operating systems.
 - Whether to create a team project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named DefaultCollection.
