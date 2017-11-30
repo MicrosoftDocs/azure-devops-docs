@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 11/30/2017
 ---
 
 # Give teams and builds access to feeds
@@ -43,10 +43,10 @@ Giving the **Project Collection Build Service** access to a feed allows all buil
 
 ## Example permissions
 
-In the screenshot below, the Fabrikam Team (1) owns the feed.
+In the screenshot below, the **FabrikamFiber Team** owns the feed.
 
-The Project Collection Build Service (2) is a contributor, so any build which runs with Project Collection scope can add packages to the feed.
+The **Project Collection Build Service** is a contributor, so any build which runs with Project Collection scope can add packages to the feed.
 
-Project Collection Valid Users (3), meaning anyone who can log into the VSTS account, can restore packages from the feed.
+**Project Collection Valid Users**, meaning anyone who can log into the VSTS account, can restore packages from the feed.
 
-![Example permissions settings](_img/identity-perms.png)
+![Example permissions settings](_img/editfeeddialog1.png)
