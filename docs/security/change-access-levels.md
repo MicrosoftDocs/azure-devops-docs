@@ -7,7 +7,7 @@ ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
-ms.date: 11/03/2017
+ms.date: 11/28/2017
 ---
 
 # Change access levels
@@ -42,11 +42,11 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 0. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the Server Settings administration context. 
 
-	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
 0. From the Access levels page, select the access level you want to manage. For example, here we click Add to add a group to Stakeholder access.</p>  
 
-	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
@@ -58,7 +58,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 2. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.</p>  
 
-	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
@@ -73,7 +73,7 @@ Change the default access level to match the access you have licenses for. If yo
 
 You set an access level from its page. Click Set as default access level as shown.
 
-<img src="_img/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="add-user" >  </a>
@@ -81,19 +81,6 @@ You set an access level from its page. Click Set as default access level as show
 
 If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](../tfs-server/admin/setup-ad-groups.md) and add individuals to those groups.
 
-
-<a id="export-audit-log" >  </a>
-## List users and groups who have access  
-
-You can get a list of users and groups that have access to the server by exporting the audit log. The audit log also indicates which access level has been granted.   
-
-1. From the Access levels page, export the audit log.  
-
-	<img src="_img/change-access-levels-export-audit-log.png" alt="Control panel, admin context, Export audit log" style="border: 2px solid #C3C3C3;" />  
-
-2. Save the audit log .csv file which is downloaded to a folder.  
-
-3. You can open the file in Excel and determine the access level assigned to each group or user.
 
 <a id="guide-features-access" >  </a>
 ## Guide to features and access levels
@@ -129,6 +116,7 @@ Within the admin context, there are several hubs which support administrating fe
 ## Related notes  
 <a id="test-manager"  >  </a>
 - [About access levels](access-levels.md)
+- [Export users (VSTS) or the audit log (TFS)](export-users-audit-log.md)
 - [Permissions & access](permissions-access.md)  
 - [Work in the web portal](../user-guide/work-web-portal.md)  
 

@@ -33,8 +33,8 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 with your personal Microsoft account as the VSTS account owner.
 
 	> [!NOTE]
-	> You can connect your VSTS account 
-	> and your directory only through the Azure classic portal.
+	> VSTS will support connecting your VSTS account to an Azure directory to the Azure portal in a few weeks.  In the meantime, 
+	> you can open a [support case](https://go.microsoft.com/fwlink/?linkid=864080) for someone to walk you through the process.
 
 	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
