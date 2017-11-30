@@ -19,7 +19,7 @@ This page shows different samples about the grid control.
 ### Grid height, grid width, and columns
 This sample shows the basic usage of the grid. Note that, `canSortBy` is set to false for "Column 2" which disables sorting for that column.
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
 
@@ -48,7 +48,7 @@ This sample shows the basic usage of the grid. Note that, `canSortBy` is set to 
 <a name="update"></a>
 ### Update grid source
 This sample shows how the grid can be updated after it is initialized using `setDataSource`.
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
 
@@ -85,7 +85,7 @@ This sample shows how the grid can be updated after it is initialized using `set
 <a name="contextmenu"></a>
 ### Context menu
 This sample shows the usage of contextMenu for each row in the grid. The item associated with the context menu is obtained using `args.get_commandArgument().item` in `menuItemClick` function.
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
   import Menus = require("VSS/Controls/Menus");
@@ -153,7 +153,7 @@ This sample shows the usage of contextMenu for each row in the grid. The item as
 <a name="open"></a>
 ### Open row details
 This sample shows how an action can be executed when a row is opened. `openRowDetail` delegate is executed when the row is double clicked or enter key is hit when a row has the focus.
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
 
@@ -192,7 +192,7 @@ This sample shows how an action can be executed when a row is opened. `openRowDe
 ### Hierarchy
 By default first column is indented. Setting `indent: true` for a particular column will cause that column to have indentation for hierarchy. See column options in the below sample.
 Settings `collapsed: true` will get a parent item to be displayed collapsed. To update the data source, use `gridSource.update(newItems);`.
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
 
@@ -246,7 +246,7 @@ Settings `collapsed: true` will get a parent item to be displayed collapsed. To 
 <a name="formatting"></a>
 ### Conditional formatting
 This sample shows the customization of the grid cells. "Total" column is a calculated column and styled differently in `getCellContents` method.
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
   import Date_Utils = require("VSS/Utils/Date");
@@ -402,7 +402,7 @@ This sample shows dragging grid rows and dropping them to the same grid which ba
   }
 ```
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
   
@@ -625,7 +625,7 @@ This sample shows dragging grid rows and dropping them to an outside target.
   }
 ```
 
-``` javascript
+``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
   
