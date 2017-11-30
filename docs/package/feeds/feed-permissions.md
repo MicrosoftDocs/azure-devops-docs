@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 11/30/2017
 ---
 
 # Secure feeds using permissions
@@ -39,6 +39,5 @@ Select **Permissions**.
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 
 In the edit feed dialog:
-- Search for the person or team you want to make an Owner, Contributor, or Reader.
-- Select them or press Enter. 
-- When you're done, select **Save and close**.
+- Choose to make each person or team an Owner, Contributor, or Reader.
+- When you're done, select **Save**.
