@@ -33,8 +33,8 @@ ms.date: 08/18/2016
 | [SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](build/_img/visual-studio-build.png) [Visual Studio Build](build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-android.png) [Xamarin.Android](build/xamarin-android.md). Build an Android app with Xamarin | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/xcode.png) [Xcode](build/xcode.md). Build an Xcode workspace on Mac OS | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on macOS | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/xcode.png) [Xcode](build/xcode.md). Build an Xcode workspace on macOS | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xcode-package-ios.png) [Xcode Package iOS](build/xcode-package-ios.md). Generate an .ipa file from Xcode build output | VSTS, TFS 2015 RTM and newer |
 
 ## Utility

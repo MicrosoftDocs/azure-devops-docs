@@ -24,7 +24,7 @@ A subscriber will see only the messages that match that filter.
 
 - **Notification hub:** Use a notification hub to implement push notifications.
 Notification hubs work for both consumer and enterprise applications
-for mobile platforms including Windows Store, Windows Phone 8, iOS and Android.
+for mobile platforms including Android, iOS, Windows Phone 8, and Windows Store.
 
 ## Create a Microsoft Azure service bus namespace
 
@@ -133,7 +133,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
    <img alt="Azure Service Bus notifications" src="./_img/azure-service-bus/notification-hubs.png" style="border: 1px solid #CCCCCC" />
 
 2. Create or modify an app to receive messages from VSTS through the notification hub. 
-The steps and code required to set up your app depend on the target platform (Windows Store, Windows Phone 8, iOS, or Android).
+The steps and code required to set up your app depend on the target platform (Android, iOS, Windows Phone 8, and Windows Store).
 For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
 
 3. Open the admin page for the team project in VSTS.

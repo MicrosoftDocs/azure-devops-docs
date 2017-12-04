@@ -75,9 +75,8 @@ These scenarios are supported for:
 
 * **Build agents**
   - [Hosted](../../concepts/agents/hosted.md) and [on-premises](../../concepts/agents/agents.md) agents.
-  - Using the XPlat agent is not supported for any Behavior Driver Test (BDT) tasks.
   - The build agent must be able to communicate with all test machines. If the test machines
-    are on-premises, the hosted build agent cannot be used.
+    are on-premises behind a firewall, the hosted build agents cannot be used.
   - The build agent must have access to the Internet to download test agents. If this
     is not the case, the test agent must be manually downloaded and deployed to a network
     location that is accessible by the build agent, and a **Visual Studio Test Agent Deployment**
@@ -89,7 +88,7 @@ These scenarios are supported for:
 
 * **Machine group configuration**
   - Only Windows machines are supported when using BDT tasks inside a Machine Group. Using
-    Linux, iOS, or other platforms inside a Machine Group with BDT tasks is not supported.
+    Linux, macOS, or other platforms inside a Machine Group with BDT tasks is not supported.
   - Installing any version or release of Visual Studio on any of the test machines is not supported.
   - Installing an older version of the test agent on any of the test machines is not supported.
 

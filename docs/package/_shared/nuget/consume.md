@@ -24,7 +24,7 @@ Then [click here to continue](#consume-packages).
 
 <a name="mac-os"></a>
 
-### Mac: Add the feed to your NuGet configuration
+### macOS: Add the feed to your NuGet configuration
 
 1. Get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
 1. Open the Preferences dialog from the **Visual Studio** menu in the menu bar.

@@ -62,13 +62,13 @@ Use a [variable](../../concepts/definitions/build/variables.md) to specify the f
 <tr>
 <td>MSBuild Location</td>
 <td>
-(Optional) Path to MSBuild (on Windows) or xbuild (on Mac).  Default behavior is to search for the latest version.
+(Optional) Path to MSBuild (on Windows) or xbuild (on macOS).  Default behavior is to search for the latest version.
 </td>
 </tr>
 <tr>
 <td>Additional Arguments</td>
 <td>
-You can pass additional arguments to MSBuild (on Windows) or xbuild (on Mac). For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).
+You can pass additional arguments to MSBuild (on Windows) or xbuild (on macOS). For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).
 </td>
 </tr>
 <tr>
