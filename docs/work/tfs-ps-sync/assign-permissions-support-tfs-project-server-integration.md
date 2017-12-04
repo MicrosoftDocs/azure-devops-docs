@@ -18,14 +18,14 @@ ms.date: 03/16/2017
  You should grant permissions after you have installed Team Foundation Server Extensions for Project Server Integration. For more information, see [System and setup requirements](system-and-setup-requirements.md).  
   
 ## Before you begin  
- Before you begin, you'll want to know which PWA instances and TFS team project collections will participate in data synchronization. You'll also want to have answers to the following questions.  
+ Before you begin, you'll want to know which Project Web Access or Project Web App (PWA) instances and TFS team project collections will participate in data synchronization. You'll also want to have answers to the following questions.  
   
 ###  <a name="assign_perm"></a> Do you have all the permissions you need to assign permissions?  
  Make sure you belong to the following groups:  
   
 -   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../security/set-project-collection-level-permissions.md).  
   
--   **Administrator for Project Web App**  for each instance of Project Web Access or Project Web App (PWA), required to grant Project Server permissions. You must also have access to Project Server through PWA.  
+-   **Administrator for Project Web App**  for each instance of PWA, required to grant Project Server permissions. You must also have access to Project Server through PWA.  
   
 -   **Administrators** security group for the SQL Server databases for Project Server, required to grant permissions to the PWA Reporting and Publishing databases.  
   

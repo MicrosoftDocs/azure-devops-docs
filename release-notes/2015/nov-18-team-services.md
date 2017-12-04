@@ -66,7 +66,7 @@ Testing is an important part of a DevOps process. Today we showed a new set of t
 
 ##Exploratory Testing extension
 
-Since 2010, we’ve had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screen shots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Windows, Mac, or Linux)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
+Since 2010, we’ve had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screen shots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Linux, macOS, or Windows)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
 
 Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/19/announcing-easy-to-use-web-based-exploratory-test-for-visual-studio-team-services.aspx).
 

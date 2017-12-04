@@ -88,7 +88,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 ### How can I manually select versions of tools on the Hosted macOS Preview agent?
 * **Xamarin**
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS Preview** agent, before your Xamarin build step, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed. Choose the Mono version that is associated with the Xamarin SDK version that you need.
+  To manually select a Xamarin SDK version to use on the **Hosted macOS Preview** agent, before your Xamarin build step, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
 
   `/bin/bash –c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
   
