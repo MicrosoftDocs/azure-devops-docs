@@ -136,7 +136,7 @@ Another enhancement to the Azure resource group task is to allow either incremen
 ![resource groups](_img/10_12_13.png)
 
 ##Azure CLI task
-The new Azure CLI task supports running Azure CLI commands on cross platform agents like Windows, Linux and Mac. The task supports both Classic and ARM subscriptions. It supports two modes of providing the script, one as a linked artifact and another as an inline script.
+The new Azure CLI task supports running Azure CLI commands on cross platform agents like Linux, macOS, and Windows. The task supports both Classic and ARM subscriptions. It supports two modes of providing the script, one as a linked artifact and another as an inline script.
 
 ![cli](_img/10_12_14.png)
 

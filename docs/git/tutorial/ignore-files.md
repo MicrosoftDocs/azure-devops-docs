@@ -47,7 +47,7 @@ you can create a empty .gitignore from the command line by navigating to your Gi
 &gt; fsutil file createnew <font color="#b5bd68">C:\Users\frank\\myrepo\\.gitignore</font> 0
 </pre>
 
-### Linux and Mac
+### Linux and macOS
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; touch <font color="#b5bd68">/home/frank/myrepo/.gitignore</font>

@@ -212,7 +212,7 @@ After you select the check box to enable this option, in the **Depth** box speci
 
 > **Tip:** The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
 
-#### TFS 2017 RTM, TFS 2015 (MacOS and Linux only)
+#### TFS 2017 RTM, TFS 2015 (macOS and Linux only)
 
 On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set its value to the number of commits in history you want to download. Specify 0 to set no limit.
 

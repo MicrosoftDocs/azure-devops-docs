@@ -23,7 +23,7 @@ You can find more information about the types of scenarios now possible at our [
 
 ###REST APIs
 
-Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Windows, Android, iOS, Node.js, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
+Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
 
 [Learn the basics](https://www.visualstudio.com/integrate/get-started/get-started-rest-basics-vsi)
 
