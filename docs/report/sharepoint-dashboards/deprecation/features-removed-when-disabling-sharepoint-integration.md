@@ -105,7 +105,7 @@ Going forward, the Documents pane within Team Explorer will no longer be support
 
 We encourage customers to use [the OneDrive for Business sync client](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49), which works for both [SharePoint 2016](https://technet.microsoft.com/library/dn232145(v=office.16).aspx) and SharePoint Online. The OneDrive for Business sync client lets you select any SharePoint document library and sync the files to your local computer. The user can edit the files using Windows File Explorer, and changes are synced back to SharePoint. 
 
-OneDrive for Business works for both Windows and [Mac](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-on-Mac-OS-X-d11b9f29-00bb-4172-be39-997da46f913f), and provides [mobile apps](https://onedrive.live.com/about/download/) for iOS, Android, and Windows Phone. 
+OneDrive for Business works for both Windows and [macOS](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-on-Mac-OS-X-d11b9f29-00bb-4172-be39-997da46f913f), and provides [mobile apps](https://onedrive.live.com/about/download/) for iOS, Android, and Windows Phone. 
 
 Additionally, if you are using [Microsoft Teams](https://products.office.com/microsoft-teams), it provides easy access to the team’s Documents.
 

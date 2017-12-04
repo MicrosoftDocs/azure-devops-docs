@@ -45,9 +45,9 @@ A: Yes, you can use ADAL to create client side applications for an MSA backed ac
 
 >Note: This approach will only work for client side applications. For JS web apps, ADAL JS will not work without an AAD tenant.
 
-#### Q: Is this guidence only for VSTS or is this also relevant for on-prem TFS users?
+#### Q: Is this guidance only for VSTS or is this also relevant for on-prem TFS users?
 
-A: This guidence is mainly for VSTS users. [Client Libraries](./../client-libraries/dotnet.md) are a series of packages built specifically for extending TFS functionality. For on-prem users, we recommend using the [Client Libraries](./../client-libraries/dotnet.md), Windows Auth, or [Personal Access Tokens (PATs)](./PATs.md) to authenticate on behalf of a user.
+A: This guidance is mainly for VSTS users. [Client Libraries](./../client-libraries/dotnet.md) are a series of packages built specifically for extending TFS functionality. For on-prem users, we recommend using the [Client Libraries](./../client-libraries/dotnet.md), Windows Auth, or [Personal Access Tokens (PATs)](./PATs.md) to authenticate on behalf of a user.
 
 #### Q: What if I want my application to authenticate with both TFS and VSTS?
 

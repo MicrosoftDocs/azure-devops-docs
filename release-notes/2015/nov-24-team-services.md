@@ -28,7 +28,7 @@ Package management is an important part of your continuous delivery workflow, an
 
 ##Implement a task once for multiple platforms
 
-Many build and release tasks are simple wrappers around command line tools that run across multiple platforms. You now have the option to implement a task in JavaScript using the NodeHandler, and it can run on the Windows, Linux, or Mac agents.
+Many build and release tasks are simple wrappers around command line tools that run across multiple platforms. You now have the option to implement a task in JavaScript using the NodeHandler, and it can run on the Linux, macOS, and Windows agent.
 
 ##Pull Request Widget for Dashboards
 
