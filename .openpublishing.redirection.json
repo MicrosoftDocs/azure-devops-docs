@@ -2,6 +2,36 @@
     "redirections":
 	[
         {
+            "source_path": "docs/marketplace/how-to/assign-paid-extension-access.md",
+            "redirect_url": "/vsts/marketplace/assign-paid-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/how-to/request-tfs-extensions.md",
+            "redirect_url": "/vsts/marketplace/request-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/request-vsts-extension.md",
+            "redirect_url": "/vsts/marketplace/request-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/uninstall-disable-vsts-extensions.md",
+            "redirect_url": "/vsts/marketplace/uninstall-disable-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/how-to/approve-tfs-extensions.md",
+            "redirect_url": "/vsts/marketplace/approve-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/approve-vsts-extensions.md",
+            "redirect_url": "/vsts/marketplace/approve-extensions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/api/overview.md",
             "redirect_url": "/rest/api/vsts",
             "redirect_document_id": false
