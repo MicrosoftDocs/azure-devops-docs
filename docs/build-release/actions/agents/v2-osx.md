@@ -289,7 +289,9 @@ You can use the template described above as to facilitate generating other kinds
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-[!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
+### How do I run the agent behind a web proxy?
+
+[Run the agent behind a web proxy](proxy.md)
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 

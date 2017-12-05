@@ -32,11 +32,11 @@ https://github.com/adventworks/nodejs-sample
 
 Choose your version control system to get specific instructions for copying the sample app code:
 
-# [VSTS Git](#tab/vstsgit)
+# [VSTS or TFS Git repo](#tab/gitvsts)
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-# [GitHub](#tab/github)
+# [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
@@ -52,7 +52,7 @@ Choose your version control system to get specific instructions for copying the 
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [VSTS or TFS Git repo](#tab/gitvsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -80,7 +80,7 @@ Choose your version control system to get specific instructions for copying the 
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [VSTS or TFS Git repo](#tab/gitvsts)
 
  Observe that the new build definition is automatically linked to your repository.
 

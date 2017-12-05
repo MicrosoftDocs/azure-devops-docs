@@ -10,13 +10,10 @@ ms.date: 10/26/2017
 ms.topic: get-started-article
 ---
 
-# Extensions overview
+# What are extensions?
 
 >[!NOTE]
 > This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 
-
-
-## What are extensions?
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with VSTS. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
@@ -47,6 +44,26 @@ There are dozens of places where you can add to the VSTS user interface, and we'
 - Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
 - Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 
 
+## Extension building checklist
+
+1. Familiarize yourself with an overview of our platform and what's possible with it
+    1. [Team Services extensions overview](https://www.visualstudio.com/team-services/extend/)
+2. Learn to build your first extension or check out our full set samples
+    1. [Build your first extension](./get-started/node.md)
+    2. [Samples](./develop/samples-overview.md)
+3. Familiarize yourself with our RESTful APIs. If you're integrating from a 3rd party app or service, you'll also want to check out our Service Hooks
+    1. [REST APIs](../integrate/index.md)
+    2. [Service Hooks](../service-hooks/overview.md)
+4. Once your extension is ready, you'll want to package it up, publish it to the Marketplace, and we hope you'll share it with the community!
+    1. [Package, publish, and install your extension](./publish/overview.md)
+    2. [Package and publish your integration with an external app or service](./publish/integration.md)
+    3. [Share your work publicly with the entire community](./publish/publicize.md)
+
+## Helpful links
+
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
+* [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
+* [Visual Studio Partner Program](https://vspartner.com/)
 
 ## Next Steps
 
