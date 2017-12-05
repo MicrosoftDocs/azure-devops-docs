@@ -34,4 +34,7 @@ You can narrow down your results and focus in on what you need by using filters.
 
 ![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](workitem/work-item-search.md)**
 
-See also: [Adhoc vs managed work item queries](../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json)
+See also:
+
+* [Adhoc vs managed work item queries](../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json)
+* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
