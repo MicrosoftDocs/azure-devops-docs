@@ -12,6 +12,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build-release/archive/preview/release-definition-editor.md",
+            "redirect_url": "/vsts/build-release/actions/work-with-release-definitions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/marketplace/rating-and-review.md",
             "redirect_url": "/vsts/extend/publish/manage-ratings-review.md",
             "redirect_document_id": false
