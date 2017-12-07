@@ -8,7 +8,7 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 10/10/2017
+ms.date: 12/07/2017
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -333,12 +333,12 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
 
 
  
-## Emphasis (bold, italics, underscore)  
+## Emphasis (bold, italics, strikethrough)  
 
 You can emphasize text by applying bold, italics, or strikethrough to characters: 
 - To apply italics: surround the text with an asterisk `*` or underscore `_`   
 - To apply bold: surround the text with double asterisks `**`.    
-- To apply strick-through: surround the text with double tilde characters `~~`.   
+- To apply strikethrough: surround the text with double tilde characters `~~`.   
 
 Combine these elements to apply multiple emphasis to text.    
 

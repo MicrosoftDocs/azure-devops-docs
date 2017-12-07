@@ -6,44 +6,41 @@ description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/16/2016
+ms.date: 12/07/2017
 ---
 
 # Web Hooks
 
-Web Hooks provides a way to send a JSON representation of an event to any service.
-All that is required is a public endpoint (HTTP or HTTPS).
+Web Hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 
 For more information about the JSON payloads posted by this consumer, see [events](../events.md).
 
 ## Send JSON representation to a service
 
-1. Open the admin page for the team project in VSTS.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-2. On the Service Hooks tab, run the subscription wizard.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   For details about the subscription wizard, go [here](../index.md). 
+	Click **Create Subscription**.
 
-   <img alt="Team project administraton page, service hooks tab, add icon" src="./_img/webhooks/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+0.  Select and configure the VSTS event:
 
-3. Pick and configure the VSTS event.
+	![Configure the event dialog box](./_img/webhooks/configure-event.png)
 
-   <img alt="Configure the event dialog box" src="./_img/webhooks/configure-event.png" style="border: 1px solid #CCCCCC" />
+0. Configure what to do when the event occurs:
 
-4. Configure what to do when the event occurs. 
+	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
-   See Q & A below for information on the **Resource details to send**,
-   **Messages to send**, and **Detailed messages to send** settings.
+	![Configure the action dialog box](./_img/webhooks/configure-action.png)
 
-   <img alt="Configure the action dialog box" src="./_img/webhooks/configure-action.png" style="border: 1px solid #CCCCCC" />
+0. Test the service hook subscription and finish the wizard:
 
-5. Test the service hook subscription and finish the wizard.
+	![Test it](./_img/webhooks/test.png)
 
-   <img alt="Test it" src="./_img/webhooks/test.png" style="border: 1px solid #CCCCCC" />
+Now the Web hook is set up. Go to the target service to view the JSON representation:
 
-Now the Web hook is set up. Go to the target service to view the JSON representation. 
+![View the JSON representation](./_img/webhooks/request-bin.png)
 
-<img alt="View the JSON representation" src="./_img/webhooks/request-bin.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
 VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
