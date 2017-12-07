@@ -28,11 +28,11 @@ Get a HipChat authorization token
 
 ## Post a message to a room
 
-1. Open the admin page for the team project in VSTS.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-2. On the Service Hooks tab, create a subscription.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   <img alt="Create a service hook" src="./_img/hipchat/create-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 3. Choose HipChat.
 
