@@ -59,13 +59,11 @@ This can be done when you create a service hook subscription.
 
 ## Create a service hook subscription
 
-1. Open the admin page for the team project in VSTS.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-2. On the **Service Hooks** tab, run the subscription wizard.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   For details about the subscription wizard, go [here](../index.md).
-
-   <img alt="Add a service hook" src="./_img/azure-storage/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 3. Pick the VSTS event to use as a trigger to insert a message in a storage queue.
 
