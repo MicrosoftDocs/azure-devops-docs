@@ -65,7 +65,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebLayout ShowReadOnlyFields="True"> 
+<WebLayout ShowEmptyReadOnlyFields="True"> 
     <SystemControls>
       <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" />
       <Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" />
@@ -82,7 +82,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 
 **For TFS 2017 On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
 
-**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can specify the **ShowReadOnlyFields** attribute, or select to hide or replace select fields defined within the **SystemControls** section.  
+**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can specify the **ShowEmptyReadOnlyFields** attribute, or select to hide or replace select fields defined within the **SystemControls** section.  
 
 For example, to hide the Reason field, you modify the **Control** element with the `Visible` attribute.
    
@@ -190,7 +190,7 @@ You can specify how information and work item fields are grouped and appear in a
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebLayout ShowReadOnlyFields="True | False">
+<WebLayout ShowEmptyReadOnlyFields="True | False">
    ...
 </WebLayout>
 ```
@@ -200,7 +200,7 @@ You can specify how information and work item fields are grouped and appear in a
   
 |Attribute|Description|  
 |---------------|-----------------|    
-|`ShowReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `True` to display read-only and empty fields (default), and `False` to hide these fields.|  
+|`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `True` to display read-only and empty fields (default), and `False` to hide these fields.|  
 
 
 ### Nest elements 
