@@ -58,13 +58,11 @@ when you create a Service Hook subscription.
 2. Create or modify your app's code to receive VSTS
 messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
 
-3. Open the admin page for the team project in VSTS.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-4. On the **Service Hooks** tab, run the subscription wizard.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   For details about the subscription wizard, go [here](../index.md).
-
-   <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 5. Pick and configure the VSTS event.
 
