@@ -73,6 +73,10 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 The creator of a Deliver Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. To learn more about Delivery Plans, see [Review team delivery plans](../work/scale/review-team-plans.md).
 
 Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../work/track/set-query-permissions.md). 
+
+
+> [!NOTE]  
+> **Feature availability**: Delivery plans are available for all VSTS accounts. For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
  
 0. To grant permissions to a group or user to manage or edit a specific plan, click the  ![actions icon](../_img/icons/actions-icon.png) actions icon to open the Security dialog for the plan.  
 
