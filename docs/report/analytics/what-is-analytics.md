@@ -39,7 +39,7 @@ Widgets provide the easiest way to get insights from your data. Check out [Enabl
 If you want to develop your own widget based on the Analytics Service, see [Create an Analytics widget for VSTS](../extend-analytics/example-analytics-widget.md).
 
 ## OData
-The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see[Extend on Analytics](../extend-analytics/index.md)
+The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/index.md)
 
 ## Power BI
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption. We have created a Power BI Desktop connector which simplifies pulling data from the Analytics Service.
@@ -48,8 +48,7 @@ From Power BI Desktop, select the connector "Visual Studio Team Services (Beta)"
 
 ![Power BI VSTS Connector Beta](../powerbi/_img/data-connector-get-data.png)
 
-**The VSTS connector is in beta.** The current version has performance issues when dealing with large amounts of data. During the beta phase, we recommend using it for small accounts. The production version will be optimized to work with large amounts of data. 
-We plan to upgrade it to production in the early 2018. 
+**The VSTS connector is in beta.** The current version has performance issues when dealing with large amounts of data. We recommend using it for small accounts. In early 2018, we will be releasing an updated version. That version will be optimized to work with large amounts of data.
 
 For more information on the Beta version of the connector, check out [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
 
