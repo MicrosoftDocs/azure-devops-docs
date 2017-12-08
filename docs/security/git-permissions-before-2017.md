@@ -18,7 +18,7 @@ Those using TFS 2017 Update 1 or VSTS should see the [latest list of permissions
 
 These permissions appear only for a team project including a Git repository.
 
-<img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #C3C3C3;" />
 
 Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
 

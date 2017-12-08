@@ -73,19 +73,17 @@ After you install a paid extension, you must assign that extension to users who 
 
 	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
 
-	For example, Johnnie has a Visual Studio Enterprise subscription, which includes access to the Test Manager extension. To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace}(https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace}(https://marketplace.visualstudio.com).
 
-0.	To assign the extension, go to the extension pane, for example, Test Manager.
+0.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to:
 
-	<img alt="Go to the extension" src="_img/assign-extensions/assign-extension-no-users.png" style="border: 1px solid #CCCCCC" />
+	![Manage extensions](_img/assign-extensions/manage-extensions.png)
 
-0.	Assign the extension. 
+0.	Assign the extension:
 
-	<img alt="Assign extension to users" src="_img/assign-extensions/assign-extension-add-one-user.png" style="border: 1px solid #CCCCCC" />
+    ![Assign extensions](_img/assign-extensions/assign-extension.png)
 
-	<img alt="Extension now assigned" src="_img/assign-extensions/assign-extension-assigned-basic.png" style="border: 1px solid #CCCCCC" />
-
-	You can assign the extension to one user, specific users, or to all users at the same time, up to the number allowed for free extensions or the number that you purchased for paid extensions.
+	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
 
 0.	Tell your team about this extension, so they can start using its capabilities.
 
