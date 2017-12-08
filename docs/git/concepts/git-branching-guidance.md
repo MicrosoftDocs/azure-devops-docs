@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/16/2017
+ms.date: 12/09/2017
 ---
 
 # Adopt a Git branching strategy
@@ -21,12 +21,9 @@ Adopt a branching strategy for your team so that you collaborate better and spen
 
 Keep your branch strategy simple by building your strategy from these three concepts:
 
----
 0. Use feature branches for all new features and bug fixes.
 0. Merge feature branches into the master branch using pull requests. 
 0. Keep a high quality, up-to-date master branch.  
-   
----
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 
@@ -47,12 +44,16 @@ You can also include other information in the branch name, such as who created t
     
 Some suggestions for naming your feature branches: 
    
-*`username/description`*      
-*`username/workitem`*    
-*`bugfix/description`*    
-*`features/feature-name`*    
-*`hotfix/description`*    
+- `users/username/description`   
+- `users/username/workitem`  
+- `bugfix/description` 
+- `features/feature-name` 
+- `features/feature-area/feature-name`  
+- `hotfix/description`  
  
+>[!NOTE]
+>For information on setting policies to enforce a branch naming strategy, see [Require branch folders](../how-to/require-branch-folders.md).
+
 #### Use feature flags to manage long-running branches
  
 Long-lived feature branches present problems when you need to build code on top of the branch before the work in the branch is finished. 
@@ -72,14 +73,12 @@ Distribute reviewer responsibilities to share ideas across your team and spread 
 
 Some suggestions for successful pull requests:    
    
---- 
 - Two reviewers is an optimal number [based on research](https://www.microsoft.com/en-us/research/publication/convergent-software-peer-review-practices/). 
 - If your team already has a code review process, bring pull requests into what you're already doing.
 - Take care assigning the same reviewer(s) to a large number of pull requests. Pull requests work better when reviewer responsibilities are shared across the team.
 - Provide enough detail in the description to quickly bring reviewers up to speed with your changes.   
 - Include a build or linked version of your changes running in a staged environment with your pull request so others can easily test the changes.   
-   
----
+  
 
 ### Keep a high quality, up-to-date master branch
 
@@ -88,14 +87,13 @@ Your master branch needs these qualities so that feature branches created by you
 
 Set up a [branch policy](../branch-policies.md) for your master branch that:   
 
----
 0. Requires a pull request to merge code. This prevents direct pushes to the master branch and ensures discussion of proposed changes.
 0. Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
 0. Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.    
     
---- 
 
-> The build definition for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
+>[!TIP]
+>The build definition for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
 
 ## Manage releases
 
@@ -122,12 +120,10 @@ Merging the feature branch into the master branch can bring over release-specifi
 
 Update the master branch with a change made in the release branch with these steps:
 
----
 0. Create a new feature branch off the master branch to port the changes.
 0. Cherry-pick the changes from the release branch to your new feature branch.
 0. Merge the feature branch back into the master branch in a second pull request. 
    
----
 
 ![image of release branch workflows](_img/branching-guidance/releasebranching_master.png)
 

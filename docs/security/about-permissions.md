@@ -62,19 +62,19 @@ To understand why a permission is inherited, you can pause over the permission s
 
 ###VSTS, TFS 2017 
 
-<img src="_img/about-permissions-why.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/about-permissions-why.png" style="border: 1px solid #C3C3C3;" />
 
 A new window opens that shows the inheritance information for that permission.  
 
-<img src="_img/about-permissions-trace.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
 
 ### TFS 2015, TFS 2013 
-<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
 Use this option to disable inheritance for folders, shared queries, and other objects.
 
-<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #C3C3C3;" />
 
 **When assigning permissions**
  
@@ -110,7 +110,7 @@ create a group in Windows, Active Directory, or Azure Active Directory,
 add these groups to TFS groups or VSTS groups,
 and add the same groups to grant access to additional resources.
 
-<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Of course, you don't need to grant permissions for reports or the project portal
 if your team project doesn't use SQL Server Reporting Services or a SharePoint site.
