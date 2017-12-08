@@ -120,6 +120,8 @@
       href: delete-branch.md
     - name: Restore a deleted branch
       href: restore-deleted-branch.md
+    - name: Require branch folders
+      href: how-to/require-branch-folders.md
     - name: Lock a branch
       href: lock-branches.md
     - name: Branch policies
