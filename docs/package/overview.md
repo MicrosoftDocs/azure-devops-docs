@@ -37,6 +37,7 @@ Some package management services are only compatible with specific versions of T
 | **NuGet**                      | Yes           | TFS 2017                    |
 | **NuGet.org upstream source**  | Yes           | To be announced             |
 | **npm**                        | Yes           | TFS 2017 Update 1 and newer |
+| **npmjs.com upstream source**  | Yes           | TFS 2017 Update 1 and newer |
 | **Maven**                      | Yes           | TFS 2018                    |
 
 ## Other package types
