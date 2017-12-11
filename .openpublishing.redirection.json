@@ -92,6 +92,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build-release/actions/build-yaml-get-started.md",
+            "redirect_url": "/vsts/build-release/actions/build-yaml",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/overview.md",
             "redirect_url": "/vsts/build-release/index",
             "redirect_document_id": false
