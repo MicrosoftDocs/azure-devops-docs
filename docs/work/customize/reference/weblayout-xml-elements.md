@@ -65,7 +65,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebLayout ShowEmptyReadOnlyFields="True"> 
+<WebLayout ShowEmptyReadOnlyFields="true"> 
     <SystemControls>
       <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" />
       <Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" />
@@ -190,7 +190,7 @@ You can specify how information and work item fields are grouped and appear in a
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebLayout ShowEmptyReadOnlyFields="True | False">
+<WebLayout ShowEmptyReadOnlyFields="true | false">
    ...
 </WebLayout>
 ```
@@ -200,7 +200,7 @@ You can specify how information and work item fields are grouped and appear in a
   
 |Attribute|Description|  
 |---------------|-----------------|    
-|`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `True` to display read-only and empty fields (default), and `False` to hide these fields.|  
+|`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `true` to display read-only and empty fields (default), and `false` to hide these fields.|  
 
 
 ### Nest elements 
