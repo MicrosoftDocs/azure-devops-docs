@@ -6,28 +6,27 @@ ms.technology: vs-devops-build
 ms.assetid: 5A3A363E-C21F-4593-A145-B57492E9FEDC
 ms.manager: douge
 ms.author: alewis
-ms.date: 11/11/2017
+ms.date: 12/07/2017
 ---
 
 # How to use YAML builds
 
 **VSTS**
 
-When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_. 
+When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of configuration as code.
 
 > [!NOTE]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on both your profile and account.
+> To use this capability, you must have the **Build YAML definitions** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
 
-In a YAML build definition, your CI build process is versioned with your code. This means: 
+In a YAML build definition, your CI build process configured as code, which means:
 
-* It follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
+* The definition is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
 
 * If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
 
-* People who prefer to work in code are more comfortable with this kind of build definition.
+## Get started
 
-> [!TIP]
-> If you're new to YAML builds, or to VSTS, we suggest you [begin with our tutorial](build-yaml-get-started.md) and then come back here.
+If you're new to YAML builds, or to VSTS, we suggest you [begin with a tutorial](../apps/aspnet/build-aspnet-core.md) and then come back here.
 
 ## How do YAML builds compare to web-interface builds?
 
@@ -37,7 +36,7 @@ In a YAML build definition, your CI build process is versioned with your code. T
 |Git and GitHub|Yes|Yes|
 |Bitbucket|Not yet|Yes|
 |TFVC|No|Yes|
-|external Git, Subversion|No|Yes|
+|External Git, Subversion|No|Yes|
 |<center>**Capabilities**</center>|
 |Configuration as code|Yes|No|
 |Fan out and fan in|Yes|Not yet|
