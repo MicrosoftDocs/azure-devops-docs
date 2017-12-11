@@ -74,48 +74,36 @@
       href: concepts/agents/hosted.md
     - name: Deployment groups
       href: concepts/definitions/release/deployment-groups/index.md
-  - name: Definitions
+  - name: Builds
     items:
-    - name: Build
-      items:
-      - name: Artifacts
-        href: concepts/definitions/build/artifacts.md
-      - name: History
-        href: concepts/definitions/build/history.md
-      - name: Options
-        href: concepts/definitions/build/options.md
-      - name: Repository
-        href: concepts/definitions/build/repository.md
-      - name: Triggers
-        href: concepts/definitions/build/triggers.md
-      - name: Variables
-        href: concepts/definitions/build/variables.md
-    - name: Release
-      items:
-      - name: Release definitions
-        href: concepts/definitions/release/index.md
-      - name: Environments
-        href: concepts/definitions/release/environments.md
-      - name: Artifacts
-        href: concepts/definitions/release/artifacts.md
-      - name: Triggers
-        href: concepts/definitions/release/triggers.md
-      - name: Variables
-        href: concepts/definitions/release/variables.md
-      - name: Approvals and gates
-        href: concepts/definitions/release/approvals/index.md
-      - name: Templates
-        href: concepts/definitions/release/env-templates.md
-  - name: Process
-    items:
-    - name: Tasks
-      href: concepts/process/tasks.md
-    - name: Phases
-      href: concepts/process/phases.md
-    - name: Conditions
-      href: concepts/process/conditions.md
+    - name: Artifacts
+      href: concepts/definitions/build/artifacts.md
+    - name: History
+      href: concepts/definitions/build/history.md
+    - name: Options
+      href: concepts/definitions/build/options.md
+    - name: Repository
+      href: concepts/definitions/build/repository.md
+    - name: Triggers
+      href: concepts/definitions/build/triggers.md
+    - name: Variables
+      href: concepts/definitions/build/variables.md
   - name: Releases
     items:
+    - name: Release definitions
+      href: concepts/definitions/release/index.md
+    - name: Environments
+      href: concepts/definitions/release/environments.md
+    - name: Artifacts
+      href: concepts/definitions/release/artifacts.md
+    - name: Triggers
+      href: concepts/definitions/release/triggers.md
+    - name: Variables
+      href: concepts/definitions/release/variables.md
+    - name: Approvals and gates
+      href: concepts/definitions/release/approvals/index.md
+    - name: Templates
+      href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
       href: concepts/releases/index.md
     - name: Work with release definitions
@@ -124,6 +112,14 @@
       href: actions/create-deploy-releases.md
     - name: View and manage releases
       href: actions/view-manage-releases.md
+  - name: Process
+    items:
+    - name: Tasks
+      href: concepts/process/tasks.md
+    - name: Phases
+      href: concepts/process/phases.md
+    - name: Conditions
+      href: concepts/process/conditions.md
   - name: Licensing
     items:
     - name: Pipelines in TFS
