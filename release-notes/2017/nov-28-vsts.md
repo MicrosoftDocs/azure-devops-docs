@@ -15,9 +15,6 @@ hide_comments: true
 
 In the **Sprint 126 Update** of Visual Studio Team Services (VSTS), we debut many of the features we announced at the [Microsoft Connect(); 2017](https://www.microsoft.com/connectevent) event. This could be considered our largest release to date, not only in terms of volume of features but also in impact we believe this will have to help you progress on your DevOps journey with the languages and platforms you depend on.
 
-> [!NOTE]
-> Many of these features are already available, including all those in [new feature highlights](#new-feature-highlights), [Analytics OData in Public Preview](#analytics-odata-in-public-preview), and [symbol server](#use-vsts-as-a-symbol-server). Otherwise, the features described here will be rolling out over the next two weeks.
-
 ## New feature highlights
 
 ### Azure DevOps Project ![Release tag](_img/release-notes-tag_release.png)
