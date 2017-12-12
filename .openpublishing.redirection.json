@@ -2,6 +2,11 @@
     "redirections":
 	[
         {
+            "source_path": "docs/integrate/get-started/rest/basics.md",
+            "redirect_url": "/rest/api/vsts",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/marketplace/how-to/assign-paid-extension-access.md",
             "redirect_url": "/vsts/marketplace/assign-paid-extensions",
             "redirect_document_id": false
