@@ -92,6 +92,8 @@
     href: set-up-credential-managers.md
   - name: Create a pull request status server
     href: how-to/create-pr-status-server.md
+  - name: Use Azure Functions to create custom branch policies
+    href: how-to/create-pr-status-server-with-azure-functions.md
   - name: Configure branch policy for an external service
     href: how-to/pr-status-policy.md
   - name: Drive Git development from a work item
