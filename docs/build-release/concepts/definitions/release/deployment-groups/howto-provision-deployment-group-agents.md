@@ -20,10 +20,14 @@ and install and provision the agent on each virtual or physical machine in your 
 You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
-
 * [Install the **VSTS Agent** Azure VM extension](#azureext) on each of the VMs.
-
 * [Use the **Azure Resource Group Deployment** task](#deploytask) in your release definition.
+
+For information about agents and pipelines, see:
+
+* [Concurrent pipelines in Team Foundation Server](../../../licensing/concurrent-pipelines-tfs.md).
+* [Concurrent pipelines in VSTS](../../../licensing/concurrent-pipelines-ts.md).
+* [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 <a name="runscript"></a>  
 ## Run the installation script on the target servers

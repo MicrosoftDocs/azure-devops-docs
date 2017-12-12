@@ -4652,6 +4652,11 @@
         "redirect_document_id": false
        },
        {
+        "source_path": "docs/build-release/apps/cd/deploy-docker-windowsvm.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-docker-webapp",
+        "redirect_document_id": false
+       },
+       {
         "source_path": "docs/report/guidance/configure-burndown-burnup-widgets.md",
         "redirect_url": "/vsts/report/dashboards/configure-burndown-burnup-widgets",
         "redirect_document_id": false
