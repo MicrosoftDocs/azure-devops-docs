@@ -381,7 +381,7 @@ Set a language identifier for the code block to enable syntax highlighting for a
 
 
 <pre>
-```language
+``` language
 code
 ```
 </pre>
@@ -391,29 +391,27 @@ code
 **Additional examples:**
 
 <pre>
-```js
+``` js
 const count = records.length;
 ```
 </pre>
 
 
-```
-js
+``` js
 const count = records.length;
 ```
 
 
 <br/>
 <pre>
-```csharp
+``` csharp
 Console.WriteLine("Hello, World!");
 ```
 </pre>
 
 
 
-```
-csharp
+``` csharp
 Console.WriteLine("Hello, World!");
 ```
 
