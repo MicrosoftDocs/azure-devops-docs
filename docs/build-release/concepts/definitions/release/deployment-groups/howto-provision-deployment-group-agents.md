@@ -145,6 +145,8 @@ where:
 
 >**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
+For more information about ARM templates, see [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/).
+
 To use the template:
 
 1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
