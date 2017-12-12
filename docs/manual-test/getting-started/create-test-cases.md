@@ -20,6 +20,9 @@ meet your users' needs. Organize your test cases by adding test
 cases to test suites. Then choose which testers you want to run 
 the tests.
 
+> **Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
+See [Default manual testing permissions and access](../manual-test-permissions.md).
+
 <a name="createcase"></a>
 ## Create test cases
 

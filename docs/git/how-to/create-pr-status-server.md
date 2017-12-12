@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
-ms.date: 09/05/2017
+ms.date: 12/11/2017
 ---
 
 # Create a pull request status server with Node.js
@@ -240,7 +240,7 @@ Now that your server can receive service hook events when new PRs are created,up
         }
     ```
 
-10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding "WIP" to the title. If so, change the status posted back to the PR.
+10. Instead of just blindly posting the `succeeded` status, inspect the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, change the status posted back to the PR.
 
     ``` javascript
         if (title.includes("WIP")) {
@@ -321,13 +321,15 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Select Create a pull request from the suggestion bar](../_img/create-pr-status-server/create-pr.png)
 
-5. Add "WIP" in the title to test the functionality of the app. Select **Create** to create the PR.
+5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Add "WIP" to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
+    ![Add WIP to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR has been created, you will see the status section, with the "Work in progress" entry and a message in the activity feed, both of which link to the URL specfied in the payload.
+6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specfied in the payload.
 
-    ![Add "WIP" to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
+    ![Add WIP to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
+
+0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

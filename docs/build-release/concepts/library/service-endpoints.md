@@ -104,10 +104,12 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
 | Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
-| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client ID of the account. [More information](#sep-azure-rm-existingsp). |
-| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client key of the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-existingsp). |
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
 <p />
+
+See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
 **Restricting access rights**
 

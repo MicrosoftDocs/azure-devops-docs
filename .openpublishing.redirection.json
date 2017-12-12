@@ -2,6 +2,11 @@
     "redirections":
 	[
         {
+            "source_path": "docs/integrate/get-started/rest/basics.md",
+            "redirect_url": "/rest/api/vsts",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/marketplace/how-to/assign-paid-extension-access.md",
             "redirect_url": "/vsts/marketplace/assign-paid-extensions",
             "redirect_document_id": false
@@ -4649,6 +4654,11 @@
        {
         "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
         "redirect_url": "/vsts/build-release/concepts/definitions/release/approvals/index",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/apps/cd/deploy-docker-windowsvm.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-docker-webapp",
         "redirect_document_id": false
        },
        {
