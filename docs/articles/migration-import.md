@@ -340,7 +340,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
-#### Configuring IP Firewall Rules for VSTS 
+#### VSTS IPs 
 
 It's highly recommended that you restrict access to your VM to only IPs from VSTS. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
@@ -421,8 +421,23 @@ You will need to add exceptions for all three services that make up Package Mana
 |    Package Management Blob - India South            |    52.172.54.122    |
 |    Package Management Blob - Canada Central         |    52.237.16.145    |
 |    Package Management Blob - East Asia (Hong Kong)  |    13.94.26.58      |
+ 
 
-Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
+#### Configuring IP Firewall Exceptions
+
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The Import Service requires the VSTS IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
+
+![Add inbound port rule](_img/migration-import/inbound.png)
+
+Select advanced to configure an inbound port rul for a specific IP. 
+
+![Advanced inbound port rule configuration](_img/migration-import/advanced.png)
+
+Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the VSTS exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your VSTS exceptions, the Import Service might not be able to make a successful connection to your database. 
+
+![Completed inbound port rule configuration](_img/migration-import/example.png)
+
+You will need to repeat adding inbound port rules until all necessary VSTS IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
 #### Restoring your Database on the VM
 
@@ -573,6 +588,9 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
+
+> [!NOTE]
+> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to VSTS [Customer Support](https://www.visualstudio.com/team-services/support/) before queuing another import.
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.

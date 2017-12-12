@@ -1,4 +1,4 @@
-1. Get the REST client. In this case, we're getting the work item tracking client.
+1. Get the REST client. In this case, we're getting the [work item tracking client](https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/api/tfs/workitemtracking/restclient/workitemtrackinghttpclient2_2).
 
 	``` javascript
     VSS.require(["VSS/Service", "TFS/WorkItemTracking/RestClient"], function (VSS_Service, TFS_Wit_WebApi) {
@@ -8,7 +8,7 @@
     });
 	```
 
-1. Call the API (```getWorkItems```) using the client service (```witClient```), with a callback that handles results.
+1. Call the API, ```getWorkItems```, using the client service, ```witClient```, with a callback that handles results.
 
 	``` javascript
     witClient.getWorkItems(/* some work item IDs */ [1,2,3,4], ["System.Title"]).then(

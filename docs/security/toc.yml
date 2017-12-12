@@ -54,6 +54,10 @@
     href: export-users-audit-log.md   
 - name: Troubleshooting
   items:
+  - name: Troubleshoot connection
+    href: ../user-guide/troubleshoot-connection.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: "TF31002: Unable to connect"
+    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: Network connections
     href: faq-network-connections.md
 - name: Reference
