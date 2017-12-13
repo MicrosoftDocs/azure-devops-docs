@@ -143,7 +143,7 @@
       href: concepts/policies/retention.md
     - name: Permissions
       href: concepts/policies/permissions.md
-- name: How to
+- name: How-to Guides
   items:
   - name: Deploy an agent
     items:

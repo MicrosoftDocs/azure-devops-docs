@@ -4,8 +4,6 @@
   items:
   - name: About feedback
     href: about-feedback.md 
-  - name: Default permissions set for collaboration tools 
-    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json   
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 
