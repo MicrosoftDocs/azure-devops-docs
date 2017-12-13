@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 This page shows how to use a pivot filter control.
 
 <a name="basic"></a>
-### Basic usage
+## Basic usage
 This sample shows basic usage of a pivot filter. Please try to use html markup below since it picks up necessary styles from `hub-pivot` and `filters` classes.
 
 ``` html
