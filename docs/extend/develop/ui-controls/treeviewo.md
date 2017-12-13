@@ -16,7 +16,9 @@ This page shows different samples about the treeview control.
 > Go to [API Reference](../../reference/client/controls/tree.md) for more details.
 
 <a name="basic"></a>
-### Basic treeview
+
+## Basic treeview
+
 This sample shows the basic usage of the TreeView control. The items of tree source need to be `TreeView.TreeNode`.
 ``` javascript
   import Controls = require("VSS/Controls");
@@ -71,9 +73,11 @@ This sample shows the basic usage of the TreeView control. The items of tree sou
   Controls.create(TreeView.TreeView, container, treeviewOptions);
 ```
 <a name="selectionchange"></a>
-### Attach to node selection change
+
+## Attach to node selection change
+
 Below code works based on **Basic tree** example above. Attaching `selectionchanged` event of container element to get notified when node selection changes.
-```javascript```
+``` javascript
   var container = $(".sample-container");
 
   // Attach selectionchanged event using a DOM element containing treeview
@@ -85,15 +89,16 @@ Below code works based on **Basic tree** example above. Attaching `selectionchan
   });
 ```
 <a name="addremove"></a>
-### Add/remove nodes
+
+## Add/remove nodes
 Below code works based on **Basic tree** example above. This sample displays how to add nodes to TreeView as well as removing nodes from it.
 
-```html```
+``` html
   <button id="btnAdd">Add cities to Turkey</button>
   <button id="btnRemove">Remove Africa node</button>
 ```
 
-```javascript```
+``` javascript
   $("#btnAdd").click(function(e) {
     // Find the node to add new children
     var turkeyNode = treeview.rootNode.findNode("europe/turkey");
@@ -125,14 +130,15 @@ Below code works based on **Basic tree** example above. This sample displays how
   });
 ```
 <a name="setselectednode"></a>
-### Set selected node programmatically
+
+## Set selected node programmatically
 Below code works based on **Basic tree** example above. It enables setting a node selected programmatically.
 
-```html```
+```html
 <button id="btnSelectedNode">Set Belgium selected</button>
 ```
 
-```javascript```
+``` javascript
 $("#btnSelectedNode").click(function (e) {
   // Keep a reference to old selected node
   var oldSelectedNode = treeview.getSelectedNode();
@@ -145,11 +151,12 @@ $("#btnSelectedNode").click(function (e) {
 ```
 
 <a name="contextmenu"></a>
-### Context menu
+
+## Context menu
 Below code works based on the `source` used in **Basic tree** example above. The sample shows the usage of contextMenu for each node in the treeView. The item associated with the context menu is obtained using `args.get_commandArgument().item` in `menuItemClick` function.
 
 
-```javascript```
+``` javascript
   function menuItemClick(args) {
     // Get the item associated with the context menu
     var node = args.get_commandArgument().item;
