@@ -277,7 +277,7 @@ For example, if your package has this structure:
 /WebPackage(.zip)
   /---- content
     /----- website
-      /---- appsetttings.json
+      /---- appsettings.json
       /---- web.config
       /---- [other folders] 
   /--- archive.xml
