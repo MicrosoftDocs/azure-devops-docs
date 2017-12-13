@@ -195,7 +195,9 @@ If you want to disable downloading sources:
 
 * **VSTS, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
 
-* **TFS 2017 RTM and older:** Define `Build.SyncSources` on the **Variables** and set its value to false.
+* **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
+
+* **TFS 2015:** This feature is not available.
 
 > [!NOTE]
 > When you use this option, the agent also skips running git commands that clean the repo.
