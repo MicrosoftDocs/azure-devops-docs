@@ -32,6 +32,8 @@
     href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
   - name: Create a PR status server
     href: ../git/how-to/create-pr-status-server.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+  - name: Use Azure Functions to create custom branch policies
+    href: ../git/how-to/create-pr-status-server-with-azure-functions.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Service hooks consumers and actions

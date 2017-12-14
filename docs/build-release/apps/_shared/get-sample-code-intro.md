@@ -1,1 +1,1 @@
-Before configuring a CI build process for your app, the source code needs to be in a version control system. Copy the sample app code from the following repository to your version control system:
+You can copy our sample app code directly into your version control system so that it can be accessed by your CI build process. To get started, go ahead and copy this URL to your clipboard:

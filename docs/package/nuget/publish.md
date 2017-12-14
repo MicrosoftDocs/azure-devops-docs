@@ -13,4 +13,4 @@ ms.date: 09/01/2017
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
-[!INCLUDE [](../_shared/publish.md)]
+[!INCLUDE [](../_shared/nuget/publish.md)]

@@ -1,12 +1,12 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com in VSTS via upstream sources or scopes
+description: Use packages from npmjs.com in Visual Studio Team Services and Team Foundation Server via upstream sources or scopes
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: cajone
-ms.date: 09/01/2017
+ms.date: 11/13/2017
 ---
 
 # Use packages from npmjs.com
@@ -15,50 +15,32 @@ ms.date: 09/01/2017
 
 The npm client is designed to work with a single primary *registry* (what Package Management calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
 
-## Upstream sources
-Upstream sources allow you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables caching.
-**This is the recommended way to use Package Management with npm.**
-Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
+The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Package Management with npm.** Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
 
-### Enable npmjs.com as an upstream
-To enable npmjs.com as an upstream source on your feed, check the box in the Create Feed or Edit Feed dialog.
+To learn more about the concept of upstream sources, please see the [concepts page](../concepts/feeds/upstream-sources.md).
 
-![Upstream sources checkbox in New feed dialog](_img/upstream-create.png)
+## Enable npmjs.com as an upstream
+To use npmjs.com as an upstream source, either create a new feed or edit an existing feed.
 
-![Upstream sources checkbox in Edit feed dialog](_img/upstream-edit.png)
+### On a new feed
 
-## Order and shadowing
-When a feed with upstreams enabled receives a query (e.g. `npm install lodash`), it will first check for local packages with that package ID.
-If there is at least one local version of that package ID, the upstream source will not be used.
-So, for example, if you publish `lodash@1.0.0` and run `npm install lodash@2.0.0`, the request will fail, even if 2.0.0 exists on npmjs.com and upstream sources are enabled.
+1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 
-> [!NOTE]
-> Shadowing is permanent. So, in the example above, even if you later unpublish `lodash@1.0.0`, requests for any `lodash` version will only check the local feed.
+### On an existing feed
 
-## Caching
-When you enable npmjs.com as an upstream source, packages installed from npmjs.com will automatically be cached in your feed.These packages could be installed directly from the upstream (e.g. `npm install lodash`) or as dependencies of packages that reside in your feed. 
+1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
+2. Select the **Upstream sources** pivot.
+3. Select **Add upstream source** in the CommandBar.
+4. Select **Select a feed URL** and select **npmjs.com (https://registry.npmjs.org)**. If you like, customize the upstream name.
+5. Select **Add**.
 
-Caching can improve download performance and save network bandwidth, esp. for TFS servers located on internal/dedicated networks.
+## Filter to saved packages
+You can see the packages you have saved in your feed by selecting the "Source = npmjs.com" filter.
 
-### Internet requirements
-When you run an `npm install` command, the feed will check to see if it has a cache of the package(s) requested by the `npm` client. If it does not, it will redirect the client to download the package from npmjs.com directly, and also cache the package in the background. The first client (where client is a developer machine or a build agent) to install a given npm package **will** need Internet access to successfully retrieve the package *or* they will have to run `npm install` twice. The first install will fail but cause the package to be cached; the second install will return the package from the cache.
-
-If you host your own build agents, they do not need access to the Internet for this feature. However, per the limitation above, a developer machine will need to first run `npm install` to cache the package(s) so that they're available to the build agents.
-
-For TFS users, the TFS server must be able to access the `https://registry.npmjs.org` domain in order to cache packages.
-
-### Filtering to cached packages
-You can see the packages you have cached in your feed by selecting the "Source = npmjs.com cache" filter.
-
-![Viewing your cached packages](_img/view-cached-packages.png)
-
-### No guarantee of caching
 > [!NOTE]
 > Right now, VSTS and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
 
-Packages with malformed version numbers in their packages.json cannot be ingested into the feed, and thus must still be retrieved directly from npmjs.com. If npmjs.com goes down, you are not fully protected if you depend on these packages. 
-
-In a future sprint, we'll be updating the upstreams feature to always cache and serve packages through the feed. In the rare case where a package cannot be cached, the install will fail (without redirecting to npmjs.com) so that you have full confidence that every package you use is cached by your feed.
+![Viewing your cached packages](_img/view-cached-packages.png)
 
 ## Scopes
 If you prefer to use scopes, which limit your private packages to those with the `@<scope>` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Scopes](scopes.md).

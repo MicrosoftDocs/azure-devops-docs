@@ -12,8 +12,6 @@ author: yukom
 
 #Quick code editing, backlog filtering, and more – Dec 17
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 Before we jump into the changes coming this week, I want to call out that this will be our last deployment of 2014. Our next sprint ends right in the middle of the holiday season, so we’ve chosen to skip that deployment. We’ll see you again in late January with our next update. Happy holidays everyone!
 
 ##Quick code editing

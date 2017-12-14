@@ -8,7 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/26/2017
+ms.date: 11/28/2017
 ---
 
 
@@ -277,3 +277,8 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 </tbody>
 </table>
 
+## Related notes  
+
+- [About access levels](access-levels.md)
+- [Export users (VSTS) or the audit log (TFS)](export-users-audit-log.md)
+- [Work in the web portal](../user-guide/work-web-portal.md)  

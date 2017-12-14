@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 7c8ff784-ffc2-4378-bc29-a7e5632ab776
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/02/2017
+ms.date: 12/02/2017
 ---
 
 #	Troubleshoot network connections and whitelist addresses

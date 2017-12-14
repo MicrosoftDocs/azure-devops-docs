@@ -237,8 +237,8 @@ See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tas
 **Azure CLI task**
 
 The new Azure CLI task supports running Azure CLI
-commands on cross-platform agents such as Windows, Linux
-and Mac. The task supports both Classic and ARM subscriptions.
+commands on cross-platform agents such as Linux, macOS,
+and Windows. The task supports both Classic and ARM subscriptions.
 It also supports two modes of providing the script:
 as a linked artifact or as an inline script.
 

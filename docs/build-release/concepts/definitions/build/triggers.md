@@ -122,7 +122,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](repository.md).
 
-* You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [windows agent](../../../actions/agents/v2-windows.md). You cannot run them on the cross-platform agent.
+* You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [private agent](../../../concepts/agents/agents.md).
 
 
 ## Q&A

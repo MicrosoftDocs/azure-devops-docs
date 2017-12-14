@@ -23,17 +23,9 @@ To cancel paid access to an extension, reduce your users to zero (0). [How do yo
 with [**Edit collection-level information** permissions](../../security/permissions.md#collection) 
 can change the number of paid extension users whose access that you pay for.
 
-0.  From your TFS home page, go to your control panel (```https://{server}:8080/tfs/_admin```).
+0.  From your TFS home page, go to your settings' User hub: (```https://{server}:8080/tfs/_admin/_userHub```)
 
-    <img alt="Go to TFS settings" src="../../_shared/_img/tfs-server-settings-new.png" style="border: 1px solid #CCCCCC" />
-
-0.  Go to your team project collection settings (```https://{server}:8080/tfs/{team-project-collection}/_admin```).
-
-    <img alt="Go to your team project collection administration page" src="../_img/get-tfs-extensions/connected/view-project-collection-administration-page.png" style="border: 1px solid #CCCCCC" />	
-
-0.  Go to your Users hub (```https://{server}:8080/tfs/{team-project-collection}/_admin/_userHub```).
-
-    <img alt="Go to Users hub" src="../../_shared/_img/users-hub-tfs-updated.png" style="border: 1px solid #CCCCCC" />
+    ![TFS server settings](../../_shared/_img/users-hub-tfs-updated.png)
 
 0.  Go to the extension pane, for example, Test Manager. Change the number of extension users that you pay for.
 

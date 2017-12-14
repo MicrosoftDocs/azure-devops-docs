@@ -23,9 +23,6 @@ Some of the other key feature highlights include:
 * [Burndown and Burnup widgets](#burndown-and-burnup-widgets) - Answer the question: Will we complete this project on time?
 * [Deep linking](#wiki-page-deep-linking), [preview content side-by-side](#preview-content-as-you-edit-wiki-pages), and [paste rich HTML content](#paste-rich-content-as-html) in Wiki.
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next three weeks.
-
 ## Work
 
 ### New Queries experience

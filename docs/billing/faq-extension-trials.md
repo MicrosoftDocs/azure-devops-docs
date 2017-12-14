@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 10/17/2017
 ---
 
 # Troubleshooting paid extensions trials for VSTS

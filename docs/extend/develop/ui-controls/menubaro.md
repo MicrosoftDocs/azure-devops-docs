@@ -16,7 +16,7 @@ This page shows different samples about the menubar control.
 **Go to [API Reference](../../reference/client/controls/menubar.md) for more details.**
 
 <a name="basic"></a>
-### Basic menubar
+## Basic menubar
 This sample shows the basic usage of the toolbar. Notice how `text` is added to the separators which becomes a group text for sub menus.
 
 <ul class="nav nav-tabs" data-tabs="tabs">
@@ -109,7 +109,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <a name="actions"></a>
-### Actions of the menubar
+## Actions of the menubar
 This sample uses `executeAction` delegate to react menubar commands.
 
 <ul class="nav nav-tabs" data-tabs="tabs">
@@ -206,7 +206,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <a name="disabled"></a>
-### Toggle enabled/disabled
+## Toggle enabled/disabled
 This sample shows how the menu items can be enabled/disabled.
 ```html
 <button id="btnToggle">Toggle Enabled/Disabled</button>
@@ -285,7 +285,7 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <a name="hidden"></a>
-### Toggle visible/hidden
+## Toggle visible/hidden
 This sample shows how the menu items can be made visible/hidden.
 ```html
 <button id="btnToggle">Toggle Show/Hide</button>

@@ -12,8 +12,6 @@ author: yukom
 
 #Git and TFVC together, Package Management build tasks, and more – Nov 24
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
- 
 ##Git and TFVC in the same team project
  
 Big news! In this sprint, we’ve added the ability to add Git repositories to a team project that was created with TFVC or vice versa. This makes it easier for you to migrate some or all of your code to Git while keeping all the important data in your team project, such as build definitions and work items.
@@ -30,7 +28,7 @@ Package management is an important part of your continuous delivery workflow, an
 
 ##Implement a task once for multiple platforms
 
-Many build and release tasks are simple wrappers around command line tools that run across multiple platforms. You now have the option to implement a task in JavaScript using the NodeHandler, and it can run on the Windows, Linux, or Mac agents.
+Many build and release tasks are simple wrappers around command line tools that run across multiple platforms. You now have the option to implement a task in JavaScript using the NodeHandler, and it can run on the Linux, macOS, and Windows agent.
 
 ##Pull Request Widget for Dashboards
 

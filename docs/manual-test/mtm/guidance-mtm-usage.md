@@ -31,8 +31,8 @@ solution for manual testing compared to Microsoft Test Manager.
 
 The **Test hub** in VSTS and TFS is a fully-featured test
 management solution spanning all phases of the testing lifecycle.
-The **Test hub** works on all platforms (such as Windows, MacOS,
-Linux, and others) and all browsers (such as Edge, Chrome, Firefox,
+The **Test hub** works on all platforms (such as Linux, macOS,
+Windows, and others) and all browsers (such as Edge, Chrome, Firefox,
 and others). You can easily get started with using manual testing
 features right from your Kanban board, and use the **Test hub**
 for more advanced manual testing capabilities. 

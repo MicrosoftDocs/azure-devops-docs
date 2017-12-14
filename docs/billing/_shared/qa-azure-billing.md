@@ -11,11 +11,11 @@ purchases will show up on your monthly Azure bill.
 
 **Note:** You must keep your Azure subscription in good 
 standing to use your Visual Studio Marketplace purchases. 
-If your Azure subscription is canceled or becomes disabled, 
-for example, because the credit card used for payment expires, 
-then any purchases with this Azure subscription will be 
-deactivated on the 1st day of next month. 
-To continue using your Visual Studio Marketplace purchases, 
+If your Azure subscription is canceled or becomes disabled (for example, 
+because the credit card used for payment expires), 
+then any purchases with this Azure subscription become  
+deactivated until you reactivate your Azure subscription (for example, by updating your credit card).  To 
+continue using your Visual Studio Marketplace purchases, 
 please keep your Azure subscription active and updated.
 
 

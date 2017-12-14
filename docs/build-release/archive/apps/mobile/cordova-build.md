@@ -15,14 +15,14 @@ ms.date: 08/04/2016
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
-VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) that supports OSX. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
+VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](https://github.com/Microsoft/vsts-agent) that supports macOS. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
 
 To streamline CI for Cordova-based projects, we have created a series of build tasks (or steps) that you can use: **Cordova Build**, **[Cordova Command](./cordova-command.md)**, **[Ionic Command](./cordova-command.md)**, and **[PhoneGap Command](./cordova-command.md)**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
 **Article sections:**
 * [Installing the VSTS Extension for Cordova](#install)
 * [Building Android, Windows, or Windows Phone 8.0 on Windows](#win)
-* [Building iOS on OSX](#osx)
+* [Building iOS on macOS](#osx)
 * [Optional: Using Gulp for script compilation and running tests](#gulp)
 * [In Depth: Custom Build Agent Setup](#agentsetup)
 
@@ -52,7 +52,7 @@ We'll assume for the purposes of this tutorial that you want to build a Cordova 
 ### Building Android, Windows, or Windows Phone 8.0 on Windows
 Detailed instructions on creating build definitions in TFS 2015 can be found in [its documentation](http://go.microsoft.com/fwlink/?LinkID=533772), but here are the specific settings you will need to use to configure a build to run on a Windows agent. We'll start with Android but the steps here generally apply to the Windows and WP8 platforms as well.
 
-1. First we need to ensure that this particular build runs on Windows rather than OSX. Under the **General** tab, add a demand that **cmd** exists.
+1. First we need to ensure that this particular build runs on Windows rather than macOS. Under the **General** tab, add a demand that **cmd** exists.
 
   ![Windows Build Definition - Demand](_img/cordova-build/tfs2015-3.png)
 
@@ -102,10 +102,10 @@ If you intend to build more than just one platform on Windows you can use someth
 Next time you build, it will queue up and build all three platforms and store separate artifacts for each using the platform name.
 
 <a name="osx"></a>
-### Building iOS on OSX
-Now let's create a version of this same build definition to target iOS that will run on a configured cross-platform agent on OSX.
+### Building iOS on macOS
+Now let's create a version of this same build definition to target iOS that will run on a configured agent on macOS.
 
-> **Troubleshooting Tip**: You should either setup the cross-platform agent as a launch agent (./svc.sh install agent) or run it as an interactive process (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
+> **Troubleshooting Tip**: You should either setup the agent as a launch agent (./svc.sh install agent) or run it as an interactive process (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
 
 1. Right click on the Windows build definition and select "Clone." Once you save you should give this definition a name that indicates it's the iOS build. 
 
@@ -115,15 +115,15 @@ Now let's create a version of this same build definition to target iOS that will
 
 	![Windows Build Definition - npm](_img/cordova-build/tfs2015-2.png)
 
-4. Finally, we need to add a demand that will route builds to OSX machines rather than Windows. Under the **General** tab, remove the "cmd" demand and add a demand that **xcode** exists.
+4. Finally, we need to add a demand that will route builds to macOS machines rather than Windows. Under the **General** tab, remove the "cmd" demand and add a demand that **xcode** exists.
 
 	![OSX Build Definition - Demand](_img/cordova-build/tfs2015-5.png)
 
-> **Troubleshooting Tip:** If you encounter a **spawn EACCES error** when building on a Mac or Linux, be sure all files in the hooks folder to have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or add the following using the Command Line task for each file in the folder: chmod +x &lt;file name goes here&gt;
+> **Troubleshooting Tip:** If you encounter a **spawn EACCES error** when building on Linux or macOS, be sure all files in the hooks folder have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or add the following using the Command Line task for each file in the folder: chmod +x &lt;file name goes here&gt;
 
 You are now all set! You can configure either of these build definitions further as you see fit including having them automatically fire off on check-in or adding other validations.
 
->**Troubleshooting Tip**: See [Troubleshooting Tips for Building on OSX in the general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691194) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
+>**Troubleshooting Tip**: See [Troubleshooting Tips for Building on a Mac in the general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691194) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
 
 <a name="gulp"></a>
 ## Optional: Using Gulp for script compilation and running tests
@@ -199,7 +199,7 @@ That's it!
 ##In Depth: Private build agent setup
 As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Hosted Agent Pool in VSTS. This allows you to build without setting up a Windows build agent on premise. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for VSTS agents targeted at buillding iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Hosted Agent Pool in VSTS or MacinCloud's special VSTS plan.
 
-If you are not using the VSTS Hosted Agent Pool or MacinCloud's streamlined [VSTS plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the Windows agent on Windows or the [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) on a Mac and integrate with either TFS or VSTS. The build machine simply needs to have HTTP access to the server with your TFS collection or VSTS. 
+If you are not using the VSTS Hosted Agent Pool or MacinCloud's streamlined [VSTS plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/vsts-agent) on Windows or macOS and integrate with either TFS or VSTS. The build machine simply needs to have HTTP access to the server with your TFS collection or VSTS. 
 
 ### Custom Agent Setup
 Since the build process we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:
@@ -208,7 +208,7 @@ Since the build process we will describe here is not directly dependent on MSBui
 
 2. Otherwise you can manually install only the prerequisites needed for the specific platforms you intend to build. For example, you do not need to install Visual Studio at all if you only intend to target Android. See "Installing Dependencies" in the [general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691196) for additional details.
 
-Next you will need to install the Windows build agent to build Android, Windows, or Windows Phone, and the [cross-platform build agent](http://go.microsoft.com/fwlink/?LinkID=533789) on a Mac if you intend to build iOS (and Android if you so desire).  See [the new build system documentation](http://go.microsoft.com/fwlink/?LinkID=533772) for information on getting started with setting up an agent. It is important to note that you should setup the cross-platform agent as a **launch agent** (./svc.sh install agent) or run it as an **interactive process** (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
+Next you will need to install the [build agent](https://github.com/Microsoft/vsts-agent) to build apps for Android, iOS, Windows, or Windows Phone.  See [the new build system documentation](http://go.microsoft.com/fwlink/?LinkID=533772) for information on getting started with setting up an agent. It is important to note that you should setup the agent as a **launch agent** (./svc.sh install agent) or run it as an **interactive process** (node agent/vsoagent.js) when building an Cordova project targeting iOS due to issues with code signing certificate storage when using a launch daemon.
 
 >**Troubleshooting Tip:** See [Internet Access & Proxy Setup" in the general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691832) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
@@ -247,13 +247,13 @@ You should set the following environment variables if they have not already been
       <td><strong>GRADLE_USER_HOME</strong></td>
       <td>Optional</td>
       <td>Overrides the default location Gradle build system dependencies should be installed when building Android using Cordova 5.0.0+</td>
-      <td>If not specified, uses %USERPROFILE%\.gradle on Windows or ~/.gradle on OSX or Linux</td>
+      <td>If not specified, uses %USERPROFILE%\.gradle on Windows or ~/.gradle on macOS or Linux</td>
     </tr>
     <tr>
       <td><strong>CORDOVA_CACHE</strong></td>
       <td>Optional</td>
       <td>Overrides the default location used by the Cordova Build Task to cache installs of multiple versions of Cordova.</td>
-      <td>If not specified, uses %APPDATA%\cordova-cache on Windows and ~/.cordova-cache on OSX or Linux</td>
+      <td>If not specified, uses %APPDATA%\cordova-cache on Windows and ~/.cordova-cache on macOS or Linux</td>
     </tr>
   </tbody>
 </table>
@@ -262,11 +262,11 @@ You should set the following environment variables if they have not already been
 
 The following will also need to be in your path:
 
-* **Node.js** should already be in your path on OSX/Linux simply by the fact that you've setup the cross-platform build agent. However, on Windows you should ensure **both** Node.js and the global modules folder (aka "prefix" location) is in your path as there a circumstances where one or the other may be missing. The default location of Node.js on Windows is **%PROGRAMFILES(x86)%\\nodejs** while the default location where global node modules are installed is **%APPDATA%\\npm**.
+* **Node.js** should already be in your path on Linux/macOS simply by the fact that you've setup the build agent. However, on Windows you should ensure **both** Node.js and the global modules folder (aka "prefix" location) is in your path as there a circumstances where one or the other may be missing. The default location of Node.js on Windows is **%PROGRAMFILES(x86)%\\nodejs** while the default location where global node modules are installed is **%APPDATA%\\npm**.
 
 * **Gulp** should also be installed globally if you intend to use the Gulp task. Once Node.js is installed, simply type **npm install -g gulp** from the command line.
 
-* **%ANT_HOME%\\bin** (or $ANT_HOME\bin on OSX/Linux) should be added to your path if you are using a version of Cordova < 5.0.0 or have checked the "Force Ant" build option.
+* **%ANT_HOME%\\bin** (or $ANT_HOME\bin on Linux or macOS) should be added to your path if you are using a version of Cordova < 5.0.0 or have checked the "Force Ant" build option.
 
 ## More information
 * [Learn about the Cordova and Ionic Command tasks](./cordova-command.md)

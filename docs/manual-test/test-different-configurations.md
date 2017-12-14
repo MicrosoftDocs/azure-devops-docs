@@ -35,7 +35,9 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> This feature is available only in VSTS.
+> **Note**: This feature is available only in VSTS.
+In addition, Stakeholders and Basic users cannot create or manage configurations.
+You must have a Visual Studio Enterprise, Visual Studio Test Professional, or Test Manager subscription. 
 
 <a name="create-configs"></a>
 ## Create configurations and variables

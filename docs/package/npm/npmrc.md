@@ -26,7 +26,7 @@ This enables you to share your configuration with the whole team while keeping y
 
 ## Getting credentials
 - For **Windows** users on **VSTS**, the [vsts-npm-auth package](https://www.npmjs.com/package/vsts-npm-auth) can help you acquire and manage credentials. When you execute `vsts-npm-auth`, it reads your configured package source from the provided `.npmrc`, and writes credentials to your user profile `.npmrc`.
-- For **Mac, Linux, and Windows Bash Shell** users on **VSTS**, and all **Team Foundation Server** users, the *Connect to feed* dialog will generate an appropriately-formatted token that you can place into your `.npmrc` file.
+- For **macOS, Linux, and Windows Bash Shell** users on **VSTS**, and all **Team Foundation Server** users, the *Connect to feed* dialog will generate an appropriately-formatted token that you can place into your `.npmrc` file.
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 

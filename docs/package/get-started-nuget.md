@@ -29,12 +29,12 @@ listing to install.
 <a name="publish-a-package"></a>
 ## Publish a package
 
-[!INCLUDE [](_shared/publish.md)]
+[!INCLUDE [](_shared/nuget/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
 ## Consume your package in Visual Studio
 
-[!INCLUDE [](_shared/consume.md)]
+[!INCLUDE [](_shared/nuget/consume.md)]
 
 <a name="automate-with-continuous-integration"></a>
 ## Automate the process with continuous integration

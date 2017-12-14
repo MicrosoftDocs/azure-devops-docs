@@ -49,9 +49,15 @@
   - name: Sign-in to the web or a client
     href: ../user-guide/connect-team-projects.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: Export user accounts or audit log
+    href: export-users-audit-log.md   
 - name: Troubleshooting
   items:
+  - name: Troubleshoot connection
+    href: ../user-guide/troubleshoot-connection.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: "TF31002: Unable to connect"
+    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: Network connections
     href: faq-network-connections.md
 - name: Reference

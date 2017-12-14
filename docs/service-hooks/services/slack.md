@@ -31,10 +31,12 @@ to open up the menu, and find **Apps and integrations**:
 
 ## Create a service hook subscription in your VSTS account
 
-1. From your VSTS account's team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
-<img alt="VSTS Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-1. Click **Create subscription** and select the Slack service.
+	![Team project administration page](./_img/add-service-hook.png)
+
+	Click **Create Subscription**.
+    
 1. Choose the types of events you want to appear in your Slack channel.
 > You can filter each of the triggers in specific ways.
 > For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,

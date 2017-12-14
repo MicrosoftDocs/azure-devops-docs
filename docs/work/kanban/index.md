@@ -31,7 +31,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
 - [Add inline tests](add-run-update-tests.md)
-- [Cumulative flow](../../report/guidance/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
 ## Concepts 

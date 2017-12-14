@@ -5,7 +5,7 @@ ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: elbatk
 ms.date: 09/01/2017
 ---
 
