@@ -45,13 +45,11 @@ The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollect
 
 ## Trigger Bamboo from VSTS 
 
-1. Go to your team project's administration page.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-   <img alt="Team project administraton icon" src="./_img/admin-700.png" style="border: 1px solid #CCCCCC" />
+	![Team project administration page](./_img/add-service-hook.png)
 
-2. On the Service Hooks tab, create a subscription.
-
-   <img alt="Service hooks page, add icon" src="./_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 3. Add Bamboo.
 

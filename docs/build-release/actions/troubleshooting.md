@@ -279,8 +279,8 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
  We store your client cert private key password securely on each platform.  
  ```
  Windows: Windows Credential Store
- OSX: OSX Keychain
- Linux: Encrypted with symmetric key based on machine id
+ macOS: macOS Keychain
+ Linux: Encrypted with a symmetric key based on the machine ID
  ```
 
 Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more detail information about agent client certificate support.

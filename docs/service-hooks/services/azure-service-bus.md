@@ -24,7 +24,7 @@ A subscriber will see only the messages that match that filter.
 
 - **Notification hub:** Use a notification hub to implement push notifications.
 Notification hubs work for both consumer and enterprise applications
-for mobile platforms including Windows Store, Windows Phone 8, iOS and Android.
+for mobile platforms including Android, iOS, Windows Phone 8, and Windows Store.
 
 ## Create a Microsoft Azure service bus namespace
 
@@ -58,13 +58,11 @@ when you create a Service Hook subscription.
 2. Create or modify your app's code to receive VSTS
 messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
 
-3. Open the admin page for the team project in VSTS.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-4. On the **Service Hooks** tab, run the subscription wizard.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   For details about the subscription wizard, go [here](../index.md).
-
-   <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 5. Pick and configure the VSTS event.
 
@@ -133,7 +131,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
    <img alt="Azure Service Bus notifications" src="./_img/azure-service-bus/notification-hubs.png" style="border: 1px solid #CCCCCC" />
 
 2. Create or modify an app to receive messages from VSTS through the notification hub. 
-The steps and code required to set up your app depend on the target platform (Windows Store, Windows Phone 8, iOS, or Android).
+The steps and code required to set up your app depend on the target platform (Android, iOS, Windows Phone 8, and Windows Store).
 For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
 
 3. Open the admin page for the team project in VSTS.

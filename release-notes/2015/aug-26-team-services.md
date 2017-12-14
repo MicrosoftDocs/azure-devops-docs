@@ -12,8 +12,6 @@ author: yukom
 
 #Sprint planning improvements and SonarQube analysis build tasks – Aug 26
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 **Renaming columns in place
 
 You can now rename columns on your Kanban board in place, without having to jump into the configuration dialog. Over time, we’ll be adding more functionality inline, including adding, deleting, and reordering columns.

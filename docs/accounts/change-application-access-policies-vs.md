@@ -32,7 +32,7 @@ you can use basic authentication to access
 but you must turn on alternate credentials.
 
 *	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys when you use Linux, Mac, 
+to generate encryption keys when you use Linux, macOS, 
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../git/set-up-credential-managers.md) 

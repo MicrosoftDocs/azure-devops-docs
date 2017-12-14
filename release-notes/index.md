@@ -2,77 +2,92 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 10/27/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
+hide_comments: true
 ---
 
 # VSTS Features Timeline
 
 ## Features under development
 
-> [!NOTE]
-> Revisions for 2017 Q4 and 2018 Q1 are coming soon.
-
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
-
-### 2017 Q3
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|Work Items – Query page refresh     |Work         |TBD         |
-|Work Items – Favoriting Backlogs, Boards, and Sprints     |Work         |TBD         |
-|Work Items – New project work items hub     |Work         |TBD         |
-|Code search – indexing of multiple Git branches     |Code         |TBD         |
-|Git – Fork a repository and create pull requests for upstream     |Code         |2018         |
-|Git – Project and repo policies for file size and casing     |Code         |TBD         |
-|Git – Improved Branch Updates design and searching for deleted branches     |Code         |2018         |
-|[CI/CD – Concurrent pipelines](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-pipelines-ts#pipeline-issues) – design improvement to not consume a pipeline until an agent is assigned     |Build         |2018         |
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – UX improvements, Sharing of VMs     |Release         |2018         |
-|[Release Management – New RM editor and templates](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/26/new-release-definition-editor-in-team-services/)     |Release         |2018         |
-|Release Management improved orchestration – Better notifications on Releases, Branch triggers with include/exclude filters, and ag based triggers and Selective Artifacts     |Release         |TBD         |
-|Release Management better traceability – Integration with Jenkins, Code, Work, and Package hubs     |Release         |TBD         |
-|Azure Deployments first class support and task improvements – Kubernetes, VMScaleSet, Azure Functions, and Service Fabric Clusters     |Release         |TBD         |
-|Package Management – Upstreams sources for public registries (NuGet.org, Maven Central, etc.) and VSTS feeds across the organization and/or account     |Package         |TBD         |
-|Package Management – Maven general availability     |Package         |2018         |
-|Automated Testing – Ability to configure a batch size for better distribution across agents and frequent results publishing     |Test         |2018         |
-|Automated Testing – Parallel testing on multiple agents in a pool in build     |Test         |2018         |
-|Automated Testing – Support for running ordered tests in build/release pipelines     |Test         |2018         |
-|Automated Testing – Re-run failed tests in Build and RM     |Test         |2018         |
-|Automated Testing – Automation agents do not need Visual Studio to run tests (test platform acquisition through alternate means)     |Test         |2018         |
-|Manual and Exploratory Testing (XT) – Show requirements based suites (RBS) on Kanban and enable Basic XT users to provide feedback     |Test         |TBD         |
-|Manual and XT – XT support for Edge     |Test         |TBD         |
-|[Improved user management – bulk editing](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)     |Admin         |TBD         |
-|[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)     |Admin         |TBD         |
-|[Support for Cloud Solution Providers in managing VSTS accounts and purchases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/09/cloud-solution-provider-purchase-from-visual-studio-marketplace-roadmap/)     |Admin         |TBD         |
-|[Multiple accounts per “organization”](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account.aspx)     |Admin         |--         |
-|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)     |Admin         |TBD         |
-|Notifications – CC/BCC (carbon copy) recipient support for email notifications     |Admin         |TBD         |
-|Simplified experience to more easily acquire VSTS extensions and Visual Studio subscriptions     |Marketplace         |--         |
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
 ### 2017 Q4
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Items – Markdown support  |Work  |TBD  |
-|Updated Windows shell extension for TFVC  |Code  |--  |
-|CI/CD – Private Azure agent pools for Build and RM – provide your own image, we manage the lifetime |Build  |-- |
-|CI – YAML builds (config as code)  |Build  |2018 |
-|VSTS Symbol Server public preview  |Build  |TBD |
-|Build – Bring your own subscription  |Build  |-- |
-|Azure Portal Continuous Delivery support – Azure App Services (AppTypes/Repos), VMs, and ACS Containers  |Release  |TBD |
-|Greenlighting – Azure monitoring integration for automated deployments  |Release  |-- |
-|Package Management – CI/CD improvements including release views automation and CI versioning for packages  |Package  |TBD |
-|Package Management – Retention policies and package statistics  |Package  |TBD |
-|Automated Testing – Support for .NET Core  |Test  |2018 |
-|Cloud Load Testing – Integration with Application insights (any subscription)  |Test  |-- |
-|Public preview for cloud reporting experience  |Reporting  |-- |
-|[TFS Data Import Service for VSTS](https://www.visualstudio.com/articles/migration-overview) general availability  |Shared  |-- |
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)  |Shared  |-- |
-|Publisher certification process  |Marketplace  |-- |
+|Updated Windows shell extension for TFVC|Code|N/A|
+
+### 2018 Q1
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Work Items – Markdown support|Work|TBD|
+|Work Items – Process read-only rule support|Work|TBD|
+|Work Items – Filtering on the Taskboard|Work|TBD|
+|Favoriting Backlogs, Boards, Sprints, and Dashboards|Work|TBD|
+|Work Items – Discussion-centric work item form|Work|TBD|
+|Work Items – Cross account linking|Work|TBD|
+|Work Items – Edit/Delete discussion comments|Work|TBD|
+|Git – API to extend Pull Requests for custom status policies|Code|TBD|
+|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
+|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
+|Wiki Search - GA|Code|TBD|
+|Pull request labels|Code|TBD|
+|User-added required reviewers for pull requests|Code|TBD|
+|CI – GitHub Enterprise integration|Build|TBD|
+|Build completion triggers – Trigger a build after completion of another build|Build|TBD|
+|XAML deprecation – XAML builds no longer supported in VSTS new accounts|Build|N/A|
+|Updated build summary and log views|Build|TBD|
+|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
+|Build PRs from forks in GitHub|Build|TBD|
+|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
+|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
+|Azure Portal Continuous Delivery support – VMs|Release|TBD|
+|Better Traceability – Code PR Integration, Work Item Integration|Release|TBD|
+|Deployment Groups easy configuration of Azure VMs|Release|TBD|
+|Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
+|Extend Greenlighting with more gates – Test, Azure Log Analytics|Release|TBD|
+|Azure App Services Deployment – Go and Ruby frameworks|Release|TBD|
+|Azure Portal Continuous Delivery support – ACS Containers and VM enhancements|Release|TBD|
+|Package Management – Maven general availability (GA)|Package|TBD|
+|Package Management – Retention policies|Package|TBD|
+|Package Management – Repo, Build provenance information for a package|Package|TBD|
+|Distribute tests in CI pipeline using Phases|Test|TBD|
+|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|TBD|
+|Reporting – Public preview of our cloud reporting experience (Power BI, widgets, OData)|Reporting|TBD|
+|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
+|Streamlined purchasing experience|Admin|TBD|
+|[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)|Admin|TBD|
+|Publisher certification process|Marketplace|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
+|Notification feed|Notifications|TBD|
+
+### 2018 Q2
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Updated landing pages for Release|Release|TBD|
+|Canvas-based Release Summary views to track progress of releases|Release|TBD|
+|Package Management – Upstreams sources for VSTS feeds across accounts with the same AAD|Package|TBD|
+|Package Management – Package consumption metrics|Package|TBD|
+|Package Management – Maven Upstream support|Package|TBD|
+|Rerun failed tests in CI/CD workflows to overcome flaky tests|Test|TBD|
+|View in-progress test results in CI/CD workflows|Test|TBD|
+|Test insights related to Top failing tests & Long running tests at a Build definition level|Test|TBD|
+|[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|Release views – support for multiple versions of extensions|Marketplace|N/A|
+
+### 2018 Q3
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
 
 ## Current features
 
@@ -88,6 +103,74 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="17">[11 Dec 2017](2017/dec-11-vsts.md)</td>
+            <td>Track code pushes to a Git repo to builds and releases</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Blame now has history</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>SSH URLs are changing</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Generate YAML templates from existing build definitions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Enhancements to multi-phase builds</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Hide empty contributed sections in build results page</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Skip scheduled builds if nothing has changed in the repo</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release trigger for a Package Management artifact</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Default artifact versions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release triggers branch enhancements</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Filter large test results</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Identify flaky tests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Marketplace experience</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Refreshed publisher management portal</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Virus scan of all public extensions on Marketplace</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>TFX CLI changes for extension publish</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Cloud Solution Provider purchasing now generally available</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr>
+            <td rowspan="43">[28 Nov 2017](2017/nov-28-vsts.md)</td>
+            <td>Azure DevOps Project</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
+        </tr>
+        <tr><td>Configuration as code (YAML) builds in Public Preview</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release gates in Public Preview</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Hosted Mac agents for CI/CD pipelines in Public Preview</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>TFS Database Import Service now Generally Available</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>VSTS CLI in Public Preview</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Query last run by information</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Create work items from the Queries hub</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Expand/collapse requirements/people on the Task board</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Grant the bypassrule permission to specific users</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Rendered markdown in email notifications</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request comment notifications include the thread context</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request service hooks merge events</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved error messages for work items completing with a pull request</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Azure Active Directory integration for pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Path filters for pull request policies</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pull request suggestions for forks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Editor settings</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Recently used reviewers</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>SSH: Support additional ciphers/keys and deprecate outdated ciphers</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved repository settings performance</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Use VSTS as a symbol server</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Agentless build tasks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Apple provisioning profiles can be installed from source repositories</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Secure files can be downloaded to agents during build or release</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Specific Java Development Kits (JDKs) can be installed during builds and releases</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improved Xcode build configuration</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Updates to the Hosted VS2017 pool</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Docker Hub or Azure Container Registry as an artifact source</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Enable Continuous Monitoring on Azure web apps</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Save packages from NuGet.org in your feed</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Easier feed creation and editing</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Previous package versions are now a full-page list</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Promote, unlist, and deprecate multiple packages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki Search</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Link work items and Wiki pages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Rich markdown rendering in code repo markdown</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki supports mathematical formulas</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Analytics OData in Public Preview</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Deprecating the PowerBI.com Content Pack</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Inviting directory guests to Azure AD-backed VSTS accounts</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="12">[30 Oct 2017](2017/oct-30-vsts.md)</td>
             <td>Modernized column options</td>
@@ -289,7 +372,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Marketplace moves to new markdown-it parser</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="29">[28 Aug 2017](2017/aug-28-team-services.md)</td>
@@ -463,7 +546,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Pull Request Status Extensibility in Public Preview</td>
-            <td style="background:rgb(232, 232, 232);">2018 RC1 only and Future</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
 		<tr>
             <td>Let contributed build sections control section visibility</td>
@@ -527,7 +610,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Enable Visual Studio Code direct install option in Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
 	    <tr>
             <td rowspan="20">[14 Jul 2017](2017/jul-14-team-services.md)</td>
@@ -608,7 +691,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Constraints on SVG images, screenshots and badges</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="24">[22 Jun 2017](2017/jun-22-team-services.md)</td>
@@ -657,7 +740,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Visual Studio latest and hosted agent pools</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Build definition menu on build summary page</td>
@@ -673,7 +756,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Consume Secrets from an Azure Key Vault as variables</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Package Management experience updates</td>
@@ -685,11 +768,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Project Collection Administrators can link/make initial purchase</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Deep link to easily remove your spending limit during a Marketplace purchase</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Improvements to OAuth permissions page</td>
@@ -697,15 +780,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Streamlined user management (preview)</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
 		        <tr>
             <td>Enhanced Publisher experience with Sales Transactions for Paid extensions</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
 		        <tr>
             <td>Setup Power BI Content Pack</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>      
         <tr>
             <td rowspan="19">[1 Jun 2017](2017/jun-01-team-services.md)</td>
@@ -730,7 +813,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Visual Studio Enterprise benefit for pipelines in Team Services</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Work with secure files such as Apple certificates</td>
@@ -766,23 +849,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Acquisition data in Extension Hub for Marketplace publishers</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Q&A for Marketplace publishers</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>GitHub and Custom Q&A support for marketplace extensions</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Retain VSTS identity when navigating to Marketplace from VSTS</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>AAD sign in address rename</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="25">[11 May 2017](2017/may-11-team-services.md)</td>
@@ -855,7 +938,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Improved team PR notifications</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>New tree view control</td>
@@ -879,11 +962,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Enhanced publisher experience in the Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Owner and contributor roles can purchase through the Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="19">[19 Apr 2017](2017/apr-19-team-services.md)</td>
@@ -904,7 +987,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build tool installers</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>SSH deployment improvements</td>
@@ -944,7 +1027,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Google Play extension enhancements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>iOS DevOps enhancements</td>
@@ -952,15 +1035,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Contact extension customers</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Marketplace feedback excluded from ratings</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Reports for Marketplace Publishers</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="17">[29 Mar 2017](2017/mar-29-team-services.md)</td>
@@ -1009,7 +1092,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Continuous Delivery in the Azure portal supports any Git repo</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Separation of duties for deployment requester and approvers</td>
@@ -1021,15 +1104,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Q&A support for Marketplace extensions</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Enhancements to display publisher’s terms, license, and privacy policy in Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Improved sign-out</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="14">[8 Mar 2017](2017/mar-08-team-services.md)</td>
@@ -1038,11 +1121,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>New mobile discussion experience</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Optimized mobile identity picker</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Customized backlog levels</td>
@@ -1070,7 +1153,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Keep track of your free hosted agent minutes</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Out of the box notifications enabled by default</td>
@@ -1123,7 +1206,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Multiple versions of Extension tasks</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td>Extension management permissions and new email notifications</td>
@@ -1135,11 +1218,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Support for AAD conditional access</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Pipelines queue</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td rowspan="17">[25 Jan 2017](2017/jan-25-team-services.md)</td>
@@ -1148,7 +1231,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Mobile work item form preview</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Build editor preview</td>
@@ -1188,7 +1271,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Track changes to test steps</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(243, 232, 255);">2017.2</td>
         </tr>
         <tr>
             <td>Sorting on work item search results</td>
@@ -1196,15 +1279,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Linking to changelog on the Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Release action in Build summary</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td>Security for variable groups</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td>Web app deployment history in Azure portal</td>
@@ -1253,11 +1336,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Updated hosted build image</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Firefox support for Test & Feedback extension</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Favorites for Test Plans</td>
@@ -1281,7 +1364,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Inline service endpoints</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Multiple release triggers with branch and tag filters</td>
@@ -1326,19 +1409,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Hosted Linux pool preview</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Build and deploy Docker apps to Azure more easily</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>New licensing model for Build and Release Management</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>NuGet + Credential Provider Bundle updated</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Delete test artifacts</td>
@@ -1346,7 +1429,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Inline service connections in Build and Release</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Link build artifacts from another team project</td>
@@ -1355,28 +1438,28 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4">[16 Nov 2016](2016/nov-16-team-services.md)</td>
             <td>Package Management General Availability</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Release Management General Availability</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>TFS Database Import Service</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Work Item Search public preview</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="13">[2 Nov 2016](2016/nov-02-team-services.md)</td>
             <td>Package Management in India and Brazil</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Microsoft Teams integration</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(155, 192, 230);">2017.2</td>
         </tr>
         <tr>
             <td>Repo Favorites</td>
@@ -1392,7 +1475,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Docker extension enhancements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>.NET Core build task</td>
@@ -1412,7 +1495,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Release Management available in multiple regions</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>REST client helpers for Test Step operations</td>
@@ -1457,7 +1540,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Email support for AAD groups</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Multiple schedules in releases</td>
@@ -1465,23 +1548,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Azure resource group improvements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Azure CLI task</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Simplified Azure endpoint creation</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Test & Feedback extension general availability</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Visual Studio subscribers automatically use their free license</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="13">[21 Sep 2016](2016/sep-21-team-services.md)</td>
@@ -1591,7 +1674,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>User lifecycle management improvements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="22">[17 Aug 2016](2016/aug-17-team-services.md)</td>
@@ -1646,11 +1729,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Google Play Extension improvements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Maven and Gradle tasks produce a build summary when running a SonarQube analysis</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Work item templates</td>
@@ -1682,11 +1765,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Unpublish extension – Removing a public extension from the Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Rate Limits – Delaying user requests to avoid outages</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="9">[29 Jul 2016](2016/jul-29-team-services.md) </td>
@@ -1725,7 +1808,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>User management – export users and licenses</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Backlog extension points</td>
@@ -1896,7 +1979,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="1">[6 Jun 2016](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/)</td>
             <td>Brazil region for Visual Studio Team Services</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="15">[1 Jun 2016](2016/jun-01-team-services.md)</td>
@@ -1970,7 +2053,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work Item page management</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Turning board annotations on/off</td>
@@ -2087,7 +2170,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Collection in the domain</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Release Management – Email release summary</td>
@@ -2116,7 +2199,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Git for Windows now includes Team Services authentication by default</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Custom multiline text fields</td>
@@ -2185,7 +2268,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Clone in IntelliJ, Android Studio, etc.</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Gated builds for Team Foundation Version Control (TFVC)</td>
@@ -2193,24 +2276,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Automated testing on Azure environments</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>NuGet package delist</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Office connector</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="13">[16 Feb 2016](2016/feb-16-team-services.md)</td>
             <td>Package management is now available in Europe and Australia</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Search for extensions on Visual Studio Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Work item query charts in the dashboard catalog</td>
@@ -2234,7 +2317,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>SCVMM support</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Exploratory Testing improvements</td>
@@ -2242,7 +2325,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Azure SQL Database Deployment task</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Delete Test Plan</td>
@@ -2259,7 +2342,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="17">[25 Jan 2016](2016/jan-25-team-services.md)</td>
             <td>Public preview of the dashboard widget SDK</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Create branch and links to related artifacts</td>
@@ -2311,11 +2394,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Release orchestration improvements</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>UI extensibility for release management</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Search scope selector</td>
@@ -2332,11 +2415,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item discussion</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
             <td>Work item history improvements</td>
-            <td style="background:rgb(232, 232, 232);">Future</td>
+            <td style="background:rgb(240, 245, 251);">[2017](http://go.microsoft.com/fwlink/?LinkId=831912)</td>
         </tr>
         <tr>
             <td>Deleting work items</td>
@@ -2352,7 +2435,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>On-Premises support for Exploratory Testing extension:</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Scope code search using path filters</td>
@@ -2390,19 +2473,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7">[18 Nov 2015](2015/nov-18-team-services.md)</td>
             <td>Extensions and Marketplace</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Release Management public preview</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Package Management public preview</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Code Search public preview</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Test Results in Build</td>
@@ -2410,11 +2493,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Exploratory Testing extension</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Test Manager extension</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="6">[30 Oct 2015](2015/oct-30-team-services.md)</td>
@@ -2444,7 +2527,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5">[8 Oct 2015](2015/oct-08-team-services.md)</td>
             <td>Azure Active Directory Group support</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>Starting with Git, made easy</td>
@@ -2523,7 +2606,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Libraries for integrating with VSTS now available at nuget.org</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="1">[22 Jul 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)</td>
@@ -2553,11 +2636,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build your projects hosted in GitHub</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td>New VSTS integrations</td>
-            <td style="background:rgb(232, 232, 232);">--</td>
+            <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[7 Jul 2015](2015/jul-07-team-services.md)</td>
@@ -2616,7 +2699,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Power BI &amp; VSO</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[11 May 2015](2015/may-11-team-services.md)</td>
@@ -2625,17 +2708,17 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Performance counters for Java applications <br />
                 Unhandled exceptions in Java apps <br />
                 Drag-across to select a time range</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[8 May 2015](http://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx)</td>
             <td>Australia region for Visual Studio Team Services</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[29 April 2015](http://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/)</td>
             <td>Application Insights Public Commercial Preview</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[29 April 2015](https://www.visualstudio.com/integrate/extensions/overview)</td>
@@ -2657,7 +2740,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Account restore</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[24 Apr 2015](2015/apr-24-team-services.md)</td>
@@ -2670,12 +2753,12 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Synthetic data filtering <br />
                 New usage experience for ASP.NET, Java and other applications <br />
                 Daily Active User calculations</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[17 Apr 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)</td>
             <td>CodeLens General Availability on Visual Studio Team Services</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4">[10 Apr 2015](2015/apr-10-team-services.md)</td>
@@ -2697,7 +2780,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[27 Mar 2015](2015/mar-27-team-services.md)</td>
             <td>Application Insights: Save search page, pause export and export on alert fail</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="7">[10 Mar 2015](2015/mar-10-team-services.md)</td>
@@ -2726,12 +2809,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>CodeLens for accounts in West Europe</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[9 Mar 2015](http://azure.microsoft.com/en-us/documentation/articles/app-insights-java-get-started/)</td>
             <td>Application Insights support for Java</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4">[18 Feb 2015](2015/feb-18-team-services.md)</td>
@@ -2748,17 +2831,17 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Application Insights in the Azure Preview Portal</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[13 Feb 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)</td>
             <td>Limited preview for Code Search</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[29 Jan 2015](http://azure.microsoft.com/en-us/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
             <td>Application Insights support for Windows Phone and Windows Store Applications</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4">[27 Jan 2015](2015/jan-27-team-services.md)</td>
@@ -2780,7 +2863,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[15 Jan 2015](http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)</td>
             <td>VS Online ISO 27001 Certification</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="6">[17 Dec 2014](2014/dec-17-team-services.md)</td>
@@ -2797,7 +2880,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>New integrations: Slack and Azuqua</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Preview APIs for adding and updating files in source control</td>
@@ -2805,16 +2888,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>CodeLens for Visual Studio Team Services</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="2">11 Dec 2014</td>
             <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/en-us/updates/application-insights-status-monitor-and-sdk-updated/)</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/en-us/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="5">[2 Dec 2014](2014/dec-02-team-services.md)</td>
@@ -2840,7 +2923,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[12 Nov 2014](2014/dec-02-team-services.md)</td>
             <td>Release Management Preview as VSTS service</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="7">[4 Nov 2014](2014/nov-04-team-services.md)</td>
@@ -2874,15 +2957,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[28 Oct 2014](2014/oct-28-team-services.md)</td>
             <td>European Datacenter</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>VSTS REST API version 1.0 is here</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Service hooks is out of preview</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="2">[14 Oct 2014](2014/oct-14-team-services.md)</td>
@@ -2929,7 +3012,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Event and resource versioning within service hooks</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[27 Aug 2014](2014/aug-27-team-services.md)</td>
@@ -2948,11 +3031,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5">[21 Jul 2014](2014/jul-21-team-services.md)</td>
             <td>Using corporate identities with existing accounts</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Viewing existing projects in the Azure Preview Portal</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Trend charts + aggregation</td>
@@ -2960,11 +3043,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Hub added to the Advanced License</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Deleting your account</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[1 Jul 2014](2014/jul-01-team-services.md)</td>
@@ -2987,7 +3070,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[20 May 2014](2014/may-20-team-services.md)</td>
             <td>Using corporate identities</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Copy/Paste shared parameter data between VS Online and Excel</td>
@@ -2995,25 +3078,25 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>End of data export period</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="2">[12 May 2014](2014/may-12-team-services.md)</td>
             <td>Integrate with Visual Studio Team Services</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Service Migration with OpsHub</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[3 Apr 2014](2014/apr-03-team-services.md)</td>
             <td>General Availability of Visual Studio Team Services</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Application Insights Limited Preview</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Shared Parameters for Test Cases</td>
@@ -3022,11 +3105,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2">[18 Mar 2014](2014/mar-18-team-services.md)</td>
             <td>Getting started with Application Insights</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Search across your application trace logs</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[28 Feb 2014](2014/feb-28-team-services.md)</td>
@@ -3035,7 +3118,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Java JDK, Ant, and Maven libraries preinstalled in hosted build</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Maven support for TF version control projects</td>
@@ -3066,11 +3149,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[11 Dec 2013](2013/dec-11-team-services.md)</td>
             <td>Application Insights – Response Stacked Distribution</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Application Insights – Windows Store App support</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Asynchronous backlogs</td>
@@ -3079,15 +3162,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[13 Nov 2013](2013/nov-13-team-services.md)</td>
             <td>Commercial preview</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Application Insights limited preview</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Live editing of Windows Azure sites</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[8 Nov 2013](2013/nov-08-team-services.md)</td>
@@ -3102,7 +3185,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[17 Oct 2013](2013/oct-17-team-services.md)</td>
             <td>Build images updated to VS 2013</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[30 Sep 2013](2013/sep-30-team-services.md)</td>
@@ -3164,7 +3247,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3">[26 Jun 2013](2013/jun-26-team-services.md)</td>
             <td>Windows 8.1 support in hosted build</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Paste images into work items in the web</td>
@@ -3206,12 +3289,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Cloud load testing</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[28 May 2013](2013/may-28-team-services.md)</td>
             <td>Build IaaS</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Git alerts</td>
@@ -3302,7 +3385,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[9 Jan 2013](2013/jan-09-team-services.md)</td>
             <td>Account rename of Team Foundation Service account</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="5">[7 Jan 2013](2013/jan-07-team-services.md)</td>
@@ -3336,7 +3419,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Hosted build updates for Azure SDK 1.8, TypeScript 0.8.1, and VS 2012 Update 1</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="2">[19 Nov 2012](2012/nov-19-team-services.md)</td>
@@ -3350,12 +3433,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td>[31 Oct 2012](2012/oct-31-team-services.md)</td>
             <td>General availability of Team Foundation Service</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[29 Oct 2012](2012/oct-29-team-services.md)</td>
             <td>Build drops</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>[8 Oct 2012](2012/oct-08-team-services.md)</td>
@@ -3386,11 +3469,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Hosted builds of SharePoint components</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td>Basic authentication support</td>
-            <td>--</td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan="3">[13 Aug 2012](2012/aug-13-team-services.md)</td>
@@ -3417,90 +3500,137 @@ Versions in the “Server” column are linked to the appropriate download locat
     </tbody>
 </table>
 
-###Server Build Numbers
+### Server Build Numbers
 
 <table>
 <thead>
         <tr>
           <th>Release</th>
+          <th>Date</th>
           <th>Build</th>
         </tr>
 </thead>
 <tbody>
         <tr>
+          <td style="background:rgb(243, 232, 255);">[2018 RTW](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Nov. 15, 2017</td>
+          <td>16.122.27102.1</td>
+        </tr>
+        <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Sept. 25, 2017</td>
           <td>16.122.26918.3</td>
         </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+          <td>Aug. 30, 2017</td>
           <td>16.121.26818.00</td>
         </tr>
         <tr>
           <td>[2017.3](https://aka.ms/relnotes-tfs2017-update3)</td>
+          <td>Nov. 6, 2017</td>
           <td>15.117.27024.0</td>
         </tr>
         <tr>
           <td style="background:rgb(155, 192, 230);">[2017.2](https://aka.ms/relnotes-tfs2017-update2)</td>
+          <td>Jul. 24, 2017</td>
           <td>15.117.26714.00</td>
         </tr>
         <tr>
           <td style="background:rgb(189, 214, 238);">2017.1</td>
+          <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td>15.112.26307.00
           (15.112.26301.0)[*](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">2017 RTM</td>
+          <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
         </tr>
         <tr>
+          <td style="background:rgb(177, 232, 179);">2015.4</td>
+          <td>Apr. 11, 2017</td>
+          <td>14.114.26403.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(177, 232, 179);">2015.3</td>
+          <td>Jun. 27, 2016</td>
           <td>14.102.25423.00</td>
         </tr>
         <tr>
           <td style="background:rgb(198, 239, 200);">2015.2</td>
+          <td>May 5, 2016</td>
           <td>14.95.25122.00</td>
         </tr>
         <tr />
         <tr>
           <td style="background:rgb(217, 247, 219);">2015.1</td>
+          <td>Nov. 30, 2015</td>
           <td>14.0.24720.00</td>
         </tr>
         <tr>
           <td style="background:rgb(232, 255, 234);">2015 RTM</td>
+          <td>Aug. 6, 2015</td>
           <td>14.0.23128.00*</td>
         </tr>
         <tr>
+          <td>2013.5</td>
+          <td>Jul. 19, 2015</td>
+          <td>12.0.40629.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(231, 179, 249);">2013.4</td>
+          <td>Nov. 11, 2014</td>
           <td>12.0.31101.00</td>
         </tr>
         <tr>
           <td style="background:rgb(216, 194, 239);">2013.3</td>
+          <td>Aug. 4, 2014</td>
           <td>12.0.30723.00</td>
         </tr>
         <tr>
           <td style="background:rgb(229, 212, 247);">2013.2</td>
+          <td>Apr. 2, 2014</td>
           <td>12.0.30324.00</td>
         </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">2013 RTM</td>
+          <td>Nov. 18, 2013</td>
           <td>12.0.21005.01</td>
         </tr>
         <tr>
+          <td>2012.4</td>
+          <td>Nov. 12, 2013</td>
+          <td>11.0.61030.0</td>
+        </tr>
+        <tr>
           <td style="background:rgb(155, 192, 230);">2012.3</td>
+          <td>Jun. 26, 2013</td>
           <td>11.0.60610.01</td>
         </tr>
         <tr>
           <td style="background:rgb(189, 214, 238);">2012.2</td>
+          <td>Apr. 4, 2013</td>
           <td>11.0.60315.01</td>
         </tr>
         <tr>
           <td>2012.1</td>
+          <td>Dec. 12, 2012</td>
           <td>11.0.51106.01</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">2012 RTM</td>
+          <td>Aug. 15, 2012</td>
           <td>11.0.50727.01</td>
         </tr>
       </tbody>
     </table>
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
+
+## Feedback
+
+We would love to hear what you think about these features. Report any problems through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) or provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) if you have ideas on things you’d like to see us prioritize.
+
+<img src="2017/_img/125_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).

@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Bug Trends Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Bug Trends report to help track the rate at which your team is discovering and resolving bugs. This report shows a rolling or moving average of bugs being reported, resolved, and closed over time. When you manage a large team or a large number of bugs, you can monitor the Bug Trends report weekly to gain insight into how well the team is finding, resolving, and closing bugs.  
   
@@ -53,7 +53,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 -   Specify the **Priority** and **Severity** of each bug during triage.  
   
- You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../guidance/workbooks.md).  
+ You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
@@ -114,7 +114,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 ## Related notes  
  [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)   
- [Workbooks](../guidance/workbooks.md)   
+ [Workbooks](../sharepoint-dashboards/workbooks.md)   
  [Bug Status](bug-status-report.md)   
  [Reactivations](reactivations-report.md)   
  [Reporting Services Reports](reporting-services-reports.md)

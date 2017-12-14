@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Gates
@@ -26,7 +26,7 @@ that contains gates, the deployment stops until the health signals from all the 
 1. Specify the **Delay before evaluation** for all the gates
    you intend to use. This is a time delay at the beginning of the initial gate evaluation 
    process that allows the gates to initialize, stabilize, and begin providing accurate results
-   for the current deployment.
+   for the current deployment. See [Gate evaluation flows](#eval-examples).
 
    ![Enabling gates and specifying the delay before evaluation](_img/gated-releases-01a.png)
 
@@ -78,7 +78,7 @@ that contains gates, the deployment stops until the health signals from all the 
 
 ### Gate evaluation flow examples
 
-The following diagram illustrates the flow of gate evaluation where, after the
+<a name="eval-examples"></a>The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period and three sampling intervals, the deployment is approved.
 
 ![Successful gates](_img/gate-results-pass.png)

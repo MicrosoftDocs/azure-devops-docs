@@ -22,7 +22,7 @@ ms.topic: get-started-article
 | ![Search filter](../_img/icons/search_filter_icon.png) | [Filter by keyword or tag](filter-kanban-board.md)   |  
 | ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) | [Filter by field](filter-kanban-board.md)     | 
 | ![Live updates icon](../_img/icons/live-updates-icon.png)  | [Enable live updates](kanban-basics.md#live-updates)  |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../customize/customize-cards.md)  &#124; [Card reordering](../customize/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/guidance/cumulative-flow.md) &#124; [Backlogs](../customize/select-backlog-navigation-levels.md) &#124; [Working days](../customize/set-working-days.md) &#124; [Working with bugs](../customize/show-bugs-on-backlog.md)   |
+| ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../customize/customize-cards.md)  &#124; [Card reordering](../customize/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../customize/select-backlog-navigation-levels.md) &#124; [Working days](../customize/set-working-days.md) &#124; [Working with bugs](../customize/show-bugs-on-backlog.md)   |
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png) | Enter or exit full screen mode      |   
 <br/>
 

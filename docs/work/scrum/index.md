@@ -36,7 +36,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Plan capacity](../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 - [Sprint burndown](sprint-burndown.md)  
 - [Forecast](forecast.md) 
-- [Velocity](../../report/guidance/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
+- [Velocity](../../report/dashboards/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
  
 
 ## Concepts          

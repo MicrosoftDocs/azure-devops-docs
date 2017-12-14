@@ -11,7 +11,7 @@ ms.date: 03/09/2017
 
 # Progress dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Progress dashboard to track team progress toward completing an iteration. This dashboard displays four reports that help you monitor progress, burndown, and issues.  
 
@@ -50,7 +50,7 @@ You can use the Progress dashboard to track team progress toward completing an i
 |![Step 2](_img/procguid_2.png "ProcGuid_2")|[Task Progress](../excel/task-progress-excel-report.md)<br /><br /> A visual representation of the cumulative count of all active and closed tasks for the past four weeks.<br /><br /> ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")|  
 |![Step 3](_img/procguid_3.png "ProcGuid_3")|[User Story Progress](../excel/user-story-progress-excel-report-agile.md)<br /><br /> [Requirements Progress](../excel/requirements-progress-excel-report-cmmi.md)<br /><br /> A visual representation of the cumulative count of all user stories (Agile) or requirements (CMMI), grouped by their state, for the past four weeks.<br /><br /> ![Example User Stories report](_img/procguid_excelreport.png "ProcGuid_ExcelReport")|  
 |![Step 4](_img/procguid_4.png "ProcGuid_4")|[Issue Trends](../excel/issue-trends-excel-report.md)<br /><br /> Line chart that shows the rolling average of the number of Issues that the team has opened and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![7&#45;Day Issue Trend Excel Report](_img/procguid_7day.png "ProcGuid_7Day")|  
-|![Step 5](_img/procguid_6.png "ProcGuid_6")|[Issues Workbook](../guidance/workbooks.md)<br /><br /> Query results list of active issues.|  
+|![Step 5](_img/procguid_6.png "ProcGuid_6")|[Issues Workbook](workbooks.md)<br /><br /> Query results list of active issues.|  
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of upcoming events. The list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|  
 |![Step 7](_img/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|  
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a specific build by choosing it.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> See also [Run, monitor, and manage](../../build-release/overview.md).|  

@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Test Case Readiness Excel Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Test Case Readiness report to help monitor the progress that the team is making toward defining and designing Test Cases. This report shows a burndown chart of how many test cases were in the design and ready states for the most recent four weeks.  
   

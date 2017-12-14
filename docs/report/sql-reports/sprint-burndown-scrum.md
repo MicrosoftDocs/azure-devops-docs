@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Sprint Burndown (Scrum)
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By reviewing a sprint burndown report, you can track how much work remains in a sprint backlog, understand how quickly your team has completed tasks, and predict when your team will achieve the goal or goals of the sprint.  
   
@@ -54,7 +54,7 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
 -   Specify and update the **Remaining Work** field for each task or subtask as it is worked on.  
   
     > [!IMPORTANT]
-    >  If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task. For more information, see [Address inaccuracies published for summary values](../../report/address-inaccuracies-published-for-summary-values.md).  
+    >  If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task as it progresses from **To Do** to **Done**.  
   

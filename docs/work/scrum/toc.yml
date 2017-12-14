@@ -49,7 +49,7 @@
   - name: "Manage permissions & access"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Switch project or team focus
-    href: ../../teams/switch-team-context.md?toc
+    href: ../../teams/switch-team-context.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"

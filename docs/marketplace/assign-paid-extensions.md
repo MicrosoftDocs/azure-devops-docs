@@ -1,66 +1,62 @@
 ---
-title: Assign paid extension access to users for VSTS
-description: Assign paid extension access to users for VSTS
+title: Assign paid extension access to users for VSTS and TFS
+description: Assign paid extension access to users for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/01/2017
+ms.date: 10/17/2017
 ---
 
-# Assign paid extension access to users for VSTS
+# Assign paid extension access to users
 
-**VSTS**
+**VSTS** | **TFS**
 
-After you install a paid extension, 
-you must assign that extension to users who need access, 
-so they can start using that extension's capabilities. 
-To assign extensions, you'll need VSTS 
-[project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
+After you install a paid extension, you must assign that extension to users who need access, so they can start using that extension's capabilities. 
+To assign extensions, you'll need VSTS or TFS [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
 
 > [!TIP]
-> You only have to assign extensions to users who need access. 
-> If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
-> they automatically get access to specific extensions that are included 
-> with their subscriptions as benefits, like Test Manager. 
-> If you installed these extensions, you don't have to assign 
-> them to Visual Studio subscribers in your account. 
+> You only have to assign extensions to users who need access. If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
+> they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your account. 
 
-0.	Sign in to your VSTS account 
-(```https://{youraccount}.visualstudio.com```).
+## VSTS 
+0.	Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 0.	Go to **Users**.
 
-	<img alt="Go to Users" src="../_shared/_img/users-hub-updated-ui.png" style="border: 1px solid #CCCCCC" />
+    ![VSTS Users hub](../_shared/_img/users-hub-updated-ui.png)
 
-0.	Most extensions require that users have at least Basic access, 
-not Stakeholder. Check your users' access levels here:
+0.	Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
 
-	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
+    ![Check user access](_img/assign-extensions/check-user-access.png)
 
-	For example, Johnnie has a Visual Studio Enterprise subscription, 
-	which includes access to the Test Manager extension.
-	To find the access that your extension requires, see the extension's description 
-	in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-0.	To assign the extension, 
-go to the extension pane, for example, Test Manager.
+0.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to:
 
-	<img alt="Go to the extension" src="_img/assign-extensions/assign-extension-no-users.png" style="border: 1px solid #CCCCCC" />
+	![Manage extensions](_img/assign-extensions/manage-extensions.png)
 
-0.	Assign the extension. 
+0.	Assign the extension:
 
-	<img alt="Assign extension to users" src="_img/assign-extensions/assign-extension-add-one-user.png" style="border: 1px solid #CCCCCC" />
+    ![Assign extensions](_img/assign-extensions/assign-extension.png)
 
-	<img alt="Extension now assigned" src="_img/assign-extensions/assign-extension-assigned-basic.png" style="border: 1px solid #CCCCCC" />
+	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
 
-	You can assign the extension to one user, specific users, 
-	or to all users at the same time, up to the number allowed 
-	for free extensions or the number that you purchased for paid extensions.
-
-0.	Tell your team about this extension, 
-	so they can start using its capabilities.
+0.	Tell your team about this extension, so they can start using its capabilities.
 
 
-[Troubleshooting](faq-extensions.md)
+## TFS
+
+0.  From your TFS home page, go to your settings' User hub: (```https://{server}:8080/tfs/_admin/_userHub```)
+
+    ![TFS server settings](../_shared/_img/users-hub-tfs-updated.png)
+
+0.  Select the extension from the extension pane and assign your extension to users who need access:
+
+    ![Assign extensions](_img/assign-extensions/assign-extension-tfs.png)
+
+    You can assign the extension to one user, specific users, or to all users at the same time, even going above the number allowed 
+    for your extension, if necessary.
+
+0.  Tell your team about this extension, so they can start using its capabilities.

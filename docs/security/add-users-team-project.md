@@ -27,7 +27,7 @@ If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up
 
 0. Open the web portal and choose the team project where you want to add users or groups. Click the ![gear icon](../_img/icons/gear-icon.png) gear icon to open the administrative context. 
  
-	<img src="_img/add-users/choose-team-project-click-gear-icon.png" alt="VSTS, TFS 2017, Team Project hub, Click gear icon to open the Admin context" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-users/choose-team-project-click-gear-icon.png" alt="VSTS, TFS 2017, Team Project hub, Click gear icon to open the Admin context" style="border: 1px solid #C3C3C3;" /> 
 <!---
 **TFS 2015**
     ![Select team project from TFS home page](_img/add-users-team-project/overview.png)
@@ -42,7 +42,7 @@ If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up
 
 	Here we choose the Contributors group.  
 
-	<img src="_img/add-users/add-members-to-contributors-group.png" alt="Admin context, Security page, Contributors group, Membership page" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-users/add-members-to-contributors-group.png" alt="Admin context, Security page, Contributors group, Membership page" style="border: 1px solid #C3C3C3;" /> 
 
     > [!TIP]  
     > Managing users is much easier [using groups](../security/about-permissions.md), not individual users.
@@ -53,7 +53,7 @@ If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up
 
 0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Click the match(es) that meets your choice. 
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]   
 	> The first time you add a user or group to TFS,
@@ -81,20 +81,20 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 0. From the team project admin context, open the Overview page, and then click the team you want to add team members to.   
 
-	<img src="_img/add-users/overview-page-select-team.png" alt="Web portal, Overview page, choose team" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/add-users/overview-page-select-team.png" alt="Web portal, Overview page, choose team" style="border: 1px solid #C3C3C3;" />
 
 0. Click ![gear icon](../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 2. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can type several identities into the text box, separated by commas.  
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!TIP]    
 	> You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.  
  
 3. To remove members, return to this page, highlight the user name and click **Remove**.  
 
-	<img src="_img/add-users/team-page-remove-team-member.png" alt="Web portal, team admin context, remove a team member" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-users/team-page-remove-team-member.png" alt="Web portal, team admin context, remove a team member" style="border: 1px solid #C3C3C3;" /> 
 
 4. To add an account as a team administrator, click **Add** located in the Team Profile page. For details, see [Add a team administrator](../work/scale/add-team-administrator.md).
 
@@ -102,12 +102,12 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 For on-premises TFS, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md). 
 
-## Add users or groups to Sharepoint or SQL Server Reports (TFS only)
+## Add users or groups to SharePoint or SQL Server Reports (TFS only)
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 
 -  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
--  [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
+-  [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md)
 
 <!---
 ## Verify
