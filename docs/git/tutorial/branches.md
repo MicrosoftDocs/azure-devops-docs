@@ -47,7 +47,7 @@ This makes it very simple to sync changes with others using [push](pushing.md) a
 In this image, a new branch is created from the main branch. Work continues on both branches and commits are added to both branches. 
 
 Git always adds new commits to the current local branch. Check what branch you are working on before you commit so that you don't commit changes to the wrong branch. 
-Swap between local branches using the `checkout` command. Git will change the files on you computer to match the latest commit on the checked out branch.
+Swap between local branches using the `checkout` command. Git will change the files on your computer to match the latest commit on the checked out branch.
 When your work in the branch is ready to share with the rest of the team, you [push](pushing.md) the changes to update the remote branch. 
 
 A common mistake is to make some changes and `commit` them, realize you are on an incorrect branch, then `checkout` to the correct branch.
