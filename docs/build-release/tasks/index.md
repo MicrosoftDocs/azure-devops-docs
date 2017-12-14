@@ -33,8 +33,8 @@ ms.date: 08/18/2016
 | [SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](build/_img/visual-studio-build.png) [Visual Studio Build](build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-android.png) [Xamarin.Android](build/xamarin-android.md). Build an Android app with Xamarin | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/xcode.png) [Xcode](build/xcode.md). Build an Xcode workspace on Mac OS | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on macOS | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/xcode.png) [Xcode](build/xcode.md). Build an Xcode workspace on macOS | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xcode-package-ios.png) [Xcode Package iOS](build/xcode-package-ios.md). Generate an .ipa file from Xcode build output | VSTS, TFS 2015 RTM and newer |
 
 ## Utility
@@ -51,10 +51,11 @@ ms.date: 08/18/2016
 | ![icon](utility/_img/curl-upload-files.png) [cURL Upload Files](utility/curl-upload-files.md). Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more) | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the process for a fixed delay time. | VSTS |
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | VSTS, TFS 2015 Update 3 and newer |
+| ![icon](utility/_img/secure-file.png) [Download Secure File](utility/download-secure-file.md). Download a secure file to a temporary location on the build or release agent. | VSTS |
 | ![icon](utility/_img/extract-files.png) [Extract Files](utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | VSTS, TFS 2017 |
 | ![icon](utility/_img/ftp-upload.png) [FTP Upload](utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | VSTS, TFS 2017 |
-| ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS |
-| ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS |
+| ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS, TFS 2018 |
+| ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS, TFS 2018 |
 | ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | VSTS |
 | ![icon](utility/_img/manual-intervention.png) [Manual intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps. | VSTS |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
@@ -73,7 +74,7 @@ ms.date: 08/18/2016
 | ![icon](test/_img/apache-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest). Runs the Apache JMeter load test in cloud | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/mobile-center-test-icon.png) [Mobile Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest). Test mobile app packages with Visual Studio Mobile Center | VSTS, TFS 2015 Update 3 and newer |
+| ![icon](test/_img/mobile-center-test-icon.png) [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest). Test mobile app packages with Visual Studio App Center | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | VSTS, TFS 2015 Update 3 and newer |
@@ -106,10 +107,11 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](deploy/_img/azure-sql-database-deployment-icon.png) [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 |
+| ![icon](deploy/_img/docker-icon.png) [Docker](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker). Build, tag, push, or run Docker images or run a Docker command. Use with Docker or Azure Container Registry | VSTS, TFS 2017 |
 | ![icon](deploy/_img/iis-deploy-icon.png) [IIS Web App Deploy](deploy/iis-deploy.md). Deploy IIS Websites and Virtual Applications using WebDeploy | VSTS |
 | ![icon](deploy/_img/iis-manage-icon.png) [IIS Web App Manage](deploy/iis-manage.md). Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools | VSTS |
 | ![icon](deploy/_img/manual-intervention-icon.png) [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task). Pause deployment and wait for intervention | VSTS, TFS 2017 |
-| ![icon](deploy/_img/mobile-center-upload-icon.png) [Mobile Center Upload](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/MobileCenterDistribute). Upload mobile app packages to Visual Studio Mobile Center | VSTS, TFS 2015 RTM and newer |
+| ![icon](deploy/_img/mobile-center-upload-icon.png) [App Center Distribute](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterDistribute). Upload and distribute mobile app packages using Visual Studio App Center | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines](deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Application Deployment](deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | VSTS, TFS 2017 |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Compose Deploy](deploy/service-fabric-compose-deploy.md). Deploy a Service Fabric application to a cluster using a compose file | VSTS |
@@ -121,6 +123,7 @@ ms.date: 08/18/2016
 | Task | Versions |
 |------|----------|
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
+| ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
 

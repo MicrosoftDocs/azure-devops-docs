@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Utility: Azure monitor

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/27/2017
+ms.date: 12/14/2017
 ---
 
 #  Review code with pull requests
@@ -15,12 +15,15 @@ ms.date: 10/27/2017
 
 Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team review code and give feedback on changes before
-merging it into the master branch.  Pull requests can come from either
-topic branches within the same repository, or from a branch in a
+merging it into the master branch. Pull requests can come from either
+topic branches within the same repository or from a branch in a
 [fork](concepts/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
+
+> [!NOTE]
+> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest)**.
 
 ## Create a new pull request
 

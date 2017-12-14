@@ -149,6 +149,6 @@ Here are some additional ways your team can implement Kanban practices and custo
 
 <!---
 >[!NOTE]  
-><b>Feature availability: </b>If you connect to VSTS, you can [add and configure the Cumulative Flow Diagram (CFD) widget to a team dashboard](../../report/guidance/cumulative-flow.md).  
+><b>Feature availability: </b>If you connect to VSTS, you can [add and configure the Cumulative Flow Diagram (CFD) widget to a team dashboard](../../report/dashboards/cumulative-flow.md).  
 
 --> 

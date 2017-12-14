@@ -13,7 +13,7 @@ ms.date: 10/17/17
 
 # Create a Report Server project 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can track your team's progress by using SQL Server Report Designer to create reports. Before you can base these reports on data from Visual Studio Team Foundation Server (TFS), you must first create a Report Server project in Visual Studio.  
   

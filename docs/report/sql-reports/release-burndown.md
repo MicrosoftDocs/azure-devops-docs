@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Release Burndown
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By reviewing the release burndown report, you can understand how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.  
   

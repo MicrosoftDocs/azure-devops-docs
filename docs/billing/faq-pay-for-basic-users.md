@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/09/2017
 ---
 
 # Troubleshooting paying for VSTS Basic access
@@ -31,7 +31,7 @@ ms.date: 10/6/2017
 
 <a name="billing"></a>
 
-[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)]
 
 <a name="QALicensesResources"></a>
 

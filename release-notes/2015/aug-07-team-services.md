@@ -12,8 +12,6 @@ author: yukom
 
 #Multi-select backlog items, reorder when changing columns, client libraries availability – Aug 7
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Multi-select items on the product backlog
 
 On the product backlog, many have wanted to select multiple items when performing actions. Well, now you can! On all the backlogs, you can select multiple items (using shift-click) and perform any of the actions in the context menu:

@@ -10,8 +10,6 @@ author: alexn
 
 # New Release Definition Editor and improved pull request workflows – July 14
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks. 
-
 Last sprint we talked about the continuing refresh of our web experience.  The big thing we’re excited about this sprint is the new __Release Definition Editor__ going into preview.  It is based off the new CI editor we released not long ago, and it’s a good example of the overall direction that we are going.  It’s not just a cleaner experience, it is structurally different in that it lets you visualize your release process.  It lets you work with Release in the way you think about your system.  We are going to be bringing this same approach to the runtime views as well so that you can visualize a release as it progresses.  Unlocking all of your data with richer, easier to consume visualizations is something we are trying to do across the product. Read more about the new [__Release Definition Editor__ preview](#new-release-definition-editor-preview) below.
 
 ![visualize pipeline](_img/07_14_08.png)

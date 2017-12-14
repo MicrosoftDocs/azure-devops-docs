@@ -41,11 +41,11 @@ a build has finished, or a work item has been created or updated.
 
 ## Use a service hook to push messages
 
-1. In VSTS, open your team project's administration page.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-1. Add a service hook.
+	![Team project administration page](./_img/add-service-hook.png)
 
-   <img alt="Add service hook" src="./_img/flowdock/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 1. Choose Flowdock
 

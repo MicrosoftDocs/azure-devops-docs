@@ -1,4 +1,4 @@
-- name: SharePoint Integration 
+- name: SharePoint Integration
   href: index.md
 - name: Overview
   items:
@@ -23,7 +23,9 @@
   - name: Features removed when disabling SharePoint integration
     href: ./deprecation/features-removed-when-disabling-sharepoint-integration.md
   - name: Upload and refresh Excel reports
-    href: ../../report/sharepoint-dashboards/upload-refresh-excel-reports.md 
+    href: upload-refresh-excel-reports.md 
+  - name: Team Foundation Server Extensions for SharePoint Products
+    href: tfs-sharepoint-extensions.md 
 - name: How-to guides
   items:
   - name: "TFS 2018 & later versions"
@@ -48,19 +50,19 @@
       - name: Verify SharePoint
         href: ../../tfs-server/install/sharepoint/verify-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Move SharePoint to new hardware
-        href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
-    - name: Manage SharePoint integration
-      items:
-      - name: Add SharePoint products to TFS
-        href: ../../tfs-server/admin/add-sharepoint-to-tfs.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
-      - name: Modify or remove access between SharePoint web app and TFS
-        href: ../../tfs-server/admin/modify-remove-access-shareport-tfs.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
-      - name: Configure SharePoint Server 2010 or 2007 for dashboards
-        href: ../../tfs-server/admin/config-ent-sharepoint0710-dashboards.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
-    - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
-      href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
+        href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
   - name: Set permissions to access a SharePoint project portal
-    href: ../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+    href: ../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+  - name: Manage SharePoint integration
+    items:
+    - name: Add SharePoint products to TFS
+      href: ../../tfs-server/admin/add-sharepoint-to-tfs.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+    - name: Modify or remove access between SharePoint web app and TFS
+      href: ../../tfs-server/admin/modify-remove-access-shareport-tfs.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+    - name: Configure SharePoint Server 2010 or 2007 for dashboards
+      href: ../../tfs-server/admin/config-ent-sharepoint0710-dashboards.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+  - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
+    href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"

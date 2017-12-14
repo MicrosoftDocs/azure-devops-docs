@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Build Coverage tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about how thoroughly source code was covered by the tests that use specific builds by using FactBuildCoverage and the associated dimension tables.  
   

@@ -12,8 +12,6 @@ author: yukom
 
 #Release, test and Git/TFVC history view improvements – Jul 29
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Git & TFVC – History view and diff view updates
 
 The history view for commits, change sets, shelve sets, and branch updates gets a more modern avatar.

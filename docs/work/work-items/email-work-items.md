@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/19/2017  
+ms.date: 11/27/2017  
 ---
 
 
@@ -274,44 +274,12 @@ Optionally, enter a note about the release or un-check any section you don't wan
 ## Related notes  
 
 As you can see, there are many ways to share information using work items alone.  
+
+See also the following topics:
+
+- [Use templates to add and update work items](../backlogs/work-item-template.md)  
+- [Share work plans and progress](../track/share-plans.md) 
+- [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
  
- 
-### Work item hyperlink format  
-How do you define a hyperlink that opens a work item? Specify a URL that conforms to the following syntax:
-
-**VSTS**:
-
-   <b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
-
-   Example: `https://fabrikam/DefaultCollection/Phone%20Saver/_workitems?id=133&_a=edit`
-
-**For TFS 2017, TFS 2015**:
-
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit`
-
-**For TFS 2013.2**:
-
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133`
-
-**For on-premises TFS 2013.1 and earlier versions**:
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems#_a=edit&id=</b>*WorkItemNumber*  
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit&id=133`
-
-
-**where**:
-
--   *AccountName* specifies the name of the VSTS account  
--   *ServerName* specifies the name of the TFS application tier server   
--   *Port* specifies the port, default=8080
--   *CollectionName* specifies the name of the team project collection.
--   *TeamProjectName* specifies the team project name
--   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
-
-
 
  

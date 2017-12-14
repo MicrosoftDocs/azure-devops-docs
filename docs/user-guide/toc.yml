@@ -68,6 +68,10 @@
   items:
   - name: Troubleshoot connection
     href: troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: "TF31002: Unable to connect"
+    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: Troubleshoot network connections and whitelist addresses
+    href: ../security/faq-network-connections.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Get support
     href: provide-feedback.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
 - name: Reference

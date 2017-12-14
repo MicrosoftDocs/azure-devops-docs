@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Reporting
+  - name: Extend
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+    topicHref: /vsts/index#pivot=services&panel=extend
     items:
     - name:  Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/

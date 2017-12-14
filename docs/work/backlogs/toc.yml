@@ -30,6 +30,8 @@
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Work in Excel or Project
     href: office/track-work-vsts-tfs.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: Schedule projects using Project
+    href: office/schedule-projects-using-microsoft-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
@@ -54,8 +56,6 @@
   items:
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
-  - name: Schedule projects using Project
-    href: office/schedule-projects-using-microsoft-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Rollup estimated & actual work using Project"
     href: office/rollup-estimated-and-actual-work-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Resolve Excel data conflicts
@@ -76,8 +76,10 @@
     href: ../kanban/index.md
   - name: Scrum
     href: ../scrum/index.md
-  - name: Work item queries
+  - name: Queries
     href: ../track/index.md
+  - name: Work Items
+    href: ../work-items/index.md
   - name: Customization
     href: ../customize/index.md
   - name: What is Agile?

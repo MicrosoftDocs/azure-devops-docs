@@ -40,9 +40,9 @@ to install your agents.
 
 ## Define a list of machines to run your app and tests
 
-Previous versions of VSTS and TFS included the capability to define
-**Machine Groups**. However, this feature has been deprecated and it is no longer
-possible to use it to create machine groups.
+> [!NOTE]
+> Previous versions of VSTS and TFS included the capability to define
+> **Machine Groups**. However, this feature will be retired on **Jan 31st 2018** and it will be no longer possible to use machine groups.
 
 As an alternative, you can use:
 

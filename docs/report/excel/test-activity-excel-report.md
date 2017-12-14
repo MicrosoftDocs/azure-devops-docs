@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Test Activity Excel Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 You can use the Test Activity report to help monitor the number of manual tests that the team has run over time. This report is available only after the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  

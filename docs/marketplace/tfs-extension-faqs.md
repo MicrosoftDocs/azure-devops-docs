@@ -116,7 +116,7 @@ for the Team Foundation Server where you want to upload extensions.
 
 ## Purchases & billing
 
-[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](../billing/_shared/qa-azure-billing.md)]
 
 <a name="bill-period"></a>
 

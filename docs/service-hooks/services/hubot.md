@@ -52,10 +52,11 @@ Now that you've set up Hubot, create a service hook subscription
 that will forward messages in a VSTS team room
 to your Hubot instance.
 
-1. Go to a team project in your VSTS account
-and open the project adminstration page.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-2. On the service hooks tab, add a service hook.
+	![Team project administration page](./_img/add-service-hook.png)
+
+	Click **Create Subscription**.
 
 3. Select the Hubot service.
 
