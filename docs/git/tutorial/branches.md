@@ -63,7 +63,7 @@ Visual Studio 2015 & 2017
 
 0. Open up Team Explorer and go to the **Branches** view.
 0. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
-0. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performans a `checkout` to the newly created branch.
+0. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
 
     ![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
 
