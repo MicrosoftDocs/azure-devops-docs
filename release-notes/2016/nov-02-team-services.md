@@ -10,8 +10,6 @@ author: egeaney
 
 #Microsoft Teams integration, repo favorites, and new package management and release management regions – Nov 2
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 There are some exciting new features this sprint.
 
 ##Package Management in India and Brazil

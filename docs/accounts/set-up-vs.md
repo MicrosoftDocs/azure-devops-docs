@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 10/17/2017
 ---
 
 #	Set up Visual Studio with VSTS

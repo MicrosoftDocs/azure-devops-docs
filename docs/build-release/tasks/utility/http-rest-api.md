@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Utility: Invoke HTTP REST API

@@ -20,10 +20,6 @@ In the __Sprint 121 Update__ we’re introducing the native Wiki in Visual Studi
 
 We will also start asking a few of you for feedback from within VSTS to help us make the product better. Read more about in-product feedback in the [Feedback](#feedback) section below.
 
-
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next three weeks.
-
 ##Work
 ###Copy work item processes
 You can now create a copy of an inherited process to use as a starting point for a new process, or to prepare and test process changes.

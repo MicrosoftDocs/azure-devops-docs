@@ -24,7 +24,7 @@ By far the easiest option for moving data into VSTS is to manually copy your mos
 This can be difficult when you are in the middle of a large project, but you can make it easier if you do some advance planning
 and schedule your move when it makes sense for your team.
 
-For example, when the Visual Studio Cloud Services team chose to move from TFS to VSTS, we also decided to 
+For example, when the Visual Studio Team Services (VSTS) team chose to move from TFS to VSTS, we also decided to 
 move from Team Foundation Version Control (TF VC) to Git. This required a fair bit of planning, but when we actually
 performed our migration, we created a new Git repo using the "tip" version of our TF VC sources, and left our history
 behind in TFS. We also moved our active work items, and left behind all our old bugs, completed user stories and tasks,
@@ -41,9 +41,8 @@ build definitions, test plans, and so forth – are harder to manually migrate.
 
 ### Option 2: High fidelity database migration.
 
-The TFS/VSTS product team recently released a preview of a high fidelity TFS Database Import Service. More
-information on this service can be found at [High Fidelity Migration](migration-overview.md). A downloadable migration
-guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
+The TFS/VSTS product team provides a high fidelity TFS Database Import Service. A downloadable Migration
+Guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">
 <img alt="Migration Guide" src="_img\migration-import\VSTSMigrationGuideCover-227x300.png" align="middle" />

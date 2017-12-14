@@ -6,6 +6,12 @@
     href: /vsts/build-release/overview-azure?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: Quickstarts
   items:
+  - name: Azure DevOps for your app
+    items:
+    - name: "DevOps Project for ASP.NET Core"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for Node.js"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Azure Web App"
     href: /vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Windows VM"
@@ -14,6 +20,8 @@
     href: /vsts/build-release/apps/cd/deploy-docker-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: Tutorials
   items:
+  - name: DevOps Project for GitHub
+    href: /vsts/build-release/actions/azure-devops-project-github?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Set up multi-stage release
     href: /vsts/build-release/actions/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: CI builds for Git in VSTS

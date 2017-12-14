@@ -12,7 +12,7 @@ ms.date: 10/17/17
 
 # Perspectives and measure groups 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By using the SQL Server Analysis Services cube for Visual Studio Team Foundation Server, you can generate reports of aggregated information about the data that is stored in team project collections. You can easily use this data to create PivotTable and PivotChart reports in Office Excel. You can drag the cube elements onto PivotTable or PivotChart reports to formulate questions and retrieve answers quickly. The cube is optimized to answer questions such as "How many bugs were active, resolved, and closed on each day of the project?"  
   

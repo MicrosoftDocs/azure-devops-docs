@@ -44,6 +44,7 @@
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "need_pr_comments": false,
   "enable_incremental_build": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [

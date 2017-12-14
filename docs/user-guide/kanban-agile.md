@@ -7,6 +7,7 @@ ms.assetid: 0A71B622-7641-4F22-8BFF-6866C0393726
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/19/2017
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # Kanban and Agile tools 

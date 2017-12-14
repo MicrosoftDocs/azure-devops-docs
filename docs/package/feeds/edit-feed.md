@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 11/30/2017
 ---
 
 # Edit a feed
@@ -28,6 +28,8 @@ In the edit feed dialog:
 To edit permissions, see [Secure feeds using permissions](feed-permissions.md#edit-permissions).
 
 ## Removing a feed
+
+![Delete a feed](../_shared/_img/deletefeed.png)
 
 In the edit feed dialog:
 - Select **Delete feed**

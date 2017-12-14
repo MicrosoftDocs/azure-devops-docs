@@ -10,8 +10,6 @@ author: alexn
 
 # Git Tags web view, build definition import/export, and improved user management – June 22
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks.
-
 Relax, sit back, and get comfortable. You’re going to be here for a while. We’ve got lots of updates this sprint across the entire product.  
 
 You’ve probably noticed that we’ve been continuing to evolve our web portal for a while now. We know it’s the primary way folks interact with the product. We want to have a great overall web experience and we’ve been working to get there in incremental steps. Having a great web experience means multiple things to us. It means you can accomplish the work you need to do with ease. It means that it’s an accessible experience, so everyone on your team can use it. It also means an experience that is visually appealing and a pleasant place to do your work.
@@ -226,7 +224,7 @@ As part of this work, we’ve also released a new __NuGet Tool Installer__ task 
 ![NuGet](_img/06_22_07.png)
 
 ###npm build task updates
-Whether you’re building your npm project on Windows, Linux, or Mac the new __NPM__ build task will accommodate. We have also reorganized the task to make both __npm install__ and __npm publish__ easier. For __install__ and __publish__, we have simplified credential acquisition so that credentials for registries listed in your project’s .npmrc file can be safely stored in a [service endpoint](https://www.visualstudio.com/en-us/docs/build/concepts/library/service-endpoints). Alternatively, if you’re using a VSTS feed, we have a picker that will let you select a feed, and then we will generate a .npmrc with requisite credentials that are used by the build agent.
+Whether you’re building your npm project on Linux, macOS, or Windows, the new __NPM__ build task will accommodate. We have also reorganized the task to make both __npm install__ and __npm publish__ easier. For __install__ and __publish__, we have simplified credential acquisition so that credentials for registries listed in your project’s .npmrc file can be safely stored in a [service endpoint](https://www.visualstudio.com/en-us/docs/build/concepts/library/service-endpoints). Alternatively, if you’re using a VSTS feed, we have a picker that will let you select a feed, and then we will generate a .npmrc with requisite credentials that are used by the build agent.
 
 ###Working outside your account/collection
 It’s now easier to work with feeds outside your VSTS account, whether they’re __Package Management__ feeds in another VSTS account or TFS server or non-Package Management feeds like NuGet.org/npmjs.com, Artifactory, or MyGet. Dedicated __Service Endpoint__ types for NuGet, npm, and Maven make it easy to enter the correct credentials and enable the build tasks to work seamlessly across package download and package push operations.

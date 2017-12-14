@@ -13,7 +13,7 @@ ms.date: 06/22/2017
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including iOS, Android, Java, Linux or Windows.  
+Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  
 ![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
@@ -97,7 +97,7 @@ Help your team continuously deliver software at a faster pace and with lower ris
 
 Agile methodologies speed up the development and test cycle and make sure that you can deliver real value to your customers on a regular basis.
 
-No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, Mac, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
+No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
 -->
 
 In addition to continuous integration testing, you can create [test plans](../manual-test/getting-started/create-a-test-plan.md), [perform manual testing](../manual-test/index.md), and [run unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios). 
@@ -154,7 +154,7 @@ With Marketplace extensions (currently in private preview), you can create first
  
 Service hooks enable integration scenarios between other applications and VSTS or your on-premises TFS by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your team projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat. 
 
-Industry-standard RESTful APIs extend the power of VSTS and TFS from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Windows, Android, iOS, Node.js, and more.  
+Industry-standard RESTful APIs extend the power of VSTS and TFS from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and more.  
 
 
 ### Analytics: Monitor your apps to gain insight  
@@ -164,6 +164,6 @@ Monitor your web and device apps to gain actionable insight to improve performan
   
 [Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or J2EE servers.  
 
-[Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on iOS, Android, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
+[Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  
  

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: aacathca
 ms.author: pantal
-ms.date: 11/13/2017
+ms.date: 11/17/2017
 ---
 
 #  Extend Analytics with OData (Preview) 
@@ -34,9 +34,9 @@ Using OData, you can directly query the Analytics Service from a supported brows
 - [Create an Analytics widget](example-analytics-widget.md)
 
 <!---
-- [Build a hub extension](..\analytics\building-extension-against-analytics-service.md)
-- [Build a dashboard widget extension](..\analytics\widget-extensions-against-analytics-service.md)
-- [Add widget configuration to an extension](..\analytics\widget-extension-against-analytics-service-configuration.md)
+- [Build a hub extension](building-extension-against-analytics-service.md)
+- [Build a dashboard widget extension](widget-extensions-against-analytics-service.md)
+- [Add widget configuration to an extension](widget-extension-against-analytics-service-configuration.md)
 -->
 
  
@@ -51,6 +51,7 @@ Understand Agile process data
 -->
 
 ## How-to Guides
+- [Set permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json)
 
 <!--
 Use Agile process data

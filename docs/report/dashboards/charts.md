@@ -1,31 +1,39 @@
 ---
-title: Status and trend work item, query-based charts 
+title: Status and trend work item, query-based charts
+titleSuffix: TFS  
 description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/31/2017
+ms.date: 11/28/2017
 ---
 
 
 # Track progress by creating status and trend query-based charts 
 
-
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
-
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../work/track/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
 >[!NOTE]  
 >For examples of queries based on numeric fields, see [Query by numeric fields](../../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../manual-test/getting-started/track-test-status.md).  
 
-For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different views of the active bugs as they trend over the last two weeks.  
+For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
-## Add and configure a query-based chart  
+## Prerequisites
+- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All members who belong to the Contributors group can create charts
+- For on-premises TFS 2015, you can pin charts to a team homepage. From VSTS or TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md) 
+- To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions (for VSTS or TFS 2017.1 or later versions)](dashboard-permissions.md).  
+
+To learn more about default groups, see [About permissions and groups](../../security/about-permissions.md).
+
+
+## Create a query-based chart  
 
 1.	From the Queries page, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
@@ -57,9 +65,11 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 
 
 ### Trend chart  
-Trend charts let you view progress for the last one, two, or four weeks. 
+Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections). 
 
 <img src="_img/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" style="border: 2px solid #C3C3C3;" />
+
+Trend data is extracted from the work tracking operational store. Like most operational stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
 
 
 ### Burndown chart  
@@ -134,8 +144,8 @@ Now you know how to create status and trend charts for work items. A few things 
 
 Also, from the web portal, you can view the following charts:  
 
-- [Cumulative flow diagram](../guidance/cumulative-flow.md)  
-- [Team velocity](../guidance/team-velocity.md)  
+- [Cumulative flow diagram](cumulative-flow.md)  
+- [Team velocity](team-velocity.md)  
 - [Sprint burndown charts](../../work/scrum/sprint-burndown.md)  
 - [Test progress and test results](../../manual-test/getting-started/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
@@ -144,9 +154,6 @@ Also, from the web portal, you can view the following charts:
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
-
-### Requirements to view and create charts  
-If you have [Stakeholder access or license](../../security/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
@@ -165,6 +172,10 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). This inc
 When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
 
 ![Other category groups data beyond 7 set series](_img/tfs-vso-remaining-category-consolidation-chart.png)  
+
+
+### Widgets and the Analytics Service (VSTS) 
+If you have a VSTS account, you have access to a number of [widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
 
 
 ### Additional charts (TFS)

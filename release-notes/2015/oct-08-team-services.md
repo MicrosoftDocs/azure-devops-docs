@@ -12,8 +12,6 @@ author: yukom
 
 #AAD Group Support – Oct 8
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Azure Active Directory Group support
 
 I’m excited to announce that we now have support for [Azure Active Directory](https://www.microsoft.com/en-us/server-cloud/products/azure-active-directory/) (Azure AD) Groups across Visual Studio Online, giving you an easier way to control who can access your team's resources and business assets. If you already use Microsoft services like Office 365 or Azure AD, you can use the same identities now with your VSO account. Azure AD [works with your VSO account](https://www.visualstudio.com/get-started/setup/manage-organization-access-for-your-account-vs) to control access and authenticate users through your organization's directory.

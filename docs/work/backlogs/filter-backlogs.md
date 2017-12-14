@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/06/2017
+ms.date: 11/28/2017
 ---
   
 
@@ -20,7 +20,7 @@ ms.date: 10/06/2017
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
 
-## Filter based on keywords or fields (VSTS)    
+## Filter based on keywords or fields (VSTS, TFS 2018)    
 
 > [!NOTE]   
 > **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from VSTS. For queries, you must enable the [New Queries Experience](../track/queries-preview.md). 

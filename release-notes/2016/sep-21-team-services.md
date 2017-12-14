@@ -12,8 +12,6 @@ author: yukom
 
 #Import Git repos and view work item attachments – Sept 21
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have some exciting new features this sprint!
 
 ##View work item attachments

@@ -61,4 +61,9 @@ The formatted table contains a link to each work item included in your selected 
 
 <img src="_img/bulk-modify-copy-as-html-table-results.png" alt=" Copy as HTML paste results" style="border: 1px solid #CCCCCC;" />
  
+
+## Related notes  
+
+- [Email or print work items](../work-items/email-work-items.md)  
+- [Share work plans and progress](../track/share-plans.md)  
  

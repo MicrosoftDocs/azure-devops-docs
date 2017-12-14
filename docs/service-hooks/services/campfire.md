@@ -24,9 +24,11 @@ For example, you can post a message when a work item is created or changed, or a
 
 ## Post messages to a room
 
-1. On the team project page in the service hooks tab, run the subscription wizard.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-   <img alt="Add service hook" src="./_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	![Team project administration page](./_img/add-service-hook.png)
+
+	Click **Create Subscription**.
 
 3. Configure the VSTS event that will post a message in a Campfire room.
 

@@ -56,7 +56,7 @@ Team administrators can fully customize the team's Kanban boards associate with 
 	* [Board: Swimlanes](../kanban/expedite-work.md)  
 	* [Board: Card reordering](../customize/reorder-cards.md)  
 	* [Board: Definition of Done](../kanban/definition-of-done.md)  
-	* [Charts: Cumulative flow](../../report/guidance/cumulative-flow.md#configure) 
+	* [Charts: Cumulative flow](../../report/dashboards/cumulative-flow.md#configure) 
 
 ## Add and manage team dashboards   
 

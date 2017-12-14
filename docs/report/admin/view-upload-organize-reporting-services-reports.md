@@ -6,11 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 11/15/2017
 ---
+
+
 # View, upload, and organize Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
   

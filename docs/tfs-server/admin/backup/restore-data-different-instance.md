@@ -113,7 +113,7 @@ in the following sequence:
 16. [Refresh the Data Cache on Client Computers](#RefreshDataCache)
 
 <a name="RequiredPermissions"></a>
-**Required ermissions**
+**Required Permissions**
 
 To perform this procedure, you must be a member of the following groups
 or have the following permissions:

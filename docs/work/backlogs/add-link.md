@@ -80,13 +80,10 @@ When you link work items, you select a link type. In general, use the following 
 
 	For example, here we use the Related link type to link three items to the bug with ID of *46*. The images illustrate the target work item is the bug.  
 
-# [Browser](#tab/browser) 
+	# [Browser](#tab/browser) 
+	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 1px solid #C3C3C3;" />  			
 
-	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 1px solid #C3C3C3;" />  		
-		
-
-# [Visual Studio](#tab/visual-studio) 
-
+	# [Visual Studio](#tab/visual-studio) 
 	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #C3C3C3;" />  		
 
 	To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu or Browse button (Visual Studio) to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 

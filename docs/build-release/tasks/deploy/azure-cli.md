@@ -17,7 +17,7 @@ ms.date: 01/17/2017
 script containing Azure CLI commands against an Azure subscription.
 
 This task is used to run Azure CLI commands on 
-cross-platform agents running on Windows, Linux or Mac operating systems.
+cross-platform agents running on Linux, macOS, or Windows operating systems.
  
 The task is under development. If you encounter problems, or wish to
 share feedback about the task and features you would like to see,
@@ -26,7 +26,7 @@ please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 ### What's new in Version 1.0
 
 - Supports the new [AZ CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/overview), which is Python based
-- Works with Xplat agents (Windows, Linux or macOS)
+- Works with agents on Linux, macOS, and Windows
 - To work with [Azure CLI 1.0](https://docs.microsoft.com/en-us/azure/cli-install-nodejs), which is node based, switch to task version 0.0
 - Both versions of Azure-CLI can coexist in the same system, but task V1.0 logs into the Python based AZ CLI using the user's subscription, whereas task V0.0 logs into the node based Azure CLI. Therefore, scripts should include only the appropriate corresponding commands.
 - Limitations:

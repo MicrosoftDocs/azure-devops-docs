@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 12/11/2017
 ---
 
 #  Disconnect your VSTS account from your directory
@@ -41,33 +41,31 @@ Otherwise, they won't have access until you add them to
 VSTS as new users. They can migrate everything except work history, 
 relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
 
-0.	[Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
+0.	[Sign in to the Azure portal](https://portal.azure.com/) 
 with your Microsoft account as the VSTS account owner.
-
-	> [!NOTE]
-	> You can disconnect your VSTS account 
-	> from your directory only through the Azure classic portal.
 
 	[Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-0.  Go to **VSTS**. 
-Select your VSTS account.
+0.	Browse to your VSTS account by selecting **All services**, typing **Team Services** into the **Filter** box, and choosing **Team Services accounts**. If you have recently browsed to **Team Services accounts** you can select it from the recently accessed services on the left.
 
-	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
+    ![Azure Portal, Team Services accounts](_img/manage-work-access/browse-to-team-services.png)
 
-0.	Chooose **Configure** > **Disconnect**.
+0. Select your account.
+
+    ![Azure portal, VSTS, select your account](_img/manage-work-access/select-team-services-account.png)
+
+0.	Chooose **Disconnect**.
 
 	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
 
+0. Choose **Yes** to confirm.
+
 	![Disconnect account from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
 
-0.	Select **None (no directory connection)**.
-
-	![Select no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
+0.	Your VSTS account is disconnected from your organization's directory.
 
 	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
 
-	Your VSTS account is disconnected from your organization's directory. 
 	Only users with Microsoft accounts can sign in.
 	**Before you disconnect your VSTS account from your directory**, 
 	make sure to **change the VSTS account owner to a Microsoft account**, 
@@ -76,5 +74,8 @@ Select your VSTS account.
 	account has the same email address as your Microsoft account.
 
 	[More questions about disconnecting?](faq-azure-access.md#faq-disconnect)
+
+
+
 
 

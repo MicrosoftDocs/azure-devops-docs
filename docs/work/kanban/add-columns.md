@@ -293,7 +293,7 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md) 
-* [Cumulative flow diagram](../../report/guidance/cumulative-flow.md)  
+* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
 
 
 <a id="state-mappings" >   </a>

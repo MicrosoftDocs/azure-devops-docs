@@ -1,0 +1,183 @@
+---
+title: Identify flaky tests and improved extension install experience – VSTS Sprint 127 Update
+author: alexcnichols
+ms.author: alexn
+ms.date: 12/11/2017
+ms.topic: article
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-articles
+ms.manager: douge
+description: In the Sprint 127 Update of Visual Studio Team Services (VSTS) on December 11, 2017, you’ll find new features to help you manage your test results and execution, plus a set of new Marketplace experiences to help you get even more value out of the ecosystem.
+hide_comments: true
+---
+
+# Identify flaky tests and improved extension install experience – VSTS Sprint 127 Update
+
+In the **Sprint 127 Update** of Visual Studio Team Services (VSTS), you’ll find new features to help you manage your test results and execution, plus a set of new Marketplace experiences to help you get even more value out of the ecosystem. Read more about the [Test](#test) and [Marketplace](#marketplace) improvements below.
+
+Other key feature highlights include:
+
+* [Generate YAML templates from existing build definitions](#generate-yaml-templates-from-existing-build-definitions) - Generate the corresponding YAML build logic from builds in the build definition editor.
+* [Enhancements to multi-phase builds](#enhancements-to-multi-phase-builds) - Different agents, parallel tests, and conditional execution for better builds.
+* [Skip scheduled builds if nothing has changed in the repo](#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) - Conserve resources and avoid noise of extra builds.
+* [Cloud Solution Provider (CSP) purchasing now generally available](#cloud-solution-provider-purchasing-now-generally-available) - Enable the deeper engagement that comes by working through the CSP program.
+
+> [!NOTE]
+> The features discussed in this post will be rolling out through the rest of this week.
+
+## Code
+
+### Track code pushes to a Git repo to builds and releases
+
+Now you can view the build and release status of merge commits in the **Pushes** page. By clicking the status next to the push, you’ll find the specific build or release that the push is included in so that you can verify success or investigate failure.
+
+<img src="_img/127_05.png" alt="Pushes ci-cd status" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Blame now has history
+
+The **Blame** view is great for identifying the last person to change a line of code. However, sometimes you need to know who made the *previous* change to a line of code. The newest improvement in blame can help - **View blame prior to this commit**. As the name suggests, this feature allows you to jump back in time to the version of the file prior to the version which changed a particular line, and view the blame info for that version. You can continue to drill back in time looking at each version of the file that changed the selected line of code.
+
+<img src="_img/127_13.png" alt="Blame history" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### SSH URLs are changing
+
+> [!IMPORTANT]
+> If you are using SSH with VSTS, read this section carefully. You need to update your SSH URLs if you haven’t recently.
+
+We are moving our SSH implementation to use Azure Traffic Manager for more efficient routing. In our tests, we have found that this new approach can yield up to 5X performance improvements on many Git operations when accessing a distant VSTS instance. It does this by relying on Azure Traffic Manager to route connections to a nearby VSTS instance and then use the high-speed Azure backbone to get to distant data centers. We [added support for the new SSH URLs](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/) that support Azure Traffic Manager some time ago and this sprint, we are removing support for the older URLs - hence the urgent need for you to update your SSH remotes. You can read the [docs on updating your SSH URLs](https://docs.microsoft.com/en-us/vsts/git/use-ssh-keys-to-authenticate) for more detail.
+
+## Build and Release
+
+### Generate YAML templates from existing build definitions
+
+Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/build-release/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
+
+This can also be used as a good way to learn YAML quickly. You can create a new build definition using the appropriate template for your app and examine the YAML to understand the mapping between what you’re used to and the new YAML constructs.
+
+### Enhancements to multi-phase builds
+
+> [!IMPORTANT]
+> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+
+A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
+
+* Specify a different agent queue for each phase. This means you can, for example:
+  * Run one phase of a build on a macOS agent and another phase on a Windows agent. To see a cool example of how useful this can be, see this Connect(); 2017 video: [CI/CD DevOps Pipeline for mobile apps and services](https://channel9.msdn.com/events/Connect/2017/B102).
+  * Run build steps on a build agent pool and test steps on a test agent pool.
+
+* Run tests faster by running them in parallel. Any phase that has parallelism configured as “Multi-agent” and contains a “VSTest” task will now automatically parallelize test execution across the configured agent count.
+
+* Permit or deny scripts to access the OAuth token each phase. This means, for example, you can now allow scripts running in your build phase to communicate with VSTS over REST APIs, and in the same build definition block the scripts running in your test phase.
+
+* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
+
+To learn more, see [Phases in Build and Release Management](/vsts/build-release/concepts/process/phases).
+
+### Hide empty contributed sections in build results page
+
+VSTS extensions can contribute sections to a build report in order to add useful information to the build report. Until now, once an extension that does so is installed in a VSTS account, the build report section shows up regardless of whether or not a given build definition actually makes use of the build tasks that populate the section - resulting in a lot of empty sections in build reports. With this sprint, we rolled out changes so that build extension authors can specify which build tasks populate a build report section and the section will only appear for build definitions that use one or more of those tasks - no more empty an irrelevant build report sections.
+
+For an example, see how the **supportsTasks** property is used in this [sample extension](https://github.com/Microsoft/vsts-extension-samples/tree/master/build-results-enhancer).
+
+### Skip scheduled builds if nothing has changed in the repo
+
+By [popular request on UserVoice](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9378558-tfbuild-2015-run-sheduled-build-only-when-source), you can now specify that a scheduled build not run when nothing has changed in your code. You can control this behavior using an option on the schedule. By default, we will not schedule a new build if your last scheduled build (from the same schedule) has passed and no further changes have been checked in to your repo.
+
+### Release trigger for a Package Management artifact
+
+Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/build-release/concepts/definitions/release/triggers#release-triggers) for more information.
+
+### Default artifact versions
+
+There are now several default version options when linking version control artifacts to a release definition. You can configure a specific commit/changeset or simply configure the latest version to be picked from the default branch. Normally you configure it to pick up the latest version, but this is especially useful in some environments where a golden artifact version needs to be specified for all future continuous deployments.
+
+<img src="_img/127_11.png" alt="Default artifact versions" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Release triggers branch enhancements
+
+You can now configure a release trigger filter based on the default branch specified in the build definition. This is particularly helpful if your default build branch changes every sprint and the release trigger filters needs to be updated across all the release definitions. Now you just need to change the default branch in build definition and all the release definitions automatically use this branch. For example, if your team is creating release branches for each sprint release payload, you update it in the build definition to point to a new sprint release branch and release will pick this up automatically.
+
+<img src="_img/127_12.png" alt="Release triggers" style="border:1px solid Silver; display: block; margin: auto;" />
+
+## Test
+
+### Filter large test results
+
+Over time test assets accrue and, for large applications, can easily grow to 10’s of thousands of tests. For these large applications with lots of tests, it can be hard to manage all of the test results - identifying test failures, associated root cause or ownership of issues. To improve this, we have added 2 new filters to the test results view - Container (DLLs) and Owner (Container Owner), under **Tests** tab in **Build and Release**. This makes it easy to filter the test results to the portion that is relevant to you.
+
+<img src="_img/127_06.png" alt="Test result filters" style="border:1px solid Silver; display: block; margin: auto;" />
+
+Additionally, the existing Outcome filter will now provide the ability to filter for multiple outcomes. As a user when I want to see the outcome of my tests for a change I just committed, I can filter on the Container (DLL name) or Owner (DLL owner) or both to get to the results relevant to me. We also plan to add a filter based on Test Name.
+
+<img src="_img/127_07.png" alt="Test result status filter" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Identify flaky tests
+
+Sometimes tests are flaky - they fail on one run and pass on another without any changes. Flaky tests can be frustrating and will undermine confidence in test effectiveness - causing failures to be ignored and bugs to slip through. With this Update, we’ve deployed the first piece of a solution to help tackle the problem of flaky tests. You can now configure the **Visual Studio Test** task to re-run failed tests. The test results then indicate which tests initially failed and then passed on re-run. Support for re-run of data driven and ordered tests will be coming later.
+
+The **Visual Studio Test** task can be configured to control the maximum number of attempts to re-run failed tests and a threshold percentage for failures (e.g. only re-run tests if less than 20% of all tests failed) to avoid re-running tests in event of wide spread failures.
+
+<img src="_img/127_08.png" alt="Re-run failed test section" style="border:1px solid Silver; display: block; margin: auto;" />
+
+In the **Tests** tab under **Build and Release**, you can filter the test results with Outcome as “Passed on rerun” to identify the tests that had an unreliable behavior during the run. This will currently show the last attempt for each test that passed on re-run. The Summary view is also modified to show “Passed on rerun (n/m)” under Total tests, where n is the count of tests passed on re-run and m is total passed tests. A hierarchical view of all attempts is coming in next few sprints.
+
+<img src="_img/127_09.png" alt="Re-run failed test results" style="border:1px solid Silver; display: block; margin: auto;" />
+
+## Marketplace
+
+### Improved Marketplace experience
+
+We have enabled tabs on extension description pages in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to make it easier to find the information you want. Now, getting to Pricing, Q&A, or Rating & Review information is easier. Even when you scroll down the page, the tabs and single call to action are always within view.
+
+<img src="_img/127_04.png" alt="Marketplace tabs" style="border:1px solid Silver; display: block; margin: auto;" />
+
+We have also revamped how you acquire (or purchase) VSTS extensions and Visual Studio Subscriptions from the Marketplace.
+
+* The install/purchase wizard now better adjusts the actions available to you as you progress - login, select a VSTS account, etc. We believe this will make acquiring extensions easier and more intuitive.
+
+<img src="_img/127_02.png" alt="Already installed" style="border:1px solid Silver; display: block; margin: auto;" />
+
+* All relevant information required to change paid quantity and its billing implication is presented within the flow to make an informed purchase.
+
+<img src="_img/127_03.png" alt="User summary" style="border:1px solid Silver; display: block; margin: auto;" />
+
+* A progress bar displays acquisition progress and allows navigation across steps.
+* We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator to purchase VSTS Users or Pipelines.
+
+<img src="_img/127_10.png" alt="Request" style="border:1px solid Silver; display: block; margin: auto;" />
+
+* An Account Administrator can now change the Azure subscription associated with a VSTS account when they do not have required permissions on the existing associated Azure subscription.
+
+### Refreshed publisher management portal
+
+The publisher management portal is being refreshed on the Marketplace, making it easy to view all the publishers under a login across various directories/tenants. It also shows the associated role (owner, contributor, etc). Managing members and accessing publisher details is now more accessible to aid publisher management.
+
+As a first step in improving the publisher onboarding experience, publishers can now choose which directory/tenant the publisher is created in.
+
+<img src="_img/127_publisher.png" alt="Publisher Portal" style="border:1px solid Silver; display: block; margin: auto;" />
+
+### Virus scan of all public extensions on Marketplace
+
+In Marketplace, we have enforced an additional gate for all public extensions: virus scan. Only after a successful scan, the extension is listed in Marketplace and available for consumers to use. This spans existing and new extensions, and all their updates. The publishers are notified via email after completion of the extension validation.
+
+### TFX CLI changes for extension publish
+
+TFX CLI has been amended to include virus scan in the extension validation. Extension validation time is largely dependent on the size of the extension package and can take up to 20 minutes. A new parameter, **--nowait-validation**, is added to the extension publish command so that the publisher or the automated pipeline doesn’t have to wait for the CLI tool to complete. The extension is published and available in the Marketplace only after successful validation. The publishers are notified via email after completion of the extension validation or can use the extension **show** command to know the status of validation.
+
+## Administration
+
+### Cloud Solution Provider purchasing now generally available
+
+Purchasing from Visual Studio Marketplace via the Cloud Solution Provider (CSP) program is available for all offers/markets where CSP is supported today. CSP partners across those markets can now purchase Visual Studio subscriptions, Visual Studio Team Services Users, 1st party extensions (e.g. Test Manager, Hosted Pipelines, Package Management) from Visual Studio Marketplace for their customers. Visual Studio Marketplace will now recognize and accept Azure CSP subscriptions for all 1st party purchases now. In addition, CSPs can also manage Visual Studio subscriptions they purchased for their customers through our subscription management portal, setup VSTS accounts from Azure portal, and link existing VSTS accounts to Azure CSP subscriptions to take over the billing from their customers.
+
+## Feedback
+
+We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
+
+<img src="_img/125_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
+
+Thanks,
+
+Ravi Shanker

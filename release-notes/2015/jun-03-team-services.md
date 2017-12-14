@@ -12,8 +12,6 @@ author: yukom
 
 #Swim lanes, #mention, Build test steps – Jun 3
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Kanban swim lanes
 
 Today’s update brings the ability to create swim lanes on your Kanban boards. A swim lane is a horizontal lane used to categorize work; the most common use is the creation of an “expedite lane” for emergency work that can skip queues and preempt other work. Our boards support creating as many lanes as the team needs. Just collapse them out of the way when not in use. To add a swim lane, click the gear in the top right hand corner of your board. Enjoy!

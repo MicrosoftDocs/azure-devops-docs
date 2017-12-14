@@ -112,7 +112,7 @@ To resolve publishing errors that arise when working in Excel or Project, see th
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
 	An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
 
-- [Address inaccuracies published for summary values](../../../report/address-inaccuracies-published-for-summary-values.md): 
+- [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
 	If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
 
