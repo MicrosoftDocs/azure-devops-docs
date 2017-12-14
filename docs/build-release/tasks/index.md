@@ -107,6 +107,7 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](deploy/_img/azure-sql-database-deployment-icon.png) [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | VSTS, TFS 2015 Update 3 and newer |
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 |
+| ![icon](deploy/_img/docker-icon.png) [Docker](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker). Build, tag, push, or run Docker images or run a Docker command. Use with Docker or Azure Container Registry | VSTS, TFS 2017 |
 | ![icon](deploy/_img/iis-deploy-icon.png) [IIS Web App Deploy](deploy/iis-deploy.md). Deploy IIS Websites and Virtual Applications using WebDeploy | VSTS |
 | ![icon](deploy/_img/iis-manage-icon.png) [IIS Web App Manage](deploy/iis-manage.md). Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools | VSTS |
 | ![icon](deploy/_img/manual-intervention-icon.png) [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task). Pause deployment and wait for intervention | VSTS, TFS 2017 |
