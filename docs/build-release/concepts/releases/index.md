@@ -66,7 +66,7 @@ or immediately start a deployment. For example:
   defined for an environment, which specify which of multiple deployments will occur,
   or the order in which releases are deployed.
 
-* There may be [pre-deployment approvers](../definitions/release/environments.md#approvals)
+* There may be [pre-deployment approvers or gates](../definitions/release/approvals/index.md)
   defined for an environment, and the deployment will not occur until all
   necessary approvals have been granted.
 

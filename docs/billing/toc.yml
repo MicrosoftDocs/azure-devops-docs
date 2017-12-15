@@ -74,10 +74,12 @@
     items:
     - name: Set up customer and billing
       href: csp/set-up-csp-customer.md
-    - name: Buy VSTS for customers
+    - name: Buy VSTS resources
       href: csp/buy-csp-vsts.md
-    - name: Buy and manage VS subscriptions for customers
+    - name: Buy and manage VS subscriptions
       href: csp/buy-manage-vs-subs.md
+    - name: Buy VS App Center
+      href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
   - name: Billing signup

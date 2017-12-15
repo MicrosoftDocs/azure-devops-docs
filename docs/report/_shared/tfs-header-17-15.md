@@ -1,4 +1,4 @@
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+
 
 >[!IMPORTANT]  
 >**Feature availability**: Excel reports, Reporting Services reports, and SharePoint dashboards are only supported for on-premises TFS. For information on what is supported for VSTS, see [Dashboards, charts, & widgets](/vsts/report/overview).

@@ -7,13 +7,13 @@ ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.date: 10/11/2017
+ms.date: 11/28/2017
 ms.topic: get-started-article
 ---
 
 # Install TFS on a single server
 
-**TFS 2017** | **TFS 2015**
+**TFS 2018** | **TFS 2017** | **TFS 2015**
 
 There are three different options for installing Team Foundation Server (TFS):
 
@@ -23,6 +23,8 @@ There are three different options for installing Team Foundation Server (TFS):
 
 The simplest way to set up TFS is to put everything on a single server. Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations) to confirm that this configuration seems appropriate for your team. If not, 
 consider a [dual server](dual-server.md) or [multiple server](multiple-server.md) configuration instead.
+
+> If you're upgrading to TFS 2018 from another version, you may want to look at the [requirement changes](../requirement-changes-tfs16.md) and [release notes](../whats-new.md#tfs-2018-rc1).
 
 ## Preparation
 
@@ -72,19 +74,20 @@ Configuration Wizard with the New Deployment - Basic scenario.
 This scenario is optimized for simplicity, using default options for most inputs. If you want full control over all inputs, use the New 
 Deployment - Advanced scenario instead. 
 
-With the New Deployment - Basic scenario, you will need to choose:
+With the *New Deployment - Basic* scenario, you will need to choose:
 
-- Whether to install SQL Express or use an existing SQL Server instance.
-- Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](../../security/websitesettings.md) for more information.
-- Whether to install and configure Code Search features. See [configuring search](../../search/code/administration.md#config-tfs) 
+- **Language**: Which language you would like to configure TFS for.
+- **SQL Server Instance**: Whether to install SQL Express or use an existing SQL Server instance.
+- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](../../security/websitesettings.md) for more information.
+- **Search**: Whether to install and configure Code Search features. See [configuring search](../../search/code/administration.md#config-tfs) 
 for more information.
 
-If you select the New Deployment - Advanced scenario, you will additionally need to chose:
+If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
 
-- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is NT AUTHORITY\NETWORK SERVICE in domain joined scenarios, and LOCAL SERVICE in workgroup scenarios.
+- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is `NT AUTHORITY\NETWORK SERVICE` in domain joined scenarios, and `LOCAL SERVICE` in workgroup scenarios.
 - Whether to enable SSH, along with the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
 - The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path
-TfsData\ApplicationTier\_fileCache on the local drive which has the most free space.
+`TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
 - Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure
 these features. Note that these options are not available on client operating systems.
 - Whether to create a team project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named DefaultCollection.

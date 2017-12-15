@@ -13,12 +13,12 @@ ms.date: 09/29/2017
 
 # View, run, or email a work item query  
 
-<b>VSTS</b> 
+<b>VSTS | TFS 2018</b> 
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
 >[!NOTE]  
->**Feature availability**: The New Queries experience is supported on VSTS. To learn more, see [New Queries experience](queries-preview.md).  
+>**Feature availability**: The New Queries experience is supported on VSTS and TFS 2018 and later versions. To learn more, see [New Queries experience](queries-preview.md).  
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
 
@@ -133,6 +133,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
+
+- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
-
-

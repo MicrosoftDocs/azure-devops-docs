@@ -220,7 +220,7 @@ To edit a markdown widget, you must be a team admin or a member of the Project A
 
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
-- [Team velocity](../guidance/team-velocity.md)
+- [Team velocity](team-velocity.md)
 - [Sprint burndown chart](../../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
-- [Cumulative flow](../guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+- [Cumulative flow](cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
 

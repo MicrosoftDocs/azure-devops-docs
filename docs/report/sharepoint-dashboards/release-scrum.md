@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Release (Scrum)
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Release dashboard shows how much work remains in the release and how quickly your team is working through the product backlog. It displays the Release Burndown report, along with additional charts and quick access links.  
   

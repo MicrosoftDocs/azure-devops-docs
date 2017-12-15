@@ -113,5 +113,5 @@ You can then share your custom shapes or import custom shapes developed by other
 
 ### PowerPoint for Mac 
 
-Support for a Mac OS is not supported. You need to use PowerPoint on the same computer where you have installed Visual Studio or the Team Foundation Server Standalone Office Integration 2015 in order to get the Team Foundation add-in. These applications require a Windows OS.
+macOS is not supported. You need to use PowerPoint on the same computer where you have installed Visual Studio or the Team Foundation Server Standalone Office Integration 2015 in order to get the Team Foundation add-in. These applications require Windows.
 

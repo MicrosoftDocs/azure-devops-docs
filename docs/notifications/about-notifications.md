@@ -6,7 +6,7 @@ ms.technology: collaborate
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: kaelli
+ms.author: elbatk
 ms.topic: get-started-article
 ms.date: 09/01/2017
 ---
@@ -45,7 +45,7 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 - [Flowdock](../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 - [Hipchat](../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 - [Slack](../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)  
-- [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)
+- [Microsoft Teams](../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and VSTS integration](../service-hooks/services/zapier.md).
 

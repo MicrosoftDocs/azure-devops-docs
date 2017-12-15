@@ -14,6 +14,18 @@
     href: get-started-npm.md
   - name: Get started with Maven
     href: get-started-maven.md
+- name: Concepts
+  items:
+  - name: Feeds
+    items:
+    # - name: Deleted packages
+    #   href: concepts/feeds/deleted-packages.md
+    - name: Views
+      href: concepts/feeds/views.md
+    - name: Upstream sources
+      href: concepts/feeds/upstream-sources.md
+  - name: Symbols
+    href: concepts/symbols.md
 - name: How-to
   items:
   - name: Use Package Management in Team Build
@@ -48,7 +60,7 @@
       href: feeds/common-identities.md
     - name: Understand immutability
       href: feeds/immutability.md
-  - name: Use NuGet packages
+  - name: Use NuGet
     items:
     - name: Publish a NuGet package
       href: nuget/publish.md
@@ -62,11 +74,13 @@
       href: nuget/dotnet-exe.md
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md
+    - name: Use packages from nuget.org
+      href: nuget/upstream-sources.md
     - name: Set up a multi-developer environment
       href: nuget/bootstrap-nuget.md
     - name: Move your packages to the cloud
       href: nuget/move-from-fileshares.md
-  - name: Use npm packages
+  - name: Use npm
     items:
     - name: Set up your client's npmrc
       href: npm/npmrc.md
@@ -80,23 +94,29 @@
       href: npm/deprecate-unpublish.md
     - name: Use npm scopes
       href: npm/scopes.md
-  - name: Use Maven packages
+  - name: Use Maven
     items:
     - name: Set up authentication
-      href: ./maven/pom-and-settings.md
+      href: maven/pom-and-settings.md
     - name: Publish a Maven project
-      href: ./maven/publish.md
+      href: maven/publish.md
     - name: Install a Maven project
-      href: ./maven/install.md
-  - name: Use Gradle packages
+      href: maven/install.md
+  - name: Use Gradle
     items:
     - name: Pull and build a Gradle package
-      href: ./gradle/pull-package-gradle.md
+      href: gradle/pull-package-gradle.md
     - name: Publish a Gradle package
-      href: ./gradle/publish-package-gradle.md
+      href: gradle/publish-package-gradle.md
+  - name: Use symbols
+    items:
+    - name: Use symbols in Visual Studio
+      href: symbols/debug-with-symbols-visual-studio.md
+    - name: Use symbols in WinDbg
+      href: symbols/debug-with-symbols-windbg.md
+    - name: Publish symbols
+      href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
 - name: Reference
   items:
   - name: Collaborate with packages
     href: collaborate-with-packages.md
-  - name: About release views
-    href: feeds/about-release-views.md

@@ -21,7 +21,7 @@ Check the build log for the exact command-line executed by the failing step. Att
 For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) step)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
-Keep in mind, some differences are in effect when executing a command from the local command, and when a build is running on an agent. If the agent is configured to run as a service on Windows/Linux, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 ## Get logs to diagnose problems
@@ -279,8 +279,8 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
  We store your client cert private key password securely on each platform.  
  ```
  Windows: Windows Credential Store
- OSX: OSX Keychain
- Linux: Encrypted with symmetric key based on machine id
+ macOS: macOS Keychain
+ Linux: Encrypted with a symmetric key based on the machine ID
  ```
 
 Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more detail information about agent client certificate support.

@@ -1,22 +1,25 @@
 ---
-title: Functions available in Power BI Data Connector | VSTS  
-description: Description of functions available from the Power BI Data Connector and the Analytics Service for VSTS
+title: Functions available in Power BI Data Connector 
+titleSuffix: VSTS 
+description: Descriptions of functions available from the Power BI Data Connector and the Analytics Service for VSTS
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
-ms.date: 01/17/2017
+ms.author: kaelli
+ms.date: 11/13/2017
 ---
 
 # Functions available in Power BI Data Connector
 
-<b>VSTS</b>
+**VSTS**  
+
+The Data Connector for VSTS contributes functions which can be used by query authors. For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  
+
+We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-The Data Connector for VSTS contributes functions which can be used by query authors.  For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
-
 
 <table>
     <tr>

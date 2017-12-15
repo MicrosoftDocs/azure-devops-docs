@@ -95,13 +95,11 @@ Close the loop by configuring VSTS to update the Zendesk tickets whenever there'
 
    <img alt="Channels/tokens with token access enabled" src="./_img/zendesk/token-access.png" style="border: 1px solid #CCCCCC" />
 
-3. Go to a team project in your VSTS account and open the project adminstration page.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-   <img alt="Administration icon on the team project home page" src="./_img/admin.png" style="border: 1px solid #CCCCCC" />
+	![Team project administration page](./_img/add-service-hook.png)
 
-4. On the service hooks tab, add a service hook.
-
-   <img alt="Team project administration page, service hooks tab, add icon" src="./_img/zendesk/new-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 5. Start configuring Zendesk.
 

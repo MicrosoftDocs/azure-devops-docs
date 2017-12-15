@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 11/14/2017
 ---
 
 **VSTS**
@@ -17,20 +17,33 @@ Partners in the CSP program can purchase [VSTS resources](https://www.visualstud
 their customers including Team Services basic user, Test Manager, Package Management, Private Pipelines, and 
 Hosted Pipelines.
 
+
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-VSTS/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
-0. Log into the [Partner Center](https://partnercenter.microsoft.com).
-0. Choose the customer for whom you are purchasing.
-0. Choose **Service Management**.
-0. Choose **Visual Studio Marketplace**
-0. Make sure that you're in the VSTS tab, and then search for and choose **Team Services Users**.
-0. Choose the **Get** button, and move through the purchase process. Choose the VSTS account that needs more users and 
-choose the Azure subscription to bill for the purchase.  Enter the number of users your customer needs.  Review the 
-order and complete it.
 
-You can purchase extensions the same way by, for example, searching for **Test Manager** after choosing **Visual Studio 
-Marketplace**.
+## Create a VSTS account for your customers
 
- > Note: Customers with existing paid VSTS resources can choose to migrate to a CSP-based Azure subscription by 
+You may need to create a VSTS account for your customers. Follow these steps to create one.
+
+* Log into the [Partner Center](https://partnercenter.microsoft.com).
+* Choose the customer for whom you are creating the VSTS account.
+* Choose **Service Management**.
+* Choose **Microsoft Azure Management Portal**.
+* Choose **+New** and **Search for Team Project**.
+
+![Search for Team Project on the Azure Portal](../_img/csp/azure-marketplace-vsts-csp.png)
+
+* Choose **Team Project (preview)** and select **Create**.
+
+![Create your new VSTS account](../_img/csp/azure-marketplace-vsts-create.png)
+
+* Select the **Account** field and then choose **Create a new account**. Type in the account name and select **OK**.
+
+![Populate your account with your info](../_img/csp/azure-marketplace-vsts-create2.png)
+
+* Fill in the rest of your details and select **Create**.
+
+ > [!NOTE]
+ > Customers with existing paid VSTS resources can choose to migrate to a CSP-based Azure subscription by 
  > [changing the Azure subscription their VSTS account uses for billing](../change-azure-subscription.md).
  

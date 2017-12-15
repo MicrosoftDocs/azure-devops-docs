@@ -48,13 +48,13 @@ TFS 2017 presents web site settings configuration options in all server configur
 site bindings, virtual directories, and public URLs which we recommend and believe will be most commonly used. For scenarios where none of these setting groups are 
 appropriate, settings can be fully customized using the Edit Site Settings dialog.
 
-<img alt="Default setting group" src="./_img/web-site-settings/default-setting-group.png" style="border: 1px solid #CCCCCC" />
+<img alt="Default setting group" src="./_img/web-site-settings/default-setting-group.png" style="border: 1px solid #C3C3C3;" />
 
 The Default setting group includes the same settings used in previous versions of Team Foundation Server. For all of the reasons listed above, these settings are 
 still the default for new TFS deployments. For existing deployments, we will attempt to preserve existing settings, which will often result in the Default setting 
 group being selected.
 
-<img alt="HTTPS and HTTP with redirect setting group" src="./_img/web-site-settings/https-and-http-setting-group.png" style="border: 1px solid #CCCCCC" />
+<img alt="HTTPS and HTTP with redirect setting group" src="./_img/web-site-settings/https-and-http-setting-group.png" style="border: 1px solid #C3C3C3;" />
 
 The HTTPS and HTTP (with redirect) setting group provisions two bindings:
 
@@ -92,7 +92,7 @@ production deployments of Team Foundation Server, and we do not recommend they b
 Generally, self-signed certificates are susceptible to man-in-the-middle attacks. They also cause problems for users, since they will cause certificate warnings 
 and errors until their root certificates are installed on each client machine. For example, the Edge browser will show the below error.
 
-<img alt="Certificate errors in Edge" src="./_img/web-site-settings/edge-certificate-error.png" style="border: 1px solid #CCCCCC" />
+<img alt="Certificate errors in Edge" src="./_img/web-site-settings/edge-certificate-error.png" style="border: 1px solid #C3C3C3;" />
 
 When the TFS configuration wizard generates self-signed certificates for your deployment, it will create two - one that is placed in the Trusted Root Certification 
 Authorities store on the server, and a second, signed by the first, that is placed in the Personal store on the server and used by TFS. Setting things up in this way 

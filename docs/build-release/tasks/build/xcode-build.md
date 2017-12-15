@@ -5,15 +5,15 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.manager: douge
-ms.author: alewis
+ms.author: dastahel
 ms.date: 08/10/2016
 ---
 
 # Build: Xcode Build
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+**[VSTS](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
-![icon](_img/xcode-build.png) Build an Xcode workspace on Mac OS
+![icon](_img/xcode.png) Build an Xcode workspace on macOS
 
 ## Demands
 

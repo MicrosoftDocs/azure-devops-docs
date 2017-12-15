@@ -4,18 +4,18 @@
     "publisherId": "tfs",
     "message": {
         "text": "My First Project Build FabrikamAppsBuild_20131216.1 completed (Status: Successfully Completed)",
-        "html": "My First Project Build <a href=\"https://willsmythe.vsoalm.tfsallin.net/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7\">FabrikamAppsBuild_20131216.1</a> completed (Status: Successfully Completed)",
-        "markdown": "My First Project Build [FabrikamAppsBuild_20131216.1](https://willsmythe.vsoalm.tfsallin.net/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7) completed (Status: Successfully Completed)"
+        "html": "My First Project Build <a href=\"https://fabrikam.visualstudio.com/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7\">FabrikamAppsBuild_20131216.1</a> completed (Status: Successfully Completed)",
+        "markdown": "My First Project Build [FabrikamAppsBuild_20131216.1](https://fabrikam.visualstudio.com/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7) completed (Status: Successfully Completed)"
     },
     "detailedMessage": {
         "text": "My First Project Build FabrikamAppsBuild_20131216.1 completed (Status: Successfully Completed)",
-        "html": "My First Project Build <a href=\"https://willsmythe.vsoalm.tfsallin.net/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7\">FabrikamAppsBuild_20131216.1</a> completed (Status: Successfully Completed)",
-        "markdown": "My First Project Build [FabrikamAppsBuild_20131216.1](https://willsmythe.vsoalm.tfsallin.net/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7) completed (Status: Successfully Completed)"
+        "html": "My First Project Build <a href=\"https://fabrikam.visualstudio.com/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7\">FabrikamAppsBuild_20131216.1</a> completed (Status: Successfully Completed)",
+        "markdown": "My First Project Build [FabrikamAppsBuild_20131216.1](https://fabrikam.visualstudio.com/web/build.aspx?pcguid=095e6561-c80c-40f3-81ed-11db98815141&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f7) completed (Status: Successfully Completed)"
     },
     "resource": {
         "id": 7,
         "name": "FabrikamAppsBuild_20131216.1",
-        "url": "https://willsmythe.vsoalm.tfsallin.net/DefaultCollection/_apis/build/Builds/7"
+        "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/build/Builds/7"
     },
     "createdDate": "2013-12-16T04:33:48.106Z"
 }

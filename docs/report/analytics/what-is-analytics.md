@@ -26,7 +26,7 @@ You can access the Analytics Service through dashboard widgets, OData, and Power
 
 ## Dashboard widgets
 
-In VSTS, you can create [dashboards](../dashboards.md) and [add widgets to them](../add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](../guidance/analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
+In VSTS, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). We provide several [widgets based on the Analytics Service](analytics-widgets-vsts.md). These widgets take advantage of the power of the Analytics Service. 
 
 For example, the Velocity widget shown in the following dashboard image provides insights into a team's historical performance over six iterations. 
 
@@ -34,12 +34,12 @@ For example, the Velocity widget shown in the following dashboard image provides
 
 Here, the Velocity widget shows this team has a history of closing stories late. It  also shows a discrepancy between planned and completed work over all past sprints. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
-Widgets provide the easiest way to get insights from your data. Check out [Enable and use the Analytics Services](../guidance/enable-analytics-velocity.md) for a step-by-step guide to get started with the Velocity Widget.
+Widgets provide the easiest way to get insights from your data. Check out [Enable and use the Analytics Services](enable-analytics-velocity.md) for a step-by-step guide to get started with the Velocity Widget.
 
 If you want to develop your own widget based on the Analytics Service, see [Create an Analytics widget for VSTS](../extend-analytics/example-analytics-widget.md).
 
 ## OData
-The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see[Extend on Analytics](../extend-analytics/index.md)
+The Analytics Service is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/index.md)
 
 ## Power BI
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad-hoc analysis, produce beautiful reports, and publish for enterprise consumption. We have created a Power BI Desktop connector which simplifies pulling data from the Analytics Service.
@@ -48,8 +48,7 @@ From Power BI Desktop, select the connector "Visual Studio Team Services (Beta)"
 
 ![Power BI VSTS Connector Beta](../powerbi/_img/data-connector-get-data.png)
 
-**The VSTS connector is in beta.** The current version has performance issues when dealing with large amounts of data. During the beta phase, we recommend using it for small accounts. The production version will be optimized to work with large amounts of data. 
-We plan to upgrade it to production in the early 2018. 
+**The VSTS connector is in beta.** The current version has performance issues when dealing with large amounts of data. We recommend using it for small accounts. In early 2018, we will be releasing an updated version. That version will be optimized to work with large amounts of data.
 
 For more information on the Beta version of the connector, check out [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
 
@@ -68,12 +67,12 @@ We are working hard to add more types of data, including:
 As more data types come online, we will update this page. Look for annoucements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops).
 
 ## Availability for Team Foundation Server (TFS)
-**The Analytics Service is not yet available for our on-premise product, Team Foundation Server (TFS).** When we have information on when it will be available, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
+**The Analytics Service is not yet available for our on-premises product, Team Foundation Server (TFS).** When we have information on when it will be available, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
 
-For TFS reporting, you may use [Dashboards](../dashboards.md) with a [variety of widgets](../widget-catalog.md) that don't require the Analytics Service. You may also use [SQL Server Reporting](../sql-reports/index.md). 
+For TFS reporting, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require the Analytics Service. You may also use [SQL Server Reporting](../sql-reports/index.md). 
 
 The future of reporting for both VSTS and TFS, however, is the Analytics Service. 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Analytics widgets](../guidance/analytics-widgets-vsts.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json) 
+> [Analytics widgets](analytics-widgets-vsts.md) 

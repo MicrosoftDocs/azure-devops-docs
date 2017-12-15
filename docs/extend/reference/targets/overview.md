@@ -64,15 +64,14 @@ This new hub is rendered under the Code hub group:
 
 Here are the most common, Microsoft-provided hub groups that hubs can be contributed to:  
 
-Name     | ID                                         | Level                           | Preview
----------|--------------------------------------------|---------------------------------|-----------------------------          
-Code     | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
-Work     | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
-Build    | `ms.vss-build-web.build-hub-group`         | Project/team                    | ![build](./vss/build/web/_img/hubs-build.png)
-Release  | `ms.vss-releaseManagement-web.hub-group-rm` | Project/team                   | ![releasehub](./vss/release/web/_img/hubs-release.png)
-Test     | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
-Admin    | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
-Admin    | `ms.vss-web.project-admin-hub-group`       | Project (admin)                 | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
+Name                | ID                                         | Level                           | Preview
+--------------------|--------------------------------------------|---------------------------------|-----------------------------          
+Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
+Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
+Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
+Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
+Admin               | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
+Admin               | `ms.vss-web.project-admin-hub-group`       | Project (admin)                 | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
 
 <a name="menus"></a>
 ## Menus and toolbars

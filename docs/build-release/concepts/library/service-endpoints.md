@@ -55,7 +55,7 @@ VSTS and TFS support a variety of endpoint types by default. Some of these are d
 * [SSH service endpoint](#sep-ssh)
 * [Subversion service endpoint](#sep-subversion)
 * [Team Foundation Server / VSTS service endpoint](#sep-tfsts)
-* [Visual Studio Mobile Center service endpoint](#sep-vsmobile)
+* [Visual Studio Mobile Center (App Center) service endpoint](#sep-vsmobile)
 
 After you enter the parameters when creating a service endpoint, validate the
 connection. The validation link uses a REST call to the external service with
@@ -104,10 +104,12 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
 | Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
-| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client ID of the account. [More information](#sep-azure-rm-existingsp). |
-| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client key of the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-existingsp). |
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
 <p />
+
+See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
 **Restricting access rights**
 
@@ -409,9 +411,9 @@ Use the **Verify connection** link to validate your connection information.
 
 See also [Authenticate access with personal access tokens for VSTS and TFS](../../../accounts/use-personal-access-tokens-to-authenticate.md).
 
-<h3 id="sep-vsmobile">Visual Studio Mobile Center service endpoint</h3>
+<h3 id="sep-vsmobile">Visual Studio Mobile Center (App Center) service endpoint</h3>
 
-Defines and secures a connection to Visual Studio Mobile Center.
+Defines and secures a connection to Visual Studio App Center.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -463,6 +465,9 @@ You can control who can define new service endpoints in a library, and who can u
 | User | Members of this role can use the endpoint when authoring build or release definitions. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
-A special group called **Endpoint administrators** is added to every team project. Members of this group can create new endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every team project. 
+Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Members of the Endpoint creators group can create new endpoints. By default, project contributors are added as members of this group. 
+
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

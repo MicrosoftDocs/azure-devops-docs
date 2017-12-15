@@ -21,10 +21,6 @@ Some of the other key feature highlights include:
 - [New Release Definition Editor](#new-release-definition-editor) - Rich release definition editing preview feature now turned on and generally available.
 - [Streamlined user management](#streamlined-user-management) - Preview feature now turned on and generally available.
 
-> **Note**
->
-> The features discussed in this post will be rolling out over the next three weeks.
-
 ## Work
 
 ### Work Items hub

@@ -18,6 +18,8 @@ ms.date: 09/26/2017
 
 [Go to related topic &gt;](get-started-simple-cloud-load-test.md)
 
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+
 ### Q: How do I learn more about Cloud-based Load Testing?
 
 **A**: Watch this video, or check out the 
@@ -122,9 +124,7 @@ For runs that end in an error state, no virtual user minutes will be deducted fr
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
-To check how many virtual user minutes that your VSTS account 
-has used or has remaining, go to your VSTS account home page 
-(```https://{youraccount}.visualstudio.com```).
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 <a name="iterations"></a>
 ### Q: I'm running load tests using test iterations. How is load test duration determined?

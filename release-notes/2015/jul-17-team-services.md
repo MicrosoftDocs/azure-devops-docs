@@ -12,8 +12,6 @@ author: yukom
 
 #Multiple activities per team member – Jul 17
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Multiple activities per team member
 
 When planning capacity for a sprint, you can now assign multiple activities to a single team member. Just hover over or click on a row, then click the “…” menu to add a new activity. If you have someone who does both development and testing, you can fine tune the capacity to match your team’s skill sets. This has been a [popular request on UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2308935) for quite a while, and we are excited to finally give you this feature. We expect better planned iterations from all of you now!

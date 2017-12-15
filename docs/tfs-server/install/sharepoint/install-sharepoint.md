@@ -90,7 +90,7 @@ Remember that you’ll need a single domain account to act as the TFS Report Rea
 
 ### Run the SharePoint installation
 
-Once the SharePoint Products Perpetration tool finishes, you might have to launch the SharePoint installer again, especially if you had to restart your computer.
+Once the SharePoint Products Preparation tool finishes, you might have to launch the SharePoint installer again, especially if you had to restart your computer.
 
 Remember that you’ll need a single domain account to act as the TFS Report Reader account to complete this section. See “What will I need?” earlier in this topic.
 

@@ -30,7 +30,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 
 	Here we grant permissions to the Contributors group to create repositories. 
 
-	<img src="_img/set-repo-git-permissions.png" alt="Security dialog for all GIt repositories, Contributors group" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/set-repo-git-permissions.png" alt="Security dialog for all GIt repositories, Contributors group" style="border: 1px solid #C3C3C3;" />
 
 4. When done, click Save changes. 
 
@@ -52,7 +52,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 
 	For example, here we change the **Manage branch** permission to allow for all members of the Contributors group. 
 
-	<img src="_img/set-repo-tfvc-permissions.png" alt="Security dialog for the TFVC repository, Contributors group" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/set-repo-tfvc-permissions.png" alt="Security dialog for the TFVC repository, Contributors group" style="border: 1px solid #C3C3C3;" />
 
 3. Save your changes. 
  

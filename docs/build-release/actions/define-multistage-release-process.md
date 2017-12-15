@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ms.custom: mvc
 ---
 
@@ -164,7 +164,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
    You can add as many approvers as you need, both individual accounts and account groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
-   For more information, see [Environments in Release Management](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Approvals and gates overview](../../build-release/concepts/definitions/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 
 1. Save the modified release definition.
 
@@ -257,4 +257,4 @@ running the release in debug mode. For more information, see
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Use approvals and gates to control your deployment](deploy-using-approvals.md)

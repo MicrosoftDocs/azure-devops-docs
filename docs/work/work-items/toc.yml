@@ -28,6 +28,8 @@
     href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Copy/clone work items
     href: ../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Get started as a Stakeholder
+    href: ../../security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Choose a process
@@ -132,7 +134,7 @@
   - name: Query by area or iteration path
     href: ../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
   - name: Query history
-    href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json     
+    href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Work item field index
     href: guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
     items:
@@ -148,6 +150,8 @@
       href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Clients that support work tracking
     href: ../../user-guide/tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Define the hyperlink for a work item
+    href: work-item-url-hyperlink.md
 - name: Resources
   items:
   - name: Kanban

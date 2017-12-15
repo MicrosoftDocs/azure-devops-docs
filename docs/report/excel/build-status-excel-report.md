@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Build Status Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 The Build Status report helps the team track the progress of their builds by showing the number of builds that failed or succeeded for the most recent four weeks.  

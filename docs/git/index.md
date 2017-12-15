@@ -6,7 +6,7 @@ ms.technology: vs-devops-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+ms.date: 09/18/2017
 layout: LandingPage
 ---
 

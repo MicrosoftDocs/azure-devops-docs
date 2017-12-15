@@ -38,7 +38,7 @@ The build agent must have the following capabilities:
 <tr>
 <td>Location of Gradle Wrapper</td>
 <td>
-<p>The location in the repository of the gradlew wrapper used for the build. Note that on Windows build agents (including the hosted pool), you must use the `gradlew.bat` wrapper. Xplat build agents use the `gradlew` shell script.</p>
+<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
 <p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p>
 </td>
 </tr>
@@ -61,7 +61,7 @@ The build agent must have the following capabilities:
 </td>
 <td>
 Name of the AVD to be started or created.
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../concepts/agents/agents.md) to use this option. You cannot use the hosted pool if you want to create an AVD.
+<blockquote><strong>Note: </strong> You must deploy your own [agent](../../concepts/agents/agents.md) to use this option. You cannot use a hosted pool if you want to create an AVD.
 </blockquote>
 </td>
 </tr>
@@ -103,7 +103,7 @@ Name of the AVD to be started or created.
 <td>Start and Stop Android Emulator</td>
 <td>
 <p>Check if you want the emulator to be started and stopped when Android Build task finishes.</p>
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../concepts/agents/agents.md)  to use this option. You cannot use the hosted pool if you want to use an emulator.
+<blockquote><strong>Note: </strong> You must deploy your own [agent](../../concepts/agents/agents.md)  to use this option. You cannot use a hosted pool if you want to use an emulator.
 </blockquote>
 </td>
 </tr>

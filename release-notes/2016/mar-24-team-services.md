@@ -12,8 +12,6 @@ author: yukom
 
 #Improved commit traceability, custom multiline fields, and board/test integration - Mar 24
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 Let’s start by walking through some of the improvements we’ve made in the Code hub…
 
 ##Commit traceability

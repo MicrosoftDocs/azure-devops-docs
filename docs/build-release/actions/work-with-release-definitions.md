@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: A38FB217-B259-4DD1-B5BF-D945278493C2
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # How to: Work with release definitions
@@ -69,9 +69,9 @@ This topic shows you how to:
    ![Setting the pre-deployment options](_img/work-with-release-definitions/set-conditions.png)
 
 1. Open the **Tasks** tab and select the default **Run on agent** item. In the properties
-   panel, under **Agent selection**, check that **Hosted** is selected to use the default 
-   queue and agent available in VSTS. If you want to use a different agent that you have 
-   [previously installed](../concepts/agents/pools-queues.md), such as an on-premises agent in TFS, select the agents queue.
+   panel, under **Agent selection**, check that a hosted agent is selected to use the default 
+   queues and agents available in VSTS. If you want to use a different agent that you have 
+   [previously installed](../concepts/agents/pools-queues.md), such as an on-premises agent in TFS, select that agent's queue.
 
    ![Setting the deployment queue](_img/work-with-release-definitions/check-queue.png)
 
@@ -155,7 +155,7 @@ The cloned environment has the same tasks, task properties, and
 configuration settings as the original.
 
 Select the cloned environment to open the properties panel, and update the
-[pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
+[pre-deployment approver](../concepts/definitions/release/approvals/approvals.md),
 [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
 [queue](../concepts/agents/pools-queues.md) settings for the cloned environment as required.
 
@@ -236,9 +236,9 @@ definition settings, see:
 
 * [Triggers](../concepts/definitions/release/triggers.md)
 
-* [Approvals](../concepts/definitions/release/environments.md#approvals)
-
 * [Variables](../concepts/definitions/release/variables.md)
+
+* [Approvals and gates](../concepts/definitions/release/approvals/index.md)
 
 * [Retention](../concepts/policies/retention.md)
 

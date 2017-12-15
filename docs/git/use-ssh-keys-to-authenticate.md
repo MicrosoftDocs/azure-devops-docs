@@ -16,7 +16,7 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
-> SSH URLs have changed. Old SSH URLs will continue to work through November 17, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> SSH URLs have changed. Old SSH URLs will continue to work through December 1, 2017. If you have already set up SSH, you will need to update your remote URLs:
 > - Visit your repository on the web and select the **Clone** button in the upper right.
 > - Select **SSH** and copy the new SSH URL.
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.

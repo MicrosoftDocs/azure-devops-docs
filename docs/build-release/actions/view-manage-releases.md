@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 5C348EA7-3DC3-42E4-A66D-9A602441CDF3
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # How to: View and manage releases
@@ -22,10 +22,11 @@ and [release logs](debug-deployment-issues.md).
 
 From the Release Management UI you can also
 [restore deleted releases](#restore-release),
-respond to [approval requests](#approve-release),
 [redeploy](#redeploy-release) a release, get [release notifications](#notifications),
 send [status emails](#send-email), and view [release history](#release-history).
 You might also want to add a [releases widget](#add-widget) to your team dashboard.
+
+>See also: [Approvals and gates overview](../concepts/definitions/release/approvals/index.md)
 
 <h2 id="release-list">List of releases</h2>
 
@@ -62,8 +63,7 @@ you were specified as an approver and the release is paused
 waiting for you to approve it. When a release is paused waiting
 for a  different user to grant approval, the list displays the
 ![Waiting for other approver icon](_img/view-manage-releases/approve-other-icon.png) icon.
-See [Approvals](../concepts/definitions/release/environments.md#approvals)
-and [Approve a release](#approve-release) for more information.
+See [Approvals](../concepts/definitions/release/approvals/approvals.md).
 
 Use the commands on the toolbar of the **Releases** pane to:
 
@@ -276,53 +276,6 @@ ran as part of the build and release process.
 For more details about the **Tests** page, see
 [Review continuous test results after a build](../test/review-continuous-test-results-after-build.md)
 
-<h2 id="approve-release">Approve a release</h2>
-
-During a release, the deployment pipeline will stop at any stage that requires approval, and
-will display an alert or indicator to the user. In the **Releases**, **Summary**, and **Logs** pages
-and lists, it displays the ![Waiting for approver icon](_img/view-manage-releases/approve-icon.png)
-icon when the release is waiting for approval by the current user, or the
-![Waiting for different user icon](_img/view-manage-releases/approve-other-icon.png)
- when the release is waiting for approval by a different user.
-
-![A release in the Releases page paused waiting for approval](_img/view-manage-releases/approve-01.png)
-
-Release Management may also send an email message to the approver(s) defined for
-this approval step (this is configurable, see [Approvals](../concepts/definitions/release/environments.md#approvals)).
-The link in the email message sent to approvers opens the **Summary** page for the release.
-The page has a reminder containing an **Approve or Reject** link. This link
-displays the approval dialog.       
-
-![Approving a task step for a release in the Summary page](_img/view-manage-releases/approve-01c.png)
-
-If there is more than one approval waiting for the same user, the reminder will
-contain two links, **All** and **Selected environments**. This saves the user
-from needing to interact with each approval request individually.
-
-Use the approvers pop-up dialog to:
-
-* Enter a comment
-* Approve or reject the release
-* Reassign the approval to somebody else
-* Defer the deployment to a specified date and time
-
-![Defering a deployment to a specified date and time](_img/view-manage-releases/approve-03.png)
-
-An administrator can approve a deployment step even
-if the approval was originally defined for a different user.
-In this case, the approvers pop-up dialog contains an
-**Override** link that enables the administrator, after
-choosing this link, to enter comments, approve,
-reject, reassign, or defer the deployment.
-
-![Over-riding an approval as an administrator](_img/view-manage-releases/approve-04.png)
-
-For details of how to set up approvals and specify the approval policy,
-see [Approvals](../concepts/definitions/release/environments.md#approvals).
-
->You can also approve and reject pending releases by accessing the
-[Release Management REST API](../../integrate/index.md).
-
 <h2 id="redeploy-release">Redeploy a release</h2>
 
 If a release fails or is canceled, you can redeploy it. Or if you
@@ -485,13 +438,19 @@ removal of Christie Church as an approver.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+<a name="approve-release"></a>
+
+### How can I control deployments of my app to each environment?
+
+See: [Approvals and gates overview](../concepts/definitions/release/approvals/index.md)
+
 ### Where can I learn step-by-step how to build and release my app?
 
-[Examples](../apps/index.md)
+See: [Examples](../apps/index.md)
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](../../integrate/index.md)
+See: [Release Management REST API](../../integrate/index.md)
 
 [!INCLUDE [qa-agents](../_shared/qa-agents.md)]
 
