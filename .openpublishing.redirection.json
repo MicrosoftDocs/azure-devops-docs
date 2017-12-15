@@ -4730,6 +4730,11 @@
         "source_path": "docs/report/analytics/widget-extensions-against-analytics-service.md",
         "redirect_url": "/vsts/report/extend-analytics/widget-extensions-against-analytics-service",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/analytics-recipes.md",
+        "redirect_url": "/vsts/report/extend-analytics/analytics-recipes",
+        "redirect_document_id": false
        }
     ]
 }
