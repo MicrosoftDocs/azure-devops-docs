@@ -11,7 +11,7 @@ ms.date: 09/05/2017
 
 # SharePoint Integration  
   
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 ## Overview 

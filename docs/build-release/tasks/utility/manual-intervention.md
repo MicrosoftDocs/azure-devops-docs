@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Utility: Manual intervention
@@ -50,7 +50,7 @@ a message bar containing  a link that opens the Manual Intervention dialog conta
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
 Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
 
-For more information about using this task, see [Release approvals and gates](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
 

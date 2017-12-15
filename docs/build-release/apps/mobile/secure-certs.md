@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 When developing an app for iOS or Android either natively or using a cross-platform solution like Cordova you will eventually need to tackle the problem of managing signing certificates and (in the case of iOS) [Mobile Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article will highlight some features to help you manage and secure them for your app.
 
-> **Troubleshooting Tip**: When building on a Mac (Xcode native, Cordova iOS, Xamarin iOS) you should either setup the cross-platform agent as a launch agent (./svc.sh install agent) or run it as an interactive process (node agent/vsoagent.js).
+> **Troubleshooting Tip**: When building on a Mac (Xcode native, Cordova iOS, Xamarin iOS) you should either setup the agent as a launch agent (./svc.sh install agent) or run it as an interactive process (node agent/vsoagent.js).
 
 This article currently covers:
 
@@ -143,11 +143,11 @@ Follow these steps:
     - **Provisioning Profile UUID**: UUID of the provisioning profile from the filename above
 
 
-0. Next, if you are running the cross-platform agent as a launch agent, you will need to set up the build to unlock the default keychain.
+0. Next, if you are running the agent as a launch agent, you will need to set up the build to unlock the default keychain.
 
   1. Go to the **Variables** tab and enter the following:
 
-     - **KEYCHAIN_PWD**: Password to your default keychain. This is normally the password for the user that is starting the cross-platform agent. *Be sure to click the "lock" icon.*
+     - **KEYCHAIN_PWD**: Password to your default keychain. This is normally the password for the user that is starting the agent. *Be sure to click the "lock" icon.*
 
 
   2. Update the Xcode Build step to unlock the keychain entering the following values under the **Signing & Provisioning** category for the Xcode Build task or the **iOS** category in the Cordova Build task:

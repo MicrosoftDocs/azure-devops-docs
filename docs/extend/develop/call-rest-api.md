@@ -13,6 +13,12 @@ ms.date: 08/04/2016
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
 
+## Client services
+
+You can find the [full list of available REST clients and their references here](https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/rest-clients).
+
+## Call an API
+
 [!INCLUDE [REST](../_shared/procedures/call-rest-api-js.md)]
 
 ## Try this next

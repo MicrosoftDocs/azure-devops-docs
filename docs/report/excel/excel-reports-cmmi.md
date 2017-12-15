@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Excel reports (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can use the Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [CMMI process template](../../work/work-items/guidance/cmmi-process.md).  
   

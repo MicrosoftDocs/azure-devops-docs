@@ -1,17 +1,17 @@
 ---
-title: Approvals and gates in VSTS and TFS
-description: Understand release approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Approvals and gates overview in VSTS and TFS
+description: Understand deployment approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
-# Approvals and gates
+# Approvals and gates overview
 
-**VSTS**
+[!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
 A release definition specifies the end-to-end release process for an app to be deployed across a range of environments.
 Deployments to each environment are fully automated by using 
@@ -20,10 +20,10 @@ Deployments to each environment are fully automated by using
 **Approvals** and **gates** give you additional control over the start and completion of the deployment process.
 Each environment in a release definition can be configured with pre-deployment and post-deployment conditions
 that can include waiting for users to manually approve or reject deployments, and checking with other automated
-systems until specific conditions are verified. 
-
-In addition, you can configure a **Manual Intervention** task to pause the
+systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
 deployment process and prompt users to carry out manual tasks, then resume or reject the deployment.
+
+>At present, gates are available only in Visual Studio Team Services.
 
 The following diagram shows how these features are combined in an environment of a release definition.
 
@@ -52,6 +52,7 @@ You can, of course, combine all three techniques within a release definition to 
 * [Manual intervention](../../../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
+* [Release definitions and releases](../../../releases/index.md)
 
 ## See also
 

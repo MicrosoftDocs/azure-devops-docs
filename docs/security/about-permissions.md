@@ -7,7 +7,7 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+ms.date: 11/28/2017
 ---
 
 # About permissions and groups 
@@ -62,19 +62,19 @@ To understand why a permission is inherited, you can pause over the permission s
 
 ###VSTS, TFS 2017 
 
-<img src="_img/about-permissions-why.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/about-permissions-why.png" style="border: 1px solid #C3C3C3;" />
 
 A new window opens that shows the inheritance information for that permission.  
 
-<img src="_img/about-permissions-trace.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
 
 ### TFS 2015, TFS 2013 
-<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
 Use this option to disable inheritance for folders, shared queries, and other objects.
 
-<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #C3C3C3;" />
 
 **When assigning permissions**
  
@@ -94,13 +94,11 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 <a id="grant-permissions"  >  </a>  
 ## Permissions versus access levels 
 
- > [!NOTE] 
- > Permissions are different than access levels.
- > Access levels control what features are visible to users in the web portal,
- > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
- > If you're just trying to give someone access to a team room or to Agile portfolio management
- > and test case management features,
- > you'll want to [change access levels](change-access-levels.md), not permissions.
+Permissions are different than access levels. Access levels control what features are 
+visible to users in the web portal, and are dependent on user licenses; permissions control a user's  ability to use features across TFS. 
+If you're just trying to give someone access to a team room or to Agile portfolio management 
+and test case management features, 
+you'll want to [change access levels](change-access-levels.md), not permissions.
 
 Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project or a team](add-users-team-project.md).
 
@@ -112,7 +110,7 @@ create a group in Windows, Active Directory, or Azure Active Directory,
 add these groups to TFS groups or VSTS groups,
 and add the same groups to grant access to additional resources.
 
-<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Of course, you don't need to grant permissions for reports or the project portal
 if your team project doesn't use SQL Server Reporting Services or a SharePoint site.

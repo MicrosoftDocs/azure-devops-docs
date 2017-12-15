@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.author: mlearned
-ms.date: 10/04/2017
+ms.date: 11/21/2017
 ---
 
 
@@ -363,6 +363,15 @@ We want you to have confidence that your data is being handled
 appropriately and for legitimate uses. Part of that assurance involves
 appropriately restricting usage so that your data is used only for
 legitimate reasons.
+
+### The General Data Protection Regulation (GDPR)
+
+The General Data Protection Regulation (GDPR) is the biggest change in data protection laws 
+in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. 
+The GDPR’s main objective is to strengthen the protection and security of your personal data and 
+will replace the Directive and all local laws relating to it. VSTS is committed to achieving compliance 
+with the GDPR when enforcement begins on May 25, 2018 and is mindful of your own compliance efforts and duties. 
+To learn more about this new regulation, please visit the following page in [Microsoft’s Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 ### Data residency and sovereignty

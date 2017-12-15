@@ -100,9 +100,9 @@ Once a preview version matures enough for release it will be made available with
 ### 3 - Deprecated
 Deprecated versions are no longer supported, and requests made to them will not be fulfilled. If you attempt to request a deprecated or unsupported version you will receive an HTTP 410 response code and a message like:
 
-```
-The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818
-```
+
+> *The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818*
+
 
 
 ## Preview versions

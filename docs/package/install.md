@@ -36,6 +36,30 @@ Once the install is completed, select **Proceed to the account**. Then, go to an
 
 ![Install dialog](_img/package-hub.png)
 
+<a name="symbol-server"></a>
+
+## Enable Symbol Server in VSTS
+
+Once you've installed Package Management using the instructions in the previous section, you can enable the Symbol Server preview from the preview features panel.
+
+1. Select your profile picture in the top-right
+2. Select **Preview features**
+3. In the dropdown, select **for this account [account-name]**
+4. Toggle the **Symbol server** toggle to **On**
+5. Close the panel
+
+<a name="nuget-org-upstream-source"></a>
+
+## Enable the NuGet.org upstream source in VSTS
+
+Once you've installed Package Management using the instructions in the first section, you can enable theNuGet.org upstream source preview from the preview features panel.
+
+1. Select your profile picture in the top-right
+2. Select **Preview features**
+3. In the dropdown, select **for this account [account-name]**
+4. Toggle the **NuGet.org upstream sources** toggle to **On**
+5. Close the panel
+
 ## Install Package Management in TFS
 
 Package Management is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Package Management.

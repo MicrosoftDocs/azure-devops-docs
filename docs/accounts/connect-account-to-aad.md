@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 12/11/2017
 ---
 
 #	Connect VSTS account to Azure Active Directory (Azure AD)
@@ -24,17 +24,11 @@ your team's critical resources and key assets.
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
-
-
 <a name="ConnectDirectory"></a>
 ##  Connect your VSTS account to your directory
 
-0.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
+0.  [Sign in to the Azure portal](https://portal.azure.com/) 
 with your personal Microsoft account as the VSTS account owner.
-
-	> [!NOTE]
-	> You can connect your VSTS account 
-	> and your directory only through the Azure classic portal.
 
 	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
@@ -42,43 +36,27 @@ with your personal Microsoft account as the VSTS account owner.
 [link your VSTS account](../billing/set-up-billing-for-your-account-vs.md) 
 to the Azure subscription associated with your directory.
 
-  Why don't I see a directory when I link my account?  **Directory** shows a directory only when the selected 
-  VSTS account is already connected to that directory.  You'll actually connect your account to a directory 
-  elsewhere and later in Azure.
+0.	Browse to your VSTS account by selecting **All services**, typing **Team Services** into the **Filter** box, and choosing **Team Services accounts**. If you have recently browsed to **Team Services accounts** you can select it from the recently accessed services on the left.
 
-  ![No connected directory](_img/_shared/no-directory.png)
+    ![Azure Portal, Team Services accounts](_img/manage-work-access/browse-to-team-services.png)
 
-  [What if my account is already linked to an Azure subscription?](faq-azure-access.md#subscription-linked-already)
+0. Select your account.
 
-  **Important** Want to use your Azure subscription to bill VSTS purchases?  You can use your linked Azure 
-  subscription to bill purchases for your VSTS account, but if your subscription has a 
-	[spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/), you must first remove this 
-	spending limit **indefinitely**. Learn [how and why you must remove this spending limit](faq-azure-access.md#remove-spending-limit).
+    ![Azure portal, VSTS, select your account](_img/manage-work-access/select-team-services-account.png)
 
-0.	Go to **VSTS**. 
-Select your VSTS account.
-
-    ![Azure portal, VSTS, select your account](_img/manage-work-access/azurevso_unconnected.png)
-
-0.	Choose **Configure** > **Connect**.
+0.	Choose **Connect**.
 
     ![Configure your account](_img/manage-work-access/azureconfigurevso.png)
 
+0. Choose **Yes** to confirm.
+
     ![Connect your account](_img/manage-work-access/azureconnectdirectory1.png)
 
-0.	From the list of directories associated with the Azure subscription 
-that's linked to your VSTS account, 
-select the directory that you want to connect. 
-Save your changes when you're done.
-
-	![Select your directory](_img/manage-work-access/azureconnectdirectory2.png)
-
-	*	[Why don't I see the directory that I want?](faq-azure-access.md#why-not-my-directory)
-	*	[My account's already connected to a directory. What do I do?](faq-azure-access.md#AlreadyConnected)
+0.	Your account is now connected to your organization's directory.
 
 	![Account is now connected to your directory](_img/manage-work-access/azureconnectdirectory3.png)
 
-	Your account is now connected to your organization's directory.
+
 
 0.	To check that users can access your VSTS account, 
 invite a user from your directory to your VSTS account 
@@ -102,5 +80,8 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 *   [Manage users and access](add-account-users-assign-access-levels.md)
 *   [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
+
+
+
 
 

@@ -1,5 +1,6 @@
 ---
-title: Kanban quickstart | VSTS & TFS
+title: Kanban quickstart 
+titleSuffix: VSTS & TFS
 description: Plan and track your work using the Kanban board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.topic: get-started-article
 ms.technology: vs-devops-wit
@@ -7,7 +8,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 12/11/2017
 ---
 
 # Get started using your Kanban board
@@ -18,23 +19,33 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
+
+## Prerequisites 
+
+- You must have a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md).  
+- To contribute to the Kanban board, you must be a member of the Contributors group. If you don't have access to the team project, ask the [account owner or project administrator](../../security/add-users-team-project.md) to add you.
+- To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions.  
+
+
 ## Open your Kanban board from the web portal
 
-You access your Kanban board from the from the **Work** hub, **Backlogs** page. You then click **Board**. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
+0. To view your Kanban board, click **Work>Backlogs**, and then click **Board**. 
 
-<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #C3C3C3;" />   
+	<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />   
 
-The URL follows this pattern:  
-- **VSTS**: ```https://<account-name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
-- **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
-  
-If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
+	The web browser URL follows this pattern:  
+	- **VSTS**: ```https://{account name}.visualstudio.com/DefaultCollection/{project name}/_backlogs\board```  
+	- **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs\board```  
 
-To contribute to the Kanban board, you must be a member of the Contributors group. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions.  
+	You can use this URL to quickly open the team project, substituting the {account name} and {project name} with your specific account and project name (remove braces). 
 
-If you don't have access to the team project, ask the account owner or project administrator to add you.  
+0. If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![elipses](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **Backlogs**, and then **Board**. 
 
- 
+	![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png) 
+
+0. If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
+
+
 <!---
 ### TFS 2015, TFS 2013
 
@@ -53,12 +64,19 @@ To view your Kanban board, click the **Board** link from the **Work>Backlogs** p
 -->
 
 
+[!INCLUDE [temp](../_shared/image-differences.md)] 
+
+
 <a id="add-work-items"> </a>
 ## Add work items 
 
-To add a work item, simply click the ![plus icon](../_img/icons/add_icon.png) and enter a title for the item. 
+0. To add a work item, simply click the plus sign (![plus icon](../_img/icons/add_icon.png)) and enter a title for the item, and then press Enter on your keyboard. 
 
-<img src="_img/kanban-qs-add-new-item.png" alt="Kanban board, Agile template, add a work item" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/kanban-qs-add-new-item.png" alt="Kanban board, Agile template, add a work item" style="border: 1px solid #C3C3C3;" />  
+
+	The system automatically saves the work item with the title you entered. You can add as many work items you want using this method. 
+
+0. To add details to any work item, click the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by clicking the Assigned To field.   
 
 <a id="update-status">  </a>
 ## Update the status of work items via drag-and-drop
@@ -79,11 +97,11 @@ If the field you want to update isn't showing, then [customize the card to show 
 
 ## Invite others to work on your Kanban board 
 
-All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, email them the URL of your Kanban board. 
+All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, copy the URL of your Kanban board and email it to those you want to invite to your project. 
 
-To add users to your team project, see these topics:   
--  **VSTS**: [Add and manage users](../../accounts/add-account-users-assign-access-levels.md)   
--  **On-premises TFS**: [Add users to a team project](../../security/add-users-team-project.md)   
+<img src="_img/kanban-basics-url.png" alt="Browser URL for the Kanban board" style="border: 1px solid #C3C3C3;" /> 
+
+To add users to your team project, see [Add users to a team project](../../security/add-users-team-project.md)   
 
 
 ## Try this next 
@@ -92,7 +110,6 @@ To get the full power of the Kanban board working for you, you'll want to config
 
 > [!div class="nextstepaction"]
 > [Kanban basics](kanban-basics.md)  
-
 
 If you're new to VSTS or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
@@ -111,15 +128,6 @@ Here are some useful tips when working with the Kanban board:
 - Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../customize/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
-
-
-
-## Related notes 
- 
->[!NOTE]  
-><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
-
-Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 
 -->
 

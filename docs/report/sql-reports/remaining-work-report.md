@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 
 # Remaining Work Report
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After the team has estimated its tasks and begun work, you can use the Remaining Work report to track the team's progress and identify any problems in the flow of work.  
   
@@ -67,7 +67,7 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 -   Specify and update the **HoursCompleted** and **HoursRemaining** fields for each task or subtask as the team makes progress on each work item.  
   
     > [!IMPORTANT]
-    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](../../report/address-inaccuracies-published-for-summary-values.md).  
+    >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task, story, and bug as it progresses from active to closed.  
   

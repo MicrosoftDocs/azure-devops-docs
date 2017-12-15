@@ -1,5 +1,6 @@
 ---
-title: Dashboards, charts, & widgets for VSTS & TFS  
+title: Dashboards, charts, & widgets
+titleSuffix: VSTS & TFS  
 description: Review of the OOB charts, widgets, dashboards, & reports available to monitor status and trends in VSTS & Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: vs-devops-alm
@@ -7,12 +8,12 @@ ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 8/22/2017
+ms.date: 11/16/2017
 ---
 
 # Dashboards, charts, & widgets    
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
@@ -28,7 +29,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 **Sample chart widgets**  
 
-![Lead time widget](../guidance/_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](../guidance/_img/cfd-exampe-rolling-30-days.png)   
+![Lead time widget](_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](_img/cfd-exampe-rolling-30-days.png)   
 
 **Sequence for adding and customizing a dashboard**
 
@@ -88,9 +89,9 @@ And, just like work item query-based charts, you can add these charts to a dashb
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
 
-- [Cumulative flow](../guidance/cumulative-flow.md)
-- [Team velocity](../guidance/team-velocity.md)
-- - [Sprint burndown chart](../../work/scrum/sprint-burndown.md)  
+- [Cumulative flow](cumulative-flow.md)
+- [Team velocity](team-velocity.md)
+- [Sprint burndown chart](../../work/scrum/sprint-burndown.md)  
 
 
 ## Sprint charts     
@@ -105,6 +106,15 @@ Each sprint provides access to two charts. The first [tracks capacity](../../wor
 **Sprint chart widgets**  
 
  ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
+
+
+
+
+## Widgets and the Analytics Service (VSTS) 
+The Analytics Service is available for VSTS accounts. To learn more, see these topics: 
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
+- [What is the Analytics Service?](../analytics/what-is-analytics.md)
 
 
 

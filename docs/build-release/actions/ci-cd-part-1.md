@@ -296,7 +296,8 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
 ![release script step final log](_img/ci-cd/part-1/release-script-step-final-log.png)
 
-> In many cases, you probably would want to edit the release process so that the production deployment happens only after some testing and approvals are in place. See [Environments in Release Management](../concepts/definitions/release/environments.md).
+> In many cases, you probably would want to edit the release process so that the production deployment happens
+  only after some testing and approvals are in place. See [Approvals and gates overview](../concepts/definitions/release/approvals/index.md).
 
 ## Put CI/CD to work for you
 
@@ -405,7 +406,7 @@ When you manually queue a build, you can, for a single run of the build:
 
  - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
 
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../concepts/agents/hosted.md) or a [private windows agent](../actions/agents/v2-windows.md). You cannot use it with a cross-platform agent.)
+ - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](../concepts/agents/hosted.md) or a [private agent](../concepts/agents/agents.md).)
 
 ### Where can I learn more about build definition settings?
 

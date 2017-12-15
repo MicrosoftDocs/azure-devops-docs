@@ -12,8 +12,6 @@ author: yukom
 
 #Add fields to cards, board filtering – Apr 27
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Adding fields to cards
 
 Continuing with our work to give you more card and board flexibility, this sprint we turned on the ability to add additional fields to cards on the Kanban board. Fields like title and assigned to are generally wanted on every card, but it’s often nice to bring a bit more information to cards so you can take action on them without having to open them for more details. Notice in the picture below that the Bug cards have both the Severity and Priority fields added.

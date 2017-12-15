@@ -48,7 +48,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 2.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
-	**VSTS, New queries experience:**  	
+	**VSTS, TFS 2018 - New queries experience:**  	
 
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 
@@ -176,7 +176,7 @@ See also:
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md)
+- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 

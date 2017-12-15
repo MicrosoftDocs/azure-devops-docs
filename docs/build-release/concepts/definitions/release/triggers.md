@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Triggers in Release Management
@@ -106,7 +106,7 @@ deployment to both the **QA** and **Pre-prod** environments.
 ![Configuring a parallel (forked and joined) deployment pipeline](_img/trigger-03.png)
 
 In combination with the ability to define
-[pre- and post-deployment approvals](environments.md#approvals),
+[pre- and post-deployment approvals](approvals/approvals.md),
 this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  

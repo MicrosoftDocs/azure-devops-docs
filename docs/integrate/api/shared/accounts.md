@@ -23,7 +23,7 @@ GET https://app.vssps.visualstudio.com/_apis/Accounts?[memberId={GUID}][&ownerId
 | Parameter | Type   | Notes 
 |:----------|:-------|:--------------------------
 | Query
-| api-version | string | [Version](../../get-started/rest/basics.md#versions) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | memberId    | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
 | ownerId     | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
 

@@ -6,7 +6,7 @@ ms.technology: collaborate
 ms.assetid: 
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: kaelli
+ms.author: elbatk
 ms.date: 09/01/2017
 ---
 

@@ -1103,7 +1103,7 @@ build-release\tasks\build\_img
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
 <p>![](../build-release/tasks/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/tasks/build/visual-studio-build.md)</p>
 <p>![](../build-release/tasks/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/tasks/build/xamarin-android.md) </p>
-<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](../build-release/tasks/build/xamarin-ios.md) </p>
+<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on macOS](../build-release/tasks/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
@@ -1186,7 +1186,7 @@ build-release\tasks\build\_img
 <p>Deploy [any type of application across multiple platforms](../build-release/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/approvals/index.md) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
 <p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](../build-release/actions/view-manage-releases.md#send-email). </p>

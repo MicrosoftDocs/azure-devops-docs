@@ -26,9 +26,6 @@ Some of the other key feature highlights include:
 * [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
 * [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next three weeks.
-
 ## Code
 
 ### Updated experience for code and work items search

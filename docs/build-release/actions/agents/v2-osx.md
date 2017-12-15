@@ -1,5 +1,5 @@
 ---
-title: Deploy an agent on OSX
+title: Deploy an agent on macOS
 description: Deploy a macOS agent to build and deploy your iOS application.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -13,6 +13,10 @@ ms.date: 08/26/2016
 **VSTS | TFS 2017 | TFS 2015**
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
+
+> Before you begin:
+> * If your build and release definitions are in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
@@ -263,7 +267,7 @@ For example:
 
 We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a launchd LaunchAgent service. But you can use whatever kind of service mechanism you prefer.
 
-You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Mac Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 
@@ -279,13 +283,15 @@ You can use the template described above as to facilitate generating other kinds
 
 ### Where can I learn more about how the launchd service works?
 
-[Mac Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 [launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-[!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
+### How do I run the agent behind a web proxy?
+
+[Run the agent behind a web proxy](proxy.md)
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 

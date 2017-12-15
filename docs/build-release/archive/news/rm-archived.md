@@ -237,8 +237,8 @@ See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tas
 **Azure CLI task**
 
 The new Azure CLI task supports running Azure CLI
-commands on cross-platform agents such as Windows, Linux
-and Mac. The task supports both Classic and ARM subscriptions.
+commands on cross-platform agents such as Linux, macOS,
+and Windows. The task supports both Classic and ARM subscriptions.
 It also supports two modes of providing the script:
 as a linked artifact or as an inline script.
 
@@ -1086,7 +1086,7 @@ We added approval options that enable you to configure
 multiple approvers for an environment, and control
 whether these approvers can approve in parallel or in
 a specified order.
-See [Approvals and approvers](../../concepts/definitions/release/environments.md#approvals).
+See [Approvals and approvers](../../concepts/definitions/release/approvals/approvals.md).
 
 ![Configuring approval policies](_img/rm-archived/release-notes-06.png)
 

@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Manage team project collections in Team Foundation Server
 
-**TFS 2015** | **TFS 2013**
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 When your Team Foundation Server (TFS) hosts multiple team projects, you
 can manage them more efficiently by grouping them together and assigning

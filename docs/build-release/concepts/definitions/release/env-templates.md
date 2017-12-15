@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Environment templates in Release Management
@@ -48,10 +48,16 @@ Then you can re-create the template for use in that location.
 
 ### Can I publish or consume new templates through extensions in VS Marketplace?
 
-No.
+Yes. See [Adding release management environment templates to your VSS extension](https://blogs.msdn.microsoft.com/divman/2017/05/30/adding-release-management-environment-templates-to-your-vss-extension/) for more details.
+
+### How do I delete a custom environment template?
+
+You can delete an existing custom template from the list of templates that is displayed when you add a new environment to our definition. 
+
+![Delete custom template](_img/delete-custom-template.png)
 
 ### How do I update a custom environment template?
 
-To update an environment template, save the environment in a release definition as a template with the same name. This overwrites the original template.
+To update an environment template, delete the existing template in a release definition and then save the environment as a template with the same name. 
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

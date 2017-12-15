@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 11/14/2017
 ---
 
 # Release definitions in Release Management
@@ -20,7 +20,7 @@ You start using Release Management by authoring a release definition for your ap
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build process. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
 
-You define the **release process** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](environments.md#approvals). You define the automation in each environment using [phases](../../process/phases.md) and [tasks](../../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release process** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [phases](../../process/phases.md) and [tasks](../../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release process that can be modeled through a release definition in shown below:
 

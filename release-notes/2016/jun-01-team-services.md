@@ -14,8 +14,6 @@ author: yukom
 
 With this release we’re introducing new agile features as well as enhancements to dashboards, coding, package management, test, and build and release management.
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Agile
 
 ###Filtering in Kanban board
@@ -41,7 +39,7 @@ When you create a new work item from the Queries tab or from the New Work Item d
 
 ###SSH clients can connect to Git repos
 
-Team Services Git repos now support SSH connections. This makes it easy for many development tools, build systems, and other services to connect, especially if you develop on Mac or Linux. You can get the SSH clone URL for your repo from the Clone button on the web, and also manage SSH keys on your profile page.
+Team Services Git repos now support SSH connections. This makes it easy for many development tools, build systems, and other services to connect, especially if you develop on macOS or Linux. You can get the SSH clone URL for your repo from the Clone button on the web, and also manage SSH keys on your profile page.
 
 ![Managing SSH connections to Git repos](_img/6_01_02.png)
 

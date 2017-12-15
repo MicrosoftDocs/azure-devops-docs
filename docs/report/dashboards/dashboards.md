@@ -7,21 +7,22 @@ ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/07/2017
+ms.date: 11/15/2017
 ---
 
 # Add and manage dashboards
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3</b>
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.4</b>
+
+Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
+
+The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
 
 > [!NOTE]   
 > **Feature availability:** Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from Visual Studio Team Services (VSTS) and from the web portal for TFS 2015.1 or later version. 
 >
 > If you connect to an on-premises TFS running TFS 2015 or earlier version, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
 
-Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
-
-The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
 
 Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 

@@ -23,7 +23,7 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 
-[!INCLUDE [](../_shared/nuget-consume-endpoint.md)]
+[!INCLUDE [](../_shared/nuget/nuget-consume-endpoint.md)]
 
 Then, run the following command (replacing {values} where applicable):
 
