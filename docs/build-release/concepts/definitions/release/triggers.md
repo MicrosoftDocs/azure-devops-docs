@@ -52,7 +52,8 @@ when a release is created by a continuous deployment trigger, based on:
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
-* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition.
+* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition,
+  and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
