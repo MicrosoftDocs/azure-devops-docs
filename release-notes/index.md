@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -104,7 +104,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="17">[11 Dec 2017](2017/dec-11-vsts.md)</td>
+            <td rowspan="19">[11 Dec 2017](2017/dec-11-vsts.md)</td>
             <td>Track code pushes to a Git repo to builds and releases</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -114,6 +114,8 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Enhancements to multi-phase builds</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Hide empty contributed sections in build results page</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Skip scheduled builds if nothing has changed in the repo</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Run UI tests and install software on Hosted VS2017 agents</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>ASP.NET Core 2.0 agents</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Release trigger for a Package Management artifact</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Default artifact versions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Release triggers branch enhancements</td><td style="background:rgb(232, 232, 232);">Future</td></tr>

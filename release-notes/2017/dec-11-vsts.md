@@ -2,7 +2,7 @@
 title: Identify flaky tests and improved extension install experience – VSTS Sprint 127 Update
 author: alexcnichols
 ms.author: alexn
-ms.date: 12/11/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -82,6 +82,14 @@ For an example, see how the **supportsTasks** property is used in this [sample e
 ### Skip scheduled builds if nothing has changed in the repo
 
 By [popular request on UserVoice](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9378558-tfbuild-2015-run-sheduled-build-only-when-source), you can now specify that a scheduled build not run when nothing has changed in your code. You can control this behavior using an option on the schedule. By default, we will not schedule a new build if your last scheduled build (from the same schedule) has passed and no further changes have been checked in to your repo.
+
+### Run UI tests and install software on Hosted VS2017 agents
+
+If you’re using the **Hosted VS2017** queue, your build definition and its tasks now run as administrator, in interactive mode. This means you can now use this hosted pool to run UI tests and install whatever software you need.
+
+### ASP.NET Core 2.0 agents
+
+Agents of version 125 or newer are based on ASP.NET Core 2.0. Previously you could install a private agent only on Ubuntu and Red Hat/CentOS machines. Now you can also run your builds and releases on Oracle Linux 7, Fedora, Debian, and other distributions. See [Linux System Prerequisites]( https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md) for more information. 
 
 ### Release trigger for a Package Management artifact
 
