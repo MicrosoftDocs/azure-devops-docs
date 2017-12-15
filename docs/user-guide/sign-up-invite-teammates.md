@@ -11,6 +11,7 @@ ms.date: 07/14/2017
 ---
 
 # Sign up for a free VSTS account and invite others to join your team  
+
 **VSTS**
  
 Sign up for a VSTS 
@@ -108,7 +109,7 @@ You provide others access to your account by adding their email address.
  
 	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
-	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.
+	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
 		> [!NOTE]   
 		> You must add email addresses for 
 		> ["personal" Microsoft accounts](https://www.microsoft.com/account) 
