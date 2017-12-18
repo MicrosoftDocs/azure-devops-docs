@@ -18,6 +18,9 @@ For anyone to access a team project, they must be added to one of the default se
 
 The easiest way to add a number of users to a team project is to add groups defined in [Azure Active Directory (AAD) for VSTS](../accounts/access-with-azure-ad.md) or [Active Directory (AD) for on-premises TFS](../tfs-server/admin/setup-ad-groups.md). 
 
+> [!IMPORTANT]  
+> If your adding users to a VSTS account and you don't use AAD, then you need to [add their "personal" Microsoft accounts to your account or team project](../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one team project, you can add them to additional team projects using the procedures provided in this topic.   
+
 Once users have been added to a team project, you can browse for that name by display name as well as account name. Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../work/scale/multiple-teams.md).
 
 <a name="add-users-team-project"></a>

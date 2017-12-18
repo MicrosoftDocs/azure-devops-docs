@@ -1,5 +1,6 @@
 ---
-title: How to change access levels for a user or group in TFS 
+title: How to change access levels for a user or group 
+titleSuffix: TFS 
 description: Provide access to web portal users based on their license for stakeholder, basic, advanced, or VS Enterprise via Team Foundation Server
 ms.technology: vs-devops-admin
 ms.prod: vs-devops-alm
@@ -17,7 +18,7 @@ ms.date: 11/28/2017
 > [!IMPORTANT]  
 > This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs).
 
-To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
+To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
 
 For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
