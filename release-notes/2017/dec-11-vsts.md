@@ -85,7 +85,7 @@ By [popular request on UserVoice](http://visualstudio.uservoice.com/forums/33051
 
 ### Run UI tests and install software on Hosted VS2017 agents
 
-If you’re using the **Hosted VS2017** queue, your build definition and its tasks now run as administrator, in interactive mode. This means you can now use this hosted pool to run UI tests and install whatever software you need.
+If you’re using the **Hosted VS2017** queue, your build and release tasks now run as administrator, in interactive mode. This means you can now use this hosted pool to run UI tests and install whatever software you need.
 
 ### ASP.NET Core 2.0 agents
 
