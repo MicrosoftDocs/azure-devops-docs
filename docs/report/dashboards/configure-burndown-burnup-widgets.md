@@ -248,6 +248,10 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)
 
 
+## Try this next
+ 
+> [!div class="nextstepaction"]
+> [Burndown guidance](burndown-guidance.md) 
 
 ## Related notes 
 
