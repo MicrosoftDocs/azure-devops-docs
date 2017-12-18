@@ -528,7 +528,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
-<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/guidance/cumulative-flow.md).  </p>
+<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md).  </p>
 </td>
 
 
@@ -649,7 +649,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Velocity & forecasting</b></p>
-<p>Use [velocity charts](../report/guidance/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
+<p>Use [velocity charts](../report/dashboards/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
 ![Team velocity chart](_img/features/alm-feature-team-velocity-chart.png)  
 <br/>
 
@@ -1369,7 +1369,7 @@ build-release\tasks\build\_img
 <p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
-<p>[Team velocity](../report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
+<p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
 ![Team velocity chart](_img/features/alm-feature-team-velocity-chart.png)  
 
 <br/>
@@ -1407,7 +1407,7 @@ build-release\tasks\build\_img
 <p>Configure the layout to your specifications by [dragging tiles into the sequence you want](../report/dashboards/dashboards.md). </p>
 
 <p><b>Cumulative flow diagrams</b></p>
-<p>Track the progress of work on your backlogs [through the CFD charts](../report/guidance/cumulative-flow.md).  </p>
+<p>Track the progress of work on your backlogs [through the CFD charts](../report/dashboards/cumulative-flow.md).  </p>
 
 <p><b>Power BI dashboards (VSTS)</b></p>
 <p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
@@ -1637,7 +1637,7 @@ build-release\tasks\build\_img
 
 <!---
 <p><b>Cumulative flow diagram (VSTS)  </b></p>
-<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/guidance/cumulative-flow.md).
+<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/dashboards/cumulative-flow.md).
 </p>
 -->
 

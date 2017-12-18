@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/18/2016
+ms.date: 12/13/2017
 ---
 
 # Build variables
@@ -784,6 +784,24 @@ You can pass environment variables of the build machine into build steps. For ex
             <td>
                 <p style="font-size:80%">
                     The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
+                </p>
+            </td>
+        </tr>        <tr>
+            <td>
+                <p style="font-size:80%">
+                    System.PullRequest.SourceRepositoryURI
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <blockquote style="font-size:80%">
+                    **VSTS Only**
+                </blockquote>
+                <p style="font-size:80%">
+                    The URL to the repo that contains the pull request. For example: `https://ouraccount.visualstudio.com/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build). It is not initialized for GitHub PRs.)
                 </p>
             </td>
         </tr>

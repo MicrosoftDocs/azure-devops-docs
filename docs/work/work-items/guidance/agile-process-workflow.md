@@ -78,7 +78,7 @@ Use the following guidance and that provided for [fields used in common across w
 </td></tr>
 <tr>
 	<td width="20%"><p>[Story Points](../../track/query-numeric.md)</p></td>
-	<td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile [velocity charts](../../../report/guidance/team-velocity.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
+	<td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
 <tr>
 	<td><p>[Priority](../../track/planning-ranking-priorities.md)</p>
 </td>
