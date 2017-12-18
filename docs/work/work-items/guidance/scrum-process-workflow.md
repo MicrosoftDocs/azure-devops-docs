@@ -71,7 +71,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 > [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.  
+> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed.  
 
 ## Track progress
 
