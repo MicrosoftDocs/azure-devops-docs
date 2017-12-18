@@ -169,7 +169,7 @@ When you add a field to a backlog level, the following fields are added to suppo
 
 The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board.  
 
-The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/guidance/team-velocity.md).  
+The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/velocity-chart-data-store.md).  
 
 And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../scrum/define-sprints.md). 
 

@@ -1,12 +1,13 @@
 ---
-title: Update a team project | TFS
+title: Update a team project
+titleSuffix: TFS
 description: Update a team project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017
+ms.date: 12/15/2017
 ---
 
 # Update a team project based on a MSF v4.2 process template 
@@ -51,15 +52,9 @@ For more information, see [Permission reference](../../../security/permissions.m
   
  Perform this task for each team project collection defined on the application-tier server you've upgraded.  
   
-1.  Open a Command Prompt window where either Visual Studio 2012 or Team Explorer 2012 is installed and type:  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
   
-    ```  
-    cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
-  
-     On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.  
-  
-2.  Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
+0.  Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
   
     ```  
     witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"  

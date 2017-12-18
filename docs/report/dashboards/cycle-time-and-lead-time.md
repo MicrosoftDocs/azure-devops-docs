@@ -39,9 +39,6 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 - Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
-> [!NOTE]   
-> While the Cycle Time and Lead Time widgets use the Analytics data store, access to the data store for other report purposes is not supported at this time. 
-
 ### Configuration dialog 
 1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
 

@@ -30,7 +30,8 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
-- [Configure or view Velocity chart](team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Configure the Velocity widget](team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [View the built-in velocity chart](velocity-chart-data-store.md)
 - [View sprint burndown charts](../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ## Concepts

@@ -28,7 +28,8 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
   
 **Agile**  
  
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <BugWorkItems category="Microsoft.BugCategory">
     <States>
        <State value="Active" type="InProgress" />
@@ -39,7 +40,8 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
 ```
 
 **CMMI**
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <BugWorkItems category="Microsoft.BugCategory">
     <States>
        <State value="Proposed" type="Proposed" />
@@ -55,28 +57,14 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
 ##Add WITs to the Bug category  
 You add WITs to a category by updating the [Categories definition file](categories-xml-element-reference.md) and importing it to your team project. Follow the [customization sequence](../customize-work.md) that matches your process model. 
  
-<!--- 
-1.  To run the **witadmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explore  is installed and enter:  
-  
-    ```  
-    cd %programfiles%\Microsoft Visual Studio 14.0\Common7\IDE  
-    ```  
-  
-     On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.  
-  
-2.  Type the following command, and substitute your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a team project collection, *ProjectName* specifies the name of a team project defined within the collection, and *DirectoryPath* specifies the name and location for the file to export. Then choose Enter.  
-  
-    ```  
-    witadmin exportcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"  
-    ```  
--->  
 0.  Open the categories file in Notepad and locate the `CATEGORY` element for the `"Bug Category"`.  
   
 0.  To add a new type of work item, add a `WORKITEMTYPE` element that specifies the reference name of a work item type that you want to add.  
   
      For example, the following syntax adds the work item type of "Performance Bug" to the bug category.  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML
     <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
        <DEFAULTWORKITEMTYPE name="Bug" />  
        <WORKITEMTYPE name="Performance Bug" />  
@@ -84,34 +72,27 @@ You add WITs to a category by updating the [Categories definition file](categori
     ```  
   
 0.  Import the modified definition file.  
-
-<!---   
+ 
     ```  
     witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"  
     ```  
   
--->  
+
 
 <a name="assign"></a> 
 ##Assign metastates to workflow states defined for bugs  
  You assign metastates to the workflow states of bugs within the `BugWorkItems` element in the definition for ProcessConfiguration. Follow the [customization sequence](../customize-work.md) that matches your process model. 
- 
-<!---  
-1.  From the Command Prompt window for **witadmin**, type the following command and substitute your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a team project collection, *ProjectName* specifies the name of a team project defined within the collection, and *DirectoryPath* specifies the name and location for the file to export. Then choose Enter.  
-  
-    ```  
-    witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
-    ```  
--->   
-2.  Open ProcessConfigurations in Notepad and locate the `BugWorkItems` element.  
+   
+0.  Open ProcessConfigurations in Notepad and locate the `BugWorkItems` element.  
   
 3.  Update the values assigned to the `State` elements to match the values used in the workflow for the types of work items that you use to track bugs.  
   
-4.  (Optional) To add another state that is present within the workflow, specify another `State` element that maps to the workflow state of the work item type included within the Bug Category.  
+0.  (Optional) To add another state that is present within the workflow, specify another `State` element that maps to the workflow state of the work item type included within the Bug Category.  
   
      For example, the following syntax adds the state value of `"Investigating"`, to `"inProgress"`.  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <BugWorkItems category="Microsoft.BugCategory">  
        <States>  
           <State value="Active" type="InProgress" />  
@@ -125,14 +106,9 @@ You add WITs to a category by updating the [Categories definition file](categori
     > [!IMPORTANT]  
     > You must specify a value for the `State` element that corresponds to a valid workflow state. A valid workflow state is one that has been defined for a work item type that is included in Bug Category for your team project. Also, you must assign a metastate type within the Agile or Bug group, that is `Proposed`, `InProgress`, `Resolved`, or `Complete`.  
   
-5.  Import the modified definition file.  
+0.  Import the modified definition file.  
 
-<!---   
-    ```  
-    witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
-    ```  
- 
---> 
+
  
 ## Related notes
 -  [ProcessConfiguration](process-configuration-xml-element.md)   

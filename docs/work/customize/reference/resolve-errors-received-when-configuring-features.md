@@ -1,5 +1,6 @@
 ---
-title: Resolve errors received when configuring features | VSTS & TFS
+title: Resolve errors received when configuring features for TFS
+titleSuffix: TFS 
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -99,15 +100,9 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
 > [!NOTE]  
 > The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your team project. See [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
   
-1.  To run the **witadmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-    ```  
-    cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
-  
-     On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
-  
-2.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+0.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
     ```  
     witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
@@ -122,11 +117,12 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
   
     ```  
   
-3.  Open the file using a text editor, such as Notepad.  
+0.  Open the file using a text editor, such as Notepad.  
   
-4.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
+0.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML  
     <TabGroup>  
     <Tab Label="Storyboards">   
        <Control Name="StoryboardsControl" Type="LinksControl">   
@@ -145,15 +141,15 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
     </TabGroup>  
     ```  
   
-5.  Save and close the file.  
+0.  Save and close the file.  
   
-6.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
+0.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
   
     ```  
     witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
     ```  
   
-7.  Verify that the tab shows up in the backlog item.  
+0.  Verify that the tab shows up in the backlog item.  
   
 ## Related notes
 

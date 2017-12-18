@@ -133,7 +133,7 @@ Setting capacity and [estimating remaining work for each task](../scrum/sprint-p
 - [Set working days](../customize/set-working-days.md)
 - [Task board](../scrum/task-board.md)
 - [Sprint burndown](../scrum/sprint-burndown.md)
-- [Velocity](../../report/dashboards/team-velocity.md)    
+- [Velocity](../../report/dashboards/velocity-chart-data-store.md)    
 - [Forecasting](../scrum/forecast.md)    
 - [Configure team settings](../scale/manage-team-assets.md)
 
