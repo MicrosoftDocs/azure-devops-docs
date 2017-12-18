@@ -422,7 +422,7 @@ You can gain some idea of how rules are evaluated when you apply multiple rules 
 
 The following steps show, in the correct sequence, the interactions that TFS performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
-1.  From a Team Foundation client─such as the web portal, Visual Studio, Team Explorer, or Team Explorer Everywhere─ a user creates a new work item or edits an existing work item.
+1.  From a Team Foundation client&mdash;such as the web portal, Visual Studio, Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
 2.  Fill in field defaults. For all fields, use any **DEFAULT** rules that are outside **WHEN** rules.
 
