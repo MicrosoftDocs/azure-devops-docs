@@ -1,12 +1,13 @@
 ---
-title: Add WITs to backlogs and boards   
+title: Add work item types to backlogs and boards   
+titleSuffix: VSTS & TFS
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards when working with team projects that connect to Visual Studio Team Services (VSTS) Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 12/15/2017  
 ---
 
 #Add a work item type to a backlog and board
@@ -442,16 +443,9 @@ Use the **witadmin** commands to import and export definition files. For details
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-1. Open a Command Prompt window where  Visual Studio is installed and enter:  
-
-	```cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE```  
-
-	On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%programfiles%```. 
-
-	The version of Visual Studio must be at the same version as the on-premises TFS. 
-
-2.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
+0.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
