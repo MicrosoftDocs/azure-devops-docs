@@ -405,7 +405,7 @@ Defines and secures a connection to another TFS or VSTS account.
 | Connection URL | Required. The URL of the TFS or VSTS instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
-| Personal Access Token | Required for Token Based authentication (TFS 2017 and VSTS only). The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
 
 Use the **Verify connection** link to validate your connection information.
 

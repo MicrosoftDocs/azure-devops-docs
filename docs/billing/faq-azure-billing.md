@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
 ms.author: billchi
-ms.date: 11/09/2017
+ms.date: 12/19/2017
 ---
 
 #Troubleshooting Azure billing
@@ -64,7 +64,6 @@ A:	You can use these prepaid funds to pay for:
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
 *	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
-*	[HockeyApp plans](https://marketplace.visualstudio.com/subscriptions)
 
 You can't use these funds to pay for Visual Studio cloud 
 subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
@@ -74,7 +73,7 @@ subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
-which applies to VSTS, HockeyApp user plans, and so on. 
+which applies to VSTS, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase.  
 

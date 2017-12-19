@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Sign your Xcode app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 

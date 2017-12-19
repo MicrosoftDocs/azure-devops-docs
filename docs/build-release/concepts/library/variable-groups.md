@@ -11,7 +11,7 @@ ms.date: 11/01/2017
 
 # Variable groups
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 Use a variable group to store values that you want to make available across
 multiple build and release definitions. Variable groups are defined and managed in the **Library** tab of the

@@ -138,7 +138,7 @@ Some of the differences in capabilities between different versions of TFS and VS
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
