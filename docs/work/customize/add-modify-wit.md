@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/12/2017
+ms.date: 12/15/2017  
 ---
 
 # Add or modify a work item type 
@@ -179,27 +179,23 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 >[!NOTE]  
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-1.  If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
+0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
 
-2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-        cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
-
-    On a 64-bit edition of Windows, replace %programfiles% with %programfiles(x86)%. Go [here to download Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) for free.  
-
-3.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-4.  Edit the file. For details, see [Index to XML element definitions](reference/xml-element-reference.md).  
+0.  Edit the file. For details, see [Index to XML element definitions](reference/xml-element-reference.md).  
 
-5.  Import the WIT definition file.  
+0.  Import the WIT definition file.  
 
         witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
 
-6.  Open the web portal or refresh the page to view the changes.  
+0.  Open the web portal or refresh the page to view the changes.  
 
     For more information about using **witadmin**, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md).
 

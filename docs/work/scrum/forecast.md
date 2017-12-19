@@ -14,7 +14,7 @@ ms.date: 10/24/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
+Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/velocity-chart-data-store.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
 Use this topic to learn: 
 
@@ -120,7 +120,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 
 ## Related notes
 
-*	[Team velocity](../../report/dashboards/team-velocity.md)  
+*	[Team velocity](../../report/dashboards/velocity-chart-data-store.md)  
 *	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md)  
 *	[Select sprints for a team](../scale/set-team-defaults.md)  
 *	Use the [task board](task-board.md) to track work during your sprint

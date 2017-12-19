@@ -1,12 +1,13 @@
 ---
-title: Upload/download the Microsoft Project Mapping file | TFS
-description: Upload or download the Microsoft Project mapping file using  the TFSFieldMapping command
+title: Upload or download the Microsoft Project Mapping file
+titleSuffix: TFS
+description: Upload or download the Microsoft Project mapping file using the TFSFieldMapping command
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/08/2017
+ms.date: 12/15/2017
 ---
 
 
@@ -18,14 +19,14 @@ Use **TFSFieldMapping** to upload and download the Microsoft Project mapping fil
   
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
-The **TFSFieldMapping** command-line tool only works when run against an on-premises TFS. To run the tool, open a Command Prompt window where Visual Studio is installed. The **TFSFieldMapping** command installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
+The **TFSFieldMapping** command-line tool only works when run against an on-premises TFS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
 |Version | Change directory |
 |--------|-----------|
 |TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 ` |
-|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 `  |
+|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 ` |
 |TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0 ` |
-|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0 `  |
+|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0 ` |
   
 
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
@@ -36,7 +37,7 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
   
  **Requirements**  
   
- To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Administrators** security group. For more information, see [Permission reference](../../../security/permissions.md).  
+ To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Collection Administrators** security group. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
   
 ## Syntax  
   
@@ -55,10 +56,10 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
   
 ## To change how work item fields are mapped to Project  
   
-1.  Open a Command Prompt window where you have installed Project and either Team Explorer or TFS and enter:  
+1.  Open a Command Prompt window where you have installed Project and TFS and change the directory to point to the TFS tools. For example:  
   
     ```  
-    cd %programfiles%\Common Files\microsoft shared\Team Foundation Server\12.0  
+    cd %programfiles%\Common Files\microsoft shared\Team Foundation Server\15.0  
     ```  
   
     > [!TIP]  
