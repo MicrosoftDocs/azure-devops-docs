@@ -67,7 +67,7 @@ See the following topics to make the indicated customizations:
 
 2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
 
-        cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
+        cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\  
 
     On a 64-bit edition of Windows, replace %programfiles% with %programfiles(x86)%. Go [here to download Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) for free.  
 
