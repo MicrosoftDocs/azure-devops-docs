@@ -10,7 +10,7 @@ ms.date: 10/20/2016
 ---
 # Concurrent release pipelines in Team Foundation Server
 
-**TFS 2017 | [VSTS](concurrent-pipelines-ts.md)**
+**[VSTS](concurrent-pipelines-ts.md) | TFS 2018 | TFS 2017**
 
 This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or later. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
@@ -35,7 +35,7 @@ A release requires a concurrent pipeline only when it is being actively deployed
 0. Even though Release 11 is approved, it resumes only after Release 12's deployment is completed.
 0. Release 11 is waiting for manual intervention. Release 13 cannot start because the manual intervention state consumes a concurrent pipeline.
 
-> Manual intervention does not consume a pipeline in TFS 2017 Update 1 and newer.
+> Manual intervention does not consume a pipeline in TFS 2017.1 and newer.
 
 ## Concurrent processing within a single release
 

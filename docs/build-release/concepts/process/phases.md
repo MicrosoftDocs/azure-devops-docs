@@ -66,19 +66,19 @@ You can configure the following properties for an agent phase:
 
 * **Display name:** The name displayed in the agent phase item in the task list.
 
-* **Queue [Release (TFS 2017, TFS2018, VSTS), Build (Planned)]:** Use this option to specify the agent queue
+* **Queue [Release (VSTS, TFS 2017 and newer), Build (Planned)]:** Use this option to specify the agent queue
   in which the jobs will run. In the case where multiple jobs are created, all the jobs run on agents within the same agent queue.
 
 * **Demands:** Use these settings to specify how an agent for
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
 
-* **Skip download of artifacts [Release (TFS 2017, TFS2018, VSTS)]:** When used in a release definition, you may choose to skip the
+* **Skip download of artifacts [Release (VSTS, TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
 
-* **Allow scripts to access OAuth token [Release (TFS 2017, TFS2018, VSTS), Build (Planned)]** Use this option if you
+* **Allow scripts to access OAuth token [Release (VSTS, TFS 2017 and newer), Build (Planned)]** Use this option if you
   want to allow tasks running in this phase access to the
   current VSTS or TFS OAuth security token.
   This is useful in many scenarios, such as when you need to
@@ -108,7 +108,7 @@ You can use multiple agents to run parallel jobs if you configure an agent phase
 Here are some examples where **multi-configuration** is appropriate:
 
 > [!NOTE]
-> These options are available in Release (TFS 2017, TFS2018, VSTS) and Build (VSTS)
+> These options are available in Release (VSTS, TFS 2017 and newer) and Build (VSTS)
 
 * **Multiple execution builds:** An agent phase can be used in a
   build definition to build multiple configurations in parallel. For
@@ -262,7 +262,7 @@ The timeout and additional options of a deployment group phase are the same as t
 You can add multiple phases to a build or release definition, and then add
 tasks to each one by selecting the target phase for the new tasks.
 
-> Multiple phases can only be used in Release Management in VSTS, TFS 2017, and TFS 2018, and in Build in VSTS.
+> Multiple phases can only be used in Release Management in VSTS and TFS 2017 and newer, and in Build in VSTS.
 
 For example, the definition shown below divides the overall release
 execution into separate execution phases by using two agent phases
