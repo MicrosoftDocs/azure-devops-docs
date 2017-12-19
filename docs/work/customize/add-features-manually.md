@@ -1,12 +1,12 @@
 ---
-title: Manually add features after an upgrade | TFS 
+title: Manually add features after an upgrade to TFS 
 description: Manually update an existing team project to access new features after upgrading an on-premises Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 12/15/2017  
 ---
 
 #Add updates to team projects manually  
@@ -289,16 +289,11 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 <a id="import-wit">   </a>
 
-##Import a WIT 
-1. Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+## Import a WIT 
 
-	```cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE```  
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]	
 
-	On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%programfiles%```. 
-
-	The version of Visual Studio or Team Explorer must match the same version as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Team Explorer 2015.
-
-2.	Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
+0.	Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
@@ -598,11 +593,11 @@ Add the ```Properties``` section.  For example: <br/>
 
 <a id="run-tfsconfig">   </a>
  
-##Migrate existing test plans and suites
+## Migrate existing test plans and suites
 
 Migrate existing test plans and suites to work item based test plans and suites.  
 
-1.	Open a Command Prompt window on the TFS application-tier server:  
+1.	Open a Command Prompt window on the TFS application-tier server. For example:   
 	```cd %programfiles%\TFS 14.0\Tools```
 
 2.	Run the ```TfsConfig TCM``` command.

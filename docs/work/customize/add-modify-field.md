@@ -1,15 +1,16 @@
 ---
-title: Add or modify a field | VSTS & TFS  
+title: Add or modify a work tracking field
+titleSuffix: VSTS & TFS
 description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+ms.date: 12/15/2017  
 ---
 
-# Add or modify a field  
+# Add or modify a field to track work 
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
@@ -450,19 +451,3 @@ When you remove a field from a specific type of work item, that field is not rem
 
 For more information, see [Manage work item fields](reference/witadmin/manage-work-item-fields.md).  
 
-<!---
-1.  If you don't have project administrator permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
-
-2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:
-
-    ```cd %programfiles%\Microsoft Visual Studio 14.0\Common7\IDE```
-
-    On a 64-bit edition of Windows, replace ```%programfiles%``` with ```%programfiles(x86)%```. You can get access to Team Explorer by [downloading Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) for free.
-
-3.  Export the WIT definition.
-
-    ```witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"````
-
-    An example of a *CollectionURL* is http://fabrikamprime:8080/tfs/DefaultCollection.
-
--->

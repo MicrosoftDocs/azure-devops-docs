@@ -54,7 +54,7 @@ You can create links from within a work item form, from a work item that appears
 Also, you can use the context menu in the web portal or Team Explorer.
 
 > [!NOTE]
-> For each work item, you can add a maximum of 5000 links to other work items.  
+> For each work item, you can add a maximum of 1000 links to other work items.  
 
 ## Add a link from one work item to another work item  
 
