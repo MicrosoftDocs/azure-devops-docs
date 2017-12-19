@@ -110,11 +110,13 @@ latest version of the artifacts. At the time of linking an artifact source to a 
 you can change this behavior by selecting one of the options to use the latest build from a specific
 branch by specifying the tags, a specific version, or allow the user to specify the version when the
 release is created from the definition.
+
+![Adding an artifact](_img/artifacts-02.png)
+
 If you link more than one set of artifacts, you can specify which is the primary
 (default).
 
-![Selecting a default version option](_img/artifacts-02.png)
-
+![Selecting a default version option](_img/artifacts-02a.png)
  
 The following sections describe how to work with the different types of artifact
 sources.
