@@ -53,12 +53,12 @@ This topic shows you how to:
    you want to deploy. Choose the type of source and specify
    the details such as the project and build definition.
 
-   ![Selecting the artifacts to deploy](_img/work-with-release-definitions/add-artifacts.png)
+   ![Selecting the artifacts to deploy](../concepts/definitions/release/_img/artifacts-02.png)
 
 1. Open the **Continuous deployment trigger** panel and set the [trigger](../concepts/definitions/release/triggers.md)
    if you want a new release to be created when a new version of the source artifacts are available.
 
-   ![Setting the continuous deployment trigger](_img/work-with-release-definitions/cd-trigger.png)
+   ![Setting the continuous deployment trigger](../concepts/definitions/release/_img/trigger-01.png)
 
    [What's the difference between a release definition and a release?](../concepts/releases/index.md)
 
@@ -66,7 +66,7 @@ This topic shows you how to:
    is set to automatically start a deployment when the release is created.
    You can also specify other pre-deployment conditions here if required.
 
-   ![Setting the pre-deployment options](_img/work-with-release-definitions/set-conditions.png)
+   ![Setting the pre-deployment options](../concepts/definitions/release/_img/trigger-02.png)
 
 1. Open the **Tasks** tab and select the default **Run on agent** item. In the properties
    panel, under **Agent selection**, check that a hosted agent is selected to use the default 

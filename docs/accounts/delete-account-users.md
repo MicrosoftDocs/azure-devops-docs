@@ -35,22 +35,25 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
 0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
- [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
-0. Go to the users hub.  
+0. Go to the **Users** hub.  
 
- ![go to the user hub](_img/_shared/users-hub-updated.png)
+	<img src="_img/_shared/choose-users-hub.png" alt="go to the user hub" style="border: 1px solid #C3C3C3;" /> 
 
-0. Choose the user, and then above the table of users, choose **Remove from account**.  Alternatively, 
-you can choose **...** for the chosen user, and then choose **Remove from account** in the pop-up menu.
+0. If you have Streamlined User Management enabled, open the context menu**...** for the user to remove and select **Remove from account**. 
 
- ![Account level table of users with key information per user](_img/user-hub/acct-level-users-718.png)
+	<img src="_img/_shared/remove-from-account-menu-selection.png" alt="Account level table of users with key information per user" style="border: 1px solid #C3C3C3;" />
+
+	Or, from the table of users, select the user account and choose  **Delete**.  
+
+	<img src="_img/_shared/delete-user-account.png" alt="Account level table of users with key information per user" style="border: 1px solid #C3C3C3;" />
 
 0. Choose **Remove** in the confirmation dialog.
 
 0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
 
- [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
+	[Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
 0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
 [reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
