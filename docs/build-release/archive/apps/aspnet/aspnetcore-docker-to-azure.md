@@ -11,7 +11,7 @@ ms.date: 11/10/2016
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
-[!INCLUDE [temp](../../../_shared/version.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](http://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 

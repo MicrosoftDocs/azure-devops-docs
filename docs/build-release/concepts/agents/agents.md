@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Build and Release Agents
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
 
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
 
@@ -30,7 +30,7 @@ You can install the agent on Windows, Linux, or macOS machines. You can also ins
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
-### Install and connect to VSTS and TFS 2017
+### Install and connect to VSTS and TFS 2017 and newer
 
 > [!TIP]
 > Is your code in VSTS? If so, before you install an agent you might want to see if the hosted pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
@@ -76,7 +76,7 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 ### Communication with VSTS or TFS
 
-#### VSTS or TFS 2017
+#### VSTS or TFS 2017 and newer
 
 The agent communicates with VSTS or TFS to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to VSTS or TFS happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
@@ -118,7 +118,7 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to VSTS or TFS using one of the following methods:
 
-* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017. PAT is the only scheme that works with VSTS.
+* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
 
 * **Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
 

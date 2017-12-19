@@ -14,13 +14,13 @@ ms.date: 08/26/2016
 
 Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and in VSTS, so you can only use them across build and release definitions within a team project.
+An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and newer and in VSTS, so you can only use them across build and release definitions within a team project.
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
-#### VSTS and TFS 2017
+#### VSTS and TFS 2017 and newer
 
-![TFS 2017 build system architecture](_img/build-system-architecture.png)
+![TFS 2017 and newer build system architecture](_img/build-system-architecture.png)
 
 #### TFS 2015
 
@@ -69,9 +69,9 @@ Here are some typical situations when you might want to create agent pools and q
 
 Understanding how security works for agent pools and queues helps you control sharing and use of agents.
 
-### VSTS and TFS 2017
+### VSTS and TFS 2017 and newer
 
-In VSTS and TFS 2017, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
+In VSTS and TFS 2017 and newer, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
 | Role on an agent pool | Purpose |
 |------|---------|

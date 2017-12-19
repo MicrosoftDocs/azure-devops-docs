@@ -11,7 +11,7 @@ ms.date: 09/26/2017
 
 # Task Groups
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 A *task group* lets you to encapsulate a sequence of tasks already defined
 in a build or a release definition into a single reusable task that can be
