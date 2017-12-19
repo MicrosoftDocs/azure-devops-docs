@@ -1,6 +1,6 @@
 
 
-<a name="which-azure-sub-for-billing"/a>
+<a name="which-azure-sub-for-billing"></a>
 ###Q: Which Azure subscriptions can I link to my VSTS account and use for billing?
 
 A: You can use an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 

@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Build variables
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
 
 Variables give you a convenient way to get key bits of data into various parts of your build process.
 
@@ -42,7 +42,7 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ![Keep password secret](_img/variables/keep-password-secret-neweditor.png)
 
-**Team Foundation Server (TFS) 2017 Update 1 and older**
+**Team Foundation Server (TFS) 2017.1 and older**
 
 ![Keep password secret](_img/variables/keep-password-secret.png)
 
