@@ -62,6 +62,6 @@ For definitions of each build and release permission, see [Build and release per
 
 ## Related notes 
 
-- [Build and release permissions](../build-release/concepts/policies/permissions.md)
+- [Default build and release permissions](default-build-release-permissions.md)
 - [Default permissions and access](permissions-access.md) 
-- [Permission reference for Team Foundation Server](permissions.md) 
+- [Permissions and groups reference](permissions.md) 
