@@ -26,4 +26,4 @@ You receive this error when your run the New Team Project Wizard under the follo
   
 ## Related notes  
 - [Create a team project](../../../../accounts/create-team-project.md)   
-- [Permission reference](../../../../security/permissions.md)
+- [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md)

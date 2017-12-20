@@ -21,12 +21,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
->[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../../customize/process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
->
->If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../../backlogs/add-work-items-tfs.md).  
-
-
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]  
 
 ## Define user stories
 
@@ -96,8 +91,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
->[!TIP]    
->Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.  Â 
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 

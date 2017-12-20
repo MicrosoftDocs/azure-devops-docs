@@ -45,6 +45,11 @@ such as internal or pre-release apps, staging or preproduction deployments. To l
 
 Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
 
+### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
+
+**A**:  Yes, several scenarios are supported. To learn more, see 
+[Run cloud-based load tests using your own machines](https://blogs.msdn.microsoft.com/devops/2016/09/27/run-cloud-based-load-tests-using-your-own-machines-a-k-a-bring-your-own-subscription/).
+
 ### Q: What are virtual users?
 
 **A**:  Virtual users create load by accessing your app or web site all at the same 

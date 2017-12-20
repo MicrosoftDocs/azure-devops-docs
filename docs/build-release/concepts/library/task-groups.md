@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 12/20/2017
 ---
 
 # Task Groups
@@ -62,7 +62,7 @@ pointers to help you achieve the desired behavior:
 * Changes you make to a task group are reflected in every instance of the task group.
 
 All the task groups you create in the current project are listed in
-the **Task groups** tab of the **Build & Release** hub.
+the **Task groups** tab of the **Build and Release** hub.
 
 ![Managing a task group](_img/manage-task-group.png)
 

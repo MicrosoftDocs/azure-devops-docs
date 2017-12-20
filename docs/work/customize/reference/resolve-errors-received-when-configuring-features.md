@@ -7,7 +7,7 @@ ms.technology: vs-devops-wit
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017
+ms.date: 12/19/2017
 ---
 
 
@@ -15,21 +15,24 @@ ms.date: 04/04/2017
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
+
+You may be able to resolve errors and warnings that the [Configure Features](../configure-features-after-upgrade.md) wizard displays. These problems occur because definitions in the team project conflict with definitions in the process templates uploaded to your team project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your team project and then rerun the wizard.    
+
 >[!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). 
 
-You may be able to resolve errors and warnings that the [Configure Features](http://msdn.microsoft.com/en-us/86ecc9d6-5175-4fa4-9da7-00b83ef14e17) wizard displays. These problems occur because definitions in the team project conflict with definitions in the process templates uploaded to your team project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your team project and then rerun the wizard.    
   
-> [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
-  
- **Required permissions**  
+##Required permissions 
   
 -   To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the team project collection must be set to **Allow**.  
   
 -   To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the team project.  
   
- For more information, see [Permission reference](../../../security/permissions.md).  
+ For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+
+> [!NOTE]  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
+ 
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
  You can resolve an error by modifying the process template used to configure the new features, or by modifying your team project. After you've corrected the error, rerun the wizard.  

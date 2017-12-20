@@ -85,7 +85,7 @@ If your code is in GitHub, or if you want to create multiple YAML build definiti
 
 1. Click **Process**.
 
-1. For the **Default agent queue** select any of the hosted options.
+1. For the **Agent queue** select any of the hosted options.
 
 1. For YAML path, click the **...** button, and then choose your .YML file.
 
