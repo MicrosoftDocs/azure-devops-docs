@@ -82,7 +82,7 @@ authentication error and can't access your account.
 
 
 ## Authorization
-Authorization verifies that the identity whcih is attempting to connect has the neccesary permissions to access a service, feature, function, object, or method. 
+Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. 
 
 Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.  
 

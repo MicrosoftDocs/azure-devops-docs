@@ -68,7 +68,7 @@ And, feature teams can turn on Show parents on their backlogs to see context and
 <img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]  
->When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.  
+>When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.  
 
 To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Multiple teams](multiple-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md). 
 

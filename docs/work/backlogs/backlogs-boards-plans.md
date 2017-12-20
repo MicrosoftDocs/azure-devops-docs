@@ -185,9 +185,9 @@ The following table indicates those elements or tasks associated with each type 
 
 <tr>
 <td>Charts </td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/team-velocity.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
+<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
 <td>[Sprint burndown](../scrum/sprint-burndown.md) </td>
 <td>[Sprint burndown](../scrum/sprint-burndown.md) </td>
 </tr>

@@ -59,6 +59,7 @@ You can enable manual deployment approvals for each environment in a release def
 
    * You can specify that the user who requested (initiated or created) the release cannot approve it.
      If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. 
+   * You can force a revalidation of the user identity to take into account recently changed permissions. 
    * You can reduce user workload by automatically approving subsequent prompts if the specified
      user has already approved the deployment to a previous environment in the pipeline
      (applies to pre-deployment approvals only). Take care when using this option; for example, you may

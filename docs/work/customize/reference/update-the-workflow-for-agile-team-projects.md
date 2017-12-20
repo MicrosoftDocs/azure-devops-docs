@@ -1,16 +1,19 @@
 ---
-title: Update the workflow for agile team projects | VSTS & TFS
+title: Update the workflow for team projects based on the Agile process template
+titleSuffix: TFS
 description: Update the workflow for agile team projects to manually update the user story and task workflow assignments.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017 
+ms.date: 12/15/2017
 ---
+
 # Update the workflow for agile team projects
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
+
 
 >[!IMPORTANT]  
 >This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
@@ -32,7 +35,7 @@ Task board for an Agile team project without the recommended manual updates
   
 **Requirements**  
   
-To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Permission reference](../../../security/permissions.md).  
+To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
 ##Update the workflow and metastates
@@ -57,15 +60,9 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 #### To update the workflow states and transitions for User Story  
   
-1.  To run the **witadmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and type:  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
   
-    ```  
-    cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
-  
-     On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.  
-  
-2.  To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a team project collection, *ProjectName* specifies the name of a team project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
+0. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a team project collection, *ProjectName* specifies the name of a team project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   
     ```  
     witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"  
@@ -73,11 +70,12 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
      Use this format for the URL:  **http://***ServerName:Port/VirtualDirectoryName/CollectionName*, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
   
-3.  In a text editor or in Visual Studio, open the file you exported.  
+0.  In a text editor or in Visual Studio, open the file you exported.  
   
-4.  Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
+0.  Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <STATE value="New">  
        <FIELDS>  
           <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
@@ -102,10 +100,11 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
     </STATE>  
     <STATE value="Removed" />  
     ```  
+
+0.  Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
   
-5.  Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:  
-  
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <TRANSITION from="" to="New">  
        <REASONS>  
           <DEFAULTREASON value="New" />  
@@ -151,9 +150,9 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
     </TRANSITION>  
     ```  
   
-6.  Save and close the file.  
+0.  Save and close the file.  
   
-7.  Import the file, substituting your data for the arguments that are shown.  
+0.  Import the file, substituting your data for the arguments that are shown.  
   
     ```  
     witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
@@ -171,7 +170,8 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 3.  Add this code snippet between the lines `<STATES>` and `<STATE value="Active">`:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <STATE value="New">  
        <FIELDS>  
           <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
@@ -193,7 +193,8 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 4.  Replace the first transition block, corresponding to the lines that fall between `<TRANSITION from="" to="Active">` and its closing `</TRANSITION>` tag, with this code snippet:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <TRANSITION from="" to="New">  
        <REASONS>  
           <DEFAULTREASON value="New" />  
@@ -306,7 +307,8 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 4.  Replace the line `<State type="Proposed" value="Active" />` with these lines:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <State type="Proposed" value="New" />   
     <State type="InProgress" value="Active" />  
   
@@ -314,14 +316,16 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 5.  Locate the tag `<TaskWorkItems category="Microsoft.TaskCategory">`, and replace the line `<State type="Proposed" value="Active" />` with these lines:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML 
     <State type="Proposed" value="New" />  
     <State type="InProgress" value="Active" />  
     ```  
   
 6.  Verify that you have the following mappings:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML  
     <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">  
        <States>  
           <State type="Proposed" value="New"/>  

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 12/19/2017
 ---
 
 # CMMI process work item types and workflow
@@ -24,11 +24,8 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
 
-> [!NOTE]  
-> **Feature availability:**  Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../../customize/process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
->
-> If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../../backlogs/add-work-items-tfs.md).    
-
+  
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
 
 ## Define requirements 
 
@@ -158,7 +155,7 @@ Use the following guidance and that provided for [fields used in common across w
 
  
 
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/guidance/team-velocity.md) and [forecast](../../scrum/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../kanban/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p>
+      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../scrum/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../kanban/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p>
     </td>
   </tr>
 <tr>
@@ -297,9 +294,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
->[!TIP]    
->Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
-
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 

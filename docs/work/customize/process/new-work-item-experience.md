@@ -6,15 +6,15 @@ ms.prod: vs-devops-alm
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/11/2017
+ms.date: 12/19/2017
 ---
 
 # New work item tracking experience
 
-**TFS 2017**  
+**VSTS | TFS 2018 | TFS 2017**  
 
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160;The new form and its corresponding features are available from VSTS and the web portal for TFS 2017.<br/> 
+> **Feature availability:**&#160;&#160;The new form and its corresponding features are available from the web portal for VSTS and TFS 2017 and later versions.<br/> 
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 

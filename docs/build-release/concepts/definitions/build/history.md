@@ -26,7 +26,7 @@ From the **History** tab you can see a list of changes that includes who made th
 
 **VSTS:** To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Definition**.
 
-**Team Foundation Server (TFS) 2017 Update 1 and older:** After you've viewed the history, if you want details about a change, select it and then choose **Diff**. If you want to roll back to an earlier version, select it, and then click **Rollback**.
+**Team Foundation Server (TFS) 2017.1 and older:** After you've viewed the history, if you want details about a change, select it and then choose **Diff**. If you want to roll back to an earlier version, select it, and then click **Rollback**.
 
 ## Q&A 
 

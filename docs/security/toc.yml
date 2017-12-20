@@ -8,6 +8,8 @@
   items:
   - name: View permissions 
     href: view-permissions.md
+  - name: Look up the account owner or a project administrator
+    href: lookup-account-owner-admin.md
   - name: Add users to a team project or team 
     href: add-users-team-project.md
   - name: Set Git or TFVC repository permissions
@@ -16,6 +18,18 @@
     href: ../work/scale/add-team-administrator.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Add administrators or set permissions at the project or collection level
     href: set-project-collection-level-permissions.md 
+- name: Tutorials 
+  items:
+  - name: Setup Active Directory or Azure Active Directory  
+    href: setup-ad-aad.md
+  - name: Add AD/AAD security groups to built-in security groups  
+    href: add-ad-aad-built-in-security-groups.md
+  - name: Change individual permissions 
+    href: change-individual-permissions.md
+  - name: Grant or restrict permissions to select tasks
+    href: restrict-access.md
+  - name: Remove user accounts 
+    href: remove-users-prohibit-access.md 
 - name: Concepts
   items:
   - name: About permissions and groups
@@ -24,24 +38,32 @@
     href: access-levels.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Active Directory groups (TFS) 
     href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: Security glossary 
+    href: security-glossary.md  
 - name: How-to Guides
   items:
   - name: Add users to your account (VSTS)
     href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Change access levels (TFS)
-    href: change-access-levels.md  
-  - name: Set Git branch permissions
-    href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Set build and release permissions 
-    href: set-build-release-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Set permissions and access for work tracking
-    href: set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: "Set permissions for READMEs & Wikis"
-    href: ../collaborate/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Set feedback permissions
-    href: ../feedback/give-permissions-feedback.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Restrict access to resources
-    href: ../accounts/restrict-access-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+    href: change-access-levels.md 
+  - name: Export a list of users and their access levels  
+    href: export-users-audit-log.md   
+  - name: Set object-level permissions
+    items: 
+    - name: Set Git branch permissions
+      href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    - name: Set build and release permissions
+      href: set-build-release-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    - name: Set dashboard permissions
+      href: ../report/dashboards/dashboard-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    - name: Set permissions and access for work tracking
+      href: set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+    - name: Set delivery plan permissions
+      href: set-permissions-access-work-tracking.md#plan-permissions
+    - name: "Set permissions for READMEs & Wikis"
+      href: ../collaborate/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+    - name: Set feedback permissions
+      href: ../feedback/give-permissions-feedback.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Set permissions to view or create SQL Server reports
     href: ../report/admin/grant-permissions-to-reports.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Set permissions to access a SharePoint project portal
@@ -50,8 +72,7 @@
     href: ../user-guide/connect-team-projects.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Authenticate access with personal access tokens
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
-  - name: Export user accounts or audit log
-    href: export-users-audit-log.md   
+
 - name: Troubleshooting
   items:
   - name: Troubleshoot connection

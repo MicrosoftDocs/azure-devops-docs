@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: DCAD8C16-242E-4672-A5C6-5894C25CAF11
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 12/20/2017
 ---
 
 # How to: Create and deploy a release
@@ -56,7 +56,7 @@ If you have not set the [continuous deployment trigger](../concepts/definitions/
 or you have not defined a fully orchestrated pipeline for deploying the artifacts
 specified in your releases, you will need to manually initiate the deployment for some environments.
 
-1. Open the **Builds** tab of the **Build & Release** hub and select a build result
+1. Open the **Builds** tab of the **Build and Release** hub and select a build result
    (not the build definition name).
 
    ![Selecting a build in the Builds tab](_img/create-deploy-releases/build-release-01.png)

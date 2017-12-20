@@ -14,7 +14,7 @@ ms.date: 11/14/2017
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
-> A symbol server is available with Package Management in **VSTS** and works best with **Visual Studio 2017 Update 4 or later**.
+> A symbol server is available with Package Management in **VSTS** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
 ![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to the Package Management symbol server or a file share.

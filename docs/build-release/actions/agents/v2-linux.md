@@ -43,7 +43,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-### VSTS and TFS 2017
+### VSTS and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
@@ -75,7 +75,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 * VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your_server}:8080/tfs`
 
