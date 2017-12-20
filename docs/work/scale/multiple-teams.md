@@ -191,7 +191,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 1px solid #C3C3C3;" />  
 
-	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/permissions.md#edit-team-project-level-information-permission) to delete a team project. 
+	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/set-project-collection-level-permissions.md)to delete a team project. 
  
 	>[!IMPORTANT]   
 	>Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 

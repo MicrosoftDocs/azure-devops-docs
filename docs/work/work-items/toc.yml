@@ -121,8 +121,6 @@
     href: ../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Bulk add or modify (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Get started as a Stakeholder
-    href: ../../security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Work item form controls 
