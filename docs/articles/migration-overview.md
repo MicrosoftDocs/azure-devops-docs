@@ -15,7 +15,6 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 ## Supported TFS Versions for Import
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-* TFS 2017 Update 2
 * TFS 2017 Update 3
 * TFS 2018 
 
