@@ -6,12 +6,12 @@ ms.technology: vs-devops-build
 ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730
 ms.manager: douge
 ms.author: alewis
-ms.date: 11/10/2016
+ms.date: 12/20/2017
 ---
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
-[!INCLUDE [temp](../../../_shared/version.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](http://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 
@@ -33,7 +33,7 @@ ms.date: 11/10/2016
 ## Explore the release pipeline
 
 1. Navigate to your team project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
-1. Click on the **Build & Release** tab.
+1. Click on the **Build and Release** tab.
 1. Click **Builds**, select the build definition shown there, and click **Edit**.
    1. The sequence of tasks that appear are what builds the application when code is committed to the repository, and includes tasks to run unit tests.
    1. At the end you'll see tasks that publish the build artifacts to a staging directory. This is the location that the release definition monitors, such that when new artifacts appear, the release definition will begin a new deployment.

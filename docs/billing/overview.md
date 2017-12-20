@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/17/2017
+ms.date: 12/19/2017
 ---
 
 #  VSTS billing overview
@@ -16,7 +16,6 @@ VSTS billing covers:
 
 * Purchasing extensions for Visual Studio, VSTS, Team Foundation Server (TFS), and Visual Studio Code
 * Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users).
-* Hockeyapp
 * Xamarin University
 * Visual Studio subscriptions
 * Cloud Solution Provider purchases for customers
@@ -84,7 +83,7 @@ Visual Studio subscriptions that are paid in full for the year.
 
 >[!NOTE] 
 >You can't use the [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases, 
->which applies to VSTS, HockeyApp user plans, and so on.
+>which applies to VSTS, and so on.
 
 <a name="bill-period"></a>
 ### Billing frequency

@@ -53,18 +53,18 @@ When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git 
 |Shallow fetch|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
 
 > [!NOTE]
-> **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
+> **VSTS, TFS 2017.2 and newer:** Click **Advanced settings** in the **Get Sources** task to see some of the above options.<br/>
 > **VSTS (YAML):** Not all of these options are available yet. For available options and syntax, refer to [YAML documentation](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-checkout.md).
 
 ### Branch
 
-(On **TFS 2017 RTM** or older, **Default branch**): This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
+(On **TFS 2017 RTM** and older, **Default branch**): This is the branch that you want to be the default when you manually queue this build. If you set a scheduled trigger for the build, this is the branch from which your build will get the latest sources. The default branch has no bearing when the build is triggered through continuous integration (CI). Usually you'll set this to be the same as the default branch of the repository (for example, "master").
 
 ### Clean the local repo on the agent
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
-#### VSTS, TFS 2018, TFS 2017.2
+#### VSTS, TFS 2018, TFS 2017.2, TFS 2017.3
 
 [//]: # (TODO: build.clean variable still works and overrides if clean is set to false)
 
@@ -139,7 +139,7 @@ The build process will check out your Git submodules so long as they are:
  - Added by using a relative url from main repository. For example this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
 
 > [!NOTE]
-> If you're running **TFS 2017 Update 1 or older**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
+> If you're running **TFS 2017.1 or older**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
 
 #### Authenticated submodules
 
@@ -227,7 +227,7 @@ On the **Variables** tab, define `Agent.Source.Git.ShallowFetchDepth` and set it
 | Label sources|Yes|No|
 
 > [!NOTE]
-> **VSTS, TFS 2017.2 or newer:** Click **Advanced settings** to see some of the following options.
+> **VSTS, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
 
 ### Repository name
 

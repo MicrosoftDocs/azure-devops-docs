@@ -23,11 +23,13 @@ As changes occur to work items, code reviews, pull requests, source control file
 
 A subscription lets you control what your team should be notified about and how the team will receive those notifications.
 
-1. Open the Notifications hub under team settings.
+1. Open the Notifications hub under team settings: `https://{account}.visualstudio.com/{project}/_admin/_notifications?view=contents`
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
-2. Click **New**. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
+2. Click **New subscription**. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
+
+	![New subscription](_img/new-subscription.png)
 	
 3. Select the type of activity you want your team to be notified about.
 	
@@ -41,12 +43,13 @@ A subscription lets you control what your team should be notified about and how 
 
 	![Select role](_img/new-sub-team-delivery-by-role.png)
 
-   You can choose one of three delivery options:
-   * **Specific team members**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
-   * **Team email address**: send an email to a specified email address.
+   You can choose one of the following delivery options:
+   * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
+   * **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
+   * **Custom email address**: send an email to a specified email address.
    * **All team members**: send an individual email to each member of the team.
 
-   For certain activities and when **Specific team members** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change will not be notified about it.
+   For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change will not be notified about it.
 
 6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
@@ -57,6 +60,24 @@ A subscription lets you control what your team should be notified about and how 
 	![Select scope](_img/new-sub-filter-conditions.png)
 
 7. Click **Finish** to save the new subscription.
+
+<a name="manage" />
+
+## Manage team delivery settings
+
+Choose the default method for your team to receive notifications by updating the **team delivery settings**.
+
+1. Open the Notifications hub under team settings: `https://{account}.visualstudio.com/{project}/_admin/_notifications?view=contents`
+	
+	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
+
+2. Choose **Delivery settings**:
+
+	![Delivery settings](_img/delivery-settings.png)
+
+3. Choose which option best fits your team's needs:
+
+	![Delivery settings options](_img/delivery-settings-options.png)
 
 ## Related topics
 

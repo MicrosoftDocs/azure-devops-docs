@@ -24,7 +24,7 @@ Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md)
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 
 > |-------------|----------|---------|---------|   
-> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>|    
+> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/velocity-chart-data-store.md)<br/>|    
 
 >[!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 

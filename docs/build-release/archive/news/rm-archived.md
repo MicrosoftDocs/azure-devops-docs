@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 12/20/2017
 ---
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 **NOTE**: Release Management has now been combined with the Build features
 of VSTS and Team Foundation Server (TFS) in the new 
 **Build &amp; Release** hub. For details of new features and changes, see
-[Team Foundation Build & Release release notes](2017.md).
+[Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?

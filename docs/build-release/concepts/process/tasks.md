@@ -87,7 +87,7 @@ Select the condition for running this task:
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../concepts/definitions/build/options.md#job-cancel-timeout).
 
-### TFS 2015 and TFS 2017 options
+### TFS 2015 and newer options
 
 #### Continue on error (partially successful)
 

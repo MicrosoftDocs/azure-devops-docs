@@ -19,10 +19,7 @@ To plan a software project and track software defects using Scrum, teams use the
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
 
->[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../../customize/process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
->
->If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../../backlogs/add-work-items-tfs.md).  
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
 ## Define PBIs and bugs  
 
@@ -48,7 +45,7 @@ Use the following guidance and that provided for [fields used in common across w
 <tbody valign="top">
 <tr>
 	<td width="20%"><p>[Effort](../../track/query-numeric.md)</p></td>
-	<td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile [velocity charts](../../../report/guidance/team-velocity.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
+	<td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../scrum/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
 <tr>
 	<td><p>[Business Value](../../track/query-numeric.md)</p></td>
 	<td><p>Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.</p></td>
@@ -70,8 +67,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-> [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.  
+[!INCLUDE [temp](../../_shared/discussion-tip.md)]
 
 ## Track progress
 

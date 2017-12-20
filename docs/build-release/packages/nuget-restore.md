@@ -12,7 +12,7 @@ ms.date: 09/01/2017
 
 # Restore Package Management NuGet packages in Team Build
 
-**VSTS | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017**
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 

@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Use a PowerShell script to customize your build process
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
 
