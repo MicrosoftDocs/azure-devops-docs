@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Build your ASP.NET 4 app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
 ASP.NET is a mature web platform that provides all the services that you require to build enterprise-class server-based web applications using .NET on Windows. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 

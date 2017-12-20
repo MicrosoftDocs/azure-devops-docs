@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/23/2017
+ms.date: 12/12/2017
 ---
 
 
@@ -39,6 +39,12 @@ For a description of each group and each permission, see [Permissions and groups
 > context &mdash;such as, team projects, processes, retention policies and 
 > resource limits, agent pools, and extensions&mdash;add them to the Project  
 > Administrators group.  
+
+## Prerequisites
+
+* You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.  
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow.  
 
 <a id="project-level" />
 ## Add a user or group to a security group

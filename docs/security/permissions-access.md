@@ -280,5 +280,5 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 ## Related notes  
 
 - [About access levels](access-levels.md)
-- [Export users (VSTS) or the audit log (TFS)](export-users-audit-log.md)
+- [Export a list of users and their access levels](export-users-audit-log.md)
 - [Work in the web portal](../user-guide/work-web-portal.md)  

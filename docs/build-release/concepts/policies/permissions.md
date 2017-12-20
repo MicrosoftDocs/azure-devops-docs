@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Build and release permissions
 
-**VSTS | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 Team Build and Release Management offer several features to help you
 enforce the security requirements of your team and your

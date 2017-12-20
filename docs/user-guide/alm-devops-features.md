@@ -1985,14 +1985,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Get HockeyApp for mobile app development</b></p>
-<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](../billing/get-hockeyapp.md). </p>
+<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://www.visualstudio.com/app-center/). </p>
 
 <p><b>Simplified distribution </b></p>
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with VSTS and TFS</b></p>
-<p>[Integrate HockeyApp directly in VSTS or TFS](../billing/get-hockeyapp.md) to upload your Android, iOS, or Windows builds. </p>
+<p>[Integrate HockeyApp directly in VSTS or TFS](https://www.visualstudio.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
 
 
 

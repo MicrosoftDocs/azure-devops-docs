@@ -4735,6 +4735,11 @@
         "source_path": "docs/report/analytics/analytics-recipes.md",
         "redirect_url": "/vsts/report/extend-analytics/analytics-recipes",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/get-hockeyapp.md",
+        "redirect_url": "https://www.visualstudio.com/app-center/",
+        "redirect_document_id": false
        }
     ]
 }

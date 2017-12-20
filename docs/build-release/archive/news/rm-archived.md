@@ -11,7 +11,7 @@ ms.date: 10/20/2016
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 **NOTE**: Release Management has now been combined with the Build features
 of VSTS and Team Foundation Server (TFS) in the new 

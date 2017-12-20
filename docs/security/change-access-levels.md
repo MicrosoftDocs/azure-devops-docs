@@ -117,7 +117,7 @@ Within the admin context, there are several hubs which support administrating fe
 ## Related notes  
 <a id="test-manager"  >  </a>
 - [About access levels](access-levels.md)
-- [Export users (VSTS) or the audit log (TFS)](export-users-audit-log.md)
+- [Export a list of users and their access levels](export-users-audit-log.md)
 - [Permissions & access](permissions-access.md)  
 - [Work in the web portal](../user-guide/work-web-portal.md)  
 

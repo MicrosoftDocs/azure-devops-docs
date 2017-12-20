@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Deploy an agent on Windows
 
-**VSTS | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
@@ -54,7 +54,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 * VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your-server}:8080/tfs`
 
@@ -78,7 +78,7 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 or newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
+* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
