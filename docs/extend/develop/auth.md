@@ -35,7 +35,7 @@ A common scenario is to make calls to a back-end service from an extension. To v
 
 ### Get your extension's key
 
-Your extnesion's unique key (which is generated when the extension is published) can be used to verify the authenticity of requests made from your extension.
+Your extension's unique key (which is generated when the extension is published) can be used to verify the authenticity of requests made from your extension.
 
 To get this key, right-click a [published extension](../publish/overview.md) and select **Certificate**.
 
@@ -146,7 +146,7 @@ namespace TokenSample.Core.API
                             RequireExpirationTime = true,
                             ValidateLifetime = true
                         };    
-                    });*
+                    });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
