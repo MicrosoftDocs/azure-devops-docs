@@ -30,7 +30,7 @@ To install the extension within Visual Studio, select **Tools > Extensions and U
 
 ## Create the build and release definitions automatically
 
-To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the project in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
+To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
 
