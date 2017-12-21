@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: macoope
-ms.date: 11/03/2017
+ms.date: 12/14/2017
 ---
 
 # Forks
@@ -14,8 +14,10 @@ ms.date: 11/03/2017
 #### VSTS | TFS 2018
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
-Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase.
-Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.
+Forks are a great way to support an Inner Source workflow: you can create a
+fork to suggest changes to a project when you don't have permissions to 
+write to the original project directly.
+Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests.md).
 
 ## What's in a fork
 
