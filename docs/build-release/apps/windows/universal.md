@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
+ms.date: 12/20/2017
 ms.topic: get-started-article
 ---
 
@@ -54,7 +54,7 @@ https://github.com/Microsoft/UWPQuickStart
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -66,7 +66,7 @@ https://github.com/Microsoft/UWPQuickStart
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -86,7 +86,7 @@ https://github.com/Microsoft/UWPQuickStart
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

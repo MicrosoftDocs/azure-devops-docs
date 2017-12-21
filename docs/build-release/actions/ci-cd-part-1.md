@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
-ms.date: 04/03/2017
+ms.date: 12/20/2017
 ---
 
 # CI/CD Hello world
@@ -78,7 +78,7 @@ Write-Host "Hello world"
 
 Create a build definition that prints "Hello world."
 
-1. Select the **Build & Release** hub in your VSTS project, and then the **Builds** tab.
+1. Select the **Build and Release** hub in your VSTS project, and then the **Builds** tab.
 
  ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab.png)
 
@@ -88,7 +88,7 @@ Create a build definition that prints "Hello world."
 
 1. Start with an **empty process**.
 
-1. Click **Process** and specify whatever **Name** you want to use. For the **Default agent queue**, select **Hosted VS2017**.
+1. Click **Process** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
 
 1. Make sure that **Get sources** is set with the **Repository** and **Branch** in which you created the script.
 
@@ -156,7 +156,7 @@ Save and queue a build manually and test your build definition.
 
  ![artifacts explorer](_img/ci-cd/part-1/artifacts-explorer.png)
 
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in the **Build & Release** hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in the **Build and Release** hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
 ## Add some variables and commit a change to your script
 
@@ -195,7 +195,7 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-1. Go to the **Build & Release** hub, and notice that a build is automatically triggered by the change that you committed.
+1. Go to the **Build and Release** hub, and notice that a build is automatically triggered by the change that you committed.
 
 1. Select the new build that was created and view its log.
 
@@ -209,7 +209,7 @@ Write-Host Trigger: $trigger
 
 Define the process for running the script in two environments.
 
-1. Go to the **Build & Release** hub, and then to the **Releases** tab.
+1. Go to the **Build and Release** hub, and then to the **Releases** tab.
 
 1. Select the action to create a **New definition**.
 

@@ -19,7 +19,7 @@ ms.date: 01/12/2017
   
  **Required Permissions**  
   
- To perform these procedures, you must be a member of the **Readers** group or your **View work items in this node** permission must be set to **Allow**. For more information, see [Permission reference](../../security/permissions.md).  
+ To perform these procedures, you must be a member of the **Readers** group or your **View work items in this node** permission must be set to **Allow**. For more information, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
   
 ##  <a name="FindBlockedWIs"></a> Find and Resolve Work Items That Are Blocked from Being Submitted to Project Server  
  To find work items that were previously submitted to Project Server but are now blocked, you can create the following query. This query finds all work items for which the **Project Server Last Submit Status** field is set to **Failure**. You can filter the list by **Area** or **Iteration**.  
