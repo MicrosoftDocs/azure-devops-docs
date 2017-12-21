@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 10/02/2017
+ms.date: 12/20/2017
 ms.custom: mvc
 ---
 
@@ -38,7 +38,7 @@ In this tutorial, you learn how to:
 
 A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.  VSTS allows you to create and delete topic branches to take advantage of CI without having to edit the build definition.  You can use naming conventions, wildcards, and branch filters to initiate builds that match a particular pattern.  Follow the steps below to create a CI trigger that will execute a build for feature branches.
 
-1. Click **Build & Release** menu and click **Builds**.
+1. Click **Build and Release** menu and click **Builds**.
 2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.
 3. Click the **Triggers** menu for your build.  Ensure you have **Continuous Integration** enabled.
 4.  Click the **+ Add** icon under **Branch Filters**.
@@ -55,7 +55,7 @@ Your build definition is now ready for CI for both the master branch and future 
 3.  Click the **Files** menu.  Make a quick code change by selecting a file and clicking **Edit**.  Add some text and click **Commit**.  For **Branch name**, remove master and type **features/feature-123**.
 4.  Click **Commit**. This workflow creates a new topic branch under a parent named **features** and commits your code edits to the new branch.    
      ![Create new branch](_img/ci-build-git/createnewbranch.png)
-5.  Navigate to the **Build & Release** menu in VSTS and click **Builds**.
+5.  Navigate to the **Build and Release** menu in VSTS and click **Builds**.
 6.  Click **Queued** under **Build Definitions** to view the queued builds.  You should now see your new build definition executing for the topic branch.  This build was initiated by the trigger you created earlier.  Wait for the build to finish.
 
 Your typical development process typically includes developing code locally and periodically pushing to your remote topic branch.  Each push you make will result in a build process executing in the background.  The build process helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
@@ -64,7 +64,7 @@ Your typical development process typically includes developing code locally and 
 
 The master branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in VSTS so that certain tasks only execute on your master branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions. 
 
-1. Click **Build & Release** menu and click **Builds**.
+1. Click **Build and Release** menu and click **Builds**.
 2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.    
 3. Choose the **Publish Artifact** task in your build definition.
 4. Click **Control Options** on the bottom right hand part of your screen.

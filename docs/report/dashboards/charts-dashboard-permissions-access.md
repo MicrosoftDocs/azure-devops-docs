@@ -33,4 +33,3 @@ You set [dashboard permissions at the team level](dashboard-permissions.md) from
 
 - [Work effectively from your account hub](../../user-guide/account-home-pages.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md) 
-- [Permissions and groups reference](../../security/permissions.md)
