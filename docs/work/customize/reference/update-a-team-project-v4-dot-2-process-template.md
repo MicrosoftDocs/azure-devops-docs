@@ -45,7 +45,7 @@ These procedures will only support access to new features available with TFS 201
   
 -   To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the team project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.  
   
-For more information, see [Permission reference](../../../security/permissions.md).  
+For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
   
 ## 1. Rename system fields  
  Because the friendly names of several system fields were renamed in Visual Studio Team Foundation Server 2010, you need to manually rename these fields in your team project collection. System fields that were renamed include System.AreaID, System.IterationID, System.HyperLinkCount, System.ExternalLinkCount, and System.AttachedFileCount.  
