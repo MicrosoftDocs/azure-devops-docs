@@ -85,6 +85,8 @@
       href: ./reference/combine-list-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Change reporting attributes (TFS)
       href: ./reference/add-or-modify-work-item-fields-to-support-reporting.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Manage roll out of the new web form
+    href: manage-new-form-rollout.md 
   - name: Change the workflow
     href: ./reference/change-workflow-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work item type or form
