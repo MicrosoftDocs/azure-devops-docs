@@ -55,7 +55,7 @@ group in Team Foundation Server (TFS).
 
 ## Team
 
-0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administraton page.
+0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
 0. Add an administrator.
 
