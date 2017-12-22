@@ -12,6 +12,12 @@
       href: /vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
     - name: "DevOps Project for Node.js"
       href: /vsts/build-release/apps/cd/azure/azure-devops-project-nodejs?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for Java"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-java?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for Python"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-python?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for PHP"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-php?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Azure Web App"
     href: /vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Windows VM"
