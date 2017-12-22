@@ -14,6 +14,12 @@
         href: apps/cd/azure/azure-devops-project-aspnetcore.md
       - name: Node.js
         href: apps/cd/azure/azure-devops-project-nodejs.md
+      - name: Java
+        href: apps/cd/azure/azure-devops-project-java.md
+      - name: Python
+        href: apps/cd/azure/azure-devops-project-python.md
+      - name: PHP
+        href: apps/cd/azure/azure-devops-project-php.md
     - name: Build your app
       items:
       - name: ASP.NET Core
