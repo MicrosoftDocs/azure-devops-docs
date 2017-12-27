@@ -191,7 +191,7 @@ If the above error is received while configuring the agent, log on to your TFS m
 
 This issue is characterized by the error message:
 ```
-The job has been abandoned because agent did not renew the lock. Ensure agent is running, not sleeping, and has not lost communication with the service.
+The agent: {AGENTNAME} lost communication with the server. Verify the machine is running and has a healthy network connection.
 ```
 
 This error may indicate the agent lost communication with the server for a span of several minutes. Check the following to rule out network or other interruptions on the agent machine:
@@ -204,6 +204,10 @@ This error may indicate the agent lost communication with the server for a span 
 * Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you are using VSTS, then you would want to ping an internet domain, for example bing.com. If you are using an on-premises TFS server, then you would want to ping a server on the same network.
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
+
+Check if agent diagnostic logs provide any further information regarding the communication issue. Refer to the [Troubleshooting steps](https://docs.microsoft.com/en-us/vsts/build-release/actions/troubleshooting) for information regarding agent diagnostic logs.
+
+If the troubleshooting does not help, please file an [issue](https://github.com/Microsoft/vsts-agent/issues/new) on vsts-agent.
 
 ### Work with SSL server certificate (on-premises TFS only)
 
