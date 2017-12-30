@@ -70,7 +70,7 @@ Now let's view the same commit with the author date:
         An amended commit
 
 Note the (slight) difference between the author date and commit date above.
-The commit date is my original, unedited, commit time. The author date is the time at which I ran the `--amend` command.
+The author date is my original, unedited, commit time. The commit date is the time at which I ran the `--amend` command.
 
 In fact, there are a lot of fun `git log` command line options to help you understand dates better.
 For example, passing the `--date` flag will allow you to determine how dates are displayed. 
