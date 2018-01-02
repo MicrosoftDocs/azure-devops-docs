@@ -172,7 +172,7 @@ The Categories.xml definition file must conform to the syntax and rules describe
 <a id="work-item-types"></a>
 ### Work item types
 The  ```WITD``` element and its child elements must conform to the syntax and rules described in [WITD XML element reference](../reference/all-witd-xml-elements-reference.md). In addition, it must meet the following conditions:       
-*   Limit definition of 256 fields within a single WIT, and 512 fields across all WITs 
+*   Limit definition of 512 fields within a single WIT, and 512 fields across all WITs 
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files 
 *   The required refname attribute value can't contain disallowed characters nor use a disallowed namespace: System.*Name* and Microsoft.*Name*    
     Reference names must contain only letters, no spaces, and at least one period (.). 
@@ -192,7 +192,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 #### Limit restrictions  
 *   Limit definition to 512 fields 
 *   Limit definition of person-name fields, ones with an attribute of ```syncnamechange=true```, to 64 per work item type
-*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 128 
+*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
 <a id="required-fields"></a>
