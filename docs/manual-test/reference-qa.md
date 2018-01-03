@@ -552,6 +552,14 @@ and provide feedback flow, which are supported only for TFS 2017.
 and allows you to add your screenshots, notes, and videos to this existing bug. 
 For more details, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
 
+### Q: On chrome the mouse offsets towards the left making it difficult to use. Do you have a workaround?
+
+**A:** This is a chrome issue and a workaround is to:
+1. Navigate to chrome://flags/#enable-use-zoom-for-dsf 
+2. Search for Use 'Blink's zoom for device scale factor'
+3. Change it to disabled.
+
+
 *****
 
 <a name="mtmqna"></a>
