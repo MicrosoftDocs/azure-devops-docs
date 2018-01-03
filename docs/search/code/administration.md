@@ -595,6 +595,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 * [Search stops working and no results are shown](#no-results-later)
 * [Search does not show the expected results](#unexpected-results)
 * [TFS server overall performance is affected](#server-slow)
+* ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
 <a name="no-search-box"></a>
 **Search is configured but the Search box is not displayed**
