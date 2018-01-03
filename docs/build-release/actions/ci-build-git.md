@@ -84,7 +84,8 @@ and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don’t result in broken builds for your branches.
 
 1.  Navigate to the **Code** hub in VSTS.
-2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.  3. You will implement a branch policy to protect the master branch.  Click the **ellipsis** to the right of your branch name and click **Branch policies**.    
+2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.
+3. You will implement a branch policy to protect the master branch.  Click the **ellipsis** to the right of your branch name and click **Branch policies**.    
 4.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.    
 5.  Under the **Build validation** menu choose **Add build policy**.
 6.  Choose the appropriate **build definition**.
