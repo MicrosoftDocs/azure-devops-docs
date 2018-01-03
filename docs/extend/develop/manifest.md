@@ -219,7 +219,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with VSTS
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
-* `Microsoft.VisualStudio.Services.Integration`: integrates with boht. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
+* `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
 ### Examples
 
