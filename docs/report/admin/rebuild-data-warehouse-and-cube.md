@@ -13,7 +13,7 @@ ms.date: 08/11/2016
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you must rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you must rebuild the warehouse and cube.  
+Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
 
 The data warehouse aggregates all operational data, such as version control, work item tracking, build, and test. The warehouse corresponds to the relational database, Tfs_Warehouse, and the cube corresponds to Tfs_Analysis, the SQL Server Analysis Services database. 
 

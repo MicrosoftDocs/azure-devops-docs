@@ -54,13 +54,13 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 -   Create a local account to use as the service account and then modify its group membership and other properties according to the security requirements for your business. For more information, see [Create a local user account](http://go.microsoft.com/fwlink/?LinkId=235819).
 
-### Try this next
-
--    [Add users to team projects](../../security/add-users-team-project.md) 
+## Try this next
+> [!div class="nextstepaction"]
+> [Add users to team projects](../../security/add-users-team-project.md) 
 
 ## Q & A
 
 **Q: Can I use groups to restrict access to projects or features in TFS?**
 
-**A:** Yes, you can. You can create specific groups for [restricting access to projects](../../accounts/restrict-access-tfs.md), for [managing access levels](../../security/change-access-levels.md), and other purposes.
+**A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and team projects](../../security/restrict-access.md), for [managing access levels](../../security/change-access-levels.md), and other purposes.
 

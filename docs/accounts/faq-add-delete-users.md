@@ -9,7 +9,7 @@ ms.author: billchi
 ms.date: 10/6/2017
 ---
 
-#	Troubleshoot adding and deleting account users in the VSTS user hub
+# Troubleshoot adding and deleting account users in the VSTS user hub
 
 **VSTS**
 
