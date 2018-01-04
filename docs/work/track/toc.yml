@@ -46,6 +46,8 @@
     href: linking-attachments.md 
 - name: How-to Guides
   items:
+  - name: Create work tracking charts
+    href: ../../report/dashboards/charts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Organize queries, add a query folder
     href: organize-queries.md
   - name: Set query permissions 

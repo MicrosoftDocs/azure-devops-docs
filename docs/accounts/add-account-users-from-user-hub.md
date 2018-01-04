@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: billchi
-ms.date: 11/13/2017
+ms.date: 01/04/2017
 ---
 
 #	Add account users for Visual Studio Team Services (VSTS)
@@ -26,7 +26,7 @@ who also get Basic features, and in some cases, additional features with specifi
 
 [Need more users with Basic features or Visual Studio subscriptions?](add-basic-or-vs-subscription-users.md)
 
-
+> [!NOTE]   
 > You can add people to team projects, 
 > rather than to your account. VSTS automatically assigns them 
 > [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
@@ -39,20 +39,12 @@ who also get Basic features, and in some cases, additional features with specifi
 
 ## How does *access* differ from *permissions*?
 
-Access levels control which features are available to users, while permissions control their access to account resources. 
-[Can't access some features?](faq-add-delete-users.md#feature-access) 
-For TFS, learn [how to change access levels](../security/change-access-levels.md) 
-or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
-
-To control access to account resources instead, learn [how to add permissions](../security/add-users-team-project.md) or 
-[restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
-VSTS account, 
-learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
+Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md). 
 
 
-## Required Permissions
+## Prerequisites
 
-You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
+You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).  
 
 ##	Add users to your VSTS account
 
@@ -64,7 +56,7 @@ link to the account page.
  > [!NOTE]
  > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
  > external to your Azure AD, first 
- > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
+ > [add those users as foreign principals](https://docs.microsoft.com/azure/active-directory/active-directory-create-users#add-a-user) to 
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
  > user to VSTS.
@@ -85,4 +77,11 @@ Then fill in the "Add new users" dialog:
 Next steps: [Manage users in table view](manage-users-table-view.md)
 
 
+## Related notes
 
+- [Connect to a team project](../user-guide/connect-team-projects.md)
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Delete users from VSTS](delete-account-users.md)
+- [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
+- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)

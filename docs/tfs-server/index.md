@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.date: 01/04/2017
 ---
 
 # Server Administration (TFS) 
@@ -37,6 +37,8 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 - [Add administrators](add-administrator-tfs.md)
 - [Configure an SMTP server](admin/setup-customize-alerts.md)
 - [Manage team project collections](./admin/manage-team-project-collections.md)
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) 
+
 
 ## Concepts 
 
@@ -50,15 +52,14 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 
 - [Change permission levels for a user](admin/change-permission-levels.md)
 - [Open the admin console](./command-line/open-admin-console.md)
-- [Restrict access to resources](/vsts/accounts/restrict-access-tfs?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
-- [Change access levels](/vsts/security/change-access-levels?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+- [Change access levels (TFS)](../security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 
 
 
 ## Reference 
-- [Requirements](/vsts/accounts/requirements?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) 
-- [Permissions lookup guide](/vsts/security/permissions-lookup-guide?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
-- [Permissions and groups reference](/vsts/security/permissions?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)   
+- [Requirements](requirements.md) 
+- [Permissions lookup guide](../security/permissions-lookup-guide.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+- [Permissions and groups reference](../security/permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)   
 
 
 ## Resources 
