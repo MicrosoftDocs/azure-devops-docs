@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: billchi
-ms.date: 10/6/2017
+ms.date: 01/04/2017
 ---
 
 #	Add team project members in VSTS
@@ -27,12 +27,12 @@ if not. When a [Visual Studio subscriber](https://www.visualstudio.com/products/
 signs in, they'll get Basic access, and in some cases, additional features with specific extensions, 
 like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
+> [!NOTE]   
 > To manually assign access levels, 
 > [add members to your account instead](add-account-users-assign-access-levels.md). 
-> To control access to account resources, 
-> [add permissions](../security/add-users-team-project.md) or [restrict permissions](restrict-access-tfs.md) instead.
+> To control access to account resources, see [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md) or [Grant or restrict access to select features and functions](../security/restrict-access.md).
 
-## Before you get started
+## Prerequisites 
 
 If you don't have a team project yet, 
 [create your team project first](../user-guide/connect-team-projects.md).
@@ -65,7 +65,6 @@ find and select your team project.
   the gear cog and **Security** from the menu.  Then find the team on the left pane of the security page and select it.  In 
   the right pane, choose the **Members** view (next to **Permissions**), and then you will see a green plus symbol and 
   the **Add...** button.
-
 
 0.	Add your team members.
 	 
@@ -109,8 +108,13 @@ Add them one at a time or all at the same time.
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
-####	Next
 
-*	[Connect to VSTS](../user-guide/connect-team-projects.md) to share code from Xcode, Eclipse, or Visual Studio
-*	[Create a backlog](../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
-*	[Grow and scale your teams](../work/scale/multiple-teams.md)
+## Related notes
+
+- [Connect to a team project](../user-guide/connect-team-projects.md)
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Delete users from VSTS](delete-account-users.md)
+- [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
+- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
+- 

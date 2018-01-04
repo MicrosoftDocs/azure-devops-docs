@@ -52,6 +52,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## How-to Guides
+- [Configure work item query-based charts](../../report/dashboards/charts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
 - [Organize queries, add a query folder](organize-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 - [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
