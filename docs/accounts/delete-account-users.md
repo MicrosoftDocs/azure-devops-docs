@@ -6,32 +6,21 @@ ms.technology: vs-devops-setup
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: billchi
-ms.date: 11/13/2017
+ms.date: 01/04/2017
 ---
 
-#	Delete users for Visual Studio Team Services (VSTS)
+# Delete users for Visual Studio Team Services (VSTS)
 
 **VSTS**
 
-## How does *access* differ from *permissions*?
+If a user no longer requires access to a team project or your VSTS account, you can remove their access to a team project or your account. 
 
-Access levels control which features are available to users, while permissions control their access to account resources. 
-[Can't access some features?](faq-add-delete-users.md#feature-access) 
-For TFS, learn [how to change access levels](../security/change-access-levels.md) 
-or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
+### Prerequisites
 
-To control access to account resources instead, learn [how to add permissions](../security/add-users-team-project.md) or 
-[restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
-VSTS account, 
-learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
+You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json). 
 
 
-## Required permissions
-
-You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
-
-
-##  Delete users from your VSTS account
+##  Remove users from your VSTS account
 
 0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
@@ -62,3 +51,16 @@ so you're not charged in your next Azure billing cycle.
  > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
  > Your bill won't show these change until the next month because paid users are monthly purchases. 
 
+##  Remove users from a team or team project
+
+To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user. 
+
+![Remove user from a security group](_img/delete-user/remove-user.png) 
+
+## Related notes
+
+ [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md). 
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
+- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
