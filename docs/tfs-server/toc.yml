@@ -15,15 +15,19 @@
   - name: Create a team project
     href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Add users to a team project or a team
-    href: ../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json
+    href: ../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Configure an SMTP server
     href: ./admin/setup-customize-alerts.md
   - name: Add administrators or set permissions at the project or collection level
-    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json
+    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Add TFS server administrators
     href: add-administrator-tfs.md
+  - name: Change individual permissions 
+    href: ../security/change-individual-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
+  - name: Grant or restrict permissions to select tasks
+    href: ../security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Manage team project collections
     href: ./admin/manage-team-project-collections.md
   - name: Stop and start services, app pools, and websites
@@ -50,9 +54,9 @@
   - name: Components, terms, and key concepts
     href: ./architecture/tfs-concepts.md
   - name: About permissions and groups
-    href: /vsts/security/about-permissions?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
+    href: ../security/about-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: About access levels
-    href: /vsts/security/access-levels?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
+    href: ../security/access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: Set up AD groups for TFS users
     href: ./admin/setup-ad-groups.md
   - name: Required ports
@@ -69,10 +73,8 @@
     href: ./admin/backup/config-backup-sched-plan.md
   - name: Open the admin console
     href: ./command-line/open-admin-console.md
-  - name: Restrict access to resources
-    href: /vsts/accounts/restrict-access-tfs?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json
   - name: Change user permission and access levels
-    href: /vsts/security/change-access-levels?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json
+    href: ../security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json
   - name: Install TFS
     items:
     - name: Dual server install
@@ -203,8 +205,6 @@
     href: ./admin/setup-secure-sockets-layer.md
   - name: Manage TFVC file types
     href: ./admin/manage-file-types.md
-  - name: Restrict access to resources
-    href: ../accounts/restrict-access-tfs.md?toc=/vsts/tfs-server/toc.json
   - name: Install proxy server and set up remote site
     href: ./install/install-proxy-setup-remote.md
   - name: Change site and certificate settings
@@ -219,8 +219,10 @@
     href: requirement-changes-tfs15.md
   - name: Service accounts dependencies
     href: ./admin/service-accounts-dependencies-tfs.md
+  - name: Default permission and access assignments
+    href: ../security/permissions-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Permission lookup guide 
-    href: /vsts/security/permissions-lookup-guide?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
+    href: ../security/permissions-lookup-guide.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: Permissions and groups reference
     href: /vsts/security/permissions?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: Supported topologies
