@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.manager: douge
 ms.author: billchi
-ms.date: 11/13/2017
+ms.date: 01/04/2017
 ---
 
 #	Manage users in user hub table view for VSTS
@@ -26,7 +26,7 @@ who also get Basic features, and in some cases, additional features with specifi
 
 [Need more users with Basic features or Visual Studio subscriptions?](../billing/buy-basic-access-add-users.md)
 
-
+> [!NOTE]   
 > You can add people to team projects, 
 > rather than to your account. VSTS automatically assigns them 
 > [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
@@ -39,20 +39,13 @@ who also get Basic features, and in some cases, additional features with specifi
 
 ## How does *access* differ from *permissions*?
 
-Access levels control which features are available to users, while permissions control their access to account resources. 
-[Can't access some features?](faq-add-delete-users.md#feature-access) 
-For TFS, learn [how to change access levels](../security/change-access-levels.md) 
-or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
-
-To control access to account resources instead, learn [how to add permissions](../security/add-users-team-project.md) or 
-[restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
-VSTS account, 
-learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
+Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md). 
 
 
-## Required Permissions
+## Prerequisites
 
-You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
+
+You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).   
 
 
 ##	Manage users in table view
@@ -73,3 +66,12 @@ and **Remove from account** (deletes user).
 ![Account level table of users with key information per user](_img/user-hub/acct-level-users-718.png)
 
 
+## Related notes
+
+- [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
+- [Connect to a team project](../user-guide/connect-team-projects.md)
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Delete users from VSTS](delete-account-users.md)
+- [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
+- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
