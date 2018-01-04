@@ -4740,6 +4740,11 @@
         "source_path": "docs/billing/get-hockeyapp.md",
         "redirect_url": "https://www.visualstudio.com/app-center/",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/restrict-access-tfs.md",
+        "redirect_url": "/vsts/security/restrict-access",
+        "redirect_document_id": false
        }
     ]
 }
