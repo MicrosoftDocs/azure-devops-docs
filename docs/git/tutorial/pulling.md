@@ -54,7 +54,7 @@ Changes downloaded by `fetch` are not applied until you **Pull** or **Sync** the
 
   ![Fetch](_img/pulling/fetch.png)
 
-0. You can review the results of the fetch operation in the incomming commits section.
+0. You can review the results of the fetch operation in the incoming commits section.
 
   ![Incoming commits](_img/pulling/incoming-commits.png)
 
