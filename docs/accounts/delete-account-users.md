@@ -17,7 +17,7 @@ If a user no longer requires access to a team project or your VSTS account, you 
 
 ### Prerequisites
 
-You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json). 
+- You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json). 
 
 
 ##  Remove users from your VSTS account

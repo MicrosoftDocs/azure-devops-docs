@@ -9,9 +9,10 @@ ms.author: billchi
 ms.date: 11/14/2017
 ---
 
-**VSTS**
 
 # Buy VSTS resources for your customers
+
+**VSTS**
 
 Partners in the CSP program can purchase [VSTS resources](https://www.visualstudio.com/team-services/pricing) for 
 their customers including Team Services basic user, Test Manager, Package Management, Private Pipelines, and 
