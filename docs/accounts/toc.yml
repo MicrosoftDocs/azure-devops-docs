@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Manage your account
+  - name: About account management
     href: account-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
@@ -40,7 +40,7 @@
     href: add-basic-or-vs-subscription-users.md
 - name: How-to Guides
   items:
-  - name: Manage accounts
+  - name: Manage your account
     items:
     - name: Change account owner
       href: change-account-ownership-vs.md
@@ -70,7 +70,7 @@
       href: save-team-project-data.md
     - name: Connect to team projects
       href: /vsts/user-guide/connect-team-projects?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Manage account access
+  - name: Manage access to your account
     items:
     - name: Add users to your account
       href: add-account-users-from-user-hub.md

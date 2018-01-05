@@ -4,7 +4,7 @@ description: A public collection of VSTS-specific topics shared for partners.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-ms.date: 09/29/2016
+ms.date: 01/04/2018
 ms.author: kaelli
 author: kaelli
 ---
@@ -28,7 +28,6 @@ Here you'll find more resources to support your development efforts with Visual 
 *   [Effective feature isolation on TFVC](effective-feature-isolation-on-tfvc.md)
 *   [Effective TFVC branching strategies for DevOps](effective-tfvc-branching-strategies-for-devops.md)
 *   [Git lost my changes?](git-log-history-simplification.md)
-*   [How dates work in Git](git-dates.md)
 *   [Move Git repos between team projects](move-git-repos-between-team-projects.md)
 *   [Remove large binaries from Git](remove-binaries.md)
 *   [Migrate from Subversion to Git](perform-migration-from-svn-to-git.md)
