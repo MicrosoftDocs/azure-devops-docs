@@ -9,7 +9,7 @@ ms.author: billchi
 ms.date: 01/04/2017
 ---
 
-#	Manage users in user hub table view for VSTS
+# Manage users in user hub table view for VSTS
 
 **VSTS**
 
@@ -37,9 +37,6 @@ who also get Basic features, and in some cases, additional features with specifi
 > When people don't need access to your VSTS account anymore, [delete them](delete-account-users.md) from your account. 
 
 
-## How does *access* differ from *permissions*?
-
-Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md). 
 
 
 ## Prerequisites
@@ -55,15 +52,21 @@ access levels.  You can multi-select users and bulk edit their extensions and ac
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
 
-Go to the User Hub:
+0. If you haven't yet enabled **Streamlined User Management**, do that now. See [Add users to your VSTS account or team project](add-account-users-from-user-hub.md).  
+ 
+0. Open the **Users** page for your account. Click ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option
+ 
+	![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
 
-![go to the user hub](_img/_shared/users-hub-updated.png)
+	Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
 
-Choose a user or group of users in the table and then choose the **...** in the name column to see the context 
-menu.  The menu supports **Change access levels**, **Manage projects**, **Manage extensions** (if there are extensions), 
+	![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
+
+0. Choose a user or group of users in the table and then click the **...** icon at the end of the name column to open the context 
+menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from account** (deletes user).
 
-![Account level table of users with key information per user](_img/user-hub/acct-level-users-718.png)
+	![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
 
 
 ## Related notes
@@ -75,3 +78,8 @@ and **Remove from account** (deletes user).
 - [Delete users from VSTS](delete-account-users.md)
 - [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
 - [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
+
+
+### How does *access* differ from *permissions*?
+
+Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md). 
