@@ -10,7 +10,10 @@ ms.author: billchi
 ms.date: 12/19/2017
 ---
 
-#  VSTS billing overview
+#  Billing overview
+
+**VSTS**
+
 
 VSTS billing covers:
 

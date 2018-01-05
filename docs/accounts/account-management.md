@@ -11,15 +11,20 @@ ms.date: 10/6/2017
 ---
 
 
-# Manage your account
+# About account management  
 
 **VSTS**
 
-With Visual Studio Team Services (VSTS), you can collaborate with others to develop applications using our cloud service.  
+With a Visual Studio Team Services (VSTS) account, you gain access to platform in which you can:
+* Collaborate with others to develop applications using our cloud service
+* Plan and track your work as well as code defects and issues 
+* Set up continuous integration and deployment 
+* Integrate with other services using service hooks 
+* Obtain additional features through Marketplace extensions   
 
 ## Create your account
 
-To get started, you'll want to [create your VSTS account](create-account-msa-or-work-student.md) and then invite others to collaborate within your account.  
+To get started, you'll want to [create your VSTS account](create-account-msa-or-work-student.md) and then invite others so they can access your account.  
 
 You'll choose Git or Team Foundation as your version control, 
 so that VSTS can create your team project for code and other assets, 
@@ -57,7 +62,7 @@ Or [add users to your team project](add-team-members-vs.md),
 and let VSTS assign the next available access to them.
 
 ## Try extensions for free
-Help your team do more with VSTS extensions. 
+Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/). 
 For example, VSTS account owners can 
 try the Test Manager extension free for 90 days. 
 During the trial, all users with Basic access can 

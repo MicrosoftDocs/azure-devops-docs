@@ -22,8 +22,6 @@
       href: effective-tfvc-branching-strategies-for-devops.md
     - name: Git lost my changes?
       href: git-log-history-simplification.md
-    - name: How dates work in Git
-      href: git-dates.md
     - name: Move Git repos between team projects
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
