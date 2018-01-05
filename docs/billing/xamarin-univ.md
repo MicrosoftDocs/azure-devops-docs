@@ -11,6 +11,8 @@ ms.date: 10/6/2017
 
 #	Buy Xamarin University
 
+**VSTS**
+
 [Xamarin University](https://www.xamarin.com/university) offers live, online classes, office hours, self-guided learning,
 and guest lectures.
 

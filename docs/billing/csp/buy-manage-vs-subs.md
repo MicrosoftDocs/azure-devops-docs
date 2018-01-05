@@ -8,9 +8,10 @@ ms.author: billchi
 ms.date: 10/6/2017
 ---
 
-**Visual Studio**
 
 # Buy and manage Visual Studio cloud subscriptions for your customers
+
+**Visual Studio**
 
 Partners in the CSP program can 
 purchase Professional or Enterprise [Visual Studio cloud subscriptions](https://www.visualstudio.com/vs/pricing) for 
