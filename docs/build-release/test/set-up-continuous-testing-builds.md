@@ -117,5 +117,7 @@ Find problems early after changes are checked in and built by running continuous
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)
 * [End-to-end example of continuous testing](example-continuous-testing.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
