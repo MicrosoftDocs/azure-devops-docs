@@ -76,7 +76,7 @@ If working offline is important to you, then you should consider using a local w
 
 3.  In **Solution Explorer**, open the context menu for the files that you edited offline, and then choose **Check In** to commit the changes to the server.
 
-<a name="Admin_Settings">
+<a name="Admin_Settings"><a/>
 
 ## Manage team project collection workspace settings for your team
 

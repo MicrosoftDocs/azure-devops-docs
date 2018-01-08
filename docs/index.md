@@ -219,9 +219,10 @@ featureFlags:
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a></li>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -537,8 +538,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Unit Testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage.</p>
+                                                    <h3>Unit and Functional Testing</h3>
+                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -578,6 +579,26 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Load Testing</h3>
                                                     <p>Performance test your code with hundreds of thousands of users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
                                                 </div>
                                             </div>
                                         </div>
