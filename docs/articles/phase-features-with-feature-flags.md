@@ -28,7 +28,7 @@ Before you introduce feature flags to your engineering process, it's important t
 - Which users are you planning to target? For example, do you want to target specific or all users?
 - Would you like users to decide which features they want to use?
 - What's the value of embracing feature flags as part of your engineering process?
-- What's the cost implement feature flags in your engineering process?
+- What's the cost to implement feature flags in your engineering process?
 
 > [!NOTE]
 > 
