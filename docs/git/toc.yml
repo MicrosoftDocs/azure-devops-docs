@@ -96,6 +96,8 @@
     href: how-to/create-pr-status-server-with-azure-functions.md
   - name: Configure branch policy for an external service
     href: how-to/pr-status-policy.md
+  - name: Define a CI build for your repo
+    href: ../build-release/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
