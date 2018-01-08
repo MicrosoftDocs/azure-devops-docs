@@ -41,6 +41,8 @@ choose the technologies and frameworks, then test your changes continuously in a
 * [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
 * [Associate tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate results with requirements](associate-automated-results-with-requirements.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 ## Reference
 

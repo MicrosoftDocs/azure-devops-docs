@@ -28,6 +28,10 @@
     href: associate-automated-test-with-test-case.md
   - name: Associate results with requirements
     href: associate-automated-results-with-requirements.md
+  - name: Use Test Impact Analysis
+    href: test-impact-analysis.md
+  - name: Run tests in parallel
+    href: run-tests-in-parallel.md
 - name: Reference
   items:
   - name: Unified agents and phases
