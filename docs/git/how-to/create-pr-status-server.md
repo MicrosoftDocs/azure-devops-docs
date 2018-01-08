@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
-ms.date: 12/12/2017
+ms.date: 01/08/2018
 ---
 
 # Create a pull request status server with Node.js

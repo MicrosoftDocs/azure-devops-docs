@@ -1,6 +1,6 @@
 ---
 title: Associate an automated test with a test case
-description: Manual and exploratory testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76

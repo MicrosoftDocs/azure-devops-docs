@@ -31,7 +31,7 @@ Although it can be frustrating to encounter conflicts, the system provides infor
 
 -   [Get tips](resolve-team-foundation-version-control-conflicts.md#tips)
 
-<a name="manage_items">
+<a name="manage_items"></a>
 
 ## Resolve conflicts
 
@@ -54,7 +54,7 @@ Each conflict contains information and sometimes links that might help you resol
 
 -   ![](_img/resolve-team-foundation-version-control-conflicts/IC277133.png) **Compare** (or the menu to the right of the button and then choose a command). The [Diff](compare-files.md) window appears.
 
-<a name="autoresolve">
+<a name="autoresolve"></a>
 
 ## AutoResolve all conflicts
 
@@ -68,7 +68,7 @@ By default the system automatically attempts to **AutoResolve All** conflicts un
 
 The system attempts to automatically resolve the conflicts displayed in the Pending Changes window. Any conflicts the system was unable to resolve will remain in the window. You have to [manually resolve](resolve-team-foundation-version-control-conflicts.md#manual) these conflicts.
 
-<a name="automerge">
+<a name="automerge"></a>
 
 ## AutoMerge a single conflict
 
@@ -80,7 +80,7 @@ Choose **AutoMerge** if you want to try to resolve selected conflicts using all 
 > **Note:**  
 > If **AutoMerge** is disabled, then this conflict must be [manually resolved](resolve-team-foundation-version-control-conflicts.md#manual).
 
-<a name="manual">
+<a name="manual"></a>
 
 ## Manually resolve a single conflict
 
@@ -113,7 +113,7 @@ In this window you can:
 
 When are satisfied with the contents of the **Result** pane, choose **Accept Merge**.
 
-<a name="automatic_options">
+<a name="automatic_options"></a>
 
 ## Understand the automatic options
 
@@ -182,7 +182,7 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 </tbody>
 </table>
 
-<a name="command_prompt">
+<a name="command_prompt"></a>
 
 ## Work from the command prompt
 
