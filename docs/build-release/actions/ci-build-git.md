@@ -41,8 +41,8 @@ A common workflow with Git is to create temporary branches from your master bran
 1. Click **Build and Release** menu and click **Builds**.
 2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.
 3. Click the **Triggers** menu for your build.  Ensure you have **Continuous Integration** enabled.
-4.  Click the **+ Add** icon under **Branch filters**.
-5.  Under the **Branch specification** dropdown, type **features/*** in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch.
+4.  Click the **+ Add** icon under **Branch Filters**.
+5.  Under the **Branch specification** dropdown, type **features/*** in the "Filter my Branches" text box then hit **ENTER**.  The trigger now supports CI for all feature branches that match the wildcard as well as the master branch.
     ![Code hub in VSTS portal](_img/ci-build-git/triggerwildcard.png)
 6.  Click the **Save & queue** menu and then click **Save**.
 
