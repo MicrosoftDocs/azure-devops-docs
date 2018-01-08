@@ -22,9 +22,6 @@ Other key feature highlights include:
 * [Skip scheduled builds if nothing has changed in the repo](#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) - Conserve resources and avoid noise of extra builds.
 * [Cloud Solution Provider (CSP) purchasing now generally available](#cloud-solution-provider-purchasing-now-generally-available) - Enable the deeper engagement that comes by working through the CSP program.
 
-> [!NOTE]
-> The features discussed in this post will be rolling out through the rest of this week.
-
 ## Code
 
 ### Track code pushes to a Git repo to builds and releases
