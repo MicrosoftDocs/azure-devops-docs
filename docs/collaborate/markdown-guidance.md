@@ -133,8 +133,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Example:**  
 ```
 1. First item.
-2. Second item.
-3. Third item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
