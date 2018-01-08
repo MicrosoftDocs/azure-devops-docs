@@ -117,6 +117,8 @@ will automatically execute the unit tests it contains.
 >For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
 [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
+For information about reducing test running time, see
+[Speed up testing with Test Impact Analysis](test-impact-analysis.md) and [Run tests in parallel](run-tests-in-parallel.md).
 
 <a name="configure-cd"></a>
 ## Configure continuous deployment
