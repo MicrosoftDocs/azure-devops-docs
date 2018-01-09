@@ -39,7 +39,7 @@ The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation
 
 TFS Version | Supported client operating systems
 ------------|--------------------------------
-TFS 2018    | Windows 10 (Professional, Enterprise)
+TFS 2018    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
@@ -571,19 +571,18 @@ The goal is simply to allow developers to continue working with legacy applicati
 New versions of Team Explorer Everywhere are released through [GitHub](https://github.com/Microsoft/team-explorer-everywhere)
 and the [Eclipse Marketplace](https://marketplace.eclipse.org/content/team-explorer-everywhere).
 To maximize compatibility with the latest version of Team Foundation Server, you should use the latest version of Team Explorer Everywhere.
-If you need support for an older version of Eclipse, Java, or an Operating System,
+If you need support for an older version of Eclipse, Java, or an operating system,
 you may choose to use an older version of Team Explorer Everywhere that encompasses the range you need.
 Multiple versions of Team Explorer Everywhere can also be installed side-by-side if you are running multiple versions of Eclipse.
 
-The following table includes all versions of Team Explorer Everywhere that are compatible with TFS 2013, and lists other TFS and Eclipse compatibility.
-
-Team Explorer Everywhere          | Eclipse version | TFS 2017                    | TFS 2015                    | TFS 2013                    | TFS 2012                    | TFS 2010                    | TFS 2008                    | TFS 2005
-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------
-Team Explorer Everywhere 2015     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2013     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2012     | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010 SP1 | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere           | Eclipse version | VSTS, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
+-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
+Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2013      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2012      | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010 SP1  | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
 
 <a name="supported-browsers"></a>
 ### Browsers
@@ -591,12 +590,11 @@ Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png
 You can use these browsers with VSTS 
 and to access TFS with the web client.
 
-Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
----------------|-------------|-------------------|----------------|-------------|-------------
-VSTS  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2017       | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
-TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
+Version                   | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
+--------------------------|-------------|-------------------|----------------|-------------|-------------
+VSTS, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+TFS 2015                  | most recent | 9 and later       | 5 and later    | most recent | most recent
+TFS 2013                  |             | 9 and later       | 5 and later    | most recent | most recent
 
 Edge, Firefox, and Chrome automatically update themselves, 
 so VSTS and TFS support the most recent version.
@@ -605,9 +603,9 @@ so VSTS and TFS support the most recent version.
 
 Office integration supports the following clients: [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
 
-
 TFS version | Supported Office versions
 ------------|--------------------------
+TFS 2018    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2017    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2015    | Office 2013<br/>Office 2010<br/>Office 2007
 TFS 2013    | Office 2013<br/>Office 2010<br/>Office 2007

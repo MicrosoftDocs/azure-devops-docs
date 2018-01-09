@@ -57,6 +57,8 @@
     href: ../security/about-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: About access levels
     href: ../security/access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
+  - name: Back up and restore
+    href: ./admin/backup/back-up-restore-tfs.md
   - name: Set up AD groups for TFS users
     href: ./admin/setup-ad-groups.md
   - name: Required ports
@@ -124,7 +126,6 @@
     - name: Share information using the project portal
       href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Backup and restore 
-    href: ./admin/backup/back-up-restore-tfs.md
     items:
     - name: Databases and deployment topologies
       href: ./admin/backup/backup-db-architecture.md
