@@ -39,7 +39,7 @@ The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation
 
 TFS Version | Supported client operating systems
 ------------|--------------------------------
-TFS 2018    | Windows 10 (Professional, Enterprise)
+TFS 2018    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
