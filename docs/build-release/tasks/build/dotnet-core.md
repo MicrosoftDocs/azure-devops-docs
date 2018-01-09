@@ -234,6 +234,12 @@ None
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+### Why is my build or publish step failing to restore packages?
+
+Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used. 
+
+To fix this issue, add the `--no-restore` flag to the Arguments textbox.
+
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 
 [!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
