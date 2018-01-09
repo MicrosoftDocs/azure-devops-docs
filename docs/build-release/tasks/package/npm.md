@@ -154,6 +154,10 @@ ms.date: 07/05/2017
         <td>Command and arguments</td>
         <td>
             The custom command and arguments you wish to be executed.
+            <br />
+            If your arguments contain double quotes (\"), escape them with a slash (\\), and surround the escaped string with double quotes (\").
+            <br />
+            Example: to run `npm run myTask -- --users='{"foo":"bar"}'`, provide this input: `run myTask -- --users="{\"foo\":\"bar\"}"`.
         </td>
     </tr>
     <tr>
