@@ -62,8 +62,13 @@ to the Azure subscription associated with your directory.
 invite a user from your directory to your VSTS account 
 and confirm that they can sign in.
 
+0.  If you use the Git command line tool, the tenant cache for the [Git Credential 
+Manager may need to be cleared](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-account-from-azure-active-directory).
+Deleting the **%LocalAppData%\GitCredentialManager\tenant.cache** file on each client 
+machine will resolve the issue.
+
 0.  If you use alternate credentials with tools that run outside a web browser, 
-like the Git command line tool, those tools won't work anymore. 
+those tools won't work anymore. 
 You must [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) 
 again for the VSTS account that you connected.
 
