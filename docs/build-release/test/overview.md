@@ -38,6 +38,8 @@ automatically with each build.
 * [Learn more about test task steps](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 <a name="test-frameworks"></a>
 ## Any test type and any test framework
@@ -67,6 +69,7 @@ your app.
 
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md).
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
+* [Get Test Impact Analysis reports](test-impact-analysis.md)
 
 <a name="devops-practice"></a>
 ## Advanced DevOps practices
