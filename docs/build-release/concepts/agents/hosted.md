@@ -24,7 +24,7 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, whil
 * **Hosted Linux** if your team uses development tools on Ubuntu.
 
 * **Hosted macOS Preview** if your team uses development tools on macOS.
-  
+
   This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
   For manual selection of tool versions on this hosted agent, see **Q & A** below.
@@ -35,7 +35,7 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, whil
 
 We update the software on the hosted agents once every month.
 
-* [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2017-on-windows-2016/image.md).
+* [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017/Vs2017-Server2016-Readme.md).
 * [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile).
 * [Inventory of software currently installed on the Hosted macOS Preview agent](https://docs.microsoft.com/en-us/mobile-center/build/software).
 * [Inventory of software currently installed on the Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
@@ -91,9 +91,9 @@ The hosted XAML build controller is no longer supported. If you have an account 
   To manually select a Xamarin SDK version to use on the **Hosted macOS Preview** agent, before your Xamarin build step, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
 
   `/bin/bash –c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
-  
+
   Mono versions associated with Xamarin SDK versions on the **Hosted macOS Preview** agent can be found [here](https://docs.microsoft.com/en-us/mobile-center/build/software#xamarin).
-  
+
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
 * **Xcode**
