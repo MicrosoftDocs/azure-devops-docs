@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 7d5d9c39-ea7b-44bc-ae69-a2ce10a0c27e
 ms.manager: douge
-ms.author: aaronha
+ms.author: elbatk
 ms.date: 12/15/2016
 ---
 
@@ -13,107 +13,15 @@ ms.date: 12/15/2016
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can restore the data for your deployment of Visual Studio Team
-Foundation Server to a different server or instance from where it was
-originally stored. You might have to make such a change if, for
-example, you want to upgrade your data-tier server, or hardware on the
-original server failed. To help ensure successful recovery of data in
-this scenario, you should configure marked transactions as part of your
-backup strategy. For more information, see [Back Up Team Foundation Server](manually-backup-tfs.md).
+> [!NOTE]
+> Check out the [Back up and Restore concepts page](./back-up-restore-tfs.md#diff-server) for an introduction to restoring data to a different server for TFS. 
+>
+> SharePoint integration with TFS is deprecated after TFS 2017.
 
-To restore data to a different server, you must perform different
-steps from those that you perform to restore data to the same server.
-For more information about how to restore data to the same server or
-servers, see [Restore Data to the Same Location](restore-data-same-location.md)</span>. For
-information about how to restore a single-server deployment after
-hardware fails, see [Restore a single server deployment to new hardware](tut-single-svr-home.md). If your deployment uses
-SharePoint Products, you must perform additional steps to back up and
-restore its databases, as detailed in the procedures in this topic.
-
-> **Note:** 
-> 
-> You can automate some procedures in this topic by using wizards in the
-> September 2010 release of power tools for Team Foundation Server. These
-> wizards help simplify the process for backing up and restoring your
-> deployment. However, they do not help back up or restore Visual Studio
-> Lab Management, and you should not use them to back up or restore the
-> databases for SharePoint Products or Microsoft Project Server. For more
-> information, see the following page on the Microsoft website: [Team Foundation Server Power Tools September 2010](http://go.microsoft.com/fwlink/?LinkId=202027).                  
-
-The steps that you must perform to restore data to different servers or
-instances vary, based on how Team Foundation Server is installed and
-configured. For simplicity, the procedures in this topic are structured
-as they would apply to restoring only the databases for Team Foundation
-Server in a moderately complex deployment, as the following illustration
-shows:
-
-![Example moderate topology with databases](../_img/example-moderately-complex-dbs.png)
-
-Your topology does not have to match this example for you to
-successfully follow the procedures in this topic, but you might have to
-adjust the steps. For example, if you have a deployment where all
-components are installed on a single physical server, you would perform
-all procedures on the server that is running Team Foundation Server. If
-databases for team project collections were originally deployed on more
-than one server, you must perform the steps to restore each database on
-the server or servers that you specify. You do not have to restore the
-databases in the same configuration as before, but you must restore each
-database. You must also restore the databases for SharePoint Products,
-Microsoft Project Server, and SQL Server Reporting Services in some
-cases, such as if they were all hosted on a server that failed. For more
-information about which components might be deployed on each server, see
-the following topics:
-
--   [Understanding Backing Up Team Foundation Server](backup-db-architecture.md)
-
--   [Team Foundation Server Architecture](../../architecture/architecture.md)
-
--   [Examples of Simple Topology](../../architecture/examples-simple-topo.md)
-
--   [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md)
-
--   [Examples of Complex Topology](../../architecture/examples-complex-topo.md)
-
-**In this topic**
-
-To restore data for Team Foundation to a different server or instance,
-you must complete the procedures that your deployment topology requires
-in the following sequence:
-
-1.  [Required Permissions](#RequiredPermissions)
-
-2.  [Back Up Data](#BackupData)
-
-3.  [Install and Configure SQL Server on the New Hardware](#InstallAndConfigure)
-
-4.  [Stop Services That Team Foundation Server Uses](#StopServices)
-
-5.  [Restore the Databases](#RestoreDB)
-
-6.  [Redirect SharePoint Products to the New Location of the Content Database](#RedirectSPT)
-
-7.  [Change the Database in Reporting Services Configuration Manager](#ChangeSQLRS)
-
-8.  [Prepare the New SQL Server or Instance for Team Foundation Server](#ConfigNewSQL)
-
-9.  [Change the Ownership of the Restored Databases](#ChangeOwnership)
-
-10. [Redirect Team Foundation Server to Remote Collection Databases](#RedirectSQLRTPC)
-
-11. [Update Service Accounts](#UpdateNetworkService)
-
-12. [Register the Location of the Restored Databases](#RegisterDB)
-
-13. [Configure Reporting and Analysis Services](#RestoreWarehouse)
-
-14. [Clear the Data Cache On Servers](#ClearData)
-
-15. [Restart Services That Team Foundation Server Uses](#RestartServices)
-
-16. [Refresh the Data Cache on Client Computers](#RefreshDataCache)
 
 <a name="RequiredPermissions"></a>
-**Required Permissions**
+
+## Prerequisites
 
 To perform this procedure, you must be a member of the following groups
 or have the following permissions:
@@ -162,7 +70,7 @@ following requirements on a computer that is running Windows Server
 For more information, see the technet article: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 
 <a name="BackupData"></a>
-## Back up data
+## Step 1: Back up data
 
 To restore data from the original deployment of Team Foundation Server,
 you must have a complete set of data backups for the SQL
@@ -186,7 +94,7 @@ and [Back Up the Reporting Services Encryption Key](manually-backup-tfs.md#repor
 > content and configuration databases.
 
 <a name="InstallAndConfigure"></a>
-## Install and Configure SQL Server on the New Hardware
+## Step 2: Install and Configure SQL Server on the New Hardware
 
 To restore data for Team Foundation, you must install SQL Server on the
 computer to which you want to move the databases for Team Foundation
@@ -204,7 +112,7 @@ on a server that already has a matching version installed.
 For more information, see [Installing Team Foundation Components](../../install/get-started.md).
 
 <a name="StopServices"></a>
-## Stop Services that Team Foundation Server Uses
+## Step 3: Stop Services that Team Foundation Server Uses
 
 Before you can restore data, you must stop all services that Team
 Foundation Server uses on every server. If you have optional components
@@ -223,7 +131,7 @@ To stop services that Team Foundation Server uses:
 
 <a name="RestoreDB"></a>
 
-## Restore the Databases
+## Step 4: Restore the Databases
 
 After you stop the services, you can restore data for Team
 Foundation by using tools that SQL Server provides.
@@ -440,7 +348,7 @@ For more information about these databases, see [Understanding Backing Up Team F
 > Services Configuration)](http://go.microsoft.com/fwlink/?LinkId=158327).
 
 <a name="RedirectSPT"></a>
-## Redirect SharePoint Products to the New Location of the Content Database
+## Step 5: Redirect SharePoint Products to the New Location of the Content Database
 
 You can skip this procedure if SharePoint Products is not configured
 for use with your deployment of Team Foundation Server or if you are not
@@ -461,7 +369,7 @@ To redirect project sites to use the content database on the new data-tier serve
     [Redirect SharePoint Products to Use a New Content Database](https://msdn.microsoft.com/en-us/library/cc668750).
 
 <a name="ChangeSQLRS"></a>
-## Change the Database in Reporting Services Configuration Manager
+## Step 6: Change the Database in Reporting Services Configuration Manager
 
 You can skip this procedure if you do not have a report server that is
 configured for use with your deployment of Team Foundation Server or you
@@ -482,7 +390,7 @@ To redirect Reporting Services to connect to the new server:
     For more information, see [Redirect Reporting Services to Connect to a Different Server](https://msdn.microsoft.com/en-us/library/cc668756).
 
 <a name="ConfigNewSQL"></a>
-## Prepare SQL Server for Team Foundation Server
+## Step 7: Prepare SQL Server for Team Foundation Server
 
 Before the restored databases will work correctly, you must use the
 **TFSConfig PrepSQL** command to prepare SQL Server to host databases
@@ -513,7 +421,7 @@ To prepare SQL Server to host databases for Team Foundation Server:
     restored a database for Team Foundation Server.
 
 <a name="ChangeOwnership"></a>
-## Change the Ownership of the Restored Databases
+## Step 8: Change the Ownership of the Restored Databases
 
 You must use the **TFSConfig Accounts ResetOwner** command to change the
 database owner login for the restored databases to the current user.
@@ -544,7 +452,7 @@ To change the ownership of the restored databases to the current user:
     Team Foundation Server uses.
 
 <a name="RedirectSQLRTPC"></a>
-## Redirect Team Foundation Server to Remote Collection Databases
+## Step 9: Redirect Team Foundation Server to Remote Collection Databases
 
 You can skip this procedure if all databases for collections, Analysis
 Services, and reporting are on the same server and instance as the
@@ -586,7 +494,7 @@ To redirect Team Foundation Server to remote databases:
     > For more information, see [RemapDBs Command](../../command-line/tfsconfig-cmd.md#remapdbs).
 
 <a name="UpdateNetworkService"></a>
-## Update All Service Accounts
+## Step 10: Update All Service Accounts
 
 You must update the service account for Team Foundation Server
 (TFSService) and the data sources account (TFSReports). Even if these
@@ -629,7 +537,7 @@ To update service accounts:
 
 <a name="RegisterDB"></a>
 
-## Register the Location of the Restored Databases if You Are Not Restoring the Application Tier
+## Step 11: Register the Location of the Restored Databases if You Are Not Restoring the Application Tier
 
 You can skip this procedure if you are also restoring the application
 tier to a different server.
@@ -657,7 +565,7 @@ To register the location of the databases:
     [RegisterDB Command](../../command-line/tfsconfig-cmd.md#registerdb).
 
 <a name="RestoreWarehouse"></a>
-## Configure Reporting and Analysis Services
+## Step 12: Configure Reporting and Analysis Services
 
 You can skip this procedure if you are not using a report server as part
 of your deployment. If your deployment uses a report server, you must
@@ -790,7 +698,7 @@ To reconfigure reporting and Analysis Services:
     the Visual Studio Team Foundation Background Job Agent.
 
 <a name="ClearData"></a>
-## Clear the Data Cache on Servers
+## Step 13: Clear the Data Cache on Servers
 
 Each application-tier server in your deployment of Team Foundation
 utilizes a file cache so that users can more quickly download files from
@@ -821,7 +729,7 @@ To clear the data cache:
 
 
 <a name="RestartServices"></a>
-## Restart Services that Team Foundation Server Uses
+## Step 14: Restart Services that Team Foundation Server Uses
 
 After you restore the data, you must restart the services before your
 deployment will operate and be available to users.
@@ -840,7 +748,7 @@ To restart services that Team Foundation Server uses:
 
 
 <a name="RefreshDataCache"></a>
-## Refresh the Data Cache on Client Computers
+## Step 15: Refresh the Data Cache on Client Computers
 
 To refresh the data cache on client computers:
 
