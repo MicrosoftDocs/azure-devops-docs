@@ -436,7 +436,7 @@ After it is fixed, all the tests pass:
 >**Tip:**  
 >Make sure every tests passes after every change that you make to the code.
 
-<a name="coverage">
+<a name="coverage"></a>
 
 ## Code coverage
 
