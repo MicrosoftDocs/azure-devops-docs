@@ -1,6 +1,6 @@
 ---
 title: Access data from Power BI desktop  
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop   
+description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop OData feed  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
@@ -9,30 +9,28 @@ ms.author: kaelli
 ms.date: 11/13/2017
 ---
 
-# Access data through Power BI desktop 
+# Connect to VSTS using the Power BI OData feed
 
-**VSTS**  
+**VSTS** 
 
-You can access the Analytics Service data through the Power BI Desktop Visual Studio Team Services Connector and then publish it to PowerBI.com. (For any account that has alternate credentials enabled - OAuth (Organizational Accounts) is currently not supported). Unlike the [Power BI Content Pack](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs) which we previously published, no pre-configured file is required. You can simply just start working in Power BI Desktop.
+You can access the Analytics Service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+##Accessing the VSTS OData feed
+1. Make sure you have installed the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 
->[!IMPORTANT]
->The default experience for the Power BI OData Connector is not intended for use on accounts with over 50,000 work items. On larger accounts the data set needs to reduced by writing OData queries.  OData queries can be directly used in Power BI through the [VSTS.Feed](../powerbi/data-connector-functions.md) function .
+2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md)
 
-##Retrieve data manually
+3. To get started, Open Power BI Desktop. If you need to install it, [do that now](https://powerbi.microsoft.com/desktop).  
 
-1. To get started, Open Power BI Desktop. If you need to install it, [do that now](https://powerbi.microsoft.com/desktop).  
-
-2. Click Get Data from either the welcome page or the Home ribbon.  
+4. Click Get Data from either the welcome page or the Home ribbon.  
 
 	![Power BI Desktop Get Data ](_img/access-analytics-pbi-get-data.png)  
 
-3. Next, select Other > OData Feed and click Connect.  
+5. Next, select Other > OData Feed and click Connect.  
 
 	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
 
-4.	Enter the URL in the format into a supported browser:  
+6.	Enter the URL in the format into a supported browser:  
 
 	```OData
 	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
@@ -45,18 +43,20 @@ You can access the Analytics Service data through the Power BI Desktop Visual St
 	>[!NOTE]  
 	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
-5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).  
-6. Next, select the entities you want to retrieve data for by checking those entities.
+7. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](../analytics/client-authentication-options.md).  
+8. Next, select the entities you want to retrieve data for by checking those entities.
 
 	>[!IMPORTANT]  
-	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load correctly. In order to perform trend analysis, narrow the scope of data being retrieved to the specific items and time frame and pull this information in with a separate OData query.  
+	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load. **Snapshot** tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md)
 
 	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
 	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
 
 ### Handle relationships
- 
+
+Understanding the [Analytics data model](../extend-analytics/data-model-analytics-service.md) is critical to building good relationships between entities. 
+
 By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
 
 ![Entity relationships](_img/pbi-relationships.png)  

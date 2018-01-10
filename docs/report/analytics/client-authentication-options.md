@@ -24,7 +24,7 @@ In general, the order of authentication options should be the following (in orde
 
 When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Organizational account as shown here:
 
-<img src="_img/power-bi-organizational.png" alt="Organizational account prompt" style="border: 2px solid #C3C3C3;" /> 
+<img src="../powerbi/_img/power-bi-organizational.png" alt="Organizational account prompt" style="border: 2px solid #C3C3C3;" /> 
 
 Click the Sign in button and you will be prompted to enter your AAD credentials. After that, you're done.
 
@@ -32,7 +32,7 @@ To change an existing URL to use AAD instead of a PAT or AAC, see [Change authen
 
 ### Publish to PowerBI.com
 
-After you have created the model and loaded it with data you can [publish it to Power BI](publishing-power-bi-desktop-to-power-bi.md). When using AAD, make sure to select
+After you have created the model and loaded it with data you can [publish it to Power BI](../powerbi/publish-power-bi-desktop-to-power-bi.md). When using AAD, make sure to select
 the **oAuth2** option. 
 
 ## Create a Personal Access Token  
@@ -133,6 +133,6 @@ If you receive an access denied message, you may need to change your authenticat
  
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
-- [Access data through Power BI desktop](access-analytics-power-bi.md)  
-- [Publish a Power BI Desktop file to PowerBI.com](publishing-power-bi-desktop-to-power-bi.md)  
+- [Access data through Power BI desktop](../powerbi/access-analytics-power-bi.md)  
+- [Publish a Power BI Desktop file to PowerBI.com](../powerbi/publish-power-bi-desktop-to-power-bi.md)  
 
