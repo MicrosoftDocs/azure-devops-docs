@@ -1,6 +1,6 @@
 ---
 title: Data available in Power BI | VSTS
-description: Learn about what data is available in the Power BI content pack for Visual Studio Team Services (VSTS)  
+description: Learn about what data is available in the Power BI Data Connector for Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
@@ -9,73 +9,49 @@ ms.author: stansw
 ms.date: 03/02/2017
 ---
 
-#Available data tables in the Power BI Content Pack for VSTS
+#Data model in the Power BI Data Connector for VSTS
 
 <b>VSTS</b>
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+To connect to the Analytics Services for VSTS from the Power BI Desktop Data Connector, you must download the *Power BI Desktop January 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop/).
 
-To connect to the Analytics Services for VSTS from the Power BI Desktop, you must download the *Power BI Desktop January 2017 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop/).
-
+<!--  THIS SHOULD BE INCLUDED IN THE RELEASE NOTES PAGE>
 The current release of the Data Connector supports custom fields added to the process references by a team project. 
 
-<!---
-In the first release of the Data Connector we aimed to overcome the limitations of Content Pack in terms of process customization.
-I wouldn't add this statement. 
---> 
+## Options for work item types
 
-## Currently available data  
-<table width="100%">
-    <tr>
-        <th width="25%">Data</th>
-        <th width="75%">Details</th>
-    </tr>
-    <tr>
-        <td>Work Items - Current state</td>
-        <td>Load current state of Work Items.</td>
-    </tr>
-    <tr>
-        <td>Work Items - History</td>
-        <td>Load all changes that happened to work items in the last 30 days.</td>
-    </tr>
-    <tr>
-        <td>Work Items - Customization</td>
-        <td>Load values of custom fields defined added to process templates.</td>
-    </tr>
-</table>
+| Work item type option | Description |
+|-|-|
+| Work Items | Load current or historical state of all Work Items  |
+| Bugs | Load current or historical state of Bugs only |
 
-## Currently available tables
+## Options for Historical data
 
-<table width="100%">
-    <tr >
-        <th width="25%">Table</th>
-        <th width="75%">Description</th>
-    </tr>
-    <tr>
-        <td>Work Items - Today</td>
-        <td>
-            <p>Contains all Work Items.
-            Suffix "Today" indicates that it contains one days' worth of data in contrast to *Work Items - Last 30 Days* table, which loads also historical data.
-            Each column corresponds to a data field available in a work item type used in the team project.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td>Work Items - Last 30 Days</td>
-        <td>
-            <p>Similar to the *Work Items - Today* table in that it contains the same column-fields, however, it loads work item history for the last 30 days, which can be used to create trend reports.</p>
-            <p>It has been modelled as a <b>periodic snapshot fact table</b> with one day period.
-            The grain of this table is the period, not the individual work item.
-            What this means is that <b>a single Work Item can appear 30 times</b> (once per day).
-            When working with this table you should partition the data by the <code>Date</code> column.
-            Additionally, it contains a field named <code>Is Current</code>, which can be used instead of the <code>Date</code> column if you are interested in only the current state of each work item.
-            </p>
-        </td>
-    </tr>
-</table>
+| Historical option | Description |
+|-|-|
+| Today | Loads only the most recent revision for each work item. |
+| Last 30 days | Loads work item history for the last 30 days, on a daily interval.
+| Last 26 weeks | Loads work item history for the last 26 weeks, on a weekly interval.
+| All history by month | Loads all work item history, on a monthly interval
+-->
+
+
+## How historical data is modelled
+Historical data is modelled as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. 
+
+The grain of this table is the period, not the individual work item. What this means is that **a single Work Item will appear multiple times**, once for each historical period. Selecting the last 30 days of history will result in a single work item appearing 30 times in the data model. If the work item has not changed within the last 30 day's the most recent revision of the work item is replicated on each day.
+
+When working with the data connector we recommend using the <code>Date</code> column or filtering to the most recent instance of the period using the <code>IsCurrent</code>.  For example, if you wanted to show a table of work items and values for the associated fields you would use <code>Is Current</code> as a filter which is set to True, that way you don't see duplicates of each of the work items included in the table.  If you wanted instead to show a trend of work items based on state you would include the Date column on the Axis of the visualization.  
+
+>[!IMPORTANT]  
+>Always use the **Date** option when using the Date column.  Date is not intended to support default Hierarchies in Power BI.
+
+![](./_img/data-connector-date.png)
 
 ## Related notes  
 - [Power BI integration overview](overview.md)
+- [Work Item Categories](../../work/customize/reference/use-categories-to-group-work-item-types.md)
+- [Work Item Backlogs](../../work/backlogs/backlogs-boards-plans.md)
 - [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md) 

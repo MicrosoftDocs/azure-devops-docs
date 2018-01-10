@@ -18,7 +18,7 @@ releases you have initiated, and the results of deployments.
 This includes a [list](#release-list) and an [overview](#release-overview) of 
 all releases, a [summary](#release-summary) of the details 
 for each release, [test results](#test-results),
-and [release logs](debug-deployment-issues.md).
+and release logs.
 
 From the Release Management UI you can also
 [restore deleted releases](#restore-release),
@@ -225,7 +225,7 @@ details about starting deployment of a release, see
 [How to: Create and deploy a release from a release definition](create-deploy-releases.md).
 
 Choose the **Logs** tab at the top of the page to view the log files
-and the current deployment status. For more details, see [How To: Monitor releases and debug deployment issues](debug-deployment-issues.md).
+and the current deployment status. 
 
 Use the other tab links to see more information about an in-progress or a completed
 release.
@@ -431,8 +431,6 @@ removal of Christie Church as an approver.
 * [Work with release definitions](work-with-release-definitions.md)
 
 * [Create and deploy a release](create-deploy-releases.md)
-
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
 
 ## Q&A
 

@@ -236,7 +236,7 @@
     - name: Troubleshooting build
       href: actions/troubleshooting.md
     - name: Debug deployment issues
-      href: actions/debug-deployment-issues.md
+      href: concepts/definitions/release/variables.md#debug-mode
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
   - name: Migrate
@@ -381,7 +381,7 @@
   - name: Deploy tasks
     items:
     - name: App Center Distribute
-      href: tasks/deploy/mobile-center-upload.md
+      href: https://docs.microsoft.com/en-us/appcenter/distribution/
     - name: Azure App Service Deploy
       href: tasks/deploy/azure-app-service-deploy.md
     - name: Azure App Service Manage

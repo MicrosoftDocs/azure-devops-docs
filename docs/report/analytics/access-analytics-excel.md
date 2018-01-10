@@ -34,7 +34,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
-	![Select OData Feed ](_img/pbi3.png)  
+	![Select OData Feed ](../powerbi/_img/pbi3.png)  
 
 	If the *account* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
 
@@ -68,7 +68,7 @@ More information on these options can be found in the [Excel documentation](http
  
 By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
 
-![Entity relationships](_img/pbi-relationships.png)  
+![Entity relationships](../powerbi/_img/pbi-relationships.png)  
 
 You will note that the Tags, Teams and Users are not related to any of the other data. This is due to how those entities
 are related. They are related by either many-to-many relationships which are not easily handled in these models or 

@@ -69,8 +69,7 @@ For more information, see [Provision agents for deployment groups](howto-provisi
  
 ## Monitor releases for deployment groups
 
-When release is executing, you see an entry in the
-[live logs page](../../../../actions/debug-deployment-issues.md)
+When release is executing, you see an entry in the live logs page
 for each server in the deployment group. After a release has completed,
 you can download the log files for every server to examine the deployments
 and resolve issues. To navigate quickly to a release definition or a release,

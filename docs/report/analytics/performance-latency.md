@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 
 **VSTS**
 
-When you use the Analytics Service for reporting, you’ll want to understand the performance and data latency issues associated with the service. To get started using the Analytics Service, see What is the[Analytics Service](./what-is-analytics.md).
+When you use the Analytics Service for reporting, you’ll want to understand the performance and data latency issues associated with the service. To get started using the Analytics Service, see what is the [Analytics Service](./what-is-analytics.md).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
