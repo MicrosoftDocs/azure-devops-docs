@@ -117,8 +117,6 @@ For more details, see [Task phases](../concepts/process/phases.md).
 
 * [View and manage releases](view-manage-releases.md)
 
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
-
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->

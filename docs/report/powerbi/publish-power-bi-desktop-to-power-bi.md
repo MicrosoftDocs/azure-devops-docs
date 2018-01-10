@@ -16,9 +16,7 @@ ms.date: 11/13/2017
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated charts and tables, you can share those with others by creating a dashboard on PowerBI.com. This process walks you through how to do that.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-0. Open the **Power BI Desktop** file with your data.  
+1. Open the **Power BI Desktop** file with your data.  
 
 0. Click **Publish** on the **Home** tab. 
 
@@ -47,7 +45,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
      <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
-0. Select the appropriate authentication option (as discussed in [Client Authentication Options](client-authentication-options.md)). 
+0. Select the appropriate authentication option (as discussed in [Client Authentication Options](../analytics/client-authentication-options.md)). 
 * Use **oAuth2**  for Azure Active Directory (AAD) credentials.
 
     <img src="_img/aad-auth-power-bi.png" alt="vt" style="border: 2px solid #C3C3C3;" />
@@ -56,21 +54,21 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
     ![Enter credentials](_img/publish-5.png)
 
-	See [Client Authentication Options](client-authentication-options.md) for more information on acquiring credentials.  
+	See [Client Authentication Options](../analytics/client-authentication-options.md) for more information on acquiring credentials.  
 
 0. Click **Sign in**.  
 
 At this point the data will update on your scheduled basis using the credentials entered.
 
 >[!IMPORTANT]   
->If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
+>If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](../analytics/client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
 
 
 
 ## Related notes
 
 - [Analytics Service](index.md)  
-- [Client Authentication Options](client-authentication-options.md)
+- [Client Authentication Options](../analytics/client-authentication-options.md)
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
-- [Access data through Excel](access-analytics-excel.md)  
+- [Access data through Excel](../analytics/access-analytics-excel.md)  
 - [Access data throughPower BI desktop](access-analytics-power-bi.md)  
