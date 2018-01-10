@@ -251,8 +251,7 @@ from the release you created in the previous section.
    ![Viewing the deployed app in the production environment](_img/define-multistage-release-process/finished-app.png)
 
 If you are having problems with a deployment, you can get more information from the log files by
-running the release in debug mode. For more information, see
-[How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json).
+[running the release in debug mode](../../build-release/concepts/definitions/release/variables.md#debug-mode).
 
 ## Next step
 

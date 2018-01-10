@@ -56,7 +56,8 @@ Understanding Analytics Service data Acquisition
 
 ## Resources
 - [Dashboards](../dashboards/index.md)
-- [PowerBI (VSTS)](../powerbi/index.md)
+- [Connect to VSTS using Power BI](../powerbi/index.md)
+- [Connect to VSTS using Excel](access-analytics-excel.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)
 - [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
 - [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)

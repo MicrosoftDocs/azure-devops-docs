@@ -49,7 +49,7 @@ The configuration varies depending on the type of app you are deploying.
 
 Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
-[!INCLUDE [temp](../_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
 ## Define your CD release process
 
