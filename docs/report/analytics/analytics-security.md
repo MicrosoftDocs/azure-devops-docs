@@ -14,17 +14,15 @@ ms.date: 11/13/2017
 
 **VSTS**  
 
-To use [Power BI for VSTS](../powerbi/index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
+To use [Power BI for VSTS](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
 If you are just adding an Analytics widget to a dashboard or viewing an Analytics widget added to a dashboard, then no special permissions are required. 
-
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 The Analytics Service implements a subset of the security found in the VSTS operational store. The security container in the Analytics Service is at the team project level.   
 
 Security is granted by giving a user the **View analytics** permission through the team project admin Security page.    
 
-<img src="_img/analytics-permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
+<img src="../analytics/_img/analytics-permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
 
 >[!NOTE]  
 >The Analytics Service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a team project.  
