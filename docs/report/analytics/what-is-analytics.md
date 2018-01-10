@@ -46,11 +46,11 @@ The Analytics Service is fully accessible via OData. If you would like to prepar
 
 From Power BI Desktop, select the connector "Visual Studio Team Services (Beta)". 
 
-![Power BI VSTS Connector Beta](../powerbi/_img/data-connector-get-data.png)
+![Power BI VSTS Connector (Beta)](../powerbi/_img/data-connector-get-data.png)
 
-**The VSTS connector is in beta.** The current version has performance issues when dealing with large amounts of data. We recommend using it for small accounts. In early 2018, we will be releasing an updated version. That version will be optimized to work with large amounts of data.
+**The VSTS connector is in beta.**
 
-For more information on the Beta version of the connector, check out [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
+For more information on the version of the connector, check out [Connect to VSTS with Power BI Data Connector](../powerbi/data-connector-connect.md)
 
 ## Data available in the Analytics Service
 
