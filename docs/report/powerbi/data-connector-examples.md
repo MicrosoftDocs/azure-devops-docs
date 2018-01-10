@@ -13,8 +13,6 @@ ms.date: 01/17/2017
 
 <b>VSTS</b>
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Steps are provided to support generating the following example reports: 
 
 - [Number of Work Items](#number-of-work-items)  

@@ -25,7 +25,6 @@ Your first step requires you to authorize Power BI to access your VSTS account. 
 
 - **Scenario #2:**  You use an MSA (Microsoft account/LiveID) to log in to VSTS or you use different AAD credentials to log into VSTS than you use to log into Power BI.
 
-Prior to performing either Scenario #1 or #2, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
 ## Scenario #1: Log in using AAD
 

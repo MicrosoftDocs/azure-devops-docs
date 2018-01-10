@@ -10,164 +10,48 @@ ms.topic: get-started-article
 ms.date: 10/31/2017
 ---
 
-# Power BI integration
+# Power BI integration overview
 
 **VSTS**
 
-Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in Visual Studio Team Services(VSTS).
+Our Power BI integration makes getting the data into Power BI easy, so you can focus on creating amazing Power BI reports!
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+Before you get started using Power BI with VSTS make sure you have completed the following steps:
 
-The **Beta VSTS Power BI Desktop Data Connector**, was shipped with the *January 2017 Update* and is currently under development. The Data Connector will be updated in early 2018, until the updated Data Connector is available we recommend using the [Power BI OData Connector](../analytics/access-analytics-power-bi.md).
+1. Install the *Power BI Desktop* *January 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 
+2. Install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 
-[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
+3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md)
 
-The following table contains a detailed overview of the **Data Connector**.
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/)
 
-<table width="75%">
+5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[What is the Analytics Service](../analytics/what-is-analytics.md)" before continuing
+
+VSTS supports three ways to pull data from VSTS into Power BI:
+
+<table width="90%">
 <tbody valign="top">
     <tr>
-        <th>
-        <tr>
-        <td style="text-align: center" colspan="2">
-            <b>Data Connector Details</b>
-        </td>
-    <tr>
+        <td width="25%"><b>Connection Option</td>
+        <td><b>Description</td>
     </tr>
     <tr>
-        <td>First release date</td>
-        <td><a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-january-feature-summary/#visualStudioTeam Services">January 9, 2017</a></td>
+        <td><a href="data-connector-connect.md">Connect using the VSTS Data Connector</href></td>
+        <td>The VSTS Data Connector is the recommended way to connect Power BI to VSTS. The connector simplifies the VSTS data model into a single table and models historical data to simplify trend reporting. Last updated January 8th, 2018</td>
     </tr>
     <tr>
-        <td>Last update date</td>
-        <td>-</td>
+        <td><a href="access-analytics-power-bi.md">Connect to VSTS using the Power BI OData feed</href></td>
+        <td>Using the default Power BI OData feed for VSTS is not recommended for anything other than analysis of current work items. The VSTS data model has relationships and advanced filters that are not possible using the default OData feed which are necessary for more complex scenarios</td>
     </tr>
     <tr>
-        <td>Data Source</td>
-        <td>[Analytics Service](../analytics/what-is-analytics.md)<sup> 1</sup></td>
-    </tr>
-    <tr>
-        <td>Power BI Service</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"><sup> 2</sup></td>
-    </tr>
-    <tr>
-        <td>Power BI Desktop</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td style="text-align: center" colspan="2">
-            <b>Available Data</b>
-        </td>
-    </tr>
-    <tr>
-        <td>Work Items - Current state</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Work Items - History</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Work Items - Customization</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Source Control - Git</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Source Control - TFVC</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Builds - XAML</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-        <tr>
-        <td style="text-align: center" colspan="2">
-            <b>Elements</b>
-        </td>
-    <tr>
-    <tr>
-        <td>Tables</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Relationships</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Measures</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Reports</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Dashboard</td>
-        <td><img alt="unchecked" src="_img/icons/delete-icon.png"></td>
-    </tr>
-    <tr>
-        <td>Power Query Functions</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td style="text-align: center" colspan="2">
-            <b>Authentication</b>
-        </td>
-    <tr>
-    <tr>
-        <td>Microsoft Account (Live ID)</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Azure Active Directory (AAD)</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>OAuth</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Personal access token</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Alternate credentials</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td style="text-align: center" colspan="2">
-            <b>Other</b>
-        </td>
-    <tr>
-    <tr>
-        <td>Support for large accounts<sup> 3</sup></td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Support for custom measures</td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
-    </tr>
-    <tr>
-        <td>Support for mashup with additional data sources<sup> 4</sup></td>
-        <td><img alt="checked" src="_img/icons/checkmark.png"></td>
+        <td><a href="data-connector-functions.md">Connect using VSTS functions</href></td>
+        <td>Intended for advanced users who need a greater degree of control of what data is included in the model.  Using the functions, you can specify OData queries as well as combine data from other sources, such as VSTS REST APIs. You can also support complex model structures not supported by the VSTS Data Connector. Last updated January 8th, 2018</td>
     </tr>
 </tbody>
 </table>
 
-**Notes:**  
-1. The data model is created in *Power BI Desktop*. Then, it can be published and refreshed in the *Power BI Service*.
-2. There is a limit on how long a refresh operation can take before it gets terminated by Power BI.com.
-3. Power BI Desktop allows users to load tables from different sources and combine them into a single data model (e.g. custom working days calendar).
 
+## Deprecated PowerBI.com Content Pack
+In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com data sets based on the Content Pack. However, you won’t be able to create any new data sets. 
 
-
-## Related notes
-
-To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
-
-- [Data Connector - Example reports](../powerbi/data-connector-examples.md)
-- [Functions available in Power BI Data Connector](../powerbi/data-connector-functions.md)  
