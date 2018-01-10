@@ -4747,6 +4747,16 @@
         "redirect_document_id": false
        },
        {
+        "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups#create-a-deployment-group",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/actions/debug-deployment-issues.md",
+        "redirect_url": "/vsts/build-release/concepts/definitions/release/variables#debug-mode",
+        "redirect_document_id": false
+       },
+       {
         "source_path": "docs/accounts/restrict-access-tfs.md",
         "redirect_url": "/vsts/security/restrict-access",
         "redirect_document_id": false

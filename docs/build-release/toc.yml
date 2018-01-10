@@ -236,7 +236,7 @@
     - name: Troubleshooting build
       href: actions/troubleshooting.md
     - name: Debug deployment issues
-      href: actions/debug-deployment-issues.md
+      href: concepts/definitions/release/variables.md#debug-mode
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
   - name: Migrate

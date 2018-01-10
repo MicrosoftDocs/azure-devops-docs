@@ -28,6 +28,8 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
+>You can also use a default variable to [run a release in debug mode](#debug-mode).
+
 ## Custom variables
 
 Custom variables can be defined at various scopes.
@@ -90,7 +92,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
 > | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
 > | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
-> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to run the deployment in debug mode to assist in fault-finding. | true | &nbsp; |
+> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#debug-mode) to assist in fault-finding. | true | &nbsp; |
 
 <!-- Other hidden system variables
 [SYSTEM] -> [release]
@@ -214,7 +216,6 @@ You designate one of the artifacts as a primary artifact in a release definition
 > | Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
 > | Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
 
-
 ### Using default variables
 
 You can use the default variables in two ways - as parameters to tasks in a release definition or in your scripts.
@@ -232,5 +233,29 @@ you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 ![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
+
+<a name="debug-mode"></a>
+
+### Run a release in debug mode
+
+Show additional information as a release executes and in the log files
+by running the entire release, or just the tasks in an individual
+release environment, in debug mode. This can help you resolve issues and failures.
+
+* To initiate debug mode for an entire release, add a variable
+  named `System.Debug` with the value `true` to the **Variables**
+  tab of a release definition.
+
+* To initiate debug mode for a single environment, open the
+  **Configure environment** dialog from the shortcut menu
+  of the environment and add a variable named `System.Debug`
+  with the value `true` to the **Variables** tab.
+
+* Alternatively, create a [variable group](../../library/variable-groups.md)
+  containing a variable named `System.Debug` with the value `true`
+  and link this variable group to a release definition.
+
+>If you get an error related to an Azure RM service endpoint,
+see [How to: Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

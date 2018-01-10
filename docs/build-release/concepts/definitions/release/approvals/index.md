@@ -58,7 +58,6 @@ You can, of course, combine all three techniques within a release definition to 
 
 * [Work with release definitions](../../../../actions/work-with-release-definitions.md)
 * [View and manage releases](../../../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../../../actions/debug-deployment-issues.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]
