@@ -133,8 +133,6 @@ Simply follow these steps:
 
 1. **[View and manage your releases](../../../actions/view-manage-releases.md)** using the comprehensive UI and tools.
 
-1. **[Monitor and debug your releases](../../../actions/debug-deployment-issues.md)** during and after the deployments. 
-
 ## Related topics
 
 * [Download Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)

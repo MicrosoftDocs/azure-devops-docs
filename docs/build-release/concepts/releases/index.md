@@ -77,7 +77,6 @@ or immediately start a deployment. For example:
 
 * [Create and deploy a release](../../actions/create-deploy-releases.md)
 * [View and manage releases](../../actions/view-manage-releases.md)
-* [Monitor releases and debug deployment issues](../../actions/debug-deployment-issues.md)
 * [Work with release definitions](../../actions/work-with-release-definitions.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

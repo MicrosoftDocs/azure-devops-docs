@@ -11,40 +11,29 @@ ms.author: kaelli
 ms.date: 11/13/2017
 ---
 
-# Functions available in Power BI Data Connector
+# Connecting using the VSTS Functions in Power Query
 
-**VSTS**  
+**VSTS**
 
-The Data Connector for VSTS contributes functions which can be used by query authors. For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  
+The Data Connector for VSTS includes functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. The following functions are provided:
 
-We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
+| Function | Description |
+|-|-|
+| VSTS.Feed | Replacement for Power Query M function [OData.feed]((https://msdn.microsoft.com/library/mt260868.aspx)). Allows users to easily execute OData queries against VSTS Analytics.  |
+| VSTS.Contents | Deprecated. Please use VSTS.AdvancedContents
+| VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.  |
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
-<table>
-    <tr>
-        <th>Function</th>
-        <th>Description</th>
-    </tr>
-	<tr>
-        <td><a href="#vstsfeed"><code>VSTS.Feed</code></a></td>
-        <td>Allows for users to easily execute OData queries against Analytics in VSTS.</td>
-    </tr>
-    <tr>
-        <td><a href="#vstscontents"><code>VSTS.Contents</code></a></td>
-        <td>Intended for more advanced scenarios, VSTS.Contents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.</td>
-    </tr>
-
-</table>
+<!--We strongly recommend using VSTS.Feed instead of VSTS.Contents and using the latest version of Power BI when possible.-->
 
 ## VSTS.Feed
 Allows for users to easily execute OData queries against Analytics in VSTS.
 
-The `VSTS.Feed` function is similar to the standard `OData.Feed` function in terms of the arguments it accepts and the format of the returned value. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
+The `VSTS.Feed` function has the same arguments, options and return value format as `OData.Feed`. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 
-> [!TIP]
-> If you are already using `OData.Feed` to access data from VSTS, then just replace it with `VSTS.Feed` to leverage Data Connector authentication.
-> This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the Power BI.com.
+If you are already using `OData.Feed` to access data from VSTS, you can replace it with `VSTS.Feed` to leverage Data Connector authentication.  
+This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the PowerBI.com.
+
+'VSTS.Feed' provides a subset of the Arguments and Options available through 'OData.Feed'. The specific limitations are outlined in the table below:
 
 ### Arguments for VSTS.Feed
 
@@ -177,15 +166,17 @@ in
 ```
 
 ## VSTS.Contents
+VSTS.Contents is being deprecated and will be removed in an upcoming release. Please use VSTS.AccountContents.  
+
+## VSTS.AccountContents 
 Advanced function which returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.
 
-The `VSTS.Contents` function is similar to the standard `Web.Contents` function in terms of the arguments it accepts and the format of the returned value.
-For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
+The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
 
-> [!TIP]
-> If you are already using `Web.Contents` to access data from VSTS (REST API or OData), then just replace it with `VSTS.Contents` to leverage Data Connector authentication.
-> This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
+If you are already using `Web.Contents` to access data from VSTS (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
+This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
 
+'VSTS.AccountContents' provides a subset of the Arguments and Options available through 'OData.Contents'. The specific limitations are outlined in the table below:
 
 ### Arguments for VSTS.Contents
 
@@ -244,8 +235,6 @@ For more information please refer to: [Power Query (M) Formula Reference - Web.C
         <td>Version of the data model. This option is primary for diagnostics.</td>
     </tr>
 </table>
-
-
 
 ## Related notes
 * [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)

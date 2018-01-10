@@ -217,8 +217,6 @@ For more details, see [Task groups](../concepts/library/task-groups.md).
 
 * [View and manage releases](view-manage-releases.md)
 
-* [Monitor releases and debug deployment issues](debug-deployment-issues.md)
-
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 <h2 id="concepts">Release definition concepts</h2>
