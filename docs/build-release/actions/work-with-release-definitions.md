@@ -35,7 +35,7 @@ This topic shows you how to:
 
    ![Creating a new release definition](_img/work-with-release-definitions/create-new.png)
 
-   <a name="create-template"></a><a name="create-empty"></a>
+   <a name="create-empty"></a>
 1. Select a template or start with an empty definition:
 
    * If a template is relevant to your scenario, select it to
@@ -93,12 +93,10 @@ When you export a definition, you can import it afterwards. Then, if required, m
 
 ![Importing an existing release definition](_img/work-with-release-definitions/import.png)
 
-<a name="use-template"></a>
+<a name="create-template"></a><a name="use-template"></a>
 ### Create and use a template
 
-Create a template for a definition from an environment within the definition by using the old definition editor.
-
-![Switching to the previoius release definition editor](_img/work-with-release-definitions/old-editor.png)
+Create a template for a definition from an environment within the definition.
 
 ![Creating a template from an existing release definition](_img/work-with-release-definitions/save-template.png)
 
