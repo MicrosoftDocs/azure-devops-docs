@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 11/14/2017
 ---
 
-# How to: View and manage releases
+# View and manage releases
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 

@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 11/14/2017
 ---
 
-# How to: Work with release definitions
+# Work with release definitions
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
