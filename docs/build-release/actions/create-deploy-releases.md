@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 12/20/2017
 ---
 
-# How to: Create and deploy a release
+# Create and deploy a release
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 

@@ -25,17 +25,18 @@ To specify the source repository:
 
 You can choose from the following repository types:
 
-| Repository type            | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
-|----------------------------|-------------|------|--------------------------------|--------------|
-| Git repo in a team project |Yes|Yes|Yes|Yes|
-| Git repo in GitHub         |Yes|Yes|No|No|
-| Git repo in Bitbucket      |No|Yes|No|No|
-| Git repo (remote external) |No|Yes|Yes|Yes|
+| Repository type               | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+|-------------------------------|-------------|------|--------------------------------|--------------|
+| Git repo in a team project    |Yes|Yes|Yes|Yes|
+| Git repo in Bitbucket Server  |No|Yes|No|No|
+| Git repo in GitHub            |Yes|Yes|No|No|
+| Git repo in GitHub Enterprise |No|Yes|No|No|
+| Git repo (remote/external)    |No|Yes|Yes|Yes|
+| Subversion                    |No|Yes|Yes|No|
 | Team Foundation Version Control (TFVC) repo in a team project |No|Yes|Yes|Yes|
-| Subversion                 |No|Yes|Yes|No|
 
 > [!NOTE]
-> To build code in Subversion, you must install the Subversion client on your [build agents](../../../concepts/agents/agents.md#install).
+> To build code in Subversion, you must install a Subversion client (`svn`) on your [build agents](../../../concepts/agents/agents.md#install).
 
 ## Git options
 
