@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 11/14/2017
 ---
 
-# How to: View and manage releases
+# View and manage releases
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -224,11 +224,7 @@ environment to open the shortcut menu and choose **Deploy**.
 details about starting deployment of a release, see
 [How to: Create and deploy a release from a release definition](create-deploy-releases.md).
 
-Choose the **Logs** tab at the top of the page to view the log files
-and the current deployment status. 
-
-Use the other tab links to see more information about an in-progress or a completed
-release.
+Use the tab links at the top of the page to see more information about an in-progress or a completed release.
 
 ![Links for more information about an in-progress release](_img/view-manage-releases/summary-links-01.png)
 
@@ -261,6 +257,9 @@ release.
 
 * Use the **Tests** tab to see a summary of the test results for this release.
   For more details, see [View test results](#test-results).
+
+* Use the **Logs** tab at the top of the page to view the log files
+  and the current deployment status. 
 
 * Use the **History** tab to see details of the changes to and deployments from
   the release definitions associated with this release.
