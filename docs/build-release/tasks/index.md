@@ -28,6 +28,7 @@ ms.date: 08/18/2016
 | ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/maven.png) [Maven](build/maven.md). Build with Apache Maven | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/net-core-cli.png) [.NET Core CLI](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI). Build, test, and publish using the .NET Core command line  | VSTS, TFS 2018 |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on VSTS and newer versions of TFS. |
 | [SonarQube for MSBuild - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | VSTS, TFS 2015.3 and newer |
 | [SonarQube for MSBuild - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | VSTS, TFS 2015.3 and newer |
@@ -121,6 +122,7 @@ ms.date: 08/18/2016
 
 | Task | Versions |
 |------|----------|
+| ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
 

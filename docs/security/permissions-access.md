@@ -8,7 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/28/2017
+ms.date: 01/11/2018
 ---
 
 
@@ -100,11 +100,11 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 - [Add users to a team project](../security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
-- [Change access levels](change-access-levels.md) 
-- [Account management (VSTS)](../accounts/index.md)  
+- [About access levels](access-levels.md)
+- [Work in the web portal](../user-guide/work-web-portal.md) 
 
-
-
+ 
+<!---
 
 ## Git repository  
 
@@ -277,8 +277,4 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 </tbody>
 </table>
 
-## Related notes  
-
-- [About access levels](access-levels.md)
-- [Export a list of users and their access levels](export-users-audit-log.md)
-- [Work in the web portal](../user-guide/work-web-portal.md)  
+-->

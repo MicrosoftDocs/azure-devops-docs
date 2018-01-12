@@ -72,9 +72,11 @@ Follow these steps to configure each target server.
    or higher installed on every target machine. See
    [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/en-in/library/hh925568(v=vs.110).aspx).
 
-1. Download the two scripts from [this GitHub repository](https://github.com/Microsoft/vsts-rm-documentation/tree/master/WinRM/WinRM-Http-Https-Without-Makecert)
-   and copy them to every target machine. You will use them to configure WinRM in the following steps.
-
+1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
+   for Windows 10 and Windows Server 2016, or
+   [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https-With-Makecert/ConfigureWinRM.ps1)
+   for previous versions of Windows. Copy them to every target machine. You will use them to configure WinRM in the following steps.
+   
 1. Decide if you want to use HTTP or HTTPS to communicate
    with the target machine(s).
 
