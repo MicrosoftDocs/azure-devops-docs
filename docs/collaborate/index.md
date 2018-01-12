@@ -40,7 +40,7 @@ Repository README files and team project Wikis are great ways to share informati
 - [Add & edit wiki pages](add-edit-wiki.md)
 - [View wiki history and revert](wiki-view-history.md)
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
-- 
+
 ## Reference 
 
 - [Markdown guidance](markdown-guidance.md)
