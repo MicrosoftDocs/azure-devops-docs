@@ -250,6 +250,8 @@
     items:
     - name: .NET Core
       href: tasks/build/dotnet-core.md
+    - name: .NET Core CLI
+      href: tasks/build/net-core-cli.md
     - name: Android build
       href: tasks/build/android-build.md
     - name: Android signing
@@ -418,6 +420,8 @@
       href: tasks/deploy/windows-machine-file-copy.md
   - name: Tool tasks
     items:
+    - name: .NET Core Tool Installer
+      href: tasks/tool/net-core-installer.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer
