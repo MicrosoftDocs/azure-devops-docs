@@ -8,14 +8,14 @@ ms.assetid: C339FAF9-A960-4A3A-9A8A-ADCD39C2703D
 ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
-ms.date: 12/20/2017
+ms.date: 01/12/2017
 ---
 
 # Build your Java app with Maven
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java web app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
