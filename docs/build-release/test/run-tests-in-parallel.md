@@ -1,6 +1,6 @@
 ---
-title: Run continuous tests in parallel
-description: Continuous testing. Run continuous tests in parallel
+title: Run tests in parallel
+description: Continuous testing. Run tests in parallel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 12/20/2017
 ---
 
-# Run continuous tests in parallel
+# Run tests in parallel
 
 **Visual Studio 2017.1 and later | VSTS**
 
