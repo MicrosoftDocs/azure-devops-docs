@@ -2847,6 +2847,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build-release/tasks/tool/net-core-installer.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/tasks/build/net-core-cli.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build-release/tasks/deploy/azure-app-service-deploy.md",
             "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
             "redirect_document_id": false
