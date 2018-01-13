@@ -383,8 +383,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 </tr>
 <tr>
 <td><p>[Remaining Work](../../track/query-numeric.md)</p></td>
-<td><p>Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It's used to calculate capacity charts, the sprint burndown chart, and the [Burndown and Burn Rate Report](https://msdn.microsoft.com/library/dd380678.aspx).</p>
-<p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
+<td>
 
 <p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../scale/capacity-planning.md), the [sprint burndown chart](../../scrum/sprint-burndown.md), and the [Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx) report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
 
