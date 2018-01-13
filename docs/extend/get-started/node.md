@@ -16,7 +16,7 @@ ms.topic: get-started-article
 
 ## Your first extension
 This page guides you through creating your first extension for VSTS. It will introduce the basic extensibility concepts 
-and give you the knowledge needed to get started on your own unqiue extension.
+and give you the knowledge needed to get started on your own unique extension.
 
 In this tutorial we'll create a custom hub that displays the results of a query. A <b>hub</b> is, simply put, a type of contribution that displays
 a web page. You can have multiple hubs in VSTS and they live in <b>hub groups</b>. 
