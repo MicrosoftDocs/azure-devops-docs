@@ -36,7 +36,7 @@ This task requires the target computer to have:
 
 | Argument | Description |
 | -------- | ----------- |
-| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
+| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Admin Login** | The username of either a domain or a local administrative account on the target host(s). This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
 | **Password** | The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release definition to hide the password. Example: `$(passwordVariable)` |
 | **Protocol** | The protocol that will be used to connect to the target host, either **HTTP** or **HTTPS**. |
@@ -48,6 +48,8 @@ This task requires the target computer to have:
 | **Advanced - Test agent location** | Optional. The path to the test agent (<a href="http://go.microsoft.com/fwlink/?LinkId=536423">vstf_testagent.exe</a>) if different from the default path.<br />- If you use a copy of the test agent located on your local computer or network, specify the path to that instance.<br />- The location must be accessible by either the build agent (using the identity it is running under) or the test agent (using the identity configured above).<br />- For Azure test machines, the web location can be used. |
 | **Advanced - Update test agent** | If set, and the test agent is already installed on the test machines, the task will check if a new version of the test agent is available. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+> You can specify a maximum of 32 machines/agents when using this task.
 
 ## Supported scenarios
 
