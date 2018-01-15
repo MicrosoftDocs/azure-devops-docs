@@ -49,7 +49,7 @@ This task requires the target computer to have:
 | **Advanced - Update test agent** | If set, and the test agent is already installed on the test machines, the task will check if a new version of the test agent is available. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-> You can specify a maximum of 32 machines/agents when using this task.
+> The task supports a maximum of 32 machines/agents.
 
 ## Supported scenarios
 

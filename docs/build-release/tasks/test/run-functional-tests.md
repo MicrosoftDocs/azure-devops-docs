@@ -45,7 +45,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-> You can specify a maximum of 32 machines/agents when using this task.
+> The task supports a maximum of 32 machines/agents.
 
 ## Scenarios
 
