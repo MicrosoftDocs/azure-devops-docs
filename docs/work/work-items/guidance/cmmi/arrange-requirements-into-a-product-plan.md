@@ -40,7 +40,7 @@ After you analyze your customer requirements sufficiently to understand what the
   
 -   [View the backlog](../../../backlogs/create-your-backlog.md) or open the Customer Requirement query to list these requirement work items.  
   
--   Use the [Requirements Progress](https://msdn.microsoft.com/library/ee461582.aspx) report to monitor which requirements have been satisfied.  
+-   Use the [Requirements Progress](../../../../report/sql-reports/requirements-progress-report-cmmi.md) report to monitor which requirements have been satisfied.  
   
  **Features**  
   
@@ -80,7 +80,7 @@ After you analyze your customer requirements sufficiently to understand what the
 ##  <a name="Decomp"></a> Scenario decomposition  
  To help you arrange the requirements into features, it helps to decompose the scenarios into smaller steps.  
   
- Storyboards often help with this activity. A storyboard is a sequence of pictures that illustrate the scenario. UML activity diagrams are useful for showing alternative paths, and UML sequence diagrams can help you discuss interactions between several actors. After you use these tools to analyze a scenario, you can enter the decomposed scenarios into Team Explorer. This lets you link test cases to the scenarios and thereby ensure that the requirements have been satisfied. For more information, see [UML Activity Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409465.aspx) and [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409465.aspx).  
+ Storyboards often help with this activity. A storyboard is a sequence of pictures that illustrate the scenario. UML activity diagrams are useful for showing alternative paths, and UML sequence diagrams can help you discuss interactions between several actors. After you use these tools to analyze a scenario, you can enter the decomposed scenarios into Team Explorer. This lets you link test cases to the scenarios and thereby ensure that the requirements have been satisfied. For more information, see [UML Activity Diagrams: Guidelines](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams) and [UML Sequence Diagrams: Guidelines](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
   
 ##  <a name="Features"></a> Features - requirements fulfilled in each iteration  
  A feature is a requirement that summarizes what the users can do at the completion of each iteration. You can create more than one feature for each iteration. Enter them as requirement work items, setting the Requirement Type to Feature.  
