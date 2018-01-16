@@ -258,7 +258,7 @@ From the Release hub, [choose a specific release](../../build-release/actions/vi
 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is currently available only from VSTS.
+><b>Feature availability: </b>This feature is available from VSTS and TFS 2018 and later versions.
  
 
 ![Release summary, send email](../track/_img/share-plans-email-release-definition.png)

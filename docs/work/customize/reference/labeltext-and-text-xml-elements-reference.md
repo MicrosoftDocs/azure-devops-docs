@@ -1,6 +1,7 @@
 ---
-title: LabelText and Text XML elements reference | VSTS & TFS
-description: Adds a standalone label or informational text to a work item form by using the LabelText element - Team Foundation Server (TFS)
+title: LabelText and Text XML elements reference 
+titleSuffix: VSTS & TFS
+description: Adds a standalone label or informational text to a work item form by using the LabelText element
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 6ff20e50-cef6-4278-96c4-9fd69f7e2d3a
@@ -54,7 +55,7 @@ The `LabelText` element is a child element of the `Control` element.
 ## Remarks  
 You can combine plain and hyperlinked text by adding multiple `Text`elements in a `LabelText` element.  
   
-The `LabelText` element is only recognized by clients that are running the latest version of Team Explorer. Therefore, you must specify the `Label` attribute in a `Control` element. For clients that are running the latest version of Team Explorer, the text provided by the `LabelText` element appears in the work item form. For clients that are running earlier versions of Team Explorer, the text specified by the `Control` element `Label` attribute appears in the work item form.  
+The `LabelText` element is only recognized by clients that are running Visual Studio 2015 or later comparable editions or versions. You specify the `Label` attribute in a `Control` element. For clients that are running Visual Studio 2015 or later comparable editions or versions, the text provided by the `LabelText` element appears in the work item form. For clients that are running earlier versions, the text specified by the `Control` element `Label` attribute appears in the work item form.  
   
 ### Example: Standalone label  
   
