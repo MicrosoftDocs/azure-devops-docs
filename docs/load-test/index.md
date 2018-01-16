@@ -44,6 +44,8 @@ Learn how to run performance and load tests against your app.
 * [Add app performance data](get-performance-data-for-load-tests.md)
 * [Run Apache JMeter load tests](get-started-jmeter-test.md)
 * [Record and replay tests](record-and-replay-cloud-load-tests.md)
+* [Load test private and intranet apps](clt-behind-firewall.md)
+* [Load test using your own servers](clt-with-private-machines.md)
 
 ## Troubleshooting
 

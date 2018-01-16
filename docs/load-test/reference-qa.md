@@ -41,14 +41,14 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 
 **A**:  Yes, you can load test apps or sites that are only available to your company, 
 such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
-[Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
+[Testing private and intranet applications using cloud-based load testing](clt-behind-firewall.md).
 
 Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
 
 ### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
 
 **A**:  Yes, several scenarios are supported. To learn more, see 
-[Run cloud-based load tests using your own machines](https://blogs.msdn.microsoft.com/devops/2016/09/27/run-cloud-based-load-tests-using-your-own-machines-a-k-a-bring-your-own-subscription/).
+[Run cloud-based load tests using your own machines](clt-with-private-machines.md).
 
 ### Q: What are virtual users?
 
