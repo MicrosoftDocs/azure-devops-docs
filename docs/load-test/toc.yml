@@ -27,9 +27,9 @@
   - name: Record and replay tests
     href: record-and-replay-cloud-load-tests.md
   - name: Test private and intranet apps
-    href: https://blogs.msdn.microsoft.com/devops/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/
+    href: clt-behind-firewall.md
   - name: Test using your own servers
-    href: https://blogs.msdn.microsoft.com/devops/2016/09/27/run-cloud-based-load-tests-using-your-own-machines-a-k-a-bring-your-own-subscription/
+    href: clt-with-private-machines.md
 - name: Reference
   items:
   - name: FAQs

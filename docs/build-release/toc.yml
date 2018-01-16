@@ -108,6 +108,11 @@
       href: concepts/definitions/release/variables.md
     - name: Approvals and gates
       href: concepts/definitions/release/approvals/index.md
+      items:
+      - name: Approvals
+        href: concepts/definitions/release/approvals/approvals.md
+      - name: Gates
+        href: concepts/definitions/release/approvals/gates.md
     - name: Templates
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
