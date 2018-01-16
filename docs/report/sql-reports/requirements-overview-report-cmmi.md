@@ -139,7 +139,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 -   The team is making more progress on requirements that have a lower rank than on requirements that have a higher rank.  
   
--   More tesst are failing than are passing.  
+-   More tests are failing than are passing.  
   
 -   Tests are failing for a requirement, but no bug work items are being created.  
   
