@@ -209,7 +209,7 @@ Specify whether to use xcpretty to format xcodebuild output and generate JUnit t
 </td>
 </tr>
 <tr>
-<td>Publish to VSTS/TFS</td>
+<td>Publish test results to VSTS/TFS</td>
 <td>
 If xcpretty is enabled above, specify whether to publish JUnit test results to VSTS/TFS.
 </td>

@@ -33,6 +33,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "brand": "vsts",
+      "searchScope": ["VSTS", "Team Services"],
         "author": "erickson-doug",
         "ms.author": "douge",
         "ms.topic": "douge",
