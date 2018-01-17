@@ -30,7 +30,9 @@
         href: apps/windows/dot-net.md
       - name: Node.js
         href: apps/nodejs/build-gulp.md
-      - name: Java
+      - name: Gradle
+        href: apps/java/build-gradle.md
+      - name: Maven
         href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
