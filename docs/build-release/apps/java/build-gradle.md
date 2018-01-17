@@ -1,17 +1,17 @@
 ---
-title: CI build for a Java app with Maven
-description: Define a continuous integration (CI) build process for your Java app with Maven in VSTS or Team Foundation Server
+title: CI build for a Java app with Gradle
+description: Define a continuous integration (CI) build process for your Java app with Gradle in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article
-ms.assetid: C339FAF9-A960-4A3A-9A8A-ADCD39C2703D
+ms.assetid: 9AED3FD7-8CC1-4DD2-ADB0-2793D5A00A28
 ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
-ms.date: 01/12/2017
+ms.date: 01/16/2017
 ---
 
-# Build your Java app with Maven
+# Build your Java app with Gradle
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
@@ -41,7 +41,7 @@ https://github.com/Adventworks/java-sample
 
 ---
 
-The sample app in this repository is a Java servlet using JavaServer Pages (JSP). Tests for the application are written using JUnit. A Maven POM file is used to build, test, and package the application into a web archive (.war) file.
+The sample app in this repository is a Java servlet using JavaServer Pages (JSP). Tests for the application are written using JUnit. A Gradle wrapper file is used to build, test, and package the application into a web archive (.war) file.
 
 ## Set up continuous integration
 
@@ -65,7 +65,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
  ---
 
-1. In the right panel, search for `java`, select **Maven**, and then click **Apply**.
+1. In the right panel, search for `java`, select **Gradle**, and then click **Apply**.
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
@@ -73,7 +73,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
  * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
 
- * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) and Maven installed.
+ * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) installed.
 
 1. Click **Get sources** and then:
 
