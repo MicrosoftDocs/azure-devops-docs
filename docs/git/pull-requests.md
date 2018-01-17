@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 12/14/2017
+ms.date: 01/19/2018
 ---
 
 #  Review code with pull requests
@@ -23,7 +23,7 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 New to pull requests? [Learn more](https://www.visualstudio.com/learn/git-pull-requests/) about how to get feedback with Git pull requests.
 
 > [!NOTE]
-> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest)**.
+> You can manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI (Preview)](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest)**.
 
 ## Create a new pull request
 
@@ -157,6 +157,10 @@ The **Overview** tab shows the current state of the pull request at a glance.
 Review the title, description, and discussion to get an understanding of the proposed changes and see issues brought up by other reviewers.  
 
 ![Pull request overview](_img/pull-requests/pull-request-overview.png)
+
+If you need to make a change to the code as part of your review, starting with Visual Studio 2017 Update 6 you can checkout the source branch from a pull request directly from the **Pull Requests** view in **Team Explorer**. Right-click the desired pull request and choose **Checkout Source Branch**.
+
+![Checkout source branch](./_img/pull-requests/checkout-pr-source-branch.png)
 
 ### Browse code changes
 
