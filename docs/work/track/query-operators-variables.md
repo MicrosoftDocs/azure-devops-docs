@@ -263,14 +263,14 @@ You can use the macros described in the following table to filter your queries b
 <tbody valign="top">
 <tr>
 	<td><b>[Any]</b></td>
-	<td>Use in conjuction with the **Work Item Type** field to search across all work item types. For example, `Work Item Type=[Any]` won't place any filters based on the work item type.
+	<td>Use in conjunction with the **Work Item Type** field to search across all work item types. For example, `Work Item Type=[Any]` won't place any filters based on the work item type.
 </td>
 </tr>
 
 
 <tr>
 	<td>**@CurrentIteration**</td>
-	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 <blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
 </blockquote>
 </td>
@@ -278,7 +278,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@Follows**</td>
-	<td>Use in conjuction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
 <blockquote><strong>Feature availability:</strong> The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
 </blockquote>
 </td>
@@ -292,7 +292,7 @@ You can use the macros described in the following table to filter your queries b
 <!---
 <tr>
 	<td><b>@MyRecentActivity</b></td>
-	<td>Use in conjuction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
 <blockquote><strong>Feature availability:</strong> The **@MyRecentActivity** macro is supported for VSTS and TFS 2018 and later versions.
 </blockquote>
 </td>
@@ -301,7 +301,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@Project**</td>
-	<td>Use in conjuction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
+	<td>Use in conjunction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
 
 <blockquote><b>Feature availability:</b>  For VSTS and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
 </blockquote>
