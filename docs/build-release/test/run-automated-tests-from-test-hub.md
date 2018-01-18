@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Run automated tests from test plans in the Test hub

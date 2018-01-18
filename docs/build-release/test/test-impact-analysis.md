@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+ms.date: 1/18/2018
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
