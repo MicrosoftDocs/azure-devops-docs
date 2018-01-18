@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Set up continuous testing for your builds
