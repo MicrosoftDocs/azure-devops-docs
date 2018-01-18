@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Record and play back manual tests
