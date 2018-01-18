@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Perform user acceptance testing

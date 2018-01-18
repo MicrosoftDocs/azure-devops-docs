@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+ms.date: 1/18/2018
 ---
 
 # Run tests in parallel

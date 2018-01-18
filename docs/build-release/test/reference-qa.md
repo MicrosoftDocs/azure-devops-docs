@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # FAQs for continuous testing

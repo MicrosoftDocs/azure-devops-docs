@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Run cloud-based load tests using your own machines
