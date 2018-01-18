@@ -51,7 +51,7 @@ You'll need:
   If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you
   can easily identify them. If you need help, follow the steps in
-  [this example](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
+  [the ASP.NET Core web app deployment tutorial](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
 ## Configure the triggers in your release definition
 

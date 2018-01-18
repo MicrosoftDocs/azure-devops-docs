@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: AC41DC40-0843-47A1-B82E-5C3EACB2C434 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Run tests with your builds for continuous integration

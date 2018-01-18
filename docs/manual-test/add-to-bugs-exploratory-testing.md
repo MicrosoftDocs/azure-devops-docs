@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Add findings to existing bugs with exploratory testing
