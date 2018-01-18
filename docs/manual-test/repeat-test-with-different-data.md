@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Repeat a test with different data

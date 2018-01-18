@@ -372,6 +372,9 @@ Configure the subsequent **Visual Studio Test** task to use the bits acquired vi
 
 <img src="_img/126_37.png" alt="Test platform version" style="border:1px solid Silver; display: block; margin: auto;" />
 
+Limitations: The Test Platform package on nuget currently does not support running Coded UI test. Enabling support for Coded UI test is on the backlog. 
+The Test Platform package on nuget is cross-platform, but VSTest task currently does not support running .NET core tests. To run .NET core tests, use the 'dot net' task. 
+
 ## Wiki
 
 ### Wiki Search

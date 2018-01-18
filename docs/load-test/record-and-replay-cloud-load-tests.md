@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Record and replay cloud-based load tests
