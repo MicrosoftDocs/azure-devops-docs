@@ -758,6 +758,23 @@ You can pass environment variables of the build machine into build steps. For ex
         <tr>
             <td>
                 <p style="font-size:80%">
+                    System.PullRequest.IsFork
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_ISFORK
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <p style="font-size:80%">
+                    If the pull request is from a fork of the repository, this variable is set to `True`.
+                    Otherwise, it is set to `False`.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size:80%">
                     System.PullRequest.PullRequestId
                 </p>
                 <p style="font-size:80%">

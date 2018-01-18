@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 

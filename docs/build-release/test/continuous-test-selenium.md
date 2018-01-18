@@ -7,7 +7,7 @@ ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Get started with Selenium testing in a CI pipeline

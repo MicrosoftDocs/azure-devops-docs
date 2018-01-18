@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Default manual testing permissions and access 
