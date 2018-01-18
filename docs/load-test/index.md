@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Load Testing

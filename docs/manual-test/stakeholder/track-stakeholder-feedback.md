@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Track stakeholder feedback using the Test &amp; Feedback extension

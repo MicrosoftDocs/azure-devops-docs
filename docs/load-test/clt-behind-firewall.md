@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Test private and intranet apps using cloud-based load testing

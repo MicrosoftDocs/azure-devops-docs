@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 
