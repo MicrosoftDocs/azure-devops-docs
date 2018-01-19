@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Gates
@@ -52,6 +52,8 @@ that contains gates, the deployment stops until the health signals from all the 
      For more details, see [HTTP REST API task](../../../../tasks/utility/http-rest-api.md).
    * **Work item query**: Ensure the number of matching work items returned from a query is within a threshold.
      For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
+
+   > Also see the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
 
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
