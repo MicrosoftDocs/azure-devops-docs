@@ -93,7 +93,7 @@ so unless you plan on doing more work in the branch, it is safe to remove.
 
 
 ### What happens when a pull request is merged?
-You must resolve any [merge conflicts](merging.md) between the pull request branch the target branch. Git adds
+You must resolve any [merge conflicts](merging.md) between the pull request branch and the target branch. Git adds
 a new commit (the *merge commit*) to the end of the master branch. This merge commit links the earlier history of both the master branch and the commits for the branch
 that was merged as part of the pull request.
 
