@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# C# client libary samples 
+# C# client library samples 
 
 Samples showing how to extend and integrate with Team Foundation Server and VSTS using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
