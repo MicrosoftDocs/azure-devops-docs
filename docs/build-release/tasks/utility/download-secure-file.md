@@ -7,7 +7,7 @@ ms.assetid: 2a6ca863-f2ce-4f4d-8bcb-15e64608ec4b
 ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Download Secure File
