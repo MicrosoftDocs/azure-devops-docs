@@ -52,10 +52,6 @@ Hosted agents:
 
 Hosted agents do not offer:
 
-* Interactive mode.
-
-* Administrator privileges.
-
 * The ability to log on.
 
 * The ability to [drop artifacts to a UNC file share](../../concepts/definitions/build/artifacts.md#unc-file-share).
