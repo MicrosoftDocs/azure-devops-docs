@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Windows Machine File Copy

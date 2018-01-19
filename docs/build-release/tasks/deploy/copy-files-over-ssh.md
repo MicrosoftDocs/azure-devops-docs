@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Copy Files Over SSH
