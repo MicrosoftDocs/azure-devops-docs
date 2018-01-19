@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Manual intervention
