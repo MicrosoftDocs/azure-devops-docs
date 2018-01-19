@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Service Fabric PowerShell 

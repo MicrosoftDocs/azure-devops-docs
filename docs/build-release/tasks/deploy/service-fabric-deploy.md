@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Service Fabric Application Deployment

@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Azure CLI
