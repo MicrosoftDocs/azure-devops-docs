@@ -18,6 +18,8 @@ of the Contributors group for a team project. The most common built-in groups in
 Contributors, and Project Administrators. For a simplified view of all default permissions
 assigned to built-in groups, see [Default permissions and access](../security/permissions-access.md).  
 
+Permissions can be given at [Project level](../security/permissions.md#project-level) and at [Area path level](../security/permissions.md#area-path-object-level). 
+
 Stakeholders have limited access to manual testing features.
 To learn more, see [About access levels](../security/access-levels.md).
 
