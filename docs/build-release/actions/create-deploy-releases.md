@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: DCAD8C16-242E-4672-A5C6-5894C25CAF11
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+ms.date: 01/19/2018
 ---
 
 # Create and deploy a release
