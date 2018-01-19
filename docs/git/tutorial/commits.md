@@ -40,7 +40,7 @@ When you create a commit, only the staged changes and unchanged files are used f
 Changes to unstaged but modified files are kept, but the commit uses the unmodified version from the previous commit in its snapshot.
    
 Commits are created in your local Git repository, so you don't have to worry about your changes being perfect. 
-Continue to create commits as you work, [pushing](pushing.md) your changes to then team when they are ready to share.
+Continue to create commits as you work, [pushing](pushing.md) your changes to the team when they are ready to share.
 
 ### Video overview
 
