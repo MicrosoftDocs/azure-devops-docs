@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Deployment groups
@@ -55,7 +55,7 @@ You manage the security for a deployment group by
 ## Deploy agents to a deployment group
 
 Every target machine in the deployment group requires the build and release agent
-to be installed. You an do this using the script that is generated in the
+to be installed. You can do this using the script that is generated in the
 **Deployment Groups** tab of the **Build &amp; Release** hub. You can choose the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
