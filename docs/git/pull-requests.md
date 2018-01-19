@@ -164,7 +164,10 @@ If you need to make a change to the code as part of your review, starting with V
 
 ### Browse code changes
 
-Select the **Files** tab to view the changes made to the source branch relative to the target branch of the pull request.    
+Select the **Files** tab to view the changes made to the source branch relative to the target branch of the pull request.
+
+>[!NOTE]
+>The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool on your machine.
 
 ![Pull request files](_img/pull-requests/pull-request-files.png)
 
