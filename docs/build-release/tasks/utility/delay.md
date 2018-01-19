@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Delay

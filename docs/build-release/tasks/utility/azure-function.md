@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/14/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Azure function

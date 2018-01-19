@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: SSH
