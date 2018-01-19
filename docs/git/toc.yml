@@ -136,6 +136,8 @@
     href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
     href: ../build-release/concepts/definitions/build/triggers.md
+  - name: Work with tags
+    href: how-to/git-tags.md
 - name: Reference
   items:
   - name: Command reference
