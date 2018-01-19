@@ -36,7 +36,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Configure features, list of features configured or not configured](_img/ALM_CFW_ConfigFeatures.png)
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add he Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>  
+	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>  
 
 	The features listed depend on the TFS version of software installed. To get the latest features, upgrade your server to the latest version. 
 
