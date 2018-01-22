@@ -12,7 +12,7 @@
     "name": {
       "type": "string",
       "description": "Name with no spaces",
-      "pattern": "^[A-Za-z0-9\\-]+$"
+      "pattern": "^[A-Za-z0-9]+$"
     },
     "friendlyName": {
       "type": "string",
