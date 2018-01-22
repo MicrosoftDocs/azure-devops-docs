@@ -2,82 +2,58 @@
   href: index.md
 - name: Overview
   items:
-  - name: How billing works
+  - name: VSTS billing overview
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Pay for VSTS users
+  - name: Set up billing
+    href: set-up-billing-for-your-account-vs.md
+  - name: How to pay for VSTS users
     href: buy-basic-access-add-users.md
-  - name: Try extensions for free
+  - name: How to buy VSTS CI/CD
+    href: buy-more-build-vs.md
+  - name: Free trials for paid VSTS features and extensions
     href: try-additional-features-vs.md
+  - name: How to buy cloud-based load testing services
+    href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: "1 - Change Azure AD tenant: setup"
+  - name: Change the Azure Active Directory for your VSTS account
     href: ../accounts/change-azure-active-directory-vsts-account.md
-  - name: "2 - Change Azure AD tenant: prepare source directory"
-    href: ../accounts/change-azure-ad-vsts-account-prep-src.md
-  - name: "3 - Change Azure AD tenant: prepare target directory"
-    href: ../accounts/change-azure-ad-vsts-account-prep-target.md
-  - name: "4 - Change Azure AD tenant: disconnect from source directory"
-    href: ../accounts/change-azure-ad-vsts-account-disconnect.md
-  - name: "5 - Change Azure AD tenant: connect to target directory"
-    href: ../accounts/change-azure-ad-vsts-account-connect.md
-  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
-    href: ../accounts/change-azure-ad-vsts-account-reassign-owner.md
-- name: Concepts
-  items:
-  - name: Billing with Azure Subscriptions
-    href: billing-concepts.md
-  - name: Use MSDN subscription with organizational account
-    href: link-msdn-subscription-concept.md
 - name: How-to Guides
   items:
-  - name: Set up billing
+  - name: VSTS billing
     items:
-    - name: Link Azure subscription to VSTS Account
+    - name: Set up billing
       href: set-up-billing-for-your-account-vs.md
     - name: Add backup billing managers
       href: add-backup-billing-managers.md
-    - name: Change Azure subscription for billing
+    - name: Change billing to a different Azure subscription
       href: change-azure-subscription.md
-  - name: Link work accounts to Visual Studio with MSDN subscriptions
-    href: link-msdn-subscription-to-organizational-account-vs.md
-  - name: Buy build pipelines
-    href: buy-more-build-vs.md
-  - name: Buy load testing services
-    href: buy-load-testing-vs.md
-  - name: Buy basic access to TFS Test hub
-    href: buy-access-tfs-test-hub.md
-  - name: Buy Xamarin University
-    href: xamarin-univ.md
-  - name: Manage extensions
+    - name: Change the number of paid VSTS users
+      href: reduce-cancel-paid-vsts-users.md
+  - name: TFS billing
     items:
-    - name: Change number of paid extension users
+    - name: Buy TFS CALs or access to the TFS Test hub
+      href: buy-access-tfs-test-hub.md
+  - name: Manage paid VSTS or TFS extensions
+    items:
+    - name: Increase or decrease number of paid users
       href: change-number-paid-extension-users.md
     - name: Approve requests for VSTS extensions
       href: ../marketplace/approve-vsts-extensions.md
-    - name: Assign paid extensions access
+    - name: Assign paid extensions to your users
       href: ../marketplace/assign-paid-extensions.md
     - name: Uninstall or disable extensions
       href: ../marketplace/uninstall-disable-vsts-extensions.md
-  - name: Manage Visual Studio subscriptions
+  - name: Guidance for Cloud Solution Providers
     items:
-    - name: Buy Visual Studio subscriptions
-      href: vs-subscriptions/buy-vs-subscriptions.md
-    - name: Manage Visual Studio subscriptions
-      href: vs-subscriptions/manage-vs-subscriptions.md
-    - name: View Visual Studio subscriptions
-      href: vs-subscriptions/view-vs-subscriptions.md
-  - name: Cloud Solution Provider
-    items:
-    - name: Set up customer and billing
+    - name: "CSPs: Set up your customer"
       href: csp/set-up-csp-customer.md
-    - name: Buy VSTS resources
+    - name: "CSPs: Buy VSTS for your customers"
       href: csp/buy-csp-vsts.md
-    - name: Buy and manage VS subscriptions
+    - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: csp/buy-manage-vs-subs.md
-    - name: Buy VS App Center
-      href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
   - name: Billing signup
@@ -90,7 +66,7 @@
     href: faq-vs-subscriptions.md
   - name: Azure billing
     href: faq-azure-billing.md
-  - name: Link work or school account to MSDN subscription
+  - name: Identitites for Visual Studio subscribers
     href: faq-link-msdn-subscription-org-account.md
 - name: Reference
   items:
@@ -102,7 +78,19 @@
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
+  - name: VSTS and TFS extensions
+    href: extensions.md
   - name: Manage Extensions
     href: ../marketplace/index.md
   - name: Service hooks
     href: ../service-hooks/index.md
+- name: Buying subscriptions
+  items:
+  - name: Buy Xamarin University
+    href: xamarin-univ.md
+  - name: Visual Studio cloud subscriptions
+    items:
+    - name: Buy Visual Studio cloud subscriptions
+      href: vs-subscriptions/buy-vs-subscriptions.md
+    - name: Assign and Manage Visual Studio cloud subscriptions
+      href: vs-subscriptions/manage-vs-subscriptions.md

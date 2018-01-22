@@ -4,8 +4,8 @@ description: Troubleshooting Visual Studio Subscriptions
 ms.technology: vs-devops-setup
 ms.assetid: d32c0b7a-a9f8-4629-9b54-f115c2adc4e2
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 #	Troubleshooting Visual Studio Subscriptions
