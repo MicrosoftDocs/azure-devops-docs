@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
-ms.author: billchi
-ms.date: 11/09/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 # Troubleshooting paying for VSTS Basic access
@@ -25,7 +25,7 @@ ms.date: 11/09/2017
 
 ## Purchases and billing
 
-<a name="AzureMSDNSubscription"></a>
+<a name="EligibleAzureSubscriptions"></a>
 
 [!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 

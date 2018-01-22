@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: f5fab296-1942-47c9-b4c8-61bf347b3d87
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 #	Buy Visual Studio Professional and Visual Studio Enterprise subscriptions
@@ -81,6 +81,8 @@ and sign in with the identity used to purchase these subscriptions.
 *   To cancel these subscriptions, reduce the number of subscriptions to zero (0). 
 They won't renew at the end of the month.
 
+
+## Marketplace and Billing Q&A
 
 Visit [Marketplace support](../../marketplace/marketplace-billing-qa.md), 
 [Visual Studio subscriptions troubleshooting](../faq-vs-subscriptions.md), or 
