@@ -742,7 +742,7 @@ You manage collection-level permissions through the [web portal admin context](.
 </table>
 
 
-
+<a name="project-level" />
 <a name="project_test">  </a>
 <a name="team-project-level-permissions">  </a>
 <a name="project-level-permissions" />
@@ -1331,6 +1331,7 @@ In version control permissions, explicit deny takes precedence over administrato
 </table>
 
 
+<a name="area-path-object-level"></a>
 <a name="area-permissions"></a>
 
 ##&nbsp;&nbsp;&nbsp;Area path (object-level)     
