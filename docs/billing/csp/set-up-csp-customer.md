@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 7c2d014a-c6b4-40e7-9217-326b6d8cd74c
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 # Set up Cloud Solution Provider customer and billing in Partner Center

@@ -34,13 +34,13 @@ In this topic you'll find:
 
 ##  Remove users from AD or AAD  
 
-- [Delete users from Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory#delete-users-from-azure-ad)
+- [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory#delete-users-from-azure-ad)
 - [Delete a User Account from Active Directory](https://technet.microsoft.com/en-us/library/cc753730.aspx)
 
  
 ##  Reduce the number of paid users, reassign paid extensions
 
-- [Change number of users who have paid Basic access](../billing/buy-basic-access-add-users.md#change-number-of-users-who-have-paid-basic-access)
+- [Change number of users who have paid Basic access](../billing/buy-basic-access-add-users.md)
 - [Assign paid extension access to users for VSTS](../marketplace/assign-paid-extensions.md)
 
 > [!NOTE]   
