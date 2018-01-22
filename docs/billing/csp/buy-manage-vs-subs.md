@@ -4,10 +4,9 @@ description: Cloud Service Provider (CSP) partners can purchase and manage vario
 ms.technology: vs-devops-setup
 ms.assetid: 7c1960ac-01d1-4376-9366-9c1ad5b9060e
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
-
 
 # Buy and manage Visual Studio cloud subscriptions for your customers
 
@@ -65,8 +64,12 @@ activation invitation to the email address you provided.
 [Learn more](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions) about 
 managing Visual Studio subscriptions.
 	
-> NOTE:
-> Visual Studio subscribers qualify for dev/test pricing. Your customers can sign themselves up for their 
-> individual Azure monthly credit or PAYG team dev/test, but as a CSP, you can't access the dev/test discounts 
-> for your customers. Point customers to [Azure dev/test pricing](http://aka.ms/azuredevtestpricing) to learn about 
-> their options.  
+>[!NOTE]
+> Visual Studio subscribers qualify for dev/test pricing. After you assign the Visual Studio subscription to the end user, 
+> and that end user activates, then this activated Visual Studio subscriber can create a new Azure subscription for their own use  
+> which includes a monthly credit that can be used for running Azure resources for dev/test. See 
+> [monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)
+>
+> Separately, we also offer a way for customers to use Azure across their team with dev/test pricing.  
+> Point customers to [Azure dev/test pricing](http://aka.ms/azuredevtestpricing) to learn about options. We do not have a way for 
+> CSPs to offer Azure dev/test pricing to their customers; the customers must sign up for this directly with Microsoft.  
