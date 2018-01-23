@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
-ms.author: estfan
+ms.author: chcomley
 ms.date: 1/22/2018
 ---
 
