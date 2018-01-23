@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
-ms.author: billchi
-ms.date: 12/19/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 #Troubleshooting Azure billing
@@ -14,8 +14,6 @@ ms.date: 12/19/2017
 **VSTS**
 
 <a name="billing"></a>
-##	Azure billing
-
 When you buy from the Visual Studio Marketplace, 
 you select an Azure subscription to use for billing. 
 If you don't have an Azure subscription, 
@@ -43,6 +41,8 @@ your Visual Studio Professional IDE will stop working on
 the 1st of the following month. This also applies to annual 
 Visual Studio subscriptions that are paid in full for the year. 
 
+## Enterprise Agreement (EA) customers
+
 ###Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 
 A:	Yes, please buy directly from the Visual Studio Marketplace 
@@ -64,16 +64,19 @@ A:	You can use these prepaid funds to pay for:
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
 *	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
+*	[HockeyApp plans](https://marketplace.visualstudio.com/subscriptions)
 
 You can't use these funds to pay for Visual Studio cloud 
 subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
+
+## Free Trial customers and customers using their monthly Azure credits
 
 ###Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
-which applies to VSTS, and so on. 
+which applies to VSTS, HockeyApp user plans, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase.  
 
@@ -101,6 +104,8 @@ including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
+## Other
+
 ###Q:	How often am I billed for Visual Studio subscriptions?
 
 A: Your billing frequency depends on the subscriptions that you purchased:
@@ -118,14 +123,12 @@ after the anniversary date of your subscription purchase.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
-
 [!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
 
 
 
 
-<a name="AzureMSDNSubscription"></a>
+<a name="EligibleAzureSubscriptions"></a>
 
 [!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
