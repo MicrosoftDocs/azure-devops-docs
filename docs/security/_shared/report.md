@@ -65,7 +65,7 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>With permissions set</td>
+<td>[With permissions set](/vsts/report/dashboards/dashboard-permissions)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>

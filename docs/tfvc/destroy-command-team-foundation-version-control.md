@@ -59,7 +59,7 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 	<td><p>Displays in the Command Prompt window the files that would be destroyed. When <strong>tf destroy</strong> runs in the preview mode, the files are not actually destroyed.</p><strong>Note:</strong> The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the <strong>/preview</strong> option is used.</td></tr>
 <tr>
 	<td><p><strong>/startcleanup</strong></p></td>
-	<td><p>Forces the file content clean-up process to start immediately after the content deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed content clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run once each day.</p></td></tr>
+	<td><p>Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.</p></td></tr>
 <tr>
 	<td><p><strong>/noprompt</strong></p><p><strong>/i</strong></p></td>
 	<td><p>Specifies that the destruction of files is non-interactive. <strong>/i</strong> is an alias for <strong>/noprompt</strong>.</p></td></tr>

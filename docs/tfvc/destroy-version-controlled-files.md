@@ -60,7 +60,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
             >tf destroy $/MyTeamProject /keephistory /stopat:D10/23/2005
 
-    -   Use the **/startcleanup** option to immediately clean up the content that is no longer referenced by Team Foundation Server. Without this option, the destroyed files are removed when the database is maintained by a SQL process that generally runs one time a day.
+    -   Use the **/startcleanup** option to immediately clean up the TFVC metadata of the files that are no longer referenced by Team Foundation Server. Without this option, those metadata are removed when the database is maintained by a SQL process that runs every 5 days. Seven days after the TFVC metadata deletion, the content of the destroyed files will be deleted by another SQL process.
 
         To immediately destroy all the files in aFolder, type:
 
