@@ -75,6 +75,37 @@ you can download the log files for every server to examine the deployments
 and resolve issues. To navigate quickly to a release definition or a release,
 use the links in the **Releases** tab. 
 
+## Share a deployment group
+
+Each deployment group is a member of a **deployment pool**, and you can share
+the deployment pool and groups across projects provided that:
+
+* The user sharing the deployment pool has [User permission](../../../agents/pools-queues.md#security) for the pool containing the group.
+* The user sharing the deployment pool has permission to create a deployment group in the project where it is being shared.
+* The project does not already contain a deployment group that is a member of the same deployment pool.
+
+The tags you assign to each machine in the pool are scoped at project level,
+so you can specify a different tag for the same machine in each deployment group.
+
+### Add a deployment pool and group to another project 
+
+To manage a deployment pool, or to add an existing deployment pool and the groups it contains to another project,
+choose the **Manage** link in the **Agent Pool** section of the **Deployment Group** page.
+In the **Deployment Pools** page, select the projects for which you
+want the deployment group to be available, then save the changes.
+
+When you navigate to the **Deployment Groups** page in the target project(s), you
+will see the deployment group you added and you can assign project-specific machine tags as required.
+
+### Create a new deployment pool
+
+You can add a new deployment pool to an account, share it amongst your projects, and then add deployment groups to it.
+In the **Deployment Pools** page, choose **+ New**. In the **New deployment pool** panel,
+enter a name for the pool and then select the projects for which you want it to be available.
+
+When you navigate to the **Deployment Groups** page in the target project(s), you
+will see the deployment group you added and you can assign project-specific machine tags as required.
+
 ## Related topics
 
 * [Run on machine group phase](../../../process/phases.md#deployment-group-phase)
