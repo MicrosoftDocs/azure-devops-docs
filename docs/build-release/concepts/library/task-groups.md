@@ -52,6 +52,9 @@ pointers to help you achieve the desired behavior:
   a value for, are not configurable in the task group when added to a build
   or release definition.
 
+* Task conditions (such as "Run this task only when a previous task has failed" for a
+  **PowerShell Script** task) can be configured in a task group and these settings are persisted with the task group.
+
 * When you save the task group, you can provide a name and a description for the
   new task group, and select a category where you want it to appear in the
   **Task catalog** dialog. You can also change the default values for each of the parameters.
