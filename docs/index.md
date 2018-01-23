@@ -52,7 +52,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/team-services/updates/">
+                <a href="https://aka.ms/vsts/releasenotes/latest">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
