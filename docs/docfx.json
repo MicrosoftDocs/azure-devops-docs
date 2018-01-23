@@ -36,6 +36,8 @@
       "uhfHeaderId": "MSDocsHeader-TeamServices",
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "brand": "vsts",
+      "searchScope": ["VSTS", "Visual Studio Team Services"],
       "author": "douge",
       "ms.author": "douge",
       "ms.date": "07/13/2017",
