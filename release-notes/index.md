@@ -104,7 +104,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="19">[11 Dec 2017](2017/dec-11-vsts.md)</td>
+            <td rowspan="22">[11 Dec 2017](2017/dec-11-vsts.md)</td>
             <td>Track code pushes to a Git repo to builds and releases</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
@@ -121,6 +121,9 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Release triggers branch enhancements</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Filter large test results</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Identify flaky tests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Pass parameters to your test run using .testsettings file</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Automated tests that use TestCase as a data source can now be run using the VSTest task</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Improved Marketplace experience</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Refreshed publisher management portal</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Virus scan of all public extensions on Marketplace</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>

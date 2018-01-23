@@ -49,14 +49,14 @@ The structural elements used in the previous example are described in the follow
 <tr>
 <td><p>**WITD**</p></td>
 <td><p>The complete WIT definition is wrapped by the tag <strong>WITD</strong>. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use "1.0".</p>
-<code>
+<pre><code>
 &lt;witd:WITD application="Work item type editor" version="1.0"  
 xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef"&gt;  
    &lt;WORKITEMTYPE&gt;   
 &#160;&#160;&#160;. . .  
 &lt;/WORKITEMTYPE&gt;  
 &lt;/witd:WITD&gt;
-</code>
+</code></pre>
 </td>
 </tr>
 <tr>
@@ -78,17 +78,17 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 **Note**: You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field <strong>System.Definition</strong>.
 </blockquote>
 
-<code>
+<pre><code>
 &lt;DESCRIPTION&gt; DescriptionOfWorkItemType&lt;/DESCRIPTION&gt;
 </code>
 <p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr><tr><td data-th="Element"><p>**GLOBALLISTS**</p></td><td data-th="Description"><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a team project collection. [Define global lists](define-global-lists.md) supports cross-group collaboration and ease of maintenance. </p>
-<code>
+<code></pre>
 &lt;GLOBALLIST name="globalListName"&gt;  
 &nbsp;&nbsp;&nbsp;&lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
 &lt;/GLOBALLIST&gt;  
 </code>
 <p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WITWithin the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
-<code>
+<pre><code>
 &lt;FIELDS&gt;  
 &nbsp;&nbsp;&nbsp;&lt;FIELD&gt; . . . &lt;/FIELD&gt;  
 &lt;/FIELDS&gt;  
@@ -98,7 +98,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 <td data-th="Element"><p>**FORM**</p></td><td data-th="Description"><p>Specifies the [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.</p>
 
 <p>**For TFS 2015 and earlier versions**, the **FORM** element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
-<code>
+<code></pre>
 &lt;FORM&gt;  
 &nbsp;&nbsp;&nbsp;&lt;Layout&gt; . . . &lt;/Layout&gt;  
 &lt;/FORM&gt;  
@@ -126,12 +126,12 @@ For the Hosted XML and On-premises XML process models (TFS 2017 and later versio
 </tr>
 <tr><td>**WORKFLOW**</td>
 <td><p>Defines the workflow elements that help track the work item status as it moves from a new state to closed or done. This element contains the set of <strong>STATE</strong> and <strong>TRANSITION</strong> elements that define the workflow. The workflow is a set of valid transitions from one state to another and the specific conditions associated with each transition.</p>
-<code>
+<pre><code>
 &lt;WORKFLOW&gt;  
 &nbsp;&nbsp;&nbsp;&lt;STATES&gt; . . . &lt;/STATES&gt;  
 &nbsp;&nbsp;&nbsp;&lt;TRANSITIONS&gt; . . . &lt;/TRANSITIONS&gt;  
 &lt;/WORKFLOW&gt;  
-</code>
+</code></pre>
 </td>
 </tr>
 

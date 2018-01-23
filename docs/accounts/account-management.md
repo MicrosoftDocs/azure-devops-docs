@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
