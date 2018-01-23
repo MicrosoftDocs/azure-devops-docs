@@ -389,6 +389,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 - [✔️ DO use `Tags` collection property on work items when filtering by tags](#perf-tags) 
 - [✔️ DO use `TagNames` property if you want to display all the tags on a work item as text](#perf-tagnames) 
 - [✔️ DO use server-driven paging](#perf-paging) 
+- [✔️ DO use `$top` query option to limit the number of records](#perf-top)
 
 
 ### Don'ts
@@ -620,6 +621,12 @@ The link to the next page is included in the `@odata.nextLink` property.
 ### ❌ DO NOT use `$top` and `$skip` query options to implement client-driven paging
 
 With other REST API's you might have implemented client-driven paging with `$top` and `$skip` query options. Don't use them with the Analytics Service. There are several problems with this approach and performance is one of them. Instead, adopt the server-driven paging strategy described in the previous section.
+
+
+<a id="perf-top"> </a>
+### ✔️ DO use `$top` query option to limit the number of records
+Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you care only about a subset of records (e.g. sample or top ranked records), it is absolutely fine to use `$top` query option.
+
 
 <a id="perf-small-number"> </a>
 ### ✔️ CONSIDER writing a query to return small number of records

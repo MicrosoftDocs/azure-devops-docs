@@ -5,13 +5,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: estfan
+ms.date: 1/22/2018
 ---
 
 # Change number of paid extension users for VSTS
 
-**VSTS**
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
 
 To scale with your team's needs, increase or decrease your total number of paid extension users.
