@@ -14,10 +14,6 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Upd
 
 In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy to announce the preview of an updated experience for search that gives more real estate for the search results, and makes it easier and more intuitive to filter. Read more about the [updated experience for search](#updated-experience-for-code-and-work-items-search) below.
 
-### What's new in VSTS Sprint 124 Update video
-
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Team-Services-VSTS-Sprint-124--whats-new/player]
-
 Some of the other key feature highlights include:
 
 * [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
@@ -25,6 +21,10 @@ Some of the other key feature highlights include:
 * [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
 * [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
 * [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
+
+## What’s new in VSTS
+
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Team-Services-VSTS-Sprint-124--whats-new/player]
 
 ## Code
 

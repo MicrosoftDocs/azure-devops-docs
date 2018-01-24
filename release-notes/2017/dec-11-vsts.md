@@ -22,6 +22,10 @@ Other key feature highlights include:
 * [Skip scheduled builds if nothing has changed in the repo](#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) - Conserve resources and avoid noise of extra builds.
 * [Cloud Solution Provider (CSP) purchasing now generally available](#cloud-solution-provider-purchasing-now-generally-available) - Enable the deeper engagement that comes by working through the CSP program.
 
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/jWuRMAc0wm4?rel=0]
+
 ## Code
 
 ### Track code pushes to a Git repo to builds and releases
@@ -136,11 +140,11 @@ In the **Tests** tab under **Build and Release**, you can filter the test result
 > [!div class="mx-imgBorder"]
 ![Re-run failed test results](_img/127_09.png)
 
-### Pass parameters to your test run using .testsettings file 
+### Pass parameters to your test run using .testsettings file
 
 When running automated tests using a .testsettings file, you can now pass parameters to the test, such as appURL. This information can be accessed via the TestContext object in the test code. 
 You can also override these parameters in the CI/CD pipeline using the test tasks.
-To use this, you need Visual Studio 2017.5 or higher. 
+To use this, you need Visual Studio 2017.5 or higher.
 
 1. In Visual Studio, open your .testsettings file using the XML editor and add the parameters you need in the “Properties” node as follows:
 `<Properties><Property name="appURL" value="http://www.bing.com"/><Property name="browser" value="Edge"/></Properties>`
@@ -149,7 +153,7 @@ To use this, you need Visual Studio 2017.5 or higher.
 
 ### Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline
 
-When running automated tests in the CI/CD pipeline using Test Plan/Test Suite or when running automated tests from the **Test** hub, crucial TCM properties can now be accessed using the TestContext object. 
+When running automated tests in the CI/CD pipeline using Test Plan/Test Suite or when running automated tests from the **Test** hub, crucial TCM properties can now be accessed using the TestContext object.
 To use this, you need Visual Studio 2017.5 or higher.
 This includes:
 

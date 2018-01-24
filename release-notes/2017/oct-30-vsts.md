@@ -21,6 +21,10 @@ Other key feature highlights include:
 * [Mention a pull request](#mention-a-pull-request) - Discuss pull requests with a bang`!`
 * Consistent filtering in [Plans](#filtering-on-plans) and [Package](#filtering-in-package-management) - Find what you’re looking for fast no matter where you are in VSTS.
 
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/82fid741cXE?rel=0]
+
 ## Work
 
 ### Modernized column options
