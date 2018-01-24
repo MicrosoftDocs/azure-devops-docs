@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 12/18/2017
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -17,12 +17,6 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
-### 2017 Q4
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|Updated Windows shell extension for TFVC|Code|N/A|
-
 ### 2018 Q1
 
 |Feature  |Area  |Server  |
@@ -34,18 +28,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Work Items – Discussion-centric work item form|Work|TBD|
 |Work Items – Cross account linking|Work|TBD|
 |Work Items – Edit/Delete discussion comments|Work|TBD|
-|Git – API to extend Pull Requests for custom status policies|Code|TBD|
+|Updated Windows shell extension for TFVC|Code|N/A|
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
-|Wiki Search - GA|Code|TBD|
-|Pull request labels|Code|TBD|
 |User-added required reviewers for pull requests|Code|TBD|
-|CI – GitHub Enterprise integration|Build|TBD|
 |Build completion triggers – Trigger a build after completion of another build|Build|TBD|
 |XAML deprecation – XAML builds no longer supported in VSTS new accounts|Build|N/A|
 |Updated build summary and log views|Build|TBD|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Build PRs from forks in GitHub|Build|TBD|
 |Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
 |Azure Portal Continuous Delivery support – VMs|Release|TBD|
@@ -103,6 +93,32 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="22">[24 Jan 2018](2018/jan-24-vsts.md)</td>
+            <td>View Analystics Widgets as a Stakeholder</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>View pull request merge commit</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Help reviewers using pull request labels</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>View remaining policy criteria for pull request auto-complete</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Discuss math in pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Control who can contribute to pull requests</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Integrate using the pull request status API and branch policy</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Move work using suggested Areas and Iterations</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build GitHub pull requests from repository forks</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build with continuous integration from GitHub Enterprise</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Build with the appropriate agent by default</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Screenshot desktop apps through the Chrome browser</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Filter large test results by Test Name</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Run Functional Tests and Deploy Test Agent tasks are now deprecated</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Wiki Search now Generally Available</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Print Wiki pages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Contribute to Wiki pages with ease using keyboard shortcuts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Calculate price without leaving the extension page</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Manage permissions directly on Azure AD groups</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Consider warning of single Project Collection Administrator</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="22">[11 Dec 2017](2017/dec-11-vsts.md)</td>
             <td>Track code pushes to a Git repo to builds and releases</td>
