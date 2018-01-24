@@ -168,6 +168,7 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Backlog priority or stack rank order](stack-rank-backlog-position.md)
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 

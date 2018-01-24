@@ -125,6 +125,8 @@
   items:
   - name: Work item form controls 
     href: work-item-form-controls.md 
+  - name: "Keyboard shortcuts for work item forms & the Work Items page" 
+    href: work-item-form-keyboard-shortcuts.md 
   - name: Query by title, ID, or description
     href: ../track/titles-ids-descriptions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Query by assignment or workflow changes
