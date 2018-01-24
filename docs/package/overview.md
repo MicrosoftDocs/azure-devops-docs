@@ -20,7 +20,7 @@ ms.date: 09/01/2017
 
 Package Management introduces the concept of multiple *feeds* that can be used to organize and control access to your packages. If you're familiar with using packages from [NuGet.org](https://www.nuget.org) or [npmjs](https://www.npmjs.com), you can think of those places each as a single feed. 
 
-A note on terminology: you may also have heard feeds called package *repositories* or package *sources*, esp. if you're an npm or Maven user.
+A note on terminology: you may also have heard feeds called package *repositories* or package *sources*, especially if you're an npm or Maven user.
 
 ## Get started using Package Management
 Get up and running with NuGet, npm, and Maven in VSTS and TFS in just a few minutes with the [NuGet quick start](get-started-nuget.md), [npm quick start](get-started-npm.md), and [Maven quick start](get-started-maven.md).
