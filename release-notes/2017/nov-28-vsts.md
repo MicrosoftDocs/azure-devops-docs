@@ -480,7 +480,10 @@ You can now easily invite people from outside of your Azure Active Directory (Az
 > [!div class="mx-imgBorder"]
 ![Invite directory guests](_img/126_21.png)
 
-## Feedback
+## Next steps and Feedback
+
+> [!div class="nextstepaction"]
+> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
