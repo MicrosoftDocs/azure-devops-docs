@@ -81,7 +81,7 @@ You add query folders from the **Work>Queries** page.
 ### Add a query to the dashboard or share it with your team 
 To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards/dashboards.md).   
 
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../security/add-users-team-project.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
 
@@ -109,3 +109,6 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 In Team Explorer for Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
 
 <!-- ENDSECTION --> 
+
+## Related notes
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

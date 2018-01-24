@@ -33,10 +33,6 @@ Use this topic to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
->[!NOTE]  
->**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
-
-
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
 To focus on one level of a backlog at a time, click the name of the backlog you want to view. If you don't see all three backlog levels&mdash;
@@ -48,6 +44,9 @@ For example, when you click Epics, you'll see a list of all Epics in your team's
 <img src="_img/org-backlog-epics-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #C3C3C3;" />  
 
 Click Features to see a list of all features in your team's active area paths.  
+
+>[!NOTE]  
+>**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
 
 
 <a name="add-features-epics"></a>
@@ -164,7 +163,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)  
-
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 
 > [!NOTE]

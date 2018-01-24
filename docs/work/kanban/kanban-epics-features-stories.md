@@ -57,7 +57,7 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Add columns](add-columns.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Customize cards](../customize/customize-cards.md)  
-
+* [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
 
 ### REST API resources
 To programmatically create work items, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).  
