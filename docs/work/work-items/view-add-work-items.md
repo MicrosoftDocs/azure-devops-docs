@@ -73,7 +73,7 @@ Work items can be filtered by typing a keyword or using one or more of the field
 ## Related notes
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
-
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 
 ### Got feedback?
 

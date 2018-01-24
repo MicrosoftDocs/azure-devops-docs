@@ -1,23 +1,24 @@
 Publish Maven packages to a feed in Package Management to share them with your team and your organization.
 
-In order to publish a Maven package, you'll need to have a Maven package to publish on your local box. 
+To publish a Maven package, you'll need to have a Maven package to publish on your local machine. 
 If you don't have one, you can generate one by running the following command:
 
-```no-highlight
+```Command
 mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
 ```
-<br>
-1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
-<br>
-2. Navigate to the directory containing your Maven package's `pom.xml`.  If you've just created an artifact, the `pom.xml` will be in the *myFirstApp* folder.
-<br>
-3. From the **connect to feed** dialog in VSTS, copy the `<repository>` information. Paste it into your `pom.xml` twice: (See example above)
-    * Between the `<repositories>` tags.
-    * Between the `<distributionManagement>` tags. 
-<br>
-4. From the directory with your `pom.xml`, run the command <code>mvn deploy</code>. The Maven package should show up in your feed.
 
-**Sample `pom.xml`:**
+1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
+
+2. Navigate to the directory containing your Maven package's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the *myFirstApp* folder.
+
+3. From the **Connect to feed** dialog in VSTS, copy the `<repository>` information. Paste it into your **pom.xml** file twice: (See sample file above)
+
+   * Between the `<repositories>` tags.
+   * Between the `<distributionManagement>` tags. 
+
+4. From the directory containing your **pom.xml** file, run the command `mvn deploy`. The Maven package should show up in your feed.
+
+**Sample pom.xml file:**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +39,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
       </dependency>
    </dependencies>
    <repositories>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
@@ -51,7 +52,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
       </repository>
    </repositories>
    <distributionManagement>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
@@ -66,5 +67,4 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 </project>
 ```
 
-<br>
 See the [Maven CLI docs](http://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.

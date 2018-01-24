@@ -66,12 +66,12 @@
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
+  - name: Query keyboard shortcuts
+    href: queries-keyboard-shortcuts.md
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
     href: ../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
-  - name: Keyboard shortcuts
-    href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Work Items

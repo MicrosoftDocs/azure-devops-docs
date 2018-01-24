@@ -1,12 +1,13 @@
 ---
-title: Review team delivery plans | VSTS & TFS
+title: Review team delivery plans 
+titleSuffix: VSTS & TFS
 description: Install the Delivery Plans extension, add & use plans to review scheduled multi-team deliverables in VSTS (VSTS, VS Online) and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 10/09/2017
 ---
 
@@ -15,8 +16,12 @@ ms.date: 10/09/2017
 
 <b>VSTS | TFS 2018 | TFS 2017.2</b> 
 
-> [!NOTE]  
-> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../security/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
+
+Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
+ 
+![Moving a card to a different iteration](_img/plans_move1.png)
+
+Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
 In this topic you'll learn:
 
@@ -28,11 +33,9 @@ In this topic you'll learn:
 > - How to work with the interactive elements of plans and change the plan view
 > - What permissions are required to create and view plans  
 
-Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
 
-![Moving a card to a different iteration](_img/plans_move1.png)
-
-Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
+> [!NOTE]  
+> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../security/get-started-stakeholder.md), however, don’t have access to Delivery Plans.) 
 
 ## Review a plan with your teams
 
@@ -50,7 +53,7 @@ For example, we use Delivery Plans internally to share the schedule of Features 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
 
-### Pre-requisites
+### Prerequisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
 - Be granted Basic access or greater in [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../security/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
@@ -134,7 +137,7 @@ You can interact with the plan in the following ways:
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
 - Click the ![Settings gear icon](../_img/icons/team-settings-gear-icon.png) settings gear to edit the plan and [change the fields displayed on the cards](#card-settings).   
 
-For a list of all keyboard shortcuts, see [Plan view keyboard shortcuts](#plans-keyboard-shortcuts).  
+For a list of all keyboard shortcuts, see [Keyboard shortcuts to interact with delivery plans](delivery-plan-keyboard-shortcuts.md).  
 
 <!--- QUESTION: What determines the order of team rows? --> 
 
@@ -182,14 +185,8 @@ For additional resources for working with multiple teams, see these additional t
 - [Multiple teams](multiple-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Configure team settings](manage-team-assets.md)  
-
-<a id="plans-keyboard-shortcuts">  </a>
-### Plans view, keyboard shortcuts  
- 
-From a Delivery Plan page, enter **?** to open the keyboard shortcuts pane. For additional shortcuts, see [hotkeys and keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
-
-<img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 1px solid #C3C3C3;" /> 
-
+- [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
+- 
 
 <a id="install-plans">  </a>
 ### Install the Plans page extension 
@@ -199,3 +196,6 @@ The Delivery Plans extension is free to install from the [Visual Studio Marketpl
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
 You can manage plans programmatically using the [Plans REST API](https://visualstudio.com/integrate/api/work/plans.md).
+
+
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

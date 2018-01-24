@@ -1,14 +1,14 @@
 ---
 title: Syntax usage for Markdown files, widgets, wikis, and pull request 
 titleSuffix: VSTS & TFS 
-description: Share information using markdown  within pull requests, project pages, readme files, dashboards, and markdown widgets
+description: Share information and mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 12/07/2017
+ms.date: 01/24/2017
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -90,7 +90,7 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 
 <pre>
 > Single line quote
->> Nested quote   
+>> Nested    
 >> multiple line
 >> quote
 </pre>
@@ -132,9 +132,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Example:**  
 ```
-1. First item.
-2. Second item.
-3. Third item.
+0. First item.
+0. Second item.
+0. Third item.
 ```
 
 **Result:**  
@@ -199,7 +199,13 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
+<a id="link-work-items">  </a>
+## Link to work items from a Wiki page
+ 
+>[!NOTE]  
+>**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
 
+Simply enter the pound sign (`#`) and enter a work item ID. 
 
 <a id="relative-links">  </a>
 ### Source control relative links
@@ -252,7 +258,7 @@ In wiki, you can also reference heading in another page:
 [text to display](/page-name#section-name)
 </pre>
 
-
+<a name="images"> </a>
 ## Images 
 
 Add images and animated GIFs to your pull request comments, markdown files, or wiki pages to highlight issues or just to liven the discussion. 
@@ -290,6 +296,7 @@ a clear name to description mapping.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
+- To start a new line, use the HTML break tag (`<br/>`)
 - Make sure to end each row with a CR or LF. 
 
 **Example:**
@@ -415,11 +422,6 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
- 
-
-
-
-
 ## Emoji
 
 In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Type in what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
@@ -501,7 +503,7 @@ Attached image files render directly into your comment or wiki pages.
 
 Once you save or update a comment or wiki page with an attachment, you can see the attached image(s) and can select links to download attached files.
 
-
+<a name="html"></a>
 ## HTML Tags
 
 In wiki pages, you can also create rich content using HTML tags. 
@@ -546,9 +548,69 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><big>Bigger text</big></p> 
 
 
+<a id="mathematical-notation">  </a>
+## Mathematical notation and characters 
+
+> [!NOTE]   
+> **Feature availability**: This feature is currently supported within Wiki pages and pull requests for VSTS accounts.   
+ 
+Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests.  This includes inserting symbols, Greek letters, mathematical operators, powers and indices, fractions and binomials, and other KaTeX supported elements.   
+
+To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block,  as shown in the following examples: 
+
+###Example: Greek characters
+```KaTeX
+$
+\alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta, \kappa, \lambda, \mu, \nu, \omicron, \pi, \rho, \sigma, \tau, \upsilon, \phi, ...   
+$  
+
+
+$\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Omega$ 
+```
+
+**Result:**
+> [!div class="mx-imgBorder"]
+![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+
+
+###Example: Algebraic notation 
+```KaTeX
+Area of a circle is $\pi r^2$
+ 
+And, the area of a triangle is: 
+
+$$
+A_{triangle}=\frac{1}{2}({b}\cdot{h}) 
+$$
+
+```
+
+**Result:**
+> [!div class="mx-imgBorder"]
+![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+
+
+
+###Example: Sums and Integrals 
+```KaTeX
+$$
+\sum_{i=1}^{10} t_i
+$$
+
+
+$$
+\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x
+$$     
+```
+
+**Result:**
+> [!div class="mx-imgBorder"]
+![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+
+
+
 
 ## Related notes  
-
 
 - [Project vision page or Welcome pages](project-vision-status.md) 
 - [Readme files](../git/create-a-readme.md) 
@@ -558,3 +620,4 @@ In wiki pages, you can also create rich content using HTML tags.
 - [Widget catalog](../report/dashboards/widget-catalog.md) 
 - [Wiki](add-edit-wiki.md)
   
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

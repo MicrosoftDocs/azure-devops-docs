@@ -14,7 +14,7 @@
   items:
   - name: Create a readme for your repo
     href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
-- name: How-to guides
+- name: How-to Guides
   items:
   - name: Create a wiki for your team project
     href: wiki-create-repo.md
@@ -32,6 +32,8 @@
   items:
   - name: Markdown guidance
     href: markdown-guidance.md
+  - name: Keyboard shortcuts to manage Wiki pages 
+    href: wiki-keyboard-shortcuts.md
   - name: Navigate in the web portal
     href: ../user-guide/work-web-portal.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
   - name: Default permissions and access set for collaboration tools 
@@ -39,4 +41,6 @@
 - name: Resources 
   items:
   - name: Dashboards
-    href: /vsts/report/dashboards?toc=/vsts/report/toc.json
+    href: ../report/dashboards/index.md
+  - name: Work Items
+    href: ../work/work-items/index.md
