@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/24/2018
 ---
 
 # Troubleshooting identity issues in VSTS for Visual Studio subscribers
@@ -18,7 +18,8 @@ as a subscriber benefit, it's free to add you as a member in any VSTS account wh
 
 Within the [Visual Studio subscriber portal](https://my.visualstudio.com), you may be able to add an alternate identity--in addion to the identity you used during 
 activation. Today we allow you to add an alternate identity if you used a Microsoft account to activate your subscription. This way you can also add a
-work or school account (which you use when logging into Visual Studio, Office 365, or your corporate or school network), allowing 
+work or school account (which you use when logging into Visual Studio, Office 365, or your corporate or school network), allowing you to access VSTS using both 
+your personal account and your work or school account.
 
 # Steps to add an alternate identity to your Visual Studio subscription
 0.	Sign in to the 
