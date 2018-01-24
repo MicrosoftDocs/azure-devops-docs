@@ -72,7 +72,10 @@ The **TFS Disconnector for SharePoint** installs all the required references for
 1. From the shell, run **script-2013.ps1** and complete all sections of the script.
 1. Open **Central Administration>Monitoring>Check Job Status>Running** section and verify that the uninstall jobs finished prior to proceeding
 
-> If you have have problems running the scripts, please reach out to [sptfsintfeedback@microsoft.com](mailto:sptfsintfeedback@microsoft.com)
+> [!NOTE] 
+> If you have problems running the scripts, please reach out to Customer Support. 
+>
+> Go to the [Team Foundation Server support page](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wf=0&wfName=productselection&gprid=10453&ccsid=636125714937824749), select the appropriate TFS version, then select "SharePoint Integration" as the Problem Type. Our support team will work with you to resolve the issue as quickly as possible. 
 
 After the upgrade, your TFS SharePoint sites will display, but all integration functionality is disabled. The following image shows what the site will look like after you upgrade and disable SharePoint integration.
 
