@@ -48,4 +48,5 @@ Repository README files and team project Wikis are great ways to share informati
  
 ## Resources 
 
-- [Dashboards](../report/dashboards/dashboards.md)
+- [Dashboards](../report/dashboards/index.md)
+- [Work Items](../work/work-items/index.md)
