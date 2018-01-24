@@ -56,6 +56,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 ## Reference   
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+- [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md)
 
 
 ## Resources 

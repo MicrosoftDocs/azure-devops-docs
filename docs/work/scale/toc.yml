@@ -53,6 +53,8 @@
   items:
   - name: "Permissions & access for work tracking"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name:  Delivery plan keyboard shortcuts
+    href: delivery-plan-keyboard-shortcuts.md
 - name: Resources
   items:
   - name: "Scale & Configure Teams"

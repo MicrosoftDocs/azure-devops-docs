@@ -58,7 +58,8 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## Reference
 - [Work item form controls](work-item-form-controls.md)     
-- [Work item field index](guidance/work-item-field.md)    
+- [Work item field index](guidance/work-item-field.md)
+- [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)     
   
 
 ## Resources 

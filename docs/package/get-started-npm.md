@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 01/24/2018
 ---
 
 # Get started with npm Package Management in VSTS
@@ -15,9 +15,7 @@ ms.date: 09/01/2017
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
-listing to install.
-
-
+listing to install it.
 
 <a name="create-a-feed"></a>
 ## Create a feed
@@ -44,7 +42,7 @@ listing to install.
 <a name="automate-with-continuous-integration"></a>
 ## Automate the process with continuous integration
 
-You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
+You can use continuous integration systems such as Team Build to automate the packing and publishing of your packages. 
 To get started with continuous integration, see the [npm in Team Build guidance](/vsts/build-release/packages/npm).
 
 ## What's next?

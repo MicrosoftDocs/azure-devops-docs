@@ -60,4 +60,4 @@ For additional keyboard shortcuts, enter **Shift-?** to display available comman
 ## Related notes
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [Use the query editor to create managed queries](../track/using-queries.md)  
-- [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)

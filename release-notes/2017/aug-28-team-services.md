@@ -37,19 +37,23 @@ The **Work Items** hub allows you to focus on relevant items inside a team proje
 - My activity - All work items that you have recently viewed or updated.
 - Recently created - All work items recently created in the project.
 
-<img src="_img/08_28_04.png" alt="work item hub" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![work item hub](_img/08_28_04.png)
 
 Creating a work item from within the hub is just one click away:
 
-<img src="_img/08_28_05.png" alt="new item menu" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![new item menu](_img/08_28_05.png)
 
 Work items can be filtered by typing a keyword, or using different fields such as work item type, assigned to, state, and tags. These filters are remembered and you can create truly personal views for each pivot.
 
-<img src="_img/08_28_06.png" alt="filters" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![filters](_img/08_28_06.png)
 
 While developing the new **Work Items** hub, we wanted to ensure that you could re-create each one of the pivots via the **Query Editor**. Previously, we supported querying on items that you’re following and that were assigned to you but this sprint we created two new macros: @RecentMentions and @MyRecentActivity. With these, you can now create a query and obtain the work items where you’ve been mentioned in the last 30 days or create a query that returns your latest activity. Here’s a sneak peek of how these macros can be used:
 
-<img src="_img/08_28_29.png" alt="filters" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![filters](_img/08_28_29.png)
 
 See the [documentation for the Work Items hub](https://www.visualstudio.com/docs/work/work-items/view-add-work-items) for more information.
 
@@ -62,11 +66,13 @@ Whether it be automatically setting the value of certain work item fields or def
 - When you add a custom state, with its own by/date field types, you can use rules to automatically set those fields’ values on state transitions
 - When a work item state changes, set the value of custom by/date fields
 
-<img src="_img/08_28_01.png" alt="custom rules" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![custom rules](_img/08_28_01.png)
 
 To get started with rules, simply follow these steps:
 
-<img src="_img/08_28_02.png" alt="customize menu action" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![customize menu action](_img/08_28_02.png)
 
 1. Select **Customize** from the work item’s context menu
 1. Create or select an existing inherited process
@@ -78,23 +84,27 @@ Check out the [documentation for custom rules](https://www.visualstudio.com/docs
 
 We’ve added a new **Mentioned** pivot under the **My work items** page. Inside this pivot, you can review the work items where you have been mentioned in the last 30 days. With this new view, you can quickly take action on items that require your input and stay up to date on conversations that are relevant to you.
 
-<img src="_img/08_28_07.png" alt="mentioned work" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![mentioned work](_img/08_28_07.png)
 
 This same pivot is also available via our mobile experience, bringing consistency between both mobile and desktop.
 
-<img src="_img/08_28_30.png" alt="mentioned work" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![mentioned work](_img/08_28_30.png)
 
 ### Custom Fields and Tags in Notifications
 
 Notifications can now be defined using conditions on custom fields and tags; not only when they change but when certain values are met. This has been a top customer suggestion in UserVoice (see [6059328](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/6059328-use-tags-in-alerts) and [2436843](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2436843-custom-fields-in-work-item-alerts)), and will allow for a more robust set of notifications that can be set for work items.
 
-<img src="_img/08_28_03.png" alt="custom work item notification settings" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![custom work item notification settings](_img/08_28_03.png)
 
 ### Inline add on Delivery Plans
 
 New feature ideas can arrive at any moment, so we’ve made it easier to add new features directly to your **Delivery Plans**. Simply click the **New item** button available on hover, enter a name, and hit enter. A new feature will be created with the area path and iteration path you’d expect.
 
-<img src="_img/08_28_26.png" alt="inline add on delivery plans" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![inline add on delivery plans](_img/08_28_26.png)
 
 ## Code
 
@@ -110,7 +120,8 @@ A fork is a complete, server-side copy of a repository, including all files, com
 
 Using forks, you can also allow a broad range of people to contribute to your repository without giving them direct commit access. Instead, they commit their work to their own fork of the repository. This gives you the opportunity to review their changes in a pull request before accepting those changes into the central repository.
 
-<img src="_img/08_28_27.png" alt="create fork" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![create fork](_img/08_28_27.png)
 
 #### What’s in a fork
 
@@ -126,19 +137,22 @@ Read the [documentation for forks](https://www.visualstudio.com/docs/git/concept
 
 You can now view a minimap of a file as you view or edit to give you a quick overview of the code. To turn on the minimap, open the **Command Palette** (F1 or right-click) and select **Toggle Minimap**.
 
-<img src="_img/08_28_08.png" alt="file minimap" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![file minimap](_img/08_28_08.png)
 
 ### Bracket matching
 
 When editing or viewing a file, there are now guidelines on the left side to make it easy to match your brackets.
 
-<img src="_img/08_28_09.png" alt="bracket matching" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![bracket matching](_img/08_28_09.png)
 
 ### Toggle white space
 
 You can now toggle white space on and off when viewing or editing a file. We are still developing a feature that will allow you to toggle white space when diff’ing. To view white space, open the **Command Palette** (F1 or right-click) and select **Toggle White Space**, which allows you to differentiate between spaces and tabs.
 
-<img src="_img/08_28_10.png" alt="toggle white space" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![toggle white space](_img/08_28_10.png)
 
 ### Updated email templates for push notification
 
@@ -146,7 +160,8 @@ Push notifications have been updated to match the new email templates that are o
 
 The email body is consistent with other emails, emphasizing why the email was sent, who initiated the action, and exactly what happened. Specific to push alerts, the details about the repo, branch, files, and commits are all included to help inform the recipients about the scope of the changes. The main call to action for push alerts is **View Push**, which will open the pushes view for the specific push that generated the alert.
 
-<img src="_img/08_28_11.png" alt="push template" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![push template](_img/08_28_11.png)
 
 ### Complete Work Items settings
 
@@ -156,11 +171,13 @@ The feature to [complete work items when completing pull requests](https://www.v
 
 You can perform a git force push and update a remote ref even if it is not an ancestor of the local ref. This may cause others to lose commits and it can be very hard to identify the root cause. In the new pushes view, we have made force pushes noticeable in order to help troubleshoot issues related to missing commits.
 
-<img src="_img/08_28_12.png" alt="force push" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![force push](_img/08_28_12.png)
 
 Clicking on the force push tag takes you to the removed commit.
 
-<img src="_img/08_28_13.png" alt="removed commits" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![removed commits](_img/08_28_13.png)
 
 ### Update default repo permissions for admins
 
@@ -172,7 +189,8 @@ For new repositories and new projects, administrators will no longer be granted 
 
 It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/vsts/build-release/concepts/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
 
-<img src="_img/08_28_25.png" alt="get sources bitbucket repo" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![get sources bitbucket repo](_img/08_28_25.png)
 
 After that, enable CI on the **Triggers** tab, and you’re good to go.
 
@@ -204,7 +222,8 @@ Earlier last month we announced a [preview of the new release definition editor]
 
 You can now delete custom templates in the new release definition editor.
 
-<img src="_img/08_28_14.png" alt="delete custom templates" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![delete custom templates](_img/08_28_14.png)
 
 #### Visually handle permissions on the editor
 
@@ -224,19 +243,22 @@ Similar to [conditional build tasks](https://www.visualstudio.com/docs/build/con
 
 If the built-in conditions don’t meet your needs, or if you need more fine-grained control over when the task or phase runs, you can specify custom conditions. Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way outwards. The final result is a boolean value that determines if the task to be run.
 
-<img src="_img/08_28_16.png" alt="conditional release phases" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![conditional release phases](_img/08_28_16.png)
 
 ### Approve multiple environments
 
 Managing approvals with releases is now simpler. For pipelines having the same approver for multiple environments that deploy in parallel, the approver currently need to act on each of the approvals separately. With this feature, you can now complete multiple pending approvals at the same time.
 
-<img src="_img/08_28_22.png" alt="approve multiple environments" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![approve multiple environments](_img/08_28_22.png)
 
 ### Requests history for service endpoints
 
 Service endpoints enable connection to external and remote services to execute tasks for a build or deployment. The endpoints are configured in project scope and shared between multiple build and release definitions. Service endpoint owners can now get a consolidated view of builds and deployments using an endpoint, which can help to improve auditing and governance.
 
-<img src="_img/08_28_23.png" alt="approve multiple environments" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Endpoint requests history](_img/08_28_23.png)
 
 ## Test
 
@@ -251,7 +273,8 @@ In the Visual Studio test task in Build/Release management, options are availabl
 1. Based on the number of tests and agents participating in the run, which simply groups tests into a number of batches of a specified size.
 1. Based on past running time of tests, which considers past running time to create batches of tests such that each batch has approximately equal running time. Quick running tests get batched together while longer running tests may belong to a separate batch. This option can be combined with the multi-agent phase setting to reduce the total test time to a minimum.
 
-<img src="_img/08_28_28.png" alt="approve multiple environments" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Test batching](_img/08_28_28.png)
 
 ### JMeter 3.2 for load testing
 
@@ -271,25 +294,29 @@ Effective user management helps administrators ensure they are paying for the ri
 
 Administrators can now add users to an account, with the proper extensions, access level, and group memberships at the same time, enabling their users to hit the ground running. You can also invite up to 50 users at once through the new invitation experience.
 
-<img src="_img/08_28_17.png" alt="new account invitation" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![new account invitation](_img/08_28_17.png)
 
 #### More information when managing users
 
 The **Manage users** page now shows you more information to help you understand users in your account at a glance. The table of users includes a new column called **Extensions** that lists the extensions each user has access to.
 
-<img src="_img/08_28_18.png" alt="new user page" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![new user page](_img/08_28_18.png)
 
 #### Detailed view of individual users
 
 Additionally, you can view and change the access level, extensions, and group memberships that a specific user has access to through the context menu provided for each selected user – a one-stop shop to understand and adjust everything a user has access to.
 
-<img src="_img/08_28_19.png" alt="new detailed user view" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![new detailed user view](_img/08_28_19.png)
 
 ### Adding User to Projects and Teams
 
 We want to make sure each of your administrators has the tools they need to easily get your team up and running. As part of this effort, we are releasing an improved project invitation dialog. This new dialog enables your project administrators to easily add users to the teams which they should be a member of. If you are a project or team administrator, you can access this dialog by clicking the **Add** button on your project home page or the **Team Members** widget.
 
-<img src="_img/08_28_20.png" alt="project invite" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![project invite](_img/08_28_20.png)
 
 ### Graph REST APIs in Public Preview
 
@@ -301,7 +328,8 @@ We want to promote better connections between users within VSTS. As a part of th
 
 Azure Active Directory (AAD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
 
-<img src="_img/08_28_21.png" alt="profile card" style="border:2px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![profile card](_img/08_28_21.png)
 
 ### Improved authentication documentation and samples
 
@@ -311,7 +339,8 @@ In the past, our REST documentation has been focused solely on using PATs for ac
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 
-<img src="_img/07_14_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Feedback menu](_img/07_14_00.png)
 
 You can also get advice and your questions answers by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services).
 

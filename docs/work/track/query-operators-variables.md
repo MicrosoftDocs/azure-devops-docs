@@ -35,7 +35,7 @@ For example, you can search for all work items assigned to you by specifying the
 </table>
 
 
-For more general information about queries, see [Use the query editor to list and manage queries](using-queries.md). For information about how to navigate within the query editor or query view using keyboard shortcuts, see [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json).
+For more general information about queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
 **Checklist for how to define a query clause:**  
 
