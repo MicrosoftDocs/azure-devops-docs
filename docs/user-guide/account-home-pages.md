@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 01/24/2018
 ---
 
 # Work effectively from your account hub 
@@ -94,7 +94,7 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in. 
 
 > [!NOTE]  
-> <b>Feature availability: </b>For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
+> **Feature availability**: For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
 ###Your assigned work items 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 
@@ -135,20 +135,28 @@ From each page, you're one click away from navigating to the branch or repositor
 
 Similar to the Favorites page, you can filter the list by typing a keyword in the *Filter pull requests* box. 
 
+
+<!--- Not implemented yet 
+## Load testing 
+-->
+ 
+
+
 <a id="team-rooms">  </a>
-##Rooms: Navigate to a team room 
+## Rooms: Navigate to a team room 
 
-To open a team room, click **Rooms**. You'll see all the team rooms defined for the account. Click the name of a team room which you have access. 
+> [!NOTE]  
+> **Feature availability:** Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
 
-> [!NOTE]
-> You only have access to those team rooms of which you are a team member.  
+
+To open a team room, click **Rooms**. You'll see all the team rooms defined for the account. Click the name of a team room which you have access. You only have access to those team rooms of which you are a team member.  
 
 <img src="_img/account-home-rooms.png" alt="Account home, Rooms, selected team room" style="border: 1px solid #CCCCCC;" />   
 
 To learn more about team rooms, see [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md). 
 
 <!--- Not implemented yet 
-##Load testing 
+## Load testing 
 
 --> 
 
@@ -158,3 +166,4 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 - [Work in the web portal](work-web-portal.md) 
 - [Connect to team projects](connect-team-projects.md)  
 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

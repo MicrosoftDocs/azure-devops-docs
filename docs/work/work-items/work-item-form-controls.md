@@ -184,6 +184,9 @@ Once you have a results list, you can [modify the filter criteria to refine your
 
 Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 
+See also: 
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
+
 <!---
 
 

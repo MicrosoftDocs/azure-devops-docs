@@ -141,7 +141,7 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../customize/customize-cards.md)    |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).     
+See also [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md).     
 
 
 ### Customize the task board 

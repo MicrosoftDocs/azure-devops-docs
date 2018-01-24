@@ -1,12 +1,13 @@
 ---
-title: Visibility across teams | VSTS & TFS
-description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services (VSTS) and Team Foundation Server
+title: Visibility across teams 
+titleSuffix: VSTS & TFS
+description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 01/24/2018
 ---
 
 
@@ -80,7 +81,7 @@ To learn more about this configuration, see [Portfolio management](portfolio-man
 
 A second method for gaining visibility across teams is to define multi-team focused dashboards that let you view progress, status, and trends. You do this primarily by defining queries that either capture the progress of a single team or several teams. You can then create charts and view trends for each team or for several teams.
 
-The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find additional widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&sortBy=Relevance).
+The two areas of most interest to management teams are project health and bug debt. The widget catalog provides 10+ widgets you can add to a dashboard to track the status, progress, and health of your project and teams. Also, you can find additional widgets in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&sortBy=Relevance).  
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks.
 
@@ -94,8 +95,8 @@ When defining multi-team dashboards, consider the following:
 Review [Agile culture](agile-culture.md) and [Practices that scale](practices-that-scale.md) for guidance on team autonomy and organizational alignment.
 
 
-#### Project health and progress against goals dashboard
-Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state:
+### Project health and progress against goals dashboard 
+Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state: 
 
 - Completed features (Done or Closed)
 - New features (New or Proposed)
@@ -117,20 +118,21 @@ Active bug trends
 -
 -->
 
-#### Technical debt, bug debt, and activity dashboard
-Another measure of project health and the health of the teams is to monitor bug activity and bug debt. Consider the charts you can create that will help you answer these questions:
-
-- Are bugs getting fixed? at a rate that's acceptable?
-- How stale are bugs?
-- Is the bug debt per team being maintained?
-- Is the ratio of high priority bugs being kept within organizational goals?
+### Technical debt, bug debt, and activity dashboard 
+Another measure of project health and the health of the teams is to monitor bug activity and bug debt. Consider the charts you can create that will help you answer these questions: 
+ 
+- Are bugs getting fixed? at a rate that's acceptable? 
+- How stale are bugs? 
+- Is the bug debt per team being maintained? 
+- Is the ratio of high priority bugs being kept within organizational goals? 
 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../track/query-numeric.md).
 
+ 
 
-<!---
-## Use Power BI to gain visibility across team projects
--->
+## Use Analytics to gain visibility across teams (VSTS)   
+
+VSTS accounts can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the team project. 
 
 
 ## Related notes
@@ -147,13 +149,17 @@ Here are some additional topics that address working with multiple teams:
 - [Practices that scale](practices-that-scale.md)
 
 
-### Limitations of multi-team Kanban board views
+## Limitations of multi-team Kanban board views 
 
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../kanban/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board.
  Only when the work item state changes does the card column reflect the same on all boards.
 
->[!IMPORTANT]
->Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. To work around this issue, maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md).
+>[!IMPORTANT]   
+>Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
+
+
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+
 
 <!---
 ![Multi-team Kanban board view](_img/visibility-multi-team-kanban-board-features.png)
