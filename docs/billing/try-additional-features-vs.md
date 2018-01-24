@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/24/2018
 ---
 
 #  Free trials for paid VSTS features and extensions
@@ -19,6 +19,7 @@ There are two paid features/extensions in VSTS offered by Microsoft that you can
 Visual Studio Test Professional, and MSDN Platforms subscribers)
 0. [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, 
 plus another 5 users in your account)
+
 During the trial, any user in your VSTS account whose access level is Basic (including Visual Studio subscribers) can use these features. 
 You'll assign these features explicitly to users within the User hub once the trial ends and you choose to pay for a certain number of users on an ongoing basis.
 
