@@ -227,7 +227,10 @@ TFX CLI has been amended to include virus scan in the extension validation. Exte
 
 Purchasing from Visual Studio Marketplace via the Cloud Solution Provider (CSP) program is available for all offers/markets where CSP is supported today. CSP partners across those markets can now purchase Visual Studio subscriptions, Visual Studio Team Services Users, 1st party extensions (e.g. Test Manager, Hosted Pipelines, Package Management) from Visual Studio Marketplace for their customers. Visual Studio Marketplace will now recognize and accept Azure CSP subscriptions for all 1st party purchases now. In addition, CSPs can also manage Visual Studio subscriptions they purchased for their customers through our subscription management portal, setup VSTS accounts from Azure portal, and link existing VSTS accounts to Azure CSP subscriptions to take over the billing from their customers.
 
-## Feedback
+## Next steps and Feedback
+
+> [!div class="nextstepaction"]
+> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

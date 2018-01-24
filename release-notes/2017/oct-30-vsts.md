@@ -127,7 +127,10 @@ You can now adorn projects with important keywords (tags). Tags are easily added
 > [!div class="mx-imgBorder"]
 ![Project tags](_img/125_11.png)
 
-## Feedback
+## Next steps and Feedback
+
+> [!div class="nextstepaction"]
+> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
