@@ -68,6 +68,8 @@
   items:
   - name: Product backlog controls
     href: product-backlog-controls.md 
+  - name: Backlog keyboard shortcuts
+    href: backlogs-keyboard-shortcuts.md
   - name: "Permissions & access for work tracking"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Resources

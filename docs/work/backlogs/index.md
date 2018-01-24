@@ -45,7 +45,7 @@ Build your backlog and then start driving your code development efforts.
 ## How-to Guides
 
 
-* [[Filter backlogs & queries](filter-backlogs.md)
+* [Filter backlogs & queries](filter-backlogs.md)
 * [Change column options](set-column-options.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Email/print work items](../work-items/email-work-items.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
@@ -55,7 +55,7 @@ Build your backlog and then start driving your code development efforts.
 ## Reference   
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
-
+- [Backlog keyboard shortctus](backlogs-keyboard-shortcuts.md)
 
 ## Resources 
 

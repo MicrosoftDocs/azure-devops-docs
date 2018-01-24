@@ -55,7 +55,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## Reference   
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
- 
+- [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md)
   
 ## Resources 
 
