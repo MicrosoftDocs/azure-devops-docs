@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/24/2018
 ---
 
 # Change the Azure subscription your VSTS account uses for billing
@@ -63,6 +63,7 @@ Select your VSTS account.
  Your VSTS account is removed from this Azure subscription, breaking the billing relationship. 
 
 0. Make your purchases again. During the first purchase, you'll select the new Azure subscription to use for billing going forward.
+
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 - [CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 - [CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
