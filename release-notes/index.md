@@ -3636,6 +3636,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) or provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) if you have ideas on things you’d like to see us prioritize.
 
-<img src="2017/_img/125_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Feedback options](2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
