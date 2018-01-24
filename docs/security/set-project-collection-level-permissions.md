@@ -21,7 +21,7 @@ Several permissions are set at the team project or at the account/team project c
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Account/Collection level| 
 > |-------------|----------| 
-> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Administrators<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
+> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
 
 > [!Note]  
 > The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
