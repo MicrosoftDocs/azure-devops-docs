@@ -14,10 +14,6 @@ description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Upd
 
 In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy to announce the preview of an updated experience for search that gives more real estate for the search results, and makes it easier and more intuitive to filter. Read more about the [updated experience for search](#updated-experience-for-code-and-work-items-search) below.
 
-### What's new in VSTS Sprint 124 Update video
-
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Team-Services-VSTS-Sprint-124--whats-new/player]
-
 Some of the other key feature highlights include:
 
 * [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
@@ -25,6 +21,10 @@ Some of the other key feature highlights include:
 * [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
 * [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
 * [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
+
+## What’s new in VSTS
+
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Team-Services-VSTS-Sprint-124--whats-new/player]
 
 ## Code
 
@@ -49,13 +49,15 @@ The updated experience reflects this feedback, and brings a host of improvements
 
 Try out the new experience and let us know your feedback.
 
-<img src="_img/124_03.png" alt="Updated search experience" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Updated search experience](_img/124_03.png)
 
 #### Search for code in multiple branches
 
 In code search we have enabled support to index multi-branches. This will allow you to search in branches other than the default branch. You can now have 5 more branches per repository indexed for searching. Your Project Admin can configure the additional branches from the **Version Control** settings page:
 
-<img src="_img/124_09.png" alt="New multi-branch configuration experience" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![New multi-branch configuration experience](_img/124_09.png)
 
 Note that search across multiple repositories automatically uses the default branch.
 
@@ -67,19 +69,22 @@ Sometimes files are renamed or moved while a pull request is active. Previously,
 
 Searching for a file in commits or pull requests that have modified more than 1000 files was inefficient; you would need to click on **Load more** link several times to find the file that you interested in. Now, when you filter content in the tree view, the search for that file is done across all files in the commit instead of just looking at the top 1000 files loaded. The performance of the commit details page is also improved when there are more than 1000 files modified.
 
-<img src="_img/124_02.gif" alt="Enhanced filter in large commits" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Enhanced filter in large commits](_img/124_02.gif)
 
 ### Ctrl+S to save Wiki page
 
 We heard you wanted a quicker and easier way to save a Wiki page. Now you can simply press Ctrl+S keyboard shortcut to save a page with a default revision message and continue editing. If you'd like to add a custom revision message just click on the chevron next to the save button.
 
-<img src="_img/124_08.png" alt="Wiki save" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Wiki save](_img/124_08.png)
 
 ### Reference work items in Wiki
 
 Now you can reference work items in wiki pages by pressing the '#' key to get a list of the most recently accessed work items and selecting the work item of interest. This is particularly useful while writing release notes, epics, specs, or other pages that require referring to a work item.
 
-<img src="_img/124_01.png" alt="Reference work items in Wiki" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Reference work items in Wiki](_img/124_01.png)
 
 ### Enable Wiki home page to show on the Project description page
 
@@ -91,7 +96,8 @@ See the [documentation for add and edit wiki pages](/vsts/collaborate/add-edit-w
 
 VSTS has allowed you to upload a custom image for your **Project** (and default team) for some time. However, this image was only visible on the settings page. With this update, you will see the customized image on the description page, which helps to give a unique identity to a **Project**. If not customized, you will see an auto-generated image based on the Project's name.
 
-<img src="_img/124_10.png" alt="Custom Project image" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Custom Project image](_img/124_10.png)
 
 ## Work
 
@@ -99,7 +105,8 @@ VSTS has allowed you to upload a custom image for your **Project** (and default 
 
 Many of you care about a specific plan or set of plans and use favorites for quick access to the content. First, we’ve updated the **Plans** hub to navigate to your most recently visited plan instead of the directory page. Second, once there, you can use the favorites picker to quickly switch to another plan or use the breadcrumb to navigate back to the directory page. As always, your favorite plans will appear on the **Account Home** page along with other favorites from across projects.
 
-<img src="_img/124_11.png" alt="Updated Plans navigation" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Updated Plans navigation](_img/124_11.png)
 
 ## Build
 
@@ -119,13 +126,15 @@ Software updates added to the Hosted VS2017 pool includes: Visual Studio 2017 ve
 
 You can now manually trigger a **Deploy** action to multiple environments of a release at the same time. This allows you to select multiple environments in a release with failed configurations or deployments, and re-deploy to all of the environments in one operation.
 
-<img src="_img/124_04.png" alt="Bulk deploy" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Bulk deploy](_img/124_04.png)
 
 ### Process parameters for deployment templates
 
 The process parameters that existed in build templates is now available for all release templates. The most important fields across all tasks in the template are now promoted to the process view. You can now quickly configure and successfully deploy by providing values for these minimal set of process parameters.
 
-<img src="_img/124_07.png" alt="Process parameters for deployment templates" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Process parameters for deployment templates](_img/124_07.png)
 
 See the [documentation for the new build editor](/vsts/build-release/archive/preview/2017-user-experience#parameters) for more information.
 
@@ -133,13 +142,18 @@ See the [documentation for the new build editor](/vsts/build-release/archive/pre
 
 You can now edit the default properties of Git and GitHub artifact types even after the artifact has been linked. This is particularly useful in scenarios where the branch for the stable version of the artifact has changed, and future continuous delivery releases should use this branch to obtain newer versions of the artifact.
 
-<img src="_img/124_06.png" alt="Editable artifact properties" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Editable artifact properties](_img/124_06.png)
 
-## Feedback
+## Next steps and Feedback
+
+> [!div class="nextstepaction"]
+> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
-<img src="_img/07_14_00.png" alt="Feedback menu" style="border:1px solid Silver; display: block; margin: auto;" />
+> [!div class="mx-imgBorder"]
+![Feedback menu](_img/07_14_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

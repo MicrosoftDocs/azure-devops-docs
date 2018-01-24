@@ -41,6 +41,12 @@ To further filter the list, continue entering keywords until you've found a matc
 
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments. 
 
+## Link to work items from a Wiki page
+ 
+You can use the **#ID** control to link to a work item from within a Wiki page.   
+
+To learn more about the built-in wiki, see [Add & edit wiki pages](../collaborate/add-edit-wiki.md). 
+
 
 ## Related notes
 

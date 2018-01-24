@@ -54,8 +54,8 @@
   items:
   - name: Kanban board controls
     href: kanban-board-controls.md
-  - name: Keyboard shortcuts
-    href: ../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+  - name: Kanban board keyboard shortcuts
+    href: kanban-board-keyboard-shortcuts.md
   - name: Query by assignment,workflow or Kanban board changes
     href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
   - name: "Permissions & access for work tracking"

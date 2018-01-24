@@ -33,7 +33,7 @@ In the case of multiple installations, this also helps ensure that the exact sam
 			</td>
 		</tr>
 		<tr>
-			<td><strong>/type</strong>:InstallTyoe</td>
+			<td><strong>/type</strong>:InstallType</td>
 			<td>
 				<p>Specifies the type of configuration to use.</p>
 				<ul>
