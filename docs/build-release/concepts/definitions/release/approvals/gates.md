@@ -78,6 +78,8 @@ that contains gates, the deployment stops until the health signals from all the 
      This ensures the approvers have all the information required for a sign-off. 
 
    ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
+   
+   > Watch [this video on Channel 9](https://channel9.msdn.com/Events/Connect/2017/T181) to see gates in action.
 
 ### Gate evaluation flow examples
 
@@ -114,6 +116,7 @@ about the evaluation of all the gates you configured for the release.
 
 ## See also
 
+* [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Work with release definitions](../../../../actions/work-with-release-definitions.md)
 * [View and manage releases](../../../../actions/view-manage-releases.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
