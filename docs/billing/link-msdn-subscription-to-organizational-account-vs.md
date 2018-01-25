@@ -92,8 +92,9 @@ A:  No, you can add only one work or school account.
 A:	This might happen for different reasons: 
 
 *	You must have an active, valid, and 
-[eligible Visual Studio subscription](add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions) 
+eligible Visual Studio subscription
 that includes Team Services as a benefit.
+[//]: # (TODO find new valid target for this old link: [eligible Visual Studio subscription](add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions) 
 
 *	If your Visual Studio subscription is valid and eligible, 
 [make sure to activate your subscription](https://support.microsoft.com/en-us/kb/3011409) 
@@ -101,7 +102,8 @@ before you sign in to Team Services.
 
 *	Team Services should automatically recognize your subscription when you sign in. 
 If not, try having the Team Services account owner set 
-[your access level to "Visual Studio/MSDN Subscriber" in the Team Services account](add-account-users-assign-access-levels-team-services.md). 
+your access level to "Visual Studio/MSDN Subscriber" in the Team Services account.
+[//]: # (TODO find new valid target for this old link: [your access level to "Visual Studio/MSDN Subscriber" in the Team Services account](add-account-users-assign-access-levels-team-services.md)
 
 If Team Services still doesn't recognize your subscription, try these other 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx).
@@ -109,6 +111,7 @@ If Team Services still doesn't recognize your subscription, try these other
 ####Q:  Why can't I sign in with my work or school account after adding it to my subscription or getting invited to Visual Studio Team Services?
 
 A:  Check with the Team Services account owner that they've 
-[set up Azure Active Directory (Azure AD) access](manage-organization-access-for-your-account-vs.md) 
+set up Azure Active Directory (Azure AD) access 
 between the Team Services account and your organization's 
 directory that manages your work or school account.
+[//]: # (TODO find new valid target for this old link: [set up Azure Active Directory (Azure AD) access](manage-organization-access-for-your-account-vs.md)
