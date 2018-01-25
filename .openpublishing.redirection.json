@@ -1382,11 +1382,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/tfs-server/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/tfs-server/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
             "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
             "redirect_document_id": false
