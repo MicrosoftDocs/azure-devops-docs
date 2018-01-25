@@ -170,6 +170,8 @@
       href: actions/agents/v2-linux.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
+    - name: Run an agent with self-signed certificate
+      href: actions/agents/certificate.md
     - name: Configure TFS authentication
       href: actions/agents/configure-tfs-authentication.md
   - name: Use YAML CI (config as code)

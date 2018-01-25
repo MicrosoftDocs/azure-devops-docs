@@ -234,6 +234,10 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vs
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
+### How do I run the agent with self-signed certificate?
+
+[Run the agent with self-signed certificate](certificate.md)
+
 ### How do I run the agent behind a web proxy?
 
 [Run the agent behind a web proxy](proxy.md)
