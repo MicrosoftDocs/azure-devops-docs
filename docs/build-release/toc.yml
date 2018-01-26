@@ -186,8 +186,8 @@
       href: actions/scripts/powershell.md
     - name: Run Git commands
       href: actions/scripts/git-commands.md
-    - name: Sign your Xcode app
-      href: apps/mobile/secure-certs.md
+    - name: Sign your mobile app
+      href: apps/mobile/app-signing.md
   - name: Deploy to more targets
     items:
     - name: Azure web app
