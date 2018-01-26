@@ -35,7 +35,7 @@ We provide hosted agents to you in our hosted pools. To use a hosted agent, whil
 
 We update the software on the hosted agents once every month.
 
-* [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017/Vs2017-Server2016-Readme.md).
+* [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
 * [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile).
 * [Inventory of software currently installed on the Hosted macOS Preview agent](https://docs.microsoft.com/en-us/mobile-center/build/software).
 * [Inventory of software currently installed on the Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).

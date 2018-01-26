@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: yohasna
-ms.date: 01/08/2018
+ms.date: 01/26/2018
 ---
 
 # Use Azure Functions to create custom branch policies
@@ -14,6 +14,8 @@ ms.date: 01/08/2018
 #### VSTS | TFS 2018
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to validate PRs in a VSTS Git repository. With Azure Functions you don’t have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
+
+For more information about PR status, see [Customize and extend pull request workflows with pull request status](../concepts/pull-request-status.md).
 
 ## Prerequisites
 A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
@@ -68,7 +70,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
+Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests from VSTS when pull requests change, you will need to provide the service hook with the Azure function URL.
 
 For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** and the second will be for the **Pull request updated** event.
 
@@ -121,7 +123,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
 Go through steps 2-8 again but this time configure the **Pull request updated** event.
 
-Create a pull request to verify your azure function is receiving notifications.
+Create a pull request to verify your Azure function is receiving notifications.
 
 ## Post status to PRs
 Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. You can use the JSON payload posted by the service hook in order to determine what status to set on your PR.
