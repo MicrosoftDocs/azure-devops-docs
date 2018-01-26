@@ -18,7 +18,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 
 ### Get the current hash value
 
-```js```
+```js
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
         // Get current hash value from host url
@@ -30,7 +30,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 
 ### Get notified when the hash value changes
 
-```js```
+```js
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
         navigationService.onHashChanged(function (hash) {
@@ -47,7 +47,7 @@ Two methods are available for changing the hash value of the host page URL:
 * `setHash` adds a new entry to the browser history
 * `replaceHash` does **not** add a new entry to the browser history
 
-```js```
+```js
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
     	// Adds a new entry to browser history
@@ -59,7 +59,7 @@ Two methods are available for changing the hash value of the host page URL:
 
 Following code piece shows how host page can be reloaded.
 
-```js```
+```js
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
     	// Reload whole page
