@@ -20,11 +20,11 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead.
 
-* You need a build agent configured on a Mac machine. You may use one of the following:
+* First, you will need a build agent configured on a Mac machine. You may use one of the following:
+
   1. The **Hosted macOS Preview** agent provided by VSTS, or
-
   1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
 ## Get the sample code
