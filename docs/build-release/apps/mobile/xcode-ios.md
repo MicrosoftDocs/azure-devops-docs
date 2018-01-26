@@ -97,7 +97,7 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 ## Troubleshooting tips
 
-If you encounter a "User interaction not allowed" error when running the agent as a launch agent, on the **Xcode** task, you will either need enable the "Unlock default keychain" option, or switch to referencing signing certificates using a file. See [Sign your mobile app](secure-certs.md) for details.
+If you encounter a "User interaction not allowed" error when running the agent as a launch agent, on the **Xcode** task, you will either need enable the "Unlock default keychain" option, or switch to referencing signing certificates using a file. See [Sign your mobile app](app-signing.md) for details.
 
 If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times, you can add the **Command Line** task to run the `killall` tool with "Simulator" as an argument (i.e. `killall "Simulator"`). This will force the simulator to shut down in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.
 
@@ -107,7 +107,7 @@ If you run into issues with your tests hanging and/or not being able to start th
 
 ## Next steps
 
-To sign your application with a certificate and provisioning profile as part of CI, see [Sign your mobile app](secure-certs.md).
+To sign your application with a certificate and provisioning profile as part of CI, see [Sign your mobile app](app-signing.md).
 
 If you plan to use your own Xcode project for this quickstart, an additional step is required to configure your project for a CI environment. Mark a scheme of your Xcode project as "Shared" and add it to source control to be used during your CI builds.  Follow these steps:
 
