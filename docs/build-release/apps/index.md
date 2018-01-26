@@ -39,7 +39,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Xamarin mobile apps](mobile/xamarin.md)</li>
  <li style="margin-bottom:5px">[Xcode mobile projects](mobile/xcode-ios.md)</li>
- <li style="margin-bottom:5px">[Simple, secure CI app signing](mobile/secure-certs.md)</li>
+ <li style="margin-bottom:5px">[Sign your mobile app](mobile/app-signing.md)</li>
 </ul>
 </div>
 
