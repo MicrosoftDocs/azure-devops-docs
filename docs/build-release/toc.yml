@@ -22,28 +22,30 @@
         href: apps/cd/azure/azure-devops-project-php.md
     - name: Build your app
       items:
+      - name: Android
+        href: apps/mobile/android.md
       - name: ASP.NET Core
         href: apps/aspnet/build-aspnet-core.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
-      - name: .NET for Windows
-        href: apps/windows/dot-net.md
-      - name: Node.js
-        href: apps/nodejs/build-gulp.md
-      - name: Gradle
-        href: apps/java/build-gradle.md
-      - name: Maven
-        href: apps/java/build-maven.md
       - name: C++
         href: apps/windows/cpp.md
       - name: Containers
         href: apps/containers/build.md
-      - name: Xcode
-        href: apps/mobile/xcode-ios.md
-      - name: Xamarin
-        href: apps/mobile/xamarin.md
+      - name: Gradle
+        href: apps/java/build-gradle.md
+      - name: Maven
+        href: apps/java/build-maven.md
+      - name: .NET for Windows
+        href: apps/windows/dot-net.md
+      - name: Node.js
+        href: apps/nodejs/build-gulp.md
       - name: Universal Windows Platform
         href: apps/windows/universal.md
+      - name: Xamarin
+        href: apps/mobile/xamarin.md
+      - name: Xcode
+        href: apps/mobile/xcode-ios.md
     - name: Deploy your app
       items:
       - name: Azure Web App
