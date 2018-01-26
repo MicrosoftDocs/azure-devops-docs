@@ -70,6 +70,8 @@
       href: pull-requests.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
+    - name: Extend pull request workflows with pull request status
+      href: concepts/pull-request-status.md
   - name: Forks
     href: concepts/forks.md
   - name: Authentication
@@ -90,12 +92,14 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-  - name: Create a pull request status server
-    href: how-to/create-pr-status-server.md
-  - name: Use Azure Functions to create custom branch policies
-    href: how-to/create-pr-status-server-with-azure-functions.md
-  - name: Configure branch policy for an external service
-    href: how-to/pr-status-policy.md
+  - name: Pull request status
+    items:
+    - name: Create a pull request status server
+      href: how-to/create-pr-status-server.md
+    - name: Use Azure Functions to create custom branch policies
+      href: how-to/create-pr-status-server-with-azure-functions.md
+    - name: Configure branch policy for an external service
+      href: how-to/pr-status-policy.md
   - name: Define a CI build for your repo
     href: ../build-release/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
