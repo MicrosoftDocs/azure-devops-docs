@@ -40,7 +40,7 @@ The two primary functions for interacting with settings are getValue() and setVa
 
 Here is an example of how to set a value:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Set value in user scope
@@ -52,7 +52,7 @@ Here is an example of how to set a value:
 
 Here is an example of how to retrieve a setting value:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Get value in user scope
@@ -65,7 +65,7 @@ Here is an example of how to retrieve a setting value:
 If `scopeType` is not specified, the settings are stored at the project collection level and they are accessible to all users in that project collection using the extension.
 Here is an example of how to set a setting value at the project collection level:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Set value (default is project collection scope)
@@ -95,7 +95,7 @@ There is also a single operation that can be performed on a collection:
 
 Retrieving a document by its identifier from a collection is easy:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Get document by id
@@ -112,7 +112,7 @@ This call will attempt to retrieve a document with the ID "MyDocumentId", from t
 
 To create a new document, perform a call such as the following:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Prepare document first
@@ -139,7 +139,7 @@ If another document in the collection already exists with the same ID as the one
 
 `setDocument()` performs the equivalent of an "upsert" operation - modifying an existing document if there is an ID on the document provided that exists in the collection. If the ID does not exist, or no ID was provided, then a new document will be added to the collection. 
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Prepare document first
@@ -162,7 +162,7 @@ updateDocument requires that the document which is being modified already exists
 
 Here is an example of how update is used:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         var collection = "MyCollection";
@@ -184,7 +184,7 @@ Here is an example of how update is used:
 This function will delete the document with the provided ID from the provided collection. If the collection does not exist or the document does not exist, a 404 will be returned.
 
 Here is an example usage:
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         var docId = "1234-4567-8910";
@@ -199,7 +199,7 @@ Here is an example usage:
 
 In addition to the operations on documents themselves, the data storage service provides a single operation on collections - retrieving all documents within a single collection. This call looks like the following:
 
-```js```
+```js
     // Get data service
     VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
         // Get all document under the collection
