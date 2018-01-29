@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 # Change the number of paid VSTS users on your account
@@ -26,10 +26,10 @@ you can reduce the number of paid VSTS users in your account and the changes tak
 *	You'll need VSTS 
 [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
 
-*	You'll need at least Co-administrator permissions for the Azure subscription 
+*	You'll need at least co-administrator permissions for the Azure subscription 
 that's linked to your VSTS account for billing. If you don't have permissions, 
-have an Azure Account Administrator or Service Administrator 
-[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
+have an Azure account administrator or service administrator 
+[add you as a co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
 
 ### Update number of users who have paid Basic access
 

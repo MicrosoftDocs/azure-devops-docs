@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/24/2018
+ms.date: 1/29/2018
 ---
 
 # Change the Azure subscription your VSTS account uses for billing
@@ -21,15 +21,15 @@ and relink your account to another Azure subscription that's associated with you
 
 ## Prerequisites
 
-* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner))
+* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)).
 
-* At least [an **owner** or **contributor** role](add-backup-billing-managers.md) for both Azure subscriptions
+* At least [an **owner** or **contributor** role](add-backup-billing-managers.md) for both Azure subscriptions.
 
 >[!NOTE]
 > When you unlink your account, any paid VSTS users, Package Management users, Test Manager users, CI/CD hosted pipelines, or CI/CD private pipelines that you've 
 > committed for the month will continue uninterrupted until the 1st of next month, 
 > but your account will revert immediately to the free monthly limits 
-> for Cloud-based Load Testing. Unlinking will also cancel any 
+> for cloud-based load testing. Unlinking will also cancel any 
 > non-Microsoft paid extensions without refund or credit.
 >
 > After you relink your account to another Azure subscription, 
@@ -46,7 +46,7 @@ and relink your account to another Azure subscription that's associated with you
 ## Change subscription
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
-as VSTS account owner and as Azure subscription Co-administrator or greater.
+as VSTS account owner and as Azure subscription co-administrator or greater.
    
     If you experience browser problems with Azure, 
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
@@ -62,11 +62,11 @@ Select your VSTS account.
 
  Your VSTS account is removed from this Azure subscription, breaking the billing relationship. 
 
-0. Make your purchases again. During the first purchase, you'll select the new Azure subscription to use for billing going forward.
+0. Make your purchases again. During your first purchase, select the new Azure subscription to use for billing going forward.
 
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 - [CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 - [CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-- And any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts)
+- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).

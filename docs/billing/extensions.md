@@ -7,12 +7,12 @@ ms.technology: vs-devops-setup
 ms.assetid: 
 ms.manager: douge
 ms.author: 
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 #  VSTS extensions
 
-An extension is an installable unit that contributes new capabilities into VSTS and/or Team Foundation Server. There are both free and paid extensions, offered by Microsoft and from other parties.
+An extension is an installable unit that contributes new capabilities into VSTS and/or Team Foundation Server. There are both free and paid extensions offered by Microsoft and from other parties.
 
 ## Free extensions 
 
@@ -39,7 +39,7 @@ Adding extensions to your VSTS account is incredibly easy:
 
 1. Search and find extensions for your account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
 2. Install the extension from the Visual Studio Marketplace and start using it in VSTS or TFS.
-You can install them with a few clicks. You must have administrative permissions to upload or install extensions. 
+You can install extension with a few clicks. You must have administrative permissions to upload or install extensions. 
 
 ## Get or build extensions for VSTS, Visual Studio, and Visual Studio Code
 
