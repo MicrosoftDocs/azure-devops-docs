@@ -84,16 +84,22 @@ In this section, you create a pull request trigger for your VSTS build definitio
 
 ## Building pull requests from repository forks
 
-To have VSTS automatically build pull requests from forks of your repository, enable the checkbox labeled **Build pull requests from forks of this repository**.
-
-By default, secrets associated with your build definition are not made available to builds of pull requests from forks. If your build definition is configured with secrets, these builds will immediately fail. To bypass this precaution, enable the checkbox labeled **Make secrets available to builds of forks**. See security considerations below.
-
 > [!IMPORTANT]
 > These settings impact the security of your build.
 
-  ![Build pull requests from forks of this repository](_img/ci-build-github/pullrequestsforks.png)
+To have VSTS automatically build pull requests from forks of your repository, enable the checkbox labeled **Build pull requests from forks of this repository**.
 
 ### Security considerations
+
+By default, secrets associated with your build definition are not made available to builds of pull requests from forks. Secrets include:
+
+  * A security token with access to your GitHub repository
+  * These items, if used by your build:
+    * [Service endpoint](../concepts/library/service-endpoints.md) credentials
+    * Files from the [Secure Files library](../concepts/library/secure-files.md)
+    * Build [variables](../concepts/definitions/build/variables.md#user-defined-variables) marked **secret**
+
+If your build definition is configured with secrets, these builds will immediately fail. To bypass this precaution, enable the checkbox labeled **Make secrets available to builds of forks**. Be aware of this setting's impact on security as described below.
 
 A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. Such a pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change could leak secrets or compromise the agent machine performing the build. The following steps are recommended to mitigate this risk:
 
@@ -101,12 +107,7 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 
 1. If you must use a [private agent](../concepts/agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
 
-1. If your repository is public, do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build. Secrets include:
-    * A security token with access to your GitHub repository
-    * These items, if used by your build:
-      * [Service endpoint](../concepts/library/service-endpoints.md) credentials
-      * Files from the [Secure Files library](../concepts/library/secure-files.md)
-      * Build [variables](../concepts/definitions/build/variables.md#user-defined-variables) marked **secret**
+1. If your repository is public, do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build.
 
 ## Q&A
 
