@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 # Troubleshooting paying for VSTS Basic access
@@ -67,14 +67,14 @@ to pay for users who need Basic access or to manage the number
 of VSTS users that you're paying to get Basic access.
 
 > Try [buying or managing paid Basic access through Visual Studio Marketplace](buy-basic-access-add-users.md#buy-access-vs-marketplace). 
-> Otherwise, if you're buying Basic access for the first time, 
+> Otherwise, if you're buying Basic access for the first time 
 > and you haven't set up billing for your VSTS account yet, 
 > you must [link your VSTS account to an Azure subscription for billing](set-up-billing-for-your-account-vs.md). 
 > You can then pay for VSTS users in the Azure classic portal or the Azure portal. 
 > 
 > To reduce or cancel users who have paid Basic access for the next month, 
 > you must make your changes before the last day of the month. 
-> Your charges won't change until the next month because paid users are monthly purchases.
+> Your charges aren't adjusted until the next month because paid users are monthly purchases.
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 <ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
@@ -88,7 +88,7 @@ of VSTS users that you're paying to get Basic access.
 <p>**Azure portal**
 <p>
 <p>Before you start, you'll need [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner). 
-You'll also need at least [Co-administrator permissions](add-backup-billing-managers.md) 
+You'll also need at least [co-administrator permissions](add-backup-billing-managers.md) 
 for the Azure subscription that's linked to your VSTS account.
 <p>
 <ol>
@@ -115,7 +115,7 @@ To cancel all paid users, reduce this number to zero (0). Save your changes.
 <div class="tab-pane fade" id="azure-classic-portal-0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <p>**Azure classic portal**
 <p>
-<p>Before you start, you'll need at least [Co-administrator permissions](add-backup-billing-managers.md) 
+<p>Before you start, you'll need at least [co-administrator permissions](add-backup-billing-managers.md) 
 for the Azure subscription that's linked to your VSTS account. 
 <p>
 <ol>
