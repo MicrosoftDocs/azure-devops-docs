@@ -1,5 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/AArnott/vso-agent-tasks/9b41d803a/tasks.schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "https://aka.ms/vsts-tasks.schema.json",
   "title": "VSTS Tasks schema",
   "type": "object",
   "additionalProperties": false,
@@ -27,17 +28,6 @@
     },
     "author": {
       "type": "string"
-    },
-    "visibility": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "Build",
-          "Release",
-          "Preview"
-        ]
-      }
     },
     "runsOn": {
       "type": "array",
@@ -80,15 +70,6 @@
           },
           "isExpanded": {
             "type": "boolean"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "Preview"
-              ]
-            }
           }
         }
       }
@@ -107,7 +88,7 @@
     "version": {
       "type": "object",
       "additionalProperties": false,
-      "description": "Always update this when you release your task, so that the agents utilise the latest code.",
+      "description": "Always update this when you release your task, so that the agents utilize the latest code.",
       "required": [
         "Major",
         "Minor",
@@ -152,22 +133,20 @@
           "type": {
             "type": "string",
             "description": "The type that dictates the control rendered to the user.",
-            "enum": [
-              "boolean",
-              "connectedService:ServiceType",
-              "connectedService:AzureRM",
-              "connectedService:Azure",
-              "connectedService:Azure:Certificate,UsernamePassword",
-              "connectedService:Chef",
-              "connectedService:ssh",
-              "connectedService:Generic",
-              "connectedService:Jenkins",
-              "connectedService:servicefabric",
-              "filePath",
-              "multiLine",
-              "pickList",
-              "radio",
-              "string"
+            "anyOf": [
+              {
+                "enum": [
+                  "boolean",
+                  "filePath",
+                  "multiLine",
+                  "pickList",
+                  "radio",
+                  "string"
+                ]
+              },
+              {
+                "pattern": "^connectedService\\:.+$"
+              }
             ]
           },
           "defaultValue": {
@@ -197,7 +176,7 @@
           "properties": {
             "type": "object",
             "properties": {
-              "EditableOptions": {
+              "editableOptions": {
                 "type": "string",
                 "enum": [
                   "True",
@@ -269,25 +248,7 @@
         "Node": {
           "$ref": "#/definitions/executionObject"
         },
-        "Bash": {
-          "$ref": "#/definitions/executionObject"
-        },
-        "AzurePowerShell": {
-          "$ref": "#/definitions/executionObject"
-        },
-        "PowerShell": {
-          "$ref": "#/definitions/executionObject"
-        },
         "PowerShell3": {
-          "$ref": "#/definitions/executionObject"
-        },
-        "PowerShellExe": {
-          "$ref": "#/definitions/executionObject"
-        },
-        "Process": {
-          "$ref": "#/definitions/executionObject"
-        },
-        "RM:ManualIntervention": {
           "$ref": "#/definitions/executionObject"
         }
       }
@@ -307,19 +268,6 @@
         "target": {
           "type": "string",
           "description": "The target file to be executed. You can use variables here in brackets e.g. $(currentDirectory)\filename.ps1"
-        },
-        "argumentFormat": {
-          "type": "string"
-        },
-        "workingDirectory": {
-          "type": "string",
-          "description": "The directory to execute the task from e.g. $(currentDirectory)"
-        },
-        "modifyEnvironment": {
-          "type": [
-            "boolean",
-            "string"
-          ]
         },
         "platforms": {
           "type": "array",

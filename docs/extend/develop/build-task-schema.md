@@ -11,15 +11,12 @@ ms.date: 11/14/2016
 
 # Reference for creating custom build tasks within extensions
 
-## Custom build task JSON schema
+## Custom build task JSON
+
 When creating a custom build task with an extension, your extension will include a `task.json` file for each build task.
 This file describes the build task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
 
-Below is the JSON schema for the `task.json` file.
-
-### task.json schema
-
-[!code-javascript[JSON]](./_shared/build-task-schema.json)]
+The build task SDK documentation is [here](https://github.com/Microsoft/vsts-task-lib).
 
 ## Bundle multiple versions of build tasks within one extension
 You can now include multiple versions of a build task in your extension. This can be helpful if you want to roll out
