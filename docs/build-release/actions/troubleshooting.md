@@ -221,6 +221,16 @@ A mismatching notification URL may cause the worker to process to fail to connec
 ### Get sources not downloading some files
 This may be characterized by a message in the build log "All files up to date" from the *tf get* command. Verify the built-in build service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build definition. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
+### Get sources through Team Foundation Proxy
+The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
+```
+Windows:
+    set TFSPROXY=http://tfvcproxy:8081
+    setx TFSPROXY=http://tfvcproxy:8081 // If the agent service is running as NETWORKSERVICE or any service account you can't easily set user level environment variable
+macOS/Linux:
+    export TFSPROXY=http://tfvcproxy:8081
+```
+
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
 [Get subscription, billing, and technical support](https://www.visualstudio.com/support-overview-vs)

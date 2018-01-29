@@ -15,7 +15,9 @@ ms.date: 01/19/2018
 
 Gates allow you to query a range of external services, and wait for a positive input from all of
 them before continuing with a deployment to an environment. When a release is created from a definition
-that contains gates, the deployment stops until the health signals from all the configured services are successful.   
+that contains gates, the deployment stops until the health signals from all the configured services are successful.
+
+>You may need to enable Gates in your profile [Preview features](../../../../../collaborate/preview-features.md) list. 
 
 ## Define a gate for an environment
 
