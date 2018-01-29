@@ -112,6 +112,10 @@ If you use TFS, Git may be using the Kerberos protocol to authenticate.
 LFS does not support Kerberos, so you will get errors which say "Your user name must be of the form DOMAIN\user".
 To get out of this state, you will need to remove the Kerberos credential and let Git pick up a new NTLM credential instead.
 
+> [!NOTE]
+> Credentials sent via HTTP will be passed in clear text.
+> [Ensure your instance of TFS is configured for HTTPS](../security/websitesettings.md), and do not use HTTP with Git-LFS.
+
 0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 
    ![Open Credential Manager](_img/manage-large-files/launch-credential-manager.png)

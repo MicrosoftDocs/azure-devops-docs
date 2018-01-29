@@ -85,7 +85,7 @@ You can configure the following properties for an agent phase:
   run a custom PowerShell script that invokes the REST APIs
   on VSTS - perhaps to create a work item or query a build for information.
 
-* **Run this phase [Release (TFS2018, VSTS), Build (Planned)]:** Use this option to run the tasks
+* **Run this phase [Release (VSTS, TFS 2018 Update 2 onwards), Build (Planned)]:** Use this option to run the tasks
   in the phase only when specific [conditions](conditions.md) are met. Select a predefined
   condition, or select "custom" and enter an [expression](conditions.md) that evaluates
   to **true** or **false**. Nested expressions can be used, and the
