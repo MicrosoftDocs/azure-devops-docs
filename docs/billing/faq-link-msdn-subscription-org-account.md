@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/24/2018
+ms.date: 1/29/2018
 ---
 
 # Troubleshooting identity issues in VSTS for Visual Studio subscribers
@@ -29,7 +29,7 @@ your personal account and your work or school account.
 	> or "work or school account", choose "personal account" (your Microsoft account). 
 	>
 	> Sometimes you need to choose because your Microsoft account and your work or school 
-	> account share the same email address.  Although both identities use the same email address, 
+	> account share the same email address. Although both identities use the same email address, 
 	> they're still separate identities with different profiles, security settings, and permissions.
 	>
 	> Starting March 30, 2018 you will no longer be able to create a Microsoft account using an email 

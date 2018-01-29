@@ -11,7 +11,7 @@ ms.date: 10/6/2017
 
 #	Buy Xamarin University
 
-[Xamarin University](https://www.xamarin.com/university) offers live, online classes, office hours, self-guided learning,
+[Xamarin University](https://www.xamarin.com/university) offers live, online, and office hours classes, self-guided learning,
 and guest lectures.
 
 In this topic:

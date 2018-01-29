@@ -111,6 +111,10 @@ The following example shows how to create an unattend file for a basic installat
 
 In this example, the unattend file is created in the same directory as the command. A log file is created as part of the command, and the location of the file is returned in the command as part of executing the command.
 
+The following example shows how to specify a Git repository for use with GVFS during configuration.
+
+	TFSConfig Unattend /configure /type:proxy /inputs:ProjectCollectionUrl=http://FabrikamFiberTFS:8080/tfs/defaultcollection;GvfsProjectName=Fabrikam-Fiber-Git;GvfsRepositoryName=TestGit
+
 The following example shows how to create an unattend file for the configuration of a Team Foundation Proxy server.
 
 >**Important:** 
