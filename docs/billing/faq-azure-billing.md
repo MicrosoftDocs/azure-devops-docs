@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 #Troubleshooting Azure billing
@@ -19,7 +19,7 @@ you select an Azure subscription to use for billing.
 If you don't have an Azure subscription, 
 you can [sign up](https://portal.azure.com) 
 either before or during your first purchase. 
-You can set up payment with a credit card, 
+You can set up payment with a credit card 
 or by invoice in some cases. Charges for your 
 purchases will show up on your monthly Azure bill.
 
@@ -30,14 +30,14 @@ standing to use your Visual Studio Marketplace purchases.
 
 If your Azure subscription is canceled or becomes disabled, 
 for example, because the credit card used for payment expires, 
-then any purchases with this Azure subscription will be 
+then any purchases with this Azure subscription are 
 deactivated on the 1st day of next month. 
 To continue using your Visual Studio Marketplace purchases, 
 please keep your Azure subscription active and updated.
 
 For example, if you bought a Visual Studio Professional subscription, 
-and you used an Azure subscription that becomes disabled, 
-your Visual Studio Professional IDE will stop working on 
+and you used an Azure subscription that became disabled, 
+your Visual Studio Professional IDE stops working on 
 the 1st of the following month. This also applies to annual 
 Visual Studio subscriptions that are paid in full for the year. 
 

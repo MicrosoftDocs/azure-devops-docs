@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 #  Set up billing for your VSTS account
@@ -28,7 +28,7 @@ These are the paid services offered by Microsoft:
 Microsoft Azure handles billing for your VSTS account, 
 so you'll need:
 
-* [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner)
+* [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner).
 
 <a name="EligibleAzureSubscription"></a>
 
@@ -57,7 +57,7 @@ to link this Azure subscription to your VSTS account.
 ## Set up billing via the Azure Portal
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
-as VSTS account owner and as Azure subscription Co-administrator or greater.
+as VSTS account owner and as Azure subscription co-administrator or greater.
    
  [Browser problems in Azure?](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 

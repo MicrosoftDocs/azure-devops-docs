@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/24/2018
+ms.date: 1/29/2018
 ---
 
 #  How to buy VSTS CI/CD
@@ -24,7 +24,7 @@ VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you m
 Typically you'll choose this option when:
 * there is custom software that runs in your build process which is not included on the virtual machines managed 
 by Microsoft for the Hosted Pipeline option above, or
-* you already have a TFS build server running, and aren't ready to move your build definitions to VSTS
+* you already have a TFS build server running, and aren't ready to move your build definitions to VSTS.
 You can run one concurrent pipeline for free, and if you need more capacity you can 
 [pay for more CI/CD concurrency: Private Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
@@ -101,7 +101,7 @@ if you have multiple accounts.
   <p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
   <div class="collapse" id="expando-why-no-azure-sub">
   <p>To use an existing Azure subscription for billing,
-  you'll need at least Co-administrator permissions for that subscription.
+  you'll need at least co-administrator permissions for that subscription.
   If you don't have permissions,
   have an Azure Account Administrator or Service Administrator
   [add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
@@ -128,7 +128,7 @@ Finish your purchase.
 ## Change your purchased pipelines
 
 When your team's needs for build or release capacity changes,
-you can update the number of pipelines that you bought.
+you can update your number of paid pipelines.
 
 0.  Go to your VSTS account toolbar,
 then go to **Build and Release**
@@ -168,7 +168,7 @@ A paid hosted pipeline increases your maximum duration to 6 hours per build or d
 
 ## Billing and free monthly limits
 
-You're charged only for services used above the free monthly limits.  Your charges are prorated during the first 
+You're charged only for services used above the free monthly limits. Your charges are prorated during the first 
 month. After that, you're billed automatically on the 1st day of the calendar month.
 
 *  Free minutes reset on the 1st of the month.
@@ -179,10 +179,10 @@ includes unlimited minutes per month, within reason.
 *  Each connected private XAML controller is counted as one private pipeline,
 although a private XAML controller can host more than one agent.
 
-*  For Cloud-based Load Testing, you're charged for each
+*  For cloud-based load testing, you're charged for each
    [virtual user minute](../load-test/reference-qa.md#VUM).
 
-*   Graduated discounts Cloud-based Load Testing
+*   Graduated discounts cloud-based load testing
 are calculated based on your Azure subscription billing cycle.
 
 Learn more about [pricing here](https://www.visualstudio.com/team-services/pricing).
@@ -208,7 +208,7 @@ The hosted XAML build controller is no longer supported.
   > **Important:** If you have an account where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
   > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
   > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
-  > If you used the hosted XAML build controller, you might have been paying for build minutes, which is a model we no longer support.
+  > If you used the hosted XAML build controller, you may have been paying for build minutes, which is a model we no longer support.
   > Please purchase concurrent pipelines. See [Buy pipelines for Build & Release](#buy-build-release).
   > We will soon block the hosted pool from using the per-minute billing model.
   > By making this switch, you can run longer builds (unlimited minutes within reason).
