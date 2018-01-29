@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 1/29/2018
 ---
 
 # Billing troubleshooting
@@ -77,7 +77,7 @@ A:  This might happen because:
 
 * You're not the VSTS account owner.
 
-*   You're not at least Co-administrator 
+*   You're not at least co-administrator 
 on the Azure subscription that you want to link.
 
 * If you don't see any VSTS accounts, 
@@ -112,10 +112,10 @@ A:  Yes, you can use the same Azure subscription for billing across multiple VST
 
 A: When you set up billing for your VSTS account to an Azure subscription, 
 you select an eligible [Azure subscription](#EligibleAzureSubscriptions) 
-where you have Co-administrator permissions or greater. 
+where you have co-administrator permissions or greater. 
 If you don't have an Azure subscription, you can either 
 [sign up](https://portal.azure.com) for a new one, 
-or have an Azure administrator [add you as Co-Administrator](add-backup-billing-managers.md) 
+or have an Azure administrator [add you as co-administrator](add-backup-billing-managers.md) 
 to an Azure subscription that you can use to bill purchases. 
 
 Payment is set up with a credit card, or by invoice in some cases. 
@@ -149,7 +149,7 @@ Learn more about [pricing here](https://www.visualstudio.com/products/visual-stu
 
 A: Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
 or the [Azure portal](https://portal.azure.com/) 
-as the VSTS account owner or at least Azure subscription Co-administrator. 
+as the VSTS account owner or at least Azure subscription co-administrator. 
 Select your VSTS account, reduce any paid users to zero, and turn off any 
 paid VSTS. Your VSTS account and bill won't show any changes 
 in paid users or VSTS until next month when these changes take effect. 
@@ -179,7 +179,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 
 A: Your account will revert to the free number 
 of users and pipelines on the 1st of next month, 
-but Cloud-based Load Testing **immediately** 
+but cloud-based load testing **immediately** 
 reverts to your free monthly limits. 
 Unlinking will cancel paid non-Microsoft 
 extensions **without refund or credit**.
@@ -199,7 +199,7 @@ If you wait until the 1st of next month to relink,
 your VSTS account will revert to the free amounts. 
 Any paid users will appear expired in your account's 
 Users hub. Make sure that you repurchase any paid users 
-so they don't lose access on the 1st of next month.
+so they don't lose access on the 1st of the next month.
 
 <a name="get-support"></a>
 
