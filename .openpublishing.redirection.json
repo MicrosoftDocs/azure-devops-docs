@@ -4780,6 +4780,11 @@
         "source_path": "docs/billing/billing-concepts.md",
         "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/user-guide/kanban-agile.md",
+        "redirect_url": "/vsts/work/backlogs/overview",
+        "redirect_document_id": false
        }
     ]
 }
