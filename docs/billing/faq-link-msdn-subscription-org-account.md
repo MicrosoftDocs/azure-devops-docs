@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting identity issues in VSTS for Visual Studio subscribers
-description: It's free to add Visual Studio subscribers as members of a VSTS account 
+description: Visual Studio subscribers can use personal or work/school identities in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
@@ -21,7 +21,7 @@ activation. Today we allow you to add an alternate identity if you used a Micros
 work or school account (which you use when logging into Visual Studio, Office 365, or your corporate or school network), allowing you to access VSTS using both 
 your personal account and your work or school account.
 
-# Steps to add an alternate identity to your Visual Studio subscription
+## Steps to add an alternate identity to your Visual Studio subscription
 0.	Sign in to the 
 [Visual Studio subscriber portal](https://my.visualstudio.com).
 
@@ -29,7 +29,7 @@ your personal account and your work or school account.
 	> or "work or school account", choose "personal account" (your Microsoft account). 
 	>
 	> Sometimes you need to choose because your Microsoft account and your work or school 
-	> account share the same email address. Although both identities use the same email address, 
+	> account share the same email address.  Although both identities use the same email address, 
 	> they're still separate identities with different profiles, security settings, and permissions.
 	>
 	> Starting March 30, 2018 you will no longer be able to create a Microsoft account using an email 
@@ -50,6 +50,8 @@ your personal account and your work or school account.
 
 0.	Use your work or school account to sign in to your VSTS account. 
 There may be a slight delay for the information to propagate, so check again 15 minutes later.   (```https://{youraccount}.visualstudio.com```).
+
+## FAQ
 
 ####Q:  Why doesn't VSTS recognize me as a Visual Studio subscriber?
 When you visit the Users hub in VSTS, you can see a list of users who are members of the VSTS account and it shows details on which have been 
