@@ -25,7 +25,7 @@ The **Authentication** command changes the network authentication protocol that 
 		</tr>
 		<tr>
 			<td><strong>/siteType</strong></td>
-			<td>Specifies the website (applicaiton tier or prox) whose network authentication protocol you want to change. The application tier is the default.</td>
+			<td>Specifies the website (application tier or proxy) whose network authentication protocol you want to change. The application tier is the default.</td>
 		</tr>
 	</tbody>
 </table>
