@@ -15,7 +15,7 @@ ms.date: 08/15/2017
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](../https://www.visualstudio.com/learn/what-is-agile/) for an overview.
+You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/) for an overview.
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
