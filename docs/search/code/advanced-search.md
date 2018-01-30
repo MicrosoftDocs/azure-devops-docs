@@ -43,6 +43,13 @@ Use simple search strings for words or phrases. The default is a whole word sear
 for example, a search for "valid" will not find instances of the word 
 "validation". However, searches are _not_ case-sensitive.
 
+Words separated by spaces, and not wrapped in double-quotes, are treated as 
+separate search terms and the search will expect to find an occurrence of 
+all the words (in other words, it assumes the `AND` operator between words).
+
+You must escape the special characters `(`,  `)`, `[`, `]`, `:`, `*`, and `?`
+by preceeding them with `\`.
+
 When you search from inside a project, the default is to search only within that 
 project. You can navigate up to the account level to broaden your search.
 
@@ -89,8 +96,14 @@ For example:
 * `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
   but not the word **revisit** or files that contain the phrase **release delayed**.
 
-To find an exact match to a set of words, enclose your search terms in double-quotes. 
-For example, `"Client not found"`
+### Search for phrases with double-quotes
+
+To find an exact match to a set of words, enclose your search terms in double-quotes 
+to perform a _phrase search_. For example, `"Client not found"`. Within a phrase:
+
+* Boolean operators are treated as literal text.
+* You need to escape only the special characters `\` and `"`.
+
 
 ### Broaden your search with wildcards
 
