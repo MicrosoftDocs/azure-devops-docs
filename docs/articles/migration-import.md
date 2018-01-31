@@ -256,15 +256,19 @@ When generating a DACPAC there are two considerations that you'll want to keep i
 
 Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
 
-```SQL 
-SELECT TOP 1 OBJECT_NAME(object_id), sum(reserved_page_count) * 8/1024.0 as SizeInMb
-FROM sys.dm_db_partition_stats
-WHERE index_id = 1
-GROUP BY object_id
-ORDER BY SizeInMb DESC
+TfsMigrator.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection.
+
+```cmdline 
+[Info   @08:23:59.539] Table name                               Size in MB
+[Info   @08:23:59.539] dbo.tbl_Content                          38984
+[Info   @08:23:59.539] dbo.tbl_LocalVersion                     1935
+[Info   @08:23:59.539] dbo.tbl_Version                          238
+[Info   @08:23:59.539] dbo.tbl_FileReference                    85
+[Info   @08:23:59.539] dbo.Rules                                68
+[Info   @08:23:59.539] dbo.tbl_FileMetadata                     61
 ```
 
-Using the size output from the SQL command, ensure that the C: drive of the machine that will create the DACPAC has at least that much space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
+Using the largest table's size, ensure that the C: drive of the machine that will create the DACPAC has at least that much space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
 
 ```cmdline
 SET TEMP={location on disk}

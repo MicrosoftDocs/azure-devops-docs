@@ -118,9 +118,7 @@ environment in Release Management.
    own cloud service. 
    If you want to use multiple VMs in an environment, they must all 
    be in the same cloud service. 
-   To 
-   [add a VM to a specific cloud service](http://azure.microsoft.com/documentation/articles/cloud-services-connect-virtual-machine/), 
-   choose **From Gallery** when you create the VM. 
+   To add a VM to a specific cloud service, choose **From Gallery** when you create the VM. 
 
    ![Windows Azure portal, Virtual Machines tab](_img/release-without-agents-01.png) 
 
