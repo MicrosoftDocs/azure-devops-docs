@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.manager: douge
 ms.author: ahomer
-ms.date: 1/18/2018
+ms.date: 01/18/2018
 ---
 
 # Associate automated tests with test cases
