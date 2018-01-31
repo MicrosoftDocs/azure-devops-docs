@@ -7,7 +7,7 @@ ms.technology: vs-devops-package
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 01/31/2018
 ---
 
 # Package Management in VSTS and TFS
@@ -41,4 +41,4 @@ Some package management services are only compatible with specific versions of T
 | **Maven**                      | Yes           | TFS 2018                    |
 
 ## Other package types
-Need to host other package types (Docker, Cocoapods, etc.)? Tell us on the [Package Management UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+Need to host other package types (Docker, CocoaPods, etc.)? Tell us on the [Package Management UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).

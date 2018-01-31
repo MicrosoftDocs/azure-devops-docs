@@ -333,7 +333,7 @@
         },
         {
             "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
+            "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
             "redirect_document_id": false
         },
         {
