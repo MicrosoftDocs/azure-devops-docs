@@ -38,7 +38,7 @@ Creates a database snapshot (.dacpac) file from a live SQL server or Microsoft A
 
 **Command Syntax:**
 
-```
+```command
 SqlPackage.exe /TargetFile:"<Target location of dacpac file>" /Action:Extract
 /SourceServerName:"<ServerName>.database.windows.net"
 /SourceDatabaseName:"<DatabaseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
@@ -46,21 +46,21 @@ SqlPackage.exe /TargetFile:"<Target location of dacpac file>" /Action:Extract
 
 or
 
-```
+```command
 SqlPackage.exe /action:Extract /tf:"<Target location of dacpac file>"
 /SourceConnectionString:"Data Source=ServerName;Initial Catalog=DatabaseName;Integrated Security=SSPI;Persist Security Info=False;"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /TargetFile:"C:\temp\test.dacpac" /Action:Extract /SourceServerName:"DemoSqlServer.database.windows.net"
  /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:Extract /?
 ```
 
@@ -70,21 +70,21 @@ Incrementally updates a database schema to match the schema of a source .dacpac 
 
 **Command Syntax:**
 
-```
+```command
 SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Publish /TargetServerName:"<ServerName>.database.windows.net"
 /TargetDatabaseName:"<DatabaseName>" /TargetUser:"<Username>" /TargetPassword:"<Password> "
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /SourceFile:"E:\dacpac\ajyadb.dacpac" /Action:Publish /TargetServerName:"DemoSqlServer.database.windows.net"
 /TargetDatabaseName:"Testdb4" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:Publish /?
 ```
 
@@ -94,21 +94,21 @@ Exports a live database, including database schema and user data, from SQL Serve
 
 **Command Syntax:**
 
-```
+```command
 SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /SourceServerName:"<ServerName>.database.windows.net"
 /SourceDatabaseName:"<DatabseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /TargetFile:"C:\temp\test.bacpac" /Action:Export /SourceServerName:"DemoSqlServer.database.windows.net"
 /SourceDatabaseName:"Testdb" /SourceUser:"ajay" /SourcePassword:"SQLPassword"
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:Export /?
 ```
 
@@ -118,21 +118,21 @@ Imports the schema and table data from a BACPAC package into a new user database
 
 **Command Syntax:** 
 
-```
+```command
 SqlPackage.exe /SourceFile:"<Bacpac file location>" /Action:Import /TargetServerName:"<ServerName>.database.windows.net"
 /TargetDatabaseName:"<DatabaseName>" /TargetUser:"<Username>" /TargetPassword:"<Password>"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /SourceFile:"C:\temp\test.bacpac" /Action:Import /TargetServerName:"DemoSqlServer.database.windows.net"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword"
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:Import /?
 ```
 
@@ -142,21 +142,21 @@ Creates an XML report of the changes that would be made by a publish action.
 
 **Command Syntax:** 
 
-```
+```command
 SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /TargetServerName:"<ServerName>.database.windows.net"
 /TargetDatabaseName:"<DatabaseName>" /TargetUser:"<Username>" /TargetPassword:"<Password>" /OutputPath:"<Output XML file path for deploy report>"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml" 
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:DeployReport /?
 ```
 
@@ -166,21 +166,21 @@ Creates an XML report of the changes that have been made to a registered databas
 
 **Command Syntax:** 
 
-```
+```command
 SqlPackage.exe /Action:DriftReport /TargetServerName:"<ServerName>.database.windows.net" /TargetDatabaseName:"<DatabaseName>"
 /TargetUser:"<Username>" /TargetPassword:"<Password>" /OutputPath:"<Output XML file path for drift report>"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /Action:DriftReport /TargetServerName:"DemoSqlServer.database.windows.net" /TargetDatabaseName:"Testdb"
 /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\driftReport.xml"
 ```
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:DriftReport /?
 ```
 
@@ -190,14 +190,14 @@ Creates a Transact-SQL incremental update script that updates the schema of a ta
 
 **Command Syntax:**
 
-```
+```command
 SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:Script /TargetServerName:"<ServerName>.database.windows.net"
 /TargetDatabaseName:"<DatabaseName>" /TargetUser:"<Username>" /TargetPassword:"<Password>" /OutputPath:"<Output SQL script file path>"
 ```
 
 **Example:**
 
-```
+```command
 SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServerName:"DemoSqlServer.database.windows.net"
 /TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\test.sql"
 /Variables:StagingDatabase="Staging DB Variable value"
@@ -205,7 +205,7 @@ SqlPackage.exe /Action:Script /SourceFile:"E:\dacpac\ajyadb.dacpac" /TargetServe
 
 **Help:**
 
-```
+```command
 sqlpackage.exe /Action:Script /?
 ```
 

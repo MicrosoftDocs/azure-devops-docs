@@ -98,15 +98,15 @@
     items:
     - name: Set up authentication
       href: maven/pom-and-settings.md
-    - name: Publish a Maven project
+    - name: Publish a Maven artifact
       href: maven/publish.md
-    - name: Install a Maven project
+    - name: Install a Maven artifact
       href: maven/install.md
   - name: Use Gradle
     items:
-    - name: Pull and build a Gradle package
+    - name: Install a Maven artifact using Gradle
       href: gradle/pull-package-gradle.md
-    - name: Publish a Gradle package
+    - name: Publish a Maven artifact using Gradle
       href: gradle/publish-package-gradle.md
   - name: Use symbols
     items:
