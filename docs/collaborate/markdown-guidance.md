@@ -8,7 +8,7 @@ ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 01/24/2017
+ms.date: 01/31/2018
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -437,7 +437,17 @@ In pull request comments and wiki pages, you can use emojis to add character and
 
 ![Emojis in markdown](../git/_img/pull-requests/emoji-markdown.png)
 
- 
+To escape emojis, enclose them using the \` character.
+
+**Example:**
+
+<pre>`:smile:` `:)` `:angry:`</pre>
+
+**Result:**
+
+ `:smile:` `:)` `:angry:`
+
+
 ## Special characters 
 
 <table width="650px">

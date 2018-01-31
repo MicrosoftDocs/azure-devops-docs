@@ -1063,6 +1063,12 @@ By default, the team project level and collection level Readers groups have only
 	</tr>
 
 	<tr>
+		<td id="git-contribute-to-pull-requests-permission">Contribute to pull requests</td>
+		<td><p>Can create and comment on pull requests.</p>
+		</td>
+	</tr>
+
+	<tr>
 		<td id="git-create-branch-permission">Create Branch</td>
 		<td>
 			Can create and publish branches in the repository. 
