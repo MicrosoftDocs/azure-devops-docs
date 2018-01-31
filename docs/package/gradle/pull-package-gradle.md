@@ -1,35 +1,35 @@
 ---
-title: Pull and build with a Gradle package in VSTS
-description: Pull and build with a Gradle package in VSTS
+title: Install a Maven artifact using Gradle and VSTS
+description: Install a Maven artifact using Gradle in a VSTS build
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: douge
-ms.date: 8/9/2017
+ms.reviewer: dastahel
+ms.date: 01/31/2018
 ---
 
-# Pull a Maven package with Gradle and build with it using VSTS
+# Install a Maven artifact using Gradle in a VSTS build
 
-Gradle is a popular package manager for Android Java developers. Learn how to pull a Gradle package and build with it for your team project with Visual Studio Team Services (VSTS).
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during a VSTS build of your application.
 
 ## Prerequisites
 
-Before you start, [install the Gradle package management software](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7+). You
-can [get the Java JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-Verify that you have the Java SDK or JRE version 7 from a CLI:
+From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
 
 ```cli
 java -version
 ```
 
-And then install Gradle. Once it completes, confirm the installation from a CLI:
+And then install Gradle. Once it completes, confirm the installation from a command prompt:
 
 ```cli
 gradle -v
 ```
 
-You're ready to start! This tutorial will guide you through the process of pulling a Gradle package and then building your code project with it.
+You're ready to start! This tutorial will guide you through the process of installing a Maven artifact using Gradle.
 
 > [!NOTE]
 > This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/vsts/git/tutorial/clone).
@@ -38,7 +38,7 @@ You're ready to start! This tutorial will guide you through the process of pulli
 
 First, you need a **gradle.properties** file that contains a VSTS credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account or project.
+Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
 
 Click **Add**.
 
@@ -50,28 +50,25 @@ Select the **Packaging (read and write)** scope.
 
 ![Select a token scope](_img/select-scope.png)
 
-The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and store it securely. 
+The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
 
-Now, go to the `.gradle` folder under the gradle installation root directory. Typically, this is `%INSTALLPATH%\gradle\user\home\.gradle\`. In that folder, create a file titled
-**gradle.properties**. 
+Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
 
-Open the **gradle.properties** file with a UTF-8 text editor and add the following:
+Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
 ```
 vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
-Where *YOUR_TOKEN_HERE* is the token string you created and saved previously. Save the file when you're done.
+Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the file when you're done.
 
-
-## Pull a Gradle package into your project
-
+## Install a Maven artifact using Gradle
 
 Open your **build.gradle** file and confirm that the following text is present at the top of it:
 ```
 apply plugin: 'java'
 ```
 
-Now, add this code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
+Now, add the following code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
 
 ```
 dependencies { 
@@ -80,12 +77,12 @@ dependencies {
 ```   
 For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
 
-This tells `gradle build` to include the package you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. 
+This tells `gradle build` to download the artifact you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. 
 
 To test this, create a simple Java code file and build it with Gradle. You can use this code to test:
 
 ```java
-package 
+package
 
 public class HelloWorld { 
     public static void main(String[] args) { 
@@ -94,38 +91,36 @@ public class HelloWorld {
 } 
 ```
 
-Build the code by running Gradle from a CLI:
+Build the code by running Gradle from a command prompt:
 
 ```cli
 gradle build
 ```
 
-If the build is successful, you will see `BUILD SUCCESSFUL` returned when it completes.
+If the build is successful, you will see `BUILD SUCCESSFUL` displayed when it completes.
 
+## Configure your build to install Maven artifacts using Gradle
 
-## Set up Team Build to use Gradle packages
-
-Open a CLI and run the following command:
+Run the following from a command prompt:
 
 ```cli
 gradle wrapper
 ```
 
-The gradle wrapper is created in the directory where you ran the above command. The wrapper's file name is **gradlew**. Do not rename this file.
+The Gradle wrapper is created in the directory where you ran the above command. The wrapper's file name is **gradlew**. Do not rename this file.
 
-`git push` an update that contains the wrapper (gradlew) from your local (clone) repo to origin. Team Build requires this file on the remote repo for your project.
+`git push` an update that contains the wrapper (gradlew) from your cloned (local) repo to `origin`. Team Build requires this file on the remote repo for Gradle to build your project.
 
 Go to the **Build and Release** hub for your project, and then select **Builds**.
 
-Select the **+ New Definition** button. Scroll down and select the **Gradle** template.
+Select the **+ New** button. Scroll down and select the **Gradle** template.
 
 ![Select the Gradle template for a new Build task](_img/select-gradle-template.png)
 
-Select **Apply** to start configuring the Build task agent to use your Gradle wrapper.
+Select **Apply** to start configuring the build to use your Gradle wrapper.
 
-Now, select the **gradlew build** process. You can use the default settings to start.
+Now, select the **gradlew build** step. You can use the default settings to start.
 
 ![Configure the Gradle template](_img/gradle-build-template.png)
 
-Here, you can configure various Gradle tasks to run on the agent.  Once you've configured the task agent, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
-
+Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build definition, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
