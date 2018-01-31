@@ -8,9 +8,11 @@ To talk to VSTS feeds, you'll need a token on your local machine that Maven can 
 
    * Maven pulls credentials from your **settings.xml** file.
    
-   * In Linux the file path is `"${user.home}/.m2/settings.xml"`
+   * On Linux, the file path is usually `"${user.home}/.m2/settings.xml"`
    
-   * In Windows, the file path is `"%USERPROFILE%/.m2/settings.xml"`
+   * On macOS, the file path is usually `"~/.m2/settings.xml"`
+   
+   * On Windows, the file path is usually `"%USERPROFILE%/.m2/settings.xml"`
    
    * If the file doesn't exist, create one now.
 
@@ -21,7 +23,7 @@ To talk to VSTS feeds, you'll need a token on your local machine that Maven can 
 ```xml
 <settings>
   <servers>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed” dialog" -->
     <server>
       <id>yourAccount-visualstudio.com-yourFeedName</id>
       <configuration>
