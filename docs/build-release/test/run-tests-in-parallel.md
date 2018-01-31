@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
 ms.manager: douge
 ms.author: ahomer
-ms.date: 1/18/2018
+ms.date: 01/18/2018
 ---
 
 # Run tests in parallel
@@ -25,6 +25,7 @@ Parallel test execution:
 * Is easy to implement, it requires no changes to existing test code and does not break existing test runs.
 * Works with the test code where it already resides.
 * Is OFF by default, users must explicitly opt in.
+* Is supported at [assembly level](https://blogs.msdn.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/).
 
 Not all existing test code might be parallel-safe; for example, tests may assume exclusive use of global resources.
 In general, use the following iterative approach to leverage the feature:
@@ -94,6 +95,7 @@ in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-t
 
 ## See Also
 
+* [MSTest V2 in-assembly parallel test execution](https://blogs.msdn.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/)
 * [Parallel Test Execution](https://blogs.msdn.microsoft.com/devops/2016/10/10/parallel-test-execution/)
 * [Set up continuous testing for your builds](set-up-continuous-testing-builds.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)

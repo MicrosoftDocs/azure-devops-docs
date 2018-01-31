@@ -57,25 +57,23 @@ This is a permission issue that may be due to the following causes:
 <a name="guestonly"></a>
 #### The user has only guest permission in the directory
 
-You must be a member of the **Global Admin** role in the directory in order
+You must be a member of the **Global administrator** role in the directory in order
 to create an Azure Resource Manager service endpoint.
 The directory administrator has permission to change a user's role, as follows:
 
-1. Sign into to Azure Classic portal at [https://manage.windowsazure.com](https://manage.windowsazure.com) using an Administrator account.
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
 
-1. Choose **Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and open the **USERS** tab.
+1. Choose **Azure Active Directory** in the left navigation bar, select the directory
+   corresponding to the user subscription, and in the **MANAGE** section choose **Users and groups**.
+   
+1. In the **MANAGE** section choose **All users**.
 
-   ![Opening the USERS tab in Azure Active Directory](_img/azure-rm-endpoint/azure-rm-endpoint-03.png)
+1. Use the search box to filter the list and then choose the user you want to manage.
 
-1. Select the user from the list and, in the **role** section change the
-   **ORGANIZATION ROLE** to **Global Admin**.
-
-   ![Changing the ORGANIZATION ROLE to Global Admin](_img/azure-rm-endpoint/azure-rm-endpoint-04.png)
+1. In the **MANAGE** section choose **Directory role** and change the
+   role to **Global administrator**.
 
 1. Save the change.
-
-   ![Saving the change](_img/azure-rm-endpoint/azure-rm-endpoint-05.png)
 
 It typically takes 15 to 20 minutes to apply the changes globally.
 After this period has elapsed, the user can retry creating the service endpoint.
@@ -86,17 +84,12 @@ After this period has elapsed, the user can retry creating the service endpoint.
 You must have permission to add integrated applications in the directory.
 The directory administrator has permission to change this setting, as follows:
 
-1. Sign into to Azure Classic portal at [https://manage.windowsazure.com](https://manage.windowsazure.com) using an Administrator account.
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
 
-1. Choose **Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and open the **CONFIGURE** tab.
+1. Choose **Azure Active Directory** in the left navigation bar, select the directory
+   corresponding to the user subscription, and in the **MANAGE** section choose **User settings**.
 
-   ![Opening the CONFIGURE tab in Azure Active Directory](_img/azure-rm-endpoint/azure-rm-endpoint-06.png)
-
-1. Ensure the value of **USERS MAY ADD INTEGRATED APPLICATIONS** is set to
-   **YES**. If not, change it to **YES** and save the change.
-
-   ![Ensure the value of the USERS MAY ADD INTEGRATED APPLICATIONS is set to YES](_img/azure-rm-endpoint/azure-rm-endpoint-07.png)
+1. In the **App registrations** section, change **Users can register applications** to **YES**.
 
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found
