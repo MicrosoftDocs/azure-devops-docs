@@ -326,6 +326,16 @@ VS403316: An inconsistency was detected in some TFVC files for this collection. 
 
 An inconsistency was detected in some TFVC files within your collection. To resolve the error you will need to work VSTS [customer support](https://aka.ms/VSTSCustomerSupport). Please open a support ticket and they will assist you with correcting the error. 
 
+**VS403366**
+
+```cmdline
+VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Visual Studio Team Services have been provided exceptions for your machines firewall.
+
+List of Visual Studio Team Services IPs:
+```
+
+The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. Sometimes the error message will provide a list of IPs. The IPs for VSTS can change temporarily during deployments. If IPs are listed, add them to your firewall exceptions and try queuing the import again. 
+
 ### Import Failures
 When an imports fails the individual that queued the import will receive an email. In this case, your team will need to roll back by bringing your Team Foundation Server instance back online and attaching your collection. This will allow your team members to continue working. Once your team is back up and working again, follow the instructions in the failure email and file a [support case](https://www.visualstudio.com/team-services/support) to get assistance. 
 
