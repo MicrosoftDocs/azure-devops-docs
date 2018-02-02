@@ -22,10 +22,11 @@ As the following illustration shows, you manage categories and types of and work
   
 [!INCLUDE [temp](../../../_shared/process-editor.md)]
 
+For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)]  
 
-For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md).  
+ 
 
 <a name="global"></a> 
 ## Global parameters  
