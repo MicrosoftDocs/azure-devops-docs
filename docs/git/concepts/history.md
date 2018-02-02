@@ -34,7 +34,7 @@ To do this, I'll pull the master branch with the following command:
 
 `git pull origin master`
 
-This merges all changes from the master branch in the remote repository, which Git names `origin` by default. This pull brought one new commit, and `master` in my local repo moves to that commit.
+This copies ("pulls") all commits from the `master` branch of the remote repo (called `origin` by default) to the `master` branch of the local repo. The pull operation copied one new commit, and the `master` branch in the local repo is now pointing to this new commit.
 
 ![a fourth commit, D, is added to the line](_img/history/history-abcd.png)
 
