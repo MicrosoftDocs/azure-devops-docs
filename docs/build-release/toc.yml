@@ -59,7 +59,7 @@
     - name: Test your app
       items:
       - name: VS Test
-        href: test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json
+        href: test/getting-started-with-continuous-testing.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS

@@ -186,13 +186,13 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 You can run ```witadmin destroywi``` against an on-premises TFS server or VSTS account. 
 
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for VSTS or TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../customize/reference/witadmin/remove-work-items-permanently.md)).  
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../customize/reference/witadmin/remove-work-items-permanently.md)).  
 
-	```cd %programfiles(x86)%\Microsoft Visual Studio 16.0\Common7\IDE```  
+	```cd %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer```  
 
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.  
 
-	The witadmin command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of Visual Studio Community. 
+	The witadmin command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://www.visualstudio.com/downloads/). 
 
 3.	To delete several work items from an account hosted on VSTS, enter the following specifying the account name and separating the IDs with commas.    
 
@@ -300,9 +300,6 @@ http://vssplatform/integrate/api/wit/reporting-work-item-revisions?branch=origin
 
 <li>To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../security/set-permissions-access-work-tracking.md#move-delete-permissions).</li>
 
-
-
-
-
 --> 
+
 [!INCLUDE [temp](../../_shared/help-support-shared.md)] 

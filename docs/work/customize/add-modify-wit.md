@@ -27,7 +27,7 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 > [!div class="mx-tdBreakAll"]  
 > |WIT definition  |ProcessConfiguration definition  |Command line change| 
 > |-------------|----------|----------|    
-> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](reference/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](reference/witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (On-premises XML)) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
+> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](reference/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](reference/witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
  
 
 <a id="add-wit">  </a>
@@ -179,13 +179,12 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 >[!NOTE]  
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
-
+0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
 0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
-        witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
@@ -193,12 +192,11 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 
 0.  Import the WIT definition file.  
 
-        witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+	`witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
 0.  Open the web portal or refresh the page to view the changes.  
 
     For more information about using **witadmin**, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md).
-
 
 ### Enable features after upgrade (On-premises XML) 
 
