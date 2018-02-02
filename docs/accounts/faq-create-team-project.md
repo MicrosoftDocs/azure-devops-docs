@@ -17,7 +17,7 @@ ms.date: 10/17/2017
 ## Resolve errors
 
 ###To resolve permission related errors
-If you receive an error message that states you don’t have permission, go get those permissions: become a member of the [Project Collection Administrators group](https://msdn.microsoft.com/library/dd547204.aspx), [Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md) become a member of the, and [Full Control permissions](https://msdn.microsoft.com/library/dd547204.aspx) on the server that hosts SharePoint Products.  
+If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](https://msdn.microsoft.com/library/dd547204.aspx), [Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md) become a member of the, and [Full Control permissions](https://msdn.microsoft.com/library/dd547204.aspx) on the server that hosts SharePoint Products.  
 
 ###To resolve Error TF30169
 
@@ -29,7 +29,7 @@ Contact the system administrator for the server that hosts SharePoint Products a
 
 **Error TF30321: The name you typed is already used for another team project on the Team Foundation Server** indicates that you should use a different name for your team project. The name you entered is either in active use or has undergone partial deletion, but not full deletion.  
 
-Even when you've deleted a team project, you may get the same name error. If a team project create or delete operation doesn’t successfully finish, some components could be created or deleted even though others are not. In this event, you can’t reuse the name associated with the team project.
+Even when you've deleted a team project, you may get the same name error. If a team project create or delete operation doesn't successfully finish, some components could be created or deleted even though others are not. In this event, you can't reuse the name associated with the team project.
 
 To verify project deletion or remove remaining components associated with a partially deleted team project, use the [Delete a team project [TFSDeleteProject]](https://msdn.microsoft.com/library/ms181482). Then try again to create the team project with the same name.
 
@@ -53,7 +53,7 @@ Contact the TFS system administrator and request that they verify the server con
 
 ###Q: How do I add my custom process template to the list?
 
-**A:** You’ll need to first [upload your template](../work/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](https://msdn.microsoft.com/library/ms243782.aspx).
+**A:** You'll need to first [upload your template](../work/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](https://msdn.microsoft.com/library/ms243782.aspx).
 
 <a id="log-file">  </a>
 ###Q: Where is the log file located?
@@ -78,5 +78,5 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ###Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in the [Team Foundation Server – Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+**A:** You can post a question or search for answers in the [Team Foundation Server - Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 
