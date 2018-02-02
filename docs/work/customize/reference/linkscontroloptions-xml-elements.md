@@ -1,12 +1,13 @@
 ---
-title: LinksControlOptions XML elements reference | VSTS & TFS 
+title: LinksControlOptions XML elements reference 
+titleSuffix: VSTS & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017
+ms.date: 02/02/2018
 ---
 
 # LinksControlOptions XML elements (Web form) 
@@ -274,7 +275,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <tr>
 <td><p> <strong>Columns</strong> </p></td>
 <td><p>Optional child element of the <strong>LinksControlOptions</strong> element.</p>
-<p>Container element for one or more <strong>Column</strong> elements you use to specify the fields that dispaly in the control's grid. </p>
+<p>Container element for one or more <strong>Column</strong> elements you use to specify the fields that display in the control's grid. </p>
 <pre><code>&lt;Columns &gt;
    &lt;Column Name=&quot;FieldName&quot; /&gt; 
 &lt;/Columns &gt;</code></pre>
@@ -285,6 +286,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
 <p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](link-type-element-reference.md#external-link-types) for a complete list. </p>
+<blockquote><b>Important: </b>For import purposes, use the name `Workitem Hyperlink` in place of `Hyperlink` and `Source Code File` in place of `Versioned item`. 
+</blockquote>
 
 <p>Specify ```System.IncludeAllExternalLinks``` to include all external link types.</p>
 <blockquote><b>Note: </b>When you specify  ```System.IncludeAllExternalLinks```, the system displays all links in alphabetical order by external link type. 
