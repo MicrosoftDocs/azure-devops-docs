@@ -1,12 +1,13 @@
 ---
-title: Upload, download, or delete a process template | VSTS & TFS 
+title: Upload, download, or delete a process template 
+titleSuffix: VSTS & TFS
 description: Upload, download, delete, or make default a process template for a team project collection 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/11/2017
+ms.date: 02/02/2017
 ---
 
 #Upload or download a process template
