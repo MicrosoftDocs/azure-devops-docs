@@ -13,7 +13,7 @@ To run the **witadmin** command-line tool, open a Command Prompt window where Vi
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
-or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.
+or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
 
 ####TFS 2015 
 
