@@ -188,11 +188,11 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or VSTS a
 
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../customize/reference/witadmin/remove-work-items-permanently.md)).  
 
-	```cd %programfiles(x86)%\Microsoft Visual Studio 15.0\Common7\IDE```  
+	```cd %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer```  
 
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.  
 
-	The witadmin command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of Visual Studio Community. 
+	The witadmin command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://www.visualstudio.com/downloads/). 
 
 3.	To delete several work items from an account hosted on VSTS, enter the following specifying the account name and separating the IDs with commas.    
 
