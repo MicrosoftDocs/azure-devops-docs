@@ -78,9 +78,9 @@ The panel only displays fields that are included in the `FIELDS` section of the 
   
 2.  Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
   
-    ```  
-    ccd %programfiles(x86)%\Microsoft Visual Studio 15.0\Common7\IDE  
-    ```   
+	```
+	cd %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+	```    
 
 3.  Export the process configuration file.  
   
