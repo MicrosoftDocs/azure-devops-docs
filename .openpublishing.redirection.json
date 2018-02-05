@@ -4792,7 +4792,7 @@
         "redirect_document_id": false
        },
        {
-        "source_path": "docs/user-guide/user-guide/team-projects-teams-repos.md",
+        "source_path": "docs/user-guide/team-projects-teams-repos.md",
         "redirect_url": "/vsts/work/scale/scale-teams",
         "redirect_document_id": false
        }
