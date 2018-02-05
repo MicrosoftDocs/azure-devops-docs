@@ -187,8 +187,8 @@ In this example, the field contains a string value, two groups, and a global lis
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.
 
-[!NOTE]  
-The global list name and contents are not displayed.
+>[!NOTE]  
+>The global list name and contents are not displayed.
 
 
 <table Responsive="true" summary="table">

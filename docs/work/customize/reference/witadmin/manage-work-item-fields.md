@@ -24,7 +24,7 @@ You can manage the fields defined for work item types (WITs) that are defined fo
     -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
     -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
 -   **deletefield**: Deletes the specified field.    
--   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.    
+-   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
 -   **listfields**: Lists the attributes for all fields or a specified field. (can run against VSTS)  
   
 [!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)] 
