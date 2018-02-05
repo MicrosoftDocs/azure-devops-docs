@@ -19,7 +19,7 @@ coordinate dev, build, test, and release activities, and more.
 For Team Foundation Server, learn [how to add team project members here](../security/add-users-team-project.md).
 
 When you add members to team projects, 
-VSTS will automatically assign them 
+VSTS automatically assigns 
 [Basic access](https://www.visualstudio.com/team-services/compare-features/), 
 if your account has seats available, 
 or [Stakeholder access](https://www.visualstudio.com/team-services/compare-features/), 
@@ -55,11 +55,11 @@ find and select your team project.
 
 0.	Invite members to your new team project...
 
-    ![On your team project home page, click Invite a friend](_img/add-team-members/invite-team.png)
+    ![On your team project home page, choose Invite a friend](_img/add-team-members/invite-team.png)
 
 	Or invite them to an existing team project.
 
-	![On your team project page, click Manage team members](_img/add-team-members/invite-team-existing.png)
+	![On your team project page, choose Manage team members](_img/add-team-members/invite-team-existing.png)
 	
   Adding members from the project page adds them to the default team for the project.  To add a member to a different team, choose 
   the gear cog and **Security** from the menu.  Then find the team on the left pane of the security page and select it.  In 
@@ -68,11 +68,11 @@ find and select your team project.
 
 0.	Add your team members.
 	 
-	![Click Add](_img/add-team-members/add-user.png)
+	![Choose Add](_img/add-team-members/add-user.png)
 	
-0.	Enter the email addresses for new users. 
+0.	Enter the email addresses for your new users. 
 Otherwise, enter the display names for existing users. 
-Add them one at a time or all at the same time.
+Add them one at a time or all at once.
 
 	Which email addresses can I add?
 	 * If your VSTS account is Azure Active Directory backed, then you can only add email addresses that are

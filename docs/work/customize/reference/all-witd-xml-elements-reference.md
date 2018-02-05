@@ -81,13 +81,14 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 <pre><code>
 &lt;DESCRIPTION&gt; DescriptionOfWorkItemType&lt;/DESCRIPTION&gt;
 </code>
-<p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr><tr><td data-th="Element"><p>**GLOBALLISTS**</p></td><td data-th="Description"><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a team project collection. [Define global lists](define-global-lists.md) supports cross-group collaboration and ease of maintenance. </p>
+<p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr><tr><td data-th="Element"><b>GLOBALLISTS</b></td>
+<td><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a team project collection. <a href="define-global-lists.md">Define global lists</a> to support cross-group collaboration and ease of maintenance. </p>
 <code></pre>
 &lt;GLOBALLIST name="globalListName"&gt;  
 &nbsp;&nbsp;&nbsp;&lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
 &lt;/GLOBALLIST&gt;  
 </code>
-<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WITWithin the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
+<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WIT. Within the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
 <pre><code>
 &lt;FIELDS&gt;  
 &nbsp;&nbsp;&nbsp;&lt;FIELD&gt; . . . &lt;/FIELD&gt;  
@@ -95,9 +96,9 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 </code>
 </td></tr>
 <tr>
-<td data-th="Element"><p>**FORM**</p></td><td data-th="Description"><p>Specifies the [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.</p>
+<td data-th="Element"><b>FORM</b></td><td data-th="Description"><p>Specifies the  <a href="design-work-item-form.md">design of the work item form</a> by defining the fields and controls that appear on the form and in what order.</p>
 
-<p>**For TFS 2015 and earlier versions**, the **FORM** element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
+<p><b>For TFS 2015 and earlier versions</b>, the <b>FORM</b> element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
 <code></pre>
 &lt;FORM&gt;  
 &nbsp;&nbsp;&nbsp;&lt;Layout&gt; . . . &lt;/Layout&gt;  

@@ -1,5 +1,6 @@
 ---
 title: View or run a query 
+titleSuffix: VSTS & TFS
 description: View a list of queries or run a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
@@ -7,7 +8,7 @@ ms.assetid:
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 02/05/2018  
 ---
 
 
