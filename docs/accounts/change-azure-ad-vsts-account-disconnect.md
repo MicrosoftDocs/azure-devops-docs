@@ -18,24 +18,26 @@ ms.topic: get-started-article
 
 ###	Disconnect your VSTS account from the source directory
 
-0.	Sign in to the [Azure classic portal](https://manage.windowsazure.com) 
+0.	Sign in to the [Azure portal](https://portal.azure.com) 
 with the Microsoft account that you're using for the migration.
 
-0.	Select your VSTS account.
+0.	Browse to your VSTS account by selecting **All services**, typing **Team Services** into the **Filter** box, and choosing **Team Services accounts**. If you have recently browsed to **Team Services accounts** you can select it from the recently accessed services on the left.
 
 	![Select your VSTS account](_img/manage-work-access/azureselectconnectedvso.png)
 
-0.	Configure your account.
+0. Select your account.
+
+	![Select your VSTS account](_img/manage-work-access/select-team-services-account.png)
+
+0.	Choose **Disconnect**.
 
 	![Configure your account](_img/manage-work-access/azure-configure-disconnect.png)
 
-0.	Disconnect your account from the source directory.
+0.	Choose **Yes** to confirm to disconnect your account from the source directory.
 
 	![Disconnect account](_img/manage-work-access/azuredisconnectdirectory1.png)
 
-	![Select None, no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
-
-	After you save your changes, your VSTS account is disconnected. 
+	After you confirm your changes, your VSTS account is disconnected. 
 	Now, only users with Microsoft accounts can sign in to your VSTS account. 
 	This is why we previously set up your Microsoft account as a VSTS account user.
 
@@ -43,9 +45,9 @@ with the Microsoft account that you're using for the migration.
 
 0.	Unlink your VSTS account from the source Azure subscription.
 
-	![Select your VSTS account](_img/_shared/azure-unlink-subscription.png)
+	![Select your VSTS account](_img/manage-work-access/azure-unlink-subscription.png)
 
-	Your VSTS account is removed from the Azure classic portal. 
+	Your VSTS account is removed from the Azure portal. 
 	You can now link your account to another Azure subscription and directory.
 
 
