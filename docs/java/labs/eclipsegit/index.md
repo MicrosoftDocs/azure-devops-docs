@@ -12,6 +12,11 @@ ms.date: 01/22/2018
 
 In this exercise, you are going to import the MyShuttle2 repo in your VSTS account into to your VM for editing in Eclipse.
 
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
+
 ## Prerequisites
 
 This exercise assumes you have completed [the VSTS Java project setup tutorial](../settingvstsproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.

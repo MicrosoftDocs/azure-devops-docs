@@ -12,6 +12,11 @@ ms.date: 01/22/2018
 
 In this exercise, you are going to configure integration between the build system and SonarQube. [SonarQube](https://www.sonarqube.org/) is a well established technical debt management system. Keeping tabs on your technical debt gives you objective measures that you can use to make informed decisions about maintenance, refactoring and enhancements to your code base.
 
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
+
 ## Prerequisites
 
 This exercise assumes you have completed the exercises [to create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private VSTS agent](../dockerbuildagent/index.md). You should also have [created a VSTS Team Build for MyShuttle2](../builddocker/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.

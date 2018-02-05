@@ -10,6 +10,11 @@ ms.date: 01/22/2018
 
 # Build and deploy a Java project with IntelliJ and VSTS
 
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
+
 In this exercise, you are going to see a typical end-to-end workflow for a Java developer using IntelliJ. You should have completed the labs that set up automated build and release (this is a CI/CD pipeline). 
 
 In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in VSTS. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
