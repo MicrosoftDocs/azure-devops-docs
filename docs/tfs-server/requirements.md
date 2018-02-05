@@ -85,7 +85,7 @@ Use one of the following versions of SQL Server for TFS:
 TFS version        | Support SQL Server version
 -------------------|------------------------------------
 TFS 2018           | SQL Server 2017<br/>SQL Server 2016 (minimum SP1)
-TFS 2017 Update 1  | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014<br/>
+TFS 2017 Update 3  | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014<br/>
 TFS 2017           | SQL Server 2016<br/>SQL Server 2014<br/>
 TFS 2015 Update 3  | SQL Server 2016<br/>SQL Server 2014<br/>SQL Server 2012 (minimum SP1)
 TFS 2015           | SQL Server 2014<br/>SQL Server 2012 (minimum SP1)
