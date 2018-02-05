@@ -49,7 +49,7 @@ If a user no longer requires access to a team project or your VSTS account, you 
 so you're not charged in your next Azure billing cycle.
 
  > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
- > Your bill won't show these change until the next month because paid users are monthly purchases. 
+ > Your bill won't show these changes until the next month because paid users are monthly purchases. 
 
 ##  Remove users from a team or team project
 

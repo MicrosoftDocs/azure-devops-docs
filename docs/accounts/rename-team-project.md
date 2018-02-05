@@ -16,7 +16,7 @@ ms.date: 10/05/2017
 
 A team project rename updates all of your version control paths, work items, queries, and other team project artifacts to reflect the new name. 
 Team projects can be renamed multiple times and older names can be reused as well. 
-Post rename, there might be some [reactions](#more-work) required from team members. It is recommended to perform this action during off-hours to minimize any impact.
+Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
 ## Perform a team project rename
 
@@ -49,7 +49,7 @@ You can also change the name of a team project from the project collection admin
 ## Let your team know what they have to do
 
 Now that you've renamed your team project,
-your team will need to restart their clients and perform additional actions based on the features they use. 
+your team must restart their clients and perform additional actions based on the features they use. 
 
 <a id="restarting-clients"></a>
 ### Restart your clients
@@ -150,10 +150,10 @@ For the following clients, execute a get or check-in and the workspace mapping w
 
 - Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)
 
-It's recommended you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
+We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
 except for Visual Studio 2010 which only supports server worksapces, 
 and Team Foundation Server plugin for Eclipse, 
-you will need to create a new local workspace mapped to the new team project name.
+you must create a new local workspace mapped to the new team project name.
 
 1.  [Shelve your changes](https://msdn.microsoft.com/library/ms181404).
 
@@ -180,7 +180,7 @@ Reports will not work as expected until the jobs have run.
  update the name in each to the new team project name. All default queries and web parts do not need to be updated and will continue to work. 
  Uses of *@project* will also continue to work after a team project rename and also don't need to be updated. 
 
-- Excel reports and Excel web parts on MOSS will not show the right data until the execution of a couple of jobs.
+- Excel reports and Excel web parts on MOSS will not show the right data until you execute the following.
 	1. Warehouse job – [Run the warehouse jobs](../report/admin/manually-process-data-warehouse-and-cube.md)
 	so that Excel reports contain the correct data.
 	If the new project name is not synced to the warehouse,
@@ -196,7 +196,7 @@ Reports will not work as expected until the jobs have run.
 	such as report folder locations, appearing in the dashboards.
 	By default, this cache clears about every hour.
 	You can also clear some TFS specific cache using the tfs redirect url
-	and providing a "clearcache" parameter. For example
+	and providing a "clearcache" parameter. For example:
 
 	```
 	http://<SharePointServer>/sites/<TeamProjectCollectionName>/<TeamProjectName>/_layouts/TfsRedirect.aspx?tf:type=Report&tf:clearcache=1
