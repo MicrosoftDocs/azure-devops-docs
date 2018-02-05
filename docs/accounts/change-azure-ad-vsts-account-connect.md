@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 6b345a81-2191-4dd0-aa1f-b296087cb825
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+ms.date: 02/01/2018
 ms.topic: get-started-article
 ---
 
@@ -15,21 +15,25 @@ ms.topic: get-started-article
 **VSTS**
 
 
-0.	Link your VSTS account to the target Azure subscription.
+0. Select **Link** to link your VSTS account to the target Azure subscription.
 
-	![Link VSTS account](_img/set-up-billing/azuredeveloperservicesstart.png)
+  ![Choose Link button over middle panel](_img/set-up-billing/ap-vso-selectlink2.png)
 
-	![Select your VSTS account and target Azure subscription](_img/change-azure-active-directory/select-account-subscription.png)
+0. Select your Azure subscription. 
 
-0.	Configure your account.
+  ![Select an Azure subscription](_img/set-up-billing/ap_vso_selectsubscription.png)
 
-	![Configure your account](_img/manage-work-access/azure-configure-disconnect.png)
+0. Choose **Connect**.
 
-0.	Connect your account to the target directory. Save your changes when you're done.
+  ![Configure your account](_img/manage-work-access/azureconfigurevso.png)
 
-	![Connect your VSTS account](_img/manage-work-access/azuredisconnectdirectory3.png)
+0. Choose **Yes** to confirm.
 
-	![Select target directory](_img/change-azure-active-directory/select-directory.png)
+  ![Connect your account](_img/manage-work-access/azureconnectdirectory1.png)
+
+0. Your account is now connected to your organization's directory.
+
+  ![Account is now connected to your directory](_img/manage-work-access/azureconnectdirectory3.png)
 
 0.	To check that you finished this task successfully, invite a user from the target directory 
 to your VSTS account. Confirm that they can sign in. Learn how to 

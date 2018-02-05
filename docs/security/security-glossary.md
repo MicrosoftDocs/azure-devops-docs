@@ -1,7 +1,6 @@
 ---
 title: Security terms in use VSTS & TFS 
 description: Key definitions for objects and items used to authenticate and manage users and groups 
-ROBOTS: NOINDEX,NOFOLLOW 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
