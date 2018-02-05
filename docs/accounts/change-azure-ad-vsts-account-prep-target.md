@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: ff735651-3ba6-4c6a-8765-bbd126c45532
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/17/2017
+ms.date: 01/29/2018
 ms.topic: get-started-article
 ---
 
@@ -28,9 +28,7 @@ so they can get VSTS account access as directory members.
 
 ## Set up your Microsoft account as a user administrator in the target directory
 
-0.	Find and select the directory that you want connected to your VSTS account.
-
-	![Find target directory](_img/change-azure-active-directory/azure-choose-target-directory.png)
+0.	Sign in to the [Azure Active Directory admin center](https://aad.portal.azure.com/) with an account that's a global admin for the directory.
 
 0.	[Add your account to the directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users), and in the **Tell us about this user** step, choose **User with an existing Microsoft account**.  In the **user profile** step, choose the user administrator role.
 
