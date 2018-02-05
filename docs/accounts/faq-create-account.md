@@ -20,14 +20,14 @@ ms.date: 10/10/2017
 A: VSTS is free for these users to join:
 
 * 5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/) 
-like version control, tools for Agile, Java, build, release management, and more 
+like version control, tools for Agile, Java, build, release management, and more. 
 
 * Unlimited users who get [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/) 
-like working with your backlog, work items, and queries
+like working with your backlog, work items, and queries.
 
 * Unlimited [Visual Studio subscribers](https://www.visualstudio.com/team-services/compare-features/) 
 who also get Basic features, and in some cases, additional features with specific extensions, like 
-[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
  Learn what else you get with [VSTS](https://www.visualstudio.com/team-services/pricing/).
 
@@ -62,7 +62,7 @@ You only have to do this step once.
 ####Q:	Why are some features not available with my account?
 
 A:	Some features require that you install an extension, 
-which are available as free or paid. 
+which may be available for free or paid. 
 
 For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 requires that you install the Test Manager extension, 

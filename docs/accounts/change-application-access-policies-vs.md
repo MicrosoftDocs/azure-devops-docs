@@ -67,7 +67,7 @@ To continue, you'll need at least Basic access and VSTS account owner permission
 
 0.	From your account toolbar, go to **Settings**.
 
-    ![Click the gear icon, go to Settings](../_shared/_img/account-settings-new-ui.png)
+    ![Choose the gear icon, go to Settings](../_shared/_img/account-settings-new-ui.png)
 
 0.  Review your application connection settings. 
 Change these settings, based on your security policies.

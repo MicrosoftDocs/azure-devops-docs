@@ -96,6 +96,7 @@ featureFlags:
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
                                         </div>
