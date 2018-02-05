@@ -182,6 +182,13 @@
                   "True",
                   "False"
                 ]
+              },
+              "DisableManageLink": {
+                "type": "string",
+                "enum": [
+                  "True",
+                  "False"
+                ]
               }
             }
           },
