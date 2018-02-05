@@ -1,5 +1,6 @@
 ---
-title: Scale and manage work across the enterprise | VSTS & TFS
+title: Scale and manage work across the enterprise 
+titleSuffix: VSTS & TFS
 description: Scale your team project by adding teams  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/15/2017
+ms.date: 02/05/2018
 ---
 
 
