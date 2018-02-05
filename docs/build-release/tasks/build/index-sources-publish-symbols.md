@@ -214,4 +214,8 @@ tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamprojec
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+### How long are Symbols retained?
+
+When symbols are published to VSTS they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
+
 <!-- ENDSECTION -->
