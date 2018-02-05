@@ -59,15 +59,15 @@ You'll need:
 *	A ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
 such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), 
 associated with your organization's Azure AD and at 
-least Co-administrator permissions for your subscription. 
+least co-administrator permissions for your subscription. 
 You'll need both to make your directory appear in the Azure portal, 
 so that you can link your subscription and connect your 
 Azure AD to your VSTS account. Learn about 
-[Azure subscription Co-administrator permissions](../billing/add-backup-billing-managers.md).
+[Azure subscription co-administrator permissions](../billing/add-backup-billing-managers.md).
 
   [Want to use Office 365 Azure AD with VSTS?](faq-azure-access.md#o365aad)
 
-*	(Only needed if you need to add users to Azure AD) Global administrator permissions for your directory so 
+*	To add users to Azure AD, you need global administrator permissions for your directory so 
 you can add current VSTS users to that directory. 
 Otherwise, work with your directory's global administrator to add users. 
 Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
@@ -94,8 +94,8 @@ so find out more first.
 
 What if we can't use the same sign-in addresses?  You'll have to add these users to the directory with new work or school accounts, 
 or if they have existing work or school accounts, they can use those instead. Their work in VSTS 
-won't be lost and will stay with their current VSTS sign-in addresses.  You'll have to add them as new 
-users to VSTS, reassign access levels, and readd them to any team projects. They can migrate work that they want to keep, 
+won't be lost and will stay with their current VSTS sign-in addresses.  You must add them as new 
+users to VSTS, reassign access levels, and readd them to any team projects. Users can migrate work that they want to keep, 
 except for their work history. Learn [how to manage VSTS account users](add-account-users-assign-access-levels.md).
 
 What happens to tools that use my credentials, like alternate credentials?  Alternate credentials won't work anymore for 
