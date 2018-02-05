@@ -30,7 +30,7 @@ permissions to restore your VSTS account.
 
 	![Next to your deleted account, click Restore](_img/delete-account/restore-account.png)
 
-	*	If your account URL is still available, you can restore your account.
+	*	If your account URL is still available, you can restore it.
 
 		![Confirm restoring your account](_img/delete-account/restore-confirm.png)
 

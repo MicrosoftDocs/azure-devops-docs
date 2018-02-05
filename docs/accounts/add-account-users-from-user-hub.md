@@ -69,7 +69,7 @@ You provide others access to your account by adding their email address.
 	> [!NOTE] 
 	> **Streamlined User Management** is in preview. Turning it on now shows you how to enable preview features, and also provides you access to the enhanced user interface for managing users. 
 
-	a. From your user account menu (you'll see a letter or an image of your profile), click the **Preview features** option.   
+	a. From your user account menu (you'll see a letter or an image of your profile), choose the **Preview features** option.   
 	
 	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 2px solid #C3C3C3;" /> 
 
@@ -84,13 +84,13 @@ You provide others access to your account by adding their email address.
 
 	![Enable streamline user management](../user-guide/_img/sign-up-invite-users-streamline-user-mngment.png)
 
-	Click the close icon (![close-icon](../_img/icons/close-icon.png) to close the preview features dialog window. 
+	Choose the close icon (![close-icon](../_img/icons/close-icon.png) to close the preview features dialog window. 
 
-0. Click ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option
+0. Choose ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option.
  
 	![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
 
-0. Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
+0. Then, choose **Users** to open the Manage users page. Choose **Add new users** to open the dialog. 
 
 	![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
 
@@ -102,15 +102,15 @@ You provide others access to your account by adding their email address.
 		> [!NOTE]   
 		> You must add email addresses for 
 		> ["personal" Microsoft accounts](https://www.microsoft.com/account) 
-		> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
-		> to authenticates users and control account access.  
+		> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) 
+		> to authenticate users and control account access.  
 		> If your users don't have Microsoft accounts, 
 		> have them [sign up](https://signup.live.com/).  
 	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../security/access-levels.md). 
 	- **Add to projects**: Select the project that you named in the previous procedure. 
 	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md). 
 
-0. When done, click **Add** to complete your invitation. 
+0. Choose **Add** to complete your invitation. 
 
 <!---
 Go to the User Hub:
@@ -119,7 +119,7 @@ Go to the User Hub:
 
 Choose **Add new users** below "Manage users".
 
-![Click the Add Users button](_img/user-hub/add-users-button-718.png)
+![Choose the Add Users button](_img/user-hub/add-users-button-718.png)
 
 Then fill in the "Add new users" dialog:
 

@@ -44,7 +44,7 @@ which you'll set up below:
 
 	*	Source directory global administrator
 	*	(if adding users to target directory) Target directory user administrator
-	*	Azure subscription Co-administrator for both directories
+	*	Azure subscription co-administrator for both directories
 	*	VSTS account owner. Only account owners can change directory connections.
 
 ##	What happens to current users?

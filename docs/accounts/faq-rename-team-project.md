@@ -49,9 +49,9 @@ For example, if a team project Foo was renamed to Bar, the default team Foo woul
 
 If you use Visual Studio 2010 and you have queries save to disk, you will not be able to open them after a team project is renamed. You can use Visual Studio 2012 or newer to open them.
 
-#### Q: Why does the existing Lab Management BDT in Visual Studio fails with the error 'oldprojectName' cannot be found?
+#### Q: Why does the existing Lab Management BDT in Visual Studio fail with the error 'oldprojectName' cannot be found?
 
-The issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing Build Definition, select the process tab under it, click on the ellipses next to the Lab Process settings to
-open the Lab Workflow Parameters wizard, and then click on Finish. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
+The issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing Build Definition, select the process tab under it, select the ellipses next to the Lab Process settings to
+open the Lab Workflow Parameters wizard, and then select **Finish**. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
 
 ![Process Tab](_img/rename-team-project/lab-build-process.png)

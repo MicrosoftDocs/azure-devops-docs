@@ -62,8 +62,7 @@ you might be asked to agree and confirm that your information is up to date.
 <a name="owner-differences"></a>
 ####Q: What makes the account owner different than other account users?
 
-A: The account owner manages payments and access for account users. 
-They're also the same person who manages billing for the account through the 
+A: The account owner manages payments and access for account users and also manages billing for the account through the 
 [Azure classic portal](https://manage.windowsazure.com/) or the
 [Azure portal](https://portal.azure.com). 
 

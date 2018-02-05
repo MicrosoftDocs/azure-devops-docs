@@ -17,7 +17,7 @@ ms.date: 10/6/2017
 
 #### Q: I made changes to Azure AD, but they didn't seem to take effect?
 
-A: Azure AD changes may take up to 24 hours for VSTS to see the changes.
+A: Changes made in Azure AD may take up to 24 hours to be visible in VSTS.
 
 <a name="o365aad"></a>
 #### Q: Can I use Office 365 Azure AD with VSTS?
@@ -35,7 +35,7 @@ that's **not** from one of these offers:
 * A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
 
 You must then associate that subscription with your Office 365 Azure AD. You'll also need additional subscription 
-administrator permissions beyond Co-administrator permissions.
+administrator permissions beyond co-administrator permissions.
 
 Learn how to [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription).
 
@@ -269,7 +269,7 @@ A:	You need an active and valid
 ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
 such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), 
 associated with your organization's Azure AD and at 
-least Co-administrator permissions for your subscription.
+least co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your VSTS account. Learn 
@@ -287,7 +287,7 @@ A:	This might happen because:
 ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
 such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), 
 associated with your organization's Azure AD and at 
-least Co-administrator permissions for your subscription. 
+least co-administrator permissions for your subscription. 
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your VSTS account. Learn 
@@ -306,7 +306,7 @@ and connect your Azure AD to your VSTS account. Learn
 	You must then associate that subscription with your Office 365 Azure AD. 
 	To do this for your Office 365 Azure AD, 
 	you'll also need addtional subscription administrator permissions 
-	beyond Co-administrator permissions. Learn how to 
+	beyond co-administrator permissions. Learn how to 
 	[associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription), 
 	or learn more about the 
 	[relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
