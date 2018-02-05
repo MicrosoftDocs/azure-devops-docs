@@ -14,6 +14,11 @@ In this exercise, you are going to see a typical end-to-end workflow for a Java 
 
 In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in VSTS. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
 
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
+
 ## Prerequisites
 
 This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private VSTS agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.

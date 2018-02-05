@@ -10,8 +10,12 @@ ms.date: 01/22/2018
 
 # Manage your Java project with VSTS Agile tools
 
-In this exercise, you are going to examine the various Agile planning features of VSTS to group and manage your Java project work and
-that of your team using backlogs. 
+In this exercise, you are going to examine the various Agile planning features of VSTS to group and manage your Java project work and that of your team using backlogs. 
+
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
 ## Prerequisites
 

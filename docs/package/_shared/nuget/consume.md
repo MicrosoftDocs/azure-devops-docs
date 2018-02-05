@@ -33,14 +33,12 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 ### macOS: Add the feed to your NuGet configuration
 
 1. Get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
-
 1. Open the Preferences dialog from the **Visual Studio** menu in the menu bar.
-
 1. Select **NuGet** -> **Sources**.
-
-1. Click **Add** then enter your feed's name, URL, any username, and your PAT as the password.
-
-1. Click **OK**, then **OK** again.
+1. Select **Add** then enter your feed's name, URL, any username, and your PAT as the password.
+1. Select **OK**.
+1. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), uncheck the **nuget.org** package source.
+1. Select **OK** again.
 
    ![Visual Studio for Mac preferences window with VSTS feed added](../_img/vs-mac-settings.png)
 

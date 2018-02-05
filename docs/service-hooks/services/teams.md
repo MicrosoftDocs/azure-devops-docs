@@ -24,6 +24,9 @@ Also bring your VSTS Kanban board directly into Microsoft Teams as a tab.
 
 While the functionality is the same across VSTS and Team Foundation Server, the configuration process is different. Check out the appropriate getting started section below for details. 
 
+>[!NOTE]  
+>You must be a member of Project Administrators or Project Collection Administrators to configure the connector.
+
 ## Configuring a new connector for VSTS
 
 1. To bring events from VSTS into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and then select Connectors.

@@ -12,6 +12,11 @@ ms.date: 01/22/2018
 
 In this exercise, you are going to create a Release Definition that will start the container images from the build lab. You will then create an Azure Container Service (ACS) and modify the Release to start containers in ACS.
 
+> [!NOTE]
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+>
+> **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
+
 ## Prerequisites
 
 This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private VSTS agent. You should also have set up Maven package management and have a MyShuttleCalc package in the feed and created a build that creates and publishes Docker images to the Azure Container Registry. This exercise uses a team project named **jdev**, though your team project name may differ.

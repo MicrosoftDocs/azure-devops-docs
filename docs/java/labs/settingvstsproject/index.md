@@ -17,7 +17,7 @@ This exercise will walk you through the steps to creating your Visual Studio Tea
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a VSTS account,[sign up for a free one](https://www.visualstudio.com/team-services/).
+1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a VSTS account, [sign up for a free one](https://www.visualstudio.com/team-services/).
 
 > [!div class="mx-imgBorder"]
 > ![Sign up for a VSTS account](../_img/settingvstsproject/newaccount.png)
@@ -45,7 +45,6 @@ In this task you will generate a personal access token for yourself. PATs essent
 
 1. Press Ctrl-N (or use File -> New File) to create a new file. Paste in your PAT. Save this file (**File->Save** or Ctrl+S) to `/home/vmadmin/pat.txt`.
 
-
 ## Create a new project with VSTS Demo Generator...
 
 Next, you need to create a team project. You can create the team project manually or by using [VSTS Demo Generator](https://vstsdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your VSTS account with sample content that include source code, work items, iterations, service endpoints, build and release definitions based on the template you choose during the configuration.
@@ -67,7 +66,7 @@ The steps below use VSTS Demo Generator to provision a demo Java project for you
 1. After the project is provisioned, click the URL to navigate to the project.
 
 
-## ...or Import a Github Repo into VSTS
+## ...or import a Github Repo into VSTS
 
 If you have not provisioned the team project using the VSTS demo generator in the previous exercise, you can follow the steps in this exercise to manually create a team project and import code from a GitHub repository.
 
@@ -87,7 +86,6 @@ If you have not provisioned the team project using the VSTS demo generator in th
 
 > [!div class="mx-imgBorder"]
 > ![Enter the URL](../_img/settingvstsproject/import-myshuttle2-url.png)
-
 
 1. After a few moments, the code will be imported.
 
@@ -110,5 +108,5 @@ In this task you will import the MyShuttleCalc code from GitHub into VSTS. If yo
 1. After a few moments, the code will be imported.
 
    > [!NOTE]
-   > It is not necessary to clone GitHub repos into VSTS. VSTS will work just fine with GitHub (or other Git hoster) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in VSTS.
+   > It is not necessary to clone GitHub repos into VSTS. VSTS will work just fine with GitHub (or other hosted Git) repos. However, some links from source code to other aspects of the DevOps pipeline (such as work items, builds, or releases) work best if the code is in VSTS.
 
