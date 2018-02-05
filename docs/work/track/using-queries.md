@@ -1,5 +1,6 @@
 ---
 title: Create managed queries with the Query Editor
+titleSuffix: VSTS & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,7 +8,7 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/29/2017  
+ms.date: 02/05/2018  
 ---
 
 # Create managed queries with the query editor
@@ -77,8 +78,8 @@ Grouped clauses operate as a single unit separate from the rest of the query, si
 
 In the next example, the first expression returns all work items that are priority 1 and all active bugs of any priority. The second expression returns all active priority 1 work items and all priority 1 bugs, whether they are active or not.
 
-| Grouped clauses                                   | Logical expression                                    |
-| ------------------------------------------------- | ----------------------------------------------------- |
+| Grouped clauses  | Logical expression         |
+| ----------------- | --------------------|
 | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
 | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
 
@@ -164,6 +165,20 @@ All fields from all WITs defined in all team projects in the collection always a
 
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
 
+## Task board versus query list items
+
+You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+
+## Export a query  
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
+
+See also:
+- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
+ 
+> [!NOTE]  
+> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+
 
 ## Related notes
 
@@ -181,24 +196,6 @@ See also:
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 
 
-### Task board versus query list items
-
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-### Export a query  
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
-
-
-### Programmatically query for work items 
-You can create dynamic queries using one of the following resources:  
-
-- **REST APIs:**&#160;&#160;[Work item queries and query folders](https://visualstudio.com/integrate/api/wit/queries.md) and [Work item query language](https://visualstudio.com/integrate/api/wit/wiql.md)
-- **SDK:**&#160;&#160;[Query for Bugs, Tasks, and Other Work Items](https://msdn.microsoft.com/library/bb130306.aspx).
-
-
-See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
-- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
- 
-> [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
