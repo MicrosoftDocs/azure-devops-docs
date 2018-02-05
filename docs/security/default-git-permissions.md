@@ -24,7 +24,7 @@ From the team project admin content for Version Control, you can [set permission
 
 ## Related notes 
 
-- [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
+- [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)
 - [Set permissions for a specific branch and set branch policies](../git/branch-permissions.md)
 - [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md) 
 - [Default permissions and access](permissions-access.md) 
