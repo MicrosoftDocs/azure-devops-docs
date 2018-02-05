@@ -20,6 +20,9 @@ and those currently working with your account.
 So before you start, find out 
 [what to do before and after renaming your account](https://support.microsoft.com/kb/2793597).
 
+[!NOTE]
+An account cannot be renamed within one hour of the most recent rename.
+
 To change your VSTS account URL, 
 you'll need at least Basic access and account owner permissions. 
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
@@ -40,5 +43,3 @@ you'll need at least Basic access and account owner permissions.
 Give your account a new name. Save your changes.
 
     ![Confirm renaming your account, provide new account name](_img/rename-vso-account/vsoconfirmaccountrename.png)
-
-	[Need help?](faq-create-account.md#get-support)
