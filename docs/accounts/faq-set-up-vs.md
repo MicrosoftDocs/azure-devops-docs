@@ -31,7 +31,7 @@ trial period for these benefits:
 
 *	Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires, 
 learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx).
-*	Visual Studio Express or Community: Continue to use this edition for free
+*	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
 you can also create a VSTS account. 

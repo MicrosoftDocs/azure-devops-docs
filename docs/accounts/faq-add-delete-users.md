@@ -189,7 +189,7 @@ but meanwhile, you or your team member can continue
 *	Your or your team member's Visual Studio subscription has expired. 
 Meanwhile, they'll [work as stakeholders](../security/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
-After they sign in, VSTS will restore their access automatically.
+After they sign in, VSTS restores their access automatically.
 
 *	The Azure subscription used for billing is no longer active. 
 This affects all purchases made with this subscription, 
@@ -242,7 +242,7 @@ through Azure Active Directory (Azure AD). All users must be directory members t
 
 If you're a directory administrator, you can 
 [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). 
-If you're not, work with your directory administrator to add users. 
+If you're not an administrator, work with your directory administrator to add users. 
 Learn more about [controlling access with a directory](access-with-azure-ad.md).
 
 <a name="ConnectedDirectory"></a>

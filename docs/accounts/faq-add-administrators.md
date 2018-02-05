@@ -15,7 +15,7 @@ ms.date: 10/6/2017
 
 #### Q: When do I need to add someone to the team project collection administrator role in TFS?
 
-**A:** It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the Team Foundation Administrators group create, but members of the **Project Collection Administrators** group do not create the collections themselves. Project collection administrators also perform any operations that are required to maintain the collection, such as creating team projects, adding users to groups, or modifying the settings for the collection.
+**A:** It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the Team Foundation Administrators group create, but members of the **Project Collection Administrators** group do not create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection, such as creating team projects, adding users to groups, and modifying the settings for the collection.
 
 #### Q: What are the optimal permissions needed to administer a team project collection across all its components and dependencies?
 
@@ -25,13 +25,13 @@ ms.date: 10/6/2017
 
 -   SharePoint Products: If the collection is configured with a site collection resource, **Site Collection Administrators**.
 
--   Reporting Services: If the collection is configured with reporting resources, **Team Foundation Content Manager**
+-   Reporting Services: If the collection is configured with reporting resources, **Team Foundation Content Manager**.
 
 #### Q: I'm an admin, but I don't seem to have all the permissions I need to add a team project collection administrator. What might I need?
 
 **A: These are the required permissions:**
 
--   In TFS, you must belong to the **Project Collection Administrators **group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
+-   In TFS, you must belong to the **Project Collection Administrators** group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
 
 -   To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** group or the **Farm Administrators** group for SharePoint Products.
 
@@ -46,7 +46,7 @@ ms.date: 10/6/2017
 
 ## Team project
 
-0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administraton page.
+0. From the team page, choose the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
 0. Add the user to the **Project Administrators** group.
 

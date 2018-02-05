@@ -1,14 +1,14 @@
 ---
-title: Query by numeric field | VSTS & TFS
+title: Query by numeric field
+titleSuffix: VSTS & TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/02/2017
+ms.date: 02/05/2018  
 ---
-
 
 # Query by numeric fields    
 
@@ -338,11 +338,7 @@ However, each team can determine if the Bug work item type appears in either the
 Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
  
 
-<!---
-For more information about how to track work, see [Sprint planning](../scrum/sprint-planning.md).
 
- By tracking work, you gain more insight into which user stories, requirements, or backlog items are almost finished and what the team burn rate is. Several reports and dashboards provide charts that display the data that these fields contain.
-
-You specify the level of effort for the tasks that you are assigned. 
-
---> 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
