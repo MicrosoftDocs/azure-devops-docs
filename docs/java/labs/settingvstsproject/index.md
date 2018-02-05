@@ -17,20 +17,6 @@ This exercise will walk you through the steps to creating your Visual Studio Tea
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-Before you do step 13, log in to your VSTS account and start the New Team Project wizard. Follow the steps (the
-instructions assume you’re creating an account *and* a Team Project at the same time but that’s not mandatory—you just need an account in which
-you have Project Collection Administrator permissions).
-
-**You must a valid Microsoft Account or previously linked Organizational Account to continue with this tutorial.**
-
-## Create your Visual Studio Team Services account and Team project
-
-
-1. Login to the virtual machine.
-
-1. Launch your web browser.
-
-<<<<<<< HEAD
 1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a VSTS account,[sign up for a free one](https://www.visualstudio.com/team-services/).
 
 > [!div class="mx-imgBorder"]
