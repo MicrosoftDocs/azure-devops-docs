@@ -25,9 +25,9 @@ You'll need:
 
 *	[Microsoft accounts](https://signup.live.com/) 
 for all users in your VSTS account, 
-including yourself as VSTS account owner
+including yourself as VSTS account owner.
 
-*	[VSTS account ownership](faq-change-app-access.md#find-owner) for your Microsoft account 
+*	[VSTS account ownership](faq-change-app-access.md#find-owner) for your Microsoft account. 
 
 *	Global administrator permissions in your Azure AD 
 for your Microsoft account as the VSTS account owner. You'll need both 
@@ -35,11 +35,11 @@ because Azure AD users can't disconnect VSTS accounts from directories.
 You can add Microsoft accounts to a directory as external users. 
 Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
 
-**What happens to current users?**  Users will continue working seamlessly if they have Microsoft accounts 
+**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts 
 that share the same sign-in addresses that they use now.
 Otherwise, they won't have access until you add them to 
 VSTS as new users. They can migrate everything except work history, 
-relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
+can relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
 
 0.	[Sign in to the Azure portal](https://portal.azure.com/) 
 with your Microsoft account as the VSTS account owner.

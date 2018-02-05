@@ -13,8 +13,7 @@ ms.date: 10/6/2017
 
 **VSTS**
 
-If you don't need your Visual Studio 
-VSTS account, you can delete it. 
+If you don't need your  VSTS account, you can delete it. 
 If you change your mind within 90 days, 
 you can [recover your account](recover-your-vsts-account.md). 
 After 90 days, your account 
@@ -113,7 +112,7 @@ permissions to restore your VSTS account.
 
 	![Next to your deleted account, click Restore](_img/delete-account/restore-account.png)
 
-	*	If your account URL is still available, you can restore your account.
+	*	If your account URL is still available, you can restore it.
 
 		![Confirm restoring your account](_img/delete-account/restore-confirm.png)
 
