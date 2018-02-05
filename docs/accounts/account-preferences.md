@@ -28,7 +28,7 @@ To change your your account information, open your account menu.
 
 ![VSTS, My Profile link on Account menu](_img/account-prefs/open-profile-team-services.png)  
 
-From the Profile/Information page, click Edit to change the picture, display name, or preferred email. Open the Preferences page to change a locale preference.  
+From the Profile/Information page, choose **Edit profile** to change the picture, display name, or preferred email. Open the Preferences page to change a locale preference.  
 
 <!---
 ![VSTS, Profile page](_img/account-prefs/account-pref-ts-profile-page.png)
@@ -40,7 +40,7 @@ From the Profile/Information page, click Edit to change the picture, display nam
 
 ![TFS, My Profile link on Account menu](_img/account-prefs/open-profile.png)  
 
-Click edit to change a setting. Choose the Locale tab to change a locale preference.  
+Choose **edit** to change a setting. Choose the Locale tab to change a locale preference.  
 
 ![TFS, Set preferences](_img/account-prefs/account-prefs-tfs-user-profile.png)
 

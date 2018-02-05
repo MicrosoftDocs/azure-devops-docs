@@ -17,11 +17,11 @@ ms.date: 10/17/2017
 ## Resolve errors
 
 ###To resolve permission related errors
-If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](https://msdn.microsoft.com/library/dd547204.aspx), [Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md) become a member of the, and [Full Control permissions](https://msdn.microsoft.com/library/dd547204.aspx) on the server that hosts SharePoint Products.  
+If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](https://msdn.microsoft.com/library/dd547204.aspx), [Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md), and gain [Full Control permissions](https://msdn.microsoft.com/library/dd547204.aspx) on the server that hosts SharePoint Products.  
 
 ###To resolve Error TF30169
 
-**Error TF30169: The New Team Project Wizard was unable to download the process template {0}.**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint Products.
+**Error TF30169: The New Team Project Wizard was unable to download the process template {0}**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint products.
 
 Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](../tfs-server/requirements.md).
 
@@ -64,7 +64,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ###Q: How do I delete a team project?
 
-**A:** You can delete a team project you no longer use, which helps simplify the navigation to team projects that are in use. See [Delete a team project](delete-team-project.md).
+**A:** You can delete a team project that you no longer use, which helps simplify the navigation to team projects that are in use. See [Delete a team project](delete-team-project.md).
 
 ###Q: How do I add reporting or SharePoint portal resources?
 
@@ -78,5 +78,5 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ###Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in the [Team Foundation Server - Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+**A:** You can post a question or search for answers in the [Team Foundation Server � Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 

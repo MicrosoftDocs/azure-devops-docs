@@ -15,7 +15,7 @@ ms.date: 10/6/2017
 
 **VSTS**
 
-With a Visual Studio Team Services (VSTS) account, you gain access to platform in which you can:
+With a Visual Studio Team Services (VSTS) account, you gain access to the platform in which you can:
 * Collaborate with others to develop applications using our cloud service
 * Plan and track your work as well as code defects and issues 
 * Set up continuous integration and deployment 
@@ -26,7 +26,7 @@ With a Visual Studio Team Services (VSTS) account, you gain access to platform i
 
 To get started, you'll want to [create your VSTS account](create-account-msa-or-work-student.md) and then invite others so they can access your account.  
 
-You'll choose Git or Team Foundation as your version control, 
+Choose Git or Team Foundation as your version control, 
 so that VSTS can create your team project for code and other assets, 
 like builds, tests, and work items. If you're starting with Visual Studio 
 as your development environment, you can create your VSTS account when you 
@@ -69,11 +69,11 @@ During the trial, all users with Basic access can
 [try Test Manager for free](../billing/try-additional-features-vs.md).
 
 ## Set up billing
-If you need more than free users and amounts 
+If you need more than the free users and amounts 
 of services included with your account, 
 [set up billing for your account](../billing/set-up-billing-for-your-account-vs.md).
 You can then pay for more users with Basic access, 
-pay for more services, and purchase extensions for your account.
+buy more services, and purchase extensions for your account.
 
 ## Access with Azure AD
 VSTS works with Azure Active Directory (Azure AD), 
