@@ -76,7 +76,7 @@ for deployment using ACS.
    
    ![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../tasks/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
    
-   - **Path to Publish**: `k8config`
+   - **Path to Publish**: Path to the artifacts you want to publish. For example, `k8config`
    
    - **Artifact name:** `yaml`
    
