@@ -1,12 +1,13 @@
 ---
-title: Resolve errors received when configuring features | VSTS & TFS
+title: Resolve errors received when configuring features for TFS
+titleSuffix: TFS 
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017
+ms.date: 12/19/2017
 ---
 
 
@@ -14,21 +15,24 @@ ms.date: 04/04/2017
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
+
+You may be able to resolve errors and warnings that the [Configure Features](../configure-features-after-upgrade.md) wizard displays. These problems occur because definitions in the team project conflict with definitions in the process templates uploaded to your team project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your team project and then rerun the wizard.    
+
 >[!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). 
 
-You may be able to resolve errors and warnings that the [Configure Features](http://msdn.microsoft.com/en-us/86ecc9d6-5175-4fa4-9da7-00b83ef14e17) wizard displays. These problems occur because definitions in the team project conflict with definitions in the process templates uploaded to your team project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your team project and then rerun the wizard.    
   
-> [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
-  
- **Required permissions**  
+##Required permissions 
   
 -   To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the team project collection must be set to **Allow**.  
   
 -   To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the team project.  
   
- For more information, see [Permission reference](../../../security/permissions.md).  
+ For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+
+> [!NOTE]  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
+ 
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
  You can resolve an error by modifying the process template used to configure the new features, or by modifying your team project. After you've corrected the error, rerun the wizard.  
@@ -99,15 +103,9 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
 > [!NOTE]  
 > The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your team project. See [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
   
-1.  To run the **witadmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-    ```  
-    cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
-  
-     On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
-  
-2.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+0.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
     ```  
     witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
@@ -122,11 +120,12 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
   
     ```  
   
-3.  Open the file using a text editor, such as Notepad.  
+0.  Open the file using a text editor, such as Notepad.  
   
-4.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
+0.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
   
-    ```  
+	> [!div class="tabbedCodeSnippets"]
+	```XML  
     <TabGroup>  
     <Tab Label="Storyboards">   
        <Control Name="StoryboardsControl" Type="LinksControl">   
@@ -145,15 +144,15 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
     </TabGroup>  
     ```  
   
-5.  Save and close the file.  
+0.  Save and close the file.  
   
-6.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
+0.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
   
     ```  
     witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
     ```  
   
-7.  Verify that the tab shows up in the backlog item.  
+0.  Verify that the tab shows up in the backlog item.  
   
 ## Related notes
 

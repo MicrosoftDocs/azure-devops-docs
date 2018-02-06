@@ -1,12 +1,13 @@
 ---
-title: Add portfolio backlogs 
+title: Add portfolio backlogs
+titleSuffix: VSTS & TFS 
 description: Add up to two additional work item types and portfolio backlogs to Visual Studio Team Services (VSTS) or Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/16/2017
+ms.date: 12/15/2017  
 ---
 
 # Add a portfolio backlog level
@@ -217,13 +218,9 @@ If you're updating a team project that connects to an on-premises TFS, you'll us
 
 [!INCLUDE [temp](../_shared/process-editor.md)]   
 
-1. Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-	```cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE```  
-
-	On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%programfiles%```. The version of Visual Studio or Team Explorer must be at the same version as the on-premises TFS. 
-
-2.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
+0.	Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
@@ -250,7 +247,7 @@ Use these commands to export and import categories and process configuration:
 	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 
 
-##Related notes  
+## Related notes  
 We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
 ![Conceptual image of 5 levels of portfolio backlog](_img/five-levels-portfolio-backlogs.png)

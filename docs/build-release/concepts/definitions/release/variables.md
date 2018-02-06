@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Variables in Release Management
@@ -27,6 +27,8 @@ to another. These are **custom variables**.
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
+
+>You can also use a default variable to [run a release in debug mode](#debug-mode).
 
 ## Custom variables
 
@@ -90,7 +92,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
 > | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
 > | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
-> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to run the deployment in debug mode to assist in fault-finding. | true | &nbsp; |
+> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to [run the release in debug mode](#debug-mode) to assist in fault-finding. | true | &nbsp; |
 
 <!-- Other hidden system variables
 [SYSTEM] -> [release]
@@ -163,7 +165,8 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | Agent.HomeDirectory | The folder where the agent is installed. This folder contains the code and resources for the agent. | C:\agent | |
 > | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
 > | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
-> | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | &nbsp; |
+> | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | |
+> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group phases. | 1 | TFS 2018 U1 |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]
@@ -213,7 +216,6 @@ You designate one of the artifacts as a primary artifact in a release definition
 > | Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
 > | Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
 
-
 ### Using default variables
 
 You can use the default variables in two ways - as parameters to tasks in a release definition or in your scripts.
@@ -231,5 +233,29 @@ you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 ![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
+
+<a name="debug-mode"></a>
+
+### Run a release in debug mode
+
+Show additional information as a release executes and in the log files
+by running the entire release, or just the tasks in an individual
+release environment, in debug mode. This can help you resolve issues and failures.
+
+* To initiate debug mode for an entire release, add a variable
+  named `System.Debug` with the value `true` to the **Variables**
+  tab of a release definition.
+
+* To initiate debug mode for a single environment, open the
+  **Configure environment** dialog from the shortcut menu
+  of the environment and add a variable named `System.Debug`
+  with the value `true` to the **Variables** tab.
+
+* Alternatively, create a [variable group](../../library/variable-groups.md)
+  containing a variable named `System.Debug` with the value `true`
+  and link this variable group to a release definition.
+
+>If you get an error related to an Azure RM service endpoint,
+see [How to: Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

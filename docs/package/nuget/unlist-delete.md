@@ -32,7 +32,7 @@ To unlist or delete a version of a package, choose the package from the **Packag
 ## Unlisting a package using NuGet.exe
 First, get the tools (make sure you're using NuGet 3.5 or later) and your feed URL:
 
-[!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
+[!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
 
 Then, run
 

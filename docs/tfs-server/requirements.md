@@ -1,4 +1,4 @@
----
+﻿---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: vs-devops-alm
@@ -39,7 +39,7 @@ The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation
 
 TFS Version | Supported client operating systems
 ------------|--------------------------------
-TFS 2018    | Windows 10 (Professional, Enterprise)
+TFS 2018    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
@@ -324,6 +324,7 @@ Team Foundation Server doesn't require Project Server, but if you use Project Se
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
+TFS 2018    | Not supported. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
 TFS 2017    | Not supported. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -513,15 +514,15 @@ Next, we describe the level of support that we guarantee with each client versio
 Keep in mind that additional functionality other than what is listed below might continue to work using older clients. In fact,
 it often does, but is outside the scope of what we test and support officially.
 
-Visual Studio/ Team Explorer version | TFS 2017 and VSTS support notes                                                                       | TFS 2015 support notes                                                                              | TFS 2013 support notes                                                                              | TFS 2012 support notes                                                                     | TFS 2010 support notes
--------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------
-Visual Studio 15                     | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                           | Supported (RTM or latest update)
-Visual Studio 2015                   | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                           | Supported (RTM or latest update)
-Visual Studio/Team Explorer 2013     | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                                    | Supported (RTM or latest update)                                                           | Supported (RTM or latest update)
-Visual Studio/Team Explorer 2012     | Requires latest Visual Studio 2012 update. Supports Git with Visual Studio Tools for Git extension. | Requires latest Visual Studio 2012 update. Supports Git with Visual Studio Tools for Git extension. | Requires latest Visual Studio 2012 update. Supports Git with Visual Studio Tools for Git extension. | Supported (RTM or latest update). Supports Git with Visual Studio Tools for Git extension. | Supported (RTM or latest update). Supports Git with Visual Studio Tools for Git extension.
-Visual Studio/Team Explorer 2010     | Requires SP1 and Compat GDR.                                                                        | Requires SP1 and Compat GDR.                                                                        | Requires SP1 and Compat GDR.                                                                        | Requires SP1 and Compat GDR.                                                               | Requires SP1 and Compat GDR.
-Visual Studio/Team Explorer 2008     | Version Control available using MSSCCI provider                                                     | Version Control available using MSSCCI provider                                                     | Version Control available using MSSCCI provider                                                     | Requires SP1 and Compat GDR.                                                               | Version control officially supported with MSSCCI provider. Version control unofficially supported with SP1 and Compat GDR.
-Visual Studio 2005                   | Version Control available using MSSCCI provider                                                     | Version Control available using MSSCCI provider                                                     | Version Control available using MSSCCI provider                                                     | Version Control available using MSSCCI provider                                            | Version Control available using MSSCCI provider
+Visual Studio/ Team Explorer version | TFS 2018, TFS 2017, and VSTS support notes                                | TFS 2015 support notes                                                    | TFS 2013 support notes                                                          | TFS 2012 support notes                                                 | TFS 2010 support notes
+-------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------
+Visual Studio 2017                   | Full Support                                                              | High level of support                                                     | High level of support                                                           | High level of support                                                  | High level of support
+Visual Studio 2015                   | High level of support                                                     | Full support                                                              | High level of support                                                           | High level of support                                                  | High level of support
+Visual Studio/Team Explorer 2013     | General support                                                           | High level of support                                                     | Full support                                                                    | High level of support                                                  | High level of support
+Visual Studio/Team Explorer 2012     | General support. Supports Git with Visual Studio Tools for Git extension. | General support. Supports Git with Visual Studio Tools for Git extension. | High level of support. Supports Git with Visual Studio Tools for Git extension. | Full support. Supports Git with Visual Studio Tools for Git extension. | High level of support
+Visual Studio/Team Explorer 2010     | General support (SP1 and Compat GDR)                                      | General support (SP1 and Compat GDR)                                      | General support (SP1 and Compat GDR)                                            | High level of support (SP1 and Compat GDR)                             | Full support (SP1 and Compat GDR)
+Visual Studio/Team Explorer 2008     | Version Control available using MSSCCI provider                           | Version Control available using MSSCCI provider                           | Version Control available using MSSCCI provider                                 | Version Control available using MSSCCI provider                        | Version Control available using MSSCCI provider
+Visual Studio 2005                   | Version Control available using MSSCCI provider                           | Version Control available using MSSCCI provider                           | Version Control available using MSSCCI provider                                 | Version Control available using MSSCCI provider                        | Version Control available using MSSCCI provider
 
 #### Full-featured support
 
@@ -545,6 +546,9 @@ such as queuing builds, running queries, viewing documents, and getting, editing
 Program Managers should also be able to continue using most features relevant to them,
 but might need to rely on web access for some scenarios, such as managing areas and iterations, and writing new queries.
 
+If you are using newer versions of Visual Studio against older versions of Team Foundation Server,
+you can similarly expect most features to be supported. 
+
 Older process templates that were in use with the previous version of Team Foundation Server should continue to be compatible with the new server.
 
 #### General support
@@ -567,19 +571,18 @@ The goal is simply to allow developers to continue working with legacy applicati
 New versions of Team Explorer Everywhere are released through [GitHub](https://github.com/Microsoft/team-explorer-everywhere)
 and the [Eclipse Marketplace](https://marketplace.eclipse.org/content/team-explorer-everywhere).
 To maximize compatibility with the latest version of Team Foundation Server, you should use the latest version of Team Explorer Everywhere.
-If you need support for an older version of Eclipse, Java, or an Operating System,
+If you need support for an older version of Eclipse, Java, or an operating system,
 you may choose to use an older version of Team Explorer Everywhere that encompasses the range you need.
 Multiple versions of Team Explorer Everywhere can also be installed side-by-side if you are running multiple versions of Eclipse.
 
-The following table includes all versions of Team Explorer Everywhere that are compatible with TFS 2013, and lists other TFS and Eclipse compatibility.
-
-Team Explorer Everywhere          | Eclipse version | TFS 2017                    | TFS 2015                    | TFS 2013                    | TFS 2012                    | TFS 2010                    | TFS 2008                    | TFS 2005
-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------
-Team Explorer Everywhere 2015     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2013     | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2012     | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010 SP1 | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere           | Eclipse version | VSTS, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
+-----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
+Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2013      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
+Team Explorer Everywhere 2012      | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010 SP1  | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
 
 <a name="supported-browsers"></a>
 ### Browsers
@@ -587,12 +590,11 @@ Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png
 You can use these browsers with VSTS 
 and to access TFS with the web client.
 
-Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
----------------|-------------|-------------------|----------------|-------------|-------------
-VSTS  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2017       | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
-TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
+Version                   | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
+--------------------------|-------------|-------------------|----------------|-------------|-------------
+VSTS, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+TFS 2015                  | most recent | 9 and later       | 5 and later    | most recent | most recent
+TFS 2013                  |             | 9 and later       | 5 and later    | most recent | most recent
 
 Edge, Firefox, and Chrome automatically update themselves, 
 so VSTS and TFS support the most recent version.
@@ -601,9 +603,9 @@ so VSTS and TFS support the most recent version.
 
 Office integration supports the following clients: [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
 
-
 TFS version | Supported Office versions
 ------------|--------------------------
+TFS 2018    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2017    | Office 2016<br/>Office 2013<br/>Office 2010
 TFS 2015    | Office 2013<br/>Office 2010<br/>Office 2007
 TFS 2013    | Office 2013<br/>Office 2010<br/>Office 2007

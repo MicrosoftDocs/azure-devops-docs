@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
@@ -19,6 +19,9 @@ You can change your VSTS account name (URL) at any time.
 and those currently working with your account. 
 So before you start, find out 
 [what to do before and after renaming your account](https://support.microsoft.com/kb/2793597).
+
+[!NOTE]
+An account cannot be renamed within one hour of the most recent rename.
 
 To change your VSTS account URL, 
 you'll need at least Basic access and account owner permissions. 
@@ -40,5 +43,3 @@ you'll need at least Basic access and account owner permissions.
 Give your account a new name. Save your changes.
 
     ![Confirm renaming your account, provide new account name](_img/rename-vso-account/vsoconfirmaccountrename.png)
-
-	[Need help?](faq-create-account.md#get-support)

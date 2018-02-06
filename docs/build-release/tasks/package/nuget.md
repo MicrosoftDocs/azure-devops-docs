@@ -11,7 +11,9 @@ ms.date: 07/05/2017
 
 # Package: NuGet
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+**Version 2.\* | [Other versions](#versions)**
+
+**VSTS | TFS 2018**
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
@@ -19,6 +21,9 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 > [!TIP]
 > Looking for help to get started? See the how-to's for [restoring](../../../package/nuget/consume.md) and [publishing](../../../package/nuget/publish.md) packages.
+
+> [!TIP]
+> This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
 
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
@@ -259,6 +264,12 @@ None
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+### Publishing symbols
+When you push packages to a Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md). 
+
+### Publishing packages to TFS with IIS Basic authentication enabled
+This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/vsts/integrate/get-started/auth/tfs-basic-auth) for more details.
+
 ## Custom NuGet command
 
 ### Arguments
@@ -391,11 +402,35 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     </tr>
 </table>
 
+<a name="versions" />
+
+## Task versions
+
+### Task: NuGet (formerly NuGet Restore at 1.\*, NuGet Installer at 0.\*)
+| Task version                                | VSTS                     | TFS                                           |
+|---------------------------------------------|--------------------------|-----------------------------------------------|
+| 2.*                                         | Available                | Appeared in 2018                              |
+| [1.*](#restore-nuget-packages)              | Deprecated but available | Appeared in 2017 Update 2, deprecated in 2018 |
+| [0.*](./prev-versions/nuget-installer-0.md) | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
+
+### Task: NuGet Packager
+| Task version | VSTS                         | TFS                                           |
+|--------------|------------------------------|-----------------------------------------------|
+| [0.*](./prev-versions/nuget-packager-0.md)  | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+
+### Task: NuGet Publisher
+| Task version | VSTS                         | TFS                                           |
+|--------------|------------------------------|-----------------------------------------------|
+| [0.*](./prev-versions/nuget-publisher-0.md) | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
+
+### Task: NuGet Command
+| Task version | VSTS                     | TFS                                           |
+|--------------|--------------------------|-----------------------------------------------|
+| [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
-
-### Why should I check in a NuGet.Config?
 
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 

@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # FAQs for manual testing
@@ -551,6 +551,13 @@ and provide feedback flow, which are supported only for TFS 2017.
 **A:** Yes, the extension automatically shows bugs that may be related to the one you are creating
 and allows you to add your screenshots, notes, and videos to this existing bug. 
 For more details, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
+
+### Q: On Google Chrome, the mouse offset towards the left makes it difficult to use. Do you have a workaround?
+
+**A:** The workaround is:
+1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf** 
+2. Search for 'Use Blink's zoom for device scale factor'
+3. Change it to **Disabled**
 
 *****
 

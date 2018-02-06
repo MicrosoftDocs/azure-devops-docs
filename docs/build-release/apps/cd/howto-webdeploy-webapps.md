@@ -6,13 +6,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # How To: Extend your deployments to Azure App Services
 
 You can quickly and easily deploy your ASP.NET or Node app to an Azure App Services website using
-Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) 2017 Update 2,
+Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) 2017.2,
 as demonstrated in [this example](deploy-webdeploy-webapps.md). In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:
 

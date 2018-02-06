@@ -1,13 +1,15 @@
 ---
-title: VSTS and TFS Documentation | VSTS & TFS 
+title: VSTS and TFS Documentation 
+titleSuffix: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-layout: HubPage 
+layout: HubPage
+hide_bc: true  
 ms.prod: vs-devops-alm 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
-ms.manager: douge 
+ms.manager: douge
 ms.author: kaelli 
-ms.date: 07/26/2017
+ms.date: 02/02/2018
 featureFlags:
 - clicktale 
 ---
@@ -52,7 +54,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/team-services/updates/">
+                <a href="https://aka.ms/vsts/releasenotes/latest">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -94,6 +96,7 @@ featureFlags:
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -173,6 +176,20 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Command-line tool</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -205,9 +222,10 @@ featureFlags:
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a></li>
+                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -523,8 +541,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Unit Testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage.</p>
+                                                    <h3>Unit and Functional Testing</h3>
+                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -564,6 +582,26 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Load Testing</h3>
                                                     <p>Performance test your code with hundreds of thousands of users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1267,6 +1305,9 @@ featureFlags:
                                 <ul class="noBullet">
                                     <li>
                                         <a class="barLink" href="/vsts/extend">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="/vsts/report/extend-analytics/index">Get Started with Analytics</a>
                                     </li>
                                 </ul>
                             </li>

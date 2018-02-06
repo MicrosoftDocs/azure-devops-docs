@@ -26,6 +26,10 @@
     href: get-started-jmeter-test.md
   - name: Record and replay tests
     href: record-and-replay-cloud-load-tests.md
+  - name: Test private and intranet apps
+    href: clt-behind-firewall.md
+  - name: Test using your own servers
+    href: clt-with-private-machines.md
 - name: Reference
   items:
   - name: FAQs

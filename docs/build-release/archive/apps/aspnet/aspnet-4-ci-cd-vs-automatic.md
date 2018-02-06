@@ -11,7 +11,7 @@ ms.date: 02/10/2017
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
 
-[!INCLUDE [include](../../../_shared/version.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) process to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/). 
 
@@ -30,7 +30,7 @@ To install the extension within Visual Studio, select **Tools > Extensions and U
 
 ## Create the build and release definitions automatically
 
-To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the project in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
+To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
 

@@ -12,8 +12,6 @@ author: yukom
 
 #Git & TFVC updates plus improved test traceability … – June 20
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Git & TFVC – Browsing branches
 
 The branches page scales to massive repos with thousands of branches. If there are more than 100 branches at the root or in a folder, it only shows the first 100, which is what the vast majority of people use. If you don't want to browse thousands of branches, the search box—with substring matching—will quickly find the branch you want.

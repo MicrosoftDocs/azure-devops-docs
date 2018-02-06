@@ -5,13 +5,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.manager: douge
-ms.author: billchi
+ms.author: esther
 ms.date: 10/6/2017
 ---
 
 #	Buy Xamarin University
 
-[Xamarin University](https://www.xamarin.com/university) offers live, online classes, office hours, self-guided learning,
+[Xamarin University](https://www.xamarin.com/university) offers live, online, and office hours classes, self-guided learning,
 and guest lectures.
 
 In this topic:

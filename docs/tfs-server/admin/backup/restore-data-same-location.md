@@ -15,52 +15,15 @@ ms.technology: vs-devops-admin
 
 You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
 
-> **TFS 2013 Tip:**  
-> If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore databases to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
+> [!NOTE]
+> Check out the [Back up and Restore concepts page](./back-up-restore-tfs.md#same-server) for an introduction to restoring data on the same server for TFS. 
+>
+> SharePoint integration with TFS is deprecated after TFS 2017.
 
-If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
 
-> **Note:**  
-> If you use SharePoint Products in your deployment, when you restore data, you do not have to restore the websites that are automatically generated based on the data for each team project. The data for the team project portals is contained in the databases that you restore.
-
-The steps to restore data to the same server or servers vary based on how Team Foundation Server is installed and configured. For simplicity, the procedures in this topic are structured for a moderately complex deployment of Team Foundation Server, as the following illustration shows:
-
-![Example moderate topology with databases](../_img/ic372331.png)
-
-If your topology does not exactly match this example, you might have to adjust the steps in this procedure to follow it successfully. For example, if you have a deployment where all components are installed on a single physical server, you would perform all procedures on that server. If databases for team project collections are deployed on more than one server, you must perform the steps to restore each collection database on the appropriate server. For more information about which components might be deployed on each server, see the following topics:
-
--    [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md) 
-
--    [Team Foundation Server architecture](../../architecture/architecture.md) 
-
--    [Examples of Simple Topology](../../architecture/examples-simple-topo.md) 
-
--    [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md) 
-
--    [Examples of Complex Topology](../../architecture/examples-complex-topo.md) 
-
-**In this topic**
-
-1.  [Required Permissions](#req-permissions)
-
-2.  [Stop services that TFS uses](#stop-svcs-tfs-uses)
-
-3.  [Rename Databases You Want To Restore](#rename-dbs-to-restore)
-
-4.  [Restore Team Foundation Databases](#restore-tfs-dbs)
-
-5.  [Update All Service Accounts](#update-all-svc-accts)
-
-6.  [Restore/Rebuild the Warehouse](#rebuild-the-warehouse)
-
-7.  [Clear the Data Cache On Servers](#clear-data-cache-on-servers)
-
-8.  [Restart Services that Team Foundation Server Uses](#restart-svcs-tfs)
-
-9.  [Refresh the Data Cache on Client Computers](#refresh-caches-clients)
 
 <a name="req-permissions"></a>
-## Required Permissions
+## Prerequisites
 
 To perform this procedure, you must be a member of the following groups or have the following permissions:
 
@@ -79,7 +42,7 @@ To perform this procedure, you must be a member of the following groups or have 
 For more information, see the following page on the Microsoft website: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 
 <a name="stop-svcs-tfs-uses"></a>
-## Stop services that TFS uses
+## Step 1: Stop services that TFS uses
 
 Stopping the services helps protect against data loss or corruption during the restoration process, particularly if you rename databases.
 
@@ -92,7 +55,7 @@ Stopping the services helps protect against data loss or corruption during the r
     For more information, see [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
 
 <a name="rename-dbs-to-restore"></a>
-## Rename Databases that You Want to Restore
+## Step 2: Rename Databases that You Want to Restore
 
 Before you can use the Restore wizard to restore a database that Team Foundation Server, you must first take it offline, and then rename it.
 
@@ -119,7 +82,7 @@ Before you can use the Restore wizard to restore a database that Team Foundation
 5.  Rename and then stop each database you want to restore, following [the guidance for your version of SQL Server](https://technet.microsoft.com/library/ms345378.aspx). Give the database a name that indicates it is the old version of the database you will replace with the restored version. For example, you might rename TFS\_DefaultCollection to TFS\_DefaultCollection\_Old.
 
 <a name="restore-tfs-dbs"></a>
-## Restore Team Foundation Databases
+## Step 3: Restore Team Foundation Databases
 
 You can restore data for Team Foundation Server by using the Restore wizard in the administration console in TFS. The Restore wizard also restores the encryption key used for reporting.
 
@@ -138,7 +101,7 @@ You can restore data for Team Foundation Server by using the Restore wizard in t
     ![The databases are restored to the new server](../_img/ic664998.png)
 
 <a name="update-all-svc-accts"></a>
-## Update All Service Accounts
+## Step 4: Update All Service Accounts
 
 You must update the service account for Team Foundation Server (TFSService) and the data sources account (TFSReports). Even if these accounts have not changed, you must update the information to ensure that the identity and the format of the accounts are appropriate.
 
@@ -161,7 +124,7 @@ You must update the service account for Team Foundation Server (TFSService) and 
 4.  Use the **Accounts** command to add the data sources account for the report server and the proxy account for Team Foundation Server Proxy, if your deployment uses these resources.
 
 <a name="rebuild-the-warehouse"></a>
-## Rebuild the Warehouse
+## Step 5: Rebuild the Warehouse
 
 You can rebuild the data warehouse instead of restoring the **TFS\_Warehouse** and **TFS\_Analysis** databases. You will require a significant amount of time to rebuild the warehouse if your deployment contains a lot of data. However, that strategy helps ensure that all data is properly synchronized. When you rebuild the warehouse, Team Foundation Server creates an instance of it, which you must then process to populate it by using data from the operational stores.
 
@@ -207,7 +170,7 @@ You can rebuild the data warehouse instead of restoring the **TFS\_Warehouse** a
 8.  On the application-tier server for Team Foundation, open **Computer Management**, and start the Visual Studio Team Foundation Background Job Service.
 
 <a name="clear-data-cache-on-servers"></a>
-## Clear the Data Cache on Servers
+## Step 6: Clear the Data Cache on Servers
 
 Each application-tier server in your deployment of Team Foundation uses a file cache so that users can quickly download files from the data-tier server. When you restore a deployment, you should clear this cache on each application-tier server. Otherwise, mismatched file IDs might cause problems when users download files from version control. If your deployment uses Team Foundation Server Proxy, you must also clear the data cache on each server that is configured as a proxy.
 
@@ -223,7 +186,7 @@ Each application-tier server in your deployment of Team Foundation uses a file c
 3.  Repeat these steps for each application-tier server and each server that is running Team Foundation Server Proxy in your deployment.
 
 <a name="restart-svcs-tfs"></a>
-## Restart Services that Team Foundation Server Uses
+## Step 7: Restart Services that Team Foundation Server Uses
 
 After you restore the data, you must restart the services to return the server to an operational state.
 
@@ -238,7 +201,7 @@ After you restore the data, you must restart the services to return the server t
     For more information, see [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
 
 <a name="refresh-caches-clients"></a>
-## Refresh the Caches on Client Computers
+## Step 8: Refresh the Caches on Client Computers
 
 ### To refresh the cache for tracking work items on client computers
 

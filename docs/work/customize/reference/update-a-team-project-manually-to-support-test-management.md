@@ -1,18 +1,19 @@
 ---
-title: Update a team project manually to support test management | VSTS & TFS
+title: Update a team project manually to support test management 
+titleSuffix: TFS
 description: Update a team project manually to support test management.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 12/15/2017
 ---
 
 
 # Update a team project manually to support test management
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
 
 >[!IMPORTANT]  
 >This topic applies to a team project that is defined on an on-premises Team Foundation Server (TFS)and was created using a process template that doesn't have test plans and test suites work item types.    
@@ -39,19 +40,13 @@ The following steps provide support for the test experience available with TFS 2
   
 1.  **Import the test plan and test suite WIT definitions**.  
   
-    1.  If you don't have administrative permissions, [get them](../../../security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
+    0.  If you don't have administrative permissions, [get them](../../../security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
   
-    2.  [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
+    0.  [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
   
-    3.  Open a Command Prompt window where either Visual Studio (you can [download Visual Studio Community](http://www.visualstudio.com/downloads) for free) is installed and enter:  
+	[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-        ```  
-        cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
-        ```  
-  
-         On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.  
-  
-    4.  Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
+    0.  Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
   
         ```  
         witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestPlan.xml"  
@@ -74,19 +69,20 @@ The following steps provide support for the test experience available with TFS 2
   
     2.  Add the following categories.  
   
-        ```  
+		> [!div class="tabbedCodeSnippets"]
+		```XML  
         <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
             <DEFAULTWORKITEMTYPE name="Test Plan" />  
           </CATEGORY>  
           <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
             <DEFAULTWORKITEMTYPE name="Test Suite" />  
           </CATEGORY>  
-  
         ```  
   
     3.  Add the new WITs to the hidden categories.  
   
-        ```  
+		> [!div class="tabbedCodeSnippets"]
+		```XML   
         <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
             <DEFAULTWORKITEMTYPE name="Code Review Request" />  
             <WORKITEMTYPE name="Code Review Response" />  
@@ -107,10 +103,10 @@ The following steps provide support for the test experience available with TFS 2
   
 3.  **Migrate existing test plans and suites to work item based test plans and suites**.  
   
-    1.  Open a Command Prompt window on the TFS application-tier server:  
+    1.  Open a Command Prompt window on the TFS application-tier server and change the directory. For example:   
   
         ```  
-        cd %programfiles%\TFS 12.0\Tools  
+        cd %programfiles%\TFS 15.0\Tools  
         ```  
   
     2.  Run the **TfsConfig TCM** command.  

@@ -146,7 +146,7 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>Server</td>
-<td>TFS</td>
+<td>VSTS, TFS</td>
 <td>VSTS, TFS and Git third-party services</td>
 </tr>
 <tr>

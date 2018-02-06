@@ -11,12 +11,12 @@ ms.date: 08/26/2016
 
 # Deploy an agent on Windows
 
-**VSTS | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
-> * If your code is in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and the [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private Windows agent.
+> * If your code is in [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) and a [hosted agent](../../concepts/agents/hosted.md) meets your needs, you can skip setting up a private Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
@@ -54,7 +54,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 * VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2017: `https://{your_server}/tfs`
+* TFS 2017 and newer: `https://{your_server}/tfs`
 
 * TFS 2015: `http://{your-server}:8080/tfs`
 
@@ -78,7 +78,7 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 or newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
+* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
@@ -127,28 +127,13 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-### How do I configure the agent to work through a web proxy and connect to VSTS?
+### How do I run the agent with self-signed certificate?
 
-In the agent root directory, create a .proxy file with your proxy server URL.
+[Run the agent with self-signed certificate](certificate.md)
 
-  ```ps
-echo http://name-of-your-proxy-server:8888 | Out-File .proxy
-  ```  
+### How do I run the agent behind a web proxy?
 
-If your proxy doesn't require authentication, then you're ready to configure and run the agent as explained above.
-
-> [!NOTE]
-> For backwards compatibility, if the proxy is not specified as described above, the agent also checks for a proxy URL from the VSTS_HTTP_PROXY environment variable.
-
-If your proxy requires authentication, the simplest way to handle it is to grant permissions to the user under which the agent runs. Otherwise, you can provide credentials through environment variables. When you provide credentials through environment variables, the agent keeps the credentials secret by masking them in job and diagnostic logs. To grant credentials through environment variables, set the following variables:
-
- ```ps
-$env:VSTS_HTTP_PROXY_USERNAME = "proxyuser"
-$env:VSTS_HTTP_PROXY_PASSWORD = "proxypassword"
- ```
-
-> [!NOTE]
-> This procedure enables the agent infrastructure to operate behind a web proxy. Your build definition and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
+[Run the agent behind a web proxy](proxy.md)
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 

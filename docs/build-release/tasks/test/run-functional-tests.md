@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Test: Run Functional Tests
@@ -26,7 +26,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 | Argument | Description |
 | -------- | ----------- |
-| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
+| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Test Drop Location** | Required. The location on the test machine(s) where the test binaries have been copied by a <a href="../deploy/windows-machine-file-copy.md">Windows Machine File Copy</a> or <a href="../deploy/azure-file-copy.md">Azure File Copy</a> task. System environment variables from the test agent machines can be used to specify the drop location. Examples: `c:\tests` and `%systemdrive%\Tests` |
 | **Test Selection** | Required. Whether the tests are to be selected from test assemblies or from a test plan. |
 | **Test Assembly** | Required when **Test Selection** is set to **Test Assembly**. The test assemblies from which the tests should be executed. Paths are relative to the sources directory.<br />- Separate multiple paths with a semicolon.<br />- Default is `**\*test*.dll`<br />- For JavaScript tests, enter the path and name of the **.js** files containing the tests.<br />- Wildcards can be used. Example: `**\commontests\*test*.dll; **\frontendtests\*test*.dll` |
@@ -44,6 +44,8 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager (MTM). <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from MTM}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in MTM.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+> The task supports a maximum of 32 machines/agents.
 
 ## Scenarios
 
@@ -75,9 +77,8 @@ These scenarios are supported for:
 
 * **Build agents**
   - [Hosted](../../concepts/agents/hosted.md) and [on-premises](../../concepts/agents/agents.md) agents.
-  - Using the XPlat agent is not supported for any Behavior Driver Test (BDT) tasks.
   - The build agent must be able to communicate with all test machines. If the test machines
-    are on-premises, the hosted build agent cannot be used.
+    are on-premises behind a firewall, the hosted build agents cannot be used.
   - The build agent must have access to the Internet to download test agents. If this
     is not the case, the test agent must be manually downloaded and deployed to a network
     location that is accessible by the build agent, and a **Visual Studio Test Agent Deployment**
@@ -89,7 +90,7 @@ These scenarios are supported for:
 
 * **Machine group configuration**
   - Only Windows machines are supported when using BDT tasks inside a Machine Group. Using
-    Linux, iOS, or other platforms inside a Machine Group with BDT tasks is not supported.
+    Linux, macOS, or other platforms inside a Machine Group with BDT tasks is not supported.
   - Installing any version or release of Visual Studio on any of the test machines is not supported.
   - Installing an older version of the test agent on any of the test machines is not supported.
 

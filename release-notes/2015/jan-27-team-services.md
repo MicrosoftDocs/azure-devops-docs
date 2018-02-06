@@ -12,8 +12,6 @@ author: yukom
 
 #VS Online Basic license expanded – Jan 27
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Basic license expanded
 
 First and foremost, I’m excited to announce that this week we are rolling out upgrades across Visual Studio Online to make the following features available to ***all users*** with a “Basic” license:

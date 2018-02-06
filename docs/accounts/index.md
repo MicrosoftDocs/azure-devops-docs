@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
@@ -35,7 +35,7 @@ Sign up for a VSTS account, add users, and manage permissions and access.
  
 ## Reference 
 
-* [Permissions and access](/vsts/security/permissions-access?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
+* [Default permissions and access](../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
 * [Access with Azure AD](access-with-azure-ad.md)
 
 

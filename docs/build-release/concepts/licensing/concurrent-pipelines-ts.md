@@ -10,7 +10,7 @@ ms.date: 10/20/2016
 ---
 # Concurrent build and release pipelines in VSTS
 
-**[TFS 2017](concurrent-pipelines-tfs.md) | VSTS**
+**VSTS | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
 > [!NOTE]
 > October 2017 update: We're temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in November 2017.
@@ -111,8 +111,4 @@ You can register one XAML build controller for each private pipeline in your acc
 
 ### As a Visual Studio Enterprise subscriber, do I get additional pipelines for TFS and VSTS?
 
-Yes. Visual Studio Enterprise subscribers get [one concurrent private pipeline in Team Foundation Server 2017](concurrent-pipelines-tfs.md) and one concurrent private pipeline in each VSTS account of which they are a member.
-
-### I'm using the Hosted Linux Preview queue and I'm getting only one agent at a time even though I purchased multiple hosted pipelines. Why?
-
-We're offering the **Hosted Linux Preview** queues as a preview. So we provide only one of these agents at a time. Eventually we'll offer multiple hosted agents with these capabilities.
+Yes. Visual Studio Enterprise subscribers get [one concurrent private pipeline in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one concurrent private pipeline in each VSTS account of which they are a member.

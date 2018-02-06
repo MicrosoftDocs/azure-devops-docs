@@ -6,14 +6,14 @@ ms.technology: vs-devops-build
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Utility: Azure function
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
+![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ## Demands
 
@@ -33,7 +33,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Succeeds if the function returns success and the response body parsing is successful.
 
-For more information about using this task, see [Release approvals and gates](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
 

@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Manage TFS server configuration with TFSConfig
 
-**TFS 2017** | **TFS 2015** | **TFS 2013** | **TFS 2012** | **TFS 2010**
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013** | **TFS 2012** | **TFS 2010**
 
 > For versions earlier than TFS 2010, a few of these commands are available in the TFSAdminUtils command-line tool.
 
@@ -20,11 +20,12 @@ your on-premises deployment of Team Foundation Server (TFS).
 
 **TFSConfig** can be run from any machine on which TFS has been installed. It is installed in the 
 Tools directory - by default, this will be 
-- TFS 2017: `%programfiles%\TFS 15.0\Tools`
-- TFS 2015: `%programfiles%\TFS 14.0\Tools`
-- TFS 2013: `%programfiles%\TFS 12.0\Tools`
-- TFS 2012: `%programfiles%\TFS 11.0\Tools`
-- TFS 2010: `%programfiles%\TFS 2010\Tools`
+- TFS 2018: `%programfiles%\Microsoft Team Foundation Server 2018\Tools`
+- TFS 2017: `%programfiles%\Microsoft Team Foundation Server 15.0\Tools`
+- TFS 2015: `%programfiles%\Microsoft Team Foundation Server 14.0\Tools`
+- TFS 2013: `%programfiles%\Microsoft Team Foundation Server 12.0\Tools`
+- TFS 2012: `%programfiles%\Microsoft Team Foundation Server 11.0\Tools`
+- TFS 2010: `%programfiles%\Microsoft Team Foundation Server 2010\Tools`
 
 For many commands to operate correctly, **TFSConfig** will need to be able to connect to the various servers
 and services which are part of your TFS deployment, and the user running **TFSConfig** will need to have administrative

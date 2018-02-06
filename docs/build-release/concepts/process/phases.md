@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Phases in Build and Release Management
@@ -22,7 +22,7 @@ By using different task phases in a build or release definition, you can:
 
 | Activity | Release in VSTS | Release in TFS 2017 | Release in TFS 2018 | Build in VSTS |
 | --- | --- | --- | --- | --- |
-| Partition your deployment process into sections that run on agents and sections that run without an agent | Yes | Yes | Yes | Planned |
+| Partition your deployment process into sections that run on agents and sections that run without an agent | Yes | Yes | Yes | Yes |
 | Partition your build or deployment process into sections where tasks in each section can target a different set of private agents using different demands | Yes | Yes | Yes | Yes |
 | Partition your deployment process into sections where tasks in each section can target a different agent queue | Yes | Yes | Yes | Planned |
 | Introduce a manual intervention task where deployment pauses while an operator carries out manual processes or validates the state of the system before continuing the deployment | Yes | Yes | Yes | No |
@@ -30,7 +30,7 @@ By using different task phases in a build or release definition, you can:
 | Switch off checking out code for sets of tasks that include their own logic for accessing sources, or that do not require sources, which can reduce build time | No | No | No | Planned |
 | Publish build artifacts in one phase and consume those in subsequent phases | No | No | No | Yes |
 | Run multiple phases in parallel | Planned | Planned | Planned | Planned |
-| Permit access to OAuth tokens for only the tasks that need to interact with VSTS or TFS | Yes | Yes | Yes | Planned |
+| Permit access to OAuth tokens for only the tasks that need to interact with VSTS or TFS | Yes | Yes | Yes | Yes |
 | Specify different execution timeouts for different sets of tasks to maximize deployment performance and control | Yes | Yes | Yes | Yes |
 | Specify the conditions under which the tasks in the phase will execute; for example, when a previous phase has failed or when a [custom condition](conditions.md) defined by an expression is true | Yes | No | Yes | Planned |
 
@@ -66,26 +66,26 @@ You can configure the following properties for an agent phase:
 
 * **Display name:** The name displayed in the agent phase item in the task list.
 
-* **Queue [Release (TFS 2017, TFS2018, VSTS), Build (Planned)]:** Use this option to specify the agent queue
+* **Queue [Release (VSTS, TFS 2017 and newer), Build (Planned)]:** Use this option to specify the agent queue
   in which the jobs will run. In the case where multiple jobs are created, all the jobs run on agents within the same agent queue.
 
 * **Demands:** Use these settings to specify how an agent for
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
 
-* **Skip download of artifacts [Release (TFS 2017, TFS2018, VSTS)]:** When used in a release definition, you may choose to skip the
+* **Skip download of artifacts [Release (VSTS, TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
 
-* **Allow scripts to access OAuth token [Release (TFS 2017, TFS2018, VSTS), Build (Planned)]** Use this option if you
+* **Allow scripts to access OAuth token [Release (VSTS, TFS 2017 and newer), Build (Planned)]** Use this option if you
   want to allow tasks running in this phase access to the
   current VSTS or TFS OAuth security token.
   This is useful in many scenarios, such as when you need to
   run a custom PowerShell script that invokes the REST APIs
   on VSTS - perhaps to create a work item or query a build for information.
 
-* **Run this phase [Release (TFS2018, VSTS), Build (Planned)]:** Use this option to run the tasks
+* **Run this phase [Release (VSTS, TFS 2018 Update 2 onwards), Build (Planned)]:** Use this option to run the tasks
   in the phase only when specific [conditions](conditions.md) are met. Select a predefined
   condition, or select "custom" and enter an [expression](conditions.md) that evaluates
   to **true** or **false**. Nested expressions can be used, and the
@@ -108,7 +108,7 @@ You can use multiple agents to run parallel jobs if you configure an agent phase
 Here are some examples where **multi-configuration** is appropriate:
 
 > [!NOTE]
-> These options are available in Release (TFS 2017, TFS2018, VSTS) and Build (VSTS)
+> These options are available in Release (VSTS, TFS 2017 and newer) and Build (VSTS)
 
 * **Multiple execution builds:** An agent phase can be used in a
   build definition to build multiple configurations in parallel. For
@@ -262,7 +262,7 @@ The timeout and additional options of a deployment group phase are the same as t
 You can add multiple phases to a build or release definition, and then add
 tasks to each one by selecting the target phase for the new tasks.
 
-> Multiple phases can only be used in Release Management in VSTS, TFS 2017, and TFS 2018, and in Build in VSTS.
+> Multiple phases can only be used in Release Management in VSTS and TFS 2017 and newer, and in Build in VSTS.
 
 For example, the definition shown below divides the overall release
 execution into separate execution phases by using two agent phases

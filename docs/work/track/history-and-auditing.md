@@ -1,12 +1,13 @@
 ---
 title: History and auditing 
+titleSuffix: VSTS & TFS
 description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 02/05/2018  
 ---
 
 # History & auditing  
@@ -17,6 +18,7 @@ The history of a work item tells you who opened the item, what changed, and why.
 
 You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the ```History``` field. When you perform a search on the contents of the ```History``` field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.
 
+# [Browser](#tab/browser)
 
 <a id="team-services" /> 
 #### VSTS, TFS 2017
@@ -27,10 +29,14 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 <img src="_img/ALM_HA_HistoryQuery.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
 
+# [Visual Studio](#tab/visual-studio) 
+
 <a id="tee-query-history" />
 <a id="team-explorer" />
 #### Visual Studio, Team Explorer, Team Explorer Everywhere
 <img src="_img/hist-audit-query-team-explorer.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
+
+---
 
 
 ##List items based on the contents of the History field 
@@ -105,6 +111,7 @@ Items I've been associated with
 ## View the history of work items  
 
 An entry is made to the History field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../_img/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
+
 
 <a id="team-services-tab" /> 
 #### VSTS, TFS 2017
@@ -279,10 +286,9 @@ To learn more about creating and saving queries, see also:
 
 
 ### Getting the history programmatically
-See the following resources for ways to extract history information programmatically.  
+See the [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
 
-- [Discussion history](https://www.visualstudio.com/integrate/api/wit/history)  
-- [Work item updates](https://www.visualstudio.com/integrate/api/wit/updates)  
-- [Work item revisions](https://www.visualstudio.com/integrate/api/wit/revisions)  
-
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
  

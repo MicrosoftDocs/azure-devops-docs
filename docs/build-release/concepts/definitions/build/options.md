@@ -26,7 +26,7 @@ Here we explain settings you can change on the build definition **Options** tab.
 
 ## Description
 
-> **Team Foundation Server (TFS) 2017 Update 1 and older**
+> **Team Foundation Server (TFS) 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.  
 
@@ -74,7 +74,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
 | `$(Rev:.r)` | 2 (The third build on this day will be 3, and so on.)<br /><br />Use **$(Rev:.rr)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:.rr)** if you want the Rev number to begin with 01, 02, and so on. |
-| `(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
+| `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |
 | `$(TeamProject)` | Fabrikam |
@@ -92,7 +92,7 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
 
 ## Badge enabled
-> **TFS 2017 Update 1 and older**
+> **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
@@ -131,7 +131,7 @@ For an example, see [Use a script to customize your build process](../../../acti
 
 
 ## Default agent queue
-> **TFS 2017 Update 1 and older**
+> **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
@@ -140,7 +140,7 @@ Select the [queue](../../../concepts/agents/pools-queues.md) that's attached to 
 **Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../../../concepts/agents/hosted.md).
 
 ## Build job authorization scope
-> **TFS 2017 Update 1 and older**
+> **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
@@ -151,7 +151,7 @@ Specify the authorization scope for a build job. Select:
 * **Current Project** if you want to restrict this build to have access only the resources in the current team project.
 
 ## Build job timeout in minutes
-> **TFS 2017 Update 1 and older**
+> **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
@@ -180,7 +180,7 @@ Whatever value you set here, the **Build job timeout in minutes** limit still ap
 > The system typically consumes about 10 seconds of this time allotment for messaging before your tasks run.
 
 ## Demands
-> **TFS 2017 Update 1 and older**
+> **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 

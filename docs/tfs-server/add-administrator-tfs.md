@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Add administrators to TFS
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 Administrators in VSTS and TFS exist at three levels:
 the team, the team project, and the team project collection.
@@ -55,7 +55,7 @@ group in Team Foundation Server (TFS).
 
 ## Team
 
-0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administraton page.
+0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
 0. Add an administrator.
 

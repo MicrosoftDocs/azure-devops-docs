@@ -9,14 +9,15 @@ You can set up payment with a credit card,
 or by invoice in some cases. Charges for your 
 purchases will show up on your monthly Azure bill.
 
-**Note:** You must keep your Azure subscription in good 
-standing to use your Visual Studio Marketplace purchases. 
-If your Azure subscription is canceled or becomes disabled, 
-for example, because the credit card used for payment expires, 
-then any purchases with this Azure subscription will be 
-deactivated on the 1st day of next month. 
-To continue using your Visual Studio Marketplace purchases, 
-please keep your Azure subscription active and updated.
+>[!NOTE] 
+> You must keep your Azure subscription in good 
+> standing to use your Visual Studio Marketplace purchases. 
+> If your Azure subscription is canceled or becomes disabled, 
+> for example, because the credit card used for payment expires, 
+> then any purchases with this Azure subscription will be 
+> deactivated on the 1st day of next month. 
+> To continue using your Visual Studio Marketplace purchases, 
+> please keep your Azure subscription active and updated.
 
 
 ####Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
@@ -33,8 +34,7 @@ A:	Yes.  You can use these prepaid funds to pay for:
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
 *	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
-*	[HockeyApp user plans](https://marketplace.visualstudio.com/subscriptions)
-* [Xamarin University](https://www.xamarin.com/university)
+*   [Xamarin University](https://www.xamarin.com/university)
 
 You can't use these funds to pay for Visual Studio cloud 
 subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
@@ -44,7 +44,7 @@ subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
-which applies to VSTS, HockeyApp plans, Xamarin University, and so on. 
+which applies to VSTS, Xamarin University, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase. 
 

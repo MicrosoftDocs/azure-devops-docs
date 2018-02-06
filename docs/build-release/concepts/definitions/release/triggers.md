@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Triggers in Release Management
@@ -31,12 +31,20 @@ and Git-based sources such as Team Foundation Git, GitHub, and other Git reposit
 If you have linked multiple Team Foundation Build artifacts to a release definition,
 you can configure continuous deployment for each of them.
 In other words, you can choose to have a release created automatically when a new build
-of any of those artifacts is produced. You can further choose to create the release only
+of any of those artifacts is produced.
+
+You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
 (only applicable when the code is in a VSTS or a TFS Git repository)
 or when the build has certain tags.
 
-Note that, even though a release is automatically created, it
+Alternatively, you can specify a filter to use the default branch specified
+in the build definition. This is useful when, for example, the default build branch
+changes in every development sprint. It means you don't need to update the trigger
+filter across all release definitions for every change - instead you just change the
+default branch in the build definition.
+
+>Note that, even though a release is automatically created, it
 might not be deployed automatically to any environments. The
 [environment triggers](#env-triggers) govern when and if a release should be deployed to an environment.
 
@@ -52,7 +60,8 @@ when a release is created by a continuous deployment trigger, based on:
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
-* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition.
+* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition,
+  and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
@@ -106,7 +115,7 @@ deployment to both the **QA** and **Pre-prod** environments.
 ![Configuring a parallel (forked and joined) deployment pipeline](_img/trigger-03.png)
 
 In combination with the ability to define
-[pre- and post-deployment approvals](environments.md#approvals),
+[pre- and post-deployment approvals](approvals/approvals.md),
 this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  

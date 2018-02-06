@@ -1,8 +1,8 @@
 <a id="provide-feedback"></a>
-### Feedback and support  
+## Feedback and support  
 
 We welcome your feedback. 
 
-Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/vsts) @vsts**. 
+For product related inquiries, review our [User Voice page](https://visualstudio.uservoice.com/forums/330519-team-services) or report a problem at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). Also, you can get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), or get support via our [Support](https://www.visualstudio.com/team-services/support/) page.
 
-See also our [comprehensive feedback and support page](/vsts/user-guide/provide-feedback).   
+Follow us on **[Twitter](https://twitter.com/vsts) @vsts**. 

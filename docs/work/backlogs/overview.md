@@ -15,7 +15,7 @@ ms.date: 08/15/2017
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](../https://www.visualstudio.com/learn/what-is-agile/) for an overview.
+You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/) for an overview.
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
@@ -24,7 +24,7 @@ Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md)
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 
 > |-------------|----------|---------|---------|   
-> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/guidance/team-velocity.md)<br/>|    
+> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/velocity-chart-data-store.md)<br/>|    
 
 >[!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
@@ -33,7 +33,7 @@ Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md)
 ## Kanban method and tools
 Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
 
-[![Configure Kanban board](_img/overview/gs-planning-configure-kanban.png)](../kanban/kanban-basics.md)[![Update the Kanban board](_img/overview/gs-planning-track-kanban.png)](../kanban/kanban-basics.md)[![Monitor progress](_img/overview/gs-planning-monitor-kanban.png)](../../report/guidance/cumulative-flow.md)
+[![Configure Kanban board](_img/overview/gs-planning-configure-kanban.png)](../kanban/kanban-basics.md)[![Update the Kanban board](_img/overview/gs-planning-track-kanban.png)](../kanban/kanban-basics.md)[![Monitor progress](_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 You update the status of work by dragging card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
 

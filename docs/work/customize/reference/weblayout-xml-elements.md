@@ -1,37 +1,45 @@
 ---
-title: WebLayout XML elements reference | VSTS & TFS
+title: WebLayout XML elements reference 
+titleSuffix: VSTS & TFS
 description: Syntax and usage of all elements used in the new web form layout for Visual Studio Team Services (VSTS) and Team Foundation Server
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/26/2017
+ms.date: 11/28/2017
 ---
 
 # WebLayout and Control elements  
 
 [!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
 
-
+You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
 > [!IMPORTANT]  
 > This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 >For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
-You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
-
 The **WebLayout** element is a required child element of the **FORM** element. This topic documents the **WebLayout** element and its child elements. Use this as a guide to further customize a WIT definition that contains the new **WebLayout** section. To learn more about these changes, see the blog post, [Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/).
 
-<a id="customize">  </a>  
-To modify the web layout, use the information provided in this topic to modify the XML definition file for a specific work item type. To import and export your changes, see [Customize the work item tracking web form](../customize-wit-form.md).   
+<a id="customize"></a>
+To modify the web layout, use the information provided in this topic to modify the XML definition file for a specific work item type. To import and export your changes, see [Customize the work tracking web form](../customize-wit-form.md).     
 
-To customize the windows client layout, the [Layout XML element](layout-xml-element-reference.md).  
+To customize the windows client layout, see [Layout XML element](layout-xml-element-reference.md).  
 
-[!INCLUDE [temp](../../_shared/new-form-xml-elements-availability.md)]
+##Enablement of the new form and WebLayout section
 
-## Summary of new and deprecated elements and attributes
+When the new form roll out is enabled, the XML definitions for all work item types (WITs) in the collection are updated to include a **WebLayout** section within the **FORM** section.  
+
+The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
+- For the [Inheritance process model](../process/manage-process.md), the switch to the new form is automatic for all user accounts.  
+- For the [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2017, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://www.visualstudio.com/downloads/) to access the new form.
+ 
+
+## Element and attribute summary
 
 The **WebLayout** and updated **Control** elements introduce several new elements and deprecate several elements and attributes. Overall, it's a much simpler syntax structure than its predecessor. 
 
@@ -57,7 +65,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebLayout>
+<WebLayout ShowEmptyReadOnlyFields="true"> 
     <SystemControls>
       <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" />
       <Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" />
@@ -74,7 +82,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 
 **For TFS 2017 On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
 
-**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can hide or replace select fields defined within the **SystemControls** section.  
+**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can specify the **ShowEmptyReadOnlyFields** attribute, or select to hide or replace select fields defined within the **SystemControls** section.  
 
 For example, to hide the Reason field, you modify the **Control** element with the `Visible` attribute.
    
@@ -180,10 +188,23 @@ The following example specifies the syntax for the Details page shown previously
 
 You can specify how information and work item fields are grouped and appear in a work item form using the elements that are described in the following table.
 
+> [!div class="tabbedCodeSnippets"]
+```XML
+<WebLayout ShowEmptyReadOnlyFields="true | false">
+   ...
+</WebLayout>
+```
+
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|    
+|`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `true` to display read-only and empty fields (default), and `false` to hide these fields.|  
+
 
 ### Nest elements 
 
- 
 Within a **Page** element within the **WebLayout** element, you can nest the following elements: 
 
 - **Page** elements within a single **WebLayout** element  
@@ -191,25 +212,27 @@ Within a **Page** element within the **WebLayout** element, you can nest the fol
 - **Group** elements within a **Section** element  
 - **Control** elements within a **Group** element.  
  
-Within a **PinnedControls** element within the WebLayout element, you can nest the following elements (requires TFS 2018 (RC2) or Hosted XMl process model): 
+Within a **PinnedControls** element within the WebLayout element, you can nest the following elements (requires TFS 2018 (RC2) or Hosted XML process model): 
 
 - **Section** elements within a single **PinnedControls** element, limit the number of **Section** elements to three 
 - **Control** elements within a **Section** element, limit the number of **Control** elements to three  
 
->[!TIP]  
->The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
+> [!TIP]  
+> The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
+
+
 
 <table width="100%" >
 <thead>
 <tr>
-<th width=20%"><p>Element</p></th>
-<th width=80%"><p>Description</p></th>
+<th>Element</th>
+<th>Description</th>
 </tr>
 </thead>
-<tbody valign="top" >
+<tbody valign="top">
 <tr>
-	<td><p>**Control**</p></td>
-	<td><p>Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
+	<td>**Control**</td>
+	<td>Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.
 <pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | 
 FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; 
 Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
@@ -363,8 +386,8 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </td>
 </tr>
 <tr>
-	<td><p>**WebLayout**</p></td>
-	<td><p>Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.</p>
+	<td>**WebLayout**</td>
+	<td>Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.
 <pre><code>&lt;WebLayout&gt; 
    &lt;Page&gt;  
 	   &lt;Section&gt;  
@@ -381,6 +404,9 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </tbody>
 </table>
 
+
+
+
 <a id="control-element">  </a>  
 ## Control element syntax 
 
@@ -396,14 +422,16 @@ ReadOnly="True | False" Name="InstanceName" [Visible="false" |
 FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 ```
 
+
 <a id="control-attributes">  </a>
 ## Control element attribute syntax  
+
 
 <table width="100%" >
 <tbody valign="top" >
 <tr>
-<th width=16%">Attribute</th>
-<th width=84%">Description</th>
+<th>Attribute</th>
+<th>Description</th>
 </tr>
 <tr>
 <td><p><strong>FieldName</strong> </p></td>
@@ -470,16 +498,19 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 </tbody> 
 </table>
 
+
+
+
 ## Control element Type attribute syntax
+
+
 <table width="100%">
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
 <tbody valign="top">
 <tr>
-<th width=20%">Type</th>
-<th width=80%">Description</th>
-</tr>
-
-<tr>
-<td>**DateTimeControl**</td>
 <td>**DateTimeControl**</td>
 <td>Use to display formatted date fields with a data type of `DateTime`. 
 <p>Use `FieldControl` to provide a text field for the input or display of a DateTime field.</p>
@@ -492,18 +523,17 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
 <blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/accounts/account-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
 </blockquote>
-</td></tr>
+</td>
+</tr>
 
 <tr>
 <td>**FieldControl**</td>
-<td>Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText.  
-
-For example:  
+<td>Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText. For example:  
 <pre><code>&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
 Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <blockquote>
-<b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>    
+<b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
 ![Boolean field display in web work item form](_img/weblayout-ref-checkbox-control-boolean-field.png)
  

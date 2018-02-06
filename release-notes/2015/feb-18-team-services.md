@@ -12,8 +12,6 @@ author: yukom
 
 #Kanban split columns, inline adding and editing – Feb 18
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 This week’s deployment brings a brand new look to our boards and some new functionality that many of you have been waiting for. Let’s jump right in…
 
 ##Adding and editing directly from the board

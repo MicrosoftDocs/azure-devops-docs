@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
@@ -30,7 +30,7 @@ permissions to restore your VSTS account.
 
 	![Next to your deleted account, click Restore](_img/delete-account/restore-account.png)
 
-	*	If your account URL is still available, you can restore your account.
+	*	If your account URL is still available, you can restore it.
 
 		![Confirm restoring your account](_img/delete-account/restore-confirm.png)
 

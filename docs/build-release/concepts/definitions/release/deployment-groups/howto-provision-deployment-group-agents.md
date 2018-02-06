@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # How To: Provision agents for deployment groups
@@ -20,10 +20,14 @@ and install and provision the agent on each virtual or physical machine in your 
 You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
-
 * [Install the **VSTS Agent** Azure VM extension](#azureext) on each of the VMs.
-
 * [Use the **Azure Resource Group Deployment** task](#deploytask) in your release definition.
+
+For information about agents and pipelines, see:
+
+* [Concurrent pipelines in Team Foundation Server](../../../licensing/concurrent-pipelines-tfs.md).
+* [Concurrent pipelines in VSTS](../../../licensing/concurrent-pipelines-ts.md).
+* [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 <a name="runscript"></a>  
 ## Run the installation script on the target servers
@@ -140,6 +144,8 @@ where:
 * **PATToken** is required. The Personal Access Token that will be used to authenticate against the VSTS account to download and configure the agent
 
 >**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
+
+For more information about ARM templates, see [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/).
 
 To use the template:
 

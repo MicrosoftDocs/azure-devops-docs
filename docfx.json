@@ -33,11 +33,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-        "author": "erickson-doug",
-        "ms.author": "douge",
-        "ms.topic": "douge",
-        "ms.prod": "vs-devops-alm",
-        "ms.technology": "vs-devops-articles"
+      "brand": "vsts",
+      "searchScope": ["VSTS", "Team Services"],
+      "author": "erickson-doug",
+      "ms.author": "douge",
+      "ms.topic": "douge",
+      "ms.prod": "vs-devops-alm",
+      "ms.technology": "vs-devops-articles"
     },
     "fileMetadata": {},
     "template": [],

@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Azure File Copy

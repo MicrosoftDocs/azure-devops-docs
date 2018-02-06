@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 10/02/2017
+ms.date: 12/20/2017
 ms.custom: mvc
 ---
 
@@ -38,11 +38,11 @@ In this tutorial, you learn how to:
 
 A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.  VSTS allows you to create and delete topic branches to take advantage of CI without having to edit the build definition.  You can use naming conventions, wildcards, and branch filters to initiate builds that match a particular pattern.  Follow the steps below to create a CI trigger that will execute a build for feature branches.
 
-1. Click **Build & Release** menu and click **Builds**.
+1. Click **Build and Release** menu and click **Builds**.
 2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.
 3. Click the **Triggers** menu for your build.  Ensure you have **Continuous Integration** enabled.
 4.  Click the **+ Add** icon under **Branch Filters**.
-5.  Type **features/*** in the **Branch specification** dropdown.  The trigger supports CI for feature branches that match the wildcard as well as the master branch.    
+5.  Under the **Branch specification** dropdown, type **features/*** in the "Filter my Branches" text box then hit **ENTER**.  The trigger now supports CI for all feature branches that match the wildcard as well as the master branch.
     ![Code hub in VSTS portal](_img/ci-build-git/triggerwildcard.png)
 6.  Click the **Save & queue** menu and then click **Save**.
 
@@ -55,7 +55,7 @@ Your build definition is now ready for CI for both the master branch and future 
 3.  Click the **Files** menu.  Make a quick code change by selecting a file and clicking **Edit**.  Add some text and click **Commit**.  For **Branch name**, remove master and type **features/feature-123**.
 4.  Click **Commit**. This workflow creates a new topic branch under a parent named **features** and commits your code edits to the new branch.    
      ![Create new branch](_img/ci-build-git/createnewbranch.png)
-5.  Navigate to the **Build & Release** menu in VSTS and click **Builds**.
+5.  Navigate to the **Build and Release** menu in VSTS and click **Builds**.
 6.  Click **Queued** under **Build Definitions** to view the queued builds.  You should now see your new build definition executing for the topic branch.  This build was initiated by the trigger you created earlier.  Wait for the build to finish.
 
 Your typical development process typically includes developing code locally and periodically pushing to your remote topic branch.  Each push you make will result in a build process executing in the background.  The build process helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
@@ -64,7 +64,7 @@ Your typical development process typically includes developing code locally and 
 
 The master branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in VSTS so that certain tasks only execute on your master branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions. 
 
-1. Click **Build & Release** menu and click **Builds**.
+1. Click **Build and Release** menu and click **Builds**.
 2. Locate the **Build Definition** that services your master branch.  Click the **ellipsis** to the right of your definition.  Click **Edit**.    
 3. Choose the **Publish Artifact** task in your build definition.
 4. Click **Control Options** on the bottom right hand part of your screen.
@@ -84,7 +84,8 @@ and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don’t result in broken builds for your branches.
 
 1.  Navigate to the **Code** hub in VSTS.
-2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.  3. You will implement a branch policy to protect the master branch.  Click the **ellipsis** to the right of your branch name and click **Branch policies**.    
+2.  Choose your **repository** and click **Branches**.  Choose the **master branch**.
+3. You will implement a branch policy to protect the master branch.  Click the **ellipsis** to the right of your branch name and click **Branch policies**.    
 4.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.    
 5.  Under the **Build validation** menu choose **Add build policy**.
 6.  Choose the appropriate **build definition**.

@@ -11,7 +11,7 @@ ms.technology: vs-devops-admin
 
 # Service accounts and dependencies in Team Foundation Server
 
-**TFS 2015** | **TFS 2013**
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 You can better manage Visual Studio Team Foundation Server (TFS) if you understand the services and several service accounts that every deployment of TFS includes and on which every deployment depends. Depending on how you have installed and configured TFS, these services and service accounts might all run on one computer, or they might run on many computers. This changes certain aspects of managing your deployment. For example, if the server-side components of your deployment run on more than one computer, you must ensure that the service accounts your deployment uses have the access and permissions they require to function correctly.
 

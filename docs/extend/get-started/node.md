@@ -16,7 +16,7 @@ ms.topic: get-started-article
 
 ## Your first extension
 This page guides you through creating your first extension for VSTS. It will introduce the basic extensibility concepts 
-and give you the knowledge needed to get started on your own unqiue extension.
+and give you the knowledge needed to get started on your own unique extension.
 
 In this tutorial we'll create a custom hub that displays the results of a query. A <b>hub</b> is, simply put, a type of contribution that displays
 a web page. You can have multiple hubs in VSTS and they live in <b>hub groups</b>. 
@@ -236,7 +236,7 @@ If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
- * Specify an idenitifer for your publisher, for example: `mycompany-myteam`
+ * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
  * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) and click **Create**

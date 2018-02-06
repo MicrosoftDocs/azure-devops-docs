@@ -10,8 +10,6 @@ author: egeaney
 
 #Customized backlog levels, mobile work item form improvements, notifications for extensions – Mar 8
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks.
-
 We have been focusing on improving your Team Services experience. This sprint includes several items, such as mobile work item form improvements and custom backlog levels. Let’s get into these features!
 
 ##Delivery Plans field criteria

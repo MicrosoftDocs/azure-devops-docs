@@ -5,11 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
-#	Troubleshoot adding and deleting account users in the VSTS user hub
+# Troubleshoot adding and deleting account users in the VSTS user hub
 
 **VSTS**
 
@@ -159,7 +159,7 @@ Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-v
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../billing/faq-billing-setup.md#AzureMSDNSubscription).
+	[Learn more](../billing/faq-billing-setup.md#EligibleAzureSubscriptions).
 
 
 ## User access
@@ -189,7 +189,7 @@ but meanwhile, you or your team member can continue
 *	Your or your team member's Visual Studio subscription has expired. 
 Meanwhile, they'll [work as stakeholders](../security/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
-After they sign in, VSTS will restore their access automatically.
+After they sign in, VSTS restores their access automatically.
 
 *	The Azure subscription used for billing is no longer active. 
 This affects all purchases made with this subscription, 
@@ -242,7 +242,7 @@ through Azure Active Directory (Azure AD). All users must be directory members t
 
 If you're a directory administrator, you can 
 [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). 
-If you're not, work with your directory administrator to add users. 
+If you're not an administrator, work with your directory administrator to add users. 
 Learn more about [controlling access with a directory](access-with-azure-ad.md).
 
 <a name="ConnectedDirectory"></a>

@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/23/2017
+ms.date: 12/12/2017
 ---
 
 
@@ -21,7 +21,7 @@ Several permissions are set at the team project or at the account/team project c
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Account/Collection level| 
 > |-------------|----------| 
-> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Administrators<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
+> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
 
 > [!Note]  
 > The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
@@ -40,6 +40,12 @@ For a description of each group and each permission, see [Permissions and groups
 > resource limits, agent pools, and extensions&mdash;add them to the Project  
 > Administrators group.  
 
+## Prerequisites
+
+* You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.  
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow.  
+
 <a id="project-level" />
 ## Add a user or group to a security group
 
@@ -53,18 +59,18 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Click the security group, Project Administrators, and then click Members, and then click **Add**.  
 
-	<img src="_img/project-level-permissions-add-member.png" alt="Web portal, Admin context, Security hub, Add member" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-member.png" alt="Web portal, Admin context, Security hub, Add member" style="border: 1px solid #C3C3C3;" /> 
 
 0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Click the match(es) that meets your choice. 
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 0. Click Save changes and you'll notice the user Project Administrators, and then click Members, and then click **Add**.  
  
-	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Change the permission level for a project-level group 
@@ -75,7 +81,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
-	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 1px solid #C3C3C3;" />  
 
 	For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
@@ -91,13 +97,13 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Click Create group to open the dialog for adding a group. 
 
-	<img src="_img/project-level-permissions-create-group.png" alt="Create security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-create-group.png" alt="Create security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 0. Enter a name for the group, and optionally a description. 
  
 	For example, here we define a Work Tracking Administrators group.  
 
-	<img src="_img/project-level-permissions-add-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/project-level-permissions-add-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
@@ -105,7 +111,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	Here we grant this group permissions to [manage customizations for the Inheritance process model](../work/customize/process/manage-process.md). 
 
-	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
 0. Click **Save changes**.   
 

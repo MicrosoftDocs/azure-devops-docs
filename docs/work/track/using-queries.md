@@ -1,5 +1,6 @@
 ---
 title: Create managed queries with the Query Editor
+titleSuffix: VSTS & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,13 +8,12 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/29/2017  
+ms.date: 02/05/2018  
 ---
 
 # Create managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
 
 You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
@@ -48,7 +48,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 2.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
-	**VSTS, New queries experience:**  	
+	**VSTS, TFS 2018 - New queries experience:**  	
 
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 
@@ -78,8 +78,8 @@ Grouped clauses operate as a single unit separate from the rest of the query, si
 
 In the next example, the first expression returns all work items that are priority 1 and all active bugs of any priority. The second expression returns all active priority 1 work items and all priority 1 bugs, whether they are active or not.
 
-| Grouped clauses                                   | Logical expression                                    |
-| ------------------------------------------------- | ----------------------------------------------------- |
+| Grouped clauses  | Logical expression         |
+| ----------------- | --------------------|
 | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
 | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
 
@@ -165,6 +165,20 @@ All fields from all WITs defined in all team projects in the collection always a
 
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
 
+## Task board versus query list items
+
+You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+
+## Export a query  
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
+
+See also:
+- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
+ 
+> [!NOTE]  
+> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+
 
 ## Related notes
 
@@ -176,28 +190,12 @@ See also:
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md)
+- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
+- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 
-### Task board versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-### Export a query  
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
-
-
-### Programmatically query for work items 
-You can create dynamic queries using one of the following resources:  
-
-- **REST APIs:**&#160;&#160;[Work item queries and query folders](https://visualstudio.com/integrate/api/wit/queries.md) and [Work item query language](https://visualstudio.com/integrate/api/wit/wiql.md)
-- **SDK:**&#160;&#160;[Query for Bugs, Tasks, and Other Work Items](https://msdn.microsoft.com/library/bb130306.aspx).
-
-
-See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
-- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
- 
-> [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

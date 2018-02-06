@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # FAQs for load testing
@@ -17,6 +17,8 @@ ms.date: 09/26/2017
 ## General
 
 [Go to related topic &gt;](get-started-simple-cloud-load-test.md)
+
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
@@ -39,9 +41,14 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 
 **A**:  Yes, you can load test apps or sites that are only available to your company, 
 such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
-[Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
+[Testing private and intranet applications using cloud-based load testing](clt-behind-firewall.md).
 
 Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+
+### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
+
+**A**:  Yes, several scenarios are supported. To learn more, see 
+[Run cloud-based load tests using your own machines](clt-with-private-machines.md).
 
 ### Q: What are virtual users?
 
@@ -122,9 +129,7 @@ For runs that end in an error state, no virtual user minutes will be deducted fr
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
-To check how many virtual user minutes that your VSTS account 
-has used or has remaining, go to your VSTS account home page 
-(```https://{youraccount}.visualstudio.com```).
+[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 <a name="iterations"></a>
 ### Q: I'm running load tests using test iterations. How is load test duration determined?

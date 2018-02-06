@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Set up continuous testing for your builds
@@ -117,5 +117,7 @@ Find problems early after changes are checked in and built by running continuous
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)
 * [End-to-end example of continuous testing](example-continuous-testing.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

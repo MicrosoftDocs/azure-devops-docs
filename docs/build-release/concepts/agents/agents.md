@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Build and Release Agents
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
 
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
 
@@ -18,14 +18,9 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 ## Hosted agents
 
-If you're using VSTS, you've got the option to build and deploy using a **hosted agent**. When you use a hosted agent, we take care of the maintenance and upgrades. So for many teams this is the simplest way to build and deploy. You can try it first and see if it works for your build or deployment. If not, you can set up a private agent.
+[!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
-> [!NOTE]
-> Hosted agents are available only in VSTS, not in Team Foundation Server (TFS).
-
-We provide hosted agents to you in the hosted pool. If you need to run more than one job at a time, you'll need to get more [concurrent pipelines](../licensing/concurrent-pipelines-ts.md).
-
- [Learn more about hosted agents](hosted.md).
+[Learn more about hosted agents](hosted.md).
 
 <h2 id="install">Private agents</h2>
 
@@ -35,7 +30,7 @@ You can install the agent on Windows, Linux, or macOS machines. You can also ins
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
-### Install and connect to VSTS and TFS 2017
+### Install and connect to VSTS and TFS 2017 and newer
 
 > [!TIP]
 > Is your code in VSTS? If so, before you install an agent you might want to see if the hosted pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
@@ -81,7 +76,7 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 ### Communication with VSTS or TFS
 
-#### VSTS or TFS 2017
+#### VSTS or TFS 2017 and newer
 
 The agent communicates with VSTS or TFS to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to VSTS or TFS happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
@@ -123,7 +118,7 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to VSTS or TFS using one of the following methods:
 
-* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017. PAT is the only scheme that works with VSTS.
+* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
 
 * **Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
 

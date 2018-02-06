@@ -12,8 +12,6 @@ author: yukom
 
 #RM updates, email formatting, a checkbox control, and more – May 6
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 There’s so much in our deployment this week that I really don’t know where to begin. I’m going to start with a few items that I’m thrilled we’re knocking off our list...
 
 ##Email improvements

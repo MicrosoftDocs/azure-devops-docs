@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/28/2017
+ms.date: 11/28/2017
 ---
   
 
@@ -21,18 +21,16 @@ ms.date: 08/28/2017
  
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
 
-<table width="70%">
+<table>
 <tr>
-<th width="40%">Filter options </th>
-<th width="20%">VSTS</th>
-<th width="20%">TFS 2015 </th>
-<th width="20%">TFS 2017 </th>
+<th>Filter options </th>
+<th>TFS 2015 </th>
+<th>VSTS, TFS 2018, TFS 2017 </th>
 </tr>
 
 
 <tr>
 <td align="left">[Filter by keyword and tags](#text-filter)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
@@ -42,7 +40,6 @@ Depending on the size of your team and the number of stories in progress, your K
 <td align="left">
 [Filter by select field values](#field-filter)
 </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>   </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
@@ -51,7 +48,6 @@ Depending on the size of your team and the number of stories in progress, your K
 <td align="left">
 [Filter by parent work items](#parent-filter)
 </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>   </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
@@ -78,7 +74,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 >[!TIP]  
 >Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f</span> to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
->For more tips, see [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).
+>For more tips, see [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md).
  
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
 

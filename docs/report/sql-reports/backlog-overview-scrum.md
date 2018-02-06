@@ -13,7 +13,7 @@ ms.date: 10/17/17
 
 # Backlog overview (Scrum)
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Backlog Overview report lists all product backlog items (PBIs), both active and completed. It doesn't include bugs. The report presents a snapshot of the work that has been performed for the filtered set of PBIs.  
   

@@ -12,8 +12,6 @@ author: yukom
 
 #Work item follow, move & change type - April 13
 
-**Note**: The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 Let’s start by walking through some of the improvements we’ve made in the Work hub…
 
 ##Follow a work item
@@ -96,11 +94,11 @@ Xamarin Build Tasks
 
 We made some significant improvements to our Xamarin support: 
 
--The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports Mac and Linux
+-The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports macOS and Linux
 -The [Xamarin.iOS](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-ios) step now supports signing and packaging
 -[Xamarin Test Cloud](https://msdn.microsoft.com/library/vs/alm/build/steps/test/xamarin-test-cloud) results can be displayed on the build summary page
 -A new [Xamarin component restore](https://msdn.microsoft.com/en-us/library/vs/alm/build/steps/package/xamarin-component-restore) step
--The [NuGet Installer](https://msdn.microsoft.com/en-us/library/vs/alm/build/steps/package/nuget-installer) step now supports Mac OS
+-The [NuGet Installer](https://msdn.microsoft.com/en-us/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
 
 Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](https://msdn.microsoft.com/en-us/Library/vs/alm/Build/apps/xamarin).
 

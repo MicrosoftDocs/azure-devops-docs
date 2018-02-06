@@ -15,9 +15,9 @@ ms.date: 11/13/2017
 **VSTS**  
 
 
-Using the Analytics Service, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
+Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
-In this topic, the base root URL is constructed as follows:
+In this topic, the base root URL is scoped to a project as shown:  
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -28,19 +28,20 @@ All additional URL parts are specified as an additional part of the query string
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
+## Prerequisites
 
-## Prerequistes 
-
-- You will need to have a VSTS account and team project. If you haven't one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
+- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 - Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
 
-## Construct a basic query
+## Construct a basic query 
 
-###Query a single entity set
-To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: ```/Areas```, ```/Projects```,  or ```/WorkItems```. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
+You construct a basic query by entering the OData URL into a [supported web browser](../../tfs-server/requirements.md#supported-browsers). In the examples provided, replace `{account}` and `{project}` with your account name and  the name of a team project that you want to query. 
 
-For example, you query Areas by adding ```/Areas```. The full URL is:
+### Query a single entity set
+To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
+
+For example, you query Areas by adding `/Areas`. The full URL is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -343,10 +344,12 @@ The Analytics Service forces paging when query results exceed 10000 records. In 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Aggregate data](aggregated-data-analytics.md)
+> [Project & account-scoped queries](account-scoped-queries.md)
 
  
 ## Related notes
+- [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](http://www.odata.org/documentation/)  
 - [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
+

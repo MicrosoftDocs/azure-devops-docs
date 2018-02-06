@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Test different configurations
@@ -35,7 +35,9 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> This feature is available only in VSTS.
+> **Note**: This feature is available only in VSTS.
+In addition, Stakeholders and Basic users cannot create or manage configurations.
+You must have a Visual Studio Enterprise, Visual Studio Test Professional, or Test Manager subscription. 
 
 <a name="create-configs"></a>
 ## Create configurations and variables

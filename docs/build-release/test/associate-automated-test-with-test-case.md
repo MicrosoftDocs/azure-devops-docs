@@ -1,12 +1,12 @@
 ---
 title: Associate an automated test with a test case
-description: Manual and exploratory testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Associate automated tests with test cases
@@ -44,7 +44,7 @@ The process to associate an automated test with a test case is:
 
 If you are using Team Foundation Build and Release Management in
 VSTS or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
-Build & Release pipeline by using the
+Build and Release pipeline by using the
 [Visual Studio Test Agent Deployment](../../build-release/tasks/test/visual-studio-test-agent-deployment.md) and
 [Run Functional Tests](../../build-release/tasks/test/run-functional-tests.md) tasks.
 You must configure the [Run Functional Tests](../../build-release/tasks/test/run-functional-tests.md) task to use the

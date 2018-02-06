@@ -1,6 +1,9 @@
 ---
 title: View and add work items | VSTS  
 description: View and add work items using the work items page      
+f1_keywords: 
+- vs.tfc.teamexplorer.workitems
+- vs.tfc.teamexplorer.TeamExplorer
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
@@ -70,7 +73,7 @@ Work items can be filtered by typing a keyword or using one or more of the field
 ## Related notes
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 - [Enable preview features](../../collaborate/preview-features.md)
-
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 
 ### Got feedback?
 

@@ -9,34 +9,28 @@ ms.author: kaelli
 ms.date: 11/15/2017
 ---
 
-# Power BI (VSTS)
+# Power BI - Connecting to Visual Studio Team Services (VSTS)
 
-<b>VSTS</b> 
+**VSTS**
 
-By connecting to Power BI, you can analyze the progress and quality of your project from data available from the Analytics Service for Visual Studio Team Services (VSTS).
-
-
-[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
-
+Our Power BI integration makes getting the data into Power BI easy, so you can focus on creating amazing Power BI reports.
 
 ## How-to Guides
-- [Connect using the Data Connector](data-connector-connect.md)     
-- [Client authentication options](../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)
-- [Power BI desktop and OData aggregations](../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
-- [Share reports, publish to PowerBI.com](../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json) 
-- [Set permissions for Analytics Service](../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)  
+- [Connect using the VSTS Data Connector](data-connector-connect.md)
+- [Connect using VSTS OData feed](access-analytics-power-bi.md)    
+- [Connect using VSTS functions (Advanced)](data-connector-functions.md)  
+- [Client authentication](../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)
+- [Publish to PowerBI.com](publish-power-bi-desktop-to-power-bi.md) 
+
 
 <!---
 Future:
 - How to query for "Time in State"
 - Power BI Copy/Paste Support for default Views
 -->
-   
+## References
+- [Data available in the VSTS Data Connector](data-connector-available-data.md)  
 
-## Reference
-- [Data Connector available functions](data-connector-functions.md)    
-
-<!-- Note: The above document will be cut, once all content is verified as moved to extend\Analytics-->
 
 ## Resources 
 - [Analytics (VSTS)](../analytics/index.md)    

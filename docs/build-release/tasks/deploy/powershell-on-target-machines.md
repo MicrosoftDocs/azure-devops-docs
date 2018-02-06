@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: PowerShell on Target Machines

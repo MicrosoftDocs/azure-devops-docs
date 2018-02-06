@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
@@ -45,10 +45,9 @@ including yourself as the VSTS account owner, if not in the directory already.
   Suppose Jamal is an Azure AD global administrator at Fabrikam and is in the Fabrikam directory with his 
   work account (jamalhartnett@fabrikam.com). He's also the VSTS account owner and a user with his Microsoft 
   account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the 
-  Fabrikam directory.  If Jamal doesn't need his work history, he can use his work account with VSTS. But 
-  free up the access used by his Microsoft account, he must change the VSTS account owner to his work account. 
+  Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with VSTS. To free up the access used by his Microsoft account, he must change the VSTS account owner to his work account. 
 
-  Nicole, another user, has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address with her 
+  Nicole, another user, has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address as her 
   Microsoft account, so she will continue to work seamlessly with the same sign-in address.
 
   Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 

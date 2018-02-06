@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Manage your account
+  - name: About account management
     href: account-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
@@ -11,7 +11,11 @@
   - name: Create your VSTS account
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
-    href: /vsts/billing/try-additional-features-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../billing/try-additional-features-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+  - name: Add administrators or set permissions at the project or collection level
+    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
+  - name: Add a team administrator
+    href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: "1 - Change Azure AD tenant: setup"
@@ -26,13 +30,17 @@
     href: change-azure-ad-vsts-account-connect.md
   - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
     href: change-azure-ad-vsts-account-reassign-owner.md
+  - name: Change individual permissions 
+    href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+  - name: Grant or restrict permissions to select tasks
+    href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Adding Basic or VS subscription users to your account
     href: add-basic-or-vs-subscription-users.md
 - name: How-to Guides
   items:
-  - name: Manage accounts
+  - name: Manage your account
     items:
     - name: Change account owner
       href: change-account-ownership-vs.md
@@ -62,7 +70,7 @@
       href: save-team-project-data.md
     - name: Connect to team projects
       href: /vsts/user-guide/connect-team-projects?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Manage account access
+  - name: Manage access to your account
     items:
     - name: Add users to your account
       href: add-account-users-from-user-hub.md
@@ -89,13 +97,7 @@
       - name: Disconnect VSTS account from Azure AD
         href: disconnect-account-from-aad.md
       - name: Delete users from VSTS connected to Azure AD
-        href: delete-users-from-services-aad.md
-  - name: Permissions and access
-    items:
-    - name: Set permissions/administrators for projects or a project collection
-      href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
-    - name: Restrict access to resources
-      href: restrict-access-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+        href: delete-users-from-services-aad.md 
   - name: Manage extensions
     items:
     - name: Install an extension for VSTS
@@ -134,8 +136,12 @@
   items:
   - name: Permissions and access
     href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+  - name: Permission lookup guide 
+    href: ../security/permissions-lookup-guide.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Permissions and groups reference
     href: ../security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+  - name: VSTS data protection overview
+    href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: New User Guide

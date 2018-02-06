@@ -6,18 +6,16 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ms.topic: get-started-article
 ---
 
 # Deploy to a Windows Virtual Machine
 
-**VSTS**
+**VSTS | TFS 2018**
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
 Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
-
-For example, you can continuously deliver your app to a container hosted in Azure.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
@@ -51,7 +49,7 @@ The configuration varies depending on the type of app you are deploying.
 
 Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
-[!INCLUDE [temp](../_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
 ## Define your CD release process
 
@@ -85,7 +83,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 1. To test the release definition, choose **Release** and then **Create release**.
 
-1. In the Create new release panel, choose **Create**. Choose the link near the top of the window that indicates a new release was created. 
+1. In the Create new release panel, choose **Create**. Choose the link near the top of the window that indicates a new release was created.
 
 1. Open the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 

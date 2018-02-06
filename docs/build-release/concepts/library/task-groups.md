@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Task Groups
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 A *task group* lets you to encapsulate a sequence of tasks already defined
 in a build or a release definition into a single reusable task that can be
@@ -52,6 +52,9 @@ pointers to help you achieve the desired behavior:
   a value for, are not configurable in the task group when added to a build
   or release definition.
 
+* Task conditions (such as "Run this task only when a previous task has failed" for a
+  **PowerShell Script** task) can be configured in a task group and these settings are persisted with the task group.
+
 * When you save the task group, you can provide a name and a description for the
   new task group, and select a category where you want it to appear in the
   **Task catalog** dialog. You can also change the default values for each of the parameters.
@@ -62,7 +65,7 @@ pointers to help you achieve the desired behavior:
 * Changes you make to a task group are reflected in every instance of the task group.
 
 All the task groups you create in the current project are listed in
-the **Task groups** tab of the **Build & Release** hub.
+the **Task groups** tab of the **Build and Release** hub.
 
 ![Managing a task group](_img/manage-task-group.png)
 

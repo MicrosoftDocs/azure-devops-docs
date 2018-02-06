@@ -17,14 +17,19 @@ TfsMigrator could flag errors which need to be corrected before you start a migr
 
 <a id="process-validation-types"></a>
 ## Process Validation Types
+During the validation, TfsMigrator will determine the target process model for each project. If the project was created with the Agile, Scrum, or CMMI process template, and was never customized, the project will use the Inheritance process model. In all other cases, TfsMigrator considers the project as customized, and the project will use the Hosted XML process model. When the Hosted XML process is the targeted process model, TfsMigrator validates if the customizations can be migrated. TfsMigrator generates two files during the validation: 
 
-During the validation, the TfsMigrator will determine the target process model for each project. If the project was created with the Agile, Scrum, or CMMI process template, and was never customized, the project will use the Inheritance process model. In all other cases, the tfsMigrator considers the project as customized, and the project will use the Hosted XML process model. When the Hosted XML process is the target process model, the tfsMigrator validates the customizations can be migrated. The tfsMigrator generates two files during the validation: 
-1. __TfsMigrator.log__: contains the errors when your collection can't be imported due to process validation errors. You must fix all these process errors to proceed with the Import Service.
-2. __TryMatchOobProcesses.log__: lists for each project the target process model (Inheritance or Hosted XML), and describes for the ones that target the Hosted XML process why they are considered customized. You don't have to fix these errors, but they give you guidance what to do in case you want to migrate into the Inheritance process model. Note that once a collection is imported, it is not possible to migrate a project to the Inheritance process model. That is on our roadmap for end of 2018.
+**TfsMigrator.log** - Contains the set of process validation errors found in the collection. You must fix all these process errors to proceed with your migration.
+    
+**TryMatchOobProcesses.log** - Lists for each project the target process model - Inheritance or Hosted XML. For projects that are set to target the Hosted XML process model, it explains why they are considered to be customized. You don't have to fix these errors, but they give you guidance what to do in case you want to migrate into the Inheritance process model. Note that once a collection is imported, it is not possible to migrate a project to the Inheritance process model. That is on our roadmap for end of 2018.
+    
+Most customers have a mix of projects that have been customized (i.e. custom fields) and projects that are using an OOB process template. TfsMigrator checks each project and validates it accordingly. It is very possible you will have some projects that will be mapped to an OOB process and some projects will use the Hosted XML for their process customization.
+
+We recommend that for any project that has not been customized, that you review the TryMatchOobProcesses.log to determine if there are any errors. If so, make the adjustments accordingly so that the project can be mapped to an OOB process upon data import.
 
 ## Update to a System Process
 
-If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) then the tfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
+If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
 
 Here are some examples of error messages you will probably recieve:
 
@@ -63,16 +68,16 @@ Make sure you do this for each and every project.
 
 Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for VSTS. Odds are you will need to make some adjustments and apply them to your TFS collection.
 
-> If you are using an OOB Agile, Scrum, or CMMI process you probably won't see any errors in the tfsMigrator.log. Instead, check the TryMatchOobProcesses.log for errors. If you are error free then your project will map to an OOB process.
+> If you are using an OOB Agile, Scrum, or CMMI process you probably won't see any errors in TfsMigrator.log. Instead, check the TryMatchOobProcesses.log for errors. If you are error free then your project will map to an OOB process.
 
 There are variety of customizations that will not work in VSTS. Make sure you review the [list of customizations](../work/customize/import-process/differences.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) that are supported. 
 
-If you have projects that are using an older process template, the TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
+If you have projects that are using an older process template, TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
 
 Finally, make sure you have [witadmin](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) on the machine that you intend to use to fix the process errors. This can be your local desktop. Witadmin is used in the automated scripts and is required whenever making changes to the process templates.
 
 ### Step 1 – Review Errors
-TfsMigrator.log file will be generated and contains the list of errors that the validation process found. To view the logs, open the TfsMigrator.log file. Search for the string "Validation - Starting validation of project 1". Each project is validated so you will need to scan through all the projects. Examine any lines that have a prefix of "[Error …".
+TfsMigrator.log file will be generated and contains the list of errors that the validation process found. To view the logs, open TfsMigrator.log file. Search for the string "Validation - Starting validation of project 1". Each project is validated so you will need to scan through all the projects. Examine any lines that have a prefix of "[Error …".
 
 ![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
 
@@ -83,7 +88,7 @@ Now you know what projects have errors, the details of those errors, and how to 
 
 > We do not suggest using the TFS Power Tools. It is highly recommended that you modify the XML manually.
 
-To get the process template from the project add the /SaveProcesses parameter when running the tfsMigrator command.
+To get the process template from the project add the /SaveProcesses parameter when running TfsMigrator command.
 
 ```cmdline
 TfsMigrator validate /collection:{collection URL} /SaveProcesses
@@ -95,7 +100,7 @@ Now you need to fix the xml. Use the logs from the ```TfsMigrator.log``` file to
 
 ![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
 
-Some errors will require you to do use a [witamdin changefield](../work/customize/reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) command. Changing a field name is the most common example. To save yourself some time, we recommend you run the ```witadmin changfield ...``` command and then re-run the tfsMigrator tool. Doing this will re-export the xml with the corrected names. Otherwise you will need manually fix the fields in the xml as well.
+Some errors will require you to do use a [witamdin changefield](../work/customize/reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) command. Changing a field name is the most common example. To save yourself some time, we recommend you run the ```witadmin changfield ...``` command and then re-run TfsMigrator tool. Doing this will re-export the xml with the corrected names. Otherwise you will need manually fix the fields in the xml as well.
 
 Once you make a fix then you need to conform. Conform is defined as taking the XML you just changed and applying it back into TFS. To do this, depending on the changes you made, you will need to run one or more [witadmin](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) commands. To make this easier for you, we created a PowerShell script to automate the process. The script contains all of the witadmin commands needed to conform the entire process.
 
@@ -106,7 +111,7 @@ You can get the scripts at https://github.com/Microsoft/process-customization-sc
 ```
 ![Conform project processes script running](_img/migration-troubleshooting/conformProjectProcessesPowerShell.png)
 
-When the script has completed you need to re-run the TfsMigrator to validate the collection. Follow steps 1 - 3 until the TfsMigrator generates no more validation errors.
+When the script has completed you need to re-run TfsMigrator to validate the collection. Follow steps 1 - 3 until TfsMigrator generates no more validation errors.
 
 > If you are new to xml and witadmin, we suggest you make one fix at a time and then conform. Continue this loop until all errors are resolved. 
 
@@ -114,7 +119,7 @@ When the script has completed you need to re-run the TfsMigrator to validate the
 
 #### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change.
 
-In VSTS we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, the TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
+In VSTS we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
 
 To fix this you will need to run the witadmin changefield command. Syntax for the command will look something like this:
 

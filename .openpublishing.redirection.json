@@ -2,6 +2,41 @@
     "redirections":
 	[
         {
+            "source_path": "docs/integrate/get-started/rest/basics.md",
+            "redirect_url": "/rest/api/vsts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/how-to/assign-paid-extension-access.md",
+            "redirect_url": "/vsts/marketplace/assign-paid-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/how-to/request-tfs-extensions.md",
+            "redirect_url": "/vsts/marketplace/request-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/request-vsts-extension.md",
+            "redirect_url": "/vsts/marketplace/request-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/uninstall-disable-vsts-extensions.md",
+            "redirect_url": "/vsts/marketplace/uninstall-disable-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/how-to/approve-tfs-extensions.md",
+            "redirect_url": "/vsts/marketplace/approve-extensions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/approve-vsts-extensions.md",
+            "redirect_url": "/vsts/marketplace/approve-extensions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/api/overview.md",
             "redirect_url": "/rest/api/vsts",
             "redirect_document_id": false
@@ -9,6 +44,11 @@
         {
             "source_path": "docs/integrate/api/policy/overview.md",
             "redirect_url": "/rest/api/vsts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/archive/preview/release-definition-editor.md",
+            "redirect_url": "/vsts/build-release/actions/work-with-release-definitions",
             "redirect_document_id": false
         },
         {
@@ -54,6 +94,11 @@
         {
             "source_path": "articles/news/features-timeline.md",
             "redirect_url": "/vsts/release-notes/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/actions/build-yaml-get-started.md",
+            "redirect_url": "/vsts/build-release/actions/build-yaml",
             "redirect_document_id": false
         },
         {
@@ -288,7 +333,7 @@
         },
         {
             "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
+            "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
             "redirect_document_id": false
         },
         {
@@ -759,6 +804,11 @@
         {
             "source_path": "docs/package/get-started/overview.md",
             "redirect_url": "/vsts/package/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/package/symbol/setup.md",
+            "redirect_url": "/vsts/package/symbols/debug-with-symbols",
             "redirect_document_id": false
         },
         {
@@ -1329,11 +1379,6 @@
         {
             "source_path": "docs/tfs-server/team-services/get-more-user-licenses-vs.md",
             "redirect_url": "/vsts/billing/buy-basic-access-add-users",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/tfs-server/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
             "redirect_document_id": false
         },
         {
@@ -2793,62 +2838,72 @@
        },
         {
             "source_path": "docs/build-release/apps/jenkins/build-deploy-jenkins.md",
-            "redirect_url": " https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+            "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/tasks/tool/net-core-installer.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build-release/tasks/build/net-core-cli.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-app-service-deploy.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-app-service-manage.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-cloud-service-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-powershell.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-resource-group-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-sql-database-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-web-app-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/deploy-to-kubernetes.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/docker-deploy.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Docker",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/mobile-center-upload.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/MobileCenterDistribute",
+            "redirect_url": "https://docs.microsoft.com/en-us/appcenter/distribution/",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/sql-server-database-deployment.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlDacpacDeploymentOnMachineGroup",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlDacpacDeploymentOnMachineGroup",
             "redirect_document_id": false
         },
         {
@@ -2878,7 +2933,7 @@
         },
         {
             "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest",
+            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
             "redirect_document_id": false
         },
         {
@@ -3528,7 +3583,7 @@
        },
        {
             "source_path": "docs/build-release/tasks/test/mobile-center-test.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
             "redirect_document_id": false
        },
        {
@@ -4600,6 +4655,146 @@
             "source_path": "docs/reporting.md",
             "redirect_url": "/vsts/#pivot=services&panel=reporting",
             "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
+        "redirect_url": "/vsts/build-release/concepts/definitions/release/approvals/index",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/apps/cd/deploy-docker-windowsvm.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-docker-webapp",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/configure-burndown-burnup-widgets.md",
+        "redirect_url": "/vsts/report/dashboards/configure-burndown-burnup-widgets",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/burndown-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/burndown-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cumulative-flow.md",
+        "redirect_url": "/vsts/report/dashboards/cumulative-flow",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cumulative-flow-cycle-lead-time-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/cumulative-flow-cycle-lead-time-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/cycle-time-and-lead-time.md",
+        "redirect_url": "/vsts/report/dashboards/cycle-time-and-lead-time",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/team-velocity.md",
+        "redirect_url": "/vsts/report/dashboards/team-velocity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/velocity-guidance.md",
+        "redirect_url": "/vsts/report/dashboards/velocity-guidance",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/analytics-widgets-VSTS.md",
+        "redirect_url": "/vsts/report/analytics/analytics-widgets-VSTS",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/enable-analytics-velocity.md",
+        "redirect_url": "/vsts/report/analytics/enable-analytics-velocity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/guidance/workbooks.md",
+        "redirect_url": "/vsts/report/sharepoint-dashboards/workbooks",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/dashboards/address-inaccuracies-published-for-summary-values.md",
+        "redirect_url": "/vsts/report/sql-reports/address-inaccuracies-published-for-summary-values",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/building-extension-against-analytics-service.md",
+        "redirect_url": "/vsts/report/extend-analytics/building-extension-against-analytics-service",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/widget-extension-against-analytics-service-configuration.md",
+        "redirect_url": "/vsts/report/extend-analytics/widget-extension-against-analytics-service-configuration",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/widget-extensions-against-analytics-service.md",
+        "redirect_url": "/vsts/report/extend-analytics/widget-extensions-against-analytics-service",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/report/analytics/analytics-recipes.md",
+        "redirect_url": "/vsts/report/extend-analytics/analytics-recipes",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/get-hockeyapp.md",
+        "redirect_url": "https://www.visualstudio.com/app-center/",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/articles/git-dates.md",
+        "redirect_url": "/vsts/git/concepts/git-dates",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups.md",
+        "redirect_url": "/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups#create-a-deployment-group",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/build-release/actions/debug-deployment-issues.md",
+        "redirect_url": "/vsts/build-release/concepts/definitions/release/variables#debug-mode",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/restrict-access-tfs.md",
+        "redirect_url": "/vsts/security/restrict-access",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/view-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/manage-vs-subscriptions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/link-msdn-subscription-concept.md",
+        "redirect_url": "/vsts/billing/faq-vs-subscriptions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/billing-concepts.md",
+        "redirect_url": "/vsts/billing/overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/user-guide/kanban-agile.md",
+        "redirect_url": "/vsts/work/backlogs/overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/link-msdn-subscription-to-organizational-account-vs.md",
+        "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/user-guide/team-projects-teams-repos.md",
+        "redirect_url": "/vsts/work/scale/scale-teams",
+        "redirect_document_id": false
        }
     ]
 }

@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 10/17/2017
 ---
 
 #	Create your VSTS account with a personal Microsoft account or a work/school/organization account
@@ -76,7 +76,7 @@ VSTS account access. And all users must sign in with Microsoft accounts.
 <a name="SignIn"></a>
 ## Create your account and sign up for VSTS
 
-0.	Go to [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137).  Enter the email address for your Microsoft account, or for Azure AD, use your work or school account.
+0.	Go to [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137).  Enter the email address for your Microsoft account, or for Azure AD use your work or school account.
 
 	**Microsoft account**: If you're a Visual Studio subscriber and get VSTS as a benefit, use the Microsoft account associated with your subscription. 
 
@@ -97,7 +97,7 @@ using **Azure AD**, and you don't have a Microsoft account, you can create a Mic
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-account.md#ChooseOrgAcctMSAcct)
 
-0.	Name your VSTS account.  To manage your code, choose Git or Team Foundation Version Control.
+0.	Name your VSTS account. To manage your code, choose Git or Team Foundation Version Control.
 
 	![Name your account, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-account-directory.png)
 
@@ -139,9 +139,9 @@ add code, work items, or more users.
 	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
 	> subscription so you can use your subscriber benefits in VSTS.
 
-## Next steps 
-
-*	[Manage users and access](add-account-users-assign-access-levels.md)
+## Try this next
+> [!div class="nextstepaction"]
+> [Manage users and access](add-account-users-assign-access-levels.md)
 
 *	Add code to Git or Team Foundation version control
 

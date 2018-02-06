@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ms.custom: mvc
 ---
 
@@ -51,7 +51,7 @@ You'll need:
   If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you
   can easily identify them. If you need help, follow the steps in
-  [this example](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
+  [the ASP.NET Core web app deployment tutorial](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
 ## Configure the triggers in your release definition
 
@@ -164,7 +164,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
    You can add as many approvers as you need, both individual accounts and account groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
-   For more information, see [Environments in Release Management](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Approvals and gates overview](../../build-release/concepts/definitions/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 
 1. Save the modified release definition.
 
@@ -251,10 +251,9 @@ from the release you created in the previous section.
    ![Viewing the deployed app in the production environment](_img/define-multistage-release-process/finished-app.png)
 
 If you are having problems with a deployment, you can get more information from the log files by
-running the release in debug mode. For more information, see
-[How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json).
+[running the release in debug mode](../../build-release/concepts/definitions/release/variables.md#debug-mode).
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Use approvals and gates to control your deployment](deploy-using-approvals.md)

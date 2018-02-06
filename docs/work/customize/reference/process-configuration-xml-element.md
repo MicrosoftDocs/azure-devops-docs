@@ -1,12 +1,13 @@
 ---
-title: ProcessConfiguration syntax | VSTS & TFS  
+title: ProcessConfiguration syntax 
+titleSuffix: VSTS & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/01/2017
+ms.date: 12/15/2017  
 ---
 
 # Process configuration XML element reference
@@ -811,3 +812,5 @@ Learn more about the web work item form and how to customize it from these addit
 - [On-premises XML process model](../on-premises-xml-process-model.md)   
 
 If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).
+
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
