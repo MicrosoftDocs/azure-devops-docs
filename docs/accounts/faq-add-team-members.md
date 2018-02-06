@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 10/17/2017
 ---
 
 #	Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)

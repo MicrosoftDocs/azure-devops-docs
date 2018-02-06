@@ -126,7 +126,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
 
 2. Fill in the default values you want the template to specify. You can leave required fields empty, or place some text in them
 	
-	Here, we fill in several values, including tags, but leave the Title blank. When your done, copy the URL for the template. 
+	Here, we fill in several values, including tags, but leave the Title blank. When you're done, copy the URL for the template. 
 
 	![Define fields and choose Copy the URL](_img/wit-template-task-form-tfs-copy-url.png)    
 
@@ -414,3 +414,4 @@ However, you can quickly copy tasks, test cases, bugs, and other items using [Ex
 
 Another option is to use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

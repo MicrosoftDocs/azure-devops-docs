@@ -20,7 +20,7 @@ When using this modal dialog, dialog overlay will cover only the area dedicated 
 </div> 
 
 <a name="basic"></a>
-### Simple modal dialog
+## Simple modal dialog
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
 ``` javascript
 	import Dialogs = require("VSS/Controls/Dialogs");
@@ -35,7 +35,7 @@ Below sample use the simplistic modal dialog usage where no button is displayed 
 ```
 
 <a name="form"></a>
-### Displaying a form in a modal dialog
+## Displaying a form in a modal dialog
 Below sample shows displaying a form in a modal dialog and getting the result when it is valid.
 
 ``` html
@@ -109,7 +109,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 ```
 
 <a name="confirmation"></a>
-### Confirmation dialog
+## Confirmation dialog
 Below sample displays how to use modal dialgo as a confirmation dialog.
 
 ``` javascript

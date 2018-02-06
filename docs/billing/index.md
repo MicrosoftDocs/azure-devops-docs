@@ -1,43 +1,38 @@
 ---
-title: Billing for VSTS  
-description: Make purchases and manage billing for VSTS extensions, Visual Studio subscriptions, Visual Studio Code, HockeyApp, Xamarin University, and CSP customers
+title: Billing for VSTS and TFS  
+description: VSTS charges appear on your monthly Azure bill, and supports Enterprise Agreement (EA), Cloud Solution Provider (CSP), and Direct/Pay-As-You-Go Azure subscriptions
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 1/29/2018
 ---
 
-# Billing
+## Billing for VSTS
 
-**VSTS** | **TFS 2017** | **TFS 2015**
+All VSTS charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), 
+Cloud Solution Providers (CSP), and more.
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing overview](overview.md)
 
-Make purchases and manage billing for VSTS and TFS extensions (for example, Test Manager or Package Management), 
-Visual Studio subscriptions, Visual Studio and Visual Studio Code extensions, HockeyApp, Xamarin University, 
-and Cloud Solution Provider customers.
+## Billing for TFS
 
+**TFS 2018** | **TFS 2017** | **TFS 2015**
+
+You can also make some purchases for TFS on your monthly Azure bill. 
+* [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing/)
+* [How to buy TFS CALs or access to the TFS Test hub](buy-access-tfs-test-hub.md)
 
 ## 5-Minute Quickstarts  
 
- * [Set up billing](set-up-billing-for-your-account-vs.md)
- * [Try extensions for free](try-additional-features-vs.md)
- * [Pay for more users](buy-basic-access-add-users.md)
+ * [Set up billing for VSTS](set-up-billing-for-your-account-vs.md)
+ * [Free trials for paid VSTS features and extensions](try-additional-features-vs.md)
+ * [How to pay for VSTS users](buy-basic-access-add-users.md)
+ * [How to buy VSTS CI/CD](buy-more-build-vs.md)
 
 
-## Step-by-Step Tutorials
+## Other Resources 
 
-* [Change Azure AD tenant](../accounts/change-azure-active-directory-vsts-account.md)
-
-
-## Concepts 
-
-* [Set up billing](billing-concepts.md)
-* [Use MSDN subscription with organizational account](link-msdn-subscription-concept.md)
-
-
-## Resources 
-
-* [Key concepts](../user-guide/concepts.md)
-* [Software development roles](../user-guide/roles.md)
-* [Pricing](https://www.visualstudio.com/team-services/pricing/)
+* [How to buy Visual Studio cloud subscriptions](vs-subscriptions/buy-vs-subscriptions.md)
+* [How to buy Xamarin University subscriptions](xamarin-univ.md)

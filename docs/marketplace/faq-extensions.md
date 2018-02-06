@@ -99,7 +99,7 @@ For example, the Test Manager extension requires at least Basic access.
 ## Purchases & billing
 
 
-[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](../billing/_shared/qa-azure-billing.md)]
 
 <a name="bill-period"></a>
 

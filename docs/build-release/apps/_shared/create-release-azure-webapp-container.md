@@ -25,6 +25,8 @@
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
 
+   - **App Service type**: Select **Web App for Containers**.  
+
    - **App Service Name**: Select the name of the web app from your subscription.
 
    When you select the Docker-enabled app service, the task recognizes that it is a
@@ -32,11 +34,9 @@
 
    - **Registry or Namespace**: Enter the path to your Azure Container Registry. Typically this is _your-registry-name_**.azurecr.io**
 
-   - **Repository**: Enter the name of your repository, which is typically the name of the app you started with.  
+   - **Repository**: Enter the name of your repository, which is typically of the format `<account name>/<code-repo-name>`.  
 
    - **Tag**: Enter `$(Build.BuildId)`. The tag that was created automatically is the build identifier.
-
-     ![Configuring the App Service Deployment task](_img/configure-docker-app-service-deploy-task.png)
 
 1. Save the release definition.
 

@@ -10,8 +10,6 @@ author: egeaney
 
 #VM deployment and Delivery Plans – May 11
 
-**Note:** The features discussed in this post will be rolling out over the next three weeks.
-
 This sprint has our //Build conference deliverables in it, so it’s a big one, especially in the CI/CD space. 
 
 One of our goals is to keep lowering the barrier to entry for  automating your application deployment. The ease with which teams can deploy and validate their application is a huge part of how quickly they are able to ship. While our CI/CD system is completely open, by doing deep integrations with Azure we can make setting up deployments extremely simple.  It also unlocks many opportunities for richer workflows that span both development and operations.  To that end, we are continuing to strive to make VSTS + Azure the best end-to-end DevOps experience.  

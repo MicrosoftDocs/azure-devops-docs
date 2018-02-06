@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 
@@ -71,9 +71,7 @@ Load test your app with hundreds of thousands of users using
   of how long your test is and how many users the test simulates.
 
 * You get a generous allocation of virtual user minutes free each month.
-
-* See the section **Performance &amp; Load Testing** at the bottom of the
-  [VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) page.
+  See the [VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) page.
   
 ## More information
 
@@ -84,6 +82,8 @@ Load test your app with hundreds of thousands of users using
 * [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
 
 * [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
+
+* [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 If you prefer to run your tests in a local environment rather
 than in the cloud, see [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).

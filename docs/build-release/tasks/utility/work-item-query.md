@@ -6,14 +6,14 @@ ms.technology: vs-devops-build
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
-# Utility: Work item query
+# Utility: Query Work Items
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
+![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
 Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
 
@@ -32,7 +32,7 @@ None
 
 Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maximum-threshold_
 
-For more information about using this task, see [Release approvals and gates](../../concepts/definitions/release/approvals/index.md).
+For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 

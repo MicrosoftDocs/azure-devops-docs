@@ -145,11 +145,13 @@
 - name: Troubleshooting
   items:
   - name: Address inaccuracies published for summary values
-    href: ../dashboards/address-inaccuracies-published-for-summary-values.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
+    href: address-inaccuracies-published-for-summary-values.md
   - name: Resolve schema conflicts in the data warehouse
     href: ../admin/resolve-schema-conflicts.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: SharePoint Integration
+    href: ../sharepoint-dashboards/index.md
   - name: Server Administration (TFS)
     href: ../../tfs-server/index.md
   - name: TFS - Reporting & Warehouse forum

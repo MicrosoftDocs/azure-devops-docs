@@ -8,7 +8,7 @@ ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/08/2017
+ms.date: 11/16/2017
 ---
 
 
@@ -50,7 +50,7 @@ By setting team capacity and estimating tasks, the team can see when the team or
 >[!NOTE]  
 >Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/).
 >  
->When you've completed your sprint plant, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
+>When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
 
 ##First pass: identify an initial set of work to complete
@@ -177,7 +177,7 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure your team remains on track throughout the sprint. 
 
-You can use [hotkeys and keyboard shortcuts](../../collaborate/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
+You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
 
 ## Related notes
 
@@ -216,5 +216,5 @@ If you receive the following message, [you can fix it by removing nested child i
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
 

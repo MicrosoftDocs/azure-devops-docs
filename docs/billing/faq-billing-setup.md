@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 1/29/2018
 ---
 
 # Billing troubleshooting
@@ -24,7 +24,7 @@ ms.date: 10/6/2017
 
 [!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
-<a name="AzureMSDNSubscription"></a>
+<a name="EligibleAzureSubscriptions"></a>
 
 [!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
@@ -77,7 +77,7 @@ A:  This might happen because:
 
 * You're not the VSTS account owner.
 
-*   You're not at least Co-administrator 
+*   You're not at least co-administrator 
 on the Azure subscription that you want to link.
 
 * If you don't see any VSTS accounts, 
@@ -95,40 +95,27 @@ your account might already linked to another Azure subscription.
 
 <a name="BillingRestriction"></a>
 
-####Q: Are there billing restrictions that might stop me from linking my VSTS account to my Azure subscription?
-
-A:  Yes, you can link accounts in India South 
-only to Azure subscriptions with 
-billing addresses in the same region.
-Otherwise, you'll see this message:
-
-"You need an Azure subscription that is 
-valid for VSTS accounts in India South."
-
 ####Q: Why is my VSTS account already linked to an Azure subscription?
 
-A: This happens if your VSTS account was already 
-set up for billing with an Azure subscription, either manually 
-through Azure or while purchasing from the 
-[Visual Studio Marketplace](../marketplace/index.md)
-for your account. The selected Azure subscription is also 
-used to bill all later purchases for your account.
+A: This happens if someone already set up billing for your VSTS account, either  
+through the Azure portal or while purchasing something for this account via the 
+[Visual Studio Marketplace](../marketplace/index.md). Each VSTS account can only use one Azure subscription for billing, 
+charges cannot be split across multiple Azure subscriptions.
 
-####Q:  Can I link an Azure subscription to multiple VSTS accounts?
+####Q:  Can I use the same Azure subscription for billing across multiple VSTS accounts?
 
-A:  Yes, you can link an Azure subscription to multiple VSTS accounts. But you can't link a Team 
-Services account to multiple Azure subscriptions.
+A:  Yes, you can use the same Azure subscription for billing across multiple VSTS accounts. But you can't link a single VSTS account to multiple Azure subscriptions.
 
 <a id="azure-billing"></a>
 
 ####Q: How does Azure billing work?
 
-A: When you link your VSTS account to an Azure subscription, 
-you select an eligible [Azure subscription](#AzureMSDNSubscription) 
-where you have Co-administrator permissions or greater. 
+A: When you set up billing for your VSTS account to an Azure subscription, 
+you select an eligible [Azure subscription](#EligibleAzureSubscriptions) 
+where you have co-administrator permissions or greater. 
 If you don't have an Azure subscription, you can either 
 [sign up](https://portal.azure.com) for a new one, 
-or have an Azure administrator [add you as Co-Administrator](add-backup-billing-managers.md) 
+or have an Azure administrator [add you as co-administrator](add-backup-billing-managers.md) 
 to an Azure subscription that you can use to bill purchases. 
 
 Payment is set up with a credit card, or by invoice in some cases. 
@@ -162,7 +149,7 @@ Learn more about [pricing here](https://www.visualstudio.com/products/visual-stu
 
 A: Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
 or the [Azure portal](https://portal.azure.com/) 
-as the VSTS account owner or at least Azure subscription Co-administrator. 
+as the VSTS account owner or at least Azure subscription co-administrator. 
 Select your VSTS account, reduce any paid users to zero, and turn off any 
 paid VSTS. Your VSTS account and bill won't show any changes 
 in paid users or VSTS until next month when these changes take effect. 
@@ -192,7 +179,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 
 A: Your account will revert to the free number 
 of users and pipelines on the 1st of next month, 
-but Cloud-based Load Testing **immediately** 
+but cloud-based load testing **immediately** 
 reverts to your free monthly limits. 
 Unlinking will cancel paid non-Microsoft 
 extensions **without refund or credit**.
@@ -212,7 +199,7 @@ If you wait until the 1st of next month to relink,
 your VSTS account will revert to the free amounts. 
 Any paid users will appear expired in your account's 
 Users hub. Make sure that you repurchase any paid users 
-so they don't lose access on the 1st of next month.
+so they don't lose access on the 1st of the next month.
 
 <a name="get-support"></a>
 

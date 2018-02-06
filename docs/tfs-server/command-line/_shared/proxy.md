@@ -1,5 +1,3 @@
->**Command availability:** TFS 2015, TFS 2013, and TFS 2012
-
 You can use the **TFSConfig Proxy** command to update or change the settings used by Team Foundation Server Proxy.
 Team Foundation Server Proxy provides support for distributed teams to use version control by managing a cache of downloaded version control files in the location of the distributed team.
 By configuring Team Foundation Server Proxy, you can significantly reduce the bandwidth needed across wide area connections.
@@ -12,7 +10,7 @@ For more information about installing Team Foundation Server Proxy and initial c
 see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remote site </span>. For more information about configuring proxy on client computers, see [Team Foundation Version Control Command Reference](http://go.microsoft.com/fwlink/?LinkId=254422).
 
     TFSConfig Proxy /add|delete|change [/Collection:TeamProjectCollectionURL /account:AccountName]
-		/Server:TeamFoundationServerURL [/Continue]
+		/Server:TeamFoundationServerURL [/inputs:Key1=Value1; Key2=Value2;...] [/Continue]
 
 <table>
 	<thead>
@@ -70,6 +68,18 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td><strong>/account</strong>:ServerURL</td>
 			<td>Specifies the URL of a TFS deployment, in `ServerURL:Port/tfs` format.</td>
 		</tr>
+		<tr>
+			<td><strong>/PersonalAccessTokenFile</strong>:PathToFileWithPAT</td>
+			<td>Optionally specifies the path to a file that contains a personal access token. This token will be used authenticate to the collection or account while registering a proxy. (Added in TFS 2018 Update 1)</td>
+		</tr>
+		<tr>
+			<td><strong>/inputs</strong>:Key1=Value1; Key2=Value2;...</td>
+			<td>
+				Optional. Specifies additional settings and values to use while configuring the proxy.<br/><br/>
+				For example, values for "GvfsProjectName" and "GvfsRepositoryName" can be used to configure a Git repository for use with <a href="https://gvfs.io">Git Virtual File System</a> (GVFS)
+				(Added in TFS 2018 update 1)
+			</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -87,11 +97,20 @@ The following example shows how to add a TFS deployment named FABRIKAM to the pr
 
     TFSConfig Proxy /add /Server:http://www.fabrikam.com:8080/tfs 
 
-The following example shows how to add a team project collection hosted on VSTS to the proxy list. The collection is named PhoneSaver and the account name used for VSTS is HelenaPetersen.fabrikam.com. Because the /account option is not specified, the default service account will be used.
+The following example shows how to add a team project collection hosted on VSTS to the proxy list using a [Personal Access Token](/vsts/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the VSTS account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with VSTS without requiring a login prompt.
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
+
+The following example shows how to add a team project collection to the proxy list. This example uses a personal access token to authenticate against the collection specified with the "/Collection" parameter. The personal access token to be used is saved to a file at "c:\PersonalAccessToken.txt"
+
+    TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
+		/PersonalAccessTokenFile:c:\PersonalAccessToken.txt
 
 The following example shows how to change the service account used by the proxy for the team project collection hosted on VSTS. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"
+
+The following example shows how to add a Git repository for use with GVFS.
+
+    TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver /inputs:GvfsProjectName=PhoneSaver;GvfsRepositoryName=AnotherRepository

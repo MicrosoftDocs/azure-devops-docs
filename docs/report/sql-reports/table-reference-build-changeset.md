@@ -11,7 +11,7 @@ ms.date: 10/17/17
 
 # Build Changeset tables
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can query for data about the changesets that were incorporated in each build by using FactBuildChangeset and the associated dimension tables.  
   

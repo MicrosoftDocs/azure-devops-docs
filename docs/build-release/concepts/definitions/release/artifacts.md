@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Artifacts in Release Management
@@ -110,11 +110,13 @@ latest version of the artifacts. At the time of linking an artifact source to a 
 you can change this behavior by selecting one of the options to use the latest build from a specific
 branch by specifying the tags, a specific version, or allow the user to specify the version when the
 release is created from the definition.
+
+![Adding an artifact](_img/artifacts-02.png)
+
 If you link more than one set of artifacts, you can specify which is the primary
 (default).
 
-![Selecting a default version option](_img/artifacts-02.png)
-
+![Selecting a default version option](_img/artifacts-02a.png)
  
 The following sections describe how to work with the different types of artifact
 sources.
@@ -136,7 +138,7 @@ Some of the differences in capabilities between different versions of TFS and VS
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 

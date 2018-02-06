@@ -6,15 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/17/17
+ms.date: 11/15/2017
 ---
 
 # Add a report server
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
-
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 This is the first task in the four-task sequence to add reports to a team project. If you have already installed SQL Reporting Services and Analysis Server, then go to step 2 to upload reports.
 
@@ -22,6 +19,11 @@ This is the first task in the four-task sequence to add reports to a team projec
 [![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
 [![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+
+
+>[!IMPORTANT]
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+
 
 
 On-premises installations of TFS can include reports to help you manage your software development projects. However, you need a report server as part of your deployment in order to use them. If you don't have one, you can add SQL Server Reporting Services to your deployment. 
@@ -61,7 +63,7 @@ Jump to the bottom of this topic to confirm that reports are available for the t
 
 ## Verify your options and upgrade if necessary
 
-1.	Find out what version and edition of SQL Server you haveby following the instructions provided in [Validate a SQL Server Installation](https://technet.microsoft.com/library/bb510455.aspx). 
+1.	Find out what version and edition of SQL Server you have by following the instructions provided in [Validate a SQL Server Installation](https://technet.microsoft.com/library/bb510455.aspx). 
 	If the answer is SQL Server Express, keep following these steps. If it's any other edition, but you don't see any version and edition information about reporting or analysis services, jump ahead to [Add Reporting Services](#AddRSandAS). If you do see information about these services, then your SQL Server already has them installed, and you can jump ahead to [Add Reporting to TFS](#AddRStoTFS).  
 
 2.	If your deployment is using SQL Server Express, [upgrade to a different edition](https://msdn.microsoft.com/library/cc707783.aspx). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](../../tfs-server/requirements.md#sql-server). 

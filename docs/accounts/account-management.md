@@ -6,22 +6,27 @@ ms.technology: vs-devops-setup
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
 
-# Manage your account
+# About account management  
 
 **VSTS**
 
-With Visual Studio Team Services (VSTS), you can collaborate with others to develop applications using our cloud service.  
+With a Visual Studio Team Services (VSTS) account, you gain access to the platform in which you can:
+* Collaborate with others to develop applications using our cloud service
+* Plan and track your work as well as code defects and issues 
+* Set up continuous integration and deployment 
+* Integrate with other services using service hooks 
+* Obtain additional features through Marketplace extensions   
 
 ## Create your account
 
-To get started, you'll want to [create your VSTS account](create-account-msa-or-work-student.md) and then invite others to collaborate within your account.  
+To get started, you'll want to [create your VSTS account](create-account-msa-or-work-student.md) and then invite others so they can access your account.  
 
-You'll choose Git or Team Foundation as your version control, 
+Choose Git or Team Foundation as your version control, 
 so that VSTS can create your team project for code and other assets, 
 like builds, tests, and work items. If you're starting with Visual Studio 
 as your development environment, you can create your VSTS account when you 
@@ -57,18 +62,18 @@ Or [add users to your team project](add-team-members-vs.md),
 and let VSTS assign the next available access to them.
 
 ## Try extensions for free
-Help your team do more with VSTS extensions. 
+Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/). 
 For example, VSTS account owners can 
 try the Test Manager extension free for 90 days. 
 During the trial, all users with Basic access can 
 [try Test Manager for free](../billing/try-additional-features-vs.md).
 
 ## Set up billing
-If you need more than free users and amounts 
+If you need more than the free users and amounts 
 of services included with your account, 
 [set up billing for your account](../billing/set-up-billing-for-your-account-vs.md).
 You can then pay for more users with Basic access, 
-pay for more services, and purchase extensions for your account.
+buy more services, and purchase extensions for your account.
 
 ## Access with Azure AD
 VSTS works with Azure Active Directory (Azure AD), 

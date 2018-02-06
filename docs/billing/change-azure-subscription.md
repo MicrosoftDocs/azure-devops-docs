@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 1/29/2018
 ---
 
 # Change the Azure subscription your VSTS account uses for billing
@@ -14,47 +14,39 @@ ms.date: 10/6/2017
 **VSTS**
 
 
-If you want to use another Azure subscription to bill purchases for your VSTS account, 
+If you want to use a different Azure subscription to bill purchases for your VSTS account, 
 you can unlink your VSTS account from your current Azure subscription, 
 and relink your account to another Azure subscription that's associated with you as the VSTS account owner. 
 
 
-## What do I need to change my Azure subscription?
+## Prerequisites
 
-* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner))
+* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)).
 
-* At least [an **owner** or **contributor** role](add-backup-billing-managers.md) for both Azure subscriptions
+* At least [an **owner** or **contributor** role](add-backup-billing-managers.md) for both Azure subscriptions.
 
-> When you unlink your account, any paid users or pipelines that you've 
-> committed for the month will stay unaffected until the 1st of next month, 
+>[!NOTE]
+> When you unlink your account, any paid VSTS users, Package Management users, Test Manager users, CI/CD hosted pipelines, or CI/CD private pipelines that you've 
+> committed for the month will continue uninterrupted until the 1st of next month, 
 > but your account will revert immediately to the free monthly limits 
-> for Cloud-based Load Testing. This will also cancel any 
+> for cloud-based load testing. Unlinking will also cancel any 
 > non-Microsoft paid extensions without refund or credit.
 >
-> When you relink your account to another Azure subscription, 
-> you'll have to add your paid users again, 
-> extensions, and pipelines by repurchasing them in the 
-> Visual Studio Marketplace, or if applicable, 
-> resetting previous quantities in the Azure portal.  If 
-> you've paid for any Microsoft resources this month, 
-> those resources won't be billed again, 
-> but rebuying non-Microsoft extensions 
-> will be treated as new purchases and 
+> After you relink your account to another Azure subscription, 
+> you'll need to make your purchases again for this VSTS account in the Visual Studio Marketplace, to ensure you have continued coverage at the 1st of the next month. 
+> You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. 
+> Purchases of non-Microsoft extensions will be treated as new purchases and 
 > billed immediately to your new Azure subscription.
 >
-> If you wait until the 1st of next month to relink, 
-> your VSTS account will revert back to the free amounts, 
-> for example, 5 free users. This means that if you have 
-> any paid users, they'll appear expired in your VSTS account. 
-> So, make sure to restore any paid users so they don't lose access 
-> on the 1st of next month.
+> If you wait until the 1st of next month to relink and to make your purchases again, 
+> your VSTS account will revert back to the normal free amounts and users in excess of the free limits will appear as expired in your account. 
 
 
 <a name="AzurePortal2"></a>
 ## Change subscription
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
-as VSTS account owner and as Azure subscription Co-administrator or greater.
+as VSTS account owner and as Azure subscription co-administrator or greater.
    
     If you experience browser problems with Azure, 
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
@@ -64,32 +56,17 @@ Select your VSTS account.
 
  ![More services, Developer tools, VSTS, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 
-0. Unlink your account.
+0. Unlink your VSTS account.
 
  ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
 
- Your VSTS account is removed from Azure. 
- You'll now relink your account to a new Azure subscription.
+ Your VSTS account is removed from this Azure subscription, breaking the billing relationship. 
 
-0. Go to **More services** > **Developer tools** > **VSTS accounts**. 
-Select your VSTS account.
+0. Make your purchases again. During your first purchase, select the new Azure subscription to use for billing going forward.
 
- ![More services, Developer tools, VSTS accounts, select your account](_img/set-up-billing/ap_vso_startlink2.png)
-
-0. Select your Azure subscription. 
-Finish relinking your account.
-
- ![Select an Azure subscription](_img/set-up-billing/ap_vso_change-azure-subscription.png)
-
- After you finish relinking, 
- your account reappears in the Azure portal with 
- your selected Azure subscription.  For more details, see 
- [how to link your VSTS account to an Azure subscription](set-up-billing-for-your-account-vs.md#AzurePortal).
-
-0. You need to add paid users, extensions, pipelines, etc., by repurchasing them and 
-resetting previous quantities in the Azure portal.  If you've paid for any Microsoft resources this month, 
-those resources won't be billed again, but billing treats rebuying non-Microsoft extensions 
-as new purchases and bills immediately to your new Azure subscription.  Follow these steps to restore any 
-[paid users](buy-basic-access-add-users.md), [agents](buy-more-build-vs.md), or 
-[extensions](../marketplace/install-vsts-extension.md).
-
+- [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+- [CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+- [CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).

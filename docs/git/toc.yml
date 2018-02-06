@@ -70,6 +70,8 @@
       href: pull-requests.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
+    - name: Extend pull request workflows with pull request status
+      href: concepts/pull-request-status.md
   - name: Forks
     href: concepts/forks.md
   - name: Authentication
@@ -90,10 +92,16 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-  - name: Create a pull request status server
-    href: how-to/create-pr-status-server.md
-  - name: Configure branch policy for an external service
-    href: how-to/pr-status-policy.md
+  - name: Pull request status
+    items:
+    - name: Create a pull request status server
+      href: how-to/create-pr-status-server.md
+    - name: Use Azure Functions to create custom branch policies
+      href: how-to/create-pr-status-server-with-azure-functions.md
+    - name: Configure branch policy for an external service
+      href: how-to/pr-status-policy.md
+  - name: Define a CI build for your repo
+    href: ../build-release/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
@@ -120,6 +128,8 @@
       href: delete-branch.md
     - name: Restore a deleted branch
       href: restore-deleted-branch.md
+    - name: Require branch folders
+      href: how-to/require-branch-folders.md
     - name: Lock a branch
       href: lock-branches.md
     - name: Branch policies
@@ -130,6 +140,8 @@
     href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
     href: ../build-release/concepts/definitions/build/triggers.md
+  - name: Work with tags
+    href: how-to/git-tags.md
 - name: Reference
   items:
   - name: Command reference

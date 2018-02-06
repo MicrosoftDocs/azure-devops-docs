@@ -6,11 +6,13 @@ ms.technology: vs-devops-reporting
 ms.assetid: f382806c-9509-45bf-b175-51a2c853621a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 11/15/2017
 ---
+
+
 # View, organize, and configure reports using Report Manager 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 After you create and publish reports in SQL Server Report Designer, you can use SQL Server Reporting Services' Report Manager to view, organize, and configure those reports. By using Report Manager, you can group related reports in folders, adjust parameters and data sources, and schedule automated reports. You can also configure different methods by which your reports are saved. For example, you can save a copy of a report (sometimes referred to as a snapshot) as report history. You can also export and save reports and have reports copied automatically to a file share.  
   

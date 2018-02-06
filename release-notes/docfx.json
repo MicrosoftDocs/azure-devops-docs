@@ -30,7 +30,17 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-TeamServices",
+      "ms.topic": "conceptual",
+      "author": "alexn",
+      "ms.author": "alexn",
+      "ms.prod": "vs-devops-alm",
+      "ms.version": "ALM",
+      "MSHAttr.msprod": "ms.prod:ALM",
+      "ms.prodfamily": "ALM",
+      "hide_comments": "true"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "release-notes"

@@ -10,8 +10,6 @@ author: egeaney
 
 #New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have a lot of new features rolling out this sprint!
 
 ##New navigation experience is On by default
@@ -86,7 +84,7 @@ Custom picklist fields can be configured to allow users to enter their own value
 
 This feature also enables users to use picklist fields with the multi-value control extension available in the [marketplace](https://marketplace.visualstudio.com/).
 
-##Xcode 8 signing and exporting packages in the Xcode Build Task
+##Xcode 8 signing and exporting packages in the Xcode task
 The Xcode task now supports building your projects using Xcode 8 automatic signing. You can install the certs and provisioning profiles on the build server manually, or have the task install them by specifying the __File Contents__ options.
 
 ![Xcode signing](_img/10_12_01.png)
@@ -138,7 +136,7 @@ Another enhancement to the Azure resource group task is to allow either incremen
 ![resource groups](_img/10_12_13.png)
 
 ##Azure CLI task
-The new Azure CLI task supports running Azure CLI commands on cross platform agents like Windows, Linux and Mac. The task supports both Classic and ARM subscriptions. It supports two modes of providing the script, one as a linked artifact and another as an inline script.
+The new Azure CLI task supports running Azure CLI commands on cross platform agents like Linux, macOS, and Windows. The task supports both Classic and ARM subscriptions. It supports two modes of providing the script, one as a linked artifact and another as an inline script.
 
 ![cli](_img/10_12_14.png)
 

@@ -27,7 +27,7 @@ In a nutshell, you can:
 Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
 
 >[!NOTE]  
-><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTSor an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
+><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTS or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
@@ -54,7 +54,7 @@ You can create links from within a work item form, from a work item that appears
 Also, you can use the context menu in the web portal or Team Explorer.
 
 > [!NOTE]
-> For each work item, you can add a maximum of 5000 links to other work items.  
+> For each work item, you can add a maximum of 1000 links to other work items.  
 
 ## Add a link from one work item to another work item  
 

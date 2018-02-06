@@ -6,28 +6,28 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install VSTS extensions
+  - name: Install free VSTS extensions
     href: install-vsts-extension.md
-  - name: Install TFS extensions
-    href: get-tfs-extensions.md
+  - name: Preview paid VSTS extensions
+    href: start-trial-vsts-extension.md
+  - name: Buy and install paid VSTS extensions
+    href: install-paid-vsts-extension.md
   - name: Assign paid extensions
     href: assign-paid-extensions.md
+  - name: Install TFS extensions
+    href: get-tfs-extensions.md
 - name: How-to Guides
   items:
-  - name: Rate and review extensions
-    href: rating-and-review.md
-  - name: Grant permission to manage extensions
+  - name: Manage extension related permissions
     href: how-to/grant-permissions.md
-  - name: Request extensions for TFS
-    href: how-to/request-tfs-extensions.md
-  - name: Approve extension requests for TFS
-    href: how-to/approve-tfs-extensions.md
-  - name: Assign paid extension access for TFS
-    href: how-to/assign-paid-extension-access.md
+  - name: Request extensions
+    href: request-extensions.md
+  - name: Approve extension requests
+    href: approve-extensions.md
+  - name: Uninstall or disable extensions
+    href: uninstall-disable-extensions.md
   - name: Change number of paid users for extensions for TFS
     href: how-to/change-paid-extension-users.md
-  - name: Uninstall or disable extensions for TFS
-    href: how-to/uninstall-disable-extensions-tfs.md
 - name: Concepts
   items:
   - name: Extension reporting

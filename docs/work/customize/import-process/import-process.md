@@ -14,7 +14,7 @@ ms.date: 05/23/2017
 <b>VSTS (Hosted XML)</b>   
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
@@ -59,7 +59,7 @@ Migration to VSTSis a great time to think about process alignment across your or
 
 6.  Using the imported process(es), create team projects on VSTS for each you want to migrate. 
 
-    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](/vsts/articles/migration-overview).
+    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](https://aka.ms/tfsimport).
 
 
 

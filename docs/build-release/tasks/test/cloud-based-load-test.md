@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Test: Cloud-based Load Test

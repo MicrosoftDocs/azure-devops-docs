@@ -1,30 +1,31 @@
 ---
 title: Get Started with Maven Package Management in VSTS and TFS
-description: Quickly start hosting Maven packages in VSTS or Team Foundation Server
+description: Quickly start hosting Maven artifacts in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.topic: get-started-article
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: jenp
 ms.author: rossav
-ms.date: 09/01/2017
+ms.reviewer: dastahel
+ms.date: 01/31/2018
 ---
 
 # Get started with Maven Package Management in VSTS and TFS
 
 ## Before you start
+
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
-listing to install.
+listing to install it.
 
 [!INCLUDE [](_shared/availability-maven.md)]
 
 ### Prerequisites
 
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
-2. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your VSTS account.
-3. [Public-opt in only] - To enable Maven support for your account, ask your account admin to go to the "Preview Features" section, choose "for this account", and enable "Maven for Package Management". 
-([Preview Features docs](../collaborate/preview-features.md))
+
+1. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your VSTS account.
 
 <a name="create-a-feed"></a>
 
@@ -42,13 +43,13 @@ listing to install.
 
 <a name="publish-a-package"></a>
 
-## Publish a package
+## Publish an artifact
 
 [!INCLUDE [](_shared/maven/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
 
-## Install a package from your feed
+## Install an artifact from your feed
 
 [!INCLUDE [](_shared/maven/install.md)]
 
@@ -56,7 +57,7 @@ listing to install.
 
 ## Automate the process with continuous integration
 
-You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
+You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts. 
 To get started with continuous integration, see the [Maven in Team Build guidance](/vsts/build-release/packages/maven).
 
 ## What's next?

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 09/01/2017
+ms.date: 11/30/2017
 ---
 
 # Create a feed

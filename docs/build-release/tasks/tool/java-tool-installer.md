@@ -1,0 +1,51 @@
+---
+title: Java Tool Installer
+description: Java Tool Installer for VSTS and TFS 
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-build
+ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
+ms.manager: douge
+ms.author: alewis
+ms.reviewer: dastahel
+ms.date: 11/15/2017
+---
+
+# Tool: Java Tool Installer
+
+**VSTS**
+
+![icon](_img/java.png) Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
+
+## Demands
+
+None
+
+## Arguments
+
+| Argument | Description |
+|----------|-------------|
+| JDK Version | Specify which JDK version to download and use. |
+| JDK Architecture | Specify the bit version of the JDK. |
+| JDK source | Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository. |
+| JDK file | Applicable when JDK is located in a local directory. Specify the path to the folder that contains the compressed JDK. The path could be in your source repository or a local path on the agent.|
+| Azure Subscription | Applicable when the JDK is located in Azure Blob storage. Specify the Azure Resource Manager subscription for the JDK.|
+| Storage Account Name | Applicable when the JDK is located in Azure Blob storage. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
+| Container Name | Applicable when the JDK is located in Azure Blob storage. Specify the name of the container in the storage account in which the JDK is located.|
+| Common Virtual Path | Applicable when the JDK is located in Azure Blob storage. Specify the path to the JDK inside the Azure storage container. |
+| Destination directory | Specify the destination directory into which the JDK should be extracted. |
+| Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
+| Control options | See [Control options](../../concepts/process/tasks.md#controloptions). |
+
+
+## Q&A
+<!-- BEGINSECTION class="md-qanda" -->
+
+### Where can I learn more about tool installers?
+
+For an explanation of tool installers and examples, see [Tool installers](../../concepts/process/tasks.md#tool-installers).
+
+[!INCLUDE [temp](../../_shared/qa-agents.md)]
+
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
+
+<!-- ENDSECTION -->

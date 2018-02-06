@@ -6,16 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/17/17
+ms.date: 11/15/2017
 ---
 
 # Add reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
-
-
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.
 
@@ -25,6 +21,10 @@ The sequence of tasks is as follows:
 [![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
 [![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+
+
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+
 
 If your reports don't appear as expected, review the checklists provided under [Review team activities](review-team-activities-for-useful-reports.md) for the necessary team activities to generate useful reports. Also, access information that describes healthy and unhealthy versions of each report.
 

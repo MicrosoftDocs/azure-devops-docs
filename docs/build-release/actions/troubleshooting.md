@@ -6,6 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: alewis
+ms.reviewer: chrispat
 ms.date: 08/04/2016
 ---
 
@@ -21,7 +22,7 @@ Check the build log for the exact command-line executed by the failing step. Att
 For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) step)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
-Keep in mind, some differences are in effect when executing a command from the local command, and when a build is running on an agent. If the agent is configured to run as a service on Windows/Linux, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 ## Get logs to diagnose problems
@@ -205,86 +206,6 @@ This error may indicate the agent lost communication with the server for a span 
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
-### Work with SSL server certificate (on-premises TFS only)
-
-```
-Enter server URL > https://corp.tfs.com/tfs
-Enter authentication type (press enter for Integrated) >
-Connecting to server ...
-An error occurred while sending the request.
-```
-
-Agent diagnostic log shows:
-```
-[2017-11-06 20:55:33Z ERR  AgentServer] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: A security error occurred
-```
-
-This error may indicate the server certificate you used on your TFS server is not trusted by the build machine. Make sure you install your self-signed ssl server certificate into the OS certificate store.
-```
-Windows: Windows certificate store
-Linux: OpenSSL certificate store
-macOS: OpenSSL certificate store for agent version 2.124.0 or below
-       Keychian for agent version 2.125.0 or above
-```
-
-You can easily verify whether the certificate has been installed correctly by running few commands.
-You should be good as long as SSL handshake finished correctly even you get a 401 for the request.
-```
-Windows: PowerShell Invoke-WebRequest -Uri https://corp.tfs.com/tfs -UseDefaultCredentials 
-Linux: curl -v https://corp.tfs.com/tfs 
-macOS: curl -v https://corp.tfs.com/tfs (agent version 2.124.0 or below, curl needs to be built for OpenSSL)
-       curl -v https://corp.tfs.com/tfs (agent version 2.125.0 or above, curl needs to be built for Secure Transport)
-```
-
-If somehow you can't successfully install certificate into your machine's certificate store due to various reasons, like: you don't have permission or you are on a customized Linux machine.
-The agent version 2.125.0 or above has the ability to ignore SSL server certificate validation error.
-
-> [!IMPORTANT]
-> 
-> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store. 
-
-Pass `--sslskipcertvalidation` during agent configuration
-```
-./config.cmd/sh --sslskipcertvalidation
-```
-
-> [!NOTE]
-> 
-> There is limitation of using this flag on Linux and macOS  
-> The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
-
-### Work with SSL client certificate (on-premises TFS only)
-
-IIS has a SSL setting that requires all incoming requests to TFS must present client certificate in addition to the regular credential.
-
-When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your TFS server.
-
-- Prepare all required certificate informations
-  - CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)  
-  - Client certificate in `.pem` format (This should contains the public key and signature of the Client certificate)  
-  - Client certificate private key in `.pem` format (This should contains only the private key of the Client certificate)  
-  - Client certificate archive package in `.pfx` format (This should contains the signature, public key and private key of the Client certificate)  
-  - Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key  
-
-- Install CA certificate(s) into machine certificate store
-  - Windows: Windows certificate store
-  - Linux: OpenSSL certificate store
-  - macOS: System or User Keychian
-
-- Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.   
- ```
- .\config.cmd/sh --sslcacert ca.pem --sslclientcert clientcert.pem --sslclientcertkey clientcert-key-pass.pem --sslclientcertarchive clientcert-archive.pfx --sslclientcertpassword "mypassword"
- ```
-
- We store your client cert private key password securely on each platform.  
- ```
- Windows: Windows Credential Store
- OSX: OSX Keychain
- Linux: Encrypted with symmetric key based on machine id
- ```
-
-Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more detail information about agent client certificate support.
-
 ### Builds not starting
 
 #### TFS Job Agent not started
@@ -295,21 +216,20 @@ This may be characterized by a message in the web console "Waiting for console o
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
-## Git
-
-### Get sources fails with SSL certificate problem (on-premises TFS and Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation. 
-When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
-The most reliable way might be to set the following git config in global level by the agent's run as user.
-```bash
-git config --global http."https://tfs.com/".sslCAInfo certificate.pem
-```
-Setting system level git config is not reliable on Windows, since the system level .gitconfig file is stored at the copy of git.exe we packaged which will get replaced whenever the agent is upgraded to a new version.
-
 ## Team Foundation Version Control (TFVC)
 
 ### Get sources not downloading some files
 This may be characterized by a message in the build log "All files up to date" from the *tf get* command. Verify the built-in build service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build definition. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
+
+### Get sources through Team Foundation Proxy
+The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
+```
+Windows:
+    set TFSPROXY=http://tfvcproxy:8081
+    setx TFSPROXY=http://tfvcproxy:8081 // If the agent service is running as NETWORKSERVICE or any service account you can't easily set user level environment variable
+macOS/Linux:
+    export TFSPROXY=http://tfvcproxy:8081
+```
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 

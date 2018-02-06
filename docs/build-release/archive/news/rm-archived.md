@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+ms.date: 12/20/2017
 ---
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 **NOTE**: Release Management has now been combined with the Build features
 of VSTS and Team Foundation Server (TFS) in the new 
 **Build &amp; Release** hub. For details of new features and changes, see
-[Team Foundation Build & Release release notes](2017.md).
+[Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -237,8 +237,8 @@ See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tas
 **Azure CLI task**
 
 The new Azure CLI task supports running Azure CLI
-commands on cross-platform agents such as Windows, Linux
-and Mac. The task supports both Classic and ARM subscriptions.
+commands on cross-platform agents such as Linux, macOS,
+and Windows. The task supports both Classic and ARM subscriptions.
 It also supports two modes of providing the script:
 as a linked artifact or as an inline script.
 
@@ -1086,7 +1086,7 @@ We added approval options that enable you to configure
 multiple approvers for an environment, and control
 whether these approvers can approve in parallel or in
 a specified order.
-See [Approvals and approvers](../../concepts/definitions/release/environments.md#approvals).
+See [Approvals and approvers](../../concepts/definitions/release/approvals/approvals.md).
 
 ![Configuring approval policies](_img/rm-archived/release-notes-06.png)
 

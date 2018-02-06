@@ -2,9 +2,9 @@
 
 Deployment groups in VSTS make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app.
 
-1. Open the VSTS web portal (`https://{your-account}.visualstudio.com`), navigate to the **Build & Release** hub, and then click **Deployment groups**.
+1. Open the VSTS web portal (`https://{your-account}.visualstudio.com`), navigate to the **Build and Release** hub, and then click **Deployment groups**.
 
-1. Click **Add Deployment group** (or **New** if there are already deployment groups in place.
+1. Click **Add Deployment group** (or **New** if there are already deployment groups in place).
 
 1. Enter a name for the group, such as *myIIS*, and then click **Create**.
 
@@ -22,11 +22,11 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
    > The account under which the agent runs needs **Manage** permissions for the C:\Windows\system32\inetsrv\ directory.
    Adding non-admin users to this directory is not recommended. In addition, if you have a custom user identity for the application pools,
-   the identity needs permission to read the crypto-keys. Local service accounts and user accounts must be given read access fopr this.
+   the identity needs permission to read the crypto-keys. Local service accounts and user accounts must be given read access for this.
    For more details, see [Keyset does not exist error message](https://support.microsoft.com/en-in/help/977754/-keyset-does-not-exist-error-message-when-you-try-to-change-the-identi).
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
-1. On the **Deployment groups** page of the **Build & Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
+1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
 
  ![Screenshot showing update to code](./_img/windows-deployment-group.png)

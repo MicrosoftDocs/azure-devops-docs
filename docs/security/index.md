@@ -23,26 +23,36 @@ For anyone to access a team project, you must add them to a security group. For 
 ## 5-Minute Quickstarts  
   
 - [View permissions](view-permissions.md)
+- [Look up the account owner or a project administrator](lookup-account-owner-admin.md)
 - [Add users to a team project or team](add-users-team-project.md)
 - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 - [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+
+## Tutorials 
+  
+- [Setup Active Directory or Azure Active Directory](setup-ad-aad.md)
+- [Add AD/AAD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
+- [Change individual permissions, grant select access to specific functions](change-individual-permissions.md)
+- [Grant or restrict permissions to select tasks](restrict-access.md)
+- [Remove user accounts](remove-users-prohibit-access.md)  
 
 
 ## Concepts 
 - [About permissions and groups](about-permissions.md)  
 - [About access levels](access-levels.md)  
-- [Azure Active Directory groups (VSTS)](/vsts/accounts/access-with-azure-ad?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
-- [Active Directory groups (TFS)](/vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
+- [Azure Active Directory groups (VSTS)](../accounts/access-with-azure-ad.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
+- [Active Directory groups (TFS)](../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
+- [Security glossary](security-glossary.md) 
 
 ## How-to Guides 
 
-- [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
+- [Set Git branch permissions](../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](set-build-release-permissions.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
 
 ## Reference 
-- [Default permission and access assignments](/vsts/accounts/permissions-access?toc=/vsts/security/toc.json)
+- [Default permission and access assignments](permissions-access.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
 

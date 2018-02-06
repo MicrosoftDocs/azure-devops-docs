@@ -12,8 +12,6 @@ author: yukom
 
 #Card configuration options – Apr 10
 
-**Note:** The improvements discussed in this post will be rolling out over the next two weeks. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Configure cards
 
 The first thing I’ll highlight is that you now have configuration options for the data showing up on your cards—for both the Kanban board and the Taskboard. The picture below shows the new dialog for customizing how cards look on your Kanban board. You can turn the ID on or off, select how the assigned to field is displayed, and choose to show tags directly on your cards. These options are per team (or backlog) and per work item so that you have maximum flexibility. With regards to customizing cards, this is just the beginning of a bunch of work we have planned in this area. Stay tuned.

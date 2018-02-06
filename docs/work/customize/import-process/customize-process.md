@@ -14,7 +14,7 @@ ms.date: 05/23/2017
 <b>VSTS (Hosted XML)</b>   
  
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization.  
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
@@ -172,7 +172,7 @@ The Categories.xml definition file must conform to the syntax and rules describe
 <a id="work-item-types"></a>
 ### Work item types
 The  ```WITD``` element and its child elements must conform to the syntax and rules described in [WITD XML element reference](../reference/all-witd-xml-elements-reference.md). In addition, it must meet the following conditions:       
-*   Limit definition of 256 fields within a single WIT, and 512 fields across all WITs 
+*   Limit definition of 512 fields within a single WIT, and 512 fields across all WITs 
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files 
 *   The required refname attribute value can't contain disallowed characters nor use a disallowed namespace: System.*Name* and Microsoft.*Name*    
     Reference names must contain only letters, no spaces, and at least one period (.). 
@@ -192,7 +192,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 #### Limit restrictions  
 *   Limit definition to 512 fields 
 *   Limit definition of person-name fields, ones with an attribute of ```syncnamechange=true```, to 64 per work item type
-*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 128 
+*   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
 <a id="required-fields"></a>

@@ -12,8 +12,6 @@ author: yukom
 
 #A new identity control – Dec 2
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 We’ve got another sprint packed full of improvements for you…
 
 ##Identity control and avatars

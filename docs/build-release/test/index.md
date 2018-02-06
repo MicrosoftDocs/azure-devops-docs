@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Continuous Testing
@@ -41,6 +41,8 @@ choose the technologies and frameworks, then test your changes continuously in a
 * [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
 * [Associate tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate results with requirements](associate-automated-results-with-requirements.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 ## Reference
 

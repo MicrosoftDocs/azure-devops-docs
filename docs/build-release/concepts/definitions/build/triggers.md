@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build definition triggers
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
 
 On the **Triggers** tab you specify the events that will trigger the build. You can use the same build definition for both CI and scheduled builds.
 
@@ -50,7 +50,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
 
-**TFS 2017 Update 1 and older versions**
+**TFS 2017.1 and older versions**
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches.png)
 
@@ -77,7 +77,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
-**TFS 2017 Update 1 and older versions**
+**TFS 2017.1 and older versions**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
@@ -88,7 +88,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
-**TFS 2017 Update 1 and older versions**
+**TFS 2017.1 and older versions**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies.png)
 
@@ -122,7 +122,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](repository.md).
 
-* You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [windows agent](../../../actions/agents/v2-windows.md). You cannot run them on the cross-platform agent.
+* You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [private agent](../../../concepts/agents/agents.md).
 
 
 ## Q&A

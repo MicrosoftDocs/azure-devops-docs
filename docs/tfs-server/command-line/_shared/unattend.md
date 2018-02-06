@@ -33,7 +33,7 @@ In the case of multiple installations, this also helps ensure that the exact sam
 			</td>
 		</tr>
 		<tr>
-			<td><strong>/type</strong>:InstallTyoe</td>
+			<td><strong>/type</strong>:InstallType</td>
 			<td>
 				<p>Specifies the type of configuration to use.</p>
 				<ul>
@@ -62,8 +62,8 @@ In the case of multiple installations, this also helps ensure that the exact sam
 				Optional. If you use /create, specifies settings and values to use when creating the unattend file.
 				If you use /configurespecifies additional settings and values to use in conjunction with the unattend file.<br/><br/>
 				As an alternative to using /inputs, you can manually edit the unattend file in any plain-text editor.
-				This is necessary for certain input types, such as <span sdata="langKeyword" value="ServiceAccountPassword"> ServiceAccountPassword </span>,
-				as the password cannot be set using the <span sdata="langKeyword" value="/inputs"> /inputs </span> parameter.
+				This is necessary for certain input types, such as <span sdata="langKeyword" value="ServiceAccountPassword"> ServiceAccountPassword </span> or <span sdata="langKeyword" value="PersonalAccessToken"> PersonalAccessToken </span>
+				as those secret values cannot be set using the <span sdata="langKeyword" value="/inputs"> /inputs </span> parameter.
 			</td>
 		</tr>
 		<tr>
@@ -110,6 +110,17 @@ The following example shows how to create an unattend file for a basic installat
 	TFSConfig Unattend /create /type:basic /unattendfile:configTFSBasic.ini
 
 In this example, the unattend file is created in the same directory as the command. A log file is created as part of the command, and the location of the file is returned in the command as part of executing the command.
+
+The following example shows how to specify a Git repository for use with GVFS during configuration.
+
+	TFSConfig Unattend /configure /type:proxy /inputs:ProjectCollectionUrl=http://FabrikamFiberTFS:8080/tfs/defaultcollection;GvfsProjectName=Fabrikam-Fiber-Git;GvfsRepositoryName=TestGit
+
+The following example shows how to create an unattend file for the configuration of a Team Foundation Proxy server.
+
+>**Important:** 
+>In this example, if the administrators want to use a personal access token for authentication they will need to manually edit the file to specify the personal access token value. This can be achieved by adding a line for the personal access token in the created unattend file like: &quot;PersonalAccessToken=PersonalAccessTokenValue&quot;.
+	
+	TfsConfig Unattend /create /type:proxy "/inputs:ProjectCollectionUrl=http://FabrikamFiberTFS:8080/tfs/defaultcollection" /unattendFile:c:\unattend.txt
 
 The following example shows how to create an unattend file for the configuration of Team Foundation Build on a server using "FabrikamFiber\\BuildSVC" as the build service account, and then configure Team Foundation Build using that unattend file.
 

@@ -12,8 +12,6 @@ author: yukom
 
 #Build preview, updated backlog navigation, branch policies, and more... – May 15
 
-**Note:** The improvements discussed in this post will be rolling out over the next week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 You might think that this would be a light deployment for us, given all the [announcements](http://blogs.msdn.com/b/bharry/archive/2015/04/29/visual-studio-and-team-foundation-server-at-build-2015.aspx) made over the past two weeks at [BUILD](http://buildwindows.com/) and [Ignite](http://ignite.microsoft.com/)… but you’d be wrong. :-) Let’s jump right in…
 
 ##Build Preview now publicly available

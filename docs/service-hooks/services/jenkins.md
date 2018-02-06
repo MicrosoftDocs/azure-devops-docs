@@ -46,13 +46,11 @@ to connect VSTS to Jenkins.
 
    <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
-2. Go to your team project's administration page.
+0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-   <img alt="Team project administraton icon" src="./_img/admin-700.png" style="border: 1px solid #CCCCCC" />
+	![Team project administration page](./_img/add-service-hook.png)
 
-3. On the Service Hooks tab, create a subscription.
-
-   <img alt="Service hooks page, add" src="./_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+	Click **Create Subscription**.
 
 4. Add Jenkins.
 

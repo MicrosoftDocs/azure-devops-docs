@@ -12,8 +12,6 @@ author: yukom
 
 #Work item improvements - Sep 23
 
-**Note**: The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 This week’s deployment has a few work items usability improvements I’m sure you’ll appreciate. Let’s take a look.
 
 ##Maximizing text area fields

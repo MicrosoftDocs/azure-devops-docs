@@ -1,12 +1,13 @@
 ---
-title: Import and export process configuration | VSTS & TFS
+title: Import and export process configuration for Agile work tracking tools 
+titleSuffix: VSTS & TFS
 description: Customize the process configuration to modify the display of the Agile planning tool pages that you view through the web portal for VSTS or Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 12/15/2017  
 ---
 
 
@@ -75,21 +76,19 @@ The panel only displays fields that are included in the `FIELDS` section of the 
   
 1.  If you don't have administrative permissions for your team project, [get them](../../../../security/set-project-collection-level-permissions.md).  
   
-2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+2.  Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
   
-    ```  
-    cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE  
-    ```  
-  
-     On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%. You can [install Visual Studio Community (which provides access to Team Explorer](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free.  
-  
+	```
+	cd %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+	```    
+
 3.  Export the process configuration file.  
   
     ```  
     witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
-    ```  
-  
-     An example of a *CollectionURL* is http://MyServer:8080/tfs/TeamProjectCollectionName.  
+    ``` 
+ 
+	An example of a *CollectionURL* is http://MyServer:8080/tfs/TeamProjectCollectionName.  
   
 4.  Add the field reference name to the `AddPanel` section.  
   
@@ -104,11 +103,9 @@ The panel only displays fields that are included in the `FIELDS` section of the 
     </AddPanel>  
     ```  
   
-     **Tips**:  
-  
-    -   You can look up the reference name for a field using this [index](../../../work-items/guidance/work-item-field.md).  
-  
-    -   Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.  
+     > [!TIP]    
+    > -  You can look up the reference name for a field using this [index](../../../work-items/guidance/work-item-field.md).    
+    > -  Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.  
   
 5.  Import the process configuration file.  
   
@@ -119,7 +116,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 6.  Refresh your backlog page to view the updated panel.  
   
 <a name="test_manager"></a> 
-###Update metastate mappings to support Test Manager  
+### Update metastate mappings to support Test Manager  
  If you customize the `WORKFLOW` section of the test plan or test suite, you must map the states to metastates.  
   
  In the following example, the test plan workflow has been updated to use the Design, Testing, and Signed Off states. To support backward compatibility, the `TestPlanWorkItems` is added to the `ProjectProcessConfiguration` section of the process configuration definition.  
@@ -171,7 +168,9 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 ```
   
 **Metastate mappings**
-```
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <TestPlanWorkItems category="Microsoft.TestPlanCategory" pluralName="Test Plans" singularName="Test Plan">
     <States>
       <State type="InProgress" value="Design" />
@@ -241,4 +240,5 @@ name="Task" /&gt;</code></td></tr><tr><td data-th="Customization"><p>Change the 
  **A:** The default experience supports one level of portfolio backlog. You can add up to five levels as described in [Add portfolio backlogs to Agile tools](../../add-portfolio-backlogs.md).  
   
 ### Q: Do you want to add or change the WITs that appear on your task board or product backlog?  
- **A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../../add-wits-to-backlogs-and-boards.md).
+ **A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../../add-wits-to-backlogs-and-boards.md).  
+

@@ -11,7 +11,7 @@ ms.date: 12/30/2016
 
 # Bug Progress Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
 You can use the Bug Progress report in Office Excel to track the team's progress toward resolving Bugs. This report shows the number of Bugs in each state over time. For information about how to access this report, see [Excel reports](excel-reports.md).  

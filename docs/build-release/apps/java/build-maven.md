@@ -7,20 +7,21 @@ ms.topic: get-started-article
 ms.assetid: C339FAF9-A960-4A3A-9A8A-ADCD39C2703D
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/28/2017
+ms.reviewer: dastahel
+ms.date: 01/12/2017
 ---
 
 # Build your Java app with Maven
 
-**VSTS | TFS 2017 Update 2**
+**VSTS | TFS 2018 | TFS 2017.2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java web app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project with java, maven, and other necessary software installed.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
 ## Get sample app code
 
@@ -40,7 +41,7 @@ https://github.com/Adventworks/java-sample
 
 ---
 
-The sample app in this repository is a Java servlet. Tests for the applications are written using Junit framework. A Maven POM file is used to build, test, and package the application into a web archive (war) file.
+The sample app in this repository is a Java servlet using JavaServer Pages (JSP). Tests for the application are written using JUnit. A Maven POM file is used to build, test, and package the application into a web archive (.war) file.
 
 ## Set up continuous integration
 
@@ -56,7 +57,7 @@ The sample app in this repository is a Java servlet. Tests for the applications 
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -68,11 +69,11 @@ The sample app in this repository is a Java servlet. Tests for the applications 
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**:
+1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) and Maven installed.
 
 1. Click **Get sources** and then:
 
@@ -86,9 +87,9 @@ The sample app in this repository is a Java servlet. Tests for the applications 
 
  ---
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time a change is committed to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

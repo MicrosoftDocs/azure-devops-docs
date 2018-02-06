@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 574CD62B-38DA-4015-9E15-36673C489D36
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 
@@ -38,6 +38,8 @@ automatically with each build.
 * [Learn more about test task steps](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
+* [Run tests in parallel](run-tests-in-parallel.md)
 
 <a name="test-frameworks"></a>
 ## Any test type and any test framework
@@ -67,6 +69,7 @@ your app.
 
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md).
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
+* [Get Test Impact Analysis reports](test-impact-analysis.md)
 
 <a name="devops-practice"></a>
 ## Advanced DevOps practices

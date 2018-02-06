@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.manager: douge
-ms.author: billchi
-ms.date: 10/6/2017
+ms.author: chcomley
+ms.date: 11/13/2017
 ---
 
 # Add more users with Basic features or Visual Studio subscriptions
@@ -18,7 +18,7 @@ When your account stays within the free limits, you don't have to pay for users 
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
 You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
 return to your VSTS account, add these users, and assign them Basic access. 
-You pay monthly for their access and cancel the access anytime.
+You pay monthly for their access and can cancel the access anytime.
 
 Visual Studio subscriptions give you flexible ways to access VSTS 
 and to license the Visual Studio IDE and other Microsoft software for dev and test. 

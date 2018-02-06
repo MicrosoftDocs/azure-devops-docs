@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: douge
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Set up and administer Microsoft Code Search and Work Item Search
@@ -538,9 +538,9 @@ install. This requires multiple steps, depending on whether Code Search is confi
    1. Open **Command Prompt** as an administrator
    1. Change directory: 
 
-      For TFS 2017 RTM, `cd "C:\Program Files\TFS 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
+      For TFS 2017 RTM, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
 
-      For TFS 2017 Update1 and above, `cd "C:\Program Files\TFS 15.0\Search\ES\elasticsearch-2.4.1\bin"`
+      For TFS 2017 Update1 and above, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-2.4.1\bin"`
       
    1. Remove the service: `"service.bat remove"`<p />
     
@@ -595,6 +595,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 * [Search stops working and no results are shown](#no-results-later)
 * [Search does not show the expected results](#unexpected-results)
 * [TFS server overall performance is affected](#server-slow)
+* ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
 <a name="no-search-box"></a>
 **Search is configured but the Search box is not displayed**

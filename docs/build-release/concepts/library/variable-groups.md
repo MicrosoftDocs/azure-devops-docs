@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 11/01/2017
+ms.date: 01/19/2018
 ---
 
 # Variable groups
 
-**TFS 2017 | VSTS**
+**VSTS | TFS 2018 | TFS 2017**
 
 Use a variable group to store values that you want to make available across
 multiple build and release definitions. Variable groups are defined and managed in the **Library** tab of the
@@ -57,7 +57,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group. 
 
-**Notes**:
+### Secrets management notes
 
 * Only the secret *names* are mapped to the variable group, not the secret values. The latest version of the value of each secret
   is fetched from the vault and used in the definition linked to the variable group during the build or release.

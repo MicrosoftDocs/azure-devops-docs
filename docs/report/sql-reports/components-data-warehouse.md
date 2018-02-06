@@ -12,7 +12,7 @@ ms.date: 10/26/17
 
 # Components of the TFS data warehouse
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 The Team Foundation reporting warehouse is a traditional data warehouse consisting of a relational database organized in an approximate star schema and a SQL Server Analysis Services cube built on top of the relational database. The following diagram shows the high-level architecture of the Team Foundation data warehouse and the relationships between the operational stores, the data warehouse, and the team reports.  
   

@@ -12,8 +12,6 @@ author: yukom
 
 #@CurrentIteration query token, Kanban reordering and DoD – Mar 10
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 ##Current iteration query token
 
 Let’s start with an item that’s been on our backlog for quite some time—the ability to specify a token that represents the current iteration in iteration-based queries. As you know, iterations have dates associated with them. As you move from iteration to iteration, it’s very tedious to update all the queries used to track work for the next iteration. Today’s update brings the addition of a new query token, @CurrentIteration, that returns the current iteration based on today’s date. The screenshot below shows how this would work in context of a query that tracks unfinished work in a sprint (iteration).

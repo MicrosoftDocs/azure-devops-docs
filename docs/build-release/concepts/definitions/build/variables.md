@@ -6,12 +6,12 @@ ms.technology: vs-devops-build
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/18/2016
+ms.date: 12/13/2017
 ---
 
 # Build variables
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
 
 Variables give you a convenient way to get key bits of data into various parts of your build process.
 
@@ -42,7 +42,7 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 ![Keep password secret](_img/variables/keep-password-secret-neweditor.png)
 
-**Team Foundation Server (TFS) 2017 Update 1 and older**
+**Team Foundation Server (TFS) 2017.1 and older**
 
 ![Keep password secret](_img/variables/keep-password-secret.png)
 
@@ -758,6 +758,23 @@ You can pass environment variables of the build machine into build steps. For ex
         <tr>
             <td>
                 <p style="font-size:80%">
+                    System.PullRequest.IsFork
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_ISFORK
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <p style="font-size:80%">
+                    If the pull request is from a fork of the repository, this variable is set to `True`.
+                    Otherwise, it is set to `False`.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size:80%">
                     System.PullRequest.PullRequestId
                 </p>
                 <p style="font-size:80%">
@@ -784,6 +801,24 @@ You can pass environment variables of the build machine into build steps. For ex
             <td>
                 <p style="font-size:80%">
                     The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
+                </p>
+            </td>
+        </tr>        <tr>
+            <td>
+                <p style="font-size:80%">
+                    System.PullRequest.SourceRepositoryURI
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <blockquote style="font-size:80%">
+                    **VSTS Only**
+                </blockquote>
+                <p style="font-size:80%">
+                    The URL to the repo that contains the pull request. For example: `https://ouraccount.visualstudio.com/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build). It is not initialized for GitHub PRs.)
                 </p>
             </td>
         </tr>

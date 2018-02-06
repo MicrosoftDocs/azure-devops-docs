@@ -11,7 +11,7 @@ ms.date: 03/03/2017
 
 # Configure TFS authentication for your private build and release agents
 
-**TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 When you deploy a private agent, you choose how the agent will authenticate to your Team Foundation Server (TFS). Here we'll show you how to configure TFS to enable your agents to use different authentication methods.
 
@@ -43,11 +43,11 @@ Start Internet Information Services (IIS) Manager. Select your TFS site and make
 
 ### PAT
 
-Personal access token (PAT) authentication is available in TFS 2015 Update 3 or newer and TFS 2017 RTM and newer. To use PAT, your server must be configured with HTTPS. See [Web site settings and security](../../../security/websitesettings.md).
+Personal access token (PAT) authentication is available in TFS 2015.3 and newer. To use a PAT, your server must be configured with HTTPS. See [Web site settings and security](../../../security/websitesettings.md).
 
 ## Deploy your agent
 
-### TFS 2017
+### TFS 2017 and newer
 
 * [Windows agent v2](../../actions/agents/v2-windows.md)
 * [macOS agent](../../actions/agents/v2-osx.md)

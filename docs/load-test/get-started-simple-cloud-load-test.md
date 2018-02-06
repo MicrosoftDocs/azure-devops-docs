@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-performance
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
 
@@ -111,6 +111,22 @@ using Visual Studio Team Services (VSTS).
 1. To run the same test again, choose **Rerun**.
 
    ![Rerunning the same test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-rerun-test.png)
+
+### Key metrics
+
+* **Response Time**. The time it takes for your app to respond to requests
+  is one of the key metrics for measuring app performance.
+  Most apps perform well when a single user is accessing them, but the response
+  time can increase dramatically when the app is under load. This can happen
+  if resources such as CPU, database or other services are at peak capacity,
+  resulting in longer response times.
+
+* **User Load**. The peak user load encountered during the load test run.
+
+* **Failed Requests**. The number of requests that failed, either because
+  the app did not respond or due to other issues such as connectivity errors.
+  Your app might start throttling requests when under load by discarding new
+  requests in order to allow existing requests to be processed.
 
 ## Next step
 

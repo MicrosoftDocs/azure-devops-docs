@@ -5,7 +5,7 @@ ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
-ms.author: billchi
+ms.author: chcomley
 ms.date: 10/6/2017
 ---
 
@@ -32,6 +32,6 @@ You can use the following procedures to save data that users most care about, su
 
     This process doesn’t save any attachments, change history, or links to other artifacts.
 
-If you have Team Foundation Server OnPrem, you can easily save data stored for a team project collection 
+If you have Team Foundation Server on-premises, you can easily save data stored for a team project collection 
 by [making a backup of the database](../tfs-server/admin/backup/config-backup-sched-plan.md). You can also 
 use the same steps as above.

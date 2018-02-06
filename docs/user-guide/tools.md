@@ -34,18 +34,19 @@ Be clear about what they pay for and what is free
 
 ## Desktop client developer tools 
 
-Developers have access to a variety of tools through these versions of Visual Studio and plug-ins: 
+Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). 
 
-- **Visual Studio Community**: A fully-featured and extensible IDE for creating modern applications for Windows, Android, and iOS, as well as web applications and cloud services. (Replaces Visual Studio Express) 
+- **Visual Studio Community**: A fully-featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express) 
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams 
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale Supports designing, building and managing complex enterprise applications 
-- **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process  
-- **[Eclipse/Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)**: Free plug-in to support teams targeting platforms like Mac, iOS, Android, and Linux that connects to VSTS or TFS from Eclipse-based environments and non-Windows platforms  
+- **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process
+- **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
+- **[Eclipse/Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
 - **[Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
-- **[IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)**: Free plug-in to support developers who use IntelliJ IDEA to connect to Git repositories on VSTSs or TFS 
-- **[Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)**: Free, open-source code editor with a free extension to support connecting to  Git repositories on VSTS or TFS.  
+- **[IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
+- **[Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
 
-To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). To download any Visual Studio version, go to the [downloads page](https://www.visualstudio.com/downloads/).
+
 
 
 **Team Explorer plug-in**
@@ -68,7 +69,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 - **[PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 >[!IMPORTANT]
->Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See  [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. 
+>Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. 
 
 ###Task-specific clients
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.

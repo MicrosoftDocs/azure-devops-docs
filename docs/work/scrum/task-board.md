@@ -7,7 +7,7 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 08/18/2017
+ms.date: 11/16/2017
 ---
 
 
@@ -141,7 +141,7 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../customize/customize-cards.md)    |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Keyboard shortcuts](../../collaborate/keyboard-shortcuts.md).     
+See also [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md).     
 
 
 ### Customize the task board 
@@ -177,6 +177,6 @@ You can reduce the number of items on the task board by moving them to the backl
 
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).  
 
-
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
 
 

@@ -16,13 +16,13 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
  ![test](../../../../../git/_shared/_img/add-personal-access-token.png)
 
 1. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
-   If its a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
+   If it's a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
 
 1. Copy the token. You'll use this token when you configure the agent.
 
 #### Authenticate as TFS user
 
-* **TFS 2017:** You can use either a domain user or a local Windows user on each of your TFS application tiers.
+* **TFS 2017 and newer:** You can use either a domain user or a local Windows user on each of your TFS application tiers.
 
 * **TFS 2015 (applies only to macOS and Linux):** We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
@@ -40,7 +40,7 @@ Make sure the user account that you're going to use has permission to register t
 <li>Click the pool on the left side of the page and then click **Roles**.</li>
 
 <li>If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, a [VSTS account owner](../../../../../accounts/faq-add-delete-users.md#find-owner), or a [TFS server administrator](../../../../../tfs-server/add-administrator-tfs.md).
-If its a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, a [VSTS account owner](../../../../../accounts/faq-add-delete-users.md#find-owner), or a [TFS server administrator](../../../../../tfs-server/add-administrator-tfs.md).
+If it's a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, a [VSTS account owner](../../../../../accounts/faq-add-delete-users.md#find-owner), or a [TFS server administrator](../../../../../tfs-server/add-administrator-tfs.md).
 You can add a user to the deployment group adminstrator role in the **Security** tab on the **Deployment Groups** page of the **Build &amp; Release** hub.</li>
 </ol>
 

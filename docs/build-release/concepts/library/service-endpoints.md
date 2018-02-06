@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Service endpoints for Build and Release
@@ -55,7 +55,7 @@ VSTS and TFS support a variety of endpoint types by default. Some of these are d
 * [SSH service endpoint](#sep-ssh)
 * [Subversion service endpoint](#sep-subversion)
 * [Team Foundation Server / VSTS service endpoint](#sep-tfsts)
-* [Visual Studio Mobile Center service endpoint](#sep-vsmobile)
+* [Visual Studio Mobile Center (App Center) service endpoint](#sep-vsmobile)
 
 After you enter the parameters when creating a service endpoint, validate the
 connection. The validation link uses a REST call to the external service with
@@ -104,10 +104,12 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
 | Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
-| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client ID of the account. [More information](#sep-azure-rm-existingsp). |
-| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client key of the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
+| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-existingsp). |
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
 <p />
+
+See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
 **Restricting access rights**
 
@@ -145,7 +147,7 @@ You can edit this service principal in the Azure portal,
 If you want to use an existing service principal instead of creating
 a new one:
 
-1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-documentation/blob/master/Azure/SPNCreation.ps1) in an Azure PowerShell window.
+1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
    When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default) or an Azure Government Cloud.
 1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
 
@@ -403,15 +405,15 @@ Defines and secures a connection to another TFS or VSTS account.
 | Connection URL | Required. The URL of the TFS or VSTS instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
-| Personal Access Token | Required for Token Based authentication (TFS 2017 and VSTS only). The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../../accounts/use-personal-access-tokens-to-authenticate.md). |
 
 Use the **Verify connection** link to validate your connection information.
 
 See also [Authenticate access with personal access tokens for VSTS and TFS](../../../accounts/use-personal-access-tokens-to-authenticate.md).
 
-<h3 id="sep-vsmobile">Visual Studio Mobile Center service endpoint</h3>
+<h3 id="sep-vsmobile">Visual Studio Mobile Center (App Center) service endpoint</h3>
 
-Defines and secures a connection to Visual Studio Mobile Center.
+Defines and secures a connection to Visual Studio App Center.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -463,6 +465,9 @@ You can control who can define new service endpoints in a library, and who can u
 | User | Members of this role can use the endpoint when authoring build or release definitions. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
-A special group called **Endpoint administrators** is added to every team project. Members of this group can create new endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every team project. 
+Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
+Members of the Endpoint creators group can create new endpoints. By default, project contributors are added as members of this group. 
+
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

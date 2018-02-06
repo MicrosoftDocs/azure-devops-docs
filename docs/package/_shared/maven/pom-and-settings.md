@@ -1,18 +1,29 @@
-In order to talk to VSTS feeds, you'll need to put a token on your local machine that Maven can pick up and pass to VSTS.  
+To talk to VSTS feeds, you'll need a token on your local machine that Maven can pick up and pass to VSTS.  
 
-1. Navigate to the feed that you'd like to use and select **Connect to feed**.<br><br>
-![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)<br><br>
-2. Open the **Maven** tab, click *Generate Maven credentials*, and copy the generated credentials. (images below) <br><br>
-3. Maven pulls credentials from your `settings.xml` file:
-    * The `settings.xml` file's path is `"${user.home}/.m2/settings.xml"` for Linux and `"%USERPROFILE%/.m2/settings.xml"` for Windows.  If the file doesn't exist, create one now.<br><br>
-4. Beneath the `<settings>` and `<servers>` tags in the file, paste the credentials you copied in **Step 3** above.
+1. Navigate to the feed that you'd like to use and select **Connect to feed**.
+
+   ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
+
+1. Open the **Maven** tab, choose **Generate Maven credentials**, and copy the generated credentials. (images below)
+
+   * Maven pulls credentials from your **settings.xml** file.
+   
+   * On Linux, the file path is usually `"${user.home}/.m2/settings.xml"`
+   
+   * On macOS, the file path is usually `"~/.m2/settings.xml"`
+   
+   * On Windows, the file path is usually `"%USERPROFILE%/.m2/settings.xml"`
+   
+   * If the file doesn't exist, create one now.
+
+1. Inside the `<settings>` and `<servers>` elements in the file, paste the credentials you copied in **Step 3** above.
 
 **Sample settings.xml:**
 
 ```xml
 <settings>
   <servers>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed” dialog" -->
     <server>
       <id>yourAccount-visualstudio.com-yourFeedName</id>
       <configuration>
@@ -29,5 +40,4 @@ In order to talk to VSTS feeds, you'll need to put a token on your local machine
 </settings>
 ```
 
->**NOTE:** You can find more info on the `settings.xml` file in the 
->[settings.xml reference](https://maven.apache.org/settings.html).
+>**NOTE:** You can find more information about the **settings.xml** file in the [settings.xml reference](https://maven.apache.org/settings.html).

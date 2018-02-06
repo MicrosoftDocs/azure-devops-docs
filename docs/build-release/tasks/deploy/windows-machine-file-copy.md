@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/17/2017
+ms.date: 01/19/2018
 ---
 
 # Deploy: Windows Machine File Copy
@@ -38,6 +38,14 @@ command-line utility built for fast copying of data.
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
+
+### I get a system error 53 when using this task. Why?
+
+Typically this occurs when the specified path cannot be located.
+This may be due to a firewall blocking the necessary ports for file and printer sharing,
+or an invalid path specification. For more details, see
+[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet and
+[Troubleshooting System Error: 53 - Network Path not found errors](http://support.dameware.com/kb/article.aspx?ID=300059) on the Dameware knowledgebase.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

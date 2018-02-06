@@ -12,8 +12,6 @@ author: yukom
 
 #Custom work item types and stakeholder support for exploratory testing – Sept 2
 
-**Note:** The improvements discussed in this post will be rolling out throughout the next week.
-
 We have some exciting new features this sprint!
 
 ##Custom work item types

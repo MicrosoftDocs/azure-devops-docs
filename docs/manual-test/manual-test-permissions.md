@@ -6,7 +6,7 @@ ms.technology: vs-devops-test-manual
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/18/2018
 ---
 
 # Default manual testing permissions and access 
@@ -17,6 +17,8 @@ You can access most manual testing features when you are added as a team member 
 of the Contributors group for a team project. The most common built-in groups include Readers,
 Contributors, and Project Administrators. For a simplified view of all default permissions
 assigned to built-in groups, see [Default permissions and access](../security/permissions-access.md).  
+
+Permissions can be given at [Project level](../security/permissions.md#project-level) and at [Area path level](../security/permissions.md#area-path-object-level). 
 
 Stakeholders have limited access to manual testing features.
 To learn more, see [About access levels](../security/access-levels.md).

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+ms.date: 01/19/2018
 ---
 
 # Deployment groups
@@ -55,7 +55,7 @@ You manage the security for a deployment group by
 ## Deploy agents to a deployment group
 
 Every target machine in the deployment group requires the build and release agent
-to be installed. You an do this using the script that is generated in the
+to be installed. You can do this using the script that is generated in the
 **Deployment Groups** tab of the **Build &amp; Release** hub. You can choose the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
@@ -69,12 +69,42 @@ For more information, see [Provision agents for deployment groups](howto-provisi
  
 ## Monitor releases for deployment groups
 
-When release is executing, you see an entry in the
-[live logs page](../../../../actions/debug-deployment-issues.md)
+When release is executing, you see an entry in the live logs page
 for each server in the deployment group. After a release has completed,
 you can download the log files for every server to examine the deployments
 and resolve issues. To navigate quickly to a release definition or a release,
 use the links in the **Releases** tab. 
+
+## Share a deployment group
+
+Each deployment group is a member of a **deployment pool**, and you can share
+the deployment pool and groups across projects provided that:
+
+* The user sharing the deployment pool has [User permission](../../../agents/pools-queues.md#security) for the pool containing the group.
+* The user sharing the deployment pool has permission to create a deployment group in the project where it is being shared.
+* The project does not already contain a deployment group that is a member of the same deployment pool.
+
+The tags you assign to each machine in the pool are scoped at project level,
+so you can specify a different tag for the same machine in each deployment group.
+
+### Add a deployment pool and group to another project 
+
+To manage a deployment pool, or to add an existing deployment pool and the groups it contains to another project,
+choose the **Manage** link in the **Agent Pool** section of the **Deployment Group** page.
+In the **Deployment Pools** page, select the projects for which you
+want the deployment group to be available, then save the changes.
+
+When you navigate to the **Deployment Groups** page in the target project(s), you
+will see the deployment group you added and you can assign project-specific machine tags as required.
+
+### Create a new deployment pool
+
+You can add a new deployment pool to an account, share it amongst your projects, and then add deployment groups to it.
+In the **Deployment Pools** page, choose **+ New**. In the **New deployment pool** panel,
+enter a name for the pool and then select the projects for which you want it to be available.
+
+When you navigate to the **Deployment Groups** page in the target project(s), you
+will see the deployment group you added and you can assign project-specific machine tags as required.
 
 ## Related topics
 

@@ -1,36 +1,44 @@
 - name: "Power BI (VSTS)"
   href: index.md
-- name: Concepts
+- name: Overview
   items:
-  - name: Power BI integration
+  - name: Power BI Integration overview
     href: overview.md
 - name: How-to Guides
   items:
+  - name: Connect using Data Connector 
+    href: data-connector-connect.md
+  - name: Connect using OData feed
+    href: access-analytics-power-bi.md
+  - name: Connect using VSTS functions (Advanced)
+    href: data-connector-functions.md
   - name: Client authentication 
     href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: Connect to VSTS 
-    href: data-connector-connect.md
-  - name: Access data
-    href: ../analytics/access-analytics-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: OData aggregations
-    href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: Create custom calculations
-    href: ../analytics/custom-calculations.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: "Publish to PowerBI.com"
-    href: ../analytics/publishing-power-bi-desktop-to-power-bi.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json   
+    href: publish-power-bi-desktop-to-power-bi.md  
   - name: Set permissions (Security)
-    href: ../analytics/analytics-security.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json  
-- name: Reference
+    href: ../analytics/analytics-security.md
+- name: Samples
   items:
-  - name: Data Connector functions
-    href: data-connector-functions.md
+  - name: Example Power BI Reports using the Data Connector
+    href: data-connector-examples.md
+- name: References
+  items:
+  - name: Data available in the VSTS Data Connector
+    href: data-connector-available-data.md
 - name: Resources
   items:
-  - name: Dashboards
-    href: ../dashboards/index.md
   - name: "Analytics (VSTS)"
     href: ../analytics/index.md
+  - name: Extend Analytics with OData
+    href: ../extend-analytics/index.md
+  - name: "Dashboard & Widgets"
+    href: ../dashboards/index.md
   - name: Power BI Desktop
     href: https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/
   - name: Power BI Documentation
     href: https://powerbi.microsoft.com/documentation/powerbi-landing-page/
+  - name: "Developer Community: PowerBI support forum"
+    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
+  - name: "User Voice: Reporting feature request"
+    href: https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting

@@ -528,7 +528,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
-<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/guidance/cumulative-flow.md).  </p>
+<p>With the CFD, you can [monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md).  </p>
 </td>
 
 
@@ -649,7 +649,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Velocity & forecasting</b></p>
-<p>Use [velocity charts](../report/guidance/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
+<p>Use [velocity charts](../report/dashboards/team-velocity.md) and [forecast](../work/scrum/forecast.md) tools  to estimate work that can be completed in future sprints. </p>
 ![Team velocity chart](_img/features/alm-feature-team-velocity-chart.png)  
 <br/>
 
@@ -1103,7 +1103,7 @@ build-release\tasks\build\_img
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
 <p>![](../build-release/tasks/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/tasks/build/visual-studio-build.md)</p>
 <p>![](../build-release/tasks/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/tasks/build/xamarin-android.md) </p>
-<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](../build-release/tasks/build/xamarin-ios.md) </p>
+<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on macOS](../build-release/tasks/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
@@ -1186,7 +1186,7 @@ build-release\tasks\build\_img
 <p>Deploy [any type of application across multiple platforms](../build-release/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/approvals/index.md) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
 <p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](../build-release/actions/view-manage-releases.md#send-email). </p>
@@ -1195,7 +1195,7 @@ build-release\tasks\build\_img
 <p>[Monitor the status of your release pipelines and track every deployment in each of the environments](../build-release/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments).</p>
 
 <p><b>Triggers</b></p>
 <p>Automate release deployment by [defining the events that will trigger a release](../build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
@@ -1369,7 +1369,7 @@ build-release\tasks\build\_img
 <p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
-<p>[Team velocity](../report/guidance/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
+<p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
 ![Team velocity chart](_img/features/alm-feature-team-velocity-chart.png)  
 
 <br/>
@@ -1407,7 +1407,7 @@ build-release\tasks\build\_img
 <p>Configure the layout to your specifications by [dragging tiles into the sequence you want](../report/dashboards/dashboards.md). </p>
 
 <p><b>Cumulative flow diagrams</b></p>
-<p>Track the progress of work on your backlogs [through the CFD charts](../report/guidance/cumulative-flow.md).  </p>
+<p>Track the progress of work on your backlogs [through the CFD charts](../report/dashboards/cumulative-flow.md).  </p>
 
 <p><b>Power BI dashboards (VSTS)</b></p>
 <p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
@@ -1637,7 +1637,7 @@ build-release\tasks\build\_img
 
 <!---
 <p><b>Cumulative flow diagram (VSTS)  </b></p>
-<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/guidance/cumulative-flow.md).
+<p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/dashboards/cumulative-flow.md).
 </p>
 -->
 
@@ -1985,14 +1985,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Get HockeyApp for mobile app development</b></p>
-<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](../billing/get-hockeyapp.md). </p>
+<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://www.visualstudio.com/app-center/). </p>
 
 <p><b>Simplified distribution </b></p>
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with VSTS and TFS</b></p>
-<p>[Integrate HockeyApp directly in VSTS or TFS](../billing/get-hockeyapp.md) to upload your Android, iOS, or Windows builds. </p>
+<p>[Integrate HockeyApp directly in VSTS or TFS](https://www.visualstudio.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2732,7 +2732,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Retain full audit history](../build-release/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments). </p>
 
 </td>
 </tr>

@@ -11,7 +11,8 @@ ms.date: 04/14/2017
 
 # Use team fields instead of area paths to support teams
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!IN
+CLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
@@ -39,30 +40,19 @@ When you customize your team project to support team fields, the Team field tab 
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-1.  If you aren't a member of the **Project Administrators** group, [get those permissions](../../security/set-project-collection-level-permissions.md).
+0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../security/set-project-collection-level-permissions.md).
 
-2.  Open a Command Prompt window where you've installed a version of Visual Studio (you can [download Visual Studio Community](https://www.visualstudio.com/downloads/) for free) and enter:
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-	**For Visual Studio 2017:**
-     ```cd %programfiles%\Microsoft Visual Studio 15.0\Common7\IDE```
-
-	**For Visual Studio 2015:**
-    ```cd %programfiles%\Microsoft Visual Studio 14.0\Common7\IDE```
-
-	**For Visual Studio 2013**: 
-	```cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE```  
-
-    On a 64-bit edition of Windows, replace %programfiles% with %programfiles(x86)%. 
-
-	[!INCLUDE [temp](../_shared/process-editor.md)]  
-
-3.  Export the global list for the team project collection.
+0.  Export the global list for the team project collection.
 
         witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
-        <?xml version="1.0" encoding="utf-8"?>
+        > [!div class="tabbedCodeSnippets"]
+		```XML
+		<?xml version="1.0" encoding="utf-8"?>
         <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
            <GLOBALLIST name="Teams">
               <LISTITEM value="Unassigned"/>
@@ -72,8 +62,9 @@ When you customize your team project to support team fields, the Team field tab 
               <LISTITEM value="Team D"/>
            </GLOBALLIST>
         </gl:GLOBALLISTS>
+		```
 
-4.  Import the global list definition.
+0.  Import the global list definition.
 
         witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
@@ -95,6 +86,8 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 2.  For each type, add a custom Team field that references the global list.
 
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <FIELDS>
         . . . 
            <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
@@ -107,12 +100,15 @@ Add a custom team field to all work item types (WITs) that are included in the F
            </FIELD>
         . . . 
         </FIELDS>
+		```
 
     >[!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
 3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
 
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <FORM>
         . . . 
            <Group Label="Status">
@@ -125,6 +121,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
            </Group>
         . . . 
         </FORM>
+		```
 
     Optionally, move the Area Path field to appear before or after the Iteration Path.
 
@@ -146,7 +143,10 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
         <TypeField refname="MyCompany.Team" type="Team" />
 
-3.  (Optional) Add the Team field to the quick add panel for the backlog page.
+3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
+  
+        > [!div class="tabbedCodeSnippets"]
+		```XML
         <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
             <AddPanel>
               <Fields>
@@ -155,6 +155,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
               </Fields>
             </AddPanel> 
         . . .
+		```
 
 4.  Import the definition file.
 

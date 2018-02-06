@@ -8,7 +8,7 @@
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
  # [GitHub repo](#tab/github)
 
@@ -18,7 +18,7 @@
 
 1. In the right panel, click **Start with an Empty Process**.
 
-1. For the **Default agent queue**, select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue**, select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. Click **Get sources** and then:
 
@@ -52,7 +52,7 @@
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

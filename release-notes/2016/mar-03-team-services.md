@@ -12,8 +12,6 @@ author: yukom
 
 #Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
 
-**Note:** The improvements discussed in this post will be rolling out throughout the week. Please follow progress of the deployment at [http://blogs.msdn.com/b/vsoservice/](http://blogs.msdn.com/b/vsoservice/).
-
 Our deployment this week is jam-packed with new value. Let’s start by looking at test results in release environments.
 
 ##View test results for each release environment

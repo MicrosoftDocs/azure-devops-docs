@@ -1,12 +1,13 @@
 ---
-title: Query by title, ID, or rich-text fields | VSTS & TFS
+title: Query by title, ID, or rich-text fields 
+titleSuffix: VSTS & TFS
 description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 02/05/2018  
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -37,12 +38,26 @@ You can find work items that have an undefined field value by using the equals o
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
 <a id="category"/>
-### List items based on categories
+## List items based on categories
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current team project, assigned to the team member, and defined as belonging to the Bug Category.
 
 ![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
 
+<a id="category"/>
+## What items appear in the Requirement or Task categories? 
+
+The default assignments of work item types to each category are listed below for each process.  
+
+| Process | Requirement category | Task category |
+|---------|---------|---------|
+| Agile | User Story | Task |
+| Scrum | Product Backlog Item | Task |
+| CMMI | Requirement | Task |
+
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
+
+Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
 
 ## Common fields for most work item types 
 
@@ -170,18 +185,8 @@ Work Item Type
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Create managed queries](example-queries.md)   
 
-<a id="category"/>
-###What items appear in the Requirement or Task categories? 
 
-The default assignments of work item types to each category are listed below for each process.  
-
-| Process | Requirement category | Task category |
-|---------|---------|---------|
-| Agile | User Story | Task |
-| Scrum | Product Backlog Item | Task |
-| CMMI | Requirement | Task |
-
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
-
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
  

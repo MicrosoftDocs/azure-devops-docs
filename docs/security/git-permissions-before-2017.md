@@ -18,7 +18,7 @@ Those using TFS 2017 Update 1 or VSTS should see the [latest list of permissions
 
 These permissions appear only for a team project including a Git repository.
 
-<img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/git-permissions-prior-to-2017.png" style="border: 1px solid #C3C3C3;" />
 
 Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
 
@@ -35,7 +35,7 @@ By default, the team project level and collection level Readers groups have only
 		<th width="70%">Description</th>
 	</tr>
 	<tr>
-		<th id="git-administer-permission">Administer</th>
+		<td id="git-administer-permission">Administer</td>
 		<td>
 			Can rename and delete the repository. If assigned to the top-level **Git repositories** entry, can add additional repositories.
 			<br /><br />
@@ -47,7 +47,7 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 	<tr>
-		<th id="git-branch-creation-permission">Branch Creation</th>
+		<td id="git-branch-creation-permission">Branch Creation</td>
 		<td>
 			Can create and publish branches in the repository.<br />
 			Lack of this permission does not limit users from creating branches in their local repository;
@@ -57,14 +57,14 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 	<tr>
-		<th id="git-contribute-permission">Contribute</th>
+		<td id="git-contribute-permission">Contribute</td>
 		<td>
 			At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../git/branch-policies.md). 
 			At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>
 	<tr>
-		<th id="git-note-management-permission">Note Management</th>
+		<td id="git-note-management-permission">Note Management</td>
 		<td>
 			Can push and edit Git notes to the repository.
 			They can also remove notes from items if they have the Force permission.
@@ -72,20 +72,20 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 	<tr>
-		<th id="git-read-permission">Read</th>
+		<td id="git-read-permission">Read</td>
 		<td>
 			Can clone, fetch, pull, and explore the contents of the repository.
 		</td>
 	</tr>
 	<tr>
-		<th id="git-rewrite-and-destroy-history-permission">Rewrite and destroy history (force push)</th>
+		<td id="git-rewrite-and-destroy-history-permission">Rewrite and destroy history (force push)</td>
 		<td>
 			Can force an update to a branch and delete a branch. A force update can overwrite commits added from any user.<br /><br />
 			Users with this permission can modify the commit history of a branch.
 		</td>
 	</tr>
 	<tr>
-		<th id="git-tag-creation-permission">Tag Creation</th>
+		<td id="git-tag-creation-permission">Tag Creation</td>
 		<td>
 			Can push tags to the repository,
 			and can also edit or remove tags if they have the Force permission.

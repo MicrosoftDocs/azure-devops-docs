@@ -31,7 +31,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
 - [Add inline tests](add-run-update-tests.md)
-- [Cumulative flow](../../report/guidance/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
 ## Concepts 
@@ -55,7 +55,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## Reference   
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
- 
+- [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md)
   
 ## Resources 
 
