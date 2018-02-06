@@ -17,6 +17,8 @@ You consume and publish packages through a particular feed.
    - Choose the upstream sources for your feed.
    - When you're done, choose **Create**.
 
+Most of the default settings work great for most feed users. Making your feed account visible means it's easy to share a single source of packages across your entire team. Enabling [upstream sources](../concepts/feeds/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages, and can also give you additional protection against outages and corrupted or compromised packages.
+
    ![New feed dialog](_img/new-feed-dialog.png)
 
    You can change these settings later by [editing the feed](../feeds/edit-feed.md).
