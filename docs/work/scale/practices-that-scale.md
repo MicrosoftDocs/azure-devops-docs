@@ -55,8 +55,8 @@ The more insight you and your teams have into the goal, vision, and progress of 
 
 - **Team structure**: No matter how large your organization gets, structuring your organization around small teams of 6 to 9 scales. Create [vertical, autonomous feature teams](agile-culture.md#horizontal-vs-vertical) grouped under portfolio management areas. 
 - **Work breakdown structure**: Breaking down large goals, features, or requirements into smaller ones remains a stable of project management. By breaking down work into similar-sized tasks, teams can make better estimates and identify risks and dependencies.    
-- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends. 
--**Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
+- **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends.  
+- **Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
 
 ## Productive workforce 
 
