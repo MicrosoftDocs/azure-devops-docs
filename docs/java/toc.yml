@@ -1,0 +1,85 @@
+- name: Java with VSTS
+  href: index.md
+- name: Overview
+  items:
+  - name: Get started
+    href: get-started.md
+- name: Quickstarts
+  items:
+  - name: DevOps Project for Java
+    href: ../build-release/apps/cd/azure/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+  - name: Use IntelliJ
+    href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Use Eclipse
+    href: ../git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Use Android Studio
+    href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Build with Maven
+    href: ../build-release/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+  - name: Build with Gradle
+    href: ../build-release/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+  - name: Manage Maven packages
+    href: ../package/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+- name: Hands-on Labs
+  href: labs/index.md
+  items:
+  - name: 1 - Set up VSTS
+    href: labs/settingvstsproject/index.md
+  - name: 2 - Agile for Java
+    href: labs/agile/index.md
+  - name: 3 - Docker build agent
+    href: labs/dockerbuildagent/index.md  
+  - name: 4 - Clone with Eclipse
+    href: labs/eclipsegit/index.md
+  - name: 4 - Clone with IntelliJ
+    href: labs/intellijgit/index.md
+  - name: 5 - Maven packages
+    href: labs/mavenpmvsts/index.md
+  - name: 6 - Maven and Jenkins
+    href: labs/mavenpmjenkins/index.md
+  - name: 7 - Publish Docker images
+    href: labs/builddocker/index.md
+  - name: 8 - SonarQube
+    href: labs/sonarqube/index.md
+  - name: 9 - Continuous deployment
+    href: labs/releasemanagement/index.md
+  - name: 10 - Eclipse end-to-end
+    href: labs/e2eeclipse/index.md
+  - name: 10 - IntelliJ end-to-end
+    href: labs/e2eintellij/index.md
+- name: How-To Guides
+  items:
+  - name: Use Maven artifacts
+    items:
+    - name: Set up authentication
+      href: ../package/maven/pom-and-settings.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    - name: Publish artifacts with Maven
+      href: ../package/maven/publish.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    - name: Install dependencies with Maven
+      href: ../package/maven/install.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+  - name: Use Gradle
+    items:
+    - name: Install dependencies with Gradle
+      href: ../package/gradle/pull-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    - name: Publish artifacts with Gradle
+      href: ../package/gradle/publish-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+  - name: Use Git Credential Manager
+    href: ../git/set-up-credential-managers.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+  - name: Add VSCode extension
+    href: vscode-extension.md
+  - name: Load-test with JMeter
+    href: ../load-test/get-started-jmeter-test.md?toc=/vsts/java/toc.json&bc=/vsts/load-test/breadcrumb/toc.json
+  - name: Use SonarQube
+    href: sonarqube.md
+  - name: Use Subversion
+    href: subversion.md
+  - name: Run code analysis
+    href: standalone-tools.md
+- name: Reference
+  items:
+  - name: Continuous Testing 
+    href: /vsts/build-release/test/continuous-test-java?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Build and Release
+    href: /vsts/build-release/index

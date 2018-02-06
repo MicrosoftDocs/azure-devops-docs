@@ -16,7 +16,7 @@ ms.date: 10/6/2017
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
 
-You can just [delete the user from each VSTS account](delete-account-users.md) 
+You can simply [delete the user from each VSTS account](delete-account-users.md) 
 where you need to remove them. If you delete the user only from Azure AD, they may still show up in VSTS, but 
 they won't be able to sign in.
 
@@ -35,7 +35,7 @@ VSTS account.
 
 ###	Delete users from Azure AD
 
-0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
+0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
 0.  [Remove the user](delete-account-users.md) 
 from your VSTS account and reassign their access levels, if necessary.

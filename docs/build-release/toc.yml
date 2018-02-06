@@ -59,7 +59,7 @@
     - name: Test your app
       items:
       - name: VS Test
-        href: test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json
+        href: test/getting-started-with-continuous-testing.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -100,6 +100,8 @@
       href: concepts/definitions/build/variables.md
   - name: Releases
     items:
+    - name: What is Release Management?
+      href: concepts/definitions/release/what-is-release-management.md
     - name: Release definitions
       href: concepts/definitions/release/index.md
     - name: Environments

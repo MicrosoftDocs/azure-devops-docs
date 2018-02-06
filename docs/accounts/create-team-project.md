@@ -17,9 +17,9 @@ ms.topic: get-started-article
 
 >[!NOTE]  
 >If you don’t want to manage an on-premises server, you can 
-[Sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
+[sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
 
-You create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
+Create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 
 If you have a team project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../git/gitquickstart.md).
 
@@ -37,14 +37,14 @@ If you have a team project already, and want to start coding an application proj
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
-2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page.
+2. Navigate to the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page.
 
-3. Click **New team project...**.
+3. Choose **New team project...**.
 
     ![New Team Project VSTS](_img/create-team-project/newteamprojectvsts.png)
 
 
-4. Provide a name for your new Team project, select its initial source control type, select a process, and choose who to share the project with to create a team project.
+4. Provide a name for your new team project, select its initial source control type, select a process, and choose with whom to share the project.
 
     See [choosing the right version control for your project](../tfvc/comparison-git-tfvc.md) and [choose a process](../work/work-items/guidance/choose-process.md) for guidance. 
 

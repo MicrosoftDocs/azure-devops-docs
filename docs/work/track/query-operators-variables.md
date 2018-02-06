@@ -1,12 +1,13 @@
 ---
-title: Query fields, operators, and macros/variables | VSTS & TFS
-description: Descriptions for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Query fields, operators, and macros/variables 
+titleSuffix: VSTS & TFS
+description: Describes field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/29/2017  
+ms.date: 02/05/2018  
 ---
 
 
@@ -121,7 +122,11 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>A branching tree structure, such as an Area Path or Iteration path. You must choose an item in a list of valid values. You can find work items that equal or are under a tree structure. For more information, see [Add and modify area and iteration paths](../customize/set-area-paths.md).</p></td></tr></tbody>
+	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a team project&mdash;[area paths](../customize/set-area-paths.md) and [teration paths](../customize/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md).</p> 
+	<p>For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).</p></td>
+</tr>
+
+</tbody>
 </table>
 
 <a id="operators" /> 
@@ -256,8 +261,8 @@ You can use the macros described in the following table to filter your queries b
 <table>
 <thead valign="bottom">
 <tr>
-<th width="14%"><p>Macro</p></th>
-<th width="84%"><p>Description</p></th>
+<th width="18%"><p>Macro</p></th>
+<th width="82%"><p>Description</p></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -269,18 +274,27 @@ You can use the macros described in the following table to filter your queries b
 
 
 <tr>
-	<td>**@CurrentIteration**</td>
+	<td>**@CurrentIteration** <sup>1</sup></td>
 	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
+	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
+</td>
+</tr>
+
+<!---NEW for S131
+
+<tr>
+	<td><b>@CurrentIteration +/- <i>n</i></b></td>
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+<blockquote><strong>Feature availability:</strong> The **@CurrentIteration =/- n** macro is supported for VSTS. The macro only works when run from the web portal. 
 </blockquote>
 </td>
 </tr>
 
+-->
+
 <tr>
-	<td>**@Follows**</td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
-<blockquote><strong>Feature availability:</strong> The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-</blockquote>
+	<td>**@Follows** <sup>2</sup></td>
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
@@ -289,22 +303,29 @@ You can use the macros described in the following table to filter your queries b
 	<td>Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For additional examples, see [Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md).
 </td>
 </tr>
-<!---
+
 <tr>
-	<td><b>@MyRecentActivity</b></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
-<blockquote><strong>Feature availability:</strong> The **@MyRecentActivity** macro is supported for VSTS and TFS 2018 and later versions.
-</blockquote>
+	<td><b>@MyRecentActivity <sup>3</sup></b></td>
+	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the team project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
 </td>
 </tr>
--->
+
 
 <tr>
-	<td>**@Project**</td>
+	<td>**@Project** <sup>4</sup></td>
 	<td>Use in conjunction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
+</td>
+</tr>
 
-<blockquote><b>Feature availability:</b>  For VSTS and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
-</blockquote>
+<tr>
+	<td><b>@RecentMentions <sup>3</sup></b></td>
+	<td>Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md). 
+</td>
+</tr>
+
+<tr>
+	<td><b>@RecentProjectActivity&nbsp;<sup>3</sup></b></td>
+	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
@@ -316,6 +337,13 @@ You can use the macros described in the following table to filter your queries b
 </tbody> 
 </table>
  
+####Notes:
+0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
+0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018 and later versions.
+0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).  
+ 
+
 
 <a id="full-text" /> 
 ## Full-text and partial word searches
@@ -333,6 +361,7 @@ Full-text searches require a SQL collation that corresponds to a language which 
 
 For more information, see [Full-Text Search Queries and Collation Settings](../../tfs-server/install/sql-server/collation-requirements.md).
 
+<!---
 ## Query indexed fields
 
 In addition to the full-text search index, a query index is created. It is based on those fields that have indexing enabled. The query index improves the response time when you run queries that include indexed fields.
@@ -341,3 +370,8 @@ By default, the following fields are indexed: **Assigned To**, **Created Date**,
 
 You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).
 
+--> 
+
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+ 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

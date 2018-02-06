@@ -254,9 +254,7 @@ Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sq
 
 When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you’ll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
 
-Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
-
-TfsMigrator.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection.
+TfsMigrator.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection. Compare the size of the largest table with the free space on the drive hosting your temporary directory. 
 
 ```cmdline 
 [Info   @08:23:59.539] Table name                               Size in MB
@@ -268,7 +266,7 @@ TfsMigrator.log provides a list of the largest tables in the collection each tim
 [Info   @08:23:59.539] dbo.tbl_FileMetadata                     61
 ```
 
-Using the largest table's size, ensure that the C: drive of the machine that will create the DACPAC has at least that much space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
+Ensure that the drive hosting your temporary directory has at least that much free space. If it doesn't then you'll need to redirect the temp directory by setting an environment variable. 
 
 ```cmdline
 SET TEMP={location on disk}
