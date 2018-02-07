@@ -3142,6 +3142,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "vsts/build-release/test/test-build.md",
+            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
             "redirect_url": "/vsts/build-release/test/test-with-unified-agent-and-phases",
             "redirect_document_id": false
