@@ -5,7 +5,7 @@ ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
-ms.author: kaelli
+ms.author: sdanie
 ms.date: 09/07/2017 
 ---
 
