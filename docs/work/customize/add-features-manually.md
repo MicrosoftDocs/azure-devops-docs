@@ -1,5 +1,6 @@
 ---
 title: Manually add features after an upgrade to TFS 
+titleSuffix: TFS
 description: Manually update an existing team project to access new features after upgrading an on-premises Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -461,6 +462,7 @@ Depending on the customizations that you've made and the features you want to en
 )</blockquote>  
 
 <a id="update-processconfig">   </a>
+<a id="edit-processconfig">   </a>
 
 ##Update ProcessConfiguration 
 

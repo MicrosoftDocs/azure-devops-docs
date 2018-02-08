@@ -1,7 +1,7 @@
 
 <a id="plan-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a delivery plan](/vsts/work/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Work>Plans** page. 
+You can use the following keyboard shortcuts when [interacting with a delivery plan](/vsts/work/scale/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Work>Plans** page. 
 
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2017.2 and later versions. Type **?** to access the Global and hub-specific shortcuts.  
