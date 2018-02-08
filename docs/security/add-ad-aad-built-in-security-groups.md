@@ -47,7 +47,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	<img src="_img/add-users/add-members-to-contributors-group.png" alt="Admin context, Security page, Contributors group, Membership page" style="border: 1px solid #C3C3C3;" /> 
 
-	By default, the default team group and all other teams you add to the team project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](/add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
+	By default, the default team group and all other teams you add to the team project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
 0. Click ![gear icon](../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 

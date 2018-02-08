@@ -55,7 +55,7 @@ For information on removing users from AD or AAD, see one of these topics:
 
 > [!NOTE]   
 > To access the VSTS **Users** hub and manage users, you must have 
-[VSTS project collection administrator or account owner permissions](#find-owner).
+[VSTS project collection administrator or account owner permissions](lookup-account-owner-admin.md).
 
 ## Related notes
 
