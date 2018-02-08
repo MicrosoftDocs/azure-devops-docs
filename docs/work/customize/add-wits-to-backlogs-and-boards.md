@@ -391,7 +391,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 WITs that you add to the Bug Category will be treated based on the [team setting](show-bugs-on-backlog.md). Because these WITs may be treated either as requirements or tasks, they must meet Agile planning tool requirements for both requirements and tasks.  
 1.	Export your process (Hosted XML) or your definition files (On-premises XML) as indicated in [First steps](#first-steps).
-2.	Edit the WIT definition to support planning tools by meeting the conditions listed for Step 2 of [Add a WIT to track as requirements](#wit-as-requirements) and [Add a WIT to track as tasks](#wit-as-tasks).  
+2.	Edit the WIT definition to support planning tools by meeting the conditions listed for Step 2 of [Add a WIT to track as requirements](#wits-as-requirements) and [Add a WIT to track as tasks](#wits-as-tasks).  
 
 3.	Edit the Categories definition. Add the WIT to the Bug Category. Here we add two WITs.  
 

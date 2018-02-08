@@ -1,6 +1,7 @@
 ---
-title: Use team fields instead of area paths to support teams | VSTS & TFS
-description: Steps to modify the XML syntax to support using a team field  for Visual Studio Team Services (VSTS) and Team Foundation Server
+title: Use team fields instead of area paths to support teams 
+titleSuffix: TFS
+description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
@@ -215,13 +216,12 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 **A:** Teams that you [add to a team project from the Overview page of the team project](../scale/multiple-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
 
-Use the global list to add new teams and then configure them as described in [Configure Team settings](#configteam).
 
 ### Q: How do I configure features for an upgraded team project that has been customized to use team fields?
 
 **A:** Before you can [configure features for an upgraded team project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 
-1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads/#team-foundation-server-2017).
+1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads).
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
