@@ -13,6 +13,10 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 
 
 ## Supported TFS Versions for Import
+
+> [!NOTE]
+> Migration support for TFS 2017 Update 3 will receive a one-time extension to Monday, April 23rd. After that date migrations from TFS 2017 Update 3 will no longer be supported. Please take this end of support date into consideration when forming your migration plans. All other versions of TFS currently under support will be retired as per normal when they are no longer one of the two most recent releases.
+
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
 * TFS 2017 Update 3
