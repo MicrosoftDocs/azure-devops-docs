@@ -8,4 +8,5 @@ https://app.vssps.visualstudio.com
 https://{accountname}.visualstudio.com
 https://{accountname}.vsrm.visualstudio.com
 https://{accountname}.pkgs.visualstudio.com
+https://{accountname}.vssps.visualstudio.com
  ```
