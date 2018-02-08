@@ -1,5 +1,6 @@
 ---
-title: XML element index | VSTS & TFS
+title: XML element index
+titleSuffix: VSTS & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -25,7 +26,7 @@ By using the index of elements in this topic, you can look up the syntax structu
   
 -   **FIELD** (Definition): You use this element and its child elements to define a work item field and to specify the rules and conditions that apply to it. See [Modify a field or add a custom field](../add-modify-field.md). To access descriptions for all fields defined within the default process templates, including system fields, see [Index of work item fields](../../work-items/guidance/work-item-field.md).  
   
--   **WORKFLOW**: You use this element and its child elements to define the states, transitions, and reasons that compose the workflow of a type of work item. In addition to the following elements, you can use most of the elements listed under [FIELD Definition Elements](#index_b) later in this topic to reference a field and apply conditions to it when a user changes its state. For more information, see [Change the workflow](change-workflow-wit.md).  
+-   **WORKFLOW**: You use this element and its child elements to define the states, transitions, and reasons that compose the workflow of a type of work item. In addition to the following elements, you can use most of the elements listed under [FIELD](#index_b) to reference a field and apply conditions to it when a user changes its state. For more information, see [Change the workflow](change-workflow-wit.md).  
   
     >[!NOTE]
     >Changes you make to the workflow can affect the operation of the Agile planning tools, the backlog and task board pages, and other tools. You might need to customize the process configuration. See [Process configuration](process-configuration-xml-element.md).  
@@ -73,6 +74,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [WORKFLOW](all-workflow-xml-elements-reference.md) 
 </td>
 <td>
+
+<a name="index_b"></a> 
 <h3 style="margin-bottom:8px">FIELD</h3>
 - [ALLOWEDVALUES](define-pick-lists.md)  
 - [ALLOWEXISTINGVALUE](define-pick-lists.md)  

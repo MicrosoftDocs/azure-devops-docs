@@ -1,7 +1,7 @@
 
 <a id="wiki-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [managing or editing Wiki pages](/vsts/collaborate/add-edit-wiki.md). To view the valid shortcuts, enter **Shift+?** from the **Wiki** hub or when editing a wiki page. 
+You can use the following keyboard shortcuts when [managing or editing Wiki pages](/vsts/collaborate/add-edit-wiki). To view the valid shortcuts, enter **Shift+?** from the **Wiki** hub or when editing a wiki page. 
 
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS.  

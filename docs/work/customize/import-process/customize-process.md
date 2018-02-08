@@ -1,5 +1,6 @@
 ---
-title: Customize a process to import using Hosted XML | VSTS
+title: Customize a process to import using Hosted XML
+titleSuffix: VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -119,6 +120,8 @@ You can apply the following customizations to your process
 Refer to the [restrictions](#restrictions) below for a list of limitations imposed by the system. 
 
 <a id="restrictions"></a>
+<a id="rule-summary"></a>
+
 ## Restrictions
 You can import up to 32 processes to VSTS. Your custom process must conform to all rules summarized below, otherwise a validation error message may occur upon import.
 * [Process](#process)
@@ -137,7 +140,7 @@ You can import up to 32 processes to VSTS. Your custom process must conform to a
     * [Form layout](#work-item-form-layout)
  
 <a id="process"></a>
-### Process
+### Process template
 Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md). In addition, it must meet the following conditions:  
 * Limit the number of WITs defined to 64
 * Contain only one Categories.xml definition file  
@@ -205,6 +208,8 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 *   For all WITs that belong to the category used to define the ```TaskBacklog```, specify the ```ALLOWEDVALUES``` rule for the field used for ```type=Activity``` in the ProcessConfiguration.xml file 
 
 <a id="rule-restrictions"></a>
+
+
 #### Rule restrictions
 In addition to the standard [field rule restrictions](../reference/apply-rule-work-item-field.md), the following restrictions are enforced:
 *   Field rule elements can't specify the *for* and *not* attributes   

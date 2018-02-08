@@ -1,5 +1,6 @@
 ---
-title: Create your backlog and tasks using Project | VSTS & TFS
+title: Create your backlog and tasks using Project
+titleSuffix: VSTS & TFS
 description: Add items, plan, order, and estimate your backlog of deliverables - VSTS and Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -15,7 +16,7 @@ ms.date: 07/21/2017
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
-Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#Differences working in Project versus Excel).
+Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
 
 Use this topic to learn how to:  
 
@@ -152,6 +153,15 @@ You can manage your project plan using Project and all the features that Project
 </tbody>
 </table>
 
+<a id="differences" />
+## Differences working in Project versus Excel
+
+|Area|Project|Excel|
+|---|---|---|
+|Adding TFS fields|You can only add fields to your Project plan that are defined in the Microsoft Project mapping file.|You can add any TFS field to your Excel worksheet that is listed in the Choose Columns dialog, subject to Excel limitations on text length.|
+|Publish/Refresh|You specify the **Publish or Refresh** field for individual tasks. Also, field attributes defined in the Microsoft Project mapping file affect how fields are published and refreshed.|All work items are subject to publish and refresh.|
+|Linking|You can create and modify parent-child links or predecessor-successor links between work items.|Using the tree list view, you can create and modify parent-child links.|
+
 ## Related notes  
 
 - [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
@@ -163,13 +173,6 @@ If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-offi
 ### Delete work items
 You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
 
-### Differences working in Project versus Excel
-
-|Area|Project|Excel|
-|---|---|---|
-|Adding TFS fields|You can only add fields to your Project plan that are defined in the Microsoft Project mapping file.|You can add any TFS field to your Excel worksheet that is listed in the Choose Columns dialog, subject to Excel limitations on text length.|
-|Publish/Refresh|You specify the **Publish or Refresh** field for individual tasks. Also, field attributes defined in the Microsoft Project mapping file affect how fields are published and refreshed.|All work items are subject to publish and refresh.|
-|Linking|You can create and modify parent-child links or predecessor-successor links between work items.|Using the tree list view, you can create and modify parent-child links.|
 
 
 ### Do you want to add Project fields to TFS work items?
