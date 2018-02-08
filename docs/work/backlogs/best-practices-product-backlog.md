@@ -1,5 +1,6 @@
 ---
-title: Backlog best practices | VSTS & TFS
+title: Backlog best practices 
+titleSuffix: VSTS & TFS
 description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

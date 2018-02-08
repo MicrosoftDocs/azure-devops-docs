@@ -500,6 +500,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 
 
 
+<a id="control-types" />
 
 ## Control element Type attribute syntax
 
