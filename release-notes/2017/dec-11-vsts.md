@@ -197,7 +197,7 @@ We have also revamped how you acquire (or purchase) VSTS extensions and Visual S
 ![User summary](_img/127_03.png)
 
 * A progress bar displays acquisition progress and allows navigation across steps.
-* We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator to purchase VSTS Users or Pipelines.
+* We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator.
 
 > [!div class="mx-imgBorder"]
 ![Request](_img/127_10.png)
