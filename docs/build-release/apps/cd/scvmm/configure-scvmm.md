@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+ms.date: 09/26/2017
 ---
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
@@ -19,7 +19,7 @@ VSTS or Team Foundation Server.
 
 ## Prepare
 
-You need SCVMM. 
+You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../actions/virtual-networks/create-virtual-network.md).
 
 1. Install the **Virtual Machine Manager** (VMM) console by
    following [these instructions](https://technet.microsoft.com/library/gg610627.aspx).
@@ -82,7 +82,7 @@ You need SCVMM.
    dialog to the environment.
 
 1. You can select the action from the list of actions available in the task.
-   See [SCVMM task actions](manage-vms-using-scvmm.md) for details.
+   See [SCVMM task actions](../../../actions/virtual-networks/manage-vms-using-scvmm.md) for details.
   
 1. You can now add other tasks to the environment, 
    such as **PowerShell on Target Machines** and then 
@@ -100,6 +100,11 @@ You need SCVMM.
 
 1. Create a new release from the release definition
    and deploy it to the environment.
+
+## See also
+
+* [Create a virtual network isolated environment for build-deploy-test scenarios](../../../actions/virtual-networks/create-virtual-network.md)
+* [Task actions for managing VMs using SCVMM](../../../actions/virtual-networks/manage-vms-using-scvmm.md)
 
 ## Q&A
 
