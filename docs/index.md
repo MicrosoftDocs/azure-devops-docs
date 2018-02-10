@@ -205,9 +205,9 @@ featureFlags:
                                     <h3>Code</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
@@ -310,7 +310,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests">
+                                <a href="/vsts/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -329,7 +329,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/concepts/forks">
+                                <a href="/vsts/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -348,7 +348,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies">
+                                <a href="/vsts/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -378,7 +378,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TFVC</h3>
-                                                    <p>Manage code with centralized, conventional version control.</p>
+                                                    <p>Manage code with centralized version control.</p>
                                                 </div>
                                             </div>
                                         </div>
