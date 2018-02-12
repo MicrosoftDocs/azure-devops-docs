@@ -16,14 +16,16 @@ ms.date: 09/26/2017
 Network Virtualization provides ability to create multiple virtual
 networks on a shared physical network. Isolated virtual networks can
 be created using SCVMM Network Virtualization concepts.
-VMM uses the concept of Logical Networks and corresponding VM Networks
-to create isolated network of virtual machines.
+VMM uses the concept of logical networks and corresponding VM networks
+to create isolated networks of virtual machines.
 
 ![Logical Networks and corresponding VM Networks](_img/virtual-networks/1.png)
 
-* You can create an Isolated Network of Virtual Machines that span across different hosts in a Host-Cluster or a Private cloud.
+* You can create an isolated network of virtual machines that span across different hosts in a host-cluster or a private cloud.
 * You can have VMs from different networks residing in the same host machine and still be isolated from each other.
-* You can define IP address from the any IP pool of your choice for a VM Network. 
+* You can define IP address from the any IP pool of your choice for a VM Network.
+
+See also: [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server).
 
 <a name="task-list"></a>
 
@@ -338,6 +340,7 @@ environments. You can create as many environments as you need with just a click 
 
 * [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md)
 * [Task actions for managing VMs using SCVMM](manage-vms-using-scvmm.md)
+* [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
 ## Q&A
 

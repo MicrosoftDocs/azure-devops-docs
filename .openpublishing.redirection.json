@@ -4800,6 +4800,11 @@
         "source_path": "docs/user-guide/team-projects-teams-repos.md",
         "redirect_url": "/vsts/work/scale/scale-teams",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/git/concepts/pull-requests-overview.md",
+        "redirect_url": "/vsts/git/pull-requests-overview",
+        "redirect_document_id": false
        }
     ]
 }
