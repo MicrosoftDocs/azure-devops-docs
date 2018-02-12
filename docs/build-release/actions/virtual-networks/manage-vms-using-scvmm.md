@@ -51,7 +51,7 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 * **Additional Arguments**: Enter any arguments to pass to the virtual machine creation template. Example `-StartVM -StartAction NeverAutoTurnOnVM -StopAction SaveVM`
 * **Wait Time**: The time to wait for the virtual machine to reach ready state.
 * **Network Virtualization**: Set this option to enable network virtualization for your virtual machines. For more information, see [Create a virtual network isolated environment](create-virtual-network.md). 
-* **Show minimal logs**: Set this option if yuo don't want to create detailed live logs about the VM provisioning process.
+* **Show minimal logs**: Set this option if you don't want to create detailed live logs about the VM provisioning process.
 
 ![Task configuration for create new virtual machines](_img/manage-vms-using-scvmm/scvmm-create-vm-using-template.png)
 
@@ -90,7 +90,7 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select one of the checkpoint actions **Create Checkpoint**, **Restore Checkpoint**, or **Delete Checkpoint**.
 * **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
-* **Checkpoint Name**: For the **Create CheckPoint** action, enter the name of the checkpoint that will be applied to the virtual machines. For the **Delete Checkpoint** or **Restore Checkpoint** action, enter the name of an existing checkpoint.
+* **Checkpoint Name**: For the **Create Checkpoint** action, enter the name of the checkpoint that will be applied to the virtual machines. For the **Delete Checkpoint** or **Restore Checkpoint** action, enter the name of an existing checkpoint.
 * **Description for Checkpoint**: Enter a description for the new checkpoint when creating it. 
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
