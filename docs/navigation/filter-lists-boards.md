@@ -4,7 +4,8 @@ titleSuffix: VSTS & TFS
 description: Filter your view to focus on items of interest 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
-ms.assetid: 
+ms.assetid:
+robots: NOINDEX, NOFOLLOW 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02-24-2018

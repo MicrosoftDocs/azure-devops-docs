@@ -71,6 +71,9 @@ To use custom variables in your build and release tasks, simply enclose the
 variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
+
+You can use custom variables to prompt for values during the execution of a release.
+For more details, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../_shared/set-variables-in-scripts.md)]
 

@@ -45,8 +45,9 @@ Learn the basics of working in Git with these tutorials which show tasks perform
 - [Authentication](auth-overview.md)
 - [History in Git](concepts/history.md)
 - [Branch organization](concepts/git-branching-guidance.md)
-- [Forks](concepts/forks.md)
-- [Pull requests](concepts/pull-requests-overview.md)
+- [Pull requests](pull-requests-overview.md)
+- [Forks](forks-overview.md)
+- [Branch policies](branch-policies-overview.md)
 - [Customize and extend pull request workflows with pull request status](concepts/pull-request-status.md)
 
 ## Reference
