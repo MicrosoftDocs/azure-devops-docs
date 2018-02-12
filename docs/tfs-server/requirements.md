@@ -60,7 +60,7 @@ Review these hardware recommendations to determine the optimal hardware to use f
 
 These recommendations are guidelines for Team Foundation Server Proxy. Recommended hardware is based on the size of the team that will use the proxy server. Usually this is the team in your remote office. The larger the team, the more robust your hardware must be.
 
-| **Remote team size** | **Hardware recommendations (CPU/RAM) for Team Foundation Server Proxy ** |
+| **Remote team size** | **Hardware recommendations (CPU/RAM) for Team Foundation Server Proxy** |
 |---|---|
 | 450 or fewer users | 1 processor, 2.2 GHz CPU, 2 GB RAM |
 | Between 450 and 2,200 users | 2 processors, 2.0 GHz CPU, 2 GB RAM |
@@ -145,7 +145,7 @@ We recommend Standard or Enterprise for all other scenarios.
 
 > [!IMPORTANT]  
 > TFS 2018 discontinues support for the TFS Extension for SharePoint. 
-> For more information, see [Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
+> For more information, see **[Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
 
 SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
 
