@@ -2,7 +2,7 @@
 title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using VSTS
 services: vsts
-documentationcenter: ''
+documentationcenter: vs-devops-build
 author: mlearned
 manager: douge
 editor: ''
@@ -12,7 +12,7 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: acs
 ms.workload: ''
-ms.date: 01/19/2018
+ms.date: 02/07/2018
 ms.custom: mvc
 ---
 
@@ -39,34 +39,34 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 ##  Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.
 
-1.  Ensure the import of the code completes successfully.  In the top right-hand corner of your browser click **clone**.  Click **Clone in Visual Studio**.  
+1.  Ensure the import of the code completes successfully.  In the top right-hand corner of your browser Select **clone**.  Select **Clone in Visual Studio**.  
 
     ![Clone from browser](_img/aspnet-core-to-acr/clone.png)    
     ![Clone in Visual Studio](_img/aspnet-core-to-acr/cloneinvs.png)    
 2.  Visual Studio 2017 will launch and prompt for credentials.
-3.  After authenticating, choose a directory and click **clone** to finish cloning the code to your local environment.
+3.  After authenticating, choose a directory and Select **clone** to finish cloning the code to your local environment.
 
 ## Install Continuous Delivery (CD) Tools for Visual Studio 2017    
 Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creation of VSTS to Azure release pipelines.  Optionally, you can extend the generated pipeline to further enhance your CI/CD workflows.
 
-1.  In Visual Studio 2017 click **Tools then click Extensions and Updates**.
-2.  In the dialogue, click **Online** and search for **Continuous Delivery Tools for Visual Studio**.
-3.  Click **Download**, and once it finishes **close** Visual Studio to finish the install process.
+1.  In Visual Studio 2017 Select **Tools then Select Extensions and Updates**.
+2.  In the dialogue, Select **Online** and search for **Continuous Delivery Tools for Visual Studio**.
+3.  Select **Download**, and once it finishes **close** Visual Studio to finish the install process.
 4.  **Restart** Visual Studio and **open** your solution.
-5.  In solution explorer **Right Click** your solution and verify you see a **Configure Continuous Delivery** icon.
+5.  In solution explorer **Right Select** your solution and verify you see a **Configure Continuous Delivery** icon.
 
     ![Connfigure CD icon](_img/aspnet-core-to-acr/vsconfigcdicon.png)    
 
 ##  Configure and execute Continuous Delivery (CD) for your app    
 Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD tooling quickly creates various services in Azure and VSTS.  This automation allows you to enable CI/CD to Azure for your apps by creating full build and release pipelines in VSTS.
 
-1.  In Visual Studio, **right click** your solution and click **Configure Continuous Delivery**.
+1.  In Visual Studio, **right Select** your solution and Select **Configure Continuous Delivery**.
 
     ![Connfigure CD from Visual Studio](_img/aspnet-core-to-acr/vsconfigurecd.png)
 2.  Choose App Service (Linux) as your **Host Type**.
 3.  Choose the **Container Registry** you created earlier.
-4.  Accept the default App Service name or click **edit** to choose a new name.
-5.  Click **ok**, and monitor the output window for results.  
+4.  Accept the default App Service name or Select **edit** to choose a new name.
+5.  Select **ok**, and monitor the output window for results.  
 6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same team project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
