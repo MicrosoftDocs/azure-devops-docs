@@ -110,7 +110,6 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/iis-deploy-icon.png) [IIS Web App Deploy](deploy/iis-deploy.md). Deploy IIS Websites and Virtual Applications using WebDeploy | VSTS |
 | ![icon](deploy/_img/iis-manage-icon.png) [IIS Web App Manage](deploy/iis-manage.md). Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools | VSTS |
-| ![icon](deploy/_img/manual-intervention-icon.png) [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task). Pause deployment and wait for intervention | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/mobile-center-upload-icon.png) [App Center Distribute](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterDistribute). Upload and distribute mobile app packages using Visual Studio App Center | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines](deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Application Deployment](deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | VSTS, TFS 2017 and newer |

@@ -88,7 +88,8 @@ Test plans, suites, and test cases are stored in VSTS and TFS as special types o
    
 ## See also
 
-*  [FAQs for manual testing](../reference-qa.md#testplans)
+* [FAQs for manual testing](../reference-qa.md#testplans)
+* [Link test cases to work items](../../work/track/link-work-items-support-traceability.md)
 
 ##  Next step
 
