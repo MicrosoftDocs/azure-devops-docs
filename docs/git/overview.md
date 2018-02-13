@@ -15,7 +15,7 @@ layout: LandingPage
 
 Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
-New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code.
+New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
 
 ## Get started
 
