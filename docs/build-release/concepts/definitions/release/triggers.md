@@ -35,8 +35,10 @@ of any of those artifacts is produced.
 
 You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
-(only applicable when the code is in a VSTS or a TFS Git repository)
-or when the build has certain tags.
+(only applicable when the code is in a TFVC, Git, or GitHub repository)
+or when the build has certain tags. These can be both include and exclude filters.
+For example, use **features/\*** to include all builds under the **features** branch.
+You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
 in the build definition. This is useful when, for example, the default build branch

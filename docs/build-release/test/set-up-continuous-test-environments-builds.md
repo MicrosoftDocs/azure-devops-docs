@@ -25,7 +25,9 @@ You'll need to set up physical or virtual machines to run your app and tests, fo
 
 * Machines with the necessary browsers to run your tests
 
-With VSTS, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups. With TFS, you can define environments using only physical machines.
+With VSTS, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups.
+With TFS, you can define environments using only physical machines.
+Alternatively, you can [create a virtual network isolated environment for your build-deploy-test scenarios](../actions/virtual-networks/create-virtual-network.md).
 
 If you want to use a PowerShell script to deploy your app, make sure to:
 
@@ -42,7 +44,7 @@ to install your agents.
 
 > [!NOTE]
 > Previous versions of VSTS and TFS included the capability to define
-> **Machine Groups**. However, this feature will be retired on **Jan 31st 2018** and it will be no longer possible to use machine groups.
+> **Machine Groups**. However, this feature is no longer available.
 
 As an alternative, you can use:
 
@@ -81,6 +83,7 @@ You will typically use a list of machine names in the following tasks:
 
 ## See also
 
+* [Create a virtual network isolated environment for build-deploy-test scenarios](../actions/virtual-networks/create-virtual-network.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 

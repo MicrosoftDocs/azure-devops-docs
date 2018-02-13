@@ -19,7 +19,11 @@ Extensions for Visual Studio Team Services (VSTS) and Team Foundation Server (TF
 * [Assign paid extensions to users](./assign-paid-extensions.md)
 
 ## How-to Guides
-* [Rate and review extensions](./rating-and-review.md)
+* [Manage extension related permissions](how-to/grant-permissions.md)
+* [Request extensions](request-extensions.md)
+* [Approve extension requests](approve-extensions.md)
+* [Respond to Marketplace extension reviews](../extend/publish/manage-ratings-reviews.md)
+
 
 ## Troubleshooting
 * [Marketplace FAQs](./faq-extensions.md)

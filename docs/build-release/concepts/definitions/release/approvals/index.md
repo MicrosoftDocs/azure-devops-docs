@@ -33,6 +33,8 @@ By using approvals, gates, and manual intervention you can take full control of 
 to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention
 are useful include the following.
 
+<a name="scenarios"></a>
+
 | Scenario | Feature(s) to use |
 | --- | --- |
 | Some users must manually validate the change request and approve the deployment to an environment. | [Pre-deployment approvals](approvals.md) |
@@ -41,6 +43,7 @@ are useful include the following.
 | You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
 | After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During the deployment process a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../../../../tasks/utility/manual-intervention.md) | 
+| During the deployment process you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../../../../tasks/utility/manual-intervention.md) | 
 | During the deployment process you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases.  | Planned | 
 
 You can, of course, combine all three techniques within a release definition to fully achieve your own process and deployment requirements.
