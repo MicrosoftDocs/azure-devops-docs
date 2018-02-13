@@ -15,9 +15,10 @@ ms.date: 12/14/2017
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
-fork to suggest changes to a project when you don't have permissions to 
+fork to suggest changes to a project, when you don't have permissions to 
 write to the original project directly.
-Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests.md).
+Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to contribute the changes back to the original repository for
+the repository's owners to review.
 
 ## What's in a fork
 
