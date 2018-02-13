@@ -15,8 +15,8 @@ ms.date: 01/19/2018
 
 Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team review code and give feedback on changes before
-merging it into the master branch. Pull requests can come from either
-topic branches within the same repository or from a branch in a
+merging it into the master branch.  Pull requests can come from either
+topic branches within the same repository, or from a branch in a
 [fork](concepts/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 

@@ -415,5 +415,5 @@ subscriptions. They can use any email address to create a Microsoft account.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
+[https://developercommunity.visualstudio.com/spaces/21/index.html](../_shared/qa-get-vsts-support.md)]
 
