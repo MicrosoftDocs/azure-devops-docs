@@ -14,87 +14,103 @@ ms.date: 09/26/2017
 [!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
 
 You can manage your virtual machines using the System Center Virtual
-Machine Manager (**SCVMM**) task by performing actions such as creating, restoring, and 
-deleting checkpoints; starting and stopping virtual machines; creating
-new virtual machines using templates; and running custom PowerShell scripts for SCVMM.
+Machine Manager (**SCVMM**) task by performing a range of actions such as:
 
-You must install the **System Center Virtual Machine Manager (SCVMM)**
-extension from Visual Studio Marketplace into your server or account.
+* [Create new virtual machines from a template, VHD, or stored VM](#newvm)
+* [Delete virtual machines](#delete)
+* [Start and stop virtual machines](#startstop)
+* [Create, restore, and delete checkpoints](#checkpoint)
+* [Run custom PowerShell scripts for SCVMM](#runscript)
+
+You must install the **System Center Virtual Machine Manager (SCVMM)** extension from Visual Studio Marketplace into your server or account.
 For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/configure-scvmm.md).
 
-## SCVMM task actions
+<a name="newvm"></a>
 
-The **SCVMM** task can be used to perform the a range of actions:
+## Create new virtual machines from a template, VHD, or stored VM
 
-* **Create, restore, and delete checkpoints**. Use the following task parameters:
+* **Display name**: The name for the task as it appears in the task list. 
+* **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
+* **Action**: Select **New Virtual Machine using Template/Stored VM/VHD**.
+* **Create virtual machines from VM Templates**: Set this option if you want to use a template.
+  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  - **VM template names**: Enter the name of the template, or a list of the template names on separate lines.
+  - **Set computer name as defined in the VM template**: If not set, the computer name will be the same as the VM name.
+* **Create virtual machines from stored VMs**: Set this option if you want to use a stored VM.
+  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  - **Stored VMs**: Enter the name of the stored VM, or a list of the VMs on separate lines in the same order as the virtual machine names.
+* **Create virtual machines from VHD**: Set this option if you want to use a stored VM.
+  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  - **VHDs**: Enter the name of the VHD or VHDX, or a list of names on separate lines in the same order as the virtual machine names.
+  - **CPU count**: Specify the number of processor cores required for the virtual machines.
+  - **Memory**: Specify the memory in MB required for the virtual machines.
+* **Clear existing network adapters**: Set this option if you want to remove the network adapters and specify new ones in the **Network Virtualization** options.
+* **Deploy the VMs to**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
+* **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
+* **Placement path for VM**: If you selected **Host** as the deployment target, enter the path to be used during virtual machine placement. Example `C:\ProgramData\Microsoft\Windows\Hyper-V`
+* **Additional Arguments**: Enter any arguments to pass to the virtual machine creation template. Example `-StartVM -StartAction NeverAutoTurnOnVM -StopAction SaveVM`
+* **Wait Time**: The time to wait for the virtual machine to reach ready state.
+* **Network Virtualization**: Set this option to enable network virtualization for your virtual machines. For more information, see [Create a virtual network isolated environment](create-virtual-network.md). 
+* **Show minimal logs**: Set this option if you don't want to create detailed live logs about the VM provisioning process.
 
-  - **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
-  
-  - **Action**: Select one of the checkpoint actions **Create Checkpoint**, **Restore Checkpoint**, or **Delete Checkpoint**.
-  
-  - **Virtual Machines Name**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
-  
-  - **Checkpoint Name**: For the **Create CheckPoint** action, enter the name of the checkpoint that will be applied to the virtual machines. For the **Delete Checkpoint** or **Restore Checkpoint** action, enter the name of an existing checkpoint.
-  
-  - **Description for Checkpoint**: Enter a description for the new checkpoint when creating it. 
-  
-  - **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
-  
-  - **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.<p />
+![Task configuration for create new virtual machines](_img/manage-vms-using-scvmm/scvmm-create-vm-using-template.png)
 
-  ![Task configuration for create, restore, and delete checkpoint](_img/manage-vms-using-scvmm/scvmm-create-checkpoint.png)
+<a name="delete"></a>
 
-* **Create new virtual machines using a template**. Use the following task parameters:
-        
-  - **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
-  
-  - **Action**: Select **New Virtual Machine using Template**.
-  
-  - **Virtual Machines Name**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
-  
-  - **Virtual Machine Template Name**: To create virtual machines using a template, enter the template name.
-  
-  - **Deploy the VMs to**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
-  
-  - **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
-  
-  - **Placement path for VM**: If you selected **Host** as the deployment target, enter the path to be used during virtual machine placement. Example `C:\ProgramData\Microsoft\Windows\Hyper-V`
-  
-  - **Additional Arguments**: Enter any arguments to pass to the virtual machine creation template. Example `-StartVM -StartAction NeverAutoTurnOnVM -StopAction SaveVM`
-  
-  - **Wait Time**: The time to wait for the virtual machine to reach ready state.
-  
-  - **Set Computer name as defined in VM template**: Set (tick) this option to set the computer name to that defined in the template (if provided). If not set, the computer name will be that specified for the **Virtual Machine Names** parameter.<p />
+## Delete virtual machines
 
-  ![Task configuration for create new virtual machines using a template](_img/manage-vms-using-scvmm/scvmm-create-vm-using-template.png)
+* **Display name**: The name for the task as it appears in the task list. 
+* **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
+* **Action**: Select **New Virtual Machine using Template/Stored VM/VHD**.
+* **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
+* **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
+* **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 
-* **Start and stop virtual machines**. Use the following task parameters:
+![Task configuration for deleting a virtual machine](_img/manage-vms-using-scvmm/scvmm-delete-vm.png)
 
-  - **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
-  
-  - **Action**: Select **Start Virtual Machine** or **Stop Virtual Machine**.
-  
-  - **Virtual Machines Name**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
-  
-  - **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
-  
-  - **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
-  
-  - **Wait Time**: The time to wait for the virtual machine to reach ready state.<p />
+<a name="startstop"></a>
+
+## Start and stop virtual machines
+
+* **Display name**: The name for the task as it appears in the task list. 
+* **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
+* **Action**: Select **Start Virtual Machine** or **Stop Virtual Machine**.
+* **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
+* **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
+* **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
+* **Wait Time**: The time to wait for the virtual machine to reach ready state.
  
-  ![Task configuration for start and stop virtual machines](_img/manage-vms-using-scvmm/scvmm-start-vm.png)
+![Task configuration for start and stop virtual machines](_img/manage-vms-using-scvmm/scvmm-start-vm.png)
 
-* **Run custom PowerShell scripts for SCVMM**. Use the following task parameters:
+<a name="checkpoint"></a>
 
-  - **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
-  
-  - **Action**: Select **Run PowerShell Script for SCVMM**.
-  
-  - **Script Path**: Enter the path of the PowerShell script to execute. It must be a fully-qualified path, or a path relative to the default working directory.
-  
-  - **Script Arguments**: Enter any arguments to be passed to the PowerShell script. You can use either ordinal parameters or named parameters.
-  
-  - **Working folder**: Specify the current working directory for the script when it runs. The default if not provided is the folder containing the script.
+## Create, restore, and delete checkpoints
+
+* **Display name**: The name for the task as it appears in the task list. 
+* **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
+* **Action**: Select one of the checkpoint actions **Create Checkpoint**, **Restore Checkpoint**, or **Delete Checkpoint**.
+* **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
+* **Checkpoint Name**: For the **Create Checkpoint** action, enter the name of the checkpoint that will be applied to the virtual machines. For the **Delete Checkpoint** or **Restore Checkpoint** action, enter the name of an existing checkpoint.
+* **Description for Checkpoint**: Enter a description for the new checkpoint when creating it. 
+* **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
+* **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
+
+![Task configuration for create, restore, and delete checkpoint](_img/manage-vms-using-scvmm/scvmm-create-checkpoint.png)
+
+<a name="runscript"></a>
+
+## Run custom PowerShell scripts for SCVMM
+
+* **Display name**: The name for the task as it appears in the task list. 
+* **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
+* **Action**: Select **Run PowerShell Script for SCVMM**.
+* **Script Type**: Select either **Script File Path** or **Inline Script**.
+* **Script Path**: If you selected **Script File Path**, enter the path of the PowerShell script to execute. It must be a fully-qualified path, or a path relative to the default working directory.
+* **Inline Script**: If you selected **Inline Script**, enter the PowerShell script lines to execute.
+* **Script Arguments**: Enter any arguments to be passed to the PowerShell script. You can use either ordinal parameters or named parameters.
+* **Working folder**: Specify the current working directory for the script when it runs. The default if not provided is the folder containing the script.
+
+![Task configuration for running a PowerShell script for SCVMM](_img/manage-vms-using-scvmm/scvmm-powershell-script.png)
 
 ## See also
 

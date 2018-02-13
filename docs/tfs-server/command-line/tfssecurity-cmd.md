@@ -1,17 +1,17 @@
 ---
 title: Change groups and permissions with TFSSecurity
-description: Change groups and permissions from the command-line using TFSSecurity
+description: Change groups and permissions in VSTS and TFS from the command-line using TFSSecurity
 ms.assetid: 58b780cb-9678-4d45-96dd-64447a6d5b17
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/04/2016
+ms.date: 02/12/2018
 ---
 
 # Change groups and permissions with TFSSecurity
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 You can use the **TFSSecurity** command-line tool to create, modify, and delete groups and users in Visual Studio Team Foundation Server (TFS), in addition to modifying permissions for groups and users. For information about how to perform these tasks in the user interface, see <span sdata="link"> Manage users or groups </span>.
 
@@ -19,6 +19,16 @@ This server-level tool is located in Drive:\\%programfiles%\\TFS 12.0\\Tools on 
 
 > Even if you are logged on with administrative credentials,
 > you must open an elevated Command Prompt to perform this function.
+
+## Use with VSTS
+The **TFSSecurity** command-line tool can be used with Visual Studio Team Services (VSTS) as well. To use it for VSTS, use the same commands as TFS but replace the *CollectionURL* with your *AccountURL* (ServerURL is not applicable with VSTS). 
+
+### Example:
+```
+tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:AccountURL]
+```
+
+> While this tool is supported, we recommend using our [Security REST API](https://docs.microsoft.com/en-us/rest/api/vsts/security/) when working with security groups and permissions in VSTS as our APIs are updated faster and more often.
 
 ## Permissions
 

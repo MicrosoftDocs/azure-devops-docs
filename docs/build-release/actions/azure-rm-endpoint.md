@@ -57,21 +57,35 @@ This is a permission issue that may be due to the following causes:
 <a name="guestonly"></a>
 #### The user has only guest permission in the directory
 
-You must be a member of the **Global administrator** role in the directory in order
-to create an Azure Resource Manager service endpoint.
-The directory administrator has permission to change a user's role, as follows:
+The best approach to resolve this issue, while granting only the minimum additional permissions
+to the user, is to increase the Guest user permissions as follows:
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
 
-1. Choose **Azure Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and in the **MANAGE** section choose **Users and groups**.
-   
-1. In the **MANAGE** section choose **All users**.
+1. Choose **Azure Active Directory** in the left navigation bar.
 
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
+
+1. In the **MANAGE** section choose **Users**.
+
+1. Choose **User settings**.
+
+1. In the **External users** section, change **Guest user permissions are limited** to **No**.
+
+Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
+you can make the user a member of the **Global administrator** role as follows:
+
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
+
+1. Choose **Azure Active Directory** in the left navigation bar.
+
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
+
+1. In the **MANAGE** section choose **Users**.
+   
 1. Use the search box to filter the list and then choose the user you want to manage.
 
-1. In the **MANAGE** section choose **Directory role** and change the
-   role to **Global administrator**.
+1. In the **MANAGE** section choose **Directory role** and change the role to **Global administrator**.
 
 1. Save the change.
 
@@ -84,12 +98,15 @@ After this period has elapsed, the user can retry creating the service endpoint.
 You must have permission to add integrated applications in the directory.
 The directory administrator has permission to change this setting, as follows:
 
-1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
+1. Choose **Azure Active Directory** in the left navigation bar.
 
-1. Choose **Azure Active Directory** in the left navigation bar, select the directory
-   corresponding to the user subscription, and in the **MANAGE** section choose **User settings**.
+1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **App registrations** section, change **Users can register applications** to **YES**.
+1. In the **MANAGE** section choose **Users**.
+
+1. Choose **User settings**.
+
+1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found

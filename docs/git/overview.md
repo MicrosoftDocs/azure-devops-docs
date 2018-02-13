@@ -6,7 +6,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/24/2017
+ms.date: 02/12/2018
+layout: LandingPage
 ---
 
 #  Git and VSTS
@@ -14,7 +15,7 @@ ms.date: 10/24/2017
 
 Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
-New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code.
+New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
 
 ## Get started
 
@@ -29,9 +30,17 @@ VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](http://java.visualstudio.com/Docs/tools/eclipse), 
 and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 
-<p>New to Git? Learn how to share code with Git and VSTS with getting started guides for [Visual Studio](share-your-code-in-git-vs.md), 
-[Eclipse](share-your-code-in-git-eclipse.md), [Xcode](share-your-code-in-git-xcode.md), [IntelliJ](create-repo-intellij.md), and the [command line](share-your-code-in-git-cmdline.md).</p>
+
+<p>New to Git? Learn how to share code with Git and VSTS with the following getting started guides:</p>
 </div>
+</div>
+
+<!--- All images are Placeholder --> 
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+
+<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+
 </div>
 
 ## Git tutorial
@@ -107,13 +116,99 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <p>Review code with your team and make sure that changes build and pass tests before it's merged.</p>
 
-<ul>
-<li>[Create a pull request](pull-requests.md)</li>
-<li>[Link work items to pull requests](pull-requests.md#link-work-items)</li> 
-<li>[Set up branch policies](branch-policies.md#require-the-pull-request-to-build)</li> 
-<li>[Squash merge pull requests](merging-with-squash.md)</li>
-<li>[Git branch and pull request workflows](concepts/git-branching-guidance.md)</li>
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="pull-requests.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Create a pull request</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="pull-requests.md#link-work-items">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="../_img/index/i_tasks.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Link work items to pull requests</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="branch-policies.md#require-the-pull-request-to-build">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="../_img/index/i_branch-policies.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Set up branch policies</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="merging-with-squash.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Squash merge pull requests</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="concepts/git-branching-guidance.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="../_img/index/i_branch-policies.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Git branch and pull request workflows</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
 </ul>
 
 </div>
 </div>
+
