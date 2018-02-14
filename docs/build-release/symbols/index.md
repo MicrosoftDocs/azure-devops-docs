@@ -32,11 +32,11 @@ To publish symbols for NuGet packages, include the above task in the build defin
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
-#### Q: What's the  retention policy for the symbols stored in the VSTS symbol server?
+#### Q: What's the retention policy for the symbols stored in the VSTS symbol server?
 
 A: Symbols will have the same retention as the build. When you delete a build, you also delete the symbols produced by that build.
 
-#### Q: Can I use source indexing on a portable PDB created from a .NET Core assembly?  
+#### Q: Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
 A: No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn’t support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs.
 
