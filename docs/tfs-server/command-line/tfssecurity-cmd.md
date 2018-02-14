@@ -25,7 +25,7 @@ The **TFSSecurity** command-line tool can be used with Visual Studio Team Servic
 
 ### Example:
 ```
-tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/account:AccountURL]
+tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:AccountURL]
 ```
 
 > While this tool is supported, we recommend using our [Security REST API](https://docs.microsoft.com/en-us/rest/api/vsts/security/) when working with security groups and permissions in VSTS as our APIs are updated faster and more often.
