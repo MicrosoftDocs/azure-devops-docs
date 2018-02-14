@@ -28,8 +28,12 @@ For more information on why we no longer support this integration, please read t
 
 If you are on TFS 2017 and want to integrate with Microsoft Project Server, you can do so by working with one of the following partners and their solutions.
 
+<br/>
 <a id="Project-Connect-from-Tivitie" />
-<h3 style="color:white">[![Tivitie](_img/tivitie-Blue2.png)](http://www.tivitie.com/projectconnect)Project Connect from Tivitie</h3>
+
+![Tivitie](_img/tivitie-Blue2.png)
+
+## [Project Connect from Tivitie](http://www.tivitie.com/projectconnect)
 
 Keep your agile teams working in VSTS and TFS, the tool they are accustomed to, while providing portfolio and program leaders a broad view of the project portfolio with Project Connect. A unified PPM solution bridges gaps that are impacting productivity and the bottom line. Connecting Project Online with VSTS drives enhanced visibility & alignment - making sure the projects that the teams are working so hard on - are the right projects and deliver value to the organization.
 
@@ -37,10 +41,12 @@ Keep your agile teams working in VSTS and TFS, the tool they are accustomed to, 
 
 **Marketplace extension**: [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO). 
 
- 
+<br/>
 <a id="ConnectALL-from-Go2Group" />
 
-<h3 style="color:white">[![Go2Group](_img/tfs-ps-sync-go2group-logo.png)](https://www.go2group.com/connectall/)ConnectALL from Go2Group</h3>
+![Go2Group](_img/tfs-ps-sync-go2group-logo.png)
+
+## [ConnectALL from Go2Group](https://www.go2group.com/connectall/)
 
 ConnectALL is an application integration solution that connects multiple tools and applications, enabling a company's development and management teams to collaborate efficiently and flawlessly across multiple development platforms. Easy to buy, easy to install, and easy to use, ConnectALL meets strict enterprise governance requirements. It leverages Enterprise Service Bus (ESB) technology to achieve an enterprise-grade infrastructure with clustering, multi-tenancy architecture, multiple server support both in the cloud and on-premises, traceability, and audit trails. This type of deployment yields the highest operational efficiency and lowest ongoing maintenance efforts through a single server instance. The architecture encourages collaboration-at-scale between departments while ensuring secure communication.
 
@@ -50,9 +56,12 @@ ConnectALL is from Go2Group, a global provider of IT delivery solutions that hel
 
 **Marketplace extension**: [ConnectALL](https://marketplace.visualstudio.com/items?itemName=go2group.ConnectALL). 
 
-
+<br/>
 <a id="Tasktop" />
-<h3 style="color:white">[![Tasktop](_img/tfs-ps-sync-tas-logo.png)](http://www.tasktop.com/product-overview)Tasktop</h3>  
+
+![Tasktop](_img/tfs-ps-sync-tas-logo.png)
+
+## [Tasktop](http://www.tasktop.com/product-overview)
  
 Tasktop provides enterprise-grade integration between Microsoft Project Server and TFS/VSTS, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
  
