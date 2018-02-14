@@ -14,17 +14,18 @@ ms.date: 01/20/2018
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
-The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Package Management feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/feeds/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
+The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Package Management feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
 
 The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the nuget client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
 
-To learn more about the concept of upstream sources, please see the [concepts page](../concepts/feeds/upstream-sources.md).
+To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
 
 ## Enable the upstream on a new feed
 
 1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 1. [Update your NuGet configuration](#update-nuget-configuration).
 
+<a name="existing-feed"></a>
 ## Enable the upstream on an existing feed
 
 > [!IMPORTANT]
@@ -49,7 +50,7 @@ If you're concerned about this, consider creating a new feed then adding nuget.o
 
 ## Update your NuGet configuration
 
-To use your feed and upstream source, follow the instructions to [consume NuGet packages](consume.md). If you've previously set up this feed, still take a quick pass through those instructions and ensure you've disabled NuGet.org as a source. This ensures that all package requests are sent to your VSTS feed, which is required to take advantage of the [guaranteed save](../concepts/feeds/upstream-sources.md#offline-upstreams) functionality of the nuget.org upstream source.
+To use your feed and upstream source, follow the instructions to [consume NuGet packages](consume.md). If you've previously set up this feed, still take a quick pass through those instructions and ensure you've disabled NuGet.org as a source. This ensures that all package requests are sent to your VSTS feed, which is required to take advantage of the [guaranteed save](../concepts/upstream-sources.md#offline-upstreams) functionality of the nuget.org upstream source.
 
 ## Filter to saved packages
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.

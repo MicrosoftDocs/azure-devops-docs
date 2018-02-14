@@ -17,13 +17,13 @@
 - name: Concepts
   items:
   - name: Feeds
-    items:
+    href: concepts/feeds.md
     # - name: Deleted packages
     #   href: concepts/feeds/deleted-packages.md
-    - name: Views
-      href: concepts/feeds/views.md
-    - name: Upstream sources
-      href: concepts/feeds/upstream-sources.md
+  - name: Views
+    href: concepts/views.md
+  - name: Upstream sources
+    href: concepts/upstream-sources.md
   - name: Symbols
     href: concepts/symbols.md
 - name: How-to
