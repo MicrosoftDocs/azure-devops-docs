@@ -334,7 +334,7 @@
         {
             "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
             "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
