@@ -13,7 +13,7 @@ hide_comments: true
 
 # Package upstream sources and symbol server generally available – VSTS Sprint 130 Update
 
-In the **Sprint 130 Update** of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline. [Manage packages from upstream sources](#seamlessly-use-public-packages-using-upstream-sources) to take control of your dependencies and [use VSTS as a symbol server](#use-vsts-as-a-symbol-server) to simplify debugging. You can also bring work items into your team conversation with the [VSTS Compose Extension for Microsoft Teams](#discuss-work-items-in-microsoft-teams-using-the-vsts-compose-extension).
+In the **Sprint 130 Update** of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline. [Manage packages from upstream sources](#seamlessly-use-public-packages-using-upstream-sources) to take control of your dependencies and [use VSTS as a symbol server](#use-vsts-as-a-symbol-server) to simplify debugging. You can also bring work items into your team conversation with the [VSTS messaging extension for Microsoft Teams](#discuss-work-items-in-microsoft-teams-using-the-vsts-messaging-extension).
 
 Other highlights include:
 
@@ -33,12 +33,12 @@ Sometimes mistakes can be made when cleaning up old repositories in source contr
 
 ## Work
 
-### Discuss work items in Microsoft Teams using the VSTS Compose extension
+### Discuss work items in Microsoft Teams using the VSTS messaging extension
 
-Microsoft Teams has become the hub for teamwork within many engineering teams. We have expanded our Microsoft Teams integration with the new VSTS Compose extension to enable you to find and discuss specific work items alongside your other content and tools. See the [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) extension in the Marketplace for more information.
+Microsoft Teams has become the hub for teamwork within many engineering teams. We have expanded our Microsoft Teams integration with the new VSTS messaging extension to enable you to find and discuss specific work items alongside your other content and tools. See the [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) extension in the Marketplace for more information.
 
 > [!div class="mx-imgBorder"]
-![VSTS Compose extension in Microsoft Teams](_img/130_01.png)
+![VSTS messaging extension in Microsoft Teams](_img/130_01.png)
 
 ### Mention a group in work item and pull request discussions
 
