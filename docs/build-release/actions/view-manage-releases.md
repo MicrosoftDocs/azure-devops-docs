@@ -216,6 +216,9 @@ To deploy a release that has not yet been deployed, such as releases where the
 environment deployment options only permit a manual release, use the ellipses (**...**) for the
 environment to open the shortcut menu and choose **Deploy**.
 
+Alternatively, open the **Deploy** menu and choose the target environment(s).
+Here, you can choose a single target environment or select multiple environments.
+
 ![Deploy a release in the Summary page](_img/view-manage-releases/deploy-03.png)
 
 >For more details about environment deployment options, see
@@ -303,7 +306,7 @@ choose **Redeploy**.
 You can also use the **Deploy** list in the **Summary** page to start
 a new deployment for a release...
 
-![Deploying an app from the Summary page](_img/view-manage-releases/redeploy-01.png)
+![Deploying an app from the Summary page](_img/view-manage-releases/deploy-03.png)
 
 ...or the **Deploy** list in the **Logs** page.
 

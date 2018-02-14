@@ -8,7 +8,7 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 11/29/2017
+ms.date: 02/14/2018
 ---
 
 # Share your code with Visual Studio 2017 and VSTS Git
@@ -33,7 +33,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 ##  Create a local Git repo for your project
 
 Create a new local Git repo for your project by selecting ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar in the lower right hand corner of Visual Studio.
-This will create a new repo in the folder the solution is in and commit your code into that repo. You can also right-click your solution in Solution Explorer and choose **Add Solution to Source Control**.
+This will create a new repo in the folder the solution is in and commit your code into that repo. You can also right-click your solution in **Solution Explorer** and choose **Add Solution to Source Control**.
 
 Once you have a local repo, select items in the status bar to quickly navigate between Git tasks in Team Explorer.
 
@@ -43,6 +43,9 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 - ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png) shows the number of uncommitted file changes. Selecting this opens the **Changes** view in Team Explorer.
 - ![Visual Studio Repo Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-current-repo.png) shows the current Git repo. Selecting this opens the **Connect** view in Team Explorer.
 - ![Visual Studio branch status bar icon](_img/share-your-code-in-git-vs-2017/vs-branch-picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
+
+>[!NOTE]
+>If you don't see any icons such as ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) or ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png), ensure that you have a project open that is part of a Git repo. If your project is brand new or not yet added to a repo, you can add it to one by selecting ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar, or by right-clicking your solution in **Solution Explorer** and choosing **Add Solution to Source Control**.
 
 ## Publish your code to VSTS
 
@@ -107,7 +110,7 @@ The ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control
 
 If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. 
 
-You can create a local Git repo for an existing solution by right-clicking your project in the Solution Explorer and selecting **Add Solution to Source Control**.
+You can create a local Git repo for an existing solution by right-clicking your project in the **Solution Explorer** and selecting **Add Solution to Source Control**.
 
 ### How can I see what changes are in a commit before I pull it into my local branch?
 
