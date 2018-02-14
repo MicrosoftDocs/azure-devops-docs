@@ -27,7 +27,7 @@ You have to set up billing when you need more than the **free** resources in you
 > * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 > * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 >
-> [Cloud-based load testing]() is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account. You can enable paid usage via the Azure portal. 
+> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account. You can enable paid usage via the Azure portal. 
 > or if you want to change the Azure subscription that you use for billing, 
 > follow the steps in this topic to go through the Azure portal.
 
