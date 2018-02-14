@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 1/24/2018
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -53,7 +53,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Reporting – Public preview of our cloud reporting experience (Power BI, widgets, OData)|Reporting|TBD|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |Streamlined purchasing experience|Admin|TBD|
-|[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)|Admin|TBD|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
 |Notification feed|Notifications|TBD|
@@ -93,6 +92,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="21">[14 Feb 2018](2018/feb-14-vsts.md)</td>
+            <td>Recover a recently-deleted repository via API</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Discuss work items in Microsoft Teams using the VSTS messaging extension</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Mention a group in work item and pull request discussions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Use VSTS as a symbol server</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Filter branches for GitHub artifacts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Filter branches using include and exclude</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Release from Azure Container Registry and Docker Hub</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Propagate Jenkins artifacts to Azure Storage</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Specify a default version for Jenkins artifacts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Deploy ASP.NET apps to VMs using an Azure DevOps Project</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Scope a variable group to specific environments</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Install tasks from the Marketplace directly from the build or release definition</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Seamlessly use public packages using upstream sources</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>View quality of a package version in the package list</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Link to packages from anywhere</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Share your packages using a badge</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Recycle and restore packages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Manage access and extensions for large numbers of users using groups</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Reduced latency for AAD group membership changes</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Manage users with Graph REST APIs Public Preview</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Leave account</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="22">[24 Jan 2018](2018/jan-24-vsts.md)</td>
             <td>View Analystics Widgets as a Stakeholder</td>
