@@ -97,7 +97,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Recover a recently-deleted repository via API</td>
             <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
-        <tr><td>Discuss work items in Microsoft Teams using the VSTS Compose extension</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Discuss work items in Microsoft Teams using the VSTS messaging extension</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Mention a group in work item and pull request discussions</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Use VSTS as a symbol server</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Filter branches for GitHub artifacts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
