@@ -37,7 +37,8 @@ Then you can:
 
 > **Note**: This feature is available only in VSTS.
 In addition, Stakeholders and Basic users cannot create or manage configurations.
-You must have a Visual Studio Enterprise, Visual Studio Test Professional, or Test Manager subscription. 
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="create-configs"></a>
 ## Create configurations and variables
