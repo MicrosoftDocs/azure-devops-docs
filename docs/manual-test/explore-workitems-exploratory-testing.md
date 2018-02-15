@@ -28,6 +28,8 @@ You can explore:
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 <a name="kanban"></a>
 ## Explore work items from the Kanban board
 

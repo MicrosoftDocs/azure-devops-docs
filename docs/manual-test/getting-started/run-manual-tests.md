@@ -24,6 +24,8 @@ to run tests that have been assigned to you with Visual Studio Team Services (VS
 Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 <a name="run-web"></a>
 ## Run tests for web apps
 

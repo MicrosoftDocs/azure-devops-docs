@@ -32,6 +32,8 @@ and also web apps that you access through a supported browser.
 For a detailed list, see 
 [Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ## Run Microsoft Test Manager on your client machine
 
 To record and play back actions, you have to install 
