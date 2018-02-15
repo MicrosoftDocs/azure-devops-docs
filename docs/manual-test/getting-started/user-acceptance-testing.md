@@ -27,6 +27,8 @@ requirement work item type. However, today’s
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ## Before you start
 
 You must have already created work items and 

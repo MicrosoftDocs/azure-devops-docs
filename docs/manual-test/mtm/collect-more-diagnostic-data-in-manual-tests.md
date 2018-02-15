@@ -18,6 +18,8 @@ While you are testing your application, Microsoft Test Manager can collect data 
 ![Test settings machine roles and adapters](_img/collect-more-diagnostic-data-in-manual-tests/testsettingsmachineroleconceptual.png)  
   
 You can decide what kinds of data you want to collect.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## What diagnostic data can I collect in a test?
 
