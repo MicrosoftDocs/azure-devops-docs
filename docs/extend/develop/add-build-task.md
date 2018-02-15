@@ -1,6 +1,6 @@
 ---
-title: Add a Build Task | Extensions for VSTS
-description: Add a custom build task.
+title: Add a Build or Release Task | Extensions for VSTS
+description: Add a custom build or release task in an extension for Visual Studio Team Services
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -9,13 +9,15 @@ ms.author: elbatk
 ms.date: 08/22/2016
 ---
 
-# Add a build task
+# Add a build or release task
 
-Custom build tasks can be contributed by extensions that can be discovered and installed by users into a VSTS account. 
+Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into a VSTS account. 
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
-<img alt="Integrations link on the account home page" src="_img/build-task-ext-choose-task.png" style="width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px">
 
-To learn more about the new cross-platform build system, see [Team Foundation Build](../..//build-release/overview.md). 
+![Build task catalog for extensions in VSTS](_img/build-task-ext-choose-task.png)
+
+
+To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//build-release/overview.md). 
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
@@ -27,7 +29,7 @@ In order to create extensions for VSTS, there are some prerequisite software and
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A `home` directory for your project.
-    - The `home` directory of a build task extension should look like the following:
+    - The `home` directory of a build or release task extension should look like the following:
 
 ```no-highlight
 ├── README.md
@@ -37,15 +39,15 @@ In order to create extensions for VSTS, there are some prerequisite software and
 		└── VSS.SDK.js       
 ├── images                        
 	└── extension-icon.png  
-├── buildtask
+├── buildAndReleaseTask
     └── task.json                         
-├── scripts                        	// where your build task scripts should be placed
+├── scripts                        	// where your build or release task scripts should be placed
 └── vss-extension.json				// extension's manifest
 ```
 
 
 ## Steps
-There are four steps to creating a build task extension and putting it on the Marketplace:
+There are four steps to creating a build or release task extension and putting it on the Marketplace:
 * [Step 1: Create the task metadata file](#createmetadata)
 * [Step 2: Create the extension maniest file](#extensionmanifest)
 * [Step 3: Package your extension](#packageext)
@@ -55,9 +57,9 @@ There are four steps to creating a build task extension and putting it on the Ma
 <a name="createmetadata" />
 ## Step 1: Create the task metadata file
 
-In your task folder (buildtask), create a `task.json` file. 
-This file will describe the build task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
-Below is a template that you can use to begin developing your build task extension:
+In your task folder (buildAndReleaseTask), create a `task.json` file. 
+This file will describe the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+Below is a template that you can use to begin developing your build or release task extension:
 
 ### task.json template
 ```javascript
@@ -68,6 +70,10 @@ Below is a template that you can use to begin developing your build task extensi
     "description": "{{taskdescription}}",
     "helpMarkDown": "",
     "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
     "author": "{{taskauthor}}",
     "version": {
         "Major": 0,
@@ -118,6 +124,8 @@ Below is a template that you can use to begin developing your build task extensi
 ```
 <br>
 
+> Remove either *Build* or *Release* from the **Visibility* attribute if you wish to exclude one.
+
 **task.json components**<br>
 Here is a description of some of the components of the `task.json` file.
 | Property     | Description            |
@@ -126,20 +134,20 @@ Here is a description of some of the components of the `task.json` file.
 | `name`         | Name with no spaces |
 | `friendlyName`      | Descriptive name (spaces allowed) |
 | `description` | Detailed description of what your task does |
-| `author`          | Short string describing the entity developing the build task, e.g. "Microsoft Corporation" | 
-| `instanceNameFormat`         | This is how the task will be displayed within the build step list - you can use variable values by using **$(variablename)** |
+| `author`          | Short string describing the entity developing the build or release task, e.g. "Microsoft Corporation" | 
+| `instanceNameFormat`         | This is how the task will be displayed within the build or release step list - you can use variable values by using **$(variablename)** |
 | `groups`      | Describes groups that task properties may be logically grouped by in the UI. |
-| `inputs` | Inputs to be used when your build task runs |
+| `inputs` | Inputs to be used when your build or release task runs |
 | `execution` | Execution options for this task, including scripts |
 
 >[!NOTE]
->For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build task reference](./build-task-schema.md)**
+>For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./build-task-schema.md)**
 
 You can explore the **[vso-agent-tasks](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)** repository on GitHub for multiple examples ([Grunt](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Grunt) is a good one).        
 
 <a name="extensionmanifest" />
 ## Step 2: Create the extension manifest file
-The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build task.
+The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build or release task.
 
 Copy the .json code below and save it as your `vss-extension.json` file:
 [!code-javascript[JSON]](../_data/extension-build-tasks.json)]
@@ -151,10 +159,10 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 ### Contributions
 | Property     | Description            |
 |--------------|------------------------|
-| `id`          | Identifier of the contribution. Must be unique within the extension. Does not need to match the name of the build task, but typically the build task name is included in the ID of the contribution. | 
+| `id`          | Identifier of the contribution. Must be unique within the extension. Does not need to match the name of the build or release task, but typically the build or release task name is included in the ID of the contribution. | 
 | `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
 | `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
-| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build task definition. |
+| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task definition. |
 
 ### Files
 | Property     | Description            |
@@ -167,7 +175,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 <a name="packageext" />
 ## Step 3: Package your extension
 
-Once you've written your extension, the next step towards getting it into the marketplace is to package all of your files together. All extensions are packaged
+Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command line interface (CLI) to package your extension. 
 
 Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), simply navigate to your extension's home directory and run the following command.
@@ -242,10 +250,10 @@ If you're on the control panel, and you don't see the <b>Extensions</b> tab, ext
 
 ## Helpful links
 * [Extension Manifest Reference](./manifest.md)
-* [Build Task JSON Schema](./build-task-schema.md)
-* [Build Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
+* [Build/Release Task JSON Schema](./build-task-schema.md)
+* [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
 
 >[!NOTE]
->Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that shows
->how to create, debug, and test a cross platform task in Node using the TypeScript API.
+>Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that
+>shows how to create, debug, and test a cross platform task in Node using the TypeScript API.
 

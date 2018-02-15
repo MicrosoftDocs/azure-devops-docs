@@ -1,25 +1,25 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Custom build task reference | Extensions for VSTS
-description: Reference for creating a custom build task with an extension in VSTS.
+title: Custom build/release task reference | Extensions for VSTS
+description: Reference for creating a custom build or release task with an extension in VSTS.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.manager: douge
 ms.author: elbatk
 ms.date: 11/14/2016
 ---
 
-# Reference for creating custom build tasks within extensions
+# Reference for creating custom build/release tasks within extensions
 
 ## Custom build task JSON
 
-When creating a custom build task with an extension, your extension will include a `task.json` file for each build task.
-This file describes the build task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
+When creating a custom build or release task with an extension, your extension will include a `task.json` file for each build or release task.
+This file describes the build or release task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
 
-The build task SDK documentation is [here](https://github.com/Microsoft/vsts-task-lib).
+The build/release task SDK documentation is [here](https://github.com/Microsoft/vsts-task-lib).
 
-## Bundle multiple versions of build tasks within one extension
-You can now include multiple versions of a build task in your extension. This can be helpful if you want to roll out
+## Bundle multiple versions of build/release tasks within one extension
+You can now include multiple versions of a build or release task in your extension. This can be helpful if you want to roll out
 future versions of your extension without interrupting service of users running older versions. The table below shows the layout for having
 multiple versions in one extension.
 
