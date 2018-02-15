@@ -29,6 +29,8 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 <a name="connectvtfs"></a>
 ## Connect to VSTS or TFS
 

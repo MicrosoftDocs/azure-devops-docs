@@ -14,6 +14,8 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 When you [plan manual tests](../getting-started/create-a-test-plan.md) there are some sequences of steps, such as logging in, that occur in many test cases. To avoid having to enter these sequences again and again, create *shared steps*.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## Create shared steps 
  
