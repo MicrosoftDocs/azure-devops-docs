@@ -157,9 +157,9 @@ Combining Text and Hyperlinks in a Single Label
    <Group>  
       <Column PercentWidth="100">  
          <Control Type="WebpageControl" Name="WssPortalPage" Label="WssPortalPage" LabelPosition="Top" >  
-            < WebpageControlOptions AllowScript="true">  
+            <WebpageControlOptions AllowScript="true">  
                <Link UrlRoot="http://www.msdn.com" />  
-            </WebpageControlOptions >  
+            </WebpageControlOptions>  
          </Control>  
       </Column>  
    </Group>  
@@ -172,10 +172,10 @@ Combining Text and Hyperlinks in a Single Label
 ```  
 <Control Type="WebpageControl">  
    <WebpageControlOptions>  
-      <Content>  
-      <![CDATA[Place HTML Formatted Content Here ]]  
-   </Content>  
-   </WebpageControlOptions >  
+      <Content>
+        <![CDATA[Place HTML Formatted Content Here ]]>
+      </Content>
+   </WebpageControlOptions>
 </Control>  
 ```  
   
@@ -191,11 +191,11 @@ Combining Text and Hyperlinks in a Single Label
       <Group>  
          <Column PercentWidth="100">  
             <Control Type="WebpageControl">  
-            <WebpageControlOptions >  
-            <Content>  
-               <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
-            </Content>  
-            </WebpageControlOptions>  
+              <WebpageControlOptions>  
+                <Content>  
+                  <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
+                </Content>  
+              </WebpageControlOptions>  
             </Control>  
          </Column>  
       </Group>  

@@ -73,11 +73,11 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td>Optionally specifies the path to a file that contains a personal access token. This token will be used authenticate to the collection or account while registering a proxy. (Added in TFS 2018 Update 1)</td>
 		</tr>
 		<tr>
-			<td><strong>/inputs</strong>:Key1=Value1; Key2=Value2;...</td>
+			<td><strong>/inputs</strong>:Key1=Value1;Key2=Value2;...</td>
 			<td>
 				Optional. Specifies additional settings and values to use while configuring the proxy.<br/><br/>
 				For example, values for "GvfsProjectName" and "GvfsRepositoryName" can be used to configure a Git repository for use with <a href="https://gvfs.io">Git Virtual File System</a> (GVFS)
-				(Added in TFS 2018 update 1)
+				(Added in TFS 2018 Update 1)
 			</td>
 		</tr>
 	</tbody>

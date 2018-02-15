@@ -31,7 +31,9 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 The **Manual Intervention** task does not perform deployment actions directly.
 Instead, it allows you to pause an active deployment within an environment, typically to perform some
-manual steps or actions, and then continue the automated deployment steps.
+manual steps or actions, and then continue the automated deployment steps. For example, the user may
+need to edit the details of the current release before continuing; perhaps by entering the values for
+custom variables used by the tasks in the release.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
 can be used to provide related information, or to specify the manual steps

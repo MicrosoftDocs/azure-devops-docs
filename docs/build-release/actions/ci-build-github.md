@@ -5,11 +5,12 @@ ms.topic: get-started-article
 ms.service: vsts
 ms.custom: mvc
 ms.devlang: dotnetcore
+ms.technology: vs-devops-build
 ms.assetid: B61506B0-766C-49D1-B991-85BBFCBCD3E6
 ms.manager: douge
 ms.author: mlearned
 ms.reviewer: dastahel
-ms.date: 12/19/2017
+ms.date: 02/07/2018
 ---
 
 # Define a continuous integration (CI) build process for your GitHub repository
@@ -37,49 +38,49 @@ You can manage your application code in GitHub, and configure continuous integra
 > [!IMPORTANT]
 > Ensure your browser does not block the pop-up on step 7 below.
 
-1. Navigate to your VSTS account and team project. Click **Build and Release**, and then click **Builds**.
-1. Click **New** to create a new build definition.
+1. Navigate to your VSTS account and team project. Select **Build and Release**, and then select **Builds**.
+1. Select **New** to create a new build definition.
 1. Select the **ASP.NET Core (.NET Framework)** build template.
 1. Choose **Hosted VS2017** for Agent queue.
 1. Choose the **Get sources** task for your build definition.
 1. Choose **GitHub** from **Get sources**.
      ![Edit code in browser](_img/ci-build-github/getsourcesgithub.png)
-1. Give your connection a name, and then click the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
-1. When prompted, sign in to your **GitHub account**. Then click **Authorize** to grant access to your VSTS account.
+1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
+1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your VSTS account.
 1. Choose the **repository** that contains the sample you forked earlier.
-1. Click **Triggers**. Under **Continuous integration**, click on the name of your repository.
+1. Select **Triggers**. Under **Continuous integration**, select on the name of your repository.
 1. Toggle on the checkbox labeled **Enable continuous integration**. Ensure you include the **master branch** under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a **GitHub webhook**.
 1. **Note:** The trigger setting for CI is for the purpose of this tutorial, and you can choose to leave this setting off to have fewer builds.
-1. Click **Options**, and then toggle on the checkbox to enable the **Badge enabled** setting.
-1. Click **Save & queue**, then click **Save** to save your build definition.
+1. Select **Options**, and then toggle on the checkbox to enable the **Badge enabled** setting.
+1. Select **Save & queue**, then select **Save** to save your build definition.
 1. Copy the URL under the **Badge enabled** setting. You will use this URL in upcoming steps. The URL displays a build status badge that can be safely viewed in a browser or used in external applications to display the build status of your VSTS build definition.
 
 ## Create a VSTS build status with a GitHub README file
 
 This section explores possibilities for further integrating VSTS and GitHub. You will create a notification for the VSTS build definition by populating a GitHub readme file with Markdown that points to the build notification URL. This same Markdown can link back to the build summary page in VSTS.
 
-1. Navigate to your GitHub account. Click **Code**. Create a README.md file unless one already exists.
+1. Navigate to your GitHub account. Select **Code**. Create a README.md file unless one already exists.
 1. For this step, use the URL from step 13 in the previous section. Modify the **README.md** file by adding Markdown and an `img` tag, as shown below. Create a Markdown link that displays the build status image and links to the build summary in VSTS. **Modify** the below example with your account and build ID information.
 
     `[<img src="https://{your-account}.visualstudio.com/_apis/public/build/definitions/{guid}/{id}/badge"/>](https://{your-account}.visualstudio.com/{your-project}/_build/index?definitionId={id})`
 1. **Commit** your README.md file to the repository. The code tab will now display the current status of your VSTS build.
     ![Build status in GitHub](_img/ci-build-github/buildstatus.png)
-1. In GitHub, navigate to  **Settings** and click on **Webhooks**. You should see the webhook that was created by VSTS when you chose GitHub in your build definition. Every commit to the GitHub repository will trigger a build in VSTS.
+1. In GitHub, navigate to  **Settings** and select on **Webhooks**. You should see the webhook that was created by VSTS when you chose GitHub in your build definition. Every commit to the GitHub repository will trigger a build in VSTS.
 1. Navigate back to your **VSTS build definition**. Under **Build and Release** choose **Builds**. You should notice a build is in progress or has completed for your build definition because of your `README.md` commit in the GitHub repository.
-1. View the build summary, and then click the **Commit ID** link under the **Associated changes** section. This link navigates you directly to the GitHub commit.
+1. View the build summary, and then select the **Commit ID** link under the **Associated changes** section. This link navigates you directly to the GitHub commit.
      ![Build summary](_img/ci-build-github/associatedchanges.png)
 
 ## Create a pull request trigger for GitHub
 
 In this section, you create a pull request trigger for your VSTS build definition. Enabling the trigger in VSTS allows you to initiate CI builds for every GitHub pull request. Even if you're using continuous integration (CI) on your development branches to catch problems early, building pull requests helps reduce issues before they arrive in your development branches.
 
-1. Navigate to your VSTS account and team project. Click **Build and Release**, and then click **Builds**. Locate your build, and click **Edit**.
-1. Click **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.
-1. Click **Save & queue**, then click **Save**.
+1. Navigate to your VSTS account and team project. Select **Build and Release**, and then select **Builds**. Locate your build, and select **Edit**.
+1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.
+1. Select **Save & queue**, then select **Save**.
 1. Navigate to your GitHub account. Navigate to the main page for your **repository**.
-1. Click the **Branch** selector, and then type a name for a new branch and press enter. This will create a branch based on master.
+1. Select the **Branch** selector, and then type a name for a new branch and press enter. This will create a branch based on master.
 1. Edit a file in your new branch. **Commit** your change to the new branch.
-1. Click **Pull requests**. Click **New pull request**.
+1. Select **Pull requests**. Select **New pull request**.
 1. Create the pull request. Navigate back to your **VSTS build definition**. A build will be queued or completed for the merge commit of your pull request.
 
 ## Building pull requests from repository forks

@@ -188,7 +188,6 @@ TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
-
 ### How does indexing work?
 
 By choosing to index the sources, an extra section will be injected into the PDB files. PDB files normally contain references to the local source file paths only. For example, ```C:\BuildAgent\_work\1\src\MyApp\Program.cs```. The extra section injected into the PDB file contains mapping instructions for debuggers. The mapping information indicates how to retrieve the server item corresponding to each local path.
@@ -197,6 +196,10 @@ By choosing to index the sources, an extra section will be injected into the PDB
 ```
 tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamproject:"93fc2e4d-0f0f-4e40-9825-01326191395d" /repository:"647ed0e6-43d2-4e3d-b8bf-2885476e9c44" /commitId:3a9910862e22f442cd56ff280b43dd544d1ee8c9 /path:"/MyApp/Program.cs" /output:"C:\Users\username\AppData\Local\SOURCE~1\TFS_COMMIT\3a991086\MyApp\Program.cs" /applyfilters
 ```
+
+### Can I use source indexing on a portable PDB created from a .NET Core assembly?
+
+No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn’t support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs. Note that if you are generating a .NET Standard 2.0 assembly and are generating full PDBs and consuming them in a .NET Framework (full CLR) application then you will be able to fetch sources from VSTS (provided you have embedded SourceLink information and enabled it in your IDE).
 
 ### Where can I learn more about symbol stores and debugging?
 

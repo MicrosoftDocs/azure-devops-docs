@@ -72,3 +72,5 @@ At this point the data will update on your scheduled basis using the credentials
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](../analytics/access-analytics-excel.md)  
 - [Access data throughPower BI desktop](access-analytics-power-bi.md)  
+
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

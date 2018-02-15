@@ -2,7 +2,7 @@
 title: Create a CI/CD pipeline for .NET with the Azure DevOps Project  | Quickstart
 description: The DevOps Project makes it easy to get started on Azure. It helps you launch a .NET app on an Azure service of your choice in few quick steps.
 services: vsts
-documentationcenter: ''
+documentationcenter: vs-devops-build
 author: mlearned
 manager: douge
 editor: ''
@@ -143,7 +143,7 @@ With Azure Application insights, you can easily monitor your application's perfo
 
 ## Clean up resources
 
-When no longer needed, you can delete the Azure App service and related resources created in this quickstart.
+When no longer needed, you can delete the Azure App service and related resources created in this quickstart by using the **Delete** function from the Azure DevOps project dashboard.
 
 ## Next steps
 
