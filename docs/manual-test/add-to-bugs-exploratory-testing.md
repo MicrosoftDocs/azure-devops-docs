@@ -18,6 +18,8 @@ searches for and displays existing bugs, based on the keywords in the title,
 as you file a new bug. You can choose to continue creating a new bug or add
 your findings to an existing bug.
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 1. As you type the title for a new bug, in the background the extension 
    searches for similar bugs that might be related to the issue you've found
    and displays a link to the results. Choose this link to see the results that have 
