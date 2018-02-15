@@ -22,6 +22,8 @@ Services or Team Foundation Server.
 * [Collect diagnostic data from web apps](#collect-web)
 * [Collect diagnostic data from desktop apps](#collect-desktop)
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 <a name="collect-web"></a>
 ## Collect diagnostic data from web apps
 

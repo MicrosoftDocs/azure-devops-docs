@@ -19,6 +19,8 @@ If you delete the suite, or if you delete a test case from every suite, the test
 
 For details about copying tests in VSTS or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ## Copying and cloning in Microsoft Test Manager  
 
 All these procedures are performed in Microsoft Test Manager. Choose **Testing Center**, **Plan**, **Contents**. (You can also [clone from the command line](#tcm).)  

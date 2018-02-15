@@ -20,6 +20,8 @@ marketing teams, early adopters, and other stakeholders can use the
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 <a name="installext"></a>
 ## Install the extension
 
