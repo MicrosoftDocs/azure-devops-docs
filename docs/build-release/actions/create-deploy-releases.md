@@ -99,9 +99,10 @@ column and choosing **Deploy**.
 ![Starting a deployment in a release](_img/create-deploy-releases/deploy-manually-01.png)
 
 Alternatively, choose the environment you want to deploy to from the **Deploy**
-drop-down list in the toolbar.  
+drop-down list in the toolbar. You can choose a single target environment or
+select multiple environments.
 
-![Starting a deployment using the Deploy drop-down list](_img/create-deploy-releases/deploy-manually-02.png)
+![Starting a deployment using the Deploy drop-down list](_img/view-manage-releases/deploy-03.png)
 
 >By selecting an environment that is not the final one, you can test the initial steps
 and tasks in a release safe in the knowledge that it will stop before, for example,

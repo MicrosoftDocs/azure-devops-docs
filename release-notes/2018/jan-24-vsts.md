@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2017, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
+description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2018, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
 hide_comments: true
 ---
 
@@ -23,8 +23,9 @@ Other feature highlights include:
 * [Wiki Search is now Generally Available](#wiki-search-now-generally-available) and [printable](#print-wiki-pages) - With search and print, Wiki is ready to help you retain your team’s knowledge.
 * [Manage permissions directly on Azure AD groups](#manage-permissions-directly-on-azure-ad-groups) - Simplify your permissions using existing groups from Azure AD.
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/vTouJu6aR6U?rel=0]
 
 ## Dashboards and Analytics
 

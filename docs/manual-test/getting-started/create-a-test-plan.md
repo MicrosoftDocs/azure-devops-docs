@@ -25,6 +25,8 @@ This includes static test suites, requirement-based suites, and
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 > **Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).
 
@@ -88,7 +90,8 @@ Test plans, suites, and test cases are stored in VSTS and TFS as special types o
    
 ## See also
 
-*  [FAQs for manual testing](../reference-qa.md#testplans)
+* [FAQs for manual testing](../reference-qa.md#testplans)
+* [Link test cases to work items](../../work/track/link-work-items-support-traceability.md)
 
 ##  Next step
 

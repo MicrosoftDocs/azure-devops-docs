@@ -21,6 +21,8 @@ can see the progress at a glance.
 
 ![On the Charts tab, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ## Track testing progress
 
 Use test results charts to track how your testing is going. 

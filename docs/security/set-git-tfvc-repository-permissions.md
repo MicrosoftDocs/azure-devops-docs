@@ -69,7 +69,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 ## Related notes
 
 - [Default Git permissions](default-git-permissions.md)  
-- [Default TFVC permissions](default-git-permissions.md)  
+- [Default TFVC permissions](default-tfv-permissions.md)  
 - [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md) 
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  

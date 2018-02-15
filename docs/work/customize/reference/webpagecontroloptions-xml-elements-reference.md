@@ -1,5 +1,6 @@
 ---
-title: WebpageControlOptions XML elements reference | VSTS & TFS
+title: WebpageControlOptions XML elements reference 
+titleSuffix: VSTS & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -41,7 +42,7 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
   
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
-|`WebpageControlOptions`|  |Optional `Control` element when `type="WebpageControl"`.<br /> Container element for defining a URL whose contents will be rendered in the work item form.<br /> Optional `Link` element. Required when `UrlPath` is specified.<br /> Specifies a value to be used to determine the URL of the hyperlink when `UrlPath` is specified.<br /> The element type is complex type: [WebpageControlOptionsType](#WebpageControlOptionsType).|  
+|`WebpageControlOptions`|  |Optional `Control` element when `type="WebpageControl"`.<br /> Container element for defining a URL whose contents will be rendered in the work item form.<br /> Optional `Link` element. Required when `UrlPath` is specified.<br /> Specifies a value to be used to determine the URL of the hyperlink when `UrlPath` is specified.|  
 |  |`AllowScript`|Optional `WebpageControlOptions` attribute.<br /> Specifies whether JavaScript within the Web page is allowed to run (`true`) or not (`false`). The attribute type is `xs:boolean`.<br /> All other settings such as ActiveX are based on the Internet Explorer settings defined for the client.|  
 |  |`ReloadOnParamChange`|Optional `WebpageControlOptions` attribute.<br /> Specifies whether to reload (`true`) the contents of the Web page when a parameter in the work item form is changed (`true`) or not (`false`). The attribute type is `xs:boolean`.<br /> The default value is `true`.|  
 |`Link`|  |Optional `WebpageControlOptions` element. This element is mutually exclusive with the `Content` element.<br /> Specifies the URL for the Web page to be rendered in the work item form.<br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  

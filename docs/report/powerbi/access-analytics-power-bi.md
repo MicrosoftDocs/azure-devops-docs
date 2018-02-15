@@ -89,3 +89,4 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
