@@ -16,6 +16,8 @@ ms.date: 01/18/2018
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 1. Open the **Recent exploratory sessions** page. You can do this:
 
    - From the Test &amp; Feedback extension by choosing the "view" icon on 

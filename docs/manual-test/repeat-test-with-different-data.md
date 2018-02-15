@@ -26,6 +26,8 @@ use the web portal with TFS 2015 and later or
 VSTS. That way you can run multiple test cases with the 
 same data.
 
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+
 ## Add parameters to a test case
 
 1. Create a parameter by typing a name preceded by "**@**" in the 

@@ -38,6 +38,8 @@ features right from your Kanban board, and use the **Test hub**
 for more advanced manual testing capabilities. 
 This topic shows new capabilities introduced in the **Test hub**. 
 
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
 ### Test planning
 
 Create and manage test plans and test suites for your teams with ease with Test hub. Export and share the test plans and test suites with your team or assign multiple testers to execute tests. See below the comparison matrix to know more about the features introduced in Test hub.
