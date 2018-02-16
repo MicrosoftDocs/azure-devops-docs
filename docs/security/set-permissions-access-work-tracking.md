@@ -39,7 +39,7 @@ The **Edit project-level information** and **Edit instance-level information** (
 
 <a id="set-permissions-area-path" >  </a> 
 
-## Modify work items under an area path   
+## Create child nodes, modify work items under an area path   
 
 Permissions you set on an area path allow you to permit or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the team project.  
 

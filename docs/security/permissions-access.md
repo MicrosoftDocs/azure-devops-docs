@@ -1,6 +1,7 @@
 ---
-title: Default permissions and access quick reference for VSTS & TFS 
-description: Simplified views of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
+title: Default permissions and access quick reference
+titleSuffix: VSTS & TFS 
+description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -8,7 +9,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 01/11/2018
+ms.date: 02/12/18
 ---
 
 
@@ -39,14 +40,25 @@ From the team project admin content for Version Control, you can [set permission
 
 ## Build and release
 
-
 You can define and manage your builds and releases from the web portal, **Build and Release** hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../build-release/overview.md).
 
-From the **Build and Release>Builds** and **Releases** pages, you can set permissions for all or each build definition or release definition, respectively. 
-
+From the **Build and Release hub, you can set permissions for all or individual build definitions, release definitions, task groups, or variable groups. See [Set build and release permissions](../build-release/set-permissions.md). 
 
 [!INCLUDE [temp](_shared/build-release.md)]
 
+## Package Management feeds
+
+Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../package/feeds/feed-permissions.md).
+
+[!INCLUDE [temp](_shared/package-feeds.md)]
+
+## Test
+
+You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
+
+You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
+
+[!INCLUDE [temp](_shared/test.md)]
 
 ## Agile tools and work tracking
 
@@ -63,14 +75,6 @@ The team administrator role supports configuration of team settings. To be added
 [!INCLUDE [temp](_shared/work.md)]
 
 
-
-## Test
-
-You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
-
-You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
-
-[!INCLUDE [temp](_shared/test.md)]
 
 ## Charts, dashboards, and other web portal features 
 
