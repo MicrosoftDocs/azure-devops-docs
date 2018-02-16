@@ -1,5 +1,6 @@
 ---
-title: "Use @mentions to further discussion in VSTS & TFS"
+title: "Use @mentions to further discussions"
+titleSuffix: VSTS & TFS
 description: "Alert team members using the @mention control in discussions and pull requests" 
 ms.prod: vs-devops-alm
 ms.technology: collaborate

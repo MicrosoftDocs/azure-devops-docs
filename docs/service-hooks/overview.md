@@ -70,6 +70,7 @@ look at the information on the service that you're interested in.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+<a id="subscription-permissions" /> 
 ####Q: What permissions do I need to set up a subscription?
 
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
