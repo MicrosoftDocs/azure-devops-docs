@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/18/2017
+ms.date: 02/12/2018
 ---
 
 
@@ -96,7 +96,7 @@ To delegate tasks to other members within your organization, consider creating a
 <tr>
 <td>Team administrators</td>
 <td>Add area paths for their team<br/>Add shared queries for their team</td>
-<td>Create child nodes, Delete this node, Edit this node<br/>See [Set branch permissions](../git/branch-permissions.md)<br/>
+<td>Create child nodes, Delete this node, Edit this node<br/>See [Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>
 Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../work/track/set-query-permissions.md).</td>
 </tr>
 
