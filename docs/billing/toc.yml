@@ -54,6 +54,8 @@
       href: csp/buy-csp-vsts.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: csp/buy-manage-vs-subs.md
+    - name: "CSPs: Buy App Center resources"
+      href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
   - name: Billing signup
