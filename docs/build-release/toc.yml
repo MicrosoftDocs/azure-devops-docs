@@ -28,7 +28,9 @@
         href: apps/aspnet/build-aspnet-core.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
-      - name: C++ Windows
+      - name: C/C++ with GCC
+        href: apps/c-cpp/gcc.md
+      - name: C/C++ with VC++
         href: apps/windows/cpp.md
       - name: Containers
         href: apps/containers/build.md
