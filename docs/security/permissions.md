@@ -1057,15 +1057,15 @@ By default, the team project level and collection level Readers groups have only
 -->
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
-		<td><p>At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../git/branch-policies.md).</p>
-		<p>At the branch level, can push their changes to the branch and lock the branch.</p>
+		<td>
+		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../git/branch-policies.md).<br>
+		At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>
 
 	<tr>
 		<td id="git-contribute-to-pull-requests-permission">Contribute to Pull Requests</td>
-		<td><p>Can create, comment on, and vote on pull requests.</p>
-		</td>
+		<td>Can create, comment on, and vote on pull requests.</td>
 	</tr>
 
 	<tr>
