@@ -90,7 +90,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
-- [Build & Release](../security/set-build-release-permissions.md)  
+- [Build & Release](../build-release/set-permissions.md)  
 - [Git](../security/set-git-tfvc-repository-permissions.md)  
 - [TFVC](../security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
@@ -2134,7 +2134,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../tfs-server/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../security/change-individual-permissions.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2275,9 +2275,9 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Git branches](../git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Build](../security/set-build-release-permissions.md)</li>
+<li>[Build](../build-release/set-permissions.md)</li>
 <li>[Test](../security/set-project-collection-level-permissions.md))</li>
-<li>[Release](../security/set-build-release-permissions.md)</li>
+<li>[Release](../build-release/set-permissions.md)</li>
 </ul>
 <br/>
 

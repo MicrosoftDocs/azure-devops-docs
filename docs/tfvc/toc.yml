@@ -24,8 +24,8 @@
     href: comparison-git-tfvc.md
   - name: Use Git and TFVC
     href: ../git/team-projects.md
-  - name: TFVC to Git command reference
-    href: https://www.visualstudio.com/articles/mapping%2Dmy%2Dtfvc%2Dactions%2Dto%2Dgit
+  - name: Map TFVC actions to Git
+    href: ../git/concepts/mapping-my-tfvc-actions-to-git.md
   - name: Develop in branches
     items:
     - name: Use branches to isolate risk
@@ -108,8 +108,12 @@
       href: understand-lock-types.md
     - name: Lock and unlock folders or files
       href: lock-unlock-folders-files.md
+  - name: "Set TFVC permissions (Security)"
+    href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
 - name: Reference
   items:
+  - name: "Default TFVC permissions (Security)"
+    href: ../security/default-tfvc-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
   - name: TFVC command reference
     items:
     - name: Use Team Foundation version control commands

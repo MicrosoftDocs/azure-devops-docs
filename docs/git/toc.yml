@@ -123,6 +123,8 @@
       href: create-a-readme.md
     - name: Git and TFVC repos
       href: team-projects.md
+    - name: "Set Git permissions (Security)"
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -139,7 +141,7 @@
       href: lock-branches.md
     - name: Branch policies
       href: branch-policies.md
-    - name: Branch permissions
+    - name: "Branch permissions (Security)"
       href: branch-permissions.md
   - name: Map TFVC actions to Git
     href: concepts/mapping-my-tfvc-actions-to-git.md
@@ -161,6 +163,8 @@
       href: commit-history.md
     - name: Commit details
       href: commit-details.md
+  - name: "Default Git permissions (Security)"
+    href: ../security/default-git-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
 - name: Resources
   items:
   - name: What is Git?

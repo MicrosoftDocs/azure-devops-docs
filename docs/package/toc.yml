@@ -52,7 +52,7 @@
       href: feeds/create-feed.md
     - name: Edit a feed
       href: feeds/edit-feed.md
-    - name: Set permissions
+    - name: Set permissions (Security)
       href: feeds/feed-permissions.md
     - name: Communicate quality with release views
       href: feeds/views.md
