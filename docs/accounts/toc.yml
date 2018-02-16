@@ -134,11 +134,11 @@
     href: faq-set-up-vs.md
 - name: Reference
   items:
-  - name: Permissions and access
+  - name: "Permissions and access (Security)"
     href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Permission lookup guide 
+  - name: "Permission lookup guide (Security)"
     href: ../security/permissions-lookup-guide.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Permissions and groups reference
+  - name: "Permissions and groups reference (Security)"
     href: ../security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 

@@ -46,7 +46,7 @@
     href: charts.md
   - name: "Create test progress & result charts"
     href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Set dashboard permissions
+  - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
 - name: Samples
   items:
@@ -62,7 +62,7 @@
     href: widget-catalog.md
   - name: Markdown guidance
     href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Default permissions & access"
+  - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
 - name: Resources
   items:

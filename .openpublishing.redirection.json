@@ -4805,6 +4805,16 @@
         "source_path": "docs/git/concepts/pull-requests-overview.md",
         "redirect_url": "/vsts/git/pull-requests-overview",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/tfs-server/admin/change-permission-levels.md",
+        "redirect_url": "/vsts/security/change-individual-permissions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/security/set-build-release-permissions.md",
+        "redirect_url": "/vsts/build-release/set-permissions",
+        "redirect_document_id": false
        }
     ]
 }
