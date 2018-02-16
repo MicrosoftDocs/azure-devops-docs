@@ -142,7 +142,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 <ul>
 <li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
 <li>[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)</li>
-<li>[Administer build and release permissions](set-build-release-permissions.md)</li>
+<li>[Administer build and release permissions](../build-release/set-permissions.md)</li>
 <li>[Manage Wiki permissions](../collaborate/manage-readme-wiki-permissions.md).</li>
 </td>
 </tr>
@@ -176,7 +176,7 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 <td>View or update select build and release definitions</td>
 <td>Edit build definition, View build definition<br/>
 Edit release definition, View release definition<br/>
-You set these permissions at the oject level. See [Set build and release permissions](set-build-release-permissions.md).</td>
+You set these permissions at the oject level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
 </tr>
 
 <tr>

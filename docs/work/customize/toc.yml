@@ -28,6 +28,8 @@
     href: ../work-items/agile-glossary.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
 - name: How-to Guides
   items:
+  - name: "Manage permissions (Security)"
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Configure team settings
     href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
     items:
@@ -149,6 +151,8 @@
       href: troubleshoot-process-configuration.md 
 - name: Reference
   items:
+  - name: "Default permissions & access (Security)"
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking object limits
