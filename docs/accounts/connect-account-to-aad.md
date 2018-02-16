@@ -66,7 +66,7 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
 1. Sign in to your VSTS account and go to the **Users** tab.
 
-    ![Select users tab in VSTS](_img/connect-account-to-aad/users-tab-aad.png)
+    ![Select users tab in VSTS](_img/connect-account-to-aad/users-tab-vsts.png)
 
 1. Compare the VSTS list of emails against the list in your target Azure AD tenant.
 
@@ -94,7 +94,7 @@ While there is no downtime, users will be affected by this change, so it's best 
     - Ensure this user exists in the target Azure AD tenant as a guest or member.
     - Ensure this user is the [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
 
-    ![Confirm VSTS account owner](_img/connect-account-to-aad/VSTS-account-owner.png)
+   ![Confirm VSTS account owner](_img/connect-account-to-aad/confirm-vsts-account-owner.png)
 
     - If you can't meet these requirements with your own identity, you should create a new Microsoft account that does. Use a Microsoft account that's associated with your subscription.
 
@@ -177,6 +177,8 @@ machine will resolve the issue.
 **Q:** Why can’t I make purchases after connecting to a directory?
 
 **A:** By changing the directory associated with your Azure subscription to the directory your VSTS account uses, you’ll be able to make purchases again. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory).
+
+![Select Azure subscription](_img/connect-account-to-aad/select-azure-subscription.png)
 
 **Next:**
 
