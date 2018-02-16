@@ -21,7 +21,7 @@ The most important thing to keep in mind is that you should avoid a situation wh
 
 2. Make sure all required users are members of the groups by highlighting a group rule and clicking **Manage members**.
 
-[!NOTE: Leave any existing automation you may have (for example, PowerShell) for managing access levels or extensions for users, running as is - your goal should be to reflect the same resources which the automation is applying to those users.]
+    [!NOTE: Leave any existing automation you may have (for example, PowerShell) for managing access levels or extensions for users, running as is - your goal should be to reflect the same resources which the automation is applying to those users.]
 
 3. Choose **Add a group rule** and then highlight an Azure AD group and assign the required access level, project group memberships, and extension(s).
 
@@ -33,4 +33,4 @@ When the same access level or extension is assigned to the user both directly an
 
 6. Verify that no assignments have failed by checking to see if there are assignment errors on the Groups tab of the Users page.  
 
-7. Re-evaluate rules regularly on the Group rules tab of the Users page to clarify any group membership changes in Azure AD, which should affect your account
+7. Re-evaluate rules regularly on the Group rules tab of the Users page to clarify any group membership changes in Azure AD, which could affect your account.
