@@ -1,5 +1,6 @@
 ---
-title: Quickly link to work items in discussions & pull request in VSTS & TFS
+title: Use #ID to link work items in discussions & pull requests 
+titleSuffix: VSTS & TFS
 description: Link to work items in discussions and pull requests 
 ms.prod: vs-devops-alm
 ms.technology: collaborate

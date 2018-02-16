@@ -1261,6 +1261,7 @@ TFS 2017 Update 1 and later
 |Permission|Namespace|Action|
 |---|---|---|
 |[Contribute](../../security/permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Contribute to Pull Requests](../../security/permissions.md#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
 |[Create Branch](../../security/permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
 |[Create Repository](../../security/permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
 |[Create Tag](../../security/permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|
