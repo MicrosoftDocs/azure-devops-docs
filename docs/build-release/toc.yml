@@ -34,6 +34,8 @@
         href: apps/windows/cpp.md
       - name: Containers
         href: apps/containers/build.md
+      - name: Go
+        href: apps/go/go.md
       - name: Gradle
         href: apps/java/build-gradle.md
       - name: Maven
