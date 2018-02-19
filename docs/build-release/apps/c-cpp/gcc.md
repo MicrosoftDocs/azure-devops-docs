@@ -82,15 +82,33 @@ https://github.com/adventworks/cpp-gpp-sample
 
  ---
 
-1. Click the **+** icon on **Phase 1** of the build. Search for the **Shell Script** task and click **Add** to add it to your build.
+1. Click the **+** icon on **Phase 1** of the build and then:
 
-1. Click the **Shell Script** task and specify the following field values:
+ # [VSTS or TFS 2018](#tab/vsts-task)
 
-    Field   | Value
-    ------- | -----
-    Version | `3.*` or later
-    Type    | `Inline`
-    Script  | `g++ *.cpp -o hello-world`
+  1. Search for the **Shell Script** task and click **Add** to add it to your build.
+
+  1. Click the **Shell Script** task and set its field values as follows:
+
+      Field   | Value
+      ------- | -----
+      Version | `3.*` or later
+      Type    | `Inline`
+      Script  | `g++ *.cpp -o hello-world`
+
+ # [TFS 2017.2](#tab/tfs2017-task)
+
+  1. Search for the **Command Line** task and click **Add** to add it to your build.
+
+  1. Click the **Command Line** task and set its field values as follows:
+
+      Field        | Value
+      ------------ | -----
+      Display name | `Build C++ application`
+      Tool         | `g++`
+      Arguments    | `*.cpp -o hello-world`
+
+ ---
 
 1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
