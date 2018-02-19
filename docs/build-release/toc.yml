@@ -32,7 +32,7 @@
         href: apps/c-cpp/gcc.md
       - name: C/C++ with VC++
         href: apps/windows/cpp.md
-      - name: Containers
+      - name: Docker image
         href: apps/containers/build.md
       - name: Go
         href: apps/go/go.md
