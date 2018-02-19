@@ -25,6 +25,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
 <div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
+<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.png"><span>Go</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
 <div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
