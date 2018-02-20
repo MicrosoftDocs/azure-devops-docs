@@ -27,7 +27,7 @@ After you commit and push a code change, it is automatically built and then depl
 You'll need a continuous integration (CI) build process that publishes a Docker container image.
 To set up a CI build process, see:
 
-* [Build and push your container app](../containers/build.md).
+* [Build and push a Docker image](../containers/build.md).
 
 ## Prerequisites
 
