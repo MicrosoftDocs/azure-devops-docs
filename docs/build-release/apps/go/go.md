@@ -1,33 +1,33 @@
 ---
-title: Build your GCC C/C++ app
-description: Build your GCC C/C++ app with Team Foundation Server and VSTS
+title: Build your Go app
+description: Build your Go app with Team Foundation Server and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
+ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
 ms.manager: douge
 ms.author: dastahel
-ms.date: 02/16/2018
+ms.date: 02/19/2018
 ms.topic: get-started-article
 ---
 
-# Build your GCC C/C++ app
+# Build your Go app
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C/C++ application compiled with GCC/g++.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Go application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a Go application.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../concepts/agents/agents.md) for your team project, and that you have GCC installed on the agent machine.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../concepts/agents/agents.md) for your team project, and that you have Go installed on the agent machine.
 
 ## Get sample app code
 
 [!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
 ```
-https://github.com/adventworks/cpp-gpp-sample
+https://github.com/adventworks/go-sample
 ```
 
 # [VSTS or TFS repo](#tab/vsts)
@@ -94,7 +94,7 @@ https://github.com/adventworks/cpp-gpp-sample
       ------- | -----
       Version | `3.*` or later
       Type    | `Inline`
-      Script  | `g++ *.cpp -o hello-world`
+      Script  | `go build hello.go`
 
  # [TFS 2017.2](#tab/tfs2017-task)
 
@@ -104,9 +104,9 @@ https://github.com/adventworks/cpp-gpp-sample
 
       Field        | Value
       ------------ | -----
-      Display name | `Build C++ application`
-      Tool         | `g++`
-      Arguments    | `*.cpp -o hello-world`
+      Display name | `Build Go application`
+      Tool         | `go`
+      Arguments    | `build hello.go`
 
  ---
 
