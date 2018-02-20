@@ -169,14 +169,14 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 
 <tr>
 <td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#modify-work-items-under-an-area-path).</td>
+<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md).</td>
 </tr>
 
 <tr>
 <td>View or update select build and release definitions</td>
 <td>Edit build definition, View build definition<br/>
 Edit release definition, View release definition<br/>
-You set these permissions at the oject level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
+You set these permissions at the object level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
 </tr>
 
 <tr>
