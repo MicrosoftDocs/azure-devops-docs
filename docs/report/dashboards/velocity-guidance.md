@@ -30,7 +30,7 @@ To configure or view Velocity charts, see [Configure and view Velocity charts](t
 
 The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
 
-The velocity widget allows teams to track velocity based on the count of backlog items or with  estimates for the the Effort, Story Points, or Size fields.
+The velocity widget allows teams to track velocity based on the count of backlog items or with estimates for the Effort, Story Points, or Size fields.
 
 <a id="minimize-variability" >    </a>
 
