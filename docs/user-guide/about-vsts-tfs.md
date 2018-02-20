@@ -145,7 +145,7 @@ SharePoint or Project Server.
 You customize the work tracking experience in two different ways depending on the supported process model: 
 
 >- For VSTS, you use the **Inheritance** process model which supports WYSIWYG customization    
->- For TFS, you use the **On-premises XML**process model which supports customization through import/export of XML definition files for work tracking objects   
+>- For TFS, you use the **On-premises XML** process model which supports customization through import/export of XML definition files for work tracking objects   
 
 While the **On-premises XML** process model option is quite powerful, it also 
 can cause a number of problems. Chief among these is that processes for existing team projects do not update automatically
