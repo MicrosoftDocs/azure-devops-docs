@@ -1,5 +1,6 @@
 ---
-title: Grant or restrict access to features and functions in VSTS and TFS
+title: Grant or restrict access to select features
+titleSuffix: VSTS & TFS 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: vs-devops-alm
@@ -169,14 +170,14 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 
 <tr>
 <td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#modify-work-items-under-an-area-path).</td>
+<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md).</td>
 </tr>
 
 <tr>
 <td>View or update select build and release definitions</td>
 <td>Edit build definition, View build definition<br/>
 Edit release definition, View release definition<br/>
-You set these permissions at the oject level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
+You set these permissions at the object level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
 </tr>
 
 <tr>

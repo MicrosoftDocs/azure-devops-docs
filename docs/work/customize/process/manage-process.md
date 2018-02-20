@@ -1,5 +1,6 @@
 ---
-title: Manage processes | VSTS  
+title: Manage processes
+titleSuffix: VSTS
 description: Create and apply a process to a team project working in Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -148,9 +149,11 @@ Process names must be unique and 128 Unicode characters or less. Also, names can
 
 To rename a process, open the &hellip; context menu for the process and choose **Edit**. 
 
+
 <a id="process-rest-api">  </a>
-### Programmatically query for processes 
-You can determine the processes defined for an account using the REST API: [Processes](https://www.visualstudio.com/en-us/docs/integrate/api/tfs/processes).
+### Programmatically work with processes 
+
+You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]

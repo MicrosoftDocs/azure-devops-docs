@@ -1,6 +1,7 @@
 ---
-title: Use swimlanes to expedite work | VSTS & TFS
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Expedite work with swimlanes
+titleSuffix: VSTS & TFS
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
@@ -102,4 +103,4 @@ Similar to the way [column moves are tracked](add-columns.md), swimlane moves ar
 For TFS 2015 and earlier versions, you can't [query](../track/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../track/add-tags-to-work-items.md) each item in a similar way.  
 
 ###REST API resources
-To programmatically interact with Kanban board and other team settings, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/work/overview).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).

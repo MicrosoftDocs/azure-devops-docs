@@ -1,5 +1,6 @@
 ---
 title: Add tags to work items 
+titleSuffix: VSTS & TFS
 description: Add tags to work items to categorize and filter lists when working in  Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -197,9 +198,8 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 </table> 
 
-1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](https://java.visualstudio.com/Docs/tools/eclipse).
-2. Requires the TFS Office Integration add-in. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) for details.
-
+1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](http://java.visualstudio.com/Downloads/eclipseplugin/Index).
+2. Requires the [Team Founcation Server Office Integration add-in](https://www.visualstudio.com/downloads/?q=Office+Integration). 
 
 
 <a id="assign"></a>

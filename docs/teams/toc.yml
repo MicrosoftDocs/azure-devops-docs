@@ -30,6 +30,10 @@
   items:
   - name: "Permissions & access for work tracking (Security)"
     href: ../security/permissions-access-work-tracking.md?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json
+  - name: REST API, Teams
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/core/teams
+  - name: REST API, Team settings
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/teamsettings 
 - name: Resources
   items:
   - name: Agile at Scale
