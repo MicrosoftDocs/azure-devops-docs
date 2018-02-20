@@ -6,7 +6,7 @@ ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
 ms.manager: douge
-ms.author: DAHELLEM
+ms.author: dahellem
 ms.date: 01/25/2017
 ---
 
