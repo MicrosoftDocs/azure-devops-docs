@@ -24,6 +24,8 @@
     href: import-process/differences.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: "Workflow states & state categories"
     href: workflow-and-state-categories.md
+  - name: Rollup of work and other fields
+    href: ./reference/support-rollup-of-work-and-other-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
 - name: How-to Guides
@@ -307,8 +309,6 @@
       href: ./reference/upload-or-download-the-microsoft-project-mapping-file.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: On-premises TFS Only
     items:
-    - name: Support rollup (TFS)
-      href: ./reference/support-rollup-of-work-and-other-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Field data type and reportable attributes
       href: ./reference/define-modify-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize and manage the test experience
@@ -321,6 +321,18 @@
       href: ./reference/api-ref/open.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: WorkItem.PartialOpen method
       href: ./reference/api-ref/partialopen.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: REST APIs
+    items:
+    - name: Area and Iteration Paths
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes
+    - name: Processes
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes
+    - name: Process Template
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processadmin/processes 
+    - name: Work Item Types
+      href: https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types
+    - name: Add a custom control to a form
+      href: ../../extend/develop/custom-control.md
 - name: Resources
   items:
   - name: Work items

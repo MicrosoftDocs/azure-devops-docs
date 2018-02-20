@@ -1,5 +1,6 @@
 ---
-title: Add task checklists | VSTS  & TFS  
+title: Add task checklists
+titleSuffix: VSTS & TFS
 description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -111,4 +112,4 @@ To customize or change the layout of the board, see one of these topics.
 
 
 ### REST API resources
-To programmatically create tasks, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).
+To programmatically create tasks, see the [REST API, Work Items reference](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items).
