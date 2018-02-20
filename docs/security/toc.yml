@@ -103,7 +103,9 @@
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: TFSSecurity command (TFS)
-    href: ../tfs-server/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+    href: ../tfs-server/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+  - name: REST API, Permissions
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions 
 - name: Resources
   items:
   - name: Account Management (VSTS)
