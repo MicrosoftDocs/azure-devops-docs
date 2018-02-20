@@ -1,13 +1,13 @@
 ---
 title: Chat using team rooms
 titleSuffix: TFS  
-description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in the team room for Visual Studio Team Services (VSTS) and TFS
+description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in a team room for TFS
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 02/20/2018
 ---
 
 # Collaborate in a team room  
@@ -15,7 +15,9 @@ ms.date: 07/21/2017
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
+> **Feature availability:** Team Rooms are deprecated for sual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2018 and later versionsas described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> 
+> Several good solutions are available that integrate well with VSTS and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/).
 
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.    
 
