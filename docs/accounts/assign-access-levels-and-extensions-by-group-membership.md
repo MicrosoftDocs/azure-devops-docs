@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/16/2018
+ms.date: 02/20/2018
 ---
 
 # Assign access levels and extensions to users by group membership
