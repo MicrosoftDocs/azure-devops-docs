@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/16/2018
+ms.date: 02/20/2018
 ---
 
 # Migrate to group-based resource management in VSTS
@@ -16,8 +16,6 @@ All current users in your VSTS account are considered to have resources via “e
 The most important thing to keep in mind is that you should avoid a situation where migrating to group-based licensing will result in users temporarily losing their currently assigned licenses. Any process that may result in removal of licenses should be avoided to eliminate the risk of users losing access to services and their data.
 
 1. In VSTS, on the **Users** page, choose **Group rules**.
-
-
 
 2. Make sure all required users are members of the groups by highlighting a group rule and clicking **Manage members**.
 
