@@ -111,7 +111,7 @@
   - name: Manage group-based licensing
   items:
     - name: Assign access levels and extensions by group membership
-      href: assign-access-levels-by-group-membership.md
+      href: assign-access-levels-and-extensions-by-group-membership.md
     - name: Migrate to group-based resource management
       href:  migrate-to-group-based-resource-management-in-VSTS.md
 - name: Troubleshooting
