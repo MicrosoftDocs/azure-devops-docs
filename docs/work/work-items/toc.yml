@@ -97,6 +97,16 @@
     href: ../customize/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Permissions and access for work tracking
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+- name: Samples
+  items:
+  - name: Query by title, ID, or description
+    href: ../track/titles-ids-descriptions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: Query by assignment or workflow changes
+    href: ../track/query-by-workflow-changes.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Query by area or iteration path
+    href: ../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
+  - name: Query history
+    href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
 - name: How-to Guides
   items:
   - name: "Use @mentions to further discussion" 
@@ -127,16 +137,8 @@
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Work item form controls 
     href: work-item-form-controls.md 
-  - name: "Keyboard shortcuts for work item forms & the Work Items page" 
-    href: work-item-form-keyboard-shortcuts.md 
-  - name: Query by title, ID, or description
-    href: ../track/titles-ids-descriptions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: Query by assignment or workflow changes
-    href: ../track/query-by-workflow-changes.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Query by area or iteration path
-    href: ../track/query-by-area-iteration-path.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json   
-  - name: Query history
-    href: ../track/history-and-auditing.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+  - name: Keyboard shortcuts 
+    href: work-item-form-keyboard-shortcuts.md
   - name: Work item field index
     href: guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
     items:
@@ -154,6 +156,8 @@
     href: ../../user-guide/tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Define the hyperlink for a work item
     href: work-item-url-hyperlink.md
+  - name: REST API, Work Items
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items
 - name: Resources
   items:
   - name: Kanban

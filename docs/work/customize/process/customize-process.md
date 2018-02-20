@@ -1,5 +1,6 @@
 ---
-title: Customize a process | VSTS  
+title: Customize a process
+titleSuffix: VSTS
 description: Your guide to configuring and customizing work tracking processes when connecting to Visual Studio Team Services (VSTS)   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -157,9 +158,9 @@ See also:
 - [Customize the work tracking experience](../customize-work.md) 
 
 <a id="process-rest-api">  </a>
-### Programmatically query for processes 
+### Programmatically work with processes 
 
-You can determine the processes defined for an account using the REST API: [Processes](https://visualstudio.com/integrate/api/tfs/processes.md).
+You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
 [!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 

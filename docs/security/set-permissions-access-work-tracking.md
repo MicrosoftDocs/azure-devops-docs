@@ -1,6 +1,7 @@
 ---
-title: Set permissions and access for tracking  | VSTS & TFS
-description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and Team Foundation Server)
+title: Set work tracking permissions 
+titleSuffix: VSTS & TFS 
+description: How to grant or restrict access to work tracking tasks for Visual Studio Team Services and Team Foundation Server
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
@@ -37,7 +38,7 @@ The **Edit project-level information** and **Edit instance-level information** (
 > - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit team project level permission ACLs<br/>- Manage process templates<br/>- Customize a team project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit team project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a team project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project or collection level events. |
 
 
-<a id="set-permissions-area-path" >  </a> 
+<a name="set-permissions-area-path" /> 
 
 ## Create child nodes, modify work items under an area path   
 
