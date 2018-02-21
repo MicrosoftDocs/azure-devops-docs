@@ -16,6 +16,7 @@ ms.date: 12/20/2017
 ms.author: mlearned
 ms.custom: mvc
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Create a CI/CD pipeline for .NET with the Azure DevOps Project
 

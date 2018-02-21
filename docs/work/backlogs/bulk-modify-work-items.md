@@ -1,6 +1,7 @@
 ---
-title: Bulk modify work items | VSTS & TFS
-description: Bulk edit/modify several/multiple work items (mass update), backlog items, tasks, or bugs or linked parent-child items-Visual Studio Team Services (VSTS)| Team Foundation Server    
+title: Bulk modify work items
+titleSuffix: VSTS & TFS
+description: Bulk edit/modify several/multiple work items (mass update), backlog items, tasks, or bugs or linked parent-child items for Visual Studio Team Services and Team Foundation Server    
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
@@ -202,12 +203,12 @@ To add fields or customize a work item form, see [Customize your work tracking e
  
 ### Migrate or change a large number of work items 
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.com/integrate/api/wit/batch.md). 
+For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://www.visualstudio.com/en-us/docs/integrate/api/wit/batch). 
 
 >[!NOTE]  
 >At this time, you can't move work items to a different VSTS account or TFS collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
-### Add multiple values to a field (TFS)   
+### Add multiple values to a field  
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
 
 

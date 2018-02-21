@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 07/20/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Deploy to Azure
 

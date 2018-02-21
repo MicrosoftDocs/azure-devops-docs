@@ -1,12 +1,13 @@
 ---
-title: Add columns on your Kanban board for VSTS & TFS 
+title: Add columns on your Kanban board
+titleSuffix: VSTS & TFS
 description: Map your Kanban board to follow the flow of how your team works by adding columns that map to a stage in your process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 02/16/2018
 --- 
 
 # Add columns
@@ -322,4 +323,4 @@ As an item's card moves from one Kanban column to the next, the item's workflow 
 Kanban columns may correspond to an actual workflow state or a pseudo state. For example, Develop, Test, and Verify columns may all map to the Active state. In this case, when you move an item from Develop to Test or from Test to Verify, the item's State doesn't change. 
 
 ###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [Work API reference](https://www.visualstudio.com/integrate/api/work/overview).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).

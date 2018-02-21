@@ -4,12 +4,12 @@
 
 <table>
 <tr valign="bottom">
-<th width="310px">Task</th>
+<th>Task</th>
 <th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
+<th>Account Owner/<br/>Project Admins</th>
 <th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">
@@ -125,6 +125,51 @@
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
+
+<tr>
+<td align="left">Create and edit task groups 
+</td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Manage task group permissions
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Can view library items such as variable groups 
+</td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Use and manage library items such as variable groups 
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
 
 
 </tbody>

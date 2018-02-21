@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 05/19/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Migrate from XAML builds to new builds
 

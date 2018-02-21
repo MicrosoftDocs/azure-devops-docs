@@ -64,26 +64,14 @@ Admins control who gets to fully contribute.
 ## Permission  
 The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and groups](about-permissions.md).   
 
-<!---
-## Private project
-
-Projects that are visible only to members of the VSTS account hosting the project.
-Only account members can discover them.
-Admin controls who gets to fully contribute.
-
-## Public project
-Projects that are visible to the whole world.
-Everyone in the world can discover them and perform limited operations.
-Admins control who gets to fully contribute.
-
-## Public user
-
--->
 
 ## Security group 
  
 A method by which you can organize users and other domain objects to simplify administration of permissions and access. VSTS and TFS support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and groups](about-permissions.md). 
 
+## Security role 
+ 
+A security model that limits actions based on membership within a role. To learn more, see [About security roles](about-security-roles.md). 
 
 ## Service account  
 

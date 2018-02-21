@@ -18,7 +18,7 @@ ms.date: 11/29/2017
 >[!NOTE]    
 ><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md)from your account profile.
 
-The **New Queries Experience** streamlines many of the the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
+The **New Queries Experience** streamlines many of the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
 
 ## Enable the New Queries Experience
 

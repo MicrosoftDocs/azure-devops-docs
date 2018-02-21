@@ -22,7 +22,7 @@
     href: extension-report.md
 - name: How-to Guides
   items:
-  - name: Manage extension related permissions
+  - name: Manage extension permissions (Security)
     href: how-to/grant-permissions.md
   - name: Request extensions
     href: request-extensions.md

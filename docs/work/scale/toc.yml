@@ -47,14 +47,20 @@
     href: scaled-agile-framework.md
   - name: Switch project or team focus
     href: ../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: "Manage permissions & access"
+  - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Reference
   items:
-  - name: "Permissions & access for work tracking"
+  - name: "Default permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name:  Delivery plan keyboard shortcuts
     href: delivery-plan-keyboard-shortcuts.md
+  - name: REST API, Teams
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/core/teams
+  - name: REST API, Plans
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/plans
+  - name: REST API, Area and Iteration Paths
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes  
 - name: Resources
   items:
   - name: "Scale & Configure Teams"

@@ -28,10 +28,14 @@
         href: apps/aspnet/build-aspnet-core.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
-      - name: C++ Windows
+      - name: C/C++ with GCC
+        href: apps/c-cpp/gcc.md
+      - name: C/C++ with VC++
         href: apps/windows/cpp.md
-      - name: Containers
+      - name: Docker image
         href: apps/containers/build.md
+      - name: Go
+        href: apps/go/go.md
       - name: Gradle
         href: apps/java/build-gradle.md
       - name: Maven
@@ -154,12 +158,8 @@
       href: concepts/library/service-endpoints.md
     - name: Secure files
       href: concepts/library/secure-files.md
-  - name: Policies
-    items:
-    - name: Retention policies
-      href: concepts/policies/retention.md
-    - name: Permissions
-      href: concepts/policies/permissions.md
+  - name: Retention policies
+    href: concepts/policies/retention.md
 - name: How-to Guides
   items:
   - name: Deploy an agent
@@ -244,14 +244,6 @@
       items:
       - name: Use Package Management
         href: packages/maven.md
-  - name: Troubleshoot issues
-    items:
-    - name: Troubleshooting build
-      href: actions/troubleshooting.md
-    - name: Debug deployment issues
-      href: concepts/definitions/release/variables.md#debug-mode
-    - name: Troubleshoot Azure connections
-      href: actions/azure-rm-endpoint.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds
@@ -260,6 +252,16 @@
       href: actions/virtual-networks/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
+  - name: "Set build and release permissions (Security)"
+    href: set-permissions.md 
+- name: Troubleshooting
+  items:
+  - name: Troubleshooting build
+    href: actions/troubleshooting.md
+  - name: Debug deployment issues
+    href: concepts/definitions/release/variables.md#debug-mode
+  - name: Troubleshoot Azure connections
+    href: actions/azure-rm-endpoint.md
 - name: Reference
   href: tasks/index.md
   items:
@@ -367,12 +369,8 @@
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
       href: tasks/test/publish-test-results.md
-    - name: Run Functional Tests
-      href: tasks/test/run-functional-tests.md
     - name: Visual Studio Test
       href: tasks/test/visual-studio-test.md
-    - name: Visual Studio Test Agent Deployment
-      href: tasks/test/visual-studio-test-agent-deployment.md
     - name: Xamarin Test Cloud
       href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
@@ -447,3 +445,5 @@
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
     href: tasks/transforms-variable-substitution.md
+  - name: Permissions & security roles
+    href: concepts/policies/permissions.md
