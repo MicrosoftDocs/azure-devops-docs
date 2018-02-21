@@ -15,6 +15,13 @@ ms.date: 01/18/2018
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
+**NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+and run tests on platforms that don't have Visual Studio installed by using the 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+
+For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+
 ## Before you start
 
 * [Create a build definition](../../build-release/overview.md) that builds your solution after each check-in, using continuous integration.
