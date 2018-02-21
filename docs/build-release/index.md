@@ -10,8 +10,11 @@ ms.reviewer: dastahel
 ms.date: 02/19/2018
 layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Build and release
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
@@ -74,3 +77,11 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [What is continuous delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2013")
+
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](actions/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+
+[//]: # (::: moniker-end)

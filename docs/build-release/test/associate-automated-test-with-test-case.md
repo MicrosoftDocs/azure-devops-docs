@@ -44,15 +44,9 @@ The process to associate an automated test with a test case is:
 
 If you are using Team Foundation Build and Release Management in
 VSTS or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
-Build and Release pipeline by using the
-[Visual Studio Test Agent Deployment](../../build-release/tasks/test/visual-studio-test-agent-deployment.md) and
-[Run Functional Tests](../../build-release/tasks/test/run-functional-tests.md) tasks.
-You must configure the [Run Functional Tests](../../build-release/tasks/test/run-functional-tests.md) task to use the
-**Test Plan** option. You _cannot_ run tests on-demand using
+Build and Release pipeline - see [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
+for details. You _cannot_ run tests on-demand using
 Microsoft Test Manager (MTM) unless you are using a [XAML build](reference-qa.md#xaml-build). 
-
->See [Test with unified agents and phases](test-with-unified-agent-and-phases.md)
-for details of how you can avoid using the Visual Studio Test Agent Deployment task. 
 
 The parameters in a test case are not used by any automated test that
 you associate with a test case. Iterations of a test case that use these
