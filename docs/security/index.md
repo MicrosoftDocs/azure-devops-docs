@@ -39,6 +39,7 @@ For anyone to access a team project, you must add them to a security group. For 
 
 ## Concepts 
 - [About permissions and groups](about-permissions.md)  
+- [About security roles](about-security-roles.md)  
 - [About access levels](access-levels.md)  
 - [Azure Active Directory groups (VSTS)](../accounts/access-with-azure-ad.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
 - [Active Directory groups (TFS)](../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
@@ -47,7 +48,7 @@ For anyone to access a team project, you must add them to a security group. For 
 ## How-to Guides 
 
 - [Set Git branch permissions](../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
-- [Set build and release permissions](set-build-release-permissions.md) 
+- [Set build and release permissions](../build-release/set-permissions.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
 

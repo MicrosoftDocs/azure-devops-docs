@@ -171,7 +171,7 @@ The next three lines are used to construct the Analytics Service URL to retrieve
 for the account and project the widget is in, grouped by work item type.
 
 The ajax call actually retrieves the data from the Analytics Service. The beforeSend function adds the authetication token to the header. The error function
-called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the the chart is
+called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the chart is
 built.
 
 Replace the **//success function** comment with the following code which actually draws the chart:

@@ -1,6 +1,7 @@
 ---
-title: Customize your work tracking experience | VSTS & TFS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Customize your work tracking experience
+titleSuffix: VSTS & TFS
+description: Guide to configuring and customizing work tracking features in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
@@ -233,7 +234,7 @@ Here are a few options available to you:
 
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
-- Create your own tool using [REST APIs](https://visualstudio.com/integrate/api/overview)  
+- Create your own tool using [REST APIs](../../integrate/index.md)  
 - Add your feature request to our [VSTS user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
 
  
@@ -245,9 +246,4 @@ Here are a few options available to you:
  
 [!INCLUDE [temp](../../_shared/help-support-shared.md)]
 
-<!--- ADDRESS THESE VERBATIMS: 
-Configure bug reporting
-Add a column to a board 
-
---> 
 

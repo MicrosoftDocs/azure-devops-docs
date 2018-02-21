@@ -1,5 +1,6 @@
 ---
-title: Understand the components of security and identity in VSTS & TFS
+title: Understand the components of security and identity
+titleSuffix: VSTS & TFS
 description: Understand how VSTS and TFS manage security and accounts 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -8,7 +9,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/02/2017
+ms.date: 02/12/18
 ---
 
 # About security and identity  
@@ -25,6 +26,7 @@ The main security concepts to understand are
 - Authentication
 - Authorization 
 - Security groups
+- Security roles
 - Permission levels and permissions 
 - Access levels  
 
@@ -126,6 +128,18 @@ The following image shows the default permission assignments made to the Contrib
 
 To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).
+
+<a id="security-roles" />
+## Security roles 
+
+There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
+
+> [!div class="mx-tdBreakAll"]  
+> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
+> |-------------|----------|
+> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/> |- Agent queues<br/>- Service endpoints<br/> |- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
+
+To learn more, see [About security roles](about-security-roles.md). 
 
 <a id="access-levels" />
 ## Access levels 

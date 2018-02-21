@@ -51,7 +51,7 @@
         href: ../../tfs-server/install/sharepoint/verify-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Move SharePoint to new hardware
         href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
-  - name: Set permissions to access a SharePoint project portal
+  - name: Set SharePoint permissions
     href: ../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
   - name: Manage SharePoint integration
     items:

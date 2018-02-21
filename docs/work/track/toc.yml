@@ -50,7 +50,7 @@
     href: ../../report/dashboards/charts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Organize queries, add a query folder
     href: organize-queries.md
-  - name: Set query permissions 
+  - name: Set query permissions (Security) 
     href: set-query-permissions.md
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
@@ -72,6 +72,12 @@
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
     href: ../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+  - name: "Default permissions & access (Security)"
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: REST API, Queries
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/queries 
+  - name: REST API, Wiql
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql 
 - name: Resources
   items:
   - name: Work Items

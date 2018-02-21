@@ -48,7 +48,7 @@
     href: definition-of-done.md
   - name: Reorder cards
     href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
-  - name: "Manage permissions & access"
+  - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Reference
   items:
@@ -58,8 +58,10 @@
     href: kanban-board-keyboard-shortcuts.md
   - name: Query by assignment,workflow or Kanban board changes
     href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
-  - name: "Permissions & access for work tracking"
+  - name: "Default permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+  - name: REST API, Boards
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/boards
 - name: Resources
   items:
   - name: Backlogs
