@@ -10,8 +10,6 @@
   items:
   - name: Test with builds
     href: getting-started-with-continuous-testing.md
-  - name: Selenium testing
-    href: continuous-test-selenium.md
   - name: Review test results
     href: review-continuous-test-results-after-build.md
 - name: Tutorials
