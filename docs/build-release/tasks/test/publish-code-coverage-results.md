@@ -39,10 +39,8 @@ The build agent must have the following capabilities:
 
 ## Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)  
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)  
+* [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)  
 * [Publish Test Results](publish-test-results.md)
-* [Run Functional Tests](run-functional-tests.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

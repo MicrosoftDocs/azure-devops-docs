@@ -78,9 +78,7 @@ ms.date: 08/18/2016
 | ![icon](test/_img/mobile-center-test-icon.png) [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest). Test mobile app packages with Visual Studio App Center | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/visual-studio-test-icon.png) [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment](test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/xamarin-test-cloud-icon.png) [Xamarin Test Cloud](test/xamarin-test-cloud.md). Test mobile apps with Xamarin Test Cloud using Xamarin.UITest | VSTS, TFS 2015 RTM and newer |
 
 ## Package
