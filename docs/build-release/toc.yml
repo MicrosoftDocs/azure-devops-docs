@@ -369,12 +369,8 @@
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
       href: tasks/test/publish-test-results.md
-    - name: Run Functional Tests
-      href: tasks/test/run-functional-tests.md
     - name: Visual Studio Test
       href: tasks/test/visual-studio-test.md
-    - name: Visual Studio Test Agent Deployment
-      href: tasks/test/visual-studio-test-agent-deployment.md
     - name: Xamarin Test Cloud
       href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
