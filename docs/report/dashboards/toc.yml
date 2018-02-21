@@ -46,15 +46,15 @@
     href: charts.md
   - name: "Create test progress & result charts"
     href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: Set dashboard permissions
+  - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
-- name: Samples
+- name: "Samples (REST API)"
   items:
-  - name: "Add a dashboard widget"  
+  - name: Add a dashboard widget
     href: ../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Add a chart widget"  
+  - name: Add a chart widget 
     href: ../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Add an Analytics widget"  
+  - name: Add an Analytics widget  
     href: ../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json    
 - name: Reference
   items:
@@ -62,8 +62,10 @@
     href: widget-catalog.md
   - name: Markdown guidance
     href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
-  - name: "Default permissions & access"
+  - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
+  - name: REST API, Dashboards
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/
 - name: Resources
   items:
   - name: Agile

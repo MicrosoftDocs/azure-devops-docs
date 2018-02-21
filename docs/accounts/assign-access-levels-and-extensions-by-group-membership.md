@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/16/2018
+ms.date: 02/20/2018
 ---
 
 # Assign access levels and extensions to users by group membership
@@ -18,7 +18,7 @@ You can assign an access level or extensions to a group, and VSTS will ensure th
 When those users leave the group, those licenses are freed up and returned to your pool.
 This eliminates the need for automating license management on your own to reflect changes in your organizational structure on a per-user basis.
 
-## Assigning required licenses
+## Assign required licenses
 
 1. Sign in to VSTS and navigate to the **Users** page in your account settings. To manage licenses and group rules, you must be a Project Collection Administrator on the VSTS account.
     a. Go to the **Security** page and check the membership of the Project Collection Administrators group.
@@ -36,7 +36,7 @@ This eliminates the need for automating license management on your own to reflec
 
 A notification is displayed that shows the status and outcome of the rule. If the assignment couldn’t be completed (for example, because your VSTS account didn’t have enough licenses purchased), choose **View status** to view details.
 
-## Resolving assignment errors
+## Resolve assignment errors
 
 As users sign in to your VSTS account, they will be assigned access levels and extensions based on their group memberships. If there are not enough licenses or extensions to assign the specified resources to the user, based on their group memberships, VSTS will notify all Project Collection Administrators via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following.
 

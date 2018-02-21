@@ -7,19 +7,19 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/28/2017
+ms.date: 02/07/2018
 ---
 
 # About permissions and groups 
 
-
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md).
+To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (AAD) if integrated with VSTS, or Active Directory if integrated with TFS. 
 
 Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build definitions, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
 You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
+
 
 ## Permission settings 
 
@@ -38,6 +38,12 @@ Here's what you need to know about permission settings:
 
 <a name="inheritance"></a>
 ## Inheritance
+
+Some permissions are managed through a hierarchy. Within this hierarchy,
+permissions can be inherited from the parent or overridden. In
+certain cases, a set of permissions are grouped into a **role**
+to simplify administration. Membership of these roles governs
+access. 
 
 If a permission isn't directly allowed or denied for a user, then it may be inherited in two ways.
 - Users inherit permissions from the groups to which they belong.

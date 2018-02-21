@@ -1,6 +1,6 @@
 ---
 title: Create a wiki for your team project
-titleSuffix: VSTS
+titleSuffix: VSTS & TFS 2018
 description: Share information with your team  and increase collaboration using a built-in team project wiki provided by Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/18/2017
+ms.date: 02/20/2018
 ---
 
 
@@ -61,7 +61,13 @@ You can contact your administrator to provision the Wiki git repository or reque
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories in the **Code** hub, nor in the list provided in the team project administration context, **Version Control** page.  
  
-However, you can navigate to it from the URL `https://<AccountName>.visualstudio.com/DefaultCollection/_git/<TeamProjectName>.wiki`. 
+However, you can navigate to it from the following URL:
+
+**VSTS**
+`https://<AccountName>.visualstudio.com/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
+
+**TFS 2018**
+`https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
 
 You can click **More** followed by **Clone Wiki** to access the Wiki URL.
 
