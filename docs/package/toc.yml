@@ -116,6 +116,8 @@
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
       href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
+  - name: Recover a deleted package
+    href: how-to/recover-deleted-package.md
 - name: Reference
   items:
   - name: Collaborate with packages
