@@ -23,8 +23,8 @@ including [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xs
 Visual Studio Test (TRX), and
 [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html). 
 If you use the built-in tasks such as
-[Visual Studio Test](visual-studio-test.md) or [Run Functional Tests](run-functional-tests.md) to run tests, results are
-automatically published and you do not need a separate publish test results task.  
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+to run tests, results are automatically published and you do not need a separate publish test results task.  
 
 ## Demands
 
@@ -54,9 +54,7 @@ The build agent must have the following capabilities:
 
 ## Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)  
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)  
-* [Run Functional Tests](run-functional-tests.md)
+* [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
 ## Q&A
