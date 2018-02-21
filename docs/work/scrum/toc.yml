@@ -46,13 +46,13 @@
     href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
-  - name: "Manage permissions & access"
+  - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../teams/switch-team-context.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: "Permissions & access for work tracking"
+  - name: "Default permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json

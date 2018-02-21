@@ -1,6 +1,7 @@
 ---
-title: Kanban features & epics | VSTS 
-description: Quickly define and view the status of child features, user stories, or product backlog items when working in the Kanban features or epic boards in Visual Studio Team Services (VSTS)   
+title: Add features & epics to a Kanban board
+titleSuffix: VSTS & TFS
+description: Quickly define and view the status of child features, user stories, or product backlog items when working in the Kanban features or epic boards in Visual Studio Team Services 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
@@ -15,7 +16,6 @@ ms.topic: get-started-article
 
 
 <b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
-
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -60,4 +60,4 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
 
 ### REST API resources
-To programmatically create work items, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).  
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).

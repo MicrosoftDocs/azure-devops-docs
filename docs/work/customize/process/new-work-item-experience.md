@@ -1,6 +1,7 @@
 ---
-title: New work item web form | TFS  
-description: The new web form and work item tracking experience supports  more integrated and collaborative experiences
+title: New work item web form 
+titleSuffix: VSTS & TFS 
+description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
@@ -113,7 +114,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [VSTS Features Timeline](/vsts/release-notes/index)  
-- [VSTS REST API Reference](https://visualstudio.com/integrate/api/overview)  
+- [REST API, Work Item Types](https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types)  
 
 
 ### Will the new work item experience become permanent?  

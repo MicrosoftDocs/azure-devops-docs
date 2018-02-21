@@ -1,5 +1,6 @@
 ---
-title: How work items are used to plan and track work in VSTS & TFS
+title: Use work items to plan & track work
+titleSuffix: VSTS & TFS
 description: Use work items to plan, track, and collaborate with others when developing software apps 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -184,7 +185,7 @@ To learn more about permissions and access, see [Permissions and access for work
 You can add work items from various clients, such as: 
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
 - From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
-- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](https://java.visualstudio.com/Docs/tools/eclipse). 
+- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](http://java.visualstudio.com/Downloads/eclipseplugin/Index). 
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 

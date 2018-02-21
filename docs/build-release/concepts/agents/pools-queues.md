@@ -51,7 +51,10 @@ We provide the following agent pools by default:
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
 
-Each of the three hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
+* **Hosted macOS Preview** pool (VSTS only): Enables you to build and release on
+  Mac machines without having to configure a private agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+
+Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 

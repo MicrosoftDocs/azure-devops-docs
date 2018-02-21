@@ -1,12 +1,13 @@
 ---
-title: Grant or restrict access to features and functions in VSTS and TFS
+title: Grant or restrict access to select features
+titleSuffix: VSTS & TFS 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/18/2017
+ms.date: 02/12/2018
 ---
 
 
@@ -96,7 +97,7 @@ To delegate tasks to other members within your organization, consider creating a
 <tr>
 <td>Team administrators</td>
 <td>Add area paths for their team<br/>Add shared queries for their team</td>
-<td>Create child nodes, Delete this node, Edit this node<br/>See [Set branch permissions](../git/branch-permissions.md)<br/>
+<td>Create child nodes, Delete this node, Edit this node<br/>See [Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>
 Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../work/track/set-query-permissions.md).</td>
 </tr>
 
@@ -142,7 +143,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 <ul>
 <li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
 <li>[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)</li>
-<li>[Administer build and release permissions](set-build-release-permissions.md)</li>
+<li>[Administer build and release permissions](../build-release/set-permissions.md)</li>
 <li>[Manage Wiki permissions](../collaborate/manage-readme-wiki-permissions.md).</li>
 </td>
 </tr>
@@ -169,14 +170,14 @@ VSTS and TFS are designed to enable all valid users to be able to view all objec
 
 <tr>
 <td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#modify-work-items-under-an-area-path).</td>
+<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md).</td>
 </tr>
 
 <tr>
 <td>View or update select build and release definitions</td>
 <td>Edit build definition, View build definition<br/>
 Edit release definition, View release definition<br/>
-You set these permissions at the oject level. See [Set build and release permissions](set-build-release-permissions.md).</td>
+You set these permissions at the object level. See [Set build and release permissions](../build-release/set-permissions.md).</td>
 </tr>
 
 <tr>
