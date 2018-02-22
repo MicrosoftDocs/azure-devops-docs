@@ -26,6 +26,12 @@ To get started, read [What is Analytics?](what-is-analytics.md)
 ## 5-Minute Quickstarts
  - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
+| | |
 
 ## Step-by-Step Tutorials
 
