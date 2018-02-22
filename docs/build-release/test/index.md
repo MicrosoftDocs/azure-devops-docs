@@ -29,8 +29,9 @@ choose the technologies and frameworks, then test your changes continuously in a
 
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Build/2016/P581/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Seth-on-the-Road/That-Conference-2016/Creating-a-Software-Immune-System-for-Testing-under-DevOps/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T182/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Build/2016/P581/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Seth-on-the-Road/That-Conference-2016/Creating-a-Software-Immune-System-for-Testing-under-DevOps/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
 | | |
 
 ## Step-by-Step Tutorials
