@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/20/2018
+ms.date: 02/21/2018
 ---
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
@@ -38,11 +38,8 @@ While the steps to connect your VSTS account to Azure AD are consistent, it’s 
 
 One of the following scenarios likely applies to your situation:
 
-<<<<<<< HEAD
 - I use a Microsoft account, jamalhartnett@fabrikam.com, for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
-=======
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
->>>>>>> f19abe8a28f6ef418a3340a7f72f92bd3359a1f1
   - This document is for you!
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
     - Work with CSS to help with the migration by [creating a new support ticket](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636538111396376813)
@@ -131,11 +128,8 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 6. Choose **Yes** to confirm.
 
-<<<<<<< HEAD
    ![Connect your account](_img/connect-account-to-aad/choose-yes-to-connect.png)
 
-=======
->>>>>>> f19abe8a28f6ef418a3340a7f72f92bd3359a1f1
 7. Your account is now connected to your organization's directory.
 
 8. To confirm that the process has been completed, open a clean browser (in private) and sign in to your VSTS account with your Azure AD/work credentials.
@@ -175,10 +169,10 @@ When you inform your users of the completed change, include the following tasks 
 
 **A:** Complete the following steps:
 
-    1. On your VSTS page, in the upper right, choose your **profile image** and then choose **Security**.
-    2. On the Personal access tokens page, choose **Add**.
-    3. Enter a description and go to the bottom of the page and choose **Create token**.
-    4. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
+   1. On your VSTS page, in the upper right, choose your **profile image** and then choose **Security**.
+   2. On the Personal access tokens page, choose **Add**.
+   3. Enter a description and go to the bottom of the page and choose **Create token**.
+   4. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 
 **Q:** What if sign-in is required when using the identity picker?
 
