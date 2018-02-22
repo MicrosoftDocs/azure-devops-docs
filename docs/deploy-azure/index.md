@@ -33,7 +33,11 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Videos
 
-[![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T181/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T175/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/190/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
+| | |
 
 ## Resources
 
