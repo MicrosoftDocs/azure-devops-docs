@@ -28,6 +28,13 @@ Get started by creating a repo, uploading your code, and inviting developers to 
 
 Or, you can [import an existing repo](import-git-repository.md) from GitHub, Bitbucket, GitLab, or other location to a new, empty repo. 
 
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T178/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T184/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| | |
+
 ## Step-by-Step Tutorials  
 
 Learn the basics of working in Git with these tutorials which show tasks performed using Visual Studio or the command line.  

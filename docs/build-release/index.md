@@ -60,16 +60,21 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 * [CI builds for Git in VSTS](actions/ci-build-git.md)
 * [Set up multi-stage release](actions/define-multistage-release-process.md)
 
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T174/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T168/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T170/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T171/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/190/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| | |
+
 ## Concepts
 
 - [Release definitions](concepts/definitions/release/index.md)
 - [Build and release agents](concepts/agents/agents.md)
 - [Build and release tasks](concepts/process/tasks.md)  
 - [Licensing and build and release pipelines](concepts/licensing/concurrent-pipelines-ts.md)
-
-## Videos
-
-[![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
 
 ## Resources
 

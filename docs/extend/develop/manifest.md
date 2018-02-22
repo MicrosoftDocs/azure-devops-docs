@@ -558,6 +558,10 @@ The Marketplace only supports badges from the following trusted services:
 * travis-ci.org/
 * vsmarketplacebadge.apphb.com/
 * bithound.io/
+* deepscan.io/
+* githost.io/
+* gitlab.com/
+* opencollective.co/
 
 If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
 
