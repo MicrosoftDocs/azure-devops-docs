@@ -26,7 +26,7 @@ In a YAML build definition, your CI build process configured as code, which mean
 
 ## Get started
 
-If you're new to YAML builds, or to VSTS, we suggest you [begin with a tutorial](../apps/aspnet/build-aspnet-core.md) and then come back here.
+If you're new to YAML builds, or to VSTS, we suggest you begin learning with either our [ASP.NET Core](../apps/aspnet/build-aspnet-core.md) or [Node.js](../apps/nodejs/build-gulp.md) tutorial.
 
 ## How do YAML builds compare to web-interface builds?
 
