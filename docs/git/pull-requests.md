@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/19/2018
+ms.date: 02/23/2018
 ---
 
 #  Review code with pull requests
@@ -223,8 +223,7 @@ Vote on the changes in a pull request by choosing an option from the button on t
 - **Reject**: The changes aren't acceptable. If you are voting this way, you should leave a comment in the pull request detailing why the changes were rejected.    
 - **Reset feedback**: Choose **Reset feedback** to remove your vote.
 
-The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes.
-Votes in a pull request do not reset when new code is pushed to the branch - make sure you have [notifications](#notifications) enabled if you want to review your vote as the code changes.
+The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes. Votes in a pull request can optionally be reset when new code is pushed to the branch by checking **Reset code reviewer votes when there are new changes** when configuring the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
 ![List of Pull Request voters in VSTS ](./_img/pull-requests/Approval.png)
 

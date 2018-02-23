@@ -34,6 +34,8 @@ TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Wind
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
 The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
+[Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
+Windows Server releases from the Semi-Annual Channel. 
 
 ### Client operating systems
 
@@ -93,6 +95,8 @@ TFS 2013 Update 2  | SQL Server 2014<br/>SQL Server 2012 (minimum SP1)
 TFS 2013           | SQL Server 2012 (minimum SP1)
 TFS 2012           | SQL Server 2012<br/>SQL Server 2008 R2
 TFS 2010           | SQL Server 2008 R2<br/>SQL Server 2008
+
+SQL Server on Linux is not supported.
 
 If you're using SQL Server 2016, we require a Visual C++ runtime [update](http://support.microsoft.com/kb/3138367) to be installed. 
 
