@@ -263,9 +263,9 @@ tfx extension publish --manifest-globs your-manifest.json --share-with youraccou
 #### Share your extension
 
 Now that you've uploaded your extension, it's in the Marketplace, but no one can see it. 
-Share it with your account so that you can install and test it.
+Share it with your VSTS account so that you can install and test it.
 
-1. Right click your extension and select <b>Share...</b>, and enter your account information. You can share it with other accounts that you want to have access to your extension, too.
+1. Right click your extension and select <b>Share...</b>, and enter your VSTS account name. (`https://{account}.visualstudio.com`) You can share it with other accounts that you want to have access to your extension, too.
 
 >[!IMPORTANT]
 >Publishers must be verified in order to share extensions publicly, to learn more visit [Package/Publish/Install](../publish/overview.md)
