@@ -91,7 +91,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 				}
 			],
 		"icons": {
-			"default": "images/logo.png"
+			"default": "images/icon.png"
 		 },
 		"contributions": [
 			{
@@ -122,7 +122,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 				"path": "sdk/scripts", "addressable": true
 			},
 			{
-				"path": "images/logo.png", "addressable": true
+				"path": "images/icon.png", "addressable": true
 			}
 		]
 	}
@@ -187,7 +187,7 @@ Copy the following contents, a simple html page that also references the SDK and
 </html>
 ```
 
-## Your extension's logo: `icon.png`
+## Your extension's icon: `icon.png`
 Add a square image in the ```images``` folder that identifies your extension.
 We'll display it in the Marketplace, and when someone installs your extension. The icon image needs to be atleast 128x128 pixels in size before an extension can be made available publicly on the Marketplace.
 
