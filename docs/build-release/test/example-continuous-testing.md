@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Continuous integration, test, and deployment tutorial
 
