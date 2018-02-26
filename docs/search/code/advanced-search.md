@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # How To: Use Code Search
 
