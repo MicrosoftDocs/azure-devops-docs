@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
+
 # How to: Troubleshoot Azure Resource Manager service endpoints
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
