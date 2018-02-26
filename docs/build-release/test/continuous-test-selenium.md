@@ -122,6 +122,11 @@ from Visual Studio Test Explorer.
 <a name="include-test"></a>
 ## Include the test in a CI build
 
+**NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks. In this case, you can
+use [deployment groups](../concepts/definitions/release/deployment-groups/index.md) to define your target machines. 
+For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+
 To include the Selenium test as part of a build,
 the source code must be in version control.
 
