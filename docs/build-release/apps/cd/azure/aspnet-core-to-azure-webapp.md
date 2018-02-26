@@ -16,6 +16,7 @@ ms.date: 01/19/2018
 ms.author: alewis
 ms.custom: mvc
 ---
+[//]: # (monikerRange: "vsts")
 
 # Build and deploy to an Azure Web App
 
