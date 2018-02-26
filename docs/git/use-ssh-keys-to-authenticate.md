@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+ms.date: 02/26/2018
 ---
 
 # Use SSH key authentication
@@ -99,7 +99,7 @@ user interface. Select **My security** in the menu that appears.
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal:
+0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an account named **fabrikops2**, as indicated by the first part of the URL before the `@`.
 
    ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
    
@@ -161,7 +161,7 @@ pasting in the public key into the **Key Data** field when adding the key to VST
  
 ### How can I start using SSH in a repository where I am currently using HTTPS?
  
-You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the SSH clone URL, run the following command:
+You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
 
 ```
 git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
