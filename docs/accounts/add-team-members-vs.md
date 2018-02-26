@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: chcomley
-ms.date: 01/04/2017
+ms.date: 02/23/2018
 ---
-
-#	Add team project members in VSTS
+# Add team project members in VSTS
 
 **VSTS**
 
@@ -27,7 +26,7 @@ if not. When a [Visual Studio subscriber](https://www.visualstudio.com/products/
 signs in, they'll get Basic access, and in some cases, additional features with specific extensions, 
 like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
-> [!NOTE]   
+> [!NOTE]
 > To manually assign access levels, 
 > [add members to your account instead](add-account-users-assign-access-levels.md). 
 > To control access to account resources, see [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md) or [Grant or restrict access to select features and functions](../security/restrict-access.md).
@@ -42,18 +41,18 @@ To add members to team projects, you'll need
 
 ## Add members to your team project
 
-0.	Sign in to your VSTS account 
+1. Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```) 
 as project administrator, project collection administrator, or account owner.
 
-	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
+[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-0.	On the account landing page (which is your projects page, ```https://{youraccount}.visualstudio.com/_projects```), 
+2. On the account landing page (which is your projects page, ```https://{youraccount}.visualstudio.com/_projects```),
 find and select your team project.
 
-	![On your Projects page, select your team project](_img/add-team-members/select-team-project-updated-ui.png)
+ ![On your Projects page, select your team project](_img/add-team-members/select-team-project-updated-ui.png)
 
-0.	Invite members to your new team project...
+3. Invite members to your new team project...
 
     ![On your team project home page, choose Invite a friend](_img/add-team-members/invite-team.png)
 
@@ -61,35 +60,31 @@ find and select your team project.
 
 	![On your team project page, choose Manage team members](_img/add-team-members/invite-team-existing.png)
 	
-  Adding members from the project page adds them to the default team for the project.  To add a member to a different team, choose 
-  the gear cog and **Security** from the menu.  Then find the team on the left pane of the security page and select it.  In 
-  the right pane, choose the **Members** view (next to **Permissions**), and then you will see a green plus symbol and 
+  Adding members from the project page adds them to the default team for the project.  To add a member to a different team, choose
+  the gear cog and **Security** from the menu.  Then find the team on the left pane of the security page and select it.  In
+  the right pane, choose the **Members** view (next to **Permissions**), and then you will see a green plus symbol and
   the **Add...** button.
 
-0.	Add your team members.
-	 
+4. Add your team members.
+
 	![Choose Add](_img/add-team-members/add-user.png)
 	
-0.	Enter the email addresses for your new users. 
-Otherwise, enter the display names for existing users. 
+5. Enter the email addresses for your new users.
+Otherwise, enter the display names for existing users.
 Add them one at a time or all at once.
 
 	Which email addresses can I add?
-	 * If your VSTS account is Azure Active Directory backed, then you can only add email addresses that are
-	 internal to the tenant.
+	* If your VSTS account is Azure Active Directory backed, adding an email address that is not in the tenant will add them to the tenant as a guest.
 	
-	 * You must add email addresses for users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) 
+	* You must add email addresses for users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) 
 	unless your VSTS account [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) 
 	to authenticate users and control account access through 
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
- 	 * If your VSTS account is connected to your organization's directory, 
-	all users must be directory members and sign in to VSTS with "work or school accounts" that are managed by 
-	your organization's directory. 	If they're not members, have a directory administrator add them to the directory. 
+ 	* If your VSTS account is connected to your organization's directory,
+	all users must be directory members and sign in to VSTS with "work or school accounts" that are managed by
+	your organization's directory. 	If they're not members, have a directory administrator add them to the directory.
 	That way, you can find them in this directory when you add users by searching for their email addresses or display names.
-
-	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
@@ -103,8 +98,7 @@ Add them one at a time or all at once.
 	First-time members might be asked for extra details 
 	when they sign in to personalize their experience.
 
-	What if new team members don't receive or lose the invitation email?  You can just send a link to the project page to
-	the new team members, which is what the email contains.
+	If new team members don't receive or lose the invitation email, send them a link to the project page directly.
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
@@ -117,4 +111,3 @@ Add them one at a time or all at once.
 - [Delete users from VSTS](delete-account-users.md)
 - [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
 - [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
-- 
