@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 2/14/2018
+ms.date: 2/26/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -21,62 +21,79 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Items – Markdown support|Work|TBD|
-|Work Items – Process read-only rule support|Work|TBD|
-|Work Items – Filtering on the Taskboard|Work|TBD|
-|Favoriting Backlogs, Boards, Sprints, and Dashboards|Work|TBD|
-|Work Items – Discussion-centric work item form|Work|TBD|
-|Work Items – Cross account linking|Work|TBD|
-|Work Items – Edit/Delete discussion comments|Work|TBD|
-|Updated Windows shell extension for TFVC|Code|N/A|
-|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|TBD|
-|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|TBD|
-|User-added required reviewers for pull requests|Code|TBD|
-|Build completion triggers – Trigger a build after completion of another build|Build|TBD|
-|XAML deprecation – XAML builds no longer supported in VSTS new accounts|Build|N/A|
-|Updated build summary and log views|Build|TBD|
-|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
-|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|TBD|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|TBD|
-|Azure Portal Continuous Delivery support – VMs|Release|TBD|
-|Better Traceability – Code PR Integration, Work Item Integration|Release|TBD|
-|Deployment Groups easy configuration of Azure VMs|Release|TBD|
-|Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
-|Extend Greenlighting with more gates – Test, Azure Log Analytics|Release|TBD|
-|Azure App Services Deployment – Go and Ruby frameworks|Release|TBD|
-|Azure Portal Continuous Delivery support – ACS Containers and VM enhancements|Release|TBD|
-|Package Management – Maven general availability (GA)|Package|TBD|
-|Package Management – Retention policies|Package|TBD|
-|Package Management – Repo, Build provenance information for a package|Package|TBD|
-|Distribute tests in CI pipeline using Phases|Test|TBD|
-|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|TBD|
-|Reporting – Public preview of our cloud reporting experience (Power BI, widgets, OData)|Reporting|TBD|
+|TFVC - Updated Windows shell extension for TFVC|Code|N/A|
+|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
+|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
+|Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
+|@CurrentIteration +/- support|Work|2018.2|
+|Filtering on the Taskboard|Work|2018.2|
+|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|2019|
+|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
+|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – VMs|Release|N/A|
+|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
+|Distribute tests in CI pipeline using Phases|Test|2018.2|
+|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
+|Analytics – Power BI Integration|Reporting|2019|
+|Publish documentation in repo as Wiki|Wiki|2019|
+|Support -,/,#,\,? etc. in wiki page title|Wiki|2018.2|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|Streamlined purchasing experience|Admin|TBD|
-|Publisher certification process|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|TBD|
-|Notification feed|Notifications|TBD|
 
 ### 2018 Q2
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Updated landing pages for Release|Release|TBD|
-|Canvas-based Release Summary views to track progress of releases|Release|TBD|
-|Package Management – Upstreams sources for VSTS feeds across accounts with the same AAD|Package|TBD|
-|Package Management – Package consumption metrics|Package|TBD|
-|Package Management – Maven Upstream support|Package|TBD|
-|Rerun failed tests in CI/CD workflows to overcome flaky tests|Test|TBD|
-|View in-progress test results in CI/CD workflows|Test|TBD|
-|Test insights related to Top failing tests & Long running tests at a Build definition level|Test|TBD|
+|Git - Filter the pull request list by target branch and labels|Code|2019|
+|GVFS - Performance improvements for status|Code|2019|
+|GVFS for Mac - Public Preview|Code|N/A|
+|New Agile Hubs – Refreshed UI on the core Agile hubs supporting Queries, Backlogs, Boards, Sprints, and Dashboards|Work|2019|
+|Work Items – Markdown support, editing comments|Work|2019|
+|Work Items – Discussion-centric work item form|Work|TBD|
+|[Build completion triggers – Trigger a build after completion of another build](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu)|Build|2019|
+|Configuration as code (YAML) for builds – Generally Available|Build|2019|
+|Updated build summary and log views|Build|2019|
+|Hosted build images – Ability to use latest or previous version of image|Build|N/A|
+|Release traceability – Pull request integration|Release|2019|
+|Release gates extensibility|Release|2019
+|Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
+|Updated landing pages for Release|Release|2019|
+|Canvas-based Release Summary views to track progress of releases|Release|2019|
+|Package Management – Maven general availability (GA)|Package|2019|
+|Package Management – Retention policies|Package|2019|
+|Package Management – Repo, Build provenance information for a package|Package|2019|
+|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|N/A|
+|Package Management – Package consumption metrics|Package|2019|
+|Package Management – Maven Upstream support|Package|2019|
+|Flaky tests - View prior failed attempts in CI/CD workflows|Test|2019|
+|View in-progress test results in CI/CD workflows|Test|2019|
+|Test insights related to Top failing tests & Long running tests at a Build definition level|Test|2019|
+|Microsoft Teams – Embed VSTS Dashboard in Channel|Reporting|2019|
+|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
+|Dashboards – Charts for Work Items Widget based on Analytics|Reporting|2019|
+|Dashboards – Create dashboard separate from a team|Reporting|2019|
+|Analytics – Automated Test data|Reporting|2019|
 |[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
-|Release views – support for multiple versions of extensions|Marketplace|N/A|
+|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
+|Publisher certification process|Marketplace|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
+|Notification feed|Notifications|2019|
 
 ### 2018 Q3
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|Work Items – Cross account linking|Work|TBD|
+|Deployment Groups easy configuration of Azure VMs|Release|TBD|
+|Extend release gates – Test|Release|TBD|
+|Release traceability – Work Item integration|Release|TBD|
+|Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|Release views – support for multiple versions of extensions|Marketplace|N/A|
+
+### 2018 Q4
+
+|Feature  |Area  |Server  |
+|---------|---------|---------|
+|Extensible Pool Providers|Build|TBD|
 
 ## Current features
 
