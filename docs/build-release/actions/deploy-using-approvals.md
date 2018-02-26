@@ -8,6 +8,7 @@ ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.topic: get-started-article
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2018")
 
 # Use approvals and gates to control your deployment
 

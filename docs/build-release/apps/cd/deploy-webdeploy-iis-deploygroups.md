@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/19/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2018")
 
 # Deploy to a Windows Virtual Machine
 

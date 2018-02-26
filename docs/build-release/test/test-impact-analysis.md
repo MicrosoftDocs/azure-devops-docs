@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
