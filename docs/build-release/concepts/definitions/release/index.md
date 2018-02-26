@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Release definitions in Release Management
 
@@ -30,13 +31,21 @@ An example of a release process that can be modeled through a release definition
 
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build definition. The release is first deployed to a Dev environment and then forked in parallel to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 An example of how deployment automation can be modeled within an environment is shown below:
 
 ![Artifacts in a definition and release](_img/definition-02.png)
 
 In this example, a [phase](../../process/phases.md) is used to deploy the web and database tiers to websites across the globe in parallel within production ring 1. Once all of those deployments are successful, a second phase is used to switch traffic from the previous version to the newer version.
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="<= tfs-2015")
+
 > **TFS 2015**: Phases, and fork and join deployments, are not available in TFS 2015.
+
+[//]: # (::: moniker-end)
 
 Besides the release process, release definitions have a few options that can be customized: 
 [release names](#numbering) and [retention policies](../../policies/retention.md).

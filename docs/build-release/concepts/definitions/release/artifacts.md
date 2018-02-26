@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Artifacts in Release Management
 
@@ -249,24 +250,22 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 
-<h3 id="dockersource">Docker</h3>
+<h3 id="dockersource">Azure Container Registry, Docker, Kubernetes</h3>
 
 When deploying containerized apps, the container image is first pushed to a container registry.
-After the push is complete, the container image can be deployed to the Web App for Containers service or a Kubernetes cluster.
+After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
 You must create a service endpoint with credentials to connect to 
-your Docker service to deploy images located there, or to your Azure account. For more details, see
-[service endpoints](../../library/service-endpoints.md),
-[Docker Host service endpoint](../../library/service-endpoints.md#sep-dochost),
-and [Docker Registry service endpoint](../../library/service-endpoints.md#sep-docreg).
+your service to deploy images located there, or to your Azure account. For more details, see
+[service endpoints](../../library/service-endpoints.md).
 
-The following features are available when using Docker sources:
+The following features are available when using Azure Container Registry, Docker, Kubernetes sources:
 
 | Feature | Behavior with Docker sources |
 |---------|-------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for images stored in Docker Hub or Azure Container registry. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Docker. |
-| Work items and commits | Release Management cannot show work items or commits for Docker images. |
-| Artifact download | By default, Docker builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+| Auto-trigger releases | You can configure a continuous deployment trigger for images. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds. |
+| Work items and commits | Release Management cannot show work items or commits. |
+| Artifact download | By default, builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 <h3 id="teamcitysource">TeamCity</h3>
