@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Test private and intranet apps using cloud-based load testing
 
