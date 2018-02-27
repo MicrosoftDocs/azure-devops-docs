@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 

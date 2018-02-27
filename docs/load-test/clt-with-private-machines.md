@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Run cloud-based load tests using your own machines
 

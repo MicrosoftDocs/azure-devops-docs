@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: "vsts")
 
 # View and compare your load test runs
 
