@@ -22,7 +22,7 @@ The **branch** command copies an item or set of items, including metadata and ve
 
 To use the **branch** command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
-    tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]]
+    tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]] [/recursive]
 ## Parameters
 
 |**Argument**|**Description**|
@@ -61,7 +61,12 @@ To use the **branch** command, you must have the **Read** permission for the sou
 	<td><p>Adds a comment to the new branch. This option is used only with the <strong>/checkin</strong> option.</p></td></tr>
 <tr>
 	<td><p><strong>/author</strong></p></td>
-	<td><p>Identifies the author of the new branch. This option is used only with the <strong>/checkin</strong> option.</p></td></tr></tbody>
+	<td><p>Identifies the author of the new branch. This option is used only with the <strong>/checkin</strong> option.</p></td></tr>
+	<tr>
+	<td><p><strong>/recursive</strong></p></td>
+	<td><p>For folders branch all files inside, too</p></td></tr>
+<tr>
+	</tbody>
 </table>
 
 ## Remarks
