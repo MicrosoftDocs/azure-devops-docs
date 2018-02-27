@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.author: mlearned
-ms.date: 11/21/2017
+ms.date: 2/26/2018
 ---
 
 
@@ -281,6 +281,9 @@ infrastructure of VSTS. The goal is to identify real-world vulnerabilities,
 configurations errors or other security gaps in a controlled process.
 The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
+
+>[!IMPORTANT]
+>While notifying Microsoft of penetration testing activities is no longer required customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
 
 ### Restricting access
 
