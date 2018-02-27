@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ---
+[//]: # (monikerRange: "vsts")
 
 # Run Apache JMeter load tests with VSTS
 
