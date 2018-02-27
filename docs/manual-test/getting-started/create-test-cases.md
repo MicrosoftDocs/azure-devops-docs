@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 08/14/2016
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Create manual test cases
 
