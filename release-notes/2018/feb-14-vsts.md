@@ -18,7 +18,7 @@ In the **Sprint 130 Update** of Visual Studio Team Services (VSTS), we continue 
 Other highlights include:
 
 * [Mention a group in work item and pull request discussions](#mention-a-group-in-work-item-and-pull-request-discussions)
-* [Release from Azure Container Registry and Docker Hub](#release-from-azure-container-registry-and-docker-hub) and [only certain branches of builds from GitHub](#filter-branches-for-github-artifacts)
+* [Release automatically from Azure Container Registry and Docker Hub](#release-automatically-from-azure-container-registry-and-docker-hub) and [only certain branches of builds from GitHub](#filter-branches-for-github-artifacts)
 * Leverage what you may have in Jenkins with [finer control](#specify-a-default-version-for-jenkins-artifacts) and [efficiency using Azure Storage](#propagate-jenkins-artifacts-to-azure-storage)
 * [Manage access and extensions for large numbers of users using groups](#manage-access-and-extensions-for-large-numbers-of-users-using-groups)
 
@@ -69,7 +69,7 @@ So far you have been able to specify branches and tags that should trigger a rel
 > [!div class="mx-imgBorder"]
 ![Branch include and exclude filters](_img/130_12.png)
 
-### Release from Azure Container Registry and Docker Hub
+### Release automatically from Azure Container Registry and Docker Hub
 
 When deploying containerized apps, the container image is first pushed to a container registry. After the push is complete, the container image can be deployed to a Web App for Containers or a Kubernetes cluster. You can now enable automatic creation of releases on updates to the images stored in **Docker Hub** or **Azure Container Registry** by adding them as an artifact source.
 
