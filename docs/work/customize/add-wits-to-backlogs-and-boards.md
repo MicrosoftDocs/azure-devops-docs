@@ -12,7 +12,7 @@ ms.date: 12/15/2017
 
 #Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 
 >[!IMPORTANT]  

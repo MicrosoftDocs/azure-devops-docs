@@ -13,7 +13,7 @@ ms.date: 02/05/2018
 
 # Create managed queries with the query editor
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
@@ -29,7 +29,7 @@ In this topic you'll learn:
 > * How to query across team projects    
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 <a id="flat-list-query"/>
 ## Open and edit a query  
@@ -154,7 +154,7 @@ With the Query across projects checked, you can add the Team Project field to fi
 >[!NOTE]  
 >Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
+The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
 
 ### TFS 2015, TFS 2013 
 To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
@@ -198,4 +198,4 @@ See also:
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

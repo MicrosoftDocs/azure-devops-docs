@@ -13,7 +13,7 @@ ms.date: 08/28/2017
 
 # Perform an adhoc search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
@@ -33,7 +33,7 @@ If you've added the [Code Search extension](https://marketplace.visualstudio.com
 
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
-[!INCLUDE [temp](../_shared/search-box.md)]
+[!INCLUDE [temp](../_shared/search-box.md)]
 
 Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
 
@@ -121,7 +121,7 @@ To find work items based on a keyword or phrase contained within other text stri
 
 ## Use @Me or @Today macros
 
-The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
+The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
 
 <table width="100%">
 <tbody valign="top">
@@ -203,7 +203,7 @@ The following examples show how to use operators when you create a search string
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)     
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ### Does the search box support less than/greater than operators?
 

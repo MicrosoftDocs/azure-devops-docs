@@ -12,7 +12,7 @@ ms.date: 11/28/2017
 
 # Filter backlogs or queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
 <a id="filter"></a>

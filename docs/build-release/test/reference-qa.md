@@ -80,7 +80,7 @@ app to a different slot using the **Azure App Service Manage** task. See
 [Swap deployment slots](../../build-release/apps/cd/howto-webdeploy-webapps.md#swapslots).
 
 You can use [task phases](../../build-release/concepts/process/phases.md)
-and the [**Manual Intervention**](../../build-release/concepts/process/phases.md#the-manual-intervention-task) task
+and the [**Manual Intervention**](../../build-release/tasks/utility/manual-intervention.md) task
 in your release definition to pause a deployment; for example, to examine test results
 after the load tests have run and before the app is swapped from staging to production. 
 

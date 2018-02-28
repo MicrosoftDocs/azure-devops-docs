@@ -127,12 +127,6 @@
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
       href: concepts/releases/index.md
-    - name: Work with release definitions
-      href: actions/work-with-release-definitions.md
-    - name: Create and deploy releases
-      href: actions/create-deploy-releases.md
-    - name: View and manage releases
-      href: actions/view-manage-releases.md
   - name: Process
     items:
     - name: Tasks

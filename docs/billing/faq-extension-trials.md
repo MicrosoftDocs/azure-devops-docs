@@ -1,53 +1,54 @@
 ---
-title: Troubleshooting paid extensions trials for VSTS
-description: Troubleshooting paid extensions trials for VSTS
+title: Troubleshoot paid extensions trials for VSTS
+description: Troubleshoot paid extensions trials for VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/22/2018
+ms.date: 02/27/2018
 ---
-
-# Troubleshooting paid extensions trials for VSTS
+# Troubleshoot paid extensions trials for VSTS
 
 **VSTS**
 
-
 <a name="account-trial"></a>
-####Q:   What happened to the account trial?
 
-A:	VSTS replaced the account trial with the 
-[Test Manager extension trial](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), 
+### Q: What happened to the account trial?
+
+A: VSTS replaced the account trial with the
+[Test Manager extension trial](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web),
 which also offers the same integrated, 
-comprehensive manual and exploratory testing features. 
+comprehensive manual and exploratory testing features.
 
-####Q:		How many times can I start an extension trial?
+### Q: How many times can I start an extension trial?
 
-A:  You can start an extension trial only once per account. 
+A:  You can start an extension trial only once per account.
 
 <a name="no-accounts"></a>
 
 [!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="no-permissions"></a>
-####Q:		Why can't I start an extension trial for the selected VSTS account?
 
-A:	You must be the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner) 
-to start an extension trial for the selected VSTS account. If you don't have permissions, 
-you can [request the extension](../marketplace/request-vsts-extension.md) instead. 
+### Q: Why can't I start an extension trial for the selected VSTS account?
+
+A: You must be the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner)
+to start an extension trial for the selected VSTS account. If you don't have permissions,
+you can [request the extension](../marketplace/request-vsts-extension.md) instead.
 
 <a name="check-trial"></a>
-####Q:		How do I check an extension's trial status?
 
-A:	Check the extension pane in your Users hub.
+### Q: How do I check an extension's trial status?
+
+A: Check the extension pane in your Users hub.
 
 ![Check extension trial](_img/try-additional-features/check-extension-trial-updated-ui.png)
 
-####Q:   How do I cancel my trial?
+### Q: How do I cancel my trial?
 
-A: To stop your trial, just 
-[uninstall the extension](../marketplace/uninstall-disable-vsts-extensions.md) 
+A: To stop your trial, just
+[uninstall the extension](../marketplace/uninstall-disable-vsts-extensions.md)
 from your VSTS account.
 
 <a name="feature-access"></a>
@@ -67,7 +68,6 @@ from your VSTS account.
 [!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
-
 
 <a name="get-support"></a>
 

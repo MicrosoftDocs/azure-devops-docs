@@ -20,10 +20,10 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <CATEGORIES>  
-   <CATEGORY name="category display name" refname="category reference name">  
-      <DEFAULTWORKITEMTYPE name="work item type reference name" />  
-      <WORKITEMTYPE name="work item type reference name" />  
-   </CATEGORY>  
+      <CATEGORY name="category display name" refname="category reference name">  
+      <DEFAULTWORKITEMTYPE name="work item type reference name" />  
+      <WORKITEMTYPE name="work item type reference name" />  
+      </CATEGORY>  
 </CATEGORIES>  
 ```  
   

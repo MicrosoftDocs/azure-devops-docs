@@ -12,7 +12,7 @@ ms.date: 07/21/2017
 
 # Capacity planning  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How much work can your team accomplish in a sprint? Using the capacity planning tools, your team can estimate both the amount of work and types of work required to complete their sprint plan. Then, during the sprint, you can [monitor the capacity bars](../scrum/sprint-planning.md#adjust-work) to determine when an individual team member or a team area of activity is on target to finish, or needs help from other team members to finish. 
 
