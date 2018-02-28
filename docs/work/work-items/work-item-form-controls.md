@@ -61,7 +61,7 @@ While the workflow states differ for different work item types, they usually fol
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a user story in the default state, New.</li>
 <li>Change the state from New to Active.</li>
@@ -69,7 +69,7 @@ While the workflow states differ for different work item types, they usually fol
 <li>Change the state from Resolved to Closed.</li>
 </ul>
 <br/>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>

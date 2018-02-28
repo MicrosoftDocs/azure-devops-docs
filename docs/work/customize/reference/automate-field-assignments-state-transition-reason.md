@@ -64,9 +64,9 @@ You may want to automatically transition work items from one state to another st
    <REASONS>
       ...
    </REASONS>
-   <ACTIONS>  
-      <ACTION value="microsoft.vsts.actions.checkin"/>  
-   </ACTIONS>  
+      <ACTIONS>  
+      <ACTION value="microsoft.vsts.actions.checkin"/>  
+      </ACTIONS>  
 </TRANSITION>  
 ```  
   
@@ -91,10 +91,10 @@ You may want to automatically transition work items from one state to another st
        <REASONS>
           <DEFAULTREASON value="Fixed" />
        </REASONS>
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-          <ACTION value="ADatum.Actions.Complete"/>  
-       </ACTIONS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
+          <ACTION value="ADatum.Actions.Complete"/>  
+          </ACTIONS>  
     </TRANSITION>  
     ```  
   

@@ -1,12 +1,13 @@
 ---
-title: Import and export categories | VSTS & TFS
-description: Use the witadmin commands to import and export categories defined for a team project - Team Foundation Server (TFS)
+title: Import and export categories
+titleSuffix: TFS  
+description: Import and export categories defined for a team project in Team Foundation Server 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 02/26/2018
 ---
 
 
@@ -15,7 +16,7 @@ ms.date: 04/03/2017
 [!INCLUDE [temp](../../../_shared/customization-witadmin-plus-version-header.md)]  
 
 You can import and export categories defined for a team project by using the following **witadmin** commands:   
--   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server. (can run against Visual Studio Team Services (VSTS))    
+-   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server.   
 -   **importcategories**:  Imports a work item type XML definition file into a team project on a server that runs TFS.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../use-categories-to-group-work-item-types.md).  
@@ -44,7 +45,7 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/p**:`Project`|The name of the team project from which the categories are exported or to which the categories are imported.|  
 |**/f**:*FileName*|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the **exportcategories** command, the command lists the categories in the Command Prompt window.|  
 |**/e**:*Encoding*|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
@@ -87,11 +88,11 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
     > [!div class="tabbedCodeSnippets"]
 	```XML  
     <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-       <WORKITEMTYPE name="Code Review Response" />  
-       <WORKITEMTYPE name="Feedback Request" />  
-       <WORKITEMTYPE name="Feedback Response" />  
-       <WORKITEMTYPE name="Shared Steps" />  
+       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+       <WORKITEMTYPE name="Code Review Response" />  
+       <WORKITEMTYPE name="Feedback Request" />  
+       <WORKITEMTYPE name="Feedback Response" />  
+       <WORKITEMTYPE name="Shared Steps" />  
     </CATEGORY>  
     ```  
   
@@ -102,12 +103,12 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
     > [!div class="tabbedCodeSnippets"]
 	```XML
     <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-       <WORKITEMTYPE name="Code Review Response" />  
-       <WORKITEMTYPE name="Feedback Request" />  
-       <WORKITEMTYPE name="Feedback Response" />  
-       <WORKITEMTYPE name="Shared Steps" />  
-       <WORKITEMTYPE name="Integration Build" />  
+       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+       <WORKITEMTYPE name="Code Review Response" />  
+       <WORKITEMTYPE name="Feedback Request" />  
+       <WORKITEMTYPE name="Feedback Response" />  
+       <WORKITEMTYPE name="Shared Steps" />  
+       <WORKITEMTYPE name="Integration Build" />  
     </CATEGORY>  
     ```  
   

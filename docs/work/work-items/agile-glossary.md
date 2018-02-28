@@ -11,7 +11,7 @@ ms.date: 09/06/2017
 
 # Agile glossary 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Agile tools on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms. See also: 
 - [Work item field index](guidance/work-item-field.md)   

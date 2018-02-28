@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Agile culture  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture] (https://www.visualstudio.com/learn/agile-culture/) and [Scaling Agile to Large Teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/).

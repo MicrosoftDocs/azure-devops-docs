@@ -12,7 +12,7 @@ ms.date: 12/15/2017
 
 #Add updates to team projects manually  
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
@@ -31,7 +31,7 @@ Prior to manually adding or editing a work tracking object, first [download the 
 Several features, such as Code Review and Feedback, simply require importing WITs from the process template that you download, and updating the Categories and ProcessConfiguration file. Other features, however, may require more extensive changes depending on the customizations you've made to your team project.  
 
 >[!NOTE]  
->Follow the links for each step to detail procedures provide later in this topic. 
+>Follow the links for each step to detail procedures provide later in this topic. 
 
 
 <table>
@@ -459,7 +459,7 @@ Depending on the customizations that you've made and the features you want to en
 	```witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"```
 
 <blockquote style="font-size: 13px">**Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md
-)</blockquote>  
+)</blockquote>&nbsp;&nbsp;�
 
 <a id="update-processconfig">   </a>
 <a id="edit-processconfig">   </a>

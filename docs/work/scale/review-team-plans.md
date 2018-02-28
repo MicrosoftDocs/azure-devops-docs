@@ -25,7 +25,7 @@ Use Delivery Plans to ensure your teams are aligned  with your organizational go
 
 In this topic you'll learn:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > - How to review a plan with your teams
 > - How to add and edit a plan
 > - How to add field criteria, customize cards, and add markers
@@ -61,7 +61,7 @@ In order to add and configure a plan, you must have the following in place:
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations      
 
-## Add a plan  
+## Add a plan  
 
 Once you have [installed Delivery Plans](#install-plans), the Plans page appears under the Work hub.
 
@@ -198,4 +198,4 @@ The Delivery Plans extension is free to install from the [Visual Studio Marketpl
 You can manage plans programmatically using the [REST API, Plans](https://docs.microsoft.com/en-us/rest/api/vsts/work/plans).
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

@@ -13,7 +13,7 @@ ms.date: 09/29/2017
 
 # About work items 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use work items to track anything you need to track. 
 

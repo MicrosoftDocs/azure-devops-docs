@@ -26,7 +26,7 @@ If you are designing a work item form from the ground up, you might want to add 
 
 ```  
 <Tab Label="Attachments">  
-   <Control Type="AttachmentsControl" LabelPosition="Top" />  
+      <Control Type="AttachmentsControl" LabelPosition="Top" />  
 </Tab>  
 ```  
   

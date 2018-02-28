@@ -204,9 +204,9 @@ Open a web portal and [determine if all features are available to you](../new-fe
     ```  
     <?xml version="1.0" encoding="utf-16"?  
     <BugFilerMappings workitemtypetocreate="Bug">  
-       <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-       <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-       <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
+          <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
+          <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
+          <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
     </BugFilerMappings>  
     ```  
   

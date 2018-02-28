@@ -11,7 +11,7 @@ ms.date: 03/28/2017
 
 # TFS-Office integration issues
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you don't see the Team ribbon in Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this topic. 
 

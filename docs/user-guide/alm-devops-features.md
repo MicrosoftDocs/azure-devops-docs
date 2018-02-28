@@ -1163,7 +1163,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Release definitions</b></p>
-<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/actions/create-deploy-releases.md).</p>
+<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/apps/cd/deploy-webdeploy-webapps.md).</p>
 
 
 <p><b>Release environments</b></p>
@@ -1189,10 +1189,10 @@ build-release\tasks\build\_img
 <p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/approvals/index.md) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
-<p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](../build-release/actions/view-manage-releases.md#send-email). </p>
+<p>Receive email messages as releases occur. Approvers receive notifications automatically when a release is waiting for approval. </p>
 
 <p><b>Full traceability</b></p>
-<p>[Monitor the status of your release pipelines and track every deployment in each of the environments](../build-release/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>Monitor the status of your release pipelines and track every deployment in each of the environments. Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
 <p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments).</p>
@@ -1213,7 +1213,7 @@ build-release\tasks\build\_img
 <p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../build-release/concepts/definitions/release/variables.md).</p>
 
 <p><b>View test results</b></p>
-<p>[Open the **Tests** tab](../build-release/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
+<p>Open the **Tests** tab to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
 ![View test results for a release](_img/features/devops-feature-release-view-tests.png)
 <br />
 
@@ -2729,7 +2729,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Determine who [changed what in the build definition and when they did it](../build-release/define/history.md).</p>
 
 <p><b>Release audit history</b></p>
-<p>[Retain full audit history](../build-release/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
 <p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments). </p>
