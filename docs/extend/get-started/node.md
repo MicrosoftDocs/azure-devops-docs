@@ -249,7 +249,7 @@ but without the need to share a set of credentials across a set of users.
 
 After creating a publisher, you can now upload your extension to the marketplace.
 
-1. Find the <b>Upload new extension</b> button, navigate to your packaged .vsix file, and select <i>upload</i>.
+1. From the Visual Studio Marketplace Publishing Portal, select the <b>New extension</b> dropdown and select `Visual Studio Team Services`, either drag and drop packaged .vsix file, or <i>click<i> to browse for file and then upload.
 
 You can also upload your extension via the command line by using the ```tfx extension publish``` command instead of ```tfx extension create```
 to package and publish your extension in one step.
