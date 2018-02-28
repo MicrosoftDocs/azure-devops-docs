@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 
 # Scrum
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 

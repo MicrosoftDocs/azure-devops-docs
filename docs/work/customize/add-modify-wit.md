@@ -11,7 +11,7 @@ ms.date: 02/02/2017
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;used to create the team project. A WIT is the object you use to [track different types of work](../backlogs/add-work-items.md).  
 
@@ -132,7 +132,7 @@ The Agile planning tools&mdash;product backlog, sprint backlog, and task board p
 
 For example, you can add bugs from the product backlog page.
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ![](_img/add-modify-wit-quick-add-panel.png)
 

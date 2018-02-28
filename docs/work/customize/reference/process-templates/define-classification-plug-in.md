@@ -12,13 +12,13 @@ ms.date: 09/08/2017
 
 # Define the classification plug-in
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
   
 The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Set project-level area paths](../../set-area-paths.md) and [Set project-level iteration paths](../../set-iteration-paths-sprints.md). You access this page from the administration web portal.  
   
-[!INCLUDE [temp](../../../_shared/image-differences.md)]
+[!INCLUDE [temp](../../../_shared/image-differences.md)]
 
 <img src="../../_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for team project" style="border: 1px solid #C3C3C3;" /> 
 

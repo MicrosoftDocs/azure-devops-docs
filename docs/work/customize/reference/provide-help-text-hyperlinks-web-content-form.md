@@ -25,7 +25,7 @@ By using the form controls that are described in this topic, you can add tooltip
 To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize-work.md). 
  
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../_shared/process-editor.md)]
 
 ##  <a name="HelpTextA"></a> Provide help text or tooltip text  
  You can provide Help text in one of two ways. In the first method, you add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You are limited to 255 characters with this method.  
@@ -40,11 +40,11 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
   
 ```  
 <Control FieldName=" ACME.ACE.ImpactStatement" Type="HTMLControl" Label="Impact" LabelPosition="Left">   
-   <LabelText>  
-      <Text>Provide information about the impact to the ACE organization. Specifically address the following: customer segment, target strategic opportunity, resources required, and time dependencies. For more detailed information, see the Impact Statement specification at:  
-         <Link OpenInNewWindow="true" UrlRoot=http://ACE.ImpactStatement.aspx />  
-      </Text>  
-   </LabelText>  
+      <LabelText>  
+      <Text>Provide information about the impact to the ACE organization. Specifically address the following: customer segment, target strategic opportunity, resources required, and time dependencies. For more detailed information, see the Impact Statement specification at:  
+         <Link OpenInNewWindow="true" UrlRoot=http://ACE.ImpactStatement.aspx />  
+      </Text>  
+      </LabelText>  
 </Control>  
   
 ```  
@@ -64,12 +64,12 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
   
 ```  
 <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
-   <LabelText>  
-      <Text>  
-         <Link UrlRoot="http://www.live.com/" />  
-            Title 2  
-      </Text>  
-   </LabelText>  
+      <LabelText>  
+      <Text>  
+         <Link UrlRoot="http://www.live.com/" />  
+               Title 2  
+      </Text>  
+      </LabelText>  
 </Control>  
 ```  
   
@@ -81,14 +81,14 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
   
 ```  
 <Control Type="FieldControl" FieldName="System.IterationPath">  
-   <LabelText LabelPosition="Left">  
-      <Text>  
-         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">  
-            <Param Index="0" vValue"System.WorkItemType"/>         </Link>  
-            Iteration Path  
-      </Text>  
-      <Text> (must be 3 levels deep)</Text>  
-   </LabelText>  
+      <LabelText LabelPosition="Left">  
+      <Text>  
+         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">  
+               <Param Index="0" vValue"System.WorkItemType"/>         </Link>  
+               Iteration Path  
+      </Text>  
+      <Text> (must be 3 levels deep)</Text>  
+      </LabelText>  
 </Control>  
 ```  
   
@@ -100,12 +100,12 @@ Hyperlink Text Label
   
 ```  
 <Group>  
-   <Column PercentWidth="100">  
-      <!-- Standalone label control 2 -->  
-      <Control Type="LabelControl" Label="How do I use this work item?">  
-         <Link UrlRoot="http://www.live.com"></Link>  
-      </Control>  
-   </Column>  
+      <Column PercentWidth="100">  
+      <!-- Standalone label control 2 -->  
+      <Control Type="LabelControl" Label="How do I use this work item?">  
+         <Link UrlRoot="http://www.live.com"></Link>  
+      </Control>  
+      </Column>  
 </Group>  
 ```  
   
@@ -117,22 +117,22 @@ Combining Text and Hyperlinks in a Single Label
   
 ```  
 <Group>  
-   <Column PercentWidth="100">  
-   <!-- Standalone label control 3 -->  
-      <Control Type="LabelControl" Name="Microsoft.VSTS.Common.GuidanceLabel3">  
-         <LabelText>  
-            <Text>Click here for </Text>  
-            <Text>  
-               <Link UrlRoot="http://www.msn.com"></Link>  
-               work item guidance</Text>  
-            <Text> or here for </Text>  
-            <Text>  
-               <Link UrlRoot="http://www.msdn.com"></Link>  
-               process guidance  
-            </Text>  
-         </LabelText>  
-      </Control>  
-   </Column>  
+      <Column PercentWidth="100">  
+      <!-- Standalone label control 3 -->  
+      <Control Type="LabelControl" Name="Microsoft.VSTS.Common.GuidanceLabel3">  
+         <LabelText>  
+               <Text>Click here for </Text>  
+               <Text>  
+               <Link UrlRoot="http://www.msn.com"></Link>  
+               work item guidance</Text>  
+               <Text> or here for </Text>  
+               <Text>  
+               <Link UrlRoot="http://www.msdn.com"></Link>  
+               process guidance  
+               </Text>  
+         </LabelText>  
+      </Control>  
+      </Column>  
 </Group>  
 ```  
   
@@ -141,8 +141,8 @@ Combining Text and Hyperlinks in a Single Label
   
 ```  
 <Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">  
-   <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>  
-   </Link>  
+      <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>  
+      </Link>  
 </Control>  
 ```  
   
@@ -154,15 +154,15 @@ Combining Text and Hyperlinks in a Single Label
   
 ```  
 <Tab Label="Web">  
-   <Group>  
-      <Column PercentWidth="100">  
-         <Control Type="WebpageControl" Name="WssPortalPage" Label="WssPortalPage" LabelPosition="Top" >  
-            <WebpageControlOptions AllowScript="true">  
-               <Link UrlRoot="http://www.msdn.com" />  
-            </WebpageControlOptions>  
-         </Control>  
-      </Column>  
-   </Group>  
+      <Group>  
+      <Column PercentWidth="100">  
+         <Control Type="WebpageControl" Name="WssPortalPage" Label="WssPortalPage" LabelPosition="Top" >  
+               <WebpageControlOptions AllowScript="true">  
+               <Link UrlRoot="http://www.msdn.com" />  
+               </WebpageControlOptions>  
+         </Control>  
+      </Column>  
+      </Group>  
 </Tab>  
 ```  
   
@@ -171,11 +171,11 @@ Combining Text and Hyperlinks in a Single Label
   
 ```  
 <Control Type="WebpageControl">  
-   <WebpageControlOptions>  
-      <Content>
-        <![CDATA[Place HTML Formatted Content Here ]]>
-      </Content>
-   </WebpageControlOptions>
+      <WebpageControlOptions>  
+      <Content>
+        <![CDATA[Place HTML Formatted Content Here ]]>
+          </Content>
+      </WebpageControlOptions>
 </Control>  
 ```  
   
@@ -187,19 +187,19 @@ Combining Text and Hyperlinks in a Single Label
 . . .  
 <TabGroup>  
 . . .   
-   <Tab Label="Process Guidance">  
-      <Group>  
-         <Column PercentWidth="100">  
-            <Control Type="WebpageControl">  
-              <WebpageControlOptions>  
-                <Content>  
-                  <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
-                </Content>  
-              </WebpageControlOptions>  
-            </Control>  
-         </Column>  
-      </Group>  
-   </Tab>  
+      <Tab Label="Process Guidance">  
+      <Group>  
+         <Column PercentWidth="100">  
+               <Control Type="WebpageControl">  
+                 <WebpageControlOptions>  
+                       <Content>  
+                      �<![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
+              �   </Content>  
+        �         </WebpageControlOptions>  
+               </Control>  
+         </Column>  
+      </Group>  
+      </Tab>  
 . . .  
 </TabGroup>  
 . . .  

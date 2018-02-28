@@ -66,8 +66,8 @@ You add WITs to a category by updating the [Categories definition file](categori
 	> [!div class="tabbedCodeSnippets"]
 	```XML
     <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-       <DEFAULTWORKITEMTYPE name="Bug" />  
-       <WORKITEMTYPE name="Performance Bug" />  
+          <DEFAULTWORKITEMTYPE name="Bug" />  
+          <WORKITEMTYPE name="Performance Bug" />  
     </CATEGORY>  
     ```  
   
@@ -94,12 +94,12 @@ You add WITs to a category by updating the [Categories definition file](categori
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <BugWorkItems category="Microsoft.BugCategory">  
-       <States>  
-          <State value="Active" type="InProgress" />  
-          <State value="Investigating" type="InProgress" />  
-          <State value="Resolved" type="Resolved" />  
-          <State value="Closed" type="Complete" />  
-       </States>  
+          <States>  
+          <State value="Active" type="InProgress" />  
+          <State value="Investigating" type="InProgress" />  
+          <State value="Resolved" type="Resolved" />  
+          <State value="Closed" type="Complete" />  
+          </States>  
     </BugWorkItems>  
     ```  
   

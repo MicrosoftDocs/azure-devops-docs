@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Storyboard your ideas using PowerPoint
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
 
@@ -22,7 +22,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
 
 	>[!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 

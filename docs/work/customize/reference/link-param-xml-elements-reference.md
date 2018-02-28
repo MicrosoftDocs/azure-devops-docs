@@ -29,7 +29,7 @@ The `Link` element is either a child element of the `Control` element, or a chil
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">  
-   <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
+      <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
 </Link>  
 ```  
   

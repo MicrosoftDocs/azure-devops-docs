@@ -11,7 +11,7 @@ ms.date: 09/21/2017
 
 # Customization  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you work in VSTS, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 

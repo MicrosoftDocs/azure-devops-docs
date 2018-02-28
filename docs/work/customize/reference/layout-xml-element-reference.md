@@ -31,10 +31,10 @@ The **Layout** element is a required child element of the **FORM** element. For 
 ```XML 
 <Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"   
 Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">  
-    <Group> . . . </Group>  
-    <Control> . . . </Control>  
-    <TabGroup> . . . </TabGroup>  
-    <Splitter> . . . </Splitter>  
+       <Group> . . . </Group>  
+       <Control> . . . </Control>  
+       <TabGroup> . . . </TabGroup>  
+       <Splitter> . . . </Splitter>  
 </Layout >  
 ```  
   

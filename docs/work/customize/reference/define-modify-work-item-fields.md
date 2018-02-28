@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Field data types and attributes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a team project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
@@ -36,7 +36,7 @@ The following list shows the supported data types:
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attribute. </p>
 
-<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>      
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>
 
 </td></tr>
 <tr>
@@ -123,7 +123,7 @@ As the following table describes, you can assign one of the following values to 
 
 |Attribute value|Description|
 |---|---|
-| **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br /><br />The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
+| **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br /><br />The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
 | **Dimension** |Use the **Dimension** type only for Integer, String, or DateTime fields.<br /><br />The data in this field enters the relational warehouse database and the Analysis Services cube as an attribute of the Work Item dimension so that the data can be used to filter reports. Use this type for fields that have lists of valid values. Work Item Type and State are good examples of a dimension.|
 | **Measure** |Use the **Measure** type only for Integer and Double fields. Measures are the numeric values in your reports.<br /><br />During processing of the Analysis Services cube, data is precalculated on fields that are set to **Measure**. For example, the Work Item and Current Work Item measure groups contain cumulative data for the following fields: Original Estimate, Remaining Hours, and Completed Hours. For more information about measure groups, see [Perspectives and measure groups provided in the Analysis Services cube](../../../report/sql-reports/perspective-measure-groups-cube.md).<br /><br />When you specify **Measure**, you must specify **sum** for the **formula** attribute, which returns the sum of each measure referenced in the query.|
 | **None** |Specify **None** when you do not want to include the field in reports. This value is the default assignment.|

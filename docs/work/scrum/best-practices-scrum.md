@@ -12,7 +12,7 @@ ms.date: 08/02/2017
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 
@@ -147,7 +147,7 @@ This response conveys what was accomplished, what will be accomplished, and that
 
 Contrast with this next example:  
 
->*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
+>*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
 
 Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
 

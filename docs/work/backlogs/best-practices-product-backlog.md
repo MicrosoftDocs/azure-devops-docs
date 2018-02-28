@@ -12,7 +12,7 @@ ms.date: 10/11/2017
 
 # Groom your backlog  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
@@ -74,7 +74,7 @@ Agile teams work together. And by working together, they create better software.
 <p>&mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
 blog post: [Agile Tip #5 – Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)</p> 
 
-</blockquote>  
+</blockquote>&nbsp;&nbsp;�
 
 <a id="groom">  </a>
 ## Refine your backlog
