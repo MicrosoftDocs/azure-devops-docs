@@ -19,7 +19,7 @@ Supports the following FWLINK: Learn more about these configuration changes: htt
 
 >[!NOTE]  
 <b>Feature availability: </b>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
-  
+  
 The Configure Features Wizard detects which features have and haven't been configured. Most new features include additions or changes to work item types (WITs), categories, or process configuration. New features are introduced with different updates to Team Foundation Server (TFS).  
 
 

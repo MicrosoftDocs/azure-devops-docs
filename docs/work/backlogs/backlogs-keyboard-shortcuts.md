@@ -16,7 +16,7 @@ ms.date: 01/18/2017
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
   
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)] 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)] 
 
 
 ## Related notes

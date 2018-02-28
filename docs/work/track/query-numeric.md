@@ -12,7 +12,7 @@ ms.date: 02/05/2018
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -341,4 +341,4 @@ Also, you can add custom work item types to a backlog. For details, see [Add or 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

@@ -11,7 +11,7 @@ ms.date: 06/16/2017
 
 # All FIELD XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Use this topic to look up the syntax of the `FIELD` element or one of its child elements.  
   
@@ -30,26 +30,26 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
 <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"  
 syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
 reportable="Dimension | Detail | Measure" formula="avg" >  
-   <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-   <ALLOWEXISTINGVALUE />  
-   <CANNOTLOSEVALUE />  
-   <COPY />  
-   <DEFAULT />  
-   <EMPTY />  
-   <FROZEN />  
-   <HELPTEXT> . . . </HELPTEXT>  
-   <MATCH />  
-   <NOTSAMEAS />  
-   <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-   <READONLY />  
-   <REQUIRED />  
-   <SERVERDEFAULT />  
-   <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-   <VALIDUSER />  
-   <WHEN>> . . . </WHEN>  
-   <WHENNOT> . . . </WHENNOT>  
-   <WHENCHANGED> . . . </WHENCHANGED>  
-   <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+      <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+      <ALLOWEXISTINGVALUE />  
+      <CANNOTLOSEVALUE />  
+      <COPY />  
+      <DEFAULT />  
+      <EMPTY />  
+      <FROZEN />  
+      <HELPTEXT> . . . </HELPTEXT>  
+      <MATCH />  
+      <NOTSAMEAS />  
+      <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+      <READONLY />  
+      <REQUIRED />  
+      <SERVERDEFAULT />  
+      <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+      <VALIDUSER />  
+      <WHEN>> . . . </WHEN>  
+      <WHENNOT> . . . </WHENNOT>  
+      <WHENCHANGED> . . . </WHENCHANGED>  
+      <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
 </FIELD>  
 ```
   

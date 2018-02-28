@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Control access to functional areas
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can configure the initial security settings for the following functional areas for a team project: 
 - Work item queries

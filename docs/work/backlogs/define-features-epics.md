@@ -12,7 +12,7 @@ ms.date: 05/18/2017
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 

@@ -118,6 +118,8 @@
       href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
   - name: Recover a deleted package
     href: how-to/recover-deleted-package.md
+  - name: Use badges to share your packages
+    href: vsts-package-badges.md
 - name: Reference
   items:
   - name: Collaborate with packages

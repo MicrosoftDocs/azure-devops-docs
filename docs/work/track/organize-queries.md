@@ -13,7 +13,7 @@ ms.date: 09/29/2017
 
 # Organize queries, add a query folder    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders.
  

@@ -11,7 +11,7 @@ ms.date: 10/04/2017
 
 # Agile at Scale  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
 

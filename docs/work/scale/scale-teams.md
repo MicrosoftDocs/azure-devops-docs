@@ -16,7 +16,7 @@ ms.date: 02/05/2018
 <a id="collection-project-team-structure">  </a>
 ## Support a growing organization, manage work across the enterprise
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do you manage work across the enterprise using Agile tools?  How will you scale your Agile tools to support your growing enterprise?  
 

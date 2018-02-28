@@ -21,7 +21,7 @@ Each team project can be provisioned with a wiki. Use it to share information wi
 >[!NOTE]  
 ><b>Feature availability: </b>The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
 
-To access a Wiki or create one, open your web portal and click **Wiki** in the top row (click the ![actions icon](../_img/icons/actions-icon.png) if you don't see this option).
+To access a Wiki or create one, open your web portal and click **Wiki** in the top row (click the ![actions icon](../_img/icons/actions-icon.png) if you don't see this option). 
 
 <img align="top" src="_img/wiki/wiki-pivot.png" alt="Wiki shows as a tab in VSTS" style="border: 1px solid #C3C3C3;" />
 
@@ -38,7 +38,7 @@ The Wiki git repo is referred as *TeamProjectName.wiki*. For example, if your te
 
 ## Don't have access to create git repository?
 
-You need to be a Project Contributor to be able to create a wiki. If you don't have access to create a Wiki git repository, you will see a page as follows.
+You need to be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) in order to see and exercise the **Create Wiki** option. If you don't have access to create a Wiki git repository, you will see a page as follows.
 
 <img align="top" src="_img/wiki/wiki-security-no-contributor.PNG" alt="Unable to create a Wiki repository" style="border: 1px solid #C3C3C3;" />  
 

@@ -12,7 +12,7 @@ ms.date: 12/15/2017
 
 # Add a portfolio backlog level
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
@@ -216,7 +216,7 @@ If you're updating a team project that connects to an on-premises TFS, you'll us
 - Categories.xml (located in the WorkItem Tracking folder)
 - ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
 
-[!INCLUDE [temp](../_shared/process-editor.md)]   
+[!INCLUDE [temp](../_shared/process-editor.md)]   
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 

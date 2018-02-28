@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Individual versus shared queries    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
 

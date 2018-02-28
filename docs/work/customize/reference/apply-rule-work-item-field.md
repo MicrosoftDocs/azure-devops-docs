@@ -35,7 +35,7 @@ Field rules are one component you have to customize work item tracking. To learn
 For information on modifying fields or adding field rules to a WIT definition file, see [Add or modify a field](../add-modify-field.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
 
 <a id="help-text" /> 
 ## Help text
@@ -352,14 +352,14 @@ To avoid validation errors that would otherwise occur when members leave the tea
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
-   <HELPTEXT>The user who is working on this work item</HELPTEXT>
-   <ALLOWEXISTINGVALUE />
-   <VALIDUSER />
-   <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
-      <LISTITEM value="Active" />
-      <LISTITEM value="[project]\Contributors" />
-   </ALLOWEDVALUES>
-   <DEFAULT from="field" field="System.CreatedBy" />
+      <HELPTEXT>The user who is working on this work item</HELPTEXT>
+      <ALLOWEXISTINGVALUE />
+      <VALIDUSER />
+      <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+      <LISTITEM value="Active" />
+      <LISTITEM value="[project]\Contributors" />
+      </ALLOWEDVALUES>
+      <DEFAULT from="field" field="System.CreatedBy" />
 </FIELD>
 ```
 
@@ -386,7 +386,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 -   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  && `
 
     `"Previous State Before Edit/New" == "FromState" `
 
@@ -396,7 +396,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
     `Reason field == "MyReason" &&`
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  && `
 
     `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
 
@@ -405,11 +405,11 @@ The following example restricts modification of the customer severity field when
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <STATE name="Active">
-   <FIELDS>
-      <FIELD refname="MyCorp.Severity" >
-         <READONLY />
-      </FIELD>
-   </FIELDS>
+      <FIELDS>
+      <FIELD refname="MyCorp.Severity" >
+         <READONLY />
+      </FIELD>
+      </FIELDS>
 </STATE>
 ```
 
@@ -420,7 +420,7 @@ Rules are typically processed in the sequence in which they are listed. However,
 
 You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
 
-The following steps show, in the correct sequence, the interactions that TFS performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
+The following steps show, in the correct sequence, the interactions that TFS performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
 1.  From a Team Foundation client&mdash;such as the web portal, Visual Studio, Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
@@ -434,7 +434,7 @@ The following steps show, in the correct sequence, the interactions that TFS per
 
     The system always processes **WHEN** rules before **WHENNOT** rules.
 
-6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
+6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
 
 7.  Allow the user to start editing.
 

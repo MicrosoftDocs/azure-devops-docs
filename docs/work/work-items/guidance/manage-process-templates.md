@@ -1,33 +1,30 @@
 ---
 title: Upload, download, or delete a process template 
-titleSuffix: VSTS & TFS
+titleSuffix: TFS
 description: Upload, download, delete, or make default a process template for a team project collection 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/02/2017
+ms.date: 02/26/2018
 ---
 
 #Upload or download a process template
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 >[!NOTE]  
-><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. 
+><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From Visual Studio Team Services (VSTS), you can only download process templates.  
 
-When you create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises TFS. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).   
+When you create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a team project or create a team project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
 
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
+>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 >
->If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support).  
-
-
-For a comparison of the default process templates&mdash;Agile, CMMI, and Scrum&mdash;see [Choose a process](choose-process.md).  
+>For TFS 2018 and later version, if you want to use SQL Server Reporting with your on-premises TFS, then you'll have to add support after you create your team project. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 You can upload, download, and delete process templates for a team project collection. Also, you can mark a template to appear as the default when you add team projects. 
 
@@ -35,7 +32,7 @@ You can upload, download, and delete process templates for a team project collec
 
 ## To manage a process template 
 
-1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Visual Studio Community 2015. If you connect to VSTS, choose the latest version supported.  
+1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. If you connect to VSTS, choose the latest version supported.  
 
 	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
@@ -48,6 +45,9 @@ You can upload, download, and delete process templates for a team project collec
 	You'll see a list of each process template that has been uploaded to the team project collection. 
 
 	![Select process template to work with](_img/process-template-manager.png)
+	
+	> [!TIP]   
+	> For a comparison of the default process templates&mdash;Agile, CMMI, and Scrum&mdash;see [Choose a process](choose-process.md).  
 
 	The <b>Upload</b>, <b>Download</b>, <b>Make Default</b>, and <b>Delete</b> buttons are disabled when you don't have the necessary permissions to manage process templates. 
  
@@ -138,7 +138,7 @@ For additional restrictions, see [Naming restrictions](../../../collaborate/nami
 >[!IMPORTANT]  
 >The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. 
 >
->See [Process template plug-ins: Index to XML element definitions](../../customize/reference/process-templates/process-template-plug-ins-xml-elements-index.md).   Â Â 
+>See [Process template plug-ins: Index to XML element definitions](../../customize/reference/process-templates/process-template-plug-ins-xml-elements-index.md).
 
 ## Related notes  
 
