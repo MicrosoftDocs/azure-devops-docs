@@ -12,7 +12,7 @@ ms.date: 10/17/2017
 
 # Add a team administrator 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 <a id="add-team-admin">  </a>  

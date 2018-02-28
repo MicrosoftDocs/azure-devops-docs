@@ -330,9 +330,6 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
 
-To learn more, see [View and manage releases](../../build-release/actions/view-manage-releases.md#release-overview).
-
-
 ---- 
 <a id="release-definition-widget"></a> 
 ### Release definition overview 
@@ -343,7 +340,6 @@ To learn more, see [View and manage releases](../../build-release/actions/view-m
 > **Feature availability:**  You can access this widget from VSTS.   
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
-To learn more, see [Add release information to the dashboard](../../build-release/actions/view-manage-releases.md#add-widget). 
 
 ---- 
 <a id="requirements-quality-widget"></a> 

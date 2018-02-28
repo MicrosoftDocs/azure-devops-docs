@@ -1,21 +1,22 @@
 ---
-title: Rebuild the client cache | VSTS & TFS
+title: Rebuild the client cache
+titleSuffix: TFS  
 description: Update the data cache on client computers after certain maintenance operations.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/14/2017
+ms.date: 02/26/2018
 ---
+
 # Rebuild the client cache
 
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
 
 >[!NOTE]  
->This topic applies to team project customization for the On-premises XML process model. You can't exercise the **witadmin rebuildcache** command against a VSTS account.   <br/><br/>
->For an overview of what features are supported for all three process models, see [Customize your work tracking experience](../../customize-work.md).  
+>This topic applies to team project customization for the On-premises XML process model. For an overview of what features are supported for all three process models, see [Customize your work tracking experience](../../customize-work.md).  
 
 You can force a rebuild of the cache on each client computer the next time it connects to a team project collection by using the **witadmin rebuildcache** command.  
   
@@ -43,7 +44,7 @@ witadmin rebuildcache /collection:CollectionURL [/noprompt]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or Visual Studio Team Services (VSTS) account. For example:<br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
   

@@ -14,7 +14,7 @@ ms.date: 02/02/2018
 
 # Move, change, or delete work items 
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
@@ -138,8 +138,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
 	To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. 
-	- For VSTS and TFS 2015.2 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default. 
-	- For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.     
+	- For VSTS and TFS 2015.2 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default. 
+	- For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.     
 
 2. Confirm you want to actually delete the item(s).  
 
@@ -207,7 +207,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or VSTS a
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```  
 
 	>[!NOTE] 
-	>**Required permissions:** For VSTS and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
+	>**Required permissions:** For VSTS and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.  &nbsp;&nbsp;�
 
 ---
 
@@ -287,7 +287,7 @@ When you restore a work item, the following actions occur:
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
 3.	Causes all information in the WIT data store and TCM data store to be deleted and cannot be reactivated nor restored. 
 
-<!---  
+<!---&nbsp;&nbsp;�
 
 Adding a comment in the dialog, auto inputs the text into the Discussion control (ready to Save)
 TCM and hidden categories are not supported in move or change type 
@@ -300,6 +300,6 @@ http://vssplatform/integrate/api/wit/reporting-work-item-revisions?branch=origin
 
 <li>To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../security/set-permissions-access-work-tracking.md#move-delete-permissions).</li>
 
---> 
+--> 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

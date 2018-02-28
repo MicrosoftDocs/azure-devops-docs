@@ -30,7 +30,7 @@ The  **LinksControlOptions** element is a child element of the **Control** eleme
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
  
 <blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../../_img/icons/icon-links-tab-wi.png) [Links page](../../work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
-</blockquote>  
+</blockquote>      
 
 ## Summary of what's changed
 
@@ -152,14 +152,14 @@ The following code sample specifies the syntax used to code the Development link
 	  <ListViewOptions GroupLinks="false">
 		</ListViewOptions>
 		<LinkFilters>
-            <ExternalLinkFilter Type="Build" />
-            <ExternalLinkFilter Type="Integrated in build" />
-            <ExternalLinkFilter Type="Pull Request" />
-            <ExternalLinkFilter Type="Branch" />
-            <ExternalLinkFilter Type="Fixed in Commit" />
-            <ExternalLinkFilter Type="Fixed in Changeset" />
-            <ExternalLinkFilter Type="Source Code File" />
-            <ExternalLinkFilter Type="Found in build" />
+               <ExternalLinkFilter Type="Build" />
+               <ExternalLinkFilter Type="Integrated in build" />
+               <ExternalLinkFilter Type="Pull Request" />
+               <ExternalLinkFilter Type="Branch" />
+                <ExternalLinkFilter Type="Fixed in Commit" />
+               <ExternalLinkFilter Type="Fixed in Changeset" />
+               <ExternalLinkFilter Type="Source Code File" />
+               <ExternalLinkFilter Type="Found in build" />
 		  </LinkFilters>
 	</LinksControlOptions>
 </Control>

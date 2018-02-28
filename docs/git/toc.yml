@@ -85,8 +85,12 @@
     href: concepts/git-dates.md
   - name: Understand names in Git
     href: concepts/git-names.md
+  - name: Case sensitivity
+    href: concepts/case-sensitivity.md
   - name: Git preferences and settings
     href: concepts/git-config.md
+  - name: Repository settings
+    href: concepts/repository-settings.md
   - name: Scale
     items:
     - name: Manage large files

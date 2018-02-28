@@ -11,7 +11,7 @@ ms.date: 08/15/2017
 
 # Team administrator role and permissions
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 

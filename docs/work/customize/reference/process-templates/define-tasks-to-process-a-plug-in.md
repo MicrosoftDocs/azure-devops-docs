@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Define the tasks to process a plug-in
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 <a name="top"></a> You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new team project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a team project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
   
@@ -23,15 +23,15 @@ ms.date: 09/08/2017
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <tasks>  
-   <task>  
-      <dependencies>  
-        <dependency />  
-        . . .      
-      </dependencies />  
-      <taskXml>  
-        . . .      
-      </taskXml>  
-   <task/>  
+      <task>  
+      <dependencies>  
+        �<dependency />  
+        . . .          
+      </dependencies />  
+      <taskXml>  
+        . . .          
+      </taskXml>  
+      <task/>  
 </tasks>   
 ``` 
 

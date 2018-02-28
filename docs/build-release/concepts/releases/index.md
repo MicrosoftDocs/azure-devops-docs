@@ -45,7 +45,7 @@ Releases (and, in some cases, draft releases) can be created from a release defi
   that creates a release when a new version of the source build artifacts is available.
 
 * By using the **Release** command in the UI to create a release manually from the
-  the [**Releases**](../../actions/create-deploy-releases.md#create-from-release) tab or the [**Builds**](../../actions/create-deploy-releases.md#create-from-build) tab.
+  the Releases or the Builds summary.
 
 * By sending a command over the network to the [REST interface](../../../integrate/index.md).
 
@@ -57,7 +57,7 @@ or immediately start a deployment. For example:
   deployment, until a scheduled day
   and time, or for successful deployment to another environment.
 
-* A deployment started manually from the **[Deploy](../../actions/create-deploy-releases.md#deploy-command)** command in the UI,
+* A deployment started manually from the **[Deploy]** command in the UI,
   or from a network command sent to the [REST interface](../../../integrate/index.md), may
   specify a final target environment other than the last environment in a release pipeline.
   For example, it may specify that the release is deployed only as far as the QA environment
@@ -73,11 +73,5 @@ or immediately start a deployment. For example:
 
 * Approvers may defer the release to an environment until a specified date and time using a
   [scheduled trigger](../definitions/release/triggers.md#env-triggers).
-
-## See also
-
-* [Create and deploy a release](../../actions/create-deploy-releases.md)
-* [View and manage releases](../../actions/view-manage-releases.md)
-* [Work with release definitions](../../actions/work-with-release-definitions.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

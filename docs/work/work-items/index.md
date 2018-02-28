@@ -11,7 +11,7 @@ ms.date: 09/28/2017
 
 # Work Items
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 

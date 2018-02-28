@@ -11,7 +11,7 @@ ms.date: 01/20/2017
 
 # Code review and feedback field reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for VSTS and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  

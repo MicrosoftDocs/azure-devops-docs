@@ -1,13 +1,13 @@
 ---
 title: Import and export process configuration for Agile work tracking tools 
-titleSuffix: VSTS & TFS
-description: Customize the process configuration to modify the display of the Agile planning tool pages that you view through the web portal for VSTS or Team Foundation Server (TFS)
+titleSuffix: TFS
+description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/15/2017  
+ms.date: 02/26/2018
 ---
 
 
@@ -21,7 +21,7 @@ You customize the process configuration to modify the display of the web portal 
 > If you receive error message TF400917, an invalid configuration has occurred. Re-import the process configuration file to your team project using **witadmin importprocessconfig**. You'll get the messages you need to resolve the error.  
   
 To manage the process configuration for a team project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../process-configuration-xml-element.md).   
--   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window. (can run against VSTS)    
+-   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
   
 [!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)]
@@ -46,7 +46,7 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURLx`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURLx`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/p**:`ProjectName`|Required. Specifies the team project for which you want to export or import the process configuration. This team project must be defined in the collection that you specified by using the /collection parameter. You do not need to specify a team project when you specify the `/v` switch.|  
 |**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br /> **Note:** If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft website: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.|  
@@ -96,10 +96,10 @@ The panel only displays fields that are included in the `FIELDS` section of the 
   
     ```  
     <AddPanel>  
-       <Fields>  
-          <Field refname="System.Title" />  
-          <Field refname="Microsoft.VSTS.Common.BusinessValue" />  
-       </Fields>  
+       <Fields>  
+          <Field refname="System.Title" />  
+          <Field refname="Microsoft.VSTS.Common.BusinessValue" />  
+       </Fields>  
     </AddPanel>  
     ```  
   

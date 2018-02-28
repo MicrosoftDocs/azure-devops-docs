@@ -14,7 +14,7 @@ ms.date: 08/02/2017
 
 # On-premises XML process model 
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 
 > [!NOTE]   

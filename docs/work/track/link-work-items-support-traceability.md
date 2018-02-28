@@ -11,7 +11,7 @@ ms.date: 04/03/2017
 
 # Link work items to support traceability and manage dependencies  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 
@@ -49,7 +49,7 @@ As a quick reference guide, use the following link types as indicated:
 
 For additional guidance on choosing link types, review the [Link type descriptions and guidance](#link-type-guidance) in the related notes section. 
 
-You can create links from within a work item form, from a work item that appears in a list of query results, in Microsoft Excel, or in Microsoft Project. You can also use any of the client programs for Team Foundation, such as Team Explorer and the web portal, to create links or attach files.
+You can create links from within a work item form, from a work item that appears in a list of query results, in Microsoft Excel, or in Microsoft Project. You can also use any of the client programs for Team Foundation, such as Team Explorer and the web portal, to create links or attach files.
 
 Also, you can use the context menu in the web portal or Team Explorer.
 
@@ -282,7 +282,7 @@ Use this directional link to create one-to-many relationships between a single p
 </td>
 <td><p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Typically used to track work that must be completed prior to beginning work on predecessor items.</p>
 <ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same team project.<br />
-You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the team project for which the query is defined are imported into the Team Foundation client.</p></li></ul> </td>
+You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the team project for which the query is defined are imported into the Team Foundation client.</p></li></ul> </td>
 </tr>
 
 </tr>

@@ -16,6 +16,9 @@ Git has a set of configuration files that define any non-default behavior that y
 You can specify your name and email address, your preferred diff and merge tools, command aliases, formatting, and much more. 
 These files allow you to personalize and customize Git to optimize your workflow.
 
+This topic covers client-side Git preferences.
+You may also want to learn about server-side [repository settings](repository-settings.md).
+
 ## Files and order of precedence
 
 There are four files which are used to set configuration options. These files are read from widest to most narrow scope with the last file taking precedence over previously read files. 
