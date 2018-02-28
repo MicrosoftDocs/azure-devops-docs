@@ -91,7 +91,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 				}
 			],
 		"icons": {
-			"default": "images/logo.png"
+			"default": "images/icon.png"
 		 },
 		"contributions": [
 			{
@@ -122,7 +122,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 				"path": "sdk/scripts", "addressable": true
 			},
 			{
-				"path": "images/logo.png", "addressable": true
+				"path": "images/icon.png", "addressable": true
 			}
 		]
 	}
@@ -157,7 +157,7 @@ In this case, we need `vso.work` to access work items.
 ### Files
 The **files** stanza states the files that you want to include in your package.
 
-For a hub, you'll add your HTML page, your scripts (not used in this tutorial, but should still be added), the SDK script, and your logo.
+For a hub, you'll add your HTML page, your scripts (not used in this tutorial, but should still be added), the SDK script, and your icon.
 Set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 
 >[!NOTE]
@@ -187,7 +187,7 @@ Copy the following contents, a simple html page that also references the SDK and
 </html>
 ```
 
-## Your extension's logo: `icon.png`
+## Your extension's icon: `icon.png`
 Add a square image in the ```images``` folder that identifies your extension.
 We'll display it in the Marketplace, and when someone installs your extension. The icon image needs to be atleast 128x128 pixels in size before an extension can be made available publicly on the Marketplace.
 
@@ -247,9 +247,13 @@ but without the need to share a set of credentials across a set of users.
 
 #### Upload your extension
 
-After creating a publisher, you can now upload your extension to the marketplace.
+After creating a publisher, you can now upload your extension to the Marketplace.
 
-1. Find the <b>Upload new extension</b> button, navigate to your packaged .vsix file, and select <i>upload</i>.
+1. From the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage), select **+ New extension** and choose _Visual Studio Team Services_
+
+	![Upload new extension for VSTS or TFS](_img/upload-new-extension.png)
+
+2. You can either Drag and Drop or click to browse for your package's **.vsix** file and select **Upload**.
 
 You can also upload your extension via the command line by using the ```tfx extension publish``` command instead of ```tfx extension create```
 to package and publish your extension in one step.
