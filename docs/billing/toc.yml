@@ -58,7 +58,7 @@
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: Billing signup
+  - name: Billing set up
     href: faq-billing-setup.md
   - name: Pay for more Basic users
     href: faq-pay-for-basic-users.md
@@ -92,7 +92,7 @@
     items:
     - name: Buy Visual Studio cloud subscriptions
       href: vs-subscriptions/buy-vs-subscriptions.md
-    - name: Assign and Manage Visual Studio cloud subscriptions
+    - name: Assign and manage Visual Studio cloud subscriptions
       href: vs-subscriptions/manage-vs-subscriptions.md
-    - name: Troubleshooting Visual Studio subscriptions
+    - name: Troubleshoot Visual Studio subscriptions
       href: faq-vs-subscriptions.md
