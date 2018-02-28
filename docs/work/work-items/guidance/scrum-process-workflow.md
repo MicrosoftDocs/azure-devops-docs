@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -19,7 +19,7 @@ To plan a software project and track software defects using Scrum, teams use the
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
 
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
 ## Define PBIs and bugs  
 
@@ -160,7 +160,7 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
 
 ## Related notes

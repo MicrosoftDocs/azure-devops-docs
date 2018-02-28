@@ -12,7 +12,7 @@ ms.date: 02/14/2018
 
 # LinkTypes elements reference 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 >[!IMPORTANT]  
 >This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
@@ -43,7 +43,7 @@ You can define valid link types for use in your process based on the structure t
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <LinkTypes>  
-   <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
+      <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
 </LinkTypes>  
 ```  
 

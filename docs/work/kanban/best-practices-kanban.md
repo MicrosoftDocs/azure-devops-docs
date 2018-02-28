@@ -11,7 +11,7 @@ ms.date: 10/20/2017
 
 # Kanban best practices
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Having worked through the four configuration steps provided in [Kanban basics](../kanban/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.

@@ -12,7 +12,7 @@ ms.date: 12/15/2017
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 100 or more data fields, based on the process&#151;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -76,9 +76,9 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 
 ```
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
- <DEFAULT from="value" value="False" />
-        <HELPTEXT>Triage work item</HELPTEXT>
-      </FIELD>
+ <DEFAULT from="value" value="False" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <HELPTEXT>Triage work item</HELPTEXT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;� </FIELD>
 ```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
@@ -170,7 +170,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
     The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
 
 	```
-	<FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
+	<FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
 	   <ALLOWEDVALUES>
 	      <LISTITEM value="Customer" />
 	      <LISTITEM value="Executive Management" />
@@ -191,14 +191,14 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
     For example, the following code snippet adds the Requestor field to appear below the Reason field on the work item form.
 	```
 	<Column PercentWidth="50">
-	   <Group Label="Status">
-	      <Column PercentWidth="100">
-	         <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
-	         <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
-	         <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
-	         <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
-	      </Column>
-	   </Group>
+	&nbsp;&nbsp;&nbsp;<Group Label="Status">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>
+	&nbsp;&nbsp;&nbsp;</Group>
 	</Column>
 	```
 
@@ -269,9 +269,9 @@ The most efficient way to apply security restrictions is to create custom groups
     For example, the following code snippet can be added to the Task definition to limit the set of users for the Assigned To field to only those team members added to the TFS Team Task Group.
 
         <FIELD name="Assigned To" refname="System.AssignedTo" type="String" reportable="dimension" syncnamechanges="true">
-           <HELPTEXT>The person currently working on this task</HELPTEXT>
-           <ALLOWEXISTINGVALUE />
-           <VALIDUSER group="Team Contributors" />
+        &nbsp;&nbsp;&nbsp;<HELPTEXT>The person currently working on this task</HELPTEXT>
+        &nbsp;&nbsp;&nbsp;<ALLOWEXISTINGVALUE />
+        &nbsp;&nbsp;&nbsp;<VALIDUSER group="Team Contributors" />
         </FIELD>
 
     By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.

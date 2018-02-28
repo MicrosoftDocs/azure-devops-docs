@@ -83,10 +83,10 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
     ```  
     <FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum">  
-       <HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>  
+    &nbsp;&nbsp;&nbsp;<HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>  
     </FIELD>  
     <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  
-       <HELPTEXT>Initial value for Remaining Work - set once, when work begins. </HELPTEXT>  
+    &nbsp;&nbsp;&nbsp;<HELPTEXT>Initial value for Remaining Work - set once, when work begins. </HELPTEXT>  
     </FIELD>  
     ```  
   
@@ -154,12 +154,12 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 ```  
 <field tfsName="MyCompany.MyOrg.DevTeamName" tfsMirrorName="Mirror.MyCompany.MyOrg.DevTeamName" displayTfsField="false" displayTfsMirror="false" onConflict="DoNothing">  
-   <tfsToTarget>  
-   <target provider="ProjectServerStatusQueue" name=" My Company Team Name" />  
-   </tfsToTarget>  
-   <targetToTfs>  
-      <target provider="ProjectServerPublished" name=" My Company Team Name" />  
-   </targetToTfs>  
+&nbsp;&nbsp;&nbsp;<tfsToTarget>  
+&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name=" My Company Team Name" />  
+&nbsp;&nbsp;&nbsp;</tfsToTarget>  
+&nbsp;&nbsp;&nbsp;<targetToTfs>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerPublished" name=" My Company Team Name" />  
+&nbsp;&nbsp;&nbsp;</targetToTfs>  
 </field>  
 ```  
   
@@ -185,21 +185,21 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
     ```  
     <field tfsName="System.AreaPath" tfsMirrorName="Mirror.System.AreaPath" displayTfsField="true" displayTfsMirror="true">  
-            <tfsToTarget>  
-              <target provider="ProjectServerStatusQueue" name="Area (TFS)" />  
-            </tfsToTarget>  
-            <targetToTfs>  
-              <target provider="ProjectServerPublished" name="Area (TFS)" />  
-            </targetToTfs>  
-          </field>  
-          <field tfsName="System.IterationPath" tfsMirrorName="Mirror.System.IterationPath" displayTfsField="true" displayTfsMirror="true">  
-            <tfsToTarget>  
-              <target provider="ProjectServerStatusQueue" name="Iteration (TFS)" />  
-            </tfsToTarget>  
-            <targetToTfs>  
-              <target provider="ProjectServerPublished" name="Iteration (TFS)" />  
-            </targetToTfs>  
-          </field>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <tfsToTarget>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerStatusQueue" name="Area (TFS)" />  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </tfsToTarget>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <targetToTfs>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerPublished" name="Area (TFS)" />  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </targetToTfs>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;� </field>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;� <field tfsName="System.IterationPath" tfsMirrorName="Mirror.System.IterationPath" displayTfsField="true" displayTfsMirror="true">  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <tfsToTarget>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;�<target provider="ProjectServerStatusQueue" name="Iteration (TFS)" />  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </tfsToTarget>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <targetToTfs>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerPublished" name="Iteration (TFS)" />  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </targetToTfs>  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;� </field>  
   
     ```  
   

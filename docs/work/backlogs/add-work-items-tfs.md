@@ -54,14 +54,14 @@ As work progresses, team members can update the state and reassign it as needed.
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a product backlog item in the default state, New.</li>
 <li>Change the state from New to Approved.</li>
 <li>Change the state from Approved to Committed.</li>
 <li>Change the state from Committed to Done.</li>
 </ul>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
