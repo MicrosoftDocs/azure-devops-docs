@@ -31,7 +31,7 @@ The Web content that you display can be specified in one of the following ways:
 For information about the syntax structure of the elements used to add Web content to a work item type (WIT), see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md) and [Link and Param](link-param-xml-elements-reference.md).  
   
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
   
   
 <a name="Export"></a> 
@@ -60,10 +60,10 @@ For information about the syntax structure of the elements used to add Web conte
   
     ```  
     <Tab Label="Links">  
-      <Control Type="LinksControl" />  
+          <Control Type="LinksControl" />  
     </Tab>  
     <Tab Label="File Attachments">  
-      <Control Type="AttachmentsControl" />  
+          <Control Type="AttachmentsControl" />  
     </Tab>  
     ```  
   
@@ -73,15 +73,15 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                    <WebpageControlOptions AllowScript="false">  
-                       <Link UrlRoot="URL of Web Page" />  
-                    </WebpageControlOptions>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
+                       <WebpageControlOptions AllowScript="false">  
+                       <Link UrlRoot="URL of Web Page" />  
+                       </WebpageControlOptions>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   
@@ -91,19 +91,19 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                    <WebpageControlOptions AllowScript="false">  
-                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
-              <Param Index="0" Value="Param Value 0"/>  
-              <Param Index="1" Value="Param Value 1"/>  
-              <Param Index="2" Value="Param Value 2"/>  
-                       </Link>  
-                    </WebpageControlOptions>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
+                       <WebpageControlOptions AllowScript="false">  
+                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
+              <Param Index="0" Value="Param Value 0"/>  
+              <Param Index="1" Value="Param Value 1"/>  
+              <Param Index="2" Value="Param Value 2"/>  
+                       </Link>  
+                       </WebpageControlOptions>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   
@@ -113,15 +113,15 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl">  
-                    <Content>  
-                       <![CDATA[HTML Content]]>  
-                    </Content>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl">  
+                       <Content>  
+                       <![CDATA[HTML Content]]>  
+                       </Content>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   

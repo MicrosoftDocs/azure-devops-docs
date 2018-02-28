@@ -13,7 +13,7 @@ ms.date: 12/15/2017
 
 # Upload or download the Microsoft Project Mapping file
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
   
 Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a team project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
   

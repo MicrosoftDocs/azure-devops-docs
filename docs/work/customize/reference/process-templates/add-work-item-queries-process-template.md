@@ -12,7 +12,7 @@ ms.date: 02/24/2017
 
 # Add work item queries to a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By adding work item queries to your process template, you can define the initial set of shared queries and query folder structure for a team project. All team members use queries to find the bugs, tasks, and other work items on which they must take action.  
   
@@ -39,7 +39,7 @@ By adding work item queries to your process template, you can define the initial
 <TeamFoundationServer>collectionURL</TeamFoundationServer>  
 <TeamProject>TeamProjectName</TeamProject>  
   <Wiql>  
-      WorkItemQueryLanguage  
+      WorkItemQueryLanguage  
   </Wiql>  
 </WorkItemQuery>  
 ```  
@@ -68,7 +68,7 @@ By adding work item queries to your process template, you can define the initial
    <taskXml>  
       <QUERIES>  
          <QueryFolder name="Product Management" >  
-            <Query name="All User Stories" fileName="WorkItem Tracking\Queries\AllUserStories.wiq" />  
+               <Query name="All User Stories" fileName="WorkItem Tracking\Queries\AllUserStories.wiq" />  
          </QueryFolder>  
          . . .  
       </QUERIES>  
@@ -85,10 +85,10 @@ By adding work item queries to your process template, you can define the initial
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <QUERIES>  
-   <Permission />  
-   <QueryFolder >  
-      <Query />  
-   </QueryFolder>  
+      <Permission />  
+      <QueryFolder >  
+      <Query />  
+      </QueryFolder>  
 </QUERIES>  
 ```  
   
@@ -98,13 +98,13 @@ By adding work item queries to your process template, you can define the initial
 |-------------|------------| 
 |**Permission**|Optional child element of **Query**. Specifies the default permissions that are assigned to shared queries. For more information, see [Assign permissions for work item queries](control-access-to-functional-areas.md#Queries).<br />`<permission allow="ListOfPermissions" identity="GroupName" />` |  
 |**Query**|Required child element of **QUERIES**. Specifies the name and the path of the .wiq file that defines a query to upload.<br />`<Query name="QueryName" fileName="QueryFilePathName" />`<br /><br /> As the following example shows, you can upload the query that is labeled “Active Bugs? and that is defined in the ActiveBugs.wiq file:<br /><br />```<Query name="Active Bugs" fileName="WorkItem Tracking\Queries\ActiveBugs.wiq" />```<br /> |  
-|**QueryFolder**|Optional child element of **QUERIES**. Specifies the name of a query folder.<br/><code>&lt;QueryFolder name="FolderName"&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;Query /&gt; <br/>&lt;/QueryFolder&gt; </code> |  
-|**QUERIES**|Optional child element of the **taskXml** element for the WorkItemTracking plug-in. Specifies which query definition files to use to create default queries.<br/><code>&lt;QUERIES&gt; <br/>&nbsp;&nbsp;&nbsp; . . . <br/>&lt;/QUERIES&gt; </code> |  
+|**QueryFolder**|Optional child element of **QUERIES**. Specifies the name of a query folder.<br/><code>&lt;QueryFolder name="FolderName"&gt; <br/>      &lt;Query /&gt; <br/>&lt;/QueryFolder&gt; </code> |  
+|**QUERIES**|Optional child element of the **taskXml** element for the WorkItemTracking plug-in. Specifies which query definition files to use to create default queries.<br/><code>&lt;QUERIES&gt; <br/>       . . . <br/>&lt;/QUERIES&gt; </code> |  
   
-<br/><code>&lt;QueryFolder name="FolderName"&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;Query /&gt; <br/>&lt;/QueryFolder&gt; </code> 
+<br/><code>&lt;QueryFolder name="FolderName"&gt; <br/>      &lt;Query /&gt; <br/>&lt;/QueryFolder&gt; </code> 
 
 
-<br/><code>&lt;QUERIES&gt; <br/>&nbsp;&nbsp;&nbsp; . . . <br/>&lt;/QUERIES&gt; </code> 
+<br/><code>&lt;QUERIES&gt; <br/>       . . . <br/>&lt;/QUERIES&gt; </code> 
 
 
 ## Related notes

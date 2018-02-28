@@ -12,7 +12,7 @@ ms.date: 07/21/2017
 
 # Create your backlog and tasks using Project 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
@@ -41,7 +41,7 @@ Use this topic to learn how to:
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	>[!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -82,7 +82,7 @@ Use this topic to learn how to:
 
     ![Assign resources in project defined in TFS and AD](_img/create-your-backlog-tasks-using-project/IC658313.png)
 
-    >**Tip:**   Although Project supports allocation of more than one resource to a task, TFS does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a TFS team member as a resource to those tasks that you will publish.
+    >**Tip:**   Although Project supports allocation of more than one resource to a task, TFS does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a TFS team member as a resource to those tasks that you will publish.
     >  
     >Specify resources by their display names from Active Directory Domain Services (AD DS). If you assign a resource by its alias or other name, you risk incurring validation errors.
 
@@ -138,14 +138,14 @@ You can manage your project plan using Project and all the features that Project
 <p>Start and finish dates for autoscheduled tasks (<img src="_img/create-your-backlog-tasks-using-project/IC413651.png" title="Auto Update Task Mode icon" alt="Auto Update Task Mode icon" />) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Use Project to manage and update changes to these fields:</p>
+<li><p>Use Project to manage and update changes to these fields:</p>
 <ul>
 <li><p>Finish Date</p></li>
 <li><p>Start Date</p></li>
 <li><p>Calculated fields for completed and remaining work</p></li>
 </ul>
 <p>Although TFS can store estimated, completed, and remaining work, and start and finish dates, TFS does not recalculate the fields when updates to these fields are made.</p>
-<p>When you publish to TFS, start and finish times are read-only in TFS by default. Project does not download start and finish times when you refresh the plan. </p></li>
+<p>When you publish to TFS, start and finish times are read-only in TFS by default. Project does not download start and finish times when you refresh the plan. </p></li>
 <li><p>If you see that hours are counted twice in reports that contain task hours, <a href="https://msdn.microsoft.com/library/dd997572">correct the problem</a>.</p>
 <p>Project assigns parent tasks the rollup of hours that are assigned to all its child tasks. Rollup hours are not published to TFS to prevent hours within reports from being counted twice. The Microsoft Project mapping file attribute, IfSummaryRefreshOnly, suppresses the hours that are assigned to summary tasks.</p></li>
 </ul></td>
@@ -187,4 +187,4 @@ You can change how Team Foundation fields map to fields in Microsoft Project, an
 
 macOS is not supported. You need to use Project on the same computer where you have installed Visual Studio or the Team Foundation Server Standalone Office Integration 2015 in order to get the Team Foundation add-in. These applications require Windows.
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 

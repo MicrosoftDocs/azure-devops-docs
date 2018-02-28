@@ -19,11 +19,11 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 ## Work hub, Work Items page 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
 ## Work item form shortcuts
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
 
 
 ## Related notes

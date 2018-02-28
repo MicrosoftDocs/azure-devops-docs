@@ -158,7 +158,7 @@ While the management teams you configure can use the Kanban board to monitor fea
 >Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
 
 
 <!---

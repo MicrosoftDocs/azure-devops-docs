@@ -11,7 +11,7 @@ ms.date: 09/08/2017
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a team project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   
@@ -112,22 +112,22 @@ The following table describes the attributes for the **group**, **member**, and 
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <group name="Dream Team" isTeam="true" description="Next generation work">  
-   <permissions>  
-      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
-   </permissions>  
-   <members>  
-      <member name="@creator"/>  
-   </members>  
-   <teamSettings areaPath="Area">  
-      <iterationPaths backlogPath="Iteration">  
-         <iterationPath path="Release 1\Sprint 1" />  
-         <iterationPath path="Release 1\Sprint 2" />  
-         <iterationPath path="Release 1\Sprint 3" />  
-         <iterationPath path="Release 1\Sprint 4" />  
-         <iterationPath path="Release 1\Sprint 5" />  
-         <iterationPath path="Release 1\Sprint 6" />  
-      </iterationPaths>  
-   </teamSettings>  
+      <permissions>  
+      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
+      </permissions>  
+      <members>  
+      <member name="@creator"/>  
+      </members>  
+      <teamSettings areaPath="Area">  
+      <iterationPaths backlogPath="Iteration">  
+         <iterationPath path="Release 1\Sprint 1" />  
+         <iterationPath path="Release 1\Sprint 2" />  
+         <iterationPath path="Release 1\Sprint 3" />  
+         <iterationPath path="Release 1\Sprint 4" />  
+         <iterationPath path="Release 1\Sprint 5" />  
+         <iterationPath path="Release 1\Sprint 6" />  
+      </iterationPaths>  
+      </teamSettings>  
 </group>  
 ```  
   

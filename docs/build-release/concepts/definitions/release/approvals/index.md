@@ -61,8 +61,6 @@ You can, of course, combine all three techniques within a release definition to 
 ## See also
 
 * [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

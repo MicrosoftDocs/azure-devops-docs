@@ -1,18 +1,19 @@
 ---
-title: Customize and manage the test experience | VSTS & TFS
+title: Customize and manage the test experience
+titleSuffix: TFS  
 description: Customize three of the features that are supported - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 ms.manager: douge
-ms.date: 09/08/2017
+ms.date: 02/26/2018
 ---
 
 
 # Customize and manage the test experience
 
-[!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
 
 >[!IMPORTANT]  
@@ -67,9 +68,9 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
 <BugFilerMappings workitemtypetocreate="Bug">  
-   <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-   <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-   <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
+   <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
+   <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
+   <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
 </BugFilerMappings>  
 ```  
   

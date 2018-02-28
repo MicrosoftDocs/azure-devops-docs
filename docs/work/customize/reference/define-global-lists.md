@@ -112,14 +112,14 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <GLOBALLISTS>  
-    <GLOBALLIST name="name of global list">  
-        <LISTITEM value="List item 1" />  
-        <LISTITEM value="List item 2" />  
-        <LISTITEM value="List item 3" />  
-        <LISTITEM value="List item 4" />  
-        . . .  
-        <LISTITEM value="List item n" />  
-    </GLOBALLIST>  
+       <GLOBALLIST name="name of global list">  
+        �<LISTITEM value="List item 1" />  
+        �<LISTITEM value="List item 2" />  
+        �<LISTITEM value="List item 3" />  
+        �<LISTITEM value="List item 4" />  
+        �. . .  
+        �<LISTITEM value="List item n" />  
+       </GLOBALLIST>  
 </GLOBALLISTS>  
 ```  
   
@@ -128,10 +128,10 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <GLOBALLISTS>  
-   <GLOBALLIST name=" name of global list 1" />  
-   <GLOBALLIST name=" name of global list 2" />  
-   . . .  
-   <GLOBALLIST name=" name of global list n" />  
+      <GLOBALLIST name=" name of global list 1" />  
+      <GLOBALLIST name=" name of global list 2" />  
+      . . .  
+      <GLOBALLIST name=" name of global list n" />  
 </GLOBALLISTS>  
 ```  
 
@@ -145,14 +145,14 @@ To add a global list to a project collection, you can import the following synta
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
-    <GLOBALLIST name="NameOfGlobalList">  
-        <LISTITEM value="ListItem1" />  
-        <LISTITEM value="ListItem2" />  
-        <LISTITEM value="ListItem3" />  
-        <LISTITEM value="ListItem4" />  
-        . . .  
-        <LISTITEM value="ListItemN" />  
-    </GLOBALLIST>  
+       <GLOBALLIST name="NameOfGlobalList">  
+        �<LISTITEM value="ListItem1" />  
+        �<LISTITEM value="ListItem2" />  
+        �<LISTITEM value="ListItem3" />  
+        �<LISTITEM value="ListItem4" />  
+        �. . .  
+        �<LISTITEM value="ListItemN" />  
+       </GLOBALLIST>  
 </gl:GLOBALLISTS>  
 ```  
   

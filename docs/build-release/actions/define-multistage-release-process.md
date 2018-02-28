@@ -43,8 +43,6 @@ You'll need:
   - [Build and Deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-  or see [How to: Work with release definitions](work-with-release-definitions.md).
-
 * Two separate targets where you will deploy the app. These could be virtual machines,
   web servers, on-premises physical deployment groups, or other types of deployment target.
   In this example, we are using Azure App Services website instances.

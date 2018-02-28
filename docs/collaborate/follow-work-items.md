@@ -1,13 +1,14 @@
 ---
-title: Follow work or pull requests in VSTS or TFS
-description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services (VSTS)  
+title: Follow work or pull requests
+titleSuffix: VSTS & TFS
+description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services or Team Foundation Server 
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/01/2017  
+ms.date: 02/20/2018  
 ---
 
 # Follow a work item or pull request  
@@ -90,4 +91,6 @@ You can also view and manage work that you're following from the Account home pa
 
 To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
 
- 
+###Q: Can I add someone else to follow a work item or PR?
+
+**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](manage-team-notifications.md).	

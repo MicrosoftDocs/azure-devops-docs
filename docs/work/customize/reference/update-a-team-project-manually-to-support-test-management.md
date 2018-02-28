@@ -72,11 +72,11 @@ The following steps provide support for the test experience available with TFS 2
 		> [!div class="tabbedCodeSnippets"]
 		```XML  
         <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
-            <DEFAULTWORKITEMTYPE name="Test Plan" />  
-          </CATEGORY>  
-          <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
-            <DEFAULTWORKITEMTYPE name="Test Suite" />  
-          </CATEGORY>  
+               <DEFAULTWORKITEMTYPE name="Test Plan" />  
+          </CATEGORY>  
+          <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
+               <DEFAULTWORKITEMTYPE name="Test Suite" />  
+          </CATEGORY>  
         ```  
   
     3.  Add the new WITs to the hidden categories.  

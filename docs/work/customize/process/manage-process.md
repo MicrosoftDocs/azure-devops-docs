@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 10/09/2017
 ---
 
-<!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
+<!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
 
 
 # Manage processes 

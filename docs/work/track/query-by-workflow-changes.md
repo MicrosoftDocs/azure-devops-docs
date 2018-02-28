@@ -11,7 +11,7 @@ ms.date: 02/05/2018
 
 # Query by assignment, workflow or Kanban board changes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board. 
 
@@ -472,4 +472,4 @@ For more query examples, see [Create managed queries](example-queries.md).
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

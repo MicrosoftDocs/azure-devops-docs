@@ -127,4 +127,4 @@ You learned how to:
 > * Use retention policies to clean up your completed build
 
 > [!div class="nextstepaction"]
-> [Work with release definitions](./work-with-release-definitions.md)
+> [Deploy to Azure web app](../apps/cd/deploy-webdeploy-webapps.md)

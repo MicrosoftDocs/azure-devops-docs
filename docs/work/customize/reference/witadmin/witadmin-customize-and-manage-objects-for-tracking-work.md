@@ -1,13 +1,15 @@
 ---
-title: witAdmin:Customize and manage objects for tracking work | VSTS & TFS
+title: witAdmin:Customize and manage objects for tracking work 
+titleSuffix: TFS  
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 02/26/2018
 ---
+
 
 
 # witAdmin: Customize and manage objects for tracking work 
@@ -16,6 +18,10 @@ ms.date: 08/11/2017
 
 You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also permanently delete types of work item types, and you can delete, list, or change the attributes of fields in work item.  
   
+> [!NOTE]   
+> The **witadmin** command-line tool is not supported on Visual Studio Team Services. Instead, you use [inherited processes](../../process/manage-process.md). 
+
+
 As the following illustration shows, you manage categories and types of and work items for each team project. You manage global lists, types of links, and fields in work item for each team project collection. You can customize global workflow for a team project or a collection.  
   
 ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
@@ -42,7 +48,7 @@ For most commands, you must be a member of the Project Administrators or Project
 
 All work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash; are customized by their XML definitions.  
 
-All **witadmin** commands can be run against an on-premises TFS. You can run list and export **witadmin** commands against a VSTS account. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../../customize-work.md). 
+All **witadmin** commands can be run against an on-premises TFS. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../../customize-work.md). 
 
 ##[Work item types](witadmin-import-export-manage-wits.md)
   
@@ -53,19 +59,19 @@ All **witadmin** commands can be run against an on-premises TFS. You can run lis
 - **renamewitd**: Change a WIT display name    
 
 
-##[Fields](manage-work-item-fields.md)</p>
+##[Fields](manage-work-item-fields.md)
 
 - **deletefield**: Delete a field  
 - **listfields**: List field attributes  
 - **indexfield**: Turn field indexing on/off  
 - **changefield**: Change a field attribute   
 
-##[Process configuration](witadmin-import-export-process-configuration.md)</p>
+##[Process configuration](witadmin-import-export-process-configuration.md)
   
 - **exportprocessconfig**: Export the ProcessConfiguration file   
 - **importprocessconfig**: Import the ProcessConfiguration file  
 
-##[Link types](manage-link-types.md)</p>
+##[Link types](manage-link-types.md)<
   
 - **deletelinktype**:  Delete a link type  
 - **exportlinktype**:  Export a link type file   
@@ -74,7 +80,7 @@ All **witadmin** commands can be run against an on-premises TFS. You can run lis
 - **reactivatelinktype**: Reactivate or rename a link type   
 
 
-##[Global lists](manage-global-lists-for-work-item-types.md)</p>
+##[Global lists](manage-global-lists-for-work-item-types.md)
   
 - **destroygloballist**: Delete a global list  
 - **exportgloballist**: Export the global list  
@@ -82,7 +88,7 @@ All **witadmin** commands can be run against an on-premises TFS. You can run lis
 - **listgloballist**: List all global list names   
 
   
-##[Global workflow](witadmin-import-export-global-workflow.md)</p>
+##[Global workflow](witadmin-import-export-global-workflow.md)
 
 - **exportglobalworkflow**: Export the global workflow file  
 - **importglobalworkflow**: Import the global workflow file   
@@ -93,12 +99,12 @@ All **witadmin** commands can be run against an on-premises TFS. You can run lis
 - **witadmin destroywi**: Permanently delete work items    
 
 
-##[Client cache](rebuild-client-cache.md)</p>
+##[Client cache](rebuild-client-cache.md)
   
 - **rebuildcache**: Rebuild the client cache   
 
 
-##[Categories](witadmin-import-export-categories.md)</p>
+##[Categories](witadmin-import-export-categories.md)
   
 - **exportcategories**:  Export the Categories file   
 - **importcategories**:  Import the Categories file      

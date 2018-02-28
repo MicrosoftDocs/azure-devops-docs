@@ -14,7 +14,7 @@ ms.date: 11/16/2017
 
 # Sprint planning
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
 Each sprint corresponds to a time-boxed interval which supports your team's ability to work using Agile processes and tools. 
@@ -216,5 +216,5 @@ If you receive the following message, [you can fix it by removing nested child i
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
 
