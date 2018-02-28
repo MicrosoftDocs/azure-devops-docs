@@ -194,7 +194,7 @@ a maximum of four agents at any one time:
 Use an agentless phase in a build or release definition to run tasks that do
 not require an agent, and execute entirely on the VSTS or TFS.
 Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
-are supported in an agentless phase at present. The properties of
+are supported in an agentless phase at present and only task can be added per agentless phase. The properties of
 an agentless phase are similar to those of the [agent phase](#agent-props).
 
 ![Agentless phase properties](_img/phases-05.png)
