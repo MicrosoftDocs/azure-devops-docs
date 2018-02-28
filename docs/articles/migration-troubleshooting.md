@@ -55,7 +55,6 @@ This warning requires an acknowledgement from the user running the TfsMigrator c
 ```cmdline
 The collections database's collation '{collation}' is not natively supported in VSTS. It could not be validated that the collation can be converted during import to a supported VSTS collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/vstsimportcollations
 ```
-
 If TfsMigrator is unable to make a connection to the internet then it will be unable to validate that your collation can be converted to one of the supported version at import time. It's only a warning, so you will be able to make forward progress on your migration process. However, when you run the prepare command, an internet connection is required and your collation will be validated at that time.
 
 Generally a non-supported collation can be converted to one of the supported collations at import time. However, in extreme cases there are some collations which can't be converted. If your collection uses one of those collations then you will receive the below **error** message. 
@@ -77,7 +76,7 @@ This error indicates that a permission is missing from a system group. System gr
 Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with “**0-0-0-0-3**”, such as in the example below, then you will need to fix a missing permission for the “Project Collection Valid Users” group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
 
 ```cmdline
-TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}*
+TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 In the below example you will need to take the scope and group SID from the error message, and add it the templated command above. 
 

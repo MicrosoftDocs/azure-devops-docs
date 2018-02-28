@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Agile process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a team project using the Agile  process. They are based on Agile principles and values.  
  
@@ -187,7 +187,7 @@ The project administrator for each team project [defines area and iteration path
 </table>
 
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>  
+<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>&nbsp;&nbsp;�
 
 
 #### Find tasks with summary values
@@ -202,7 +202,7 @@ You can use the following Excel workbooks to review open issues and to rank and 
 -   The [Triage workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Bug Triage shared query.
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.  
-</blockquote>  
+</blockquote>&nbsp;&nbsp;�
 
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.

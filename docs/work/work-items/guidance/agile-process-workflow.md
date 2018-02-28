@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -21,7 +21,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]  
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]  
 
 ## Define user stories
 
@@ -91,7 +91,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
@@ -202,7 +202,7 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
 
 ## Related notes

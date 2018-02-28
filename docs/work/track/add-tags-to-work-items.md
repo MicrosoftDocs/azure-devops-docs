@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 
 # Add tags to work items to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -24,7 +24,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 
 >[!NOTE]  
-><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  
+><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  
 
 
 <table width="100%" >
@@ -228,7 +228,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 You can bulk update work items to add or remove tags.
 
 >[!NOTE]  
-><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions.   
+><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions. &nbsp;&nbsp;�
 
 - When connecting to VSTS and TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
@@ -243,7 +243,7 @@ Bulk modify of tags from the Visual Studio client isn't supported.
 
 
 >[!NOTE]  
-><b>Feature availability: </b>To add tags to a query clause, you must work from VSTS and TFS 2013.2 or later versions.  
+><b>Feature availability: </b>To add tags to a query clause, you must work from VSTS and TFS 2013.2 or later versions.  
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 

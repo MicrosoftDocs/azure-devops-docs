@@ -242,7 +242,7 @@ You change the way cards display on the task board the same way you change the K
 ## Add style rules to highlight work items with color 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version.   
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. &nbsp;&nbsp;�
 
 1.	To cause a card on the Kanban board to change color based on criteria you specify, open Styles. Add a styling rule and set the criteria for the rule.  
 

@@ -13,12 +13,16 @@ ms.topic: get-started-article
 
 # Bulk modify work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 <!--- UPDATES REQUIRED FOR MULTI-VERSION  TAGGING -->  
 
-Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value. Use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to update multiple fields with different values. 
+Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
+
+> [!TIP]    
+> To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can perform a bulk add of work items through the web portal.   
+
 
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other team projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
@@ -180,14 +184,14 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 	![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
 
 
-[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
 
 
 <a id="tags"></a>
 ## Bulk modify tags 
  
 >[!NOTE]  
-><b>Feature availability: </b> Bulk update of work items to add or remove tags from the web portal is currently supported only from VSTS and TFS 2015 Update 2 or later version.  To bulk edit work items when connecting to TFS 2015 Update 1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+><b>Feature availability: </b> Bulk update of work items to add or remove tags from the web portal is currently supported only from VSTS and TFS 2015 Update 2 or later version.  To bulk edit work items when connecting to TFS 2015 Update 1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 From the Edit work items dialog, select Tags (Add) or Tags (Remove).  
 

@@ -257,7 +257,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 * [Release definitions](../concepts/definitions/release/index.md)
 
-* [How to: Work with release definitions](../actions/work-with-release-definitions.md)
+* [Triggers](../concepts/definitions/release/triggers.md)
 
 A few examples include:
 

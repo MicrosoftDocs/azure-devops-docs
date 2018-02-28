@@ -111,11 +111,11 @@ You may be able to resolve errors and warnings that the [Configure Features](../
     witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
   
     Where:  
-       CollectionURL specifies the URL of the team project collection  
-       ProjectName specifies the name of your team project defined within the collection  
-       TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
+          CollectionURL specifies the URL of the team project collection  
+          ProjectName specifies the name of your team project defined within the collection  
+          TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
   
-    Use the following format for CollectionURL:  http://ServerName:Port/VirtualDirectoryName/CollectionName  
+    Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
     For example: http://srvalm:8080/tfs/DefaultCollection.  
   
     ```  
@@ -128,18 +128,18 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 	```XML  
     <TabGroup>  
     <Tab Label="Storyboards">   
-       <Control Name="StoryboardsControl" Type="LinksControl">   
-          <LinksControlOptions>   
-             <WorkItemLinkFilters FilterType="excludeAll" />   
-             <ExternalLinkFilters FilterType="include">   
-                <Filter LinkType="Storyboard" />   
-             </ExternalLinkFilters>   
-             <LinkColumns>   
-                <LinkColumn RefName="System.Title" />   
-                <LinkColumn LinkAttribute="System.Links.Comment" />   
-             </LinkColumns>   
-          </LinksControlOptions>   
-       </Control>   
+          <Control Name="StoryboardsControl" Type="LinksControl">   
+          <LinksControlOptions>   
+             <WorkItemLinkFilters FilterType="excludeAll" />   
+             <ExternalLinkFilters FilterType="include">   
+                   <Filter LinkType="Storyboard" />   
+             </ExternalLinkFilters>   
+             <LinkColumns>   
+                   <LinkColumn RefName="System.Title" />   
+                   <LinkColumn LinkAttribute="System.Links.Comment" />   
+             </LinkColumns>   
+          </LinksControlOptions>   
+          </Control>   
     </Tab>   
     </TabGroup>  
     ```  

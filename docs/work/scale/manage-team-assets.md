@@ -11,7 +11,7 @@ ms.date: 10/17/2017
 
 # Configure team settings 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 

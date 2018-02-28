@@ -19,7 +19,7 @@ ms.date: 03/16/2017
 > - For users of VSTS that use the [Inheritance process model](process/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For on-premises TFS 2017 users, the new form is automatically available when you add team projects to a collection. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
-> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.    
+> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  &nbsp;&nbsp;�
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
 
@@ -36,9 +36,9 @@ You enable the new form from the project collection admin page.
 1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the team project collection.  
 
 	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
-<!---   
+<!---&nbsp;&nbsp;&nbsp;
 	![Open admin context](../_img/icons/ALM_OpenAdminContext.png)  
- -->
+ -->
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
@@ -147,22 +147,22 @@ A best-effort transformation is made to maintain the field groupings and layout 
 <li>All **Splitter** elements are removed </li>
 <li><p>All elements within the form header and **Control** elements with the following type designations are removed from the **WebLayout** section:</p>
 <ul>
-<li>```AttachmentsControl```   </li>
-<li>```LinksControl``` </li>
-<li>```WorkItemClassificationControl```   </li>
+<li>```AttachmentsControl```&nbsp;&nbsp;&nbsp;</li>
+<li>```LinksControl``` </li>
+<li>```WorkItemClassificationControl```&nbsp;&nbsp;&nbsp;</li>
 <li>```WorkItemLogControl```</li>
 </ul>
 <p>They aren't required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
 </li>
 <li><p>The following attributes are removed from each **Control** and **Group** elements:</p>
 <ul>
-<li>```ControlSpacing```   </li>
-<li>```FixedWidth``` </li>
+<li>```ControlSpacing```&nbsp;&nbsp;&nbsp;</li>
+<li>```FixedWidth``` </li>
 <li>```LabelSpacing```</li>
-<li>```Margin``` </li>
-<li>```MinimumSize```  </li>
+<li>```Margin``` </li>
+<li>```MinimumSize```&nbsp;&nbsp;�</li>
 <li>```Padding```</li>
-<li>```PercentWidth``` </li>
+<li>```PercentWidth``` </li>
 </ul>
 </li>
 </ul>

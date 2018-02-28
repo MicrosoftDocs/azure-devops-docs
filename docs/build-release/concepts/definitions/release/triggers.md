@@ -94,7 +94,7 @@ You can combine the automated settings to have releases created
 automatically either when a new build is available or according to
 a schedule.
 
-[//]: # (::: moniker range="<= tfs-2015")
+[//]: # (::: moniker range="tfs-2015")
 
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
@@ -142,6 +142,10 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
+[//]: # (::: moniker range="tfs-2015")
+
 > **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
+
+[//]: # (::: moniker-end)
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

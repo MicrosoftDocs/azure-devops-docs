@@ -11,7 +11,7 @@ ms.date: 03/02/2017
 
 # Choose a process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Anytime you create a team project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 
@@ -19,7 +19,7 @@ Anytime you create a team project, you must choose a process or process template
 
 To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
 The work tracking objects contained within the three default processes and process templates&mdash;Agile, CMMI, and Scrum&mdash;are the same and are summarized below. For simplicity, they are referred to as a "process."
 

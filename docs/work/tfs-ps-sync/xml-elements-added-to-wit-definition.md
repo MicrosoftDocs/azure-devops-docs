@@ -35,25 +35,25 @@ ms.date: 01/12/2017
   
 ```  
 <FIELD name="Project Server Submit" refname="Microsoft.Sync.ProjSrv.Submit" type="String">  
-   <HELPTEXT>Toggle to set whether the work item updates are sent to Project Server</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Toggle to set whether the work item updates are sent to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Enterprise Project" refname="Microsoft.Sync.ProjSrv.ProjectName" type="String">  
-   <HELPTEXT>Name of the enterprise project plan in Project Server</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Name of the enterprise project plan in Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Is Linked" refname="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" type="String">  
-   <HELPTEXT>Indicates whether the work item is linked to Project Server</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Indicates whether the work item is linked to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Submitted Date" refname="Microsoft.Sync.ProjSrv.LastSubmittedDate" type="DateTime">  
-   <HELPTEXT>Date of the most recent submission to Project Server</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Date of the most recent submission to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Submit Status" refname="Microsoft.Sync.ProjSrv.LastSubmitStatus" type="String">  
-   <HELPTEXT>Status of success or failure for the most recent submission to Project Server</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Status of success or failure for the most recent submission to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Reviewed Date" refname="Microsoft.Sync.ProjSrv.LastReviewedDate" type="DateTime">  
-   <HELPTEXT>Date of the most recent approval by the project manager</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>Date of the most recent approval by the project manager</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Review Status" refname="Microsoft.Sync.ProjSrv.LastReviewStatus" type="String">  
-   <HELPTEXT>State of the most recent approval by the project manager</HELPTEXT>  
+&nbsp;&nbsp;&nbsp;<HELPTEXT>State of the most recent approval by the project manager</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Completed Work" refname="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" type="Double" />  
 <FIELD name="Project Server Remaining Work" refname="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" type="Double" />  
@@ -71,42 +71,42 @@ ms.date: 01/12/2017
   
 ```  
 <Tab Label="Project Server">  
-   <Group>  
-      <Column PercentWidth="50">  
-         <Group Label="Publish">  
-            <Column PercentWidth="100">  
-               <Control FieldName="Microsoft.Sync.ProjSrv.Submit" name="SubmitName" Type="FieldControl" Label="&Submit to Project Server:" LabelPosition="Left" />  
-               <Control FieldName="Microsoft.Sync.ProjSrv.ProjectName" name="ProjectName" Type="FieldControl" Label="Enterprise &Project:" LabelPosition="Left" />  
-            </Column>  
-         </Group>  
-            </Column>  
-            <Column PercentWidth="50">  
-         <Group Label="Status">  
-           <Column PercentWidth="100">  
-               <Control FieldName="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" name="IsLinkedName" Type="FieldControl" Label="&Linked to Project Server:" LabelPosition="Left" ReadOnly="True" />  
-               <Control FieldName="Microsoft.Sync.ProjSrv.LastSubmitStatus" name="LastSubmitName" Type="FieldControl" Label="Last S&ubmit Status:" LabelPosition="Left" ReadOnly="True" />  
-               <Control FieldName="Microsoft.Sync.ProjSrv.LastSubmittedDate" name="LastSubmittedName" Type="FieldControl" Label="Last Sub&mitted Date:" LabelPosition="Left" ReadOnly="True" />  
-               <Control FieldName="Microsoft.Sync.ProjSrv.LastReviewedDate" name="LastReviewedName" Type="FieldControl" Label="Last Approval Date:" LabelPosition="Left" ReadOnly="True" />  
-               <Control FieldName="Microsoft.Sync.ProjSrv.LastReviewStatus" name="LastReviewName" Type="FieldControl" Label="Last Approval Status:" LabelPosition="Left" ReadOnly="True" />  
-            </Column>  
-         </Group>  
-      </Column>  
-   </Group>  
-   <Group Label="Mapped Fields (Project Plan : Work Item)">  
-      <Column PercentWidth="50">  
-         <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkMirrorName" Type="FieldControl" Label="Completed Work" LabelPosition="Left" ReadOnly="True" />  
-         <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkMirrorName" Type="FieldControl" Label="Remaining Work" LabelPosition="Left" ReadOnly="True" />  
-      </Column>  
-      <Column PercentWidth="50">  
-         <Control FieldName="Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkName" Type="FieldControl" />  
-         <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkName" Type="FieldControl" />  
-      </Column>  
-   </Group>  
-   <Group Label="Mapped Fields (Project Plan)">  
-      <Column PercentWidth="100">  
-         <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" name="OriginalEstimateMirrorName" Type="FieldControl" Label="Original Estimate" LabelPosition="Left" ReadOnly="True" />  
-      </Column>  
-   </Group>  
+&nbsp;&nbsp;&nbsp;<Group>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group Label="Publish">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.Submit" name="SubmitName" Type="FieldControl" Label="&Submit to Project Server:" LabelPosition="Left" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.ProjectName" name="ProjectName" Type="FieldControl" Label="Enterprise &Project:" LabelPosition="Left" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group Label="Status">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;�<Column PercentWidth="100">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" name="IsLinkedName" Type="FieldControl" Label="&Linked to Project Server:" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastSubmitStatus" name="LastSubmitName" Type="FieldControl" Label="Last S&ubmit Status:" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastSubmittedDate" name="LastSubmittedName" Type="FieldControl" Label="Last Sub&mitted Date:" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastReviewedDate" name="LastReviewedName" Type="FieldControl" Label="Last Approval Date:" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastReviewStatus" name="LastReviewName" Type="FieldControl" Label="Last Approval Status:" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;</Group>  
+&nbsp;&nbsp;&nbsp;<Group Label="Mapped Fields (Project Plan : Work Item)">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkMirrorName" Type="FieldControl" Label="Completed Work" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkMirrorName" Type="FieldControl" Label="Remaining Work" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkName" Type="FieldControl" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkName" Type="FieldControl" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;</Group>  
+&nbsp;&nbsp;&nbsp;<Group Label="Mapped Fields (Project Plan)">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" name="OriginalEstimateMirrorName" Type="FieldControl" Label="Original Estimate" LabelPosition="Left" ReadOnly="True" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
+&nbsp;&nbsp;&nbsp;</Group>  
 </Tab>  
   
 ```  

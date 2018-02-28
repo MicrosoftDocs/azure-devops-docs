@@ -24,7 +24,7 @@ In this topic:
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">=tfs-2017")
+[//]: # (::: moniker range=">= tfs-2017 < vsts")
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
@@ -62,7 +62,7 @@ See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">=tfs-2017")
+[//]: # (::: moniker range=">= tfs-2017 < vsts")
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server

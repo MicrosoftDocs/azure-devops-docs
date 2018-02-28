@@ -1,12 +1,13 @@
 ---
-title: Import, export, and manage work item types | VSTS & TFS
-description: Understand how to use the witadmin commands and to manage work item types for a team project - Team Foundation Server (TFS)
+title: Import, export, and manage work item types
+titleSuffix: TFS  
+description: Manage work item types for a team project in Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 02/26/2018
 ---
 
 # Import, export, and manage work item types
@@ -17,7 +18,7 @@ You can manage work item types for a team project by using the following **witad
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
 -   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
 -   **importwitd**:  Imports work item types from an XML definition file into a team project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.   
--   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window.  (can run against VSTS)   
+-   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window. 
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
 
@@ -52,10 +53,10 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. The format for the URI is the following: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. The format for the URI is the following: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following:<br /><br />**http**://*ServerName:Port/CollectionName*|  
 |**/p:** *Project*|The team project for which the types of work items are to be managed. This team project must be defined in the project collection specified by the **/collection** parameter.<br /><br /> The **/p** parameter is required unless you run the **importwitd** command with the **/v** option.|  
 |**/n:** `TypeName`|The name of the work item type to destroy, export, import, or rename.|  
-|**/f:** `FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window. **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information about registry virtualization, see the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323).|  
+|**/f:** `FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information about registry virtualization, see the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323).|  
 |**/e:** *Encoding*|The name of a .NET Framework 2.0 encoding format. The command uses the specified encoding to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** tries to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/exportgloballists**|Exports the definitions of global lists referenced by the work item type. The definitions for global lists will be embedded into the work item type definition XML. When not specified, the definitions for global lists are omitted.|  
 |**/v**|Validates the XML that defines the work item type, but does not import the XML definition file. **Note:**  You can validate the type definition without specifying a team project. References to project-scoped groups is ignored.|  

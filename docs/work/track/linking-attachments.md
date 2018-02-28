@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Link and attachment queries  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 
@@ -181,7 +181,7 @@ The following table describes fields associated with links and attachments. Most
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
 For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
-</blockquote> 
+</blockquote> 
 </td>
 <td><p>All</p></td>
 </tr>

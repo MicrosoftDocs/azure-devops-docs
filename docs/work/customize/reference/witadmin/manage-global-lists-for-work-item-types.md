@@ -1,12 +1,13 @@
 --- 
-title: Import and export global lists | TFS  
-description: Customize or update a global list by export/import using witadmin - Team Foundation Server (TFS) 
+title: Import and export global lists using witadmin
+titleSuffix: TFS  
+description: Customize or update a global list by export/import using witadmin for Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.author: kaelli
 ms.manager: douge
-ms.date: 05/10/2017
+ms.date: 02/26/2018
 ---
 
 # Manage global lists for work item types
@@ -17,13 +18,13 @@ ms.date: 05/10/2017
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a team project collection, they can be included in work item types for all team projects within the collection.  
   
 >[!NOTE]  
->**Feature availability:**&#160;Hosted XML customization for VSTS supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../../import-process/differences.md).   
+>**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../../import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
 -   **destroygloballist**:  Destroys a global list.    
--   **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the team project collection. (can run against Visual Studio Team Services (VSTS))   
+-   **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the team project collection. 
 -   **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
--   **listgloballist**:  Displays the name of each global list defined on the server. (can run against VSTS)  
+-   **listgloballist**:  Displays the name of each global list defined on the server.  
   
  See [GLOBALLIST XML element reference](../define-global-lists.md).  
   
@@ -55,9 +56,9 @@ witadmin listgloballist /collection:CollectionURL
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/n**:`GlobalListName`|The name of the global list to destroy.|  
-|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import. **Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
