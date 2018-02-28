@@ -1,6 +1,6 @@
 ---
 title: XML element index
-titleSuffix: VSTS & TFS
+titleSuffix: TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 04/04/2017
 
 # XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize your team project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
   
@@ -44,7 +44,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 >**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from VSTS and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
 > - For users of VSTS working with [hosted XML customization](../import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
-> - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
+> - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 
 
 <table>
@@ -132,39 +132,39 @@ By using the index of elements in this topic, you can look up the syntax structu
 <h3 style="margin-bottom:8px">FORM-WebLayout</h3>
 - [Column](linkscontroloptions-xml-elements.md)   
 - [Columns](linkscontroloptions-xml-elements.md)   
-- [Content](webpagecontroloptions-xml-elements-reference.md)     
-- [Control](weblayout-xml-elements.md)   
+- [Content](webpagecontroloptions-xml-elements-reference.md)       
+- [Control](weblayout-xml-elements.md)  
 - [ControlContribution](weblayout-xml-elements.md)  
 - [ExternalLinkFilter](linkscontroloptions-xml-elements.md)    
 - [ExternalLinkFilters](apply-rule-work-item-field.md)  
 - [Extension](weblayout-xml-elements.md)  
-- [Extensions](weblayout-xml-elements.md)      
-- [Filter](linkscontroloptions-elements.md)     
-- [FORM](weblayout-xml-elements.md)       
-- [Group](weblayout-xml-elements.md)  
-- [GroupContribution](weblayout-xml-elements.md)   
-- [Input](weblayout-xml-elements.md)     
-- [Inputs](weblayout-xml-elements.md)       
-- [LabelText](labeltext-and-text-xml-elements-reference.md)     
-- [Layout](layout-xml-element-reference.md)     
-- [Link (Hyperlink)](link-param-xml-elements-reference.md)     
-- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)     
-- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)     
-- [LinkColumn](linkscontroloptions-elements.md)     
-- [LinkColumns](linkscontroloptions-elements.md)     
+- [Extensions](weblayout-xml-elements.md)        
+- [Filter](linkscontroloptions-elements.md)       
+- [FORM](weblayout-xml-elements.md)   
+- [Group](weblayout-xml-elements.md)  
+- [GroupContribution](weblayout-xml-elements.md)   
+- [Input](weblayout-xml-elements.md)    
+- [Inputs](weblayout-xml-elements.md)   
+- [LabelText](labeltext-and-text-xml-elements-reference.md)       
+- [Layout](layout-xml-element-reference.md)       
+- [Link (Hyperlink)](link-param-xml-elements-reference.md)       
+- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)       
+- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)       
+- [LinkColumn](linkscontroloptions-elements.md)       
+- [LinkColumns](linkscontroloptions-elements.md)       
 - [LinkFilters](linkscontroloptions-xml-elements.md)   
-- [LinksControlOptions](linkscontroloptions-elements.md)     
+- [LinksControlOptions](linkscontroloptions-elements.md)       
 - [ListViewOptions](linkscontroloptions-xml-elements.md)   
 - [Page](weblayout-xml-elements.md)  
 - [PageContribution](weblayout-xml-elements.md)  
-- [Param](link-param-xml-elements-reference.md)           
+- [Param](link-param-xml-elements-reference.md)   
 - [Section](weblayout-xml-elements.md)  
 - [SystemControls](weblayout-xml-elements.md) 
-- [Text](labeltext-and-text-xml-elements-reference.md)      
+- [Text](labeltext-and-text-xml-elements-reference.md)      
 - [WebLayout](weblayout-xml-elements.md)  
-- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
+- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)      
 - [WorkItemLinkFilter](linkscontroloptions-xml-elements.md)   
-- [WorkItemLinkFilters](linkscontroloptions-elements.md)     
+- [WorkItemLinkFilters](linkscontroloptions-elements.md)       
 - [WorkItemTypeFilters](linkscontroloptions-elements.md)
 </td>
 </tr>

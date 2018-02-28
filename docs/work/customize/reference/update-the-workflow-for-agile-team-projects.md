@@ -77,26 +77,26 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <STATE value="New">  
-       <FIELDS>  
-          <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ResolvedBy">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-             <EMPTY />  
-          </FIELD>  
-       </FIELDS>  
+          <FIELDS>  
+          <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ResolvedBy">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+             <EMPTY />  
+          </FIELD>  
+          </FIELDS>  
     </STATE>  
     <STATE value="Removed" />  
     ```  
@@ -106,47 +106,47 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <TRANSITION from="" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="New" />  
-       </REASONS>  
-       <FIELDS>  
-          <FIELD refname="System.Description">  
-             <DEFAULT from="value" value="As a &lt;type of user&gt; I want &lt;some goal&gt; so that &lt;some reason&gt;" />  
-          </FIELD>  
-       </FIELDS>  
+          <REASONS>  
+          <DEFAULTREASON value="New" />  
+          </REASONS>  
+          <FIELDS>  
+          <FIELD refname="System.Description">  
+             <DEFAULT from="value" value="As a &lt;type of user&gt; I want &lt;some goal&gt; so that &lt;some reason&gt;" />  
+          </FIELD>  
+          </FIELDS>  
     </TRANSITION>  
     <TRANSITION from="New" to="Active">  
-       <REASONS>  
-          <DEFAULTREASON value="Implementation started" />  
-       </REASONS>  
-       <FIELDS>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-             <COPY from="currentuser" />  
-             <VALIDUSER />  
-             <REQUIRED />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-             <SERVERDEFAULT from="clock" />  
-          </FIELD>  
-          <FIELD refname="System.AssignedTo">  
-             <DEFAULT from="currentuser" />  
-          </FIELD>  
-       </FIELDS>  
+          <REASONS>  
+          <DEFAULTREASON value="Implementation started" />  
+          </REASONS>  
+          <FIELDS>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+             <COPY from="currentuser" />  
+             <VALIDUSER />  
+             <REQUIRED />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+             <SERVERDEFAULT from="clock" />  
+          </FIELD>  
+          <FIELD refname="System.AssignedTo">  
+             <DEFAULT from="currentuser" />  
+          </FIELD>  
+          </FIELDS>  
     </TRANSITION>  
     <TRANSITION from="New" to="Removed">  
-       <REASONS>  
-          <DEFAULTREASON value="Removed from the backlog" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Removed from the backlog" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="Active" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="Implementation halted" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Implementation halted" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="Removed" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="Reconsidering the User Story" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Reconsidering the User Story" />  
+          </REASONS>  
     </TRANSITION>  
     ```  
   
@@ -173,20 +173,20 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <STATE value="New">  
-       <FIELDS>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-             <EMPTY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-             <EMPTY />  
-          </FIELD>  
-       </FIELDS>  
+          <FIELDS>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+             <EMPTY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+             <EMPTY />  
+          </FIELD>  
+          </FIELDS>  
     </STATE>  
     <STATE value="Removed" />  
     ```  
@@ -196,90 +196,90 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <TRANSITION from="" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="New" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="New" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="New" to="Active">  
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
-       </ACTIONS>  
-       <REASONS>  
-          <DEFAULTREASON value="Work started" />  
-       </REASONS>  
-       <FIELDS>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-             <COPY from="currentuser" />  
-             <VALIDUSER />  
-             <REQUIRED />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-             <SERVERDEFAULT from="clock" />  
-          </FIELD>  
-          <FIELD refname="System.AssignedTo">  
-             <DEFAULT from="currentuser" />  
-          </FIELD>  
-       </FIELDS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
+          </ACTIONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Work started" />  
+          </REASONS>  
+          <FIELDS>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+             <COPY from="currentuser" />  
+             <VALIDUSER />  
+             <REQUIRED />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+             <SERVERDEFAULT from="clock" />  
+          </FIELD>  
+          <FIELD refname="System.AssignedTo">  
+             <DEFAULT from="currentuser" />  
+          </FIELD>  
+          </FIELDS>  
     </TRANSITION>  
     <TRANSITION from="Active" to="New">  
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.StopWork" />  
-       </ACTIONS>  
-       <REASONS>  
-          <DEFAULTREASON value="Work halted" />  
-       </REASONS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.StopWork" />  
+          </ACTIONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Work halted" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="New" to="Closed">  
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.Checkin" />  
-       </ACTIONS>  
-       <REASONS>  
-          <DEFAULTREASON value="Completed" />  
-          <REASON value="Cut" />  
-          <REASON value="Deferred" />  
-       <REASON value="Obsolete" />  
-       </REASONS>  
-       <FIELDS>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-             <READONLY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-             <READONLY />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-             <SERVERDEFAULT from="clock" />  
-          </FIELD>  
-          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-          <COPY from="currentuser" />  
-             <VALIDUSER />  
-             <REQUIRED />  
-          </FIELD>  
-       </FIELDS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.Checkin" />  
+          </ACTIONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Completed" />  
+          <REASON value="Cut" />  
+          <REASON value="Deferred" />  
+          <REASON value="Obsolete" />  
+          </REASONS>  
+          <FIELDS>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+             <READONLY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+             <READONLY />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
+             <SERVERDEFAULT from="clock" />  
+          </FIELD>  
+          <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
+          <COPY from="currentuser" />  
+             <VALIDUSER />  
+             <REQUIRED />  
+          </FIELD>  
+          </FIELDS>  
     </TRANSITION>  
     <TRANSITION from="Closed" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="Reactivated" />  
-       </REASONS>  
-       <FIELDS>  
-          <FIELD refname="System.AssignedTo">  
-             <COPY from="field" field="Microsoft.VSTS.Common.ClosedBy" />  
-          </FIELD>  
-       </FIELDS>  
+          <REASONS>  
+          <DEFAULTREASON value="Reactivated" />  
+          </REASONS>  
+          <FIELDS>  
+          <FIELD refname="System.AssignedTo">  
+             <COPY from="field" field="Microsoft.VSTS.Common.ClosedBy" />  
+          </FIELD>  
+          </FIELDS>  
     </TRANSITION>  
     <TRANSITION from="New" to="Removed">  
-       <REASONS>  
-          <DEFAULTREASON value="Removed from the backlog" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Removed from the backlog" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="Active" to="Removed">  
-       <REASONS>  
-          <DEFAULTREASON value="Removed from the backlog" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Removed from the backlog" />  
+          </REASONS>  
     </TRANSITION>  
     <TRANSITION from="Removed" to="New">  
-       <REASONS>  
-          <DEFAULTREASON value="Reconsidering the Task" />  
-       </REASONS>  
+          <REASONS>  
+          <DEFAULTREASON value="Reconsidering the Task" />  
+          </REASONS>  
     </TRANSITION>  
     ```  
   
@@ -327,19 +327,19 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 	> [!div class="tabbedCodeSnippets"]
 	```XML  
     <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">  
-       <States>  
-          <State type="Proposed" value="New"/>  
-          <State type="InProgress value="Active" />  
-          <State type="InProgress value="Resolved" />  
-          <State type="Complete" value="Closed" />  
-       </States>  
+          <States>  
+          <State type="Proposed" value="New"/>  
+          <State type="InProgress value="Active" />  
+          <State type="InProgress value="Resolved" />  
+          <State type="Complete" value="Closed" />  
+          </States>  
     </RequirementWorkItems>  
     <TaskWorkItems category="Microsoft.TaskCategory">  
-       <States>  
-          <State type="Proposed" value="New" />  
-          <State type="InProgress" value="Active" />  
-          <State type="Complete" value="Closed" />  
-       </States>  
+          <States>  
+          <State type="Proposed" value="New" />  
+          <State type="InProgress" value="Active" />  
+          <State type="Complete" value="Closed" />  
+          </States>  
     </TaskWorkItems>  
     ```  
   

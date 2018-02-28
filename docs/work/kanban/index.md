@@ -11,7 +11,7 @@ ms.date: 07/25/2017
 
 # Kanban
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
 

@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # Query by pick list value
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -105,9 +105,9 @@ Features and stories that address Architectural areas<br/>
 	<td><p>Priority <sup>1</sup></p></td>
 	<td><p>A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:</p>
 <ul style="list-style-type:none">
-<li><p><strong>1</strong>:  Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
-<li><p><strong>2</strong>:  Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
-<li><p><strong>3</strong>:  Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
+<li><p><strong>1</strong>:&nbsp;&nbsp;�Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
+<li><p><strong>2</strong>:&nbsp;&nbsp;�Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
+<li><p><strong>3</strong>:&nbsp;&nbsp;�Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
 <p>Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer</p>  </td>
 	<td><p>Bug, Change Request, Epic, Feature, Impediment, Issue, Product backlog item, Requirement, Risk, Shared Step, Task, Test Case, User Story</p></td>
 </tr>

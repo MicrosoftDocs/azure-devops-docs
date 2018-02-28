@@ -184,12 +184,12 @@ You can control the spacing and size of many elements on a work item form by spe
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-   <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
-      <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
-   </Link>  
-   <Content>  
-      <![CDATA[Contents of HTML]]>  
-   </Content>  
+      <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
+      <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
+      </Link>  
+      <Content>  
+      <![CDATA[Contents of HTML]]>  
+      </Content>  
 </WebpageControlOptions>  
 ```  
   

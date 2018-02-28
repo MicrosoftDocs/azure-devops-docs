@@ -124,7 +124,7 @@ Example steps:
 ## 5. Delete TFS-PS global workflow rules from team projects and project collections  
 
 **Where**:&#160;&#160;From all mapped team projects and mapped team project collections. You should have a list of all mapped elements from step [1. List mapped elements](#list).
- 
+ 
 Doing this doesn't remove any fields but does remove rules that were defined at the team project-level and collection-level for those fields. In most cases you shouldn't have manually modified the global workflow rules. If so, simply export and import with a default content below. If you have made customization you would need to determine the customizations you made and which you want to keep, and then simply remove those rules associated with TFS-PS integration.  
 
 Example steps:
@@ -156,9 +156,9 @@ A copy of global workflow with default mapping fields would help.
 ## 6. Delete all TFS-PS related fields 
  
 **Where**: From each mapped team project collection. You should have a list of all mapped elements from step [1. List mapped elements](#list).
- 
+ 
 Several work item fields were added to your team project collection when they were mapped for TFS-PS integration. These fields store both data and metadata related to the synchronization. In previous steps, we removed usage of these fields from the WITs and global workflow. With those steps completed, you are ready to delete these fields.
- 
+ 
 1. Delete all fields that begin with *Microsoft.Sync.ProjSrv.&#42;*.  
 
 	```witadmin deletefield /collection:<your collection URL> /n:Microsoft.Sync.ProjSrv.ApprovalWatermark /noprompt```  
@@ -219,7 +219,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 **Where**:
 - From Project Server 2010, go to: **PWA Home Page>Server Settings>Enterprise Custom Fields and Lookup Tables**
 - From Project Server 2013, go to: PWA home page, click the 'gear' button and then choose **PWA Settings>Enterprise Custom Fields and Lookup Tables**
- 
+ 
 <ol><li>Remove all TFS fields, those ending in `(TFS)`, for example: 
 <ul><li>Active Assignment (TFS)</li>
 <li>IsTaskTypeInitialized (TFS)</li>
@@ -258,7 +258,7 @@ DELETE FROM <TFS Configuration Database>.[dbo].[tbl_CatalogNode]
 	(SELECT [Identifier] FROM <TFS Configuration Database>.dbo.tbl_CatalogResource   
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0)
 ```
- 
+ 
 ```
 DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource  
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0

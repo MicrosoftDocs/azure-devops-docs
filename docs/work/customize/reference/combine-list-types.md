@@ -35,15 +35,15 @@ You can specify multiple types of lists for a single field. This topic defines h
   
 ```  
 If {set S} AND {set A} have no entries  
-        Result: Empty list  
+        �Result: Empty list  
 If {set S} has entries and {set A} has no entries  
-        Result: The values are obtained by subtracting {set P} from {set S}  
+        �Result: The values are obtained by subtracting {set P} from {set S}  
 If {set S} AND {set A} have entries  
-        Result: The list of values are obtained by:  
-                a. Intersecting {set A} with {set S} to get {intermediate set I}  
-                b. Subtracting {set P} from {intermediate set I}  
+        �Result: The list of values are obtained by:  
+                a. Intersecting {set A} with {set S} to get {intermediate set I}  
+                b. Subtracting {set P} from {intermediate set I}  
 If {set S} has no entries and {set A} has entries  
-        Result: The list of values are obtained by subtracting {set P} from {set A}  
+        �Result: The list of values are obtained by subtracting {set P} from {set A}  
 ```  
   
 ## Specify multiple lists  

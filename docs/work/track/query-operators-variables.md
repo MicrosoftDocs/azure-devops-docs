@@ -13,7 +13,7 @@ ms.date: 02/05/2018
 
 # Query fields, operators, and macros
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a team project or team project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
 
@@ -374,4 +374,4 @@ You use the **witadmin indexfield** command to enable or disable indexing for a 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

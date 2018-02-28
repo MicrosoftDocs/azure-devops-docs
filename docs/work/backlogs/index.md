@@ -11,7 +11,7 @@ ms.date: 08/03/2017
 
 # Backlogs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 

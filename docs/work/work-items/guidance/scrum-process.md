@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Scrum process   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a team project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
@@ -43,7 +43,7 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 > [!NOTE]  
 > A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
-Â Â 
+Â Â 
 
 
 [Scrum work item types and workflow](scrum-process-workflow.md) provides more details about using these WITs.  
@@ -59,7 +59,7 @@ To list work items for a current sprint or the product backlog, use the shared q
 
 You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../track/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>Â Â 
+<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>Â Â 
 
 [!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
 

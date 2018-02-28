@@ -11,7 +11,7 @@ ms.date: 10/10/2017
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
@@ -170,7 +170,7 @@ Here's how a three-level nested tree of items appears in Excel:
 <li><p style="font-size: 13px">When you move a work item, make sure that you select the entire table row.</p></li>
 </ul>
 
-</blockquote>  
+</blockquote>&nbsp;&nbsp;�
 
 ## Work with different list types 
 
@@ -287,7 +287,7 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.     
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp;� 
 
 
 ### Web portal and Excel access
@@ -309,4 +309,4 @@ See [Show the Developer Tab on the Ribbon](https://msdn.microsoft.com/library/bb
 macOS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require Windows.
 
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
