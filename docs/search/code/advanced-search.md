@@ -48,8 +48,10 @@ Words separated by spaces, and not wrapped in double-quotes, are treated as
 separate search terms and the search will expect to find an occurrence of 
 all the words (in other words, it assumes the `AND` operator between words).
 
+<!--
 You must escape the special characters `(`,  `)`, `[`, `]`, `:`, `*`, and `?`
-by preceeding them with `\`.
+by enclosing them in a phrase delimited with double-quotes `"` and `"`.
+-->
 
 When you search from inside a project, the default is to search only within that 
 project. You can navigate up to the account level to broaden your search.
