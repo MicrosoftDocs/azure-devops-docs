@@ -13,7 +13,7 @@ ms.date: 08/28/2017
 <a id="backlog-controls">  </a>
 # Product backlog controls  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 

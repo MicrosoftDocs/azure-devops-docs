@@ -20,13 +20,13 @@ You can use the keyboard shortcuts provided in this topic from the web portal or
 
 ## Work hub, Queries page 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)] 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)] 
 
 ## Query editor and results, Team Explorer 
 
 When working in Visual Studio Team Explorer, you can use the following keyboard shortcuts. Use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
  
 
 ## Related notes

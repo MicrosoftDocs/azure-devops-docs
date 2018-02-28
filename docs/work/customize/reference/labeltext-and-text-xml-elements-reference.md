@@ -64,10 +64,10 @@ The following example adds the plain text "Enter details about how to reproduce 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
 <Control Type="LabelControl" Label=" Enter details about how to reproduce the bug in the space below:">  
-   <LabelText>  
-      <Text>Enter details about how to reproduce the bug in the space below:  
-      </Text>  
-   </LabelText>  
+      <LabelText>  
+      <Text>Enter details about how to reproduce the bug in the space below:  
+      </Text>  
+      </LabelText>  
 </Control>  
 ```  
   
@@ -78,12 +78,12 @@ The following example adds a hyperlink which is labeled "How do I use this work 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <Control Type="LabelControl" Label="How do I use this work item?">  
-   <LabelText>  
-      <Text>  
-   <Link UrlRoot="http://www.live.com"></Link>  
-      How do I use this work item?  
-      </Text>  
-   </LabelText>  
+      <LabelText>  
+      <Text>  
+      <Link UrlRoot="http://www.live.com"></Link>  
+      How do I use this work item?  
+      </Text>  
+      </LabelText>  
 </Control>  
 ```  
   
@@ -94,14 +94,14 @@ The following example adds a two-part label to a work item form. The first part,
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <Control Type="FieldControl" FieldName="System.IterationPath" LabelPosition="Left">  
-   <LabelText>  
-      <Text>  
-         <Link UrlRoot="@WssSiteUrl/render.aspx?wit=bug&topic=Iteration">  
-         </Link>  
-      Iteration Path  
-      </Text>  
-      <Text> (must be 3 levels deep)</Text>  
-   </LabelText>  
+      <LabelText>  
+      <Text>  
+         <Link UrlRoot="@WssSiteUrl/render.aspx?wit=bug&topic=Iteration">  
+         </Link>  
+      Iteration Path  
+      </Text>  
+      <Text> (must be 3 levels deep)</Text>  
+      </LabelText>  
 </Control>  
 ```  
 

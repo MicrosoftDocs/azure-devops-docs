@@ -15,7 +15,7 @@ ms.date: 11/27/2017
 
 # Define the hyperlink for a work item 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 

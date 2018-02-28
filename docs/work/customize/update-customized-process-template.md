@@ -1,17 +1,18 @@
 ---
-title: Update a process template | TFS 
-description: To use the Configure Features Wizard to update existing team projects, you may need to update your custom process template when connecting to Team Foundation Server (TFS)  
+title: Update a process template
+titleSuffix: TFS  
+description: Update a process template to support customizing work tracking for Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/02/2017    
+ms.date: 02/26/2018
 ---
 
 # Update a customized process template to access new features
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
@@ -394,7 +395,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Code Review
 	</td>
 	<td>
-	 [Request a code review from the My Work page in Team Explorer](/vsts/tfvc/get-code-reviewed-vs). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	 [Request a code review from the My Work page in Team Explorer]../../tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>
@@ -402,7 +403,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	My Work
 	</td>
 	<td>
-	[Develop code and manage pending changes](https://msdn.microsoft.com/library/ms245462.aspx#my_work) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	[Develop code and manage pending changes](../../tfvc/develop-code-manage-pending-changes.md) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>

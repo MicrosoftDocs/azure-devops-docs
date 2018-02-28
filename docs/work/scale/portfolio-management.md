@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Portfolio management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
@@ -36,7 +36,7 @@ By setting up a team structure like the one shown, you provide each feature team
 - Assign backlog items to feature teams from a common backlog 
 
  
-[!INCLUDE [image differences](../_shared/image-differences.md)]
+[!INCLUDE [image differences](../_shared/image-differences.md)]
 
 
 ## Management view of team progress 
@@ -79,7 +79,7 @@ Here, all backlog items have been assigned to feature teams. While all features 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]    
->You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
+>You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
 
 
 <a id="set_up"></a>

@@ -11,7 +11,7 @@ ms.date: 03/16/2017
 
 # Configure features after an upgrade
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT] 
 >**Feature availability**: This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).  
@@ -36,7 +36,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Configure features, list of features configured or not configured](_img/ALM_CFW_ConfigFeatures.png)
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>  
+	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>&nbsp;&nbsp;�
 
 	The features listed depend on the TFS version of software installed. To get the latest features, upgrade your server to the latest version. 
 

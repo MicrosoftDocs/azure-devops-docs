@@ -144,10 +144,4 @@ the deployment can be approved or rejected.
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
 
-## See also
-
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
-
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

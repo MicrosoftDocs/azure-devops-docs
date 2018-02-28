@@ -191,51 +191,16 @@ a maximum of four agents at any one time:
 <a name="server-phase"></a>
 ## Agentless phase
 
+<a name="maninterv"></a><a name="invokeapi"></a>
 Use an agentless phase in a build or release definition to run tasks that do
 not require an agent, and execute entirely on the VSTS or TFS.
-Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
-are supported in an agentless phase at present. The properties of
+Only a few tasks, such as the
+[Manual Intervention](../../tasks/utility/manual-intervention.md)
+and [Invoke REST API](../../tasks/utility/http-rest-api.md)
+tasks, are supported in an agentless phase at present. The properties of
 an agentless phase are similar to those of the [agent phase](#agent-props).
 
 ![Agentless phase properties](_img/phases-05.png)
-
-<a name="maninterv"></a>
-### The Manual Intervention task
-
->[!NOTE]
-> The manual intervention task is only available in release definitions. It cannot be used in build definitions.
-
-The **Manual Intervention** task does not perform deployment actions directly.
-Instead, it allows you to pause an active deployment within an environment, typically to perform some
-manual steps or actions, and then continue the automated deployment steps.
-
-The **Manual Intervention** task configuration includes an **Instructions** parameter that
-can be used to provide related information, or to specify the manual steps
-the user should execute during the Agentless phase. You can configure the task to
-send email notifications to users and user groups when it is awaiting intervention,
-and specify the automatic response (reject or resume the deployment) after a configurable
-timeout occurs.
-
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
-
-> You can use built-in and custom variables to generate portions of your instructions.
-
-When the Manual Intervention task is activated during a deployment, it sets
-the deployment state to **IN PROGRESS** and displays
-a message bar containing  a link that opens the
-Manual Intervention dialog containing the instructions.
-After carrying out the manual steps, the administrator
-or user can choose to resume the deployment, or reject it. Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
-
-<a name="invokeapi"></a>
-### The Invoke REST API task
-
-The **Invoke REST API task** task does not perform deployment actions directly.
-Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. For example,
-it can be used to invoke specific processing with an Azure function.
-
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 
 ## Deployment group phase
 

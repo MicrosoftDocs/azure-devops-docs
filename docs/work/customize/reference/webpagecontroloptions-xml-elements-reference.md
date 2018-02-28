@@ -26,12 +26,12 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-   <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
-      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
-   </Link>  
-   <Content>  
-      <![CDATA[Contents of HTML]]>  
-   </Content>  
+      <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
+      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
+      </Link>  
+      <Content>  
+      <![CDATA[Contents of HTML]]>  
+      </Content>  
 </WebpageControlOptions>  
 ```  
   

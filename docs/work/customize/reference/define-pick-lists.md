@@ -36,10 +36,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <ALLOWEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </ALLOWEDVALUES>  
     ```  
@@ -48,10 +48,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <PROHIBITEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </PROHIBITEDVALUES>  
     ```  
@@ -60,10 +60,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <SUGGESTEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </SUGGESTEDVALUES>  
   
@@ -95,9 +95,9 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <GLOBALLIST name="globalListName">  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </GLOBALLIST>   
     ```  
@@ -157,11 +157,11 @@ You can enumerate a set of values for a field by defining a pick list as part of
 </FIELD>  
 <FIELD refname="MyCorp.CusSeverity" name="Customer Severity" type="String">  
 <HELPTEXT>Indicate the severity of the problem</HELPTEXT>  
-    <ALLOWEDVALUES>  
-        <LISTITEM value="Emergency">  
-        <LISTITEM value="Major">  
-        <LISTITEM value="Minor">  
-    </ALLOWEDVALUES>  
+       <ALLOWEDVALUES>  
+        �<LISTITEM value="Emergency">  
+        �<LISTITEM value="Major">  
+        �<LISTITEM value="Minor">  
+       </ALLOWEDVALUES>  
 <DEFAULT from="value" value="Minor"/>  
 </FIELD>  
 ```  

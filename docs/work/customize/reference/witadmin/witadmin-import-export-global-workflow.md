@@ -1,12 +1,13 @@
 ---
-title: Import and export global workflow using witadmin| VSTS & TFS
+title: Import and export global workflow using witadmin
+titleSuffix: TFS  
 description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple team projects and types of work items share - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
 ms.manager: douge
 ms.author: kaelli
-ms.date: 01/20/2017
+ms.date: 02/26/2018
 ---
 
 # Import and export global workflow
@@ -46,7 +47,7 @@ witadmin importglobalworkflow /collection:CollectionURL [/p:ProjectName] /f:File
 |-------------------|---------------------|  
 |**/collection**:`CollectionURL`|Specifies the URI of the collection. You must specify the URI in the following format: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you must specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*.|  
 |**/p**:`ProjectName`|Optional. The team project for which you want to export or import the global workflow. This team project must be defined in the collection that you specified by using the /collection parameter. If you do not specify a team project, the global workflow is imported or exported for the collection.|  
-|**/f**:`FileName`|The path and the name of the XML definition file for global workflow to export or import. **Note:**  If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the XML definition file for global workflow to export or import.<br /><br /> **Note:**  If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.|  
 |**/v**|Optional. Validates the XML that defines the global workflow but does not import the definition file.|  
 |**/exportgloballists**|Optional. Exports the definitions of global lists that the global workflow references. The definitions for global lists will be embedded into the XML definition of the global workflow. If you do not specify this parameter, the definitions for global lists are omitted.|  
