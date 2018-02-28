@@ -41,6 +41,9 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 
 ![key](./_img/get-extension-key.png)
 
+> [!WARNING]
+> Scope changes in an extension will cause the certificate to change. If you make changes to the scope, you will need a new extension key.
+
 ### Generate a token to provide to your service
 
 1. The Core SDK `getAppToken` method return a promise that, when resolved, contains a token signed with your extension's certificate.
