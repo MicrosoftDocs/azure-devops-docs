@@ -6,63 +6,60 @@ ms.technology: vs-devops-setup
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/17/2017
+ms.date: 02/28/2018
 ---
-
-#  Change account owner for VSTS
+# Change account owner for VSTS
 
 **VSTS**
 
-When your team's roles and responsibilities change, 
-you can change your VSTS account owner to another user. 
+When your team's roles and responsibilities change,
+you can change your VSTS account owner to another user.
 
 <a name="ChangeOwner"></a>
+
 ## Before you start
 
-You must have at least Basic access, not Stakeholder, and VSTS 
-[project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca). 
-If no one has these permissions, contact 
+You must have at least Basic access, not Stakeholder, and VSTS
+[project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca).
+If no one has these permissions, contact
 [VSTS Support](https://www.visualstudio.com/team-services/support).
 
-Make sure that the new owner: 
+Make sure that the new owner:
 
-*	Has been added and invited to your VSTS account 
-(```https://{youraccount}.visualstudio.com```).  
-*	Also has at least Basic access, not Stakeholder. 
-Learn [how to manage users and access](add-account-users-assign-access-levels.md).  
-*	Has signed in to your VSTS account, 
-created a Visual Studio profile, 
-and agreed to the Terms of Service. 
+* Has been added and invited to your VSTS account (```https://{youraccount}.visualstudio.com```).
+* Also has at least Basic access, not Stakeholder. Learn [how to manage users and access](add-account-users-assign-access-levels.md).
+* Has signed in to your VSTS account, created a Visual Studio profile, and agreed to the Terms of Service.
+* Has accessed the account, following initial profile creation, at least once.
 
-##	Change VSTS account owner
+  >[!div class="mx-imgBorder"]
+![Last sign in never](_img/change-account-ownership/user_last_access.png)
 
-0.	Sign in to your VSTS account 
-(```https://{youraccount}.visualstudio.com```). 
+## Change VSTS account owner
 
-	[Why am I asked to choose between my work or school account and my personal account?](faq-change-account-ownership.md#ChooseOrgAcctMSAcct)
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-0.	To find the current account owner, 
-go to your VSTS account settings
+   [Why am I asked to choose between my work or school account and my personal account?](faq-change-account-ownership.md#ChooseOrgAcctMSAcct)
 
-	![Go to account settings](../_shared/_img/account-settings-new-ui.png)
+2. To find the current account owner, go to your VSTS account settings.
 
-0.	Under **Settings**, find the current owner.
+   ![Go to account settings](../_shared/_img/account-settings-new-ui.png)
 
-	![Find current owner](../_shared/_img/account-owner-new-ui.png)
+3. Under **Settings**, find the current owner.
 
-0.	Change the account owner.
+   ![Find current owner](../_shared/_img/account-owner-new-ui.png)
 
-	![Change current owner](_img/change-account-ownership/vsocontrolpanelchangeowner.png)
+4. Change the account owner.
 
-0.	Find and select the new owner.
+   ![Change current owner](_img/change-account-ownership/vsocontrolpanelchangeowner.png)
 
-	![Find and select owner](_img/change-account-ownership/vsofindnewaccountowner.png)
+5. Find and select the new owner.
 
-	[Can't find the person you want?](faq-change-account-ownership.md#NoNewOwner) 
+   ![Find and select owner](_img/change-account-ownership/vsofindnewaccountowner.png)
 
-0.	Save your changes.
+   [Can't find the person you want?](faq-change-account-ownership.md#NoNewOwner)
 
-	![Select new owner, save changes](_img/change-account-ownership/vsosavenewaccountowner.png)
+6. Save your changes.
 
-	Your VSTS account has a new owner! 
+   ![Select new owner, save changes](_img/change-account-ownership/vsosavenewaccountowner.png)
 
+   Your VSTS account has a new owner!
