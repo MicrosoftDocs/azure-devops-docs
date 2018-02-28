@@ -44,8 +44,7 @@ command-line utility built for fast copying of data.
 Typically this occurs when the specified path cannot be located.
 This may be due to a firewall blocking the necessary ports for file and printer sharing,
 or an invalid path specification. For more details, see
-[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet and
-[Troubleshooting System Error: 53 - Network Path not found errors](http://support.dameware.com/kb/article.aspx?ID=300059) on the Dameware knowledgebase.
+[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
