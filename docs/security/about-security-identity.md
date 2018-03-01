@@ -134,10 +134,10 @@ see [Permissions and groups reference](permissions.md).
 
 There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]    
 > |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
-> |-------------|----------|
-> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/> |- Agent queues<br/>- Service endpoints<br/> |- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
+> |-------------|----------|----------|
+> |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
 
 To learn more, see [About security roles](about-security-roles.md). 
 
