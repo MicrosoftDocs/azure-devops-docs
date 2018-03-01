@@ -347,26 +347,22 @@
       href: tasks/utility/shell-script.md
     - name: Update Service Fabric App Versions
       href: tasks/utility/service-fabric-versioning.md
-    - name: Xamarin license
-      href: tasks/utility/xamarin-license.md
   - name: Test tasks
     items:
+    - name: App Center Test
+      href: tasks/test/mobile-center-test.md
     - name: Cloud-based Apache JMeter Load Test
       href: tasks/test/cloud-based-apache-jmeter-load-test.md
     - name: Cloud-based Load Test
       href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
       href: tasks/test/cloud-based-web-performance-test.md
-    - name: App Center Test
-      href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
       href: tasks/test/publish-test-results.md
     - name: Visual Studio Test
       href: tasks/test/visual-studio-test.md
-    - name: Xamarin Test Cloud
-      href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
     items:
     - name: CocoaPods
@@ -413,10 +409,6 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
-    - name: IIS Web App Deploy
-      href: tasks/deploy/iis-deploy.md
-    - name: IIS Web App Manage
-      href: tasks/deploy/iis-manage.md    
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
@@ -435,6 +427,8 @@
       href: tasks/tool/node-js.md
     - name: Java Tool Installer
       href: tasks/tool/java-tool-installer.md
+    - name: VS Test Platform Installer
+      href: tasks/tool/visual-studio-installer.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
