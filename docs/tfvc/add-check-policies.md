@@ -52,7 +52,7 @@ Procedure
 
         Select the check boxes for the types of code analysis that you want performed. Options are Enforce check-in to only contain files that are part of current solution, **Enforce C/C++ Code Analysis (/analyze)**, and **Enforce Code Analysis For Managed Code**. If you select the **Enforce Code Analysis For Managed Code** check box, select the desired rule settings under **Rule settings for Managed Code Analysis**.
 
-        For more information about how to use code analysis tools, see [Creating and Using Code Analysis Check-In Policies](https://msdn.microsoft.com/library/ms182075).
+        For more information about how to use code analysis tools, see [Create Code Analysis Check-In Policies](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).
 
         When you are finished, click **OK**.
 
