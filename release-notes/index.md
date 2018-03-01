@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 2/26/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -57,12 +57,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Package Management – Maven general availability (GA)|Package|2019|
-|Package Management – Retention policies|Package|2019|
+|Package Management – Retention policies|Package|2018.2|
 |Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|N/A|
+|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
-|Package Management – Maven Upstream support|Package|2019|
 |Flaky tests - View prior failed attempts in CI/CD workflows|Test|2019|
 |View in-progress test results in CI/CD workflows|Test|2019|
 |Test insights related to Top failing tests & Long running tests at a Build definition level|Test|2019|
@@ -86,6 +84,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Extend release gates – Test|Release|TBD|
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
+|Package Management – Maven Upstream support|Package|TBD|
 |[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
 |Release views – support for multiple versions of extensions|Marketplace|N/A|
 
@@ -187,7 +186,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>TFX CLI changes for extension publish</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Cloud Solution Provider purchasing now generally available</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
-            <td rowspan="43">[28 Nov 2017](2017/nov-28-vsts.md)</td>
+            <td rowspan="44">[28 Nov 2017](2017/nov-28-vsts.md)</td>
             <td>Azure DevOps Project</td>
             <td style="background:rgb(232, 232, 232);">N/A</td>
         </tr>
@@ -223,6 +222,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Save packages from NuGet.org in your feed</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Maven support now generally available</td><td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td></tr>
         <tr><td>Easier feed creation and editing</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Previous package versions are now a full-page list</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>

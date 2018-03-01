@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 02/23/2018
+ms.date: 03/01/2018
 ---
 
 #  Review code with pull requests
@@ -95,6 +95,18 @@ Change the pull request title, add a detailed description, add reviewers, link w
 ![Adding details to a new pull request](_img/pull-requests/add-detail-to-pr.png)
 
 Don't worry if you don't have all of the work items, reviewers, or details ready when you create your pull request - you can add them now when you create the pull request, and you can also add or update all of these items later after you create the pull request.
+
+### Help reviewers using pull request labels
+
+Sometimes it’s important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it’s a hotfix for an upcoming release - so you append some extra text in the title, perhaps a “[WIP]” prefix or “DO NOT MERGE”. Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
+
+![PR request labels](_img/pull-requests/pull-request-labels.png)
+
+To add a label when creating a pull request, choose **Add label**. After a pull request is created you can manage labels in the **Labels** section.
+
+![Add pull request label](_img/pull-requests/add-pull-request-label.png)
+
+In a future release, we’ll make labels even more useful by making it easier to filter pull requests using labels.
 
 ### Add and remove reviewers
 
