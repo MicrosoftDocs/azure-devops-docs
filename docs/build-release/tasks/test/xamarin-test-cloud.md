@@ -15,6 +15,7 @@ ms.date: 08/16/2016
 
 ![](_img/xamarin-test-cloud-icon.png) Test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
+>**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest) task instead.
 
 ## Demands
 
