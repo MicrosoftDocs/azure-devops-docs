@@ -76,6 +76,8 @@
     href: actions/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
     href: actions/azure-devops-project-github.md
+  - name: Use Jenkins and VSTS DevOps
+    href: actions/integrate-jenkins-vsts-cicd.md  
 - name: Concepts
   items:
   - name: Agents
