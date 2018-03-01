@@ -368,6 +368,13 @@ NuGet.org as an upstream source is now available, which enables you to use packa
 > [!div class="mx-imgBorder"]
 ![NuGet upstream source](_img/126_17.png)
 
+### Maven support now generally available
+
+Maven packages enable Java developers to easily share code and components. Check out our [getting started guide](https://go.microsoft.com/fwlink/?linkid=848427) for how to share Maven artifacts using Package Management.
+
+> [!div class="mx-imgBorder"]
+![Maven feed connect](_img/126_39.png)
+
 ### Easier feed creation and editing
 
 Creating a new feed is now a full-page experience that’s very similar to the “New project” screen. We’ve also streamlined the defaults, particularly around feed permissions, to match what the vast majority of customers were selecting in the old experience.

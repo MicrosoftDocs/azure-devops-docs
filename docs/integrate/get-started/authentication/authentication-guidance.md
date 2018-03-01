@@ -41,7 +41,7 @@ A: We recommend using VSTS Client Libraries over REST API's when accessing VSTS 
 
 #### Q: Can I use ADAL if I log into my VSTS account with a Microsoft account (MSA)?
 
-A: Yes, you can use ADAL to create client side applications for an MSA backed account using ADAL with some limitiations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure Portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. 
+A: Yes, you can use ADAL to create client side applications for an MSA backed account using ADAL with some limitations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure Portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. 
 
 >Note: This approach will only work for client side applications. For JS web apps, ADAL JS will not work without an AAD tenant.
 

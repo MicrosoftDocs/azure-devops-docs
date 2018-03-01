@@ -15,6 +15,8 @@ ms.date: 08/10/2016
 
 ![](_img/xamarin-license.png) Activate or deactivate Xamarin licenses
 
+>**NOTE:** This task is deprecated. Use the free version of Xamarin from [https://store.xamarin.com](https://store.xamarin.com).
+
 ## Deprecated
 
 > We're deprecating this task because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md). We recommend that you remove this task from your build to avoid disruption when we remove the task from the product.

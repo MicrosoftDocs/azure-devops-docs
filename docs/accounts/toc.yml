@@ -18,7 +18,7 @@
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: "1 - Change Azure AD tenant: setup"
+  - name: "1 - Change Azure AD tenant: set up"
     href: change-azure-active-directory-vsts-account.md
   - name: "2 - Change Azure AD tenant: prepare source directory"
     href: change-azure-ad-vsts-account-prep-src.md
