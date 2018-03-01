@@ -62,7 +62,7 @@ This spaces your text better and makes it easier to read.
 </pre>
 
 **Result:**   
-Add lines between your text with the return key      
+Add lines between your text with the Enter key.      
 This spaces your text better and makes it easier to read.
 
 
