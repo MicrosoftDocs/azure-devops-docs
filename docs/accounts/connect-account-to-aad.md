@@ -6,9 +6,12 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/26/2018
+ms.date: 03/01/2018
 ---
 # Connect VSTS account to Azure Active Directory (Azure AD)
+
+> [!Warning]
+> If you use [TFVC](https://docs.microsoft.com/en-us/vsts/tfvc/index) do not connect to Azure AD. We are working to unblock this scenario by March 10th, 2018.
 
 **VSTS**
 
@@ -40,7 +43,7 @@ One of the following scenarios likely applies to your situation:
 
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
   - This document is for you!
-- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
+- I use a Microsoft account, jamalhartnett@fabrikam.com, for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
     - Work with CSS to help with the migration by [creating a new support ticket](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636538111396376813)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
@@ -94,11 +97,11 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 1. Determine which user is performing the connection of VSTS to Azure AD.
     - Ensure this user exists in the target Azure AD tenant as a guest or member.
-    - Ensure this user is a member of the "[Project Collection Administrators](https://docs.microsoft.com/en-us/vsts/security/set-project-collection-level-permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json#add-a-user-or-group-to-a-security-group)" group or an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
+    - Ensure this user is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
 
     - If you can't meet these requirements with your own identity, you should:
         - Create a new Microsoft account (for example FabrikamMigration@outlook.com
-        - Add the new identity as a member of the "[Project Collection Administrators](https://docs.microsoft.com/en-us/vsts/security/set-project-collection-level-permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json#add-a-user-or-group-to-a-security-group)" group
+        - Add the new identity as an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
         - Add the new identity as a B2B guest of the target Azure AD tenant
         - Use this new user to complete the migration
 
