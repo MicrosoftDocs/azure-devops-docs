@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/20/2018
+ms.date: 02/28/2018
 ---
 
 # Migrate to group-based resource management in VSTS
@@ -19,7 +19,8 @@ The most important thing to keep in mind is that you should avoid a situation wh
 
 2. Make sure all required users are members of the groups by highlighting a group rule and clicking **Manage members**.
 
-    [!NOTE: Leave any existing automation you may have (for example, PowerShell) for managing access levels or extensions for users, running as is - your goal should be to reflect the same resources which the automation is applying to those users.]
+   > [!NOTE]
+   > Leave any existing automation you may have (for example, PowerShell) for managing access levels or extensions for users, running as is - your goal should be to reflect the same resources which the automation is applying to those users.
 
 3. Choose **Add a group rule** and then highlight an Azure AD group and assign the required access level, project group memberships, and extension(s).
 

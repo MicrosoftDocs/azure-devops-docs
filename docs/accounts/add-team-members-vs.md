@@ -69,7 +69,7 @@ To add members to team projects, you'll need
 
    ![Choose Add](_img/add-team-members/add-user.png)
 
-5. Enter the email addresses for your new users. Otherwise, enter the display names for existing users. Add them one at a time or all at once.
+5. Enter the email addresses for your new users, separated by semi-colons. Otherwise, enter the display names for existing users. Add them one at a time or all at once.
 
 	Which email addresses can I add?
 	 * If your VSTS account is Azure Active Directory backed, then you can only add email addresses that are
