@@ -66,20 +66,18 @@ ms.date: 08/18/2016
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | VSTS |
 | ![icon](utility/_img/shell-script.png) [Shell Script](utility/shell-script.md). Run a shell script using bash | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/azure-service-fabric.png) [Update Service Fabric App Versions](utility/service-fabric-versioning.md). Automatically updates the versions of a packaged Service Fabric application | VSTS, TFS 2017 and newer |
-| ![icon](utility/_img/xamarin-license.png) [Xamarin License](utility/xamarin-license.md). Activate or deactivate Xamarin licenses | VSTS, TFS 2015 RTM and newer |
 
 ## Test
 
 | Task | Versions |
 | ---- | -------- |
+| ![icon](test/_img/app-center-test-icon.png) [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest). Test mobile app packages with Visual Studio App Center | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/apache-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest). Runs the Apache JMeter load test in cloud | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with VSTS | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/mobile-center-test-icon.png) [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest). Test mobile app packages with Visual Studio App Center | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | VSTS, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to VSTS/TFS | VSTS, TFS 2015 RTM and newer |
 | ![icon](test/_img/visual-studio-test-icon.png) [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | VSTS, TFS 2015 RTM and newer |
-| ![icon](test/_img/xamarin-test-cloud-icon.png) [Xamarin Test Cloud](test/xamarin-test-cloud.md). Test mobile apps with Xamarin Test Cloud using Xamarin.UITest | VSTS, TFS 2015 RTM and newer |
 
 ## Package
 
@@ -96,6 +94,7 @@ ms.date: 08/18/2016
 
 | Task | Versions |
 | ---- | -------- |
+| ![icon](deploy/_img/app-center-distribute-icon.png) [App Center Distribute](https://docs.microsoft.com/en-us/appcenter/distribution/). Distribute app builds to testers and users through App Center | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-web-app-deployment-icon.png) [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment). Update Azure App Service using Web Deploy / Kudu REST APIs | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-app-service-manage.png) [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage). Start, Stop, Restart or Slot swap for an Azure App Service | VSTS, TFS 2017 and newer|
 | ![icon](deploy/_img/azure-cli-icon.png) [Azure CLI](deploy/azure-cli.md). Run a shell or batch script containing Azure CLI commands against an Azure subscription | VSTS, TFS 2017 and newer |
@@ -106,9 +105,6 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azure-sql-database-deployment-icon.png) [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 and newer |
-| ![icon](deploy/_img/iis-deploy-icon.png) [IIS Web App Deploy](deploy/iis-deploy.md). Deploy IIS Websites and Virtual Applications using WebDeploy | VSTS |
-| ![icon](deploy/_img/iis-manage-icon.png) [IIS Web App Manage](deploy/iis-manage.md). Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools | VSTS |
-| ![icon](deploy/_img/mobile-center-upload-icon.png) [App Center Distribute](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterDistribute). Upload and distribute mobile app packages using Visual Studio App Center | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines](deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Application Deployment](deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Compose Deploy](deploy/service-fabric-compose-deploy.md). Deploy a Service Fabric application to a cluster using a compose file | VSTS |
@@ -122,6 +118,7 @@ ms.date: 08/18/2016
 | ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
+| ![icon](tool/_img/visual-studio-installer.png) [Visual Studio Test Platform Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VsTestPlatformToolInstaller). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
 
