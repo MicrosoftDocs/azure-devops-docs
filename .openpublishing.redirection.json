@@ -4815,6 +4815,36 @@
         "source_path": "docs/security/set-build-release-permissions.md",
         "redirect_url": "/vsts/build-release/set-permissions",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-active-directory-vsts-account.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
        }
     ]
 }
