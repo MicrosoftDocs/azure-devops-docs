@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build and release tasks
 
@@ -25,7 +26,7 @@ ms.date: 08/18/2016
 | ![icon](build/_img/grunt.png) [Grunt](build/grunt.md). The JavaScript Task Runner | VSTS, TFS 2015.3 and newer |
 | ![icon](build/_img/gulp.png) [Gulp](build/gulp.md). Node.js streaming task based build system | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/index-sources-publish-symbols.png) [Index Sources & Publish Symbols](build/index-sources-publish-symbols.md). Index your source code and publish symbols to a file share | VSTS, TFS 2015 RTM and newer |
-| ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/jenkins-queue-job.png) [Jenkins Queue Job](build/jenkins-queue-job.md). Queue a job on a Jenkins server | VSTS, TFS 2017 RTM and newer |
 | ![icon](build/_img/maven.png) [Maven](build/maven.md). Build with Apache Maven | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/net-core-cli.png) [.NET Core CLI](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI). Build, test, and publish using the .NET Core command line  | VSTS, TFS 2018 |

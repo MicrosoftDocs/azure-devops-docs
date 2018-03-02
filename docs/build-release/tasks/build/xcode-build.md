@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: dastahel
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018')
 
 # Build: Xcode Build
 

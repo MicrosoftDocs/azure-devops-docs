@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: amullans
 ms.date: 7/05/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Tool: NuGet Tool Installer
 

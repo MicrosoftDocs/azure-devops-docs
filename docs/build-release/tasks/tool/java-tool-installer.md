@@ -9,6 +9,7 @@ ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 11/15/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Tool: Java Tool Installer
 
