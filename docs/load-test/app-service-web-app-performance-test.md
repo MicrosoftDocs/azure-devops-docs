@@ -55,33 +55,30 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
-1. Create your performance test. Set the details and run the test. 
-   You can watch the results in real time while the test runs.
+1. Create your performance test. Set the details and run the test. Your web app's default URL is added automatically. 
+   You can change the URL to test other pages (HTTP GET requests only). To simulate local conditions and reduce latency, 
+   select a location closest to your users for generating load.
 
-   For example, suppose you have an app that gave out coupons at last year's holiday sale. 
-   This event lasted 15 minutes with a peak load of 100 concurrent customers. 
-   You want to double the number of customers this year. You also want to improve 
-   customer satisfaction by reducing the page load time from 5 seconds to 2 seconds. 
-   So, you can test your updated app's performance with 250 users for 15 minutes.
+   ![Create, set up, and run your performance test](_img/app-service-web-app-performance-test/azure-np-new-performance-test.png)
 
    You simulate load on your app by generating virtual users (customers) 
    who visit your web site at the same time. This will show how many 
    requests are failing or responding slowly.
 
-   ![Create, set up, and run your performance test](_img/app-service-web-app-performance-test/azure-np-new-performance-test.png)
+   As an example, suppose you have an app that gave out coupons at last year's holiday sale. 
+   This event lasted 15 minutes with a peak load of 100 concurrent customers. 
+   You want to double the number of customers this year. You also want to improve 
+   customer satisfaction by reducing the page load time from 5 seconds to 2 seconds. 
+   So, you can test your updated app's performance with 250 users for 15 minutes.
 
-   * Your web app's default URL is added automatically. 
-     You can change the URL to test other pages (HTTP GET requests only).
-
-   * To simulate local conditions and reduce latency, 
-     select a location closest to your users for generating load.
-
-   Here's the test in progress. During the first minute, 
+   [What is the maximum test duration and number of concurrent users?](reference-qa.md#qaazure-limits)
+   
+1. Watch the progress in real time while the test runs. During the first minute, 
    the page loads slower than is required.
 
    ![Performance test in progress with real-time data](_img/app-service-web-app-performance-test/azure-np-running-perf-test.png)
 
-   After the test is done, you can see that the page loads much faster 
+1. After the test is done, view the final results. You can see that the page loads much faster 
    after the first minute. This helps identify where you might start troubleshooting the problem.
 
    ![Completed performance test shows results, including failed requests](_img/app-service-web-app-performance-test/azure-np-perf-test-done.png)
@@ -116,7 +113,7 @@ To upload and run a Visual Studio Web Test file:
 
    ![Selecting the user load and duration](_img/app-service-web-app-performance-test/multiple-01-authoring-blade3.png)
 
-   After the test has finished, you see the results in two panes. The left pane
+1. After the test has finished, view the results in the two panes. The left pane
    shows the performance information as a series of charts.
 
    ![The performance results pane](_img/app-service-web-app-performance-test/multiple-01a-results.png)

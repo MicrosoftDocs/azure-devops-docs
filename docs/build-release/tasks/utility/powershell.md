@@ -28,6 +28,27 @@ DotNetFramework
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PowerShell@2
+  inputs:
+#   targetType: filePath # filePath (default), inline
+    filePath:
+    arguments:
+#   script: # Write your powershell commands here.Write-Host Hello World
+#   errorActionPreference: stop # stop (default), continue, silentlyContinue
+#   failOnStderr: false
+#   ignoreLASTEXITCODE: false
+    workingDirectory:
+```
+
+[//]: # (::: moniker-end)
+
 ## Examples
 
 ### Hello World

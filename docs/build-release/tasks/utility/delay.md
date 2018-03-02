@@ -29,6 +29,20 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Delay@1
+  inputs:
+#   delayForMinutes: 0
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

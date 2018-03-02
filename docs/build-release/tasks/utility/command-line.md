@@ -57,6 +57,22 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CmdLine@2
+  inputs:
+#   script: echo Write your commands here
+    workingDirectory:
+#   failOnStderr: false
+```
+
+[//]: # (::: moniker-end)
+
 ## Example
 
 On the Build tab of a build definition, add these steps:

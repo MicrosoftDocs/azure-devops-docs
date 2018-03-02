@@ -41,6 +41,31 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricComposeDeploy@0
+  inputs:
+    clusterConnection:
+#   composeFilePath: **/docker-compose.yml
+#   applicationName: fabric:/Application1
+#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword, None
+    dockerRegistryConnection:
+    azureSubscription:
+    registryUserName:
+    registryPassword:
+#   passwordEncrypted: True
+    deployTimeoutSec:
+    removeTimeoutSec:
+    getStatusTimeoutSec:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 

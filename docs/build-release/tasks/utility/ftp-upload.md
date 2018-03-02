@@ -61,6 +61,32 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: FtpUpload@1
+  inputs:
+#   credentialsOption: serviceEndpoint # serviceEndpoint (default), inputs
+    serverEndpoint:
+    serverUrl:
+    username:
+    password:
+    rootDirectory:
+#   filePatterns: **
+#   remoteDirectory: /upload/$(Build.BuildId)/
+#   clean: false
+#   cleanContents: false
+#   overwrite: true
+#   preservePaths: false
+#   trustSSL: false
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

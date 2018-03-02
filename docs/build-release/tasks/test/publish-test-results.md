@@ -47,6 +47,26 @@ The build agent must have the following capabilities:
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishTestResults@2
+  inputs:
+#   testRunner: JUnit # JUnit (default), NUnit, VSTest, XUnit
+#   testResultsFiles: **\TEST-*.xml
+#   searchFolder: $(System.DefaultWorkingDirectory)
+#   mergeTestResults: false
+    testRunTitle:
+    platform:
+    configuration:
+#   publishRunAttachments: true
+```
+
+[//]: # (::: moniker-end)
 
 ## More Information
 
