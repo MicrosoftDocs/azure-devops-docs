@@ -37,7 +37,7 @@ and for unlimited [Visual Studio subscribers](https://www.visualstudio.com/produ
 Learn [what else you get with VSTS](https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use VSTS with any IDE or code editor, like:
 
-*	[Eclipse, Android Studio, or IntelliJ](http://java.visualstudio.com/Docs/tools/intro)
+*	[Eclipse, Android Studio, or IntelliJ](/vsts/java)
 *	Xcode (see [Git](../git/share-your-code-in-git-xcode.md) or [TFVC](../tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
