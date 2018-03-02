@@ -116,6 +116,37 @@ Working directory for the build. If you leave it blank, it is the root of the re
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamariniOS@1
+  inputs:
+#   solutionFile: **/*.sln
+#   configuration: Release
+#   clean: false
+#   packageApp: True
+#   buildForSimulator: false
+#   runNugetRestore: true
+    args:
+    workingDirectory:
+#   buildToolOption: xbuild # xbuild (default), msbuild
+    mdtoolFile:
+#   signingOption: file # file (default), id
+    signingIdentity:
+#   signingUnlockDefaultKeychain: False
+    signingDefaultKeychainPassword:
+    signingProvisioningProfileID:
+    signingP12File:
+    signingP12Password:
+    signingProvisioningProfileFile:
+#   signingRemoveProfile: False
+```
+
+[//]: # (::: moniker-end)
 
 ## Example 
 

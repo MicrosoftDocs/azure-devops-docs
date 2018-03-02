@@ -43,6 +43,26 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApi).
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: InvokeRESTAPI@1
+  inputs:
+    serviceConnection:
+#   method: POST # OPTIONS, GET, HEAD, POST (default), PUT, DELETE, TRACE, PATCH
+#   headers: {Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}
+    body:
+    urlSuffix:
+#   waitForCompletion: false # true, false (default)
+    successCriteria:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

@@ -46,6 +46,20 @@ Arguments that you want to pass to CMake.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CMake@1
+  inputs:
+#   workingDirectory: build
+    cmakeArgs:
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

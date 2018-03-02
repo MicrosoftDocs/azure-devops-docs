@@ -31,6 +31,25 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBus).
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishToAzureServiceBus@1
+  inputs:
+    azureSubscription:
+    messageBody:
+#   signPayload: false
+    certificateString:
+    signatureKey:
+#   waitForCompletion: false
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

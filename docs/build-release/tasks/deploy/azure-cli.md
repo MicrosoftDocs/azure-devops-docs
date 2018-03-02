@@ -62,6 +62,26 @@ None
 | **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureCLI@1
+  inputs:
+    azureSubscription:
+#   scriptLocation: scriptPath # inlineScript, scriptPath (default)
+    scriptPath:
+    inlineScript:
+    arguments:
+    workingDirectory:
+#   failOnStandardError: false
+```
+
+[//]: # (::: moniker-end)
+
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
