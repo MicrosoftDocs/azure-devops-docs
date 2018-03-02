@@ -41,10 +41,10 @@ Developers have access to a variety of tools through these versions of Visual St
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale Supports designing, building and managing complex enterprise applications 
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process
 - **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
-- **[Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
-- **[IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
-- **[Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
+- **[Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
+- **[Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
+- **[IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
+- **[Visual Studio Code](/vsts/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
 
 
 

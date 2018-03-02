@@ -97,7 +97,7 @@ coverage in different areas.
 
 ## See also
 
-[VSTS Java website](http://java.visualstudio.com/)
+[VSTS Java website](/vsts/java)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

@@ -145,14 +145,14 @@ add code, work items, or more users.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
+	*	Git with [Eclipse](https:///vsts/java/download-eclipse-plug-in), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
-	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
+	[Android Studio](/vsts/java/download-android-studio-plug-in), 
+	[IntelliJ](/vsts/java/download-intellij-plug-in), 
 	[Visual Studio](../git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
+	*	TFVC using [Eclipse](https:///vsts/java/download-eclipse-plug-in), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](../tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)

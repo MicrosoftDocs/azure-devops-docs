@@ -198,7 +198,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 </table> 
 
-1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](http://java.visualstudio.com/Downloads/eclipseplugin/Index).
+1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](/vsts/java/download-eclipse-plug-in).
 2. Requires the [Team Founcation Server Office Integration add-in](https://www.visualstudio.com/downloads/?q=Office+Integration). 
 
 
@@ -228,7 +228,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 You can bulk update work items to add or remove tags.
 
 >[!NOTE]  
-><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions. &nbsp;&nbsp; 
+><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions. &nbsp;&nbsp;ï¿½
 
 - When connecting to VSTS and TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
