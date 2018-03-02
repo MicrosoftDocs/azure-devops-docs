@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your .NET desktop app for Windows
 
@@ -37,7 +38,17 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
+[//]: # (::: moniker range="vsts")
+
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="< vsts")
+
+**TFS**: Does not apply.
+
+[//]: # (::: moniker-end)
 
 ---
 
