@@ -33,6 +33,24 @@ The build agent must have the following capabilities:
 | **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishCodeCoverageResults@1
+  inputs:
+#   codeCoverageTool: JaCoCo # Cobertura, JaCoCo (default)
+    summaryFileLocation:
+    reportDirectory:
+    additionalCodeCoverageFiles:
+#   failIfCoverageEmpty: false
+```
+
+[//]: # (::: moniker-end)
+
 ## More Information
 
 * [Continuous testing scenarios and capabilities](../../test/index.md)

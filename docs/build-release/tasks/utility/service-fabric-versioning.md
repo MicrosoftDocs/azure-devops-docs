@@ -103,6 +103,30 @@ None
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricUpdateManifests@2
+  inputs:
+#   updateType: Manifest versions # Manifest versions (default), Docker image settings
+    applicationPackagePath:
+#   versionSuffix: .$(Build.BuildNumber)
+#   versionBehavior: Append # Append (default), Replace
+#   updateOnlyChanged: false
+    pkgArtifactName:
+#   logAllChanges: true
+#   compareType: LastSuccessful # LastSuccessful (default), Specific
+    buildNumber:
+#   overwriteExistingPkgArtifact: true
+    imageDigestsPath:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
