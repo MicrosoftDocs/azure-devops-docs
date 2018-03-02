@@ -34,6 +34,26 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: SSH@0
+  inputs:
+    sshEndpoint:
+#   runOptions: commands # commands (default), script, inline
+    commands:
+    scriptPath:
+    inline:
+    args:
+#   failOnStdErr: True
+```
+
+[//]: # (::: moniker-end)
+
 ##See also
 
 * [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)

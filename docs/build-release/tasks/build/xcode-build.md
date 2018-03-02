@@ -213,7 +213,6 @@ You can specify this argument if you have selected Use xctool and included `test
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-
 ## Example 
 
 [Build and test Xcode projects](../../apps/mobile/xcode-ios.md)

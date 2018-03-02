@@ -39,6 +39,21 @@ Working directory. If you leave it blank, the working directory is the root of y
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CocoaPods@0
+  inputs:
+    workingDirectory:
+#   forceRepoUpdate: False
+    projectDirectory:
+```
+
+[//]: # (::: moniker-end)
 
 ## Q & A
 

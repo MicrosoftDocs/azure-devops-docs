@@ -259,25 +259,22 @@ portal, one of the following criteria must be satisfied:
 * The account is backed by [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/)
   and the user is an owner of the account.
 
-### Q: Is there a limit on how long I can run a test? 
+<a name="qaazure-limits"></a>
+### Q: What is the maximum test duration and number of concurrent users? 
 
-**A**: Yes, you can run your test up to an hour in the Azure Portal.
+**A**: The limitations for load testing in the Azure Portal depend on the web application service tier license type, as follows:
 
-### Q: How much time do I get to run performance tests? 
+| License type |  Max duration (mins) | Max user load (VUser) |
+| --- |:---:|:---:|
+| Free | 1 | 40 |
+| Shared | 30 | 1,000 |
+| Basic/Standard/Premium | 60 | 20,000 |
 
-**A**: After public preview, you get 20,000 virtual user minutes (VUMs) 
-free each month with your VSTS account. 
-A VUM is the number of virtual users multipled by the number 
-of minutes in your test. If your needs exceed the free limit, 
-you can purchase more time and pay only for what you use.
 
-### Q: Where can I check how many VUMs I've used so far?
+### Q: Where can I check how much test time I've used so far?
 
-**A**: You can check this amount in the Azure Portal.
-
-![Go to your VSTS account](_img/app-service-web-app-performance-test/azure-np-vso-accounts.png)
-
-![Check VUMs used](_img/app-service-web-app-performance-test/azure-np-vso-accounts-vum-summary.png)
+**A**: You can check this in the Azure Portal. For details, see
+[Manage pricing and data volume in Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-pricing#review-pricing-plans-and-estimate-costs).
 
 ### Q: What is the default option and are my existing tests impacted?
 

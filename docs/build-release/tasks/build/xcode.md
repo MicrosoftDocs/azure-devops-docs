@@ -218,6 +218,48 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Xcode@4
+  inputs:
+#   actions: build
+#   configuration: $(Configuration)
+#   sdk: $(SDK)
+#   xcWorkspacePath: **/*.xcodeproj/project.xcworkspace
+    scheme:
+#   xcodeVersion: default # default (default), 8, 9, specifyPath
+    xcodeDeveloperDir:
+#   packageApp: False
+    archivePath:
+#   exportPath: output/$(SDK)/$(Configuration)
+#   exportOptions: auto # auto (default), plist, specify
+#   exportMethod: development
+    exportTeamId:
+    exportOptionsPlist:
+    exportArgs:
+#   signingOption: nosign # nosign (default), default, manual, auto
+    signingIdentity:
+    provisioningProfileUuid:
+    teamId:
+#   destinationPlatformOption: default # default (default), iOS, tvOS, macOS, custom
+    destinationPlatform:
+#   destinationTypeOption: simulators # simulators (default), devices
+#   destinationSimulators: iPhone 7
+    destinationDevices:
+    args:
+    workingDirectory:
+    outputPattern:
+#   useXcpretty: False
+#   publishJUnitResults: False
+```
+
+[//]: # (::: moniker-end)
+
 ## Example
 
 [Build your Xcode app](../../apps/mobile/xcode-ios.md)
