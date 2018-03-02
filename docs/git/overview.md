@@ -28,7 +28,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
 VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
-and [IntelliJ](https:///vsts/java/download-intellij-plug-in).</p>
+and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
 
 <p>New to Git? Learn how to share code with Git and VSTS with the following getting started guides:</p>
