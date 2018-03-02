@@ -51,6 +51,21 @@ Xamarin account email address.</td>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamarinComponentRestore@0
+  inputs:
+#   solutionFile: **/*.sln
+    email:
+    password:
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

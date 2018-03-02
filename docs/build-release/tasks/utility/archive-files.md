@@ -94,6 +94,25 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ArchiveFiles@2
+  inputs:
+#   rootFolderOrFile: $(Build.BinariesDirectory)
+#   includeRootFolder: True
+#   archiveType: zip # zip (default), 7z, tar, wim
+#   tarCompression: gz # gz (default), bz2, xz, none
+#   archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+#   replaceExistingArchive: true
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
