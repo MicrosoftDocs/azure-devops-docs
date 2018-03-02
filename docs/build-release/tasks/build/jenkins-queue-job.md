@@ -80,6 +80,27 @@ None
 
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint:
+    jobName:
+#   isMultibranchJob: False
+    multibranchPipelineBranch:
+#   captureConsole: True
+#   capturePipeline: True
+#   isParameterizedJob: False
+    jobParameters:
+```
+
+[//]: # (::: moniker-end)
+
 ## Team Foundation Server Plug-in
 
 You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build. 

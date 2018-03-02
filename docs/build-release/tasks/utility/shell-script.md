@@ -58,6 +58,24 @@ Select if you want this step to fail if any errors are written to the StandardEr
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ShellScript@2
+  inputs:
+    scriptPath:
+    args:
+#   disableAutoCwd: false
+    cwd:
+#   failOnStandardError: false
+```
+
+[//]: # (::: moniker-end)
+
 ## Example
 
 Create ```test.sh``` at the root of your repo:
