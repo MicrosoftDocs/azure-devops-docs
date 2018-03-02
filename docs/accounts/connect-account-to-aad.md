@@ -43,12 +43,12 @@ One of the following scenarios likely applies to your situation:
 
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
   - This document is for you!
-- I use a Microsoft account, jamalhartnett@fabrikam.com, for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
-    - Work with CSS to help with the migration by [creating a new support ticket](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636538111396376813)
+- I use a Microsoft account, jhartnett@fabrikam.com, for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
+    - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
 - I use a Microsoft account, jamal@outlook.com, and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
-    - Work with CSS to help with the migration by [creating a new support ticket](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636538111396376813)
+    - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
 
@@ -57,7 +57,7 @@ One of the following scenarios likely applies to your situation:
 The following steps outline the high-level process of connecting VSTS to Azure AD.
 
 1. Ensure all VSTS users are in the target Azure AD tenant, either as members or Business-to-Business (B2B) guests.
-2. Inform your users of the upcoming change.
+2. Inform your users of the upcoming change and ask them to check in all code changes before the process begins.
 3. Connect your VSTS account to your organization’s directory.
 4. Inform users of the completed change and that they should sign in with their Azure AD credentials from now on.
 
@@ -87,7 +87,7 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
     c. If no paid Azure AD license exists in the tenant, every invited user gets the rights that the Azure AD Free edition offers.
 
-    d. If users exist, but their email addresses are different from their Microsoft accounts, work with CSS to help with the migration by [creating a new support ticket](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636538111396376813).
+    d. If users exist, but their email addresses are different from their Microsoft accounts, work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support).
 
 ## Inform users of the upcoming change
 
@@ -100,12 +100,12 @@ While there is no downtime, users will be affected by this change, so it's best 
     - Ensure this user is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
 
     - If you can't meet these requirements with your own identity, you should:
-        - Create a new Microsoft account (for example FabrikamMigration@outlook.com
-        - Add the new identity as an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
-        - Add the new identity as a B2B guest of the target Azure AD tenant
-        - Use this new user to complete the migration
+        - Create a new Microsoft account (for example FabrikamMigration@outlook.com).
+        - Add the new identity as an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca) and sign into the VSTS account.
+        - Add the new identity as a B2B guest of the target Azure AD tenant and accept the email invitation.
+        - Use this new user to complete the migration.
 
-2. [Sign in to the Azure portal](https://portal.azure.com/) with your personal Microsoft account as the VSTS account owner.
+2. [Sign in to the Azure portal](https://portal.azure.com/) with the Microsoft account choosen in step 1.
 
    - The target tenant is selected in the upper right corner of the Azure portal.
 
@@ -115,13 +115,13 @@ While there is no downtime, users will be affected by this change, so it's best 
 
     ![Azure portal, browse to team services](_img/connect-account-to-aad/team-services-accounts-aad.PNG)
 
-4. Select your account. If you don't see your account, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that the user is an owner of the VSTS account in question.
+4. Select your VSTS account. If you don't see your account, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is the owner of the VSTS account in question.".
 
 5. Choose **Connect**.
 
     - If **Connect** is greyed out:
         - You are either already connected to a tenant (disconnect is enabled) or
-        - Your VSTS account may not be linked to Azure AD (link would be enabled).
+        - Your VSTS account may not be linked to Azure AD (link would be enabled). [Learn more about linking to setup billing](https://docs.microsoft.com/en-us/vsts/billing/set-up-billing-for-your-account-vs).
 
    ![Connect unavailable](_img/connect-account-to-aad/connect-greyed-out.png)
 
@@ -131,7 +131,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 7. Your account is now connected to your organization's directory.
 
-8. To confirm that the process has been completed, open a clean browser (in private) and sign in to your VSTS account with your Azure AD/work credentials.
+8. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
 9. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change
@@ -144,7 +144,7 @@ When you inform your users of the completed change, include the following tasks 
 
     Deleting the **%LocalAppData%\GitCredentialManager\tenant.cache** file on each client machine will resolve the issue.
 
-2. If you use alternate authentication tokens (PAT, SSH) used by tools or scripts, [regenerate new tokens](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate) for the Azure AD user.
+2. If you use alternate authentication tokens used by tools or scripts, [regenerate new tokens](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate) for the Azure AD user.
 
     a. On your VSTS page, in the upper right, choose your profile image and choose **Security**.
 
@@ -154,7 +154,7 @@ When you inform your users of the completed change, include the following tasks 
 
 3. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure AD identity or simply [delete your Microsoft account](https://support.microsoft.com/en-us/help/12412/microsoft-account-how-to-close-account) if it’s no longer needed .
 
-4. If you used  a Microsoft   account to sign up for a [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
+4. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
 
    [More questions about connecting?](faq-azure-access.md#faq-connect)
 
@@ -164,14 +164,9 @@ When you inform your users of the completed change, include the following tasks 
 
 **A:** Visual Studio subscription administrators typically assign subscriptions to a user’s corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user’s benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity’s email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
 
-**Q:** What if my SSH/PAT token is no longer valid?
+**Q:** What if my SSH token is no longer valid?
 
-**A:** Complete the following steps:
-
-   1. On your VSTS page, in the upper right, choose your **profile image** and then choose **Security**.
-   2. On the Personal access tokens page, choose **Add**.
-   3. Enter a description and go to the bottom of the page and choose **Create token**.
-   4. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
+**A:** Work with CSS to help with the migration of your existing SSH tokens by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
 
 **Q:** What if sign-in is required when using the identity picker?
 
