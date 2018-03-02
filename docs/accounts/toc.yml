@@ -12,27 +12,17 @@
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Add administrators or set permissions at the project or collection level
+  - name: Add administrators or set permissions
     href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
   - name: Add a team administrator
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: "1 - Change Azure AD tenant: set up"
-    href: change-azure-active-directory-vsts-account.md
-  - name: "2 - Change Azure AD tenant: prepare source directory"
-    href: change-azure-ad-vsts-account-prep-src.md
-  - name: "3 - Change Azure AD tenant: prepare target directory"
-    href: change-azure-ad-vsts-account-prep-target.md
-  - name: "4 - Change Azure AD tenant: disconnect from source directory"
-    href: change-azure-ad-vsts-account-disconnect.md
-  - name: "5 - Change Azure AD tenant: connect to target directory"
-    href: change-azure-ad-vsts-account-connect.md
-  - name: "6 - Change Azure AD tenant: reassign ownership to directory member"
-    href: change-azure-ad-vsts-account-reassign-owner.md
+  - name: Content VSTS account to AAD
+    href: connect-account-to-aad.md
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Grant or restrict permissions to select tasks
+  - name: Grant or restrict permissions
     href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
