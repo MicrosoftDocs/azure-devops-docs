@@ -87,11 +87,11 @@
     href: android-studio-faq.md
 - name: Resources
   items:
-  - name: Get IntelliJ plug-in
+  - name: Get the IntelliJ plug-in
     href: download-intellij-plug-in.md
-  - name: Get Eclipse plug-in
+  - name: Get the Eclipse plug-in
     href: download-eclipse-plug-in.md
-  - name: Get Android Studio plug-in
+  - name: Get the Android Studio plug-in
     href: download-android-studio-plug-in.md
   - name: Build and Release
     href: /vsts/build-release/index
