@@ -36,6 +36,22 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: queryWorkItems@0
+  inputs:
+    queryId:
+#   maxThreshold: 0
+#   minThreshold: 0
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

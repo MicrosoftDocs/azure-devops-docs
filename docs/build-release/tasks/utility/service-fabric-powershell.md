@@ -37,6 +37,24 @@ deploy to a Service Fabric cluster.
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricPowerShell@1
+  inputs:
+    clusterConnection:
+#   ScriptType: FilePath # FilePath (default), InlineScript
+    ScriptPath:
+#   Inline: # You can write your PowerShell scripts inline here. # You can also pass predefined and custom variables to this script using arguments
+    ScriptArguments:
+```
+
+[//]: # (::: moniker-end)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
