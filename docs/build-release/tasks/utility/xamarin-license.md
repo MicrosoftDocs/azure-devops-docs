@@ -19,7 +19,7 @@ ms.date: 08/10/2016
 
 ## Deprecated
 
-> We're deprecating this task because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md). We recommend that you remove this task from your build to avoid disruption when we remove the task from the product.
+> This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md).
 
 ## Demands
 
@@ -39,7 +39,6 @@ None
 ## Example 
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
-
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -34,6 +34,25 @@ None
 | Parallel count (**VSTS**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish:
+    ArtifactName:
+    publishLocation:  # Container, FilePath
+#   TargetPath: \\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)
+#   Parallel: false
+#   ParallelCount: 8
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

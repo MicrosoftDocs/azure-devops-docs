@@ -53,6 +53,21 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: DeleteFiles@1
+  inputs:
+    SourceFolder:
+#   Contents: myFileShare
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

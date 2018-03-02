@@ -91,7 +91,23 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 ```
 
 For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
- 
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription:
+    KeyVaultName:
+#   SecretsFilter: * # EditableOptions
+```
+
+[//]: # (::: moniker-end)
+
 ## Contact Information
 
 Contact [RM\_Customer\_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,

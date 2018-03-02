@@ -56,6 +56,22 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ManualIntervention@8
+  inputs:
+    instructions:
+    emailRecipients:
+#   onTimeout: reject # reject (default), resume
+```
+
+[//]: # (::: moniker-end)
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->

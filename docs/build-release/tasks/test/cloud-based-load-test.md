@@ -42,6 +42,28 @@ The build agent must have the following capabilities:
 | **Number of permissible threshold violations** | Optional. The number of critical violations that must occur for the load test to be deemed unsuccessful, aborted, and marked as failed. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CloudLoadTest@1
+  inputs:
+    connectedServiceName:
+#   TestDrop: $(System.DefaultWorkingDirectory)
+    LoadTest:
+#   activeRunSettings: useFile # useFile (default), changeActive
+    runSettingName:
+    testContextParameters:
+    TestSettings:
+    ThresholdLimit:
+#   MachineType: 0 # 0 (default), 2
+```
+
+[//]: # (::: moniker-end)
+
 ## Examples
 
 * [Load test your app in the cloud](../../../load-test/index.md)
