@@ -345,7 +345,7 @@ In addition to connecting through a web browser, you can connect to a team proje
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
