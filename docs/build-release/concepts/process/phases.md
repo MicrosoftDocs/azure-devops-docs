@@ -202,6 +202,8 @@ an agentless phase are similar to those of the [agent phase](#agent-props).
 
 ![Agentless phase properties](_img/phases-05.png)
 
+>At present you can add only one task to each agentless phase in your release definition.
+
 ## Deployment group phase
 
 >[!NOTE]
