@@ -8,8 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Service Fabric PowerShell 
+
+**VSTS**
  
 ![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 

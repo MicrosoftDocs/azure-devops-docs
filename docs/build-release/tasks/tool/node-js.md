@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 4/17/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Tool: Node Tool Installer
 

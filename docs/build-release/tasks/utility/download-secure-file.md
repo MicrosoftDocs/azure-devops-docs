@@ -9,6 +9,7 @@ ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Download Secure File
 
