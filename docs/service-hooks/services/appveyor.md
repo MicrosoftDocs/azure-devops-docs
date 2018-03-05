@@ -41,7 +41,7 @@ for pricing related to their services.
 
 ####Q: Do I need to sign into AppVeyor using my VSTS ID in order to setup this integration?
 
-A: No. If you use an account that's not already assocaited with your Visual Studio ID,
+A: No. If you use an account that's not already associated with your Visual Studio ID,
 you'll authorize access to your VSTS account when you add Git repositories from VSTS. 
 
 ####Q: Does AppVeyor change anything in my VSTS account?
