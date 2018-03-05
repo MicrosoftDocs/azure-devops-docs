@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Publish Code Coverage Results
 
@@ -32,6 +33,24 @@ The build agent must have the following capabilities:
 | **Report Directory** | The path of the code coverage HTML report directory. The report directory is published for subsequent viewing as an artifact of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura` |
 | **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishCodeCoverageResults@1
+  inputs:
+#   codeCoverageTool: JaCoCo # Cobertura, JaCoCo (default)
+    summaryFileLocation:
+    reportDirectory:
+    additionalCodeCoverageFiles:
+#   failIfCoverageEmpty: false
+```
+
+[//]: # (::: moniker-end)
 
 ## More Information
 

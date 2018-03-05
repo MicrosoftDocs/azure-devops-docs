@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Utility: FTP Upload
 
@@ -60,6 +61,32 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: FtpUpload@1
+  inputs:
+#   credentialsOption: serviceEndpoint # serviceEndpoint (default), inputs
+    serverEndpoint:
+    serverUrl:
+    username:
+    password:
+    rootDirectory:
+#   filePatterns: **
+#   remoteDirectory: /upload/$(Build.BuildId)/
+#   clean: false
+#   cleanContents: false
+#   overwrite: true
+#   preservePaths: false
+#   trustSSL: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Q & A
 

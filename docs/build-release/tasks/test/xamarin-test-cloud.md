@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/16/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Xamarin Test Cloud
 
@@ -40,6 +41,31 @@ None
 | **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamarinTestCloud@1
+  inputs:
+    appFile:
+    dsymFile:
+    teamApiKey:
+    email:
+    devices:
+#   series: master
+    testAssemblyDirectory:
+#   parallelizationOption: none # none (default), --fixture-chunk, --test-chunk
+#   localeOption: en_US # da_DK, nl_NL, en_GB, en_US (default), fr_FR, de_DE, ja_JP, ru_RU, es_MX, es_ES, user
+    userDefinedLocale:
+#   testCloudFile: **/packages/**/tools/test-cloud.exe
+    optionalArgs:
+#   publishNUnitResults: true
+```
+
+[//]: # (::: moniker-end)
 
 ## Example 
 

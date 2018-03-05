@@ -19,18 +19,12 @@ Sign up for a VSTS account, add users, and manage permissions and access.
 ## 5-Minute Quickstarts  
 
 * [Create your VSTS account](create-account-msa-or-work-student.md)
-<!-- Can't add "add user" which is really obvious quick start item because it must then be in the quick starts in
-     the toc, and there's a rule that you must not duplicate TOC entries for browsing.  There is a hard call here that
-     users are more likely to ignore quick starts after first blush usage, so they are more likely to find adding users
-     in the How-to Guides section.  The ripple effect is that truly new users using the index page won't be guided as
-     well as repeat users who need to find common tasks readily if they are browsing.
-     -->
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](change-azure-active-directory-vsts-account.md)
+* [Connect VSTS to AAD](connect-account-to-aad.md)
 
  
 ## Reference 

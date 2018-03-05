@@ -72,7 +72,8 @@ You can enable manual deployment approvals for each environment in a release def
 ### Approval notifications
 
 Release Management can send notifications such as an email message to the approver(s) defined for
-each approval step. 
+each approval step. Configure recipients and settings in the **Notifications** page of the 
+**Settings** hub.
 
 ![configuring notifications for manual approvals](_img/notifications.png)
   

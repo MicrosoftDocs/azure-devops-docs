@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/15/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Utility: Extract Files
 
@@ -55,6 +56,22 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ExtractFiles@1
+  inputs:
+#   archiveFilePatterns: *.zip
+    destinationFolder:
+#   cleanDestinationFolder: true
+```
+
+[//]: # (::: moniker-end)
 
 ## Q & A
 

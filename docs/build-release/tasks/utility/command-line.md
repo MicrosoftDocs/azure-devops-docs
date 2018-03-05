@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Utility: Command line
 
@@ -56,6 +57,22 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CmdLine@2
+  inputs:
+#   script: echo Write your commands here
+    workingDirectory:
+#   failOnStderr: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Example
 

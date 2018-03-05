@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Cloud-based Web Performance Test
 
@@ -44,6 +45,27 @@ The build agent must have the following capabilities:
 | **Run load test using** | Select **Automatically provisioned agents** if you want the cloud-based load testing service to automatically provision agents for running the load tests. The application URL must be accessible from the Internet.<br />Select **Self-provisioned agents** if you want to test apps behind the firewall. You must provision agents and register them against your VSTS account when using this option. See [Testing private/intranet applications using Cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/). |
 | **Fail test if Avg. Response Time (ms) exceeds** | Specify a threshold for the average response time in milliseconds. If the observed response time during the load test exceeds this threshold, the task will fail. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: QuickPerfTest@1
+  inputs:
+    connectedServiceName:
+    websiteUrl:
+    testName:
+#   vuLoad: 25 # 25 (default), 50, 100, 250
+#   runDuration: 60 # 60 (default), 120, 180, 240, 300
+#   geoLocation: Default # Default (default), East US, East US 2, Central US, West US, North Central US, South Central US, North Europe, West Europe, Southeast Asia, East Asia, Japan East, Japan West, Brazil South, Australia East, Australia Southeast
+#   machineType: 0 # 0 (default), 2
+#   avgResponseTimeThreshold: 0
+```
+
+[//]: # (::: moniker-end)
 
 ## More Information
 

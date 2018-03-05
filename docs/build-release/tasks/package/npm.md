@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 07/05/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Package: npm
 
@@ -71,7 +72,28 @@ ms.date: 07/05/2017
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
 
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Npm@1
+  inputs:
+#   command: install # install (default), publish, custom
+    workingDir:
+    verbose:
+    customCommand:
+#   customRegistry: useNpmrc # useNpmrc (default), useFeed
+    customFeed:
+    customEndpoint:
+#   publishRegistry: useExternalRegistry # useExternalRegistry (default), useFeed
+    publishFeed:
+    publishEndpoint:
+```
+
+[//]: # (::: moniker-end)
 
 ## Publish npm packages
 

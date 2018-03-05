@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Deploy: Service Fabric Application Deployment
 
@@ -35,6 +36,55 @@ deploy to a Service Fabric cluster.
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricDeploy@1
+  inputs:
+    applicationPackagePath:
+    serviceConnectionName:
+    publishProfilePath:
+    applicationParameterPath:
+#   compressPackage: false
+#   useDiffPackage: false
+    copyPackageTimeoutSec:
+    registerPackageTimeoutSec:
+#   overwriteBehavior: SameAppTypeAndVersion # Always, Never, SameAppTypeAndVersion (default)
+#   skipUpgradeSameTypeAndVersion: false
+#   skipPackageValidation: false
+#   overridePublishProfileSettings: false
+#   isUpgrade: true
+#   unregisterUnusedVersions: true
+#   upgradeMode: Monitored # Monitored (default), UnmonitoredAuto, UnmonitoredManual
+#   FailureAction: Rollback # Rollback (default), Manual
+    UpgradeReplicaSetCheckTimeoutSec:
+    ReplicaQuorumTimeoutSec:
+    TimeoutSec:
+#   ForceRestart: false
+    HealthCheckRetryTimeoutSec:
+    HealthCheckWaitDurationSec:
+    HealthCheckStableDurationSec:
+    UpgradeDomainTimeoutSec:
+#   ConsiderWarningAsError: false
+    DefaultServiceTypeHealthPolicy:
+    MaxPercentUnhealthyDeployedApplications:
+    UpgradeTimeoutSec:
+    ServiceTypeHealthPolicyMap:
+#   configureDockerSettings: false
+#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword
+    dockerRegistryConnection:
+    azureSubscription:
+    registryUserName:
+    registryPassword:
+#   passwordEncrypted: True
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

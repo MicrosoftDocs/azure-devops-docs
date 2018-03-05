@@ -340,7 +340,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Xcode](../../git/share-your-code-in-git-xcode.md)
 
- * [IntelliJ](http://java.visualstudio.com/docs/tools/intellij)
+ * [IntelliJ](/vsts/java/download-intellij-plug-in)
 
  * [Command line](../../git/share-your-code-in-git-cmdline.md)
 

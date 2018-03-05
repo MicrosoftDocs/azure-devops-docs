@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Deploy: SSH
 
@@ -33,6 +34,26 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Arguments** | The arguments to pass to the shell script. This parameter is available only when **Shell script** is selected for the **Run** option. |
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: SSH@0
+  inputs:
+    sshEndpoint:
+#   runOptions: commands # commands (default), script, inline
+    commands:
+    scriptPath:
+    inline:
+    args:
+#   failOnStdErr: True
+```
+
+[//]: # (::: moniker-end)
 
 ##See also
 

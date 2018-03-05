@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build: Gulp
 
@@ -56,6 +57,31 @@ gulp
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Gulp@0
+  inputs:
+#   gulpFile: gulpfile.js
+    targets:
+    arguments:
+    workingDirectory:
+#   gulpjs: node_modules/gulp/bin/gulp.js
+#   publishJUnitResults: false
+#   testResultsFiles: **/TEST-*.xml
+    testRunTitle:
+#   enableCodeCoverage: false
+#   testFramework: Mocha # Mocha (default), Jasmine
+    srcFiles:
+#   testFiles: test/*.js
+```
+
+[//]: # (::: moniker-end)
 
 ## Example
 

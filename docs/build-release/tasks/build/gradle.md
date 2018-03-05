@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build: Gradle 
  
@@ -105,6 +106,41 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Gradle@2
+  inputs:
+#   gradleWrapperFile: gradlew
+    options:
+#   tasks: build
+    workingDirectory:
+#   publishJUnitResults: true
+#   testResultsFiles: **/build/test-results/TEST-*.xml
+    testRunTitle:
+#   codeCoverageToolOption: None # None (default), Cobertura, JaCoCo
+#   codeCoverageClassFilesDirectories: build/classes/main/
+    codeCoverageClassFilter:
+#   codeCoverageFailIfEmpty: false
+#   javaHomeOption: JDKVersion # JDKVersion (default), Path
+#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
+    jdkDirectory:
+#   jdkArchitectureOption: x64 # x86, x64 (default)
+#   gradleOptions: -Xmx1024m
+#   sonarQubeRunAnalysis: false
+#   sqGradlePluginVersionChoice: specify # specify (default), build
+#   sonarQubeGradlePluginVersion: 2.6.1
+#   checkStyleRunAnalysis: false
+#   findBugsRunAnalysis: false
+#   pmdRunAnalysis: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
