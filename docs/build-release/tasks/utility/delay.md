@@ -8,10 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Delay
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/delay.png) &nbsp; Pause execution of the process for a fixed delay time.
 
