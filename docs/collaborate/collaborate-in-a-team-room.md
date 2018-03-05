@@ -15,7 +15,7 @@ ms.date: 02/20/2018
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms are deprecated for sual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2018 and later versionsas described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> **Feature availability:** Team Rooms are deprecated for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 > 
 > Several good solutions are available that integrate well with VSTS and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/).
 
