@@ -19,10 +19,10 @@ You use Team Explorer to manage work that is assigned to you, your team, or you
 
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include: 
-> - [Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
-> - [VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
-> - [VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
-> - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
+> - [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
+> - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
+> - [VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
+> - [Visual Studio Code](/vsts/java/vscode-extension)    
 >For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
 
 The operations available to you depend on which source control option—Team Foundation version control (TFVC) or Git—was selected to manage source code when the team project was created.
@@ -48,7 +48,7 @@ If you don't need Visual Studio, but do want to connect to VSTS or TFS or get on
 
 **Team Explorer plug-in for Eclipse**
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](http://java.visualstudio.com/Docs/tools/eclipse#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/vsts/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 
@@ -141,7 +141,7 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 - [Web portal](work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/docs/tools/eclipse) 
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
