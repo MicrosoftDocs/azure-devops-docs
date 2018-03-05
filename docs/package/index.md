@@ -6,6 +6,7 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016
+ms.topic: landing-page
 layout: LandingPage
 ---
 
