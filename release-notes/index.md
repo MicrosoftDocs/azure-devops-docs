@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 3/1/2018
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -25,11 +25,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
 |Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
-|@CurrentIteration +/- support|Work|2018.2|
 |Filtering on the Taskboard|Work|2018.2|
-|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|2019|
+|Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – VMs|Release|N/A|
 |[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
 |Distribute tests in CI pipeline using Phases|Test|2018.2|
 |Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
@@ -108,6 +106,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="13">[5 Mar 2018](2018/mar-05-vsts.md)</td>
+            <td>Avoid overwrites and protect performance using repository settings</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Trace GitHub sources to builds using build tags</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Isolate Azure Resource Manager service endpoints to Resource Groups</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Manage entity-specific security</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Share deployment status using a badge</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Deploy selectively based on the artifact triggering a release</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="21">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
