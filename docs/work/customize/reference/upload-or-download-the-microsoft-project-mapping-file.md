@@ -19,7 +19,7 @@ Use **TFSFieldMapping** to upload and download the Microsoft Project mapping fil
   
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
-The **TFSFieldMapping** command-line tool only works when run against an on-premises TFS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
+The **TFSFieldMapping** command-line tool works for both on-premises TFS and cloud-hosted VSTS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
 |Version | Change directory |
 |--------|-----------|
