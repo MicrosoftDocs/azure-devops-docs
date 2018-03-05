@@ -7,6 +7,7 @@ ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/20/2017
+ms.topic: landing-page
 layout: LandingPage
 ---
 
