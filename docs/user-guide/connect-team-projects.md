@@ -17,9 +17,9 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
-- [IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
-- [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
+- [Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
+- [IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
+- [Visual Studio Code](/vsts/java/vscode-extension)    
 
 >[!NOTE]
 >A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
@@ -311,7 +311,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse) 
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../feedback/give-feedback.md) 

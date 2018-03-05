@@ -82,7 +82,7 @@ You can perform most tasks for viewing and running queries from each of the quer
   
 
 > [!div class="mx-tdBreakAll"] 
-> |Task|Favorites|All& |&
+> |Task|Favorites|All|
 > |-------------|----------|---------|
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 

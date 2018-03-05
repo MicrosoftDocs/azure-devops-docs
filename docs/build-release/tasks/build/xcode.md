@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: dastahel
 ms.date: 11/13/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Build: Xcode
 
@@ -176,7 +177,7 @@ Enter an Xcode simulator name to be used for UI testing. For example, enter `iPh
 <tr>
 <td>Devices</td>
 <td>
-Enter the name of the device to be used for UI testing, such as `Raisa’s iPad`. Only one device is currently supported. Note that Apple does not allow apostrophes (`'`) in device names. Instead, right single quotation marks (`’`) can be used.
+Enter the name of the device to be used for UI testing, such as `Raisa's iPad`. Only one device is currently supported. Note that Apple does not allow apostrophes (`'`) in device names. Instead, right single quotation marks (`'`) can be used.
 </td>
 </tr>
 
