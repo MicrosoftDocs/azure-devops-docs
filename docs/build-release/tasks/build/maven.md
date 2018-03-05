@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build: Maven
 
@@ -84,6 +85,44 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Maven@2
+  inputs:
+#   mavenPomFile: pom.xml
+#   goals: package
+    options:
+#   publishJUnitResults: true
+#   testResultsFiles: **/TEST-*.xml
+    testRunTitle:
+#   codeCoverageToolOption: None # None (default), Cobertura, JaCoCo
+    codeCoverageClassFilter:
+    codeCoverageClassFilesDirectories:
+    codeCoverageSourceDirectories:
+#   codeCoverageFailIfEmpty: false
+#   javaHomeOption: JDKVersion # JDKVersion (default), Path
+#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
+    jdkDirectory:
+#   jdkArchitectureOption: x64 # x86, x64 (default)
+#   mavenVersionOption: Default # Default (default), Path
+    mavenDirectory:
+#   mavenSetM2Home: false
+#   mavenOptions: -Xmx1024m
+#   mavenAuthenticateFeed: true
+#   sonarQubeRunAnalysis: false
+#   sqMavenPluginVersionChoice: latest # latest (default), pom
+#   checkStyleRunAnalysis: false
+#   pmdRunAnalysis: false
+#   findBugsRunAnalysis: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Example
 

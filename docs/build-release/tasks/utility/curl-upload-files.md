@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Utility: cURL Upload Files
 
@@ -73,6 +74,28 @@ Arguments to pass to cURL.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: cURLUploader@2
+  inputs:
+    files:
+#   authType: ServiceEndpoint # ServiceEndpoint (default), UserAndPass
+    serviceEndpoint:
+    username:
+    password:
+    url:
+#   remotePath: /upload/$(Build.BuildId)/
+    options:
+#   redirectStderr: true
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

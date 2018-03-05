@@ -47,11 +47,11 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 <p><b>Integrated Development Environments (IDE)
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
-- [Eclipse (Team Explorer Everywhere)](http://java.visualstudio.com/Docs/tools/eclipse)       
+- [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
 - [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)      
-- [Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)     
-- [IntelliJ](http://java.visualstudio.com/Docs/tools/intellij)   
-- [Visual Studio Code](hhttp://java.visualstudio.com/Docs/tools/vscode)   
+- [Android Studio](/vsts/java/download-android-studio-plug-in)     
+- [IntelliJ](/vsts/java/download-intellij-plug-in)   
+- [Visual Studio Code](/vsts/java/vscode-extension)   
  
 To learn how to connect, see [Connect to a team project](connect-team-projects.md).  
 <br/>

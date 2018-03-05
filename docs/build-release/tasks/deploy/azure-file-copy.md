@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Deploy: Azure File Copy
 
@@ -72,12 +73,47 @@ in the firewall, and install the test certificate.
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureFileCopy@1
+  inputs:
+    SourcePath:
+#   azureConnectionType: ConnectedServiceNameARM # ConnectedServiceName, ConnectedServiceNameARM (default)
+    azureClassicSubscription:
+    azureSubscription:
+    Destination:  # AzureBlob, AzureVMs
+    classicStorage:
+    storage:
+    ContainerName:
+    BlobPrefix:
+    cloudService:
+    resourceGroup:
+#   ResourceFilteringMethod: machineNames # machineNames (default), tags
+    MachineNames:
+    vmsAdminUserName:
+    vmsAdminPassword:
+    TargetPath:
+    AdditionalArguments:
+#   enableCopyPrerequisites: false
+#   CopyFilesInParallel: true
+#   CleanTargetBeforeCopy: false
+#   skipCACheck: true
+    outputStorageUri:
+    outputStorageContainerSasToken:
+```
+
+[//]: # (::: moniker-end)
+
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
 * [Azure Cloud Service Deployment](azure-cloud-service-deployment.md)
 * [Azure Web App Deployment](azure-web-app-deployment.md)
-
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

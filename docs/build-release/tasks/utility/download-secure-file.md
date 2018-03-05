@@ -9,6 +9,7 @@ ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Download Secure File
 
@@ -23,3 +24,17 @@ Use this task to download a [secure file](../../concepts/library/secure-files.md
 | Argument | Description |
 | -------- | ----------- |
 | Secure File | Select the secure file to download to a temporary location on the agent. The file will be cleaned up after the build or release. |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile:
+```
+
+[//]: # (::: moniker-end)

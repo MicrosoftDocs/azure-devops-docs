@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Utility: Batch script
 
@@ -53,6 +54,24 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: BatchScript@1
+  inputs:
+    filename:
+    arguments:
+#   modifyEnvironment: False
+    workingFolder:
+#   failOnStandardError: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Example
 

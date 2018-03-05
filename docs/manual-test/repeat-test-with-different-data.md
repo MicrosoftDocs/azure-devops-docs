@@ -75,6 +75,10 @@ same data.
    tab to view or make changes to this work item. For example, 
    you can assign owners and track changes.
 
+>You can't add more than one shared parameter set to a single test case. If two test cases share similar data, for example, one test case needs
+customer ID, name, email, and phone, and the second needs customer ID, name and address, you might consider creating a single shared parameter set
+containing all of the parameters - even though a few of the columns in the set will remain unused in each test case. 
+
 ## Run a test case with parameters
 
 1. Select a test case with parameters and start it running.

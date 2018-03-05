@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build: Jenkins Queue Job
 
@@ -79,6 +80,27 @@ None
 </tr>
 
 </table>
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint:
+    jobName:
+#   isMultibranchJob: False
+    multibranchPipelineBranch:
+#   captureConsole: True
+#   capturePipeline: True
+#   isParameterizedJob: False
+    jobParameters:
+```
+
+[//]: # (::: moniker-end)
 
 ## Team Foundation Server Plug-in
 

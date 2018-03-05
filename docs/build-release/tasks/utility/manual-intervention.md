@@ -8,10 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Manual intervention
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps.
 
@@ -55,6 +56,22 @@ Users with **Manage deployment** permission on the environment can resume or rej
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ManualIntervention@8
+  inputs:
+    instructions:
+    emailRecipients:
+#   onTimeout: reject # reject (default), resume
+```
+
+[//]: # (::: moniker-end)
 
 ## Q & A
 

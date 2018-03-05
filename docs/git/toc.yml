@@ -198,6 +198,6 @@
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse
-      href: http://java.visualstudio.com/Docs/tools/eclipse
+      href: /vsts/java/download-eclipse-plug-in
     - name: IntelliJ IDEA
-      href: https://java.visualstudio.com/Docs/tools/intelliJ
+      href: /vsts/java/download-intellij-plug-in

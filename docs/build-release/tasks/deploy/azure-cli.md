@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Deploy: Azure CLI
 
@@ -61,6 +62,26 @@ None
 | **Advanced - Working Directory** | Optional. The working directory in which the script will execute. If not specified, this will be the folder containing the script file. |
 | **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureCLI@1
+  inputs:
+    azureSubscription:
+#   scriptLocation: scriptPath # inlineScript, scriptPath (default)
+    scriptPath:
+    inlineScript:
+    arguments:
+    workingDirectory:
+#   failOnStandardError: false
+```
+
+[//]: # (::: moniker-end)
 
 ## Related tasks
 

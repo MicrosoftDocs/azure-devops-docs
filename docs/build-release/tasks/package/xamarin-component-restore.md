@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Package: Xamarin component restore
 
@@ -51,6 +52,21 @@ Xamarin account email address.</td>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamarinComponentRestore@0
+  inputs:
+#   solutionFile: **/*.sln
+    email:
+    password:
+```
+
+[//]: # (::: moniker-end)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

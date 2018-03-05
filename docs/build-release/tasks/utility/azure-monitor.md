@@ -8,10 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Azure monitor
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
@@ -35,6 +36,24 @@ Succeeds if none of the alert rules are activated at the time of sampling.
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).
+
+[//]: # (::: moniker range="vsts")
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureMonitor@0
+  inputs:
+    connectedServiceNameARM:
+    ResourceGroupName:
+#   ResourceType: Microsoft.Insights/components # Microsoft.Insights/components (default), Microsoft.Web/sites, Microsoft.Storage/storageAccounts, Microsoft.Compute/virtualMachines
+    resourceName:
+    alertRules:
+```
+
+[//]: # (::: moniker-end)
 
 ## Q & A
 
