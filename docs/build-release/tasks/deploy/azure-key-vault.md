@@ -8,8 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Deploy: Azure Key Vault
+
+**VSTS**
 
 ### Overview
 

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/16/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Test: Xamarin Test Cloud
 

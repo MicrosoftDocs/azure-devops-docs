@@ -34,7 +34,7 @@ If your build consists of multiple jobs (for example, because of multiple phases
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2017 < tfs-2018")
+[//]: # (::: moniker range="tfs-2017")
 
 **TFS 2017:** To specify the source repository:
 

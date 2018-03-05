@@ -8,10 +8,11 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Utility: Publish To Azure Service Bus
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/publish-to-azure-service-bus.png) Send a message to an Azure Service Bus using a service connection and without using an agent.
 
