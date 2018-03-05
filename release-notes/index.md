@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 3/1/2018
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -25,11 +25,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
 |Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
-|@CurrentIteration +/- support|Work|2018.2|
 |Filtering on the Taskboard|Work|2018.2|
-|Release Management orchestration improvements – Selective artifacts download and tag based triggers|Release|2019|
+|Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – VMs|Release|N/A|
 |[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
 |Distribute tests in CI pipeline using Phases|Test|2018.2|
 |Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
@@ -108,6 +106,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="13">[5 Mar 2018](2018/mar-05-vsts.md)</td>
+            <td>Avoid overwrites and protect performance using repository settings</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Trace GitHub sources to builds using build tags</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Isolate Azure Resource Manager service endpoints to Resource Groups</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Manage entity-specific security</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Share deployment status using a badge</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Deploy selectively based on the artifact triggering a release</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
+        <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="21">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
@@ -222,7 +237,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Save packages from NuGet.org in your feed</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
-        <tr><td>Maven support now generally available</td><td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td></tr>
+        <tr><td>Maven support now generally available</td><td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td></tr>
         <tr><td>Easier feed creation and editing</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Previous package versions are now a full-page list</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td style="background:rgb(232, 232, 232);">Future</td></tr>
@@ -358,7 +373,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Create a folder in a repository using web</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Get a permanent link to code</td>
@@ -370,7 +385,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Wiki page deep linking</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Move page in Wiki using keyboard</td>
@@ -390,7 +405,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Personalized notifications for releases</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Manage variables using the List and Grid views in the new release definition editor</td>
@@ -398,19 +413,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Branch filters in environment triggers</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Improved Deployment Groups UI</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Run webtests using the VSTest task</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Chart widget for test plans and test suites</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Preview improvements and support for different log types generated by Visual Studio Test task</td>
@@ -455,27 +470,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Inline add on Delivery Plans</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Forks</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>File minimap</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Bracket matching</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Toggle white space</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Updated email templates for push notification</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Complete Work Items settings</td>
@@ -495,19 +510,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Pause build definitions</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Task input validations support</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>New Release Definition Editor general availability</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Enhancements in new Release Definition editor</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Release Template Extensibility</td>
@@ -527,11 +542,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Upload attachments to test runs and test results</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Test batching</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>JMeter 3.2 for load testing</td>
@@ -568,43 +583,43 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Filtering on Kanban board</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Wiki in Public Preview</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Improvements in Wiki edit experience</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Revert a Wiki revision</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Create a Wiki page from a broken link</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Setting to turn off web editing for TFVC repos</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Identify stale branches</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Search for a deleted branch and re-create it</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Branch updates page is now Pushes</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Retain filename when moving from Files to Commits</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Pull Request Status Extensibility in Public Preview</td>
@@ -612,15 +627,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Let contributed build sections control section visibility</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Variable group support</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>dotnet task supports authenticated feeds, web projects</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Ansible Extension on Marketplace</td>
@@ -628,43 +643,43 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Variable groups, Retention, and Options tab now available in the new Release Definition Editor</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Release status badge in Code hub</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Enhancements to Build definition menu when adding artifacts</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Revert your release definition to older version</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>		
 		<tr>
             <td>Exploratory testing traceability improvements for work item links, iterations, and area paths</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Screenshot and annotation support for desktop apps with Chrome browser for manual tests</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Filters for Test Case work items in Test Plans and Suites in Test Hub</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Test trend charts for Release Environments and Test Runs</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Markdown formatting support for Test Run and Test Result comments</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Add link to existing bug for a failing test</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Re-order favorite groups</td>
@@ -681,35 +696,35 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Filtering on Backlogs, Sprints, and Queries</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Expand to show empty fields on a Kanban card</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Automatically complete work items when completing pull requests</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Policies: Reset votes on push/new iteration</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Notifications: Great email templates for pull request workflows</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Pull request details: View original diff for code comments</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Task lists in pull request descriptions and comments</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Ability to "Like" comments in pull requests</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Pull request build variables</td>
@@ -725,23 +740,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Task group References</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Task group versioning</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Multi Configuration support in Server Side (Agentless) tasks</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Task group import and export</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>New Release Definition Editor (Preview)</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Velocity Widget for the Analytics Extension</td>
@@ -770,35 +785,35 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Allow extensions to block work item save</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Collapsible pull request comments</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Improved workflow when approving with suggestions</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
 			<td>Filter pull request tree by file name</td>
-			<td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+			<td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
 		</tr>
         <tr>
             <td>Pull request callout on commit details page becomes richer</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Filter tree view in Code</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Git tags web view</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Export and import build definitions</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Visual Studio latest and hosted agent pools</td>
@@ -810,11 +825,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 		<tr>
             <td>Release Triggers: Continuous deployment for changes pushed to a Git repository</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Enhancements to Server tasks</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
 		<tr>
             <td>Consume Secrets from an Azure Key Vault as variables</td>
@@ -822,11 +837,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Package Management experience updates</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Package build task updates</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Project Collection Administrators can link/make initial purchase</td>
@@ -855,7 +870,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="19">[1 Jun 2017](2017/jun-01-team-services.md)</td>
             <td>Mobile work item form general availability</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>New widgets for Analytics extension</td>
@@ -863,15 +878,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Path filtering support for Git notifications</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>More pull request comments filtering options</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Search for a commit in branches starting with a prefix</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Visual Studio Enterprise benefit for pipelines in Team Services</td>
@@ -879,31 +894,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work with secure files such as Apple certificates</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Extensions with build templates</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Deprecate a task in an extension</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Task group references</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Variables Support in Manual Intervention task</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Control releases to an environment based on the source branch</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Release Triggers for Git repositories as an artifact source</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>On-demand triggering of automated tests</td>
@@ -932,7 +947,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="25">[11 May 2017](2017/may-11-team-services.md)</td>
             <td>VM deployment (Public Preview)</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Azure virtual machine scale set</td>
@@ -1008,7 +1023,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Maven for Package Management (Public Preview)</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>NuGet Restore, Command, and Tool Installer build tasks</td>
@@ -1049,7 +1064,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build tool installers</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>SSH deployment improvements</td>
@@ -1183,11 +1198,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>New mobile discussion experience</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Optimized mobile identity picker</td>
-            <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
+            <td style="background:rgb(243, 232, 255);">[2018](https://aka.ms/relnotes-tfs2018)</td>
         </tr>
         <tr>
             <td>Customized backlog levels</td>
@@ -3573,20 +3588,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 </thead>
 <tbody>
+         <tr>
+          <td style="background:rgb(216, 194, 239);">[2018.1](https://aka.ms/tfs2018-update1)</td>
+          <td>Feb. 20, 2018</td>
+          <td>16.122.27409.2</td>
+        </tr>
         <tr>
           <td style="background:rgb(243, 232, 255);">[2018 RTW](https://aka.ms/relnotes-tfs2018)</td>
           <td>Nov. 15, 2017</td>
           <td>16.122.27102.1</td>
         </tr>
         <tr>
-          <td style="background:rgb(243, 232, 255);">[2018 RC2](https://aka.ms/relnotes-tfs2018)</td>
-          <td>Sept. 25, 2017</td>
-          <td>16.122.26918.3</td>
-        </tr>
-        <tr>
-          <td style="background:rgb(243, 232, 255);">[2018 RC1](https://aka.ms/relnotes-tfs2018)</td>
-          <td>Aug. 30, 2017</td>
-          <td>16.121.26818.00</td>
+          <td>[2017.3.1](https://aka.ms/relnotes-tfs2017-update3)</td>
+          <td>Feb. 28, 2018</td>
+          <td>15.117.27414.0</td>
         </tr>
         <tr>
           <td>[2017.3](https://aka.ms/relnotes-tfs2017-update3)</td>
@@ -3605,9 +3620,19 @@ Versions in the “Server” column are linked to the appropriate download locat
           (15.112.26301.0)[*](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
+          <td style="background:rgb(240, 245, 251);">[2017.0.1](https://aka.ms/tfs2017-relnotes)</td>
+          <td>Feb. 28, 2018</td>
+          <td>15.105.27412.0</td>
+        </tr>        
+        <tr>
           <td style="background:rgb(240, 245, 251);">2017 RTM</td>
           <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
+        </tr>
+        <tr>
+          <td style="background:rgb(177, 232, 179);">[2015.4.1](https://aka.ms/tfs2015-update4-vs)</td>
+          <td>Feb. 28, 2018</td>
+          <td>14.114.26412.0</td>
         </tr>
         <tr>
           <td style="background:rgb(177, 232, 179);">2015.4</td>
