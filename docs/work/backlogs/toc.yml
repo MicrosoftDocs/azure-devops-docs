@@ -16,6 +16,8 @@
     href: define-features-epics.md
   - name: Organize your backlog (map or reparent)
     href: organize-backlog.md
+  - name: Bulk add or modify (web)
+    href: bulk-modify-work-items.md 
   - name: Link work items
     href: add-link.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Concepts
