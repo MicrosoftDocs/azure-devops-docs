@@ -1,5 +1,6 @@
 ---
-title: Work item templates  
+title: Work item templates
+titleSuffix: VSTS & TFS   
 description: Add and manage work item templates to pre-populate fields in VSTS and TFS work item forms  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm

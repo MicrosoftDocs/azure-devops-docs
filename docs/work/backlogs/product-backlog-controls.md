@@ -1,6 +1,7 @@
 ---
-title: Product backlog controls | VSTS & TFS
-description: Switch views and switch controls on or off from your product backlog - Visual Studio Team Services (VSTS) and Team Foundation Server 
+title: Product backlog controls
+titleSuffix: VSTS & TFS 
+description: Switch views and turn controls on or off from your product or portfolio backlogs for Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
@@ -26,10 +27,10 @@ Once you've defined your product backlog, you can use the following controls to 
 | Parents | [Show/Hide parents](organize-backlog.md) |
 | In progress items | [Show/Hide in progress items](../scrum/forecast.md)   |
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Configure team settings](../scale/manage-team-assets.md#team-settings)  |
-| ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode      |
+| ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/tag_filter_icon.png)  | [Turn tag filtering On/Off ](../track/add-tags-to-work-items.md)  |  
+| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off ](filter-backlogs.md)  |  
 
 > [!IMPORTANT]  
 > If you set the **In progress** control to **Hide**, then items that are no longer in the New, Approved, or Proposed states won't appear in the backlog. 

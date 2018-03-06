@@ -198,8 +198,6 @@
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Azure cloud service
       href: apps/cd/deploy-cloudservice-cloudservice.md
-    - name: Azure Government Cloud
-      href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
       href: apps/cd/azure/deploy-container-kubernetes.md
     - name: IIS servers (WinRM)
@@ -208,6 +206,10 @@
       href: apps/cd/deploy-dacpac-sqlpackage.md
     - name: Azure SQL database (SQL scripts)
       href: apps/cd/deploy-database-sqlscripts.md
+    - name: Azure Government Cloud
+      href: concepts/library/government-cloud.md
+    - name: Azure Stack
+      href: concepts/library/azure-stack.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
     - name: SCVMM actions for managing VMs
