@@ -1,6 +1,6 @@
 ---
-title: "Use @mentions to further discussions"
-titleSuffix: VSTS & TFS
+title: "Use @mentions to further discussion in VSTS & TFS"
+titleSuffix: "VSTS & TFS" 
 description: "Alert team members using the @mention control in discussions and pull requests" 
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -9,7 +9,7 @@ toc: show
 ms.manager: douge
 ms.author: elbatk
 ms.topic: get-started-article
-ms.date: 09/01/2017
+ms.date: 02/14/2018 
 ---
 
 
@@ -22,13 +22,16 @@ The **@mention** control allows you to quickly pull someone into a discussion.
 <a id="mention-person-id">  </a>
 
 >[!NOTE]    
-><b>Feature availability: </b>The **@mention**  control is currently supported from VSTS or the web portal for TFS 2015.2 and later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
+><b>Feature availability: </b>The **@mention**  control is from VSTS or the web portal for TFS 2015.2 and later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
 
 When leaving a code comment in a pull request, you can type **@** to trigger the **@mention** identity picker. From the identity selector, you'll see a list of those people that you have you've recently mentioned. You can choose one of those names or type in the name of the person you are looking for to perform a directory search.  
 
 To filter the list, enter the user name or alias until you've found a match.
 
 <img src="_img/at-mention-pr-type-name.png" alt="Web portal, Pull Request, Type a user name or email alias to locate a match" style="border: 1px solid #CCCCCC;" /> 
+
+> [!NOTE]   
+> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
 
 To **@mention** a user you've never selected previously, just continue typing to perform your search against the full directory.  
 

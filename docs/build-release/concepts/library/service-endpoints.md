@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Service endpoints for Build and Release
 
@@ -70,7 +71,7 @@ using Azure credentials or an Azure management certificate.
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **Credentials** or **Certificate based**. |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
-| Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
+| Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required. The GUID-like identifier for your Azure subscription (not the subscription name). You can copy this from the Azure portal. |
 | Subscription Name | Required. The name of your Microsoft Azure subscription (account). |
 | User name | Required for Credentials authentication. User name of a work or school account (for example @fabrikam.com). Microsoft accounts (for example @live or @hotmail) are not supported. |
@@ -83,10 +84,11 @@ using Azure credentials or an Azure management certificate.
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Service Principal Authentication (SPA). The dialog offers two modes:
+automated subscription detection and manual subscription definition.
 
 **Automated subscription detection**. 
 
-You cannot use this version of the dialog to connect to an [Azure Government Cloud](government-cloud.md).
+You cannot use this version of the dialog to connect to an [Azure Government Cloud](government-cloud.md) or [Azure Stack](azure-stack.md).
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -94,14 +96,24 @@ You cannot use this version of the dialog to connect to an [Azure Government Clo
 | Subscription | Select an existing Azure subscription. [More information](#sep-azure-rm-conditions). |
 <p />
 
+<a name="sep-azure-rm-existingsp"></a>
+Selecting an existing subscription automatically creates a new Azure
+service principal that is assigned the **Contributor** role and so has
+access to all resources within the subscription. You can edit this service principal in the Azure portal,
+**Subscriptions | Users | Roles** section. For more details, see
+[Azure Active Directory for developers](https://docs.microsoft.com/en-gb/azure/active-directory/develop/active-directory-developers-guide).
+Alternatively, you can use the following manual subscription definition approach and then restrict access rights by 
+using a specific service principal.
+
 **Manual subscription definition**
 
-You must use this version of the dialog when connecting to an [Azure Government Cloud](government-cloud.md).
+You must use this version of the dialog when connecting to an [Azure Government Cloud](government-cloud.md) or [Azure Stack](azure-stack.md).
 
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
-| Environment | Required. Select **Azure Cloud** or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
+| Environment | Required. Select **Azure Cloud**, [Azure Stack](azure-stack.md), or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
+| Environment URL | Required for [Azure Stack](azure-stack.md). The management URL of your on-premises installation. |
 | Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
 | Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
 | Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
@@ -122,8 +134,6 @@ a service principal's access rights by using Role-Based Access Control
 ([RBAC](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-built-in-roles)) roles, see
 [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
->If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
-
 <a name="sep-azure-rm-conditions"></a>
 When you start to create the endpoint, the code interrogates Azure
 for subscriptions that are valid for the credentials you are currently
@@ -136,14 +146,6 @@ want to use, you must sign out of VSTS or TFS and sign in again
 using the appropriate account credentials. See also
 [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
 
-<a name="sep-azure-rm-existingsp"></a>
-Selecting an existing subscription automatically creates a new Azure
-service principal that is assigned the **Contributor** role and so has
-access to all resources within the subscription.
-You can edit this service principal in the Azure portal,
-**Subscriptions | Users | Roles** section. For more details, see
-[Azure Active Directory for developers](https://docs.microsoft.com/en-gb/azure/active-directory/develop/active-directory-developers-guide).
-
 If you want to use an existing service principal instead of creating
 a new one:
 
@@ -154,7 +156,8 @@ a new one:
    ![Opening the full version of the service endpoint dialog](_img/rm-endpoint-link.png)
 
 1. Enter a user-friendly name to use when referring to this service endpoint connection.
-1. Select the Environment name (such as Azure Cloud or an Azure Government Cloud).
+1. Select the Environment name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
+1. Enter the Environment URL if required. For Azure Stack, this will be something like `https://management.local.azurestack.external`.
 1. Copy these fields from the output of the PowerShell script into the Azure subscription dialog textboxes:
    - Subscription ID
    - Subscription Name

@@ -1,13 +1,13 @@
 ---
 title: Query fields, operators, and macros/variables 
 titleSuffix: VSTS & TFS
-description: Describes field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Query reference for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/05/2018  
+ms.date: 03/06/2018  
 ---
 
 
@@ -280,20 +280,14 @@ You can use the macros described in the following table to filter your queries b
 </td>
 </tr>
 
-<!---NEW for S131
-
 <tr>
-	<td><b>@CurrentIteration +/- <i>n</i></b></td>
+	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
 	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-<blockquote><strong>Feature availability:</strong> The **@CurrentIteration =/- n** macro is supported for VSTS. The macro only works when run from the web portal. 
-</blockquote>
 </td>
 </tr>
 
--->
-
 <tr>
-	<td>**@Follows** <sup>2</sup></td>
+	<td>**@Follows** <sup>3</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
@@ -305,26 +299,26 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@MyRecentActivity <sup>3</sup></b></td>
+	<td><b>@MyRecentActivity <sup>4</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the team project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
 </td>
 </tr>
 
 
 <tr>
-	<td>**@Project** <sup>4</sup></td>
+	<td>**@Project** <sup>5</sup></td>
 	<td>Use in conjunction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
 </td>
 </tr>
 
 <tr>
-	<td><b>@RecentMentions <sup>3</sup></b></td>
+	<td><b>@RecentMentions <sup>4</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity <sup>3</sup></b></td>
+	<td><b>@RecentProjectActivity&nbsp;<sup>4</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
@@ -339,6 +333,7 @@ You can use the macros described in the following table to filter your queries b
  
 ####Notes:
 0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
+0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018 and later versions.
 0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).  
