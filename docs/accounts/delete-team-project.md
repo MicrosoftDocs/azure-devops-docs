@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+ms.date: 03/06/2018
 ---
 
 # Delete a team project
@@ -17,25 +17,28 @@ If you find that you have a team project you no longer use, you can delete it. D
 
 >**Caution:**  Deleting a team project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save team project data](save-team-project-data.md) that you might want to access later.
 
-You can delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
+Delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
 
 ## Delete a team project from VSTS
 
-1.  Open the administration context for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon.  
+1. Open the administration console for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Account settings**.
 
-	<img src="_img/open-admin-context-team-services.png" alt="Open the admin context" style="border: 1px solid #CCCCCC;" />  
-  
-2.  Open the ![action icon image](../work/_img/icons/actions-icon.png) menu for the team project that you want to delete.
+   >[!div class="mx-imgBorder"]
+   ![open-admin-console-team-services](_img/delete-team-project/open-admin-console-team-projects.PNG)
 
-	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
+2. Open the ![action icon image](../work/_img/icons/actions-icon.png) menu for the team project that you want to delete.
+
+   >[!div class="mx-imgBorder"]
+   ![choose-delete-team-project](_img/delete-team-project/choose-delete-team-project.png)
 
     If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-3.  You must type the name of the team project in order to initiate the delete operation. 
+3. You must type the name of the team project in order to initiate the delete operation. 
 
-	<img src="_img/delete-team-project-dialog.png" alt="Delete team project dialog" style="border: 1px solid #CCCCCC;" />  
-
+   >[!div class="mx-imgBorder"]
+   ![delete-team-project-dialog](_img/delete-team-project/delete-team-project-dialog.png)
 <a name="delete-team-proj"></a>
+
 ## Delete a team project from Team Foundation Server (on-premises)
 
 Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](../tfs-server/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
