@@ -18,7 +18,7 @@
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Content VSTS account to AAD
+  - name: Connect VSTS account to AAD
     href: connect-account-to-aad.md
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
