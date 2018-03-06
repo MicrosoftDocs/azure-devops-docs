@@ -62,7 +62,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 1. Navigate to your GitHub account. Select **Code**. Create a README.md file unless one already exists.
 1. For this step, use the URL from step 13 in the previous section. Modify the **README.md** file by adding Markdown and an `img` tag, as shown below. Create a Markdown link that displays the build status image and links to the build summary in VSTS. **Modify** the below example with your account and build ID information.
 
-    `[<img src="https://{your-account}.visualstudio.com/_apis/public/build/definitions/{guid}/{id}/badge"/>](https://{your-account}.visualstudio.com/{your-project}/_build/index?definitionId={id})`
+    `[![Build Status](https://{your-account}.visualstudio.com/_apis/public/build/definitions/{guid}/{id}/badge)](https://{your-account}.visualstudio.com/{your-project}/_build/index?definitionId={id})`
 1. **Commit** your README.md file to the repository. The code tab will now display the current status of your VSTS build.
     ![Build status in GitHub](_img/ci-build-github/buildstatus.png)
 1. In GitHub, navigate to  **Settings** and select on **Webhooks**. You should see the webhook that was created by VSTS when you chose GitHub in your build definition. Every commit to the GitHub repository will trigger a build in VSTS.
