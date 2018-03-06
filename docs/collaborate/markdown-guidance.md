@@ -1,14 +1,14 @@
 ---
-title: Syntax usage for Markdown files, widgets, wikis, and pull request 
+title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
 titleSuffix: VSTS & TFS 
-description: Share information and mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
+description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 01/31/2018
+ms.date: 03/06/2018
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -35,11 +35,11 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Example:**   
 ```
-# This is an H1 header
-## This is an H2 header
-### This is an H3 header
-#### This is an H4 header
-##### This is an H5 header
+# This is a H1 header
+## This is a H2 header
+### This is a H3 header
+#### This is a H4 header
+##### This is a H5 header
 ```
 
 **Result:**      
@@ -50,7 +50,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
-In pull request comments, press Enter to insert a line break and begin text on a new line. 
+In pull request comments and the wiki, press Enter to insert a line break and begin text on a new line. 
 
 In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
@@ -128,8 +128,9 @@ below
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line.  
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
+###Ordered or numbered lists
 **Example:**  
 ```
 0. First item.
@@ -142,6 +143,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 2. Second item.
 3. Third item.
 
+###Bullet lists
+
 **Example:**  
 <pre>
 - Item 1
@@ -153,6 +156,31 @@ Ordered lists start with a number followed by a period for each list item. Unord
 - Item 1
 - Item 2
 - Item 3
+
+###Nested lists
+
+**Example:**  
+<pre>
+1. First item.
+   - Item 1
+   - Item 2
+   - Item 3
+1. Second item.
+   - Nested item 1
+   - Nested item 2
+   - Nested item 3 
+</pre>
+
+**Result:**  
+
+1. First item.
+	- Item 1
+	- Item 2
+	- Item 3
+2. Second item.
+	- Nested item 1
+	- Nested item 2
+	- Nested item 3
 
 
 ## Links
@@ -296,7 +324,7 @@ a clear name to description mapping.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
-- To start a new line, use the HTML break tag (`<br/>`)
+- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
 - Make sure to end each row with a CR or LF. 
 
 **Example:**
@@ -305,16 +333,16 @@ a clear name to description mapping.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 </pre> 
 
 <br/>
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
+|-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
 
 
@@ -338,7 +366,8 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
  
 <img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
-
+> [!NOTE]   
+> A checklist within a table cell isn't supported. 
  
 ## Emphasis (bold, italics, strikethrough)  
 
