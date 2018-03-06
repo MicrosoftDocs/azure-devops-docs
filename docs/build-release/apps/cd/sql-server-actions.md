@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
-
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Perform SQL server actions in VSTS or TFS
 

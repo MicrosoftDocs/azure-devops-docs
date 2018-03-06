@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
