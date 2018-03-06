@@ -1,12 +1,13 @@
 ---
-title: Turn preview features on or off in VSTS & TFS  
+title: Turn preview features on or off 
+titleSuffix: VSTS & TFS 
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/28/2017   
+ms.date: 02/14/2018 
 ---
 
 
@@ -26,7 +27,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level) |[Preview features per account](#account-level) |
 > |-------------|----------|
-> |- [Approval gates in releases](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Build Yaml Definitions](../build-release/actions/build-yaml-get-started.md)<br/>- New Boards Hub<br/>- New Dashboards Experience<br/>- [New experience in Code & Work Item search and new wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Updated package experience](../package/index.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>-- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [NuGet.org upstream sources](../package/nuget/upstream-sources.md)<br/>- [Pull Request Status Policy](../git/how-to/pr-status-policy.md)<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Symbol server](../build-release/symbols/index.md)|
+> |- [Approval gates in releases](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Build Yaml Definitions](../build-release/actions/build-yaml-get-started.md)<br/>- New Boards Hub<br/>- New Dashboards Experience<br/>- [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Updated package experience](../package/index.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Work Items Hub](../work/work-items/view-add-work-items.md)<br/>- [NuGet.org upstream sources](../package/nuget/upstream-sources.md)<br/>- [Pull Request Status Policy](../git/how-to/pr-status-policy.md)<br/>-  [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)<br/>- [Symbol server](../build-release/symbols/index.md)|
 
 **Features now enabled for all VSTS accounts:**
 - [Combine email recipients](manage-team-notifications.md)  
@@ -123,3 +124,4 @@ We're adding some tool installer tasks to enable your build or release process t
 Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](manage-team-notifications.md).  
  
 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
