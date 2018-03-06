@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.reviewer: dastahel
 ms.date: 02/19/2018
+ms.topic: landing-page
 layout: LandingPage
 ---
 [//]: # (monikerRange: '>= tfs-2013')
