@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
 ---
-[//]: # (monikerRange: ">= tfs-2018")
+[//]: # (monikerRange: ">= tfs-2017")
 
 # Deploy to a Linux Virtual Machine
 
