@@ -1,25 +1,19 @@
 ---
 title: Query by area or iteration path
 titleSuffix: VSTS & TFS
-description: Find or list work items based on their area or iteration path in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Query for work items based on their area or iteration path in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/05/2018  
+ms.date: 03/06/2018  
 ---
 
 
 # Query by area or iteration path 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-<!---
-Add examples of usage for areas and iteration paths. 
-Mention node names. 
-Tips for usage 
---> 
 
 The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md). 
 
@@ -40,20 +34,16 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 
 In addition, you can use the @CurrentIteration macro when filtering on the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
-<!--- S131 updates
-
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
-> [!div class="mx-tdBreakAll"]&nbsp;&nbsp; 
-> |Macro   | Use when you want to...&nbsp;&nbsp; |
+> [!div class="mx-tdBreakAll"] 
+> |Macro   | Use when you want to... |
 > |-------------|--------------|
 > | **@CurrentIteration**        | Specify the current iteration associated with the selected team context.  |
 > | **@CurrentIteration +/- n**  | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration =/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
-
--->
+> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. 
 
 ## Query for items assigned under several areas 
 
@@ -127,4 +117,4 @@ For the Hosted XML and On-premises XML process models, you can apply rules to fi
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
