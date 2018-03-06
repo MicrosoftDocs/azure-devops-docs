@@ -1,14 +1,14 @@
 ---
 title: View or run a query 
 titleSuffix: VSTS & TFS
-description: View a list of queries or run a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+description: View, run, or favorite a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
 ms.assetid:  
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/05/2018  
+ms.date: 03/06/2018  
 ---
 
 
@@ -25,12 +25,11 @@ By default, all contributors and stakeholders can view and run all shared querie
 
 <!---
 Use this topic to learn: 
-> [!div class="checklist"]&nbsp;&nbsp;&nbsp;
+> [!div class="checklist"]   
 > * About the differences between the old and new queries experience
 > * How to view all or favorited queries  
-> * How to filter a query list &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> * How to filter a query list       
 > * How to run a query 
- &nbsp;&nbsp;&nbsp;
 -->
 
 ## Open the Queries page from the web portal
@@ -81,9 +80,9 @@ For shared queries, you can also choose to perform one of these tasks:
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
 
-> [!div class="mx-tdBreakAll"] 
-> |Task|Favorites|All|
-> |-------------|----------|---------|
+> [!div class="mx-tdBreakAll"]  
+> |Task  |Favorites  |All  |  
+> |-------------|----------|---------|  
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
@@ -134,7 +133,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

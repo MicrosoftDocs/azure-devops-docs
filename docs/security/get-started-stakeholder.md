@@ -1,13 +1,14 @@
 ---
-title: Get started with Stakeholder access in VSTS or TFS  
-description: Quickstart guide to working with Stakeholder access to Team Services (VSTS) or Team Foundation Server (TFS)  
+title: Get started with Stakeholder access
+titleSuffix: VSTS & TFS  
+description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date: 02/14/2018 
 ---
 
 # Get started as a Stakeholder  
@@ -45,11 +46,11 @@ Use this topic to learn:
 <a id="create-work-item">  </a> 
 ## Add a work item
 
+> [!TIP]    
+> If you connect to VSTS, you now have access to the [Work Items page](../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
+
 You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/work-items/guidance/scrum-process.md), [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). 
-
-
->[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
+ 
     
 #### VSTS, TFS 2017
 
@@ -57,9 +58,13 @@ From the Work hub, choose a work item, for example User Story, from the New Work
 
 <img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
-Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](../work/work-items/guidance/work-item-field.md). 
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
+
+>[!NOTE]  
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
+
 
 #### TFS 2015
 
@@ -164,3 +169,7 @@ If you need access to the following features&mdash;which support the daily work 
 
 > [!NOTE]   
 > Stakeholders can view administrative pages that support managing permissions, area and iteration paths, and more; however, for the most part, they can't modify any objects on these pages. The one exception is their ability to [manage users and access](../accounts/add-account-users-assign-access-levels.md).  
+
+
+
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
