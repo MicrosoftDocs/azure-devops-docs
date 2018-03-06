@@ -9,6 +9,7 @@ ms.author: ahomer
 ms.date: 01/19/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Deploy to Azure web app
 

@@ -1,13 +1,14 @@
 ---
-title: About teams & Agile tools
+title: "About teams & Agile tools"
+titleSuffix: "VSTS & TFS" 
 description: Guide to adding and configuring teams in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
 ms.topic: get-started-article
+ms.date: 02/14/2018 
 ---
 
 # About teams and Agile tools
@@ -136,9 +137,12 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 <a id="team-group"> </a>
 ## Team groups 
 
-You can use this group to filter queries. The name of team groups follows the pattern **[Team Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
+When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Team Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
 <img src="../work/scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
+
+> [!NOTE]   
+> **Feature availability**: From VSTS, you can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start type the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../notifications/at-mentions.md).     
 
 ## Work on more than one team
 
