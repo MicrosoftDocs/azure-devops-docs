@@ -800,7 +800,7 @@ You can pass environment variables of the build machine into build steps. For ex
             <td style="font-size:80%">All</td>
             <td>
                 <p style="font-size:80%">
-                    The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
+                    The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
                 </p>
             </td>
         </tr>        <tr>
