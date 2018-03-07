@@ -1,6 +1,6 @@
 ---
-title: Run tests with your builds
-description: Get started with continuous testing. Run tests with your builds for continuous integration in VSTS and Team Foundation Server TFS 
+title: Run unit tests with your builds
+description: Get started with continuous testing. Run unit tests with your builds for continuous integration in VSTS and Team Foundation Server TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
@@ -11,7 +11,7 @@ ms.date: 01/18/2018
 ---
 [//]: # (monikerRange: ">= tfs-2015")
 
-# Run tests with your builds
+# Run unit tests with your builds
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
@@ -25,6 +25,10 @@ the problems that you find.
 This quickstart shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
 [Visual Studio Test](test-with-unified-agent-and-phases.md) task. 
+
+>Typically you will run unit tests in your build definition before you release your app,
+and functional tests in your release definition after you deploy your app (usually to a staging server).
+Code coverage testing is available only in a build definition.
 
 <a name="beforestart"></a>
 ## Before you start
@@ -50,12 +54,24 @@ solution - on the same build machine.
 
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
 
+1. If you also want to test code coverage, set the **Code coverage enabled** checkbox in the
+   **Execution options** section.
+
+   ![Enable code coverage testing](_img/getting-started-with-continuous-testing/enable-code-coverage.png)
+
+   When tests are run with this option, code coverage information is collected dynamically and assemblies
+   do not need to be instrumented. By default, all assemblies are profiled for collecting coverage information. If you need to
+   [exclude specific assemblies and customize code coverage](https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis),
+   use a [.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+
+   [How do I collect and publish code coverage data if I'm not using the Visual Studio Test task?](reference-qa.md#code-coverage)
+
    For information about the option settings of the Visual Studio Test task, see:
    
    * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
    * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 
-   > The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [Speed up testing with Test Impact Analysis](test-impact-analysis.md).
+   The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [Speed up testing with Test Impact Analysis](test-impact-analysis.md).
 
 1. When you're done, save your build definition.
 
@@ -72,21 +88,8 @@ solution - on the same build machine.
 
    ![Go to Build hub, build definition, build summary](_img/getting-started-with-continuous-testing/open-summary.png)
 
-<a name="reviewesults"></a>
-## Review the results
+<a name="reviewesults"></a><a name="runothertests"></a>
 
-1. Open the test run results summary and compare your test results
-   between this build and the last build. Here you'll find changes in new, failed, and passed tests, 
-   how long these tests took to run, how long these tests have been failing, and more.
-   Organize your test results and open bugs directly for failed tests.
-
-   ![Compare test result summaries between builds](_img/getting-started-with-continuous-testing/build-summary-test-result-metrics.png)
-
-1. To start debugging a failed test, open the test and review the resulting error and stack trace.
-
-   ![Error and stack trace for a failed test](_img/getting-started-with-continuous-testing/build-error-message.png)
- 
-<a name="runothertests"></a>
 ## Next step
 
 > [!div class="nextstepaction"]

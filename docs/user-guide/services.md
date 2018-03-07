@@ -10,9 +10,11 @@ ms.author: kaelli
 ms.date: 09/19/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2015')
+
 # Overview of VSTS and TFS services
  
-**VSTS| TFS 2018 | TFS 2017 | TFS 2015**
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
 With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build definitions, and work tracking can also be managed through a client.  
 
@@ -30,12 +32,14 @@ For information about client tools, see [Tools](tools.md).
 -->
 
 
-## Dashboards  
+## Dashboards
+
 From the **Dashboards** hub you gain access to user-configurable dashboards.   
 
 <img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" />
 
-Tasks you can perform in this hub include: 
+Tasks you can perform in this hub include:
+
 - Add, configure, and manage dashboards   
 - Configure widgets that you add to dashboards 	
 - Quickly navigate to different areas of your team project 
@@ -44,13 +48,14 @@ Tasks you can perform in this hub include:
 To learn more, see [Dashboards](../report/dashboards/dashboards.md). 
 
 
-## Code 
+## Code
 
 From the **Code** hub you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.   
 
 <img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" />
 
-From the Code hub for Git you can perform these tasks:  
+From the Code hub for Git you can perform these tasks:
+
 - Review, download, and edit files and review the change history for a file  
 - Review and manage commits that have been pushed       
 - Review, create, approve, comment, and complete pull requests  
@@ -58,12 +63,14 @@ From the Code hub for Git you can perform these tasks:
 
 To learn more, see the overviews for [Git](../git/overview.md) or [TFVC](../tfvc/overview.md). 
 
-## Plan and track work 		
+## Plan and track work
+
 From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
 
 <img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
-Specifically, from the **Work** you can perform these tasks:   			
+Specifically, from the **Work** you can perform these tasks:
+
 - Add and update work items 
 - Define work item queries and create status and trend charts based on those queries 			
 - Manage your product backlog   					
@@ -74,13 +81,15 @@ Specifically, from the **Work** you can perform these tasks:
 
 See [Backlogs, boards, and plans](../work/backlogs/backlogs-boards-plans.md) for an overview of each.   
  
-## Build & Release 
+## Build & Release
+
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
 
 
 <img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" />
 
-You use this hub to implement continuous integration and continuous delivery. 
+Use this hub to implement continuous integration and continuous delivery.
+
 - **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
@@ -88,12 +97,14 @@ You use this hub to implement continuous integration and continuous delivery.
 To learn more, see [Continuous integration on any platform](../build-release/overview.md). 
 
 
-## Test 
+## Test
+
 Test features support manual and exploratory testing, load or performace testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
 
 <img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" />
 
-Test **Test** hub provides support for the following:  
+Test **Test** hub provides support for the following:
+
 - Customization of workflows with test plan, test suite and test case work items  
 - End-to-end traceability from requirements to test cases and bugs with requirement-based test suites  
 - Criteria-based test selection with query-based test suites    
@@ -103,12 +114,12 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](../manual-test/index.md). 			
+To learn more, see [Testing overview](../manual-test/index.md).
 
+## Collaboration services
 
-## Collaboration services 
+In addition to the above "hub" services, the following services work across hubs to support:
 
-In addition to the above "hub" services, the following services work across hubs to support: 
 - Linking of work items, commits, pull requests and other artifacts to support traceability
 - Alerts and change notifications managed per user or for teams  
 - Request and manage feedback   
@@ -129,7 +140,8 @@ For the latest set of supported services, see [Integrate with service hooks](../
 
 ## Cloud-hosted services based on usage   
 
-The following services support your DevOps operations.   
+The following services support your DevOps operations.
+
 - Cloud-based build and deployment hosted agents  
 - On-premises private agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
@@ -137,7 +149,8 @@ The following services support your DevOps operations.
 To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
 
 
-## Azure services 
+## Azure services
+
 Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with VSTS or TFS. 
 
 To browse Azure's directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
@@ -145,7 +158,7 @@ To browse Azure's directory of integrated services, features, and bundled suites
 For continuous delivery to Azure from VSTS, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/). 
 
 
-## Administrative services  
+## Administrative services
 
 There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.   
 
@@ -158,7 +171,8 @@ There are a number of features and tasks associated with administrating a collab
 > |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
 
  
-## Related notes 
+## Related notes
+
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  

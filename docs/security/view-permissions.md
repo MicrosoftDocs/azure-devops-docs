@@ -10,8 +10,11 @@ ms.author: kaelli
 ms.date: 12/12/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
-# View permissions for yourself or others  
+# View permissions for yourself or others
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 

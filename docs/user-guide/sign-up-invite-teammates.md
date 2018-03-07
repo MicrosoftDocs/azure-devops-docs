@@ -10,7 +10,9 @@ ms.author: kaelli
 ms.date: 07/14/2017
 ---
 
-# Sign up for a free VSTS account and invite others to join your team  
+[//]: # (monikerRange: 'vsts')
+
+# Sign up for a free VSTS account and invite others to join your team
 
 **VSTS**
  
@@ -20,7 +22,8 @@ Git repository. You can then connect to your favorite development tool like Ecli
 Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
 
 <a name="MicrosoftAccount"></a>
-##	Sign up with a personal Microsoft account
+
+## Sign up with a personal Microsoft account
 
 0.	Right-click the sign-up link, [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409), and enter 
 your email address for your Microsoft account. 
@@ -71,6 +74,7 @@ you can invite others to join your project, add code, start planning and trackin
 	To sign in to your account at any time, go to ```https://{youraccount}.visualstudio.com```.
 
 <a id="invite-others" />
+
 ## Invite others to join your team 
 
 You provide others access to your account by adding their email address. 

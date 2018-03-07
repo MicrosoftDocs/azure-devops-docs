@@ -9,9 +9,11 @@ ms.author: kaelli
 ms.date: 12/07/2016
 ---
 
-#Software development roles supported by VSTS and TFS 
+[//]: # (monikerRange: '>= tfs-2015')
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
+# Software development roles supported by VSTS and TFS
+
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
@@ -19,11 +21,12 @@ However, if you work within a large organization, you're probably more focused o
 
 This topic provides a roadmap to support you in quickly coming up to speed on the features and tasks available to you based on the role you perform.  
 
-##Contributor roles  
+## Contributor roles
 
 Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../security/permissions.md).   
 
-### Software developers 
+### Software developers
+
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
@@ -51,9 +54,10 @@ To get started, see [Get started with Agile tools to plan and track work](../wor
 
 If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
-### DevOps: builders, testers, and release managers  
+### DevOps: builders, testers, and release managers
 
-One of the main advantages to working with VSTS or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by VSTS and TFS: 
+One of the main advantages to working with VSTS or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by VSTS and TFS:
+
 - Define builds
 - Unit test your code 
 - Run tests with your builds 
@@ -64,19 +68,24 @@ One of the main advantages to working with VSTS or TFS is the suite of tools and
 
 To get started, see the overviews provided here: [Build &amp; Release](../build-release/overview.md) and [Test](../manual-test/index.md). 
 
-### Stakeholders 
+### Stakeholders
+
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
 Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../security/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
-## Administrator roles  
+
+## Administrator roles
+
 A distinct advantage to working in VSTS is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
 
 The main tasks are grouped here by membership within a security group or role: 
 
-###Team administrators
-Responsible for configuring team settings which include: 
+### Team administrators
+
+Responsible for configuring team settings which include:
+
 - Backlog and board settings
 - Team area(s) and iterations (sprints)
 - Team members
@@ -86,8 +95,10 @@ Responsible for configuring team settings which include:
 
 To get started, see [Manage team assets](../work/scale/manage-team-assets.md). 
 
-###Project administrators
-Responsible for project level settings, including: 
+### Project administrators
+
+Responsible for project level settings, including:
+
 - [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
@@ -96,7 +107,9 @@ Responsible for project level settings, including:
  
 
 ### Project collection administrators
-Responsible for account or collection-level settings. These include: 
+
+Responsible for account or collection-level settings. These include:
+
 - Manage billing  
 - Add and manage team projects    
 - Manage collection-level settings and permissions 
@@ -106,8 +119,10 @@ Responsible for account or collection-level settings. These include:
 To get started, see [Account Management](../accounts/account-management.md). 
 
  
-###TFS administrators
-Responsible for installing, upgrading, and maintaining an on-premises TFS deployment. Tasks include: 
+### TFS administrators
+
+Responsible for installing, upgrading, and maintaining an on-premises TFS deployment. Tasks include:
+
 - Install TFS 
 - Update servers running TFS 
 - Manage database backups 
@@ -118,7 +133,8 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 To get started, see [Server Administration (TFS)](../tfs-server/index.md). 
 
 
-## Related notes 
+## Related notes
+
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
  

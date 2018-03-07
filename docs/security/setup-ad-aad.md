@@ -1,6 +1,6 @@
 ---
 title: Set up Active Directory or Azure Active Directory for VSTS & TFS
-description: Manage large groups of users using Active Directory (AD) for TFS or Azure Active Directory (AAD) for VSTS 
+description: Manage large groups of users using Active Directory (AD) for TFS or Azure Active Directory (Azure AD) for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 
@@ -9,13 +9,18 @@ ms.author: chcomley
 ms.topic: get-started-article
 ms.date: 02/28/2018
 ---
+
+[//]: # (monikerRange: '>= tfs-2013')
+
 # Set up Active Directory or Azure Active Directory
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The recommended method for managing a large set of user accounts is to use Azure Active Directory (AAD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/AAD, you simplify the maintenance of managing permissions across your organization.
+The recommended method for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
-If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or AAD. Also, if you plan on paying for extra services, you'll need to set up AAD for use with VSTS or TFS to support billing.
+If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with VSTS or TFS to support billing.
 
 Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
@@ -47,7 +52,7 @@ Use these resources to learn about installing Active Directory. Typically, you s
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Add AD/AAD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
+> [Add AD/Azure AD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
 
 ## Related notes
 

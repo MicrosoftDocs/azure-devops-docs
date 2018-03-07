@@ -9,8 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Permissions lookup guide for VSTS & TFS
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -64,6 +67,7 @@ for all team projects defined in the account or collection:
 
 
 ## Related notes
+
 - [Grant or restrict permissions to select tasks](restrict-access.md)
 - [About permissions and groups](about-permissions.md)
 - [About security roles](about-security-roles.md). 

@@ -9,11 +9,16 @@ ms.author: sdanie
 ms.date: 09/07/2017 
 ---
 
-# Connect to team projects 
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Connect to team projects
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:  
+To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:
+  
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../git/share-your-code-in-git-eclipse.md)
@@ -31,6 +36,7 @@ From each of these clients, you can quickly switch context to a different team p
 To get started with a code base, [set up Git](../git/gitquickstart.md) or [set up TFVC](../tfvc/overview.md).
 
 <a id="web-portal">  </a>
+
 ## Connect from the web portal
 
 1.  If you're not a member of a VSTS or TFS security group, ask your account or project admin to add you.  
@@ -60,7 +66,8 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 
 <a name="logindifferentcred"></a>
-### To log on with different credentials
+
+### Log on with different credentials
 
 1.  Open Windows Security from the context menu associated with your name.
 
@@ -70,13 +77,14 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
     ![Enter user name and password to access TFS](_img/connect-team-projects-tfs/IC657077.png)
 
-### To open the web portal from Team Explorer
+### Open the web portal from Team Explorer
 
 -   Open the web portal  from the home page.
 
     ![Connect to Team Web Access](_img/connect-tp-open-web-portal.png)
 
 <a id="visual-studio">  </a>
+
 ## Connect from Visual Studio or Team Explorer
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
@@ -85,10 +93,12 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
+[//]: # (monikerRange: 'tfs-2017')
 
 <a id="vs-2017-connect-dialog" />
 
-### Visual Studio 2017 
+### Visual Studio 2017
+
 Select the connect icon in Team Explorer to open up the **Connect** page. Choose the **Connect to Team Project** link to select a team project to connect to.
 
 ![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
@@ -101,14 +111,17 @@ Select the **Add Server** link to connect to a team project in Team Foundation S
 
 ![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/vs2017_add_tfs_server.png)
 
-Select a team project from the list and select **Connect**. 
-      
+Select a team project from the list and select **Connect**.
 
+[//]: # (::: moniker-end)
+
+[//]: # (monikerRange: 'tfs-2015')
 
 <a id="connect-dialog" /> 
 <a id="vs-2015-connect-dialog" /> 
 
-### Visual Studio 2015 
+### Visual Studio 2015
+
 From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.
 
 ![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
@@ -134,14 +147,18 @@ Team Explorer will display the Home page for that project. The pages that appear
 
 To learn more about each page and the tasks you can perform, see [Work in Team Explorer](work-team-explorer.md).   
    
-Your client remembers the set of connections you've configured. You can quickly switch from one team project to another from the Connect page.   
+Your client remembers the set of connections you've configured. You can quickly switch from one team project to another from the Connect page.
 
-### To change accounts when connecting to VSTS
+[//]: # (::: moniker-end)
+
+### Change accounts when connecting to VSTS
  
+[//]: # (monikerRange: 'tfs-2017')
+
 <a id="connect-account-dialog" /> 
-<a id="vs-2015-connect-account-dialog" /> 
- 
-### Visual Studio 2017 
+<a id="vs-2015-connect-account-dialog" />
+
+### Visual Studio 2017
 
 1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
 
@@ -151,9 +168,13 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
+2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project.
 
-### Visual Studio 2015 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2015")
+
+### Visual Studio 2015
 
 1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
 
@@ -165,10 +186,10 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
+[//]: # (::: moniker-end)
 
 
-
-### To change accounts 
+### Change accounts
 
 To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for **devenv.exe** to access your run as options.
 
@@ -178,7 +199,8 @@ You can locate the executable in the following folder: *Drive*:\\Program Files (
 
 
 <a id="excel-project">  </a>
-## Connect from Microsoft Excel or Project 
+
+## Connect from Microsoft Excel or Project
 
 To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a team project. Establishing this connection binds the document to the hosted account or selected TFS, team project collection, and team project to exchange information. 
  
@@ -186,7 +208,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
 > [!NOTE]  
 > You can't use Office Project 365 to connect to VSTS or TFS.
  
-### Connect from a worksheet or project plan 
+### Connect from a worksheet or project plan
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
 
@@ -219,11 +241,11 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 >[!NOTE]  
 >If the team project is moved to a different team project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the team project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
 
-### Work offline  
+### Work offline
 
 An advantage to using Excel or Project is that you can work offline to add or modify work items. Complete the following procedures to disconnect an Excel worksheet or Project plan and later reconnect to synchronize your updates with the work item database.
 
-### To disconnect the document from a team project
+### Disconnect the document from a team project
 
 1.  Open the document that you want to change while you are offline.
 
@@ -246,7 +268,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 	>[!NOTE]  
 	>You cannot create most types of links between work items when the work item document is not connected to the team project. The exceptions are parent-child links in an Excel tree list and both parent-child and predecessor-successor links in a Project plan.
 
-#### To reconnect the document to the team project
+#### Reconnect the document to the team project
 
 1.  Make sure your computer is online.  
 
@@ -264,7 +286,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 4.  Resolve any data validation errors or conflicts that occur.
 
-## Related notes  
+## Related notes
 
 Additional resources you may find of interest: 
 
@@ -276,7 +298,7 @@ If all you need is a code repository and bug tracking solution, then start with 
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md). 
 
-### User accounts and licensing  
+### User accounts and licensing
 
 To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
@@ -285,6 +307,7 @@ VSTS provides access to the first 5 account users free. After that, you need to 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 <a name="proxy"></a>
+
 ## Configure Visual Studio to connect to TFS Proxy
 
 If your remote team uses a [TFS Proxy server](../tfs-server/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
@@ -304,8 +327,7 @@ If your remote team uses a [TFS Proxy server](../tfs-server/install/install-prox
 To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../tfvc/associate-file-type-merge-tool.md).
 
 
-
-###What other clients support connection to TFS?
+### What other clients support connection to TFS?
 
 In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a team project from these clients: 
 
@@ -316,11 +338,11 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../feedback/give-feedback.md) 
 
-### Requirements and client compatibility 
+### Requirements and client compatibility
 
 Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](../accounts/requirements.md).
 
-### Determine your platform or TFS version 
+### Determine your platform or TFS version
 
 See [Feedback and support](provide-feedback.md#platform-version) 
 

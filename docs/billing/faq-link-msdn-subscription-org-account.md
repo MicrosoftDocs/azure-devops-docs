@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Troubleshoot identity issues in VSTS for Visual Studio subscribers
 
 When you activate your Visual Studio subscription, we link the identity (or login) that you used during activation with the Visual Studio subscription. This way,
