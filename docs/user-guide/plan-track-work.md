@@ -10,6 +10,8 @@ ms.author: kaelli
 ms.date: 12/11/2017
 ---
 
+[//]: # (monikerRange: 'vsts')
+
 # Plan and track work 
 
 **VSTS**
@@ -19,7 +21,9 @@ You add work items to plan and manage your project. You use different types of w
 Here we show how to add work items from the web portal and view work items you've created. 
 
 <a id="define-new-work">  </a>
+
 ## Prerequisites
+
 You can start adding work items once you connect to a team project. If you don't have an account or  team project yet, create one in [VSTS](sign-up-invite-teammates.md).
 
 ## Add a work item 

@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
-#   Change application access policies for your account
+# Change application access policies for your account
 
 **VSTS**
 

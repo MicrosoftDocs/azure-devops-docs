@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/24/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Delete users for Visual Studio Team Services (VSTS)
 
 **VSTS**

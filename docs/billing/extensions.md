@@ -9,10 +9,11 @@ ms.manager: douge
 ms.author: 
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  VSTS extensions
 
-An extension is an installable unit that contributes new capabilities into VSTS and/or Team Foundation Server. There are both free and paid extensions offered by Microsoft and from other parties.
+An extension is an install-able unit that contributes new capabilities into VSTS and/or Team Foundation Server. There are both free and paid extensions offered by Microsoft and from other parties.
 
 ## Free extensions 
 

@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Create your VSTS account with a personal Microsoft account or a work/school/organization account
 

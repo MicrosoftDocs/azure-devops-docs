@@ -8,13 +8,14 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018')
 
 # Buy access to Team Foundation Server or the TFS Test hub
 
 **TFS 2018** | **TFS 2017** | **TFS 2015.2**
 
 >[!NOTE] 
-> You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marektplace, which uses Azure for billing.
+> You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marketplace, which uses Azure for billing.
 
 For [TFS](https://www.visualstudio.com/tfs/) you pay per user for team members who need to use 
 [Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning. 
