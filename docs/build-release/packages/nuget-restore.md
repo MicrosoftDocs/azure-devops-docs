@@ -27,7 +27,7 @@ First, click **Add build step...**, select the **Package** category, and add the
 Next, configure these options:
 
 - **Command:** restore
-- **Path to solution, packages.config, or project.json:** The path to the file that specifies the packagse you want to restore
+- **Path to solution, packages.config, or project.json:** The path to the file that specifies the packages you want to restore
 
 Then, select feeds to use:
 
