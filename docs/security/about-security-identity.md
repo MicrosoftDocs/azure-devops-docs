@@ -11,8 +11,11 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/12/18
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
-# About security and identity  
+# About security and identity
+
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

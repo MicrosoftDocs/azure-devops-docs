@@ -10,7 +10,11 @@ ms.author: kaelli
 ms.date: 11/27/2017
 ---
 
-# Set permissions and access for work tracking   
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Set permissions and access for work tracking
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -61,6 +65,7 @@ Permissions you set on an area path allow you to permit or restrict access to ed
 You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
 <a id="work-item-queries"></a>
+
 ## Define and edit queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. See [Set permissions on a shared query or query folder](../security/set-permissions-access-work-tracking.md) to restrict who can modify the query or queries within a folder.
@@ -92,6 +97,7 @@ Plans are an object within a team project. You manage plan permissions for each 
 	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
 <a id="move-delete-permissions"></a>
+
 ## Move or permanently delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
@@ -105,6 +111,7 @@ In this example, we grant members assigned to the team administrator role, who b
 
 
 <a id="delete-test-permissions"></a>
+
 ## Delete test artifacts
   
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
@@ -119,9 +126,11 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
+[//]: # (monikerRange: 'vsts')
 
 <a id="process-permissions"></a>
-## Customize an inherited process (VSTS) 
+
+## Customize an inherited process (VSTS)
 
 By default, only Project Collection Administrators can create and edit processes. However, these admins can grant permissions to other team members by explicitly setting the **Create process**, **Delete process**, or **Edit process** permissions at the collection level for a specific user. 
 
@@ -139,6 +148,8 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 >[!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
+
+[//]: # (::: moniker-end)
 
 ## Additional options for restricting access to work items   
 

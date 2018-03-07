@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
 > [!Warning]
@@ -43,11 +45,11 @@ One of the following scenarios likely applies to your situation:
 
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
   - This document is for you!
-- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
+- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalh@fabrikam.com.
     - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
-- I use a Microsoft account, jamal@outlook.com, and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
+- I use a Microsoft account, "yourname"@outlook.com (for example, jamal@outlook.com), and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
     - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory

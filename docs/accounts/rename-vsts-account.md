@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Rename your VSTS account
 
@@ -20,8 +21,8 @@ and those currently working with your account.
 So before you start, find out 
 [what to do before and after renaming your account](https://support.microsoft.com/kb/2793597).
 
-[!NOTE]
-An account cannot be renamed within one hour of the most recent rename.
+> [!NOTE]
+> An account cannot be renamed within one hour of the most recent rename.
 
 To change your VSTS account URL, 
 you'll need at least Basic access and account owner permissions. 

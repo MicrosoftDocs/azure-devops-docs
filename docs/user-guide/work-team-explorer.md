@@ -10,7 +10,11 @@ ms.author: kaelli
 ms.date: 09/07/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 <= tfs-2018')
+
 # Navigate in Team Explorer
+
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -18,7 +22,8 @@ You use Team Explorer to manage work that is assigned to you, your team, or you
 
 
 >[!TIP]  
->You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include: 
+>You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:
+
 > - [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
 > - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
 > - [VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
@@ -105,7 +110,7 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 > |-------------|----------|
 > |- **Changes**: [Save work with commits](../git/tutorial/commits.md)<br/>- **Branches**: [Create work in branches](../git/tutorial/branches.md)<br/>- **Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)<br/>- **Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md)) |- **My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>- **Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>- **Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md) |
 
-### Report and Document pages (TFS only)  
+### Report and Document pages (TFS only)
 
 The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
 
@@ -128,12 +133,14 @@ Most of the links open to a web portal administration page. Not all settings are
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
 
-## Related notes 
+## Related notes
+
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
 - [Troubleshoot connection](troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 
 <a id="clients">  </a>
+
 ### Clients that connect to VSTS or TFS
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 

@@ -9,12 +9,16 @@ ms.author: kaelli
 ms.date: 03/02/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2015')
+
 #Tools and clients that connect to VSTS and TFS
-<b>VSTS | TFS 2017 | TFS 2015  </b> 
+
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
 Our platform of software development tools began over 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins which extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to VSTS and TFS to support source control, work tracking, build, and test operations.  
 
-The set of tools available to you that interface with VSTS and TFS include: 
+The set of tools available to you that interface with VSTS and TFS include:
+
 - Desktop client developer tools 
 - Office integration tools 
 - Web based tools
@@ -32,7 +36,7 @@ Be clear about what they pay for and what is free
 
 -->
 
-## Desktop client developer tools 
+## Desktop client developer tools
 
 Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). 
 
@@ -59,7 +63,7 @@ Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual
 > |<img src="../user-guide/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../user-guide/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
 
-##Office integration tools 
+## Office integration tools 
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
@@ -71,7 +75,8 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 >[!IMPORTANT]
 >Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. 
 
-###Task-specific clients
+### Task-specific clients
+
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.
 
 - **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
@@ -81,9 +86,10 @@ The following clients support specific tasks, such as managing testing efforts, 
 >[!IMPORTANT]
 >Test Manager is deprecated for TFS 2017.  
 
-##Browser-based web tools 
+## Browser-based web tools
 
-###Web portal 
+### Web portal
+
 The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/vsts/release-notes/index).
  
 You can use these browsers to access the web portal (VSTS and TFS).
@@ -110,14 +116,16 @@ The following extensions are available from the Visual Studio Marketplace and ar
   
 Find additional extensions from the [Marketplace](https://marketplace.visualstudio.com) 
 
-###Application monitoring tools
+### Application monitoring tools
 
 To monitor your applications you can use Application Insights for web apps or HockeyApp for mobile apps.  
 
-####Monitor web applications with Application Insights 
+#### Monitor web applications with Application Insights
+
 Application Insights is an extensible Application Performance Management (APM) service for web developers. Use it to monitor your live web application. It will automatically detect performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms including .NET, Node.js and J2EE, hosted on-premises or in the cloud.  
 
 With Application Insights you can:
+
 - Gain actionable insights through application performance management and instant analytics
 - Detect and diagnose exceptions and application performance issues
 - Monitor Azure websites, including those hosted in containers, plus websites on-premises and with other cloud providers
@@ -126,18 +134,22 @@ With Application Insights you can:
 
 To learn more, see [Microsoft Azure - Application Insights](https://azure.microsoft.com/services/application-insights/).
 
-####Monitor mobile applications with HockeyApp  
+#### Monitor mobile applications with HockeyApp
+
 With HockeyApp you can develop, distribute, and beta-test your mobile apps. HockeyApp supports:
+
 - Android, Cordova, iOS, macOS, Unity, Windows, and Xamarin apps
 - Live, reliable crash reports
 - Collect in-app feedback from real users
 - Open-source SDKs to let you know what code is running in your apps
-- Integraion with your existing build system and work item management solution
+- Integration with your existing build system and work item management solution
 
 To learn more, see [Microsoft Azure - HockeyApp](https://docs.microsoft.com/azure/application-insights/app-insights-overview).
 
-##Command-line tools 
-You can perform many code development and administrative tasks using command line tools. 
+## Command-line tools
+
+You can perform many code development and administrative tasks using command line tools.
+
 - [Git commands](../git/command-prompt.md)
 - [TFVC commands](../tfvc/use-team-foundation-version-control-commands.md)
 - [TFSConfig](../tfs-server/command-line/tfsconfig-cmd.md)
@@ -147,7 +159,7 @@ You can perform many code development and administrative tasks using command lin
 - [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
-##Marketplace extensions
+## Marketplace extensions
 
 While Visual Studio, VSTS, and TFS provide a wealth of features and functionality, they also provide a means to extend and share that functionality. 
 
@@ -157,7 +169,7 @@ You build extensions using our RESTful API Library. You publish them to the Visu
 
 To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](../extend/index.md).
 
-##REST APIs  
+## REST APIs  
  
 The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all standard web technologies broadly supported in the industry.
 

@@ -10,8 +10,11 @@ ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
-# Add users to a team project or specific team  
+# Add users to a team project or specific team
+
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -20,7 +23,7 @@ For anyone to access a team project, they must be added to one of the default se
 The easiest way to add a number of users to a team project is to add groups defined in [Azure Active Directory (AAD) or Active Directory (AD)](setup-ad-aad.md). 
 
 > [!IMPORTANT]  
-> If your adding users to a VSTS account and you don't use AAD, then you need to [add their "personal" Microsoft accounts to your account or team project](../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one team project, you can add them to additional team projects using the procedures provided in this topic.   
+> If your adding users to a VSTS account and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or team project](../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one team project, you can add them to additional team projects using the procedures provided in this topic.   
 
 Once users have been added to a team project, you can browse for that name by display name as well as account name. Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../work/scale/multiple-teams.md).
 
@@ -50,7 +53,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
     -   To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
     -   For users who will need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
 
-0. Next, click the **Members** tab. 
+0. Next, choose the **Members** tab. 
 
 	Here we choose the Contributors group.  
 
@@ -61,9 +64,9 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 
 	By default, the default team group and all other teams you add to the team project are included as members of the Contributors group. So, you can choose to add a new user as a member of a team instead, and the user would automatically inherit Contributor permissions. 
 
-0. Click ![gear icon](../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+0. Choose ![gear icon](../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Click the match(es) that meets your choice. 
+0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. choose the match(es) that meets your choice. 
 
 	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
