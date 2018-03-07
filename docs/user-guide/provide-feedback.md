@@ -9,7 +9,9 @@ ms.author: douge
 ms.date: 10/19/2017
 ---
 
-# Get VSTS and TFS product support and provide feedback  
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Get VSTS and TFS product support and provide feedback
 
 [!INCLUDE [temp](../work/_shared/dev15-version-header.md)] 
 
@@ -59,6 +61,7 @@ The best feedback we get is clear and precise. For example:
 The more details, the better!
 
 <a id="platform-version" />
+
 ## What platform/version am I using? 
 
 You can tell what platform you use from the URL you use to connect to VSTS or TFS. 
@@ -134,5 +137,6 @@ A page similar to the one shown will open showing the version number.
 | TFS 2005 | SP1    | 8.0.50727.762| 
 |          |  RTM  | 8.0.50727.147| 
 
-## Related notes 
+## Related notes
+
 - [Report a problem with Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)  

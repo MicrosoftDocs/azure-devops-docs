@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Troubleshoot paying for VSTS Basic access
 
 **VSTS**

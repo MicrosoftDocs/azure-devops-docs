@@ -15,6 +15,7 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
 <a name="gentopics"></a>
+
 ## General topics
 
 [Go to related topic &gt;](getting-started-with-continuous-testing.md)
@@ -36,6 +37,17 @@ ms.date: 01/18/2018
 ### Q: I'm having problems using xUnit with .NET Core apps. Where can I get more information?
 
 **A**: See the blog post [Unit Tests with .NET Core and VSTS](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
+
+<a name="code-coverage"></a>
+
+### Q: I am not using the Visual Studio Test task to run my unit tests. Can I still collect and publish code coverage data?
+
+**A**: Yes, use the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md).
+
+### Q: I have multiple Publish Code Coverage Results tasks in my definition. Do I get a merged code coverage summary?
+
+**A**: Code coverage is automatically merged for only Visual Studio coverage (.coverage) files.
+A merged summary is not currently available for coverage files published using multiple Publish Code Coverage Results tasks.
 
 <a name="qa-more-tests"></a>
 ### Q: What are the typical types of tests I can run to validate my app and deployment?

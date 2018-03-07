@@ -12,8 +12,11 @@ ms.topic: get-started-article
 ms.date: 02/12/18
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Default permissions and access for VSTS and TFS 
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

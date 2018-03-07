@@ -12,7 +12,9 @@ ms.topic: get-started-article
 ms.date: 02/12/18
 ---
 
-# About security roles   
+[//]: # (monikerRange: '>= tfs-2015')
+
+# About security roles
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 

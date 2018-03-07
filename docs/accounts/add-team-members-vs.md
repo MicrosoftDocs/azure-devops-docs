@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/24/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Add team project members in VSTS
 
 **VSTS**

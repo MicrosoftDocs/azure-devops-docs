@@ -1,7 +1,7 @@
 ---
-title: Remove users from AD/AAD security groups 
+title: Remove users from AD/Azure AD security groups 
 titleSuffix: VSTS & TFS
-description: Manage changes to an organization when users leave a project or company by removing their user account from AD/AAD security groups  
+description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD (AAD) security groups  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 
@@ -10,9 +10,11 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/06/2018
 ---
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Remove user accounts
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -27,7 +29,8 @@ In this topic you'll find:
 > * Options for removing users from VSTS accounts
 > * Links to topics for removing user accounts from AD or Azure AD  
 
-## Things to consider when removing users
+## Consider when removing users
+
 - Have you granted users any paid extensions? You'll want to transfer those extensions to another user from the **Users** hub. 
 - Do users have any tokens that you need to revoke?
 - Have you granted individual user accounts special permissions that need to be revoked? 
@@ -38,17 +41,17 @@ In this topic you'll find:
 
 If your VSTS account uses MSA accounts, then to you must remove users from the VSTS account as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users for VSTS](../accounts/delete-account-users.md).
 
-If your VSTS account is backed by AAD, then you can disable or delete the AAD user account while leaving their VSTS account active. In this way, you can continue to query their work item history using their account name.  
+If your VSTS account is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their VSTS account active. In this way, you can continue to query their work item history using their account name.
 
-##  Remove users from AD or AAD  
+## Remove users from AD or Azure AD
 
-For information on removing users from AD or AAD, see one of these topics: 
+For information on removing users from AD or Azure AD, see one of these topics: 
 
 - [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory#delete-users-from-azure-ad)
 - [Delete a User Account from Active Directory](https://technet.microsoft.com/en-us/library/cc753730.aspx)
 
  
-##  Reduce the number of paid users, reassign paid extensions
+## Reduce the number of paid users, reassign paid extensions
 
 - [Change number of users who have paid Basic access](../billing/buy-basic-access-add-users.md)
 - [Assign paid extension access to users for VSTS](../marketplace/assign-paid-extensions.md)

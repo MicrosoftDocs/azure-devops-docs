@@ -9,9 +9,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
+
 # About account management
 
-**VSTS**
+**VSTS|TFS 2018|TFS 2017|TFS 2015|TFS 2013**
 
 With a Visual Studio Team Services (VSTS) account, you gain access to the platform in which you can:
 

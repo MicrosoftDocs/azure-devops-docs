@@ -9,11 +9,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
-# Troubleshooting renaming a team project
+# Troubleshoot renaming a team project
 
 **VSTS** | **TFS 2015**
-
 
 #### Q: What permission do I need to rename a team project?
 

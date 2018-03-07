@@ -8,9 +8,16 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/26/2018
 ---
+
+[//]: # (monikerRange: '>= tfs-2013')
+
 # Troubleshoot connecting to a team project in VSTS or TFS
 
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[//]: # (::: monikerRange: 'vsts')
 
 ## Troubleshoot VSTS connectivity
 
@@ -67,6 +74,10 @@ In some cases, you may be unaware that you have two identities with the same sig
 Still unable to access your account?
 In cases where you enter your credentials correctly, but instead of redirecting to your VSTS account you are redirected back to the original sign in page, we recommend clearing all cookies and re-attempting to sign in. If that does not fix the issue, please contact customer support.
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: monikerRange: '>= tfs-2013 <= tfs-2018')
+
 ## Troubleshoot TFS connectivity
 
 Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
@@ -83,6 +94,10 @@ Here's a list of the most frequently encountered connection problems and what to
 
 For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../work/customize/reference/error/tf31002-unable-connect-tfs.md).
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: monikerRange: 'vsts')
+
 ## Switch between different organizational accounts in VSTS
 
 When you use two or more VSTS accounts that are linked to directory tenants, such as accounts that are created from the Microsoft Azure Portal, the sign-out function may not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.
@@ -96,6 +111,10 @@ When this problem occurs, a blank screen flashes several times followed by one o
 To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://www.visualstudio.com/downloads).
 
 For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: monikerRange: '>= tfs-2013 <= tfs-2018')
 
 ## Connect to a TFS with Secure Sockets Layer (SSL) configured
 
@@ -121,3 +140,5 @@ When the on-premises TFS configuration changes, such as when moving or splitting
         *Drive*:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\2.0\Cache
 
 4. Delete the contents of the Cache directory, including all subfolders.
+ 
+[//]: # (::: moniker-end)

@@ -9,9 +9,11 @@ ms.author: kaelli
 ms.date: 06/22/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
+
 # DevOps overview for VSTS and TFS
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  
@@ -25,17 +27,20 @@ Also, you can quickly expand the power of these tools through integration with o
 
 For the key differences between TFS and VSTS, see [About VSTS and Team Foundation Server](about-vsts-tfs.md). 
 
-## Get started in the cloud or on-premises  
+## Get started in the cloud or on-premises
+
 Whether you work in the cloud, on-premises, or a hybrid of each, you have a comprehensive set of DevOps and Agile tools to support team collaboration throughout the cycles of planning, development and test, and continuous delivery.
 
 
 ### Work in the cloud
+
 Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
 
 
 [![Sign up for VSTS](_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](code-with-git.md)   
 
 ### Work on-premises
+
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
 [![Install TFS](_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
@@ -56,7 +61,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 <br/>
 [![Visual Studio](_img/overview/code-git-visual-studio.png)](../git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../git/share-your-code-in-git-xcode.md)  
 
-### TFVC 
+### TFVC
 
 TFVC is a centralized version control system that lets you apply granular permissions and restrict access down to a file level. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
@@ -77,7 +82,7 @@ Code Search provides a comprehensive solution to all your code exploration and t
 
 Code Search also makes team collaboration easier and helps maximize developer efficiency. View history and annotations to see who last changed a line of code, and what they changed. Search locally within code files, and find references or definitions of Code Search matches, when debugging or exploring your code. Add your comments and then communicate the results to team members easily by sharing the query URL.  
 
-## Plan and track work with Agile tools  
+## Plan and track work with Agile tools
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
@@ -86,8 +91,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
 You also gain access to a [rich set of customization capabilities](../work/customize/customize-work.md). 
  
-
-## DevOps: Build - Test - Release 
+## DevOps: Build - Test - Release
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
@@ -105,10 +109,7 @@ In addition to continuous integration testing, you can create [test plans](../ma
 Release Management helps you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 
  
- 
-
-
-## Scale up  
+## Scale up
 
 As your team grows, your tools will grow with you. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
