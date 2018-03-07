@@ -9,7 +9,11 @@ ms.author: kaelli
 ms.date: 06/22/2017
 ---
 
-# About VSTS and Team Foundation Server 
+[//]: # (monikerRange: '>= tfs-2013')
+
+# About VSTS and Team Foundation Server
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 VSTS and Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
@@ -134,7 +138,7 @@ that VSTS projects stay safe and secure. We have technical features and business
 to deliver on that commitment. You can also take steps to secure your data. Learn more in our
 [Data Protection Overview whitepaper](../articles/team-services-security-whitepaper.md).
 
-## Key feature differences between VSTS and TFS 
+## Key feature differences between VSTS and TFS
 
 Even though VSTS is a hosted version of TFS, there are some differences between the features available 
 in the two products. Some TFS features are not supported in VSTS at all&mdash;for example, VSTS does not support integration with 

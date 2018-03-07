@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Delete a team project
 

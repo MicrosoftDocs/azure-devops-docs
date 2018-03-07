@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  How to buy cloud-based load testing in VSTS
 

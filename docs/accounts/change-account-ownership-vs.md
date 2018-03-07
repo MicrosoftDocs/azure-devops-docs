@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Change account owner for VSTS
 
 **VSTS**

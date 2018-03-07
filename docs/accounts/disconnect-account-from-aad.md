@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 12/11/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  Disconnect your VSTS account from your directory
 
