@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Restore your VSTS account
 

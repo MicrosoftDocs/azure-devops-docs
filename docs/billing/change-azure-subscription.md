@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Change the Azure subscription your VSTS account uses for billing
 
@@ -17,7 +18,6 @@ ms.date: 1/29/2018
 If you want to use a different Azure subscription to bill purchases for your VSTS account, 
 you can unlink your VSTS account from your current Azure subscription, 
 and relink your account to another Azure subscription that's associated with you as the VSTS account owner. 
-
 
 ## Prerequisites
 

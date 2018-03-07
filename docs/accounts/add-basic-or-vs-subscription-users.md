@@ -9,10 +9,11 @@ ms.author: chcomley
 ms.date: 11/13/2017
 ---
 
+[//]: # (monikerRange: 'vsts')
+
 # Add more users with Basic features or Visual Studio subscriptions
 
 **VSTS**
-
 
 When your account stays within the free limits, you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.

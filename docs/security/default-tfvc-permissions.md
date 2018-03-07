@@ -11,7 +11,11 @@ ms.author: sdanie
 ms.date: 02/07/2018
 ---
 
-# Default TFVC permissions 
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Default TFVC permissions
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

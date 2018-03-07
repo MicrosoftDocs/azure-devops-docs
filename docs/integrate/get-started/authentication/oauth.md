@@ -27,7 +27,7 @@ For a C# example of the overall flow, see [vsts-auth-samples](https://github.com
 
 ## Register your app
 
-Go to (https://app.vssps.visualstudio.com/app/register) to register your app.
+Go to (https://app.vsaex.visualstudio.com/app/register) to register your app.
 
 Make sure you select the [scopes](#scopes) that your application needs,
 and then use the exact same scopes when you [authorize your app](#authorize-your-app).

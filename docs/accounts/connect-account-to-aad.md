@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
 > [!Warning]
