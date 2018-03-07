@@ -7,8 +7,10 @@ ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/28/2018
+ms.date: 03/02/2018
 ---
+[//]: # (monikerRange: 'vsts')
+
 # VSTS billing overview
 
 **VSTS**

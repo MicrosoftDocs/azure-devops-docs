@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 08/08/2016
 ---
+[//]: # (monikerRange: '>= tfs-2013 <= tfs-2017')
 
 # TFS web site settings and security
 

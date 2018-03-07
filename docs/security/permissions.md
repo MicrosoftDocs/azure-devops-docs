@@ -11,8 +11,11 @@ ms.author: kaelli
 ms.date: 02/12/18
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Permissions and groups in VSTS and TFS
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -52,7 +55,11 @@ Project Server Integration Service Accounts
 SharePoint Web Application Services
 -->
 
+
+
 <a name="server"></a>
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups (TFS only)
 
@@ -176,7 +183,10 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]/Team Foundation Administrators**.
 
+[//]: # (::: moniker-end)
+
 <a name="collection"></a>
+
 ##&nbsp;&nbsp;&nbsp;Collection-level groups
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
@@ -278,7 +288,7 @@ Project Collection Valid Users
 </table>
 
 > The full name of each of these groups is **[{collection name}]/{group name}**.
-> So the full name of the adminstrators group for the default collection is
+> So the full name of the administrator group for the default collection is
 > **[Default Collection]/Project Collection Administrators**.
 
 
@@ -295,6 +305,7 @@ Release Administrators (TFS 2017, VSTS)
 -->
 
 <a id="project-level-groups" />
+
 ##&nbsp;&nbsp;&nbsp;Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
@@ -949,7 +960,7 @@ Commenting this section out as it duplicates that defined in the following table
 	<tr>
 		<td id="override-check-in-validation-by-build-permission">Override check-in validation by build</td>
 		<td>
-			Can commit a TFVC changeset that affects a gated build definition
+			Can commit a TFVC change set that affects a gated build definition
 			without triggering the system to shelve and build their changes first.
 			<blockquote>
 				Assign the Override check-in validation by build permission
@@ -1177,14 +1188,14 @@ In version control permissions, explicit deny takes precedence over administrato
 			Check in
 		</td>
 		<td data-th="Description">
-			Can check in items and revise any committed changeset comments.
+			Can check in items and revise any committed change set comments.
 			Pending changes are committed at check-in.
 			<blockquote>
 				Consider adding these permissions to any manually added users or groups
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1213,7 +1224,7 @@ In version control permissions, explicit deny takes precedence over administrato
 				that contributes to the development of the team project;
 				any users who should be able to check in and check out changes,
 				make a pending change to items in a folder,
-				or revise any committed changeset comments.
+				or revise any committed change set comments.
 			</blockquote>
 		</td>
 	</tr>
@@ -1702,6 +1713,8 @@ View releases
 
 <a id="release_management">  </a>
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 ##&nbsp;&nbsp;&nbsp;Release (object-level) (VSTS, TFS 2017)
 
 You manage permissions [for each release defined in the web portal](../build-release/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
@@ -1738,9 +1751,10 @@ default. **Contributors** are given all permissions except
 are denied all permissions except **View release definition** and
 **View releases**.
 
-
+[//]: # (::: moniker-end)
 
 <a id="task-group">  </a>
+
 ##&nbsp;&nbsp;&nbsp;Task group (Build and Release) permissions
 
 You manage permissions [for task groups from the **Build and Release** hub](../build-release/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
@@ -1754,7 +1768,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 | **Delete task group** | Can delete a task group. | 
 | **Edit task group** | Can create, modify, or delete a task group. | 
 
-
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2013")
 
 <a id="lab">  </a>
 
@@ -1860,7 +1874,7 @@ By default, the team project level and collection-level Readers groups have only
 </tbody>
 </table>
 
-
+[//]: # (::: moniker-end)
 
 
 <a id="alerts">  </a>

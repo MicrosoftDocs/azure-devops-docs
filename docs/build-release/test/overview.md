@@ -33,7 +33,7 @@ automatically with each build.
 
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Unit-Testing-from-a-CI-Build-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
+* [Run unit tests with your builds](getting-started-with-continuous-testing.md)
 * [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 * [Learn more about test task steps](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)

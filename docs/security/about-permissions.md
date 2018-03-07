@@ -10,7 +10,9 @@ ms.author: kaelli
 ms.date: 02/07/2018
 ---
 
-# About permissions and groups 
+# About permissions and groups
+
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -60,13 +62,15 @@ are inherited down the hierarchy.
 That is, a user's permissions that are set at `area-1` are inherited by `area-1/sub-area-1`,
 if the same permission is not explicitly allowed or denied for `area-1/sub-area-1`.
 If a permission is set explicitly for an object, like `area-1/sub-area-1`,
-then the parent node is not inheritied, regardless of whether it is denied or allowed.
-If it's not set, then the permissions for that node are inheritied from the closest ancestor
+then the parent node is not inherited, regardless of whether it is denied or allowed.
+If it's not set, then the permissions for that node are inherited from the closest ancestor
 that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
 
-###VSTS, TFS 2017 
+[//]: # (::: moniker range=">= tfs-2017")
+
+### VSTS, TFS 2017 
 
 <img src="_img/about-permissions-why.png" style="border: 1px solid #C3C3C3;" />
 
@@ -74,7 +78,12 @@ A new window opens that shows the inheritance information for that permission.
 
 <img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
 
-### TFS 2015, TFS 2013 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+
+### TFS 2015, TFS 2013
+
 <img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #C3C3C3;" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
@@ -96,8 +105,10 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 - Don’t change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
 - Don’t assign permissions that are noted as ‘Assign only to service accounts’ to user accounts.
 
+[//]: # (::: moniker-end)
 
 <a id="grant-permissions"  >  </a>  
+
 ## Permissions versus access levels 
 
 Permissions are different than access levels. Access levels control what features are 

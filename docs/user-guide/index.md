@@ -9,6 +9,8 @@ ms.author: kaelli
 ms.date: 08/18/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
+
 # New User Guide
 
 **VSTS | TFS**
@@ -35,14 +37,14 @@ Get started with a free account, share your code using Git, and track your work 
 - [Plan & track work](plan-track-work.md)
 
 
-## Step-by-Step Tutorials  
+## Step-by-Step Tutorials
 
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
-## Concepts  
+## Concepts
 
 - [Key concepts](concepts.md)    
 - [Source control](source-control.md)   
@@ -53,6 +55,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 
 ## Reference
+
 - [Permissions and access](../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Keyboard shortcuts](../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Markdown guidance](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)

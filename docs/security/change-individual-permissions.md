@@ -10,9 +10,11 @@ ms.topic: get-started-article
 ms.date: 12/18/2017
 ---
 
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Change individual permissions, grant select access to specific functions  
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -35,6 +37,7 @@ If you are new to administrating permissions and groups, review [About permissio
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
 <a id="create-custom-group" />
+
 ## Create a custom security group 
  
 You can create a custom security group at the project-level or the collection-level. The method for creating a custom security group is the same, no matter at what level you add it. 

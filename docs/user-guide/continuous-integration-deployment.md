@@ -9,9 +9,11 @@ ms.author: kaelli
 ms.date: 07/19/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
+
 # Continuous integration and deployment  
 
-<b>VSTS | TFS 2017 | TFS 2015  | TFS 2013</b> 
+**VSTS** | **TFS 2017** | **TFS 2015**  | **TFS 2013**
 
 **NEW - To Be Completed**
  

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/10/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Troubleshoot creating a VSTS account
 
