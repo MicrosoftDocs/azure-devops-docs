@@ -9,7 +9,11 @@ ms.author: douge
 ms.date: 12/12/2017
 ---
 
-# Set repository permissions for Git or TFVC 
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Set repository permissions for Git or TFVC
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

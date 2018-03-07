@@ -10,8 +10,11 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 02/07/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
-# Default Git repository and branch permissions 
+# Default Git repository and branch permissions
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 12/02/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Troubleshoot network connections and whitelist addresses
 

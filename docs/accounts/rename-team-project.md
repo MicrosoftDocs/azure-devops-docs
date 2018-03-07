@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/05/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Rename a team project
 
@@ -151,7 +152,7 @@ For the following clients, execute a get or check-in and the workspace mapping w
 - Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)
 
 We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
-except for Visual Studio 2010 which only supports server worksapces, 
+except for Visual Studio 2010 which only supports server workspaces, 
 and Team Foundation Server plugin for Eclipse, 
 you must create a new local workspace mapped to the new team project name.
 

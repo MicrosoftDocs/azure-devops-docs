@@ -9,11 +9,14 @@ ms.author: kaelli
 ms.date: 03/02/2016
 ---
 
-#FAQs
+[//]: # (monikerRange: '>= tfs-2013')
+
+# FAQs
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
  
-### Q: How do I get started?  
+### Q: How do I get started?
+
 **A: To get started in the cloud or on-premises:** 
 - To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../accounts/create-account-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](../tfs-server/install/get-started.md) for details.  
@@ -32,12 +35,15 @@ Go to one of these pages to download a version of Visual Studio or client tool p
 **A: To get started with sharing code, work item tracking, builds, or other tasks:** 
 See [Software development roles](roles.md).  
 
-### Q: What compatibility issues exist between client and server versions?  
+### Q: What compatibility issues exist between client and server versions?
+
  **A:** See [Requirements and compatibility](../accounts/requirements.md).  
  
-### Q: Can stakeholders who don't use Visual Studio participate on our team?  
+
+### Q: Can stakeholders who don't use Visual Studio participate on our team?
+
  **A**: Yes. You can provide access to stakeholders who have no CAL for the following activities:  
-  
+
 -   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  
   
      To grant stakeholders access, add them to the [Stakeholder access group](../security/change-access-levels.md).  
@@ -45,7 +51,8 @@ See [Software development roles](roles.md).
 -   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../feedback/give-permissions-feedback.md).  
   
 
-### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?  
+### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?
+
 **A:** Yes. You can connect to a team project from one of these clients:  
 - [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
 - [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  
@@ -66,8 +73,9 @@ Also, you can find several open-source clients that have been added to [Marketpl
 > [!NOTE]  
 > Team Foundation Server Power Tools is deprecated for TFS 2017 and later versions. 
 
-  
-## Related notes 
+
+## Related notes
+
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Client-server tools](tools.md)

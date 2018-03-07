@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Access VSTS with Azure Active Directory (Azure AD)
 
 **VSTS**
