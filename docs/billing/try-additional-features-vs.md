@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  Free trials for paid VSTS features and extensions
 

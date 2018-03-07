@@ -11,7 +11,10 @@ ms.date: 12/12/2017
 ---
 
 
-# Look up the account owner or a project administrator   
+
+# Look up the account owner or a project administrator
+
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -37,7 +40,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 	<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
 
 
-## Determine who is a member of the Project Collection Administrators group   
+## Determine who is a member of the Project Collection Administrators group
 
 If you need elevated permissions, you'll have to request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all team projects. 
 
@@ -47,7 +50,10 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
   
+[//]: # (monikerRange: 'vsts')
+
 <a name="find-owner"></a>
+
 ## Look up the account owner (VSTS) 
 
 Only VSTS accounts have account owners.  
@@ -62,6 +68,7 @@ Only VSTS accounts have account owners.
 
 	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 
+[//]: # (::: moniker-end)
 
 <!---
 ## Find out who is a team administrator for a specific team

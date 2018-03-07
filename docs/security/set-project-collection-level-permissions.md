@@ -10,8 +10,11 @@ ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Add administrators, set permissions at the project-level or project collection-level
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -118,7 +121,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 > [!NOTE]   
 > You can't change the permission settings for the Project Collection Administrators group. This is by design.  
 
-##On-premises TFS 
+## On-premises TFS
 
 For on-premises TFS, see these additional topics: 
 

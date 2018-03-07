@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/20/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Assign access levels and extensions to users by group membership
 

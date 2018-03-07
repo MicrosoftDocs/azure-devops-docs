@@ -9,13 +9,12 @@ ms.author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Create a team project
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/ms181477%28v=vs.120%29.aspx)**  
-
-
->[!NOTE]  
+>[!NOTE]
 >If you don’t want to manage an on-premises server, you can 
 [sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
 
@@ -30,10 +29,11 @@ If you have a team project already, and want to start coding an application proj
 >If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 
-
 ## From the web
 
-# [VSTS](#tab/vsts)
+[//]: # (::: moniker range= "vsts")
+
+### VSTS
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
@@ -50,8 +50,11 @@ If you have a team project already, and want to start coding an application proj
 
     ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
 
+[//]: # (::: moniker-end)
 
-# [TFS](#tab/tfs) 
+[//]: # (::: moniker range=">= tfs-2015")
+
+### TFS
 
 If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](../tfs-server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
 
@@ -60,7 +63,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
-2. Navigate to the administation overview page by hovering over the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page and selecting *Server settings*.
+2. Navigate to the administration overview page by hovering over the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page and selecting *Server settings*.
 
 3. Select the collection administration page for the collection you want to create the team project in from the left pane, and select *Create a new team project..*.
 
@@ -72,7 +75,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
     ![Create team project dialog](_img/create-team-project/clickcreatetfs.png)
 
----
+[//]: # (::: moniker-end)
 
 ## From Team Explorer
 You can create a team project from Team Explorer after you have connected to an on-premises server. 

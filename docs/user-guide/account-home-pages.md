@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 01/24/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Work effectively from your account hub 
 
@@ -46,11 +47,13 @@ As you hover over the project, you can click one of the links to go to the Home 
 <img src="_img/account-home-projects-hover-links.png" alt="Account home, Projects page, hover over a team project" style="border: 1px solid #CCCCCC;" />    
 
 ### Filter projects and teams
+
 If a project isn't listed, you can find it by searching for it using the *Filter projects and teams* search box. Simply type a keyword contained within the name of a team project or team. Here we type **Design** to find the Contoso project Design team. 
 
 <img src="_img/account-home-search-projects-design.png" alt="Account home, Projects page, filter on Design" style="border: 1px solid #CCCCCC;" />    
 
 ### Add a team project
+
 If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Click New Project to [add a team project](../accounts/create-team-project.md). 
 
 <img src="_img/account-home-projects-new-project.png" alt="Account home, Projects page, New team project" style="border: 1px solid #CCCCCC;" />
@@ -80,12 +83,13 @@ Favorited objects include:
 - To mark a build definition as a favorite, open the **Build&Release>All Definitions** page and click the ![favorites](_img/icon-favorite-star.png) star icon next to the build definition.    
 - To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 
-### Remove an item from your favorites list 
+### Remove an item from your favorites list
+
 To remove an item from your favorites list, click the ![favorited icon](_img/icon-favorited.png) favorited icon. 
 
 <img src="_img/account-home-remove-from-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
 
-### Filter the list of favorites  
+### Filter the list of favorites
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item. 
  
@@ -96,7 +100,8 @@ Open the **Work items** hub to access the set of work items assigned to you or f
 > [!NOTE]  
 > **Feature availability**: For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
-###Your assigned work items 
+### View your assigned work items
+
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 
 
 <img src="_img/account-home-work-assigned-to-me.png" alt="Account home, Work, Assigned to me page" style="border: 1px solid #CCCCCC;" />  
@@ -117,7 +122,7 @@ Click **My activity** to open the page that lists all work items that you have r
 
 <img src="_img/account-work-my-activity.png" alt="Account home, Work items, My Activity page" style="border: 1px solid #CCCCCC;" /> 
 
-### Filter the list of work items 
+### Filter the list of work items
 
 Similar to the Favorites page, you can filter the work pages by typing a keyword in the *Filter your work items...* box. The list will filter based on keyword matches to the work item ID, title, state, or team project name. 
 
@@ -131,7 +136,7 @@ Open the **Pull requests** page to access any pull request that's relevant to yo
 
 From each page, you're one click away from navigating to the branch or repository for a pull request. This mirrors capabilities on the team-project level **Code>Pull Requests** page.
 
-### Filter the list of pull requests 
+### Filter the list of pull requests
 
 Similar to the Favorites page, you can filter the list by typing a keyword in the *Filter pull requests* box. 
 
