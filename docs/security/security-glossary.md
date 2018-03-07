@@ -9,7 +9,11 @@ ms.author: kaelli
 ms.date: 12/18/2017
 ---
 
-# Security glossary 
+[//]: # (monikerRange: '>= tfs-2013')
+
+# Security glossary
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

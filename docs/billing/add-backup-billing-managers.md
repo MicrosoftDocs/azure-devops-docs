@@ -8,12 +8,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 #  Add backup billing managers for your VSTS account
 
 **VSTS**
-
-
 
 To let others manage billing or make purchases through Visual Studio Marketplace for your VSTS account, 
 add **owner** or **contributor** roles to users in the Azure subscription that's linked to your VSTS account.

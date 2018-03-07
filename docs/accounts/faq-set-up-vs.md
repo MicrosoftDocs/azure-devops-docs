@@ -8,11 +8,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/09/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Troubleshoot setting up Visual Studio with VSTS
 
 **VSTS**
-
 
 ## Visual Studio 
 

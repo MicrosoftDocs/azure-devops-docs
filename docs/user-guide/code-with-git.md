@@ -10,7 +10,9 @@ ms.date: 08/24/2017
 ms.topic: get-started-article
 ---
 
-# Code with Git  
+[//]: # (monikerRange: 'vsts')
+
+# Code with Git
 
 **VSTS**
 

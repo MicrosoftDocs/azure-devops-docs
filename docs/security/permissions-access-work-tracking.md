@@ -8,9 +8,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 10/23/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
+# Permissions and access for work tracking
 
-# Permissions and access for work tracking   
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -190,7 +192,8 @@ The following table summarizes a subset of the default permissions assigned to t
 
 
 
-<a id="stakeholder-access"></a>  
+<a id="stakeholder-access"></a>
+
 ## Stakeholder access
 
 Stakeholder access supports business owners and analysts and other team members who don't contribute to code, build, and test activities. They contribute by adding ideas to the backlog, adding context and information to work items, and reviewing status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. To learn more about stakeholder access, see [Work as a stakeholder](get-started-stakeholder.md). 

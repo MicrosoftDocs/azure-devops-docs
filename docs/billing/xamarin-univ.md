@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: esther
 ms.date: 10/6/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
-#	Buy Xamarin University
+# Buy Xamarin University
 
 [Xamarin University](https://www.xamarin.com/university) offers live, online, and office hours classes, self-guided learning,
 and guest lectures.

@@ -10,8 +10,11 @@ ms.author: kaelli
 ms.date: 02/12/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Grant or restrict access to select features and functions
+
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

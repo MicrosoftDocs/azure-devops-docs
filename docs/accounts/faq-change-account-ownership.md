@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/09/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Troubleshoot changing account owner for VSTS
 

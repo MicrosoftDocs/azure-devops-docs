@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 #	Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 
