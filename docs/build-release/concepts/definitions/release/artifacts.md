@@ -36,7 +36,7 @@ As you deploy the release to various environments, you will be deploying
 and validating the same artifacts in all environments.
 
 A single release definition can be linked to
-**multiple artifact sources**.
+**multiple artifact sources**, of which one is the [primary source](#art-primary).
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
@@ -57,8 +57,8 @@ on the linking of artifacts to a release definition are:
 <!-- For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.-->
 
 * **Artifact variables**. Every artifact that is part
-  of a release has metadata associated with it. This
-  metadata includes the version number of the artifact,
+  of a release has metadata associated with it, exposed to [tasks](../../../tasks/index.md) through [variables](#art-vars).
+  This metadata includes the version number of the artifact,
   the branch of code from which the artifact was produced
   (in the case of build or source code artifacts), the
   definition that produced the artifact (in the case of
@@ -420,12 +420,16 @@ source alias that reflects the name of the build definition.
 > The source alias can contain only alphanumeric characters
 and underscores, and must start with a letter or an underscore
 
+<a name="art-primary"></a>
+
 <h2 id="primary-source">Primary source</h2>
 
 When you link multiple artifact sources to a release definition, one of them
 is designated as the primary artifact source. The primary artifact source is used
 to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
 be used in [naming releases](index.md#numbering).
+
+<a name="art-vars"></a>
 
 ## Artifact variables
 

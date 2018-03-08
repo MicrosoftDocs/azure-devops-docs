@@ -1,5 +1,6 @@
 ---
 title: What access levels does VSTS & TFS support?
+titleSuffix: VSTS & TFS
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise access  
 ms.technology: vs-devops-admin
 ms.prod: vs-devops-alm
@@ -9,14 +10,11 @@ ms.reviewer: jrice
 ms.author: kaelli
 ms.date: 11/28/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # About access levels
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
 

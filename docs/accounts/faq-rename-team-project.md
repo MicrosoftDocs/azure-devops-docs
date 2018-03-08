@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: 'tfs-2015 || vsts')
 
 # Troubleshoot renaming a team project
 

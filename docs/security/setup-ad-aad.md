@@ -9,14 +9,11 @@ ms.author: chcomley
 ms.topic: get-started-article
 ms.date: 02/28/2018
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Set up Active Directory or Azure Active Directory
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The recommended method for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
