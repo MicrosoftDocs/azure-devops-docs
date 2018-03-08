@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Set up Team Foundation Version Control on your dev machine
 
@@ -17,9 +18,9 @@ To set up Team Foundation Version Control (TFVC) on your dev machine, you just n
 
 **Before you start**
 
--   If you don’t have Visual Studio, [get it here](http://go.microsoft.com/fwlink/p/?LinkId=254509).
+-   If you don't have Visual Studio, [get it here](http://go.microsoft.com/fwlink/p/?LinkId=254509).
 
--   If you don’t have a team project, [create](../accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
+-   If you don't have a team project, [create](../accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
 
 ## Create a workspace and get the code
 
@@ -38,7 +39,7 @@ Map the workspace and get your code.
 
 ![](_img/set-up-team-foundation-version-control-your-dev-machine/IC696633.png)
 
-## Work in a “Main” parent folder
+## Work in a "Main" parent folder
 
 Do you want to prepare for when your team grows large enough to need [branches](use-branches-isolate-risk-team-foundation-version-control.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
 
@@ -80,7 +81,7 @@ When you are ready, [check in your changes](check-your-work-team-codebase.md) (K
 
 ### Put an existing solution under version control
 
-You’ve already got an app in progress and you want to begin working on it under TFVC version control.
+You've already got an app in progress and you want to begin working on it under TFVC version control.
 
 1.  Move your solution into your workspace folder (for example: **c:\\Users\\YourName\\Source\\Workspaces\\YourTeamProject\\Main\\**).
 
@@ -96,7 +97,7 @@ You’ve already got an app in progress and you want to begin working on it unde
 
 ## Q & A
 
--   **Q: I’m really new to all this; can I get more help?**
+-   **Q: I'm really new to all this; can I get more help?**
 
     **A:** Yes, [let us walk you step by step to get started](share-your-code-in-tfvc-vs.md).
 

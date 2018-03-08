@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Add files to the server
 
@@ -61,7 +62,7 @@ To add an existing solution to version control, move all the solution files into
 
 4.  Choose the link next to **Local Path** to open the parent folder in Windows Explorer (File Explorer in Windows 8).
 
-    [What do I do if the link text is “Not Mapped”](create-work-workspaces.md)?
+    [What do I do if the link text is "Not Mapped"](create-work-workspaces.md)?
 
 5.  Move the folder that contains your solution into the parent folder.
 
@@ -79,7 +80,7 @@ To add an existing solution to version control, move all the solution files into
 
     -   **Yes:** Choose the **Detected** link. The **Promote Candidate Changes** dialog box appears. The files in listed in this dialog box are not referenced by any code projects in your solution. If your team will need these files, make sure they are selected and then choose **Promote** to move them into the **Included Changes** section of the **Pending Changes** page. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
-11. When you’re ready, [submit your pending changes](check-your-work-team-codebase.md).
+11. When you're ready, [submit your pending changes](check-your-work-team-codebase.md).
 
 ## Add one or more files to version control
 
@@ -106,7 +107,7 @@ If you are using a [local workspace](decide-between-using-local-server-workspace
 
     Move your files and folders into this folder.
 
-    [What do I do if the link text is “Not Mapped”](create-work-workspaces.md)?
+    [What do I do if the link text is "Not Mapped"](create-work-workspaces.md)?
 
 5.  In Visual Studio, in Team Explorer, choose **Pending Changes**.
 

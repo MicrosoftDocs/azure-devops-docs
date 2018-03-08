@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+ms.date: 03/08/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Create a new Git repo in your project
 
@@ -18,7 +19,7 @@ VSTS and TFS projects contain Git repositories, work items, builds, and releases
 
 ## Prerequisites
 
-* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 * Git command line tools:
   * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager - Windows](set-up-credential-managers.md#windows)
   * [Install Git for macOS and Linux](https://git-scm.com/downloads). For information on Git credential managers for these platforms, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux)

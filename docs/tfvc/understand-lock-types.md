@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Understand lock types
 
@@ -31,7 +32,7 @@ In Visual Studio Team Foundation Server 2012, check-out locks are generally not 
 
 -   Not available if you are using a local workspace.
 
--   Disabled if a member of the Administrators security group of your team project collection has enabled asynchronous checkout for your team’s server workspaces.
+-   Disabled if a member of the Administrators security group of your team project collection has enabled asynchronous checkout for your team's server workspaces.
 
 A check-out lock prevents users who are using server workspaces from checking out and making changes to the locked item in their workspaces. You cannot apply a check-out lock to an item for which any [pending changes](develop-code-manage-pending-changes.md) exist, in any workspace other than your own.
 
@@ -45,7 +46,7 @@ Locks on folders are implicitly recursive. If you lock a folder, you do not have
 
 Only one user at a time may hold a lock on a particular file or folder. You can learn which files are locked in the Team Foundation version control server and by whom they were locked by using the [Status command](status-command.md).
 
-A lock may be placed either as its own operation or as part of several other operations. These include rename, checkout, delete, undelete, merge, branch, and add to source control. When you lock an item as part of an add to source control or branch operation, Team Foundation places the lock on the server path where the new item will be created. This prevents another user from adding or branching a file to the same location. When you lock an item by using the rename command, both old and new server paths are locked.
+A lock may be placed either as its own operation or as part of several other operations. These include rename, checkout, delete, undelete, merge, branch, and add to source control. When you lock an item as part of an add to source control or branch operation, Team Foundation places the lock on the server path where the new item will be created. This prevents another user from adding or branching a file to the same location. When you lock an item by using the rename command, both old and new server paths are locked.
 
 ## Unlocking an Item
 

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Rollback Command (Team Foundation Version Control)
 
@@ -77,7 +78,7 @@ You can specify more than one <em>Itemspec</em> argument.
 
 The **tf rollback** command negates the effect of each changeset that you specify for each item that you specify. The following table lists how the operation negates each kind of change.
 
-|**If you roll back this change…**|**...a rollback change and the following additional change are made**|
+|**If you roll back this change...**|**...a rollback change and the following additional change are made**|
 |---|---|
 |**add**, **branch**, or **undelete**|**delete**|
 |**edit**|**edit**|
