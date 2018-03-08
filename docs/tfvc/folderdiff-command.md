@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Folderdiff Command
 
@@ -79,10 +80,10 @@ To use the **folderdiff** command, you must have the **Read** permission set to 
 <tr>
 <td><p><strong>/view</strong></p></td>
 <td><p>Optional. Specifies what information is included in the output using a comma separated list of the following values:</p>
-<p><i>same</i>—output displays files with the same content in both source and target directories.</p>
-<p><i>different</i>—output displays files with different content in both source and target directories.</p>
-<p><i>sourceOnly</i>—output displays files that exist only in source directory.</p>
-<p><i>targetOnly</i>—output displays files that exist only in target directory.</p>
+<p><i>same</i>-output displays files with the same content in both source and target directories.</p>
+<p><i>different</i>-output displays files with different content in both source and target directories.</p>
+<p><i>sourceOnly</i>-output displays files that exist only in source directory.</p>
+<p><i>targetOnly</i>-output displays files that exist only in target directory.</p>
 <p>The default is &quot;<i>different</i>,<i>sourceOnly</i>,<i>targetOnly</i>&quot;</p></td>
 </tr>
 <tr>

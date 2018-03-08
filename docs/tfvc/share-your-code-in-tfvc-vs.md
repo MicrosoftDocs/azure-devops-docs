@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Develop and share your code in TFVC using Visual Studio
 

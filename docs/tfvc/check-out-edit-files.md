@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Check out and edit files
 
@@ -60,7 +61,7 @@ In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked
 
 ## Tips
 
--   If you are beginning a new task, it’s probably a good idea for you to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.  
+-   If you are beginning a new task, it's probably a good idea for you to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.  
 -   To help you and your team organize and track your work, you should use the My Work or Pending Changes page to associate a task or a bug with the work you are doing. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).  
 -   If you use a [server workspace](decide-between-using-local-server-workspace.md), files that you have not checked out are read-only.  
--   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team’s codebase](check-your-work-team-codebase.md).
+-   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).
