@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 08/15/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2015')
 
 # Source control

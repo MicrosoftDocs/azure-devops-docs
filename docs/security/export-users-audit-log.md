@@ -10,7 +10,6 @@ ms.reviewer: jrice
 ms.author: kaelli
 ms.date: 12/12/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Export a list of users and their access levels

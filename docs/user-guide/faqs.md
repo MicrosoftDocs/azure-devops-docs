@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2016
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # FAQs

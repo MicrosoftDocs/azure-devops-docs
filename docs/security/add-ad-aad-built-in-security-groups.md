@@ -9,7 +9,6 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/18/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Add AD/Azure AD users or groups to a built-in security group
@@ -23,7 +22,7 @@ As described in [About security and identity](about-security-identity.md), there
 Review [Default permissions and access](permissions-access.md) to gain insight into the default permissions provided to the built-in, project-level security groups.  
 
 In this topic you'll learn how to:
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Add an AD/Azure AD user or group to a built-in security group
  
 

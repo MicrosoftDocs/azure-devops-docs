@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 12/12/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # View permissions for yourself or others

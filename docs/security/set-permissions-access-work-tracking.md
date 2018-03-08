@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Set permissions and access for work tracking
@@ -20,7 +19,7 @@ ms.date: 11/27/2017
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, team project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > | Role or permission level | Functional areas set  |
 > |-----------------------|-----------------------------------|
 > |**Team administrator role** | - Configure team settings<br/>- Define and edit team dashboards<br/>- Define and edit team-level work item templates<br/>- Add team members and team administrators|
@@ -36,7 +35,7 @@ To add a user to the team administrator role, see [Add a team administrator](../
 
 The **Edit project-level information** and **Edit instance-level information** (also referred to as Edit collection-level information) provide permissions to several work tracking features as summarized below. To add users or set permissions at these levels, see [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > | Edit project-level information | Edit instance-level information  |
 > |-----------------------|-----------------------------------|
 > - Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit shared work item queries<br/>- Edit team project level permission ACLs<br/>- Manage process templates<br/>- Customize a team project <br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project level events.|- Add and administer teams and all team-related features<br/>- Create and modify areas and iterations<br/>- Edit check-in policies<br/>- Edit shared work item queries<br/>- Edit team project level and collection level permission ACLs<br/>- Manage process templates<br/>- Customize a team project or process<br/>- Create and modify global lists<br/>- Edit event subscriptions (email or SOAP) on team project or collection level events. |
@@ -126,7 +125,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange="vsts")
 
 <a id="process-permissions"></a>
 

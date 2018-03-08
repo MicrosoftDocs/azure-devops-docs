@@ -9,12 +9,9 @@ ms.author: chcomley
 ms.topic: get-started-article
 ms.date: 02/28/2018
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Set up Active Directory or Azure Active Directory
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # DevOps overview for VSTS and TFS
