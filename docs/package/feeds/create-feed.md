@@ -13,4 +13,7 @@ ms.date: 11/30/2017
 
 **VSTS | TFS 2017**
 
+   > [!NOTE] 
+   > If you don't see the Packages hub, ask your account owner to install the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed) from the [Visual Studio Marketplace](../../marketplace/install-vsts-extension.md).
+
 [!INCLUDE [](../_shared/create-feed.md)]

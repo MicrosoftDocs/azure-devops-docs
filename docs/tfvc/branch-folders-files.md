@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 05/12/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Branch folders and files
 
@@ -37,7 +38,7 @@ You can perform a branching operation by using either **Source Control Explorer*
 
 ## Convert a Folder to a Branch
 
-The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. The following illustration shows the top-level of the DinnerNow folder structure:
+The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. The following illustration shows the top-level of the DinnerNow folder structure:
 
 DinnerNow folder structure in Source Control Explorer  
 
@@ -112,7 +113,7 @@ To perform this procedure, your **Manage branch** permission must be set to **Al
 
     -   If you click **Latest Version**, the branch is created for the most recent version in version control.
 
-    -   If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, click the ellipses (**…**) to open the **Find Changesets** dialog box.
+    -   If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, click the ellipses (**...**) to open the **Find Changesets** dialog box.
 
         For more information, see [Find and view changesets](find-view-changesets.md).
 
@@ -150,13 +151,13 @@ To perform this procedure, your **Check out** permission and your **Merge** perm
 
     -   If you click **Latest Version**, the branch is created for the most recent version in version control.
 
-    -   If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, you can click the ellipses (**…**) to open the **Find Changesets** dialog box.
+    -   If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, you can click the ellipses (**...**) to open the **Find Changesets** dialog box.
 
         For more information, see [Find and view changesets](find-view-changesets.md).
 
     -   If you click **Date**, you can specify a date in the **Date** box.
 
-    -   If you click **Label**, you can type the label name in the **Label** box. As an alternative, you can click the ellipses (**…**) to open the **Find Label** dialog box.
+    -   If you click **Label**, you can type the label name in the **Label** box. As an alternative, you can click the ellipses (**...**) to open the **Find Label** dialog box.
 
         For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
