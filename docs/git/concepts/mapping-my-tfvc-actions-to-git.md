@@ -311,7 +311,7 @@ With magic comes responsibility! Many users dislike the `sync` as it can sometim
 
 Authors: Jesse Houwing, Martin Hinshelwood, Mike Fourie, and Willy Schaub
 
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*
