@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+ms.date: 03/08/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Get started with Git from the command line
 
@@ -20,7 +21,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
