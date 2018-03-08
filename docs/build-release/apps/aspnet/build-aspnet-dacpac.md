@@ -30,8 +30,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 <ol>
     [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
-    <li>Select the **Visual Studio** template.</li>
-
+    <li>Select the **.NET Desktop** template.</li>
 
     <li>As the repository source, select the team project, repository, and branch.</li>
 </ol>

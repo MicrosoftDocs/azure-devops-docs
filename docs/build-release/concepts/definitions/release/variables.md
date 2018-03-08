@@ -180,23 +180,26 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 <h3 id="artifact-variables">Artifact variables</h3>
 
-For each artifact that is referenced in a release, you can use the following artifact variables. Not all variables are meaningful for each artifact type. The table below lists the default artifact variables and provides examples of the values that they have depending on the artifact type. If an example is empty, it implies that the variable is not populated for that artifact type.
+For each artifact that is referenced in a release, you can use the following artifact variables.
+Not all variables are meaningful for each artifact type. The table below lists the default artifact
+variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
+it implies that the variable is not populated for that artifact type. 
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
 > |---------------|-------------|--------------------|---------------------------|------------------|---------------|
-> | Release.Artifacts.{Artifact alias}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
-> | Release.Artifacts.{Artifact alias}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
-> | Release.Artifacts.{Artifact alias}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
-> | Release.Artifacts.{Artifact alias}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
-> | Release.Artifacts.{Artifact alias}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
-> | Release.Artifacts.{Artifact alias}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
-> | Release.Artifacts.{Artifact alias}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
-> | Release.Artifacts.{Artifact alias}.SourceVersion | The commit that was built. | bc0044458ba1d9298 cdc649cb5dcf013180706f7 |  |  |  |
-> | Release.Artifacts.{Artifact alias}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
-> | Release.Artifacts.{Artifact alias}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
-> | Release.Artifacts.{Artifact alias}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
-> | Release.Artifacts.{Artifact alias}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceVersion | The commit that was built. | bc0044458ba1d9298 cdc649cb5dcf013180706f7 |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
 
 See also [Artifact source alias](artifacts.md#source-alias)
 

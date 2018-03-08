@@ -26,9 +26,10 @@ This quickstart shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
 [Visual Studio Test](test-with-unified-agent-and-phases.md) task. 
 
->Typically you will run unit tests in your build definition before you release your app,
-and functional tests in your release definition after you deploy your app (usually to a staging server).
-Code coverage testing is available only in a build definition.
+>Typically you will run unit tests in your build workflow,
+and functional tests in your release workflow after your
+app is deployed (usually to a QA environment).
+Code coverage is available only in the build workflow.
 
 <a name="beforestart"></a>
 ## Before you start
@@ -54,6 +55,9 @@ solution - on the same build machine.
 
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
 
+   The Visual Studio Test task version 2 supports [Test Impact Analysis](test-impact-analysis.md).
+   For information about all the task settings, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
+
 1. If you also want to test code coverage, set the **Code coverage enabled** checkbox in the
    **Execution options** section.
 
@@ -65,13 +69,6 @@ solution - on the same build machine.
    use a [.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
 
    [How do I collect and publish code coverage data if I'm not using the Visual Studio Test task?](reference-qa.md#code-coverage)
-
-   For information about the option settings of the Visual Studio Test task, see:
-   
-   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
-   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
-
-   The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [Speed up testing with Test Impact Analysis](test-impact-analysis.md).
 
 1. When you're done, save your build definition.
 
