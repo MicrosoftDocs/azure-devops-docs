@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 11/13/2017
 ---
-
 [//]: # (monikerRange: 'vsts')
 
 # Add more users with Basic features or Visual Studio subscriptions

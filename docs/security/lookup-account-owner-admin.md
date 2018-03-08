@@ -9,12 +9,9 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
-
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Look up the account owner or a project administrator
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

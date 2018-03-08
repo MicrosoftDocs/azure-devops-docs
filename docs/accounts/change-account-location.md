@@ -10,7 +10,7 @@ ms.date: 10/17/2017
 ---
 [//]: # (monikerRange: 'vsts')
 
-#	Find or change your VSTS account location (region)
+# Find or change your VSTS account location (region)
 
 **VSTS**
 

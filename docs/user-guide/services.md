@@ -9,8 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 09/19/2017
 ---
-
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Overview of VSTS and TFS services
  
