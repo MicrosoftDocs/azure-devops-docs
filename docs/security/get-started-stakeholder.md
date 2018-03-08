@@ -10,17 +10,17 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/14/2018 
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Get started as a Stakeholder  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
 Use this topic to learn:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * How to sign-in to an account
 > * How to add a work item
 > * How to view the product backlog and add new work to it
@@ -138,7 +138,7 @@ If you want to provide a group of users access to provide feedback, then you don
 >[!NOTE]  
 >**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
 > |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- View releases <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md) (TFS 2015.2) | [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |

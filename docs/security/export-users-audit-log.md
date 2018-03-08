@@ -14,8 +14,7 @@ ms.date: 12/12/2017
 
 # Export a list of users and their access levels
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="export-audit-log" >  </a>
 

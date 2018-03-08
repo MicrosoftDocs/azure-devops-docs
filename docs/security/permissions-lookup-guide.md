@@ -13,9 +13,9 @@ ms.date: 02/12/18
 
 # Permissions lookup guide for VSTS & TFS
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md). 
   

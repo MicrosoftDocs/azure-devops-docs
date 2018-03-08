@@ -8,16 +8,13 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 02/26/2018
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Troubleshoot connecting to a team project in VSTS or TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-[//]: # (::: monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 ## Troubleshoot VSTS connectivity
 
@@ -76,7 +73,7 @@ In cases where you enter your credentials correctly, but instead of redirecting 
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: monikerRange: '>= tfs-2013 <= tfs-2018')
+[//]: # (::: moniker range=">= tfs-2013 < vsts")
 
 ## Troubleshoot TFS connectivity
 
@@ -96,7 +93,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 ## Switch between different organizational accounts in VSTS
 
@@ -114,7 +111,7 @@ For a workaround in which you delete your browser cookies, see the following sup
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: monikerRange: '>= tfs-2013 <= tfs-2018')
+[//]: # (::: moniker range=">= tfs-2013 < vsts")
 
 ## Connect to a TFS with Secure Sockets Layer (SSL) configured
 

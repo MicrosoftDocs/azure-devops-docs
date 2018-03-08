@@ -9,14 +9,13 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Add administrators, set permissions at the project-level or project collection-level
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Several permissions are set at the team project or at the account/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.    
 

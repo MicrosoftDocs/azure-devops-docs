@@ -1,5 +1,6 @@
 ---
-title: Understand how permissions and groups are defined in VSTS & TFS
+title: Understand how permissions and groups are defined 
+titleSuffix: VSTS & TFS
 description: Understand how permissions are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -9,12 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/07/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # About permissions and groups
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (AAD) if integrated with VSTS, or Active Directory if integrated with TFS. 
 
