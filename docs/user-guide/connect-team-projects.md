@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 09/07/2017 
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Connect to team projects
@@ -91,7 +90,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
-[//]: # (monikerRange: 'tfs-2017')
+[//]: # (::: moniker range="tfs-2017")
 
 <a id="vs-2017-connect-dialog" />
 
@@ -113,7 +112,7 @@ Select a team project from the list and select **Connect**.
 
 [//]: # (::: moniker-end)
 
-[//]: # (monikerRange: 'tfs-2015')
+[//]: # (::: moniker range="tfs-2015")
 
 <a id="connect-dialog" /> 
 <a id="vs-2015-connect-dialog" /> 
@@ -151,7 +150,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 ### Change accounts when connecting to VSTS
  
-[//]: # (monikerRange: 'tfs-2017')
+[//]: # (::: moniker range="tfs-2017")
 
 <a id="connect-account-dialog" /> 
 <a id="vs-2015-connect-account-dialog" />

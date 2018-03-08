@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
 ---
-
 [//]: # (monikerRange: 'vsts')
 
 # Sign up for a free VSTS account and invite others to join your team

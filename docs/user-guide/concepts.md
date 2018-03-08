@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 08/04/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2015')
 
 # Key concepts for working with VSTS and TFS

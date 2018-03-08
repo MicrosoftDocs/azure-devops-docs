@@ -9,12 +9,9 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
-
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Look up the account owner or a project administrator
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -50,7 +47,7 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
   
-[//]: # (monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 <a name="find-owner"></a>
 

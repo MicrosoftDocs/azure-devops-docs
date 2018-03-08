@@ -24,7 +24,7 @@ If you manage your VSTS users with Microsoft Service Accounts (MSA), then you'll
 
 
 In this topic you'll find:
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * A checklist to review when removing user accounts
 > * Options for removing users from VSTS accounts
 > * Links to topics for removing user accounts from AD or Azure AD  

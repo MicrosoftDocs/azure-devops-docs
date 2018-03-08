@@ -13,7 +13,7 @@ ms.topic: get-started-article
 # What are extensions?
 
 >[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md).
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with VSTS. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.

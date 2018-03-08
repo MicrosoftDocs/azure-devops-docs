@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 07/19/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Continuous integration and deployment  

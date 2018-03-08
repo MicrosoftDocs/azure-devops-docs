@@ -43,9 +43,11 @@ Start by looking at the logs in your completed build. If they don't provide enou
 
 ### Diagnostic logs
 
-0. Log on to the agent machine.
+0. On the build summmary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
 
-0. Go to the `_diag` subfolder in the directory where the build agent is installed. For example: `c:\agent\_diag`
+0. Queue the build.
+
+0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per phase. If you would like to download everything you can also choose to **Download all logs as zip**.
 
 #### Worker diagnostic logs
 
@@ -70,6 +72,15 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
  - Shows when each job was run, and how it completed
 
 Both logs show how the agent capabilities were detected and set.
+
+#### Other logs
+
+Inside the diagnostic logs you will find environment.txt and capabilities.txt. 
+
+The environment.txt file has various information about the environment within which your build ran. This includes information like what Tasks are run, whether or not the firewall is enabled, Powershell version info, and some other items. We continually add to this data to make it more useful.
+
+The capabilities file provides a clean way to see all capabilities installed on the build machine
+that ran your build.
 
 ### HTTP trace logs
 
