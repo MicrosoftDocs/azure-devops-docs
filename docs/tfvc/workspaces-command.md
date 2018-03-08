@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Workspaces Command
 
@@ -89,7 +90,7 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><strong>/updateUserName</strong></p></td>
-<td><p>Updates security identification information on the Team Foundation server for a user whose network user name has been changed. If you specify this option, you must also specify a team project collection by using the <strong>/collection</strong> option.</p></td>
+<td><p>Updates security identification information on the Team Foundation server for a user whose network user name has been changed. If you specify this option, you must also specify a team project collection by using the <strong>/collection</strong> option.</p></td>
 </tr>
 <tr>
 <td><p><strong>/updateComputerName</strong></p></td>

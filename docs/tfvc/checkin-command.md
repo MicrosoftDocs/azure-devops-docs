@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 10/31/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Checkin command
 
@@ -63,7 +64,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
-<td><p>Specifies the scope of the items to check in from the user’s workspace. You can specify more than one <em>Itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
+<td><p>Specifies the scope of the items to check in from the user's workspace. You can specify more than one <em>Itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/login</strong>:<i>username</i>,[<i>password</i>]</p></td>

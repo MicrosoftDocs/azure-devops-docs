@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Check in your work to the team's codebase
 
@@ -93,7 +94,7 @@ If you are checking in changes into version control folders that are controlled 
 
 ## Subscribe to alerts
 
-If you want to be notified when someone checks in code in your TFVC team project, you can [subscribe]((https://msdn.microsoft.com/library/ms181334) to receive email alerts. [Here’s how]
+If you want to be notified when someone checks in code in your TFVC team project, you can [subscribe]((https://msdn.microsoft.com/library/ms181334) to receive email alerts. [Here's how]
 
 ![Alerts page for TFVC team project in web portal](_img/check-your-work-team-codebase/IC720120.png)
 
@@ -114,6 +115,6 @@ If you want to be notified when someone checks in code in your TFVC team project
 
 -   ![Tip](_img/check-your-work-team-codebase/IC572374.png) If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
--   ![Tip](_img/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically—the operation either succeeds completely or fails completely (with one exception). If any one of the changes cannot be submitted to your Team Foundation server, none of the changes is committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
+-   ![Tip](_img/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes cannot be submitted to your Team Foundation server, none of the changes is committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
 
     The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../work/track/link-work-items-support-traceability.md).
