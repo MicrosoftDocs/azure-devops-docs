@@ -8,7 +8,6 @@ ms.manager: douge
 ms.author: douge
 ms.date: 10/19/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Get VSTS and TFS product support and provide feedback

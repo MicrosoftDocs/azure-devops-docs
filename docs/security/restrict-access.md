@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/2018
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Grant or restrict access to select features and functions
@@ -34,7 +33,7 @@ Maybe consider this in a 2 or 3 step process:
 
 Use this topic to learn: 
 
-> [!div class="checklist"]  
+> [!div class="checklist"]
 > * Recommended method for granting and restricting permissions       
 > * How to delegate tasks by assigning select permissions to specific roles
 > * How to restrict access to view or modify objects 

@@ -8,8 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2017
 ---
-
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: '>= tfs-2013')
 
 #Tools and clients that connect to VSTS and TFS
 

@@ -10,12 +10,9 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 02/07/2018
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Default TFVC permissions
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

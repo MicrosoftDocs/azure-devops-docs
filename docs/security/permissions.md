@@ -10,12 +10,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Permissions and groups in VSTS and TFS
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

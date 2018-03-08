@@ -9,7 +9,6 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/18/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Change individual permissions, grant select access to specific functions  
@@ -24,7 +23,7 @@ The three ways to change permissions for an individual are:
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments  
 
 In this topic you'll learn how to:
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Create a custom security group 
 > * Set permissions for a custom security group 
 > * Add members to a custom security group 
@@ -111,7 +110,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 0. From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see these topics: 
 
-	> [!div class="mx-tdBreakAll"]  
+	> [!div class="mx-tdBreakAll"]
 	> |Wiki & Dashboard permissions | DevOps permissions  |Agile/Work tracking permissions |  
 	> |-------------|----------|---------|   
 	> |- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Release definition security](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md) |- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  

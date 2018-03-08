@@ -8,8 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 12/07/2016
 ---
-
-[//]: # (monikerRange: '>= tfs-2015')
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Software development roles supported by VSTS and TFS
 
