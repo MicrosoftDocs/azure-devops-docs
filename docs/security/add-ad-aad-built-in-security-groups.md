@@ -14,9 +14,9 @@ ms.date: 12/18/2017
 
 # Add AD/Azure AD users or groups to a built-in security group
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add user accounts and groups to a project-level group such as Contributors and Readers. For users that will need to administrate select features and functions, you add them or associated groups to the Build Administrators or Project Administrators group.
 
