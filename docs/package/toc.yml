@@ -82,14 +82,14 @@
       href: nuget/move-from-fileshares.md
   - name: Use npm
     items:
-    - name: Set up your client's npmrc
+    - name: Set up your project's npmrc
       href: npm/npmrc.md
     - name: Use packages from npmjs.com
       href: npm/upstream-sources.md
-    - name: Publish an npm package
-      href: npm/publish.md
     - name: Install an npm package
       href: npm/install.md
+    - name: Publish an npm package
+      href: npm/publish.md
     - name: Deprecate or unpublish an npm package
       href: npm/deprecate-unpublish.md
     - name: Use npm scopes
