@@ -18,21 +18,17 @@ Package Management is an *extension* to VSTS and TFS.  This means you'll need th
 
 ## Install Package Management in VSTS
 
-1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed). 
+1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-   ![Marketplace page for Package Management](_img/marketplace.png)
+1. Select **Get**
 
-1. Select **Start Trial**, then:
+    ![Package Management extension for VSTS in Visual Studio Marketplace](_img/marketplace.png)
 
-   * Select your account
-   * Select **Continue**
-   * Select **Confirm**
+1. Select your account into which the Package Management extension should be installed
 
-   ![Install dialog](_img/install.png)
+1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren’t sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
-   >During the 30-day trial period, everyone in your account (except Stakeholders) can use Package Management for free.
-
-1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group.
+1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
    ![Install dialog](_img/package-hub.png)
 
@@ -46,18 +42,6 @@ After you've installed Package Management using the instructions in the previous
 1. Select **Preview features**
 1. In the dropdown, select **for this account [account-name]**
 1. Toggle the **Symbol server** toggle to **On**
-1. Close the panel
-
-<a name="nuget-org-upstream-source"></a>
-
-## Enable the NuGet.org upstream source in VSTS
-
-After you've installed Package Management using the instructions in the first section, you can enable theNuGet.org upstream source preview from the preview features panel.
-
-1. Select your profile picture in the top-right
-1. Select **Preview features**
-1. In the dropdown, select **for this account [account-name]**
-1. Toggle the **NuGet.org upstream sources** toggle to **On**
 1. Close the panel
 
 ## Install Package Management in TFS
