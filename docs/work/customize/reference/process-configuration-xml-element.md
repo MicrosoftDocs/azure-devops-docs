@@ -426,9 +426,9 @@ The following table describes the additional elements used to define the state c
 <pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot;  
       pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
        &lt;States&gt;
-      � &lt;State type=&quot;InProgress&quot; value=&quot;Design&quot; /&gt;
-      � &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
-      � &lt;State type=&quot;Complete&quot; value=&quot;Signed Off&quot; /&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Design&quot; /&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
+            &lt;State type=&quot;Complete&quot; value=&quot;Signed Off&quot; /&gt;
        &lt;/States&gt;
   &lt;/TestPlanWorkItems&gt;</code></pre>
 </td>
@@ -442,9 +442,9 @@ The following table describes the additional elements used to define the state c
       category=&quot;Microsoft.TestSuiteCategory&quot;  
       pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
        &lt;States&gt;
-      � &lt;State type=&quot;Proposed&quot; value=&quot;Authoring&quot; /&gt;
-      � &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
-      � &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
+            &lt;State type=&quot;Proposed&quot; value=&quot;Authoring&quot; /&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
+            &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
        &lt;/States&gt;
   &lt;/TestSuiteWorkItems&gt;</code></pre>
 
@@ -708,9 +708,9 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li><p><strong>BugsBehavior</strong> sets the default for the [Show bugs on backlogs and board](../show-bugs-on-backlog.md). Allowed values correspond to:</p>
 <p></p>
 <ul>
-<li><p><strong>AsRequirements</strong> – Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
-<li><p><strong>AsTasks</strong> – Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
-<li><p><strong>Off</strong> – Bugs don't appear on backlogs or boards</p></li>
+<li><p><strong>AsRequirements</strong> â€“ Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
+<li><p><strong>AsTasks</strong> â€“ Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
+<li><p><strong>Off</strong> â€“ Bugs don't appear on backlogs or boards</p></li>
 </ul>
 </li>
 <li><p><strong>HiddenBacklogs</strong> specifies the [backlog that's inactive by default](../select-backlog-navigation-levels.md).</p></li>
@@ -772,7 +772,7 @@ Here we show how it appears in the work item form:
 **Details:**
 - You must specify the color as an eight-digit hexidecimal value, similar to that used for the color defined for a WIT    
 - To add or edit colors, simply reimport your process configuration with the updated property  
-- State colors are defined by name across all work item types, i.e., there is no way to have “Active" be one color for User Story and a different color for Bug    
+- State colors are defined by name across all work item types, i.e., there is no way to have â€œActive" be one color for User Story and a different color for Bug    
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  
 - States with no color defined, and no meta-state mapping will show an empty circle.  
 
