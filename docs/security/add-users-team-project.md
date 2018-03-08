@@ -14,9 +14,9 @@ ms.date: 12/12/2017
 
 # Add users to a team project or specific team
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 For anyone to access a team project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).  
 

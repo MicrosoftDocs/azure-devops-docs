@@ -14,9 +14,9 @@ ms.date: 12/12/2017
 
 # View permissions for yourself or others
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource. 
 

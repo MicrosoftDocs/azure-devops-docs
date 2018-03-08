@@ -13,9 +13,7 @@ ms.date: 09/07/2017
 
 # Connect to team projects
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:
   

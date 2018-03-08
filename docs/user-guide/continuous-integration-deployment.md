@@ -13,7 +13,7 @@ ms.date: 07/19/2017
 
 # Continuous integration and deployment  
 
-**VSTS** | **TFS 2017** | **TFS 2015**  | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 **NEW - To Be Completed**
  

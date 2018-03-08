@@ -15,8 +15,6 @@ ms.date: 10/09/2017
 
 # Features
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications.  
