@@ -8,12 +8,13 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Use Team Foundation version control commands
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can’t be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
+You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
 ## Run a command
 
@@ -28,7 +29,7 @@ In most cases, you run the version control command in the context of a directory
 
 ### Set up your dev machine and manage workspaces
 
-Your workspace is a local copy of your team’s codebase. Because it is a local copy on your dev machine, you can develop and test your code in isolation until you are ready to check in your work. Here are some commands to manage your workspace:
+Your workspace is a local copy of your team's codebase. Because it is a local copy on your dev machine, you can develop and test your code in isolation until you are ready to check in your work. Here are some commands to manage your workspace:
 
 [Proxy Command](proxy-command.md) (Visual Studio 2010)  
 
@@ -81,7 +82,7 @@ See also: [Suspend your work and manage your shelvesets](suspend-your-work-manag
 
 ### Contribute your work
 
-Here’s how to check in your code to the team’s codebase:
+Here's how to check in your code to the team's codebase:
 
 [Checkin command](checkin-command.md)  
 Checks in pending changes to files or folders to the server.
@@ -201,7 +202,7 @@ For example, the [Checkout command](checkout-or-edit-command.md):
 
     tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
 
-Let’s review the arguments from this example:
+Let's review the arguments from this example:
 
 -   *itemspec*: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
 
@@ -231,7 +232,7 @@ A client itemspec argument specifies a path to items on a client machine such as
 
 A server itemspec argument specifies a path to items on your Team Foundation Server such as a folder (for example, **$/SiteApp/Main/SolutionA**) a file (for example, **$/SiteApp/Main/SolutionA/Project1/program.cs** or multiple files (for example, **$/SiteApp/Main/SolutionA/\*.cs**.
 
-You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a team project collection you don’t work in:
+You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a team project collection you don't work in:
 
     c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
     $/SiteApp/Main/SolutionA/Project1/* /recursive  
@@ -338,11 +339,11 @@ Use the following syntax to specify a *versionspec*.
 <tr>
 <td><p>Date and time</p></td>
 <td><p><strong>D</strong><i>yyyy-mm-ddTxx:xx</i></p>
-<p>—or—</p>
+<p>-or-</p>
 <p><strong>D</strong><i>mm/dd/yyyy</i></p>
-<p>—or—</p>
+<p>-or-</p>
 <p>Any .NET Framework-supported format.</p>
-<p>—or—</p>
+<p>-or-</p>
 <p>Any of the date formats supported on the local machine.</p></td>
 <td><p>Specifies a changeset created on a specified date and time.</p>
 <p><strong>Examples</strong></p>

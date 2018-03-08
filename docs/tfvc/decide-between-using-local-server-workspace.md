@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Decide between using a local or a server workspace
 
@@ -80,7 +81,7 @@ If working offline is important to you, then you should consider using a local w
 
 ## Manage team project collection workspace settings for your team
 
-If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you can specify which type of workspace Visual Studio creates for your team members by default: Local or Server. You can also enable asynchronous checkout for your team’s server workspaces.
+If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you can specify which type of workspace Visual Studio creates for your team members by default: Local or Server. You can also enable asynchronous checkout for your team's server workspaces.
 
 1.  On the menu bar, choose **Team**, **Team Project Collection Settings**, **Source Control**.
 
@@ -107,7 +108,7 @@ If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you 
 
     tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
 
-### Q: Why can’t I see when some members of my team of checked out a file?
+### Q: Why can't I see when some members of my team of checked out a file?
 
 Pending changes of team members who use local workspaces are not visible to other team members in [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md).
 

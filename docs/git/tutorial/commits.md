@@ -30,7 +30,7 @@ In this tutorial you learn:
 
 Git tracks file changes in your repo as you work, and separates the files in your repo into three categories:
 
-- Unmodified files – These files haven’t changed since your last commit.
+- Unmodified files – These files haven't changed since your last commit.
 - Modified files – These files have changes since your last commit, but you haven't yet staged for the next commit.
 - Staged files – These files have changes that will be added to the next commit.   
 

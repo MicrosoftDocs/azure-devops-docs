@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Workfold Command
 
@@ -109,7 +110,7 @@ To use the **workfold** command, you must be the owner of the specified or impli
 </table>
 
 ## Remarks
-You can use the **workfold** command of the **tf** command-line utility to create and edit *workspace mappings*. A workspace mapping creates a client-side folder into which all files and subfolders in the Team Foundation version control server folder are retrieved when you execute a **tf** **get** operation. This **get** will not work if the client-side folder is cloaked.
+You can use the **workfold** command of the **tf** command-line utility to create and edit *workspace mappings*. A workspace mapping creates a client-side folder into which all files and subfolders in the Team Foundation version control server folder are retrieved when you execute a **tf** **get** operation. This **get** will not work if the client-side folder is cloaked.
 
 You can also specify an asterisk (\*) wildcard to map a Team Foundation Server folder and its immediate items to your local workspace. This is often referred to as single folder mapping.
 
@@ -152,7 +153,7 @@ The following example displays the mapping for the local file word.cs.
 
     c:\projects>tf workfold word.cs
 
-The following example maps the folder C:\\DifferentWorkfold to the Team Foundation version control server folder $/projects/project\_one and replaces the previous workspace mapping for the $/projects/project\_one Team Foundation version control server folder.
+The following example maps the folder C:\\DifferentWorkfold to the Team Foundation version control server folder $/projects/project\_one and replaces the previous workspace mapping for the $/projects/project\_one Team Foundation version control server folder.
 
     c:\projects>tf workfold $/projects/project_one C:\DifferentWorkfold
 
