@@ -125,7 +125,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
-[//]: # (monikerRange="vsts")
+[//]: # (::: moniker range="vsts")
 
 <a id="process-permissions"></a>
 
