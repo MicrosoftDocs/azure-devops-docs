@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/29/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Use Team Foundation Version Control
 
@@ -22,13 +23,13 @@ VSTS and TFS provide two models of version control: [Git](../git/overview.md), w
 
 ## Why use version control?
 
-Without version control, you’re tempted to keep multiple copies of code on your computer. This is dangerous, as it’s easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
+Without version control, you're tempted to keep multiple copies of code on your computer. This is dangerous, as it's easy to change or delete a file in the wrong copy of code, potentially losing work. Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
 
 Version control systems provide the following benefits:
 
 - **Create workflows** - Version control workflows prevent the chaos of everyone using their own development process with different and incompatible tools. Version control systems provide process enforcement and permissions so everyone stays on the same page.
 - **Work with versions** - Every version has a description for what the changes in the version do, such as fix a bug or add a feature. These descriptions help you follow changes in your code by version instead of by individual file changes. Code stored in versions can be viewed and restored from version control at any time as needed. This makes it easy to base new work off any version of code.
-- **Code together** - Version control synchronizes versions and makes sure that your changes don’t conflict with other changes from your team. Your team relies on version control to help resolve and prevent conflicts, even when people make changes at the same time.
+- **Code together** - Version control synchronizes versions and makes sure that your changes don't conflict with other changes from your team. Your team relies on version control to help resolve and prevent conflicts, even when people make changes at the same time.
 - **Keep a history** - Version control keeps a history of changes as your team saves new versions of your code.  This history can be reviewed to find out who, why, and when changes were made. History gives you the confidence to experiment since you can roll back to a previous good version at any time. History lets you base work from any version of code, such as to fix a bug in a previous release.
 - **Automate tasks** - Version control automation features save your team time and generate consistent results. You can automate testing, code analysis, and deployment when new versions are saved to version control.
 
@@ -54,7 +55,7 @@ TFVC lets you apply [granular permissions](../security/permissions.md) and restr
 
 - [Develop your app in a version-controlled codebase](develop-your-app-team-foundation-version-control.md)    
 
-  You don’t have to think about version control in most situations. The system supports you when you need to manage and understand your changes.
+  You don't have to think about version control in most situations. The system supports you when you need to manage and understand your changes.
 
 - [Suspend your work](suspend-your-work-manage-your-shelvesets.md)    
 
@@ -62,7 +63,7 @@ TFVC lets you apply [granular permissions](../security/permissions.md) and restr
 
 - [Contribute your work to the team](check-your-work-team-codebase.md) 
 
-  Check in your changes so your team can build upon, test, and release the value you’ve created.
+  Check in your changes so your team can build upon, test, and release the value you've created.
 
 - [Isolate risk](use-branches-isolate-risk-team-foundation-version-control.md)
 

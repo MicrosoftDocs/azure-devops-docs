@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # View the branch hierarchy of a team project
 
@@ -21,7 +22,7 @@ As a project grows, typically the branch structure also grows and becomes more c
 
 -   If I need changes from another feature team, which branches will those changes have to go through to get back to me? Who owns these branches?
 
-The following procedures explain how to use Team Foundation version control to answer these types of questions.
+The following procedures explain how to use Team Foundation version control to answer these types of questions.
 
 ## To View and Work with Your Branches
 

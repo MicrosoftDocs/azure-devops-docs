@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Labels Command
 
@@ -37,7 +38,7 @@ To use the **labels** command, you must have the **Read** permission set to **Al
 |**/collection**|Specifies the team project collection.|
 |**/login**|Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.|
 ## Remarks
-The **labels** command displays information about labels in the Team Foundation version control server. If you do not specify a Team Foundation version control server, the Team Explorer tries to determine the Team Foundation version control server based by using the current directory. If the current directory is not mapped to a Team Foundation version control server, you must specify one by using the **/s** option.
+The **labels** command displays information about labels in the Team Foundation version control server. If you do not specify a Team Foundation version control server, the Team Explorer tries to determine the Team Foundation version control server based by using the current directory. If the current directory is not mapped to a Team Foundation version control server, you must specify one by using the **/s** option.
 
 By default, the results display the label name, owner and creation date for each label. If the format is changed to "detailed," comments and the list of files and folders associated with each label are also displayed.
 

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Merge folders and files
 
@@ -39,7 +40,7 @@ To perform these procedures, you must have the following permissions set:
 </thead>
 <tbody>
 <tr>
-<td><p>The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.</p>
+<td><p>The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.</p>
 <p><img src="_img/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
