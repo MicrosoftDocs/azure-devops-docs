@@ -28,6 +28,8 @@
       href: remove-binaries.md
     - name: Migrate from SVN to Git
       href: perform-migration-from-svn-to-git.md
+    - name: Test Impact for partially mapped TFVC repositories
+      href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: DevOps
   items:
     - name: Phase the features of your app with feature flags

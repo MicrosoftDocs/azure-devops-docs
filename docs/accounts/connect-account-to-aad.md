@@ -12,9 +12,6 @@ ms.date: 03/06/2018
 
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
-> [!Warning]
-> If you use [TFVC](https://docs.microsoft.com/en-us/vsts/tfvc/index) do not connect to Azure AD. We are working to unblock this scenario by March 10th, 2018.
-
 **VSTS**
 
 Azure AD users - you can connect your existing Azure AD tenant to VSTS, even if you started with a Microsoft account for your VSTS instance.
@@ -36,6 +33,8 @@ If your users are being asked to choose between signing in to VSTS with their pe
 ![Choose between work or school account and a personal account](_img/connect-account-to-aad/disambiguation-screen-VSTS.PNG)
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
+
+> [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
 
 ## Understand where you're starting from
 
@@ -144,6 +143,7 @@ If the emails are the same, then follow these steps, otherwise continue on to Co
 6. Your account is now connected to your organization's directory.
 
 7. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
+
 8. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change

@@ -10,12 +10,9 @@ ms.author: kaelli
 ms.topic: get-started-article 
 ms.date: 10/09/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # Features
-
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -1018,7 +1015,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 <a id="package-management"></a>
 
@@ -1441,7 +1438,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 <a id="power-bi">  </a>
 
@@ -1481,7 +1478,7 @@ build-release\tasks\build\_img
 
 [//]: # (::: moniker-end)
 
-[//]: # (monikerRange: '>= tfs-2013')
+[//]: # (::: moniker range=">= tfs-2013")
 
 <a id="sql-server-reports">  </a>
 
@@ -2536,7 +2533,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-[//]: # (monikerRange: '>= tfs-2013 <= tfs-2018')
+[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
 
 ### Process templates (TFS)
 
