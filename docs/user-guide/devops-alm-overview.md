@@ -13,7 +13,7 @@ ms.date: 06/22/2017
 
 # DevOps overview for VSTS and TFS
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  

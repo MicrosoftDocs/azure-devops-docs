@@ -13,7 +13,7 @@ ms.date: 12/07/2016
 
 # Software development roles supported by VSTS and TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 

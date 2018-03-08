@@ -14,9 +14,7 @@ ms.date: 12/18/2017
 
 # Change individual permissions, grant select access to specific functions  
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The standard way for permissions to accrue to individuals are by adding user accounts to one or more built-in security groups. However, in certain instances, you'll want to grant additional permissions to select individuals, but perhaps not all permissions assigned to the security group. For example, you might want to grant several individuals the ability to add or edit area and iteration paths, but not have all permissions available to members of the Project Administrators group. 
 

@@ -12,9 +12,9 @@ ms.date: 10/23/2017
 
 # Permissions and access for work tracking
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 

@@ -15,9 +15,7 @@ ms.date: 02/12/18
 
 # About security and identity
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Visual Studio Team Services (VSTS), our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support development projects, from planning through deployment. 
 VSTS uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 

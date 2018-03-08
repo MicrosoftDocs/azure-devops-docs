@@ -13,7 +13,7 @@ ms.date: 03/02/2017
 
 #Tools and clients that connect to VSTS and TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Our platform of software development tools began over 20 years ago with the releases of Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports a number of plug-ins which extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to VSTS and TFS to support source control, work tracking, build, and test operations.  
 
