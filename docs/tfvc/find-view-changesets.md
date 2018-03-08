@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Find and view changesets
 
@@ -33,7 +34,7 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
     Type the number of the changeset and choose **OK**.
 
-    If you don’t know the number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
+    If you don't know the number, choose **Find**. See [Find a changeset](find-view-changesets.md#find).
 
 ## List changesets that update a specific file or folder
 
@@ -76,11 +77,11 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
 4.  (Optional) In the **Range** section, choose one of the following options:
 
-    -   **All changes**   Retrieves all changesets that were applied to that file or folder.
+    -   **All changes**   Retrieves all changesets that were applied to that file or folder.
 
-    -   **Changeset number**   Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
+    -   **Changeset number**   Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
 
-    -   **Created date**   Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
+    -   **Created date**   Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
 
 5.  Choose **Find**.
 

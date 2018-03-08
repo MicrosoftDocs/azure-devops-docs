@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Branch strategically
 
@@ -15,7 +16,7 @@ ms.date: 08/10/2016
 
 Source code is an important asset in your development effort. But it can be a challenge to effectively manage and evolve source files when multiple developers work concurrently on file updates. You can use a version control system to store source code in shared repositories, to isolate parallel development efforts, to integrate code changes, and to recover previous file versions. A key element in version control is branching that enables simultaneous development. If you branch strategically, you can maintain the order and consistency of multiple versions of your software.
 
-Team Foundation provides a flexible and reliable version control system. You can use Team Foundation version control to manage multiple revisions during development of source code, documents, work items, and other critical information that is worked on by your team. 
+Team Foundation provides a flexible and reliable version control system. You can use Team Foundation version control to manage multiple revisions during development of source code, documents, work items, and other critical information that is worked on by your team. 
 
 ## How does your team manage code while it introduces multiple changes simultaneously through several project releases?
 
@@ -36,7 +37,7 @@ Branching and merging entail the following principles:
 
     For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
-Team Foundation Build allows you to choose from several types of builds for your branches: manual, continuous, gated, rolling, and scheduled. We recommend that the MAIN branch has a gated check-in build type. This means that the DEVELOPMENT branch must pass all requirements for the MAIN branch before you can commit a reverse integration. The DEVELOPMENT branch should run a continuous build type because your team must know as soon as possible when a new check-in affects the DEVELOPMENT branch.
+Team Foundation Build allows you to choose from several types of builds for your branches: manual, continuous, gated, rolling, and scheduled. We recommend that the MAIN branch has a gated check-in build type. This means that the DEVELOPMENT branch must pass all requirements for the MAIN branch before you can commit a reverse integration. The DEVELOPMENT branch should run a continuous build type because your team must know as soon as possible when a new check-in affects the DEVELOPMENT branch.
 
 ## How often should your team reverse integrate and forward integrate?
 
@@ -67,7 +68,7 @@ You should not create a branching for each user story because it creates a high 
 
 ## How does the team manage releases from the version control perspective?
 
-Your team should be able to release code at the end of any sprint. By using Team Foundation Server, you can label a branch to take a snapshot of the code at a specific point in time. As the following illustration shows, you can label the MAIN branch for a release. This lets you return the branch to its state at this point.
+Your team should be able to release code at the end of any sprint. By using Team Foundation Server, you can label a branch to take a snapshot of the code at a specific point in time. As the following illustration shows, you can label the MAIN branch for a release. This lets you return the branch to its state at this point.
 
 ![Label a branch to take a snapshot of the code](_img/branch-strategically/IC372284.png)   
 Because you must implement updates on releases, creating a branch for a release helps your team continue to work independently on the next sprint without creating conflicts with future releases. The following illustration shows a branch that contains code for an update and that is reverse integrated into the MAIN branch after a release at the end of the second sprint.

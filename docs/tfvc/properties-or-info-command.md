@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Properties Command
 
@@ -75,7 +76,7 @@ The properties command displays several pieces of information about a version-co
 	<td><p>If the item is deleted, the deletion identification; otherwise 0.</p></td></tr>
 <tr>
 	<td><p>Lock</p></td>
-	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="lock-command.md">Lock Command</a>.</p></li></ul></td></tr>
+	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="lock-command.md">Lock Command</a>.</p></li></ul></td></tr>
 <tr>
 	<td><p>Lock Owner</p></td>
 	<td><p>Indicates the person who set a check-in lock.</p></td></tr>

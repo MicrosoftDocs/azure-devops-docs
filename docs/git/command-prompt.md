@@ -28,7 +28,7 @@ Team Explorer and the Git command line work great together. When you make update
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with your VSTS repos.
 
-While in Visual Studio, open a command prompt in your repo from Team Explorer’s **Connect** view. Right-click on your local repo and select **Open Command Prompt**
+While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
 ![Open a command prompt to a repo from inside Visaul Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 

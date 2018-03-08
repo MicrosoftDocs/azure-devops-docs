@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Suspend your work and manage your shelvesets
 
@@ -94,13 +95,13 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
     ![](_img/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
 	>**Tip:**  
-	>If you don’t know the name of the owner, you can type ***** to list shelvesets for all users.
+	>If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
 
 4.  A list of shelvesets appears in the **Results** list. You can type a filter to reduce the size of the list.
 
 ## View and work with a shelveset
 
-After you have a list of shelvesets (explained in “To find a shelveset”) in the **Find Shelvesets** page, double-click the shelveset to view it.
+After you have a list of shelvesets (explained in "To find a shelveset") in the **Find Shelvesets** page, double-click the shelveset to view it.
 
 The **Shelveset Details** page appears.
 
@@ -113,7 +114,7 @@ The **Shelveset Details** page appears.
 
     1.  For any file changes that you do not want to unshelve, open the context menu of the file, and then choose **Exclude**.
 
-    2.  If you want to delete the shelveset, clear the **Preserve shelveset on server** check box.
+    2.  If you want to delete the shelveset, clear the **Preserve shelveset on server** check box.
 
     3.  If you do not want to restore the work item list and check-in notes that are stored in the shelveset clear the **Restore work items and check-in notes** check box.
 

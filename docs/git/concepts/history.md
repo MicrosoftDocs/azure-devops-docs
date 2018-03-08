@@ -77,4 +77,4 @@ There are three people who merge commits from their own branches into the master
 
 ![console log of git graph](_img/history/gitlogconsole.png)
 
-Now that you understand how branches and merges create the shape of the graph, this shouldn’t be too scary!
+Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!
