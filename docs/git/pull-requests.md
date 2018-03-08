@@ -98,7 +98,7 @@ Don't worry if you don't have all of the work items, reviewers, or details ready
 
 ### Help reviewers using pull request labels
 
-Sometimes it’s important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it’s a hotfix for an upcoming release - so you append some extra text in the title, perhaps a “[WIP]” prefix or “DO NOT MERGE”. Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
+Sometimes it's important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it's a hotfix for an upcoming release - so you append some extra text in the title, perhaps a "[WIP]" prefix or "DO NOT MERGE". Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
 
 ![PR request labels](_img/pull-requests/pull-request-labels.png)
 
@@ -106,7 +106,7 @@ To add a label when creating a pull request, choose **Add label**. After a pull 
 
 ![Add pull request label](_img/pull-requests/add-pull-request-label.png)
 
-In a future release, we’ll make labels even more useful by making it easier to filter pull requests using labels.
+In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
 
 ### Add and remove reviewers
 

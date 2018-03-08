@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Branches Command
 
@@ -83,7 +84,7 @@ The following example displays branch history for the version-controlled file C:
 
     c:\projects>tf branches 314.cs
 
-The following example displays branch history for the header.h item in the Team Foundation version control server.
+The following example displays branch history for the header.h item in the Team Foundation version control server.
 
     c:\projects>tf branches $/applications/header.h
 
@@ -95,9 +96,9 @@ The following example displays the branch history for WindowsApplication13-branc
 
     D:\projects\ws1>tf branches WindowsApplication13-branch
     $/jun16-1/WindowsApplication13
-    >>      $/jun16-1/WindowsApplication13-branch   Branched from version 3 <<
-                    $/jun16-1/WindowsApplication13-branch-prime     Branched from version 5
-            $/jun16-1/WindowsApplication13-branch2  Branched from version 3
+    >>      $/jun16-1/WindowsApplication13-branch   Branched from version 3 <<
+                    $/jun16-1/WindowsApplication13-branch-prime     Branched from version 5
+            $/jun16-1/WindowsApplication13-branch2  Branched from version 3
 
 ## See Also
 

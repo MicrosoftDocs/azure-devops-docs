@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/29/2017
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Share your code with Visual Studio 2013 and VSTS Git
 

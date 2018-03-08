@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Remove Access to Version Control Files
 
@@ -31,7 +32,7 @@ To remove access to Team Foundation version control files, you must belong to th
 
 ### To remove access to a file under version control
 
-1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
+1.  On the Visual Studio **View** menu, click **Other Windows**, and then click **Source Control Explorer**.
 
 2.  Locate and check out the file that you want to remove. For more information, see [Check Out and Edit Version-Controlled Items](check-out-edit-files.md).
 

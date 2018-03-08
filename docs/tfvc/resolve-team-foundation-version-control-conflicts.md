@@ -8,12 +8,13 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Resolve Team Foundation Version Control conflicts
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
+An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
 
 Although it can be frustrating to encounter conflicts, the system provides information and tools to help you understand and resolve conflicts.
 
@@ -126,9 +127,9 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 <table>
 <thead>
 <tr>
-<th><p>If you want the system to automatically resolve conflicts that occurred because…</p></th>
-<th><p>As explained in this example…</p></th>
-<th><p>Then select this check box…</p></th>
+<th><p>If you want the system to automatically resolve conflicts that occurred because...</p></th>
+<th><p>As explained in this example...</p></th>
+<th><p>Then select this check box...</p></th>
 </tr>
 </thead>
 <tbody>

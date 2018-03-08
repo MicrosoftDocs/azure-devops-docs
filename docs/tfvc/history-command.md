@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # History command
 
@@ -119,8 +120,8 @@ Displays all changes made to program.cs in the command prompt window. For exampl
 
     Changeset Change                     User              Date       Comment
     --------- -------------------------- ----------------- ---------- -------- 
-    29        edit                       Jamal Hartnett    4/23/2012  Fix bug
-    20        add                        Raisa Pokrovskaya 4/12/2012  Add new  
+    29        edit                       Jamal Hartnett    4/23/2012  Fix bug
+    20        add                        Raisa Pokrovskaya 4/12/2012  Add new  
 
 ### Get history of all items in a folder
 
@@ -134,13 +135,13 @@ Displays all changes made to all items in SolutionA (including those in subfolde
 
 Displays the latest 5 changes made to items in SolutionA (including those in subfolders):
 
-    Changeset User              Date       Comment
+    Changeset User              Date       Comment
     --------- ----------------- ---------- ----------------------------------------
-    31        Raisa Pokrovskaya 5/15/2012
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to Proje
-    15        Raisa Pokrovskaya 4/8/2012
+    31        Raisa Pokrovskaya 5/15/2012
+    30        Raisa Pokrovskaya 4/23/2012
+    29        Jamal Hartnett    4/23/2012  Fix bug in new method
+    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to Proje
+    15        Raisa Pokrovskaya 4/8/2012
 
 ### Get history from version x and earlier
 
@@ -148,11 +149,11 @@ Displays the latest 5 changes made to items in SolutionA (including those in sub
 
 Displays changes made to all items in SolutionA (including those in subfolders) in version 30 and earlier:
 
-    Changeset User              Date       Comment
+    Changeset User              Date       Comment
     --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+    30        Raisa Pokrovskaya 4/23/2012
+    29        Jamal Hartnett    4/23/2012  Fix bug in new method
+    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
 
 ### Get history from date D and earlier
 
@@ -164,11 +165,11 @@ Displays changes made to all items in SolutionA (including those in subfolders) 
 
 Displays changes made to all items in SolutionA (including those in subfolders) on 4/23/12 or earlier:
 
-    Changeset User              Date       Comment
+    Changeset User              Date       Comment
     --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+    30        Raisa Pokrovskaya 4/23/2012
+    29        Jamal Hartnett    4/23/2012  Fix bug in new method
+    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
 
 ### Get history from version x to version y
 
@@ -176,11 +177,11 @@ Displays changes made to all items in SolutionA (including those in subfolders) 
 
 Displays changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
 
-    Changeset User              Date       Comment
+    Changeset User              Date       Comment
     --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 
+    30        Raisa Pokrovskaya 4/23/2012
+    29        Jamal Hartnett    4/23/2012  Fix bug in new method
+    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 
 
 ### Get detailed history
 

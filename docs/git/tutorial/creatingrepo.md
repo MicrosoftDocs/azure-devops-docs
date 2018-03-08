@@ -14,11 +14,11 @@ ms.date: 09/08/2017
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
-A Git repository, or repo, is a folder that you’ve told Git to help you track file changes in. 
+A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
-Each Git repo on your system is independent, so changes saved in one Git repo don’t affect the contents of another.
+Each Git repo on your system is independent, so changes saved in one Git repo don't affect the contents of another.
 
-A Git repo contains every version of every file saved in the repo. Git saves these files very efficiently, so having a large number of versions doesn’t mean that it uses a lot of disk space.
+A Git repo contains every version of every file saved in the repo. Git saves these files very efficiently, so having a large number of versions doesn't mean that it uses a lot of disk space.
 Storing each version of your files helps Git merge code better and makes working with multiple versions of your code quick and easy.
 
 In this tutorial you learn how to:
