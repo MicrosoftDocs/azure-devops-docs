@@ -9,14 +9,11 @@ ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
 ---
-
-
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Look up the account owner or a project administrator
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the account owner.  
 
@@ -50,7 +47,7 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
   
-[//]: # (monikerRange: 'vsts')
+[//]: # (::: moniker range="vsts")
 
 <a name="find-owner"></a>
 

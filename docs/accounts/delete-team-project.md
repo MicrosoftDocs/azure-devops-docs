@@ -8,11 +8,11 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
 ---
-[//]: # (monikerRange: 'vsts')
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Delete a team project
 
-**VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
+**VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756%28v=vs.110%29.aspx)**
 
 If you find that you have a team project you no longer use, you can delete it. Deleting a team project helps simplify the navigation to team projects that are in use.
 
