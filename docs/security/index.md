@@ -1,6 +1,7 @@
 ---
-title: Security & Identity content index for VSTS & TFS 
-description: Index to topics for working with authentication, permissions, groups, and access levels in VSTS and and Team Foundation Server (TFS)  
+title: Security & Identity content index
+titleSuffix: VSTS & TFS
+description: Index to topics for working with authentication, permissions, groups, and access levels in and  Team Foundation Server
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -13,9 +14,7 @@ ms.date: 10/24/2017
 
 # Security & Identity 
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 For anyone to access a team project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 

@@ -13,9 +13,7 @@ ms.date: 08/11/2017
 
 # Navigating in the web portal
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 

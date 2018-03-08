@@ -13,9 +13,7 @@ ms.date: 02/26/2018
 
 # Troubleshoot connecting to a team project in VSTS or TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 [//]: # (::: monikerRange: 'vsts')
 
