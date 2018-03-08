@@ -8,12 +8,11 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
 ---
-
 [//]: # (monikerRange: '>= tfs-2013')
 
 # About VSTS and Team Foundation Server
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 VSTS and Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
