@@ -8,7 +8,7 @@
     href: ../overview.md
 - name: Quickstarts
   items:
-  - name: Test with builds
+  - name: Unit test with builds
     href: getting-started-with-continuous-testing.md
   - name: Review test results
     href: review-continuous-test-results-after-build.md

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 08/19/2016
 ---
+[//]: # (monikerRange: ">= tfs-2013")
 
 # Release Management for Visual Studio, VSTS, and Team Foundation Server
 
