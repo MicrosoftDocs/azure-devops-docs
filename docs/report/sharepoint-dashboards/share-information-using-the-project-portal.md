@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Share information using the project portal
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams use project portals to share information and support how their team works. If you install TFS with a configuration that includes SharePoint Products and you created a project portal when you created your team project, your team project is configured with a SharePoint site for the project portal.  
   

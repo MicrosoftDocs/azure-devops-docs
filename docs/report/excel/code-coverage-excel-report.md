@@ -11,7 +11,7 @@ ms.manager: douge
 
 # Code Coverage Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 With the Code Coverage report, you can monitor how much code the team is testing over time. Team members can use this report to help determine how close parts of the code are to release quality. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

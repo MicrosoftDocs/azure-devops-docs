@@ -10,6 +10,8 @@ ms.author: elbatk
 ms.date: 10/02/2017
 ---
 
+[//]: # (monikerRange: '>=tfs-2013')
+
 # Requirements and compatibility
 
 **VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**

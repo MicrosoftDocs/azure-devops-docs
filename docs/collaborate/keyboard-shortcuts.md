@@ -12,7 +12,7 @@ ms.date: 01/18/2017
 
 # Keyboard shortcuts for VSTS, TFS, and Team Explorer
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
 
 
 You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
@@ -69,46 +69,46 @@ Type **?** to access the Global and hub-specific shortcuts.
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and hub-specific shortcuts.   
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/global-shortcuts.md)] 
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/global-shortcuts.md)]  �
 
 Hub-specific shortcuts only work when in a specific hub. For example, type **g c** to open the Code hub, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.  
 
 
 ## Code hub 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/code-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/code-shortcuts.md)]
 
 ## Work hub, Work Items page 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
 ## Work item form shortcuts
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/wi-form-shortcuts.md)]  �
 
 ## Work hub, Backlog page 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
 ## Work hub, Kanban board page 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
 
 ## Work hub, Queries page 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-shortcuts.md)]
 
 # Work hub, plans page 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)] 
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  �
 
 ## Test hub, Test Plans, Parameters, and Runs pages 
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/test-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/test-shortcuts.md)]
 
 ## Wiki hub
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
  
 ## Team Explorer navigational shortcuts
 
@@ -166,7 +166,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]  �
 
 
 <!---

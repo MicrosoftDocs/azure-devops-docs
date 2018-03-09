@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Testing Gaps Excel Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Testing Gaps report to help determine where there are deficiencies in their test plans, test configurations, and test coverage. The Testing Gaps report provides the following five reports based on test results and builds that have been defined and run for a team project.  
   
