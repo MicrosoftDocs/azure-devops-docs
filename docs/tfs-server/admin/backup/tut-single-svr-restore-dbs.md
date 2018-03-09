@@ -10,6 +10,8 @@ ms.technology: vs-devops-admin
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Restore the databases
 
 **TFS 2015** | **TFS 2013**
@@ -22,7 +24,7 @@ If you manually configured your backups, you cannot use the Restore wizard in Sc
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Restore Team Foundation Server databases
 > * Restore the SharePoint farm
 

@@ -10,9 +10,13 @@ ms.author: elbatk
 ms.date: 9/27/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013') 
+
 # Grant permissions to manage extensions
 
 **VSTS** | **TFS** 
+
+[//]: # (::: moniker range="vsts")
 
 ## Grant management permissions 
 
@@ -27,6 +31,10 @@ Click **Security** in the upper right of the Extension Security page:
 Add users or update permission settings:
 
 ![Extension security](../_img/manage-permissions/extensions-security.png)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">=tfs-2013 < vsts")
 
 ## Grant publish and update permissions on TFS
 
@@ -63,3 +71,5 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
 
 You can add users later to "TFS Extension Publishers". This is a server-level permission, 
 so updating and deleting an extension will affect all the team project collections that use the extension.
+
+[//]: # (::: moniker-end)

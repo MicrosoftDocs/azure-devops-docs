@@ -22,8 +22,9 @@ Other highlights include:
 * Leverage what you may have in Jenkins with [finer control](#specify-a-default-version-for-jenkins-artifacts) and [efficiency using Azure Storage](#propagate-jenkins-artifacts-to-azure-storage)
 * [Manage access and extensions for large numbers of users using groups](#manage-access-and-extensions-for-large-numbers-of-users-using-groups)
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/jttSjT460PI?rel=0]
 
 ## Code
 

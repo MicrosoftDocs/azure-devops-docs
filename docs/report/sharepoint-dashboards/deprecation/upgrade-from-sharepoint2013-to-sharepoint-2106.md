@@ -3,13 +3,16 @@ title: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
 description: TFS SharePoint integration - Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-integrate
-ms.manager: abjork
+ms.manager: douge
 ms.author: greggboe
 ms.date: 09/28/2017
 ms.topic: 
 ---
 
 # Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
+
+[!INCLUDE [temp](../../_shared/tfs-sharepoint-version.md)]
+
 With TFS 2017, the TFS Extension for SharePoint supports SharePoint 2010 and 2013, but does not support SharePoint 2016. For more information, read [Discontinue the TFS 2017 (and earlier) SharePoint integration](./discontinue-pre-tfs-2017-sharepoint-integration.md). 
 
 Customers that have TFS 2017 with integration configured for SharePoint 2013 need an upgrade path to SharePoint 2016. This upgrade path needs to provide a way to upgrade “away” from the old-style integration.
