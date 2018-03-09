@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 12/20/2017
 ---
+[//]: # (monikerRange: ">= tfs-2013")
 
 # Archived release notes for Microsoft Release Management
 
