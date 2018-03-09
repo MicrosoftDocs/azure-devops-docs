@@ -30,6 +30,8 @@
     href: clt-behind-firewall.md
   - name: Test using your own servers
     href: clt-with-private-machines.md
+  - name: Install certificates and software
+    href: install-certs-and-software.md
 - name: Reference
   items:
   - name: FAQs
