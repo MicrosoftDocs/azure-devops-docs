@@ -6,6 +6,8 @@
     href: overview.md
   - name: About Deploying to Azure
     href: overview-azure.md
+  - name: About Continuous Testing
+    href: test/index.md
 - name: Quickstarts
   items:
     - name: Azure DevOps projects
@@ -62,8 +64,10 @@
         href: apps/cd/deploy-docker-webapp.md
     - name: Test your app
       items:
-      - name: VS Test
+      - name: Unit test with builds
         href: test/getting-started-with-continuous-testing.md
+      - name: Review test results
+        href: test/review-continuous-test-results-after-build.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -78,6 +82,8 @@
     href: actions/azure-devops-project-github.md
   - name: Use Jenkins and VSTS DevOps
     href: actions/integrate-jenkins-vsts-cicd.md  
+  - name: Test your app
+    href: test/example-continuous-testing.md
 - name: Concepts
   items:
   - name: Agents
@@ -218,8 +224,14 @@
       href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
     items:
-    - name: Test as you build
-      href: test/index.md
+    - name: Set up continuous testing
+      href: test/set-up-continuous-testing-builds.md
+    - name: Run tests from the Test hub
+      href: test/run-automated-tests-from-test-hub.md
+    - name: Use Test Impact Analysis
+      href: test/test-impact-analysis.md
+    - name: Run tests in parallel
+      href: test/run-tests-in-parallel.md
   - name: Publish symbols for debugging
     items:
     - name: Publish symbols
@@ -365,8 +377,12 @@
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
       href: tasks/test/publish-test-results.md
+    - name: Run Functional Tests
+      href: tasks/test/run-functional-tests.md
     - name: Visual Studio Test
       href: tasks/test/visual-studio-test.md
+    - name: Visual Studio Test Agent Deployment
+      href: tasks/test/visual-studio-test-agent-deployment.md
   - name: Package tasks
     items:
     - name: CocoaPods
