@@ -11,6 +11,8 @@ ms.author: aaronha
 ms.date: 08/04/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2015 < vsts') 
+
 # Install and configure TFS
 
 **TFS 2017** | **TFS 2015**

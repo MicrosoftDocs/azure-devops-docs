@@ -12,7 +12,7 @@ ms.date: 09/29/2017
 
 # Syntax for the Work Item Query Language (WIQL) 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../work/track/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](https://www.visualstudio.com/docs/integrate/api/wit/wiql).  
 
