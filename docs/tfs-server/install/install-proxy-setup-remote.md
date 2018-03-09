@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: 'tfs-2013')
+
 # How to: Install Team Foundation Proxy and set up a remote site
 
 **TFS 2013**

@@ -10,6 +10,8 @@ ms.date: 03/29/2017
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < vsts')
+
 # Add administrators to TFS
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**

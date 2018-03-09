@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Refresh the data caches on client computers
 
 **TFS 2015** | **TFS 2013**

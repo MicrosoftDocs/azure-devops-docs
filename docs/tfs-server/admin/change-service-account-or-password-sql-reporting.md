@@ -10,6 +10,8 @@ ms.technology: vs-devops-admin
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Change the service account or password for SQL Server Reporting Services for Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
