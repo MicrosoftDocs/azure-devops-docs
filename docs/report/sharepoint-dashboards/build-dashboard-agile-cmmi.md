@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Build dashboard  (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Build dashboard to obtain an overview of the development activities that are affecting the quality of the builds. Nightly builds are important to software development projects. When builds are not completing successfully or are not passing build verification tests (BVT), the team must fix the problem immediately.  
   
