@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Rebuild the client cache for Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**

@@ -9,9 +9,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: 'tfs-2013')
+
 # Configure Team Foundation Server using the standard configuration
 
-**TFS 2013***
+**TFS 2013**
 
 ![Standard configuration on single server](../_img/std-config-intro.png)
 

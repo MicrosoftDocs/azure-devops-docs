@@ -10,6 +10,8 @@ ms.author: elbatk
 ms.date: 09/26/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < vsts')
+
 # Upgrade your deployment to the latest version of TFS
 
 **TFS 2018 | TFS 2017 | TFS 2015**

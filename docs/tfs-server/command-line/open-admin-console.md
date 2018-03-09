@@ -9,6 +9,8 @@ ms.author: douge
 ms.date: 09/26/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Open Team Foundation Server administration console
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**

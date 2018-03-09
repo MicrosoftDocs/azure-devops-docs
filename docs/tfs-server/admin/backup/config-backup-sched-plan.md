@@ -11,9 +11,11 @@ ms.date: 10/19/2017
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 # Configure a backup schedule and plan for Team Foundation Server
 
-**TFS 2018 ** | **TFS 2017** | **TFS 2015**
+**TFS 2018 | TFS 2017 | TFS 2015**
 
 If you administer systems, you're probably already familiar with all the
 reasons why a good backup set is crucial. No one wants to be the
