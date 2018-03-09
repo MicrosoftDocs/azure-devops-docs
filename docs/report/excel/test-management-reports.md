@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Test Management Reports
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 The test team can take advantage of the Office Excel reports in the **Test Team Management** folder to monitor progress and identify the volume, status, and effectiveness of their test activities. The test management reports display team-project information that is stored in the data warehouse. The four Office Excel workbooks provide 17 reports, and each report appears in on its own worksheet.  
   
