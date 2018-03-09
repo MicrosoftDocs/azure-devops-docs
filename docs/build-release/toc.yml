@@ -83,7 +83,7 @@
   - name: Use Jenkins and VSTS DevOps
     href: actions/integrate-jenkins-vsts-cicd.md  
   - name: Test your app
-    href: example-continuous-testing.md
+    href: test/example-continuous-testing.md
 - name: Concepts
   items:
   - name: Agents
