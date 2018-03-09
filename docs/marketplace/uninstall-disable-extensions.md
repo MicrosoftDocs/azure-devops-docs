@@ -10,6 +10,8 @@ ms.author: elbatk
 ms.date: 12/04/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013') 
+
 # Uninstall or disable extensions
 
 **VSTS** | **TFS** 
