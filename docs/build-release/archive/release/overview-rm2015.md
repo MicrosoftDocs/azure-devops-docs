@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016
 ---
+[//]: # (monikerRange: ">= tfs-2015")
 
 # Release Management 2015 (server and client version)
 
