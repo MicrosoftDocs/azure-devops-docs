@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
 ---
+[//]: # (monikerRange: ">= tfs-2013")
 
 # Add users and groups, and control access to Release Management
 
