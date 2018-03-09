@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Bug Reactivations Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Bug Reactivations report to determine how effectively the team is fixing bugs. This report shows the cumulative count of Bugs that the team has reactivated and Bugs that the team has since resolved, for the most recent four weeks. The reactivation rate is also referred to as the fault feedback ratio.  
   

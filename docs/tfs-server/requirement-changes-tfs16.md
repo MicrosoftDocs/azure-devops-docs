@@ -11,6 +11,8 @@ ms.author: aaronha
 ms.date: 07/11/2017
 ---
 
+[//]: # (monikerRange: 'tfs-2018')
+
 # Changes to requirements for TFS 2018
 
 **TFS 2018**
