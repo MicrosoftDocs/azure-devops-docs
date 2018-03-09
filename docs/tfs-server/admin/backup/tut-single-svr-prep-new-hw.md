@@ -10,6 +10,8 @@ ms.technology: vs-devops-admin
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Prepare the new hardware
 
 **TFS 2015** | **TFS 2013**
@@ -19,7 +21,7 @@ This topic, the first part of the Restore a Single-Server tutorial, teaches you 
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Choose hardware and name the server 
 > * Install SQL Server on the new server 
 > * Install SharePoint Foundation on the new server  

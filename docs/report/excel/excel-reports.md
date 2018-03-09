@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Excel reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Microsoft Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [Agile](../../work/work-items/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
 

@@ -10,6 +10,8 @@ ms.author: douge
 ms.date: 08/04/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Cleaning up old data
 
 **TFS 2015** | **TFS 2013**

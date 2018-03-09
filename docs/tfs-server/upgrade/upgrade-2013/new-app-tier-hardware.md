@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: 'tfs-2013')
+
 # TFS Application Tier will use different hardware than it’s using right now
 
 **TFS 2013**

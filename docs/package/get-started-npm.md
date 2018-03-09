@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 02/27/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Quickstart: Use npm to store JavaScript packages in VSTS or TFS
 
 **VSTS** | **TFS 2018** | **TFS 2017**

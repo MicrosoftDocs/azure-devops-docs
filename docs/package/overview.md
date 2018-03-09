@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 01/31/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2017 < vsts') 
+
 # Package Management in VSTS and TFS
 
 > [!NOTE]

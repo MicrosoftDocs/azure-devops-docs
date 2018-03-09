@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 09/09/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Configure the enterprise application definition for Team Foundation Server
 
 [!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
