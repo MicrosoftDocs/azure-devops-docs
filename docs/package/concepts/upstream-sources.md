@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 2/1/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Upstream sources
 
 **VSTS | TFS 2017** ([availability note](../overview.md#versions-compatibility))

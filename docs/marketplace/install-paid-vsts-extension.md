@@ -10,6 +10,7 @@ ms.author: elbatk
 ms.date: 10/10/2017
 ---
 
+[//]: # (monikerRange: 'vsts')
 
 # Buying, installing, and assigning paid extensions to users in VSTS
 
