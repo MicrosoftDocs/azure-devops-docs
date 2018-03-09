@@ -11,7 +11,7 @@ ms.topic:
 
 # Discontinue SharePoint integration: TFS 2017 and earlier versions
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../../_shared/tfs-sharepoint-version.md)]
 
 Starting with TFS 2018, we will no longer offer the TFS Extension for SharePoint.  Additionally, we have no plans to go back to TFS 2017 and add support for installing the TFS Extension for SharePoint on SharePoint 2016. Older versions of TFS (TFS 2017 and before) will continue to work with their supported versions of SharePoint.
 

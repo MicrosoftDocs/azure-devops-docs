@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < vsts')
+
 # Back up and restore TFS
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**

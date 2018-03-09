@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Bugs by Assignment Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 The Bugs by Assignment report shows the distribution of active Bugs, grouped by priority, to team members. For information about how to access this chart, see [Excel reports](excel-reports.md).  

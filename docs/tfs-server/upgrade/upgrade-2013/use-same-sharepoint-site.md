@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: 'tfs-2013')
+
 # Use the same SharePoint site for TFS that you have right now
 
 **TFS 2013**

@@ -11,7 +11,7 @@ ms.date: 12/30/2016
 
 # Code Churn Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 With the Code Churn report, you can analyze how source files are changing over time. This report shows how many lines of code the team added, deleted, or modified during the most recent four weeks.  
   

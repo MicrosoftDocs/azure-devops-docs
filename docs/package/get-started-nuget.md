@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 01/24/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Get started with NuGet Package Management in VSTS and TFS
 
 ## Before you start

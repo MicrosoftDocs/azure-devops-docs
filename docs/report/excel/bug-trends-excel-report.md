@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Bug Trends Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Bug Trends report in Office Excel to track the rate at which the team is discovering, resolving, and closing Bugs. This report shows a moving average of Bugs that the team has discovered and resolved over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

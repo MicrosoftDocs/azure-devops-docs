@@ -1,5 +1,6 @@
 ---
-title: About READMEs and Wiki | VSTS & TFS 
+title: About READMEs and Wiki
+titleSuffix: VSTS & TFS  
 description: Share information using a project or repo README or Wiki    
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -39,9 +40,9 @@ Use your team project wiki to share information with other team members. Each wi
 
 The following features are supported within the built-in wiki for VSTS and the indicated TFS version. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md). 
 
-> [!div class="mx-tdBreakAll"]  
-> |Feature | TFS version  |
-> |--------|--------------|
+> [!div class="mx-tdBreakAll"]  
+> |Feature | TFS version |  
+> |--------|--------------|  
 > |[Markdown format](markdown-guidance.md) | TFS 2018 | 
 > |[HTML tags](markdown-guidance.md#html) | TFS 2018 | 
 > |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 | 

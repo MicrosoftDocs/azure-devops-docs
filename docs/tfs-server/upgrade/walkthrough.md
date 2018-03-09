@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Upgrade scenario walkthrough for Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**

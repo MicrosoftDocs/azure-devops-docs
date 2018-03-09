@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 09/07/2017
 ---
 
-<!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
+<!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   -->  �
 
 #Rate limits  
 

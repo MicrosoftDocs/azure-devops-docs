@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 # Move Team Foundation Server from one environment to another
 
 **TFS 2015** | **TFS 2013**

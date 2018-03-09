@@ -9,6 +9,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ---
 
+[//]: # (monikerRange: 'tfs-2013')
+
 # How to: Create a Team Foundation server farm (high availability)
 
 **TFS 2013**

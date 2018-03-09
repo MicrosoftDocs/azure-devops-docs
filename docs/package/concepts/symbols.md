@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 10/19/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Symbol files (PDBs)
 
 [!INCLUDE [](../_shared/availability-symbols.md)]

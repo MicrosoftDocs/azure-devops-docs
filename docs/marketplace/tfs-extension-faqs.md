@@ -10,6 +10,8 @@ ms.author: elbatk
 ms.date: 9/27/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < vsts') 
+
 # Team Foundation Server extension FAQs
 
 ## General

@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 02/12/2018
 ---
 
+[//]: # (monikerRange: '>=tfs-2013')
+
 # Change groups and permissions with TFSSecurity
 
 **VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**

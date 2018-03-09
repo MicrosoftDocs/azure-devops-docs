@@ -11,7 +11,7 @@ ms.date: 03/09/2017
 
 # Progress dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Progress dashboard to track team progress toward completing an iteration. This dashboard displays four reports that help you monitor progress, burndown, and issues.  
 
