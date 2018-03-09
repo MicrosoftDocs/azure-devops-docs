@@ -11,7 +11,7 @@ ms.date: 09/05/2017
 
 # SharePoint Integration  
   
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 ## Overview 

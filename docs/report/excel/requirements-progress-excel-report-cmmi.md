@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 12/30/2016
 ---
 # Requirements Progress Excel Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Requirements Excel report to track the rate at which the team is implementing requirements. This report shows the distribution of active, resolved, and closed requirements over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
