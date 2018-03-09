@@ -10,6 +10,7 @@ ms.author: kaelli
 ms.date: 09/14/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2015 < vsts') 
 
 # What's new for Team Foundation Server
 

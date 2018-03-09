@@ -10,6 +10,8 @@ ms.author: aaronha
 ms.date: 11/08/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 # Handling team project collection upgrade failures
 
 **TFS 2018** | **TFS 2017** | **TFS 2015**

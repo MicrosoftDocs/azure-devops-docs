@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 12/15/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 # Restore data to a different server than the current one for TFS
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**

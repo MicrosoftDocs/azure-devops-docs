@@ -10,6 +10,8 @@ ms.author: elbatk
 ms.date: 10/10/2017
 ---
 
+[//]: # (monikerRange: 'vsts')
+
 # Install free extensions for VSTS
 
 **VSTS**

@@ -1,6 +1,6 @@
 ---
 title: Add and edit wiki pages
-titleSuffix: VSTS 
+titleSuffix: VSTS & TFS  
 description: Add, edit, reorder, and manage pages for your built-in team project wiki 
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -99,4 +99,4 @@ Each wiki page corresponds to a file within the wiki git repo. Names you assign 
 | Attachment file size |  Must not exceed the maximum of 19 MB  |
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)]  �

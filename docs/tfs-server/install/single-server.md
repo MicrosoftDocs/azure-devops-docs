@@ -11,6 +11,8 @@ ms.date: 11/28/2017
 ms.topic: get-started-article
 ---
 
+[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 # Install TFS on a single server
 
 **TFS 2018** | **TFS 2017** | **TFS 2015**

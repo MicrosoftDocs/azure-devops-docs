@@ -9,6 +9,8 @@ ms.author: elbatk
 ms.date: 04/28/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2015') 
+
 #	Marketplace support
 
 **VSTS** | **TFS 2017** | **TFS 2015**
