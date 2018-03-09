@@ -29,7 +29,7 @@ When you include a task group in your definitions, and then make a change centra
 the change is automatically reflected in all the definitions that use the task group. There is no need
 to change each one individually.
 
-To create a task group, selecting a sequence of tasks in a build or release definition 
+To create a task group, select a sequence of tasks in a build or release definition 
 (when using a mouse, click on the checkmarks of each one). Then open the shortcut menu
 and choose **Create task group**. Specify a name and description, and the category (tab)
 you want to add it to in the Add tasks dialog.
