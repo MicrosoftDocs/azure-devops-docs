@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/03/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 #  Get Started with Git and VSTS
 
