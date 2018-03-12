@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/24/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 #  VSTS Git tutorial
 
@@ -40,7 +41,7 @@ These terms might sound familiar if you've used a version control system like Te
 ##  Git workflow
 
 ---
-0. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as fix-bug-3214 or cool-feature-x. 
+0. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](../concepts/git-branching-guidance.md)
 0. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
 0. [Push your branch](pushing.md) to the remote repository. 
 0. [Create a pull request](pullrequest.md) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
