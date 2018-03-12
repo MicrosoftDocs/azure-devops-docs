@@ -10,6 +10,8 @@
   items:
   - name: Unit test with builds
     href: getting-started-with-continuous-testing.md
+  - name: UI test with Selenium
+    href: continuous-test-selenium.md
   - name: Review test results
     href: review-continuous-test-results-after-build.md
 - name: Tutorials
