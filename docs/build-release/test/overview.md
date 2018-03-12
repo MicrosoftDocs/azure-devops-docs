@@ -35,7 +35,8 @@ automatically with each build.
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Unit-Testing-from-a-CI-Build-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
 * [Run unit tests with your builds](getting-started-with-continuous-testing.md)
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+* [Get started with Selenium testing](continuous-test-selenium.md)
+* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Learn more about test task steps](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
@@ -49,10 +50,10 @@ Choose the test technologies and frameworks you prefer to use.
  
 <iframe width="640" height="360" src="//channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
-* [Get started with Java testing](continuous-test-java.md).
+* [Get started with Selenium testing](continuous-test-selenium.md)
+* [Get started with Java testing](continuous-test-java.md)
 * [Use Maven to build your Java app](../tasks/build/maven.md)
 * [Unit testing framework plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) 
-<!-- * [Get started with Selenium testing](continuous-test-selenium.md). -->
 
 <a name="analytics-reporting"></a>
 ## Rich analytics and reporting
@@ -67,7 +68,7 @@ your app.
 
 ![Build results showing rich test results](_img/continuous-testing/BuildSummary.png)
 
-* [Review continuous test results after a build](review-continuous-test-results-after-build.md).
+* [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
 * [Get Test Impact Analysis reports](test-impact-analysis.md)
 
