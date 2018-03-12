@@ -21,10 +21,8 @@ choose the technologies and frameworks, then test your changes continuously in a
 
 | | | |
 | --- | --- | --- |
-| ![icon](_img/continuoustest-icon.png)<br />[Run unit tests with your builds](getting-started-with-continuous-testing.md) | ![icon](_img/reviewresults-icon.png)<br />[Review your test results](review-continuous-test-results-after-build.md) |
+| ![icon](_img/continuoustest-icon.png)<br />[Run unit tests with your builds](getting-started-with-continuous-testing.md) | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) | ![icon](_img/reviewresults-icon.png)<br />[Review your test results](review-continuous-test-results-after-build.md) |
 | | | |
-
-<!-- | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) -->
 
 ## Videos
 
