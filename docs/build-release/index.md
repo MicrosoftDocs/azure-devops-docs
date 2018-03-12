@@ -54,7 +54,11 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 ### Learn how to test your app
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>VS Test</span></a></div></div>
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio Test</span></a></div>
+<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png"><span>Selenium Test</span></a></div>
+<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png"><span>Review results</span></a></div>
+</div>
 
 ## Step-by-step tutorials
 
