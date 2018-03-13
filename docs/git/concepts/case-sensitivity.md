@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: macoope
-ms.date: 02/01/2018
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018')
 
 # Git case sensitivity
 #### VSTS | TFS 2018

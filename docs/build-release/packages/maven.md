@@ -9,8 +9,11 @@ ms.author: elbatk
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018') 
 
 # Set up Team Build and Maven
+
+**VSTS** | **TFS 2018**
 
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
  

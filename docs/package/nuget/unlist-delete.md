@@ -9,9 +9,11 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Unlist or delete a NuGet package
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 There are two options available to remove a version of a NuGet package from a feed.
 

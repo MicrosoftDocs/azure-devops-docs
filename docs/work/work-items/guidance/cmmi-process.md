@@ -1,16 +1,19 @@
 ---
-title: CMMI process template for VSTS & TFS  
-description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server     
+title: CMMI process template
+titleSuffix: VSTS & TFS  
+description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services or Team Foundation Server     
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 03/12/2018
 ---
 
-# CMMI process 
+# CMMI process
+ 
 <meta name="keywords" content="CMMI tools" />
+
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a team project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
@@ -19,8 +22,8 @@ The CMMI process supports the following work item types (WITs) to plan and track
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
 
->[!NOTE]  
-><b>Feature availability:</b> From the cloud-based VSTS, you'll always have access to the latest version of the CMMI process, [which you can also customize](../../customize/process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+> [!NOTE]  
+> **Feature availability**: From the cloud-based VSTS, you'll always have access to the latest version of the CMMI process, [which you can also customize](../../customize/process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 
@@ -90,6 +93,24 @@ To use [dashboards](../../../report/sharepoint-dashboards/project-portal-dashboa
 ## Related notes  
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]
+
+
+### CMMI process versions  
+
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
+
+> [!div class="mx-tdCol2BreakAll"]  
+> | TFS version | CMMI name | Major version |
+> |-------------|-----------------------|
+> | TFS 2018 | CMMI | 16 |
+> | TFS 2017 | CMMI | 15 |
+> | TFS 2015 | CMMI | 7 |
+> | TFS 2013 | MSF for CMMI Process Improvement 2013 | 7 |
+> | TFS 2012 | MSF for CMMI Process Improvement 6.0  | 6 |
+> | TFS 2008 | MSF for CMMI Process Improvement - v4.*n* |   |
+
+For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+
 
 ### Additional CMMI guidance
 
@@ -185,4 +206,3 @@ You can use the following Excel workbooks to review open issues and to rank and 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
