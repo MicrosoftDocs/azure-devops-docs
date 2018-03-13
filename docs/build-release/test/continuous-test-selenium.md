@@ -232,12 +232,14 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
    task to **Installed by Tools Installer**. 
  
-     ![Setting the teat platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
+   ![Setting the teat platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
+
+   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
 1. Save the release definition and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release definition.
 
-     ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
+   ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
 
 <a name="view-results"></a>
 ## View the test results

@@ -1,16 +1,16 @@
 ---
-title: Change number of paid extension users for VSTS
-description: Change number of paid extension users for VSTS
+title: Change the number of paid users for a VSTS extension
+description: Change the number of paid users for a VSTS extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 3/12/2018
 ---
 [//]: # (monikerRange: '>= tfs-2015')
 
-# Change number of paid extension users for VSTS
+# Change the number of paid users for a VSTS extension
 
 **VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
@@ -19,8 +19,7 @@ You'll need VSTS
 [project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner). 
 
 > [!IMPORTANT]
-> To cancel access completely for a paid extension, 
-> reduce all your paid users to zero (0). 
+> To stop paying for an extension, reduce the number of paid users to zero (0). 
 > [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
 
 0.	Sign in to your VSTS account 
@@ -31,12 +30,12 @@ You'll need VSTS
 	<img alt="Go to Users" src="../_shared/_img/users-hub-updated-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	Go to the extension pane. 
-Change the number of extension users that you're paying for.
+Change the number of paid users for this extension.
 
-	<img alt="Edit your total paid extension users" src="_img/assign-extensions/extension-add-users.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Edit your paid users" src="_img/assign-extensions/extension-add-users.png" style="border: 1px solid #CCCCCC" />
 
-0.	Update your total paid extension users.
+0.	Update your total paid users.
 
-	<img alt="Update total paid extension users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
 
 

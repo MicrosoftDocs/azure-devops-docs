@@ -103,6 +103,8 @@ will automatically execute the unit tests it contains.
 
    ![Viewing the build results](_img/example-continuous-testing/example-continuous-testing-29.png)
 
+   [How do I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
+
 1. The **Tests** tab provides comprehensive results of executing the unit tests defined in the
    solution. Use the **Outcome** list to show the tests that passed.
 
@@ -175,6 +177,8 @@ a simple load test to validate the deployment.
 1. Create a release from your definition using the **Release** icon in the toolbar.
 
    ![Creating a new release](_img/example-continuous-testing/example-continuous-testing-48.png)
+
+   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
 1. After the release starts, choose the **Release-**_x_ link just below the toolbar.
 

@@ -153,24 +153,19 @@ Here's how a three-level nested tree of items appears in Excel:
     In the background, parent-child links are created for each task listed under a user story.
 
 
-<blockquote style="font-size: 13px">**Useful tips when working with a tree list:**  
+##Useful tips when working with a tree list 
 
-<ul>
-<li><p style="font-size: 13px">The plug-in interprets the data in the <strong>Title</strong> columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:</p>
-<ul>
-<li><p style="font-size: 13px">A row between parent and child work items is blank.</p></li>
-<li><p style="font-size: 13px">The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.</p></li>
-<li><p style="font-size: 13px">Within a row, multiple <strong>Title</strong> columns contain data. Enter text in only one of the title columns within each row.</p></li>
-<li><p style="font-size: 13px">The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.</p></li>
-</ul>
-<p style="font-size: 13px">To resolve an error, see <a href="https://msdn.microsoft.com/library/dd293544">Resolve invalid links in an Excel tree list</a>.</p></li>
-<li><p style="font-size: 13px">You can use <img src="_img/bulk-modify-excel-indent-inline.png" title="item in tree" alt="item in tree" /> or <img src="_img/bulk-modify-excel-outdent-inline.png" title="Outdent item in tree" alt="Outdent item in tree" /> to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a <strong>Title</strong> column. The header at the top of the column should read <strong>Title</strong> &lt;number&gt;, if it does not, add a tree level.</p></li>
-<li><p style="font-size: 13px">A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.</p></li>
-<li><p style="font-size: 13px">If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](https://msdn.microsoft.com/library/dd293544#tf208104).</p></li>
-<li><p style="font-size: 13px">When you move a work item, make sure that you select the entire table row.</p></li>
-</ul>
+- The plug-in interprets the data in the <strong>Title</strong> columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
+	- A row between parent and child work items is blank. 
+	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.<
+	- Within a row, multiple <strong>Title</strong> columns contain data. Enter text in only one of the title columns within each row.
+	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
+- To resolve an error, see <a href="https://msdn.microsoft.com/library/dd293544">Resolve invalid links in an Excel tree list</a>.
+- You can use <img src="_img/bulk-modify-excel-indent-inline.png" title="item in tree" alt="item in tree" /> or <img src="_img/bulk-modify-excel-outdent-inline.png" title="Outdent item in tree" alt="Outdent item in tree" /> to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a <strong>Title</strong> column. The header at the top of the column should read <strong>Title</strong> &lt;number&gt;, if it does not, add a tree level.
+- A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
+- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104).</p></li>
+- When you move a work item, make sure that you select the entire table row. 
 
-</blockquote>&nbsp;&nbsp; 
 
 ## Work with different list types 
 
@@ -287,7 +282,7 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp;  
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp;Â  
 
 
 ### Web portal and Excel access

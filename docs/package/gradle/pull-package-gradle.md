@@ -8,8 +8,11 @@ ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018')
 
 # Install a Maven artifact using Gradle in a VSTS build
+
+**VSTS** | **TFS 2018**
 
 Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during a VSTS build of your application.
 

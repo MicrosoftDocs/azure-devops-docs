@@ -1,12 +1,13 @@
 ---
-title: Agile process template for VSTS & TFS  
-description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server  
+title: Agile process template
+titleSuffix: VSTS & TFS  
+description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services or Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 03/12/2018
 ---
 
 
@@ -93,6 +94,23 @@ To use [dashboards](../../../report/sharepoint-dashboards/project-portal-dashboa
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
 
 
+### Agile process versions  
+
+As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+
+> [!div class="mx-tdCol2BreakAll"]Â Â 
+> |Â TFS version | Agile process name | Major version |
+> |-------------|-----------------------|
+> | TFS 2018 | Agile | 16 |
+> | TFS 2017 | Agile | 15 |
+> | TFS 2015 | Agile | 7 |
+> | TFS 2013 | MSF for Agile Software Development | 7 |
+> | TFS 2012 | MSF for Agile Software Development 6.0  | 6 |
+> | TFS 2008 | MSF for Agile Software Development - v4.*n* |   |
+> 
+
+For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+
 <a id="predefined-queries" />
 ###Agile process predefined queries 
 
@@ -103,22 +121,22 @@ Product owners can use the shared queries that are defined in the following tabl
 <table>
 <thead>
 <tr>
-<th><p>Shared query</p></th>
-<th><p>Description</p></th>
+<th>Shared query</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><p>Product Backlog</p></td>
-<td><p>Provides a tree list of all user stories that are in a New, Active or Resolved state and sorts them by rank.</p></td>
+<td>Product Backlog</td>
+<td>Provides a tree list of all user stories that are in a New, Active or Resolved state and sorts them by rank.</td>
 </tr>
 <tr>
-<td><p>Product Planning</p></td>
-<td><p>Provides a flat list of all user stories that are not in a Removed state, and have not been closed in the last 90 days.</p></td>
+<td>Product Planning</td>
+<td>Provides a flat list of all user stories that are not in a Removed state, and have not been closed in the last 90 days.</td>
 </tr>
 <tr>
-<td><p>Feedback</p></td>
-<td><p>Lists all feedback responses that are in an Active state.</p></td>
+<td>Feedback</td>
+<td>Lists all feedback responses that are in an Active state.</td>
 </tr>
 </tbody>
 </table>
@@ -186,13 +204,13 @@ The project administrator for each team project [defines area and iteration path
 </tbody>
 </table>
 
-
-<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>&nbsp;&nbsp; 
-
+  
+> [!TIP]    
+> Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md).  
 
 #### Find tasks with summary values
 
-The **Work Items With Summary Values** shared query, which is located in the **Troubleshooting** folder, lists all tasks that have child tasks and that contain non-zero values in the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours. For more information, see [Address inaccuracies published for summary values](https://msdn.microsoft.com/library/dd997572.aspx).
+The **Work Items With Summary Values** shared query, which is located in the **Troubleshooting** folder, lists all tasks that have child tasks and that contain non-zero values in the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours. For more information, see [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).
 
 ### Workbooks (TFS)  
 
@@ -201,11 +219,8 @@ You can use the following Excel workbooks to review open issues and to rank and 
 -   The [Issues workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Open Issues shared query.  
 -   The [Triage workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Bug Triage shared query.
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.  
-</blockquote>&nbsp;&nbsp; 
+> [!NOTE]   
+> **Feature availability**:  Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.  
 
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
-
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

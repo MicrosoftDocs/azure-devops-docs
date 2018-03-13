@@ -14,7 +14,9 @@ ms.date: 2/1/2018
 
 # Upstream sources
 
-**VSTS | TFS 2017** ([availability note](../overview.md#versions-compatibility))
+**VSTS** | **TFS 2018** | **TFS 2017**
+
+Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
 Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and (in a future sprint) authenticated feeds (i.e. other VSTS feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 

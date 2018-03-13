@@ -9,7 +9,11 @@ ms.author: cajone
 ms.date: 11/13/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Use packages from npmjs.com
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 [!INCLUDE [](../_shared/availability-npm.md)]
 

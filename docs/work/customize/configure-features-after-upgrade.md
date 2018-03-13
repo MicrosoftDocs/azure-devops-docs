@@ -18,8 +18,8 @@ ms.date: 03/16/2017
 
 After a TFS upgrade, you'll want to use the new features that were installed. Some of these features might require updates to your team project. The Configure Features wizard is the easiest way to make this happen. 
 
->[!NOTE]  
->If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>
+> [!NOTE]  
+> If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>
 If you need to upgrade TFS, [go to the downloads page](https://www.visualstudio.com/downloads/). <br/> 
 If you have several team projects to update, you can [apply updates programmatically](#program-updates).  
 
@@ -36,7 +36,8 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Configure features, list of features configured or not configured](_img/ALM_CFW_ConfigFeatures.png)
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>&nbsp;&nbsp; 
+	> [!NOTE]  
+	> If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).     
 
 	The features listed depend on the TFS version of software installed. To get the latest features, upgrade your server to the latest version. 
 

@@ -85,6 +85,8 @@ https://github.com/adventworks/go-sample
 
 [//]: # (::: moniker range=">= tfs-2018")
 
+  ### VSTS and TFS 2018
+
   1. Search for the **Shell Script** task and click **Add** to add it to your build.
 
   1. Click the **Shell Script** task and set its field values as follows:
@@ -99,6 +101,8 @@ https://github.com/adventworks/go-sample
 
 [//]: # (::: moniker range="tfs-2017")
 
+  ### TFS 2017.2
+
   1. Search for the **Command Line** task and click **Add** to add it to your build.
 
   1. Click the **Command Line** task and set its field values as follows:
@@ -110,6 +114,8 @@ https://github.com/adventworks/go-sample
       Arguments    | `build hello.go`
 
 [//]: # (::: moniker-end)
+
+  ### Finish
 
 1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 

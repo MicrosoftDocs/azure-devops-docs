@@ -14,6 +14,8 @@ ms.date: 01/24/2018
 
 # Get started with NuGet Package Management in VSTS and TFS
 
+**VSTS** | **TFS 2018** | **TFS 2017**
+
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
