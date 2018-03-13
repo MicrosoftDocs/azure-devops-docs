@@ -13,8 +13,9 @@ ms.date: 08/04/2016
 
 <b>TFS 2015</b> 
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
-</blockquote>&nbsp;&nbsp; 
+> [!NOTE]   
+> **Feature availability**: This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
+ 
 
 Each version of Team Foundation Server (TFS) typically introduces one or more changes to work tracking. To gain access to the new features that rely on these changes, your existing team projects must be updated. 
 

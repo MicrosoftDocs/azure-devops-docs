@@ -14,7 +14,7 @@ ms.date: 09/01/2017
 
 # Views on VSTS feeds
 
-**VSTS | TFS 2017**
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](views.md) to quickly start using them.*
 

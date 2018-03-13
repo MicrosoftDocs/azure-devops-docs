@@ -9,9 +9,11 @@ ms.author: amullans
 ms.date: 08/10/2016
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Set up a multi-developer NuGet environment
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 Using a package mangement system helps increase your team's velocity and decreases the amount of code duplication across your organization.
 Multiple developers on a team need to coordinate where and how they access packages.
