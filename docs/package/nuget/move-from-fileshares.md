@@ -9,9 +9,11 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Move your packages to the cloud
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 VSTS provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
