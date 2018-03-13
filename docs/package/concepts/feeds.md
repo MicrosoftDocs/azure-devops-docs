@@ -14,6 +14,6 @@ ms.date: 2/6/2018
 
 # Feeds
 
-**VSTS | TFS 2017**
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 Package Management groups packages in *feeds* - what the NuGet client calls ''package sources''. Feeds are an organizational construct that allow you to secure and organize packages.
