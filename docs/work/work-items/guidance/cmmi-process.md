@@ -101,7 +101,7 @@ As updates are made to the CMMI process template, the version number is updated.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | TFS version | CMMI name | Major version |
-> |-------------|-----------------------|
+> |-------------|-------------------|--------------|
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |
 > | TFS 2015 | CMMI | 7 |
@@ -194,8 +194,8 @@ Product owners can use the shared queries that are described in the following ta
 
 ### Workbooks (TFS) 
 
->[!NOTE]  
-><b>Feature availability: </b>Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.   
+> [!NOTE]  
+> **Feature availability**: </b>Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.   
 
 
 You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Each workbook references a shared query.  
