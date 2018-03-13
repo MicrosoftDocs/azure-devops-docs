@@ -6,54 +6,36 @@ ms.technology: vs-devops-setup
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 3/13/2018
 ---
-# Set up billing for your VSTS account
+[//]: # (monikerRange: 'vsts')
+
+#  Set up billing for your VSTS account
 
 **VSTS**
 
 During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. All VSTS services are billed via Azure, 
-though you are not required to use any other Azure services. 
+and you are not required to use any other Azure services. 
  
 These are the paid services offered by Microsoft:
 * [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-* [CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
-* [CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+* [Microsoft-hosted CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+* [Self-hosted CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
 ## What do I need to set up billing?
 
-Microsoft Azure handles billing for your VSTS account, 
-so you'll need:
+The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner).
+0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-<a name="EligibleAzureSubscription"></a>
+To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
 
-* An Azure subscription to bill your purchases. 
-You must have at least [an **owner** or **contributor** role](add-backup-billing-managers.md) 
-to link this Azure subscription to your VSTS account.
-
-    [Sign up for an Azure subscription](https://portal.azure.com), 
-    if you don't have one. Or have an Azure administrator 
-    [add you as an **owner** or **contributor** role](add-backup-billing-managers.md) 
-    to an Azure subscription that you can use to bill purchases. 
-    Make sure to use the same email address 
-    that you sign in to VSTS with for this activity.
-
-    You can also link this Azure subscription to your VSTS 
-    account in the [Azure portal](https://portal.azure.com).  Your 
-    Azure subscription has all the necessary billing information, 
-    so you won't set this up separately for your VSTS account.
-    [How does Azure billing work?](faq-billing-setup.md#azure-billing)
-
-    If you've lost access to your Azure subscription, 
-    contact [Azure Support](http://azure.microsoft.com/en-us/support/options/).
-
-<a name="Link"></a>
-<a name="AzurePortal"></a>
 ## Set up billing via the Azure Portal
+If you'd like to set up billing for your VSTS account prior to making a purchase (because setting up billing is integrated when you make a purchase), 
+you can set up billing from within the Azure portal.
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
 as VSTS account owner and as Azure subscription co-administrator or greater.

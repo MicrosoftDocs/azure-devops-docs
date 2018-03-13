@@ -9,11 +9,15 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017') 
+
 # Set up your client's npmrc
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
-All Package Management feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [`.npmrc` configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+[!INCLUDE [](../_shared/availability-npm.md)]
+
+All Package Management feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Where are my **_.npmrc_** files?
 
