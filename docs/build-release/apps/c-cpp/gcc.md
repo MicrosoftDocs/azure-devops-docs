@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.manager: douge
 ms.author: dastahel
-ms.date: 02/16/2018
+ms.date: 03/13/2018
 ms.topic: get-started-article
 ---
 [//]: # (monikerRange: '>= tfs-2017')
@@ -93,7 +93,7 @@ https://github.com/adventworks/cpp-gpp-sample
       ------- | -----
       Version | `3.*` or later
       Type    | `Inline`
-      Script  | `g++ *.cpp -o hello-world`
+      Script  | `make`
 
 [//]: # (::: moniker-end)
 
@@ -106,8 +106,7 @@ https://github.com/adventworks/cpp-gpp-sample
       Field        | Value
       ------------ | -----
       Display name | `Build C++ application`
-      Tool         | `g++`
-      Arguments    | `*.cpp -o hello-world`
+      Tool         | `make`
 
 [//]: # (::: moniker-end)
 
