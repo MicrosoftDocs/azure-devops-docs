@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 1/22/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 **VSTS**
 
