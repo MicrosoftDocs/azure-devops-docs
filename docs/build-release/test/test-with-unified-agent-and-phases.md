@@ -156,13 +156,8 @@ multiple executions and multiple agents modes, it is replicated on the agents, i
 <a name="run-ui-tests"></a>
 ### Q: What is required to run UI tests?
 
-**A**: To run UI tests, you must run the agent in [interactive mode](../../build-release/concepts/agents/agents.md#account).
-Agents set to run as a service cannot run UI tests.
-However, at present, interactive agents will be stopped if the machine reboots for any reason.
-Enhancements to the agent to survive reboots in interactive mode will be implemented in the future.
-
-Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
-Automatic configuration of agents to do this will be implemented in the future.
+**A**: To run UI tests, you must run the agent in [interactive mode](../../build-release/concepts/agents/agents.md#account) with auto-logon enabled.
+Agents set to run as a service cannot run UI tests. Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
 
 <a name="hosted-ui-tests"></a>
 ### Q: Can I run UI tests on the hosted agents?

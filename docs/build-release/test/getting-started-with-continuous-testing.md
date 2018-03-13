@@ -58,6 +58,8 @@ solution - on the same build machine.
    The Visual Studio Test task version 2 supports [Test Impact Analysis](test-impact-analysis.md).
    For information about all the task settings, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
 
+   [How do I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
+
 1. If you also want to test code coverage, set the **Code coverage enabled** checkbox in the
    **Execution options** section.
 
