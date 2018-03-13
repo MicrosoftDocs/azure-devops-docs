@@ -9,6 +9,7 @@ ms.author: dastahel
 ms.date: 02/16/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your GCC C/C++ app
 
@@ -80,11 +81,9 @@ https://github.com/adventworks/cpp-gpp-sample
 
  Select your version control repository. You'll need to authorize access to your repo.
 
- ---
-
 1. Click the **+** icon on **Phase 1** of the build and then:
 
- # [VSTS or TFS 2018](#tab/vsts-task)
+[//]: # (::: moniker range=">= tfs-2018")
 
   1. Search for the **Shell Script** task and click **Add** to add it to your build.
 
@@ -96,7 +95,9 @@ https://github.com/adventworks/cpp-gpp-sample
       Type    | `Inline`
       Script  | `g++ *.cpp -o hello-world`
 
- # [TFS 2017.2](#tab/tfs2017-task)
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2017")
 
   1. Search for the **Command Line** task and click **Add** to add it to your build.
 
@@ -108,7 +109,7 @@ https://github.com/adventworks/cpp-gpp-sample
       Tool         | `g++`
       Arguments    | `*.cpp -o hello-world`
 
- ---
+[//]: # (::: moniker-end)
 
 1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
