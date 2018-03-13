@@ -1,5 +1,6 @@
 ---
-title: Set alerts, get notified when changes occur 
+title: Set alerts, get notified when changes occur
+titleSuffix: TFS 
 description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server (TFS)
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -41,7 +42,8 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	- **A pull request I've participated in is created or updated**  
 	- **A build quality changes** 
 
-	<blockquote style="font-size: 13px"><b>Tip:&nbsp;&nbsp; </b>When you clear an alert, you also clear all email addresses defined for the alert. </blockquote>&nbsp;&nbsp; 
+	 > [!TIP]    
+	 > When you clear an alert, you also clear all email addresses defined for the alert. 
 
 4.	For more options, open custom alerts and choose one of the options available. Also, you can open a basic alert and modify its settings, such as changing the email format from HTML to plain text or SOAP. 
 	
@@ -83,7 +85,8 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	
 	![Subscriber set to team context](_img/team/ALM_AN_TeamSelector.png)
 
-	<blockquote style="font-size: 13px"><b>Tip:&nbsp;&nbsp; </b>For the team context, the alert query interprets the **@Me**  variable as anyone who is a member of the team. </blockquote>&nbsp;&nbsp; 
+	> [!TIP]    
+	> For the team context, the alert query interprets the **@Me**  variable as anyone who is a member of the team.   
 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 

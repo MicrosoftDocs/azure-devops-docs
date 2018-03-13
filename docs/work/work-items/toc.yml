@@ -133,6 +133,8 @@
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Reference
   items:
+  - name: Changes made to process templates
+    href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Work item form controls 

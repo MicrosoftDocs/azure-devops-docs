@@ -58,3 +58,9 @@ Stakeholders in a project can read wiki pages and view revisions, however they c
 
 > [!NOTE]    
 > Users with [Stakeholder access](../security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed.  
+
+## Q & A
+
+###Q:  Is it possible to grant permissions on a per-page basis?
+
+**A:** No, permissions to access the wiki are made for all pages and not individual pages. 
