@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: kangan
 ms.author: jepling
-ms.date: 10/11/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018')
 
 # Git preferences and settings
 #### VSTS | TFS 2018

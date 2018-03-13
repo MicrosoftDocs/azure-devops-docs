@@ -40,11 +40,14 @@ choose the technologies and frameworks, then test your changes continuously in a
 ## How-to Guides
 
 * [Set up continuous testing](set-up-continuous-testing-builds.md)
-* [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
-* [Associate tests with test cases](associate-automated-test-with-test-case.md)
+* [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
+* [Run automated tests from the Test hub](run-automated-tests-from-test-hub.md)
+* [Run automated tests with Microsoft Test Manager](run-automated-tests-with-microsoft-test-manager.md)
 * [Associate results with requirements](associate-automated-results-with-requirements.md)
 * [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
 * [Run tests in parallel](run-tests-in-parallel.md)
+* [Collect screenshots and video in tests](collect-screenshots-and-video.md)
+* [Pass parameters to tests from a build or release pipeline](reference-qa.md#pass-params)
 
 ## Reference
 

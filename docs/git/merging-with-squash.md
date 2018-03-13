@@ -6,12 +6,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/31/2017
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 #  Squash merge pull requests
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### VSTS | TFS 2018 | TFS 2017
 
 ## Pull requests and Git history
 

@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+ms.date: 3/13/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -18,74 +18,60 @@ VSTS offers a cloud-based solution for [load testing your apps](../load-test/ind
 
 Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../load-test/reference-qa.md#VUM). 
 
-Your VSTS account includes 20,000 virtual user minutes **free** per month for cloud-based load testing.
-If you need more than this amount, you must first
-[set up billing for your VSTS account](set-up-billing-for-your-account-vs.md) then 
-[enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com)
-for your VSTS account.
+Your VSTS account includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
+If you need more than this amount, you must first:
+0. [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md), and then 
+0. [enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS account.
 
 <a name="buy-load-testing"></a>
-## Pre-requisites
+## Prerequisites
 
-Before you start:
+The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-*  You'll need VSTS
-[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA)
-to enable paid usage for your VSTS account.
+0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-*  You must first
-[set up billing for your VSTS account](set-up-billing-for-your-account-vs.md),
-if you haven't already. VSTS is billed through your Azure subscription.
+To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
 
-*  If you're going through the Azure portal, you'll also need at least
-[co-administrator permissions](add-backup-billing-managers.md)
-for the Azure subscription that's linked to your VSTS account for billing.
+## How to enable paid Load Testing
 
-You can follow the steps below.
-
-
-<p>**Azure portal**
-<p>
-<ol>
-<li>[Sign in to the Azure portal](https://portal.azure.com/).
-<p>If you experience browser problems with Azure,
+**Azure portal**
+0. [Sign in to the Azure portal](https://portal.azure.com/).
+If you experience browser problems with Azure,
 make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
-<li>Go to **More services** > **Developer tools** > **VSTS accounts**.
-Select your VSTS account.
-<p>
-<p>![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
-<p>
-<p>[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
-<p>
-<li>Select **cloud-based load testing**.
-<p>
-<p>![Click Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
-<p>
-<li>Turn on paid load testing.
-<p>
-<p>If you want, set a monthly limit on the virtual user minutes that you use.
-When you're done, save your changes.
-<p>
-<p>![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
-<p>
-</ol>
-</div>
+0. Go to **More services** > **Developer tools** > **VSTS accounts** and select your VSTS account.
 
-</div></div>
+![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+
+[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
+
+0. Select **cloud-based load testing**.
+
+![Click Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
+
+0. Turn on paid load testing.
+
+If you want, set a monthly limit on the virtual user minutes that you use. When you're done, save your changes.
+
+![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
 
 ## Billing and free monthly usage
 
-You're charged only for virtual user minutes of cloud-based load testing used above the free monthly usage (20,000 virtual user minutes).  
+You're charged only for virtual user minutes of cloud-based load testing used above the Free Tier (20,000 virtual user minutes per month).  
 
-*  Free virtual user minutes reset on the 1st of the month.
+*  The Free Tier resets on the 1st of the month.
 
 *  No additional virtual user minutes are included with Visual Studio subscriptions--the free amounts are per VSTS account, not per user.
 
 *  For cloud-based load testing, you're charged for each 
    [virtual user minute](../load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
 
-*   Graduated discounts for cloud-based load testing
-are calculated based on your Azure subscription billing cycle.
+*   Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
+
+## Limits on load test runs
+
+There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you're 
+running your test.  For details, see [this Q&A](../load-test/reference-qa.md#test-limits).
 
 ## Related information  
 
@@ -93,10 +79,3 @@ are calculated based on your Azure subscription billing cycle.
 - [Billing overview](overview.md)  
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)
-
-## Limits on load test runs
-
-There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you're 
-running your test.  For details, see [this Q&A](../load-test/reference-qa.md#test-limits).
-
-
