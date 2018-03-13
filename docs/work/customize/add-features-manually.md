@@ -458,8 +458,8 @@ Depending on the customizations that you've made and the features you want to en
  
 	```witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"```
 
-<blockquote style="font-size: 13px">**Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md
-)</blockquote>&nbsp;&nbsp; 
+> [!NOTE]  
+> **Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md)  
 
 <a id="update-processconfig">   </a>
 <a id="edit-processconfig">   </a>

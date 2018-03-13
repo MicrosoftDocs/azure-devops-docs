@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016
 ---
+[//]: # (monikerRange: '>= tfs-2017') 
 
 # Use Jenkins to restore and publish packages
 
