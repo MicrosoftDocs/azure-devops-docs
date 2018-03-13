@@ -219,7 +219,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    * In the **Tasks** tab of the release definition, choose the **+** icon in the **Run on agent** section.
      Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
-     at the default. <p />
+     at the default values.<p />
 
      ![Adding a Visual Studio Test Platform Installer task](_img/continuous-test-selenium/continuous-test-selenium-09.png)
   
@@ -242,18 +242,13 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 <a name="view-results"></a>
 ## View the test results
 
-1. To view the test results from a build, open
-   the build summary from the **Builds** tab.
+1. To view the test results, open the release summary from the **Releases** tab.
 
-   ![Selecting a build result](_img/continuous-test-selenium/continuous-test-selenium-19.png)
+   ![Selecting a release summary](_img/continuous-test-selenium/continuous-test-selenium-19.png)
 
-   The build summary includes a snapshot of the test
-   results. There is also a **Tests** results page that
-   highlights the build-on-build changes, including
-   errors, stack traces, and the ability to easily
-   create a bug that contains this information.
-
-   ![The build summary and test results](_img/continuous-test-selenium/continuous-test-selenium-20.png)
+1. In the release summary page choose the **Tests** link to show a page
+   that highlights the changes including errors, stack traces, and the ability
+   to easily create a bug that contains this information.
 
 ## Next steps
 
