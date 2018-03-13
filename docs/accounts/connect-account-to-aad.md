@@ -12,6 +12,9 @@ ms.date: 03/06/2018
 
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
+> [!Warning]
+> If you use [TFVC](https://docs.microsoft.com/en-us/vsts/tfvc/index) do not connect to Azure AD. We are working to unblock this scenario by March 10th, 2018.
+
 **VSTS**
 
 Azure AD users - you can connect your existing Azure AD tenant to VSTS, even if you started with a Microsoft account for your VSTS instance.
@@ -40,15 +43,26 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 While the steps to connect your VSTS account to Azure AD are consistent, it’s important to understand where you're starting from before connecting your VSTS account to your target Azure AD tenant.
 
-One of the following scenarios likely applies to your situation:
+One of the following scenarios likely applies to your situation. For example, "yourname"@fabrikam.com is replaced with jamalhartnett@fabrikam.com:
+
+
+|You use an MSA for VSTS  |and you want to connect to the target Azure AD |So do this  |
+|---------|---------|---------|
+|jamalhartnett@fabrikam.com    |  using the SAME ID jamalhartnett@fabrikam.com       |   Follow this document      |
+|jamalhartnett@fabrikam.com    |  using a DIFFERENT ID jamalh@fabrikam.com       |    [Create a new support ticket](https://www.visualstudio.com/team-services/support)      |
+|jamal@outlook.com   |   replacing with ID jamal@fabrikam.com      |  [Create a new support ticket](https://www.visualstudio.com/team-services/support)        |  
+
+>[!Note
+> When you're creating your new support ticket, use the >following:
+>Problem type: Configuring Team Services, Category: Configuring with Azure Active Directory]
 
 - I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
   - This document is for you!
-- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalh@fabrikam.com.
-    - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
+- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamal.hartnett@fabrikam.com.
+    - Work with CSS to help with the migration by [creating a new support ticket]()
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
-- I use a Microsoft account, "yourname"@outlook.com (for example, jamal@outlook.com), and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
+- I use a Microsoft account, jamal@outlook.com, and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
     - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
       - Problem Type: Configuring Team Services
       - Category: Configuring with Azure Active Directory
@@ -143,7 +157,6 @@ If the emails are the same, then follow these steps, otherwise continue on to Co
 6. Your account is now connected to your organization's directory.
 
 7. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
-
 8. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change
