@@ -9,6 +9,7 @@ ms.author: alewis
 ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your Xcode app
 
