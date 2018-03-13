@@ -10,9 +10,14 @@ ms.author: amullans
 ms.date: 01/20/2018
 ---
 
+[//]: # (monikerRange: '>= tfs-2018') 
+
 # Use packages from nuget.org
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018**
+
+> [!NOTE]
+> NuGet upstream sources are only available for **VSTS and TFS 2018 Update 2 and newer**.
 
 The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Package Management feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
 
