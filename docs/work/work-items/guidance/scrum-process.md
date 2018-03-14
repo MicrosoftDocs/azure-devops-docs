@@ -104,7 +104,7 @@ As updates are made to the Scrum process template, the version number is updated
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | TFS version | Scrum process name | Major version |
-> |-------------|-----------------------|
+> |-------------|-------------------|--------------|
 > | TFS 2018 | Scrum | 16 |
 > | TFS 2017 | Scrum | 15 |
 > | TFS 2015 | Scrum | 3 |

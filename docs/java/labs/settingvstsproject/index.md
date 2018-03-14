@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 This exercise will walk you through the steps to creating your Visual Studio Team Services (VSTS) account and create a new project. 
 
@@ -34,7 +35,7 @@ In this task you will generate a personal access token for yourself. PATs essent
 > [!div class="mx-imgBorder"]
 > ![The location of your account's Security settings](../_img/settingvstsproject/click-security.png)
 
-1. On the Personal access tokens page, click **Add**. Enter “java” (or whatever you want) for the Description. Scroll to the bottom of the page and click **Create token**.
+1. On the Personal access tokens page, click **Add**. Enter "java" (or whatever you want) for the Description. Scroll to the bottom of the page and click **Create token**.
 
 1. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 

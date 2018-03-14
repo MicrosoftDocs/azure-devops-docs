@@ -100,14 +100,14 @@ As updates are made to the Agile process template, the version number is updated
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | TFS version | Agile process name | Major version |
-> |-------------|-----------------------|
+> |-------------|-------------------|--------------|
 > | TFS 2018 | Agile | 16 |
 > | TFS 2017 | Agile | 15 |
 > | TFS 2015 | Agile | 7 |
 > | TFS 2013 | MSF for Agile Software Development | 7 |
 > | TFS 2012 | MSF for Agile Software Development 6.0  | 6 |
 > | TFS 2008 | MSF for Agile Software Development - v4.*n* |   |
-> 
+
 
 For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
 
