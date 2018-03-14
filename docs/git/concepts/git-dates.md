@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: robrodbe
-ms.date: 01/04/2018
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # How dates work in Git
 

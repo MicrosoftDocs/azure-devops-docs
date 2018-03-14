@@ -1,12 +1,13 @@
 ---
-title: Scrum process template for VSTS & TFS  
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server  
+title: Scrum process template
+
+description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services or Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 03/12/2018
 ---
 
 
@@ -59,7 +60,9 @@ To list work items for a current sprint or the product backlog, use the shared q
 
 You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../track/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md). </blockquote>Â Â 
+  
+> [!TIP]    
+> Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../track/query-by-date-or-current-iteration.md).
 
 [!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
 
@@ -93,6 +96,24 @@ To access this dashboard, your team project must have a [project portal configur
 ## Related notes 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]
+
+
+### Scrum process versions  
+
+As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+
+> [!div class="mx-tdCol2BreakAll"]  
+> | TFS version | Scrum process name | Major version |
+> |-------------|-----------------------|
+> | TFS 2018 | Scrum | 16 |
+> | TFS 2017 | Scrum | 15 |
+> | TFS 2015 | Scrum | 3 |
+> | TFS 2013 | Microsoft Visual Studio Scrum | 7 |
+> | TFS 2012 | Microsoft Visual Studio Scrum 2.0  | 2 | 
+ 
+
+For a summary of updates made to process templates, see [Changes made to process templates](changes-to-process-templates.md).
+
 
 <a id="predefined-queries" />
 ### Scrum process predefined queries

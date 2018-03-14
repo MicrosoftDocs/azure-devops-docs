@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/06/2018
+ms.date: 03/13/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -40,18 +40,18 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 While the steps to connect your VSTS account to Azure AD are consistent, it’s important to understand where you're starting from before connecting your VSTS account to your target Azure AD tenant.
 
-One of the following scenarios likely applies to your situation:
+One of the following scenarios likely applies to your situation. For example, "yourname"@fabrikam.com is replaced with jamalhartnett@fabrikam.com:
 
-- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalhartnett@fabrikam.com.
-  - This document is for you!
-- I use a Microsoft account, "yourname"@fabrikam.com (for example, jamalhartnett@fabrikam.com), for VSTS and I want to connect to the target Azure AD tenant and replace with jamalh@fabrikam.com.
-    - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
-      - Problem Type: Configuring Team Services
-      - Category: Configuring with Azure Active Directory
-- I use a Microsoft account, "yourname"@outlook.com (for example, jamal@outlook.com), and I want to connect to the target Azure AD tenant and replace with jamal@fabrikam.com.
-    - Work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support)
-      - Problem Type: Configuring Team Services
-      - Category: Configuring with Azure Active Directory
+
+|You use an MSA for VSTS  |and you want to connect to the target Azure AD |So do this  |
+|---------|---------|---------|
+|jamalhartnett@fabrikam.com    |  using the SAME ID jamalhartnett@fabrikam.com       |   Follow this document      |
+|jamalhartnett@fabrikam.com    |  using a DIFFERENT ID jamalh@fabrikam.com       |    [Create a new support ticket](https://www.visualstudio.com/team-services/support)      |
+|jamal@outlook.com   |   replacing with different tenant ID jamal@fabrikam.com      |  [Create a new support ticket](https://www.visualstudio.com/team-services/support)        |  
+
+>[!Note]
+> When you're creating your new support ticket, use the >following:
+>Problem type: Configuring Team Services, Category: Configuring with Azure Active Directory]
 
 ## Overview of the connection process
 
@@ -72,21 +72,21 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
 2. Compare the VSTS list of emails against the list in your target Azure AD tenant.
 
-    a. If any users exist on the VSTS Users page, but are missing from your target Azure AD tenant, [add them as B2B guests](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-iw-add-users).
+    - If any users exist on the VSTS Users page, but are missing from your target Azure AD tenant, [add them as B2B guests](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-iw-add-users).
 
-    ![Add guest user to Azure AD](_img/connect-account-to-aad/Add-Guest-User-AAD.PNG)
+      ![Add guest user to Azure AD](_img/connect-account-to-aad/Add-Guest-User-AAD.PNG)
 
-     These guests can be external to your organization (User@othercompany.com) or existing Microsoft account (MSA) users (user@outlook.com or user@gmail.com).
+       These guests can be external to your organization (User@othercompany.com) or existing Microsoft account (MSA) users (user@outlook.com or user@gmail.com).
 
-    b. If you are notified that you do not have permissions to invite users, verify that your user account is authorized to invite external users under User Settings.
+    - If you are notified that you do not have permissions to invite users, verify that your user account is authorized to invite external users under User Settings.
 
-    ![User account user settings](_img/connect-account-to-aad/external-user-settings-aad.PNG)
+      ![User account user settings](_img/connect-account-to-aad/external-user-settings-aad.PNG)
 
-     If you have recently modified these settings or assigned the Guest Inviter role to a user, there might be a 15- 60-minute delay before the changes take effect.
+       If you have recently modified these settings or assigned the Guest Inviter role to a user, there might be a 15- 60-minute delay before the changes take effect.
 
-    c. If no paid Azure AD license exists in the tenant, every invited user gets the rights that the Azure AD Free edition offers.
+    - If no paid Azure AD license exists in the tenant, every invited user gets the rights that the Azure AD Free edition offers.
 
-    d. If users exist, but their email addresses are different from their Microsoft accounts, work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support).
+    - If users exist, but their email addresses are different from their Microsoft accounts, work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support).
 
 ## Inform users of the upcoming change
 
@@ -99,20 +99,20 @@ While there is no downtime, users will be affected by this change, so it's best 
     - Exists in the target Azure AD tenant as a guest or member.
     - Is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
     - Is not using the Microsoft account identity that matches the Azure AD identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure AD identity you will use after connecting is also JamalHarnett@fabrikam.com.
-    
-If the emails are the same, then follow these steps, otherwise continue on to Connect your VSTS account to your organization directory.
 
-   a. [Create a new MSA](https://signup.live.com/), for example, Fabrikam@outlook.com. This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
+   If the emails are the same, then follow these steps, otherwise continue on to Connect your VSTS account to your organization directory.
 
-   b. Go to the **Security** page in VSTS, add the new user as an owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca) and sign into the VSTS account and assign a license (Basic is acceptable).
+2. [Create a new MSA](https://signup.live.com/), for example, Fabrikam@outlook.com. This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
 
-   c. [Sign in to the Azure portal](https://portal.azure.com/) and add the new user as a B2B guest of the target Azure AD tenant and an email invitation sent to the new account.
+3. Go to the **Security** page in VSTS, add the new user as an owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca) and sign into the VSTS account and assign a license (Basic is acceptable).
 
-   d. Go to the email invitation and choose the **Call-To-Action** in each email. It will require you to choose **Next/Continue** on a few screens to fully register the new user.
+4. [Sign in to the Azure portal](https://portal.azure.com/) and add the new user as a B2B guest of the target Azure AD tenant and an email invitation sent to the new account.
 
-   e. Go to **Settings** in VSTS and change the owner of the account to the new user.
+5. Go to the email invitation and choose the **Call-To-Action** in each email. It will require you to choose **Next/Continue** on a few screens to fully register the new user.
+
+6. Go to **Settings** in VSTS and change the owner of the account to the new user.
    
-   f. Use this new user to complete the migration
+7. Use this new user to complete the migration.
 
 ## Connect your VSTS account to your organization directory
 
@@ -143,7 +143,6 @@ If the emails are the same, then follow these steps, otherwise continue on to Co
 6. Your account is now connected to your organization's directory.
 
 7. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
-
 8. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change

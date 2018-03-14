@@ -14,7 +14,7 @@ ms.date: 01/24/2018
 
 # Install and license Package Management
 
-**VSTS | TFS 2017**
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 Package Management is an *extension* to VSTS and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
 
