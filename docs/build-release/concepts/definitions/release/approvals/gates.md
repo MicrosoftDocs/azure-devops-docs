@@ -64,18 +64,17 @@ that contains gates, the deployment stops until the health signals from all the 
 
    ![Setting the arguments for a gate function](_img/gated-releases-03.png)
 
-1.  Set the options that apply to all the gates you added:
+1.  Set the evaluation options that apply to all the gates you added:
 
-   * **Timeout**. The maximum evaluation period for all gates. 
-     The deployment will be rejected if the timeout is reached before
-     all gates succeed during the same sampling interval. 
-
-   * **Sampling interval**. The time interval between each evaluation of 
+   * **Time between re-evaluation of gates**. The time interval between each evaluation of 
      all the gates. At each sampling interval, new requests are sent concurrently to each gate
      for fresh results. The sampling interval must be greater than the longest
      typical response time of any configured gate to allow time for all responses to be received.     
 
-   * **Execution order**. Select the required order of execution for gates and approvals if you have configured both.
+   * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
+     The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
+
+   * **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both.
      For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
      This saves the system from evaluating the gate functions if the release is rejected by the user. 
      For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
