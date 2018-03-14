@@ -7,10 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Use SonarQube with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) for Java development
-
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
 
 Configure a VSTS or TFS Maven or Gradle build task to use SonarQube for code project and technical debt analysis.
 
