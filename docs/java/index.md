@@ -9,6 +9,7 @@ ms.author: douge
 ms.date: 01/22/2018
 layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Working with Visual Studio Team Services (VSTS) and Java
 
