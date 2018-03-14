@@ -94,7 +94,18 @@ app to a different slot using the **Azure App Service Manage** task. See
 You can use [task phases](../../build-release/concepts/process/phases.md)
 and the [**Manual Intervention**](../../build-release/tasks/utility/manual-intervention.md) task
 in your release definition to pause a deployment; for example, to examine test results
-after the load tests have run and before the app is swapped from staging to production. 
+after the load tests have run and before the app is swapped from staging to production.
+
+<a name="pass-params"></a>
+### Q: How do I pass parameters to my test code from a build or release pipeline?
+
+**A**: Use a [runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+to pass values as parameters to your test code. For example, in a release that contains
+several environments, you can pass the appropriate app URL to each the test tasks in each one.
+The runsettings file and matching parameters must be specified in the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.  
+
+![Passing parameters to test code in a build or release pipeline](_img/pass-params-to-test-code.png)
 
 ### Q: Where can I find details about configuring test agents?
 
@@ -211,7 +222,7 @@ on-demand test execution.
 **A:** If you are running UI tests such as
 [coded UI](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code)
 or [Selenium](continuous-test-selenium.md) tests,
-the agent on the test machines must be running in interactive mode,
+the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser. 
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 

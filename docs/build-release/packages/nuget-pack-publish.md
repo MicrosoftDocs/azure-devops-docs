@@ -10,6 +10,8 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
+[//]: # (monikerRange: '>= tfs-2017')
+
 # Publish NuGet packages from Team Build to Package Management
 
 **VSTS | TFS 2018 | TFS 2017**

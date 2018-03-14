@@ -197,17 +197,23 @@ your software projects. These include:
 
 * [Dashboards](../report/dashboards/dashboards.md) and lightweight 
 [charts](../report/dashboards/charts.md), available in both TFS and VSTS. These are 
-very easy to set up and use, but are also fairly limited in what they can do.
+very easy to set up and use.
 
-The following reports and dashboards&mdash;which are more complicated to use, but also more powerful&mdash;are only available in TFS: 
+In addition, with VSTS you have access to the following services:
+* [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets-vsts.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
+* [PowerBI integration](../report/powerbi/overview.md) which supports getting Analytics data into Power Bi reports, providing a nice combination of simplicity and power. 
+* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire VSTS account.
+
+We plan to make these services available in TFS in a future release.
+
+The following reports and dashboards are only available in TFS: 
 - [Excel reports](../report/excel/excel-reports.md) 
 - [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
 - [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md) 
 
 And, available today only in VSTS:
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.. We plan to make it available in TFS in a future release.
-
+* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related notes 
 - [Key concepts](concepts.md)  
