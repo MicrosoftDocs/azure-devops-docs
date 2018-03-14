@@ -86,7 +86,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
   To manually select a Xamarin SDK version to use on the **Hosted macOS Preview** agent, before your Xamarin build step, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
 
-  `/bin/bash –c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
+  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
   Mono versions associated with Xamarin SDK versions on the **Hosted macOS Preview** agent can be found [here](https://docs.microsoft.com/en-us/mobile-center/build/software#xamarin).
 
@@ -96,7 +96,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
   If you use the [Xcode task](../../tasks/build/xcode.md) included with VSTS and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS Preview** agent, before your `xcodebuild` build step, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
 
-  `/bin/bash –c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
+  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
   Xcode versions on the **Hosted macOS Preview** agent can be found [here](https://docs.microsoft.com/en-us/mobile-center/build/software#xcode).
 
