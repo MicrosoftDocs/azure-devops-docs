@@ -7,6 +7,7 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Create a Docker build for Java in VSTS and publish it to ACR
 
