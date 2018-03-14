@@ -7,10 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Use PMD, Checkstyle, and FindBugs with VSTS and TFS for Java development
-
-#### VSTS | TFS 2018 | TFS 2017 
 
 Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.net/), and [FindBugs](http://findbugs.sourceforge.net/) standalone static analysis during a Maven or Gradle build using TFS 2017+ or VSTS. 
 
