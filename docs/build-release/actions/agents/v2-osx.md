@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
+
 # Deploy an agent on macOS
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
@@ -33,6 +35,8 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 ### VSTS and TFS 2017 and newer
 
 <ol>
@@ -50,6 +54,10 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Follow the instructions on the page.</li>
 </ol>
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2015")
+
 ### TFS 2015
 
 0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
@@ -61,13 +69,27 @@ If you're building from a Subversion repo, you must install the Subversion clien
 ./config.sh
  ```
 
+[//]: # (::: moniker-end)
+
 ### Server URL
 
-* VSTS: `https://{your-account}.visualstudio.com`
+[//]: # (::: moniker range="vsts")
 
-* TFS 2017 and newer: `https://{your_server}/tfs`
+VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2015: `http://{your_server}:8080/tfs`
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2017")
+
+TFS 2017 and newer: `https://{your_server}/tfs`
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2015")
+
+TFS 2015: `http://{your_server}:8080/tfs`
+
+[//]: # (::: moniker-end)
 
 ### Authentication type
 
