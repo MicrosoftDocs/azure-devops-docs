@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
-ms.date: 01/26/2018
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Configure a branch policy for an external service 
 
