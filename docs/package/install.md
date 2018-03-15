@@ -22,6 +22,9 @@ Package Management is an *extension* to VSTS and TFS.  This means you'll need th
 
 ## Install Package Management in VSTS
 
+Package Management is an extension that must be installed from the Marketplace. 
+
+### Install Package Management extension
 1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
 1. Select **Get**
@@ -34,20 +37,6 @@ Package Management is an *extension* to VSTS and TFS.  This means you'll need th
 
 1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
-   ![Install dialog](_img/package-hub.png)
-
-<a name="symbol-server"></a>
-
-## Enable Symbol Server in VSTS
-
-After you've installed Package Management using the instructions in the previous section, you can enable the Symbol Server preview from the preview features panel.
-
-1. Select your profile picture in the top-right
-1. Select **Preview features**
-1. In the dropdown, select **for this account [account-name]**
-1. Toggle the **Symbol server** toggle to **On**
-1. Close the panel
-
 [//]: # (::: moniker-end)
 
 [//]: # (::: moniker range=">= tfs-2017 < vsts") 
@@ -58,54 +47,18 @@ Package Management is installed by default for TFS 2017 customers.  You must upg
 
 [//]: # (::: moniker-end)
 
-[//]: # (::: moniker range=">= tfs-2017") 
-
-## Buying Package Management
-
-After your 30-day trial of Package Management is over, you'll either need Package Management assigned to you or have a VS Enterprise subscription to view, upload, and download packages. In VSTS, you can assign 5 users Package Management for free.  In TFS, all Package Management licenses must be purchased in the Marketplace.  
-
-To buy additional licenses of Package Management:
-
-1. If you are using VSTS, navigate to the [Package Management page in the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-1. If you are using TFS, navigate to the marketplace using the **Browse Marketplace** link in the top right-hand corner of any page in your account:
-
-   ![Browse marketplace](_img/browse-marketplace.png)
-
-   Then navigate to the Package Management page.
-
-1. On the Marketplace Package Management page, select **Buy**. In the dialog that appears, select your account then select **Continue.**
-
-   ![Buy dialog](_img/buy-license.png)
-
-1. If you don't have an Azure subscription, select **Create new Azure subscription** and follow the process on the following page.
-   When you're done, select **Back to Visual Studio Marketplace**.
-
-   ![Back to Marketplace button](_img/back-to-marketplace.png)
-
-1. Select the number of users and select **Continue.** 
-
-   ![Select the number of users](_img/select-users.png)
-
-1. Select **Confirm** and then **Assign to users.**
-
-For further help on the purchasing process, check out the [documentation on Marketplace](/vsts/marketplace/install-vsts-extension).
-
-[//]: # (::: moniker-end)
-
 [//]: # (::: moniker range="vsts") 
 
 ## Assign Package Management in VSTS
 
-To assign your five free licenses of Package Management and any additional licenses that you've purchased:
+If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
+
+If you selected **Buy** or **Get it free**, you will need to assign your licenses by following the instructions below:
 
 1. Go to your account, select the **Users** hub, and select **Package Management**.
-
-   ![Users hub](_img/users-hub.png)
-
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
-   
-   >If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license.
+
+   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you’ve been assigned the “Visual Studio Enterprise” access level.
 
 [//]: # (::: moniker-end)
 
