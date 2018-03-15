@@ -74,8 +74,6 @@ Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powersh
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/26/2016
+ms.date: 3/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Deploy an agent on Windows
 
@@ -50,21 +51,29 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Follow the instructions on the page.</li>
 </ol>
 
-### Server URL
+[//]: # (::: moniker range="vsts")
+### Server URL on VSTS
 
-* VSTS: `https://{your-account}.visualstudio.com`
+`https://{your-account}.visualstudio.com`
+[//]: # (::: moniker-end)
 
-* TFS 2017 and newer: `https://{your_server}/tfs`
+[//]: # (::: moniker range=">= tfs-2017 < vsts")
+### Server URL on TFS 2017 and newer
 
-* TFS 2015: `http://{your-server}:8080/tfs`
+`https://{your_server}/tfs`
+[//]: # (::: moniker-end)
 
 ### Authentication type
 
+[//]: # (::: moniker range="vsts")
 #### VSTS
 
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
-#### TFS
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range=">= tfs-2017 < vsts")
+#### TFS 2017 and newer
 
 > [!IMPORTANT]
 > 
@@ -82,6 +91,8 @@ When you configure your agent to connect to TFS, you've got the following option
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
+
+[//]: # (::: moniker-end)
 
 ## Choose interactive or service mode
 
@@ -124,6 +135,17 @@ The help provides information on authentication alternatives and unattended conf
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+[//]: # (::: moniker range="tfs-2017")
+
+### What version of the agent runs with TFS 2017?
+
+| TFS version | Agent version |
+|-|-|
+| 2017 RTM | 2.105.7 |
+| 2017.3 | 2.112.0 |
+
+[//]: # (::: moniker-end)
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
