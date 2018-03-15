@@ -50,7 +50,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
-
