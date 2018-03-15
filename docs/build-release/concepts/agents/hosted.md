@@ -37,7 +37,7 @@ We update the software on the hosted agents once every month.
 
 * [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
 * [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile).
-* [Inventory of software currently installed on the Hosted macOS Preview agent](https://docs.microsoft.com/en-us/mobile-center/build/software).
+* [Inventory of software currently installed on the Hosted macOS Preview agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
 * [Inventory of software currently installed on the Hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 
 ## Capabilities and limitations
@@ -88,7 +88,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS Preview** agent can be found [here](https://docs.microsoft.com/en-us/mobile-center/build/software#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS Preview** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -98,7 +98,7 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS Preview** agent can be found [here](https://docs.microsoft.com/en-us/mobile-center/build/software#xcode).
+  Xcode versions on the **Hosted macOS Preview** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
 * **Mono**
 

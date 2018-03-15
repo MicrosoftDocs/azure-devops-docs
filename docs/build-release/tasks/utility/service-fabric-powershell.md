@@ -63,8 +63,6 @@ Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -5,10 +5,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
-ms.author: alewis
+ms.author: chrispat
 ms.reviewer: chrispat
 ms.date: 08/04/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Troubleshooting build
 

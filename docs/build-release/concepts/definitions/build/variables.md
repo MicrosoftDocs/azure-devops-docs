@@ -6,7 +6,7 @@ ms.technology: vs-devops-build
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/13/2017
+ms.date: 03/15/2018
 ---
 
 # Build variables
@@ -785,6 +785,22 @@ You can pass environment variables of the build machine into build steps. For ex
             <td>
                 <p style="font-size:80%">
                     The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../../git/branch-policies.md#require-the-pull-request-to-build).)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size:80%">
+                    System.PullRequest.PullRequestNumber
+                </p>
+                <p style="font-size:80%">
+                    SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
+                </p>
+            </td>
+            <td style="font-size:80%">All</td>
+            <td>
+                <p style="font-size:80%">
+                    The number of the pull request that caused this build. This variable is populated for pull requests from GitHub which have a different pull request ID and pull request number.
                 </p>
             </td>
         </tr>
