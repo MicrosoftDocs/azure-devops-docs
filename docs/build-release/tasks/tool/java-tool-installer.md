@@ -69,6 +69,4 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
