@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: VSTS & TFS
-description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
+description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
@@ -27,7 +27,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > [!div class="mx-tdBreakAll"]  
 > |WIT definition  |Command line change  |
 > |-------------|----------|  
-> |- [Customize a pick list](add-modify-field.md#picklist)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Add a custom field](add-modify-field.md#add-custom-field)<br/>- [Change the field label on the form](add-modify-field.md#change-label)<br/>- [Add a custom control](add-modify-field.md#custom-control)<br/>- [Limit the Assigned To field list](add-modify-field.md#limit-account-names) |- [List fields](add-modify-field.md#list-fields)<br/>- [Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)<br/>- [Delete a field](add-modify-field.md#delete-field) (On-premises XML)<br/>- [Index a field](add-modify-field.md#index-field) (On-premises XML) | 
+> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](add-modify-field.md#list-fields)<br/>- [Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)<br/>- [Delete a field](add-modify-field.md#delete-field) (On-premises XML)<br/>- [Index a field](add-modify-field.md#index-field) (On-premises XML) | 
 
 
 
@@ -78,7 +78,7 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
  <DEFAULT from="value" value="False" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <HELPTEXT>Triage work item</HELPTEXT>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;� </FIELD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </FIELD>
 ```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
@@ -234,7 +234,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 	```
 	<Column PercentWidth="70">  
-	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (Título):" LabelPosition="Left" />  
+	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (TÃ­tulo):" LabelPosition="Left" />  
 	</Column>
 	```
 
@@ -255,6 +255,8 @@ Or, you can add a custom control which is available through the [Visual Studio M
 
 To add a custom control to the new web form, see [WebLayout and Control elements](reference/weblayout-xml-elements.md). 
 
+
+<!--- NOT A SUPPORTED FEATURE 
 <a id="limit-account-names">  </a>
 ## Limit the Assigned To field list of names
 
@@ -276,6 +278,7 @@ The most efficient way to apply security restrictions is to create custom groups
 
     By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.
 
+-->
 
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field (On-premises XML) 

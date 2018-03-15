@@ -1,5 +1,6 @@
 ---
-title: Hosted XML process model | TFS
+title: Hosted XML process model
+titleSuffix: VSTS 
 description: Guide to configuring and customizing work tracking features for the Hosted XML process model 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
