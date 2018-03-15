@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 12/15/2016
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 #  Rename a Git repository in your team project
 #### VSTS | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
