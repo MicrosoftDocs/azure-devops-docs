@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 03/03/2017
 ---
+[//]: # (monikerRange: '< vsts')
 
 # Configure TFS authentication for your private build and release agents
 
@@ -47,6 +48,8 @@ Personal access token (PAT) authentication is available in TFS 2015.3 and newer.
 
 ## Deploy your agent
 
+[//]: # (::: moniker range=">= tfs-2017")
+
 ### TFS 2017 and newer
 
 * [Windows agent v2](../../actions/agents/v2-windows.md)
@@ -55,6 +58,10 @@ Personal access token (PAT) authentication is available in TFS 2015.3 and newer.
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
 
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2015")
+
 ### TFS 2015
 
 * [Windows agent v1](../../actions/agents/v1-windows.md)
@@ -62,3 +69,5 @@ Personal access token (PAT) authentication is available in TFS 2015.3 and newer.
 * [Ubuntu 14.04 agent](../../actions/agents/v2-linux.md)
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
+
+[//]: # (::: moniker-end)
