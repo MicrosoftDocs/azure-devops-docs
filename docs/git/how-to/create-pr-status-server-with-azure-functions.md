@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: yohasna
-ms.date: 01/26/2018
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2018')
 
 # Use Azure Functions to create custom branch policies
 

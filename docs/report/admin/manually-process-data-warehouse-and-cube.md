@@ -1,12 +1,13 @@
 ---
-title: Manually process the data warehouse and analysis services cube  | TFS
-description: Manually process the TFS data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
+title: Manually process the data warehouse and analysis services cube
+titleSuffix: TFS
+description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 03/14/2018
 ---
 
 # Manually process the TFS data warehouse and analysis services cube
@@ -98,7 +99,33 @@ A value of **Idle** indicates that the synchronization job is currently not runn
 
 ## Process dimensions for expanded capacity
  
-You should run the **ProcessDimensionsForExpandedCapacity** web service when you receive the following error message: 
+You should run the **ProcessDimensionsForExpandedCapacity** web service when you receive one of the following error messages: 
+
+# [Work Item (dimWorkItem)](#tab/dim-work-item)
+
+```
+Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.
+
+Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'.
+
+You should run the ProcessDimensionsForExpandedCapacity web service when you receive the following error message:
+Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.
+Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'.
+Microsoft.TeamFoundation.Warehouse.WarehouseException: File system error: A string store or binary store with a compatibility level of '1050' is at the maximum file size of 4 gigabytes. To store additional strings, you can change the StringStoresCompatibilityLevel property of the associated dimension or distinct count measure to '1100' and reprocess. This option is only available on databases with a compatibility level of '1100' or higher.
+Physical file: \?\I:\OLAP\Data\Tfs_Analysis.0.db\vDimWorkItemOverlay.5.dim\7.WorkItemSK.asstore.
+``` 
+
+This service changes the StringStoresCompatibilityLevel to 1100 for the **Work Item** dimension and performs a full cube reprocess.
+
+1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
+
+2. Enter the name of the dimension. From the above error message, the dimension name is ```dimWorkItem```.  
+ 
+3. The service returns **True** when it successfully resets the value to 1100. 
+
+	Wait until the cube processing has succeeded.
+
+# [Version Control (dimFile)](#tab/dim-file)
 
 ```
 Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.  
@@ -110,18 +137,19 @@ Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurr
 Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'. 
 Microsoft.TeamFoundation.Warehouse.WarehouseException: File system error: A string store or binary store with a compatibility level of '1050' is at the maximum file size of 4 gigabytes. To store additional strings, you can change the StringStoresCompatibilityLevel property of the associated dimension or distinct count measure to '1100' and reprocess. This option is only available on databases with a compatibility level of '1100' or higher.
 Physical file: \\?\I:\OLAP\Data\Tfs_Analysis.0.db\vDimWorkItemOverlay.5.dim\7.WorkItemSK.asstore.
-  
-```  
+```
 
-This service changes the StringStoresCompatibilityLevel to 1100 for the **Version Control** File dimension and performs a full cube reprocess.
+This service changes the StringStoresCompatibilityLevel to 1100 for the **Version Control**  dimension and performs a full cube reprocess.
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
-2. Enter the name of the dimension. From the above error message, the dimension name is ```vDimWorkItemOverlay```.  
+2. Enter the name of the dimension. From the above error message, the dimension name is ```dimFile```.  
  
 3. The service returns **True** when it successfully resets the value to 1100. 
 
 	Wait until the cube processing has succeeded.
+
+--- 
 
 ## Related notes  
 You should process a database manually for one of the following reasons:
