@@ -121,8 +121,6 @@ or to suggest new features that you would like to see.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

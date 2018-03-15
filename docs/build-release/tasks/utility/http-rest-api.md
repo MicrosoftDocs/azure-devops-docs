@@ -63,11 +63,3 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 ```
 
 [//]: # (::: moniker-end)
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
