@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/23/2016
+ms.date: 03/14/2018
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Create a new Git branch
 
@@ -17,7 +18,7 @@ ms.date: 08/23/2016
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](tutorial/branches.md).   
 
 >[!IMPORTANT]
-> Users of previous TFS releases will not have the **Branches** tab in the **Code** view. Create a new branch in TFS from the **Code** view by selecting the drop-down next to the branch name and then selecting **New branch**.
+> Users of TFS 2015 and previous will not have the **Branches** tab in the **Code** view. When using those versions, you can reate a new branch in TFS from the **Code** view by selecting the drop-down next to the branch name and then selecting **New branch**.
 
 
 ## Create a new branch from the web 
