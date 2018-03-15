@@ -192,7 +192,7 @@ See the following resources for additional usage and customization information:
 
 <a id="person-name-field"></a>
 ## Change the pick list for a person-name field  
-To add values for fields associated with user accounts such as **Assigned To** add users to a TFS security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to TFS. These accounts are often synchronized with Active Directory. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). To limit the names of accounts in a list, see [Limit the number of names that appear in the Assigned To field](add-modify-field.md#limit-account-names). 
+To add values for fields associated with user accounts such as **Assigned To** add users to a TFS security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to TFS. These accounts are often synchronized with Active Directory. See [Set up groups for use in TFS deployments](../../security/add-ad-aad-built-in-security-groups.md). 
 
 ## Less common customizations   
 You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the team project.  

@@ -159,15 +159,6 @@ You can restrict access to work tracking objects in one of two ways:
 
 -   By [adding WITs to the Hidden Categories group](../work/customize/reference/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 -   [Set a condition field rule](../work/customize/reference/apply-rule-work-item-field.md), [a condition-based field rule](../work/customize/reference/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
--   By adding [a field rule to the workflow](../work/customize/reference/apply-rule-work-item-field.md) for the System.CreatedBy field, you can effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
-
-        <TRANSITION from=" " to="New">
-           <FIELDS>
-             <FIELD refname="System.CreatedBy">
-                <VALIDUSER for="Allowed Group" not="Disallowed Group" />
-             </FIELD>
-           </FIELDS>
-        </TRANSITION> 
 
 For more information about how to customize WITs, 
 see [Modify or add a custom work item type (WIT)](../work/customize/add-modify-wit.md).
