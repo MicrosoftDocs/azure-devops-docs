@@ -56,7 +56,7 @@ VSTS and TFS support a variety of endpoint types by default. Some of these are d
 * [SSH service endpoint](#sep-ssh)
 * [Subversion service endpoint](#sep-subversion)
 * [Team Foundation Server / VSTS service endpoint](#sep-tfsts)
-* [Visual Studio Mobile Center (App Center) service endpoint](#sep-vsmobile)
+* [Visual Studio App Center service endpoint](#sep-vsmobile)
 
 After you enter the parameters when creating a service endpoint, validate the
 connection. The validation link uses a REST call to the external service with
@@ -453,14 +453,14 @@ See also [Authenticate access with personal access tokens for VSTS and TFS](../.
 
 *****
 
-<h3 id="sep-vsmobile">Visual Studio Mobile Center (App Center) service endpoint</h3>
+<h3 id="sep-vsmobile">Visual Studio App Center service endpoint</h3>
 
 Defines and secures a connection to Visual Studio App Center.
 
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
-| API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/en-us/mobile-center/api-docs/). |
+| API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/en-us/appcenter/api-docs/). |
 
 ## Extensions for other endpoints
 
