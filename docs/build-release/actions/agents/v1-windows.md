@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
 ---
+[//]: # (monikerRange: 'tfs-2015')
+
 # Deploy an agent on Windows for TFS 2015
 
 **[VSTS](v2-windows.md) | [TFS 2018](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**

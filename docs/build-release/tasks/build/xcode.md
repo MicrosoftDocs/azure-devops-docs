@@ -270,6 +270,4 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
