@@ -5,15 +5,18 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
 ms.manager: douge
-ms.author: kaelli
+ms.author: alewis
 ms.date: 07/20/2017
 ms.topic: landing-page
 layout: LandingPage
 ---
+[//]: # (monikerRange: '>= tfs-2013')
+
+[//]: # (::: moniker range=">= tfs-2015")
 
 # Deploy to Azure
 
-Visual Studio Team Services (VSTS) is Microsoft's DevOps solution for Azure. Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether you are targeting app services, virtual machines, or containers in Azure, VSTS helps you set up a highly customizable continuous integration (CI) and continuous delivery (CD) pipeline. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app of your choice to Azure services.
+Visual Studio Team Services (VSTS in the cloud) and Team Foundation Services (TFS on-premises) are  Microsoft's DevOps solutions for Azure. Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether you are targeting app services, virtual machines, or containers in Azure, VSTS helps you set up a highly customizable continuous integration (CI) and continuous delivery (CD) pipeline. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app of your choice to Azure services.
 
 ## 5-Minute Quickstarts
 
@@ -46,3 +49,11 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is Continuous Delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
 - [Build and release in VSTS](../build-release/index.md)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="tfs-2013")
+
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../build-release/actions/migrate-from-xaml-builds.md).
+
+[//]: # (::: moniker-end)
