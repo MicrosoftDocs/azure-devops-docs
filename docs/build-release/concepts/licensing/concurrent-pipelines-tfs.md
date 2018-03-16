@@ -8,17 +8,19 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
+
 # Concurrent release pipelines in Team Foundation Server
 
 **[VSTS](concurrent-pipelines-ts.md) | TFS 2018 | TFS 2017**
 
-This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or later. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _concurrent pipeline_ gives you the ability to run a single release at a time in a team project collection. You can keep hundreds or even thousands of release definitions in your collection. But, to run more than one release at a time, you need additional concurrent pipelines.
 
 One free concurrent pipeline is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional concurrent pipeline. You can buy additional private pipelines from the Visual Studio Marketplace.
 
-> Do I need concurrent pipelines in TFS 2015 or TFS 2013? Short answer: no. [More details](#tfs_before_2017)
+> Do I need concurrent pipelines in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
 
 ## How a concurrent pipeline is consumed
 
@@ -114,8 +116,6 @@ No, on TFS you don't need concurrent pipelines to run builds. You can run as man
 No.
 
 In TFS 2015, so long as your users have a TFS CAL, they can use release management for no additional charge in trial mode. We called it "trial mode" to indicate that we would eventually charge for release management. Despite this label, we fully support release management in TFS 2015.
-
-In TFS 2013 there is no change in the licensing of release management features.
 
 ### How is release management licensed in VSTS?
 
