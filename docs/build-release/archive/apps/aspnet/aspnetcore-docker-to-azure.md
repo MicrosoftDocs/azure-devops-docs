@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
