@@ -5,8 +5,8 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
-ms.author: kaelli
-ms.reviewer: dastahel
+ms.author: alewis
+ms.reviewer: vijayma
 ms.date: 02/19/2018
 ms.topic: landing-page
 layout: LandingPage
