@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 01/03/2017
 ---
+[//]: # (monikerRange: 'tfs-2018 || vsts')
 
 # New Build Editor
 

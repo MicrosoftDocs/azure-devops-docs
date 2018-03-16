@@ -15,6 +15,8 @@ ms.date: 06/24/2017
 ms.author: alewis
 ms.custom: mvc
 ---
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 # Implement a CI/CD process to build and deploy your ASP.NET Core app to Azure
 
 VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
