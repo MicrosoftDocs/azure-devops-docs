@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 11/13/2017
 ---
+[//]: # (monikerRange: 'vsts')
+
 
 # Hosted agents
 

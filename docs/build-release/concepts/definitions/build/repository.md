@@ -8,17 +8,13 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 11/05/2017
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build definition source repositories
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
-[//]: # (::: moniker range=">= tfs-2017")
-
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
-
-[//]: # (::: moniker-end)
 
 [//]: # (TODO: confirm 2018 was version of multiple phases)
 
@@ -449,14 +445,6 @@ Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
-
-[//]: # (::: moniker-end)
-
-[//]: # (::: moniker range="tfs-2013")
-
-### Where is the guidance for TFS 2013?
-
-[Work with build workspaces (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)
 
 [//]: # (::: moniker-end)
 
