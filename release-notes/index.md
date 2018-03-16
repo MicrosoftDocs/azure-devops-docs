@@ -2713,7 +2713,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build your projects hosted in GitHub</td>
-            <td style="background:rgb(232, 232, 232);">N/A</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
         </tr>
         <tr>
             <td>New VSTS integrations</td>
