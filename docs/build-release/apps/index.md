@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/22/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build and deploy your app
 

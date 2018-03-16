@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/12/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Run Git commands in a script
 

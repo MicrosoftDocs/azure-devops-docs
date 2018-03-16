@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017
 ---
+[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
