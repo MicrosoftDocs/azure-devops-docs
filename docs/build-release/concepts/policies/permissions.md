@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 02/12/18
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build and release permissions and roles (Security)
 
@@ -19,7 +20,6 @@ To support security of your build and release operations, you can add users to a
 This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](../../set-permissions.md).
 
 For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../../security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../../security/about-security-roles.md).
-
 
 ## Default permissions assigned to built-in security groups
 
@@ -51,7 +51,7 @@ To set or override the permissions for a specific build definition, choose **Sec
 The following permissions are defined in Build. All of these can be set at both the levels.
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description |
 > |------------|-------------|
 > | **Administer build permissions** | Can change any of the other permissions listed here. |
@@ -116,7 +116,7 @@ from the ellipses (**...**) on an environment in the release definition editor.
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release definition, or environment level.
 
-> [!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
 > | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |
@@ -150,7 +150,7 @@ level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | 
 > |------------|-------------| 
 > | **Administer task group permissions** | Can add and remove users or groups to task group security. |
