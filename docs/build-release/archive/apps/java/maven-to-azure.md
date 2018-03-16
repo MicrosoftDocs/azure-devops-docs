@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
 ---
+[//]: # (monikerRange: 'tfs-2017')
 
 # Build and Deploy your Java app to an Azure web app
 
