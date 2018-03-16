@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
 ms.manager: douge
-ms.author: alewis
+ms.author: amullans
 ms.date: 08/10/2016
 ---
 
