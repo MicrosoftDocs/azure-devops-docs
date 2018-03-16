@@ -8,6 +8,8 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
 ---
+[//]: # (monikerRange: 'vsts')
+
 # Concurrent build and release pipelines in VSTS
 
 **VSTS | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
