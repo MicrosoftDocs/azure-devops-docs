@@ -43,10 +43,6 @@ We recommend checking "Enable Source Link support" in Options > Debugging > Gene
 
 If you choose to enable source server support, please consider the [security implications](https://docs.microsoft.com/en-us/visualstudio/debugger/source-server-security-alert) before doing so.
 
-## Portable PDB differences
+### Portable PDBs and Source Link
 
-If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), there are a few impacts to VSTS workflows.
-
-First, the VSTS **Index Sources and Publish Symbols** build task doesn't add source indexes to Portable PDBs because indexing is now done by the build. This is a design feature of Portable PDBs and .NET.
-
-Second, [Visual Studio Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like VSTS), which means that Source Link does not work if your Portable PDB contains links to VSTS repositories.
+If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like VSTS), and thus will not work.

@@ -9,6 +9,7 @@ ms.author: alewis
 ms.date: 12/20/2017
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your Universal Windows Platform app
 

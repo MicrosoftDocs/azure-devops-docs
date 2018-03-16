@@ -6,8 +6,9 @@ ms.technology: vs-devops-build
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
+ms.date: 3/15/2018
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build definition history
 
@@ -24,9 +25,17 @@ ms.date: 08/04/2016
 
 From the **History** tab you can see a list of changes that includes who made the change and when the change occurred. 
 
-**VSTS:** To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Definition**.
+[//]: # (::: moniker range=">= tfs-2017")
+
+**VSTS, TFS 2017.3, and newer:** To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Definition**.
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="<= tfs-2017")
 
 **Team Foundation Server (TFS) 2017.1 and older:** After you've viewed the history, if you want details about a change, select it and then choose **Diff**. If you want to roll back to an earlier version, select it, and then click **Rollback**.
+
+[//]: # (::: moniker-end)
 
 ## Q&A 
 

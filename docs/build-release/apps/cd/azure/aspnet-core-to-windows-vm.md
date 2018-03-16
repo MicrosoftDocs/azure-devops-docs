@@ -3,8 +3,8 @@ title: Deploy your ASP.NET Core app to a Windows VM | VSTS Quickstart
 description: Set up a CI build for your ASP.NET Core app, and then a CD release an to Azure Windows VM
 services: vsts
 documentationcenter: ''
-author: alewis
-manager: douge
+ms.author: alewis
+ms.manager: douge
 editor: ''
 
 ms.assetid: E13DEB83-A128-4704-A051-8465AD39B5AE
@@ -15,6 +15,7 @@ ms.workload: ''
 ms.date: 12/20/2017
 ms.custom: mvc
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Deploy your ASP.NET Core app to a Windows virtual machine
 
