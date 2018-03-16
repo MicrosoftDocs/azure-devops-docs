@@ -9,6 +9,7 @@ ms.author: alewis
 ms.date: 02/16/2018
 ms.topic: get-started-article
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build your Visual C++ app
 

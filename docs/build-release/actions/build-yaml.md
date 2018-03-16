@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/07/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # How to use YAML builds
 
