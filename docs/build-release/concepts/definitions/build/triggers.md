@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
 ---
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Build definition triggers
 
@@ -46,13 +47,21 @@ If your Git repo is in VSTS or TFS, you can also specify path filters to reduce 
 
 For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
 
-**VSTS**
+[//]: # (::: moniker range=">= tfs-2017")
+
+**VSTS, TFS 2017.3 and newer**
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="<= tfs-2017")
 
 **TFS 2017.1 and older versions**
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches.png)
+
+[//]: # (::: moniker-end)
 
 ### TFVC Include
 
@@ -73,24 +82,39 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ### Example: Nightly build of Git repo in multiple time zones
 
-**VSTS**
+[//]: # (::: moniker range=">= tfs-2017")
+
+**VSTS, TFS 2017.3 and newer versions**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="<= tfs-2017")
 
 **TFS 2017.1 and older versions**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
+[//]: # (::: moniker-end)
 
 ### Example: Nightly build with different frequencies
 
-**VSTS**
+[//]: # (::: moniker range=">= tfs-2017")
+
+**VSTS, TFS 2017.3 and newer versions**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+
+[//]: # (::: moniker-end)
+
+[//]: # (::: moniker range="<= tfs-2017")
 
 **TFS 2017.1 and older versions**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies.png)
+
+[//]: # (::: moniker-end)
 
 <h2 id="gated">TFVC gated check-in</h2>
 
@@ -134,6 +158,8 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 If your code is in a Git repo on VSTS or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../../../git/branch-policies.md). This option is not available for GitHub repos.
 
+[//]: # (::: moniker range="vsts")
+
 ### My build didn't run. What happened?
 
 If your build is in VSTS, then at least one of your users must sign in regularly for CI and scheduled builds to run. Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time.
@@ -143,6 +169,8 @@ For example, while your account is dormant:
  * A nightly build of code in your VSTS account will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
+
+[//]: # (::: moniker-end)
 
 ### Can I chain builds so that one build triggers another?
 
