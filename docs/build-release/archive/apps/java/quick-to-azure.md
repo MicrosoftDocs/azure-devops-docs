@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 06/27/2017
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Implement a CI/CD process to build and deploy your Java app to Azure
 

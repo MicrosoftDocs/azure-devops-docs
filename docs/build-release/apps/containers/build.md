@@ -9,6 +9,7 @@ ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 02/20/2018
 ---
+[//]: # (monikerRange: '>= tfs-2017')
 
 # Build and push a Docker image
 
