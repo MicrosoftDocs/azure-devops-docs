@@ -18,7 +18,7 @@ ms.date: 03/17/2018
 ms.author: mlearned
 ms.custom: mvc
 ---
-[//]: # (monikerRange: '>= tfs-2012')
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Tutorial:  Integrate your Jenkins CI jobs with VSTS DevOps
 
