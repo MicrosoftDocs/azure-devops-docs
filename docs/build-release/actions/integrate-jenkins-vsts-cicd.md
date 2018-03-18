@@ -6,16 +6,19 @@ manager: douge
 editor: 
 tags: 
 
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-build
 ms.assetid: 
 ms.service: 
 ms.devlang: na
 ms.topic: tutorial
 ms.tgt_pltfrm: 
 ms.workload: 
-ms.date: 02/28/2018
+ms.date: 03/17/2018
 ms.author: mlearned
 ms.custom: mvc
 ---
+[//]: # (monikerRange: '>= tfs-2013')
 
 # Tutorial:  Integrate your Jenkins CI jobs with VSTS DevOps
 

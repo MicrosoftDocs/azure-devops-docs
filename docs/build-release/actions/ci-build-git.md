@@ -12,9 +12,10 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 02/07/2018
+ms.date: 03/17/2018
 ms.custom: mvc
 ---
+[//]: # (monikerRange: 'vsts')
 
 # Define a continuous integration (CI) build process for your Git repo
 
