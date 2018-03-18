@@ -198,6 +198,44 @@ If this number is in the high five-digits or even six-digits ranges then it coul
 ## Dealing with Process Errors
 See the separate [Process Templates](migration-processtemplates.md) page for details on resolving common process errors.
 
+## Dealing with Field Validation Errors
+
+#### <a name= "VS1640137"> </a> **VS1640137**
+In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
+
+Sometimes your local collection may have different type for a particular field. Presently [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
+```
+>[!Note]
+> If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
+
+> [!Important]
+> Using [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
+
+```cmdline
+witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName
+```
+
+#### <a name= "VS1640138" ></a> **VS1640138**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
+
+Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
+```
+
+#### <a name= "VS1640139" ></a> **VS1640139**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
+
+Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
+```
+
 ## Dealing with Import Errors
 Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will recieve a failure email if this happens. 
 
