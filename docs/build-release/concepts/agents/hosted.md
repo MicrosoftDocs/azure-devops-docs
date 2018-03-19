@@ -52,6 +52,8 @@ Hosted agents:
 
 * Provide 10 GB of storage.
 
+* Can run jobs for up to 60 minutes (30 on the free tier).
+
 Hosted agents do not offer:
 
 * The ability to log on.
