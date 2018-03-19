@@ -7,8 +7,9 @@ ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: PowerShell
 
@@ -29,7 +30,7 @@ DotNetFramework
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -48,7 +49,7 @@ DotNetFramework
     workingDirectory:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Examples
 

@@ -8,8 +8,9 @@ ms.manager: willys
 ms.author: willys
 author: willys
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Map TFVC actions to Git 
 

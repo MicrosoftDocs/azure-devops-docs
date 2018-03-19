@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: jepling
 ms.author: kangan
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Restore a deleted Git branch from the web portal
 

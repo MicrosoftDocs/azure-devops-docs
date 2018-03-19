@@ -7,8 +7,9 @@ ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/18/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # New User Guide
 

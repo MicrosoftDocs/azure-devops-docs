@@ -7,8 +7,9 @@ ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # DevOps overview for VSTS and TFS
 

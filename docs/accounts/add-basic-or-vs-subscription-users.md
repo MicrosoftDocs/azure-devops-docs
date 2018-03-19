@@ -7,8 +7,9 @@ ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.manager: douge
 ms.author: chcomley
 ms.date: 11/13/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Add more users with Basic features or Visual Studio subscriptions
 

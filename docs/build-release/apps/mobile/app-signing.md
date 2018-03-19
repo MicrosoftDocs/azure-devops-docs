@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/16/2018
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Sign your mobile app
 

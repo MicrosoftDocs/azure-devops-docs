@@ -7,8 +7,9 @@ ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2017"
 ---
-[//]: # (monikerRange: ">= tfs-2017")
+
 
 # Run tests in parallel
 

@@ -8,9 +8,10 @@ ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 
 # Restore the databases
 

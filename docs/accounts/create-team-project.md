@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Create a team project
 
@@ -31,7 +32,7 @@ If you have a team project already, and want to start coding an application proj
 
 ## From the web
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ### VSTS
 
@@ -50,9 +51,9 @@ If you have a team project already, and want to start coding an application proj
 
     ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015")
+::: moniker range=">= tfs-2015"
 
 ### TFS
 
@@ -75,7 +76,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
     ![Create team project dialog](_img/create-team-project/clickcreatetfs.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## From Team Explorer
 You can create a team project from Team Explorer after you have connected to an on-premises server. 

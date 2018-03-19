@@ -7,8 +7,9 @@ ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 <a name="ApplicationInsights"></a>
 # Get app performance data with your load tests

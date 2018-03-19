@@ -8,9 +8,10 @@ ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: douge
 ms.author: amullans
 ms.date: 02/27/2018
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Quickstart: Use npm to store JavaScript packages in VSTS or TFS
 

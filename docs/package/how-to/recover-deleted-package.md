@@ -6,8 +6,9 @@ ms.technology: vs-devops-package
 ms.assetid: bdc2bd6e-0869-48fd-9ae8-1ce7847fa007
 ms.author: elbatk
 ms.date: 02/12/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Recover a deleted package from the Recycle Bin in VSTS
 

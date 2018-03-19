@@ -6,8 +6,9 @@ ms.assetid: 7c1960ac-01d1-4376-9366-9c1ad5b9060e
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/22/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Buy and manage Visual Studio cloud subscriptions for your customers
 

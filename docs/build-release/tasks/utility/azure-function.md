@@ -7,8 +7,9 @@ ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Utility: Azure function
 
@@ -38,7 +39,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -57,4 +58,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
     successCriteria:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

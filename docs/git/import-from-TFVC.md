@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: atinb
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Import repositories from TFVC to Git
 #### VSTS | TFS 2018 | TFS 2017 Update 2

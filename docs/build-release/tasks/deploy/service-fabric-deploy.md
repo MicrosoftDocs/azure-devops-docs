@@ -7,8 +7,9 @@ ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Deploy: Service Fabric Application Deployment
 
@@ -37,7 +38,7 @@ deploy to a Service Fabric cluster.
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -84,7 +85,7 @@ Also see: [Update Service Fabric App Versions task](../utility/service-fabric-ve
 #   passwordEncrypted: True
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

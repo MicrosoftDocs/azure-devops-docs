@@ -7,8 +7,9 @@ ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.manager: douge
 ms.author: dastahel
 ms.date: 11/13/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Xcode Package iOS
 
@@ -80,7 +81,7 @@ Make sure to specify the variable values on the [variables tab](../../concepts/d
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -97,7 +98,7 @@ Make sure to specify the variable values on the [variables tab](../../concepts/d
 #   ipaPath: $(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -7,8 +7,9 @@ ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Use a PowerShell script to customize your build process
 

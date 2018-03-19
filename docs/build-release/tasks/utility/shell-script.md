@@ -7,8 +7,9 @@ ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Shell script
 
@@ -59,7 +60,7 @@ Select if you want this step to fail if any errors are written to the StandardEr
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -75,7 +76,7 @@ Select if you want this step to fail if any errors are written to the StandardEr
 #   failOnStandardError: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 

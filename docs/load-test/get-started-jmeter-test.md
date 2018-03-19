@@ -7,8 +7,9 @@ ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Run Apache JMeter load tests with VSTS
 

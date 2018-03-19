@@ -7,8 +7,9 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot access with Azure Active Directory (Azure AD)
 

@@ -7,8 +7,9 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
 ms.date: 09/07/2017 
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Connect to team projects
 
@@ -90,7 +91,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
 <a id="vs-2017-connect-dialog" />
 
@@ -110,9 +111,9 @@ Select the **Add Server** link to connect to a team project in Team Foundation S
 
 Select a team project from the list and select **Connect**.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 <a id="connect-dialog" /> 
 <a id="vs-2015-connect-dialog" /> 
@@ -146,11 +147,11 @@ To learn more about each page and the tasks you can perform, see [Work in Team E
    
 Your client remembers the set of connections you've configured. You can quickly switch from one team project to another from the Connect page.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ### Change accounts when connecting to VSTS
  
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
 <a id="connect-account-dialog" /> 
 <a id="vs-2015-connect-account-dialog" />
@@ -167,9 +168,9 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 ### Visual Studio 2015
 
@@ -183,7 +184,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 ### Change accounts

@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
 ms.date: 10/09/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Features
 
@@ -314,7 +315,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="customize-vsts">  </a>
 
@@ -414,9 +415,9 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="customize-tfs"></a>
 
@@ -474,7 +475,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="kanban"></a>
 
@@ -1015,7 +1016,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="package-management"></a>
 
@@ -1068,7 +1069,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Continuous delivery
 
@@ -1438,7 +1439,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="power-bi">  </a>
 
@@ -1476,9 +1477,9 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013")
+::: moniker range=">= tfs-2013"
 
 <a id="sql-server-reports">  </a>
 
@@ -1566,7 +1567,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="widgets"></a>
 
@@ -2533,7 +2534,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Process templates (TFS)
 
@@ -2579,7 +2580,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="team-projects"></a>
 

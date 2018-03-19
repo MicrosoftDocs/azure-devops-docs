@@ -7,8 +7,9 @@ ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Visual Studio Build
 
@@ -75,7 +76,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -97,7 +98,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 #   createLogFile: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

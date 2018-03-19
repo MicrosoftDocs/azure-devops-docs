@@ -7,8 +7,9 @@ ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Utility: Archive Files
 
@@ -95,7 +96,7 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -112,7 +113,7 @@ None
 #   replaceExistingArchive: true
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

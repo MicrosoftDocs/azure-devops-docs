@@ -7,8 +7,9 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
 ms.date: 03/15/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Connect VSTS account to Azure Active Directory (Azure AD)
 

@@ -7,8 +7,9 @@ ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/12/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Run Git commands in a script
 

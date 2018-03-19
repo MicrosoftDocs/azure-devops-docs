@@ -9,8 +9,9 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/07/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # About permissions and groups
 
@@ -68,7 +69,7 @@ that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ### VSTS, TFS 2017 
 
@@ -78,9 +79,9 @@ A new window opens that shows the inheritance information for that permission.
 
 <img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 ### TFS 2015, TFS 2013
 
@@ -105,7 +106,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 - Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="grant-permissions"  >  </a>  
 

@@ -8,8 +8,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Grant or restrict access to select features and functions
 

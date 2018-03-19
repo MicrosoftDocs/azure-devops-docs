@@ -7,8 +7,9 @@ ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Ant
 
@@ -105,7 +106,7 @@ The build agent must have the following capability:
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -132,7 +133,7 @@ The build agent must have the following capability:
 #   jdkArchitectureOption: x64 # x86, x64 (default)
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

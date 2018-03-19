@@ -7,8 +7,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Migrate to group-based resource management in VSTS
 

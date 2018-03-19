@@ -7,8 +7,9 @@ ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
 ms.manager: douge
 ms.author: alewis
 ms.date: 11/16/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Run a private agent behind a web proxy
 
@@ -16,7 +17,7 @@ ms.date: 11/16/2017
 
 This topic explains how to run a v2 private agent behind a web proxy. 
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 
 ## VSTS, TFS 2018 RTM and newer
 
@@ -91,9 +92,9 @@ Agent will expose proxy configuration via environment variables for every task e
 
 See [VSTS-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/proxy.md) for details.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 ## TFS 2017.2 and older
 
@@ -155,7 +156,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 > [!NOTE]
 > This procedure enables the agent infrastructure to operate behind a web proxy. Your build definition and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Specify proxy bypass URLs
 

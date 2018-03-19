@@ -8,8 +8,9 @@ ms.manager: willys
 ms.date: 09/09/2017
 ms.author: willys
 author: willys
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Branching strategies with TFVC
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013

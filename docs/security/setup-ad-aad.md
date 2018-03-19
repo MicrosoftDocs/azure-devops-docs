@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chcomley
 ms.topic: get-started-article
 ms.date: 02/28/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Set up Active Directory or Azure Active Directory
 

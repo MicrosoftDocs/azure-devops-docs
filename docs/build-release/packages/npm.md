@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: amullans
 ms.date: 11/07/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Use Team Build to restore and publish npm packages
 

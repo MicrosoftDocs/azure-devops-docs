@@ -7,8 +7,9 @@ ms.assetid: 493362ae-5318-4719-9e0f-48c74ff8f0ba
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/11/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Navigating in the web portal
 
@@ -95,7 +96,7 @@ You and other team members use the user context to collaborate, plan, and build 
 
 <a id="team-services-user-context" />
 
-[//]: # (::: moniker range=">= tfs-2017 <= vsts")
+::: moniker range=">= tfs-2017 <= vsts"
 
 **VSTS, TFS 2017.2**
 
@@ -121,9 +122,9 @@ Click any hub to open that hub. Hover your mouse over a hub to access a drop-dow
 <img src="_img/wwp-user-context-tfs-2017-1.png" alt="VSTS-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
 -->
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 <a id="tfs-2015-user-context" />
 
@@ -133,7 +134,7 @@ Click any hub to open that hub. Then, click a page within the hub to open that p
 
 <img src="_img/web-portal-user-context.png" alt="TFS 2015 or TFS 2013, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="admin-context">  </a>
 
@@ -218,7 +219,7 @@ From a user context, open the admin context by clicking the ![gear icon](_img/wo
 
 Below we show the admin context for the team project level. 
 
-[//]: # (::: moniker range="tfs-2017 || vsts")
+::: moniker range="tfs-2017 || vsts"
 
 <a id="admin-intro" />
 
@@ -253,9 +254,9 @@ Open any admin page by clicking it's corresponding hub. Hover your mouse over a 
 
 <a id="admin-intro-tfs-2015" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 **TFS 2015, TFS 2013**  
 Open any admin page by clicking it's corresponding hub.  
@@ -293,7 +294,7 @@ Required membership: [Team Foundation Administrators](../tfs-server/add-administ
  
 <!--- End of Admin context -->
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related notes  
 

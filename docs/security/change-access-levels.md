@@ -9,8 +9,9 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 ms.date: 11/28/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Change access levels
 
@@ -39,7 +40,7 @@ You manage access levels for all collections defined on the application tier for
 
 From a user context, open the admin context by clicking the ![gear icon](../work/_img/icons/gear_icon.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
  
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 ### TFS 2018, TFS 2017 
 
@@ -53,9 +54,9 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 ### TFS 2015, TFS 2013
 
@@ -69,7 +70,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="set-default" >  </a>
 

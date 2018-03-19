@@ -7,8 +7,9 @@ ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Work effectively from your account hub 
 

@@ -7,8 +7,9 @@ ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Command line
 
@@ -58,7 +59,7 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -72,7 +73,7 @@ None
 #   failOnStderr: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 

@@ -7,8 +7,9 @@ ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Batch script
 
@@ -55,7 +56,7 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -71,7 +72,7 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 #   failOnStandardError: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 

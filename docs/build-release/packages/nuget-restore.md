@@ -8,9 +8,10 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Restore Package Management NuGet packages in Team Build
 
@@ -70,7 +71,7 @@ NuGet restore can fail due to a variety of issues. One of the most common issues
 
 ### How do I use the latest version of NuGet?
 
-[//]: # (::: moniker range=">= tfs-2018") 
+::: moniker range=">= tfs-2018" 
 
 If you're using VSTS or the upcoming TFS 2018 release, new template-based builds will work automatically thanks to a new "NuGet Tool Installer" task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
@@ -78,9 +79,9 @@ For existing builds, just add or update a NuGet Tool Installer step to select th
 
 ![Build with NuGet Tool Installer step](_img/nuget-tool-installer.jpg)
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
-[//]: # (::: moniker range="tfs-2017") 
+::: moniker range="tfs-2017" 
 
 #### TFS 2017 and earlier
 
@@ -94,4 +95,4 @@ $(Build.BinariesDirectory)\nuget.exe
 
 Our thanks to [GitHub user leftler](https://github.com/Microsoft/vsts-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
 
-[//]: # (::: moniker-end) 
+::: moniker-end 

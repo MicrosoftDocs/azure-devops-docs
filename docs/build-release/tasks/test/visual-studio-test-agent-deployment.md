@@ -7,12 +7,13 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Test: Visual Studio Test Agent Deployment
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
@@ -21,9 +22,9 @@ to run unit and functional tests on the universal agent.
 
 For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2017')
+
 
 ## TFS 2017 and earlier
 
@@ -161,7 +162,7 @@ machines.
 
 <!-- ENDSECTION -->
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
 

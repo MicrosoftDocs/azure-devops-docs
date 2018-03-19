@@ -7,9 +7,10 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 02/12/2018
+monikerRange: '>=tfs-2013'
 ---
 
-[//]: # (monikerRange: '>=tfs-2013')
+
 
 # Change groups and permissions with TFSSecurity
 

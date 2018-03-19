@@ -7,8 +7,9 @@ ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Control how long to keep test results in VSTS
 

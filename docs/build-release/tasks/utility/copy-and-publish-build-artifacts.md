@@ -7,8 +7,9 @@ ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Copy and Publish Build Artifacts
 

@@ -9,8 +9,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: sdanie
 ms.date: 02/07/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Default Git repository and branch permissions
 

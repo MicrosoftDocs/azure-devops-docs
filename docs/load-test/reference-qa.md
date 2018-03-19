@@ -7,8 +7,9 @@ ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # FAQs for load testing
 

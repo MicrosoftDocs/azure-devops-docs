@@ -7,8 +7,9 @@ ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Utility: FTP Upload
 
@@ -62,7 +63,7 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -86,7 +87,7 @@ None
 #   trustSSL: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

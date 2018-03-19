@@ -9,8 +9,9 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Permissions and groups in VSTS and TFS
 
@@ -56,7 +57,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups (TFS only)
 
@@ -180,7 +181,7 @@ You can't remove or delete the default server level groups.
 > So the full name of the server level administrators group is
 > **[Team Foundation]/Team Foundation Administrators**.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a name="collection"></a>
 
@@ -1710,7 +1711,7 @@ View releases
 
 <a id="release_management">  </a>
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ##&nbsp;&nbsp;&nbsp;Release (object-level) (VSTS, TFS 2017)
 
@@ -1748,7 +1749,7 @@ default. **Contributors** are given all permissions except
 are denied all permissions except **View release definition** and
 **View releases**.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="task-group">  </a>
 
@@ -1765,7 +1766,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 | **Delete task group** | Can delete a task group. | 
 | **Edit task group** | Can create, modify, or delete a task group. | 
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2013")
+::: moniker range=">= tfs-2013 <= tfs-2013"
 
 <a id="lab">  </a>
 
@@ -1871,7 +1872,7 @@ By default, the team project level and collection-level Readers groups have only
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 <a id="alerts">  </a>

@@ -7,8 +7,9 @@ ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Perform user acceptance testing
 

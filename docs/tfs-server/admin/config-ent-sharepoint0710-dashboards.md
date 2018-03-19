@@ -7,9 +7,10 @@ ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2017')
+
 
 # Configure the Enterprise Editions of SharePoint Server 2010 or Office SharePoint Server 2007 for Dashboard Compatibility with Team Foundation Server
 

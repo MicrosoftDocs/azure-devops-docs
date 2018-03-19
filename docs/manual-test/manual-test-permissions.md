@@ -7,8 +7,9 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Default manual testing permissions and access 
  

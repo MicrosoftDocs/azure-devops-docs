@@ -8,9 +8,10 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 2/6/2018
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Feeds
 

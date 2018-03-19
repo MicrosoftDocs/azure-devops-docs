@@ -7,8 +7,9 @@ ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
 ms.manager: douge
 ms.author: ahomer
 ms.date: 02/01/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # New release progress views
 

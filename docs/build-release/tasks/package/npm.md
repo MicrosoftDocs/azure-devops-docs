@@ -7,8 +7,9 @@ ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.manager: douge
 ms.author: alewis
 ms.date: 07/05/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Package: npm
 
@@ -72,7 +73,7 @@ ms.date: 07/05/2017
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -93,7 +94,7 @@ ms.date: 07/05/2017
     publishEndpoint:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Publish npm packages
 
