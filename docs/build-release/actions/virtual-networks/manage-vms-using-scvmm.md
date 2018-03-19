@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 09/26/2017
+monikerRange: ">= tfs-2018"
 ---
-[//]: # (monikerRange: ">= tfs-2018")
+
 
 # Task actions for managing VMs using System Center Virtual Machine Manager (SCVMM)
 

@@ -7,8 +7,9 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # File matching patterns reference
 

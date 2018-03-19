@@ -7,8 +7,9 @@ ms.assetid: D690542B-9A13-4836-8C1E-D715AE6CB7D6
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Package: CocoaPods 
  
@@ -40,7 +41,7 @@ Working directory. If you leave it blank, the working directory is the root of y
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -54,7 +55,7 @@ Working directory. If you leave it blank, the working directory is the root of y
     projectDirectory:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

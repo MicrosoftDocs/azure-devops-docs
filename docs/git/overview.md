@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
 layout: LandingPage
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 #  Git and VSTS
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015

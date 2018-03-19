@@ -7,8 +7,9 @@ ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.manager: douge
 ms.author: alewis
 ms.date: 01/03/2017
+monikerRange: 'tfs-2017 || vsts'
 ---
-[//]: # (monikerRange: 'tfs-2017 || vsts')
+
 
 # New Build Editor
 

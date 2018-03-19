@@ -7,8 +7,9 @@ ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2017"
 ---
-[//]: # (monikerRange: ">= tfs-2017")
+
 
 # Speed up testing by using Test Impact Analysis (TIA)
 

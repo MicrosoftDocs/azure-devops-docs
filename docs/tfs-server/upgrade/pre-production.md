@@ -7,9 +7,10 @@ ms.assetid: 28B2A39E-71BB-49A0-A5EA-3F094446CE32
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 
 # Do a dry run of your upgrade in a pre-production environment
 

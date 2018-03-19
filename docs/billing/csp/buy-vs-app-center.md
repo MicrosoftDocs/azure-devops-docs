@@ -6,8 +6,9 @@ ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: billchi
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Buy Visual Studio App Center resources  
 

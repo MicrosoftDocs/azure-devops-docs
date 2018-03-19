@@ -8,8 +8,9 @@ ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.manager: douge
 ms.author: alewis
 ms.date: 02/12/18
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build and release permissions and roles (Security)
 

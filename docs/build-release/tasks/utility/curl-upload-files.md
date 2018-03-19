@@ -7,8 +7,9 @@ ms.assetid: E231D775-2BCE-4DFA-8C20-C17F83ECD700
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: cURL Upload Files
 
@@ -75,7 +76,7 @@ Arguments to pass to cURL.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -95,7 +96,7 @@ Arguments to pass to cURL.
 #   redirectStderr: true
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

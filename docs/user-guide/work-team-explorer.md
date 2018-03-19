@@ -8,8 +8,9 @@ ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/07/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Navigate in Team Explorer
 

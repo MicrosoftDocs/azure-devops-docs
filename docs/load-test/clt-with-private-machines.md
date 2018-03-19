@@ -7,8 +7,9 @@ ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Run cloud-based load tests using your own machines
 

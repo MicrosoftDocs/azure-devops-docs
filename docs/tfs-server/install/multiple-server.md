@@ -8,9 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015 < tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < tfs-2018')
+
 
 # How to set up TFS in a multiple server configuration
 

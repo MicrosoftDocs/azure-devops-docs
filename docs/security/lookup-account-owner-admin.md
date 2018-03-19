@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Look up the account owner or a project administrator
 
@@ -47,7 +48,7 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
   
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a name="find-owner"></a>
 
@@ -65,7 +66,7 @@ Only VSTS accounts have account owners.
 
 	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <!---
 ## Find out who is a team administrator for a specific team

@@ -8,9 +8,10 @@ ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
+monikerRange: '>= tfs-2013 < tfs-2015'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2015')
+
 
 # Configure an SMTP server and customize email for alerts and feedback requests in TFS
 

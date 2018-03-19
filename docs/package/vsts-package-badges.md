@@ -7,8 +7,9 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: elbatk
 ms.date: 02/16/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Share your NuGet, npm, and Maven packages from VSTS with badges
 

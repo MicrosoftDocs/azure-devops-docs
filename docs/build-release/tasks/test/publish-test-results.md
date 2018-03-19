@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Test: Publish Test Results
 
@@ -48,7 +49,7 @@ The build agent must have the following capabilities:
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -67,7 +68,7 @@ The build agent must have the following capabilities:
 #   publishRunAttachments: true
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## More Information
 

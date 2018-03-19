@@ -6,8 +6,9 @@ ms.technology: vs-devops-setup
 ms.manager: douge
 author: chcomley
 ms.date: 1/22/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #  Using the Visual Studio Subscriptions Administrator Portal
 

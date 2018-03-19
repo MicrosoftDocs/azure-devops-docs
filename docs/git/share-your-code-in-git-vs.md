@@ -8,8 +8,9 @@ toc: show
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/29/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Share your code with Visual Studio 2015 and VSTS Git
 

@@ -7,8 +7,9 @@ ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/04/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Key concepts for working with VSTS and TFS
 

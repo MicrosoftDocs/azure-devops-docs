@@ -7,8 +7,9 @@ ms.assetid: 3034CEF8-215C-408E-AD0F-C41D3D9C2F72
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Utility: Update Service Fabric App Versions
 
@@ -104,7 +105,7 @@ None
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -126,7 +127,7 @@ Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-
     imageDigestsPath:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

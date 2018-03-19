@@ -7,8 +7,9 @@ ms.assetid: 00000000-0000-0000-0000-000000000000
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Xamarin.iOS
 
@@ -117,7 +118,7 @@ Working directory for the build. If you leave it blank, it is the root of the re
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -147,7 +148,7 @@ Working directory for the build. If you leave it blank, it is the root of the re
 #   signingRemoveProfile: False
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example 
 

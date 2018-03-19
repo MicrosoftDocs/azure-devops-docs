@@ -7,9 +7,10 @@ ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Troubleshooting getting and paying for extensions for VSTS
 

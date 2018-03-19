@@ -6,9 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.manager: douge
 ms.author: elbatk
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Extension reporting hub
 

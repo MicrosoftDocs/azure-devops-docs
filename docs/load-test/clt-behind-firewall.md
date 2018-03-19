@@ -7,8 +7,9 @@ ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Test private and intranet apps using cloud-based load testing
 

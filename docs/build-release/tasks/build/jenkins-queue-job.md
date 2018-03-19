@@ -7,8 +7,9 @@ ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/30/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build: Jenkins Queue Job
 
@@ -81,7 +82,7 @@ None
 
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -100,7 +101,7 @@ None
     jobParameters:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Team Foundation Server Plug-in
 

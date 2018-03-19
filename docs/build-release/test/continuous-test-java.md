@@ -7,8 +7,9 @@ ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Testing Java applications with VSTS
 

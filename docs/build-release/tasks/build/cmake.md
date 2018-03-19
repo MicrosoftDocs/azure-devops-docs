@@ -7,8 +7,9 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: CMake
 
@@ -47,7 +48,7 @@ Arguments that you want to pass to CMake.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -60,7 +61,7 @@ Arguments that you want to pass to CMake.
     cmakeArgs:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

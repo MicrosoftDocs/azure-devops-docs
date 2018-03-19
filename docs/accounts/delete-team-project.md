@@ -7,8 +7,9 @@ ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Delete a team project
 

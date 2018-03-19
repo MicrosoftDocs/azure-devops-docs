@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 09/26/2017
+monikerRange: ">= tfs-2018"
 ---
-[//]: # (monikerRange: ">= tfs-2018")
+
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 

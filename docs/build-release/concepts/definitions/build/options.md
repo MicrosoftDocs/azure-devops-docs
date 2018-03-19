@@ -7,8 +7,9 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build definition options
 
@@ -94,13 +95,13 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 
 ## Badge enabled
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Select if you want to show the latest outcome of this build on external web sites.
 
@@ -138,13 +139,13 @@ For an example, see [Use a script to customize your build process](../../../acti
 
 ## Default agent queue
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Select the [queue](../../../concepts/agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
 
@@ -152,13 +153,13 @@ Select the [queue](../../../concepts/agents/pools-queues.md) that's attached to 
 
 ## Build job authorization scope
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Specify the authorization scope for a build job. Select:
 
@@ -168,17 +169,17 @@ Specify the authorization scope for a build job. Select:
 
 ## Build job timeout in minutes
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Specify the maximum time a build job is allowed to execute on an agent before being canceled by the server. Leave it empty or at zero if you want the job to never be canceled by the server.
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 <h2 id="job-cancel-timeout">Build job timeout in minutes (VSTS, TFS 2017.3 and newer)</h2>
 
@@ -200,17 +201,17 @@ Whatever value you set here, the **Build job timeout in minutes** limit still ap
 >
 > The system typically consumes about 10 seconds of this time allotment for messaging before your tasks run.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Demands
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Use demands to make sure that the capabilities your build needs are present on the build agents that run it. Demands are asserted automatically by build steps or manually by you.
 
@@ -253,17 +254,17 @@ Select this option to build multiple configurations. For example, you could buil
 
 ### In what time zone are the build number time values expressed?
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 If you are using VSTS, then the time zone is UTC.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2015 < vsts")
+::: moniker range=">= tfs-2015 < vsts"
 
 If you are using an on-premises Team Foundation Server, then the time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 

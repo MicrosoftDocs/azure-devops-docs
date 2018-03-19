@@ -8,8 +8,9 @@ ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Tutorial: Load test your app before release
 

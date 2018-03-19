@@ -8,9 +8,10 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: douge
 ms.author: amullans
 ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Install and license Package Management
 
@@ -18,7 +19,7 @@ ms.date: 01/24/2018
 
 Package Management is an *extension* to VSTS and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 
 ## Install Package Management in VSTS
 
@@ -37,17 +38,17 @@ Package Management is an extension that must be installed from the Marketplace.
 
 1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts") 
+::: moniker range=">= tfs-2017 < vsts" 
 
 ## Install Package Management in TFS
 
 Package Management is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Package Management.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts") 
+::: moniker range="vsts" 
 
 ## Assign Package Management in VSTS
 
@@ -60,9 +61,9 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 
    > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017 < vsts") 
+::: moniker range=">= tfs-2017 < vsts" 
 
 ## Assign licenses in TFS
 
@@ -76,7 +77,7 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 
    * Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <!-- BEGINSECTION class="md-qanda" -->
 

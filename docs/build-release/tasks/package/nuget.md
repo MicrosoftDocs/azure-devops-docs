@@ -428,7 +428,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -470,7 +470,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     arguments:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

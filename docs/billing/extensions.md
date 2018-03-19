@@ -8,8 +8,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: 
 ms.date: 1/29/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #  VSTS extensions
 
