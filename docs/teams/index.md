@@ -11,7 +11,7 @@ ms.date: 10/04/2017
 
 # Scale & Configure Teams 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Give your teams the autonomy they need as your organization grows. Add teams to give each team their set of Agile tools which they can configure their way. 
 

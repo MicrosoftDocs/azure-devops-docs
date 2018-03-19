@@ -25,7 +25,7 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../../security/_shared/build-release.md)]
+[!INCLUDE [temp](../../../security/_shared/build-release.md)]
 
 ## Security of agents and library entities
 
@@ -162,19 +162,19 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release definitions. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab of the **Build and Release** hub.
 
-[!INCLUDE [temp](../../../security/_shared/library-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/library-roles.md)]
 
 ## Service endpoint security roles
 
 You [add users to the following roles](../../set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../library/service-endpoints.md).   
 
-[!INCLUDE [temp](../../../security/_shared/service-endpoint-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
 You [add users to the following roles](../../set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/build-release/concepts/definitions/release/deployment-groups).   
 
-[!INCLUDE [temp](../../../security/_shared/deployment-pool-roles.md)]
+[!INCLUDE [temp](../../../security/_shared/deployment-pool-roles.md)]
 
 
 ## Related notes 

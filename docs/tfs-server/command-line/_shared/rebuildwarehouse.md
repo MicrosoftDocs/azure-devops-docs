@@ -59,5 +59,5 @@ The following example shows how to rebuild the Analysis Services database for a 
     TFSConfig RebuildWarehouse /analysisServices
 
     TFSConfig - Team Foundation Server Configuration Tool
-    Copyright � Microsoft Corporation. All rights reserved.
+    Copyright - Microsoft Corporation. All rights reserved.
     The Analysis Services database was successfully rebuilt.

@@ -36,7 +36,7 @@ You can also prevent team members from changing calculated field values in Team 
 |**TFS work item field type**|**Microsoft Project field type**|  
 |----------------------------------|--------------------------------------|  
 |DateTime|Datetime.|  
-|Double|Work, units, percentages, fractions, and any field type with a range of ±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>.|  
+|Double|Work, units, percentages, fractions, and any field type with a range of ±5.0 × 10<sup>-324</sup> to ±1.7 × 10<sup>308</sup>.|  
 |History|Not Supported.|  
 |Html|Not Supported.|  
 |Integer|Work, units, numbers, and any field type with a range of -2,147,483,648 to 2,147,483,647.|  

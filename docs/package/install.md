@@ -33,7 +33,7 @@ Package Management is an extension that must be installed from the Marketplace.
 
 1. Select your account into which the Package Management extension should be installed
 
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren’t sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren't sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
 1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
@@ -58,7 +58,7 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
-   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you’ve been assigned the “Visual Studio Enterprise” access level.
+   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 [//]: # (::: moniker-end)
 

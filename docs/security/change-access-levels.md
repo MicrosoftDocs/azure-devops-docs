@@ -78,7 +78,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or Advanced level will be limited to the features provided through Stakeholder access.
 
 >[!IMPORTANT]  
->Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
+>Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
 
 You set an access level from its page. Click Set as default access level as shown.
 

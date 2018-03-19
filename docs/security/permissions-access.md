@@ -31,10 +31,10 @@ You can connect to your code from the Code hub or the web portal, and using Xcod
 From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
 
 ### Git
-[!INCLUDE [temp](_shared/code-git.md)]
+[!INCLUDE [temp](_shared/code-git.md)]
 
 ### TFVC 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](_shared/code-tfvc.md)]
 
 
 
@@ -44,13 +44,13 @@ You can define and manage your builds and releases from the web portal, **Build 
 
 From the **Build and Release hub, you can set permissions for all or individual build definitions, release definitions, task groups, or variable groups. See [Set build and release permissions](../build-release/set-permissions.md). 
 
-[!INCLUDE [temp](_shared/build-release.md)]
+[!INCLUDE [temp](_shared/build-release.md)]
 
 ## Package Management feeds
 
 Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../package/feeds/feed-permissions.md).
 
-[!INCLUDE [temp](_shared/package-feeds.md)]
+[!INCLUDE [temp](_shared/package-feeds.md)]
 
 ## Test
 
@@ -58,7 +58,7 @@ You can define and manage manual tests from the web portal, **Test** hub. For an
 
 You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](_shared/test.md)]
 
 ## Agile tools and work tracking
 
@@ -72,7 +72,7 @@ The team administrator role supports configuration of team settings. To be added
 >There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).   
 
 
-[!INCLUDE [temp](_shared/work.md)]
+[!INCLUDE [temp](_shared/work.md)]
 
 
 
@@ -83,7 +83,7 @@ You can define and manage dashboards from the web portal, **Dashboard** hub. For
 You set [dashboard permissions at the team level](../report/dashboard-permissions.md) from the team dashboard page. 
 
 
-[!INCLUDE [temp](_shared/report.md)]
+[!INCLUDE [temp](_shared/report.md)]
 
 ## Notifications, alerts, and team collaboration tools 
 
@@ -92,7 +92,7 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
 
-[!INCLUDE [temp](_shared/collaborate.md)]
+[!INCLUDE [temp](_shared/collaborate.md)]
 
  
 

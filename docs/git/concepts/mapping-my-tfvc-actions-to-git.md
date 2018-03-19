@@ -292,7 +292,7 @@ git clean -xdf
 
 The scenario is anonymous to doing a `Get > Latest Version` with the `Overwrite writeable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
 
-Alternatively you can manually delete your local repo – after making a validated copy off course – and then `clone` the repository again.
+Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
 
 This is by no means the end of actions and options available to Git users. Here are some useful reference sites for further reading:
 

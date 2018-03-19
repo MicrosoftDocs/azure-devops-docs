@@ -90,7 +90,7 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Windows Server 2008 R2 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions.
 
-  Windows Server 2008 R2�Server Core installation, Standard, Enterprise, and Datacenter Editions.
+  Windows Server 2008 R2-Server Core installation, Standard, Enterprise, and Datacenter Editions.
 
   Windows Server 2008 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions with Service Pack 2.
 

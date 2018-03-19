@@ -1,6 +1,6 @@
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |
 > |------|---------|
 > | **Reader** | Can only view deployment groups.   |

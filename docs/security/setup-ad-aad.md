@@ -23,7 +23,7 @@ Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
 > * Set up Azure Active Directory for use with VSTS or TFS
 > * Manage organizational access with Azure AD
-> * Set up Active Directory for use with TFS
+> * Set up Active Directory for use with TFS
 
 > [!NOTE]
 > Without Azure AD, all VSTS users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../billing/set-up-billing-for-your-account-vs.md).

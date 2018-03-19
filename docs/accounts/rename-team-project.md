@@ -182,18 +182,18 @@ Reports will not work as expected until the jobs have run.
  Uses of *@project* will also continue to work after a team project rename and also don't need to be updated. 
 
 - Excel reports and Excel web parts on MOSS will not show the right data until you execute the following.
-	1. Warehouse job – [Run the warehouse jobs](../report/admin/manually-process-data-warehouse-and-cube.md)
+	1. Warehouse job - [Run the warehouse jobs](../report/admin/manually-process-data-warehouse-and-cube.md)
 	so that Excel reports contain the correct data.
 	If the new project name is not synced to the warehouse,
 	Excel reports will not show the correct data.
 	To avoid this, manually run warehouse jobs.
-	2. SharePoint timer job – Run the "Team Foundation Server Dashboard Update" job
+	2. SharePoint timer job - Run the "Team Foundation Server Dashboard Update" job
 	from the SharePoint central admin to update Excel web parts on the dashboard. 
 	By default, it runs every 30 minutes.
 	Until this job runs, the Excel web parts on the dashboard
 	and the web parts that show reports directly from the reporting folder
 	won't work because they'll use either the wrong project name or the wrong reporting folder. 
-	3. SharePoint cache – Manually clear the SharePoint cache to avoid stale data,
+	3. SharePoint cache - Manually clear the SharePoint cache to avoid stale data,
 	such as report folder locations, appearing in the dashboards.
 	By default, this cache clears about every hour.
 	You can also clear some TFS specific cache using the tfs redirect url

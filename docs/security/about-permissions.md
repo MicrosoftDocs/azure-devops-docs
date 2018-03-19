@@ -101,9 +101,9 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 
 **Don't:**  
-- Don’t add accounts to the team project **Readers** group that you’ve added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don’t change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
-- Don’t assign permissions that are noted as ‘Assign only to service accounts’ to user accounts.
+- Don't add accounts to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
+- Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 [//]: # (::: moniker-end)
 

@@ -12,7 +12,7 @@ ms.date: 09/29/2017
 
 # Switch team project or team focus   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="switch-team-context">  </a>
 

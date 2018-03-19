@@ -79,5 +79,5 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ###Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in the [Team Foundation Server � Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+**A:** You can post a question or search for answers in the [Team Foundation Server - Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 

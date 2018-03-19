@@ -14,7 +14,7 @@ ms.date: 02-24-2018
 
 # Filter lists and boards 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  
 

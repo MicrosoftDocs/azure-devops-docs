@@ -14,7 +14,7 @@ ms.date: 02/28/2018
 
 **VSTS**
 
-All current users in your VSTS account are considered to have resources via “explicit assignment” instead of implicit group assignment. If you would like to start using group-based licensing to manage licenses in your organization, you will need a migration plan to seamlessly replace existing solutions with group-based licensing.
+All current users in your VSTS account are considered to have resources via "explicit assignment" instead of implicit group assignment. If you would like to start using group-based licensing to manage licenses in your organization, you will need a migration plan to seamlessly replace existing solutions with group-based licensing.
 
 The most important thing to keep in mind is that you should avoid a situation where migrating to group-based licensing will result in users temporarily losing their currently assigned licenses. Any process that may result in removal of licenses should be avoided to eliminate the risk of users losing access to services and their data.
 

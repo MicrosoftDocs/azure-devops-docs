@@ -57,11 +57,11 @@ Only VSTS accounts have account owners.
 
 0.	Open the admin context for your account.  
 
-	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
 
 	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 

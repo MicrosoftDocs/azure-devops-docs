@@ -13,13 +13,13 @@ ms.date: 09/09/2017
 
 # Verify SharePoint products for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
-If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
+If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
 
 -   The administration site and default website are running, and other computers on the network can access them.
 
--   SharePoint uses NTLM, the recommended authentication. (Basic authentication is not supported by Team Foundation Server extensions for SharePoint Products.)
+-   SharePoint uses NTLM, the recommended authentication. (Basic authentication is not supported by Team Foundation Server extensions for SharePoint Products.)
 
 -   If you are using a supported enterprise edition of SharePoint Server, you must configure settings for dashboard compatibility.
 
@@ -66,7 +66,7 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
 ### To verify that a supported enterprise edition of SharePoint Server is configured for dashboard compatibility
 
--   If you are using a supported enterprise edition of SharePoint Server, [perform the required configurations for dashboard compatibility](install-sharepoint.md). If you are using any other version of SharePoint, you can disregard this procedure. For more information, see [Manually Install SharePoint products for Team Foundation Server](install-sharepoint.md).
+-   If you are using a supported enterprise edition of SharePoint Server, [perform the required configurations for dashboard compatibility](install-sharepoint.md). If you are using any other version of SharePoint, you can disregard this procedure. For more information, see [Manually Install SharePoint products for Team Foundation Server](install-sharepoint.md).
 
 ## See Also
 

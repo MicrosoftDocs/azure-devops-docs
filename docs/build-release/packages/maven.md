@@ -17,7 +17,7 @@ ms.date: 01/31/2018
 
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
  
-This walkthrough assumes that you've already added the correct build service identity to your feed. 
+This walkthrough assumes that you've already added the correct build service identity to your feed. 
 
 1. Create a new build definition and select the **Maven** template.
 <br>

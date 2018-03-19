@@ -23,7 +23,7 @@ You can use the following procedures to save data that users most care about, su
 
     ![context menu with download as zip menu item](_img/delete-team-project/ic760345.png)
 
-    This process doesn’t save any change history or links to other artifacts.
+    This process doesn't save any change history or links to other artifacts.
 
     If you use Git, [clone your repositories](../git/gitquickstart.md) to retain the full project history and all the branches.
 
@@ -31,7 +31,7 @@ You can use the following procedures to save data that users most care about, su
 
 -   **Work item tracking data:** Create a work item query and open it [using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 
-    This process doesn’t save any attachments, change history, or links to other artifacts.
+    This process doesn't save any attachments, change history, or links to other artifacts.
 
 If you have Team Foundation Server on-premises, you can easily save data stored for a team project collection 
 by [making a backup of the database](../tfs-server/admin/backup/config-backup-sched-plan.md). You can also 

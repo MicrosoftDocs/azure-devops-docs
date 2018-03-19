@@ -156,7 +156,7 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 
 
 >[!NOTE]  
->If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
+>If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
 
 
 <a id="team-scoped-features">  </a>
@@ -187,7 +187,7 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 
 
 > [!div class="mx-tdBreakAll"]
-> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
+> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
 > |-------------|----------|
 > |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/dashboards/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/dashboards/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
 
@@ -198,7 +198,7 @@ The **Code** hub supports management of your source control repositories. You ca
 
 
 > [!div class="mx-tdBreakAll"]
-> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
+> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
 > |-------------|----------|
 > |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- Explorer<br/>- [History: review](../git/manage-your-branches.md#review-updates)<br/>- [Branches: Manage branches](../git/manage-your-branches.md)<br/>- [Pull Requests: View and create pull requests](../git/pull-requests.md) |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- [Explorer: View, download, and compare version-controlled files](../tfvc/download-get-files-from-server.md)<br/>- [Changesets: find/view](../tfvc/find-view-changesets.md)<br/>- [Shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) |
 
@@ -421,7 +421,7 @@ Although you can access source code, work items, and builds from both clients, s
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 
 <!---
 Overview

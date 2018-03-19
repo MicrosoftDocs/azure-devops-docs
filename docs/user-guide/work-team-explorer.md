@@ -15,7 +15,7 @@ ms.date: 09/07/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
+You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
 
 
 >[!TIP]  
@@ -27,7 +27,7 @@ You use Team Explorer to manage work that is assigned to you, your team, or you
 > - [Visual Studio Code](/vsts/java/vscode-extension)    
 >For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
 
-The operations available to you depend on which source control option—Team Foundation version control (TFVC) or Git—was selected to manage source code when the team project was created.
+The operations available to you depend on which source control option-Team Foundation version control (TFVC) or Git-was selected to manage source code when the team project was created.
 
 **Team Explorer plug-in for Visual Studio**
 
@@ -109,7 +109,7 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 
 ### Report and Document pages (TFS only)
 
-The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
+The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
 
 From the **Document** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your team project has been configured with a SharePoint Products portal.
   
