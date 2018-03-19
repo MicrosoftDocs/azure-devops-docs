@@ -1,9 +1,9 @@
 
 <a id="queries-te-shortcuts"></a>
 
-> [!div class="mx-tdBreakAll"]  
-> |Query editor   |Action  |Query results |  Action  | 
-> |-------------|----------|---------|---------| 
+> [!div class="mx-tdBreakAll"]  
+> |Query editor   |Action  |Query results |  Action  | 
+> |-------------|----------|---------|---------| 
 > |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Scroll left/right | 
 > |![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png) ![ ](/vsts/work/_img/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |  
 > |**Shift+**![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png)![ ](/vsts/work/_img/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png)![ ](/vsts/work/_img/icons/Arrow_Down.png) | Highlight consecutive rows|
@@ -15,7 +15,7 @@
 > |**Ctrl+c** |Copy selected clause |**+/-** |Expand/collapse current row|
 > |**Ctrl+s** |Save changes (editor) |**Ctrl+s** |Save changes (results)| 
 > |**Ctrl+v** |Paste copied clause |**F5**  |Refresh  |  
-> |**Del** |Delete contents of current field or clause |&nbsp;&nbsp;   |&nbsp;&nbsp;  | 
+> |**Del** |Delete contents of current field or clause |&nbsp;&nbsp;   |&nbsp;&nbsp;  | 
  
 
 

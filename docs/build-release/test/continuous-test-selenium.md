@@ -43,13 +43,13 @@ from Visual Studio Test Explorer.
    then choose **Test** and select **Unit Test Project**. Alternatively,
    open the shortcut menu for the solution and choose
    **Add** then **New Project** and then
-   **Unit Test Project**. 
+   **Unit Test Project**. 
 
 1. After the project is created, add the Selenium and
    browser driver references used by the browser to
    execute the tests. Open the shortcut menu for the
    Unit Test project and choose **Manage NuGet
-   Packages**. Add the following packages to your project:
+   Packages**. Add the following packages to your project:
 
    * Selenium.WebDriver
    * Selenium.Firefox.WebDriver

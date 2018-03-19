@@ -25,17 +25,17 @@ You might add an application-tier server to an existing deployment of Team Found
 -   You want to move an application tier to a different server.
 
 **Redundancy and performance**  
-By using the Application-tier Only Configuration wizard, you can enhance the availability, scalability, and performance of your application tier. 
+By using the Application-tier Only Configuration wizard, you can enhance the availability, scalability, and performance of your application tier. 
 
 To benefit from multiple application-tier servers, you should ensure that your initial deployment of Team Foundation Server includes the following characteristics:
 
 -   The application tier and the configuration database are installed on separate servers.  
--   You used a domain account for the Team Foundation Server service account (TFSSERVICE).  
+-   You used a domain account for the Team Foundation Server service account (TFSSERVICE).  
 -   Network Load Balancing (NLB) is deployed.
 
 You use NLB to create a cluster of Web servers that appear as a single logical Web service. This procedure is separate from the Application-tier Only Configuration wizard. For more information about how to set up NLB, see the following page on the Microsoft website: [Network Load Balancing](http://go.microsoft.com/fwlink/?LinkId=158320).
 
-If you create an NLB cluster, you do not need to use a SQL Server cluster for your configuration database or any team project collection. For the purposes of performance, scalability, and availability, any SQL Server cluster that you might deploy is independent of the NLB cluster.
+If you create an NLB cluster, you do not need to use a SQL Server cluster for your configuration database or any team project collection. For the purposes of performance, scalability, and availability, any SQL Server cluster that you might deploy is independent of the NLB cluster.
 
 **Disaster recovery and hardware upgrade**  
 If you have a backup of your configuration database and your application tier has a hardware failure, you can use the Application-tier Only Configuration wizard to restore the application tier.
@@ -49,7 +49,7 @@ Use the steps in this checklist to add an application tier to an existing deploy
 | | Task | Detailed instructions |
 | --- | --- | --- |
 | [Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system and hardware meet requirements for Team Foundation Server. | [System requirements for Team Foundation Server](../requirements.md) |
-| [Step 2](_img/ic646325.png) | **Set up Team Foundation Server**. Install Team Foundation Server and run the Application-Tier Only Configuration wizard. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) </br> [Configure TFS using the application-tier-only configuration wizard](#config-tfs-app-tier-wiz) |
+| [Step 2](_img/ic646325.png) | **Set up Team Foundation Server**. Install Team Foundation Server and run the Application-Tier Only Configuration wizard. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) </br> [Configure TFS using the application-tier-only configuration wizard](#config-tfs-app-tier-wiz) |
 
 <a name="config-tfs-app-tier-wiz"></a>
 ## Configure TFS using the application-tier-only configuration wizard

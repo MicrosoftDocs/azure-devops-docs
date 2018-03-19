@@ -24,7 +24,7 @@ feature in Visual Studio Team Services (VSTS) and Team
 Foundation Server (TFS).
 
 Typically you create a Test Suite using a formal 
-requirement work item type. However, today’s 
+requirement work item type. However, today's 
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
 

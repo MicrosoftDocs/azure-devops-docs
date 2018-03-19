@@ -56,7 +56,7 @@ You must be a member of the **Administrators** security group on Windows Server.
     -   Database Engine Services (required)  
     -   Full-Text and Semantic Extractions for Search (required)  
     -   Analysis Services (required for reporting)  
-    -   Reporting Services � Native (required for reporting)  
+    -   Reporting Services - Native (required for reporting)  
     -   Management Tools - Basic (not pictured)
 
     ![Feature Selection](../../install/sql-server/_img/ic665097.png)
@@ -114,7 +114,7 @@ For more information, see: [Use the same SharePoint site for TFS that you have r
 
 **Move SharePoint to New Hardware for TFS**
 
-You can install SharePoint Foundation using the TFS extensions for SharePoint wizard. The TFS wizard will install a fresh copy of SharePoint using the installation of SQL Server you just set up, and then configure the TFS extensions for the new installation of TFS. After you install SharePoint, you�ll detach its content database to prepare for the migration of the data from your previous SharePoint installation in step 4, Back up and Restore Data.
+You can install SharePoint Foundation using the TFS extensions for SharePoint wizard. The TFS wizard will install a fresh copy of SharePoint using the installation of SQL Server you just set up, and then configure the TFS extensions for the new installation of TFS. After you install SharePoint, you'll detach its content database to prepare for the migration of the data from your previous SharePoint installation in step 4, Back up and Restore Data.
 
 For more information: [Move SharePoint to new hardware for TFS](../../install/sharepoint/move-sharepoint-new-hardware.md)
 

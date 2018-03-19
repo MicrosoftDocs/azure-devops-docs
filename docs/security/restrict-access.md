@@ -34,7 +34,7 @@ Maybe consider this in a 2 or 3 step process:
 Use this topic to learn: 
 
 > [!div class="checklist"]
-> * Recommended method for granting and restricting permissions       
+> * Recommended method for granting and restricting permissions       
 > * How to delegate tasks by assigning select permissions to specific roles
 > * How to restrict access to view or modify objects 
 > * How to restrict modification of work items based on a user or group 

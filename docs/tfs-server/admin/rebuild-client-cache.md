@@ -22,7 +22,7 @@ To prevent workspace errors from occurring during version control or build opera
 > [!IMPORTANT]
 > To avoid server performance issues, you should not run this command during normal operating hours.
 
-To run the tool, open a Command Prompt window where where you�ve installed Visual Studio and enter:
+To run the tool, open a Command Prompt window where where you've installed Visual Studio and enter:
 
   ```cd %programfiles(x86)%\Microsoft Visual Studio <version>\Common7\IDE```
 

@@ -74,7 +74,7 @@ Rapid and reliable release of software comes from automating as many processes a
 
 ## Scaling
 
-Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24×7 operations team, and available in local data centers around the world.
+Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
 You can scale the system in the following ways:
 

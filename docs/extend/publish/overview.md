@@ -106,7 +106,7 @@ Here are some scenarios where you might want to remove your extension from the M
   * You published your extension as public by mistake.
 
 To unpublish, select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
-Your extension will be unpublished immediately from the Marketplace, and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. 
+Your extension will be unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension will stay intact. 
 
 To offer your extension again in the Marketplace, choose **Publish** on the menu.
 

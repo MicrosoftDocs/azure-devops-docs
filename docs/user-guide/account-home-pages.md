@@ -171,4 +171,4 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 - [Work in the web portal](work-web-portal.md) 
 - [Connect to team projects](connect-team-projects.md)  
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

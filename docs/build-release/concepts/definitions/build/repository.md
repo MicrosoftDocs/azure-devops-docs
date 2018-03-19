@@ -259,7 +259,7 @@ In some cases you can't use the Checkout submodules option. You might have a sce
 If you can't use the Checkout submodules option, then you can instead use a custom script with the following git command to get the sources for submodules onto your agent.
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init –recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init -recursive
 ```
 
 Use a secret variable in your project or build definition to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above git command.

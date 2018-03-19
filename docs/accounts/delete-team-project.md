@@ -32,7 +32,7 @@ Delete a team project from VSTS or from an on-premises deployment of Team Founda
    >[!div class="mx-imgBorder"]
    ![choose-delete-team-project](_img/delete-team-project/choose-delete-team-project.png)
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
+    If you don't see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
 3. You must type the name of the team project in order to initiate the delete operation. 
 
@@ -67,7 +67,7 @@ Using the administration console, you can delete a team project from a team proj
 
 ### Delete reports that remain after deleting a project
 
-If your on-premises team project used reporting, and you didn’t choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the team project collection page, delete the folder that corresponds to the deleted team project.
+If your on-premises team project used reporting, and you didn't choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the team project collection page, delete the folder that corresponds to the deleted team project.
 
 ![context menu with delete command](_img/delete-team-project/ic686857.png)
 
@@ -75,7 +75,7 @@ If your on-premises team project used reporting, and you didn’t choose to dele
 
 If your on-premises team project had a team project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](http://go.microsoft.com/fwlink/?LinkId=131660).
 
-### What to do if the delete action doesn’t finish
+### What to do if the delete action doesn't finish
 
 For on-premises deployments, review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
 

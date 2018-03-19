@@ -110,7 +110,7 @@ You provide others access to your account by adding their email address.
 
 0. Fill out the form. 
  
-	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
 	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
 		> [!NOTE]   

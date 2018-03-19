@@ -20,7 +20,7 @@ Once you have been added as a team member, you are a member of the Contributors 
 
 From the project admin content, **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). 
 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](_shared/code-tfvc.md)]
 
 ## Related notes 
 

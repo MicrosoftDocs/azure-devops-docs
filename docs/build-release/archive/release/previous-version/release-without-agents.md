@@ -328,7 +328,7 @@ You also need a build definition that builds your app.
      }
    }
 
-   FileCopy -ConfigurationData $ConfigData ��"Verbose
+   FileCopy -ConfigurationData $ConfigData --"Verbose
    ```
    
    The parameter values `$AllNodes` and `$Node` in this example are from 

@@ -35,7 +35,7 @@ This eliminates the need for automating license management on your own to reflec
 
     ![choose-add-to-add-group-rule](_img/manage-group-licensing/adding-group-rule.png)
 
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn’t be completed (for example, because your VSTS account didn’t have enough licenses purchased), choose **View status** to view details.
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your VSTS account didn't have enough licenses purchased), choose **View status** to view details.
 
 ## Resolve assignment errors
 

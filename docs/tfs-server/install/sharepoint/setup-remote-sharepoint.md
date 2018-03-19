@@ -13,7 +13,7 @@ ms.date: 09/09/2017
 
 # Set up remote SharePoint Products for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 If you have SQL Server and TFS running on the same server, your best alternative might be to install SharePoint on a different server to minimize competition for resources. The remote SharePoint scenario addresses such an installation.
 

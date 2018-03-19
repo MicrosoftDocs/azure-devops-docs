@@ -53,7 +53,7 @@ To get started with a code base, [set up Git](../git/gitquickstart.md) or [set u
 3.  When you access the server for the first time, a Windows Identity dialog box will appear. Fill in your credentials and choose the **OK** button.
 
     >[!TIP]
-    >If you select the **Remember me** check box you won't have to enter your credentials the next time you connect.
+    >If you select the **Remember me** check box you won't have to enter your credentials the next time you connect.
 
 4.  Choose your team project or team from the set of available links, or choose Browse to access all team projects and teams. 
 
@@ -165,7 +165,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project.
+2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project.
 
 [//]: # (::: moniker-end)
 
@@ -181,7 +181,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC719958.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
+2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project. 
 
 [//]: # (::: moniker-end)
 
@@ -214,7 +214,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	> [!NOTE]  
-	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
+	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
@@ -236,7 +236,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     To learn more, see [Bulk add work items with Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md).
 
 >[!NOTE]  
->If the team project is moved to a different team project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the team project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
+>If the team project is moved to a different team project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the team project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
 
 ### Work offline
 

@@ -15,9 +15,9 @@ ms.technology: vs-devops-admin
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-When you install SQL Server, you must consider two factors regarding collation settings that could affect your Team Foundation Server deployment:
+When you install SQL Server, you must consider two factors regarding collation settings that could affect your Team Foundation Server deployment:
 
--   Requirements for Team Foundation Server 
+-   Requirements for Team Foundation Server 
 
 -   All instances of SQL Server in your Team Foundation Server deployment must use the same settings
 
@@ -25,7 +25,7 @@ You can set collation settings for the Database Engine and SQL Server Analysis S
 
 ## Requirements for Team Foundation Server
 
-To work with Team Foundation Server, the collation settings for SQL Server must be case insensitive, accent sensitive, and not binary. If multiple SQL Server are running an instance of Database Engine or SQL Server Analysis Services for Team Foundation Server, the collation settings that you use must be the same across all these servers.
+To work with Team Foundation Server, the collation settings for SQL Server must be case insensitive, accent sensitive, and not binary. If multiple SQL Server are running an instance of Database Engine or SQL Server Analysis Services for Team Foundation Server, the collation settings that you use must be the same across all these servers.
 
 SQL Server bases your default collation settings on the locale of your operating system. The default setting for U.S. English and most other locales often meets the requirements for Team Foundation Server. However, those settings might not support all of the data that your organization must store in Team Foundation Server. In that case, you must find a setting that supports your data and is accent sensitive, not case sensitive, and not binary.
 

@@ -13,7 +13,7 @@ ms.date: 02/12/2018
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
-If you’ve deleted a package from Visual Studio Team Services (VSTS), builds that depend on that package will start to fail.  You won’t be able to repush that package to the feed because of [immutability](../feeds/immutability.md).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
+If you've deleted a package from Visual Studio Team Services (VSTS), builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../feeds/immutability.md).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
 
 ## Recover a deleted package
 

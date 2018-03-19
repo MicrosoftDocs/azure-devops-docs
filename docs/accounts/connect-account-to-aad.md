@@ -38,7 +38,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 ## Understand where you're starting from
 
-While the steps to connect your VSTS account to Azure AD are consistent, it’s important to understand where you're starting from before connecting your VSTS account to your target Azure AD tenant.
+While the steps to connect your VSTS account to Azure AD are consistent, it's important to understand where you're starting from before connecting your VSTS account to your target Azure AD tenant.
 
 One of the following scenarios likely applies to your situation. For example, "yourname"@fabrikam.com is replaced with jamalhartnett@fabrikam.com:
 
@@ -59,7 +59,7 @@ The following steps outline the high-level process of connecting VSTS to Azure A
 
 1. Ensure all VSTS users are in the target Azure AD tenant, either as members or [Business-to-Business (B2B)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) guests.
 2. Inform your users of the upcoming change and ask them to check in all code changes before the process begins.
-3. Connect your VSTS account to your organization’s directory.
+3. Connect your VSTS account to your organization's directory.
 4. Inform users of the completed change and that they should sign in with their Azure AD credentials from now on.
 
 ## Ensure all VSTS users are in the target Azure AD tenant
@@ -90,7 +90,7 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
 ## Inform users of the upcoming change
 
-While there is no downtime, users will be affected by this change, so it's best to let them know before you begin this process. Let them know ahead of time that there will be a short series of steps for each user to complete and that as the organization transitions from Microsoft to Azure AD identities and the emails match, users’ benefits will continue to work with their new Azure AD identity.
+While there is no downtime, users will be affected by this change, so it's best to let them know before you begin this process. Let them know ahead of time that there will be a short series of steps for each user to complete and that as the organization transitions from Microsoft to Azure AD identities and the emails match, users' benefits will continue to work with their new Azure AD identity.
 
 ## Determine which user is performing the connection of VSTS to Azure AD
 
@@ -149,7 +149,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 ## Inform users of the completed change
 
-Visual Studio subscription administrators assign subscriptions to a user’s corporate email so that they can get the welcome email and notifications about the subscription.  If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription.  As your organization transitions from Microsoft to Azure AD identities and the emails match, your user’s benefits will continue to work with their new Azure AD identity.
+Visual Studio subscription administrators assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription.  If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription.  As your organization transitions from Microsoft to Azure AD identities and the emails match, your user's benefits will continue to work with their new Azure AD identity.
 
 When you inform your users of the completed change, include the following tasks that each user in the VSTS account must complete:
 
@@ -165,7 +165,7 @@ When you inform your users of the completed change, include the following tasks 
 
     c. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 
-3. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure AD identity or simply [close your Microsoft account](#optional-close-the-temporary-msa-if-you-created-one) if it’s no longer needed.
+3. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure AD identity or simply [close your Microsoft account](#optional-close-the-temporary-msa-if-you-created-one) if it's no longer needed.
 
 4. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
 
@@ -182,7 +182,7 @@ When you inform your users of the completed change, include the following tasks 
 
 #### Q: Will my users still retain their existing Visual Studio subscriptions?
 
-A: Visual Studio subscription administrators typically assign subscriptions to a user’s corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user’s benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity’s email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
+A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user's benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity's email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
 
 #### Q: What if my SSH token is no longer valid?
 
@@ -198,13 +198,13 @@ A: Complete the following steps:
 
 A: Clear the browser cache and delete any cookies for the session.
 
-#### Q What if my work items are indicating that the users aren’t valid?
+#### Q What if my work items are indicating that the users aren't valid?
 
 A: Clear the browser cache and delete any cookies for the session.
 
-#### Q Why can’t I make purchases after connecting to a directory?
+#### Q Why can't I make purchases after connecting to a directory?
 
-A: By changing the directory associated with your Azure subscription to the directory your VSTS account uses, you’ll be able to make purchases again. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory).
+A: By changing the directory associated with your Azure subscription to the directory your VSTS account uses, you'll be able to make purchases again. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory).
 
 ![Select Azure subscription](_img/connect-account-to-aad/select-azure-subscription.png)
 

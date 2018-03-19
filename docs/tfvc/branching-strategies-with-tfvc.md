@@ -111,7 +111,7 @@ The TFVC Feature Isolation branching strategy is similar to the Git [topic branc
 
 > Authors: Jesse Houwing, Marcus Fernandez, Mike Fourie, and Willy Schaub
  
-*(c) 2015 Microsoft Corporation.Ã¿All rights reserved.Ã¿This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

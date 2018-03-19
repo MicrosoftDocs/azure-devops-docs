@@ -19,7 +19,7 @@ To prevent workspace errors from occurring during version control or build opera
 
 **Required permissions**
 
-To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
+To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 To use the **tf workspaces** command on the client computer, your **Read** permission must be set to **Allow**.
 
@@ -32,7 +32,7 @@ To use the **tf workspaces** command on the client computer, your **Read** permi
 To update the cache for tracking work items, you invoke the **StampWorkitemCache** Web method. This method forces client computers to update the cache the next time that they connect to the application-tier server. This method also synchronizes the workspaces that are defined on the client computers.
 
 >**Note:**  
->When you invoke the **StampWorkitemCache** Web method, the performance of Visual Studio Team Foundation Server might temporarily degrade. The performance impact depends on how many Team Foundation users are connected when you invoke the method.
+>When you invoke the **StampWorkitemCache** Web method, the performance of Visual Studio Team Foundation Server might temporarily degrade. The performance impact depends on how many Team Foundation users are connected when you invoke the method.
 
 To refresh the cache for tracking work items on client computers:
 

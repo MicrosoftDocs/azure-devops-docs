@@ -357,7 +357,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
@@ -1458,7 +1458,7 @@ build-release\tasks\build\_img
 <p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
 
 
- 
+ 
 
 </td>
 <td width="50%">
@@ -1730,7 +1730,7 @@ build-release\tasks\build\_img
 ### Marketplace
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for VSTS or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
-</blockquote> 
+</blockquote> 
 
 <table>
 <tbody>
@@ -2803,7 +2803,7 @@ Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/3305
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
 
-<!---   
+<!---   
 S98 updates
 
 TFS 2015 Update 2 updates
@@ -2830,4 +2830,4 @@ You now have the ability to click a work item and perform specific actions using
 
 
 Support for Extensions
---> 
+--> 

@@ -26,14 +26,14 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Default work tracking permissions and access 
 
-[!INCLUDE [temp](_shared/work.md)]
+[!INCLUDE [temp](_shared/work.md)]
 
 
 ## Test management permissions   
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](_shared/test.md)]
 
 
 Area permissions for web-based test case management and test execution control access to the following actions.  

@@ -166,11 +166,11 @@ Parameters:
   
 ```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
-   /teamproject:IceCream /destinationteamproject:ToyStore  
+   /teamproject:IceCream /destinationteamproject:ToyStore  
    /clonerequirements  
-   /suiteid:234 /destinationsuiteid:567   
-   /overridefield:"Iteration Path"="ToyStore\sprint3"  
-   /overridefield:"Area Path"="ToyStore\catalog"  
+   /suiteid:234 /destinationsuiteid:567   
+   /overridefield:"Iteration Path"="ToyStore\sprint3"  
+   /overridefield:"Area Path"="ToyStore\catalog"  
   
 ```
   

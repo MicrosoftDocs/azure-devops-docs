@@ -63,7 +63,7 @@ Make sure that you're an administrator on the servers and in SQL Server and TFS.
 <a name="detach-the-coll"></a>
 ## 1-a. Detach the collection
 
-First detach the collection from the deployment of TFS on which it is running. Detaching a collection stops all jobs and services as well as the collection database itself. In addition, the detach process copies over the collection-specific data from the configuration database and saves it as part of the team project collection database.
+First detach the collection from the deployment of TFS on which it is running. Detaching a collection stops all jobs and services as well as the collection database itself. In addition, the detach process copies over the collection-specific data from the configuration database and saves it as part of the team project collection database.
 
 ### To detach a team project collection
 
@@ -339,7 +339,7 @@ After you attach the renamed collection and remove all duplicate projects, you m
 If your deployment uses SharePoint Products, it is strongly recommended that the service account for TFS be a member of the **Farm Administrators** group.
 
 > [!NOTE]
-> You can split a team project collection without granting this membership to the service account for TFS. However, you will see errors when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the split operation.
+> You can split a team project collection without granting this membership to the service account for TFS. However, you will see errors when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the split operation.
 
 
 ### To repair the connection to a SharePoint Web application
