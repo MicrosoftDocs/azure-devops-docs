@@ -351,27 +351,27 @@ First, no matter what VSTS region you import into the following IP must be grant
 
 Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    Import Service - Central United States       |    52.173.74.9      |
-|    Import Service - West Europe                 |    40.115.43.138    |
-|    Import Service - Australia East              |    13.75.134.204    |
-|    Import Service - Brazil South                |    104.41.24.164    |
-|    Import Service - India South                 |    13.71.120.31     |
-|    Import Service - Canada Central              |    52.237.18.100    |
-|    Import Service - East Asia (Hong Kong)       |    13.75.106.194    |
+|    Service                                      |    IP                               |
+|-------------------------------------------------|-------------------------------------|
+|    Import Service - Central United States       |    52.173.74.9, 52.165.184.188      |
+|    Import Service - West Europe                 |    40.115.43.138, 13.95.15.128      |
+|    Import Service - Australia East              |    13.75.134.204                    |
+|    Import Service - Brazil South                |    104.41.24.164                    |
+|    Import Service - India South                 |    13.71.120.31                     |
+|    Import Service - Canada Central              |    52.237.18.100, 52.237.24.61      |
+|    Import Service - East Asia (Hong Kong)       |    13.75.106.194                    |
   
 Next you will need to grant VSTS access. Again, you only need to grant an exception for the VSTS instance in the region that you're importing into.  
 
-|    Service                                      |    IP               |
-|-------------------------------------------------|---------------------|
-|    VSTS - Central United States                 |    13.89.236.72     |
-|    VSTS - West Europe                           |    40.68.34.220     |
-|    VSTS - Australia East                        |    13.75.145.145    |
-|    VSTS - Brazil South                          |    191.232.37.247   |
-|    VSTS - India South                           |    104.211.227.29   |
-|    VSTS - Canada Central                        |    52.237.19.6      |
-|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40     |
+|    Service                                      |    IP                            |
+|-------------------------------------------------|----------------------------------|
+|    VSTS - Central United States                 |    13.89.236.72                  |
+|    VSTS - West Europe                           |    52.166.54.85, 13.95.233.212   |
+|    VSTS - Australia East                        |    13.75.145.145                 |
+|    VSTS - Brazil South                          |    191.232.37.247                |
+|    VSTS - India South                           |    104.211.227.29                |
+|    VSTS - Canada Central                        |    52.237.19.6                   |
+|    VSTS - East Asia (Hong Kong)                 |    52.175.28.40                  |
 
 If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
 
