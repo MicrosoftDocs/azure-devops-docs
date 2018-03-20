@@ -75,7 +75,7 @@ will automatically execute the unit tests it contains.
    and open the project where you checked in the sample app.
 
 1. Open the **Build &amp; Release** hub and, in the **Builds** tab, choose
-   **+ New definition**. 
+   **+ New definition**. Or, if you already have build definitions, choose the **+ New** button. 
 
    ![Starting a new build definition](_img/example-continuous-testing/example-continuous-testing-20.png)
 
@@ -109,19 +109,23 @@ will automatically execute the unit tests it contains.
 
    ![Viewing the build results](_img/example-continuous-testing/example-continuous-testing-29.png)
 
-   [How do I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
+   [How can I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
 
 1. The **Tests** tab provides comprehensive results of executing the unit tests defined in the
-   solution. Use the **Outcome** list to show the tests that passed.
+   solution. Use the filters lists to show the tests that passed (the default is to show just tests that failed).
 
    ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-30.png)
 
    [What are the typical types of tests I can use to validate my app?](reference-qa.md#qa-more-tests)
 
-1. Choose the test summary item at the top of the list of tests to open the **Test** hub
-   in a new browser window, showing a summary and charts for this test run.
+1. Choose the test summary item at the top of the list of tests and then choose the corresponding link
+   in the right-hand pane to open the run summary in a new browser window.
 
-   ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-31.png)
+   ![Opening the test details](_img/example-continuous-testing/example-continuous-testing-30a.png)
+
+1. The **Run summary** page shows a summary and charts for this test run, and you can use the links to dive deeper into the results.
+
+   ![Viewing the test details](_img/example-continuous-testing/example-continuous-testing-31.png)
 
 >For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
