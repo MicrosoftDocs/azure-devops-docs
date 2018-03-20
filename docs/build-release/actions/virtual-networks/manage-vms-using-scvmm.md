@@ -123,7 +123,9 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

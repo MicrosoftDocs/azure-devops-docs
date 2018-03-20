@@ -87,7 +87,9 @@ You can avoid these issues by instead using the [Copy Files step](copy-files.md)
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 
 <!-- ENDSECTION -->

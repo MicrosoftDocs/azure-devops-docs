@@ -141,6 +141,8 @@ Yes: [Add a build task](../../extend/develop/add-build-task.md)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

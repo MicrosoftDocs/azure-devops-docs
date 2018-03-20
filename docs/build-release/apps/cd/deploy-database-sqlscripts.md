@@ -182,7 +182,9 @@ You're now ready to create a release, which means to start the process of runnin
 You can use a PowerShell task to execute other types of SQL scripts.
 For more details, see [Perform SQL server actions in VSTS or TFS](sql-server-actions.md).
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

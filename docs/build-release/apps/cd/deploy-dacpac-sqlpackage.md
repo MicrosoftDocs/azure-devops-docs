@@ -116,7 +116,9 @@ This will result in deploying the database DACPAC to Azure SQL Database:
 You can use a PowerShell task to execute other types of SQL scripts.
 For more details, see [Perform SQL server actions in VSTS or TFS](sql-server-actions.md).
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

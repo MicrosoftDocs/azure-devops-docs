@@ -181,7 +181,9 @@ The [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-
 allows complete separation of resources and management within the same cluster. So namespace can be used
 to create multiple environments such as *Dev*, *QA*, and *Production* in the same ACS Kubernetes cluster.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 
