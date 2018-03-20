@@ -114,6 +114,6 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
     TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
     ```  
   
-## Related notes
+## Related articles
 -  [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)   
 -  [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md)

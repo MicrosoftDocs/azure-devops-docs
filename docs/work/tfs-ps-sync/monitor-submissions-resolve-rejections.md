@@ -97,7 +97,7 @@ ms.date: 01/12/2017
 |**Completed Work**|**Project Server Completed Work**|  
 |**Remaining Work**|**Project Server Remaining Work**|  
    
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Top-down planning of business requirements](top-down-plan-mapped-team-project.md)   
  [Manage project details](manage-project-details.md)   

@@ -42,7 +42,7 @@ A: Symbols will have the same retention as the build. When you delete a build, y
 
 #### Q: Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
-A: No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn’t support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs.
+A: No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn't support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs.
 
 #### Q: Is this available in TFS?
 

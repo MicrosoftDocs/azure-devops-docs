@@ -7,8 +7,9 @@ ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # FAQs for load testing
 
@@ -226,15 +227,16 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 * **Performance counters** A smaller subset of the performance counter data is available while a test is running.
 
-* **Views** When the load test run has completed, the [Summary View](https://msdn.microsoft.com/library/ms404677%28v=vs.140%29.aspx#SummaryView) and [Details View](https://msdn.microsoft.com/library/ms404677%28v=vs.140%29.aspx#DetailsView) are available.
+* **Views** When the load test run has completed, the Summary View and Details View are available.
 
 ### Q: Can load tests use other test types in their test mix besides web performance tests?
 
-**A**: Yes, you can include unit tests and [coded UI tests](https://msdn.microsoft.com/library/dd286652.aspx).
+**A**: Yes, you can include [unit tests](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
+and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
 
 ### Q: Can virtual users simulate pausing between test steps?
 
-**A**: Yes, you can [specify think times](https://msdn.microsoft.com/library/dd997697.aspx) to simulate the time spent by a user on a web page.
+**A**: Yes, you can [specify think times](https://docs.microsoft.com/visualstudio/test/edit-think-times-in-load-test-scenarios) to simulate the time spent by a user on a web page.
 
 ### Q: Why should I use Cloud-based Load Testing?
 
@@ -326,7 +328,7 @@ you might be able to run the load test right away.
 ### Q: How do I provide different values to the same test?
 
 **A**:  Use a .csv file or an Excel spreadsheet. Using SQL Server is currently not supported. 
-Learn how to [supply values to your test](https://msdn.microsoft.com/library/ms243142.aspx).
+Learn how to [supply values to your test](https://docs.microsoft.com/visualstudio/test/add-a-data-source-to-a-web-performance-test).
 
 ### Q: Help, I'm having problems with my agents!
 
@@ -362,7 +364,7 @@ edit the think time in the Properties view.
 ### Q: Where can I get more information about simulating real-world loads?
 
 **A**: Learn more about how to specify 
-[web performance test properties, load test scenario properties, and run settings properties](https://msdn.microsoft.com/library/ff406975.aspx).
+[web performance test properties, load test scenario properties, and run settings properties](https://docs.microsoft.com/visualstudio/test/edit-load-tests).
 
 ### Q: Can I run load tests locally and in the cloud from the same project?
 
@@ -457,13 +459,12 @@ by your load test or test scripts.
 
 **A**: Your downloaded reports are stored in a local SQL Server Express database. 
 You can 
-[change the default location](http://msdn.microsoft.com/library/ms318550.aspx), 
+[change the default location](https://docs.microsoft.com/visualstudio/test/manage-load-test-results-in-the-load-test-results-repository), 
 if you want. You can also store all the reports together for everyone by changing 
 the location for each user to the same database.
 
 SQL Server Express works best for storing test results from a trial run. 
 For better performance as you download more reports, use SQL Server. 
-[Learn more](https://msdn.microsoft.com/library/ms182600.aspx)
 
 ### Q: How should I view test logs after downloading the test results locally?
 
@@ -663,7 +664,7 @@ ignore the case or convert test names to lower case.
 and later versions, the default value for the TimingDetailsStorage property 
 was changed from AllIndividualDetails to None. If you want to collect the individual timings, 
 you must specifically set TimingDetailsStorage property to be AllIndividualDetails. 
-See [Load Test Run Settings Properties](https://msdn.microsoft.com/library/ff406976.aspx).
+See [Load Test Run Settings Properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
 
 ----------
 

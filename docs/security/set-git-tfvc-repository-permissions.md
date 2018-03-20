@@ -7,8 +7,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: douge
 ms.date: 12/12/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Set repository permissions for Git or TFVC
 

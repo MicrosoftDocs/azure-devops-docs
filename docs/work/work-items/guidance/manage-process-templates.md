@@ -15,13 +15,13 @@ ms.date: 02/26/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From Visual Studio Team Services (VSTS), you can only download process templates.  
 
 When you create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a team project or create a team project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 >
 >For TFS 2018 and later version, if you want to use SQL Server Reporting with your on-premises TFS, then you'll have to add support after you create your team project. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support).  
@@ -135,12 +135,12 @@ For additional restrictions, see [Naming restrictions](../../../collaborate/nami
 - Process template total size should be 2 GB or less, or project creation will fail.
 - The upload process performs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Note that duplicate tags in an XML file can cause errors. If there is no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. 
 >
 >See [Process template plug-ins: Index to XML element definitions](../../customize/reference/process-templates/process-template-plug-ins-xml-elements-index.md).
 
-## Related notes  
+## Related articles  
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
 

@@ -8,8 +8,9 @@ robots: NOINDEX, NOFOLLOW
 ms.manager: douge
 ms.author: alewis
 ms.date: 3/14/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Prepare permissions
 

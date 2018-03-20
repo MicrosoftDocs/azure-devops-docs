@@ -9,7 +9,9 @@
 - name: Quickstarts
   items:
   - name: Schedule sprints
-    href: define-sprints.md   
+    href: define-sprints.md 
+  - name: Define iteration paths or sprints
+    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json    
 - name: Tutorials
   items:
   - name: Plan a sprint
@@ -30,10 +32,12 @@
     href: best-practices-scrum.md
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
+  - name: About areas and iterations
+    href: ../customize/about-areas-iterations.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
-    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: How-to Guides
@@ -49,7 +53,7 @@
   - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Switch project or team focus
-    href: ../../teams/switch-team-context.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../settings/switch-team-context.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Default permissions & access (Security)"

@@ -7,8 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # IntelliJ Plug-in for VSTS & TFS Frequently Asked Questions (FAQ)
 

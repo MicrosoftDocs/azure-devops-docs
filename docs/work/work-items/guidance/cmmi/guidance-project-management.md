@@ -63,7 +63,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 
    
 
-## Related notes
+## Related articles
 - **The Project Cycle/[Project activities](guidance-project-activities.md):** Start the project, gather requirements, create a project plan, divide it into iterations, and deliver releases. Manage risks, and manage changes to the plan.    
 - **The Iteration Cycle/[Iteration activities](guidance-iteration-activities.md):** Review and update requirements, plan the tasks to implement requirements, and manage issues as they occur.  
 - [CMMI process](../cmmi-process.md)   

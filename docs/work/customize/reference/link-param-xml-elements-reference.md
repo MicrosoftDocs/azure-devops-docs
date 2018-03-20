@@ -113,6 +113,6 @@ The following example shows how you can add a hyperlink to the label for a field
 ```
 
   
-## Related notes  
+## Related articles  
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Design the work item form](design-work-item-form.md)

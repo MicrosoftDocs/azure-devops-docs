@@ -15,7 +15,7 @@ ms.date: 02/02/2018
 <b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
 >Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
  
@@ -142,7 +142,7 @@ The Development links control displays all of your development links, whether ba
 
 The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.  
 
->[!NOTE]  
+> [!NOTE]    
 >The link types, `Found in build` and `Integrated in build` are valid for VSTS.  
 
 > [!div class="tabbedCodeSnippets"]
@@ -423,7 +423,7 @@ WorkItemFiltersScope="Project" &gt;
 
 
 
-## Related notes 
+## Related articles 
 
 You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../track/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics: 
 

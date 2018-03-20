@@ -7,8 +7,9 @@ ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Work effectively from your account hub 
 
@@ -171,4 +172,4 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 - [Work in the web portal](work-web-portal.md) 
 - [Connect to team projects](connect-team-projects.md)  
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 

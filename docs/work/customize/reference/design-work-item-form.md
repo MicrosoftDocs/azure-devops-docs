@@ -346,7 +346,7 @@ Three-Column Layout
   
 ```  
   
-## Related notes  
+## Related articles  
 - [Change the work item form layout](change-work-item-form-layout.md)  
 -  [Customize your work tracking experience](../customize-work.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   

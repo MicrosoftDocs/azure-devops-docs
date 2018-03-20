@@ -148,7 +148,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
-## Related notes 
+## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
 
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)

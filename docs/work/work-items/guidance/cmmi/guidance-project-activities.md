@@ -97,6 +97,6 @@ To make the most effective use of MSF for [CMMI Process Improvement](guidance-ba
   
 -   Devote resources to increasing test coverage and to performing manual tests.  
   
-## Related notes
+## Related articles
 - [Background to CMMI](guidance-background-to-cmmi.md)
 - [CMMI process](../cmmi-process.md)

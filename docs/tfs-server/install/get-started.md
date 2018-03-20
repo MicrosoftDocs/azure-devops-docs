@@ -9,9 +9,10 @@ toc: show
 ms.manager: douge
 ms.author: aaronha
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < vsts') 
+ 
 
 # Install and configure TFS
 

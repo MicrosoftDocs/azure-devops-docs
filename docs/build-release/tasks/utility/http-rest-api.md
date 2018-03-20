@@ -7,8 +7,9 @@ ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Utility: Invoke HTTP REST API
 
@@ -44,7 +45,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApi).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -62,4 +63,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
     successCriteria:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

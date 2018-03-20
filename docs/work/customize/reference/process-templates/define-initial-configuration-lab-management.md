@@ -47,6 +47,6 @@ The names of the file, the folder, and the plug-in for the default process templ
 </tasks>  
 ```  
   
-## Related notes  
+## Related articles  
 -  [Configure and administer Lab Management](https://msdn.microsoft.com/en-us/library/dd936084.aspx)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)

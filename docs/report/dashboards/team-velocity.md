@@ -9,9 +9,9 @@ ms.topic: get-started-article
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/14/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018 
 ---
-
 
 <!--- provides support for FWLINK https://go.microsoft.com/fwlink/?linkid=841878; Update when topic goes live --> 
 
@@ -39,7 +39,7 @@ There are two velocity charts, the one you access by adding the Velocity widget 
  
 ### Prerequisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 

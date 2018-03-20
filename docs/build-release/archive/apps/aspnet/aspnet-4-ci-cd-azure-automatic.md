@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
@@ -249,7 +250,9 @@ may encounter the following known issues:
 
 1. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

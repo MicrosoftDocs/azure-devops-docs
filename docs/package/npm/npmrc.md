@@ -7,9 +7,10 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Set up your client's npmrc
 
@@ -23,7 +24,7 @@ All Package Management feeds require authentication, so you'll need to store cre
 
 VSTS recommends using two **_.npmrc_** files:
 
-1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project’s **_package.json_**.  It should contain a “registry” line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
+1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
     1. From your **Packages** page, click _Connect to Feed_
 
@@ -33,17 +34,17 @@ VSTS recommends using two **_.npmrc_** files:
 
         ![Connect to feed from VSTS Package Management](../_shared/_img/connect-to-feed-npm-registry.png)
         
-2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project’s **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
+2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
 This enables you to share project's **_.npmrc_** with the whole team while keeping your credentials secure.
 
 ## Set up authentication on your dev box
-You should have a project specific **_.npmrc_** containing only your Feed’s registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project’s **_package.json_**.
+You should have a project specific **_.npmrc_** containing only your Feed's registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project's **_package.json_**.
 
-> **IMPORTANT:** There can only be a single “registry=” line in your **_.npmrc_**.  Multiple registries are possible with [scopes](..//npm/scopes.md) and our new upstream feature (discussed here).
+> **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [scopes](..//npm/scopes.md) and our new upstream feature (discussed here).
 
 ### Windows
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project’s **_package.json_**.
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
 
 ```json
 "scripts": {

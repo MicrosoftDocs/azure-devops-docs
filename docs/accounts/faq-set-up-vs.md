@@ -7,8 +7,9 @@ ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/09/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #	Troubleshoot setting up Visual Studio with VSTS
 

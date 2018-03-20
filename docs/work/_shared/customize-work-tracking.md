@@ -1,7 +1,11 @@
 
 
 <a id="customize-work-tracking" />
-### Customize work tracking  
 
-You can customize work item types by adding custom fields, custom workflow states, and custom pages on the form. The methods available to you depend on which platform you work from. For an overview of what you can customize, see [Customize work](/vsts/work/customize/customize-work).
+::: moniker range="vsts"
+You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](/vsts/work/customize/inheritance-process-model). 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](/vsts/work/customize/on-premises-xml-process-model). 
+::: moniker-end

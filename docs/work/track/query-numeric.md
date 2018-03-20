@@ -109,7 +109,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 ### Sum of story points and their status   
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
@@ -120,7 +120,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 <img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
 ###Show a burnup chart of user stories for an iteration 
@@ -150,7 +150,7 @@ Based on the process your team project references, you can assign the following 
 
 ### Sum of remaining work per developer 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
@@ -162,7 +162,7 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 <img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
 
 
->[!NOTE]  
+> [!NOTE]    
 >For information on system-defined sprint burndown charts, see [Sprint burndown](../scrum/sprint-burndown.md).
 
 
@@ -295,7 +295,7 @@ The following table describes the activity-based and numeric fields that you can
 
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
-## Related notes 
+## Related articles 
 For information on adding custom fields, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 The main tools you use to plan and track work are described here: 
@@ -341,4 +341,4 @@ Also, you can add custom work item types to a backlog. For details, see [Add or 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

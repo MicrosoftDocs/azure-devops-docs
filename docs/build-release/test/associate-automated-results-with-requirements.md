@@ -7,8 +7,9 @@ ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Associate automated test results with requirements
 

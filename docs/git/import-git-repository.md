@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/08/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Import a Git repo
 #### VSTS | TFS 2018 | TFS 2017 Update 1
@@ -21,7 +22,7 @@ This guide shows you how to import an existing Git repo from GitHub, Bitbucket, 
 * A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
   * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ## Import into a new repo
 
@@ -44,8 +45,8 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 >[!NOTE]
 >The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013")
+::: moniker-end
+::: moniker range=">= tfs-2013"
 
 ## Manually import a repo
 
@@ -75,8 +76,8 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
 ## Frequently asked questions
 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker-end
+::: moniker range=">= tfs-2017"
 
 Although most of the time the import is successful, the following conditions can cause problems.
 
@@ -97,15 +98,15 @@ The import service uses the [multi_ack](https://git-scm.com/book/en/v2/Git-Inter
 If the source repository does not provide this capability, the import service can fail to import from the given source.
 This failure can happen when creating import request or while import is in progress.
 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2013")
+::: moniker-end
+::: moniker range=">= tfs-2013"
 
 ### Can I import from previous versions of Team Foundation Server?
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
 This happens because of a contract mismatch between the latest VSTS/TFS and pre-2017 RTM versions of TFS.
 
-[//]: # (::: moniker-end)
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker-end
+::: moniker range=">= tfs-2017"
 
 ### Can I use MSA based credentials?
 Unfortunately, MSA (Microsoft Account, formerly Live ID) based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.
@@ -127,4 +128,4 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)
 
-[//]: # (::: moniker-end)
+::: moniker-end

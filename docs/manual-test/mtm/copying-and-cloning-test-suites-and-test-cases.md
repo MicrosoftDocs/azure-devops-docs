@@ -7,8 +7,9 @@ ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Copying and cloning test suites and test cases
 
@@ -166,11 +167,11 @@ Parameters:
   
 ```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
-   /teamproject:IceCream /destinationteamproject:ToyStore  
+   /teamproject:IceCream /destinationteamproject:ToyStore  
    /clonerequirements  
-   /suiteid:234 /destinationsuiteid:567   
-   /overridefield:"Iteration Path"="ToyStore\sprint3"  
-   /overridefield:"Area Path"="ToyStore\catalog"  
+   /suiteid:234 /destinationsuiteid:567   
+   /overridefield:"Iteration Path"="ToyStore\sprint3"  
+   /overridefield:"Area Path"="ToyStore\catalog"  
   
 ```
   

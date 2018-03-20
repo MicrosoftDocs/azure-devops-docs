@@ -8,8 +8,9 @@ ms.technology: vs-devops-build
 ms.topic: tutorial
 ms.date: 03/17/2018
 ms.author: mlearned
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Tutorial:  Deploy your ASP.NET App to Azure Virtual Machines with the Azure DevOps Project
 

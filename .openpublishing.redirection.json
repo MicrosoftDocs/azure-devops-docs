@@ -2,6 +2,61 @@
     "redirections":
 	[
         {
+            "source_path": "docs/integrate/api/xamlbuild/requests.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/queues.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/qualities.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/definitions.md",
+            "redirect_url": "/rest/api/vsts/build/definitions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/builds.md",
+            "redirect_url": "/rest/api/vsts/build/builds",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/overview.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/tags.md",
+            "redirect_url": "/rest/api/vsts/build/tags",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/definition-templates.md",
+            "redirect_url": "/rest/api/vsts/build/templates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/definitions.md",
+            "redirect_url": "/rest/api/vsts/build/definitions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/builds.md",
+            "redirect_url": "/rest/api/vsts/build/builds",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/overview.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/get-started/rest/basics.md",
             "redirect_url": "/rest/api/vsts",
             "redirect_document_id": false

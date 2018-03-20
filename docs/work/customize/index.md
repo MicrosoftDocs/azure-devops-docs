@@ -1,6 +1,6 @@
 ---
-title: Index to work item tracking customization topics in VSTS & TFS
-description: Index to topics for customizing your work tracking experience in VSTS and and Team Foundation Server (TFS)  
+title: Index to work item tracking customization topics in VSTS 
+description: Index to topics for customizing your work tracking experience in VSTS 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
@@ -11,9 +11,9 @@ ms.date: 09/21/2017
 
 # Customization  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+**VSTS**
 
-Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you work in VSTS, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
+Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you use the Inheritance or Hosted XML process models.  
 
 ## 5-Minute Quickstarts  
 
@@ -25,7 +25,6 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 - [About areas and iterations](about-areas-iterations.md)  
 - [Inheritance process model](inheritance-process-model.md)  
 - [Hosted XML process model](hosted-xml-process-model.md)  
-- [On-premises XML process model](on-premises-xml-process-model.md)  
 
 
 ## How-to Guides
@@ -39,10 +38,6 @@ Use the guidance provided in the following topics based on the process model or 
 - **Hosted XML process model**
 	- [Customize a Hosted XML process](import-process/customize-process.md)  
     - [Import a process](import-process/import-process.md)
-
-- **On-premises XML process model**
-    - [Add or modify a field](add-modify-field.md)
-    - [Add or modify a work item type](add-modify-wit.md)
 
 - **Process templates**
     - [Upload or download a process template](../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
@@ -61,8 +56,7 @@ Use the guidance provided in the following topics based on the process model or 
 ## Resources 
 
 - [Work items](../work-items/index.md)
-- [Scale & configure teams](../../teams/index.md)
+- [Scale & configure teams](../../settings/index.md)
 - [Account Management (VSTS)](../../accounts/index.md)
-- [TFS Server Administration](../../tfs-server/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 

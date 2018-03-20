@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Concurrent build and release pipelines in VSTS
 

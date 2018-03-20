@@ -429,17 +429,17 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes 
+## Related articles 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
-
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]   
 
 
 ### Backlog list order

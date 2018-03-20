@@ -7,8 +7,9 @@ ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Connect Microsoft Test Manager to your team project and test plan
 

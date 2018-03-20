@@ -7,8 +7,9 @@ ms.assetid: 962a1ba7-6fa3-44ae-a9c9-d61804b76ebc
 ms.manager: douge
 ms.author: robrodbe
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # How Git log history simplification works
 
@@ -185,7 +186,7 @@ Now, instead of panicking, you know that:
 * History simplification for files is turned on by default
 * The `--full-history` flag will give you a more comprehensive file history
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 **Bonus**: [VSTS has introduced a number of awesome history viewing options on the web](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
 If you don't want to go slogging through the command line, you can pull up the file you wish to view history for in our explorer.
@@ -193,4 +194,4 @@ You'll see a history filter where you can specify simple or non-simple history v
 
 ![Git Filters](./_img/git-log-history-simplification/filters.png)
 
-[//]: # (::: moniker-end) 
+::: moniker-end 

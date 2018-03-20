@@ -7,8 +7,9 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: douge
 ms.author: alewis
 ms.date: 11/13/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 
 # Hosted agents

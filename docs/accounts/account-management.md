@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # About account management
 

@@ -7,8 +7,9 @@ ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Deploy: Azure Key Vault
 
@@ -95,7 +96,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 
 For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -109,7 +110,7 @@ For more details, see [Get started with Azure Key Vault certificates](https://bl
 #   SecretsFilter: * # EditableOptions
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Contact Information
 

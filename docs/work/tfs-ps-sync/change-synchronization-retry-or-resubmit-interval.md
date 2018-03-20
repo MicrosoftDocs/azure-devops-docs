@@ -25,6 +25,6 @@ $collectionHive.SetValue("/Configuration/ProjectServer/StatusingResubmitInterval
 > [!NOTE]
 >  If you specify a resubmit interval value of 0, you disable resubmissions.  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

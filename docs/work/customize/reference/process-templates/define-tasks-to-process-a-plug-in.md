@@ -157,6 +157,6 @@ completionDescription="InProcessMessage"&gt;
 </task>  
 ``` 
   
-## Related notes  
+## Related articles  
 -  [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)   
 -  [Overview of process template files](overview-process-template-files.md)

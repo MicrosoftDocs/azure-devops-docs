@@ -8,15 +8,16 @@ ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 11/29/2017  
+monikerRange: 'vsts || >= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # New Queries Experience
 
 **VSTS | TFS 2018**   
 
->[!NOTE]    
-><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md)from your account profile.
+> [!NOTE]      
+><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md) from your account profile.
 
 The **New Queries Experience** streamlines many of the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
 
@@ -58,7 +59,7 @@ We plan to continue to invest in the Queries hub beyond the new features in this
 ## Send us your feedback
 Let us know what you think in the comment box that appears when you toggle the new hub on or off. Additionally, feel free to reach out to us via Developer Community with suggestions or issues. See also our [comprehensive feedback and support page](../../user-guide/provide-feedback.md).  
 
-## Related notes
+## Related articles
 
 - [View or run a query](view-run-query.md)
 - [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)

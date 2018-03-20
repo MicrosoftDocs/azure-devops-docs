@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: chrispat
 ms.date: 01/25/2018
+monikerRange: '>= tfs-2017 < vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2017 < vsts')
+
 
 # Run the agent with self-signed certificate
 

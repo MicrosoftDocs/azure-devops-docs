@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 11/14/2017
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Utility: Install Apple Certificate
 
@@ -35,7 +36,7 @@ xcode
 | Advanced - Custom Keychain Path | Full path to a custom keychain file. The keychain will be created if it does not exist. This option is visible when a custom keychain is selected. |
 | Advanced - Delete Custom Keychain | Select to delete the custom keychain from the agent after the build or release is complete. This option is visible when a custom keychain is selected. |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -54,4 +55,4 @@ xcode
     signingIdentity:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

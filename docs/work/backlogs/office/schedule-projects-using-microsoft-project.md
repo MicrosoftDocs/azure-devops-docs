@@ -14,12 +14,12 @@ ms.date: 02/22/2017
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in VSTS or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
 You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
->[!NOTE]  
+> [!NOTE]  
 >For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](../../../tfs-server/requirements.md#office).  
  
 **Project team tab ribbon** 
@@ -29,7 +29,7 @@ You can use Project 2010 or later versions to plan team projects, schedule tasks
   
 Project 2010 and later versions support several new project fields and functions. Depending on how you use Project to schedule team tasks, you may want to update the task work item form to display some of the new fields. To maintain new Project fields in both your project plan and in TFS, you have to customize the task work item type and the Microsoft Project Field mapping file for the team project. 
 
->[!NOTE]  
+> [!NOTE]  
 >Customizing the Project Field mapping file is only support for on-premises TFS and the On-premises XML process model.  
   
 <a name="NewFeatures"></a> 
@@ -42,7 +42,7 @@ By using Task Mode, which is accessed through the following Ribbon menu, you hav
 
 By using manually scheduled tasks, which are indicated by the ![Pinned task icon](_img/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >In order for team members to manually schedule their tasks, you'll have to [add the necessary project fields to the task work item](#download). You can only modify the task WIT definition for the On-premises XML process model.  
 
 Start and finish dates for autoscheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.
@@ -54,7 +54,7 @@ To learn more, see [Changes in Project 2010](http://go.microsoft.com/fwlink/?Lin
 
 By using Active Mode, you can determine the impact to the schedule when you specify some tasks as inactive. When you mark a task as inactive, you maintain all the data that is associated with the task, but you remove it from consideration in the schedule and resource allocation. 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >When you inactivate a task in Project, you do not inactivate the task in VSTS and TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
 
 **Scalable 64-bit support**. With 64-bit compatibility, Project provides performance improvements to support creation of very large and complex projects.
@@ -74,7 +74,7 @@ If you want team members to schedule tasks manually from a Team Foundation clien
 - To support manually scheduled tasks, add one or more of the pjTaskStartText, pjTaskFinishText, or pjTaskDurationText fields to the mapping file. You must map pj\*Text fields to String fields in Team Foundation. These fields accept text strings only.
 - The pjTaskStart, pjTaskFinish, and pjTaskDuration fields contain the scheduled committed dates and duration of a task. 
 
-	>[!TIP]  
+	> [!TIP]  
 	>By default, these fields are mapped based on the process template that was used to create your team project.
 
 - The scheduling engine uses the pjTaskScheduledStart, pjTaskScheduledFinish, and pjTaskScheduledDuration fields to store the calculated dates and duration of an autoscheduled task.
@@ -100,5 +100,5 @@ The project mapping file determines how the fields in each task are mapped to fi
 
 To learn more, see [TFSFieldMapping](../../customize/reference/upload-or-download-the-microsoft-project-mapping-file.md).   
   
-## Related notes
+## Related articles
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
