@@ -53,7 +53,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
 
 ## Collect video using the Visual Studio Test task
 
-1. To collect video, specify the data collector you want to use in a [runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
+1. To collect video, specify the data collector you want to use in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
    The video data collector captures a screen recording when tests are run.
 
 1. In the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task,
