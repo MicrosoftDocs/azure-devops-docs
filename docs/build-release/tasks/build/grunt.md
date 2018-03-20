@@ -91,6 +91,8 @@ See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

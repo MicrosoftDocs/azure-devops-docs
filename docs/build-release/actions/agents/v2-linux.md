@@ -263,7 +263,9 @@ You can use the template described above as to facilitate generating other kinds
 
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
 
@@ -273,10 +275,16 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vs
 
 [Run the agent behind a web proxy](proxy.md)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+::: moniker-end
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+::: moniker-end
 
+::: moniker range="< vsts"
 [!INCLUDE [include](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

@@ -82,7 +82,9 @@ The build agent must have the following capabilities:
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

@@ -101,7 +101,9 @@ a failure to be reported. For more details, see:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

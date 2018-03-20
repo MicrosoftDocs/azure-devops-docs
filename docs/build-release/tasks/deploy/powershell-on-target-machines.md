@@ -76,7 +76,9 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 
