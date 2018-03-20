@@ -34,6 +34,8 @@ information.
 
    ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
 
+> Also see [Analyze Load Test Results Using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer).
+
 <a name="opents"></a>
 ## Open a load test in VSTS
 
