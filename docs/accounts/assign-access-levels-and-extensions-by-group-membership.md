@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/20/2018
+ms.date: 03/20/2018
 monikerRange: 'vsts'
 ---
 
@@ -19,6 +19,9 @@ VSTS includes group-based licensing for Azure AD groups and VSTS groups.
 You can assign an access level or extensions to a group, and VSTS will ensure that those resources are assigned to all members of the group.
 When those users leave the group, those licenses are freed up and returned to your pool.
 This eliminates the need for automating license management on your own to reflect changes in your organizational structure on a per-user basis.
+
+>[!Note]
+>If you don't see this new feature enabled in your account, please allow for up to two weeks as it is being deployed.
 
 ## Assign required licenses
 
