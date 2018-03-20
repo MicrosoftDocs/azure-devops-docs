@@ -50,6 +50,8 @@ Here's how to move an entire team project collection. If you want to move part o
 
 -   How do I move a collection that uses SharePoint Products?
 
+-   How do I move a team project collection that includes deployment pools and/or deployment groups? 
+
 -   How do I move a team project collection that includes Lab Management?
 
 -   Can I move a team project collection that's integrated with Project Server?
@@ -246,6 +248,16 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 2.  Choose **Repair Connection**, and in the **Repair the connection to a SharePoint Web Application** dialog box, choose **Repair**.
 
 3.  In **Team Project Collections**, select the moved team project collection, choose the SharePoint Products tab, and modify the settings to point to the site collection database.
+
+### Q: How do I move a team project collection that includes deployment pools and/or deployment groups?
+
+**A:** If you want to move the collection to another deployment, you must delete the deployment pools, deployment groups before you start the move, 
+and recreate the deployment groups along with the security permission after the move. Creating the deployment groups will auto-create the deployment pools. 
+Once the deployment groups are set up, you can register the agents with the new TFS URL against the deployment groups. You will have to update the release definitions to use the new deployment groups. 
+
+### To setup deployment groups after moving the collection
+
+Refer to  [Create Deployment Groups](https://docs.microsoft.com/en-us/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
 
 ### Q: How do I move a team project collection that includes Lab Management?
 
