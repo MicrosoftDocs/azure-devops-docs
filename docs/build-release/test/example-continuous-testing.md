@@ -88,6 +88,10 @@ will automatically execute the unit tests it contains.
 
    ![Choosing the build type](_img/example-continuous-testing/example-continuous-testing-21.png)
 
+   > This example does not work with an ASP.NET Core app. If you need to build and test ASP.NET Core apps,
+   you must use the **ASP.NET Core** template, which adds multiple instances of the
+   [.NET Core task](../tasks/build/dotnet-core.md) instead of the tasks shown in this example.
+
 1. In the new build definition, select the **Process** item and then select the **Hosted VS2017** agent queue. 
 
    ![Choosing the default agent queue](_img/example-continuous-testing/example-continuous-testing-21a.png)
