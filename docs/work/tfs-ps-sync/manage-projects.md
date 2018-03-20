@@ -62,7 +62,7 @@ ms.date: 01/12/2017
 |**Change the configuration for synchronization**. You can remove components that you have configured to participate in data synchronization. However, you should always follow the recommended reconfiguration sequence when you remove such components.|[Remove a component](remove-component-from-synchronization.md)|  
 |**Add team project members to the enterprise resource pools**. To assign and manage Team Foundation users as resources in Project, you must add them to the enterprise resource pool. To make this process easier, you can configure Project Server to automatically synchronize the security groups with groups that have the same name in Active Directory. Also, you can synchronize users and resources in Project Server with the users in Active Directory across multiple domains and forests.|See the following pages on the Microsoft website:<br /><br /> -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2013)](http://msdn.microsoft.com/library/jj819320.aspx)<br />-   [Manage users, groups, and categories in Project Server 2013](http://msdn.microsoft.com/library/cc197571.aspx)|  
   
-## Related notes  
+## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   
  [Synchronization process overview](synchronization-process-overview.md)   
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)

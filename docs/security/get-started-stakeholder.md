@@ -8,10 +8,8 @@ ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 02/14/2018 
-monikerRange: '>= tfs-2013'
+ms.date: 03/01/2018
 ---
-
 
 # Get started as a Stakeholder  
 
@@ -30,30 +28,33 @@ Use this topic to learn:
 > * Understand the set of features you have access to
 
 ## First time signing in 
+::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
 
-1. If you're connecting to VSTS, click the link provided in the email invitation you should have received. 
+1. Click the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
+	::: moniker range="vsts"  
+	`http://AccountName.visualstudio.com/DefaultCollection/ProjectName`
+	::: moniker-end
+	::: moniker range=">= tfs-2013 <= tfs-2018"
+  	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
 
-  Or, open a browser window and enter the URL for the web portal.
-
-  **VSTS:**  ```http://AccountName.visualstudio.com/DefaultCollection/ProjectName```
- 
-  **On-premises TFS:**  ```http://ServerName:8080/tfs/DefaultCollection/ProjectName```
-
-  For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
+  	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
+	::: moniker-end
 
 2.  Enter your credentials. If you aren't able to sign in, ask the account owner or project administrator to add you as a member of the team project with Stakeholder access. 
 
+::: moniker-end
 
 <a id="create-work-item">  </a> 
 ## Add a work item
 
-> [!TIP]    
-> If you connect to VSTS, you now have access to the [Work Items page](../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
-
 You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/work-items/guidance/scrum-process.md), [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). 
  
+::: moniker range="vsts"	
+> [!TIP]    
+> Use the [Work Items page](../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
+::: moniker-end
     
-#### VSTS, TFS 2017
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
@@ -64,10 +65,10 @@ Enter a title and then save the work item. Before you can change the State from 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
 >[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
+::: moniker-end
 
-
-#### TFS 2015
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 From the Queries page, choose a work item from the New drop down menu.
 
@@ -75,17 +76,17 @@ From the Queries page, choose a work item from the New drop down menu.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
+::: moniker-end
 
 You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../teams/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../settings/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 	
->[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
+> [!NOTE]  
+> Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
 [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >	
 > For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md). 
-
 
 
 <a id="check-backlog">  </a> 
@@ -123,7 +124,6 @@ And, you can [create new queries or edit existing queries](../work/track/using-q
 <img src="_img/work-as-a-stakeholder-edit-query.png" alt="Query Editor" style="border: 1px solid #CCCCCC;" />
 
 
-
 ## Related notes 
 For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://www.visualstudio.com/team-services/compare-features/). See also these quickstart guides: 
 
@@ -136,23 +136,51 @@ If you want to provide a group of users access to provide feedback, then you don
 <a id="feature-access">  </a> 
 ### Stakeholder feature access
 
->[!NOTE]  
->**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
+::: moniker range="vsts || >= tfs-2018"
+
+The following features are available to Stakeholders from the web portal.
 
 > [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- View releases <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md) (TFS 2015.2) | [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>2</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) <br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md)<br/><br/>**Build & Release**<br/>- [View releases](../build-release/concepts/definitions/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md)|- [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../report/dashboards.md) <br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>7</sup> |
+
+**Notes:** 
+
+1. Stakeholders can assign existing tags to work items, but not create new tags. 
+2. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
+3. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
+4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
+5. Stakeholders can only view and approve releases.  
+6. Stakeholders cannot view markdown README files defined for repositories.  
+7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
+
+ 
+
+
+ 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+The following features are available to Stakeholders from the web portal of the listed TFS or later version. Those not annotated are available from all versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
+
+> [!div class="mx-tdBreakAll"]
+> |Work  |Account, Dashboards, and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>2</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>2, 3</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup><br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/><br/>- **Build & Release**<br/>- [View releases](../build-release/concepts/definitions/release/approvals/index.md) <sup>5</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md) <sup>5</sup> (TFS 2015.2) |- [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md) (TFS 2017)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) <sup>6</sup> (TFS 2017)<br/>- [View team dashboards](../report/dashboards.md) (TFS 2015)<br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS 2013, 2015) |
 
 **Notes:**   
-1. Stakeholders cannot view markdown README files defined for repositories.  
-2. In order to add users and assign licenses for VSTS, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
-3. Stakeholders can only view and approve releases.  
-4. Stakeholders can assign existing tags to work items, but not create new tags.  
-5. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
-6. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
-7. Stakeholders can save queries under My Queries but cannot save under Shared Queries. 
+1. Stakeholders can assign existing tags to work items, but not create new tags.  
+2. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
+3. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
+4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
+5. Stakeholders can only view and approve releases.  
+6. Stakeholders cannot view markdown README files defined for repositories.  
 
+
+::: moniker-end
 
 Also, Stakeholders cannot add or view [Delivery Plans](../work/scale/review-team-plans.md).   
 
@@ -171,6 +199,3 @@ If you need access to the following features&mdash;which support the daily work 
 > [!NOTE]   
 > Stakeholders can view administrative pages that support managing permissions, area and iteration paths, and more; however, for the most part, they can't modify any objects on these pages. The one exception is their ability to [manage users and access](../accounts/add-account-users-assign-access-levels.md).  
 
-
-
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 

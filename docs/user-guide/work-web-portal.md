@@ -1,6 +1,7 @@
 ---
-title: Navigate in the VSTS or TFS web portal 
-description: Guide to navigating within the web portal for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Navigate in the web portal 
+titleSuffix: VSTS & TFS
+description: Guide to using the web portal for Visual Studio Team Services or Team Foundation Server   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 493362ae-5318-4719-9e0f-48c74ff8f0ba
@@ -11,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Navigating in the web portal
+# Navigating in the web portal 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -166,7 +167,7 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 
 Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise.
 
-![Agile tool team assets](../work/scale/_img/agile-tools-team-assets.png)  
+![Agile tool team assets](../settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)  
 
 Also, teams can set their query and build favorites within **Team favorites** folders. For more information, see [Manage team assets](../work/scale/manage-team-assets.md).  
 

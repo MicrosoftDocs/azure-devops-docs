@@ -7,7 +7,8 @@ ms.technology: vs-devops-wit
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 
@@ -110,6 +111,6 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **importcategories**:  Import the Categories file      
   
 
-## Related notes
+## Related articles
 -  [Customize your work tracking experience](../../customize-work.md)   
 -  [On-premises XML process model](../../on-premises-xml-process-model.md)  

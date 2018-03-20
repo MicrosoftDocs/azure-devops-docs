@@ -98,7 +98,7 @@ The following example shows how to specify a task that creates the following WIT
 |**WORKITEMTYPE**|Required child element of **WORKITEMTYPES**. Specifies the path and name of the file that contains a type definition to upload.<br /> `<WORKITEMTYPE fileName="WITFilePathName" />`|  
 |**WORKITEMTYPES**|Required child element of the WorkItemTracking plug-in. Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload. <br/><code>&lt;WORKITEMTYPES&gt; <br/>      &lt;WORKITEMTYPE /&gt;   . . . <br/>&lt;/WORKITEMTYPES&gt; </code>  |  
   
-## Related notes
+## Related articles
 -  [All WITD elements](../all-witd-xml-elements-reference.md)   
 -  [Modify a field or add a custom field](../../add-modify-field.md)   
 -  [Add or modify a work item type ](../../add-modify-wit.md)   

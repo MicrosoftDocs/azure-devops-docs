@@ -17,7 +17,7 @@ ms.date: 02/16/2018
 
 Rollup provides summed values of select fields for all child work items of a parent. Because Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
->[!NOTE]  
+> [!NOTE]    
 >The system doesn't support rollup of the Effort, Story Points, or Size fields across product backlogs and portfolio backlogs.
 
 ## Native support of rollup within the web portal 
@@ -115,7 +115,7 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
 Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
   
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../../tfs-ps-sync/synchronize-tfs-project-server.md). 
 
 

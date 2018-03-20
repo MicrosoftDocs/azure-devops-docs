@@ -8,10 +8,11 @@ f1_keywords:
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
+monikerRange: 'vsts'
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 02/14/2018 
+ms.date: 03/20/2018 
 ---
 
 # View and add work items using the Work Items page  
@@ -20,13 +21,13 @@ ms.date: 02/14/2018
 
 View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
->[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only.
+> [!NOTE]     
+> **Feature availability:** The **Work Items** page is in preview and currently available from VSTS only.
 
 ## Prerequisites 
 
 - You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
-- To create work items, you must be a member of the Contributors group. If you don't have access to the team project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
+- To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../security/get-started-stakeholder.md). If you don't have access to the team project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
  
 
 ## Open the Work Items page
@@ -39,7 +40,7 @@ Open a browser window, click the **Work** hub, and then the **Work Items** page.
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
 
->[!NOTE]  
+> [!NOTE]    
 >Depending on the process chosen when the team project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
@@ -81,7 +82,7 @@ For example, here we choose User Story.
 ![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -159,7 +160,7 @@ Use the following three controls to manage your views.
 > | ![Filter](../_img/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
-## Related notes
+## Related articles
 - [Move, change, or delete work items (REcycle Bin)](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../collaborate/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)

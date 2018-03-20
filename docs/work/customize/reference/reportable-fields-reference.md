@@ -11,7 +11,7 @@ ms.date: 02/17/2017
 # Reportable fields reference for Visual Studio ALM
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
 >
 >For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
@@ -89,6 +89,6 @@ A default set of fields appears in the relational warehouse database or the cube
 |Size|The relative rating for the amount of work that a requirement will require to implement. (CMMI process template only)|Microsoft.VSTS.Scheduling.Size|Double|  
 |Story Points|A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it. (Agile process template only)|Microsoft.VSTS.Scheduling.StoryPoints|Double|  
   
-## Related notes
+## Related articles
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md)
 -  [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md)

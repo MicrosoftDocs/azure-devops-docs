@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../process/customize-process-field.md). 
 >
 >For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
@@ -81,7 +81,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
  For more information, see [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md).  
   
  
->[!NOTE]  
+> [!NOTE]    
 >For the Hosted XML process model, the following limits are placed on global list import: 
 >- Total of 64 global lists
 >- Total of 512 items per list
@@ -191,7 +191,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 </FIELD>  
 ```  
   
-## Related notes
+## Related articles
 
 -  [Apply a field rule](apply-rule-work-item-field.md)
 -  [Modify a field or add a custom field](../add-modify-field.md)  

@@ -7,30 +7,64 @@ ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/15/2017
+ms.date: 03/20/2018
 ---
 
 # Add and manage dashboards
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.4</b>
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Multiple team dashboards and widgets are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).    
+::: moniker-end
+
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
+::: moniker-end
 
+::: moniker range="tfs-2015"
 > [!NOTE]   
-> **Feature availability:** Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from Visual Studio Team Services (VSTS) and from the web portal for TFS 2015.1 or later version. 
->
-> If you connect to an on-premises TFS running TFS 2015 or earlier version, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later version. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
+::: moniker-end
 
+::: moniker range="tfs-2017"
+> [!NOTE]   
+> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
+::: moniker-end
 
-Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+<a id="permissions">  </a>
+## Prerequisites  
+::: moniker-end
 
-If you need to add a team first, see [add teams and team members](../../work/scale/multiple-teams.md). 
+::: moniker range="vsts"
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](/vsts/accounts/set-up-vs). 
+* If you haven't been added as a team member, [get added now](/vsts/accounts/add-account-users-assign-access-levels).
+* Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards.
+* To add, edit, or manage a team dashboard, you must be a team admin, a project admin, or have [dashboard permissions](dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../work/scale/add-team-administrator.md).
+::: moniker-end
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](/vsts/accounts/create-team-project). 
+* If you haven't been added as a team member, [get added now](/vsts/security/add-users-team-project).
+* Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards.
+* To add a widget to a team dashboard, you must be a team admin, a project admin, or have  [dashboard permissions](dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../work/scale/add-team-administrator.md).  
+::: moniker-end
+
+::: moniker range="tfs-2015"
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](/vsts/accounts/create-team-project). 
+* If you haven't been added as a team member, [get added now](/vsts/security/add-users-team-project).
+* Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view dashboards.
+* To add a widget to a team dashboard, you must be added to the [team administrator role for the team](../../work/scale/add-team-administrator.md).    
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Connect to the web portal for your team project 
-
-To add and manage dashboards, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
 
 Open a browser window and click the **Dashboards** hub. 
 
@@ -41,57 +75,80 @@ Open a browser window and click the **Dashboards** hub.
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 -->
 If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).    
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Add and name your dashboard 
 
 From the dashboards tab, click the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](../../teams/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), or request you be added as a [team admin](../../work/scale/add-team-administrator.md). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
 
-<a id="manage">  </a> 
-## Manage dashboards
+::: moniker-end
 
->[!NOTE]  
->**Feature availability:**  You can  configure the auto-refresh setting for each dashboard on VSTS and for TFS 2015.2 and later versions. For VSTS and TFS 2017.1 and later versions, you can [set dashboard permissions](dashboard-permissions.md). 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+<a id="manage">  </a> 
+## Manage dashboards, reorder and enable auto-refresh
 
 You can rename, reorder, or delete a dashboard. Also, you can enable auto-refresh, and the dashboard will automatically update every 5 minutes.  
 
-From VSTS and TFS 2017, you can also [manage dashboard permissions](dashboard-permissions.md).   
+<!---
+>[!NOTE]  
+>**Feature availability:**  You can  configure the auto-refresh setting for each dashboard on VSTS and for TFS 2015.2 and later versions. For VSTS and TFS 2017.1 and later versions, you can [set dashboard permissions](dashboard-permissions.md). 
+-->
+::: moniker-end
 
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <!---
 ### VSTS, TFS 2017
 -->
-To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png) wrench icon.
+1. To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png) wrench icon.
 
-<img src="_img/dashboards-configure-ts.png" alt="Open manage dashboards dialog" style="border: 2px solid #C3C3C3;" />   
+	![Open Manage dashboards dialog](_img/dashboards-configure-ts.png) 
 
+2. Drag and drop the dashboards into the sequence you want them to appear.  
 
-### Reorder and auto-refresh 
+	![Manage dashboards dialog](_img/manage-dashboards-ts.png) 
 
-1. Drag and drop the dashboards into the sequence you want them to appear.  
-
-	<img src="_img/manage-dashboards-ts.png" alt="Manage dashboards - VSTS" style="border: 2px solid #C3C3C3;" />  
-
-2. Click ![delete icon](_img/icons/delete_icon.png) to delete a dashboard and then click Save.  
-
-3. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
-
+3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
  
-<a id="permissions">  </a>
-### Required permissions
+4. To delete a dashboard, click the  ![delete icon](_img/icons/delete_icon.png).
+
+5. Click Save to save your changes. 
+
+You can also [manage dashboard permissions](dashboard-permissions.md).   
+::: moniker-end
+
+::: moniker range="tfs-2015"
+<!---
+### TFS 2015
+-->
+1. To manage dashboards, click the ![gear icon](../../_img/icons/admin-gear-icon.png) gear icon.
  
-If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../work/scale/add-team-administrator.md). 
+	![Open Manage dashboards dialog](_img/dashboards-open-manage-dashboards-tfs.png) 
 
-If you work in VSTS, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](dashboard-permissions.md). 
+2. Drag and drop the dashboards into the sequence you want them to appear.  
 
+	![Manage dashboards dialog](_img/manage-dashboards.png)   
+
+3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. The Auto-refresh feature requires TFS 2015.2 or later version.   
+
+4. To delete a dashboard, click the  ![delete icon](_img/icons/delete_icon.png).
+
+5. Click Save to save your changes. 
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Move or delete a widget from a dashboard  
 
 > [!NOTE]  
-> Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items.  
+> Just as you have to be a team admin, a project admin, or have the necessary permissions to add items to a dashboard, you must have the [necessary permissions](#permissions) to remove items.  
 
 Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
@@ -99,33 +156,21 @@ To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.p
 
 When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
-<!---
-### TFS 2015.1 - TFS 2015.3 
+> [!TIP]   
+> When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.  
 
-1. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon to open manage dashboards.</p>  
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+Note that you can drag and drop a widget from the catalog onto the dashboard.
+::: moniker-end
 
-	<img src="_img/dashboards-open-manage-dashboards-tfs.png" alt="Open manage dashboards dialog - TFS web portal" style="border: 2px solid #C3C3C3;" />  
-
-2.  Drag and drop the dashboards into the sequence you want them to appear.  
-
-	![Manage dashboards](_img/manage-dashboards.png)  
-
-3. Click ![delete icon](../../work/_img/icons/delete-icon.png) to delete a dashboard and then click Done.   
-
-4. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
-
-	> [!NOTE]  
-	> Feature availability: </b>The Auto-refresh feature is available from TFS 2015 Update 2 or later version.  </blockquote>  
-
--->
-
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Try this next 
 
-As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across the org as to status, trends, and progress. 
+As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across your org about status, trends, and progress. 
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
-
 
 See these additional resources to help you support your team:  
 - [Review the widget catalog](widget-catalog.md)
@@ -134,8 +179,8 @@ See these additional resources to help you support your team:
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/docs/integrate/api/dashboard/overview).  
-
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/dashboards).  
+::: moniker-end
 
 <!---  
 Only dashboard owners can change the configuration of their dashboards.  
@@ -205,9 +250,6 @@ Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard
 The [widget catalog](widget-catalog.md) describes all the available widgets, many of which are scoped to the selected team context.  
 
  
-> [!TIP]   
-> When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.  
-
 
 ### Configure a widget  
 After you add the widget, you may need to configure it. For example, to configure the Query tile widget, click the ![Configure widget icon](_img/icons/configure-icon.png) or the ![Actions icon](_img/icons/actions-icon.png) to open the configuration dialog.
@@ -221,8 +263,3 @@ And then select the query and specify any rules you want. (For TFS 2015.1 and la
 <img src="_img/dashboards-query-tile-config-ts.png" alt="Query tile configuration dialog" style="border: 2px solid #C3C3C3;" />  
 
 --> 
-
-
-
-
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  

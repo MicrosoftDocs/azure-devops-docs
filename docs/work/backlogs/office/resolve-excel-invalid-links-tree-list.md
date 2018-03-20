@@ -133,7 +133,7 @@ This message indicates that you can publish the changes that you made to the fie
   
 -   To modify hierarchical link relationships that are not locked in Excel, revise the query that you use to export the work items to exclude all work items whose links are locked. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.  
   
-## Related notes
+## Related articles
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Work in Excel or Project](track-work-vsts-tfs.md)

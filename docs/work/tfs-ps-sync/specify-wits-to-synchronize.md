@@ -98,7 +98,7 @@ ms.date: 01/12/2017
   
      You can verify whether the type has been removed by refreshing the team project in Team Explorer and then opening a work item of the type that you removed. The **Project Server** tab should be removed from the work item form.  
   
-## Related notes  
+## Related articles  
  [Define the work item types to synchronize](define-work-item-types-available-synchronization.md)   
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Manage mappings](manage-mappings-enterprise-project-team-project.md)   

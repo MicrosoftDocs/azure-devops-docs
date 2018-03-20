@@ -44,6 +44,6 @@ ms.topic: get-started-article
 |Automatic approvals|You can automatically approve changes that occur when data is synchronized.|You can automatically approve changes that occur when data is synchronized.|  
 |SharePoint tasks list|Not applicable.|Projects that synchronize with TFS must be configured as an Enterprise Project and not as a SharePoint tasks list.|  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Manage projects](manage-projects.md)

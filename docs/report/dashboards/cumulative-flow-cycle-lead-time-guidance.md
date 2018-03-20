@@ -8,7 +8,7 @@ ms.assetid:
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 8/22/2017
+ms.date: 03/20/2018 
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 

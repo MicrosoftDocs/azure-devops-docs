@@ -106,6 +106,6 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
  After the first few iterations, members of the development team will be more confident about the estimates. They should go through the estimates for the next one or two iterations and revise the Original Estimates fields of the requirements that are assigned to those iterations.  
   
 
-## Related notes
+## Related articles
 - [Background to CMMI](guidance-background-to-cmmi.md)
 - [CMMI process](../cmmi-process.md)

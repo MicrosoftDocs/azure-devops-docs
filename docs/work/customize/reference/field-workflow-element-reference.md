@@ -90,7 +90,7 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
  `FIELD` (Workflow) is a required child element of `FIELDS` (Workflow).  
 
   
-## Related notes   
+## Related articles   
 - [Change the workflow](change-workflow-wit.md)  
 - [Customize your work tracking experience](../customize-work.md)  
   

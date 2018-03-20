@@ -1,6 +1,6 @@
 ---
-title: Guide for users new to VSTS and TFS 
-description: Learn the very basics of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
+title: Guide for users new to VSTS 
+description: Learn the very basics of Visual Studio Team Services (VSTS)  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
@@ -13,16 +13,15 @@ monikerRange: '>= tfs-2013'
 
 # New User Guide
 
-**VSTS | TFS**
+**VSTS**
 
-New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? 
+New to Visual Studio Team Services (VSTS)? 
 
 We'll walk you through the basics of the web interface and some common tasks.  
 
 <!---
 ## Overview
 [What is VSTS?](what-is-vsts.md)
-[What is TFS?](what-is-tfs.md)
 [Overview of services](services.md)
 -->
 

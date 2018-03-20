@@ -108,7 +108,7 @@ For more information, see [Define initial areas, iterations, and Project mapping
 </MSProject>  
 ```  
   
-## Related notes   
+## Related articles   
 
 - [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)
 - [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)   

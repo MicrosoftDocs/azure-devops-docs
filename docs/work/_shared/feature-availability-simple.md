@@ -1,5 +1,5 @@
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>Platform and version dependent features are annotated as follows:  
 - <b>VSTS</b> - Available from VSTS (cloud service)  
 - <b>TFS</b> - Available from Team Foundation Server (on-premises)  

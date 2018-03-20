@@ -87,7 +87,7 @@ You can customize the root file for a process template to add or remove plug-in 
 |**groups**|Required child element of **ProcessTemplate**. Container element that defines the set of task groups that will run during project creation.<br />`<groups>`<br />      `<group> . . . </group>`<br />`</groups>`|  
 |**tasklist**|Specifies an XML file that contains the list of tasks to run. The list of tasks for a group must always be in a separate XML file. For more information about how to specify these files, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).<br />`<taskList filename="filePath" />`| 
   
-## Related notes
+## Related articles
 -  [Overview of process template files](overview-process-template-files.md)   
 -  [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)   
 -  [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)   

@@ -114,7 +114,7 @@ You can specify a default value for a field, or you can copy the value from anot
 >   
 >  `<LISTITEM value="Won't Fix"/>`  
   
-## Related notes 
+## Related articles 
 -  [All FIELD elements](all-field-xml-elements-reference.md)   
 -  [Apply a field rule](apply-rule-work-item-field.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)

@@ -142,7 +142,7 @@ These properties are defined in the [ProcessTemplate.xml file](https://msdn.micr
 
 ```
 
-##Related notes
+## Related articles
 
 [IProcessTemplates Interface](https://msdn.microsoft.com/library/microsoft.teamfoundation.server.iprocesstemplates.aspx)  
 [Microsoft.TeamFoundation.Server Namespace](https://msdn.microsoft.com/library/microsoft.teamfoundation.server.aspx)

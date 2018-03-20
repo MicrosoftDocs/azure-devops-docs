@@ -116,7 +116,7 @@ ms.date: 01/12/2017
   
  Team Foundation uses work items to implement workflow. A single work item can be assigned successively to multiple team members, and each member performs some action and completes work. If you want to bill hours based on work that each resource completes, you should have team members update their timesheets in PWA.  
   
-## Related notes  
+## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   
  [Synchronization process overview](synchronization-process-overview.md)   
  [Manage projects](manage-projects.md)

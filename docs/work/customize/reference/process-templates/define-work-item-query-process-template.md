@@ -112,7 +112,7 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 </WorkItemQuery>  
 ```  
   
->[!NOTE]  
+> [!NOTE]    
 >For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
 |Element|Syntax|Description|  
@@ -121,7 +121,7 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 |**TeamProject**|`<TeamProject>`<br />      `TeamProjectName`<br /> `</TeamProject>`|Optional child element of **WorkItemQuery**.<br /><br /> **Important:** In general, you remove this element from queries that you add to process templates.<br /><br /> Specifies the team project against which to run the query.<br /><br /> The attribute type is **ProjectNameType** with a maximum length of 255 characters.|  
 |**Wiql**|`<Wiql>`<br />      `WorkItemQueryLanguage`<br /> `</Wiql>`|Required child element of **WorkItemQuery**.<br /><br /> Specifies a sequence of Structured Query Language (SQL) commands that act as filter criteria to find a set of work items in a team project and return the values that are assigned to a set number of fields. For details, see [Work Item Query Language](../../../../collaborate/wiql-syntax.md). <br /><br /> The default process templates provide several examples of the SQL commands that the **Wiql** element supports. These files are located in the Queries folder of the WorkItem Tracking folder. |  
   
-## Related notes   
+## Related articles   
 -  [Create managed queries](../../../track/example-queries.md)  
 -  [Use the query editor to list and manage queries](../../../track/using-queries.md)      
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  

@@ -186,7 +186,7 @@ As a team, work to determine whether to adapt one or more processes to minimize 
 
 In some cases, your team may need to do some work to implement an improvement. For example, a team that found themselves negatively impacted by too many failed builds decided to implement continuous integration. Because they didn't want to disrupt process, they allocated a few hours to set up a trial build before turning it on in their production build. To represent this work, they created a spike and prioritized that work against the rest of the product backlog.
 
-## Related notes
+## Related articles
 
 For additional guidance, see:
 *	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
