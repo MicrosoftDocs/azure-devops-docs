@@ -88,7 +88,7 @@ such as [areas and iterations](set-permissions-access-work-tracking.md) or [shar
 
 ## Add users to a team  
 
-Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../teams/about-teams-and-settings.md).
+Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md).
 
 <a id="add-team-members-team-services" /> 
 

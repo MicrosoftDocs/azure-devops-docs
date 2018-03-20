@@ -1,23 +1,22 @@
 ---
-title: Set alerts, get notified when changes occur
-titleSuffix: TFS 
-description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server (TFS)
+title: Set alerts, get notified when changes occur 
+titleSuffix: TFS
+description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 50bac275-61fd-4ded-9c41-ec4c2412160e
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+monikerRange: '>= tfs-2013 <= tfs-2017'
+ms.date: 03/20/2018  
 ---
 
 # Set alerts, get notified when changes occur 
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in VSTS and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/manage-personal-notifications.md) and  [Manage notifications for a team](../../collaborate/manage-team-notifications.md). 
-
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 
@@ -42,8 +41,8 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	- **A pull request I've participated in is created or updated**  
 	- **A build quality changes** 
 
-	 > [!TIP]    
-	 > When you clear an alert, you also clear all email addresses defined for the alert. 
+	> [!TIP]    
+	> When you clear an alert, you also clear all email addresses defined for the alert.  
 
 4.	For more options, open custom alerts and choose one of the options available. Also, you can open a basic alert and modify its settings, such as changing the email format from HTML to plain text or SOAP. 
 	
@@ -86,7 +85,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	![Subscriber set to team context](_img/team/ALM_AN_TeamSelector.png)
 
 	> [!TIP]    
-	> For the team context, the alert query interprets the **@Me**  variable as anyone who is a member of the team.   
+	> For the team context, the alert query interprets the **@Me**  variable as anyone who is a member of the team.
 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 
@@ -120,7 +119,7 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 	![Open or delete an alert for a team member](_img/administer/ALM_AN_Shortcut.png)
 
-##Related notes
+## Related articles
 
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)  
 - [Manage your notifications](../../notifications/manage-personal-notifications.md) (VSTS, TFS 2017.1)

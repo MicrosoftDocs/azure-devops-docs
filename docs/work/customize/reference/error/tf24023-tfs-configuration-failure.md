@@ -51,5 +51,5 @@ This error occurs when the New Team Project Wizard is unable to connect to the T
   
 5.  If the problem persists, contact your Team Foundation Server administrator.  
   
-## Related notes
+## Related articles
 - [Create a team project](../../../../accounts/create-team-project.md) 

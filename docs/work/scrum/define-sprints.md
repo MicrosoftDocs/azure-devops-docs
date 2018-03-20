@@ -1,5 +1,6 @@
 ---
-title: Schedule sprints | VSTS & TFS  
+title: Schedule sprints
+titleSuffix: VSTS & TFS  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum and also to gain access to several built-in charts and widgets   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -7,7 +8,7 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.date: 02/27/2018
 ---
 
 
@@ -23,7 +24,7 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
 
-To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created.  Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
+To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
@@ -32,7 +33,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]   
-	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../teams/switch-team-context.md). 
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../settings/switch-team-context.md). 
 
 2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
 
@@ -40,24 +41,23 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
 
+
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
 
->[!NOTE]  
+> [!NOTE]    
 >**Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../customize/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
 
 <a id="drag-drop-to-sprint">   </a>
 ## Assign work to a sprint using drag-and-drop
 
-<!--- NOTE FEATURE AVAILABILITY --> 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 
-<!---
-![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)-->
+![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)--
 
 <a id="schedule">   </a>
 ## Add and schedule new sprints for several teams and release cadences 
  
->[!NOTE]  
+> [!NOTE]    
 >Your sprint backlog and task board are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
 
 Your team project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
@@ -77,5 +77,5 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 > [!div class="nextstepaction"]
 > [Plan a sprint](sprint-planning.md) or [Define iterations for the team project](../customize/set-iteration-paths-sprints.md) 
 
-## Related notes 
+## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../scale/set-team-defaults.md).  

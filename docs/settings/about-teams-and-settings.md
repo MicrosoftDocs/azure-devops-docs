@@ -27,22 +27,45 @@ For example, each feature team can be associated with a single feature area path
 
 ## Each team gets their own set of tools 
 
-Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet the way they want to work.
+Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-![Agile tools, team assets](../work/scale/_img/agile-tools-team-assets.png)
+::: moniker range="vsts || >= tfs-2018"
+![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets.png)
+::: moniker-end
+
+::: moniker range="tfs-2013"
+![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-2013.png)
+::: moniker-end
 
 These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. Here's a quick summary of these tools: 
 
->[!NOTE]  
->Some features are available only from VSTS and TFS 2017 and later versions.  
-
-
-> [!div class="mx-tdBreakAll"]  
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+> [!div class="mx-tdCol2BreakAll"]  
 > |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
 > |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../work/backlogs/define-features-epics.md)<br/>- [Epics backlog](../work/backlogs/define-features-epics.md)<br/>- [Forecast](../work/scrum/forecast.md) |- [Sprint backlogs](../work/scrum/sprint-planning.md)<br/>- [Sprint capacity](../work/scale/capacity-planning.md)<br/>- [Task board](../work/scrum/task-board.md)<br/>- [Sprint burndown](../work/scrum/sprint-burndown.md)|- [Kanban board](../work/kanban/kanban-basics.md)<br/>- [Features board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Epics board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/dashboards/cumulative-flow.md)|- [New work item](../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../collaborate/set-favorites.md)<br/>-  [Work item templates](../work/backlogs/work-item-template.md)<br/>- [Delivery plans](../work/scale/review-team-plans.md)<br/>-  [Queries](../work/track/using-queries.md)<br/>- [Velocity](../report/dashboards/team-velocity.md)<br/>- [Dashboards](..//report/dashboards/dashboards.md)<br/>- [Alerts](../collaborate/manage-team-notifications.md) |   
-
+> |- [Product backlog](../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../work/backlogs/define-features-epics.md)<br/>- [Epics backlog](../work/backlogs/define-features-epics.md)<br/>- [Forecast](../work/scrum/forecast.md) |- [Sprint backlogs](../work/scrum/sprint-planning.md)<br/>- [Sprint capacity](../work/scale/capacity-planning.md)<br/>- [Task board](../work/scrum/task-board.md)<br/>- [Sprint burndown](../work/scrum/sprint-burndown.md)|- [Kanban board](../work/kanban/kanban-basics.md)<br/>- [Features board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Epics board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/dashboards/cumulative-flow.md)|- [New work item](../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../collaborate/set-favorites.md)<br/>-  [Work item templates](../work/backlogs/work-item-template.md)<br/>- [Delivery plans](../work/scale/review-team-plans.md)<br/>- [Queries](../work/track/using-queries.md)<br/>- [Velocity](../report/dashboards/team-velocity.md)<br/>- [Dashboards](..//report/dashboards/dashboards.md)<br/>- [Alerts](../collaborate/manage-team-notifications.md) |   
+::: moniker-end
  
+::: moniker range="tfs-2015"
+> [!div class="mx-tdCol2BreakAll"]  
+> |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
+> |-------------|----------|---------|---------|---------|    
+> |- [Product backlog](../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../work/backlogs/define-features-epics.md)<br/>- [Epics backlog](../work/backlogs/define-features-epics.md)<br/>- [Forecast](../work/scrum/forecast.md) |- [Sprint backlogs](../work/scrum/sprint-planning.md)<br/>- [Sprint capacity](../work/scale/capacity-planning.md)<br/>- [Task board](../work/scrum/task-board.md)<br/>- [Sprint burndown](../work/scrum/sprint-burndown.md)|- [Kanban board](../work/kanban/kanban-basics.md)<br/>- [Features board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Epics board](../work/kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/dashboards/cumulative-flow.md)|- [New work item](../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../collaborate/set-favorites.md)<br/>-  [Work item templates](../work/backlogs/work-item-template.md)<br/>- [Queries](../work/track/using-queries.md)<br/>- [Velocity](../report/dashboards/team-velocity.md)<br/>- [Dashboards](..//report/dashboards/dashboards.md)<br/>- [Alerts](../work/track/alerts-and-notifications.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md) |   
+::: moniker-end
+
+
+::: moniker range="tfs-2013"
+> [!div class="mx-tdCol2BreakAll"]  
+> |Backlogs  |Scrum |Kanban | Other tools |
+> |-------------|----------|---------|---------|   
+> |- [Product backlog](../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../work/backlogs/define-features-epics.md)<br/>- [Forecast](../work/scrum/forecast.md) |- [Sprint backlogs](../work/scrum/sprint-planning.md)<br/>- [Sprint capacity](../work/scale/capacity-planning.md)<br/>- [Task board](../work/scrum/task-board.md)<br/>- [Sprint burndown](../work/scrum/sprint-burndown.md)|- [Kanban board](../work/kanban/kanban-basics.md)<br/>- [Cumulative flow](../report/dashboards/cumulative-flow.md) | - [Favorites](../collaborate/set-favorites.md)<br/>- [Work item templates](../work/backlogs/work-item-template.md)<br/>-  [Queries](../work/track/using-queries.md)<br/>- [Alerts](../work/track/alerts-and-notifications.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md) |   
+::: moniker-end
+
+
 <!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
 
 Many of these tools are built from system queries that reference the team area path. For example, a team's default area path filters the work items that appear on a team's backlog. Also, work items that you create using an Agile tool auto-assign the areas and iterations based on team defaults.  
@@ -141,8 +164,9 @@ When you add a team, a security group is automatically created with the team nam
 
 <img src="../work/scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
-> [!NOTE]   
-> **Feature availability**: From VSTS, you can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start type the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../notifications/at-mentions.md).     
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../notifications/at-mentions.md).     
+::: moniker-end
 
 ## Work on more than one team
 

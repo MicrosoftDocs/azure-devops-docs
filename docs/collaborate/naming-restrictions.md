@@ -1301,7 +1301,7 @@ Names you assign to a wiki page title must conform to the following restrictions
 
 
 
-## Related notes 
+## Related articles 
 *	[Customize work tracking objects to support your team's processes](../work/customize/customize-work.md)
 *	[Customize a process for import into VSTS](../work/customize/import-process/customize-process.md)
 *	[Customize a process template (on-premises TFS)](../work/customize/reference/process-templates/customize-process.md)

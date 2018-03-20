@@ -133,6 +133,6 @@ ms.date: 01/12/2017
   
      For more information, see [Register an instance of PWA](register-pwa.md).  
   
-## Related notes  
+## Related articles  
  [Remove a component](remove-component-from-synchronization.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

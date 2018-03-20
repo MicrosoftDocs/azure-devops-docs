@@ -7,7 +7,8 @@ ms.technology: vs-devops-wit
 ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Remove work items permanently
@@ -59,7 +60,7 @@ The following example deletes the work items with IDs, 12, 15, and 23 from the d
 witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:12,15,23  
 ```  
   
-## Related notes  
+## Related articles  
 - [Move, change, or delete work items](../../../backlogs/remove-delete-work-items.md)  
 - [Add work items](../../../backlogs/add-work-items.md)   
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

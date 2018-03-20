@@ -43,7 +43,7 @@ For example, you can create a team structure similar to this one with two manage
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../scale/portfolio-management.md).
 
 
-##Related notes
+## Related articles
 
 - [Define features and epics](define-features-epics.md)
 - [Organize your backlog](organize-backlog.md)

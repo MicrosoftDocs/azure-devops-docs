@@ -38,5 +38,5 @@ ms.date: 01/12/2017
 |**Retrieve the latest synchronization error messages**.  To help troubleshoot the integration of the two server products, you can display a list of recent synchronization errors. You can display the most recent errors that were logged for a team project collection if you use the `/GetSyncMessages` option of the `TfsAdmin ProjectServer` command-line tool.|[View error messages](view-synch-error-messages.md)|  
 |**Troubleshoot synchronization and configuration issues**. You can use these topics to resolve problems that can occur during configuration of the two server products or during the synchronization process.|[Verify synchronization](verify-synch-process.md)<br /><br /> [Known issues and workarounds](known-issues-and-workarounds.md)|  
   
-## Related notes  
+## Related articles  
  [Manage projects](manage-projects.md)

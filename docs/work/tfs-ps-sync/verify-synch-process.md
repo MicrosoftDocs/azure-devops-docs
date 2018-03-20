@@ -35,6 +35,6 @@ ms.date: 01/12/2017
   
  If you have reviewed these suggestions and you still suspect a problem, visit the following forum on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
   
-## Related notes  
+## Related articles  
  [Known issues and workarounds](known-issues-and-workarounds.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

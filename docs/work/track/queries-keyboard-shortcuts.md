@@ -29,7 +29,7 @@ When working in Visual Studio Team Explorer, you can use the following keyboard 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
  
 
-## Related notes
+## Related articles
 
 - [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 

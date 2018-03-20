@@ -27,13 +27,12 @@
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: How-to guides
   items:
-  - name: Filter your Kanban board
-    href: filter-kanban-board.md 
+
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
@@ -48,17 +47,23 @@
     href: definition-of-done.md
   - name: Reorder cards
     href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
-  - name: "Manage permissions & access (Security)"
+  - name: Filter your Kanban board
+    href: filter-kanban-board.md 
+  - name: "Manage permissions (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+- name: Samples
+  items:
+  - name: Kanban query examples 
+    href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Kanban board controls
     href: kanban-board-controls.md
   - name: Kanban board keyboard shortcuts
     href: kanban-board-keyboard-shortcuts.md
-  - name: Query by assignment,workflow or Kanban board changes
-    href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
-  - name: "Default permissions & access (Security)"
+  - name: Work item field index
+    href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+  - name: "Default permissions (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: REST API, Boards
     href: https://docs.microsoft.com/en-us/rest/api/vsts/work/boards
@@ -73,7 +78,7 @@
   - name: Customization
     href: ../customize/index.md
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md
+    href: ../../settings/index.md
   - name: "What is Agile?"
     href: https://www.visualstudio.com/learn/what-is-agile/
   - name: "What is Agile development?"

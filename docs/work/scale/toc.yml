@@ -3,11 +3,11 @@
 - name: Overview
   items:
   - name: "About teams & Agile tools"
-    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Add and manage dashboards
-    href: ../../report/dashboards/dashboards.md 
+    href: ../../report/dashboards/dashboards.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Manage portfolios
@@ -46,7 +46,7 @@
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
   - name: Switch project or team focus
-    href: ../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Reference
@@ -64,7 +64,7 @@
 - name: Resources
   items:
   - name: "Scale & Configure Teams"
-    href: ../../teams/index.md
+    href: ../../settings/index.md
   - name: Customization
     href: ../customize/index.md
   - name: Agile culture

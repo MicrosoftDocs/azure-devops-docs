@@ -30,6 +30,8 @@
     href: restrict-access.md
   - name: Remove user accounts 
     href: remove-users-prohibit-access.md 
+  - name: Get started as a Stakeholder
+    href: ../security/get-started-stakeholder.md
 - name: Concepts
   items:
   - name: About permissions and groups

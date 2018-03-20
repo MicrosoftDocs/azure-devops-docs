@@ -2713,7 +2713,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../teams/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../settings/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>

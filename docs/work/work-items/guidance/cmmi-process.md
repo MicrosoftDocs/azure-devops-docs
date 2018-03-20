@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/12/2018
+ms.date: 03/20/2018
 ---
 
 # CMMI process
@@ -22,14 +22,21 @@ The CMMI process supports the following work item types (WITs) to plan and track
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
 
+::: moniker range="vsts"
 > [!NOTE]  
-> **Feature availability**: From the cloud-based VSTS, you'll always have access to the latest version of the CMMI process, [which you can also customize](../../customize/process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+> You can customize the work tracking system for your team project based on the CMMI process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+> [!NOTE]  
+> The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
->Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises Team Foundation Server (TFS). Other resource requirements apply. 
+>Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from TFS. Other resource requirements apply. 
+::: moniker-end
 
 
 ## Plan and track work
@@ -40,8 +47,8 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
->[!NOTE]  
->A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
+> [!NOTE]  
+> A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
 
 
 <a id="shared-queries"></a> 
@@ -68,27 +75,35 @@ From Team Explorer, you can open any [work item query in Excel](../../backlogs/o
 <meta name="description" content="CMMI monitor progress" />
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
-### Create light-weight charts  
+## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../track/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
+
+::: moniker range="vsts"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="reports"></a>
-###SQL Server reports (TFS)    
-
-If you connect to an on-premises TFS, you can access the following CMMI process reports. For these reports to be useful, [teams must perform certain activities](../../../report/admin/review-team-activities-for-useful-reports.md), such as define build processes, link work items, and update status or remaining work.  
-
-To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+## SQL Server reports  
 
 
+If your team project collection and the team project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of CMMI reports. For these reports to be useful, [teams must perform certain activities](../../../report/admin/review-team-activities-for-useful-reports.md), such as define build processes, link work items, and update status or remaining work.  
+
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
 <a id="dashboards"></a>
-### SharePoint portal dashboards (TFS) 
+## SharePoint portal dashboards
 
-If you connect to an on-premises TFS, you can access CMMI process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. The following dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
+You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+::: moniker-end
+
 
 ## Related notes  
 
@@ -192,17 +207,16 @@ Product owners can use the shared queries that are described in the following ta
 | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](https://msdn.microsoft.com/library/ee461548) references this query. |
 | Risks | Lists all risks, sorted by ID. |
 
-### Workbooks (TFS) 
 
-> [!NOTE]  
-> **Feature availability**: </b>Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.   
+::: moniker range=">= tfs-2013 <= tfs-2017"
+### Workbooks
 
-
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Each workbook references a shared query.  
+You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your team project has been configured with a SharePoint portal. Each workbook references a shared query.  
 
 -   The [Issues workbook](https://msdn.microsoft.com/library/ee461548.aspx) uses the Open Issues shared query  
 -   The [Triage workbook](https://msdn.microsoft.com/library/ee461525.aspx) uses the Untriaged Work Items shared query  
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
+::: moniker-end
 

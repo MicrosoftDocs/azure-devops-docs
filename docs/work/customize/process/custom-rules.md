@@ -1,12 +1,14 @@
 ---
-title: Add a custom rule to a work item type | VSTS  
-description: Add a custom rule to a process for a work item type for Visual Studio Team Services (VSTS)
+title: Add a custom rule to a work item type
+titleSuffix: VSTS
+description: Add a custom rule to a process for a work item type for Visual Studio Team Services
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/07/2017 
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 
@@ -40,7 +42,7 @@ As an example, you can make a field required based on value assignments made to 
 > |- A work item state changes to a selected state<br/>- A work item state changes from one state to another state<br/>- A work item is created<br/>- A work item state is in a selected state<br/>- The value of a field equals a specified value<br/>- The value of a field does not equal a specified value<br/>- A value is defined for a field<br/>- No value is defined for a field<br/>- A change was made to the value of a field<br/>- No change was made to the value of a field |- Clear the value of a field<br/>- Copy the value of a field to another field   <br/>- Make a field required<br/>- Set the value of a field<br/>- Set the value of a field to the current date-time<br/>- Set the value of a field to the current user  |
 
 
->[!NOTE]   
+> [!NOTE]     
 >You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  
  
 ## Add a custom rule 
@@ -49,7 +51,7 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 	
 0. Select the WIT to which you want to add a rule, click **Rules** and then click ![plu sign](../../_img/icons/add-light-icon.png) Create rule.   
@@ -58,14 +60,14 @@ You add fields to a selected work item type. To add custom rules, you must be a 
 
 0. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
 
-	>[!TIP]  
+	> [!TIP]  
 	>Specify a name that builds off the field(s) you're acting on, or the conditions you're setting.  
 	
 	Here we define that the Acceptance Criteria field is required when the State changes to Active and it is currently empty. 
 
     <img src="_img/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" /> 
  
-	>[!NOTE]  
+	> [!NOTE]    
 	>The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT. 
 
 
@@ -89,12 +91,12 @@ For example, several rules exist to copy the current user identity under the fol
 - When a work item is modified, copy the user identity to the Changed By field
 - When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
  
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
 
 -->
 
-## Related notes  
+## Related articles  
 
 Once you've added a custom rule, open a work item and verify that the rule works as you intended.  
 
@@ -104,7 +106,7 @@ Additional topics of interest:
 - [Customize a process](customize-process.md)    
 
 
->[!TIP]    
+> [!TIP]    
 >You can't calculate or set formulas using a rule. However, you may find a solution that fits your needs via the [TFS Aggregrator  (Web Service) Marketplace extension](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service). 
 
 
@@ -121,5 +123,3 @@ If you're familiar with the [XML elements for applying rules to fields](../refer
 	- **EMPTY**
 
 -->
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

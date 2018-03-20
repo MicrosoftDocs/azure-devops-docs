@@ -1,12 +1,13 @@
 ---
-title: Workflow states and state categories 
-description: Understand how workflow states map to state categories   
+title: Workflow states and state categories
+titleSuffix: VSTS & TFS   
+description: Understand how workflow states map to state categories in Visual Studio Team Services and Team Foundation Server   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.manager: douge
-ms.date: 09/29/2017
+ms.date: 03/20/2018
 ---
 
 # Workflow states and state categories
@@ -97,28 +98,35 @@ Add custom states when you want all teams to track the status according to the b
 
 Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states which can be shared across teams. 
 
+
 <a id="auto-complete-work-items-with-pr" />
+
+::: moniker range="vsts || >= tfs-2018"
 ## Auto completion of work items with pull requests 
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR.  As shown in the following image, all you have to do is check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 
 
 ![Complete pull request dialog, Autocomplete work items with completion of PR option](_img/workflow-states-complete-pr.png)
 
-> [!NOTE]   
-> **Feature availability**: The **Complete linked work items after merging** option is available from VSTS and TFS 2018 and later versions.  
-
 In the following circumstances the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the WIT: 
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
-- The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.
-- For TFS and VSTS Hosted process model, you can specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](reference/change-workflow-wit.md#Actions).
+- The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
+- For TFS and VSTS Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](reference/change-workflow-wit.md#Actions).
 
 To learn more about process models, see [Customize your work tracking experience](customize-work.md).  
 
-## Related notes
+::: moniker-end
 
+## Related articles
+
+::: moniker range="vsts"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-- [Customize a workflow for a process (Inheritance process model)](process/customize-process-workflow.md)
+- [Customize a workflow for a process](process/customize-process-workflow.md)
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 - [Change the workflow for a work item type](reference/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md)
-- [Customize your work tracking experience](customize-work.md) 
+- [Customize your work tracking experience](on-premises-xml-process-model.md) 
+::: moniker-end
