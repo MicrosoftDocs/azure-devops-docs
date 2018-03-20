@@ -7,8 +7,9 @@ ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/24/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Add team project members in VSTS
 

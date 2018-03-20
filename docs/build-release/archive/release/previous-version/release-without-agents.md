@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
+monikerRange: ">= tfs-2013"
 ---
-[//]: # (monikerRange: ">= tfs-2013")
+
 
 # Release your app to environments without deployment agents
 
@@ -328,7 +329,7 @@ You also need a build definition that builds your app.
      }
    }
 
-   FileCopy -ConfigurationData $ConfigData ��"Verbose
+   FileCopy -ConfigurationData $ConfigData --"Verbose
    ```
    
    The parameter values `$AllNodes` and `$Node` in this example are from 

@@ -14,7 +14,7 @@ ms.date: 02/14/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You use different link types to form link relationships between different work item types (WITs). There are three categories of link types: system-defined, process-defined, and user-defined or custom. The link types defined in the default processes support link relationships among the test management WITs.  
@@ -313,7 +313,7 @@ The topology types described in the following table determine the restrictions p
 <a id="custom-link-type"></a>
 ## Create a custom link type (TFS) 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: Creating a custom link type is only supported for the On-premises XML process model. You can't add custom link types when you use the Hosted XML process model.
 
 To create a custom link type, define the link type XML definition file according to the syntax provided earlier in this topic, and then import it using  [**witadmin importlinktype**](witadmin/manage-link-types.md). Each process-defined link type is associated with an XML definition file. These files are defined in the ```WorkItem Tracking\LinkTypes``` folder of the [process set of files and folders](process-templates/customize-process.md). 
@@ -335,7 +335,7 @@ When you create or update a team project, the link type definitions defined for 
 
 In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
 
-## Related notes  
+## Related articles  
 -  [Link work items to track dependencies](../../track/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 

@@ -110,7 +110,7 @@ You add WITs to a category by updating the [Categories definition file](categori
 
 
  
-## Related notes
+## Related articles
 -  [ProcessConfiguration](process-configuration-xml-element.md)   
 -  [Use categories to group work item types](use-categories-to-group-work-item-types.md)
 -  [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)

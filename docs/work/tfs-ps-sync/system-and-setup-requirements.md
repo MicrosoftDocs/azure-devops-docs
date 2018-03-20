@@ -89,7 +89,7 @@ ms.date: 01/12/2017
 -   [Synchronization process overview](synchronization-process-overview.md)  
   
   
-## Related notes  
+## Related articles  
  [Configuration quick reference](configuration-quick-reference.md)   
  [Assign permissions](assign-permissions-support-tfs-project-server-integration.md)   
  [Map integration components](map-integration-components.md)   

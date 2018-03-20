@@ -7,8 +7,9 @@ ms.assetid: D50172C9-5AEE-4055-9795-342D5B2ABEF4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Package: Xamarin component restore
 
@@ -52,7 +53,7 @@ Xamarin account email address.</td>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -66,13 +67,15 @@ Xamarin account email address.</td>
     password:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

@@ -7,8 +7,9 @@ ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #Tools and clients that connect to VSTS and TFS
 

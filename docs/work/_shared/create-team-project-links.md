@@ -11,4 +11,4 @@ If you have a team project, start tracking work:
 
 For more information on Agile tools:
 
-- [Team assets](/vsts/teams/about-teams-and-settings)  
+- [Team assets](/vsts/settings/about-teams-and-settings)  

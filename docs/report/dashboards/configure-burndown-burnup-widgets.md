@@ -1,12 +1,14 @@
 ---
-title: Configure Bundown/Burnup widgets | VSTS & TFS  
+title: Configure Bundown/Burnup widgets
+titleSuffix: VSTS   
 description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams 
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/08/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018 
 ---
 
 

@@ -47,7 +47,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 	![Third-party oAuth enabled](_img/Screen5.png)  
 
-	Contact your account administrator to determine if it needs to be enabled. 
+	Contact your account administrator to determine if it needs to be enabled. 
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 

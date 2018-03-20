@@ -16,8 +16,9 @@ ms.topic: tutorial
 ms.date: 03/17/2018
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Create a CI/CD pipeline for your existing code with the Azure DevOps Project
 

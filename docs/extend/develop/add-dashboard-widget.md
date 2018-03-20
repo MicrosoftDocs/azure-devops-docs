@@ -31,16 +31,16 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 **Extension File Structure:**
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts                        
-├── hello-world.html				// html page to be used for your widget  
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts                        
+|--- hello-world.html				// html page to be used for your widget  
+|--- vss-extension.json				// extension's manifest
 ```
 
 ## What you'll find in the tutorial
@@ -333,17 +333,17 @@ below the "Hello World" text.
 Copy the file `hello-world.html` from the previous example, and rename the copy to `hello-world2.html`. Your folder will now look like below:
 
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts                        
-├── hello-world.html				// html page to be used for your widget  
-├── hello-world2.html				// renamed copy of hello-world.html
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts                        
+|--- hello-world.html				// html page to be used for your widget  
+|--- hello-world2.html				// renamed copy of hello-world.html
+|--- vss-extension.json				// extension's manifest
 ```
 
 <br>
@@ -630,19 +630,19 @@ Copy the file `html-world2.html` from the previous example and rename the copy t
 Your folder will now look like the below:
 
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts          
-├── configuration.html				             
-├── hello-world.html				// html page to be used for your widget  
-├── hello-world2.html				// renamed copy of hello-world.html
-├── hello-world3.html				// renamed copy of hello-world2.html
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts          
+|--- configuration.html				             
+|--- hello-world.html				// html page to be used for your widget  
+|--- hello-world2.html				// renamed copy of hello-world.html
+|--- hello-world3.html				// renamed copy of hello-world2.html
+|--- vss-extension.json				// extension's manifest
 ```
 
 <br>

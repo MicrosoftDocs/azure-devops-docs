@@ -14,7 +14,7 @@ ms.date: 06/16/2017
 
 <p><b>TFS 2017 | TFS 2015  | TFS 2013 </b></p>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -76,8 +76,8 @@ Specify the `PlainText` control when you want to capture text that that contains
 <a id="boolean-field">  </a>
 ### Add a checkbox or Boolean field 
 
->[!NOTE]  
-><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+> [!NOTE]    
+>**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 
@@ -217,7 +217,7 @@ Use the `AttachmentsControl` to attach files to a work item form. This control i
 For more information, see [Add the Attachments control](add-the-attachments-control.md).
 
   
-## Related notes
+## Related articles
 
 <a name="custom"></a> 
 In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../../extend/develop/add-workitem-extension.md). 

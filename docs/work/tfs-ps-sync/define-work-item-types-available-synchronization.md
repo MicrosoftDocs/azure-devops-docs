@@ -115,7 +115,7 @@ TfsAdmin ProjectServer /MapWorkItemTypes /collection:http://AdventureWorksServer
 TfsAdmin ProjectServer /UnmapWorkItemTypes /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection/ /teamProject:Contoso /workitemtypes:Task  
 ```  
   
-## Related notes  
+## Related articles  
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)   
  [Specify work item types](specify-wits-to-synchronize.md)   
  [Map integration components](map-integration-components.md)

@@ -8,8 +8,9 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #	Create your VSTS account with a personal Microsoft account or a work/school/organization account
 

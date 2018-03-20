@@ -19,7 +19,7 @@ ms.date: 01/18/2017
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)] 
 
 
-## Related notes
+## Related articles
 
 - [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 

@@ -7,8 +7,9 @@ ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/18/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build and release tasks
 
@@ -108,6 +109,7 @@ ms.date: 08/18/2016
 | ![icon](deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azure-sql-database-deployment-icon.png) [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/ssh.png) [Copy Files Over SSH](deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | VSTS, TFS 2017 and newer |
+| ![icon](deploy/_img/docker-icon.png) [Docker](deploy/docker.md). Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines](deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | VSTS, TFS 2015 RTM and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Application Deployment](deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-service-fabric.png) [Service Fabric Compose Deploy](deploy/service-fabric-compose-deploy.md). Deploy a Service Fabric application to a cluster using a compose file | VSTS |
@@ -139,6 +141,8 @@ Yes: [Add a build task](../../extend/develop/add-build-task.md)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

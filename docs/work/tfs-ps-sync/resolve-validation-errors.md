@@ -66,6 +66,6 @@ When you publish an enterprise project plan that is mapped to a team project, th
   
 3.  Choose **Close**.  
   
-## Related notes  
+## Related articles  
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   
  [Manage projects](manage-projects.md)

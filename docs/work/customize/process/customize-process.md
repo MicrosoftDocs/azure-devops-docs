@@ -1,13 +1,14 @@
 ---
 title: Customize a process
 titleSuffix: VSTS
-description: Your guide to configuring and customizing work tracking processes when connecting to Visual Studio Team Services (VSTS)   
+description: Your guide to configuring and customizing work tracking processes when connecting to Visual Studio Team Services 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017 
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Customize a process  
@@ -28,7 +29,7 @@ For example, the following image shows the work item form layout for the Bug WIT
 
 You can customize the elements listed below. Some options of inherited elements are locked and can't be customized. To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../security/set-permissions-access-work-tracking.md#process-permissions).  
 
->[!NOTE]  
+> [!NOTE]    
 >For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](../object-limits.md). 
 
 
@@ -97,7 +98,7 @@ The easiest way to start customizing a process is to start from the work item of
 
 		<img src="_img/cprocess-myagile-user-story-layout.png" alt="Web portal, web form, open context menu, choose Customize" style="border: 1px solid #C3C3C3;" />  
 
-		>[!NOTE]  
+		> [!NOTE]    
 		>The **Add custom control** option only appears when [qualifying extensions have been added from the Marketplace](custom-controls-process.md). 
 
 	- If the team project uses a system process, but a valid inherited process has been defined, then you have the option to select which inherited process you want the team project to use. 
@@ -119,7 +120,7 @@ You can also start customizing an inherited process by navigating to the inherit
 
 0. To open the admin context from the user context, click the ![](../../_img/icons/gear_icon.png) gear Settings icon and choose Account settings. 
 
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize-work.md).
 
 	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
@@ -147,7 +148,7 @@ To return to the Process page, simply click the Process hub or the **All process
 
 To return to a specific process and choose another WIT to customize, click the process name from the breadcrumb link.  
 
-## Related notes
+## Related articles
 
 Keep in mind that all team projects that reference the inherited process that you're customizing will automatically update to contain the modifications you make. 
 
@@ -162,7 +163,6 @@ See also:
 
 You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 
 

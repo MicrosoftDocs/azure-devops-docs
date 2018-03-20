@@ -100,7 +100,7 @@ To remove the Project Server tab and associated fields, run **witadmin** to expo
 
 Work item types that were mapped to Project Server will appear in the WIT category "Microsoft.Sync.ProjSrv.WorkitemCategory"? that indicates they are mapped to Project Server. You need to use the **witadmin** command to export the categories in the Team Project, remove this particular category and re-import using **witadmin**. 
 
->[!NOTE]  
+> [!NOTE]    
 >Remember the list of Work Item Types defined within the category as you'll need them later. 
 
 Example steps:
@@ -264,7 +264,7 @@ DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0
 ```
  
-## Related notes
+## Related articles
 
 - [Synchronize TFS with Project Server, third party support](sync-ps-tfs.md)  
 - [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](synchronize-tfs-project-server.md)    

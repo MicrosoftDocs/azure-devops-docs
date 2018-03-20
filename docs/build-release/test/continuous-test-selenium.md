@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Get started with Selenium testing in a CD pipeline
 
@@ -43,13 +44,13 @@ from Visual Studio Test Explorer.
    then choose **Test** and select **Unit Test Project**. Alternatively,
    open the shortcut menu for the solution and choose
    **Add** then **New Project** and then
-   **Unit Test Project**. 
+   **Unit Test Project**. 
 
 1. After the project is created, add the Selenium and
    browser driver references used by the browser to
    execute the tests. Open the shortcut menu for the
    Unit Test project and choose **Manage NuGet
-   Packages**. Add the following packages to your project:
+   Packages**. Add the following packages to your project:
 
    * Selenium.WebDriver
    * Selenium.Firefox.WebDriver
@@ -182,7 +183,7 @@ You can deploy and test your app using either the Hosted agent in Azure, or a pr
 <a name="include-test"></a>
 ## Include the test in a CD release
 
-[//]: # (::: moniker range="<= tfs-2017")
+::: moniker range="<= tfs-2017"
 
 **NOTE:** This example uses the **Visual Studio Test Platform Installer** task and the latest
 version of the **Visual Studio Test** task. These tasks are not available in TFS 2015 or TFS 2017.
@@ -190,7 +191,7 @@ To run Selenium tests in these versions of TFS, you must use the
 [Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md)
 and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 1. If you don't have an existing release definition that deploys your web app:
 

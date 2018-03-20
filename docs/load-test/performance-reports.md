@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # View and compare your load test runs
 
@@ -32,6 +33,8 @@ information.
    and all of your team members.
 
    ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
+
+> Also see [Analyze Load Test Results Using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer).
 
 <a name="opents"></a>
 ## Open a load test in VSTS

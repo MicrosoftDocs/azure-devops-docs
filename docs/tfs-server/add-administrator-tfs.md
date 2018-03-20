@@ -8,9 +8,10 @@ ms.manager: douge
 ms.author: elbatk  
 ms.date: 03/29/2017
 ms.topic: get-started-article
+monikerRange: '>= tfs-2013 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < vsts')
+
 
 # Add administrators to TFS
 

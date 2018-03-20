@@ -7,8 +7,9 @@ ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2017"
 ---
-[//]: # (monikerRange: ">= tfs-2017")
+
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
@@ -16,7 +17,7 @@ ms.date: 01/18/2018
 
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
-However, as the codebase grows and matures, its regression test suite tends to grow as well – to the extent that running a full regression test might require hours.
+However, as the codebase grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours.
 This slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration. 
 In order to have a CI definition that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
 However, this only serves to further defeat continuous integration.

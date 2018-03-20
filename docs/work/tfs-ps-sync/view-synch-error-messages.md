@@ -71,7 +71,7 @@ TfsAdmin ProjectServer /GetSyncMessages /collection:http://MyTFSServer:8080/tfs/
 > [!TIP]
 >  You can use standard command-line syntax to send the output to a file. For example, you can specify **>c:\output.txt**.  
   
-## Related notes  
+## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   
  [Known issues and workarounds](known-issues-and-workarounds.md)   
  [Map integration components](map-integration-components.md)

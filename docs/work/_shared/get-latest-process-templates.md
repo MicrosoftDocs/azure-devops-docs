@@ -1,6 +1,6 @@
 
 
->[!TIP]  
+> [!TIP]  
 >To access the latest versions of the default processes/process templates:
 >- **For the On-premises XML process model (on-premises TFS)**:   
 	><ul><li>[Install or upgrade to the latest version of TFS](https://www.visualstudio.com/downloads/).</li> 

@@ -7,8 +7,9 @@ ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build: .NET Core
 
@@ -247,6 +248,8 @@ To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

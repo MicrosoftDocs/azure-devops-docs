@@ -132,7 +132,7 @@ When you delete a task from Project Server that has been synchronized with a wor
 ##  <a name="removefield"></a> Remove a field from participating in synchronization  
  You can remove one or more fields from participating in data synchronization for a team project collection. You remove a field from synchronization by removing its mappings. You must not remove fields that are required for synchronization. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Upload or download field mappings](manage-field-mappings.md).  
   
-## Related notes  
+## Related articles  
  [Map integration components](map-integration-components.md)   
  [Configure and manage TFS resources](../../accounts/account-management.md)   
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   

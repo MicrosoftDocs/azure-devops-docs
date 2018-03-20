@@ -8,9 +8,10 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/10/2017
+monikerRange: 'vsts'
 ---
 
-[//]: # (monikerRange: 'vsts')
+
 
 # Install free extensions for VSTS
 

@@ -87,7 +87,7 @@ The following table describes the elements that you use to define task group dep
 |**dependencies**|Optional child element of **task**. Specifies the other tasks on which a task depends.<br /> `<dependencies>`<br />      `<dependency>. . . </dependency>`<br />`</dependencies>`|  
 |**dependency**|Optional child element of **dependencies**. Specifies the ID of another task on which this task depends. The other task must complete its tasks before this task can start.<br />`<dependency taskId="taskId" />`| 
   
-## Related notes 
+## Related articles 
 -  [Customize a process](customize-process.md)   
 -  [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)   
 -  [Define the root tasks](define-root-tasks-process-template-plug-in.md)

@@ -179,6 +179,6 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
  Administrators can retrieve the most recent event messages by using the `TfsAdmin ProjectServer /GetSyncMessages` command. For more information, see [View error messages](view-synch-error-messages.md). To gather even more detailed information, you can enable detailed tracing for the Team Foundation Background Job Agent that runs the services. For more information, see [Team Foundation Background Job Agent](../../tfs-server/architecture/background-job-agent.md).  
   
   
-## Related notes  
+## Related articles  
 -  [Manage projects](manage-projects.md)   
 -  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

@@ -7,8 +7,9 @@ ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/20/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Deploy to Azure
 

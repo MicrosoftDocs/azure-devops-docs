@@ -7,8 +7,9 @@ ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Deploy: Azure File Copy
 
@@ -73,7 +74,7 @@ in the firewall, and install the test certificate.
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -107,7 +108,7 @@ in the firewall, and install the test certificate.
     outputStorageContainerSasToken:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related tasks
 
@@ -207,7 +208,9 @@ A suitable account can be easily created for use in a service endpoint:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

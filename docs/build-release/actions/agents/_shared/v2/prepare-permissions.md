@@ -2,7 +2,7 @@
 
 Decide which user account you're going to use to register the agent.
 
-#### Authenticate with a personal access token (PAT) to VSTS or TFS 2017
+#### Authenticate with a personal access token (PAT) to VSTS or TFS 2017 or newer
 
 1. Sign in with the user account you plan to use in either your VSTS account (```https://{your-account}.visualstudio.com```)
 or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```).
@@ -20,11 +20,16 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 1. Copy the token. You'll use this token when you configure the agent.
 
-#### Authenticate as TFS user
+#### Authenticate as a user of TFS 2017 or newer
 
-* **TFS 2017 and newer:** You can use either a domain user or a local Windows user on each of your TFS application tiers.
+You can use either a domain user or a local Windows user on each of your TFS application tiers.
 
-* **TFS 2015 (applies only to macOS and Linux):** We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+
+#### Authenticate as a user of TFS 2015
+
+(Applies only to macOS and Linux.) We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+
+
 
 ### Confirm the user has permission
 

@@ -7,8 +7,9 @@ ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Add findings to existing bugs with exploratory testing
  

@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 <b>VSTS | TFS 2018 | TFS 2017</b>  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
@@ -22,7 +22,7 @@ ms.date: 12/15/2017
 Just as you have been able to customize the form layout for your work item types, you can continue to do so with the new web form. The new form makes available several features that are not available with the old form.  Your account or project collection administrator manages the [switch to the new form](manage-new-form-rollout.md). When the new form is enabled for the account or team project collection, the WebLayout section is added to the XML definition for each WIT defined in the collection.  
  
 
->[!NOTE]  
+> [!NOTE]    
 >Prior to customizing the web form, your account administrator must have [enabled the new form for your account on VSTS and TFS](manage-new-form-rollout.md). 
 
 You customize transformed WITs in much the same way as you have previously.  The path is slightly different depending on your platform and previous customization choices. 
@@ -102,7 +102,7 @@ The new web form resizes depending on the width available and the number of sect
 When the display width won't accommodate the columnar display of each section, sections appear stacked within a column. 
 
 
-## Related notes  
+## Related articles  
 
 If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md). 
 

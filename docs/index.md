@@ -1,15 +1,14 @@
 ---
-title: VSTS and TFS Documentation 
-titleSuffix: VSTS & TFS 
+title: VSTS and TFS Documentation | VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-layout: HubPage
-hide_bc: true  
+layout: HubPage 
+hide_bc: true
 ms.prod: vs-devops-alm 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
-ms.manager: douge
+ms.manager: douge 
 ms.author: kaelli 
-ms.date: 02/02/2018
+ms.date: 02/24/2018
 featureFlags:
 - clicktale 
 ---
@@ -265,7 +264,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/teams/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
@@ -997,7 +996,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/teams/index">
+                                <a href="/vsts/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

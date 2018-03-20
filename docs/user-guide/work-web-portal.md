@@ -1,16 +1,18 @@
 ---
-title: Navigate in the VSTS or TFS web portal 
-description: Guide to navigating within the web portal for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Navigate in the web portal 
+titleSuffix: VSTS & TFS
+description: Guide to using the web portal for Visual Studio Team Services or Team Foundation Server   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 493362ae-5318-4719-9e0f-48c74ff8f0ba
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/11/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
 
-# Navigating in the web portal
+
+# Navigating in the web portal 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -95,7 +97,7 @@ You and other team members use the user context to collaborate, plan, and build 
 
 <a id="team-services-user-context" />
 
-[//]: # (::: moniker range=">= tfs-2017 <= vsts")
+::: moniker range=">= tfs-2017 <= vsts"
 
 **VSTS, TFS 2017.2**
 
@@ -121,9 +123,9 @@ Click any hub to open that hub. Hover your mouse over a hub to access a drop-dow
 <img src="_img/wwp-user-context-tfs-2017-1.png" alt="VSTS-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
 -->
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 <a id="tfs-2015-user-context" />
 
@@ -133,7 +135,7 @@ Click any hub to open that hub. Then, click a page within the hub to open that p
 
 <img src="_img/web-portal-user-context.png" alt="TFS 2015 or TFS 2013, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="admin-context">  </a>
 
@@ -156,7 +158,7 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 
 
 >[!NOTE]  
->If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
+>If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
 
 
 <a id="team-scoped-features">  </a>
@@ -165,7 +167,7 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 
 Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise.
 
-![Agile tool team assets](../work/scale/_img/agile-tools-team-assets.png)  
+![Agile tool team assets](../settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)  
 
 Also, teams can set their query and build favorites within **Team favorites** folders. For more information, see [Manage team assets](../work/scale/manage-team-assets.md).  
 
@@ -187,7 +189,7 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 
 
 > [!div class="mx-tdBreakAll"]
-> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
+> |[Home](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
 > |-------------|----------|
 > |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/dashboards/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/dashboards/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
 
@@ -198,7 +200,7 @@ The **Code** hub supports management of your source control repositories. You ca
 
 
 > [!div class="mx-tdBreakAll"]
-> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
+> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
 > |-------------|----------|
 > |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- Explorer<br/>- [History: review](../git/manage-your-branches.md#review-updates)<br/>- [Branches: Manage branches](../git/manage-your-branches.md)<br/>- [Pull Requests: View and create pull requests](../git/pull-requests.md) |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- [Explorer: View, download, and compare version-controlled files](../tfvc/download-get-files-from-server.md)<br/>- [Changesets: find/view](../tfvc/find-view-changesets.md)<br/>- [Shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) |
 
@@ -218,7 +220,7 @@ From a user context, open the admin context by clicking the ![gear icon](_img/wo
 
 Below we show the admin context for the team project level. 
 
-[//]: # (::: moniker range="tfs-2017 || vsts")
+::: moniker range="tfs-2017 || vsts"
 
 <a id="admin-intro" />
 
@@ -253,9 +255,9 @@ Open any admin page by clicking it's corresponding hub. Hover your mouse over a 
 
 <a id="admin-intro-tfs-2015" />
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 **TFS 2015, TFS 2013**  
 Open any admin page by clicking it's corresponding hub.  
@@ -293,7 +295,7 @@ Required membership: [Team Foundation Administrators](../tfs-server/add-administ
  
 <!--- End of Admin context -->
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related notes  
 
@@ -421,7 +423,7 @@ Although you can access source code, work items, and builds from both clients, s
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 
 <!---
 Overview

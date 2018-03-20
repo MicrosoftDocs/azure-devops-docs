@@ -15,7 +15,7 @@ ms.topic: get-started-article
 
 <b>TFS 2015 | TFS 2013</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >TFS 2017 and later versions no longer support native integration with Office Project Server. If you upgrade to TFS 2017 or want to use a third party option, see [Synchronize TFS with Project Server](sync-ps-tfs.md).
 
 By installing Team Foundation Server Extensions for Project Server, project managers can use Microsoft Project Server to access up-to-date project status and resource availability across agile and formal software teams who work in Team Foundation.  This integration enables data to flow from work items in Team Foundation Server (TFS) to tasks in enterprise project plans in Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and share information transparently. After the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and team project.  
@@ -110,7 +110,7 @@ For details, see [Make Agile team progress visible](make-agile-team-progress-vis
 When the project manager rejects an update to a work item, you must address the reason for the rejection and resubmit it to Project Server. Until you complete this task, the work item can no longer participate in data synchronization. For details, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 
-## Related notes  
+## Related articles  
 -  [Agile tools and work tracking](../backlogs/overview.md)    
 
 <a name="demos"></a>  

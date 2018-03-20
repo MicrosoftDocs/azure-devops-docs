@@ -8,9 +8,10 @@ ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.manager: douge
 ms.author: elbatk
 ms.date: 12/04/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Request extensions
 

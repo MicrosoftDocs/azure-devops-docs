@@ -7,7 +7,8 @@ ms.technology: vs-devops-wit
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 
@@ -16,14 +17,12 @@ ms.date: 02/26/2018
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >**Feature availability**: You can only exercise the tcm commands against an on-premises TFS.  
 
 You can customize three of the features that are supported in Microsoft Test Manager using the `tcm fieldmapping` command. This command allows you to change the bug type used to automatically file bugs in Test Manager, and to customize the drop-down menu or pick lists for resolution states and failure types.  
   
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
-
-[!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)]
 
 
 Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
@@ -31,7 +30,34 @@ Also, you can use `tcm` command options to [copy and clone test suites and test 
  **Requirements**  
   
  For the team project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
+
+To run the **tcm** command-line tool, open a Command Prompt window where Visual Studio is installed. To do this, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+####TFS 2018 and TFS 2017, Visual Studio 2017 client:
+
+`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`
+
+::: moniker-end
+
+
+::: moniker range="tfs-2015"
+####TFS 2015, Visual Studio 2015 client 
+
+`%programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
+
+::: moniker-end
+
+
   
+::: moniker range="tfs-2013"
+####TFS 2013, Visual Studio 2013 client 
+
+`%programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`
+
+::: moniker-end
+
 ## Syntax  
   
 ```  
@@ -124,5 +150,5 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 tcm fieldmapping /import /type:bug /mappingfile:"C:\Users\AdminUser\Documents\bugfieldmappings.xml" /collection:http://AdventureWorksServer:8080/tfs/Collection1 /teamproject:AdventureWorks   
 ```  
   
-## Related notes
+## Related articles
 - [Using TCM from the command line](https://msdn.microsoft.com/library/jj155799.aspx)   

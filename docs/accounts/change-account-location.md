@@ -7,8 +7,9 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Find or change your VSTS account location (region)
 

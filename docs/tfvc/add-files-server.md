@@ -6,9 +6,10 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2016
+ms.date: 03/20/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Add files to the server
 
@@ -16,7 +17,7 @@ ms.date: 08/10/2016
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 
->**Tip:**  
+>[!TIP]  
 > Before you add files to version control, you should first [set up the workspace on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md)
 
 ## Create a new code project and solution under version control
@@ -51,7 +52,7 @@ You can simultaneously create a new team project and add it to version control s
 
 To add an existing solution to version control, move all the solution files into your workspace, and then add them.
 
->**Note:**  
+>[!NOTE]  
 >Avoid using the **Add Solution to Source Control** dialog box to upload your solution into version control. Use the following procedure instead.
 
 1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
@@ -86,7 +87,7 @@ To add an existing solution to version control, move all the solution files into
 
 When you use Solution Explorer to add a file to your code project, the system automatically adds it to version control. However, you can also add files that are not referenced by your code projects.
 
->**Tip:**  
+>[!TIP]  
 >If you are creating an automated process or prefer to use the command prompt, you can use [Add command](add-command.md) instead of the following procedures.
 
 ## Automatically add one or more files to version control
@@ -125,7 +126,7 @@ You can also manually add files to version control.
 
 2.  In Source Control Explorer, navigate to the folder where you want to place your files.
 
->**Important:**
+>[!IMPORTANT]
 >Make sure this folder is checked in before you proceed. If you are creating the folder now, open its context menu and choose **Check In**, and then check in the new folder before proceeding.
 
 3.  Drag the folders or files from Windows Explorer (or File Explorer) into the folder in Source Control Explorer.
@@ -142,8 +143,8 @@ Many teams develop code that depends on binaries that are not built by the solut
 
 Sometimes these binaries come from another team in the same company. For example, Team A depends on binaries produced by Team B, and each team must for some reason work in different team project collections. As a result, Team B delivers binaries to Team A, which then checks them into version control.
 
-> **Tip:**  
->If your dev machines and [build agents](../build-release/concepts/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. Even if you decide to use NuGet, you should probably still add the binaries to version control so that you can reproduce and build historical versions of your code.
+>[!TIP]  
+>If your dev machines and [build agents](../build-release/concepts/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. You can store your packages in TFS or VSTS using [Package Management](../package/index.md).
 
 The folder and workspace structure you should use to store your third-party binaries depends on the way your solutions depend on these libraries.
 
