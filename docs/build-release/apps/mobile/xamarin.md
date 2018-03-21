@@ -78,7 +78,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 

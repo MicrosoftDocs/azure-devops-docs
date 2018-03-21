@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: wismythe
 ms.topic: get-started-article
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
 
