@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: elbatk
 ms.topic: get-started-article
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
 
@@ -49,8 +50,10 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and VSTS integration](../service-hooks/services/zapier.md).
 
+::: moniker range=">= tfs-2015 < vsts"
 
 ## On-premises SMTP server (TFS)
  
 For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
 
+::: moniker-end

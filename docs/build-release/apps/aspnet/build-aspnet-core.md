@@ -60,7 +60,7 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+GitHub is not available in TFS.
 
 ::: moniker-end
 
@@ -84,8 +84,6 @@ Choose this option if you prefer a graphical interface in your web browser.
 
 ::: moniker range="vsts"
 
-**VSTS**
-
 Choose this option if you want the advantages of configuration as code. This means your definition is versioned with your code and follows the same branching structure as your code. 
 
 ```YAML
@@ -101,7 +99,7 @@ This choice also offers parallel processing (fan out and fan in), and the abilit
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -143,7 +141,7 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -163,7 +161,7 @@ In VSTS:
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+GitHub is not available in TFS.
 
 ::: moniker-end
 
@@ -181,7 +179,7 @@ In GitHub:
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -196,7 +194,7 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes. Proceed to finish the CI process definition.
 
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
 
@@ -246,7 +244,7 @@ Commit the above change to the master branch.
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -311,7 +309,7 @@ Commit the above change to the master branch.
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -377,7 +375,7 @@ Commit the above change to the master branch.
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -423,7 +421,7 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS.
 
 ::: moniker-end
 
@@ -451,7 +449,7 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+GitHub is not available in TFS.
 
 ::: moniker-end
 
@@ -490,7 +488,7 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+YAML builds are not available in TFS. 
 
 ::: moniker-end
 
