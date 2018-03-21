@@ -6,11 +6,10 @@ ms.technology: vs-devops-build
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
 ms.manager: douge
 ms.author: dastahel
-ms.date: 02/19/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Build your Go app
 
@@ -22,7 +21,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../concepts/agents/agents.md) for your team project, and that you have Go installed on the agent machine.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../concepts/agents/agents.md) for your project, and that you have Go installed on the agent machine.
 
 ## Get sample app code
 
@@ -50,53 +49,29 @@ https://github.com/adventworks/go-sample
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts)
+# [VSTS or TFS repo](#tab/vsts)
 
- Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
-
- # [GitHub repo](#tab/github)
-
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
-
- ---
-
-1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
-
-1. For the **Agent queue**:
-
- * **VSTS:** Select _Hosted Linux_ or _Hosted macOS Preview_. This uses a VSTS pool of agents that have the software needed to build your app.
-
- * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../concepts/agents/agents.md).
-
-1. Click **Get sources** and then:
-
- # [VSTS or TFS repo](#tab/vsts)
-
- Observe that the new build definition is automatically linked to your repository.
-
- # [GitHub repo](#tab/github)
-
- Select your version control repository. You'll need to authorize access to your repo.
-
-1. Click the **+** icon on **Phase 1** of the build and then:
+You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
 ::: moniker range=">= tfs-2018"
 
   ### VSTS and TFS 2018
 
-  1. Search for the **Shell Script** task and click **Add** to add it to your build.
+1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
-  1. Click the **Shell Script** task and set its field values as follows:
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
-      Field   | Value
-      ------- | -----
-      Version | `3.*` or later
-      Type    | `Inline`
-      Script  | `go build hello.go`
+1. For the **Agent queue**:
+
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+
+ * **TFS:** Select a queue that includes an agent with Go installed.
+
+1. Click **Get sources** and observe that the new build definition is automatically linked to your repository.
 
 ::: moniker-end
 
@@ -104,9 +79,21 @@ https://github.com/adventworks/go-sample
 
   ### TFS 2017.2
 
-  1. Search for the **Command Line** task and click **Add** to add it to your build.
+1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
 
-  1. Click the **Command Line** task and set its field values as follows:
+1. For the **Agent queue**:
+
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+
+ * **TFS:** Select a queue that includes an agent with Go installed.
+
+1. Click **Get sources** and observe that the new build definition is automatically linked to your repository.
+
+1. Click the **+** icon on **Phase 1** of the build.
+
+1. Search for the **Command Line** task and click **Add** to add it to your build.
+
+1. Click the **Command Line** task and set its field values as follows:
 
       Field        | Value
       ------------ | -----
@@ -116,9 +103,60 @@ https://github.com/adventworks/go-sample
 
 ::: moniker-end
 
+# [GitHub repo](#tab/github)
+
+Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+::: moniker range=">= tfs-2018"
+
+  ### VSTS and TFS 2018
+
+1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
+
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
+
+1. For the **Agent queue**:
+
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+
+ * **TFS:** Select a queue that includes an agent with Go installed.
+
+1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+  ### TFS 2017.2
+
+1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
+
+1. For the **Agent queue**:
+
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+
+ * **TFS:** Select a queue that includes an agent with Go installed.
+
+1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
+
+1. Click the **+** icon on **Phase 1** of the build.
+
+1. Search for the **Command Line** task and click **Add** to add it to your build.
+
+1. Click the **Command Line** task and set its field values as follows:
+
+      Field        | Value
+      ------------ | -----
+      Display name | `Build Go application`
+      Tool         | `go`
+      Arguments    | `build hello.go`
+
+::: moniker-end
+---
+
   ### Finish
 
-1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time changes are pushed to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
@@ -131,9 +169,13 @@ https://github.com/adventworks/go-sample
 
 [!INCLUDE [include](../_shared/view-build-summary.md)]
 
+::: moniker range="tfs-2017"
+
 ## Publish your build output
 
 Add the [Copy Files](../../tasks/utility/copy-files.md) and [Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md) tasks to your build to save its compiled output as a build artifact.
+
+::: moniker-end
 
 ## Next steps
 
