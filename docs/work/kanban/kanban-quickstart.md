@@ -30,7 +30,8 @@ To view your Kanban board, open your team project from a web browser and click *
 ![Kanban board, Agile template](_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
-![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)     
+> [!div class="mx-imgBorder"]  
+> ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
 If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![elipses](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **Backlogs**, and then **Board**.   
