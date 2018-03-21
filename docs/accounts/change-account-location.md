@@ -21,6 +21,16 @@ requirements for data centers.  Your account's default location is based on the 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available.
 
+**Available VSTS Regions**
+
+Central US
+Brazil South
+Australia East
+India South
+West Europe
+East Asia
+Canada Central
+
 To find the region where your account is located:
 
 0. Sign in to your Team Services account: ```https://{youraccount}.visualstudio.com```
@@ -32,4 +42,7 @@ To find the region where your account is located:
 
 To change your account region, you need to call [VSTS Support](https://www.visualstudio.com/team-services/support), and 
 they will coordinate changing the region with the account owner.
+
+
+
 
