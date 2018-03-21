@@ -7,8 +7,9 @@ ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Install certificates and custom software on agent machines
 

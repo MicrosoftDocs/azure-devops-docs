@@ -86,7 +86,7 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 <img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 From there, you can add additional query clauses or change the Filter options for linked work items. 
@@ -219,7 +219,7 @@ For VSTS, you can add up to 100 attachments to a work item. Attempts to add more
 </table>
 
 
-## Related notes
+## Related articles
 
 - [Add link to multiple work items](../backlogs/add-link.md) 
 - [Link work items to support traceability](link-work-items-support-traceability.md) 

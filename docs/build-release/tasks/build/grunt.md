@@ -7,8 +7,9 @@ ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Grunt 
  
@@ -56,7 +57,7 @@ The build agent must have the following capability:
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -79,7 +80,7 @@ The build agent must have the following capability:
 #   testFiles: test/*.js
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 
@@ -90,6 +91,8 @@ See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

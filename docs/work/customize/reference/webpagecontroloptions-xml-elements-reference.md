@@ -85,7 +85,7 @@ The following example shows how to load a work item form with HTML defined in a 
    </WebpageControlOptions>
 ```
   
-## Related notes
+## Related articles
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
 -  [Design the work item form](design-work-item-form.md)

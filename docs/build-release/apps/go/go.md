@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: dastahel
 ms.date: 02/19/2018
 ms.topic: get-started-article
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your Go app
 
@@ -83,7 +84,7 @@ https://github.com/adventworks/go-sample
 
 1. Click the **+** icon on **Phase 1** of the build and then:
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 
   ### VSTS and TFS 2018
 
@@ -97,9 +98,9 @@ https://github.com/adventworks/go-sample
       Type    | `Inline`
       Script  | `go build hello.go`
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2017")
+::: moniker range="tfs-2017"
 
   ### TFS 2017.2
 
@@ -113,7 +114,7 @@ https://github.com/adventworks/go-sample
       Tool         | `go`
       Arguments    | `build hello.go`
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
   ### Finish
 

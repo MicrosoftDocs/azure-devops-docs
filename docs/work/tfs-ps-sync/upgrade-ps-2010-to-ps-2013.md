@@ -61,6 +61,6 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
   
      For more information, see [Register an instance of PWA](register-pwa.md).  
   
-## Related notes  
+## Related articles  
  [Update an existing installation](update-version-compatibility-requirements.md)   
  [Synchronize TFS with Project Server](synchronize-tfs-project-server.md)

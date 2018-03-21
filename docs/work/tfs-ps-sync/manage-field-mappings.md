@@ -106,7 +106,7 @@ TfsAdmin ProjectServer /UploadFieldMappings /collection:http://AdventureWorksSer
   
 ```  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)   
  [Field mapping reference](field-mapping-xml-element-reference.md)   

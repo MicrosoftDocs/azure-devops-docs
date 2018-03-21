@@ -7,8 +7,9 @@ ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot identity issues in VSTS for Visual Studio subscribers
 

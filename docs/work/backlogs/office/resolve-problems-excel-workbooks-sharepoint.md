@@ -39,6 +39,6 @@ To perform this procedure, you must be a member of the Administrators group on t
   
 5.  Click **OK**.  
   
-## Related notes
+## Related articles
  
 - [Verify SharePoint products for Team Foundation Server](../../../tfs-server/install/sharepoint/verify-sharepoint.md)

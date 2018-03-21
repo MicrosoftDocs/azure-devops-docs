@@ -10,8 +10,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/12/18
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # About security and identity
 
@@ -136,7 +137,7 @@ see [Permissions and groups reference](permissions.md).
 There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
 
 > [!div class="mx-tdCol2BreakAll"]
-> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
+> |**Object-level** |**Project-level settings**  |**Collection-level settings**  | 
 > |-------------|----------|----------|
 > |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
 

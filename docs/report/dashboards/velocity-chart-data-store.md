@@ -41,7 +41,7 @@ Velocity provides a useful metric for gaining insight into how much work your te
 
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../../work/_shared/image-differences-with-wits.md)]
 
 1.	From the backlog page, open the velocity chart.  
 

@@ -7,7 +7,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 10/09/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
@@ -17,11 +18,11 @@ ms.date: 10/09/2017
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
-In VSTS, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../teams/about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+You customize your team project work tracking system through a process. The customizations you make are in effect for all teams. ON the otherhand, you configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../settings/about-teams-and-settings.md). A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
-VSTS supports two types of processes. 
+You'll see two types of processes:
 
-- ![locked icon](_img/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../work-items/guidance/choose-process.md)&mdash;which are locked from being changed except by VSTS.   
+- ![locked icon](_img/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited process icon](_img/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates VSTS makes to the parent system process will automatically update your custom inherited process.  
 
 In addition, all processes are shared. That is, one or more team projects can use a single process. Instead of customizing a single team project, you customize a process. Changes made to the process automatically update all team projects that use that process. 
@@ -70,7 +71,7 @@ Once you've defined the inherited process, you can perform these actions:
 <a id="migrate"></a>
 ## Change the process used by team projects   
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >When you change a team project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
 > 
 > - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
@@ -78,7 +79,7 @@ Once you've defined the inherited process, you can perform these actions:
 
 You can change the process a team project uses from a system process or inherited process to an inherited process.  You can only change team projects to use another process that inherits from the same system process. That is, you can change an Agile-based team project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based team project to an Agile-derived inherited process.  
 
->[!NOTE]  
+> [!NOTE]    
 >You can change the process of a team project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process. 
 >
 >Also, if you change a team project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
@@ -125,16 +126,16 @@ All system processes and newly created inherited processes are enabled by defaul
 
 
 <a id="default-process">  </a>
-##Set the default process
+## Set the default process
 
 Set a process as the default to have it pre-selected for any additional team projects you plan to create. 
 
 To set a process as the default, open the &hellip; context menu for the process and choose **Set as default process**. 
 
-Account owners and Project Collection Administrators can add team projects from the admin Overview page or the [account My Projects page](../../../user-guide/account-home-pages.md). VSTS will automatically preselect the default selection.   
+Account owners and Project Collection Administrators can add team projects from the admin Overview page or the [account My Projects page](../../../user-guide/account-home-pages.md). 
 
 
-## Related notes  
+## Related articles  
 
 An inherited process supports team projects defined in accounts that use the Inherited process models. For an overview of all process models, see [Customize the work tracking experience](../customize-work.md). 
 
@@ -155,6 +156,4 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 

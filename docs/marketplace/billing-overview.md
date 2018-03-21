@@ -27,7 +27,7 @@ Our pricing model is flexible, enabling you to customize the solution to your sp
 
 
 > [!TIP]  
-> Add active Visual Studio subscribers for free to your VSTS account. We’ll automatically recognize them when they sign in. They won’t count against your 5 free users or as paid users.
+> Add active Visual Studio subscribers for free to your VSTS account. We'll automatically recognize them when they sign in. They won't count against your 5 free users or as paid users.
 > 
 > Visual Studio subscribers can access Basic features. Some subscriptions like Visual Studio Enterprise also include features available through extensions, like Test Manager and Package Management.  
 > 
@@ -48,7 +48,7 @@ With an on-premises TFS, you can start with a free server via TFS Express and fi
 - Service usage by artifact, for example a build & release pipeline 
 
 >[!NOTE]  
->Stakeholders and active Visual Studio subscribers don’t count toward Basic user accounts as they can be added to your TFS account for free. To learn more about licensing, see [Visual Studio 2015 Licensing White Paper](https://www.microsoft.com/download/details.aspx?id=13350).
+>Stakeholders and active Visual Studio subscribers don't count toward Basic user accounts as they can be added to your TFS account for free. To learn more about licensing, see [Visual Studio 2015 Licensing White Paper](https://www.microsoft.com/download/details.aspx?id=13350).
 > 
 > Also, for convenience, you manage billing and monthly subscription services through VSTS and Azure.  
 
@@ -222,7 +222,7 @@ Learn [how to get paid extensions for your VSTS account](install-vsts-extension.
 
 If you work in the cloud and use both VSTS and Azure services, your pricing model includes: 
 
-- Monthly subscription fee per user (Stakeholders and active Visual Studio subscribers don’t count as they can be added to your VSTS account for free) 
+- Monthly subscription fee per user (Stakeholders and active Visual Studio subscribers don't count as they can be added to your VSTS account for free) 
 - Service usage by minutes (such as build agents and cloud testing)  
 - Service usage by artifact, for example a build & release pipeline 
 

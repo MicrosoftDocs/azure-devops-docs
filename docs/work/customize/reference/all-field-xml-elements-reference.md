@@ -22,8 +22,8 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
 ##  <a name="FIELD"></a> FIELD (Definition) container element  
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
 
->[!NOTE]  
-><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+> [!NOTE]    
+>**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -251,7 +251,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 |`pattern`|pattern="*patternValue*"|Required. Enforces basic pattern matching for strings only. *patternValue* is a string that consists of between 1 and 255 characters, inclusive. That string must not contain a backslash character (\\). Each character in the string is interpreted as a literal, unless it is one of the following six metacharacters:<br /><br /> - "A" or "a" represent a single alphabetical character.<br /> - "N" or "n" represent a single numeric character.<br /> - "X" or "x" represent a single alphanumeric character.<br /><br /> Pattern value: ^[^\\\\]*$<br /><br /> For example, `pattern="xxxxx.nn.nn"` matches any five alphanumeric characters, then a period, then two numeric characters, then a period, then two more numeric characters.|  
 |`value`|value="*valueToCopy*"|Optional. Specifies the value to be copied into the field when `value` is specified for the `from` attribute.|  
   
-## Related notes 
+## Related articles 
 -  [Define and modify work item fields](define-modify-work-item-fields.md)   
 -  [Change the workflow](change-workflow-wit.md)
 -  [Customize your work tracking experience](../customize-work.md)  

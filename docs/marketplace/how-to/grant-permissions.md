@@ -8,15 +8,16 @@ ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: douge
 ms.author: elbatk
 ms.date: 9/27/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Grant permissions to manage extensions
 
 **VSTS** | **TFS** 
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## Grant management permissions 
 
@@ -32,9 +33,9 @@ Add users or update permission settings:
 
 ![Extension security](../_img/manage-permissions/extensions-security.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">=tfs-2013 < vsts")
+::: moniker range=">=tfs-2013 < vsts"
 
 ## Grant publish and update permissions on TFS
 
@@ -72,4 +73,4 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
 You can add users later to "TFS Extension Publishers". This is a server-level permission, 
 so updating and deleting an extension will affect all the team project collections that use the extension.
 
-[//]: # (::: moniker-end)
+::: moniker-end

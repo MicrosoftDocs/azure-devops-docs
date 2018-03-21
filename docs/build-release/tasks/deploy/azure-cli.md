@@ -7,8 +7,9 @@ ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Deploy: Azure CLI
 
@@ -63,7 +64,7 @@ None
 | **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -81,7 +82,7 @@ None
 #   failOnStandardError: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related tasks
 

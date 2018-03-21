@@ -171,7 +171,7 @@ Shortcut menu for a work item (TFS web portal)
 ###  <a name="AddressUpdates"></a> Address rejected updates  
  When a project manager rejects a status update to either a requirement or a task, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status to resume synchronization of the work item. You can create a query to find work items whose update status was rejected. For more information, see [Monitor work item submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
-## Related notes  
+## Related articles  
  [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
  [Resolve validation errors](resolve-validation-errors.md)   
  [Manage projects](manage-projects.md)

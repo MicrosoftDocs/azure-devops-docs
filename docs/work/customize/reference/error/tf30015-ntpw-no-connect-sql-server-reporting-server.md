@@ -55,5 +55,5 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
 5.  If the problem persists, contact your Team Foundation Server administrator.  
   
-## Related notes
+## Related articles
 - [Create a team project](../../../../accounts/create-team-project.md)

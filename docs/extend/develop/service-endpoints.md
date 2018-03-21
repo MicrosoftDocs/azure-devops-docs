@@ -170,7 +170,7 @@ Inside the `contributions` array from the previous step, add the following objec
 Note that the datasource endpointUrl is usually computed from the url of the endpoint (or a fixed url), and some additional values. 
 For this tutorial this REST call will return nothing and is meant to be replaced by any REST calls you wish to make to your service.
 
-It’s possible to use other parameters than the endpoint url for the REST URL, for instance some endpoint properties. 
+It's possible to use other parameters than the endpoint url for the REST URL, for instance some endpoint properties. 
 For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: $(endpoint.subscription)
 
 <a name="step2" />
@@ -252,11 +252,11 @@ and Fabrikam is simply the name of the object.
 
 **The `project` input object**
 <br>
-This is the second field. It’s a picklist
+This is the second field. It's a picklist
 - This field is populated by a REST call. 
-- The values from the field “project” are taken from the “Projects” REST data source of the custom endpoint.
+- The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
 - This is expressed in the `dataSourceBindings` array
-  -	The target is the name of the build task field to be populated (“project”)
+  -	The target is the name of the build task field to be populated ("project")
   -	The endpointId is the name of the build task field containing the custom endpoint type
   -	The REST call is chosen by the dataSourceName
 

@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
@@ -51,7 +51,7 @@ If {set S} has no entries and {set A} has entries
   
  If you specify multiple `<SUGGESTEDVALUES>` sets or `<PROHIBITEDVALUES>` sets, the union of each of these multiple sets is taken as the final set, {set S} or {set P}, respectively.  
   
-## Related notes
+## Related articles
 - [Define pick lists](define-pick-lists.md)  
 - [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md) 
 

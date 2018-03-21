@@ -161,7 +161,7 @@ History of work item added by Project Server Sync
 ###  <a name="addressrejectedupdates"></a> Address Rejected Updates to Requirements  
  When a project manager rejects a status update to a requirement, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status before the work item can be synchronized again. You can create a team query to find work items whose update statuses were rejected. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
-## Related notes  
+## Related articles  
 - [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
 -  [Synchronization process overview](synchronization-process-overview.md)   
 - [Manage projects](manage-projects.md)

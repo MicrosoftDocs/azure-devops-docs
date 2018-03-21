@@ -7,8 +7,9 @@ ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: chcomley
 ms.date: 12/11/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #  Disconnect your VSTS account from your directory
 

@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/06/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Remove user accounts
 
@@ -66,5 +67,5 @@ For information on removing users from AD or Azure AD, see one of these topics:
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 - [About security and identity](about-security-identity.md)
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 

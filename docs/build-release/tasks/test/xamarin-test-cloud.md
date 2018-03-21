@@ -7,8 +7,9 @@ ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/16/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Test: Xamarin Test Cloud
 
@@ -41,7 +42,7 @@ None
 | **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -65,7 +66,7 @@ None
 #   publishNUnitResults: true
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example 
 
@@ -85,6 +86,8 @@ None
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

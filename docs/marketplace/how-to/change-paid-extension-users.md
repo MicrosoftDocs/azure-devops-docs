@@ -8,9 +8,10 @@ ms.assetid: 893795e0-ddb7-46ae-a4d3-ce4b7c96f0d9
 ms.manager: douge
 ms.author: elbatk
 ms.date: 9/27/2017
+monikerRange: '>= tfs-2013 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < vsts') 
+ 
 
 # Change number of paid extension users
 

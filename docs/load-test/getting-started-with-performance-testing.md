@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 <a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio and VSTS
@@ -21,9 +22,9 @@ Find problems before your customers do. Start running
 [cloud-based load tests](https://www.visualstudio.com/features/vso-cloud-load-testing-vs) 
 in almost no time with Visual Studio and Visual Studio Team Services (VSTS).
 
-> This example shows how to execute a load test using Visual 
-Studio. You can also run cloud-based load tests directly using the 
-[VSTS portal](get-started-simple-cloud-load-test.md).
+> This example shows how to execute a cloud load test using Visual Studio. You can also
+[run cloud-based load tests directly using the VSTS portal](get-started-simple-cloud-load-test.md),
+or [run load tests locally with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
 
 <a name="LoadTestVSIDE"></a>
 ## Prepare your environment
@@ -141,7 +142,8 @@ connect Visual Studio to your VSTS account.
 
 1. To [simulate real-world loads](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) 
    more closely, you can refine your test by specifying web performance 
-   test properties, load test scenario properties, and run settings properties.
+   test properties, load test scenario properties, and
+   [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
 
 ## Next step
 

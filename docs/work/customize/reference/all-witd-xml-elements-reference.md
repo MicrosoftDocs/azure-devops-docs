@@ -160,7 +160,7 @@ WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.
   
 To learn how to create or customize a WIT, see [Modify or add a custom work item type](../add-modify-wit.md).  
   
-## Related notes 
+## Related articles 
  
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  

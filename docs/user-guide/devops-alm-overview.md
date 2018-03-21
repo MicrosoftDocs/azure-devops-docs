@@ -7,8 +7,9 @@ ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # DevOps overview for VSTS and TFS
 
@@ -20,7 +21,7 @@ Use our integrated tool set to speed the development and delivery of your softwa
 
 VSTS and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
-Both options are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world.
+Both options are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world.
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 

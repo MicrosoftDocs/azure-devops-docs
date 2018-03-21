@@ -7,8 +7,9 @@ ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change account owner for VSTS
 

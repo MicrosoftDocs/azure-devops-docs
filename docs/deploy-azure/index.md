@@ -9,10 +9,11 @@ ms.author: alewis
 ms.date: 07/20/2017
 ms.topic: landing-page
 layout: LandingPage
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
 
-[//]: # (::: moniker range=">= tfs-2015")
+
+::: moniker range=">= tfs-2015"
 
 # Deploy to Azure
 
@@ -50,10 +51,10 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
 - [Build and release in VSTS](../build-release/index.md)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2013")
+::: moniker range="tfs-2013"
 
 **TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../build-release/actions/migrate-from-xaml-builds.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end

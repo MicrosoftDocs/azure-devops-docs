@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/18/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Change individual permissions, grant select access to specific functions  
 
@@ -31,7 +32,7 @@ In this topic you'll learn how to:
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance. 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 <a id="create-custom-group" />
 

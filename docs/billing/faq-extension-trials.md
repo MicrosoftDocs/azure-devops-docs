@@ -7,8 +7,9 @@ ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot paid extensions trials for VSTS
 

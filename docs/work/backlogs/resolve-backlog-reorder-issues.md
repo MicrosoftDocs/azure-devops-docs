@@ -86,6 +86,6 @@ However, if you create parent-child links between a requirement and a bug, and t
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 
 
 
-## Related notes
+## Related articles
 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md) 

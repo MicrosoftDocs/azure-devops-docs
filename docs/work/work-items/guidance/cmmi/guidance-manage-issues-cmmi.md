@@ -53,5 +53,5 @@ You can use the issue work item to help you track problems with the project plan
 ## Additional resources  
  For more information about SCAMPI appraisals, see the following Web page: [Software Engineering Institute](http://go.microsoft.com/fwlink/?LinkId=179026).  
   
-## Related notes
+## Related articles
  [Fields that track bugs, issues, and risks (CMMI)](guidance-bugs-issues-risks-field-reference-cmmi.md)
