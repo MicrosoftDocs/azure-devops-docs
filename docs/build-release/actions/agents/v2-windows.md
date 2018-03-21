@@ -148,7 +148,9 @@ The help provides information on authentication alternatives and unattended conf
 
 ::: moniker-end
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
 
@@ -158,10 +160,16 @@ The help provides information on authentication alternatives and unattended conf
 
 [Run the agent behind a web proxy](proxy.md)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+::: moniker-end
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+::: moniker-end
 
+::: moniker range="< vsts"
 [!INCLUDE [include](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

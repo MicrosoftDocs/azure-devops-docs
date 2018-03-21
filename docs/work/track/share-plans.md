@@ -67,13 +67,6 @@ From Team Explorer you can choose the font, font size, and text and background c
 
 If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
 
-You can also use the following shortcut keys to format your text:  
-- **Bold**: Ctrl+B  
-- *Italic*: Ctrl+I  
-- <u>Underscore</u>: Ctrl+U 
-
-You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
-
 [!INCLUDE [temp](../../_shared/images-not-appearing-vs.md)] 
 
 
@@ -83,6 +76,12 @@ You can copy and paste HTML text or an image from another application directly i
 
 ---
 
+You can also use the following shortcut keys to format your text:  
+- **Bold**: Ctrl+B  
+- *Italic*: Ctrl+I  
+- <u>Underscore</u>: Ctrl+U 
+
+You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
 
 <a id="link-items"></a>
 ## Link items
@@ -157,6 +156,16 @@ Click one or more items and then right-click to open the menu options to downloa
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
 
+
+> [!TIP]    
+> You can drag and drop files into the attachment area. 
+
+Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.
+
+Click one or more items and then right-click to open the menu options to download or delete several attachments. 
+
+<img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
+
 ---
 
  
@@ -188,44 +197,61 @@ You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icon
 To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 ::: moniker-end 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
+From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
 <img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end 
 
 # [Visual Studio](#tab/visual-studio) 
 <a id="team-explorer-storyboard" />
-#### Storyboards tab control  
+From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
+
+**Storyboards tab control** 
 
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
  
 # [Team Explorer Everywhere](#tab/tee)
  
-#### Storyboards tab control  
+From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
+
+**Storyboards tab control**  
 
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
-From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
-
-<img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 1px solid #C3C3C3;" /> 
 
 ---
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
  
+## Email a work item query list
 
-## Related articles  
+A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
 
-As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
+::: moniker range="vsts || >= tfs-2015"
 
-- [Dashboards](../../report/dashboards/dashboards.md)
-- [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
+## Team dashboards 
+
+You can share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. You can add widgets to provide markdown information, query charts, and more. 
+
+For details, see [Dashboards, charts, & widgets](../../report/dashboards/overview.md). 
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2018"
+
+## Team project wiki 
+
+You can use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
+
+To learn more, see [Create a wiki for your team project](../../collaborate/wiki-create-repo.md). 
+
+::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
-### SharePoint project portal
+## SharePoint project portal
 
 You can use a SharePoint site to share and access documents from your team project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
 - Share data contained in reports or dashboards  
@@ -236,6 +262,15 @@ You can use a SharePoint site to share and access documents from your team proje
 To learn more, see [Share information using the project portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md).  
 
 ::: moniker-end
+
+## Related articles  
+
+As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
+
+- [Dashboards](../../report/dashboards/dashboards.md)
+- [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
+
+
 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"

@@ -348,7 +348,9 @@ environments. You can create as many environments as you need with just a click 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

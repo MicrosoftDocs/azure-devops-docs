@@ -127,6 +127,8 @@ Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&l
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

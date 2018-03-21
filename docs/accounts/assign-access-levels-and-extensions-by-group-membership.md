@@ -10,7 +10,6 @@ ms.date: 03/20/2018
 monikerRange: 'vsts'
 ---
 
-
 # Assign access levels and extensions to users by group membership
 
 **VSTS**
@@ -20,8 +19,8 @@ You can assign an access level or extensions to a group, and VSTS will ensure th
 When those users leave the group, those licenses are freed up and returned to your pool.
 This eliminates the need for automating license management on your own to reflect changes in your organizational structure on a per-user basis.
 
->[!Note]
->If you don't see this new feature enabled in your account, please allow for up to two weeks as it is being deployed.
+>[!Update 3/20/2018]
+>If you don't see this new feature enabled in your VSTS account, please allow for up to three weeks as it is currently being rolled out.
 
 ## Assign required licenses
 

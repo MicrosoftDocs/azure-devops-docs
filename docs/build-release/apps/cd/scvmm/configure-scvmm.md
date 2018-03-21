@@ -112,7 +112,9 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 
