@@ -19,14 +19,14 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
-Most Agile tools are [scoped to a team](../../teams/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
+Most Agile tools are [scoped to a team](../../settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 
 > |-------------|----------|---------|---------|   
 > |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/velocity-chart-data-store.md)<br/>|    
 
->[!NOTE]
+> [!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
 
@@ -61,7 +61,7 @@ Take these tools for a test run by [creating an account on VSTS for free](../../
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
-## Related notes
+## Related articles
 
 You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 

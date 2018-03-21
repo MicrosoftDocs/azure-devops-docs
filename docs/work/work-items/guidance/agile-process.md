@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/12/2018
+ms.date: 03/20/2018
 ---
 
 
@@ -21,15 +21,21 @@ The Agile process supports the following work item types (WITs) to plan and trac
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions.  
 
->[!NOTE]  
-><b>Feature availability:</b> From the cloud-based VSTS, you'll always have access to the latest version of the Agile process, [which you can also customize](../../customize/process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the Agile process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+::: moniker range="vsts"
+> [!NOTE]  
+> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+> [!NOTE]  
+> The latest version of the Agile process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
->Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises Team Foundation Server (TFS). Other resource requirements apply. 
-
+>Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises TFS. Other resource requirements apply. 
+::: moniker-end
 
 ## Plan and track work
  
@@ -39,13 +45,12 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
->[!NOTE]  
->A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
-
+> [!NOTE]  
+> A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
 
 
 <a id="shared-queries"></a> 
-### List work items using queries
+## List work items using queries
 
 You can manage your workload more effectively by frequently reviewing the status of user stories and tasks. You can use the shared work item queries to list work items for a current sprint or the product backlog.  
 
@@ -65,31 +70,36 @@ From Team Explorer, you can open any [work item query in Excel](../../backlogs/o
 
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal. 
  
-### Create light-weight charts  
+## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../track/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
+::: moniker range="vsts"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="reports"></a>
-###SQL Server reports (TFS) 
+## SQL Server reports
 
-If you connect to an on-premises TFS, you can access the following Agile process reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If your team project collection and the team project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Agile reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
-To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2017"
 <a id="dashboards"></a>
-### SharePoint portal dashboards (TFS) 
+## SharePoint portal dashboards
 
-If you connect to an on-premises TFS, you can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. The following dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
+You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
+To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 
-To use [dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+::: moniker-end
 
-
-##Related notes  
+## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
 
@@ -212,15 +222,14 @@ The project administrator for each team project [defines area and iteration path
 
 The **Work Items With Summary Values** shared query, which is located in the **Troubleshooting** folder, lists all tasks that have child tasks and that contain non-zero values in the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours. For more information, see [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).
 
-### Workbooks (TFS)  
+::: moniker range=">= tfs-2013 <= tfs-2017"
+### Workbooks
 
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Each workbook references a shared query.  
+You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your team project has been configured with a SharePoint portal. 
+Each workbook references a shared query.  
 
 -   The [Issues workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Open Issues shared query.  
 -   The [Triage workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Bug Triage shared query.
 
-> [!NOTE]   
-> **Feature availability**:  Workbooks are only available when you connect to an on-premises TFS that's been configured with a SharePoint portal.  
-
-
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
+::: moniker-end

@@ -20,7 +20,7 @@ As the following image shows, each work item form comes with a number of control
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
->[!NOTE]  
+> [!NOTE]    
 >Depending on the process chosen when the team project was created&mdash;[Scrum](./guidance/scrum-process.md), 
 [Agile](./guidance/agile-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
@@ -150,7 +150,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
 
 
@@ -165,7 +165,7 @@ From the web portal, simply copy the URL from the web browser address or hover o
 <a id="start-storyboarding">  </a>
 ## Start storyboarding  
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
@@ -184,7 +184,7 @@ Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu,
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 
-## Related notes
+## Related articles
 
 Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 

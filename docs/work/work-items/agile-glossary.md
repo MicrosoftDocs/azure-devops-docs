@@ -136,7 +136,7 @@ An interactive board of work items that support reviewing and updating tasks def
 
 
 ## Team 
-With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../teams/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 ## Team project
 

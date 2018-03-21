@@ -32,17 +32,17 @@ In order to create extensions for VSTS, there are some prerequisite software and
     - The `home` directory of a build or release task extension should look like the following:
 
 ```no-highlight
-├── README.md
-├── sdk    
-	├── node_modules           
-	└── scripts
-		└── VSS.SDK.js       
-├── images                        
-	└── extension-icon.png  
-├── buildAndReleaseTask
-    └── task.json                         
-├── scripts                        	// where your build or release task scripts should be placed
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+	|--- node_modules           
+	|--- scripts
+		|--- VSS.SDK.js       
+|--- images                        
+	|--- extension-icon.png  
+|--- buildAndReleaseTask
+    |--- task.json                         
+|--- scripts                        	// where your build or release task scripts should be placed
+|--- vss-extension.json				// extension's manifest
 ```
 
 

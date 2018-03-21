@@ -27,7 +27,7 @@ intervention. However, automating multiple components of a system has its own ch
 automated in silos, if we need a one-click deployment for the entire system, we need to have an 
 automation framework that can automate an entire custom workflow.
 
-Throughout this paper, we give insight on our project – World Wide Time Keeping — and how we implemented build 
+Throughout this paper, we give insight on our project - World Wide Time Keeping - and how we implemented build 
 and deployment automation using Gated Check-ins, Code Analysis, and Fortify Integrations. We discuss build and 
 deployment automation by using PowerShell scripts and how we can create custom workflows and deploy all at once 
 using Release Management. We also talk about how these can help you cut down your engineering cycle time and 
@@ -91,14 +91,14 @@ Code is compiled, environments are configured, many types of tests run, and fina
 considered "done". By done, we mean that the code is in production. Anything you successfully put 
 through the release pipeline should be something you would give to your customers. Here is a diagram 
 based on the one you will see on Jez Humble's
-[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
+[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
 occur as code moves through a release pipeline.
 
 ![Pipeline for continuous delivery](./_img/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
 
 ### Using Release Management
 
-If your team is working on Azure-based components – web apps, services, web jobs, and so on — you can use 
+If your team is working on Azure-based components - web apps, services, web jobs, and so on - you can use 
 Release Management for automating deployments.
 
 Release Management consists of various pre-created components which you can configure and use either 
@@ -206,7 +206,7 @@ MSDN Article
 [Building a Release Pipeline with Team Foundation Server 2012](https://msdn.microsoft.com/en-us/library/dn449957.aspx), 
 MSDN Article
 
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

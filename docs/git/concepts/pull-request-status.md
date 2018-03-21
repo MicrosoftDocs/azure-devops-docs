@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Customize and extend pull request workflows with pull request status
 

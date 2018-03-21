@@ -8,8 +8,9 @@ ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your Node.js app with Gulp
 

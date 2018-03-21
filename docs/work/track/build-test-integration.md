@@ -68,7 +68,7 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 
 <img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 ## Build and test data fields  
@@ -263,7 +263,7 @@ The following fields do not appear on work item forms, but these fields are trac
 1.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.  
 2.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
-## Related notes
+## Related articles
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 

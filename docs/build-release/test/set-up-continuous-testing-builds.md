@@ -7,8 +7,9 @@ ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Set up continuous testing for your builds
 

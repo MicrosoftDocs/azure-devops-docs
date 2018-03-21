@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Test: Cloud-based Load Test
 
@@ -43,7 +44,7 @@ The build agent must have the following capabilities:
 | **Number of permissible threshold violations** | Optional. The number of critical violations that must occur for the load test to be deemed unsuccessful, aborted, and marked as failed. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -63,7 +64,7 @@ The build agent must have the following capabilities:
 #   MachineType: 0 # 0 (default), 2
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Examples
 
@@ -100,7 +101,9 @@ a failure to be reported. For more details, see:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

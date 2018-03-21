@@ -17,16 +17,16 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 
 ## Structure of an extension
 ```no-highlight
-├── README.md
-├── sdk    
-	├── node_modules           
-	└── scripts
-		└── VSS.SDK.js       
-├── images                        
-	└── icon.png                           
-├── scripts                        	// not used in this tutorial
-├── hello-world.html				// html page to be used for your hub  
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+	|--- node_modules           
+	|--- scripts
+		|--- VSS.SDK.js       
+|--- images                        
+	|--- icon.png                           
+|--- scripts                        	// not used in this tutorial
+|--- hello-world.html				// html page to be used for your hub  
+|--- vss-extension.json				// extension's manifest
 ```
 ## Get the client SDK: `VSS.SDK.js`
 The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host VSTS frame and to perform operations like 

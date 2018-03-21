@@ -7,8 +7,9 @@ ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Voluntarily provide stakeholder feedback using the Test &amp; Feedback extension
  

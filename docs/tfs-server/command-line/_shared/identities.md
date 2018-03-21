@@ -79,7 +79,7 @@ The following example shows how to list the names of all Windows users and group
 Sample output:
 
     TFSConfig - Team Foundation Server Configuration Tool
-    Copyright � Microsoft Corporation. All rights reserved.
+    Copyright - Microsoft Corporation. All rights reserved.
 
     Account Name Exists (see note 1) Matches (see note 2)
     --------------------------------------------------------------------

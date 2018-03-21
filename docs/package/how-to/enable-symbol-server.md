@@ -6,8 +6,9 @@ ms.technology: vs-devops-package
 ms.assetid: 8cdfb55b-62e2-4420-be9a-021896bbe5a2
 ms.author: elbatk
 ms.date: 02/12/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 **VSTS**
 

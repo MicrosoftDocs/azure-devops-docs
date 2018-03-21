@@ -79,7 +79,7 @@ The following example shows how to specify a task that creates the two types of 
   
 
 
-## Related notes
+## Related articles
 -  [Manage link types](../witadmin/manage-link-types.md)   
 -  [Define a custom link type](../define-custom-link-type.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

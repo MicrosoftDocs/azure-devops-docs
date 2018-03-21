@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 <p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model using the old form layout. For the Hosted XML process model and the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -44,7 +44,7 @@ If you are designing a work item form from the ground up, you might want to add 
 |`Padding`|Optional. String of the form *(left, top, right, bottom)* that specifies, in pixels, the amount of space around the outside border of the control and around the inside border. You can vary the amount of space on each side.|(2,0,2,0)|  
 |`Label`|Optional. Specifies the visible text on the form that identifies the control.<br /><br /> You can leave the label unspecified when the attachment control is the only control on a tab. The tab label is sufficient to identify the control.|Specify a string of no more than 80 characters.|  
   
-## Related notes  
+## Related articles  
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)  
 - [WebLayout and Control elements](weblayout-xml-elements.md)

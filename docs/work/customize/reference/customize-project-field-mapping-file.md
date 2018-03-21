@@ -162,6 +162,6 @@ The following table indicates whether a work item that is not a summary or paren
 |Yes|True|False|Yes|No|  
 |Yes|False|False|Yes|Yes|  
   
-## Related notes
+## Related articles
 -  [LinkTypes](link-type-element-reference.md)   
 -  [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)

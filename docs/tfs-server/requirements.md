@@ -1,4 +1,4 @@
-﻿---
+---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: vs-devops-alm
@@ -8,9 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/02/2017
+monikerRange: '>=tfs-2013'
 ---
 
-[//]: # (monikerRange: '>=tfs-2013')
+
 
 # Requirements and compatibility
 
@@ -119,7 +120,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | Category | Requirements |
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
-Required for reporting | Reporting Services – Native </br> Analysis Services |
+Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](../tfs-server/install/sql-server/collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
@@ -169,7 +170,7 @@ TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows S
 You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](../tfs-server/command-line/open-admin-console.md).
 
 >**Tip:**
-If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you’re using. Support for server operating systems in TFS is more amenable than in SharePoint.
+If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.
 
 Here are your main options:
 
@@ -422,7 +423,7 @@ recommend using higher spec application and data tiers to avoid performance
 issues. For example, a team of 250 might use a multiple server deployment 
 that is more in line with the recommendations for a team of 500-2,000 users. We also 
 recommend that you keep an eye on your automated processes to ensure that 
-they are efficient – for example, retrieve data from source control 
+they are efficient - for example, retrieve data from source control 
 incrementally during builds whenever possible, rather than fully refreshing 
 on each build. NOTE: except for very small teams with extremely limited usage 
 of these features we do not recommend installing build, test, or release 
@@ -490,7 +491,7 @@ The following rules clarify the language requirements for installations of Team 
 
 -   If you want to use SharePoint Products, it must match the language of the installation of Team Foundation Server, or you must install the language pack that matches the language of your installation of Team Foundation Server.
 
-For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
+For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
 
 The following components do not have additional language requirements that are specific to working with Team Foundation Server:
 
@@ -502,7 +503,7 @@ The following components do not have additional language requirements that are s
 
 -   Visual Studio Lab Management
 
-Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
+Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
 
 
 <a name="client-compatibility"></a>

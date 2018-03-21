@@ -12,9 +12,11 @@ ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 02/07/2018
+ms.date: 03/17/2018
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Define a continuous integration (CI) build process for your Git repo
 
@@ -81,7 +83,7 @@ and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
 ## Keep code quality high by building your pull requests
 
-Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don’t result in broken builds for your branches.
+Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
 
 1.  Navigate to the **Code** hub in VSTS.
 2.  Choose your **repository** and Select **Branches**.  Choose the **master branch**.

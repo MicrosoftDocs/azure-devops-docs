@@ -9,8 +9,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: sdanie
 ms.date: 02/07/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Default TFVC permissions
 
@@ -20,7 +21,7 @@ Once you have been added as a team member, you are a member of the Contributors 
 
 From the project admin content, **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). 
 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](_shared/code-tfvc.md)]
 
 ## Related notes 
 

@@ -7,8 +7,9 @@ ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2016
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # FAQs
 

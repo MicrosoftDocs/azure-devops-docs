@@ -1,27 +1,33 @@
 ---
 title: Add task checklists
 titleSuffix: VSTS & TFS
-description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
+ms.custom: Add checklists
+description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services  and Team Foundation Server   
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
-ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
+ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
 ms.topic: get-started-article
+monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
-#Add task checklists
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1</b> 
+# Add task checklists
 
-
-> [!NOTE]  
-> **Feature availability:** Task checklists on the Kanban board are supported from VSTS and the web portal for TFS 2015.1 and later versions.  
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
 With task checklists, you continue to enjoy lightweight tracking, while gaining visibility into which tasks are still to be completed and those that are done. Task checklists provide a quick and easy way to track elements of work which are important to support completing a backlog item. Here we see several tasks for work in progress, both yet to do and those completed.  
+
+::: moniker range="tfs-2015"
+
+> [!NOTE]  
+> Task checklists on the Kanban board are supported from TFS 2015.1 and later versions. 
+
+::: moniker-end
 
 In this topic, you'll learn: 
 > [!div class="checklist"] 
@@ -40,14 +46,14 @@ In this topic, you'll learn:
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+	::: moniker-end
+	::: moniker range="tfs-2015"
 	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+	::: moniker-end
 
-	For users of VSTS and TFS 2017 or later versions, you'll see several additional menu options: 
-
-	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" /> 
-
-2. If you have a number of tasks to add, simply keep typing your task titles and click Enter. 
+2. If you have a number of tasks to add, simply keep typing your task titles and click Enter.   
 
 	<img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
@@ -60,6 +66,7 @@ In this topic, you'll learn:
 	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
 	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/sprint-planning.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
+
 
 ## Mark a task as done 
 
@@ -77,7 +84,6 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 
 Simply click the task checklist summary to expand a collapsed task checklist. Click the same summary to collapse an expanded checklist. 
 
-
 ## Reorder and reparent tasks or reassign them to a sprint
 
 Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
@@ -88,8 +94,23 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
+## Customize the Kanban board 
+To customize or change the layout of the board, see one of these topics. 
 
-## Related notes  
+* [Add columns](add-columns.md)  
+* [WIP limits](wip-limits.md)  
+* [Add swimlanes, expedite work](expedite-work.md)   
+* [Customize cards](../customize/customize-cards.md)  
+* [Split columns](split-columns.md)   
+* [Definition of Done](definition-of-done.md)  
+
+## Q & A
+
+### Q: If I manage bugs with tasks, can I add bugs as a checklist to a required? 
+**A:** No. Task checklists only support the task work item type. 
+ 
+
+## Related articles  
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
 
 You can also [add tags and show tags and fields on cards](../customize/customize-cards.md) to support other tracking needs.  
@@ -100,16 +121,11 @@ In addition, you can:
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Kanban board controls](kanban-board-controls.md)
 
-### Customize the Kanban board 
-To customize or change the layout of the board, see one of these topics. 
-
-* [Add columns](add-columns.md)  
-* [WIP limits](wip-limits.md)  
-* [Add swimlanes, expedite work](expedite-work.md)   
-* [Customize cards](../customize/customize-cards.md)  
-* [Split columns](split-columns.md)   
-* [Definition of Done](definition-of-done.md)  
-
-
 ### REST API resources
 To programmatically create tasks, see the [REST API, Work Items reference](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items).
+
+
+<!---
+> [!NOTE]   
+> Task checklists is a supported feature of TFS 2015.1 and later versions. 
+-->

@@ -1,5 +1,6 @@
 ---
-title: Customize the field mapping between TFS and Project Server |TFS
+title: Customize the field mapping between TFS and Project Server
+titleSuffix: TFS
 description: Associate the fields in Visual Studio Team Foundation Server (TFS) with the one in Project Server to Synchronize data between the Project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit 
@@ -49,7 +50,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
  For more information about mappings and the synchronization process, see [Field mapping reference](field-mapping-xml-element-reference.md).  
   
 |Team Foundation field|Project Server field|Status Queue field|Work item types in Agile|Work item types in CMMI|Work item types in Scrum|  
-|---------------------------------------------------------------------|--------------------------|------------------------|------------------------------|-----------------------------|------------------------------|  
+|----------------------|--------------------|----------------|------------------------------|-----------------------------|------------------------------|  
 |Title|Task Name|Title|All|All|All|  
 |Assigned To|Resources|Resources|All|All|All|  
 |Completed Work|Task Actual Work|Resource Actual Work|Task|Task|None|  
@@ -81,18 +82,20 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 4.  Within the `FIELDS` definition section, add this code snippet before the element for Remaining Work:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML
     <FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum">  
-    &nbsp;&nbsp;&nbsp;<HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>  
+       <HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>  
     </FIELD>  
     <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  
-    &nbsp;&nbsp;&nbsp;<HELPTEXT>Initial value for Remaining Work - set once, when work begins. </HELPTEXT>  
+       <HELPTEXT>Initial value for Remaining Work - set once, when work begins. </HELPTEXT>  
     </FIELD>  
     ```  
   
 5.  Within the `<WORKFLOW>` section, remove the following code snippet from both `<STATE value="Done">` and `<STATE value="Removed">` definitions:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML 
     <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">  
        <EMPTY />  
     </FIELD>  
@@ -100,7 +103,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 6.  Within the `<FORM>` section, add the following `Control` elements:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML
     <Control FieldName="Microsoft.VSTS.Scheduling.OriginalEstimate" Type="FieldControl" Label="Original Estimate:" LabelPosition="Left" />  
     <Control FieldName="Microsoft.VSTS.Scheduling.CompletedWork" Type="FieldControl" Label="Completed:" LabelPosition="Left" />  
     ```  
@@ -143,7 +147,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 -   Rollup is automatically calculated for the Assigned To, Completed Work, and Remaining Work fields. You cannot map additional fields and have rollup calculated for them. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
   
--   You must make sure that the data types or units of each field that you map conform to the field mapping criteria for standard and custom enterprise fields. For more information, see â€œData Types and Field Mapping Criteria in [Restrictions on mapping fields](restrictions-mapping-ps-fields.md).  
+-   You must make sure that the data types or units of each field that you map conform to the field mapping criteria for standard and custom enterprise fields. For more information, see [Restrictions on mapping fields, Data Types and Field Mapping Criteria](restrictions-mapping-ps-fields.md).  
   
 -   You can map fields that are associated with pick lists in TFS. However, you must create lookup tables in Project Server to match the pick lists. You cannot automatically synchronize pick lists and lookup tables.  
   
@@ -152,14 +156,15 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 ### Example: mapping the team name to appear in Project  
  In the following example, the custom string field in TFS, MyCompany.MyOrg.DevTeamName, is mapped to an enterprise custom text field in Project Server, My Company Team Name. You can use this example to display in Project Professional the name of the team that is associated with a task.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <field tfsName="MyCompany.MyOrg.DevTeamName" tfsMirrorName="Mirror.MyCompany.MyOrg.DevTeamName" displayTfsField="false" displayTfsMirror="false" onConflict="DoNothing">  
-&nbsp;&nbsp;&nbsp;<tfsToTarget>  
-&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name=" My Company Team Name" />  
-&nbsp;&nbsp;&nbsp;</tfsToTarget>  
-&nbsp;&nbsp;&nbsp;<targetToTfs>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerPublished" name=" My Company Team Name" />  
-&nbsp;&nbsp;&nbsp;</targetToTfs>  
+   <tfsToTarget>  
+      <target provider="ProjectServerStatusQueue" name=" My Company Team Name" />  
+   </tfsToTarget>  
+   <targetToTfs>  
+       <target provider="ProjectServerPublished" name=" My Company Team Name" />  
+   </targetToTfs>  
 </field>  
 ```  
   
@@ -183,24 +188,24 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 3.  Add the following code to the file:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML
     <field tfsName="System.AreaPath" tfsMirrorName="Mirror.System.AreaPath" displayTfsField="true" displayTfsMirror="true">  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <tfsToTarget>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerStatusQueue" name="Area (TFS)" />  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </tfsToTarget>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <targetToTfs>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerPublished" name="Area (TFS)" />  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </targetToTfs>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </field>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <field tfsName="System.IterationPath" tfsMirrorName="Mirror.System.IterationPath" displayTfsField="true" displayTfsMirror="true">  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <tfsToTarget>  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerStatusQueue" name="Iteration (TFS)" />  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </tfsToTarget>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <targetToTfs>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <target provider="ProjectServerPublished" name="Iteration (TFS)" />  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </targetToTfs>  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </field>  
-  
+      <tfsToTarget>  
+         <target provider="ProjectServerStatusQueue" name="Area (TFS)" />  
+      </tfsToTarget>  
+      <targetToTfs>  
+         <target provider="ProjectServerPublished" name="Area (TFS)" />  
+      </targetToTfs>  
+    </field>  
+    <field tfsName="System.IterationPath" tfsMirrorName="Mirror.System.IterationPath" displayTfsField="true" displayTfsMirror="true">  
+      <tfsToTarget>  
+         <target provider="ProjectServerStatusQueue" name="Iteration (TFS)" />  
+      </tfsToTarget>  
+      <targetToTfs>  
+         <target provider="ProjectServerPublished" name="Iteration (TFS)" />  
+      </targetToTfs>  
+    </field>    
     ```  
   
 4.  Import the updated field mappings file as [Upload Mappings](#upload) describes later in this topic.  
@@ -268,9 +273,9 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
     ```  
     TfsAdmin ProjectServer /UploadFieldMappings /collection:tpcUrl /filePath:MappingFile /force  
-    ```  
-  
-     Replace *tpcUrl* with the URL of the team project collection, and replace *MappingFile* with the path and name of your custom mapping file. Specify **/force** if you are updating the existing mappings.  
+    ``` 
+ 
+	Replace *tpcUrl* with the URL of the team project collection, and replace *MappingFile* with the path and name of your custom mapping file. Specify **/force** if you are updating the existing mappings.  
   
 2.  Wait until the following messages appear:  
   
@@ -289,7 +294,7 @@ Project Server tab
   
  For more information about each default field that appears on the **Project Server** tab, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-## Related notes  
+## Related articles  
  [Specify work item types](specify-wits-to-synchronize.md)   
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

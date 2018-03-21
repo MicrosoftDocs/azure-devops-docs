@@ -15,8 +15,9 @@ ms.topic: get-started-article
 ms.date: 02/07/2018
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Create a CI/CD pipeline for Java with the Azure DevOps Project
 

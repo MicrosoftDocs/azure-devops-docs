@@ -7,8 +7,9 @@ ms.assetid: f5fab296-1942-47c9-b4c8-61bf347b3d87
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/22/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #	Buy Visual Studio Professional and Visual Studio Enterprise subscriptions
 

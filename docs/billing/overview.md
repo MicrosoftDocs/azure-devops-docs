@@ -8,8 +8,9 @@ ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: chcomley
 ms.date: 3/13/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # VSTS billing overview
 

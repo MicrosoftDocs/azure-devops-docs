@@ -123,6 +123,6 @@ TfsAdmin ProjectServer /MapPlanToTeamProject /collection:http://AdventureWorksSe
 TfsAdmin ProjectServer /UnmapPlanFromTeamProject /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection/ enterpriseProject:MyEnterpriseProjA /teamProject:MyTeamProjB  
 ```  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Map integration components](map-integration-components.md)

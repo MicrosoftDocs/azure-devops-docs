@@ -7,8 +7,9 @@ ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Deploy: Copy Files Over SSH
 
@@ -37,7 +38,7 @@ Supported protocols for file transfer are SFTP and SCP via SFTP.
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -56,7 +57,7 @@ Supported protocols for file transfer are SFTP and SCP via SFTP.
 #   flattenFolders: false
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## See also
 
@@ -71,7 +72,9 @@ Supported protocols for file transfer are SFTP and SCP via SFTP.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

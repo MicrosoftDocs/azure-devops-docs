@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: mmitrik
 ms.date: 03/14/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Configure a branch policy for an external service 
 

@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2017"
 ---
-[//]: # (monikerRange: ">= tfs-2017")
+
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
@@ -119,7 +120,10 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
+
 
 <!-- ENDSECTION -->
 

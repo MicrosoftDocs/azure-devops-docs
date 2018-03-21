@@ -43,7 +43,7 @@ ms.date: 01/12/2017
   
  The **Project Server** tab and fields are added to the work item form for those types of work items that you have specified to participate in synchronization. For more information, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-## Related notes  
+## Related articles  
  [System and setup requirements](system-and-setup-requirements.md)   
  [Synchronization process overview](synchronization-process-overview.md)   
  [Remove a component](remove-component-from-synchronization.md)   

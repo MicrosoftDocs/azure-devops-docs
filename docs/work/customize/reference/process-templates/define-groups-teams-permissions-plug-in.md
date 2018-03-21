@@ -190,7 +190,7 @@ You must specify permissions for each group that you create. You use the **permi
 |**permissions**|Required child element of **group** and specifies the collection of permissions to apply to the group. The **permissions** container element must precede the **members** container element.<br />`<permissions>`<br />      `    <permission> . . . </permissions>`<br />`</permissions >`|  
 |**teamsettings**|Optional child element of **group**. Configures the team project as the default team, and optionally specifies team milestones with the **iterationPath** element. <br /> `<teamSettings areaPath="Area">`<br />      `. . .`<br />`</teamSettings>`|  
   
-## Related notes
+## Related articles
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
 -  [Apply a field rule](../apply-rule-work-item-field.md)   

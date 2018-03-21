@@ -8,8 +8,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/24/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Security & Identity 
 

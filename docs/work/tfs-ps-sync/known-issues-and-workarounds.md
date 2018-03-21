@@ -116,7 +116,7 @@ ms.date: 01/12/2017
   
  To resolve these errors, close the master project whenever you are modifying a mapped subproject.  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Remove a component](remove-component-from-synchronization.md)   
  [Change your deployment configuration](change-deployment-configuration.md)   

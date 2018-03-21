@@ -7,8 +7,9 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.manager: douge
 ms.author: douge
 ms.date: 10/19/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Get VSTS and TFS product support and provide feedback
 

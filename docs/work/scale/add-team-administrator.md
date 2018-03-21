@@ -55,8 +55,8 @@ As a team administrator, you can configure, customize, and manage all team-relat
 > [!div class="nextstepaction"]
 > [Configure team settings](manage-team-assets.md) 
 
-## Related notes
+## Related articles
 
-- [About teams & Agile tools](../../teams/about-teams-and-settings.md)
+- [About teams & Agile tools](../../settings/about-teams-and-settings.md)
 - [Manage portfolios](portfolio-management.md)
 - [Set team favorites](../../collaborate/set-favorites.md) 

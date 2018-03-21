@@ -7,8 +7,9 @@ ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot paying for VSTS Basic access
 

@@ -8,8 +8,9 @@ ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Create a test plan and test suite
 

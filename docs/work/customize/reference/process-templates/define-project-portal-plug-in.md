@@ -288,7 +288,7 @@ You use the **activateFeatures** element to cause the creation of the dashboards
 </Portal>  
 ```  
   
-## Related notes  
+## Related articles  
 - [Customize a process](customize-process.md)   
 - [Process template and plug-in files](overview-process-template-files.md)
 - [Scrum](../../../work-items/guidance/scrum-process.md)

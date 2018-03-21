@@ -71,7 +71,7 @@ The following example shows the syntax structure that defines a category that is
 |-------------|-----------------|  
 |**CATEGORIES**|Optional child element of the WorkItemTracking plug-in. Specifies the path and name of the file that contains the category definitions to be uploaded when the WorkItemTracking plug-in task is processed. <br />`<CATEGORIES fileName="CategoriesFilePathName" />`|
   
-## Related notes 
+## Related articles 
 - [Use categories to group work item types](../use-categories-to-group-work-item-types.md)
 - [CATEGORIES XML reference](../categories-xml-element-reference.md)
 - [Import and export categories](../witadmin/witadmin-import-export-categories.md)   
