@@ -165,6 +165,8 @@ When you set ```system.prefergit``` to ```true```, the build process uses Git.ex
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

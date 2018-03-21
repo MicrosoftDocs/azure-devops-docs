@@ -268,6 +268,8 @@ If you are using an on-premises Team Foundation Server, then the time zone is th
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

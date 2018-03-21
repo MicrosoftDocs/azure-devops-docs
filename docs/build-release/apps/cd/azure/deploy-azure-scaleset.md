@@ -120,7 +120,10 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
+
 
 <!-- ENDSECTION -->
 

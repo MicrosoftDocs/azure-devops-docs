@@ -503,7 +503,7 @@ The following components do not have additional language requirements that are s
 
 -   Visual Studio Lab Management
 
-Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
+Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
 
 
 <a name="client-compatibility"></a>

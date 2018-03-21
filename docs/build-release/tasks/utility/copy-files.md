@@ -165,6 +165,8 @@ See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
