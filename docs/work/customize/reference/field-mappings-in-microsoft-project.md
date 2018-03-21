@@ -36,7 +36,7 @@ You can also prevent team members from changing calculated field values in Team 
 |**TFS work item field type**|**Microsoft Project field type**|  
 |----------------------------------|--------------------------------------|  
 |DateTime|Datetime.|  
-|Double|Work, units, percentages, fractions, and any field type with a range of ±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>.|  
+|Double|Work, units, percentages, fractions, and any field type with a range of ±5.0 × 10<sup>-324</sup> to ±1.7 × 10<sup>308</sup>.|  
 |History|Not Supported.|  
 |Html|Not Supported.|  
 |Integer|Work, units, numbers, and any field type with a range of -2,147,483,648 to 2,147,483,647.|  
@@ -45,7 +45,7 @@ You can also prevent team members from changing calculated field values in Team 
 |TreePath|Custom outline codes.|  
   
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >Office Project does not populate the Resource Names field list with names of team members. Therefore, you must manually add names to the list. When you assign a work item to a resource in Office Project, you should specify the resource by its display name from Active Directory or the Address Book. If you assign a work item to a resource by alias or other shortened form of the name, you introduce an inconsistency that can cause validation errors.
  
  For more information about work item field types, see [Add or modify work item fields](../add-modify-field.md). For more information about Project field types, see the help about the pjField constant in the [Project 2013 developer documentation](http://msdn.microsoft.com/library/backlogs/office/ms512767.aspx).  
@@ -57,7 +57,7 @@ You can also prevent team members from changing calculated field values in Team 
 > [!NOTE]  
 >  If you are using Project Server, there are additional fields that have "Enterprise" in the name, such as **pjTaskEnterpriseCost1**. TFS does not publish or refresh data to Project Server, unless you integrate it as described in [Synchronize TFS with Project Server](../../tfs-ps-sync/synchronize-tfs-project-server.md). Therefore, these field names are not supported with the Team Foundation add-in to Project.  
   
-## Related notes 
+## Related articles 
 -  [Create your backlog and tasks using Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)   
 -  [TFSFieldMapping](upload-or-download-the-microsoft-project-mapping-file.md)   
 -  [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)

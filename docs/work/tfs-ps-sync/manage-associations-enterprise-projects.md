@@ -118,7 +118,7 @@ ms.date: 01/12/2017
   
  In addition, you must grant users in Team Foundation access to log on to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Manage mappings](manage-mappings-enterprise-project-team-project.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

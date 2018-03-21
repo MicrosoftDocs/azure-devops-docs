@@ -7,8 +7,9 @@ ms.assetid: CAA3900B-1939-41B8-871B-FF0E99DC3E5A
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Testing with unified agents and phases
 

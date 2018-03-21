@@ -118,7 +118,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 |**WORKITEMTYPE**|`<WORKITEMTYPE fileName="WITFilePathName" />`|Required child element of **WORKITEMTYPES**.<br /><br /> Specifies the path and name of the file that contains a type definition to upload.|  
 |**WORKITEMTYPES**|`<WORKITEMTYPES>      <WORKITEMTYPE />  . . . </WORKITEMTYPES>`|Required child element of the WorkItemTracking plug-in.<br /><br /> Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload.|  
   
-## Related notes  
+## Related articles  
  [Customize a process](customize-process.md)   
  [Customize your work tracking experience](../../customize-work.md)   
  [Overview of process template files](overview-process-template-files.md)

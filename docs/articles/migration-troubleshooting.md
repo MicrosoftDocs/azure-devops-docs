@@ -42,7 +42,7 @@ The database metadata size is currently {Metadata Size}GBs. This is above the ma
 Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to VSTS. The volume of metadata in your collection is too large and needs to be [reduced](../tfs-server/upgrade/clean-up-data.md) below the mentioned limit to proceed with the import.   
 
 ## Dealing with Collation Warnings
-Collation in this case refers to the collection database’s collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
+Collation in this case refers to the collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
 
 ```cmdline
 The collection database's collation '{collation}' is not natively supported in VSTS. Importing your collection will result in your collation being converted to one of the supported VSTS collations. See more details at https://aka.ms/vstsimportcollations
@@ -69,11 +69,11 @@ In order to continue your collection's collation will need to be [changed](https
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
 ### ISVError:100014
-This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and VSTS. For example, every collection that you create has “Project Collection Valid Users” and “Project Collection Administrators” groups. They’re created by default and it’s not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md) command(s) will need to be run.
+This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and VSTS. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md) command(s) will need to be run.
 
 #### Project Collection Valid Users Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with “**0-0-0-0-3**”, such as in the example below, then you will need to fix a missing permission for the “Project Collection Valid Users” group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
+Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -91,7 +91,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 ```
 #### Project Collection Administrators Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with “**0-0-0-0-1**”, such as in the example below, then you will need to fix a missing permission for the “Project Collection Administrators” group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
+Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -119,16 +119,16 @@ TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid
 
 TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collectionhttps://localhost:8080/tfs/defaultcollection
 ```
-If you have multiple errors that need to be corrected, it’s recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run TfsMigrator validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [VSTS customer support](https://aka.ms/vstscustomersupport).
+If you have multiple errors that need to be corrected, it's recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run TfsMigrator validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [VSTS customer support](https://aka.ms/vstscustomersupport).
 
 ### ISVError:300005
 
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the below commands to fix this error. 
 
-ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They’re uneditable groups that only contain other TFS groups as members. In the case of ISVError:300005, a non TFS group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
+ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're uneditable groups that only contain other TFS groups as members. In the case of ISVError:300005, a non TFS group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
 
-Since Valid Users groups can’t be edited directly or through TFSSecurity.exe, correcting the invalid membership will need to be done by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) TfsMigrator highlighted. You will need copy down the GroupSid, MemberId, and ScopeId as these values will need to be placed into the templated command below.
+Since Valid Users groups can't be edited directly or through TFSSecurity.exe, correcting the invalid membership will need to be done by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) TfsMigrator highlighted. You will need copy down the GroupSid, MemberId, and ScopeId as these values will need to be placed into the templated command below.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -198,6 +198,44 @@ If this number is in the high five-digits or even six-digits ranges then it coul
 ## Dealing with Process Errors
 See the separate [Process Templates](migration-processtemplates.md) page for details on resolving common process errors.
 
+## Dealing with Field Validation Errors
+
+#### <a name= "VS1640137"> </a> **VS1640137**
+In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
+
+Sometimes your local collection may have different type for a particular field. Presently [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
+```
+>[!Note]
+> If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
+
+> [!Important]
+> Using [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
+
+```cmdline
+witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName
+```
+
+#### <a name= "VS1640138" ></a> **VS1640138**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
+
+Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
+```
+
+#### <a name= "VS1640139" ></a> **VS1640139**
+In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
+
+Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
+```
+
 ## Dealing with Import Errors
 Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will recieve a failure email if this happens. 
 
@@ -235,13 +273,13 @@ The DACPAC is not built off a detached collection. The collection database will 
 VS403243: Unable to connect to the database using the provided SQL Connection String {0}.
 ```
 
-Unable to make a connection to the database using the provided SQL Connection String. Review the parameters that were provided to ensure they’re correct and try again.
+Unable to make a connection to the database using the provided SQL Connection String. Review the parameters that were provided to ensure they're correct and try again.
 
 **VS403260 & VS403351**
 
 ```cmdline
 VS403260: The database is not detached.
-VS403351: The DACPAC or source database is missing an expected table. It’s possible that the database was not correctly detached from TFS.
+VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from TFS.
 ```
 
 The database is not detached. It will need to be [detached](migration-import.md#detaching-your-collection) and the import queued again. 
@@ -308,7 +346,7 @@ There is a new line character in the source location value, this could have been
 **VS403271**   
 
 ```cmdline
-VS403271: It appears that your DACPAC was uploaded to East US. It’s required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.
+VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.
 ``` 
 
 Your import files and DACPAC are not located in the **required** Azure region to complete the import to your target VSTS region. Please [Create a new windows azure storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) in the required region and copy your files. Below is an example of how to copy your data using AzCopy.

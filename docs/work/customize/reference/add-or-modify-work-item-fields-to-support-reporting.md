@@ -13,7 +13,7 @@ ms.date: 02/10/2017
 
 <b> TFS 2017 | TFS 2015 </b> 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
 >
 >For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
@@ -232,7 +232,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
 |Work Item.Severity|Microsoft.VSTS.Common.Severity|String|  
 |Work Item.Stack Rank|Microsoft.VSTS.Common.StackRank|Double|  
   
-## Related notes 
+## Related articles 
 -  [Manage work item fields](witadmin/manage-work-item-fields.md)   
 -  [Resolve data warehouse schema conflicts](../../../report/admin/resolve-schema-conflicts.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)   

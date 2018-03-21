@@ -26,7 +26,7 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
 
 
-## Related notes
+## Related articles
 
 - [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 

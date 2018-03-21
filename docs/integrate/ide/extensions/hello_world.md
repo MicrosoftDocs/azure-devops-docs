@@ -65,7 +65,7 @@ At this point, the Button you're adding is pretty generic. You'll have to modify
           </Button>
           ...
 
-3.	Go back to **Solution Explorer** and find the Command.cs file. Change the string message for the command to “Hello World!”
+3.	Go back to **Solution Explorer** and find the Command.cs file. Change the string message for the command to "Hello World!"
 
           ...
           private void MenuItemCallback(object sender, EventArgs e)

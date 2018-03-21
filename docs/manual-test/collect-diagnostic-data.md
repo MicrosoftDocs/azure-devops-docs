@@ -7,8 +7,9 @@ ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Collect diagnostic data while testing
  

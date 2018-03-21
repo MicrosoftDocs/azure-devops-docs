@@ -8,9 +8,10 @@ ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: douge
 ms.author: elbatk
 ms.date: 12/04/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Uninstall or disable extensions
 

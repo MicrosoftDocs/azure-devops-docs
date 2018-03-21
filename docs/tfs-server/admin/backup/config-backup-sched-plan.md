@@ -9,9 +9,10 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 10/19/2017
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 
 # Configure a backup schedule and plan for Team Foundation Server
 

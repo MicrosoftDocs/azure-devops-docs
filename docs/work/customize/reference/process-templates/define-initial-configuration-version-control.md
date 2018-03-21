@@ -133,6 +133,6 @@ The default assignments for TFVC and GIt permissions made to all default process
 ```  
 
 
-## Related notes  
+## Related articles  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Code](../../../../git/overview.md)

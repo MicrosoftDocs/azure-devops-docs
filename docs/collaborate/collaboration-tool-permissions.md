@@ -37,7 +37,7 @@ To manage notifications, see:
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
 
-## Related notes
+## Related articles
 
 - [Work effectively from your account hub](../user-guide/account-home-pages.md)
 - [Add a team administrator](../work/scale/add-team-administrator.md) 

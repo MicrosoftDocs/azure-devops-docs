@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016
+monikerRange: ">= tfs-2013"
 ---
-[//]: # (monikerRange: ">= tfs-2013")
+
 
 # Release Management 2013 (server and client version)
 

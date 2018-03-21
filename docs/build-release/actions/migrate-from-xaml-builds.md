@@ -7,8 +7,9 @@ ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.manager: douge
 ms.author: alewis
 ms.date: 05/19/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Migrate from XAML builds to new builds
 

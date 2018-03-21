@@ -91,7 +91,7 @@ ms.date: 01/12/2017
 </Assignments>  
 ```  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Specify work item types](specify-wits-to-synchronize.md)   
  [Field mapping reference](field-mapping-xml-element-reference.md)   

@@ -7,8 +7,9 @@ ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
 ms.date: 05/12/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Create and work with workspaces
 

@@ -210,6 +210,6 @@ You must encapsulate the **TestSetting** element within its corresponding contai
 </TestSettings>  
 ```  
   
-## Related notes  
+## Related articles  
 - [Testing overview](../../../../manual-test/index.md)  
 - [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)

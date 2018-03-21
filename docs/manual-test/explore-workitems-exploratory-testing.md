@@ -7,8 +7,9 @@ ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Explore work items with the Test &amp; Feedback extension
  

@@ -7,8 +7,9 @@ ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Run cloud-based load tests using your own machines
 
@@ -83,7 +84,7 @@ For more information about using the ARM templates, see [Test private and intran
 ## Comparison with Test Controllers and Test Agents
 
 If you have previously used Visual Studio load testing (rather than cloud load testing), you will have used
-[Test Controllers and Test Agents (TC/TA)](https://msdn.microsoft.com/en-us/library/ms243155.aspx)
+[Test Controllers and Test Agents (TC/TA)](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests)
 to run load tests. The differences between these and cloud load test agents are:
 
 * The cloud load agent does not need a controller. The CLT service acts as a lightweight controller instead.
@@ -128,6 +129,6 @@ A build template to help with this configuration is under development.
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -1,12 +1,13 @@
 ---
-title: Index to topics for work item tracking in VSTS & TFS
-description: Index to topics for planning and tracking work in VSTS and Team Foundation Server (TFS)  
+title: Index to topics for work item tracking
+titleSuffix: VSTS & TFS 
+description: Index to topics for planning and tracking work in Visual Studio Team Services and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 09/28/2017
+ms.date: 03/20/2018
 ---
 
 # Work Items
@@ -21,22 +22,52 @@ Track the features and requirements you're developing, code defects or bugs, and
 [About work items](about-work-items.md) 
 -->
 
+::: moniker range="vsts"
 ## 5-Minute Quickstarts  
  
 - [View and add work items](view-add-work-items.md)  
 - [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+## 5-Minute Quickstarts  
+  
+- [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
+::: moniker-end
+
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+## 5-Minute Quickstarts  
+
+- [Add work items](../backlogs/add-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+::: moniker-end
+
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+## Step-by-Step Tutorials
+
+- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Link work items](../backlogs/add-link.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Step-by-Step Tutorials
 
 - [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Copy/clone work items](../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Remove or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Link work items](../backlogs/add-link.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 
+::: moniker-end
 
 ## Concepts 
 
@@ -46,27 +77,42 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## How-to Guides
 - [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Use work item form controls](work-item-form-controls.md?toc=/vsts/work/work-items/toc.json)
 - [Add tags to work items](../track/add-tags-to-work-items.md?toc=/vsts/work/work-items/toc.json)
 - [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json)
-- [Go mobile](../../collaborate/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
-- [Email/print work items](email-work-items.md)      
-- [Bulk add or modify (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/work-items/toc.json)
 
+::: moniker-end
+
+::: moniker range="tfs-2013"
+
+## How-to Guides
+- [Add tags to work items](../track/add-tags-to-work-items.md?toc=/vsts/work/work-items/toc.json)
+- [Use work item templates](../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json)
+
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Reference
-- [Work item form controls](work-item-form-controls.md)     
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Work item form controls](work-item-form-controls.md) 
+- [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)       
 - [Work item field index](guidance/work-item-field.md)
-- [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)     
-  
+ 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2015"
+## Reference
+- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
+- [Work item field index](guidance/work-item-field.md)
+
+::: moniker-end
 ## Resources 
 
+- [Backlogs](../backlogs/index.md)
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
-- [Backlogs](../backlogs/index.md)
 - [Queries](../track/index.md)
 - [Customization](../customize/index.md)
 

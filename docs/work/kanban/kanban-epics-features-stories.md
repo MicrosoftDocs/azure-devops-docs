@@ -5,17 +5,24 @@ description: Quickly define and view the status of child features, user stories,
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
+monikerRange: vsts || >= tfs-2013 <= tfs-2018
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
-ms.topic: get-started-article
+ms.date: 03/20/2018
 ---
+
 
 
 # Kanban board features and epics  
 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+
+<!---
+> [!NOTE]    
+><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.
+-->  
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -26,11 +33,17 @@ In this topic, you'll learn:
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Epic portfolio backlogs are supported in TFS 2015 and later versions.  
+::: moniker-end
 
 <img src="_img/features-with-stories.png" alt="Web portal, Features Kanban board with several user stories defined" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
-><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017.  
+::: moniker range=">= tfs-2013 <= tfs-2015"
+> [!NOTE]    
+>Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
+::: moniker-end
 
 ## Add epics or features    
 
@@ -38,11 +51,10 @@ Add new items to a feature or epic through the item's ![actions icon](../_img/ic
 
 <img src="_img/features-add-story.png" alt="Web portal, Feature Kanban board, Open the context menu of a feature to add a story" style="border: 1px solid #C3C3C3;" /> 
 
-
 If you have a number of items to add, simply keep typing your task titles and click Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
 
-## Related notes
+## Related articles
 
 If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
 
@@ -55,9 +67,8 @@ For additional guidance on working with a checklist on a Kanban board, see [Add 
 To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then click the gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
-* [Add swimlanes, expedite work](expedite-work.md)   
 * [Customize cards](../customize/customize-cards.md)  
-* [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
 
 ### REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+

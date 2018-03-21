@@ -1,5 +1,6 @@
 ---
-title: XML elements added to the definition for the work item type | TFS
+title: XML elements added to the definition for the work item type
+titleSuffix: TFS
 description: Shows the XML elements added to the definition for the work item type when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -8,6 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 01/12/2017
 ---
+
+
 # XML elements added to the definition for the work item type
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -15,8 +18,8 @@ ms.date: 01/12/2017
   
  ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
-  
-##  <a name="manually_update"></a> To manually update a type definition to display project server fields  
+<a name="manually_update"></a>   
+##  To manually update a type definition to display project server fields  
  To manually add the **Project Server** tab to a work item type, perform the following sequence of steps:  
   
 1.  Export the type definition.  
@@ -33,87 +36,87 @@ ms.date: 01/12/2017
 ##  <a name="fields"></a> Elements to add to the FIELDS section  
  Add the following syntax to the `FIELDS` section of the type definition. For more information, see [Modify a field or add a custom field](../../work/customize/add-modify-field.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD name="Project Server Submit" refname="Microsoft.Sync.ProjSrv.Submit" type="String">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Toggle to set whether the work item updates are sent to Project Server</HELPTEXT>  
+   <HELPTEXT>Toggle to set whether the work item updates are sent to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Enterprise Project" refname="Microsoft.Sync.ProjSrv.ProjectName" type="String">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Name of the enterprise project plan in Project Server</HELPTEXT>  
+   <HELPTEXT>Name of the enterprise project plan in Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Is Linked" refname="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" type="String">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Indicates whether the work item is linked to Project Server</HELPTEXT>  
+   <HELPTEXT>Indicates whether the work item is linked to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Submitted Date" refname="Microsoft.Sync.ProjSrv.LastSubmittedDate" type="DateTime">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Date of the most recent submission to Project Server</HELPTEXT>  
+   <HELPTEXT>Date of the most recent submission to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Submit Status" refname="Microsoft.Sync.ProjSrv.LastSubmitStatus" type="String">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Status of success or failure for the most recent submission to Project Server</HELPTEXT>  
+   <HELPTEXT>Status of success or failure for the most recent submission to Project Server</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Reviewed Date" refname="Microsoft.Sync.ProjSrv.LastReviewedDate" type="DateTime">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>Date of the most recent approval by the project manager</HELPTEXT>  
+   <HELPTEXT>Date of the most recent approval by the project manager</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Last Review Status" refname="Microsoft.Sync.ProjSrv.LastReviewStatus" type="String">  
-&nbsp;&nbsp;&nbsp;<HELPTEXT>State of the most recent approval by the project manager</HELPTEXT>  
+   <HELPTEXT>State of the most recent approval by the project manager</HELPTEXT>  
 </FIELD>  
 <FIELD name="Project Server Completed Work" refname="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" type="Double" />  
 <FIELD name="Project Server Remaining Work" refname="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" type="Double" />  
 <FIELD name="Project Server Original Estimate" refname="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" />  
 <FIELD name="Project Server Health" refname="Mirror.Microsoft.VSTS.Common.Health" type="String" />  
-  
 ```  
   
-  
-##  <a name="form"></a> Elements to add to the FORM section  
+<a name="form"></a>   
+##  Elements to add to the FORM section  
  To manually add the **Project Server** tab to a work item type, open the type definition file, find the `FORM` section, and then add the following syntax to the `TabGroup` section. For more information, see [Design the work item form](../customize/reference/design-work-item-form.md).  
   
 > [!NOTE]
->  You can assign any label to the `name` attribute for each `Control` element as long as the label is unique within the type definition. You use the `name` attribute when you want the same field to appear in more than one location on the form. Several fields on the **Project Server** tab appear elsewhere on the work item form. For more information, see [Control](https://msdn.microsoft.com/library/aa337625.aspx).  
+>  You can assign any label to the `name` attribute for each `Control` element as long as the label is unique within the type definition. You use the `name` attribute when you want the same field to appear in more than one location on the form. Several fields on the **Project Server** tab appear elsewhere on the work item form. For more information, see [Control](../customize/reference/control-xml-element-reference.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Tab Label="Project Server">  
-&nbsp;&nbsp;&nbsp;<Group>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group Label="Publish">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.Submit" name="SubmitName" Type="FieldControl" Label="&Submit to Project Server:" LabelPosition="Left" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.ProjectName" name="ProjectName" Type="FieldControl" Label="Enterprise &Project:" LabelPosition="Left" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group Label="Status">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Column PercentWidth="100">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" name="IsLinkedName" Type="FieldControl" Label="&Linked to Project Server:" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastSubmitStatus" name="LastSubmitName" Type="FieldControl" Label="Last S&ubmit Status:" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastSubmittedDate" name="LastSubmittedName" Type="FieldControl" Label="Last Sub&mitted Date:" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastReviewedDate" name="LastReviewedName" Type="FieldControl" Label="Last Approval Date:" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.Sync.ProjSrv.LastReviewStatus" name="LastReviewName" Type="FieldControl" Label="Last Approval Status:" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;</Group>  
-&nbsp;&nbsp;&nbsp;<Group Label="Mapped Fields (Project Plan : Work Item)">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkMirrorName" Type="FieldControl" Label="Completed Work" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkMirrorName" Type="FieldControl" Label="Remaining Work" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="50">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkName" Type="FieldControl" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkName" Type="FieldControl" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;</Group>  
-&nbsp;&nbsp;&nbsp;<Group Label="Mapped Fields (Project Plan)">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" name="OriginalEstimateMirrorName" Type="FieldControl" Label="Original Estimate" LabelPosition="Left" ReadOnly="True" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>  
-&nbsp;&nbsp;&nbsp;</Group>  
+   <Group>  
+      <Column PercentWidth="50">  
+         <Group Label="Publish">  
+            <Column PercentWidth="100">  
+               <Control FieldName="Microsoft.Sync.ProjSrv.Submit" name="SubmitName" Type="FieldControl" Label="&Submit to Project Server:" LabelPosition="Left" />  
+               <Control FieldName="Microsoft.Sync.ProjSrv.ProjectName" name="ProjectName" Type="FieldControl" Label="Enterprise &Project:" LabelPosition="Left" />  
+            </Column>  
+         </Group>  
+      </Column>  
+      <Column PercentWidth="50">  
+         <Group Label="Status">  
+            <Column PercentWidth="100">  
+               <Control FieldName="Microsoft.Sync.ProjSrv.IsLinkedToProjSrv" name="IsLinkedName" Type="FieldControl" Label="&Linked to Project Server:" LabelPosition="Left" ReadOnly="True" />  
+               <Control FieldName="Microsoft.Sync.ProjSrv.LastSubmitStatus" name="LastSubmitName" Type="FieldControl" Label="Last S&ubmit Status:" LabelPosition="Left" ReadOnly="True" />  
+               <Control FieldName="Microsoft.Sync.ProjSrv.LastSubmittedDate" name="LastSubmittedName" Type="FieldControl" Label="Last Sub&mitted Date:" LabelPosition="Left" ReadOnly="True" />  
+               <Control FieldName="Microsoft.Sync.ProjSrv.LastReviewedDate" name="LastReviewedName" Type="FieldControl" Label="Last Approval Date:" LabelPosition="Left" ReadOnly="True" />  
+               <Control FieldName="Microsoft.Sync.ProjSrv.LastReviewStatus" name="LastReviewName" Type="FieldControl" Label="Last Approval Status:" LabelPosition="Left" ReadOnly="True" />  
+            </Column>  
+         </Group>  
+      </Column>  
+   </Group>  
+   <Group Label="Mapped Fields (Project Plan : Work Item)">  
+      <Column PercentWidth="50">  
+         <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkMirrorName" Type="FieldControl" Label="Completed Work" LabelPosition="Left" ReadOnly="True" />  
+         <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkMirrorName" Type="FieldControl" Label="Remaining Work" LabelPosition="Left" ReadOnly="True" />  
+       </Column>  
+       <Column PercentWidth="50">  
+          <Control FieldName="Microsoft.VSTS.Scheduling.CompletedWork" name="CompletedWorkName" Type="FieldControl" />  
+          <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" name="RemainingWorkName" Type="FieldControl" />  
+        </Column>  
+    </Group>  
+    <Group Label="Mapped Fields (Project Plan)">  
+        <Column PercentWidth="100">  
+           <Control FieldName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" name="OriginalEstimateMirrorName" Type="FieldControl" Label="Original Estimate" LabelPosition="Left" ReadOnly="True" />  
+         </Column>  
+   </Group>  
 </Tab>  
-  
 ```  
   
  
-## Related notes  
- [Add or modify a field](../customize/add-modify-field.md)   
- [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx)   
- [Design the work item form](../customize/reference/design-work-item-form.md)   
- [Customize the field mapping](customize-field-mapping-tfs-project-server.md)
+## Related articles  
+-  [Add or modify a field](../customize/add-modify-field.md)   
+-  [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx)   
+-  [Design the work item form](../customize/reference/design-work-item-form.md)   
+-  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)

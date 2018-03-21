@@ -7,8 +7,9 @@ ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Utility: Manual intervention
 
@@ -57,7 +58,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -71,4 +72,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 #   onTimeout: reject # reject (default), resume
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

@@ -112,6 +112,6 @@ ms.date: 01/12/2017
 |String|Text|Text|  
 |TreePath|Text|Text|  
   
-## Related notes  
+## Related articles  
  [Field mapping reference](field-mapping-xml-element-reference.md)   
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)

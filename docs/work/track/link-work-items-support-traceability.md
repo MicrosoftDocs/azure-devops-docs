@@ -1,12 +1,13 @@
 ---
-title: Link work items to support traceability | VSTS & TFS  
+title: Link work items to support traceability 
+titleSuffix: VSTS & TFS 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-wit
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017  
+ms.date: 03/20/2018
 ---
 
 # Link work items to support traceability and manage dependencies  
@@ -26,7 +27,7 @@ In a nutshell, you can:
 
 Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTS or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
@@ -64,10 +65,12 @@ You can create links between work items by using one of the links control tabs w
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
 
-### VSTS
+# [New web form](#tab/new-web-form)
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="team-services-link" /> 
 
-From the new work item form (available from the web portal of [VSTS and TFS 2017](../customize/process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
+From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
 Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to add a link. 
    
@@ -86,28 +89,40 @@ From a query results page, you can also perform these actions:
 - Link selected items to a new work item  </li>
 - Link selected items to an existing work item </li>  
 
-For details, see [Add link to work items](../backlogs/add-link.md#link).</p>
+For details, see [Add link to work items](../backlogs/add-link.md#link). 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2015"
+The new web form is only available from TFS 2017 and later versions. 
+
+::: moniker-end
+
+# [Old web form](#tab/old-web-form)
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+The old web form is only available for TFS 2017 and earlier versions. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
 <a id="tfs-portal-link" />
-### TFS 2015, TFS 2013 (Web Portal) 
 
-If you connect to the web portal for TFS 2015 or earlier versions, you can link work items to other work items or supported objects from one of the available link tabs. Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made.
+Within the old web form, you can link work items to other work items or supported objects from one of the available link tabs. Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made.
  
 Open a work item and click one of the Links tab. From the links control tab you can link to a new or existing work items, open the linked object, or delete a link.
 
 ![Link controls provided in a work item form](../backlogs/_img/work-items-link-controls.png)  
 
+::: moniker-end
 
+# [Visual Studio](#tab/visual-studio)  
 <a id="team-explorer-link" />
-### Visual Studio, Team Explorer  
-
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
 Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](_img/IC673344.png)  
 
-### Team Explorer Everwhere**
+# [Team Explorer Everwhere](#tab/tee) 
 
 Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
@@ -118,6 +133,9 @@ Open a work item and click the Links tab. From the links control tab you can lin
 From the Query Results view, you can link a work item to a new or existing work item. Click the work item you want to link, open the context menu for that work item and (1) click Link to an Existing Item... (2)Fill out the dialog that appears, (3) click Save, and then (4) Save Results to save the changes made to the work item. 
 
 ![Link to an existing work item](_img/IC588289.png)
+
+---
+
 
 ## Link or change parent-child links between work items
 
@@ -149,14 +167,26 @@ From the Test hub you can add test plans, test suites, and test cases&mdash;whic
 
 ## Link work items, code artifacts, and builds  
 
-As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base. The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
+As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.  
+
+::: moniker range="vsts"
+The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end
 
->[!NOTE]  
->The link types, **Found in build** and **Integrated in build** are available from VSTS and only work with the current build processes (not XAML builds). To learn more about using these link types, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).   
+::: moniker range=">= tfs-2013 <= tfs-2018"
+The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
+
+<img src="../backlogs/_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control). 
+ 
+::: moniker-end
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 ## Link work items and Git code development  
 
@@ -171,6 +201,9 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 
 	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />   
 
+::: moniker-end
+
+
 ## Link work item and TFVC code development  
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../tfvc/check-your-work-team-codebase.md).
@@ -178,25 +211,27 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 <img src="../../tfvc/_img/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 1px solid #C3C3C3;" />  
 
 
-
 <a id="links-attachments"></a>
 ## Link to a Web site, network share, storyboard, or document 
 
 You can use the Hyperlinks or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add links of this type, you can use the same links controls [described earlier for linking work items](#link-work-items). 
 
-For TFS 2015 and earlier versions, select work item types may show a Storyboards tab which you can use to link to Storyboards.  
-
 <img src="_img/link-tracking-work-item-to-url-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
-From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control is only available from the web and client work item form for TFS 2015. However, you can still use the Storyboard link type from VSTS and the web portal of TFS 2017 and later versions.
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control is available from the web and client work item form for TFS 2015. 
 
 For process templates associated with TFS 2015 and earlier versions, the  **Storyboards** tab links control was added to those work item types used to defined requirements, user stories, or features. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
 ![Storyboard links control](_img/IC589934.png)
 
-By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to VSTSusing this link type as described [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
+::: moniker-end
+
+By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to a work item using this link type as described in [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
 
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 ## Link work items to architectural diagrams
 
@@ -210,6 +245,7 @@ To link a work item to a diagram, open the work item in Visual Studio, choose th
 
 Or, you can link a model element to a work item. See [Link model elements and work items](https://msdn.microsoft.com/library/dd465152.aspx).
 
+::: moniker-end
 
 ## Query for linked work items 
 
@@ -334,7 +370,7 @@ You can create predecessor-successor links between work items that are defined i
 </table>
 
 
-## Related notes 
+## Related articles 
 
 You should now have a broad understanding of the various link relationships you can create to track dependencies and create an audit trail for your code development.
 
@@ -347,15 +383,21 @@ For additional information, see these topics:
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace. 
 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Customized link types (TFS) 
 
-If you connect to an on-premises TFS, you can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  
+You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  
 
-- [Link type element reference](https://msdn.microsoft.com/library/dd293527.aspx) 
-- [Manage link types (witadmin)](https://msdn.microsoft.com/library/dd273716.aspx) 
+- [Link type element reference](../customize/reference/link-type-element-reference.md) 
+- [Manage link types (witadmin)](../customize/reference/witadmin/manage-link-types.md) 
 
+::: moniker-end
 

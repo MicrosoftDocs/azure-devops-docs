@@ -115,7 +115,7 @@ This method does nothing if [IsOpen](https://msdn.microsoft.com/en-us/library/mi
 
 - Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/en-us/library/8skskf63%28v=vs.120%29.aspx).
 
-## Related notes
+## Related articles
 
 - [WorkItem Class](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
 - [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  

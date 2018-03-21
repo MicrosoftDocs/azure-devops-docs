@@ -50,7 +50,7 @@ You can scale your system as needed by adding teams and/or team projects. These 
 To learn more, see the following topics:  
 
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)
-- [About teams and Agile tools](../../teams/about-teams-and-settings.md) 
+- [About teams and Agile tools](../../settings/about-teams-and-settings.md) 
 - Manage a [portfolio of backlogs](portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
 - Use [Delivery plans](review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
 - Incrementally adopt [practices that scale](practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.

@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
 ms.date: 10/09/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Features
 
@@ -314,7 +315,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="customize-vsts">  </a>
 
@@ -357,7 +358,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Add or modify a field</b></p>
-<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>[Add a custom field](../work/customize/process/customize-process-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 ![Add field](_img/features/index-add-field.png)   
 <br/>
 
@@ -414,9 +415,9 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="customize-tfs"></a>
 
@@ -474,7 +475,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="kanban"></a>
 
@@ -1015,7 +1016,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="package-management"></a>
 
@@ -1068,7 +1069,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Continuous delivery
 
@@ -1438,7 +1439,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 <a id="power-bi">  </a>
 
@@ -1458,7 +1459,7 @@ build-release\tasks\build\_img
 <p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
 
 
- 
+ 
 
 </td>
 <td width="50%">
@@ -1476,9 +1477,9 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013")
+::: moniker range=">= tfs-2013"
 
 <a id="sql-server-reports">  </a>
 
@@ -1566,7 +1567,7 @@ build-release\tasks\build\_img
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="widgets"></a>
 
@@ -1730,7 +1731,7 @@ build-release\tasks\build\_img
 ### Marketplace
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for VSTS or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
-</blockquote> 
+</blockquote> 
 
 <table>
 <tbody>
@@ -2533,7 +2534,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <a id="process-templates"></a>
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2018")
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Process templates (TFS)
 
@@ -2579,7 +2580,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </tbody>
 </table>
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="team-projects"></a>
 
@@ -2712,7 +2713,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team groups</b></p>
-<p>A [team group is created](../teams/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
+<p>A [team group is created](../settings/about-teams-and-settings.md#team-group) when you create a team. Use this group in queries or to set permissions for your team.  </p>
 </td>
 </tr>
 </tbody>
@@ -2803,7 +2804,7 @@ Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/3305
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
 
-<!---   
+<!---   
 S98 updates
 
 TFS 2015 Update 2 updates
@@ -2830,4 +2831,4 @@ You now have the ability to click a work item and perform specific actions using
 
 
 Support for Extensions
---> 
+--> 

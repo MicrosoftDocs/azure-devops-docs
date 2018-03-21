@@ -1,5 +1,6 @@
 ---
-title: Bulk modify using Excel  
+title: Bulk modify using Excel
+titleSuffix: VSTS & TFS  
 description: Use Excel to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -28,7 +29,7 @@ In this topic you'll learn:
 > * Work with different list types    
   
 
->[!NOTE]  
+> [!NOTE]  
 >You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test cases or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
@@ -38,14 +39,14 @@ In this topic you'll learn:
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 	
-	>[!NOTE]   
+	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
     ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
 
-    >[!TIP]  
+    > [!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
 4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../security/add-users-team-project.md#add-team-members).  
@@ -86,7 +87,7 @@ In this topic you'll learn:
 
 You can make changes to work items in Excel, Project, the web portal, or Visual Studio, or Team Explorer Everywhere.
 
->[!TIP]
+> [!TIP]
 >**Follow these tips to keep your work in sync:**   
 >- When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](_img/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.  
 >- Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](_img/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.  
@@ -97,7 +98,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 <a id="select-user"></a>
 ## Select user accounts 
 
->[!NOTE]  
+> [!NOTE]  
 ><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://www.visualstudio.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
@@ -120,7 +121,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	![Assigned to field, Drop-dowm menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
 
->[!TIP]  
+> [!TIP]  
 >Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
 
 <a id="tree-list"></a>
@@ -153,17 +154,18 @@ Here's how a three-level nested tree of items appears in Excel:
     In the background, parent-child links are created for each task listed under a user story.
 
 
-##Useful tips when working with a tree list 
 
-- The plug-in interprets the data in the <strong>Title</strong> columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
+## Useful tips when working with a tree list 
+
+- The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
 	- A row between parent and child work items is blank. 
-	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.<
-	- Within a row, multiple <strong>Title</strong> columns contain data. Enter text in only one of the title columns within each row.
+	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.
+	- Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row.
 	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
-- To resolve an error, see <a href="https://msdn.microsoft.com/library/dd293544">Resolve invalid links in an Excel tree list</a>.
-- You can use <img src="_img/bulk-modify-excel-indent-inline.png" title="item in tree" alt="item in tree" /> or <img src="_img/bulk-modify-excel-outdent-inline.png" title="Outdent item in tree" alt="Outdent item in tree" /> to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a <strong>Title</strong> column. The header at the top of the column should read <strong>Title</strong> &lt;number&gt;, if it does not, add a tree level.
+- To resolve an error, see [Resolve invalid links in an Excel tree list](resolve-excel-invalid-links-tree-list.md).
+- You can use the ![indent item in tree](_img/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](_img/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
 - A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
-- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104).</p></li>
+- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
 - When you move a work item, make sure that you select the entire table row. 
 
 
@@ -225,7 +227,7 @@ First, publish whatever changes you have made. Then, on the **Team** ribbon, cho
 
 Remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;and, then **Refresh** your worksheet.
 
->[!TIP]  
+> [!TIP]  
 >Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
  
 
@@ -238,7 +240,7 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../track/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
-## Related notes
+## Related articles
 
 While the examples shown here represent connecting to an on-premises TFS, you can connect to VSTS and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
 

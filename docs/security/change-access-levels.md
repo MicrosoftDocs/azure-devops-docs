@@ -9,8 +9,9 @@ ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 ms.date: 11/28/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Change access levels
 
@@ -39,7 +40,7 @@ You manage access levels for all collections defined on the application tier for
 
 From a user context, open the admin context by clicking the ![gear icon](../work/_img/icons/gear_icon.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
  
-[//]: # (::: moniker range=">= tfs-2017 <= tfs-2018")
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 ### TFS 2018, TFS 2017 
 
@@ -53,9 +54,9 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 <= tfs-2015")
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 ### TFS 2015, TFS 2013
 
@@ -69,7 +70,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="set-default" >  </a>
 
@@ -78,7 +79,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or Advanced level will be limited to the features provided through Stakeholder access.
 
 >[!IMPORTANT]  
->Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
+>Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
 
 You set an access level from its page. Click Set as default access level as shown.
 
@@ -120,7 +121,7 @@ Also, stakeholders can create and modify work items using Team Foundation client
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
 
 - [Permissions and group reference](permissions.md)   
-- [About teams and team tools](../teams/about-teams-and-settings.md)   
+- [About teams and team tools](../settings/about-teams-and-settings.md)   
 
 ## Related notes  
 <a id="test-manager"  >  </a>

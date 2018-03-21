@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 [!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
@@ -23,7 +23,7 @@ Portfolio backlogs are useful for organizing your backlog under business initiat
 
 Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
 
->[!NOTE]  
+> [!NOTE]    
 >If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](configure-features-after-upgrade.md).  
 
 Here, we add a third portfolio backlog, Initiative. With it, the management team can set priorities and view progress of work belonging to initiatives.  
@@ -247,7 +247,7 @@ Use these commands to export and import categories and process configuration:
 	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 
 
-## Related notes  
+## Related articles  
 We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
 ![Conceptual image of 5 levels of portfolio backlog](_img/five-levels-portfolio-backlogs.png)

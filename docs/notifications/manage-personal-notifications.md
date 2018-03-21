@@ -23,10 +23,10 @@ As changes occur to your code base, builds, work items, and other operations, yo
 
 Use this topic to learn how to:
 
-> [!div class="checklist"]   
-> * View your notifications    
-> * Add a custom subscription      
-> * Unsubscribe or opt out of a team or project subscription   
+> [!div class="checklist"]   
+> * View your notifications    
+> * Add a custom subscription      
+> * Unsubscribe or opt out of a team or project subscription   
 
 
 ## View your personal notifications 

@@ -147,7 +147,7 @@ For information about the syntax structure of the elements used to add Web conte
   
 3.  Choose **Close** to close the new work item.  
   
-## Related notes   
+## Related articles   
 -  [Customize your work tracking experience](../customize-work.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)   

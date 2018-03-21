@@ -1,14 +1,14 @@
 ---
 title: Sprint planning 
 titleSuffix: VSTS & TFS
-description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services (VSTS) or the web portal for Team Foundation Server (TFS)   
+description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services or Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 11/16/2017
+ms.date: 03/20/2018
 ---
 
 
@@ -35,7 +35,7 @@ In this topic you'll learn how to:
 > * Adjust work to fit team capacity  
 > * Share your sprint plan      
 
->[!NOTE]
+> [!NOTE]  
 >Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 >
 >For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../backlogs/overview.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json).  
@@ -47,7 +47,7 @@ By setting team capacity and estimating tasks, the team can see when the team or
 <img src="_img/sp-intro.png" alt="Sprint planning" style="border: 1px solid #C3C3C3;" /> 
 
 
->[!NOTE]  
+> [!NOTE]    
 >Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/).
 >  
 >When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
@@ -107,18 +107,21 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-	> [!NOTE]  
-	> **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   
+	<!--- **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   --> 
 	
-	<a id="task-form-team-services" /> 
-	#### Task form, new form 
+	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+    <a id="task-form-team-services" /> 
+	<!--- Task form, new form -->
 
 	<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 2px solid #C3C3C3;" />	
+	::: moniker-end
+    ::: moniker range=">= tfs-2013 <= tfs-2015"
 	<a id="task-form-tfs-2015-13" /> 
-	#### Task form, old form 
+	<!--- Task form, old form -->
 
-	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #C3C3C3;" />  
-	
+	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #C3C3C3;" />  	
+	::: moniker-end
+
 	At the planning stage, Remaining Work corresponds to an estimate of how long it will take to complete the task.  
 	
 	A good rule of thumb is to size tasks to take no more than a day to complete. If a task is too large, the team should break it down. In some cases, you may not be able to estimate some tasks effectively until other tasks have been completed. Create the task now, but estimate it when you have enough information.  
@@ -133,7 +136,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 	From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-	>[!TIP]  
+	> [!TIP]  
 	>Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 	>
 	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
@@ -164,8 +167,34 @@ To quickly reassign tasks, drag the task onto the new assignee's capacity bar. A
 
 ![Reassign tasks](_img/IC797838.png)  
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+<a id="bulk-modify">  </a>
+### Use multi-select to bulk modify items
 
-[!INCLUDE [temp](../_shared/multi-select-bulk-modify.md)]  
+Multi-select of work items on the product and sprint backlogs works in the same way as multi-select works within query results. 
+
+<!---
+> [!NOTE]     
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is currently supported from VSTS and TFS 2015.1 and later versions. This feature works in the same way as multi-select works within query results. 
+-->
+
+With multi-select, you can perform several actions on several work items at once, such as: 
+
+- Add links
+- Change one or more field values
+- Change the backlog priority   
+- Assign to a team member
+- Move to a sprint
+- [Map items or change the parent an item is linked to](/vsts/work/backlogs/organize-backlog#mapping)
+::: moniker-end
+::: moniker range="tfs-2015"
+Multi-select of backlog work items requires TFS 2015.1 or later version.
+::: moniker-end
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../_img/icons/context_menu.png)) or action (![actions icon](../_img/icons/actions-icon.png)) menu of one of the items. 
+
+To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
+::: moniker-end
 
 ## Try this next
  
@@ -179,7 +208,7 @@ Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure you
 
 You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
 
-## Related notes
+## Related articles
 
 If you need to add or rename the sprints your team uses, you must first [define them at the project level](../customize/set-iteration-paths-sprints.md) and then [select them for your team](../scale/set-team-defaults.md). 
 
@@ -216,5 +245,5 @@ If you receive the following message, [you can fix it by removing nested child i
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
 

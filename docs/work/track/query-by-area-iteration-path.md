@@ -36,8 +36,8 @@ In addition, you can use the @CurrentIteration macro when filtering on the Itera
 
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
-> [!div class="mx-tdBreakAll"] 
-> |Macro   | Use when you want to... |
+> [!div class="mx-tdBreakAll"]
+> |Macro   | Use when you want to... |
 > |-------------|--------------|
 > | **@CurrentIteration**        | Specify the current iteration associated with the selected team context.  |
 > | **@CurrentIteration +/- n**  | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
@@ -100,7 +100,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 
 
-## Related notes 
+## Related articles 
 
 *	[Add another team](../scale/multiple-teams.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  

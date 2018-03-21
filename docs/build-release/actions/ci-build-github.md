@@ -6,13 +6,15 @@ ms.service: vsts
 ms.custom: mvc
 ms.devlang: dotnetcore
 ms.technology: vs-devops-build
+ms.prod: vs-devops-alm
 ms.assetid: B61506B0-766C-49D1-B991-85BBFCBCD3E6
 ms.manager: douge
 ms.author: mlearned
 ms.reviewer: dastahel
-ms.date: 02/07/2018
+ms.date: 03/17/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Define a continuous integration (CI) build process for your GitHub repository
 

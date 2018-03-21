@@ -14,7 +14,7 @@ ms.date: 02/10/2017
 
 <b> TFS 2017 | TFS 2015 </b> 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
 
 
@@ -39,6 +39,6 @@ Links are added through the work item form, which contains the links control. Se
   
 In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
   
-## Related notes  
+## Related articles  
 - [Link work items to track dependencies](../../track/link-work-items-support-traceability.md)
 - [Customize your work tracking experience](../customize-work.md) 

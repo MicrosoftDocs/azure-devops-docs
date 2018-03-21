@@ -44,7 +44,7 @@ Our users fall into three general buckets in production:
 ![User Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
 > [!NOTE]
-> It’s important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
+> It's important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
 
 ## Application topology
 

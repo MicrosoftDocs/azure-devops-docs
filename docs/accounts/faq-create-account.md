@@ -7,8 +7,9 @@ ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/10/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #	Troubleshoot creating a VSTS account
 

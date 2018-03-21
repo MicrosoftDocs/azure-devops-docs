@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
 ms.topic: get-started-article
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # What is VSTS?
 

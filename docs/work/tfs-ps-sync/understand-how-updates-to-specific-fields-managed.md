@@ -98,7 +98,7 @@ ms.date: 01/12/2017
 ##  <a name="updates_fields_tables"></a> Updates to Fields that Are Associated with Pick Lists or Lookup Tables  
  When you map Team Foundation Server fields that are associated with a pick list or Project Server fields that are associated with a lookup table, you must consider additional steps to ensure a good user experience. The synchronization engine does not automatically create the counterpart associated lists or synchronize their allowed values in the other server. As a best practice, you should create lookup tables in Project Server to match the pick lists that are defined in Team Foundation and create pick lists in Team Foundation to match lookup tables that are defined in Project Server. If a pick list or lookup table changes, you must always manually update the corresponding list in the other server product.  
   
-## Related notes  
+## Related articles  
  [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md)   
  [Manage projects](manage-projects.md)   
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)

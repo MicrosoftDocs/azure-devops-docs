@@ -203,6 +203,6 @@ Configuring the Integration of Team Foundation Server and Project Server
   
     -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)  
   
-## Related notes  
+## Related articles  
  [Map integration components](map-integration-components.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

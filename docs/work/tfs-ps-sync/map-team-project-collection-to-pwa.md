@@ -121,7 +121,7 @@ TfsAdmin ProjectServer /MapPWAToCollection /pwa:http://PWAServerName/PWAInstance
 TfsAdmin ProjectServer /UnmapPWAFromCollection /pwa:http://PWAServerName/PWAInstance /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
 ```  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Remove a component](remove-component-from-synchronization.md)   
  [Map integration components](map-integration-components.md)

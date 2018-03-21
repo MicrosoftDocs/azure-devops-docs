@@ -28,7 +28,7 @@ By using the index of elements in this topic, you can look up the syntax structu
   
 -   **WORKFLOW**: You use this element and its child elements to define the states, transitions, and reasons that compose the workflow of a type of work item. In addition to the following elements, you can use most of the elements listed under [FIELD](#index_b) to reference a field and apply conditions to it when a user changes its state. For more information, see [Change the workflow](change-workflow-wit.md).  
   
-    >[!NOTE]
+    > [!NOTE]  
     >Changes you make to the workflow can affect the operation of the Agile planning tools, the backlog and task board pages, and other tools. You might need to customize the process configuration. See [Process configuration](process-configuration-xml-element.md).  
   
 -   **FORM**: You use this element and its child elements to specify the fields that appear on the work item form and the layout or design of the form. For more information, see [Design the work item form](design-work-item-form.md).  
@@ -40,7 +40,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 
  The following table provides an index to the reference topics for all child elements of the parent container element. Also, you can access the topic that provides detailed information and examples for each child element.  
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from VSTS and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
 > - For users of VSTS working with [hosted XML customization](../import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
@@ -245,7 +245,7 @@ For descriptions of the
 
 -->
 
-## Related notes   
+## Related articles   
 - [Customize your work tracking experience](../customize-work.md) 
 - [All FIELD XML elements](all-field-xml-elements-reference.md)
 - [All FORM XML elements](all-form-xml-elements-reference.md)

@@ -7,9 +7,10 @@ ms.assetid: 25542ee9-2c35-4e95-be1e-6c1243119513
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < tfs-2018')
+
 
 # Upgrading TFS Express
 

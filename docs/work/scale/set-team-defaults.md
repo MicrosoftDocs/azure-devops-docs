@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
  
-Each team has access to a number of Agile tools as described in [About teams and Agile tools](../../teams/about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](../../settings/about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
 Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/set-area-paths.md) you want to use to group work items. 
 
@@ -34,8 +34,6 @@ You navigate to your team context from the top navigation bar.
 ## Open the admin context for your team  
 
 You set team defaults from the team admin context. 
-
-[!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
 From a web browser, open the web portal administrative context for your team.  
 
@@ -162,7 +160,7 @@ You activate sprints for each team from the admin pages for each team context. T
 
 4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../backlogs/create-your-backlog.md).  
 
-##Related notes  
+## Related articles  
 
 - [Schedule sprints](../scrum/define-sprints.md)  
 - [Customize area and iteration paths](../customize/set-area-paths.md)  

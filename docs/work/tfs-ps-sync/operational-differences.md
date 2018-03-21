@@ -59,5 +59,5 @@ Operational differences between using the Team Foundation plug-in to Project and
   
  When you publish tasks from Project, you choose **Publish** on the **Team** ribbon or the **Team** menu.  
   
-## Related notes  
+## Related articles  
 - [Synchronize TFS with Project Server](synchronize-tfs-project-server.md)

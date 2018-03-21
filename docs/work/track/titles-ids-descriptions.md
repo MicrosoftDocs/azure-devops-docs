@@ -1,13 +1,13 @@
 ---
 title: Query by title, ID, or rich-text fields 
 titleSuffix: VSTS & TFS
-description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services and Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/05/2018  
+ms.date: 03/20/2018  
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -179,7 +179,7 @@ Work Item Type
 0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
 0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../customize/reference/witadmin/manage-work-item-fields.md).
 
-## Related notes
+## Related articles
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  
@@ -188,5 +188,5 @@ Work Item Type
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
  

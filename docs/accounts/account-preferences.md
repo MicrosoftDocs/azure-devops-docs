@@ -7,8 +7,9 @@ ms.assetid: 30821EA7-F20F-4A15-B4E3-A023C39FFF72
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Set your account preferences
 
@@ -17,7 +18,7 @@ ms.date: 10/6/2017
 From your profile page, you can change your picture or other account preferences. Specifically, you can set the following:
 
 > [!div class="mx-tdBreakAll"]
-> |Profile | Security  | Other |
+> |Profile | Security  | Other |
 > |-------------|----------|---------|
 > |- Your picture<br/>- Your display name<br/>- Your preferred email<br/>- Locale settings |- [Personal access tokens](use-personal-access-tokens-to-authenticate.md)<br/>- [Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)<br/>- [OAuth authorizations](../integrate/get-started/authentication/oauth.md)<br/>- [SSH public keys](../git/use-ssh-keys-to-authenticate.md) |- [Manage personal notifications](../notifications/manage-personal-notifications.md)<br/>- [Enable preview features](../user-guide/work-web-portal.md#admin-context) |
 

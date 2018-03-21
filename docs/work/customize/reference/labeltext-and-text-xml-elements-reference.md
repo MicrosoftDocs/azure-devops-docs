@@ -105,5 +105,5 @@ The following example adds a two-part label to a work item form. The first part,
 </Control>  
 ```  
 
-## Related notes  
+## Related articles  
 - [Specify work item form controls](specify-work-item-form-controls.md)

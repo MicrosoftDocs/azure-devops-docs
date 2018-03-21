@@ -7,8 +7,9 @@ ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Rename your VSTS account
 

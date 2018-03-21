@@ -8,8 +8,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/11/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Plan and track work 
 

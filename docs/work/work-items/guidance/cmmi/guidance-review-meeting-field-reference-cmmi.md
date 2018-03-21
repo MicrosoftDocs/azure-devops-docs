@@ -27,5 +27,5 @@ The following fields track information and changes for review meetings. Your tea
 |**Optional Attendee 1**<br />**&hellip;**<br />**Optional Attendee 8**|The name of each team member who is invited but not required to attend the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.OptionalAttendee1 &hellip; Microsoft.VSTS.CMMI.OptionalAttendee8|String|  
 |**Actual Attendee 1**<br />**&hellip;**<br />**Actual Attendee 8**|The name of each team member who attended the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.ActualAttendee1 &hellip; Microsoft.VSTS.CMMI.ActuallAttendee8|String|  
   
-## Related notes
+## Related articles
  [Index of work item fields](../work-item-field.md)
