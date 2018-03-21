@@ -86,7 +86,7 @@ To reconnect an Excel or Project document file:
   
 4.  Resolve any data validation errors or conflicts that occur.  
 
-## Related notes
+## Related articles
 
 - [Connect to team projects, Connect to Excel or Project](../../../user-guide/connect-team-projects.md#excel-project)  
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  

@@ -6,8 +6,9 @@ ms.assetid: d32c0b7a-a9f8-4629-9b54-f115c2adc4e2
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Troubleshoot Visual Studio subscriptions
 

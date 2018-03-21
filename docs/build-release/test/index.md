@@ -7,8 +7,9 @@ ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Continuous Testing
 

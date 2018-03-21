@@ -7,8 +7,9 @@ ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # VSTS: Access with Azure Active Directory (Azure AD) groups
 

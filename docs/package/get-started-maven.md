@@ -9,9 +9,10 @@ ms.manager: jenp
 ms.author: rossav
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2018') 
+ 
 
 # Get started with Maven Package Management in VSTS and TFS
 

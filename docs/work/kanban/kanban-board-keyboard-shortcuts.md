@@ -8,18 +8,22 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: reference
-ms.date: 01/18/2017
+monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Kanban board keyboard shortcuts
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
- 
+
+::: moniker range="tfs-2015"
+Global keyboard shortcuts are available from TFS 2015.2 and later versions.
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
 
 
-## Related notes
+## Related articles
 
 - [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
 

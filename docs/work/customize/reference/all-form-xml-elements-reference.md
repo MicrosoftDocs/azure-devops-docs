@@ -13,7 +13,7 @@ ms.date: 03/02/2017
 
 <p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -238,7 +238,7 @@ You can control the spacing and size of many elements on a work item form by spe
 |`LinkColumns`|Optional `LinksControlOptions` element|Provides a container for one or more `LinkColumn` tags.|  
 |`LinkColumn`|Required `LinkColumns` element|Specifies the work item fields and link type attributes to appear on the work item form for the list of links.|  
   
-## Related notes
+## Related articles
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [Design the work item form](design-work-item-form.md)     
  

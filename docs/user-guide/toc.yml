@@ -4,8 +4,6 @@
   items:
   - name: "What is VSTS?"
     href: what-is-vsts.md
-  - name: "What is Team Foundation Server?"
-    href: what-is-tfs.md
   - name: Overview of services
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Quickstarts
@@ -102,7 +100,5 @@
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
-  - name: Migrate from TFS to VSTS Tutorial
-    href: https://www.visualstudio.com/articles/migration-overview
   - name: Technical articles
     href: http://visualstudio.com/articles/overview

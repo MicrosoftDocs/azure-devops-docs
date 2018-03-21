@@ -23,7 +23,7 @@ You might receive this error when you try to connect to Visual Studio Team Servi
 |Your password in Active Directory or [Azure Active Directory](http://azure.microsoft.com/services/active-directory) has expired.|Verify that your password is active.<br /><br /> If you didn't log off after your password expired, you might still be able to use your account on your machine, but not authenticate with other systems. Try changing your password.<br /><br /> Or, if you recently changed your password, but still have some service using your old credentials, it might be causing your account to lock for some period of time. Try logging off your client computer and logging back on.|  
 |Your user account doesn't have sufficient permissions to connect.|Check with your VSTS account administrator or TFS administrator or that you have the necessary permissions to connect. For VSTS, you must have an active, valid license. See [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md) for details.|  
   
-## Related notes 
+## Related articles 
 - [Add users to team projects (TFS)](../../../../security/add-users-team-project.md)   
 - [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md)
 - [Connect to team projects](../../../../user-guide/connect-team-projects.md)

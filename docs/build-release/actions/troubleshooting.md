@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: chrispat
 ms.reviewer: chrispat
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Troubleshooting build
 

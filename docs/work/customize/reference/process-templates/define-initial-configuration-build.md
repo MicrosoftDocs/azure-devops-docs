@@ -60,5 +60,5 @@ The names of the file, the folder, and the plug-in for the default process templ
 </tasks>  
 ```  
   
-## Related notes  
+## Related articles  
 - [Control access to functional areas](control-access-to-functional-areas.md)

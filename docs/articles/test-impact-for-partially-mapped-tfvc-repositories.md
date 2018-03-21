@@ -10,7 +10,7 @@ ms.author: sdanie
 ---
 
 # Test Impact for partially mapped TFVC repositories in TFS/VSTS
-Test Impact Analysis (TIA) has been part of VSTest task starting with version 2. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Accelerated Continuous Testing with Test Impact Analysis – Part 1](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/). 
+Test Impact Analysis (TIA) has been part of VSTest task starting with version 2. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Accelerated Continuous Testing with Test Impact Analysis - Part 1](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/). 
 
 In addition to supporting GitHub and Git in TFS/VSTS, TIA also supports TFVC. This article describes a known limitation about TIA in build/release definitions based on TFVC and a work around to get past this limitation. 
 

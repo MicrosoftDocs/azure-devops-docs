@@ -8,9 +8,10 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 01/20/2018
+monikerRange: '>= tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2018') 
+ 
 
 # Use packages from nuget.org
 

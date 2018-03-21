@@ -40,7 +40,7 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
-	>[!NOTE]  
+	> [!NOTE]  
 	>If there are multiple folders with the same name, select the one with the highest version number. 
 
 	- HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins (if this key does not exist, try one of the options below)
@@ -101,6 +101,6 @@ If the above steps are unsuccessful, try the following steps:
 3.	Contact the Microsoft support team. 
 
 
-## Related notes
+## Related articles
 
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)  

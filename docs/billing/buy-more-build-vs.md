@@ -7,8 +7,9 @@ ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
 ms.date: 3/12/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #  How to buy VSTS CI/CD
 

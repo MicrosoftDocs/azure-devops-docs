@@ -47,7 +47,7 @@ You can use the code review and feedback fields to create queries and reports th
 |**Application Type**|The type of application that stakeholders will provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
 |**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 â€“ Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
   
-## Related notes
+## Related articles
 - [Index of work item fields](work-item-field.md)
 - [Get feedback](../../../feedback/get-feedback.md)
 - [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

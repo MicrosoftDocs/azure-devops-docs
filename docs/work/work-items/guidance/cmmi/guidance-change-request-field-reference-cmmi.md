@@ -28,5 +28,5 @@ You can track change requests for CMMI work items by using these six fields: Jus
 |**Impact on Development**|The impact that the change would have on development and product designs. You can use this field to describe in detail which development areas and designs would be affected and how much the change would cost to implement.|Microsoft.VSTS.CMMI.ImpactOnDevelopment|  
 |**Impact on Technical Publications**|The impact that the change would have on product documentation. You can use this field to describe in detail which sections of documentation would be affected and how much the change would cost to implement.|Microsoft.VSTS.CMMI.ImpactOnTechnicalPublications|  
   
-## Related notes 
+## Related articles 
  [Index of work item fields](../work-item-field.md)

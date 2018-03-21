@@ -203,7 +203,7 @@ Required child element of **properties**. Defines project-related data such as t
 </table>
   
   
-## Related notes 
+## Related articles 
 *	[Set project-level area paths](../../set-area-paths.md)  
 *	[Set project-level iteration paths](../../set-iteration-paths-sprints.md)  
  

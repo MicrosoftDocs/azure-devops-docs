@@ -7,8 +7,9 @@ ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Deploy: SSH
 
@@ -35,7 +36,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -53,7 +54,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 #   failOnStdErr: True
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ##See also
 
@@ -68,7 +69,9 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

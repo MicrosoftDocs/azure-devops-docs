@@ -314,6 +314,6 @@ Where each attribute has the following definition:
 </table>
 
  
-## Related notes
+## Related articles
 - [Customize a process template](customize-process.md)   
 - [Process template and plug-in files](overview-process-template-files.md)

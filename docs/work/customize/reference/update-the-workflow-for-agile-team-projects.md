@@ -15,7 +15,7 @@ ms.date: 12/15/2017
 **TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
 
 

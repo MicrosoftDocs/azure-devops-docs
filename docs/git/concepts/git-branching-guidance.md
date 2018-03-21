@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Adopt a Git branching strategy
 
@@ -54,12 +55,12 @@ Some suggestions for naming your feature branches:
 - `features/feature-area/feature-name`  
 - `hotfix/description`  
 
-[//]: # (::: moniker range=">= tfs-2018") 
+::: moniker range=">= tfs-2018" 
  
 >[!NOTE]
 >For information on setting policies to enforce a branch naming strategy, see [Require branch folders](../how-to/require-branch-folders.md).
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 #### Use feature flags to manage long-running branches
  
@@ -92,7 +93,7 @@ Some suggestions for successful pull requests:
 The code in your master branch should pass tests, build cleanly, and always be up to date. 
 Your master branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
-[//]: # (::: moniker range=">= tfs-2015") 
+::: moniker range=">= tfs-2015" 
 
 Set up a [branch policy](../branch-policies.md) for your master branch that:   
 
@@ -103,7 +104,7 @@ Set up a [branch policy](../branch-policies.md) for your master branch that:
 >[!TIP]
 >The build definition for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Manage releases
 

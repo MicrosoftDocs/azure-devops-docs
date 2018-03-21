@@ -51,5 +51,5 @@ A: This guidance is mainly for VSTS users. [Client Libraries](./../client-librar
 
 #### Q: What if I want my application to authenticate with both TFS and VSTS?
 
-A: The best practice is to have different authentication paths for TFS and VSTS. You can use the requestContext to find out which you’re hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
+A: The best practice is to have different authentication paths for TFS and VSTS. You can use the requestContext to find out which you're hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
 

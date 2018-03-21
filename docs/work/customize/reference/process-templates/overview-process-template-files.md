@@ -44,7 +44,7 @@ For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
 
 <!---
->[!NOTE]  
+> [!NOTE]    
 >For VSTS, even if you initiate creating a team project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.4 and later versions, you'll be redirected to the web portal to create a team project. 
 --> 
   
@@ -236,7 +236,7 @@ For VSTS and TFS 2017.4 and later versions, definitions for work item instances 
 </table>
 
   
-## Related notes
+## Related articles
 
 The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See [Process template plug-ins: Index to XML element definitions](process-template-plug-ins-xml-elements-index.md).  
 

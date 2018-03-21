@@ -24,7 +24,7 @@ Process templates define the objects and processes available to you when you cre
 - Change the process configuration or defaults associated with Agile tools   
 
 
->[!NOTE]  
+> [!NOTE]    
 >If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create team projects on VSTS and TFS.  
   
 Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
@@ -83,7 +83,7 @@ Process templates consist of nine plug-ins. Each plug-in defines a set of tasks 
   
 ![Process Template Plugins](_img/tfs_pt_plugins.png "TFS_PT_Plugins")  
   
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
@@ -177,7 +177,7 @@ When you add objects to a process template, you will want to make sure that you 
 |![Step 5](_img/procguid_6.png "ProcGuid_6")|**Verify changes to process templates**. Before you put your process template in production mode and use it as the basis for several team projects, you should verify that it is well-defined. You perform this task by systematically verifying that each object and artifact works as expected.<br /><br /> If you added a report, make sure that it appears in Team Explorer. If you added a field, make sure that you didn't introduce any schema conflicts.|  
   
 <a name="add_resources"></a> 
-##Related notes 
+## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
 - [Configure features after an upgrade](../../configure-features-after-upgrade.md)  

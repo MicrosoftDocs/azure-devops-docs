@@ -7,8 +7,9 @@ ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build: Android signing
 
@@ -104,7 +105,7 @@ Enter the key password for the alias and keystore file.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -124,7 +125,7 @@ Enter the key password for the alias and keystore file.
     zipalignFile:
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related steps
 

@@ -277,7 +277,7 @@ Test Suite
 	</FIELD>  
 	```
 
-## Related notes
+## Related articles
 To learn more about creating and saving queries, see also: 
 
 - [Query editor](using-queries.md)
@@ -290,5 +290,5 @@ See the [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
  

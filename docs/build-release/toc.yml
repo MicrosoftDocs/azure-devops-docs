@@ -433,6 +433,8 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
+    - name: Docker
+      href: tasks/deploy/docker.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment

@@ -182,7 +182,7 @@ What this means is that if you don't want to go slogging through the command lin
 
 ![Git Filters](./_img/git-log-history-simplification/Filters.png)
 
-*(c) 2016 Microsoft Corporation. All rights reserved. This document is
+*(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

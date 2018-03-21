@@ -33,7 +33,7 @@ provides the most support for formal processes and change management.
 
 Choose the process that provides the best fit for your team.  
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../customize/select-backlog-navigation-levels.md).  
 
 <table valign="top" width="100%">
@@ -428,7 +428,7 @@ Work items from these type definitions are not meant to be created manually and 
 Work item types that are added to the Hidden Types category don't appear in the menus used to create new work items.   
 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**:  If you upgraded your team project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md).  
 >
 >The following WITs were added with the indicated TFS version: 
@@ -450,7 +450,7 @@ See [Customize work tracking objects to support your team's processes](../../cus
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Query based on build and test integration fields](../../track/build-test-integration.md).
 
-## Related notes
+## Related articles
 <a id="term-note"></a>
 
 You can customize a process before or after you create a team project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).    

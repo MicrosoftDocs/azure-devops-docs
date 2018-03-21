@@ -14,8 +14,9 @@ ms.tgt_pltfrm: vm-windows
 ms.workload: ''
 ms.date: 12/20/2017
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Deploy your ASP.NET Core app to a Windows virtual machine
 

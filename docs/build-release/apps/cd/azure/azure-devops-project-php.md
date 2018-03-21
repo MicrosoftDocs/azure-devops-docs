@@ -15,8 +15,9 @@ ms.topic: get-started-article
 ms.date: 02/08/2018
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Create a CI/CD pipeline for PHP with the Azure DevOps Project
 

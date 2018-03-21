@@ -24,13 +24,22 @@ The TFS Database Import Service supports the two latest releases of TFS at a giv
 * TFS 2018 Update 1
 
 > [!NOTE]
-> The Import Service doesn't support imports from TFS release candidates (RC). If you’re planning on importing your collection database to VSTS using this service, it's important that you don’t upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
+> The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to VSTS using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
 >
 > It can take up to two weeks after a new RTW version of TFS is released for import support to come online for that version.
 
-Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It’s important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
 ## Preview Features
+
+> [!Note]
+> Release Management will be moving out of a preview state in the Import Service on Monday, April 23rd. After that date, Release Management data will always be included with an import. After Monday, April 23rd, if your migration effort hasn’t been completed, then you might need to take some additional actions.
+>
+> If you’re not including preview features when running TfsMigrator, then you will need to re-run TfsMigrator prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
+>
+> If you had previously been including preview features then you DO NOT need to take any additional actions after Monday, April 23rd. 
+
+
 The following features can be included with your import, but are currently in a preview state. 
 
 * [Release Management](https://www.visualstudio.com/team-services/release-management/)

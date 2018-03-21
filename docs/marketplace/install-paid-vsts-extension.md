@@ -8,9 +8,10 @@ ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/10/2017
+monikerRange: 'vsts'
 ---
 
-[//]: # (monikerRange: 'vsts')
+
 
 # Buying, installing, and assigning paid extensions to users in VSTS
 

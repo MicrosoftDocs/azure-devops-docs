@@ -1,6 +1,6 @@
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |
 > |------|---------|
 > | **Reader** | Can view the pool as well as agents. You typically add operators to this role that are responsible for monitoring the agents and their health.  |

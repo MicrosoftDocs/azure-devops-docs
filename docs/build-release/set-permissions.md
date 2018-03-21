@@ -8,8 +8,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
+monikerRange: ">= tfs-2013"
 ---
-[//]: # (monikerRange: ">= tfs-2013")
+
 
 # Set build and release permissions
 
@@ -58,7 +59,7 @@ In addition to permission assignments, you manage security for several resources
 <a id="variable-group" />
 <a id="library" />
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
@@ -87,11 +88,11 @@ For example, here we show how to set the security for variable groups.
 
 1. Click **Add**.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="task-group" />
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ## Manage task group permissions
 
@@ -114,7 +115,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. Click **Add**. 
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 <a id="collection-level" /> 
 
@@ -130,7 +131,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. Save your changes. 
 
-[//]: # (::: moniker range=">= tfs-2015")
+::: moniker range=">= tfs-2015"
 
 ## Manage permissions for agent queues and service endpoints 
 
@@ -155,9 +156,9 @@ For example, here we show how to add a user to the Administrator role for a serv
 
 1. Click **Add**.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2018")
+::: moniker range=">= tfs-2018"
 
 ## Manage permissions for agent pools and deployment pools  
 
@@ -184,7 +185,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 1. Click **Add**.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Related notes 
 

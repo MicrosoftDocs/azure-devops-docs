@@ -445,7 +445,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 <ul>
 <li><strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</li>
 <li><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.
-<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote>**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
 </blockquote></li>
 <li><strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</li>
 <li><strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</li>
@@ -534,7 +534,7 @@ Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;S
 Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <blockquote>
-<b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
+**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
 ![Boolean field display in web work item form](_img/weblayout-ref-checkbox-control-boolean-field.png)
  
@@ -582,7 +582,7 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 </table>
 
 
-## Related notes
+## Related articles
 If you're just getting started with the new form, see these additional topics to manage the roll out or customize it: 
 - [Manage new form rollout](../manage-new-form-rollout.md)
 - [New work item experience](../process/new-work-item-experience.md)

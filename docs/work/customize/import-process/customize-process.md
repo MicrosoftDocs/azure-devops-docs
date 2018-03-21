@@ -7,15 +7,16 @@ ms.prod: vs-devops-alm
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Customize a process when using Hosted XML
 
 <b>VSTS (Hosted XML)</b>   
  
->[!IMPORTANT]  
->**Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> [!IMPORTANT]  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 

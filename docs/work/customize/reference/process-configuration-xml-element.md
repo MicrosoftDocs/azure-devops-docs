@@ -37,12 +37,12 @@ Areas that you can customize through ProcessConfiguration:
 2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
 3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >If you want to customize your team project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../add-portfolio-backlogs.md).  
 
 ### Update the process configuration 
 
->[!NOTE]  
+> [!NOTE]    
 >To access the latest version of the process templates, install the latest version of TFS and download the templates using the [Process Template Manager](../../work-items/guidance/manage-process-templates.md).
 
 To update the process configuration for a team project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](witadmin/witadmin-import-export-process-configuration.md).
@@ -453,7 +453,7 @@ The following table describes the additional elements used to define the state c
 </tbody>
 </table>
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](../new-features-added.md#test-management).  
 
 
@@ -750,7 +750,7 @@ stateName2=color2,..." />
 <a id="workflow-colors">  </a> 
 ### Specify workflow state colors
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b> To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
 
 
@@ -766,7 +766,7 @@ Here we show how it appears in the work item form:
 
 <img src="_img/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
 
->[!NOTE]  
+> [!NOTE]    
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
 
 **Details:**
@@ -787,7 +787,7 @@ The supported set of icons you can specify for a work item type are shown below.
 
 ![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
 
->[!NOTE]  
+> [!NOTE]    
 >Icons noted with an asterisk are supported on VSTS and TFS 2017.3 and later versions.
 
 
@@ -802,7 +802,7 @@ and, here the icon is shown within the work item form.
 <img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
 
 
-## Related notes
+## Related articles
 
 Learn more about the web work item form and how to customize it from these additional topics: 
 

@@ -7,8 +7,9 @@ ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/15/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Source control
 

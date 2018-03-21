@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/12/2017
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your Java app with Maven
 

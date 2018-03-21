@@ -7,8 +7,9 @@ ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #	Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 

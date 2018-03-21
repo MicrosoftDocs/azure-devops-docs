@@ -132,7 +132,7 @@ For now, these benefits apply only to feeds created after this announcement, unl
 
 ### View quality of a package version in the package list
 
-On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/vsts/package/concepts/feeds/views) documentation for more information.
+On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/vsts/package/concepts/views) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Views in package list](_img/130_02.png)

@@ -30,6 +30,6 @@ You can change some parts of the work item type definition so that they appear i
 |`<STATE value="Active" />`<br /><br /> `<STATE value="Complete" />`<br /><br /> `<TRANSITION from="Active" to="Complete">`<br /><br /> `<REASON value="No Plans to Fix"/>`|The `value` attribute that specifies the name for the `STATE` and `REASON` elements. Must be 1 to 255 Unicode characters.|  
 |`<GROUP Label="label text"`<br /><br /> `<Tab Label="label text">`<br /><br /> `<CONTROL FieldName="Found In Build" Label="Found In">`|The `Label` attribute specified by a `GROUP`, `TAB`, or `CONTROL` element. Label text appears on work item forms. Must be 1 to 80 Unicode characters when specified.<br /><br /> The `Label` attribute is optional except for the `TAB` element.<br /><br /> You can customize the name of a field by specifying the `Label` for a field that appears on a work item form by using the `CONTROL` element.|  
   
-## Related notes  
+## Related articles  
 - [All WITD XML elements reference](all-witd-xml-elements-reference.md)
 - [Customize your work tracking experience](../customize-work.md) 

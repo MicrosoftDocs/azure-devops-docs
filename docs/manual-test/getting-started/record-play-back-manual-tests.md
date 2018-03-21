@@ -7,8 +7,9 @@ ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Record and play back manual tests
 

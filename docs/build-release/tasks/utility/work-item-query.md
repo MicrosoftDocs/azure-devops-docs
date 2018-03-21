@@ -7,8 +7,9 @@ ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Utility: Query Work Items
 
@@ -37,7 +38,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -51,4 +52,4 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 #   minThreshold: 0
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end

@@ -7,8 +7,9 @@ ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
@@ -87,4 +88,6 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end

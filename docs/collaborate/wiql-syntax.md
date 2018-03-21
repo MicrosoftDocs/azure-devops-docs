@@ -439,7 +439,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 -->
 
-## Related notes 
+## Related articles 
 
 - [Query fields, operators, values, and variables](../work/track/query-operators-variables.md)  
 - [Field data types and attributes](../work/customize/reference/define-modify-work-item-fields.md) 

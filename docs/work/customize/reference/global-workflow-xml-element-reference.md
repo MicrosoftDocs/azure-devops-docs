@@ -13,7 +13,7 @@ ms.date: 09/10/2017
 
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
 
 
@@ -93,6 +93,6 @@ reportable="Dimension | Detail | Measure" formula="avg" >
 |**GLOBALIST**|Defines a set of **LISTITEM** elements that are stored for a team project collection or a team project.<br /><br /> *globalListName*: A string of text that contains between 1 and 255 characters.<br /><br /> `<GLOBALLIST name="` *globalListName* `">`<br /><br /> `<LISTITEM> . . . </LISTITEM>`<br /><br /> `</GLOBALLIST>`<br /><br /> **GLOBALLIST** is a required child element of the **GLOBALLISTS** element.|  
 |**LISTITEM**|Defines a valid value that appears in the list.<br /><br /> `<LISTITEM value="` *listName* `" />`<br /><br /> **LISTITEM** is a required child element of **GLOBALLIST**.|  
   
-## Related notes  
+## Related articles  
 -  [FIELD (Definition) element reference](field-definition-element-reference.md)   
 -  [Customize your work tracking experience](../customize-work.md)  

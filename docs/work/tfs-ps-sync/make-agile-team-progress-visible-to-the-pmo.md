@@ -156,6 +156,6 @@ Edit Work Items dialog box
   
  ![Project Portfolio with Agile Plan Updates](_img/tfs-ps_pwa_portfolio_agile.png "TFS-PS_PWA_Portfolio_Agile")  
   
-## Related notes  
+## Related articles  
  [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
  [Resolve validation errors](resolve-validation-errors.md)

@@ -7,8 +7,9 @@ ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #  Add backup billing managers for your VSTS account
 

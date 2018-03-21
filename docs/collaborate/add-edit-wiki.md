@@ -8,7 +8,8 @@ ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 01/24/2017
+monikerRange: 'vsts || >= tfs-2018'
+ms.date: 03/01/2018  
 ---
 
 
@@ -20,7 +21,7 @@ Once the [Wiki git repository is provisioned](./wiki-create-repo.md) for your te
 
 You author pages using [markdown format](../reference/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links.  
 
-<img src="_img/wiki/wiki-edit-2.png" alt="Create first page" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/wiki/wiki-edit-2.png" alt="Create first page" style="border: 1px solid #C3C3C3;" />Â  
 
 As you continue editing the page, save the page by entering **Ctrl+S**. To save with a custom revision message, click the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
@@ -76,7 +77,7 @@ To find a page, enter a title or keyword into the **Filter pages** box.
 > [View wiki page history and revert](wiki-view-history.md) 
 
 
-## Related notes
+## Related articles
 
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../reference/markdown-guidance.md) 
 - [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md) 
@@ -99,4 +100,4 @@ Each wiki page corresponds to a file within the wiki git repo. Names you assign 
 | Attachment file size |  Must not exceed the maximum of 19 MB  |
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  �
+[!INCLUDE [temp](../_shared/help-support-shared.md)]   

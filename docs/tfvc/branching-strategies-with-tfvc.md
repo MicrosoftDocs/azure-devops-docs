@@ -8,8 +8,9 @@ ms.manager: willys
 ms.date: 09/09/2017
 ms.author: willys
 author: willys
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Branching strategies with TFVC
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -111,7 +112,7 @@ The TFVC Feature Isolation branching strategy is similar to the Git [topic branc
 
 > Authors: Jesse Houwing, Marcus Fernandez, Mike Fourie, and Willy Schaub
  
-*(c) 2015 Microsoft Corporation.Ã¿All rights reserved.Ã¿This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

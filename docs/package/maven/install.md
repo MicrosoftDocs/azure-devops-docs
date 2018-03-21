@@ -8,9 +8,10 @@ ms.manager: jenp
 ms.author: rossav
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2018'
 ---
 
-[//]: # (monikerRange: '>= tfs-2018') 
+ 
 
 # Install Maven artifacts using VSTS and TFS
 
@@ -39,7 +40,7 @@ ms.date: 01/31/2018
       </dependency>
    </dependencies>
    <repositories>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
@@ -52,7 +53,7 @@ ms.date: 01/31/2018
       </repository>
    </repositories>
    <distributionManagement>
-    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
+    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>

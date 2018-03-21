@@ -8,9 +8,10 @@ ms.assetid: b30a4604-d34d-43d4-9de9-02f1fea108ea
 ms.manager: douge
 ms.author: elbatk
 ms.date: 9/27/2017
+monikerRange: '>= tfs-2013 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013 < vsts') 
+ 
 
 # Team Foundation Server extension FAQs
 

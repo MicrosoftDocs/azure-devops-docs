@@ -25,10 +25,10 @@ You can quickly get started with a team project from the project page. You can s
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../accounts/create-team-project.md).  
 
 
-> [!div class="mx-tdBreakAll"]   
-> |Git repositoryÂ |TFVC repositoryÂ |  
-> |-------------|----------|Â  
-> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity)|- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
+> [!div class="mx-tdCol2BreakAll"]   
+> |Git repository |TFVC repository |  
+> |-------------|----------| 
+> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
 
 ## Prerequisites
 
@@ -50,15 +50,15 @@ From your web browser, open the team project drop down menu and select the home 
 Upon [adding another team project](../accounts/create-team-project.md) to your account or collection, you'll see the get started page. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or simply initialize a repo. You can easily get started by adding members, setting up builds, or adding work from this page.
 
 
-**Git repository**
+# [Git repository](#tab/git)
 
 <img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />     
 
-
-**TFVC repository**
+# [TFVC repository](#tab/tfvc)
 
 <img src="_img/project-home-page-1.png" alt="TFVC new project" style="border: 1px solid #C3C3C3;" />     
 
+---
 
 ##Share your project vision
 
@@ -118,13 +118,20 @@ The Welcome page corresponds to the README.md file defined in the Git repository
 
 You can edit and manage these files in the same way you manage all other files under source control. 
 
-####Git repositories
+# [Git repository](#tab/git)
+
+<img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />     
+
+
 For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
 
-####TFVC  projects
+# [TFVC repository](#tab/tfvc)
 For TFVC projects the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md). 
 
 Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder will also show up in the left pane for easy navigation between them so you can provide additional information.  
+
+--- 
+
 
 ## Change the repository used
 
@@ -149,7 +156,7 @@ You can change the repository used to support your project vision, including poi
 > [Create a wiki for your team project](wiki-create-repo.md) 
 
 
-## Related notes  
+## Related articles  
 
 - [Markdown guidance](../collaborate/markdown-guidance.md) 
 - [Work effectively from your account hub](../user-guide/account-home-pages.md)

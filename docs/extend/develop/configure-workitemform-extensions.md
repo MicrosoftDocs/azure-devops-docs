@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: elbatk
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  
+<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  
 
 # Add extensions in work item form via work item type definition xml
 
