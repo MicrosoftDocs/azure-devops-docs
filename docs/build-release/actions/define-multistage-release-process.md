@@ -13,8 +13,9 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 01/19/2018
 ms.custom: mvc
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Define your multi-stage continuous deployment (CD) process
 

@@ -76,6 +76,6 @@ The following example specifies a work item task that reminds project administra
 |**WORKITEMS**|Optional child element of the **taskXml** element for the WorkItemTracking plug-in.Contains a collection of **WI** elements that each define a work item instance.<br/><code>&lt;WORKITEMS"&gt; <br/>      &lt;WI&gt;  . . . &lt;/WI&gt;<br/>&lt;/WORKITEMS&gt; </code> |
   
 
-## Related notes 
+## Related articles 
 -  [Customize a process](customize-process.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

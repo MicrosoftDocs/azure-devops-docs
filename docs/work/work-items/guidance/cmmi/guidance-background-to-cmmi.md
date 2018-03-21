@@ -105,5 +105,5 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
 -   [CMMI Distilled: A Practical Introduction to Integrated Process Improvement](http://go.microsoft.com/fwlink/?LinkId=179000) (3rd Edition), Dennis M. Ahren, Aaron Clause, and Richard Turner; Addison-Wesley Professional, 2008.  
   
-## Related notes
+## Related articles
  [CMMI process](../cmmi-process.md)

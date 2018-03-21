@@ -8,9 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: douge
 ms.date: 09/26/2016
+monikerRange: 'tfs-2017'
 ---
 
-[//]: # (monikerRange: 'tfs-2017')
+
 
 # Changes to requirements for TFS 2017
 

@@ -67,5 +67,5 @@ You can use the **MATCH** element to force values in a field of String type to f
   
  
   
-## Related notes 
+## Related articles 
  [Apply a field rule](apply-rule-work-item-field.md)

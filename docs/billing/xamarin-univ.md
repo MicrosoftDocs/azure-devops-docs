@@ -7,8 +7,9 @@ ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.manager: douge
 ms.author: esther
 ms.date: 10/6/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Buy Xamarin University
 

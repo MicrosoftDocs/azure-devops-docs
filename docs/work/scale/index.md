@@ -13,7 +13,7 @@ ms.date: 10/04/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../teams/index.md).
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../settings/index.md).
 
 ## Quickstarts
 
@@ -22,9 +22,16 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 ## Step-by-Step Tutorials
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
 - [Manage portfolios](portfolio-management.md)
 - [Review delivery plans](review-team-plans.md) 
 - [Set team favorites](../../collaborate/set-favorites.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+- [Manage portfolios](portfolio-management.md)
+- [Set team favorites](../../collaborate/set-favorites.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  
+::: moniker-end
 
 ## Concepts 
        
@@ -46,7 +53,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 
 ## Resources  
-- [Scale & Configure Teams](../../teams/index.md)
+- [Scale & Configure Teams](../../settings/index.md)
 - [Customization](../customize/index.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  

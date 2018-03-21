@@ -15,7 +15,7 @@ ms.date: 04/14/2017
 [!IN
 CLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
 >
 >Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
@@ -34,7 +34,7 @@ When you customize your team project to support team fields, the Team field tab 
 
 <img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, team project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >This topic describes how to reconfigure a team project that is based on the Scrum process template. If your team project is based on another process template and that template is compatible with TFS 2013 or later version, you can make similar changes. Even if you've used the default configuration, you can reconfigure your team project. 
 
 
@@ -103,7 +103,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
         </FIELDS>
 		```
 
-    >[!TIP]  
+    > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
 3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
@@ -204,7 +204,7 @@ From the product backlog page for the team project, you can create backlog items
 For backlog items you create from a team's backlog page, TFS assigns the default value associated with the team to the Team field.
 
 
-##Related notes
+## Related articles
 
 - [Add a team, add team members](../scale/multiple-teams.md)
 - [Customize a process template](reference/process-templates/customize-process.md)  
@@ -225,7 +225,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
 3.  Modify the ProcessTemplate file, and update the process template name and version number. For example:

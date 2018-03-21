@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2013 <= tfs-2017')
+
 
 # Git branch permissions prior to TFS 2017 Update 1
 

@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 12/12/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Add administrators, set permissions at the project-level or project collection-level
 

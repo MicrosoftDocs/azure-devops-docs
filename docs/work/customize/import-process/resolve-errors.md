@@ -1,19 +1,21 @@
 ---
-title: Resolve validation errors | VSTS  
+title: Resolve validation errors
+titleSuffix: VSTS  
 description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Resolve validation errors for process import
 
 <b>VSTS (Hosted XML)</b>  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).

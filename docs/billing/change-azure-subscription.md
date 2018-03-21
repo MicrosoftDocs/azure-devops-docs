@@ -7,8 +7,9 @@ ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change the Azure subscription your VSTS account uses for billing
 

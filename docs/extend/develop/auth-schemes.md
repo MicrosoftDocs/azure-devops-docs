@@ -18,7 +18,7 @@ in any custom endpoint & support connecting to the external service.
 Following are the authentication schemes that are part of the closed set:
 
 ## Basic authentication
-This scheme takes 2 inputs – Username & Password (confidential)
+This scheme takes 2 inputs - Username & Password (confidential)
 
 Default authentication header used is: "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
 
@@ -70,7 +70,7 @@ Default authentication header used is: "Basic {{ #base64 endpoint.username \":\"
 ```
 
 ## Token based authentication
-This scheme takes 1 input – API Token (confidential)
+This scheme takes 1 input - API Token (confidential)
 
 Default authentication header used is: {{endpoint.apitoken}}
 
@@ -109,7 +109,7 @@ Default authentication header used is: {{endpoint.apitoken}}
 }
 ```
 ## Certificate based authentication
-This scheme takes 1 input – Certificate (confidential)
+This scheme takes 1 input - Certificate (confidential)
 
 The value of certificate has to be provided in the text area.
 

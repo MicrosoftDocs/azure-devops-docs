@@ -8,8 +8,9 @@ ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Access VSTS with Azure Active Directory (Azure AD)
 

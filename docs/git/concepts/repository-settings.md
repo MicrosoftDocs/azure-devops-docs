@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: macoope
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2018')
+
 
 # Repository settings
 #### VSTS | TFS 2018 Update 2

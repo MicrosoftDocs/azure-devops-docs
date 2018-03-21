@@ -64,5 +64,5 @@ As an administrator, you should check the event logs for the application-tier se
   
 4.  Delete the contents of the Cache directory, including all subfolders.  
   
-## Related notes 
+## Related articles 
  [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)

@@ -7,8 +7,9 @@ ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.manager: douge
 ms.author: dastahel
 ms.date: 11/13/2017
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Build: Xcode
 
@@ -219,7 +220,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -259,7 +260,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 #   publishJUnitResults: False
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Example
 

@@ -1,0 +1,11 @@
+- name: CodeX
+  tocHref: /vsts/
+  topicHref: /vsts/codex-index
+  items: 
+  - name: CodeX Settings
+    tocHref: /vsts/work/
+    topicHref: /vsts/codex-index#pivot=services&panel=codex-settings
+    items:
+    - name: "Project & Account Settings"
+      tocHref: /vsts/
+      topicHref: /vsts/settings/index

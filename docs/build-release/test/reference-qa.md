@@ -7,8 +7,9 @@ ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # FAQs for continuous testing
 
@@ -59,7 +60,7 @@ A merged summary is not currently available for coverage files published using m
    you can specify, such as running only specific tests. See [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md).
  
 1. Run **functional tests** in the early stages of the CD pipeline. These are typically 
-   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://msdn.microsoft.com/en-us/library/dd286726.aspx) tests.
+   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code) tests.
    To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
    and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTests/README.md)**
    tasks to your release definition. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
@@ -99,7 +100,7 @@ after the load tests have run and before the app is swapped from staging to prod
 <a name="pass-params"></a>
 ### Q: How do I pass parameters to my test code from a build or release pipeline?
 
-**A**: Use a [runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+**A**: Use a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 to pass values as parameters to your test code. For example, in a release that contains
 several environments, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the

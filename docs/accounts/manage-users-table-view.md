@@ -7,8 +7,9 @@ ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/23/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Manage users for VSTS
 

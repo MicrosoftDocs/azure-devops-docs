@@ -7,8 +7,9 @@ ms.technology: vs-devops-release
 ms.manager: douge
 ms.author: ahomer
 ms.date: 03/06/2018
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Deploy to Azure Stack
 

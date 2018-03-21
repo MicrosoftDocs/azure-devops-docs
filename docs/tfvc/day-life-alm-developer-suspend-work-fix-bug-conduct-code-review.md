@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/25/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review
 

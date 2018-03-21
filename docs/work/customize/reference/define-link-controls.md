@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 <b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -203,6 +203,6 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```    
   
-## Related notes 
+## Related articles 
 -  [Link controls, restrictions, and fields](../../track/linking-attachments.md)   
 -  [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)    

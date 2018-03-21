@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Triggers in Release Management
 
@@ -94,16 +95,16 @@ You can combine the automated settings to have releases created
 automatically either when a new build is available or according to
 a schedule.
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
 multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
 continuous deployment based on the branch or tag of a build.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ### Parallel forked and joined deployments
 
@@ -129,7 +130,7 @@ this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 Note that you can always deploy a release directly to any of the
 environments in your release definition by selecting the
@@ -142,10 +143,10 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 > **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

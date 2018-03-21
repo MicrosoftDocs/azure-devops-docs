@@ -14,6 +14,8 @@ ms.date: 11/13/2017
 
 # Widgets based on the Analytics Service
 
+**VSTS** 
+
 The Analytics extension includes several dashboard widgets that take advantage of the power of the Analytics Service. Once you install the Analytics extension you can add Widgets to your dashboard. Using widgets, you and your team can gain valuable insights into the health and status of your work. 
 
 The Analytics widgets are described below.

@@ -25,6 +25,6 @@ When you delete a task from Microsoft Project Professional that has been synchro
 |**And**|**Project Server Is Linked**|**Was Ever**|**Yes**|  
 |**And**|**Changed Date**|**>=**|**@Today - 60**|  
   
-## Related notes  
+## Related articles  
  [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md)   
  [Manage projects](manage-projects.md)

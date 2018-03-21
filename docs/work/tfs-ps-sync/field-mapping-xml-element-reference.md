@@ -204,7 +204,7 @@ ms.date: 01/12/2017
 </mappingFile>  
 ```  
   
-## Related notes  
+## Related articles  
  [Restrictions on mapping fields](restrictions-mapping-ps-fields.md)   
  [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md)   
  [Upload or download field mappings](manage-field-mappings.md)   

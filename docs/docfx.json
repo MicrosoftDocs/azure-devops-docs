@@ -5,6 +5,7 @@
         "files": [
           "**/*.md", "**/*.yml"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -24,6 +25,7 @@
           "**/*.mp4",
           "**/*.svg"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -36,8 +38,6 @@
       "uhfHeaderId": "MSDocsHeader-TeamServices",
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "brand": "vsts",
-      "searchScope": ["VSTS", "Visual Studio Team Services"],
       "author": "douge",
       "ms.author": "douge",
       "ms.date": "07/13/2017",
@@ -51,6 +51,12 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "team-services"
+    "dest": "team-services",
+    "groups": {
+      "all": {
+        "dest": "all",
+        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
+      }
+    }
   }
 }

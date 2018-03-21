@@ -1,6 +1,6 @@
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Role | Description |  
 > |------------|-------------| 
 > | **Administrator** | Can use and manage library items. |

@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge
 ms.date: 01/18/2018
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Search your code
 

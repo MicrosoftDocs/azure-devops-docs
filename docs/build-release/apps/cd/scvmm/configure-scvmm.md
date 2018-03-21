@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 09/26/2017
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
 
@@ -111,7 +112,9 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

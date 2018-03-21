@@ -7,7 +7,8 @@ ms.technology: vs-devops-wit
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/26/2018
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 
@@ -118,7 +119,7 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
     witadmin importcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
     ```  
   
-## Related notes
+## Related articles
 - [ProcessConfiguration XML elements](../process-configuration-xml-element.md)  
 - [Customize your work tracking experience](../../customize-work.md)     
 - [Use categories to group work item types](../use-categories-to-group-work-item-types.md)   

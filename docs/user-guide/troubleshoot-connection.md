@@ -7,14 +7,15 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/26/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Troubleshoot connecting to a team project in VSTS or TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## Troubleshoot VSTS connectivity
 
@@ -71,9 +72,9 @@ In some cases, you may be unaware that you have two identities with the same sig
 Still unable to access your account?
 In cases where you enter your credentials correctly, but instead of redirecting to your VSTS account you are redirected back to the original sign in page, we recommend clearing all cookies and re-attempting to sign in. If that does not fix the issue, please contact customer support.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 < vsts")
+::: moniker range=">= tfs-2013 < vsts"
 
 ## Troubleshoot TFS connectivity
 
@@ -91,9 +92,9 @@ Here's a list of the most frequently encountered connection problems and what to
 
 For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../work/customize/reference/error/tf31002-unable-connect-tfs.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## Switch between different organizational accounts in VSTS
 
@@ -109,9 +110,9 @@ To resolve this problem, apply Visual Studio 2013.2 or install a later version. 
 
 For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range=">= tfs-2013 < vsts")
+::: moniker range=">= tfs-2013 < vsts"
 
 ## Connect to a TFS with Secure Sockets Layer (SSL) configured
 
@@ -138,4 +139,4 @@ When the on-premises TFS configuration changes, such as when moving or splitting
 
 4. Delete the contents of the Cache directory, including all subfolders.
  
-[//]: # (::: moniker-end)
+::: moniker-end

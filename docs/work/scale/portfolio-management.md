@@ -49,7 +49,7 @@ With the hierarchical structure implemented, portfolio owners working in Account
 
 All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
 
->[!NOTE]  
+> [!NOTE]    
 >Program managers can gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
 
 
@@ -60,7 +60,7 @@ The Customer Profile feature team's view of the backlog only includes those work
 
 <img src="_img/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" style="border: 1px solid #C3C3C3;" /> 
 
->[!TIP]    
+> [!TIP]    
 >Add **Node Name** to the column options to show the team assigned to the work item.   
  
 Each feature team has its own team home page, backlog, Kanban board, and task board. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths.  
@@ -78,7 +78,7 @@ Here, all backlog items have been assigned to feature teams. While all features 
 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
->[!TIP]    
+> [!TIP]    
 >You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
 
 
@@ -172,7 +172,7 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md) 
 - [Track capacity when working on more than one team](capacity-planning.md#track-capacity-per-team) 
 
-## Related notes
+## Related articles
  
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban](../kanban/kanban-basics.md)

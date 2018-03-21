@@ -193,7 +193,7 @@ Perform one of the following steps based on the scope of the customization you a
   
      Notice that the Classification group is no longer on the main form. On the **Links and Attachments** tab choose the **Details** tab to see the results of the changes that you made.  
   
-## Related notes 
+## Related articles 
 -  [Design the work item form](design-work-item-form.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)

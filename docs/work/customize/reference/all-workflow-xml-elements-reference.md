@@ -175,7 +175,7 @@ For each transition, you specify a set of reasons for changing the state of the 
 </td><td data-th="Required?"><p>Required</p></td></tr></table>
 
  
-## Related notes 
+## Related articles 
 -  [FIELD (Workflow)](field-workflow-element-reference.md)   
 -  [Change the workflow](change-workflow-wit.md) 
 -  [Customize the work tracking experience](../customize-work.md) 

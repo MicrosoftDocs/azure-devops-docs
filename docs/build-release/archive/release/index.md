@@ -7,8 +7,9 @@ ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/19/2016
+monikerRange: ">= tfs-2013"
 ---
-[//]: # (monikerRange: ">= tfs-2013")
+
 
 # Release Management for Visual Studio, VSTS, and Team Foundation Server
 

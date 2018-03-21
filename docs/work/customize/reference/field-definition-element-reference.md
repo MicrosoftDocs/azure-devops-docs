@@ -21,8 +21,8 @@ You use the **FIELD** (Definition) element to define a work item field and speci
   
 ## Syntax  
   
->[!NOTE]  
-><b>Feature availability:</b> The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
+> [!NOTE]    
+>**Feature availability:** The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
@@ -141,7 +141,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
 </FIELD>  
 ```  
   
-## Related notes   
+## Related articles   
 -  [Naming restrictions and conventions](../../../collaborate/naming-restrictions.md)   
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md)   
 -  [Customize your work tracking experience](../customize-work.md)    

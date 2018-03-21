@@ -7,12 +7,19 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
 ms.date: 03/15/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build variables
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
+
+::: moniker range="< vsts"
+> [!NOTE]
+> 
+> Some features and predefined variables are not available in certain versions of TFS. We're working on updating this topic to call out these differences.
+::: moniker-end
 
 Variables give you a convenient way to get key bits of data into various parts of your build process.
 
@@ -944,6 +951,8 @@ The value depends on what caused the build.
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

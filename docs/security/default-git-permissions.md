@@ -9,8 +9,9 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: sdanie
 ms.date: 02/07/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Default Git repository and branch permissions
 
@@ -22,7 +23,7 @@ From the project admin content, **Version Control** page, you can [set permissio
 
 From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../git/branch-permissions.md). 
 
-[!INCLUDE [temp](_shared/code-git.md)]
+[!INCLUDE [temp](_shared/code-git.md)]
 
 
 ## Related notes 

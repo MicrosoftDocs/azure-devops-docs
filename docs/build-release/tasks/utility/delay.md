@@ -7,8 +7,9 @@ ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Utility: Delay
 
@@ -30,7 +31,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -42,7 +43,7 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 #   delayForMinutes: 0
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q & A
 

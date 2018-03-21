@@ -43,7 +43,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
 |**Customize how fields are mapped between Team Foundation Server and Project Server**. You must map fields between the two server products and define how the data is synchronized. You can either upload the default mappings or add mappings and customize how fields are synchronized. You maintain the field mappings by using the following command options:<br /><br /> -   **/DownloadFieldMappings**: Downloads the field mappings to a file.<br />-   **/UploadFieldMappings**: Uploads the field mappings that are defined in a file.|[Upload or download field mappings](manage-field-mappings.md)|  
 |**Retrieve recent error messages that occurred when data was synchronized**. To support your troubleshooting efforts, you can retrieve information about the most recent errors that were logged for a team project collection if you use the `/GetSyncMessages` command option.|[View error messages](view-synch-error-messages.md)|  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Remove a component](remove-component-from-synchronization.md)   
  [Change your deployment configuration](change-deployment-configuration.md)   

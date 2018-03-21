@@ -7,8 +7,9 @@ ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Troubleshoot billing set up
 

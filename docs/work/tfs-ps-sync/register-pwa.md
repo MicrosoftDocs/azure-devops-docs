@@ -126,6 +126,6 @@ TfsAdmin ProjectServer /UnregisterPWA /pwa:http://PWAServerName/PWAInstance/ /tf
 ```  
   
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Map integration components](map-integration-components.md)

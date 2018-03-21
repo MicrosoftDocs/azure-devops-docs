@@ -16,7 +16,7 @@ ms.date: 09/19/2017
 
 <b>TFS 2017 | [TFS 2015 | TFS 2013](synchronize-tfs-project-server.md)</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](synchronize-tfs-project-server.md).
 
 If you are on a prior version of Team Foundation Server with the native integration installed and configured, the native integration will no longer work

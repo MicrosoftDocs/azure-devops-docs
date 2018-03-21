@@ -1,19 +1,21 @@
 ---
-title: Customize backlogs and boards | VSTS    
-description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for Visual Studio Team Services (VSTS) 
+title: Customize backlogs and boards
+titleSuffix: VSTS    
+description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for Visual Studio Team Services 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/07/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
-# Customize your backlogs or boards (Inheritance process model)  
+# Customize your backlogs or boards  
 
 <b>VSTS (Inheritance)</b>  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.
 >
 >To customize your backlogs or boards for the Hosted XML or On-premises XML process models, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) or [Add a portfolio backlog level](../add-portfolio-backlogs.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).    
@@ -60,7 +62,7 @@ To get started, you'll want to open the Backlog levels page of your custom inher
  
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 
 	<!--- <img src="_img/process-open-account-settings-via-menu.png" alt="Web portal, open account settings" style="border: 1px solid #C3C3C3;" /> -->
@@ -109,7 +111,7 @@ Deleting the backlog level only removes the backlog and board associated with th
 
 <img src="_img/process-edit-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't remove the default, inherited WIT from the Epics or Features portfolio backlogs. 
 
 
@@ -124,7 +126,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
 
 <img src="_img/process-edit-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't remove the default, inherited WIT from the Requirements backlog. 
 
 
@@ -138,11 +140,11 @@ Here, we've added the *Ticket* WIT which will be tracked along with tasks.
 
 <img src="_img/process-edit-iteration-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't remove the default, inherited WIT from the Iteration backlog. 
 
 
-## Related notes  
+## Related articles  
 
 As you customize the backlog levels, all team projects that reference the inherited process that you're customizing will automatically update to reflect the changes you made to your inherited process. To view your changes, open the backlog page for the team project and refresh your web browser.  
 
@@ -180,10 +182,6 @@ The system defines 13 categories for use, and at least one WIT is assigned to ea
 The Bug category is a special category that is designed to allow teams to manage their bugs as requirements or tasks. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 
 --> 
-
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
-
 
 
 
