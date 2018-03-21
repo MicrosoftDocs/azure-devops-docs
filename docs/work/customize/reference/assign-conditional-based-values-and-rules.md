@@ -222,5 +222,5 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </FIELD>  
 ```  
   
-## Related notes 
+## Related articles 
 -  [Apply a field rule](apply-rule-work-item-field.md)   

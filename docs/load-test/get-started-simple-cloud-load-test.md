@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
 ms.topic: get-started-article
+monikerRange: "vsts"
 ---
-[//]: # (monikerRange: "vsts")
+
 
 # Run URL-based load tests with VSTS
 

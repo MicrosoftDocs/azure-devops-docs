@@ -8,7 +8,8 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: reference
-ms.date: 01/18/2017
+monikerRange: 'vsts'
+ms.date: 03/01/2018  
 ---
 
 
@@ -16,10 +17,9 @@ ms.date: 01/18/2017
 
 **VSTS**
  
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]  Â 
 
-
-## Related notes
+## Related articles
 
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../reference/markdown-guidance.md)  
 - [Keyboard shortcuts](keyboard-shortcuts.md)

@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/30/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 #  Share your code in Git using Xcode
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015

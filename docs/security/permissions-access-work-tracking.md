@@ -7,8 +7,9 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/23/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Permissions and access for work tracking
 
@@ -26,14 +27,14 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Default work tracking permissions and access 
 
-[!INCLUDE [temp](_shared/work.md)]
+[!INCLUDE [temp](_shared/work.md)]
 
 
 ## Test management permissions   
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](_shared/test.md)]
 
 
 Area permissions for web-based test case management and test execution control access to the following actions.  

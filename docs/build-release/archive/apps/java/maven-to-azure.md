@@ -7,8 +7,9 @@ ms.assetid: E6A051F3-8B84-4724-9110-F84DB1F3DCD5
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+monikerRange: 'tfs-2017'
 ---
-[//]: # (monikerRange: 'tfs-2017')
+
 
 # Build and Deploy your Java app to an Azure web app
 
@@ -131,6 +132,8 @@ A: Yes.
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

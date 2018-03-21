@@ -8,8 +8,9 @@ ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 #  Free trials for paid VSTS features and extensions
 

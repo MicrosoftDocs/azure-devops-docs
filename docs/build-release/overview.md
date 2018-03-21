@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Build and Release in VSTS and TFS
 

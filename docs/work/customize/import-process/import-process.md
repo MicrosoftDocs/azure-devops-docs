@@ -1,19 +1,21 @@
 ---
-title: Import a process | VSTS   
+title: Import a process
+titleSuffix: VSTS     
 description: Add or update a process by importing a process to support customization of tracking work in Visual Studio Team Services (VSTS).
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Process and team projects    
 
 <b>VSTS (Hosted XML)</b>   
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
@@ -81,7 +83,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   
-    >[!NOTE]  
+    > [!NOTE]    
     >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
     <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
@@ -90,7 +92,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 
 	<img src="_img/import-process-dialog.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />	 
 
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
 3.  Upon successful import, you'll see the following messsage.  
@@ -109,7 +111,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 
 Once you've added a process, you can update it by importing a zip file where you've modified one or more files within the process template.
 
->[!NOTE]  
+> [!NOTE]    
 >It's a best practice to [Export a process](#export-process) before making changes so that you don't accidentally overwrite changes made by other users.
 
 1.  Import the process according to steps 2 and 3 from the previous procedure.     

@@ -107,6 +107,6 @@ When you link a work item to a pull request (PR), you have the option to automat
 
 To learn more, see [Workflow states & state categories](../workflow-and-state-categories.md).
 
-## Related notes 
+## Related articles 
 - [Change the workflow](change-workflow-wit.md)
 - [Customize your work tracking experience](../customize-work.md)   

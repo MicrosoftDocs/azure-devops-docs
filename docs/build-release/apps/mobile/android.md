@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: dastahel
 ms.date: 01/26/2018
 ms.topic: get-started-article
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your Android app
 

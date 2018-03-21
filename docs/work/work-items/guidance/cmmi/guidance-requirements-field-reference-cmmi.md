@@ -26,5 +26,5 @@ When you create a team project using the [CMMI process](../cmmi-process.md), you
   
 1.  To change the menu selection, see [Customize a pick list](../../../customize/add-modify-field.md).  
   
-## Related notes
+## Related articles
  [Index of work item fields](../work-item-field.md)

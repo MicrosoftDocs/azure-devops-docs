@@ -6,18 +6,19 @@ ms.technology: vs-devops-setup
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+ms.date: 03/20/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Delete your VSTS account
 
 **VSTS**
 
 If you don't need your  VSTS account, you can delete it. 
-If you change your mind within 90 days, 
+If you change your mind within 30 days, 
 you can [recover your account](recover-your-vsts-account.md). 
-After 90 days, your account 
+After 30 days, your account 
 and data are permanently deleted.
 
 When you delete your VSTS account:
@@ -27,7 +28,7 @@ When you delete your VSTS account:
 *   Your account URL becomes available for anyone to use. 
 But it might take up to 1 hour before your account URL becomes available again. 
 
-*   Your account is disabled and appears deleted in your profile for 90 days.
+*   Your account is disabled and appears deleted in your profile for 30 days.
 
 *   If your account is linked to an Azure subscription for billing purchases, 
 you must unlink your account before you delete your account. 
@@ -97,9 +98,9 @@ where you'll see your deleted account.
 <a name="undelete"></a>
 ##  Restore your VSTS account
 
-Your account will be disabled but available for 90 days after you delete it. 
+Your account will be disabled but available for 30 days after you delete it. 
 If you change your mind during this time, you can recover your account. 
-After 90 days, your account and data are permanently deleted.
+After 30 days, your account and data are permanently deleted.
 
 You'll need VSTS account owner 
 permissions to restore your VSTS account. 

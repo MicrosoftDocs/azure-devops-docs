@@ -7,8 +7,9 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 #  Review code with pull requests
 
@@ -163,19 +164,19 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 Select **Active** to show all active pull requests for the current repo. 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
 ![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Review a pull request 
 
@@ -285,7 +286,7 @@ Linked work items are also updated showing the pull request completion.
 
 ![Linked Work Items showing completed pull requests](./_img/pull-requests/pr_workitem_complete.png)
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 ### Complete automatically
 
@@ -301,7 +302,7 @@ Select **Cancel auto-complete** to turn off auto-complete and return the pull re
 >[!NOTE]
 >The **Auto-complete** option is available in VSTS and TFS 2017 and higher, and is only present when you have branch policies that must be satisfied before the pull request can be completed. If you don't see **Auto-complete**, it is because you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ### Abandon your changes
 
@@ -310,7 +311,7 @@ The abandoned pull request will still be viewable on the web and stays linked to
 
 Reactivate an abandoned pull request at any time by selecting the pull request from the **Abandoned** tab in the **Pull Request** view and selecting  **Reactivate**.
 
-[//]: # (::: moniker range=">= tfs-2017") 
+::: moniker range=">= tfs-2017" 
 
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
@@ -353,7 +354,7 @@ Cherry-picking a pull request in this way creates a new branch with the copied c
 In the dialog that appears, enter the branch you want to merge the copied changes into in the **Target branch** field and a new branch that will contain the copied changes in the **Topic branch name** field, then select **Cherry-pick**.
 If there are no conflicts between the target branch and the newly created topic branch, you can then select **Create pull request** to merge the topic branch into the target branch to complete the cherry-pick.
 
-[//]: # (::: moniker-end) 
+::: moniker-end 
 
 ## Set a new default branch    
 

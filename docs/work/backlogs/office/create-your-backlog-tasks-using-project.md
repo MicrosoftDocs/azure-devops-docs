@@ -28,24 +28,24 @@ Use this topic to learn how to:
 > * View how Project columns map to work item fields    
 
 
->[!NOTE] 
+> [!NOTE] 
 >You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../tfs-ps-sync/synchronize-tfs-project-server.md) , but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
 
 ## Add tasks and publish work items
 
 1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017, you'll need Project 2010 or later version.  
  
-	>[!NOTE]  
+	> [!NOTE]  
 	>You can't use Office Project 365 to connect to VSTS and TFS. 
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
-	>[!NOTE]    
+	> [!NOTE]    
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-	>[!TIP]  
+	> [!TIP]  
 	>If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
     ![Connect to a team project from Microsoft Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
@@ -162,7 +162,7 @@ You can manage your project plan using Project and all the features that Project
 |Publish/Refresh|You specify the **Publish or Refresh** field for individual tasks. Also, field attributes defined in the Microsoft Project mapping file affect how fields are published and refreshed.|All work items are subject to publish and refresh.|
 |Linking|You can create and modify parent-child links or predecessor-successor links between work items.|Using the tree list view, you can create and modify parent-child links.|
 
-## Related notes  
+## Related articles  
 
 - [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
 - [Create your backlog](../../backlogs/create-your-backlog.md)

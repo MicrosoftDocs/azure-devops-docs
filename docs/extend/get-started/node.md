@@ -41,16 +41,16 @@ In order to create extensions for VSTS, there are some prerequisite software and
 If you haven't, you'll want to create a `home` directory that contains the following contents:
 
 ```no-highlight
-├── README.md						// used in the Marketplace listing of your extension
-├── sdk    
-	├── node_modules           
-	└── scripts
-		└── VSS.SDK.js				// core SDK script retrieved using node later in the tutorial
-├── images                        
-	└── icon.png                           
-├── scripts                        	// not used in this tutorial
-├── hello-world.html				// html page to be used for your hub  
-└── vss-extension.json				// extension's manifest
+|--- README.md						// used in the Marketplace listing of your extension
+|--- sdk    
+	|--- node_modules           
+	|--- scripts
+		|--- VSS.SDK.js				// core SDK script retrieved using node later in the tutorial
+|--- images                        
+	|--- icon.png                           
+|--- scripts                        	// not used in this tutorial
+|--- hello-world.html				// html page to be used for your hub  
+|--- vss-extension.json				// extension's manifest
 ```
 
 <a name='client-sdk'/>

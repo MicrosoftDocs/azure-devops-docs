@@ -7,9 +7,10 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: 'vsts'
 ---
 
-[//]: # (monikerRange: 'vsts') 
+ 
 
 # Use NuGet with VSTS feeds
 

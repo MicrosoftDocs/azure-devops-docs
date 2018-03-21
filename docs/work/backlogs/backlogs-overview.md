@@ -20,7 +20,7 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 
->[!NOTE]
+> [!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
 
@@ -39,7 +39,7 @@ Take these tools for a test run by [creating an account on VSTS for free](../../
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
-## Related notes
+## Related articles
 
 You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 

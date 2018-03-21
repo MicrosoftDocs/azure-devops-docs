@@ -1,6 +1,6 @@
 
 
-> [!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"]   
 > | Role | Description | 
 > |-------------|---------|
 > | **User** | Can use the endpoint when authoring build or release definitions. |

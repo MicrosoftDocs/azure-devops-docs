@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
 ms.topic: get-started-article
+monikerRange: '>= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2017')
+
 
 # Build your ASP.NET Core app
 
@@ -51,17 +52,17 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 # [GitHub repo](#tab/github)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 
@@ -81,7 +82,7 @@ Choose this option if you prefer a graphical interface in your web browser.
 
 # [YAML](#tab/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 **VSTS**
 
@@ -96,13 +97,13 @@ This choice also offers parallel processing (fan out and fan in), and the abilit
 
 [Learn more about YAML builds](../../actions/build-yaml.md).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 
@@ -128,7 +129,7 @@ Begin by creating your build definition.
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
@@ -138,17 +139,17 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Replace the contents of the file with code from the next section.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 # [GitHub repo](#tab/github/web)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 In VSTS:
 
@@ -158,17 +159,17 @@ In VSTS:
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 # [GitHub repo](#tab/github/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
 
@@ -176,13 +177,13 @@ In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 
@@ -199,7 +200,7 @@ All the tasks you need were automatically added to the build definition by the t
 
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ```yaml
 steps:
@@ -241,13 +242,13 @@ steps:
 
 Commit the above change to the master branch.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 # [Linux VM](#tab/deploy-linux/web)
@@ -264,7 +265,7 @@ This change causes the build to publish a set of uncompressed files and folders 
 
 # [Linux VM](#tab/deploy-linux/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ```yaml
 steps:
@@ -306,13 +307,13 @@ steps:
 
 Commit the above change to the master branch.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 # [Container](#tab/deploy-container/web)
 
@@ -337,7 +338,7 @@ You don't need artifacts to deploy to a container.
 
 # [Container](#tab/deploy-container/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ```yaml
 steps:
@@ -372,13 +373,13 @@ steps:
 
 Commit the above change to the master branch.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 
@@ -406,7 +407,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 1. Navigate to the **Build and Release** hub.
 
@@ -418,17 +419,17 @@ For this example, to learn some of the basics, you changed the YAML file to use 
 
 The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 # [GitHub repo](#tab/github/web)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 1. For the **Agent queue**:
 
@@ -446,18 +447,18 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 
 # [GitHub repo](#tab/github/yaml)
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 In VSTS:
 
@@ -485,13 +486,13 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 [//]: # (TODO: Add link to GitHub tutorial after advice is added there on authentication)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="< vsts")
+::: moniker range="< vsts"
 
 **TFS**: Does not apply.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ---
 

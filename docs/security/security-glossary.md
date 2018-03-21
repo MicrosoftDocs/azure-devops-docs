@@ -7,8 +7,9 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/18/2017
+monikerRange: '>= tfs-2013'
 ---
-[//]: # (monikerRange: '>= tfs-2013')
+
 
 # Security glossary
 

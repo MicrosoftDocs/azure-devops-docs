@@ -7,8 +7,9 @@ ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Testing Microsoft Store apps
 
@@ -84,7 +85,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
    |System info|Yes|  
    |Capture screenshot|Yes|  
    |[Event logs](collect-more-diagnostic-data-in-manual-tests.md)|Yes.|  
-   |Action record/playback|Windows Web apps – Yes.<br /><br /> Windows desktop and store apps – No.|  
+   |Action record/playback|Windows Web apps - Yes.<br /><br /> Windows desktop and store apps - No.|  
    |Create a bug|Yes|  
    |Create environment snapshot of the servers in an SCVMM lab environment.|Yes|  
   

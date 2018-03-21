@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Implement continuous deployment of your app using Kubernetes to Azure Container Service
 
@@ -180,7 +181,9 @@ The [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-
 allows complete separation of resources and management within the same cluster. So namespace can be used
 to create multiple environments such as *Dev*, *QA*, and *Production* in the same ACS Kubernetes cluster.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

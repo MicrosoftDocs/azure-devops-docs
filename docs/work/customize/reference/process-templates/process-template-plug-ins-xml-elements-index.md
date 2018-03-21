@@ -148,7 +148,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Work item queries|[Define a work item query](define-work-item-query-process-template.md)|**TeamFoundationServer, TeamProject, Wiql, WorkItemQuery**|  
 |Work item types|[All WITD elements](../all-witd-xml-elements-reference.md)|Top level elements only: **DESCRIPTION, FIELDS (Definition), FORM, GLOBALLISTS, WITD, WORKFLOW, WORKITEMTYPE**|  
   
-## Related notes
+## Related articles
 - [Support global teams](../localization-and-globalization-of-witd-child-elements.md)   
 - [All WITD elements](../all-witd-xml-elements-reference.md)   
 - [Customize your work tracking experience](../../customize-work.md) 

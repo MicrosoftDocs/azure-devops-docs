@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Run unit tests with your builds
 
@@ -67,8 +68,8 @@ solution - on the same build machine.
 
    When tests are run with this option, code coverage information is collected dynamically and assemblies
    do not need to be instrumented. By default, all assemblies are profiled for collecting coverage information. If you need to
-   [exclude specific assemblies and customize code coverage](https://docs.microsoft.com/en-us/visualstudio/test/customizing-code-coverage-analysis),
-   use a [.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+   [exclude specific assemblies and customize code coverage](https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis),
+   use a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
 
    [How do I collect and publish code coverage data if I'm not using the Visual Studio Test task?](reference-qa.md#code-coverage)
 

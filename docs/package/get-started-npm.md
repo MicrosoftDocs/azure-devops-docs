@@ -8,9 +8,10 @@ ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: douge
 ms.author: amullans
 ms.date: 02/27/2018
+monikerRange: '>= tfs-2017'
 ---
 
-[//]: # (monikerRange: '>= tfs-2017') 
+ 
 
 # Quickstart: Use npm to store JavaScript packages in VSTS or TFS
 
@@ -31,7 +32,7 @@ Package Management is an extension that must be installed from the Marketplace.
 
 1. Select your account into which the Package Management extension should be installed
 
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren’t sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren't sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
 1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
 
@@ -43,7 +44,7 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
-   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you’ve been assigned the “Visual Studio Enterprise” access level.
+   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 ## Step 2: Create a feed
 
@@ -68,7 +69,7 @@ All Package Management feeds require authentication, so you'll need to store cre
 
 VSTS recommends using two **_.npmrc_** files:
 
-1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project’s **_package.json_**.  It should contain a “registry” line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
+1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
     1. From your **Packages** page, click _Connect to Feed_
 
@@ -78,17 +79,17 @@ VSTS recommends using two **_.npmrc_** files:
 
         ![Connect to feed from VSTS Package Management](_shared/_img/connect-to-feed-npm-registry.png)
         
-2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project’s **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
+2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
 This enables you to share project's **_.npmrc_** with the whole team while keeping your credentials secure.
 
 ### Set up authentication on your dev box
-At this point you should have a project specific **_.npmrc_** containing only your Feed’s registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project’s **_package.json_**.
+At this point you should have a project specific **_.npmrc_** containing only your Feed's registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project's **_package.json_**.
 
-> **IMPORTANT:** There can only be a single “registry=” line in your **_.npmrc_**.  Multiple registries are possible with [scopes](/npm/scopes.md) and our new upstream feature (discussed here).
+> **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [scopes](/npm/scopes.md) and our new upstream feature (discussed here).
 
 #### Windows
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project’s **_package.json_**.
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
 
 ```json
 "scripts": {
@@ -183,7 +184,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 ## Step 4: Use packages from npmjs.com
 
-In addition to packages you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Step 2](#step-2-create-a-feed)), you should be able to use packages from an upstream source. To try it out, just run an `npm install` command (e.g. `npm install lodash`) in a shell opened to your project’s folder. Learn more about upstream sources on the [upstream sources concepts page](/concepts/upstream-sources.md).
+In addition to packages you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Step 2](#step-2-create-a-feed)), you should be able to use packages from an upstream source. To try it out, just run an `npm install` command (e.g. `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](/concepts/upstream-sources.md).
 
 You can choose to enable or disable upstream sources in the _Settings_ -> _Upstream sources_ tab:
 

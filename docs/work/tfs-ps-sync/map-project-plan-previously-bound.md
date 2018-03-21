@@ -238,6 +238,6 @@ ms.date: 01/12/2017
   
 7.  Save and publish your project plan to Project Server.  
   
-## Related notes  
+## Related articles  
  [Operational differences in managing projects using TFS and Project](operational-differences.md)   
  [Synchronization process overview](synchronization-process-overview.md)

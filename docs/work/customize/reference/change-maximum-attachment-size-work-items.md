@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 <p><b>TFS 2017 | TFS 2015 </b></p>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -37,7 +37,7 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
   
-## Related notes
+## Related articles
   
 - [Requirements and compatibility, Supported web browsers](../../../tfs-server/requirements.md#supported-browsers)
 

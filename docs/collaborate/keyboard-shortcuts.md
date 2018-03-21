@@ -214,7 +214,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 
 
 
-## Related notes 
+## Related articles 
 
 - [Keyboard shortcuts for Microsoft Test Manager](https://msdn.microsoft.com/library/ff458183.aspx)  
 - [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  

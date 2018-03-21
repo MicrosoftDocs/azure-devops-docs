@@ -8,8 +8,9 @@ toc: hide
 ms.manager: douge
 ms.author: douge
 ms.date: 12/1/2016
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
-[//]: # (monikerRange: '>= tfs-2013 <= tfs-2017')
+
 
 # Git permissions prior to TFS 2017 Update 1
 

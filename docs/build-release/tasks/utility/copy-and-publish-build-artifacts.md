@@ -7,8 +7,9 @@ ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
 ms.manager: douge
 ms.author: alewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Utility: Copy and Publish Build Artifacts
 
@@ -86,7 +87,9 @@ You can avoid these issues by instead using the [Copy Files step](copy-files.md)
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 
 <!-- ENDSECTION -->

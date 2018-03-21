@@ -6,9 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid:
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/20/2018
+ms.date: 03/20/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
 
 # Assign access levels and extensions to users by group membership
 
@@ -18,6 +18,9 @@ VSTS includes group-based licensing for Azure AD groups and VSTS groups.
 You can assign an access level or extensions to a group, and VSTS will ensure that those resources are assigned to all members of the group.
 When those users leave the group, those licenses are freed up and returned to your pool.
 This eliminates the need for automating license management on your own to reflect changes in your organizational structure on a per-user basis.
+
+>[!Update 3/20/2018]
+>If you don't see this new feature enabled in your VSTS account, please allow for up to three weeks as it is currently being rolled out.
 
 ## Assign required licenses
 
@@ -35,7 +38,7 @@ This eliminates the need for automating license management on your own to reflec
 
     ![choose-add-to-add-group-rule](_img/manage-group-licensing/adding-group-rule.png)
 
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn’t be completed (for example, because your VSTS account didn’t have enough licenses purchased), choose **View status** to view details.
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your VSTS account didn't have enough licenses purchased), choose **View status** to view details.
 
 ## Resolve assignment errors
 

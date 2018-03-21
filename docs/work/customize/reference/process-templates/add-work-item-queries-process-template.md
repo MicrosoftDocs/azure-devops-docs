@@ -107,6 +107,6 @@ By adding work item queries to your process template, you can define the initial
 <br/><code>&lt;QUERIES&gt; <br/>       . . . <br/>&lt;/QUERIES&gt; </code> 
 
 
-## Related notes
+## Related articles
 -  [Use the query editor to list and manage queries](../../../track/using-queries.md)     
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

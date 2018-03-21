@@ -14,7 +14,7 @@ ms.date: 02/26/2018
 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
 
 When the Configure Features wizard can't update your team project, it's because your team project was created from a process template other than those TFS provides, or you've customized your team project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing team projects: 

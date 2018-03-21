@@ -63,7 +63,7 @@ As shown, most users prefer the email feature. Option (A) is more popular with t
 
 As outlined in [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/) we considered a number of FF frameworks and solutions. We chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
-- It’s a software as a service (SaaS) solution.
+- It's a software as a service (SaaS) solution.
 	- No custom solution to maintain.
 	- No upgrades - we're always using the latest and greatest.
 	- No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on.
@@ -103,7 +103,7 @@ The three core scenarios we're using are:
 
 ## Managing features with feature flags in our engineering process
 
-To protect the flags from malicious users, we need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, we chose Azure Functions to help us generate the hash, as shown. Read [Building VSTS Extensions with feature flags – Part 2](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/07/18/building-vsts-extensions-with-feature-flags-part-2/) for details.
+To protect the flags from malicious users, we need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, we chose Azure Functions to help us generate the hash, as shown. Read [Building VSTS Extensions with feature flags - Part 2](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/07/18/building-vsts-extensions-with-feature-flags-part-2/) for details.
 
 ![Use of Azure Functions](./_img/phase-features-with-ff/phase-features-with-ff-az-fx.png)
 

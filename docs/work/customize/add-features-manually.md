@@ -1,7 +1,7 @@
 ---
-title: Manually add features after an upgrade to TFS 
+title: Manually add features after an upgrade 
 titleSuffix: TFS
-description: Manually update an existing team project to access new features after upgrading an on-premises Team Foundation Server  
+description: Manually update an existing team project to access new features after upgrading Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
@@ -10,27 +10,27 @@ ms.author: kaelli
 ms.date: 12/15/2017  
 ---
 
-#Add updates to team projects manually  
+# Add updates to team projects manually  
 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 >
 >For an overview of customization options, see [Customize your work tracking experience](../customize/customize-work.md)
 
 You can update team projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. You should update team projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
 
->[!NOTE]   
+> [!NOTE]     
 >If you're upgrading a team project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md). If you have several team projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
 
 
-##Update a team project 
+## Update a team project 
 Prior to manually adding or editing a work tracking object, first [download the latest process template](#download-latest-pt). You'll use the definition files from the process template that most closely matches your existing team project. 
 
 Several features, such as Code Review and Feedback, simply require importing WITs from the process template that you download, and updating the Categories and ProcessConfiguration file. Other features, however, may require more extensive changes depending on the customizations you've made to your team project.  
 
->[!NOTE]  
+> [!NOTE]    
 >Follow the links for each step to detail procedures provide later in this topic. 
 
 
@@ -172,7 +172,7 @@ Portfolio Backlogs
 </li>
 <li>To verify, [add some features and epics](../backlogs/organize-backlog.md).</li>
 </ol>
-<blockquote style="font-size: 13px">**Note:** To add additional portfolio backlogs or further customize your portfolio backlogs, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</blockquote>
+<blockquote><b>Note:</b> To add additional portfolio backlogs or further customize your portfolio backlogs, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</blockquote>
 </td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ Bug Behavior
 
 <a id="download-latest-pt">   </a>  
 
-##Get the latest version of the most compatible process template  
+## Get the latest version of the most compatible process template  
 
 The quickest way to make many of these updates is to copy definition files from the latest process template and import them to your team project.   
 
@@ -315,7 +315,7 @@ Here's a checklist of WITs to import to support new features:
 
 <a id="edit-wit">   </a>
 
-##Edit a WIT  
+## Edit a WIT  
 Depending on the customizations that you've made and the features you want to enable, you may need to update one or more WIT definition files. If you haven't customized a WIT, simply import the latest version. Otherwise, you can copy XML syntax from the WIT files you've downloaded from the latest process template. 
 
 1.	Export the WITs that you have defined for the corresponding category.  
@@ -425,10 +425,10 @@ Depending on the customizations that you've made and the features you want to en
 
 <a id="update-categories">   </a>  
 
-##Update Categories  
+## Update Categories  
 
->[!TIP]  
->See also [Use categories to group work items](reference/use-categories-to-group-work-item-types.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).  
+> [!TIP]  
+> See also [Use categories to group work items](reference/use-categories-to-group-work-item-types.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).  
 
 1.	Export your categories file. 
 
@@ -458,13 +458,13 @@ Depending on the customizations that you've made and the features you want to en
  
 	```witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"```
 
-> [!NOTE]  
-> **Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md)  
+
+> **Additional resources:** [Use categories to group work items](reference/use-categories-to-group-work-item-types.md), [Import and export categories](reference/witadmin/witadmin-import-export-categories.md)
 
 <a id="update-processconfig">   </a>
 <a id="edit-processconfig">   </a>
 
-##Update ProcessConfiguration 
+## Update ProcessConfiguration 
 
 Agile planning tools and Portfolio Backlogs depend on the WITs, categories, and process configuration definitions that are made. These definitions are interdependent. Always add new WITs, update categories, and then update the ProcessConfiguration in that order.  
 
@@ -589,7 +589,7 @@ Add the ```Properties``` section.  For example: <br/>
 </li>
 </ol>
 
->[!TIP]  
+> [!TIP]  
 >See also [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md). 
 
 
@@ -633,13 +633,13 @@ Migrate existing test plans and suites to work item based test plans and suites.
 
 After a successful data migration, all test management data should be available for use. For more information about this utility, go here.
 
-##Review and verify access to new features
+## Review and verify access to new features
 After you update your team project manually, you have access to the latest features. However, you still might want to make some additional configurations or customizations to support your work tracking needs. 
 
 See [Additional configuration options](additional-configuration-options.md) for information on how to verify or activate each feature. 
 
 
-##Related notes 
+## Related articles 
 You can learn more about the objects used to track work and support Agile tools from these topics:  
 
 - [Choose a process](../work-items/guidance/choose-process.md) 

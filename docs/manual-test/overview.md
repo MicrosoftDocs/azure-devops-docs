@@ -8,8 +8,9 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/18/2018
+monikerRange: ">= tfs-2015"
 ---
-[//]: # (monikerRange: ">= tfs-2015")
+
 
 # Exploratory and manual testing scenarios and capabilities
  

@@ -69,7 +69,7 @@ A data validation error occurs when a change in the work item list or project pl
   
     -   If a message appears that indicates error checking has completed, click **OK** to close both this message and the **Error Checking** dialog box.  
   
-## Related notes
+## Related articles
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Work in Excel and Project](track-work-vsts-tfs.md) 

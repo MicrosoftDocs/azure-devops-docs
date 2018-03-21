@@ -14,8 +14,9 @@ ms.devlang: dotnetcore
 ms.date: 06/24/2017
 ms.author: alewis
 ms.custom: mvc
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
-[//]: # (monikerRange: '>= tfs-2015 <= tfs-2018 || vsts')
+
 
 # Implement a CI/CD process to build and deploy your ASP.NET Core app to Azure
 

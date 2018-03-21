@@ -34,7 +34,7 @@ Click **Connect** in the above dialog. The VSTS Symbol Server is now remembered 
 If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default "Enable Just My Code" setting in Options, Visual Studio will not automatically fetch symbols for the optimized module. If this is the case, the Modules window will have a warning message.
 
 To debug the module, you can either:
-- Open the Modules window, right-click the module, and choose “Load Symbols” (recommended)
+- Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
 - In Options > Debugging > General, uncheck "Enable Just My Code"
 
 ## Source Link support

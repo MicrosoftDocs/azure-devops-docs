@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: sdanie
 ms.date: 03/14/2018
 layout: LandingPage
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Branch policies
 

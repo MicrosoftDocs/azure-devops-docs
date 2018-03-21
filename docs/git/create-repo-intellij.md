@@ -1,4 +1,4 @@
-﻿---
+---
 title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
 description: Intro to the IntelliJ plugin available for VSTS.
 ms.assetid:
@@ -8,8 +8,9 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
 ms.date: 09/08/2017
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # VSTS Plugin for IntelliJ IDEA and Android Studio
 

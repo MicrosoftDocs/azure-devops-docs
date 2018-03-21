@@ -7,8 +7,9 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: douge
 ms.author: alewis
 ms.date: 03/22/2017
+monikerRange: ">= tfs-2017"
 ---
-[//]: # (monikerRange: ">= tfs-2017")
+
 
 # Specify conditions for running a task
 

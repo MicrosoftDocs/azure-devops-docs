@@ -7,8 +7,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/19/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Test: Cloud-based Web Performance Test
 
@@ -46,7 +47,7 @@ The build agent must have the following capabilities:
 | **Fail test if Avg. Response Time (ms) exceeds** | Specify a threshold for the average response time in milliseconds. If the observed response time during the load test exceeds this threshold, the task will fail. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ## YAML snippet
 
@@ -65,7 +66,7 @@ The build agent must have the following capabilities:
 #   avgResponseTimeThreshold: 0
 ```
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## More Information
 
@@ -80,7 +81,9 @@ The build agent must have the following capabilities:
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

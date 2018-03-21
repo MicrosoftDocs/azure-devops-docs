@@ -8,9 +8,10 @@ ms.assetid: c34bdc56-c731-4211-b8f4-802973d864da
 ms.manager: douge
 ms.author: elbatk
 ms.date: 12/04/2017
+monikerRange: '>= tfs-2013'
 ---
 
-[//]: # (monikerRange: '>= tfs-2013') 
+ 
 
 # Approve extensions for a team project collection
 

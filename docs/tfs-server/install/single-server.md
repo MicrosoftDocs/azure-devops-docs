@@ -9,9 +9,10 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 11/28/2017
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
-[//]: # (monikerRange: '>= tfs-2015 < vsts')
+
 
 # Install TFS on a single server
 

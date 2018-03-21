@@ -8,8 +8,9 @@ ms.manager: douge
 ms.author: alewis
 ms.reviewer: dastahel
 ms.date: 01/16/2018
+monikerRange: '>= tfs-2017 < tfs-2018'
 ---
-[//]: # (monikerRange: '>= tfs-2017 < tfs-2018')
+
 
 # Sign your mobile app
 
@@ -222,6 +223,8 @@ You are now all set! Any build agent will now be able to securely build your app
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

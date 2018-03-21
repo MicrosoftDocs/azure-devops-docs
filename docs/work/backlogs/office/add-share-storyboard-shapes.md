@@ -16,7 +16,7 @@ ms.date: 06/22/2017
 
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. You may find storyboard shapes from the links provided in this blog post, [Storyboard shapes extensions being deprecated from Visual Studio Marketplace](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/16/storyboard-shapes-extensions-being-deprecated-from-visual-studio-marketplace/).  
 
 ## Find storyboard shapes and import them  
@@ -68,5 +68,5 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 
  In addition, you can author storyboard shapes with custom resize logic using the Storyboard Shapes Authoring Tool. To get this tool, download [Visual Studio Team Foundation Server Power Tools](http://go.microsoft.com/fwlink/?LinkId=248625).  
 -->  
-## Related notes  
+## Related articles  
 - [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).

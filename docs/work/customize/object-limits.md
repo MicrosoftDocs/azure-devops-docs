@@ -37,7 +37,7 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 
 For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](import-process/customize-process.md).
 
->[!NOTE]  
+> [!NOTE]    
 >For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs. 
  
 ## Work items
@@ -47,7 +47,7 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 - You can't add more than 100 attachments to a work item.
 - You can't add an attachment size larger than 60MB to a work item.
 
-## Related notes
+## Related articles
 
 - [Customize a process when using Hosted XML](import-process/customize-process.md)
 - [Create an Inheritance process](process/manage-process.md)

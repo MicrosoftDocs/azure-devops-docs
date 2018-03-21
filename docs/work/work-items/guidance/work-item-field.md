@@ -82,7 +82,7 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 
 
 
-## Related notes
+## Related articles
 
 - [Create managed queries](../../track/example-queries.md)
 - [Define a query](../../track/using-queries.md) 

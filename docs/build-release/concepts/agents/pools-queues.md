@@ -7,8 +7,9 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Agent pools and queues
 
@@ -20,15 +21,15 @@ An **agent queue** provides access to an agent pool. When you create a build or 
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 #### VSTS and TFS 2017 and newer
 
 ![TFS 2017 and newer build system architecture](_img/build-system-architecture.png)
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 #### TFS 2015
 
@@ -44,7 +45,7 @@ You create and manage your queues from the Agent queues tab.
 
 [!INCLUDE [agent-pools](_shared/agent-queues-tab.md)]
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Default agent pools
 
@@ -52,7 +53,7 @@ We provide the following agent pools by default:
 
 * **Default** pool: Use it to register [private agents](agents.md) that you've set up.
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 * **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on hosted agents, see [Hosted agents](hosted.md).
 
@@ -68,7 +69,7 @@ We provide the following agent pools by default:
 
 Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
@@ -86,7 +87,7 @@ Here are some typical situations when you might want to create agent pools and q
 
 Understanding how security works for agent pools and queues helps you control sharing and use of agents.
 
-[//]: # (::: moniker range=">= tfs-2017")
+::: moniker range=">= tfs-2017"
 
 ### VSTS and TFS 2017 and newer
 
@@ -110,9 +111,9 @@ Roles are also defined on each agent queue, and memberships in these roles gover
 
 The **All Queues** node in the Agent Queues tab is used to control the security of _all_ agent queues in a team project. Role memberships for individual agent queues are automatically inherited from those of the 'All Queues' node. By default, the following groups are added to the Administrator role of 'All Queues': Build Administrators, Release Administrators, Project Administrators.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="tfs-2015")
+::: moniker range="tfs-2015"
 
 <h3 id="security-tfs2015">TFS 2015</h3>
 
@@ -124,7 +125,7 @@ Add people to the account-level Agent Pool Administrators group to grant them pe
 
 Users in the **Agent Pool Service Accounts** group have permission to listen to the message queue for the specific pool to receive work.  In most cases you should not have to manage members of this group. The agent registration process takes care of it for you. The service account you specify for the agent (commonly Network Service) is automatically added when you register the agent.
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
 ## Q&A
 
@@ -132,15 +133,15 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 On the Create Queue dialog box, you can't use an existing pool if it is already referenced by another queue. Each pool can be referenced by only one queue within a given team project collection.
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ### I can't select the Hosted queue and I can't queue my build. How do I fix this?
 
 Ask the owner of your VSTS account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
 
-[//]: # (::: moniker-end)
+::: moniker-end
 
-[//]: # (::: moniker range="vsts")
+::: moniker range="vsts"
 
 ### I need more hosted build resources. What can I do?
 
@@ -149,4 +150,4 @@ A: The hosted pool provides all VSTS accounts with a single hosted build agent a
 * [Deploy your own on-premises build agents](agents.md).
 * [Buy additional hosted pipelines](../../../billing/buy-more-build-vs.md#buy-build-release).
 
-[//]: # (::: moniker-end)
+::: moniker-end
