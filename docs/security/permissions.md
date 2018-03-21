@@ -140,6 +140,11 @@ You can't remove or delete the default server level groups.
 				and not user accounts or groupsthat contain user accounts.
 				By default, this group is a member of <strong>Team Foundation Administrators</strong>.
 			</p>
+			<p>
+				If you need to add an account to this group after you install TFS, you can do so using
+				the TFSSecurity.exe utility in the **Tools** subfolder of your TFS installation directory.
+				The command to do this is `TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername`
+			</p>
 		</td>
 	</tr>
 	<tr>
