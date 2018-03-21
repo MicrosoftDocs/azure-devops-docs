@@ -69,7 +69,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
 1. In the right panel, search for `java`, select **Maven**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
@@ -89,7 +89,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
  ---
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time a change is committed to your repository.
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time changes are pushed to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 
