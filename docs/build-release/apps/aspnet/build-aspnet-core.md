@@ -196,7 +196,7 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes. Proceed to finish the CI process definition.
 
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
 
