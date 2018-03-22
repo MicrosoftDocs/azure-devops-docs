@@ -117,11 +117,11 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
 | Environment | Required. Select **Azure Cloud**, [Azure Stack](azure-stack.md), or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Environment URL | Required for [Azure Stack](azure-stack.md). The management URL of your on-premises installation. |
-| Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-existingsp). |
-| Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-existingsp). |
-| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-existingsp). |
-| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-existingsp). |
-| Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
+| Subscription ID | Required only if you want to use an existing service principal. The GUID-like identifier for your Azure subscription (not the subscription name). [More information](#sep-azure-rm-createsp). |
+| Subscription Name | Required only if you want to use an existing service principal. The name of your Microsoft Azure subscription (account). [More information](#sep-azure-rm-createsp). |
+| Service Principal ID | Required only if you want to use an existing service principal. The Azure Active Directory client application ID for the account. [More information](#sep-azure-rm-createsp). |
+| Service Principal Key | Required only if you want to use an existing service principal. The Azure Active Directory client authentication key for the account. [More information](#sep-azure-rm-createsp). |
+| Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-createsp). |
 <p />
 
 See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
@@ -151,6 +151,7 @@ want to use, you must sign out of VSTS or TFS and sign in again
 using the appropriate account credentials. See also
 [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
 
+<a name="sep-azure-rm-createsp"></a>
 **To use an existing service principal instead of creating a new one:**
 
 1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
