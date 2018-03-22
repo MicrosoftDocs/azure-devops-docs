@@ -10,8 +10,6 @@ ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
 # Move your packages to the cloud
 
 **VSTS** | **TFS 2018** | **TFS 2017**

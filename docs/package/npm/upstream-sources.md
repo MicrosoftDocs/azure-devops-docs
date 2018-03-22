@@ -10,13 +10,9 @@ ms.date: 11/13/2017
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
 # Use packages from npmjs.com
 
 **VSTS** | **TFS 2018** | **TFS 2017**
-
-[!INCLUDE [](../_shared/availability-npm.md)]
 
 The npm client is designed to work with a single primary *registry* (what Package Management calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
 
