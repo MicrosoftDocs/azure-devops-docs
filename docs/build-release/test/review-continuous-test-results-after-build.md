@@ -42,9 +42,13 @@ review your test results to start analyzing any problems that you found.
 <a name="organizetests"></a>  
 ## Organize your test results
 
-* Organize your test results using the group and outcome lists.
+1. Choose the **Show filter bar** icon.
 
-  ![Organize your test results](_img/organize-test-results.png)
+   ![Show the filters bar](_img/review-continuous-test-results-after-build/show-filters.png)
+
+1. Organize your test results using the group and outcome lists.
+
+   ![Organize your test results](_img/organize-test-results.png)
 
 <a name="debugtests"></a>  
 ## Debug failed tests
