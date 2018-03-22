@@ -10,8 +10,6 @@ ms.date: 09/01/2017
 monikerRange: '>= tfs-2017 < vsts'
 ---
 
- 
-
 # Use NuGet or dotnet with Team Foundation Server feeds
 
 **TFS 2018** | **TFS 2017**

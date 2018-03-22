@@ -10,8 +10,6 @@ ms.date: 09/01/2017
 monikerRange: 'vsts'
 ---
 
- 
-
 # Use dotnet with VSTS feeds
 
 **VSTS**
