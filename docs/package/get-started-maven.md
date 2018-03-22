@@ -12,8 +12,6 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
- 
-
 # Get started with Maven Package Management in VSTS and TFS
 
 **VSTS** | **TFS 2018**
@@ -23,8 +21,6 @@ monikerRange: '>= tfs-2018'
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install it.
-
-[!INCLUDE [](_shared/availability-maven.md)]
 
 ### Prerequisites
 
