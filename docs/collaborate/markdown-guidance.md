@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
 ms.date: 03/06/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -228,6 +229,8 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
+::: moniker range=">= tfs-2018"
+
 <a id="link-work-items">  </a>
 ### Link to work items from a Wiki page
  
@@ -235,6 +238,8 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 >**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
 
 Simply enter the pound sign (`#`) and enter a work item ID. 
+
+::: moniker end
 
 <a id="relative-links">  </a>
 ### Source control relative links
@@ -587,6 +592,7 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p> 
 
+::: moniker range="vsts"
 
 <a id="mathematical-notation">  </a>
 ## Mathematical notation and characters 
@@ -647,6 +653,7 @@ $$
 > [!div class="mx-imgBorder"]
 ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
+::: moniker end
 
 ## Related articles  
 
