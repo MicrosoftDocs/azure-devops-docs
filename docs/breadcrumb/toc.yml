@@ -1,16 +1,10 @@
-- name: VSTS and TFS
+- name: VSTS and TFS 
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items:
   - name: New User Guide
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Navigation
-    tocHref: /vsts/
-    topicHref: /vsts/navigation/index
-  - name: Public Projects
-    tocHref: /vsts/
-    topicHref: /vsts/public/index
   - name: Code
     tocHref: /vsts/git/
     topicHref: /vsts/index#pivot=services&panel=code
@@ -18,6 +12,9 @@
     - name: Git
       tocHref: /vsts/git/
       topicHref: /vsts/git/index
+    - name: TFVC
+      tocHref: /vsts/tfvc/
+      topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
@@ -114,7 +111,7 @@
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
-    - name: "Project & Account Settings"
+    - name: "Scale & Configure Teams"
       tocHref: /vsts/settings/
       topicHref: /vsts/settings/index
     - name: Billing
