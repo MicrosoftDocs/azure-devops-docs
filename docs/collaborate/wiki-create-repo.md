@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 02/20/2018
+monikerRange: '>= tfs-2018'
 ---
 
 

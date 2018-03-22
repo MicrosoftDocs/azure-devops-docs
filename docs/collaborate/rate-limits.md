@@ -8,9 +8,10 @@ ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/07/2017
+monikerRange: 'vsts'
 ---
 
-<!--- Supports FWLINK: Â http://go.microsoft.com/fwlink/?LinkId=692096 Â Â -->   
+<!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 #Rate limits  
 
