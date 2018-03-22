@@ -1,7 +1,7 @@
 
 <a id="global-shortcuts"></a>
 
-You can use the following keyboard shortcuts from the web portal. 
+You can use the following keyboard shortcuts from the web portal.
 
 <table>
 <tbody valign="top">

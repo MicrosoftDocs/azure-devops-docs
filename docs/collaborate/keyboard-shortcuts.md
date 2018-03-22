@@ -7,6 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/18/2017
+monikerRange: '>= tfs-2013'
 ---
 
 
@@ -62,6 +63,8 @@ You can use these keyboard shortcuts when working in the web portal of VSTS or T
 </tbody>
 </table>
 
+::: moniker range=">= tfs-2015"
+
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and hub-specific shortcuts.   
@@ -69,14 +72,17 @@ Type **?** to access the Global and hub-specific shortcuts.
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and hub-specific shortcuts.   
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/global-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/global-shortcuts.md)]
 
-Hub-specific shortcuts only work when in a specific hub. For example, type **g c** to open the Code hub, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.  
-
+Hub-specific shortcuts only work when in a specific hub. For example, type **g c** to open the Code hub, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
 ## Code hub 
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/code-shortcuts.md)]
+
+::: moniker-end
+
+::: moniker range="vsts"
 
 ## Work hub, Work Items page 
 
@@ -84,11 +90,15 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ## Work item form shortcuts
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/wi-form-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/wi-form-shortcuts.md)]
+
+::: moniker-end
 
 ## Work hub, Backlog page 
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
+
+::: moniker range=">= tfs-2015"
 
 ## Work hub, Kanban board page 
 
@@ -98,17 +108,31 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-shortcuts.md)]
 
-# Work hub, plans page 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+# Work hub, plans page
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 
 ## Test hub, Test Plans, Parameters, and Runs pages 
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/test-shortcuts.md)]
 
+::: moniker-end
+
+::: moniker range="vsts"
+
 ## Wiki hub
 
 [!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
+
+::: moniker-end
  
 ## Team Explorer navigational shortcuts
 

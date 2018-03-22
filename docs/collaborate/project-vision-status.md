@@ -9,6 +9,7 @@ ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/29/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Share your project vision, view project activity   

@@ -8,6 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
 ms.date: 10/26/2017  
+monikerRange: '>= tfs-2017'
 ---
 
 
