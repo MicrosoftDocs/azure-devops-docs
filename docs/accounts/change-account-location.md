@@ -23,13 +23,13 @@ where VSTS is available.
 
 **Available VSTS Regions**
 
-Central US
-Brazil South
-Australia East
-India South
-West Europe
-East Asia
-Canada Central
+* Central US
+* Brazil South
+* Australia East
+* India South
+* West Europe
+* East Asia 
+* Canada Central
 
 To find the region where your account is located:
 
