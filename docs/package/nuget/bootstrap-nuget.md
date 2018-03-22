@@ -10,8 +10,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
 # Set up a multi-developer NuGet environment
 
 **VSTS** | **TFS 2018** | **TFS 2017**
