@@ -128,6 +128,8 @@
     href: faq-delete-restore-vsts-account.md
   - name: Set up Visual Studio
     href: faq-set-up-vs.md
+  - name: Manage group-based licensing
+    href: faq-manage-group-based-licensing.md
 - name: Reference
   items:
   - name: "Permissions and access (Security)"
