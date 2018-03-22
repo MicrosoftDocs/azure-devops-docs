@@ -2,6 +2,11 @@
     "redirections":
 	[
         {
+            "source_path": "docs/package/nuget/remove.md",
+            "redirect_url": "/vsts/package/unlist-delete",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/api/xamlbuild/requests.md",
             "redirect_url": "/rest/api/vsts/build",
             "redirect_document_id": false

@@ -15,8 +15,6 @@ monikerRange: '>= tfs-2017'
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
-[!INCLUDE [](../../package/_shared/availability-npm.md)]
-
 This guide covers the basics of using Team Build to work with npm packages in Package Management feeds.
 
 This walkthrough assumes that you've already:
