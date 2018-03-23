@@ -139,8 +139,7 @@ git-svn makes all of Subversions tags into very-short branches in Git of the for
 
 ```
 cd c:\new-bare.git
-git for-each-ref --format='%(refname)' refs/heads/tags | % { $.Replace('refs/heads/tags/','') } | % { git tag $ "refs/heads/tags/$"; git branch -D "tags/$" }
-
+git for-each-ref --format='%(refname)' refs/heads/tags | % { $_.Replace('refs/heads/tags/','') } | % { git tag $_ "refs/heads/tags/$_"; git branch -D "tags/$_" }
 ```
 
 ## Advanced migrations
@@ -156,8 +155,7 @@ While it's easy to create all SVN branches as a proper Git branches, we do recom
 If you still want to migrate existing branches, run the following PowerShell command:
 
 ```
-git for-each-ref --format='%(refname)' refs/remotes | % { $.Replace('refs/remotes/','') } | % { git branch "$" "refs/remotes/$"; git branch -r -d "$"; }
-
+git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remotes/','') } | % { git branch "$_" "refs/remotes/$_"; git branch -r -d "$_"; }
 ```
 > [!NOTE]
 >
