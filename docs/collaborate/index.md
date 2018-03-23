@@ -7,25 +7,21 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/18/2017
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2015'
 ---
 
 # READMEs & Wikis 
 
-**VSTS | TFS 2018 | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
 
->[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is available for VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
+::: moniker range=">=tfs-2015"
 
+> [!NOTE]  
+> **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). 
 
-<!--- There isn't really any how-to guidance about creating or working with README file, what we have is conceptual --> 
-
-<!---
-## Overview  
-[About READMEs & Wikis?](about-readme-wiki.md)
--->
+::: moniker-end
 
 ## 5-Minute Quickstarts  
 - [Share your project vision](project-vision-status.md)
@@ -36,11 +32,24 @@ Repository README files and team project Wikis are great ways to share informati
 - [Create a readme for your repo](../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
 
   
+::: moniker range="vsts || >= tfs-2018"
+
 ## How-to Guides
 - [Create a wiki for your team project](wiki-create-repo.md) 
 - [Add & edit wiki pages](add-edit-wiki.md)
 - [View wiki history and revert](wiki-view-history.md)
+- [Search wiki content](search-wiki.md)
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+  
+## How-to Guides
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+
+::: moniker-end
+
 
 ## Reference 
 

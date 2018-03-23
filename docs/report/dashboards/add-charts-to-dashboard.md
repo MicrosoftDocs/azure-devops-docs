@@ -12,16 +12,17 @@ ms.date: 03/20/2018
 
 # Add charts to a dashboard
 
-[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**
+
 
 ::: moniker range="tfs-2013"
+
 > [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013 or TFS 2015, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
+> Adding charts to a dashboard is not a supported feature in TFS 2013 or TFS 2015, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://www.visualstudio.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).
+>   
 ::: moniker-end
 
-<!---
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3  </b>  
--->
+
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="add-charts"></a>
