@@ -7,14 +7,18 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
-ms.date: 03/22/2018
+ms.date: 01/22/2018
 ---
 
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
 **VSTS | TFS 2018 | TFS 2017.1**
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+> [!NOTE]   
+> Setting dashboard permissions isn't a supported feature from TFS 2017 and earlier versions. 
+::: moniker-end
 
 <!---
 
@@ -24,12 +28,18 @@ ms.date: 03/22/2018
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
-As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams. 
+As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams.  
 
-To learn more about adding and viewing dashboards, see [Add and manage dashboards](dashboards.md).   
+From the **Permissions** tab you can grant or restrict permissions to your team members to edit and manage your team dashboards. The default setting provides all team members permissions to edit and manage dashboards.  
 
 > [!TIP]    
-> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default team project team. For details, see [Add users to a team project or specific team](../../security/add-users-team-project.md). 
+> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default team project team.   
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2018"
+
+> [!div class="mx-imgBorder"]
+![Manage dashboards - permissions dialog, VSTS and TFS 2018](_img/dashboards-permissions.png) 
 
 ::: moniker-end
 
@@ -37,72 +47,15 @@ To learn more about adding and viewing dashboards, see [Add and manage dashboard
 
 Requires TFS 2017.1 or later version. 
 
-::: moniker-end
-
-# [New Dashboards Experience](#tab/new-query-exp) 
-
-::: moniker range="vsts"
-
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md). 
-
-1. To change the permissions for a dashboard, open the dashboard and then click the ![gear icon](_img/icons/gear-icon.png) gear icon for the dashboard. 
-
-	For example, here we open the Settings dialog for the Fabrikam Fiber team's Overview dashboard. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the dashboards settings dialog](_img/dashboards/open-dashboard-settings-dialog.png) 
-	   
-2. Click the **Manage permissions for this dashboard** link.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the dashboards settings dialog](_img/dashboards/dashboard-settings-dialog.png)   
-
-3. You can change the permission settings shown, or add a user or group and set permissions for them. For an overview of how to do add users or groups, see [Add users to a team project or specific team](../../security/add-users-team-project.md).
- 
-	Here we change the **Delete dashboard** permission to Allow.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the dashboards settings dialog](_img/dashboards/set-permissions-dialog.png)  
-
-	Click **Save Changes**. 
-
-4. Click **Save** to save your changes and dismiss the Settings dialog. 
+> [!div class="mx-imgBorder"]
+![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-The New Dashboard experience is only available from VSTS at this time. 
-::: moniker-end
-
-
-# [Old Dashboards Experience](#tab/old-query-exp)
-
-1. To change the permissions for a dashboard, open the dashboard and then click the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
-
-	For example, here we open the Manage Dashboards dialog for the Fabrikam Fiber Web team's Test dashboard. 
-
-	![Open Manage dashboards dialog](_img/dashboards-configure-ts.png) 
-
-2. Click the **Permissions** tab and check those checkboxes to grant or restrict permissions to your team members to edit and manage your team dashboards. The default settings, as shown in the illustration, provide all team members permissions to edit and manage dashboards.  
-
-	::: moniker range="vsts || >= tfs-2018"  
-	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, VSTS and TFS 2018](_img/dashboards-permissions.png)   
-	::: moniker-end  
-	::: moniker range="tfs-2017"  
-	Requires TFS 2017.1 or later version.   
-
-	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
-	::: moniker-end
-
-3. Click **Save** to save your changes and dismiss the Settings dialog. 
-
----
-
-
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Related notes
 
 - [Add users to a team project or specific team](../../security/add-users-team-project.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md)
  
+::: moniker-end
