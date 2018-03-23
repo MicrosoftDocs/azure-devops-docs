@@ -26,6 +26,8 @@
     items:
     - name: Set up billing
       href: set-up-billing-for-your-account-vs.md
+    - name: VSTS billing FAQ
+      href: vsts-billing-faq.md
     - name: Add backup billing managers
       href: add-backup-billing-managers.md
     - name: Change billing to a different Azure subscription
@@ -53,21 +55,13 @@
     - name: "CSPs: Buy VSTS for your customers"
       href: csp/buy-csp-vsts.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
-      href: csp/buy-manage-vs-subs.md
+      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
     - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: Billing set up
-    href: faq-billing-setup.md
-  - name: Pay for more Basic users
-    href: faq-pay-for-basic-users.md
-  - name: Try extensions
+  - name: VSTS trials FAQ
     href: faq-extension-trials.md
-  - name: Azure billing
-    href: faq-azure-billing.md
-  - name: Identitites for Visual Studio subscribers
-    href: faq-link-msdn-subscription-org-account.md
 - name: Reference
   items:
   - name: VSTS Permissions 
@@ -82,17 +76,3 @@
     href: extensions.md
   - name: Manage Extensions
     href: ../marketplace/index.md
-  - name: Service hooks
-    href: ../service-hooks/index.md
-- name: Buying subscriptions
-  items:
-  - name: Buy Xamarin University
-    href: xamarin-univ.md
-  - name: Visual Studio cloud subscriptions
-    items:
-    - name: Buy Visual Studio cloud subscriptions
-      href: vs-subscriptions/buy-vs-subscriptions.md
-    - name: Assign and manage Visual Studio cloud subscriptions
-      href: vs-subscriptions/manage-vs-subscriptions.md
-    - name: Troubleshoot Visual Studio subscriptions
-      href: faq-vs-subscriptions.md

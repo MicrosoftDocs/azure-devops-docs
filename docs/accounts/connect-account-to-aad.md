@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/15/2018
+ms.date: 03/23/2018
 monikerRange: 'vsts'
 ---
-
 
 # Connect VSTS account to Azure Active Directory (Azure AD)
 
@@ -51,7 +50,7 @@ One of the following scenarios likely applies to your situation. For example, "y
 |jamal@outlook.com   |   replacing with different tenant ID jamal@fabrikam.com      |  [Create a new support ticket](https://www.visualstudio.com/team-services/support)        |  
 
 >[!Note]
-> When you're creating your new support ticket, use the >following:
+> When you're creating your new support ticket, use the following:
 >Problem type: Configuring Team Services, Category: Configuring with Azure Active Directory]
 
 ## Overview of the connection process
@@ -162,13 +161,14 @@ When you inform your users of the completed change, include the following tasks 
 
     a. On your VSTS page, in the upper right, choose your profile image and choose **Security**.
 
-    b. On the Personal access tokens page, choose **Add**. Enter a description. Scroll to the bottom of the page and choose **Create token**.
+    b. On the SSH public keys page, choose **Add**. Enter a description. Scroll to the bottom of the page and choose **Create token**.
 
     c. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 
-3. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure AD identity or simply [close your Microsoft account](#optional-close-the-temporary-msa-if-you-created-one) if it's no longer needed.
+3. If you use SSH tokens, [add new keys for the Azure AD user](https://docs.microsoft.com/en-us/vsts/git/use-ssh-keys-to-authenticate?view=vsts).
+4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure AD identity or simply [close your Microsoft account](https://docs.microsoft.com/en-us/vsts/accounts/connect-account-to-aad?view=vsts#optional-close-the-temporary-msa-if-you-created-one) if it's no longer needed.
 
-4. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
+5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
 
 ## (Optional) Close the temporary MSA (if you created one)
 
@@ -181,29 +181,19 @@ When you inform your users of the completed change, include the following tasks 
 
 ## FAQ
 
-#### Q: Will my users still retain their existing Visual Studio subscriptions?
+### Q: Will my users still retain their existing Visual Studio subscriptions?
 
 A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user's benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity's email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
 
-#### Q: What if my SSH token is no longer valid?
-
-A: Complete the following steps:
-
-   1. On your VSTS page, in the upper right, choose your **profile image** and then choose **Security**.
-   2. On the Personal access tokens page, choose **Add**.
-   3. Enter a description and go to the bottom of the page and choose **Create token**.
-   4. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
-   5. Work with CSS to help with the migration of your existing SSH tokens by [creating a new support ticket](https://www.visualstudio.com/team-services/support).
-
-#### Q: What if sign-in is required when using the identity picker?
+### Q: What if sign-in is required when using the identity picker?
 
 A: Clear the browser cache and delete any cookies for the session.
 
-#### Q What if my work items are indicating that the users aren't valid?
+### Q What if my work items are indicating that the users aren't valid?
 
 A: Clear the browser cache and delete any cookies for the session.
 
-#### Q Why can't I make purchases after connecting to a directory?
+### Q Why can't I make purchases after connecting to a directory?
 
 A: By changing the directory associated with your Azure subscription to the directory your VSTS account uses, you'll be able to make purchases again. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory).
 

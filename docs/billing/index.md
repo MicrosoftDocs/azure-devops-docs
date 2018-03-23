@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/06/2018
+ms.date: 03/22/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -48,5 +48,5 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## Other Resources
 
-* [How to buy Visual Studio cloud subscriptions](vs-subscriptions/buy-vs-subscriptions.md)
+* [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 * [How to buy Xamarin University subscriptions](xamarin-univ.md)
