@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/12/2018
-monikerRange: '>= tfs-2015'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: '>= tfs-2015')
 
 # Change the number of paid users for a VSTS extension
 
@@ -39,4 +38,12 @@ Change the number of paid users for this extension.
 
 	<img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
 
+## Related information
 
+- [assign features or extensions to users](../marketplace/assign-paid-extensions.md)
+- [Set up billing](set-up-billing-for-your-account-vs.md)
+- [Add backup billing managers](add-backup-billing-managers.md)
+- [VSTS billing FAQ] (vsts-billing-faq.md)
+- [Change the Azure subscription for billing](change-azure-subscription.md)
+- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
