@@ -253,7 +253,7 @@ If your deployment includes SharePoint Products or SQL Server Reporting Services
 <li>
 Must not contain any Unicode control characters or surrogate characters.</li>
 <li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]</li>
-<li>Must not contain an ellipsis (â€¦) or a double period (..)</li>
+<li>Must not contain an ellipsis ( €¦) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
 </ul>
@@ -345,8 +345,8 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
 
 > [!NOTE]   
-> <b>Terminology note:Â </b>Both "process" and "process template" refer to an interdependent set of files used to create a team project. However, the features, rules, and behaviors associated with each differ slightly depending on whether you connect to VSTS or an on-premises TFS.
->   Â 
+> <b>Terminology note:  </b>Both "process" and "process template" refer to an interdependent set of files used to create a team project. However, the features, rules, and behaviors associated with each differ slightly depending on whether you connect to VSTS or an on-premises TFS.
+>     
 [Choose a process](../work/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
 
 Processes you define or customize must conform to the following restrictions.  
@@ -496,7 +496,7 @@ Must not contain any Unicode control characters or surrogate characters
 Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>
-Must not contain an ellipsis (â€¦) or a double period (..)
+Must not contain an ellipsis ( €¦) or a double period (..)
 </li>
 <li>
 Must not start with an underscore (&#95;)
