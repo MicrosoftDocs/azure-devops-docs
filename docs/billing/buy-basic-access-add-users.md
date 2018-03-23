@@ -7,10 +7,9 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
-monikerRange: 'vsts'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: 'vsts')
 
 # Pay for VSTS users (Basic)
 
@@ -30,6 +29,8 @@ Your team members--whether they're Visual Studio subscribers, or are among the 5
 version control, tools for Agile, Java, build, release management, and more. For a list of features included, see our 
 [feature comparison](https://www.visualstudio.com/team-services/compare-features/).
 
+[Pay for more VSTS users on your account](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+
 ## Prerequisites
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
@@ -42,9 +43,8 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 <a name="buy-access-vs-marketplace"></a>
 ## Increase the number of paid VSTS users on your account
 
-0.	As VSTS project collection administrator or account owner, 
-sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
-and choose **Buy**.
+0.	Sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
+and choose **Get**.
 
 	![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
 
@@ -52,12 +52,6 @@ and choose **Buy**.
 if you have multiple accounts.
 
 	![Select your VSTS account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-ts-account">
-	<p>To select your VSTS account here, you must have VSTS 
-	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
-	</div>
 
 0.	Confirm the Azure subscription, where your VSTS charges will be billed. 
 
@@ -67,15 +61,6 @@ if you have multiple accounts.
 	you can create a new one. 
 	
 	![Confirm or select your Azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png)
-
-	<p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
-	<div class="collapse" id="expando-why-no-azure-sub">
-	<p>To use an existing Azure subscription for billing, 
-	you'll need at least co-administrator permissions for that subscription. 
-	If you don't have permissions, 
-	have an Azure Account Administrator or Service Administrator 
-	[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
-	</div>
 
 0.	Enter the number of paid VSTS users. You will also see the number of free users included, which is separate.
 
@@ -99,5 +84,6 @@ if you have multiple accounts.
 - [Set up billing](set-up-billing-for-your-account-vs.md)
 - [Add backup billing managers](add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
+- [VSTS billing FAQ](vsts-billing-faq.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)

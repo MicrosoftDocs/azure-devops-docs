@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
-monikerRange: 'vsts'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: 'vsts')
 
 #  Set up billing for your VSTS account
 
@@ -19,7 +18,7 @@ During your first purchase for your VSTS account, we'll prompt you to select the
 and you are not required to use any other Azure services. 
  
 These are the paid services offered by Microsoft:
-* [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+* [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) (Basic)
 * [Microsoft-hosted CI/CD - hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 * [Self-hosted CI/CD - private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
@@ -41,7 +40,7 @@ you can set up billing from within the Azure portal.
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
 as VSTS account owner and as Azure subscription co-administrator or greater.
    
- [Browser problems in Azure?](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/)
+ [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
 0. Go to **More services** > **Developer tools** > **VSTS accounts**. 
 Select your VSTS account.
@@ -62,9 +61,9 @@ Select your VSTS account.
 
 ## Related information
 
-- [Billing overview](overview.md)
+- [VSTS billing overview](overview.md)
+- [VSTS billing FAQ](vsts-billing-faq.md)
 - [Add backup billing managers](add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)
-- [Troubleshooting](faq-billing-setup.md)
