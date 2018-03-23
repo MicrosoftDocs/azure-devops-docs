@@ -8,25 +8,27 @@
   items:
   - name: Share your project vision
     href: project-vision-status.md
-  - name: Add Markdown to a dashboard
+  - name: Add markdown to a dashboard
     href: ../report/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Create a readme for your repo
+  - name: Create a readme for a repo
     href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
 - name: How-to Guides
   items:
-  - name: Create a wiki for your team project
+  - name: Create a wiki for a team project
     href: wiki-create-repo.md
   - name: "Add & edit wiki pages"
     href: add-edit-wiki.md
   - name: View wiki history and revert
     href: wiki-view-history.md
+  - name: Search wiki content
+    href: search-wiki.md
   - name: Update wiki pages offline 
     href: wiki-update-offline.md
   - name: "Manage README & Wiki permissions (Security)"
     href: manage-readme-wiki-permissions.md
-  - name: Migrate pages from Wiki extension to a team project wiki
+  - name: Migrate Wiki extension pages  
     href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
@@ -37,7 +39,9 @@
   - name: Navigate in the web portal
     href: ../user-guide/work-web-portal.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
-    href: collaboration-tool-permissions.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
+    href: collaboration-tool-permissions.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json
+  - name: "REST API, Wikis"
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/wiki/wikis 
 - name: Resources 
   items:
   - name: Dashboards
