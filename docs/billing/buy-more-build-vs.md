@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/12/2018
-monikerRange: 'vsts'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: 'vsts')
 
 #  How to buy VSTS CI/CD
 
@@ -41,7 +40,7 @@ Typically you'll choose this option when:
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [VSTS project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner)
 0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -62,33 +61,17 @@ sign in to either:
 
   ![Select your VSTS account](_img/get-more-build-load-testing/select-team-services-account.png)
 
-  <p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
-  <div class="collapse" id="expando-why-no-ts-account">
-  <p>To select your VSTS account here, you must have have VSTS
-  [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
-  </div>
-
 0.  Confirm the Azure subscription that you'll use for billing (you'll only see this the first time you set up billing).
 
   If you have multiple Azure subscriptions,
   select the Azure subscription that you want to use.
   Or if you don't have an Azure subscription,
   create a new subscription now to use for billing.
-  [More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing)
+  [VSTS billing FAQ](vsts-billing-faq.md)
 
   ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
-  <p><a data-toggle="collapse" href="#expando-why-no-azure-sub">Don't see the Azure subscription that you expect? &#x25BC;</a></p>
-  <div class="collapse" id="expando-why-no-azure-sub">
-  <p>To use an existing Azure subscription for billing,
-  you'll need at least co-administrator permissions for that subscription.
-  If you don't have permissions,
-  have an Azure Account Administrator or Service Administrator
-  [add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
-  </div>
-
-0.  Select the number of concurrent jobs that you want to buy.
-Finish your purchase.
+0.  Select the number of concurrent jobs that you want to buy. Finish your purchase.
 
   ![Select number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
@@ -105,7 +88,7 @@ Finish your purchase.
   (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
 <a name="change-paid-pipelines"></a>
-## Change your CI/CD capacity
+## Process to change your paid CI/CD capacity
 
 When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
 
@@ -126,18 +109,14 @@ The hosted XAML build controller is no longer supported.
   > **Important:** If you have an account where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
   > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
   > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
-  > If you used the hosted XAML build controller, you may have been paying for build minutes, which is a model we no longer support.
-  > Please purchase concurrent pipelines. See [Buy pipelines for Build & Release](#buy-build-release).
-  > We will soon block the hosted pool from using the per-minute billing model.
-  > By making this switch, you can run longer builds (unlimited minutes within reason).
 
 ## Support
 
-Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
-or [VSTS Support](https://www.visualstudio.com/team-services/support).
+* [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
+* [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 ## Additional resources
-[Build & Release task-based services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-[VSTS: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-[TFS: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
-[Pricing for Build & Release pipelines](https://www.visualstudio.com/team-services/pricing)
+
+* [VSTS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+* [TFS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
+* [Pricing for VSTS CI/CD](https://www.visualstudio.com/team-services/pricing)
