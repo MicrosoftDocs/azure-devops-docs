@@ -51,7 +51,7 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
 
 **Q:  Is there support for TFVC repositories?**
 
-**A:** The plugin only supports Git repositories and not TFVC repositories. We are considering this feature but don't have plans to support TFVC yet. If you would like to see TFVC support in Android Studio, please vote on [this uservoice idea](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/6785457-tfs-plugin-for-android-studio). 
+**A:** The plugin supports both Git and TFVC. For more information on TFVC support, see the TFVC specific features listed [here](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
 
 **Q:  Is the source code for the plugin available?**
 
