@@ -4905,6 +4905,46 @@
         "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
         "redirect_url": "/vsts/accounts/connect-account-to-aad",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-link-msdn-subscription-org-account.md",
+        "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-azure-billing.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-billing-setup.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-pay-for-basic-users.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/buy-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/manage-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/csp/buy-manage-vs-subs.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-csp",
+        "redirect_document_id": false
        }
     ]
 }
