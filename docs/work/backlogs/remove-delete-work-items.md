@@ -17,6 +17,7 @@ ms.date: 03/20/2018
 ::: moniker range="vsts"
 # Move, change, or delete work items 
 
+**VSTS**
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
@@ -25,7 +26,7 @@ Often times you find that someone created a work item of the wrong work item typ
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 # Delete or restore work items 
 
-[!INCLUDE [temp](../../_shared/banner-vsts-tfs.md)]
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
