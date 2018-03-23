@@ -6,10 +6,9 @@ ms.technology: vs-devops-setup
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/13/2018
-monikerRange: 'vsts'
+ms.date: 3/22/2018
 ---
-
+[//]: # (monikerRange: 'vsts')
 
 #  How to buy cloud-based load testing in VSTS
 
@@ -29,7 +28,7 @@ If you need more than this amount, you must first:
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [VSTS project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner)
 0. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -39,12 +38,10 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 **Azure portal**
 0. [Sign in to the Azure portal](https://portal.azure.com/).
 If you experience browser problems with Azure,
-make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 0. Go to **More services** > **Developer tools** > **VSTS accounts** and select your VSTS account.
 
 ![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
-
-[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
 
 0. Select **cloud-based load testing**.
 
