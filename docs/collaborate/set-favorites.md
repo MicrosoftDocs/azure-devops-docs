@@ -90,7 +90,7 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 
 From your account hub, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
-<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />Â    
+<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />Â �   
 
 <a id="unfavorite">  </a>
 ## Unfavorite an object
