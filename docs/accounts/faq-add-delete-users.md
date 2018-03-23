@@ -54,62 +54,15 @@ but you don't have a valid and active Visual Studio subscription, you can only
 <a name="EligibleMSDNSubscriptions"></a>
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A:  These subscriptions include VSTS at no extra charge 
-([check here for the current list](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/)):
-
-*	Visual Studio Enterprise - monthly
-*	Visual Studio Enterprise - annual
-*	Visual Studio Enterprise with MSDN, 
-including subscriptions offered through BizSpark and Microsoft Partner Network (MPN)
-*	Visual Studio Professional - monthly
-*	Visual Studio Professional - annual
-*	Visual Studio Professional with MSDN
-*	Visual Studio Test Professional with MSDN
-*	MSDN Platforms
-
-Not eligible:
-
-*	MSDN Operating Systems
-*	MSDN Essentials
-*	Visual Studio Professional -- from the Microsoft Partner Network (MPN) "Action Pack" program
-
-Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing/).
+A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
-
-#### Q: Which specific subscriptions do "Visual Studio Enterprise subscription" and "Visual Studio Professional subscription" include? 
-
-A: "Visual Studio Enterprise subscription" can describe:
-
-*	Visual Studio Enterprise - monthly
-*	Visual Studio Enterprise - annual
-*   Visual Studio Enterprise with MSDN
-
-"Visual Studio Professional subscription" can describe:
-
-*	Visual Studio Professional - monthly
-*	Visual Studio Professional - annual
-*   Visual Studio Professional with MSDN
 
 <a name="ValidateMSDNSubscription"></a>
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: This might happen for different reasons: 
-
-*	Make sure that you have an active, valid, and 
-[eligible Visual Studio subscription](#EligibleMSDNSubscriptions) 
-that you can use with VSTS. 
-
-*	You might experience a delay if your subscription is new.
-
-*	If you used a Microsoft account to activate your Visual Studio subscription, 
-and you're using an Azure "work or school account" with VSTS, 
-learn [how to add your "work or school account" to your subscription](../billing/link-msdn-subscription-to-organizational-account-vs.md).
-
-Still having problems? Try these 
-[troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx). 
-If you need more help, contact [Support](https://www.visualstudio.com/support/).
+A: See [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 #### Q: Why do Visual Studio subscribers' access levels change after they sign in?
@@ -157,11 +110,11 @@ users to 0.
 0. On the 1st day of the next calendar month, 
 [go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
 and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md).
+Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../billing/faq-billing-setup.md#EligibleAzureSubscriptions).
+	[Learn more](../billing/vsts-billing-faq.md).
 
 
 ## User access
