@@ -8,7 +8,7 @@ ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.manager: douge
 ms.author: kaelli
 monikerRange: 'vsts'
-ms.date: 03/20/2018
+ms.date: 03/23/2018
 ---
 
 
@@ -39,7 +39,7 @@ As an example, you can make a field required based on value assignments made to 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions  |
 > |-------------|----------|  
-> |- A work item state changes to a selected state<br/>- A work item state changes from one state to another state<br/>- A work item is created<br/>- A work item state is in a selected state<br/>- The value of a field equals a specified value<br/>- The value of a field does not equal a specified value<br/>- A value is defined for a field<br/>- No value is defined for a field<br/>- A change was made to the value of a field<br/>- No change was made to the value of a field |- Clear the value of a field<br/>- Copy the value of a field to another field   <br/>- Make a field required<br/>- Set the value of a field<br/>- Set the value of a field to the current date-time<br/>- Set the value of a field to the current user  |
+> |- A work item state changes to a selected state<br/>- A work item state changes from one state to another state<br/>- A work item is created<br/>- A work item state is in a selected state<br/>- The value of a field equals a specified value<br/>- The value of a field does not equal a specified value<br/>- A value is defined for a field<br/>- No value is defined for a field<br/>- A change was made to the value of a field<br/>- No change was made to the value of a field |- Clear the value of a field<br/>- Copy the value of a field to another field<br/>- Make a field read-only  <br/>- Make a field required<br/>- Set the value of a field<br/>- Set the value of a field to the current date-time<br/>- Set the value of a field to the current user  |
 
 
 > [!NOTE]     
