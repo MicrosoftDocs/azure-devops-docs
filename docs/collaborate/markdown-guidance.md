@@ -1,15 +1,15 @@
 ---
 title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
 titleSuffix: VSTS & TFS 
-description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
+description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 03/06/2018
 monikerRange: '>= tfs-2015'
+ms.date: 03/06/2018
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -45,16 +45,35 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**      
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />
-
+<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />     
 
 ## Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
+::: moniker range="vsts"
+
+In pull request comments, press Enter to insert a line break and begin text on a new line. 
+
+While in a Markdown file, wiki, or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
 In pull request comments and the wiki, press Enter to insert a line break and begin text on a new line. 
 
-In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+In pull request comments, press Enter to insert a line break and begin text on a new line. 
+
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+   
 
 **Example - pull request comment:**
 
@@ -80,7 +99,7 @@ Add two spaces prior to the end of the line.
 
 This adds space in between paragraphs.
 
- 
+
 ## Quotes
 
 Quote previous comments or text to set context for your comment or text.
@@ -229,17 +248,16 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
-::: moniker range=">= tfs-2018"
+
+::: moniker range="vsts || >= tfs-2018"
 
 <a id="link-work-items">  </a>
 ### Link to work items from a Wiki page
- 
->[!NOTE]  
->**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
 
 Simply enter the pound sign (`#`) and enter a work item ID. 
 
-::: moniker end
+::: moniker-end
+
 
 <a id="relative-links">  </a>
 ### Source control relative links
@@ -281,7 +299,7 @@ The ID is all lower case, and the link is case sensitive, so be sure to use lowe
 You can also reference headings within another Markdown file:
 
 <pre>
-[text to display](./target.md#heading id)  
+[text to display](./target.md#heading-id)  
 </pre>
 
 
@@ -370,7 +388,7 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
 <br/>
 **Result:**  
  
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />   
+<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />    
 
 > [!NOTE]   
 > A checklist within a table cell isn't supported. 
@@ -532,16 +550,21 @@ To escape emojis, enclose them using the \` character.
 
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper-right of the comment box or the format pane in wiki page. 
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />
+<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />     
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 
 Attachments support the following file formats:
 
-- Images: PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg)
-- Documents:  Word (.docx), Excel (.xlsx and .csv), and Powerpoint (.pptx), text files (.txt), and PDFs (.pdf)
-- Compressed files: ZIP (.zip) and GZIP (.gz)
-- Video files: MOV (.mov), MP4 (.mp4)
+> [!div class="mx-tdCol2BreakAll"]    
+> |    Type    | File formats |
+> |------|---------| 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql)   | 
+> | Compressed files | ZIP (.zip) and GZIP (.gz) | 
+> | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
+> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 
+> | Visio | VSD (.vsd and .vsdx)  | 
+> | Video | MOV (.mov), MP4 (.mp4) | 
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 Attached image files render directly into your comment or wiki pages. 
@@ -653,7 +676,8 @@ $$
 > [!div class="mx-imgBorder"]
 ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
-::: moniker end
+::: moniker-end
+
 
 ## Related articles  
 
@@ -664,4 +688,4 @@ $$
 - [Dashboards](../report/dashboards/dashboards.md)
 - [Widget catalog](../report/dashboards/widget-catalog.md) 
 - [Wiki](add-edit-wiki.md)
-
+  
