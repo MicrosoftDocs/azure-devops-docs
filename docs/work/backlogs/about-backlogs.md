@@ -12,7 +12,7 @@ ms.date: 03/20/2018
 
 #  About backlogs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -20,7 +20,7 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 Most Agile tools are [scoped to a team](../../settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json). This supports team autonomy as well as scaling the system. 
  

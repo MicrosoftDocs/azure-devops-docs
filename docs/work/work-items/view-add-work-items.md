@@ -168,4 +168,4 @@ Use the following three controls to manage your views.
 - [Work from the account home page](../../user-guide/account-home-pages.md)
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

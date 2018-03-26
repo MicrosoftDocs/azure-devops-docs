@@ -1,55 +1,41 @@
 ---
-title: Project & Account Settings
-titleSuffix: VSTS & Vertical Apps
-description: Index to topics for configuring account and project settings for VSTS and Vertical Apps 
+title: Scale & Configure Teams
+titleSuffix: VSTS & TFS
+description: Index to topics for adding teams in Visual Studio Team Services & Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/01/2018
+ms.date: 03/26/2018
 ---
 
-# Project & Account Settings 
+# Scale & Configure Teams 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-Intro paragraph here. 
+Give your teams the autonomy they need as your organization grows. Add teams to give each team their set of Agile tools which they can configure their way.   
 
 ## 5-Minute Quickstarts    
-- [Define area paths](../work/customize/set-area-paths.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json )
-- [Define iteration paths or sprints](../work/customize/set-iteration-paths-sprints.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json ) 
-- [Add a team & team members](../work/scale/multiple-teams.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Add a team administrator](../work/scale/add-team-administrator.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
-
-## Tutorials
-
-- [Add and manage users](../accounts/add-account-users-from-user-hub.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [Customize a process](../work/customize/process/customize-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-
+- [Add a team & team members](/vsts/work/scale/multiple-teams?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
+- [Add a team administrator](/vsts/work/scale/add-team-administrator?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
 
 ## Concepts 
-
-- [About areas and iterations](../work/customize/about-areas-iterations.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)  
-- [About process customization](../work/customize/inheritance-process-model.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)        
-- [Team administrator role and permissions](../work/scale/team-administrator-permissions.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
+      
+- [Team administrator role and permissions](/vsts/work/scale/team-administrator-permissions?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
 
 ## How-to Guides
-- [Set team defaults](../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
-- [Configure team settings](../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
-- [Manage processes](../work/customize/process/manage-process.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)   
-- [Switch team context](switch-team-context.md)
+- [Set team defaults](/vsts/work/scale/set-team-defaults?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
+- [Configure team settings](/vsts/work/scale/manage-team-assets?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
 
-## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)    
+
+## Reference   
+- [Permissions and access for work tracking](../security/permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) 
 
 
-## Resources 
-- [Navigation Basics](../user-guide/work-web-portal.md) 
-- [Account Management](../accounts/index.md) 
-- [Security & Identity](../security/index.md) 
-- [Manage Extensions (Marketplace)](../marketplace/index.md) 
-- [Service hooks](../service-hooks/index.md) 
- 
+## Resources  
+- [Customization](../work/customize/index.md)
+- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
+- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
+- [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)  
+- [Integrate with service hooks](../service-hooks/index.md)  
