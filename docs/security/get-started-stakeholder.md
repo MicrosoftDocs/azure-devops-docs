@@ -28,13 +28,13 @@ Use this topic to learn:
 > * Understand the set of features you have access to
 
 ## First time signing in 
-::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2013"
 
 1. Click the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
 	::: moniker range="vsts"  
 	`http://AccountName.visualstudio.com/DefaultCollection/ProjectName`
 	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2018"
+	::: moniker range=">= tfs-2013"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
 
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
@@ -54,7 +54,7 @@ You might see different work item types in your view based on the process select
 > Use the [Work Items page](../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
 ::: moniker-end
     
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017"
 
 From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
@@ -153,7 +153,7 @@ The following features are available to Stakeholders from the web portal.
 4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
 5. Stakeholders can only view and approve releases.  
 6. Stakeholders cannot view markdown README files defined for repositories.  
-7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
+7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
 
  
 
@@ -162,7 +162,7 @@ The following features are available to Stakeholders from the web portal.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 The following features are available to Stakeholders from the web portal of the listed TFS or later version. Those not annotated are available from all versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
 

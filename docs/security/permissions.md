@@ -28,7 +28,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
@@ -70,7 +70,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups 
 
@@ -426,7 +426,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 ##&nbsp;&nbsp;&nbsp;Server-level 
 
@@ -1548,7 +1548,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 <a id="plan-permissions">  </a>
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017"
 
 
 ##&nbsp;&nbsp;&nbsp;Delivery Plans (object-level)   
@@ -1697,7 +1697,7 @@ If you are working with the Release Management client and server supported for T
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017"
 
 ##&nbsp;&nbsp;&nbsp;Release (object-level) 
 

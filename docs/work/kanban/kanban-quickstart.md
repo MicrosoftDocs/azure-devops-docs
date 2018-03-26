@@ -20,7 +20,7 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
 ## Open your Kanban board from the web portal
