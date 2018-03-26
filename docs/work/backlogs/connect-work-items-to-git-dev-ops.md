@@ -36,7 +36,7 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
 <a id="git-development">  </a>
