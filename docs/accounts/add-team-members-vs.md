@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/24/2018
+ms.date: 03/26/2018
 monikerRange: 'vsts'
 ---
 
@@ -101,8 +101,7 @@ To add members to team projects, you'll need
 	First-time members might be asked for extra details 
 	when they sign in to personalize their experience.
 
-	What if new team members don't receive or lose the invitation email?  You can just send a link to the project page to
-	the new team members, which is what the email contains.
+	What if new team members don't receive or lose the invitation email?  If you’re in an MSA account or inviting a user from your Azure AD, you can just send a link to the project page to the new team members, which is what the email contains. But, if you’re [inviting a user from outside your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), then the user needs to use the email.
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
