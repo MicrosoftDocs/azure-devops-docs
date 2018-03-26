@@ -13,7 +13,7 @@ ms.date: 03/20/2018
 
 # Create your backlog
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
@@ -23,7 +23,7 @@ Your backlog consists of a list of [work items](add-work-items.md).
 You use work items to share information, assign work to team members, track dependencies, organize work, 
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open your backlog from the web portal
 
