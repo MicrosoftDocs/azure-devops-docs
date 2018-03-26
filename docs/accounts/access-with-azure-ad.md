@@ -7,10 +7,9 @@ ms.technology: vs-devops-setup
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/17/2017
+ms.date: 03/26/2018
 monikerRange: 'vsts'
 ---
-
 
 # Access VSTS with Azure Active Directory (Azure AD)
 
@@ -38,7 +37,7 @@ your team's critical resources and key assets.
 
 Your VSTS account authenticates users
 through your organization's directory so that
-only users who are members in that directory can
+only users who are members or guests in that directory can
 get access to your VSTS account.
 When users are removed from your directory,
 for example, because they've moved elsewhere,

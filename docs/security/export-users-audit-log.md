@@ -40,7 +40,7 @@ You can get a list of users and groups that have access to your Visual Studio Te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013"
 
 ## TFS 
 

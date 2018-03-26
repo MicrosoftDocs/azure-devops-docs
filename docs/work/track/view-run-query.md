@@ -35,7 +35,7 @@ Use this topic to learn:
 > * How to run a query 
 -->
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open the Queries page from the web portal
 

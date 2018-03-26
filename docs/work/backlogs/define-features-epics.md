@@ -39,7 +39,7 @@ Use this topic to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
@@ -69,7 +69,7 @@ You can add epics in the same way. Simply open the Epics backlog.
 
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
 
 <img src="_img/org-backlog-feature-form-ts-new-nav.png" alt="Feature work item form, Agile process, Add details to a feature" style="border: 1px solid #C3C3C3;" /> 
  
