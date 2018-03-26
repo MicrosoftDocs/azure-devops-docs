@@ -185,6 +185,10 @@ When you inform your users of the completed change, include the following tasks 
 
 A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user's benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity's email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
 
+### Q: How can I continue to access resources in Azure backed by an Azure subscription I created with my Microsoft account?
+
+A: If you have created an Azure subscription with your Microsoft Account, connecting VSTS to AzureAD will not change this; you will still access it using that same identity.  You can optionally [transfer that subscription to your work AAD identity](https://docs.microsoft.com/en-us/azure/billing/billing-subscription-transfer).
+
 ### Q: What if sign-in is required when using the identity picker?
 
 A: Clear the browser cache and delete any cookies for the session.
