@@ -46,7 +46,7 @@ In this topic you'll learn:
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 ## Show parents and expand the tree hierarchy  
 From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
