@@ -12,7 +12,7 @@ ms.date: 02/26/2018
 
 #Upload or download a process template
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 > [!NOTE]    
@@ -28,7 +28,7 @@ When you create a team project, the Project Creation Wizard (PCW) reads the proc
 
 You can upload, download, and delete process templates for a team project collection. Also, you can mark a template to appear as the default when you add team projects. 
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
 ## To manage a process template 
 

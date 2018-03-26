@@ -101,7 +101,11 @@ To add members to team projects, you'll need
 	First-time members might be asked for extra details 
 	when they sign in to personalize their experience.
 
-	What if new team members don't receive or lose the invitation email?  If you’re in an MSA account or inviting a user from your Azure AD, you can just send a link to the project page to the new team members, which is what the email contains. But, if you’re [inviting a user from outside your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), then the user needs to use the email.
+    What if new team members don't receive or lose the invitation email?
+
+    **Azure AD-backed accounts**: If you're [inviting a user from outside your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), the user must use the email. Removing a user from the VSTS account will remove both the access and license from the user. However, any artifacts that were assigned to this user remain unchanged. You can always invite the user back into the account if the user exists in the Azure AD tenant. Once the user is removed from Azure AD, you will not be able to assign any artifacts (work items, pull requests etc..) to this user. We will preserve the history of artifacts that as already been assigned to this user.
+
+    **MSA-backed accounts**: You can send a link to the project page to the new team members, which is what the email contains. Removing a user from the VSTS account will remove both the access and license from the user. You will not be able to assign any artifacts (work items, pull requests, etc.) to this user anymore. However, any artifacts that were assigned to this user remain unchanged.
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
