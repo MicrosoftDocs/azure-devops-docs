@@ -80,7 +80,7 @@ on the linking of artifacts to a release definition are:
   certain artifact sources.
 
 * **Artifact download**. Whenever a release is
-  deployed to an environment, Release Management
+  deployed to an environment, by default Release Management
   automatically downloads all the artifacts in that
   release to the [agent](../../agents/agents.md) where the deployment job runs.
   The procedure to download artifacts depends on the
@@ -387,11 +387,25 @@ deployed again. In addition, because the previously downloaded contents are
 always deleted when you initiate a new release, Release Management cannot
 perform incremental downloads to the agent.
 
-You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-phase)
+::: moniker range="< vsts"
+
+You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-props)
 of artifacts to the agent for a specific phase and environment of the deployment if you
 wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#agent-props)
+to the agent for a specific phase and environment of the deployment.
+Typically, you will do this when the tasks in that phase do not
+require all or any of the artifacts, or if you implement custom code
+in a task to download the artifacts you require.
+
+::: moniker-end
 
 <a name="source-alias"></a>
 <h2 id="source-alias">Artifact source alias</h2>
