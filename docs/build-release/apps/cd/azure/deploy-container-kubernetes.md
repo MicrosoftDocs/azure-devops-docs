@@ -11,7 +11,7 @@ monikerRange: ">= tfs-2015"
 ---
 
 
-# Implement continuous deployment of your app using Kubernetes to Azure Container Service
+# Deploy using Kubernetes to Azure Container Service
 
 Continuous deployment (CD) means starting an automated deployment process whenever a new successful build is available.
 Here. we'll show you how to set up continuous delivery of a Docker based app by using VSTS
@@ -29,53 +29,18 @@ ACR is used as a private registry to store Docker images for enterprise applicat
 
 ### Begin with a CI build
 
-Before you begin, you'll need a CI build that publishes your app. To set up CI for your specific type of app, see:
+Before you begin, you'll need a CI build that pushes your app to a container service:
 
-* [Build and deploy your app](../../index.md)
+* [Build and push a Docker image](../../containers/build.md)
 
-### Modify your build to create a Docker container
+### Modify your build to deploy a configuration file
 
-Next, you'll need to modify your build definition to create a Docker container
-for deployment using ACS.
-
-1. Add two instances of the **Docker** task to the end of your build definition. 
+Next, you'll need to modify your build definition.
 
 1. Add one instance of the **Publish Build Artifacts** task to the end of your build definition.
 
-1. Configure the tasks as follows:
+1. Configure the task as follows:
 
-   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Build the container image from the Docker file.
-   
-   - **Container Registry type**: `Azure Container Registry`
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **Azure Container Registry**: Select the target Azure container registry.
-   
-   - **Action**: `Build an image`
-   
-   - **Image name**: Enter the name for your Docker image.
-   
-   - **Qualify Image Name**: Checked
-   
-   - **Additional Image Tags**: `$(Build.BuildId)`<p />
-   
-   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Push the container image to a container registry.
-   
-   - **Container Registry type**: `Azure Container Registry`
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **Azure Container Registry**: Select the target Azure container registry.
-   
-   - **Action**: `Push an image`
-   
-   - **Image name**: Enter the name of your Docker image.
-   
-   - **Qualify Image Name**: Checked
-   
-   - **Additional Image Tags**: `$(Build.BuildId)`<p />
-   
    ![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../tasks/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
    
    - **Path to Publish**: Path to the artifacts you want to publish. For example, `k8config`

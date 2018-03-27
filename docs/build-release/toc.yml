@@ -178,6 +178,8 @@
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md
+    - name: To a deployment group
+      href: concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
     - name: Run an agent with self-signed certificate
