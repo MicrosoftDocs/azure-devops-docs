@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 03/01/2018
 ---
 
@@ -34,7 +34,7 @@ Use this topic to learn:
 	::: moniker range="vsts"  
 	`http://AccountName.visualstudio.com/DefaultCollection/ProjectName`
 	::: moniker-end
-	::: moniker range=">= tfs-2013"
+	::: moniker range="<= tfs-2018"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
 
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
@@ -162,7 +162,7 @@ The following features are available to Stakeholders from the web portal.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2017"
 
 The following features are available to Stakeholders from the web portal of the listed TFS or later version. Those not annotated are available from all versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
 
