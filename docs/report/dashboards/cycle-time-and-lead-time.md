@@ -5,6 +5,7 @@ description: Configure and use the cycle time and lead time control charts/widge
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-reporting  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
+ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelli
 monikerRange: 'vsts' 
