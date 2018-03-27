@@ -75,10 +75,18 @@ You can configure the following properties for an agent phase:
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
 
-* **Skip download of artifacts [Release (VSTS, TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
+* **Execution plan:** See [Parallel and multiple execution using agent phases](#parallelexec).
+
+* **Skip download of artifacts [Release (TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
+
+* **Select artifacts to download [Release (VSTS)]:** When used in a release definition, you can choose which of the
+  [artifacts](../definitions/release/artifacts.md#download) will be downloaded
+  during the job execution. Use this option if the tasks in a particular phase rely on only specific artifacts.
+
+  ![Selecting the artifacts to download](_img/select-artifacts.png)
 
 * **Allow scripts to access OAuth token [Release (VSTS, TFS 2017 and newer), Build (Planned)]** Use this option if you
   want to allow tasks running in this phase access to the
@@ -107,10 +115,12 @@ You can configure the following properties for an agent phase:
 
 You can use multiple agents to run parallel jobs if you configure an agent phase to be **Multi-configuration** or **Multi-agent**.
 
-Here are some examples where **multi-configuration** is appropriate:
+![Using the parallel execution options](_img/parallel-exec.png)
 
 > [!NOTE]
 > These options are available in Release (VSTS, TFS 2017 and newer) and Build (VSTS)
+
+Here are some examples where **multi-configuration** is appropriate:
 
 * **Multiple execution builds:** An agent phase can be used in a
   build definition to build multiple configurations in parallel. For
@@ -224,7 +234,7 @@ capable of handling requests while the deployment is taking place.
 
 ![Dependency group properties](_img/depgroup-properties.png)
 
-The timeout and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
+The timeout, agent download, and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
 
 ## Multiple phases
 
