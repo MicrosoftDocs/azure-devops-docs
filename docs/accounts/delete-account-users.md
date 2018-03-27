@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/23/2018
+ms.date: 03/27/2018
 monikerRange: 'vsts'
 ---
 
@@ -47,7 +47,8 @@ If a user no longer requires access to a team project or your VSTS account, you 
    > Your bill won't show these changes until the next month because paid users are monthly purchases.
 
 >[!Note]
->Once you remove a user from Azure Active Directory, you will not be able to assign artifacts (work items, pull requests, etc.) to this user anymore. However, we will preserve the history of artifacts that has already been assigned to this user.
+>Azure AD-backed accounts: Once you remove a user from Azure AD, you will not be able to assign artifacts (work items, pull requests, etc.) to this user anymore. However, we will preserve the history of artifacts that has already been assigned to this user.
+>MSA-backed accounts: Once you remove a user from your MSA-backed VSTS account, the user will remain within the tenant and can therefore be re-added at any time.
 
 ## Remove users from a team or team project
 
