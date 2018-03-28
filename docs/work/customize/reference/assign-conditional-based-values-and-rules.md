@@ -1,11 +1,14 @@
 ---
-title: Assign conditional-based values and rules | VSTS & TFS
-description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define rules and values that are run conditionally - Team Foundation Server (TFS)
+title: Assign conditional-based values and rules
+titleSuffix: TFS
+description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define conditional rules and values
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
+ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
+ms.topic: reference
 ms.date: 01/20/2017
 ---
 
@@ -157,12 +160,12 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ```XML
 <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
        <ALLOWEDVALUES>  
-         <LISTITEM value="Blocking" />  
-         <LISTITEM value="Major" />  
-         <LISTITEM value="Minor" />  
+           <LISTITEM value="Blocking" />  
+           <LISTITEM value="Major" />  
+           <LISTITEM value="Minor" />  
        </ALLOWEDVALUES>  
        <WHEN field="MyCorp.CustomerReported" value="true">  
-         <REQUIRED />  
+           <REQUIRED />  
        </WHEN>  
 </FIELD>  
 ```  
@@ -175,11 +178,11 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ```XML
 <FIELD refname="MyCorp.ProblemType" name="Problem Type" type="String">  
        <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">  
-         <ALLOWEDVALUES>  
+           <ALLOWEDVALUES>  
                <LISTITEM value="Spelling Error" />  
                <LISTITEM value="Bad Format" />  
                <LISTITEM value="Missing Info" />  
-         </ALLOWEDVALUES>  
+           </ALLOWEDVALUES>  
        </WHEN>  
 </FIELD>  
 ```  
@@ -192,7 +195,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ```XML
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
        <WHENCHANGED field="MyCorp.State">  
-         <COPY from="clock" />  
+           <COPY from="clock" />  
        </WHENCHANGED>  
 </FIELD>   
 ```  
@@ -204,7 +207,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 <!-- Clear the status field whenever someone changes the state -->  
 <FIELD refname="MyCorp.Status" name="Status" type="String">  
        <WHENCHANGED field="MyCorp.State">  
-         <COPY from="value" value="">  
+           <COPY from="value" value="">  
        </WHENCHANGED>  
 </FIELD>  
 ```  
@@ -217,7 +220,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
 <!-- Make the StateDate field read-only when the State field is not changed -->  
        <WHENNOTCHANGED field="MyCorp.State">  
-         <READONLY />  
+           <READONLY />  
        </WHENNOTCHANGED>  
 </FIELD>  
 ```  

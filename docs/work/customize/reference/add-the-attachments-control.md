@@ -1,17 +1,20 @@
 ---
-title: Add the Attachments control | VSTS & TFS
+title: Add the Attachments control
+titleSuffix: TFS
 description: Lets you enable users to see and manage the file attachments of a work item - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
 ms.author: kaelli
 ms.manager: douge
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 05/10/2017  
 ---
 
 # Add the Attachments control
 
-<p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
+<p><b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013 </b></p>
 
 > [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model using the old form layout. For the Hosted XML process model and the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md).
@@ -20,7 +23,7 @@ ms.date: 05/10/2017
 
 If you are designing a work item form from the ground up, you might want to add the control to attach files to the work item. In general, each work item form contains a tab that supports the attachment of files, such as an email thread, a document, an image, a log file, or another type of file.  
   
- The `Control` element `AttachmentsControl``Type` attribute lets you enable users to see and manage the file attachments of a work item. By adding this control to a work item form, you can open, add, and remove file attachments. In the following example, a tab that is labeled "Attachments" is added to a work item form by using all the controls that are shown.  
+ The `Control` element `AttachmentsControl` `Type` attribute lets you enable users to see and manage the file attachments of a work item. By adding this control to a work item form, you can open, add, and remove file attachments. In the following example, a tab that is labeled "Attachments" is added to a work item form by using all the controls that are shown.  
   
 **Attachments control**
 
