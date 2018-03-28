@@ -57,9 +57,9 @@ The following example statements show specific qualifying clauses.
 <td>
 
 <pre><code>SELECT [System.Id], [System.Title]
-      FROM WorkItems
-      WHERE [System.TeamProject] = @project
-      AND [System.AssignedTo] = 'Judy Lew'
+ Â  Â  Â FROM WorkItems
+ Â  Â  Â WHERE [System.TeamProject] = @project
+ Â  Â  Â AND [System.AssignedTo] = 'Judy Lew'
 </code></pre>
 </td>
 </tr>
@@ -170,7 +170,7 @@ When specifying fields, you can use the reference name or friendly name. The fol
 </tr>
 
 <tr>
-<td>Using names without spaces €”no square brackets required</td>
+<td>Using names without spaces, no square brackets required</td>
 <td>
 <pre><code>SELECT ID, Title FROM ...
 </code></pre>
@@ -303,8 +303,8 @@ WHERE [System.CreatedBy] = 'joselugo' OR [System.CreatedBy] = 'jeffhay' OR [Syst
 The ever operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the ever operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
 
 ```
-WHERE ever ([Assigned To] =  €˜joselugo')
-WHERE [Assigned To] ever  €˜joselugo'
+WHERE ever ([Assigned To] =  'joselugo')
+WHERE [Assigned To] ever  'joselugo'
 ```
 
 
@@ -313,7 +313,7 @@ WHERE [Assigned To] ever  €˜joselugo'
 You can use the terms `and` and `or` in the typical Boolean sense to evaluate two clauses. You can group logical expressions and further conjoin them, as needed. Examples are shown below.
  
 ```
-WHERE [System.State] =  €˜Active' and [System.AssignedTo] = 'joselugo' and ([System.CreatedBy] = 'linaabola' 
+WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([System.CreatedBy] = 'linaabola' 
 	OR [Adatum.CustomMethodology.ResolvedBy] = 'jeffhay') 
 	AND [System.State] = 'Closed'
 	WHERE [System.State] = 'Active'
@@ -422,7 +422,7 @@ The following example sorts work items first by **Priority** in ascending order,
 ```
 SELECT [System.Title] 
 	FROM workitems 
-	WHERE [System.State] =  €˜Active' and [System.AssignedTo] =  €˜joselugo' 
+	WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
 	ORDER BY [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc
 ```
 
