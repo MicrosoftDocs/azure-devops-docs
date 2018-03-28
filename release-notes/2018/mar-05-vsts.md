@@ -20,8 +20,9 @@ Other highlights include:
 - [Query work across the iteration schedule with +/- @CurrentIteration](#query-work-across-the-iteration-schedule-with---currentiteration)
 - [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/ph2yNok4-QY?rel=0]
 
 ## Code
 

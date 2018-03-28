@@ -35,7 +35,7 @@ For example, the Agile process template defines the set of artifacts shown in th
   
 ![Agile process template artifacts](_img/alm_pg_agile_pt.png "ALM_PG_Agile_PT")  
   
-Many of these artifacts depend on WITs which are used to track work. For example, data fields defined in the definition of WITs─such as, Feature, Bug, User Story, or Task─are also used to define work item queries and reports. In addition to these artifacts, you can also define the initial project areas and milestones, security configuration, and other default settings that support version control and test management.  
+Many of these artifacts depend on WITs which are used to track work. For example, data fields defined in the definition of WITs&mdash;such as, Feature, Bug, User Story, or Task&mdash;are also used to define work item queries and reports. In addition to these artifacts, you can also define the initial project areas and milestones, security configuration, and other default settings that support version control and test management.  
   
  After you create a team project, you can change configurations and customize artifacts. However, by customizing the process template before you create your team projects, all resulting team projects that you create from it will match a standard set of team processes. The main reasons you might want to customize a process template include:  
   
@@ -183,7 +183,7 @@ When you add objects to a process template, you will want to make sure that you 
 - [Configure features after an upgrade](../../configure-features-after-upgrade.md)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml-element-reference.md)  
-- [Forum: Team Foundation Server – Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
+- [Forum: Team Foundation Server &mdash;Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
   
 Sometimes third parties make available process templates that they've created. You may need to do extra work after a TFS upgrade when using a process template provided by a third-party as described [Customize your work tracking experience, Maintenance and upgrade implications (TFS)](../../on-premises-xml-process-model.md#before-you-customize).
 

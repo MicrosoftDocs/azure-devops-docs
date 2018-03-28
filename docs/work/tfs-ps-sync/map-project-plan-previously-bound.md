@@ -195,7 +195,7 @@ ms.date: 01/12/2017
   
 3.  If all work items that you want to have synchronized have been added, close your project plan, and skip to [Verify Migration and Delete Duplicate Tasks](#verify) later in this topic.  
   
-     If some work items still must be synchronized, return to the first step in the first procedure,  “To approve updates to the project plan.  
+     If some work items still must be synchronized, return to the first step in the first procedure,  "To approve updates to the project plan.  
   
      As you approve and publish the updates, the synchronization process locks the hierarchy of synchronized work items in Team Foundation.  
   

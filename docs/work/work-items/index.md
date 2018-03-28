@@ -5,6 +5,7 @@ description: Index to topics for planning and tracking work in Visual Studio Tea
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/20/2018

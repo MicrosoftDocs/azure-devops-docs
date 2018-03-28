@@ -5,6 +5,7 @@ description: Use keyboard shortcuts to interact with work item forms and the Wor
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.topic: reference
