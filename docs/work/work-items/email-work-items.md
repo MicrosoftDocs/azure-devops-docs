@@ -1,9 +1,11 @@
 ---
 title: Email or print work items
+titleSuffix: VSTS & TFS
 description: Email or print work items to share work tracking information in VSTS or TFS 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017  

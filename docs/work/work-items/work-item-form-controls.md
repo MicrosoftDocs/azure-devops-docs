@@ -1,10 +1,11 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: "VSTS & TFS" 
+titleSuffix: VSTS & TFS 
 description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/14/2018 

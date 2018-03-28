@@ -5,6 +5,7 @@ description: Customize the link types to track related work, dependencies, and c
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'
