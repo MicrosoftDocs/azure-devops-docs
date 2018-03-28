@@ -1,9 +1,11 @@
 ---
-title: Plan a project (CMMI) | VSTS & TFS
-description: Understand the desired outcome of planning a project is a plan that includes a scope, a schedule, a budget, a risk management plan, and a commitment and approval from all stakeholders - Team Foundation Server (TFS)
+title: Plan a project (CMMI)
+titleSuffix: VSTS & TFS
+description: Understand the desired outcome of planning a project  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/20/2017

@@ -1,10 +1,11 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: "VSTS & TFS" 
+titleSuffix: VSTS & TFS 
 description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/14/2018 
@@ -180,7 +181,7 @@ Type an ID in the Search work items box and then choose the search icon.
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md). 
 
-Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **â€“** operators to specify the operations: Equals, Contains, and Not, respectively.  
+Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **"“** operators to specify the operations: Equals, Contains, and Not, respectively.  
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 

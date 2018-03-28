@@ -12,7 +12,7 @@
     href: ../report/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Create a readme for a repo
+  - name: Create a README for a repo
     href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
 - name: How-to Guides
   items:
