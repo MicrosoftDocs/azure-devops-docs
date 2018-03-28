@@ -5,6 +5,7 @@ description: Guidance for working with velocity charts
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/16/2017

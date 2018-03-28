@@ -37,18 +37,20 @@ To view a list of teams defined for a team project, open the admin context for t
 >**Feature availability**: The Account Landing Page feature is in preview mode for VSTS and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).   
 
  
+::: moniker range="vsts || >= tfs-2018"
 
-
-### VSTS
 <a id="switch-context-team-services" />
  
-You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** or click the ![VSTS icon](_img/switch-team-focus-account-project-page-icon.png) VSTS icon to [access your account hub and browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
+You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** or click the ![VSTS icon](_img/switch-team-focus-account-project-page-icon.png) account/collection icon to [access your account hub and browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
 
 To go directly to the [project vision and status page](../collaborate/project-vision-status.md), choose the project home icon from the drop-down menu, for example, ![project home icon](../_shared/_img/work-web-portal-home-page-icon.png).
 
 <img src="../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
-### TFS 2017.1 
+::: moniker-end
+
+::: moniker range="tfs-2017"
+**TFS 2017.1 **
 <a id="switch-context-tfs-2017-1" /> 
 
 To switch your team focus to a team project or team you've recently viewed, hover over the ![VSTS icon](_img/switch-team-focus-account-project-page-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json). Your selection will open the [project vision and status page](../collaborate/project-vision-status.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json) for the team project.
@@ -59,8 +61,7 @@ To go directly to the [project vision and status page](../collaborate/project-vi
 
 <img src="../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
-
-### TFS 2017
+**TFS 2017**
 <a id="tfs-2017-switch-context" /> 
 
 Open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
@@ -68,18 +69,25 @@ Open the team project/team drop-down menu and select the team project/team that 
 <img src="../_shared/_img/switch-context-tfs-2017.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
 
-### TFS 2015
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
 <a id="tfs-2015-switch-context" />
 
 Open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2017"
 
 ## Switch to a team project or team from the account hub 
-If you work in VSTS and TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).  
 
+You can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json).  
 
+::: moniker-end
 
 ## Related notes
 - [Work effectively from your account hub](../user-guide/account-home-pages.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json)
