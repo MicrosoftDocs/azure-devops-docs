@@ -5,6 +5,7 @@ description: Manage the global workflow to minimize the work required by definin
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'

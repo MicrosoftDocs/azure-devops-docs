@@ -5,6 +5,7 @@ description: Import and export categories defined for a team project in Team Fou
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'

@@ -5,6 +5,7 @@ description: Permanently delete work items added to Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'

@@ -5,6 +5,7 @@ description: Customize or update a global list by export/import using witadmin f
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
+ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
 ms.date: 02/26/2018
