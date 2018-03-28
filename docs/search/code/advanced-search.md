@@ -131,6 +131,8 @@ or add a condition or filter to limit the number of possible matches.
 
 ------------------
 
+<!--
+
 ### Search for phrases
 
 To find an exact match to a set of words, enclose your search terms in double-quotes 
@@ -156,6 +158,8 @@ according to the following rules:
 * Search for a literal occurrence of the double-quote character `"` by preceding it with the
   escape characacter `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
+
+-->
 
 <a name="codefunctions"></a>
 ## Functions to find specific types of code
