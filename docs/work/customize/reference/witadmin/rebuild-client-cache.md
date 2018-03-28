@@ -5,6 +5,7 @@ description: Update the data cache on client computers after certain maintenance
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'

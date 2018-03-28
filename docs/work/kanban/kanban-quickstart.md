@@ -6,6 +6,7 @@ ms.topic: get-started-article
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
+ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/20/2018

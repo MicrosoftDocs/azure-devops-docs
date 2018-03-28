@@ -1,9 +1,11 @@
 ---
-title: Building a product | VSTS & TFS
+title: Building a product
+titleSuffix: VSTS & TFS
 description: Build the integrated code to integrate development work into a component, a sub-system, a system, or a finished product - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: a3b1291c-ff51-45a9-9f3d-485361705eae
+ms.topic: conceptual
 ms.author: kaelli
 ms.manager: douge
 ms.date: 01/20/2017
