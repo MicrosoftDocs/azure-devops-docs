@@ -85,8 +85,8 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </td>
 <td>The area of customer value addressed by the epic, feature, or backlog item. Values include:  
 <ul>
-<li><b>Architectural</b> – technical services to implement business features that deliver solution </li> 
-<li><b>Business</b> (Default) – services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
+<li><b>Architectural</b> &mdash;technical services to implement business features that deliver solution </li> 
+<li><b>Business</b> (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
 </ul>
 </td>
 </tr>

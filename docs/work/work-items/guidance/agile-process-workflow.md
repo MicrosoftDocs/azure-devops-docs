@@ -1,9 +1,11 @@
 ---
-title: Agile process workflow | VSTS & TFS  
-description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
+title: Agile process workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017

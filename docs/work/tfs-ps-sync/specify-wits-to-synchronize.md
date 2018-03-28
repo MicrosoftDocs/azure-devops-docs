@@ -60,7 +60,7 @@ ms.date: 01/12/2017
     TfsAdmin ProjectServer /MapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
     ```  
   
-     Replace *tpcUrl* with the URL of the team project collection and *TeamProjectName* with the name of the team project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as “*User Story,Task*" or *“User Story",Task*. Do not include a space after the comma.  
+     Replace *tpcUrl* with the URL of the team project collection and *TeamProjectName* with the name of the team project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
   
      You can specify the optional `/skipUIChanges` flag to indicate that no modifications should be made to the **Project Server** tab for the work item forms of the types that you specify.  
   

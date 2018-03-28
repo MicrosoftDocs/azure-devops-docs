@@ -1,9 +1,11 @@
 ---
-title: Project management | VSTS & TFS
+title: Project management 
+titleSuffix: VSTS & TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/16/2017

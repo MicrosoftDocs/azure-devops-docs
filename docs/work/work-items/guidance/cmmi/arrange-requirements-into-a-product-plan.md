@@ -1,9 +1,11 @@
 ---
-title: Arrange requirements into a product plan | VSTS & TFS
+title: Arrange requirements into a product plan
+titleSuffix: VSTS & TFS
 description: Obtain and arrange a plan, starting from a set of requirements - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
+ms.topic: conceptual
 ms.author: kaelli
 ms.manager: douge
 ms.date: 01/20/2017 

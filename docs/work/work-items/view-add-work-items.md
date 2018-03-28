@@ -8,6 +8,7 @@ f1_keywords:
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
+ms.topic: quickstart
 monikerRange: 'vsts'
 ms.manager: douge
 ms.author: kaelli

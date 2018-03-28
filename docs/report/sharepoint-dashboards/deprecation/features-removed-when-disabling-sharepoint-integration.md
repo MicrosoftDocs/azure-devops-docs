@@ -55,7 +55,7 @@ In the future, we will provide ways of displaying our built-in dashboards on Sha
 ## Display of Excel Reports on a SharePoint site
 **Excel Charts continue to display on SharePoint sites, even after disabling SharePoint integration**. You will still be able to create Excel-based charts and host them on SharePoint sites. These charts can still connect to the existing TFS cube to get data. Any existing Excel-based charts hosted on SharePoint sites will continue to work. 
 
-Displaying Excel Charts on a SharePoint site is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn’t require the TFS Extension for SharePoint to operate.
+Displaying Excel Charts on a SharePoint site is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate.
 
 > [!NOTE]   
 > If you are upgrading to SharePoint 2016, then Excel Services has been replaced by Office Online Server. To learn more, see [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./upgrade-from-sharepoint2013-to-sharepoint-2106.md).
@@ -66,7 +66,7 @@ The TFS Extension for SharePoint did install a SharePoint timer job. When execut
 * The TFS collection name had changed
 * The name of the team project associated with a SharePoint site had changed
 
-If any of these changes were made, then it would update the Excel workbook’s filters and Data Connection string so the Excel Chart would continue to work. After disabling SharePoint integration, you'll need to update the Excel workbooks manually to reflect the changes. See [How to update an Excel chart on a SharePoint site](./update-excel-chart.md)
+If any of these changes were made, then it would update the Excel workbook's filters and Data Connection string so the Excel Chart would continue to work. After disabling SharePoint integration, you'll need to update the Excel workbooks manually to reflect the changes. See [How to update an Excel chart on a SharePoint site](./update-excel-chart.md)
 
 ## Display of SSRS Reports on a SharePoint site
 **SSRS Reports continue to display on SharePoint sites, even after disabling SharePoint integration**. You can still create SSRS reports and host them on SharePoint sites.
@@ -90,9 +90,9 @@ If any of these changes are made, then you can replace the URL in the [Page View
 ## Quick links on a SharePoint site
 Quick links are listed on the left side navigation pane of a TFS SharePoint site. Quick links were supported by **tfsRedirect.aspx**. TFS SharePoint sites were created with the following Quick Links: 
 
-* Team Web Access – Links to the TFS web access URL
-* Reports – Links to the SQL Server Reporting Services (SSRS) Reports location
-* Process Guidance – Links to process guidance topic, based on the project’s current process.
+* Team Web Access&mdash;Links to the TFS web access URL
+* Reports&mdash;Links to the SQL Server Reporting Services (SSRS) Reports location
+* Process Guidance&mdash;Links to process guidance topic, based on the project's current process.
 
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 
@@ -107,7 +107,7 @@ We encourage customers to use [the OneDrive for Business sync client](https://su
 
 OneDrive for Business works for both Windows and [macOS](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-on-Mac-OS-X-d11b9f29-00bb-4172-be39-997da46f913f), and provides [mobile apps](https://onedrive.live.com/about/download/) for iOS, Android, and Windows Phone. 
 
-Additionally, if you are using [Microsoft Teams](https://products.office.com/microsoft-teams), it provides easy access to the team’s Documents.
+Additionally, if you are using [Microsoft Teams](https://products.office.com/microsoft-teams), it provides easy access to the team's Documents.
 
 ## Project portal settings
 Project portal settings that you configure from the Team Explorer pane allow you to configure the Project Portal link. It could point to a SharePoint site or any Web site. After disabling SharePoint integration, you will not be able to specify a SharePoint site. The Project Portal link only appeared on the Documents Pane. 

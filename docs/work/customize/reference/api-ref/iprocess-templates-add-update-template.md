@@ -10,7 +10,7 @@ ms.date: 08/04/2016
 ---
 
 
-# IProcessTemplates.AddUpdateTemplate method (String, String, String, String, String)
+# IProcessTemplates.AddUpdateTemplate method (String, String, String, String, String)
 
 **VSTS | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/microsoft.teamfoundation.server.iprocesstemplates.addupdatetemplate%28v=vs.120%29.aspx)**
 
