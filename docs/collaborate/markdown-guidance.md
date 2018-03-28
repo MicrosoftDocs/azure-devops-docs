@@ -208,6 +208,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, within pull requests, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
 
+You can escape auto suggestion of work items by prefixing # with 'backslash /'. E.g. This can be useful if you want to use # for color hex codes.   
+
 In markdown files and widgets, you can set text hyperlinks for your URL using the standard markdown link syntax:
 
 ```
