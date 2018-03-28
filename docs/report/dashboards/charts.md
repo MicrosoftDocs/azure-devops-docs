@@ -7,7 +7,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

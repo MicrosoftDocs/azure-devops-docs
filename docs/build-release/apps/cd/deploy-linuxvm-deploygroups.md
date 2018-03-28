@@ -67,7 +67,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    ![Checking or selecting the build definition and artifact](_img/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-  continuous deployment trigger is enabled, and the **master** branch is selected. If not, set these options now.
+  continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
 
   ![Checking or setting the Continuous deployment trigger](_img/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
 
