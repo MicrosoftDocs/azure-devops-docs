@@ -5,6 +5,7 @@ description:
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013 <= tfs-2018'

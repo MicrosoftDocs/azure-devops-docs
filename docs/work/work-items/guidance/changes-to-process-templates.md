@@ -1,9 +1,11 @@
 ---
-title: Changes made to process templates | VSTS & TFS  
+title: Changes made to process templates
+titleSuffix: VSTS & TFS  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing team projects after a TFS upgrade  
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
-ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688  
+ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
+ms.topic: reference 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/29/2017
