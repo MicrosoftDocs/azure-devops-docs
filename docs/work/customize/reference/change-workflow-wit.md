@@ -1,11 +1,13 @@
 ---
-title: Change the workflow for a work item type | VSTS & TFS
+title: Change the workflow for a work item type
+titleSuffix: VSTS & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: kaelli
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 03/31/2017
 ---
 
@@ -13,7 +15,7 @@ ms.date: 03/31/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of workâ”€requirements, tasks, code defectsâ”€to support software development.  
+You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work&mdash;requirements, tasks, code defects&mdash;to support software development.  
   
 The workflow determines the logical progression and regression of work that team members will perform. It also specifies the values that appear in the drop-down menus for the State and Reason fields. For an overview of the default workflow states supported in the default process templates, see [Choose a process](../../work-items/guidance/choose-process.md). 
 
@@ -78,7 +80,7 @@ The following code example shows the `WORKFLOW` for the Bug WIT definition for t
   
 This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTION`, and `FIELD`.  
   
-**Example Workflow State Diagram â€“ Agile Bug WIT**
+**Example Workflow State Diagram &mdash; Agile Bug WIT**
 
 ![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
   

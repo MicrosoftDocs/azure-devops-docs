@@ -1,11 +1,14 @@
 ---
-title: Apply a field rule | TFS
+title: Apply a field rule
+titleSuffix: VSTS & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
 ms.author: kaelli
+ms.topic: reference
+monikerRange: 'vsts || >= tfs-2013'
 ms.date: 05/10/2017
 ---
 
@@ -186,6 +189,8 @@ These rules specify restrictions on specifying or changing the value of a field.
 
 For the syntax structure, see [All FIELD XML elements reference](field-definition-element-reference.md).
 
+<!--- This section used to be valid, but is no longer valid for TFS 2017 and later versions. 
+
 <a id="scope" /> 
 ### Restrict who can create or modify a work item
 
@@ -207,6 +212,8 @@ You can use the **VALIDUSER** rule only when you refer to person-name fields. Th
 In addition to the system fields, you can create a custom string field and use it as a person-named field. Also, you can synchronize custom person-named fields with Active Directory (specify syncnamechanges="true").
 
 Work item fields do not distinguish between user identities in different domains. Therefore, "Fabrikam\\ctsoapo" and "Contoso\\ctsoapo" are treated as the same user when they are entered into a field that uses the **VALIDUSER** rule.
+
+-->
 
 <a id="conditional-rules" /> 
 ## Conditional rules
@@ -279,7 +286,7 @@ When you restrict a rule to a group, you must indicate the domain or scope of th
 
 Person-name fields can accept values that reference both users and groups. Field attributes, for and not, apply to groups. You can use the following tokens when specifying values for these items.
 
--   **Scope to a group within a team project – [Project]:**
+-   **Scope to a group within a team project &mdash;[Project]:**
 
     The [Project] token is used to specify a group that is defined for a team project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group. 
 
@@ -299,7 +306,7 @@ Person-name fields can accept values that reference both users and groups. Field
     > [!TIP]  
     >You can view a list of valid groups by [opening the Security page](../../../security/set-project-collection-level-permissions.md) in the web portal administration context.
 
--   **Scope to a project collection – [GLOBAL]:**
+-   **Scope to a project collection &mdash;[GLOBAL]:**
 
     Use [GLOBAL] to reference a collection-scoped TFS group, such as the Project Collection Administrators group or a Windows group you add to a collection. For example:
 
@@ -307,7 +314,7 @@ Person-name fields can accept values that reference both users and groups. Field
         <READONLY for="[GLOBAL]\Project Collection Valid Users"/>
         </FIELD>
 
--   **Scope to a server instance – [Team Foundation]:**
+-   **Scope to a server instance &mdash;[Team Foundation]:**
 
     Use the [Team Foundation] token to reference a server-scoped TFS group, such as a built-in group or a Windows group you add to a server-level group. For example:
 
@@ -329,13 +336,9 @@ All users and groups must be qualified by one of these tokens. For example, the 
 
 To learn more about built-in groups, see [Permissions and groups](../../../security/permissions.md) 
 
-## Related articles
-  
-- [Add or modify a field](../add-modify-field.md)   
-- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
 
 <a name="system"></a>
-###System field rules
+##System field rules
 
 System fields have System.*Name* reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:
 
@@ -344,6 +347,14 @@ System fields have System.*Name* reference names, for example System.Title and S
 -    **READONLY**  rule can be assigned to the State and Reason fields.
 
 -   Most rules can be assigned to the Title, Assigned To, Description or Changed By System fields.
+
+
+## Related articles
+  
+- [Add or modify a field](../add-modify-field.md)   
+- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
+
+
 
 ### Person-named fields and validation errors
 
