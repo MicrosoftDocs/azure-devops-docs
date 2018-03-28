@@ -7,8 +7,9 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-ms.date: 11/16/2017
+ms.topic: overview
+monikerRange: 'vsts || >= tfs-2013'
+ms.date: 03/23/2018
 ---
 
 # Dashboards, charts, & widgets    
@@ -17,6 +18,7 @@ ms.date: 11/16/2017
 
 Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
+::: moniker range="vsts || >= tfs-2015"
 
 ## Add widgets to your dashboard   
 
@@ -35,6 +37,8 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 [![Add dashboard](_img/gs-add-dashboard.png)](dashboards.md)[![Add widget](_img/gs-add-widget.png)](add-widget-to-dashboard.md) 
 
+
+
 ### Monitor code activity, build progress and deployment status
 
 With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build definition. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
@@ -44,11 +48,17 @@ With the code tile widgets, you can monitor the activity occuring within a repo 
 ![Code tile widget](_img/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Pull request widget](_img/widget-catalog-pull-request.png)  
 ![Build history widget](_img/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;![Deployment status widget](_img/widget-deployment-status.png)    
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015"
 
 ### Marketplace widgets
 
 In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2013"
 
 <a id="monitor-progress">  </a>
 ## Generate status and trend charts from queries  
@@ -108,15 +118,20 @@ Each sprint provides access to two charts. The first [tracks capacity](../../wor
  ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
 
 
+::: moniker-end
 
-
-## Widgets and the Analytics Service (VSTS) 
-The Analytics Service is available for VSTS accounts. To learn more, see these topics: 
+::: moniker range="vsts"
+ 
+## The Analytics Service and Analytics widgets
+The Analytics Service is in preview and available to all VSTS accounts. To learn more, see these topics: 
 - [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 
+::: moniker-end
 
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Try this next
 
@@ -125,17 +140,29 @@ The Analytics Service is available for VSTS accounts. To learn more, see these t
 > or
 > [Review available widgets](widget-catalog.md) 
 
+::: moniker-end
 
-### Add custom fields  
-You can add data to support reporting requirements in the following ways:
+::: moniker range="vsts"
+### Add custom fields
+  
+You can add data to support reporting requirements by [adding a custom field](../../work/customize/process/customize-process-field.md).   
 
-- [Add a custom field (Inheritance process model, VSTS)](../../work/customize/process/customize-process-field.md)
-- [Add or modify a field (Hosted XML or On-premises XML)](../../work/customize/add-modify-field.md)  
+::: moniker-end
 
+::: moniker range=">= tfs-2013"
+
+### Add custom fields
+  
+You can add data to support reporting requirements by [adding a custom field](../../work/customize/add-modify-field.md).  
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ### Extensibility 
 
 Using the REST API service, you can [create a custom widget](../../extend/develop/add-dashboard-widget.md). 
  
+::: moniker-end
 
 
 <!---

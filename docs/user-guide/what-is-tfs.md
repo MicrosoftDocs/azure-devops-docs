@@ -9,13 +9,12 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/07/2016
-monikerRange: '>= tfs-2013 <= tfs-2018'
 ---
 
 
 # What is Team Foundation Server?
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | TFS **2013**
+[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
 Team Foundation Server (TFS) is the on-premises version of our cloud service, [VSTS](what-is-vsts.md) (VSTS).  
 
