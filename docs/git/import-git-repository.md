@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/08/2018
+ms.date: 03/28/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -25,6 +25,19 @@ This guide shows you how to import an existing Git repo from GitHub, Bitbucket, 
 ::: moniker range=">= tfs-2017"
 
 ## Import into a new repo
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
+
+>[!IMPORTANT]
+>The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS. If you are using on-premises TFS, you can still import a GitHub repo using the steps in [Manually import a repo](#manually-import-a-repo). For more information, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html). 
+> 
+>This issue is scheduled to be fixed in TFS 2018.2. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 From the repo drop-down, select **Import repository**. 
 

@@ -5,7 +5,7 @@ ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: vs-devops-phase-rollout-with-rings
 ms.technology: vs-devops-articles
 ms.manager: willys
-ms.date: 05/22/2017
+ms.date: 03/28/2018
 ms.author: willys
 author: josh garverick
 ---
@@ -78,7 +78,7 @@ Let's observe how a change triggers and moves through our ring based deployment 
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
-1. A developer from the [Countdown Widget extension](hhttps://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALM-Rangers/Countdown-Widget-Extension) repository.
+1. A developer from the [Countdown Widget extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALM-Rangers/Countdown-Widget-Extension) repository.
 
 2. The commit triggers a continuous integration build.
 3. The new build triggers a continuous deployment trigger, which automatically starts the **Canaries** environment deployment.

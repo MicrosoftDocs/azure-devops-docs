@@ -23,6 +23,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/android-signing.png) [Android Signing](build/android-signing.md). Sign and align Android APK files | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/ant.png) [Ant](build/ant.md). Build with Apache Ant | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/cmake.png) [CMake](build/cmake.md). Build with the CMake cross-platform build system | VSTS, TFS 2015 RTM and newer |
+| ![icon](build/_img/go.png) [Go](build/go-build.md). Get, build, or test a Go application, or run a custom command | VSTS |
 | ![icon](build/_img/gradle.png) [Gradle](build/gradle.md). Build using a Gradle wrapper script | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/grunt.png) [Grunt](build/grunt.md). The JavaScript Task Runner | VSTS, TFS 2015.3 and newer |
 | ![icon](build/_img/gulp.png) [Gulp](build/gulp.md). Node.js streaming task based build system | VSTS, TFS 2015 RTM and newer |
@@ -121,6 +122,7 @@ monikerRange: '>= tfs-2015'
 | Task | Versions |
 |------|----------|
 | ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
+| ![icon](tool/_img/go.png) [Go Tool Installer](tool/go-install.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | VSTS |
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
 | ![icon](tool/_img/visual-studio-installer.png) [Visual Studio Test Platform Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VsTestPlatformToolInstaller). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
