@@ -56,9 +56,9 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](https://msdn.microsoft.com/library/bb386106.aspx#LoadBehavior).  
 
-##Office Add-in doesn't load or “Open in Excel” from Visual Studio fails
+##Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
 
-To connect to TFS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
+To connect to TFS or VSTS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
  
 <img src="_img/tfs-office-issues-tf86001.png" alt="TF86001 error message, Team Foundation was unable to load the Office Add-in" style="border: 2px solid #C3C3C3;" />
 
@@ -66,7 +66,7 @@ This error is typically caused when you install Visual Studio before you install
 
 
 ### Prerequisites 
-Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c.aspx). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://www.visualstudio.com/downloads/).   
+Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://docs.microsoft.com/dotnet/framework/tools/gacutil-exe-gac-tool). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://www.visualstudio.com/downloads/).   
 
 ### Run the Gacutil tool  
 

@@ -23,7 +23,7 @@ This error occurs when Team Explorer can't display the list of team projects def
   
 |Symptom|Problem/Resolution|  
 |-------------|-------------------------|  
-|When configuration information changes for a deployment of Team Foundation Server, the cache on client computers must be cleared.|Follow the steps in “To clear the cache on client computers for Team Foundation" later in this topic.|  
+|When configuration information changes for a deployment of Team Foundation Server, the cache on client computers must be cleared.|Follow the steps in "To clear the cache on client computers for Team Foundation" later in this topic.|  
 |An error appears that resembles the following text:<br /><br /> TF31001: Team Foundation cannot retrieve the list of team projects from Team Foundation Server*ServerName*. Team Foundation Server returned the following error: Access to the temp directory is denied.|Antivirus or firewall software on your client computer may be blocking services for Team Foundation Server. Disable the antivirus software or firewall to determine whether that change corrects the problem.|  
   
  **When the problem occurs on multiple computers**  
@@ -39,7 +39,7 @@ As an administrator, you should check the event logs for the application-tier se
 |TF31001: Team Foundation cannot retrieve the list of team projects from Team Foundation Server*ServerName*. The Team Foundation Server returned the following error: The request failed with HTTP status 503: service unavailable.|Required application pools and services might not be running.  For more information, see [Stop and start services, application pools, and websites](../../../../tfs-server/admin/stop-start-stuff.md).|  
 |An error appears that resembles the following text:<br /><br /> TF31001: Team Foundation cannot retrieve the list of team projects from Team Foundation Server*ServerName*. Team Foundation Server returned the following error: The request failed with HTTP status 503: TF30059: Fatal error when initializing web service.|The TCP/IP protocol for SQL Server is disabled. For information about how to enable the TCP/IP protocol, see [Enable TCP/IP Network Protocol for SQL Server](https://technet.microsoft.com/library/hh231672%28v=sql.110%29.aspx).|  
   
- If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System – Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).  
+ If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).  
   
 <a name="clearcache"></a> 
 ##  To clear the cache on your client computer  

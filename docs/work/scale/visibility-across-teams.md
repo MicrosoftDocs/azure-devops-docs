@@ -197,10 +197,10 @@ Key metrics and how they are changing
 	Bug debt trends
 
 Overall project health
-Agile – Team's Velocity any changes over time
-Waterfall – completeness of milestone delivery
+Agile &mdash;Team's Velocity any changes over time
+Waterfall &mdash;completeness of milestone delivery
 Dependencies status
-Different metrics than VP – code coverage, % complete, burndown
+Different metrics than VP &mdash;code coverage, % complete, burndown
 Code coverage
 % Complete
 Burndown

@@ -341,7 +341,7 @@ You manage templates from the Team Explorer pane.
 
 ![Templates, Team Explorer with power tools installed](_img/wi-templates-section-te.png)  
 
-The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders – right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
+The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders &mdash;right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
 
 You can cut, copy, paste, rename, and delete templates and folders using the context menu. You may also drag and drop templates into folders. To edit multiple templates, use shift-click to select a range or ctrl-click to add individual templates to your selection, then right-click. 
 

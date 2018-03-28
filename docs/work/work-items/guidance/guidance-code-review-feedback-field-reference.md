@@ -1,9 +1,11 @@
 ---
-title: Code review and feedback field reference | VSTS & TFS
-description: Definition of fields used to track code review and feedback requests and responses for Visual Studio Team Services (VSTS) and Team Foundation Server 
+title: Code review and feedback field reference
+titleSuffix: VSTS & TFS
+description: Definition of fields used to track code review and feedback requests and responses for Visual Studio Team Services & Team Foundation Server 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
+ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
 ms.date: 01/20/2017
@@ -30,7 +32,7 @@ You can use the code review and feedback fields to create queries and reports th
 |**Associated Context Code**|An integer value that captures whether the code review is for **1** (shelveset) or **2** (changeset).<br/>Reference name=Microsoft.VSTS.CodeReview.ContextCode|Integer|  
 |**Associated Context Owner**|The GUID assigned to the shelveset owner who requested the code review.<br/>Reference name=Microsoft.VSTS.CodeReview.ContextOwner|String|  
 |**Associated Context Type**|The type of code work requested for review: **Shelveset** or **Changeset**.<br/>Reference name=Microsoft.VSTS.CodeReview.ContextType|String|  
-|**Closed Status**|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 â€“ Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br />-   **3- Needs Work**<br />-   **4 - Declined**<br />-   **5 - Removed**<br/>Reference name=Microsoft.VSTS.CodeReview.ClosedStatus|String|  
+|**Closed Status**|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash; Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br />-   **3- Needs Work**<br />-   **4 - Declined**<br />-   **5 - Removed**<br/>Reference name=Microsoft.VSTS.CodeReview.ClosedStatus|String|  
 |**Closed Status Code**|A value ranging from 0 to 5 that corresponds to the status selected by the reviewer when closing the code review request.<br/>Reference name=Microsoft.VSTS.CodeReview.ClosedStatusCode|Integer|  
 |**Closing Comments**|The comment entered by the reviewer when closing the review request.<br/>Reference name=Microsoft.VSTS.CodeReview.ClosingComment|String|  
 |**Reviewed By**|The name of the team member who reviewed the code. The State transitions to Reviewed when the code reviewer responds. (Code Review Response)<br/>Reference name=Microsoft.VSTS.Common.ReviewedBy|String|  
@@ -45,7 +47,7 @@ You can use the code review and feedback fields to create queries and reports th
 |**Application Launch Instructions**|Instructions to stakeholders on how to start the application.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationLaunchInstructions|HTML|  
 |**Application Start Information**|Guidelines to direct stakeholder feedback.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationStartInformation|PlainText|  
 |**Application Type**|The type of application that stakeholders will provide feedback on. The valid types are specified in the process configuration file, ProcessConfiguration. The default values are **Web Application**, **Remote Machine**, and **Client Application**.<br/>Reference name=Microsoft.VSTS.Feedback.ApplicationType|String|  
-|**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 â€“ Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
+|**Rating**|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash; Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**<br/>Reference name=Microsoft.VSTS.Common.Rating|String|  
   
 ## Related articles
 - [Index of work item fields](work-item-field.md)

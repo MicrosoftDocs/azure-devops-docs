@@ -1,12 +1,14 @@
 ---
 title: WebLayout XML elements reference 
 titleSuffix: VSTS & TFS
-description: Syntax and usage of all elements used in the new web form layout for Visual Studio Team Services (VSTS) and Team Foundation Server
+description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
 ms.author: kaelli
+ms.topic: reference
+monikerRange: '>= tfs-2017'
 ms.date: 11/28/2017
 ---
 
@@ -19,7 +21,7 @@ You use the **WebLayout** element to define the layout and controls that appear 
 > [!IMPORTANT]  
 > This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
->For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+> For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 The **WebLayout** element is a required child element of the **FORM** element. This topic documents the **WebLayout** element and its child elements. Use this as a guide to further customize a WIT definition that contains the new **WebLayout** section. To learn more about these changes, see the blog post, [Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/).
 
@@ -28,7 +30,7 @@ To modify the web layout, use the information provided in this topic to modify t
 
 To customize the windows client layout, see [Layout XML element](layout-xml-element-reference.md).  
 
-##Enablement of the new form and WebLayout section
+## Enablement of the new form and WebLayout section
 
 When the new form roll out is enabled, the XML definitions for all work item types (WITs) in the collection are updated to include a **WebLayout** section within the **FORM** section.  
 
@@ -79,6 +81,10 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
     </SystemControls>
 ...
 ```
+
+> [!NOTE]  
+> The [**Link** element](link-param-xml-elements-reference.md) is not an allowed element within the **SystemControls** section. 
+
 
 **For TFS 2017 On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
 

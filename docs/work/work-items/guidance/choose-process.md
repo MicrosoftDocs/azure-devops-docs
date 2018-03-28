@@ -1,9 +1,11 @@
 ---
-title: Choose a process | VSTS & TFS  
-description: Choose a process or process template, work with team project artifacts in VSTS or Team Foundation Server (TFS)    
+title: Choose a process
+titleSuffix: VSTS & TFS
+description: Choose a process or process template, work with team project artifacts in Visual Studio Team Services & Team Foundation Server 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2017
