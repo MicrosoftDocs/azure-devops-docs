@@ -1,16 +1,18 @@
 ---
 title: LinksControlOptions XML elements (client) 
-titleSuffix: VSTS & TFS  
+titleSuffix: TFS  
 description: XML syntax to scope the allowed links within a links control element used in the client and web forms for Team Foundation Server (TFS)  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.manager: douge
 ms.author: kaelli
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/02/2017
 ---
 
-# LinksControlOptions elements (Client and web, TFS 2015) 
+# LinksControlOptions elements
 
 **TFS 2015 | TFS 2013**
 

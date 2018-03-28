@@ -88,7 +88,7 @@ After you confirm that you have an edition of SQL Server that supports reporting
 3.	In **Feature Selection**, add these features:
 	*	Analysis Services
 	*	Reporting Services - Native
-	*	Management Tools – Complete (not pictured)
+	*	Management Tools - Complete (not pictured)
 
 	![Add features to your instance](_img/feature-selection.png)
 

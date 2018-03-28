@@ -177,6 +177,14 @@
         href: ./reference/weblayout-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: LinksControlOptions (web)
         href: ./reference/linkscontroloptions-xml-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Old web form layout
+      items:
+      - name: Layout
+        href: ./reference/layout-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Control
+        href: ./reference/control-xml-element-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: LinksControlOptions (client and web)
+        href: ./reference/linkscontroloptions-elements.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: LabelText and Text
       href: ./reference/labeltext-and-text-xml-elements-reference.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Link and Param

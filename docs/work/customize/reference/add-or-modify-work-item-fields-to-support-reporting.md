@@ -196,7 +196,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
  The following table lists the fields whose reference names begin with "System" and that are listed in the PivotTable report with the prefix of "Work Item." These fields are put directly under the Work Item dimension. All other fields are put under folders whose names correspond to the prefixes in their reference names.  
   
 > [!NOTE]  
->  Deployments that do not use the Enterprise version of SQL Server Analysis Services do not have access to the translation features that are provided by that version. In these deployments, fields are identified by their full reference name in the cube, with â€˜.' replaced by â€˜_' (for example, "System_Id" and "System_Title").  
+>  Deployments that do not use the Enterprise version of SQL Server Analysis Services do not have access to the translation features that are provided by that version. In these deployments, fields are identified by their full reference name in the cube, with "˜.' replaced by "˜_' (for example, "System_Id" and "System_Title").  
   
 |Name in PivotTable report and cube|Reference name|Data type|  
 |----------------------------------------|--------------------|---------------|  
