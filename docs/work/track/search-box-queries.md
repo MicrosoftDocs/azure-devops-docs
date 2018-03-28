@@ -76,7 +76,7 @@ You can enter or select one or more of the following shortcut identifiers:
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
-Use the `=`, `:`, and `â€“` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+Use the `=`, `:`, and `"“` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
 
 # [Browser](#tab/browser) 
 
@@ -235,7 +235,7 @@ Use these search operators to specify search criteria:
 
 &#160;&#160;&#160;**=** (EQUALS) to search for exact matches of text.  
 &#160;&#160;&#160;**:** (CONTAINS) to search for partial matches of text.  
-&#160;&#160;&#160;**â€“** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
+&#160;&#160;&#160;**"“** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
 
 The following examples show how to use operators when you create a search string.
 
