@@ -5,6 +5,7 @@ description: Configure a Burndown or Burnup widget that you add to a dashboard t
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
 ms.assetid: 
+ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelli
 monikerRange: 'vsts'

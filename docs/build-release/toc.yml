@@ -295,6 +295,8 @@
       href: tasks/build/ant.md
     - name: CMake
       href: tasks/build/cmake.md
+    - name: Go
+      href: tasks/build/go-build.md
     - name: Gradle
       href: tasks/build/gradle.md
     - name: Grunt
@@ -451,6 +453,8 @@
     items:
     - name: .NET Core Tool Installer
       href: tasks/tool/net-core-installer.md
+    - name: Go Tool Installer
+      href: tasks/tool/go-install.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer
