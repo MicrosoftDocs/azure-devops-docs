@@ -1,11 +1,13 @@
 ---
-title: Link and Param XML elements reference | VSTS & TFS
-description: Adds a hyperlink to a field or a standalone label on a work item form by using the Link element - Team Foundation Server (TFS)
+title: Link and Param XML elements reference
+titleSuffix: VSTS & TFS 
+description: Adds a hyperlink to a field or a standalone label on a work item form by using the Link element, Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
 ms.manager: douge
 ms.author: kaelli
+ms.topic: reference
 ms.date: 04/05/2017
 ---
 
@@ -55,8 +57,10 @@ The `Link` element is either a child element of the `Control` element, or a chil
 |[Control](control-xml-element-reference.md)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
 |[LabelText](labeltext-and-text-xml-elements-reference.md)|Optional `Control` element.<br />Container element for a label to appear on the work item form.|  
 |[Text](labeltext-and-text-xml-elements-reference.md)|Optional `LabelText` element.<br /> Container element for the information or label to appear on the work item form.|  
-|[WebpageControlOptions](control-xml-element-reference.md)|Optional `Control` element.<br /> Container element that specifies the options for the Web page control.<br />For more information, see [Displaying Web Content within a Work Item Form](http://msdn.microsoft.com/en-us/25857829-d83e-4213-b4ec-63ec5c7b0afa).|  
+|[WebpageControlOptions](control-xml-element-reference.md)|Optional `Control` element.<br /> Container element that specifies the options for the Web page control.<br />For more information, see [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md).|  
   
+
+
 ## Remarks  
 The default behavior of the `Link` element is to open the hyperlink in the work item form or Web page. If the hyperlink is authored to open in a new window (target="_blank"), then an external browser is opened.  
   
@@ -64,14 +68,12 @@ You can combine plain and hyperlinked text by adding multiple `Text` elements in
   
 The `LabelText` element is only recognized by clients that are running the latest version of Team Explorer. Therefore, you must specify the `Label` attribute in a `Control` element when you specify a child `Link` element. For clients that are running the latest version of Team Explorer, the text provided by the a `LabelText` element appears in the work item form. For clients that are running previous versions of Team Explorer, the text specified by the `Control` element `Label` attribute appears in the work item form.  
   
+> [!IMPORTANT]  
+> You can insert a **Link** element within **Layout** section (old web form) or the  **WebLayout** section (new web form), except not within the **SystemControls** section. The **SystemControls** section renders the form header and is restricted to specific rules as described in [WebLayout and Control elements](weblayout-xml-elements.md). 
+
 ### Example: Specify a hyperlink with parameters  
   
-The following example shows how you can define a hyperlink that links to the process guidance for the Iteration topic.  
- 
-> [!div class="tabbedCodeSnippets"]
-```XML
-http://ServerName/sites/CollectionName/ProjectName/render.aspx?wit=bug&amp;topic=Iteration
-```  
+The following example shows how you can define a hyperlink, such as `http://ServerName/sites/CollectionName/ProjectName/render.aspx?wit=bug&amp;topic=Iteration` that links to the process guidance for the Iteration topic.  
 
 The name of the project is derived from the value assigned to the System.Project field.  
   
@@ -96,13 +98,14 @@ The following example shows how you can assign a hyperlink to the text "work ite
    </LabelText> 
 </Control>
 ```
-## Example: Add a hyperlink to a field  
+
+### Example: Add a hyperlink to a field  
  
 The following example shows how you can add a hyperlink to the label for a field on a work item form.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="This text comes from the Label attribute:">
+<Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.UserAcceptanceTest" LabelPosition="Left" Label="This text comes from the Label attribute:">
    <LabelText>
       <Text>
          <Link UrlRoot="http://www.live.com/" />
@@ -116,3 +119,4 @@ The following example shows how you can add a hyperlink to the label for a field
 ## Related articles  
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Design the work item form](design-work-item-form.md)
+-  [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md)
