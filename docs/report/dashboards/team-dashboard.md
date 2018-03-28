@@ -4,12 +4,14 @@ description: View progress and gain quick access to code, builds, and work items
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 08/11/2016
 ---
 
-# Pin items to a team dashboard (TFS)
+# Pin items to a team dashboard
 
 <b>TFS 2015 | TFS 2013</b>  
 

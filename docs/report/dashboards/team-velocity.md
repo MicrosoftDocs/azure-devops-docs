@@ -5,7 +5,7 @@ description: Track team velocity across several sprints using the Analytics-base
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli

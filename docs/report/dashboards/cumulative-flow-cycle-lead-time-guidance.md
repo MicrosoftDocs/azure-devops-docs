@@ -5,6 +5,7 @@ description: Process guidance to work with cumulative flow diagrams to improve y
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-reporting  
 ms.assetid:  
+ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
@@ -15,10 +16,18 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system.  The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards (VSTS only at this time). 
+::: moniker range=">= tfs-2013" 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
+
+::: moniker-end
+  
+::: moniker range="vsts" 
+
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
+
+::: moniker-end
 
 To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md).
-
 
 ## Sample charts and primary metrics
 
@@ -202,6 +211,8 @@ A good rule of thumb for work in progress is that there should be no more than t
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 
+  
+::: moniker range="vsts" 
 
 ## Lead time versus cycle time   
 
@@ -244,3 +255,14 @@ You can also see how process changes affect your lead and cycle time. For exampl
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow charts](cumulative-flow.md)
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013" 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Configure your cumulative flow chart](cumulative-flow.md) 
+
+::: moniker-end

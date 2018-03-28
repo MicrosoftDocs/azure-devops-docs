@@ -7,18 +7,27 @@ ms.technology: vs-devops-reporting
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-ms.date: 11/16/2017
+ms.topic: tutorial
+ms.date: 03/23/2018  
 ---
 
 # Configure a cumulative flow chart
 
 [!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
+::: moniker range=">= tfs-2013" 
 
->[!NOTE]   
-><b>Feature availability:</b> The CFD widget is available only for VSTS at this time. 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. Use this topic to learn how to: 
+
+> [!div class="checklist"] 
+> * View and configure the built-in Cumulative Flow chart (work tracking datastore)     
+
+For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
+
+::: moniker-end
+  
+::: moniker range="vsts" 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
 
 The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or ([CMMI](../../work/work-items/guidance/cmmi-process.md)) you've selected.
 
@@ -30,10 +39,13 @@ Use this topic to learn how to:
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
+::: moniker-end
+
 <!---
 A few options are available for you to [configure your chart](#configure) or [configure your CFD widget](#configure-widget).
 -->
  
+::: moniker range="vsts" 
 
 <a id="configure-widget"></a>
 ## Configure the CFD widget    
@@ -68,7 +80,9 @@ You will need to be a team administrator or a member of the Project Administrato
    
 	<img src="_img/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" />    
 
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2013"
 
 ## View the built-in cumulative flow chart   
 
@@ -100,6 +114,8 @@ Each team can set their preferences for the built-in cumulative flow charts.
 3. Repeat steps 1 and 2 for each backlog level you want to configure.  
 
 For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../work/kanban/kanban-basics.md). 
+
+::: moniker-end
 
 ## Try this next
  
