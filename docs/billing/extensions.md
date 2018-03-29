@@ -1,13 +1,13 @@
 ---
 title: VSTS extensions overview 
-description: VSTS extensions overview
+description: VSTS extensions overview, free, create or build your own
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 
 ms.manager: douge
-ms.author: 
-ms.date: 1/29/2018
+ms.author: chcomley
+ms.date: 3/28/2018
 monikerRange: 'vsts'
 ---
 
@@ -41,7 +41,7 @@ Adding extensions to your VSTS account is incredibly easy:
 
 1. Search and find extensions for your account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
 2. Install the extension from the Visual Studio Marketplace and start using it in VSTS or TFS.
-You can install extension with a few clicks. You must have administrative permissions to upload or install extensions. 
+You can install an extension with a few clicks. You must have administrative permissions to upload or install extensions. 
 
 ## Get or build extensions for VSTS, Visual Studio, and Visual Studio Code
 

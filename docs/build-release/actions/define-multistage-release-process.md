@@ -143,6 +143,8 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
    or a different set of tags within the same deployment group.
 
+[!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
+
 ## Add approvals within a release definition
 
 The release definition you have modified deploys to test and then to production. If the deployment to test fails, the trigger
