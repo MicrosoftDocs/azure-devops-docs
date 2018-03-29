@@ -93,7 +93,7 @@ PBIs and bugs follow this typical workflow progression:
 
 -   The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**  
 -   The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state  
--   The team updates the status to **Committed** when they decide to complete the work during the sprint  
+-   The team updates the status to **Committed** when they decide to commit to working on it during the sprint  
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
 
