@@ -35,29 +35,29 @@ SDK to call VMware API functions that access vSphere
 web services. To install and configure the SDK on 
 the agent machine:
 
-* Download and install the latest 
-  version of the Java Runtime Environment from 
-  [this location](http://aka.ms/downloadjre).
+   * Download and install the latest 
+     version of the Java Runtime Environment from 
+     [this location](http://aka.ms/downloadjre).
 
-* Go to [this location](http://aka.ms/vspheresdk)
-  and sign in with your existing credentials or register
-  with the website. Then download the **vSphere 6.0 
-  Management SDK**.
+   * Go to [this location](http://aka.ms/vspheresdk)
+     and sign in with your existing credentials or register
+     with the website. Then download the **vSphere 6.0 
+     Management SDK**.
 
-* Create a directory for the vSphere Management SDK
-  such as **C:\vSphereSDK**. Do not include spaces in 
-  the directory names to avoid issues with some of the
-  batch and script files included in the SDK.
+   * Create a directory for the vSphere Management SDK
+     such as **C:\vSphereSDK**. Do not include spaces in 
+     the directory names to avoid issues with some of the
+     batch and script files included in the SDK.
 
-* Unpack the vSphere Management SDK into the 
-  new folder you just created.
+   * Unpack the vSphere Management SDK into the 
+     new folder you just created.
 
-* Add the full path and name of the precompiled 
-  VMware Java SDK file **vim25.jar** to the machine's 
-  CLASSPATH environment variable. If you used the path and name
-  **C:\vSphereSDK** for the SDK files, as shown above, the full
-  path will be:  
-  `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
+   * Add the full path and name of the precompiled 
+     VMware Java SDK file **vim25.jar** to the machine's 
+     CLASSPATH environment variable. If you used the path and name
+     **C:\vSphereSDK** for the SDK files, as shown above, the full
+     path will be:  
+     `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
 1. Install an agent on the **agent machine**:
 
@@ -107,20 +107,16 @@ the agent machine:
 1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
    "**+**" icon to create a new release definition.
 
-1. In the **Create release definition** dialog, 
-   select the **Empty** template and choose **Next**.
+1. Choose **Start with an Empty process**.
 
-1. In the next page, select **Choose Later** and then choose **Create**.
-   This creates a new release definition with one 
-   default environment and no linked artifacts.
+1. Open the **Tasks** tab and choose the **+** icon for the **Agent phase**.
+   Add a **VMware Resource Deployment** task to the environment. You may need
+   to install the task extension from Marketplace.
 
-1. Choose **+ Add tasks** and add a **VMware Resource 
-   Deployment** task from the **Deploy** section of the
-   **Task catalog** dialog to the environment.
+   ![Adding a VMware Resource Deployment task](_img/vmware/add-vmware-task.png)
 
 1. To configure the **VMware Resource Deployment** task
-   to take snapshot of virtual machines, or to revert
-   or delete them, use these settings:
+   to take snapshot of virtual machines, or to revert or delete them, use these settings:
 
    ![VMWare Resource Deployment](_img/vmware/vmware-icon.png) [VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp) - Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them.
    
@@ -190,8 +186,7 @@ the agent machine:
 
 1. Type a name for the new release definition and save it.
 
-1. Create a new release from the release definition
-   and deploy it to the environment.
+1. Create a new release from the release definition and deploy it to the environment.
 
 ## Q&A
 
