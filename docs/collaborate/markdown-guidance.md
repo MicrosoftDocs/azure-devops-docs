@@ -151,12 +151,12 @@ Organize related items with lists. You can add ordered lists with numbers, or un
 
 Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
-###Ordered or numbered lists
+### Ordered or numbered lists
 **Example:**  
 ```
-0. First item.
-0. Second item.
-0. Third item.
+1. First item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -164,7 +164,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 2. Second item.
 3. Third item.
 
-###Bullet lists
+### Bullet lists
 
 **Example:**  
 <pre>
@@ -178,7 +178,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 - Item 2
 - Item 3
 
-###Nested lists
+### Nested lists
 
 **Example:**  
 <pre>
@@ -629,7 +629,7 @@ Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html
 
 To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block,  as shown in the following examples: 
 
-###Example: Greek characters
+### Example: Greek characters
 ```KaTeX
 $
 \alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta, \kappa, \lambda, \mu, \nu, \omicron, \pi, \rho, \sigma, \tau, \upsilon, \phi, ...   
@@ -644,7 +644,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
 
 
-###Example: Algebraic notation 
+### Example: Algebraic notation 
 ```KaTeX
 Area of a circle is $\pi r^2$
  
@@ -662,7 +662,7 @@ $$
 
 
 
-###Example: Sums and Integrals 
+### Example: Sums and Integrals 
 ```KaTeX
 $$
 \sum_{i=1}^{10} t_i
