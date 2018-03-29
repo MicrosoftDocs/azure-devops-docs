@@ -122,13 +122,20 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 1. Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
    in the list of release definitions, and choose **Create release definition**.
 
-1. Select the **Empty** template. 
+1. Choose **Start with an Empty process**.
 
-1. Select the build definition or repository that contains the SQL scripts as the artifact source.
+1. If you created your new release definition from a build summary, check that the build definition or repository that contains the SQL scripts
+   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
+   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
-1. Add the following tasks to the definition:
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
+   and add a filter to include the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+
+1. Open the **Tasks** tab and add the following tasks to the definition:
 
    ![Azure Powershell](../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../tasks/deploy/azure-powershell.md) - Add a firewall rule in Azure to allow it to connect to Azure SQL Database.
    
@@ -165,13 +172,7 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 
 You're now ready to create a release, which means to start the process of running the release definition.
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build we just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Q&A
 
