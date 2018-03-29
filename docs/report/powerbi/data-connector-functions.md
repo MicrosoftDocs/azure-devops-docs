@@ -20,7 +20,7 @@ The Data Connector for VSTS includes functions which can be used by query author
 | Function | Description |
 |-|-|
 | VSTS.Feed | Replacement for Power Query M function [OData.feed](https://msdn.microsoft.com/library/mt260868.aspx). Allows users to easily execute OData queries against VSTS Analytics.  |
-| VSTS.Contents | Deprecated. Please use VSTS.AdvancedContents
+| VSTS.Contents | Deprecated. Please use VSTS.AccountContents
 | VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.  |
 
 <!--We strongly recommend using VSTS.Feed instead of VSTS.Contents and using the latest version of Power BI when possible.-->
