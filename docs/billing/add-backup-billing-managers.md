@@ -11,7 +11,7 @@ ms.date: 3/28/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-#  Add a backup billing manager for your VSTS account
+# Add a backup billing manager for your VSTS account
 
 **VSTS**
 
@@ -31,7 +31,6 @@ add **owner** or **contributor** roles to users in the Azure subscription that's
 
 ## Related information
 
-* [VSTS billing overview](overview.md)
 * [Set up billing](set-up-billing-for-your-account-vs.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
