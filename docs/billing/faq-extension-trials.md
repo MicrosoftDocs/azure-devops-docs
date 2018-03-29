@@ -1,12 +1,12 @@
 ---
 title: Frequently asked questions about trials for VSTS
-description: TFrequently asked questions about trials for VSTS
+description: Frequently asked questions about extensions and trials for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/22/2018
+ms.date: 3/28/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -57,7 +57,7 @@ A: Check the extension pane in your Users hub.
 
 ![Check extension trial](_img/try-additional-features/check-extension-trial-updated-ui.png)
 
-####Q:	What should I do when the trial is almost expired or has ended for extensions that include free users?
+### Q:	What should I do when the trial is almost expired or has ended for extensions that include free users?
 
 A:	Once a trial expires, only those users to whom the extension or feature has been assigned in the Users hub will be able to use it and you will
 only be able to assign up to the number of free plus paid users included in your account. So for instance with Package Management, which includes 5 
@@ -66,11 +66,9 @@ assign Package Management to 11 total users in your account.
 
 ## Related information
 
-- [assign features or extensions to users](../marketplace/assign-paid-extensions.md)
-- [buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md) 
+- [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
+- [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md) 
 - [Set up billing](set-up-billing-for-your-account-vs.md)
-- [Add backup billing managers](add-backup-billing-managers.md)
-- [VSTS billing FAQ] (vsts-billing-faq.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://www.visualstudio.com/team-services/support/)
