@@ -68,9 +68,9 @@ You can specify a default value for a field, or you can copy the value from anot
 <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
 <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
        <ALLOWEDVALUES>  
-         <LISTITEM value="P1"/>  
-         <LISTITEM value="P2"/>  
-         <LISTITEM value="P3"/>  
+          <LISTITEM value="P1"/>  
+          <LISTITEM value="P2"/>  
+          <LISTITEM value="P3"/>  
        </ALLOWEDVALUES>  
 <DEFAULT from="value" value="P3"/>  
 </FIELD>  
