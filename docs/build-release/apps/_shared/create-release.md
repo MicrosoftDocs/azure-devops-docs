@@ -42,6 +42,8 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    * **App Service Name**: Select the name of the web app from your subscription.
 
+   [!INCLUDE [edit-template-vars-in-environment](edit-template-vars-in-environment.md)]
+
 1. Save the release definition.
 
 <h2 id="deploy">Create a release to deploy your app</h2>
