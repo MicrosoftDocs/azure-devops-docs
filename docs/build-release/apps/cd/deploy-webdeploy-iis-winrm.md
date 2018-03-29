@@ -82,15 +82,15 @@ Follow these steps to configure each target server.
 1. Decide if you want to use HTTP or HTTPS to communicate
    with the target machine(s).
 
-   - If you choose HTTP, execute the following in a Command
+   * If you choose HTTP, execute the following in a Command
      window with Administrative permissions:
 
      `ConfigureWinRM.ps1 {FQDN} http`
 
-   >This command creates an HTTP WinRM listener and
-   opens port 5985 inbound for WinRM over HTTP.
+     > This command creates an HTTP WinRM listener and
+     opens port 5985 inbound for WinRM over HTTP.
 
-   - If you choose HTTPS, you can use either a FQDN or an IP
+   * If you choose HTTPS, you can use either a FQDN or an IP
      address to access the target machine(s). To use a FQDN to access the target machine(s),
      execute the following in the PowerShell console with Administrative permissions:  
 
@@ -101,7 +101,7 @@ Follow these steps to configure each target server.
 
      `ConfigureWinRM.ps1 {ipaddress} https`
 
-     >These commands create a test certificate by using
+     > These commands create a test certificate by using
      **MakeCert.exe**, use the certificate to create
      an HTTPS WinRM listener, and open port
      5986 inbound for WinRM over HTTPS. The script also
@@ -138,11 +138,18 @@ Continuous deployment (CD) means starting an automated release process whenever 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
 
-1. Select the **Empty** template and click **Next**.
+1. Choose **Start with an Empty process**.
 
-1. In the **Artifacts** section, make sure your CI build definition that publishes the Web Deploy package is selected as the artifact source.
+1. If you created your new release definition from a build summary, check that the build definition
+   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
+   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then click **Create**.
+   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
+
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
+   and add a filter to include the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
 1. On the **Variables** tab of the environment in release definition, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
@@ -178,15 +185,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
-
-1. After the release is complete, navigate to your site running on the IIS servers, and verify its contents.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Q&A
 

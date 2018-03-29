@@ -2,49 +2,43 @@
   href: index.md
 - name: Overview
   items:
-  - name: VSTS billing overview
+  - name: Billing overview
     href: overview.md
 - name: Quickstarts
   items:
   - name: Set up billing
     href: set-up-billing-for-your-account-vs.md
-  - name: How to pay for VSTS users
+  - name: Pay for users
     href: buy-basic-access-add-users.md
-  - name: How to buy VSTS CI/CD
+  - name: Buy CI/CD
     href: buy-more-build-vs.md
-  - name: Free trials for paid VSTS features and extensions
+  - name: Start free trials
     href: try-additional-features-vs.md
-  - name: How to buy cloud-based load testing services
+  - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Change the Azure Active Directory for your VSTS account
+  - name: Change the Azure AD for your VSTS account
     href: ../accounts/change-azure-active-directory-vsts-account.md
-- name: How-to Guides
+- name: How-to guides
   items:
-  - name: VSTS billing
+  - name: Manage billing
     items:
-    - name: Set up billing
-      href: set-up-billing-for-your-account-vs.md
-    - name: VSTS billing FAQ
-      href: vsts-billing-faq.md
-    - name: Add backup billing managers
+    - name: Add backup billing manager
       href: add-backup-billing-managers.md
-    - name: Change billing to a different Azure subscription
+    - name: Change Azure subscription
       href: change-azure-subscription.md
-    - name: Change the number of paid VSTS users
+    - name: Change number of paid users
       href: reduce-cancel-paid-vsts-users.md
-  - name: TFS billing
+    - name: Billing FAQ
+      href: vsts-billing-faq.md
+  - name: Manage Marketplace extensions
     items:
-    - name: Buy TFS CALs or access to the TFS Test hub
-      href: buy-access-tfs-test-hub.md
-  - name: Manage paid VSTS or TFS extensions
-    items:
-    - name: Increase or decrease number of paid users
+    - name: Change number of paid users
       href: change-number-paid-extension-users.md
-    - name: Approve requests for VSTS extensions
+    - name: Approve requests
       href: ../marketplace/approve-vsts-extensions.md
-    - name: Assign paid extensions to your users
+    - name: Assign paid extensions to users
       href: ../marketplace/assign-paid-extensions.md
     - name: Uninstall or disable extensions
       href: ../marketplace/uninstall-disable-vsts-extensions.md
@@ -60,11 +54,11 @@
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: VSTS trials FAQ
+  - name: Trials FAQ
     href: faq-extension-trials.md
 - name: Reference
   items:
-  - name: VSTS Permissions 
+  - name: Permissions 
     href: ../security/permissions.md
 - name: Resources
   items:
@@ -72,7 +66,5 @@
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
-  - name: VSTS and TFS extensions
-    href: extensions.md
-  - name: Manage Extensions
+  - name: Marketplace extensions
     href: ../marketplace/index.md
