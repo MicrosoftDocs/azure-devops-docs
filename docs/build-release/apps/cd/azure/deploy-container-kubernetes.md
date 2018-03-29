@@ -59,11 +59,18 @@ Your CD release process picks up the artifacts published by your CI build and th
 1. Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
    in the list of release definitions, and choose **Create release definition** 
 
-1. Select the **Deploy to Kubernetes cluster** template and choose **Next**.
+1. Select the **Deploy to Kubernetes cluster** template and choose **Apply**.
 
-1. In the **Artifacts** section, make sure your CI build definition for the Docker package is selected as the artifact source.
+1. In the **Artifacts** section on the **Pipeline** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+   ![Checking or selecting the build definition and artifact](../../_shared/_img/confirm-or-add-artifact.png)
+
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
+   continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../../_shared/_img/confirm-or-set-cd-trigger.png)
+
+   > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
 
 1. Add two more instances of the **Deploy to Kubernetes** task to your release definition.
    This task uses the `kubectl` command to execute operations on a Kubernetes cluster.
@@ -121,13 +128,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
+[!INCLUDE [simple-create-release](../../_shared/simple-create-release.md)]
 
 ## Q&A
 
