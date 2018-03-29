@@ -113,12 +113,12 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 ```XML 
 <GLOBALLISTS>  
        <GLOBALLIST name="name of global list">  
-         <LISTITEM value="List item 1" />  
-         <LISTITEM value="List item 2" />  
-         <LISTITEM value="List item 3" />  
-         <LISTITEM value="List item 4" />  
-         . . .  
-         <LISTITEM value="List item n" />  
+          <LISTITEM value="List item 1" />  
+          <LISTITEM value="List item 2" />  
+          <LISTITEM value="List item 3" />  
+          <LISTITEM value="List item 4" />  
+          . . .  
+          <LISTITEM value="List item n" />  
        </GLOBALLIST>  
 </GLOBALLISTS>  
 ```  
@@ -146,12 +146,12 @@ To add a global list to a project collection, you can import the following synta
 ```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
        <GLOBALLIST name="NameOfGlobalList">  
-         <LISTITEM value="ListItem1" />  
-         <LISTITEM value="ListItem2" />  
-         <LISTITEM value="ListItem3" />  
-         <LISTITEM value="ListItem4" />  
-         . . .  
-         <LISTITEM value="ListItemN" />  
+        Â <LISTITEM value="ListItem1" />  
+        Â <LISTITEM value="ListItem2" />  
+        Â <LISTITEM value="ListItem3" />  
+        Â <LISTITEM value="ListItem4" />  
+        Â . . .  
+        Â <LISTITEM value="ListItemN" />  
        </GLOBALLIST>  
 </gl:GLOBALLISTS>  
 ```  
@@ -164,7 +164,7 @@ To add a global list to a project collection, you can import the following synta
 - [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?  
-Yes for on-premises TFS. The global list named **Builds**"“*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
+Yes for on-premises TFS. The global list named **Builds**"â€œ*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
   
 To learn more about using this list, see [Query based on build and test integration fields](../../track/build-test-integration.md).  
   
