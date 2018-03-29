@@ -24,7 +24,7 @@ VSTS or Team Foundation Server.
 You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../actions/virtual-networks/create-virtual-network.md).
 
 1. Install the **Virtual Machine Manager** (VMM) console by
-   following [these instructions](https://technet.microsoft.com/library/gg610627.aspx).
+   following [these instructions](https://docs.microsoft.com/system-center/vmm/install-console).
    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
 1. Install an agent on the **agent machine**:
