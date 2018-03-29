@@ -26,23 +26,23 @@ Your CD release process picks up the artifacts published by your CI build and th
    ![Checking or selecting the build definition and artifact](_img/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and the **master** branch is selected. If not, set these options now.
+   continuous deployment trigger is enabled, and add a filter to include the **master** branch.
 
    ![Checking or setting the Continuous deployment trigger](_img/confirm-or-set-cd-trigger.png)
 
    > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
 
-1. Open the **Task** tab, select the **Deploy Azure App Service** task, and configure it as follows:
+1. Open the **Tasks** tab and, with **Environment 1** selected, configure the task property variables as follows:
 
-   ![Deploy: Azure App Service Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../tasks/deploy/azure-app-service-deploy.md) task - deploy the app to Azure App Services.
-
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+   * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) to manually set up the connection.
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
 
-   - **App Service Name**: Select the name of the web app from your subscription.
+   * **App Service Name**: Select the name of the web app from your subscription.
+
+   [!INCLUDE [edit-template-vars-in-environment](edit-template-vars-in-environment.md)]
 
 1. Save the release definition.
 
