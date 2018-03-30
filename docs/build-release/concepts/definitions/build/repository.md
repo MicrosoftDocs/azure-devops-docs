@@ -115,6 +115,11 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker-end
 
+::: moniker range="vsts"
+> [!NOTE]
+> Cleaning is not relevant if you are using a [hosted agent](../../../concepts/agents/hosted.md) because you get a new agent every time in that case.
+::: moniker-end
+
 ::: moniker range=">= tfs-2017"
 
 #### VSTS, TFS 2018, TFS 2017.2, TFS 2017.3
@@ -160,6 +165,8 @@ If you select **True** then the build process performs an undo of any changes. I
 [//]: # (TODO: clarify folder)
 
 Select **true** to delete the repository folder.
+
+[!INCLUDE [temp](_shared/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -380,6 +387,11 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
+::: moniker-end
+
+::: moniker range="vsts"
+> [!NOTE]
+> Cleaning is not relevant if you are using a [hosted agent](../../../concepts/agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
