@@ -1,5 +1,5 @@
 ---
-title: Integrate your Jenkins CI builds with VSTS DevOps | Microsoft Docs
+title: Integrate your Jenkins CI builds with VSTS CD to Azure | Microsoft Docs
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Visual Studio Team Services (VSTS)
 author: mlearned
 manager: douge
@@ -14,23 +14,22 @@ ms.devlang: na
 ms.topic: tutorial
 ms.tgt_pltfrm: 
 ms.workload: 
-ms.date: 03/17/2018
+ms.date: 03/30/2018
 ms.author: mlearned
 ms.custom: mvc
 monikerRange: '>= tfs-2013'
 ---
 
+# Tutorial:  Integrate your Jenkins CI jobs with VSTS CD to Azure
 
-# Tutorial:  Integrate your Jenkins CI jobs with VSTS DevOps
-
-Visual Studio Team Services (VSTS) provides integration with Jenkins so that you can use Jenkins for Continuous Integration (CI) while gaining several DevOps benefits from a VSTS release pipeline such as:
+Visual Studio Team Services (VSTS) provides integration with Jenkins so that you can use Jenkins for Continuous Integration (CI) while gaining several DevOps benefits from a VSTS release pipeline to Azure such as:
 
 * Reusing your existing investments in Jenkins Build jobs
 * Tracking work items and related code changes
 * View the entire CI/CD pipeline from a central location
 * Deploy various Azure services consistently via VSTS
 * Enforce quality of builds to gate deployments
-* Define workflows such as manual approval processes and CI triggers  
+* Define work flows such as manual approval processes and CI triggers  
 
 In this tutorial, you use Jenkins to build a **Java web app** that uses Maven and VSTS or Team Foundation Server (TFS) to deploy to an **Azure App Service**.
 
@@ -43,6 +42,7 @@ You will:
 > * Create a Jenkins Service Endpoint and Service Hooks in VSTS
 > * Create a VSTS Release Definition for CD to Azure
 > * Test the CI/CD pipeline with a pull request
+> * (Optionally) Create a VSTS build definition to wrap the Jenkins CI job
 
 ## Before you begin
 
@@ -69,7 +69,7 @@ GitHub](https://github.com/Azure-Samples/app-service-maven).  This tutorial uses
 
 1. In VSTS, on the **Code** hub for your VSTS project, select the option to **Import repository**.
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** textbox.
+1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
   ```
   https://github.com/Azure-Samples/app-service-maven
   ```
@@ -80,7 +80,7 @@ GitHub](https://github.com/Azure-Samples/app-service-maven).  This tutorial uses
 
 ## Configure Jenkins credentials and the VSTS plugin
 
-You must configure credentials for connecting to VSTS, and a plugin for **VS Team Services Continuous Deployment** on your Jenkins server.  When using credentials to connect to VSTS, it is a best practice to use a **personal access token (PAT)**.  You also need to create a Jenkins credential to use in your Jenkins build jobs.
+You must configure credentials for connecting to VSTS, and a plug in for **VS Team Services Continuous Deployment** on your Jenkins server.  When using credentials to connect to VSTS, it is a best practice to use a **personal access token (PAT)**.  You also need to create a Jenkins credential to use in your Jenkins build jobs.
 
   > [!NOTE]
   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in VSTS**.
@@ -92,7 +92,7 @@ You must configure credentials for connecting to VSTS, and a plugin for **VS Tea
 
 1. Enter a **name**, **description**, and then select **Add** **hostname**.
 
-1. In the **Include** textbox, enter ```\*.visualstudio.com``` to enable this credential for all VSTS accounts.  You can optionally enter your specific VSTS account.
+1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all VSTS accounts.  You can optionally enter your specific VSTS account.
 
 1. Select **Ok**.  You will see a message about empty credentials.  Select the link for **adding some credentials**.
 
@@ -104,7 +104,7 @@ You must configure credentials for connecting to VSTS, and a plugin for **VS Tea
 
 1. In the **Manage Jenkins** page, choose **Manage Plugins**.
 
-1. Filter the **available list** to find the **VS Team Services Continuous Deployment** plugin and choose the **Install without restart** option.  You can find additional information about the **VSTS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
+1. Filter the **available list** to find the **VS Team Services Continuous Deployment** plug in and choose the **Install without restart** option.  You can find additional information about the **VSTS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
 
 ## Configure a Jenkins CI build with VSTS integration
 
@@ -117,9 +117,9 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 1. In the **Source Code Management** tab, select **Git** and enter the **clone url** you saved earlier for the VSTS **Repository URL** and the branch containing your app code. If you are using Team Foundation Server, you can choose the option for **Team Foundation Version Control (TFVC)**.   
     ![Add a repo to your build](_img/integrate-jenkins-vsts-cicd/jenkins-git.png)
 
-1. Select the **Credentials** dropdown and choose the credential you created earlier.  You should successfully authenticate to your VSTS repository and not receive errors before continuing.  If you see errors, you likely have an issue with your credentials and VSTS **PAT**.
+1. Select the **Credentials** drop down and choose the credential you created earlier.  You should successfully authenticate to your VSTS repository and not receive errors before continuing.  If you see errors, you likely have an issue with your credentials and VSTS **PAT**.
 
-1. Select the **Build Triggers** tab, then **tick** the checkboxes for **Build when a change is pushed to TFS/Team Services** and **Build when a change is pushed to a TFS pull request**.  These two options rely on **VSTS Service Hooks** which you create in the next section.
+1. Select the **Build Triggers** tab, then **tick** the check boxes for **Build when a change is pushed to TFS/Team Services** and **Build when a change is pushed to a TFS pull request**.  These two options rely on **VSTS Service Hooks** which you create in the next section.
 
 1. Select the **Build** tab, **Add build step**, and then choose **Invoke top-level Maven targets**.
 
@@ -141,7 +141,7 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 
 1. Enter the **username** and **PAT** you created earlier.
  
-1. **Save** the jenkins project.
+1. **Save** the Jenkins project.
 
 ## Create a Jenkins Service Endpoint and Service Hooks in VSTS
 
@@ -184,7 +184,7 @@ A release definition specifies the process VSTS executes to deploy the app.  In 
 
 To create the release definition in VSTS:
 
-1. Open the **Releases** on the **Build &amp; Release** hub, and choose **Create release definition**. 
+1. Open **Releases** on the **Build &amp; Release** hub in VSTS, and choose **Create release definition**. 
 
 1. Select the **Empty** template by choosing **Start with an Empty process**.
 
@@ -224,9 +224,47 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 
 You are now using Jenkins CI builds with a VSTS code repository and release pipeline to perform CI/CD to Azure App Service.  You can easily track your code changes and deployments via the rich reporting capabilities of VSTS, and leverage Jenkins to execute CI builds.
 
+## (Optionally) Create a VSTS build definition to wrap the Jenkins CI job
+
+There is an additional approach (pattern) possible when integrating Jenkins and VSTS CI/CD.  You can optionally create a VSTS build definition to wrap the Jenkins build job, which will help you monitor the Jenkins job from VSTS.  This pattern works slightly differently by using the built-in VSTS build capabilities to trigger the pipeline when new code is pushed to the repository.  The approach for using both VSTS build and Jenkins together requires both VSTS build and Jenkins agents.  To enable this pattern, you will modify a few items for the VSTS and Jenkins CI/CD pipeline that you created in earlier steps.
+
+1. Navigate to the Jenkins build job you created earlier.
+
+1. Select the **Build Triggers** tab, then remove the **tick** for the check boxes for **Build when a change is pushed to TFS/Team Services** and **Build when a change is pushed to a TFS pull request**.  These two options are not needed for this pattern since the VSTS build definition has the ability to trigger the CI/CD pipeline when new code is pushed to the repo.
+
+1. Navigate to your **VSTS account**.
+
+1. Open **Builds** on the **Build &amp; Release** hub in VSTS, and choose **+ New** to create a new build definition. 
+
+1. Ensure **VSTS Git** is selected for the source, and then select **Continue**.
+
+1. Search for the **Jenkins** template, and then select **Apply**.
+
+1. Select **Process**, and then select **Hosted VS 2017** for the **Agent queue**.
+
+1. For the **Job name** parameter, enter the **Jenkins Job name** you created in the earlier steps of this tutorial.  This name must match exactly.  This will allow you to queue the Jenkins job and download the artifacts it produces.
+
+1. Select the **Jenkins service endpoint**.
+ 
+1. Select **Get sources**, and then check the **Don't sync sources** option.  Since the Jenkins job is handling fetching the sources from VSTS, we do not need the VSTS build definition to perform this step.  However, this step will configure a local working directory on the VSTS build agent.
+
+1. Ensure the **Report build status** option is enabled so the build status will be reported on the code tab for the VSTS repository.
+
+1. Select the **Jenkins** build tasks under **Phase 1**, and then examine the additional options provided by the tasks.  There is a task to queue the Jenkins job, download the artifacts produced by the job, and then finally to publish the artifacts which can later be used by the VSTS release definition.
+
+1. Select the **Queue Jenkins Job** task.  **Capture console output and wait for completion** is enabled to help provide the Jenkins logging information to VSTS, and also it will cause the VSTS build to wait for this step to complete successfully in Jenkins before proceeding.  This causes the VSTS build to succeed for fail based on the Jenkins result.  **Capture pipeline output and wait for completion** is similarly enabled to ensure VSTS succeeds or fails based on the entire Jenkins pipeline result.  These two options help you view Jenkins logging information in a single place (VSTS) for the entire CI/CD pipeline. 
+
+1. Open **Releases** on the **Build &amp; Release** hub in VSTS, and choose the **release definition** you created earlier. Select the **ellipsis** and choose **Edit**.
+
+1. **Delete** the artifact you used earlier.  **Add** a new artifact by choosing your VSTS build definition.  The VSTS build definition will now provide the artifact for the CD part of the pipeline.
+
+1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service endpoint connection. Then select the Jenkins source job and choose **Add**.
+
+You can now test the pipeline (as you did on earlier steps) with a pull request or by pushing new code to your branch.  A VSTS build will initiate, a Jenkins job executes, and a VSTS release definition will deploy your changes to Azure.
+
 ## Next Steps
 
-In this tutorial, you automated the deployment of an app to Azure using Jenkins build and VSTS for release. You learned how to:
+In this tutorial, you automated the deployment of an app to Azure using Jenkins for the CI build and VSTS for release. You learned how to:
 
 > [!div class="checklist"]
 > * Get the Sample App
@@ -235,6 +273,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Create a Jenkins Service Endpoint and Service Hooks in VSTS
 > * Create a VSTS Release Definition for CD to Azure
 > * Test the CI/CD pipeline with a pull request
+> * (Optionally) Create a VSTS build definition to wrap the Jenkins CI job
 
 > [!div class="nextstepaction"]
 > [Improve code quality with branch policies](https://docs.microsoft.com/vsts/git/branch-policies)
