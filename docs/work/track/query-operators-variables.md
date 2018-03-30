@@ -318,7 +318,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity&nbsp;<sup>4</sup></b></td>
+	<td><b>@RecentProjectActivity <sup>4</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
