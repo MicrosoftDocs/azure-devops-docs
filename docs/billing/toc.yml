@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Change the Azure AD for your VSTS account
-    href: ../accounts/change-azure-active-directory-vsts-account.md
+    href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage billing
@@ -37,11 +37,11 @@
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
     - name: Approve requests
-      href: ../marketplace/approve-vsts-extensions.md
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Assign paid extensions to users
-      href: ../marketplace/assign-paid-extensions.md
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Set up your customer"
