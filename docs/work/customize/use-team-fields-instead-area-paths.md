@@ -12,13 +12,10 @@ ms.date: 04/14/2017
 
 # Use team fields instead of area paths to support teams
 
-[!IN
-CLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
->
->Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> **Feature availability:** Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 
@@ -91,14 +88,14 @@ Add a custom team field to all work item types (WITs) that are included in the F
 		```XML
         <FIELDS>
         . . . 
-        &nbsp;&nbsp;&nbsp;<FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<HELPTEXT>Name of the team that will do the work.</HELPTEXT>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ALLOWEXISTINGVALUE />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ALLOWEDVALUES >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<GLOBALLIST name="Teams" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ALLOWEDVALUES >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<DEFAULT from="value" value="Unassigned" />
-        &nbsp;&nbsp;&nbsp;</FIELD>
+           <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
+              <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
+                <ALLOWEXISTINGVALUE />
+                  <ALLOWEDVALUES >
+                    <GLOBALLIST name="Teams" />
+                </ALLOWEDVALUES >
+                <DEFAULT from="value" value="Unassigned" />
+              </FIELD>
         . . . 
         </FIELDS>
 		```
@@ -112,14 +109,14 @@ Add a custom team field to all work item types (WITs) that are included in the F
 		```XML
         <FORM>
         . . . 
-        &nbsp;&nbsp;&nbsp;<Group Label="Status">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Column PercentWidth="100">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Column>
-        &nbsp;&nbsp;&nbsp;</Group>
+          <Group Label="Status">
+              <Column PercentWidth="100">
+                 <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
+                 <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
+                 <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
+                 <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
+              </Column>
+          </Group>
         . . . 
         </FORM>
 		```
