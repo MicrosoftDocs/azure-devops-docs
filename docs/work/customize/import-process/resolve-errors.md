@@ -1528,6 +1528,36 @@ Change the field name of Custom.NewField.ExternalID
 
 This warning is generated if you have a required field in a work item type that is referenced in the ```<Layout>``` node but not the ```<WebLayout>```. The ```<WebLayout>``` is used to modify the layout of the new form. See [WebLayout xml reference](../reference/weblayout-xml-elements.md) for details.
 
+<a id="VS403073"></a>
+### VS403073: Group & ```<Group Name>```: violates the rule that a group can only contain a single HTML or WebPage control preceded by label controls..
+
+In the new form layout, a group can only contain one HTMLFieldControl or WebPageControl. 
+
+#### Error example
+```
+<Section>
+	<Group Label="Description:">
+		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />
+        <Control Label="Business Case For Request:" Type="HtmlFieldControl" FieldName="MB.BusinessCase" />
+	</Group>
+</Section>
+
+```
+
+To resolve this, create two seperate groups that contain one control each.
+
+#### Resolution example
+```
+<Section>
+	<Group Label="Reason for Request">
+		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />       
+	</Group>
+	<Group Label="Business Case">
+		<Control Label="Business Case For Request" Type="HtmlFieldControl" FieldName="Custom.BusinessCase" />       
+	</Group>
+</Section>
+```
+
 <a id="TF402594"></a>
 ### TF402594: File violates the schema with the following error: The element 'Control' cannot contain child element 'Link' because the parent element's content model is empty.
 

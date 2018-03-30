@@ -15,9 +15,7 @@ ms.date: 04/14/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
->
->Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> **Feature availability:** Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 
@@ -86,40 +84,42 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 2.  For each type, add a custom Team field that references the global list.
 
-```XML
-  <FIELDS>
-  . . . 
-     <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
-      <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
-      <ALLOWEXISTINGVALUE />
-       <ALLOWEDVALUES >
-        <GLOBALLIST name="Teams" />
-       </ALLOWEDVALUES >
-       <DEFAULT from="value" value="Unassigned" />
-     </FIELD>
-  . . . 
-  </FIELDS>
-```
+        > [!div class="tabbedCodeSnippets"]
+		```XML
+        <FIELDS>
+        . . . 
+           <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
+              <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
+                <ALLOWEXISTINGVALUE />
+                  <ALLOWEDVALUES >
+                    <GLOBALLIST name="Teams" />
+                </ALLOWEDVALUES >
+                <DEFAULT from="value" value="Unassigned" />
+              </FIELD>
+        . . . 
+        </FIELDS>
+		```
 
     > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
 3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
 
-```XML
-  <FORM>
-  . . . 
-     <Group Label="Status">
-      <Column PercentWidth="100">
-       <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
-       <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
-       <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
-       <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
-       </Column>
-     </Group>
-  . . . 
-  </FORM>
-```
+        > [!div class="tabbedCodeSnippets"]
+		```XML
+        <FORM>
+        . . . 
+          <Group Label="Status">
+              <Column PercentWidth="100">
+                 <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
+                 <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
+                 <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
+                 <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
+              </Column>
+          </Group>
+        . . . 
+        </FORM>
+		```
 
     Optionally, move the Area Path field to appear before or after the Iteration Path.
 
