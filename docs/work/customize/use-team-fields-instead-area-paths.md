@@ -48,19 +48,19 @@ When you customize your team project to support team fields, the Team field tab 
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
-        > [!div class="tabbedCodeSnippets"]
-		```XML
-		<?xml version="1.0" encoding="utf-8"?>
-        <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
-        &nbsp;&nbsp;&nbsp;<GLOBALLIST name="Teams">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM value="Unassigned"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM value="Team A"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM value="Team B"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM value="Team C"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM value="Team D"/>
-        &nbsp;&nbsp;&nbsp;</GLOBALLIST>
-        </gl:GLOBALLISTS>
-		```
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
+   <GLOBALLIST name="Teams">
+    <LISTITEM value="Unassigned"/>
+    <LISTITEM value="Team A"/>
+    <LISTITEM value="Team B"/>
+    <LISTITEM value="Team C"/>
+    <LISTITEM value="Team D"/>
+   </GLOBALLIST>
+</gl:GLOBALLISTS>
+```
 
 0.  Import the global list definition.
 
@@ -143,17 +143,17 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
   
-        > [!div class="tabbedCodeSnippets"]
-		```XML
-        <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
-            <AddPanel>
-              <Fields>
-                <Field refname="System.Title" />
-                <Field refname="MyCompany.Team " />
-              </Fields>
-            </AddPanel> 
-        . . .
-		```
+
+```XML
+  <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
+    <AddPanel>
+      <Fields>
+      <Field refname="System.Title" />
+      <Field refname="MyCompany.Team " />
+      </Fields>
+    </AddPanel> 
+  . . .
+```
 
 4.  Import the definition file.
 
@@ -222,17 +222,19 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
-	> [!IMPORTANT]  
-	>Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+  > [!IMPORTANT]  
+  >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
 3.  Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
-        <?xml version="1.0" encoding="utf-8"?>
-        <ProcessTemplate>
-          <metadata>
-            <name>Microsoft Visual Studio Scrum 2013.3 with Team Field</name>
-            <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
-            <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessTemplate>
+  <metadata>
+    <name>Microsoft Visual Studio Scrum 2013.3 with Team Field</name>
+    <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
+    <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
+```
 
 4.  As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
 
@@ -245,6 +247,6 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 
 
-###Credits
+### Credits
 
 Guidance for [customizing teams decoupled from area paths](http://blog.hinshelwood.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshel](http://blog.hinshelwood.com), a senior devops consultant and Microsoft Visual Studio ALM MVP.
