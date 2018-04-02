@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/29/2018
+ms.date: 3/30/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -32,23 +32,29 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
 
 1. As VSTS project collection administrator or account owner, sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Buy**.
 
-  ![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
+   > [!div class="mx-imgBorder"]
+![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/get-vsts-users-marketplace.png)
 
 2. Select your VSTS account, if you have multiple accounts.
 
-  ![Select your VSTS account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
+   > [!div class="mx-imgBorder"]
+![Select your VSTS account](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
-3. Update the number of paid users. To cancel all your paid users, reduce this number to zero (0).
+3. Update the number of paid users and then choose **Continue**. To cancel all your paid users, reduce this number to zero (0).
 
-  For example, we're going to increase our total paid users from this number:
+    For example, we're going to increase our total paid users from 1 to 10:
 
-  ![Current number of users who have paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace.png) to this number:
+   > [!div class="mx-imgBorder"]
+![Change number of paid Basic users](_img/reduce-cancel-paid-vsts-users/change-quantity-of-users.png) 
 
-  ![Increase users who have paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace-add-more.png)
+    > If you [pay for TFS client access licenses (CALs) through VSTS](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
 
-  > If you [pay for TFS client access licenses (CALs) through VSTS](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
+4. Review your changes and then choose **Confirm**.
 
-4. Confirm your changes and go back to your VSTS account to [reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels.md).
+   > [!div class="mx-imgBorder"]
+![Review your changes and confirm total paid users](_img/reduce-cancel-paid-vsts-users/review-and-confirm.png)
+
+5. Go back to your VSTS account to [reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels.md).
 
 ## Next steps
 
