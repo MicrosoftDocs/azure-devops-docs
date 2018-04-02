@@ -442,7 +442,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 <tr>
 <td><p><strong>FieldName</strong> </p></td>
 <td>
-<p>Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 an 70 characters. </p>
+<p>Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 and 70 characters. </p>
 </td>
 </tr>
 <tr>

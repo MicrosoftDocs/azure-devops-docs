@@ -1,13 +1,13 @@
 ---
-title: How to pay for VSTS users (Basic) | VSTS
-description: Pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS)
-ms.topic: conceptual
+title: Pay for VSTS users (Basic)
+description: How to pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS, Marketplace)
+ms.topic: quickstart
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/28/2018
+ms.date: 3/30/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -24,9 +24,13 @@ For a list of features included, see our
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [VSTS project collection administrator (PCA) or account owner permissions](../accounts/faq-add-delete-users.md#find-owner) - if you aren't a PCA or account owner, you'll be prompted to send a purchase request to the admins for your VSTS account.
+
+   > [!div class="mx-imgBorder"]
+![Non-project admin submit request](_img/buy-more-basic-access/non-account-admin-purchase-request.png)
+
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
@@ -38,29 +42,36 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 1. Sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Get**.
 
    > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/get-vsts-users-marketplace.PNG)
+![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.PNG)
 
 2. Select your VSTS account, if you have multiple accounts, and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
-![Select your account](_img/buy-more-basic-access/select-team-services-account.PNG)
+![Select your account](_img/buy-more-basic-access/marketplace-choose-buy.PNG)
 
-3. Confirm the Azure subscription, where your VSTS charges will be billed.
+3. Confirm the Azure subscription, where your VSTS charges will be billed, and then choose **Continue**.
 
    If you have multiple Azure subscriptions, select the Azure subscription that you want to use. Or if you don't have an Azure subscription, you can create a new one.
 
    > [!div class="mx-imgBorder"]
-![Confirm or select your azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.PNG)
+![Confirm or select your azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.PNG)
 
-4. Enter the number of paid VSTS users and then choose **Confirm**. You will also see the number of free users included, which is separate.
+4. Enter the number of paid VSTS users and then choose **Continue**. You will also see the number of free users included, which is separate.
 
-   ![Enter the number of paid VSTS users](_img/buy-more-basic-access/select-number-users-vs-marketplace.png)
+   > [!div class="mx-imgBorder"]
+![Enter the number of paid VSTS users](_img/buy-more-basic-access/marketplace-select-number-of-users.png)
 
-5. Go to your VSTS account and [add new users](../accounts/add-account-users-assign-access-levels.md).
+5. Review your order, and then choose **Confirm**.
 
-   The number of users to whom you can assign Basic appears here.
+   > [!div class="mx-imgBorder"]
+![VSTS Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-   ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/paid-basic-access-for-team-services-users.png)
+6. Choose **Manage users** to go to your VSTS account and [add new users](../accounts/add-account-users-from-user-hub.md).
+
+The number of users to whom you can assign Basic appears on the right side of your screen.
+
+   > [!div class="mx-imgBorder"]
+![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
 ## Next steps
 
