@@ -7,11 +7,9 @@ ms.technology: vs-devops-marketplace
 ms.assetid: b30a4604-d34d-43d4-9de9-02f1fea108ea
 ms.manager: douge
 ms.author: elbatk
-ms.date: 9/27/2017
+ms.date: 03/24/2018
 monikerRange: '>= tfs-2013 < vsts'
 ---
-
- 
 
 # Team Foundation Server extension FAQs
 
@@ -85,10 +83,6 @@ where you want to install the extension.
 
 0.	From your team project collection, go to the Visual Studio Marketplace.
 
-<a name="third-party-purchase-problems"></a>
-
-[!INCLUDE [troubleshooting-purchases-shared-ts-tfs](_shared/qa-troubleshooting-purchases-shared-ts-tfs.md)]
-
 <a name="no-download"></a>
 
 ### Q: Why doesn't the extension I want show a download button?
@@ -115,22 +109,14 @@ for the Team Foundation Server where you want to upload extensions.
 
 <!-- ENDSECTION --> 
 
+<a name="get-support"></a>
+
+[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+
 <a name="billing"></a>
 
 ## Purchases & billing
 
-[!INCLUDE [azure-billing](../billing/_shared/qa-azure-billing.md)]
-
-<a name="bill-period"></a>
-
-[!INCLUDE [extension-billing-frequency](_shared/qa-extension-billing-frequency.md)]
-
-[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
-
-[!INCLUDE [azure-subscription-disabled-tfs](../_shared/qa-azure-subscription-disabled-tfs.md)]
-
-[!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+- [VSTS billing overview](../billing/overview.md)
+- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
+- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
