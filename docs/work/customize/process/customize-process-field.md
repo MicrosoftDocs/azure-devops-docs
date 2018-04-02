@@ -183,7 +183,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 > [!NOTE]      
 >Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
 >
->Data defined for a custom field is deleted when you remove it from the form. To delete a custom field from a project collection, see [Delete a field](#delete-field).   
+>Data defined for a custom field is not deleted when you remove it from the form. To delete a custom field from a project collection, see [Delete a field](#delete-field).   
 
 <a id="show-hide-field">  </a>
 ### Hide an inherited field or custom control 
@@ -247,8 +247,6 @@ If you've made changes to an inherited field, and now want to discard those chan
 <a id="delete-field">  </a>
 ### Delete a field     
 Deleting a field will delete all data associated with that field, including historical values. Once deleted, you can't recover the data. 
-
-Prior to deleting a field, you must first remove it from the form for each WIT that it's been added to.  
 
 1. You delete the field from a collection from the **Fields** page for all processes.  
 
