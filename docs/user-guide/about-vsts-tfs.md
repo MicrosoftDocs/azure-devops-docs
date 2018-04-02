@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# About VSTS and Team Foundation Server
+# Understand differences between VSTS and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
