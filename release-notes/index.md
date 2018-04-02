@@ -124,7 +124,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Deploy selectively based on the artifact triggering a release</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
-            <td rowspan="21">[14 Feb 2018](2018/feb-14-vsts.md)</td>
+            <td rowspan="20">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
             <td style="background:rgb(231, 179, 249);">*2018.2*</td>
         </tr>
@@ -136,7 +136,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Release from Azure Container Registry and Docker Hub</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Propagate Jenkins artifacts to Azure Storage</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Specify a default version for Jenkins artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
-        <tr><td>Deploy ASP.NET apps to VMs using an Azure DevOps Project</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Scope a variable group to specific environments</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Install tasks from the Marketplace directly from the build or release definition</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Seamlessly use public packages using upstream sources</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
