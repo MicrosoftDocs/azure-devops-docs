@@ -1,38 +1,31 @@
 ---
-title: Find, buy, and assign paid extensions from the VSTS Marketplace | VSTS (Visual Studio Online)
-description: Find paid extensions in the Marketplace and learn how to buy, install, and assign them.
+title: Buy and install paid extensions and assign to users in VSTS | VSTS 
+description: Find paid extensions in the Visual Studio Marketplace and learn how to buy, install, and assign them.
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: douge
 ms.author: elbatk
-ms.date: 10/10/2017
+ms.date: 03/24/2018
 monikerRange: 'vsts'
 ---
 
-
-
-# Buying, installing, and assigning paid extensions to users in VSTS
+# Buy and install paid extensions and assign to users in VSTS
 
 This Quickstart covers the following steps of buying an extension in Visual Studio Team Services (VSTS):
-* Finding extensions in the Marketplace
-* Buying a paid extension and selecting number of licenses
-* Assigning users with paid licenses to use the extension
+* Finding extensions in the Visual Studio Marketplace
+* Buying a paid extension for a specific number of users
+* Assigning the extension to users in your team
 
-## Before you start
+## Prerequisites
 
-For paid extensions, you'll need an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
-to bill your purchase. If you don't have an Azure subscription, you can create a new subscription when you make your first purchase. 
+The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-> [!NOTE]
-> To use an existing Azure subscription for billing, you must have at least Co-administrator permissions for that subscription. 
-> If you don't have permissions, have an Azure Account Administrator or Service Administrator go to the Azure classic portal and 
-> [add you as Co-administrator](https://docs.microsoft.com/en-us/azure/billing-add-change-azure-subscription-administrator) 
-> to the Azure subscription that you want to use for billing. Co-administrator permissions are available only in the classic Azure portal.
+0. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+0. [The **owner** or **contributor** role on your Azure subscription](../billing/add-backup-billing-managers.md)
 
-Your VSTS account will reuse your Azure subscription for future Visual Studio Marketplace purchases or for VSTS purchased through Azure, 
-like Cloud-based Load Testing. [Where can I find more info about Azure billing?](./faq-extensions.md#billing)
+To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
 
 
 ## Find and buy the extension
@@ -41,7 +34,7 @@ like Cloud-based Load Testing. [Where can I find more info about Azure billing?]
 	
 	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
-0.	Find and select the extension that you want to install. For this Quickstart, you can choose [**Code Search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+0.	Find and select the extension that you want to install. 
 
 0.	Click *Buy*.
 	
@@ -61,9 +54,10 @@ like Cloud-based Load Testing. [Where can I find more info about Azure billing?]
 
 	![Extension installed](_img/get-vsts-extensions/go-to-account.png)
 
-## Assign paid users for the extension
+## Assign the extension to your users
 
-After you install a paid extension, you must assign that extension to users who need access, so they can start using that extension's capabilities. To assign extensions, you'll need VSTS [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
+After you install a paid extension, you will need to assign it to your users so they can start using it. 
+To assign extensions, you'll need VSTS [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
 
 0.	Sign in to your VSTS account: ```https://{youraccount}.visualstudio.com```.
 
@@ -89,6 +83,12 @@ After you install a paid extension, you must assign that extension to users who 
 
 0.	Tell your team about this extension, so they can start using its capabilities.
 
-## Next steps
+## Related information
 
-You can find answers to common problems on the [troubleshooting](faq-extensions.md) page.
+- [Troubleshoot installing extensions](faq-extensions.md)
+- [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
+- [Add backup billing managers](../billing/add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](../billing/change-azure-subscription.md)
+- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
+- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
