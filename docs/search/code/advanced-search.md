@@ -79,6 +79,8 @@ Code Search remembers your last settings, such as the project and repository or 
 searched in. Clear all the checkboxes to search across all projects. Do this quickly and 
 easily with the **Clear all** links when you want to search in a different scope.
 
+In the results pane, Code Search highlights up to the first 100 hits or matches found in the target files.  
+
 ### Narrow your search by using Boolean operators
  
 Narrow your search by using Boolean operators to combine search criteria.
