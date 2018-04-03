@@ -159,6 +159,10 @@ You can create a team project from Team Explorer after you have connected to an 
 	</tbody>
 	</table>
 
+## From the command line or scripts
+
+You can create and get team projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+
 ## Try this next
 
 [Add team members](../security/add-users-team-project.md) to enable other users to connect to your team project.
