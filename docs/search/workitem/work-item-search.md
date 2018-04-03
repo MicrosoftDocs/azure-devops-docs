@@ -34,7 +34,7 @@ See also: [Adhoc vs managed work item queries](../../work/track/adhoc-vs-managed
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](../_img/_shared/start-search-icon.png) icon) to start your search. 
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+1. Search results are displayed in a snippet view, where matches found are shown in bold.
 
    ![Search results](_img/get-started/results-matching.png)
 
