@@ -45,7 +45,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
    ![start search icon](../_img/_shared/start-search-icon.png) icon) to start your search.
 
 1. The search page shows a list of the matching code files. The selected file has all
-   instances of the search string highlighted. 
+   instances of the search string highlighted (only the first 100 hits are highlighted). 
 
    ![Search results](_img/get-started/search-results-01.png)
 
