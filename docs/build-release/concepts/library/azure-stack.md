@@ -3,7 +3,7 @@ title: Azure Stack deployment in Visual Studio Team Services and Team Foundation
 description: Understand Azure Stack deployment in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 03/06/2018
