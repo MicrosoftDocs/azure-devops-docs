@@ -99,12 +99,6 @@ Now, you can specify a default version for Jenkins artifacts, with the options y
 > [!div class="mx-imgBorder"]
 ![Default version for Jenkins artifacts](_img/130_10.png)
 
-### Deploy ASP.NET apps to VMs using an Azure DevOps Project
-
-You can now use an **Azure DevOps Project** to setup a fully-configured CI/CD pipeline to **Azure Virtual Machine** (VM) resources for ASP.NET or ASP.NET Core applications. The **DevOps Project** sets up everything you need for developing, deploying, and monitoring your app on the VM.
-
-By creating a **DevOps Project**, an Azure VM is provisioned and comes with a Git code repository, **Application Insights** integration, and a continuous delivery pipeline. The dashboard then lets you monitor code commits, builds, and deployments from a single view in the Azure portal.
-
 ### Scope a variable group to specific environments
 
 Previously, when a variable group was added to a release definition, the variables it contained were available to all the environments in the release. Now, you have the flexibility to scope the variable groups to specific environment(s) instead, which makes them available to one environment but not other environments of the same release. This is great when you have an external service, such as an SMTP email service, which is different between environments.

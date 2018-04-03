@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 3/5/2018
+ms.date: 4/3/2018
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -17,41 +17,27 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
-### 2018 Q1
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|TFVC - Updated Windows shell extension for TFVC|Code|N/A|
-|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
-|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
-|Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
-|Filtering on the Taskboard|Work|2018.2|
-|Release Management orchestration improvements – Tag based triggers|Release|2019|
-|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
-|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
-|Distribute tests in CI pipeline using Phases|Test|2018.2|
-|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
-|Analytics – Power BI Integration|Reporting|2019|
-|Publish documentation in repo as Wiki|Wiki|2019|
-|Support -,/,#,\,? etc. in wiki page title|Wiki|2018.2|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-
 ### 2018 Q2
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
+|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
+|Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
 |Git - Filter the pull request list by target branch and labels|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
+|Filtering on the Taskboard|Work|2018.2|
 |New Agile Hubs – Refreshed UI on the core Agile hubs supporting Queries, Backlogs, Boards, Sprints, and Dashboards|Work|2019|
 |Work Items – Markdown support, editing comments|Work|2019|
 |Work Items – Discussion-centric work item form|Work|TBD|
-|[Build completion triggers – Trigger a build after completion of another build](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu)|Build|2019|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Updated build summary and log views|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
+|Release Management orchestration improvements – Tag based triggers|Release|2019|
+|[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
+|[DevOps Projects](https://blogs.msdn.microsoft.com/devops/2017/11/15/azure-devops-project/) – Language support for Go and Ruby|Release|N/A|
 |Release traceability – Pull request integration|Release|2019|
-|Release gates extensibility|Release|2019
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
@@ -59,6 +45,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Package Management – Repo, Build provenance information for a package|Package|2019|
 |Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
+|Distribute tests in CI pipeline using Phases|Test|2018.2|
+|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
 |Flaky tests - View prior failed attempts in CI/CD workflows|Test|2019|
 |View in-progress test results in CI/CD workflows|Test|2019|
 |Test insights related to Top failing tests & Long running tests at a Build definition level|Test|2019|
@@ -67,6 +55,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Dashboards – Charts for Work Items Widget based on Analytics|Reporting|2019|
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |Analytics – Automated Test data|Reporting|2019|
+|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
@@ -107,6 +96,22 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="13">[3 Apr 2018](2018/apr-03-vsts.md)</td>
+            <td>Quickly describe pull requests using commit messages</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Chain related builds together using build completion triggers</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build applications written in Go</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Extend release gates with task extensions</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Maintain feed query speed with retention policies</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Publish markdown files from a Git repository as a Wiki</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Retain special characters in Wiki page titles</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Extend Wiki using REST APIs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Integrate Power BI with VSTS Analytics using views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr>
             <td rowspan="13">[5 Mar 2018](2018/mar-05-vsts.md)</td>
             <td>Avoid overwrites and protect performance using repository settings</td>
             <td style="background:rgb(231, 179, 249);">*2018.2*</td>
@@ -124,7 +129,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Deploy selectively based on the artifact triggering a release</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Leverage your existing subscription using an AAD-based alternate email account</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
-            <td rowspan="21">[14 Feb 2018](2018/feb-14-vsts.md)</td>
+            <td rowspan="20">[14 Feb 2018](2018/feb-14-vsts.md)</td>
             <td>Recover a recently-deleted repository via API</td>
             <td style="background:rgb(231, 179, 249);">*2018.2*</td>
         </tr>
@@ -136,7 +141,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Release from Azure Container Registry and Docker Hub</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Propagate Jenkins artifacts to Azure Storage</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Specify a default version for Jenkins artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
-        <tr><td>Deploy ASP.NET apps to VMs using an Azure DevOps Project</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Scope a variable group to specific environments</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Install tasks from the Marketplace directly from the build or release definition</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Seamlessly use public packages using upstream sources</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
