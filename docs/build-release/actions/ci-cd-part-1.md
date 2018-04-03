@@ -432,5 +432,8 @@ To learn more about build definition settings, see:
 
 [REST API Reference: Create a build definition](../../integrate/index.md)
 
+> [!NOTE]
+> You can also manage builds and build definitions from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+
 
 <!-- ENDSECTION -->
