@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/22/2018
+ms.date: 3/24/2018
 ---
 [//]: # (monikerRange: '>= tfs-2015')
 
@@ -14,13 +14,14 @@ ms.date: 3/22/2018
 
 **VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
-To scale with your team's needs, you can increase or decrease your total number of paid extension users.
+To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
 You'll need VSTS 
 [project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner). 
 
 > [!IMPORTANT]
 > To stop paying for an extension, reduce the number of paid users to zero (0). 
-> [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
+> 
+> [VSTS billing FAQ](vsts-billing-faq.md)
 
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
