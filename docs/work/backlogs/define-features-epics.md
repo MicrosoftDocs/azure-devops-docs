@@ -8,6 +8,7 @@ ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 
@@ -31,11 +32,6 @@ Use this topic to learn how to:
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
-
-::: moniker range="tfs-2013"
-> [!NOTE]   
-> Epic portfolio backlogs are supported in TFS 2015 and later versions.  
-::: moniker-end
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
@@ -171,6 +167,6 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 > To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
   
 
-::: moniker-end
+ 
 
 

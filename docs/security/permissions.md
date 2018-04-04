@@ -9,7 +9,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013'
 ---
 
 
@@ -17,18 +17,18 @@ monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+This topic provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
 ::: moniker range="vsts"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics)](../report/analytics/analytics-security.md)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics](../report/analytics/analytics-security.md)|    
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
@@ -70,7 +70,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ##&nbsp;&nbsp;&nbsp;Server-level groups 
 
@@ -426,7 +426,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ##&nbsp;&nbsp;&nbsp;Server-level 
 
