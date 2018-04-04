@@ -20,6 +20,8 @@ monikerRange: 'vsts'
 
 Use this task to download a [secure file](../../concepts/library/secure-files.md) from the server during a build or release.
 
+Once downloaded, the secure file is located in the `$env:TEMP` directory.
+
 ## Arguments
 
 | Argument | Description |
