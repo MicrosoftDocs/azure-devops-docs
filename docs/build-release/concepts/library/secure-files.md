@@ -25,6 +25,10 @@ There's a size limit of 10 MB for each secure file.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+### How can I consume secure files in a Build or Release Definition?
+
+Use the [Download Secure File](https://docs.microsoft.com/en-us/vsts/build-release/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Definition.
+
 ### How can I create a custom task using secure files?
 
 You can build your own tasks that use secure files by using inputs with type `secureFile` in the `task.json`. 
