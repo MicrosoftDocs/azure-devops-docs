@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/23/2018
+ms.date: 04/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -126,26 +126,31 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 2. Browse to your VSTS account by entering **Team services accounts** into the **Search** box, and choosing **Team Services accounts**.
 
-    ![Azure portal, browse to team services](_img/connect-account-to-aad/team-services-accounts-aad.PNG)
+    > [!div class="mx-imgBorder"]
+![Azure portal, browse to team services](_img/connect-account-to-aad/select-team-services-accounts.PNG)
 
 3. Select your VSTS account. If you don't see your account, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is the owner of the VSTS account in question.
 
+   ![Azure portal, browse to team services](_img/connect-account-to-aad/team-services-accounts-aad.PNG)
+
 4. Choose **Connect**.
 
-    - If **Connect** is greyed out:
-        - You are either already connected to a tenant (disconnect is enabled) or
-        - Your VSTS account may not be linked to Azure AD (link would be enabled). [Learn more about linking to set up billing](https://docs.microsoft.com/en-us/vsts/billing/set-up-billing-for-your-account-vs).
+   > [!div class="mx-imgBorder"]
+![Choose Connect in Azure AD to VSTS](_img/connect-account-to-aad/choose-connect-aad-vsts.png)
 
-   ![Connect unavailable](_img/connect-account-to-aad/connect-greyed-out.png)
+5. Make sure this is the directory you want to connect to. If you have more than one directory, you can select the directory to connect to in the top right of the menu. 
 
-5. Choose **Yes** to confirm.
+    > [!div class="mx-imgBorder"]
+![Confirm correct directory to connect to](_img/connect-account-to-aad/confirm-correct-directory.png)
+
+6. Choose **Yes** to confirm.
 
    ![Connect your account](_img/connect-account-to-aad/choose-yes-to-connect.png)
 
-6. Your account is now connected to your organization's directory.
+7. Your account is now connected to your organization's directory.
 
-7. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
-8. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
+8. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
+9. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change
 
@@ -172,22 +177,32 @@ When you inform your users of the completed change, include the following tasks 
 
 ## (Optional) Close the temporary MSA (if you created one)
 
-1. Go to the **Settings** page in VSTS and change the owner of the account back to yourself.
+1. Go to the **Settings** page in VSTS and [change the owner](https://docs.microsoft.com/en-us/vsts/accounts/change-account-ownership-vs?view=vsts) of the account back to yourself.
 2. Go to the **Users** page in VSTS and remove the temporary new user.
 3. Go to the Azure portal and remove the new user from the Azure AD tenant.
 4. [Close the temporary MSA](https://support.microsoft.com/en-us/help/12412/microsoft-account-how-to-close-account) you created.
 
    [More questions about connecting?](faq-azure-access.md#faq-connect)
 
+## (Optional) Update the Azure subscription your VSTS account uses for billing
+
+After connecting your account to Azure AD, you may need to update the Azure subscription you've been using to pay for VSTS. 
+
+If the Azure subscription you’ve been using to pay for VSTS is associated with a different directory than the one you connect to, you won’t be able to make purchases or change the purchases you’ve already made. Your existing paid resources will continue to work and charges will renew each month, but when you try to make changes in the Visual Studio Marketplace you’ll see a message like the one below.
+
+> [!div class="mx-imgBorder"]
+![Select Azure subscription for VSTS billing](_img/connect-account-to-aad/select-azure-subscription-VSTS.png)
+
+There are a few options to get VSTS billing set up again correctly.
+
+1. You can [associate the subscription with the directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory) you’re now using to log in to VSTS. If you’re not able to change the directory in the Azure portal, you can [transfer that subscription to your work Azure AD identity](https://docs.microsoft.com/en-us/azure/billing/billing-subscription-transfer).
+2. Or if you have a different Azure subscription to use for billing VSTS, you can [change the Azure subscription VSTS uses for billing](https://docs.microsoft.com/en-us/vsts/billing/change-azure-subscription?view=vsts). Read the topic carefully, as this option can disrupt billing for your account if it isn’t set up correctly.
+
 ## FAQ
 
 ### Q: Will my users still retain their existing Visual Studio subscriptions?
 
 A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure AD identities and the emails match, your user's benefits will continue to work with their new Azure AD identity. If the email that the subscription is assigned to differs from your Azure AD identity's email, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
-
-### Q: How can I continue to access resources in Azure backed by an Azure subscription I created with my Microsoft account?
-
-A: If you have created an Azure subscription with your Microsoft Account, connecting VSTS to AzureAD will not change this; you will still access it using that same identity.  You can optionally [transfer that subscription to your work AAD identity](https://docs.microsoft.com/en-us/azure/billing/billing-subscription-transfer).
 
 ### Q: What if sign-in is required when using the identity picker?
 
@@ -196,12 +211,6 @@ A: Clear the browser cache and delete any cookies for the session.
 ### Q What if my work items are indicating that the users aren't valid?
 
 A: Clear the browser cache and delete any cookies for the session.
-
-### Q Why can't I make purchases after connecting to a directory?
-
-A: By changing the directory associated with your Azure subscription to the directory your VSTS account uses, you'll be able to make purchases again. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory).
-
-![Select Azure subscription](_img/connect-account-to-aad/select-azure-subscription.png)
 
 **Next:**
 
