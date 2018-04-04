@@ -45,7 +45,7 @@ The process to have a public VSTS listing for an integration or extension is the
 Once you are ready to publish a public VSTS listing to the Marketplace, follow these steps:
 
 1. Visit http://marketplace.visualstudio.com/manage/publishers and login with the account using which you will publish and manage VSTS listings in Marketplace.
-2. Select the publisher and through the ""Details tab** apply for publisher verification. You will find the appropriate section towards the bottom of the tab.
+2. Select the publisher and through the **Details tab** apply for publisher verification. You will find the appropriate section towards the bottom of the tab.
 3. Expect Microsoft to approve or respond within 3 business days to your verification request.
 
 Once your publisher is verified, you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest for your extension to be available publicly.

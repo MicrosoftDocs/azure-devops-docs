@@ -69,6 +69,8 @@ Using custom variables at project, release definition, and environment scope hel
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
+### Using custom variables
+
 To use custom variables in your build and release tasks, simply enclose the 
 variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
