@@ -114,7 +114,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 # Work hub, plans page
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  Â 
 
 ::: moniker-end
 
@@ -155,6 +155,7 @@ Use these shortcuts when working in Team Explorer.
 **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../report/sql-reports/reporting-services-reports.md)  
 **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
 **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items    
+**Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../git/gitquickstart.md)  
 
 <br/>
 **Ctrl+'**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  
@@ -190,7 +191,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]   
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]  Â 
 
 
 <!---
