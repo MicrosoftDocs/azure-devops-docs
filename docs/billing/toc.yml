@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Billing overview
+  - name: Billing overview 
     href: overview.md
 - name: Quickstarts
   items:
@@ -22,7 +22,7 @@
     href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage billing
+  - name: Manage billing 
     items:
     - name: Add backup billing manager
       href: add-backup-billing-managers.md
@@ -31,7 +31,7 @@
     - name: Change number of paid users
       href: reduce-cancel-paid-vsts-users.md
     - name: Buy TFS CALs or Test hub
-      href: buy-access-tfs-test-hub
+      href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
       href: vsts-billing-faq.md
   - name: Manage Marketplace extensions
