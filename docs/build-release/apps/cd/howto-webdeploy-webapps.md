@@ -98,7 +98,7 @@ If you deploy releases to multiple environments, you can substitute configuratio
    `connectionString = <value>`.
 
 1. In the **Azure App Service Deploy** task, select the check box for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
-   This option is present only in version **3.\*** and above of the task. It is not yet available in TFS.
+   This option is present only in version **3.\*** and above of the task.
    
 > If you prefer to manage environment configuration settings in your own database or Azure keyvault, add a task to the environment to read and emit those values using `##vso[task.setvariable variable=connectionString;issecret=true]<value>`
    
