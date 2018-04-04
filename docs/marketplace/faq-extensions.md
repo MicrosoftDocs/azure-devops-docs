@@ -6,7 +6,7 @@ ms.technology: vs-devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 03/24/2018
+ms.date: 04/04/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -100,7 +100,7 @@ For example, the Test Manager extension requires at least Basic access.
 
 - [VSTS billing overview](../billing/overview.md)
 - [VSTS billing FAQ](../billing/vsts-billing-faq.md)
-- [How to pay for TFS users(../billing/buy-access-tfs-test-hub.md)
+- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
 - [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 - [Visual Studio cloud subscription billing FAQ](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)
 - [How to buy Xamarin University](../billing/xamarin-univ.md)
