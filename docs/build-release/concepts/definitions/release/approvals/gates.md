@@ -60,6 +60,7 @@ that contains gates, the deployment stops until the health signals from all the 
    > Also see the tutorial [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
      and the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
      A [library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) is available to help you create your own custom gate tasks.
+     Notes about authoring a server task can be found on [GitHub](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md).
 
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
