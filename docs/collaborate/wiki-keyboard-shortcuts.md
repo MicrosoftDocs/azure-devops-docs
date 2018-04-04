@@ -17,7 +17,8 @@ ms.date: 03/01/2018
 
 **VSTS**
  
-[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]    
+[!INCLUDE [temp](../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
+
 
 ## Related articles
 

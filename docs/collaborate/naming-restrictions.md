@@ -29,7 +29,7 @@ The length restrictions in this topic are measured by the number of Unicode char
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="ComputerNames">   </a>
 
@@ -207,7 +207,7 @@ Must not include commas (,)
 </table>
 
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="ProjectCollectionNames">   </a>
 
@@ -856,7 +856,7 @@ Help text that you add must conform to the following restrictions.
 </tr>
 </table>
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Global lists 
 
 A global list is a set of list item values that you can use globally across all team project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and team projects. See [Define global lists](../work/customize/reference/define-global-lists.md) for details.
@@ -938,10 +938,10 @@ Global lists must conform to the following restrictions.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="TeamBuild">   </a>
 
-##Team Foundation Build (on-premises TFS only) 
+##Team Foundation Build   
 
 Team Foundation Build lets you manage all the aspects of the build process on a single computer. By using Team Foundation Build, you can synchronize the sources, compile the application, run associated unit tests, perform code analysis, release builds on a file server, and publish build reports.
 

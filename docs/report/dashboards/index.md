@@ -46,7 +46,7 @@ Start gaining visibility into how your team is progressing by adding one or more
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 ## Step-by-Step Tutorials
 
@@ -78,17 +78,19 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 ## Samples
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)  
 - [Add a chart widget](../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ::: moniker-end
 
-
+::: moniker range=">= tfs-2015" 
 ## Reference 
 - [Widget catalog](widget-catalog.md)  
  
+::: moniker-end
+
 ## Resources 
 - [Agile](/vsts/#pivot=services&panel=agile)
 - [Testing](/vsts/#pivot=services&panel=testing)

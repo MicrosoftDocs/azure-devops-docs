@@ -52,9 +52,7 @@ To find out who is a member, check the Security settings at the collection level
 
 <a name="find-owner"></a>
 
-## Look up the account owner (VSTS) 
-
-Only VSTS accounts have account owners.  
+## Look up the account owner 
 
 0.	Open the admin context for your account.  
 

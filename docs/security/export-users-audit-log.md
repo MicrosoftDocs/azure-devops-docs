@@ -19,11 +19,9 @@ monikerRange: '>= tfs-2013'
 
 <a id="export-audit-log" >  </a>
 
-You can get a list of users and groups that have access to your Visual Studio Team Services (VSTS) account or Team Foundation Server (TFS) by exporting the audit log. The audit log also indicates which access level has been granted.   
+::: moniker range="vsts" 
 
-::: moniker range="vsts"
-
-## VSTS  
+You can get a list of users and groups that have access to your Visual Studio Team Services (VSTS) account by exporting the audit log. The audit log also indicates which access level has been granted.   
 
 0. From your web browser, open your VSTS account and click the **Users** hub. 
 
@@ -40,9 +38,9 @@ You can get a list of users and groups that have access to your Visual Studio Te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
-## TFS 
+You can get a list of users and groups that have access to your Team Foundation Server (TFS) by exporting the audit log. The audit log also indicates which access level has been granted.  
 
 0. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the Server Settings administration context. 
 
