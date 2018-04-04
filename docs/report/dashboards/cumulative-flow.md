@@ -15,7 +15,7 @@ ms.date: 03/23/2018
 
 [!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
-::: moniker range=">= tfs-2013" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. Use this topic to learn how to: 
 

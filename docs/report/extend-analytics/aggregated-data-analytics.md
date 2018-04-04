@@ -66,7 +66,8 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=aggregate($count as Count)
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
 ``` 
 
 For simple counts, the non-aggregation approach has a simpler syntax.  
@@ -82,7 +83,8 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?$filter=State eq 'In Progress'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?
+  $filter=State eq 'In Progress'
 ```
 
 For comparison, using data aggregations you add the following snippet to your query:
@@ -93,7 +95,10 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=
+   filter(State eq 'In Progress')/
+   aggregate($count as Count)
 ``` 
 
 ## Aggregate data using the OData aggregation extension
@@ -114,23 +119,35 @@ Using the `$apply` extension, you can obtain counts, sums, and additional inform
 
 **Return the count of work items:**
 
-`/WorkItems?$apply=aggregate($count as CountOfWorkItems)`
-
-Work items can also be counted by using the following:
-
-`/WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
+```
 
 **Return a count of area paths**
 
-`/Areas?$apply=aggregate(AreaId with countdistinct as CountOfAreas)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+  $apply=aggregate($count as Count)
+```
 
 **Return the sum of all remaining work**
 
-`/WorkItems?$apply=aggregate(RemainingWork with sum as SumOfRemainingWork)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate(RemainingWork with sum as SumOfRemainingWork)
+```
 
-**Return the last work item ID**
+**Return the last work item identifier**
 
-`/WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate(WorkItemId with max as MaxWorkItemId)
+```
 
 ## Group results using the groupby clause
 
@@ -139,11 +156,19 @@ in more detail.
 
 For example, the following clause will return a  count of work items:
 
-`/WorkItems?$apply=aggregate($count as Count)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
+```
 
 Add the `groupby` clause to return a count of work items by type:
 
-`/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=groupby((WorkItemType), aggregate($count as Count))
+```
 
 This returns a result similar to the following:
 
@@ -163,7 +188,11 @@ This returns a result similar to the following:
 
 You can also group by multiple properties as in the following:
 
-`/WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=groupby((WorkItemType, State), aggregate($count as Count))
+```
 
 This returns a result similar to the following:
 
@@ -204,7 +233,11 @@ You can also group across entities, however OData grouping differs from how you 
 
 For example, suppose you wanted to know how many areas are in each project. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
 
-`/Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+  $apply=groupby((Project/ProjectName), aggregate($count as Count))
+```
 
 ## Filter aggregated results
 
@@ -212,8 +245,14 @@ You can also filter aggregated results, however they are applied slightly differ
 
 Filters look like the following:
 
-`/WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))`
-
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=
+    filter(Iteration/IterationName eq 'Sprint 89')/
+    filter(WorkItemType eq 'User Story')/
+    groupby((State), aggregate($count as Count))
+```
 
 > [!NOTE]    
 > You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
