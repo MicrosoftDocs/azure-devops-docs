@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # VSTS service hooks events
 
-Available event types:
+## Available event types
 
 * Build and release
   * [Build completed](#build.complete)
@@ -39,6 +39,9 @@ Available event types:
 Deprecated event types:
 
 * [Team room message posted](#message.posted)
+
+> [!NOTE]
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.VSTS) provides support for receiving WebHooks from Visual Studio Team Services (VSTS).
 
 ## Build and release
 

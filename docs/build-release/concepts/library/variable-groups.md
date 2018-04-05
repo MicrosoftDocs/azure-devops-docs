@@ -93,6 +93,8 @@ For example, to access the value of a variable named **customer** in a variable 
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
 cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
 
+[!INCLUDE [variable-collision](../definitions/_shared/variable-collision.md)]
+
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or environments to which the variable group is linked.
 
