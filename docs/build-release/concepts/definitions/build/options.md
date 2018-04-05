@@ -246,7 +246,9 @@ Register each build agent that has the capability.
 
 ## Multi-configuration
 
-Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. To learn about this example, see [Build your C++ app for Windows](../../../apps/windows/cpp.md).
+Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms.
+In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your definition (not in the **Options** tab).
+To learn about multi-configuration, see the example [Build your C++ app for Windows](../../../apps/windows/cpp.md).
 
 ## Q&A
 
