@@ -28,6 +28,8 @@
   items:
   - name: Adding Basic or VS subscription users to your account
     href: add-basic-or-vs-subscription-users.md
+  - name: Invite outside users
+    href: invite-outside-users.md
 - name: How-to Guides
   items:
   - name: Manage your account
