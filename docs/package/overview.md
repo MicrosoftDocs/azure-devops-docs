@@ -8,10 +8,8 @@ ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 01/31/2018
-monikerRange: '>= tfs-2017 < vsts'
+monikerRange: '>= tfs-2017'
 ---
-
- 
 
 # Package Management in VSTS and TFS
 
