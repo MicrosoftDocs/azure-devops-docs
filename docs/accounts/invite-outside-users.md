@@ -1,18 +1,18 @@
 ---
-title: Invite outside users
+title: Invite external users
 titleSuffix: VSTS
-description: Security and data access considerations when adding a member
+description: Security and data access considerations when you add an external or outside user
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: 
 toc: show
+ms.topic: conceptual
 ms.manager: douge
 ms.author: pmorgan
-ms.topic: get-started-article
-ms.date: 04/04/2018
+ms.date: 4/05/2018
+monikerRange: 'vsts'
 ---
-
-# Invite outside users
+# Invite external users
 
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
@@ -31,9 +31,9 @@ Accounts backed by [Azure Active Directory](/azure/active-directory/) can have [
 Project members have access to resources beyond the specific project.
 Those resources are:
 
-* Information about other members, including their email address and other contact details, that is hidden from non-members
-* The Settings area, including security groups and permissions
-* All installed extensions, including paid extensions (if you assign a license)
+* Information about other members, including their email address and other contact details, that is hidden from non-members.
+* The Settings area, including security groups and permissions.
+* All installed extensions, including paid extensions (if you assign a license).
 * [Process](../work/customize/process/manage-process.md) metadata from all processes in the account, which includes the work item types, its fields and picklist items. Picklist items could show sensitive information such as release dates, as shown in the image below:
 
   ![Edit field release in feature](_img/edit-field-release-in-feature.png)
@@ -43,5 +43,5 @@ Those resources are:
 ## The trust decision
 
 These resources and groups are required for the proper functioning of a member of a project.
-Your collaborators are typically colleagues and others whom you have an existing relationship with.
+Your collaborators are typically colleagues and others with whom you have an existing relationship.
 Before you add someone from outside this trusted group, think carefully about whether they should have access to the items mentioned above.
