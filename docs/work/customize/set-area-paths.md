@@ -28,7 +28,7 @@ Newly created team projects contain a single, root area that corresponds to the 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
-	If you aren't a project administrator, [get added as one](../scale/add-team-administrator.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
+	If you aren't a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
 
 For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
@@ -38,16 +38,16 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 
 From the web portal, open the admin page for the team project.
 
-You define both areas and iterations from the Work hub of the team project admin context. From the user context, you open the admin context by clicking the ![gear icon](../../user-guide/_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.  
+You define both areas and iterations from the **Work** hub of the team project admin context. From the user context, you open the admin context by clicking the ![](../../_img/icons/gear-icon.png) gear icon. The tabs and pages available differ depending on which admin context you access.  
 
 <a id="admin-intro-team-services" /> 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 
-1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
+1. From the web portal for the team project context, click the ![](../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range="vsts || >= tfs-2018"
 	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
 
-	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
+	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose **Project settings**.  
 
 	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" />  
 	::: moniker-end
@@ -59,8 +59,8 @@ You define both areas and iterations from the Work hub of the team project admin
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. 
 
-	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" />  
-	**TFS 2017**
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #C3C3C3;" />    
+	**TFS 2017**   
 	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #C3C3C3;" />
 	::: moniker-end
 2. Open the **Work** hub.  
