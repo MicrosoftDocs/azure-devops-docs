@@ -26,9 +26,9 @@
     href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Adding Basic or VS subscription users to your account
+  - name: Add Basic or VS subscription user to your account
     href: add-basic-or-vs-subscription-users.md
-  - name: Invite outside users
+  - name: Invite external user
     href: invite-outside-users.md
 - name: How-to Guides
   items:
