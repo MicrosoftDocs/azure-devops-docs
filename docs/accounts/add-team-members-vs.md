@@ -6,7 +6,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/26/2018
+ms.date: 04/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -84,10 +84,7 @@ To add members to team projects, you'll need
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
 	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
-    * If your VSTS account is connected to your organization's directory,
-	all users must be directory members and sign in to VSTS with "work or school accounts" that are managed by 
-	your organization's directory. 	If they're not members, have a directory administrator add them to the directory. 
-	That way, you can find them in this directory when you add users by searching for their email addresses or display names.
+    * If your VSTS account is connected to your organization’s directory, all users must be directory members and sign in to VSTS with work or school accounts that are managed by your organization’s directory. If they are not members, they will need to be [added to the directory](https://docs.microsoft.com/en-us/vsts/accounts/add-external-user?view=vsts).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
