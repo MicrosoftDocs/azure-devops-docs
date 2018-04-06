@@ -24,7 +24,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics](../report/analytics/analytics-security.md)|    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md) |- [Git branch](../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Releases](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [Task groups](../build-release/set-permissions.md#task-group)<br/>- [Variable groups](../build-release/set-permissions.md#variable-group)<br/>- [Role-based resources](../build-release/set-permissions.md) | - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/> - [Analytics service](../report/analytics/analytics-security.md)<br/> - [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
@@ -1584,6 +1584,41 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 </tbody>
 </table>
 
+::: moniker-end
+
+<a id="inherited-process">  </a>
+
+::: moniker range="vsts"
+
+
+##&nbsp;&nbsp;&nbsp;Inherited process (object-level)   
+You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+
+
+<table valign="top" width="100%">
+<tbody valign="top">
+	<tr>
+		<th width="30%">Permission</th>
+		<th width="70%">Description</th>
+	</tr>
+	<tr>
+		<td id="admin-process-permission">Administer process permissions</td>
+		<td>Can set or change the permissions for an inherited process.  </td>
+	</tr>
+	<tr>
+		<td id="create-process-permission">Create process</td>
+		<td>Can create an inherited process from a system process, or copy an inherited process.   </td>
+	</tr>
+	<tr>
+		<td id="delete-process-permission">Delete process</td>
+		<td>Can delete the inherited process.  </td>
+	</tr>
+	<tr>
+		<td id="edit-process-permission">Edit process</td>
+		<td>Can modify the inherited process.  </td>
+	</tr>
+</tbody>
+</table>
 ::: moniker-end
 
 <a id="tags">  </a>
