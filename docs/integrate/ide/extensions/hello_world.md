@@ -37,7 +37,7 @@ If you need to leave this tutorial and come back to it, you can find your new He
 ## Add a Custom command
 
 1.	If you select the manifest, you can see what options are changeable, for instance, metadata, description, and version.
-2.	Right-click the project (not the solution). On the context menu, click **Add**, and then click **User Control**.
+2.	Right-click the project (not the solution). On the context menu, click **Add**, and then click **New Item**.
 3.	Go back to the **Extensibility** section, and then click **Custom Command**.
   ![Image of the Custom Command window](./_img/custom-command.png)
 4.  In the **Name** field at the bottom, give it a name, for instance Command.cs.
