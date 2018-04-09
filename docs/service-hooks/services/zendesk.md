@@ -116,6 +116,10 @@ and only those comments will be reflected back to Zendesk.
 
    <img alt="Configure action dialog box" src="./_img/zendesk/configure-action.png" style="border: 1px solid #CCCCCC" />
 
+
+> [!NOTE]    
+	The Zendesk documentation states to append the User name with "/token". Do NOT include this on the User name as the integration already accounts for this.
+
 Now when you comment on the work item, a private comment will be added to the Zendesk ticket.
 
 ## Pricing
