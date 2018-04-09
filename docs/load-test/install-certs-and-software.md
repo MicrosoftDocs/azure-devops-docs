@@ -1,15 +1,16 @@
 ---
 title: Install certificates and custom software on agent machines
 description: Install certificates and custom software on agent machines with VSTS
+ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # Install certificates and custom software on agent machines
 

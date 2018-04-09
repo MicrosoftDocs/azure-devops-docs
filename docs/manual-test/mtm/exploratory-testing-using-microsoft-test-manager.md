@@ -4,12 +4,13 @@ description: Manual and exploratory testing - Exploratory testing using Microsof
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Exploratory testing using Microsoft Test Manager
 

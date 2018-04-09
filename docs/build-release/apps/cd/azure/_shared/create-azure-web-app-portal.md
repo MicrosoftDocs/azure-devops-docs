@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create an Azure web app using the portal
 
 > [!NOTE]

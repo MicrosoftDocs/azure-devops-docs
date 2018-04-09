@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 On the **Create release definition** dialog box, click **Yes**.
 
 In the **Select a Template** panel, click the **Azure App Service Deployment** template, and then click **Apply**.

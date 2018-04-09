@@ -10,7 +10,6 @@ ms.date: 1/29/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 
-
 # Buy access to Team Foundation Server or the TFS Test hub
 
 **TFS 2018** | **TFS 2017** | **TFS 2015.2**

@@ -1,15 +1,15 @@
 ---
 title: VSTS - Add team project members | VSTS
-description: Add members to team projects in VSTS (Visual Studio Online, VSTS, VSO)
+description: How to add members to team projects in VSTS (Visual Studio Online, VSTS, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
+ms.topic: 
 ms.manager: douge
 ms.author: chcomley
 ms.date: 04/05/2018
 monikerRange: 'vsts'
 ---
-
 
 # Add team project members in VSTS
 
@@ -106,11 +106,13 @@ To add members to team projects, you'll need
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
-## Related notes
+## Next steps
 
 * [Connect to a team project](../user-guide/connect-team-projects.md)
 * [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../security/restrict-access.md)
-* [Delete users from VSTS](delete-account-users.md)
-* [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
-* [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
+
+## Related articles
+
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)

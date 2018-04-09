@@ -4,12 +4,13 @@ description: Install deployment agent and set up machines for an environment for
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2013"
 ---
-
 
 # Install deployment agents and set an environment
 
