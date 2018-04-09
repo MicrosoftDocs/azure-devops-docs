@@ -1,16 +1,16 @@
 ---
 title: Create test plans in VSTS
 description: Create test plans in VSTS to track manual tests during sprints or milestones
+ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.topic: get-started-article
-ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Create a test plan and test suite
 

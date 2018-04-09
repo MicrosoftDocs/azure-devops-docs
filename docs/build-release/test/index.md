@@ -1,15 +1,16 @@
 ---
 title: Continuous Testing
 description: Continuous testing in VSTS and TFS 
+ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
+ms.topic: overview 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Continuous Testing
 
@@ -63,4 +64,4 @@ choose the technologies and frameworks, then test your changes continuously in a
 * [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630)
 * [Manual and exploratory testing](../../manual-test/index.md)
 * [Load and performance testing](../../load-test/index.md) 
-* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)
+* [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)

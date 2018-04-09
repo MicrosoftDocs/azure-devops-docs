@@ -4,12 +4,13 @@ description: Manual and exploratory testing - Testing Microsoft Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Testing Microsoft Store apps
 

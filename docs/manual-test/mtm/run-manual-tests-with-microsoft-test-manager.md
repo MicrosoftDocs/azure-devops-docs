@@ -4,12 +4,13 @@ description: Manual and exploratory testing - Run manual tests with Microsoft Te
 ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Run manual tests with Microsoft Test Manager
 

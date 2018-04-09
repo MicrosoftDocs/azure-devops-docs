@@ -1,16 +1,16 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
+ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
