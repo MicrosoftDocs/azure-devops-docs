@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 1. Choose **+ Release** and select **Create Release**.
 
 1. Check that the build you just completed is selected and choose **Create**.

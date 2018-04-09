@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 Select **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog, select **Save & queue**.

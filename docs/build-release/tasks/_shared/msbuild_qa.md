@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Should I use the Visual Studio Build step or the MSBuild step?
 
 If you are building a solution, in most cases you should use the [Visual Studio Build step](../build/visual-studio-build.md). This step automatically:

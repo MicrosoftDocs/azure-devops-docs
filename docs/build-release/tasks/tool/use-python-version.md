@@ -15,6 +15,7 @@ monikerRange: 'vsts'
 # Tool: Use Python Version
 
 **VSTS**
+
 ![icon](_img/python.png) Retrieves the specified version of Python from the tool cache. Optionally add it to PATH.
 
 ## Demands

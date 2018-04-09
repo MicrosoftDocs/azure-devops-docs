@@ -1,15 +1,16 @@
 ---
 title: Azure function task 
 description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in VSTS and TFS
+ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Utility: Azure function
 

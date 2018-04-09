@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <!-- Windows Remote Management details and setup -->
 
 This task uses [Windows Remote Management](https://msdn.microsoft.com/en-us/library/aa384426.aspx)

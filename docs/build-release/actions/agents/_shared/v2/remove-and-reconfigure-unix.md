@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Remove and re-configure an agent
 
 To remove the agent:

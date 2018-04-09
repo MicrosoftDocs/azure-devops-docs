@@ -151,7 +151,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="new-work-item-widget"></a>
-##&nbsp;&nbsp;&nbsp;New Work item (team-scoped) 
+##&nbsp;&nbsp;&nbsp;New Work item
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
@@ -170,7 +170,7 @@ Requires TFS 2015.1 or later version.    
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="other-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Other links (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Other links 
 
 ![Other links widget](_img/widget-other-links.png)  
 
@@ -228,7 +228,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint burndown (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
@@ -242,7 +242,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-capacity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint capacity (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint capacity 
 
 ![Sprint capacity widget](_img/widget-sprint-capacity.png)
 
@@ -257,7 +257,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="sprint-overview-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint overview (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
@@ -278,7 +278,7 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a id="work-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Work links (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Work links 
 
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
@@ -317,7 +317,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 
 <a id="cfd-widget"></a> 
 
-##&nbsp;&nbsp;&nbsp;Cumulative flow diagram (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Cumulative flow diagram   
 
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
@@ -330,7 +330,7 @@ Hover over each color within the chart to see the count of items for a particula
 ----
 
 <a id="cycle-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Cycle time (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Cycle time  
 
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
@@ -341,7 +341,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="lead-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Lead time (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
@@ -352,7 +352,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="velocity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Velocity (team-scoped)  
+##&nbsp;&nbsp;&nbsp;Velocity   
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
@@ -415,21 +415,6 @@ To learn more, see [Track your test results](../../manual-test/getting-started/t
 Requires TFS 2017.2 or later version.
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-----
-::: moniker-end
-
-
-
-
-::: moniker range="vsts || >= tfs-2018"
-
-<a id="chart-test-plan-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Chart for test plans 
-
-![Chart for test plans widget](_img/widget-catalog/chart-test-plan-widget.png)
-
-With this widget, you can create charts for test plans, test suites, test authoring status, and test execution status. 
-
 ----
 ::: moniker-end
 
@@ -560,7 +545,7 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 <a name="team-members-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team members (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Team members 
 
 ![Team members widget](_img/widget-team-members.png)
 
@@ -581,7 +566,7 @@ Requires TFS 2015.1 or later version.    
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 <a id="team-room-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team room (team-scoped) 
+##&nbsp;&nbsp;&nbsp;Team room  
 
 ![Team room widget](_img/widget-team-room.png)
 

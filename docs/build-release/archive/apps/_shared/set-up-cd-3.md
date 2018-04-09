@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Select the artifact trigger and make sure the **Continuous deployment trigger** is enabled. 
 
 ![build artifact trigger in release definition](_img/build-artifact-trigger-in-release-definition.png)

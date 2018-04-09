@@ -149,7 +149,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ### Add custom fields
   
