@@ -4,12 +4,13 @@ description: Search with VSTS and TFS
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Search
 

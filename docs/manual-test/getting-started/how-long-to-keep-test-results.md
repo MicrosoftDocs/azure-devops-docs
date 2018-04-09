@@ -1,15 +1,16 @@
 ---
 title: Manage how long to keep test results in VSTS
 description: Manage how long VSTS keeps you test results
+ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # Control how long to keep test results in VSTS
 

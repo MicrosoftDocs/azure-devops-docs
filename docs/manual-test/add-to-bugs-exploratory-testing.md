@@ -1,15 +1,16 @@
 ---
 title: Add findings to  existing bugs with exploratory testing
 description: Manual and exploratory testing - add findings to  existing bugs existing bugs when using the Test &amp; Feedback extension
+ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Add findings to existing bugs with exploratory testing
  

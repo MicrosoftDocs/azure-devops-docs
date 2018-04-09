@@ -1,16 +1,16 @@
 ---
 title: Review continuous test results after a build VSTS and TFS 
 description: Review continuous test results after a build
+ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Review continuous test results after a build
 
