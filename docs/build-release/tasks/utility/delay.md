@@ -1,15 +1,16 @@
 ---
 title: Delay task 
 description: Build and release task to pause execution of the process for a fixed delay time in VSTS and TFS
+ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Utility: Delay
 

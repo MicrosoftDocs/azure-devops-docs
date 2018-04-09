@@ -1,15 +1,16 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
-ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 description: Runs the Quick Web Performance Test with VSTS to easily verify your web application exists and is responsive
+ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Test: Cloud-based Web Performance Test
 

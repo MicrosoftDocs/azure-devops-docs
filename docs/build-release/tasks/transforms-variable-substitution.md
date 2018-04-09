@@ -1,15 +1,16 @@
 ---
 title: File transforms and variable substitution
 description: File transforms and variable substitution for tasks in Viosual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # File transforms and variable substitution reference
 

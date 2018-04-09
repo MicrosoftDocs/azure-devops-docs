@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:

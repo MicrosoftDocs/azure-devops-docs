@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-ms.topic: get-started-article
 monikerRange: "vsts"
 ---
 

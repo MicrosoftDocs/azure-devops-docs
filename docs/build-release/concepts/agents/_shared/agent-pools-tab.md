@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <ul>
 <li>VSTS: <code>https:&#x2F;&#x2F;{your_account}.visualstudio.com/_admin/_AgentPool</code></li>
 
