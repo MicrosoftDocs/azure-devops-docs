@@ -4,12 +4,13 @@ description: Create managed continuous deployment pipelines using Release Manage
 ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Release Management 2015 (server and client version)
 

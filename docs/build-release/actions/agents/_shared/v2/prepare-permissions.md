@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Decide which user you'll use
 
 Decide which user account you're going to use to register the agent.

@@ -1,16 +1,16 @@
 ---
 title: Exploratory test your web app
 description: Exploratory test your web app in VSTS from your browser with the Test &amp; Feedback extension
+ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Install the Test &amp; Feedback extension
 

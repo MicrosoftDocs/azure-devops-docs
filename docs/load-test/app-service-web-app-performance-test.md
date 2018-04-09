@@ -1,16 +1,16 @@
 ---
 title: Test your Azure web app performance under load from the Azure portal
 description: Run Azure web app performance tests to check how your app handles user load. Measure response time and find failures that might indicate problems.
+ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # Load test with the Azure portal
 
@@ -46,17 +46,24 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Browse All, Web Apps, your web app](_img/app-service-web-app-performance-test/azure-np-web-apps.png)
 
-1. Go to **Performance Test**.
+1. In the **DEVELOPMENT TOOLS** section choose **Performance test**.
 
-   ![Go to Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
+   ![Go to Development Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
 1. Now you'll link a [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
-   account to keep your performance test history.
-   If you have a VSTS account to use, select that account. If you don't, create a new account.
+   account to keep your performance test history. Choose **Set Account**.
 
    ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
-1. Create your performance test. Set the details and run the test. Your web app's default URL is added automatically. 
+1. If you have a VSTS account to use, select that account. If you don't, create a new account.
+
+   ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
+
+1. Choose **+ New** to create a new performance test.
+
+   ![Create, set up, and run your performance test](_img/app-service-web-app-performance-test/azure-np-select-new-performance-test.png)
+
+1. Set the details and run the test. Your web app's default URL is added automatically. 
    You can change the URL to test other pages (HTTP GET requests only). To simulate local conditions and reduce latency, 
    select a location closest to your users for generating load.
 
