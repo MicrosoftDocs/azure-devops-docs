@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Import sample code into your VSTS Git repo
 
 In the VSTS portal, navigate to the **Code** hub for your new VSTS project. Click the default repository and then click **Import repository**.

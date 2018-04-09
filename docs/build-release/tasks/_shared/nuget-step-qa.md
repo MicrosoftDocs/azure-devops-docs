@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Why should I check in a NuGet.Config?
 
 Checking a NuGet.Config into source control ensures that a key piece of information needed to build your project-the location of its packages-is available to every developer that checks out your code.

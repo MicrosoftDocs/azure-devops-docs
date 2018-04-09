@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <tr>
 <td>MSBuild Architecture</td>
 <td><p>Select either MSBuild x86 or MSBuild x64.</p>

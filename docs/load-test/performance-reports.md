@@ -1,16 +1,16 @@
 ---
 title: View and compare your Visual Studio load test runs 
 description: Get started with web performance tests - view and compare your VSTS load test runs
+ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # View and compare your load test runs
 

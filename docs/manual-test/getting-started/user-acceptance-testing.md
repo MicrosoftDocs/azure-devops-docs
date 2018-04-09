@@ -1,15 +1,16 @@
 ---
 title: User acceptance testing
 description: Create and run user acceptance tests in VSTS and TFS
+ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
-ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Perform user acceptance testing
 

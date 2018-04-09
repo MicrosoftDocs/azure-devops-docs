@@ -4,12 +4,13 @@ description: Trigger a release from a build in Release Management server/client 
 ms.assetid: A6079FE1-80FC-4C98-8F4A-832AB99CC5D3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2013"
 ---
-
 
 # Trigger a release from a build in Release Management
 

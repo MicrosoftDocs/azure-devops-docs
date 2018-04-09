@@ -1,15 +1,15 @@
 ---
 title: VSTS - Add team project members | VSTS
-description: Add members to team projects in VSTS (Visual Studio Online, VSTS, VSO)
+description: How to add members to team projects in VSTS (Visual Studio Online, VSTS, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
+ms.topic: 
 ms.manager: douge
 ms.author: chcomley
-ms.date: 03/26/2018
+ms.date: 04/05/2018
 monikerRange: 'vsts'
 ---
-
 
 # Add team project members in VSTS
 
@@ -84,10 +84,7 @@ To add members to team projects, you'll need
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
 	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
-    * If your VSTS account is connected to your organization's directory,
-	all users must be directory members and sign in to VSTS with "work or school accounts" that are managed by 
-	your organization's directory. 	If they're not members, have a directory administrator add them to the directory. 
-	That way, you can find them in this directory when you add users by searching for their email addresses or display names.
+    * If your VSTS account is connected to your organization’s directory, all users must be directory members and sign in to VSTS with work or school accounts that are managed by your organization’s directory. If they are not members, they will need to be [added to the directory](https://docs.microsoft.com/en-us/vsts/accounts/add-external-user?view=vsts).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
@@ -109,11 +106,13 @@ To add members to team projects, you'll need
 
 	[Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
-## Related notes
+## Next steps
 
 * [Connect to a team project](../user-guide/connect-team-projects.md)
 * [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../security/restrict-access.md)
-* [Delete users from VSTS](delete-account-users.md)
-* [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
-* [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
+
+## Related articles
+
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Get ready to go
 
 Before you begin, make sure that you are:
