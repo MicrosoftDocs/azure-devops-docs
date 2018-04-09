@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
 
-::: moniker range=">=tfs-2015"
+::: moniker range=">=tfs-2015 <= tfs-2018"
 
 > [!NOTE]  
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). 
@@ -43,7 +43,7 @@ Repository README files and team project Wikis are great ways to share informati
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2017"
   
 ## How-to Guides
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)

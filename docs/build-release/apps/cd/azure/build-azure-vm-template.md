@@ -1,15 +1,16 @@
 ---
-ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 title: Build an Azure Virtual Machine using Azure RM templates
 description: Build an Azure Virtual Machine using ARM templates in Release Management in VSTS and TFS
+ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Build an Azure virtual machine using an Azure RM template
 

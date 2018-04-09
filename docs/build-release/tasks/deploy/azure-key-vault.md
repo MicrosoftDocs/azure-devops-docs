@@ -1,15 +1,16 @@
 ---
 title: Build and Deploy - Azure Key Vault task
 description: VSTS ands TFS build task step to download secrets from an Azure key vault
+ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Deploy: Azure Key Vault
 

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 * VSTS: `https://{your_account}.visualstudio.com/{project-name}/_admin/_AgentQueue`
 
 * TFS 2017 and newer: `https://{your_server}/tfs/{collection-name}/{project-name}/_admin/_AgentQueue`

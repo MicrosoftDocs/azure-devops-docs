@@ -625,7 +625,7 @@ With other REST API's you might have implemented client-driven paging with `$top
 
 <a id="perf-top"> </a>
 ### ✔️ DO use `$top` query option to limit the number of records
-Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you care only about a subset of records (e.g. sample or top ranked records), it is absolutely fine to use `$top` query option.
+Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you need only a subset of records (e.g. sample), it is absolutely fine to use `$top` query option. Additionally, if you need to rank records according to some criteria, you should always use `$top` in combination with `$orderby` to get stable result with top ranked records.
 
 
 <a id="perf-small-number"> </a>

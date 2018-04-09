@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create a release definition
 
 1. In the **Build &amp; Release** hub, open the build summary for your build.

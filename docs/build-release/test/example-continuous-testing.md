@@ -1,16 +1,16 @@
 ---
 title: Continuous integration, test, and deployment tutorial
 description: Continuous integration, test, and deployment example in VSTS and TFS 
+ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
+ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Continuous integration, test, and deployment tutorial
 

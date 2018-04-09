@@ -1,16 +1,16 @@
 ---
 title: Load Testing with Visual Studio and VSTS
 description: About Load Testing, overview of capabilities and features
+ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # Load testing scenarios and capabilities
 
@@ -90,6 +90,6 @@ Load test your app with hundreds of thousands of users using
 If you prefer to run your tests in a local environment rather than in the cloud, see
 [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
 
-> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

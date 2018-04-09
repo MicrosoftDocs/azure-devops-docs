@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Help and support
 
 * See our [troubleshooting](../actions/troubleshooting.md) page.

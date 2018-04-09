@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 [Stakeholders](../../security/get-started-stakeholder.md)
 can respond to feedback requests for user stories and 
 features generated in VSTS or TFS using

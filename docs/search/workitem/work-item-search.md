@@ -4,13 +4,13 @@ description: Use Work Item Search to search across all work item fields over all
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Search for work items
 

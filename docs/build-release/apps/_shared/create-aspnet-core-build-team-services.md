@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](_img/set-up-first-build-from-code-hub.png)

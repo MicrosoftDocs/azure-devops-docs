@@ -4,17 +4,29 @@ description: How to connect VSTS account to Azure Active Directory (Azure AD)(AA
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
+ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 ms.date: 04/04/2018
 monikerRange: 'vsts'
 ---
 
-# Connect VSTS account to Azure Active Directory (Azure AD)
+# Tutorial: Connect VSTS account to Azure Active Directory (Azure AD)
 
 **VSTS**
 
 Azure AD users - you can connect your existing Azure AD tenant to VSTS, even if you started with a Microsoft account for your VSTS instance.
+
+In this tutorial, you learn to:
+> [!div class="checklist"]
+> * Understand where you're starting from
+> * Ensure all VSTS users are in the target Azure AD tenant
+> * Inform users of the upcoming change
+> * Determine which user is performing the connection of VSTS to Azure AD
+> * Connect your VSTS account to your organization directory
+> * Inform users of the completed change
+> * Close the temporary MSA (if you created one)
+> * Update the Azure subscription your VSTS account uses for billing
 
 If your VSTS account was created with a Microsoft account,
 you can connect your VSTS account to your
@@ -212,7 +224,7 @@ A: Clear the browser cache and delete any cookies for the session.
 
 A: Clear the browser cache and delete any cookies for the session.
 
-**Next:**
+## Next steps
 
 - [Manage users and access](add-account-users-assign-access-levels.md)
 - [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)

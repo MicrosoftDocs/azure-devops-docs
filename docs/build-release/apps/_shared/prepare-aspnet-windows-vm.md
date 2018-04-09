@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 On your VM, open an **Administrator: Windows PowerShell** console. Install IIS:
 
 ```PowerShell

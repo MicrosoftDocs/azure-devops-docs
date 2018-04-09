@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <tr>
 <td>MSBuild Arguments</td>
 <td>You can pass additional arguments to MSBuild. For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).</td>
