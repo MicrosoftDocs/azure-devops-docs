@@ -1,5 +1,5 @@
 ---
-title: Billing overview VSTS 
+title: Billing overview for VSTS 
 description: Manage billing overview VSTS (Visual Studio Team Services)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -7,11 +7,11 @@ ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/28/2018
+ms.date: 4/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Billing overview
+# Billing overview for VSTS
 
 **VSTS**
 
@@ -40,19 +40,22 @@ The Free Tier includes:
 > [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account.
 > You can only enable paid usage via the Azure portal.
 
-## What do I need to set up billing?
+## Prerequisites
 
-The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
 * [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
 
-## Related information
+## Next steps
 
 * [Set up billing](set-up-billing-for-your-account-vs.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
+
+## Related articles
+
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://www.visualstudio.com/team-services/support/)

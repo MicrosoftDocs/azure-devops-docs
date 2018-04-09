@@ -7,16 +7,18 @@ ms.topic: quickstart
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: chcomley
-ms.date: 4/05/2018
+ms.date: 4/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-#  Buy VSTS CI/CD
+# Quickstart: Buy CI/CD VSTS
 
 **VSTS**
 
 With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both. 
 We offer a **Free Tier** for each.
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
 Each VSTS starts out with the free tier of Microsoft-hosted CI/CD, which provides the ability to run one concurrent build or release job, for 
@@ -51,21 +53,20 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
 ## Buying process
 
-1.  As VSTS project collection administrator or account owner,
-sign in to either:
+1. As VSTS project collection administrator or account owner, sign in to either:
 
-  *  [**Visual Studio Marketplace** > **Build and release** > **Hosted pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
-  *  [**Visual Studio Marketplace** > **Build and release** > **Private pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+ * [Visual Studio Marketplace > Build and release > **Hosted pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+ * [Visual Studio Marketplace > Build and release > **Private pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
-2.  Choose **Get**.
+2. Choose **Get**.
 
     ![Select your VSTS account](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
-3.  Select your VSTS account, if you have multiple accounts, then choose **Buy**.
+3. Select your VSTS account, if you have multiple accounts, then choose **Buy**.
 
     ![Select your VSTS account](_img/get-more-build-load-testing/select-team-services-account.png)
 
-4.  Confirm the Azure subscription that you'll use for billing (you'll only see this the first time you set up billing), then choose **Continue**.
+4. Confirm the Azure subscription that you'll use for billing (you'll only see this the first time you set up billing), then choose **Continue**.
 
     If you have multiple Azure subscriptions,
   select the Azure subscription that you want to use.
@@ -75,7 +76,7 @@ sign in to either:
 
     ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
-5.  Select the number of concurrent jobs that you want to buy, then choose **Continue**.
+5. Select the number of concurrent jobs that you want to buy, then choose **Continue**.
 
     ![Select number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
@@ -123,7 +124,7 @@ The hosted XAML build controller is no longer supported.
 * [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
 * [VSTS Support](https://www.visualstudio.com/team-services/support)
 
-## Additional resources
+## Related articles
 
 * [VSTS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 * [TFS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)

@@ -1,26 +1,30 @@
 ---
 title: Pay for VSTS users (Basic)
 description: How to pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS, Marketplace)
-ms.topic: quickstart
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/30/2018
+ms.date: 4/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Pay for VSTS users (Basic)
+# Quickstart: Pay for VSTS users (Basic)
 
 **VSTS**
 
-You only need to pay for users in your VSTS account when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://www.visualstudio.com/team-services/pricing/), plus you get 5 additional users free in your VSTS account.
+In this quickstart, you'll learn how to pay for more users in your VSTS account.
+
+You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://www.visualstudio.com/team-services/pricing/), plus you get 5 additional users free in your VSTS account.
 
 [Pay for additional VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for VSTS users, this increases the total number of users you can add as members in your account, adding to the free limits mentioned above.
 
 For a list of features included, see our
 [feature comparison](https://www.visualstudio.com/team-services/compare-features/).
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -75,7 +79,6 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ## Next steps
 
+* [Buy CICD](buy-more-build-vs.md)
+* [Start free trials](try-additional-features-vs.md)
 * [Reduce or cancel paid VSTS users](reduce-cancel-paid-vsts-users.md)
-* [Add more team members to your VSTS account](../accounts/add-account-users-from-user-hub.md)
-* [Add backup billing managers](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
