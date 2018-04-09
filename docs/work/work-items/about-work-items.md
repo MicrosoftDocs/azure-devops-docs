@@ -121,7 +121,7 @@ Based on how your team answers these questions, they can choose how they want to
 
 ## Find or list work items 
 
-You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With manage searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
+You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
 - [Create managed queries to list, update, or chart work items ](../track/example-queries.md)  
@@ -133,7 +133,7 @@ To learn more, see these topics:
 <a id="customize"> </a>
 ## Customize a work item type (WIT) 
 
-You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in affect for your team project. 
+You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your team project. 
 ::: moniker range="vsts"
 To learn more, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
 ::: moniker-end
