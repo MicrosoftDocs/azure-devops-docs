@@ -11,12 +11,11 @@ ms.date: 3/28/2018
 monikerRange: 'vsts'
 ---
 
-
-#  VSTS extensions
+# VSTS extensions
 
 An extension is an install-able unit that contributes new capabilities into VSTS and/or Team Foundation Server. There are both free and paid extensions offered by Microsoft and from other parties.
 
-## Free extensions 
+## Free extensions
 
 There are many free extensions available in the Visual Studio Marketplace, too numerous to list. However, the following extensions are listed as they quickly add a lot of value and are easily installed. 
 

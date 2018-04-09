@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a name="argroup"></a>
 #### How do I create an Azure Resource Group for testing?
 

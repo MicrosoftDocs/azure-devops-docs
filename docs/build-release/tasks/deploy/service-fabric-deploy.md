@@ -1,15 +1,16 @@
 ---
 description: Service Fabric Application Deployment task
 title: Service Fabric Application Deployment build and release task for VSTS TFS
+ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Deploy: Service Fabric Application Deployment
 

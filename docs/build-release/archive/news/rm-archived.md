@@ -4,12 +4,13 @@ description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2013"
 ---
-
 
 # Archived release notes for Microsoft Release Management
 

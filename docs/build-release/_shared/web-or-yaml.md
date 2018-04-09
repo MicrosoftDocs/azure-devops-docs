@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Web or config as code
 
 Do you want to define your build process in your web browser or configure it as code in YAML?

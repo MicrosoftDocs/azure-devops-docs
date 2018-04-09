@@ -117,8 +117,8 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td style="background:rgb(231, 179, 249);">*2018.2*</td>
         </tr>
         <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
-        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
