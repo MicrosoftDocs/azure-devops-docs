@@ -1,15 +1,16 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure File Copy
 description: VSTS and Team Foundation Server build task step to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
+ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Deploy: Azure File Copy
 

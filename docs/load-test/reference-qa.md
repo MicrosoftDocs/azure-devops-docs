@@ -1,15 +1,16 @@
 ---
 title: FAQs for load testing   
 description: FAQs for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # FAQs for load testing
 

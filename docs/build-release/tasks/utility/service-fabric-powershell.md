@@ -1,15 +1,16 @@
 ---
 description: Service Fabric PowerShell Utility task
 title: Service Fabric PowerShell build task VSTS and TFS 
+ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Utility: Service Fabric PowerShell 
 

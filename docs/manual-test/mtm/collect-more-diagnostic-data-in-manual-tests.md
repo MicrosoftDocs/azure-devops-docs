@@ -4,12 +4,13 @@ description: Manual and exploratory testing - Collect more diagnostic data in ma
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Collect more diagnostic data in manual tests
 

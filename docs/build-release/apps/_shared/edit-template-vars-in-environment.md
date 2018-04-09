@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
    > **NOTE**: Some settings for the tasks may have been automatically defined as
    [environment variables](../../concepts/definitions/release/variables.md#custom-variables)
    when you created a release definition from a template.

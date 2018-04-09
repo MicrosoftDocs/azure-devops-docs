@@ -1,15 +1,16 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Load Test step
-ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 description: Runs the load test in cloud with VSTS to integrate cloud-based load tests into your build and release pipelines
+ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Test: Cloud-based Load Test
 

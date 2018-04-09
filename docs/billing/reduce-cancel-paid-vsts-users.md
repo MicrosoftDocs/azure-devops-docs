@@ -7,7 +7,7 @@ ms.technology: vs-devops-setup
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.manager: douge
 ms.author: chcomley
-ms.date: 3/30/2018
+ms.date: 4/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -20,6 +20,8 @@ As your team grows and contracts, you can increase or decrease the number of pai
 >[!NOTE]
 > To reduce or cancel users who have paid Basic access for the next month, you must make your changes before the last day of the month.
 > Your charges won't change until the next month because paid users are monthly purchases.
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -60,4 +62,3 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
 
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Get VSTS billing support](https://www.visualstudio.com/team-services/support/)

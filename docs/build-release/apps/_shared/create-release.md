@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <h2 id="cd">Define your CD release process</h2>
 
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure web site.

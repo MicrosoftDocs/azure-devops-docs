@@ -4,13 +4,13 @@ description: Quickly Search with VSTS and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
-ms.topic: get-started-article
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Search across all your code and work items
 

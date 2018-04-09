@@ -1,15 +1,16 @@
 ---
 description: Windows Machine File Copy build task
 title: Windows Machine File Copy build and release task for VSTS and TFS
+ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Deploy: Windows Machine File Copy
 
