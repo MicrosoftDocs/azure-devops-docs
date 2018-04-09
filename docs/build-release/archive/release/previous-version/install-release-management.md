@@ -4,12 +4,13 @@ description: Install Release Management server/client for Visual Studio 2015 and
 ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2013"
 ---
-
 
 # Install Release Management server/client for VS 2015 and TFS 2015
 

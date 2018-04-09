@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a name="code"></a>
 ### What code is in the sample app?
 

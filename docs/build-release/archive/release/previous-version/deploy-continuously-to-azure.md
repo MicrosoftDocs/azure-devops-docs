@@ -4,12 +4,13 @@ description: Release your app continuously to Microsoft Azure environments with 
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2013"
 ---
-
 
 # Deploy continuously to Azure
 

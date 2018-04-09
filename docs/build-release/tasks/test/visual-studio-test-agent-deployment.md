@@ -1,15 +1,16 @@
 ---
 title: Build and Test - Visual Studio Test Agent Deployment step
-ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
+ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Test: Visual Studio Test Agent Deployment
 

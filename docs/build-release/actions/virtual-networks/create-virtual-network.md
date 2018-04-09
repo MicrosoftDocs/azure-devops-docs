@@ -1,15 +1,16 @@
 ---
-ms.assetid: 64620E9B-D2D1-4516-921A-40A159019513
 title: Create a virtual network for build-deploy-test scenarios 
 description: Provision and manage VMs in SCVMM - Create a virtual network for build-deploy-test scenarios
+ms.assetid: 64620E9B-D2D1-4516-921A-40A159019513
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2018"
 ---
-
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 

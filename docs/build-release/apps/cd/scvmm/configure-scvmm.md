@@ -1,15 +1,16 @@
 ---
-ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
 title: Configure and deploy with System Center Virtual Machine Manager (SCVMM)
 description:  Configure and deploy with SCVMM using Microsoft Release Management in VSTS and TFS
+ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
 

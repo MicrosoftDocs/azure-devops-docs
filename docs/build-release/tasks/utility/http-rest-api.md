@@ -1,15 +1,16 @@
 ---
 title: Invoke HTTP REST API task 
 description: Build and release task to invoke an HTTP API and parse the response in VSTS and TFS
+ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Utility: Invoke HTTP REST API
 
