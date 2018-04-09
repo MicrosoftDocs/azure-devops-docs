@@ -4,12 +4,13 @@ description: Manual and exploratory testing - Connect Microsoft Test Manager to 
 ms.assetid: 4a2c7eb1-c65d-4fd9-bb19-f733164752c1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Connect Microsoft Test Manager to your team project and test plan
 
@@ -29,7 +30,9 @@ Use Microsoft Test Manager (MTM) to help you test the application you built. MTM
   
    ![Enter the name of a Team Foundation server.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect1.png)  
   
-   ![Expand the server name and choose a project.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect2.png)  
+   ![Expand the server name and choose a project.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect2.png) 
+   
+   If you don't see your team project, choose **Add server** and enter the URL of your VSTS or TFS server. 
   
 1. Create a new test plan, unless there's already a plan you want to use. Typically, you create a separate test plan for each sprint.  
   

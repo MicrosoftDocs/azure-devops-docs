@@ -72,6 +72,8 @@ You can specify who can add or edit query folders or queries at the object-level
 
 To learn more about queries, see [Create managed queries to list, update, or chart work items](../work/track/example-queries.md).
 
+
+::: moniker range=">= tfs-2017"
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 ## Manage or edit Delivery Plans 
@@ -79,11 +81,13 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 The creator of a Deliver Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. To learn more about Delivery Plans, see [Review team delivery plans](../work/scale/review-team-plans.md).
 
 Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../work/track/set-query-permissions.md). 
-
-
+::: moniker-end
+::: moniker range="tfs-2017"
 > [!NOTE]  
-> **Feature availability**: Delivery plans are available for all VSTS accounts. For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+> **Feature availability**: Delivery plans are available for TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
  
+::: moniker-end
+::: moniker range=">= tfs-2017"
 0. To grant permissions to a group or user to manage or edit a specific plan, click the  ![actions icon](../_img/icons/actions-icon.png) actions icon to open the Security dialog for the plan.  
 
 	<img src="_img/review-tp-open-security-dialog.png" alt="Open the Permissions dialog for a plan" style="border: 1px solid #C3C3C3;" />    
@@ -96,6 +100,8 @@ Plans are an object within a team project. You manage plan permissions for each 
 
 	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />  
 
+::: moniker-end
+
 <a id="move-delete-permissions"></a>
 
 ## Move or permanently delete work items 
@@ -107,7 +113,6 @@ For example, as a project admin you can grant a user, team group, or other group
 In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another team project and to permanently delete work items.     
 
 <img src="_img/set-permissions-project-level-dialog.png" alt="Set Team Admin permissions" style="border: 1px solid #C3C3C3;" />
-
 
 
 <a id="delete-test-permissions"></a>
@@ -130,7 +135,7 @@ To have full access to the Test feature set, your [access level must be set to A
 
 <a id="process-permissions"></a>
 
-## Customize an inherited process (VSTS)
+## Customize an inherited process 
 
 By default, only Project Collection Administrators can create and edit processes. However, these admins can grant permissions to other team members by explicitly setting the **Create process**, **Delete process**, or **Edit process** permissions at the collection level for a specific user. 
 

@@ -4,13 +4,13 @@ description: Get started with Code Search in VSTS and TFS
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Search your code
 
