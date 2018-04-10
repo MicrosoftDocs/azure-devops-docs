@@ -4,12 +4,13 @@ description: Service endpoints in Microsoft Visual Studio Team Services (VSTS) a
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Service endpoints for Build and Release
 
@@ -19,10 +20,6 @@ You will typically need to connect to external and remote services to execute ta
 for a build or deployment. For example, you may need to connect to your Microsoft Azure
 subscription, to a different build server or file server, to an online continuous
 integration environment, or to services you install on remote computers.
-
-Watch this video on Channel 9 to learn about service endpoints.
-
-<iframe width="640" height="360" src="//channel9.msdn.com/Series/DevOps-Release-Management/Service-Endpoints-with-Visual-Studio-Team-Services/player" frameborder="0" allowfullscreen="true"></iframe><p />
 
 You can define endpoints in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) that are available for use in all
 your tasks. For example, you can create an endpoint for your Azure subscription
@@ -34,6 +31,18 @@ You define and manage service endpoints from the Admin settings of your team pro
 
 Service endpoints are created at project scope. An endpoint created in one project is not visible in another team project.
 
+## Create a service endpoint
+
+1. Open the **Services** page from the "settings" icon in the top menu bar.
+
+   ![Opening the Services page](_img/new-service-endpoint-1.png)
+
+1. Choose **+ New Service Endpoint** and select the type of endpoint you need. 
+
+   ![Choosing a service endpoint type](_img/new-service-endpoint-2.png)
+
+1. Fill in the parameters for the endpoint. The list of parameters differs for each  type of service endpoint - see the following list.
+
 ## Common endpoint types
 
 VSTS and TFS support a variety of endpoint types by default. Some of these are described below:
@@ -41,14 +50,14 @@ VSTS and TFS support a variety of endpoint types by default. Some of these are d
 * [Azure Classic service endpoint](#sep-azure-classic)
 * [Azure Resource Manager service endpoint](#sep-azure-rm)
 * [Azure Service Bus service endpoint](#sep-servbus)
-* [Azure Service Fabric service endpoint](#sep-servfabric)
-* [Bitbucket service endpoint](#sep-bbucket)
+* [Bitbucket Cloud service endpoint](#sep-bbucket)
 * [Chef service endpoint](#sep-chef)
 * [Docker Host service endpoint](#sep-dochost)
 * [Docker Registry service endpoint](#sep-docreg)
 * [External Git service endpoint](#sep-extgit)
 * [Generic service endpoint](#sep-generic)
 * [GitHub service endpoint](#sep-github)
+* [GitHub Enterprise service endpoint](#sep-githubent)
 * [Jenkins service endpoint](#sep-jenkins)
 * [Kubernetes service endpoint](#sep-kuber)
 * [npm service endpoint](#sep-npm)
@@ -187,6 +196,8 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 <p />
 
+<!--
+
 *****
 
 <h3 id="sep-servfabric">Azure Service Fabric service endpoint</h3>
@@ -209,6 +220,8 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 ```powershell
 [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("path-to-certificate-file\certificate.pfx"))
 ```
+
+-->
 
 *****
 
@@ -270,7 +283,8 @@ Defines and secures a connection to a Docker registry.
 <h3 id="sep-extgit">External Git service endpoint</h3>
 
 Defines and secures a connection to a Git repository server.
-Note that there is a specific endpoint for [GitHub](#sep-github).
+Note that there is a specific endpoints for [GitHub](#sep-github)
+and [GitHub Enterprise](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -299,7 +313,8 @@ Defines and secures a connection to any other type of service or application.
 <h3 id="sep-github">GitHub service endpoint</h3>
 
 Defines a connection to a GitHub repository.
-Note that there is a specific endpoint for [other Git servers](#sep-extgit).
+Note that there is a specific endpoint for [External Git servers](#sep-extgit)
+and [GitHub Enterprise](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -327,6 +342,38 @@ Also see [Artifact sources](../definitions/release/artifacts.md#tfvcsource).
 
 *****
 
+<h3 id="sep-githubent">GitHub Enterprise service endpoint</h3>
+
+Defines a connection to a GitHub repository.
+Note that there is a specific endpoint for [External Git servers](#sep-extgit)
+and [standard GitHub endpoints](#sep-github).
+
+| Parameter | Description |
+| --------- | ----------- |
+| Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
+| Connection name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your GitHub account or subscription. |
+| Server URL | Required. The URL of the service. |
+| Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
+| Token | Required for Personal access token authorization. See notes below. |
+| User name | Required for Username and Password authentication. The username to connect to the service. |
+| Password | Required for Username and Password authentication. The password for the specified username. |
+<p />
+
+> [!NOTE]
+> If you select **Personal access token** you must obtain a suitable token
+and paste it into the **Token** textbox. The dialog shows the recommended scopes
+for the token: **repo, user, admin:repo_hook**. See
+[this page](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
+on GitHub for information about obtaining an access token. Then register your
+GitHub account in your profile:
+
+* Open your profile from your account name at the right of the VSTS page heading.
+* At the top of the left column, under **DETAILS**, choose **Security**.
+* In the **Security** tab, in the right column, choose **Personal access tokens**.
+* Choose the **Add** link and enter the information required to create the token.
+
+*****
+
 <h3 id="sep-jenkins">Jenkins service endpoint</h3>
 
 Defines a connection to the Jenkins service.
@@ -335,7 +382,7 @@ Defines a connection to the Jenkins service.
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
 | Server URL | Required. The URL of the service. |
-| Accept untrusted SSL certificates | Set this option to allow Jenkins clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
+| Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 

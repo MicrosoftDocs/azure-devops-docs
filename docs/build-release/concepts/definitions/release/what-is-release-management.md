@@ -4,12 +4,13 @@ description: What is Microsoft Release Management in Visual Studio Team Services
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # What is Release Management?
 
