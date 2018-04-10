@@ -149,7 +149,7 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 ### How do I generate a wrapper from my Gradle project?
 
 The Gradle wrapper allows the build agent to download and configure the exact Gradle environment that is 
-   checked into the repoistory without having any software configuration on the build agent itself other than the 
+   checked into the repository without having any software configuration on the build agent itself other than the 
    JVM.
 
 0. Create the Gradle wrapper by issuing the following command from the root project directory where your 
@@ -176,14 +176,19 @@ build.gradle resides:
 |-- gradlew
 |-- gradlew.bat
 ```
-### How do I build an Android project?
+### How do I fix timeouts when downloading dependencies?
 
-[Android Build](android-build.md)
+To fix errors such as `Read timed out` when downloading dependencies, users of Gradle 4.3+ can change the timeout 
+   by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
+   from 10 seconds to 1 minute.
+
+### How do I build an Android project?
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
+
 
 <!-- ENDSECTION -->
