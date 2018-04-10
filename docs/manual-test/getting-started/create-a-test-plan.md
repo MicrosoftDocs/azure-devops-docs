@@ -29,7 +29,7 @@ test cases for separate testing scenarios within a single test plan.
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
-> **Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
+**Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).
 
 <a name="testplan"></a>
@@ -40,10 +40,7 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
    [create your team project](../../accounts/account-management.md), 
    and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
-1. In VSTS, select your team project. 
-   (If you haven't been here before, use Browse.)
-
-   ![Select team project from account overview page](_img/create-a-test-plan/SelectTeamProject.png)
+1. In VSTS, open your team project.
 
 1. Go to the **Test Plans** tab of the **Test** hub. Create a test plan for your current sprint.
 
