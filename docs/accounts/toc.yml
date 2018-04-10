@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: About account management
+  - name: Account management
     href: account-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
@@ -12,13 +12,13 @@
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
-  - name: Add administrators or set permissions
+  - name: Add admins or set permissions
     href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
-  - name: Add a team administrator
+  - name: Add a team admin
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Connect VSTS account to AAD
+  - name: Connect VSTS to Azure AD
     href: connect-account-to-aad.md
   - name: Change individual permissions 
     href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
@@ -26,11 +26,11 @@
     href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Add Basic or VS subscription user to your account
+  - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
   - name: Invite external user
     href: invite-outside-users.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Manage your account
     items:
@@ -66,17 +66,17 @@
     items:
     - name: Add users to your account
       href: add-account-users-from-user-hub.md
-    - name: Manage users in user hub
+    - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access
       href: manage-conditional-access.md
-    - name: Link work accounts to Visual Studio with MSDN subscriptions
+    - name: Link work accounts to MSDN subscriptions
       href: ../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Authenticate with personal access tokens
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
       href: change-application-access-policies-vs.md
-    - name: Delete users from your account
+    - name: Delete users from account
       href: delete-account-users.md
     - name: Add external user
       href: add-external-user.md
@@ -86,19 +86,19 @@
         href: manage-azure-active-directory-groups-vsts.md
       - name: Connect VSTS account to Azure AD
         href: connect-account-to-aad.md
-      - name: Add VSTS users to your Azure AD
+      - name: Add VSTS users to Azure AD
         href: add-users-to-aad.md
       - name: Disconnect VSTS account from Azure AD
         href: disconnect-account-from-aad.md
-      - name: Delete users from VSTS connected to Azure AD
+      - name: Delete VSTS users connected to Azure AD
         href: delete-users-from-services-aad.md 
   - name: Manage extensions
     items:
-    - name: Install an extension for VSTS
+    - name: Install extension for VSTS
       href: ../marketplace/install-vsts-extension.md
     - name: Assign paid extensions access
       href: ../marketplace/assign-paid-extensions.md
-    - name: Approve requests for VSTS extensions
+    - name: Approve requests for extensions
       href: ../marketplace/approve-vsts-extensions.md
     - name: Uninstall or disable extensions
       href: ../marketplace/uninstall-disable-vsts-extensions.md
@@ -120,7 +120,7 @@
     href: faq-create-team-project.md
   - name: Rename team project
     href: faq-rename-team-project.md
-  - name: Access with Azure Active Directory
+  - name: Access with Azure AD
     href: faq-azure-access.md
   - name: Change app access
     href: faq-change-app-access.md

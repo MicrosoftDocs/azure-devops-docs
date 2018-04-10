@@ -6,30 +6,27 @@ ms.technology: vs-devops-setup
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.manager: douge
 ms.author: chcomley
-ms.date: 04/02/2018
+ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
-
 
 # Change account owner for VSTS
 
 **VSTS**
 
-When your team's roles and responsibilities change,
-you can change your VSTS account owner to another user.
+When your team's roles and responsibilities change, change your VSTS account owner to another user.
 
 <a name="ChangeOwner"></a>
 
 ## Prerequisites
 
-You must have at least Stakeholder access and VSTS [project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca).
+You must have VSTS [project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca).
 If no one has these permissions, contact
 [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 Make sure that the new owner:
 
 * Has been added and invited to your VSTS account (```https://{youraccount}.visualstudio.com```).
-* Also has at least Stakeholder access. Learn [how to manage users and access](add-account-users-assign-access-levels.md).
 * Has signed in to your VSTS account, created a Visual Studio profile, and agreed to the Terms of Service.
 * Has accessed the account, following initial profile creation, at least once.
 
