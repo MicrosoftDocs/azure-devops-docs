@@ -4,12 +4,13 @@ description: Understand Build and Release Phases in Microsoft Visual Studio Team
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2017"
 ---
-
 
 # Phases in Build and Release Management
 

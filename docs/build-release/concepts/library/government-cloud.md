@@ -4,12 +4,13 @@ description: Understand Azure Government Cloud deployment in Microsoft Visual St
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2017"
 ---
-
 
 # Deploy to Azure Government Cloud
 

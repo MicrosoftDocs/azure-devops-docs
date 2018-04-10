@@ -4,12 +4,13 @@ description: Understand release approvals in Release Management for Visual Studi
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Approvals
 

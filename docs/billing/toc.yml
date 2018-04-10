@@ -18,7 +18,7 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Change the Azure AD for your VSTS account
+  - name: Connect VSTS to Azure AD
     href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
