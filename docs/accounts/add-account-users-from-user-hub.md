@@ -1,15 +1,14 @@
 ---
 title: Add account users for Visual Studio Team Services
-description: Add account users for Visual Studio Team Services (VSTS)
+description: How to add users for Visual Studio Team Services (VSTS) account or team project
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/23/2018
+ms.date: 04/10/2018
 monikerRange: 'vsts'
 ---
-
 
 # Add users to your VSTS account or team project
 
@@ -54,26 +53,24 @@ using this Users view.  When you add users, each receives a notification email w
 link to the account page.
 
  > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
- > external to your Azure AD, first
- > [add those users as foreign principals](https://docs.microsoft.com/azure/active-directory/active-directory-create-users#add-a-user) to
+ > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are external to your Azure AD, first [add external users](https://docs.microsoft.com/en-us/vsts/accounts/add-external-user?view=vsts) to
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an
- > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD
+ > existing Microsoft account**.  After completing those steps, follow the steps below to add the external Azure AD
  > user to VSTS.
 
 Provide others access to your account by adding their email address.
 
 1. Choose ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option.
- 
-	![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
+
+   ![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
 
 2. Then, choose **Users** to open the Manage users page. Choose **Add new users** to open the dialog.
 
-	![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
+   ![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
 
 3. Fill out the form.
- 
-	![Web portal, account admin context, Add new users dialog](../user-guide/_img/invite-users-add-user-dialog.png)
+
+   ![Web portal, account admin context, Add new users dialog](../user-guide/_img/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account (MSA) email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
     * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).

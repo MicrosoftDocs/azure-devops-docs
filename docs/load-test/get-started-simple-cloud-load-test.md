@@ -33,12 +33,12 @@ using Visual Studio Team Services (VSTS).
 
 1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
-1. Go to the **Load test** hub, open the **+ New** 
-   menu and choose **URL based test**.
+1. Go to the **Test** hub, open the **Load test** tab, and choose **URL based test**
+   from the **+ New** menu.
 
    ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
 
-1. Type a name for the load test, and enter the URL you want to test
+1. Type a name for the load test, then enter the URL you want to test
    in the center column and in the details pane on the right. For a simple
    load test, leave the **HTTP method** set to **GET**.
 

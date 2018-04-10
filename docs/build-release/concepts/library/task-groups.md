@@ -4,12 +4,13 @@ description: Understand Task Groups in Microsoft Visual Studio Team Services (VS
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2017"
 ---
-
 
 # Task Groups
 
