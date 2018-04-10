@@ -29,7 +29,7 @@
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
   - name: Invite external user
-    href: invite-outside-users.md
+    href: invite-external-users.md
 - name: How-to guides
   items:
   - name: Manage your account
