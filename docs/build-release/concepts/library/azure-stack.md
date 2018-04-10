@@ -4,12 +4,13 @@ description: Understand Azure Stack deployment in Visual Studio Team Services (V
 ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 03/06/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: "vsts"
 ---
-
 
 # Deploy to Azure Stack
 
