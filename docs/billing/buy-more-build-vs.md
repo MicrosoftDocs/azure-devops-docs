@@ -21,18 +21,14 @@ We offer a **Free Tier** for each.
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
-Each VSTS starts out with the free tier of Microsoft-hosted CI/CD, which provides the ability to run one concurrent build or release job, for 
-up to 4 hours per month. If you need to run more than 4 hours per month, or you need to run more than one job at a time, you can switch to 
-paid Microsoft-hosted CI/CD. When you pay per concurrent job, there are no monthly time limits for your builds and releases, and the maximum 
-runtime for a single job is increased from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes 
-all infrastructure that Microsoft runs (virtual machines, databases, storage, egress, etc.) to deliver this service.
+
+Each VSTS starts out with the free tier of Microsoft-hosted CI/CD, which provides the ability to run one concurrent build or release job, for up to 4 hours per month. If you need to run more than 4 hours per month, or you need to run more than one job at a time, you can switch to paid Microsoft-hosted CI/CD. When you pay per concurrent job, there are no monthly time limits for your builds and releases, and the maximum runtime for a single job is increased from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (virtual machines, databases, storage, egress, etc.) to deliver this service.
 
 [Buy Microsoft-hosted CI/CD for your account](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 
 ## Self-hosted CI/CD (formerly Private Pipelines)
 
-VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you manage, whether your machines are on premises or in the cloud. 
-The free tier is one concurrent job.
+VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you manage, whether your machines are on premises or in the cloud. The free tier is one concurrent job.
 Typically you'll choose this option when:
 
 * there is custom software that runs in your build process which is not included in the Microsoft-hosted option above, or

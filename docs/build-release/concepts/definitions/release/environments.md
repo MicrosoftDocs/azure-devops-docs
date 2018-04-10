@@ -4,12 +4,13 @@ description: Understand environments in Release Management for Visual Studio Tea
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Environments in Release Management
 
