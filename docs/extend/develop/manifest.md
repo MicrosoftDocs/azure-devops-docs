@@ -275,7 +275,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 
 ### Installation target versions
 
-Some installation target identifiers, like `Microsoft.TeamFoundation.Server` and `Microsoft.TeamFoundation.Server.Integration`, suppport an optional version range. This further clarifies the supported releases the extension or integration is supported on. 
+Some installation target identifiers, like `Microsoft.TeamFoundation.Server` and `Microsoft.TeamFoundation.Server.Integration`, support an optional version range. This further clarifies the supported releases the extension or integration is supported on. 
 
 The version or version range is specified via the `version` field on the installation target object. This value can be either:
 
@@ -372,7 +372,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-verison/3.0` means the extension works with VSTS and Team Foundation Server 2017 RTM and later:
+Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with VSTS and Team Foundation Server 2017 RTM and later:
 
 #### Example 8: Extension that uses version 3.0 APIs
 
