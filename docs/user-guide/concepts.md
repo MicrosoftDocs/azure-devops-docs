@@ -95,7 +95,7 @@ When you connect to VSTS or an on-premises TFS, you connect to an account or tea
 ### Team projects and team project collections or accounts
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection.  
-
+<br/>
 
 <table width="100%">
 <tbody valign="top">
