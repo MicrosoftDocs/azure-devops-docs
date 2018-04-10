@@ -4,12 +4,13 @@ description: Understand environment templates in Release Management for Visual S
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Environment templates in Release Management
 

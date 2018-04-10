@@ -4,12 +4,13 @@ description: Understand triggers in Microsoft Release Management for Visual Stud
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
 monikerRange: ">= tfs-2015"
 ---
-
 
 # Triggers in Release Management
 
