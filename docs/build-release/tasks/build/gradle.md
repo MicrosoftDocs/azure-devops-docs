@@ -182,8 +182,6 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
    by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
    from 10 seconds to 1 minute.
 
-### How do I build an Android project?
-
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< vsts"
