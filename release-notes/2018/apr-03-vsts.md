@@ -39,7 +39,6 @@ Other highlights include:
 
 - [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 - [Retain special characters in Wiki page titles](#retain-special-characters-in-wiki-page-titles)
-- [Quickly link to other wiki pages using suggestions](#quickly-link-to-other-wiki-pages-using-suggestions)
 - [Extend Wiki using REST APIs](#extend-wiki-using-rest-apis)
 
 ### Reporting
@@ -197,15 +196,6 @@ You can now create wiki pages with special characters such as `: < > * ? | -`. N
 |        -           |        %2D        |
 
 This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/31745275-allow-all-characters-in-wiki-page-title).
-
-### Quickly link to other wiki pages using suggestions
-
-When you want to create a link to another wiki page, you can just type the standard markdown syntax for adding links `[link name](/` and you will get an enlistment of all pages in the current wiki. Earlier you were able to click and drag a wiki page to the markdown editor to create links, but this makes creating links in pages even simpler.
-
-> [!div class="mx-imgBorder"]
-![autosuggestion wiki page link](_img/132_07.png)
-
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19042909-enable-free-linking-in-the-wiki).
 
 ### Extend Wiki using REST APIs
 
