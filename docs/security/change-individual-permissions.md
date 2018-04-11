@@ -1,17 +1,15 @@
 ---
 title: Add AD/AAD security groups to built-in security groups  for VSTS & TFS
 description: Manage large groups of users by adding AD/AAD security groups to built-in security groups 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Change individual permissions, grant select access to specific functions  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -19,9 +17,10 @@ monikerRange: '>= tfs-2013'
 The standard way for permissions to accrue to individuals are by adding user accounts to one or more built-in security groups. However, in certain instances, you'll want to grant additional permissions to select individuals, but perhaps not all permissions assigned to the security group. For example, you might want to grant several individuals the ability to add or edit area and iteration paths, but not have all permissions available to members of the Project Administrators group. 
 
 The three ways to change permissions for an individual are:
+
 - Create a custom group, define permissions for that group, add the user account to the group
 - For object-level permissions: Add the user account and set permissions
-- For project or collection-level permissions: Search for the user account and selectively change their permission assignments  
+- For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
 In this topic you'll learn how to:
 > [!div class="checklist"]

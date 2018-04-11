@@ -1,8 +1,8 @@
 ---
 title: Pay for VSTS users (Basic)
 description: How to pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS, Marketplace)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: quickstart
 ms.manager: douge

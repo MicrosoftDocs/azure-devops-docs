@@ -2,16 +2,14 @@
 title: Describes the services provided by Visual Studio Team Services, the cloud version of TFS 
 titleSuffix: VSTS 
 description: Understand the fundamental services provided by Visual Studio Team Services (VSTS) 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-new-user
 ms.assetid: 4 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
-ms.topic: get-started-article
+ms.topic: overview
 ---
-
-
 # What is VSTS?
 
 **VSTS**
@@ -28,7 +26,6 @@ Visual Studio Team Services (VSTS) is a cloud service for collaborating on code 
 In addition, the VSTS ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
 Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. 
-
 
 ## Where do I start?
 

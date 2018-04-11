@@ -2,12 +2,12 @@
 title: Remove users from AD/Azure AD security groups 
 titleSuffix: VSTS & TFS
 description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD (AAD) security groups  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 02/06/2018
 monikerRange: '>= tfs-2013'
 ---

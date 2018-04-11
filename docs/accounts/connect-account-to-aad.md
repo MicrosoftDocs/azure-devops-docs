@@ -1,8 +1,8 @@
 ---
 title: Connect VSTS account to Azure Active Directory (Azure AD)
 description: How to connect VSTS account to Azure Active Directory (Azure AD)(AAD)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: tutorial
 ms.manager: douge
