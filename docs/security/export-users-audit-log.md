@@ -2,17 +2,16 @@
 title: How to export the access level audit log for all users and groups
 titleSuffix: VSTS & TFS
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
-ms.technology: vs-devops-admin
-ms.prod: vs-devops-alm
+ms.technology: devops-security
+ms.prod: devops
 ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
 ms.author: kaelli
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Export a list of users and their access levels
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]

@@ -1,21 +1,20 @@
 ---
 title: Security terms in use VSTS & TFS 
 description: Key definitions for objects and items used to authenticate and manage users and groups 
-ms.technology: vs-devops-wit
+ms.technology: devops-settings
 ms.prod: vs-devops-alm
 ms.assetid:  
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Security glossary
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Microsoft Security glossary is a short dictionary of terms used in authenticating users and managing permissions on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms.   
+The Microsoft Security glossary is a short dictionary of terms used in authenticating users and managing permissions on the Visual Studio Team Services (VSTS) and Team Foundation Server platforms.
 
 <!--- 
  
@@ -25,8 +24,9 @@ The Microsoft Security glossary is a short dictionary of terms used in authentic
 
 -->
 
-## Access level 
-Access levels correspond to a licensing level to provide access to certain features. Access to these features is managed by membership to an access level. To learn more, see [About access levels](access-levels.md). 
+## Access level
+
+Access levels correspond to a licensing level to provide access to certain features. Access to these features is managed by membership to an access level. To learn more, see [About access levels](access-levels.md).
 
 <!---
 ## Anonymous user

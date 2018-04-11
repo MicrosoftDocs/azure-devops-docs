@@ -2,19 +2,16 @@
 title: Set work tracking permissions 
 titleSuffix: VSTS & TFS 
 description: How to grant or restrict access to work tracking tasks for Visual Studio Team Services and Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-settings
+ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Set permissions and access for work tracking
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

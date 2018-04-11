@@ -4,15 +4,13 @@ titleSuffix: VSTS & TFS
 description: At-a-glance view of default assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.manager: douge
-ms.author: sdanie
+ms.author: chcomley
 ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Default Git repository and branch permissions
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -25,8 +23,7 @@ From the team project admin content for Version Control, you can [set permission
 
 [!INCLUDE [temp](_shared/code-git.md)]
 
-
-## Related notes 
+## Related articles
 
 - [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)
 - [Set permissions for a specific branch and set branch policies](../git/branch-permissions.md)

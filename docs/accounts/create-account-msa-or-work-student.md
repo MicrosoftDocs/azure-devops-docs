@@ -1,18 +1,16 @@
 ---
 title: Create a VSTS account with a Microsoft account or a work/organization account
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/17/2017
 monikerRange: 'vsts'
 ---
-
-
-#	Create your VSTS account with a personal Microsoft account or a work/school/organization account
+# Create your VSTS account with a personal Microsoft account or a work/school/organization account
 
 **VSTS**
 
@@ -28,11 +26,10 @@ so your team can build often, test early, and ship faster.
 > [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
 > or learn [how to install and set up Team Foundation Server](../tfs-server/install/get-started.md). 
 
-
 [What users can join for free?  What do they get in VSTS?](faq-create-account.md#free-users)
 
-
 <a name="how-sign-up"></a>
+
 ##	What do I need to sign up for a VSTS account?
 
 *	To use only Microsoft accounts 

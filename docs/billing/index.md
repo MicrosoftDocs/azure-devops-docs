@@ -1,8 +1,8 @@
 ---
 title: Billing for VSTS and TFS  
 description: VSTS charges appear on your monthly Azure bill, and supports Enterprise Agreement (EA), Cloud Solution Provider (CSP), Licensing, and Direct/Pay-As-You-Go Azure subscriptions
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.topic: conceptual
 ms.manager: douge

@@ -1,17 +1,15 @@
 ---
 title: Set up Active Directory or Azure Active Directory for VSTS & TFS
 description: Manage large groups of users using Active Directory (AD) for TFS or Azure Active Directory (Azure AD) for VSTS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 02/28/2018
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Set up Active Directory or Azure Active Directory
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
