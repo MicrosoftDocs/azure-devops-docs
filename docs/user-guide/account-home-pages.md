@@ -4,13 +4,12 @@ description: Quickly link to work items, pull requests, team projects, and more 
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
-
-
 # Work effectively from your account hub 
 
 **VSTS | TFS 2018 | TFS 2017.1**  
