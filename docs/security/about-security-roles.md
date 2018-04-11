@@ -2,13 +2,13 @@
 title: Understand how security roles work
 titleSuffix: VSTS & TFS
 description: Learn where security roles are used to manage permissions to select features and functions  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.date: 02/12/18
 monikerRange: '>= tfs-2015'
 ---

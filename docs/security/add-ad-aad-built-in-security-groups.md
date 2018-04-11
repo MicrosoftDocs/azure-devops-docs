@@ -1,20 +1,16 @@
 ---
 title: Add AD/AAD security groups to built-in security groups  for VSTS & TFS
 description: Manage large groups of users by adding AD/Azure AD (AAD) security groups to built-in security groups 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Add AD/Azure AD users or groups to a built-in security group
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -25,7 +21,6 @@ Review [Default permissions and access](permissions-access.md) to gain insight i
 In this topic you'll learn how to:
 > [!div class="checklist"]
 > * Add an AD/Azure AD user or group to a built-in security group
- 
 
 The method for adding a user or group to a built-in security group is the same, no matter at what level you add them. 
 

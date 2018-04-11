@@ -1,10 +1,10 @@
 ---
 title: Free trials for paid VSTS features and extensions | VSTS
 description: How to get free trials for Test Manager, Package Management, and for VSTS extensions offered by other publishers (VSTS, Visual Studio Online, VSO)
-ms.topic: quickstart
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 ms.date: 4/06/2018
@@ -16,12 +16,12 @@ ms.date: 4/06/2018
 **VSTS**
 
 There are two paid features in VSTS offered by Microsoft that you can use free for a 30-day trial:
-- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, 
-Visual Studio Test Professional, and MSDN Platforms subscribers)
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, 
-plus another 5 users in your account)
 
-During the trial, any user in your VSTS account whose access level is Basic (including Visual Studio subscribers) can use these features. 
+- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers)
+
+- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another 5 users in your account)
+
+During the trial, any user in your VSTS account whose access level is Basic (including Visual Studio subscribers) can use these features.
 You'll assign these features explicitly to users within the User hub once the trial ends and you choose to pay for a certain number of users on an ongoing basis.
 
 This same process applies to paid extensions offered by other publishers within the Visual Studio Marketplace, including:
