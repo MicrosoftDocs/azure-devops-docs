@@ -118,6 +118,12 @@
     items:
     - name: Use Team Foundation version control commands
       href: use-team-foundation-version-control-commands.md
+    - name: Git commands
+      items:
+      - name: Git permission
+        href: git-permission-command.md
+      - name: Git view
+        href: git-view-command.md
     - name: Add
       href: add-command.md
     - name: Checkin

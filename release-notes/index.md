@@ -96,7 +96,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="13">[3 Apr 2018](2018/apr-03-vsts.md)</td>
+            <td rowspan="12">[3 Apr 2018](2018/apr-03-vsts.md)</td>
             <td>Quickly describe pull requests using commit messages</td><td style="background:rgb(232, 232, 232);">*2019*</td>
         </tr>
         <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
@@ -108,7 +108,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Maintain feed query speed with retention policies</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Publish markdown files from a Git repository as a Wiki</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain special characters in Wiki page titles</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Quickly link to other wiki pages using suggestions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend Wiki using REST APIs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Integrate Power BI with VSTS Analytics using views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
