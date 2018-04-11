@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: macoope
-ms.date: 03/14/2018
+ms.date: 04/11/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -59,12 +59,12 @@ Allow administrators to create branches under `releases`.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
 
-Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally).
+Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 
 >[!NOTE]
->You can access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
+>For more information, see [tf git permission](../../tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 
