@@ -1,10 +1,9 @@
 ---
 title: VSTS extensions overview 
 description: VSTS extensions overview, free, create or build your own
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-settings
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 3/28/2018

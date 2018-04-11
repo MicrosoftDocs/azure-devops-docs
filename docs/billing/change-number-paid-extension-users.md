@@ -1,9 +1,10 @@
 ---
 title: Change the number of paid users for a VSTS extension
 description: Change the number of paid users for a VSTS extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
+ms.prod: devops
+ms.technology: devops-settings
+ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: chcomley
 ms.date: 4/06/2018
