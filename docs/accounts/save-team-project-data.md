@@ -1,20 +1,18 @@
 ---
 title: Save team project data for VSTS
-description: Save team project data for VSTS
+description: Save team project data for Visual Studio Team Services (VSTS)
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
-
-
 # Save team project data for VSTS
 
 **VSTS**
-
 
 When you delete a team project, you cannot recover its data later. Therefore, you should save team project data.
 
