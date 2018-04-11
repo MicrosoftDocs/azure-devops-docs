@@ -2,16 +2,15 @@
 title: Get started with Stakeholder access
 titleSuffix: VSTS & TFS  
 description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: tutorial
 ms.date: 03/01/2018
 ---
-
-# Get started as a Stakeholder  
+# Get started as a Stakeholder
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -27,7 +26,8 @@ Use this topic to learn:
 > * Find work assigned to you, or query for other work items
 > * Understand the set of features you have access to
 
-## First time signing in 
+## First time signing in
+
 ::: moniker range="vsts || >= tfs-2013"
 
 1. Click the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
@@ -44,7 +44,8 @@ Use this topic to learn:
 
 ::: moniker-end
 
-<a id="create-work-item">  </a> 
+<a id="create-work-item">  </a>
+
 ## Add a work item
 
 You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/work-items/guidance/scrum-process.md), [Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). 
@@ -102,13 +103,14 @@ Work appears in the backlog in priority order.
 
 	<img src="_img/work-as-a-stakeholder-add-pbi.png" alt="Add a backlog item from the quick add panel" style="border: 1px solid #CCCCCC;" />  
 
-## Check work in progress  
+## Check work in progress
 
 To view the team's work status, open the Kanban board. Click the title of an item to open or edit it. 
 
 <img src="_img/work-as-a-stakeholder-view-kanban-board.png" alt="View Kanban board" style="border: 1px solid #CCCCCC;" />
 
-<a id="query">  </a> 
+<a id="query">  </a>
+
 ## Find work assigned to you, or query for other work items  
 
 Open the Queries page to see the list of work items assigned to you.  
@@ -124,7 +126,8 @@ And, you can [create new queries or edit existing queries](../work/track/using-q
 <img src="_img/work-as-a-stakeholder-edit-query.png" alt="Query Editor" style="border: 1px solid #CCCCCC;" />
 
 
-## Related notes 
+## Related notes
+
 For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://www.visualstudio.com/team-services/compare-features/). See also these quickstart guides: 
 
 - [Add work items](../work/backlogs/add-work-items.md)  
@@ -133,7 +136,8 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 
 If you want to provide a group of users access to provide feedback, then you don't need to give them Stakeholder access. Instead, simply [give reviewers permissions to provide feedback](../feedback/give-permissions-feedback.md). 
 
-<a id="feature-access">  </a> 
+<a id="feature-access">  </a>
+
 ### Stakeholder feature access
 
 ::: moniker range="vsts || >= tfs-2018"
@@ -145,15 +149,15 @@ The following features are available to Stakeholders from the web portal.
 > |-------------|----------|  
 > |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>2</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../collaborate/follow-work-items.md) <br/>- [View the cumulative flow diagram](../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../feedback/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md)<br/><br/>**Build & Release**<br/>- [View releases](../build-release/concepts/definitions/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../build-release/concepts/definitions/release/approvals/index.md)|- [Navigate to teams, team projects, and more](../user-guide/account-home-pages.md)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../report/dashboards.md) <br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>7</sup> |
 
-**Notes:** 
+**Notes:**
 
-1. Stakeholders can assign existing tags to work items, but not create new tags. 
+1. Stakeholders can assign existing tags to work items, but not create new tags.
 2. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.
 3. Stakeholders cannot move cards on the board to update status, set the values of fields shown on cards, or set or view  team capacity.
 4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
-5. Stakeholders can only view and approve releases.  
-6. Stakeholders cannot view markdown README files defined for repositories.  
-7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
+5. Stakeholders can only view and approve releases.
+6. Stakeholders cannot view markdown README files defined for repositories.
+7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).
 
  
 

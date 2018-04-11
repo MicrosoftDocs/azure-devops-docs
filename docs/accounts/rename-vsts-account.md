@@ -1,16 +1,15 @@
 ---
 title: Rename VSTS account | VSTS
 description: Change account name in VSTS (Visual Studio Online, VSO, VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
-
-
 # Rename your VSTS account
 
 **VSTS**

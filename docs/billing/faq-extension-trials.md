@@ -1,9 +1,10 @@
 ---
 title: Frequently asked questions about trials for VSTS
 description: Frequently asked questions about extensions and trials for Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 3/28/2018
@@ -64,10 +65,10 @@ only be able to assign up to the number of free plus paid users included in your
 free users, you can assign Package Management to 5 users at any time. If you buy 6 additional Package Management users, then you would be able to 
 assign Package Management to 11 total users in your account.
 
-## Related information
+## Related articles
 
 - [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
-- [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md) 
+- [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md)
 - [Set up billing](set-up-billing-for-your-account-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

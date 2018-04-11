@@ -3,7 +3,7 @@ title: Navigate in the web portal
 titleSuffix: VSTS & TFS
 description: Guide to using the web portal for Visual Studio Team Services or Team Foundation Server   
 ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.assetid: 493362ae-5318-4719-9e0f-48c74ff8f0ba
 ms.topic: reference
 ms.manager: douge
