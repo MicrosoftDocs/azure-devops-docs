@@ -1,19 +1,15 @@
 ---
 title: Set permissions and access for tracking 
 description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and Team Foundation Server)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-settings
+ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 10/23/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Permissions and access for work tracking
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

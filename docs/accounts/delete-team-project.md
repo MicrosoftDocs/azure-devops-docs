@@ -2,8 +2,9 @@
 title: Delete a team project from VSTS and TFS
 description: Delete or remove a team project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 03/06/2018

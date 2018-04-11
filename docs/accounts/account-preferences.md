@@ -1,16 +1,15 @@
 ---
 title: View and change account preferences in VSTS & TFS
 description: Change picture, set preferred email, or other account preferences from your account profile in VSTS and TFS 
-ms.technology: vs-devops-setup
-ms.prod: vs-devops-alm
+ms.technology: devops-settings
+ms.prod: devops
 ms.assetid: 30821EA7-F20F-4A15-B4E3-A023C39FFF72
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 monikerRange: '>= tfs-2015'
 ---
-
-
 # Set your account preferences
 
 **VSTS | TFS 2015**
