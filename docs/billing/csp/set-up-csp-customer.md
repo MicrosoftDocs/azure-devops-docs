@@ -1,16 +1,15 @@
 ---
 title: Set up Cloud Solution Provider customer for billing in Partner Center
 description: Cloud Service Provider (CSP) partners can purchase and manage various VSTS, VS, HockeyApp, etc., subscriptions for their customers
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 7c2d014a-c6b4-40e7-9217-326b6d8cd74c
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 03/08/2018
 monikerRange: 'vsts'
 ---
-
-
 # Set up Cloud Solution Provider customer and billing in Partner Center
 
 **VSTS**
@@ -24,14 +23,14 @@ Get started:
 * Partners need to have the appropriate permissions role to purchase in the Partner Center. [Learn more](https://msdn.microsoft.com/partner-center/create-user-accounts-and-set-permissions) about roles in Partner Center.
 * Set up a customer tenant and CSP-based Azure subscription in Partner Center by following these steps:
 
-
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-Customer-Provisioning/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
 ## Customer set up steps from video
 
-1. First, sign in to your [Partner Center](https://partnercenter.microsoft.com) account. On the Dashboard, click **Add new customer**, or add a new customer from the **Customers** page.  Provide the customer's details and advance to the customer's subscriptions.
-2. Add an Azure subscription, which the marketplace uses for billing. Customers can have as many Azure subscriptions as needed. Choose **Add subscription** and then **Microsoft Azure** to add more.
-3. Review your order and **submit**.
+1. Sign in to your [Partner Center](https://partnercenter.microsoft.com) account. 
+2. On the Dashboard, choose **Add new customer**, or add a new customer from the **Customers** page. Provide the customer's details and advance to the customer's subscriptions.
+3. Add an Azure subscription, which the marketplace uses for billing. Customers can have as many Azure subscriptions as needed. Choose **Add subscription** and then **Microsoft Azure** to add more.
+4. Review your order and **Submit**.
 
 New subscriptions will initially have the subscription name "Microsoft Azure", so be sure to give subscriptions
 appropriate nicknames. Simply choose the subscription name, enter a new subscription nickname, and submit.
@@ -51,7 +50,7 @@ To view Visual Studio pricing for CSP partners, log into the [Partner Center](ht
 the upper right. Once the Excel spreadsheet downloads, go to the **Azure Price List** sheet, and
 filter the **Meter Category** column to **Visual Studio**.
 
-> [!NOTE] 
+> [!NOTE]
 > Partners purchase Visual Studio in the CSP program through the Partner Center. At this time, there is no API
 > for automation.
 

@@ -1,16 +1,15 @@
 ---
 title: Manage users and access in VSTS
 description: Add users and assign access levels on users page in VSTS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/23/2018
 monikerRange: 'vsts'
 ---
-
-
 # Manage users for VSTS
 
 **VSTS**

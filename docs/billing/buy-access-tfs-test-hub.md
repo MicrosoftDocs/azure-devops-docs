@@ -1,9 +1,10 @@
 ---
 title: Buy TFS CALs or access to the TFS Test hub | Team Foundation Server (TFS)
 description: Buy Team Foundation Server (TFS) client access licenses (CALs) or access to the TFS Test hub 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 1/29/2018

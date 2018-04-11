@@ -136,8 +136,9 @@ You should run the ProcessDimensionsForExpandedCapacity web service when you rec
 Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.
 Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'. 
 Microsoft.TeamFoundation.Warehouse.WarehouseException: File system error: A string store or binary store with a compatibility level of '1050' is at the maximum file size of 4 gigabytes. To store additional strings, you can change the StringStoresCompatibilityLevel property of the associated dimension or distinct count measure to '1100' and reprocess. This option is only available on databases with a compatibility level of '1100' or higher.
-Physical file: \\?\I:\OLAP\Data\Tfs_Analysis.0.db\vDimWorkItemOverlay.5.dim\7.WorkItemSK.asstore.
+Physical file: \\?\E:\OLAP\Data\TFS_Analysis.0.db\File.0.dim\232.FileSK.asstore.
 ```
+
 
 This service changes the StringStoresCompatibilityLevel to 1100 for the **Version Control**  dimension and performs a full cube reprocess.
 
