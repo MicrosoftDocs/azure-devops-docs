@@ -2,16 +2,15 @@
 title: Add users to a team or team project
 description: Quickstart guide to add users to a group, team project, or team 
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.prod: devops
+ms.technology: tfs-admin
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 03/20/2018
 monikerRange: '>= tfs-2013'
 ---
-
-# Add users to a team project or specific team
+# Quickstart: Add users to a team project or specific team
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

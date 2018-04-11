@@ -201,8 +201,10 @@ All the tasks you need were automatically added to the build definition by the t
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted VS2017
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -266,8 +268,10 @@ This change causes the build to publish a set of uncompressed files and folders 
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted Linux Preview
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -317,6 +321,11 @@ YAML builds are not available in TFS.
 
 To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
 
+1. Switch the agent queue to "Hosted Linux".
+
+ > **Why do this?** 
+ To build a Linux container, you need to use a machine with Docker that is configured to run Linux containers.
+
 1. Select **Tasks**.
 
 1. Select the **.NET Core** publish task, and then 
@@ -331,16 +340,18 @@ To deploy to a container service (such as Azure web apps for containers, or a Ku
 
 1. Select the **Publish build artifacts** task, and then disable or remove it.
 
-> **Why do this?** 
-You don't need artifacts to deploy to a container.
+ > **Why do this?** 
+ You will package and publish the web application as a container. There is no need to publish the web application files separately as an artifact to VSTS or TFS.
 
 # [Container](#tab/deploy-container/yaml)
 
 ::: moniker range="vsts"
 
 ```yaml
-steps:
+queue: 
+  name: Hosted Linux Preview
 
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore

@@ -1,33 +1,29 @@
 ---
 title: Find an admin or account owner for VSTS or TFS
 description: Look up who can help you gain access or change your permissions 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
-# Look up the account owner or a project administrator
+# Quickstart: Look up the account owner or a project administrator
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the account owner.  
+When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the account owner.
 
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md).
-
 
 ## Prerequisites
 
 * You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.  
 
-
-## Find out who is a member of the Project Administrators group   
+## Find out who is a member of the Project Administrators group
 
 If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by clicking on that group in the team project admin context and seeing who are members. 
  

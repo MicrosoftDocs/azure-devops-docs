@@ -1,16 +1,15 @@
 ---
 title: Restore your VSTS account
 description: Restore your VSTS account
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
-
-
 # Restore your VSTS account
 
 **VSTS**
