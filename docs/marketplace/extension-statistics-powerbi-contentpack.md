@@ -41,7 +41,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Click **Sign In** to continue.
 
-    ![Login to VS VSTS with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+    ![Login with oAuth2](_img/connect-to-vs-team-services-auth.png)  
 
 	**Important**: You won't be able to connect if your account administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
