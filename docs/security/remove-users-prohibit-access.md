@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: tutorial
 ms.date: 02/06/2018
 monikerRange: '>= tfs-2013'

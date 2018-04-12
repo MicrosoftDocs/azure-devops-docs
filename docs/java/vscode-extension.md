@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-build 
 ms.manager: douge
 ms.author: douge
-ms.date: 03/14/2018
+ms.date: 04/12/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -31,10 +31,10 @@ To install the extension with the latest version of Visual Studio Code, bring up
 
 Restart Visual Studio Code.
 
-## Acquire a Personal Access Token
+## Acquire a personal access token
 
 If you are connecting to VSTS or TFS, you may need a *personal access token* (PAT) to securely access your account. 
-If you do not have a personal access token yet, you will need to [create one on your Team Services account](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate). 
+If you do not have a personal access token yet, you will need to [create one on your VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate). 
 
 ## Connect to your VSTS Git repo
 
@@ -57,7 +57,7 @@ Once your credentials are verified, the status bar indicators will be active and
 > [!NOTE]
 > In order for the extension to be activated, a repository folder must be opened. The extension won't be activated if only a single file in the repository is opened.
 
-## Status Bar Indicators
+## Status bar indicators
 
 > [!div class="mx-imgBorder"]
 ![Team Project name status indicator](_img/project-indicator.png)
@@ -75,7 +75,7 @@ Once your credentials are verified, the status bar indicators will be active and
 ![Work item count status indicator](_img/pinnedquery-indicator.png)
  This status bar item shows the number of items returned by your pinned work item query. If you have not configured a pinned query it defaults to the work items assigned to you. Clicking the item will show you the work items the query returns. This indicator will update its status every 5 minutes.
 
-## Comands
+## Commands
 In addition to the status bar integrations, the extension also provides several commands for interacting with VSTS and Team Foundation Server. In the Command Palette (F1), type team and choose a command.
 
 - `team create bug` - Opens your browser to the webpage used to create a new bug. If a single line of text is highlighted in Visual Studio Code, it will be used as the title of the bug. The bug will be assigned to you. You can then choose to update the fields, save, cancel, etc.
@@ -85,23 +85,23 @@ In addition to the status bar integrations, the extension also provides several 
 - `team send feedback` - Prompts you to either send a smile or a frown. After choosing, you can provide us feedback of up to 1000 characters. Optionally, provide your email address so we can contact if you needed. If you do not want to provide your email address, just leave it empty (we'll still get your feedback). Note: Feedback can be sent even if telemetry reporting is disabled.
 - `team view blame`- If a file in the repository is opened in the editor, it will open your browser to the blame page for that file in the current branch in the server repository.
 - `team view build summary` - Same behavior as clicking on the Build Status status bar item.
- - `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
- - `team signin` - Use this command to log in to a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
- - `team signout` - Use this command to log out from a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
- - `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
- - `team view website` - Same behavior as clicking on the team project status bar item.
- - `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
- - `team view work item queries` - Prompts you to choose a query stored in your "My Queries" folder in your team project. Choosing a query will run it and display the results in the Quick Pick list. Choosing one of the results will open that work item in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
+- `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
+- `team signin` - Use this command to log in to a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
+- `team signout` - Use this command to log out from a VSTS account or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
+- `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
+- `team view website` - Same behavior as clicking on the team project status bar item.
+- `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
+- `team view work item queries` - Prompts you to choose a query stored in your "My Queries" folder in your team project. Choosing a query will run it and display the results in the Quick Pick list. Choosing one of the results will open that work item in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
 
-## Secure Credential Storage
+## Secure credential storage
 When you run the `team signin` command, the credentials that you provide will be stored securely on your computer. On Windows, your credentials wil be stored by Windows Credential Manager. 
  - On macOS, your credentials will be stored in the Keychain. 
  - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
-## Next Steps
+## Next steps
 Check out the [README.md in the GitHub repository](https://github.com/Microsoft/vsts-vscode/blob/master/README.md) for more details on the extension.
 
-## Frequently Asked Questions (FAQ)
+## Frequently asked questions (FAQ)
 
 **Q: What platforms does the extension run on?**
 **A:** The extension runs on Linux, macOS, and Windows (we've tested on RedHat, Ubuntu, and CentOS).
