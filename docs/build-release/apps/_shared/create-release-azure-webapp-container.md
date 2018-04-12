@@ -20,8 +20,8 @@ ms.topic: include
 
    ![Adding the App Service Deployment task](_img/add-app-service-task.png)
 
-1. Open the **Tasks** tab and select the **Azure App Service Deployment** task.
-   Configure the properties as follows:
+1. Open the **Tasks** tab and select the **Environment 1** item.
+   Configure the linked properties as follows:
 
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
@@ -29,9 +29,9 @@ ms.topic: include
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
 
-   - **App Service type**: Select **Web App for Containers**.  
+   - **App type**: Select **Web App for Containers**.  
 
-   - **App Service Name**: Select the name of the web app from your subscription.
+   - **App service name**: Select the web app you creaqted earlier from your subscription.
 
    When you select the Docker-enabled app service, the task recognizes that it is a
    containerized app, and changes the property settings to show the following:
