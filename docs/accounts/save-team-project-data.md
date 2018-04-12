@@ -7,6 +7,7 @@ ms.technology: devops-settings
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
