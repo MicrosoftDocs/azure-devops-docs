@@ -8,6 +8,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
 ---
