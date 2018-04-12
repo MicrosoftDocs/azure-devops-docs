@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: tfs-admin
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 03/20/2018
 monikerRange: '>= tfs-2013'
