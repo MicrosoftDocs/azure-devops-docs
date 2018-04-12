@@ -7,6 +7,7 @@ ms.technology: devops-security
 ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---

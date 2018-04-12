@@ -8,6 +8,7 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 02/12/18
 monikerRange: '>= tfs-2015'
