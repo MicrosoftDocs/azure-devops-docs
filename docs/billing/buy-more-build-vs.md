@@ -7,6 +7,7 @@ ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 4/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
