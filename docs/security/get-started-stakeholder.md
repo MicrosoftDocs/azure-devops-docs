@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
 ms.topic: tutorial
 ms.date: 03/01/2018
 ---
