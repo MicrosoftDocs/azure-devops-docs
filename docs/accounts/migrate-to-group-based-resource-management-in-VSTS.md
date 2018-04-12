@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 02/28/2018
+ms.date: 4/12/2018
 monikerRange: 'vsts'
 ---
 # Migrate to group-based resource management in VSTS
