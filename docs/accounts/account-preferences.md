@@ -7,6 +7,7 @@ ms.assetid: 30821EA7-F20F-4A15-B4E3-A023C39FFF72
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
 monikerRange: '>= tfs-2015'
 ---

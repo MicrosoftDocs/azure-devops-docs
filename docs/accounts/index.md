@@ -7,6 +7,7 @@ ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
 monikerRange: '>= tfs-2013'
 ---

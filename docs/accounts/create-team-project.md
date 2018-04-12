@@ -7,6 +7,7 @@ ms.technology: devops-settings
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/17/2017
 ms.topic: get-started-article
 monikerRange: '>= tfs-2015'
