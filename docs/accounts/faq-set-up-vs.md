@@ -1,23 +1,23 @@
 ---
 title: Troubleshoot seting up Visual Studio with VSTS
 description: Troubleshoot seting up Visual Studio with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 10/09/2017
 monikerRange: 'vsts'
 ---
-
-
 #	Troubleshoot setting up Visual Studio with VSTS
 
 **VSTS**
 
-## Visual Studio 
+## Visual Studio
 
 <a name="why-sign-in"></a>
+
 ####Q: Why sign in?
 
 A:	Your Visual Studio settings, 

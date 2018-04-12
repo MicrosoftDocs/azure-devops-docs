@@ -1,8 +1,8 @@
 ---
 title: Buy cloud-based load testing | VSTS
 description: How to buy cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.topic: quickstart
 ms.manager: douge
@@ -21,7 +21,8 @@ Load tests are measured and billed in virtual user minutes (VUM) as described in
 
 Your VSTS account includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
 If you need more than this amount, you must first:
-1. [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md), and then 
+
+1. [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
 2. [enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS account.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.

@@ -1,10 +1,10 @@
 ---
 title: Buy VSTS CI/CD | VSTS
 description: How to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.topic: quickstart
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 ms.date: 4/06/2018

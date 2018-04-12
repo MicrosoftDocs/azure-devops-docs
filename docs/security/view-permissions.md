@@ -3,35 +3,31 @@ title: View permissions
 titleSuffix: VSTS & TFS 
 description: View permissions for yourself or a team member 
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
+ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
+# Quickstart: View permissions for yourself or others
 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-# View permissions for yourself or others
+You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource.
 
-
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
-
-You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource. 
-
-Permissions are set at the collection, team project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level. 
+Permissions are set at the collection, team project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
 ## Prerequisites
 
 * You must have a team project to connect to. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
-* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.  
+* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
+> [!NOTE]
+> This topic shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the account/collection level.
 
-> [!NOTE]   
-> This topic shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the account/collection level. 
- 
-## View project-level permissions 
+## View project-level permissions
 
 0. Open the admin context from the user/team project context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
 

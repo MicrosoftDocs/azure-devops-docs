@@ -1,16 +1,15 @@
 ---
 title: Troubleshoot access with Azure Active Directory (Azure AD)
 description: Troubleshoot access with Azure Active Directory (Azure AD)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/27/2018
 monikerRange: 'vsts'
 ---
-
-
 # Troubleshoot access with Azure Active Directory (Azure AD)
 
 **VSTS**

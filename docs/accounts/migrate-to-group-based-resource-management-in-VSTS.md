@@ -1,16 +1,14 @@
 ---
 title: Migrate to group-based resource management
 description: Group-based user and resource management migration
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
-ms.assetid:
+ms.prod: devops
+ms.technology: devops-settings
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 02/28/2018
 monikerRange: 'vsts'
 ---
-
-
 # Migrate to group-based resource management in VSTS
 
 **VSTS**

@@ -2,17 +2,16 @@
 title: Permissions and groups reference
 titleSuffix: VSTS & TFS
 description: Comprehensive reference of built-in (default) security groups, and permissions defined in Visual Studio Team Services and Team Foundation Server  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
 monikerRange: '>= tfs-2013'
 ---
-
-
 # Permissions and groups in VSTS and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
