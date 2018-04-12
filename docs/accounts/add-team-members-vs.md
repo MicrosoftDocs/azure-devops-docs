@@ -7,6 +7,7 @@ ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 04/05/2018
 monikerRange: 'vsts'
 ---
