@@ -16,7 +16,7 @@ ms.topic: include
    be prompted to create a new release instead. In that case, go to the **Releases** tab page and
    start a new release definition from there by choosing the **+** icon.
 
-1. Select the **Azure App Service Deployment** task and choose **Apply**.
+1. Select the **Azure App Service Deployment** template and choose **Apply**.
 
    ![Adding the App Service Deployment task](_img/add-app-service-task.png)
 
@@ -29,18 +29,20 @@ ms.topic: include
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
 
-   - **App type**: Select **Web App for Containers**.  
+   - **App type**: Select **Linux App**.  
 
-   - **App service name**: Select the web app you creaqted earlier from your subscription.
+   - **App service name**: Select the web app you created earlier from your subscription.
 
-   When you select the Docker-enabled app service, the task recognizes that it is a
+   When you select the Docker-enabled app type, the task recognizes that it is a
    containerized app, and changes the property settings to show the following:
+
+   - **Image Source**: Leave this set to **Container Registry**.
 
    - **Registry or Namespace**: Enter the path to your Azure Container Registry. Typically this is _your-registry-name_**.azurecr.io**
 
-   - **Repository**: Enter the name of your repository, which is typically of the format `<account name>/<code-repo-name>`.  
+   - **Repository**: Enter the name of your repository, which is typically of the format `<account name>/<code-repo-name>` or just the repository name.
 
-   - **Tag**: Enter `$(Build.BuildId)`. The tag that was created automatically is the build identifier.
+   > You can find these values in the Azure portal in the **Overview** and **Repositories** tabs for your container registry.
 
 1. Save the release definition.
 
