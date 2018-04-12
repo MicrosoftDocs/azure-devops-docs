@@ -7,7 +7,8 @@ ms.prod: devops
 ms.technology: devops-settings
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 10/24/2017
 monikerRange: '>= tfs-2013'
 ---

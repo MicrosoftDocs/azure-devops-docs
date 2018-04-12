@@ -7,7 +7,8 @@ ms.assetid:
 toc: show
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 10/02/2017
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
