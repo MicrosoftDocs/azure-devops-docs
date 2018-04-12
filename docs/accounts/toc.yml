@@ -104,7 +104,7 @@
       href: ../marketplace/uninstall-disable-vsts-extensions.md
   - name: Manage group-based licensing 
     items:
-    - name: Assign access levels and extensions by group membership
+    - name: Assign access levels and extensions
       href: assign-access-levels-and-extensions-by-group-membership.md
     - name: Migrate to group-based resource management
       href: migrate-to-group-based-resource-management-in-VSTS.md

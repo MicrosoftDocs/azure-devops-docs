@@ -9,6 +9,7 @@ toc: show
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 4/05/2018
 monikerRange: 'vsts'
 ---
