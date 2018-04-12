@@ -1,16 +1,15 @@
 ---
 title: Change the number of paid users on your VSTS account 
-description: Change the number of paid VSTS users on your account as your team grows or contracts (Visual Studio Online, VSO, VSTS)
-ms.topic: conceptual
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+description: Change the number of paid VSTS users on your account as your team grows or contracts (VSO, VSTS)
+ms.prod: devops
+ms.technology: devops-settings
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 ms.date: 4/06/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
-
 # Change the number of paid VSTS users on your account
 
 **VSTS**
@@ -30,7 +29,7 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
 * [VSTS project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md) - to make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
 
-### Update the number of paid users on your account
+## Update the number of paid users on your account
 
 1. As VSTS project collection administrator or account owner, sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Buy**.
 
@@ -47,8 +46,7 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
     For example, we're going to increase our total paid users from 1 to 10:
 
    > [!div class="mx-imgBorder"]
-![Change number of paid Basic users](_img/reduce-cancel-paid-vsts-users/change-quantity-of-users.png) 
-
+![Change number of paid Basic users](_img/reduce-cancel-paid-vsts-users/change-quantity-of-users.png)
     > If you [pay for TFS client access licenses (CALs) through VSTS](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
 
 4. Review your changes and then choose **Confirm**.
