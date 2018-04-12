@@ -6,7 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
 ---
