@@ -219,7 +219,7 @@ You designate one of the artifacts as a primary artifact in a release definition
 > | Build.DefinitionId | Release.Artifacts.{Primary artifact alias}.DefinitionId |
 > | Build.DefinitionName | Release.Artifacts.{Primary artifact alias}.DefinitionName |
 > | Build.BuildNumber | Release.Artifacts.{Primary artifact alias}.BuildNumber |
-> | Build.BuildID | Release.Artifacts.{Primary artifact alias}.BuildId |
+> | Build.BuildId | Release.Artifacts.{Primary artifact alias}.BuildId |
 > | Build.BuildURI | Release.Artifacts.{Primary artifact alias}.BuildURI |
 > | Build.SourceBranch | Release.Artifacts.{Primary artifact alias}.SourceBranch |
 > | Build.SourceBranchName | Release.Artifacts.{Primary artifact alias}.SourceBranchName |
