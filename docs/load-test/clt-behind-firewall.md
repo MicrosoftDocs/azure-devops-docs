@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: "vsts"
+monikerRange: 'vsts'
 ---
 
 # Test private and intranet apps using cloud-based load testing
