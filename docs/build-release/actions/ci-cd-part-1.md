@@ -8,13 +8,13 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/20/2017
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 
 # CI/CD Hello world
 
-**VSTS**
+**VSTS | TFS 2018 RTM | TFS 2017.3**
 
 What is continuous integration (CI)? What is continuous deployment (CD)? Why should I care? How do I get started using Team Build and Release Management?
 
@@ -58,7 +58,17 @@ Create a PowerShell script that prints `Hello world`.
 
 1. Add a file.
 
- ![On the the Files tab, from the repo node, select the 'Add file' option](_img/ci-cd/part-1/add-a-file.png)
+ ::: moniker range="vsts"
+
+ ![On the Files tab, from the repo node, select the 'New -> File' option](_img/ci-cd/part-1/add-a-file-vsts.png) 
+
+ ::: moniker-end
+
+ ::: moniker range=">= tfs-2017 < vsts"
+
+ ![On the Files tab, from the repo node, select the 'Add file' option](_img/ci-cd/part-1/add-a-file.png)
+
+ ::: moniker-end
 
 1. In the dialog box name your new file.
  ```
