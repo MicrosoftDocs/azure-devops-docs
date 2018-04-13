@@ -2,7 +2,7 @@
 title: Set up billing for VSTS 
 description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for VSTS
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: quickstart
 ms.manager: douge

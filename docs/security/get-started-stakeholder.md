@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
+monikerRange: '>= tfs-2013'
 ms.date: 03/01/2018
 ---
 # Get started as a Stakeholder
