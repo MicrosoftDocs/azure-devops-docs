@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2018"
+monikerRange: '>= tfs-2018'
 ---
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
