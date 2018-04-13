@@ -2,7 +2,7 @@
 title: Frequently asked questions about trials for VSTS
 description: Frequently asked questions about extensions and trials for Visual Studio Team Services (VSTS)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.topic: conceptual
 ms.manager: douge

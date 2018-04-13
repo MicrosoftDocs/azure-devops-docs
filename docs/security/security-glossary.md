@@ -2,7 +2,7 @@
 title: Security terms in use VSTS & TFS 
 description: Key definitions for objects and items used to authenticate and manage users and groups 
 ms.technology: devops-settings
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.assetid:  
 ms.topic: conceptual
 ms.manager: douge
