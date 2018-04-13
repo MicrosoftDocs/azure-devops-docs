@@ -2,8 +2,8 @@
 title: Permissions and access for manual testing
 description: Default permissions and access levels in VSTS and TFS for manual and exploratory testing
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

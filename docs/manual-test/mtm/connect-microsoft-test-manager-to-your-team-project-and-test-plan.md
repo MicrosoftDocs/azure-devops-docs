@@ -2,8 +2,8 @@
 title: Connect Microsoft Test Manager to your team project and test plan
 description: Manual and exploratory testing - Connect Microsoft Test Manager to your team project and test plan
 ms.assetid: 4a2c7eb1-c65d-4fd9-bb19-f733164752c1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

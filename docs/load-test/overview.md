@@ -2,8 +2,8 @@
 title: Load Testing with Visual Studio and VSTS
 description: About Load Testing, overview of capabilities and features
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: overview
 ms.manager: douge
 ms.author: ahomer

@@ -2,8 +2,8 @@
 title: Run manual tests in VSTS
 description: Run manual tests and record their results with Microsoft Test Runner and VSTS
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
