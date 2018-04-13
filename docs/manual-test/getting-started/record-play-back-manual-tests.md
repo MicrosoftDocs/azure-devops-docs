@@ -2,8 +2,8 @@
 title: Record and play back manual tests
 description: Record and play back manual tests
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

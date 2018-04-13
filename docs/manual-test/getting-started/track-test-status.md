@@ -2,8 +2,8 @@
 title: Track test status in VSTS
 description: Track test status with charts and graphs using VSTS
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

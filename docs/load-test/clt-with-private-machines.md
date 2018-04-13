@@ -2,8 +2,8 @@
 title: Run cloud-based load tests using your own machines
 description: Run cloud-based load tests by using your own subscription and machines
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

@@ -2,8 +2,8 @@
 title: FAQs for manual testing   
 description: FAQs for manual testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
