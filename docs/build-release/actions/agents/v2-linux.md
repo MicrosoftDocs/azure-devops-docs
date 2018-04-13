@@ -1,11 +1,13 @@
 ---
 title: Deploy an agent on Linux
 description: Deploy an agent on Linux
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---

@@ -1,12 +1,14 @@
 ---
 title: Clone and update wiki pages offline
 titleSuffix: VSTS & TFS 
-description: Add and update pages offline for your built-in team project wiki
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+description: Add and update pages offline for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid:
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts || >= tfs-2018'
 ms.date: 04/05/2018  
 ---

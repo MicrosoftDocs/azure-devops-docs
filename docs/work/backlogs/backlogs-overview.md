@@ -1,11 +1,14 @@
 ---
-title: Backlogs and work items | VSTS & TFS
+title: Backlogs and work items 
+titleSuffix: VSTS & TFS 
 description: Use the web portal to plan and track work  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: overview
 ms.date: 07/25/2017
 ---
 

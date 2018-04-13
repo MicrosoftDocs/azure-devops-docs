@@ -1,11 +1,13 @@
 ---
-title: Customize a process template | VSTS & TFS
-description: Define the objects and processes available to you when you create a team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Customize a process template
+titleSuffix: VSTS & TFS
+description: Define the objects and processes available to you when you create a team project in Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
@@ -13,7 +15,7 @@ ms.date: 09/08/2017
 # Customize a process template
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-****
+ 
 Process templates define the objects and processes available to you when you create a team project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   
 - Add a new field to an existing work item type (WIT)  

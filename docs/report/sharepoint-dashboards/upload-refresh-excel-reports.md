@@ -1,11 +1,11 @@
 ---
 title: Upload Excel reports | TFS
 description: Add Excel reports to a SharePoint project portal 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: a606b12a-ac2e-4a02-a8b0-56f18c3dcc82
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/09/2017
 ---
 # Upload and refresh Excel reports in the team project portal

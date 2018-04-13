@@ -1,11 +1,13 @@
 ---
-title: Build Coverage tables | TFS
+title: Build Coverage tables
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

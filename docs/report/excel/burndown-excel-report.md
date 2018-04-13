@@ -1,10 +1,12 @@
 ---
-title: Burndown Excel Report | TFS
-description: Determine how much progress the team has made in completing work for an iteration or other interval of time - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Burndown Excel Report  
+description: Determine how much progress the team has made in completing work for an iteration or other interval of time - Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: ac299174-7f32-4867-8efb-c7bb50cdbd51
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---

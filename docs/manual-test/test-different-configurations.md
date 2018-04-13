@@ -2,14 +2,14 @@
 title: Test different configurations when manual or exploratory testing
 description: Manual and exploratory testing - test different configurations with Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Test different configurations

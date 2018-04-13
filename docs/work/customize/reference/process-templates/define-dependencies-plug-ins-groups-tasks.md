@@ -1,11 +1,13 @@
 ---
-title: Define dependencies for task groups and tasks in plug-in files | VSTS & TFS
-description: Adds a task group or a task to a plug-in file to correct the sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define dependencies for task groups and tasks in plug-in files
+titleSuffix: VSTS & TFS
+description: Add a task group or a task to a plug-in file process template to declare dependencies in Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 

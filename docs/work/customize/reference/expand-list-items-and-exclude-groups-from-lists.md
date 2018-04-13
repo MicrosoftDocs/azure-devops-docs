@@ -1,11 +1,11 @@
 ---
 title: Expand list items and exclude groups from lists | VSTS & TFS
 description: Examples for expanding pick list items and restricting items using expanditems and filteritems attributes - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/10/2017
 ---
 

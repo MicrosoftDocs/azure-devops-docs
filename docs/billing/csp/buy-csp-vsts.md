@@ -2,7 +2,7 @@
 title: Buy and manage Cloud Service Provider customer VSTS subscriptions
 description: Cloud Service Provider (CSP) partners can purchase and manage Visual Studio Team Services (VSTS) for their customers
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.topic: conceptual
 ms.manager: douge

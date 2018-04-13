@@ -1,11 +1,13 @@
 ---
-title: Update an existing installation and version compatibility requirements | TFS
-description: Update an existing installation and version compatibility requirements when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Update an existing installation and version compatibility requirements
+titleSuffix: TFS 
+description: Update an existing installation and version compatibility requirements when using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: aa45b668-d753-4837-a5cc-ffdc82f08c1c
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 

@@ -1,12 +1,13 @@
 ---
-title: Troubleshoot connecting to a team project in VSTS or TFS 
-description: Steps to resolve connection issues with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit 
-ms.prod: vs-devops-alm
+title: Troubleshoot connecting to a team project 
+titleSuffix: VSTS & TFS  
+description: Steps to resolve connection issues with Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-security
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
-author: chcomley
+ms.topic: troubleshooting
 ms.date: 02/26/2018
 monikerRange: '>= tfs-2013'
 ---

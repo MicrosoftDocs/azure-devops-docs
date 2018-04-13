@@ -1,11 +1,13 @@
 ---
 title: Catalog of the built-in tasks for build-release and VSTS & TFS 
 description: Catalog of the built-in tasks on VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2015'
 ---

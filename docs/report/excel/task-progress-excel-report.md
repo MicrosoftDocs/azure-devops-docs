@@ -1,14 +1,18 @@
 ---
-title: Task Progress Excel Report | TFS
+title: Task Progress Excel Report 
 description: Tracks how much work the team has completed and how much remains.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 7deef86f-987f-4b77-8acc-e31d436b48cf
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Task Progress Excel Report
+
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Task Progress report to track how much work the team has completed and how much remains. This report shows the distribution of active and closed Tasks over time. For information about how to access this report, see [Excel reports](excel-reports.md).  

@@ -1,13 +1,14 @@
 ---
 title: Build your Universal Windows Platform app
 description: Define a CI process that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 12/20/2017
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

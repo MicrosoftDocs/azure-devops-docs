@@ -1,11 +1,13 @@
 ---
 ms.assetid: EEA8E5DA-50B6-427B-B67E-32E926DC4A02
 title: Build your Azure cloud service
+ms.topic: conceptual
 description: Define a continuous integration (CI) build for your Azure cloud service in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 01/02/2017
 monikerRange: 'vsts'
 ---

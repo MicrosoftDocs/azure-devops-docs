@@ -2,17 +2,20 @@
 title: Permissions and role lookup guide 
 titleSuffix: VSTS & TFS  
 description: Index to permissions defined for Visual Studio Team Services (VSTS) and Team Foundation Server   
-ms.technology: devops-settings
+ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
-ms.topic: reference
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+ms.topic: reference
 ms.date: 02/12/18
 monikerRange: '>= tfs-2013'
 ---
+
+
 # Permissions lookup guide for VSTS & TFS
+
+
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

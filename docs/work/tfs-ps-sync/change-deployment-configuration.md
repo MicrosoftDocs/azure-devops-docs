@@ -1,13 +1,16 @@
 ---
-title: Change your deployment configuration | TFS
-description: Understand how you might need to perform additional administrative task when you change your settings - Team Foundation Server (TFS).
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Change your deployment configuration
+titleSuffix: TFS 
+description: Understand additional administrative tasks when you change your settings using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 962eba84-0c28-4c94-8abc-3cdb9f1df53a
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Change your deployment configuration
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]

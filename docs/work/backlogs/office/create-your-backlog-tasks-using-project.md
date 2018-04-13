@@ -1,12 +1,14 @@
 ---
 title: Create your backlog and tasks using Project
 titleSuffix: VSTS & TFS
-description: Add items, plan, order, and estimate your backlog of deliverables - VSTS and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add items, plan, order, and estimate your backlog of deliverables in Visual Studio Team Services or Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: douge  
-ms.author: kaelli  
+ms.author: kaelli
+author: KathrynEE  
+ms.topic: conceptual
 ms.date: 07/21/2017  
 ---
 
@@ -33,7 +35,7 @@ Use this topic to learn how to:
 
 ## Add tasks and publish work items
 
-1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017, you'll need Project 2010 or later version.  
+1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017 and later versions, you'll need Project 2010 or later version.  
  
 	> [!NOTE]  
 	>You can't use Office Project 365 to connect to VSTS and TFS. 

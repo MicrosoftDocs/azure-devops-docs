@@ -1,8 +1,10 @@
 ---
-title: Give reviewers permission to provide feedback 
-description: Grant users access to provide feedback initiated from a team project in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Give reviewers permission to provide feedback
+titleSuffix: VSTS & TFS  
+description: Grant users access to provide feedback initiated from a team project in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
 ms.manager: douge
 ms.author: kaelli

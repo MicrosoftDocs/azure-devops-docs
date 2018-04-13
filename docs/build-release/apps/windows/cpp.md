@@ -1,13 +1,14 @@
 ---
 title: Build your Visual C++ app
 description: Build your Visual C++ app with Team Foundation Server and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 02/16/2018
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

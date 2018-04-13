@@ -1,14 +1,14 @@
 ---
 title: View or run a query 
 titleSuffix: VSTS & TFS
-description: View, run, or favorite a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid:  
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2018'
+monikerRange: '>= tfs-2018'
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018  
 ---
 

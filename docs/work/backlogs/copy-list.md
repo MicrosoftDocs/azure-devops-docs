@@ -2,11 +2,13 @@
 title: Copy a list of work items
 titleSuffix: VSTS & TFS   
 description: Copy a list of work items from a backlog or query in Visual Studio Team Services or Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

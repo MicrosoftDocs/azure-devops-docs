@@ -2,11 +2,13 @@
 title: Use team fields instead of area paths to support teams 
 titleSuffix: TFS
 description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/14/2017
 ---
 
@@ -15,7 +17,7 @@ ms.date: 04/14/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
-> **Feature availability:** Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 

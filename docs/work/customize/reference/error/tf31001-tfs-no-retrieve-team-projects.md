@@ -1,17 +1,18 @@
 ---
-title: TF31001-Team Foundation cannot retrieve the list of team projects | TFS
+title: TF31001-Team Foundation cannot retrieve the list of team projects titleSuffix: VSTS & TFS
 description: Occurs when Team Explorer can't display the list of team projects defined on a Team Foundation Server. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: a8f6ad82-e1e0-4659-8e97-c88ece4c23f5
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF31001: Team Foundation cannot retrieve the list of team projects from Team Foundation Server {0}
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when Team Explorer can't display the list of team projects defined in the collection. The specific error message that TFS returns should help you determine the cause of the problem.  
   
@@ -65,4 +66,4 @@ As an administrator, you should check the event logs for the application-tier se
 4.  Delete the contents of the Cache directory, including all subfolders.  
   
 ## Related articles 
- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)
+- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)

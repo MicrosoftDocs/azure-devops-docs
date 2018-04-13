@@ -1,11 +1,11 @@
 ---
 title: Help text, hyperlinks, web content | VSTS & TFS
 description: Customize your work item form to provide information or links to content.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: b6409e94-7e59-47a9-8a62-afdeeac8ad86
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 
