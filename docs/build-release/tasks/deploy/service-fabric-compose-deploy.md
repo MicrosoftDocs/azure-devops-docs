@@ -2,8 +2,8 @@
 description: Service Fabric Compose Deploy Deployment task
 title: Service Fabric Compose Deploy build and release task for VSTS and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

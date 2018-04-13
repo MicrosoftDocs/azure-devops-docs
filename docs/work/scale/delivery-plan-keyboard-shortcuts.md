@@ -1,14 +1,14 @@
 ---
 title: Delivery plan keyboard shortcuts 
 titleSuffix: VSTS & TFS
-description: Use keyboard shortcuts to interact with delivery plans   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use keyboard shortcuts to interact with delivery plans in Visual Studio Team Services & Team Foundation Server     
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
 ---
 

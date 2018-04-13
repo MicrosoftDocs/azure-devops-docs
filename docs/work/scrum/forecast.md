@@ -1,13 +1,13 @@
 ---
 title: Forecasting 
 titleSuffix: VSTS & TFS   
-description: Use the forecast tool to determine how much work your team can deliver across several sprints    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Determine how much work your team can deliver across several sprints by forecasting in Visual Studio Team Services & Team Foundation Server     
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 

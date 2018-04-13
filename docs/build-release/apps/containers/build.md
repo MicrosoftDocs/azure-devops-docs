@@ -1,11 +1,13 @@
 ---
 title: Build and push a Docker image
 description: Define a continuous integration (CI) pipeline for your Dockerfile in VSTS or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: quickstart
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 02/20/2018
 monikerRange: '>= tfs-2017'

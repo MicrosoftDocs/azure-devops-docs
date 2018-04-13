@@ -1,8 +1,8 @@
 ---
 title: NuGet Tool Installer
 description: NuGet Tool Installer
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
 ms.manager: douge
 ms.author: amullans

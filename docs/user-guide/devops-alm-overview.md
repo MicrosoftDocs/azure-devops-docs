@@ -1,8 +1,8 @@
 ---
 title: DevOps overview for VSTS and TFS    
 description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview  
+ms.prod: devops
+ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli

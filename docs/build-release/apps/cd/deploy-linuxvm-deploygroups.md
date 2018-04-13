@@ -2,14 +2,14 @@
 title: Deploy a nginx web server on a Linux Virtual Machine
 description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2017"
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy to a Linux Virtual Machine

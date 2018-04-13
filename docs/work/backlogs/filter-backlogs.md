@@ -2,11 +2,13 @@
 title: Filter backlogs  
 titleSuffix: VSTS & TFS
 description: Filter your backlog based on keywords, tags, or other fields   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

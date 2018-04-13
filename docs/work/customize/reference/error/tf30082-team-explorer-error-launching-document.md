@@ -1,18 +1,20 @@
 ---
 title: TF30082-Team Explorer encountered the following error while launching a document
 description: Occurs when Team Explorer tries to open a document for editing with another application.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+titleSuffix: VSTS & TFS
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 99ee70ef-3389-4f78-a600-3772b70c0022
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 10/23/2017
 ---
 
 
 # TF30082: Team Explorer encountered the following error while launching a document: {0}
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when Team Explorer tries to open a document for editing with another application, but the other application is not available on the local computer.  
   

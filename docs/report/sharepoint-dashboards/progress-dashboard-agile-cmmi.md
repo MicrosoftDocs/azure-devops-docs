@@ -1,11 +1,11 @@
 ---
 title: Progress dashboard (Agile and CMMI) | TFS
 description: Dashboard designed to monitor team progress, burndown, and issues toward-Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: abd1932d-47d3-4e5c-82a8-1b2d6fc4af89
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/09/2017
 ---
 

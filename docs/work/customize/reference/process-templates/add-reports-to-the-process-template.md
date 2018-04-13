@@ -1,22 +1,24 @@
 ---
 title: Add reports via a process template 
 titleSuffix: TFS
-description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
-ms.date: 10/11/2017
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018' 
+ms.date: 04/10/2018
 ---
 
 
 
 # Add reports to the process template
 
-<b>TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
-When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and team project collection where you will create a team project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS doesn't support SQL Server reports.) 
+When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and team project collection where you will create a team project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS uses the [Analytics Service](../../../../report/analytics/what-is-analytics.md) to provide in-depth reporting.) 
   
 > [!IMPORTANT]  
 > When you create a team project from the web portal, the ReportsTasks.xml  
@@ -123,8 +125,8 @@ The following example specifies that the Remaining Work.rdl file will be uploade
 ```XML 
 <taskXml>  
       <ReportingServices>  
-       <reports>  
-         <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
+      Â <reports>  
+        Â <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
        <parameters>  
           <parameter name="ExplicitProject" value="" />  
        </parameters>  
@@ -134,7 +136,7 @@ The following example specifies that the Remaining Work.rdl file will be uploade
        </datasources>  
        </report>  
  . . .   
-       </reports>  
+      Â </reports>  
       </ReportingServices>  
 </taskXml>  
 ```  

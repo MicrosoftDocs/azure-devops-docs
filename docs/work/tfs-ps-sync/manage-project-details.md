@@ -1,11 +1,13 @@
 ---
-title: Manage project details in an enterprise project plan mapped to a team project | TFS
-description: Understand how project managers and development teams can manage their workflows independently while collaborating fully and communicating more easily when changes that affect the schedule occur - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage project details in an enterprise project plan mapped to a team project
+titleSuffix: TFS
+description: Understand how project managers and development teams can manage their workflows independently using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ff9499ea-cd5b-4ede-aa1a-de8ef3d9e704
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 

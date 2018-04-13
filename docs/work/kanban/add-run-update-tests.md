@@ -1,14 +1,14 @@
 ---
 title: Add, run, and update inline tests
 titleSuffix: VSTS & TFS  
-description: Add, run, and update manual test cases via the inline test feature on your Kanban board for lightweight tracking and traceability when working in Visual Studio Team Services (VSTS)    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
 ---
 

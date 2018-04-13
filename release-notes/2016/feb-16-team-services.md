@@ -1,8 +1,8 @@
 ---
 title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
 description: VSTS release notes for February 16 2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 8356f67c-3c1a-4094-a8af-e1c63b3b39aa
 ms.date: 06/01/2016

@@ -2,11 +2,11 @@
 title: Customize backlogs and boards
 titleSuffix: VSTS    
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for Visual Studio Team Services 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

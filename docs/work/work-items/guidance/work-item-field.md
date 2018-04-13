@@ -2,8 +2,8 @@
 title: System and default fields index
 titleSuffix: VSTS & TFS
 description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference   
 ms.manager: douge

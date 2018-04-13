@@ -2,8 +2,8 @@
 title: Follow a PR, task versioning, and search for commits in branches – Nov 23
 description: VSTS release notes for Nov 23 2016
 ms.ContentId: 3ddd918f-81cd-4745-9b1c-4fb6f1dae6fd
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---

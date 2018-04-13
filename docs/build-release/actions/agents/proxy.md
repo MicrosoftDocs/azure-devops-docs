@@ -1,11 +1,13 @@
 ---
 title: Run the agent behind a web proxy
 description: Run the agent behind a web proxy
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 11/16/2017
 monikerRange: '>= tfs-2015'
 ---

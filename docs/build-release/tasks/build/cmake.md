@@ -1,11 +1,13 @@
 ---
 title: CMake build and release task
 description: CMake build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

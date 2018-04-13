@@ -1,11 +1,13 @@
 ---
-title: Create a Detailed Report using Report Designer | TFS
-description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Create a Detailed Report using Report Designer
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
+description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

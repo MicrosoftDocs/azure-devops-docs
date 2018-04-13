@@ -2,14 +2,14 @@
 title: Share steps between test cases
 description: Manual and exploratory testing - Share steps between test cases
 ms.assetid: 5b7b1bfa-d958-442d-ab90-a0339b8baf0a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Share steps between test cases

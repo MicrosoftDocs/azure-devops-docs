@@ -1,12 +1,13 @@
 ---
 title: Add portfolio backlogs
 titleSuffix: VSTS & TFS 
-description: Add up to two additional work item types and portfolio backlogs to Visual Studio Team Services (VSTS) or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add up to two additional work item types and portfolio backlogs in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: Simple, Secure CI App Signing
 description: Sign your mobile app during CI with VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: ed39a1b4-bce0-416e-b3a2-253b21722b02
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2017 < tfs-2018'

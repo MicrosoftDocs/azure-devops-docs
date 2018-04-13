@@ -1,11 +1,13 @@
 ---
-title: Get VSTS and TFS support, and provide feedback
-description: Guide to providing product and content feedback as well as accessing support resources when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+title: Get support, provide feedback
+titleSuffix: VSTS & TFS
+description: Guide to providing product and content feedback as well as accessing support resources in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: douge
 ms.author: douge
+ms.topic: troubleshooting
 ms.date: 10/19/2017
 monikerRange: '>= tfs-2013'
 ---

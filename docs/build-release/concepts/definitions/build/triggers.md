@@ -1,11 +1,13 @@
 ---
 title: Build definition triggers
 description: Specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
