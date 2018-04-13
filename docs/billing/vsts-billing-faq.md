@@ -2,7 +2,7 @@
 title: VSTS billing FAQ 
 description: VSTS is billed via Microsoft Azure. Review frequently asked questions.
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.topic: conceptual
 ms.manager: douge

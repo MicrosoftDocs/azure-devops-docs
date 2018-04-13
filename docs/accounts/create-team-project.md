@@ -9,7 +9,6 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 10/17/2017
-ms.topic: get-started-article
 monikerRange: '>= tfs-2015'
 ---
 # Create a team project
