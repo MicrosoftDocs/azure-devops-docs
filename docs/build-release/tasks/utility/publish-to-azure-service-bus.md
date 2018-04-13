@@ -2,8 +2,8 @@
 title: Publish To Azure Service Bus task 
 description: Build and release task to send a message to an Azure Service Bus in VSTS and TFS
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

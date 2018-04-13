@@ -2,7 +2,7 @@
 title: Add a backup billing manager for your VSTS account
 description: Add a backup/other billing manager for your VSTS account (Visual Studio Team Services)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual
 ms.manager: douge

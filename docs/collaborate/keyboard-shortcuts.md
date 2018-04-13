@@ -1,11 +1,13 @@
 ---
-title: Keyboard shortcuts for VSTS, TFS, and Team Explorer
+title: Keyboard shortcuts
+titleSuffix: VSTS & TFS   
 description: Keyboard shortcuts for the VSTS and TFS web portal, and Team Explorer  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: reference
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/18/2017
 monikerRange: '>= tfs-2013'
 ---

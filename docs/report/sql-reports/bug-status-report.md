@@ -1,10 +1,12 @@
 ---
-title: Bug Status Report | TFS
-description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Bug Status Report 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 10/17/17
 ---

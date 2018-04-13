@@ -1,13 +1,15 @@
 ---
 title: Manage issues or impediments 
 titleSuffix: VSTS & TFS 
-ms.custom: Manage issues or impediments 
+ms.global_help.title: Manage issues or impediments 
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 6
 description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Visual Studio Team Services (VSTS) and Team Foundation 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: get-started-article
 ms.date: 03/20/2018
 ---

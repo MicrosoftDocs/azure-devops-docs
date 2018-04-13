@@ -2,11 +2,11 @@
 title: Update the workflow for team projects based on the Agile process template
 titleSuffix: TFS
 description: Update the workflow for agile team projects to manually update the user story and task workflow assignments.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 

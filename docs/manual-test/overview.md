@@ -2,14 +2,14 @@
 title: Exploratory and manual testing of your applications
 description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory and manual testing scenarios and capabilities

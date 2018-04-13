@@ -1,13 +1,16 @@
 ---
-title: View synchronization engine error messages | TFS
-description: View synchronization engine error messages when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: View synchronization engine error messages
+titleSuffix: TFS 
+description: View synchronization engine error messages when using Team Foundation Server & Project Server integration
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: cd4e04e2-7a15-4a2c-8833-301f1292cdba
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
+
 # View synchronization engine error messages
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

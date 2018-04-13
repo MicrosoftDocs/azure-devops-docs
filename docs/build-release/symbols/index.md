@@ -1,8 +1,8 @@
 ---
 title: Publish symbols for debugging
 description: Publish symbols to a symbol server for debugging using  Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
 ms.manager: douge
 ms.author: amullans

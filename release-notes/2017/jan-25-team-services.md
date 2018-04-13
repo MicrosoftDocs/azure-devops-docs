@@ -2,8 +2,8 @@
 title: Delivery Plans and mobile work item form – Jan 25
 description: VSTS release notes for Jan 25 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---

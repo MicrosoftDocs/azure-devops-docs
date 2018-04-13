@@ -1,11 +1,13 @@
 ---
-title: Upload reports to a team project | TFS  
-description: Manually upload reports to a team project hosted on an on-premises Team Foundation Server (TFS) 
+title: Upload reports to a team project
+titleSuffix: TFS
+description: Manually upload reports to a team project hosted on an on-premises Team Foundation Server  
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/02/2017
 ---
 

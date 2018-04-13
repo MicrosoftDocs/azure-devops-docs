@@ -1,18 +1,20 @@
 ---
 title: TF30147-The New Team Project Wizard could not retrieve the confirmation values 
 description: Occurs when the New Team Project Wizard is building the  wizard page that summarizes all the selections you made and text you typed up to that point.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+titleSuffix: VSTS & TFS
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 10/23/2017
 ---
 
 
 # TF30147: The New Team Project Wizard could not retrieve the confirmation values because of the error: {0}
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard is building the **Confirm Team Project Settings** wizard page that summarizes all the selections you made and text you typed up to that point. Each wizard page contributes text to the confirmation page, and if the contributing wizard page encounters an unexpected error while passing the text, this error is displayed. The procedures below will help you correct this error.  
   

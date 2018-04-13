@@ -2,7 +2,7 @@
 title: VSTS extensions overview 
 description: VSTS extensions overview, free, create or build your own
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley

@@ -1,8 +1,8 @@
 ---
 title: Guide for users new to VSTS 
 description: Learn the very basics of Visual Studio Team Services (VSTS)  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-new-user
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: kaelli

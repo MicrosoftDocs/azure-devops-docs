@@ -1,14 +1,16 @@
 ---
-title: Customize cards on the Kanban board
+title: Customize cards on a board
 titleSuffix: VSTS & TFS
-ms.custom: Customize cards
-description: Customize cards on the Kanban and Sprint/Scrum/Task boards for Agile planning tools in Visual Studio Team Services or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Customize cards on the Kanban or Sprint/Scrum/Task boards in Visual Studio Team Services & Team Foundation Server 
+ms.global_help.title: Customize cards
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 6    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
-ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 

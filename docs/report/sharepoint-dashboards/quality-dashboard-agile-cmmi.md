@@ -1,11 +1,11 @@
 ---
 title: Quality dashboard (Agile and CMMI) | TFS
 description: Obtains an overview of progress occurring in the test, development, and build areas as they relate to the quality of the software under development.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: eaae1890-73e5-4324-9df4-634281621d2a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 # Quality dashboard (Agile and CMMI)

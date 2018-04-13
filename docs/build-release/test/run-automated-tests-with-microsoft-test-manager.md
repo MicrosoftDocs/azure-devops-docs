@@ -2,14 +2,14 @@
 title: Run automated tests with Microsoft Test Manager
 description: Manual and exploratory testing - Run automated tests with Microsoft Test Manager
 ms.assetid: F9E8F299-6266-47E3-B896-17D8504E6165
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 

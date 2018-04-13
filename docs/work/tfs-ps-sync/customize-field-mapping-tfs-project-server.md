@@ -1,19 +1,22 @@
 ---
 title: Customize the field mapping between TFS and Project Server
 titleSuffix: TFS
-description: Associate the fields in Visual Studio Team Foundation Server (TFS) with the one in Project Server to Synchronize data between the Project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+description: Associate the fields in Team Foundation Server with fields in Project Server 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: e2785458-f618-42b4-ab77-fbe4cb41c493
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
 # Customize the field mapping between TFS and Project Server
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="top"></a> To synchronize data between an enterprise project plan and a team project, you must associate the work-item fields in Visual Studio Team Foundation Server (TFS) with the fields in Microsoft Project Server. You can add fields and specify how they synchronize by customizing the field mappings. You can map both built-in and custom fields in Project. For example, you can share data that does not relate to schedules (such as cost centers, team names, or health status) if you add the fields that store these types of data to the mappings.  
+<a name="top"></a> 
+To synchronize data between an enterprise project plan and a team project, you must associate the work-item fields in Visual Studio Team Foundation Server (TFS) with the fields in Microsoft Project Server. You can add fields and specify how they synchronize by customizing the field mappings. You can map both built-in and custom fields in Project. For example, you can share data that does not relate to schedules (such as cost centers, team names, or health status) if you add the fields that store these types of data to the mappings.  
   
  You maintain one set of field mappings for each team project collection that hosts team projects that you want to synchronize with Project Server. You must define the field mappings for each team project collection that you have mapped to an instance of Project Web Access or Project Web App (PWA). You can upload the default mappings, or you can customize a mapping file and upload it. To upload the default mappings, see [Upload Mappings](#upload) later in this topic.  
   

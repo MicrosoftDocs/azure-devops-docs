@@ -2,8 +2,8 @@
 title: SSH task
 description: SSH build and release task for Microsoft VSTS and Microsoft Team Foundation Server
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

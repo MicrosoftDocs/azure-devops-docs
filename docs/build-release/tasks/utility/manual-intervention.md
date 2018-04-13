@@ -2,8 +2,8 @@
 title: Manual intervention task 
 description: Build and release task to pause an active deployment within an environment in VSTS and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

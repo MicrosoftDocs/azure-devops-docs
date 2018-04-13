@@ -1,14 +1,16 @@
 ---
 title: Filter your Kanban board 
 titleSuffix: VSTS & TFS
-ms.custom: Filter your board
-description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
+ms.global_help.title: Filter your board
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 4    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 

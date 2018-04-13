@@ -1,13 +1,14 @@
 ---
 title: Search the Wiki
-titleSuffix: VSTS 
-description: Share information using a project or repo README or Wiki    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS
+description: Share information using a project or repo README or Wiki in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---

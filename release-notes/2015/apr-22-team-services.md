@@ -1,8 +1,8 @@
 ---
 title: Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
 description: VSTS release notes for April 22 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 40e151ba-193b-4f02-9b66-60d8788b70db
 ms.date: 06/01/2016

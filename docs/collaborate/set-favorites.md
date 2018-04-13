@@ -1,13 +1,13 @@
 ---
 title: Set personal or team favorites
 titleSuffix: VSTS & TFS  
-description: Quickly access objects by favoriting them either for your use or the team's use    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+description: Quickly access objects by favoriting them in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 09/01/2017  
 monikerRange: '>= tfs-2017'
 ---
@@ -90,7 +90,7 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 
 From your account hub, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
-<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />Â �   
+<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />Ã‚     
 
 <a id="unfavorite">  </a>
 ## Unfavorite an object

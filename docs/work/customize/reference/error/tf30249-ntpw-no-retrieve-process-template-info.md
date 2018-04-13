@@ -1,17 +1,18 @@
 ---
-title: TF30249-The New Team Project Wizard could not retrieve the process template  | Team TFS
+title: TF30249-The New Team Project Wizard could not retrieve the process template titleSuffix: VSTS & TFS
 description: Occurs an error when the New Team Project Wizard cannot download the process template header information.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 3bdffbfa-9b0d-4222-8630-5e76330a511e
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30249: The New Team Project Wizard could not retrieve the process template information.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard cannot download the process template header information so the Wizard can display a list of the process templates available on the server. Because the actual process template XML files can be very large (up to 100 megabytes), the wizard downloads the smaller XML header file to save time.  
   
