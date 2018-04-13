@@ -1,14 +1,18 @@
 ---
-title: Requirement Test Status Excel Report (CMMI) | TFS
+title: Requirement Test Status Excel Report (CMMI)  
 description: Use to determine gaps in test coverage and monitor test progress for each requirement.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 4e5ffafb-82fc-4aaa-b7bb-e5e47b239e7c
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Requirement Test Status Excel Report (CMMI)
+
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Requirement Test Status report to help determine gaps in test coverage and monitor test progress for each requirement. This report indicates how many tests are passing or failing for each requirement. This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  

@@ -1,13 +1,17 @@
 ---
-title: Map a team project collection to an instance of PWA | TFS
-description: Map a team project collection to an instance of Project Web Access or Project Web App  to synchronize data with Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Map a team project collection to an instance of PWA
+titleSuffix: TFS 
+description: Map a team project collection to an instance of Project Web Access or Project Web App to support Team Foundation Server-Project Server integration 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d873f68e-3e88-4daa-9c28-a192dab86765
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
+
 # Map a team project collection to an instance of PWA
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]

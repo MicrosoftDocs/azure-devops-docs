@@ -1,17 +1,19 @@
 ---
-title: TF30016-No permissions to create a SQL Server Reporting Services site | TFS
+title: TF30016-No permissions to create a SQL Server Reporting Services site
+titleSuffix: VSTS & TFS
 description: Occurs when the permissions granted to the user account are not sufficient to enable to create the reporting site.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: edb242fd-5839-440d-9ee1-f24e0b279137
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF30016: You do not have permission to create a new SQL Server Reporting Services site on the server {0}.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the permissions granted to your user account on the SQL Server Reporting Services server {*name*} are not sufficient to enable you to create the reporting site. You use the reporting site as the team project Report site. You must be granted specific permission by the SQL Server Reporting Services administrator.  
   

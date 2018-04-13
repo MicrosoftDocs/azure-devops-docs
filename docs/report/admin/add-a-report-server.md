@@ -2,10 +2,10 @@
 title: Add a report server | Team Foundation Server
 description: Step 1 of 4 steps to add or refresh reports added to a team project hosted on an on-premises TFS 
 ms.assetid: 1BB64B5F-708B-4E6E-9E88-4DCAEE58A231
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
 ---
 

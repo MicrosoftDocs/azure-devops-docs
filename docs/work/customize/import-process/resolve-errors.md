@@ -2,11 +2,11 @@
 title: Resolve validation errors
 titleSuffix: VSTS  
 description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

@@ -3,7 +3,7 @@ title: Default permissions and access quick reference
 titleSuffix: VSTS & TFS 
 description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge
@@ -13,6 +13,8 @@ ms.topic: reference
 ms.date: 02/12/18
 monikerRange: '>= tfs-2013'
 ---
+
+
 # Default permissions and access for VSTS and TFS 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]

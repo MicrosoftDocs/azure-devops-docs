@@ -1,17 +1,20 @@
 ---
-title: Work tracking object limits | VSTS 
-description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services (VSTS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Work tracking object limits 
+titleSuffix: VSTS 
+description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: 'vsts'
 ms.date: 06/02/2017
 ---
 
 # Work tracking object limits 
 
-<b>VSTS</b> 
+**VSTS**
 
 When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](customize-work.md).
 

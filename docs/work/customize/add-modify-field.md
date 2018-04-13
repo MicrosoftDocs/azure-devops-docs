@@ -1,12 +1,13 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: VSTS & TFS
-description: Modify or add a work item field to support queries, reports, and workflow for Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Modify or add a work item field to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

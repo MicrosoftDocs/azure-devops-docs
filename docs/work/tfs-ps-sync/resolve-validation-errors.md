@@ -1,13 +1,17 @@
 ---
-title: Resolve validation errors | TFS
-description: Use the Validation Resolution dialog box to resolve the data validation errors that appear in the Unpublished work items list. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Resolve validation errors 
+titleSuffix: TFS 
+description: Resolve data validation errors that appear in the Unpublished work items list with the integration of Team Foundation Server & Project Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 72c1dd06-a3a1-499c-b2a3-4d7f884033fd
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
+
+
 # Resolve validation errors for data synchronization 
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]

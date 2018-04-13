@@ -1,12 +1,13 @@
 ---
 title: Default permissions set for notifications, READMEs, Wiki, and feedback 
-description: Understand the default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for VSTS and TFS  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/26/2017  
 monikerRange: '>= tfs-2017'
 ---

@@ -2,11 +2,11 @@
 title: New work item web form 
 titleSuffix: VSTS & TFS 
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
 ms.date: 03/20/2018
 ---

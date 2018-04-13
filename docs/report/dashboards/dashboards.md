@@ -1,14 +1,14 @@
 ---
 title: Add and manage team dashboards
 titlesuffix: VSTS & TFS  
-description: View progress and gain quick access to code, builds, and work items by creating multiple team dashboards in Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: View progress and trends by defining dashboards in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts || >= tfs-2015'
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 

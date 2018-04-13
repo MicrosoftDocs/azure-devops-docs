@@ -2,11 +2,11 @@
 title: Update a team project
 titleSuffix: TFS
 description: Update a team project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 

@@ -1,11 +1,14 @@
 ---
 title: Manage permissions for READMEs and wiki pages
-description: Set permissions to grant or secure access to readme files and you team project built-in wiki  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Set permissions to grant or secure access to readme files and you team project built-in wiki in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'
 --- 

@@ -1,17 +1,19 @@
 ---
-title: Index to work item tracking customization topics in VSTS 
-description: Index to topics for customizing your work tracking experience in VSTS 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Index to work item tracking customization topics
+titleSuffix: VSTS & TFS   
+description: Index to topics for customizing your work tracking experience in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 09/21/2017
 ---
 
 # Customization  
 
-**VSTS**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you use the Inheritance or Hosted XML process models.  
 
@@ -23,13 +25,15 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 ## Concepts
 
 - [About areas and iterations](about-areas-iterations.md)  
-- [Inheritance process model](inheritance-process-model.md)  
+- [Inheritance process model](inheritance-process-model.md)   
 - [Hosted XML process model](hosted-xml-process-model.md)  
+- [On-premises XML process model](on-premises-xml-process-model.md)  
 
 
 ## How-to Guides
 
 Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
+
 
 - **Inheritance process model**
 	- [Manage processes](process/manage-process.md)  
@@ -38,6 +42,10 @@ Use the guidance provided in the following topics based on the process model or 
 - **Hosted XML process model**
 	- [Customize a Hosted XML process](import-process/customize-process.md)  
     - [Import a process](import-process/import-process.md)
+
+- **On-premises XML process model**
+    - [Add or modify a field](add-modify-field.md)
+    - [Add or modify a work item type](add-modify-wit.md)
 
 - **Process templates**
     - [Upload or download a process template](../work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)

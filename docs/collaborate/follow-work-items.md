@@ -1,14 +1,14 @@
 ---
 title: Follow work or pull requests
 titleSuffix: VSTS & TFS
-description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services or Team Foundation Server 
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+description: Track updates made to a work item or pull request by following it when using Visual Studio Team Services or Team Foundation Server 
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2013 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2013'
 ms.date: 03/01/2018
 ---
 
@@ -55,7 +55,7 @@ This topic shows you how to:
 
 When you want to track the progress of a single work item, click the ![Follow icon](../work/_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" />       
+<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â    
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
@@ -68,7 +68,7 @@ To stop following changes, click the ![Following icon](../work/_img/icons/follow
 
 To track the progress of a single pull request, click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
 
-<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />      
+<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />   Â   
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
@@ -81,7 +81,7 @@ To stop following changes, open the PR context menu and click the ![Following ic
 
 You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Work>Queries** page. 
 
-<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />      
+<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â   
 
 From this view, you can view all items you're following across all team projects within the account. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
@@ -95,7 +95,7 @@ However, this view isn't based on a query so you can't modify the parameters of 
 
 You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../user-guide/account-home-pages.md#follow-work). 
 
-<img src="../user-guide/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #C3C3C3;" />       
+<img src="../user-guide/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #C3C3C3;" />   Â    
 
 ## Related articles  
 

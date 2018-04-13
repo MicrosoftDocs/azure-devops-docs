@@ -1,11 +1,13 @@
 ---
-title: Sprint and scrum best practices | VSTS & TFS
-description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Sprint and scrum best practices
+titleSuffix: VSTS & TFS 
+description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/02/2017
 ---
 

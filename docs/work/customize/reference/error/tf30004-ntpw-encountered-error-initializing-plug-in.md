@@ -1,11 +1,12 @@
 ---
-title: TF30004-The New Team Project Wizard encountered an unexpected error while initializing the {0} plug-in. | VSTS & TFS
+title: TF30004-The New Team Project Wizard encountered an unexpected error while initializing the {0} plug-in. titleSuffix: VSTS & TFS
 description: The Wizard was not able to initialize the plug-in after an attempt to create the team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 40cfd0f7-87fb-451e-a49d-7ffea4011e24
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 

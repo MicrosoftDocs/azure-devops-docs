@@ -1,11 +1,13 @@
 ---
-title: Shared dimensions in the Analysis Services Cube | VSTS & TFS
+title: Shared dimensions in the Analysis Services Cube 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Uses to show the data for only those team projects that you specify.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 7e4570e4-443b-4589-9d16-5699f51664b5
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -41,4 +43,5 @@ You can report data from across team project collections because all reportable 
 ![Date Dimenension](_img/alm_rpt_date_dimension.png "ALM_RPT_Date_Dimension")<br />You can use date dimension hierarchies to aggregate values by day, week, month, or year. For example, you can compare the percentage of opened versus closed bugs from one month to another.<br /><br /> The first two attributes, **Year Month Date** and **Year Week Date**, correspond to hierarchical tree filters. The first hierarchy, as the following illustration shows, supports filtering by month. The second hierarchy supports filtering by week.<br /><br /> ![Date Hierarchy](_img/alm_rpt_datehierarchy.png "ALM_RPT_DateHierarchy")<br /><br /> Under **More fields**, you can specify the granularity of the time axis for displaying trend reports as **Date**, **Month**, **Week**, or **Year**.<br /><br /> You can use the Date hierarchy with the **Year Month Day** attribute to aggregate measures by year, month, and the day of the month.<br /><br /> You can use the Date hierarchy with the **Year Week Day** attribute to aggregate measures by year, week of year, and the day of the week.
   
 ## Related notes
- [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)
+ 
+- [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)

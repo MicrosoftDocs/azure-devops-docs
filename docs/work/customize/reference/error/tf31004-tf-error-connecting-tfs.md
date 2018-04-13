@@ -1,17 +1,18 @@
 ---
-title: TF31004-Team Foundation encountered an unexpected error while connecting to TFS | TFS
+title: TF31004-Team Foundation encountered an unexpected error while connecting to  TFS titleSuffix: VSTS & TFS
 description: Occurs when the instance of Team Foundation on the local computer cannot connect to the application-tier server for Team Foundation Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f0bcc998-859f-4b75-bb3d-3976cd8578f6
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF31004: Team Foundation encountered an unexpected error while connecting to Team Foundation Server {0}
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This is a generic error message displayed when the instance of Team Foundation on the local computer cannot connect to a Team Foundation Server and no error message was returned by a specific component within Team Foundation Server.  
   

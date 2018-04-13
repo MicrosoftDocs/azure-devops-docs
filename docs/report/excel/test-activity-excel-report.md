@@ -1,14 +1,18 @@
 ---
-title: Test Activity Excel Report | TFS
+title: Test Activity Excel Report 
 description: Helps monitor the number of manual tests that the team has run over time.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: cb950153-2f44-4b0b-afeb-cfb697281930
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Test Activity Excel Report
+
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 

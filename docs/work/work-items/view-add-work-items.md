@@ -1,18 +1,19 @@
 ---
-title: View and add work items
+title: View & add work items
 titleSuffix: VSTS  
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
+ms.global_help.title: View & add work items
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 1 
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.topic: quickstart
-monikerRange: 'vsts'
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 03/20/2018 
 ---
 

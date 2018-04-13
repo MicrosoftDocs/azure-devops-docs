@@ -1,12 +1,13 @@
 ---
 title: Share work plans 
 titleSuffix: VSTS & TFS 
-description: Email links, Copy URL, and share information about work items, queries, and more with VSTS or TFS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Email links, Copy URL, and share information about work items, queries, and more in Visual Studio Team Services or Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018 
 ---
 

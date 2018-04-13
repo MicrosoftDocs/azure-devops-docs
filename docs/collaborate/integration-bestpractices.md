@@ -1,9 +1,9 @@
 ---
-title: Integration best practices
+title: Integration best practices with REST APIs
 titleSuffix: VSTS 
-description: Best practices when integrating with the VSTS REST API's
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+description: Best practices when integrating with the REST APIs for Visual Studio Team Services
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
 ms.manager: douge
 ms.author: dahellem
@@ -12,7 +12,7 @@ ms.date: 01/25/2017
 
 <!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
 
-#Best Practices
+# Best Practices
 
 **VSTS**
 
@@ -29,7 +29,7 @@ For example, don't attempt to store telemetry data in Team Sevices.
 Don't add work items into VSTS for the sake of having them all in one place. VSTS is not designed as a data storage service. You should maintain your own data store.
 
 ##Batch your changes
-Doing single operations is slow and expensive. This the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](https://visualstudio.com/integrate/api/wit/batch.md) and [sample code](https://visualstudio.com/integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
+Doing single operations is slow and expensive. This is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](https://visualstudio.com/integrate/api/wit/batch.md) and [sample code](https://visualstudio.com/integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
 
 ##Limit your revisions
 Many revisions on a single work items creates bloat and causes performance problems. We recommend the following:

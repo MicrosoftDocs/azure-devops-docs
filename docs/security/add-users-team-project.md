@@ -3,7 +3,7 @@ title: Add users to a team or team project
 description: Quickstart guide to add users to a group, team project, or team 
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: devops
-ms.technology: tfs-admin
+ms.technology: devops-security
 ms.manager: douge
 ms.author: chcomley
 author: chcomley

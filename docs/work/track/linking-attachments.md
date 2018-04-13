@@ -1,11 +1,13 @@
 ---
-title: Link and attachment queries | VSTS & TFS
-description: QUery work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Link and attachment queries 
+titleSuffix: VSTS & TFS
+description: Query work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 05/10/2017  
 ---
 

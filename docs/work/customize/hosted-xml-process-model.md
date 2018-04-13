@@ -2,11 +2,11 @@
 title: Hosted XML process model 
 titleSuffix: VSTS
 description: Guide to configuring and customizing work tracking features for the Hosted XML process model 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
