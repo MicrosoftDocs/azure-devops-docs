@@ -2,14 +2,14 @@
 title: Run manual tests with Microsoft Test Manager
 description: Manual and exploratory testing - Run manual tests with Microsoft Test Manager
 ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Run manual tests with Microsoft Test Manager

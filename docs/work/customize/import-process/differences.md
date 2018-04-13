@@ -2,11 +2,11 @@
 title: Differences between cloud and on-premises process customizations
 titleSuffix: VSTS  
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Visual Studio Team Services (VSTS).
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

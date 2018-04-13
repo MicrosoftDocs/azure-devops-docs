@@ -1,11 +1,13 @@
 ---
-title: All FORM XML elements reference | VSTS & TFS
-description: Use the information in this topic as quick reference to all the elements and main attributes - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: All FORM XML elements reference
+titleSuffix: VSTS & TFS
+description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 03/02/2017
 ---
 

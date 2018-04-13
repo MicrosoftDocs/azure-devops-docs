@@ -2,12 +2,12 @@
 title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
 titleSuffix: VSTS & TFS 
 description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article 
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 monikerRange: '>= tfs-2015'
 ms.date: 03/06/2018
 ---

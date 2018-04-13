@@ -1,13 +1,17 @@
 ---
-title: Project Server fields added to TFS  | TFS
-description: Add fields to a work item form through export, modify, and import of the XML definition file 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Project Server fields added to TFS 
+titleSuffix: TFS
+description: Add fields to a work item form through export, modify, and import of the XML definition file when using Team Foundation Server & Project Server integration 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 05912b54-10f4-4ba2-947d-0c856daafdf0
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
+
 # Project Server fields added to TFS to support data synchronization 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

@@ -1,11 +1,11 @@
 ---
 title: TRANSITION XML element | VSTS & TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/27/2017
 ---
 

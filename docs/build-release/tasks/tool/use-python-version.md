@@ -1,8 +1,8 @@
 ---
 title: Use Python Version
 description: Use Python version for VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
 ms.author: brcrista

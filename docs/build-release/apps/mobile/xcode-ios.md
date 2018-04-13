@@ -1,13 +1,14 @@
 ---
 title: Build your Xcode app
 description: Build and test Xcode projects with VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: CI/CD index to content | VSTS & TFS    
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: vijayma
 ms.date: 02/19/2018
-ms.topic: landing-page
+ms.topic: conceptual
 layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---

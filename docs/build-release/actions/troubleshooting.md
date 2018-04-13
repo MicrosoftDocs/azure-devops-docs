@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting build
 description: Troubleshooting Team Foundation Build (TFBuild) in Team Foundation Server and VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: chrispat

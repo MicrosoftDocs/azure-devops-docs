@@ -1,11 +1,13 @@
 ---
-title: Categories XML element reference | VSTS & TFS
-description: Shows a description of each of the default categories used by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Categories XML element reference 
+titleSuffix: VSTS & TFS
+description: Default work item type categories used by Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 --- 
 

@@ -1,14 +1,14 @@
 ---
 title: Organize and view queries, create query folders 
 titleSuffix: VSTS & TFS  
-ms.custom: Organize queries
-description: Manage your queries by using favorites and folders in Visual Studio Team Services and Team Foundation Server 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+ms.global_help.title: Organize queries
+description: Manage your queries by using favorites and folders in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.topic: get-started-article
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018 
 ---
 

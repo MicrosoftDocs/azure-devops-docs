@@ -1,14 +1,16 @@
 ---
-title: Overview of TFS-Project Server integration features | TFS
-description: Understand how to customize data synchronization between Team Foundation Server (TFS) and Project Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Overview of TFS-Project Server integration features 
+titleSuffix: TFS 
+description: Understand how to customize data synchronization between Team Foundation Server & Project Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/12/2017
-ms.topic: get-started-article
+ms.topic: overview
 ---
+
 # Overview of TFS-Project Server integration features  
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]

@@ -1,13 +1,14 @@
 ---
-title: Configure process guidance | TFS
-description: How to customize links to process guidance-Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Configure process guidance
+titleSuffix: TFS
+description: How to customize links to process guidance-Team Foundation Server  
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/09/2017
-ms.topic: get-started-article
+ms.topic: tutorial
 ---
 
 # Configure or redirect process guidance

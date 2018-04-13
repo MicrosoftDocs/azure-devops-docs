@@ -1,13 +1,15 @@
 ---
-title: Work with resource rollup in enterprise projects mapped to team projects | TFS
-description: Work with resource rollup in enterprise projects mapped to team projects when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Work with resource rollup in enterprise projects mapped to team projects
+titleSuffix: TFS 
+description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
+ms.technology: devops-agile
 ms.assetid: 72efdffb-ea99-4b89-b681-53bc1dcb2ac9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Work with resource rollup in enterprise projects mapped to team projects
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

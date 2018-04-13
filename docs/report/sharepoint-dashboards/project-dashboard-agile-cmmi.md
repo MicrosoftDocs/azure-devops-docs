@@ -1,11 +1,11 @@
 ---
 title: Project dashboard (Agile and CMMI) | TFS
 description: Displays data that helps to monitor task burndown, burn rate, and the product backlog - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: 2423170b-dbcf-4b50-8e1c-360461cc753b
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 

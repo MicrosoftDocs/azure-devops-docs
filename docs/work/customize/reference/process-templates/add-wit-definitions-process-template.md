@@ -1,11 +1,13 @@
 ---
-title: Add type definitions for work items to a process template | VSTS & TFS
-description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add type definitions for work items to a process template
+titleSuffix: VSTS & TFS
+description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in for Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c0cec71f-89ad-43f5-960e-6008e3f9d975
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 
@@ -70,17 +72,17 @@ The following example shows how to specify a task that creates the following WIT
       </dependencies>  
       <taskXml>  
       <WORKITEMTYPES>  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewResponse.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Feature.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackResponse.xml" />   
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\SharedStep.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
+        Â <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
       </WORKITEMTYPES>  
       </taskXml>  
 </task>  

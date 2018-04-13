@@ -1,11 +1,11 @@
 ---
 title: Project field mappings | TFS
 description: Understand how data is mapped between Project and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/22/2017  
 ---
 

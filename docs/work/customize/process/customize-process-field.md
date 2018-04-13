@@ -2,11 +2,11 @@
 title: Add a custom field
 titleSuffix: VSTS 
 description: Add a custom field to the web form of a work item type for an Inheritance process model for Visual Studio Team Services
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

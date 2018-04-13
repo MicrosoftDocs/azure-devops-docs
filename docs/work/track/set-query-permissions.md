@@ -1,11 +1,13 @@
 ---
-title: Set query permissions | VSTS & TFS  
-description: How to guide for setting permissions on work item queries when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) item types  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Set query permissions
+titleSuffix: VSTS & TFS
+description: How to set permissions on work item queries and folders when working in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 11/07/2017
 ---
 

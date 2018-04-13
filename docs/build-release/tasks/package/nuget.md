@@ -1,8 +1,8 @@
 ---
 title: NuGet restore, pack, and publish
 description: How to use NuGet packages when building code in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk

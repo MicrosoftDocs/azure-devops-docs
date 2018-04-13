@@ -1,13 +1,15 @@
 ---
 title: Define query as a hyperlink
-description: Construct a URL for a query using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile 
+titleSuffix: VSTS & TFS
+description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: vs-azure-devops-agile 
 ms.article:   
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: 
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+ 
 ms.date: 09/29/2017  
 ---
 

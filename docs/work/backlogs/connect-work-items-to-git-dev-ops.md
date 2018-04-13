@@ -1,14 +1,15 @@
 ---
 title: Drive Git or TFVC development from a work item
 titleSuffix: VSTS & TFS 
-description: Create a branch, create a pull request, and automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operations  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+author: KathrynEE
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
 ---
 

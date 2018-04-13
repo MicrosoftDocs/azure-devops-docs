@@ -1,11 +1,13 @@
 ---
 title: Node Tool Installer
 description: Node Tool Installer for VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 4/17/2017
 monikerRange: 'vsts'
 ---
