@@ -1,11 +1,14 @@
 ---
-title: Storyboard your ideas | VSTS & TFS  
-description: Turn your ideas and goals into something visual using the TFS Storypoint add-in to PowerPoint  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Storyboard your ideas
+titleSuffix: VSTS & TFS 
+description: Turn your ideas and goals into something visual using the  Storypoint add-in to PowerPoint for Visual Studio Team Services or Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 05/10/2017
 ---
 

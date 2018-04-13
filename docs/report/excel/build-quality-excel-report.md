@@ -1,10 +1,12 @@
 ---
-title: Build Quality Excel Report | TFS
-description: Help monitor the success or failure rate of test activity with each build - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Build Quality Excel Report 
+description: Help monitor the success or failure rate of test activity with each build - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 60e637b9-4599-4fe5-bff1-e6adade81d9c
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---

@@ -2,10 +2,10 @@
 title: Change a process control setting | Team Foundation Server 
 description: Change a process control setting for the data warehouse or analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
 ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
 ---
 

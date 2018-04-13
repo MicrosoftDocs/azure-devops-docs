@@ -1,11 +1,11 @@
 ---
 title: Specify work item form controls | VSTS & TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 06/16/2017
 ---
 

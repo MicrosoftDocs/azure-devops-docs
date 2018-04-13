@@ -1,11 +1,13 @@
 ---
-title: Process template XML elements reference | VSTS & TFS
+title: Process template XML elements reference
+titleSuffix: VSTS & TFS
 description: Processes the template for adding or removing plug-in files.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 68ae0569-a8b6-48c8-ba91-0c18372a2c64
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 

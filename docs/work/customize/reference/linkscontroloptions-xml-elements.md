@@ -2,11 +2,11 @@
 title: LinksControlOptions XML elements reference 
 titleSuffix: VSTS & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/02/2018
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: Migrate from XAML builds
 description: Migrate from XAML builds to new builds in your Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 05/19/2017
 monikerRange: '>= tfs-2013'
 ---

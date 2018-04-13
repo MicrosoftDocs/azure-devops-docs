@@ -1,12 +1,13 @@
 ---
 title: Set working days off
 titleSuffix: VSTS & TFS 
-description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

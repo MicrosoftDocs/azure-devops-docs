@@ -1,16 +1,18 @@
 ---
 title: Troubleshoot process configuration issues
-description: Resolve process configuration issues in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Resolve process configuration issues in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: troubleshooting
 ms.date: 09/29/2017  
 ---
 
 
-# Troubleshoot process configuration issues
+# Resolve process configuration issues
 
 The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](./reference/process-configuration-xml-element.md).   
 

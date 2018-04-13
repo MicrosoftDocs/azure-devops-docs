@@ -2,11 +2,11 @@
 title: Import a process
 titleSuffix: VSTS     
 description: Add or update a process by importing a process to support customization of tracking work in Visual Studio Team Services (VSTS).
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

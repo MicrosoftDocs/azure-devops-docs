@@ -1,17 +1,18 @@
 ---
-title: TF30320-The New Team Project Wizard could not retrieve the list of team projects |  TFS
+title: TF30320-The New Team Project Wizard could not retrieve the list of team projects  titleSuffix: VSTS & TFS
 description: Display an error when the New Team Project Wizard could not retrieve the list of team projects on the Team Foundation Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 252752a7-ec21-465e-878c-1d303ee60284
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30320: The New Team Project Wizard could not retrieve the list of team projects on the Team Foundation Server {0}.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard attempts to check the Team Foundation Server {*name*} to determine if there is already a team project with the name you typed. The wizard has already established a connection with the server, but the connection is no longer working.  
   

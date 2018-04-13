@@ -1,13 +1,14 @@
 ---
 title: Search the Wiki
-titleSuffix: VSTS 
-description: Search the wiki for a team project or across the account     
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Search the wiki for a team project or across the account in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-collab
+ms.custom: wiki
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 03/22/2017
 ---

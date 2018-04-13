@@ -2,8 +2,8 @@
 title: Delay task 
 description: Build and release task to pause execution of the process for a fixed delay time in VSTS and TFS
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
@@ -30,7 +30,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).
+Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay). 
 
 ::: moniker range="vsts"
 

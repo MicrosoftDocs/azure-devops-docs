@@ -1,13 +1,14 @@
 ---
 title: Select backlog navigation levels
 titleSuffix: VSTS & TFS 
-description: Choose which backlog and portfolio backlogs are active for your team in Visual Studio Team Services or Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Choose which backlog and portfolio backlogs are active for your team in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
 ms.manager: douge
-ms.author: kaelli
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 

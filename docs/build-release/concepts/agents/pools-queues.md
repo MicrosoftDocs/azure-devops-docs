@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 title: Agents, pools, and queues
+ms.topic: conceptual
 description: Agent pools and queues for build and release management in VSTS and Team Foundation Server
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---

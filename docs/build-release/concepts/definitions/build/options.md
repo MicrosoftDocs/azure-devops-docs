@@ -1,11 +1,13 @@
 ---
 title: Build definition options
 description: Build options on VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---

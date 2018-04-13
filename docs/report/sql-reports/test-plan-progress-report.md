@@ -1,11 +1,13 @@
 ---
-title: Test Plan Progress Report | TFS
-description: Use the Test Plan Progress report to track the team's progress in testing the product.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Test Plan Progress Report 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Use the Test Plan Progress report to track the team's progress in testing the product 
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

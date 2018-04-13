@@ -2,14 +2,14 @@
 title: Collect screenshots, video, logs, and attachments in continuous tests
 description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
 ms.assetid: 234848A2-BDED-4DD5-8D15-AD56F6B49AD5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Collect screenshots, video, logs, and attachments in continuous tests

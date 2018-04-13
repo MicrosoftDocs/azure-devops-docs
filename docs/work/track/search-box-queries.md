@@ -1,14 +1,13 @@
 ---
 title: Use the search box for quick queries
 titleSuffix: VSTS & TFS
-
-description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
-ms.topic: get-started-article
+description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018  
 ---
 
@@ -76,7 +75,7 @@ You can enter or select one or more of the following shortcut identifiers:
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
-Use the `=`, `:`, and `"“` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+Use the `=`, `:`, and `"â€œ` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
 
 # [Browser](#tab/browser) 
 
@@ -235,7 +234,7 @@ Use these search operators to specify search criteria:
 
 &#160;&#160;&#160;**=** (EQUALS) to search for exact matches of text.  
 &#160;&#160;&#160;**:** (CONTAINS) to search for partial matches of text.  
-&#160;&#160;&#160;**"“** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
+&#160;&#160;&#160;**"â€œ** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
 
 The following examples show how to use operators when you create a search string.
 

@@ -2,14 +2,14 @@
 title: How To Next Steps to an IIS Deployment Group
 description: Next steps for deploying an app to IIS servers using Deployment Groups
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # How To: Extend your deployments to IIS Deployment Groups

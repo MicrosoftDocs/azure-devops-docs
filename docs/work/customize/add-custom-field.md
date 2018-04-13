@@ -1,11 +1,14 @@
 ---
-title: Add a custom field | VSTS & TFS  
-description: Add a custom work item field to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add a custom field
+titleSuffix: VSTS & TFS 
+description: Add a custom work item field to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 7F1F85D2-2AA3-4EC8-A8C8-099933DF634E  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
+robots: NOINDEX, NOFOLLOW
 ms.date: 04/05/2017
 ---
 

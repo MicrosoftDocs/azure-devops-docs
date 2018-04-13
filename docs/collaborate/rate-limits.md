@@ -1,12 +1,13 @@
 ---
-title: Resource limits & constraints for VSTS 
+title: Resource limits & constraints  
 titleSuffix: VSTS  
 description: Limits on the resources individual users can consume in VSTS, and the number of work item tracking requests they can make 
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/07/2017
 monikerRange: 'vsts'
 ---

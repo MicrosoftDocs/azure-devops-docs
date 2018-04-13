@@ -2,13 +2,13 @@
 title: Configure the Velocity widget based on Analytics data
 titleSuffix: VSTS 
 description: Track team velocity across several sprints using the Analytics-based velocity widget       
-ms.technology: vs-devops-reporting  
-ms.prod: vs-devops-alm
+ms.technology: devops-analytics  
+ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018 
 ---

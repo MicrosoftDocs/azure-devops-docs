@@ -1,10 +1,10 @@
 ---
 title: Describes the services provided by Team Foundation Server
 titleSuffix: TFS
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+description: Understand the services that support Team Foundation Server 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli

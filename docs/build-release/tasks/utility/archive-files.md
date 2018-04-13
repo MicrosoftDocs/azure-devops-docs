@@ -1,11 +1,13 @@
 ---
 title: Archive Files
 description: Create an archive file from a source folder in VSTS and Team Foundation Server TFS  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---

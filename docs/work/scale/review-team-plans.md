@@ -1,14 +1,14 @@
 ---
 title: Review team delivery plans 
 titleSuffix: VSTS & TFS
-description: Install the Delivery Plans extension, add & use plans to review scheduled multi-team deliverables in VSTS (VSTS, VS Online) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018
 ---
 
