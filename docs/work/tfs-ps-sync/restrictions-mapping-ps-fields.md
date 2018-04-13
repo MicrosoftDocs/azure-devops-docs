@@ -1,13 +1,17 @@
 ---
-title: Restrictions on mapping Project Server fields in TFS-Project Server integration | TFS
-description: Add restriction on mapping Project Server in Team Foundation Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Restrictions on mapping Project Server fields in TFS-Project Server integration
+titleSuffix: TFS
+description: Add restriction on mapping Team Foundation Server & Project Server integration
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f839c9c9-078b-4a96-93a3-132055edfb76
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
+
 # Restrictions on mapping Project Server fields in TFS-Project Server integration
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

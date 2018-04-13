@@ -1,12 +1,14 @@
 ---
-title: Remove PS-TFS integration | TFS    
+title: Remove PS-TFS integration
+titleSuffix: TFS   
 description: Remove the integration of TFS with Project Server from an on-premises Team Foundation Server upgraded to TFS 2017    
-ms.technology: vs-devops-wit   
-ms.prod: vs-devops-alm  
+ms.technology: devops-agile   
+ms.prod: devops  
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 09/19/2017  
 ---
 

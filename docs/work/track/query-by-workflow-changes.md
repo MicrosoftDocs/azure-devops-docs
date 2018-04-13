@@ -1,12 +1,13 @@
 ---
 title: Query by account, user name, workflow or board changes 
 titleSuffix: VSTS & TFS
-description: Find or list work items based on changes made to their assignment, state or Kanban board column or swimlane 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 03/20/2018
 ---
 

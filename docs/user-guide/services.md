@@ -1,9 +1,9 @@
 ---
-title: Overview of VSTS & TFS services 
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and on-premises Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+title: What do I get with VSTS or TFS
+description: Understand the services provided by in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Overview of VSTS and TFS services
+# What do I get with VSTS or TFS?
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

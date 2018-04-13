@@ -1,12 +1,14 @@
 ---
 title: View wiki page history and revert
-titleSuffix: VSTS
+titleSuffix: VSTS & TFS 
 description: Add and update pages offline for your  built-in team project wiki 
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts || >= tfs-2018'
 ms.date: 03/01/2018  
 ---

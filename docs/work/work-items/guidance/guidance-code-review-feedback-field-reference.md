@@ -2,8 +2,8 @@
 title: Code review and feedback field reference
 titleSuffix: VSTS & TFS
 description: Definition of fields used to track code review and feedback requests and responses for Visual Studio Team Services & Team Foundation Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: reference
 ms.author: kaelli

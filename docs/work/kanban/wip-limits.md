@@ -1,13 +1,15 @@
 ---
 title: Configure WIP limits for Kanban board
 titleSuffix: VSTS & TFS
-ms.custom: Set WIP limits
 description: Set Work In Progress Limits on the Kanban board in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.global_help.title: Set WIP limits
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 5    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
@@ -16,7 +18,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"ù&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
+An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"¬ù&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 

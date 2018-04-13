@@ -1,12 +1,13 @@
 ---
 title: Chat using team rooms
 titleSuffix: TFS  
-description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in a team room for TFS
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in a team room  
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/20/2018
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---

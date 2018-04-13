@@ -1,11 +1,12 @@
 ---
-title: Sofware development roles supported by VSTS & TFS
-description: Understand how our tools and services support the various roles supported in software development when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+title: Software development roles supported by VSTS & TFS
+description: Understand how Visual Studio Team Services & Team Foundation Server tools support various software development roles
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 12/07/2016
 monikerRange: '>= tfs-2013'
 ---

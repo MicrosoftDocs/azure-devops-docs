@@ -1,10 +1,12 @@
 ---
-title: Backlog overview (Scrum) | TFS
-description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Backlog overview (Scrum) 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 10/17/17
 ---

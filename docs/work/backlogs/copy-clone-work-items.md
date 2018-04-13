@@ -1,12 +1,15 @@
 ---
 title: Copy work items 
-description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
+ms.global_help.title: Copy or clone a work item 
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 4  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.manager: douge
-ms.author: kaelli 
-ms.topic: get-started-article
+ms.author: kaelli
+author: KathrynEE 
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 

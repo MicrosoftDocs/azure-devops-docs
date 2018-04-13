@@ -1,14 +1,14 @@
 ---
 title: Triage work items using a work item query 
 titleSuffix: VSTS & TFS  
-ms.custom: Triage work items
-description: Review and update work items using the triage mode from the query results view in Visual Studio Team Services and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+ms.global_help.title: Triage work items
+description: Review and update work items use the triage mode from the query results view in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 

@@ -1,10 +1,12 @@
 ---
-title: Build dashboard  (Agile and CMMI) | TFS
-description: Obtain an overview of the development activities that are affecting the quality of the builds - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Build dashboard  (Agile and CMMI) 
+titleSuffix: TFS
+description: Obtain an overview of the development activities that are affecting the quality of the builds - Team Foundation Server  
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 9ff71bb8-2e3d-49ae-97c0-5c8bd37c3b93
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---

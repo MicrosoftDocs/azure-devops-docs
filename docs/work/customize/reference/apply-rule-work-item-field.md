@@ -2,11 +2,11 @@
 title: Apply a field rule
 titleSuffix: VSTS & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 05/10/2017

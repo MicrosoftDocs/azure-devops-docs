@@ -1,11 +1,13 @@
 ---
-title: Map a project plan that was previously bound to a team project | TFS
-description: Specify work items that you want to synchronize, and then the migration process automatically creates additional tasks that are based on those work items - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Map a project plan that was previously bound to a team project
+titleSuffix: TFS 
+description: Specify work items that you want to synchronize using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: df29e319-c1f7-4c90-bc27-42975158a0a1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 

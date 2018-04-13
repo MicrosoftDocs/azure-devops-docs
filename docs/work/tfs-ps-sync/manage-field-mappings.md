@@ -1,11 +1,13 @@
 ---
-title: Manage field mappings for TFS-Project Server integration | TFS
-description: Modify how fields are mapped and synchronized to support the TFS-Project Server integration - Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Manage field mappings for TFS-Project Server integration
+titleSuffix: TFS 
+description: Modify how fields are mapped and synchronized to support Team Foundation Server-Project Server integration 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 67b6ad0e-923f-4a31-baf3-64beff2d4080
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
 

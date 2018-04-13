@@ -1,12 +1,13 @@
 ---
 title: Index of Scrum topics
 titleSuffix: VSTS & TFS 
-description: Index to topics for working in Scrum using VSTS or Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Index to topics for working in Scrum in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
