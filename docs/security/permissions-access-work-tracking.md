@@ -4,6 +4,7 @@ titleSuffix: VSTS & TFS
 description: Default permissions and access levels to support work tracking tasks in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: chcomley
