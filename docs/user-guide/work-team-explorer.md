@@ -1,12 +1,15 @@
 ---
 title: Navigate within the Visual Studio Team Explorer pane
-description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+titleSuffix: VSTS & TFS 
+description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services & Team Foundation Server 
 keywords: Download TFS clients 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: reference
 ms.date: 09/07/2017
 monikerRange: '>= tfs-2013'
 ---

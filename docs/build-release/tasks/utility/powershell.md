@@ -1,11 +1,13 @@
 ---
 title: PowerShell
 description: How to execute powershell scripts when building code in VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

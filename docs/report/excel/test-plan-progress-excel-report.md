@@ -1,11 +1,13 @@
 ---
-title: Test Plan Progress Excel Report | TFS
+title: Test Plan Progress Excel Report  
 description: Use the Test Plan Progress report to monitor test activities and report on the team's overall test progress.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 5fa325e8-ca16-47f5-a8af-bdfdcbcfc243
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 # Test Plan Progress Excel Report

@@ -1,13 +1,14 @@
 ---
 title: Deploy to Azure index to content | Microsoft Docs    
 description: Learn how to deploy to Azure using VSTS. Tutorials, references, and other documentation.  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 07/20/2017
-ms.topic: landing-page
+ms.topic: conceptual
 layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---

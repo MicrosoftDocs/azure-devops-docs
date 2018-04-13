@@ -2,8 +2,8 @@
 title: VSTS and TFS Build and Test - Publish Code Coverage Results step
 description: Publish Code Coverage Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

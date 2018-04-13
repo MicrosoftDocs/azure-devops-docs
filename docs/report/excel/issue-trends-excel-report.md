@@ -1,11 +1,13 @@
 ---
-title: Issue Trends Excel Report | TFS
-description: Shows Issue Trends report to track the rate at which the team is finding and resolving Issues - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Issue Trends Excel Report  
+description: Shows Issue Trends report to track the rate at which the team is finding and resolving Issues - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: b32acf30-a218-4f0d-ba74-dd20f5ae8e1a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Kanban board 
 titleSuffix: VSTS & TFS
-description: Index to topics for working with Kanban in VSTS and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Index to topics for working with Kanban in in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

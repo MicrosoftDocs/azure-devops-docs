@@ -1,11 +1,13 @@
 ---
-title: Manage mappings between an enterprise project and a  team project | TFS
-description: Understand how to manage mappings between an enterprise project and a team project by performing several tasks that include associating the project plan - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage mappings between an enterprise project and a  team project
+titleSuffix: TFS 
+description: Manage mappings between an enterprise project and a team project to support Team Foundation Server & Project Server integration
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 05c10281-e873-43ea-80a3-23050438c379
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
 

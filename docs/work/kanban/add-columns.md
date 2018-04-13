@@ -1,13 +1,15 @@
 ---
 title: Add columns to your Kanban board
 titleSuffix: VSTS & TFS
-ms.custom: Add columns
-description: Map your Kanban board, support your team's work flow in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Map your Kanban board, support your team's work flow in Visual Studio Team Services & Team Foundation Server
+ms.global_help.title: Add columns
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 3  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

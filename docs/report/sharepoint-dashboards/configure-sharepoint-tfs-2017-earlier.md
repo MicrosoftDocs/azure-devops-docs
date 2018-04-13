@@ -2,13 +2,13 @@
 title: Configure SharePoint integration 
 titleSuffix: TFS
 description: Configure TFS/SharePoint Integration for TFS 2017 and earlier versions
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid:
-ms.topic: get-started-article  
+ms.topic: conceptual 
 ms.manager: douge
 ms.reviewer: greggboe
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/16/2017
 ---
 

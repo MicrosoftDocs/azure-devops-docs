@@ -1,11 +1,13 @@
 ---
 title: FTP Upload
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2017'
 ---

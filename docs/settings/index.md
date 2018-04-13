@@ -2,8 +2,9 @@
 title: Scale & Configure Teams
 titleSuffix: VSTS & TFS
 description: Index to topics for adding teams in Visual Studio Team Services & Team Foundation Server  
-ms.technology: vs-devops-agile-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-settings
+ms.prod: devops
+ms.topic: overview
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

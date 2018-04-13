@@ -1,14 +1,16 @@
 ---
 title: Kanban quickstart 
 titleSuffix: VSTS & TFS
-description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server  
+description: Use the Kanban board to plan and track work in Visual Studio Team Services and Team Foundation Server 
+ms.global_help.title: View or add a Kanban board
+ms.global_help.keywords: ms.vss-work-web.boards-hub, 1  
 ms.topic: get-started-article
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -17,12 +19,24 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work.  
+Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work. 
 
-User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
+User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
+## Add a Kanban board
+
+Each Kanban board is associated with a team and a work item type. For the Agile process, the three boards are Stories, Features, and Epics.  
+
+When you add a team, you add a number of team assets which a team admin can  configure to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../scale/multiple-teams.md). 
+
+::: moniker range="vsts" 
+To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../customize/process/customize-process-backlogs-boards.md).
+::: moniker-end 
+::: moniker range=">= tfs-2013 <= tfs-2018"   
+To add a board to support an additional portfolio backlog, see [Add a portfolio backlog level](../customize/add-portfolio-backlogs.md).
+::: moniker-end   
 
 ## Open your Kanban board from the web portal
 
@@ -35,7 +49,7 @@ To view your Kanban board, open your team project from a web browser and click *
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
-If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![elipses](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **Backlogs**, and then **Board**.   
+If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](../../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **Backlogs**, and then **Board**.   
 
 ![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
@@ -95,7 +109,11 @@ To get the full power of the Kanban board working for you, you'll want to config
 > Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
 
 
-<!--- 
+
+
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #C3C3C3;" />   
+
+<!---
 
 ### TFS 2015, TFS 2013
 

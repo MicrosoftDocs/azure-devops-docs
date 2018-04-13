@@ -1,12 +1,14 @@
 ---
 title: Bulk modify using Excel
 titleSuffix: VSTS & TFS  
-description: Use Excel to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Visual Studio Team Services or Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 10/10/2017
 ---
 
@@ -35,7 +37,7 @@ In this topic you'll learn:
 <a id="add-work-items"> </a>  
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017, you'll need Project 2010 or a later version. 
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 	
@@ -109,7 +111,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	![Team ribbon, Select User](_img/bulk-add-excel-select-user-team-ribbon.png)  
 
-	A person-named field is any field whose ```syncnamechanges``` attribute has been set to [synchronize with Active Directory, Azure Active Directory, or a Workgroup](https://msdn.microsoft.com/library/aa337627.aspx).  
+	A person-named field is any field whose ```syncnamechanges``` attribute has been set to [synchronize with Active Directory, Azure Active Directory, or a Workgroup](../../customize/reference/field-definition-element-reference.md).  
 
 3. Begin typing the name of the user account and the Assign User dialog will automatically filter the results until you can select the account of interest.  
 
@@ -299,7 +301,7 @@ If you want to disable the add-in, see [Add or remove an add-in](https://support
 
 ### Enable the Developer tab 
 
-See [Show the Developer Tab on the Ribbon](https://msdn.microsoft.com/library/bb608625.aspx).
+See [Show the Developer Tab on the Ribbon](https://docs.microsoft.com/en-us/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon).
 
 ### Excel for Mac 
 

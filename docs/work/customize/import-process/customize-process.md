@@ -2,11 +2,11 @@
 title: Customize a process to import using Hosted XML
 titleSuffix: VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---

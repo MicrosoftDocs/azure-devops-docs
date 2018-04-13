@@ -1,11 +1,13 @@
 ---
-title: Assign permissions to support TFS-Project Server integration | TFS
-description: Assign permissions to support configuration and working with TFS- Project Server data synchronization
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Assign permissions to support TFS-Project Server integration
+titleSuffix: TFS 
+description: Assign permissions to support configuration and working with Team Foundation Server & Project Server  data synchronization
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/16/2017
 ---
 

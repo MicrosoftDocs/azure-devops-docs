@@ -2,14 +2,14 @@
 title: Archived release notes for Microsoft Release Management
 description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2013"
+monikerRange: '>= tfs-2013'
 ---
 
 # Archived release notes for Microsoft Release Management

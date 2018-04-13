@@ -2,11 +2,11 @@
 title: Link type element reference
 titleSuffix: VSTS & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2018  
 ---
 

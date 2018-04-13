@@ -1,13 +1,14 @@
 ---
 title: Create your backlog 
 titleSuffix: VSTS & TFS
-description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables - Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018
 ---
 

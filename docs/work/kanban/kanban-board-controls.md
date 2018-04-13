@@ -1,13 +1,13 @@
 ---
 title: Kanban board controls  
 titleSuffix: VSTS & TFS
-description: Understand the board controls available with your Kanban board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use board controls available with your Kanban board in Visual Studio Team Services & Team Foundation Server    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
 ms.date: 03/20/2018
 ---

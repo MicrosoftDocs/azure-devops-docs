@@ -3,12 +3,12 @@ title: Catalog of widgets you can add to a dashboard
 titleSuffix: VSTS & TFS
 ms.custom: Widget catalog
 description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 

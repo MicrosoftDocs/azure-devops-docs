@@ -2,14 +2,14 @@
 title: Set up continuous testing for your builds
 description: Set up continuous testing for your builds in VSTS and TFS 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Set up continuous testing for your builds

@@ -1,12 +1,13 @@
 ---
-title: Scrum overview | VSTS & TFS
-description: Use the web portal to implement your Scrum process, plan and track work, and monitor progress and trends  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Scrum overview
+titleSuffix: VSTS & TFS 
+description: Implement Scrum, track work, monitor progress and trends in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 07/25/2017
 ---
 

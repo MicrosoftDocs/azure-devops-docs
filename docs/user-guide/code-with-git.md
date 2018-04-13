@@ -1,16 +1,18 @@
 ---
-title: Code with Git | VSTS & TFS
+title: Code with Git
+titleSuffix: VSTS & TFS 
 description: Share code in a Git repo and new team project 
 ms.assetid: 
 ms.prod: devops
-ms.technology: devops-overview
-ms.topic: quickstart
+ms.technology: devops-new-user
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/24/2017
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: 'vsts'
 ---
+
+
 # Code with Git
 
 **VSTS**

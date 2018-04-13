@@ -1,11 +1,13 @@
 ---
 title: Build definition source repositories
 description: Specify the sources and repository that contains the code you want to build on VSTS and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 11/05/2017
 monikerRange: '>= tfs-2015'
 ---

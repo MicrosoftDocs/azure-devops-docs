@@ -1,12 +1,13 @@
 ---
 title: CI build for a Java app with Maven
 description: Define a continuous integration (CI) build process for your Java app with Maven in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: C339FAF9-A960-4A3A-9A8A-ADCD39C2703D
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 01/12/2017
 monikerRange: '>= tfs-2017'

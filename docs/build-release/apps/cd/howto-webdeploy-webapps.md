@@ -2,14 +2,14 @@
 title: How To Next Steps to Azure App Services
 description: Next steps for deploying an app to a Azure App Services from Release Management in VSTS or TFS
 ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # How To: Extend your deployments to Azure App Services

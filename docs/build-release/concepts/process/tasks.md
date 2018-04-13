@@ -1,13 +1,15 @@
 ---
 title: Build and Release Tasks in VSTS and TFS
 description: Understand Build and Release tasks in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 01/19/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 

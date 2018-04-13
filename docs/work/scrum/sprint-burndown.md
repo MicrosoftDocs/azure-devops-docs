@@ -1,12 +1,13 @@
 ---
-title: Sprint burndown | VSTS & TFS  
-description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Sprint burndown
+titleSuffix: VSTS & TFS
+description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 08/02/2017
 ---
 

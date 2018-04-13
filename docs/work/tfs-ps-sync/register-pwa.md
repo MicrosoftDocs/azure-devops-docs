@@ -1,13 +1,16 @@
 ---
-title: Register an instance of PWA  to TFS | TFS
-description: Register the instance of Project Web Access or Project Web App (PWA) to the Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Register an instance of PWA  to TFS 
+titleSuffix: TFS 
+description: Register the instance of Project Web Access or Project Web App (PWA) to to support Team Foundation Server-Project Server integration 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4093f721-e8ed-439b-9882-00fbb2ea430f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
 # Register an instance of PWA  to TFS
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

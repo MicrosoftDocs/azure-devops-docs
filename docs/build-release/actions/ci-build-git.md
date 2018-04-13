@@ -1,15 +1,16 @@
 ---
 title: Define a CI build process for your Git repo | VSTS Tutorial
 description: Define a continuous integration (CI) build for your Git repo using VSTS
+ms.prod: devops
 services: vsts
 documentationcenter: vs-devops-build
 ms.author: mlearned
 ms.manager: douge
 editor: ''
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.devlang: dotnetcore
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 03/17/2018

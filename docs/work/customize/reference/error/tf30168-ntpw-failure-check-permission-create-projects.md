@@ -1,18 +1,18 @@
 ---
-title: TF30168-The New Team Project Wizard experienced a failure checking your permissions to create projects | TFS
+title: TF30168-The New Team Project Wizard experienced a failure checking your permissions to create projects titleSuffix: VSTS & TFS
 description: Occurs when the New Team Project Wizard starts and then checks to see whether your user account has permission set to create a team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 5ec922a9-9b7a-4ccc-b1c5-5f8432e0c385
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30168: The New Team Project Wizard experienced a failure checking your permissions to create projects.
 
-
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard starts and then checks to see whether your user account has permission set to create a team project. An active connection cannot be made because of one of the following conditions:  
   

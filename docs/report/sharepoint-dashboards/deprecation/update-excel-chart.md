@@ -1,10 +1,13 @@
 ---
 title: Update Excel Chart
+titleSuffix: TFS
 description: TFS SharePoint integration - Update an Excel chart on a SharePoint site
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-integrate
-ms.manager: abjork
-ms.author: greggboe
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
+ms.manager: douge
+ms.reviewer: greggboe
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
 ms.topic: 
 ---

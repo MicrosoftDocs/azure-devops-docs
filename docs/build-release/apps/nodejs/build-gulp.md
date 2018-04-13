@@ -1,12 +1,13 @@
 ---
 title: CI build for a Node.js app with Gulp
 description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 12/20/2017
 monikerRange: '>= tfs-2017'
 ---
