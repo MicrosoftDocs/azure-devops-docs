@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)

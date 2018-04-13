@@ -30,7 +30,7 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay).
+Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay). 
 
 ::: moniker range="vsts"
 

@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2013"
+monikerRange: '>= tfs-2013'
 ---
 
 # System requirements for Release Management server/client for VS 2015 and TFS 2015

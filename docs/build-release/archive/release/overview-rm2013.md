@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2013"
+monikerRange: '>= tfs-2013'
 ---
 
 # Release Management 2013 (server and client version)
