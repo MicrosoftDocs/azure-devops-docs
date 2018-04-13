@@ -2,12 +2,13 @@
 title: Define features and epics
 titleSuffix: VSTS & TFS
 description:  Define features and epics to group backlog items and track high level items 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: tutorial
 monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---

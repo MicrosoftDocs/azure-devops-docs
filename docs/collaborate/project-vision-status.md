@@ -2,12 +2,12 @@
 title: Share your project vision 
 titleSuffix: VSTS & TFS 
 description: View or update your project home page to share project vision, objectives, and activity for Visual Studio Team Services or Team Foundation Server   
-ms.topic: get-started-article
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+ms.topic: quickstart
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2015'
 ms.date: 03/22/2017
 ---

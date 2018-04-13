@@ -1,18 +1,19 @@
 ---
-title: Request feedback on working apps in VSTS & TFS  
-description: Overview of ways in which to request and provide feedback on your working apps    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: Request feedback on working apps 
+titleSuffix: VSTS & TFS 
+description: Overview of ways in which to request and provide feedback on your working apps in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: overview
 ms.assetid:    
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
 ms.date: 08/07/2017
 ---
 
 # About feedback
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide two main methods for collecting feedback on your work apps. You can use of these two clients to collect feedback: 

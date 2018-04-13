@@ -4,6 +4,7 @@ titleSuffix: VSTS & TFS
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: devops
+ms.topic: Conceptual
 ms.technology: devops-security
 ms.manager: douge
 ms.author: chcomley
@@ -220,7 +221,7 @@ What you can do on TFS differs from what is available  from VSTS
 > [!div class="nextstepaction"]
 > [Remove user accounts](remove-users-prohibit-access.md)
 
-## Related notes
+## Related articles
 
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 

@@ -2,8 +2,8 @@
 title: Scrum process template
 titleSuffix: VSTS & TFS
 description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
 ms.manager: douge

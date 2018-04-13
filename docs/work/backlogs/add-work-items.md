@@ -1,14 +1,16 @@
 ---
 title: Add work items
 titleSuffix: VSTS & TFS 
-ms.custom: Add and follow work items 
+ms.global_help.title: View & add work items
+ms.global_help.keywords: ms.vss-work-web.work-items-hub, 2 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a team project in Visual Studio Team Services or Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018
 ---
 

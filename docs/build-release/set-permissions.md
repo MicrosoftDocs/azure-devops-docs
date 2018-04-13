@@ -3,12 +3,12 @@ title: Set build and release permissions
 titleSuffix: VSTS & TFS
 description: Grant or restrict access to build-release, library, task group, and variable group functions
 ms.assetid:  
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/12/18
-monikerRange: ">= tfs-2013"
+monikerRange: '>= tfs-2013'
 ---
 
 

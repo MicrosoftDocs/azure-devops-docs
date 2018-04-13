@@ -1,11 +1,13 @@
 ---
 title: New Build Editor
 description: A preview of a new user experience for Team Foundation Build (TFBuild) on VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 01/03/2017
 monikerRange: 'tfs-2017 || vsts'
 ---

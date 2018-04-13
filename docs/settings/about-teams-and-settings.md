@@ -1,13 +1,13 @@
 ---
-title: "About teams & Agile tools"
-titleSuffix: "VSTS & TFS" 
-description: Guide to adding and configuring teams in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: About teams & Agile tools
+titleSuffix: VSTS & TFS 
+description: Guide to adding and configuring teams in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-settings
+ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: overview
 ms.date: 02/14/2018 
 ---
 

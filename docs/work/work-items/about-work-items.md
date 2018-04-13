@@ -1,14 +1,13 @@
 ---
 title: Plan and track work with work items
 titleSuffix: VSTS & TFS
-description: Use work items to plan, track, and collaborate with others when developing software apps 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use work items to plan, track, & collaborate with others when developing software apps in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
-ms.topic: overview
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
+ms.topic: overview
 ms.date: 03/20/2018
 ---
 

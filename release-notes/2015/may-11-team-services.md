@@ -1,8 +1,8 @@
 ---
 title: Application Insights Public Preview for iOS and Android, performance counters and unhandled exceptions for Java apps,and time range selection
 description: VSTS release notes for May 11 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: ab2dd5ed-ac45-46ed-96a5-64e8a09b324a
 ms.date: 06/01/2016

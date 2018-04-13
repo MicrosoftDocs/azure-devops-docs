@@ -1,11 +1,13 @@
 ---
-title: Testing Gaps Excel Report (CMMI) | TFS
+title: Testing Gaps Excel Report (CMMI)  
 description: Use Testing Gaps report to help determine where there are deficiencies in the test plans, test configurations, and test coverage.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: e4ce9627-630f-4c11-bd23-f5348431cd86
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 # Testing Gaps Excel Report (CMMI)

@@ -2,14 +2,14 @@
 title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Repeat a test with different data

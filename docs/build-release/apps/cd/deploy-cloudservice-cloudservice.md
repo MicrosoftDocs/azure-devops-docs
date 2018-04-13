@@ -2,14 +2,14 @@
 title: Deploy your ASP.NET app to an Azure cloud service
 description: Example of deploying an Azure cloud services package from Release Management in VSTS or Microsoft Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your ASP.NET app to an Azure cloud service

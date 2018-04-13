@@ -2,7 +2,7 @@
 title: Buy to Xamarin University
 description: Get training on Xamarin forms for device app development
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.topic: conceptual
 ms.manager: douge

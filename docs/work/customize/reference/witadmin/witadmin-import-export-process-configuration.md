@@ -2,11 +2,12 @@
 title: Import and export process configuration for Agile work tracking tools 
 titleSuffix: TFS
 description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---

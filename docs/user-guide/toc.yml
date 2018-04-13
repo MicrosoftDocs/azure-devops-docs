@@ -19,7 +19,9 @@
   - name: "Add & run manual tests"
     href: add-run-manual-tests.md
   - name: Install a Marketplace extension
-    href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+  - name: View permissions
+    href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
@@ -52,8 +54,6 @@
     href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Navigate using your account home page
     href: account-home-pages.md
-  - name: View permissions
-    href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile
     href: ../collaborate/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Manage your notifications

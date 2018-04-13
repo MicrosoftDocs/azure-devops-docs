@@ -1,21 +1,19 @@
 ---
-title: Combine pick list types | VSTS & TFS
+title: Combine pick list types 
+titleSuffix: VSTS & TFS 
 description: Examples that show how to create pick lists or drop-down menus by combining different types. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 04f1daff-fe12-4c1f-8625-e884f0fb2c7c
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 04/05/2017
 ---
 
 # Combine list types
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
-
-
-> [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
   
@@ -35,15 +33,15 @@ You can specify multiple types of lists for a single field. This topic defines h
   
 ```  
 If {set S} AND {set A} have no entries  
-         Result: Empty list  
+        Â Result: Empty list  
 If {set S} has entries and {set A} has no entries  
-         Result: The values are obtained by subtracting {set P} from {set S}  
+        Â Result: The values are obtained by subtracting {set P} from {set S}  
 If {set S} AND {set A} have entries  
-         Result: The list of values are obtained by:  
+        Â Result: The list of values are obtained by:  
                 a. Intersecting {set A} with {set S} to get {intermediate set I}  
                 b. Subtracting {set P} from {intermediate set I}  
 If {set S} has no entries and {set A} has entries  
-         Result: The list of values are obtained by subtracting {set P} from {set A}  
+        Â Result: The list of values are obtained by subtracting {set P} from {set A}  
 ```  
   
 ## Specify multiple lists  

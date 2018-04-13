@@ -1,11 +1,13 @@
 ---
-title: Work Item History tables | TFS
+title: Work Item History tables
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting 
 ms.assetid: 54f07bd4-dc55-4f68-a28e-e61ccce77060
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

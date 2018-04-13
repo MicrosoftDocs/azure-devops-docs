@@ -2,14 +2,14 @@
 title: Associate an automated test with a test case
 description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Associate automated tests with test cases

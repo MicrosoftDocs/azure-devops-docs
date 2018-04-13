@@ -1,12 +1,13 @@
 ---
 title: Define a CI build process for your GitHub repository | VSTS Tutorial
 description: Define a continuous integration (CI) build for your GitHub repository using Visual Studio Team Services
-ms.topic: get-started-article
+ms.topic: conceptual
+ms.prod: devops
 ms.service: vsts
 ms.custom: mvc
 ms.devlang: dotnetcore
-ms.technology: vs-devops-build
-ms.prod: vs-devops-alm
+ms.technology: devops-cicd
+ms.prod: devops
 ms.assetid: B61506B0-766C-49D1-B991-85BBFCBCD3E6
 ms.manager: douge
 ms.author: mlearned

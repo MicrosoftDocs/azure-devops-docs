@@ -1,11 +1,13 @@
 ---
 title: Key concepts for working with both VSTS & TFS
-description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services & Team Foundation Server  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+description: Understand the key concepts for Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 08/04/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -15,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
-Through Visual Studio Team Services (VSTS) and Team Foundation Server   (TFS), you have access to a comprehensive set of services and tools to support your software development. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
+The set of platforms, services, and tools you have access to through Visual Studio Team Services (VSTS) can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
 
 <!---
 ###Video overview
@@ -24,7 +26,7 @@ Through Visual Studio Team Services (VSTS) and Team Foundation Server   (TFS), y
 
 ## Collaborative, integrated software development
 
-VSTS, our hosted cloud offering, and TFS, our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
+VSTS, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
 
 The three main areas that support software development include:
 
@@ -86,16 +88,11 @@ You can scale the system in the following ways:
 
 ### Software projects versus team projects
 
-To build and deploy a software application, you begin by defining a software project. Typically, the software project corresponds to a set of software files that, when built, deliver an application solution. Software projects differ from team projects. 
+To build and deploy a software application, you begin by defining a software project. Software projects differ from team projects. 
 
-A team project provides a repository for your software code and a process for tracking work. It is a container for a number of software projects which you can manage from planning to deployment. 
+A team project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, you can create one or more team projects. At a minimum, at least one team project must be created in order to use the system. 
-
-### Team projects and team project collections or accounts
-
-When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection.  
-<br/>
+When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection. 
 
 <table width="100%">
 <tbody valign="top">

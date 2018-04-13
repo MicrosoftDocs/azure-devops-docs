@@ -3,10 +3,10 @@ title: Dashboards index to content
 titleSuffix: VSTS & TFS
 description: Index to topics for working with dashboards to monitor status and trends in Visual Studio Team Services & Team Foundation Server   
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/23/2018
 ---
 

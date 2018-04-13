@@ -1,11 +1,13 @@
 ---
-title: Create an aggregate report using Report Designer and the Analysis Services Cube | TFS
-description: Understand how to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Create an aggregate report using Report Designer and the Analysis Services Cube 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
+description: How to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
