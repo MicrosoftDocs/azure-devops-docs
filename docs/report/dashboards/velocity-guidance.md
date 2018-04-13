@@ -2,12 +2,12 @@
 title: Velocity guidance
 titleSuffix: VSTS & TFS 
 description: Guidance for working with velocity charts
-ms.technology: vs-devops-reporting  
-ms.prod: vs-devops-alm
+ms.technology: devops-analytics  
+ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/16/2017
 ---
 

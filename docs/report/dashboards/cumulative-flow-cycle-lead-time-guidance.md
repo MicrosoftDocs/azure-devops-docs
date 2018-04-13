@@ -2,13 +2,13 @@
 title: Cumulative flow guidance
 titleSuffix: VSTS & TFS   
 description: Process guidance to work with cumulative flow diagrams to improve your     
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.assetid:  
 ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018 
 ---
 

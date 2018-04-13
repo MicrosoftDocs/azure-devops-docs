@@ -1,11 +1,14 @@
 ---
-title: Additional configuration options | TFS  
-description: Options to configure or customize after you upgrade an on-premises Team Foundation Server to get full access to specific features  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Additional configuration options
+titleSuffix: TFS 
+description: Options to configure or customize after you upgrade an on-premises Team Foundation Server to access all features  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/05/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 04/05/2017
 Supports the following FWLINK: Additional configuration options are available - changes: http://go.microsoft.com/fwlink/?LinkID=242982 - 
 -->
 
-#Additional configuration options post update
+# Additional configuration options post update
 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 

@@ -1,11 +1,13 @@
 ---
 title: VSTS and Team Foundation Server Build and Test - Xamarin Test Cloud
 description: How to use Xamarin Test Cloud when building code in VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/16/2016
 monikerRange: '>= tfs-2015'
 ---

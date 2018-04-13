@@ -1,11 +1,12 @@
 ---
-title: TF30034-No permissions to create a new team project | VSTS & TFS
+title: TF30034-No permissions to create a new team project titleSuffix: VSTS & TFS
 description: Occurs when a user tries to create a team project and doesn't have the required permissions
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 885f02d8-c070-4709-a34d-c891cad30493
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 

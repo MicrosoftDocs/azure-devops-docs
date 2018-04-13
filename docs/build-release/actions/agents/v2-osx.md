@@ -1,11 +1,13 @@
 ---
 title: Deploy an agent on macOS
 description: Deploy a macOS agent to build and deploy your iOS application.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---

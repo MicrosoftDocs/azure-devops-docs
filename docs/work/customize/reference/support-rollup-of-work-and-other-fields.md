@@ -2,11 +2,11 @@
 title: Support rollup of work and other fields
 titleSuffix: VSTS & TFS
 description: Provides summed values of select fields for all child work items of a parent.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/16/2018
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: Build variables
 description: Build variables are name-value pairs defined by you or provided by Build or Release Management. You can use variables as inputs and in your scripts.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 03/15/2018
 monikerRange: '>= tfs-2015'
 ---

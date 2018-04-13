@@ -1,12 +1,14 @@
 ---
-title: Navigate using the account hub pages in VSTS & TFS 
-description: Quickly link to work items, pull requests, team projects, and more using your account home page of the web portal for VSTS and Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Navigate using the account hub pages 
+titleSuffix: VSTS & TFS 
+description: Quickly link to work items, pull requests, team projects, and more using your account home page in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---

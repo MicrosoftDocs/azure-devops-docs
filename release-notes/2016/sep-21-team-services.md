@@ -1,8 +1,8 @@
 ---
 title: Import Git repos and view work item attachments – Sept 21
 description: VSTS release notes for September 21 2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 4fcf0a54-198f-419f-8c50-0155af0dd574
 ms.date: 06/01/2016

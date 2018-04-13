@@ -1,11 +1,11 @@
 ---
 title: Work item save is slow to complete | VSTS & TFS
 description: Occurs when you save a work item.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 367d2f3d-8dcd-4311-a411-7ba93217aabf
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 # Work item save is slow to complete

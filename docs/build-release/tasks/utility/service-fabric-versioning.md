@@ -1,11 +1,13 @@
 ---
 description: Update Service Fabric App Versions task
 title: Update Service Fabric App Versions build task VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 3034CEF8-215C-408E-AD0F-C41D3D9C2F72
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---

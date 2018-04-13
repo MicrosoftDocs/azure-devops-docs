@@ -2,10 +2,10 @@
 title: Add reports to a team project | TFS   
 description: Add a report server and upload reports to a team project hosted on an on-premises Team Foundation Server (TFS)  
 ms.assetid: 17C16BE3-6F7D-466F-A3D9-402C79D53768  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
 ---
 

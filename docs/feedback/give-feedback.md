@@ -1,8 +1,10 @@
 ---
-title: Give feedback using Microsoft Feedback Client  
-description: Respond to a request for feedback using the Microsoft Feedback Client - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Give feedback using Microsoft Feedback Client 
+titleSuffix: VSTS & TFS  
+description: Respond to a request for feedback using the Microsoft Feedback Client in Visual Studio Team Services & Team Foundation Server   
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.assetid: 9C3231E4-FD2F-4F22-BEA0-C1AA0DE294C6  
 ms.manager: douge
 ms.author: kaelli

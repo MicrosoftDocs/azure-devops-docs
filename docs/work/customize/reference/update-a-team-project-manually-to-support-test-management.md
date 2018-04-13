@@ -2,11 +2,11 @@
 title: Update a team project manually to support test management 
 titleSuffix: TFS
 description: Update a team project manually to support test management.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 

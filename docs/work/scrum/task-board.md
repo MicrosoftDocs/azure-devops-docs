@@ -1,13 +1,13 @@
 ---
-title: Do Scrum with the task board 
+title: Scrum with the task board 
 titleSuffix: VSTS & TFS  
-description: How to implement Scrum when working with the sprint task board in Visual Studio Team Services or Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm 
+description: Implement Scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops 
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 

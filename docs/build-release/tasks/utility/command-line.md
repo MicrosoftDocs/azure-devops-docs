@@ -1,11 +1,13 @@
 ---
 title: Command line
 description: How to execute tools from a command prompt when building code in VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

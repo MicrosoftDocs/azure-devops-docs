@@ -1,12 +1,13 @@
 ---
 title: CI build for a Java app with Gradle
 description: Define a continuous integration (CI) build process for your Java app with Gradle in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 9AED3FD7-8CC1-4DD2-ADB0-2793D5A00A28
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 01/16/2017
 monikerRange: '>= tfs-2017'

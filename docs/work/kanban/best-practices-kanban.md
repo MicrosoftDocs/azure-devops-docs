@@ -1,11 +1,13 @@
 ---
-title: Kanban best practices | VSTS & TFS
+title: Kanban best practices
+titleSuffix: VSTS & TFS
 description: Best practices when implementing Kanban in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 10/20/2017
 --- 
 
@@ -61,7 +63,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
  
 ## Your team, working software and the Definition of Done  
 
-One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
+One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."Â
 
 > *All agile teams must establish what they mean when they say "working software," which is frequently known as the definition of done. At a high level, a piece of functionality is complete only when its features pass all tests and can be operated by an end user. At a minimum, teams must go beyond the unit test level and test at the system level. The best teams also include integration testing, performance testing, and customer acceptance testing in their definition of what it means to be done with a piece of functionality.* &mdash; Jeff Sutherland
 

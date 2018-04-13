@@ -2,12 +2,12 @@
 title: Define iteration paths or sprint  
 titleSuffix: VSTS & TFS 
 description: Define the iterations or sprints to use when assigning work items in Visual Studio Team Services or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
 ms.date: 03/20/2018
 ---
 

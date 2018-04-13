@@ -1,11 +1,13 @@
 ---
 title: The Cordova/Ionic/PhoneGap Command Tasks
 description: The Cordova/Ionic Command Tasks for VSTS and Team Foundation Services 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: be45c6df-5da8-4b1c-b5b8-3e579ab39096
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
 monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
