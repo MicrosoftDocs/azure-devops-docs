@@ -2,11 +2,12 @@
 title: Add tags to work items 
 titleSuffix: VSTS & TFS
 description: Add work item tags to categorize and filter lists & boards when working in Visual Studio Team Services & Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

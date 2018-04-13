@@ -1,11 +1,14 @@
 ---
-title: TFS-Office integration issues | VSTS & TFS  
+title: TFS-Office integration issues
+titleSuffix: VSTS & TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 03/28/2017   
 ---
 

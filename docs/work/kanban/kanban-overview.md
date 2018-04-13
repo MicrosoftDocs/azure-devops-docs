@@ -1,13 +1,13 @@
 ---
 title: About Kanban and Agile project management
 titleSuffix: VSTS & TFS
-description: Use the web portal to implement your Kanban process, plan and track work, and monitor progress and trends  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use the web portal to support Kanban, plan and track work, and monitor progress in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 03/20/2018
 ---
 

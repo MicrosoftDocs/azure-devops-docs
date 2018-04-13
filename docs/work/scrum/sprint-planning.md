@@ -1,13 +1,13 @@
 ---
 title: Sprint planning 
 titleSuffix: VSTS & TFS
-description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services or Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 03/20/2018
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Visibility across teams 
 titleSuffix: VSTS & TFS
-description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services (VSTS) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/24/2018
 ---
 

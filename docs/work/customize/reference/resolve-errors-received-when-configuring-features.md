@@ -2,11 +2,11 @@
 title: Resolve errors received when configuring features for TFS
 titleSuffix: TFS 
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/19/2017
 ---
 

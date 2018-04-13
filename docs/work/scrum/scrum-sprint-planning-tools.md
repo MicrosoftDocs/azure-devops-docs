@@ -1,11 +1,13 @@
 ---
-title: Scrum and sprint planning tools | VSTS & TFS
-description: Understand the tools available to you to support Scrum and working in sprints  in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Scrum and sprint planning tools
+titleSuffix: VSTS & TFS 
+description: Understand the tools available to you to support Scrum and working in sprints in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/19/2017
 ---
 

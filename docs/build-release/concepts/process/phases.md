@@ -2,14 +2,14 @@
 title: Build and Release Automation Phases in VSTS and TFS
 description: Understand Build and Release Phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2017"
+monikerRange: '>= tfs-2017'
 ---
 
 # Phases in Build and Release Management

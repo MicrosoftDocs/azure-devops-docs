@@ -1,11 +1,13 @@
 ---
 title: Process template and plug-in files 
+titleSuffix: VSTS & TFS
 description: Describes each process template and plug-in file and what is supported when you create a team project via Visual Studio or the web portal  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/19/2017
 ---
 

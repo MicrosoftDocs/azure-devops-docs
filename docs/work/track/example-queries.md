@@ -1,13 +1,13 @@
 ---
 title: Create managed queries
 titleSuffix: VSTS & TFS 
-description: Track work by creating queries to list items using Visual Studio Team Services and Team Foundation Server 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+description: Track work by creating queries to list items in Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
-ms.topic: get-started-article
+ms.topic: overview
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/20/2018
 ---
 

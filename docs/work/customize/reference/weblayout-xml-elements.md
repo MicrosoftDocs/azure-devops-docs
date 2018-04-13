@@ -2,11 +2,11 @@
 title: WebLayout XML elements reference 
 titleSuffix: VSTS & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ms.date: 11/28/2017

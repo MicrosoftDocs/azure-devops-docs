@@ -1,11 +1,13 @@
 ---
 title: Build definition history
 description: You can learn what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 3/15/2018
 monikerRange: '>= tfs-2015'
 ---

@@ -1,11 +1,13 @@
 ---
-title: Map integration components | TFS
-description: Configure several points of integration using TFSAdmin ProjectServer command-line tool to synchronize data - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Map integration components
+titleSuffix: TFS 
+description: Use TFSAdmin ProjectServer command-line tool to configure integration betwee Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ddac3deb-bb59-4536-9d4a-ecd389ceb265
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
 

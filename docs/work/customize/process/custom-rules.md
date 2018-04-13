@@ -2,11 +2,11 @@
 title: Add a custom rule to a work item type
 titleSuffix: VSTS
 description: Add a custom rule to a process for a work item type for Visual Studio Team Services
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/23/2018
 ---

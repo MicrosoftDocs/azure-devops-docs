@@ -1,13 +1,13 @@
 ---
 title: Schedule sprints
 titleSuffix: VSTS & TFS  
-description: Add and set dates for sprints, releases, or iterations to implement Scrum and also to gain access to several built-in charts and widgets   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add and set dates for sprints, releases, or iterations to implement Scrum in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
 ms.date: 02/27/2018
 ---
 

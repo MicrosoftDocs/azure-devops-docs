@@ -1,11 +1,13 @@
 ---
-title: Team administrator permissions | VSTS & TFS 
-description: Understand what permissions are granted to team administrators  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Team administrator permissions
+titleSuffix: VSTS & TFS
+description: Understand  permissions team administrator permissions in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/15/2017
 ---
 

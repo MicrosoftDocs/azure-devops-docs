@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 title: Build and Release Agents
+ms.topic: conceptual
 description: Build and Release Agents in VSTS and Team Foundation Server
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---

@@ -2,14 +2,14 @@
 title: Associate automated test results with requirements
 description: Continuous testing. Associate automated test results with requirements using  Microsoft Test Manager (MTM)
 ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Associate automated test results with requirements

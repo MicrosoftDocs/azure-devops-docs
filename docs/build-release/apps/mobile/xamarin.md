@@ -1,13 +1,14 @@
 ---
 title: Build your Xamarin app
 description: Define a CI process that builds your Xamarin solution on Team Foundation Server and Visual VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 933A828E-CBB7-44C2-BAC0-1E1E9D78BFA0
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

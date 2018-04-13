@@ -1,15 +1,16 @@
 ---
 title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using VSTS
+ms.prod: devops
+ms.technology: devops-cicd
 services: vsts
 documentationcenter: vs-devops-build
 ms.author: mlearned
 ms.manager: douge
 editor: ''
-
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.devlang: dotnetcore
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: acs
 ms.workload: ''
 ms.date: 02/07/2018

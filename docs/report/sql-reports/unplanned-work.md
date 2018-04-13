@@ -1,11 +1,13 @@
 ---
-title: Unplanned Work | TFS
+title: Unplanned Work 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 4c174c3c-2e3d-4f09-913d-bbc17b6382a8
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

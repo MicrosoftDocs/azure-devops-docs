@@ -1,17 +1,21 @@
 ---
-title: Change reporting attributes | TFS
-description: Customize which fields appear in the relational warehouse or cube to support reporting - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Change reporting attributes 
+titleSuffix: TFS
+description: Customize which fields appear in the relational warehouse or cube to support reporting for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 02/10/2017
 ---
+
+
 # Add or modify work item fields to support reporting
 
-
-<b> TFS 2017 | TFS 2015 </b> 
+[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
@@ -31,14 +35,10 @@ You use work item fields to track data for a work item type, to define the filte
 ###  Best practices  
  Before you add or modify a field, review the following best practices:  
   
--   Determine whether you can use a field that is already defined in the team project collection that contains your team project. Use of an existing field supports cross-project reporting.  
-  
--   Determine whether you can use a field that is already defined in another project collection in the deployment of Visual Studio Team Foundation Server. Use of an existing field supports cross-project reporting.  
-  
--   You can have no more than 1,024 fields in each project collection and no more than 1,024 unique reportable fields in all project collections throughout a deployment of Team Foundation Server. Merged fields count as one reportable field.  
-  
--   Institute a standard procedure and review process to add and modify fields in process templates, team projects, or project collections.  
-  
+-   Determine whether you can use a field that is already defined in the team project collection that contains your team project. Use of an existing field supports cross-project reporting.    
+-   Determine whether you can use a field that is already defined in another project collection in the deployment of Visual Studio Team Foundation Server. Use of an existing field supports cross-project reporting.    
+-   You can have no more than 1,024 fields in each project collection and no more than 1,024 unique reportable fields in all project collections throughout a deployment of Team Foundation Server. Merged fields count as one reportable field.   
+-   Institute a standard procedure and review process to add and modify fields in process templates, team projects, or project collections.   
 -   Use systematic naming conventions when you label fields for reporting. When you assign reference names in a systematic manner across all team project collections in a deployment of Team Foundation Server, you guarantee a more consistent and usable warehouse and cube schema, and you avoid schema conflicts in the warehouse. For more information, see [Resolve data warehouse schema conflicts](../../../report/admin/resolve-schema-conflicts.md).  
   
      You can assign up to four label attributes to a work item field:  
@@ -196,7 +196,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
  The following table lists the fields whose reference names begin with "System" and that are listed in the PivotTable report with the prefix of "Work Item." These fields are put directly under the Work Item dimension. All other fields are put under folders whose names correspond to the prefixes in their reference names.  
   
 > [!NOTE]  
->  Deployments that do not use the Enterprise version of SQL Server Analysis Services do not have access to the translation features that are provided by that version. In these deployments, fields are identified by their full reference name in the cube, with "˜.' replaced by "˜_' (for example, "System_Id" and "System_Title").  
+>  Deployments that do not use the Enterprise version of SQL Server Analysis Services do not have access to the translation features that are provided by that version. In these deployments, fields are identified by their full reference name in the cube, with "Ëœ.' replaced by "Ëœ_' (for example, "System_Id" and "System_Title").  
   
 |Name in PivotTable report and cube|Reference name|Data type|  
 |----------------------------------------|--------------------|---------------|  

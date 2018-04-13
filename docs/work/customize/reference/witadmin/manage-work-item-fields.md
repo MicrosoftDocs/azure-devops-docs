@@ -2,12 +2,12 @@
 title: Manage work item fields using witadmin
 titleSuffix: TFS  
 description: 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---

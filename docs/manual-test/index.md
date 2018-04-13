@@ -2,14 +2,14 @@
 title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory &amp; Manual Testing

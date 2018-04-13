@@ -1,11 +1,13 @@
 ---
-title: Work Item Link History tables | TFS
+title: Work Item Link History tables
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting 
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

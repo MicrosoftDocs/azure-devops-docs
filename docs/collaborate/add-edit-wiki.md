@@ -1,13 +1,14 @@
 ---
 title: Add and edit wiki pages
 titleSuffix: VSTS & TFS  
-description: Add, edit, reorder, and manage pages for your built-in team project wiki 
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+description: Add, edit, reorder, and manage pages for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-collab
+ms.custom: wiki
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
 monikerRange: 'vsts || >= tfs-2018'
 ms.date: 03/01/2018  
 ---

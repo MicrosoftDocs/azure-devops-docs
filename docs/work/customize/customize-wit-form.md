@@ -1,12 +1,13 @@
 ---
 title: Customize the layout of the work item web form
 titleSuffix: VSTS & TFS
-description: Customize the web version of the work item form when connecting to a team project hosted on VSTS or TFS    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Customize the web version of the work item form in Visual Studio Team Services & Team Foundation Server    
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 

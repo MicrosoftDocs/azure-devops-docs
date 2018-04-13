@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 4/3/2018
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: VSTS feature updates roadmap, release notes, release timeline, and TFS server build numbers
 hide_comments: true

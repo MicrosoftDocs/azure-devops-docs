@@ -1,8 +1,8 @@
 ---
 title: .NET Core build and release task
 description: How to use npm packages build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: douge
 ms.author: amullans

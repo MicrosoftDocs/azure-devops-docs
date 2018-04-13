@@ -2,11 +2,12 @@
 title: Link work items to support traceability 
 titleSuffix: VSTS & TFS 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 
