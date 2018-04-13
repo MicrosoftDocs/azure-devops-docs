@@ -2,7 +2,7 @@
 title: Change the number of paid users on your VSTS account 
 description: Change the number of paid VSTS users on your account as your team grows or contracts (VSO, VSTS)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
 ms.manager: douge

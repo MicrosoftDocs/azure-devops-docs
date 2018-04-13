@@ -2,8 +2,8 @@
 title: Invite external users
 titleSuffix: VSTS
 description: Security and data access considerations when you add an external or outside user
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
