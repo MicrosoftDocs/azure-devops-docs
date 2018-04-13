@@ -2,8 +2,8 @@
 title: New release progress views
 description: A preview of a new user experience for release progress on VSTS
 ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

@@ -1,11 +1,13 @@
 ---
 title: Grunt build and release task
 description: Grunt build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

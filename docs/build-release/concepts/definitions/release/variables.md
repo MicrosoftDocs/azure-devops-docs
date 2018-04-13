@@ -2,8 +2,8 @@
 title: Variables in Release Management
 description: Understand variables in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

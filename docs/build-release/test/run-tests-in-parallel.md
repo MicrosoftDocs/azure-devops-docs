@@ -2,8 +2,8 @@
 title: Run tests in parallel
 description: Continuous testing. Run tests in parallel
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer

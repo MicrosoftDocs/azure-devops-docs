@@ -2,8 +2,8 @@
 title: Approvals and gates overview in VSTS and TFS
 description: Understand deployment approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

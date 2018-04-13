@@ -1,11 +1,13 @@
 ---
 title: npm
 description: How to use npm packages when building code in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 07/05/2017
 monikerRange: '>= tfs-2015'
 ---

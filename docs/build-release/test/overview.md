@@ -2,8 +2,8 @@
 title: Continuous testing with VSTS and Team Foundation Server
 description: Use continuous testing in VSTS and Team Foundation Server to ensures your app still works after every check-in and build, enabling you to find problems earlier. 
 ms.assetid: 574CD62B-38DA-4015-9E15-36673C489D36
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: overview 
 ms.manager: douge
 ms.author: ahomer
