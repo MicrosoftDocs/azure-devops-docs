@@ -1,14 +1,15 @@
 ---
 title: Expedite work with swimlanes
 titleSuffix: VSTS & TFS
-ms.custom: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.global_help.title: Add swimlanes
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
-monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
 ---
 

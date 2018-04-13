@@ -1,13 +1,14 @@
 ---
 title: Create a wiki for your team project
-titleSuffix: VSTS & TFS 2018
-description: Share information with your team  and increase collaboration using a built-in team project wiki provided by Visual Studio Team Services (VSTS)  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS
+description: Share information with your team  and increase collaboration using a built-in team project wiki provided in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/20/2018
 monikerRange: '>= tfs-2018'
 ---

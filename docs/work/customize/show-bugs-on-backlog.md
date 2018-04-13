@@ -1,12 +1,13 @@
 ---
 title: Show bugs on backlogs and boards
 titleSuffix: VSTS & TFS 
-description: For your team, choose how bugs appear on Agile tool product, sprint/scrum  backlogs, and Kanban and task boards 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 03/20/2018
 ---
 

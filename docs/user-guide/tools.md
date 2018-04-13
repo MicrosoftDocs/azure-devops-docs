@@ -1,11 +1,12 @@
 ---
 title: Tools and clients that connect to VSTS and TFS
-description: Understand the tools that support connecting with the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+description: Understand the tools that support connecting to Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 03/02/2017
 monikerRange: '>= tfs-2013'
 ---

@@ -1,13 +1,13 @@
 ---
 title: Customize your work tracking experience
 titleSuffix: VSTS & TFS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Guide to configuring and customizing work tracking features in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 03/20/2018
 ---
 

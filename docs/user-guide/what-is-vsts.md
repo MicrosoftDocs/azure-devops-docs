@@ -1,7 +1,7 @@
 ---
-title: Describes the services provided by Visual Studio Team Services, the cloud version of TFS 
+title: Describes the services provided by Visual Studio Team Services 
 titleSuffix: VSTS 
-description: Understand the fundamental services provided by Visual Studio Team Services (VSTS) 
+description: Understand the fundamental services provided by Visual Studio Team Services  
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
@@ -10,6 +10,7 @@ ms.author: kaelli
 ms.date: 06/22/2017
 ms.topic: overview
 ---
+
 # What is VSTS?
 
 **VSTS**

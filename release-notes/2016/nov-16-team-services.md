@@ -2,8 +2,8 @@
 title: Package Management GA, Release Management GA, import to Team Services, and work item search preview - Nov 16
 description: VSTS release notes for Nov 16 2016
 ms.ContentId: 7f5bfa37-c879-429c-a55c-e1b74036c1a1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---

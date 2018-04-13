@@ -1,11 +1,13 @@
 ---
-title: Rebuild the data warehouse and cube | TFS  
-description: Rebuild the data warehouse and cube when connecting to an on-premises Team Foundation Server (TFS)  
+title: Rebuild the data warehouse and cube
+titleSuffix: TFS
+description: Rebuild the data warehouse and cube when connecting to Team Foundation Server 
 ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 08/11/2016
 ---
 

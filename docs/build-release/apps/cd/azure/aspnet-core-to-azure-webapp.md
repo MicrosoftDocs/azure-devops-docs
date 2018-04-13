@@ -2,20 +2,21 @@
 title: Deploy your app to an Azure web app | VSTS Quickstart
 description: Set up a CI build for your ASP.NET Core application, and then a CD release to Azure web apps
 services: vsts
+ms.prod: devops
+ms.technology: devops-cicd
 documentationcenter: ''
-author: alewis
 manager: douge
 editor: ''
-
 ms.assetid:
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 01/19/2018
-ms.author: alewis
+ms.author: ahomer
+author: alexhomer1
 ms.custom: mvc
-monikerRange: "vsts"
+monikerRange: 'vsts'
 ---
 
 

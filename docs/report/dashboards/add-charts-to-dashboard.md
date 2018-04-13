@@ -2,11 +2,11 @@
 title: Add built-in charts to a team dashboard
 titleSuffix: VSTS & TFS
 description: Add system-generated charts or query-based charts to a team dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 03/20/2018
 ---

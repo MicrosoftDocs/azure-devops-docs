@@ -1,12 +1,13 @@
 ---
-title: Add a team, add team members 
-description: Add another team or a hierarchy of teams to scale your Agile tools-product and sprint backlogs, Kanban and task boards     
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add a team, add team members
+titleSuffix: VSTS & TFS 
+description: Add a team to scale your Agile tools in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
 ms.date: 10/17/2017
 ---
 

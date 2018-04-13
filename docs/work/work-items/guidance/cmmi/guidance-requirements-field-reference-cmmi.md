@@ -2,12 +2,12 @@
 title: Requirements field reference (CMMI)
 titleSuffix: VSTS & TFS
 description: Definition of fields used to track requirements in the CMMI process for Visual Studio Team Services & Team Foundation Server  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/24/2017
 ---
 # Requirements field reference (CMMI)

@@ -2,14 +2,14 @@
 title: Plan manual tests with Microsoft Test Manager
 description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 # Plan manual tests with Microsoft Test Manager

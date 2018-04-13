@@ -1,11 +1,11 @@
 ---
 title: Reportable fields reference| TFS
 description: Default set of fields that appear in the relational warehouse database or the cube 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/17/2017
 ---
 # Reportable fields reference for Visual Studio ALM

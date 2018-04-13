@@ -2,7 +2,7 @@
 title: Free trials for paid VSTS features and extensions | VSTS
 description: How to get free trials for Test Manager, Package Management, and for VSTS extensions offered by other publishers (VSTS, Visual Studio Online, VSO)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: quickstart
 ms.manager: douge

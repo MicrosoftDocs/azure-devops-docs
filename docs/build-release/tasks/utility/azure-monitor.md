@@ -2,8 +2,8 @@
 title: Azure monitor task 
 description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

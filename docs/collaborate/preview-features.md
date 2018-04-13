@@ -2,11 +2,12 @@
 title: Turn preview features on or off 
 titleSuffix: VSTS
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 03/23/2018 
 ---

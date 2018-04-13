@@ -1,8 +1,8 @@
 ---
 title: European Datacenter & REST 1.0 - Oct 28
 description: VSTS release notes for October 28 2014
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 7e1aadad-f21b-4243-9083-9b6c4f515eec
 ms.date: 06/01/2016

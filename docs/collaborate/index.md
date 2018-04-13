@@ -1,11 +1,13 @@
 ---
-title: READMes and Wiki index to content for VSTS & TFS
-description: Index to topics for sharing information via a README or the Wiki in VSTS or TFS    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: READMes and Wiki index to content 
+titleSuffix: VSTS & TFS
+description: Index to topics for sharing information via a README or the Wiki in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: overview
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---

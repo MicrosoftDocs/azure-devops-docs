@@ -2,13 +2,13 @@
 title: View and work with the work tracking datastore velocity chart
 titleSuffix: VSTS & TFS 
 description: Track team velocity across several sprints using the work tracking datastore velocity chart   
-ms.technology: vs-devops-reporting  
-ms.prod: vs-devops-alm
+ms.technology: devops-analytics  
+ms.prod: devops
 ms.assetid: 
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/14/2017
 ---
 

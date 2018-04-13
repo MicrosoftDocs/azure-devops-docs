@@ -1,11 +1,13 @@
 ---
-title: All WITD XML elements reference | VSTS & TFS
-description: Customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: All WITD XML elements reference
+titleSuffix: VSTS & TFS
+description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 

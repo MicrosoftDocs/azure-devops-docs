@@ -1,17 +1,18 @@
 ---
-title: TF30030-Team Explorer could not connect to Team Foundation Server | TFS
+title: TF30030-Team Explorer could not connect to Team Foundation Server  titleSuffix: VSTS & TFS
 description: Occurs when Team Explorer is not synchronized with or cannot establish a connection to the server that hosts SharePoint Products.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c93d61bf-718f-4dc0-b77a-6c596c9fff1d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF30030: Team Explorer could not connect to Team Foundation Server.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when Team Explorer is not synchronized with or cannot establish a connection to the server that hosts SharePoint Products. This error may occur under the following conditions, listed in the most likely order of occurrence:  
   

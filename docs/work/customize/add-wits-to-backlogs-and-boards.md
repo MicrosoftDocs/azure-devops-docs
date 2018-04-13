@@ -1,16 +1,17 @@
 ---
 title: Add work item types to backlogs and boards   
 titleSuffix: VSTS & TFS
-description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards when working with team projects that connect to Visual Studio Team Services (VSTS) Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 
-#Add a work item type to a backlog and board
+# Add a work item type to a backlog and board
 
 [!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 

@@ -1,11 +1,13 @@
 ---
-title: Remove a component from participating in data synchronization | TFS
-description: Remove components that is configured to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Project Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Remove a component from participating in data synchronization
+titleSuffix: TFS 
+description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6e0dbfd4-e830-4b5a-a42f-536e744665fa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Remove a component from participating in data synchronization

@@ -2,12 +2,12 @@
 title: Plan an iteration (CMMI)
 titleSuffix: VSTS & TFS
 description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 

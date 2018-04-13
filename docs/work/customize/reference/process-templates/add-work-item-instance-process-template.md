@@ -1,26 +1,34 @@
 ---
-title: Add a work item instance to a process template | VSTS & TFS
-description: Define set of task or other items that act as reminders for each project manager to perform after the team project is created - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add a work item instance to a process template
+titleSuffix: TFS
+description: Define work items that act as reminders for each project manager to perform after a team project is created in Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 7cc17cb2-d854-469b-b45f-060e94baca71
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018' 
 ms.date: 04/13/2017
 ---
 
 
 # Add a work item instance to a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-tfs-2013-2017.md)]
+
+::: moniker range=">= tfs-2018"
+> [!NOTE]  
+> This feature has been deprecated for TFS 2018 and later
+>  versions. Defining work item instances is optional. The default process templates don't 
+>  contain any work item instances. For TFS 2018 and later versions, any work item 
+>  instances you define will be ignored. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
 
 By adding work items to your process template, you define a set of tasks or other items that act as reminders for each project manager to perform after the team project is created. For example, you can create one task each to assign permissions to team members, define product areas and milestones, set up build definitions, and determine the branch strategy for version control.  
-  
-> [!NOTE]  
-> **Feature availability**: This feature has been deprecated for VSTS and TFS 2018 and later
->  versions. Defining work item instances is optional. The default process templates don't 
->  contain any work item instances. For VSTS and TFS 2018 and later versions, any work item 
->  instances you define will be ignored.  
   
 <a name="defining"></a> 
 ##Define a work item instance   
@@ -79,3 +87,6 @@ The following example specifies a work item task that reminds project administra
 ## Related articles 
 -  [Customize a process](customize-process.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+
+
+::: moniker-end

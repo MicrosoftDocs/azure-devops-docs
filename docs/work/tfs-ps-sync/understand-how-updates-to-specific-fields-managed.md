@@ -1,13 +1,16 @@
 ---
-title: Understand how updates to specific fields are managed | TFS
-description: Understand how updates to specific fields are managed between Team Foundation Server (TFS) and Project Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Understand how updates to specific fields are managed 
+titleSuffix: TFS 
+description: Understand how updates to specific fields are managed betweenTeam Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 67f9887f-f023-4e3e-8873-fb3f1854438f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Understand how updates to specific fields are managed
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 

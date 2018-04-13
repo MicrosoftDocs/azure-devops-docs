@@ -2,8 +2,8 @@
 title: Define the hyperlink for a work item
 titleSuffix: VSTS & TFS
 description: Construct a URL for a work item for Visual Studio Team Services & Team Foundation Server 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile    
+ms.prod: devops
+ms.technology: vs-azure-devops-agile    
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli

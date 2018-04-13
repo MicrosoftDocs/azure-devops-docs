@@ -1,12 +1,12 @@
 ---
 title: Keyboard shortcuts for work item queries
 titleSuffix: VSTS & TFS
-description: Use keyboard shortcuts to interact with query results and query lists  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Use keyboard shortcuts to interact with query results and query lists in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 01/18/2017
 ---

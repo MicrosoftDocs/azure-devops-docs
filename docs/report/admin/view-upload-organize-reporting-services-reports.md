@@ -1,11 +1,13 @@
 ---
-title: View, upload, and organize Reporting Services reports | TFS
-description: View the reports in SQL Server Reporting Services to analyze the progress and quality of the project. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: View, upload, and organize Reporting Services reports
+titleSuffix: TFS
+description: View the reports in SQL Server Reporting Services to analyze the progress and quality of the project  
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
 ---
 

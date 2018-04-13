@@ -1,16 +1,16 @@
 ---
 title: Security & Identity content index
 titleSuffix: VSTS & TFS
-description: Index to topics for working with authentication, permissions, groups, and access levels in and  Team Foundation Server
+description: Index to permissions, groups, security, roles, and access level topics in Visual Studio Team Services & Team Foundation Server   
 ms.assetid:  
 ms.prod: devops
-ms.technology: devops-settings
-ms.topic: conceptual
+ms.technology: devops-security
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2017
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
+ms.date: 10/24/2017
 ---
 
 

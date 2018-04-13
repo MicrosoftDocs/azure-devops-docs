@@ -2,8 +2,8 @@
 title: Work item form and Work Items page keyboard shortcuts 
 titleSuffix: VSTS & TFS
 description: Use keyboard shortcuts to interact with work item forms and the Work Items page 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.topic: reference
 ms.manager: douge

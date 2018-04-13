@@ -1,11 +1,14 @@
 ---
-title: Individual versus shared queries | VSTS & TFS
+title: Individual versus shared queries
+titleSuffix: VSTS & TFS
 description: Work with queries to support your and team usage   
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid:  
+robots: NOINDEX, NOFOLLOW
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/11/2017  
 ---
 

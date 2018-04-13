@@ -1,13 +1,16 @@
 ---
-title: Define the work item types available for synchronization | TFS
-description: Configure the two server products before you synchronize data between Visual Studio Team Foundation Server (TFS) and  Project Server
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the work item types available for synchronization
+titleSuffix: TFS 
+description: Configure the two server products before you synchronize data between Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: dd8f80c2-3faa-45a2-9941-1382a8b5c910
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
 # Define the work item types available for synchronization
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]

@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Mar 22
 description: VSTS release notes for March 22 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: cb4abbef-5cca-433a-b70d-5c2c759a8dec
 ms.date: 06/01/2016

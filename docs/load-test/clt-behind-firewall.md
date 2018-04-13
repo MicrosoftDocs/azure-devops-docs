@@ -2,14 +2,14 @@
 title: Test private and intranet apps
 description: Test private and intranet apps using cloud-based load testing
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.prod: devops
+ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: "vsts"
+monikerRange: 'vsts'
 ---
 
 # Test private and intranet apps using cloud-based load testing

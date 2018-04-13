@@ -1,8 +1,8 @@
 ---
 title: CurrentIteration query macro, Kanban reordering and DoD – Mar 10
 description: VSTS release notes for March 10 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: f6257ea6-3ccc-42b2-83e2-5ee83a400558
 ms.date: 06/01/2016

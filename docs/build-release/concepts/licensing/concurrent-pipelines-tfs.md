@@ -1,11 +1,13 @@
 ---
 title: Concurrent pipelines in Team Foundation Server
 description: Release Management concurrent pipelines pricing and availability in Microsoft Team Foundation Server (TFS)
+ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 10/20/2016
 monikerRange: '>= tfs-2015'
 ---

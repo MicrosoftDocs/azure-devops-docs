@@ -1,11 +1,13 @@
 ---
 ms.assetid: 7F0B861F-D88B-45A8-8510-19041543C49E
 title: Build your SQL server database
+ms.topic: conceptual
 description: Define a continuous integration (CI) build for your SQL server database in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---

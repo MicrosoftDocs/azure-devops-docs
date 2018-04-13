@@ -2,12 +2,12 @@
 title: Import, export, and manage work item types
 titleSuffix: TFS  
 description: Manage work item types for a team project in Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---

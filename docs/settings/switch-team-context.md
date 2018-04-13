@@ -1,11 +1,14 @@
 ---
-title: Switch team project or team context | VSTS & TFS
-description: Change the focus of your view to another team project or team Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Switch team project or team context
+titleSuffix: VSTS & TFS
+description: Change the focus of your view to another team project or team in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-settings
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 09/29/2017  
 ---
 

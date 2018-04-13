@@ -1,19 +1,21 @@
 ---
 title: Manage new form roll out
-titleSuffix: VSTS & TFS    
-description: Enable the new work item form for customizing the work tracking experience on the web portal when connecting  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: TFS    
+description: Enable the new work item form for customizing the work tracking experience in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2017 <= tfs-2018'
 ms.date: 03/16/2017
 ---
 
 # Manage roll out of the new web form
 
 
-**VSTS | TFS 2018 | TFS 2017**  
+**TFS 2018 | TFS 2017**  
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
