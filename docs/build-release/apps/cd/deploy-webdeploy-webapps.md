@@ -2,8 +2,8 @@
 title: Deploy to Azure web app
 description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Release Management
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

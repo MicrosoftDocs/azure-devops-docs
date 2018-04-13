@@ -1,13 +1,13 @@
 ---
 title: Build your GCC C/C++ app
 description: Build your GCC C/C++ app with Team Foundation Server and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.manager: douge
 ms.author: dastahel
 ms.date: 03/13/2018
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

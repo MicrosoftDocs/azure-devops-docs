@@ -2,8 +2,8 @@
 title: Deploy your Web Deploy package to IIS servers using WinRM
 description: Deploy a ASP.NET or Node Web Deploy package to IIS servers from VSTS or TFS using WinRM
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

@@ -8,8 +8,8 @@ ms.manager: douge
 editor: ''
 ms.assetid:
 ms.workload: web
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: tutorial

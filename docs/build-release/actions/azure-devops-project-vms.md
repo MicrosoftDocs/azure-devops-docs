@@ -3,8 +3,8 @@ title: Deploy your ASP.NET App to Azure Virtual Machines with the Azure DevOps P
 description: The DevOps Project makes it easy to get started on Azure. The Azure DevOps project makes it easy to deploy your ASP.NET App to Azure Virtual Machines in a few quick steps.
 ms.author: mlearned
 ms.manager: douge
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: tutorial
 ms.date: 03/17/2018
 ms.author: mlearned

@@ -2,8 +2,8 @@
 title: FAQs for continuous testing   
 description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
 ms.author: ahomer

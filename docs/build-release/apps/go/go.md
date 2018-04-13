@@ -1,13 +1,13 @@
 ---
 title: Build your Go app
 description: Build your Go app with Team Foundation Server and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
 ms.manager: douge
 ms.author: dastahel
 ms.date: 03/21/2018
-ms.topic: get-started-article
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

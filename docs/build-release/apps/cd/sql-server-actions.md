@@ -2,8 +2,8 @@
 title: Perform SQL server actions in VSTS or TFS
 description: Use the SQL DACPAC task to perform SQL server actions in VSTS or TFS
 ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

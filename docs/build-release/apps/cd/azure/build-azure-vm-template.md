@@ -2,8 +2,8 @@
 title: Build an Azure Virtual Machine using Azure RM templates
 description: Build an Azure Virtual Machine using ARM templates in Release Management in VSTS and TFS
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

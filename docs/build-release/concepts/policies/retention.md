@@ -1,13 +1,15 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 title: Build and release retention policies
+ms.topic: conceptual
 description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
-monikerRange: ">= tfs-2015"
+monikerRange: '>= tfs-2015'
 ---
 
 

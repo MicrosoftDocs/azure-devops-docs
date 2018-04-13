@@ -2,8 +2,8 @@
 title: Speed up testing with Test Impact Analysis (TIA)
 description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA)
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer

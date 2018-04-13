@@ -2,8 +2,8 @@
 title: CD Kubernetes to Azure Container Service
 description: Set up CD using Kubernetes to Azure Container Service from Release Management in VSTS or TFS
 ms.assetid: A6E63753-7D33-4F57-8971-D93059624756
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer

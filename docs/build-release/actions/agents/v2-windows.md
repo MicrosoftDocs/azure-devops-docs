@@ -1,11 +1,13 @@
 ---
 title: Deploy an agent on Windows
 description: Use Windows Build and Release agents to build and deploy your Windows and Azure code.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 3/14/2018
 monikerRange: '>= tfs-2017'
 ---

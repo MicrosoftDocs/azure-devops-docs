@@ -2,8 +2,8 @@
 title: Deploy your database to Azure SQL Database using DACPACs
 description: Deploy a SQL DACPAC to an Azure SQL Database from Release Management in VSTS or TFS
 ms.assetid: BB1FC018-77A7-42E7-A270-4BC7CB3AD1C4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
