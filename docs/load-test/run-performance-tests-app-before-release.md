@@ -44,7 +44,7 @@ actions in your app at the same time.
    ![Create Web Performance and Load Test project](_img/run-performance-tests-app-before-release/create-web-perf-load-test-project.png)
 
    If you don't see the template for the web performance and load test project type,
-   ensure you have installed the required packages during Visual Studio setup.
+   ensure you have installed the required packages during Visual Studio setup. You will find the Installer in *tools* menu bar in the "Get tools and features".
 
    ![Installing packages required for web performance and load testing](_img/run-performance-tests-app-before-release/install-tools.png)
 
