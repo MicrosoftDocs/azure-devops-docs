@@ -127,6 +127,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](tool/_img/go.png) [Go Tool Installer](tool/go-install.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | VSTS |
 | ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
+| ![icon](tool/_img/python.png) [Use Python Version](tool/use-python-version.md). Selects a version of Python to run on an agent.  Optionally adds it to PATH. | VSTS |
 | ![icon](tool/_img/visual-studio-installer.png) [Visual Studio Test Platform Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VsTestPlatformToolInstaller). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
