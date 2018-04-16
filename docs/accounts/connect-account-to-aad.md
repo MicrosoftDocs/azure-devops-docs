@@ -108,7 +108,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 1. Ensure the following about the user performing the connection. This user:
 
-    * Exists in the target Azure AD tenant as a guest or member.
+    * Exists in the target Azure AD tenant as a member. If the user is currently a guest, use [PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureaduser?view=azureadps-2.0#examples) to promote the user to member. 
     * Is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
     * Is not using the Microsoft account identity that matches the Azure AD identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure AD identity you will use after connecting is also JamalHarnett@fabrikam.com. You must use a single identity that spans both applications (MSA that's in the target Azure AD tenant), rather than two separate identities using the same email.
 
