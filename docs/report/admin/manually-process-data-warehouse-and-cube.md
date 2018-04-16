@@ -6,7 +6,8 @@ ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2
 ms.prod: devops-server
 ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/14/2018
 ---
 
@@ -38,7 +39,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 2. Log on to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
-	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx  ``` 
+	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx``` 
 
 	If another name was used other than **tfs** for the virtual directory, then type the *IIS Virtual Directory* that was specified when Team Foundation Server was installed.  
 

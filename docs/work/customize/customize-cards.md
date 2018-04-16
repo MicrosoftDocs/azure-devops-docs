@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -96,7 +97,7 @@ What rules should you apply to highlight work items? Here are a few examples and
 > | Work items | Criteria |
 > |------------|------------|
 > | High priority items | ```Priority = 1``` |
-> | High effort items | ```Effort 20 ``` or ```Story Points 20 ``` |
+> | High effort items | ```Effort 20``` or ```Story Points 20``` |
 > | Stale items unchanged in the last 5 days | ```Changed Date @Today-5``` |
 > |Title contains a key word | ```Title Contains Yes``` |
 > |Severity 1 bugs | ```Severity = 1 - Critical   AND   Work Item Type = Bug``` |

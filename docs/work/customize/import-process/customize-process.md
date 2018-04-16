@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -149,7 +150,7 @@ In addition, your process must pass the following validation checks:
   * Templates with the same name and version GUID will overwrite existing processes. 
   * Templates with the same name but a different version GUID will generate an error.  
   * Process names cannot contain the following special characters:  
-     ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
+     ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >```  
     See [Naming restrictions](../../../collaborate/naming-restrictions.md) for additional constraints.
 * Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
 * Process total size should be 2 GB or less, or project creation will fail.
