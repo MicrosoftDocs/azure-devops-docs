@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -226,8 +227,8 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent team project and are independent of the server-wide field name just specified.  
   
-    > [!NOTE]  
-    >  For more information about how to change field labels on work item forms, see [ Control XML element reference](../control-xml-element-reference.md).  
+    > [!NOTE]
+    >  For more information about how to change field labels on work item forms, see [Control XML element reference](../control-xml-element-reference.md).  
   
 12. Close the new Task and choose **No** when you are prompted to save the work item.  
   

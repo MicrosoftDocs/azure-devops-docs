@@ -193,7 +193,7 @@ To configure services in Office SharePoint Server 2007:
   1.  On the server that is running Microsoft Office SharePoint Server
       2007, open SharePoint Central Administration.
 
-  2.  Choose the **Operations ** tab, and under
+  2.  Choose the **Operations** tab, and under
       **Topology and Services**, choose 
       **Services on server**.
 

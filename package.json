@@ -1,0 +1,25 @@
+{
+  "name": "vsts-docs",
+  "version": "0.0.1",
+  "description": "Content repo for docs.microsoft.com/vsts and docs.microsoft.com/vsts/release-notes",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "markdownlint \"*.md\" \"release-notes/**/*.md\" \"docs/**/*.md\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/vsts-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Microsoft/vsts-docs/issues"
+  },
+  "homepage": "https://github.com/Microsoft/vsts-docs#readme",
+  "dependencies": {
+    "markdownlint-cli": "^0.8.1"
+  }
+}

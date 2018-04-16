@@ -32,7 +32,7 @@ Once you've defined your product backlog, you can use the following controls to 
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off ](filter-backlogs.md)  |  
+| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off](filter-backlogs.md)  |  
 
 > [!IMPORTANT]  
 > If you set the **In progress** control to **Hide**, then items that are no longer in the New, Approved, or Proposed states won't appear in the backlog. 

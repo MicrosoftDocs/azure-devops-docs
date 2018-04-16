@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -23,10 +24,10 @@ The **TFSFieldMapping** command-line tool works for both on-premises TFS and clo
  
 |Version | Change directory |
 |--------|-----------|
-|TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 ` |
-|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 ` |
-|TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0 ` |
-|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0 ` |
+|TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0` |
+|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0` |
+|TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0` |
+|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0` |
   
 
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  

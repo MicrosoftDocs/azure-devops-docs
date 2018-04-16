@@ -534,7 +534,7 @@ maintenance operation is complete.
 
 However, there might be cases where you no longer want to use Code Search, or want to perform a new and clean
 install. This requires multiple steps, depending on whether Code Search is configured
-[on the same server as TFS ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
+[on the same server as TFS](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
 
 <a name="unconfig-same-server"></a>
 ### Unconfigure Search on the machine configured as your TFS server

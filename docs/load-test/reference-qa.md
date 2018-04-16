@@ -109,8 +109,10 @@ running a shorter duration load test run or use
 **A**: If your test run uses 25 or more virtual users per core, 
 then VUMs = (max virtual user load for your test run) * (test run duration in minutes).
 
+<!-- markdownlint-disable MD037 -->
 If your test run uses fewer than 25 users per core, then VUMs = 
 (number of cores) \* (25 virtual users per core) \* (test run duration in minutes).
+<!-- markdownlint-enable MD037 -->
 
 The minimum values used to calculate VUMs are 25 virtual users and 1 minute. 
 If your test run values are smaller than the minimum values, 

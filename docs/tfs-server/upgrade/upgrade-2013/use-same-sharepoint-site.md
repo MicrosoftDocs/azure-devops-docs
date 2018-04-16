@@ -67,7 +67,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
         For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
-4.  On the **Review** page, review the settings and choose ** Next**.
+4.  On the **Review** page, review the settings and choose **Next**.
 
     The wizard validates your configuration.
 

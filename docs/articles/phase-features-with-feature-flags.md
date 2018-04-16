@@ -73,7 +73,7 @@ As outlined in [How to implement feature flags and A|B testing](https://blogs.ms
 
 ## Common Scenarios
 
-We have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension we're hosting on the [marketplace](https://marketplace.visualstudio.com), using a ring deployment model, and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. We're looking for an engineering process in which we can continuously deploy, never have to roll-back, and with which we can fine tune the user experience.
+We have a [CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension we're hosting on the [marketplace](https://marketplace.visualstudio.com), using a ring deployment model, and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. We're looking for an engineering process in which we can continuously deploy, never have to roll-back, and with which we can fine tune the user experience.
 
 You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features in **production**! 
 

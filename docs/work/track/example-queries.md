@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -68,7 +69,7 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 > [!div class="mx-tdBreakAll"]  
 > |Links and attachments |Tags |Build and Test fields  |  
 > |-------------|----------|---------|  
-> |-  [All child items of a single epic ](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags ](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
+> |-  [All child items of a single epic](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
 
 
 ## Related articles

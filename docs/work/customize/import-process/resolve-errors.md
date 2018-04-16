@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -53,7 +54,7 @@ The process that you're importing doesn't include the named field in the process
 4. [Import updated process](import-process.md)
 
 The system displays an information message about the field to be deleted.  
-  ``` TF402555: Field MyCompany.CustomFields.Foo will be deleted ``` 
+  ```TF402555: Field MyCompany.CustomFields.Foo will be deleted``` 
 
 <a id="TF402591"></a>
 ### TF402591: Field  with reference name *[refName]* cannot be renamed to '*[name1]*' from '*[name2]*' in existing processes *[processName]*.
@@ -75,7 +76,7 @@ The process that you're updating doesn't include the named WIT that exists in th
 4. [Import updated process](import-process.md)  
 
 The system displays an information message about the deletion.   
-  ``` TF402598: Work item type My.LSI will be deleted ``` 
+  ```TF402598: Work item type My.LSI will be deleted``` 
 
 <a id="TF402601"></a>
 ### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
@@ -96,7 +97,7 @@ As part of updating the existing process, the system will rename the WIT in the 
 4. [Import updated process](import-process.md)  
 
 The system displays an information message about the WIT to be renamed.  
-  ``` TF402601: Work item type My.LSI  will be renamed to 'Live Site Incident' from 'LSI' ``` 
+  ```TF402601: Work item type My.LSI  will be renamed to 'Live Site Incident' from 'LSI'``` 
 
 
 <a id="file-errors"></a>
@@ -594,7 +595,7 @@ Misspelled attribute has been corrected.
 ### TF402516: The Classification plug-in contains more than two root level Nodes, which is not supported.
 Review the ```Node``` elements you've specified and remove extra root level nodes.
 #### Error example
-Classification.xml file contains a second ```Node StructureType="ProjectLifecycle" ``` statement under the ```Nodes``` container element.
+Classification.xml file contains a second ```Node StructureType="ProjectLifecycle"``` statement under the ```Nodes``` container element.
 ```
       <Nodes>
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
@@ -999,7 +1000,7 @@ Add the Epic ```PortfioloBacklog``` to the ProcessConfiguration.xml file.
 
 <a id="TF402590"></a>
 ### TF402590: Several portfolio backlogs *[Backlog 1, Backlog 2]* don't define their parent.  
-Only one portfolio backlog, the top backlog, may be unparented. All other backlogs must include a ``` parent="Microsoft.FooCategory" ``` attribute and value.
+Only one portfolio backlog, the top backlog, may be unparented. All other backlogs must include a ```parent="Microsoft.FooCategory"``` attribute and value.
 
 #### Resolution example
 ```
@@ -1599,7 +1600,7 @@ Field names must be unique within the work item type.
   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
   <FIELD name="Foo" refname="MyCompany.CustomFields.Bar" type="String" reportable="dimension" />
 ```
-Notice there are two fields with the name ``` <FIELD name="Foo" ```
+Notice there are two fields with the name ```<FIELD name="Foo"```
 
 #### Resolution example
 ```
@@ -1622,13 +1623,13 @@ Process B, Bug.xml
 ```
   <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />  
 ```
-Because both fields share the same reference name, ```refname="MyCompany.CustomFields.Foo" ```, 
-they must also specify the same friendly name ``` <FIELD name="Foo"  ``` across all processes 
+Because both fields share the same reference name, ```refname="MyCompany.CustomFields.Foo"```, 
+they must also specify the same friendly name ```<FIELD name="Foo"``` across all processes 
 that have been imported or will be imported to VSTS. 
 
 <a id="TF402580"></a>
 ### TF402580: You can only use the name *[witName]* for a single work item type.
-WIT friendly names ```WORKITEMTYPE name="Name" ``` must be unique within the process.
+WIT friendly names ```WORKITEMTYPE name="Name"``` must be unique within the process.
 
 #### Error example
 My Work Item A.xml
@@ -1655,7 +1656,7 @@ My Work Item B.xml
 
 <a id="TF402581"></a>
 ### TF402581: You can only use the refname *[refName]* for a single work item type.
-WIT reference names ```refname="value" ``` must be unique within the process.
+WIT reference names ```refname="value"``` must be unique within the process.
 
 #### Error example
 Bug.xml

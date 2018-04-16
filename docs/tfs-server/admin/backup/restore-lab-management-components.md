@@ -44,7 +44,7 @@ To perform this procedure, you must be a member of the following groups:
 
 -   The **SQL Server System Administrator** security group or your **SQL Server Perform Back Up and Create Maintenance Plan** permissions must be set to **Allow** on each instance of SQL Server that hosts the databases that you want to back up.
 
--   The ** Administrator** user role in SCVMM.
+-   The **Administrator** user role in SCVMM.
 
 <a name="restore-lib-svr-scvmm"></a>
 ## Restore the Library Server for SCVMM

@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 05/10/2017
@@ -397,9 +398,9 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 -   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  &&`
 
-    `"Previous State Before Edit/New" == "FromState" `
+    `"Previous State Before Edit/New" == "FromState"`
 
     `&& "MyField Value" != NULL`
 
@@ -407,7 +408,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
     `Reason field == "MyReason" &&`
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  &&`
 
     `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
 

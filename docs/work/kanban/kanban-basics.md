@@ -9,7 +9,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/20/2018
 --- 
 
@@ -55,7 +56,7 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
 ::: moniker range="vsts"
-**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
+**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/``` 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

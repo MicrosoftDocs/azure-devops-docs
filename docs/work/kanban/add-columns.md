@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -355,7 +356,7 @@ In this example, bugs have been added to show on the Kanban board. You need to m
 
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 
-* [Work in Progress limits ](wip-limits.md)  
+* [Work in Progress limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
