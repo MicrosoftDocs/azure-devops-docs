@@ -24,7 +24,7 @@ ms.date: 03/20/2018
 > Reordering cards requires TFS 2015 or later version.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
