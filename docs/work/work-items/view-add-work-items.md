@@ -37,7 +37,7 @@ You can start viewing and adding work items once you connect to a team project.
 
 <a id="browser" /> 
 
-Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** link, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
+Open a browser window, click the **Work** hub, and then the **Work Items** page. 
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
