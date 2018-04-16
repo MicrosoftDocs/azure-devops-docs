@@ -38,6 +38,8 @@ After you commit and push a code change, it is automatically built and then depl
 
 [How do I deploy an Azure Function project?](https://blogs.msdn.microsoft.com/appserviceteam/2017/06/01/deploying-visual-studio-2017-function-projects-with-vsts/)
 
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-and-deploy-to-an-Azure-Web-App]
+
 ## Prerequisites
 
 [!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
