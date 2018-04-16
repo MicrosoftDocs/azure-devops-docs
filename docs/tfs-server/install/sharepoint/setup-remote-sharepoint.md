@@ -94,7 +94,7 @@ From Windows **Start**, run **Team Foundation Server Administration Console**.
 
 	3. For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
-		On the **Review** page, review the settings and choose ** Next** to let the wizard validate your configuration.
+		On the **Review** page, review the settings and choose **Next** to let the wizard validate your configuration.
 
 6.  Choose **Configure**.
 

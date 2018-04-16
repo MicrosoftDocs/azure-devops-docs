@@ -36,7 +36,7 @@ To perform this procedure, you must be a member of the **Administrators** securi
 3.  Choose **Install SQL Server Express** to host the configuration database on an instance of SQL Server Express.
 
 	> [!TIP]
-	> You don't have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance ** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
+	> You don't have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
 
 4.  Review your configurations settings and then choose **Next**.
 

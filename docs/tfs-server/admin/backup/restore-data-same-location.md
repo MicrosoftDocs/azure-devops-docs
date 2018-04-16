@@ -166,7 +166,7 @@ You can rebuild the data warehouse instead of restoring the **TFS\_Warehouse** a
 
     A browser window opens. The service returns **True** when it successfully starts to process the cube and **False** if it is not successful or if the cube is currently being processed.
 
-7.  To determine when the cube has been processed, return to the **WarehouseControlWebService** page, choose ** GetProcessingStatus**, and then choose **Invoke**.
+7.  To determine when the cube has been processed, return to the **WarehouseControlWebService** page, choose **GetProcessingStatus**, and then choose **Invoke**.
 
     Processing has completed when the **GetProcessingStatus** service returns a value of **Idle** for all jobs.
 
