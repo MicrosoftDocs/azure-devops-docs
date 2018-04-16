@@ -2,17 +2,18 @@
 title: Aggregate work tracking data using the OData Analytics Service
 titleSuffix: VSTS
 description: How to aggregate and filter data with the Analytics Service and the OData aggregation extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: tutorial
+ms.date: 3/16/2018
 ---
 
 # Aggregate work tracking data using the Analytics service   
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
@@ -117,6 +118,8 @@ Where:
 
 Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
+<!---  Commenting these examples out as they are currently not supported. 
+
 **Return the count of work items:**
 
 > [!div class="tabbedCodeSnippets"]
@@ -132,6 +135,9 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
   $apply=aggregate($count as Count)
 ```
+
+ 
+--> 
 
 **Return the sum of all remaining work**
 
@@ -231,6 +237,7 @@ This returns a result similar to the following:
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
+<!---
 For example, suppose you wanted to know how many areas are in each project. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
 
 > [!div class="tabbedCodeSnippets"]
@@ -238,6 +245,8 @@ For example, suppose you wanted to know how many areas are in each project. In O
 https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
+
+--> 
 
 ## Filter aggregated results
 
@@ -271,7 +280,24 @@ This will return a result that looks like the following:
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
-"@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
+      "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
+    }
+  ]
+}
+```
+
+## Generate calculated properties for use within a single call
+
+When you need to use a mathematical expression to calculate properties for use in a result set, such as the sum of completed work which is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed, you can accomplish this as follows:
+
+`/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)/compute(SumOfCompletedWork div (SumOfCompletedWork add SumOfRemainingWork) as DonePercentage)`
+
+> [!div class="tabbedCodeSnippets"]
+```JSON
+{
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+    {
+      "@odata.id":null,"DonePercentage":0.96760221857946638,"SumOfRemainingWork":50715.95,"SumOfCompletedWork":1514698.3400000033
     }
   ]
 }
@@ -331,7 +357,7 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 > [Query trend data](querying-for-trend-data.md)
 
 
-## Related notes 
+## Related articles 
 
 - [Query your work tracking data using the OData Analytics service](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

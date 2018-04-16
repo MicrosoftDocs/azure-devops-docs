@@ -1,17 +1,22 @@
 ---
-title: Create trend charts | VSTS
+title: Create trend charts 
+titleSuffix: VSTS
 description: Create trend, burnup, and burndown charts in Power BI from data collected for VSTS 
 ms.assetid: 94080282-C697-4AF2-BD2E-414674701234  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
 ms.author: kaelli
+ms.topic: archived
+robots: NOINDEX, NOFOLLOW
 ms.date: 04/06/2016
 ---
 
 #Create trend charts
 
-<b>VSTS</b>
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+
 [!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 Trend charts show progress or activity over time. Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity. 
@@ -69,15 +74,16 @@ This changes the trend to the following:
 
 This chart indicates that some work wasn't scoped until a day or two after the sprint started and that some work was added to the sprint a day or two before the sprint was started (indicated by the line starting at 150 on the first day instead of zero). Note also that by constraining it with the iteration and the date it ends nicely on the last day showing how many story points were not delivered.
 
-##Related notes
+##Related articles
 
 The sprint burndown chart based on Story Points provides you with a daily update of your sprint progress when you don't break your stories down into tasks. You can update the chart further by adding Work Item Type as an additional filter to differentiate the story point count for bugs versus user stories.  
 
 
 ###Get started using Power BI and the VSTS connector 
+
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
-- [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)
-- [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)
+- [Add a page to a Power BI report](https://docs.microsoft.com/en-us/power-bi/power-bi-report-add-page)    
+- [Save a report in Power BI](https://docs.microsoft.com/en-us/power-bi/service-report-save)  
 
 
 
