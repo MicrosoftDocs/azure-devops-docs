@@ -29,7 +29,7 @@ As you walk through this quickstart, we'll ask you to choose:
 
 As you choose from these options in the sections below, this topic will adapt to your choices.
 
->[!VIDEO] (https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app)
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app]
 
 ## Prerequisites
 
