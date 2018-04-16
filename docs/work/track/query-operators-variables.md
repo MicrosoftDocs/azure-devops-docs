@@ -138,9 +138,9 @@ You can use query operators in the following table to specify how each value in 
 <table width="100%">
 <thead valign="bottom">
 <tr>
-<th width="16%">Query operator</th>
+<th width="22%">Query operator</th>
 <th width="44%">Returns work items if the value in the work item matches the criteria listed</th>
-<th width="40%">Applicable data types</th>
+<th width="36%">Applicable data types</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -220,7 +220,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is currently only available from VSTS. Support for TFS 2018 is planned for a future update.</blockquote>
+<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is available from VSTS. and TFS 2018.2 and later versions.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
@@ -262,8 +262,8 @@ You can use the macros described in the following table to filter your queries b
 <table>
 <thead valign="bottom">
 <tr>
-<th width="18%"><p>Macro</p></th>
-<th width="82%"><p>Description</p></th>
+<th width="25%"><p>Macro</p></th>
+<th width="75%"><p>Description</p></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -319,7 +319,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity <sup>4</sup></b></td>
+	<td><b>@RecentProjectActivity <sup>6</sup></b></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
@@ -336,10 +336,11 @@ You can use the macros described in the following table to filter your queries b
 0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
 0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).  
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
+0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects). 
+0. The **@RecentProjectActivity** macros are supported for VSTS.
  
-
+ 
 
 <a id="full-text" /> 
 ## Full-text and partial word searches
