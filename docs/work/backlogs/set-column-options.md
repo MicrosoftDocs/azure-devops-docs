@@ -30,12 +30,17 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 In the Column options dialog, click **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, click the ![delete icon](../_img/icons/delete_icon.png).
 
+::: moniker-end
+::: moniker range="tfs-2018"
+> [!NOTE]    
+> The following dialog is available from TFS 2018.2 and later versions. 
+::: moniker-end
+::: moniker range=">= tfs-2018"
 <img src="_img/set-column-options-s125.png" alt="Column options dialog, VSTS" style="border: 1px solid #C3C3C3;" /> 
-
 
 ::: moniker-end
 
