@@ -53,17 +53,9 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 While the steps to connect your VSTS account to Azure AD are consistent, it's important to understand where you're starting from before connecting your VSTS account to your target Azure AD tenant.
 
-One of the following scenarios likely applies to your situation. For example, "yourname"@fabrikam.com is replaced with jamalhartnett@fabrikam.com:
+We currently offer a path to connect to a target Azure AD tenant where the email addresses for the users are the same before and after the connection.  For example, you currently sign in with an MSA, jamalhartnett@fabrikam.com, and after connecting you will sign in with an AAD, jamalhartnett@fabrikam.com.
 
-
-|You use an MSA for VSTS  |and you want to connect to the target Azure AD |So do this  |
-|---------|---------|---------|
-|jamalhartnett@fabrikam.com    |  using the SAME ID jamalhartnett@fabrikam.com       |   Follow this document      |
-|jamalhartnett@fabrikam.com    |  using a DIFFERENT ID jamalh@fabrikam.com       |    [Create a new support ticket](https://www.visualstudio.com/team-services/support)      |
-|jamal@outlook.com   |   replacing with different tenant ID jamal@fabrikam.com      |  [Create a new support ticket](https://www.visualstudio.com/team-services/support)        |  
-
-> When you're creating your new support ticket, use the following:
->Problem type: Configuring Team Services, Category: Configuring with Azure Active Directory
+At this time, we are not offering solutions for scenarios where email addresses need to change.  We have work on the backlog to provide this functionality in the first half of 2019 and will update the guidance here accordingly when we have a solution that we can offer.
 
 ## Overview of the connection process
 
@@ -98,7 +90,7 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
     * If no paid Azure AD license exists in the tenant, every invited user gets the rights that the Azure AD Free edition offers.
 
-    * If users exist, but their email addresses are different from their Microsoft accounts, work with CSS to help with the migration by [creating a new support ticket](https://www.visualstudio.com/team-services/support).
+    * If users exist, but their email addresses are different from their Microsoft accounts, the history will be retained in the system but we don't offer a way to map it to the user's new email address.
 
 ## Inform users of the upcoming change
 
