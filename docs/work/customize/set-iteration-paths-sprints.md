@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 03/20/2018
 ---
@@ -154,7 +155,7 @@ You can quickly generate [queries](../track/using-queries.md) to view the progre
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 *	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
+*	[Agile tools and sprint definitions](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
 
  

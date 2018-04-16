@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
@@ -62,11 +63,11 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 ## Related Kanban notes
 See these choices for further options to customize the Kanban board:
 
-- [Add, rename, move, and delete columns ](add-columns.md)
+- [Add, rename, move, and delete columns](add-columns.md)
 - [Work in Progress limits](wip-limits.md)  
 - [Add swimlanes, expedite work](expedite-work.md)
 - [Split columns](split-columns.md) 
-- [Customize cards ](../customize/customize-cards.md)
+- [Customize cards](../customize/customize-cards.md)
 
 ::: moniker-end
 

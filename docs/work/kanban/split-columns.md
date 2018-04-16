@@ -7,8 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
 ms.date: 03/20/2018
@@ -100,7 +102,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 For more ways to implement Kanban and customize your board:  
 
 * [Add columns](add-columns.md)  
-* [Work in Progress limits ](wip-limits.md)  
+* [Work in Progress limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md)   

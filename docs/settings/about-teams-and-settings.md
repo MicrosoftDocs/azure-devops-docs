@@ -188,8 +188,8 @@ Yes. When you add user accounts to a team project, you can add them as members o
 
 - [Add another team](../work/scale/multiple-teams.md)  
 - [Set team defaults](../work/scale/set-team-defaults.md)  
-- [Configure team settings ](../work/scale/manage-team-assets.md)      
-- [Work effectively from your account hub ](../user-guide/account-home-pages.md)  
+- [Configure team settings](../work/scale/manage-team-assets.md)      
+- [Work effectively from your account hub](../user-guide/account-home-pages.md)  
 
 
 

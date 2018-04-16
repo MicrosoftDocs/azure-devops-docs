@@ -173,7 +173,7 @@ You can manage your project plan using Project and all the features that Project
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
+You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 
 
 
