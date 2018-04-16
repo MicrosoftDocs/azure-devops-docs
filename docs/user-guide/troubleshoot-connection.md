@@ -7,11 +7,11 @@ ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.topic: troubleshooting
 ms.date: 02/26/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Troubleshoot connecting to a team project in VSTS or TFS
 
