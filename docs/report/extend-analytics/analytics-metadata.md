@@ -1,19 +1,20 @@
 ---
 title: Explore Analytics OData metadata for VSTS  
 titleSuffix: VSTS  
-description: How to explore the entity model OData metadata for the Analytics service in Visual Studio Team Services (VSTS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: How to explore the entity model OData metadata for the Analytics service in Visual Studio Team Services  
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid:  
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+ms.topic: tutorial
 ms.date: 11/13/2017
 ---
 
 # Explore the Analytics OData metadata
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Data model for the Analytics Service](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
@@ -222,7 +223,7 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 > [Data model for the Analytics Service](data-model-analytics-service.md)
 
 
-## Related notes
+## Related articles
 - [Data model for the Analytics Service](data-model-analytics-service.md)
 - [Account and project-scoped queries](account-scoped-queries.md).
 - [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 
