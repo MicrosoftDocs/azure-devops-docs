@@ -4,6 +4,7 @@ description: Walks through the steps from preparing a collection to getting it u
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
+ms.date: 04/13/2018
 ---
 
 # Import
@@ -251,6 +252,19 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 > If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/VSTSImportLargeCollection.
 
 Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). 
+
+There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
+
+* TFS 2017 imports need to use SqlPackage.exe from the 130 folder or higher.
+* TFS 2018 imports need to use SqlPackage.exe from the 140 folder or higher.
+
+If you installed SQL Server Data Tools (SSDT) for Visual Studio, you can find SqlPackage.exe in one of the following locations.
+
+* If you installed SSDT and integrated it with an existing installation of Visual Studio, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
+* If you installed SSDT and did a stand-alone installation, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
+* If you already have an installation of SQL Server, SqlPackage.exe may already be present, and located in a folder similar to: `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`
+
+Both of the versions of SSDT that you can download from [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders with their respective versions of SqlPackage.exe.
 
 When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you'll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
 
