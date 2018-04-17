@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces ExtensionEventCallbackCollection API | Extensions for Visual Studio Team Services
 description: Collection of event callbacks - endpoints called when particular extension events occur.
 ms.assetid: 7c547d92-34fc-1a7f-51e5-92288ffde29d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

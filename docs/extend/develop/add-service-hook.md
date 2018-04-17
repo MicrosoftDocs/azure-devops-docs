@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Create a consumer service for service hooks | Extensions for VSTS
 description: Tutorial for creating a custom consumer service for service hooks in VSTS.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 

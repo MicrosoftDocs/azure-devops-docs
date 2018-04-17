@@ -2,12 +2,13 @@
 title: Integrate with service hooks | VSTS
 description: Perform tasks with other services when events happen in VSTS projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Integrate with service hooks

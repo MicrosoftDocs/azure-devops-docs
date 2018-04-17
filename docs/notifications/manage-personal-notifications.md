@@ -2,12 +2,13 @@
 title: Manage personal notification settings
 titleSuffix: VSTS & TFS
 description: Get notified when changes occur to source code, git, work items, and builds when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.manager: douge
-ms.author: wismythe
-ms.topic: get-started-article
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

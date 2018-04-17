@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces AccessPointModel API | Extensions for Visual Studio Team Services
 description: Model to represent a public access uri
 ms.assetid: c0e299fb-8732-8d5b-8a33-acd34e43afa9
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

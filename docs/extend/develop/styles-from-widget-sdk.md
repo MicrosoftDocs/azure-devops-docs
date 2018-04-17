@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Basic styles for widgets | Extensions for VSTS
 description: Styles from Widget SDK to be used in widgets on dashboards in VSTS.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

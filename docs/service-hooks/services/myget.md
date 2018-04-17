@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: MyGet with VSTS
 description: Use MyGet with your VSTS account
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

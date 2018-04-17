@@ -2,12 +2,13 @@
 title: Collaborate more and build faster with packages
 description: Componentize a large codebase with source and package composition using Package Management in VSTS or Team Foundation Server
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 09/29/2016
-ms.topic: get-started-article
+ms.topic: conceptual
 ---
 
 # Collaborate more and build faster with packages

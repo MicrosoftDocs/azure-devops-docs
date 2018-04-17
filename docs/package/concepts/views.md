@@ -2,11 +2,12 @@
 title: Views on VSTS feeds
 description: Release views enable continuous integration and delivery of NuGet and npm packages in Package Management for VSTS and Team Foundation Server
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

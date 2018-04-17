@@ -1,11 +1,13 @@
 ---
 title: VSS/References/VSS.SDK.Interfaces IExternalDialog API | Extensions for Visual Studio Team Services
 ms.assetid: a688252e-d157-d55c-ee40-cf4c5def92fd
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

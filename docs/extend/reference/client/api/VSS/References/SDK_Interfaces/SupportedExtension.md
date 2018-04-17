@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces SupportedExtension API | Extensions for Visual Studio Team Services
 description: Information about the extension
 ms.assetid: 45dcffe1-9139-d8a9-4204-697a6a1adc32
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
