@@ -3,12 +3,12 @@ title: Save team project data for VSTS
 description: Save team project data for Visual Studio Team Services (VSTS)
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
 # Save team project data for VSTS

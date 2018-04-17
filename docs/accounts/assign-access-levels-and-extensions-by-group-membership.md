@@ -2,7 +2,7 @@
 title: Assign access levels and extensions to users by group membership
 description: Assign access levels and extensions to users by group membership
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley

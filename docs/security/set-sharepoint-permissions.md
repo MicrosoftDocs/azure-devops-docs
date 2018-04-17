@@ -13,8 +13,7 @@ ms.date: 10/02/2017
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
 
-
-# Set SharePoint site permissions 
+# Set SharePoint site permissions
 
 **TFS 2017 | TFS 2015 | TFS 2013**
 

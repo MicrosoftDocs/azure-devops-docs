@@ -2,7 +2,7 @@
 title: Troubleshoot access with Azure Active Directory (Azure AD)
 description: Troubleshoot access with Azure Active Directory (Azure AD)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.manager: douge

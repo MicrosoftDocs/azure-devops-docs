@@ -30,17 +30,17 @@ Permissions are set at the collection, team project, and object level as describ
 
 ## View project-level permissions
 
-0. Open the admin context from the user/team project context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
+1. Open the admin context from the user/team project context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
 
-0. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
+2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
 
 	<img src="_img/view-permissions-search-user-name.png" alt="Find a user account name" style="border: 1px solid #C3C3C3;" />  
 
-0. Click the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
+3. Click the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
 
 	<img src="_img/view-permissions-project-level.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 1px solid #C3C3C3;" />   
 
-0. Click **Member of** to see which security groups the user belongs to.  
+4. Click **Member of** to see which security groups the user belongs to.  
 
 	Here we see that the user account, Jamal Hartnett, belongs to several teams as well as the Project Collection Administrators group. 
 
@@ -48,9 +48,9 @@ Permissions are set at the collection, team project, and object level as describ
 
 ## View collection-level permissions 
 
-0. Open the admin context from the account context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
+1. Open the admin context from the account context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
 
-0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+2.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 
 ## View object-level permissions 
@@ -65,7 +65,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 > |- [README & Wiki](../collaborate/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../build-release/set-permissions.md)<br/>- [Release definition security](../build-release/set-permissions.md)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/approvals/index.md) |- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  
 
 
-## Try this next
+## Next steps
+
 > [!div class="nextstepaction"]
 > [Look up the account owner or a project administrator](lookup-account-owner-admin.md) 
 

@@ -10,10 +10,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 02/12/18
+ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Default permissions and access for VSTS and TFS 
 

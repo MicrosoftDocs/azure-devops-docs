@@ -22,7 +22,7 @@ From the project admin content, **Version Control** page, you can [set permissio
 
 [!INCLUDE [temp](_shared/code-tfvc.md)]
 
-## Related notes
+## Related articles
 
 - [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
 - [Default permissions and access](permissions-access.md)

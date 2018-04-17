@@ -14,43 +14,42 @@ ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # About permissions and groups
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (AAD) if integrated with VSTS, or Active Directory if integrated with TFS. 
+To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with VSTS, or Active Directory if integrated with TFS. 
 
 Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build definitions, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
 You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
 
+## Permission settings
 
-## Permission settings 
+Here's what you need to know about permission settings:
 
-Here's what you need to know about permission settings:  
+-   **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
 
--   **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.  
+-   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
 
--   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.  
-
--   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.  
+-   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
     For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong.
 
 -   Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
-
 <a name="inheritance"></a>
+
 ## Inheritance
 
 Some permissions are managed through a hierarchy. Within this hierarchy,
 permissions can be inherited from the parent or overridden. In
 certain cases, a set of permissions are grouped into a **role**
 to simplify administration. Membership of these roles governs
-access. 
+access.
 
 If a permission isn't directly allowed or denied for a user, then it may be inherited in two ways.
+
 - Users inherit permissions from the groups to which they belong.
 When a permission is allowed for a user directly or through membership in a group that has that permission,
 and it is denied, either directly or through group membership,
@@ -137,15 +136,17 @@ if your team project doesn't use SQL Server Reporting Services or a SharePoint s
 
 
 <a name="validusers"></a>
+
 ## Valid user groups
 
 When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
--   *Server*\\Team Foundation Valid Users: All members added to server-level groups.  
--   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.  
--   *TeamProjectName*\\Project Valid Users: All members added to team project-level groups.  
 
-The default permissions assigned to these groups are primarily limited to 
-read access, such as **View build resources**, **View project-level 
+-   *Server*\\Team Foundation Valid Users: All members added to server-level groups.
+-   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
+-   *TeamProjectName*\\Project Valid Users: All members added to team project-level groups.
+
+The default permissions assigned to these groups are primarily limited to
+read access, such as **View build resources**, **View project-level
 information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
@@ -154,12 +155,11 @@ If you need to restrict view access, then you can [set restrictions through the 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
 no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.
 
-
 ## Tools used to set permissions
 
 You set most permissions through the web portal. You can use the tools listed in the following table to set permissions.
 Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
-You use the [web portal administration context](../security/add-users-team-project.md) to set most permissions.  
+You use the [web portal administration context](../security/add-users-team-project.md) to set most permissions.
 
 |Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -177,9 +177,6 @@ You use the [web portal administration context](../security/add-users-team-proje
 |[Release Management](permissions.md#release_management) |![check mark](../_img/check.png)||||| |
 |[Lab Management](permissions.md#lab)|||||![check mark](../_img/check.png)|
 
-
-
-
 ## Setting permissions for SharePoint integration (TFS only)    
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
@@ -187,10 +184,7 @@ see [Set SharePoint site permissions](../security/set-sharepoint-permissions.md)
 
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
-
 ## Setting permissions for SQL Server reports (TFS only) 
 
 For information about how to set permissions in Reporting Services,
 see [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md).
-
-

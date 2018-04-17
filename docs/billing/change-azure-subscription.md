@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 4/06/2018
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Change the Azure subscription your VSTS account uses for billing
+# Change the Azure subscription that your VSTS account uses for billing
 
 **VSTS**
 
