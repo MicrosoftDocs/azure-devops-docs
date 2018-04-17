@@ -86,6 +86,8 @@
     href: actions/azure-devops-project-github.md
   - name: Azure DevOps Project for VMs
     href: actions/azure-devops-project-vms.md
+  - name: Azure DevOps Project with SQL Database
+    href: actions/azure-devops-project-sqldb.md
   - name: Jenkins CI for VSTS Azure CD
     href: actions/integrate-jenkins-vsts-cicd.md  
   - name: Test your app
