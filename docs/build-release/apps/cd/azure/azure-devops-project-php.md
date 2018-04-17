@@ -64,9 +64,9 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub account
 
 1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the master branch.
 
-1. On the left-hand side of the browser, navigate to the **views/index.pug** file.
+1. On the left-hand side of the browser, navigate to the **resources/views/welcome.blade.php** file.
 
-1. Select **Edit**, and make a change to the h2 heading.  For example, type **Get started right away with the Azure DevOps Project** or make some other change.
+1. Select **Edit**, and make a change to some of the text.  For example, change some of the text for one of the div tags.
 
 1. Choose **Commit**, then save your changes.
 
