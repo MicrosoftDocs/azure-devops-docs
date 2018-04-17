@@ -1,30 +1,35 @@
 ---
-title: Connect to Power BI Data Connector | VSTS  
+title: Connect to Power BI Data Connector
+titleSuffix: VSTS
 description: Step-by-step guidance on how to connect to Power BI Data Connector to access Visual Studio Team Services (VSTS) data
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.reviewer: stansw
+ms.prod: devops
+ms.technology: devops-analytics
+ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
-ms.date: 1/4/2018
+ms.topic: conceptual
+monikerRange: 'vsts'
+ms.date: 2/8/2018
 ---
 
 # Connect to VSTS with Power BI Data Connector
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+> The VSTS Power BI Data connector works with Analytics Views. For more information read [what are Analytics Views](../analytics/what-are-analytics-views.md).
 
 Follow the steps below to get started using the VSTS Power BI Data Connector:
 
-1. Install the *Power BI Desktop* *January 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 
-2. Install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
+2. Install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
 
-3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md)
+3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/)
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
 
-5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[What is the Analytics Service](../analytics/what-is-analytics.md)" before continuing
+5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[what is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
 
 6. **Launch Power BI Desktop and get your data**. Select *Get Data* using one of the two options to access the Data Connector. 
 
@@ -67,24 +72,26 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 	![](./_img/data-connector-get-data-8.png)
 
-11. **Select the view**. The Data Connector will present a list of available views. Each view represents a set of data that can be pulled into Power BI. 
+11. **Select the view**. The Data Connector will present a list of available [Analytics Views](../analytics/what-are-analytics-views.md). Each view represents a set of data that can be pulled into Power BI. 
 
-	![](./_img/data-connector-navigator.png)
+	VSTS provides a set of [default Analytics Views](../analytics/analytics-default-views.md) when you first enable Analytics. You can also [create custom Analytics Views](../analytics/analytics-views-create.md). The image below shows the default Analytics Views. Your list of views may be different.
+
+	![Navigator dialog, default views](../analytics/_img/default-views/navigator-dialog-default-views.png)
 
 	Click *Work Items - Today* table and wait for the preview to load.
 	It represents the current state of all Work Items in the project.
 
-	Select the checkbox next to *Work Items - Today* table 
+	Select the checkbox next to *Work Items - Today* table and click *Load* 
 
 	> [!NOTE]
-	> Currently, the views do not filter. That is they will return all Bugs or all Work items in the team project. For large accounts, these views may fail with the error: "Query result exceeds maximum size". If you have a large account and are encountering this error, the February 2018 update of Power BI will include the ability create views which have filters. This will allow you to reduce the data set to something that can be loaded in Power BI.
+	> [Analytics Views](../analytics/what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server.  Any filters applied in Power BI will limit the data shown to end users the dataset but will not reduce the amount of data retrieved from VSTS. If the filter is intended to reduce the size of the dataset it should be applied by [customizing the view](../analytics/analytics-views-create.md).  
 
 12. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
 	the table name. Should you see any errors, refer to the [Q & A](#q-a) section.
 
 	![](./_img/data-connector-get-data-14.png)
 
-13. **Review the VSTS Data model**. While the model is being loaded please review the [VSTS data model](data-connector-available-data.md)
+13. **Review the VSTS Data model**. While the model is being loaded please review the [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
 
 14. **Create reports based on the loaded data**. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Example Reports - using the Data Connector](data-connector-examples.md).
 
@@ -92,12 +99,12 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 <a id="PowerBILimitations">  </a>
 
-## Related notes
+## Related articles
 - [Permissions required to access the Analytics service](../analytics/analytics-security.md)
 - [Power BI integration overview](overview.md)
 - [Analytics Service security](../analytics/analytics-security.md)
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md) 
-- [Available data tables in the Power BI Data Connector](data-connector-available-data.md)  
+- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 - [Data Connector - Example reports](data-connector-examples.md)
 
 <a id="q-a">  </a>
@@ -121,13 +128,13 @@ In the example below the most important part of the error message is:
 
 ### Q: What can I do to resolve: *Query result exceeds maximum size. Please reduce the number of records by applying additional filters*?
 
-**A:** You will get the following error if the number or records exceeds 200k.  
+**A:** You will get the following error if the number of records retrieved from Analytics exceeds 250,000.  
 > Failed to save modifications to the server. Error returned: 'OLE DB or ODBC error: 
 > &#91;DataSource.Error&#93; VSTS: Request failed: The remote server returned an error: (400) Bad Request. 
 > (**Query result exceeds maximum size. Please reduce the number of records by applying additional filters**).'.
 
 
-This error typically occurs when your project has a lot of work items. In the upcoming February update you will be able to update views with filters to reduce the amount of data.  However, in this release you will not be able to load data for your account and project using the VSTS Data Connector. It is still possible to use Power BI through our [VSTS functions](data-connector-functions.md)
+This error typically occurs when your project has a lot of work items. The size of the dataset must be reduced by [customizing the view](../analytics/analytics-views-create.md) before using it in Power BI.  
 
 ![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](_img/QueryExceedsPreferedMaxSizeException.png)
 

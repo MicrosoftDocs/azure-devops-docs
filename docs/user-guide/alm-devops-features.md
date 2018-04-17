@@ -1470,7 +1470,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Available data</b></p>
-<p>The [Power BI data model](../report/powerbi/data-connector-available-data.md) currently supports building reports that track status and trends of work items.</p>
+<p>The [Power BI Data Connector](../report/powerbi/data-connector-connect.md) supports building reports to track status and trend work items.</p>
 
 </td>
 

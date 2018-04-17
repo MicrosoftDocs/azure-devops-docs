@@ -1,20 +1,21 @@
 ---
 title: Analytics basic queries
 titleSuffix: VSTS  
-description: Examples of work item tracking queries of the Analytics service for VSTS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Examples of work item tracking queries of the Analytics service for Visual Studio Team Services
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: sample
+ms.date: 3/16/2018
 ---
 
 # Query work tracking data using Analytics  
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
 
-You can query your VSTS work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
+You can query your Visual Studio Team Services (VSTS) work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
 For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
@@ -86,7 +87,15 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   &$select=WorkItemId, Title, State
 ```
 
-##Related notes 
+**Retrieve all work items that at one time had a field set to a specific value (Similar to Work Item query "was ever")**
+
+```OData
+https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+  $filter=WorkItemType eq '{Type}'
+     and Revisions/any(r:r/ResolvedBy/UserName eq '{User}')
+```
+
+##Related articles 
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
