@@ -2,13 +2,13 @@
 title: Add VSTS account users to your Azure Active Directory
 description: Add VSTS account users to your Azure Active Directory
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
 

@@ -1,9 +1,13 @@
 ---
 title: Migration overview from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS 
 description: Overview of the high fidelity migration process from Team Foundation Server to Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-article
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
 ---
 
 # Migrate data from TFS to VSTS

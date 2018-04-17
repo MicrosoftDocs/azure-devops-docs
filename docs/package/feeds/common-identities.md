@@ -2,10 +2,12 @@
 title: Give teams and builds access to feeds
 description:  Give teams and builds access to Package Management feeds in VSTS or Team Foundation Server
 ms.assetid: 6b806512-b99d-45ab-85dc-cdbc1985f0f8
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
 ---

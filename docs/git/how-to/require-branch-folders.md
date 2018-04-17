@@ -2,10 +2,12 @@
 title: Require branches to be created in folders
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
-ms.author: macoope
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 04/11/2018
 monikerRange: '>= tfs-2018'
 ---

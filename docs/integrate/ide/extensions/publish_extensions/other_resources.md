@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Visual Studio Marketplace
 description: Describes the new Visual Studio Marketplace
 ms.assetid: 87B662CC-6003-4B4A-9617-05ECBB6AC055
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

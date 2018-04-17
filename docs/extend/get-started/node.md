@@ -1,13 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Write your first extension for VSTS
 description: Tutorial for creating your first extension, a hub page, for VSTS
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/26/2016
-ms.topic: get-started-article
 ---
 
 # Write your first extension for VSTS

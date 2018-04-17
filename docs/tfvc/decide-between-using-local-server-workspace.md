@@ -2,10 +2,12 @@
 title: Decide between using a local or a server workspace
 description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

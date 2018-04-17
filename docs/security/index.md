@@ -13,8 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/24/2017
 ---
 
-
-# Security & Identity 
+# Security & Identity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

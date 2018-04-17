@@ -2,11 +2,12 @@
 title: Share your Eclipse project with Git | VSTS & TFS
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 08/30/2017
 monikerRange: '>= tfs-2015'
 ---

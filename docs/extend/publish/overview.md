@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Package, publish, & unpublish extensions | VSTS
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for VSTS.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/29/2016
 ---
 

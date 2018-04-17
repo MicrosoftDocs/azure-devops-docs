@@ -1,10 +1,11 @@
 ---
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
 description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
-ms.author: divais
+ms.author: elbatk
+author: elbatk
 ms.date: 06/12/2017
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ---
 

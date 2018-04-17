@@ -2,7 +2,7 @@
 title: Troubleshoot managing group-based licensing
 description: Troubleshoot managing group-based licensing (what does remove group do? remove group rule? Will users lose access level and project membership?)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.topic: conceptual
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.topic: conceptual

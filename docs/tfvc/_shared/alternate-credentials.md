@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 0.  Sign in to your VSTS account 
 (```http://{youraccount}.visualstudio.com```).
 

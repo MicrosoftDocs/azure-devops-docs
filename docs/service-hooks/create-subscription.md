@@ -3,10 +3,12 @@ title: Subscribe to VSTS events from another service | VSTS REST APIs
 description: Use service hooks to set up actions to take when specific events occur in VSTS.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: Install a Maven artifact using Gradle and VSTS
 description: Install a Maven artifact using Gradle in a VSTS build
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: douge
+ms.author: elbatk
+author: elbatk
 ms.reviewer: dastahel
+ms.topic: conceptual
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---

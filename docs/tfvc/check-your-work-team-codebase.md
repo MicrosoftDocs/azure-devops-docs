@@ -2,10 +2,12 @@
 title: Check in your work to the team's codebase
 description: Check in your work to the team's codebase
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

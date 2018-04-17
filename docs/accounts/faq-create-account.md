@@ -2,7 +2,7 @@
 title: Troubleshoot creating a VSTS account
 description: Troubleshoot creating a VSTS account
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.topic: conceptual
 ms.manager: douge

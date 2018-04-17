@@ -2,10 +2,12 @@
 title: Undo command
 description: Undo command
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
