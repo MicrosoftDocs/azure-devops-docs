@@ -2,10 +2,12 @@
 title: Get started with Git and Visual Studio | VSTS & TFS
 description: Quick Start with Git and VSTS
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---

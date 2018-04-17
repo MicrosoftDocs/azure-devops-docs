@@ -2,11 +2,12 @@
 title: Use Team Foundation Version Control
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: overview
 ms.date: 08/29/2017
 monikerRange: '>= tfs-2015'
 ---

@@ -1,13 +1,14 @@
 ---
 title: Version Control - How to Simply Git Log History
 description: How git log history simplification works, and why it can lead to confusion.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
 ms.manager: douge
 ms.date: 06/01/2016
 ms.author: mlearned
-author: samgu
+author: mlearned
 ---
 
 # Git lost my changes: Taking a look at Git's history simplification

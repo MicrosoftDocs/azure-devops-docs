@@ -2,12 +2,13 @@
 title: Version Control - Effective TFVC branching strategies for DevOps
 description: Explore TFVC branching strategies for DevOps 
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 03/20/2017
 ms.author: willys
-author: sergio romero
+author: wpschaub
 ---
 
 # Effective TFVC branching strategies for DevOps

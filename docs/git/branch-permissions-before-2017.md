@@ -2,10 +2,12 @@
 title: Branch permissions prior to TFS 2017 Update 1
 description: The previous list of Git branch permissions
 ms.assetid: 7B4F74D5-953F-4A9D-8DD6-BB194E424135
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---

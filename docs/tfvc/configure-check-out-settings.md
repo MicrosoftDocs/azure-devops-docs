@@ -2,10 +2,12 @@
 title: Configure Check-Out Settings
 description: Configure Check-Out Settings
 ms.assetid: 9f4eb366-7e99-49f9-899d-cf3209c0ff72
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

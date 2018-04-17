@@ -2,11 +2,12 @@
 title: Ignore files in your Git repo | VSTS & TFS
 description: Use gitignore, git update-index, and repo management to ignore and exclude files from Git version control  
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

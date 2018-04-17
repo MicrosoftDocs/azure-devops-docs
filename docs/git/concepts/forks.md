@@ -2,10 +2,12 @@
 title: Fork your repository in VSTS or TFS
 description: Learn to isolate code using forks in VSTS & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
-ms.author: macoope
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
 ---
