@@ -1,17 +1,19 @@
 ---
-title: Build a dashboard widget that calls the Analytics Service | VSTS
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from a dashboard widget extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Build a dashboard widget that calls the Analytics Service
+titleSuffix: VSTS 
+description: How to access Analytics Service OData for Visual Studio Team Services from a dashboard widget extension
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: CA782CE8-2BDF-4CDE-BEC7-F3FCF761B1A9
 ms.manager: douge
 ms.author: kaelli
+ms.topic: sample
 ms.date: 11/13/2017
 ---
 
 # Build a dashboard widget extension that calls the Analytics Service
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Building an dashboard widget extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working

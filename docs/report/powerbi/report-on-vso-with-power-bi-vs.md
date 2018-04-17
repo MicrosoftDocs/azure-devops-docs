@@ -1,11 +1,14 @@
 ---
-title: Dashboards and reports using Power BI | VSTS
+title: Dashboards and reports using Power BI 
+titleSuffix: VSTS
 description: Learn about default reports and how to refresh datasets, create reports and dashboards from Visual Studio Team Services (VSTS) data using Power BI  
-ms.technology: vs-devops-reporting
-ms.prod: vs-devops-alm
+ms.technology: devops-analytics
+ms.prod: devops
 ms.assetid: BBCB1E19-F2D2-4C52-BE8C-7CEF8A7FDB0B  
 ms.manager: douge
 ms.author: kaelli
+ms.topic: archived
+robots: NOINDEX, NOFOLLOW
 ms.date: 08/04/2017
 ---
 
