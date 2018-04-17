@@ -2,13 +2,14 @@
 title: "Use @mentions to further discussion"
 titleSuffix: VSTS & TFS 
 description: "Alert team members using the @mention control in discussions and pull requests" 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
+author: elbatk
+ms.topic: conceptual
 ms.date: 03/01/2018
 monikerRange: '>= tfs-2015'
 ---

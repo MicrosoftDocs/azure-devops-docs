@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ##	Open your team project in Visual Studio
 
 0. Before you start, if you haven't already:

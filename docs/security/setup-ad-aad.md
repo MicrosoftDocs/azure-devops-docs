@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The recommended method for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
+The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with VSTS or TFS to support billing.
 
@@ -46,12 +46,12 @@ Use these resources to learn about installing Active Directory. Typically, you s
 * [Install Active Directory Domain Services (Level 100)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 * [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add AD/Azure AD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
 
-## Related notes
+## Related articles
 
 * [About security and identity](about-security-identity.md)
 * [How billing works](../billing/overview.md)

@@ -2,10 +2,12 @@
 title: Squash merge your pull requests | VSTS & TFS
 description: Squash merge your pull requests to keep a linear Git history 
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
 ---

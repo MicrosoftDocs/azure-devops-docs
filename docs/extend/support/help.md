@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Get Help | Developing for VSTS
 description: Get help with your extension or custom application for VSTS.
 ms.assetid: fdfc7d19-e17a-420a-881a-b88092624d58
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

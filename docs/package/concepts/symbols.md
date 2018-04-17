@@ -1,12 +1,13 @@
 ---
 title: Symbol files (PDBs)
 description: Symbol files conceptual overview for VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 10/19/2017
 monikerRange: '>= tfs-2017'
 ---

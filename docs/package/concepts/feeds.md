@@ -2,11 +2,12 @@
 title: Feeds
 description: Feeds manage and set permissions for packages in Visual Studio Team Services or Team Foundation Server
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 2/6/2018
 monikerRange: '>= tfs-2017'
 ---

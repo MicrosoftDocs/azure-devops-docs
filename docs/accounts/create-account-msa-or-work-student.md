@@ -2,7 +2,7 @@
 title: Create a VSTS account with a Microsoft account or a work/organization account
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.manager: douge

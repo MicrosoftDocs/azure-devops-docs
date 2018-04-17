@@ -1,12 +1,13 @@
 ---
 title: Version Control - Map TFS version control (TFVC) actions to Git
 description: Map TFS version control (TFVC) commands and workflows to Git version control.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: willys
+ms.manager: douge
 ms.author: willys
-author: willys
+author: wpschaub
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

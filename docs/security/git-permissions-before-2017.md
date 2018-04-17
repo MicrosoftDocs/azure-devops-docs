@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
 # Git permissions prior to TFS 2017 Update 1

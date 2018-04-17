@@ -2,13 +2,13 @@
 title: VSTS - Access with Azure AD groups | VSTS
 description: VSTS - Access with Azure Active Directory (Azure AD, AAD) groups in VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
 # VSTS: Access with Azure Active Directory (Azure AD) groups
@@ -58,21 +58,20 @@ or have the tenant administrator delegate those permissions to you in the
 
 ##	Add an Azure AD group to a VSTS group
 
-0.	Sign in to your VSTS account 
-(```https://{youraccount}.visualstudio.com```).
+1.	Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-0.	Go to your team project collection or team project, 
+2.	Go to your team project collection or team project, 
 depending on the VSTS group that you want to work on.
 
-0.  Go to the control panel by choosing the gear icon in the top navigation bar and **Security** in the menu.
+3.  Go to the control panel by choosing the gear icon in the top navigation bar and **Security** in the menu.
 
-0.	Select the VSTS group where you want to add your Azure AD group.
+4.	Select the VSTS group where you want to add your Azure AD group.
 
     ![Select a VSTS group. Go to Members, Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
 
-0.	Find the Azure AD group that you want to add. Just start typing the group's name, alias, 
+5.	Find the Azure AD group that you want to add. Just start typing the group's name, alias, 
 or display name. Then select the group to add it.  You can get more details about a group and its members by choosing 
 the contact card icon to the right of the name.
 
@@ -83,4 +82,4 @@ the contact card icon to the right of the name.
     to accept, which in turn allows you 
     to add those guests to your account, grant access to projects, assign extensions, etc.
 
-0.	Add more groups, or save your changes if you're done.
+6.	Add more groups, or save your changes if you're done.

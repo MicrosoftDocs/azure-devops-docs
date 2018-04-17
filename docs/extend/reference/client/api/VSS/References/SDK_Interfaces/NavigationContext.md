@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces NavigationContext API | Extensions for Visual Studio Team Services
 description: Structure to specify current navigation context of the executing request. The navigation context content&#x27;s are generally obtained from the request URL. Some context specifiers such as &quot;Account&quot; can be implicit and might come from current IVssServiceHost.
 ms.assetid: a829e23f-9618-5e34-0dbd-9c5c588bf99a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

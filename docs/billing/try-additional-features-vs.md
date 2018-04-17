@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 4/06/2018
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 

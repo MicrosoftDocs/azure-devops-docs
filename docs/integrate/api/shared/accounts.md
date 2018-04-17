@@ -1,11 +1,13 @@
 ---
 title: Accounts REST API Reference for VSTS
 description: Work with accounts programmatically using the REST APIs for VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.assetid: C9470271-C11E-4BD2-82C8-D5272AADF82C
-ms.manager: jivkok
-ms.author: gozhang
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
 ms.date: 02/22/2017
 ---
 

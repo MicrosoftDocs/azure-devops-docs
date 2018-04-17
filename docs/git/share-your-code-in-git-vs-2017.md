@@ -2,12 +2,13 @@
 title: Share your code with Git using Visual Studio 2017 | VSTS & TFS
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 toc: show
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 03/08/2018
 monikerRange: '>= tfs-2015'
 ---
