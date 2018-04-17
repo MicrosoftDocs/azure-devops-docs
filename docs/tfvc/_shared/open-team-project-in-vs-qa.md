@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a name="DifferentSignInPage"></a>
 #### Q: Why is my sign-in page different than when I sign in to Visual Studio?
 

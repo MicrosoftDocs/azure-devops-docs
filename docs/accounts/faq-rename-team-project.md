@@ -2,7 +2,7 @@
 title: Troubleshooting renaming a team project
 description: Troubleshooting renaming a team project
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
 toc: show
 ms.topic: conceptual

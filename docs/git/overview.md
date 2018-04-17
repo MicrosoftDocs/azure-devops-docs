@@ -2,10 +2,12 @@
 title: Git documentation home | VSTS & TFS 
 description: Overview of Git version control in VSTS and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: overview
 ms.date: 03/14/2018
 layout: LandingPage
 monikerRange: '>= tfs-2015'

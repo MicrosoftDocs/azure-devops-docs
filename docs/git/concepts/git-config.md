@@ -2,10 +2,12 @@
 title: gitconfig files | Team Services, TFS, and Visual Studio
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
-ms.manager: kangan
-ms.author: jepling
+ms.prod: devops
+ms.technology: devops-code-git
+ms.manager: douge
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
 ---

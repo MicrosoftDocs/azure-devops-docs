@@ -2,10 +2,12 @@
 title: Understand lock types
 description: Understand lock types
 ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

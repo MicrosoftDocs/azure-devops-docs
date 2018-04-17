@@ -2,10 +2,12 @@
 title: Unlist, delete, or recover a NuGet package
 description: Unlist, delete, or recover a deleted NuGet package from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.assetid: 173070F7-CF0B-41DE-AD8B-1881E04E1457
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Ask another developer
 description: Use Gitter to ask your questions to other developers.
 ms.assetid: 116A9B84-9DD8-4DE8-8E80-0A2B30856D42
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

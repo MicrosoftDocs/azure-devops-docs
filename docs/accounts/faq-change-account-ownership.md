@@ -2,7 +2,7 @@
 title: Troubleshoot changing account owner for VSTS 
 description: Troubleshoot changing account owner for VSTS
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
 ms.topic: conceptual
 ms.manager: douge

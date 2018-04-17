@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Integrate VSTS with third party apps using service hooks
 description: Index of using service hooks to integrate third party apps with VSTS
 ms.assetid: ae372488-1430-4b68-b12e-a0a09ecad685
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/23/2016
 ---
 

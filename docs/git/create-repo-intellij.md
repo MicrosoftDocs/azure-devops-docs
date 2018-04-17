@@ -2,11 +2,12 @@
 title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
 description: Intro to the IntelliJ plugin available for VSTS.
 ms.assetid:
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 09/08/2017
 monikerRange: '>= tfs-2015'
 ---

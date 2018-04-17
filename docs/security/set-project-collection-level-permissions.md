@@ -53,6 +53,7 @@ For a description of each group and each permission, see [Permissions and groups
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the account or collection, you are automatically added as a member of this group. 
 
 <a id="project-level" />
+
 ## Add a user or group to a security group
 
 As roles and responsibilities change, you might need to change the permission levels for individual members of a team project. The easiest way to do that is to add the user or a group of users to a pre-defined security group. 

@@ -2,10 +2,12 @@
 title: Set up your client's npmrc
 description: Authenticating to feeds with npm in VSTS
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

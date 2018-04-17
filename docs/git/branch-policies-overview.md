@@ -1,11 +1,13 @@
 ---
 title: Branch policies | VSTS & TFS    
 description: Learn about branch policies in VSTS & TFS  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: overview
 ms.date: 03/14/2018
 layout: LandingPage
 monikerRange: '>= tfs-2015'

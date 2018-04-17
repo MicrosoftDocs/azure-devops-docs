@@ -1,11 +1,13 @@
 ---
 title: Profiles REST API Reference for VSTS
 description: Work with proifiles programmatically using the REST APIs for VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.assetid: 4F9CF932-0E38-49BC-9663-21B062732173
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

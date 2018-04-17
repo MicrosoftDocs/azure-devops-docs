@@ -2,12 +2,13 @@
 title: Notifications FAQs
 titleSuffix: VSTS & TFS
 description: General q and a about notifications set in Visual Studio Team Services or Team Foundation Server 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-collab
 toc: show
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2015'
 ---

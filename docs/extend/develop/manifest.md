@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Extension Manifest Reference| Extensions for VSTS
 description: How to create a manifest for your extension to VSTS.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/26/2016
 ---
 

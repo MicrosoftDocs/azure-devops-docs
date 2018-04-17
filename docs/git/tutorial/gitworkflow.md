@@ -2,11 +2,11 @@
 title: VSTS Git tutorial | VSTS & TFS
 description: Learn Git with the VSTS/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
-ms.manager: douge
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

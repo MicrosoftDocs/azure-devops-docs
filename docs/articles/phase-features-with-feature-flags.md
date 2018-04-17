@@ -1,12 +1,13 @@
 ---
 title: DevOps - Phase the features of your application with feature flags
 description: Explore how to phase your application features roll-out using feature flags
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 06/20/2017
 ms.author: willys
-author: willys
+author: wpschaub
 ---
 
 # Phase the features of your application with feature flags

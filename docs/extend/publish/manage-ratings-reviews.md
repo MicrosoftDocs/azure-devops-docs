@@ -1,11 +1,13 @@
 ---
 title: Manage ratings and reviews for your published extension | Extensions for VSTS
 description: Guidelines for responding to and requesting to void reviews for a published extension in the VSTS Marketplace.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: f814d685-c0e0-48dc-adb6-ad8571a9fb73
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/24/2017
 ---
 

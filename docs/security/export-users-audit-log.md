@@ -55,7 +55,7 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker-end
 
-## Related notes
+## Related articles
 
 - For a description of access levels, see [About access levels](access-levels.md)
 - To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md) 
