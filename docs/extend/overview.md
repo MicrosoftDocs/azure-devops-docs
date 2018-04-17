@@ -1,13 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
 description: Overview of creating extensions for Visual Studio Team Services (VSTS)
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/26/2017
-ms.topic: get-started-article
 ---
 
 # What are extensions?

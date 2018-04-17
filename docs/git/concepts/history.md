@@ -2,10 +2,12 @@
 title: History in Git | VSTS & TFS
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

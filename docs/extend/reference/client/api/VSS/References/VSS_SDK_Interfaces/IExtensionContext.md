@@ -2,11 +2,13 @@
 title: VSS/References/VSS.SDK.Interfaces IExtensionContext API | Extensions for Visual Studio Team Services
 description: Context about the app that owns the content that is being hosted
 ms.assetid: c4bd9815-17f9-9c4f-6240-c8549564fce7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

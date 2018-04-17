@@ -2,11 +2,12 @@
 title: Upstream sources 
 description: Upstream sources manage packages from public sources in a Visual Studio Team Services or Team Foundation Server feed
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 2/1/2018
 monikerRange: '>= tfs-2017'
 ---

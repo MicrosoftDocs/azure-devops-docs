@@ -2,11 +2,12 @@
 title: Import a Git repo into your team project | VSTS & TFS
 description: Import a repo from GitHub, GitLab, or Bitbucket into your VSTS/TFS Team Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 03/28/2018
 monikerRange: '>= tfs-2013'
 ---

@@ -1,6 +1,6 @@
 ---
 title: Buy VSTS CI/CD | VSTS
-description: How to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
+description: Learn how to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 4/06/2018
+ms.date: 04/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,7 +16,7 @@ ms.date: 4/06/2018
 
 **VSTS**
 
-With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both. 
+With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both.
 We offer a **Free Tier** for each.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.

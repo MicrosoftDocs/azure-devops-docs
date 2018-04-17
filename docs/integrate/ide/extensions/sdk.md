@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: SDK reference for Visual Studio extensions
 description: Find the Visual Studio SDK reference on MSDN.
 ms.assetid: D52D06E0-B0EE-499D-B4CF-B89F6237AE27
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

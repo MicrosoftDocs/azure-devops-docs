@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Authorize Other Services | VSTS
 description: Authorize other services to work with VSTS
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

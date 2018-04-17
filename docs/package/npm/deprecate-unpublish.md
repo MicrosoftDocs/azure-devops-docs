@@ -2,10 +2,12 @@
 title: Deprecate, unpublish, or recover an npm package
 description: Deprecate, unpublish, or recover a deleted npm package from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.assetid: 1d74f23f-bafc-4fed-9aad-4b2ee7633ff8
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

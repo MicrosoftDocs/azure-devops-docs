@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Azure Service Bus with VSTS
 description: Use Azure Service Bus with your VSTS account
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/16/2016
 ---
 

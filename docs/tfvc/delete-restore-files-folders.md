@@ -2,10 +2,12 @@
 title: Delete or restore files and folders using TFVC 
 description: Delete or restore files and folders using Team Foundation Version control
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 12/05/2016
 monikerRange: '>= tfs-2015'
 ---

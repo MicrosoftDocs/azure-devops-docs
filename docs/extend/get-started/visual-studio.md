@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Create your first Extension with Visual Studio | Extensions for VSTS
 description: Use Visual Studio with ASP.NET to create your first extension for VSTS.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

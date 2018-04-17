@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Before you start:
 
 0. If you don't have a VSTS account, [create it first](../../accounts/create-account-msa-or-work-student.md).

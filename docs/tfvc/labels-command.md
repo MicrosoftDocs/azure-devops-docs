@@ -2,10 +2,12 @@
 title: Labels Command
 description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

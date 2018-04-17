@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Samples Overview | Extensions for VSTS
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

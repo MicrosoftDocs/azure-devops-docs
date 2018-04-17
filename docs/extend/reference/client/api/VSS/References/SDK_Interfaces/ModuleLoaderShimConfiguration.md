@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces ModuleLoaderShimConfiguration API | Extensions for Visual Studio Team Services
 description: AMD javascript module loader shim configuration
 ms.assetid: 78217c62-a1e1-9ba7-fe95-34db9fe8b95a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

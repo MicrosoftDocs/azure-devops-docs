@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: I want to customize a project template
 description: A walkthrough to show you how to customize a project template.
 ms.assetid: DAE23D07-A529-452A-9EDC-26DEEE23108C
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

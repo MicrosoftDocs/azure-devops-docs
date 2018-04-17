@@ -2,7 +2,7 @@
 title: Troubleshooting deleting or restoring VSTS accounts
 description: Troubleshooting deleting or restoring VSTS accounts
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
 ms.manager: douge

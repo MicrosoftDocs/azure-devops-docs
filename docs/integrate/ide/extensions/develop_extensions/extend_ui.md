@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: I want to extend the UI
 description: An overview of ways you can extend the UI with pointers to resources.
 ms.assetid: BD65EA00-231F-4B36-952E-B16793A97225
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

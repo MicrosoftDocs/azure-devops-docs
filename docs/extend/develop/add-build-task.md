@@ -2,10 +2,12 @@
 title: Add a Build or Release Task | Extensions for VSTS
 description: Add a custom build or release task in an extension for Visual Studio Team Services
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 

@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Host Page Navigation | Extensions for VSTS
 description: Use host navigation to modify host url hash or reload page
 ms.assetid: 9B188838-55FD-98A6-9062-2652C06BF381
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

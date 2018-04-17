@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces ContributionBase API | Extensions for Visual Studio Team Services
 description: Base class shared by contributions and contribution types
 ms.assetid: f4b51e85-b7a0-fc22-2a14-c3e1aafce419
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
