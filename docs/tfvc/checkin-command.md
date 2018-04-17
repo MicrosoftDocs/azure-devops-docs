@@ -2,10 +2,12 @@
 title: Checkin command
 description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 10/31/2017
 monikerRange: '>= tfs-2015'
 ---

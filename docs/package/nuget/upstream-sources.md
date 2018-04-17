@@ -2,11 +2,13 @@
 title: Use packages from nuget.org
 description: Use packages from npmjs.com in Visual Studio Team Services and Team Foundation Server via upstream sources or scopes
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---

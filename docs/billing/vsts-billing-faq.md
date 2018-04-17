@@ -8,11 +8,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 3/22/2018
+ms.date: 03/22/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
 # Visual Studio Team Services (VSTS) billing FAQ
+
 Make sure to review [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [VSTS billing overview](overview.md) to start.
 
 You have to set up billing when you need more than the **Free Tier** of resources in your VSTS account--5 VSTS users (Basic), 5 Package Management users, 

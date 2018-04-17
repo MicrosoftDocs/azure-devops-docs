@@ -2,10 +2,12 @@
 title: Suspend your work and manage your shelvesets
 description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

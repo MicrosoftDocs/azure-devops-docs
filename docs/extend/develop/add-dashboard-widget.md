@@ -1,11 +1,13 @@
 ---
 title: Add a dashboard widget | Extensions for VSTS
 description: Tutorial for creating a widget that you can then add to a dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

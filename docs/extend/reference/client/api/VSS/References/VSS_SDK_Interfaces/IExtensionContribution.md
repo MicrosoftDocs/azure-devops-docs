@@ -2,11 +2,13 @@
 title: VSS/References/VSS.SDK.Interfaces IExtensionContribution API | Extensions for Visual Studio Team Services
 description: A Contribution with its containing extension
 ms.assetid: c7bd5e1d-ebae-a92b-4801-be8c1b1f14e0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

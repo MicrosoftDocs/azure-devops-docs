@@ -2,12 +2,13 @@
 title: DevOps - Phase the roll-out of your application through rings
 description: Explore how to phase your application roll-out using a tier or ring model
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
-ms.prod: vs-devops-phase-rollout-with-rings
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 03/28/2018
 ms.author: willys
-author: josh garverick
+author: wpschaub
 ---
 
 # Phase the roll-out of your application through rings

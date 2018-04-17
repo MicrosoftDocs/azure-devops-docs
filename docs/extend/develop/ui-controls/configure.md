@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Configure UI Controls | Extensions for VSTS
 description: How to configure UI controls in your extension for VSTS.
 ms.assetid: D013BBD0-CC9E-538F-39BD-9433AFCC7A6D
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

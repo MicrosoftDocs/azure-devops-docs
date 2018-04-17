@@ -2,10 +2,12 @@
 title: Rename or move files and folders | Team Foundation Version Control 
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) commands
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

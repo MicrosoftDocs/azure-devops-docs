@@ -2,10 +2,12 @@
 title: Configure Command
 description: Configure Command
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

@@ -2,10 +2,12 @@
 title: Set Git branch security and permissions |  VSTS & TFS
 description: Set permissions for Git branches in VSTS/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
 ---

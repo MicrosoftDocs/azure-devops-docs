@@ -2,10 +2,12 @@
 title: Folder comparison filters
 description: Folder comparison filters
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/26/2018
 monikerRange: '>= tfs-2015'
 ---

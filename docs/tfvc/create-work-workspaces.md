@@ -2,10 +2,12 @@
 title: Create and work with workspaces
 description: Create and work with workspaces
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
 ---

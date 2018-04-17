@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: UserVoice with VSTS
 description: Use UserVoice with your VSTS account
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

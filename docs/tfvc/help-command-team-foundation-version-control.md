@@ -2,10 +2,12 @@
 title: Help Command (Team Foundation Version Control)
 description: Help Command (Team Foundation Version Control)
 ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
