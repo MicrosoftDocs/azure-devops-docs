@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Authorization using OAuth 2.0 | VSTS REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for VSTS.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

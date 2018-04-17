@@ -2,10 +2,12 @@
 title: Delete or recover a Maven artifact
 description: Delete or recover a deleted Maven artifact from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.assetid: f10cc6ca-b5d7-4de7-b625-b7c11bd92e8e
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2018'
 ---

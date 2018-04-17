@@ -10,10 +10,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-ms.date: 02/12/18
+ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # About security and identity
 
@@ -35,16 +34,16 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into VSTS or TFS. These systems integrate with and rely upon the security features provided by these additional systems: 
-- Azure Active Directory (AAD)  
-- Microsoft account (MSA)  
-- Active Directory (AD)  
+Authentication verifies a user's identify based on the credentials provided when they sign into VSTS or TFS. These systems integrate with and rely upon the security features provided by these additional systems:
+- Azure Active Directory (Azure AD)
+- Microsoft account (MSA)
+- Active Directory (AD)
 
-AAD and MSA support cloud authentication. We recommend AAD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. 
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts.
 
-For on-premises TFS, AD is recommended when managing a large group of users. 
+For on-premises TFS, AD is recommended when managing a large group of users.
 
-### Authentication methods, integrating with other services and apps 
+### Authentication methods, integrating with other services and apps
 
 Other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
@@ -87,24 +86,24 @@ authentication error and can't access your account.
 
 
 ## Authorization
-Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. 
+Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method.
 
-Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.  
+Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
 
-Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more VSTS/TFS security groups. These users and groups can be AAD or AD users and groups. For TFS, they can also be local Windows users and groups.
+Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more VSTS/TFS security groups. These users and groups can be Azure AD or AD users and groups. For TFS, they can also be local Windows users and groups.
 
 Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
 
-## Security groups and permissions  
+## Security groups and permissions
 
-VSTS and TFS are preconfigured with default security groups. Default permissions are assigned to the default security groups.   
+VSTS and TFS are pre-configured with default security groups. Default permissions are assigned to the default security groups.   
 
 > [!div class="mx-tdBreakAll"]
-> | Security groups | Permission levels | Permission States  | 
+> | Security groups | Permission levels | Permission States  |
 > |-------------|----------| ----------| 
 > |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
 
-You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using AAD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
+You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
 ![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) 
 
@@ -120,8 +119,7 @@ Each functional area uses groups to simplify management across the deployment. Y
 
 <img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
-You can create local groups or Active Directory (AD) [groups to manage your users](../tfs-server/admin/setup-ad-groups.md). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.  
-
+You can create local groups or Active Directory (AD) [groups to manage your users](../tfs-server/admin/setup-ad-groups.md). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.
 
 ### Default permissions set for the Contributors group 
 
@@ -133,7 +131,8 @@ To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).
 
 <a id="security-roles" />
-## Security roles 
+
+## Security roles
 
 There are a number of artifacts whose permissions are managed by role. These include the following artifacts and features.  
 
@@ -142,16 +141,16 @@ There are a number of artifacts whose permissions are managed by role. These inc
 > |-------------|----------|----------|
 > |- Deployment groups<br/>- Secure files<br/>- Variable groups<br/>|- Agent queues<br/>- Service endpoints<br/>-Team administration|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions |
 
-To learn more, see [About security roles](about-security-roles.md). 
+To learn more, see [About security roles](about-security-roles.md).
 
 <a id="access-levels" />
-## Access levels 
+
+## Access levels
 
 Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions but by membership in an access level. To learn more, see [Access levels](access-levels.md). 
 
-## Related notes
+## Related articles
 
-See these topics for more information: 
 - [Permissions and groups reference](permissions.md)
 - [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
 - [Set up groups for use in TFS deployments](../tfs-server/admin/setup-ad-groups.md).

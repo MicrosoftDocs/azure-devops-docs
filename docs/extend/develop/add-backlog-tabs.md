@@ -2,10 +2,12 @@
 title: Add tabs on backlog pages | Extensions for VSTS
 description: Extend VSTS with your own hub.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 

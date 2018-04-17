@@ -2,10 +2,12 @@
 title: Debug with symbols in WinDbg
 description: Debug with symbols in WinDbg using the Symbol Server in VSTS Package Management
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 10/18/2017
 ---
 

@@ -1,10 +1,14 @@
 ---
 title: Migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
 description: Walks through the steps from preparing a collection to getting it uploaded for import
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-article
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.date: 04/13/2018
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
 ---
 
 # Import

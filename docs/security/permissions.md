@@ -10,7 +10,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 02/12/18
+ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
 # Permissions and groups in VSTS and TFS

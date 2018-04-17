@@ -14,10 +14,7 @@ ms.topic: reference
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Permissions and access for work tracking
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

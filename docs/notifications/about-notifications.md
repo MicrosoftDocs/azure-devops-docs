@@ -1,13 +1,13 @@
 ---
 title: Understand the basics of how notifications work in VSTS and TFS
 description: Understand how notifications or alerts are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: collaborate
-ms.assetid: 
+ms.prod: devops
+ms.technology: devops-collab
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

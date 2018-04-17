@@ -2,13 +2,14 @@
 title: Create a bug using .NET client libraries in Visual Studio Team Services
 description: Use .NET client libraries to create a bug in Visual Studio Team Services (VSTS).
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 06/27/2017
 ms.custom: get-started-article
-ms.topic: get-started-article
 ---
 # Create a bug in Visual Studio Team Services using .NET client libraries
 

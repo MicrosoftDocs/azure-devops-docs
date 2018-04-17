@@ -89,7 +89,9 @@
   - name: Azure DevOps Project with SQL Database
     href: actions/azure-devops-project-sqldb.md
   - name: Jenkins CI for VSTS Azure CD
-    href: actions/integrate-jenkins-vsts-cicd.md  
+    href: actions/integrate-jenkins-vsts-cicd.md
+  - name: Jenkins CI for VSTS Azure AKS
+    href: actions/integrate-jenkins-vsts-aks.md
   - name: Test your app
     href: test/example-continuous-testing.md
 - name: Concepts

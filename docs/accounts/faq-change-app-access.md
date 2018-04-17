@@ -2,7 +2,7 @@
 title: Change app access policies | VSTS
 description: Change app access policies for VSTS (VSTS, Visual Studio Online, VSO)
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
 ms.topic: conceptual
 ms.manager: douge
