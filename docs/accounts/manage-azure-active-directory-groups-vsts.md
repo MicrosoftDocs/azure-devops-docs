@@ -52,8 +52,7 @@ You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, 
 you must have tenant administrator permissions 
 or have the tenant administrator delegate those permissions to you in the 
-[Azure classic portal](https://manage.windowsazure.com) 
-or [Azure portal](https://portal.azure.com).
+[Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes may take up to 24 hours for VSTS to see the changes.
 
 
