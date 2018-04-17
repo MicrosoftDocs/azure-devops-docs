@@ -1,17 +1,19 @@
 ---
-title: Query trend data | VSTS  
-description: How to query the Analytics service trend data and consume it in a client tool when working from Visual Studio Team Services (VSTS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Query trend data
+titleSuffix: VSTS 
+description: How to query the Analytics service trend data and consume it in a client tool when working from Visual Studio Team Services   
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.manager: douge
 ms.author: kaelli
+ms.topic: tutorial
 ms.date: 11/13/2017
 ---
 
 # Query trend data
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
 
@@ -120,5 +122,5 @@ In this query, there are two key differences. We added a filter clause to filter
  [!Note]
  If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
 
-## Related notes
+## Related articles
 - [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.

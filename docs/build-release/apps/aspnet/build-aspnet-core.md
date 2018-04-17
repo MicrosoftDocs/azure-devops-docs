@@ -29,7 +29,7 @@ As you walk through this quickstart, we'll ask you to choose:
 
 As you choose from these options in the sections below, this topic will adapt to your choices.
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app]
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
 
 ## Prerequisites
 
@@ -205,7 +205,7 @@ All the tasks you need were automatically added to the build definition by the t
 
 ```yaml
 queue: 
-  name: Hosted VS2017
+  name: Hosted Linux Preview
 
 steps:
 - task: dotNetCoreCLI@1
@@ -322,13 +322,6 @@ YAML builds are not available in TFS.
 
 # [Container](#tab/deploy-container/web)
 
-To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
-
-1. Switch the agent queue to "Hosted Linux".
-
- > **Why do this?** 
- To build a Linux container, you need to use a machine with Docker that is configured to run Linux containers.
-
 1. Select **Tasks**.
 
 1. Select the **.NET Core** publish task, and then 
@@ -403,9 +396,9 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Linux build agent](../../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
 
 1. Select **Get sources** and then:
 
@@ -445,7 +438,7 @@ YAML builds are not available in TFS.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -482,7 +475,7 @@ In VSTS:
 
 1. Select **Process**.
 
-1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue** select _Hosted Linux Preview_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 
