@@ -1,10 +1,12 @@
 ---
 title: Configure retention policies in VSTS
 description: Set up policies to automatically delete packages hosted in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 03/22/2018
 monikerRange: '>= tfs-2017'
 ---

@@ -2,10 +2,12 @@
 title: Guidance for authentication | VSTS REST APIs
 description: Guidance for authentication with with VSTS.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
-ms.author: peakyy
+ms.author: elbatk
+author: elbatk
 ms.date: 06/30/2017
 ---
 

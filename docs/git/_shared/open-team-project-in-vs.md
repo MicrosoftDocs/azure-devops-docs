@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 ##	Open your team project in Visual Studio
 

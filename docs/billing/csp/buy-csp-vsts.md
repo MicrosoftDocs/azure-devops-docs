@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 1/22/2018
+ms.date: 01/22/2018
 monikerRange: 'vsts'
 ---
 # Buy VSTS resources for your customers

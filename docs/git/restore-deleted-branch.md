@@ -2,10 +2,12 @@
 title: Restore a deleted branch in your Git repo | VSTS & TFS
 description: Use the branches page to restore a deleted Git branch in VSTS or Team Foundation Server
 ms.assetid:
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.manager: jepling
+ms.prod: devops
+ms.technology: devops-code-git 
+ms.manager: douge
 ms.author: kangan
+author: kaylangan
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
 ---

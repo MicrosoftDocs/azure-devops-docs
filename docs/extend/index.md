@@ -1,11 +1,13 @@
 ---
 title: Develop extensions content index for VSTS and TFS  
 description: Index of developing extensions for VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/23/2016
 ---
 

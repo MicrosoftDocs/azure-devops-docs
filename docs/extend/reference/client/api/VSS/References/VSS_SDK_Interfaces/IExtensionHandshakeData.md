@@ -2,11 +2,13 @@
 title: VSS/References/VSS.SDK.Interfaces IExtensionHandshakeData API | Extensions for Visual Studio Team Services
 description: Data passed to the host from an extension frame via the initial handshake
 ms.assetid: 2eaf803e-d682-7903-eaf2-456f59913a4d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

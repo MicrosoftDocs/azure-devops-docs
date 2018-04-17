@@ -1,10 +1,12 @@
 ---
 title: VSTS - Data Protection
 description: Learn how Microsoft protects your Visual Studio Team Services (VSTS) projects and data. Microsoft is committed to making sure that your VSTS projects stay safe and secure, without exception. 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: douge
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.author: mlearned
+author: mlearned
+ms.manager: douge
 ms.date: 2/26/2018
 ---
 

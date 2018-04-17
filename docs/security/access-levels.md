@@ -14,7 +14,6 @@ ms.date: 11/28/2017
 monikerRange: '>= tfs-2013'
 ---
 
-
 # About access levels
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]

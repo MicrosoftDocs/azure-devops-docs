@@ -2,10 +2,12 @@
 title: Extend the work item form | Extensions for VSTS
 description: Describes how to extend work item tracking, including adding an action, an observer, a group or a page to the work item form.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/22/2016
 ---
 

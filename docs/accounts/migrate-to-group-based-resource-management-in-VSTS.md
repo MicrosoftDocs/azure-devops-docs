@@ -2,13 +2,13 @@
 title: Migrate to group-based resource management
 description: Migrate Visual Studio Team Services (VSTS) to group-based resource (user) management
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid:
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 4/12/2018
+ms.date: 04/12/2018
 monikerRange: 'vsts'
 ---
 # Migrate to group-based resource management in VSTS

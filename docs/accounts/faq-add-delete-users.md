@@ -2,7 +2,7 @@
 title: Troubleshoot adding and deleting account users in the VSTS user hub
 description: Troubleshoot adding and deleting account users in the VSTS user hub
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
 ms.topic: conceptual
 ms.manager: douge

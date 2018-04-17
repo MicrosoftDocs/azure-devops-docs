@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces ContributedServiceContext API | Extensions for Visual Studio Team Services
 description: Page context configuration that can be contributed by remote services (different VSTS services delivering content to the page)
 ms.assetid: 342d593c-8248-6e29-40dc-b61354481a0c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
