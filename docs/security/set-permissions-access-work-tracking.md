@@ -6,16 +6,14 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/27/2017
 ---
 
-
 # Set permissions and access for work tracking
-
-
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

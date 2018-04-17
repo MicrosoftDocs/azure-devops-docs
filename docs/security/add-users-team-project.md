@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 For anyone to access a team project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
 
-The easiest way to add a number of users to a team project is to add groups defined in [Azure Active Directory (AAD) or Active Directory (AD)](setup-ad-aad.md).
+The easiest way to add a number of users to a team project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
 > [!IMPORTANT]
 > If you're adding users to a VSTS account and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or team project](../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one team project, you can add them to additional team projects using the procedures provided in this topic.
@@ -120,8 +120,7 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 * [Set SharePoint site permissions](../security/set-sharepoint-permissions.md)
 * [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md)
 
-
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md) 
@@ -135,7 +134,3 @@ learn how from these topics:
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
 
 To view permissions for yourself or another user, see [View permissions](../security/view-permissions.md).
-
-
-
-

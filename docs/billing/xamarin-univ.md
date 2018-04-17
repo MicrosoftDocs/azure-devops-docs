@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 10/06/2017
 monikerRange: '>= tfs-2015'
 ---
 # Buy Xamarin University
