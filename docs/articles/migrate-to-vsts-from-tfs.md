@@ -1,11 +1,13 @@
 ---
 title: Migration options for migrating from TFS to VSTS
 description: Learn about migrating from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-article
 ms.assetid: 3D20B6AC-E8A8-4A6D-B9D8-68ED2F5E0E8D
 ms.manager: douge
 ms.author: aaronha
+author: aaronhallberg
 ms.date: 06/22/2017
 ---
 

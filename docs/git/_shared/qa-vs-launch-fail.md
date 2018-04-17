@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 ####Q:	Why doesn't Visual Studio launch when I click "Open in Visual Studio" on my team project page?
 

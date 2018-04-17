@@ -2,10 +2,12 @@
 title: Compare files
 description: Compare files
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
 ---

@@ -2,10 +2,12 @@
 title: Workfold Command
 description: Workfold Command
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

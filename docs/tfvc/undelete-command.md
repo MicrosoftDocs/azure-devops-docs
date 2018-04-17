@@ -2,10 +2,12 @@
 title: Undelete Command
 description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

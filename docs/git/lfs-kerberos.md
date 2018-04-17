@@ -1,10 +1,12 @@
 ---
 title: Kerberos and Git LFS | TFS
 description: Using Git LFS versions older than 2.4.0 with TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---

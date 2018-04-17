@@ -2,11 +2,12 @@
 title: Suspend work, fix a bug, and conduct a code review
 description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.
 ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 08/25/2016
 monikerRange: '>= tfs-2015'
 ---

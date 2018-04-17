@@ -2,12 +2,13 @@
 title: Version Control - Effective feature isolation on TFVC
 description: Explore the feature isolation branching strategy and explore when and how to delete branches
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 03/05/2017
 ms.author: willys
-author: willys
+author: wpschaub
 ---
 
 #Effective feature isolation on TFVC
