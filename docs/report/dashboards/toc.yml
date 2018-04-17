@@ -10,6 +10,8 @@
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
+  - name: Add an Analytics widget to a dashboard
+    href: ../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Add markdown to a dashboard
     href: add-markdown-to-dashboard.md
 - name: Tutorials
@@ -40,8 +42,6 @@
   items:
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
-  - name: "Add an Analytics widget to a dashboard (VSTS)"  
-    href: ../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Create work tracking charts
     href: charts.md
   - name: "Create test progress & result charts"
@@ -74,3 +74,5 @@
     href: /vsts/#pivot=services&panel=testing 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md

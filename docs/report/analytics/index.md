@@ -1,58 +1,65 @@
 ---
-title: Analytics Service (VSTS) 
-description: Index to topics for using the Analytics Service on VSTS  
+title: Analytics Service
+titleSuffix: VSTS
+description: Index to topics for using the Analytics Service on Visual Studio Team Services
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.reviewer: pantal
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: conceptual
+monikerRange: 'vsts'
+ms.date: 3/29/2018
 ---
 
 # Analytics (VSTS) 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-You can use the Analytics Service to answer quantitative questions regarding past or present state and velocity of your projects hosted in Visual Studio Team Services (VSTS). The Analytics Service provides a concise data model of your work tracking data.  
+Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Visual Studio Team Services (VSTS). 
 
-To get started, read [What is Analytics?](what-is-analytics.md) 
+For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md).
 
 <!---
 [!INCLUDE [temp](../_shared/analytics-preview.md)] 
 -->
- 
 
-## 5-Minute Quickstarts
+
+## 5-Minute Quickstart
  - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
 ## Videos
-
 | | |
 | --- | --- |
 | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
 | | |
 
 ## Step-by-Step Tutorials
-
 - [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-
+- [Create an Analytics view](analytics-views-create.md)
+- [Manage Analytics views](analytics-views-manage.md)
 
 ## Concepts
+- [Data available in the Analytics Service](data-available-in-analytics.md)
 - [Analytics widgets](analytics-widgets-vsts.md)
+- [What are Analytics views](what-are-analytics-views.md)
+- [Default Analytics views](analytics-default-views.md)
 - [Performance and latency](performance-latency.md)
-
 
 ## How-to Guides
 - [Set permissions for the Analytics Service](analytics-security.md)
+- [Manage Analytics views](analytics-views-manage.md)
+- [Connect using Excel](access-analytics-excel.md)
 
+## Troubleshooting
+- [Resolve errors associated with an Analytics view](troubleshooting-views.md)
 
 ## Reference 
 - [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [API versioning](../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-
 
 <!---
 Future:
@@ -61,12 +68,13 @@ Understanding Analytics Service data Acquisition
 -->
 
 ## Resources
-- [Dashboards](../dashboards/index.md)
-- [Connect to VSTS using Power BI](../powerbi/index.md)
+- [Dashboards](../dashboards/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Connect to VSTS using Power BI](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
 - [Connect to VSTS using Excel](access-analytics-excel.md)
-- [Extend Analytics with OData](../extend-analytics/index.md)
-- [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+Analytics)
-- [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)
+- [Power BI (VSTS)](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Extend Analytics with OData](../extend-analytics/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+
 
 <!---
 Future:

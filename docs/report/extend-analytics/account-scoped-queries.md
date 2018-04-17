@@ -2,19 +2,20 @@
 title: Account and project scope queries
 titleSuffix: VSTS 
 description: How to query the OData Analytics service for an account or at the project-level  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.date: 11/13/2017
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
+ms.topic: quickstart
 ms.date: 11/13/2017
 ---
 
 # Project and account-scoped queries
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct project or account-scoped queries to return work items of interest. You run these queries directly in your browser.
 
@@ -173,5 +174,5 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 > [!div class="nextstepaction"]
 > [Query aggregate data](aggregated-data-analytics.md)
 
-## Related notes
+## Related articles
 - [Query guidelines](odata-query-guidelines.md) 

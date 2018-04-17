@@ -2,8 +2,8 @@
 title: Query work tracking data using the OData Analytics service
 titleSuffix: VSTS
 description: How to generate work item tracking reports for Visual Studio Team Services (VSTS) using the OData Analytics service  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.manager: douge
 ms.author: kaelli
@@ -347,7 +347,7 @@ The Analytics Service forces paging when query results exceed 10000 records. In 
 > [Project & account-scoped queries](account-scoped-queries.md)
 
  
-## Related notes
+## Related articles
 - [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](http://www.odata.org/documentation/)  
