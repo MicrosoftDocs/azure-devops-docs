@@ -1,21 +1,24 @@
 ---
-title: Functions available in Power BI Data Connector 
+title: Connect using Power Query and VSTS functions 
 titleSuffix: VSTS 
-description: Descriptions of functions available from the Power BI Data Connector and the Analytics Service for VSTS
+description: Describes available functions from the Power BI Data Connector and the Analytics Service for Visual Studio Team Services 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+monikerRange: 'vsts'
+ms.date: 2/14/2018
 ---
 
-# Connecting using the VSTS Functions in Power Query
+# Connect using Power Query and Visual Studio Team Services (VSTS) functions 
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-The Data Connector for VSTS includes functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. The following functions are provided:
+The Data Connector for VSTS includes Power Query M functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. This topic will describe the arguments for the functions and how to use them to connect to Analytics. 
+
+The following functions are provided:
 
 | Function | Description |
 |-|-|
@@ -23,7 +26,6 @@ The Data Connector for VSTS includes functions which can be used by query author
 | VSTS.Contents | Deprecated. Please use VSTS.AccountContents
 | VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.  |
 
-<!--We strongly recommend using VSTS.Feed instead of VSTS.Contents and using the latest version of Power BI when possible.-->
 
 ## VSTS.Feed
 Allows for users to easily execute OData queries against Analytics in VSTS.
@@ -31,7 +33,7 @@ Allows for users to easily execute OData queries against Analytics in VSTS.
 The `VSTS.Feed` function has the same arguments, options and return value format as `OData.Feed`. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 
 If you are already using `OData.Feed` to access data from VSTS, you can replace it with `VSTS.Feed` to leverage Data Connector authentication.  
-This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the PowerBI.com.
+This will also inform Power BI that these requests are referencing the same data source and you will be able to combine the data without violating the single data source constraints for refreshing datasets in the PowerBI.com.
 
 'VSTS.Feed' provides a subset of the Arguments and Options available through 'OData.Feed'. The specific limitations are outlined in the table below:
 
@@ -92,7 +94,7 @@ This will also inform Power BI that these requests are referencing the same data
 ### Examples for VSTS.Feed
 Use `VSTS.Feed` function to count the number of work items in a project.
 
-1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor
+1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor.
 2. In the editor add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case select `Count`.
 
@@ -117,7 +119,7 @@ in
 
 Use `VSTS.Feed` function to load a count of User Stories for each Iteration Path.
 
-1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor
+1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor.
 2. In the editor add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case expand 'Iteration' and select 'Iteration Path' then select `Count`.
 
@@ -144,7 +146,7 @@ in
 Use VSTS.Feed function to load detailed information about bugs.
 
 1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor
-2. In the editor add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
+2. In the editor, add the text below to load the feed for `fabrikam-fiber-inc` account and `Fabrikam-Fiber-Git` project using full URL to OData endpoint.
 3. Select relevant columns using "Choose Columns", in this case select `WorkItemID` and `State`.
 
 Basic Query:
@@ -236,6 +238,6 @@ This will also inform Power BI that these requests are referencing the same data
     </tr>
 </table>
 
-## Related notes
+## Related articles
 * [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)
 * [Power Query (M) Formula Reference - Accessing data functions](https://msdn.microsoft.com/library/mt296615.aspx)
