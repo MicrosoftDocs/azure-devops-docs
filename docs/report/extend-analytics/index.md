@@ -1,20 +1,24 @@
 ---
-title: Extend Analytics with OData (VSTS)  
-description: Index to topics for using OData backed Analytics Service on VSTS  
+title: Extend Analytics with OData
+titleSuffix: VSTS  
+description: Using OData backed Analytics Service for Visual Studio Team Services 
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
-ms.manager: aacathca
-ms.author: pantal
-ms.date: 11/17/2017
+ms.prod: devops
+ms.technology: devops-analytics
+ms.manager: douge
+ms.reviewer: pantal
+ms.author: kaelli
+ms.topic: overview
+monikerRange: 'vsts'
+ms.date: 3/29/2018
 ---
 
 #  Extend Analytics with OData (Preview) 
 
-**VSTS**  
 
-Using OData, you can directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Visual Studio Team Services (VSTS) account.   
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
+Using OData, you can directly query the Analytics Service for Visual Studio Team Services (VSTS) from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Visual Studio Team Services (VSTS) account.   
 
 ## 5-Minute Quickstarts
 
@@ -41,7 +45,8 @@ Using OData, you can directly query the Analytics Service from a supported brows
 
  
 ## Concepts
-- [Performance and latency](../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json)
+- [Data available in the Analytics Service](../analytics/data-available-in-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
+- [Performance and latency](../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 
 
@@ -51,18 +56,14 @@ Understand Agile process data
 -->
 
 ## How-to Guides
-- [Set permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json)
+- [Set permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
 
 <!--
 Use Agile process data
 -->
 
-<!--
-Planned:
-Build a widget that uses the Analytics Service
--->
 
-## Reference 
+## Reference
 - [Analytics OData v4 endpoint](data-model-analytics-service.md)
 - [Supported functions & clauses](odata-supported-features.md) 
 - [API versioning](odata-api-version.md)
@@ -72,5 +73,5 @@ Build a widget that uses the Analytics Service
 - [Analytics (VSTS)](../analytics/index.md)
 - [PowerBI (VSTS)](../powerbi/index.md)
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
-- [Developer Community: Analytics support forum](https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=VSTS+analytics+)
-- [User Voice: Reporting feature requests](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting)
+
+
