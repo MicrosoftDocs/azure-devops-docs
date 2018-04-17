@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Building extensions for Visual Studio
 description: Build extensions for Visual Studio
 ms.assetid: A5549D87-6E1E-4429-BE46-8A46A7260A83
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

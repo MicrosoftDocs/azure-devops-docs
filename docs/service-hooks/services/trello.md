@@ -1,13 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Trello with VSTS
 description: Use Trello with your VSTS account
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Trello with VSTS

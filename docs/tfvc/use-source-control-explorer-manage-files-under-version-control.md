@@ -2,10 +2,12 @@
 title: Use Source Control Explorer to manage files under version control
 description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 12/05/2016
 monikerRange: '>= tfs-2015'
 ---

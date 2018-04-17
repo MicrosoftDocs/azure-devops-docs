@@ -2,11 +2,12 @@
 title: Update your branch history with rebase | VSTS & TFS
 description: Rewriting History using Git rebase
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

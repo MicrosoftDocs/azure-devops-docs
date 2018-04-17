@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Zendesk with VSTS
 description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 02/08/2017
 ---
 

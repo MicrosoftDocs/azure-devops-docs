@@ -1,8 +1,9 @@
 ---
 title: Technical Articles 
 description: A public collection of VSTS-specific topics shared for partners.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 01/04/2018
 ms.author: kaelli

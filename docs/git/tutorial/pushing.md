@@ -2,11 +2,12 @@
 title: Sync your changes to a remote Git repo | VSTS & TFS
 description: Using Git Push to share code with Git.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---

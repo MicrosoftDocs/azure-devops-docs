@@ -2,10 +2,12 @@
 title: Web UI Controls | Extensions for VSTS
 description: Use these controls in your extension for VSTS.
 ms.assetid: ccb6413e-ca29-4f3d-8f1d-caf896706b10
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

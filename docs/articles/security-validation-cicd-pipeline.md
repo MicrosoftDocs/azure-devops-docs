@@ -2,12 +2,13 @@
 title: DevOps - Adding Continuous Security Validation to your CI/CD Pipeline
 description: Explore how to add continuous security validation to your CI/CD pipeline
 ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
-ms.prod: vs-security-validation-cicd-pipeline
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 10/19/2017
 ms.author: willys
-author: mike douglas
+author: wpschaub
 ---
 # Adding Continuous Security Validation to your CI/CD Pipeline
 

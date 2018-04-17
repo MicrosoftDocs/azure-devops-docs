@@ -2,10 +2,12 @@
 title: Find and view changesets
 description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

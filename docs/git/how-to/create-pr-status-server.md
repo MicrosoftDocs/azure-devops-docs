@@ -2,10 +2,12 @@
 title: Create a pull request status server with Node.js
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
 ms.author: mmitrik
+author: mmitrik
+ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
 ---

@@ -2,10 +2,12 @@
 title: Move your packages to the cloud
 description: Leave your file shares behind and bring your packages to VSTS or Team Foundation Server
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

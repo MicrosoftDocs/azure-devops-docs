@@ -3,10 +3,12 @@ title: View commit history | VSTS & TFS
 description: View Git commit history in Visual Studio
 ms.assetid: f1ceefae-192f-49ee-af52-b9a29852bf85
 toc: show
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sancha
+author: steved0x
+ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
 ---

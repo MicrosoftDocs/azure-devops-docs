@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces DataProviderQuery API | Extensions for Visual Studio Team Services
 description: A query that can be issued for data provider data
 ms.assetid: a9bb478b-d7fe-5d30-db69-5bc45e713967
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

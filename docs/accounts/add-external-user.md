@@ -1,8 +1,8 @@
 ---
 title: Add an external user to your VSTS account 
-description: How to add an external user in VSTS (Visual Studio Online, VSO, VSTS) (outside user)
+description: Learn how to add an external or outside user in your VSTS (Visual Studio Online, VSO, VSTS) account
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.manager: douge

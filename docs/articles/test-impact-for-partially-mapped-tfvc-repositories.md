@@ -2,11 +2,13 @@
 title: Version Control - Test Impact for partially mapped TFVC repositories in TFS/VSTS 
 description: Test Impact for partially mapped TFVC repositories in TFS/VSTS 
 ms.assetid: 31825137-1d76-4bf5-a30b-35502c59e44c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: douge
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.date: 03/08/2018
 ms.author: sdanie
+author: steved0x
+ms.manager: douge
 ---
 
 # Test Impact for partially mapped TFVC repositories in TFS/VSTS

@@ -1,13 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Jenkins with VSTS
 description: Use Jenkins with your VSTS account
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Jenkins with VSTS

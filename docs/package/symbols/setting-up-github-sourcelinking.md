@@ -1,12 +1,14 @@
 ---
 title: Setting up GitHub Source Linking with VSTS Build & VSTS Symbol Server
 description: Using build to index and publish symbols from a VSTS-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
 ms.manager: douge
 ms.date: 03/02/2018
-ms.author: midenn
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 author: midenn
 ---
 

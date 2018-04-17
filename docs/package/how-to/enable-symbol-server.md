@@ -1,10 +1,12 @@
 ---
 title: Enable Symbol Server for Package Management in VSTS | Microsoft Docs
 description: Enable the Symbol Server preview for Package Management in Visual Studio Team Services
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.assetid: 8cdfb55b-62e2-4420-be9a-021896bbe5a2
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 02/12/2018
 monikerRange: 'vsts'
 ---

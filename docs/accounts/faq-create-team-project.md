@@ -3,7 +3,7 @@ title: Troubleshoot creating a team project
 description: Troubleshoot creating a team project
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
 ms.prod: devops
-ms.technology: devops-settings
+ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley

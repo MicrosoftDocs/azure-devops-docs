@@ -2,12 +2,13 @@
 title: Remove large binaries from your Git history
 description: Remove large binaries from your existing Git repo
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 06/01/2016
 ms.author: edwardf
-author: edwardf
+author: steved0x
 ---
 
 # Remove large binaries from your Git repo

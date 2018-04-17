@@ -2,10 +2,12 @@
 title: Work with version control locks
 description: Work with version control locks
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

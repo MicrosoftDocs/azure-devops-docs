@@ -2,10 +2,12 @@
 title: History command
 description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

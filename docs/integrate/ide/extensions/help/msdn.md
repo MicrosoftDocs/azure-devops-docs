@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: MSDN
 description: Find additional help at MSDN.
 ms.assetid: 31BD6BC8-A377-4F02-974E-03C480C43A54
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

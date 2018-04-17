@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for VSTS
 description: Auth and secuirty for VSTS Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/29/2016
 ---
 

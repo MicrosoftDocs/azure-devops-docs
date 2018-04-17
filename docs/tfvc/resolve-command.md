@@ -2,10 +2,12 @@
 title: Resolve Command
 description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

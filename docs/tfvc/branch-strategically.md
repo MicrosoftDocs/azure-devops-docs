@@ -2,10 +2,12 @@
 title: Branch strategically
 description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
