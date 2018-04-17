@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces ContributionConstraint API | Extensions for Visual Studio Team Services
 description: Specifies a constraint that can be used to dynamically include/exclude a given contribution
 ms.assetid: 94a0b2af-66bf-1931-3f37-3bdd0b5d29ee
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

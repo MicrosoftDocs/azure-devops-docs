@@ -2,11 +2,13 @@
 title: VSS/SDK/Services/ExtensionData ExtensionDataService API | Extensions for Visual Studio Team Services
 description: Provides a wrapper around the REST client for getting and saving extension setting values
 ms.assetid: 40a987e0-ade7-1b69-b246-fe2a259e59bc
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

@@ -2,11 +2,13 @@
 title: VSS/References/SDK.Interfaces AppInsightsCustomTrackPageData API | Extensions for Visual Studio Team Services
 description: Model that can be used to customize the values sent to AppInsights via &quot;trackPage&quot;
 ms.assetid: cb705e54-f6e1-052d-38fb-a6cac86e5370
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 generated: true
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

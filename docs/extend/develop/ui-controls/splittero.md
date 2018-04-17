@@ -2,10 +2,12 @@
 title: Use the Splitter Control | Extensions for VSTS
 description: Use the splitter control to have splitted and resizable containers for other controls.
 ms.assetid: 1EE1DD70-0C64-4B65-8F7F-175A9385041A
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

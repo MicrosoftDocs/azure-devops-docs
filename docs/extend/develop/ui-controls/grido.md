@@ -2,10 +2,12 @@
 title: Use the Grid Control | Extensions for VSTS
 description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for VSTS.
 ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

@@ -2,10 +2,12 @@
 title: Secure feeds using permissions
 description: Secure feeds using permissions in Package Management in VSTS or Team Foundation Server
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
 ---

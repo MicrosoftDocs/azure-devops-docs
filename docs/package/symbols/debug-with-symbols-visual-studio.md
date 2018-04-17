@@ -2,10 +2,12 @@
 title: Debug with symbols in Visual Studio
 description: Debug with symbols in Visual Studio using the Symbol Server in VSTS Package Management
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 10/18/2017
 ---
 

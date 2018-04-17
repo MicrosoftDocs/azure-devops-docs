@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Tutorials catalog for developing extensions in VSTS
 description: Follow tutorials to create an extension in VSTS
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/19/2016
 ---
 

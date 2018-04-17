@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Flowdock with VSTS
 description: Use Flowdock with your VSTS account
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

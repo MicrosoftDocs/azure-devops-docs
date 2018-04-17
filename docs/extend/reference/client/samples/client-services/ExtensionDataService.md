@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: VSTS Extension Data Service Example
 description: A sample that shows how to use a extension data service with a VSTS extension
 ms.assetid: 4e66185f-a91d-4e2b-82b8-fd43f3db9fb6
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/25/2016
 ---
 

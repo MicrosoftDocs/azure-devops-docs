@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Discover menu group identifiers | Extensions for VSTS
 description: Discover the group IDs for existing menus in VSTS.
 ms.assetid: ca1b49b5-d36c-4742-a85b-fe9ad83a7a9a
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

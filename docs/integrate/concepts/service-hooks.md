@@ -2,10 +2,12 @@
 title: Service hooks in VSTS REST APIs
 description: Learn about service hooks and how to set up actions to take when specific events occur in VSTS.
 ms.assetid: ec039cf9-2731-4451-b9b8-5711b229c0ff
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

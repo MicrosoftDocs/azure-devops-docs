@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Add a chart | Extensions for VSTS
 description: Add a chart to your extension in VSTS.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
+ms.topic: conceptual
 ms.manager: douge
-ms.author: rbansal
+ms.author: elbatk
+author: elbatk
 ms.date: 10/10/2016
 ---
 

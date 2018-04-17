@@ -2,13 +2,14 @@
 title: Use #ID to link work items in discussions & pull requests 
 titleSuffix: VSTS & TFS
 description: Link to work items in discussions and pull requests 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 03/01/2018
 monikerRange: '>= tfs-2015'
 ---

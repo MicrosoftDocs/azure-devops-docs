@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: FAQ for Visual Studio extensions
 description: Frequently asked questions (FAQ) for building Visual Studio extensions.
 ms.assetid: 58B3A4FE-7188-450F-8402-EA9DFCD878E3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

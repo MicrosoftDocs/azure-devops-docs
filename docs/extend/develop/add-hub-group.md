@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Add a Hub Group | Extensions for VSTS
 description: Add a hub group in VSTS for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

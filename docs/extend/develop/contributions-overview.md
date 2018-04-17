@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Contributions Model Fundamentals | Extensions for VSTS
 description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

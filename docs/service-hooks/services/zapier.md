@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Zapier with VSTS
 description: Use Zapier with your VSTS account
 ms.assetid: 93b2aed5-2f28-41a3-b1b7-2d88b4feec09
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 

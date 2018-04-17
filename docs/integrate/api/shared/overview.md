@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Account and Profile Overview | REST API Reference for VSTS
 description: Work with accounts and profiles programmatically using the REST APIs for VSTS.
 ms.assetid: 2CC3AFF0-D665-407A-AC69-C68C61FB3267
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
