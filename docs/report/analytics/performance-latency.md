@@ -2,18 +2,19 @@
 title: Performance and latency with the Analytics Service
 titleSuffix: VSTS   
 description: Understand how data is updated and time requirements associated with querying the Analytics Service 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 11/13/2017
 ---
 
 # Performance and latency of the Analytics Service for VSTS
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 When you use the Analytics Service for reporting, you’ll want to understand the performance and data latency issues associated with the service. To get started using the Analytics Service, see what is the [Analytics Service](./what-is-analytics.md).
 

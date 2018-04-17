@@ -8,7 +8,7 @@ ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/19/2017
+ms.date: 04/17/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -322,6 +322,30 @@ If you want to create a reusable and automatically updated piece of logic, then 
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+::: moniker range="tfs-2018 || vsts"
+
+### I don't see XAML builds. What do I do?
+
+XAML builds are deprecated. We strongly recommend that you migrate to the new builds as explained above. 
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your account. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+If you're not yet ready to migrate, then to enable XAML builds:  
+
+1. Install [TFS 2018.2](https://www.visualstudio.com/downloads/?q=tfs).
+
+1. Connect your XAML build servers to your TFS server. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+
+::: moniker-end
 
 ### How do I add conditional logic to my build process?
 
