@@ -624,23 +624,23 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 ## TFS Build Compatibility
 
-**TFS 2018 discontinues support for the Xaml build system.**
+**TFS 2018 discontinues support for the XAML build system.**
 
 We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
 
-You may want to use an older version of Build if you plan to continue using the Xaml build system, 
+You may want to use an older version of Build if you plan to continue using the XAML build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 
-with older operating systems in your TFS deployment. TFS 2010 Xaml Controllers support operating 
+with older operating systems in your TFS deployment. TFS 2010 XAML Controllers support operating 
 systems as far back as Windows XP and Windows Server 2003.
 
 TFS Version | Supported Build versions
 ------------|--------------------------
-TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent
-TFS 2017    | TFS 2017 Build Agent<br/>TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
-TFS 2015    | TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
-TFS 2013    | TFS 2013 Xaml Controller<br/>TFS 2012 Xaml Controller<br/>TFS 2010 Xaml Controller
-TFS 2012    | TFS 2012 Xaml Controller<br/>TFS 2010 Xaml Controller
-TFS 2010    | TFS 2010 Xaml Controller
+TFS 2018.2  | TFS 2018 Build Agent<br/>TFS 2017 Build Agent
+TFS 2017    | TFS 2017 Build Agent<br/>TFS 2015 Build Agent<br/>TFS 2015 XAML Controller<br/>TFS 2013 XAML Controller<br/>TFS 2010 XAML Controller
+TFS 2015    | TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 XAML Controller<br/>TFS 2010 XAML Controller
+TFS 2013    | TFS 2013 XAML Controller<br/>TFS 2012 XAML Controller<br/>TFS 2010 XAML Controller
+TFS 2012    | TFS 2012 XAML Controller<br/>TFS 2010 XAML Controller
+TFS 2010    | TFS 2010 XAML Controller
 
 ## More information about TFS requirements for companion products:
 
