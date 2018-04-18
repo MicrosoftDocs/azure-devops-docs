@@ -13,37 +13,105 @@ monikerRange: '>= tfs-2015'
 
 # IntelliJ Plug-in for VSTS & TFS Frequently Asked Questions (FAQ)
 
-**Q: Where can I learn more about installing the IntelliJ plugin?**
 
-**A:** Watch a how-to video on installing the plugin on our [YouTube channel](https://www.youtube.com/watch?v=vhDNLyMsXGk).
+* [Where can I learn more about installing the IntelliJ plugin?](#where-can-i-learn-more-about-installing-the-intellij-plugin)
+* [Does the IntelliJ plug-in support TFVC?](#does-the-intellij-plug-in-support-tfvc)
+  * [TFVC support](#tfvc-support)
+  * [TFVC setup requirements](#tfvc-setup-requirements)
+  * [Setting TFVC as the version control system](#setting-tfvc-as-the-version-control-system)
+* [How can I import my IntelliJ project into VSTS?](#how-can-i-import-my-intellij-project-into-vsts)
+* [How can I checkout a VSTS Git repo from within IntelliJ?](#how-can-i-checkout-a-vsts-git-repo-from-within-intellij)
+* [How can I create a pull request using the IntelliJ plugin?](#how-can-i-create-a-pull-request-using-the-intellij-plugin)
+* [Where can I learn more about the VSTS Pull Request feature?](#where-can-i-learn-more-about-the-vsts-pull-request-feature)
+* [What if I can't see any repositories after signing in?](#what-if-i-cant-see-any-repositories-after-signing-in)
+* [When I test the tf executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?](#when-i-test-the-tf-executable-i-get-a-warning-that-the-version-detected-is-000-how-can-i-make-it-detect-the-actual-version)
+* [How do I collect logs to help troubleshoot an issue?](#how-do-i-collect-logs-to-help-troubleshoot-an-issue)
 
-**Q: How can I import my IntelliJ project into VSTS?**
+### Where can I learn more about installing the IntelliJ plugin?
 
-**A:** Watch a how-to video on importing projects on our [YouTube channe](https://www.youtube.com/watch?v=D7bpC6KwrA4).
+Watch a how-to video on installing the plugin on our [YouTube channel](https://www.youtube.com/watch?v=vhDNLyMsXGk).
 
-**Q: How can I checkout a VSTS Git repo from within IntelliJ?**
+### Does the IntelliJ plug-in support TFVC?
 
-**A:** Watch a how-to video on checking out projects on our [YouTube channel](https://www.youtube.com/watch?v=dzGVkna-Nzs).
+Yes, TFVC support is available in the IntelliJ plug-in.
 
-**Q: How can I create a pull request using the IntelliJ plugin?**
+* [TFVC support](#tfvc-support)
+* [TFVC setup requirements](#tfvc-setup-requirements)
+* [Setting TFVC as the version control system](#setting-tfvc-as-the-version-control-system)
 
-**A:** Watch a how-to video on pull requests on our [YouTube channe](https://www.youtube.com/watch?v=lcSXH23xrY8).
+#### TFVC support
+ The current TFVC features supported are:
 
-**Q: Where can I learn more about the VSTS Pull Request feature?**
+TFVC support is available in the IntelliJ plug-in. The current features supported are:
+* Checkout a TFVC repository from Team Services or Team Foundation Server 2015+.
+* Execute all basic version control actions such as add, delete, rename, move, etc.
+* View local changes and history for your files.
+* Create, view, and edit your workspace.
+* Checkin and update local files.
+* Merge conflicts from updates.
+* Create and merge branches.
+* Create labels.
+* Lock and unlock files and directories.
+* Associate work items with checkins.
+* Supports using a TFS proxy.
+* Local workspace support only.
 
-**A:** This [Conduct a Git pull request](/vsts/git/tutorial/pullrequest) tutorial provides more details.
+The TFVC functionality is available from the `VCS` dropdown menu in the toolbar or from right clicking in the Project window. A `TFVC`
+menu item will display the options available for you to use. A demo of the TFVC features can be found <a href="https://youtu.be/va5rM5ZaXIg" target="_blank">here</a>.
 
-**Q: What if I can't see any repositories after signing in?**
+#### TFVC setup requirements
+You must have the <a href="https://github.com/Microsoft/team-explorer-everywhere/releases" target="_blank">TF command line tool</a> installed to be able
+to use TFVC features. The minimum version supported by the plugin is 14.0.3. To install the tool, download the latest "TEE-CLC-14.\*.\*.zip" file and extract it
+to a known location. After extracting the files, you must accept the license agreement. To do so, open a Command Prompt/Terminal
+window, navigate to the extracted directory, and run `tf eula`. After reading the EULA, enter `y` to accept it. **NOTE**: If you forget to do this,
+the plugin may fail to load with a RuntimeException.
 
-**A:** In some rare cases, the list of repositories is empty after signing in with your VSTS account.  If that happens, you can click the **Team Foundation Server** tab and enter the URL to yourVSTS account in the **Server URL** textbox and then click **Connect**.  If you don't know the URL to your VSTS account, the VSTS accounts you have access to will be listed at [https://app.vssps.visualstudio.com](https://app.vssps.visualstudio.com).
+For the tool to be detected by the plugin, you must set the location of the executable in the Settings/Preferences menu by following these instructions:
 
-**Q: When I test the `tf` executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?**
+1. Go to `File` then `Settings` in the toolbar for Windows and Linux. For Mac, go to `Android Studio` then `Preferences`.
+2. Choose `Version Control` from the left menu then `TFVC`.
+3. In the `Path to tf executable` text field, navigate to the location of the tf executable.
+4. Click `Test` to test that the executable has been found and is working as expected.
+5. Click `Apply` then `OK` to save and exit.
 
-**A:** This has been seen in version 14.0.3 and below of the TF Comand Line Tool when it defaults to not use English for the output. This has been fixed in the newer versions of the tool which can be downloaded from [GitHub](https://github.com/Microsoft/team-explorer-everywhere/releases).
+If you intend to use the `tf` tools from the command line, you may want to add this folder to your `PATH` environment variable as well.
 
-**Q: How do I collect logs to help troubleshoot an issue?**
+If you do not want to get prompted to enter your credentials for each `tf` command that you run, set the `TF_AUTO_SAVE_CREDENTIALS` environment variable to `1`.
 
-**A:** First enable logging for `com.microsoft.alm`, reproduce the issue and send us the `idea.log` file:
+#### Setting TFVC as the version control system
+If TFVC does not come up as your version control system (VCS) then it can be set manually. Go to the `VCS` dropdown menu in the toolbar
+and select `Enable Version Control Integration`. Select TFVC from the dropdown menu and click `OK`.
+
+
+
+### How can I import my IntelliJ project into VSTS?
+
+Watch a how-to video on importing projects on our [YouTube channel](https://www.youtube.com/watch?v=D7bpC6KwrA4).
+
+### How can I checkout a VSTS Git repo from within IntelliJ?
+
+Watch a how-to video on checking out projects on our [YouTube channel](https://www.youtube.com/watch?v=dzGVkna-Nzs).
+
+### How can I create a pull request using the IntelliJ plugin?
+
+Watch a how-to video on pull requests on our [YouTube channel](https://www.youtube.com/watch?v=lcSXH23xrY8).
+
+### Where can I learn more about the VSTS Pull Request feature?
+
+This [Conduct a Git pull request](/vsts/git/tutorial/pullrequest) tutorial provides more details.
+
+### What if I can't see any repositories after signing in?
+
+In some rare cases, the list of repositories is empty after signing in with your VSTS account.  If that happens, you can click the **Team Foundation Server** tab and enter the URL to your VSTS account in the **Server URL** textbox and then click **Connect**.  If you don't know the URL to your VSTS account, the VSTS accounts you have access to will be listed at [https://app.vssps.visualstudio.com](https://app.vssps.visualstudio.com).
+
+### When I test the tf executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?
+
+This has been seen in version 14.0.3 and below of the TF Comand Line Tool when it defaults to not use English for the output. This has been fixed in the newer versions of the tool which can be downloaded from [GitHub](https://github.com/Microsoft/team-explorer-everywhere/releases).
+
+
+### How do I collect logs to help troubleshoot an issue?
+
+First enable logging for `com.microsoft.alm`, reproduce the issue and send us the `idea.log` file:
 1. Help->Configure Debug Log Settings...
 2. In the **Custom Debug Log Configuration** textbox, add the following on its own line:
     `com.microsoft.alm`
