@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
 ms.manager: douge
 ms.author: dastahel
-ms.date: 03/13/2018
+ms.date: 04/18/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -68,7 +68,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_ or _Hosted macOS Preview_. This uses a VSTS pool of agents that have the software needed to build your app.
+ * **VSTS:** Select _Hosted Linux_ or _Hosted macOS_. This uses a VSTS pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../concepts/agents/agents.md).
 
