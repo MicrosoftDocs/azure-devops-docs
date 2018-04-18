@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
 ms.manager: douge
 ms.author: dastahel
-ms.date: 03/21/2018
+ms.date: 04/18/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -67,7 +67,7 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -83,7 +83,7 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -117,7 +117,7 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -133,7 +133,7 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
