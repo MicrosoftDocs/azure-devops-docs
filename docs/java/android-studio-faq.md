@@ -17,8 +17,8 @@ monikerRange: '>= tfs-2015'
 * [Where can I learn more about installing the Android Studio plug-in?](#where-can-i-learn-more-about-installing-the-android-studio-plug-in)
 * [Does the Android Studio plug-in support TFVC?](#does-the-android-studio-plug-in-support-tfvc)
   * [TFVC support](#tfvc-support)
-  * [TFVC Setup Requirements](#tfvc-setup-requirements)
-  * [Setting TFVC as the Version Control System](#setting-tfvc-as-the-version-control-system)
+  * [TFVC setup requirements](#tfvc-setup-requirements)
+  * [Setting TFVC as the version control system](#setting-tfvc-as-the-version-control-system)
 * [How can I import my Android Studio project into VSTS?](#how-can-i-import-my-android-studio-project-into-vsts)
 * [How can I checkout a VSTS Git repo from within Android Studio?](#how-can-i-checkout-a-vsts-git-repo-from-within-android-studio)
 * [How can I create a pull request using the Android Studio plugin?](#how-can-i-create-a-pull-request-using-the-android-studio-plugin)
@@ -37,8 +37,8 @@ Watch a how-to video on installing the plugin on our [YouTube channel](https://w
 Yes, TFVC support is available in the Android Studio plug-in.
 
 * [TFVC support](#tfvc-support)
-* [TFVC Setup Requirements](#tfvc-setup-requirements)
-* [Setting TFVC as the Version Control System](#setting-tfvc-as-the-version-control-system)
+* [TFVC setup requirements](#tfvc-setup-requirements)
+* [Setting TFVC as the version control system](#setting-tfvc-as-the-version-control-system)
 
 #### TFVC support
  The current TFVC features supported are:
@@ -58,7 +58,7 @@ Yes, TFVC support is available in the Android Studio plug-in.
 The TFVC functionality is available from the `VCS` dropdown menu in the toolbar or from right clicking in the Project window. A `TFVC`
 menu item will display the options available for you to use. A demo of the TFVC features can be found <a href="https://youtu.be/va5rM5ZaXIg" target="_blank">here</a>.
 
-#### TFVC Setup Requirements
+#### TFVC setup requirements
 You must have the <a href="https://github.com/Microsoft/team-explorer-everywhere/releases" target="_blank">TF command line tool</a> installed to be able
 to use TFVC features. The minimum version supported by the plugin is 14.0.3. To install the tool, download the latest "TEE-CLC-14.\*.\*.zip" file and extract it
 to a known location. After extracting the files, you must accept the license agreement. To do so, open a Command Prompt/Terminal
@@ -77,7 +77,7 @@ If you intend to use the `tf` tools from the command line, you may want to add t
 
 If you do not want to get prompted to enter your credentials for each `tf` command that you run, set the `TF_AUTO_SAVE_CREDENTIALS` environment variable to `1`.
 
-#### Setting TFVC as the Version Control System
+#### Setting TFVC as the version control system
 If TFVC does not come up as your version control system (VCS) then it can be set manually. Go to the `VCS` dropdown menu in the toolbar
 and select `Enable Version Control Integration`. Select TFVC from the dropdown menu and click `OK`.
 
