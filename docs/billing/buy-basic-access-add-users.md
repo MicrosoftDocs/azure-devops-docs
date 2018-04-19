@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -76,8 +76,15 @@ The number of users to whom you can assign Basic appears on the right side of yo
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
+## Clean up resources
+
+To remove users or make an adjustment, sign in to VSTS, choose **Manage users**, and then choose **Change quantity**.
+
 ## Next steps
 
-* [Buy CICD](buy-more-build-vs.md)
-* [Start free trials](try-additional-features-vs.md)
+> [!div class="nextstepaction"]
+> [Buy CI/CD](https://docs.microsoft.com/en-us/vsts/billing/buy-more-build-vs?view=vsts)
+
+## Related articles
+
 * [Reduce or cancel paid VSTS users](reduce-cancel-paid-vsts-users.md)
