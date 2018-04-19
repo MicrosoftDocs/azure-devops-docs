@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/22/2018
+ms.date: 04/19/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -21,9 +21,11 @@ Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month),
 cloud-based load testing--or to buy other features for your users that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Q: Can I buy VSTS using a Purchase Order?
+
 A: No. VSTS must be purchased using an Azure subscription. (Think of it as your Azure billing account.)
 
 ### Q: What types of Azure subscriptions can be used to buy VSTS?
+
 A: Almost all Azure subscriptions can be used--we support Azure subscriptions connected to your 
 [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by 
 Cloud Solution Providers (CSPs), Azure subscriptions set up through Microsoft Open License resellers, Pay-As-You-Go Azure subscriptions, and 
@@ -48,7 +50,12 @@ to pay for VSTS. Before you make purchases using this type of Azure subscription
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 ### Q: Am I required to buy other Azure services?
-A: Not at all. If you only want to buy VSTS via Azure, you can do that. 
+
+A: Not at all. If you only want to buy VSTS via Azure, you can do that.
+
+### Q: Can tags be applied to Team Services Accounts from the Azure portal?
+
+A: No, however this feature is on our backlog to add in the future.
 
 ## Enterprise Agreement (EA) customers
 
@@ -83,6 +90,7 @@ will trigger an overage invoice.
 ## How charges are processed
 
 ### Q: How are user charges (VSTS User/Basic, Test Manager, and Package Management) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+
 A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users  
 was made on April 15, then we would charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter 
 until you cancel, the full 10 units will be billed.
@@ -91,6 +99,7 @@ When you increase the paid quantity later, we also prorate the increased units t
 users on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May). 
 
 ### Q: How do reductions or cancelations work?
+
 A: When you reduce or cancel user charges or CI/CD charges, you are canceling automatic renewal. The features and/or CI/CD capacity continue through the end of the current 
 calendar month, taking effect on the fist day of the next month.
 
@@ -104,7 +113,7 @@ expires--your VSTS account will revert to the free tier of service, but you'll k
 >[!NOTE]
 >You must keep your Azure subscription in good standing to avoid interruptions in paid VSTS services.
 
-###Q:  Where can I check my bill or update billing details on my Azure subscription?
+### Q:  Where can I check my bill or update billing details on my Azure subscription?
 
 A:  If you're the owner or contributor for the Azure subscription used for billing your VSTS account, you can view your billing details on the 
 [Azure account portal](https://account.azure.com/).
@@ -122,29 +131,30 @@ charges cannot be split across multiple Azure subscriptions.
 A:  Yes, you can use the same Azure subscription for billing across multiple VSTS accounts. But you can't link a single VSTS account to multiple Azure subscriptions.
 
 <a name="find-owner"></a>
-###Q:	How do I find a project collection administrator?
+
+### Q: How do I find a project collection administrator?
 
 A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
 
-0.	Go to your VSTS account's security settings. 
+1.	Go to your VSTS account's security settings. 
 
 	<img alt="Click gear button, Security" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-0.	Under **Security**, view your project collection administrators.
+2.	Under **Security**, view your project collection administrators.
 
 	<img alt="Go to Project Collection Administrators, Members" src="../_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-###Q:	How do I find the account owner?
+### Q: How do I find the account owner?
 
 A: You can find the current owner in your VSTS account settings.
 
-0.	Go to your VSTS account settings.
+1. Go to your VSTS account settings.
 
-	<img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Go to account settings" src="../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-0.	Under **Settings**, find the current owner.
+2. Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Find current owner" src="../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 ### Q: Can I buy VSTS from my software reseller?
 
@@ -158,7 +168,7 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider (C
 * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-## Related information
+## Related articles
 
 * [Set up billing](set-up-billing-for-your-account-vs.md)
 * [Add backup billing managers](add-backup-billing-managers.md)
