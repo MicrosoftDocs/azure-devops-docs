@@ -8,13 +8,15 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-#  Quickstart: Start free trials for paid VSTS features and extensions
+# Quickstart: Start free trials for paid VSTS features and extensions
 
 **VSTS**
+
+In this quickstart, you'll learn how to start a trial for your VSTS account and how to keep using your extension after the trial ends.
 
 There are two paid features in VSTS offered by Microsoft that you can use free for a 30-day trial:
 
@@ -77,13 +79,16 @@ If you lose access because the trial expired before you could purchase, just buy
 
 2. [Assign the extension](../marketplace/assign-paid-extensions.md) to the users who need it.
 
+## Clean up resources
+
+To cancel a paid extension, you must have access to the Azure subscription that was used to buy it.
+
 ## Next steps
 
-* [Buy cloud-based load testing](buy-load-testing-vs.md)
-* [Start free trials](try-additional-features-vs.md)
+> [!div class="nextstepaction"]
+> [Buy cloud-based load testing](buy-load-testing-vs.md)
 
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
