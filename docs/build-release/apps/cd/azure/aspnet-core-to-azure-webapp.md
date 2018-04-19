@@ -75,9 +75,13 @@ https://github.com/adventworks/dotnetcore-sample
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
-1. Select **Choose repository** and select **VSTS** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
+1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
 
    ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
+
+   If your code is stored in a different repository service, such as GitHub or a private external Git service, you will be required to
+   provide credentials or obtain authorizion. For GitHub, choose the **Authorize** button that appears. A new window opens where you
+   can log into GitHub and/or authorize access. For an external repository, you are prompted for a username and password.
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
 
@@ -93,12 +97,12 @@ https://github.com/adventworks/dotnetcore-sample
 
    ![Viewing the log when deployment is complete](_img/aspnet-core-to-azure-webapp/continuous-delivery-log2.png)
 
-1. Open a new browser window and navigate to your new web at **http://**_your-app-name_**.azurewebsites.net**.
+1. Open a new browser window and navigate to your new website at **http://**_your-app-name_**.azurewebsites.net**.
 
 [!INCLUDE [change-aspnet-core-code](_shared/change-aspnet-core-code.md)]
 
 It takes several minutes for the build and deployment to execute.
-Wait until the deployment is done, then verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
+Wait until the deployment is done, then verify that the changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
 
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
