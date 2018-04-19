@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -64,13 +64,17 @@ If you'd like to set up billing for your VSTS account prior to making a purchase
 > [!div class="mx-imgBorder"]
 ![Your VSTS account is now linked to your Azure subscription](_img/set-up-billing/azure-portal-linked-to-vsts-account.png)
 
+## Clean up resources
+
+To unlink your account, a VSTS account owner must sign in to the Azure portal, go to **Team Services accounts**, select your account, and then choose **unlink**.
+
 ## Next steps
 
-* [Pay for users](buy-basic-access-add-users.md)
-* [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
+> [!div class="nextstepaction"]
+> [Pay for users](buy-basic-access-add-users.md)
 
 ## Related articles
 
+* [Add a backup billing manager](add-backup-billing-managers.md)
+* [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
