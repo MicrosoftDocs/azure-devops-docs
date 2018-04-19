@@ -4,7 +4,7 @@ description: Index to topics for managing the account for Visual Studio Team Ser
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
-ms.topic: devops-accounts
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
