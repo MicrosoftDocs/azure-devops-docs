@@ -72,7 +72,7 @@ Formerly part of the TFS Power tools, the tool has been released as a [standalon
 
 Large products have several components that are dependent on each other. These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated. Teams typically manage these dependencies manually.
 
-Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.BuildDefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/vsts/build-release/concepts/definitions/build/triggers) documentation for more information.
+Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/vsts/build-release/concepts/definitions/build/triggers#BuildCompletion) documentation for more information.
 
 This feature was prioritized based on what is currently the #2 highest voted [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu) with 1,129 votes.
 
