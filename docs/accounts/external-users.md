@@ -1,5 +1,5 @@
 ---
-title: Invite external users
+title: External users in VSTS
 titleSuffix: VSTS
 description: Security and data access considerations when you add an external or outside user
 ms.prod: devops
@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2018
+ms.date: 04/19/2018
 monikerRange: 'vsts'
 ---
-# Invite external users
+# External users in VSTS
 
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.

@@ -28,8 +28,8 @@
   items:
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
-  - name: Invite external user
-    href: invite-external-users.md
+  - name: External users
+    href: External-users.md
 - name: How-to guides
   items:
   - name: Manage your account
@@ -78,7 +78,7 @@
       href: change-application-access-policies-vs.md
     - name: Delete users from account
       href: delete-account-users.md
-    - name: Add external user
+    - name: Add external users
       href: add-external-user.md
     - name: Access with Azure AD
       items:
