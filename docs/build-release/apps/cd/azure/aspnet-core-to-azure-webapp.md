@@ -80,7 +80,7 @@ https://github.com/adventworks/dotnetcore-sample
    ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
 
    If your code is stored in a different repository service, such as GitHub or a private external Git service, you will be required to
-   provide credentials or obtain authorizion. For GitHub, choose the **Authorize** button that appears. A new window opens where you
+   provide credentials or obtain authorization. For GitHub, choose the **Authorize** button that appears. A new window opens where you
    can log into GitHub and/or authorize access. For an external repository, you are prompted for a username and password.
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
