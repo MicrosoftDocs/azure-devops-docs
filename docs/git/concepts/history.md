@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-## Understand Git history
+# Understand Git history
 
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.
