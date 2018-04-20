@@ -278,7 +278,7 @@
     href: set-permissions.md 
 - name: Troubleshooting
   items:
-  - name: Troubleshooting build
+  - name: Troubleshoot build and release
     href: actions/troubleshooting.md
   - name: Debug deployment issues
     href: concepts/definitions/release/variables.md#debug-mode
