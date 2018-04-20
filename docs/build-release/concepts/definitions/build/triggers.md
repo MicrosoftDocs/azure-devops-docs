@@ -8,10 +8,9 @@ ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/04/2016
+ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Build definition triggers
 
@@ -34,7 +33,7 @@ If you are using batched changes, you can also specify a maximum number of concu
 
 ### Git filters
 
-If your repository is Git then you can specify the branches where you want to trigger builds. You can use wildcard characters.
+If your repository is Git then you can specify the branches where you want to trigger builds. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 #### Path filters in VSTS and Team Foundation Services (TFS)
 
@@ -80,7 +79,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 Select the days and times when you want to run the build.
 
-If your repository is Git, GitHub, or External Git, then you can also specify branches to include and exclude. You can use wildcards.
+If your repository is Git, GitHub, or External Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 
 ### Example: Nightly build of Git repo in multiple time zones
@@ -151,6 +150,50 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [private agent](../../../concepts/agents/agents.md).
 
+::: moniker range="vsts"
+
+<a name="BuildCompletion"></a>
+## Build completion triggers
+
+> [!IMPORTANT]
+> If you want to use build completion triggers, then due to a known issue in our service, your account must have the **Build with multiple queues** preview feature turned **off** for your account. 
+>
+> If you have the **Build with multiple queues** preview feature turned on, then build completion triggers do not work corrrectly. 
+> Specifically, you'll be blocked you from downloading the artifacts from the triggering build. 
+> Also, the following variables will not be available: Build.TriggeredBy.BuildId, Build.TriggeredBy.BuildDefinitionId, Build.TriggeredBy.BuildDefinitionName.
+
+Large products have several components that are dependent on each other. 
+These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
+
+In situations like these, add a build completion trigger to run your build upon the successful completion of the **triggering build**. You can select any other build in the same team project.
+
+After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
+
+> [!NOTE]
+> Keep in mind that in some cases, a single [multi-phase build](/vsts/build-release/concepts/process/phases) could meet your needs. 
+> However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
+
+### Download artifacts from the triggering build
+
+In many cases you'll want to download artifacts from the triggering build. To do this:
+
+1. Edit your build definition.
+
+1. Add the **Download Build Artifacts** task to one of your phases under **Tasks**.
+
+1. For **Download artifacts produced by**, select **Specific build**.
+
+1. Select the VSTS **Project** that contains the triggering build definition.
+
+1. Select team project that contains the triggering build definition.
+
+1. Select the triggerging **Build definition**.
+
+1. Select **When appropriate, download artifacts from the triggering build**.
+
+1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+
+::: moniker-end
 
 ## Q&A
 
