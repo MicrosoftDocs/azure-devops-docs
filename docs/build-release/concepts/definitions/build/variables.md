@@ -8,7 +8,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2018
+ms.date: 04/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -395,6 +395,9 @@ The event that caused the build to run.
 * `ValidateShelveset`: A user manually queued the build of a specific TFVC shelveset.
 * `CheckInShelveset`: **Gated check-in** trigger.
 * `PullRequest`: The build was triggered by a Git branch policy that requires a build.
+::: moniker range="vsts"
+* `BuildCompletion`: The build was [triggered by another build](triggers.md#BuildCompletion)
+::: moniker-end
 
 See [Build definition triggers](triggers.md), [Improve code quality with branch policies](../../../../git/branch-policies.md).
         
@@ -592,6 +595,42 @@ Environment variable: COMMON_TESTRESULTSDIRECTORY
 Scope: Agent
 
 The local path on the agent where the test results are created. For example: `c:\agent\_work\1\TestResults`
+
+::: moniker range="vsts"
+
+### Build.TriggeredBy.BuildId
+
+Environment variable: BUILD_TRIGGEREDBY_BUILDID
+
+Scope: Agent
+
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the BuildID of the triggering build.
+
+### Build.TriggeredBy.DefinitionId
+
+Environment variable: BUILD_TRIGGEREDBY_DEFINITIONID
+
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the DefinitionID of the triggering build.
+
+### Build.TriggeredBy.BuildDefinitionName
+
+Environment variable: BUILD_TRIGGEREDBY_DEFINITIONNAME
+
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the name of the triggering build definition.
+
+### Build.TriggeredBy.BuildNumber
+
+Environment variable: BUILD_TRIGGEREDBY_BUILDNUMBER
+
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the number of the triggering build.
+
+### Build.TriggeredBy.ProjectID
+
+Environment variable: BUILD_TRIGGEREDBY_PROJECTID
+
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to ID of the team project that contains the triggering build.
+
+::: moniker-end
 
 ### System.AccessToken
 
