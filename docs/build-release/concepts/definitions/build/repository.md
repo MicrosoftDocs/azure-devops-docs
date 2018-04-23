@@ -12,7 +12,6 @@ ms.date: 11/05/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build definition source repositories
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
@@ -56,15 +55,15 @@ You can choose from the following repository types:
 | Repository type               | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-------------------------------|-------------|------|--------------------------------|--------------|
 | Git repo in a team project    |Yes|Yes|Yes|Yes|
-| Git repo in Bitbucket Server  |No|Yes|No|No|
+| Git repo in Bitbucket Cloud   |No|Yes|No|No|
 | Git repo in GitHub            |Yes|Yes|No|No|
 | Git repo in GitHub Enterprise |No|Yes|No|No|
-| Git repo (remote/external)    |No|Yes|Yes|Yes|
+| Git repo (external/remote)    |No|Yes|Yes|Yes|
 | Subversion                    |No|Yes|Yes|No|
 | Team Foundation Version Control (TFVC) repo in a team project |No|Yes|Yes|Yes|
 
 > [!NOTE]
-> To build code in Subversion, you must install a Subversion client (`svn`) on your [build agents](../../../concepts/agents/agents.md#install).
+> To build code from Subversion, you must install a Subversion client (`svn`) on your [build agents](../../../concepts/agents/agents.md#install).
 
 ## Git options
 
@@ -119,7 +118,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range="vsts"
 > [!NOTE]
-> Cleaning is not relevant if you are using a [hosted agent](../../../concepts/agents/hosted.md) because you get a new agent every time in that case.
+> Cleaning is not effective if you're using a [hosted agent](../../../concepts/agents/hosted.md) because you'll get a new agent every time.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -130,7 +129,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 Select one of the following options:
 
-* **Sources**: The build process performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following git commands are executed prior to fetching the source.
+* **Sources**: The build process performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
  ```
  git clean -fdx
  git reset --hard HEAD
@@ -138,9 +137,9 @@ Select one of the following options:
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new local git repository for every build.
+* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new local git repository for every build.
+* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 ::: moniker-end
 
@@ -178,9 +177,9 @@ Select **true** to delete the repository folder.
 
 The build process labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
-Some build variables might yield a value that is not a valid label. For example variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
+Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
-After the sources are tagged by your build process, an artifact with the git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+After the sources are tagged by your build process, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
 
 ::: moniker-end
 
@@ -192,12 +191,12 @@ After the sources are tagged by your build process, an artifact with the git ref
 
 You've got the option to give your team a view of the build status from your remote source repository.
 
-If your sources are in a Git repository in your team project, then this option displays a badge in the **Code** hub to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
+If your sources are in a Git repository in your project, then this option displays a badge in the **Code** hub to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
 * **Files**: Indicates the status of the latest build for the selected branch.
 * **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build definitions for the same repository in your team project, then you may choose to enable this option for one or more of the definitions. In the case when this option is enabled on multiple definitions, the badge in the **Code** hub indicates the status of the latest build across all the definitions. Your team members can click the build status badge to view the latest build status for each one of the build definitions.
+If you use multiple build definitions for the same repository in your project, then you may choose to enable this option for one or more of the definitions. In the case when this option is enabled on multiple definitions, the badge in the **Code** hub indicates the status of the latest build across all the definitions. Your team members can click the build status badge to view the latest build status for each one of the build definitions.
 
 ::: moniker-end
 
@@ -224,15 +223,15 @@ If your source is in any other type of remote repository, then you cannot use VS
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 
-The build process will check out your Git submodules so long as they are:
+The build process will check out your Git submodules as long as they are:
 
-* **Unauthenticated:**  A public unauthenticated repo with no credentials required to clone or fetch.
+* **Unauthenticated:**  A public, unauthenticated repo with no credentials required to clone or fetch.
 
 * **Authenticated:**  
 
- - Contained in the same team project, GitHub organization, or Bitbucket account as the Git repo specified above.
+ - Contained in the same project, GitHub organization, or Bitbucket account as the Git repo specified above.
 
- - Added by using a relative url from main repository. For example this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
+ - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://fabrikamfiber.visualstudio.com/DefaultCollection/_git/ConsoleApp mymodule```
 
 ::: moniker-end
 
@@ -252,30 +251,30 @@ The build process will check out your Git submodules so long as they are:
 
 The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. 
 
-If your main repository and submodules are in a Git repository in your VSTS team project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
+If your main repository and submodules are in a Git repository in your VSTS project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
 
-* **Project collection** to use the Project Collection Build service account 
+* **Project collection** to use the Project Collection Build service account
 
 * **Current project** to use the Project Build Service account.
 
-Make sure that whichever account you use has access to both the main repository as well as the submodules. 
+Make sure that whichever account you use has access to both the main repository as well as the submodules.
 
 If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service endpoint is used to access the sources.
 
 #### Alternative to using the Checkout submodules option
 
-In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in VSTS and your submodules are in GitHub, if your main repository is in GitHub and your submodules are in VSTS, or if your submodules are in a different VSTS account than your main repository. 
+In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in VSTS and your submodules are in GitHub, if your main repository is in GitHub and your submodules are in VSTS, or if your submodules are in a different VSTS account than your main repository.
 
-If you can't use the Checkout submodules option, then you can instead use a custom script with the following git command to get the sources for submodules onto your agent.
+If you can't use the Checkout submodules option, then you can instead use a custom script with the following Git command to get the sources for submodules onto your agent.
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init -recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic ********" submodule update --init --recursive
 ```
 
-Use a secret variable in your project or build definition to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above git command.
+Use a secret variable in your project or build definition to store the personal access token (PAT) that you generate in VSTS or GitHub with access to your submodules. Use that variable to populate the secret in the above Git command.
 
 > [!NOTE]
-> **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This is not desirable in automated builds.
+> **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
 ::: moniker-end
 
@@ -309,7 +308,7 @@ If you're using TFS, or if you're using VSTS with a private agent, then you must
 
 ### Don't sync sources (TFS 2017 and newer only)
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases such as when you want to:
+Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 
@@ -322,7 +321,7 @@ If you want to disable downloading sources:
 * **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
 
 > [!NOTE]
-> When you use this option, the agent also skips running git commands that clean the repo.
+> When you use this option, the agent also skips running Git commands that clean the repo.
 
 ::: moniker-end
 
@@ -459,10 +458,10 @@ Scorch is a TFVC power tool. See [Microsoft Visual Studio Team Foundation Server
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 
+::: moniker range="< vsts"
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
