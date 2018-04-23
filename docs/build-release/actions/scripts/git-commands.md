@@ -69,7 +69,11 @@ On the [variables tab](../../concepts/definitions/build/variables.md) set this v
 |---|---|
 | ```system.prefergit``` | ```true``` |
 
-On the [options tab](../../concepts/definitions/build/options.md) select **Allow scripts to access OAuth token**.
+### Enable scripts to access OAuth token
+- Select "Tasks" tab in the build definition
+- Select the agent phase containing the tasks/scripts which will use git
+- Expand the "Additional Options" section
+- Enable the **Allow scripts to access OAuth token** option
 
 ## Make sure to clean up the local repo
 
