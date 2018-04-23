@@ -20,9 +20,9 @@
     href: set-project-collection-level-permissions.md 
 - name: Tutorials 
   items:
-  - name: Setup Active Directory or Azure Active Directory  
+  - name: Set up Active Directory or Azure AD  
     href: setup-ad-aad.md
-  - name: Add AD/AAD security groups to built-in security groups  
+  - name: Add AD/Azure AD security groups to built-in security groups  
     href: add-ad-aad-built-in-security-groups.md
   - name: Change individual permissions 
     href: change-individual-permissions.md
@@ -89,7 +89,7 @@
   - name: "TF31002: Unable to connect"
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: Network connections
-    href: faq-network-connections.md
+    href: faq-network-connections.md  
 - name: Reference
   items:
   - name: Default permission and access assignments
