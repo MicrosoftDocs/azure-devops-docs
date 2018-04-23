@@ -391,7 +391,7 @@ Next you will need to grant VSTS access. Again, you only need to grant an except
 |    VSTS - Canada Central                        |    52.237.19.6                                  |
 |    VSTS - East Asia (Hong Kong)                 |    52.175.28.40                                 |
 
-If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Release Management and Package Management data with your import, then you will need to grant both features access as well. 
+Next you will need to grant Release Management access. You only need to grant an exception for the VSTS instance in the region that you're importing into.
 
 **Release Management IPs**
 
@@ -404,6 +404,8 @@ If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feat
 |    Release Management - India South             |    52.172.15.233    |
 |    Release Management - Canada Central          |    52.237.28.171    |
 |    Release Management - East Asia (Hong Kong)   |    13.107.6.175     |
+
+If you're planning on using the [preview](https://aka.ms/vstsimportpreview) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
 
 **Package Management IPs**
 
