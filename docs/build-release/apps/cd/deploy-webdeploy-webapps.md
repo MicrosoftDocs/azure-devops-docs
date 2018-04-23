@@ -1,5 +1,5 @@
 ---
-title: Deploy to Azure web app
+title: Deploy a web app from VSTS or TFS to Azure App Services
 description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Release Management
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy to Azure web app
+# Deploy a web app to Azure App Services
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
@@ -41,4 +41,4 @@ steps in [this example](../../apps/cd/azure/aspnet-core-to-azure-webapp.md#creat
 * [Deploy to a staging slot and then swap to production](howto-webdeploy-webapps.md#swapslots)
 * [Deploy multiple apps in the same release](howto-webdeploy-webapps.md#multipleapps)
 * [Apply environment-specific configurations](howto-webdeploy-webapps.md#configenvir)
-* [Deploy to a Government cloud instead of a public cloud](howto-webdeploy-webapps.md#govtcloud)
+* [Deploy to a Government cloud or Azure Stack instead of a public cloud](howto-webdeploy-webapps.md#govtcloud)
