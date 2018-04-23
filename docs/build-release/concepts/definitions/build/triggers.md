@@ -156,11 +156,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 ## Build completion triggers
 
 > [!IMPORTANT]
-> If you want to use build completion triggers, then due to a known issue in our service, your account must have the **Build with multiple queues** preview feature turned **off** for your account. 
->
-> If you have the **Build with multiple queues** preview feature turned on, then build completion triggers do not work corrrectly. 
-> Specifically, you'll be blocked you from downloading the artifacts from the triggering build. 
-> Also, the following variables will not be available: Build.TriggeredBy.BuildId, Build.TriggeredBy.BuildDefinitionId, Build.TriggeredBy.BuildDefinitionName.
+> There's a known issue that blocks the ability to download artifacts from the triggering build and with the build variables that are part of this feature. We're working on the fix. 
 
 Large products have several components that are dependent on each other. 
 These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
