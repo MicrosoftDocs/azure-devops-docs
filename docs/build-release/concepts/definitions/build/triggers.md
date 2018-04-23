@@ -179,15 +179,17 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 1. For **Download artifacts produced by**, select **Specific build**.
 
-1. Select the VSTS **Project** that contains the triggering build definition.
-
-1. Select team project that contains the triggering build definition.
+1. Select the team **Project** that contains the triggering build definition.
 
 1. Select the triggerging **Build definition**.
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
 1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+
+1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
+
+1. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
 
 ::: moniker-end
 
