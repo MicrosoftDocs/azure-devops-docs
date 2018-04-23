@@ -16,14 +16,14 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
-A *task group* lets you to encapsulate a sequence of tasks already defined
-in a build or a release definition into a single reusable task that can be
+A *task group* allows you to encapsulate a sequence of tasks, already defined
+in a build or a release definition, into a single reusable task that can be
 added to a build or release definition, just like any other task. You can
 choose to extract the parameters from the encapsulated tasks as configuration
 variables, and abstract the rest of the task information.
 
-The new task group is automatically added to the task catalogue, ready to add
-to other release and build definitions. Task groups are stored at project level,
+The new task group is automatically added to the task catalogue, ready to be added
+to other release and build definitions. Task groups are stored at the project level,
 and are not accessible outside the project scope.
 
 Task groups are a way to standardize and centrally manage deployment steps for all your applications. 
@@ -54,7 +54,7 @@ to change each one individually.
   new task group, and select a category where you want it to appear in the
   **Task catalog** dialog. You can also change the default values for each of the parameters.
 
-* When you queue a build or a deployment, the encapsulated tasks
+* When you queue a build or a release, the encapsulated tasks
   are extracted and the values you entered for the task group parameters are applied to the tasks.
   
 * Changes you make to a task group are reflected in every instance of the task group.
