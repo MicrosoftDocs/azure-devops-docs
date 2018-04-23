@@ -1,4 +1,4 @@
-- name: Account Management
+- name: "Account Management"
   href: index.md
 - name: Overview
   items:
@@ -108,8 +108,10 @@
       href: assign-access-levels-and-extensions-by-group-membership.md
     - name: Migrate to group-based resource management
       href: migrate-to-group-based-resource-management-in-VSTS.md
-- name: Troubleshooting
-  items:
+    - name: Remove direct assignments
+      href: remove-direct-assignments.md
+  - name: Troubleshooting
+    items:
   - name: Create account
     href: faq-create-account.md
   - name: Add and delete account users
