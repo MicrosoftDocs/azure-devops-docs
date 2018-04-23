@@ -1,5 +1,5 @@
 ---
-title: How To Next Steps to Azure App Services
+title: Deploy multiple apps to Azure App Services Staging and special configurations 
 description: Next steps for deploying an app to a Azure App Services from Release Management in VSTS or TFS
 ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
 ms.prod: devops
@@ -22,7 +22,7 @@ depending on your scenario and requirements. This topic shows you how to:
 * [Deploy to a staging slot and then swap to production](#swapslots)
 * [Deploy multiple apps in the same release](#multipleapps)
 * [Apply environment-specific configurations](#configenvir)
-* [Deploy to a Government cloud instead of a public cloud](#govtcloud)
+* [Deploy to a Government cloud or Azure Stack instead of a public cloud](#govtcloud)
 
 ## Prerequisites
 
@@ -106,7 +106,9 @@ If you deploy releases to multiple environments, you can substitute configuratio
 For more details, see [Managing Configuration & App Settings for Multiple Environments in Your CD Pipeline](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/05/managing-configuration-app-settings-for-multiple-environments-in-your-cd-pipeline/).   
 
 <a name="govtcloud"></a>
-## Deploy to a Government cloud instead of a public cloud
+## Deploy to a Government cloud or Azure Stack
 
-Do this by creating a suitable service endpoint for your Azure Government Cloud subscription.
-See [Azure Government Cloud deployments](../../concepts/library/government-cloud.md) for details.
+Do this by creating a suitable service endpoint in VSTS ot TFS:
+
+* [Azure Government Cloud deployment](../../concepts/library/government-cloud.md)
+* [Azure Stack deployment](../../concepts/library/azure-stack.md)

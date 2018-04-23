@@ -169,6 +169,8 @@
       href: commit-details.md
   - name: "Default Git permissions (Security)"
     href: ../security/default-git-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Git limits
+    href: limits.md
 - name: Resources
   items:
   - name: What is Git?
