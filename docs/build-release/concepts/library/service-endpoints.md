@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Service endpoints for Build and Release
+# Service endpoints for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
