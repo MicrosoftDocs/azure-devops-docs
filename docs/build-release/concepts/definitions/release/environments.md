@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Environments in Release Management
+# Release environments, queuing policies, and options
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 

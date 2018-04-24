@@ -1,5 +1,5 @@
 ---
-title: Load Testing
+title: Load Testing index and overview in VSTS and TFS
 description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.prod: devops

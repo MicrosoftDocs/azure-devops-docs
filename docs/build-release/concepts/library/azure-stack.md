@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy to Azure Stack
+# Deploy apps to Azure Stack
 
 **VSTS**
 
