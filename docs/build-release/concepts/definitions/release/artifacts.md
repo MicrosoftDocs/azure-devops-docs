@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Release Management
+# Release artifacts and artifact sources
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 

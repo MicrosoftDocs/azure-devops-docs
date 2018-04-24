@@ -4955,7 +4955,12 @@
         "source_path": "docs/marketplace/billing-overview.md",
         "redirect_url": "/vsts/billing/overview",
         "redirect_document_id": false
-       } 
+       },
+       {
+        "source_path": "docs/billing/extensions.md",
+        "redirect_url": "/vsts/marketplace/overview",
+        "redirect_document_id": false
+       }
     ]
 }
 
