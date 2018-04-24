@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Phases in Build and Release Management
+# Task phases for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017**
 
