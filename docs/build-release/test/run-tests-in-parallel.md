@@ -1,5 +1,5 @@
 ---
-title: Run tests in parallel
+title: Run your continuous tests in parallel in VSTS
 description: Continuous testing. Run tests in parallel
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
 ms.prod: devops

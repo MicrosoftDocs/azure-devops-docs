@@ -1,5 +1,5 @@
 ---
-title: Triggers in Release Management
+title: Release triggers for environments, branches, and definitions
 description: Understand triggers in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Triggers in Release Management
+# Release, branch, and environment triggers
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
