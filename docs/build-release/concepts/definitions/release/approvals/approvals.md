@@ -1,5 +1,5 @@
 ---
-title: Approvals in VSTS and TFS
+title: Control deployments with approvals in Release Management
 description: Understand release approvals in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Approvals
+# Release deployment control using approvals
 
 [!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
