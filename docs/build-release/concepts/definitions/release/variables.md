@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Variables in Release Management
+# Default and custom release variables and debugging
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
