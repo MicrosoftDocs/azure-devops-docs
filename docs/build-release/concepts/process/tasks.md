@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Tasks for Build and Release
+# Tasks for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
