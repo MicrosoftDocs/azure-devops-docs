@@ -1,6 +1,6 @@
 ---
-title: Continuous Testing
-description: Continuous testing in VSTS and TFS 
+title: Continuous Testing in VSTS and TFS
+description: Continuous testing index and overview in VSTS and TFS 
 ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.prod: devops
 ms.technology: devops-cicd

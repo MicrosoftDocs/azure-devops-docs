@@ -1,5 +1,5 @@
 ---
-title: Azure monitor task 
+title: Azure monitor task for Microsoft VSTS and TFS
 description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops

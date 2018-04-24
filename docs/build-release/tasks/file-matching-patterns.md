@@ -1,5 +1,5 @@
 ---
-title: File matching patterns
+title: File matching patterns for VSTS and TFS
 description: File matching patterns for VSTS and TFS 
 ms.topic: reference
 ms.prod: devops
@@ -11,7 +11,6 @@ author: andyjlewis
 ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
-
 
 # File matching patterns reference
 
