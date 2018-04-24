@@ -1,5 +1,5 @@
 ---
-title: Gates in Release Management
+title: Control deployments with gates in Release Management
 description: Understand gated releases in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
 
-# Gates
+# Release deployment control using gates 
 
 **VSTS**
 
