@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy to Azure Government Cloud
+# Deploy apps to Azure Government Cloud
 
 **VSTS | TFS 2017  | TFS 2018**
 
