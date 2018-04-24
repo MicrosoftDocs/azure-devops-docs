@@ -45,6 +45,9 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 |`for`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is allowed to perform the transition.|  
 |`not`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is restricted from performing the transition.|  
   
+> [!NOTE]   
+> for and not rules are not natively supported in VSTS at this time.
+
 ### Child elements  
   
 |Element|Description|  
