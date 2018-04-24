@@ -84,12 +84,14 @@
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Troubleshoot connection
+  - name: Resolve connection issues
     href: ../user-guide/troubleshoot-connection.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: "TF31002: Unable to connect"
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: Network connections
-    href: faq-network-connections.md  
+    href: faq-network-connections.md
+  - name: Trace permissions
+    href: faq-trace-permissions.md     
 - name: Reference
   items:
   - name: Default permission and access assignments
