@@ -89,7 +89,7 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 
 ## See also
 
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
+* [Load test with Visual Studio](getting-started-with-performance-testing.md)
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 
