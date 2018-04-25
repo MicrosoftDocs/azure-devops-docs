@@ -1,6 +1,6 @@
 ---
-title: Buy to Xamarin University
-description: Get training on Xamarin forms for device app development
+title: Buy the Xamarin University subscription in the Visual Studio Marketplace
+description: Steps for how to buy Xamarin University for training on forms for device application development and find answers to frequently asked questions
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 10/06/2017
 monikerRange: '>= tfs-2015'
 ---
-# Buy Xamarin University
+# Subscribe to the Xamarin University for continued learning
 
 [Xamarin University](https://www.xamarin.com/university) offers live, online, and office hours classes, self-guided learning,
 and guest lectures.
