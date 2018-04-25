@@ -24,7 +24,7 @@
   items:
   - name: Manage billing 
     items:
-    - name: Add backup billing manager
+    - name: Add user to make purchases
       href: add-backup-billing-managers.md
     - name: Change Azure subscription
       href: change-azure-subscription.md
