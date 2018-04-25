@@ -27,7 +27,7 @@ TFVC is a centralized version control system to maintain code and make teams mor
 
 ## Keep it simple!
 
-By adopting an effective branching strategy you'll:
+By adopting an effective branching strategy you will:
 - Foster a *DevOps culture*
 - Promote collaboration flow and increased productivity
 - Enable teams to spend more time developing and less time managing code
