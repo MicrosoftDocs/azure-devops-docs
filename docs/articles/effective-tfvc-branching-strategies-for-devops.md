@@ -15,7 +15,7 @@ author: wpschaub
 
 Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index))? You will probably have a few questions, such as:
 
-- How do I decide on the right branching strategy? 
+- How do I decide on the right branching strategy? ... 
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
 
