@@ -2,12 +2,16 @@
 title: Use the Get command to download TFVC files or folders
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Get command
 
@@ -33,7 +37,7 @@ Gets (downloads) either the latest version or a specified version of one or more
 <tbody>
 <tr>
 <td><p><strong>/all</strong></p></td>
-<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it‘s unlikely you will have to use this option.</p>
+<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it's unlikely you will have to use this option.</p>
 <p>You can use this option to restore an item that you have accidentally deleted from a server workspace.</p>
 <p>Your Team Foundation Server maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you are getting, then it does not retrieve the item. This option gets the items regardless of the data contained in this internal record.</p></td>
 </tr>
@@ -117,7 +121,7 @@ Gets version 8 of program.cs in Project1.
 
 Gets the latest version of file1.cs and file2.cs in Project1.
 
-### Synchronize a workspace to match a version of the team’s codebase
+### Synchronize a workspace to match a version of the team's codebase
 
     c:\code\SiteApp\Main>tf get /v:15
 
@@ -129,7 +133,7 @@ Synchronizes the workspace to match the codebase as it existed when changeset 15
 
 -   Items that were added after that changeset are deleted from the workspace.
 
-### Synchronize a workspace to match a labeled version of the team’s codebase
+### Synchronize a workspace to match a labeled version of the team's codebase
 
     c:\code\SiteApp\Main>tf get /v:LLastKnownGood
 
@@ -147,7 +151,7 @@ Synchronizes the workspace to match the items in the codebase that are [labeled]
 
 ## Tips
 
--   ![Tip](_img/get-command/IC572374.png) If you are beginning a new task, it’s probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
+-   ![Tip](_img/get-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
 
 -   ![Tip](_img/get-command/IC572374.png) As needed, this command creates folders on disk to contain the child items that the command is downloading.
 

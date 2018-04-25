@@ -1,17 +1,19 @@
 ---
-title: Build a dashboard widget that calls the Analytics Service | VSTS
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from a dashboard widget extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Build a dashboard widget that calls the Analytics Service
+titleSuffix: VSTS 
+description: How to access Analytics Service OData for Visual Studio Team Services from a dashboard widget extension
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: CA782CE8-2BDF-4CDE-BEC7-F3FCF761B1A9
 ms.manager: douge
 ms.author: kaelli
+ms.topic: sample
 ms.date: 11/13/2017
 ---
 
 # Build a dashboard widget extension that calls the Analytics Service
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Building an dashboard widget extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
@@ -171,7 +173,7 @@ The next three lines are used to construct the Analytics Service URL to retrieve
 for the account and project the widget is in, grouped by work item type.
 
 The ajax call actually retrieves the data from the Analytics Service. The beforeSend function adds the authetication token to the header. The error function
-called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the the chart is
+called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the chart is
 built.
 
 Replace the **//success function** comment with the following code which actually draws the chart:

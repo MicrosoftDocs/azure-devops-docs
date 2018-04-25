@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Create the Azure app service
 
 An [Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-value-prop-what-is/) is where you'll deploy your application. Technically speaking, an app service is a resource with a specific pricing tier in Azure that can then host multiple, distinct applications. In this example we'll use a [Web App](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/).

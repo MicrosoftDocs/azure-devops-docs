@@ -1,14 +1,17 @@
 ---
 title: Build your Xcode app
 description: Build and test Xcode projects with VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
-ms.topic: get-started-article
+author: andyjlewis
+ms.date: 04/18/2018
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Xcode app
 
@@ -24,7 +27,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 * First, you will need a build agent configured on a Mac machine. You may use one of the following:
 
-  1. The **Hosted macOS Preview** agent provided by VSTS, or
+  1. The **Hosted macOS** agent provided by VSTS, or
   1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
 ## Get the sample code
@@ -69,9 +72,9 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 1. In the right panel, click **Xcode**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
-1. For the **Agent queue**, select **Hosted macOS Preview** or a queue that includes the Mac agent you set up.
+1. For the **Agent queue**, select **Hosted macOS** or a queue that includes the Mac agent you set up.
 
 1. For the **Scheme**, enter `iOSHelloWorld`
 

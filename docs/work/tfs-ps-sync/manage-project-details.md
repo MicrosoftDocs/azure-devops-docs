@@ -1,11 +1,13 @@
 ---
-title: Manage project details in an enterprise project plan mapped to a team project | TFS
-description: Understand how project managers and development teams can manage their workflows independently while collaborating fully and communicating more easily when changes that affect the schedule occur - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage project details in an enterprise project plan mapped to a team project
+titleSuffix: TFS
+description: Understand how project managers and development teams can manage their workflows independently using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ff9499ea-cd5b-4ede-aa1a-de8ef3d9e704
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -171,7 +173,7 @@ Shortcut menu for a work item (TFS web portal)
 ###  <a name="AddressUpdates"></a> Address rejected updates  
  When a project manager rejects a status update to either a requirement or a task, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status to resume synchronization of the work item. You can create a query to find work items whose update status was rejected. For more information, see [Monitor work item submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
-## Related notes  
+## Related articles  
  [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
  [Resolve validation errors](resolve-validation-errors.md)   
  [Manage projects](manage-projects.md)

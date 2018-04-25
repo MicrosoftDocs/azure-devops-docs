@@ -1,11 +1,14 @@
 ---
-title: Layout XML element reference | VSTS & TFS
-description: Use the Layout element to define how the elements on the work item form appear - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Layout XML element reference
+titleSuffix: TFS 
+description: Use the Layout element to define how the elements on the work item form appear in Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/14/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 02/14/2017
 
 **TFS 2015 | TFS 2013**
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).   
@@ -31,10 +34,10 @@ The **Layout** element is a required child element of the **FORM** element. For 
 ```XML 
 <Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"   
 Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">  
-    <Group> . . . </Group>  
-    <Control> . . . </Control>  
-    <TabGroup> . . . </TabGroup>  
-    <Splitter> . . . </Splitter>  
+       <Group> . . . </Group>  
+       <Control> . . . </Control>  
+       <TabGroup> . . . </TabGroup>  
+       <Splitter> . . . </Splitter>  
 </Layout >  
 ```  
   
@@ -108,7 +111,7 @@ Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="dist
 ```  
   
   
-## Related notes
+## Related articles
 -  [Control](control-xml-element-reference.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [All FORM elements](all-form-xml-elements-reference.md)   

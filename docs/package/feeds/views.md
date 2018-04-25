@@ -2,12 +2,16 @@
 title: Communicate package quality with release views
 description: Use release views to communicate the quality of a package to your consumers in VSTS or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 10/27/2016
+monikerRange: '>= tfs-2017'
 ---
+ 
 
 # Communicate package quality with release views
 
@@ -18,7 +22,7 @@ Views filter the feed to a subset of packages that meet criteria defined by the 
 Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. 
 Release views contain the subset of the feed's package-versions that have been *promoted* into that view.
 
-*If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/feeds/views.md) before getting started.*
+*If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/views.md) before getting started.*
 
 ## Get started with release views
 

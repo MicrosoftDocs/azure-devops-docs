@@ -1,10 +1,9 @@
-
 <a id="work-item-form-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a work item form](/vsts/work/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.  
+You can use the following keyboard shortcuts when [interacting with a work item form](/vsts/work/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from VSTS.   
+>[!NOTE]
+><b>Feature availability: </b>The following shortcuts are available from VSTS.
 
 <table width="70%">
 <tbody valign="top">
@@ -24,7 +23,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 </table>
 
 
-Also, you can use the following keyboard shortcuts when working within the work item form in the web portal, both VSTS and TFS.  
+Also, you can use the following keyboard shortcuts when working within the work item form in the web portal, both VSTS and TFS.
 
 <table width="70%">
 <tbody valign="top">
@@ -52,4 +51,3 @@ Also, you can use the following keyboard shortcuts when working within the work 
 </tr>
 </tbody>
 </table>
-

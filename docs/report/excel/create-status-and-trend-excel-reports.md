@@ -1,18 +1,21 @@
 ---
-title: Create Excel reports from a work item query | TFS  
-description: View progress by creating status and trend Excel charts from a flat list query when connecting to a team project on Team Foundation Server (TFS)  
+title: Create Excel reports from a work item query  
+description: View progress by creating status and trend Excel charts from a flat list query when connecting to a team project on Team Foundation Server    
 ms.assetid: EBBA2C3A-A9F4-4808-B746-5DC0F039EA53  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: get-started-article
 ms.date: 10/10/2017
 ---
 
 # Create Excel reports from a work item query  
 
-<b>TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 >[!NOTE]  
 ><b>Feature availability: </b>You can use this feature only when you connect to a team project hosted an on-premises Team Foundation Server (TFS) and with SQL Server Analysis Services configured. 

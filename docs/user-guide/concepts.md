@@ -1,17 +1,21 @@
 ---
 title: Key concepts for working with both VSTS & TFS
-description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
+description: Understand the key concepts for Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 08/04/2017
+monikerRange: '>= tfs-2015'
 ---
 
-# Key concepts for working with VSTS and TFS 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015** 
+# Key concepts for working with VSTS and TFS
+
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 The set of platforms, services, and tools you have access to through Visual Studio Team Services (VSTS) can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
 
@@ -20,7 +24,7 @@ The set of platforms, services, and tools you have access to through Visual Stud
  (Video ala Robert's 1.5 min Commit)
 -->
 
-##Collaborative, integrated software development 
+## Collaborative, integrated software development
 
 VSTS, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
 
@@ -30,7 +34,7 @@ The three main areas that support software development include:
 - Tracking tools to support planning and tracking work, code defects, issues and more
 - DevOps tools to support building, testing, and continuous release of software apps. 
 
-### Source control 
+### Source control
 
 Source or version control systems allow developers to collaborate on code and track changes made to the code base. Source control is an essential tool for multi-developer projects.  
 
@@ -46,7 +50,8 @@ Developers can commit each set of changes and perform version control operations
 With TFVC, devs have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server. 
 
 
-### Work tracking and Agile tools  
+### Work tracking and Agile tools
+
 Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, you might have planned and track work using one or more tools such as Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Now, many teams have adopted Agile methods and practices to support planning and development. 
 
 Our systems provide several types of work items which you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that team members update as information becomes available and progress is made. 
@@ -60,8 +65,7 @@ For planning purposes, you have access to several types of backlogs and boards t
  
 Project managers and developers share information by tracking work items  on the backlogs and boards. Useful charts and dashboards round out the picture helping teams monitor progress and trends. 
 
-
-### DevOps and continuous integration  
+### DevOps and continuous integration
 
 Rapid and reliable release of software comes from automating as many processes as possible. Our systems support build, test, and release automation. 
 
@@ -71,17 +75,18 @@ Rapid and reliable release of software comes from automating as many processes a
 
 ![Multiple platform continuous integration](../_img/multi-platform.png) 
 
-## Scaling  
+## Scaling
 
-Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24×7 operations team, and available in local data centers around the world.
+Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
-You can scale the system in the following ways: 
+You can scale the system in the following ways:
+
 - Within a team project, you can add teams 
 - Within a project collection, you can add team projects  
 - Within source control, you can add repositories and branches 
 - To manage a large number of users, you can manage access through Azure Active Directory (cloud) or Active Directory (on-premises) 
 
-### Software projects versus team projects 
+### Software projects versus team projects
 
 To build and deploy a software application, you begin by defining a software project. Software projects differ from team projects. 
 
@@ -107,11 +112,12 @@ When you create your team project, a team of the same name is automatically crea
 
 The collection-project-team structure provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.
 
-###Scaling Agile across the enterprise 
+### Scaling Agile across the enterprise
+
 To learn how Microsoft transitioned from waterfall to Agile, review the stories and short videos available here: [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
 
 
-## Customization 
+## Customization
 
 You can configure and customize most elements to support your business needs or the way your team works. 
 
@@ -121,7 +127,7 @@ You can configure and customize most elements to support your business needs or 
 - Test: You can define and configure your test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build definitions
 - Dashboard: Each team can configure their set of dashboards to share information and monitor their progress 
  
-##Extensibility   
+## Extensibility
 
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways: 
 
@@ -131,7 +137,7 @@ In addition to all the pre-built functionality available to you, you can add to 
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace. 
 
 
-##Resources 
+## Resources
+
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
- 

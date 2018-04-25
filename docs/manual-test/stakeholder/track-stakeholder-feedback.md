@@ -1,12 +1,15 @@
 ---
 title: Track stakeholder feedback using the Test &amp; Feedback extension
 description: Track stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Track stakeholder feedback using the Test &amp; Feedback extension

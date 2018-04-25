@@ -1,30 +1,36 @@
 ---
 title: Query by date or current iteration 
 titleSuffix: VSTS & TFS
-description: Create a query that finds work items based on a date or a team's current iteration using when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/05/2018  
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
+ms.date: 03/06/2018  
 ---
 
 # Query by date or current iteration
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
-Two query macros help you find work items based on when changes occurred or if they belong to the current sprint. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates.  For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**.</p>
-<p>For example, you can find work items that were modified in the last 3 days with the following query.
+The **@Today** and **@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**. 
+
+For example, you can find work items that were modified in the last 3 days with the following query.
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
+In addition, if you connect to VSTS, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 
-##Query for items based on when changes occurred
+> [!NOTE]   
+> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
+
+## Query for items based on when changes occurred
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to <a href="#date_fields">date fields</a> for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
 
 <table valign="top">
 <tbody valign="top">
@@ -86,39 +92,51 @@ Not all fields are valid for all work item types (WITs). Jump to <a href="#date_
 
 <a id="current-iteration">  </a>
 
-## Query for items based on belonging to a team's current iteration  
+## Query for items based on belonging to a team's current iteration 
+ 
 If your team follows Scrum processes, you [schedule work to be completed in sprints](../scrum/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
-
-Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
-![Query filter using the @CurrentIteration macro](_img/query-using-at-current-iteration-macro.png)  
+### VSTS
 
-You can't use the **@CurrentIteration** macro from some [clients, features, or REST APIs](#current_sprint_restrict).  
-
-
-<!---
-<a id="current-iteration-plus-minus-n">  </a>
-
-## Query for items based on a sliding window of team iterations 
-
-The <b>@CurrentIteration +/- <i>n</i></b> macro is useful for tracking work a team plans for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
-
-> [!NOTE] 
-> **Feature availability**: The <b>@CurrentIteration +/- <i>n</i></b> macro is supported from the web portal for VSTS. The macro only works when run from the web portal. 
-
-Here we show how to list all Features, User Stories, and Bugs assigned to the previous, current, and next sprints selected for the current team context and under the specified Area Path. 
+VSTS now adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
-![At Current Iteration plus and minus claused](_img/query-at-current-iteration-plus-minus.png)
+> ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
 
-To use this macro, a team must have [selected a set of sprints](../scale/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
--->
+To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
+
+> [!div class="mx-imgBorder"]
+![Choose team parameter](_img/query-date-iteration/choose-team-parameter.png)
+
+### TFS 2018 and earlier versions
+
+Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
+
+> [!div class="mx-imgBorder"]
+> ![Query filter using the @CurrentIteration macro](_img/query-date-iteration/at-current-no-team-specified.png)  
+
+
+<a id="current-iteration-plus-minus-n">  </a>
+## Query for items based on a sliding window of team iterations 
+
+Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
+
+> [!NOTE] 
+> **Feature availability**: The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for VSTS only, and only when run from the web portal. 
+
+Here we show how to list all User Stories and Bugs assigned to the  sliding window that spans the last two, the current, and the next two prints selected for the selected team, Cloud Admin and Tools. 
+
+> [!div class="mx-imgBorder"]
+![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
+
+To use this macro, the specified team must have [selected a set of sprints](../scale/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
+
 
 <a id="date_fields">  </a>
-## Date fields
+## Date and the iteration path fields
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
@@ -190,7 +208,6 @@ To use this macro, a team must have [selected a set of sprints](../scale/set-tea
   </td>
 </tr>
 
-
 <tr>
   <td>
     <p>Finish Date <sup>2</sup> </p>
@@ -202,6 +219,13 @@ To use this macro, a team must have [selected a set of sprints](../scale/set-tea
   <td>
     <p>Task, Bug</p>
   </td>
+</tr>
+<tr>
+  <td>Iteration Path</td>
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a team project](../customize/set-iteration-paths-sprints.md), and you [select iteration paths](../scale/set-team-defaults.md) for a team. 
+<p>Reference name=System.IterationPath, Data type=TreePath</p>
+  </td>
+  <td>All</td>
 </tr>
 <tr>
   <td>
@@ -227,8 +251,6 @@ To use this macro, a team must have [selected a set of sprints](../scale/set-tea
     <p>Task, Bug</p>
   </td>
 </tr>
-
-
 <tr>
   <td>
     <p>State Change Date</p>
@@ -253,9 +275,6 @@ To use this macro, a team must have [selected a set of sprints](../scale/set-tea
     <p>Feature</p>
   </td>
 </tr>
-
-
-
 </tbody>
 </table>
 
@@ -268,43 +287,36 @@ To use this macro, a team must have [selected a set of sprints](../scale/set-tea
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or VSTS. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or VSTS. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+
+<a id="team_view">  </a>
+<a id="current_sprint_restrict"> </a> 
+
+## Client restrictions on the use of the @CurrentIteration macros 
+You can use the **@CurrentIteration** in a query from the following clients:  
+
+- Web portal that connects to VSTS 
+- Web portal that connects to an on-premises TFS 2015 or later version 
+- Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS or TFS 2015 or later versions. 
+- Using the REST API
+
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against VSTS and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+  
+
+An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
 
 
-##Related notes
+## Related articles
 To query for items based on text entered in the History field, see
 [History and auditing](history-and-auditing.md). 
  
-- [Create managed queries to list, update, or chart work items ](example-queries.md)    
-- [Query editor](using-queries.md)    
+- [Create managed queries with the query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
 - [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)
 
 
 
-<a id="team_view">  </a>
-
-  
- 
-<a id="current_sprint_restrict"> </a> 
-
-###Client restrictions on the use of @CurrentIteration macro 
-You can use the **@CurrentIteration** macro in a query from the following clients:  
-<ul>
-  <li>
-    <p>Web portal that connects to VSTS</p>
-  </li>
-  <li>
-    <p>Web portal that connects to an on-premises TFS 2015 or later version</p>
-  </li>
-  <li>
-    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS and TFS 2015 or later versions.</p>
-  </li>
-</ul>
-
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
-
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

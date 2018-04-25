@@ -7,7 +7,8 @@ To run the **witadmin** command-line tool, open a Command Prompt window where Vi
 > [!NOTE]   
 > If you are connecting to TFS, you must use the same version of Visual Studio or Team Explorer as TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017. There is no Team Explorer 2015 version. 
   
-####TFS 2018 and TFS 2017 
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 *Visual Studio 2017 or Team Explorer 2017 client:*
 
@@ -15,13 +16,17 @@ To run the **witadmin** command-line tool, open a Command Prompt window where Vi
 
 or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
 
-####TFS 2015 
+::: moniker-end
+
+::: moniker range="tfs-2015"
 
 *Visual Studio 2015 client:*
 
 `cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
 
-####TFS 2013 
+::: moniker-end
+
+::: moniker range="tfs-2013"
 
 *Visual Studio 2013 client:*
 
@@ -31,6 +36,7 @@ or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depe
 
 `cd %programfiles%\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
 
+::: moniker-end
 
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**. You can [install Visual Studio Community (which provides access to Team Explorer) or Visual Studio Team Explorer 2017](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
 

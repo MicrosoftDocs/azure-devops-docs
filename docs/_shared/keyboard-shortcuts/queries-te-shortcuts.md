@@ -1,23 +1,20 @@
-
 <a id="queries-te-shortcuts"></a>
 
-> [!div class="mx-tdBreakAll"]  
-> |Query editor   |Action  |Query results |  Action  | 
-> |-------------|----------|---------|---------| 
-> |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Scroll left/right | 
-> |![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png) ![ ](/vsts/work/_img/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |  
+> [!div class="mx-tdBreakAll"]
+> |Query editor   |Action  |Query results |  Action  |
+> |-------------|----------|---------|---------|
+> |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/vsts/work/_img/icons/Arrow_Next.png) ![ ](/vsts/work/_img/icons/Arrow_Previous.png) |Scroll left/right |
+> |![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png) ![ ](/vsts/work/_img/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
 > |**Shift+**![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png)![ ](/vsts/work/_img/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/vsts/work/_img/icons/Arrow_Up.png)![ ](/vsts/work/_img/icons/Arrow_Down.png) | Highlight consecutive rows|
 > |**Shift+**![Left arrow](/vsts/work/_img/icons/Arrow_Next.png) |Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
 > |**Shift+**![Right arrow](/vsts/work/_img/icons/Arrow_Previous.png) |Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
 > |**End** |Move focus to end of current clause | **End** |Move focus to bottom of list|
-> |**Enter** |Move focus down |**Enter** |Open selected work item | 
+> |**Enter** |Move focus down |**Enter** |Open selected work item |
 > |**Tab** |Move focus right, one field at a time |**Home** |Move focus to top of list |
 > |**Ctrl+c** |Copy selected clause |**+/-** |Expand/collapse current row|
-> |**Ctrl+s** |Save changes (editor) |**Ctrl+s** |Save changes (results)| 
-> |**Ctrl+v** |Paste copied clause |**F5**  |Refresh  |  
-> |**Del** |Delete contents of current field or clause |&nbsp;&nbsp;   |&nbsp;&nbsp;  | 
- 
-
+> |**Ctrl+s** |Save changes (editor) |**Ctrl+s** |Save changes (results)|
+> |**Ctrl+v** |Paste copied clause |**F5**  |Refresh  |
+> |**Del** |Delete contents of current field or clause |&nbsp;&nbsp;   |&nbsp;&nbsp;  |
 
 <!---
 <table width="70%">

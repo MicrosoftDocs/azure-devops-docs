@@ -1,18 +1,21 @@
 ---
-title:  Available Analytics Service widgets for VSTS
+title:  Analytics Service widgets 
 titleSuffix: VSTS
-description: Portfolio overview of the Analytics Service widgets and how they relate to each other
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Description of widgets that derive data from the Analytics Service and how they relate to each other
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 11/13/2017
 ---
 
 
 # Widgets based on the Analytics Service
+
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 The Analytics extension includes several dashboard widgets that take advantage of the power of the Analytics Service. Once you install the Analytics extension you can add Widgets to your dashboard. Using widgets, you and your team can gain valuable insights into the health and status of your work. 
 

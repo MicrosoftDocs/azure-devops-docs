@@ -1,13 +1,17 @@
 ---
 title: Build definition options
 description: Build options on VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build definition options
 
@@ -73,7 +77,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Hours)` | 21 |
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
-| `$(Rev:.r)` | 2 (The third build on this day will be 3, and so on.)<br /><br />Use **$(Rev:.rr)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:.rr)** if you want the Rev number to begin with 01, 02, and so on. |
+| `$(Rev:.r)` | 2 (The third build on this day will be 3, and so on.)<br /><br />Use **$(Rev:.r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:.rr)** if you want the Rev number to begin with 01, 02, and so on. |
 | `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |
@@ -92,9 +96,14 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
 
 ## Badge enabled
+
+::: moniker range="<= tfs-2017"
+
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
+
+::: moniker-end
 
 Select if you want to show the latest outcome of this build on external web sites.
 
@@ -131,18 +140,28 @@ For an example, see [Use a script to customize your build process](../../../acti
 
 
 ## Default agent queue
+
+::: moniker range="<= tfs-2017"
+
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
+
+::: moniker-end
 
 Select the [queue](../../../concepts/agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
 
 **Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../../../concepts/agents/hosted.md).
 
 ## Build job authorization scope
+
+::: moniker range="<= tfs-2017"
+
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
+
+::: moniker-end
 
 Specify the authorization scope for a build job. Select:
 
@@ -151,15 +170,20 @@ Specify the authorization scope for a build job. Select:
 * **Current Project** if you want to restrict this build to have access only the resources in the current team project.
 
 ## Build job timeout in minutes
+
+::: moniker range="<= tfs-2017"
+
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
 
+::: moniker-end
+
 Specify the maximum time a build job is allowed to execute on an agent before being canceled by the server. Leave it empty or at zero if you want the job to never be canceled by the server.
 
-<h2 id="job-cancel-timeout">Build job cancel timeout in minutes</h2>
+::: moniker range=">= tfs-2017"
 
-> **VSTS only**
+<h2 id="job-cancel-timeout">Build job timeout in minutes (VSTS, TFS 2017.3 and newer)</h2>
 
 Specify the maximum time a build job is allowed to respond after the a user cancels the build. You can specify a value from 1 to 60 minutes.
 
@@ -179,10 +203,17 @@ Whatever value you set here, the **Build job timeout in minutes** limit still ap
 >
 > The system typically consumes about 10 seconds of this time allotment for messaging before your tasks run.
 
+::: moniker-end
+
 ## Demands
+
+::: moniker range="<= tfs-2017"
+
 > **TFS 2017.1 and older**
 >
 > This section is available under <b>General<b> tab.
+
+::: moniker-end
 
 Use demands to make sure that the capabilities your build needs are present on the build agents that run it. Demands are asserted automatically by build steps or manually by you.
 
@@ -217,7 +248,9 @@ Register each build agent that has the capability.
 
 ## Multi-configuration
 
-Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. To learn about this example, see [Build your C++ app for Windows](../../../apps/windows/cpp.md).
+Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms.
+In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your definition (not in the **Options** tab).
+To learn about multi-configuration, see the example [Build your C++ app for Windows](../../../apps/windows/cpp.md).
 
 ## Q&A
 
@@ -225,12 +258,22 @@ Select this option to build multiple configurations. For example, you could buil
 
 ### In what time zone are the build number time values expressed?
 
+::: moniker range="vsts"
+
 If you are using VSTS, then the time zone is UTC.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < vsts"
 
 If you are using an on-premises Team Foundation Server, then the time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
+::: moniker-end
+
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

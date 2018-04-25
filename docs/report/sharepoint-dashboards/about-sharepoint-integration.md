@@ -1,18 +1,19 @@
 ---
 title: About SharePoint Integration 
+titleSuffix: TFS
 description: TFS/SharePoint integration - About SharePoint Integration 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: overview
 ms.assetid:  
 ms.manager: abjork
 ms.author: greggboe
 ms.date: 09/28/2017
-ms.topic: get-started-article
 ---
 
 # About SharePoint integration  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 SharePoint products are a valuable resource to users of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage VSTS and TFS teams to use SharePoint and will continue to look for ways to make the integration of VSTS and TFS and SharePoint Server and SharePoint online, be better together.
 
@@ -46,7 +47,7 @@ Starting with TFS 2018, we will no longer offer the TFS Extension for SharePoint
 
 ## Future plans for TFS and VSTS SharePoint integration
 
-Currently, our TFS and VSTS dashboards will meet most of your reporting requirements, replacing the previous dependency on TFS-SharePoint dashboards.  
+Currently, our [TFS and VSTS dashboards](../dashboards/dashboards.md) will meet most of your reporting requirements, replacing the previous dependency on TFS-SharePoint dashboards.  
 
 In the future, we plan to provide a way to embed a TFS or VSTS dashboard on a SharePoint site. From SharePoint, you will simply select a TFS or VSTS Dashboard to display, and it will be embedded on the SharePoint site.
 This will occur without laborious configurations. It will just work. It will also support both TFS and VSTS and SharePoint Server and SharePoint online.

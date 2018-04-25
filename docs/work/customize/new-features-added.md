@@ -1,11 +1,14 @@
 ---
-title: New features enabled with upgrade | TFS
-description: Features that you can enable through the Configure Features Wizard after you've upgraded the application tier server for Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: New features enabled with upgrade
+titleSuffix: TFS
+description: Features that you can enable through the Configure Features Wizard after you've upgraded the application tier server for Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/05/2017
 ---
 
@@ -17,9 +20,9 @@ Supports the following FWLINK: Learn more about these configuration changes: htt
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b>  
 
->[!NOTE]  
+> [!NOTE]    
 <b>Feature availability: </b>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
-  
+  
 The Configure Features Wizard detects which features have and haven't been configured. Most new features include additions or changes to work item types (WITs), categories, or process configuration. New features are introduced with different updates to Team Foundation Server (TFS).  
 
 
@@ -178,7 +181,7 @@ TFS 2015
 </tbody>
 </table>
 
-##Related notes 
+## Related articles 
 
 Not all new features require feature enablement. 
 

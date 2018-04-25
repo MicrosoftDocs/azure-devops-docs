@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/16/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Team Foundation Server architecture
 
@@ -32,7 +35,7 @@ In addition, you must consider the interactions between these entities. For exam
 
 Besides its own services, Team Foundation Server depends on other services in order to function. For information about these services, see Team Foundation Server concepts and Components of the TFS data warehouse. For more information about the requirements and dependencies for installation, see Team Foundation Server install guide.
 
-> **Caution!** You should not manually modify any of the TFS databases unless you’re instructed to do so by Microsoft Support or you’re following the procedures described for manually backing up the databases. Any other modifications can invalidate your service agreement.
+> **Caution!** You should not manually modify any of the TFS databases unless you're instructed to do so by Microsoft Support or you're following the procedures described for manually backing up the databases. Any other modifications can invalidate your service agreement.
 
 
 <a name="teamservices"></a>
@@ -214,9 +217,9 @@ By default, communication between the computers in a deployment of Team Foundati
 
 | Tier and service | Protocol | Port |
 | --- | --- | --- |
-| Application tier – Web Services | HTTP/HTTPS | 8080/443* |
-| Application tier – SharePoint Products Administration | HTTP | 17012* if SharePoint Products was installed with Team Foundation Server; otherwise, randomly generated |
-| Application tier – SharePoint Products and Reporting Services | HTTP <br/> Windows Management Instrumentation (WMI) service (required during installation to specify and verify the URLs for reporting services) | 80* Dynamic port |
+| Application tier - Web Services | HTTP/HTTPS | 8080/443* |
+| Application tier - SharePoint Products Administration | HTTP | 17012* if SharePoint Products was installed with Team Foundation Server; otherwise, randomly generated |
+| Application tier - SharePoint Products and Reporting Services | HTTP <br/> Windows Management Instrumentation (WMI) service (required during installation to specify and verify the URLs for reporting services) | 80* Dynamic port |
 | Data tier | MS-SQL TCP | 1433* |
 | Data tier (SQL Server Analysis Services) | MS-AS | default (2382 or 2383)* <br/> The default port varies depending on the version of SQL Server you installed and the type of instance. Use SQL Server Configuration Manager to determine the ports used by your deployment. |
 | Team Foundation Server Proxy - client to proxy | HTTP | 8081* |
@@ -231,17 +234,17 @@ By default, communication between the computers in a deployment of Team Foundati
 | Test controller to application tier | HTTP/HTTPS | 8080/443* |
 | Application tier to test controller | .NET remoting | 6901*|
 | Application tier to Domain Name System (DNS) | DNS Dynamic Update | 53 |
-| Application tier – Virtual Machine Manager | HTTP | 8100 |
+| Application tier - Virtual Machine Manager | HTTP | 8100 |
 | Test controller to test agent | .NET remoting | 6910* |
 | Test agent to test controller | .NET remoting | 6901* |
 | Build controller to build agent | SOAP over HTTP | 9191 |
 | Lab agent to lab agent in an isolated environment | TCP sockets | 9050 | 
 | Build agent to build controller | SOAP over HTTP | 9191 |
-| Virtual Machine Manager Administrator Console – Virtual Machine Manager | HTTP | 8100 |
-| Virtual Machine Manager– Virtual Machine Manager hosts | Windows Remote Management (WinRM) to perform actions <br/> Background Intelligent Transfer Service (BITS) to transfer data | 80 to perform actions <br/> 443 to transfer data |
-| Virtual Machine Manager– Virtual Machine Manager library server | WinRM to perform actions <br/> BITS to transfer data | 80 to perform actions <br/> 443 to transfer data |
-| Application tier – Virtual Machine Manager hosts | Distributed Component Object Model/Windows Management Interface (DCOM/WMI) communication to transfer data | 135 <br/> Dynamically assigned in the range 49152 to 65535 |
-| Client tier – Virtual Machine Manager hosts | Host-based connection to the virtual machine. | 2179 to perform host-based connections |
+| Virtual Machine Manager Administrator Console - Virtual Machine Manager | HTTP | 8100 |
+| Virtual Machine Manager- Virtual Machine Manager hosts | Windows Remote Management (WinRM) to perform actions <br/> Background Intelligent Transfer Service (BITS) to transfer data | 80 to perform actions <br/> 443 to transfer data |
+| Virtual Machine Manager- Virtual Machine Manager library server | WinRM to perform actions <br/> BITS to transfer data | 80 to perform actions <br/> 443 to transfer data |
+| Application tier - Virtual Machine Manager hosts | Distributed Component Object Model/Windows Management Interface (DCOM/WMI) communication to transfer data | 135 <br/> Dynamically assigned in the range 49152 to 65535 |
+| Client tier - Virtual Machine Manager hosts | Host-based connection to the virtual machine. | 2179 to perform host-based connections |
 | Hosted services | HTTPS | 443 |
 
 

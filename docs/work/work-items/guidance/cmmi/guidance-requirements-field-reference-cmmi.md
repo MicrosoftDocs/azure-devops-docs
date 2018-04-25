@@ -1,11 +1,13 @@
 ---
-title: Requirements field reference (CMMI) | VSTS & TFS
-description: Definition of fields used to track requirements in the CMMI process for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Requirements field reference (CMMI)
+titleSuffix: VSTS & TFS
+description: Definition of fields used to track requirements in the CMMI process for Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/24/2017
 ---
 # Requirements field reference (CMMI)
@@ -26,5 +28,5 @@ When you create a team project using the [CMMI process](../cmmi-process.md), you
   
 1.  To change the menu selection, see [Customize a pick list](../../../customize/add-modify-field.md).  
   
-## Related notes
+## Related articles
  [Index of work item fields](../work-item-field.md)

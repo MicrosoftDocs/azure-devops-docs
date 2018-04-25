@@ -1,16 +1,18 @@
 ---
-title: Bug Reactivations Excel Report | TFS
-description: Use the Bug Reactivations report to determine how effectively the team is fixing bugs - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Bug Reactivations Excel Report  
+description: Use the Bug Reactivations report to determine how effectively the team is fixing bugs - Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: c26a24cc-5710-425d-8fc4-77e35442e743
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
 # Bug Reactivations Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Bug Reactivations report to determine how effectively the team is fixing bugs. This report shows the cumulative count of Bugs that the team has reactivated and Bugs that the team has since resolved, for the most recent four weeks. The reactivation rate is also referred to as the fault feedback ratio.  
   

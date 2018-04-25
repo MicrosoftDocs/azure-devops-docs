@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Edit the code and see it deployed
 
 Now that you have a completely automated CI/CD pipeline, any changes that you make to the app are automatically built and deployed by VSTS. To try this, make a change to the app and commit that change to the Git repository.

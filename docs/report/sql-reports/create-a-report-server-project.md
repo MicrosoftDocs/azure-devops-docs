@@ -1,11 +1,13 @@
 ---
-title: Create a Report Server Project | TFS
-description: Use SQL Server Report Designer to create a report to track the team's progress by-Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Create a Report Server Project
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
+description: Use SQL Server Report Designer to create a report to track the team's progress by-Team Foundation Server 
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

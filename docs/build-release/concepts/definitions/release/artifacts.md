@@ -2,14 +2,17 @@
 title: Artifacts in Release Management
 description: Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Release Management
+# Release artifacts and artifact sources
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -35,7 +38,7 @@ As you deploy the release to various environments, you will be deploying
 and validating the same artifacts in all environments.
 
 A single release definition can be linked to
-**multiple artifact sources**.
+**multiple artifact sources**, of which one is the [primary source](#art-primary).
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
@@ -52,12 +55,19 @@ on the linking of artifacts to a release definition are:
   Note that the ability to automatically create releases
   is available for only some artifact sources.
 
-<!-- * **Trigger conditions** You can configure a release to be created automatically, or the deployment of a release to an environment to be triggered automatically, when only specific conditions on the artifacts are met. -->
-<!-- For example, you can configure releases to be automatically created only when a new build is produced from a certain branch.-->
+* **Trigger conditions**. You can configure a release to be created
+  automatically, or the deployment of a release to an environment
+  to be triggered automatically, when only specific conditions on the
+  artifacts are met. For example, you can configure releases to be
+  automatically created only when a new build is produced from a certain branch.
+
+* **Artifact versions**. You can configure a release to automatically use a specific
+  version of the build artifacts, to always use the latest version, or to allow you 
+  to specify the version when the release is created.
 
 * **Artifact variables**. Every artifact that is part
-  of a release has metadata associated with it. This
-  metadata includes the version number of the artifact,
+  of a release has metadata associated with it, exposed to [tasks](../../../tasks/index.md) through [variables](#art-vars).
+  This metadata includes the version number of the artifact,
   the branch of code from which the artifact was produced
   (in the case of build or source code artifacts), the
   definition that produced the artifact (in the case of
@@ -78,7 +88,7 @@ on the linking of artifacts to a release definition are:
   certain artifact sources.
 
 * **Artifact download**. Whenever a release is
-  deployed to an environment, Release Management
+  deployed to an environment, by default Release Management
   automatically downloads all the artifacts in that
   release to the [agent](../../agents/agents.md) where the deployment job runs.
   The procedure to download artifacts depends on the
@@ -128,7 +138,7 @@ the build definitions in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
-> you must include a **Publish Artifacts** task step in your build
+> You must include a **Publish Artifacts** task step in your build
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 
@@ -249,24 +259,22 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 
-<h3 id="dockersource">Docker</h3>
+<h3 id="dockersource">Azure Container Registry, Docker, Kubernetes</h3>
 
 When deploying containerized apps, the container image is first pushed to a container registry.
-After the push is complete, the container image can be deployed to the Web App for Containers service or a Kubernetes cluster.
+After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
 You must create a service endpoint with credentials to connect to 
-your Docker service to deploy images located there, or to your Azure account. For more details, see
-[service endpoints](../../library/service-endpoints.md),
-[Docker Host service endpoint](../../library/service-endpoints.md#sep-dochost),
-and [Docker Registry service endpoint](../../library/service-endpoints.md#sep-docreg).
+your service to deploy images located there, or to your Azure account. For more details, see
+[service endpoints](../../library/service-endpoints.md).
 
-The following features are available when using Docker sources:
+The following features are available when using Azure Container Registry, Docker, Kubernetes sources:
 
 | Feature | Behavior with Docker sources |
 |---------|-------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for images stored in Docker Hub or Azure Container registry. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Docker. |
-| Work items and commits | Release Management cannot show work items or commits for Docker images. |
-| Artifact download | By default, Docker builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
+| Auto-trigger releases | You can configure a continuous deployment trigger for images. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds. |
+| Work items and commits | Release Management cannot show work items or commits. |
+| Artifact download | By default, builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 <h3 id="teamcitysource">TeamCity</h3>
@@ -387,11 +395,25 @@ deployed again. In addition, because the previously downloaded contents are
 always deleted when you initiate a new release, Release Management cannot
 perform incremental downloads to the agent.
 
-You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-phase)
+::: moniker range="< vsts"
+
+You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-props)
 of artifacts to the agent for a specific phase and environment of the deployment if you
 wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#agent-props)
+to the agent for a specific phase and environment of the deployment.
+Typically, you will do this when the tasks in that phase do not
+require all or any of the artifacts, or if you implement custom code
+in a task to download the artifacts you require.
+
+::: moniker-end
 
 <a name="source-alias"></a>
 <h2 id="source-alias">Artifact source alias</h2>
@@ -421,12 +443,16 @@ source alias that reflects the name of the build definition.
 > The source alias can contain only alphanumeric characters
 and underscores, and must start with a letter or an underscore
 
+<a name="art-primary"></a>
+
 <h2 id="primary-source">Primary source</h2>
 
 When you link multiple artifact sources to a release definition, one of them
 is designated as the primary artifact source. The primary artifact source is used
 to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
 be used in [naming releases](index.md#numbering).
+
+<a name="art-vars"></a>
 
 ## Artifact variables
 

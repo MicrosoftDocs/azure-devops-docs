@@ -1,11 +1,13 @@
 ---
-title: Status on All Iterations Report | TFS
+title: Status on All Iterations Report
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Helps you track the team's performance over successive iterations.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

@@ -8,7 +8,10 @@ ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
+monikerRange: 'tfs-2013 || tfs-2015'
 ---
+
+
 
 # Configure an SMTP server and customize email for alerts and feedback requests in TFS
 
@@ -61,7 +64,7 @@ You can use an XML editor, such as Visual Studio, to change any of the transform
 | WorkItemChangedEvent.xsl | HTML e-mail |
 | WorkItemChangedEvent.plaintextXsl | plaintext e-mail |
 
-The event service uses the .xsl and the plaintextXsl files to transform the XML data for an event into an e-mail message. Edit the .xsl file to get a different format for the email notification. For HTML-formatted email messages, the core layout for all events is stored in TeamFoundation.xsl. You should make a backup copy of any files that you want to change, and then test your changes. After you have made your changes, TFS will use the modified transform the next time it generates a notification for an event.�
+The event service uses the .xsl and the plaintextXsl files to transform the XML data for an event into an e-mail message. Edit the .xsl file to get a different format for the email notification. For HTML-formatted email messages, the core layout for all events is stored in TeamFoundation.xsl. You should make a backup copy of any files that you want to change, and then test your changes. After you have made your changes, TFS will use the modified transform the next time it generates a notification for an event.
 
 > [!NOTE]
 > The content of the emails that are issued is automatically generated from the TeamFoundation.xsl file and the above WorkItemChangedEvent xsl files. Modifying the TeamFoundation.xsl file is not recommended. If you do modify the contents of this file, you must thoroughly test your modifications. Incorrect modifications of this file can result in the failure of TFS email alerts and cause you to be unable to view work items, changesets, or files in a Web browser.

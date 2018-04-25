@@ -1,13 +1,18 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 title: Build and Release Agents
+ms.topic: conceptual
 description: Build and Release Agents in VSTS and Team Foundation Server
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
+
+
 # Build and Release Agents
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
@@ -16,11 +21,15 @@ To build your code or deploy your software you need at least one agent. As you a
 
 When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
 
+::: moniker range="vsts"
+
 ## Hosted agents
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
 [Learn more about hosted agents](hosted.md).
+
+::: moniker-end
 
 <h2 id="install">Private agents</h2>
 
@@ -29,6 +38,8 @@ An agent that you set up and manage on your own to run build and deployment jobs
 You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container.
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
+
+::: moniker range=">= tfs-2017"
 
 ### Install and connect to VSTS and TFS 2017 and newer
 
@@ -41,6 +52,10 @@ After you've installed the agent on a machine, you can install any other softwar
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
 ### Install and connect to TFS 2015
 
 * [Windows agent v1](../../actions/agents/v1-windows.md)
@@ -49,12 +64,23 @@ After you've installed the agent on a machine, you can install any other softwar
 * [Ubuntu 16.04 agent](../../actions/agents/v2-linux.md)
 * [RedHat agent](../../actions/agents/v2-linux.md)
 
+::: moniker-end
+
 ### Concurrent pipelines for private agents
 
 You might need more concurrent pipelines to use multiple agents at the same time:
 
+::: moniker range="vsts"
+
 * [Concurrent pipelines in VSTS](../licensing/concurrent-pipelines-ts.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < vsts"
+
 * [Concurrent pipelines in TFS](../licensing/concurrent-pipelines-tfs.md)
+
+::: moniker-end
 
 <h2 id="capabilities">Capabilities</h2>
 
@@ -74,7 +100,19 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 <h2 id="communication">Communication</h2>
 
-### Communication with VSTS or TFS
+::: moniker range="vsts"
+
+### Communication with VSTS
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < vsts"
+
+### Communication with TFS
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 #### VSTS or TFS 2017 and newer
 
@@ -92,6 +130,10 @@ Here is a common communication pattern between the agent and VSTS or TFS.
 
 The payload of the messages exchanged between the agent and TFS/VSTS are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. Server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in build definitions, release definitions, or variable groups are secured as they are exchanged with the agent.
 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
 #### TFS 2015
 
 In TFS 2015:
@@ -99,6 +141,8 @@ In TFS 2015:
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for macOS and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
 * The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../../security/websitesettings.md) between the agent and TFS.
+
+::: moniker-end
 
 ### Communication to deploy to target servers
 
@@ -118,13 +162,21 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to VSTS or TFS using one of the following methods:
 
-* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
+::: moniker range=">= tfs-2017"
 
-* **Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+**Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
 
-* **Negotiate:** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+::: moniker-end
 
-* **Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../../security/websitesettings.md).
+::: moniker range=">= tfs-2015 < vsts"
+
+**Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+
+**Negotiate:** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+
+**Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../../security/websitesettings.md).
+
+::: moniker-end
 
 <h2 id="account">Interactive vs. service</h2>
 

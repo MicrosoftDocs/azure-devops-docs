@@ -1,11 +1,13 @@
 ---
-title: Configuration quick reference | TFS
-description: Install and configure the Team Foundation Server Extensions for the Project Server and the two server products - Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Configuration quick reference
+titleSuffix: TFS 
+description: Install and configure the Team Foundation Server Extensions for the Project Server to support Team Foundation Server-Project Server integration  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 55197d77-ff30-4534-8f59-7cf8cc329806
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
 
@@ -98,7 +100,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
 |![Step 5](_img/procguid_5.png "ProcGuid_5")|**Program Manager**: Verify that the approved work items appear in the enterprise project plan.|Open the enterprise project plan, and confirm that the approved work items appear. You may have to close the project plan and reopen it to view the updates.|  
 |![Step 6](_img/procguid_6.png "ProcGuid_6")|**Team Lead**: Review the Project Server Sync messages and the status of the submitted work items.|In Team Explorer, refresh your team project. Open the work items that were submitted to Project Server, and review the message that was added to the **History** field. Click the **Project Server** tab, and review the values that were assigned to the status fields for Project Server. You should expect the updates to appear after a few minutes.|  
   
-## Related notes  
+## Related articles  
  [System and setup requirements](system-and-setup-requirements.md)   
  [Map integration components](map-integration-components.md)   
  [Synchronization process overview](synchronization-process-overview.md)   

@@ -2,33 +2,30 @@
 title: Customize a process to import using Hosted XML
 titleSuffix: VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
-ms.author: kaelli
-ms.date: 05/23/2017
+ms.author: kaelliauthor: KathrynEE
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Customize a process when using Hosted XML
 
 <b>VSTS (Hosted XML)</b>   
  
->[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> [!IMPORTANT]  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
->
->To learn more about process models, see [Customize work tracking](../customize-work.md). 
+>To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 
 VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more team projects from it. 
-You can update the process at any time by importing the process again and confirming that you want to update it.
+You can update the process at any time by importing the process again. 
 The changes made to the process template are then applied to all team projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS.
-
-While your custom process may contain the entire set of template files-plug-ins and object definition files-only a subset are validated upon import and then used to inform the process and update existing team projects. Specifically, the system performs the following actions on each of the plug-ins and objects defined within the process you choose for import. 
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS. Some building blocks will update existing team projects, while others only apply to new team projects. See the table below for the full list.
 
 <table>
 <tbody>
@@ -85,7 +82,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 1.  From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
     
-	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
   
     Save the zip file and extract all files.
 

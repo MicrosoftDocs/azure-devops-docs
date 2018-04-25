@@ -1,17 +1,17 @@
 ---
 title: Reportable fields reference| TFS
 description: Default set of fields that appear in the relational warehouse database or the cube 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/17/2017
 ---
 # Reportable fields reference for Visual Studio ALM
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
 >
 >For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
@@ -49,7 +49,7 @@ A default set of fields appears in the relational warehouse database or the cube
 |Changed Date|The date and time when the work item was modified.|System.ChangedDate|DateTime|  
 |Closed By|The name of the person who closed a work item.|Microsoft.VSTS.Common.ClosedBy|String|  
 |Closed Date|The date and time when a work item was closed.|Microsoft.VSTS.Common.ClosedDate|DateTime|  
-|Closed Status|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 – Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br />-   **3- Needs Work**<br />-   **4 - Declined**<br />-   **5 - Removed**|Microsoft.VSTS.CodeReview.ClosedStatus|String|  
+|Closed Status|The status selected by the reviewer when closing the code review request. The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash;Not Reviewed**<br />-   **1 - Looks Good**<br />-   **2 - With Comments**<br />-   **3- Needs Work**<br />-   **4 - Declined**<br />-   **5 - Removed**|Microsoft.VSTS.CodeReview.ClosedStatus|String|  
 |Created By|The name of the team member who created the work item.|Microsoft.VSTS.Common.CreatedBy|String|  
 |Created Date|The date and time when a work item was created.|Microsoft.VSTS.Common.CreatedDate|DateTime|  
 |Due Date|The forecasted due date by which an issue will be resolved. (Agile process template only)|Microsoft.VSTS.Scheduling.DueDate|DateTime|  
@@ -60,7 +60,7 @@ A default set of fields appears in the relational warehouse database or the cube
 |Issue|Indicates that the shared step is associated with an expected result. Allowed values are **Yes** and **No**. **Note:**  This field is not included in the work item form and is not populated with any data.|Microsoft.VSTS.Common.Issue|String|  
 |Iteration Path|Groups the work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy.|System.IterationPath|TreePath|  
 |Priority|A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:<br /><br /> -   **1**:  Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.<br />-   **2**:  Product cannot ship without the successful resolution of the work item, but it does not have to be addressed immediately.<br />-   **3**:  Resolution of the work item is optional, based on resources, time, and risk.|Microsoft.VSTS.Common.Priority|Integer|  
-|Rating|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /><br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 – Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**|Microsoft.VSTS.Common.Rating|String|  
+|Rating|The number of stars that an item receives from a reviewer in a star-based ranking system. (Feedback Response)<br /><br /> The number is stored in the system and written to the data warehouse as follows:<br /><br /> -   **0 &mdash;Not Rated**<br />-   **1 - Poor**<br />-   **2 - Fair**<br />-   **3- Good**<br />-   **4- Very Good**<br />-   **5 - Excellent**|Microsoft.VSTS.Common.Rating|String|  
 |Reason|The reason that the work item is in the current state. Values are specific to both the state and the type of work item. The field is not tracked for test cases or shared steps.|System.Reason|String|  
 |Resolved By|The name of the team member who resolved the bug or user story.|Microsoft.VSTS.Common.ResolvedBy|String|  
 |Resolved Date|The date and time when the bug or user story was resolved.|Microsoft.VSTS.Common.ResolvedDate|DateTime|  
@@ -89,6 +89,6 @@ A default set of fields appears in the relational warehouse database or the cube
 |Size|The relative rating for the amount of work that a requirement will require to implement. (CMMI process template only)|Microsoft.VSTS.Scheduling.Size|Double|  
 |Story Points|A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it. (Agile process template only)|Microsoft.VSTS.Scheduling.StoryPoints|Double|  
   
-## Related notes
+## Related articles
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md)
 -  [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md)

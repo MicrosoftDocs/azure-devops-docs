@@ -1,14 +1,15 @@
 ---
 title: Review team delivery plans 
 titleSuffix: VSTS & TFS
-description: Install the Delivery Plans extension, add & use plans to review scheduled multi-team deliverables in VSTS (VSTS, VS Online) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 10/09/2017
+monikerRange: '>= tfs-2017'
+ms.date: 03/20/2018
 ---
 
 
@@ -25,7 +26,7 @@ Use Delivery Plans to ensure your teams are aligned  with your organizational go
 
 In this topic you'll learn:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > - How to review a plan with your teams
 > - How to add and edit a plan
 > - How to add field criteria, customize cards, and add markers
@@ -34,8 +35,25 @@ In this topic you'll learn:
 > - What permissions are required to create and view plans  
 
 
-> [!NOTE]  
-> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../security/get-started-stakeholder.md), however, don’t have access to Delivery Plans.) 
+## Prerequisites
+In order to add and configure a plan, you must have the following in place:  
+- [Installed the Plans extension](#install-plans)  
+- Be granted [Basic access or greater](../../security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- [Defined iteration paths](../customize/set-area-paths.md) for the team project  
+- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
+- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
+
+All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
+
+
+<a id="install-plans">  </a>
+### Install the Plans page extension 
+
+The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). To provide feedback, visit our [Uservoice page](https://visualstudio.uservoice.com/forums/330519-team-services).
+
+::: moniker range="tfs-2017" 
+Installation of Delivery Plans requires TFS 2017.2 or later version.
+::: moniker-end
 
 ## Review a plan with your teams
 
@@ -52,16 +70,8 @@ For example, we use Delivery Plans internally to share the schedule of Features 
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
-
-### Prerequisites
-In order to add and configure a plan, you must have the following in place:  
-- [Installed the Plans extension](#install-plans)  
-- Be granted Basic access or greater in [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../security/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../customize/set-area-paths.md) for the team project  
-- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
-- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations      
-
-## Add a plan  
+    
+## Add a plan  
 
 Once you have [installed Delivery Plans](#install-plans), the Plans page appears under the Work hub.
 
@@ -108,7 +118,6 @@ Once you've defined a plan, you can further customize it.
 	Markers appear on the plan as shown: 
 
 	<img src="_img/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
-
 
 ## View the list of plans, open a plan  
 
@@ -175,7 +184,7 @@ As changes occur to the schedule, you you can update the iteration for a backlog
 ![Move a card to a different iteration](_img/plans_move1.png)
 
 
-## Related notes  
+## Related articles  
 
 So now you've got an idea of how to use plans to create a project schedule view across multiple teams. From the settings dialog, you can also
 
@@ -186,16 +195,11 @@ For additional resources for working with multiple teams, see these additional t
 - [Portfolio management](portfolio-management.md)  
 - [Configure team settings](manage-team-assets.md)  
 - [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
-- 
 
-<a id="install-plans">  </a>
-### Install the Plans page extension 
-
-The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). To provide feedback, visit our[Uservoice page](https://visualstudio.uservoice.com/forums/330519-team-services).
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans programmatically using the [Plans REST API](https://visualstudio.com/integrate/api/work/plans.md).
+You can manage plans programmatically using the [REST API, Plans](https://docs.microsoft.com/en-us/rest/api/vsts/work/plans).
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

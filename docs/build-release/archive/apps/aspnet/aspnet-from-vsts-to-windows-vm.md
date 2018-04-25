@@ -1,20 +1,25 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET app | VSTS
 description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using VSTS
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 services: vsts
 documentationcenter: ''
 author: alewis
 manager: douge
 editor: ''
-
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: aspnet
 ms.author: alewis
+author: andyjlewis
 ms.date: 06/27/2017
 ms.custom: mvc
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
+
 
 # Implement a CI/CD process to build and deploy your ASP.NET app to Azure
 

@@ -1,23 +1,22 @@
 ---
-title: Drive Git or TFVC development from a work item | VSTS & TFS 
-description: Create a branch, create a pull request, and automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operations  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Drive Git or TFVC development from a work item
+titleSuffix: VSTS & TFS 
+description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
-ms.topic: get-started-article
+author: KathrynEE
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
+ms.date: 03/20/2018
 ---
 
 # Drive Git development from a work item   
 
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
-
-
->[!NOTE]  
-><b>Feature availability: </b>The Development section appears in the work item web form for VSTS and TFS 2017 or later versions, configured with the [new work item tracking experience](../customize/process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../accounts/create-team-project.md#git-and-tfvs-repos).   
+**VSTS | TFS 2018 | TFS 2017**
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -38,8 +37,11 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
 
 <a id="git-development">  </a>
+
 ## Workflow process to create a branch and pull request
 
 Consider creating a new branch when there are no linked code artifacts. If there is a branch but no pull requests, consider creating a pull request. Here's a typical workflow sequence when working with a Git repository. 
@@ -58,8 +60,8 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	Branches you create are automatically linked to the work item.  
 
-	>[!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```. VSTS automatically adds a README file to the initial repo created with each new team project.   
+	> [!NOTE]  
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new team project.   
 
 2. The system will open to the repository and branch that you just created. 
 
@@ -85,7 +87,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
   
  	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
 
-	>[!NOTE]  
+	> [!NOTE]  
 	>Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
 	 
 	<img src="_img/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" /> 
@@ -101,9 +103,6 @@ Consider creating a new branch when there are no linked code artifacts. If there
 7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../_img/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
 
 	<img src="_img/git-dev-development-section-completed-links.png" alt="Work item form, Development section, links added" style="border: 1px solid #C3C3C3;" /> 
-
-      
-
 
 
 <a id="add-branch-multi-wi">  </a>
@@ -141,9 +140,7 @@ If you want to remove a link, you can do so from the Development section by high
 
 Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Links tab and click the ![delete icon](../_img/icons/delete-link.png) remove link icon.
 
-
-
-## Related notes
+## Related articles
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
@@ -152,10 +149,10 @@ Learn more about tracking work with work items and developing with Git from thes
 - [TFVC overview](../../tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
 
-> [!NOTE]     
-> To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control).    
+Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
 
-Keep in mind that the Development section only appears when using the web portal for VSTS and TFS 2017 or later versions. The work item tracking experience and forms that appear in Visual Studio will be missing several of the features that the web portal makes available.  
+> [!NOTE]   
+> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://www.visualstudio.com/downloads/). 
 
 ### Associated work items in build 
 
@@ -166,6 +163,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ### Link types showing in the Development section
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
@@ -173,10 +171,22 @@ Links shown in this section appear as a result of these actions:
 - Specifically linking the work item from the Development section or ![Links tab icon](_img/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
-
+::: moniker-end
+::: moniker range="vsts"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
->[!NOTE]  
->The link types, **Found in build** and **Integrated in build** are only available from VSTS and only work with the current build processes (not XAML builds). 
-
 <img src="../track/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+The link types you can add within the development section are Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
+
+<img src="_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control). 
+ 
+::: moniker-end
+
+<!---
+and only work with the current build processes (not XAML builds)
+-->

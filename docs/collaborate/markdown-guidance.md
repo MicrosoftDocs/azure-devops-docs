@@ -1,14 +1,15 @@
 ---
-title: Syntax usage for Markdown files, widgets, wikis, and pull request 
+title: Syntax usage for Markdown files, widgets, wikis, and pull requests 
 titleSuffix: VSTS & TFS 
-description: Share information and mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+description: Share information, add tables & mathematical notation using markdown within pull requests, project pages, readme files, dashboards, and widgets  
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article 
-ms.date: 01/31/2018
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2015'
+ms.date: 03/06/2018
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
@@ -35,24 +36,44 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Example:**   
 ```
-# This is an H1 header
-## This is an H2 header
-### This is an H3 header
-#### This is an H4 header
-##### This is an H5 header
+# This is a H1 header
+## This is a H2 header
+### This is a H3 header
+#### This is a H4 header
+##### This is a H5 header
 ```
 
 **Result:**      
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />     
 
 ## Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
+::: moniker range="vsts"
+
 In pull request comments, press Enter to insert a line break and begin text on a new line. 
 
-In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+While in a Markdown file, wiki, or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+In pull request comments and the wiki, press Enter to insert a line break and begin text on a new line. 
+
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+In pull request comments, press Enter to insert a line break and begin text on a new line. 
+
+In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
+::: moniker-end
+   
 
 **Example - pull request comment:**
 
@@ -62,7 +83,7 @@ This spaces your text better and makes it easier to read.
 </pre>
 
 **Result:**   
-Add lines between your text with the return key      
+Add lines between your text with the Enter key.      
 This spaces your text better and makes it easier to read.
 
 
@@ -78,7 +99,7 @@ Add two spaces prior to the end of the line.
 
 This adds space in between paragraphs.
 
- 
+
 ## Quotes
 
 Quote previous comments or text to set context for your comment or text.
@@ -128,8 +149,9 @@ below
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line.  
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
+###Ordered or numbered lists
 **Example:**  
 ```
 0. First item.
@@ -141,6 +163,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 1. First item.
 2. Second item.
 3. Third item.
+
+###Bullet lists
 
 **Example:**  
 <pre>
@@ -154,10 +178,37 @@ Ordered lists start with a number followed by a period for each list item. Unord
 - Item 2
 - Item 3
 
+###Nested lists
+
+**Example:**  
+<pre>
+1. First item.
+   - Item 1
+   - Item 2
+   - Item 3
+1. Second item.
+   - Nested item 1
+   - Nested item 2
+   - Nested item 3 
+</pre>
+
+**Result:**  
+
+1. First item.
+	- Item 1
+	- Item 2
+	- Item 3
+2. Second item.
+	- Nested item 1
+	- Nested item 2
+	- Nested item 3
+
 
 ## Links
 
 In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, within pull requests, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
+
+You can escape auto suggestion of work items by prefixing # with a backslash (`\`). E.g. This can be useful if you want to use # for color hex codes.   
 
 In markdown files and widgets, you can set text hyperlinks for your URL using the standard markdown link syntax:
 
@@ -199,13 +250,16 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 [C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
 
+
+::: moniker range="vsts || >= tfs-2018"
+
 <a id="link-work-items">  </a>
-## Link to work items from a Wiki page
- 
->[!NOTE]  
->**Feature availability**: You can use the **#ID** control to link to a work item from within a Wiki page from your VSTS account or TFS 2018.   
+### Link to work items from a Wiki page
 
 Simply enter the pound sign (`#`) and enter a work item ID. 
+
+::: moniker-end
+
 
 <a id="relative-links">  </a>
 ### Source control relative links
@@ -247,7 +301,7 @@ The ID is all lower case, and the link is case sensitive, so be sure to use lowe
 You can also reference headings within another Markdown file:
 
 <pre>
-[text to display](./target.md#heading id)  
+[text to display](./target.md#heading-id)  
 </pre>
 
 
@@ -296,7 +350,7 @@ a clear name to description mapping.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
-- To start a new line, use the HTML break tag (`<br/>`)
+- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
 - Make sure to end each row with a CR or LF. 
 
 **Example:**
@@ -305,16 +359,16 @@ a clear name to description mapping.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 </pre> 
 
 <br/>
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
+|-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
 
 
@@ -336,9 +390,10 @@ Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with
 <br/>
 **Result:**  
  
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />    
 
-
+> [!NOTE]   
+> A checklist within a table cell isn't supported. 
  
 ## Emphasis (bold, italics, strikethrough)  
 
@@ -448,7 +503,7 @@ To escape emojis, enclose them using the \` character.
  `:smile:` `:)` `:angry:`
 
 
-## Special characters 
+## Special characters
 
 <table width="650px">
 <tbody valign="top">
@@ -497,16 +552,21 @@ To escape emojis, enclose them using the \` character.
 
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper-right of the comment box or the format pane in wiki page. 
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />     
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 
 Attachments support the following file formats:
 
-- Images: PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg)
-- Documents:  Word (.docx), Excel (.xlsx and .csv), and Powerpoint (.pptx), text files (.txt), and PDFs (.pdf)
-- Compressed files: ZIP (.zip) and GZIP (.gz)
-- Video files: MOV (.mov), MP4 (.mp4)
+> [!div class="mx-tdCol2BreakAll"]    
+> |    Type    | File formats |
+> |------|---------| 
+> | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql)   | 
+> | Compressed files | ZIP (.zip) and GZIP (.gz) | 
+> | Documents | Markdown (.md), Microsoft Office Message (.msg), Microsoft Project (.mpp), Word (.doc and .docx), Excel (.xls, .xlsx and .csv), and Powerpoint (.ppt and .pptx), text files (.txt), and PDFs (.pdf) | 
+> | Images | PNG (.png), GIF (.gif), JPEG (both .jpeg and .jpg) | 
+> | Visio | VSD (.vsd and .vsdx)  | 
+> | Video | MOV (.mov), MP4 (.mp4) | 
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 Attached image files render directly into your comment or wiki pages. 
@@ -557,6 +617,7 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p> 
 
+::: moniker range="vsts"
 
 <a id="mathematical-notation">  </a>
 ## Mathematical notation and characters 
@@ -617,10 +678,10 @@ $$
 > [!div class="mx-imgBorder"]
 ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
+::: moniker-end
 
 
-
-## Related notes  
+## Related articles  
 
 - [Project vision page or Welcome pages](project-vision-status.md) 
 - [Readme files](../git/create-a-readme.md) 
@@ -630,4 +691,3 @@ $$
 - [Widget catalog](../report/dashboards/widget-catalog.md) 
 - [Wiki](add-edit-wiki.md)
   
-[!INCLUDE [temp](../_shared/help-support-shared.md)] 

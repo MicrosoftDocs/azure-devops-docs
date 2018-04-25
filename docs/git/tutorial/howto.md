@@ -2,12 +2,16 @@
 title: Git frequently asked questions | VSTS & TFS
 description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: b1262306-214c-4422-8eda-d03d05825241
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2016
+author: steved0x
+ms.topic: reference
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Frequently Asked Git Questions
 

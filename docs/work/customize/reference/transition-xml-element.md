@@ -1,11 +1,11 @@
 ---
 title: TRANSITION XML element | VSTS & TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/27/2017
 ---
 
@@ -14,7 +14,7 @@ ms.date: 10/27/2017
 # TRANSITION XML element  
 
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   
@@ -27,9 +27,9 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > [!div class="tabbedCodeSnippets"]
 ```XML  
 <TRANSITION from="NameOfStartingState" to="NameOfEndingState" for="UserGroupName" not="UserGroupName">  
-    <ACTIONS> . . . </ACTIONS>  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
+       <ACTIONS> . . . </ACTIONS>  
+       <REASONS> . . . </REASONS>  
+       <FIELDS> . . . </FIELDS>  
 </TRANSITION>  
 ```  
   
@@ -45,6 +45,9 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 |`for`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is allowed to perform the transition.|  
 |`not`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is restricted from performing the transition.|  
   
+> [!NOTE]   
+> for and not rules are not natively supported in VSTS at this time.
+
 ### Child elements  
   
 |Element|Description|  
@@ -107,6 +110,6 @@ When you link a work item to a pull request (PR), you have the option to automat
 
 To learn more, see [Workflow states & state categories](../workflow-and-state-categories.md).
 
-## Related notes 
+## Related articles 
 - [Change the workflow](change-workflow-wit.md)
 - [Customize your work tracking experience](../customize-work.md)   

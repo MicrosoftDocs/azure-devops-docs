@@ -1,17 +1,21 @@
 ---
 title: Conditional task expressions
 description: Write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 03/22/2017
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Specify conditions for running a task
 
-**VSTS** 
+**VSTS | TFS 2018 | TFS 2017.3** 
 
 Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release definition,
 you can specify the conditions under which the task or phase will run:

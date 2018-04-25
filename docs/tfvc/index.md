@@ -1,14 +1,18 @@
 ---
 title: Team Foundation Version Control (TFVC) index to content   
 description: Guide to getting started with TFVC documentation  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git  
+ms.prod: devops
+ms.technology: devops-code-git  
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
 ms.date: 09/07/2017
+ms.topic: overview
 layout: LandingPage
+monikerRange: '>= tfs-2015'
 ---
+
 
 # TFVC
 

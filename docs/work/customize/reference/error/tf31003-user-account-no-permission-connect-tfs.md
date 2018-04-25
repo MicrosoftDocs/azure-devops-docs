@@ -1,11 +1,12 @@
 ---
-title: TF31003-Your user account does not have permission to connect to TFS | VSTS & TFS
-description: Receive the error when you try to connect to VSTS or Team Foundation Server (TFS).
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: TF31003-Your user account does not have permission to connect to VSTS or TFStitleSuffix: VSTS & TFS
+description: Receive the error when you try to connect to VSTS or Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: bfec0879-44e7-4cf1-825b-c9e6520f4d56
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
 
@@ -21,9 +22,9 @@ You might receive this error when you try to connect to Visual Studio Team Servi
 |You have multiple Microsoft accounts that you use to connect to VSTS. You may have used another account for one purpose and it was cached.|To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for `devenv.exe` to access your run as options.<br /><br /> ![Context menu for Visual Studio devenv.exe](_img/alm_cnt_runas.png "ALM_CNT_RunAs")<br /><br /> <br /><br /> The executable is in this folder: *Drive*:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\\.|  
 |Your web browser has cached a cookie based on old, different, or out of date credentials.|Try clearing the cookies for your browser, or try logging off your client computer or workstation and logging back on.|  
 |Your password in Active Directory or [Azure Active Directory](http://azure.microsoft.com/services/active-directory) has expired.|Verify that your password is active.<br /><br /> If you didn't log off after your password expired, you might still be able to use your account on your machine, but not authenticate with other systems. Try changing your password.<br /><br /> Or, if you recently changed your password, but still have some service using your old credentials, it might be causing your account to lock for some period of time. Try logging off your client computer and logging back on.|  
-|Your user account doesn't have sufficient permissions to connect.|Check with your VSTS account administrator or TFS administrator or that you have the necessary permissions to connect. For VSTS, you must have an active, valid license. See [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md) for details.|  
+|Your user account doesn't have sufficient permissions to connect.|Check with your VSTS account owner or TFS administrator or that you have the necessary permissions to connect. For VSTS, you must have an active, valid license. See [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md) for details.|  
   
-## Related notes 
-- [Add users to team projects (TFS)](../../../../security/add-users-team-project.md)   
+## Related articles 
+- [Add users to team projects](../../../../security/add-users-team-project.md)   
 - [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md)
 - [Connect to team projects](../../../../user-guide/connect-team-projects.md)

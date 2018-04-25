@@ -1,11 +1,13 @@
 ---
 title: Add a dashboard widget | Extensions for VSTS
 description: Tutorial for creating a widget that you can then add to a dashboard  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -31,16 +33,16 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 **Extension File Structure:**
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts                        
-├── hello-world.html				// html page to be used for your widget  
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts                        
+|--- hello-world.html				// html page to be used for your widget  
+|--- vss-extension.json				// extension's manifest
 ```
 
 ## What you'll find in the tutorial
@@ -323,7 +325,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with VSTS REST API
-Widgets can call any of the [REST APIs](https://visualstudio.com/integrate/api/overview.md) in VSTS to interact with VSTS resources.
+Widgets can call any of the [REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts/?view=vsts) in VSTS to interact with VSTS resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
@@ -333,17 +335,17 @@ below the "Hello World" text.
 Copy the file `hello-world.html` from the previous example, and rename the copy to `hello-world2.html`. Your folder will now look like below:
 
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts                        
-├── hello-world.html				// html page to be used for your widget  
-├── hello-world2.html				// renamed copy of hello-world.html
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts                        
+|--- hello-world.html				// html page to be used for your widget  
+|--- hello-world2.html				// renamed copy of hello-world.html
+|--- vss-extension.json				// extension's manifest
 ```
 
 <br>
@@ -630,19 +632,19 @@ Copy the file `html-world2.html` from the previous example and rename the copy t
 Your folder will now look like the below:
 
 ```no-highlight
-├── README.md
-├── sdk    
-    ├── node_modules           
-    └── scripts
-        └── VSS.SDK.min.js       
-├── img                        
-    └── logo.png                           
-├── scripts          
-├── configuration.html				             
-├── hello-world.html				// html page to be used for your widget  
-├── hello-world2.html				// renamed copy of hello-world.html
-├── hello-world3.html				// renamed copy of hello-world2.html
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+    |--- node_modules           
+    |--- scripts
+        |--- VSS.SDK.min.js       
+|--- img                        
+    |--- logo.png                           
+|--- scripts          
+|--- configuration.html				             
+|--- hello-world.html				// html page to be used for your widget  
+|--- hello-world2.html				// renamed copy of hello-world.html
+|--- hello-world3.html				// renamed copy of hello-world2.html
+|--- vss-extension.json				// extension's manifest
 ```
 
 <br>

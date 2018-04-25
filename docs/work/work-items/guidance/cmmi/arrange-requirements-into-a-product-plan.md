@@ -1,17 +1,19 @@
 ---
-title: Arrange requirements into a product plan | VSTS & TFS
+title: Arrange requirements into a product plan
+titleSuffix: VSTS & TFS
 description: Obtain and arrange a plan, starting from a set of requirements - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
-ms.author: kaelli
+ms.topic: conceptual
+ms.author: kaelli  author: KathrynEE 
 ms.manager: douge
 ms.date: 01/20/2017 
 ---
 
 # Arrange requirements into a product plan
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 After you analyze your customer requirements sufficiently to understand what the product should do, you must work out a plan to implement the product. Or, for an existing product, you must work out what functionality is missing and work out a plan for making the changes. But the requirements do not automatically tell you the plan.  
   

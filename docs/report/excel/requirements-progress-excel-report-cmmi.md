@@ -1,15 +1,19 @@
 ---
-title: Requirements Progress Excel Report (CMMI) | TFS
+title: Requirements Progress Excel Report (CMMI)  
 description: Tracks the rate at which the team is implementing requirements.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 45434ab2-3363-4ebd-89ce-95f438c64424
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Requirements Progress Excel Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Requirements Excel report to track the rate at which the team is implementing requirements. This report shows the distribution of active, resolved, and closed requirements over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

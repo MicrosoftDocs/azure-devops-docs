@@ -1,24 +1,26 @@
 ---
-ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
-title: Deploy your ASP.NET app to an Azure cloud service
+title: Deploy ASP.NET app to an Azure cloud service
 description: Example of deploying an Azure cloud services package from Release Management in VSTS or Microsoft Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your ASP.NET app to an Azure cloud service
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
-Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
+Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 
-You can also use these steps to deploy your app to an Azure Government Cloud
-by creating a suitable service endpoint for your Azure Government Cloud subscription.
-For more details, see the [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
+You can also use these steps to deploy your app to an [Azure Government Cloud](../../concepts/library/government-cloud.md)
+or to (Azure Stack)[../../concepts/library/azure-stack.md].
 
 ## Get set up
 
@@ -68,43 +70,44 @@ Continuous deployment (CD) means starting an automated release process whenever 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
 
-1. Select the **Azure Cloud Service Deployment** template and click **Next**.
+1. Select the **Azure Cloud Service Deployment** template and choose **Apply**.
 
-1. In the **Artifacts** section, make sure your CI build definition that creates the cloud services artifacts is selected.
+1. If you created your new release definition from a build summary, check that the build definition
+   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
+   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
-1. Select the **Azure Cloud Service Deployment** task and configure it as follows:
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
+   and add a filter to include the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+
+1. Open the **Tasks** tab and select the **Environment 1** item. Configure the task variables as follows:
    
-   ![icon](../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../tasks/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
+   * **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
    
-   - **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
+   * **Storage account**: Select the storage account you created earlier.
    
-   - **Storage account**: Select the storage account you created earlier.
-   
-   - **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
+   * **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
    > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
+
+   [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
    
 1. Edit the name of the release definition, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
-
-1. After the release is complete, navigate to your site running in Azure cloud services and verify its contents.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

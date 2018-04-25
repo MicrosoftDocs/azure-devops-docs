@@ -1,12 +1,15 @@
 ---
 title: Provide feedback using the Test &amp; Feedback extension
 description: Provide feedback in VSTS or TFS using the Exploratory Testing browser extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Provide feedback using the Test &amp; Feedback extension

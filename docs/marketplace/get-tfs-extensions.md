@@ -8,7 +8,10 @@ ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8
 ms.manager: douge
 ms.author: elbatk
 ms.date: 9/27/2017
+monikerRange: '>= tfs-2015 < vsts'
 ---
+
+ 
 
 # Install extensions for Team Foundation Server (TFS)
 
@@ -31,6 +34,7 @@ so you can install [free, preview, and paid extensions](#difference).
 > and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="connected-tfs"></a>
+
 ## Install extensions while connected to TFS
 
 ### What do I need to install extensions?
@@ -147,14 +151,19 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 0.	Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
+	::: moniker range="tfs-2015"
+
 	**TFS 2015 Update 3**
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-for-extensions.png" style="border: 1px solid #CCCCCC" />
 
-	**TFS 2017**
+	::: moniker-end
+
+	::: moniker range="tfs-2017"
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" style="border: 1px solid #CCCCCC" />
 
+	::: moniker-end
 
 0.	Manage your extensions.
 

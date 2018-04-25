@@ -1,61 +1,61 @@
 ---
-title: Delete users for Visual Studio Team Services
-description: Delete users for Visual Studio Team Services
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Delete users from Visual Studio Team Services
+description: Delete or remove account users from Visual Studio Team Services (VSTS)
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: chcomley
-ms.date: 01/04/2017
+author: chcomley
+ms.date: 03/27/2018
+monikerRange: 'vsts'
 ---
 
-# Delete users for Visual Studio Team Services (VSTS)
+
+# Delete users from Visual Studio Team Services (VSTS)
 
 **VSTS**
 
-If a user no longer requires access to a team project or your VSTS account, you can remove their access to a team project or your account. 
+If a user no longer requires access to a team project or your VSTS account, you can remove their access to a team project or your account.
 
-### Prerequisites
+## Prerequisites
 
-- You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json). 
+- You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
 
+## Remove users from your VSTS account
 
-##  Remove users from your VSTS account
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
-	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
+2. Go to the **Users** page.
 
-0. Go to the **Users** hub.  
+3. Open the context menu**...** for the user to remove and select **Remove from account**.
 
-	<img src="_img/_shared/choose-users-hub.png" alt="go to the user hub" style="border: 1px solid #C3C3C3;" /> 
+   ![![Remove user from account](_img/delete-user/remove-user.png)
+](_img/_shared/remove-from-account-menu-selection.png)
 
-0. If you have Streamlined User Management enabled, open the context menu**...** for the user to remove and select **Remove from account**. 
+4. Choose **Remove** in the confirmation dialog.
 
-	<img src="_img/_shared/remove-from-account-menu-selection.png" alt="Account level table of users with key information per user" style="border: 1px solid #C3C3C3;" />
+5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
 
-	Or, from the table of users, select the user account and choose  **Delete**.  
+   [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
-	<img src="_img/_shared/delete-user-account.png" alt="Account level table of users with key information per user" style="border: 1px solid #C3C3C3;" />
+6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
 
-0. Choose **Remove** in the confirmation dialog.
+   > To reduce or cancel these users for the next month, you must make updates before the last day of the current month.
+   > Your bill won't show these changes until the next month because paid users are monthly purchases.
 
-0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
+>[!Note]
+>Azure AD-backed accounts: Once you remove a user from Azure AD, you will not be able to assign artifacts (work items, pull requests, etc.) to this user anymore. However, we will preserve the history of artifacts that has already been assigned to this user.
+>MSA-backed accounts: Once you remove a user from your MSA-backed VSTS account, the user will remain within the tenant and can therefore be re-added at any time.
 
-	[Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
+## Remove users from a team or team project
 
-0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
-[reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
-so you're not charged in your next Azure billing cycle.
+To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user.
 
- > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
- > Your bill won't show these changes until the next month because paid users are monthly purchases. 
-
-##  Remove users from a team or team project
-
-To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user. 
-
-![Remove user from a security group](_img/delete-user/remove-user.png) 
+![Remove user from a security group](_img/delete-user/remove-user.png)
 
 ## Related notes
 

@@ -8,7 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: aaronha
 ms.date: 11/08/2017
+monikerRange: '>= tfs-2015 < vsts'
 ---
+
+
 
 # Handling team project collection upgrade failures
 

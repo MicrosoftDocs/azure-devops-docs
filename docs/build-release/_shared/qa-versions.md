@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### I use TFS on-premises and I don't see some of these features. Why not?
 
 Some of these features are available only on

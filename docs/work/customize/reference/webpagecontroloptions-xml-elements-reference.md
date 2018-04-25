@@ -2,11 +2,11 @@
 title: WebpageControlOptions XML elements reference 
 titleSuffix: VSTS & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---
 
@@ -26,12 +26,12 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-   <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
-      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
-   </Link>  
-   <Content>  
-      <![CDATA[Contents of HTML]]>  
-   </Content>  
+      <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
+      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
+      </Link>  
+      <Content>  
+      <![CDATA[Contents of HTML]]>  
+      </Content>  
 </WebpageControlOptions>  
 ```  
   
@@ -85,7 +85,7 @@ The following example shows how to load a work item form with HTML defined in a 
    </WebpageControlOptions>
 ```
   
-## Related notes
+## Related articles
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)   
 -  [Design the work item form](design-work-item-form.md)

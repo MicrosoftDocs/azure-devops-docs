@@ -2,11 +2,14 @@
 title: Library for VSTS and Team Foundation Server
 description: Understand the library in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Library

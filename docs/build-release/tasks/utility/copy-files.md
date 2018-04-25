@@ -1,13 +1,17 @@
 ---
 title: Copy Files
 description: How to copy files between folders with match patterns when building code in VSTS and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Utility: Copy Files
 
@@ -63,6 +67,25 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CopyFiles@2
+  inputs:
+    SourceFolder:
+#   Contents: **
+    TargetFolder:
+#   CleanTargetFolder: false
+#   OverWrite: false
+#   flattenFolders: false
+```
+
+::: moniker-end
 
 ## Examples
 
@@ -144,6 +167,8 @@ See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

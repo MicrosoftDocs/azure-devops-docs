@@ -7,7 +7,10 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>=tfs-2013 < vsts'
 ---
+
+
 
 # Manage TFS server configuration with TFSConfig
 

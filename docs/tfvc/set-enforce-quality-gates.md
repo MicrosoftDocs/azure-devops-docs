@@ -2,12 +2,16 @@
 title: Set and Enforce Quality Gates
 description: Set and Enforce Quality Gates
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Set and Enforce Quality Gates
 

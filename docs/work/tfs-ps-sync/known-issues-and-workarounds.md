@@ -1,13 +1,16 @@
 ---
-title: Known issues and workarounds to support TFS-Project Server integration | TFS
-description: Describe the known issues with the integration of Visual Studio Team Foundation Server (TFS) and Project Server
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Known issues and workarounds to support TFS-Project Server integration
+titleSuffix: TFS 
+description: Workaround known issues with the integration of Team Foundation Server & Project Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 45423e0a-63f7-4fc4-8319-9344a43abed3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
+
 # Known issues and workarounds to support TFS-Project Server integration
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -116,7 +119,7 @@ ms.date: 01/12/2017
   
  To resolve these errors, close the master project whenever you are modifying a mapped subproject.  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Remove a component](remove-component-from-synchronization.md)   
  [Change your deployment configuration](change-deployment-configuration.md)   

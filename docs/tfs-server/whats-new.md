@@ -8,8 +8,10 @@ ms.assetid: F72EC483-F195-4157-82AB-1EBEE87F7C10
 ms.manager: douge
 ms.author: kaelli
 ms.date: 09/14/2017
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
+ 
 
 # What's new for Team Foundation Server
 
@@ -54,7 +56,7 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 <li>View original diff for code comments in pull request details</li>
 <li>Collapsible pull request comments</li>
 <li>Task lists in pull request descriptions and comments</li>
-<li>Ability to “Like” comments in pull requests</li>
+<li>Ability to "Like" comments in pull requests</li>
 <li>Improved workflow when approving with suggestions</li>
 <li>Path filtering support for Git notifications</li>
 <li>Great email templates for pull request workflows</li>

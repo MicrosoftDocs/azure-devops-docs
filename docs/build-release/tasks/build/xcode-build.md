@@ -1,13 +1,15 @@
 ---
 title: Xcode Build build and release task
 description: Xcode Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.manager: douge
 ms.author: dastahel
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
+
 
 # Build: Xcode Build
 
@@ -213,7 +215,6 @@ You can specify this argument if you have selected Use xctool and included `test
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-
 ## Example 
 
 [Build and test Xcode projects](../../apps/mobile/xcode-ios.md)
@@ -224,6 +225,8 @@ You can specify this argument if you have selected Use xctool and included `test
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

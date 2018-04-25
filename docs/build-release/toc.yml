@@ -6,6 +6,8 @@
     href: overview.md
   - name: About Deploying to Azure
     href: overview-azure.md
+  - name: About Continuous Testing
+    href: test/index.md
 - name: Quickstarts
   items:
     - name: Azure DevOps projects
@@ -20,6 +22,8 @@
         href: apps/cd/azure/azure-devops-project-python.md
       - name: PHP
         href: apps/cd/azure/azure-devops-project-php.md
+      - name: Ruby
+        href: apps/cd/azure/azure-devops-project-ruby.md
     - name: Build your app
       items:
       - name: Android
@@ -28,10 +32,14 @@
         href: apps/aspnet/build-aspnet-core.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
-      - name: C++ Windows
+      - name: C/C++ with GCC
+        href: apps/c-cpp/gcc.md
+      - name: C/C++ with VC++
         href: apps/windows/cpp.md
-      - name: Containers
+      - name: Docker image
         href: apps/containers/build.md
+      - name: Go
+        href: apps/go/go.md
       - name: Gradle
         href: apps/java/build-gradle.md
       - name: Maven
@@ -58,8 +66,12 @@
         href: apps/cd/deploy-docker-webapp.md
     - name: Test your app
       items:
-      - name: VS Test
+      - name: Unit test with builds
         href: test/getting-started-with-continuous-testing.md
+      - name: UI test with Selenium
+        href: test/continuous-test-selenium.md
+      - name: Review test results
+        href: test/review-continuous-test-results-after-build.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -72,6 +84,16 @@
     href: actions/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
     href: actions/azure-devops-project-github.md
+  - name: Azure DevOps Project for VMs
+    href: actions/azure-devops-project-vms.md
+  - name: Azure DevOps Project with SQL Database
+    href: actions/azure-devops-project-sqldb.md
+  - name: Jenkins CI for VSTS Azure CD
+    href: actions/integrate-jenkins-vsts-cicd.md
+  - name: Jenkins CI for VSTS Azure AKS
+    href: actions/integrate-jenkins-vsts-aks.md
+  - name: Test your app
+    href: test/example-continuous-testing.md
 - name: Concepts
   items:
   - name: Agents
@@ -123,12 +145,6 @@
       href: concepts/definitions/release/env-templates.md
     - name: Releases and deployments
       href: concepts/releases/index.md
-    - name: Work with release definitions
-      href: actions/work-with-release-definitions.md
-    - name: Create and deploy releases
-      href: actions/create-deploy-releases.md
-    - name: View and manage releases
-      href: actions/view-manage-releases.md
   - name: Process
     items:
     - name: Tasks
@@ -154,12 +170,8 @@
       href: concepts/library/service-endpoints.md
     - name: Secure files
       href: concepts/library/secure-files.md
-  - name: Policies
-    items:
-    - name: Retention policies
-      href: concepts/policies/retention.md
-    - name: Permissions
-      href: concepts/policies/permissions.md
+  - name: Retention policies
+    href: concepts/policies/retention.md
 - name: How-to Guides
   items:
   - name: Deploy an agent
@@ -172,6 +184,8 @@
       href: actions/agents/v2-osx.md
     - name: Linux
       href: actions/agents/v2-linux.md
+    - name: To a deployment group
+      href: concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Run an agent behind a web proxy
       href: actions/agents/proxy.md
     - name: Run an agent with self-signed certificate
@@ -202,8 +216,6 @@
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Azure cloud service
       href: apps/cd/deploy-cloudservice-cloudservice.md
-    - name: Azure Government Cloud
-      href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
       href: apps/cd/azure/deploy-container-kubernetes.md
     - name: IIS servers (WinRM)
@@ -212,6 +224,10 @@
       href: apps/cd/deploy-dacpac-sqlpackage.md
     - name: Azure SQL database (SQL scripts)
       href: apps/cd/deploy-database-sqlscripts.md
+    - name: Azure Government Cloud
+      href: concepts/library/government-cloud.md
+    - name: Azure Stack
+      href: concepts/library/azure-stack.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
     - name: SCVMM actions for managing VMs
@@ -220,8 +236,14 @@
       href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
     items:
-    - name: Test as you build
-      href: test/index.md
+    - name: Set up continuous testing
+      href: test/set-up-continuous-testing-builds.md
+    - name: Run tests from the Test hub
+      href: test/run-automated-tests-from-test-hub.md
+    - name: Use Test Impact Analysis
+      href: test/test-impact-analysis.md
+    - name: Run tests in parallel
+      href: test/run-tests-in-parallel.md
   - name: Publish symbols for debugging
     items:
     - name: Publish symbols
@@ -244,14 +266,6 @@
       items:
       - name: Use Package Management
         href: packages/maven.md
-  - name: Troubleshoot issues
-    items:
-    - name: Troubleshooting build
-      href: actions/troubleshooting.md
-    - name: Debug deployment issues
-      href: concepts/definitions/release/variables.md#debug-mode
-    - name: Troubleshoot Azure connections
-      href: actions/azure-rm-endpoint.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds
@@ -260,6 +274,16 @@
       href: actions/virtual-networks/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
+  - name: "Set build and release permissions (Security)"
+    href: set-permissions.md 
+- name: Troubleshooting
+  items:
+  - name: Troubleshoot build and release
+    href: actions/troubleshooting.md
+  - name: Debug deployment issues
+    href: concepts/definitions/release/variables.md#debug-mode
+  - name: Troubleshoot Azure connections
+    href: actions/azure-rm-endpoint.md
 - name: Reference
   href: tasks/index.md
   items:
@@ -277,6 +301,8 @@
       href: tasks/build/ant.md
     - name: CMake
       href: tasks/build/cmake.md
+    - name: Go
+      href: tasks/build/go-build.md
     - name: Gradle
       href: tasks/build/gradle.md
     - name: Grunt
@@ -351,18 +377,16 @@
       href: tasks/utility/shell-script.md
     - name: Update Service Fabric App Versions
       href: tasks/utility/service-fabric-versioning.md
-    - name: Xamarin license
-      href: tasks/utility/xamarin-license.md
   - name: Test tasks
     items:
+    - name: App Center Test
+      href: tasks/test/mobile-center-test.md
     - name: Cloud-based Apache JMeter Load Test
       href: tasks/test/cloud-based-apache-jmeter-load-test.md
     - name: Cloud-based Load Test
       href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
       href: tasks/test/cloud-based-web-performance-test.md
-    - name: App Center Test
-      href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
       href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
@@ -373,8 +397,6 @@
       href: tasks/test/visual-studio-test.md
     - name: Visual Studio Test Agent Deployment
       href: tasks/test/visual-studio-test-agent-deployment.md
-    - name: Xamarin Test Cloud
-      href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
     items:
     - name: CocoaPods
@@ -421,10 +443,8 @@
       href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
-    - name: IIS Web App Deploy
-      href: tasks/deploy/iis-deploy.md
-    - name: IIS Web App Manage
-      href: tasks/deploy/iis-manage.md    
+    - name: Docker
+      href: tasks/deploy/docker.md
     - name: PowerShell on Target Machines
       href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
@@ -439,11 +459,17 @@
     items:
     - name: .NET Core Tool Installer
       href: tasks/tool/net-core-installer.md
+    - name: Go Tool Installer
+      href: tasks/tool/go-install.md
     - name: Node Tool Installer
       href: tasks/tool/node-js.md
     - name: Java Tool Installer
       href: tasks/tool/java-tool-installer.md
+    - name: VS Test Platform Installer
+      href: tasks/tool/visual-studio-installer.md
   - name: File matching patterns
     href: tasks/file-matching-patterns.md
   - name: File and variable transform
     href: tasks/transforms-variable-substitution.md
+  - name: Permissions & security roles
+    href: concepts/policies/permissions.md

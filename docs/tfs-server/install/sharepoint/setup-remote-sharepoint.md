@@ -7,11 +7,14 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/09/2017
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Set up remote SharePoint Products for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 If you have SQL Server and TFS running on the same server, your best alternative might be to install SharePoint on a different server to minimize competition for resources. The remote SharePoint scenario addresses such an installation.
 

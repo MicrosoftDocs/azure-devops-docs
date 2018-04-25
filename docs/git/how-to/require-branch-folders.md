@@ -2,12 +2,16 @@
 title: Require branches to be created in folders
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
-ms.author: macoope
-ms.date: 12/09/2017
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
+ms.date: 04/11/2018
+monikerRange: '>= tfs-2018'
 ---
+
 
 # Require branches to be created in folders
 
@@ -57,12 +61,12 @@ Allow administrators to create branches under `releases`.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
 
-Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally).
+Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
 
     tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 
 >[!NOTE]
->You can access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
+>For more information, see [tf git permission](../../tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 

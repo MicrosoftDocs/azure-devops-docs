@@ -1,13 +1,17 @@
 ---
 title: MSBuild build and release task
 description: MSBuild build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: MSBuild
 
@@ -65,6 +69,32 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: MSBuild@1
+  inputs:
+#   solution: **/*.sln
+#   msbuildLocationMethod: version # version (default), location
+#   msbuildVersion: latest # latest (default), 15.0, 14.0, 12.0, 4.0
+#   msbuildArchitecture: x86 # x86 (default), x64
+    msbuildLocation:
+    platform:
+    configuration:
+    msbuildArguments:
+#   clean: false
+#   maximumCpuCount: false
+#   restoreNugetPackages: false
+#   logProjectEvents: false
+#   createLogFile: false
+```
+
+::: moniker-end
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -72,6 +102,8 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

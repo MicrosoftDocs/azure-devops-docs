@@ -1,11 +1,14 @@
 ---
-title: Resolve data conflicts (publish and refresh) | VSTS & TFS
-description: Resolves data conflicts from publishing a work item.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Resolve data conflicts (publish and refresh)
+titleSuffix: VSTS & TFS
+description: Resolves data conflicts when publishing a work item from Excel or Project to Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 02/22/2017  
 ---
 
@@ -42,7 +45,7 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
     > [!NOTE]  
     >  This step publishes only the work items that you corrected. If you do not resolve all data validation errors related to a work item, that work item is not published.  
   
-## Related notes
+## Related articles
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Work in Excel and Project](track-work-vsts-tfs.md)  

@@ -2,10 +2,12 @@
 title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ---
 
 # Extension reporting hub
@@ -52,7 +54,7 @@ All data elements available in the reports page are also available for download 
 ## Contact
 For paid extension, you can use the **Contact** action to reach out to your users for transactional communication. this functionality is available only for publishers with contributor + access on the extension. 
 
-Marketplace will broker the first communication with the user as our privacy policy doesn’t allow direct sharing of customer email addresses. Only users who have opt-ed in for communication will be sent the email. 
+Marketplace will broker the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who have opt-ed in for communication will be sent the email. 
 Last contacted date for an account is as also updated after sending a communication. 
 
 **Important** Please follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users will be *blacklisted* and won't be able to use the **Contact** feature for any of his/her extensions. 

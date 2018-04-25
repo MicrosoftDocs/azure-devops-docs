@@ -1,19 +1,20 @@
 ---
 title: Query guidelines for Analytics with OData
 titleSuffix: VSTS
-description: Guidelines for extension developers on how to write good OData queries that access the Analytics Service for VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Guidelines for extension developers on how to write good OData queries that access the Analytics Service for Visual Studio Team Services
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 11/13/2017
 ---
 
 # Query guidelines for Analytics with OData
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Visual Studio Team Services (VSTS). Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
@@ -596,7 +597,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 <a id="perf-unbounded"> </a>
 ### ❌ DO NOT use unbounded expansion with `$levels=max`
 
-OData has an interesting capability of expanding all the levels of an hierarchical structure. In the Analytics Service there exists some entities where such unbounded expansion could be applied. This operation does work only for accounts with a small amount of data. It doesn't scale well for larger data sets. Don't use it at all if you are working with large data sets or you're developing a widget and you have no control over where the widget will be installed.
+OData has the capability to expand all the levels of an hierarchical structure. For example, work item tracking has some entities where an unbounded expansion could be applied. This operation does work only for accounts with a small amount of data. It doesn't scale well for larger datasets. Don't use it at all if you are working with large datasets or you're developing a widget and you have no control over where the widget will be installed.
 
 <a id="perf-paging"> </a>
 ### ✔️ DO use server-driven paging
@@ -625,7 +626,7 @@ With other REST API's you might have implemented client-driven paging with `$top
 
 <a id="perf-top"> </a>
 ### ✔️ DO use `$top` query option to limit the number of records
-Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you care only about a subset of records (e.g. sample or top ranked records), it is absolutely fine to use `$top` query option.
+Query option `$top` is only discouraged when used together with `$skip`. If in your reporting scenario you need only a subset of records (e.g. sample), it is absolutely fine to use `$top` query option. Additionally, if you need to rank records according to some criteria, you should always use `$top` in combination with `$orderby` to get stable result with top ranked records.
 
 
 <a id="perf-small-number"> </a>
@@ -816,7 +817,7 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 
 
 
-## Related notes
+## Related articles
 - [Query work item tracking data](wit-analytics.md)
 - [Aggregate data](aggregated-data-analytics.md)
 - [Query trend data](querying-for-trend-data.md)

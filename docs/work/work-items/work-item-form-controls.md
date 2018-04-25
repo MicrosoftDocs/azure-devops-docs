@@ -1,12 +1,14 @@
 ---
 title: Use work item form controls to track your work
-description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Use work item form controls to update status, link work items, and more in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
+ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 02/14/2018 
 ---
 
 # Use work item form controls
@@ -19,7 +21,7 @@ As the following image shows, each work item form comes with a number of control
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
->[!NOTE]  
+> [!NOTE]    
 >Depending on the process chosen when the team project was created&mdash;[Scrum](./guidance/scrum-process.md), 
 [Agile](./guidance/agile-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
@@ -61,7 +63,7 @@ While the workflow states differ for different work item types, they usually fol
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a user story in the default state, New.</li>
 <li>Change the state from New to Active.</li>
@@ -69,7 +71,7 @@ While the workflow states differ for different work item types, they usually fol
 <li>Change the state from Resolved to Closed.</li>
 </ul>
 <br/>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
@@ -136,7 +138,7 @@ In addition, the Links control tab provides access to all links made to the work
 <a id="discussion">  </a>
 ## Add to the discussion  
 
-Add and review comments made about the work being performed by going to the discussion section. 
+Add and review comments made about the work being performed by going to the discussion section. This way, you capture all comments within the work item rather than maintaining a long email thread. 
 
 Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
@@ -144,9 +146,12 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
+> [!NOTE]   
+> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
 
 
@@ -161,7 +166,7 @@ From the web portal, simply copy the URL from the web browser address or hover o
 <a id="start-storyboarding">  </a>
 ## Start storyboarding  
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
@@ -176,11 +181,11 @@ Type an ID in the Search work items box and then choose the search icon.
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md). 
 
-Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **–** operators to specify the operations: Equals, Contains, and Not, respectively.  
+Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **"“** operators to specify the operations: Equals, Contains, and Not, respectively.  
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 
-## Related notes
+## Related articles
 
 Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 

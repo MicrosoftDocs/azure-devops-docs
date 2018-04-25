@@ -2,12 +2,16 @@
 title: Find a file in your Git repo | VSTS & TFS
 description: Search your Git repo in VSTS or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/09/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Find a file or folder in your Git repository
 #### VSTS | TFS 2018 | TFS 2017

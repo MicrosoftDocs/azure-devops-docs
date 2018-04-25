@@ -1,12 +1,13 @@
 ---
 title: Data Warehouse & SQL Server Reports  
-titleSuffix:  TFS
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: overview
 description: Index to topics for managing the data warehouse, adding reports, and viewing SQL Server reports 
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/05/2017
 ---
 
@@ -18,6 +19,9 @@ ms.date: 09/05/2017
 > Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json).  
 > 
 > For information on what is supported for VSTS, see [Dashboards and reports overview](../dashboards/overview.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). 
+
+To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md).
+
 
 
 ## 5-Minute Quickstarts  

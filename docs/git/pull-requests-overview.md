@@ -1,14 +1,18 @@
 ---
 title: Pull requests | VSTS & TFS  
 description: Learn about pull requests in VSTS & TFS  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 02/12/2018
+author: steved0x
+ms.topic: overview
+ms.date: 04/19/2018
 layout: LandingPage
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Get feedback with pull requests
 

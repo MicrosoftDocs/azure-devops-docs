@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 #### Q: I'm having problems. How can I troubleshoot them?
 
 A: Try this:

@@ -1,12 +1,14 @@
-- name: "Extend Analytics with OData"
+- name: Extend Analytics with OData
   href: index.md
 - name: Overview
   items:
   - name: "What is Analytics?"
-    href: ../analytics/what-is-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+    href: ../analytics/what-is-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
 - name: Quickstarts
   items:
-  - name: Query work item tracking data 
+  - name: Query work item data 
     href: wit-analytics.md
   - name: "Project & account-scoped queries" 
     href: account-scoped-queries.md
@@ -28,17 +30,19 @@
     href: example-analytics-widget.md  
 - name: Concepts
   items:
-  - name: Performance and latency
-    href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+  - name: Data available
+    href: ../analytics/data-available-in-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json
+  - name: "Performance & latency"
+    href: ../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json
   - name: Query guidelines
     href: odata-query-guidelines.md  
 - name: How-to Guides
   items:
   - name: Set permissions (Security) 
-    href: ../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytic/breadcrumb/toc.json
+    href: ../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Data model
+  - name: Analytics OData v4 endpoint
     href: data-model-analytics-service.md
   - name: "Supported functions & clauses"
     href: odata-supported-features.md 
@@ -52,3 +56,4 @@
     href: ../powerbi/index.md
   - name: OData Extension for Data Aggregation Version 4.0
     href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html
+

@@ -1,15 +1,19 @@
 ---
-title: User Story Progress Excel Report (Agile) | TFS
-description: Use the User Stories Progress report to track the rate at which the team is implementing user stories.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: User Story Progress Excel Report (Agile) 
+description: Track the rate at which the team is implementing user stories.
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: bea12f89-1bfa-40db-b8c8-c44e54372538
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # User Story Progress Excel Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the User Stories Progress report to track the rate at which the team is implementing user stories. This report shows the distribution of active, resolved, and closed User Stories over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

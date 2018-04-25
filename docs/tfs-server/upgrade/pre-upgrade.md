@@ -7,7 +7,10 @@ ms.assetid: 445ae357-cea6-48f8-85cb-037613a240cb
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Use TfsPreUpgrade to reduce downtime
 

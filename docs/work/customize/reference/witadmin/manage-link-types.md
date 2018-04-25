@@ -1,12 +1,15 @@
 ---
-title: Manage link types | VSTS & TFS
+title: Manage link types
+titleSuffix: TFS  
 description: Customize the link types to track related work, dependencies, and changes made over time - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 01/20/2017
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Manage link types
@@ -18,9 +21,9 @@ Similar to work item types, you can define and modify custom link types. However
 You manage the link types defined for a team project collection by using the following **witadmin** commands:  
 -   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
 -   **deletelinktype**:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
--   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. (can run against Visual Studio Team Services (VSTS))    
+-   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. 
 -   **importlinktype**:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type does not already exist, a new link type will be created.   
--   **listlinktypes**:  Lists the available set of link types on a server. (can run against VSTS)   
+-   **listlinktypes**:  Lists the available set of link types on a server. 
 -   **reactivatelinktype**: Reactivates the specified link type, and optionally assigns it a new name.  
   
 [!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)]  
@@ -52,7 +55,7 @@ witadmin reactivatelinktype /collection:CollectionURL /n:LinkName
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
 |**/n:** `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
 |**/f:** `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
 |**/e:** `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
@@ -109,7 +112,7 @@ witadmin exportlinktype /collection:http://AdventureWorksServer:8080/tfs/Default
 witadmin importlinktype /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:mylinktype.xml  
 ```  
   
-## Related notes 
+## Related articles 
 - [Customize your work tracking experience](../../customize-work.md)    
 - [LinksControlOptions](../linkscontroloptions-xml-elements.md)
 - [Link controls, restrictions, and fields](../../../track/linking-attachments.md)   

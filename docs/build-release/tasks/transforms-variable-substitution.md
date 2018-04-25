@@ -1,25 +1,33 @@
 ---
 title: File transforms and variable substitution
 description: File transforms and variable substitution for tasks in Viosual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # File transforms and variable substitution reference
 
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task
 version 3 and later and the [IIS Web App Deploy](deploy/iis-deploy.md) task, allow users to configure the package based on the environment specified.
+These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
 
-This configuration is specified in the **File Transform and Variable Substitution Options**
+Configuration substitution is specified in the **File Transform and Variable Substitution Options**
 section of the settings for the tasks. The transformation and substitution options are:
 
 * [XML transformation](#xmltransform)
 * [XML variable substitution](#xmlvarsubs)
 * [JSON variable substitution](#jsonvarsubs)
+
+When the task runs, it first performs XML transformation, XML variable substitution, and JSON variable substitution 
+on configuration and parameters files. Next, it invokes **msdeploy.exe**, which uses
+the **parameters.xml** file to substitute values in the **web.config** file.
  
 <a name="xmltransform"></a> 
 ## XML Transformation
@@ -163,7 +171,8 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 <a name="xmlvarsubs"></a> 
 ## XML variable substitution
 
-This feature enables you to modify configuration settings in configuration files inside web packages.
+This feature enables you to modify configuration settings in configuration files This feature enables you to modify configuration settings in configuration files (`*.config` files)
+inside web packages and XML parameters files (`parameters.xml`).
 In this way, the same package can be configured based on the environment to which it will be deployed.
  
 Variable substitution takes effect only on the `applicationSettings`, `appSettings`, `connectionStrings`,

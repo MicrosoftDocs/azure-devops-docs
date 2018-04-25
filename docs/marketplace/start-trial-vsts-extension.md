@@ -8,7 +8,10 @@ ms.assetid: 4f017896-ab5e-4448-ade0-16d4155dd56d
 ms.manager: douge
 ms.author: elbatk
 ms.date: 10/10/2017
+monikerRange: 'vsts'
 ---
+
+
 
 # Start the free trial for a paid extension in VSTS
 

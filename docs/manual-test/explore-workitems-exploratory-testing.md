@@ -1,12 +1,15 @@
 ---
 title: Explore work items when using exploratory testing 
 description: Manual and exploratory testing - explore work items from the Kanban board or the Test &amp; Feedback extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Explore work items with the Test &amp; Feedback extension
@@ -27,6 +30,8 @@ You can explore:
 
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="kanban"></a>
 ## Explore work items from the Kanban board

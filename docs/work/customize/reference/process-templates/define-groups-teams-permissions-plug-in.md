@@ -1,17 +1,19 @@
 ---
-title: Define groups, teams, and permissions using the Groups and Permissions Plug-in | VSTS & TFS
+title: Define groups, teams, and permissions using the Groups and Permissions Plug-in
+titleSuffix: VSTS & TFS
 description: Customizes Groups and Permission plug-in to have access to groups, teams, add groups and users as members to groups, and grant permissions to the groups - Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define security groups to control access to functional areas within a team project. In addition to the [default security groups](../../../../security/permissions.md), you can configure a team project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   
@@ -110,19 +112,19 @@ The following example shows how to create a group that is named Reader:
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <group name="@defaultTeam">  
-   <permissions>  
-      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
-   </permissions>  
-   <members>  
-      <member name="@creator"/>  
-   </members>  
-   <teamSettings areaPath="Area">  
-      <iterationPaths backlogPath="Iteration">  
-         <iterationPath path="Iteration 1" />  
-         <iterationPath path="Iteration 2" />  
-         <iterationPath path="Iteration 3" />  
-      </iterationPaths>  
-   </teamSettings>  
+      <permissions>  
+      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
+      </permissions>  
+      <members>  
+      <member name="@creator"/>  
+      </members>  
+      <teamSettings areaPath="Area">  
+      <iterationPaths backlogPath="Iteration">  
+         <iterationPath path="Iteration 1" />  
+         <iterationPath path="Iteration 2" />  
+         <iterationPath path="Iteration 3" />  
+      </iterationPaths>  
+      </teamSettings>  
 </group>  
 ```  
   
@@ -137,13 +139,13 @@ The following example shows how to create a group that is named Reader:
    <members>  
       <member name="@creator"/>  
    </members>  
-   <teamSettings areaPath="Area">  
-      <iterationPaths backlogPath="Iteration">  
-         <iterationPath path="Iteration 1" />  
-         <iterationPath path="Iteration 2" />  
-         <iterationPath path="Iteration 3" />  
-      </iterationPaths>  
-   </teamSettings>  
+      <teamSettings areaPath="Area">  
+      <iterationPaths backlogPath="Iteration">  
+         <iterationPath path="Iteration 1" />  
+         <iterationPath path="Iteration 2" />  
+         <iterationPath path="Iteration 3" />  
+      </iterationPaths>  
+      </teamSettings>  
 </group>   
 ```  
   
@@ -181,16 +183,16 @@ You must specify permissions for each group that you create. You use the **permi
 |Element|Description and syntax|  
 |-------------|-----------------|  
 |**group**|Optional child element of **groups** and **Children**. Defines a group or a team and its permissions and members.<br />`<group name="GroupName" isTeam="true &#124; false" description="GroupDescription">    <permissions> . . . </permissions>    <members> . . . </members> </group>`<br />The following definitions apply for each attribute:<br />- `name`: Required. Specifies the name of the group. The name of the group must be 1 to 255 characters long.<br />- `isTeam`: Optional. Identifies the group as a team, which supports small groups to organize their work within a team project.<br />-  `description`: Required when the group is not a team. Specifies a description of the group. The description is displayed within the security pages of Team Web Access.|  
-|**groups**|Required child element of **taskXml** for the Groups and Permissions plug-in. Contains the group and permission definitions.<br />`<groups>`<br />&nbsp;&nbsp;&nbsp;`<group> . . . </group>`<br />`</groups>`|  
+|**groups**|Required child element of **taskXml** for the Groups and Permissions plug-in. Contains the group and permission definitions.<br />`<groups>`<br />      `<group> . . . </group>`<br />`</groups>`|  
 |**iterationPath**|Required child element of **iterationPaths**. Specifies a team milestone.<br /> `<iterationPath path="IterationName" />`|  
-|**iterationPaths**|Optional child element of **teamsettings**. Specifies team milestones.<br />`<iterationPaths backlogPath="BacklogPathName">`<br />&nbsp;&nbsp;&nbsp;`. . .`<br />`</iterationPaths>`|  
+|**iterationPaths**|Optional child element of **teamsettings**. Specifies team milestones.<br />`<iterationPaths backlogPath="BacklogPathName">`<br />      `. . .`<br />`</iterationPaths>`|  
 |**member**|Required child element of **members**. Specifies the name of a group that you are adding as a member of another group. You can create groups and automatically populate them with TFS default groups, previously defined project groups, and groups and users in Active Directory.<br />`<member name="MemberName" >`<br />`</member>`<br />For information about how to specify default groups, see [Group macros and default groups](configure-initial-groups-teams-members-permissions.md#group-macros).|  
-|**members**|Optional child element of **group** and specifies the collection of members to add to the group. The **members** container element must follow the **permissions** container element.<br />`<members>`<br />&nbsp;&nbsp;&nbsp;`<member> . . . </member>`<br />`</members>`|  
+|**members**|Optional child element of **group** and specifies the collection of members to add to the group. The **members** container element must follow the **permissions** container element.<br />`<members>`<br />      `<member> . . . </member>`<br />`</members>`|  
 |**permission**|Required child element of **permissions**. Specifies the permission to apply to the group.<br />`<permission name="PermissionName" class="ClassName" allow="true &#124; false" />`<br /> Where the following definitions apply for each attribute:<br />- `name`: Required. Specifies the name of the permission. For more information, see the table in [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md) that describes each class and name combination you can specify as a permission.<br />- `class`: Required. Identifies the class, or area, where the group permission is granted. The following values are valid: `NAMESPACE` (collection-level), `PROJECT` (project-level), `CSS_NODE` (area node) and `ITERATION_NODE` (iteration node).<br />- `allow`: Optional. Specifies a true or false value that indicates whether you are allowing the permission.|  
-|**permissions**|Required child element of **group** and specifies the collection of permissions to apply to the group. The **permissions** container element must precede the **members** container element.<br />`<permissions>`<br />&nbsp;&nbsp;&nbsp;`    <permission> . . . </permissions>`<br />`</permissions >`|  
-|**teamsettings**|Optional child element of **group**. Configures the team project as the default team, and optionally specifies team milestones with the **iterationPath** element. <br /> `<teamSettings areaPath="Area">`<br />&nbsp;&nbsp;&nbsp;`. . .`<br />`</teamSettings>`|  
+|**permissions**|Required child element of **group** and specifies the collection of permissions to apply to the group. The **permissions** container element must precede the **members** container element.<br />`<permissions>`<br />      `    <permission> . . . </permissions>`<br />`</permissions >`|  
+|**teamsettings**|Optional child element of **group**. Configures the team project as the default team, and optionally specifies team milestones with the **iterationPath** element. <br /> `<teamSettings areaPath="Area">`<br />      `. . .`<br />`</teamSettings>`|  
   
-## Related notes
+## Related articles
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
 -  [Apply a field rule](../apply-rule-work-item-field.md)   

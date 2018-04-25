@@ -2,13 +2,16 @@
 title: Save your changes with Git commits | VSTS & TFS
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+author: steved0x
+ms.topic: tutorial
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Save work with commits
 
@@ -30,9 +33,9 @@ In this tutorial you learn:
 
 Git tracks file changes in your repo as you work, and separates the files in your repo into three categories:
 
-- Unmodified files – These files haven’t changed since your last commit.
-- Modified files – These files have changes since your last commit, but you haven't yet staged for the next commit.
-- Staged files – These files have changes that will be added to the next commit.   
+- Unmodified files - These files haven't changed since your last commit.
+- Modified files - These files have changes since your last commit, but you haven't yet staged for the next commit.
+- Staged files - These files have changes that will be added to the next commit.   
 
 ![Lifecyle of files in your repo between the three states](_img/git_file_status_lifecycle.png)   
 

@@ -1,18 +1,20 @@
 ---
-title: TF30017-Team Explorer cannot connect to TFS | VSTS & TFS
+title: TF30017-Team Explorer cannot connect to 
+titleSuffix: VSTS & TFS
 description: Team Explorer will not connect to a server that does not have a valid CA certificate.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: eb239d52-9b7b-41c9-98c6-118fb2f2173e
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 
 # TF30017: Team Explorer cannot connect to Team Foundation Server {0}. The security certificate is either not installed, misconfigured, or expired.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 A security certificate associates an identity with a public key, and only the owner of the certificate knows the corresponding private key. The private key enables the owner to make a digital signature or decrypt information encrypted with the corresponding public key. A certification authority (CA) issues server and client authentication certificates to the servers and clients that request them.  
   

@@ -2,12 +2,13 @@
 title: DevOps - Adding Continuous Security Validation to your CI/CD Pipeline
 description: Explore how to add continuous security validation to your CI/CD pipeline
 ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
-ms.prod: vs-security-validation-cicd-pipeline
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 10/19/2017
 ms.author: willys
-author: mike douglas
+author: wpschaub
 ---
 # Adding Continuous Security Validation to your CI/CD Pipeline
 
@@ -21,7 +22,7 @@ Security needs to shift from an afterthought to being evaluated at every step of
 
 ![Security](_img/security-validation-cicd-pipeline/security.png)
 
-Continuous security validation should be added at each step from development through production to help ensure the application is always secure. The goal of this approach is to switch the conversation with the security team from approving each release to approving the CI/CD process and having the ability to monitor and audit the process at any time. When building greenfield applications, the diagram below highlights the key validation points in the CI/CD pipeline. Depending on your platform and where your application is at in its lifecycle, you may need to consider implementing the tools gradually. This is especially true if your product is mature and you haven’t previously run any security validation against your site or application.  
+Continuous security validation should be added at each step from development through production to help ensure the application is always secure. The goal of this approach is to switch the conversation with the security team from approving each release to approving the CI/CD process and having the ability to monitor and audit the process at any time. When building greenfield applications, the diagram below highlights the key validation points in the CI/CD pipeline. Depending on your platform and where your application is at in its lifecycle, you may need to consider implementing the tools gradually. This is especially true if your product is mature and you haven't previously run any security validation against your site or application.  
 
 ![Feedback](_img/security-validation-cicd-pipeline/feedback.png)
 
@@ -31,13 +32,13 @@ Validation in the CI/CD begins before the developer commits his or her code. Sta
 
 ## CI (Continuous Integration)
 
-The CI build should be executed as part of the pull request (PR-CI) process discussed above and once the merge is complete. Typically, the primary difference between the two runs is that the PR-CI process doesn’t need to do any of the packaging/staging that is done in the CI build. These CI builds should run static code analysis tests to ensure that the code is following all rules for both maintenance and security. Several tools can be used for this.
+The CI build should be executed as part of the pull request (PR-CI) process discussed above and once the merge is complete. Typically, the primary difference between the two runs is that the PR-CI process doesn't need to do any of the packaging/staging that is done in the CI build. These CI builds should run static code analysis tests to ensure that the code is following all rules for both maintenance and security. Several tools can be used for this.
 
 - [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
 
-- [Checkmarx](https://www.checkmarx.com/) – A Static Application Security Testing (SAST) tool
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 
-- [BinSkim](https://github.com/Microsoft/binskim) – A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 
 - [Other 3rd party tools](https://blogs.msdn.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
 
@@ -55,13 +56,13 @@ The application CI/CD pipeline should run within a few minutes, so you don't wan
 
 ![Pipeline](_img/security-validation-cicd-pipeline/pipeline.png)
 
-In addition to validating the application, the infrastructure should also be validated to check for any vulnerabilities. When using the public cloud such as Azure, deploying the application and shared infrastructure is very easy, so it is important to validate that everything has been done securely. Azure includes many tools to help report and prevent these vulnerabilities including Security Center and Azure Policies. Also, we have set up a scanner that can ensure any public endpoints and ports have been whitelisted or else it will raise an infrastructure issue. This is run as part of the Network pipeline to provide immediate verification, but it also needs to be executed each night to ensure that there aren’t any resources publicly exposed that should not be.
+In addition to validating the application, the infrastructure should also be validated to check for any vulnerabilities. When using the public cloud such as Azure, deploying the application and shared infrastructure is very easy, so it is important to validate that everything has been done securely. Azure includes many tools to help report and prevent these vulnerabilities including Security Center and Azure Policies. Also, we have set up a scanner that can ensure any public endpoints and ports have been whitelisted or else it will raise an infrastructure issue. This is run as part of the Network pipeline to provide immediate verification, but it also needs to be executed each night to ensure that there aren't any resources publicly exposed that should not be.
 
 ![Endpoint](_img/security-validation-cicd-pipeline/endpoint.png)
 
 Once the scans have completed, the VSTS release is updated with a report that includes the results and bugs are created in the team's backlog. Resolved bugs will close if the vulnerability has been fixed and move back into in-progress if the vulnerability still exists.
 
-The benefit of using this is that the vulnerabilities are created as bugs that provide actionable work that can be tracked and measured. False positives can be suppressed using OWASP ZAP’s context file, so only vulnerabilities that are true vulnerabilities are surfaced.
+The benefit of using this is that the vulnerabilities are created as bugs that provide actionable work that can be tracked and measured. False positives can be suppressed using OWASP ZAP's context file, so only vulnerabilities that are true vulnerabilities are surfaced.
 
 ![Backlog Board](_img/security-validation-cicd-pipeline/backlogboard.png)
 
@@ -71,8 +72,8 @@ Minimize security vulnerabilities by taking a holistic and layered approach to s
 
 ##Reference information
 
-- [BinSkim](https://github.com/Microsoft/binskim) – A binary static analysis tool that provides security and correctness results for Windows portable executables
-- [Checkmarx](https://www.checkmarx.com/) – A Static Application Security Testing (SAST) tool
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 - [Manage your open source usage and security as reported by your CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/06/08/manage-your-open-source-usage-and-security-as-reported-by-your-cicd-pipeline/)
 - [OWASP](https://www.owasp.org)
 - [OSWAP zap vsts extension](https://github.com/deliveron/owasp-zap-vsts-extension)

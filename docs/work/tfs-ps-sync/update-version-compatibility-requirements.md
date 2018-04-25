@@ -1,11 +1,13 @@
 ---
-title: Update an existing installation and version compatibility requirements | TFS
-description: Update an existing installation and version compatibility requirements when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Update an existing installation and version compatibility requirements
+titleSuffix: TFS 
+description: Update an existing installation and version compatibility requirements when using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: aa45b668-d753-4837-a5cc-ffdc82f08c1c
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -49,6 +51,6 @@ ms.date: 01/12/2017
   
 -   As part of upgrading an instance of TFS or deploying a new installation based on Visual Studio Team Foundation Server 2013, a new transform is introduced in the mapping of fields between TFS and Project Server. The new transform is applied to the **Remaining Work** and **Completed Work** fields. When the synchronization engine detects a hierarchy under a work item that is synchronized with Project Server, it performs a roll-up for the work and assignments to send to Project Server. However, with the `transformType` set to `ClearValueIfParent`, the synchronization engine clears the work fields on the parent work item to avoid incorrect data in reports. For more information, see [Field Mapping XML Element Reference](field-mapping-xml-element-reference.md).  
   
-## Related notes  
+## Related articles  
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)   
  [Synchronize TFS with Project Server](synchronize-tfs-project-server.md)

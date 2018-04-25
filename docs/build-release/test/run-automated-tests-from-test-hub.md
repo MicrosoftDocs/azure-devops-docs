@@ -1,13 +1,17 @@
 ---
 title: Run automated tests from test plans in the Test hub VSTS and TFS 
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Run automated tests from test plans in the Test hub
 
@@ -38,9 +42,7 @@ You will need:
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
-  [scheduled test workflow](example-continuous-testing.md) and also use it for on-demand testing.
-  For information about setting up scheduled testing that also deploys the app, see
-  [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/26/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/).
+  [build and release workflow](example-continuous-testing.md) and also use it for on-demand testing.
 
 ## Set up your environment
 
@@ -65,6 +67,8 @@ You will need:
    with the **Visual Studio Test** task already added.
 
    ![Selecting a release definition or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
+
+   [How do I pass parameters to my test code from a build or release pipeline?](reference-qa.md#pass-params)
 
 1. To configure the **Visual Studio Test** task and the release definition,
    start by assigning meaningful names to the release definition and environment.
@@ -100,10 +104,7 @@ You will need:
 
    ![Specifying the properties for the Visual Studio Test task](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-   For information about the option settings of the Visual Studio Test task, see:
-   
-   * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
-   * [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+   For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
 
 1. Choose the **Agent phase** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the

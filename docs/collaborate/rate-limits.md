@@ -1,16 +1,18 @@
 ---
-title: Resource limits & constraints for VSTS 
+title: Resource limits & constraints  
 titleSuffix: VSTS  
 description: Limits on the resources individual users can consume in VSTS, and the number of work item tracking requests they can make 
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/07/2017
+monikerRange: 'vsts'
 ---
 
-<!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
+<!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 #Rate limits  
 
@@ -19,8 +21,8 @@ ms.date: 09/07/2017
 Visual Studio Team Services (VSTS), like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, VSTS limits the resources individuals can consume and the number of 
 requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked.
 
-When an individual user's requests are delayed by a significant amount, an email is sent to that user and a warning banner appears in the Web UI. If the user does not have an email address – 
-for example, if the “user” is actually a build service account – the notification email is sent to the members of the project collection administrators group. See 
+When an individual user's requests are delayed by a significant amount, an email is sent to that user and a warning banner appears in the Web UI. If the user does not have an email address, 
+for example, if the user is actually a build service account, the notification email is sent to the members of the Project Collection Administrators group. See 
 [User Experience](#user-experience) for more detail.
 
 When an individual user's requests are blocked, responses with HTTP code 429 (too many requests) will be received, with a message similar to the following:
@@ -36,7 +38,7 @@ Because this limit is focused exclusively on avoiding outages when shared resour
 - One of their shared resources is at risk of being overwhelmed, and 
 - Their personal usage exceeds 200 times the consumption of a typical user within a (sliding) five-minute window. 
 
-The amount of the delay will depend on the user's sustained level of consumption – it may be as little as a few milliseconds per request or as much as thirty seconds. If their consumption goes to zero, or if their shared resources are no longer in danger of being overwhelmed, the delays will stop after a period of not more than five minutes. If their consumption remains high and their shared resources remain in danger of being overwhelmed, the delays may continue indefinitely.
+The amount of the delay will depend on the user's sustained level of consumption. It may be as little as a few milliseconds per request or as much as thirty seconds. If their consumption goes to zero, or if their shared resources are no longer in danger of being overwhelmed, the delays will stop after a period of not more than five minutes. If their consumption remains high and their shared resources remain in danger of being overwhelmed, the delays may continue indefinitely.
 
 #### VSTS Throughput Units (TSTUs)  
 VSTS users consume many shared resources, and consumption depends on many factors. For example:

@@ -1,12 +1,15 @@
 ---
 title: Apache JMeter cloud-based load testing with VSTS
 description: Using JMeter to performance test your application in the cloud with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Run Apache JMeter load tests with VSTS
@@ -100,6 +103,6 @@ Before you start:
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

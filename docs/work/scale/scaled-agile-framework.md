@@ -1,18 +1,20 @@
 ---
-title: Scaled Agile Framework | VSTS & TFS 
-description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Scaled Agile Framework
+titleSuffix: VSTS & TFS
+description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 07/22/2017
 ---
 
 
 # Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 
@@ -99,7 +101,7 @@ The Portfolio team can also view the progress of epics on their Kanban board.
 ![Epic Kanban board](_img/safe-epics-kanan-board.png)  
 
  
->[!TIP]  
+> [!TIP]  
 >You can also [customize the card color based on various criteria](../customize/customize-cards.md#style-rule), such as the Value Area=Architectural, by applying styling rules.  
 
 ###Program teams' progress view 
@@ -323,7 +325,7 @@ The same principles apply to user stories in progress. You can map them to featu
 ![User Story work item form](_img/safe-user-story-new-form.png)  
 
 
-##Related notes
+## Related articles
 
 There's no customization required to implement SAFe when working in VSTS or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 

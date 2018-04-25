@@ -2,12 +2,16 @@
 title: Merge Command
 description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Merge Command
 
@@ -91,11 +95,11 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 ### Baseless Merge
 
-Use baseless merge to merge items that are not directly branched from each other. To perform a baseless merge, you must use the **tf** **merge** command. When you perform a baseless merge, Team Foundation does not have any information about the relationship of the files in the braches. In a baseless merge, you must perform manual conflict resolutions. After you have performed the baseless merge and resolved any conflicts, Team Foundation records the merge history and establishes a relationship between the folders and files.
+Use baseless merge to merge items that are not directly branched from each other. To perform a baseless merge, you must use the **tf** **merge** command. When you perform a baseless merge, Team Foundation does not have any information about the relationship of the files in the braches. In a baseless merge, you must perform manual conflict resolutions. After you have performed the baseless merge and resolved any conflicts, Team Foundation records the merge history and establishes a relationship between the folders and files.
 
-When you run **tf** **merge**, Team Foundation performs an implicit baseless merge between items that have the same relative name in two previously related version-controlled trees. For example, you might want to merge the related branches $SRC\\ and $TGT. Both branches contain an unrelated file that is named a.txt. When you run **tf** **merge**, Team Foundation establishes a relationship between the two a.txt files if the two files are the same, if FIPS-compliant encryption is disabled, and if the source file is not related to any other file in the target.
+When you run **tf** **merge**, Team Foundation performs an implicit baseless merge between items that have the same relative name in two previously related version-controlled trees. For example, you might want to merge the related branches $SRC\\ and $TGT. Both branches contain an unrelated file that is named a.txt. When you run **tf** **merge**, Team Foundation establishes a relationship between the two a.txt files if the two files are the same, if FIPS-compliant encryption is disabled, and if the source file is not related to any other file in the target.
 
-If you run **tf merge** with the **/noimplicitbaseless** option set, when Team Foundation tries to merge the two branches, the two a.txt files will create a namespace conflict when you try to check in the changes. To resolve the conflict, you must rename one of the files.
+If you run **tf merge** with the **/noimplicitbaseless** option set, when Team Foundation tries to merge the two branches, the two a.txt files will create a namespace conflict when you try to check in the changes. To resolve the conflict, you must rename one of the files.
 ## Examples
 The following example merges changes from MyFile\_beta1 that have not been merged into MyFile\_RTM.
 

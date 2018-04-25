@@ -1,13 +1,14 @@
 ---
-title: Synchronize Team Foundation Server with Project Server | TFS
-description: Enable the data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server. 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Synchronize Team Foundation Server with Project Server 
+titleSuffix: TFS 
+description: Enable the data to flow from work items in Team Foundation Server to tasks in in Project Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4ec7be08-78e4-40be-81ae-4d2d81c49cd0
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/18/2017 
-ms.topic: get-started-article
+ms.topic: overview
 ---
 
 
@@ -15,7 +16,7 @@ ms.topic: get-started-article
 
 <b>TFS 2015 | TFS 2013</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >TFS 2017 and later versions no longer support native integration with Office Project Server. If you upgrade to TFS 2017 or want to use a third party option, see [Synchronize TFS with Project Server](sync-ps-tfs.md).
 
 By installing Team Foundation Server Extensions for Project Server, project managers can use Microsoft Project Server to access up-to-date project status and resource availability across agile and formal software teams who work in Team Foundation.  This integration enables data to flow from work items in Team Foundation Server (TFS) to tasks in enterprise project plans in Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and share information transparently. After the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and team project.  
@@ -110,7 +111,7 @@ For details, see [Make Agile team progress visible](make-agile-team-progress-vis
 When the project manager rejects an update to a work item, you must address the reason for the rejection and resubmit it to Project Server. Until you complete this task, the work item can no longer participate in data synchronization. For details, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 
-## Related notes  
+## Related articles  
 -  [Agile tools and work tracking](../backlogs/overview.md)    
 
 <a name="demos"></a>  

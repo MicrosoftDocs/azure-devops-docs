@@ -1,11 +1,13 @@
 ---
-title: Remove a component from participating in data synchronization | TFS
-description: Remove components that is configured to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Project Server.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Remove a component from participating in data synchronization
+titleSuffix: TFS 
+description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 6e0dbfd4-e830-4b5a-a42f-536e744665fa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Remove a component from participating in data synchronization
@@ -132,7 +134,7 @@ When you delete a task from Project Server that has been synchronized with a wor
 ##  <a name="removefield"></a> Remove a field from participating in synchronization  
  You can remove one or more fields from participating in data synchronization for a team project collection. You remove a field from synchronization by removing its mappings. You must not remove fields that are required for synchronization. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Upload or download field mappings](manage-field-mappings.md).  
   
-## Related notes  
+## Related articles  
  [Map integration components](map-integration-components.md)   
  [Configure and manage TFS resources](../../accounts/account-management.md)   
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   

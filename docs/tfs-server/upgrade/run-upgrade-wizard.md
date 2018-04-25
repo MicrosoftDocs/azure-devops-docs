@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Run the TFS Upgrade Wizard
 
@@ -16,11 +19,11 @@ ms.technology: vs-devops-admin
 First, install TFS, then run the upgrade configuration wizard. If you move the TFS application tier to new hardware, you must update the URL for the application tier after you finish running the TFS upgrade wizard.
 
 > [!TIP]
-> After you install TFS, its configuration tool appears automatically. If for some reason you don’t see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
+> After you install TFS, its configuration tool appears automatically. If for some reason you don't see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
 
 **Required Permissions**
 
-You must be a member of the Windows Administrators security group. If you’re upgrading a basic TFS installation, these are the only permissions you need. If you plan to configure reporting, you must also be a member of the Windows Administrators security group on the server that is running SQL Server Reporting Services. If you plan to configure SharePoint Products, you must be a member of the Farm Administrators group on the SharePoint Products administration site. If you did not install the Database Engine that will host the configuration database or a database administrator manages the instance of SQL Server that you are using, you must be a member of sysadmin Server role in SQL Server.
+You must be a member of the Windows Administrators security group. If you're upgrading a basic TFS installation, these are the only permissions you need. If you plan to configure reporting, you must also be a member of the Windows Administrators security group on the server that is running SQL Server Reporting Services. If you plan to configure SharePoint Products, you must be a member of the Farm Administrators group on the SharePoint Products administration site. If you did not install the Database Engine that will host the configuration database or a database administrator manages the instance of SQL Server that you are using, you must be a member of sysadmin Server role in SQL Server.
 
 ### To run the Team Foundation Server installer
 
@@ -28,7 +31,7 @@ You must be a member of the Windows Administrators security group. If you’re u
 
 2.  On the license terms dialog box, accept the license terms and then choose **Install Now**.
 
-    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (…) next to the default install location.
+    If you want to install Team Foundation Server to a specific location in the file system, choose the browse button (...) next to the default install location.
 
 ### To run the Team Foundation Server upgrade wizard
 
@@ -80,7 +83,7 @@ You must be a member of the Windows Administrators security group. If you’re u
     > [!TIP]
     > If you skip reporting and add it later during an upgrade, you may need to use different database names for the reporting warehouse databases (TFS_Warehouse and TFS_Analysis). As an alternative, you can delete the old reporting databases and new databases will be created using the default names.
 
-    1.  Enter the name of the server that is running SQL Server Reporting Services in **Reporting Services Instance** and choose **Populate URLs**.** **
+    1.  Enter the name of the server that is running SQL Server Reporting Services in **Reporting Services Instance** and choose **Populate URLs**.** **
 
         The URLs for the report server and its management site appear in the drop-down lists for **Report Server URL** and **Report Manager URL**.
 
@@ -90,17 +93,17 @@ You must be a member of the Windows Administrators security group. If you’re u
 
         The wizard lists available warehouse databases that you can upgrade. Choose the database that you want to upgrade, and then choose **Next**.
 
-        You can choose **Test** to test the connection to SQL Server. 
+        You can choose **Test** to test the connection to SQL Server. 
 
     4.  Enter the name of the server that is running SQL Server Analysis Services in **SQL Analysis Services Instance** and choose **Next**.
 
         To test the connection to SQL Server, choose **Test**.
 
-    5.  Enter the name and the password of the report reader account and choose **Next**. If you specified a user account for the service account of Team Foundation Server in step 5 and you want to use a different account in this step, you must select the **Use a different account than the Team Foundation Server service account for the Reporting Services report reader account** check box.
+    5.  Enter the name and the password of the report reader account and choose **Next**. If you specified a user account for the service account of Team Foundation Server in step 5 and you want to use a different account in this step, you must select the **Use a different account than the Team Foundation Server service account for the Reporting Services report reader account** check box.
 
         Choose **Test** to test the user account and password combination.
 
-9.  Select the **Configure SharePoint for use with Team Foundation Server** check box to configure SharePoint Products or clear the check box to skip the step, and choose **Next**.
+9.  Select the **Configure SharePoint for use with Team Foundation Server** check box to configure SharePoint Products or clear the check box to skip the step, and choose **Next**.
 
     If you selected SharePoint Products configuration perform one of the following steps:
 
@@ -129,10 +132,10 @@ You must be a member of the Windows Administrators security group. If you’re u
 
 13. Choose **Next**.
 
-14. Read the final summary screen, and then choose **Close** twice—once in the wizard and then again in the configuration tool.
+14. Read the final summary screen, and then choose **Close** twice-once in the wizard and then again in the configuration tool.
 
 > [!TIP]
-> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013/upgrade-2013-requirements.md)
+> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading "Less-common upgrade tasks" for more information in [TFS upgrade requirements](upgrade-2013/upgrade-2013-requirements.md)
 
 ## Update the URL for TFS
 

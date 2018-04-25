@@ -2,12 +2,16 @@
 title: Work with large files in your Git repo | VSTS & TFS
 description: Recommendations on how to manage large binary files in Git, Visual Studio, and Team Foundation Server.
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Manage and store large files in Git
 
@@ -81,7 +85,7 @@ Just follow the [instructions to install the client](https://git-lfs.github.com/
 
 Git LFS has some drawbacks that you should consider before adopting:
 
-0. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/master/docs). 
+0. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/master/docs).
 0. If the Git LFS client is not installed and configured correctly, you will not see the binary files committed through Git LFS when you clone your repo. 
 Git will download the data describing the large file (which is what Git LFS commits to the repo) and not the actual binary file itself. 
 Committing large binaries without the Git LFS client installed will push the binary to your repo.
@@ -90,7 +94,7 @@ If two people are working on the same file at the same time, they must work toge
 Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
 Users must still take care to always pull the latest copy of a binary asset before beginning work.
 0. VSTS currently does not support using SSH in repos with Git LFS tracked files.   
-   
+
 ### File format
 
 The file written into your repo for a Git LFS tracked file will have a few lines with a key and value pair on each line:
@@ -106,28 +110,5 @@ size 4923023
 
 ### Known issues
 
-#### Kerberos authentication
-If you use TFS, Git may be using the Kerberos protocol to authenticate.
-(This does not apply to VSTS, which uses a different form of authentication.)
-LFS does not support Kerberos, so you will get errors which say "Your user name must be of the form DOMAIN\user".
-To get out of this state, you will need to remove the Kerberos credential and let Git pick up a new NTLM credential instead.
-
-> [!NOTE]
-> Credentials sent via HTTP will be passed in clear text.
-> [Ensure your instance of TFS is configured for HTTPS](../security/websitesettings.md), and do not use HTTP with Git-LFS.
-
-0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
-
-   ![Open Credential Manager](_img/manage-large-files/launch-credential-manager.png)
-
-0. Choose *Windows Credentials*.
-
-   ![Choose Windows Credentials](_img/manage-large-files/choose-windows-credentials.png)
-
-0. Find your TFS URL in the credential list.
-0. Choose *Remove*.
-
-   ![Choose Remove](_img/manage-large-files/choose-remove.png)
-
-0. Return to your Git client (Visual Studio or the command line) and push your changes.
-When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.
+If you use a version of LFS below 2.4.0 with TFS, there's an extra setup step required to [authenticate using NTLM instead of Kerberos](lfs-kerberos.md).
+This step is no longer necessary as of LFS 2.4.0, and we highly recommend you upgrade.

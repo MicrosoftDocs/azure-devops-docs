@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Set up continuous integration
 
 On the **Files** tab of the **Code** hub, click **Set up build**.

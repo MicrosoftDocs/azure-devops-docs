@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create a deployment group
 
 Deployment groups in VSTS make it easier to organize the servers you want to use to host your app.

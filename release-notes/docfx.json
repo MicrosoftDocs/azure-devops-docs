@@ -32,12 +32,14 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-TeamServices",
-      "ms.topic": "conceptual",
-      "author": "alexn",
+      "ms.topic": "article",
+      "ms.technology": "vsts-release-notes",
+      "author": "alexcnichols",
       "ms.author": "alexn",
-      "ms.prod": "vs-devops-alm",
+      "ms.manager": "douge",
+      "ms.prod": "devops",
       "ms.version": "ALM",
-      "MSHAttr.msprod": "ms.prod:ALM",
+      "MSHAttr.msprod": "ms.prod:devops",
       "ms.prodfamily": "ALM",
       "hide_comments": "true"
     },

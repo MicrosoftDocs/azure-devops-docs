@@ -1,17 +1,20 @@
 ---
-title: Organize your backlog | VSTS & TFS  
-description:  Organize your backlog by mapping backlog items to features, and features to epics in VSTS or Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Organize your backlog
+titleSuffix: VSTS & TFS
+description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: DD78C7B9-A6B5-4596-9ADB-281578E615E2  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 05/10/2017
 --- 
 
 # Work with multi-team ownership of backlog items  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 <a id="multi-team">  </a>
 
@@ -43,7 +46,7 @@ For example, you can create a team structure similar to this one with two manage
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../scale/portfolio-management.md).
 
 
-##Related notes
+## Related articles
 
 - [Define features and epics](define-features-epics.md)
 - [Organize your backlog](organize-backlog.md)

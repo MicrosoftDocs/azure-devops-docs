@@ -1,9 +1,11 @@
 ---
-title: System and default fields index | VSTS & TFS  
-description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services (VSTS) and Team Foundation Server   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
-ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653   
+title: System and default fields index
+titleSuffix: VSTS & TFS
+description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
+ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
+ms.topic: reference   
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/26/2017
@@ -11,7 +13,7 @@ ms.date: 05/26/2017
 
 # Work item field index  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your team project](../../../accounts/create-team-project.md).  
 
@@ -82,7 +84,7 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 
 
 
-## Related notes
+## Related articles
 
 - [Create managed queries](../../track/example-queries.md)
 - [Define a query](../../track/using-queries.md) 

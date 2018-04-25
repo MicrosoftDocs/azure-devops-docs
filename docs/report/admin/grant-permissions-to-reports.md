@@ -1,12 +1,13 @@
 ---
-title: Grant permissions to view or create reports | TFS  
-description: Grant permissions to view or create reports in TFS  
+title: Grant permissions to view or create reports 
+titleSuffix: TFS
+description: Grant permissions to view or create reports in Team Foundation Server
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
 ---
 

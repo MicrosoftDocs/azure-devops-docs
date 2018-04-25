@@ -1,10 +1,10 @@
 ---
 title: Define default value or copy a value | VSTS & TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 04/05/2017
 ---
@@ -12,7 +12,7 @@ ms.date: 04/05/2017
 # Define a default value or copy a value to a field
 
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 You can specify a default value for a field, or you can copy the value from another field or system-defined value.  Field defaults are rules that control how field values are automatically assigned. You can assign a field default by using one of the following elements: `COPY`, `DEFAULT`, and `SERVERDEFAULT`. You can specify these elements as child elements of the `FIELD` (Definition) element or the `FIELD` (Workflow) element.  
@@ -67,11 +67,11 @@ You can specify a default value for a field, or you can copy the value from anot
 ```XML 
 <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
 <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
-    <ALLOWEDVALUES>  
-        <LISTITEM value="P1"/>  
-        <LISTITEM value="P2"/>  
-        <LISTITEM value="P3"/>  
-    </ALLOWEDVALUES>  
+       <ALLOWEDVALUES>  
+          <LISTITEM value="P1"/>  
+          <LISTITEM value="P2"/>  
+          <LISTITEM value="P3"/>  
+       </ALLOWEDVALUES>  
 <DEFAULT from="value" value="P3"/>  
 </FIELD>  
 ```  
@@ -82,7 +82,7 @@ You can specify a default value for a field, or you can copy the value from anot
 > [!div class="tabbedCodeSnippets"]
 ```XML  
 <FIELD refname="MyCorp.Status" name="Status" type="String">  
-    <COPY from="value" value="" />  
+       <COPY from="value" value="" />  
 </FIELD>  
 ```  
   
@@ -92,9 +92,9 @@ You can specify a default value for a field, or you can copy the value from anot
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD refname="System.Last Changed By" name="Last Changed By" type="String">  
-    <HELPTEXT>The name of the user who most recently modified this bug</HELPTEXT>  
-    <VALIDUSER group="[Project]\MyProjectMembers" />  
-    <SERVERDEFAULT from="currentuser" />  
+       <HELPTEXT>The name of the user who most recently modified this bug</HELPTEXT>  
+       <VALIDUSER group="[Project]\MyProjectMembers" />  
+       <SERVERDEFAULT from="currentuser" />  
 </FIELD>  
 ```  
   
@@ -104,8 +104,8 @@ You can specify a default value for a field, or you can copy the value from anot
 > [!div class="tabbedCodeSnippets"]
 ```XML  
 <FIELD refname="MyCorp.FoundOn" name="Found On" type="DateTime">  
-    <HELPTEXT>Defines when a bug was found.</HELPTEXT>  
-    <DEFAULT from="clock" />  
+       <HELPTEXT>Defines when a bug was found.</HELPTEXT>  
+       <DEFAULT from="clock" />  
 </FIELD>  
 ```  
   
@@ -114,7 +114,7 @@ You can specify a default value for a field, or you can copy the value from anot
 >   
 >  `<LISTITEM value="Won't Fix"/>`  
   
-## Related notes 
+## Related articles 
 -  [All FIELD elements](all-field-xml-elements-reference.md)   
 -  [Apply a field rule](apply-rule-work-item-field.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)

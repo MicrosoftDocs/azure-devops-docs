@@ -1,18 +1,21 @@
 ---
-title: Define features and epics | VSTS & TFS  
+title: Define features and epics
+titleSuffix: VSTS & TFS
 description:  Define features and epics to group backlog items and track high level items 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-ms.date: 05/18/2017
---- 
+author: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2015'
+ms.date: 03/20/2018
+---
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -33,6 +36,8 @@ Use this topic to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
 To focus on one level of a backlog at a time, click the name of the backlog you want to view. If you don't see all three backlog levels&mdash;
@@ -45,8 +50,8 @@ For example, when you click Epics, you'll see a list of all Epics in your team's
 
 Click Features to see a list of all features in your team's active area paths.  
 
->[!NOTE]  
->**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
+> [!TIP]  
+> Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
 
 
 <a name="add-features-epics"></a>
@@ -61,8 +66,7 @@ You can add epics in the same way. Simply open the Epics backlog.
 
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.
 
->[!NOTE]  
->**Reminder:** The following screenshots illustrate the work item form for VSTS. Your forms may differ depending on what you have enabled, what process you chose when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;and what platform you're working from, VSTS and TFS.  
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
 
 <img src="_img/org-backlog-feature-form-ts-new-nav.png" alt="Feature work item form, Agile process, Add details to a feature" style="border: 1px solid #C3C3C3;" /> 
  
@@ -78,8 +82,8 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </td>
 <td>The area of customer value addressed by the epic, feature, or backlog item. Values include:  
 <ul>
-<li><b>Architectural</b> – technical services to implement business features that deliver solution </li> 
-<li><b>Business</b> (Default) – services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
+<li><b>Architectural</b> &mdash;technical services to implement business features that deliver solution </li> 
+<li><b>Business</b> (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
 </ul>
 </td>
 </tr>
@@ -91,9 +95,6 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </td>
 <td>
 Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are [story points, time, or other relative unit](create-your-backlog.md#estimates). 
-
-
-
 </td>
 </tr>
 
@@ -124,8 +125,6 @@ A subjective unit of measure that captures the how the business value decreases 
 </table>
 
 
-
-
 ## Add child items
 With your features defined, you're ready to add child items to them. From any backlog, you can add child items. 
 You can add features to epics, and backlog items to features. 
@@ -134,8 +133,7 @@ Here we add a product backlog item as a child to the Customer Web - Phase 1 feat
 
 <img src="_img/org-backlog-features-add-child-ts.png" alt="Add a child item to a backlog work item" style="border: 1px solid #C3C3C3;" />  
 
-
-Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png) , you can add a child item. 
+Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png), you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your team project.   
 
 For Scrum team projects, your hierarchy is as shown: 
@@ -157,7 +155,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 > [Organize your backlog](organize-backlog.md)
 
 
-## Related notes  
+## Related articles  
 
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
@@ -170,6 +168,6 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 > To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
   
 
-
+ 
 
 

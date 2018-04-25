@@ -2,12 +2,16 @@
 title: Fork your repository in VSTS or TFS
 description: Learn to isolate code using forks in VSTS & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
-ms.author: macoope
-ms.date: 12/14/2017
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2018'
 ---
+
 
 # Forks
 
@@ -15,10 +19,9 @@ ms.date: 12/14/2017
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
-fork to suggest changes to a project, when you don't have permissions to 
+fork to suggest changes to a project when you don't have permissions to 
 write to the original project directly.
-Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to contribute the changes back to the original repository for
-the repository's owners to review.
+Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests.md).
 
 ## What's in a fork
 

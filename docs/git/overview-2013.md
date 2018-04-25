@@ -2,12 +2,16 @@
 title: Use Visual Studio and Team Foundation Server with Git
 description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: 'tfs-2013'
 ---
+
 
 #  Use Visual Studio and Team Foundation Server with Git
 #### VSTS | TFS 2015 | Visual Studio 2013

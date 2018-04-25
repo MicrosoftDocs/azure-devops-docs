@@ -1,11 +1,13 @@
 ---
-title: Map integration components | TFS
-description: Configure several points of integration using TFSAdmin ProjectServer command-line tool to synchronize data - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Map integration components
+titleSuffix: TFS 
+description: Use TFSAdmin ProjectServer command-line tool to configure integration betwee Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ddac3deb-bb59-4536-9d4a-ecd389ceb265
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
 
@@ -43,7 +45,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
 |**Customize how fields are mapped between Team Foundation Server and Project Server**. You must map fields between the two server products and define how the data is synchronized. You can either upload the default mappings or add mappings and customize how fields are synchronized. You maintain the field mappings by using the following command options:<br /><br /> -   **/DownloadFieldMappings**: Downloads the field mappings to a file.<br />-   **/UploadFieldMappings**: Uploads the field mappings that are defined in a file.|[Upload or download field mappings](manage-field-mappings.md)|  
 |**Retrieve recent error messages that occurred when data was synchronized**. To support your troubleshooting efforts, you can retrieve information about the most recent errors that were logged for a team project collection if you use the `/GetSyncMessages` command option.|[View error messages](view-synch-error-messages.md)|  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Remove a component](remove-component-from-synchronization.md)   
  [Change your deployment configuration](change-deployment-configuration.md)   

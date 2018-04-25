@@ -1,13 +1,15 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
@@ -28,6 +30,8 @@ This automatically configures the extension based on your access level:
 * Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent 
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="connectvtfs"></a>
 ## Connect to VSTS or TFS

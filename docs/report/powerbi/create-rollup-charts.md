@@ -1,17 +1,22 @@
 ---
-title: Create rollup charts | VSTS 
+title: Create rollup charts 
+titleSuffix: VSTS
 description: Create rollup charts in Power BI from data collected for Visual Studio Team Services (VSTS)   
 ms.assetid: 81223001-126D-4856-B1B3-7231013089F2  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.manager: douge
 ms.author: kaelli
+ms.topic: archived
+robots: NOINDEX, NOFOLLOW
 ms.date: 08/04/2017
 ---
 
 # Create rollup charts
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+
 [!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. You can create rollups based on counts of work items or selected measures, such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks. 
@@ -79,16 +84,16 @@ To focus the rollup chart to count only active or in progress tasks from, add th
 ![State filter for active or in progress work items in power bi](_img/powerbi-add-state-filter.png) 
 
 
-## Related notes
+## Related articles
 
 The sprint burndown chart based on Story Points provides you with a daily update of your sprint progress when you don't break your stories down into tasks. You can update the chart further by adding Work Item Type as an additional filter to differentiate the story point count for bugs versus user stories.  
 
 
 ### Get started using Power BI and the VSTS connector 
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
-- [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)  
-- [Pin a tile to a Power BI dashboard from a report](https://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-power-bi-dashboard-from-a-report)  
-- [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)  
+- [Add a page to a Power BI report](https://docs.microsoft.com/en-us/power-bi/power-bi-report-add-page)  
+- [Pin a tile to a Power BI dashboard from a report](https://docs.microsoft.com/en-us/power-bi/service-dashboard-pin-tile-from-report)  
+- [Save a report in Power BI](https://docs.microsoft.com/en-us/power-bi/service-report-save)  
 
 
 ### Rollup requirements

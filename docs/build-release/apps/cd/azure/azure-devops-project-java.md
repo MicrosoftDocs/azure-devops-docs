@@ -1,21 +1,24 @@
 ---
 title: Create a CI/CD pipeline for Java with the Azure DevOps Project | Quickstart
 description: The DevOps Project makes it easy to get started on Azure. It helps you launch an app on an Azure service of your choice in few quick steps.
+ms.prod: devops
+ms.technology: devops-cicd
 services: vsts
 documentationcenter: vs-devops-build
 author: mlearned
 manager: douge
 editor: ''
-
 ms.assetid:
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 02/07/2018
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Create a CI/CD pipeline for Java with the Azure DevOps Project
 
@@ -61,9 +64,9 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub account
 
 1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the master branch.
 
-1. On the left-hand side of the browser, navigate to the **views/index.pug** file.
+1. On the left-hand side of the browser, navigate to the **src/main/webapp/index.html** file.
 
-1. Select **Edit**, and make a change to the h2 heading.  For example, type **Get started right away with the Azure DevOps Project** or make some other change.
+1. Select **Edit**, and make a change to some of the text.  For example, change some of the text for one of the div tags.
 
 1. Choose **Commit**, then save your changes.
 

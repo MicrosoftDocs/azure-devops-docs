@@ -1,14 +1,18 @@
 ---
 title: Java Tool Installer
 description: Java Tool Installer for VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 11/15/2017
+monikerRange: 'vsts'
 ---
+
 
 # Tool: Java Tool Installer
 
@@ -36,6 +40,28 @@ None
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
 | Control options | See [Control options](../../concepts/process/tasks.md#controloptions). |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: JavaToolInstaller@0
+  inputs:
+#   versionSpec: 1.8
+    jdkArchitectureOption:  # x64, x86
+    jdkSourceOption:  # AzureStorage, LocalDirectory
+    jdkFile:
+    azureResourceManagerEndpoint:
+    azureStorageAccountName:
+    azureContainerName:
+    azureCommonVirtualFile:
+    jdkDestinationDirectory:
+#   cleanDestinationDirectory: true
+```
+
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -45,7 +71,5 @@ None
 For an explanation of tool installers and examples, see [Tool installers](../../concepts/process/tasks.md#tool-installers).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

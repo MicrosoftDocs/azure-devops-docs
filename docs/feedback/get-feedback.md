@@ -1,8 +1,10 @@
 ---
 title: Request feedback using the work tracking feedback tool
-description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application   developed using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application developed using Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd  
 ms.manager: douge
 ms.author: kaelli
@@ -28,7 +30,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 	![Request feedback link in Homepage](_img/request-feedback-link.png)  
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../work/customize/configure-features-after-upgrade.md).</blockquote>  
+	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../work/customize/configure-features-after-upgrade.md).</blockquote>  
 
 	If the following message appears, you need to [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md).
 

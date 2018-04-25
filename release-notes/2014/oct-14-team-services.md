@@ -1,8 +1,8 @@
 ---
 title: Test artifacts as work items – Oct 14
 description: VSTS release notes for October 14 2014
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: cfb7eacd-1d58-492d-83a2-c645ceae76cf
 ms.date: 06/01/2016

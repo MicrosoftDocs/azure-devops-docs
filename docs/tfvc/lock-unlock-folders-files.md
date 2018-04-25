@@ -2,12 +2,16 @@
 title: Lock and unlock folders or files | TFVC 
 description: Lock and unlock folders or files using Team Foundation Version Control 
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Lock and unlock folders or files in Team Foundation Version Control
 
@@ -24,7 +28,7 @@ For more information, see [Create and work with workspaces](create-work-workspac
 You can use a lock to temporarily freeze the server version of an item so that you can check in a [pending change](develop-code-manage-pending-changes.md) without having to resolve any merge conflicts. If you want to permanently prevent access to an item on the server, you should use the [Permission Command](permission-command.md) instead.
 
 > [!TIP]
-> You can use the [Lock command](lock-command.md) to remove another user’s lock if you have sufficient permissions.
+> You can use the [Lock command](lock-command.md) to remove another user's lock if you have sufficient permissions.
 
 **Requirements**
 

@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Restore an application-tier server
 
@@ -16,7 +19,7 @@ ms.technology: vs-devops-admin
 The databases for Team Foundation store all data for your deployment of Team Foundation Server. Even if you back up the application-tier server, you will not back up any data for Team Foundation Server. However, if the hardware of an application-tier server fails, you can install another application-tier server and configure it to use the databases for your deployment. That server will then replace the offline server as the application-tier server for the deployment. If your application-tier server hosted SharePoint Products, you must also restore that software on the new hardware. For more information, see [Backup (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=237641), [Backup and Recovery (SharePoint Server)](http://go.microsoft.com/fwlink/?LinkId=203842), or [Protecting and restoring a farm (Office SharePoint Server 2007)](http://go.microsoft.com/fwlink/?LinkId=203843).
 
 >**Note:**
->  After you restore an application tier to new hardware, make sure that all users, groups, and service accounts for your deployment are configured with the permissions that they require to perform necessary tasks. For example, administrators for Team Foundation must be members of the local **Administrators** group on the application-tier server so that they can open the administration console. For more information, see [Add users to team projects](../../../security/add-users-team-project.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
+>  After you restore an application tier to new hardware, make sure that all users, groups, and service accounts for your deployment are configured with the permissions that they require to perform necessary tasks. For example, administrators for Team Foundation must be members of the local **Administrators** group on the application-tier server so that they can open the administration console. For more information, see [Add users to team projects](../../../security/add-users-team-project.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
 
 You can also add more than one application-tier server to a deployment of Team Foundation Server, but you must configure clients to connect to that server as a separate application tier. You cannot configure automatic load balancing between application-tier servers. For actual load balancing and transparency to clients, you must first install and configure a hardware or software device for network load balancing (NLB).
 

@@ -1,11 +1,11 @@
 ---
 title: Define pick lists | VSTS & TFS
 description: Syntax and Usage for the ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES elements to enumerate the drop-down menu for a field - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 309c8545-249a-4d7a-8c91-fc10227fa0ba
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/10/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../process/customize-process-field.md). 
 >
 >For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
@@ -36,10 +36,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <ALLOWEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </ALLOWEDVALUES>  
     ```  
@@ -48,10 +48,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <PROHIBITEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </PROHIBITEDVALUES>  
     ```  
@@ -60,10 +60,10 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <SUGGESTEDVALUES for="userGroupName" not="userGroupName" expanditems="true | false" filteritems="excludegroups">  
-       <GLOBALLIST name="globalListName" />  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <GLOBALLIST name="globalListName" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </SUGGESTEDVALUES>  
   
@@ -81,7 +81,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
  For more information, see [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md).  
   
  
->[!NOTE]  
+> [!NOTE]    
 >For the Hosted XML process model, the following limits are placed on global list import: 
 >- Total of 64 global lists
 >- Total of 512 items per list
@@ -95,9 +95,9 @@ You can enumerate a set of values for a field by defining a pick list as part of
   
     ```  
     <GLOBALLIST name="globalListName">  
-       <LISTITEM value="Name1" />  
-       <LISTITEM value="Name2" />  
-       <LISTITEM value="Name3" />  
+          <LISTITEM value="Name1" />  
+          <LISTITEM value="Name2" />  
+          <LISTITEM value="Name3" />  
     . . .   
     </GLOBALLIST>   
     ```  
@@ -157,11 +157,11 @@ You can enumerate a set of values for a field by defining a pick list as part of
 </FIELD>  
 <FIELD refname="MyCorp.CusSeverity" name="Customer Severity" type="String">  
 <HELPTEXT>Indicate the severity of the problem</HELPTEXT>  
-    <ALLOWEDVALUES>  
-        <LISTITEM value="Emergency">  
-        <LISTITEM value="Major">  
-        <LISTITEM value="Minor">  
-    </ALLOWEDVALUES>  
+       <ALLOWEDVALUES>  
+        �<LISTITEM value="Emergency">  
+        �<LISTITEM value="Major">  
+        �<LISTITEM value="Minor">  
+       </ALLOWEDVALUES>  
 <DEFAULT from="value" value="Minor"/>  
 </FIELD>  
 ```  
@@ -191,7 +191,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 </FIELD>  
 ```  
   
-## Related notes
+## Related articles
 
 -  [Apply a field rule](apply-rule-work-item-field.md)
 -  [Modify a field or add a custom field](../add-modify-field.md)  

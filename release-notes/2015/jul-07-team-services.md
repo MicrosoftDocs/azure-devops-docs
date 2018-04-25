@@ -1,8 +1,8 @@
 ---
 title: Card colors and personal access tokens – Jul 7
 description: VSTS release notes for July 7 2015
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 66780d76-a567-492d-b0ef-eccf20b89633
 ms.date: 06/01/2016

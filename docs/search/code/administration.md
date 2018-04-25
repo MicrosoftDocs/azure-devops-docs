@@ -2,11 +2,14 @@
 title: Code and Work Item Search set up
 description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 ms.manager: douge
-ms.author: douge
-ms.date: 01/18/2018
+ms.author: ahomer
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Set up and administer Microsoft Code Search and Work Item Search
@@ -15,9 +18,15 @@ ms.date: 01/18/2018
 
 In this topic:
 
+::: moniker range="vsts"
+
 * **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
@@ -31,9 +40,13 @@ In this topic:
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](../../accounts/requirements.md).
 
+::: moniker-end
+
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item Search.
+
+::: moniker range="vsts"
 
 <a name="config-ts"></a>
 ## Install Code Search in VSTS
@@ -48,6 +61,10 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 ## Uninstall Code Search in VSTS
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < vsts"
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
@@ -337,6 +354,8 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 > * [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
 > * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
 > * [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
+> * [TFS 2017 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update3)
+> * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
 
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
@@ -676,6 +695,8 @@ name of the server where Search is installed:
 1. [Pause all indexing](#pause-index) and see if performance recovers.
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
+
+::: moniker-end
 
 <a name="support"></a>
 

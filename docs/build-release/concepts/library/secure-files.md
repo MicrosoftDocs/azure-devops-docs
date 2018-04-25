@@ -2,12 +2,14 @@
 title: Secure files for VSTS and Team Foundation Server
 description: Understand secure files for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: dastahel
 ms.author: madhurig
 ms.date: 04/26/2017
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Secure files
 
@@ -22,6 +24,10 @@ There's a size limit of 10 MB for each secure file.
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### How can I consume secure files in a Build or Release Definition?
+
+Use the [Download Secure File](https://docs.microsoft.com/en-us/vsts/build-release/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Definition.
 
 ### How can I create a custom task using secure files?
 

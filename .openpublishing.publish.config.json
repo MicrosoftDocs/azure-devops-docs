@@ -6,6 +6,7 @@
       "build_output_subfolder": "release-notes",
       "locale": "en-us",
       "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -13,9 +14,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_groups": [],
-      "version": 0
+      "template_folder": "_themes"
     },
     {
       "docset_name": "team-services",
@@ -23,6 +22,9 @@
       "build_output_subfolder": "team-services",
       "locale": "en-us",
       "monikers": [],
+      "moniker_ranges": [
+        "vsts || >= tfs-2013 <= tfs-2018"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -30,9 +32,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_groups": [],
-      "version": 0
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [
@@ -44,8 +44,8 @@
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "need_pr_comments": false,
   "enable_incremental_build": false,
+  "need_pr_comments": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
@@ -72,10 +72,10 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
   "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  }
+		"Pdf": {
+			"template_folder": "_themes.pdf"
+		}
+	},
+  "need_generate_intellisense": false
 }

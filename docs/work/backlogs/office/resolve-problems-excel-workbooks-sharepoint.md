@@ -1,11 +1,14 @@
 ---
-title: Resolve problems working with Excel workbooks or SharePoint Server | TFS
-description: Resolve an error that occurs with the integration of SharePoint, TFS, and Excel workbooks 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Resolve problems working with Excel workbooks or SharePoint Server 
+titleSuffix: TFS
+description: Resolve an error that occurs with the integration of SharePoint, Team Foundation Server, and Excel workbooks 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: fdb0f881-7ead-45f5-85c0-189a86d29d7a
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 02/22/2017  
 ---
 
@@ -39,6 +42,6 @@ To perform this procedure, you must be a member of the Administrators group on t
   
 5.  Click **OK**.  
   
-## Related notes
+## Related articles
  
 - [Verify SharePoint products for Team Foundation Server](../../../tfs-server/install/sharepoint/verify-sharepoint.md)

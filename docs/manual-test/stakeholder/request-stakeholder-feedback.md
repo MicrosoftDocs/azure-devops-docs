@@ -1,12 +1,15 @@
 ---
 title: Request stakeholder feedback using the Test &amp; Feedback extension
 description: Request stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension

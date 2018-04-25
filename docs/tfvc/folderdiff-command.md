@@ -2,12 +2,16 @@
 title: Folderdiff Command
 description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2016
+author: steved0x
+ms.topic: reference
+ms.date: 03/26/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Folderdiff Command
 
@@ -79,10 +83,10 @@ To use the **folderdiff** command, you must have the **Read** permission set to 
 <tr>
 <td><p><strong>/view</strong></p></td>
 <td><p>Optional. Specifies what information is included in the output using a comma separated list of the following values:</p>
-<p><i>same</i>—output displays files with the same content in both source and target directories.</p>
-<p><i>different</i>—output displays files with different content in both source and target directories.</p>
-<p><i>sourceOnly</i>—output displays files that exist only in source directory.</p>
-<p><i>targetOnly</i>—output displays files that exist only in target directory.</p>
+<p><i>same</i>-output displays files with the same content in both source and target directories.</p>
+<p><i>different</i>-output displays files with different content in both source and target directories.</p>
+<p><i>sourceOnly</i>-output displays files that exist only in source directory.</p>
+<p><i>targetOnly</i>-output displays files that exist only in target directory.</p>
 <p>The default is &quot;<i>different</i>,<i>sourceOnly</i>,<i>targetOnly</i>&quot;</p></td>
 </tr>
 <tr>
@@ -129,55 +133,22 @@ The filter is applied to the file and folder names using the following rules:
 
 -   If the folder masks in the filter contain only exclusion masks, folders that do not match any of the folder masks are included.
 
-These are some examples of filter masks:
+The following table lists filter name mask examples.
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Mask</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>*.cs</p></td>
-<td><p>Matches all C# files.</p></td>
-</tr>
-<tr>
-<td><p>My*.bmp</p></td>
-<td><p>Matches all bitmap files that begin with &quot;My.&quot;</p></td>
-</tr>
-<tr>
-<td><p>!*.exe</p></td>
-<td><p>Excludes all executable files.</p></td>
-</tr>
-<tr>
-<td><p>!objd\</p></td>
-<td><p>Excludes all objd directories.</p></td>
-</tr>
-</tbody>
-</table>
+|**Name Mask**|**Description**|
+|---|---|
+|\*.cs | Matches all C# files. |
+|My\*.bmp | Matches all bitmap files that begin with My.|
+|!\*.exe | Excludes all executable files.|
+|!objd\\ | Excludes all objd folders.|
 
-These are some examples of filters:
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Mask</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>*.cs;!objd\;!obj\;!bin\</p></td>
-<td><p>Matches all C# files, and excludes objd, obj, and bin directories</p></td>
-</tr>
-<tr>
-<td><p>!<i>.resx;!</i>.ini;!resources\;!<i>junk</i>\</p></td>
-<td><p>Excludes all resx and ini files as well as the folders &quot;resources&quot; or folders that have &quot;junk&quot; in the name</p></td>
-</tr>
-</tbody>
-</table>
+The following table lists filter examples.
+
+|**Filter**|**Description**|
+|---|---|
+|\*.cs;!objd\\;!obj\\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
+|!\*.resx;!\*.ini;!resources\\;!\*junk\*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 

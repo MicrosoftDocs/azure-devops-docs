@@ -1,18 +1,19 @@
 ---
-title: Portfolio management | VSTS & TFS 
-description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Portfolio management
+titleSuffix: VSTS & TFS
+description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/26/2017
-ms.topic: get-started-article
+ms.topic: quickstart
 ---
 
 # Portfolio management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
@@ -36,7 +37,7 @@ By setting up a team structure like the one shown, you provide each feature team
 - Assign backlog items to feature teams from a common backlog 
 
  
-[!INCLUDE [image differences](../_shared/image-differences.md)]
+[!INCLUDE [image differences](../_shared/image-differences.md)]
 
 
 ## Management view of team progress 
@@ -49,7 +50,7 @@ With the hierarchical structure implemented, portfolio owners working in Account
 
 All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
 
->[!NOTE]  
+> [!NOTE]    
 >Program managers can gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
 
 
@@ -60,7 +61,7 @@ The Customer Profile feature team's view of the backlog only includes those work
 
 <img src="_img/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" style="border: 1px solid #C3C3C3;" /> 
 
->[!TIP]    
+> [!TIP]    
 >Add **Node Name** to the column options to show the team assigned to the work item.   
  
 Each feature team has its own team home page, backlog, Kanban board, and task board. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths.  
@@ -78,8 +79,8 @@ Here, all backlog items have been assigned to feature teams. While all features 
 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
->[!TIP]    
->You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
+> [!TIP]    
+>You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
 
 
 <a id="set_up"></a>
@@ -172,7 +173,7 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md) 
 - [Track capacity when working on more than one team](capacity-planning.md#track-capacity-per-team) 
 
-## Related notes
+## Related articles
  
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban](../kanban/kanban-basics.md)

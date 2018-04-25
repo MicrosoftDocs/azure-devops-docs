@@ -1,14 +1,18 @@
 ---
-title: How to troubleshoot Azure Resource Manager service endpoints in VSTS and TFS
-description: Troubleshoot Azure Resource Manager service endpoints in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Troubleshooting Azure Resource Manager service endpoints in VSTS and TFS
+description: Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
-# How to: Troubleshoot Azure Resource Manager service endpoints
+
+# Troubleshoot Azure Resource Manager service endpoints
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
@@ -60,7 +64,10 @@ This is a permission issue that may be due to the following causes:
 The best approach to resolve this issue, while granting only the minimum additional permissions
 to the user, is to increase the Guest user permissions as follows:
 
-1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
+   The account should be an [owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner),
+   [global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
+   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -75,7 +82,10 @@ to the user, is to increase the Guest user permissions as follows:
 Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
 you can make the user a member of the **Global administrator** role as follows:
 
-1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an Administrator account.
+1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
+   The account should be an [owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner),
+   [global administrator](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
+   [user account administrator](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 

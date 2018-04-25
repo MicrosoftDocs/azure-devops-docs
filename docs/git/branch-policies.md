@@ -2,12 +2,16 @@
 title: Protect your Git branches with policies | VSTS & TFS
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 11/21/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 #  Improve code quality with branch policies
 
@@ -66,6 +70,8 @@ Linking work items provides additional context for your changes and ensures that
 
 ![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)
 
+::: moniker range=">= tfs-2017" 
+
 ## Check for comment resolution
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
@@ -73,6 +79,8 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 ![Check for comment resolution](_img/branch-policies/comment-resolution.png)
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
+
+
 
 ## Enforce a merge strategy
 
@@ -86,7 +94,11 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 
 <a name="build"></a>
 <a name="require-the-pull-request-to-build"></a>
-   
+  
+::: moniker-end 
+ 
+::: moniker range=">= tfs-2015" 
+
 ## Build validation
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
@@ -111,9 +123,13 @@ Choose **Add build policy** and configure the desired options in the **Add build
   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to failed when the protected branch is updated. You must requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
   - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates. 
   - **Never**: Updates to the protected branch do not change the policy status. This reduces the number of builds for your branch, but can cause problems when closing pull requests that haven't been updated recently.
-- Choose an optional **Display name** for this build policy which used used to identify the policy on the **Branch policies** page. If you don't specify a display name, the build definition name is used.
+- Choose an optional **Display name** for this build policy which is used to identify the policy on the **Branch policies** page. If you don't specify a display name, the build definition name is used.
 
 When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
+
+::: moniker-end 
+
+::: moniker range="vsts" 
 
 ## Require approval from external services
 
@@ -122,6 +138,8 @@ External services can use the PR [Status API](https://go.microsoft.com/fwlink/?l
 ![Require approval from external services](_img/branch-policies/external-services.png)
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](./how-to/pr-status-policy.md).
+
+::: moniker-end 
 
 ## Automatically include code reviewers
 
@@ -145,6 +163,7 @@ Select **Optional** if you want to add reviewers automatically, but not require 
 When the required reviewers approve the code, you can complete the pull request.
 
 ![Pull request status shows that reviewers have approved](_img/branch-policies/RequiredReviewerApproved.png)   
+::: moniker range=">= tfs-2015" 
 
 ## Bypass branch policies
 
@@ -156,15 +175,26 @@ In some cases, you need to bypass policy requirements so you can push changes to
 > Users with **Exempt from policy enforcement permission** set to allow can complete pull requests even if the branch policy is not satisfied. Use caution when granting this permission, especially
 > at the repo and team project level.
 
+::: moniker-end 
+
+::: moniker range=">= tfs-2015" 
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+
 
 <a name="how_works"></a>
 #### Q: When are the conditions set in branch policies checked?
 
 Branch policies are re-evaluated on the server as changes are pushed and reviewers vote.
 If there is a build triggered by the policy, the build status is set to waiting until the build completes.
+
+#### Q: Can I use XAML build definitions in branch policies?
+You cannot use [XAML build definitions](https://msdn.microsoft.com/library/ms181715%28v=vs.120%29.aspx) in branch policies.
+
+
 
 #### Q: What type of wildcard characters are supported when configuring required code reviewers?
 Single asterisks (`*`) are supported, and will match any number of characters, including both forward-slashes (`/`) and back-slashes (`\`).  Question marks (`?`) will match any single character.  
@@ -179,8 +209,7 @@ Examples:
 #### Q: Are the required code reviewer paths case-sensitive?
 No, branch policies are not case-sensitive at this time.
 
-#### Q: Can I use XAML build definitions in branch policies?
-You cannot use [XAML build definitions](https://msdn.microsoft.com/library/ms181715%28v=vs.120%29.aspx) in branch policies.
+
 
 #### Q: How can I configure multiple users as required reviewers, but only require that one of them approve?
 You can [add the users to a group](../accounts/add-team-members-vs.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.
@@ -192,3 +221,5 @@ Even for users that are exempt from policy enforcement, the configured policies 
 Check out the [REST API documentation](http://go.microsoft.com/fwlink/?LinkId=526702) for more details.    
 
 <!-- ENDSECTION --> 
+
+::: moniker-end 

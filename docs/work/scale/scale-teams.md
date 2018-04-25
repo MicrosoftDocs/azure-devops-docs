@@ -1,13 +1,13 @@
 ---
 title: Scale and manage work across the enterprise 
 titleSuffix: VSTS & TFS
-description: Scale your team project by adding teams  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Scale your team project by adding teams in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: overview
 ms.date: 02/05/2018
 ---
 
@@ -16,7 +16,7 @@ ms.date: 02/05/2018
 <a id="collection-project-team-structure">  </a>
 ## Support a growing organization, manage work across the enterprise
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How do you manage work across the enterprise using Agile tools?  How will you scale your Agile tools to support your growing enterprise?  
 
@@ -50,7 +50,7 @@ You can scale your system as needed by adding teams and/or team projects. These 
 To learn more, see the following topics:  
 
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)
-- [About teams and Agile tools](../../teams/about-teams-and-settings.md) 
+- [About teams and Agile tools](../../settings/about-teams-and-settings.md) 
 - Manage a [portfolio of backlogs](portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
 - Use [Delivery plans](review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
 - Incrementally adopt [practices that scale](practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.

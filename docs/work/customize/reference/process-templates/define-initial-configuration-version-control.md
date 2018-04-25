@@ -1,18 +1,29 @@
 ---
-title: Define the initial configuration of Team Foundation version control | VSTS & TFS
-description: Use the plug-in for version control to configure the team project's initial security permissions, check-out policies, and check-in notes - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the initial configuration of Team Foundation version control (TFVC) or Git
+titleSuffix: VSTS & TFS
+description: Configure the team project's initial security permissions, check-out policies, and check-in notes for version control in Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2017' 
 ms.date: 10/11/2017
 ---
 
 
 # Define the initial configuration of Git and TFVC
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+
+> [!NOTE]  
+>  For VSTS and for TFS 2017.4 and later versions, you create team projects from the web 
+>  portal, which ignores this plug-in. Instead, default permissions are set for 
+>  project-level and collection-level security groups. After you create a team project, 
+>  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
+>  [permissions](../../../../security/set-git-tfvc-repository-permissions.md) from the web portal.  
+
 
 By using the plug-in for version control, you can configure a team project's initial security permissions, check-out policies, and check-in notes.  
   
@@ -26,12 +37,7 @@ The names of the file, the folder, and the plug-in for the default process templ
  
 You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy this kind of functionality, you must use your own distribution and installation program.  
  
-> [!NOTE]  
->  For VSTS and for TFS 2017.4 and later versions, you create team projects from the web 
->  portal, which ignores this plug-in. Instead, default permissions are set for 
->  project-level and collection-level security groups. After you create a team project, 
->  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
->  [permissions](../../../../security/set-git-tfvc-repository-permissions.md) from the web portal.    
+  
   
  
 ##  <a name="Exclusive"></a> Exclusive Check Out  
@@ -133,6 +139,6 @@ The default assignments for TFVC and GIt permissions made to all default process
 ```  
 
 
-## Related notes  
+## Related articles  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Code](../../../../git/overview.md)

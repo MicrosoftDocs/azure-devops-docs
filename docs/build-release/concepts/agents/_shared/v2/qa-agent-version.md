@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### How do I make sure I have the latest v2 agent version?
 
 0. Go to the _Agent pools_ control panel tab:

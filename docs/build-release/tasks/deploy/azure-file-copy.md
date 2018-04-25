@@ -1,12 +1,15 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure File Copy
 description: VSTS and Team Foundation Server build task step to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy: Azure File Copy
@@ -72,12 +75,47 @@ in the firewall, and install the test certificate.
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AzureFileCopy@1
+  inputs:
+    SourcePath:
+#   azureConnectionType: ConnectedServiceNameARM # ConnectedServiceName, ConnectedServiceNameARM (default)
+    azureClassicSubscription:
+    azureSubscription:
+    Destination:  # AzureBlob, AzureVMs
+    classicStorage:
+    storage:
+    ContainerName:
+    BlobPrefix:
+    cloudService:
+    resourceGroup:
+#   ResourceFilteringMethod: machineNames # machineNames (default), tags
+    MachineNames:
+    vmsAdminUserName:
+    vmsAdminPassword:
+    TargetPath:
+    AdditionalArguments:
+#   enableCopyPrerequisites: false
+#   CopyFilesInParallel: true
+#   CleanTargetBeforeCopy: false
+#   skipCACheck: true
+    outputStorageUri:
+    outputStorageContainerSasToken:
+```
+
+::: moniker-end
+
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
 * [Azure Cloud Service Deployment](azure-cloud-service-deployment.md)
 * [Azure Web App Deployment](azure-web-app-deployment.md)
-
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -171,7 +209,9 @@ A suitable account can be easily created for use in a service endpoint:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

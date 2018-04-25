@@ -1,17 +1,19 @@
 ---
-title: Excel reports provided with the CMMI process template for TFS
-description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Excel reports provided with the CMMI process template 
+description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: e1263634-8bb5-4aa9-904f-bf3ccdefa77a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---
 
 # Excel reports (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [CMMI process template](../../work/work-items/guidance/cmmi-process.md).  
   

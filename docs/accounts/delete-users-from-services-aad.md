@@ -1,12 +1,15 @@
 ---
 title: Delete users from VSTS connected to Azure AD
 description: Delete users from VSTS connected to Azure AD
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: eb0d51c2-fb28-4c55-9fcd-33a5942130f0
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+author: chcomley
+ms.date: 10/06/2017
+monikerRange: 'vsts'
 ---
 
 #	Delete users from VSTS connected to Azure AD
@@ -14,7 +17,6 @@ ms.date: 10/6/2017
 **VSTS**
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
-
 
 You can simply [delete the user from each VSTS account](delete-account-users.md) 
 where you need to remove them. If you delete the user only from Azure AD, they may still show up in VSTS, but 

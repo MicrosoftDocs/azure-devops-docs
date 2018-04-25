@@ -7,7 +7,10 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 02/12/2018
+monikerRange: '>=tfs-2013'
 ---
+
+
 
 # Change groups and permissions with TFSSecurity
 
@@ -575,7 +578,7 @@ The following example creates a group that is specific to the project that the U
 
 You must replace the placeholder GUID with the URI of the team project for which you want to create this group. To obtain the URI for a team project, open Team Explorer, right-click the team project, click Properties, and copy the entire value of the URL property.
 
-After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
+After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
 
 > [!NOTE]
 > You can use the **/gc** command to create groups but not to add any users to the groups or assign any permissions. To change the membership of the group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). To change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
@@ -1261,6 +1264,7 @@ TFS 2017 Update 1 and later
 |Permission|Namespace|Action|
 |---|---|---|
 |[Contribute](../../security/permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Contribute to Pull Requests](../../security/permissions.md#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
 |[Create Branch](../../security/permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
 |[Create Repository](../../security/permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
 |[Create Tag](../../security/permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|

@@ -1,13 +1,17 @@
 ---
-title: Field mapping XML element reference for TFS-Project Server integration | TFS
-description: Customize the field mappings to define which fields in the Visual Studio Team Foundation Server (TFS) and Project Server to be kept synchronized
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Field mapping XML element reference for TFS-Project Server integration
+titleSuffix: TFS
+description: Customize the field mappings to define which fields to keep synchronized when using Team Foundation Server & Project Server integration
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: dfd7bc62-dd68-4412-a86d-5f82c3ad9af3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
+
 # Field mapping XML element reference for TFS-Project Server integration
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -72,19 +76,19 @@ ms.date: 01/12/2017
   
 ```  
 <mappingFile>  
-   <persistables>  
-      <Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
-         <field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
-            <tfsToTarget>  
-               <target provider="ProjectServerStatusQueue" name="pjTaskName" />  
-            </tfsToTarget>  
-            <targetToTfs>  
-               <target provider="ProjectServerPublished" name="pjTaskName" />  
-            </targetToTfs>  
-         </targetToTfs>  
+&nbsp;&nbsp;&nbsp;<persistables>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tfsToTarget>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name="pjTaskName" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tfsToTarget>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<targetToTfs>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerPublished" name="pjTaskName" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
       </field>  
   
-         . . .  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .  
   
     </Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
   </persistables>  
@@ -162,9 +166,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskActualWork" />  
-            <transforms>  
-               <transform transformType="clearValueIfParent">  
-            </transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.RemainingWork" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" displayTfsField="true" displayTfsMirror="true">  
@@ -173,9 +177,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskRemainingWork" />  
-            <transforms>  
-               <transform transformType="clearValueIfParent">  
-            </transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.OriginalEstimate" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" displayTfsField="false" displayTfsMirror="true" onConflict="PSWin">  
@@ -204,7 +208,7 @@ ms.date: 01/12/2017
 </mappingFile>  
 ```  
   
-## Related notes  
+## Related articles  
  [Restrictions on mapping fields](restrictions-mapping-ps-fields.md)   
  [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md)   
  [Upload or download field mappings](manage-field-mappings.md)   

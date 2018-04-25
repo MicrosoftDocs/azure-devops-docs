@@ -2,14 +2,17 @@
 title: Variable groups for VSTS and TFS
 description: Understand variable groups in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
-# Variable groups
+# Variable groups for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017**
 
@@ -90,6 +93,8 @@ the same way as [variables you define within the definition itself](../definitio
 For example, to access the value of a variable named **customer** in a variable group linked to the definition,
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
 cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
+
+[!INCLUDE [variable-collision](../definitions/_shared/variable-collision.md)]
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or environments to which the variable group is linked.

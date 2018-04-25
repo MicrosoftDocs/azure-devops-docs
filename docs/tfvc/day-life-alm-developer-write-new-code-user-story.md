@@ -2,12 +2,16 @@
 title: Write new code for a user story
 description: A day in the life of an devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Day in the life of a devops developer: write new code for a user story
 
@@ -15,7 +19,7 @@ ms.date: 08/10/2016
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
-Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber—a fictitious company that provides cable television and related services. You’ll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you’re interrupted, request a code review, check in your changes, and perform other tasks.
+Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 **The story so far**  
 The team recently began [adopting Visual Studio and Team Foundation Server for devops](https://msdn.microsoft.com/library/dd286491). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
@@ -50,7 +54,7 @@ At the end of every small step, he runs all the unit tests that are relevant to 
 However, he will not check the code into Team Foundation Server until he has finished the entire task.
 
 Peter writes down a rough plan for this sequence of small steps. He knows that the exact details and order of the later ones will probably change as he works. Here is his initial list of steps for this particular task:  
-1.  Create test method stub—that is, just the signature of the method.  
+1.  Create test method stub-that is, just the signature of the method.  
 2.  Satisfy one specific typical case.  
 3.  Test broad range. Make sure that the code responds correctly to a large range of values.  
 4.  Exception on negative. Deal gracefully with incorrect parameters.  
@@ -257,15 +261,15 @@ Together they write the following test:
             }
 
 >**Tip:**  
->For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests—whether before or after the code—because they keep the code stable.
+>For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
 
-## Red, Green, Refactor…
+## Red, Green, Refactor...
 
-Peter follows a cycle in which he repeatedly writes a test and confirms that it fails, writes code to make the test pass, and then considers refactoring—that is, improving the code without changing the tests.
+Peter follows a cycle in which he repeatedly writes a test and confirms that it fails, writes code to make the test pass, and then considers refactoring-that is, improving the code without changing the tests.
 
 ### Red
   
-Peter presses CTRL+R, T to run the new test that he created with Julia. After he writes any test, he always runs it to make sure that it fails before he writes the code that makes it pass. This is a practice he learned after he forgot to place assertions in some tests he’d written. Seeing the Fail result gives him confidence that when he makes it pass, the test result correctly indicates that a requirement has been satisfied.
+Peter presses CTRL+R, T to run the new test that he created with Julia. After he writes any test, he always runs it to make sure that it fails before he writes the code that makes it pass. This is a practice he learned after he forgot to place assertions in some tests he'd written. Seeing the Fail result gives him confidence that when he makes it pass, the test result correctly indicates that a requirement has been satisfied.
 
 Another useful practice is to set **Run Tests after Build**. This option runs the tests in the background every time you build the solution, so that you have a continual report of the test status of your code. Peter was at first suspicious that it might make Visual Studio slow to respond, but he finds that this rarely happens.
 
@@ -330,9 +334,9 @@ He verifies that the tests still pass:
 >
 >Run the tests after every change.
 
-### … and repeat
+### ... and repeat
   
-Peter continues his series of extension and refactoring steps, using his list of small steps as a rough guide. He doesn’t always perform a refactoring step after each extension, and he sometimes performs more than one refactoring step in succession. But he always runs the unit tests after each change to the code.
+Peter continues his series of extension and refactoring steps, using his list of small steps as a rough guide. He doesn't always perform a refactoring step after each extension, and he sometimes performs more than one refactoring step in succession. But he always runs the unit tests after each change to the code.
 
 Sometimes he adds a test that requires no change to the code, but that adds to his confidence that his code works correctly. For example, he wants to make sure that the function works over a broad range of inputs. He writes more tests, such as this one:
 
@@ -442,9 +446,9 @@ After it is fixed, all the tests pass:
 
 At intervals during his work, and finally before he checks in the code, Peter obtains a Code Coverage report. This shows how much of the code has been exercised by his tests.
 
-Peter’s team aims for coverage of at least 80%. They relax this requirement for generated code, because it can be difficult to achieve a high coverage for this type of code.
+Peter's team aims for coverage of at least 80%. They relax this requirement for generated code, because it can be difficult to achieve a high coverage for this type of code.
 
-Good coverage is not a guarantee that the full functionality of the component has been tested, and it does not guarantee that the code will work for every range of input values. Nevertheless, there is a fairly close correlation between coverage of code lines and coverage of the behavioral space of a component. Therefore, good coverage strengthens the team’s confidence that they are testing most of the behavior that they should.
+Good coverage is not a guarantee that the full functionality of the component has been tested, and it does not guarantee that the code will work for every range of input values. Nevertheless, there is a fairly close correlation between coverage of code lines and coverage of the behavioral space of a component. Therefore, good coverage strengthens the team's confidence that they are testing most of the behavior that they should.
 
 To get a code coverage report, on the **Tests** menu, choose **Run**, **Analyze Code Coverage for All Tests**. Then run all the tests again.
 
@@ -460,7 +464,7 @@ Peter continues to update the code in small steps until he is satisfied that:
 -   All the available unit tests pass.
 
     In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../build-release/concepts/definitions/build/repository.md).  
--   Code coverage meets the team’s standard. 75% is a typical project requirement.  
+-   Code coverage meets the team's standard. 75% is a typical project requirement.  
 -   His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.  
 -   His code is easy to understand and extend.
 
@@ -470,7 +474,7 @@ When all these criteria are met, Peter is ready to check his code into source co
   
 Peter applies the following principles while developing code:  
 -   Develop unit tests along with the code, and run them frequently during development. The unit tests represent the specification of your component.  
--   Don’t change unit tests, unless the requirements have changed or the tests were wrong. Add new tests gradually as you extend the functionality of the code.  
+-   Don't change unit tests, unless the requirements have changed or the tests were wrong. Add new tests gradually as you extend the functionality of the code.  
 -   Aim for at least 75% of your code to be covered by the tests. Look at the code coverage results at intervals, and before you check in source code.  
 -   Check in your unit tests along with the code, so that they will be run by the continuous or regular server builds.  
 -   Where practical, for each piece of functionality, write the unit test first. Do this before you develop the code that satisfies it.
@@ -479,7 +483,7 @@ Peter applies the following principles while developing code:
 
 Before checking in his changes, Peter again uses Lync to share his screen with his colleague Julia so she can informally and interactively review with him what he has created. The tests continue to be the focus of their discussion because Julia is primarily interested in what the code does, not how it works. Julia agrees that what Peter has written meets her needs.
 
-Peter checks in all changes he has made, including the both the tests and the code, and associates them with the task he has completed. The check-in queues the team’s automated team build system to validate his changes using the team’s **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing—in a clean environment separate from their development computers—every change the team makes.
+Peter checks in all changes he has made, including the both the tests and the code, and associates them with the task he has completed. The check-in queues the team's automated team build system to validate his changes using the team's **CI Build** build process. This build process helps the team minimize errors in their codebase by building and testing-in a clean environment separate from their development computers-every change the team makes.
 
 Peter is notified when the build is completed. In the build results window, he sees that the build succeeded and all the tests passed.
 

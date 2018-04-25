@@ -1,15 +1,18 @@
 ---
-title: Gates in Release Management
+title: Control deployments with gates in Release Management
 description: Understand gated releases in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
-# Gates
+# Release deployment control using gates 
 
 **VSTS**
 
@@ -58,23 +61,23 @@ that contains gates, the deployment stops until the health signals from all the 
    > Also see the tutorial [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
      and the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
      A [library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) is available to help you create your own custom gate tasks.
+     Notes about authoring a server task can be found on [GitHub](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md).
 
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
    ![Setting the arguments for a gate function](_img/gated-releases-03.png)
 
-1.  Set the options that apply to all the gates you added:
+1.  Set the evaluation options that apply to all the gates you added:
 
-   * **Timeout**. The maximum evaluation period for all gates. 
-     The deployment will be rejected if the timeout is reached before
-     all gates succeed during the same sampling interval. 
-
-   * **Sampling interval**. The time interval between each evaluation of 
+   * **Time between re-evaluation of gates**. The time interval between each evaluation of 
      all the gates. At each sampling interval, new requests are sent concurrently to each gate
      for fresh results. The sampling interval must be greater than the longest
      typical response time of any configured gate to allow time for all responses to be received.     
 
-   * **Execution order**. Select the required order of execution for gates and approvals if you have configured both.
+   * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
+     The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
+
+   * **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both.
      For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
      This saves the system from evaluating the gate functions if the release is rejected by the user. 
      For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
@@ -120,8 +123,6 @@ about the evaluation of all the gates you configured for the release.
 ## See also
 
 * [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

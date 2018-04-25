@@ -1,14 +1,16 @@
 ---
-title: Overview of TFS-Project Server integration features | TFS
-description: Understand how to customize data synchronization between Team Foundation Server (TFS) and Project Server 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Overview of TFS-Project Server integration features 
+titleSuffix: TFS 
+description: Understand how to customize data synchronization between Team Foundation Server & Project Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/12/2017
-ms.topic: get-started-article
+ms.topic: overview
 ---
+
 # Overview of TFS-Project Server integration features  
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -27,7 +29,7 @@ ms.topic: get-started-article
 |Traceability, update status, submissions, and rejections|[Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md)<br /><br /> As work items and tasks are created, updated, and synchronized, a record is written to the History field for work items in Team Foundation. In addition, you can find status information in the following fields on the **Project Server** tab for each work item: Last Submit Status, Last Submitted Date, Last Approval Status, Last Approval Date.|  
 |Submissions, approvals, and automatic approvals|[Top-down planning of business requirements](top-down-plan-mapped-team-project.md)<br /><br /> Updates to work items are submitted to Project Server and remain in the status update queue until you approve or reject them. As a project manager, you can define a rule to automatically approve all updates that are submitted from Team Foundation Server to Project Server.|  
 |Resource rollup|[Work with resource rollup](work-with-resource-rollup.md)<br /><br /> In Team Foundation, rollup values are automatically calculated for Completed Work and Remaining Work of parent work items that contain child items. In addition, resources that are assigned to individual tasks appear as resources for the rollup of the task in Project.|  
-|Conflict resolution|[Field mapping reference](field-mapping-xml-element-reference.md)<br /><br /> A conflict can occur when team members change the value of a mapped field in both Team Foundation and Project Server at the same time. You can choose whether you want to always accept the value in Project Server or to maintain two distinct values, which is referred to as maintaining “two sets of books." If you choose the latter option, data synchronization is suspended for those fields until they are assigned the same values manually.|  
+|Conflict resolution|[Field mapping reference](field-mapping-xml-element-reference.md)<br /><br /> A conflict can occur when team members change the value of a mapped field in both Team Foundation and Project Server at the same time. You can choose whether you want to always accept the value in Project Server or to maintain two distinct values, which is referred to as maintaining "two sets of books." If you choose the latter option, data synchronization is suspended for those fields until they are assigned the same values manually.|  
 |Assigning resources|[Work with resource rollup](work-with-resource-rollup.md)<br /><br /> In Team Foundation, you can assign only one resource to a work item. You can assign multiple resources to a task in Project Professional and synchronize data for that task if you assign a primary owner or active resource to the task.<br /><br /> In addition, parent tasks that contain the rollup calculations of child tasks also contain the rollup of work that are assigned to the owners of each task. This rollup of owners appears as multiple resources in Project Professional for the summary task.|  
 |Mirrored fields|[Field mapping reference](field-mapping-xml-element-reference.md)<br /><br /> [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md)<br /><br /> In Team Foundation, you can store the values of Project fields and display them on the work item form. You can also find work items that contain one or more fields whose values differ from the values in the project plan.|  
   
@@ -44,6 +46,6 @@ ms.topic: get-started-article
 |Automatic approvals|You can automatically approve changes that occur when data is synchronized.|You can automatically approve changes that occur when data is synchronized.|  
 |SharePoint tasks list|Not applicable.|Projects that synchronize with TFS must be configured as an Enterprise Project and not as a SharePoint tasks list.|  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Manage projects](manage-projects.md)

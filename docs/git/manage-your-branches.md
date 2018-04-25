@@ -2,12 +2,16 @@
 title: Manage branches in your Git repo | VSTS & TFS
 description: Find your work and search for branches using the branches page in VSTS/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 11/30/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Manage branches
 

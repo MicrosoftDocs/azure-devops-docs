@@ -1,17 +1,17 @@
 ---
 title: Progress dashboard (Agile and CMMI) | TFS
 description: Dashboard designed to monitor team progress, burndown, and issues toward-Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: abd1932d-47d3-4e5c-82a8-1b2d6fc4af89
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/09/2017
 ---
 
 # Progress dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Progress dashboard to track team progress toward completing an iteration. This dashboard displays four reports that help you monitor progress, burndown, and issues.  
 

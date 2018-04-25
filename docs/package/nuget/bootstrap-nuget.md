@@ -2,16 +2,19 @@
 title: Set up a multi-developer NuGet environment
 description: Set up the NuGet developer environment for Package Management in VSTS or Team Foundation Server
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2017'
 ---
 
 # Set up a multi-developer NuGet environment
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 Using a package mangement system helps increase your team's velocity and decreases the amount of code duplication across your organization.
 Multiple developers on a team need to coordinate where and how they access packages.

@@ -85,8 +85,12 @@
     href: concepts/git-dates.md
   - name: Understand names in Git
     href: concepts/git-names.md
+  - name: Case sensitivity
+    href: concepts/case-sensitivity.md
   - name: Git preferences and settings
     href: concepts/git-config.md
+  - name: Repository settings
+    href: concepts/repository-settings.md
   - name: Scale
     items:
     - name: Manage large files
@@ -123,6 +127,8 @@
       href: create-a-readme.md
     - name: Git and TFVC repos
       href: team-projects.md
+    - name: "Set Git permissions (Security)"
+      href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -139,7 +145,7 @@
       href: lock-branches.md
     - name: Branch policies
       href: branch-policies.md
-    - name: Branch permissions
+    - name: "Branch permissions (Security)"
       href: branch-permissions.md
   - name: Map TFVC actions to Git
     href: concepts/mapping-my-tfvc-actions-to-git.md
@@ -161,6 +167,10 @@
       href: commit-history.md
     - name: Commit details
       href: commit-details.md
+  - name: "Default Git permissions (Security)"
+    href: ../security/default-git-permissions.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+  - name: Git limits
+    href: limits.md
 - name: Resources
   items:
   - name: What is Git?
@@ -190,6 +200,6 @@
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse
-      href: http://java.visualstudio.com/Docs/tools/eclipse
+      href: /vsts/java/download-eclipse-plug-in
     - name: IntelliJ IDEA
-      href: https://java.visualstudio.com/Docs/tools/intelliJ
+      href: /vsts/java/download-intellij-plug-in

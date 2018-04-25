@@ -1,13 +1,17 @@
 ---
-title: Remove work items permanently | VSTS & TFS
-description: Correct issues for individual work items or bluk modify or remove work items added to the task board.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Remove work items permanently
+titleSuffix: TFS  
+description: Permanently delete work items added to Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 01/20/2017
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
+
 # Remove work items permanently
 
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
@@ -37,7 +41,7 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/id**:`id`|The ID of a work item to destroy. To specify multiple work items, separate IDs using only commas, without whitespace.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
@@ -57,7 +61,7 @@ The following example deletes the work items with IDs, 12, 15, and 23 from the d
 witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:12,15,23  
 ```  
   
-## Related notes  
+## Related articles  
 - [Move, change, or delete work items](../../../backlogs/remove-delete-work-items.md)  
 - [Add work items](../../../backlogs/add-work-items.md)   
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: 'tfs-2013'
 ---
+
+
 
 # SQL Server requirements for Team Foundation Server
 
@@ -15,7 +18,7 @@ ms.technology: vs-devops-admin
 
 The most recent requirements information, which also covers TFS 2015, is [Requirements and Compatibility](../../requirements.md).
 
-Team Foundation Server 2013 requires SQL Server 2012 with Service Pack 1 or SQL Server 2014.
+Team Foundation Server 2013 requires SQL Server 2012 with Service Pack 1 or SQL Server 2014.
 
 You have multiple options:  
 -   You can use the basic configuration of Team Foundation Server, which comes with the required version of SQL Server Express.  
@@ -23,15 +26,15 @@ You have multiple options:
     [Limitations of SQL Server Express](http://stackoverflow.com/questions/1169634/limitations-of-sql-server-express) (stackoverflow post)
 
 -   You can [install one of the supported editions](install-sql-server.md).  
--   You can [verify and use an existing installation](#verify). 
+-   You can [verify and use an existing installation](#verify). 
 
 Regardless of which option you choose, your instance of SQL Server must meet the following requirements:
 
 | Category | Requirements |
 | --- | --- |
-| Supported editions | SQL Server 2014¹ (Express,² Standard,² and Enterprise editions) </br> SQL Server 2012 with SP1³ or newer service pack (Express,² Standard,² and Enterprise Editions) **Tip**: TFS Express only supports SQL Server Express instances that use the default instance name (SQLExpress). |
+| Supported editions | SQL Server 2014&#091;1&#093; (Express,[2] Standard,[2] and Enterprise editions) </br> SQL Server 2012 with SP1[3] or newer service pack (Express,[2] Standard,[2] and Enterprise Editions) **Tip**: TFS Express only supports SQL Server Express instances that use the default instance name (SQLExpress). |
 | Required for Team Foundation Server | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
-Required for reporting | Reporting Services – Native </br> Analysis Services |
+Required for reporting | Reporting Services - Native </br> Analysis Services |
 | Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
@@ -43,11 +46,11 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 **Your limits on database read operations**  
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
 
-¹ SQL Server 2014 has increased hardware requirements compared with previous versions. Certain configurations might hurt TFS performance. For more information, read [TFS 2013 Update 2: performance considerations using SQL Server 2014](http://support.microsoft.com/kb/2953452).
+[1] SQL Server 2014 has increased hardware requirements compared with previous versions. Certain configurations might hurt TFS performance. For more information, read [TFS 2013 Update 2: performance considerations using SQL Server 2014](http://support.microsoft.com/kb/2953452).
 
-² Limited or no SQL Server High Availability support.
+[2] Limited or no SQL Server High Availability support.
 
-³ If you’re using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn’t a requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don’t apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
+[3] If you're using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn't a requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don't apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
 
 ## SQL Server High Availability features Supported by Team Foundation Server
 
@@ -64,7 +67,7 @@ SQL Server 2012 offers a new high availability (HA) feature that requires a Team
 ## How to install SQL Server for Team Foundation Server
 
 [Manually install SQL Server for Team Foundation Server](install-sql-server.md)     
-Provides steps for how to install SQL Server for Team Foundation Server. Use these steps whether you are installing on a single server, across multiple servers, or for any combination of the two.
+Provides steps for how to install SQL Server for Team Foundation Server. Use these steps whether you are installing on a single server, across multiple servers, or for any combination of the two.
 
    [Add the service account for Team Foundation Server to the report server](https://msdn.microsoft.com/library/dd631908)     
 Describes how to assign permission to the service account for Team Foundation Server to use the report server.
@@ -75,7 +78,7 @@ Provides steps to verify that a SQL Server instance is ready to work with Team F
 
 ### Provisioning SQL Server Databases for Team Foundation Server
 
-You might want to create empty databases for Team Foundation Server, because doing so can be useful for managing the databases of multiple instances of Team Foundation Server on a single instance of SQL Server or hosting Team Foundation Server databases on a managed instance of SQL Server. Whatever the reason, this topic provides guidance for how to provision empty SQL Server databases for use with Team Foundation Server.
+You might want to create empty databases for Team Foundation Server, because doing so can be useful for managing the databases of multiple instances of Team Foundation Server on a single instance of SQL Server or hosting Team Foundation Server databases on a managed instance of SQL Server. Whatever the reason, this topic provides guidance for how to provision empty SQL Server databases for use with Team Foundation Server.
 
 Conceptually, this procedure contains two steps:
 
@@ -83,7 +86,7 @@ Conceptually, this procedure contains two steps:
 
 2.  You identify these databases when you install Team Foundation Server.
 
-Team Foundation Server has two databases that you can configure to use empty databases during installation.
+Team Foundation Server has two databases that you can configure to use empty databases during installation.
 
 -   Tfs\_*DatabaseLabel*Warehouse
 
@@ -91,7 +94,7 @@ Team Foundation Server has two databases that you can configure to use empty d
 
 These databases must use the naming structure as shown, but you can either omit the string *DatabaseLabel* or use any custom string that uniquely describes both databases.
 
-When you install Team Foundation Server, you must select the **Use pre-existing empty database(s)** check box. If you added a label, you must also type it in **Server Databases Label**. The installation wizard will then use the empty databases that you created to set up the configuration database.
+When you install Team Foundation Server, you must select the **Use pre-existing empty database(s)** check box. If you added a label, you must also type it in **Server Databases Label**. The installation wizard will then use the empty databases that you created to set up the configuration database.
 
 > [!NOTE]
 > Each project collection requires its own database, but you cannot configure Team Foundation Server to use an empty project collection database during installation. You must add an empty project collection database after installation, using Team Foundation Server Administration Console.
@@ -116,17 +119,17 @@ To use a named instance of SQL Server in a deployment of Team Foundation Server,
 <a name="verify"></a>
 ### Verify SQL Server for Team Foundation Server
 
-To ensure that your installation of SQL Server will work with Team Foundation Server, you should verify that the required SQL Server features are available, the underlying Windows services that are associated with SQL Server are running, the connection settings are configured, and the network ports are open.
+To ensure that your installation of SQL Server will work with Team Foundation Server, you should verify that the required SQL Server features are available, the underlying Windows services that are associated with SQL Server are running, the connection settings are configured, and the network ports are open.
 
 If SQL Server Reporting Services is not on the server that is running Team Foundation Server and you are using reporting, you must install Client Tools Connectivity on Team Foundation Server.
 
-If the Database Engine, Analysis Services, and Reporting Services are running on different instances of SQL Server, you must log on to each server to verify each instance. 
+If the Database Engine, Analysis Services, and Reporting Services are running on different instances of SQL Server, you must log on to each server to verify each instance. 
 
 **Required Permissions**
 
-To run SQL Server Configuration Manager, you must be a member of the **Users** security group on the server that hosts SQL Server. To use SQL Server Configuration Manager to modify services, you must be a member of the **Administrators** security group.
+To run SQL Server Configuration Manager, you must be a member of the **Users** security group on the server that hosts SQL Server. To use SQL Server Configuration Manager to modify services, you must be a member of the **Administrators** security group.
 
-To run SQL Server Reporting Services Configuration Manager or SQL Server Management Studio, you must be a member of the **Administrators** security group on the operating system of the server that is running the instance of SQL Server that you want to verify. For SQL Server Management Studio, you must also be a member of the **Public** server role on the instance of SQL Server that you want to verify.
+To run SQL Server Reporting Services Configuration Manager or SQL Server Management Studio, you must be a member of the **Administrators** security group on the operating system of the server that is running the instance of SQL Server that you want to verify. For SQL Server Management Studio, you must also be a member of the **Public** server role on the instance of SQL Server that you want to verify.
 
 #### Verify Reporting Services
 
@@ -134,9 +137,9 @@ If you are not using Team Foundation Server reporting, you do not need to verify
 
 To verify that the Windows service is running using SQL Server Configuration Manager:
 
-1.  On the server that is running SQL ServerSQL Server Reporting Services, launch **SQL Server Configuration Manager**.
+1.  On the server that is running SQL ServerSQL Server Reporting Services, launch **SQL Server Configuration Manager**.
 
-2.  Choose **SQL Server Services**, and verify that **Running** appears in the **State** column for SQL Server **Reporting Services**.
+2.  Choose **SQL Server Services**, and verify that **Running** appears in the **State** column for SQL Server **Reporting Services**.
 
 To verify the report server URLs are running using SQL Server Reporting Services Configuration Manger:
 
@@ -165,7 +168,7 @@ On the instance of SQL Server that is running the Database Engine, you must ensu
 
 To verify that Windows services are running by using SQL Server Configuration Manager:
 
-1.  On the instance of SQL Server on which the Database Engine, SQL Server Analysis Services, or both are running, launch **SQL Server Configuration Manager**.
+1.  On the instance of SQL Server on which the Database Engine, SQL Server Analysis Services, or both are running, launch **SQL Server Configuration Manager**.
 
 2.  Choose **SQL Server Services**, and verify that **Running** appears in the **State** column and the Start Mode is set to automatic for all services.
 
@@ -177,7 +180,7 @@ To verify that Windows services are running by using SQL Server Configuration Ma
 
     If you specified the default instance during installation, *MyInstanceName* will be **MSSQLSERVER**.
 
-To perform the following procedure, you must have SQL Server Management Studio installed. However, it does not have to be installed on the server that is running the instance of SQL Server that you are verifying. If you must install SQL Server Management Studio, see [Manually install SQL Server for Team Foundation Server](install-sql-server.md).
+To perform the following procedure, you must have SQL Server Management Studio installed. However, it does not have to be installed on the server that is running the instance of SQL Server that you are verifying. If you must install SQL Server Management Studio, see [Manually install SQL Server for Team Foundation Server](install-sql-server.md).
 
 To verify a connection to an instance of SQL Server by using SQL Server Management Studio:
 
@@ -189,7 +192,7 @@ To verify a connection to an instance of SQL Server by using SQL Server Manageme
 
 3.  Type the name of the server to which you want to connect, and then choose **Connect**.
 
-    If SQL Server is installed on a cluster, you must specify the server name, not the computer name. If you are using a named instance of SQL Server, you must specify the name of the server and the name of the instance. If you cannot connect to the server, verify the firewall settings, and then try to connect again.
+    If SQL Server is installed on a cluster, you must specify the server name, not the computer name. If you are using a named instance of SQL Server, you must specify the name of the server and the name of the instance. If you cannot connect to the server, verify the firewall settings, and then try to connect again.
 
 4.  In **Object Explorer**, verify that a green arrow appears next to the server name.
 

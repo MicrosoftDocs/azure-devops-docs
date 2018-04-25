@@ -1,12 +1,15 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Load Test step
-ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 description: Runs the load test in cloud with VSTS to integrate cloud-based load tests into your build and release pipelines
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test: Cloud-based Load Test
@@ -41,6 +44,28 @@ The build agent must have the following capabilities:
 | **Load test file** | Required. The name of the load test file (such as **myfile.loadtest**) to be executed as part of this task. This allows you to have more than one load test file and choose the one to execute based on the deployment environment or other factors. |
 | **Number of permissible threshold violations** | Optional. The number of critical violations that must occur for the load test to be deemed unsuccessful, aborted, and marked as failed. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
+
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CloudLoadTest@1
+  inputs:
+    connectedServiceName:
+#   TestDrop: $(System.DefaultWorkingDirectory)
+    LoadTest:
+#   activeRunSettings: useFile # useFile (default), changeActive
+    runSettingName:
+    testContextParameters:
+    TestSettings:
+    ThresholdLimit:
+#   MachineType: 0 # 0 (default), 2
+```
+
+::: moniker-end
 
 ## Examples
 
@@ -77,7 +102,9 @@ a failure to be reported. For more details, see:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

@@ -1,15 +1,17 @@
 ---
-title: Customize the workflow | VSTS    
-description: Add workflow states to a work item type for an inherited process for Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Customize the workflow
+titleSuffix: VSTS 
+description: Add workflow states to a work item type for an inherited process for Visual Studio Team Services 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 11/07/2017 
+ms.author: kaelliauthor: KathrynEE
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
-# Customize the workflow (Inheritance process model)   
+# Customize the workflow 
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
@@ -46,7 +48,7 @@ To perform any of these actions, you must be a member of the Project Collection 
 
 States you add will appear in the pick list for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
 
->[!NOTE]  
+> [!NOTE]    
 >Before adding a workflow state, review [Workflow states and state categories](../workflow-and-state-categories.md) to learn how workflow states map to state categories. 
 
 <a id="open-process-wit">  </a>
@@ -56,13 +58,13 @@ To customize the workflow for a WIT, you must work from the admin context Proces
 
 You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 	
 <a id="add-states"></a>
 ### Add a state 
 
->[!NOTE]  
+> [!NOTE]    
 >States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
 >
 >If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board columm settings](../../kanban/add-columns.md) in order to view and use the affected Kanban board.  
@@ -116,7 +118,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 	<img src="_img/cpworkflow-hide-state.png" alt="Hide an inherited state" style="border: 1px solid #C3C3C3;" /> 
 
-	>[!NOTE]  
+	> [!NOTE]    
 	>If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board will need to [update their column settings](../../kanban/add-columns.md).
 
 0. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
@@ -133,7 +135,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 0.  If teams use the Kanban board to update their status, each team will need to update their [column settings](../../kanban/add-columns.md).    
  
 
-## Related notes  
+## Related articles  
 
 As you customize a workflow, all team projects that reference the inherited process that you're customizing will automatically update to reflect the customized workflow states. To view your customizations, refresh your web browser.  
 
@@ -146,8 +148,6 @@ Additional topics of interest:
 - [Add or edit Kanban columns](../../kanban/add-columns.md)  
 - [Query by workflow or Kanban board changes](../../track/query-by-workflow-changes.md)    
 
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 <!---
 UPDATE CONTENT FOR THIS FWLINK: http://go.microsoft.com/fwlink/?LinkId=286303. 

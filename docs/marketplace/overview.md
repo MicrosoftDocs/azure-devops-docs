@@ -1,26 +1,29 @@
 ---
-title: Visual Studio Marketplace & billing overview | VSTS & TFS 
-description: Overview of extensions, subscriptions, and billing for the Visual Studio Marketplace
+title: Visual Studio Marketplace overview | VSTS & TFS 
+description: Overview of Visual Studio, Visual Studio Code, and VSTS/TFS extensions offered through the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: douge
 ms.author: elbatk
-ms.date: 04/28/2017
+ms.date: 03/24/2018
 ---
 
 #  Discover extensions in the Marketplace
 
 The Visual Studio Marketplace provides support for the following: 
 - Discover and install extensions for Visual Studio, **Visual Studio Team Services (VSTS)**, **Team Foundation Server (TFS)**, and Visual Studio Code
-- Purchase subscriptions for Visual Studio, HockeyApp, Xamarin University
-- Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
+- Purchase subscriptions for Visual Studio or Xamarin University
 
 <img alt="Marketplace" src="_img/overview/marketplace-vs-new.png" />
 
 >[!NOTE]
-> This documentation focuses on extensions, to find documentation on subscriptions, check out the [billing documentation](../billing/index.md).
+> This documentation focuses on discovering and installing extensions. Most extensions are available for free. For information on purchasing, see:
+> - [VSTS billing overview](../billing/overview.md)
+> - [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
+> - [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
+> - [How to buy Xamarin University](../billing/xamarin-univ.md)
 
 ## What are extensions
 
@@ -61,12 +64,6 @@ There are many free extensions available in the Marketplace, too numerous to lis
 - [Microsoft Teams integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)    
 
 Browse the [Marketplace](https://marketplace.visualstudio.com/) to find additional extensions you want to install. 
-
-## Billing for paid extensions
-<a name="azure-billing-info"></a>
-Along with free extensions, there are also paid extensions in the Marketplace.
-
-Check out our [billing documentation](../billing/index.md) to find out how to pay for extensions. 
 
 
 

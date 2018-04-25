@@ -1,11 +1,13 @@
 ---
-title: Requirements Overview Report (CMMI) | TFS
+title: Requirements Overview Report (CMMI) 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Lists all requirements, filtered by area and iteration and in order of importance.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

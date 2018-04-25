@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <li><p>MSBuild Arguments: Leave it set to the default:</p>
 <pre style="margin-bottom: 0px;"><code>/p:AppxBundlePlatforms="$(BuildPlatform)" /p:AppxPackageDir="$(Build.BinariesDirectory)\AppxPackages\\" /p:AppxBundle=Always
 </code></pre>

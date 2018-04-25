@@ -1,12 +1,13 @@
 ---
-title: Reporting Services Reports | TFS
-description: Answer questions about the actual state of the project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Reporting Services Reports
+titleSuffix: TFS
+description: Overview of the reports provided through SQL Server Reports for  Team Foundation Server
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

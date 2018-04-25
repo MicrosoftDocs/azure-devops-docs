@@ -2,11 +2,14 @@
 title: Add users and groups and control access in Release Management
 description: Add users and groups and control access in Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: AEB78F81-1F59-47DE-AED0-F38C724024FC
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Add users and groups, and control access to Release Management

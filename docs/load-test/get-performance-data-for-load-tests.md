@@ -1,18 +1,22 @@
 ---
 title: Get Application Insights performance data with load tests
 description: Get app performance data from Application Insights in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
-<a name="ApplicationInsights"></a>
 # Get app performance data with your load tests
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)]
+
+<a name="ApplicationInsights"></a>
 
 When you load test your app in the cloud using Visual Studio Team Services (VSTS), 
 you can compare app performance with virtual user load using 
@@ -77,6 +81,6 @@ is causing performance problems.
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

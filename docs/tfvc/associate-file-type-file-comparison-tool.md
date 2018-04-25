@@ -2,12 +2,16 @@
 title: Associate a file type with a file-comparison tool
 description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Associate a file type with a file-comparison tool
 
@@ -35,7 +39,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 	>**Tip:**  
 	>Specify `.*` if you want to associate all types of files with your tool.
 4.  In the **Operation** list, choose **Compare**.  
-5.  In the **Command** box, either type the path and name of your tool, or choose the ellipses (**…**) to locate and specify it. The result should resemble the following example:
+5.  In the **Command** box, either type the path and name of your tool, or choose the ellipses (**...**) to locate and specify it. The result should resemble the following example:
 
         C:\Program Files\OtherDiff\otherdiff.exe
 
@@ -70,5 +74,5 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 	>This capability is not related to version-control labels, which you apply to specific versions of items in version control, as described in [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
 7.  In the **Configure Tool** dialog box, choose **OK**.  
-8.  If you want to specify more types of files, repeat steps 4−9.  
+8.  If you want to specify more types of files, repeat steps 4-9.  
 9.  In the **Configure User Tools** dialog box, choose **OK**.  

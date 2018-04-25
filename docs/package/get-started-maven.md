@@ -1,25 +1,27 @@
 ---
 title: Get Started with Maven Package Management in VSTS and TFS
 description: Quickly start hosting Maven artifacts in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: jenp
-ms.author: rossav
+ms.author: elbatk
+author: elbatk
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2018'
 ---
 
 # Get started with Maven Package Management in VSTS and TFS
+
+**VSTS** | **TFS 2018**
 
 ## Before you start
 
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install it.
-
-[!INCLUDE [](_shared/availability-maven.md)]
 
 ### Prerequisites
 

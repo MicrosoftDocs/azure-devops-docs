@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create a deployment group
 
 Deployment groups in VSTS make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app.

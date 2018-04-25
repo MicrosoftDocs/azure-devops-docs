@@ -6,7 +6,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Manage your Java project with VSTS Agile tools
 
@@ -37,13 +39,13 @@ through the MyShuttle scenario.
 
     ![](../_img/agile/image2.png)
 
-    You’re now on the **Features** backlog.
+    You're now on the **Features** backlog.
 
     ![](../_img/agile/image3.png)
 
 1. In the Title box, enter **Intranet Site Updates** and press Enter.
 
-1. Let’s add another feature. In the Title box, enter **Internet Site
+1. Let's add another feature. In the Title box, enter **Internet Site
     Updates** and press Enter.
 
     You now have defined two features.
@@ -111,7 +113,7 @@ through the MyShuttle scenario.
 1. Double-click on the **Site Fit & Finish** Product Backlog Item (PBI)
     in the list to open up the dialog
 
-1. Change the **State** to **Committed**. You’ll notice that it’s
+1. Change the **State** to **Committed**. You'll notice that it's
     assigned to you automatically because the parent feature was
     assigned to you.
 
@@ -147,7 +149,7 @@ through the MyShuttle scenario.
     You can also see parent items (in the case Features).
 
 1. On the command bar above the backlog, click the Hide link to the
-    right of the Parents label to “show” the parent Features.
+    right of the Parents label to "show" the parent Features.
 
     ![](../_img/agile/image16.png)
 
@@ -186,7 +188,7 @@ through the MyShuttle scenario.
 
     You need to assign the **Add master navigation to menu page** Task to you.
 
-1. Move your mouse and hover over the card and you’ll get a combo-box
+1. Move your mouse and hover over the card and you'll get a combo-box
     that opens up.
 
     ![](../_img/agile/image24.png)
@@ -199,7 +201,7 @@ through the MyShuttle scenario.
 
     ![](../_img/agile/image25.png)
 
-    Now you want to show that you’ve started working.
+    Now you want to show that you've started working.
 
 1. Drag and drop the **Add Master Branding** work item to the **In
     progress** column.
@@ -221,10 +223,10 @@ through the MyShuttle scenario.
 
 1. Click **Save and Close** when done.
 
-    Now you’ll be able to see the Work Item ID easily when you look at
-    the Task board. You’ll use the IDs later when you commit code to
+    Now you'll be able to see the Work Item ID easily when you look at
+    the Task board. You'll use the IDs later when you commit code to
     your Git repo in the next exercise.
 
-This is a quick introduction to the Agile Planning tools and Work Items. You’ll work with them
+This is a quick introduction to the Agile Planning tools and Work Items. You'll work with them
 some more later. If you want to read more about the Agile Planning tools, Sprint Planning, and the Scrum
 template, read [Sprint planning with VSTS](https://docs.microsoft.com/en-us/vsts/work/scrum/sprint-planning).

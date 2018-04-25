@@ -1,17 +1,19 @@
 ---
-title: Code Churn Excel Report | TFS
-description: Understand how many lines of code the team added, deleted, or modified during the most recent four weeks - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Code Churn Excel Report  
+description: Understand how many lines of code the team added, deleted, or modified during the most recent four weeks - Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 753f0afd-3852-4724-ae3e-a1644f304e00
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # Code Churn Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 With the Code Churn report, you can analyze how source files are changing over time. This report shows how many lines of code the team added, deleted, or modified during the most recent four weeks.  
   

@@ -1,22 +1,24 @@
 ---
-title: Process template plug-ins index | VSTS & TFS
+title: Process template plug-ins index
+titleSuffix: VSTS & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 
 
 # Process template plug-ins: Index to XML element definitions
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema definition for process templates.  
   
-> [!IMPORTANT]  
+> [!NOTE]  
 >  The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax.  
   
 ##  Alphabetical index  
@@ -148,7 +150,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Work item queries|[Define a work item query](define-work-item-query-process-template.md)|**TeamFoundationServer, TeamProject, Wiql, WorkItemQuery**|  
 |Work item types|[All WITD elements](../all-witd-xml-elements-reference.md)|Top level elements only: **DESCRIPTION, FIELDS (Definition), FORM, GLOBALLISTS, WITD, WORKFLOW, WORKITEMTYPE**|  
   
-## Related notes
+## Related articles
 - [Support global teams](../localization-and-globalization-of-witd-child-elements.md)   
 - [All WITD elements](../all-witd-xml-elements-reference.md)   
 - [Customize your work tracking experience](../../customize-work.md) 

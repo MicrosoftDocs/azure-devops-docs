@@ -2,13 +2,13 @@
 title: Configure SharePoint integration 
 titleSuffix: TFS
 description: Configure TFS/SharePoint Integration for TFS 2017 and earlier versions
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid:
-ms.topic: get-started-article  
+ms.topic: conceptual 
 ms.manager: douge
 ms.reviewer: greggboe
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/16/2017
 ---
 
@@ -62,7 +62,7 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 	Also, the Team Foundation Server Extensions for SharePoint must be at the same version level as your TFS version. 
 
-0. If you’re using a supported **Enterprise edition of SharePoint Server**, [configure the enterprise application definition for TFS](../../tfs-server/install/sharepoint/config-enterprise-app-def.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json).
+0. If you're using a supported **Enterprise edition of SharePoint Server**, [configure the enterprise application definition for TFS](../../tfs-server/install/sharepoint/config-enterprise-app-def.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json).
 
 	**For the Enterprise Editions of SharePoint Server 2010**: From the TFS Management Console on SharePoint, [configure your SharePoint server to grant access to your TFS Server](../../tfs-server/admin/config-ent-sharepoint0710-dashboards.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json).
 

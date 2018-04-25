@@ -1,12 +1,15 @@
 ---
-ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 title: Manage a virtual machine in Azure DevTest Labs
 description: Create, manage, and delete VMs in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
@@ -240,7 +243,9 @@ release definition in Release Management.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

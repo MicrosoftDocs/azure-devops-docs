@@ -1,13 +1,15 @@
 ---
 title: URL-based load testing with VSTS
 description: Get app performance data when you load test with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Run URL-based load tests with VSTS
@@ -31,12 +33,12 @@ using Visual Studio Team Services (VSTS).
 
 1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
-1. Go to the **Load test** hub, open the **+ New** 
-   menu and choose **URL based test**.
+1. Go to the **Test** hub, open the **Load test** tab, and choose **URL based test**
+   from the **+ New** menu.
 
    ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
 
-1. Type a name for the load test, and enter the URL you want to test
+1. Type a name for the load test, then enter the URL you want to test
    in the center column and in the details pane on the right. For a simple
    load test, leave the **HTTP method** set to **GET**.
 

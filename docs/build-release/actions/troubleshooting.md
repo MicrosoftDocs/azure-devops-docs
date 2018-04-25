@@ -1,51 +1,56 @@
 ---
-title: Troubleshooting build
-description: Troubleshooting Team Foundation Build (TFBuild) in Team Foundation Server and VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Troubleshoot Builds and Releases
+description: Troubleshooting Team Foundation Build (TFBuild) and Release in Team Foundation Server and VSTS.
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
-ms.author: alewis
+ms.author: chrispat
 ms.reviewer: chrispat
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
-# Troubleshooting build
+
+# Troubleshoot Build and Release
 
 [!INCLUDE [temp](../_shared/version.md)]
 
 ## Run commands locally at the command prompt
-It is helpful to narrow whether a build failure is the result of a TFS/VSTS product issue (agent or tasks). Build failures may also result from external commands.
+It is helpful to narrow whether a build or release failure is the result of a TFS/VSTS product issue (agent or tasks). Build and release failures may also result from external commands.
 
-Check the build log for the exact command-line executed by the failing step. Attempting to run the command locally from the command line, may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the build machine and run the command as the service account.
+Check the logs for the exact command-line executed by the failing step. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
 For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) step)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
-Keep in mind, some differences are in effect when executing a command on a local machine and when a build is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 ## Get logs to diagnose problems
 
 
-### Build logs
+### Build and Release logs
 
-Start by looking at the logs in your completed build. If they don't provide enough detail, you can make them more verbose:
+Start by looking at the logs in your completed build or release. If they don't provide enough detail, you can make them more verbose:
 
 0. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
 
-0. Queue the build.
+0. Queue the build or release.
 
-0. In the explorer tab, view your completed build and click the build step to view its output.
+0. In the explorer tab, view your completed build or release and click the failing step to view its output.
 
 0. If you need a copy of all the logs, click **Download all logs as zip**.
 
-
 ### Diagnostic logs
 
-0. Log on to the agent machine.
+0. On the build summmary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
 
-0. Go to the `_diag` subfolder in the directory where the build agent is installed. For example: `c:\agent\_diag`
+0. Queue the build.
+
+0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per phase. If you would like to download everything you can also choose to **Download all logs as zip**.
+
+> Diagnostic logs are not yet available for releases.
 
 #### Worker diagnostic logs
 
@@ -70,6 +75,15 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
  - Shows when each job was run, and how it completed
 
 Both logs show how the agent capabilities were detected and set.
+
+#### Other logs
+
+Inside the diagnostic logs you will find environment.txt and capabilities.txt. 
+
+The environment.txt file has various information about the environment within which your build ran. This includes information like what Tasks are run, whether or not the firewall is enabled, Powershell version info, and some other items. We continually add to this data to make it more useful.
+
+The capabilities file provides a clean way to see all capabilities installed on the build machine
+that ran your build.
 
 ### HTTP trace logs
 
@@ -137,7 +151,7 @@ File or folder in use errors are often indicated by error messages such as:
 On Windows, tools like [Process Monitor](https://technet.microsoft.com/en-us/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/en-us/sysinternals/handle.aspx) can be used.
 
 ### Anti-virus exclusion
-Anti-virus software scanning your files can cause file or folder in use errors during a build. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.
+Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.
 
 ### MSBuild and /nodeReuse:false
 If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild process(es) will remain running after the build completes. The process(es) remain for some time in anticipation of a potential subsequent build.
@@ -197,7 +211,7 @@ The job has been abandoned because agent did not renew the lock. Ensure agent is
 
 This error may indicate the agent lost communication with the server for a span of several minutes. Check the following to rule out network or other interruptions on the agent machine:
 
-* Verify automatic updates are turned off. A machine reboot from an update will cause a build to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, the agent should first be marked disabled in the pool administration page and let any running build finish.
+* Verify automatic updates are turned off. A machine reboot from an update will cause a build or release to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, the agent should first be marked disabled in the pool administration page and let any running build finish.
 * Verify the sleep settings are turned off.
 * If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severly impact the health of the machine for multiple minutes.
 * If the agent is running on a virtual machine, the same operating-system-update recommendations and sleep-setting recommendations apply to the host machine. And also any other maintenance operations that several impact the host machine.
@@ -206,20 +220,20 @@ This error may indicate the agent lost communication with the server for a span 
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
-### Builds not starting
+### Builds or releases not starting
 
 #### TFS Job Agent not started
 This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
 #### Misconfigured notifcation URL (1.x agent version)
-This may be characterized by a message in the web console "Waiting for console output from an agent", and the build eventually times out.
+This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
 ## Team Foundation Version Control (TFVC)
 
 ### Get sources not downloading some files
-This may be characterized by a message in the build log "All files up to date" from the *tf get* command. Verify the built-in build service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build definition. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
+This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build definition. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
 ### Get sources through Team Foundation Proxy
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.

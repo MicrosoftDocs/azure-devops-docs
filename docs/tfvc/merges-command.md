@@ -2,12 +2,16 @@
 title: Merges Command
 description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Merges Command
 
@@ -82,7 +86,7 @@ The following example displays information about all merge operations performed 
         146         162                   Justin      10/31/2003
         147*        167                   Bill       11/02/2003
 
-    The asterisk ‘\*’ next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
+    The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 
 ## See Also
 

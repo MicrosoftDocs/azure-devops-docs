@@ -1,12 +1,14 @@
 ---
-title: Add custom work item type | VSTS    
-description: Customize a process by adding or modifying a work item type for Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add custom work item type
+titleSuffix: VSTS 
+description: Customize a process by adding or modifying a work item type for Visual Studio Team Services  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
-ms.author: kaelli
-ms.date: 11/07/2017 
+ms.author: kaelliauthor: KathrynEE
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
 # Customize a work item type (Inheritance process model)    
@@ -26,7 +28,7 @@ Each process you create inherits the WITs provided with the parent system proces
 
 You can add fields and modify the workflow and form for all inherited WITs that display on the Work Item Types page. If you don't want users to use a WIT, you can disable it. In addition, you can add custom WITs. 
 
->[!NOTE]  
+> [!NOTE]    
 >For a list of limits placed on the number of fields, work item types, backlog levels, and other objects you can customize, see [Work tracking object limits](../object-limits.md). 
 
 
@@ -54,7 +56,7 @@ To customize the web form, you must work from the admin context Process hub.
 
 You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 
 <a id="add-wit">  </a>
@@ -106,13 +108,13 @@ To disable a custom WIT, choose Disable from the WIT context menu.
 
 To re-enable the WIT, choose Enable from the WIT context menu. 
 
->[!NOTE]  
+> [!NOTE]    
 >Disabling a WIT will remove the work item type from the New drop down and add experiences. Creating a work item of that WIT will also be blocked via REST APIs.  
 >
 >No changes are made to existing work items of that type. You can update or delete them and they will continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
 
 
-## Related notes  
+## Related articles  
 
 As you customize a WIT, all team projects that reference the inherited process that you're customizing will automatically update to reflect the custom WITs you've added. To view your customizations, refresh your web browser.  
 
@@ -131,7 +133,7 @@ Additional topics of interest:
 <a id="destroy">  </a>
 ### Delete or destroy a custom WIT 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >Destroying a WIT will delete all work items and data associated with that WIT, including historical values. Once destroyed, you can't recover the data. 
 
 1. To completely remove a custom WIT and all work items based on that WIT, click the Destroy option from the WIT context menu.
@@ -142,11 +144,6 @@ Additional topics of interest:
 
 	<img src="_img/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
-
-
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
-
 
 <!---
 ### WIT extensibility

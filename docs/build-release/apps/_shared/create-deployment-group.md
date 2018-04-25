@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create a deployment group
 
 Deployment groups in VSTS make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app.
@@ -27,6 +31,6 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
-1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
+1. On the **Deployment groups** page of the **Build and Release** hub in VSTS, open the *myIIS* deployment group. On the **Targets** tab, verify that your VM is listed.
 
  ![Screenshot showing update to code](./_img/windows-deployment-group.png)

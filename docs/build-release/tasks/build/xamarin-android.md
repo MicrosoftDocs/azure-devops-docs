@@ -1,13 +1,17 @@
 ---
 title: Xamarin.Android build and release task
 description: Xamarin.Android build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Xamarin.Android
 
@@ -93,6 +97,33 @@ Select x86 or x64.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamarinAndroid@1
+  inputs:
+#   projectFile: **/*.csproj
+    target:
+    outputDirectory:
+    configuration:
+#   createAppPackage: true
+#   clean: false
+#   msbuildLocationOption: version # version (default), location
+#   msbuildVersionOption: 15.0 # latest, 15.0 (default), 14.0, 12.0, 4.0
+    msbuildFile:
+#   msbuildArchitectureOption: x86 # x86 (default), x64
+    msbuildArguments:
+#   jdkOption: JDKVersion # JDKVersion (default), Path
+#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
+    jdkDirectory:
+#   jdkArchitectureOption: x64 # x86, x64 (default)
+```
+
+::: moniker-end
 
 ## Example 
 
@@ -104,6 +135,8 @@ Select x86 or x64.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

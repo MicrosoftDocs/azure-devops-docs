@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### What other kinds of apps can I build?
 
 [Build your app](../apps/index.md)

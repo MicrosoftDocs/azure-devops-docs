@@ -1,13 +1,16 @@
 ---
-title: Specify the work item types to synchronize | TFS
-description: Specifiy the types of work items that you want to participate in synchronization.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Specify the work item types to synchronize 
+titleSuffix: TFS 
+description: Specifiy the types of work items that you want to participate in synchronization between Team Foundation Server & Project Server 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: fc034114-fce1-48ca-a4e9-df41081a4bbb
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Specify the work item types to synchronize
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -60,7 +63,7 @@ ms.date: 01/12/2017
     TfsAdmin ProjectServer /MapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
     ```  
   
-     Replace *tpcUrl* with the URL of the team project collection and *TeamProjectName* with the name of the team project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as “*User Story,Task*" or *“User Story",Task*. Do not include a space after the comma.  
+     Replace *tpcUrl* with the URL of the team project collection and *TeamProjectName* with the name of the team project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
   
      You can specify the optional `/skipUIChanges` flag to indicate that no modifications should be made to the **Project Server** tab for the work item forms of the types that you specify.  
   
@@ -98,7 +101,7 @@ ms.date: 01/12/2017
   
      You can verify whether the type has been removed by refreshing the team project in Team Explorer and then opening a work item of the type that you removed. The **Project Server** tab should be removed from the work item form.  
   
-## Related notes  
+## Related articles  
  [Define the work item types to synchronize](define-work-item-types-available-synchronization.md)   
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Manage mappings](manage-mappings-enterprise-project-team-project.md)   

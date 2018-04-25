@@ -7,15 +7,18 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: 'tfs-2013'
 ---
+
+
 
 # Configure Team Foundation Server using the standard configuration
 
-**TFS 2013***
+**TFS 2013**
 
 ![Standard configuration on single server](../_img/std-config-intro.png)
 
-You can configure Team Foundation Server to use the standard configuration. To complete this procedure, you must have a domain account. 
+You can configure Team Foundation Server to use the standard configuration. To complete this procedure, you must have a domain account. 
 
 For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
@@ -24,7 +27,7 @@ For more information about accounts, see [Accounts required for installation of 
 
 **Required Permissions**
 
-You must be a member of the **Administrators** security group on the server that is running TFS. 
+You must be a member of the **Administrators** security group on the server that is running TFS. 
 
 ### To configure Team Foundation Server by using the standard configuration
 
@@ -51,7 +54,7 @@ You must be a member of the **Administrators** security group on the server that
 
     The wizard validates your configuration.
 
-    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
+    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you'll be able to configure TFS in the next step.
 
 8.  Choose **Configure**.
 

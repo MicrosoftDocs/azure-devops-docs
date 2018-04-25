@@ -2,12 +2,16 @@
 title: Edit a feed
 description: Edit a feed in VSTS or Team Foundation Server
 ms.assetid: 83348be7-228b-43d1-8374-6046836ed0f5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 11/30/2017
+monikerRange: '>= tfs-2017'
 ---
+ 
 
 # Edit a feed
 

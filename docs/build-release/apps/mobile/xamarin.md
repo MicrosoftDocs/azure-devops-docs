@@ -1,14 +1,17 @@
 ---
 title: Build your Xamarin app
 description: Define a CI process that builds your Xamarin solution on Team Foundation Server and Visual VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 933A828E-CBB7-44C2-BAC0-1E1E9D78BFA0
 ms.manager: douge
 ms.author: alewis
-ms.date: 08/04/2016
-ms.topic: get-started-article
+author: andyjlewis
+ms.date: 04/18/2018
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Xamarin app
 
@@ -76,7 +79,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
@@ -113,7 +116,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition. This time, select the **Xamarin.iOS** template.
 
-1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS Preview**, or the private queue that includes your macOS agent.
+1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS**, or the private queue that includes your macOS agent.
 
 1. For the **Solution to build**, enter `HelloXamarinFormsWorld.sln`.
 

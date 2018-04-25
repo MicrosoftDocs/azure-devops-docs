@@ -1,16 +1,16 @@
 ---
 title: Upload Excel reports | TFS
 description: Add Excel reports to a SharePoint project portal 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: a606b12a-ac2e-4a02-a8b0-56f18c3dcc82
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/09/2017
 ---
 # Upload and refresh Excel reports in the team project portal
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 After you create a report in Excel that shows data for your team project, you can share that report with other team members. You can add the report to a shared folder or send it in e-mail, or you can upload the report to your team's *project portal*. To keep the report accurate, you might also want to run the report again on a particular schedule, such as every week or at each project milestone.  
   

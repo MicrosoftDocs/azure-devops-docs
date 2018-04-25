@@ -1,35 +1,38 @@
 ---
-title: Unlist or delete a NuGet package
-description: Unlist or delete a NuGet package from VSTS or Team Foundation Server to discourage or prevent its usage 
+title: Unlist, delete, or recover a NuGet package
+description: Unlist, delete, or recover a deleted NuGet package from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.assetid: 173070F7-CF0B-41DE-AD8B-1881E04E1457
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
 
-# Unlist or delete a NuGet package
+# Unlist, delete, or recover a NuGet package
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 There are two options available to remove a version of a NuGet package from a feed.
 
-1. **Unlist:** unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](https://docs.microsoft.com/en-us/nuget/policies/deleting-packages) for a full description of how unlist works).
-Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
-2. **Delete:** Deleting a version of a package makes it permanently unavailable for install or restore.
+1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](https://docs.microsoft.com/en-us/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
+2. **Delete:**  Deleting a version of a package makes it unavailable for install. After deleting, a package can be [restored from the _Recycle Bin_](#recover-a-deleted-nuget-package) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Deleting a package will cause others that depend on it to break.
 
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-## Unlisting or deleting a package in VSTS
+## Unlisting or deleting a NuGet package in VSTS
 
 You must be a **contributor** to unlist and an **owner** to delete.
-To unlist or delete a version of a package, choose the package from the **Packages** menu, and select the appropriate option from the menu under the ellipses. 
 
-![Unlist and delete buttons](_img/unlist-and-delete.png)
+Choose the package from the **Packages** hub in the **Build and Release** hub group and select the appropriate option from the menu:
 
-## Unlisting a package using NuGet.exe
+![Unlist or delete npm package Visual Studio Team Services](../_img/delete/unlist-delete-nuget-package.png)
+
+## Unlisting a NuGet package using NuGet.exe
 First, get the tools (make sure you're using NuGet 3.5 or later) and your feed URL:
 
 [!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
@@ -41,3 +44,7 @@ nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 ```
 
 Currently, NuGet.exe can only **unlist** packages; VSTS and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+
+## Recover a deleted NuGet package
+
+[!INCLUDE [](../_shared/recover-deleted-package.md)]

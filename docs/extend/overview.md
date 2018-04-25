@@ -1,19 +1,20 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
 description: Overview of creating extensions for Visual Studio Team Services (VSTS)
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/26/2017
-ms.topic: get-started-article
 ---
 
 # What are extensions?
 
 >[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md).
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with VSTS. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.

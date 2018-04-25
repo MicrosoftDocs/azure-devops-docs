@@ -1,19 +1,20 @@
 ---
-title: Sprint burndown | VSTS & TFS  
-description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Sprint burndown
+titleSuffix: VSTS & TFS
+description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 08/02/2017
 ---
 
 
 # Sprint burndown 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). 
 
@@ -26,7 +27,7 @@ Use this topic to learn
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
 
->[!NOTE]  
+> [!NOTE]    
 >The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
@@ -55,7 +56,7 @@ Click the chart to display it in a larger view.
 
 ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 
->[!NOTE]  
+> [!NOTE]    
 >You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
 
 
@@ -98,7 +99,7 @@ In addition to the sprint burndown chart, teams can review the velocity at which
 You can use your team [velocity](../../report/dashboards/velocity-chart-data-store.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
 
 
-##Related notes
+## Related articles
 
 You can learn more about defining, planning, and executing your sprints from these topics:  
 *	[Schedule sprints](define-sprints.md)  

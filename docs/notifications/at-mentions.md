@@ -1,14 +1,17 @@
 ---
-title: "Use @mentions to further discussion in VSTS & TFS"
+title: "Use @mentions to further discussion"
+titleSuffix: VSTS & TFS 
 description: "Alert team members using the @mention control in discussions and pull requests" 
-ms.prod: vs-devops-alm
-ms.technology: collaborate
+ms.prod: devops
+ms.technology: devops-collab
 ms.assetid: 
 toc: show
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
-ms.date: 09/01/2017
+author: elbatk
+ms.topic: conceptual
+ms.date: 03/01/2018
+monikerRange: '>= tfs-2015'
 ---
 
 
@@ -16,18 +19,45 @@ ms.date: 09/01/2017
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
 
-The **@mention** control allows you to quickly pull someone into a discussion.  You can use this control within the Discussion section of a work item form, or a pull request. 
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+> [!NOTE]  
+> The **@mention** control is available from TFS 2015.2 and later versions.    
+
+::: moniker-end
+
+
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
+The **@mention** control allows you to quickly pull someone into a discussion. You can use this control within the Discussion section of a work item form, or a pull request. 
+
+::: moniker-end
 
 <a id="mention-person-id">  </a>
 
->[!NOTE]    
-><b>Feature availability: </b>The **@mention**  control is currently supported from VSTS or the web portal for TFS 2015.2 and later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+In order for team members to receive notifications, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md). 
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 When leaving a code comment in a pull request, you can type **@** to trigger the **@mention** identity picker. From the identity selector, you'll see a list of those people that you have you've recently mentioned. You can choose one of those names or type in the name of the person you are looking for to perform a directory search.  
 
 To filter the list, enter the user name or alias until you've found a match.
 
 <img src="_img/at-mention-pr-type-name.png" alt="Web portal, Pull Request, Type a user name or email alias to locate a match" style="border: 1px solid #CCCCCC;" /> 
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2018"
+You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 To **@mention** a user you've never selected previously, just continue typing to perform your search against the full directory.  
 
@@ -45,7 +75,9 @@ When viewing their own mentioned names in conversations, users will notice that 
 
 You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../work/work-items/work-item-form-controls.md#discussion). 
 
-## Related notes
+## Related articles
 
 - [Work item form controls](../work/work-items/work-item-form-controls.md)  
 - [Pull requests](../git/tutorial/pullrequest.md)
+
+::: moniker-end

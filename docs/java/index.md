@@ -8,7 +8,9 @@ ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
 layout: LandingPage
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Working with Visual Studio Team Services (VSTS) and Java
 
@@ -63,3 +65,6 @@ Learn the basics of CI/CD for your Java app using VSTS and a variety of tools.
 ## Resources
 
  - [VSTS CI/CD documentation](/vsts/build-release/index)
+ - [Get the IntelliJ plug-in](download-intellij-plug-in.md)
+ - [Get the Eclipse plug-in](download-eclipse-plug-in.md)
+ - [Get the Android Studio plug-in](download-android-studio-plug-in.md)

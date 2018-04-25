@@ -1,17 +1,20 @@
 ---
-title: Enable and use Analytics with Velocity Widget
+title: Add an Analytics widget to a dashboard
 titleSuffix: VSTS
-description: Walkthrough on mechanics of spinning up and using AX from E2E.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Quickstart guide to adding an Analytics widget to a dashboard for Visual Studio Team Services 
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+ms.topic: quickstart
 ms.date: 11/13/2017
 ---
 
 # Add an Analytics widget to a dashboard
+
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
  
 The [Analytics Service](what-is-analytics.md) is the reporting platform for Visual Studio Team Services (VSTS). 
 Using Analytics, you and your team can gain new insights into the health and status of your work.

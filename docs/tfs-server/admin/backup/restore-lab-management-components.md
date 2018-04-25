@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Restore Lab Management components for TFS
 
@@ -23,7 +26,7 @@ By following the procedures in this topic, you can restore one or more component
 
 4.  [Restore the Hyper-V hosts](#restore-hyper-v-hosts)
 
-If you follow the recommended order, Team Foundation Server will recognize all virtual machines, templates, hosts and other objects in SCVMM. However, Team Foundation Server will not recognize any objects that were deleted from SCVMM after it was backed up but before Team Foundation Server was backed up. You can remove any such objects from Microsoft Test Manager, as described later in this topic.
+If you follow the recommended order, Team Foundation Server will recognize all virtual machines, templates, hosts and other objects in SCVMM. However, Team Foundation Server will not recognize any objects that were deleted from SCVMM after it was backed up but before Team Foundation Server was backed up. You can remove any such objects from Microsoft Test Manager, as described later in this topic.
 
 Before you can complete these procedures, the following conditions must be true:
 
@@ -80,7 +83,7 @@ If Team Foundation Server has failed, you must restore both the application-tier
 
 3.  Perform the following steps to make sure that Team Foundation Server is running under a user account that is a member of the Administrators group on all Hyper-V hosts.
 
-    1.  Open the Team Foundation Administration Console. 
+    1.  Open the Team Foundation Administration Console. 
 
     2.  On the **Lab Management** tab, click **Configure Host Groups**, and then click **Verify**.
 
@@ -123,11 +126,11 @@ If a host that had virtual environments crashed, they will be in a **Failed** st
 
     For more information, see the following page on the Microsoft website: [Backing Up and Restoring the SCVMM Database](http://go.microsoft.com/fwlink/?linkid=150302).
 
-    If the virtual machines are running again on the host, no additional action is required. Lab Management will update the new status of all running virtual machines to the correct state. If you cannot restore the virtual machines and this host is new, the environments will appear as **Failed** and the virtual machines as **Deleted** in Microsoft Test Manager or in Microsoft Environment Viewer.
+    If the virtual machines are running again on the host, no additional action is required. Lab Management will update the new status of all running virtual machines to the correct state. If you cannot restore the virtual machines and this host is new, the environments will appear as **Failed** and the virtual machines as **Deleted** in Microsoft Test Manager or in Microsoft Environment Viewer.
 
 2.  Refresh Microsoft Test Manager, manually delete the environments that ran on this host, and then re-create them.
 
-    If you must determine the environments that ran on this host, SCVMM provides a list of which virtual machines ran on which host.
+    If you must determine the environments that ran on this host, SCVMM provides a list of which virtual machines ran on which host.
 
 ## See Also
 

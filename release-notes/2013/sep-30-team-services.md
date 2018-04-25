@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Sep 30
 description: VSTS release notes for September 30 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 4f79eafa-0844-4cb4-acd0-18332d982205
 ms.date: 06/01/2016

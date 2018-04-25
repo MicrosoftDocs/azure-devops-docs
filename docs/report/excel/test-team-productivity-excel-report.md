@@ -1,15 +1,19 @@
 ---
-title: Test Team Productivity Excel Report | TFS
-description: Use the report to help track the overall activity of the team and individual team members in testing the product and finding and reporting bugs.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Test Team Productivity Excel Report 
+description: Track the overall activity of the team and individual team members in testing the product and finding and reporting bugs.
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: cd899058-1200-4b1f-8fb2-4cecec8b0c05
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Test Team Productivity Excel Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Test Team Productivity report to help track the overall activity of the team and individual team members in testing the product and finding and reporting bugs. The Test Team Productivity report provides four reports that show test and bug activity:  
   

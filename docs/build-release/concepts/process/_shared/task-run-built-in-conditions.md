@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 * Only when all previous tasks have succeeded
 
 * Even if a previous task has failed, unless the build or release was canceled

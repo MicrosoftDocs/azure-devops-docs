@@ -1,22 +1,24 @@
 ---
 title: Add reports via a process template 
 titleSuffix: TFS
-description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
-ms.date: 10/11/2017
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018' 
+ms.date: 04/10/2018
 ---
 
 
 
 # Add reports to the process template
 
-<b>TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
-When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and team project collection where you will create a team project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS doesn't support SQL Server reports.) 
+When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and team project collection where you will create a team project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS uses the [Analytics Service](../../../../report/analytics/what-is-analytics.md) to provide in-depth reporting.) 
   
 > [!IMPORTANT]  
 > When you create a team project from the web portal, the ReportsTasks.xml  
@@ -82,9 +84,9 @@ The first task is to create the reporting site. The reporting site will have a l
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <taskXml>  
-   <ReportingServices>  
+      <ReportingServices>  
         <site></site>  
-   </ReportingServices>  
+      </ReportingServices>  
 </taskXml>   
 ```  
   
@@ -97,16 +99,16 @@ The following example creates four top-level folders and two sub-folders on the 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <taskXml>  
-   <ReportingServices>  
-      <folders>  
-         <folder path="Bugs" />  
+      <ReportingServices>  
+      <folders>  
+         <folder path="Bugs" />  
           <folder path="Builds" />  
           <folder path="Project Management" />  
           <folder path="Project Management/Visual Studio" />  
           <folder path="Project Management/Visual Studio ALM" />  
           <folder path="Tests" />  
-      </folders>  
-   </ReportingServices>  
+      </folders>  
+      </ReportingServices>  
 </taskXml>  
 ```  
   
@@ -122,20 +124,20 @@ The following example specifies that the Remaining Work.rdl file will be uploade
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <taskXml>  
-   <ReportingServices>  
-     <reports>  
-        <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
-       <parameters>  
-          <parameter name="ExplicitProject" value="" />  
-       </parameters>  
-       <datasources>  
-          <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />  
-          <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />  
-       </datasources>  
-    </report>  
- . . .   
-     </reports>  
-   </ReportingServices>  
+      <ReportingServices>  
+       <reports>  
+         <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
+       <parameters>  
+          <parameter name="ExplicitProject" value="" />  
+       </parameters>  
+       <datasources>  
+          <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" />  
+          <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" />  
+       </datasources>  
+       </report>  
+ . . .   
+       </reports>  
+      </ReportingServices>  
 </taskXml>  
 ```  
   
@@ -148,21 +150,21 @@ The following syntax shows the structure of the **ReportingServices** element an
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <ReportingServices>  
-   <folders>  
-      <folder />  
- . . .   
-   </folders>  
-   <reports>  
-      <report>  
-         <parameters>  
-            <parameter />  
-         </parameters>  
-         <datasources>  
-            <reference />  
-         </datasources>  
-      </report>  
- . . .   
-   </reports>  
+      <folders>  
+      <folder />  
+ . . .   
+      </folders>  
+      <reports>  
+      <report>  
+         <parameters>  
+               <parameter />  
+         </parameters>  
+         <datasources>  
+               <reference />  
+         </datasources>  
+      </report>  
+ . . .   
+      </reports>  
 </ReportingServices>   
 ```  
 
@@ -179,7 +181,7 @@ The following table describes the elements that you use to specify a report to u
 <td>**datasources**</td>
 <td>Required child element of **report**. Contains a collection of **reference** elements that each specify a data source that the report uses.
 <pre><code>&lt;datasources&gt;
-&nbsp;&nbsp;&nbsp;&lt;reference /&gt;
+      &lt;reference /&gt;
 &lt;/datasources&gt;
 </code></pre>
 </td>
@@ -197,7 +199,7 @@ The following table describes the elements that you use to specify a report to u
 <td >**folders**</td>
 <td>Optional child element of **ReportingServices**. Contains a collection of **folder** elements that each specify the name of a folder to create.
 <pre><code>&lt;folders&gt;
-&nbsp;&nbsp;&nbsp;&lt;folder path="FolderName" /&gt;
+      &lt;folder path="FolderName" /&gt;
 &lt;/folders&gt;
 </code></pre>
 </td>
@@ -217,7 +219,7 @@ The following table describes the elements that you use to specify a report to u
 <td >**parameters**</td>
 <td>Required child element of **report**. Defines a collection of **parameter** elements for a report.
 <pre><code>&lt;parameters&gt;
-&nbsp;&nbsp;&nbsp;&lt;parameter /&gt;
+      &lt;parameter /&gt;
 &lt;/parameters&gt;
 </code></pre>
 </td>
@@ -226,7 +228,7 @@ The following table describes the elements that you use to specify a report to u
 <td >**properties**</td>
 <td>Optional child element of **report**. Provides the container element for **property**.
 <pre><code>&lt;properties&gt;
-&nbsp;&nbsp;&nbsp;&lt;property /&gt;
+      &lt;property /&gt;
 &lt;/properties&gt;
 </code></pre>
 
@@ -263,9 +265,9 @@ For more information about the names of reporting data sources, see [Locate repo
 <td>Required child element of **reports**. Specifies the name of the report, the file that contains the .rdl definition, and folder to which the report is uploaded. 
 <pre><code>&lt;report name="ReportName" filename="ReportFilePathName"  folder="FolderName" 
 cacheExpiration="CacheDuration"&gt;
-&nbsp;&nbsp;&nbsp;&lt;parameters&gt; . . . &lt;/parameters&gt;
-&nbsp;&nbsp;&nbsp;&lt;datasources&gt; . . . &lt;/datasources&gt;
-&nbsp;&nbsp;&nbsp;&lt;properties&gt; . . . &lt;/properties&gt;
+      &lt;parameters&gt; . . . &lt;/parameters&gt;
+      &lt;datasources&gt; . . . &lt;/datasources&gt;
+      &lt;properties&gt; . . . &lt;/properties&gt;
 &lt;/report&gt;
 </code></pre>
 
@@ -282,7 +284,7 @@ Where each attribute has the following definition:
 <td >**reports**</td>
 <td>Required child element of **ReportingServices**. Contains a collection of **report** elements that each specify the name of a report file to upload.
 <pre><code>&lt;reports&gt;
-&nbsp;&nbsp;&nbsp;&lt;report /&gt;
+      &lt;report /&gt;
 &lt;/reports&gt;
 </code></pre>
 </td>
@@ -292,9 +294,9 @@ Where each attribute has the following definition:
 <td >**ReportingServices**</td>
 <td>Required child element of the **taskXml** element for the Reporting plug-in. Describes the tasks that are required to define the reports and folders for SQL Server Reporting Services.
 <pre><code>&lt;ReportingServices&gt;
-&nbsp;&nbsp;&nbsp;&lt;folders&gt; . . . &lt;/folders&gt;
-&nbsp;&nbsp;&nbsp;&lt;reports&gt; . . . &lt;/reports&gt;
-&nbsp;&nbsp;&nbsp;&lt;properties&gt; . . . &lt;/properties&gt;
+      &lt;folders&gt; . . . &lt;/folders&gt;
+      &lt;reports&gt; . . . &lt;/reports&gt;
+      &lt;properties&gt; . . . &lt;/properties&gt;
 &lt;/ReportingServices&gt;
 </code></pre>
 </td>
@@ -304,7 +306,7 @@ Where each attribute has the following definition:
 <td >**site**</td>
 <td>Required element for the Reporting plug-in. Specifies that a reporting site for the team project will be created.
 <pre><code>&lt;site&gt;
-&nbsp;&nbsp;&nbsp;. . . 
+      . . . 
 &lt;/site&gt;
 </code></pre>
 </td>
@@ -314,6 +316,6 @@ Where each attribute has the following definition:
 </table>
 
  
-## Related notes
+## Related articles
 - [Customize a process template](customize-process.md)   
 - [Process template and plug-in files](overview-process-template-files.md)

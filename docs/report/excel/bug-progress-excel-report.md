@@ -1,17 +1,19 @@
 ---
-title: Bug Progress Excel Report | TFS
-description: Tracks the team's progress toward resolving Bugs - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Bug Progress Excel Report  
+description: Tracks the team's progress toward resolving Bugs - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 471fb90b-9815-4d26-aa01-7ee293682717
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
 
 # Bug Progress Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 You can use the Bug Progress report in Office Excel to track the team's progress toward resolving Bugs. This report shows the number of Bugs in each state over time. For information about how to access this report, see [Excel reports](excel-reports.md).  

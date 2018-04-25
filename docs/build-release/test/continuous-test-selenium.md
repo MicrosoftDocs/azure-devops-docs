@@ -1,24 +1,30 @@
 ---
-title: Selenium testing in VSTS
-description: UI Testing with Selenium in a continuous integration pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Selenium testing with continuous integration in VSTS
+description: UI Testing with Selenium in a continuous deployment pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-# Get started with Selenium testing in a CI pipeline
+# Get started with Selenium testing in a CD pipeline
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-Performing user interface testing as part of the
-build process is a great way of detecting
+Performing user interface (UI) testing as part of the
+release process is a great way of detecting
 unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
-in a continuous integration build.
+during a continuous deployment release.
+
+> Typically you will run unit tests in your build workflow,
+and functional (UI) tests in your release workflow after your
+app is deployed (usually to a QA environment).
 
 For more information about Selenium browser automation, see:
 
@@ -26,7 +32,7 @@ For more information about Selenium browser automation, see:
 * [Selenium documentation](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
 
 <a name="create-project"></a>
-## Create the test project
+## Create your test project
 
 As there is no template for Selenium testing, the
 easiest way to get started is to use the Unit Test
@@ -38,65 +44,101 @@ from Visual Studio Test Explorer.
    then choose **Test** and select **Unit Test Project**. Alternatively,
    open the shortcut menu for the solution and choose
    **Add** then **New Project** and then
-   **Unit Test Project**. 
+   **Unit Test Project**. 
 
-   For more details, see: [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
-
-1. After the project is created, you must add the Selenium and
+1. After the project is created, add the Selenium and
    browser driver references used by the browser to
    execute the tests. Open the shortcut menu for the
    Unit Test project and choose **Manage NuGet
-   Packages**. Add the following packages to your project:
+   Packages**. Add the following packages to your project:
 
    * Selenium.WebDriver
-   * Selenium.WebDriver.ChromeDriver
-   * Selenium.WebDriver.IEDriver
    * Selenium.Firefox.WebDriver
-   * Selenium.WebDriver.PhantomJS.Xplatform<p />
+   * Selenium.WebDriver.ChromeDriver
+   * Selenium.WebDriver.IEDriver<p />
 
    ![Adding the browser driver packages to your solution](_img/continuous-test-selenium/continuous-test-selenium-02.png)
 
-1. The Unit Test project creates a default class
-   named **UnitTest1.cs**. To author a Selenium Test,
-   replace the contents of the file with the following
-   code. You'll need to insert your own website URL in
-   the **baseURL** variable, and change the **driver**
-   assignment if you are not using the Firefox browser.
+1. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
+   that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
+   with the [Selenium code](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
+   required to test your web app or website. Change the **browser** assignment in the **SetupTest**
+   function to the browser you want to use for the test.
 
    ```csharp
-   namespace Partsunlimited.UITests
+   using System;
+   using System.Text;
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using OpenQA.Selenium;			
+   using OpenQA.Selenium.Firefox;	
+   using OpenQA.Selenium.Chrome;	
+   using OpenQA.Selenium.IE;
+
+   namespace SeleniumBingTests
    {
-     using Microsoft.VisualStudio.TestTools.UnitTesting;
-     using OpenQA.Selenium;
-     using OpenQA.Selenium.Chrome;
-     using OpenQA.Selenium.Firefox;
-     using OpenQA.Selenium.IE;
-     using OpenQA.Selenium.Remote;
-     using OpenQA.Selenium.PhantomJS;
-     using System;
-
+     /// <summary>
+     /// Summary description for MySeleniumTests
+     /// </summary>
      [TestClass]
-     public class ChucksClass1
+     public class MySeleniumTests
      {
-       private string baseURL = "http://your-website.azurewebsites.net/";
-       private RemoteWebDriver driver;
-       private string browser;
-       public TestContext TestContext { get; set; }
-
-       [TestMethod]
-       [TestCategory("Selenium")]
-       [Priority(1)]
-       [Owner("FireFox")]
-
-       public void TireSearch_Any()
+       private TestContext testContextInstance;
+       private IWebDriver driver;
+       private string appURL;
+ 
+       public MySeleniumTests()
        {
-         driver = new FirefoxDriver();
-         driver.Manage().Window.Maximize();
-         driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
-         driver.Navigate().GoToUrl(this.baseURL);
-         driver.FindElementById("search - box").Clear();
-         driver.FindElementById("search - box").SendKeys("tire");
-         //do other Selenium things here!
+       }
+ 
+       [TestMethod]
+       [TestCategory("Chrome")]
+       public void TheBingSearchTest()
+       {
+         driver.Navigate().GoToUrl(appURL + "/");
+         driver.FindElement(By.Id("sb_form_q")).SendKeys("VSTS");
+         driver.FindElement(By.Id("sb_form_go")).Click();
+         driver.FindElement(By.XPath("//ol[@id='b_results']/li/h2/a/strong[3]")).Click();
+         Assert.IsTrue(driver.Title.Contains("VSTS"), "Verified title of the page");
+       }
+ 
+       /// <summary>
+       ///Gets or sets the test context which provides
+       ///information about and functionality for the current test run.
+       ///</summary>
+       public TestContext TestContext
+       {
+         get
+         {
+           return testContextInstance;
+         }
+         set
+         {
+           testContextInstance = value;
+         }
+       }
+ 
+       [TestInitialize()]
+       public void SetupTest()
+       {
+         appURL = "http://www.bing.com/";
+ 
+         string browser = "Chrome";
+         switch(browser)
+         {
+           case "Chrome":
+             driver = new ChromeDriver();
+             break;
+           case "Firefox":
+             driver = new FirefoxDriver();
+             break;
+           case "IE":
+             driver = new InternetExplorerDriver();
+             break;
+           default:
+             driver = new ChromeDriver();
+             break;
+         }
+         
        }
 
        [TestCleanup()]
@@ -104,158 +146,112 @@ from Visual Studio Test Explorer.
        {
          driver.Quit();
        }
-
-       [TestInitialize()]
-       public void MyTestInitialize()
-       {
-       }
      }
    }
    ```
    
-   ![Replacing the code in UnitTest1.cs](_img/continuous-test-selenium/continuous-test-selenium-03.png)
+1. Run the Selenium test locally using Test Explorer and check that it works.
 
-1. Run the Selenium test locally using Test Explorer.
+## Define your CI build process
 
-   ![Running the tests in Visual Studio Test Explorer](_img/continuous-test-selenium/continuous-test-selenium-04.png)
+You'll need a continuous integration (CI) build process that builds your Selenium tests.
+For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md). 
+
+## Create your web app
+
+You'll need a web app to test. You can use an existing app, or deploy one in your CD release process.
+The example code above runs tests against Bing.com. For details of how to set up your own release process
+to deploy a web app, see [Build and deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md).
+
+## Decide how you will deploy and test your app
+
+You can deploy and test your app using either the Hosted agent in Azure, or a private agent that you install on the target servers.
+
+* When using the **Hosted agent**, you should use the Selenium web drivers that are
+  pre-installed on the hosted agents because they are compatible with the browser versions installed on the hosted agent images. 
+  The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
+  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
+
+  ```csharp
+  driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
+  ```
+  <p />
+  
+* When using a **private agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
+  See [Build and Release Agents](../concepts/agents/agents.md#account). 
 
 <a name="include-test"></a>
-## Include the test in a CI build
+## Include the test in a CD release
 
-To include the Selenium test as part of a build,
-the source code must be in version control.
+::: moniker range="<= tfs-2017"
 
-![Checking the code into VSTS](_img/continuous-test-selenium/continuous-test-selenium-05.png)
+**NOTE:** This example uses the **Visual Studio Test Platform Installer** task and the latest
+version of the **Visual Studio Test** task. These tasks are not available in TFS 2015 or TFS 2017.
+To run Selenium tests in these versions of TFS, you must use the 
+[Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md)
+and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead. 
 
-1. In your Visual Studio Team Services (VSTS) account where
-   you checked in the test code, open the **Build &amp; Release** hub and select the **Builds** tab.
+::: moniker-end
 
-1. Create a new build definition using the **.NET Desktop**
-   build template.
+1. If you don't have an existing release definition that deploys your web app:
 
-1. In the new build definition, select the **Default** agent queue in which you have installed an agent.
-   If you have not installed an agent in the **Default** queue, choose the
-   **Manage** link and do that now. For more information, see
-   [Deploy a Windows build agent](../actions/agents/v2-windows.md).
-   You might decide to [create an Azure VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
-   to install your agent, or use a [deployment group](../concepts/definitions/release/deployment-groups/index.md)
-   and [install an agent there](../concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md). 
+   * Open the **Releases** page in the **Build &amp; Release** hub and choose the **+** icon, then choose
+     **Create release definition**.
+     
+     ![Creating a new release definition](_img/continuous-test-selenium/continuous-test-selenium-06.png)
+ 
+   * Select the **Azure App Service Deployment** template and choose **Apply**.
+   
+   * In the **Artifacts** section of the **Pipeline** tab, choose **+ Add**. Select your build artifacts
+     and choose **Add**.
+ 
+     ![Selecting the artifacts](_img/continuous-test-selenium/continuous-test-selenium-07.png)
 
-   >Selenium tests will generally be run interactively, 
-   which would fail on the **Hosted** build controller.
+   * Choose the **Continuous deployment trigger** icon in the **Artifacts** section of the **Pipeline** tab.
+     In the Continuous deployment trigger pane, enable the trigger so that a new release is created from every build.   
 
-1. In the **Get sources** step, ensure that the repository and branch where you checked in your 
-     code is selected.
+     ![Configuring continuous deployment](_img/continuous-test-selenium/continuous-test-selenium-08.png)
 
-1. Select the **Triggers** tab and turn on the **Continuous integration...** trigger so that
-     your solution builds after each check-in using continuous integration.
+   * Open the **Tasks** tab, select the **Environment 1** section, and enter your account
+     information and the name of the web app where you want to deploy the app and tests.
+     These settings are applied to the **Deploy Azure App Service** task.
+
+1. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
+
+   * In the **Tasks** tab of the release definition, choose the **+** icon in the **Run on agent** section.
+     Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
+     at the default values.<p />
+
+     ![Adding a Visual Studio Test Platform Installer task](_img/continuous-test-selenium/continuous-test-selenium-09.png)
   
-1. Delete the **Test Assemblies** (Visual Studio Test) task step from the build definition, then
-   add a **Visual Studio Test Agent Deployment**, **Windows Machine File Copy**, and **Run Functional Tests**
-   task from the **Test** and **Deploy** tabs of the task catalog. Drag and drop then in
-   that order immediately after the **Publish symbols path** task step.
+     You can find a task more easily by using the search textbox.
 
-   ![Tasks in the build definition](_img/continuous-test-selenium/continuous-test-selenium-06.png)
+1. In the **Tasks** tab of the release definition, choose the **+** icon in the **Run on agent** section.
+   Select the **Visual Studio Test** task and choose **Add**.
 
-1. Configure the tasks as shown here:
+1. If you added the **Visual Studio Test Platform Installer** task to your definition, change the
+   **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
+   task to **Installed by Tools Installer**. 
+ 
+   ![Setting the teat platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   ![Nuget Installer](../tasks/package/_img/nuget-installer.png) [Package: Nuget Installer](../tasks/package/nuget-installer.md) - Install and update NuGet package dependencies.
-   
-   - **Path to solution or packages.config**: Select your app solution (.sln) file.
-   
-   - **Installation type**: `Restore`<p />
-   
-   ![Visual Studio Build](../tasks/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../tasks/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
-   
-   - **Solution**:  Select your app solution (.sln) file.
-   
-   - **Platform**: `$(BuildPlatform)`
-   
-   - **Configuration**: `$(BuildConfiguration)`
-   
-   - **Visual Studio Version**: Select the version used to create your app.<p />
-   
-   ![Index Sources &amp; Publish Symbols](../tasks/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../tasks/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
-   
-   - **Search pattern**: `**\bin\**\*.pdb`<p />
-   
-   ![Visual Studio Test Agent Deployment](../tasks/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
-   
-   - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
-   
-   - **Admin Login**: Username for target server or a variable containing it.
-   
-   - **Admin Password**: Password for target server or a variable containing it.
-   
-   - **Protocol**: `HTTP`
-   
-   - **Select Machines By**: `Machine Names`
-   
-   - **Agent Configuration - Username**: Agent username or a variable containing it.
-   
-   - **Agent Configuration - Password**: Agent password or a variable containing it.
-   
-   - **Agent Configuration - Interactive Process**: Checked<p />
-   
-   ![Windows Machine File Copy](../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../tasks/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
-   
-   - **Source**: `$(Build.Repository.LocalPath)`
-   
-   - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
-   
-   - **Admin Login**: Username for target server or a variable containing it.
-   
-   - **Password**: Password for target server or a variable containing it.
-   
-   - **Destination Folder**: `C:\Deploy` or another folder on the target server.<p />
-   
-   ![Run Functional Tests](../tasks/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../tasks/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
-   
-   - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
-   
-   - **Test Drop Location**: `C:\Deploy` or the folder where you copied the files if different.
-   
-   - **Execution Options - Test Selection**: `Test Assembly`
-   
-   - **Execution Options - Test Assembly**: `**\*Test*.dll`<p />
-   
-   ![Copy Files](../tasks/utility/_img/copy-files.png) [Test: Copy Files](../tasks/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
-   
-   - **Source Folder**: `$(build.sourcesdirectory)`
-   
-   - **Contents**: `**\bin\$(BuildConfiguration)\**`
-   
-   - **Target Folder**: `$(build.artifactstagingdirectory)`<p />
-   
-   ![Publish Build Artifacts](../tasks/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
-   
-   - **Path to Publish**: Select your Azure subscription.
-   
-   - **Artifact Name**: `drop`
-   
-   - **Artifact Type**: `Server`<p />
+   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
-   >It's generally advisable to use custom variables for parameter values, especially
-   where the same value is used in the parameters of more than one task. You can also 
-   secure and hide values by using custom variables. See [Build Variables](../concepts/definitions/build/variables.md). 
+1. Save the release definition and start a new release. You can do this by queuing a new CI build, or by 
+   choosing **Create release** from the **Release** drop-down list in the release definition.
 
-1. Save the build definition and queue a new build.
+   ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
 
 <a name="view-results"></a>
 ## View the test results
 
-1. To view the test results from a build, open
-   the build summary from the **Builds** tab.
+1. To view the test results, open the release summary from the **Releases** tab.
 
-   ![Selecting a build result](_img/continuous-test-selenium/continuous-test-selenium-09.png)
+   ![Selecting a release summary](_img/continuous-test-selenium/continuous-test-selenium-19.png)
 
-   The build summary includes a snapshot of the test
-   results. There is also a **Tests** results page that
-   highlights the build-on-build changes, including
-   errors, stack traces, and the ability to easily
-   create a bug that contains this information.
-
-   ![The build summary and test results](_img/continuous-test-selenium/continuous-test-selenium-10.png)
+1. In the release summary page choose the **Tests** link to show a page
+   that highlights the changes including errors, stack traces, and the ability
+   to easily create a bug that contains this information.
 
 ## Next steps
 

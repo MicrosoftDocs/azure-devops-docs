@@ -2,18 +2,22 @@
 title: Develop code and manage pending changes
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Develop code and manage pending changes
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you’ve changed.
+Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
 ## Work in Solution Explorer
 
@@ -25,11 +29,11 @@ After you open your solution, open the solution explorer (Keyboard: Ctrl + Alt +
 ![Solution Explorer with Test and Class projects](_img/develop-code-manage-pending-changes/IC612257.png)  
 When you open and modify a file from the solution explorer, the file is automatically checked out for you. Icons appear to indicate which files you have not changed ![TFSC Checked-In Status Icon](_img/develop-code-manage-pending-changes/IC97411.gif), those you have checked out ![TFSC Checked-Out Status Icon](_img/develop-code-manage-pending-changes/IC51402.gif), and those you have added to the solution ![TFSC Pending Addition Status Icon](_img/develop-code-manage-pending-changes/IC106108.gif).
 
-If you’re working in a solution that contains a lot of files, you’ll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](_img/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
+If you're working in a solution that contains a lot of files, you'll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](_img/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
 
 ## Use the My Work page to manage your work
 
-If you’re using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
+If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
 
 ![To Do List on My Work Page in Team Navigator](_img/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
@@ -74,11 +78,11 @@ If you add or remove a file outside Visual Studio, for example, in Windows Explo
 
 >**Note:**  Empty folders will not appear.
 
-If items that you don’t need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can select one of them, open its context menu, and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension** or **Ignore by file name** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on .tfignore files, see [Add files to the server](add-files-server.md).
+If items that you don't need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can select one of them, open its context menu, and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension** or **Ignore by file name** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on .tfignore files, see [Add files to the server](add-files-server.md).
 
 ### Associate work items
 
-It’s a best practice to associate [work items](../work/track/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
+It's a best practice to associate [work items](../work/track/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
 
 ### Exclude changes
 
@@ -86,21 +90,21 @@ See [Specify the files you want to check in](check-your-work-team-codebase.md#in
 
 ## See what you changed
 
-You can remind yourself about what you’ve changed in a file.
+You can remind yourself about what you've changed in a file.
 
 ### Use Pending Changes to view what you changed
 
 -   On the Pending Changes page, open the context menu for the item and choose:  
-    -   **Compare with Workspace Version** to see what you’ve changed to the version in your workspace  
-    -   **Compare with Latest Version** to see how your changes compare to the latest version of the file in your team’s codebase
+    -   **Compare with Workspace Version** to see what you've changed to the version in your workspace  
+    -   **Compare with Latest Version** to see how your changes compare to the latest version of the file in your team's codebase
 
 ### Use Solution Explorer or Source Control Explorer to view what you changed
 
 1.  Locate and select the item in Solution Explorer or in Source Control Explorer.  
 2.  Open the context menu for the item, and then choose **Compare**.  
 3.  On the **Compare** dialog box, from the **Type** menu, choose:  
-    -   **Workspace Version** to see what you’ve changed in the version in your workspace  
-    -   **Latest Version** to see how your changes compare to the latest version of the file in your team’s codebase  
+    -   **Workspace Version** to see what you've changed in the version in your workspace  
+    -   **Latest Version** to see how your changes compare to the latest version of the file in your team's codebase  
     -   One of the other options: **Changeset**, **Date**, or **Label**.  
 4.  Choose **OK**.
 
@@ -135,16 +139,16 @@ You can discard one, a few, or all of the pending changes in your workspace.
 -    [Undo command](undo-command.md) : Undo pending changes.
 
     >**Tip:**  
-    >You can use this command to undo another user’s check-out if you have sufficient permissions.
+    >You can use this command to undo another user's check-out if you have sufficient permissions.
 
 -    [Difference Command](difference-command.md) : See what you have changed in a file.
 
 ## Next steps
 
-When you’re ready:  
+When you're ready:  
 -   To request a code review of your pending changes, on the **Pending Changes** page, choose Request Review. See [Day in the life of an devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
 -   If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).  
--   Check in and add your changes to the team’s codebase, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
+-   Check in and add your changes to the team's codebase, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 ## Tips
 

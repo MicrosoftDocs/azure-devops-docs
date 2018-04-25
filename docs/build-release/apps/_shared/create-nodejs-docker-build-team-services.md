@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
 1. Create a new build definition.

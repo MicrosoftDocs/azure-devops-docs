@@ -1,13 +1,15 @@
 ---
 title: View and compare your Visual Studio load test runs 
 description: Get started with web performance tests - view and compare your VSTS load test runs
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # View and compare your load test runs
@@ -31,6 +33,8 @@ information.
    and all of your team members.
 
    ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
+
+> Also see [Analyze Load Test Results Using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer).
 
 <a name="opents"></a>
 ## Open a load test in VSTS

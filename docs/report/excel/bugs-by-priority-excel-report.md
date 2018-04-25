@@ -1,16 +1,20 @@
 ---
-title: Bugs by Priority Excel Report | TFS
-description: Shows the distribution of active Bugs, grouped by priority - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Bugs by Priority Excel Report 
+description: Shows the distribution of active Bugs, grouped by priority - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: c1ba2ff0-b4f5-4ddb-88ce-f3358161b877
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
+
+
 # Bugs by Priority Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 The Bugs by Priority report in Office Excel shows the distribution of active Bugs, grouped by priority. For information about how to access this report, see [Excel reports](excel-reports.md).  

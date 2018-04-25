@@ -1,17 +1,19 @@
 ---
-title: Excel reports provided with the Agile process template for TFS
-description: Summary of Agile process template Excel reports for Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Excel reports provided with the Agile process template  
+description: Summary of Agile process template Excel reports for Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 9faa625b-d87b-46a9-96ec-0618fe93db96
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---
 
 # Excel reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Microsoft Excel reports to display information from the data warehouse for your team project. This topic describes reports that are provided with the [Agile](../../work/work-items/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
 

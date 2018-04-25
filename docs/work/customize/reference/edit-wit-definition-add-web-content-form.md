@@ -1,11 +1,11 @@
 ---
 title: Edit a WIT definition to add web content to a work item form | VSTS & TFS
 description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -31,7 +31,7 @@ The Web content that you display can be specified in one of the following ways:
 For information about the syntax structure of the elements used to add Web content to a work item type (WIT), see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md) and [Link and Param](link-param-xml-elements-reference.md).  
   
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
   
   
 <a name="Export"></a> 
@@ -60,10 +60,10 @@ For information about the syntax structure of the elements used to add Web conte
   
     ```  
     <Tab Label="Links">  
-      <Control Type="LinksControl" />  
+          <Control Type="LinksControl" />  
     </Tab>  
     <Tab Label="File Attachments">  
-      <Control Type="AttachmentsControl" />  
+          <Control Type="AttachmentsControl" />  
     </Tab>  
     ```  
   
@@ -73,15 +73,15 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                    <WebpageControlOptions AllowScript="false">  
-                       <Link UrlRoot="URL of Web Page" />  
-                    </WebpageControlOptions>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
+                       <WebpageControlOptions AllowScript="false">  
+                       <Link UrlRoot="URL of Web Page" />  
+                       </WebpageControlOptions>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   
@@ -91,19 +91,19 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                    <WebpageControlOptions AllowScript="false">  
-                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
-              <Param Index="0" Value="Param Value 0"/>  
-              <Param Index="1" Value="Param Value 1"/>  
-              <Param Index="2" Value="Param Value 2"/>  
-                       </Link>  
-                    </WebpageControlOptions>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
+                       <WebpageControlOptions AllowScript="false">  
+                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
+              <Param Index="0" Value="Param Value 0"/>  
+              <Param Index="1" Value="Param Value 1"/>  
+              <Param Index="2" Value="Param Value 2"/>  
+                       </Link>  
+                       </WebpageControlOptions>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   
@@ -113,15 +113,15 @@ For information about the syntax structure of the elements used to add Web conte
   
         ```  
         <Tab Label="Tab Label">  
-           <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl">  
-                    <Content>  
-                       <![CDATA[HTML Content]]>  
-                    </Content>  
-                 </Control>  
-              </Column>  
-           </Group>  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl">  
+                       <Content>  
+                       <![CDATA[HTML Content]]>  
+                       </Content>  
+                 </Control>  
+              </Column>  
+              </Group>  
         </Tab>  
         ```  
   
@@ -147,7 +147,7 @@ For information about the syntax structure of the elements used to add Web conte
   
 3.  Choose **Close** to close the new work item.  
   
-## Related notes   
+## Related articles   
 -  [Customize your work tracking experience](../customize-work.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)   

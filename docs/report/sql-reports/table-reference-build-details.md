@@ -1,11 +1,13 @@
 ---
-title: Build Details tables | TFS
+title: Build Details tables
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for data about builds, such as the status and quality.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

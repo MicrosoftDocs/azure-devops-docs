@@ -1,9 +1,11 @@
 ---
-title: CMMI process work item and workflow | VSTS & TFS 
-description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: CMMI process work item and workflow
+titleSuffix: VSTS & TFS
+description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/19/2017
@@ -12,7 +14,7 @@ ms.date: 12/19/2017
 # CMMI process work item types and workflow
 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -25,7 +27,7 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
 
   
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
+[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
 
 ## Define requirements 
 
@@ -294,7 +296,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
@@ -429,17 +431,17 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
+## Customize work item types
+[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
-## Related notes 
+## Related articles 
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
-
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)]   
 
 
 ### Backlog list order

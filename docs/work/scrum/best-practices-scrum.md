@@ -1,18 +1,20 @@
 ---
-title: Sprint and scrum best practices | VSTS & TFS
-description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Sprint and scrum best practices
+titleSuffix: VSTS & TFS 
+description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/02/2017
 ---
 
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 
@@ -147,7 +149,7 @@ This response conveys what was accomplished, what will be accomplished, and that
 
 Contrast with this next example:  
 
->*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
+>*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
 
 Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
 
@@ -186,7 +188,7 @@ As a team, work to determine whether to adapt one or more processes to minimize 
 
 In some cases, your team may need to do some work to implement an improvement. For example, a team that found themselves negatively impacted by too many failed builds decided to implement continuous integration. Because they didn't want to disrupt process, they allocated a few hours to set up a trial build before turning it on in their production build. To represent this work, they created a spike and prioritized that work against the rest of the product backlog.
 
-## Related notes
+## Related articles
 
 For additional guidance, see:
 *	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)

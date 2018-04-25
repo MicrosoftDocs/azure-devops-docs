@@ -2,21 +2,22 @@
 title: Version Control - Effective feature isolation on TFVC
 description: Explore the feature isolation branching strategy and explore when and how to delete branches
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 03/05/2017
 ms.author: willys
-author: willys
+author: wpschaub
 ---
 
 #Effective feature isolation on TFVC
 
-Are you planning to implement Team Foundation Version Control‘s feature isolation strategy ([TFVC](../tfvc/overview.md)? You probably have a few questions, such as:
+Are you planning to implement Team Foundation Version Control's feature isolation strategy ([TFVC](../tfvc/overview.md)? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
-- What’s the proper lifetime of isolated feature branches? 
+- What's the proper lifetime of isolated feature branches? 
 
 This topic aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](./effective-tfvc-branching-strategies-for-devops.md).) 
 
@@ -26,13 +27,13 @@ This topic aims to answer those questions, and give you a clear perspective on f
 
 #What's feature isolation?
 
-The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as “topic branches”) based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch.
+The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as "topic branches") based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch.
 
 > [!NOTE]
 > 
 > The reference to "feature" is **not** related to the Feature work item type. This strategy can be used with Epic, Feature, Program Backlog Item, User Story, or whatever work item type you've defined in your process. 
 
-It’s typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
+It's typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
 
 ![Basic feature isolation](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 
@@ -78,7 +79,7 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 >
 > **Delete** your feature branch when you're done!
 
-#Impact of deleting a feature branch
+#Impact of deleting a feature branch
 
 By [deleting](../tfvc/delete-restore-files-folders.md#delete-an-item) feature branches you minimise noise and focus on active feature development. 
 

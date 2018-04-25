@@ -2,17 +2,18 @@
 title: Aggregate work tracking data using the OData Analytics Service
 titleSuffix: VSTS
 description: How to aggregate and filter data with the Analytics Service and the OData aggregation extension
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: tutorial
+ms.date: 3/16/2018
 ---
 
 # Aggregate work tracking data using the Analytics service   
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
@@ -66,7 +67,8 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=aggregate($count as Count)
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
 ``` 
 
 For simple counts, the non-aggregation approach has a simpler syntax.  
@@ -82,7 +84,8 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?$filter=State eq 'In Progress'
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?
+  $filter=State eq 'In Progress'
 ```
 
 For comparison, using data aggregations you add the following snippet to your query:
@@ -93,7 +96,10 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$apply=filter(State eq 'In Progress')/aggregate($count as Count)
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=
+   filter(State eq 'In Progress')/
+   aggregate($count as Count)
 ``` 
 
 ## Aggregate data using the OData aggregation extension
@@ -112,25 +118,42 @@ Where:
 
 Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
 
+<!---  Commenting these examples out as they are currently not supported. 
+
 **Return the count of work items:**
 
-`/WorkItems?$apply=aggregate($count as CountOfWorkItems)`
-
-Work items can also be counted by using the following:
-
-`/WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
+```
 
 **Return a count of area paths**
 
-`/Areas?$apply=aggregate(AreaId with countdistinct as CountOfAreas)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+  $apply=aggregate($count as Count)
+```
+
+ 
+--> 
 
 **Return the sum of all remaining work**
 
-`/WorkItems?$apply=aggregate(RemainingWork with sum as SumOfRemainingWork)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate(RemainingWork with sum as SumOfRemainingWork)
+```
 
-**Return the last work item ID**
+**Return the last work item identifier**
 
-`/WorkItems?$apply=aggregate(WorkItemId with max as MaxWorkItemId)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate(WorkItemId with max as MaxWorkItemId)
+```
 
 ## Group results using the groupby clause
 
@@ -139,11 +162,19 @@ in more detail.
 
 For example, the following clause will return a  count of work items:
 
-`/WorkItems?$apply=aggregate($count as Count)`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=aggregate($count as Count)
+```
 
 Add the `groupby` clause to return a count of work items by type:
 
-`/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=groupby((WorkItemType), aggregate($count as Count))
+```
 
 This returns a result similar to the following:
 
@@ -163,7 +194,11 @@ This returns a result similar to the following:
 
 You can also group by multiple properties as in the following:
 
-`/WorkItems?$apply=groupby((WorkItemType, State), aggregate($count as Count))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=groupby((WorkItemType, State), aggregate($count as Count))
+```
 
 This returns a result similar to the following:
 
@@ -202,9 +237,16 @@ This returns a result similar to the following:
 
 You can also group across entities, however OData grouping differs from how you might normally think about it. 
 
+<!---
 For example, suppose you wanted to know how many areas are in each project. In OData, "count all areas and group them by project" is equivalent to "give me all projects and a count of areas for each project". This results in a query similar to:
 
-`/Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))`
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+  $apply=groupby((Project/ProjectName), aggregate($count as Count))
+```
+
+--> 
 
 ## Filter aggregated results
 
@@ -212,8 +254,14 @@ You can also filter aggregated results, however they are applied slightly differ
 
 Filters look like the following:
 
-`/WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate($count as Count))`
-
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+  $apply=
+    filter(Iteration/IterationName eq 'Sprint 89')/
+    filter(WorkItemType eq 'User Story')/
+    groupby((State), aggregate($count as Count))
+```
 
 > [!NOTE]    
 > You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
@@ -232,7 +280,24 @@ This will return a result that looks like the following:
 {
   "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
-"@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
+      "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
+    }
+  ]
+}
+```
+
+## Generate calculated properties for use within a single call
+
+When you need to use a mathematical expression to calculate properties for use in a result set, such as the sum of completed work which is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed, you can accomplish this as follows:
+
+`/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)/compute(SumOfCompletedWork div (SumOfCompletedWork add SumOfRemainingWork) as DonePercentage)`
+
+> [!div class="tabbedCodeSnippets"]
+```JSON
+{
+  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+    {
+      "@odata.id":null,"DonePercentage":0.96760221857946638,"SumOfRemainingWork":50715.95,"SumOfCompletedWork":1514698.3400000033
     }
   ]
 }
@@ -292,7 +357,7 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 > [Query trend data](querying-for-trend-data.md)
 
 
-## Related notes 
+## Related articles 
 
 - [Query your work tracking data using the OData Analytics service](wit-analytics.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

@@ -2,12 +2,16 @@
 title: Troubleshooting adding administrators to VSTS project collections and projects
 description: Troubleshooting adding administrators to VSTS project collections and projects 
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.manager: douge  
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
+
 
 # Troubleshooting adding administrators to VSTS project collections and projects
 

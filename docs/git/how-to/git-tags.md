@@ -2,12 +2,16 @@
 title: Working with Git tags
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.prod: devops
+ms.technology: devops-code-git
 ms.manager: douge
 ms.author: sdanie
-ms.date: 01/19/2018
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Working with Git tags
 

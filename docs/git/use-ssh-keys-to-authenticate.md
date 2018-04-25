@@ -2,12 +2,16 @@
 title: Connect to your Git repos with SSH | VSTS & TFS
 description: Authenticate to VSTS Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14//2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Use SSH key authentication
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
@@ -99,7 +103,7 @@ user interface. Select **My security** in the menu that appears.
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal:
+0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an account named **fabrikops2**, as indicated by the first part of the URL before the `@`.
 
    ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
    
@@ -161,7 +165,7 @@ pasting in the public key into the **Key Data** field when adding the key to VST
  
 ### How can I start using SSH in a repository where I am currently using HTTPS?
  
-You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the SSH clone URL, run the following command:
+You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
 
 ```
 git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools

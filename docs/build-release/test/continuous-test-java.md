@@ -1,12 +1,15 @@
 ---
 title: Continuous testing Java applications - VSTS
 description: Continuous testing with Java in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Testing Java applications with VSTS
@@ -96,7 +99,7 @@ coverage in different areas.
 
 ## See also
 
-[VSTS Java website](http://java.visualstudio.com/)
+[VSTS Java website](/vsts/java)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

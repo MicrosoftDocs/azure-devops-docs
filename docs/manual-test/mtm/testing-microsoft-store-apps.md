@@ -2,11 +2,14 @@
 title: Testing Microsoft Store apps
 description: Manual and exploratory testing - Testing Microsoft Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Testing Microsoft Store apps
@@ -20,6 +23,8 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   This option requires no special preparation on the device, other than installing the software.  
   
 - Couple the device to your computer, and run the tests using Microsoft Test Manager. This option allows you to capture screenshots and [collect diagnostic data](collect-more-diagnostic-data-in-manual-tests.md) from the device.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ### Prepare the Windows device for testing  
   
@@ -81,7 +86,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
    |System info|Yes|  
    |Capture screenshot|Yes|  
    |[Event logs](collect-more-diagnostic-data-in-manual-tests.md)|Yes.|  
-   |Action record/playback|Windows Web apps – Yes.<br /><br /> Windows desktop and store apps – No.|  
+   |Action record/playback|Windows Web apps - Yes.<br /><br /> Windows desktop and store apps - No.|  
    |Create a bug|Yes|  
    |Create environment snapshot of the servers in an SCVMM lab environment.|Yes|  
   

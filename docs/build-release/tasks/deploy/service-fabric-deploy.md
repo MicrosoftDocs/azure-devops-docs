@@ -1,12 +1,15 @@
 ---
 description: Service Fabric Application Deployment task
 title: Service Fabric Application Deployment build and release task for VSTS TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy: Service Fabric Application Deployment
@@ -36,12 +39,63 @@ deploy to a Service Fabric cluster.
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricDeploy@1
+  inputs:
+    applicationPackagePath:
+    serviceConnectionName:
+    publishProfilePath:
+    applicationParameterPath:
+#   compressPackage: false
+#   useDiffPackage: false
+    copyPackageTimeoutSec:
+    registerPackageTimeoutSec:
+#   overwriteBehavior: SameAppTypeAndVersion # Always, Never, SameAppTypeAndVersion (default)
+#   skipUpgradeSameTypeAndVersion: false
+#   skipPackageValidation: false
+#   overridePublishProfileSettings: false
+#   isUpgrade: true
+#   unregisterUnusedVersions: true
+#   upgradeMode: Monitored # Monitored (default), UnmonitoredAuto, UnmonitoredManual
+#   FailureAction: Rollback # Rollback (default), Manual
+    UpgradeReplicaSetCheckTimeoutSec:
+    ReplicaQuorumTimeoutSec:
+    TimeoutSec:
+#   ForceRestart: false
+    HealthCheckRetryTimeoutSec:
+    HealthCheckWaitDurationSec:
+    HealthCheckStableDurationSec:
+    UpgradeDomainTimeoutSec:
+#   ConsiderWarningAsError: false
+    DefaultServiceTypeHealthPolicy:
+    MaxPercentUnhealthyDeployedApplications:
+    UpgradeTimeoutSec:
+    ServiceTypeHealthPolicyMap:
+#   configureDockerSettings: false
+#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword
+    dockerRegistryConnection:
+    azureSubscription:
+    registryUserName:
+    registryPassword:
+#   passwordEncrypted: True
+```
+
+::: moniker-end
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

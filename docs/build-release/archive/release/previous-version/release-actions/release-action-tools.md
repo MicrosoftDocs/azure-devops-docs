@@ -2,11 +2,14 @@
 title: Release Management deployment tools for Release Management
 description: Release Management tools to deploy an app in Release Management
 ms.assetid: 0FD15EFD-35AA-4F56-9603-64D3302C0941
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Release Management tools to deploy an app

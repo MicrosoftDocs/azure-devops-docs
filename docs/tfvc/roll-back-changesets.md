@@ -2,12 +2,16 @@
 title: Roll back changesets
 description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Roll back changesets
 

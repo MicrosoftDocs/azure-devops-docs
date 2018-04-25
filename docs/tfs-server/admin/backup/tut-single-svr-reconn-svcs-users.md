@@ -8,7 +8,10 @@ ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Reconnect services and users
 
@@ -18,7 +21,7 @@ This topic, the fourth part of the Restore a Single-Server tutorial, teaches you
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Start team project collections and verify permissions
 > * Refresh the version control cache on client computers and reconnect to TFS
 

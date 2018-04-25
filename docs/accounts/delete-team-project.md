@@ -2,40 +2,46 @@
 title: Delete a team project from VSTS and TFS
 description: Delete or remove a team project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+author: chcomley
+ms.date: 03/06/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Delete a team project
 
-**VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
+**VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756%28v=vs.110%29.aspx)**
 
 If you find that you have a team project you no longer use, you can delete it. Deleting a team project helps simplify the navigation to team projects that are in use.
 
 >**Caution:**  Deleting a team project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save team project data](save-team-project-data.md) that you might want to access later.
 
-You can delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
+Delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
 
 ## Delete a team project from VSTS
 
-1.  Open the administration context for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon.  
+1. Open the administration console for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Account settings**.
 
-	<img src="_img/open-admin-context-team-services.png" alt="Open the admin context" style="border: 1px solid #CCCCCC;" />  
-  
-2.  Open the ![action icon image](../work/_img/icons/actions-icon.png) menu for the team project that you want to delete.
+   >[!div class="mx-imgBorder"]
+   ![open-admin-console-team-services](_img/delete-team-project/open-admin-console-team-projects.PNG)
 
-	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
+2. Open the ![action icon image](../work/_img/icons/actions-icon.png) menu for the team project that you want to delete.
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
+   >[!div class="mx-imgBorder"]
+   ![choose-delete-team-project](_img/delete-team-project/choose-delete-team-project.png)
 
-3.  You must type the name of the team project in order to initiate the delete operation. 
+    If you don't see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-	<img src="_img/delete-team-project-dialog.png" alt="Delete team project dialog" style="border: 1px solid #CCCCCC;" />  
+3. You must type the name of the team project in order to initiate the delete operation. 
 
+   >[!div class="mx-imgBorder"]
+   ![delete-team-project-dialog](_img/delete-team-project/delete-team-project-dialog.png)
 <a name="delete-team-proj"></a>
+
 ## Delete a team project from Team Foundation Server (on-premises)
 
 Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](../tfs-server/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
@@ -63,7 +69,7 @@ Using the administration console, you can delete a team project from a team proj
 
 ### Delete reports that remain after deleting a project
 
-If your on-premises team project used reporting, and you didn’t choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the team project collection page, delete the folder that corresponds to the deleted team project.
+If your on-premises team project used reporting, and you didn't choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the team project collection page, delete the folder that corresponds to the deleted team project.
 
 ![context menu with delete command](_img/delete-team-project/ic686857.png)
 
@@ -71,7 +77,7 @@ If your on-premises team project used reporting, and you didn’t choose to dele
 
 If your on-premises team project had a team project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](http://go.microsoft.com/fwlink/?LinkId=131660).
 
-### What to do if the delete action doesn’t finish
+### What to do if the delete action doesn't finish
 
 For on-premises deployments, review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
 

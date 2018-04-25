@@ -2,12 +2,16 @@
 title: Git and TFVC version control 
 description: Choosing which version control to use in VSTS
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 05/12/2017
+monikerRange: '>= tfs-2015'
 ---
+
 
 
 # Choosing the right version control for your project
@@ -70,7 +74,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can change the comment of a [changeset](find-view-changesets.md) after you check it in. You can link changesets to work items and associate them with completed builds.</p>
 </td>
-<td><p>Team members can concurrently change files on their dev machines. You create commits on your dev machine independently of contributing them to the team. When you’re ready you must pull the latest commits before you upload (push) yours to the server. When you pull, you might be interrupted by conflicts.</p>
+<td><p>Team members can concurrently change files on their dev machines. You create commits on your dev machine independently of contributing them to the team. When you're ready you must pull the latest commits before you upload (push) yours to the server. When you pull, you might be interrupted by conflicts.</p>
 
 <p>You can amend the latest local commit. You cannot change older commits. You can link commits to work items and associate them with completed builds.</p>
 
@@ -81,14 +85,14 @@ Need more help to make a choice? These charts might help.
 <td>
 <p>Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.</p>
 
-<p>Changes in each branch are independent from each other, so you don’t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
+<p>Changes in each branch are independent from each other, so you don't have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
 </p>
 
 <p>You can get visualizations of your branch structures and where your changesets have been merged.</p>
 
 <p>See [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md).</p>
 </td>
-<td><p>Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you’re ready. </p>
+<td><p>Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you're ready. </p>
 
 <p>You must commit, branch, stash, or undo changes before switching branches. Merging is simple and independent of the commit that the branch is based on.</p>
 
@@ -109,7 +113,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>History</td>
-<td>File history is not replicated on the client dev machine and so can be viewed only when you’re connected to the server. You can [view history](get-history-item.md) in Visual Studio and on the web portal. You can annotate files to see who changed a line, and when they changed it.</td>
+<td>File history is not replicated on the client dev machine and so can be viewed only when you're connected to the server. You can [view history](get-history-item.md) in Visual Studio and on the web portal. You can annotate files to see who changed a line, and when they changed it.</td>
 <td>File history is replicated on the client dev machine and can be viewed even when not connected to the server. You can view history in Visual Studio and on the web portal. You can annotate files to see who changed a line, and when they changed it.
 </td>
 </tr>

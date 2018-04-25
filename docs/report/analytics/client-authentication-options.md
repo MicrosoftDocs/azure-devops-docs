@@ -1,18 +1,19 @@
 ---
 title: Client authentication options
 titleSuffix: VSTS   
-description: Client authentication options to use when connecting to the Analytics Service for VSTS using Power BI or Excel
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Enter or change authentication credentials when you connect to the Analytics Service from Power BI or Excel
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
 ms.date: 11/13/2017
 ---
 
-# Client authentication options 
+# Enter client credentials in Power BI or Excel when connecting to the Analytics Service 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
 
@@ -129,7 +130,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 6. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**.
 
-## Related notes
+## Related articles
  
 - [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  

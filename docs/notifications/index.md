@@ -1,12 +1,14 @@
 ---
 title: Notifications index to content for VSTS & TFS
 description: Index to topics for getting notifications or alerts from VSTS or TFS  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
-ms.assetid:  
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2015'
 ---
 
 

@@ -1,15 +1,18 @@
 ---
-title: Triggers in Release Management
+title: Release triggers for environments, branches, and definitions
 description: Understand triggers in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-# Triggers in Release Management
+# Release, branch, and environment triggers
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
@@ -93,10 +96,16 @@ You can combine the automated settings to have releases created
 automatically either when a new build is available or according to
 a schedule.
 
+::: moniker range="tfs-2015"
+
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
 multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
 continuous deployment based on the branch or tag of a build.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ### Parallel forked and joined deployments
 
@@ -122,6 +131,8 @@ this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  
 
+::: moniker-end
+
 Note that you can always deploy a release directly to any of the
 environments in your release definition by selecting the
 **Deploy** action when you create a new release. In this case, the
@@ -133,6 +144,10 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
+::: moniker range="tfs-2015"
+
 > **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
+
+::: moniker-end
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

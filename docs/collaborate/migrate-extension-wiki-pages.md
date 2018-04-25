@@ -1,17 +1,21 @@
 ---
-title: Migrate wiki extension pages in VSTS  
-description: Migrate wiki pages created using the Marketplace extension to the Visual Studio Team Services (VSTS) wiki 
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: Migrate wiki extension pages 
+titleSuffix: VSTS & TFS  
+description: Migrate wiki pages created using the Marketplace extension to the Visual Studio Team Services wiki 
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.manager: douge
-ms.author: kaelli
-ms.date: 10/18/2017
----   
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: 'vsts || >= tfs-2018'
+ms.date: 03/01/2018  
+---  
 
 # Migrate pages from Wiki extension to a team project wiki
 
-**VSTS**
+**VSTS | TFS 2018**
 
 With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project.  
 
@@ -42,7 +46,7 @@ Here are the detailed steps for Wiki migration:
 	
 5.	Clone your Wiki repo using your IDE or **git clone** command.
 
-	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #C3C3C3;" />    
 
 6.	Clone the Wiki extension repo. The Wiki will be mapped to a folder given to you during the wiki creation. You can check that by going to "manage wiki" option in the existing wiki as shown below.
 
@@ -80,7 +84,7 @@ Here are the detailed steps for Wiki migration:
 >[!NOTE]  
 >Once you have migrated your Wiki extension files to the VSTS Wiki, you are ready to uninstall the Wiki extension.
 
-## Related notes 
+## Related articles 
   
 - [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)  
 - [Clone and update wiki pages offline](wiki-update-offline.md)  

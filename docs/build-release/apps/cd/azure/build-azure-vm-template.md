@@ -1,12 +1,15 @@
 ---
-ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 title: Build an Azure Virtual Machine using Azure RM templates
 description: Build an Azure Virtual Machine using ARM templates in Release Management in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Build an Azure virtual machine using an Azure RM template
@@ -83,7 +86,9 @@ After you've run the build, you're ready to create a release definition to provi
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

@@ -1,17 +1,33 @@
 ---
 title: Build and Test - Visual Studio Test Agent Deployment step
-ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test: Visual Studio Test Agent Deployment
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+::: moniker range=">= tfs-2018"
+
+This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+task together with [phases](../../concepts/process/phases.md)
+to run unit and functional tests on the universal agent.
+
+For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+
+::: moniker-end
+
+
+
+## TFS 2017 and earlier
 
 ![icon](_img/visual-studio-test-agent-deployment-icon.png)
 Deploy and configure the test agent to run tests on a set of machines.
@@ -20,7 +36,7 @@ The test agent deployed by this task can collect data
 or run distributed tests using the [Visual Studio Test](visual-studio-test.md)
 task.
 
-## Demands and prerequisites
+### Demands and prerequisites
 
 This task requires the target computer to have:
 
@@ -28,11 +44,11 @@ This task requires the target computer to have:
 * .NET 4.5 or higher
 * PSRemoting enabled by running the [Enable-PSRemoting](https://technet.microsoft.com/en-us/library/hh849694.aspx) PowerShell script
 
-### Windows Remote Management (WinRM)
+#### Windows Remote Management (WinRM)
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
-## Arguments
+### Arguments
 
 | Argument | Description |
 | -------- | ----------- |
@@ -51,7 +67,7 @@ This task requires the target computer to have:
 
 > The task supports a maximum of 32 machines/agents.
 
-## Supported scenarios
+### Supported scenarios
 
 Use this task for:
 
@@ -109,24 +125,24 @@ The supported options for these scenarios are:
     supported. Use the [Visual Studio Test task](visual-studio-test.md) 
     to run these tests.
 
-## Example
+### Example
 
 * [Testing in Continuous Integration and Continuous Deployment Workflows](http://blogs.msdn.com/b/visualstudioalm/archive/2015/06/28/10618066.aspx)
 
-## More information
+### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
 * [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgent/README.md)
 
-## Related tasks
+### Related tasks
 
 * [Visual Studio Test](visual-studio-test.md)
 * [Azure File Copy](../deploy/azure-file-copy.md)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 
-## Q&A
+### Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### When would I use the Enable Data Collection Only option?
@@ -143,8 +159,16 @@ machines.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 
+::: moniker-end
+
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+
+
+
+

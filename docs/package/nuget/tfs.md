@@ -2,16 +2,19 @@
 title: Use NuGet or dotnet with Team Foundation Server feeds
 description: Authenticating to feeds with NuGet in VSTS
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017 < vsts'
 ---
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
-[!INCLUDE [](../_shared/availability-nuget.md)]
+**TFS 2018** | **TFS 2017**
 
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 

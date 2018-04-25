@@ -1,8 +1,8 @@
 ---
 title: Git & TFVC updates plus improved test traceability … – June 20
 description: VSTS release notes for June 17 2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: fa3df506-57bb-4910-9dca-4bf1b567b97e
 ms.date: 06/01/2016

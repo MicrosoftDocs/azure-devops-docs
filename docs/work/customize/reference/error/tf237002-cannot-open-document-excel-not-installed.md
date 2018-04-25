@@ -1,11 +1,12 @@
 ---
-title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed  | VSTS & TFS
+title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed titleSuffix: VSTS & TFS
 description: Appears when a Team Foundation add-in has been disabled in an Office client.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 

@@ -29,7 +29,7 @@ To learn more or to change team defaults, see [Set team defaults](../scale/set-t
 
 <div id="new-nav" class="tab-pane fade in active"> 
 
->[!TIP]  
+> [!TIP]  
 >To enable or disable the new navigation experience, open your user account menu. For more information, see [Work in the web portal, Admin context](../../user-guide/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#admin-context).   
 
 <p>You navigate to your team context from the top navigation bar as shown. Choose Browse All if the name you want doesn't appear in the list. </p>

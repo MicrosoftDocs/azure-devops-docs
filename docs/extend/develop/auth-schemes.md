@@ -2,10 +2,12 @@
 title: Authentication Schemas for Service Endpoints | Extensions for VSTS
 description: Find the different ways to authenticate with external services using service endpoints in VSTS extensions.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 03/02/2016
 ---
 
@@ -18,7 +20,7 @@ in any custom endpoint & support connecting to the external service.
 Following are the authentication schemes that are part of the closed set:
 
 ## Basic authentication
-This scheme takes 2 inputs – Username & Password (confidential)
+This scheme takes 2 inputs - Username & Password (confidential)
 
 Default authentication header used is: "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
 
@@ -70,7 +72,7 @@ Default authentication header used is: "Basic {{ #base64 endpoint.username \":\"
 ```
 
 ## Token based authentication
-This scheme takes 1 input – API Token (confidential)
+This scheme takes 1 input - API Token (confidential)
 
 Default authentication header used is: {{endpoint.apitoken}}
 
@@ -109,7 +111,7 @@ Default authentication header used is: {{endpoint.apitoken}}
 }
 ```
 ## Certificate based authentication
-This scheme takes 1 input – Certificate (confidential)
+This scheme takes 1 input - Certificate (confidential)
 
 The value of certificate has to be provided in the text area.
 

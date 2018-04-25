@@ -1,15 +1,19 @@
 ---
-title: Test Team Progress Excel Report | TFS
-description: Use the report to help monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Test Team Progress Excel Report  
+description: Monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing.
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: a7c04739-72c4-4bb9-b857-adb312d50d87
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Test Team Progress Excel Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Test Team Progress report to help monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing. The Test Team Progress report provides the following six reports based on data that was collected for test cases that were defined for the team project and test results:  
   

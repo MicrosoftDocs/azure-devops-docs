@@ -7,7 +7,10 @@ ms.assetid: 28B2A39E-71BB-49A0-A5EA-3F094446CE32
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Do a dry run of your upgrade in a pre-production environment
 
@@ -34,12 +37,12 @@ If you decide to move forward with a pre-production upgrade, the general process
 
 ## Standing up an environment
 
-In an ideal world, your pre-production environment would look exactly like your production environment – this way 
+In an ideal world, your pre-production environment would look exactly like your production environment - this way 
 you would get as accurate as possible a picture of how long your upgrade will take, whether you will encounter any 
 issues along the way, etc. In the real world, however, this is not always possible or desirable. The product doesn't 
 support cloning SharePoint integration features, for example. And the costs of provisioning a second set of 
 identical machines for pre-production testing can be prohibitive. Don't let these discrepancies 
-dissuade you, however – almost any pre-production environment is better than nothing.
+dissuade you, however - almost any pre-production environment is better than nothing.
 
 ## Protecting production
 

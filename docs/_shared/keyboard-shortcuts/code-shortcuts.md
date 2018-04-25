@@ -23,7 +23,7 @@ You can use the following keyboard shortcuts when working in the **Code** hub. T
 &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets (TFVC)<br/> 
 &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets (TFVC)<br/>
 <br/><br/>
-**File Explorer** <br/>
+**File Explorer** <br/>
 &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
 &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
 &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>

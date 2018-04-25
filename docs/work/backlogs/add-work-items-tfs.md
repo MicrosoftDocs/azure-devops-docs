@@ -1,11 +1,14 @@
 ---
-title: Add work items | TFS  
+title: Add work items
+titleSuffix: TFS 
 description: Add work items to plan and manage a software project when connected to a team project in Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 03/16/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 03/16/2017
 
 **TFS 2015 | TFS 2013**  
 
->[!IMPORTANT]   
+> [!IMPORTANT]   
 ><b>Feature availability: </b>The new web form provides many additional features. If you connect to VSTS or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
 
 You add work items to plan and manage your project. You use different types of  work items to track different types of work - such as tasks, features or user stories, test cases and bugs, risks or issues, and more. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.  
@@ -22,14 +25,14 @@ Different types of work items are used to track features, user experiences, code
 
 ![Work item form to track features or user stories](_img/work-item-form-to-track-user-stories.png)
 
->[!NOTE]  
+> [!NOTE]  
 >Depending on the process you chose when creating your team project--[Scrum](../work-items/guidance/scrum-process.md), 
 [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)--the types of work items you can create will differ. For example, backlog items may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to deliver and the work to be performed.<br/>  
 For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
  
 
 
-##Add work items to define new work
+## Add work items to define new work
 You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
@@ -39,7 +42,7 @@ You can start adding work items once you connect to a team project. Here we show
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../teams/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -54,14 +57,14 @@ As work progresses, team members can update the state and reassign it as needed.
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b> </p> 
 <ul>
 <li>Create a product backlog item in the default state, New.</li>
 <li>Change the state from New to Approved.</li>
 <li>Change the state from Approved to Committed.</li>
 <li>Change the state from Committed to Done.</li>
 </ul>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b> </p> 
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
@@ -105,7 +108,7 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ![Email a hyperlink for a work item](_img/add-work-items-copy-url-for-a-work-item.png)
 
-## Related notes
+## Related articles
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 

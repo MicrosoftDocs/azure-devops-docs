@@ -1,11 +1,11 @@
 ---
 title: Design the work item form | VSTS & TFS
 description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 06/16/2017
 ---
 
@@ -35,7 +35,7 @@ When you design a work item form, you want to position fields on the form so tha
  For information about how to export, import, and verify work item form changes, see [Change the work item form layout](change-work-item-form-layout.md).    
  
  
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
 
 
 <a name="LayoutElements"></a> 
@@ -212,16 +212,16 @@ Six Tabs Arranged in a Side by Side by Layout
 <TabGroup>  
 <Tab Label="Planning">  
 <Group Label="Status" Padding="(0,0,0,3)">  
-   <Column PercentWidth="5100">  
-      <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.VisionDoc" Type="FieldControl" Label="Vision Doc" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DeveloperDivision.Features.EstimatedCost" Type="FieldControl" Label="Estimated Cost" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="BU (Use Area Path)" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.Website" Type="FieldControl" Label="Website" LabelPosition="Left" />  
-   </Column>  
+      <Column PercentWidth="5100">  
+      <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
+      <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
+      <Control FieldName="Microsoft.DevDiv.VisionDoc" Type="FieldControl" Label="Vision Doc" LabelPosition="Left" />  
+      <Control FieldName="Microsoft.DeveloperDivision.Features.EstimatedCost" Type="FieldControl" Label="Estimated Cost" LabelPosition="Left" />  
+      <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="BU (Use Area Path)" LabelPosition="Left" />  
+      <Control FieldName="Microsoft.DevDiv.Website" Type="FieldControl" Label="Website" LabelPosition="Left" />  
+      </Column>  
 </Group>  
-   . . .  
+      . . .  
 </Tab>  
 </TabGroup>  
   
@@ -237,33 +237,33 @@ Three-Column Layout
   
 ```  
 <FORM>  
-   <Layout>  
-      <Group>  
+      <Layout>  
+      <Group>  
           <Column PercentWidth="36">  
-            <Group>  
+               <Group>  
             <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
             <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />  
             <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />  
             <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />  
-            </Group>  
+               </Group>  
           </Column>  
           <Column PercentWidth="33">  
-            <Group>  
+               <Group>  
             <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />  
             <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />  
             <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />  
-            </Group>  
+               </Group>  
           </Column>  
           <Column PercentWidth="31">  
-            <Group>  
+               <Group>  
             <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />  
             <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
             <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
-            </Group>  
+               </Group>  
           </Column>  
-      </Group>  
+      </Group>  
 . . .  
-   </Layout>  
+      </Layout>  
 </FORM>  
 ```  
   
@@ -285,25 +285,25 @@ Three-Column Layout
   
 ```  
 <Group>  
-   <Column PercentWidth="50">  
-      <Group Label="First Group Left ">  
-         <Column PercentWidth="50">  
-            <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Name="Pri2" Label="Priority:" />  
-            <Control FieldName="Microsoft.VSTS.Common.Rank" Type="FieldControl" Label="Stack Rank:" />  
-            <Control FieldName="Microsoft.VSTS.Scheduling.BaselineWork" Type="FieldControl" Label="Original Estimate:" />  
-            <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Type="FieldControl" Label="Remaining:" />  
-   </Column>  
-   <Column>  
-      <Splitter>  
-   </Column>  
-   <Column PercentWidth="50">  
-      <Group Label="Second Group Right">  
-            <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ChangeDate" Label="Change Date" Format="Short" LabelPosition="Right" />  
-            <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.EstimateStartDate" Label="Estimated Start Date" Format="Short" LabelPosition="Right" />  
-            <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ActualStartDate" Label="Actual Start Date" Format="Short" LabelPosition="Right" />  
-            <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.FinishDate" Label="Finish Date" Format="Short" LabelPosition="Right" />  
-      </Group>  
-   </Column>  
+      <Column PercentWidth="50">  
+      <Group Label="First Group Left ">  
+         <Column PercentWidth="50">  
+               <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Name="Pri2" Label="Priority:" />  
+               <Control FieldName="Microsoft.VSTS.Common.Rank" Type="FieldControl" Label="Stack Rank:" />  
+               <Control FieldName="Microsoft.VSTS.Scheduling.BaselineWork" Type="FieldControl" Label="Original Estimate:" />  
+               <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Type="FieldControl" Label="Remaining:" />  
+      </Column>  
+      <Column>  
+      <Splitter>  
+      </Column>  
+      <Column PercentWidth="50">  
+      <Group Label="Second Group Right">  
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ChangeDate" Label="Change Date" Format="Short" LabelPosition="Right" />  
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.EstimateStartDate" Label="Estimated Start Date" Format="Short" LabelPosition="Right" />  
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ActualStartDate" Label="Actual Start Date" Format="Short" LabelPosition="Right" />  
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.FinishDate" Label="Finish Date" Format="Short" LabelPosition="Right" />  
+      </Group>  
+      </Column>  
 </Group>  
 ```  
   
@@ -336,17 +336,17 @@ Three-Column Layout
   
 ```  
 <FORM>  
-   <Layout Target="WinForms" >  
-      . . .   
-   </Layout>  
-   <Layout Target="Web" >  
-      . . .   
-   </Layout >  
+      <Layout Target="WinForms" >  
+      . . .   
+      </Layout>  
+      <Layout Target="Web" >  
+      . . .   
+      </Layout >  
 </FORM>  
   
 ```  
   
-## Related notes  
+## Related articles  
 - [Change the work item form layout](change-work-item-form-layout.md)  
 -  [Customize your work tracking experience](../customize-work.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   

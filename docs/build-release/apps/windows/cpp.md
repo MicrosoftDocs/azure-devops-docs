@@ -1,20 +1,23 @@
 ---
-title: Build your C++ app
-description: Build your C++ app in Team Foundation Server and Visual VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+title: Build your Visual C++ app
+description: Build your Visual C++ app with Team Foundation Server and VSTS
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/20/2017
-ms.topic: get-started-article
+author: andyjlewis
+ms.date: 02/16/2018
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
 
-# Build your C++ app for Windows
+
+# Build your Visual C++ app
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C++ application developed using Visual Studio IDE.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C++ application compiled with Visual C++.
 
 ## Prerequisites
 
@@ -64,11 +67,11 @@ https://github.com/adventworks/cpp-sample
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted VS2017_. This uses a VSTS pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 

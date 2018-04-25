@@ -1,13 +1,18 @@
 ---
 title: Deploy an agent on Linux
 description: Deploy an agent on Linux
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
+
+
 # Deploy an agent on Linux
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
@@ -24,13 +29,21 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 Where are your builds and releases running?
 
-* **VSTS**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+::: moniker range="vsts"
 
-* **TFS 2018 RTM and older**: The agent is based on CoreCLR 1.0. Make sure your machine is prepared with our prerequisites for either of the supported distributions:
+**VSTS**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
 
- - [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+::: moniker-end
 
- - [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+::: moniker range="<= tfs-2018"
+
+**TFS 2018 RTM and older**: The agent is based on CoreCLR 1.0. Make sure your machine is prepared with our prerequisites for either of the supported distributions:
+
+ * [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+
+ * [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+
+ ::: moniker-end
 
 ### Subversion
 
@@ -42,6 +55,8 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <a name="download-configure"></a>
 ## Download and configure the agent
+
+::: moniker range=">= tfs-2017"
 
 ### VSTS and TFS 2017 and newer
 
@@ -60,6 +75,10 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Follow the instructions on the page.</li>
 </ol>
 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
 ### TFS 2015
 
 0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
@@ -71,13 +90,27 @@ If you're building from a Subversion repo, you must install the Subversion clien
 ./config.sh
  ```
 
+::: moniker-end
+
 ### Server URL
 
-* VSTS: `https://{your-account}.visualstudio.com`
+::: moniker range="vsts"
 
-* TFS 2017 and newer: `https://{your_server}/tfs`
+VSTS: `https://{your-account}.visualstudio.com`
 
-* TFS 2015: `http://{your_server}:8080/tfs`
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+TFS 2017 and newer: `https://{your_server}/tfs`
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
+TFS 2015: `http://{your_server}:8080/tfs`
+
+::: moniker-end
 
 ### Authentication type
 
@@ -232,7 +265,9 @@ You can use the template described above as to facilitate generating other kinds
 
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
 
@@ -242,10 +277,16 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vs
 
 [Run the agent behind a web proxy](proxy.md)
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+::: moniker-end
 
+::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+::: moniker-end
 
+::: moniker range="< vsts"
 [!INCLUDE [include](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

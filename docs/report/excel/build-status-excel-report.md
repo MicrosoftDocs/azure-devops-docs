@@ -1,16 +1,18 @@
 ---
-title: Build Status Excel Report | TFS
-description: Helps track the progress of builds by showing the number of builds that failed or succeeded - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Build Status Excel Report  
+description: Helps track the progress of builds by showing the number of builds that failed or succeeded - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
 # Build Status Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 The Build Status report helps the team track the progress of their builds by showing the number of builds that failed or succeeded for the most recent four weeks.  

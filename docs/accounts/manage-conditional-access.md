@@ -1,14 +1,16 @@
 ---
 title: Manage conditional access to VSTS
 description: Manage conditional access to VSTS to restrict access based on multi-factor authentication
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+author: chcomley
+ms.date: 10/06/2017
+monikerRange: 'vsts'
 ---
-
 #	Manage conditional access to VSTS
 
 **VSTS**
@@ -24,7 +26,7 @@ from various locations/networks.
 You can require conditions such security group membership, location and network identity, specific OS, enabled device 
 in a management system, and so on.
 
-Depending on which conditions the user satsifies, you can require multi-factor authentication, require further checks, 
+Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, 
 or block access.
 
 > [!IMPORTANT] 

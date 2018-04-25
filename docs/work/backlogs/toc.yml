@@ -2,22 +2,34 @@
   href: index.md
 - name: Overview
   items:
+  - name: About backlogs 
+    href: backlogs-overview.md
   - name: "Backlogs, boards, & plans"
     href: backlogs-boards-plans.md
   - name: About teams and Agile tools
-    href: ../../teams/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Create your backlog
     href: create-your-backlog.md
+  - name: Drive Git development
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: Define area paths
+    href: ../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: Define iteration paths
+    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: "Define features & epics"
     href: define-features-epics.md
   - name: Organize your backlog (map or reparent)
     href: organize-backlog.md
+  - name: Bulk modify (web)
+    href: bulk-modify-work-items.md 
   - name: Link work items
     href: add-link.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: "Move, change, or delete"
+    href: ../backlogs/remove-delete-work-items.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Groom your backlog
@@ -46,14 +58,18 @@
     href: office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Create backlog items & tasks (Project)"
     href: office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: Share work plans
+    href: ../track/share-plans.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
   - name: Storyboard your ideas
     href: office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
   - name: Add and share storyboard shapes
     href: office/add-share-storyboard-shapes.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
-  - name: "Manage permissions & access"
+  - name: "Manage permissions & access (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
+  - name: TFS-Office integration issues
+    href: office/tfs-office-integration-issues.md
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
   - name: "Rollup estimated & actual work using Project"
@@ -70,18 +86,18 @@
     href: product-backlog-controls.md 
   - name: Backlog keyboard shortcuts
     href: backlogs-keyboard-shortcuts.md
-  - name: "Permissions & access for work tracking"
+  - name: "Permissions & access (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Resources
   items:
+  - name: Work Items
+    href: ../work-items/index.md
   - name: Kanban
     href: ../kanban/index.md
   - name: Scrum
     href: ../scrum/index.md
   - name: Queries
     href: ../track/index.md
-  - name: Work Items
-    href: ../work-items/index.md
   - name: Customization
     href: ../customize/index.md
   - name: What is Agile?

@@ -2,13 +2,16 @@
 title: Publish NuGet packages from Team Build to Package Management
 description: Working with feeds in Team Build
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
+
+
 
 # Publish NuGet packages from Team Build to Package Management
 

@@ -1,13 +1,15 @@
 ---
 title: Default permissions set for notifications, READMEs, Wiki, and feedback 
-description: Understand the default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for VSTS and TFS  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/26/2017  
+monikerRange: '>= tfs-2017'
 ---
 
 
@@ -22,7 +24,7 @@ Most of these tools are available to you if you are added as a team member or a 
 Stakeholders have limited access to view charts and dashboards. To learn more, see [About access levels](../security/access-levels.md).
 
 
-[!INCLUDE [temp](../security/_shared/collaborate.md)]
+[!INCLUDE [temp](../security/_shared/collaborate.md)]
 
 ## Manage permissions
 
@@ -37,7 +39,7 @@ To manage notifications, see:
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
 
-## Related notes
+## Related articles
 
 - [Work effectively from your account hub](../user-guide/account-home-pages.md)
 - [Add a team administrator](../work/scale/add-team-administrator.md) 

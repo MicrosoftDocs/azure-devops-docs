@@ -1,11 +1,14 @@
 ---
-title: Apply a field rule | TFS
+title: Apply a field rule
+titleSuffix: VSTS & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: 'vsts || >= tfs-2013'
 ms.date: 05/10/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 05/10/2017
  
 <p><b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../process/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
@@ -35,7 +38,7 @@ Field rules are one component you have to customize work item tracking. To learn
 For information on modifying fields or adding field rules to a WIT definition file, see [Add or modify a field](../add-modify-field.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
 
 <a id="help-text" /> 
 ## Help text
@@ -53,7 +56,7 @@ The following example shows the assignment of Help text to a custom Business Jus
 
 To provide users guidance that exceeds the 255 characters limit, see [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md).
 
->[!NOTE]  
+> [!NOTE]    
 >The presence of `HELPTEXT` adds to the size of your data store and can impact scalability. If you support several hundreds of team projects within a single TFS collection or instance, be conservative in your use of `HELPTEXT` rules.
 
 <a id="pick-list" /> 
@@ -141,7 +144,7 @@ These rules support setting defaults, copying values from one field to another, 
 
 For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
 
->[!NOTE]  
+> [!NOTE]    
 >Field rules don't support assigning values that are the sum of two other fields or performing other mathematical calculations.
 
 
@@ -186,6 +189,8 @@ These rules specify restrictions on specifying or changing the value of a field.
 
 For the syntax structure, see [All FIELD XML elements reference](field-definition-element-reference.md).
 
+<!--- This section used to be valid, but is no longer valid for TFS 2017 and later versions. 
+
 <a id="scope" /> 
 ### Restrict who can create or modify a work item
 
@@ -207,6 +212,8 @@ You can use the **VALIDUSER** rule only when you refer to person-name fields. Th
 In addition to the system fields, you can create a custom string field and use it as a person-named field. Also, you can synchronize custom person-named fields with Active Directory (specify syncnamechanges="true").
 
 Work item fields do not distinguish between user identities in different domains. Therefore, "Fabrikam\\ctsoapo" and "Contoso\\ctsoapo" are treated as the same user when they are entered into a field that uses the **VALIDUSER** rule.
+
+-->
 
 <a id="conditional-rules" /> 
 ## Conditional rules
@@ -279,11 +286,11 @@ When you restrict a rule to a group, you must indicate the domain or scope of th
 
 Person-name fields can accept values that reference both users and groups. Field attributes, for and not, apply to groups. You can use the following tokens when specifying values for these items.
 
--   **Scope to a group within a team project – [Project]:**
+-   **Scope to a group within a team project &mdash;[Project]:**
 
     The [Project] token is used to specify a group that is defined for a team project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group. 
 
-	>[!NOTE]  
+	> [!NOTE]    
 	>[Project] is used as is. You don't replace it with the name of your team project.
         
 	Some examples:
@@ -296,10 +303,10 @@ Person-name fields can accept values that reference both users and groups. Field
 
     -   Windows group added to a team project: `[Project]\Triage Committee`
 
-    >[!TIP]  
+    > [!TIP]  
     >You can view a list of valid groups by [opening the Security page](../../../security/set-project-collection-level-permissions.md) in the web portal administration context.
 
--   **Scope to a project collection – [GLOBAL]:**
+-   **Scope to a project collection &mdash;[GLOBAL]:**
 
     Use [GLOBAL] to reference a collection-scoped TFS group, such as the Project Collection Administrators group or a Windows group you add to a collection. For example:
 
@@ -307,7 +314,7 @@ Person-name fields can accept values that reference both users and groups. Field
         <READONLY for="[GLOBAL]\Project Collection Valid Users"/>
         </FIELD>
 
--   **Scope to a server instance – [Team Foundation]:**
+-   **Scope to a server instance &mdash;[Team Foundation]:**
 
     Use the [Team Foundation] token to reference a server-scoped TFS group, such as a built-in group or a Windows group you add to a server-level group. For example:
 
@@ -329,13 +336,9 @@ All users and groups must be qualified by one of these tokens. For example, the 
 
 To learn more about built-in groups, see [Permissions and groups](../../../security/permissions.md) 
 
-## Related notes
-  
-- [Add or modify a field](../add-modify-field.md)   
-- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
 
 <a name="system"></a>
-###System field rules
+##System field rules
 
 System fields have System.*Name* reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:
 
@@ -345,6 +348,14 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 -   Most rules can be assigned to the Title, Assigned To, Description or Changed By System fields.
 
+
+## Related articles
+  
+- [Add or modify a field](../add-modify-field.md)   
+- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
+
+
+
 ### Person-named fields and validation errors
 
 To avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
@@ -352,14 +363,14 @@ To avoid validation errors that would otherwise occur when members leave the tea
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
-   <HELPTEXT>The user who is working on this work item</HELPTEXT>
-   <ALLOWEXISTINGVALUE />
-   <VALIDUSER />
-   <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
-      <LISTITEM value="Active" />
-      <LISTITEM value="[project]\Contributors" />
-   </ALLOWEDVALUES>
-   <DEFAULT from="field" field="System.CreatedBy" />
+      <HELPTEXT>The user who is working on this work item</HELPTEXT>
+      <ALLOWEXISTINGVALUE />
+      <VALIDUSER />
+      <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+      <LISTITEM value="Active" />
+      <LISTITEM value="[project]\Contributors" />
+      </ALLOWEDVALUES>
+      <DEFAULT from="field" field="System.CreatedBy" />
 </FIELD>
 ```
 
@@ -386,7 +397,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 -   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  && `
 
     `"Previous State Before Edit/New" == "FromState" `
 
@@ -396,7 +407,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
     `Reason field == "MyReason" &&`
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  && `
 
     `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
 
@@ -405,11 +416,11 @@ The following example restricts modification of the customer severity field when
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <STATE name="Active">
-   <FIELDS>
-      <FIELD refname="MyCorp.Severity" >
-         <READONLY />
-      </FIELD>
-   </FIELDS>
+      <FIELDS>
+      <FIELD refname="MyCorp.Severity" >
+         <READONLY />
+      </FIELD>
+      </FIELDS>
 </STATE>
 ```
 
@@ -420,7 +431,7 @@ Rules are typically processed in the sequence in which they are listed. However,
 
 You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
 
-The following steps show, in the correct sequence, the interactions that TFS performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
+The following steps show, in the correct sequence, the interactions that TFS performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
 1.  From a Team Foundation client&mdash;such as the web portal, Visual Studio, Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
@@ -434,7 +445,7 @@ The following steps show, in the correct sequence, the interactions that TFS per
 
     The system always processes **WHEN** rules before **WHENNOT** rules.
 
-6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
+6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
 
 7.  Allow the user to start editing.
 

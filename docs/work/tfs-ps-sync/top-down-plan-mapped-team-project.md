@@ -1,11 +1,13 @@
 ---
-title: Top-down planning of business requirements within an enterprise project plan mapped to a team project | TFS
-description: Maintain scheduling data and resource usage for requirements in the mapped enterprise project plan and team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Top-down planning of business requirements within an enterprise project plan mapped to a team project
+titleSuffix: TFS 
+description: Maintain scheduling data and resource usage for requirements in the mapped enterprise project plan and team project 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9760e3f2-2c1a-4c05-8d3d-c25abc79289a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Top-down planning of business requirements within an enterprise project plan mapped to a team project
@@ -161,7 +163,7 @@ History of work item added by Project Server Sync
 ###  <a name="addressrejectedupdates"></a> Address Rejected Updates to Requirements  
  When a project manager rejects a status update to a requirement, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status before the work item can be synchronized again. You can create a team query to find work items whose update statuses were rejected. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
-## Related notes  
+## Related articles  
 - [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
 -  [Synchronization process overview](synchronization-process-overview.md)   
 - [Manage projects](manage-projects.md)

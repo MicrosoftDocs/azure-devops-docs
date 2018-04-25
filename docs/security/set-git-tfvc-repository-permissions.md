@@ -2,16 +2,18 @@
 title: Set Git or TFVC repository permissions for VSTS & TFS 
 description: Grant or restrict access to a Git or TFVC repository feature or function
 ms.assetid:  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
+ms.topic: quickstart
 ms.manager: douge
-ms.author: douge
+ms.author: chcomley
+author: chcomley
 ms.date: 12/12/2017
+monikerRange: '>= tfs-2013'
 ---
+# Quickstart: Set repository permissions for Git or TFVC
 
-# Set repository permissions for Git or TFVC 
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can grant or restrict access to a repository by setting the permission state to Allow or Deny for a single user or a security group. For a description of each security group and permission level, see [Permissions and group reference](permissions.md).
 
@@ -20,8 +22,8 @@ You can grant or restrict access to a repository by setting the permission state
 * You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 * You must be a member of the [Project Administrators Group](set-project-collection-level-permissions.md) or have your **Manage permissions** set to Allow for Git repositories or TFVC repository.  
 
-
 <a id="git-repository">  </a>
+
 ## Set Git repository permissions
 
 You can set the permissions for all Git repositories for a team project, or for a single repository. 
@@ -69,7 +71,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 ## Related notes
 
 - [Default Git permissions](default-git-permissions.md)  
-- [Default TFVC permissions](default-tfv-permissions.md)  
+- [Default TFVC permissions](default-tfvc-permissions.md)  
 - [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md) 
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  

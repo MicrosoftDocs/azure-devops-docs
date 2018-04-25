@@ -1,11 +1,13 @@
 ---
-title: Review team activities to support useful reports | TFS  
-description: Review team activities to support useful SQL Server reports when working in Team Foundation Server (TFS)  
+title: Review team activities to support useful reports
+titleSuffix: TFS
+description: Review team activities to support useful SQL Server reports when working in Team Foundation Server    
 ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

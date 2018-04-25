@@ -2,11 +2,14 @@
 title: Release without deployment agents in Release Management
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Release your app to environments without deployment agents
@@ -327,7 +330,7 @@ You also need a build definition that builds your app.
      }
    }
 
-   FileCopy -ConfigurationData $ConfigData ��"Verbose
+   FileCopy -ConfigurationData $ConfigData --"Verbose
    ```
    
    The parameter values `$AllNodes` and `$Node` in this example are from 

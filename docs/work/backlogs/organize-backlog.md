@@ -1,37 +1,60 @@
 ---
-title: Organize your backlog using Agile tools provided by VSTS & TFS  
-description:  Organize your backlog by mapping backlog items to features, and features to epics in VSTS or the web portal for Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Use Agile tools to organize your backlog
+titleSuffix: VSTS & TFS  
+description:  Map backlog items to features, and features to epics in Visual Studio Team Services or Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article
-ms.date: 08/29/2017
+author: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2013'
+ms.date: 03/20/2018
 ---
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
- 
+
 
 In this topic you'll learn:  
 
+::: moniker range="vsts || >= tfs-2018"
+
 > [!div class="checklist"] 
-> * How to change the backlog view to show the tree hierarchy  
-> * How to group backlog items under a feature or epic using the Mapping pane  
-> * How to reparent items using drag-and-drop or the **Change parent** option       
+> * How to view the tree hierarchy  
+> * How to group backlog items using the Mapping pane  
+> * How to reparent items using drag-and-drop or the **Change parent** option      
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
+
+>  [!div class="checklist"] 
+> * How to view the tree hierarchy  
+> * How to group backlog items using the Mapping pane  
+> * How to reparent items using drag-and-drop
+
+::: moniker-end
+ 
+::: moniker range="tfs-2013"
+
+> [!NOTE]   
+> The epic portfolio backlog is supported in TFS 2015 and later versions.  
+::: moniker-end
 
 
-
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 ## Show parents and expand the tree hierarchy  
-From the product backlog page, set Parents to Show when you want to drill up or down within the hierarchy, set Parents to Show. You can also drag and drop items to reparent items from this view. 
+From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
 
 <img src="_img/org-backlog-intro-show-parents-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #C3C3C3;" />  
+
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]
 
 Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
   
@@ -49,9 +72,14 @@ Drag items that are currently unparented to the feature under which they belong.
 
 <img src="_img/org-backlog-map-pbi-to-feature-ts-new-nav.png" alt="Map a backlog item to a portfolio backlog work item" style="border: 1px solid #C3C3C3;" />  
 
->[!NOTE]  
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from VSTS and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+You can multi-selectwork items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+::: moniker-end
+::: moniker range="tfs-2015"
+Multi-select of work items on the backlog and sprint backlogs requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 It's the same process to map features to epics. From the Features backlog, drag features to an epic listed under the mapping pane.  
 
 <a id="reparent">  </a>
@@ -68,20 +96,26 @@ You can re-parent an item using the mapping pane, or simply drag it within the h
 Also, to change an item's priority within a group, you can drag the item up or down within its hierarchical group. 
 This works the same as when you [moved items into priority order on your product backlog](create-your-backlog.md).   
 
+::: moniker-end
 
+::: moniker range="vsts || >= tfs-2018"
 <a id="change-parent-option">  </a>
 
-### Change parent of multiple backlog items 
+## Change parent of multiple backlog items 
 
->[!NOTE]  
+<!---
+> [!NOTE]  
 ><b>Feature availability: </b> The **Change parent&hellip;** menu option from the backlog page is supported from VSTS. 
+>--> 
 
 From the product backlog you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item item. 
 
 <img src="_img/org-backlog-change-parent.png" alt="Change parent of several backlog items" style="border: 1px solid #C3C3C3;" /> 
 
+::: moniker-end
 
-## Related topics  
+
+## Related articles  
 
 - [Define features and epics](define-features-epics.md)
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)
@@ -90,4 +124,3 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
-[!INCLUDE [temp](../_shared/image-differences.md)]

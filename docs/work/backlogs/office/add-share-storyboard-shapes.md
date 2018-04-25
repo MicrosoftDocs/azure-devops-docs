@@ -1,22 +1,24 @@
 ---
-title: Add and share storyboard shapes | VSTS & TFS
-description: Add and share storyboard shapes with members of your team - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add and share storyboard shapes
+titleSuffix: VSTS & TFS
+description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to PowerPoint
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c8f3136e-a560-4ea5-83fd-602f89c74155
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
 ms.date: 06/22/2017
 ---
 
 # Add and share storyboard shapes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. You may find storyboard shapes from the links provided in this blog post, [Storyboard shapes extensions being deprecated from Visual Studio Marketplace](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/16/storyboard-shapes-extensions-being-deprecated-from-visual-studio-marketplace/).  
 
 ## Find storyboard shapes and import them  
@@ -68,5 +70,5 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 
  In addition, you can author storyboard shapes with custom resize logic using the Storyboard Shapes Authoring Tool. To get this tool, download [Visual Studio Team Foundation Server Power Tools](http://go.microsoft.com/fwlink/?LinkId=248625).  
 -->  
-## Related notes  
+## Related articles  
 - [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).

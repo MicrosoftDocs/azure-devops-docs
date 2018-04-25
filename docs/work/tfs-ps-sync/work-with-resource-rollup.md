@@ -1,13 +1,15 @@
 ---
-title: Work with resource rollup in enterprise projects mapped to team projects | TFS
-description: Work with resource rollup in enterprise projects mapped to team projects when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Work with resource rollup in enterprise projects mapped to team projects
+titleSuffix: TFS 
+description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
+ms.technology: devops-agile
 ms.assetid: 72efdffb-ea99-4b89-b681-53bc1dcb2ac9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Work with resource rollup in enterprise projects mapped to team projects
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -116,7 +118,7 @@ ms.date: 01/12/2017
   
  Team Foundation uses work items to implement workflow. A single work item can be assigned successively to multiple team members, and each member performs some action and completes work. If you want to bill hours based on work that each resource completes, you should have team members update their timesheets in PWA.  
   
-## Related notes  
+## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   
  [Synchronization process overview](synchronization-process-overview.md)   
  [Manage projects](manage-projects.md)

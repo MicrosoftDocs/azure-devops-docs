@@ -1,13 +1,13 @@
 ---
 title: Define the hyperlink for a work item
-description: Construct a URL for a work item for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile 
-ms.article:   
+titleSuffix: VSTS & TFS
+description: Construct a URL for a work item for Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: vs-azure-devops-agile    
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: 
+ms.topic: reference
 ms.date: 11/27/2017  
 ---
 
@@ -15,7 +15,7 @@ ms.date: 11/27/2017
 
 # Define the hyperlink for a work item 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 
@@ -29,7 +29,9 @@ Examples in this topic use the following conventions:
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
-##VSTS
+::: moniker range="vsts"  
+
+## VSTS
 
 <b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 
@@ -39,6 +41,10 @@ Examples in this topic use the following conventions:
 https://fabrikam/DefaultCollection/Phone%20Saver/_workitems?id=133&_a=edit
 ```  
 
+::: moniker-end  
+
+::: moniker range=">= tfs-2015"  
+
 ##TFS 2018, TFS 2017, and TFS 2015
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
@@ -47,6 +53,10 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems?id=133&_a=edit
 ```  
 http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
 ```  
+
+::: moniker-end  
+
+::: moniker range="tfs-2013"  
 
 ##TFS 2013.2
 
@@ -68,5 +78,5 @@ http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit
 ```
 
 
-
+::: moniker-end  
 

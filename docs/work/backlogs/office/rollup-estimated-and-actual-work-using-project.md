@@ -1,11 +1,12 @@
 ---
 title: Rollup estimated and actual work using Project | VSTS & TFS
 description: Provides summed values of select fields for all child work items of a parent.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 02/22/2017  
 ---
 # Rollup estimated and actual work using Project

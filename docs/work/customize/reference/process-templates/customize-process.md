@@ -1,19 +1,21 @@
 ---
-title: Customize a process template | VSTS & TFS
-description: Define the objects and processes available to you when you create a team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Customize a process template
+titleSuffix: VSTS & TFS
+description: Define the objects and processes available to you when you create a team project in Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 
 # Customize a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-****
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+ 
 Process templates define the objects and processes available to you when you create a team project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   
 - Add a new field to an existing work item type (WIT)  
@@ -24,7 +26,7 @@ Process templates define the objects and processes available to you when you cre
 - Change the process configuration or defaults associated with Agile tools   
 
 
->[!NOTE]  
+> [!NOTE]    
 >If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create team projects on VSTS and TFS.  
   
 Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
@@ -35,7 +37,7 @@ For example, the Agile process template defines the set of artifacts shown in th
   
 ![Agile process template artifacts](_img/alm_pg_agile_pt.png "ALM_PG_Agile_PT")  
   
-Many of these artifacts depend on WITs which are used to track work. For example, data fields defined in the definition of WITs─such as, Feature, Bug, User Story, or Task─are also used to define work item queries and reports. In addition to these artifacts, you can also define the initial project areas and milestones, security configuration, and other default settings that support version control and test management.  
+Many of these artifacts depend on WITs which are used to track work. For example, data fields defined in the definition of WITs&mdash;such as, Feature, Bug, User Story, or Task&mdash;are also used to define work item queries and reports. In addition to these artifacts, you can also define the initial project areas and milestones, security configuration, and other default settings that support version control and test management.  
   
  After you create a team project, you can change configurations and customize artifacts. However, by customizing the process template before you create your team projects, all resulting team projects that you create from it will match a standard set of team processes. The main reasons you might want to customize a process template include:  
   
@@ -83,7 +85,7 @@ Process templates consist of nine plug-ins. Each plug-in defines a set of tasks 
   
 ![Process Template Plugins](_img/tfs_pt_plugins.png "TFS_PT_Plugins")  
   
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
@@ -177,13 +179,13 @@ When you add objects to a process template, you will want to make sure that you 
 |![Step 5](_img/procguid_6.png "ProcGuid_6")|**Verify changes to process templates**. Before you put your process template in production mode and use it as the basis for several team projects, you should verify that it is well-defined. You perform this task by systematically verifying that each object and artifact works as expected.<br /><br /> If you added a report, make sure that it appears in Team Explorer. If you added a field, make sure that you didn't introduce any schema conflicts.|  
   
 <a name="add_resources"></a> 
-##Related notes 
+## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
 - [Configure features after an upgrade](../../configure-features-after-upgrade.md)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml-element-reference.md)  
-- [Forum: Team Foundation Server – Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
+- [Forum: Team Foundation Server &mdash;Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
   
 Sometimes third parties make available process templates that they've created. You may need to do extra work after a TFS upgrade when using a process template provided by a third-party as described [Customize your work tracking experience, Maintenance and upgrade implications (TFS)](../../on-premises-xml-process-model.md#before-you-customize).
 

@@ -2,13 +2,16 @@
 title: Version Control - Branching strategies with TFVC
 description: Explore branching strategies and explain how to decide amongst them with Team Foundation Version Control
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc 
-ms.manager: willys
+ms.prod: devops
+ms.technology: devops-code-tfvc 
+ms.manager: douge
 ms.date: 09/09/2017
 ms.author: willys
-author: willys
+author: wpschaub
+ms.topic: conceptual
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Branching strategies with TFVC
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -110,7 +113,7 @@ The TFVC Feature Isolation branching strategy is similar to the Git [topic branc
 
 > Authors: Jesse Houwing, Marcus Fernandez, Mike Fourie, and Willy Schaub
  
-*(c) 2015 Microsoft Corporation.ÿAll rights reserved.ÿThis document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

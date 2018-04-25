@@ -1,13 +1,17 @@
 ---
 title: Ant build and release task
 description: Build with Apache Ant for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Ant
 
@@ -104,12 +108,42 @@ The build agent must have the following capability:
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Ant@1
+  inputs:
+#   buildFile: build.xml
+    options:
+    targets:
+#   publishJUnitResults: true
+#   testResultsFiles: **/TEST-*.xml
+    testRunTitle:
+#   codeCoverageToolOptions: None # None (default), Cobertura, JaCoCo
+#   codeCoverageClassFilesDirectories: .
+    codeCoverageClassFilter:
+    codeCoverageSourceDirectories:
+#   codeCoverageFailIfEmpty: false
+    antHomeDirectory:
+#   javaHomeOption: JDKVersion # JDKVersion (default), Path
+#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
+    jdkUserInputDirectory:
+#   jdkArchitectureOption: x64 # x86, x64 (default)
+```
+
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

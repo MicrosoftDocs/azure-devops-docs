@@ -1,11 +1,13 @@
 ---
-title: Run Coverage tables | VSTS & TFS
-description: Uses FactRunCoverage to query for data.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Run Coverage tables 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Uses FactRunCoverage to query for data in Team Foundation Server
 ms.assetid: 4868da2c-9402-444e-a4a4-6b99e71a27ac
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -25,21 +27,15 @@ You can query for data about how thoroughly a particular test run covered the co
  FactRunCoverage is associated with the following dimension tables:  
   
 -   DimAssembly  
-  
--   DimBuild  
-  
--   DimBuildFlavor  
-  
--   DimBuildPlatform  
-  
--   DimDate  
-  
--   DimPerson  
-  
+-   DimBuild    
+-   DimBuildFlavor    
+-   DimBuildPlatform    
+-   DimDate    
+-   DimPerson   
 -   DimTestRun  
   
 ## Related notes
- [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
- [Code Churn](../excel/code-coverage-excel-report.md)  
- [Build](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-building-an-application)   
- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+-  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
+-  [Code Churn](../excel/code-coverage-excel-report.md)  
+-  [Build](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-building-an-application)   
+-  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

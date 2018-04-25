@@ -1,9 +1,11 @@
 ---
-title: Choose a process | VSTS & TFS  
-description: Choose a process or process template, work with team project artifacts in VSTS or Team Foundation Server (TFS)    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Choose a process
+titleSuffix: VSTS & TFS
+description: Choose a process or process template, work with team project artifacts in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2017
@@ -11,7 +13,7 @@ ms.date: 03/02/2017
 
 # Choose a process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Anytime you create a team project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 
@@ -19,7 +21,7 @@ Anytime you create a team project, you must choose a process or process template
 
 To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
 The work tracking objects contained within the three default processes and process templates&mdash;Agile, CMMI, and Scrum&mdash;are the same and are summarized below. For simplicity, they are referred to as a "process."
 
@@ -33,7 +35,7 @@ provides the most support for formal processes and change management.
 
 Choose the process that provides the best fit for your team.  
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../customize/select-backlog-navigation-levels.md).  
 
 <table valign="top" width="100%">
@@ -428,7 +430,7 @@ Work items from these type definitions are not meant to be created manually and 
 Work item types that are added to the Hidden Types category don't appear in the menus used to create new work items.   
 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**:  If you upgraded your team project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md).  
 >
 >The following WITs were added with the indicated TFS version: 
@@ -450,7 +452,7 @@ See [Customize work tracking objects to support your team's processes](../../cus
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Query based on build and test integration fields](../../track/build-test-integration.md).
 
-## Related notes
+## Related articles
 <a id="term-note"></a>
 
 You can customize a process before or after you create a team project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).    

@@ -1,11 +1,11 @@
 ---
 title: Define global lists | TFS
 description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several team projects and work item types  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 05/23/2017
 ---
@@ -16,7 +16,7 @@ ms.date: 05/23/2017
 
 <b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../import-process/differences.md).
 >
 >The Inheritance process model doesn't support global lists. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -29,7 +29,7 @@ You can share list items among several WITs for a collection by including the li
   
  You can manage global lists for a collection as an XML file that you can list, import, export, and delete. The name of each global list can have up to 254 Unicode characters and must be unique within a collection.  
   
->[!NOTE]  
+> [!NOTE]    
 >There are no system-defined nor predefined global lists specified in the default processes or process templates provides.  
   
 **Requirements**  
@@ -53,7 +53,7 @@ You can define one or more global lists and their items by using one of the foll
 - Within a [global workflow XML definition file](global-workflow-xml-element-reference.md) that you import to a team project collection (On-premises XML). 
  
   
->[!NOTE]  
+> [!NOTE]    
 >For the Hosted XML process model, the following limits are placed on global list import: 
 >- Total of 64 global lists
 >- Total of 512 items per list
@@ -112,14 +112,14 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <GLOBALLISTS>  
-    <GLOBALLIST name="name of global list">  
-        <LISTITEM value="List item 1" />  
-        <LISTITEM value="List item 2" />  
-        <LISTITEM value="List item 3" />  
-        <LISTITEM value="List item 4" />  
-        . . .  
-        <LISTITEM value="List item n" />  
-    </GLOBALLIST>  
+       <GLOBALLIST name="name of global list">  
+          <LISTITEM value="List item 1" />  
+          <LISTITEM value="List item 2" />  
+          <LISTITEM value="List item 3" />  
+          <LISTITEM value="List item 4" />  
+          . . .  
+          <LISTITEM value="List item n" />  
+       </GLOBALLIST>  
 </GLOBALLISTS>  
 ```  
   
@@ -128,10 +128,10 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <GLOBALLISTS>  
-   <GLOBALLIST name=" name of global list 1" />  
-   <GLOBALLIST name=" name of global list 2" />  
-   . . .  
-   <GLOBALLIST name=" name of global list n" />  
+      <GLOBALLIST name=" name of global list 1" />  
+      <GLOBALLIST name=" name of global list 2" />  
+      . . .  
+      <GLOBALLIST name=" name of global list n" />  
 </GLOBALLISTS>  
 ```  
 
@@ -145,26 +145,26 @@ To add a global list to a project collection, you can import the following synta
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
-    <GLOBALLIST name="NameOfGlobalList">  
-        <LISTITEM value="ListItem1" />  
-        <LISTITEM value="ListItem2" />  
-        <LISTITEM value="ListItem3" />  
-        <LISTITEM value="ListItem4" />  
-        . . .  
-        <LISTITEM value="ListItemN" />  
-    </GLOBALLIST>  
+       <GLOBALLIST name="NameOfGlobalList">  
+         <LISTITEM value="ListItem1" />  
+         <LISTITEM value="ListItem2" />  
+         <LISTITEM value="ListItem3" />  
+         <LISTITEM value="ListItem4" />  
+         . . .  
+         <LISTITEM value="ListItemN" />  
+       </GLOBALLIST>  
 </gl:GLOBALLISTS>  
 ```  
   
  A global list cannot be empty. Each `GLOBALLIST` element must have at least one `LISTITEM` element defined.  
   
-## Related notes
+## Related articles
 
 - [Manage global lists](witadmin/manage-global-lists-for-work-item-types.md)   
 - [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?  
-Yes for on-premises TFS. The global list named **Builds**–*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
+Yes for on-premises TFS. The global list named **Builds**"“*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
   
 To learn more about using this list, see [Query based on build and test integration fields](../../track/build-test-integration.md).  
   

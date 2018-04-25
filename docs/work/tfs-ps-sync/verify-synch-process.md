@@ -1,13 +1,17 @@
 ---
-title: Verify the synchronization process for TFS-Project Server integration | TFS
-description: Verify the synchronization process for TFS-Project Server integration when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Verify the synchronization process for TFS-Project Server integration
+titleSuffix: TFS 
+description: Verify the synchronization process for the integration of Team Foundation Server & Project Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 767af0db-6c5d-4c1e-b2a3-8b4ffbd8ff6d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
+
+
 # Verify the synchronization process for TFS-Project Server integration
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -35,6 +39,6 @@ ms.date: 01/12/2017
   
  If you have reviewed these suggestions and you still suspect a problem, visit the following forum on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
   
-## Related notes  
+## Related articles  
  [Known issues and workarounds](known-issues-and-workarounds.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

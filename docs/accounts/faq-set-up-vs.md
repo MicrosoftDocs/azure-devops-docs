@@ -1,23 +1,25 @@
 ---
-title: Troubleshoot seting up Visual Studio with VSTS
-description: Troubleshoot seting up Visual Studio with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Troubleshoot setting up Visual Studio with VSTS
+description: Troubleshoot setting up Visual Studio with VSTS
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/09/2017
+monikerRange: 'vsts'
 ---
-
-#	Troubleshoot setting up Visual Studio with VSTS
+# Troubleshoot setting up Visual Studio with VSTS
 
 **VSTS**
 
-
-## Visual Studio 
+## Visual Studio
 
 <a name="why-sign-in"></a>
-####Q: Why sign in?
+
+### Q: Why sign in?
 
 A:	Your Visual Studio settings, 
 like automatic brace completion, 
@@ -40,7 +42,8 @@ Learn more about
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
 
 <a name="cannot-sign-in"></a>
-####Q: Why can't I sign in?
+
+### Q: Why can't I sign in?
 
 A:	To create a profile and save your settings, 
 you'll need to sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
@@ -51,17 +54,17 @@ that's managed by Azure Active Directory.
 
 [!INCLUDE [visual-studio-versions](../_shared/qa-visual-studio-versions.md)]
 
-####Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
+### Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
 
 A:	Yes, you can run all these versions on the same computer.
 
-####Q:	My subscription expired. What do I do?
+### Q:	My subscription expired. What do I do?
 
 A:	Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
 If you're having subscription problems, 
 try [Subscription Support](https://www.visualstudio.com/support/subscription-support-vs).
 
-####Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
+### Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
 
 A:	Learn more about:
 
@@ -71,11 +74,11 @@ A:	Learn more about:
 
 Or contact [Visual Studio Support](https://www.visualstudio.com/support/support-overview-vs). 
 
-
 ## VSTS
 
 <a name="WhatIsVSO"></a>
-####Q: How can I create a VSTS account later?
+
+### Q: How can I create a VSTS account later?
 
 A:	Learn how to [sign up for VSTS](create-account-msa-or-work-student.md).
 
@@ -88,10 +91,11 @@ A:	Learn how to [sign up for VSTS](create-account-msa-or-work-student.md).
 [!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
 <a name="change-location"></a>
-####Q: Can I change my VSTS account location?
+
+### Q: Can I change my VSTS account location?
 
 A:	Yes, for a better experience, 
-you can change your account's location during signup 
+you can change your account's location during sign up
 so that your account is closest to most users.
 
 ![Change account location](_img/set-up-vs/change-location.png)
@@ -109,4 +113,3 @@ where VSTS is available.
 [!INCLUDE [delete-account](../_shared/qa-delete-account.md)]
 
 [!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
-

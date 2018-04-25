@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Finish and test the definition
 
 [//]: # (Todo: Convert this to a shared blurb and use in all three scenarios after reviews are done and branches are merged.)

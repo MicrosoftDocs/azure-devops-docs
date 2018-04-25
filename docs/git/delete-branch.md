@@ -2,12 +2,16 @@
 title: Delete a branch in your Git repo | VSTS & TFS
 description: Use the branches page to delete a Git branch in VSTS or Team Foundation Server
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/07/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Delete a Git branch from the web portal
 

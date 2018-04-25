@@ -1,18 +1,20 @@
 ---
-title: Add type definitions for work items to a process template | VSTS & TFS
-description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add type definitions for work items to a process template
+titleSuffix: VSTS & TFS
+description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in for Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: c0cec71f-89ad-43f5-960e-6008e3f9d975
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 
 
 # Add type definitions for work items to a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Work item types (WITs) provide the foundation for all tracking, monitoring, and reporting on the development of a product and its features. A WIT defines the data fields, the workflow, and the work item form for an item of work that you will track. Types of work items include bugs, user stories, and tasks. 
 
@@ -65,24 +67,24 @@ The following example shows how to specify a task that creates the following WIT
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">  
-   <dependencies>  
-      <dependency taskId="LinkTypes" />  
-   </dependencies>  
-   <taskXml>  
-      <WORKITEMTYPES>  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
+      <dependencies>  
+      <dependency taskId="LinkTypes" />  
+      </dependencies>  
+      <taskXml>  
+      <WORKITEMTYPES>  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewResponse.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Feature.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackResponse.xml" />   
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\SharedStep.xml" />  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
-        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
-      </WORKITEMTYPES>  
-   </taskXml>  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
+         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
+      </WORKITEMTYPES>  
+      </taskXml>  
 </task>  
 ```  
   
@@ -96,9 +98,9 @@ The following example shows how to specify a task that creates the following WIT
 |Element| Description and syntax|  
 |-------------|------------|
 |**WORKITEMTYPE**|Required child element of **WORKITEMTYPES**. Specifies the path and name of the file that contains a type definition to upload.<br /> `<WORKITEMTYPE fileName="WITFilePathName" />`|  
-|**WORKITEMTYPES**|Required child element of the WorkItemTracking plug-in. Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload. <br/><code>&lt;WORKITEMTYPES&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;WORKITEMTYPE /&gt;   . . . <br/>&lt;/WORKITEMTYPES&gt; </code>  |  
+|**WORKITEMTYPES**|Required child element of the WorkItemTracking plug-in. Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload. <br/><code>&lt;WORKITEMTYPES&gt; <br/>      &lt;WORKITEMTYPE /&gt;   . . . <br/>&lt;/WORKITEMTYPES&gt; </code>  |  
   
-## Related notes
+## Related articles
 -  [All WITD elements](../all-witd-xml-elements-reference.md)   
 -  [Modify a field or add a custom field](../../add-modify-field.md)   
 -  [Add or modify a work item type ](../../add-modify-wit.md)   

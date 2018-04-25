@@ -1,14 +1,18 @@
 ---
-title: Plan and track work | VSTS
-description: Begin planning and tracking work in your new team project on Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+title: Plan and track work 
+titleSuffix: VSTS
+description: Begin planning and tracking work in your new team project on Visual Studio Team Services  
+ms.technology: devops-new-user 
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 12/11/2017
 ---
+
 
 # Plan and track work 
 
@@ -19,7 +23,9 @@ You add work items to plan and manage your project. You use different types of w
 Here we show how to add work items from the web portal and view work items you've created. 
 
 <a id="define-new-work">  </a>
+
 ## Prerequisites
+
 You can start adding work items once you connect to a team project. If you don't have an account or  team project yet, create one in [VSTS](sign-up-invite-teammates.md).
 
 ## Add a work item 

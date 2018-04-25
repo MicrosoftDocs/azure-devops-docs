@@ -1,18 +1,20 @@
 ---
-title: Add link type definitions to a process template | VSTS & TFS
-description: Define additional types of links that team members can create between work items for a team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Add link type definitions to a process template 
+titleSuffix: TFS
+description: Define additional types of links that team members can create between work items for a team project for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 
 # Add link type definitions to a process template
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define additional link types that team members can create between work items for a team project. A link type defines the labels and rules that govern the relationships or links between work items of that type. The link types that you specify supplement the default types for hierarchical, dependent, and related links. 
 
@@ -55,12 +57,12 @@ The following example shows how to specify a task that creates the two types of 
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  
-   <taskXml>  
-      <LINKTYPES>  
-         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />  
-         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
-      </LINKTYPES>  
-   </taskXml>  
+      <taskXml>  
+      <LINKTYPES>  
+         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />  
+         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
+      </LINKTYPES>  
+      </taskXml>  
 </task>  
 ```  
   
@@ -75,11 +77,11 @@ The following example shows how to specify a task that creates the two types of 
 |Element|Description and syntax|  
 |-------------|------------|
 |**LINKTYPE**|Required child element of **LINKTYPES**.Specifies the path and name of a file that contains a link type definition to upload.<br />`<LINKTYPE fileName="LinkTypeFilePathName" />`<br /> |  
-|**LINKTYPES**|Optional child element of the WorkItemTracking plug-in. Contains a collection of **LINKTYPE** elements that each specify a definition file to upload.<br/><code>&lt;LINKTYPES&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;LINKTYPE /&gt;   . . . <br/>&lt;/LINKTYPES&gt; </code> |  
+|**LINKTYPES**|Optional child element of the WorkItemTracking plug-in. Contains a collection of **LINKTYPE** elements that each specify a definition file to upload.<br/><code>&lt;LINKTYPES&gt; <br/>      &lt;LINKTYPE /&gt;   . . . <br/>&lt;/LINKTYPES&gt; </code> |  
   
 
 
-## Related notes
+## Related articles
 -  [Manage link types](../witadmin/manage-link-types.md)   
 -  [Define a custom link type](../define-custom-link-type.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

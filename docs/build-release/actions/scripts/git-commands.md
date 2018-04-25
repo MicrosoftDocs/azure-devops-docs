@@ -1,13 +1,17 @@
 ---
 title: Run Git commands in a script
 description: Run a Git command in a build script on Team Foundation Server or VSTS.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/12/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Run Git commands in a script
 
@@ -163,6 +167,8 @@ When you set ```system.prefergit``` to ```true```, the build process uses Git.ex
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

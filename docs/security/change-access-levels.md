@@ -2,20 +2,23 @@
 title: How to change access levels for a user or group 
 titleSuffix: TFS 
 description: Provide access to web portal users based on their license for stakeholder, basic, advanced, or VS Enterprise via Team Foundation Server
-ms.technology: vs-devops-admin
-ms.prod: vs-devops-alm
+ms.technology: devops-security
+ms.prod: devops
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
+ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 11/28/2017
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ---
 
 # Change access levels
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs).
 
 To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
@@ -27,9 +30,9 @@ For a simplified overview of the permissions assigned to the most common groups&
 
 Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
 
-
 <a id="manage-access" >  </a>
-## Open the administrative context, Access levels  
+
+## Open the administrative context, Access levels
 
 You manage access levels for all collections defined on the application tier for TFS. The default access level you set applies to all team projects defined for all collections. Users or groups that you add to teams, team projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, you add them specifically to one of the other, non-default access levels.
 
@@ -38,6 +41,7 @@ You manage access levels for all collections defined on the application tier for
 
 From a user context, open the admin context by clicking the ![gear icon](../work/_img/icons/gear_icon.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
  
+::: moniker range=">= tfs-2017"
 
 ### TFS 2018, TFS 2017 
 
@@ -51,7 +55,11 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
-### TFS 2015, TFS 2013 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+### TFS 2015, TFS 2013
 
 1. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the administration context. 
 
@@ -63,14 +71,16 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
+::: moniker-end
 
 <a id="set-default" >  </a>
+
 ## Change the default access level
 
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or Advanced level will be limited to the features provided through Stakeholder access.
 
 >[!IMPORTANT]  
->Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
+>Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
 
 You set an access level from its page. Click Set as default access level as shown.
 
@@ -78,23 +88,25 @@ You set an access level from its page. Click Set as default access level as show
 
 
 <a id="add-user" >  </a>
-## Set the access level for a user or group  
+
+## Set the access level for a user or group
 
 If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](../tfs-server/admin/setup-ad-groups.md) and add individuals to those groups.
 
-
 <a id="guide-features-access" >  </a>
+
 ## Guide to features and access levels
 
 You can learn more about each of the features you have access to from the following topics. Basic  includes all features supported by Stakeholder, and Advanced includes access to all features supported by Basic.
 
 
-> [!div class="mx-tdBreakAll"]  
-> | Stakeholder access<sup> 1</sup> | Basic access<sup> 5</sup> | Advanced access (TFS 2017, TFS 2015, TFS 2013) |  
+> [!div class="mx-tdBreakAll"]
+> | Stakeholder access<sup> 1</sup> | Basic access<sup> 5</sup> | Advanced access (TFS 2017, TFS 2015, TFS 2013) |
 > |-------------|----------| ----------| 
-> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../build-release/actions/view-manage-releases.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../feedback/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../build-release/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- [Create and manage releases](../build-release/actions/create-deploy-releases.md)<sup> 4</sup><br/>- [Author release definitions](../build-release/concepts/definitions/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017.2, TFS 2018)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
+> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../build-release/concepts/definitions/release/index.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../feedback/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../build-release/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- Create and manage releases<sup> 4</sup><br/>- [Author release definitions](../build-release/concepts/definitions/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017.2, TFS 2018)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
 
-#### Notes:
+### Notes:
+
 1.	With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.)
 Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 2.	Standard features include access to the Home and Work hubs.
@@ -112,10 +124,12 @@ Also, stakeholders can create and modify work items using Team Foundation client
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
 
 - [Permissions and group reference](permissions.md)   
-- [About teams and team tools](../teams/about-teams-and-settings.md)   
+- [About teams and team tools](../settings/about-teams-and-settings.md)   
 
-## Related notes  
+## Related articles
+
 <a id="test-manager"  >  </a>
+
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Permissions & access](permissions-access.md)  

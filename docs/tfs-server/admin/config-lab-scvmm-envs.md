@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Configure Lab Management for SCVMM environments and Team Foundation Server
 
@@ -88,7 +91,7 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Windows Server 2008 R2 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions.
 
-  Windows Server 2008 R2�Server Core installation, Standard, Enterprise, and Datacenter Editions.
+  Windows Server 2008 R2-Server Core installation, Standard, Enterprise, and Datacenter Editions.
 
   Windows Server 2008 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions with Service Pack 2.
 

@@ -1,13 +1,15 @@
 ---
 title: Define query as a hyperlink
-description: Construct a URL for a query using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile 
+titleSuffix: VSTS & TFS
+description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: vs-azure-devops-agile 
 ms.article:   
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: 
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+ 
 ms.date: 09/29/2017  
 ---
 
@@ -15,7 +17,7 @@ ms.date: 09/29/2017
 
 # Define a query as a hyperlink  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="define-query-hyperlink" />  
 
@@ -25,7 +27,7 @@ VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. Yo
 
 TFS 2013 and previous versions didn't require encoding.  
 
->[!NOTE]  
+> [!NOTE]    
 >Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
 
@@ -93,9 +95,10 @@ SELECT [System.ID], [System.Title], [System.State]
 ```
 
 
-## Related notes: 
+## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
+- [REST API, Wiql](https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql)
  
 > [!NOTE]  
 > For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

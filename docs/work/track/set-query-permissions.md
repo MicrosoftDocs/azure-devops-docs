@@ -1,18 +1,20 @@
 ---
-title: Set query permissions | VSTS & TFS  
-description: How to guide for setting permissions on work item queries when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) item types  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Set query permissions
+titleSuffix: VSTS & TFS
+description: How to set permissions on work item queries and folders when working in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 11/07/2017
 ---
 
 
 # Set permissions on queries and query folders
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 As with most team project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
@@ -63,7 +65,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 	<img src="_img/set-permissions-deny-for-query.png" alt="Permissions dialog for a query, set to deny" style="border: 1px solid #C3C3C3;" />  
 
-## Related notes  
+## Related articles  
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 

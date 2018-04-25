@@ -2,11 +2,14 @@
 title: Configuration and system variables for Release Management
 description: Configuration variables and system variables for Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/04/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Configuration variables and system variables

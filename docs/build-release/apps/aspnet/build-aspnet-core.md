@@ -1,14 +1,17 @@
 ---
 title: CI build for an ASP.NET Core app
 description: Define a continuous integration (CI) build process for your an ASP.NET Core app in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.manager: douge
 ms.author: alewis
-ms.date: 12/20/2017
-ms.topic: get-started-article
+author: andyjlewis
+ms.date: 04/18/2018
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your ASP.NET Core app
 
@@ -25,6 +28,8 @@ As you walk through this quickstart, we'll ask you to choose:
 * For continuous deployment, what is your target: Azure web app or IIS server in a Windows VM, a Linux VM, or a Docker container.
 
 As you choose from these options in the sections below, this topic will adapt to your choices.
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
 
 ## Prerequisites
 
@@ -50,7 +55,17 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 # [GitHub repo](#tab/github)
 
+::: moniker range="vsts"
+
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+GitHub is not available in TFS.
+
+::: moniker-end
 
 ---
 
@@ -64,15 +79,13 @@ Do you want to define your build process in your web browser or configure it as 
 
 # [Web](#tab/web)
 
-**VSTS | TFS**
-
 Choose this option if you prefer a graphical interface in your web browser.
 
 ![PowerShell script task says "Hello World"](../../_shared/_img/powershell-script-hello-world.png)
 
 # [YAML](#tab/yaml)
 
-**VSTS**
+::: moniker range="vsts"
 
 Choose this option if you want the advantages of configuration as code. This means your definition is versioned with your code and follows the same branching structure as your code. 
 
@@ -84,6 +97,14 @@ steps:
 This choice also offers parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
 [Learn more about YAML builds](../../actions/build-yaml.md).
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
 
 ---
 
@@ -109,6 +130,8 @@ Begin by creating your build definition.
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
+::: moniker range="vsts"
+
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
@@ -117,7 +140,17 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 1. Replace the contents of the file with code from the next section.
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
+
 # [GitHub repo](#tab/github/web)
+
+::: moniker range="vsts"
 
 In VSTS:
 
@@ -127,13 +160,31 @@ In VSTS:
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+GitHub is not available in TFS.
+
+::: moniker-end
+
 # [GitHub repo](#tab/github/yaml)
+
+::: moniker range="vsts"
 
 To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
 
 In GitHub:
 
 1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
 
 ---
 
@@ -146,13 +197,17 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code. Proceed to finish the CI process definition.
+All the tasks you need were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes. Proceed to finish the CI process definition.
 
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
 
-```yaml
-steps:
+::: moniker range="vsts"
 
+```yaml
+queue: 
+  name: Hosted Linux Preview
+
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -190,6 +245,15 @@ steps:
 
 Commit the above change to the master branch.
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
+
+
 # [Linux VM](#tab/deploy-linux/web)
 
 To prepare your CI build to deploy to a Linux VM:
@@ -204,9 +268,13 @@ This change causes the build to publish a set of uncompressed files and folders 
 
 # [Linux VM](#tab/deploy-linux/yaml)
 
-```yaml
-steps:
+::: moniker range="vsts"
 
+```yaml
+queue: 
+  name: Hosted Linux Preview
+
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -244,9 +312,15 @@ steps:
 
 Commit the above change to the master branch.
 
-# [Container](#tab/deploy-container/web)
+::: moniker-end
 
-To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
+
+# [Container](#tab/deploy-container/web)
 
 1. Select **Tasks**.
 
@@ -262,14 +336,18 @@ To deploy to a container service (such as Azure web apps for containers, or a Ku
 
 1. Select the **Publish build artifacts** task, and then disable or remove it.
 
-> **Why do this?** 
-You don't need artifacts to deploy to a container.
+ > **Why do this?** 
+ You will package and publish the web application as a container. There is no need to publish the web application files separately as an artifact to VSTS or TFS.
 
 # [Container](#tab/deploy-container/yaml)
 
-```yaml
-steps:
+::: moniker range="vsts"
 
+```yaml
+queue: 
+  name: Hosted Linux Preview
+
+steps:
 - task: dotNetCoreCLI@1
   inputs:
     command: restore
@@ -300,6 +378,14 @@ steps:
 
 Commit the above change to the master branch.
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
+
 ---
 
 ## Finish the CI process definition
@@ -310,9 +396,9 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Linux build agent](../../actions/agents/v2-linux.md) on a machine that has Docker and is configured to run containers.
 
 1. Select **Get sources** and then:
 
@@ -326,6 +412,8 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
+::: moniker range="vsts"
+
 1. Navigate to the **Build and Release** hub.
 
 1. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
@@ -336,11 +424,21 @@ For this example, to learn some of the basics, you changed the YAML file to use 
 
 The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS.
+
+::: moniker-end
+
 # [GitHub repo](#tab/github/web)
+
+::: moniker range="vsts"
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
@@ -354,7 +452,18 @@ The changes you made also modified what the build does. For example, the `dotnet
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
+::: moniker-end
+
+::: moniker range="< vsts"
+
+GitHub is not available in TFS.
+
+::: moniker-end
+
+
 # [GitHub repo](#tab/github/yaml)
+
+::: moniker range="vsts"
 
 In VSTS:
 
@@ -366,7 +475,7 @@ In VSTS:
 
 1. Select **Process**.
 
-1. For the **Agent queue** select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
 
@@ -381,6 +490,14 @@ For this example, to learn some of the basics, you changed the YAML file to use 
 The changes you made also modified what the build does. For example, the `dotnet restore` command you replaced creates .DLL files, but it doesn't create a web deployment file. After you've completed the above steps, your build instead uses the `dotNetCoreCLI` task, which in addition to creating the .DLL file, also creates a web deployment package (a .ZIP file) that is more efficient to deploy.
 
 [//]: # (TODO: Add link to GitHub tutorial after advice is added there on authentication)
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not available in TFS. 
+
+::: moniker-end
 
 ---
 
@@ -417,7 +534,7 @@ See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a container for your app](../containers/build.md).
+See [Build and push a Docker image](../containers/build.md).
 
 ---
 
@@ -427,4 +544,4 @@ Now that you have a CI build process for your master branch, you can extend the 
 
 * [CI builds for Git in VSTS](../../actions/ci-build-git.md)
 
-* [CI builds for GitHub](../../actions/ci-build-github.md)
+* [CI builds for GitHub](../../actions/ci-build-github.md) 

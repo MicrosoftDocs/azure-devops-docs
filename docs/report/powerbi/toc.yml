@@ -2,15 +2,35 @@
   href: index.md
 - name: Overview
   items:
-  - name: Power BI Integration overview
+  - name: Power BI integration
     href: overview.md
+  - name: What are Analytics views?
+    href: ../analytics/what-are-analytics-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+- name: Quickstarts
+  items:
+  - name: Create a report using an Analytics view
+    href: create-quick-report.md
+- name: Tutorials
+  items:
+  - name: Create an Analytics view
+    href: ../analytics/analytics-views-create.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Manage Analytics views
+    href: ../analytics/analytics-views-manage.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+- name: Concepts
+  items:
+  - name: Data available
+    href: ../analytics/data-available-in-analytics.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Default Analytics views
+    href: ../analytics/analytics-default-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 
     href: data-connector-connect.md
-  - name: Connect using OData feed
+  - name: Connect using OData
     href: access-analytics-power-bi.md
-  - name: Connect using VSTS functions (Advanced)
+  - name: Connect using Power Query (Advanced)
     href: data-connector-functions.md
   - name: Client authentication 
     href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
@@ -20,25 +40,31 @@
     href: ../analytics/analytics-security.md
 - name: Samples
   items:
-  - name: Example Power BI Reports using the Data Connector
+  - name: Active bugs report 
+    href: active-bugs-sample-report.md
+  - name: Example reports 
     href: data-connector-examples.md
-- name: References
+- name: Troubleshooting
   items:
-  - name: Data available in the VSTS Data Connector
-    href: data-connector-available-data.md
+  - name: Resolve errors with an Analytics view
+    href: ../analytics/troubleshooting-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Work item field index
+    href: ../../work/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+  - name: Dataset design 
+    href: data-connector-dataset.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
   - name: "Analytics (VSTS)"
     href: ../analytics/index.md
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
-  - name: "Dashboard & Widgets"
+  - name: Dashboards
     href: ../dashboards/index.md
   - name: Power BI Desktop
-    href: https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/
+    href: https://docs.microsoft.com/power-bi/desktop-getting-started
   - name: Power BI Documentation
-    href: https://powerbi.microsoft.com/documentation/powerbi-landing-page/
+    href: https://docs.microsoft.com/en-us/power-bi/
   - name: "Developer Community: PowerBI support forum"
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
-  - name: "User Voice: Reporting feature request"
-    href: https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/category/145257-dashboards-and-reporting

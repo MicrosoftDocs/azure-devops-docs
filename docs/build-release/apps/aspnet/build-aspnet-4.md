@@ -1,14 +1,17 @@
 ---
 title: Build your ASP.NET 4 app
 description: Define a continuous integration (CI) build for your ASP.NET 4 app in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 12/20/2017
-ms.topic: get-started-article
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your ASP.NET 4 app
 
@@ -36,7 +39,17 @@ https://github.com/adventworks/aspnet4-sample
 
 # [GitHub repo](#tab/github)
 
+::: moniker range="vsts"
+
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+**TFS**: Does not apply.
+
+::: moniker-end
 
 ---
 
@@ -60,19 +73,37 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  # [GitHub repo](#tab/github)
 
+ ::: moniker range="vsts"
+
  Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
- ---
+ ::: moniker-end
+
+ ::: moniker range="< vsts"
+
+ **TFS**: Does not apply.
+
+ ::: moniker-end
+
+  ---
 
 1. In the right panel, click **ASP.NET**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
+ ::: moniker range="vsts"
+
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+ 
+ ::: moniker-end
+
+ ::: moniker range="< vsts"
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ 
+ ::: moniker-end
 
 1. Click **Get sources** and then:
 
@@ -82,7 +113,17 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  # [GitHub repo](#tab/github)
 
+ ::: moniker range="vsts"
+
  Select your version control repository. You'll need to authorize access to your repo.
+
+ ::: moniker-end
+
+ ::: moniker range="< vsts"
+
+ **TFS**: Does not apply.
+
+ ::: moniker-end
 
  ---
 

@@ -1,11 +1,14 @@
 ---
-title: Control XML element reference | VSTS & TFS
+title: Control XML element reference
+titleSuffix: TFS  
 description: Use the control element to define a work item field, text, hyperlink, or other element to display in a work item form - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 5fe3a3ce-6dc5-4e58-9c20-2885f38c6f13
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 06/16/2017
 ---
 
@@ -13,7 +16,7 @@ ms.date: 06/16/2017
 
 **TFS 2015 | TFS 2013**
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
@@ -96,7 +99,7 @@ For an example of each control type, see [Specify work item form controls](speci
   Label="Area" LabelPosition="Left" Padding="(2,0,2,0)" Margin="(2,2,2,2)" />  
 ```  
 
-## Related notes
+## Related articles
   
 - [All FORM elements](all-form-xml-elements-reference.md)   
 - [Specify work item form controls](specify-work-item-form-controls.md)  

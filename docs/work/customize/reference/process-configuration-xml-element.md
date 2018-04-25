@@ -2,17 +2,17 @@
 title: ProcessConfiguration syntax 
 titleSuffix: VSTS & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017  
 ---
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to team project.
 
@@ -37,12 +37,12 @@ Areas that you can customize through ProcessConfiguration:
 2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
 3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >If you want to customize your team project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../add-portfolio-backlogs.md).  
 
 ### Update the process configuration 
 
->[!NOTE]  
+> [!NOTE]    
 >To access the latest version of the process templates, install the latest version of TFS and download the templates using the [Process Template Manager](../../work-items/guidance/manage-process-templates.md).
 
 To update the process configuration for a team project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](witadmin/witadmin-import-export-process-configuration.md).
@@ -70,12 +70,12 @@ You configure backlogs within the XML sections that appear in the following samp
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <PortfolioBacklogs>
-   <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" workItemCountLimit="1000">
+      <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" workItemCountLimit="1000">
 . . . 
-   </PortfolioBacklog>
-   <PortfolioBacklog category="Microsoft.FeatureCategory" pluralName="Features" singularName="Feature" parent="Microsoft.EpicCategory" workItemCountLimit="1000">
+      </PortfolioBacklog>
+      <PortfolioBacklog category="Microsoft.FeatureCategory" pluralName="Features" singularName="Feature" parent="Microsoft.EpicCategory" workItemCountLimit="1000">
 . . . 
-   </PortfolioBacklog>
+      </PortfolioBacklog>
 </PortfolioBacklogs>
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="User Story" workItemCountLimit="1000">
 . . . 
@@ -109,10 +109,10 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p>Optional. Up to five instances.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for a portfolio backlog.</p>
 <pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot;  
-      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
-   &lt;States&gt; . . . &lt;/States&gt;  
-   &lt;Columns&gt; . . . &lt;/Columns&gt;  
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
+      &lt;States&gt; . . . &lt;/States&gt;  
+      &lt;Columns&gt; . . . &lt;/Columns&gt;  
+      &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
 &lt;/PortfolioBacklog &gt;  
 </code></pre>
 
@@ -130,11 +130,11 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p>Required. One instance only.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for the product backlog. The product backlog displays all active items in the team's backlog.</p>
 <pre><code>&lt;RequirementBacklog category=&quot;RequirementCategory&quot;  
-      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;   
-      workItemCountLimit=&quot;MaximumLimit&quot; &gt;  
-   &lt;States&gt; . . . &lt;/States&gt;
-   &lt;Columns&gt; . . . &lt;/Columns&gt;
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;   
+      workItemCountLimit=&quot;MaximumLimit&quot; &gt;  
+      &lt;States&gt; . . . &lt;/States&gt;
+      &lt;Columns&gt; . . . &lt;/Columns&gt;
+      &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
 &lt;/RequirementBacklog &gt;
 </code></pre>
 </td>
@@ -145,7 +145,7 @@ You configure backlogs within the XML sections that appear in the following samp
 <p>Container element used to customize the layout of sprint backlogs.</p>
 <pre><code>&lt;TaskBacklog category=&quot;Microsoft.TaskCategory&quot; pluralName=&quot;Tasks&quot; 
 singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
-. . . 
+. . . 
 &lt;/TaskBacklog &gt; 
 </code></pre>
 </td>
@@ -171,13 +171,13 @@ By associating each workflow state to a state category, the background operation
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
-   <States>
-      <State value="New" type="Proposed" />
-      <State value="Approved" type="Proposed" />
-      <State value="Committed" type="InProgress" />
-      <State value="Done" type="Complete" />
-   </States>
- . . .
+      <States>
+      <State value="New" type="Proposed" />
+      <State value="Approved" type="Proposed" />
+      <State value="Committed" type="InProgress" />
+      <State value="Done" type="Complete" />
+      </States>
+ . . .
 </RequirementBacklog>
 ```
 
@@ -248,11 +248,11 @@ Here's the default configuration defined by the Scrum process template for the p
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <Columns>
-   <Column refname="Microsoft.VSTS.Common.Priority" width="400" />
-   <Column refname="System.Title" width="400" />
-   <Column refname="System.State" width="100" />
-   <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
-   <Column refname="System.IterationPath" width="200" />
+      <Column refname="Microsoft.VSTS.Common.Priority" width="400" />
+      <Column refname="System.Title" width="400" />
+      <Column refname="System.State" width="100" />
+      <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
+      <Column refname="System.IterationPath" width="200" />
 </Columns>
 ```
 
@@ -298,9 +298,9 @@ The following code corresponds to the default assignments defined in the Visual 
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <AddPanel>
-   <Fields>
-      <Field refname="System.Title" />
-   </Fields>
+      <Fields>
+      <Field refname="System.Title" />
+      </Fields>
 </AddPanel>
 ```
 
@@ -356,16 +356,16 @@ State category mappings are defined for additional WIT categories. For the Scrum
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FeedbackRequestWorkItems category="Microsoft.FeedbackRequestCategory" pluralName="Feedback Requests" singularName="Feedback Request">
-   <States>
-      <State value="Active" type="InProgress" />
-      <State value="Closed" type="Complete" />
-   </States>
+      <States>
+      <State value="Active" type="InProgress" />
+      <State value="Closed" type="Complete" />
+      </States>
 </FeedbackRequestWorkItems>
 <FeedbackResponseWorkItems category="Microsoft.FeedbackResponseCategory" pluralName="Feedback Responses" singularName="Feedback Response">
-   <States>
-   <State value="Active" type="InProgress" />
-   <State value="Closed" type="Complete" />
-   </States>
+      <States>
+      <State value="Active" type="InProgress" />
+      <State value="Closed" type="Complete" />
+      </States>
 </FeedbackResponseWorkItems>
 ```
 
@@ -387,10 +387,10 @@ The following table describes the additional elements used to define the state c
 <td><p>Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the <strong>My Work</strong> feature in Team Explorer updates the bug state as developers move bugs using <strong>My Work</strong>. To learn more, see [Get your code reviewed (TFVC)](../../../tfvc/get-code-reviewed-vs.md).</p>
 
 <pre><code>&lt;BugWorkItems category=&quot;CategoryName&quot;  
-      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
-   &lt;States&gt;
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+      &lt;States&gt;
 . . .
-   &lt;/States&gt;
+      &lt;/States&gt;
 &lt;/BugWorkItems&gt;</code></pre>
 </td>
 </tr>
@@ -399,10 +399,10 @@ The following table describes the additional elements used to define the state c
 <td><p>Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback request category.</p>
 
 <pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot;  
-      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
-   &lt;States&gt;
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+      &lt;States&gt;
 . . .
-   &lt;/States&gt;
+      &lt;/States&gt;
 &lt;/FeedbackRequestWorkItems&gt;</code></pre>
 </td>
 </tr>
@@ -411,10 +411,10 @@ The following table describes the additional elements used to define the state c
 <td><p>Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback response category.</p>
 
 <pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot;  
-      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
-   &lt;States&gt;
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+      &lt;States&gt;
 . . .
-   &lt;/States&gt;
+      &lt;/States&gt;
 &lt;/FeedbackResponseWorkItems&gt;</code></pre>
 </td>
 </tr>
@@ -424,13 +424,13 @@ The following table describes the additional elements used to define the state c
 <p>Container element that defines the state category mappings for work item types assigned to the Test Plan Category. For example:</p>
 
 <pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot;  
-      pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
-    &lt;States&gt;
-      &lt;State type=&quot;InProgress&quot; value=&quot;Design&quot; /&gt;
-      &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
-      &lt;State type=&quot;Complete&quot; value=&quot;Signed Off&quot; /&gt;
-    &lt;/States&gt;
-  &lt;/TestPlanWorkItems&gt;</code></pre>
+      pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
+       &lt;States&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Design&quot; /&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
+            &lt;State type=&quot;Complete&quot; value=&quot;Signed Off&quot; /&gt;
+       &lt;/States&gt;
+  &lt;/TestPlanWorkItems&gt;</code></pre>
 </td>
 </tr>
 <tr>
@@ -439,21 +439,21 @@ The following table describes the additional elements used to define the state c
 <p>Container element that defines the state category mappings for work item types assigned to the Test Suite Category. For example:</p>
 
 <pre><code>&lt;TestSuiteWorkItems  
-      category=&quot;Microsoft.TestSuiteCategory&quot;  
-      pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
-    &lt;States&gt;
-      &lt;State type=&quot;Proposed&quot; value=&quot;Authoring&quot; /&gt;
-      &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
-      &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
-    &lt;/States&gt;
-  &lt;/TestSuiteWorkItems&gt;</code></pre>
+      category=&quot;Microsoft.TestSuiteCategory&quot;  
+      pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
+       &lt;States&gt;
+            &lt;State type=&quot;Proposed&quot; value=&quot;Authoring&quot; /&gt;
+            &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
+            &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
+       &lt;/States&gt;
+  &lt;/TestSuiteWorkItems&gt;</code></pre>
 
 <p></p></td>
 </tr>
 </tbody>
 </table>
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](../new-features-added.md#test-management).  
 
 
@@ -549,9 +549,9 @@ You should not have to change the default assignments made for the following <st
 <pre><code>&lt;TypeFieldValue value=&quot;ApplicationTypeName&quot; type=&quot;TypeApp&quot;/&gt;</code></pre>
 <p>The default assignments correspond to the allowed values specified in the type definition for the feedback request form.</p>
 <pre><code>&lt;TypeFieldValues&gt;
-   &lt;TypeFieldValue value=&quot;Web application&quot; type=&quot;WebApp&quot; /&gt;
-   &lt;TypeFieldValue value=&quot;Remote machine&quot; type=&quot;RemoteMachine&quot; /&gt;
-   &lt;TypeFieldValue value=&quot;Client application&quot; type=&quot;ClientApp&quot; /&gt;
+      &lt;TypeFieldValue value=&quot;Web application&quot; type=&quot;WebApp&quot; /&gt;
+      &lt;TypeFieldValue value=&quot;Remote machine&quot; type=&quot;RemoteMachine&quot; /&gt;
+      &lt;TypeFieldValue value=&quot;Client application&quot; type=&quot;ClientApp&quot; /&gt;
 &lt;/TypeFieldValues&gt;</code></pre>
 </td>
 </tr>
@@ -616,18 +616,18 @@ The Scrum process template defines the following color assignments. Similar ones
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <WorkItemColors>
-   <WorkItemColor primary="FF009CCC" secondary="FFD6ECF2" name="ProductBacklogItem" />
-   <WorkItemColor primary="FF773B93" secondary="FFEEE2F2" name="Feature" />
+      <WorkItemColor primary="FF009CCC" secondary="FFD6ECF2" name="ProductBacklogItem" />
+      <WorkItemColor primary="FF773B93" secondary="FFEEE2F2" name="Feature" />
    <WorkItemColor primary="FFFF7B00" secondary="FFFFD7B5" name="Epic" />
-   <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Task" />
-   <WorkItemColor primary="FFCC293D" secondary="FFFAEAE5" name="Bug" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Request" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Response" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Request" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Response" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Impediment" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Step" />
-   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Case" />
+      <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Task" />
+      <WorkItemColor primary="FFCC293D" secondary="FFFAEAE5" name="Bug" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Request" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Response" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Request" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Response" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Impediment" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Step" />
+      <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Case" />
    <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Plan" />
    <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Suite" />
    <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Parameter" />
@@ -708,9 +708,9 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li><p><strong>BugsBehavior</strong> sets the default for the [Show bugs on backlogs and board](../show-bugs-on-backlog.md). Allowed values correspond to:</p>
 <p></p>
 <ul>
-<li><p><strong>AsRequirements</strong> – Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
-<li><p><strong>AsTasks</strong> – Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
-<li><p><strong>Off</strong> – Bugs don't appear on backlogs or boards</p></li>
+<li><p><strong>AsRequirements</strong> &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)</p></li>
+<li><p><strong>AsTasks</strong> &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)</p></li>
+<li><p><strong>Off</strong> &mdash; Bugs don't appear on backlogs or boards</p></li>
 </ul>
 </li>
 <li><p><strong>HiddenBacklogs</strong> specifies the [backlog that's inactive by default](../select-backlog-navigation-levels.md).</p></li>
@@ -724,7 +724,7 @@ stateName2=color2,..." />
 ```
 <blockquote>**NOTE:**<br/>
 <b>Feature availability: </b>You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.   
-</blockquote> 
+</blockquote> 
 <p>For additional details, see the next section, [Specify workflow state colors](#workflow-colors).</p></li>
 </li> 
 <a id="wit-icons">  </a>
@@ -737,7 +737,7 @@ stateName2=color2,..." />
    Test Case=icon_test_beaker,Shared Steps=icon_test_step,Shared Parameter=icon_test_parameter" /&gt;</code></pre>
 <blockquote>**NOTE:**<br/>
 <b>Feature availability: </b> You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2017.2 or later version.     
-</blockquote> 
+</blockquote> 
 </li>
 </ul>
 </td>
@@ -750,7 +750,7 @@ stateName2=color2,..." />
 <a id="workflow-colors">  </a> 
 ### Specify workflow state colors
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b> To specify workflow state colors, you must upgrade to TFS 2015.2 or later version.   
 
 
@@ -766,13 +766,13 @@ Here we show how it appears in the work item form:
 
 <img src="_img/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
 
->[!NOTE]  
+> [!NOTE]    
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
 
 **Details:**
 - You must specify the color as an eight-digit hexidecimal value, similar to that used for the color defined for a WIT    
 - To add or edit colors, simply reimport your process configuration with the updated property  
-- State colors are defined by name across all work item types, i.e., there is no way to have “Active" be one color for User Story and a different color for Bug    
+- State colors are defined by name across all work item types, i.e., there is no way to have â€œActive" be one color for User Story and a different color for Bug    
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  
 - States with no color defined, and no meta-state mapping will show an empty circle.  
 
@@ -787,7 +787,7 @@ The supported set of icons you can specify for a work item type are shown below.
 
 ![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
 
->[!NOTE]  
+> [!NOTE]    
 >Icons noted with an asterisk are supported on VSTS and TFS 2017.3 and later versions.
 
 
@@ -802,7 +802,7 @@ and, here the icon is shown within the work item form.
 <img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
 
 
-## Related notes
+## Related articles
 
 Learn more about the web work item form and how to customize it from these additional topics: 
 
@@ -813,4 +813,4 @@ Learn more about the web work item form and how to customize it from these addit
 
 If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../../_shared/help-support-shared.md)] 

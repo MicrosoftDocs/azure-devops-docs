@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create personal access tokens to authenticate access
 
 0.  Sign in to either your VSTS account (```https://{youraccount}.visualstudio.com```)

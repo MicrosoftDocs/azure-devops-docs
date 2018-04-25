@@ -1,21 +1,26 @@
 ---
-title: Define the tasks to process a plug-in | VSTS & TFS
-description: Use the tasks element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the tasks to process a plug-in
+titleSuffix: VSTS & TFS
+description: Define the artifacts to be uploaded or created for a process template plug-in for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: af1b9f73-b930-49b6-b6f2-68d691b152aa
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 # Define the tasks to process a plug-in
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-<a name="top"></a> You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new team project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a team project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
-  
-##  <a name="syntax"></a> Tasks Syntax Structure  
+<a name="top"></a> 
+
+You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new team project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a team project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
+ 
+<a name="syntax"></a>  
+##  Tasks Syntax Structure  
  You can specify several tasks within a plug-in, and these tasks may have dependencies on one another. The tasks that you define for each plug-in must conform to the schema definition for **tasks**, defined in the Tasks.xsd file, and be specified in its own file using the **tasks** container element.  
   
  The following syntax shows the high-level structure of the **tasks** element and its child elements.  
@@ -23,15 +28,15 @@ ms.date: 09/08/2017
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <tasks>  
-   <task>  
-      <dependencies>  
-        <dependency />  
-        . . .      
-      </dependencies />  
-      <taskXml>  
-        . . .      
-      </taskXml>  
-   <task/>  
+      <task>  
+      <dependencies>  
+         <dependency />  
+        . . .          
+      </dependencies />  
+      <taskXml>  
+        . . .          
+      </taskXml>  
+      <task/>  
 </tasks>   
 ``` 
 
@@ -157,6 +162,6 @@ completionDescription="InProcessMessage"&gt;
 </task>  
 ``` 
   
-## Related notes  
+## Related articles  
 -  [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)   
 -  [Overview of process template files](overview-process-template-files.md)

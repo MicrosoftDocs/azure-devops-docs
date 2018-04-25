@@ -1,16 +1,19 @@
 ---
-title: Sign up and invite teammates | VSTS  
-description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+title: Sign up and invite teammates
+titleSuffix: VSTS   
+description: Quickstart guide to signing up and inviting others to join a team project in Visual Studio Team Services 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: quickstart
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
+monikerRange: 'vsts'
 ---
 
-# Sign up for a free VSTS account and invite others to join your team  
+
+# Sign up for a free VSTS account and invite others to join your team
 
 **VSTS**
  
@@ -20,7 +23,8 @@ Git repository. You can then connect to your favorite development tool like Ecli
 Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
 
 <a name="MicrosoftAccount"></a>
-##	Sign up with a personal Microsoft account
+
+## Sign up with a personal Microsoft account
 
 0.	Right-click the sign-up link, [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409), and enter 
 your email address for your Microsoft account. 
@@ -71,6 +75,7 @@ you can invite others to join your project, add code, start planning and trackin
 	To sign in to your account at any time, go to ```https://{youraccount}.visualstudio.com```.
 
 <a id="invite-others" />
+
 ## Invite others to join your team 
 
 You provide others access to your account by adding their email address. 
@@ -107,7 +112,7 @@ You provide others access to your account by adding their email address.
 
 0. Fill out the form. 
  
-	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
 	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
 		> [!NOTE]   

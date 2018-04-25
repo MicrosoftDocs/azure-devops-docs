@@ -2,15 +2,19 @@
 title: Package Management in VSTS and TFS
 description: Use package management to host and share NuGet packages and npm modules with VSTS or Team Foundation Server
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Package Management in VSTS and TFS
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 > [!NOTE]
 > Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that hosts NuGet, npm, and Maven packages alongside all your other VSTS assets: source code, builds, releases, etc.
@@ -35,7 +39,7 @@ Some package management services are only compatible with specific versions of T
 | Product                        | VSTS          | TFS                         |
 |------------------------------- |---------------|-----------------------------|
 | **NuGet**                      | Yes           | TFS 2017                    |
-| **NuGet.org upstream source**  | Yes           | To be announced             |
+| **NuGet.org upstream source**  | Yes           | TFS 2018 Update 2 and newer |
 | **npm**                        | Yes           | TFS 2017 Update 1 and newer |
 | **npmjs.com upstream source**  | Yes           | TFS 2017 Update 1 and newer |
 | **Maven**                      | Yes           | TFS 2018                    |

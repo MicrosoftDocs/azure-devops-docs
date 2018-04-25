@@ -1,15 +1,20 @@
 ---
 description: Service Fabric PowerShell Utility task
 title: Service Fabric PowerShell build task VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Service Fabric PowerShell 
+
+**VSTS**
  
 ![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 
@@ -37,12 +42,28 @@ deploy to a Service Fabric cluster.
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: ServiceFabricPowerShell@1
+  inputs:
+    clusterConnection:
+#   ScriptType: FilePath # FilePath (default), InlineScript
+    ScriptPath:
+#   Inline: # You can write your PowerShell scripts inline here. # You can also pass predefined and custom variables to this script using arguments
+    ScriptArguments:
+```
+
+::: moniker-end
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
-
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 

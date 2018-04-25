@@ -1,31 +1,37 @@
 ---
 title: Navigate within the Visual Studio Team Explorer pane
-description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+titleSuffix: VSTS & TFS 
+description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services & Team Foundation Server 
 keywords: Download TFS clients 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-new-user
+ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: reference
 ms.date: 09/07/2017
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Navigate in Team Explorer
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
+You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
 
 
 >[!TIP]  
->You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include: 
-> - [Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
-> - [VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
-> - [VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
-> - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
+>You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:
+
+> - [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
+> - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
+> - [VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
+> - [Visual Studio Code](/vsts/java/vscode-extension)    
 >For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
 
-The operations available to you depend on which source control option—Team Foundation version control (TFVC) or Git—was selected to manage source code when the team project was created.
+The operations available to you depend on which source control option-Team Foundation version control (TFVC) or Git-was selected to manage source code when the team project was created.
 
 **Team Explorer plug-in for Visual Studio**
 
@@ -48,7 +54,7 @@ If you don't need Visual Studio, but do want to connect to VSTS or TFS or get on
 
 **Team Explorer plug-in for Eclipse**
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](http://java.visualstudio.com/Docs/tools/eclipse#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/vsts/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 
@@ -105,9 +111,9 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 > |-------------|----------|
 > |- **Changes**: [Save work with commits](../git/tutorial/commits.md)<br/>- **Branches**: [Create work in branches](../git/tutorial/branches.md)<br/>- **Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)<br/>- **Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md)) |- **My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>- **Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>- **Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md) |
 
-### Report and Document pages (TFS only)  
+### Report and Document pages (TFS only)
 
-The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
+The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
 
 From the **Document** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your team project has been configured with a SharePoint Products portal.
   
@@ -128,12 +134,14 @@ Most of the links open to a web portal administration page. Not all settings are
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
 
-## Related notes 
+## Related notes
+
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
 - [Troubleshoot connection](troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 
 <a id="clients">  </a>
+
 ### Clients that connect to VSTS or TFS
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 
@@ -141,7 +149,7 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 - [Web portal](work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/docs/tools/eclipse) 
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 

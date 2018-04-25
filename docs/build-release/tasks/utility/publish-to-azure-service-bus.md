@@ -1,17 +1,20 @@
 ---
 title: Publish To Azure Service Bus task 
 description: Build and release task to send a message to an Azure Service Bus in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Publish To Azure Service Bus
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/publish-to-azure-service-bus.png) Send a message to an Azure Service Bus using a service connection and without using an agent.
 
@@ -31,13 +34,29 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBus).
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: PublishToAzureServiceBus@1
+  inputs:
+    azureSubscription:
+    messageBody:
+#   signPayload: false
+    certificateString:
+    signatureKey:
+#   waitForCompletion: false
+```
+
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
 <!-- ENDSECTION -->
-

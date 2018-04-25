@@ -1,4 +1,6 @@
-- name: Overview (TFS-PS)
+- name: TFS-Project Server Integration
+  href: index.md
+- name: Overview
   items:
   - name: Third-party support for synchronization
     href: sync-ps-tfs.md
@@ -18,8 +20,6 @@
     href: understand-how-updates-to-specific-fields-managed.md
   - name: Manage projects overview
     href: manage-projects.md
-  - name: Map integration components
-    href: map-integration-components.md
 - name: How-to Guides
   items:
   - name: Top-down planning of business requirements
@@ -32,8 +32,6 @@
     href: monitor-submissions-resolve-rejections.md
   - name: Remove items that aren't synchronizing
     href: remove-items-not-synching.md
-  - name: Customize the field mapping
-    href: customize-field-mapping-tfs-project-server.md
   - name: Remove a component
     href: remove-component-from-synchronization.md
   - name: Update an existing installation
@@ -47,9 +45,8 @@
   - name: Change your deployment configuration
     href: change-deployment-configuration.md
   - name: Administrate TFS-Project Server integration
+    href: administrate-integration-tfs-project-server.md
     items:
-    - name: Administrative overview
-      href: administrate-integration-tfs-project-server.md
     - name: Configure TFS-Project Server integration
       href: configure-tfs-project-server-integration.md
     - name: Assign permissions to support TFS-Project Server integration
@@ -68,7 +65,8 @@
     href: map-project-server-components.md
   - name: Change the retry or resubmit interval
     href: change-synchronization-retry-or-resubmit-interval.md
-  - name: Map components
+  - name: Map integration components
+    href: map-integration-components.md
     items:
     - name: Register an instance
       href: register-pwa.md
@@ -80,9 +78,8 @@
       href: define-work-item-types-available-synchronization.md
     - name: Manage field mappings
       href: manage-field-mappings.md
-    - name: View error messages
-      href: view-synch-error-messages.md
   - name: Customize the field mapping
+    href: customize-field-mapping-tfs-project-server.md
     items:
     - name: Field mapping reference
       href: field-mapping-xml-element-reference.md

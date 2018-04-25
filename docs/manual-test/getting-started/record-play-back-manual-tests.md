@@ -1,12 +1,15 @@
 ---
 title: Record and play back manual tests
 description: Record and play back manual tests
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Record and play back manual tests
@@ -31,6 +34,8 @@ You can record and play back tests in a wide range of desktop apps,
 and also web apps that you access through a supported browser. 
 For a detailed list, see 
 [Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Run Microsoft Test Manager on your client machine
 

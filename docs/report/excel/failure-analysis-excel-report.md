@@ -1,17 +1,19 @@
 ---
-title: Failure Analysis Excel Report | TFS
-description: Use Failure Analysis report to help monitor how many regressions the test team is finding - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Failure Analysis Excel Report 
+description: Use Failure Analysis report to help monitor how many regressions the test team is finding - Team Foundation Server 
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 22f98044-e3bb-4e63-80a1-99a95775baa5
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # Failure Analysis Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Failure Analysis report to help monitor how many regressions the test team is finding. Regressions are bugs in the software that you are testing that did not appear in previous versions. A team that performs regression testing is specifically focused on finding bugs that have appeared only in a new version of the software. The Failure Analysis report shows how many distinct configurations for each Test Case previously passed and are now failing, for the most recent four weeks.  
   

@@ -7,13 +7,16 @@ ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Restore data to the same location
 
 **TFS 2015** | **TFS 2013**
 
-You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
+You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
 
 > [!NOTE]
 > Check out the [Back up and Restore concepts page](./back-up-restore-tfs.md#same-server) for an introduction to restoring data on the same server for TFS. 
@@ -73,7 +76,7 @@ Before you can use the Restore wizard to restore a database that Team Foundation
 3.  In **Server name**, choose or type the name of the data-tier server and database instance, and then choose **Connect**.
 
     > **Note:**  
-    > If SQL Server is installed on a cluster, the server name is the name of the cluster and not the computer name.
+    > If SQL Server is installed on a cluster, the server name is the name of the cluster and not the computer name.
 
     SQL Server Management Studio opens.
 
@@ -147,12 +150,12 @@ You can rebuild the data warehouse instead of restoring the **TFS\_Warehouse** a
 
     **http://localhost:8080/** *VirtualDirectory* **/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**
 
-    For *VirtualDirectory*, enter the virtual directory for Internet Information Services (IIS) that was specified when Team Foundation Server was installed. By default, this directory is named **tfs**.
+    For *VirtualDirectory*, enter the virtual directory for Internet Information Services (IIS) that was specified when Team Foundation Server was installed. By default, this directory is named **tfs**.
 
     The **WarehouseControlWebService** page opens.
 
     > **Note:**  
-    > The Microsoft Team Foundation Server Application Pool must be running for the Warehouse Control Web service to be available.
+    > The Microsoft Team Foundation Server Application Pool must be running for the Warehouse Control Web service to be available.
 
 5.  Choose **GetProcessingStatus**, and then choose **Invoke**.
 

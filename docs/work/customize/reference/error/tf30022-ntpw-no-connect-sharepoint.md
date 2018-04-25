@@ -1,17 +1,19 @@
 ---
-title: TF30022-The New Team Project Wizard could not connect to the Windows SharePoint Services  | VSTS & TFS
+title: TF30022-The New Team Project Wizard could not connect to the Windows SharePoint Services 
+titleSuffix: VSTS & TFS
 description: The New Team Project Wizard is unable to connect to the server {name} that hosts SharePoint Products while creating a team project.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: dd798fbb-8e24-4a33-91f6-7167138d7414
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30022: The New Team Project Wizard could not connect to the Windows SharePoint Services server {0}.
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This error occurs when the New Team Project Wizard is unable to connect to the server {*name*} that hosts SharePoint Products while creating a team project. An active connection cannot be made due to one of the following conditions:  
   

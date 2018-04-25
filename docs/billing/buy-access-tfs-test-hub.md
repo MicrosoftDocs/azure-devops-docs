@@ -1,32 +1,34 @@
 ---
 title: Buy TFS CALs or access to the TFS Test hub | Team Foundation Server (TFS)
 description: Buy Team Foundation Server (TFS) client access licenses (CALs) or access to the TFS Test hub 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+author: chcomley
+ms.date: 01/29/2018
+monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
-
 # Buy access to Team Foundation Server or the TFS Test hub
 
 **TFS 2018** | **TFS 2017** | **TFS 2015.2**
 
->[!NOTE] 
-> You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marektplace, which uses Azure for billing.
-
-For [TFS](https://www.visualstudio.com/tfs/) you pay per user for team members who need to use 
-[Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning. 
-Team members who have a [Visual Studio subscription](https://www.visualstudio.com/vs/pricing/) are free 
+For [TFS](https://www.visualstudio.com/tfs/) you pay per user for team members who need to use
+[Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning.
+Team members who have a [Visual Studio subscription](https://www.visualstudio.com/vs/pricing/) are free
 to add because Basic features are included in their subscription as a benefit.
-It's also free to add 
+It's also free to add
 [stakeholders](../security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
 
-Paid VSTS users are entitled to access to Basic features in your organization's TFS, making 
-paying monthly for VSTS users a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. 
-Even when you buy access to TFS this way, you are not required to use VSTS (though of course you can if you wish, in 
-addition to using TFS).  
+>[!NOTE]
+> You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marketplace, which uses Azure for billing.
+
+Paid VSTS users are entitled to access to Basic features in your organization's TFS, making
+paying monthly for VSTS users a great alternative to buying TFS User CALs, which typically have a 3-year commitment term.
+Even when you buy access to TFS this way, you are not required to use VSTS (though of course you can if you wish, in
+addition to using TFS).
 
 [Follow these steps to pay monthly for TFS users](#rent-cal).
 
@@ -42,6 +44,7 @@ For more about TFS licensing, see the
 [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 <a id="rent-cal"></a>
+
 ## Buy monthly access to TFS for your users
 
 0.	[Sign up for a VSTS account](../accounts/create-account-msa-or-work-student.md), 

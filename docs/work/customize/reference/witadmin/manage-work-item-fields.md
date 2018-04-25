@@ -1,12 +1,15 @@
 ---
-title: Manage work item fields using witadmin | VSTS & TFS
+title: Manage work item fields using witadmin
+titleSuffix: TFS  
 description: 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-ms.date: 03/30/2017
+ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 03/20/2018
 ---
 
 # Manage work item fields
@@ -25,7 +28,7 @@ You can manage the fields defined for work item types (WITs) that are defined fo
     -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
 -   **deletefield**: Deletes the specified field.    
 -   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
--   **listfields**: Lists the attributes for all fields or a specified field. (can run against VSTS)  
+-   **listfields**: Lists the attributes for all fields or a specified field.
   
 [!INCLUDE [temp](../../../_shared/witadmin-run-tool.md)] 
   
@@ -60,7 +63,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/n**:`RefName`<br />**/n**:`Name`|The reference name of a work item type field.|  
 |**/index**|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
 |**/name:** `NewName`|Specifies the new name for the field.|  
@@ -99,7 +102,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
  You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
 -   **Name** that displays on the work item form. See [Control](../control-xml-element-reference.md)   
--   **Help text**. See [Apply a field rule](/vsts/work/customize/reference/apply-rule-work-item-field).    
+-   **Help text**. See [Apply a field rule](../apply-rule-work-item-field.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../define-pick-lists.md).  
   
 ## Examples  
@@ -131,7 +134,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     Indexed: False  
     ```  
   
-     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](/vsts/work/work-items/guidance/work-item-field).  
+     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../../work-items/guidance/work-item-field.md).  
   
 ### List all fields in a team project collection  
   
@@ -141,7 +144,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
     ```  
   
-     Field information for all the fields for the named project collection appears. See [Index of work item fields](/vsts/work/work-items/guidance/work-item-field).  
+     Field information for all the fields for the named project collection appears. See [Index of work item fields](../../../work-items/guidance/work-item-field.md).  
   
 ### List fields that are not being used  
   
@@ -327,7 +330,7 @@ Enter **y** at the confirmation prompt to complete this step.
   
  Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../../on-premises-xml-process-model.md#before-you-customize).  
   
-## Related notes 
+## Related articles 
  
 -  [Customizing your work tracking experience](../../customize-work.md)   
 -  [Work item field index](../../../work-items/guidance/work-item-field.md)   

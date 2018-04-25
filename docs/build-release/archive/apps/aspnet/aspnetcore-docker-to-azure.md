@@ -1,13 +1,17 @@
 ---
 title: Deploy an ASP.NET Core app with Docker to Azure
 description: Automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker using Visual Studio
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 12/20/2017
+monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
+
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
@@ -86,4 +90,6 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end

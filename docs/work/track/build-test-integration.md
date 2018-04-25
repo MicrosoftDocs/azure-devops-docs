@@ -1,18 +1,20 @@
 ---
-title: Build and test integration queries 
+title: Build and test integration queries
+titleSuffix: VSTS & TFS 
 description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 04/14/2017  
 ---
 
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Build and test integration work item fields support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -68,7 +70,7 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 
 <img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 ## Build and test data fields  
@@ -263,7 +265,7 @@ The following fields do not appear on work item forms, but these fields are trac
 1.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.  
 2.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
-## Related notes
+## Related articles
 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 

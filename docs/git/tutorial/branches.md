@@ -2,13 +2,16 @@
 title: Create and delete a branch in your Git repo | VSTS & TFS
 description: Create, use, and delete Git Branches in Visual Studio and from the command line
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/14/2017
+author: steved0x
+ms.topic: tutorial
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Create work in branches  
 

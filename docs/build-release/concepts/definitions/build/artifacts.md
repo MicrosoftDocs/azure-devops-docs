@@ -2,12 +2,16 @@
 title: Artifacts in Team Build
 description: Understand build artifacts in Team Build for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 10/12/2017
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Artifacts in Team Build
 
@@ -171,7 +175,7 @@ You can also use Release Management to deploy your app using the artifacts that 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
-<h3 id="tfs-2015">How do I publish artifacts from TFS 2015?</h3>
+<h3 id="tfs-2015">How do I publish artifacts from TFS 2015 RTM?</h3>
 
 If you're using TFS 2015 RTM, then the steps in the above examples are not available. Instead, you copy and publish your artifacts using a single task: [Build: Publish Build Artifacts](../../../tasks/utility/publish-build-artifacts.md).
 

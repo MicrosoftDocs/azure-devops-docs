@@ -8,7 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: aaronha
 ms.date: 11/28/2017
+monikerRange: '>= tfs-2015 < vsts'
 ---
+
+
 
 # How to set up TFS in a dual server configuration
 

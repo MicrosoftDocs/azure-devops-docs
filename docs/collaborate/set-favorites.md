@@ -1,13 +1,15 @@
 ---
-title: Set personal or team favorites in VSTS or TFS 
-description: Quickly access objects by favoriting them either for your use or the team's use    
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+title: Set personal or team favorites
+titleSuffix: VSTS & TFS  
+description: Quickly access objects by favoriting them in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-collab
+ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 09/01/2017  
+monikerRange: '>= tfs-2017'
 ---
 
 # Set personal or team favorites    
@@ -18,13 +20,13 @@ ms.date: 09/01/2017
 
 As your code base, work tracking efforts, developer operations, and organization grows, you'll want to be able to quickly navigate to those object of interest to you and your team. Setting favorites allows you to do just that.  
 
-This topic shows you how to:  
+This topic shows you how to:
 
-> [!div class="checklist"]   
+>[!div class="checklist"]  
 > * Favorite a repository, build definition, shared query, delivery plan, or test plan 
 > * Favorite a team or team project 
-> * View your personal favorites       
-> * Unfavorite an object    
+> * View your personal favorites  
+> * Unfavorite an object 
 
 
 > [!NOTE]   
@@ -46,19 +48,20 @@ Delivery Plans requires installation of the [Delivery Plans extension](../work/s
 
 From your web browser, open the **Code** hub, open the repository menu and click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the repository you want to favorite. 
 
-<img src="_img/set-favorites-repository.png" alt="Web portal, Code, Favorite a repo" style="border: 1px solid #C3C3C3;" />�
+<img src="_img/set-favorites-repository.png" alt="Web portal, Code, Favorite a repo" style="border: 1px solid #C3C3C3;" />
+
 
 ## Favorite a build definition  
 
 From your web browser, open the **Build-Release** hub, **Builds>All Definitions** page. Next, open the context menu of the build definition you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
 
-<img src="_img/set-favorites-build-definitions.png" alt="Web portal, Build & Release, Builds, Add to my favorites" style="border: 1px solid #C3C3C3;" />�  
+<img src="_img/set-favorites-build-definitions.png" alt="Web portal, Build & Release, Builds, Add to my favorites" style="border: 1px solid #C3C3C3;" />
 
 ## Favorite a shared query 
 
 From your web browser, open the **Work** hub, Queries page. Next, open  the context menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
 
-<img src="_img/set-favorites-shared-query.png" alt="Web portal, Work, Queries, Add to my favorites" style="border: 1px solid #C3C3C3;" />� 
+<img src="_img/set-favorites-shared-query.png" alt="Web portal, Work, Queries, Add to my favorites" style="border: 1px solid #C3C3C3;" />
 
 ## Favorite a Delivery Plan 
 
@@ -73,13 +76,13 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
  
 0. Open your account page by clicking the ![project icon](../_img/icons/project-icon.png) project icon as shown from anywhere in the web portal.  
 
-	<img src="_img/set-favorites-click-icon.png" alt="Open the Account home, Projects page" style="border: 1px solid #C3C3C3;" />�   
+	<img src="_img/set-favorites-click-icon.png" alt="Open the Account home, Projects page" style="border: 1px solid #C3C3C3;" />
 
 0. You'll see something similar to the following welcome page.
 
-	<img src="../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #C3C3C3;" />�   
+	<img src="../user-guide/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #C3C3C3;" />
 
-0. From the **Projects** page, click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the team or team project you want to favorite.  
+0. From the **Projects** page, click the ![favorites](../user-guide/_img/icon-favorite-star.png) star icon next to the team or team project you want to favorite.
 
 
 <a id="view-favorites">  </a>
@@ -87,7 +90,7 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 
 From your account hub, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
-<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />�   
+<img src="../user-guide/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #C3C3C3;" />Ã‚     
 
 <a id="unfavorite">  </a>
 ## Unfavorite an object

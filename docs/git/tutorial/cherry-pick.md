@@ -2,13 +2,16 @@
 title: Copy changes to a branch with cherry-pick | VSTS & TFS
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+author: steved0x
+ms.topic: tutorial
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Copy changes with cherry-pick
 

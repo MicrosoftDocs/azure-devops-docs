@@ -1,11 +1,13 @@
 ---
-title: Manage projects using TFS-Project Server integration | TFS
-description: Integrate the two server products that provides flexibility in how the projects are managed - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage projects using TFS-Project Server integration
+titleSuffix: TFS 
+description: Understand how to manage projects when synchronizing data between Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: e5cf789c-2edb-4d84-aecd-f4d09fc854da
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -13,7 +15,8 @@ ms.date: 01/12/2017
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="Top"></a> Project managers and software development teams can use the tools they prefer, work at the granularity that supports their needs, and share information transparently between Visual Studio Team Foundation Server and Microsoft Project Server. When the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and the team project.  
+<a name="Top"></a> 
+Project managers and software development teams can use the tools they prefer, work at the granularity that supports their needs, and share information transparently between Visual Studio Team Foundation Server and Microsoft Project Server. When the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and the team project.  
   
  The integration of the two server products provides flexibility in how projects are managed. As a project manager, you can manage your project by using one or a combination of the following three methods:  
   
@@ -62,7 +65,7 @@ ms.date: 01/12/2017
 |**Change the configuration for synchronization**. You can remove components that you have configured to participate in data synchronization. However, you should always follow the recommended reconfiguration sequence when you remove such components.|[Remove a component](remove-component-from-synchronization.md)|  
 |**Add team project members to the enterprise resource pools**. To assign and manage Team Foundation users as resources in Project, you must add them to the enterprise resource pool. To make this process easier, you can configure Project Server to automatically synchronize the security groups with groups that have the same name in Active Directory. Also, you can synchronize users and resources in Project Server with the users in Active Directory across multiple domains and forests.|See the following pages on the Microsoft website:<br /><br /> -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2013)](http://msdn.microsoft.com/library/jj819320.aspx)<br />-   [Manage users, groups, and categories in Project Server 2013](http://msdn.microsoft.com/library/cc197571.aspx)|  
   
-## Related notes  
+## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   
  [Synchronization process overview](synchronization-process-overview.md)   
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)

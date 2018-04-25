@@ -1,20 +1,23 @@
 ---
 title: Troubleshoot creating a VSTS account
 description: Troubleshoot creating a VSTS account
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/10/2017
+monikerRange: 'vsts'
 ---
-
 #	Troubleshoot creating a VSTS account
 
 **VSTS**
 
 
 <a name="free-users"></a>
+
 #### Q: What users can join for free?  What do they get in VSTS?
 
 A: VSTS is free for these users to join:

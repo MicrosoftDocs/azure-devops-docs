@@ -2,12 +2,16 @@
 title: Undo Changes in Another User's Workspace
 description: Undo Changes in Another User's Workspace
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Undo Changes in Another User's Workspace
 
@@ -15,7 +19,7 @@ ms.date: 08/10/2016
 
 Updated: October 2011
 
-If a team member is blocked from checking in a file that is locked by someone else, you can use the **tf undo** command to delete Team Foundation version control pending changes in another user's workspace.
+If a team member is blocked from checking in a file that is locked by someone else, you can use the **tf undo** command to delete Team Foundation version control pending changes in another user's workspace.
 
 If you must also remove an exclusive lock on a file, but not the pending changes, you can use the **tf lock** command. For more information, see [Lock Command](lock-command.md).
 

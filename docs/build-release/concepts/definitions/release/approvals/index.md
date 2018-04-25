@@ -2,14 +2,17 @@
 title: Approvals and gates overview in VSTS and TFS
 description: Understand deployment approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
-# Approvals and gates overview
+# Release approvals and gates overview
 
 [!INCLUDE [version-rm-dev14](../../../../_shared/version-rm-dev14.md)]
 
@@ -60,8 +63,6 @@ You can, of course, combine all three techniques within a release definition to 
 ## See also
 
 * [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Work with release definitions](../../../../actions/work-with-release-definitions.md)
-* [View and manage releases](../../../../actions/view-manage-releases.md)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]

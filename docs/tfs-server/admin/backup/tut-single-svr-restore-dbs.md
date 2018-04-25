@@ -8,7 +8,10 @@ ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Restore the databases
 
@@ -22,7 +25,7 @@ If you manually configured your backups, you cannot use the Restore wizard in Sc
 
 Use this topic to:
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Restore Team Foundation Server databases
 > * Restore the SharePoint farm
 
@@ -36,7 +39,7 @@ To perform these procedures, you must be a member of the following groups or hav
 <a name="restore-tfs-dbs"></a>
 ## Restore Team Foundation Server databases
 
-Installing and configuring software isn't sufficient to recover a deployment. You must restore the data before your users will be able to get back to work. There’s a wizard to help you do this..
+Installing and configuring software isn't sufficient to recover a deployment. You must restore the data before your users will be able to get back to work. There's a wizard to help you do this..
 
 ### To restore databases
 
@@ -80,13 +83,13 @@ To restore a farm, either you must be logged in with an account that is a member
 
 2.  At the Windows PowerShell command prompt, enter the following command, where *UNCPath* is the fully-qualified UNC path of the directory where the farm backup is located:
 
-    `Restore-SPFarm –Directory UNCPath –RestoreMethod Overwrite`
+    `Restore-SPFarm -Directory UNCPath -RestoreMethod Overwrite`
 
-    This command will restore the farm using the most recent backup available. If you want to use a different backup, you must specify which backup to restore by using the –BackupID parameter with the GUID of the specific backup you want to use.
+    This command will restore the farm using the most recent backup available. If you want to use a different backup, you must specify which backup to restore by using the -BackupID parameter with the GUID of the specific backup you want to use.
 
 3.  At the Windows PowerShell command prompt, enter the following command, where *ServiceApplicationID* is the GUID of the restored farm:
 
-    `Start-SPServiceInstance –Identity ServiceApplicationID`
+    `Start-SPServiceInstance -Identity ServiceApplicationID`
 
     >**Tip:**  
     >If you do not know the GUID, you can use the **Get-SPServiceInstance** command to list the service instance GUIDs for all SharePoint applications on the server.
@@ -99,11 +102,11 @@ To restore a farm, either you must be logged in with an account that is a member
 
     The Restore Wizard opens.
 
-2.  On the **Restore from Backup – Step 1 of 3** page, choose the farm backup job that you want to restore, and then choose **Next**.
+2.  On the **Restore from Backup - Step 1 of 3** page, choose the farm backup job that you want to restore, and then choose **Next**.
 
-3.  On the **Restore from Backup – Step 2 of 3** page, select the check box next to the farm option, and then choose **Next**.
+3.  On the **Restore from Backup - Step 2 of 3** page, select the check box next to the farm option, and then choose **Next**.
 
-4.  On the **Restore from Backup – Step 3 of 3** page, in the **Restore Component** section, make sure that **Farm** appears in the **Restore the following component** list. In the **Restore Only Configuration Settings** section, choose **Restore content and configuration settings**. In the **Restore Options** section, under **Type of Restore**, choose **Same configuration**. When a dialog box appears asking you to confirm your choices, choose **OK**, and then choose **Start Restore**.
+4.  On the **Restore from Backup - Step 3 of 3** page, in the **Restore Component** section, make sure that **Farm** appears in the **Restore the following component** list. In the **Restore Only Configuration Settings** section, choose **Restore content and configuration settings**. In the **Restore Options** section, under **Type of Restore**, choose **Same configuration**. When a dialog box appears asking you to confirm your choices, choose **OK**, and then choose **Start Restore**.
 
 5.  Monitor the general status of the recovery as it appears in the **Readiness** section of the **Backup and Restore Job Status** page. The status automatically updates every 30 seconds. You can also choose to manually update the status by choosing **Refresh**.
 

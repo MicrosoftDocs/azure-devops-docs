@@ -1,21 +1,23 @@
 ---
 title: Supported OData features   
+titleSuffix: VSTS 
 description: Current level of support for OData specification in the Analytics Service
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: reference
+ms.date: 3/16/2018
 ---
 
 
 # Supported OData features and clauses 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for VSTS.
+This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for for Visual Studio Team Services (VSTS).
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -47,9 +49,10 @@ Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggreg
 The following transformations are supported:
 | Transformation | Notes |
 | ------------------ | ----------- |
-| ```groupby```  | Allows grouping by properties|
+| ```groupby```  | Allows grouping by properties |
 | ```filter```| Allows filtering input set. Supports the same expressions as ```$filter``` |  
 | ```aggregate```  | Allows aggregation using one of following methods   ```$count```, ```average```, ```max```,  ```min```, ```sum```  |
+| ```compute```  | Allows adding calculated properties |
 
 For more details, see [Aggregate data](aggregated-data-analytics.md)
 
@@ -57,10 +60,11 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
+| [```cast```] (http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341801) |  Returns expression casted to specified type  |  
 | [```contains```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868695) |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
 | [```endswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
 | [```startswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868699) |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  
-| [```length```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868698) | Returns the number of characters in the parameter value |  
+| [```length```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868698) | Returns the number of characters in the parameter value | 
 | [```indexof```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns the zero-based character position of the first occurrence of the second parameter value in the first parameter value or -1 if the second parameter value does not occur in the first parameter value|  
 | [```substring```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341777) | Returns a substring of the first parameter string value, starting at the Nth character and finishing at the last character (where N is the second parameter integer value) |  
 | [```tolower```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341779) |  Returns the input parameter string value with all uppercase characters converted to lowercase  |  
@@ -75,8 +79,6 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 | [```now```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868713) |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
 | [``` maxdatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868709) | Returns the latest possible point in time as a DateTimeOffset value |  
 | [```mindatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341795) |  Returns the earliest possible point in time as a DateTimeOffset value |  
-
-
 
 
 OData functions are used in a ```$filter``` clause, but not in a ```$select``` clause the way they would be uses in a SQL statement.  
@@ -97,9 +99,8 @@ However, you can't enter the following:
 - ```bottomsum```  
 - ```bottompercent``` 
 - ```$crossjoin```  
-- ```concat```  
-- ```compute```  
-- ```$compute```   
+- ```concat```   
+- ```$compute```
 - ```countdistinct```  
 - ```from```
 - ```isdefined```  
@@ -110,7 +111,7 @@ However, you can't enter the following:
 - ```toppercent```  
  
 
-## Related notes  
+## Related articles  
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

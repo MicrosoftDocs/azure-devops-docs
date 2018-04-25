@@ -2,11 +2,14 @@
 title: Share steps between test cases
 description: Manual and exploratory testing - Share steps between test cases
 ms.assetid: 5b7b1bfa-d958-442d-ab90-a0339b8baf0a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Share steps between test cases
@@ -14,6 +17,8 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 When you [plan manual tests](../getting-started/create-a-test-plan.md) there are some sequences of steps, such as logging in, that occur in many test cases. To avoid having to enter these sequences again and again, create *shared steps*.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## Create shared steps 
  

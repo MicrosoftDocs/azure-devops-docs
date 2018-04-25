@@ -1,11 +1,13 @@
 ---
-title: Sprint Burndown (Scrum) | TFS
+title: Sprint Burndown (Scrum)
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Tracks how much work remains in a sprint backlog.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: f7422ba3-c309-4092-87cf-17a83c77ac01
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

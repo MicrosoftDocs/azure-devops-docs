@@ -1,29 +1,31 @@
 ---
-title: About area and iteration paths | VSTS & TFS
-description: Understand how areas and iterations are used in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: About area and iteration paths 
+titleSuffix: VSTS & TFS  
+description: Understand how areas and iterations are used in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/25/2017
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+ms.date: 03/20/2018
 ---
 
 
 # About area and iteration paths (aka sprints) 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
-You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../teams/about-teams-and-settings.md).
+You define area and iteration paths for a team project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](../../settings/about-teams-and-settings.md).
 
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
-> [!div class="mx-tdBreakAll"]  
-> |Areas|Iterations| 
-> |-------------|----------|  
-> |<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> |
+> [!div class="mx-tdBreakAll"] 
+> |Iterations| Areas |
+> |-------------|----------| 
+> |<img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
   
 ## How many areas should a team define?
 
@@ -61,32 +63,28 @@ As the following example shows, the Beta 1 iteration now contains three child no
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 
-<a name="permissions"></a>
-## Required permissions  
-
-To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
-
 
 <a name="name-restrictions"></a>
 ## Naming restrictions 
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
-| Restriction type                 | Restriction                                 | 
-| -------------------------------- | ------------------------------------------- | 
-| Node length | Must not contain more than 255 characters | 
-| Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & > < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
-| Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
-| Path length | Must contain fewer than 4,000 Unicode characters | 
-| Path hierarchy depth | Must be fewer than 14 levels deep | 
+> [!div class="mx-tdCol2BreakAll"]  
+> | Restriction type                 | Restriction                                 | 
+> | -------------------------------- | ------------------------------------------- | 
+> | Node length | Must not contain more than 255 characters | 
+> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
+> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
+> | Path length | Must contain fewer than 4,000 Unicode characters | 
+> | Path hierarchy depth | Must be fewer than 14 levels deep | 
 
-## Related notes 
+## Related articles 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
+*	[Agile tools and sprint definitions](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
 
 
@@ -95,15 +93,15 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 You can't export the structure of tree paths for one team project to use with another team project.  
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a name="field-rules"></a>
-### Supported field rules (TFS)  
+### Supported field rules  
 
 You can [specify only a small subset of rules](reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
-
 <a name="team-field"></a>
-### Team field versus team area path (TFS)  
+### Team field versus team area path  
 If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
 
-
+::: moniker-end
  

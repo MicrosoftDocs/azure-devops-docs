@@ -2,12 +2,16 @@
 title: Git branching guidance | VSTS & TFS
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 12/09/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Adopt a Git branching strategy
 
@@ -52,9 +56,13 @@ Some suggestions for naming your feature branches:
 - `features/feature-name` 
 - `features/feature-area/feature-name`  
 - `hotfix/description`  
+
+::: moniker range=">= tfs-2018" 
  
 >[!NOTE]
 >For information on setting policies to enforce a branch naming strategy, see [Require branch folders](../how-to/require-branch-folders.md).
+
+::: moniker-end 
 
 #### Use feature flags to manage long-running branches
  
@@ -87,15 +95,18 @@ Some suggestions for successful pull requests:
 The code in your master branch should pass tests, build cleanly, and always be up to date. 
 Your master branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
+::: moniker range=">= tfs-2015" 
+
 Set up a [branch policy](../branch-policies.md) for your master branch that:   
 
 0. Requires a pull request to merge code. This prevents direct pushes to the master branch and ensures discussion of proposed changes.
 0. Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
 0. Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.    
-    
 
 >[!TIP]
 >The build definition for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
+
+::: moniker-end 
 
 ## Manage releases
 

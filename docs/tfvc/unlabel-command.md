@@ -2,12 +2,16 @@
 title: Unlabel Command
 description: Unlabel Command
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Unlabel Command
 

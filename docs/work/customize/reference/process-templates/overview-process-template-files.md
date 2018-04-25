@@ -1,18 +1,20 @@
 ---
 title: Process template and plug-in files 
+titleSuffix: VSTS & TFS
 description: Describes each process template and plug-in file and what is supported when you create a team project via Visual Studio or the web portal  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 10/19/2017
 ---
 
 
 # Process template and plug-in files
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You customize the initial configuration of team projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all team projects that are created from the process template.  
   
@@ -44,7 +46,7 @@ For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
 
 <!---
->[!NOTE]  
+> [!NOTE]    
 >For VSTS, even if you initiate creating a team project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.4 and later versions, you'll be redirected to the web portal to create a team project. 
 --> 
   
@@ -81,7 +83,7 @@ The following table describes each plug-in file and whether or not it is support
  
 <tr>
 <td>Build<br/>
-&nbsp;&nbsp;&nbsp;[Build.xml](define-initial-configuration-build.md)</td>
+      [Build.xml](define-initial-configuration-build.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions used by Team Foundation Build and uploads build template files.
@@ -93,7 +95,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 
 <tr>
 <td>Classifications <br/>
-&nbsp;&nbsp;&nbsp;[Classification.xml](define-classification-plug-in.md)</td>
+      [Classification.xml](define-classification-plug-in.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>Configures the initial area and iteration or sprint paths. Also uploads the [Microsoft Project Mapping (FileMapping.xml) file](../map-microsoft-project-fields-to-tf-fields.md) that defines how work tracking fields map to Office Project fields.</td>
@@ -102,7 +104,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
  
 <tr>
 <td>Groups and Permissions<br/>
-&nbsp;&nbsp;&nbsp;[GroupsandPermissions.xml](define-groups-teams-permissions-plug-in.md)</td>
+      [GroupsandPermissions.xml](define-groups-teams-permissions-plug-in.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>Defines the initial security groups, teams, team members, and their permissions.</td>
@@ -111,7 +113,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 
 <tr>
 <td>Lab Management<br/>
-&nbsp;&nbsp;&nbsp;[Lab.xml](define-initial-configuration-lab-management.md)</td>
+      [Lab.xml](define-initial-configuration-lab-management.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
@@ -127,7 +129,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 
 <tr>
 <td>Reports<br/>
-&nbsp;&nbsp;&nbsp;[ReportsTasks.xml](add-reports-to-the-process-template.md)</td>
+      [ReportsTasks.xml](add-reports-to-the-process-template.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Creates the Report Manager site for the team project and uploads the Reporting Services reports. Only supported for on-premises TFS. 
@@ -142,7 +144,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 <td>
 <a name="XMLFiles"></a> 
 Test Management<br/>
-&nbsp;&nbsp;&nbsp;[TestManagement.xml](define-initial-configuration-test-manager.md)</td>
+      [TestManagement.xml](define-initial-configuration-test-manager.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>Defines the initial test variables, configurations, settings, and resolution states of a team project. This plug-in also uploads the information contained in the following files: 
@@ -161,7 +163,7 @@ Test Management<br/>
 
 <tr>
 <td>Version Control<br/>
-&nbsp;&nbsp;&nbsp;[VersionControl.xml](define-initial-configuration-version-control.md)</td>
+      [VersionControl.xml](define-initial-configuration-version-control.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
@@ -175,7 +177,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only the
 <tr>
 <td><a name="ProcGuidance"></a>
 Windows SharePoint Services<br/>
-&nbsp;&nbsp;&nbsp;[WssTasks.xml](define-project-portal-plug-in.md)</td>
+      [WssTasks.xml](define-project-portal-plug-in.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>
@@ -203,7 +205,7 @@ Process template files do not include dashboards or Microsoft Excel reports. The
 <tr>
 <td><a name="WIT"></a> 
 Work Item Tracking <br/>
-&nbsp;&nbsp;&nbsp;[WorkItems.xml](define-objects-track-work-items-plug-in.md)</td>
+      [WorkItems.xml](define-objects-track-work-items-plug-in.md)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>![supported](../../../_img/icons/checkmark.png)</td>
 <td>Defines the initial work item types, queries, and work item instances of a team project. Team members use work items to track work. A *work item type* defines the fields, workflow, and form used to track work. To customize any of these objects after you create a team project, see [Customize your work tracking experience](../../customize-work.md). 
@@ -236,7 +238,7 @@ For VSTS and TFS 2017.4 and later versions, definitions for work item instances 
 </table>
 
   
-## Related notes
+## Related articles
 
 The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See [Process template plug-ins: Index to XML element definitions](process-template-plug-ins-xml-elements-index.md).  
 

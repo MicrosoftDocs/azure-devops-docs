@@ -1,13 +1,17 @@
 ---
-title: Project Server fields added to TFS  | TFS
-description: Add fields to a work item form through export, modify, and import of the XML definition file 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Project Server fields added to TFS 
+titleSuffix: TFS
+description: Add fields to a work item form through export, modify, and import of the XML definition file when using Team Foundation Server & Project Server integration 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 05912b54-10f4-4ba2-947d-0c856daafdf0
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
+
 # Project Server fields added to TFS to support data synchronization 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -78,20 +82,20 @@ ms.date: 01/12/2017
   
 ```  
 <Assignments>  
-   <Assignment IsPrimary="true" Succeeded="true">  
-      <Field RefName="System.AssignedTo">Eduard Dell</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">0.000000</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">32.000000</Field>  
-   </Assignment>  
-   <Assignment IsPrimary="false" Succeeded="true">  
-      <Field RefName="System.AssignedTo">Sanjay Patel</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">8.000000</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">16.000000</Field>  
-   </Assignment>  
+&nbsp;&nbsp;&nbsp;<Assignment IsPrimary="true" Succeeded="true">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="System.AssignedTo">Eduard Dell</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">0.000000</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">32.000000</Field>  
+&nbsp;&nbsp;&nbsp;</Assignment>  
+&nbsp;&nbsp;&nbsp;<Assignment IsPrimary="false" Succeeded="true">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="System.AssignedTo">Sanjay Patel</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">8.000000</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">16.000000</Field>  
+&nbsp;&nbsp;&nbsp;</Assignment>  
 </Assignments>  
 ```  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Specify work item types](specify-wits-to-synchronize.md)   
  [Field mapping reference](field-mapping-xml-element-reference.md)   

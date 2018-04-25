@@ -2,19 +2,23 @@
 title: Connect to your Git repos using credential managers | VSTS & TFS
 description: Authenticate to VSTS and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 10/17/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 #  Use Git Credential Managers to Authenticate to VSTS
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git Credential Managers simplify authentication with your VSTS/TFS Git repos. Credential Managers let you use the same credentials that you use for the VSTS/TFS web portal and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with VSTS, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
 
-VSTS provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../user-guide/connect-team-projects.md), [IntelliJ and Android Studio with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), and [Eclipse (with the Team Explorer Everywhere plug-in)] (https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
+VSTS provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../user-guide/connect-team-projects.md), [IntelliJ and Android Studio with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in), and [Eclipse (with the Team Explorer Everywhere plug-in)] (https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
 
 ## Install the Git Credential Manager
  

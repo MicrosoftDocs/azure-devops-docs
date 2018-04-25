@@ -2,12 +2,16 @@
 title: Check in to a folder that is controlled by a gated check-in build process
 description: Check in to a folder that is controlled by a gated check-in build process
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Check in to a folder that is controlled by a gated check-in build process
 
@@ -24,7 +28,7 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
 ## Begin checking in changes to a folder that is controlled by a gated check-in build
 
-If the **Gated Check-in** dialog box appears during your check-in, then your changes must first be built by Team Foundation Build before they can be checked in.
+If the **Gated Check-in** dialog box appears during your check-in, then your changes must first be built by Team Foundation Build before they can be checked in.
 
 ### To check in changes to a folder that is controlled by a gated check-in build
 

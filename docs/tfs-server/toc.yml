@@ -18,15 +18,15 @@
     href: ../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Configure an SMTP server
     href: ./admin/setup-customize-alerts.md
-  - name: Add administrators or set permissions at the project or collection level
+  - name: Add administrators or set permissions at the project or collection level (Security)
     href: ../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Add TFS server administrators
     href: add-administrator-tfs.md
-  - name: Change individual permissions 
+  - name: Change individual permissions (Security) 
     href: ../security/change-individual-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
-  - name: Grant or restrict permissions to select tasks
+  - name: Grant or restrict permissions to select tasks (Security)
     href: ../security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Manage team project collections
     href: ./admin/manage-team-project-collections.md
@@ -53,7 +53,7 @@
     href: ./architecture/architecture.md
   - name: Components, terms, and key concepts
     href: ./architecture/tfs-concepts.md
-  - name: About permissions and groups
+  - name: About permissions and groups (Security)
     href: ../security/about-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
   - name: About access levels
     href: ../security/access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json  
@@ -69,13 +69,11 @@
     href: ./architecture/background-job-agent.md
 - name: How-to Guides
   items:
-  - name: Change permissions for individual users
-    href: ./admin/change-permission-levels.md
   - name: Configure a backup schedule
     href: ./admin/backup/config-backup-sched-plan.md
   - name: Open the admin console
     href: ./command-line/open-admin-console.md
-  - name: Change user permission and access levels
+  - name: Change access levels
     href: ../security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json
   - name: Install TFS
     items:

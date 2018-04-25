@@ -1,14 +1,16 @@
 ---
 title: Build your Android app
 description: Build and test Android projects with VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: douge
 ms.author: dastahel
 ms.date: 01/26/2018
-ms.topic: get-started-article
+ms.topic: quickstart
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Android app
 
@@ -67,7 +69,7 @@ https://github.com/adventworks/android-sample
 
 1. In the right panel, click **Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**, select **Hosted VS2017** or a queue that includes the agent you set up.
 

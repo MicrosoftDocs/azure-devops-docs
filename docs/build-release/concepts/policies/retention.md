@@ -1,13 +1,17 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 title: Build and release retention policies
+ms.topic: conceptual
 description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.technology: vs-devops-build
+ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/26/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build and release retention policies
 
@@ -40,13 +44,25 @@ If you are using VSTS, you can view but not change these settings for your accou
 
 Global build retention policy settings can be managed from the **Build and Release** settings of your account or team project collection:
 
+::: moniker range="vsts"
+
 * VSTS: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
 * TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
 
 * TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
 
 * TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
+
+::: moniker-end
 
 The **maximum retention policy** sets the upper limit for how longs
 builds can be retained for all build definitions.
@@ -177,6 +193,8 @@ and it is retained in the system for another 30 days.
 
 When specifying custom policies per definition, you cannot exceed the maximum limits set by administrator.
 
+::: moniker range=">= tfs-2017"
+
 ### Interaction between build and release retention
 
 The build linked to a release has its own retention policy,
@@ -191,6 +209,8 @@ retention policy deletes a release automatically, the retention policy
 for the associated build will determine when that build is deleted.
 
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
+
+::: moniker-end
 
 ## Q&A
 

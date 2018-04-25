@@ -2,14 +2,17 @@
 title: Share your code with Git using Visual Studio 2017 | VSTS & TFS
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 02/14/2018
+author: steved0x
+ms.topic: quickstart
+ms.date: 03/08/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Share your code with Visual Studio 2017 and VSTS Git
 
@@ -28,7 +31,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ## Prerequisites
 
-* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ##  Create a local Git repo for your project
 

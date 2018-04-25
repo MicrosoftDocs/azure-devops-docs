@@ -1,12 +1,15 @@
 ---
 title: Set up environments to run continuous tests with your builds
 description: Set up environments to run continuous test tasks with your build tasks VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Set up environments to run continuous test tasks with your build tasks
@@ -21,7 +24,7 @@ builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
 You'll need to set up physical or virtual machines to run your app and tests, for example:
 
-* Windows Server 2012 R2 with IIS to run your app
+* Windows Server 2012 R2 or higher with IIS to run your app
 
 * Machines with the necessary browsers to run your tests
 
@@ -46,7 +49,15 @@ to install your agents.
 > Previous versions of VSTS and TFS included the capability to define
 > **Machine Groups**. However, this feature is no longer available.
 
-As an alternative, you can use:
+As an alternative, consider:
+
+* If you use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+  task you can deploy and run unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+  and run tests on platforms that don't have Visual Studio installed by using the 
+  [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+  In this case, you can use [deployment groups](../concepts/definitions/release/deployment-groups/index.md)
+  to define your target machines. For more details, see
+  [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 
 * A **comma-delimited list** of machine IP addresses or 
   fully-qualified domain names (FQDNs), together with any port information,
@@ -66,23 +77,14 @@ As an alternative, you can use:
   Using a variable means that you can change the list of machines in one place
   and have the change apply to all the tasks that use the variable.
 
->If you don't specify a port number, the default (based on the selected protocol)
-will be used. If you are using HTTPS, the IP address or name of the machine should
-match the CN entry in the certificate. Note that you can set the **Test
-Certificate** option in some build, test, and deploy tasks to omit certificate checks.
-
-You will typically use a list of machine names in the following tasks:
-
-* [Run Functional Tests task](../../build-release/tasks/test/run-functional-tests.md)
-* [Visual Studio Test Agent Deployment task](../../build-release/tasks/test/visual-studio-test-agent-deployment.md) 
-* [PowerShell on Target Machines task](../../build-release/tasks/deploy/powershell-on-target-machines.md)
-
-## Next 
-
-* [Set up continuous tests for your builds](set-up-continuous-testing-builds.md).
+  >If you don't specify a port number, the default (based on the selected protocol)
+  will be used. If you are using HTTPS, the IP address or name of the machine should
+  match the CN entry in the certificate. Note that you can set the **Test
+  Certificate** option in some build, test, and deploy tasks to omit certificate checks.
 
 ## See also
 
+* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 * [Create a virtual network isolated environment for build-deploy-test scenarios](../actions/virtual-networks/create-virtual-network.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)

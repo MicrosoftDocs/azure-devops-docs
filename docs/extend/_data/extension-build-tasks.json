@@ -1,7 +1,7 @@
 ﻿{
     "manifestVersion": 1,
-    "id": "build-task",
-    "name": "Fabrikam Build Tools",
+    "id": "build-release-task",
+    "name": "Fabrikam Build and Release Tools",
     "version": "0.0.1",
     "publisher": "fabrikam",
     "targets": [
@@ -9,7 +9,7 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],    
-    "description": "Tools for building with Fabrikam. Includes one build task.",
+    "description": "Tools for building/releasing with Fabrikam. Includes one build/release task.",
     "categories": [
         "Build and release"
     ],
@@ -18,18 +18,18 @@
     },
     "files": [
         {
-            "path": "buildtask"
+            "path": "buildAndReleaseTask"
         }
     ],
     "contributions": [
         {
-            "id": "custom-build-task",
+            "id": "custom-build-release-task",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "buildtask"
+                "name": "buildAndReleaseTask"
             }
         }
     ]

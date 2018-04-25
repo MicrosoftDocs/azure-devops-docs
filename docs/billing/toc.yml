@@ -2,50 +2,50 @@
   href: index.md
 - name: Overview
   items:
-  - name: VSTS billing overview
+  - name: Billing overview 
     href: overview.md
 - name: Quickstarts
   items:
   - name: Set up billing
     href: set-up-billing-for-your-account-vs.md
-  - name: How to pay for VSTS users
+  - name: Pay for users
     href: buy-basic-access-add-users.md
-  - name: How to buy VSTS CI/CD
+  - name: Buy CI/CD
     href: buy-more-build-vs.md
-  - name: Free trials for paid VSTS features and extensions
+  - name: Start free trials
     href: try-additional-features-vs.md
-  - name: How to buy cloud-based load testing services
+  - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Change the Azure Active Directory for your VSTS account
-    href: ../accounts/change-azure-active-directory-vsts-account.md
-- name: How-to Guides
+  - name: Connect VSTS to Azure AD
+    href: ../accounts/change-azure-active-directory-vsts-account.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+- name: How-to guides
   items:
-  - name: VSTS billing
+  - name: Manage billing 
     items:
-    - name: Set up billing
-      href: set-up-billing-for-your-account-vs.md
-    - name: Add backup billing managers
+    - name: Add backup billing manager
       href: add-backup-billing-managers.md
-    - name: Change billing to a different Azure subscription
+    - name: Change Azure subscription
       href: change-azure-subscription.md
-    - name: Change the number of paid VSTS users
+    - name: Change number of paid users
       href: reduce-cancel-paid-vsts-users.md
-  - name: TFS billing
-    items:
-    - name: Buy TFS CALs or access to the TFS Test hub
+    - name: Buy TFS CALs or Test hub
       href: buy-access-tfs-test-hub.md
-  - name: Manage paid VSTS or TFS extensions
+    - name: Billing FAQ
+      href: vsts-billing-faq.md
+  - name: Manage Marketplace extensions
     items:
-    - name: Increase or decrease number of paid users
+    - name: Change number of paid users
       href: change-number-paid-extension-users.md
-    - name: Approve requests for VSTS extensions
-      href: ../marketplace/approve-vsts-extensions.md
-    - name: Assign paid extensions to your users
-      href: ../marketplace/assign-paid-extensions.md
+    - name: Approve requests
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    - name: Assign paid extensions to users
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    - name: Buy TFS CALs or Test hub  
+      href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Set up your customer"
@@ -53,44 +53,26 @@
     - name: "CSPs: Buy VSTS for your customers"
       href: csp/buy-csp-vsts.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
-      href: csp/buy-manage-vs-subs.md
+      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
+    - name: "CSPs: Buy App Center resources"
+      href: csp/buy-vs-app-center.md
 - name: Troubleshooting
   items:
-  - name: Billing signup
-    href: faq-billing-setup.md
-  - name: Pay for more Basic users
-    href: faq-pay-for-basic-users.md
-  - name: Try extensions
+  - name: Trials FAQ
     href: faq-extension-trials.md
-  - name: Azure billing
-    href: faq-azure-billing.md
-  - name: Identitites for Visual Studio subscribers
-    href: faq-link-msdn-subscription-org-account.md
 - name: Reference
   items:
-  - name: VSTS Permissions 
-    href: ../security/permissions.md
+  - name: Permissions 
+    href: ../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: About access levels
+    href: ../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: Default permissions & access
+    href: ../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Account Management
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
-  - name: VSTS and TFS extensions
-    href: extensions.md
-  - name: Manage Extensions
+  - name: Marketplace extensions
     href: ../marketplace/index.md
-  - name: Service hooks
-    href: ../service-hooks/index.md
-- name: Buying subscriptions
-  items:
-  - name: Buy Xamarin University
-    href: xamarin-univ.md
-  - name: Visual Studio cloud subscriptions
-    items:
-    - name: Buy Visual Studio cloud subscriptions
-      href: vs-subscriptions/buy-vs-subscriptions.md
-    - name: Assign and Manage Visual Studio cloud subscriptions
-      href: vs-subscriptions/manage-vs-subscriptions.md
-    - name: Troubleshooting Visual Studio subscriptions
-      href: faq-vs-subscriptions.md

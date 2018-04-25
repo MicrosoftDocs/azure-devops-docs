@@ -2,13 +2,15 @@
 title: Troubleshoot creating a team project
 description: Troubleshoot creating a team project
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/17/2017
+monikerRange: '>= tfs-2015'
 ---
-
 # Troubleshoot creating a team project
 
 **VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** 
@@ -78,5 +80,5 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ###Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in the [Team Foundation Server � Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+**A:** You can post a question or search for answers in the [Team Foundation Server - Project Management & Work Item](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 

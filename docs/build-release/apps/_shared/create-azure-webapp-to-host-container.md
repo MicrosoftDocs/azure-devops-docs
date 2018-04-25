@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create an Azure web app to host a container
 
 1. Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).

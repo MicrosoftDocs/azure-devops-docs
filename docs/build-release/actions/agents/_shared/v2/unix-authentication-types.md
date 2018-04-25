@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 #### VSTS
 
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.

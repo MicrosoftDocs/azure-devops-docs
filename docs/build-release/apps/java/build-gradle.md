@@ -1,15 +1,18 @@
 ---
 title: CI build for a Java app with Gradle
 description: Define a continuous integration (CI) build process for your Java app with Gradle in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 9AED3FD7-8CC1-4DD2-ADB0-2793D5A00A28
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 01/16/2017
+ms.date: 04/18/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Build your Java app with Gradle
 
@@ -67,11 +70,11 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
 1. In the right panel, search for `java`, select **Gradle**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS Preview_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
 
  * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) installed.
 
@@ -87,7 +90,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
  ---
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time a change is committed to your repository.
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time changes are pushed to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
 

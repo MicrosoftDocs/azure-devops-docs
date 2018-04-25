@@ -8,7 +8,10 @@ ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: douge
 ms.author: elbatk
 ms.date: 12/04/2017
+monikerRange: '>= tfs-2013'
 ---
+
+ 
 
 # Uninstall or disable extensions
 
@@ -16,7 +19,7 @@ ms.date: 12/04/2017
 
 When you don't need an extension anymore, you can uninstall or disable this extension.
 
-> Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md). 
+> **Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md)**. 
 
 Only [Project collection administrators](../security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../security/permissions.md#collection) can uninstall or disable extensions. 
 

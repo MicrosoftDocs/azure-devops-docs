@@ -1,11 +1,13 @@
 ---
-title: Develop requirements | VSTS & TFS
+title: Develop requirements
+titleSuffix: VSTS & TFS
 description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/28/2017
 ---
 

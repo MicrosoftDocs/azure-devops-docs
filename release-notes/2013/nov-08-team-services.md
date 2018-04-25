@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Nov 8
 description: VSTS release notes for November 08 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 16f98008-1ba7-4b07-ae6b-07490f37822b
 ms.date: 06/01/2016

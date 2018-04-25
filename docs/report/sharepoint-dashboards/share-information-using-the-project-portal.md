@@ -1,18 +1,19 @@
 ---
-title: Share information using the project portal | TFS
+title: Share information using the project portal 
+titleSuffix: TFS
 description: Use the SharePoint project portal to share information with your team 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/09/17
-ms.topic: get-started-article
+ms.topic: conceptual
 ---
 
 # Share information using the project portal
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams use project portals to share information and support how their team works. If you install TFS with a configuration that includes SharePoint Products and you created a project portal when you created your team project, your team project is configured with a SharePoint site for the project portal.  
   

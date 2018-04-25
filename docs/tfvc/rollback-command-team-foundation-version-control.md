@@ -2,12 +2,16 @@
 title: Rollback Command (Team Foundation Version Control)
 description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Rollback Command (Team Foundation Version Control)
 
@@ -77,7 +81,7 @@ You can specify more than one <em>Itemspec</em> argument.
 
 The **tf rollback** command negates the effect of each changeset that you specify for each item that you specify. The following table lists how the operation negates each kind of change.
 
-|**If you roll back this change…**|**...a rollback change and the following additional change are made**|
+|**If you roll back this change...**|**...a rollback change and the following additional change are made**|
 |---|---|
 |**add**, **branch**, or **undelete**|**delete**|
 |**edit**|**edit**|

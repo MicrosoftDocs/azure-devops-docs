@@ -1,13 +1,16 @@
 ---
-title: Change the synchronization retry or resubmit interval | TFS
-description: Understand how a conflict or failed synchronization occurs while in the synchronization process - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Change the synchronization retry or resubmit interval
+titleSuffix: TFS 
+description: Understand how a conflict or failed synchronization occurs when using Team Foundation Server & Project Server integration
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: ce1d4951-e460-43d3-8852-a0f170012142
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
 # Change the synchronization retry or resubmit interval
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -25,6 +28,6 @@ $collectionHive.SetValue("/Configuration/ProjectServer/StatusingResubmitInterval
 > [!NOTE]
 >  If you specify a resubmit interval value of 0, you disable resubmissions.  
   
-## Related notes  
+## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

@@ -1,23 +1,25 @@
 ---
 title: Get Started with NuGet Package Management in VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-artifacts
+ms.topic: conceptual
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 01/24/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Get started with NuGet Package Management in VSTS and TFS
+
+**VSTS** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
 [Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install it.
-
-[!INCLUDE [](_shared/availability-nuget.md)]
 
 <a name="create-a-feed"></a>
 ## Create a feed

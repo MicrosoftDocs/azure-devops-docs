@@ -1,13 +1,15 @@
 ---
-title: Run manual tests in VSTS
+title: Run manual tests - manual testing in VSTS
 description: Run manual tests and record their results with Microsoft Test Runner and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Run manual tests
@@ -23,6 +25,8 @@ are automatically included in the bug.
 to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
 Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 <a name="run-web"></a>
 ## Run tests for web apps

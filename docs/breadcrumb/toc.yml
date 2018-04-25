@@ -1,4 +1,4 @@
-- name: VSTS and TFS
+- name: VSTS and TFS 
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items:
@@ -14,7 +14,7 @@
       topicHref: /vsts/git/index
     - name: TFVC
       tocHref: /vsts/tfvc/
-      topicHref: /vsts/tfvc/overview
+      topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
@@ -63,9 +63,6 @@
     - name: Queries
       tocHref: /vsts/work/track/
       topicHref: /vsts/work/track/index
-    - name: Customization
-      tocHref: /vsts/work/customize/
-      topicHref: /vsts/work/customize/index
     - name: Agile at Scale
       tocHref: /vsts/work/scale/
       topicHref: /vsts/work/scale/index
@@ -85,13 +82,13 @@
     - name: "Power BI (VSTS)"
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-    - name: SQL Server Reporting (TFS)
-      tocHref: /vsts/report/sql-reports/
-      topicHref: /vsts/report/sql-reports/index
   - name: Collaboration
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
+    - name: Public Projects
+      tocHref: /vsts/public/
+      topicHref: /vsts/public/index
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
@@ -111,15 +108,12 @@
     - name: Account Management
       tocHref: /vsts/accounts/
       topicHref: /vsts/accounts/index
-    - name: "Server Administration (TFS)"
-      tocHref: /vsts/tfs-server/
-      topicHref: /vsts/tfs-server/index
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
     - name: "Scale & Configure Teams"
-      tocHref: /vsts/teams/
-      topicHref: /vsts/teams/index
+      tocHref: /vsts/settings/
+      topicHref: /vsts/settings/index
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index
@@ -129,15 +123,6 @@
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
-    - name: SharePoint Integration
-      tocHref: /vsts/report/sharepoint-dashboards/
-      topicHref: /vsts/report/sharepoint-dashboards/index
-    - name: SharePoint Integration
-      tocHref: /vsts/report/excel/
-      topicHref: /vsts/report/excel/index
-    - name: TFS-Project Server integration
-      tocHref: /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/index
   - name: Extend
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=integration

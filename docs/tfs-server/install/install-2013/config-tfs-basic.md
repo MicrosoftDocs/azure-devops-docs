@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: 'tfs-2013'
 ---
+
+
 
 # Configure Team Foundation Server using the basic configuration
 
@@ -15,14 +18,14 @@ ms.technology: vs-devops-admin
 
 ![](../_img/ic552206.png)
 
-You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
+You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
 
 > [!TIP]
 > You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
 
 **Required Permissions**
 
-To perform this procedure, you must be a member of the **Administrators** security group on the server that is running Team Foundation Server. 
+To perform this procedure, you must be a member of the **Administrators** security group on the server that is running Team Foundation Server. 
 
 ### To configure Team Foundation Server by using the basic configuration
 
@@ -33,18 +36,18 @@ To perform this procedure, you must be a member of the **Administrators** securi
 3.  Choose **Install SQL Server Express** to host the configuration database on an instance of SQL Server Express.
 
 	> [!TIP]
-	> You don’t have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance ** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
+	> You don't have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance ** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
 
 4.  Review your configurations settings and then choose **Next**.
 
-    The wizard validates your configuration. If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
+    The wizard validates your configuration. If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you'll be able to configure TFS in the next step.
 
 5.  Choose **Configure**.
 
     The wizard applies configuration settings. After the wizard completes, close it.
 
 	> [!TIP]
-	> Did you get error TF255356 you tried install TFS Basic or Express? It’s a misleading error message. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
+	> Did you get error TF255356 you tried install TFS Basic or Express? It's a misleading error message. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
 
 6.  In the TFS Configuration tool, choose **Configure Team Foundation Build Service**, **Start Wizard**.
 

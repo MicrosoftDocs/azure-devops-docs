@@ -1,11 +1,13 @@
 ---
-title: Create and manage Reporting Services reports | TFS
-description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Create and manage Reporting Services reports
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
+description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server 
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

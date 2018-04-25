@@ -1,21 +1,25 @@
 ---
-title: Example of an Analytics Widget for VSTS
-description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services (VSTS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Example of an Analytics Widget
+titleSuffix: VSTS 
+description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services   
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
 ms.manager: douge
 ms.author: kaelli
+ms.topic: sample
 ms.date: 11/13/2017
 ---
 
-#Create an Analytics widget for VSTS
+# Create an Analytics widget for Visual Studio Team Services
 
-**VSTS**   
+
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 <!-- Note: The github links below will be re-pointed to the master branch sample, once we complete the merge. -->
 
-You can use the information provided in this topic to build your own Analytics widget to display in a [VSTS Dashboard](../dashboards/index.md). The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
+You can build your own Analytics widget to display in a [Dashboard](../dashboards/index.md) in Visual Studio Team Services (VSTS). The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
+
 > [!div class="checklist"]   
 > * How to render trend lines associated with work item states
 > * How to query a dataset, whe a user will configure through the widget configuration view
@@ -26,7 +30,7 @@ With this information, you'll be able to create your own Analytics widget.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-##Prerequisites
+## Prerequisites
 This example provides a ready-made widget, covering basics from topics in Dashboards, Charting and Analytics. The following documents provide more grounding on details demonstrated in this example:
 0. Create a VSTS Widget Extension, reference the [Widget extensions sample](../../extend/develop/add-dashboard-widget.md)
 0. Render a VSTS Chart Control, reference [Add a Chart](../../extend/develop/add-chart.md)

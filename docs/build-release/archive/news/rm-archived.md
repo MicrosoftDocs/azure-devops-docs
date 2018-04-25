@@ -2,11 +2,14 @@
 title: Archived release notes for Microsoft Release Management
 description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 12/20/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Archived release notes for Microsoft Release Management
@@ -311,8 +314,6 @@ perform manual steps, and then resume further automated steps.
 You can also reject the deployment and prevent further steps from
 executing after a manual intervention.
 
-For more details, see [Manual intervention](../../concepts/process/phases.md#the-manual-intervention-task).
-
 <a name="sep2-servendpoint"></a>
 **Service endpoint improvements**
 
@@ -501,8 +502,6 @@ an environment allows scripts run as tasks in the environment to access the
 current OAuth token.
 
 ![Setting the option to allow access to the OAuth token](_img/rm-archived/release-notes-18.png)
-
-For more details, see [Agent phase properties](../../concepts/process/phases.md)
 
 This is a simple example showing how to get a build definition:
 

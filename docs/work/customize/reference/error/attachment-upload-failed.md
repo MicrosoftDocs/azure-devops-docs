@@ -1,17 +1,19 @@
 ---
 title: Attachment upload failed with the error 
+titleSuffix: VSTS & TFS
 description: This message might appear in a dialog box when you save a work item that has attachments 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
-ms.assetid: 5d0e19c4-69fc-469e-93a0-f6d1ebd96777
-ms.author: kaelli
+ms.prod: devops
+ms.technology: devops-agile
+ms.assetid:  
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: Troubleshooting
 ms.date: 10/22/2017
 ---
 
 # Attachment upload failed with the error: The underlying connection was closed: An unexpected error occurred on a receive
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 This message might appear in a dialog box when you save a work item that has attachments. The problem might be intermittent and difficult to reproduce.  
   

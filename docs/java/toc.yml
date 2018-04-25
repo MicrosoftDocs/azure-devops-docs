@@ -79,7 +79,19 @@
   items:
   - name: Continuous Testing 
     href: /vsts/build-release/test/continuous-test-java?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json
+  - name: Eclipse plug-in FAQ
+    href: eclipse-faq.md
+  - name: IntelliJ plug-in FAQ
+    href: intellij-faq.md
+  - name: Android Studio plug-in FAQ
+    href: android-studio-faq.md
 - name: Resources
   items:
+  - name: Get the IntelliJ plug-in
+    href: download-intellij-plug-in.md
+  - name: Get the Eclipse plug-in
+    href: download-eclipse-plug-in.md
+  - name: Get the Android Studio plug-in
+    href: download-android-studio-plug-in.md
   - name: Build and Release
     href: /vsts/build-release/index

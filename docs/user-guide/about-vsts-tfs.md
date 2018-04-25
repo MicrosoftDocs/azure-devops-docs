@@ -1,19 +1,23 @@
 ---
 title: Understand differences between VSTS and TFS  
-description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-overview
+description: Understand the fundamental differences between Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops  
+ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.manager: douge
 ms.author: kaelli
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 06/22/2017
 ---
 
-# About VSTS and Team Foundation Server 
+# Understand differences between VSTS and TFS
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 VSTS and Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
-VSTS is the cloud offering that provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world. 
+VSTS is the cloud offering that provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world. 
 
 Team Foundation Server is the on-premises offering built on a SQL Server backend. Organizations typically choose on-premises TFS when they need their data to stay within your network, or they want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
@@ -134,7 +138,7 @@ that VSTS projects stay safe and secure. We have technical features and business
 to deliver on that commitment. You can also take steps to secure your data. Learn more in our
 [Data Protection Overview whitepaper](../articles/team-services-security-whitepaper.md).
 
-## Key feature differences between VSTS and TFS 
+## Key feature differences between VSTS and TFS
 
 Even though VSTS is a hosted version of TFS, there are some differences between the features available 
 in the two products. Some TFS features are not supported in VSTS at all&mdash;for example, VSTS does not support integration with 
@@ -145,7 +149,7 @@ SharePoint or Project Server.
 You customize the work tracking experience in two different ways depending on the supported process model: 
 
 >- For VSTS, you use the **Inheritance** process model which supports WYSIWYG customization    
->- For TFS, you use the **On-premises XML**process model which supports customization through import/export of XML definition files for work tracking objects   
+>- For TFS, you use the **On-premises XML** process model which supports customization through import/export of XML definition files for work tracking objects   
 
 While the **On-premises XML** process model option is quite powerful, it also 
 can cause a number of problems. Chief among these is that processes for existing team projects do not update automatically
@@ -194,16 +198,23 @@ your software projects. These include:
 
 * [Dashboards](../report/dashboards/dashboards.md) and lightweight 
 [charts](../report/dashboards/charts.md), available in both TFS and VSTS. These are 
-very easy to set up and use, but are also fairly limited in what they can do.
+very easy to set up and use.
 
-The following reports and dashboards&mdash;which are more complicated to use, but also more powerful&mdash;are only available in TFS: 
+In addition, with VSTS you have access to the following services:
+* [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets-vsts.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
+* [PowerBI integration](../report/powerbi/overview.md) which supports getting Analytics data into Power Bi reports, providing a nice combination of simplicity and power. 
+* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire VSTS account.
+
+We plan to make these services available in TFS in a future release.
+
+The following reports and dashboards are only available in TFS: 
 - [Excel reports](../report/excel/excel-reports.md) 
 - [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
 - [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md) 
 
 And, available today only in VSTS:
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-
+* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related notes 
 - [Key concepts](concepts.md)  

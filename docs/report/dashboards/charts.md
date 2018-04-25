@@ -1,15 +1,15 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: TFS  
+titleSuffix: VSTS & TFS  
 description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 11/28/2017
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+ms.date: 03/20/2018
 ---
-
 
 # Track progress by creating status and trend query-based charts 
 
@@ -25,10 +25,23 @@ For example, the following image illustrates four different charts created from 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ## Prerequisites
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 - All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
-- For on-premises TFS 2015, you can pin charts to a team homepage. From VSTS or TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md) 
-- To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions (for VSTS or TFS 2017.1 or later versions)](dashboard-permissions.md).  
+- To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
+- You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.  
+::: moniker-end
+
+::: moniker range="tfs-2015"
+- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All members who belong to the Contributors group can create charts
+- You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
+::: moniker-end
+
+::: moniker range="tfs-2013"
+- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All members who belong to the Contributors group can create charts
+::: moniker-end
 
 To learn more about default groups, see [About permissions and groups](../../security/about-permissions.md).
 
@@ -88,20 +101,21 @@ Select your option from the chart's context menu.
 To add a chart to your team's home page, you must be a [team administrator](../../work/scale/add-team-administrator.md). You can only add charts defined for shared queries.
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
-
+ 
+::: moniker range=">= tfs-2013 <= tfs-2015"
 >[!NOTE]  
-><b>Feature availability: </b> For on-premises TFS 2015, you can pin charts to the team homepage. From VSTS or TFS 2015.1, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md).  
-
+><b>Feature availability: </b> For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
+::: moniker-end
 
 <a id="add-chart-widget"></a> 
 ## Add chart widget to a dashboard   
->[!NOTE]  
-><b>Feature availability: </b> The widget, Chart for Work Items, is available from VSTS or TFS 2015.2 or later version. You add it to a team dashboard from the [widget catalog](widget-catalog.md). 
-
  
 If you've already defined your [flat list query](../../work/track/using-queries.md), you can add and configure a chart to a team dashboard using the Chart for work items widget. 
+::: moniker range="tfs-2015"
+The widget requires TFS 2015.2 or a later version. You add it to a team dashboard from the [widget catalog](widget-catalog.md). 
+::: moniker-end
 
-1. From the web portal for VSTS, open the [team dashboard](dashboards.md) you want to add the chart to.   
+1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
@@ -141,7 +155,6 @@ Now you know how to create status and trend charts for work items. A few things 
 - You can copy and email the URL of any chart page to share it with a team member 
 - For additional examples of charts created from numeric fields, see [Query by a numeric field](../../work/track/query-numeric.md). 
 
-
 Also, from the web portal, you can view the following charts:  
 
 - [Cumulative flow diagram](cumulative-flow.md)  
@@ -151,9 +164,7 @@ Also, from the web portal, you can view the following charts:
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 
-
-[!INCLUDE [temp](../_shared/image-differences.md)]
-
+[!INCLUDE [temp](../../work/_shared/image-differences-with-wits.md)]
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
@@ -165,7 +176,6 @@ When you select **Area Path** or **Iteration Path**, only the leaf node appears 
 
 Use ```Node Name```, the area path leaf node, to see if that improves your results. 
 
-
 Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts have not been optimized for mobile or touch displays. 
 
 ### Why some charts don't show all the field values in the results 
@@ -173,21 +183,23 @@ When a chart contains more than seven items within the data series, values in th
 
 ![Other category groups data beyond 7 set series](_img/tfs-vso-remaining-category-consolidation-chart.png)  
 
+::: moniker range="vsts"
+### Widgets and the Analytics Service 
+The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
+ 
+::: moniker-end
 
-### Widgets and the Analytics Service (VSTS) 
-If you have a VSTS account, you have access to a number of [widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
-
-
-### Additional charts (TFS)
+::: moniker range=">= tfs-2013 <= tfs-2018"
+### Additional charts  
 - If your team project has a project portal and SharePoint site configured, you can access several [Excel charts](../excel/excel-reports.md). These include charts to monitor code quality, testing, and bug tracking activity.
 - If your team project has [SQL Server reports](../sql-reports/reporting-services-reports.md) added, you can access several reports that include status and trend activities. If you need to add reporting, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
 - If your team project has reporting services added, you can [create an Excel chart from a work item query](../excel/create-status-and-trend-excel-reports.md).
 
-### Query-based charts versus Excel-generated PivotCharts (TFS) 
+### Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../excel/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. Also, Excel PivotCharts are only available to users of an on-premises TFS.     
+Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../excel/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. 
  
-
+::: moniker-end
 
 [add-a-team]: ../../work/scale/multiple-teams.md
 [team-assets]: ../../work/scale/manage-team-assets.md

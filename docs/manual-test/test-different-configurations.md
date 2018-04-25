@@ -1,12 +1,15 @@
 ---
 title: Test different configurations when manual or exploratory testing
 description: Manual and exploratory testing - test different configurations with Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test different configurations
@@ -37,7 +40,8 @@ Then you can:
 
 > **Note**: This feature is available only in VSTS.
 In addition, Stakeholders and Basic users cannot create or manage configurations.
-You must have a Visual Studio Enterprise, Visual Studio Test Professional, or Test Manager subscription. 
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="create-configs"></a>
 ## Create configurations and variables

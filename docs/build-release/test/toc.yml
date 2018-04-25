@@ -8,9 +8,9 @@
     href: ../overview.md
 - name: Quickstarts
   items:
-  - name: Test with builds
+  - name: Unit test with builds
     href: getting-started-with-continuous-testing.md
-  - name: Selenium testing
+  - name: UI test with Selenium
     href: continuous-test-selenium.md
   - name: Review test results
     href: review-continuous-test-results-after-build.md
@@ -22,16 +22,20 @@
   items:
   - name: Set up continuous testing
     href: set-up-continuous-testing-builds.md
-  - name: Run tests from the Test hub
-    href: run-automated-tests-from-test-hub.md
   - name: Associate tests with test cases
     href: associate-automated-test-with-test-case.md
+  - name: Run tests from the Test hub
+    href: run-automated-tests-from-test-hub.md
+  - name: Run tests with MTM
+    href: run-automated-tests-with-microsoft-test-manager.md
   - name: Associate results with requirements
     href: associate-automated-results-with-requirements.md
   - name: Use Test Impact Analysis
     href: test-impact-analysis.md
   - name: Run tests in parallel
     href: run-tests-in-parallel.md
+  - name: Collect screenshots and video
+    href: collect-screenshots-and-video.md
 - name: Reference
   items:
   - name: Unified agents and phases
@@ -53,4 +57,4 @@
   - name: Load and performance testing
     href: ../../load-test/index.md
   - name: Unit testing
-    href: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios
+    href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

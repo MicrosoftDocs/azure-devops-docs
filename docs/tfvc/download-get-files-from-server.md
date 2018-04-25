@@ -2,12 +2,16 @@
 title: Download (get) files from the Server
 description: Download (get) files from the Server
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Download (get) files from the Server
 
@@ -23,7 +27,7 @@ You must be one of the **Contributors** for your team project. See [Team Foundat
 
 You should get the latest files from your server after you [set up your dev machine](set-up-team-foundation-version-control-your-dev-machine.md). Then you can begin developing your app.
 
-Later, as you develop functionality in the workspace on your dev machine, your code is isolated from the changes that are made by other developers. But when you are ready (for example, you have completed and checked in the code that completes a task), you should get the latest version of your team’s files.
+Later, as you develop functionality in the workspace on your dev machine, your code is isolated from the changes that are made by other developers. But when you are ready (for example, you have completed and checked in the code that completes a task), you should get the latest version of your team's files.
 
 ### To get the latest version of some files
 
@@ -50,15 +54,15 @@ In special cases (for example, to fix a regression bug), you might need to get a
 
 2.  Choose an option from the **Type** drop-down list:
 
-    -   **Changeset**   Get a version by specifying a [changeset](find-view-changesets.md). For more information, see [Find and view changesets](find-view-changesets.md).
+    -   **Changeset**   Get a version by specifying a [changeset](find-view-changesets.md). For more information, see [Find and view changesets](find-view-changesets.md).
 
-    -   **Date**   Get a version by specifying a date. If selected, select a date in the **Date** list.
+    -   **Date**   Get a version by specifying a date. If selected, select a date in the **Date** list.
 
-    -   **Label**   Get a version by specifying a [label](use-labels-take-snapshot-your-files.md). For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+    -   **Label**   Get a version by specifying a [label](use-labels-take-snapshot-your-files.md). For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
-    -   **Latest Version**   Select this option to get the latest version on the server.
+    -   **Latest Version**   Select this option to get the latest version on the server.
 
-    -   **Workspace Version**   Gets a version by specifying a [workspace](create-work-workspaces.md).
+    -   **Workspace Version**   Gets a version by specifying a [workspace](create-work-workspaces.md).
 
 3.  (Optional) Select the **Overwrite writable files that are not checked out** option.
 

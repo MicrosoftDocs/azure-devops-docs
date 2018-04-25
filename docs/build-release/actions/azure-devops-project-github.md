@@ -3,19 +3,22 @@ title: Create a CI/CD pipeline for your existing code with the Azure DevOps Proj
 description: The DevOps Project makes it easy to get started on Azure. It helps you use your own code and GitHub repository to launch an app on an Azure service of your choice in few quick steps.
 services: vsts
 documentationcenter: vs-devops-build
-author: mlearned
-manager: douge
+ms.author: mlearned
+ms.manager: douge
 editor: ''
-
 ms.assetid:
 ms.workload: web
+ms.prod: devops
+ms.technology: devops-cicd
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: tutorial
-ms.date: 02/08/2018
+ms.date: 03/17/2018
 ms.author: mlearned
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Create a CI/CD pipeline for your existing code with the Azure DevOps Project
 

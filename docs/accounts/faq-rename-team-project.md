@@ -1,19 +1,22 @@
 ---
 title: Troubleshooting renaming a team project
 description: Troubleshooting renaming a team project
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
 toc: show
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'tfs-2015 || vsts'
 ---
 
-# Troubleshooting renaming a team project
+
+# Troubleshoot renaming a team project
 
 **VSTS** | **TFS 2015**
-
 
 #### Q: What permission do I need to rename a team project?
 

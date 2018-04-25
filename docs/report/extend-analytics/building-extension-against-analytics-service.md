@@ -1,17 +1,19 @@
 ---
-title: Build a hub extension | VSTS
-description: How to build a hub extension that calls the Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+title: Build a hub extension 
+titleSuffix: VSTS  
+description: How to build a hub extension that calls the Analytics Service OData for Visual Studio Team Services from Power BI Desktop
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86
 ms.manager: douge
 ms.author: kaelli
+ms.topic: sample
 ms.date: 11/13/2017
 ---
 
-# Build a hub extension  
+# Build a hub extension that calls the Analytics Service 
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Building an extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
@@ -26,7 +28,7 @@ example we'll use the open source C3 library which sits on top of D3.
 At the end of this walkthrough you will have a new hub called "Analytics Data" with a bar chart showing the count of work
 items across all projects in your account.
 
-##Set up the project
+## Set up the project
 
 **Before beginning, download the following items:**
 
@@ -34,7 +36,7 @@ items across all projects in your account.
 * [D3](https://github.com/mbostock/d3/releases/download/v3.5.13/d3.zip)
 * [C3](https://github.com/masayuki0812/c3/archive/0.4.10.zip)
 
-### Create the web page  
+## Create the web page  
 
 1. Create a new folder called "Analytics Extension"
 2. Unzip the Client SDK and copy the VSS.SDK.js file into the **Analytics Extension\sdk\scripts** folder
@@ -86,7 +88,7 @@ VSS.notifyLoadSucceeded();
 </html>
 ```
 
-### Handle authentication 
+## Handle authentication 
 
 For a more comprehensive discussion of authentication, see [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md).
 To get an authorization token, replace the **Get authentication token** comment from the code above with the following:
@@ -178,7 +180,7 @@ var chart = c3.generate({
 });
 ```
 
-### Create the manifest   
+## Create the manifest   
 
 Full documentation on extension manifests can be found in the [Extension manifest reference](../../extend/develop/manifest.md) documentation.
 For the purposes of this sample, use the following manifest and copy it into a file called vss-extension.json in the root folder.
@@ -262,8 +264,10 @@ For the purposes of this sample, use the following manifest and copy it into a f
 
 ```
 
-**Remember to replace the publisher name and image name as appropriate. In this example the license.md and overview.md files
-do exist but they have no content. They must exist otherwise the extension cannot be compiled into a VSIX pacakage.**
+> [!IMPORTANT]  
+> Remember to replace the publisher name and image name as appropriate.  
+> In this example the license.md and overview.md files
+do exist, but they have no content. They must exist otherwise the extension cannot be compiled into a VSIX pacakage. 
 
 There are a few key things to note here:
 * This extension adds a work-hub-group (extension points are described in [Extension points](../../extend/reference/targets/overview.md))

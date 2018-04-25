@@ -1,12 +1,15 @@
 ---
 title: Record and replay cloud-based load tests with VSTS
 description: Get app performance data by recording and replaying cloud-based load tests when use VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Record and replay cloud-based load tests
@@ -234,7 +237,7 @@ If you find that this is the cause of your test failures, you can export and run
 
 This export mechanism downloads a Visual Studio load test project containing the required web performance 
 test and load test for your application. See 
-[how to fix dynamic parameters using Visual Studio](https://msdn.microsoft.com/library/ff460245(v=vs.140).aspx). 
+[how to fix dynamic parameters using Visual Studio](https://docs.microsoft.com/visualstudio/test/fix-non-detectable-dynamic-parameters-in-a-web-performance-test). 
 Sean Lumley's [blog post](https://blogs.msdn.microsoft.com/slumley/2007/04/10/how-to-debug-a-web-test/)
 has a detailed example of how dynamic parameters can be identified by inspecting the test and test results.
 
@@ -245,6 +248,6 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

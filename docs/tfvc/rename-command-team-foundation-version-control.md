@@ -2,12 +2,16 @@
 title: Rename Command (Team Foundation Version Control)
 description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Rename Command (Team Foundation Version Control)
 
@@ -80,7 +84,7 @@ Use Rename to do the following:
 
 -   Rename the *olditem* to the *newitem*, such as `tf rename 314.cs 315.cs`.
 
--   Move the *olditem* to a new location in the Team Foundation version control server by providing a *newitem* whose path differs from that of the *olditem*, such as ** **`tf rename 314.cs ..\\newdir\\314.cs`.
+-   Move the *olditem* to a new location in the Team Foundation version control server by providing a *newitem* whose path differs from that of the *olditem*, such as ** **`tf rename 314.cs ..\\newdir\\314.cs`.
 
 If you provide a *newitem* that specifies a non-existent folder, the **rename** command creates the destination folder. If *newitem* is a folder, *olditem* becomes a child of *newitem*.
 

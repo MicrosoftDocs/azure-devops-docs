@@ -2,8 +2,8 @@
 title: New Release Definition Editor and improved pull request workflows – July 14
 description: VSTS release notes for July 13 2017
 ms.ContentId: 3db4e4d9-ac9e-426c-81bc-dac28ea16988
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: alexn
 author: alexn
 ---

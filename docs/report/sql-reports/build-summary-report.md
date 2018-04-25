@@ -1,10 +1,12 @@
 ---
-title: Build Summary Report | TFS
-description: Builds and provides information about test results, test coverage, code churn, and quality notes for each build - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Build Summary Report 
+description: Provides information about test results, test coverage, code churn, and quality notes for each build - Team Foundation Server 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 10/17/17
 ---

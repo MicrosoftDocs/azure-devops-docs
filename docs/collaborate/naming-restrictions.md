@@ -1,36 +1,40 @@
 ---
-title: Naming restrictions and conventions used by VSTS & TFS
-description: Guidelines for object labels you define for an account, group, server, or other objects which include length, special characters, and uniqueness. 
-ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+title: Naming restrictions and conventions 
+titleSuffix: VSTS & TFS
+description: Length, uniqueness, and special character requirements to meet when labeling objects such as an account, group, server 
+ms.technology: devops-collab
+ms.prod: devops
+ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.manager: douge
-ms.author: kaelli
-ms.date: 07/05/2017
+ms.author: kaelliauthor: KathrynEE
+ms.date: 03/26/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Naming restrictions and conventions 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 Most components in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
 
-##Computers, accounts, groups, and collections
+## Computers, accounts, groups, and collections
 
 <a id="CommonRestrictions">   </a>
-###Common considerations 
+### Common considerations 
 
 The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these will count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="ComputerNames">   </a>
 
-###Computer name (on-premises TFS only)
+### Computer name 
 <a id="computer-name">   </a>
 
 When you install TFS, the computer name where you install TFS is associated with the name of the server.  
@@ -39,14 +43,13 @@ Both the operating system and Active Directory impose certain restrictions on co
 *	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](https://msdn.microsoft.com/library/ms143799.aspx)  
 *	[Windows Server Active Directory](https://support.microsoft.com/en-us/kb/909264)
 
+::: moniker-end
+
 <a id="AccountNames">   </a>
-###Account name
-User accounts identify users in VSTS or TFS. These accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
+### User account names
+User accounts identify people added to a team project or project collection. These user accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
 
-You add existing user accounts. You can't create a user account. To add user accounts to a team project, see:  
-
-*	VSTS: [Add team members](../accounts/add-team-members-vs.md)  
-*	On-premises TFS: [Add users to team projects](../security/add-users-team-project.md)   
+You add existing user accounts. You can't create a user account. To add user accounts to a team project, see [Add users to a team project or team](../security/add-users-team-project.md) . 
 
 User accounts that you add must conform to the following restrictions.  
 
@@ -129,7 +132,7 @@ User accounts that you add must conform to the following restrictions.
 
 <a id="GroupAccountNames">   </a>
 
-###Group name 
+### Group name 
 
 Groups enable you to apply certain rights or permissions to a group of users.
 
@@ -205,11 +208,13 @@ Must not include commas (,)
 </table>
 
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
 <a id="ProjectCollectionNames">   </a>
 
-###Team project collections (on-premises TFS only)
+## Team project collections 
 
-A team project collection identifies a group of team projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of team projects within an on-premises TFS.  
+A team project collection identifies a group of team projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of team projects within TFS.  
 
 Also, the collection name is part of the connection string used to connect team members to team projects. The default assigned corresponds to *DefaultCollection*. 
 [Manage team project collections](../tfs-server/admin/manage-team-project-collections.md) provides more information. 
@@ -252,7 +257,7 @@ If your deployment includes SharePoint Products or SQL Server Reporting Services
 <li>
 Must not contain any Unicode control characters or surrogate characters.</li>
 <li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]</li>
-<li>Must not contain an ellipsis (…) or a double period (..)</li>
+<li>Must not contain an ellipsis (&hellip;) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
 </ul>
@@ -272,11 +277,13 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 </tr>
 </table>
 
-##Team project and work item tracking
+::: moniker-end
+
+## Team project and work item tracking
 
 <a id="ProjectNames">   </a>
 
-###Team projects
+### Team projects
 
 A team project establishes a repository for source code and a place for teams to plan, track progress, and collaborate. The name of the team project is part of the connection string used to connect team members to team projects.
 
@@ -329,7 +336,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
+Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247.aspx).
 </li>
 </ul>
 </td>
@@ -339,14 +346,12 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 
 <a id="ProcessTemplates">   </a>
 
-###Process and process templates 
+### Process and process templates 
 
 A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
 
 > [!NOTE]   
-> <b>Terminology note: </b>Both "process" and "process template" refer to an interdependent set of files used to create a team project. However, the features, rules, and behaviors associated with each differ slightly depending on whether you connect to VSTS or an on-premises TFS.
->    
-[Choose a process](../work/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
+>  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a team project. [Choose a process](../work/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
 
 Processes you define or customize must conform to the following restrictions.  
 
@@ -392,7 +397,7 @@ Must not exceed 2 GB (gigabytes).
 
 <a id="Kanban">   </a>
 
-###Kanban boards 
+### Kanban boards 
 
 Your [Kanban board](../Work/kanban/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
@@ -446,8 +451,8 @@ Must not contain any Unicode control characters or surrogate characters
 
 <a id="TeamNames">   </a>
 
-###Teams 
-Team names identify a group of individuals or groups that collectively work together as a team in a team project. Team members use this name to connect to the team when working in VSTS or the web portal for TFS. 
+### Teams 
+Team names identify a group of individuals or groups that collectively work together as a team in a team project. Team members use this name to connect to the team or to query against members defined for a team. 
 
 As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different team projects within a team project collection. [Add another team or a hierarchy of teams](../Work/scale/multiple-teams.md) provides more information about working with teams.  
 
@@ -495,7 +500,7 @@ Must not contain any Unicode control characters or surrogate characters
 Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>
-Must not contain an ellipsis (…) or a double period (..)
+Must not contain an ellipsis (&hellip;) or a double period (..)
 </li>
 <li>
 Must not start with an underscore (&#95;)
@@ -524,7 +529,7 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 
 <a id="WorkItems">   </a>
 
-##Work items, work item types and customizations
+## Work items, work item types and customizations
 
 You use work items to capture information to plan and track your software development projects. With work items, you can describe the work to be done, assign work, track status, and coordinate efforts within your team. Different types of work items -- such as user stories, tasks, bugs, and issues-- track different types of information.  
 
@@ -534,7 +539,7 @@ Restrictions are placed on several elements associated with work items, includin
 
 You can [modify or add a custom work item type (WIT)](../work/customize/add-modify-wit.md) to support your team's processes. 
 
-###Attachments  
+### Attachments  
 
 Files attached to work items must conform to the following restrictions.  
 
@@ -564,7 +569,7 @@ Default maximum size: 4,096 kilobytes
 </table>
 
 
-###Area Path and Iteration Path 
+### Area Path and Iteration Path 
 
 Two work item fields, Area Path and Iteration Path, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods in which they'll be worked on.
 
@@ -654,9 +659,9 @@ Must not contain characters prohibited by the local file system. For more inform
 
 <a id="WorkItemFields">   </a>
 
-###WIT field names
+### Field names, work item tracking
 
-Each WIT definition contains one or more work item fields. These fields define the information stored for work items based on the WIT. A work item field name uniquely identifies each work item field.  
+Each work item type (WIT) definition contains one or more work item fields. These fields define the information stored for work items based on the WIT. A work item field name uniquely identifies each work item field.  
 
 Work item field names that you add must conform to the following restrictions.  
 <table>
@@ -695,7 +700,7 @@ Length
 </tr>
 </table>
 
-###Field, link type, and category reference names 
+### Field, link type, and category reference names 
 
 You must define a reference name whenever you add or create a work item field, link type, or category. Each work item field has an associated field reference name. The field reference name uniquely identifies each field and cannot be changed after it's assigned.  
 
@@ -764,7 +769,7 @@ For example, the field reference names ```My._Field``` and ```My_.Field``` would
 </tr>
 </table>
 
-####Field reference names and portability 
+**Field reference names and portability** 
 
 The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow third party integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
 
@@ -780,7 +785,7 @@ For descriptions of system fields and fields defined in the default process temp
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
-####Examples of field reference names  
+**Examples of field reference names  **
 
 The following examples show valid field reference names, in various namespaces. Customers and partners can also define their own namespaces to support their custom work item types.   
 
@@ -827,7 +832,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 
 
 
-###Field help text
+### Field help text
 
 You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific team project. [Apply a rule to a work item field](../work/customize/set-area-paths.md) provides information on adding help text.
 
@@ -852,7 +857,8 @@ Help text that you add must conform to the following restrictions.
 </tr>
 </table>
 
-###Global lists (on-premises TFS only)
+::: moniker range=">= tfs-2013 <= tfs-2018"
+### Global lists 
 
 A global list is a set of list item values that you can use globally across all team project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and team projects. See [Define global lists](../work/customize/reference/define-global-lists.md) for details.
 
@@ -931,14 +937,16 @@ Global lists must conform to the following restrictions.
 </tr>
 </table>
 
+::: moniker-end
 
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="TeamBuild">   </a>
 
-##Team Foundation Build (on-premises TFS only) 
+##Team Foundation Build   
 
 Team Foundation Build lets you manage all the aspects of the build process on a single computer. By using Team Foundation Build, you can synchronize the sources, compile the application, run associated unit tests, perform code analysis, release builds on a file server, and publish build reports.
 
-###Build computer ###
+### Build computer 
 
 Team Foundation Build is a separate installation from the TFS application tier, data tier, or Visual Studio client. You may designate a separate computer. Otherwise, you can install the build side-by-side on the client computer or on the servers.  
 
@@ -1010,7 +1018,7 @@ If the build computer is firewall enabled, make sure that the program **tfsbuild
 </tr>
 </table>
 
-###Build types
+### Build types
 
 Build types configure the conditions under which a single solution or a set of solutions in a team project will be built. To conduct a build, you must either create a new build type or use an existing [build type](https://msdn.microsoft.com/library/ms181715.aspx).
 
@@ -1078,14 +1086,16 @@ Build quality names must conform to the following restrictions.
 
 <a id="SourceControl">   </a>
 
+::: moniker-end
+
 
 ##Team Foundation version control 
 
-###Version control names
+### Version control names
  
 Team Foundation version control provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features.
 
-###Version control paths 
+### Version control paths 
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
 
@@ -1131,7 +1141,7 @@ Version control paths must conform to the following restrictions. See also [Opti
 
 
 
-###Version control files
+### Version control files
 
 The version control system stores many different types of files. [Set up Team Foundation version control on your dev machine](https://msdn.microsoft.com/library/ms181384.aspx) provides details on how to add existing Visual Studio projects or solutions.
 
@@ -1170,7 +1180,7 @@ Must not begin with a $
 </tr>
 </table>
 
-###Version control labels
+### Version control labels
 
 In Team Foundation version control, a label is a name applied to a specific set of revisions. You can attach labels to a set of unrelated files in version control. This lets you retrieve the files or act upon them as a group. The following table describes the restrictions put on label names.
 
@@ -1208,7 +1218,7 @@ In Team Foundation version control, a label is a name applied to a specific set 
 </tr>
 </table>
 
-###Shelvesets 
+### Shelvesets 
 
 Shelvesets enable you to set aside temporarily a batch of pending changes and then, as an option, remove the pending changes from your workspace. Later, you can restore the changes in a shelveset to your workspace or put them into another user's workspace.
 
@@ -1246,7 +1256,7 @@ Shelveset names must conform to the following restrictions.
 </tr>
 </table>
 
-###Workspaces
+### Workspaces
 
 A workspace is a client-side copy of the files and folders in Team Foundation version control. When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](https://msdn.microsoft.com/library/ms181383.aspx) provides more details. 
 
@@ -1295,13 +1305,13 @@ Names you assign to a wiki page title must conform to the following restrictions
 |---------------|-----------|
 | File name     | The fully qualified page path should not exceed 235 characters.  |
 | Uniqueness    | Page titles are case sensitive and must be unique within the wiki hierarchy.|
-|Special characters| <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \ &#124; - #</li><li>Must not start or end with a period (.)</li><li>Titles of pages added offline titles must not contain a blank space.</li></ol>|
+|Special characters| <ul><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \ &#124; - #</li><li>Must not start or end with a period (.)</li><li>Titles of pages added offline titles must not contain a blank space.</li></ul>|
 | File size     | Must not exceed the maximum of 15 MB |
 | Attachment file size |  Must not exceed the maximum of 10 MB  |
 
 
 
-## Related notes 
+## Related articles 
 *	[Customize work tracking objects to support your team's processes](../work/customize/customize-work.md)
 *	[Customize a process for import into VSTS](../work/customize/import-process/customize-process.md)
 *	[Customize a process template (on-premises TFS)](../work/customize/reference/process-templates/customize-process.md)

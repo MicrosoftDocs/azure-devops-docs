@@ -1,13 +1,17 @@
 ---
 title: Android signing build and release task
 description: Android signing build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Android signing
 
@@ -102,6 +106,28 @@ Enter the key password for the alias and keystore file.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: AndroidSigning@2
+  inputs:
+#   apkFiles: **/*.apk
+#   jarsign: true
+    jarsignerKeystoreFile:
+    jarsignerKeystorePassword:
+    jarsignerKeystoreAlias:
+    jarsignerKeyPassword:
+#   jarsignerArguments: -verbose -sigalg MD5withRSA -digestalg SHA1
+#   zipalign: true
+    zipalignFile:
+```
+
+::: moniker-end
 
 ## Related steps
 

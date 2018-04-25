@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Locate or Change the Product Key for Team Foundation Server
 

@@ -1,4 +1,4 @@
-####Q:		Why don't I see my VSTS account in the Visual Studio Marketplace?
+### Q:		Why don't I see my VSTS account in the Visual Studio Marketplace?
 
 A:	If you don't see your account when buying from the Visual Studio Marketplace, 
 try these steps:

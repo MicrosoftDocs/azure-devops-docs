@@ -1,12 +1,15 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
-ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 description: Runs the Quick Web Performance Test with VSTS to easily verify your web application exists and is responsive
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test: Cloud-based Web Performance Test
@@ -45,6 +48,27 @@ The build agent must have the following capabilities:
 | **Fail test if Avg. Response Time (ms) exceeds** | Specify a threshold for the average response time in milliseconds. If the observed response time during the load test exceeds this threshold, the task will fail. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: QuickPerfTest@1
+  inputs:
+    connectedServiceName:
+    websiteUrl:
+    testName:
+#   vuLoad: 25 # 25 (default), 50, 100, 250
+#   runDuration: 60 # 60 (default), 120, 180, 240, 300
+#   geoLocation: Default # Default (default), East US, East US 2, Central US, West US, North Central US, South Central US, North Europe, West Europe, Southeast Asia, East Asia, Japan East, Japan West, Brazil South, Australia East, Australia Southeast
+#   machineType: 0 # 0 (default), 2
+#   avgResponseTimeThreshold: 0
+```
+
+::: moniker-end
+
 ## More Information
 
 * [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
@@ -58,7 +82,9 @@ The build agent must have the following capabilities:
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

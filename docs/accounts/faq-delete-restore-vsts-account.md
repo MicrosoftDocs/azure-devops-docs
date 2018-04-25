@@ -1,19 +1,19 @@
 ---
-title: Troubleshooting deleting or restoring VSTS acounts
-description: Troubleshooting deleting or restoring VSTS acounts
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Troubleshooting deleting or restoring VSTS accounts
+description: Troubleshooting deleting or restoring VSTS accounts
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/6/2017
+author: chcomley
+ms.date: 02/27/2018
+monikerRange: 'vsts'
 ---
-
-#	Troubleshooting deleting or restoring VSTS acounts
+# Troubleshoot deleting or restoring VSTS accounts
 
 **VSTS**
-
-
 
 <a name="find-owner"></a>
 

@@ -2,11 +2,12 @@
 title: Velocity guidance
 titleSuffix: VSTS & TFS 
 description: Guidance for working with velocity charts
-ms.technology: vs-devops-reporting  
-ms.prod: vs-devops-alm
+ms.technology: devops-analytics  
+ms.prod: devops
 ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 11/16/2017
 ---
 
@@ -30,7 +31,7 @@ To configure or view Velocity charts, see [Configure and view Velocity charts](t
 
 The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
 
-The velocity widget allows teams to track velocity based on the count of backlog items or with  estimates for the the Effort, Story Points, or Size fields.
+The velocity widget allows teams to track velocity based on the count of backlog items or with estimates for the Effort, Story Points, or Size fields.
 
 <a id="minimize-variability" >    </a>
 

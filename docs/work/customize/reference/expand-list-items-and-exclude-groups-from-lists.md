@@ -1,11 +1,11 @@
 ---
 title: Expand list items and exclude groups from lists | VSTS & TFS
 description: Examples for expanding pick list items and restricting items using expanditems and filteritems attributes - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 05/10/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can expand and filter lists by using the `expanditems` and `filteritems` attributes. You can apply these attributes to these list type elements: `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES`.  
@@ -187,7 +187,7 @@ In this example, the field contains a string value, two groups, and a global lis
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.
 
->[!NOTE]  
+> [!NOTE]    
 >The global list name and contents are not displayed.
 
 
@@ -222,7 +222,7 @@ In this example, the field contains a string value, two groups, and a global lis
 ## Example: Expand lists and exclude groups and global lists
 In this example, the field contains a string value, one group, and a global list. At run time, the list is expanded and groups are filtered out.
 
->[!NOTE]  
+> [!NOTE]    
 >*MyTeam* is a group that is excluded and not expanded, and *BoolValue*s is a global list, so neither one is expanded or shown.
 
 <table Responsive="true" summary="table"><tr Responsive="true"><th scope="col"><p>Example</p></th><th scope="col"><p>Drop-down list values</p></th></tr><tr><td data-th="Example">
@@ -237,7 +237,7 @@ In this example, the field contains a string value, one group, and a global list
 </td><td data-th="Drop-down list values"><p>String</p></td></tr></table>
 
   
-## Related notes 
+## Related articles 
 -  [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)   
 -  [GLOBALLIST XML element reference](define-global-lists.md)   
 -  [Apply a field rule](apply-rule-work-item-field.md)

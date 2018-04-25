@@ -1,11 +1,13 @@
 ---
-title: Resolve data warehouses schema conflicts | TFS 
-description: Resolve schema conflicts that are occurring in the data warehouse when connecting to an on-premises Team Foundation Server (TFS)   
+title: Resolve data warehouses schema conflicts
+titleSuffix: TFS
+description: Resolve schema conflicts that are occurring in the data warehouse when connecting to Team Foundation Server    
 ms.assetid: BB517672-2A9A-4A5B-8F27-E4409F199C02  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 08/11/2016
 ---
 

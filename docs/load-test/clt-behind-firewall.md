@@ -1,12 +1,15 @@
 ---
 title: Test private and intranet apps
 description: Test private and intranet apps using cloud-based load testing
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Test private and intranet apps using cloud-based load testing
@@ -58,7 +61,7 @@ This topic discusses only scenarios **3** and **4**.
    If you want to test apps on-premises and have constraints such as not being able to store results in the cloud (perhaps for regulatory compliance)
    you can use the Test Controller and Test Agents combination for load testing. This requires you to
    use your own infrastructure for load generation and the results are stored in SQL Server.
-   See [Configuring Test Controllers and Test Agents for Load Testing](https://msdn.microsoft.com/en-us/library/ms243155.aspx) for details.
+   See [Configure test agents and test controllers for running load tests](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) for details.
 
 
 The following sections describe how you can provision load agents using Azure IaaS VMs
@@ -263,6 +266,6 @@ allow the URL `https://<VSTS account name>.vsclt.visualstudio.com`.
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

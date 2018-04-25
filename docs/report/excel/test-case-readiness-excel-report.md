@@ -1,15 +1,17 @@
 ---
-title: Test Case Readiness Excel Report | TFS
+title: Test Case Readiness Excel Report  
 description: Use the Test Case Readiness report to help monitor the progress that the team is making toward defining and designing Test Cases.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: faaad500-45da-45c7-8ab2-59d1c6f30c2a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 # Test Case Readiness Excel Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can use the Test Case Readiness report to help monitor the progress that the team is making toward defining and designing Test Cases. This report shows a burndown chart of how many test cases were in the design and ready states for the most recent four weeks.  
   

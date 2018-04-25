@@ -1,13 +1,17 @@
 ---
 title: VSTS and Team Foundation Server Build and Test - Xamarin Test Cloud
 description: How to use Xamarin Test Cloud when building code in VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/16/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Test: Xamarin Test Cloud
 
@@ -15,6 +19,7 @@ ms.date: 08/16/2016
 
 ![](_img/xamarin-test-cloud-icon.png) Test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
+>**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest) task instead.
 
 ## Demands
 
@@ -39,6 +44,31 @@ None
 | **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XamarinTestCloud@1
+  inputs:
+    appFile:
+    dsymFile:
+    teamApiKey:
+    email:
+    devices:
+#   series: master
+    testAssemblyDirectory:
+#   parallelizationOption: none # none (default), --fixture-chunk, --test-chunk
+#   localeOption: en_US # da_DK, nl_NL, en_GB, en_US (default), fr_FR, de_DE, ja_JP, ru_RU, es_MX, es_ES, user
+    userDefinedLocale:
+#   testCloudFile: **/packages/**/tools/test-cloud.exe
+    optionalArgs:
+#   publishNUnitResults: true
+```
+
+::: moniker-end
 
 ## Example 
 
@@ -58,6 +88,8 @@ None
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

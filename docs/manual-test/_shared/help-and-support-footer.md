@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Help and support
 
 Report any problems on [Developer Community](https://developercommunity.visualstudio.com/),

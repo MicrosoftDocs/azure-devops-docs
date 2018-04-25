@@ -1,12 +1,15 @@
 ---
 title: Get insights across your exploratory testing sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Get insights across your exploratory testing sessions
@@ -15,6 +18,8 @@ ms.date: 01/18/2018
 
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
+
+[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 1. Open the **Recent exploratory sessions** page. You can do this:
 

@@ -2,17 +2,19 @@
 title: Backlog best practices 
 titleSuffix: VSTS & TFS
 description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 10/11/2017
 ---
 
 # Groom your backlog  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
@@ -44,37 +46,42 @@ Acceptance criteria define what "Done" means by describing the conditions that t
 
 Product owners are the ultimate deciders of the criteria that create customer value.
 
-<blockquote style="font-size: 13px"><p>**Tips from the trenches: Start to love and embrace acceptance criteria.**</p> <p>Ask 10 mature agile teams "How do you know when you're 
-'<a href="http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx/done%20done%20agile">done done</a>'?" 
-and you'll get the same answer from each one. . . get serious about writing acceptance criteria.</p>
-<p>Acceptance criteria are the handshake between the product owner and the team on what "done done" really means.  
-Until the acceptance criteria are met, the team isn't done with the story. Period. 
-However, the value of acceptance criteria only starts here.
-</p><p>
-Acceptance criteria provide the stage for some of most meaningful conversations and interactions 
-that can happen on an agile team. On my own team we routinely have some of our best interactions as 
-we start digging into the acceptance criteria for each story on our backlog. 
-Inevitably we all start with our own ideas about what "done" means for a given story. 
-</p>
-<p>However, as we begin to discuss the acceptance criteria presented by the product owner what 
-ensues is a series of "[ah-ha moments](http://www.bing.com/search?q=Ah-ha moments)." 
-A shared understanding of the story begins to emerge. A comment one team member might elicit 
-the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."
-</p><p>Regardless of who is being enlightened, the power is in the fact that the product owner and 
-the team are building together a shared understanding of what "done" means for each backlog item.
-And, this is happening before the team has written a single line of code&hellip;  before any work has been done&hellip;  
-before commitments have been made&hellip;  and before the sprint has begun.</p>
-<p>By collaborating on acceptance criteria the team is minimizing risk and greatly increasing the chance of delivering successfully. 
-I don't think it's a coincidence that the first bullet in the 
-[Agile Manifesto](http://agilemanifesto.org/) states ". . . we have come to value 
-<b>individual and interactions</b> over processes and tools".
-Agile teams work together. And by working together, they create better software.</p> 
-<p>Start learning to love acceptance criteria and see if your team isn't more successful delivering software.</p>
+> **Tips from the trenches: Start to love and embrace acceptance criteria.**  
+> 
+> Ask 10 mature agile teams ["How do you know when you're "done done"?](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> and you'll get the same answer from each one. . . get serious about writing acceptance criteria.  
+> 
+> Acceptance criteria are the handshake between the product owner and the team on what "done done" really means.  
+> Until the acceptance criteria are met, the team isn't done with the story. Period. 
+> However, the value of acceptance criteria only starts here.  
+>  
+> Acceptance criteria provide the stage for some of most meaningful conversations and interactions 
+> that can happen on an agile team. On my own team we routinely have some of our best interactions as 
+> we start digging into the acceptance criteria for each story on our backlog. 
+> Inevitably we all start with our own ideas about what "done" means for a given story.  
+>  
+> However, as we begin to discuss the acceptance criteria presented by the product owner what 
+> ensues is a series of "[ah-ha moments](http://www.bing.com/search?q=Ah-ha moments)." 
+> A shared understanding of the story begins to emerge. A comment one team member might elicit 
+> the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."  
+> 
+> Regardless of who is being enlightened, the power is in the fact that the product owner and 
+> the team are building together a shared understanding of what "done" means for each backlog item.
+> And, this is happening before the team has written a single line of code&hellip;  before any work has been done&hellip;  
+> before commitments have been made&hellip;  and before the sprint has begun.  
+> 
+> By collaborating on acceptance criteria the team is minimizing risk and greatly increasing the chance of delivering successfully. 
+> I don't think it's a coincidence that the first bullet in the 
+> [Agile Manifesto](http://agilemanifesto.org/) states ". . . we have come to value 
+> **individual and interactions** over processes and tools".
+> Agile teams work together. And by working together, they create better software.  
+> 
+> Start learning to love acceptance criteria and see if your team isn't more successful delivering software.  
+> 
+> &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
+> blog post: [Agile Tip #5 &mdash;Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
 
-<p>&mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
-blog post: [Agile Tip #5 – Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)</p> 
 
-</blockquote>  
 
 <a id="groom">  </a>
 ## Refine your backlog

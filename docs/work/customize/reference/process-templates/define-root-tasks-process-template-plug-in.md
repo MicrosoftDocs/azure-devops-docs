@@ -1,17 +1,19 @@
 ---
-title: Define the root process template tasks | VSTS & TFS
+title: Define the root process template tasks
+titleSuffix: VSTS & TFS
 description: Add, remove, define, or change the sequence in which process template plug-in files are processed 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: ac935b0b-09b3-4aed-9f3a-08190feb92e2
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 # Define the root tasks using the process template plug-in file File
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 <a name="top"></a> By customizing ProcessTemplate.xml, you can add, remove, or change the sequence in which process template plug-in files are processed. The ProcessTemplate.xml is the root file that defines the entire process template and all subordinate XML files. This file contains all of the task groups that must run to successfully create a team project. Each task group references a subordinate XML file (often in a subfolder) where the specific tasks are defined. In general, you specify one task group for each plug-in.  
   
@@ -81,7 +83,7 @@ To learn more about the default process templates, see [Choose a process](../../
   
 3.  **Plug-ins**. You use the **plugins** and **plugin** elements to define the set of plug-ins that the process template uses. You must make sure that if any subordinate XML file references a plug-in, that plug-in appears in this list. You must also specify the wizardPage attribute (a true or false value) to indicate whether the plug-in requires a page on the New Team Project Wizard. You must specify the set of a plug-ins that will be processed when you create a team project and whether the plug-in should have a visible page in the New Team Project Wizard. 
  
-	>[!IMPORTANT]  
+	> [!IMPORTANT]  
 	>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 	>
 	>If you want these features to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).   
@@ -110,10 +112,10 @@ To learn more about the default process templates, see [Choose a process](../../
     > [!div class="tabbedCodeSnippets"]
 	```XML 
     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">
-	   <dependencies>
-	      <dependency groupId="Classification" />
-	   </dependencies>
-	   <taskList filename="Groups and Permissions\GroupsandPermissions.xml" />
+	      <dependencies>
+	      <dependency groupId="Classification" />
+	      </dependencies>
+	      <taskList filename="Groups and Permissions\GroupsandPermissions.xml" />
 	</group>  
     ```  
 
@@ -225,7 +227,7 @@ To learn more about the default process templates, see [Choose a process](../../
 </ProcessTemplate>    
 ```  
   
-## Related notes  
+## Related articles  
  [Process template XML elements reference](process-template-xml-elements-reference.md)   
  [Overview of process template files](overview-process-template-files.md)   
  [Customize a process](customize-process.md)

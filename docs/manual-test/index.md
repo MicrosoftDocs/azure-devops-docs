@@ -1,12 +1,15 @@
 ---
 title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory &amp; Manual Testing
@@ -63,4 +66,4 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 * [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
 * [Load and performance testing](../load-test/index.md)
 * [Continuous testing](../build-release/test/index.md)
-* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)
+* [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)

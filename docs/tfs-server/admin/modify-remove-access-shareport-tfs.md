@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server
 

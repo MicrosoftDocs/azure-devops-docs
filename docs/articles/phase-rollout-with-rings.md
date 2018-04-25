@@ -2,12 +2,13 @@
 title: DevOps - Phase the roll-out of your application through rings
 description: Explore how to phase your application roll-out using a tier or ring model
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
-ms.prod: vs-devops-phase-rollout-with-rings
-ms.technology: vs-devops-articles
-ms.manager: willys
-ms.date: 05/22/2017
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
+ms.date: 03/28/2018
 ms.author: willys
-author: josh garverick
+author: wpschaub
 ---
 
 # Phase the roll-out of your application through rings
@@ -44,7 +45,7 @@ Our users fall into three general buckets in production:
 ![User Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
 > [!NOTE]
-> It’s important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
+> It's important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
 
 ## Application topology
 
@@ -78,7 +79,7 @@ Let's observe how a change triggers and moves through our ring based deployment 
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
-1. A developer from the [Countdown Widget extension](hhttps://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALM-Rangers/Countdown-Widget-Extension) repository.
+1. A developer from the [Countdown Widget extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALM-Rangers/Countdown-Widget-Extension) repository.
 
 2. The commit triggers a continuous integration build.
 3. The new build triggers a continuous deployment trigger, which automatically starts the **Canaries** environment deployment.

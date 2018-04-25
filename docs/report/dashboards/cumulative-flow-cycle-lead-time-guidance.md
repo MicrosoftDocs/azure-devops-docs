@@ -2,23 +2,32 @@
 title: Cumulative flow guidance
 titleSuffix: VSTS & TFS   
 description: Process guidance to work with cumulative flow diagrams to improve your     
-ms.prod: vs-devops-alm  
-ms.technology: vs-devops-reporting  
+ms.prod: devops  
+ms.technology: devops-analytics  
 ms.assetid:  
+ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelli
-ms.date: 8/22/2017
+ms.author: kaelliauthor: KathrynEE
+ms.date: 03/20/2018 
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
 
 [!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system.  The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards (VSTS only at this time). 
+::: moniker range=">= tfs-2013" 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
+
+::: moniker-end
+  
+::: moniker range="vsts" 
+
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
+
+::: moniker-end
 
 To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md).
-
 
 ## Sample charts and primary metrics
 
@@ -202,6 +211,8 @@ A good rule of thumb for work in progress is that there should be no more than t
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 
+  
+::: moniker range="vsts" 
 
 ## Lead time versus cycle time   
 
@@ -212,14 +223,14 @@ The diagram below illustrates how lead time differs from cycle time. Lead time i
 
 If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
 
-If your team uses the Kanban board, you’ll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). 
+If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). 
 
 To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times  
 You can use the average lead/cycle times and standard deviations to estimate delivery times. 
 
-When you create a work item, you can use your team’s average lead time to estimate when your team will complete that work item. Your team’s standard deviation tells you the variability of the estimate. Likewise, you can use cycle time and its standard deviation to estimate the completion of a work item once work has begun.  
+When you create a work item, you can use your team's average lead time to estimate when your team will complete that work item. Your team's standard deviation tells you the variability of the estimate. Likewise, you can use cycle time and its standard deviation to estimate the completion of a work item once work has begun.  
 
 In the following chart, the average cycle time is 8 days. The standard deviation is +/- 6 days. Using this data, we can estimate that the team will complete future user stories about 2-14 days after they begin work. The narrower the standard deviation, the more predictable your estimates.
 
@@ -229,7 +240,7 @@ In the following chart, the average cycle time is 8 days. The standard deviation
 
 
 ## Identify process issues 
-Review your team’s control chart for outliers. Outliers often represent an underlying process issue. For example, waiting too long to complete pull request reviews or not resolving an external dependency in a timely manner.
+Review your team's control chart for outliers. Outliers often represent an underlying process issue. For example, waiting too long to complete pull request reviews or not resolving an external dependency in a timely manner.
 
 As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
 
@@ -242,5 +253,16 @@ You can also see how process changes affect your lead and cycle time. For exampl
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Configure your cumulative flow charts](cumulative-flow.md)
+> [Configure your cumulative flow charts](cumulative-flow.md) or 
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Configure your cumulative flow chart](cumulative-flow.md) 
+
+::: moniker-end

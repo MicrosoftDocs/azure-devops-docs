@@ -2,12 +2,16 @@
 title: gitconfig files | Team Services, TFS, and Visual Studio
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
-ms.manager: kangan
-ms.author: jepling
-ms.date: 10/11/2017
+ms.prod: devops
+ms.technology: devops-code-git
+ms.manager: douge
+ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2018'
 ---
+
 
 # Git preferences and settings
 #### VSTS | TFS 2018
@@ -16,13 +20,16 @@ Git has a set of configuration files that define any non-default behavior that y
 You can specify your name and email address, your preferred diff and merge tools, command aliases, formatting, and much more. 
 These files allow you to personalize and customize Git to optimize your workflow.
 
+This topic covers client-side Git preferences.
+You may also want to learn about server-side [repository settings](repository-settings.md).
+
 ## Files and order of precedence
 
 There are four files which are used to set configuration options. These files are read from widest to most narrow scope with the last file taking precedence over previously read files. 
 The files are read in the following order:
 
 0. `$(prefix)/etc/gitconfig`: System-wide configuration file.
-0. `$XDG_CONFIG_HOME/git/config`: Second user-specific configuration file. If `$XDG_CONFIG_HOME` is not set or is empty, `$HOME/.config/git/config` is used. Support for this file is not included in all versions, so for compatibility reasons, its use is not recommended.
+0. `$XDG_CONFIG_HOME/git/config`: Second user-specific configuration file. If `$XDG_CONFIG_HOME` is not set or is empty, `$HOME/.config/git/config` is used. Support for this file is not included in all versions, so for compatibility reasons, its use is not recommended.
 0. `~/.gitconfig`: User-specific configuration file, also known as the "global" configuration file.
 0. `$GIT_DIR/config`: Repository-specific configuration file.
 

@@ -1,14 +1,17 @@
 ---
 title: Version Control - Map TFS version control (TFVC) actions to Git
 description: Map TFS version control (TFVC) commands and workflows to Git version control.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: willys
-ms.date: 09/09/2017
+ms.manager: douge
 ms.author: willys
-author: willys
+author: wpschaub
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Map TFVC actions to Git 
 
@@ -291,7 +294,7 @@ git clean -xdf
 
 The scenario is anonymous to doing a `Get > Latest Version` with the `Overwrite writeable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
 
-Alternatively you can manually delete your local repo – after making a validated copy off course – and then `clone` the repository again.
+Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
 
 This is by no means the end of actions and options available to Git users. Here are some useful reference sites for further reading:
 
@@ -311,7 +314,7 @@ With magic comes responsibility! Many users dislike the `sync` as it can sometim
 
 Authors: Jesse Houwing, Martin Hinshelwood, Mike Fourie, and Willy Schaub
 
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

@@ -1,18 +1,20 @@
 ---
-title: Define dependencies for task groups and tasks in plug-in files | VSTS & TFS
-description: Adds a task group or a task to a plug-in file to correct the sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define dependencies for task groups and tasks in plug-in files
+titleSuffix: VSTS & TFS
+description: Add a task group or a task to a plug-in file process template to declare dependencies in Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 02/24/2017
 ---
 
 
 # Define dependencies for task groups and tasks in plug-in files
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 When you add a task group or a task to a plug-in file, you must add them in the correct sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks. A task can depend on other tasks, requiring other tasks to complete before primary task can run. For example, the task to create work item queries cannot run until all the tasks to create work item types have successfully completed. Therefore, the task to upload work item queries depends on the task to upload the types of work items.  
@@ -65,7 +67,7 @@ The following table describes the elements that you use to define task group dep
   
 |Element| Description and syntax|  
 |-------------|-----------------|  
-|**dependencies**|Required child element of **group**. Specifies the other groups on which a group depends.<br />`<dependencies>`<br />&nbsp;&nbsp;&nbsp;`<dependency>. . . </dependency>`<br />`</dependencies>`|  
+|**dependencies**|Required child element of **group**. Specifies the other groups on which a group depends.<br />`<dependencies>`<br />      `<dependency>. . . </dependency>`<br />`</dependencies>`|  
 |**dependency**|Optional child element of **dependencies**. Specifies the ID of another task group on which this group depends. The other group must complete its tasks before this task group can start.<br /> `<dependency groupId="groupId" />`| 
   
 <a name="task"></a> 
@@ -84,10 +86,10 @@ The following table describes the elements that you use to define task group dep
   
 |Element|Description and syntax| 
 |-------------|------------| 
-|**dependencies**|Optional child element of **task**. Specifies the other tasks on which a task depends.<br /> `<dependencies>`<br />&nbsp;&nbsp;&nbsp;`<dependency>. . . </dependency>`<br />`</dependencies>`|  
+|**dependencies**|Optional child element of **task**. Specifies the other tasks on which a task depends.<br /> `<dependencies>`<br />      `<dependency>. . . </dependency>`<br />`</dependencies>`|  
 |**dependency**|Optional child element of **dependencies**. Specifies the ID of another task on which this task depends. The other task must complete its tasks before this task can start.<br />`<dependency taskId="taskId" />`| 
   
-## Related notes 
+## Related articles 
 -  [Customize a process](customize-process.md)   
 -  [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)   
 -  [Define the root tasks](define-root-tasks-process-template-plug-in.md)

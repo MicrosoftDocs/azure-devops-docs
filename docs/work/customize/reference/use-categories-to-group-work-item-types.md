@@ -1,22 +1,22 @@
 ---
 title: Use categories to group work item types | VSTS & TFS
 description: Generate flexible reports, and support increased integration across team projects using categories 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/04/2017
 ---
 
 # Use categories to group work item types
 
-[!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
 
 
 By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
   
-Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../teams/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
+Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
   
 Here's an example of the feature and bug category entries within the Categories XML definition file:  
   
@@ -81,7 +81,7 @@ Process configuration defines the layout and fields used in the display of the p
   
 -   For all WITs that you assign to a category that is referenced in the ProcessConfiguration file, you must assign the workflow states to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).  
   
-##Related notes 
+## Related articles 
 - [Categories XML element reference](categories-xml-element-reference.md)  
 - [Import and export categories](witadmin/witadmin-import-export-categories.md)
 - [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsworkitemtracking).

@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: WebHooks with VSTS
 description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 12/07/2017
 ---
 

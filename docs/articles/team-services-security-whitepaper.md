@@ -1,11 +1,13 @@
 ---
 title: VSTS - Data Protection
 description: Learn how Microsoft protects your Visual Studio Team Services (VSTS) projects and data. Microsoft is committed to making sure that your VSTS projects stay safe and secure, without exception. 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: douge
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.author: mlearned
-ms.date: 11/21/2017
+author: mlearned
+ms.manager: douge
+ms.date: 2/26/2018
 ---
 
 
@@ -166,7 +168,7 @@ practice restoring various data sets from backup.  The geo-redundant
 storage that we get from Azure is tested regularly. In addition, from 
 time to time we restore from backups to recover from human error, 
 such as when a customer has inadvertently deleted  a VSTS team project. While our turnaround time sometimes takes more than day, we have always 
-been able to restore the customer’s data given enough time.  Since 
+been able to restore the customer's data given enough time.  Since 
 there are many permutations of disaster and data corruption 
 scenarios, we continue to plan and execute new tests on a regular basis 
 to ensure our systems and associated process are up to the challenge. 
@@ -282,6 +284,9 @@ configurations errors or other security gaps in a controlled process.
 The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
+>[!IMPORTANT]
+>While notifying Microsoft of penetration testing activities is no longer required customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)
+
 ### Restricting access
 
 We maintain strict control over who has access to our production
@@ -368,10 +373,10 @@ legitimate reasons.
 
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws 
 in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. 
-The GDPR’s main objective is to strengthen the protection and security of your personal data and 
+The GDPR's main objective is to strengthen the protection and security of your personal data and 
 will replace the Directive and all local laws relating to it. VSTS is committed to achieving compliance 
 with the GDPR when enforcement begins on May 25, 2018 and is mindful of your own compliance efforts and duties. 
-To learn more about this new regulation, please visit the following page in [Microsoft’s Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+To learn more about this new regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 ### Data residency and sovereignty

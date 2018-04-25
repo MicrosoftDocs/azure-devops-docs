@@ -1,19 +1,22 @@
 ---
 title: Change app access policies | VSTS
 description: Change app access policies for VSTS (VSTS, Visual Studio Online, VSO)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/6/2017
+monikerRange: 'vsts'
 ---
-
-#   Troubleshootig changing app access policies for your account
+#   Troubleshoot changing app access policies for your account
 
 **VSTS**
 
 <a name="Oauth"></a>
+
 ####Q:   How do personal access tokens differ from alternate authentication credentials?
 
 A:  Personal access tokens are a more convenient and 

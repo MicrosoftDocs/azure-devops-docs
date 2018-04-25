@@ -1,14 +1,15 @@
 ---
 title: View or run a query 
 titleSuffix: VSTS & TFS
-description: View a list of queries or run a query using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
+description: View, run, or favorite a query in Visual Studio Team Services & Team Foundation Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid:  
-ms.topic: get-started-article
+monikerRange: '>= tfs-2018'
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/05/2018  
+ms.author: kaelliauthor: KathrynEE
+ms.topic: quickstart
+ms.date: 03/20/2018  
 ---
 
 
@@ -18,8 +19,10 @@ ms.date: 02/05/2018
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
->[!NOTE]  
+<!---
+> [!NOTE]    
 >**Feature availability**: The New Queries experience is supported on VSTS and TFS 2018 and later versions. To learn more, see [New Queries experience](queries-preview.md).  
+-->
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
 
@@ -30,12 +33,13 @@ Use this topic to learn:
 > * How to view all or favorited queries  
 > * How to filter a query list       
 > * How to run a query 
-    
 -->
+
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open the Queries page from the web portal
 
-0. From your web browser, open the **Work** hub, **Queries** page. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md).   
+0. From your web browser, open the **Work** hub, **Queries** page.   
  
 	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
@@ -122,10 +126,15 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 <img src="_img/view-run-queries/copy-url-old-exp.png" alt=alt="Web portal, Query Editor/Results, Copy query URL" style="border: 1px solid #C3C3C3;" /> 
 
 -->
+::: moniker range="vsts"
+> [!NOTE]  
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). 
+::: moniker-end
 
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
-
+::: moniker-end
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -134,7 +143,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
 - [Set personal or team favorites](../../collaborate/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

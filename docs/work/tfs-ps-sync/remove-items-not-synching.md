@@ -1,13 +1,16 @@
 ---
-title: Delete tasks and remove work items that are no longer participating in synchronization | TFS
-description: Remove the work items in the synchronization that are no longer participating -Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Delete tasks and remove work items that are no longer participating in synchronization
+titleSuffix: TFS
+description: Remove work items that aren't synchronizing between Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 18f3e8d1-12ae-4cc6-a95b-357450a9ba81
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Delete tasks and remove work items that are no longer participating in synchronization
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -25,6 +28,6 @@ When you delete a task from Microsoft Project Professional that has been synchro
 |**And**|**Project Server Is Linked**|**Was Ever**|**Yes**|  
 |**And**|**Changed Date**|**>=**|**@Today - 60**|  
   
-## Related notes  
+## Related articles  
  [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md)   
  [Manage projects](manage-projects.md)

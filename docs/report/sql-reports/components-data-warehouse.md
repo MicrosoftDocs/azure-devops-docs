@@ -1,11 +1,13 @@
 ---
-title: Components of the TFS data warehouse 
+title: Components of the SQL Server data warehouse 
+titleSuffix: TFS
 description: Understand the components of the Team Foundation Server data warehouse 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
 manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/26/17
 ---
 

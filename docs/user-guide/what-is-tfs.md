@@ -1,18 +1,20 @@
 ---
 title: Describes the services provided by Team Foundation Server
 titleSuffix: TFS
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
-ms.prod: vs-devops-alm
-ms.topic: get-started-article
+description: Understand the services that support Team Foundation Server 
+ms.technology: devops-new-user 
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/07/2016
 ---
 
-# What is Team Foundation Server? 
-**TFS 2017 | TFS 2018 | TFS 2015 | TFS 2013**
+
+# What is Team Foundation Server?
+
+[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
 Team Foundation Server (TFS) is the on-premises version of our cloud service, [VSTS](what-is-vsts.md) (VSTS).  
 
@@ -34,6 +36,7 @@ When you deploy TFS, you can also configure the following servers or integration
 
 
 ## Where do I start?
+
 - Download TFS Express for free   
 - Then, either upload your code to share or source control 
 - Or, begin tracking your work using Scrum, Kanban, or a combination of methods 
@@ -50,7 +53,8 @@ Choose an on-premises TFS when you need your data to stay within your network or
 > [!div class="nextstepaction"]
 > [Install TFS](../tfs-server/install/single-server.md)
 
-To learn more, see these topics: 
+To learn more, see these topics:
+
 - [A tour of services](services.md)
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)

@@ -2,12 +2,16 @@
 title: Use Source Control Explorer to manage files under version control
 description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 12/05/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Use Source Control Explorer to manage files in TFVC 
 
@@ -52,18 +56,18 @@ See [Create and work with workspaces](create-work-workspaces.md)
 
 **A:** To toggle the folders pane, choose **Close** in the upper-right corner of its title bar, or, in the Source Control Explorer toolbar, choose **Folders**.
 
-### Q: I don’t see the latest data in the window. How can I fix this?
+### Q: I don't see the latest data in the window. How can I fix this?
 
 **A:** If Source Control Explorer is not showing the latest data on the server, from the menu bar, choose **File**, **Source Control**, **Refresh Status**.
 
 ### Q: How can the Pending Change column help me?
 
-**A:** The **Pending Change** column displays your [pending changes](develop-code-manage-pending-changes.md) to an item. It also displays the pending changes of other team members who are using [server workspaces](decide-between-using-local-server-workspace.md) and identifies their names in the **User** column. If an ellipsis (**…**) appears, you can view a list of the users and their pending changes:
+**A:** The **Pending Change** column displays your [pending changes](develop-code-manage-pending-changes.md) to an item. It also displays the pending changes of other team members who are using [server workspaces](decide-between-using-local-server-workspace.md) and identifies their names in the **User** column. If an ellipsis (**...**) appears, you can view a list of the users and their pending changes:
 
 1.  Open the context menu of the item in the **Name** column and choose **Properties**.
 
 2.  In the **Properties** dialog box, choose the **Status** tab, which displays a list of users (in the **User** column) and their associated pending changes (in the **Change Type** column).
 
-### Q: Why do I see this error message: “Team Foundation Server is not your current Source Control plug-in. Click here to set the current Source Control plug-in”?
+### Q: Why do I see this error message: "Team Foundation Server is not your current Source Control plug-in. Click here to set the current Source Control plug-in"?
 
 **A:** You might have connected to a Git repository in your team project. Use [Team Explorer](../user-guide/work-team-explorer.md) and [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to manage your files in Git repos.

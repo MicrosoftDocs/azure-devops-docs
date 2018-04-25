@@ -1,8 +1,8 @@
 ---
 title: Visual Studio Online updates - Dec 11
 description: VSTS release notes for December 11 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 6e13356b-2fb3-45eb-8e41-38d7d423ac8e
 ms.date: 06/01/2016

@@ -1,14 +1,16 @@
 ---
 title: Configure work item form extensions in TFS | Extensions for VSTS
 description: Describes how to add and configure work item form extensions in TFS.
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
-ms.technology: vs-devops-extensions-api
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  
+<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  
 
 # Add extensions in work item form via work item type definition xml
 

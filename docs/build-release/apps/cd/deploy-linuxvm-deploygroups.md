@@ -1,12 +1,15 @@
 ---
-ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 title: Deploy a nginx web server on a Linux Virtual Machine
 description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy to a Linux Virtual Machine
@@ -56,7 +59,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release definition in the Releases page](../_shared/_img/release-from-release-page.png)
 
-1. In the **Create release definition** wizard, select **Empty process**.
+1. Choose **Start with an Empty process**.
 
 1. If you created your new release definition from a build summary, check that the build definition and artifact
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release definition from
@@ -65,37 +68,37 @@ Your CD release process picks up the artifacts published by your CI build and th
    ![Checking or selecting the build definition and artifact](_img/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-  continuous deployment trigger is enabled, and the **master** branch is selected. If not, set these options now.
+   continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
 
-  ![Checking or setting the Continuous deployment trigger](_img/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](_img/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
 
-  > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
+   > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
 
 1. Open the **Tasks** tab, select the **Agent phase**, and choose **Remove** to remove this phase.
 
-  ![Removing the Agent phase](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
+   ![Removing the Agent phase](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
 
 1. Choose **...** next to the **Environment 1** deployment process and select **Add deployment group phase**.
 
-  ![Adding a Deployment group phase](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+   ![Adding a Deployment group phase](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
 1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
 
-  ![Selecting the deployment group](_img/deploy-linuxvm-deploygroups/select-deployment-group.png)
+   ![Selecting the deployment group](_img/deploy-linuxvm-deploygroups/select-deployment-group.png)
 
-   The tasks you add to this phase will run on each of the machines in the deployment group you specified.
+    The tasks you add to this phase will run on each of the machines in the deployment group you specified.
 
 1. Choose **+** next to the **Deployment group phase** and, in the task catalog, search for and add a
    **Shell Script** task.
 
-  ![Adding a Shell Script task](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
+   ![Adding a Shell Script task](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
 
 1. In the properties of the **Shell Script** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
    `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
 
-  ![Configuring the Shell Script task](_img/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
+   ![Configuring the Shell Script task](_img/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
 
 1. Save the release definition.
 
@@ -106,23 +109,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 You're now ready to create a release, which means to start the process of running the release definition
 with the artifacts produced by a specific build. This will result in deploying the build.
 
-1. To test the release definition, choose **Release** and then **Create release**.
-
-   ![Creating a release](_img/deploy-linuxvm-deploygroups/create-release.png)
-
-1. In the Create new release panel, choose **Create**. Then choose the link near the top
-   of the window that indicates a new release was created.
-
-   ![Opening the release summary](_img/deploy-linuxvm-deploygroups/open-release-summary.png)
-
-1. Open the **Logs** tab to watch the live logs from the deployment as it happens.
-   Wait for the release to be deployed to the Azure web app.
-
-   ![Viewing the release logs](_img/deploy-linuxvm-deploygroups/logs-01.png)
-
-1. After deployment is complete, open your web browser and test your web app using the URL
-   `http://<publicIpAddress>`, where `<publicIpAddress>` is the IP address of the web site
-   on your nginx web server.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Next steps
 

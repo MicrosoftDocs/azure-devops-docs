@@ -1,8 +1,8 @@
 ---
 title: NuGet restore, pack, and publish
 description: How to use NuGet packages when building code in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk
@@ -428,6 +428,50 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: NuGetCommand@2
+  inputs:
+#   command: restore # restore (default), pack, push, custom
+#   restoreSolution: **/*.sln
+#   feedsToUse: select # select (default), config
+    vstsFeed:
+#   includeNuGetOrg: true
+    nugetConfigPath:
+    externalFeedCredentials:
+#   noCache: false
+    restoreDirectory:
+#   verbosityRestore: Detailed # Quiet, Normal, Detailed (default)
+#   packagesToPush: $(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg
+#   nuGetFeedType: internal # internal (default), external
+    publishVstsFeed:
+#   allowPackageConflicts: False
+    publishFeedCredentials:
+#   verbosityPush: Detailed # Quiet, Normal, Detailed (default)
+#   packagesToPack: **/*.csproj
+#   configuration: $(BuildConfiguration)
+#   packDestination: $(Build.ArtifactStagingDirectory)
+#   versioningScheme: off # off (default), byPrereleaseNumber, byEnvVar, byBuildNumber
+#   includeReferencedProjects: false
+    versionEnvVar:
+#   majorVersion: 1
+#   minorVersion: 0
+#   patchVersion: 0
+#   packTimezone: utc # utc (default), local
+#   includeSymbols: false
+#   toolPackage: False
+    buildProperties:
+#   verbosityPack: Detailed # Quiet, Normal, Detailed (default)
+    arguments:
+```
+
+::: moniker-end
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -438,6 +482,8 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

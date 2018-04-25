@@ -1,15 +1,17 @@
 ---
-title: Add a custom control to a WIT | VSTS  
-description: Customize a process by adding or modifying a custom control for work item type when working in Visual Studio Team Services (VSTS) 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add a custom control to a WIT 
+titleSuffix: VSTS  
+description: Customize a process by adding or modifying a custom control for work item type when working in Visual Studio Team Services
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.manager: douge
-ms.author: kaelli
-ms.date: 11/07/2017 
+ms.author: kaelliauthor: KathrynEE
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
-# Add a custom control to a work item type (Inheritance process model)  
+# Add a custom control to a work item type 
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
@@ -29,9 +31,7 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 <a id="add-extension">  </a>
 ## Add a Marketplace extension   
 
-Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see these topics: 
-- [Get extensions for VSTS](../../../marketplace/install-vsts-extension.md)
-- [Get extensions for TFS](../../../marketplace/get-tfs-extensions.md)
+Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see [Install free extensions for VSTS](../../../marketplace/install-vsts-extension.md)
 
 From the admin context, Extensions hub, you can view the extensions that are already installed.    
 
@@ -41,7 +41,7 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 
 <a id="add-field-control"></a>
-##Add a field-level contribution 
+## Add a field-level contribution 
 
 1. Install the [field-level extension](#add-extension) as discussed in the previous section.  
   
@@ -53,7 +53,7 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 	<img src="_img/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 1px solid #C3C3C3;" />  
 
-	>[!NOTE]  
+	> [!NOTE]    
 	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been installed. 
 	
 4. Choose the field-level control you want from the menu of options. 
@@ -85,8 +85,6 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 	</table>
 
 
-
-
 ## Group-level and page-level contributions
 
 When you add group-level and page-level extensions, they are automatically added to all WITs defined for all processes, both inherited and custom. You can choose to [hide these contributions from appearing on the form](customize-process-field.md#show-hide-field) for a specific WIT, or move it within the form from it's default location. 
@@ -103,8 +101,7 @@ For example, the following image shows nine action-level contributions have been
 <img src="_img/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
 
 
- 
-## Related notes 
+## Related articles 
 
 As you add custom controls, keep in mind that all team projects that reference the inherited process that you're customizing will automatically update to contain the new fields. To view your customizations, refresh your web browser. 
  
@@ -126,29 +123,3 @@ To add extensions or edit a process, you must be a member of the Project Collect
 You can use these REST APIs to work with custom controls:   
 - [Extend the work item form](../../../extend/develop/add-workitem-extension.md)  
 - [Add a custom control to the work item form](../../../extend/develop/custom-control.md)  
-
-<!--- NOTES
-For on-premises TFS, you can also click Browse local extensions to install a custom extensions you've created but not published to the Marketplace. 
-
-"inherited controls" that are added to all WITS which you can then hide or move from their default positions within the form. THis includes groups and pages. 
-
-Custom field controls that you can add to an inherited or custom WIT.  
-
-Prior to adding a custom control, you must add it as an extension. 
-
-<a id="add-custom-field-control"></a>  
-### Add a custom field control
-o add a custom control, you begin by adding it first through the Extensions page.
-
-0. To open the admin context from the user context, click the ![](../../_img/icons/gear_icon.png) gear Settings icon and choose Account settings. 
-
-	>[!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize-work.md).
-
-	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" /> 
-
-	<img src="_img/custom-controls-field-extension-dialog.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
-
--->  
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

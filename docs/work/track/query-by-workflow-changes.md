@@ -1,22 +1,23 @@
 ---
 title: Query by account, user name, workflow or board changes 
-description: Find or list work items based on changes made to their assignment, state or Kanban board column or swimlane 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS
+description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 02/05/2018  
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
+ms.date: 03/20/2018
 ---
 
-# Query by assignment, workflow or Kanban board changes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board. 
+# Query by assignment or workflow changes
+ 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
->[!NOTE]  
-><b>Feature availability: </b>Kanban query fields are available from VSTS and TFS 2015.1 or later version. 
+Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
 Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your team project. 
 
@@ -30,7 +31,7 @@ For example, you can find all work items that were closed but then reactivated. 
 
 You can also use the Activated By and Activated Date fields, or other workflow fields.
 
->[!TIP]  
+> [!TIP]  
 >Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which WITs they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
@@ -110,23 +111,25 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 </tbody>
 </table>
 
+<!---
 ![Was Ever operator to query for past assignment](_img/example-work-item-queries/IC697729.png)
+-->
 
-### Filter based on membership in a group  
+## Query by membership in a group  
 
-To filter on items assigned to someone who belongs to a VSTS or TFS group, use the **In Group** operator.
+To filter on items assigned to someone who belongs to a team or security group, use the **In Group** operator.
 
 ![Filter based on assignment to a TFS security group](_img/example-work-item-queries/IC675038.png)  
 
-You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, VSTS/TFS groups, and work item categories.
+You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Active Directory groups, and work item categories.
 
 
->[!NOTE]  
+> [!NOTE]    
 >**In Group** clauses don't support references to Azure Active Directory (AAD) groups. 
 
 <a id="workflow-change"/> 
 
-##List items based on workflow changes
+## Query based on workflow changes
 
 You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
@@ -182,7 +185,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </table>
 
 <a id="workflow-change-who"/> 
-##List items based on who made workflow changes
+## Query by who made workflow changes
 
 You can quickly find items that you changed, resolved or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
 
@@ -217,20 +220,24 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 
 <a id="kanban_query_fields">  </a>
-
-##List items based on Kanban board changes  
-
-<blockquote><span style="font-size:1.0em;"><b>Feature availability: </b>Kanban query fields are currently available from VSTS or from TFS 2015 Update 1 or later versions. </span></blockquote>
-
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+## Query by Kanban board changes  
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+> [!NOTE]   
+> Kanban query fields are available with TFS 2015.1 or later versions. 
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
 <img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
-
->[!NOTE]  
->Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
+> [!NOTE]    
+> Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
 
 
 <table valign="top">
@@ -254,22 +261,18 @@ For example, you can list items based on the team area path, and if they are in 
 </tr>
 <tr>
   <td>
-    <p>Items in the Expedite swimlane</p>
+    Items in the Expedite swimlane
   </td>
   <td>
-    <p>
       ```Board Lane _ = _ Expedite```
-    </p>
   </td>
 </tr>
 <tr>
   <td>
-    <p>Items in any swimlane that contains "Test"</p>
+Items in any swimlane that contains "Test"
   </td>
   <td>
-    <p>
       ```Board Lane _ Contains _ Test```
-    </p>
   </td>
 </tr>
 </tbody>
@@ -278,13 +281,14 @@ For example, you can list items based on the team area path, and if they are in 
 
 <a id="kanban-query-results">  </a>
 
->[!IMPORTANT] 
->Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states (VSTS)](../customize/process/customize-process-workflow.md) which all teams can use.</blockquote>  
+> [!IMPORTANT] 
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to [add custom workflow states](../customize/customize-work.md) which all teams can use.  
 
+::: moniker-end
 
 <a id="workflow-fields">  </a>
 
-##Workflow and Kanban board fields
+## Workflow and Kanban board fields
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another, or you move an item in the [Kanban board](../kanban/kanban-basics.md) to a different column or swimlane. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
 
 For information about data types and default field attributes, see [Work item data type reference](../customize/reference/define-modify-work-item-fields.md).
@@ -322,34 +326,30 @@ For information about data types and default field attributes, see [Work item da
   <td>String</td>
   <td>All</td>
 </tr>
-
-
 <tr>
-  <td>Board Column&nbsp;<sup>2,&nbsp;3,&nbsp;4</sup> </td>
+  <td>Board Column </td>
   <td>The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
 <p>Reference name=System.BoardColumn</p></td>
   <td>String</td>
-  <td>Requirement Category <sup>5</sup> </td>
+  <td>Requirement Category <sup>4</sup> </td>
 </tr>
 <tr>
-  <td>Board Column Done <sup>4</sup></td>
+  <td>Board Column Done </td>
   <td>
     <p>The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../kanban/split-columns.md) has been enabled for a Kanban board column. </p>
 <p>Reference name=System.BoardColumnDone</p></td>
   <td>Boolean</td>
-  <td>Requirement Category <sup>5</sup> </td>
+  <td>Requirement Category <sup>4</sup> </td>
 </tr>
 <tr>
   <td>
-    <p>Board Lane <sup>2,&nbsp;3,&nbsp;4</sup> </p>
+    <p>Board Lane </p>
   </td>
   <td>The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.
 <p>Reference name=System.BoardLane</p></td>
   <td>String</td>
-  <td>Requirement Category <sup>5</sup>  </td>
-</tr>
-
-
+  <td>Requirement Category <sup>4</sup>  </td>
+</tr> 
 <tr>
   <td>Closed By <sup>1,&nbsp;2</sup>  </td>
   <td>The name of the team member who set the state to closed, completed, or done. 
@@ -448,28 +448,28 @@ For information about data types and default field attributes, see [Work item da
 </tbody>
 </table>
 
-####Notes  
-
+#### Notes
+  
 <a id="sync">  </a>
-1.  By default, system synchronizes system-defined person-name fields with Active Directory (TFS) or Azure Active Directory (VSTS). These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).  
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up Active Directory or Azure Active Directory](../../security/setup-ad-aad.md).
+    
+	::: moniker range=">= tfs-2013 <= tfs-2018"  
+	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../customize/reference/field-definition-element-reference.md).    
+	::: moniker-end
 
-	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](https://msdn.microsoft.com/library/aa337627.aspx).  
-
-2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield** command](../customize/reference/witadmin/manage-work-item-fields.md) to change the reportable attribute for a field.  
+2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield**](../customize/reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 
 3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../customize/reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 
-4. Available only from VSTS or from TFS 2015.1 or later version.  
-
-5. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../customize/show-bugs-on-backlog.md). 
+4. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../customize/show-bugs-on-backlog.md). 
 	If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add or modify a work item field](../customize/add-modify-field.md).
 
 
-##Related notes
+## Related articles
 
 For more query examples, see [Create managed queries](example-queries.md). 
 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 

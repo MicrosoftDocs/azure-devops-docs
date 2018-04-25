@@ -2,23 +2,22 @@
 title: Use team fields instead of area paths to support teams 
 titleSuffix: TFS
 description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/14/2017
 ---
 
 # Use team fields instead of area paths to support teams
 
-[!IN
-CLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
->
->Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> [!IMPORTANT]  
+> **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 
@@ -30,11 +29,11 @@ Many features available through the web portal for TFS are scoped to a team. Tea
 
 When you customize your team project to support team fields, the Team field tab appears in the administration page for the team project and each team.
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
+[!INCLUDE [temp](../_shared/image-differences.md)] 
 
 <img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, team project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >This topic describes how to reconfigure a team project that is based on the Scrum process template. If your team project is based on another process template and that template is compatible with TFS 2013 or later version, you can make similar changes. Even if you've used the default configuration, you can reconfigure your team project. 
 
 
@@ -51,19 +50,19 @@ When you customize your team project to support team fields, the Team field tab 
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
-        > [!div class="tabbedCodeSnippets"]
-		```XML
-		<?xml version="1.0" encoding="utf-8"?>
-        <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
-           <GLOBALLIST name="Teams">
-              <LISTITEM value="Unassigned"/>
-              <LISTITEM value="Team A"/>
-              <LISTITEM value="Team B"/>
-              <LISTITEM value="Team C"/>
-              <LISTITEM value="Team D"/>
-           </GLOBALLIST>
-        </gl:GLOBALLISTS>
-		```
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
+   <GLOBALLIST name="Teams">
+    <LISTITEM value="Unassigned"/>
+    <LISTITEM value="Team A"/>
+    <LISTITEM value="Team B"/>
+    <LISTITEM value="Team C"/>
+    <LISTITEM value="Team D"/>
+   </GLOBALLIST>
+</gl:GLOBALLISTS>
+```
 
 0.  Import the global list definition.
 
@@ -90,20 +89,20 @@ Add a custom team field to all work item types (WITs) that are included in the F
         > [!div class="tabbedCodeSnippets"]
 		```XML
         <FIELDS>
-        . . . 
-           <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
-              <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
-              <ALLOWEXISTINGVALUE />
-                 <ALLOWEDVALUES >
-                    <GLOBALLIST name="Teams" />
-                 </ALLOWEDVALUES >
-                 <DEFAULT from="value" value="Unassigned" />
-           </FIELD>
-        . . . 
+        . . . 
+           <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
+              <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
+                <ALLOWEXISTINGVALUE />
+                  <ALLOWEDVALUES >
+                    <GLOBALLIST name="Teams" />
+                </ALLOWEDVALUES >
+                <DEFAULT from="value" value="Unassigned" />
+              </FIELD>
+        . . . 
         </FIELDS>
 		```
 
-    >[!TIP]  
+    > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
 3.  Add the **Team** field to the [Layout section](reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](reference/weblayout-xml-elements.md) of the WIT definition. 
@@ -111,16 +110,16 @@ Add a custom team field to all work item types (WITs) that are included in the F
         > [!div class="tabbedCodeSnippets"]
 		```XML
         <FORM>
-        . . . 
-           <Group Label="Status">
-              <Column PercentWidth="100">
-                 <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
-                 <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
-                 <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
-                 <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
-                 </Column>
-           </Group>
-        . . . 
+        . . . 
+          <Group Label="Status">
+              <Column PercentWidth="100">
+                 <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
+                 <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
+                 <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
+                 <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
+              </Column>
+          </Group>
+        . . . 
         </FORM>
 		```
 
@@ -146,17 +145,17 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
   
-        > [!div class="tabbedCodeSnippets"]
-		```XML
-        <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
-            <AddPanel>
-              <Fields>
-                <Field refname="System.Title" />
-                <Field refname="MyCompany.Team " />
-              </Fields>
-            </AddPanel> 
-        . . .
-		```
+
+```XML
+  <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
+    <AddPanel>
+      <Fields>
+      <Field refname="System.Title" />
+      <Field refname="MyCompany.Team " />
+      </Fields>
+    </AddPanel> 
+  . . .
+```
 
 4.  Import the definition file.
 
@@ -204,7 +203,7 @@ From the product backlog page for the team project, you can create backlog items
 For backlog items you create from a team's backlog page, TFS assigns the default value associated with the team to the Team field.
 
 
-##Related notes
+## Related articles
 
 - [Add a team, add team members](../scale/multiple-teams.md)
 - [Customize a process template](reference/process-templates/customize-process.md)  
@@ -225,17 +224,19 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
-	>[!IMPORTANT]  
-	>Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+  > [!IMPORTANT]  
+  >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
 3.  Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
-        <?xml version="1.0" encoding="utf-8"?>
-        <ProcessTemplate>
-          <metadata>
-            <name>Microsoft Visual Studio Scrum 2013.3 with Team Field</name>
-            <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
-            <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessTemplate>
+  <metadata>
+    <name>Microsoft Visual Studio Scrum 2013.3 with Team Field</name>
+    <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
+    <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
+```
 
 4.  As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
 
@@ -248,6 +249,6 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 
 
-###Credits
+### Credits
 
 Guidance for [customizing teams decoupled from area paths](http://blog.hinshelwood.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshel](http://blog.hinshelwood.com), a senior devops consultant and Microsoft Visual Studio ALM MVP.

@@ -2,12 +2,16 @@
 title: Unshelve Command
 description: Unshelve Command
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Unshelve Command
 
@@ -62,7 +66,7 @@ To use the **unshelve** command, you must have the **Read** permission set to **
 <tbody>
 <tr>
 <td><p><strong>/move</strong></p></td>
-<td><p>Deletes the specified shelveset from the server for Team Foundation version control upon successful completion of the unshelve operation. This option cannot be combined with an <i>itemspec</i>.</p>
+<td><p>Deletes the specified shelveset from the server for Team Foundation version control upon successful completion of the unshelve operation. This option cannot be combined with an <i>itemspec</i>.</p>
 <p>You can also delete a shelveset using the <strong>shelve</strong> command.</p></td>
 </tr>
 <tr>
@@ -101,7 +105,7 @@ If you want to integrate shelved revisions into your current workspace in order 
 
 You can also unshelve a shelveset in order to review changes from another user's workspace. To unshelve for this reason, you have two options.
 
--   If the shelved items and the items with which they are related have not been revised, or have only been revised lightly since the shelveset was created, you can retrieve the base version of all related items from the shelveset owner's workspace. To do this, use some variation of the following command: `tf get \* /version;Wworkspacename`, where *workspacename* is the name of the workspace from which the other user created the shelveset.
+-   If the shelved items and the items with which they are related have not been revised, or have only been revised lightly since the shelveset was created, you can retrieve the base version of all related items from the shelveset owner's workspace. To do this, use some variation of the following command: `tf get \* /version;Wworkspacename`, where *workspacename* is the name of the workspace from which the other user created the shelveset.
 
 -   If a significant amount of time has passed or if multiple revisions have been in the workspace since the shelveset was created, retrieve the version of all related items from the server as of the date and time when the shelveset was created.
 
@@ -114,7 +118,7 @@ You can delete a shelveset by using `tf shelve /delete`. For more information, s
 ## Examples
 The following example opens the **Unshelve** dialog box so that you can find and unshelve a shelveset into the current workspace. You also have an option in the dialog box to have the shelveset deleted when the unshelve operation completes.
 
-    c:\>tf unshelve
+    c:\>tf unshelve
 
 The following example unshelves the shelveset buddytest\_1256 into the current workspace and removes it from Team Foundation Server.
 

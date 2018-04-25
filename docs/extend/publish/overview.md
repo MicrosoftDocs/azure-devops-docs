@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Package, publish, & unpublish extensions | VSTS
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for VSTS.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/29/2016
 ---
 
@@ -106,7 +108,7 @@ Here are some scenarios where you might want to remove your extension from the M
   * You published your extension as public by mistake.
 
 To unpublish, select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
-Your extension will be unpublished immediately from the Marketplace, and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. 
+Your extension will be unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension will stay intact. 
 
 To offer your extension again in the Marketplace, choose **Publish** on the menu.
 

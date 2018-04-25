@@ -1,17 +1,19 @@
 ---
-title: Create a solution architecture | VSTS & TFS
-description: Investigate alternative architectural strategies to creat good architecture - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Create a solution architecture
+titleSuffix: VSTS & TFS
+description: Investigate alternative architectural strategies to creat good architecture  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
-ms.author: kaelli
+ms.topic: conceptual
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 01/20/2017
 ---
 
 # Create a solution architecture
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 
 Part of creating a good architecture is investigating alternative architectural strategies. Alternative strategies have different benefits that are based on platform selection, technologies that are used, and code reuse. Each strategy is designed and proofs of concept are built to further investigate the costs and benefits of each strategy. The strategies are assessed against product and quality requirements, and ultimately a strategy is chosen to be used to implement the product. Finally, security and performance are architectural concerns for which work must be done over the entire product.  

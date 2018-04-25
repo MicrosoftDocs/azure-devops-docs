@@ -2,12 +2,16 @@
 title: Compare folders and files
 description: Compare folders and files
 ms.assetid: 62dd76a4-8315-4415-8bd9-4cbddc689e7f
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Compare folders and files
 

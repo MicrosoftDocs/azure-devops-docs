@@ -1,12 +1,15 @@
 ---
-title: Track test status in VSTS
+title: Track test status - manual testing in VSTS
 description: Track test status with charts and graphs using VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Track test status
@@ -20,6 +23,8 @@ You can pin these charts to your home page, then all the team
 can see the progress at a glance.
 
 ![On the Charts tab, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Track testing progress
 

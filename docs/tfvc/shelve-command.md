@@ -2,12 +2,16 @@
 title: Shelve Command
 description: Shelve Command
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Shelve Command
 
@@ -33,7 +37,7 @@ If you want to use the **shelve** command to delete a shelveset, you must be a s
 | *commentfile* | Specifies a file system path of a file from which comments for the shelveset should be read. |
 | *comment* | Specifies the comment for the shelveset. |
 | *itemspec* | Identifies the files or folders to shelve. By default, all pending changes in the current workspace are shelved if this parameter is not specified. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](https://msdn.microsoft.com/library/4y2ash30). |
-| *shelvesetname* | Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname *and *owner *but only if **/replace** is also specified.<br /><br />You must provide a value for this parameter. |
+| *shelvesetname* | Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname *and *owner *but only if **/replace** is also specified.<br /><br />You must provide a value for this parameter. |
 | *owner* | Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified. |
 | *username* | Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*. |
 | *TeamProjectCollectionUrl* | The URL of the team project collection that contains the files or folders that you want to shelve (for example, http://myserver:8080/tfs/DefaultCollection/). |
@@ -53,7 +57,7 @@ If you want to use the **shelve** command to delete a shelveset, you must be a s
 
 ## Remarks
 
-The **shelve** command of the **tf** command-line utility backs up pending changes, a list of associated work items, in-progress check-in notes, and comments in a shelveset on the Team Foundation Server. A *shelveset *is much like a changeset that is not committed to the server. Like a changeset, a shelveset can be retrieved from the server into a local workspace by any user who has sufficient permissions.
+The **shelve** command of the **tf** command-line utility backs up pending changes, a list of associated work items, in-progress check-in notes, and comments in a shelveset on the Team Foundation Server. A *shelveset *is much like a changeset that is not committed to the server. Like a changeset, a shelveset can be retrieved from the server into a local workspace by any user who has sufficient permissions.
 
 Shelving is an alternative to checking in pending changes that have not been tested sufficiently. Use shelving when you want to interrupt you work:
 

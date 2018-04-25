@@ -2,12 +2,16 @@
 title: Undo command
 description: Undo command
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Undo command
 
@@ -43,7 +47,7 @@ Discards one or more pending changes to files or folders.
 	<td><p>Recursively undoes changes to items in the specified directory and any subdirectories.</p></td></tr>
 <tr>
 	<td><p><strong>/workspace</strong> <em>workspacename</em>[;<em>workspaceowner</em>]</p></td>
-	<td><p>Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.</p><p>You can specify <em>workspaceowner</em> to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the <strong>/login:</strong><em>username</em>. You must have the UndoOther permission set to Allow to undo changes in another user’s workspace.</p><table><thead>
+	<td><p>Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.</p><p>You can specify <em>workspaceowner</em> to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the <strong>/login:</strong><em>username</em>. You must have the UndoOther permission set to Allow to undo changes in another user's workspace.</p><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>If you use the <strong>undo</strong> command to undo a pending change in a remote workspace that is still in use, then before continuing work in that workspace, a user must log on to the machine that hosts the workspace and then get (and in some cases <a href="get-command.md">get /all</a>) the items affected by the undo.</p></td></tr></tbody></table></td></tr></tbody>

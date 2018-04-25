@@ -1,17 +1,20 @@
 ---
-title: Azure function task 
+title: Azure function task for Microsoft VSTS and TFS 
 description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Azure function
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
 
@@ -37,10 +40,23 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
 
-## Q & A
+::: moniker range="vsts"
 
-<!-- BEGINSECTION class="md-qanda" -->
+## YAML snippet
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+(VSTS-only)
 
-<!-- ENDSECTION -->
+```YAML
+- task: AzureFunction@1
+  inputs:
+    function:
+    key:
+#   method: POST # OPTIONS, GET, HEAD, POST (default), PUT, DELETE, TRACE, PATCH
+#   headers: {Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}
+    queryParameters:
+    body:
+#   waitForCompletion: false # true, false (default)
+    successCriteria:
+```
+
+::: moniker-end

@@ -2,8 +2,8 @@
 title: Delivery plans and simple VM deployment – May 11
 description: VSTS release notes for May 11 2017
 ms.ContentId: bf9d6890-7a2f-4105-9687-61e406b1cdec
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---

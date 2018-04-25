@@ -1,17 +1,20 @@
 ---
-title: TFS-Office integration issues | VSTS & TFS  
+title: TFS-Office integration issues
+titleSuffix: VSTS & TFS
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 03/28/2017   
 ---
 
 # TFS-Office integration issues
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you don't see the Team ribbon in Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this topic. 
 
@@ -40,7 +43,7 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 2.	Navigate to one of the following paths containing the **TFCOfficeShim.Connect.[version]** folder:
 	
-	>[!NOTE]  
+	> [!NOTE]  
 	>If there are multiple folders with the same name, select the one with the highest version number. 
 
 	- HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins (if this key does not exist, try one of the options below)
@@ -56,9 +59,9 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 
 	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](https://msdn.microsoft.com/library/bb386106.aspx#LoadBehavior).  
 
-##Office Add-in doesn't load or “Open in Excel” from Visual Studio fails
+##Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
 
-To connect to TFS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
+To connect to TFS or VSTS, go to the Team ribbon and choose **New List**. If the New List dialog fails to open, or you receive TF86001 or similar error message, follow the steps below to ensure that policy redirection is configured. 
  
 <img src="_img/tfs-office-issues-tf86001.png" alt="TF86001 error message, Team Foundation was unable to load the Office Add-in" style="border: 2px solid #C3C3C3;" />
 
@@ -66,7 +69,7 @@ This error is typically caused when you install Visual Studio before you install
 
 
 ### Prerequisites 
-Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c.aspx). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://www.visualstudio.com/downloads/).   
+Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](https://docs.microsoft.com/dotnet/framework/tools/gacutil-exe-gac-tool). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://www.visualstudio.com/downloads/).   
 
 ### Run the Gacutil tool  
 
@@ -101,6 +104,6 @@ If the above steps are unsuccessful, try the following steps:
 3.	Contact the Microsoft support team. 
 
 
-## Related notes
+## Related articles
 
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)  

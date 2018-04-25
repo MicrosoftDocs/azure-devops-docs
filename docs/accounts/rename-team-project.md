@@ -1,15 +1,17 @@
 ---
 title: Rename a team project in VSTS or TFS
 description: You can rename your team project in VSTS or TFS, and then there are some things you need to do to work with the renamed team project.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/05/2017
+monikerRange: '>= tfs-2015'
 ---
-
 # Rename a team project
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
@@ -151,7 +153,7 @@ For the following clients, execute a get or check-in and the workspace mapping w
 - Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)
 
 We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
-except for Visual Studio 2010 which only supports server worksapces, 
+except for Visual Studio 2010 which only supports server workspaces, 
 and Team Foundation Server plugin for Eclipse, 
 you must create a new local workspace mapped to the new team project name.
 
@@ -181,18 +183,18 @@ Reports will not work as expected until the jobs have run.
  Uses of *@project* will also continue to work after a team project rename and also don't need to be updated. 
 
 - Excel reports and Excel web parts on MOSS will not show the right data until you execute the following.
-	1. Warehouse job – [Run the warehouse jobs](../report/admin/manually-process-data-warehouse-and-cube.md)
+	1. Warehouse job - [Run the warehouse jobs](../report/admin/manually-process-data-warehouse-and-cube.md)
 	so that Excel reports contain the correct data.
 	If the new project name is not synced to the warehouse,
 	Excel reports will not show the correct data.
 	To avoid this, manually run warehouse jobs.
-	2. SharePoint timer job – Run the "Team Foundation Server Dashboard Update" job
+	2. SharePoint timer job - Run the "Team Foundation Server Dashboard Update" job
 	from the SharePoint central admin to update Excel web parts on the dashboard. 
 	By default, it runs every 30 minutes.
 	Until this job runs, the Excel web parts on the dashboard
 	and the web parts that show reports directly from the reporting folder
 	won't work because they'll use either the wrong project name or the wrong reporting folder. 
-	3. SharePoint cache – Manually clear the SharePoint cache to avoid stale data,
+	3. SharePoint cache - Manually clear the SharePoint cache to avoid stale data,
 	such as report folder locations, appearing in the dashboards.
 	By default, this cache clears about every hour.
 	You can also clear some TFS specific cache using the tfs redirect url

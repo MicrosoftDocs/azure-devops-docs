@@ -7,13 +7,16 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < vsts'
 ---
+
+
 
 # Back up and restore TFS
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-If you don't regularly back up Team Foundation Server (TFS) databases, you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the Scheduled Backups Wizard makes it easy to back up your TFS databases, which are part of the TFS data-tier and stored in SQL Server. All of the information required for restoring a TFS deployment is stored in those databases. Consequently, you do not have to worry about backing up Team Foundation client computers or application-tier servers.
+If you don't regularly back up Team Foundation Server (TFS) databases, you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the Scheduled Backups Wizard makes it easy to back up your TFS databases, which are part of the TFS data-tier and stored in SQL Server. All of the information required for restoring a TFS deployment is stored in those databases. Consequently, you do not have to worry about backing up Team Foundation client computers or application-tier servers.
 
 ![Choose a preconfigured or custom schedule](../_img/ic665036.png)  
 
@@ -29,12 +32,12 @@ For an overview of TFS databases, see [Understand backing up Team Foundation Ser
 <a name="same-server" />
 
 ## Restore data same server
-You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
+You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
 
 > **TFS 2013 Tip:**  
 > If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore databases to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
 
-If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
+If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
 
 > **Note:**  
 > If you use SharePoint Products in your deployment, when you restore data, you do not have to restore the websites that are automatically generated based on the data for each team project. The data for the team project portals is contained in the databases that you restore.

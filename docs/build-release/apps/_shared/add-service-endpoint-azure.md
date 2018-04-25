@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <p>
 If a subscription is not available, then add a service endpoint:
 </p>

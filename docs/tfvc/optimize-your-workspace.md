@@ -2,12 +2,16 @@
 title: Optimize your workspace
 description: Optimize your workspace
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: conceptual
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Optimize your workspace
 
@@ -25,7 +29,7 @@ Does your team have a large and complex codebase? Do you want your workspace to 
 
 ## Optimize your folder names
 
-If you don’t yet use branches, on your server, you should put all your code in a subfolder called Main (for example: `$/TFVCTeamProject/Main/`). If you do, then you’ll be ready when your team grows big enough to require branches to manage your codebase. On your dev machine, you should use a short, understandable folder path that matches your project structure such as `C:\Users\\YourName\Source\Workspaces\TFVCTeamProject\Main\SolutionName\`.
+If you don't yet use branches, on your server, you should put all your code in a subfolder called Main (for example: `$/TFVCTeamProject/Main/`). If you do, then you'll be ready when your team grows big enough to require branches to manage your codebase. On your dev machine, you should use a short, understandable folder path that matches your project structure such as `C:\Users\\YourName\Source\Workspaces\TFVCTeamProject\Main\SolutionName\`.
 
 Some more tips on effective folder names:
 
@@ -41,7 +45,7 @@ If your codebase is large, you can avoid wasting time, network bandwidth, and lo
 
 When you map a folder, make sure that you choose a folder high enough in the code tree that you get all the files you need to create a local build, but low enough that you are not getting more files than you need. You can also use some tools to more simply and quickly create a usable workspace: **explicit**, **implicit**, **cloaked**, and **non-recursive** folder mappings.
 
-When you look at the workspace of fictitious developer, Raisa, below, you might wonder to yourself: why didn’t she simply map `$/SiteApp/` to `c:\\code\\SiteApp\\` and be done with it? A simple workspace like this would **implicitly** map all the folders she needs in `$/SiteApp/Main/`.
+When you look at the workspace of fictitious developer, Raisa, below, you might wonder to yourself: why didn't she simply map `$/SiteApp/` to `c:\\code\\SiteApp\\` and be done with it? A simple workspace like this would **implicitly** map all the folders she needs in `$/SiteApp/Main/`.
 
 The main problem with this approach is that it would also provide her with a lot of files she does not need, and thus waste time and resources. So Raisa creates some tailored folder mappings.
 
@@ -52,7 +56,7 @@ The main problem with this approach is that it would also provide her with a lot
 <table><tbody>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC756627.png" title="Step 1" alt="Step 1" /></p></td>
-	<td><p>Raisa doesn’t develop customized build processes so she doesn’t need `$/SiteApp/BuildProcessTemplates`. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to `$/SiteApp/Main/`. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn’t need.</p><p>To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than <strong>explicitly</strong> including each code project (for example, `$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL`) she instead maps `$/SiteApp/Main/FabrikamFiber/`, and thus she <strong>implicitly</strong> maps all the sub-folders that contain the code projects she needs.</p></td></tr>
+	<td><p>Raisa doesn't develop customized build processes so she doesn't need `$/SiteApp/BuildProcessTemplates`. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to `$/SiteApp/Main/`. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn't need.</p><p>To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than <strong>explicitly</strong> including each code project (for example, `$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL`) she instead maps `$/SiteApp/Main/FabrikamFiber/`, and thus she <strong>implicitly</strong> maps all the sub-folders that contain the code projects she needs.</p></td></tr>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC646325.png" title="Step 2" alt="Step 2" /></p></td>
 	<td><p>Raisa does not need the files in `$/SiteApp/Main/FabrikamFiber/3DModels` or `$/SiteApp/Main/FabrikamFiber/Docs`, and because they are implicitly mapped by<img src="_img/optimize-your-workspace/IC756627.png" title="Step 1" alt="Step 1" />, she uses two <strong>cloaked</strong> mappings to exclude these folders from her workspace.</p></td></tr>
@@ -73,7 +77,7 @@ The main problem with this approach is that it would also provide her with a lot
 
 If your company uses [branches to isolate risk](use-branches-isolate-risk-team-foundation-version-control.md) in your codebase, then you should create a separate workspace for each branch you work in.
 
-For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolate the risk among their many teams, they’ve branched their codebase. Raisa continues her work within her small team, but now she uses a few workspaces to manage the work that she now does in multiple branches.
+For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolate the risk among their many teams, they've branched their codebase. Raisa continues her work within her small team, but now she uses a few workspaces to manage the work that she now does in multiple branches.
 
 ![](_img/optimize-your-workspace/IC578257.png)
 

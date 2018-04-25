@@ -2,23 +2,26 @@
 title: Create a new Git repo | VSTS & TFS
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 09/08/2017
+author: steved0x
+ms.topic: tutorial
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Create a new Git repo
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
-A Git repository, or repo, is a folder that you’ve told Git to help you track file changes in. 
+A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
-Each Git repo on your system is independent, so changes saved in one Git repo don’t affect the contents of another.
+Each Git repo on your system is independent, so changes saved in one Git repo don't affect the contents of another.
 
-A Git repo contains every version of every file saved in the repo. Git saves these files very efficiently, so having a large number of versions doesn’t mean that it uses a lot of disk space.
+A Git repo contains every version of every file saved in the repo. Git saves these files very efficiently, so having a large number of versions doesn't mean that it uses a lot of disk space.
 Storing each version of your files helps Git merge code better and makes working with multiple versions of your code quick and easy.
 
 In this tutorial you learn how to:
@@ -105,6 +108,9 @@ git remote add origin https://fabrikam.visualstudio.com/Fabrikam/_git/FabrikamFi
 ```
 git push origin users/frank/feature
 ```
+
+> [!NOTE]
+> You can also create and get repos from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 ---
 

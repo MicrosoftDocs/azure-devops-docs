@@ -7,13 +7,16 @@ ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/09/2017
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Configure the enterprise application definition for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
-If you’re using a supported enterprise edition of SharePoint Server, you must add the enterprise application definition to your deployment of Team Foundation Server. You created the enterprise application definition when you [configured SharePoint for dashboard compatibility](install-sharepoint.md). You must perform this configuration before reports and dashboards will appear correctly in Team Foundation Server. 
+If you're using a supported enterprise edition of SharePoint Server, you must add the enterprise application definition to your deployment of Team Foundation Server. You created the enterprise application definition when you [configured SharePoint for dashboard compatibility](install-sharepoint.md). You must perform this configuration before reports and dashboards will appear correctly in Team Foundation Server. 
 
 ### To configure the enterprise application definition
 

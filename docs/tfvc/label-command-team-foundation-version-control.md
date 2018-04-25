@@ -2,12 +2,16 @@
 title: Label Command (Team Foundation Version Control)
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Label Command (Team Foundation Version Control)
 
@@ -126,7 +130,7 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 
 ### Removing and Deleting Labels
 
-You can use the [Unlabel Command](unlabel-command.md) to remove a label from a file or folder. Alternatively, you can delete a label from the system using the `tf label /delete` command.
+You can use the [Unlabel Command](unlabel-command.md) to remove a label from a file or folder. Alternatively, you can delete a label from the system using the `tf label /delete` command.
 
 For information about an existing label that includes a list of the items to which the label has been attached, its comment, scope, and owner, see [Labels Command](labels-command.md).
 

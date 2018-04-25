@@ -1,11 +1,13 @@
 ---
-title: Map a project plan that was previously bound to a team project | TFS
-description: Specify work items that you want to synchronize, and then the migration process automatically creates additional tasks that are based on those work items - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Map a project plan that was previously bound to a team project
+titleSuffix: TFS 
+description: Specify work items that you want to synchronize using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: df29e319-c1f7-4c90-bc27-42975158a0a1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -195,7 +197,7 @@ ms.date: 01/12/2017
   
 3.  If all work items that you want to have synchronized have been added, close your project plan, and skip to [Verify Migration and Delete Duplicate Tasks](#verify) later in this topic.  
   
-     If some work items still must be synchronized, return to the first step in the first procedure,  “To approve updates to the project plan.  
+     If some work items still must be synchronized, return to the first step in the first procedure,  "To approve updates to the project plan.  
   
      As you approve and publish the updates, the synchronization process locks the hierarchy of synchronized work items in Team Foundation.  
   
@@ -238,6 +240,6 @@ ms.date: 01/12/2017
   
 7.  Save and publish your project plan to Project Server.  
   
-## Related notes  
+## Related articles  
  [Operational differences in managing projects using TFS and Project](operational-differences.md)   
  [Synchronization process overview](synchronization-process-overview.md)

@@ -7,15 +7,18 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # SQL Server Reporting Services Roles
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can use the roles in SQL Server Reporting Services to assign particular permissions to users in Visual Studio Team Foundation Server. Every user and group in Team Foundation Server must be assigned appropriate permissions in Reporting Services. Reporting Services provides default security through role assignments. You can use management tools for SQL Server, such as Management Studio and Report Manager, to assign users and groups to predefined roles.
+You can use the roles in SQL Server Reporting Services to assign particular permissions to users in Visual Studio Team Foundation Server. Every user and group in Team Foundation Server must be assigned appropriate permissions in Reporting Services. Reporting Services provides default security through role assignments. You can use management tools for SQL Server, such as Management Studio and Report Manager, to assign users and groups to predefined roles.
 
-You can use group membership in Team Foundation Server to determine the appropriate membership in one of the predefined roles in Reporting Services. No additional configuration of the role will be required. However, you can modify predefined roles and add custom roles to better meet your business needs. If you add custom roles or modify predefined roles, you must be sure that the roles have the permissions required for the appropriate level of access to reports and reporting features. For more information, see the following topic on the Microsoft Web site: [Granting Permissions on a Native Mode Report Server](http://go.microsoft.com/fwlink/?LinkId=117112).
+You can use group membership in Team Foundation Server to determine the appropriate membership in one of the predefined roles in Reporting Services. No additional configuration of the role will be required. However, you can modify predefined roles and add custom roles to better meet your business needs. If you add custom roles or modify predefined roles, you must be sure that the roles have the permissions required for the appropriate level of access to reports and reporting features. For more information, see the following topic on the Microsoft Web site: [Granting Permissions on a Native Mode Report Server](http://go.microsoft.com/fwlink/?LinkId=117112).
 
 The following predefined roles are suggested for use with Team Foundation Server:
 

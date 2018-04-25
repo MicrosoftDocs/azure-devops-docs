@@ -1,17 +1,19 @@
 ---
-title: Code Coverage Excel Report | TFS
-description: Understand how to use this report to help determine how close parts of the code are to release quality - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Code Coverage Excel Report 
+description: Understand how to use this report to help determine how close parts of the code are to release quality - Team Foundation Server  
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: bf316d3c-5d74-42d4-90f1-bb411b0bf13d
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ms.manager: douge
 ---
 
 # Code Coverage Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 With the Code Coverage report, you can monitor how much code the team is testing over time. Team members can use this report to help determine how close parts of the code are to release quality. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

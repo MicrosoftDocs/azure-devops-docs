@@ -2,12 +2,16 @@
 title: Import repositories from TFVC to Git | VSTS & TFS
 description: Search your Git repo in VSTS or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: atinb
-ms.date: 04/04/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Import repositories from TFVC to Git
 #### VSTS | TFS 2018 | TFS 2017 Update 2

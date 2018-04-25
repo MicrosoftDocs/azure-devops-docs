@@ -1,15 +1,17 @@
 ---
-title: Customize the web form | VSTS    
-description: Customize the web form for a work item type and Inheritance process model for Visual Studio Team Services (VSTS)      
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Customize the web form
+titleSuffix: VSTS   
+description: Customize the web form for a work item type and Inheritance process model for Visual Studio Team Services     
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 11/07/2017 
+ms.author: kaelliauthor: KathrynEE
+monikerRange: 'vsts'
+ms.date: 03/20/2018
 ---
 
-# Customize the web form for a work item type (Inheritance process model)  
+# Customize the web form for a work item type 
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
@@ -74,7 +76,7 @@ To customize the web form, you must work from the admin context Process hub.
 
 You can open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
 
 
@@ -103,12 +105,12 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 Before you remove a group, first move all fields defined in that group to another group or remove them from the form.  
 
->[!TIP]   
+> [!TIP]   
 >You must remove all fields from a group for the Remove option to appear. 
 
 Choose the ![Delete icon](../../_img/icons/delete_icon.png) Remove option from the custom group &hellip; context menu.   
 
->[!NOTE]   
+> [!NOTE]     
 >When all fields in an inherited group are hidden, the inherited group itself will not appear on the form.   
 
 <a id="move-field"></a>
@@ -182,11 +184,11 @@ Before you delete a page, you'll want to move any fields that your team still us
 Choose the ![Delete icon](../../_img/icons/delete_icon.png) Delete option from the custom page &hellip; context menu.   
 
 
->[!NOTE]  
+> [!NOTE]    
 >Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
 
 
-## Related notes  
+## Related articles  
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md).   
 
@@ -201,7 +203,5 @@ Additional topics of interest:
 - [Customize cards on boards](../customize-cards.md)  
 
 
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
 
 

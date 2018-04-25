@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Do I need an agent?
 
 You need at least one agent to run your build or release. Get an [agent](../concepts/agents/agents.md).

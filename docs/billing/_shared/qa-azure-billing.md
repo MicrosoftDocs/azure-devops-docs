@@ -1,4 +1,4 @@
-####Q:	How does Azure billing work?
+### Q: How does Azure billing work?
 
 A:	When you buy from the Visual Studio Marketplace, 
 you select an Azure subscription to use for billing. 
@@ -20,14 +20,14 @@ purchases will show up on your monthly Azure bill.
 > please keep your Azure subscription active and updated.
 
 
-####Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
+### Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 
 A:	Yes, please buy directly from the Visual Studio Marketplace 
 where you can bill purchases to the Azure subscription that was created 
 under your [Enterprise Agreement (EA)](https://azure.microsoft.com/en-us/pricing/enterprise-agreement/). 
 Don't order Visual Studio Marketplace services through your reseller.
 
-####Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
+### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
 
 A:	Yes.  You can use these prepaid funds to pay for: 
 
@@ -39,7 +39,7 @@ A:	Yes.  You can use these prepaid funds to pay for:
 You can't use these funds to pay for Visual Studio cloud 
 subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 
-####Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
+### Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) 
@@ -48,7 +48,7 @@ which applies to VSTS, Xamarin University, and so on.
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase. 
 
-####Q:	Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
+### Q:	Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the monthly Azure credits from 
 [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs) 
@@ -71,7 +71,7 @@ including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-####Q: Where can I check my bill or correct any billing information on my Azure subscription?
+### Q: Where can I check my bill or correct any billing information on my Azure subscription?
 
 A:	If you're the Azure account administrator, 
 [visit the Azure Account portal](https://account.windowsazure.com).

@@ -1,10 +1,12 @@
 ---
-title: Burndown and Burn Rate Report | TFS
-description: Determine the rate of team progress by reviewing the Burndown and Burn Rate report - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Burndown and Burn Rate Report
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Determine the rate of team progress by reviewing the Burndown and Burn Rate report - Team Foundation Server 
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 10/17/17
 ---

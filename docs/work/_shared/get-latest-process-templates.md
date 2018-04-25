@@ -1,8 +1,8 @@
 
 
->[!TIP]  
+> [!TIP]  
 >To access the latest versions of the default processes/process templates:
->- **For the Inheritance process model (VSTS) or the On-premises XML process model (on-premises TFS)**:   
+>- **For the On-premises XML process model (on-premises TFS)**:   
 	><ul><li>[Install or upgrade to the latest version of TFS](https://www.visualstudio.com/downloads/).</li> 
 	><li>Download the zipped template file using the [Process Template Manager](/vsts/work/work-items/guidance/manage-process-templates). You'll need to use a version of Visual Studio that is at the same version level as TFS. You can install the latest version of [Visual Studio Community](https://www.visualstudio.com/downloads/) for free.</li>
 	><li>You can access the latest versions of the default process templates installed on TFS 2017 here: %programfiles%/TFS 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033 (for TFS 2015, the main folder is TFS 14.0). For descriptions of each file and folder, see [Overview of process template files](/vsts/work/customize/reference/process-templates/overview-process-template-files).</li></ul>

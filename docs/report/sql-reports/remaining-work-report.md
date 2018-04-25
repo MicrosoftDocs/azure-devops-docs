@@ -1,11 +1,13 @@
 ---
-title: Remaining Work Report | TFS
-description: Tracks the team's progress and identify any problems in the flow of work.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Remaining Work Report 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
+description: Tracks the team's progress and identify any problems in the flow of work
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

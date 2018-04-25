@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 **Visual Studio 2015 | VSTS | TFS 2015 | [Previous version](../overview-rm2013.md)**  
 
 ![horizontal-line](../_img/horizontal-line.png)

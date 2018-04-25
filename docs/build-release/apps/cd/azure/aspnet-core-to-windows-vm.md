@@ -1,20 +1,24 @@
 ---
 title: Deploy your ASP.NET Core app to a Windows VM | VSTS Quickstart
 description: Set up a CI build for your ASP.NET Core app, and then a CD release an to Azure Windows VM
+ms.prod: devops
+ms.technology: devops-cicd
 services: vsts
 documentationcenter: ''
-author: alewis
-manager: douge
+ms.author: alewis
+author: andyjlewis
+ms.manager: douge
 editor: ''
-
 ms.assetid: E13DEB83-A128-4704-A051-8465AD39B5AE
 ms.devlang: dotnetcore
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.tgt_pltfrm: vm-windows
 ms.workload: ''
 ms.date: 12/20/2017
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Deploy your ASP.NET Core app to a Windows virtual machine
 
@@ -63,7 +67,7 @@ Your code changes automatically appear on your site:
 
  ![Screenshot showing dotnet core template](../../../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
 
 1. For the **Agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 

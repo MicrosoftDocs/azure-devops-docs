@@ -1,28 +1,44 @@
 ---
 title: VSTS and TFS Build and Test - Run Functional Tests step
-ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Test: Run Functional Tests
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+::: moniker range=">= tfs-2018"
+
+This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+task together with [phases](../../concepts/process/phases.md)
+to run unit and functional tests on the universal agent.
+
+For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+
+::: moniker-end
+
+
+
+## TFS 2017 and earlier
 
 ![icon](_img/run-functional-tests-icon.png)
 Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
 Use this task when you want to run tests on remote machines, and you cannot run
 tests on the build machine.
 
-## Demands and prerequisites
+### Demands and prerequisites
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
-## Arguments
+### Arguments
 
 | Argument | Description |
 | -------- | ----------- |
@@ -47,7 +63,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 > The task supports a maximum of 32 machines/agents.
 
-## Scenarios
+### Scenarios
 
 Typical scenarios include:
 
@@ -109,13 +125,13 @@ These scenarios are supported for:
   - Configuring a test agent and running tests under a non-administrative
     account or under a service account is not supported.
 
-## More information
+### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Set up environments to run continuous test tasks with your builds](../../test/set-up-continuous-test-environments-builds.md)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
-## Related tasks
+### Related tasks
 
 * [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)
 * [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopy)
@@ -123,7 +139,7 @@ These scenarios are supported for:
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 * [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
 
-## Q&A
+### Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]
@@ -134,8 +150,12 @@ These scenarios are supported for:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
+
+::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]

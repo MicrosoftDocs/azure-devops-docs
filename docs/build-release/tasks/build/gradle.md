@@ -1,13 +1,17 @@
 ---
 title: Gradle build and release task
 description: Gradle build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Gradle 
  
@@ -106,6 +110,41 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: Gradle@2
+  inputs:
+#   gradleWrapperFile: gradlew
+    options:
+#   tasks: build
+    workingDirectory:
+#   publishJUnitResults: true
+#   testResultsFiles: **/build/test-results/TEST-*.xml
+    testRunTitle:
+#   codeCoverageToolOption: None # None (default), Cobertura, JaCoCo
+#   codeCoverageClassFilesDirectories: build/classes/main/
+    codeCoverageClassFilter:
+#   codeCoverageFailIfEmpty: false
+#   javaHomeOption: JDKVersion # JDKVersion (default), Path
+#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
+    jdkDirectory:
+#   jdkArchitectureOption: x64 # x86, x64 (default)
+#   gradleOptions: -Xmx1024m
+#   sonarQubeRunAnalysis: false
+#   sqGradlePluginVersionChoice: specify # specify (default), build
+#   sonarQubeGradlePluginVersion: 2.6.1
+#   checkStyleRunAnalysis: false
+#   findBugsRunAnalysis: false
+#   pmdRunAnalysis: false
+```
+
+::: moniker-end
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -145,6 +184,8 @@ build.gradle resides:
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

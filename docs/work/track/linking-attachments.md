@@ -1,17 +1,19 @@
 ---
-title: Link and attachment queries | VSTS & TFS
-description: QUery work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Link and attachment queries 
+titleSuffix: VSTS & TFS
+description: Query work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 05/10/2017  
 ---
 
 # Link and attachment queries  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 
@@ -86,7 +88,7 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 <img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
+> [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 From there, you can add additional query clauses or change the Filter options for linked work items. 
@@ -181,7 +183,7 @@ The following table describes fields associated with links and attachments. Most
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
 For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
-</blockquote> 
+</blockquote> 
 </td>
 <td><p>All</p></td>
 </tr>
@@ -219,7 +221,7 @@ For VSTS, you can add up to 100 attachments to a work item. Attempts to add more
 </table>
 
 
-## Related notes
+## Related articles
 
 - [Add link to multiple work items](../backlogs/add-link.md) 
 - [Link work items to support traceability](link-work-items-support-traceability.md) 

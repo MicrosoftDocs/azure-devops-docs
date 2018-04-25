@@ -1,11 +1,13 @@
 ---
-title: Make Agile team progress visible to the Program Management Office | TFS
-description: Use the Project Server in order to view the work progress and resource usage -  Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit 
+title: Make Agile team progress visible to the Program Management Office 
+titleSuffix: TFS
+description: View work progress and resource usage using Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile 
 ms.assetid: 865f7e20-cc67-4279-b625-a27ac3f1e88f
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Make Agile team progress visible to the Program Management Office
@@ -156,6 +158,6 @@ Edit Work Items dialog box
   
  ![Project Portfolio with Agile Plan Updates](_img/tfs-ps_pwa_portfolio_agile.png "TFS-PS_PWA_Portfolio_Agile")  
   
-## Related notes  
+## Related articles  
  [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md)   
  [Resolve validation errors](resolve-validation-errors.md)

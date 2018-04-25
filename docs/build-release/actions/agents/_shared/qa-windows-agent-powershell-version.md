@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <h3 id="powershell-version">What version of PowerShell do I need? Where can I get a newer version?</h3>
 
 The Windows Agent requires PowerShell version 3 or later. To check your PowerShell version:

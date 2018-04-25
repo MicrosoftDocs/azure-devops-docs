@@ -26,7 +26,7 @@
       href: develop/add-hub.md
     - name: Add a menu action
       href: develop/add-action.md
-    - name: Add a build task
+    - name: Add a build or release task
       href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
@@ -104,7 +104,7 @@
   items:
   - name: Manifest reference
     href: develop/manifest.md
-  - name: Build task reference
+  - name: Build/Release task reference
     href: develop/build-task-schema.md
   - name: Endpoint authentication schemes
     href: develop/auth-schemes.md
@@ -120,6 +120,12 @@
     href: develop/auth.md
   - name: Deploy web content to Azure
     href: publish/publish-azure.md
+  - name: Client APIs
+    items:
+    - name: Core SDK
+      href: reference/client/core-sdk.md
+    - name: Client services
+      href: reference/client/client-services.md
   - name: UI controls
     items:
     - name: Combo

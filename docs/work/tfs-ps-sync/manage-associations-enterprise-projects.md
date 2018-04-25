@@ -1,11 +1,13 @@
 ---
-title: Manage the association of enterprise projects to team projects | TFS
-description: Understand how to map enterprise project, must have registered and mapped the instance of the project that is associated with the enterprise project to a team project collection - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage the association of enterprise projects to team projects
+titleSuffix: TFS 
+description: Understand how to map enterprise projects using Team Foundation Server & Project Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: b759773e-1c79-4e2e-abdf-522e1a34fdfb
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
@@ -118,7 +120,7 @@ ms.date: 01/12/2017
   
  In addition, you must grant users in Team Foundation access to log on to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-## Related notes  
+## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   
  [Manage mappings](manage-mappings-enterprise-project-team-project.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

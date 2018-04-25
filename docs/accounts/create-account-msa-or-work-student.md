@@ -1,16 +1,17 @@
 ---
 title: Create a VSTS account with a Microsoft account or a work/organization account
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
+ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
+author: chcomley
 ms.date: 10/17/2017
+monikerRange: 'vsts'
 ---
-
-#	Create your VSTS account with a personal Microsoft account or a work/school/organization account
+# Create your VSTS account with a personal Microsoft account or a work/school/organization account
 
 **VSTS**
 
@@ -26,11 +27,10 @@ so your team can build often, test early, and ship faster.
 > [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
 > or learn [how to install and set up Team Foundation Server](../tfs-server/install/get-started.md). 
 
-
 [What users can join for free?  What do they get in VSTS?](faq-create-account.md#free-users)
 
-
 <a name="how-sign-up"></a>
+
 ##	What do I need to sign up for a VSTS account?
 
 *	To use only Microsoft accounts 
@@ -145,14 +145,14 @@ add code, work items, or more users.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
+	*	Git with [Eclipse](/vsts/java/download-eclipse-plug-in), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
-	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
+	[Android Studio](/vsts/java/download-android-studio-plug-in), 
+	[IntelliJ](/vsts/java/download-intellij-plug-in), 
 	[Visual Studio](../git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
+	*	TFVC using [Eclipse](/vsts/java/download-eclipse-plug-in), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](../tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)

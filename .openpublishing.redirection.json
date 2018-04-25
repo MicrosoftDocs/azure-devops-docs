@@ -2,6 +2,66 @@
     "redirections":
 	[
         {
+            "source_path": "docs/package/nuget/remove.md",
+            "redirect_url": "/vsts/package/unlist-delete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/requests.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/queues.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/qualities.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/definitions.md",
+            "redirect_url": "/rest/api/vsts/build/definitions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/builds.md",
+            "redirect_url": "/rest/api/vsts/build/builds",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/xamlbuild/overview.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/tags.md",
+            "redirect_url": "/rest/api/vsts/build/tags",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/definition-templates.md",
+            "redirect_url": "/rest/api/vsts/build/templates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/definitions.md",
+            "redirect_url": "/rest/api/vsts/build/definitions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/builds.md",
+            "redirect_url": "/rest/api/vsts/build/builds",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/integrate/api/build/overview.md",
+            "redirect_url": "/rest/api/vsts/build",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/integrate/get-started/rest/basics.md",
             "redirect_url": "/rest/api/vsts",
             "redirect_document_id": false
@@ -4804,6 +4864,101 @@
        {
         "source_path": "docs/git/concepts/pull-requests-overview.md",
         "redirect_url": "/vsts/git/pull-requests-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/tfs-server/admin/change-permission-levels.md",
+        "redirect_url": "/vsts/security/change-individual-permissions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/security/set-build-release-permissions.md",
+        "redirect_url": "/vsts/build-release/set-permissions",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-active-directory-vsts-account.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
+        "redirect_url": "/vsts/accounts/connect-account-to-aad",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-link-msdn-subscription-org-account.md",
+        "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-azure-billing.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-billing-setup.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/faq-pay-for-basic-users.md",
+        "redirect_url": "/vsts/billing/vsts-billing-faq",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/buy-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/vs-subscriptions/manage-vs-subscriptions.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/csp/buy-manage-vs-subs.md",
+        "redirect_url": "/visualstudio/subscriptions/vscloud-csp",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
+        "redirect_url": "/vsts/billing/change-number-paid-extension-users",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/marketplace/billing-overview.md",
+        "redirect_url": "/vsts/billing/overview",
+        "redirect_document_id": false
+       },
+       {
+        "source_path": "docs/billing/extensions.md",
+        "redirect_url": "/vsts/marketplace/overview",
         "redirect_document_id": false
        }
     ]

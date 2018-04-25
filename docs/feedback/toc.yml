@@ -18,7 +18,7 @@
     href: /vsts/manual-test/stakeholder/track-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
   - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
     href: /vsts/manual-test/stakeholder/voluntary-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
-  - name: Set feedback permissions
+  - name: "Set feedback permissions (Security)"
     href: give-permissions-feedback.md
   - name: Enable remote audio capture
     href: enable-remote-audio-capture.md
@@ -26,7 +26,7 @@
     href: change-audio-device-annotation-tool.md
 - name: Reference
   items:
-  - name: Default permissions and access set for collaboration tools 
+  - name: "Default permissions (Security)" 
     href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
   - name: Give us feedback, get support
     href: /vsts/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 

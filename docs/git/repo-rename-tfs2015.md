@@ -2,12 +2,16 @@
 title: Rename a Git repo in TFS 2015 | VSTS & TFS
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ---
+
 
 #  Rename a Git repository in TFS 2015
 #### TFS 2015 | VS 2017 | VS 2015

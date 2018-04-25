@@ -1,15 +1,17 @@
 ---
 title: Troubleshoot network connections and whitelist addresses
 description: Troubleshoot network connections and whitelist addresses in tightened down networks for Visual Studio
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 7c8ff784-ffc2-4378-bc29-a7e5632ab776
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 12/02/2017
+monikerRange: 'vsts'
 ---
-
-#	Troubleshoot network connections and whitelist addresses
+# Troubleshoot network connections and whitelist addresses
 
 **VSTS**
 

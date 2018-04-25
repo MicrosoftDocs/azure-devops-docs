@@ -1,9 +1,13 @@
 ---
 title: Post Import
 description: Guidance on how to validate and configure a Visual Studio Team Services (VSTS) account after it has been imported.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-article
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
+ms.manager: douge
+ms.author: elbatk
+author: elbatk
 ---
 
 # Post Import
@@ -14,7 +18,7 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 A Visual Studio Team Services (VSTS) account is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the account up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
 
 ## Immediately After Import
-Immediately after the account becomes available you will want to take a small team and perform spot checks on the account. It's recommended that this team consists of the project collection administrators. This shouldn’t be an in-depth check, but rather making sure that major pieces from your collection were brought over. Did your source code get imported? Are you seeing your build history? Are all of our area paths still present? It's best to confirm these artifacts are present before opening the account to the entirety of your user base. 
+Immediately after the account becomes available you will want to take a small team and perform spot checks on the account. It's recommended that this team consists of the project collection administrators. This shouldn't be an in-depth check, but rather making sure that major pieces from your collection were brought over. Did your source code get imported? Are you seeing your build history? Are all of our area paths still present? It's best to confirm these artifacts are present before opening the account to the entirety of your user base. 
 
 After spot checking the account you will want to consider if you want to rename it. [Renaming a VSTS account](../accounts/rename-vsts-account.md) is a simple operation, but it has [large impacts](https://support.microsoft.com/en-us/kb/2793597) on users currently using the account. Some examples being Team Explore connections breaking or bookmarks no longer working. Getting a rename out of the way while it's just a small group of users using the account allows the rest of the users to come in and configure their connections once. 
 
@@ -24,7 +28,7 @@ To pay for users or services in VSTS, like hosted build and deployment agents, y
 
 ## Manage Users and Access
 
-Your VSTS account includes 5 free users with [Basic](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://www.visualstudio.com/products/how-to-buy-vs) for free - they get basic features plus additional features, based on their subscription level. Add [Stakeholder](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for free, too—they can access your work items and view your backlogs.
+Your VSTS account includes 5 free users with [Basic](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://www.visualstudio.com/products/how-to-buy-vs) for free - they get basic features plus additional features, based on their subscription level. Add [Stakeholder](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for free, too-they can access your work items and view your backlogs.
 
 This means that you shouldn't have to take any other import steps if your identity mapping file has just 5 users with Basic access, Visual Studio subscriptions, and Stakeholder access. If you have more than 5 users with Basic access, you'll need to [pay for these users in your VSTS account](../billing/buy-basic-access-add-users.md). Just make sure to do this before the end of the calendar month when you import. Otherwise, these users' feature access will change from Basic to Stakeholder on the 1st day of the next calendar month. To find out how many additional users you'll need to pay for, visit your VSTS account (```https://{youraccount}.visualstudio.com/_user```) so you can find the number of paid users that you've assigned:
 

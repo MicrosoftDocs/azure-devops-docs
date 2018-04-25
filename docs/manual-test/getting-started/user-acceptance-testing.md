@@ -1,12 +1,15 @@
 ---
-title: User acceptance testing
+title: User acceptance testing - manual testing in VSTS
 description: Create and run user acceptance tests in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Perform user acceptance testing
@@ -23,9 +26,11 @@ feature in Visual Studio Team Services (VSTS) and Team
 Foundation Server (TFS).
 
 Typically you create a Test Suite using a formal 
-requirement work item type. However, today’s 
+requirement work item type. However, today's 
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Before you start
 

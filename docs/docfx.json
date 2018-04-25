@@ -5,6 +5,7 @@
         "files": [
           "**/*.md", "**/*.yml"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -24,6 +25,7 @@
           "**/*.mp4",
           "**/*.svg"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -36,18 +38,27 @@
       "uhfHeaderId": "MSDocsHeader-TeamServices",
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "brand": "vsts",
-      "searchScope": ["VSTS", "Visual Studio Team Services"],
-      "author": "douge",
+      "extendBreadcrumb": true,
+      "searchScope": ["VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
+      "author": "erickson-doug",
       "ms.author": "douge",
       "ms.date": "07/13/2017",
       "ms.prod": "vs-devops-alm",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:ALM",
-      "ms.prodfamily": "ALM"
+      "ms.prodfamily": "ALM",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/vsts-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"  
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "team-services"
+    "dest": "team-services",
+    "groups": {
+      "all": {
+        "dest": "all",
+        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
+      }
+    }
   }
 }

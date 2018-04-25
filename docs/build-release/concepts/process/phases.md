@@ -2,14 +2,17 @@
 title: Build and Release Automation Phases in VSTS and TFS
 description: Understand Build and Release Phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
-# Phases in Build and Release Management
+# Task phases for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017**
 
@@ -73,10 +76,18 @@ You can configure the following properties for an agent phase:
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
 
-* **Skip download of artifacts [Release (VSTS, TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
+* **Execution plan:** See [Parallel and multiple execution using agent phases](#parallelexec).
+
+* **Skip download of artifacts [Release (TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
+
+* **Select artifacts to download [Release (VSTS)]:** When used in a release definition, you can choose which of the
+  [artifacts](../definitions/release/artifacts.md#download) will be downloaded
+  during the job execution. Use this option if the tasks in a particular phase rely on only specific artifacts.
+
+  ![Selecting the artifacts to download](_img/select-artifacts.png)
 
 * **Allow scripts to access OAuth token [Release (VSTS, TFS 2017 and newer), Build (Planned)]** Use this option if you
   want to allow tasks running in this phase access to the
@@ -105,10 +116,12 @@ You can configure the following properties for an agent phase:
 
 You can use multiple agents to run parallel jobs if you configure an agent phase to be **Multi-configuration** or **Multi-agent**.
 
-Here are some examples where **multi-configuration** is appropriate:
+![Using the parallel execution options](_img/parallel-exec.png)
 
 > [!NOTE]
 > These options are available in Release (VSTS, TFS 2017 and newer) and Build (VSTS)
+
+Here are some examples where **multi-configuration** is appropriate:
 
 * **Multiple execution builds:** An agent phase can be used in a
   build definition to build multiple configurations in parallel. For
@@ -190,51 +203,18 @@ a maximum of four agents at any one time:
 <a name="server-phase"></a>
 ## Agentless phase
 
+<a name="maninterv"></a><a name="invokeapi"></a>
 Use an agentless phase in a build or release definition to run tasks that do
 not require an agent, and execute entirely on the VSTS or TFS.
-Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
-are supported in an agentless phase at present. The properties of
+Only a few tasks, such as the
+[Manual Intervention](../../tasks/utility/manual-intervention.md)
+and [Invoke REST API](../../tasks/utility/http-rest-api.md)
+tasks, are supported in an agentless phase at present. The properties of
 an agentless phase are similar to those of the [agent phase](#agent-props).
 
 ![Agentless phase properties](_img/phases-05.png)
 
-<a name="maninterv"></a>
-### The Manual Intervention task
-
->[!NOTE]
-> The manual intervention task is only available in release definitions. It cannot be used in build definitions.
-
-The **Manual Intervention** task does not perform deployment actions directly.
-Instead, it allows you to pause an active deployment within an environment, typically to perform some
-manual steps or actions, and then continue the automated deployment steps.
-
-The **Manual Intervention** task configuration includes an **Instructions** parameter that
-can be used to provide related information, or to specify the manual steps
-the user should execute during the Agentless phase. You can configure the task to
-send email notifications to users and user groups when it is awaiting intervention,
-and specify the automatic response (reject or resume the deployment) after a configurable
-timeout occurs.
-
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
-
-> You can use built-in and custom variables to generate portions of your instructions.
-
-When the Manual Intervention task is activated during a deployment, it sets
-the deployment state to **IN PROGRESS** and displays
-a message bar containing  a link that opens the
-Manual Intervention dialog containing the instructions.
-After carrying out the manual steps, the administrator
-or user can choose to resume the deployment, or reject it. Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
-
-<a name="invokeapi"></a>
-### The Invoke REST API task
-
-The **Invoke REST API task** task does not perform deployment actions directly.
-Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. For example,
-it can be used to invoke specific processing with an Azure function.
-
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
+>At present you can add only one task to each agentless phase in your release definition.
 
 ## Deployment group phase
 
@@ -255,7 +235,7 @@ capable of handling requests while the deployment is taking place.
 
 ![Dependency group properties](_img/depgroup-properties.png)
 
-The timeout and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
+The timeout, agent download, and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
 
 ## Multiple phases
 

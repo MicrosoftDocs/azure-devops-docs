@@ -7,7 +7,10 @@ ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Move or Clone Team Foundation Server from one hardware to another
 
@@ -119,7 +122,7 @@ To configure a new server or servers for TFS, you must first install and configu
 > [!NOTE]
 > Unlike installing a new deployment of TFS, you will not be able to install SharePoint Products as part of the Standard Single-Server or Advanced options when moving to a new server. You must manually install the same version and edition of SharePoint Products that you used in your previous deployment, or follow the guidance for your version and edition of SharePoint Products to move its deployment to the new hardware separately.
 
--   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
+-   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
 
     For more information, see [the system requirements for Team Foundation Server](../requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
 
@@ -163,7 +166,7 @@ If your deployment uses SharePoint Products, you've already installed the same v
 
 2.  Change directories to *Drive*:\\Program Files\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\bin and run stsadm.exe with the following parameters, where *SharePointFoundationServerName* is the name of the server where you installed SharePoint Foundation 2013, and *SQLServerName* is the name of the server where you restored the WSS\_Content database as part of restoring TFS databases:
 
-        stsadm.exe –o addcontentdb –url http://SharePointFoundationServerName/sites -databasename WSS_Content -databaseserver SQLServerName
+        stsadm.exe -o addcontentdb -url http://SharePointFoundationServerName/sites -databasename WSS_Content -databaseserver SQLServerName
 
 3.  After that command completes successfully, type the following command, where *Domain\\UserName* is the account you used to install and configure SharePoint Foundation 2013 for use with TFS:
 
@@ -201,7 +204,7 @@ Perform the next set of steps on the new application-tier server if you intend t
 
     ![Select the SQL Server and database backup set](_img/ic682729.png)
 
-3.  Before you close the final page of the wizard, look for the “i” symbol. It signifies information that you might want for future reference. The final page also includes the location of the configuration log.
+3.  Before you close the final page of the wizard, look for the "i" symbol. It signifies information that you might want for future reference. The final page also includes the location of the configuration log.
 
     ![Note any issues and the log file location](_img/ic688120.png)
 
@@ -322,7 +325,7 @@ Now that you've moved TFS, you'll need to tell your users how to connect to the 
 
 -   If they are members of a team project that uses Git, instructions for how to update every clone they have locally for every repository for that project. Specifically, they will have to run the following command for every clone:
 
-        git remote set-url <remote name> <new URL>
+        git remote set-url <remote name> <new URL>
 
     Users can see what the URL is for each clone by browsing the team project from the Explorer tab.
 

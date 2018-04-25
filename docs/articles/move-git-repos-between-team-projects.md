@@ -1,13 +1,14 @@
 ---
 title: Version Control - Move Git repositories between VSTS Team Projects
 description: Moving Git Repositories from one VSTS Team Project to another
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
-ms.manager: willys
+ms.manager: douge
 ms.date: 06/01/2016
 ms.author: willys
-author: willys
+author: wpschaub
 ---
 
 [comment]: <> (Document was created as part of our team project consolidation and validated with engineers / MVPs in the field.)
@@ -90,7 +91,7 @@ For detailed information on planning your team project collections and team proj
 
 > Authors: Jesse Houwing, Mike Fourie, and Willy Schaub
 
-*(c) 2016 Microsoft Corporation. All rights reserved. This document is
+*(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*

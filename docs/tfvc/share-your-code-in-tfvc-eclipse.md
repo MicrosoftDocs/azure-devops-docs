@@ -2,13 +2,16 @@
 title: Share your code in TFVC using Eclipse | VSTS
 description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Share your code in TFVC using Eclipse
 

@@ -1,12 +1,15 @@
 ---
 title: Set up continuous testing for your builds
 description: Set up continuous testing for your builds in VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Set up continuous testing for your builds
@@ -14,6 +17,13 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
+
+**NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+and run tests on platforms that don't have Visual Studio installed by using the 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+
+For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 
 ## Before you start
 
@@ -25,11 +35,12 @@ Find problems early after changes are checked in and built by running continuous
 
 1. In VSTS or TFS, go to your team project.
 
-1. Go to your build definition. Add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution:
+1. Go to your build definition and open it for editing.
 
    ![Edit build definition](_img/edit-build-definition.png)
-
-   ![Add a step to your build definition](_img/set-up-continuous-testing-builds/add-build-step.png)
+   
+1. Choose the **+** icon for the process phase and add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution
+   and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** steps:
 
    ![Add File Copy and PowerShell steps](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)
 
@@ -39,7 +50,7 @@ Find problems early after changes are checked in and built by running continuous
 
    * List of machines where you want to deploy your app
 
-   * Credentials to connect to the target machines  
+   * Credentials to connect to the target machines
 
    * Target folder where to put your app
 
@@ -53,7 +64,7 @@ Find problems early after changes are checked in and built by running continuous
    Using a variable means that you can change the list of machines in one place
    and have the change apply to all the tasks that use the variable.
 
-1. Add the details to deploy your app using PowerShell:
+1. Add the details to deploy your app using PowerShell.
 
    * List of machines where you want to deploy your app
 
@@ -69,7 +80,14 @@ Find problems early after changes are checked in and built by running continuous
 
 ## Set up test deployment for your build
 
-1. In your build definition, add a step with these details to deploy your tests:
+**NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
+and run tests on platforms that don't have Visual Studio installed by using the 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+
+If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
+
+1. In your build definition, add a **Window Machine File Copy** step with these details to deploy your tests:
 
    * Source folder for your tests
 
@@ -113,6 +131,8 @@ Find problems early after changes are checked in and built by running continuous
 
 ## See also
 
+* [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+* [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/)
 * [Set up environments for continuous testing with your builds](set-up-continuous-test-environments-builds.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
 * [Run tests with your builds](getting-started-with-continuous-testing.md)

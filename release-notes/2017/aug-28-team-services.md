@@ -2,8 +2,8 @@
 title: Customizable work item rules – VSTS Sprint 122 Update
 description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Update on August 28 2017 with customizable work item rules, forks, and work items hub.
 ms.ContentId: 1d14aa73-d447-4d5e-8ea4-f1890b1d5c29
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: alexn
 author: alexn
 ---

@@ -1,77 +1,126 @@
 ---
-title: Use the search box for quick queries | VSTS & TFS
-description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-wit
-ms.topic: get-started-article
+title: Use the search box for quick queries
+titleSuffix: VSTS & TFS
+description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Visual Studio Team Services & Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/28/2017
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
+ms.date: 03/20/2018  
 ---
 
 
 # Perform an adhoc search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
 You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
 
-<!---Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.-->
+Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
 
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="search-selector" /> 
 <a id="search-box" /> 
 ## Code search vs work item search
- 
-<!---
->[!NOTE]  
-><b>Feature availability: </b>You can add the Code Search extension to  [VSTS or by upgrading to TFS 2017](../../search/code/administration.md).   
+::: moniker-end
+::: moniker range=">= tfs-2017 <= tfs-2018"
+> [!NOTE]    
+><b>Feature availability: </b>You can add the Code Search extension or configure Work Item Search to [TFS 2017 or later versions](../../search/code/administration.md).   
 
-If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. -->
-
+If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
+::: moniker-end
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
-
-[!INCLUDE [temp](../_shared/search-box.md)]
 
 Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
 
+::: moniker-end
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-### VSTS and TFS 2017 
-![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
+[!INCLUDE [temp](../_shared/search-box.md)]
+
+::: moniker-end
+
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+ 
+> [!div class="mx-imgBorder"]
+![Search Work Items Text Box](_img/search-box/search-box-vsts.png)
 
 Click within the box to view the set of filters for [assignment,  workflow state](query-by-workflow-changes.md), [keyword, or work item type](titles-ids-descriptions.md). 
 
-### TFS 2015
+For example, enter ```A=@Me T=Task``` to list all tasks assigned to you.  
+
+::: moniker-end
+
+<!---
 ![Search Work Items Text Box](_img/using-queries-search-box.png)  
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment or workflow status](query-by-workflow-changes.md), [a keyword or work item type](titles-ids-descriptions.md). 
 
-For example, enter ```A=@Me T=Task``` to list all tasks assigned to you.  
-
-
+-->
 
 ## Use shortcut filters
 
-Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
-
-<table><tr><td>Context menu for search box (web portal)<p><img src="_img/example-search-box-queries/IC588318.png" alt="Search box shortcut menu (web portal)"></td><td>Context menu for search box (Team Explorer)<p><img src="_img/example-search-box-queries/IC588319.png" alt="Search box menu (Team Explorer)"></td></tr></table>
-
 You can enter or select one or more of the following shortcut identifiers:
 
--   `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`).
-
--   `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`).
-
--   `S` for = **S**tate, (for example, `S=New`).
-
+-   `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`)
+-   `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`)
+-   `S` for = **S**tate, (for example, `S=New`)
 -   `T` for = Work Item **T**ype, (for example, `T=Task`).
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
-Use the `=`, `:`, and `–` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+Use the `=`, `:`, and `"“` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+
+# [Browser](#tab/browser) 
+
+::: moniker range="vsts"
+
+> [!div class="mx-imgBorder"]  
+> ![Work search menu](_img/work-search-menu.png)   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+**With Work Item Search configured**
+
+> [!div class="mx-imgBorder"]  
+> ![Work search menu](_img/work-search-menu.png)   
+
+> [!NOTE]    
+> Work Item Search can be configured with TFS 2017.2 and later versions. To learn more, see [Set up and administer Microsoft Code Search and Work Item Search](../../search/code/administration.md). 
+
+**Without Work Item Search configured**
+
+> [!div class="mx-imgBorder"]  
+> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)   
+
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+
+> [!div class="mx-imgBorder"]  
+> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)    
+
+::: moniker-end
+
+# [Visual Studio](#tab/visual-studio)
+
+Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+
+> [!div class="mx-imgBorder"]  
+> ![Search box menu (Team Explorer)](_img/example-search-box-queries/IC588319.png) 
+
 
 Finding work items using the search box (Team Explorer)
 
@@ -79,7 +128,9 @@ Finding work items using the search box (Team Explorer)
 
 You can combine shortcuts and use search operators within the search box.
 
-In Team Explorer, use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+Use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+
+---
 
 <a id="keywords" /> 
 ## Find items based on keywords or phrases
@@ -116,12 +167,12 @@ To find work items based on a keyword or phrase contained within other text stri
 |Modified today.|`"Changed Date"=@Today`|  
 |Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test `|  
 
->[!NOTE]   
+> [!NOTE]     
 >Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item will not be found. However, if you search for the complete string `History:reproducible` the work item will be found.
 
 ## Use @Me or @Today macros
 
-The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
+The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
 
 <table width="100%">
 <tbody valign="top">
@@ -183,7 +234,7 @@ Use these search operators to specify search criteria:
 
 &#160;&#160;&#160;**=** (EQUALS) to search for exact matches of text.  
 &#160;&#160;&#160;**:** (CONTAINS) to search for partial matches of text.  
-&#160;&#160;&#160;**–** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
+&#160;&#160;&#160;**"“** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
 
 The following examples show how to use operators when you create a search string.
 
@@ -196,14 +247,14 @@ The following examples show how to use operators when you create a search string
 |Active bugs that are assigned to you that do not contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
 
 
-## Related notes
+## Related articles
 
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
-- [Use the query editor to list and manage queries](using-queries.md)   
+- [Create managed queries with the query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)     
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ### Does the search box support less than/greater than operators?
 

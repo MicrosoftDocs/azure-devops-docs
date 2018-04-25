@@ -7,21 +7,24 @@ ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
+monikerRange: '>= tfs-2013 < tfs-2017'
 ---
+
+
 
 # Manually back up Team Foundation Server
 
 **TFS 2015** | **TFS 2013**
 
-You can manually back up data for Visual Studio Team Foundation Server by using the tools that SQL Server provides. However, you might need to configure backups manually if your deployment has security restrictions that prevent use of that tool. To manually back up Team Foundation Server, you must not only back up all databases that the deployment uses, you must also synchronize the backups to the same point in time. You can manage this synchronization most effectively if you use marked transactions. If you routinely mark related transactions in every database that Team Foundation uses, you establish a series of common recovery points in those databases. If you regularly back up those databases, you reduce the risk of losing productivity or data because of equipment failure or other unexpected events.
+You can manually back up data for Visual Studio Team Foundation Server by using the tools that SQL Server provides. However, you might need to configure backups manually if your deployment has security restrictions that prevent use of that tool. To manually back up Team Foundation Server, you must not only back up all databases that the deployment uses, you must also synchronize the backups to the same point in time. You can manage this synchronization most effectively if you use marked transactions. If you routinely mark related transactions in every database that Team Foundation uses, you establish a series of common recovery points in those databases. If you regularly back up those databases, you reduce the risk of losing productivity or data because of equipment failure or other unexpected events.
 
 >**Caution:**  
->You should not manually modify any of the TFS databases unless you’re instructed to do so by Microsoft Support or you’re following the procedures described in this document. Any other modifications can invalidate your service agreement.
+>You should not manually modify any of the TFS databases unless you're instructed to do so by Microsoft Support or you're following the procedures described in this document. Any other modifications can invalidate your service agreement.
 
 The procedures in this topic explain how to create maintenance plans that perform either a full or an incremental backup of the databases and how to create tables and stored procedures for marked transactions. For maximum data protection, you should schedule full backups to run daily or weekly and incremental backups to run hourly. You can also back up of the transaction logs. For more information, see the following page on the Microsoft website: [Creating Transaction Log Backups](http://go.microsoft.com/fwlink/?LinkId=115465).
 
 >**Note:**  
->Many procedures in this topic specify the use of SQL Server Management Studio. If you installed SQL Server Express Edition, you cannot use that tool unless you download SQL Server Management Studio Express. To download this tool, see the following page on the Microsoft website: [Microsoft SQL Server 2008 Management Studio Express](http://go.microsoft.com/?linkid=9647069).
+>Many procedures in this topic specify the use of SQL Server Management Studio. If you installed SQL Server Express Edition, you cannot use that tool unless you download SQL Server Management Studio Express. To download this tool, see the following page on the Microsoft website: [Microsoft SQL Server 2008 Management Studio Express](http://go.microsoft.com/?linkid=9647069).
 
 
 **In this topic:**
@@ -60,7 +63,7 @@ To perform this procedure, you must be a member of all the following groups:
 
 -   The **Administrators** security group on the server that is running the administration console for Team Foundation.
 
--   The **SQL Server System Administrator** security group. Alternatively, your **SQL Server Perform Back Up and Create Maintenance Plan** permissions must be set to **Allow** on each instance of SQL Server that hosts the databases that you want to back up. 
+-   The **SQL Server System Administrator** security group. Alternatively, your **SQL Server Perform Back Up and Create Maintenance Plan** permissions must be set to **Allow** on each instance of SQL Server that hosts the databases that you want to back up. 
 
 -   The **Farm Administrators** group in SharePoint Foundation, or an account with the permissions required to back up the farm.
 
@@ -133,7 +136,7 @@ Before you begin, you should take the time to identify all the databases you wil
 
 ### To identify databases
 
-1.  Open **SQL Server Management Studio**, and connect to the database engine.
+1.  Open **SQL Server Management Studio**, and connect to the database engine.
 
 2.  In **SQL Server Management Studio**, in Object Explorer, expand the name of the server and then expand **Databases**.
 
@@ -164,7 +167,7 @@ To make sure that all databases are restored to the same point, you can create a
 
 ### To create tables to mark related transactions in databases that Team Foundation uses
 
-1.  Open **SQL Server Management Studio**, and connect to the database engine.
+1.  Open **SQL Server Management Studio**, and connect to the database engine.
 
 2.  In **SQL Server Management Studio**, highlight the name of the server, open the submenu, and then choose **New Query**.
 
@@ -196,7 +199,7 @@ To make sure that all databases are restored to the same point, you can create a
 
 7.  (Optional) Save the script.
 
-8.  Repeat steps 4−7 for every database in your deployment of TFS, except for those used by SharePoint Products. In the fictitious Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
+8.  Repeat steps 4-7 for every database in your deployment of TFS, except for those used by SharePoint Products. In the fictitious Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
 
     -   Tfs\_Warehouse
 
@@ -213,7 +216,7 @@ After the tables have been created in each database that you want to back up, yo
 
 ### To create a stored procedure to mark transactions in each database that Team Foundation Server uses
 
-1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
+1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
 
 2.  On the **SQL Editor** toolbar, open the **Available Databases** list, and then choose **TFS\_Configuration**.
 
@@ -233,7 +236,7 @@ After the tables have been created in each database that you want to back up, yo
 
 5.  (Optional) Save the procedure.
 
-6.  Repeat steps 2−5 for every TFS database.  In the Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
+6.  Repeat steps 2-5 for every TFS database.  In the Fabrikam, Inc. deployment, you would repeat this process for all of the following databases:
 
     -   Tfs\_Warehouse
 
@@ -253,11 +256,11 @@ To make sure that all databases are marked, you can create a procedure that will
 
 ### To create a stored procedure that will run all stored procedures for marking tables
 
-1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
+1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
 
 2.  On the **SQL Editor** toolbar, open the **Available Databases** list, and then choose **TFS\_Configuration**.
 
-3.  In the query window, create a stored procedure that executes the stored procedures that you created in each database that TFS uses. Replace *ServerName* with the name of the server that is running SQL Server, and replace *Tfs\_CollectionName* with the name of the database for each team project collection.
+3.  In the query window, create a stored procedure that executes the stored procedures that you created in each database that TFS uses. Replace *ServerName* with the name of the server that is running SQL Server, and replace *Tfs\_CollectionName* with the name of the database for each team project collection.
 
     In the example deployment, the name of the server is FABRIKAMPRIME, and there is only one team project collection in the deployment, the default one created when she installed Team Foundation Server (DefaultCollection). With that in mind, you would create the following script:
 
@@ -289,7 +292,7 @@ When you have a procedure that will run all stored procedures for table marking,
 
 ### To create a stored procedure to mark the tables in each database that Team Foundation Server uses
 
-1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
+1.  In **SQL Server Management Studio**, open a query window, and make sure that **SQLCMD Mode** is turned on.
 
 2.  On the **SQL Editor** toolbar, open the **Available Databases** list, and then choose **TFS\_Configuration**.
 
@@ -506,7 +509,7 @@ You can use the Maintenance Plan Wizard to schedule transaction log backups for 
 <a name="backup-encryption-key-for-reporting"></a>
 ## Back up the encryption key for reporting services
 
-You must back up the encryption key for Reporting Services as part of backing up your system. Without this encryption key, you will not be able to restore the reporting data. For a single-server deployment of TFS, you can back up the encryption key for SQL Server Reporting Services by using the Reporting Services Configuration tool. You could also choose to use the **RSKEYMGMT** command-line tool, but the configuration tool is simpler. For more information about **RSKEYMGMT**, see the following page on the Microsoft website: [RSKEYMGMT Utility](http://go.microsoft.com/fwlink/?LinkId=160686).
+You must back up the encryption key for Reporting Services as part of backing up your system. Without this encryption key, you will not be able to restore the reporting data. For a single-server deployment of TFS, you can back up the encryption key for SQL Server Reporting Services by using the Reporting Services Configuration tool. You could also choose to use the **RSKEYMGMT** command-line tool, but the configuration tool is simpler. For more information about **RSKEYMGMT**, see the following page on the Microsoft website: [RSKEYMGMT Utility](http://go.microsoft.com/fwlink/?LinkId=160686).
 
 ### To back up the encryption key by using the Reporting Services Configuration tool
 
@@ -605,7 +608,7 @@ To schedule your backups, you must use Windows Task Scheduler. In addition, you 
 <a name="backup-additional-lab-mgt"></a>
 ## Back up additional lab management components
 
-If you use Visual Studio Lab Management in your deployment of Team Foundation Server, you must also back up each machine and component that Lab Management uses. The hosts for the virtual machines and the SCVMM library servers are separate physical computers that are not backed up by default. You must specifically include them when you plan your backup and restoration strategies. The following table summarizes what you should back up whenever you back up Team Foundation Server.
+If you use Visual Studio Lab Management in your deployment of Team Foundation Server, you must also back up each machine and component that Lab Management uses. The hosts for the virtual machines and the SCVMM library servers are separate physical computers that are not backed up by default. You must specifically include them when you plan your backup and restoration strategies. The following table summarizes what you should back up whenever you back up Team Foundation Server.
 
 | Machine | Component |
 | --- | --- |

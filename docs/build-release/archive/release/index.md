@@ -1,12 +1,15 @@
 ---
 title: Version selector for Microsoft Release Management
 description: Version selector for Microsoft Release Management for Visual Studio, VSTS, and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/19/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2013'
 ---
 
 # Release Management for Visual Studio, VSTS, and Team Foundation Server

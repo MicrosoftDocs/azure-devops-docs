@@ -1,21 +1,22 @@
 ---
 title: Add work item types to backlogs and boards   
 titleSuffix: VSTS & TFS
-description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards when working with team projects that connect to Visual Studio Team Services (VSTS) Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
 
-#Add a work item type to a backlog and board
+# Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).   
@@ -26,7 +27,7 @@ For example, you may want to track different types of requirements based on thei
 
 ![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](_img/ALM_AWB_Intro.png)
 
->[!TIP]  
+> [!TIP]  
 >If all you want to do is add bugs to your backlogs and boards, see [Show bugs on backlogs and boards](show-bugs-on-backlog.md) to make your team's selection. If you want to add another WIT and portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</p>
 
 
@@ -35,14 +36,14 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 - [Add a WIT to track as tasks](#wits-as-tasks)
 - [Add a WIT to the Bug Category](#wits-as-bugs)
 
->[!NOTE]  
+> [!NOTE]    
 >We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](show-bugs-on-backlog.md). 
 
 <a id="first-steps">  </a>
 ##First steps
 
 ###Hosted XML process model customization sequence  
->[!NOTE]  
+> [!NOTE]    
 >Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](process/customize-process-wit.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
@@ -472,7 +473,7 @@ Use these commands to export and import WITs, categories, and process configurat
 	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 
 
-##Related notes  
+## Related articles  
 We've just shown how to add another WIT to your backlogs or boards. However, if you want to add another WIT to act as a portfolio backlog, see [Add portfolio backlogs](add-portfolio-backlogs.md).
 
 See [Customize your work tracking experience](customize-work.md) for an overview of all the options available for customizing work tracking objects. 

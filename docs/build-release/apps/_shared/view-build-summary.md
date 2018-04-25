@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 1. Once the build completes, select the build number to view a summary of the build.
 
  ![Navigate to build summary](_img/navigate-to-build-summary.png)

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You want to package and publish some projects in a C# class library to your VSTS feed.
 
 ```

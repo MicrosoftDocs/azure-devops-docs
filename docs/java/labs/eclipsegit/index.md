@@ -6,7 +6,9 @@ ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Clone a VSTS Git repo using Eclipse
 

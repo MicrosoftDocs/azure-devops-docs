@@ -1,25 +1,28 @@
 ---
-title: Manage new form roll out| VSTS    
-description: Enable and choose the roll out option of the new work item form for customizing the work tracking experience on the web portal when connecting to VSTS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Manage new form roll out
+titleSuffix: TFS    
+description: Enable the new work item form for customizing the work tracking experience in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2017 <= tfs-2018'
 ms.date: 03/16/2017
 ---
 
 # Manage roll out of the new web form
 
 
-**VSTS | TFS 2018 | TFS 2017**  
+**TFS 2018 | TFS 2017**  
 
->[!IMPORTANT]  
->**Feature availability:**&#160;&#160;The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
+> [!IMPORTANT]  
+> **Feature availability:** The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
 > - For users of VSTS that use the [Inheritance process model](process/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For on-premises TFS 2017 users, the new form is automatically available when you add team projects to a collection. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
-> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.    
+> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
 
@@ -36,9 +39,9 @@ You enable the new form from the project collection admin page.
 1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the team project collection.  
 
 	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
-<!---   
+<!--- 
 	![Open admin context](../_img/icons/ALM_OpenAdminContext.png)  
- -->
+ -->
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
@@ -120,7 +123,7 @@ If you find that you need to revert to the old WIT forms, you can do so.
 Disabling the new form will remove the **WebLayout** section from the XML definition files for all WITs defined within all team projects in the collection.  
 
 
-##Related notes
+## Related articles
 
 - [New work item experience](process/new-work-item-experience.md) 
 - [Customize the new form](customize-wit-form.md)  
@@ -130,7 +133,7 @@ Disabling the new form will remove the **WebLayout** section from the XML defini
 
 A best-effort transformation is made to maintain the field groupings and layout of your customized WIT definitions. The following types of transformations are made:  
 
-**Transformed or added elements **  
+**Transformed or added elements**  
 
 <ul>
 <li>If you have a **Layout** with ```Target=Web```, it is transformed to the **WebLayout** definition</li>
@@ -141,28 +144,28 @@ A best-effort transformation is made to maintain the field groupings and layout 
 <li>All **HTMLFieldControl** and **WebPageControl** elements are moved to the first **Section** within a **Page**. </li>
 </ul>
 
-**Removed elements and attributes **  
+**Removed elements and attributes**  
 
 <ul>
 <li>All **Splitter** elements are removed </li>
 <li><p>All elements within the form header and **Control** elements with the following type designations are removed from the **WebLayout** section:</p>
 <ul>
-<li>```AttachmentsControl```   </li>
-<li>```LinksControl``` </li>
-<li>```WorkItemClassificationControl```   </li>
+<li>```AttachmentsControl```</li>
+<li>```LinksControl``` </li>
+<li>```WorkItemClassificationControl```</li>
 <li>```WorkItemLogControl```</li>
 </ul>
 <p>They aren't required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
 </li>
-<li><p>The following attributes are removed from each **Control** and **Group** elements:</p>
+<li>The following attributes are removed from each **Control** and **Group** elements:
 <ul>
-<li>```ControlSpacing```   </li>
-<li>```FixedWidth``` </li>
+<li>```ControlSpacing```</li>
+<li>```FixedWidth``` </li>
 <li>```LabelSpacing```</li>
-<li>```Margin``` </li>
-<li>```MinimumSize```  </li>
+<li>```Margin``` </li>
+<li>```MinimumSize```</li>
 <li>```Padding```</li>
-<li>```PercentWidth``` </li>
+<li>```PercentWidth``` </li>
 </ul>
 </li>
 </ul>

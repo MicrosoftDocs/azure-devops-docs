@@ -7,7 +7,10 @@ ms.assetid: 8278b2af-1733-4b6a-a548-ad2cae4b0cab
 ms.manager: douge
 ms.author: douge
 ms.date: 09/26/2016
+monikerRange: '>= tfs-2013 < tfs-2018'
 ---
+
+
 
 # Open Team Foundation Server administration console
 

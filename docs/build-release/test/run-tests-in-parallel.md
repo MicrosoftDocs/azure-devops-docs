@@ -1,12 +1,15 @@
 ---
-title: Run tests in parallel
+title: Run your continuous tests in parallel in VSTS
 description: Continuous testing. Run tests in parallel
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 15058765-2654-4E36-B2C7-DE3F2DE68C8D
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Run tests in parallel
@@ -49,7 +52,7 @@ Parallel Test Execution is **not** supported in the following cases:
 
 ## Enable parallel tests in Visual Studio 2017 Update 1 and VS Test task v1.x
 
-Configure a [.runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+Configure a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 in the app source repository for Visual Studio IDE or the CLI, and in VSTS when using
 version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 task.

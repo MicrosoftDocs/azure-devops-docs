@@ -1,18 +1,19 @@
 ---
-title: Manage documents and document libraries | TFS
-description: Create documents libraries and share to all team members by uploading them to the project portal for the team project - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Manage documents and document libraries 
+titleSuffix: TFS
+description: Create documents libraries and share to all team members by uploading them to the project portal for the team project - Team Foundation Server 
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
-ms.topic: get-started-article
+ms.topic: conceptual
 ---
 
 # Manage documents and document libraries
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can share documents and files that you want to make available to all team members by uploading them to the project portal for your team project. You can create document libraries and organize the files that you upload to your project portal within those libraries, in addition to folders and subfolders. The folders and subfolders always appear in alphabetical order.  
   

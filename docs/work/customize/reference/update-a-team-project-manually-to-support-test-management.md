@@ -2,11 +2,11 @@
 title: Update a team project manually to support test management 
 titleSuffix: TFS
 description: Update a team project manually to support test management.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -15,7 +15,7 @@ ms.date: 12/15/2017
 
 **TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to a team project that is defined on an on-premises Team Foundation Server (TFS)and was created using a process template that doesn't have test plans and test suites work item types.    
 
 When you upgrade your existing on-premises deployment to Team Foundation Server (TFS) 2013.3, you have the ability to customize test plans and test suites because these objects are now remodeled as work item types (WITs).  
@@ -72,11 +72,11 @@ The following steps provide support for the test experience available with TFS 2
 		> [!div class="tabbedCodeSnippets"]
 		```XML  
         <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
-            <DEFAULTWORKITEMTYPE name="Test Plan" />  
-          </CATEGORY>  
-          <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
-            <DEFAULTWORKITEMTYPE name="Test Suite" />  
-          </CATEGORY>  
+               <DEFAULTWORKITEMTYPE name="Test Plan" />  
+          </CATEGORY>  
+          <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
+               <DEFAULTWORKITEMTYPE name="Test Suite" />  
+          </CATEGORY>  
         ```  
   
     3.  Add the new WITs to the hidden categories.  
@@ -150,5 +150,5 @@ The following steps provide support for the test experience available with TFS 2
   
  For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md).
 
-## Related notes
+## Related articles
 - [Manage TFS server configuration with TFSConfig](../../../tfs-server/command-line/tfsconfig-cmd.md)

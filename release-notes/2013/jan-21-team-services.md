@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Service updates - Jan 21
 description: VSTS release notes for January 21 2013
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: d5e11b3d-9e8d-4964-ba4e-821ff1a00a49
 ms.date: 06/01/2016

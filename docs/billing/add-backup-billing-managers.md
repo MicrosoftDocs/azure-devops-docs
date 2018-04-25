@@ -1,42 +1,52 @@
 ---
-title: Add backup billing managers for your VSTS account
-description: Add backup billing managers for your VSTS account
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+title: Add a a user who can purchase for your VSTS account
+description: Add a backup user or other billing manager who can buy via the Visual Studio Marketplace for your VSTS account (Visual Studio Team Services)
+ms.prod: devops
+ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 1/29/2018
+author: chcomley
+ms.date: 04/18/2018
 ---
+[//]: # (monikerRange: 'vsts')
 
-#  Add backup billing managers for your VSTS account
+# Add a user who can purchase for your VSTS account
 
 **VSTS**
 
+To let another user manage billing or make purchases through Visual Studio Marketplace for your VSTS account,
+add [**owner**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner), [**contributor**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that's linked to your VSTS account.
 
+1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 
-To let others manage billing or make purchases through Visual Studio Marketplace for your VSTS account, 
-add **owner** or **contributor** roles to users in the Azure subscription that's linked to your VSTS account.
+2. Enter *subscriptions* into the search box, select **Subscriptions** from the dropdown menu, and if there are more than one, choose the subscription to modify.
 
-For for information on billing, see [VSTS billing overview](overview.md).
+   ![Choose the subscription you want to modify for backup billing manager](_img/add-backup-billing-manager/choose-subscription-to-modify.png)
 
+3. Choose **Access control (IAM)** and then **Add**.
 
-[Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
+   ![Choose access control and then add](_img/add-backup-billing-manager/choose-access-control-and-then-add.png)
 
-Choose the Subscriptions blade, and if there are more than one, choose the subscription to modify.
+4. From the dropdown menus, select the *role* to add members to and select an *assignment* type.
 
-Then in the IAM screen (shown below) follow the numbered steps:
+   ![Choose a role and select an assignment type](_img/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
-![access control adding owners and contributors](_img/set-up-billing/ap-add-owncontrib.png)
+5. Select a user or group by entering their *name* or *email* (select a device by entering its *name*).
 
-Owners and contributors of the Azure subscription linked to your VSTS account can make purchases in the 
-Marketplace.  Owners can also add these roles to other users.
+   ![Select user or group or device by entering name or email](_img/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
 
-Learn more about [viewing access level assignments for users](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-assignments#view-access-assignments).
+6. If your update is complete, choose **Save**.
 
-If needed, you can [pay for more users](buy-basic-access-add-users.md).
+A backup billing manager is added to your VSTS account.
 
-Learn more about [adding roles in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure#add-access).
+>[!Note]
+>If you're giving access to a user who isn't already in your directory, this user must accept their invitation, received via email, before they have access to the Azure subscription.
 
+## Related articles
 
-[Troubleshooting](faq-billing-setup.md)
+* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Change the Azure subscription for billing](change-azure-subscription.md)
+* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [VSTS billing support](https://www.visualstudio.com/team-services/support/)

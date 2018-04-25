@@ -1,17 +1,19 @@
 ---
-title: Configure initial groups, teams, members, and permissions | VSTS & TFS
-description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Configure initial groups, teams, members, and permissions
+titleSuffix: VSTS & TFS
+description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions in Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a team project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   
@@ -112,22 +114,22 @@ The following table describes the attributes for the **group**, **member**, and 
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <group name="Dream Team" isTeam="true" description="Next generation work">  
-   <permissions>  
-      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
-   </permissions>  
-   <members>  
-      <member name="@creator"/>  
-   </members>  
-   <teamSettings areaPath="Area">  
-      <iterationPaths backlogPath="Iteration">  
-         <iterationPath path="Release 1\Sprint 1" />  
-         <iterationPath path="Release 1\Sprint 2" />  
-         <iterationPath path="Release 1\Sprint 3" />  
-         <iterationPath path="Release 1\Sprint 4" />  
-         <iterationPath path="Release 1\Sprint 5" />  
-         <iterationPath path="Release 1\Sprint 6" />  
-      </iterationPaths>  
-   </teamSettings>  
+      <permissions>  
+      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
+      </permissions>  
+      <members>  
+      <member name="@creator"/>  
+      </members>  
+      <teamSettings areaPath="Area">  
+      <iterationPaths backlogPath="Iteration">  
+         <iterationPath path="Release 1\Sprint 1" />  
+         <iterationPath path="Release 1\Sprint 2" />  
+         <iterationPath path="Release 1\Sprint 3" />  
+         <iterationPath path="Release 1\Sprint 4" />  
+         <iterationPath path="Release 1\Sprint 5" />  
+         <iterationPath path="Release 1\Sprint 6" />  
+      </iterationPaths>  
+      </teamSettings>  
 </group>  
 ```  
   
@@ -265,7 +267,7 @@ The following table describes the permissions that you can assign to control acc
 |**DELETE**|**Delete this node**. Can delete iteration nodes.<br /><br /> Users who have both this permission and the GENERIC_WRITE permission for another node can delete iteration nodes and reclassify existing work items from the deleted node. If the deleted node has child nodes, those nodes are also deleted.|  
 |**GENERIC_WRITE**|**Edit this node**. Can set permissions for iteration nodes and rename nodes.|  
   
-## Related notes 
+## Related articles 
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](../../../../tfs-server/admin/setup-ad-groups.md)   

@@ -2,11 +2,14 @@
 title: Guidance on Microsoft Test Manager usage
 description: Manual and exploratory testing - Guidance on Microsoft Test Manager usage
 ms.assetid: 3ED737AC-6310-472D-8C54-4FF4FEFE66C9
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Guidance on Microsoft Test Manager usage
@@ -37,6 +40,8 @@ and others). You can easily get started with using manual testing
 features right from your Kanban board, and use the **Test hub**
 for more advanced manual testing capabilities. 
 This topic shows new capabilities introduced in the **Test hub**. 
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ### Test planning
 

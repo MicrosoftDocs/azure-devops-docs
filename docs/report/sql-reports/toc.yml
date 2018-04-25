@@ -25,7 +25,7 @@
       href: ../admin/add-a-report-server.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
     - name: Upload reports to a team project
       href: ../admin/upload-reports.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
-    - name: Grant permissions to view or create reports
+    - name: Set permissions to view or create reports
       href: ../admin/grant-permissions-to-reports.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
     - name: Review team activities
       href: ../admin/review-team-activities-for-useful-reports.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
@@ -150,6 +150,8 @@
     href: ../admin/resolve-schema-conflicts.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: VSTS/TFS Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration (TFS)

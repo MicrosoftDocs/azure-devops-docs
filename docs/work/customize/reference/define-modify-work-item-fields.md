@@ -1,11 +1,11 @@
 ---
 title: Field data types and field attributes | VSTS & TFS  
 description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 09/08/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 09/08/2017
 
 # Field data types and attributes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a team project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
@@ -36,7 +36,7 @@ The following list shows the supported data types:
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attribute. </p>
 
-<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>      
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>
 
 </td></tr>
 <tr>
@@ -96,7 +96,7 @@ The following list shows the supported data types:
 Some field values are especially useful for reporting. By using the work item type definition language, you can specify the following optional attributes.
 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: Reportable attributes are only supported for the On-premises XML process model. These attributes aren't referenced and aren't subject to modification when you use the Hosted XML process model.  
 
 -    **reportable**: Set the reportable attribute to **None**, **Detail**, **Dimension**, or **Measure**, depending on whether and how you want the field to be included in reports. Data from fields that have a value other than **None** for this attribute are exported to the data warehouse and can be included in reports.
@@ -117,16 +117,16 @@ For information about best practices in labeling fields for reporting purposes, 
 
 As the following table describes, you can assign one of the following values to the **reportable** attribute: none, dimension, detail, and measure.
 
->[!NOTE]   
->You can make a field reportable after it has been used for a work item. After you set the reportable value, new revisions of the work item that are copied to the warehouse will contain the field value. However, the revisions that are already in the warehouse will not be backfilled with the existing values.
+> [!NOTE]     
+> You can make a field reportable after it has been used for a work item. After you set the reportable value, new revisions of the work item that are copied to the warehouse will contain the field value. However, the revisions that are already in the warehouse will not be backfilled with the existing values.
 
-
-|Attribute value|Description|
-|---|---|
-| **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br /><br />The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
-| **Dimension** |Use the **Dimension** type only for Integer, String, or DateTime fields.<br /><br />The data in this field enters the relational warehouse database and the Analysis Services cube as an attribute of the Work Item dimension so that the data can be used to filter reports. Use this type for fields that have lists of valid values. Work Item Type and State are good examples of a dimension.|
-| **Measure** |Use the **Measure** type only for Integer and Double fields. Measures are the numeric values in your reports.<br /><br />During processing of the Analysis Services cube, data is precalculated on fields that are set to **Measure**. For example, the Work Item and Current Work Item measure groups contain cumulative data for the following fields: Original Estimate, Remaining Hours, and Completed Hours. For more information about measure groups, see [Perspectives and measure groups provided in the Analysis Services cube](../../../report/sql-reports/perspective-measure-groups-cube.md).<br /><br />When you specify **Measure**, you must specify **sum** for the **formula** attribute, which returns the sum of each measure referenced in the query.|
-| **None** |Specify **None** when you do not want to include the field in reports. This value is the default assignment.|
+> [!div class="mx-tdCol2BreakAll"]  
+> |Attribute value|Description|
+> |---|---|
+> | **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br/><br/>The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
+> | **Dimension** |Use the **Dimension** type only for Integer, String, or DateTime fields.<br /><br />The data in this field enters the relational warehouse database and the Analysis Services cube as an attribute of the Work Item dimension so that the data can be used to filter reports. Use this type for fields that have lists of valid values. Work Item Type and State are good examples of a dimension.|
+> | **Measure** |Use the **Measure** type only for Integer and Double fields. Measures are the numeric values in your reports.<br /><br />During processing of the Analysis Services cube, data is precalculated on fields that are set to **Measure**. For example, the Work Item and Current Work Item measure groups contain cumulative data for the following fields: Original Estimate, Remaining Hours, and Completed Hours. For more information about measure groups, see [Perspectives and measure groups provided in the Analysis Services cube](../../../report/sql-reports/perspective-measure-groups-cube.md).<br /><br />When you specify **Measure**, you must specify **sum** for the **formula** attribute, which returns the sum of each measure referenced in the query.|
+> | **None** |Specify **None** when you do not want to include the field in reports. This value is the default assignment.|
 
 ### Syntax examples 
 
@@ -161,7 +161,7 @@ Predefined fields defined by the default process templates that TFS provides beg
 For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../../collaborate/naming-restrictions.md).
 
 
-## Related notes
+## Related articles
 - [Add or modify a field](../add-modify-field.md)  
 - [Manage work item fields (witadmin)](witadmin/manage-work-item-fields.md)   
 - [Apply a field rule](apply-rule-work-item-field.md)

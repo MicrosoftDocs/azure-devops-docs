@@ -1,8 +1,8 @@
 ---
 title: Improved commit traceability, custom multiline fields, and board/test integration - Mar 24
 description: VSTS release notes for March 24 2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 82e1be4f-ab46-40e1-a3f2-ad8fb9e18a67
 ms.date: 06/01/2016

@@ -3,8 +3,8 @@
 
 You can use the following keyboard shortcuts when [managing or editing Wiki pages](/vsts/collaborate/add-edit-wiki). To view the valid shortcuts, enter **Shift+?** from the **Wiki** hub or when editing a wiki page. 
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS.  
+> [!NOTE]  
+> **Feature availability**: The following shortcuts are available from the web portal for VSTS.  
 
 <table width="70%">
 <tbody valign="top">
@@ -31,4 +31,3 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 </tr>
 </tbody>
 </table>
-

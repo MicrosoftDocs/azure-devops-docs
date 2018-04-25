@@ -1,24 +1,24 @@
 ---
 title: Configure features after an upgrade 
 description: Configure features after an upgrade to  the application-tier server of Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: A71B6DD4-2780-4B61-B863-03BBE44AC953
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/16/2017
 ---
 
 # Configure features after an upgrade
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT] 
+> [!IMPORTANT] 
 >**Feature availability**: This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).  
 
 After a TFS upgrade, you'll want to use the new features that were installed. Some of these features might require updates to your team project. The Configure Features wizard is the easiest way to make this happen. 
 
->[!NOTE]  
+> [!NOTE]    
 >If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>
 If you need to upgrade TFS, [go to the downloads page](https://www.visualstudio.com/downloads/). <br/> 
 If you have several team projects to update, you can [apply updates programmatically](#program-updates).  
@@ -36,7 +36,8 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Configure features, list of features configured or not configured](_img/ALM_CFW_ConfigFeatures.png)
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).    </blockquote>  
+	> [!NOTE]  
+	> If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the team project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).
 
 	The features listed depend on the TFS version of software installed. To get the latest features, upgrade your server to the latest version. 
 
@@ -56,7 +57,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	Occasionally, the wizard will partially update your team project and return error messages that require resolution. Make a note of the errors that you receive and perform [manual updates to resolve each error](https://msdn.microsoft.com/library/hh913787.aspx).  
 
-##Apply updates manually
+## Apply updates manually
 <a id="ApplyUpdatesManually">   </a>
  
 When the wizard can't update a team project, it returns a message indicating that there are no process templates available to support the update. 
@@ -132,27 +133,20 @@ The Configure Features wizard depends on the following objects to run and to suc
 
 
   * For each field defined for a team project collection, the following attributes must match:
-
       * Friendly name
-
       * Data type
-
       * Assignment to synchronize personal names with Active Directory (syncnamechanges).
-
       * Reporting attributes: reporting reference name, reporting name, reporting type, and reporting format
 
   * Reference names assigned to fields and link types must be unique within a team project collection. 
-
-
   * Friendly names of the categories must be unique within a team project.
-
   * Certain work item types (WITs) and categories are required for the wizard to configure a feature. If you have renamed or deleted any of these WITs or categories, the wizard will return the following messages: 
 
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```There are no process templates available with valid configuration settings for this team project.```
+	```There are no process templates available with valid configuration settings for this team project.```
 
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```Your team project cannot be configured automatically.```  
+	```Your team project cannot be configured automatically.```  
 
-	You will have to rename or reinstate the missing WITs or categories to your team project, and then rerun the wizard. Or, you can modify the process templates to add the features and then rerun the wizard. 
+	You'll have to rename or reinstate the missing WITs or categories to your team project, and then rerun the wizard. Or, you can modify the process templates to add the features and then rerun the wizard. 
 
 If any conflicts occur, you will need to [resolve the error message you receive](https://msdn.microsoft.com/library/hh913787.aspx).
 

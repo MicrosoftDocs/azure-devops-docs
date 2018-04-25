@@ -1,19 +1,20 @@
 ---
 title: Set project-level or collection-level permissions for VSTS & TFS
 description: How-to guide to set project-level permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: chcomley
+author: chcomley
+ms.topic: quickstart
 ms.date: 12/12/2017
+monikerRange: '>= tfs-2013'
 ---
 
+# Quickstart: Add administrators, set permissions at the project-level or project collection-level
 
-# Add administrators, set permissions at the project-level or project collection-level
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Several permissions are set at the team project or at the account/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.    
 
@@ -42,11 +43,17 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
-* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.  
-* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow.  
+::: moniker range="vsts"
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-account-users-assign-access-levels.md). 
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
+::: moniker-end
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the team project, you are automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the account or collection, you are automatically added as a member of this group. 
 
 <a id="project-level" />
+
 ## Add a user or group to a security group
 
 As roles and responsibilities change, you might need to change the permission levels for individual members of a team project. The easiest way to do that is to add the user or a group of users to a pre-defined security group. 
@@ -54,8 +61,6 @@ As roles and responsibilities change, you might need to change the permission le
 Here we show how to add a user to the built-in Project Administrators group. The method is similar to adding an Azure Active Directory or Active Directory group. 
 
 0. Open the admin context from the user/team project context, click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
-
-	If you don't have a team project yet, create one in [VSTS](../user-guide/sign-up-invite-teammates.md). 
 
 0. Click the security group, Project Administrators, and then click Members, and then click **Add**.  
 
@@ -72,7 +77,6 @@ Here we show how to add a user to the built-in Project Administrators group. The
  
 	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 1px solid #C3C3C3;" /> 
 
-
 ## Change the permission level for a project-level group 
 
 0. To open the admin context from the user/team project context, click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
@@ -82,6 +86,9 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
 	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 1px solid #C3C3C3;" />  
+
+	> [!TIP]   
+	> In general, if you add a user to the Contributors group, they will be able to add and modify work items. You can restrict permissions of users or user groups to add and modify work items based on the area path. For details, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 	For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
@@ -118,7 +125,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 > [!NOTE]   
 > You can't change the permission settings for the Project Collection Administrators group. This is by design.  
 
-##On-premises TFS 
+## On-premises TFS
 
 For on-premises TFS, see these additional topics: 
 

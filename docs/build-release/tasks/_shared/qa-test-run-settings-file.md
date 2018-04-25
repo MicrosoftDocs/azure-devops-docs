@@ -1,6 +1,10 @@
+---
+ms.topic: include
+---
+
 #### Where can I get more information about the Run Settings file?
 
-See [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)
+See [Configure unit tests by using a .runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 
 #### Where can I get more information about overriding settings in the Run Settings file?
 

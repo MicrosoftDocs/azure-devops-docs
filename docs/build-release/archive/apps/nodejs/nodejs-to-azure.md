@@ -1,13 +1,17 @@
 ---
 title: CI build Node.js app
 description: Set up a continuous integration (CI) build for your Node.js app in VSTS or Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid:
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/04/2016
+monikerRange: 'tfs-2017'
 ---
+
 
 # Define a continuous integration build for your Node.js app
 
@@ -132,6 +136,8 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 The gulpfile.js script zips up the app so it can be deployed to Azure. The web.config file enables running the app on Azure. The .gitignore file keeps build artifacts on your dev machine from getting into your Git repo.
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

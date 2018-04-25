@@ -2,11 +2,14 @@
 title: How to provision agents for deployment groups
 description: How to provision agents for deployment groups using Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2018'
 ---
 
 # How To: Provision agents for deployment groups
@@ -29,7 +32,8 @@ For information about agents and pipelines, see:
 * [Concurrent pipelines in VSTS](../../../licensing/concurrent-pipelines-ts.md).
 * [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
-<a name="runscript"></a>  
+<a name="runscript"></a>
+
 ## Run the installation script on the target servers
 
 1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
@@ -46,6 +50,10 @@ For information about agents and pipelines, see:
 
    - Open an Administrator PowerShell command prompt, paste in the script you copied, then execute it to register the machine with this group.
  
+   - If you get an error when running the script that a secure channel could not be created, execute this command at the Administrator PowerShell prompt:
+
+     `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12` 
+   
    - When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
 
      > Tags you assign allow you to limit deployment to specific servers when 
@@ -57,7 +65,8 @@ For information about agents and pipelines, see:
 
 1. In the **Deployment groups** page of the **Build &amp; Release** hub, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
  
-<a name="azureext"></a>  
+<a name="azureext"></a>
+
 ## Install the VSTS Agent Azure VM extension
 
 1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
@@ -84,7 +93,8 @@ For information about agents and pipelines, see:
 
 1. Add the extension to any other VMs you want to include in this deployment group.
 
-<a name="deploytask"></a>  
+<a name="deploytask"></a>
+
 ## Use the Azure Resource Group Deployment task
 
 You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)

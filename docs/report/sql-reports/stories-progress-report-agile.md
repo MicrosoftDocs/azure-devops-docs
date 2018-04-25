@@ -1,11 +1,13 @@
 ---
-title: Stories Progress Report (Agile) | TFS
+title: Stories Progress Report (Agile) 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Lists all user stories, filtered by product area and iteration in order of importance.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

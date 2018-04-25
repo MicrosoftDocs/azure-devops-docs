@@ -1,21 +1,21 @@
 ---
-title: Add, run, and update inline tests | VSTS  
-description: Add, run, and update manual test cases via the inline test feature on your Kanban board for lightweight tracking and traceability when working in Visual Studio Team Services (VSTS)    
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Add, run, and update inline tests
+titleSuffix: VSTS & TFS  
+description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
-ms.date: 10/10/2017
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
+monikerRange: '>= tfs-2017'
+ms.date: 03/20/2018
 ---
 
 #Add, run, and update inline tests
 
 [!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
 
->[!NOTE]  
-><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017 and later versions.   
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
@@ -97,7 +97,7 @@ This action automatically changes the linked relationship of the test to point t
 To create a copy of a test to add to a different user story, select the test, press the CTRL key and then drag and drop the test onto the card of the user story.  
 
 
-## Related notes
+## Related articles
 
 Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support. To learn more about test case management, see [Create manual tests](../../manual-test/getting-started/create-test-cases.md).  
 
@@ -115,7 +115,13 @@ To initate web-based exploratory testing for a user story, you need to install t
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, the Kanban board shows the correct status. However, integration is not optimized to work in the other direction; for example, when users create requirement-based suites with Test Manager instead of in the Kanban board. We intend to make some major performance improvements to this integration in future releases.
 
 
-### REST API resources
-To programmatically create test cases, see the [Test management (REST API reference)](/vsts/extend/overview).
+<!---
+
+> [!NOTE]   
+> Running inline tests from the Kanban board is a supported feature in TFS 2017 and later versions. 
 
 
+> [!NOTE]    
+><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017 and later versions.  
+
+-->

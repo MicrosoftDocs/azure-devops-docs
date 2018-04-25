@@ -1,17 +1,20 @@
 ---
-title: Storyboard your ideas | VSTS & TFS  
-description: Turn your ideas and goals into something visual using the TFS Storypoint add-in to PowerPoint  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Storyboard your ideas
+titleSuffix: VSTS & TFS 
+description: Turn your ideas and goals into something visual using the  Storypoint add-in to PowerPoint for Visual Studio Team Services or Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
 ms.date: 05/10/2017
 ---
 
 # Storyboard your ideas using PowerPoint
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
 
@@ -21,8 +24,8 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to create and modify storyboards.
 
-	>[!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	> [!NOTE]   
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
@@ -48,7 +51,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
     <img src="_img/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 2px solid #C3C3C3;" />
 
->[!TIP]  
+> [!TIP]  
 >- Use animation to bring your user interface flow to life.  
 >- Take screenshots of your apps. For example, add a screenshot as the background of a master slide.  
 >- Use [Office MIX](https://mix.office.com/gallery/category/how-to) to create a demo of your feature.  
@@ -66,7 +69,7 @@ When you share your storyboards to a shared network location, you can link the s
 
     <img src="_img/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 2px solid #C3C3C3;" />
 
-	>[!NOTE]  
+	> [!NOTE]  
 	>The **Storyboards** tab is no longer supported in the web form from VSTS  or TFS 2017 with the new web form enabled. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
 
 3.  If you're not already connected to a team project, [connect now](../../../user-guide/connect-team-projects.md). If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).
@@ -95,7 +98,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 With PowerPoint Storyboarding, you can illustrate a new or a modified interface. You can capture existing user interfaces and build a storyboard from a collection of predefined storyboard shapes. Also, you can customize the slide layouts for your web, client, or phone applications. And, by linking the storyboard to the product backlog item or user story, you automatically share it with your team.
 
-## Related notes
+## Related articles
 
 Start using Storyboarding with PowerPoint today by downloading the free plug-in to PowerPoint: 
 - [Team Foundation Server Office® Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)

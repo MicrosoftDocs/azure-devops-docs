@@ -1,15 +1,17 @@
 ---
-title: Testing Gaps Excel Report (Agile) | TFS
+title: Testing Gaps Excel Report (Agile) 
 description: Use the Testing Gaps report to help determine where there are deficiencies in their test plans, test configurations, and test coverage.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+titleSuffix: TFS
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: 6f1a7509-2c47-411f-b033-ebd72b9c51d3
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 # Testing Gaps Excel Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Testing Gaps report to help determine where there are deficiencies in their test plans, test configurations, and test coverage. The Testing Gaps report provides the following five reports based on test results and builds that have been defined and run for a team project.  
   

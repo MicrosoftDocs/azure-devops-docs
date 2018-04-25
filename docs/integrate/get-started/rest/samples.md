@@ -2,14 +2,16 @@
 title: REST API samples for VSTS and Team Foundation Server
 description: REST API samples for VSTS and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/25/2016
 ---
 
-# Get started sample 
+# Get started sample
 
 ## Personal Access Tokens
 
@@ -91,26 +93,6 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ````
 
-## Work item tracking
-
-You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://www.visualstudio.com/docs/integrate/api/wit/overview).
-
-- [Create a bug](https://visualstudio.com/api/wit/samples.md#create-bug)
-- [Migrating work items](https://visualstudio.com/api/wit/samples.md#migrating-work-items)
-- [Update a bug](https://visualstudio.com/api/wit/samples.md#update-bug)
-- [Add a comment to a bug](https://visualstudio.com/api/wit/samples.md#add-comment-to-bug)
-- [Change a bug to a user story](https://visualstudio.com/api/wit/samples.md#change-bug-to-a-user-story)
-
-## Projects and teams
-
-## Git
-
-## Build
-
-## Slack
-
-## Jenkins
-
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -119,13 +101,10 @@ You can find the following samples and more in C# and .NET at the [work item tra
 
 A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github.com/Microsoft/vsts-restapi-samplecode).
 
-#### Q: Where can I find more inforation on the .NET library?
+#### Q: Where can I find more information on the .NET library?
 
 A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md)
 
-#### Q: Where can I learn about the specific .Net client libraries contracts?
-
-A: Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 <!-- ENDSECTION --> 
 

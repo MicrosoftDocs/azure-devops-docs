@@ -2,11 +2,14 @@
 title: Copying and cloning test suites and test cases
 description: Manual and exploratory testing - Copying and cloning test suites and test cases
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Copying and cloning test suites and test cases
@@ -18,6 +21,8 @@ It's important to understand that a test suite or plan contains a set of *refere
 If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in VSTS or TFS, and you can find it there with a query.  
 
 For details about copying tests in VSTS or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 ## Copying and cloning in Microsoft Test Manager  
 
@@ -163,11 +168,11 @@ Parameters:
   
 ```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
-   /teamproject:IceCream /destinationteamproject:ToyStore  
+   /teamproject:IceCream /destinationteamproject:ToyStore  
    /clonerequirements  
-   /suiteid:234 /destinationsuiteid:567   
-   /overridefield:"Iteration Path"="ToyStore\sprint3"  
-   /overridefield:"Area Path"="ToyStore\catalog"  
+   /suiteid:234 /destinationsuiteid:567   
+   /overridefield:"Iteration Path"="ToyStore\sprint3"  
+   /overridefield:"Area Path"="ToyStore\catalog"  
   
 ```
   

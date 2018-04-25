@@ -1,11 +1,13 @@
 ---
-title: Code Churn tables | TFS
+title: Code Churn tables 
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for data about the changes in the code that is under version control  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

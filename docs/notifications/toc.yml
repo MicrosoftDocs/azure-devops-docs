@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: About notifications
-    href: about-notifications.md  
+    href: about-notifications.md
 - name: Quickstarts
   items:
   - name: View your subscriptions, opt-out as needed
@@ -36,7 +36,7 @@
     href: ../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set alerts (TFS) 
     href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Collaborate in a team room
+  - name: Collaborate in a team room (TFS)
     href: ../collaborate/collaborate-in-a-team-room.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
 - name: Reference
   items:
@@ -44,7 +44,7 @@
     href: oob-built-in-notifications.md 
   - name: FAQs 
     href: faq-notifications.md 
-  - name: Default permissions and access set for collaboration tools 
+  - name: Default permissions (Security)  
     href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Resources    
   items:

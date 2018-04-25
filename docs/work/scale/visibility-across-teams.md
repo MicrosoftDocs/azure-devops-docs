@@ -1,12 +1,13 @@
 ---
 title: Visibility across teams 
 titleSuffix: VSTS & TFS
-description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services (VSTS) and Team Foundation Server  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/24/2018
 ---
 
@@ -31,7 +32,7 @@ For an overview of all team tools, see [Configure team settings](manage-team-ass
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
 
 > [!NOTE]
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
@@ -49,7 +50,7 @@ We recommend that you structure your teams as follows:
 
 The management team creates the epics, and then they or their feature teams break the epics down into features and then [map their features to the epics](../backlogs/organize-backlog.md) on the management backlog.
 
->[!TIP]
+> [!TIP]
 >By breaking down large goals, epics, scenarios, or features into smaller ones, teams can make better estimates and identify risks and dependencies.
 
 Limiting the backlog levels for each team&#151;Epics for management teams and Features and Stories for feature teams&#151;helps each team to stay focused on monitoring the progress of their work. For details on managing team backlog levels, see [Select backlog navigation levels](../customize/select-backlog-navigation-levels.md).
@@ -68,7 +69,7 @@ And, feature teams can turn on Show parents on their backlogs to see context and
 
 <img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
 
->[!TIP]
+> [!TIP]
 >When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
 To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Multiple teams](multiple-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
@@ -129,13 +130,14 @@ Another measure of project health and the health of the teams is to monitor bug 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../track/query-numeric.md).
 
  
-
-## Use Analytics to gain visibility across teams (VSTS)   
+::: moniker range="vsts"
+## Use Analytics to gain visibility across teams   
 
 VSTS accounts can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the team project. 
 
+::: moniker-end
 
-## Related notes
+## Related articles
 
 As you can see, there are a number of ways you can monitor progress and trends across several teams. The methods you choose will depend on your focus and organizational goals.
 
@@ -154,11 +156,11 @@ Here are some additional topics that address working with multiple teams:
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../kanban/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board.
  Only when the work item state changes does the card column reflect the same on all boards.
 
->[!IMPORTANT]   
+> [!IMPORTANT]   
 >Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../scale/set-team-defaults.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+ 
 
 
 <!---
@@ -197,10 +199,10 @@ Key metrics and how they are changing
 	Bug debt trends
 
 Overall project health
-Agile – Team's Velocity any changes over time
-Waterfall – completeness of milestone delivery
+Agile &mdash;Team's Velocity any changes over time
+Waterfall &mdash;completeness of milestone delivery
 Dependencies status
-Different metrics than VP – code coverage, % complete, burndown
+Different metrics than VP &mdash;code coverage, % complete, burndown
 Code coverage
 % Complete
 Burndown

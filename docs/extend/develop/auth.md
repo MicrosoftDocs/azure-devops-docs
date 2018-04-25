@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for VSTS
 description: Auth and secuirty for VSTS Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/29/2016
 ---
 
@@ -40,6 +42,9 @@ Your extension's unique key (which is generated when the extension is published)
 To get this key, right-click a [published extension](../publish/overview.md) and select **Certificate**.
 
 ![key](./_img/get-extension-key.png)
+
+> [!WARNING]
+> Scope changes in an extension will cause the certificate to change. If you make changes to the scope, you will need a new extension key.
 
 ### Generate a token to provide to your service
 

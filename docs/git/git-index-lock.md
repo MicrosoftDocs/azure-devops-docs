@@ -2,12 +2,16 @@
 title: Git index.lock file | VSTS & TFS
 description: Learn more about the Git index.lock file in Visual Studio
 ms.assetid: d7f960e7-7132-4ee3-ba27-5bb5fd60e625
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/22/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 #  Git index.lock file
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
@@ -24,5 +28,5 @@ Generally, if you have an index.lock file, it's because a Git process is running
 
 ## Removing an orphaned index.lock file
 
-If you suspect that you might have an orphaned index.lock file, first verify that you don't have  any Git processes running. To check for long running Git operations, open Task Manager (CTRL+ALT+DELETE), sort by name, and look for git.exe or other Git related processes. If you see any Git related processes, you can wait a few moments for them to complete and try your Git operation again. If you don’t have any Git operations running, you can delete the index.lock file and try your Git operation again. The index.lock file is located in the `.git` folder of your repo, as shown in the following example: `\myrepo\.git\index.lock`. Note that the `.git` folder may be hidden, and to access it, you may have to enable `View hidden files and folders` in Windows Explorer.
+If you suspect that you might have an orphaned index.lock file, first verify that you don't have  any Git processes running. To check for long running Git operations, open Task Manager (CTRL+ALT+DELETE), sort by name, and look for git.exe or other Git related processes. If you see any Git related processes, you can wait a few moments for them to complete and try your Git operation again. If you don't have any Git operations running, you can delete the index.lock file and try your Git operation again. The index.lock file is located in the `.git` folder of your repo, as shown in the following example: `\myrepo\.git\index.lock`. Note that the `.git` folder may be hidden, and to access it, you may have to enable `View hidden files and folders` in Windows Explorer.
 

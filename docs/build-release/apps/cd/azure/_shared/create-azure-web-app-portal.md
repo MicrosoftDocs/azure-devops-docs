@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Create an Azure web app using the portal
 
 > [!NOTE]
@@ -11,7 +15,7 @@
 
    >If you don't see **Web App** in the list, use the search box to find it.
 
-1. At the bottom of the introduction page, choose **Create**.
+1. If you see the introduction page, choose **Create**.
 
    ![Starting to create the web app](_img/create-webapp-02.png)
 

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Import code for sample app into VSTS
 
 VSTS is a full-featured Git server for hosting your team's source code. You'll import code for a sample ASP.NET Core app into VSTS Git repository. This is the app that you will configure CI/CD for.

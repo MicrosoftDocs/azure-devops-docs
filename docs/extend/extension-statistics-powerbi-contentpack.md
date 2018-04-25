@@ -1,10 +1,11 @@
 ---
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
 description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
-ms.author: divais
+ms.author: elbatk
+author: elbatk
 ms.date: 06/12/2017
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ---
 
@@ -41,13 +42,13 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Click **Sign In** to continue.
 
-    ![Login to VS VSTS with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+    ![Login with oAuth2](_img/connect-to-vs-team-services-auth.png)  
 
 	**Important**: You won't be able to connect if your account administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
 	![Third-party oAuth enabled](_img/Screen5.png)  
 
-	Contact your account administrator to determine if it needs to be enabled. 
+	Contact your account administrator to determine if it needs to be enabled. 
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 

@@ -1,17 +1,17 @@
 ---
 title: My Dashboard (Agile and CMMI) | TFS
 description: Use My Dashboard to monitor tasks and quickly access to work items that are assigned - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.prod: devops-server
+ms.technology: devops-analytics
 ms.assetid: e05d8187-c5cc-423a-b977-6ce5ad52abc4
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # My Dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 You can monitor your tasks and quickly access work items that are assigned to you by using My Dashboard. You can use this dashboard to answer the following questions:  
   

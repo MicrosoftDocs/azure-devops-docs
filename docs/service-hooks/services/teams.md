@@ -1,9 +1,14 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.author: elbatk
+author: elbatk
+ms.prod: devops
+ms.technology: devops-collab
+ms.topic: conceptual
 title: Microsoft Teams with VSTS and Team Foundation Server
 description: Use Microsoft Teams with your VSTS account
+monikerRange: '>= tfs-2017'
 ---
+
 
 # Microsoft Teams with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 

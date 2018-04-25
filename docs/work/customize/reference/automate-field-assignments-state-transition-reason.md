@@ -1,11 +1,13 @@
 ---
-title: Automate field assignments | VSTS & TFS
-description: Transition work items from one state to another state based on an event that occurs elsewhere when working in VSTS or Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Automate field assignments 
+titleSuffix: VSTS & TFS
+description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 
@@ -64,9 +66,9 @@ You may want to automatically transition work items from one state to another st
    <REASONS>
       ...
    </REASONS>
-   <ACTIONS>  
-      <ACTION value="microsoft.vsts.actions.checkin"/>  
-   </ACTIONS>  
+      <ACTIONS>  
+      <ACTION value="microsoft.vsts.actions.checkin"/>  
+      </ACTIONS>  
 </TRANSITION>  
 ```  
   
@@ -91,10 +93,10 @@ You may want to automatically transition work items from one state to another st
        <REASONS>
           <DEFAULTREASON value="Fixed" />
        </REASONS>
-       <ACTIONS>  
-          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-          <ACTION value="ADatum.Actions.Complete"/>  
-       </ACTIONS>  
+          <ACTIONS>  
+          <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
+          <ACTION value="ADatum.Actions.Complete"/>  
+          </ACTIONS>  
     </TRANSITION>  
     ```  
   
@@ -120,7 +122,7 @@ You may want to automatically transition work items from one state to another st
   
  For example, you have created the transition action Check-In, which transitions the state of a work item from "Working" to "Ready to Build". The work item's rules for "Ready to Build" require that the "Resolved By" field be set. You would then define a **DEFAULT** or **COPY** rule element for "ResolvedBy" in the **TRANSITION** section. Additionally, you would define a **DEFAULTREASON** to make sure that the required field can be set without user intervention.  
   
-## Related notes
+## Related articles
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)    
 - [Apply a field rule](apply-rule-work-item-field.md)  

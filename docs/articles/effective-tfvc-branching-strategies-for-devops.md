@@ -2,19 +2,20 @@
 title: Version Control - Effective TFVC branching strategies for DevOps
 description: Explore TFVC branching strategies for DevOps 
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
-ms.manager: willys
+ms.prod: devops
+ms.topic: article
+ms.technology: devops-whitepapers
+ms.manager: douge
 ms.date: 03/20/2017
 ms.author: willys
-author: sergio romero
+author: wpschaub
 ---
 
 # Effective TFVC branching strategies for DevOps
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index))? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index))? You will probably have a few questions, such as:
 
-- How do I decide on the right branching strategy? 
+- How do I decide on the right branching strategy? ... 
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
 
@@ -26,7 +27,7 @@ TFVC is a centralized version control system to maintain code and make teams mor
 
 ## Keep it simple!
 
-By adopting an effective branching strategy you'll:
+By adopting an effective branching strategy you will:
 - Foster a *DevOps culture*
 - Promote collaboration flow and increased productivity
 - Enable teams to spend more time developing and less time managing code

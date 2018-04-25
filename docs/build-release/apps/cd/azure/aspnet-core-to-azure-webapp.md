@@ -2,20 +2,23 @@
 title: Deploy your app to an Azure web app | VSTS Quickstart
 description: Set up a CI build for your ASP.NET Core application, and then a CD release to Azure web apps
 services: vsts
+ms.prod: devops
+ms.technology: devops-cicd
 documentationcenter: ''
-author: alewis
 manager: douge
 editor: ''
-
 ms.assetid:
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.date: 01/19/2018
-ms.author: alewis
+ms.author: ahomer
+author: alexhomer1
 ms.custom: mvc
+monikerRange: 'vsts'
 ---
+
 
 # Build and deploy to an Azure Web App
 
@@ -32,6 +35,10 @@ After you commit and push a code change, it is automatically built and then depl
 <!--
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 -->
+
+[How do I deploy an Azure Function project?](https://blogs.msdn.microsoft.com/appserviceteam/2017/06/01/deploying-visual-studio-2017-function-projects-with-vsts/)
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-and-deploy-to-an-Azure-Web-App/player]
 
 ## Prerequisites
 
@@ -68,9 +75,15 @@ https://github.com/adventworks/dotnetcore-sample
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
-1. Select **Choose repository** and select **VSTS** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
+1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
 
    ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
+
+   If your code is stored in a different repository service, such as GitHub or a private external Git service, you will be required to
+   provide credentials or obtain authorization. For GitHub, choose the **Authorize** button that appears. A new window opens where you
+   can log into GitHub and/or authorize access. For an external repository, you are prompted for a username and password.
+   
+   > For information about connecting VSTS or TFS to a Git repository, see [Service endpoints for Build and Release](../../../concepts/library/service-endpoints.md).
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
 
@@ -86,12 +99,12 @@ https://github.com/adventworks/dotnetcore-sample
 
    ![Viewing the log when deployment is complete](_img/aspnet-core-to-azure-webapp/continuous-delivery-log2.png)
 
-1. Open a new browser window and navigate to your new web at **http://**_your-app-name_**.azurewebsites.net**.
+1. Open a new browser window and navigate to your new website at **http://**_your-app-name_**.azurewebsites.net**.
 
 [!INCLUDE [change-aspnet-core-code](_shared/change-aspnet-core-code.md)]
 
 It takes several minutes for the build and deployment to execute.
-Wait until the deployment is done, then verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
+Wait until the deployment is done, then verify that the changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
 
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 

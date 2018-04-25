@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 title: Hello World for Visual Studio extensions
 description: Work through a basic Hello World exercise
 ms.assetid: 22CC3F51-2787-4D84-BCDD-A1A9A9D01DAC
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/04/2016
 ---
 
@@ -37,7 +39,7 @@ If you need to leave this tutorial and come back to it, you can find your new He
 ## Add a Custom command
 
 1.	If you select the manifest, you can see what options are changeable, for instance, metadata, description, and version.
-2.	Right-click the project (not the solution). On the context menu, click **Add**, and then click **User Control**.
+2.	Right-click the project (not the solution). On the context menu, click **Add**, and then click **New Item**.
 3.	Go back to the **Extensibility** section, and then click **Custom Command**.
   ![Image of the Custom Command window](./_img/custom-command.png)
 4.  In the **Name** field at the bottom, give it a name, for instance Command.cs.
@@ -65,7 +67,7 @@ At this point, the Button you're adding is pretty generic. You'll have to modify
           </Button>
           ...
 
-3.	Go back to **Solution Explorer** and find the Command.cs file. Change the string message for the command to “Hello World!”
+3.	Go back to **Solution Explorer** and find the Command.cs file. Change the string message for the command to "Hello World!"
 
           ...
           private void MenuItemCallback(object sender, EventArgs e)

@@ -1,12 +1,15 @@
 ---
-title: FAQs for continuous testing   
+title: FAQs for continuous testing in VSTS and TFS   
 description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for continuous testing
@@ -14,6 +17,7 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
 <a name="gentopics"></a>
+
 ## General topics
 
 [Go to related topic &gt;](getting-started-with-continuous-testing.md)
@@ -36,6 +40,17 @@ ms.date: 01/18/2018
 
 **A**: See the blog post [Unit Tests with .NET Core and VSTS](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
 
+<a name="code-coverage"></a>
+
+### Q: I am not using the Visual Studio Test task to run my unit tests. Can I still collect and publish code coverage data?
+
+**A**: Yes, use the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md).
+
+### Q: I have multiple Publish Code Coverage Results tasks in my definition. Do I get a merged code coverage summary?
+
+**A**: Code coverage is automatically merged for only Visual Studio coverage (.coverage) files.
+A merged summary is not currently available for coverage files published using multiple Publish Code Coverage Results tasks.
+
 <a name="qa-more-tests"></a>
 ### Q: What are the typical types of tests I can run to validate my app and deployment?
 
@@ -46,7 +61,7 @@ ms.date: 01/18/2018
    you can specify, such as running only specific tests. See [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md).
  
 1. Run **functional tests** in the early stages of the CD pipeline. These are typically 
-   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://msdn.microsoft.com/en-us/library/dd286726.aspx) tests.
+   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code) tests.
    To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
    and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTests/README.md)**
    tasks to your release definition. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
@@ -79,9 +94,20 @@ app to a different slot using the **Azure App Service Manage** task. See
 [Swap deployment slots](../../build-release/apps/cd/howto-webdeploy-webapps.md#swapslots).
 
 You can use [task phases](../../build-release/concepts/process/phases.md)
-and the [**Manual Intervention**](../../build-release/concepts/process/phases.md#the-manual-intervention-task) task
+and the [**Manual Intervention**](../../build-release/tasks/utility/manual-intervention.md) task
 in your release definition to pause a deployment; for example, to examine test results
-after the load tests have run and before the app is swapped from staging to production. 
+after the load tests have run and before the app is swapped from staging to production.
+
+<a name="pass-params"></a>
+### Q: How do I pass parameters to my test code from a build or release pipeline?
+
+**A**: Use a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+to pass values as parameters to your test code. For example, in a release that contains
+several environments, you can pass the appropriate app URL to each the test tasks in each one.
+The runsettings file and matching parameters must be specified in the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.  
+
+![Passing parameters to test code in a build or release pipeline](_img/pass-params-to-test-code.png)
 
 ### Q: Where can I find details about configuring test agents?
 
@@ -198,7 +224,7 @@ on-demand test execution.
 **A:** If you are running UI tests such as
 [coded UI](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code)
 or [Selenium](continuous-test-selenium.md) tests,
-the agent on the test machines must be running in interactive mode,
+the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser. 
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 

@@ -3,7 +3,7 @@ Use the **Accounts** command to manage these TFS service accounts.
 - the data sources account for SQL Server Reporting Services
 - the TFS Proxy service account
 
-You can also use this command to change the ownership of the TFS databases.
+You can also use this command to change the ownership of the TFS databases.
 
 	TFSConfig Accounts /change|add|set|delete|updatepassword|resetowner
 		[/AccountType:{AdminConsole|ApplicationTier|Proxy|ReportingDataSource}]
@@ -154,7 +154,7 @@ Change the service account of data sources for Reporting Services to a new accou
 
     TFSConfig Accounts /change /AccountType:ReportingDataSource /Account:Contoso\NewAccount /Password:Password
 
-Add the Network Service system account to the service account groups for Team Foundation Server. (System accounts don't have passwords.)
+Add the Network Service system account to the service account groups for Team Foundation Server. (System accounts don't have passwords.)
 
     TFSConfig Accounts /add /AccountType:ApplicationTier /Account:"NT Authority\Network Service"
 

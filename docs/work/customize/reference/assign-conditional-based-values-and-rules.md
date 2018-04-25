@@ -1,17 +1,19 @@
 ---
-title: Assign conditional-based values and rules | VSTS & TFS
-description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define rules and values that are run conditionally - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Assign conditional-based values and rules
+titleSuffix: VSTS & TFS
+description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define conditional rules and values
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 01/20/2017
 ---
 
 # Assign conditional-based values and rules
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define rules that are run conditionally by using the **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED** elements. You use these rules to define which elements are run when the defined clause is `True`. You can define conditions that are based on what value is assigned to a specific field or whether a user modifies a specific field. For example, you can create a dependent pick list to provide detailed security or custom behavior.  
   
@@ -156,14 +158,14 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
-    <ALLOWEDVALUES>  
-        <LISTITEM value="Blocking" />  
-        <LISTITEM value="Major" />  
-        <LISTITEM value="Minor" />  
-    </ALLOWEDVALUES>  
-    <WHEN field="MyCorp.CustomerReported" value="true">  
-        <REQUIRED />  
-    </WHEN>  
+       <ALLOWEDVALUES>  
+           <LISTITEM value="Blocking" />  
+           <LISTITEM value="Major" />  
+           <LISTITEM value="Minor" />  
+       </ALLOWEDVALUES>  
+       <WHEN field="MyCorp.CustomerReported" value="true">  
+           <REQUIRED />  
+       </WHEN>  
 </FIELD>  
 ```  
 <a name="DependentPickList"></a> 
@@ -174,13 +176,13 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD refname="MyCorp.ProblemType" name="Problem Type" type="String">  
-    <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">  
-        <ALLOWEDVALUES>  
-            <LISTITEM value="Spelling Error" />  
-            <LISTITEM value="Bad Format" />  
-            <LISTITEM value="Missing Info" />  
-        </ALLOWEDVALUES>  
-    </WHEN>  
+       <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">  
+           <ALLOWEDVALUES>  
+               <LISTITEM value="Spelling Error" />  
+               <LISTITEM value="Bad Format" />  
+               <LISTITEM value="Missing Info" />  
+           </ALLOWEDVALUES>  
+       </WHEN>  
 </FIELD>  
 ```  
 
@@ -191,9 +193,9 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
-    <WHENCHANGED field="MyCorp.State">  
-        <COPY from="clock" />  
-    </WHENCHANGED>  
+       <WHENCHANGED field="MyCorp.State">  
+           <COPY from="clock" />  
+       </WHENCHANGED>  
 </FIELD>   
 ```  
   
@@ -203,9 +205,9 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ```XML  
 <!-- Clear the status field whenever someone changes the state -->  
 <FIELD refname="MyCorp.Status" name="Status" type="String">  
-    <WHENCHANGED field="MyCorp.State">  
-        <COPY from="value" value="">  
-    </WHENCHANGED>  
+       <WHENCHANGED field="MyCorp.State">  
+           <COPY from="value" value="">  
+       </WHENCHANGED>  
 </FIELD>  
 ```  
  <a name="WhenNotChanged"></a> 
@@ -216,11 +218,11 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ```XML
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
 <!-- Make the StateDate field read-only when the State field is not changed -->  
-    <WHENNOTCHANGED field="MyCorp.State">  
-        <READONLY />  
-    </WHENNOTCHANGED>  
+       <WHENNOTCHANGED field="MyCorp.State">  
+           <READONLY />  
+       </WHENNOTCHANGED>  
 </FIELD>  
 ```  
   
-## Related notes 
+## Related articles 
 -  [Apply a field rule](apply-rule-work-item-field.md)   

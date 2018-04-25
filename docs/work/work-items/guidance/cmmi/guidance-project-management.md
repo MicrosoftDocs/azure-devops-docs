@@ -1,11 +1,13 @@
 ---
-title: Project management | VSTS & TFS
+title: Project management 
+titleSuffix: VSTS & TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 03/16/2017
 ---
 
@@ -63,7 +65,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 
    
 
-## Related notes
+## Related articles
 - **The Project Cycle/[Project activities](guidance-project-activities.md):** Start the project, gather requirements, create a project plan, divide it into iterations, and deliver releases. Manage risks, and manage changes to the plan.    
 - **The Iteration Cycle/[Iteration activities](guidance-iteration-activities.md):** Review and update requirements, plan the tasks to implement requirements, and manage issues as they occur.  
 - [CMMI process](../cmmi-process.md)   

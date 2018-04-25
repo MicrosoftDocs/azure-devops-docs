@@ -1,12 +1,15 @@
 ---
-ms.assetid: BB1FC018-77A7-42E7-A270-4BC7CB3AD1C4
 title: Deploy your database to Azure SQL Database using DACPACs
 description: Deploy a SQL DACPAC to an Azure SQL Database from Release Management in VSTS or TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: BB1FC018-77A7-42E7-A270-4BC7CB3AD1C4
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your database to Azure SQL Database using DACPACs
@@ -65,13 +68,20 @@ Continuous deployment (CD) means starting an automated release process whenever 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
 
-1. Select the **Empty** template and choose **Next**.
+1. Choose **Start with an Empty process**.
 
-1. In the **Artifacts** section, make sure your CI build definition that publishes the DACPAC is selected as the artifact source.
+1. If you created your new release definition from a build summary, check that the build definition
+   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
+   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-1. Select the **Continuous deployment** check box, and then choose **Create**.
+   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
-1. Add a **SQL Database** task to the default environment and configure it as follows:
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
+   and add a filter to include the **master** branch.
+
+   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+
+1. Open the **Tasks** tab and add a **SQL Database** task to the default environment. Configure it as follows:
 
    ![icon](../../tasks/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../tasks/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
    
@@ -97,13 +107,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build.
 This will result in deploying the database DACPAC to Azure SQL Database:
 
-1. Choose **+ Release** and select **Create Release**.
-
-1. Select the build you just completed in the highlighted drop-down list and choose **Create**.
-
-1. Choose the release link in the popup message. For example: "Release **Release-1** has been created".
-
-1. Open the **Logs** tab to watch the release console output.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Q&A
 
@@ -114,7 +118,9 @@ This will result in deploying the database DACPAC to Azure SQL Database:
 You can use a PowerShell task to execute other types of SQL scripts.
 For more details, see [Perform SQL server actions in VSTS or TFS](sql-server-actions.md).
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

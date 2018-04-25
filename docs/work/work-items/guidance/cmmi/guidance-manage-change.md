@@ -1,11 +1,13 @@
 ---
-title: Manage change | VSTS & TFS
-description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Manage change 
+titleSuffix: VSTS & TFS
+description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 

@@ -1,17 +1,20 @@
 ---
-title: Invoke HTTP REST API task 
+title: Invoke HTTP REST API task for Microsoft VSTS and TFS 
 description: Build and release task to invoke an HTTP API and parse the response in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Invoke HTTP REST API
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
 
@@ -43,10 +46,22 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApi).
 
-## Q & A
+::: moniker range="vsts"
 
-<!-- BEGINSECTION class="md-qanda" -->
+## YAML snippet
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+(VSTS-only)
 
-<!-- ENDSECTION -->
+```YAML
+- task: InvokeRESTAPI@1
+  inputs:
+    serviceConnection:
+#   method: POST # OPTIONS, GET, HEAD, POST (default), PUT, DELETE, TRACE, PATCH
+#   headers: {Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}
+    body:
+    urlSuffix:
+#   waitForCompletion: false # true, false (default)
+    successCriteria:
+```
+
+::: moniker-end

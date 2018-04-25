@@ -1,18 +1,19 @@
 ---
-title: Capacity planning | VSTS & TFS
-description: Set or copy team member capacity to plan your Scrum sprints when when working from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Capacity planning
+titleSuffix: VSTS & TFS
+description: Set team member capacity to plan Scrum sprints in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: F9DC4D34-36D6-42D6-AA8F-E7FE1CC60676
 ms.manager: douge
-ms.author: kaelli
-ms.topic: get-started-article
+ms.author: kaelliauthor: KathrynEE
+ms.topic: tutorial
 ms.date: 07/21/2017
 ---
 
 # Capacity planning  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 How much work can your team accomplish in a sprint? Using the capacity planning tools, your team can estimate both the amount of work and types of work required to complete their sprint plan. Then, during the sprint, you can [monitor the capacity bars](../scrum/sprint-planning.md#adjust-work) to determine when an individual team member or a team area of activity is on target to finish, or needs help from other team members to finish. 
 
@@ -35,7 +36,7 @@ Because days off and time available for each team member can vary from sprint to
 
 From the Capacity page, enter the capacity and days off for each member of your team. If your team tracks capacity by activity, then also select the Activity for each team member.  
 
->[!NOTE]
+> [!NOTE]  
 >The user interface is slightly different depending on the platform and version you work from. 
 
 For example, Christie Church's capacity is 6 hours/day for design work. 
@@ -55,7 +56,7 @@ For example, Christie Church's capacity is 6 hours/day for design work.
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete.
 
 
->[!NOTE]
+> [!NOTE]  
 >For VSTS, the task board always shows "h" for hours. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label. For details, see [Process configuration XML element reference, Agile tool fields](../customize/reference/process-configuration-xml-element.md#fields).  
 
 
@@ -66,7 +67,7 @@ If you don't see a team member listed, you need to [add them to the team](../sca
 <a id="copy-capacity">  </a>
 ##Copy capacity planning from the previous sprint 
 
->[!NOTE]
+> [!NOTE]  
 ><b>Feature availability: </b>This feature is available from VSTS and the web portal for TFS 2015.1 and later versions.  
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
@@ -81,7 +82,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 <a id="add-remove-users">  </a>
 ##Add or remove users  
 
->[!NOTE]
+> [!NOTE]  
 ><b>Feature availability: </b>These features are available from VSTS  and the web portal for TFS 2015.1 and later versions.  
 
 Click ![Add user icon](_img/capacity-planning-add-user-icon.png) to add a specific account to your capacity planning, or ![Add missing team members](_img/capacity-planning-add-missing-users-icon.png) to add all missing team members. 
@@ -96,7 +97,7 @@ To remove a user, click the option from the users Action menu.
 <a id="track-multiple-activities">  </a>
 ##Track capacity when performing multiple activities
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>This feature is currently supported only from the web portal for VSTS and TFS 2015 Update 1 or later version.  
 
 Because individual team members have different sets of skills and duties, you can track their activity and capacity for each activity and for each sprint. 
@@ -140,12 +141,12 @@ Setting capacity and [estimating remaining work for each task](../scrum/sprint-p
 <a id="customize-activity-list">  </a>
 ###Customize the pick list of activities or discipline 
 
->[!NOTE]  
+> [!NOTE]    
 >**Feature availability**: You can customize the pick list of the Activity or Discipline fields if you use the Hosted XML or On-premises process models. To learn more about process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 You can add to or modify the items listed for the [Activity](../track/query-numeric.md)(Agile or Scrum) or [Discipline](../track/query-numeric.md) (CMMI) field by [customizing its pick list](../customize/add-modify-field.md). 
 
->[!NOTE]  
+> [!NOTE]    
 >The set of values listed corresponds to the combined set of all values defined for the field across all team projects in the collection. 
  
 <a id="team_settings">  </a>

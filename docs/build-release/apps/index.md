@@ -1,13 +1,17 @@
 ---
 title: Build and deploy your app - examples | VSTS & TFS 
 description: Build and deploy your app examples with VSTS and Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/22/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build and deploy your app
 
@@ -114,6 +118,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

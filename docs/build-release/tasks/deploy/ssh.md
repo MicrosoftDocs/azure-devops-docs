@@ -1,12 +1,15 @@
 ---
-title: SSH task
+title: SSH deployment task for Microsoft VSTS and TFS
 description: SSH build and release task for Microsoft VSTS and Microsoft Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy: SSH
@@ -34,6 +37,26 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: SSH@0
+  inputs:
+    sshEndpoint:
+#   runOptions: commands # commands (default), script, inline
+    commands:
+    scriptPath:
+    inline:
+    args:
+#   failOnStdErr: True
+```
+
+::: moniker-end
+
 ##See also
 
 * [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)
@@ -47,7 +70,9 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

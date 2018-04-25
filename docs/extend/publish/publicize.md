@@ -1,11 +1,13 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
 title: Make Your Extension or Integration Public | Extensions for VSTS
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/29/2016
 ---
 
@@ -38,31 +40,19 @@ Microsoft might also request a demo and to review the content planned for your M
 
 ## Process
 
-The process to have a public VSTS listing for an integration or extension is the same. The first step is verification of your publisher. Only **verified** publishers can have public items on the Marketplace.
+The process to have a public VSTS listing for an integration or extension is the same. The publisher needs to be verified in order to do so. Only **verified** publishers can have public VSTS items in the Marketplace.
 
-> **Developing for Visual Studio Code?** If so, you do not need to request verification. Verification is only required for VSTS integrations or extensions.
+> **Developing for Visual Studio, Visual Studio for Mac or Visual Studio Code?** If so, you do not need to request verification. Verification is only required for VSTS integrations or extensions.
 
 Once you are ready to publish a public VSTS listing to the Marketplace, follow these steps:
 
-1. Send an email to [vsmarketplace@microsoft.com](http://aka.ms/vsmarketplace-contact).
-   * Use the subject `Publisher verification request`.
-   * Include your publisher ID in the e-mail.
-   * Send from your organization/company e-mail address.   
-   * Share details of your association with a business/company and other information such as:
-        * Link to your site 
-        * Link to your LinkedIn account 
-        * Link to your GitHub account 
-        * Link to your blog 
-   * Share details about your extension/integration.
-2. Microsoft will respond within 2 business days.
+1. Visit http://marketplace.visualstudio.com/manage/publishers and login with the account using which you will publish and manage VSTS listings in Marketplace.
+2. Select the publisher and through the **Details tab** apply for publisher verification. You will find the appropriate section towards the bottom of the tab.
+3. Expect Microsoft to approve or respond within 3 business days to your verification request.
 
-You might be asked to provide more details about yourself or your organization/company. You might also be asked to share more details about your integration or share your extension with Microsoft.
-
-Once your publisher id has been verified you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest for your extension to be available publicly.
+Once your publisher is verified, you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest for your extension to be available publicly.
 
 > **Important**: Once your publisher is verified, you will not be able to change its display name without contacting Microsoft.
-
-> Please make sure that the publisher ID has no reference to Microsoft or any of its products. Create a publisher ID that is representative of you and/or your company. For instance, if your company name is Fabrikam Fiber, a good publisher name is "fabrikam-fiber". Microsoft reserves the rights to reject publisher IDs that do not meet its review criteria.
 
 ## Contact
 

@@ -1,13 +1,15 @@
 ---
-title: Upgrade Microsoft Project Server 2010  to Microsoft Project Server 2013 | TFS
-description: Upgrade Microsoft Project Server 2010  to Microsoft Project Server 2013 when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Upgrade Project Server 2010 to Project Server 2013
+titleSuffix: TFS 
+description: Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013 when using Team Foundation Server & Project Server
+ms.technology: devops-agile
 ms.assetid: d28658f8-d503-4e67-95e3-ab304462daa9
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Upgrade Microsoft Project Server 2010  to Microsoft Project Server 2013
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -61,6 +63,6 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
   
      For more information, see [Register an instance of PWA](register-pwa.md).  
   
-## Related notes  
+## Related articles  
  [Update an existing installation](update-version-compatibility-requirements.md)   
  [Synchronize TFS with Project Server](synchronize-tfs-project-server.md)

@@ -2,11 +2,11 @@
 title: Update a team project
 titleSuffix: TFS
 description: Update a team project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -204,9 +204,9 @@ Open a web portal and [determine if all features are available to you](../new-fe
     ```  
     <?xml version="1.0" encoding="utf-16"?  
     <BugFilerMappings workitemtypetocreate="Bug">  
-       <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-       <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-       <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
+          <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
+          <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
+          <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
     </BugFilerMappings>  
     ```  
   
@@ -258,7 +258,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
 ## 3. Launch Microsoft Test Manager  
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
->[!NOTE]  
+> [!NOTE]    
 >Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../../manual-test/mtm/guidance-mtm-usage.md). 
  
 
@@ -274,6 +274,6 @@ After you have completed the upgrade tasks that are described earlier in this to
 -   [Changes and Additions to the Schema for the Analysis Services Cube](http://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)     
 -   [Changes made to process templates](../../work-items/guidance/changes-to-process-templates.md)   
   
-## Related notes
+## Related articles
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
 -  [Configure features after an upgrade](../configure-features-after-upgrade.md) 

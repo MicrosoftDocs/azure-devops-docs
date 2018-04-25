@@ -1,17 +1,19 @@
 ---
-title: Pick list queries | VSTS & TFS
-description: Creating queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Pick list queries
+titleSuffix: VSTS & TFS
+description: Create queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services & Team Foundation Server 
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: sample
 ms.date: 04/14/2017  
 ---
 
 # Query by pick list value
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -60,14 +62,17 @@ Features and stories that address Architectural areas<br/>
 </tbody>
 </table>  
 
-##Fields used to plan and prioritize work  
-<p>The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).</p>
+## Fields used to plan and prioritize work  
+
+The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).
+
+
 <table width="100%">
 <thead>
 <tr>
-  <th width="17%">Field name</th>
-  <th width="66%">Description</th>
-  <th width="17%">Work item type</th>
+  <th width="25%">Field name</th>
+  <th width="50%">Description</th>
+  <th width="25%">Work item type</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -105,9 +110,9 @@ Features and stories that address Architectural areas<br/>
 	<td><p>Priority <sup>1</sup></p></td>
 	<td><p>A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:</p>
 <ul style="list-style-type:none">
-<li><p><strong>1</strong>:  Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
-<li><p><strong>2</strong>:  Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
-<li><p><strong>3</strong>:  Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
+<li><p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
+<li><p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
+<li><p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
 <p>Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer</p>  </td>
 	<td><p>Bug, Change Request, Epic, Feature, Impediment, Issue, Product backlog item, Requirement, Risk, Shared Step, Task, Test Case, User Story</p></td>
 </tr>
@@ -151,7 +156,7 @@ Features and stories that address Architectural areas<br/>
 </tr>
 <tr>
 	<td><p>Value Area  <sup>1</sup></p></td>
-	<td><p>The area of customer value addressed by the epic, feature, or backlog item. Values include:</p><ul><li><p><strong>Architectural</strong> – technical services to implement business features that deliver solution</p></li><li><p><strong>Business</strong> – services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)</p></li></ul>
+	<td><p>The area of customer value addressed by the epic, feature, or backlog item. Values include:</p><ul><li><p><strong>Architectural</strong> &mdash; technical services to implement business features that deliver solution</p></li><li><p><strong>Business</strong> &mdash; services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)</p></li></ul>
 <p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=String</p>  </td>
 
 	<td>Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)</td>
@@ -165,7 +170,7 @@ Features and stories that address Architectural areas<br/>
 0.  The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
-## Related notes 
+## Related articles 
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  

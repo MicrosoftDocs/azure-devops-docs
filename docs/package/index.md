@@ -1,11 +1,13 @@
 ---
 title:  Package Management in VSTS and TFS | Microsoft Docs   
 description: Use package management to host and share NuGet packages and npm modules with VSTS or Team Foundation Server
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
 ms.date: 08/10/2016
+ms.topic: conceptual
 layout: LandingPage
 ---
 
@@ -21,7 +23,7 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 
 ## Videos
 
-[![Package Management 101](_img/index/package-management-101.png)](https://channel9.msdn.com/events/Build/2017/P4110)   [![The Zen of Package Management](_img/index/zen-of-package-management.png)](https://channel9.msdn.com/events/Ignite/Australia-2017/NET324)   [![npm and continuous delivery in Package Management](_img/index/npm-and-continuous-delivery.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T112)
+[![Package Management 101](_img/index/package-management-101.png)](https://channel9.msdn.com/events/Build/2017/P4110)   [![The Zen of Package Management](_img/index/zen-of-package-management.png)](https://channel9.msdn.com/events/Ignite/Australia-2017/NET324)   [![npm and continuous delivery in Package Management](_img/index/npm-and-continuous-delivery.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T112)   [![Maven, symbol server, and upstream sources in VSTS](_img/index/maven-symbol-server-and-upstream-sources.png)](https://channel9.msdn.com/Events/Connect/2017/T180)
 
 ## How-to Guides
 

@@ -2,14 +2,18 @@
 title: History in Git | VSTS & TFS
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 06/16/2017
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14/2018
+monikerRange: '>= tfs-2013'
 ---
 
-## Understand Git history
+
+# Understand Git history
 
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.
@@ -77,4 +81,4 @@ There are three people who merge commits from their own branches into the master
 
 ![console log of git graph](_img/history/gitlogconsole.png)
 
-Now that you understand how branches and merges create the shape of the graph, this shouldn’t be too scary!
+Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!

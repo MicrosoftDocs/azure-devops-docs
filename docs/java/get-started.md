@@ -7,7 +7,9 @@ ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel
 ms.date: 01/31/2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Get started with Java DevOps and Visual Studio Team Services (VSTS)
 

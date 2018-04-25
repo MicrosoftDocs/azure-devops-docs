@@ -1,13 +1,15 @@
 ---
 title: Xcode Package iOS build and release task
 description: Xcode Package iOS build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
 ms.manager: douge
 ms.author: dastahel
 ms.date: 11/13/2017
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Build: Xcode Package iOS
 
@@ -79,12 +81,32 @@ Make sure to specify the variable values on the [variables tab](../../concepts/d
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: XcodePackageiOS@0
+  inputs:
+#   appName: name.app
+#   ipaName: name.ipa
+    provisioningProfile:
+#   sdk: iphoneos
+#   appPath: $(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)
+#   ipaPath: $(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output
+```
+
+::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

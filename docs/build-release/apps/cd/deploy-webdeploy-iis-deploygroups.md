@@ -1,13 +1,15 @@
 ---
-ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 title: Deploy to an IIS web server on a Windows Virtual Machine
 description: Deploy an ASP.NET or Node web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy to a Windows Virtual Machine
@@ -60,20 +62,29 @@ Your CD release process picks up the artifacts published by your CI build and th
    * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
 
-    ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
 
      ![Creating a new release definition in the Releases page](../_shared/_img/release-from-release-page.png)
 
-1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
+1. Select the **IIS Website Deployment** template and choose **Apply**.
 
- ![Screenshot showing IIS website deployment template](../_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
+1. If you created your new release definition from a build summary, check that the build definition
+   and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
+   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
+   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
- ![iis deployment group in release definition](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
+   and add a filter to include the **master** branch.
+
+   ![Setting the continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+
+1. Open the **Tasks** tab and select the **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
+
+   ![IIS deployment group in release definition](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Save the release definition.
 
@@ -81,13 +92,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
 
-1. To test the release definition, choose **Release** and then **Create release**.
-
-1. In the Create new release panel, choose **Create**. Choose the link near the top of the window that indicates a new release was created.
-
-1. Open the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
-
-1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`, where `<publicIpAddress>` is the IP address of your web site on your IIS web server.
+[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
 ## Next steps
 

@@ -1,19 +1,22 @@
 ---
-title: Update a process template | TFS 
-description: To use the Configure Features Wizard to update existing team projects, you may need to update your custom process template when connecting to Team Foundation Server (TFS)  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Update a process template
+titleSuffix: TFS  
+description: Update a process template to support customizing work tracking for Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
 ms.manager: douge
-ms.author: kaelli
-ms.date: 03/02/2017    
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 02/26/2018
 ---
 
 # Update a customized process template to access new features
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
 
 When the Configure Features wizard can't update your team project, it's because your team project was created from a process template other than those TFS provides, or you've customized your team project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing team projects: 
@@ -394,7 +397,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Code Review
 	</td>
 	<td>
-	 [Request a code review from the My Work page in Team Explorer](/vsts/tfvc/get-code-reviewed-vs). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	 [Request a code review from the My Work page in Team Explorer]../../tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>
@@ -402,7 +405,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	My Work
 	</td>
 	<td>
-	[Develop code and manage pending changes](https://msdn.microsoft.com/library/ms245462.aspx#my_work) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	[Develop code and manage pending changes](../../tfvc/develop-code-manage-pending-changes.md) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>

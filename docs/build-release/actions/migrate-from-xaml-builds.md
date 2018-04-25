@@ -1,13 +1,17 @@
 ---
 title: Migrate from XAML builds
 description: Migrate from XAML builds to new builds in your Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.manager: douge
 ms.author: alewis
-ms.date: 05/19/2017
+author: andyjlewis
+ms.date: 04/17/2018
+monikerRange: '>= tfs-2013'
 ---
+
 
 # Migrate from XAML builds to new builds
 
@@ -256,7 +260,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 * [Release definitions](../concepts/definitions/release/index.md)
 
-* [How to: Work with release definitions](../actions/work-with-release-definitions.md)
+* [Triggers](../concepts/definitions/release/triggers.md)
 
 A few examples include:
 
@@ -318,6 +322,30 @@ If you want to create a reusable and automatically updated piece of logic, then 
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+::: moniker range="tfs-2018 || vsts"
+
+### I don't see XAML builds. What do I do?
+
+XAML builds are deprecated. We strongly recommend that you migrate to the new builds as explained above. 
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your account. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+If you're not yet ready to migrate, then to enable XAML builds:  
+
+1. Install [TFS 2018.2](https://www.visualstudio.com/downloads/?q=tfs).
+
+1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx).
+
+::: moniker-end
 
 ### How do I add conditional logic to my build process?
 

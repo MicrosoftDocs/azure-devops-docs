@@ -1,21 +1,23 @@
 ---
 title: Data model for the Analytics Service
 titleSuffix: VSTS 
-description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services (VSTS) 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-reporting
+description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services  
+ms.prod: devops
+ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
-ms.reviewer: davigust
+ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/13/2017
+ms.topic: reference
+ms.date: 2/18/2018
 ---
 
 # Data model for the Analytics Service  
 
-**VSTS**  
 
-The Analytics service data model consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized.  Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+
+The Analytics service data model for Visual Studio Team Services (VSTS) consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -32,7 +34,8 @@ The data model contains the following entity sets:
 |Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
 |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
 |Dates | The dates used to filter and group other entities using relationships |  
-|Projects | All VSTS projects|  
+|Projects | All VSTS projects|
+|Process | Backlog information - used to expand or filter work items and work item types|  
 |Tags | All work item tags for each project|  
 |Teams | All VSTS teams|  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
@@ -84,7 +87,7 @@ The following table provides a partial list of the WorkItemRevision entity prope
 >Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of this field. 
 
 
-##Related notes 
+##Related articles 
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

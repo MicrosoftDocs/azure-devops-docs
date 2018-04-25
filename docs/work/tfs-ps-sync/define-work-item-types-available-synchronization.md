@@ -1,13 +1,16 @@
 ---
-title: Define the work item types available for synchronization | TFS
-description: Configure the two server products before you synchronize data between Visual Studio Team Foundation Server (TFS) and  Project Server
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Define the work item types available for synchronization
+titleSuffix: TFS 
+description: Configure the two server products before you synchronize data between Team Foundation Server & Project Server
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: dd8f80c2-3faa-45a2-9941-1382a8b5c910
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
 ms.date: 01/12/2017
 ---
+
 # Define the work item types available for synchronization
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -57,7 +60,7 @@ TfsAdmin ProjectServer /UnmapWorkItemTypes /collection:tpcUrl /teamProject:TeamP
 |-------------------|---------------------|  
 |**/collection**:`tpcUrl`|Specifies the uniform resource locator (URL) of a team project collection. You specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
 |**/teamProject:** *TeamProjectName*|Specifies the name of a team project that is defined in the project collection.|  
-|**/workItemTypes**:`ListofWorkItemTypes`|Specifies, in a comma-delimited list, the reference names of one or more types of work items. You should specify only those types of work items whose data you want to track in Project Professional. For example, you can specify the following types of work items to support an Agile process as *“User Story,Task?* or *“User Story,Task*. Do not include a space after the comma.|  
+|**/workItemTypes**:`ListofWorkItemTypes`|Specifies, in a comma-delimited list, the reference names of one or more types of work items. You should specify only those types of work items whose data you want to track in Project Professional. For example, you can specify the following types of work items to support an Agile process as *"User Story,Task?* or *"User Story,Task*. Do not include a space after the comma.|  
 |**/skipUIChanges**|Specifies that the **Project Server** tab in the work item form should not be changed for the types that you specify. You should include this flag if you have customized the **Project Server** tab for the affected types or the `MapWorkItemTypes` command cannot complete. You can manually update a type definition. For more information, see [Added elements to WIT definitions](xml-elements-added-to-wit-definition.md).|  
 |**/force**|Removes all links that bind work items of the types that you specify to tasks in Project. If you use this option, you can remove types of work items from participating in data synchronization, even if one or more work items of that type that are currently being synchronized.|  
 |**/?** or **help**|Displays information about the command.|  
@@ -115,7 +118,7 @@ TfsAdmin ProjectServer /MapWorkItemTypes /collection:http://AdventureWorksServer
 TfsAdmin ProjectServer /UnmapWorkItemTypes /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection/ /teamProject:Contoso /workitemtypes:Task  
 ```  
   
-## Related notes  
+## Related articles  
  [Customize the field mapping](customize-field-mapping-tfs-project-server.md)   
  [Specify work item types](specify-wits-to-synchronize.md)   
  [Map integration components](map-integration-components.md)

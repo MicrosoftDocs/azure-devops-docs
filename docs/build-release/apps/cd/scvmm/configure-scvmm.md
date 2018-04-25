@@ -1,12 +1,15 @@
 ---
-ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
 title: Configure and deploy with System Center Virtual Machine Manager (SCVMM)
 description:  Configure and deploy with SCVMM using Microsoft Release Management in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: 1ACB0A12-84D5-4859-989C-723986F8FEF2
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Configure and manage VMs with System Center Virtual Machine Manager (SCVMM)
@@ -22,7 +25,7 @@ VSTS or Team Foundation Server.
 You need SCVMM. If you want to create an isolated virtual network using SCVMM, see [this topic](../../../actions/virtual-networks/create-virtual-network.md).
 
 1. Install the **Virtual Machine Manager** (VMM) console by
-   following [these instructions](https://technet.microsoft.com/library/gg610627.aspx).
+   following [these instructions](https://docs.microsoft.com/system-center/vmm/install-console).
    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
 1. Install an agent on the **agent machine**:
@@ -70,16 +73,12 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
 1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
    "**+**" icon to create a new release definition.
 
-1. In the **Create release definition** dialog, 
-   select the **Empty** template and choose **Next**.
+1. Choose **Start with an Empty process**.
 
-1. In the next page, select **Choose Later** and then choose **Create**.
-   This creates a new release definition with one 
-   default environment and no linked artifacts.
+1. Open the **Tasks** tab and choose the **+** icon for the **Agent phase**.
+   Add an **SCVMM** task to the environment.
 
-1. Choose **+ Add tasks** and add an **SCVMM** task 
-   from the **Deploy** section of the **Task catalog** 
-   dialog to the environment.
+   ![Adding an SCVMM task](../_img/add-scvmm-task.png)
 
 1. You can select the action from the list of actions available in the task.
    See [SCVMM task actions](../../../actions/virtual-networks/manage-vms-using-scvmm.md) for details.
@@ -110,7 +109,9 @@ You need SCVMM. If you want to create an isolated virtual network using SCVMM, s
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

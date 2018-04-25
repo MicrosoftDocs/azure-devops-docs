@@ -8,7 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/26/2016
+monikerRange: '>= tfs-2013 < vsts'
 ---
+
+
 
 # Upgrade your deployment to the latest version of TFS
 

@@ -2,12 +2,16 @@
 title: Delete Command (Team Foundation Version Control)
 description: Delete Command (Team Foundation Version Control)
 ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Delete Command (Team Foundation Version Control)
 
@@ -49,7 +53,7 @@ To use the **delete** command, you must have the **Check out** permission set to
 </table>
 
 ## Remarks
-The **delete** command records a pending change of type "delete" in your workspace for the items that you have specified. When you commit a pending change of type "delete" to the Team Foundation version control server by using the** checkin** command, Team Foundation removes the item from the Team Foundation version control server but does not delete it permanently. You can locate deleted items in the Team Foundation version control server by using the Dir Command and you can restore deleted items using the [Undelete Command](undelete-command.md).
+The **delete** command records a pending change of type "delete" in your workspace for the items that you have specified. When you commit a pending change of type "delete" to the Team Foundation version control server by using the** checkin** command, Team Foundation removes the item from the Team Foundation version control server but does not delete it permanently. You can locate deleted items in the Team Foundation version control server by using the Dir Command and you can restore deleted items using the [Undelete Command](undelete-command.md).
 
 If you have deleted an item in your workspace but have not checked in the change, you can restore the item to your workspace and remove the deletion from your list of pending changes using the [Undo Command](undo-command.md).
 

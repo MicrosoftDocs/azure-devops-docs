@@ -1,11 +1,13 @@
 ---
-title: Build Project tables | TFS
+title: Build Project tables
+titleSuffix: TFS 
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 description: Query for data about the files and projects that were built and information about those files  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---
 

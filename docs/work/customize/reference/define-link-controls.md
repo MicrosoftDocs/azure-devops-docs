@@ -1,11 +1,11 @@
 ---
 title: Define link controls, restrict link relationships | VSTS & TFS
 description: Controls and restrict the link relationships that the team members can view and make from that control to include only links to other features - Team Foundation Server (TFS) 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 <b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013</b>
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -40,18 +40,18 @@ For a summary of the link restrictions that are defined within the process templ
   
 ```  
 <Tab Label="All Links">  
-   <Control Type="LinksControl" Name="All" >  
-      <LinksControlOptions>  
-         <LinkColumns>  
-            <LinkColumn RefName="System.ID" />  
-            <LinkColumn RefName="System.WorkItemType" />  
-            <LinkColumn RefName="System.Title" />  
-            <LinkColumn RefName="System.AssignedTo" />  
-            <LinkColumn RefName="System.State" />  
-            <LinkColumn LinkAttribute="System.Links.Comment" />  
-         </LinkColumns>  
-      </LinksControlOptions>  
-   </Control>  
+      <Control Type="LinksControl" Name="All" >  
+      <LinksControlOptions>  
+         <LinkColumns>  
+               <LinkColumn RefName="System.ID" />  
+               <LinkColumn RefName="System.WorkItemType" />  
+               <LinkColumn RefName="System.Title" />  
+               <LinkColumn RefName="System.AssignedTo" />  
+               <LinkColumn RefName="System.State" />  
+               <LinkColumn LinkAttribute="System.Links.Comment" />  
+         </LinkColumns>  
+      </LinksControlOptions>  
+      </Control>  
 </Tab>  
 ```   
   
@@ -72,7 +72,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-   <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
+      <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
 </WorkItemLinkFilters>  
 ```  
   
@@ -88,13 +88,13 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <Control Type="LinksControl" Name="UniqueName">  
-   <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="exclude">  
-         <Filter LinkType="MyLinks.LinkTypes.Requirement" />   
-         <Filter LinkType="System.LinkTypes.Hierarchy" />   
-      </WorkItemLinkFilters>  
-      <ExternalLinkFilters FilterType="excludeAll" />   
-   </LinksControlOptions>  
+      <LinksControlOptions>  
+      <WorkItemLinkFilters FilterType="exclude">  
+         <Filter LinkType="MyLinks.LinkTypes.Requirement" />   
+         <Filter LinkType="System.LinkTypes.Hierarchy" />   
+      </WorkItemLinkFilters>  
+      <ExternalLinkFilters FilterType="excludeAll" />   
+      </LinksControlOptions>  
 . . .  
 </Control>  
 ```   
@@ -105,7 +105,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-   <Filter LinkType="externalLinkName" />  
+      <Filter LinkType="externalLinkName" />  
 </ExternalLinkFilters>  
 ```  
   
@@ -120,10 +120,10 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <Control Type="LinksControl" Name="UniqueName">  
-   <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="includeAll" />   
-      <ExternalLinkFilters FilterType="excludeAll" />   
-   </LinksControlOptions>  
+      <LinksControlOptions>  
+      <WorkItemLinkFilters FilterType="includeAll" />   
+      <ExternalLinkFilters FilterType="excludeAll" />   
+      </LinksControlOptions>  
 </Control>  
 ```  
   
@@ -131,12 +131,12 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <Control Type="LinksControl" Name="UniqueName">  
-   <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="excludeAll"/>  
-      <ExternalLinkFilters FilterType="include" />   
-         <Filter LinkType="Fixed in Changeset" />  
-      </ExternalLinkFilters>   
- </LinksControlOptions>  
+      <LinksControlOptions>  
+      <WorkItemLinkFilters FilterType="excludeAll"/>  
+      <ExternalLinkFilters FilterType="include" />   
+         <Filter LinkType="Fixed in Changeset" />  
+      </ExternalLinkFilters>   
+ </LinksControlOptions>  
 . . .  
 </Control>  
   
@@ -147,7 +147,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" >  
-   <Filter WorkItemType="workItemTypeReferenceName" />  
+      <Filter WorkItemType="workItemTypeReferenceName" />  
 </WorkItemTypeFilters>  
 ```  
   
@@ -163,15 +163,15 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <Control Type="LinksControl" Name="UniqueName">  
-   <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="include">  
-         <Filter LinkType="System.LinkTypes.Hierarchy" />  
-      </WorkItemLinkFilters>  
-      <ExternalLinkFilters FilterType="excludeAll"/>  
-      <WorkItemTypeFilters Scope ="project" FilterType="include" />  
-         <Filter WorkItemType="Task" />  
-      </WorkItemTypeFilters>   
-   </LinksControlOptions>  
+      <LinksControlOptions>  
+      <WorkItemLinkFilters FilterType="include">  
+         <Filter LinkType="System.LinkTypes.Hierarchy" />  
+      </WorkItemLinkFilters>  
+      <ExternalLinkFilters FilterType="excludeAll"/>  
+      <WorkItemTypeFilters Scope ="project" FilterType="include" />  
+         <Filter WorkItemType="Task" />  
+      </WorkItemTypeFilters>   
+      </LinksControlOptions>  
 . . .  
 </Control>  
   
@@ -182,7 +182,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```  
 <LinkColumns>  
-   <LinkColumn RefName="reference name" | LinkAttribute=" link attribute name" />  
+      <LinkColumn RefName="reference name" | LinkAttribute=" link attribute name" />  
 </LinkColumns>  
 ```  
   
@@ -191,18 +191,18 @@ When you add a link control to a work item form, you can specify filters that re
 ```  
 <Control Type="LinksControl">  
 . . .  
-   <LinksControlOptions>  
-      <LinkColumns>  
-         <LinkColumn RefName="System.ID" />  
-         <LinkColumn RefName="System.State" />  
-         <LinkColumn RefName="System.Title" />  
-         <LinkColumn LinkAttribute="System.Links.Comment" />  
-      </LinkColumns>  
-   </LinksControlOptions>  
+      <LinksControlOptions>  
+      <LinkColumns>  
+         <LinkColumn RefName="System.ID" />  
+         <LinkColumn RefName="System.State" />  
+         <LinkColumn RefName="System.Title" />  
+         <LinkColumn LinkAttribute="System.Links.Comment" />  
+      </LinkColumns>  
+      </LinksControlOptions>  
 </Control>  
   
 ```    
   
-## Related notes 
+## Related articles 
 -  [Link controls, restrictions, and fields](../../track/linking-attachments.md)   
 -  [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)    

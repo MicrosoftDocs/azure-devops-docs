@@ -1,11 +1,13 @@
 ---
-title: All WITD XML elements reference | VSTS & TFS
-description: Customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: All WITD XML elements reference
+titleSuffix: VSTS & TFS
+description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: reference
 ms.date: 02/14/2017
 ---
 
@@ -26,13 +28,13 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 <witd:WITD application="Work item type editor" version="1.0" xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef">  
-    <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">  
-        <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>  
-        <GLOBALLISTS> . . . </GLOBALLISTS>  
-        <FIELDS> . . . </FIELDS>  
-        <WORKFLOW> . . . </WORKFLOW>  
-        <FORM> . . . </FORM>  
-    </WORKITEMTYPE>  
+       <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">  
+          <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>  
+          <GLOBALLISTS> . . . </GLOBALLISTS>  
+          <FIELDS> . . . </FIELDS>  
+          <WORKFLOW> . . . </WORKFLOW>  
+          <FORM> . . . </FORM>  
+       </WORKITEMTYPE>  
 </witd:WITD>  
 ```  
   
@@ -80,18 +82,20 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 
 <pre><code>
 &lt;DESCRIPTION&gt; DescriptionOfWorkItemType&lt;/DESCRIPTION&gt;
-</code>
-<p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr><tr><td data-th="Element"><b>GLOBALLISTS</b></td>
+</code></pre>
+<p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr
+<tr>
+<td data-th="Element"><b>GLOBALLISTS</b></td>
 <td><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a team project collection. <a href="define-global-lists.md">Define global lists</a> to support cross-group collaboration and ease of maintenance. </p>
 <code></pre>
 &lt;GLOBALLIST name="globalListName"&gt;  
-&nbsp;&nbsp;&nbsp;&lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
+   &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
 &lt;/GLOBALLIST&gt;  
 </code>
 <p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WIT. Within the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
 <pre><code>
 &lt;FIELDS&gt;  
-&nbsp;&nbsp;&nbsp;&lt;FIELD&gt; . . . &lt;/FIELD&gt;  
+   &lt;FIELD&gt; . . . &lt;/FIELD&gt;  
 &lt;/FIELDS&gt;  
 </code>
 </td></tr>
@@ -101,19 +105,19 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 <p><b>For TFS 2015 and earlier versions</b>, the <b>FORM</b> element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
 <code></pre>
 &lt;FORM&gt;  
-&nbsp;&nbsp;&nbsp;&lt;Layout&gt; . . . &lt;/Layout&gt;  
+   &lt;Layout&gt; . . . &lt;/Layout&gt;  
 &lt;/FORM&gt;  
 </code>
 <p>**For the Hosted XML and On-premises XML (TFS 2017 and later versions) process models**, the **FORM** element contains <strong>WebLayout</strong>, <strong>Control</strong>, <strong>SystemControls</strong>, <strong>Section</strong>, <strong>Page</strong>,  and other elements. </p>
 <pre><code>&lt;WebLayout&gt; 
-   &lt;Page&gt;  
-	   &lt;Section&gt;  
-		   &lt;Group&gt;  
-			   &lt;Control&gt; . . . &lt;/Control&gt;
-			   &lt;Control&gt; . . . &lt;/Control&gt;
-		   &lt;/Group&gt;
-	   &lt;/Section&gt;
-   &lt;/Page&gt;
+      &lt;Page&gt;  
+	      &lt;Section&gt;  
+		      &lt;Group&gt;  
+			      &lt;Control&gt; . . . &lt;/Control&gt;
+			      &lt;Control&gt; . . . &lt;/Control&gt;
+		      &lt;/Group&gt;
+	      &lt;/Section&gt;
+      &lt;/Page&gt;
 . . .
 &lt;/WebLayout&gt;</code></pre>
 
@@ -129,8 +133,8 @@ For the Hosted XML and On-premises XML process models (TFS 2017 and later versio
 <td><p>Defines the workflow elements that help track the work item status as it moves from a new state to closed or done. This element contains the set of <strong>STATE</strong> and <strong>TRANSITION</strong> elements that define the workflow. The workflow is a set of valid transitions from one state to another and the specific conditions associated with each transition.</p>
 <pre><code>
 &lt;WORKFLOW&gt;  
-&nbsp;&nbsp;&nbsp;&lt;STATES&gt; . . . &lt;/STATES&gt;  
-&nbsp;&nbsp;&nbsp;&lt;TRANSITIONS&gt; . . . &lt;/TRANSITIONS&gt;  
+      &lt;STATES&gt; . . . &lt;/STATES&gt;  
+      &lt;TRANSITIONS&gt; . . . &lt;/TRANSITIONS&gt;  
 &lt;/WORKFLOW&gt;  
 </code></pre>
 </td>
@@ -158,7 +162,7 @@ WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.
   
 To learn how to create or customize a WIT, see [Modify or add a custom work item type](../add-modify-wit.md).  
   
-## Related notes 
+## Related articles 
  
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  

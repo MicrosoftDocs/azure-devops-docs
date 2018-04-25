@@ -35,6 +35,7 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 ## Step-by-step tutorials
 
 - [Add administrators](add-administrator-tfs.md)
+- [Change permission levels for a user](../security/change-individual-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 - [Configure an SMTP server](admin/setup-customize-alerts.md)
 - [Manage team project collections](./admin/manage-team-project-collections.md)
 - [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) 
@@ -50,7 +51,6 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 
 ## How-to guides
 
-- [Change permission levels for a user](admin/change-permission-levels.md)
 - [Open the admin console](./command-line/open-admin-console.md)
 - [Change access levels (TFS)](../security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 

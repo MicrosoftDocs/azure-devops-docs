@@ -2,11 +2,14 @@
 title: Plan manual tests with Microsoft Test Manager
 description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Plan manual tests with Microsoft Test Manager
@@ -14,6 +17,8 @@ ms.date: 01/18/2018
 [!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 At the start of a sprint, find out what you need to test. Discussing test cases is a great way to help the team understand the detail of what your users need. Tests planned in this way provide a clear target for the development team.  
+
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 > **TIP**
 > You can also use [the web portal to plan manual tests](../getting-started/create-a-test-plan.md). It is generally more convenient for creating test cases.  

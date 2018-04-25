@@ -1,16 +1,18 @@
 ---
-title: Bugs dashboard (Agile and CMMI) | TFS
-description: Monitor Bug activity for a team project by using the Bugs dashboard - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+title: Bugs dashboard (Agile and CMMI) 
+titleSuffix: TFS
+description: Monitor Bug activity for a team project by using the Bugs dashboard - Team Foundation Server  
+ms.prod: devops-server
+ms.technology: devops-analytics
+ms.topic: reference
 ms.assetid: ecd05065-521c-451f-acd9-efde10fa1822
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
 # Bugs dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
 You can monitor Bug activity for a team project by using the Bugs dashboard, which shows the following charts:  

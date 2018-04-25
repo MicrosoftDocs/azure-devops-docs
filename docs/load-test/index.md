@@ -1,12 +1,15 @@
 ---
-title: Load Testing
+title: Load Testing index and overview in VSTS and TFS
 description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Load Testing
@@ -46,6 +49,7 @@ Learn how to run performance and load tests against your app.
 * [Record and replay tests](record-and-replay-cloud-load-tests.md)
 * [Load test private and intranet apps](clt-behind-firewall.md)
 * [Load test using your own servers](clt-with-private-machines.md)
+* [Install certificates and software](install-certs-and-software.md)
 
 ## Troubleshooting
 
@@ -58,12 +62,11 @@ Learn how to run performance and load tests against your app.
 
 ## Resources
 
-* [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.120%29.aspx)
-* [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.120%29.aspx)
-* [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.120%29.aspx)
-* [Create custom code &amp; plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.120%29.aspx)
-* [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.120%29.aspx)
-* [Web Performance Test API](https://msdn.microsoft.com/library/ms182558%28v=vs.120%29.aspx)
+* [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project)
+* [Edit load tests](https://docs.microsoft.com/visualstudio/test/edit-load-tests)
+* [Create custom code &amp; plug-ins](https://docs.microsoft.com/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
+* [Analyze load test results](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Web Performance Test API](https://docs.microsoft.com/visualstudio/test/how-to-use-the-web-performance-test-api)
 * [Manual and exploratory testing](../manual-test/index.md)
 * [Continuous testing](../build-release/test/index.md)
 * [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)

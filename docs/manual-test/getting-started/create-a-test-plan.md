@@ -1,13 +1,15 @@
 ---
-title: Create test plans in VSTS
+title: Create a test plan - manual testing in VSTS
 description: Create test plans in VSTS to track manual tests during sprints or milestones
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
-ms.topic: get-started-article
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Create a test plan and test suite
@@ -25,7 +27,9 @@ This includes static test suites, requirement-based suites, and
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
 
-> **Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
+**Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).
 
 <a name="testplan"></a>
@@ -36,10 +40,7 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
    [create your team project](../../accounts/account-management.md), 
    and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
-1. In VSTS, select your team project. 
-   (If you haven't been here before, use Browse.)
-
-   ![Select team project from account overview page](_img/create-a-test-plan/SelectTeamProject.png)
+1. In VSTS, open your team project.
 
 1. Go to the **Test Plans** tab of the **Test** hub. Create a test plan for your current sprint.
 

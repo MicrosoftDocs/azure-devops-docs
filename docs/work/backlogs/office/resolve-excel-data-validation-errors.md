@@ -1,17 +1,20 @@
 ---
-title: Resolve data validation errors | VSTS & TFS
-description: Address rule errors that occur when publishing a list from Excel or Project to VSTSor Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Resolve data validation errors
+titleSuffix: VSTS & TFS
+description: Address rule errors that occur when publishing a list from Excel or Project to Visual Studio Team Services & Team Foundation Server 
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
 ms.date: 02/22/2017  
 ---
 
 # Resolve data validation errors (publish and refresh)
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 A data validation error occurs when a change in the work item list or project plan violates a rule of the work item type. The following examples show common data validation errors:  
   
@@ -69,7 +72,7 @@ A data validation error occurs when a change in the work item list or project pl
   
     -   If a message appears that indicates error checking has completed, click **OK** to close both this message and the **Error Checking** dialog box.  
   
-## Related notes
+## Related articles
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Work in Excel and Project](track-work-vsts-tfs.md) 

@@ -1,20 +1,22 @@
 ---
 title: LinksControlOptions XML elements (client) 
-titleSuffix: VSTS & TFS  
+titleSuffix: TFS  
 description: XML syntax to scope the allowed links within a links control element used in the client and web forms for Team Foundation Server (TFS)  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/02/2017
 ---
 
-# LinksControlOptions elements (Client and web, TFS 2015) 
+# LinksControlOptions elements
 
 **TFS 2015 | TFS 2013**
 
->[!IMPORTANT]  
+> [!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
 >
 >Customizing link control options is not a supported feature for the Hosted XML process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -137,7 +139,7 @@ The links control that is displayed is the same for both the web portal and Team
   
 
   
-## Related notes  
+## Related articles  
 -  [LinkTypes elements reference, Define a custom link type ](link-type-element-reference.md)   
 -  [Define link controls to restrict link relationships](define-link-controls.md)
 -  [Specify work item form controls](specify-work-item-form-controls.md)  

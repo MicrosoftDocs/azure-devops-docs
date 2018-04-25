@@ -1,17 +1,19 @@
 ---
-title: Background to CMMI | VSTS & TFS
+title: Background to CMMI 
+titleSuffix: VSTS & TFS
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
-ms.author: kaelli
+ms.topic: conceptual
+ms.author: kaelli  author: KathrynEE  
 ms.manager: douge
 ms.date: 01/20/2017
 ---
 
 # Background to CMMI
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 The definitive guide to the Capability Maturity Model Integration (CMMI) for Development is published by the Software Engineering Institute as "CMMI: Guidelines for Process Integration and Product Improvement." This book specifically describes the CMMI for Development (CMMI-DEV) version 1.3, which is one of the models within the current CMMI product suite at the time of this writing. This model is extremely stable and should continue to be current well beyond 2010. You may also find "CMMI Distilled: A Practical Introduction to Integrated Process Improvement" to be a useful and accessible book about the topic. For more information about both of these books, see [Additional resources](#resources) later in this topic.  
   
@@ -105,5 +107,5 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
 -   [CMMI Distilled: A Practical Introduction to Integrated Process Improvement](http://go.microsoft.com/fwlink/?LinkId=179000) (3rd Edition), Dennis M. Ahren, Aaron Clause, and Richard Turner; Addison-Wesley Professional, 2008.  
   
-## Related notes
+## Related articles
  [CMMI process](../cmmi-process.md)

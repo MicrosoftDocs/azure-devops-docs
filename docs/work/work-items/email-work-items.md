@@ -1,9 +1,11 @@
 ---
 title: Email or print work items
-description: Email or print work items to share work tracking information in VSTS or TFS 
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS
+description: Email or print work items to share work tracking information in Visual Studio Team Services & Team Foundation Server
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 ms.date: 11/27/2017  
@@ -20,7 +22,7 @@ Using work items to track your work provides a host of benefits, including the a
 
 Here's a list of the most common ways in which teams share information and plans using work item tracking. 
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
 
 <table >
@@ -92,7 +94,7 @@ Some of the most common ways information is shared within a team or across teams
 
 You can quickly email a summary of one or more work items. Summaries include the values assigned to these fields: work item ID, title, work item type, assigned to, state, and tags.  
 
->[!NOTE]  
+> [!NOTE]    
 >You can only send the email to addresses that are recognized by the system, that is accounts of team members or stakeholders. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't  permissions to read the mailed work items.  
 
 # [Browser](#tab/browser)
@@ -254,10 +256,10 @@ To print the details of a work item, open a query in Visual Studio that contains
 <a id="release-summary"></a>
 ## Email release summary
 
-From the Release hub, [choose a specific release](../../build-release/actions/view-manage-releases.md) and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
+From the Release hub, choose a specific release and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
 
 
->[!NOTE]  
+> [!NOTE]    
 ><b>Feature availability: </b>This feature is available from VSTS and TFS 2018 and later versions.
  
 
@@ -271,7 +273,7 @@ Optionally, enter a note about the release or un-check any section you don't wan
 
 
 
-## Related notes  
+## Related articles  
 
 As you can see, there are many ways to share information using work items alone.  
 

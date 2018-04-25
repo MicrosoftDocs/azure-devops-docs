@@ -1,18 +1,18 @@
 ---
 title: FIELD (Definition) element reference | VSTS & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 06/16/2017
 ---
 
 # FIELD (Definition) element reference
 
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **FIELD** (Definition) element to define a work item field and specify the rules and conditions that apply to it. The attributes that you assign to a field determines its data type and whether it is available for inclusion in reports.  
   
@@ -21,8 +21,8 @@ You use the **FIELD** (Definition) element to define a work item field and speci
   
 ## Syntax  
   
->[!NOTE]  
-><b>Feature availability:</b> The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
+> [!NOTE]    
+>**Feature availability:** The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
@@ -141,7 +141,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
 </FIELD>  
 ```  
   
-## Related notes   
+## Related articles   
 -  [Naming restrictions and conventions](../../../collaborate/naming-restrictions.md)   
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md)   
 -  [Customize your work tracking experience](../customize-work.md)    

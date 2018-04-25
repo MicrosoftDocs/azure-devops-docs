@@ -2,24 +2,24 @@
 title: Upload or download the Microsoft Project Mapping file
 titleSuffix: TFS
 description: Upload or download the Microsoft Project mapping file using the TFSFieldMapping command
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 
 
 # Upload or download the Microsoft Project Mapping file
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
   
 Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a team project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
   
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
-The **TFSFieldMapping** command-line tool only works when run against an on-premises TFS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
+The **TFSFieldMapping** command-line tool works for both on-premises TFS and cloud-hosted VSTS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
 |Version | Change directory |
 |--------|-----------|
@@ -114,6 +114,6 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
     TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
     ```  
   
-## Related notes
+## Related articles
 -  [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)   
 -  [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md)

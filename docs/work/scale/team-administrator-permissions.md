@@ -1,21 +1,23 @@
 ---
-title: Team administrator permissions | VSTS & TFS 
-description: Understand what permissions are granted to team administrators  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+title: Team administrator permissions
+titleSuffix: VSTS & TFS
+description: Understand  permissions team administrator permissions in Visual Studio Team Services & Team Foundation Server  
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 08/15/2017
 ---
 
 # Team administrator role and permissions
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 
-For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team assets](../../teams/about-teams-and-settings.md).  
+For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team assets](../../settings/about-teams-and-settings.md).  
 
 In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administors. 
 
@@ -77,11 +79,18 @@ Team administrators can add and modify alerts so that the team can receive email
 
 
 <a id="team-rooms" />
+
+::: moniker range=">= tfs-2013 <= tfs-2017"
 ## Create and manage team rooms 
 
 Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md).  
 
-## Related notes
+> [!NOTE]  
+> Team Rooms are deprecated for TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
+
+::: moniker-end
+
+## Related articles
 
 - [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md) 
 - [Add teams and team members](multiple-teams.md) 

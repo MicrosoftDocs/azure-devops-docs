@@ -1,17 +1,20 @@
 ---
-title: Azure monitor task 
+title: Azure monitor task for Microsoft VSTS and TFS
 description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/19/2018
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: 'vsts'
 ---
 
 # Utility: Azure monitor
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+**VSTS**
 
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
@@ -36,10 +39,20 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).
 
-## Q & A
+::: moniker range="vsts"
 
-<!-- BEGINSECTION class="md-qanda" -->
+## YAML snippet
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+(VSTS-only)
 
-<!-- ENDSECTION -->
+```YAML
+- task: AzureMonitor@0
+  inputs:
+    connectedServiceNameARM:
+    ResourceGroupName:
+#   ResourceType: Microsoft.Insights/components # Microsoft.Insights/components (default), Microsoft.Web/sites, Microsoft.Storage/storageAccounts, Microsoft.Compute/virtualMachines
+    resourceName:
+    alertRules:
+```
+
+::: moniker-end

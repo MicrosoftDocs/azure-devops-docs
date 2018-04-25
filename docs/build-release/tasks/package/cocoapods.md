@@ -1,13 +1,17 @@
 ---
 title: CocoaPods
 description: How to use CocoaPods packages when building code in VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
 ms.assetid: D690542B-9A13-4836-8C1E-D715AE6CB7D6
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Package: CocoaPods 
  
@@ -39,6 +43,21 @@ Working directory. If you leave it blank, the working directory is the root of y
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+(VSTS-only)
+
+```YAML
+- task: CocoaPods@0
+  inputs:
+    workingDirectory:
+#   forceRepoUpdate: False
+    projectDirectory:
+```
+
+::: moniker-end
 
 ## Q & A
 
@@ -48,6 +67,8 @@ Working directory. If you leave it blank, the working directory is the root of y
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->

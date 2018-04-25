@@ -1,34 +1,36 @@
 ---
-title: Change the work item form layout | VSTS & TFS
-description: Change the work item form layout be exporting the XML file and modifying the contents of the section - Team Foundation Server (TFS)
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+title: Change the work item form layout 
+titleSuffix: TFS 
+description: Change the work item form layout by exporting the XML file and modifying its contents for Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 73869d51-eaa2-4aad-90f4-3081b8d26963
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 03/31/2017
 ---
 
 # Change the work item form layout
 
-<p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
-
-> [!IMPORTANT]  
-> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
->
-> For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
+[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)] 
 
 You can change the work item form layout by exporting the XML file and modifying the contents of the `FORM` section. After you modify and import the XML file, you can verify the changes you made in the updated work item type. Types of layout changes you can make include but are not limited to the following:  
   
 -   Change the label or placement of a field on the form    
 -   Move groups of fields from one tab to another    
 -   Add new tabs or columns  
+
+
+> [!IMPORTANT]  
+> This topic applies to team project customization for On-premises XML (TFS 2017 and earlier versions) process models using the old form layout. For TFS 2017 and later versions, see [WebLayout and Control elements](weblayout-xml-elements.md). 
+>
+> For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).
   
 For an overview of the controls you can place in a work item form, see [Specify work item form controls](specify-work-item-form-controls.md). For an overview of the top-level structural elements for the `FORM` section, see. [Design the work item form](design-work-item-form.md).  
   
-
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
-
+[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
   
 <a name="Export"></a> 
 ## Export and open the WIT definition file  
@@ -54,10 +56,10 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Tab Label="Links">  
-      <Control Type="LinksControl" />  
+          <Control Type="LinksControl" />  
     </Tab>  
     <Tab Label="File Attachments">  
-      <Control Type="AttachmentsControl" />  
+          <Control Type="AttachmentsControl" />  
     </Tab>  
     ```  
   
@@ -65,8 +67,8 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Tab Label="Links and Attachments">  
-      <Control Type="LinksControl" Label="Links" LabelPosition="Top" />  
-      <Control Type="AttachmentsControl" Label="Attachments" LabelPosition="Top" />  
+          <Control Type="LinksControl" Label="Links" LabelPosition="Top" />  
+          <Control Type="AttachmentsControl" Label="Attachments" LabelPosition="Top" />  
     </Tab>  
     ```  
   
@@ -74,10 +76,10 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Group Label="Classification">  
-      <Column PercentWidth="100">  
-        <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
-        <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
-      </Column>  
+          <Column PercentWidth="100">  
+           <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
+           <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
+          </Column>  
     </Group>  
     ```  
   
@@ -96,43 +98,43 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Layout>  
-      <Group>  
-        <Column PercentWidth="70">  
-          <Control Type="FieldControl" FieldName="System.Title" Label="&Title:" LabelPosition="Left" />  
-        </Column>  
-        <Column PercentWidth="30">  
-          <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Discipline" Label="&Discipline:" LabelPosition="Left" />  
-        </Column>  
-      </Group>  
-      <Group Label="Classification">    <Column PercentWidth="100">      <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="&Area:" LabelPosition="Left" />      <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="&Iteration:" LabelPosition="Left" />    </Column>  </Group>  
+          <Group>  
+           <Column PercentWidth="70">  
+          <Control Type="FieldControl" FieldName="System.Title" Label="&Title:" LabelPosition="Left" />  
+           </Column>  
+           <Column PercentWidth="30">  
+          <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Discipline" Label="&Discipline:" LabelPosition="Left" />  
+           </Column>  
+          </Group>  
+          <Group Label="Classification">       <Column PercentWidth="100">      <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="&Area:" LabelPosition="Left" />      <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="&Iteration:" LabelPosition="Left" />       </Column>      </Group>  
     ```  
   
 6.  In the `<TabGroup>` section, find the following lines that define the **Details** tab:  
   
     ```  
     <Tab Label="Details">  
-      <Group>  
-        <Column PercentWidth="50">  
-          <Group Label="General">  
-            <Column PercentWidth="100">  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.ExitCriteria" Label="E&xit criteria:" LabelPosition="Left" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Build.IntegrationBuild" Label="Integration &build:" LabelPosition="Left" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.TaskHierarchy" Label="Task C&ontext:" LabelPosition="Left" ReadOnly="True" />  
-            </Column>  
-          </Group>  
-        </Column>  
-        <Column PercentWidth="50">  
-          <Group Label="Schedule">  
-            <Column PercentWidth="100">  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Label="Remaining &work (hours):" LabelPosition="Left" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.CompletedWork" Label="Com&pleted work (hours):" LabelPosition="Left" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.StartDate" Label="Start Dat&e:" LabelPosition="Left" ReadOnly="True" />  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.FinishDate" Label="&Finish Date:" LabelPosition="Left" ReadOnly="True" />  
-            </Column>  
-          </Group>  
-        </Column>  
-      </Group>  
+          <Group>  
+           <Column PercentWidth="50">  
+          <Group Label="General">  
+             <Column PercentWidth="100">  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.ExitCriteria" Label="E&xit criteria:" LabelPosition="Left" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Build.IntegrationBuild" Label="Integration &build:" LabelPosition="Left" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.TaskHierarchy" Label="Task C&ontext:" LabelPosition="Left" ReadOnly="True" />  
+             </Column>  
+          </Group>  
+           </Column>  
+           <Column PercentWidth="50">  
+          <Group Label="Schedule">  
+             <Column PercentWidth="100">  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Label="Remaining &work (hours):" LabelPosition="Left" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.CompletedWork" Label="Com&pleted work (hours):" LabelPosition="Left" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.StartDate" Label="Start Dat&e:" LabelPosition="Left" ReadOnly="True" />  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.FinishDate" Label="&Finish Date:" LabelPosition="Left" ReadOnly="True" />  
+             </Column>  
+          </Group>  
+           </Column>  
+          </Group>  
     </Tab>  
     ```  
   
@@ -140,12 +142,12 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Tab Label="Details">  
-      <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
-      <Group>  
-        <Column PercentWidth="50">  
-          <Group Label="General">  
-            <Column PercentWidth="100">  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
+          <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />      <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
+          <Group>  
+           <Column PercentWidth="50">  
+          <Group Label="General">  
+             <Column PercentWidth="100">  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
     ...  
     ```  
   
@@ -153,15 +155,28 @@ Perform one of the following steps based on the scope of the customization you a
   
     ```  
     <Tab Label="Details">  
-      <Group Label="Classification">    <Column PercentWidth="50">      <Group>        <Column PercentWidth="100">          <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
-              <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
-            </Column>      </Group>    </Column>    <Column PercentWidth="50">      <Group>        <Column PercentWidth="100">          <Control Type="FieldControl" FieldName="MyCompany.MyProcess.Category" Label="Category" LabelPosition="Left" />  
-            </Column>      </Group>    </Column>  </Group>  
-      <Group>  
-        <Column PercentWidth="50">  
-          <Group Label="General">  
-            <Column PercentWidth="100">  
-              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
+       <Group Label="Classification">
+          <Column PercentWidth="50">
+             <Group>
+                <Column PercentWidth="100">
+                   <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
+                   <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
+                </Column>
+             </Group>
+          </Column>
+          <Column PercentWidth="50">
+             <Group>
+                <Column PercentWidth="100">
+                   <Control Type="FieldControl" FieldName="MyCompany.MyProcess.Category" Label="Category" LabelPosition="Left" />  
+                </Column>
+             </Group>
+          </Column>
+       </Group>  
+       <Group>  
+           <Column PercentWidth="50">  
+       <Group Label="General">  
+            <Column PercentWidth="100">  
+              <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
     ...  
     ```  
   
@@ -180,7 +195,7 @@ Perform one of the following steps based on the scope of the customization you a
   
      Notice that the Classification group is no longer on the main form. On the **Links and Attachments** tab choose the **Details** tab to see the results of the changes that you made.  
   
-## Related notes 
+## Related articles 
 -  [Design the work item form](design-work-item-form.md)   
 -  [Specify work item form controls](specify-work-item-form-controls.md)   
 -  [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)

@@ -1,16 +1,17 @@
 ---
 title: Manage permissions for READMEs and wiki pages
-description: Set permissions to grant or secure access to readme files and you team project built-in wiki  
-ms.technology: collaborate
-ms.prod: vs-devops-alm
+titleSuffix: VSTS & TFS 
+description: Set permissions to grant or secure access to readme files and you team project built-in wiki in Visual Studio Team Services & Team Foundation Server   
+ms.technology: devops-collab
+ms.custom: wiki
+ms.prod: devops
+ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 10/18/2017
+monikerRange: '>= tfs-2017'
 --- 
-
-
-
 
 # Manage README and Wiki permissions 
 
@@ -58,3 +59,9 @@ Stakeholders in a project can read wiki pages and view revisions, however they c
 
 > [!NOTE]    
 > Users with [Stakeholder access](../security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed.  
+
+## Q & A
+
+###Q:  Is it possible to grant permissions on a per-page basis?
+
+**A:** No, permissions to access the wiki are made for all pages and not individual pages. 

@@ -86,7 +86,7 @@
     href: reference-qa.md
   - name: Unable to connect
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
-  - name: Default permissions and access
+  - name: Default permissions (Security)
     href: manual-test-permissions.md
 - name: Resources
   items:
@@ -107,4 +107,4 @@
   - name: Continuous testing
     href: ../build-release/test/index.md
   - name: Unit testing
-    href: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios
+    href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

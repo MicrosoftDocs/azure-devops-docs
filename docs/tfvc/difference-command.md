@@ -2,12 +2,16 @@
 title: Difference Command
 description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: reference
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Difference Command
 
@@ -129,7 +133,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 -   **Context**
 
-    **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff –c** output format.
+    **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff -c** output format.
 
 -   **RCS**
 
@@ -139,7 +143,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 -   **SS**
 
-    **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<http://go.microsoft.com/fwlink/?LinkId=99139>).
+    **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<http://go.microsoft.com/fwlink/?LinkId=99139>).
 
 -   **SS\_SideBySide**
 
@@ -151,7 +155,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 -   **Unified**
 
-    **Unified** format is derived from the UNIX based **diff –u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
+    **Unified** format is derived from the UNIX based **diff -u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
 
     **Unified** format produces a new unified difference string (@@ ... @@) line only when the distance to the next difference string is larger than the number of context lines.
 
@@ -194,7 +198,7 @@ The following examples display the differences between the version of 314.cs tha
 
     c:\projects>tf difference 314.cs;Lrelease 314.cs;C3200
 
-—or—
+-or-
 
     c:\projects>tf difference 314.cs;Lrelease~C3200
 

@@ -3,12 +3,16 @@ title: Use TFVC and Git repos in the same team project | VSTS & TFS
 description: Using Version Control in Your VSTS team project
 ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
 toc: show
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/04/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14//2018 
+monikerRange: '>= tfs-2015'
 ---
+
 
 #  Use Git and TFVC repos in the same team project
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 1

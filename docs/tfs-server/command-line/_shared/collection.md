@@ -99,7 +99,7 @@ The following example shows how to permanently remove the "Contoso Summer Intern
     TFSConfig Collection /delete /CollectionName:"Contoso Summer Intern Projects"
 
     TFSConfig - Team Foundation Server Configuration Tool
-    Copyright � Microsoft Corporation. All rights reserved.
+    Copyright - Microsoft Corporation. All rights reserved.
     Deleting a team project collection is an irreversible operation. A deleted collection cannot be reattached to the same or another Team Foundation Server. Are you sure you want to delete 'Contoso Summer Intern Projects'? (Yes/No)
     Yes
     Found Collection 'Contoso Summer Intern Projects' Deleting...

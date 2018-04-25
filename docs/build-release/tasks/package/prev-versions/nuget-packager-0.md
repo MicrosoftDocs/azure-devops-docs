@@ -1,11 +1,11 @@
 ---
 title: NuGet Packager Version 0.*
 description: How to produce NuGet packages when building code in Visual Studio Team Services
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
 ms.manager: douge
-ms.author: alewis
+ms.author: amullans
 ms.date: 08/10/2016
 ---
 

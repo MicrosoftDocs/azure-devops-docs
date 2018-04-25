@@ -2,11 +2,14 @@
 title: Microsoft Release Management 2015 Server and Client Version - Help Contents
 description: Create managed continuous deployment pipelines using Release Management 2015 (server and client version)
 ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
-ms.date: 10/20/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Release Management 2015 (server and client version)

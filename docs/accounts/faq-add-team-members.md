@@ -1,22 +1,23 @@
 ---
 title: Troubleshoot adding members to team projects in VSTS
 description: Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.prod: devops
+ms.technology: devops-accounts
 ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
+ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
-ms.date: 10/17/2017
+author: chcomley
+ms.date: 4/04/2018
+monikerRange: 'vsts'
 ---
-
-#	Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
+# Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 
 **VSTS**
 
-
-
 <a name="cant-add-users"></a>
-####Q:	Why can't I add any more members to my team project?
+
+### Q:	Why can't I add any more members to my team project?
 
 A:	Your VSTS account is free for the first 5 users with Basic access. 
 You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. 
@@ -35,7 +36,7 @@ from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscr
 
 <a name="WhyCantSignIn"></a>
 
-####Q:	Why can't some users sign in?
+### Q:	Why can't some users sign in?
 
 A:	This might happen because users must 
 sign in with Microsoft accounts 
@@ -54,7 +55,7 @@ Learn [how to control account access with Azure AD](access-with-azure-ad.md).
 
 [!INCLUDE [no-access-existing-features](../_shared/qa-no-access-existing-features.md)]
 
-####Q:	 Why did some users lose access to certain features?
+### Q:	 Why did some users lose access to certain features?
 
 A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-features).  
 
@@ -64,12 +65,49 @@ A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-fea
 
 <a name="RemovePeople"></a>
 
-####Q:	How do I remove users from my VSTS account?
+### Q:	How do I remove users from my VSTS account?
 
 A:	Learn [how to delete users](delete-account-users.md) 
 across all team projects in your VSTS account. 
 If you paid for more users, but don't need their account access
 anymore, you must reduce your paid users to avoid charges.
+
+### Q: Why can't I find members from my connected Azure AD, even though I am the Azure AD global admin?
+
+A: You are probably a guest in the Azure AD that backs VSTS. By default, Azure AD guests cannot search into the Azure AD and that's why you are not finding users in your Azure AD to add to your VSTS account.
+
+First, check to see if you are an Azure AD guest:
+
+1. Go to the **Settings** section of your VSTS account and look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your VSTS account.
+2. Sign in to the new Azure portal (portal.azure.com) and check your user profile in the tenant from step 1. Check the **User type** value as seen below.
+
+   > [!div class="mx-imgBorder"] 
+![Check user type in Azure portal](_img/faq/check-user-type-in-Azure-portal.png)
+
+If you are an Azure AD guest, do one of the following:
+
+* Have another VSTS admin - someone who is not an Azure AD guest - manage the users in VSTS for you. Members of the Project Collection Administrators group inside VSTS can administer users.
+* Have the AAD admin(s) remove you from the AAD and re-add you, making you an AAD member rather than a guest when they do. See "Can Azure AD B2B users be added as members instead of guests?"
+* Change the User Type of the Azure AD guest using Azure AD PowerShell. This is an advanced topic and is not advised, but it does work and allows the user to query Azure AD from VSTS thereafter. 
+1. [Download and install Azure AD PowerShell module](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+2. Open PowerShell and run the following cmdlets.
+
+    a. Connect to Azure AD
+
+        C:\Users\rajr> Connect-AzureAD
+
+    b. Find the objectId of the user
+    
+        C:\Users\rajr> Get-AzureADUser
+
+    c. Check the usertype attribute for this user to see if they are a guest or member.
+    
+        C:\Users\rajr> Get-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66
+
+    d. Change the usertype from *member* to *guest*
+
+        C:\Users\rajr> Set-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66 -UserType Member
+
 
 <a name="users-delay"></a>
 

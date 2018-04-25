@@ -30,24 +30,24 @@
     href: clt-behind-firewall.md
   - name: Test using your own servers
     href: clt-with-private-machines.md
+  - name: Install certificates and software
+    href: install-certs-and-software.md
 - name: Reference
   items:
   - name: FAQs
     href: reference-qa.md
 - name: Resources
   items:
+  - name: Load test with Visual Studio
+    href: https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project
   - name: Edit load tests
-    href: https://msdn.microsoft.com/library/ff406975%28v=vs.120%29.aspx
-  - name: Distribute load tests
-    href: https://msdn.microsoft.com/library/dd728093%28v=vs.120%29.aspx
+    href: https://docs.microsoft.com/visualstudio/test/edit-load-tests
+  - name: Create custom code & plug-ins
+    href: https://docs.microsoft.com/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
   - name: Analyze load test results
-    href: https://msdn.microsoft.com/library/ee923686%28v=vs.120%29.aspx
-  - name: Fix undetectable parameters
-    href: https://msdn.microsoft.com/library/ff460245%28v=vs.120%29.aspx
-  - name: "Create custom code & plug-ins"
-    href: https://msdn.microsoft.com/library/ee923683%28v=vs.120%29.aspx
+    href: https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer
   - name: Web Performance Test API
-    href: https://msdn.microsoft.com/library/ms182558%28v=vs.120%29.aspx
+    href: https://docs.microsoft.com/visualstudio/test/how-to-use-the-web-performance-test-api
   - name: Posts on the ALM blog
     href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Manual and exploratory testing
@@ -55,4 +55,4 @@
   - name: Continuous testing
     href: ../build-release/test/index.md
   - name: Unit testing
-    href: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios
+    href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

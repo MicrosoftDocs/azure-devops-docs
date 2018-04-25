@@ -4,8 +4,8 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 11/28/2017
 ms.topic: article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 126 Update on November 28, 2017.
 hide_comments: true
@@ -318,9 +318,9 @@ Updates to the Hosted VS2017 pool include Visual Studio 15.4.0, as well as updat
 
 ### Docker Hub or Azure Container Registry as an artifact source
 
-This feature enables automatic creation of releases for updates to apps in the images stored in a Docker Hub registry or an Azure Container Registry (ACR). This is a first step towards supporting scenarios such as rolling out new changes region-by-region by using the geo-replication feature of ACR or deploying to an environment (such as production) from a container registry that has images for only the production environment.
+This feature enables releases to use images stored in a Docker Hub registry or an Azure Container Registry (ACR). This is a first step towards supporting scenarios such as rolling out new changes region-by-region by using the geo-replication feature of ACR or deploying to an environment (such as production) from a container registry that has images for only the production environment.
 
-You can now configure Docker Hub or ACR as a first-class artifact in the **+ Add** artifact experience of a release definition.
+You can now configure Docker Hub or ACR as a first-class artifact in the **+ Add** artifact experience of a release definition. For now the release has to be triggered manually or by another artifact but we look forward to adding a trigger based on the push of a new image to the registry soon.
 
 > [!div class="mx-imgBorder"]
 ![Dockerhub artifact source](_img/126_25.png)
@@ -367,6 +367,13 @@ NuGet.org as an upstream source is now available, which enables you to use packa
 
 > [!div class="mx-imgBorder"]
 ![NuGet upstream source](_img/126_17.png)
+
+### Maven support now generally available
+
+Maven packages enable Java developers to easily share code and components. Check out our [getting started guide](https://go.microsoft.com/fwlink/?linkid=848427) for how to share Maven artifacts using Package Management.
+
+> [!div class="mx-imgBorder"]
+![Maven feed connect](_img/126_39.png)
 
 ### Easier feed creation and editing
 

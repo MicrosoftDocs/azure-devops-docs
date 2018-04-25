@@ -1,13 +1,15 @@
 ---
 title: Create manual tests - VSTS and Team Foundation Server
 description: Create manual tests in VSTS and TFS to make sure your deliverables meet users' needs
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-test
+ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
-ms.date: 08/14/2016
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Create manual test cases
@@ -20,7 +22,9 @@ meet your users' needs. Organize your test cases by adding test
 cases to test suites. Then choose which testers you want to run 
 the tests.
 
-> **Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+
+**Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
 See [Default manual testing permissions and access](../manual-test-permissions.md).
 
 <a name="createcase"></a>
@@ -45,6 +49,10 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
    ![Create steps for a new manual test case](_img/create-test-cases/CreateTest_3.png)
 
    Now you've created a test case that you can run.
+
+>Test iterations are design to support data-driven scenarios, not workflow-driven scenarios.
+From a best practice perspective, if you have two test scenarios where the the workflows are
+different, consider creating separate test cases. 
 
 <a name="assigncase"></a>
 ## Assign testers

@@ -1,17 +1,20 @@
 ---
-title: Backlogs and work items | VSTS & TFS
+title: Backlogs and work items 
+titleSuffix: VSTS & TFS 
 description: Use the web portal to plan and track work  
-ms.technology: vs-devops-wit
-ms.prod: vs-devops-alm
+ms.technology: devops-agile
+ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+ms.topic: overview
 ms.date: 07/25/2017
 ---
 
 # Backlogs, work items, and Agile project management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -20,7 +23,7 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 
->[!NOTE]
+> [!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
 
@@ -39,7 +42,7 @@ Take these tools for a test run by [creating an account on VSTS for free](../../
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
-## Related notes
+## Related articles
 
 You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
 

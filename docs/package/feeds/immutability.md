@@ -2,12 +2,16 @@
 title: Understand immutability of packages
 description: Immutable packages lead to predictable builds in VSTS or Team Foundation Server
 ms.assetid: d8a522c4-cc96-4e41-9fdd-5e55a7ea8345
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2017
+monikerRange: '>= tfs-2017'
 ---
+ 
 
 # Understand immutability of packages
 

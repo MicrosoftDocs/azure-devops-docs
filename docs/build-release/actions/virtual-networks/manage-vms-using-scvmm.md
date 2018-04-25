@@ -1,12 +1,15 @@
 ---
-ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 title: Provision and manage virtual machines in SCVMM
 description: Provision and manage VMs in System Center Virtual Machine Manager (SCVMM)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
-ms.date: 09/26/2017
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2018'
 ---
 
 # Task actions for managing VMs using System Center Virtual Machine Manager (SCVMM)
@@ -121,7 +124,9 @@ For more information, see [Configure and deploy with SCVMM](../../apps/cd/scvmm/
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+::: moniker-end
 
 <!-- ENDSECTION -->
 

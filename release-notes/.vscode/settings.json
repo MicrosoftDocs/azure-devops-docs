@@ -1,0 +1,6 @@
+{
+    "markdownlint.config": {
+        "MD004": { "style": "dash" },
+        "MD041": false
+    }
+}

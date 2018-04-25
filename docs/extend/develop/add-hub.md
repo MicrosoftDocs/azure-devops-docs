@@ -2,10 +2,12 @@
 title: Add a Hub | Extensions for VSTS
 description: Extend VSTS with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.prod: devops
+ms.technology: devops-ecosystem
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/23/2016
 ---
 
@@ -17,16 +19,16 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 
 ## Structure of an extension
 ```no-highlight
-├── README.md
-├── sdk    
-	├── node_modules           
-	└── scripts
-		└── VSS.SDK.js       
-├── images                        
-	└── icon.png                           
-├── scripts                        	// not used in this tutorial
-├── hello-world.html				// html page to be used for your hub  
-└── vss-extension.json				// extension's manifest
+|--- README.md
+|--- sdk    
+	|--- node_modules           
+	|--- scripts
+		|--- VSS.SDK.js       
+|--- images                        
+	|--- icon.png                           
+|--- scripts                        	// not used in this tutorial
+|--- hello-world.html				// html page to be used for your hub  
+|--- vss-extension.json				// extension's manifest
 ```
 ## Get the client SDK: `VSS.SDK.js`
 The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host VSTS frame and to perform operations like 

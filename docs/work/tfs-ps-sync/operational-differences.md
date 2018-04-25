@@ -1,13 +1,16 @@
 ---
-title: Operational differences in managing projects using TFS and Project | TFS
+title: Operational differences in managing projects
+titleSuffix: TFS 
 description: Understand how using the Team Foundation plug-in to Project differs from Project Server-TFS integration  
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 786a9a22-0e34-4a70-b589-ae2def789e06
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
+ms.topic: conceptual
 ms.date: 01/12/2017
 ---
+
 # Operational differences in managing projects using TFS and Project
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
@@ -59,5 +62,5 @@ Operational differences between using the Team Foundation plug-in to Project and
   
  When you publish tasks from Project, you choose **Publish** on the **Team** ribbon or the **Team** menu.  
   
-## Related notes  
+## Related articles  
 - [Synchronize TFS with Project Server](synchronize-tfs-project-server.md)

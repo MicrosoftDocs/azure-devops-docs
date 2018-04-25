@@ -2,8 +2,8 @@
 title: PR filtering by people and improved Azure resource group template parameter experience – Mar 29
 description: VSTS release notes for Mar 29 2017
 ms.ContentId: 524ad78c-8313-4e3b-aa2e-3bd2981f3f61
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.author: egeaney
 author: egeaney
 ---

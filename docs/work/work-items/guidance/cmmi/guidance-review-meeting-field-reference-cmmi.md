@@ -1,11 +1,13 @@
 ---
-title: Review meeting field reference (CMMI) | VSTS & TFS
+title: Review meeting field reference (CMMI)
+titleSuffix: VSTS & TFS
 description: Definition of fields used to track review meetings in the CMMI process for Visual Studio Team Services (VSTS) and Team Foundation Server
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 35b045a4-1332-499d-97a6-f7797033990d
+ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 # Review meeting  field reference (CMMI)
@@ -27,5 +29,5 @@ The following fields track information and changes for review meetings. Your tea
 |**Optional Attendee 1**<br />**&hellip;**<br />**Optional Attendee 8**|The name of each team member who is invited but not required to attend the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.OptionalAttendee1 &hellip; Microsoft.VSTS.CMMI.OptionalAttendee8|String|  
 |**Actual Attendee 1**<br />**&hellip;**<br />**Actual Attendee 8**|The name of each team member who attended the meeting.<br/>Reference name=Microsoft.VSTS.CMMI.ActualAttendee1 &hellip; Microsoft.VSTS.CMMI.ActuallAttendee8|String|  
   
-## Related notes
+## Related articles
  [Index of work item fields](../work-item-field.md)

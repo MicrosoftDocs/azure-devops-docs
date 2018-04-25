@@ -1,13 +1,15 @@
 ---
 title: Continuous integration, test, and deployment tutorial
 description: Continuous integration, test, and deployment example in VSTS and TFS 
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/18/2018
-ms.topic: get-started-article
+author: alexhomer1
+ms.date: 04/09/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Continuous integration, test, and deployment tutorial
@@ -73,19 +75,28 @@ will automatically execute the unit tests it contains.
    and open the project where you checked in the sample app.
 
 1. Open the **Build &amp; Release** hub and, in the **Builds** tab, choose
-   **+ New definition**. 
+   **+ New definition**. Or, if you already have build definitions, choose the **+ New** button. 
 
    ![Starting a new build definition](_img/example-continuous-testing/example-continuous-testing-20.png)
+
+1. If prompted, select the **VSTS Git** source type; then select the project, repository, and branch where your code is located.
+   Choose **Continue**.
+
+   ![Specifying the source code location](_img/example-continuous-testing/example-continuous-testing-20a.png)
 
 1. Choose the **ASP.NET** template for the new build definition.
 
    ![Choosing the build type](_img/example-continuous-testing/example-continuous-testing-21.png)
 
+   > This example does not work with an ASP.NET Core app. If you need to build and test ASP.NET Core apps,
+   you must use the **ASP.NET Core** template, which adds multiple instances of the
+   [.NET Core task](../tasks/build/dotnet-core.md) instead of the tasks shown in this example.
+
 1. In the new build definition, select the **Process** item and then select the **Hosted VS2017** agent queue. 
 
    ![Choosing the default agent queue](_img/example-continuous-testing/example-continuous-testing-21a.png)
 
-1. Open the **Triggers** tab and turn on the **Continuous integration** trigger. Make sure the repository containing your app is selected. 
+1. Open the **Triggers** tab and turn on the **Continuous integration** trigger. Make sure the branch containing your app is included. 
 
    ![Specifying continuous integration](_img/example-continuous-testing/example-continuous-testing-22.png)
 
@@ -102,17 +113,23 @@ will automatically execute the unit tests it contains.
 
    ![Viewing the build results](_img/example-continuous-testing/example-continuous-testing-29.png)
 
+   [How can I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
+
 1. The **Tests** tab provides comprehensive results of executing the unit tests defined in the
-   solution. Use the **Outcome** list to show the tests that passed.
+   solution. Use the filters lists to show the tests that passed (the default is to show just tests that failed).
 
    ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-30.png)
 
    [What are the typical types of tests I can use to validate my app?](reference-qa.md#qa-more-tests)
 
-1. Choose the test summary item at the top of the list of tests to open the **Test** hub
-   in a new browser window, showing a summary and charts for this test run.
+1. Choose the test summary item at the top of the list of tests and then choose the corresponding link
+   in the right-hand pane to open the run summary in a new browser window.
 
-   ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-31.png)
+   ![Opening the test details](_img/example-continuous-testing/example-continuous-testing-30a.png)
+
+1. The **Run summary** page shows a summary and charts for this test run, and you can use the links to dive deeper into the results.
+
+   ![Viewing the test details](_img/example-continuous-testing/example-continuous-testing-31.png)
 
 >For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
@@ -140,12 +157,17 @@ a simple load test to validate the deployment.
 
    ![Editing the definition name](_img/example-continuous-testing/example-continuous-testing-43.png)
 
-1. In the new release definition, open the **Tasks** tab and select the **Deploy Azure App Service** task.
+1. In the new release definition, open the **Tasks** tab and select the **Environment1** item.
    In the parameters pane, select your Azure subscription from the drop-down list.
-   Then select your App Service name from the drop-down list. 
+   Then select your App Service name from the drop-down list. Finally, enter the full URL of your Azure App Service instance.
 
-   ![Configuring the Deploy Azure App Service task](_img/example-continuous-testing/example-continuous-testing-44.png)
+   ![Configuring the task parameters](_img/example-continuous-testing/example-continuous-testing-44.png)
 
+   You can get the full URL from the **Overview** page for your App Service instance
+   in the Azure portal. The URL will be in the form **http://**_your-app-service-name_.**azurewebsites.net**.
+
+   ![Finding the app service instance URL](_img/example-continuous-testing/example-continuous-testing-45.png)
+   
    If you don't see any subscriptions listed, choose the ![Settings](_img/example-continuous-testing/settings-icon.png) icon and, in the 
    **Services** page, create a new **Azure Resource Manager** service endpoint. If you
    have problems creating the connection, see 
@@ -154,16 +176,6 @@ a simple load test to validate the deployment.
    ![Creating an Azure service connection ](_img/example-continuous-testing/example-continuous-testing-44a.png)
 
    [Can I deploy to a staging slot first, and then to production?](reference-qa.md#qa-stagingslot)
-
-1. Select the **Quick Web Performance Test** task and, in the parameters pane,
-   enter the full URL of your Azure App Service instance. 
-
-   ![Configuring the Quick Web Performance Test task](_img/example-continuous-testing/example-continuous-testing-46.png)
-
-   You can get the full URL from the **Overview** page for your App Service instance
-   in the Azure portal. The URL will be in the form **http://**_your-app-service-name_.**azurewebsites.net**.
-
-   ![Finding the app service instance URL](_img/example-continuous-testing/example-continuous-testing-45.png)
 
    [What other tests can I run to validate my deployment?](reference-qa.md#qa-more-tests)
 
@@ -174,6 +186,8 @@ a simple load test to validate the deployment.
 1. Create a release from your definition using the **Release** icon in the toolbar.
 
    ![Creating a new release](_img/example-continuous-testing/example-continuous-testing-48.png)
+
+   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
 1. After the release starts, choose the **Release-**_x_ link just below the toolbar.
 

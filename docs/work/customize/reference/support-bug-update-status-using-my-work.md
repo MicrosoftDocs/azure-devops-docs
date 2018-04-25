@@ -1,11 +1,11 @@
 ---
 title: Support bug update status using My Work | VSTS & TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
-ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.manager: douge
-ms.author: kaelli
+ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---
 # Support bug update status using My Work  
@@ -66,8 +66,8 @@ You add WITs to a category by updating the [Categories definition file](categori
 	> [!div class="tabbedCodeSnippets"]
 	```XML
     <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-       <DEFAULTWORKITEMTYPE name="Bug" />  
-       <WORKITEMTYPE name="Performance Bug" />  
+          <DEFAULTWORKITEMTYPE name="Bug" />  
+          <WORKITEMTYPE name="Performance Bug" />  
     </CATEGORY>  
     ```  
   
@@ -94,12 +94,12 @@ You add WITs to a category by updating the [Categories definition file](categori
 	> [!div class="tabbedCodeSnippets"]
 	```XML 
     <BugWorkItems category="Microsoft.BugCategory">  
-       <States>  
-          <State value="Active" type="InProgress" />  
-          <State value="Investigating" type="InProgress" />  
-          <State value="Resolved" type="Resolved" />  
-          <State value="Closed" type="Complete" />  
-       </States>  
+          <States>  
+          <State value="Active" type="InProgress" />  
+          <State value="Investigating" type="InProgress" />  
+          <State value="Resolved" type="Resolved" />  
+          <State value="Closed" type="Complete" />  
+          </States>  
     </BugWorkItems>  
     ```  
   
@@ -110,7 +110,7 @@ You add WITs to a category by updating the [Categories definition file](categori
 
 
  
-## Related notes
+## Related articles
 -  [ProcessConfiguration](process-configuration-xml-element.md)   
 -  [Use categories to group work item types](use-categories-to-group-work-item-types.md)
 -  [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)

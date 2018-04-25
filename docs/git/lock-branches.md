@@ -2,12 +2,16 @@
 title: Lock a branch in your Git repo | VSTS & TFS
 description: Use the branches page to lock a branch in VSTS or TFS, preventing pushes to the branch.
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-git 
+ms.prod: devops
+ms.technology: devops-code-git 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/23/2016
+author: steved0x
+ms.topic: conceptual
+ms.date: 03/14//2018
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Lock a branch
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015

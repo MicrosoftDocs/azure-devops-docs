@@ -3,13 +3,16 @@ title: Develop and share your code in TFVC using Visual Studio | VSTS
 description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: devops-code-tfvc
 ms.manager: douge
 ms.author: sdanie
+author: steved0x
+ms.topic: quickstart
 ms.date: 08/10/2016
+monikerRange: '>= tfs-2015'
 ---
+
 
 # Develop and share your code in TFVC using Visual Studio
 

@@ -1,8 +1,8 @@
 ---
 title: Visual Studio Online updates - Feb 10
 description: VSTS release notes for February 10 2014
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-articles
+ms.prod: devops
+ms.technology: vsts-release-notes
 ms.manager: douge
 ms.assetid: 31b56eea-567c-4296-aa78-29cf0065ce87
 ms.date: 06/01/2016
