@@ -1,6 +1,6 @@
 ---
 title: Buy cloud-based load testing | VSTS
-description: How to buy cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS)
+description: Steps to purchase and enable cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS) via the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9

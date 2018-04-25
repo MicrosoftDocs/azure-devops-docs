@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot adding and deleting account users in the VSTS user hub
-description: Troubleshoot adding and deleting account users in the VSTS user hub
+description: Permissions required to manage users and user access, find project collection administrator or account owner, manage Visual Studio subscriptions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -54,6 +54,7 @@ but you don't have a valid and active Visual Studio subscription, you can only
 [work as a stakeholder](../security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
+
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
 A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
