@@ -61,12 +61,12 @@ Consider branching if you need to work in isolation, need to suspend your work, 
 
 As a TFVC user, repeat a few times:
 
-- Branching is recommended!
-- Git branching is **inexpensive**, **fast**, and **powerful**!
-- Git encourages you to use **local** branches.
-- Publish local branches to your centralized repository as needed.
-- Always verify your branch context before making changes.
-- Name the branch using a common convention such as users/alias/branchname for example: users/doris/newfeature
+* Branching is recommended!
+* Git branching is **inexpensive**, **fast**, and **powerful**!
+* Git encourages you to use **local** branches.
+* Publish local branches to your centralized repository as needed.
+* Always verify your branch context before making changes.
+* Name the branch using a common convention such as users/alias/branchname for example: users/doris/newfeature
 
 Create and switch to a local topic branch, named *francis/demo-feature*. It is good practice to run a `git status` first, to verify that you are on the right branch to start with.
 
@@ -179,9 +179,9 @@ In Visual Studio, choose **Team Explorer > Branches > right-click on local branc
 
 To synchronize further updates in your local with the remote repository, you need to push your changes using `git push`. The recommended practice using the git command or the Visual Studio IDE is to:
 
-- `fetch` to download content and preview incoming changes from others.
-- `pull` to download and then merge changes from others.
-- `push` to share your local changes.
+* `fetch` to download content and preview incoming changes from others.
+* `pull` to download and then merge changes from others.
+* `push` to share your local changes.
 
 ## View history
 
@@ -213,17 +213,13 @@ In Visual Studio, choose **Team Explorer > Branches | Changes | Sync > Actions >
 
 ![Viewing History in Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-history-ide.png)
 
-
 ---
-
 
 You can also view the history of the **centralized** repository using the VSTS web portal.
 
 In the VSTS web portal, choose **CODE > History** or **CODE > Explorer > History**
 
 ![Viewing Branch history in VSTS](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
-
-
 
 At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TVFC actions. 
 
@@ -240,7 +236,6 @@ When working with Git, you do not change branches by switching to separate folde
 ```
 git checkout <branch>
 ```
-
 
 If you forgot what branches you have in your local repository, use `git branch` to list the default and known branches.
 
@@ -268,7 +263,6 @@ followed by
 git merge FETCH_HEAD
 ```
 
-
 Always get the latest version and resolve merge conflicts locally.
 
 ### Undo local changes
@@ -291,16 +285,15 @@ followed by
 git clean -xdf
 ```
 
-
 The scenario is anonymous to doing a `Get > Latest Version` with the `Overwrite writeable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
 
 Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
 
 There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 
-- Git commands covered herein, refer to [git documentation](http://git-scm.com/documentation)
-- [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
-- [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
+* Git commands covered herein, refer to [git documentation](http://git-scm.com/documentation)
+* [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
+* [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
 
 ## Q&A
 
