@@ -1,7 +1,7 @@
 ---
 title: TFVC repository default permissions
 titleSuffix: VSTS & TFS
-description: At-a-glance view of default assigned to built-in security groups made for TFVC repositories 
+description: At-a-glance view of default permissions assigned to built-in security groups made for Team Foundation Version Control (TFVC) repositories 
 ms.topic: reference
 ms.assetid:   
 ms.prod: devops

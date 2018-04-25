@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot creating a VSTS account
-description: Troubleshoot creating a VSTS account
+description: Troubleshoot creating a VSTS account, including differences between using Microsoft account vs. work or school account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
@@ -106,7 +106,8 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 [!INCLUDE [delete-account](../_shared/qa-delete-account.md)]
 
 <a name="SignInAccountDifferences"></a>
-####Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
+
+### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
 A:	Your choice affects how you control access and 
 authenticate users for your VSTS account.
@@ -134,7 +135,8 @@ Learn more about
 [work or school accounts for your organization](https://docs.microsoft.com/azure/active-directory/sign-up-organization).
 
 <a name="ChangeDirectory"></a>
-####Q:	Can I change the directory after signup?
+
+### Q:	Can I change the directory after signup?
 
 A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-vsts-account.md).
 

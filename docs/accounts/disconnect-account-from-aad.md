@@ -1,6 +1,6 @@
 ---
 title: Disconnect your VSTS account from your Azure AD
-description: Azure Active Directory (Azure AD) - Control access to VSTS (VSTS, Visual Studio Online, VSO)
+description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your VSTS account from your directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b

@@ -1,6 +1,6 @@
 ---
-title: Billing overview for VSTS 
-description: Manage billing overview VSTS (Visual Studio Team Services)
+title: Billing overview for Visual Studio Team Services
+description: Overview of billing management tasks in VSTS (Visual Studio Team Services), including how to set up billing, make purchases, and change Azure subscription for billing
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
