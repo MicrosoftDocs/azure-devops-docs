@@ -26,7 +26,7 @@
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
-    - name: Migrate from SVN to Git
+    - name: Migrate from Subversion (SVN) to Git
       href: perform-migration-from-svn-to-git.md
     - name: Test Impact for partially mapped TFVC repositories
       href: test-impact-for-partially-mapped-tfvc-repositories.md

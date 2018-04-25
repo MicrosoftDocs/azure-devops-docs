@@ -31,7 +31,7 @@ Here you'll find more resources to support your development efforts with Visual 
 *   [Git lost my changes?](git-log-history-simplification.md)
 *   [Move Git repos between team projects](move-git-repos-between-team-projects.md)
 *   [Remove large binaries from Git](remove-binaries.md)
-*   [Migrate from Subversion to Git](perform-migration-from-svn-to-git.md)
+*   [Migrate from Subversion (SVN) to Git](perform-migration-from-svn-to-git.md)
 
 ##	DevOps: Continuous integration and continuous delivery
 
