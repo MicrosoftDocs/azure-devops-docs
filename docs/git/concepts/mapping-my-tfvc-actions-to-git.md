@@ -1,5 +1,5 @@
 ---
-title: Version Control - Map Team Foundation Version Control (TFVC) actions to Git
+title: Version Control - Map TFVC actions to Git
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Learn to map your familiar TFVC commands and workflows to Git 
+# Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
 
 Do you plan to adopt Git, are familiar with [TFVC](../../tfvc/index.md) actions, and wondering how they map to [Git](../index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
