@@ -63,7 +63,6 @@ This topic discusses only scenarios **3** and **4**.
    use your own infrastructure for load generation and the results are stored in SQL Server.
    See [Configure test agents and test controllers for running load tests](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) for details.
 
-
 The following sections describe how you can provision load agents using Azure IaaS VMs
 (you will need an Azure subscription). This approach is primarily useful when:
 

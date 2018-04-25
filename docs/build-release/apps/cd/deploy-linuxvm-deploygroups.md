@@ -52,7 +52,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
 
-    ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
      in the list of release definitions, and choose **Create release definition**.
