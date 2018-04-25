@@ -1,6 +1,6 @@
 ---
-title: Version Control - Map TFS version control (TFVC) actions to Git
-description: Map TFS version control (TFVC) commands and workflows to Git version control.
+title: Version Control - Map Team Foundation Version Control (TFVC) actions to Git
+description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
@@ -8,16 +8,16 @@ ms.manager: douge
 ms.author: willys
 author: wpschaub
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 04/25/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Map TFVC actions to Git 
+# Learn to map your familiar TFVC commands and workflows to Git 
 
-Do you plan to adopt Git, are familiar with [TFVC](../../tfvc/index.md) actions, and wondering how they map to [Git](../index.md)? Both are powerful and mature source control systems, but mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
+Do you plan to adopt Git, are familiar with [TFVC](../../tfvc/index.md) actions, and wondering how they map to [Git](../index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
-We will not delve deep into the [Git commands](http://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
+This article will not delve deep into the [Git commands](http://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
 ## Start at the beginning by creating a new repo
 
@@ -37,7 +37,7 @@ Click on the `Create a ReadMe file' at the end of the instruction page, to give 
 
 When connecting to a TFVC repo for the first time, you typically create a workspace and get the latest code. so, how do you get started in Git?
 
-Similar to a workspace in TFVC you `clone` the Git repository to a folder on your machine. Cloning will download all of the contents and history of the repository, to your local machine. Once you have the cloned repo nearly all operations are performed locally, allowing you to work disconnected from the server, giving you a speed and performance advantage, and a full backup of the centralized repository.
+Similar to a workspace in TFVC you `clone` the Git repository to a folder on your machine. Cloning will download all of the contents and history of the repository, to your local machine. Once you have the cloned repo, nearly all operations are performed locally. You are able to work offline with a full backup of the centralized repository.
 
 # [Command Line](#tab/command-line)
 
@@ -55,7 +55,7 @@ You only need to clone once per repo, but like TFVC workspaces, you can have mul
 
 ## Create a branch
 
-With Git you are always working in a branch and by default in the "master" branch. You are recommended to create multiple local branches, a process that takes seconds and allows you to seamlessly context switch between branches and work in isolation. Unlike TFVC branches, which are paths scoped, Git branches are repository scoped. They are lightweight, can be local only, or shared with others when you are ready to share your changes.
+With Git, you are always working in a branch and by default in the "master" branch. You are recommended to create multiple local branches. It's a process that takes seconds and allows you to seamlessly context switch between branches and work in isolation. Unlike TFVC branches, which are paths scoped, Git branches are repository scoped. They are lightweight, can be local only, or shared with others when you are ready to share your changes.
 
 Consider branching if you need to work in isolation, need to suspend your work, focus on new features, or if you are planning to conduct a Git [pull request](pull-requests.md).
 
@@ -81,7 +81,7 @@ git checkout -b francis/demo-feature
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio, choose **Team Explorer > Branches > right click on branch > New Local Branch From...**
+In Visual Studio, choose **Team Explorer > Branches > right-click on branch > New Local Branch From...**
 
 ![Creating a new branch from Visual Studio Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-createbranch.png)
 
@@ -115,7 +115,7 @@ In Visual Studio, choose **Team Explorer > Changes > Untracked Files > add indiv
 ---
 
 
-Using the pre-baked sample, you will have thirteen new files that have been included and staged in the local repository.
+Using the pre-baked sample, you will have 13 new files that have been included and staged in the local repository.
 
 ## View pending changes
 
@@ -139,7 +139,7 @@ In Visual Studio, choose **Team Explorer > Changes > Included Changes**
 
 ## Checkin changes and commit locally
 
-In TFVC you share your changes with a Check In, which sends your pending changes to the server.  In Git, the process is a bit different.  First, you commit to the local repository, creating a commit object (like a changeset), then you push to send those changes with the server.
+In TFVC, you share your changes with a Check In, which sends your pending changes to the server.  The Git process is a bit different.  First, you commit to the local repository, creating a commit object (like a changeset), then you push to send those changes with the server.
 
 You commit the changes to your local repository using `git commit`, which feels like doing a `Checkin Pending Changes` in TFVC. A key difference is that the `git commit` commits your changes to the **local**, not the **remote** repository. 
 
@@ -158,7 +158,7 @@ In Visual Studio, choose **Team Explorer > Changes > Commit**
 
 ---
 
-## Checkin changes with the server/remote repo
+## Check in changes with the server/remote repo
 
 First you need to publish your local francis/demo-feature branch to the remote server, which includes all committed changes.
 
@@ -171,13 +171,13 @@ git push --set-upstream origin francis/demo-feature
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio, choose **Team Explorer > Branches > right click on local branch > Publish Branch**
+In Visual Studio, choose **Team Explorer > Branches > right-click on local branch > Publish Branch**
 
 ![Pushing a branch to remote with Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-publishbranch.png)
 
 ---
 
-To synchronize further updates in your local with the remote repository, you need to push your changes using `git push`. The recommended practise using the git command or the Visual Studio IDE is to:
+To synchronize further updates in your local with the remote repository, you need to push your changes using `git push`. The recommended practice using the git command or the Visual Studio IDE is to:
 
 - `fetch` to download content and preview incoming changes from others.
 - `pull` to download and then merge changes from others.
@@ -185,7 +185,7 @@ To synchronize further updates in your local with the remote repository, you nee
 
 ## View history
 
-To see the commit you just created you can review the local history.
+To see the commit, you just created you can review the local history.
 
 # [Command Line](#tab/command-line)
 
@@ -203,7 +203,7 @@ git log
 
 ![Using Git log to review branch history](./_img/mapping-my-tfvc-actions-to-git/actionmap-history2.png)
 
-As shown above, `git log` lists the author, email, date written and the commit SHA-1 checksum. As a TFVC user you may want to use the `--stat` option to include more information, such as file name and change statistics. 
+As shown above, `git log` lists the author, email, date written, and the commit SHA-1 checksum. As a TFVC user you may want to use the `--stat` option to include more information, such as file name and change statistics. 
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -225,7 +225,7 @@ In the VSTS web portal, choose **CODE > History** or **CODE > Explorer > History
 
 
 
-At this point you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TVFC actions. 
+At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TVFC actions. 
 
 You also have the option of issuing a [pull request](pull-requests.md), to publish and stage your changes on the server/remote repo at this point.
 
@@ -233,7 +233,7 @@ You also have the option of issuing a [pull request](pull-requests.md), to publi
 
 ### Switch branches
 
-When working with Git you do not change branches by switching to separate folders and locations on your machine. You simply change the context by doing a `checkout`, making the entire working directory match the selected branch or commit. **Fast** and **simple**!
+When working with Git, you do not change branches by switching to separate folders and locations on your machine. You change the context by doing a `checkout`, making the entire working directory match the selected branch or commit. **Fast** and **simple**!
 
 ### Command line
 
@@ -244,11 +244,11 @@ git checkout <branch>
 
 If you forgot what branches you have in your local repository, use `git branch` to list the default and known branches.
 
-Keep in mind which branch you are working on! When you work with multiple branches in Git, you switch branches in place in the same working directory. Switching between branches is a very fast operation, and making sure you are on the right branch at all times is just good practice.
+Keep in mind which branch you are working on! When you work with multiple branches in Git, you switch branches in place in the same working directory. Switching between branches is a fast operation, and making sure you are on the right branch at all times is good practice.
 
 ### Get latest version
 
-There are lots of reasons to want to get updates. For example, when coming back from a well deserved vacation, or needing to switch context to another project, you need to refresh your development machine with the latest version of the codebase.
+There are lots of reasons to want to get updates. For example, when you need to switch context to another project, refresh your development machine with the latest version of the codebase.
 
 ### Command line
 
@@ -296,7 +296,7 @@ The scenario is anonymous to doing a `Get > Latest Version` with the `Overwrite 
 
 Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
 
-This is by no means the end of actions and options available to Git users. Here are some useful reference sites for further reading:
+There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 
 - Git commands covered herein, refer to [git documentation](http://git-scm.com/documentation)
 - [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
@@ -312,7 +312,7 @@ This is by no means the end of actions and options available to Git users. Here 
 
 With magic comes responsibility! Many users dislike the `sync` as it can sometimes mess up your local history and add a merge commit on top of your current commit. Once you are in a bad state, you have to revert to the command line as there is currently no reset support in the IDE.
 
-Authors: Jesse Houwing, Martin Hinshelwood, Mike Fourie, and Willy Schaub
+Authors: Jesse Houwing, Martin Hinshelwood, Mike Fourie, and Willy Schaub from the ALM | DevOps Rangers. Connect with them [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md).
 
 *(c) 2015 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
