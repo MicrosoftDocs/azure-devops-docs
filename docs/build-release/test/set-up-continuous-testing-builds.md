@@ -1,6 +1,6 @@
 ---
 title: Set up continuous testing for your builds
-description: Set up continuous testing for your builds in VSTS and TFS 
+description: Set up continuous testing for your builds in Microsoft VSTS and TFS with a build or release definition 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.prod: devops
 ms.technology: devops-cicd
@@ -33,7 +33,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
 ## Set up app deployment for your build
 
-1. In VSTS or TFS, go to your team project.
+1. In VSTS or TFS, go to your project.
 
 1. Go to your build definition and open it for editing.
 

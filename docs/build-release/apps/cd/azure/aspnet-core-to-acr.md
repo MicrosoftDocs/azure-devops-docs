@@ -70,7 +70,7 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 3.  Choose the **Container Registry** you created earlier.
 4.  Accept the default App Service name or Select **edit** to choose a new name.
 5.  Select **ok**, and monitor the output window for results.  
-6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same team project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
+6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
 7.  A **build** and **release** will then execute.  **Navigate** to the VSTS account and monitor the build and release processes until they complete.  This process may take several minutes.
