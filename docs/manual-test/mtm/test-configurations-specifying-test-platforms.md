@@ -1,6 +1,6 @@
 ---
 title: Test configurations, specifying test platforms
-description: Manual and exploratory testing - Test configurations, specifying test platforms
+description: Manual and exploratory testing - Test configurations, specifying test platforms when you want to test web applications
 ms.assetid: 40d4a0f6-5978-404d-9627-fa81e950d718
 ms.prod: devops
 ms.technology: devops-test

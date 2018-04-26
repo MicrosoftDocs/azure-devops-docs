@@ -1,6 +1,6 @@
 ---
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy build and release task for VSTS and TFS
+title: Service Fabric Compose Deploy task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd

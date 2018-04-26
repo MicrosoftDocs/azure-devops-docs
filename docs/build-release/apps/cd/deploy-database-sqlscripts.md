@@ -1,6 +1,6 @@
 ---
 title: Deploy your database to Azure SQL Database using SQL scripts
-description: Deploy to Azure SQL Database using a SQL script from Release Management in VSTS or TFS
+description: Deploy to Azure SQL Database using a SQL script from Release Management in VSTS or TFS whenever a new successful build is available
 ms.assetid: C857DC15-E1E5-4E55-9B00-744F04F886DA
 ms.prod: devops
 ms.technology: devops-cicd
