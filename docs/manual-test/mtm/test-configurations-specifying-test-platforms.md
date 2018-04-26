@@ -69,7 +69,7 @@ Test Runner doesn't verify that you're actually running on the specified configu
 However, if you use Microsoft Test Manager, system information is stored in the test log.
 
 <a name="create-new"></a>
-## Create new configurations for your team project  
+## Create new configurations for your project  
 
 A few configurations are already defined for you, but you'll probably want to add your own.
 

@@ -22,7 +22,7 @@ review your test results to start analyzing any problems that you found.
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In VSTS or TFS, go to your team project.
+1. In VSTS or TFS, go to your project.
 
 1. Find your build and open the build summary.
 

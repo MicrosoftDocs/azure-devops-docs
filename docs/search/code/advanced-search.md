@@ -110,8 +110,8 @@ example:
 
 * `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**, 
   such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeX23?R` finds files containing words that start with **CodeX23**, have any 
-  alphanumeric character next, and end with **R**. For example, **CodeX234R** and **CodeX23QR**. 
+* `CodeA23?R` finds files containing words that start with **CodeA23**, have any 
+  alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**. 
 
 You can use wildcard characters anywhere in your search string **except** as 
 a **prefix** in a simple search string or a query that uses a 
@@ -159,7 +159,7 @@ according to the following rules:
   find the literal string `flatten()`.
 
 * Search for a literal occurrence of the double-quote character `"` by preceding it with the
-  escape characacter `\` and enclosing the search string in double-quotes.
+  escape character `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
 
 -->

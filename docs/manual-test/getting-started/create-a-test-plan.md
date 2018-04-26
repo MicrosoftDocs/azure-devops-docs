@@ -37,10 +37,10 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
 
 1. If you haven't already, 
    [sign up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
-   [create your team project](../../accounts/account-management.md), 
+   [create your project](../../accounts/account-management.md), 
    and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
-1. In VSTS, open your team project.
+1. In VSTS, open your project.
 
 1. Go to the **Test Plans** tab of the **Test** hub. Create a test plan for your current sprint.
 
@@ -55,7 +55,7 @@ See [Default manual testing permissions and access](../manual-test-permissions.m
 
 1. Now add test suites for the backlog items that need manual tests. 
    (These backlog items could be user stories, requirements, or other 
-   work items based on the setup of your team project.)
+   work items based on the setup of your project.)
 
    ![In test plan explorer pane, New (+) list, then click Requirement-based suite](_img/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
 
