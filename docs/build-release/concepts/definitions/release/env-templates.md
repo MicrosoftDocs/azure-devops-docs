@@ -44,8 +44,8 @@ in one operation, use [task groups](../../library/task-groups.md) instead of env
 
 ### Can I export templates or share them with other accounts or projects?
 
-Custom templates that you create are scoped to the team project that you created them in.
-Templates cannot be exported or shared with another team project, collection, server, or account.
+Custom templates that you create are scoped to the project that you created them in.
+Templates cannot be exported or shared with another project, collection, server, or account.
 You can, however, export a release definition and import it into another project, collection, server, or account.
 Then you can re-create the template for use in that location.
 

@@ -1,6 +1,6 @@
 ---
-title: Restore your VSTS account
-description: Restore your VSTS account
+title: Restore your VSTS account after it has been deleted
+description: Learn how to recover your account and data up to 90 days after it has been deleted, performed with account owner permissions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 Your account will be disabled but available for 90 days after you delete it. 
 If you change your mind during this time, you can recover your account. 
-After 90 days, your account and data are permanently deleted.
+After 30 days, your account and data are permanently deleted.
 
 You'll need VSTS account owner 
 permissions to restore your VSTS account. 

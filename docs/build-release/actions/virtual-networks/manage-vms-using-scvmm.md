@@ -1,6 +1,6 @@
 ---
 title: Provision and manage virtual machines in SCVMM
-description: Provision and manage VMs in System Center Virtual Machine Manager (SCVMM)
+description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM) using Release Management
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 ms.prod: devops
 ms.technology: devops-cicd

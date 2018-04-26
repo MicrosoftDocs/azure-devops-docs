@@ -1,8 +1,9 @@
 ---
 title: FAQ for Team Explorer Everywhere and Eclipse
 description: Frequently Asked Questions for Team Explorer Everywhere and Java Eclipse
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
 ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel

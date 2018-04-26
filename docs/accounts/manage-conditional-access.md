@@ -1,6 +1,6 @@
 ---
 title: Manage conditional access to VSTS
-description: Manage conditional access to VSTS to restrict access based on multi-factor authentication
+description: Learn how to protect your account credentials and keep your organization's data safe with multi-factor authentication, security group membership, and more
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7

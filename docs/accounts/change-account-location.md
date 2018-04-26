@@ -1,6 +1,6 @@
 ---
 title: Find or change your VSTS account location (region)
-description: Find or change your VSTS account location (region)
+description: Need to find Where VSTS hosts your account? Find your account's default location or update your VSTS account location (region)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65

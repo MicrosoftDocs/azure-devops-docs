@@ -5,7 +5,7 @@ ms.assetid: e0a41663-9426-48f1-8e4e-4d6708b25f88
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Git repository and branch default permissions
 titleSuffix: VSTS & TFS
-description: At-a-glance view of default assigned to built-in security groups made for Git repositories and branches 
+description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.assetid:  
 ms.prod: devops

@@ -162,6 +162,11 @@ EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-
 
 Run the completed command against the TFS configuration database. This will need to be repeated for each ISVError:300005 instance that TfsMigrator found. Errors with the same scope ID can be batched into one command. Once the commands have been executed you will need to run TfsMigartor validate again to ensure that the errors have been corrected. If the errors still persist, please contact [VSTS customer support](https://aka.ms/vstscustomersupport). 
 
+> [!IMPORTANT]
+> The collection that you're trying to fix the error for must be attached. 
+>
+> If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your TFS instance and that you're running the command on the configuration database. 
+
 ### AAD Timeout Exception
 On rare occasions some might receive an AAD timeout error when running the TfsMigrator prepare command. 
 
