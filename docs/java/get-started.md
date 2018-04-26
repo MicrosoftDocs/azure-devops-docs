@@ -1,8 +1,9 @@
 ---
 title: Get started with Java DevOps and VSTS
 description: Create accounts necessary for getting started with Java DevOps and VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.reviewer: dastahel

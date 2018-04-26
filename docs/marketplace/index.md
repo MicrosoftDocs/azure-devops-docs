@@ -1,5 +1,5 @@
 ---
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 title: Index for installing VSTS and Team Foundation Server extensions from the Visual Studio Marketplace
 description: Index of Visual Studio Marketplace information for VSTS and Team Foundation Server extensions.
