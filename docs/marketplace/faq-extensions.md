@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting getting extensions for VSTS
 description: Troubleshooting getting and paying for extensions for VSTS
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: douge

@@ -2,7 +2,7 @@
 title: Server administration index to content for TFS
 description: Guide to topics for installing TFS, and managing team projects, project collections for Team Foundation Server (TFS)  
 ms.technology: vs-devops-admin
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
 ms.author: kaelli
