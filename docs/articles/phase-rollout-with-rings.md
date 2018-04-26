@@ -110,7 +110,7 @@ You need **effective** monitoring and **actionable** alerts to detect and mitiga
 > [!TIP]
 > Start with high-level views of your data, visual dashboards that you can watch from afar, and drill-down as needed. Perform, regular housekeeping of your views and remove all noise. A visual dashboard tells a far better story than hundreds of notification emails, often filtered and forgotten by email rules.
 
-Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions you can build overview of your pipelines, lead and cycle times, and other information. In the sample dashboard, it's evident that there are 33 successful builds, 1 failed build, 12 successful releases, and 12 releases in progress.
+Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions you can build overview of your pipelines, lead and cycle times, and other information. In the sample dashboard, it's evident that there are 34 successful builds, 21 successful releases, 1 failed release, and 2 releases in progress.
 
 ![High-level dashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
@@ -121,7 +121,7 @@ Using a ring-deployment strategy you can gather feedback to validate your hypoth
 Here's a summary of how the ALM | DevOps Ranger engineering process evolved with ring deployment models.
 
 | Before using Rings |   | With Rings |
-|--------------------|:-:|------------|
+|--------------------|:-:|-----------:|
 |Manual and error prone|Build|Automated and consistent|
 |Manual and error prone|Release|Automated and consistent|
 |Hours|Time to build (TTB)|Seconds|
