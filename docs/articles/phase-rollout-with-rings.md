@@ -1,6 +1,6 @@
 ---
 title: Progressively exposure your releases using deployment rings
-description: Explore how to progressively expose your releases in production to validate, before impacting all users
+description: Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
 ms.topic: article
@@ -11,7 +11,7 @@ ms.author: willys
 author: wpschaub
 ---
 
-# Explore how to progressively expose your releases in production to validate, before impacting all users
+# Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
@@ -70,9 +70,9 @@ At the infrastructure level, the extensions are published to the [Visual Studio 
 ![Progressive exposure of the infrastructure layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
 The extension topology is perfectly suited for the ring deployment model and to publish the extension to each deployment ring:
-*  A private **DEV**elopment version for your canary ring
-*  A private **BETA** version for the early adopter ring
-*  A public **PROD**uction version for the public production ring
+*  A **private** development version for the canary ring
+*  A **private** preview version for the early adopter ring
+*  A **public** production version for the Users ring
 
 > [!TIP]
 >
@@ -140,7 +140,7 @@ Key takeaways:
 
 ## Is there a dependency on feature flags?
 
-No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the canaries ring, and fine-tune a subset for the early adopters and production users, as shown. See [Feature Flags or Rings?](https://aka.ms/vsar-rings-flags) for more information.
+No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the canaries ring, and fine-tune a subset for the early adopters and production users, as shown. See [Feature Flags or Rings](https://aka.ms/vsar-rings-flags) for more information.
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
