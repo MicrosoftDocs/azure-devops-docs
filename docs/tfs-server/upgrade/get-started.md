@@ -1,7 +1,7 @@
 ---
 title: Upgrade your TFS deployment 
 description: Upgrade your instance of Team Foundation Server to the latest version
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.assetid: 575486d5-af44-41a1-b14c-b82e1e362132
 toc: show

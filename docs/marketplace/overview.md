@@ -2,7 +2,7 @@
 title: Visual Studio Marketplace overview | VSTS & TFS 
 description: Overview of Visual Studio, Visual Studio Code, and VSTS/TFS extensions offered through the Visual Studio Marketplace
 ms.topic: get-started-article
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: douge
