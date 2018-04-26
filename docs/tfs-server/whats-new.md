@@ -2,7 +2,7 @@
 title: What's new for Team Foundation Server | TFS
 description: Your guide to new features that support DevOps - made available with Team Foundation Server 2015
 ms.technology: vs-devops-overview
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.topic: get-started-article  
 ms.assetid: F72EC483-F195-4157-82AB-1EBEE87F7C10
 ms.manager: douge

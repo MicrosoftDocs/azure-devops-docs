@@ -80,7 +80,7 @@ For information about agents and pipelines, see:
 
 1. In the **Install extension** blade, specify the name of the VSTS account to use. For example, if the account URL is `https://contoso.visualstudio.com`, just specify **contoso**.
 
-1. Specify the Team Project name and the deployment group name.
+1. Specify the project name and the deployment group name.
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
@@ -147,7 +147,7 @@ For a Windows VM, create an ARM template and add a resources element under the
 where:
 
 * **VSTSAccountName** is required. The VSTS account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify `contoso`
-* **TeamProject** is required. The Team Project that has the deployment group defined within it
+* **TeamProject** is required. The project that has the deployment group defined within it
 * **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
 * **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used
 * **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
@@ -189,7 +189,7 @@ To use the template:
      Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
      with scope restricted to **Deployment Group**.
 
-   * **Team project**: Specify the Team Project containing the deployment group.
+   * **Project**: Specify the project containing the deployment group.
 
    * **Deployment Group**: Specify the name of the deployment group against which the agents will be registered.  
 

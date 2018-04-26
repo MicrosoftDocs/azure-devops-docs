@@ -31,7 +31,7 @@ instead.
 Before you start, you'll need:
 
 * **A VSTS account**.
-* **A team project**. 
+* **A project**. 
 * **Azure VMs**. If you need to create them, 
   **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 
