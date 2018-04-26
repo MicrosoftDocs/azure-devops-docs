@@ -1,6 +1,6 @@
 ---
 title: Record and replay cloud-based load tests with VSTS
-description: Get app performance data by recording and replaying cloud-based load tests when use VSTS
+description: Get app performance data by recording and replaying cloud-based load tests using the features of the Test hub in Microsoft VSTS
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.prod: devops
 ms.technology: devops-test

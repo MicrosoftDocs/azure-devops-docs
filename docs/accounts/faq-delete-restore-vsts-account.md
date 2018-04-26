@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting deleting or restoring VSTS accounts
-description: Troubleshooting deleting or restoring VSTS accounts
+description: Need to know how to find the account owner and delete or restore your VSTS account? Read these frequently asked questions (FAQ)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 02/27/2018
 monikerRange: 'vsts'
 ---
-# Troubleshoot deleting or restoring VSTS accounts
+# Troubleshoot deleting or restoring your VSTS account
 
 **VSTS**
 

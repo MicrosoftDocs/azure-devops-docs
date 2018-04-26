@@ -1,6 +1,6 @@
 ---
 title: Change the number of paid users for a VSTS extension
-description: Change the number of paid users for a VSTS extension
+description: Increase or decrease the number of paid users for a VSTS (Visual Studio Team Services) feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -22,8 +22,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-You'll need VSTS 
-[project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner). 
+You'll need VSTS
+[project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
 1. Sign in to your VSTS account. (```https://{youraccount}.visualstudio.com```).
 
@@ -50,5 +50,5 @@ The number of paid extension users is updated.
 
 ## Related articles
 
-- - [Change the Azure subscription for billing](change-azure-subscription.md)
+- [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

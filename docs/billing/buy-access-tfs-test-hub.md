@@ -1,6 +1,6 @@
 ---
 title: Buy TFS CALs or access to the TFS Test hub | Team Foundation Server (TFS)
-description: Buy Team Foundation Server (TFS) client access licenses (CALs) or access to the TFS Test hub 
+description: Steps for administrators on how to buy Team Foundation Server client access licenses (CALs) or access to the TFS Test hub 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -72,6 +72,7 @@ and [give them the necessary access](../security/change-access-levels.md).
 	> If you stop paying for these users within your VSTS account, your TFS administrator should remove the users from TFS or buy TFS CALs for them.
 
 <a id="test-hub"></a>
+
 ## Buy monthly access to the Test hub
 
 0.	[Sign up for a VSTS account](../accounts/create-account-msa-or-work-student.md), 

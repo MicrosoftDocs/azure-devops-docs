@@ -1,8 +1,9 @@
 ---
 title: Build Docker images for your Java project with VSTS 
 description: Tutorial lab for building and publishing Java Docker images with Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018

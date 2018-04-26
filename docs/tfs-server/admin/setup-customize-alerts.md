@@ -5,7 +5,7 @@ ms.assetid: f49fce23-2808-450b-a2de-7d5a83401d30
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.topic: get-started-article
 monikerRange: 'tfs-2013 || tfs-2015'

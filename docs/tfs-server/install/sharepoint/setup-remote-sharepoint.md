@@ -2,7 +2,7 @@
 title: How to set up remote SharePoint Products for Team Foundation Server
 description: How to set up remote SharePoint Products for Team Foundation Server
 ms.assetid: daf507f9-ca46-439f-a3c9-c9ef3f917085
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
