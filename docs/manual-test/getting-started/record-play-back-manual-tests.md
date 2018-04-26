@@ -54,7 +54,7 @@ or [Visual Studio Enterprise](https://www.visualstudio.com/downloads/)
 ### Run a test case
 
 1. [Connect Microsoft Test Manager](../mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) 
-   to your team project, and select your current test plan.
+   to your project, and select your current test plan.
 
 1. [Select a test case and run it](../mtm/run-manual-tests-with-microsoft-test-manager.md).
 

@@ -78,9 +78,9 @@ the agent machine:
      Team Foundation Server, and install it.<p />
 
 1. Follow these steps to create a vCenter Server Service 
-   endpoint in your team project:
+   endpoint in your project:
 
-   * Open your VSTS or TFS team project in 
+   * Open your VSTS or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **VMware vCenter Server**.

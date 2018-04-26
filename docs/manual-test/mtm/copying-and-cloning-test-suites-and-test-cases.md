@@ -118,7 +118,7 @@ When you clone a test suite, the following objects are copied from the source te
 |Requirements-based suites|![Topic does not apply](_img/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)<br /><br /> Without `/clonerequirements`|Requirements-based test suites are converted to static test suites in the destination test plan. Cloned test cases will be referenced under this static test suite.<br /><br /> Cloned test cases do not include links to their original requirements work items.|  
 |Requirements-based suites|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)<br /><br /> with `/clonerequirements`|Copied and linked to a new copy of the requirement work item.|  
 |Requirements work items (product backlog items or user stories)|with `/clonerequirements`|Requirements work items that are associated with a cloned requirements-based suite are cloned.|  
-|Bug work items<br /><br /> with `/clonerequirements`|with `/clonerequirements`|Cloned in a team project that uses the Scrum process template, or any project in which the Bug work item type is in the Requirements work item category.<br /><br /> In other projects, bugs are not cloned.|  
+|Bug work items<br /><br /> with `/clonerequirements`|with `/clonerequirements`|Cloned in a project that uses the Scrum process template, or any project in which the Bug work item type is in the Requirements work item category.<br /><br /> In other projects, bugs are not cloned.|  
   
 #### Example test suite cloned by using tcm.exe  
 
@@ -140,7 +140,7 @@ cd %VS110COMNTOOLS%..\IDE
   
 tcm suites /clone       
    /collection:http://Server:8080/tfs/Collection   
-   /teamproject:"TeamProject"  
+   /teamproject:"Project"  
    [/destinationteamproject: "DestinationProject"]  
    /suiteid:sourceId   
    /destinationsuiteid:targetId   
@@ -150,9 +150,9 @@ tcm suites /clone
   
 Parameters:  
   
-- *Server, Collection, TeamProject:* The names of your team foundation server, team project collection, and team project.  
+- *Server, Collection, Project:* The names of your team foundation server, project collection, and project.  
   
-- `destinationTeamProject`: Specify this if the destination test suite is in a different team project. It must be in the same team project collection. You must specify override field values for `"Iteration Path"` and `"Area Path"`.  
+- `destinationProject`: Specify this if the destination test suite is in a different project. It must be in the same project collection. You must specify override field values for `"Iteration Path"` and `"Area Path"`.  
   
 - `suiteId` and `destinationSuiteId`: The ID of the suite to be copied, and the ID of the suite into which the new copy will be added. If you want to copy a whole test plan, use the ID of the suite at the root of the test plan.  
   

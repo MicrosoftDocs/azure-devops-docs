@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2017 | TFS 2015**
 
 You can access most manual testing features when you are added as a team member or a member
-of the Contributors group for a team project. The most common built-in groups include Readers,
+of the Contributors group for a project. The most common built-in groups include Readers,
 Contributors, and Project Administrators. For a simplified view of all default permissions
 assigned to built-in groups, see [Default permissions and access](../security/permissions-access.md).  
 

@@ -265,16 +265,16 @@ into Excel, if necessary.
 
 **A:** Select a test case, then view the test suites details. The Associated
 test suites pane shows you any test suite for any test plan that contains 
-this test case. This includes all team projects. 
+this test case. This includes all projects. 
 
-Click the associated test suite to view it. To view the team project and the test 
+Click the associated test suite to view it. To view the project and the test 
 plan for that test suite, move your pointer over the test suite.
 
 ![On Tests tab, click details pane. Select test suites in the test details pane](getting-started/_img/create-test-cases/TestSuites.png) 
 
 ### Q: What happens when I delete a test case from a requirement-based test suite?
 
-**A:** The test case still exists in your team project, but the 
+**A:** The test case still exists in your project, but the 
 test case is removed from the test suite. Also, it's no 
 longer linked to the backlog item for that test suite.
 
@@ -441,11 +441,11 @@ your grid back into Excel if you need to.
 
 ### Q: What are the default retention limits?
 
-**A**: For team projects created before October 2015, 
+**A**: For projects created before October 2015, 
 VSTS doesn't delete results from automated tests 
 and manual tests unless you change the retention limit. 
 
-For new team projects created after October 2015, 
+For new projects created after October 2015, 
 VSTS deletes all test results after one year (365 days),
 unless you chose to indefinitely retain a build associated with those results. 
 
@@ -485,7 +485,7 @@ Test results are often deleted before you can analyze them.
 **A:** Yes. [Open Microsoft Test Manager](mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
 Shared steps and test cases are stored as work items in Team Foundation Server.  
   
-### Q: Can I share steps between test plans and team projects?**  
+### Q: Can I share steps between test plans and projects?**  
 
 **A:** Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
   
