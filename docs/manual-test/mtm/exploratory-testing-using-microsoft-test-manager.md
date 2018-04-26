@@ -1,6 +1,6 @@
 ---
 title: Exploratory testing using Microsoft Test Manager
-description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager
+description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager when you want to test web applications
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: devops
 ms.technology: devops-test

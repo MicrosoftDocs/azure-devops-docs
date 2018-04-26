@@ -1,8 +1,9 @@
 ---
 title: VS Code extension for Java development with VSTS
 description: Learn how to use the VS Code extension for Java development with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.date: 04/12/2018

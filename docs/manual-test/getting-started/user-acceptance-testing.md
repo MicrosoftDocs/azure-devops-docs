@@ -1,6 +1,6 @@
 ---
 title: User acceptance testing - manual testing in VSTS
-description: Create and run user acceptance tests in VSTS and TFS
+description: Create and run user acceptance tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.prod: devops
 ms.technology: devops-test
