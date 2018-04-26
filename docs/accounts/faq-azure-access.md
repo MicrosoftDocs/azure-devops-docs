@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot access with Azure Active Directory (Azure AD)
-description: Troubleshoot access with Azure Active Directory (Azure AD)
+description: Need to understand Azure AD groups or how to add users or connect or disconnect to and from your directory? Read these frequently asked questions (FAQs)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd

@@ -61,7 +61,7 @@ This update has the following new features:
 * [Hosted Linux pool preview](#nov2316-hostedlinux)
 * [Task versioning for Build and Release definitions](#nov2316-taskversion)
 * [Inline service connections in Build and Release](#nov2316-inlineservices)
-* [Link build artifacts from another team project](#nov2316-linkartifacts)
+* [Link build artifacts from another project](#nov2316-linkartifacts)
 
 <a name="nov2316-license"></a>
 **New licensing model for Build and Release Management**
@@ -167,7 +167,7 @@ definition without having to navigate to the **Services** tab. This will be auto
 for all extensions which are defined declaratively, such as Docker, Jenkins, VMWare, and SCVMM.
 
 <a name="nov2316-linkartifacts"></a>
-**Link build artifacts from another team project**
+**Link build artifacts from another project**
 
 Until now, release definitions could only link artifact sources from the
 current project. Now, you can now link build artifacts from another project
@@ -368,8 +368,8 @@ For more details, see [Task groups](../../concepts/library/task-groups.md).
 <a name="jul28-createqueue"></a>
 **Create agent queues**
 
-You can now create agent queues from within a team project by selecting a
-pool that is not referenced by any other queue in the team project,
+You can now create agent queues from within a project by selecting a
+pool that is not referenced by any other queue in the project,
 or create a queue with a new pool.
 
 For more details, see [Configure agent pools and queues](../../concepts/agents/pools-queues.md).
@@ -735,7 +735,7 @@ in the documentation). You'll find some basic examples that use the APIs in
 **Import, export, and clone release definitions**
 
 Looking for a way to clone release definitions? Or copy release
-definitions from one team project to another? These features will be
+definitions from one project to another? These features will be
 available out-of-the-box soon, but until then you can use an
 [extension available from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-clone-rd).
 

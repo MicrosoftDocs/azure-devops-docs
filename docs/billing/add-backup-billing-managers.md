@@ -1,5 +1,5 @@
 ---
-title: Add a a user who can purchase for your VSTS account
+title: Add a user who can purchase for your VSTS account
 description: Add a backup user or other billing manager who can buy via the Visual Studio Marketplace for your VSTS account (Visual Studio Team Services)
 ms.prod: devops
 ms.technology: devops-billing
@@ -12,7 +12,7 @@ ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Add a user who can purchase for your VSTS account
+# Add a user to make purchases for your VSTS account
 
 **VSTS**
 

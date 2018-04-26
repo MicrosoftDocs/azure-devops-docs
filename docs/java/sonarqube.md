@@ -1,8 +1,9 @@
 ---
 title: Use SonarQube with VSTS
 description: Learn how to use SonarQube with VSTS for Java development
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: douge
 ms.date: 01/22/2018

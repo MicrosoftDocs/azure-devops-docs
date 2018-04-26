@@ -2,7 +2,7 @@
 title: Install extensions for Visual Studio Team Foundation Server (TFS)
 description: Find and install extensions for Team Foundation Server from the Visual Studio Marketplace
 ms.topic: get-started-article
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: douge

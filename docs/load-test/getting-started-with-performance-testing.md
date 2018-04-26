@@ -1,6 +1,6 @@
 ---
 title: Load test in the cloud with VSTS
-description: Performance test your app with cloud-based load tests using Visual Studio and VSTS
+description: Performance test your app with cloud-based load tests using the features of the Test hub in Visual Studio and Microsoft VSTS
 ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
 ms.prod: devops
 ms.technology: devops-test
@@ -68,9 +68,9 @@ connect Visual Studio to your VSTS account.
 
    ![Connect to your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
 
-1. Connect to one of your team projects.
+1. Connect to one of your projects.
  
-   ![Select Team Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
+   ![Select Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
 
    - If you haven't connected to your VSTS 
      account before, add your account to the server list.
@@ -85,9 +85,9 @@ connect Visual Studio to your VSTS account.
    - If you're prompted to sign in to VSTS, do that now.
 
 1. Select your VSTS account from the list, 
-   then choose your team project. Now you can connect.
+   then choose your project. Now you can connect.
     
-   ![Choose your team project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)
+   ![Choose your project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)
 
 <a name="article14"></a>
 ## Run and analyze your load test

@@ -1,6 +1,6 @@
 ---
 title: Delete users from Visual Studio Team Services
-description: Delete or remove account users from Visual Studio Team Services (VSTS)
+description: Steps for how to delete or remove account users from Visual Studio Team Services (VSTS) and removing users from a team or team project
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual

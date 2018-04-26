@@ -1,7 +1,7 @@
 ---
 title: Install and configure TFS on a single server
 description: Install and set up Team Foundation Server (or TFS Express) on a single server using the basic configuration wizard
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
 toc: show
