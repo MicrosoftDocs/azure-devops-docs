@@ -1,6 +1,6 @@
 ---
 title: Search your code in VSTS and Team Foundation Server
-description: Get started with Code Search in VSTS and TFS
+description: Get started with Code Search in Microsoft VSTS and TFS across all your projects to debug and manage your codebases
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
 ms.technology: devops-collab

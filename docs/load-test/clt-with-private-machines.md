@@ -1,6 +1,6 @@
 ---
 title: Run cloud-based load tests using your own machines
-description: Run cloud-based load tests by using your own subscription and machines
+description: Run cloud-based load tests by using your own subscription and machines using the features of the Test hub in Microsoft VSTS
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.prod: devops
 ms.technology: devops-test

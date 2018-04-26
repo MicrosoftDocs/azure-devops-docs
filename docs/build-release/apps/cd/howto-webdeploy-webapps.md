@@ -1,6 +1,6 @@
 ---
 title: Deploy multiple apps to Azure App Services Staging and special configurations 
-description: Next steps for deploying an app to a Azure App Services from Release Management in VSTS or TFS
+description: Next steps for deploying an app to a Azure App Services from Microsoft Release Management in VSTS or TFS
 ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
 ms.prod: devops
 ms.technology: devops-cicd
