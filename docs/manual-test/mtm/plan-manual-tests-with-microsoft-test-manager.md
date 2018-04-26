@@ -1,6 +1,6 @@
 ---
 title: Plan manual tests with Microsoft Test Manager
-description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager
+description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager when you want to test web applications
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
 ms.prod: devops
 ms.technology: devops-test

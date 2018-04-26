@@ -285,7 +285,7 @@ configuration variables of this tool are:
 | -SuiteId | SuiteId | Yes | The identifier of the Suite that you want to run (Unique ID as defined in Test Manager). |
 | -ConfigId | ConfigId | Yes | The identifier of the Test Configuration under which the tests must run (Unique ID as defined in Test Manager). |
 | -Collection | TFSCollection | Yes | The Team Foundation Server Collection URL for which the automated tests will execute. |
-| -TeamProject | TeamProject | Yes | The name of the Team Project in which the automated tests were configured. |
+| -TeamProject | TeamProject | Yes | The name of the project in which the automated tests were configured. |
 | -TestEnvironment | TestEnvironment | Yes | The Test Environment in which the Tests are to be executed (the test environment is associated to a corresponding test controller). |
 | -BuildDirectory | BuildDirectory | No\* | The location of the automated tests. In MTM 2010, this parameter is required. In MTM 2012 and 2013 this parameter is still supported, but you should preferably use BuildDefinition and BuildNumber parameters. |
 | -BuildDefinition |  | No\* | Allows the user to specify the build definition in which the automated tests are included. This parameter can only be used with MTM 2012. If defined, the BuildNumber parameter must also be specified. If not specified, the field "build" visible in the details of a test run will not be affected by the test run. |

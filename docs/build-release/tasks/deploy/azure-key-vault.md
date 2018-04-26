@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: VSTS ands TFS build task step to download secrets from an Azure key vault
+description: Azure Key Vault task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd

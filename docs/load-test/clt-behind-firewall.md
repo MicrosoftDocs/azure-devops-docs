@@ -1,6 +1,6 @@
 ---
 title: Test private and intranet apps
-description: Test private and intranet apps using cloud-based load testing
+description: Test private and intranet apps using cloud-based load testing using the features of the Test hub in Microsoft VSTS
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
