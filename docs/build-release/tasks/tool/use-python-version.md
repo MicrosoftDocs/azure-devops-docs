@@ -33,6 +33,7 @@ This task will fail if no Python versions are found in the tool cache.
 |----------|-------------|
 | Version spec | Version range or exact version of a Python version to use. |
 | Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
+| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. |
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
@@ -49,6 +50,7 @@ If the task completes successfully, the task's output variable will contain the 
   inputs:
     versionSpec: '>= 3.5'
 #   addToPath: false
+#   architecture: x86 # x86, x64 (default)
 ```
 
 ::: moniker-end
