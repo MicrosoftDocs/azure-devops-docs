@@ -1,7 +1,7 @@
 ---
 title: How to set up TFS in a multiple server configuration
 description: How to set up Team Foundation Server in a multiple server configuration using the full configuration wizard
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.assetid: F31E31CA-6E48-4726-B527-6E4F2C6BCB86
 toc: show

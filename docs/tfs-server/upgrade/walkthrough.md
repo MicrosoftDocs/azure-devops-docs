@@ -1,7 +1,7 @@
 ---
 title: Walkthrough an upgrade scenario for Team Foundation Server (TFS)
 description: Walkthrough of a standard upgrade of a two server deployment from TFS 2012 to TFS 2015.
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.assetid: aa4c0088-6a0e-4bdd-801c-a7a4eaa15bf2
 ms.manager: douge

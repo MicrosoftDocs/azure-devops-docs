@@ -3,7 +3,7 @@ title: VSTS and TFS Documentation | VSTS & TFS
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
-ms.prod: vs-devops-alm 
+ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
