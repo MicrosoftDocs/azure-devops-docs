@@ -16,9 +16,9 @@ author: wpschaub
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
 Are you planning to build and deploy Visual Studio Team Services (VSTS) extensions to production? You probably have a few questions, such as:
-- How do you embrace DevOps to deliver changes and value faster?
-- How do you mitigate the risk of deploying to production?
-- How do you automate the build and deployment?
+* How do you embrace DevOps to deliver changes and value faster?
+* How do you mitigate the risk of deploying to production?
+* How do you automate the build and deployment?
 
 This topic aims to answer these questions and share learnings using rings with VSTS extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
 
@@ -29,22 +29,23 @@ Deployment rings were first discussed in [Jez Humble's book](https://www.continu
 ## Considerations
 
 Before you convert your deployment infrastructure to a ringed deployment model, it's important to consider:
-- Who are your primary types of users? For example, early adopters and users.
-- What's your application topology?
-- What's the value of embracing ringed deployment model?
-- What's the cost to convert your current infrastructure to a ringed deployment model?
+* Who are your primary types of users? For example, early adopters and users.
+* What's your application topology?
+* What's the value of embracing ringed deployment model?
+* What's the cost to convert your current infrastructure to a ringed deployment model?
 
 ## User types
 
 In the shown example, users fall into three general buckets in production:
 
-- **Canaries** who voluntarily test bleeding edge features as soon as they are available.
-- **Early adopters** who voluntarily preview releases, considered more refined than the canary bits.
-- **Users** who consume the products, after passing through canaries and early adopters.
+* **Canaries** who voluntarily test bleeding edge features as soon as they are available.
+* **Early adopters** who voluntarily preview releases, considered more refined than the canary bits.
+* **Users** who consume the products, after passing through canaries and early adopters.
 
 ![User Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
 > [!NOTE]
+>
 > It's important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
 
 ## Application topology
@@ -52,6 +53,7 @@ In the shown example, users fall into three general buckets in production:
 Next you need to map the topology of your application to the ringed deployment model. Limit the impact of change on end users and to continuously deliver value. Value includes both the value delivered to the end user and the value (return-on-investment) of converting your existing infrastructure.
 
 > [!NOTE]
+>
 > The ringed deployment model is not a silver bullet!
 > Start small, prototype, and continuously compare impact, value, and cost.
 
@@ -68,18 +70,19 @@ At the infrastructure level, the extensions are published to the [Visual Studio 
 ![Progressive exposure of the infrastructure layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
 The extension topology is perfectly suited for the ring deployment model and to publish the extension to each deployment ring:
--  A private **DEV**elopment version for your canary ring
--  A private **BETA** version for the early adopter ring
--  A public **PROD**uction version for the public production ring
+*  A private **DEV**elopment version for your canary ring
+*  A private **BETA** version for the early adopter ring
+*  A public **PROD**uction version for the public production ring
 
 > [!TIP]
+>
 > By publishing your extension as private, you're effectively limiting and controlling their exposure for users you explicitly invite. 
 
 ## Moving changes through deployment rings
 
 Let's observe how a change triggers and moves through the ring-based deployment process, using the [VSTS Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
 
-> **VSTS Developer Tools Build Tasks** extension is the secret sauce, used to package and publish VSTS extensions to the Visual Studio Marketplace.
+**VSTS Developer Tools Build Tasks** extension is the secret sauce, used to package and publish VSTS extensions to the Visual Studio Marketplace.
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
@@ -101,6 +104,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving two opportunities to validate the change and hotfix critical bugs before a release to production.
 
 > [!NOTE]
+>
 > Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/build-release/concepts/definitions/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
 
 ## Dealing with monitoring and noise
@@ -169,9 +173,9 @@ Refer to [Variables in Release Management](/vsts/build-release/concepts/definiti
 Refer to [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
 
 ##Reference information
-- [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
-- [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
-- [DevOps @ MIcrosoft](https://aka.ms/devops)
+* [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
+* [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [DevOps @ MIcrosoft](https://aka.ms/devops)
 
 > Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
