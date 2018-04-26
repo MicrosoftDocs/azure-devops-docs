@@ -1,6 +1,6 @@
 ---
 title: Apache JMeter cloud-based load testing with VSTS
-description: Using JMeter to performance test your application in the cloud with VSTS
+description: Using JMeter to performance test your application in the cloud using the features of the Test hub in Microsoft VSTS
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops
 ms.technology: devops-test

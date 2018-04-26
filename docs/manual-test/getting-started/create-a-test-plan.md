@@ -1,6 +1,6 @@
 ---
 title: Create a test plan - manual testing in VSTS
-description: Create test plans in VSTS to track manual tests during sprints or milestones
+description: Create test plans in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.prod: devops
 ms.technology: devops-test

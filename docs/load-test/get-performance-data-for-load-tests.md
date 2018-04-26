@@ -1,6 +1,6 @@
 ---
 title: Get Application Insights performance data with load tests
-description: Get app performance data from Application Insights in VSTS and TFS
+description: Get app performance data from Application Insights using the features of the Test hub in Microsoft VSTS and TFS
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.prod: devops
 ms.technology: devops-test

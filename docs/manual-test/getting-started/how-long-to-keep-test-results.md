@@ -1,6 +1,6 @@
 ---
 title: Manage how long to keep test results in VSTS
-description: Manage how long VSTS keeps you test results
+description: Manage how long VSTS keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: devops
 ms.technology: devops-test
