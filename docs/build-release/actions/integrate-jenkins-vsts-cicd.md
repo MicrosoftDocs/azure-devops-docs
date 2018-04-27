@@ -5,7 +5,6 @@ author: mlearned
 manager: douge
 editor: 
 tags: 
-
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 
