@@ -3,7 +3,7 @@ title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/25/2018
 ms.author: hkamel
