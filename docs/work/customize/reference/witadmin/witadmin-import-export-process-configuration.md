@@ -1,5 +1,5 @@
 ---
-title: Import and export process configuration for Agile work tracking tools 
+title: Import or export process configuration  
 titleSuffix: TFS
 description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
 ms.prod: devops

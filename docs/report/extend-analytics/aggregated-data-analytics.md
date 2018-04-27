@@ -1,13 +1,14 @@
 ---
 title: Aggregate work tracking data using the OData Analytics Service
 titleSuffix: VSTS
-description: How to aggregate and filter data with the Analytics Service and the OData aggregation extension
+description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
 ms.topic: tutorial
+monikerRange: 'vsts'
 ms.date: 3/16/2018
 ---
 
