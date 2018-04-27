@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts
+title: Web portal& Team Explorer keyboard shortcuts 
 titleSuffix: VSTS & TFS   
 description: Keyboard shortcuts for the VSTS and TFS web portal, and Team Explorer  
 ms.prod: devops
@@ -16,7 +16,6 @@ monikerRange: '>= tfs-2013'
 # Keyboard shortcuts for VSTS, TFS, and Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
-
 
 You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
