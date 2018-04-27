@@ -3,11 +3,13 @@ title: Post Import
 description: Guidance on how to validate and configure a Visual Studio Team Services (VSTS) account after it has been imported.
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Post Import

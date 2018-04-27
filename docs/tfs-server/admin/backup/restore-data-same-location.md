@@ -4,9 +4,11 @@ description: Restore data to the same location
 ms.assetid: 57881758-8f6e-4d36-afa7-75d6b50e3e48
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

@@ -6,6 +6,7 @@ description: How to publish your extension for VSTS to a Microsoft Azure web sit
 ms.assetid: 86c9d7d9-51ea-4169-bf2e-f95138679a00
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

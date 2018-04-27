@@ -6,8 +6,10 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.date: 04/13/2018
 ---
 
 # Extension reporting hub

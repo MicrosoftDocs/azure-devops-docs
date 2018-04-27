@@ -6,6 +6,7 @@ description: Browse through the places where your extension can extend Visual St
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/26/2016

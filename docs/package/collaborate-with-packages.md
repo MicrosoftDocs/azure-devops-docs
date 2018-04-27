@@ -9,6 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.date: 09/29/2016
 ms.topic: conceptual
+monikerRange: '>= tfs-2017'
 ---
 
 # Collaborate more and build faster with packages

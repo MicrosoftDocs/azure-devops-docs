@@ -6,6 +6,7 @@ title: FAQ for Visual Studio extensions
 description: Frequently asked questions (FAQ) for building Visual Studio extensions.
 ms.assetid: 58B3A4FE-7188-450F-8402-EA9DFCD878E3
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

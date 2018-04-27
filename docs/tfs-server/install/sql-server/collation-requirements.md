@@ -4,9 +4,11 @@ description: SQL Server Collation Requirements for Team Foundation Server
 ms.assetid: 193b1aa8-6682-490c-8a58-4b01cc657e4b
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 

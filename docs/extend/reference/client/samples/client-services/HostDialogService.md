@@ -6,10 +6,13 @@ description: A sample that shows how to use a host dialog service with a VSTS ex
 ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/25/2016
 ---
+
+# VSTS Host Dialog Service Example
 
 ```js
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {

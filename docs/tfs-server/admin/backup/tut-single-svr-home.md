@@ -4,10 +4,11 @@ description: Restore a TFS deployment to new hardware
 ms.assetid: 4601dd68-3b9e-4d29-aa71-432566d4e4bd
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

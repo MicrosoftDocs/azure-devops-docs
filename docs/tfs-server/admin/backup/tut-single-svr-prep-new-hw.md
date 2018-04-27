@@ -4,10 +4,11 @@ description: Prepare the new hardware
 ms.assetid: 1fde1282-d853-4230-b06d-584f681ff7bb
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

@@ -3,11 +3,13 @@ title: Validation of process templates for migration import from TFS to Visual S
 description: Guidance for fixing common TfsMigrator process template issues.
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Process Templates

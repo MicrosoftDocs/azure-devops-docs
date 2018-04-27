@@ -6,10 +6,13 @@ description: A sample that shows how to use a host navigation service with a VST
 ms.assetid: d23bf2e9-f5c6-4108-8af5-fab62c848ca9
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/17/2016
 ---
+
+# VSTS Extension Host Navigation Service Example
 
 ```js
     // Get navigation service

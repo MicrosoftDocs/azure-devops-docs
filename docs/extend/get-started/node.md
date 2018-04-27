@@ -6,6 +6,7 @@ description: Tutorial for creating your first extension, a hub page, for VSTS
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/26/2016
