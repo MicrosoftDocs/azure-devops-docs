@@ -9,6 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 10/18/2017
+monikerRange: '>= tfs-2017'
 ---
 
 # Debug with symbols in Visual Studio

@@ -1,12 +1,13 @@
 ---
 title: Buy and install paid extensions and assign to users in VSTS | VSTS 
 description: Find paid extensions in the Visual Studio Marketplace and learn how to buy, install, and assign them.
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 03/24/2018
 monikerRange: 'vsts'
 ---

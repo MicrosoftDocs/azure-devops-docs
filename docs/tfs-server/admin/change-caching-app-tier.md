@@ -4,9 +4,11 @@ description: Change cache settings for an application-tier server
 ms.assetid: c9674fd0-badf-4820-8e7f-6bbea6dd1b2d
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

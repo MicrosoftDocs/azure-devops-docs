@@ -4,9 +4,11 @@ description: Examples of simple Topology for Team Foundation Server
 ms.assetid: 435e67a7-79df-4029-b5c3-9bba515b6533
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/16/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>=tfs-2013 < tfs-2018'
 ---
 

@@ -2,10 +2,12 @@
 title: Add SharePoint products to your Team Foundation Service deployment
 description: Add SharePoint products to your Team Foundation Service deployment
 ms.assetid: 3b5bb2e2-4142-4b9d-848e-b52ffafe9aa3
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/09/2017
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---

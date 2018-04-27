@@ -4,9 +4,11 @@ description: Configure Lab Management for SCVMM environments and Team Foundation
 ms.assetid: dc8906e0-cced-4728-9060-e38ea14bd4be
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

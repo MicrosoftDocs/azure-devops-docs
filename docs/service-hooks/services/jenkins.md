@@ -6,6 +6,7 @@ title: Jenkins with VSTS
 description: Use Jenkins with your VSTS account
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

@@ -6,6 +6,7 @@ title: Zendesk with VSTS
 description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 02/08/2017

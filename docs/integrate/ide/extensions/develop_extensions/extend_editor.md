@@ -6,6 +6,7 @@ title: I want to extend the editor
 description: A walkthrough to show you how to extend the Editor.
 ms.assetid: 29B13A4F-19ED-4D80-848C-D94B7B24D2F4
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

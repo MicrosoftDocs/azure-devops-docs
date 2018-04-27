@@ -6,10 +6,13 @@ description: A sample that shows how to use a extension data service with a VSTS
 ms.assetid: 4e66185f-a91d-4e2b-82b8-fd43f3db9fb6
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/25/2016
 ---
+
+# VSTS Extension Data Service Example
 
 VSTS extension data service sample -- getting the data service
 

@@ -6,6 +6,7 @@ title: MyGet with VSTS
 description: Use MyGet with your VSTS account
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

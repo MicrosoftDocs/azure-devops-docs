@@ -1,11 +1,13 @@
 ---
 title: Open Team Foundation Server administration console
 description: Open Team Foundation Server administration console
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: 8278b2af-1733-4b6a-a548-ad2cae4b0cab
 ms.manager: douge
-ms.author: douge
+ms.author: elbatk
+author: elbatk
 ms.date: 09/26/2016
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
