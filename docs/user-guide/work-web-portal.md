@@ -36,11 +36,11 @@ If you don't have a team project yet, create one in [VSTS](../accounts/create-ac
 To get started, from a [supported web browser](../tfs-server/requirements.md#browsers) enter the following URL:
 
 ::: moniker range="vsts"
-	<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i> </code></pre>
+<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i></code></pre>
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013"
-	<pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre>
+<pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre>
 
 
 >[!NOTE]  
@@ -102,7 +102,7 @@ You and other team members use the user context to collaborate, plan, and build 
 
 <a id="team-services-user-context" />
 
-::: moniker range="vsts || >= tfs-2017"
+::: moniker range=">= tfs-2017"
 
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
@@ -226,7 +226,7 @@ From a user context, open the admin context by clicking the ![gear icon](_img/wo
 
 Below we show the admin context for the team project level. 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 <a id="admin-intro" />
 
@@ -293,7 +293,7 @@ You must be a member of the listed administrator group or role to perform the ta
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 > [!div class="mx-tdBreakAll"]
 > |Team settings|Team project settings|  

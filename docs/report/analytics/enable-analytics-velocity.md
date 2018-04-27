@@ -1,7 +1,7 @@
 ---
 title: Add an Analytics widget to a dashboard
 titleSuffix: VSTS
-description: Quickstart guide to adding an Analytics widget to a dashboard for Visual Studio Team Services 
+description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
@@ -9,6 +9,7 @@ ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
 ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -58,7 +59,6 @@ Congratulations! A new Velocity widget has been added to your dashboard.
 > [!TIP]  
 > You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
-
 
 ##  Learn about your team’s velocity using the Velocity widget 
 

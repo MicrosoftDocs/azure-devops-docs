@@ -1,6 +1,6 @@
 ---
 title: Test private and intranet apps
-description: Test private and intranet apps using cloud-based load testing
+description: Test private and intranet apps using cloud-based load testing using the features of the Test hub in Microsoft VSTS
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
@@ -62,7 +62,6 @@ This topic discusses only scenarios **3** and **4**.
    you can use the Test Controller and Test Agents combination for load testing. This requires you to
    use your own infrastructure for load generation and the results are stored in SQL Server.
    See [Configure test agents and test controllers for running load tests](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) for details.
-
 
 The following sections describe how you can provision load agents using Azure IaaS VMs
 (you will need an Azure subscription). This approach is primarily useful when:

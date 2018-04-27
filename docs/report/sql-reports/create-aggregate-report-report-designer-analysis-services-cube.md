@@ -1,5 +1,5 @@
 ---
-title: Create an aggregate report using Report Designer and the Analysis Services Cube 
+title: Create an aggregate report with Report Designer 
 titleSuffix: TFS 
 ms.prod: devops-server
 ms.technology: devops-analytics

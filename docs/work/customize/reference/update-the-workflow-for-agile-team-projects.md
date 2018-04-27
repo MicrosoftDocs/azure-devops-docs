@@ -1,5 +1,5 @@
 ---
-title: Update the workflow for team projects based on the Agile process template
+title: Update the Agile process workflow 
 titleSuffix: TFS
 description: Update the workflow for agile team projects to manually update the user story and task workflow assignments.
 ms.prod: devops
@@ -7,16 +7,17 @@ ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <=tfs-2015'
 ms.date: 12/15/2017
 ---
 
 # Update the workflow for agile team projects
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
+**TFS 2015 | TFS 2013** 
 
 
 > [!IMPORTANT]  
->This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
+> This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
 
 
 After you have configured features for your upgraded team project, which was created with a process template based on Microsoft Solutions Framework (MSF) for Agile Software Development v5.0, you should manually update the user story and task workflow assignments. If you don't update the workflow, then the task board provides only two states, **Active** and **Closed**, as shown in the following illustration. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.  

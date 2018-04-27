@@ -16,8 +16,8 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
-*Library* is a collection of _shared_ build and release assets for a team project.
-Assets defined in a library can be used in multiple build and release definitions of the team project.
+*Library* is a collection of _shared_ build and release assets for a project.
+Assets defined in a library can be used in multiple build and release definitions of the project.
 The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).

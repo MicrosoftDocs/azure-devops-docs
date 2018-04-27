@@ -1,6 +1,6 @@
 ---
 title: Perform SQL server actions in VSTS or TFS
-description: Use the SQL DACPAC task to perform SQL server actions in VSTS or TFS
+description: Use the SQL DACPAC task to perform SQL server actions in VSTS or TFS using Microsoft Release Management
 ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
 ms.prod: devops
 ms.technology: devops-cicd
