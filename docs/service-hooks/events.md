@@ -1111,7 +1111,7 @@ A deployment was started
 <a name="tfvc.checkin"></a>
 ### Code checked in
 
-A changeset is checked into TFVC version control.
+A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
