@@ -1,5 +1,5 @@
 ---
-title: Manage change 
+title: CMMI process guidance, Manage change 
 titleSuffix: VSTS & TFS
 description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

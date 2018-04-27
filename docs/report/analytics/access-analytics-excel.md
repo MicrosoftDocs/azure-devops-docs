@@ -1,13 +1,14 @@
 ---
-title: Access data through Excel
+title: Access Analytics Service data through Excel
 titleSuffix: VSTS    
-description: How to access the Analytics Service OData for Visual Studio Team Services (VSTS) from Excel
+description: How to guide for accessing the Analytics Service OData from Excel for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 

@@ -7,7 +7,8 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 4/26/2018
+ms.date: 04/26/2018
+monikerRange: 'vsts'
 ---
 
 

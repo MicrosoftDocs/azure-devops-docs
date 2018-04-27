@@ -1,11 +1,13 @@
 ---
-title: Query for linked work items (VSTS) 
-description: How to query for linked work items using the Analytics service for Visual Studio Team Services (VSTS)  
+title: Query for linked work items 
+titleSuffix: VSTS 
+description: How to guidance for creating a query for linked work items using the Analytics service for Visual Studio Team Services   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.manager: douge
 ms.author: kaelli
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 

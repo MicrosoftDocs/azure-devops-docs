@@ -1298,7 +1298,7 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-Each wiki page corresponds to a file within the wiki git repo.  
+Each wiki page corresponds to a file within the wiki Git repo.  
 Names you assign to a wiki page title must conform to the following restrictions.
 
 |Restriction type| Restriction|
