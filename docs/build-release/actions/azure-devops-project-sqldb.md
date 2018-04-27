@@ -6,7 +6,7 @@ ms.manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.date: 04/17/2018
+ms.date: 04/19/2018
 ms.author: mlearned
 monikerRange: 'vsts'
 ---
@@ -38,7 +38,7 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a **n
 
 1. Sign into the [Microsoft Azure portal](https://portal.azure.com).
 
-1. Choose the **+ New** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
+1. Choose the **Create a resource** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
 
    	![Starting Continuous Delivery](_img/azure-devops-project-github/fullbrowser.png)
 
@@ -60,7 +60,7 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a **n
  
 1. Exit the Azure configuration area, and choose **Done**.
 
-1. It will take several minutes for the Azure virtual machine to be ready.  A sample ASP.NET application and SQL Server Database Project is set up in a repository in your VSTS account, an Azure SQL Server Database resource is created, a build and release executes, and your application deploys to Azure.  
+1. It will take several minutes for the process to complete.  A sample ASP.NET application and SQL Server Database Project is set up in a repository in your VSTS account, an Azure SQL Server Database resource is created, a build and release executes, and your application deploys to Azure.  
 
 	Once complete, the Azure DevOps **project dashboard** loads in the Azure portal.  You can also navigate to the **Azure DevOps Project Dashboard** directly from **All resources** in the **Azure Portal**.  
 
@@ -82,7 +82,7 @@ The Azure DevOps project dashboard provides a direct link to the management page
 
 1. Select **Reset password**, enter a password for the **SQL Server admin login**, and then select **Save**.  **Keep** this password for future steps in this tutorial.
 
-1. You may now optionally use client tools such as **SQL Server Management Studio** or **Visual Studio** to connect to the Azure SQL Server and Database.
+1. You may now optionally use client tools such as **SQL Server Management Studio** or **Visual Studio** to connect to the Azure SQL Server and Database.  Use the **Server name** property to connect.
 	
 ## Examine the VSTS CI Build definition
 
@@ -186,7 +186,7 @@ With Azure Application insights, you can easily monitor your application's perfo
  > [!NOTE]
  > The steps below will permanently delete resources.  Only use this functionality after carefully reading the prompts.
 
-If you are testing, you can clean up resources to avoid accruing billing charges.  When no longer needed, you can delete the Azure virtual machine and related resources created in this tutorial by using the **Delete** functionality on the Azure DevOps Project dashboard.  **Be careful**, as the delete functionality destroys the data created by the Azure DevOps Project in both Azure and VSTS, and you will not be able to retrieve it once its gone.
+If you are testing, you can clean up resources to avoid accruing billing charges.  When no longer needed, you can delete the Azure SQL Database and related resources created in this tutorial by using the **Delete** functionality on the Azure DevOps Project dashboard.  **Be careful**, as the delete functionality destroys the data created by the Azure DevOps Project in both Azure and VSTS, and you will not be able to retrieve it once its gone.
 
 1. From the **Azure Portal**, navigate to the **Azure DevOps Project**.
 2. On the **top right** side of the dashboard, select **Delete**.  After reading the prompt, select **Yes** to **permanently delete** the resources.

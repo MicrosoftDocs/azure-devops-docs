@@ -51,5 +51,5 @@ http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2f
 
 1. Save your changes to the PageViewer web part.
 
-# Referenced topics
+## Related articles
 * [SSRS Report URL Access Parameter Reference](https://docs.microsoft.com/sql/reporting-services/url-access-parameter-reference)

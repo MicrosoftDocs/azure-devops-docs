@@ -51,7 +51,18 @@
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"  
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "report/admin/**": ">= tfs-2013 <= tfs-2018",
+        "report/analytics/**": "vsts",
+        "report/excel/**": ">= tfs-2013 <= tfs-2018",
+        "report/extend-analytics/**": "vsts",
+        "report/powerbi/**": "vsts",
+        "report/sharepoint-dashboards/**": ">= tfs-2013 <= tfs-2017",
+        "report/sql-reports/**": ">= tfs-2013 <= tfs-2018",
+        "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
+      }
+    },
     "template": [],
     "dest": "team-services",
     "groups": {

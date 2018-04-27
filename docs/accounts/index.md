@@ -1,5 +1,5 @@
 ---
-title: Account management for VSTS  
+title: Account management topics and articles for VSTS  
 description: Index to topics for managing the account for Visual Studio Team Services (VSTS)
 ms.prod: devops
 ms.technology: devops-accounts

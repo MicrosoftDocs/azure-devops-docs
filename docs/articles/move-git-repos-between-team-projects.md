@@ -1,46 +1,46 @@
 ---
-title: Version Control - Move Git repositories between VSTS Team Projects
-description: Moving Git Repositories from one VSTS Team Project to another
+title: Move Git repositories between Team Projects
+description: Explore how to move git repositories between Team Projects with full-fidelity histiory
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.manager: douge
-ms.date: 06/01/2016
+ms.date: 04/27/2018
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2013'
 ---
 
-[comment]: <> (Document was created as part of our team project consolidation and validated with engineers / MVPs in the field.)
-[comment]: <> (We considered the `git remote add origin <URL>` command, but clone+push was simple and fast.)
+# Explore how to move git repositories between Team Projects with full-fidelity history
 
-# Move Git repositories between team projects
+![Git logo](./_img/move-git-repos-between-team-projects/git.png)
 
-![](./_img/move-git-repos-between-team-projects/git.png)
-
-Do you plan to consolidate multiple team projects into one? If yes, you are probably wondering what to do with all the repositories. Move or merge them? Keep history or just the tip of the iceberg?
+If you're planning to consolidate multiple Team Projects into one, you're probably wondering:
+* What to do with all the repositories? 
+* Move or merge them? 
+* Keep history or just the tip of the iceberg?
 
 In this article you will learn how to move your Git repositories to another team project, with full-fidelity history. 
 
 ## What's the scenario?
 
-As shown, we need to move the MigrationDemo repo, from the FabrikamOld to the new Fabrikam team project.
+As shown, you need to move the MigrationDemo repo, from the FabrikamOld to the new Fabrikam team project.
 
 > ![Move Repo Scenario](./_img/move-git-repos-between-team-projects/MoveRepo-Visual.png)
 
 ## How do I move?
 
-You have 2 options as outlined below. Import functionality is easier, but is only available in VSTS and TFS 2017 Update 1 and above.  
+You have two options as outlined below. Import functionality is easier, but is only available in VSTS and TFS 2017 Update 1 and above.  
 
 ### Use Import Git repository functionality
-Using Import Repository, you can import a Git repository to your team project from TFS/VSTS or any other Git source code provider like GitHub. 
-Review the [import repository documentation](../git/import-git-repository.md) for more details.
+Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Visual Studio Team Services (VSTS) or any other Git source code provider like GitHub. Review the [import repository documentation](../git/import-git-repository.md) for more details.
 
-### Manually migrate the Git repo in 5 easy steps:
+### Manually migrate the Git repo in five easy steps:
 
 #### Create an empty Git repo. 
 
-From the code explorer, click on the repo name.  Choose **New Repository** from the list, select Git as the type and give it a name.
+From the code explorer, click on the repo name.  Choose **New Repository** from the list, select Git as the type, and give it a name.
 
 ![Create New Repo](./_img/move-git-repos-between-team-projects/MoveRepo-NewRepo.png)
  
@@ -58,7 +58,7 @@ Switch to a Developer Command Prompt and path to your local (source) repository 
 
 > Command Line: `git clone --mirror https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo`
 
-As shown, the `clone --mirror` is redundant in this case, as the remote repository is bare. It is used here as a safe and easy way to setup the remote.
+As shown, the `clone --mirror` is redundant in this case, as the remote repository is bare. It is used here as a safe and easy way to set up the remote.
 
 ![Git Clone Command Done](./_img/move-git-repos-between-team-projects/MoveRepo-Mirror-Done.png)
 
@@ -68,7 +68,7 @@ Run the `git push` command to push the local changes to the remote (target) repo
 
 ![Git Push Command Done](./_img/move-git-repos-between-team-projects/MoveRepo-Push-Done.png)
 
-The `--mirror` option is used with both the clone and push command, and ensures that all branches and other attributes are replicated in the new repo.
+The `--mirror` option is used with both the clone and push command. The option ensures that all branches and other attributes are replicated in the new repo.
 
 #### Validate the new repository
 
@@ -84,12 +84,11 @@ Verify that all your branches were moved over to the new repo.
 
 > Command line: `git remote set-url origin https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo`
 
-
 > Important - Remember to clean up the original project by either deleting the repo (be careful, there's no undo) or locking the branches so that no one accidentally keeps updating it.
 
-For detailed information on planning your team project collections and team projects refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](http://vsarplanningguide.codeplex.com/).
+For detailed information on planning your team project collections and team projects, refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](https://aka.ms/vsarsolutions).
 
-> Authors: Jesse Houwing, Mike Fourie, and Willy Schaub
+> Authors: Jesse Houwing, Mike Fourie, and Willy Schaub | Connect with the authors and ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md) 
 
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

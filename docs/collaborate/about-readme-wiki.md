@@ -1,5 +1,5 @@
 ---
-title: Search the Wiki
+title: Search Wiki content defined in your team project
 titleSuffix: VSTS & TFS
 description: Share information using a project or repo README or Wiki in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-collab
@@ -8,6 +8,7 @@ ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+ms.reviewer: sancha
 ms.topic: overview
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
@@ -32,22 +33,51 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015"
+::: moniker range=">= tfs-2015"
 
 ## Markdown 
 
 Markdown makes it easy to format text, include images, and link as needed to additional documentation within your project pages, readme files, dashboards, and pull request comments.   
 
-You can provide guidance to your team in these places using Markdown:   
+You can provide guidance to your team in these places using Markdown:
+
+::: moniker-end
+
+::: moniker range="vsts"   
   
+- [Team project wiki (provisioned wiki)](add-edit-wiki.md)
+- [Pulbish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project vision page or Welcome pages](project-vision-status.md)  
-- [Add and edit wiki pages](add-edit-wiki.md)    
+- [Project vision page or Welcome pages](project-vision-status.md)    
 - [Repository Readme files](../git/create-a-readme.md) 
 - [Pull request comments](../git/pull-requests.md) 
  
-For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../collaborate/markdown-guidance.md).
+::: moniker-end
 
+
+::: moniker range="tfs-2018"   
+  
+- [Add and edit wiki pages](add-edit-wiki.md)    
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md) 
+ 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"   
+      
+- [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project vision page or Welcome pages](project-vision-status.md)  
+- [Repository Readme files](../git/create-a-readme.md) 
+- [Pull request comments](../git/pull-requests.md) 
+ 
+::: moniker-end
+
+For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
+
+
+::: moniker range=">= tfs-2015"   
 
 ## READMEs
 
@@ -71,13 +101,22 @@ Here are some great readmes that use this format and speak to all three audience
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 ## Wiki
 
-Use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.    
+Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a Git repository is created to store your markdown files, images, attachments, and the sequence of pages. This wiki supports collaborative editing of its content and structure.   
 
-The following features are supported within the built-in wiki for VSTS and the indicated TFS version. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md). 
+::: moniker-end
+
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://www.visualstudio.com/downloads/). 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+The following features are supported for the team project wiki you create in VSTS and the indicated TFS version or later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md). 
 
 > [!div class="mx-tdBreakAll"]  
 > |Feature | TFS version |  
@@ -87,22 +126,32 @@ The following features are supported within the built-in wiki for VSTS and the i
 > |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 | 
 > |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
 > |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
-> |[Filter Wiki TOC](add-edit-wiki.md#filter-wiki-pages) | TFS 2018 |  
-> |[Mathematical notation and characters](markdown-guidance.md#mathematical-notation) |Not supported| 
-> |Print a Wiki page<sup>1</sup> | Not supported | 
+> |[Filter Wiki TOC](filter-print-wiki.md) | TFS 2018 |  
+> |[Mathematical notation and characters](markdown-guidance.md#mathematical-notation) |TFS 2018.2 | 
+> |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 | 
+> |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 | 
+> |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 | 
+> |[Wiki search](search-wiki.md) | TFS 2018.2 | 
+> |[Publish code as wiki](publish-repo-to-wiki.md) | Not supported | 
 
-<sup>1</sup>  This feature may not be available from the Firefox web browser. 
+**Notes:**
+1. This feature may not be available from the Firefox web browser.  
+
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range="vsts"
+## Publish existing Git repositories to a wiki  
 
-> [!NOTE]  
-> The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). 
+Many teams document their code using markdown and check in these files along with the code. While Git supports the maintenance and review of such documentation along with standard pull requests, such files present a few challenges to consumers of the content. 
 
+- Readers must often sift through multiple files and folders to find the content of interest. 
+- Content lacks organization and structure. There is no inherent page hierarchy to support readers.
+- Content versioning is not supported. 
+- Searching through content relies on searching the code, rather than a search experience optimized for searching content. 
+
+With the publish code as wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature addresses the challenges by providing a way to maintain your content alongside your code base, but selectively publish and update your content to a wiki.  
+
+There are several significant differences between how you manage the content for a wiki that you provision for a team project versus wiki pages that you publish from a Git repository. For details, see 
+   
 ::: moniker-end
-
-
-
-
-

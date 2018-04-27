@@ -1,6 +1,6 @@
 ---
 title: Change the Azure subscription your VSTS account uses for billing
-description: How to change the Azure subscription your VSTS account uses for billing
+description: Steps for how to unlink the Azure subscription your Visual Studio Team Services account uses for billing via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf

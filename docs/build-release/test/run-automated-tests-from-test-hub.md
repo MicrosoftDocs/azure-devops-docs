@@ -1,6 +1,6 @@
 ---
 title: Run automated tests from test plans in the Test hub VSTS and TFS 
-description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub
+description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub with a build or release definition
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.prod: devops
 ms.technology: devops-cicd
