@@ -1,7 +1,7 @@
 ---
 title: Assign paid extension access to users for VSTS and TFS
 description: Assign paid extension access to users for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: douge

@@ -2,7 +2,7 @@
 title: Delete a team project using TFSDeleteProject
 description: Delete a team project in TFS from the command-line using TFSDeleteProject
 ms.assetid: dc7efa4d-9c70-4b61-a910-8f1e66678866
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk

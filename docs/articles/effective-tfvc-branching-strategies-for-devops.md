@@ -1,38 +1,39 @@
 ---
-title: Version Control - Effective TFVC branching strategies for DevOps
-description: Explore TFVC branching strategies for DevOps 
+title: Manage branching strategies in TFVC for DevOps
+description: Learn to manage branching strategies with a DevOps mindest in Team Foundation Version Control (TFVC)
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
-ms.date: 03/20/2017
+ms.date: 04/25/2018
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2015'
 ---
 
-# Effective TFVC branching strategies for DevOps
+# Exoplore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index))? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index)) with Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
 
-[![Channel9](_img/effective-tfvc-branching-strategies-for-devops/channel9.png)](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean) *(Based on an interview with Abel Wang and Steve St Jean)*
+> [!VIDEO https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean]
 
 ## TFVC
 
-TFVC is a centralized version control system to maintain code and make teams more effective, by providing collaboration and consistent code sharing, publishing, and review features. 
+TFVC is a centralized version control system to maintain code and make teams more effective. It provides collaboration and consistent code sharing, publishing, and review features. 
 
 ## Keep it simple!
 
-By adopting an effective branching strategy you'll:
+By adopting an effective branching strategy, you'll:
 - Foster a *DevOps culture*
 - Promote collaboration flow and increased productivity
 - Enable teams to spend more time developing and less time managing code
 
-To embrace DevOps, it's important to keep your branch strategy simple and strive for high-quality. Some suggestions:
+To embrace DevOps, it's important to keep your branch strategy simple and strive for high quality. Some suggestions:
 
 - Start with a simple strategy and evolve as needed
 - Use consistent naming conventions for branches
@@ -47,15 +48,15 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 
 ## Start with a simple branching strategy
 
-Create a source control structure that identifies *shippable* release units. The concept of *releasable units* are a foundational piece of this strategy, which Steve St Jean describes as follows:
+Create a source control structure that identifies *shippable* release units. The concept of *releasable units* is a foundational piece of this strategy, which Steve St Jean describes as follows:
 - The physical unit of versioning and delivery.
 - The primary unit to support the branching and release models.
 - Can be at the Suite-, Application-, or Component-level.
-- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit but Visio is not as it may release or patch independent of the rest of the Microsoft Office Suite.
-- In TFVC this would be the root node under the team project node.
+- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite. Visio is not, as it may release or patch independent of the rest of the Microsoft Office Suite.
+- In TFVC, this would be the root node under the team project node.
 - Can be equated to a repo in Git
 
-You typically start with having to support only one production version, with parallel defect corrections and development of new features for future releases. Typical examples include web sites, corporate line of business applications, and interim tools.
+You typically start with having to support only one production version, with parallel defect corrections and development of new features. Typical examples include web sites, corporate line-of-business applications, and interim tools.
 
 Start with the simple **main-only** branching strategy.
 
@@ -71,14 +72,17 @@ When you complete a release cycle, create a **release** branch. Use the release 
 
 ![Version 1.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-vnext.png)
 
-Automate your build to trigger with every checkin to the release branch, run automated tests, and use release management to deploy to a development, quality assurance, user acceptance, staging, and finally your production environment.
+Automate your build to:
+- Trigger with every checkin to the release branch 
+- Run automated tests
+- Use release management to deploy to your development and other environments
 
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|
 |Main|CI_Bld|Dev|Triggered with every checkin to main|
 |V1.00|RC_Bld|Dev -> QA -> UAT -> Staging -> Prod|Triggered with every checkin to release|
 
-When version 2 becomes the Release Candidate you can update your existing RC build definition to point to the V2.00 branch and it will now build and release just as V1.00 did when it was the current version.
+When version 2 becomes the Release Candidate, you can update your existing RC build definition to point to the V2.00 branch. It will now build and release just as V1.00 did when it was the current version.
 
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|
@@ -88,13 +92,16 @@ When version 2 becomes the Release Candidate you can update your existing RC bui
 
 ## Expand branching strategy as needed
 
-When the need arises to support more than one production version, for example a commercial solution such as Word, you can expand your simple branching strategy. 
+When the need arises to support more than one production version, for example a commercial solution such as Word, you can expand your branching strategy. 
 
-For every completed release cycle you need to support, create a new release branch and continue next version development in main, using [feature isolation](./effective-feature-isolation-on-tfvc.md). Take note of the reverse integration (RI) merges from v1.0 and v2.0 to **main**, which represent bug fixes that are released to production.
+For every completed release cycle you need to support, create a new release branch and continue next version development in main, using [feature isolation](./effective-feature-isolation-on-tfvc.md). Note the reverse integration (RI) merges from v1.0 and v2.0 to **main**. They represent bug fixes that are released to production.
 
 ![Version 2.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-complex.png)
 
-So, by using a **simple** branching strategy and adopting a **consistent naming convention**, you'll be able to support applications that have one or more supported releases, continuous development of new features, and continuous delivery of value to your users.
+By using a **simple** branching strategy and adopting a **consistent naming convention**, you'll be able to support:
+- Applications that have one or more supported releases
+- Continuous development of new features
+- Continuous delivery of value to your users
 
 ## Checklist and lessons from the field
 
@@ -103,7 +110,7 @@ So, by using a **simple** branching strategy and adopting a **consistent naming 
 - Keep it simple and expand branching complexity as needed
 - Organize your code into shippable units
 - Use a consistent naming strategy for your branches
-- Build with every check in
+- Build with every check-in
 - Create a CI/CD pipeline using gated checkins and automated testing
 
 **Lessons from the field - things to avoid**
@@ -121,7 +128,7 @@ So, by using a **simple** branching strategy and adopting a **consistent naming 
 - [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
 - [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
 
-> Authors: Sergio A Romero | Find the origin of this article and connect with the ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> Authors: Sergio A Romero | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

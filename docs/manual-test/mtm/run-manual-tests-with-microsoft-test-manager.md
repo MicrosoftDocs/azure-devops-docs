@@ -1,6 +1,6 @@
 ---
 title: Run manual tests with Microsoft Test Manager
-description: Manual and exploratory testing - Run manual tests with Microsoft Test Manager
+description: Manual and exploratory testing - Run manual tests with Microsoft Test Manager when you want to test web applications
 ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
 ms.prod: devops
 ms.technology: devops-test

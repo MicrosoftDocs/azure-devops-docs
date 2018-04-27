@@ -189,7 +189,7 @@ Consider the following when configuring Search:
   When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
   for existing and new Tem Project Collections** to automate this process.
 
-* If you do not set the checkbox to install the Code Search extension for all your Team Project Collection, while 
+* If you do not set the checkbox to install the Code Search extension for all your Project Collection, while 
   configuring Search, your Project Collection administrator can install it from Visual Studio Marketplace. Make 
   sure you navigate to the Marketplace from your TFS portal page. 
 

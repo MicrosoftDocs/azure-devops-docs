@@ -1,6 +1,6 @@
 ---
-title: Add a backup billing manager for your VSTS account
-description: Add a backup/other billing manager for your VSTS account (Visual Studio Team Services)
+title: Add a user who can purchase for your VSTS account
+description: Add a backup user or other billing manager who can buy via the Visual Studio Marketplace for your VSTS account (Visual Studio Team Services)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
@@ -12,7 +12,7 @@ ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Add a backup billing manager for your VSTS account
+# Add a user to make purchases for your VSTS account
 
 **VSTS**
 

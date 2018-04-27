@@ -1,5 +1,5 @@
 ---
-title: Track bugs using CMMI process
+title: CMMI process guidance, Track bugs  
 titleSuffix: VSTS & TFS
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: devops
@@ -8,9 +8,12 @@ ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
+
 # Track bugs
+
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
 As you run tests to verify your requirements, you are bound to find bugs. Use the bug work item to describe and track progress for each bug that you find.  

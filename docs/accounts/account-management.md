@@ -1,6 +1,6 @@
 ---
 title: Create and manage your VSTS account 
-description: Develop apps and collaborate with other code developers using the VSTS integrated cloud service 
+description: Collaborate with others to develop apps using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83

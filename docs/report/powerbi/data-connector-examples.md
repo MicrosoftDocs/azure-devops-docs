@@ -1,11 +1,15 @@
 ---
-title: Example reports for Power BI Data Connector | VSTS    
-description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics Service for VSTS 
+title: Example reports for Power BI Data Connector
+titleSuffix: VSTS   
+description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics Service for Visual Studio Team Services 
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
 ms.prod: devops
 ms.technology: devops-analytics
+ms.reviewer: stansw
 ms.manager: douge
-ms.author: stansw
+ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 01/17/2017
 ---
 

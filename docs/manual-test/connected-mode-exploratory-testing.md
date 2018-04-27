@@ -1,6 +1,6 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
-description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
+description: Manual and exploratory testing - exploratory testing by using the Microsoft Test & Feedback extension in Connected mode
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: devops
 ms.technology: devops-test
@@ -38,7 +38,7 @@ This automatically configures the extension based on your access level:
 
 1. If you want to use VSTS, and you haven't already done so, 
    [sign up for a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs)
-   now. Make sure you create a team project when you create your account.
+   now. Make sure you create a project when you create your account.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).
 

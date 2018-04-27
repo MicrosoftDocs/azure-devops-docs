@@ -1,6 +1,6 @@
 ---
 title: Rename VSTS account | VSTS
-description: Change account name in VSTS (Visual Studio Online, VSO, VSTS)
+description: Find your VSTS account owner to change your VSTS account URL or provide a new name, what to do before and after renaming your account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
@@ -25,8 +25,7 @@ So before you start, find out
 > [!NOTE]
 > An account cannot be renamed within one hour of the most recent rename.
 
-To change your VSTS account URL, 
-you'll need at least Basic access and account owner permissions. 
+To change your VSTS account URL, you'll need at least Basic access and account owner permissions. 
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 0.  Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).

@@ -1,12 +1,16 @@
 ---
-title: Power BI integration overview | VSTS
-description: Overview of the different integration options to connect to Power BI and VSTS.
+title: Power BI integration overview 
+titleSuffix: VSTS 
+description: Describes the different integration options you can use to connect to Power BI to access the Analytics Service for Visual Studio Team Services
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
 ms.author: stansw
 ms.topic: get-started-article
+ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 03/28/2018
 ---
 
