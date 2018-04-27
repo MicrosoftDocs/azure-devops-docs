@@ -6,8 +6,8 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'

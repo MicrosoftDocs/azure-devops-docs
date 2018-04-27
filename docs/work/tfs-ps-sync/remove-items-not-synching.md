@@ -1,5 +1,5 @@
 ---
-title: Delete tasks and remove work items that are no longer participating in synchronization
+title: Delete tasks and remove work items not synchronizing
 titleSuffix: TFS
 description: Remove work items that aren't synchronizing between Team Foundation Server & Project Server
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 18f3e8d1-12ae-4cc6-a95b-357450a9ba81
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
 ---
 
