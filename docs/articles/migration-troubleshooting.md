@@ -3,11 +3,13 @@ title: Troubleshooting the migration import from TFS to Visual Studio Team Servi
 description: Guidance for fixing common TfsMigrator valdiation errors. 
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Troubleshooting

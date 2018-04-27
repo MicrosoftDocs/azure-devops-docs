@@ -4,9 +4,12 @@ description: Extending Visual Studio devops
 ms.assetid: d794b1ae-8750-4582-962a-1828e88eb845
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
+monikerRange: '>= tfs-2015 < vsts'
 ---
 
 # Extending Visual Studio devops

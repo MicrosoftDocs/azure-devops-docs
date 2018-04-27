@@ -4,9 +4,11 @@ description: Refresh the data caches on client computers
 ms.assetid: b3b31e5e-d431-475a-b6ca-a1ccb63795d3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

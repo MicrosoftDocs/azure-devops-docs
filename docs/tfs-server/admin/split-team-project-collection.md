@@ -4,9 +4,11 @@ description: Split a team project collection
 ms.assetid: e64f32d4-fd48-4a50-81fe-24311f27b49e
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

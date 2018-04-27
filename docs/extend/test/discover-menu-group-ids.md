@@ -6,6 +6,7 @@ description: Discover the group IDs for existing menus in VSTS.
 ms.assetid: ca1b49b5-d36c-4742-a85b-fe9ad83a7a9a
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

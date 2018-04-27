@@ -9,6 +9,7 @@ author: elbatk
 ms.date: 08/10/2016
 ms.topic: conceptual
 layout: LandingPage
+monikerRange: '>= tfs-2017'
 ---
 
 # Package Management

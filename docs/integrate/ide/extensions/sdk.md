@@ -6,6 +6,7 @@ title: SDK reference for Visual Studio extensions
 description: Find the Visual Studio SDK reference on MSDN.
 ms.assetid: D52D06E0-B0EE-499D-B4CF-B89F6237AE27
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

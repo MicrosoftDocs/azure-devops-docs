@@ -4,9 +4,11 @@ description: Configure the Enterprise Editions of SharePoint Server 2010 or Offi
 ms.assetid: a32b811c-00a6-4fe9-97f6-75a39900e6c9
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 
