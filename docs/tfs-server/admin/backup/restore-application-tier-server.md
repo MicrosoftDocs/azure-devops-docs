@@ -4,9 +4,11 @@ description: Restore an application-tier server
 ms.assetid: d5886fe9-c92a-49b7-87db-bbe47c808929
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

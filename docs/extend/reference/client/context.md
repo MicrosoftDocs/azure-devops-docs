@@ -6,6 +6,7 @@ description: Context data avaialble in your web extensions
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

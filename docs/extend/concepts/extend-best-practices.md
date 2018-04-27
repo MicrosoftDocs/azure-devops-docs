@@ -6,6 +6,7 @@ ms.technology: devops-ecosystem
 ms.assetid: 209d4863-3918-4c99-93cc-60fffa5ec219
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 10/02/2017

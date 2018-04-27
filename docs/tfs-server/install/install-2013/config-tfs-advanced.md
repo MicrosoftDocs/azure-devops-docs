@@ -4,9 +4,11 @@ description: Configure Team Foundation Server using the advanced configuration
 ms.assetid: f4c1e81f-d792-4035-be2d-8e034da27b24
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 

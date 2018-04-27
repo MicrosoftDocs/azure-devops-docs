@@ -4,9 +4,11 @@ description: Describes the overall architecture of Team Foundation Server
 ms.assetid: b6c250e9-6494-4dbd-8146-061e3b9c0f6b
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/16/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 

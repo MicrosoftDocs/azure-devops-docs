@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.date: 03/17/2018
-ms.author: mlearned
+author: mlearned
 monikerRange: 'vsts'
 ---
 

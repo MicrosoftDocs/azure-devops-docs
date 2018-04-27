@@ -6,6 +6,7 @@ ms.technology: devops-cicd
 services: vsts
 documentationcenter: vs-devops-build
 ms.author: mlearned
+author: mlearned
 ms.manager: douge
 editor: ''
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692

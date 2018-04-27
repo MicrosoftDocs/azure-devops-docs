@@ -1,12 +1,15 @@
 ---
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 title: Index for installing VSTS and Team Foundation Server extensions from the Visual Studio Marketplace
 description: Index of Visual Studio Marketplace information for VSTS and Team Foundation Server extensions.
 ms.assetid: afd7c3b8-a09f-4a38-8207-bc84e678a39b
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/23/2016
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ---
 
 # Manage Extensions

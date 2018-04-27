@@ -4,9 +4,11 @@ description: Describes several concepts related to Team Foundation Server
 ms.assetid: cfe7f112-1f35-4df4-8bd3-8fc361db8248
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/16/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 

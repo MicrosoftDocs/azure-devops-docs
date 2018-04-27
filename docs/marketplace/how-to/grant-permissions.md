@@ -1,12 +1,13 @@
 ---
 title: Grant permissions for managing extensions in Visual Studio Team Foundation Server (TFS)
 description: Grant users or groups permission to manage extensions for Team Foundation Server
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 9/27/2017
 monikerRange: '>= tfs-2013'
 ---

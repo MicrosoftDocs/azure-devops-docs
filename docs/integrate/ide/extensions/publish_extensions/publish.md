@@ -6,6 +6,7 @@ title: Publish your extension
 description: Walks you through the steps to publish an extension.
 ms.assetid: CAE083A4-E719-4BE1-A4B4-813199C6C1A6
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

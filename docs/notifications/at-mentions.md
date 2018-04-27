@@ -1,7 +1,7 @@
 ---
-title: "Use @mentions to further discussion"
+title: "Use @mentions in work items and pull requests - VSTS and TFS"
 titleSuffix: VSTS & TFS 
-description: "Alert team members using the @mention control in discussions and pull requests" 
+description: "Alert team members using the @mention control in work items and pull requests" 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Use &#64;mentions to further discussion
+# Use &#64;mentions
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
 
@@ -31,7 +31,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
-The **@mention** control allows you to quickly pull someone into a discussion. You can use this control within the Discussion section of a work item form, or a pull request. 
+The **@mention** control allows you to quickly pull someone into a work item or pull request.
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ When viewing their own mentioned names in conversations, users will notice that 
 
 <img src="_img/at-mention-link-view-of-own-name.png" alt="Web portal, At mention of ones own name appears in orange text]" style="border: 1px solid #CCCCCC;" /> 
 
-You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../work/work-items/work-item-form-controls.md#discussion). 
+You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in any text field on the work item form.
 
 ## Related articles
 

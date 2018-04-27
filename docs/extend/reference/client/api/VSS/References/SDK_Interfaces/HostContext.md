@@ -6,6 +6,7 @@ ms.technology: devops-ecosystem
 generated: true
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/25/2016
