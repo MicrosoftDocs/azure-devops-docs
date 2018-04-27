@@ -1,7 +1,7 @@
 ---
 title: Query guidelines for Analytics with OData
 titleSuffix: VSTS
-description: Guidelines for extension developers on how to write good OData queries that access the Analytics Service for Visual Studio Team Services
+description: Guidance to support extension developers on how to write good OData queries that access the Analytics Service for Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
@@ -9,6 +9,7 @@ ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 

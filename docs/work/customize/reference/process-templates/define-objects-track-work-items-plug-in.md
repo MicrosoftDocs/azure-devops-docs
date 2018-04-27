@@ -1,5 +1,5 @@
 ---
-title: Define objects for tracking work items using the work Item tracking plug-in 
+title: Define work item types for a process template 
 titleSuffix: VSTS & TFS
 description: Use the plug-in for tracking work items and defining a team project's initial objects for tracking work for Team Foundation Server 
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 09/08/2017
 ---
 
