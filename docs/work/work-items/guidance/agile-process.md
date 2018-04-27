@@ -1,5 +1,5 @@
 ---
-title: Agile process template
+title: Agile process template artifacts
 titleSuffix: VSTS & TFS  
 description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -8,6 +8,8 @@ ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 

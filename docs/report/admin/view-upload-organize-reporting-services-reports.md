@@ -1,7 +1,7 @@
 ---
 title: View, upload, and organize Reporting Services reports
 titleSuffix: TFS
-description: View the reports in SQL Server Reporting Services to analyze the progress and quality of the project  
+description: View, upload, and organize Reporting Services reports to analyze the progress and quality of the project  
 ms.prod: devops-server
 ms.technology: devops-analytics
 ms.topic: conceptual

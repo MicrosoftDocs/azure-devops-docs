@@ -1,5 +1,5 @@
 ---
-title: Create a solution architecture
+title: CMMI process guidance, Create a solution architecture
 titleSuffix: VSTS & TFS
 description: Investigate alternative architectural strategies to creat good architecture  
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
