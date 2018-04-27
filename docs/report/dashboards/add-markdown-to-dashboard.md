@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts || >= tfs-2015'
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 
@@ -19,7 +19,7 @@ ms.date: 03/27/2018
 
 <a id="markdown-widget">  </a> 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  

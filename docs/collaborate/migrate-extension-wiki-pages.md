@@ -9,6 +9,7 @@ ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+ms.reviewer: sancha
 monikerRange: 'vsts || >= tfs-2018'
 ms.date: 03/01/2018  
 ---  
@@ -17,7 +18,7 @@ ms.date: 03/01/2018
 
 **VSTS | TFS 2018**
 
-With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project.  
+With the release of the built-in wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a Git repo in your team project.  
 
 >[!NOTE]  
 ><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the VSTS Wiki. The **Wiki*** hub is in Preview and available for VSTS and TFS 2018 and later versions. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level). To learn more, see [Create a wiki for your team project](wiki-create-repo.md).  

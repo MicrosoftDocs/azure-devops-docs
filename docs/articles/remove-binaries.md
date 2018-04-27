@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 04/27/2018
 ms.author: edwardf
 author: edwardaf
+monikerRange: '>= tfs-2015'
 ---
 
 # Learn how to remove a large binary from your Git history to manage the size of cloned repositories

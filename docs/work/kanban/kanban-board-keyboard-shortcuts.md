@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts available with product, portfolio, and sprint backlogs 
+title: Keyboard shortcuts available with Kanban boards
 titleSuffix: VSTS & TFS
 description: Use keyboard shortcuts to interact with product, portfolio, and sprint backlogs in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile

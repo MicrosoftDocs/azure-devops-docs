@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions about trials for VSTS
-description: Frequently asked questions about extensions and trials for Visual Studio Team Services (VSTS)
+description:  Frequently asked questions about extensions and trials for Visual Studio Team Services (VSTS), including number of allowed users , get status, how to cancel 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69

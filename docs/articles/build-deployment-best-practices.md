@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 06/01/2016
 ms.author: mlearned
 author: mlearned
+monikerRange: '>= tfs-2015'
 ---
 
 # Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World
