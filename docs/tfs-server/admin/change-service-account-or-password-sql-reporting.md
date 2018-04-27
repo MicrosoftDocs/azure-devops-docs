@@ -4,10 +4,11 @@ description: Change the service account or password for SQL Server Reporting Ser
 ms.assetid: 658da0e5-0390-4016-bacf-4ad9003777a6
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 

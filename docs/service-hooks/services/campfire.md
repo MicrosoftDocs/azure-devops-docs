@@ -6,6 +6,7 @@ title: Campfire with VSTS
 description: Use Campfire with your VSTS account
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

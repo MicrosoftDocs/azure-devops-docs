@@ -2,10 +2,12 @@
 title: Manually Install SharePoint products for Team Foundation Server
 description: Manually Install SharePoint products for Team Foundation Server
 ms.assetid: 38b11ed7-6556-4aa0-bfa5-16661c74cb10
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/09/2017
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---

@@ -6,6 +6,7 @@ description: Add a chart to your extension in VSTS.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 10/10/2016

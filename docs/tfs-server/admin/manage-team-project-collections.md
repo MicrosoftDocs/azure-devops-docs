@@ -4,10 +4,11 @@ description: Manage team project collections in Team Foundation Server
 ms.assetid: 784e9934-ff35-4657-b4c6-6402d6374d1d
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < vsts'
 ---
 

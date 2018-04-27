@@ -7,6 +7,7 @@ ms.topic: conceptual
 title: Microsoft Teams with VSTS and Team Foundation Server
 description: Use Microsoft Teams with your VSTS account
 monikerRange: '>= tfs-2017'
+ms.date: 10/10/2017
 ---
 
 

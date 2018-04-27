@@ -4,9 +4,11 @@ description: TFS application tier will use the same hardware
 ms.assetid: 2d394c69-c25e-44be-8bf2-3b9e17559f6e
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 

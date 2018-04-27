@@ -4,9 +4,11 @@ description: Locate or Change the Product Key for Team Foundation Server
 ms.assetid: 1a99fafa-aa5b-4488-944e-123110a2c547
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

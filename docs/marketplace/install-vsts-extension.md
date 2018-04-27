@@ -1,12 +1,13 @@
 ---
 title: Install free extensions for VSTS | VSTS (Visual Studio Online)
 description: Find and install free extensions for VSTS from the Visual Studio Marketplace
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/10/2017
 monikerRange: 'vsts'
 ---

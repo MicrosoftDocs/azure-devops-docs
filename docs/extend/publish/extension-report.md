@@ -3,8 +3,11 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.topic: conceptual
+ms.date: 10/10/2017
 ---
 
 # Extension Report
