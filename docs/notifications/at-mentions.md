@@ -1,5 +1,5 @@
 ---
-title: "Use @mentions ="
+title: "Use @mentions in work items and pull requests - VSTS and TFS"
 titleSuffix: VSTS & TFS 
 description: "Alert team members using the @mention control in work items and pull requests" 
 ms.prod: devops
