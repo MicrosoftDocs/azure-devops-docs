@@ -1,5 +1,5 @@
 ---
-title: Share your project vision 
+title: Share your project vision, view project activity 
 titleSuffix: VSTS & TFS 
 description: View or update your project home page to share project vision, objectives, and activity for Visual Studio Team Services or Team Foundation Server   
 ms.topic: quickstart

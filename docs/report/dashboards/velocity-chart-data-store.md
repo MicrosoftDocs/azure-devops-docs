@@ -1,7 +1,7 @@
 ---
-title: View and work with the work tracking datastore velocity chart
+title: View built-in data store velocity chart
 titleSuffix: VSTS & TFS 
-description: Track team velocity across several sprints using the work tracking datastore velocity chart   
+description: Track team velocity across several sprints using the work tracking datastore velocity chart in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-analytics  
 ms.prod: devops
 ms.assetid: 
@@ -9,6 +9,7 @@ ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 12/14/2017
 ---
 

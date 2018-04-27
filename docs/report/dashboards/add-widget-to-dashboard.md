@@ -1,14 +1,14 @@
 ---
 title: Add a widget to a team dashboard 
 titleSuffix: VSTS & TFS
-description: Choose and configure widgets that you add to a team dashboard  
+description: Choose and configure widgets that you add to a team dashboard in Visual Studio Team Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts || >= tfs-2015'
+monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
 

@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 03/28/2018
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2013'
 ---
 
 # Phase the roll-out of your application through rings
