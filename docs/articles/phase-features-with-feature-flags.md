@@ -8,6 +8,7 @@ ms.manager: douge
 ms.date: 06/20/2017
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2013'
 ---
 
 # Phase the features of your application with feature flags

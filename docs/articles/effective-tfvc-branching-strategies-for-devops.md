@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 03/20/2017
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2015'
 ---
 
 # Effective TFVC branching strategies for DevOps

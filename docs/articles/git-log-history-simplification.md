@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 06/01/2016
 ms.author: mlearned
 author: mlearned
+monikerRange: '>= tfs-2015'
 ---
 
 # Git lost my changes: Taking a look at Git's history simplification
