@@ -1,13 +1,14 @@
 ---
-title: Manage project details in an enterprise project plan mapped to a team project
+title: Manage an enterprise project plan 
 titleSuffix: TFS
-description: Understand how project managers and development teams can manage their workflows independently using Team Foundation Server & Project Server
+description: Understand how project managers and development teams can manage their workflows using Team Foundation Server & Project Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ff9499ea-cd5b-4ede-aa1a-de8ef3d9e704
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
 ---
 

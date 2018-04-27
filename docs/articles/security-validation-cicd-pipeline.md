@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 10/19/2017
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2015'
 ---
 # Adding Continuous Security Validation to your CI/CD Pipeline
 

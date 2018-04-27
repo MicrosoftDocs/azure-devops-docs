@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: Conceptual
 ms.technology: devops-security
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
