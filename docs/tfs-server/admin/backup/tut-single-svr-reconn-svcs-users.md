@@ -4,10 +4,11 @@ description: Reconnect services and users
 ms.assetid: 088544b7-6a4f-4c7b-9e83-9b8520d26afb
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

@@ -4,9 +4,11 @@ description: Service accounts and dependencies in Team Foundation Server
 ms.assetid: cf314289-96ef-4f70-9c2b-a130d7287442
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < vsts'
 ---
 

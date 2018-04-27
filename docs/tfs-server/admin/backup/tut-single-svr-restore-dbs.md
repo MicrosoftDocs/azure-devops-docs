@@ -4,10 +4,11 @@ description: Restore the databases
 ms.assetid: c00bb8f7-bdb9-49c2-a291-79aab20d2701
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

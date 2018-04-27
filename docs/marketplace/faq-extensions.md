@@ -2,15 +2,17 @@
 title: Troubleshooting getting extensions for VSTS
 description: Troubleshooting getting and paying for extensions for VSTS
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 04/04/2018
 monikerRange: '>= tfs-2017'
+ms.topic: conceptual
 ---
 
- # Troubleshooting extensions for VSTS
+# Troubleshooting extensions for VSTS
 
 **VSTS** | **TFS 2017**
 

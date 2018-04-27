@@ -4,10 +4,11 @@ description: Configure and manage TFS resources
 ms.assetid: 634a401e-a919-4dac-b964-51ece1bb43c0
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < vsts'
 ---
 

@@ -6,6 +6,7 @@ title: Bamboo with VSTS
 description: Use Atlassian Bamboo with your VSTS account
 ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

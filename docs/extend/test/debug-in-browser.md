@@ -6,6 +6,7 @@ description: How to debug your VSTS extension using browser tools.
 ms.assetid: 8dc00666-844c-404a-9699-512261e53ddf
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

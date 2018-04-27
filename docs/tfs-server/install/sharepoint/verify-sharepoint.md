@@ -2,10 +2,12 @@
 title: Verify SharePoint products for Team Foundation Server
 description: Verify SharePoint products for Team Foundation Server
 ms.assetid: 104566ef-2578-4b76-a73d-c5e6c10eee06
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/09/2017
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---

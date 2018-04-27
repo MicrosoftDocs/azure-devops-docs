@@ -6,6 +6,7 @@ title: Azure Service Bus with VSTS
 description: Use Azure Service Bus with your VSTS account
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/16/2016

@@ -4,10 +4,11 @@ description: Configure an SMTP server and customize email for alerts and feedbac
 ms.assetid: f49fce23-2808-450b-a2de-7d5a83401d30
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013 || tfs-2015'
 ---
 
