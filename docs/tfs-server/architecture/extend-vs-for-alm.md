@@ -5,7 +5,7 @@ ms.assetid: d794b1ae-8750-4582-962a-1828e88eb845
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-admin
 ---
 

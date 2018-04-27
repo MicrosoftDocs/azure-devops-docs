@@ -1,14 +1,14 @@
 ---
 title: View permissions 
 titleSuffix: VSTS & TFS 
-description: View permissions for yourself or a team member 
+description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level perms
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---

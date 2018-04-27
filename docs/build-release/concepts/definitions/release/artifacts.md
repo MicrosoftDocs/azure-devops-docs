@@ -144,11 +144,11 @@ is published implicitly.
 
 Some of the differences in capabilities between different versions of TFS and VSTS are:
 
-* **TFS 2015**: You can link build definitions only from the same team project of your collection.
+* **TFS 2015**: You can link build definitions only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -234,7 +234,7 @@ Release Management integrates with Team Foundation
 Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
 
 You can link a release definition to any of the Git or TFVC
-repositories in any of the team projects in your
+repositories in any of the projects in your
 collection (you will need read access to these
 repositories). No additional setup is required when
 deploying version control artifacts within the same collection.

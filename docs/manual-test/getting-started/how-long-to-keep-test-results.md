@@ -1,6 +1,6 @@
 ---
 title: Manage how long to keep test results in VSTS
-description: Manage how long VSTS keeps you test results
+description: Manage how long VSTS keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: devops
 ms.technology: devops-test
@@ -29,19 +29,19 @@ for example, up to a year.
 ## Manual test results 
 
 To delete manual test results after a specific number of days, 
-set the retention limit at the team project level. 
+set the retention limit at the project level. 
 Visual Studio Team Services (VSTS) keeps manual test results related to builds, 
 even after you delete those builds. That way, build policies don't delete 
 your test results before you can analyze the data.
 
 1. Sign to your VSTS account (**https://**your-account-name**.visualstudio.com**). 
-   You'll need at least team project administrator permissions.
+   You'll need at least project administrator permissions.
 
-1. Go to your team project.
+1. Go to your project.
 
-1. Go to the team project control panel.
+1. Go to the project control panel.
 
-   ![Team project control panel](_img/how-long-to-keep-test-results/team-project-control-panel-jamal.png)
+   ![Project control panel](_img/how-long-to-keep-test-results/team-project-control-panel-jamal.png)
   
 1. Select a limit for how long you want to keep manual test data. 
 
@@ -59,7 +59,7 @@ you can specify how long to keep automated test results based on the branch.
 1. Sign to your VSTS account (**https://**your-account-name**.visualstudio.com**). 
    You'll need at least build level permissions to edit build definitions.
 
-1. Go to your team project. Find and edit your build definition.
+1. Go to your project. Find and edit your build definition.
 
    ![Build definition](_img/how-long-to-keep-test-results/edit-build-def.png)
 
@@ -79,7 +79,7 @@ you can specify how long to keep automated test results based on the branch.
 To clean up automated test results that are left over from deleted 
 builds or test results that aren't related to builds, 
 for example, results published from external test systems, 
-set the retention limits at the team project level. 
+set the retention limits at the project level. 
 [Learn more](#manual-test-results-limits)
 
 ## See also

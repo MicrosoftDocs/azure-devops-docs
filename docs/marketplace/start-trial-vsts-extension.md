@@ -2,7 +2,7 @@
 title: Start your free trial for a paid extension in VSTS | VSTS (Visual Studio Online)
 description: Find paid extensions in the Marketplace and learn how to install them and start your free trial period. 
 ms.topic: get-started-article
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: 4f017896-ab5e-4448-ade0-16d4155dd56d 
 ms.manager: douge

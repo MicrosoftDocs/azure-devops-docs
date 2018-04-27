@@ -1,7 +1,7 @@
 ---
 title: Marketplace support 
 description: Frequently asked questions for Marketplace 
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: 10db7a0a-f57b-4bef-82e2-8cc163ebaa2e
 ms.manager: douge

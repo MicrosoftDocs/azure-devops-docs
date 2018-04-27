@@ -1,7 +1,7 @@
 ---
 title: Create rollup charts 
 titleSuffix: VSTS
-description: Create rollup charts in Power BI from data collected for Visual Studio Team Services (VSTS)   
+description: Create rollup charts in Power BI from Analytics Service data collected for Visual Studio Team Services     
 ms.assetid: 81223001-126D-4856-B1B3-7231013089F2  
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: archived
 robots: NOINDEX, NOFOLLOW
+monikerRange: 'vsts'
 ms.date: 08/04/2017
 ---
 

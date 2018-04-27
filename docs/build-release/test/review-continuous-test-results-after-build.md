@@ -1,6 +1,6 @@
 ---
 title: Review continuous test results after a build VSTS and TFS 
-description: Review continuous test results after a build
+description: Review continuous test results after a build with a build or release definition in Microsoft VSTS or TFS
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ review your test results to start analyzing any problems that you found.
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In VSTS or TFS, go to your team project.
+1. In VSTS or TFS, go to your project.
 
 1. Find your build and open the build summary.
 

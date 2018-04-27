@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
-Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
+Repository README files and wikis are great ways to share information with your team and stakeholders. 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 
@@ -26,36 +26,63 @@ Repository README files and team project Wikis are great ways to share informati
 ::: moniker-end
 
 ## 5-Minute Quickstarts  
-- [Share your project vision](project-vision-status.md)
-- [Add markdown to your dashboard](../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json)
 
+::: moniker range="vsts"
+- [Create a wiki for your project](wiki-create-repo.md)  
+- [Add & edit wiki pages](add-edit-wiki.md)  
+- [Publish code to a wiki](publish-repo-to-wiki.md)  
+- [Share your project vision](project-vision-status.md)  
+- [Add markdown to your dashboard](../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
+::: moniker-end
+
+::: moniker range="tfs-2018"
+- [Create a wiki for your project](wiki-create-repo.md)  
+- [Add & edit wiki pages](add-edit-wiki.md)  
+- [Share your project vision](project-vision-status.md)  
+- [Add markdown to your dashboard](../report/dashboards/add-markdown-to-dashboard.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
+::: moniker-end
  
 ## Concepts 
-- [Create a readme for your repo](../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
 
-  
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
+- [Wiki Git repository files and file structure](wiki-file-structure.md)  
+- [Create a readme for your repo](../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017" 
+- [Create a readme for your repo](../git/create-a-readme.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
+::: moniker-end
 
 ## How-to Guides
-- [Create a wiki for your team project](wiki-create-repo.md) 
-- [Add & edit wiki pages](add-edit-wiki.md)
+
+::: moniker range="vsts"
 - [View wiki history and revert](wiki-view-history.md)
+- [Filter or print wiki content](filter-print-wiki.md)  
 - [Search wiki content](search-wiki.md)
+- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)  
+- [Update wiki pages offline](wiki-update-offline.md)  
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+- [View wiki history and revert](wiki-view-history.md)
+- [Filter or print wiki content](filter-print-wiki.md)  
+- [Search wiki content](search-wiki.md) 
+- [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
-  
-## How-to Guides
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
-
 ::: moniker-end
-
 
 ## Reference 
 
 - [Markdown guidance](markdown-guidance.md)
+- [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
 - [Navigate in the web portal](../user-guide/work-web-portal.md?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json) 
  
 ## Resources 
