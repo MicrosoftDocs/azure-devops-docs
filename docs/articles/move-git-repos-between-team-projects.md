@@ -88,7 +88,7 @@ Verify that all your branches were moved over to the new repo.
 
 For detailed information on planning your team project collections and team projects, refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](https://aka.ms/vsarsolutions).
 
-> Authors: Jesse Houwing, Mike Fourie, and Willy Schaub | Connect with the authors and ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md) 
+> Authors: Jesse Houwing, Mike Fourie, and Willy Schaub | Connect with the authors and ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md) 
 
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
