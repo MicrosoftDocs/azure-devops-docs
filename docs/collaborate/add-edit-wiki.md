@@ -1,5 +1,5 @@
 ---
-title: Add and edit wiki pages
+title: Add, edit, or print wiki pages defined in your team project
 titleSuffix: VSTS & TFS  
 description: Add, edit, reorder, and manage pages for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server  
 ms.prod: devops
@@ -8,8 +8,9 @@ ms.custom: wiki
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+ms.reviewer: sancha
 ms.topic: quickstart
-monikerRange: 'vsts || >= tfs-2018'
+monikerRange: '>= tfs-2018'
 ms.date: 03/01/2018  
 ---
 
@@ -18,7 +19,7 @@ ms.date: 03/01/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2018.md)]
  
-Once the [Wiki git repository is provisioned](./wiki-create-repo.md) for your team project, a new page opens in which you can specify a title and add content. This is a side by side edit and preview experience that will allow you to edit the page and preview the content as you type. 
+Once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, a new page opens in which you can specify a title and add content. This is a side by side edit and preview experience that will allow you to edit the page and preview the content as you type. 
 
 You author pages using [markdown format](../reference/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links.  
 
@@ -28,11 +29,39 @@ As you continue editing the page, save the page by entering **Ctrl+S**. To save 
 
 <img src="_img/wiki/wiki-save-with-message.png" alt="Save page with a custom message" style="border: 1px solid #C3C3C3;" />
 
+::: moniker range="vsts"
+
+> [!NOTE]  
+> To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This topic addresses how to add and edit pages of a wiki that you've provisioned for a team project. 
+
+::: moniker-end
+
+Use this topic to learn how to: 
+
+> [!div class="checklist"]   
+> * Open the **Wiki** hub
+> * Add a wiki page
+> * View revisions for a page
+> * Edit and delete wiki pages
+> * Reorder wiki pages
+> * Make a page the wiki home page
+
+
+<a id="prereq">  </a>
+## Prerequisites  
+
+* You must have a provisioned wiki. If you're wiki hasn't yet been created, [do that now](wiki-create-repo.md). 
+* You must be a member of the team project as a contributor in order to add or update wiki pages. 
+
+
+[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+
+<a id="add-page" />
 ## Add a wiki page
 
 To add another page, click **New page**. Or, to add a sub-page, open the context menu of an existing page and click **Add sub-page**.
 
-You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](#page-title-names). 
+You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming). 
 
 <img src="_img/wiki/add-new-page.png" alt="Create wiki and first page" style="border: 1px solid #C3C3C3;" />
  
@@ -65,13 +94,7 @@ To reset the home page, open the context menu of the page and click **Set as wik
 
 <img src="_img/wiki/make-home-page.png" alt="Make a page the home page" style="border: 1px solid #C3C3C3;" />
  
-## Filter wiki pages
 
-The filter feature allows you to quickly find a wiki page after the number of pages has grown to the hundreds or thousands. 
-
-To find a page, enter a title or keyword into the **Filter pages** box.   
- 
-<img src="_img/wiki/filter-box.png" alt="Make a page the home page" style="border: 1px solid #C3C3C3;" />
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -85,6 +108,8 @@ To find a page, enter a title or keyword into the **Filter pages** box.
 - [Get Started with Git](../git/gitquickstart.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
 
+<a id="page-title-names"></a>
+### Wiki page title naming restrictions
 
 [!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
  
