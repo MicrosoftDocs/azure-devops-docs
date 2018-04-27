@@ -1,12 +1,13 @@
 ---
 title: Team Foundation Server (TFS) extension FAQs
 description: Find answers to common questions regarding extensions in Team Foundation Server (TFS)
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: b30a4604-d34d-43d4-9de9-02f1fea108ea
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 03/24/2018
 monikerRange: '>= tfs-2013 < vsts'
 ---

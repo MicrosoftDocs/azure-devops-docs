@@ -6,8 +6,10 @@ ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.date: 10/10/2017
 ---
 
 <blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  

@@ -1,12 +1,13 @@
 ---
 title: Uninstall or disable extensions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 description: Uninstall or disable extensions for Visual Studio Team Services or Team Foundation Server
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: devops
-ms.technology: vs-devops-marketplace
+ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 12/04/2017
 monikerRange: '>= tfs-2013'
 ---

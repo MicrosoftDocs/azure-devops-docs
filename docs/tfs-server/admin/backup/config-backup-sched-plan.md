@@ -1,14 +1,15 @@
 ---
 title: Configure a backup schedule and plan for Team Foundation Server
 description: Configure a backup schedule and plan for Team Foundation Server
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: a92e7f03-61d0-458d-9155-eefa40e228cc
 toc: show
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 10/19/2017
-ms.topic: get-started-article
 monikerRange: '>= tfs-2015 < vsts'
 ---
 

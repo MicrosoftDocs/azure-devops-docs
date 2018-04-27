@@ -6,10 +6,13 @@ description: An overview of the VSS SDK in Visual Studio Team Services Integrati
 ms.assetid: 19744f62-02a9-479b-8b9c-e52800e6c24c
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/25/2016
 ---
+
+# VSS SDK Reference 
 
 ### Methods
 

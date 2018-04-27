@@ -4,9 +4,11 @@ description: Use SQL Server Always-on Availability Groups with Team Foundation S
 ms.assetid: ffbd4565-169c-4e00-82c3-981725cc9bdd
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

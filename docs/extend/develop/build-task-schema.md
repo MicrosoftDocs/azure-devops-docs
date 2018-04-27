@@ -6,6 +6,7 @@ description: Reference for creating a custom build or release task with an exten
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 11/14/2016

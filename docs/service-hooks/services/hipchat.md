@@ -6,6 +6,7 @@ title: HipChat with VSTS
 description: Use HipChat with your VSTS account
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

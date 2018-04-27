@@ -6,6 +6,7 @@ description: Guideline for making an integration or extension publicly visible o
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/29/2016

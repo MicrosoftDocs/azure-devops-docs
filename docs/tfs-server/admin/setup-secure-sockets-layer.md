@@ -4,9 +4,11 @@ description: Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundatio
 ms.assetid: 27540d50-ac8a-46e1-a98e-baee43ed98a3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 
