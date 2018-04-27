@@ -4,9 +4,11 @@ description: SQL Server requirements for Team Foundation Server
 ms.assetid: 22d562f4-8da1-4d6f-ab34-3403a3b9d471
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 

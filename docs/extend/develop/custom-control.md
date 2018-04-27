@@ -6,8 +6,10 @@ ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.date: 10/10/2017
 ---
 
 # Add a custom control to the work item form

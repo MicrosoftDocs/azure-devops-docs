@@ -4,9 +4,11 @@ description: Manually back up Team Foundation Server
 ms.assetid: a4d79122-7170-49ff-ad1b-d3e4f983bfd5
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

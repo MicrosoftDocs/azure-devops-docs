@@ -6,6 +6,7 @@ title: Trello with VSTS
 description: Use Trello with your VSTS account
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

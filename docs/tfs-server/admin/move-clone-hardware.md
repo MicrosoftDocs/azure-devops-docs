@@ -4,9 +4,11 @@ description: Move Team Foundation Server from one hardware configuration to anot
 ms.assetid: b9af3864-d28a-42df-aa43-6b1f48b5adf0
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

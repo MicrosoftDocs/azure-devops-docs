@@ -6,6 +6,7 @@ title: I want to customize a project template
 description: A walkthrough to show you how to customize a project template.
 ms.assetid: DAE23D07-A529-452A-9EDC-26DEEE23108C
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

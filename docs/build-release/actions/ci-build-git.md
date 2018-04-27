@@ -5,6 +5,7 @@ ms.prod: devops
 services: vsts
 documentationcenter: vs-devops-build
 ms.author: mlearned
+author: mlearned
 ms.manager: douge
 editor: ''
 ms.technology: devops-cicd

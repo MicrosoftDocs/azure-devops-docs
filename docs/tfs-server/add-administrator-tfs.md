@@ -2,12 +2,13 @@
 title: Add administrators TFS  
 description: Add server, team project collection,  or team project administrators 
 ms.assetid: ed578715-f4d2-4042-b797-5f97abde9973
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.manager: douge  
-ms.author: elbatk  
+ms.author: elbatk
+author: elbatk
 ms.date: 03/29/2017
-ms.topic: get-started-article
 monikerRange: '>= tfs-2013 < vsts'
 ---
 

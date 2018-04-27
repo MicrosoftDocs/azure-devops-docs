@@ -4,9 +4,11 @@ description: Configure Team Foundation Server using the standard configuration
 ms.assetid: 6d6a7eb4-a390-4954-9642-d9899f4c6c30
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 
