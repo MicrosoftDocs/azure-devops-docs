@@ -1,5 +1,5 @@
 ---
-title: Iteration activities
+title: CMMI process guidance, Iteration activities
 titleSuffix: VSTS & TFS
 description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement - Team Foundation Server (TFS)
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

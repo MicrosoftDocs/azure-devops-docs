@@ -44,7 +44,7 @@
 </tr>
 
 <tr>
-<td align="left">Participate in Team (chat) rooms</td>
+<td align="left">Participate in Team (chat) rooms </td>
 <td> </td>
 <td> </td>
 <td>![check mark](_img/checkmark.png)</td>
@@ -62,11 +62,20 @@
 </tr>
 
 <tr>
-<td align="left">Wikis</td>
+<td align="left">View Wikis</td>
 <td>![check mark](_img/checkmark.png)</td>
 <td>![check mark](_img/checkmark.png)</td>
 <td>![check mark](_img/checkmark.png)</td>
 <td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Provision or create a Wiki</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 <td>![check mark](_img/checkmark.png)</td>
 </tr>
 

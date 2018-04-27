@@ -1,5 +1,5 @@
 ---
-title: Manage issues (CMMI)
+title: CMMI process guidance, Manage issues  
 titleSuffix: VSTS & TFS
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks  
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 4f90afe9-9748-42e9-9117-e98ee6543417
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
