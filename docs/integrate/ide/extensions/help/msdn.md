@@ -6,6 +6,7 @@ title: MSDN
 description: Find additional help at MSDN.
 ms.assetid: 31BD6BC8-A377-4F02-974E-03C480C43A54
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

@@ -7,6 +7,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

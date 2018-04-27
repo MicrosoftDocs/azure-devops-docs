@@ -4,9 +4,11 @@ description: Install Team Foundation Server
 ms.assetid: 5bd14bb5-c5dd-4afb-b983-53df2b33caff
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 

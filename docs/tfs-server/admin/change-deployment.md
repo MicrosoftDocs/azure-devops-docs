@@ -4,9 +4,11 @@ description: Change your deployment configuration for Team Foundation Server
 ms.assetid: 9dfd7be8-b40e-401f-82fc-e3c3d8fdbd87
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

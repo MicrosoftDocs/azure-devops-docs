@@ -6,6 +6,7 @@ description: Use Visual Studio with ASP.NET to create your first extension for V
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016
