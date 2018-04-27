@@ -4,10 +4,11 @@ description: nstall and configure Team Foundation Server
 ms.assetid: ca535d08-9e52-4ef9-9f56-516c3549395f
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

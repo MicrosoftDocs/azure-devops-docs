@@ -1,17 +1,20 @@
 ---
 title: Server administration index to content for TFS
 description: Guide to topics for installing TFS, and managing team projects, project collections for Team Foundation Server (TFS)  
-ms.technology: vs-devops-admin
-ms.prod: devops
+ms.technology: tfs-admin
+ms.topic: conceptual
+ms.prod: devops-server
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
-ms.author: kaelli
+ms.author: elbatk
+author: elbatk
 ms.date: 01/04/2017
+monikerRange: '>= tfs-2013 < vsts'
 ---
 
 # Server Administration (TFS) 
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
 <!---

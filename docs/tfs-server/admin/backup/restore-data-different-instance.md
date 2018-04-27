@@ -1,11 +1,13 @@
 ---
 title: Restore data to a different server than the current one for TFS
 description: Restore data to a different server than the current one for TFS
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 ms.assetid: 7d5d9c39-ea7b-44bc-ae69-a2ce10a0c27e
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 12/15/2016
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---

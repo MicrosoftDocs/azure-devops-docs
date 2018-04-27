@@ -4,9 +4,11 @@ description: Add the TFS service account to the report server
 ms.assetid: e0a41663-9426-48f1-8e4e-4d6708b25f88
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

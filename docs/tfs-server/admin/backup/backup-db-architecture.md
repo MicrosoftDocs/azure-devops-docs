@@ -4,9 +4,11 @@ description: Understand TFS databases, deployment topologies, and backup
 ms.assetid: dcd8abb5-5593-4b2d-a532-bb183c84d83f
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

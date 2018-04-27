@@ -4,9 +4,11 @@ description: SQL Server Reporting Services Roles
 ms.assetid: 4fa956ee-f01a-42b4-b34b-e6b1b784c953
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2018'
 ---
 

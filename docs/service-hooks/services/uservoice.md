@@ -6,6 +6,7 @@ title: UserVoice with VSTS
 description: Use UserVoice with your VSTS account
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

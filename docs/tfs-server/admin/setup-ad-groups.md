@@ -4,9 +4,11 @@ description: Set up groups for use in TFS deployments
 ms.assetid: fc3a37cc-bef3-475c-a177-92c843905c3d
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 

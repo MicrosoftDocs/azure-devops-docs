@@ -4,9 +4,11 @@ description: How to create a Team Foundation server farm (high availability)
 ms.assetid: e2952ac4-5ba0-4b64-ac82-1ed9454bfc46
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: 'tfs-2013'
 ---
 

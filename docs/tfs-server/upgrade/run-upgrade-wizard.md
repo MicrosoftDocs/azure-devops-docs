@@ -4,9 +4,11 @@ description: Run the TFS Upgrade Wizard
 ms.assetid: 5569d0ac-6c7a-4f02-9546-c27d538f2dea
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: devops
-ms.technology: vs-devops-admin
+ms.prod: devops-server
+ms.technology: tfs-admin
+ms.topic: conceptual
 monikerRange: '>= tfs-2013 < tfs-2017'
 ---
 
