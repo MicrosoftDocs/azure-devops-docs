@@ -9,6 +9,7 @@ ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 

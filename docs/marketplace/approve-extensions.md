@@ -2,7 +2,7 @@
 title: Approve extension requests in Visual Studio Team Services and Team Foundation Server
 description: Approve extension requests for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.topic: get-started-article
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.assetid: c34bdc56-c731-4211-b8f4-802973d864da
 ms.manager: douge

@@ -1,5 +1,5 @@
 ---
-title: View & add work items
+title: View & add work items from the Work Items page
 titleSuffix: VSTS  
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 ms.global_help.title: View & add work items

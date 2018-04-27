@@ -122,7 +122,7 @@ available:
 
 * **Tag**: Tag used to group the server which is running the action.
 
-* **TeamProject**: Team project for the component.
+* **TeamProject**: Project for the component.
 
 * **TFSUrl**: TFS URL for the component.
 

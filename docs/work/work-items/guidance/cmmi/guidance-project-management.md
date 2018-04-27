@@ -1,5 +1,5 @@
 ---
-title: Project management 
+title: CMMI process guidance, Project management 
 titleSuffix: VSTS & TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/16/2017
 ---
 

@@ -1,13 +1,14 @@
 ---
-title: Define groups, teams, and permissions using the Groups and Permissions Plug-in
+title: Define groups, teams, and permissions for a process template
 titleSuffix: VSTS & TFS
-description: Customizes Groups and Permission plug-in to have access to groups, teams, add groups and users as members to groups, and grant permissions to the groups - Team Foundation Server (TFS) 
+description: Customizes Groups and Permission plug-in to preconfigure  groups, teams, and user permissions
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 09/08/2017
 ---
 

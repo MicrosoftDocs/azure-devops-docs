@@ -9,9 +9,11 @@ ms.manager: douge
 ms.date: 04/25/2018
 ms.author: willys
 author: wpschaub
+monikerRange: '>= tfs-2015'
 ---
 
 # Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
+
 
 Are you planning to implement Team Foundation Version Control's feature isolation strategy ([TFVC](../tfvc/overview.md) in Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
 
@@ -25,7 +27,8 @@ This article aims to answer those questions, and give you a clear perspective on
 > 
 > This article covers TFVC. For Git, refer to [adopt a Git branching strategy](../git/concepts/git-branching-guidance.md). 
 
-# What's feature isolation?
+
+## What's feature isolation?
 
 The feature isolation strategy allows you to work on features or fix bugs in **feature** branches (also known as "topic branches") based off parent branch. It isolates your changes from the rest of your team to:
 - Experiment with a feature
@@ -46,7 +49,9 @@ Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped 
 > 
 > Your workspace should contain only the files you need. Consider creating multiple workspaces to isolate and switch among multiple feature branches. To avoid confusing yourself, use a consistent naming convention for both your workspace and feature branch.
 
-# Naming convention is important
+
+## Naming convention is important
+
 Use a consistent naming convention for your feature branches. Branches should be self-describing and easily identified by your users. Some suggestions:
 
 - features/username/description for work performed by an individual. For example, *features/sandra/sdk-java*.
@@ -54,7 +59,8 @@ Use a consistent naming convention for your feature branches. Branches should be
 - sprint/username/description for work done by an individual in a specific sprint. For example, *S53/bill/dictionary-refactor*.
 - bugfix/username/bugid for work done specific to an engineering bug. For example, *bugfix/takashi/707*. 
 
-# Creating feature branches
+
+## Creating feature branches
 
 Create a feature branch when you need to work on a feature, typically within the context of a sprint or iteration.
 
@@ -82,7 +88,8 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 >
 > **Delete** your feature branch when you're done!
 
-# Impact of deleting a feature branch
+
+## Impact of deleting a feature branch
 
 By [deleting](../tfvc/delete-restore-files-folders.md#delete-an-item) feature branches, you minimize noise and focus on active feature development. 
 

@@ -1,7 +1,7 @@
 ---
 title: What is the Analytics Service
 titleSuffix: VSTS
-description: Understand the Analytics Service reporting solution for Visual Studio Team Services
+description: Understand how you can use the Analytics Service to answer quantitative questions about your projects in Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 

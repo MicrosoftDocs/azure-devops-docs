@@ -37,7 +37,7 @@ Also, if you haven't yet set up your build system,
    **[get them now](https://msdn.microsoft.com/library/ms252587%28v%3Dvs.140%29.aspx)**.
 
 1. From Visual Studio, Team Explorer, 
-   **[connect to the team project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
+   **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
    that you want to work in (Keyboard: Ctrl + 0, C).
 
 1. On the ![Builds icon](_img/trigger-release-09.png)&nbsp;**Builds** page 
@@ -117,7 +117,7 @@ with the corresponding release management process template.
    **[get them now](https://msdn.microsoft.com/library/ms252587%28v%3Dvs.140%29.aspx)**.
 
 1. From Visual Studio, Team Explorer, 
-   **[connect to the team project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
+   **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
    you want to work in (Keyboard: Ctrl + 0, C).
 
 1. In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**
@@ -132,7 +132,7 @@ with the corresponding release management process template.
    * TFS 2010: ReleaseDefaultTemplate.xaml
   
 1. Add the template to version control. It is a good idea to put the template 
-   in the **BuildProcessTemplates** folder of your team project.
+   in the **BuildProcessTemplates** folder of your project.
   
    * **TFVC**: Add files to the server
    * **Git**: Manage files on your dev machine

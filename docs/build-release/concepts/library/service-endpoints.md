@@ -25,11 +25,11 @@ You can define endpoints in Visual Studio Team Services (VSTS) or Team Foundatio
 your tasks. For example, you can create an endpoint for your Azure subscription
 and use this endpoint name in an Azure Web Site Deployment task in a release definition.
 
-You define and manage service endpoints from the Admin settings of your team project.
+You define and manage service endpoints from the Admin settings of your project.
 * VSTS: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
 
-Service endpoints are created at project scope. An endpoint created in one project is not visible in another team project.
+Service endpoints are created at project scope. An endpoint created in one project is not visible in another project.
 
 ## Create a service endpoint
 
@@ -556,7 +556,7 @@ You can control who can define new service endpoints in a library, and who can u
 | User | Members of this role can use the endpoint when authoring build or release definitions. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
-Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every team project. 
+Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every project. 
 Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.
 Members of the Endpoint creators group can create new endpoints. By default, project contributors are added as members of this group. 
 

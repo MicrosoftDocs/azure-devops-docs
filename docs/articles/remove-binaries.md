@@ -9,6 +9,7 @@ ms.manager: douge
 ms.date: 06/01/2016
 ms.author: edwardf
 author: steved0x
+monikerRange: '>= tfs-2015'
 ---
 
 # Remove large binaries from your Git repo

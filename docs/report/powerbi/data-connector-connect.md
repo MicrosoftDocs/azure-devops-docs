@@ -1,7 +1,7 @@
 ---
 title: Connect to Power BI Data Connector
 titleSuffix: VSTS
-description: Step-by-step guidance on how to connect to Power BI Data Connector to access Visual Studio Team Services (VSTS) data
+description: Step-by-step guidance on how to connect to Power BI Data Connector and the Analytics Service to access Visual Studio Team Services data
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: devops
 ms.technology: devops-analytics

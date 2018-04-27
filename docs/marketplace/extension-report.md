@@ -2,7 +2,7 @@
 title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
-ms.prod: vs-devops-alm
+ms.prod: devops
 ms.technology: vs-devops-marketplace
 ms.manager: douge
 ms.author: elbatk

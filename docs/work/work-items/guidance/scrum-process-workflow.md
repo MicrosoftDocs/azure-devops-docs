@@ -1,5 +1,5 @@
 ---
-title: Scrum process work items and workflow
+title: Scrum process work items types & workflow
 titleSuffix: VSTS & TFS
 description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -8,6 +8,7 @@ ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013'
 ms.date: 04/05/2017
 ---
 

@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+ms.reviewer: sancha
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'
 --- 
@@ -19,8 +20,8 @@ monikerRange: '>= tfs-2017'
 
 By default, all members of the Contributors group can edit README files and Wiki pages. 
 
->[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes).    
+> [!NOTE]  
+> **Feature availability**: The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes).    
 
 <a id="manage-readme-permissions"></a>
 
@@ -28,6 +29,8 @@ By default, all members of the Contributors group can edit README files and Wiki
 
 You manage the permissions for README files by [setting permissions on the repository](../security/set-git-tfvc-repository-permissions.md). 
 
+
+::: moniker range=">= tfs-2018"
 <a id="manage-wiki-permissions"></a>
 
 ## Manage wiki permissions   
@@ -47,7 +50,7 @@ For definitions of each repository permission, see [Git repository permissions](
 
 ## Don't have access to create a page?  
 
-If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying git repository of the wiki. Even if you don't have access to a wiki page, you can see the security and identify an administrative member who can provision access to the wiki.
+If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki. Even if you don't have access to a wiki page, you can see the security and identify an administrative member who can provision access to the wiki.
 
 <img src="_img/wiki/wiki-no-permission-message.png" alt="View wiki security if you don't have access to Wiki" style="border: 1px solid #C3C3C3;" />
 
@@ -65,3 +68,13 @@ Stakeholders in a project can read wiki pages and view revisions, however they c
 ###Q:  Is it possible to grant permissions on a per-page basis?
 
 **A:** No, permissions to access the wiki are made for all pages and not individual pages. 
+
+::: moniker-end
+
+
+
+## Related articles
+
+- [Default Git repository and branch permissions](../security/default-git-permissions.md) 
+- [Get Started with Git](../git/gitquickstart.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
