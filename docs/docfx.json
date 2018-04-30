@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "**/_data/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -28,7 +29,8 @@
         "group": "all",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/_data/**"
         ]
       }
     ],
@@ -43,7 +45,7 @@
       "author": "erickson-doug",
       "ms.author": "douge",
       "ms.date": "07/13/2017",
-      "ms.prod": "vs-devops-alm",
+      "ms.prod": "devops",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
