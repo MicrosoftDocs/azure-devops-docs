@@ -10,7 +10,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.reviewer: sancha
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ms.date: 04/26/2018  
 ---
 
@@ -19,7 +19,7 @@ ms.date: 04/26/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2018.md)]
 
-The Revisions page provides a convenient way to get details of the changes made to a wiki page. 
+The Revisions page provides a convenient way to get details of the changes made to a wiki page. Optionally, you can choose to revert to an earlier version of a page. 
 
 <a id="view-revision-history"></a>
 ## View wiki page revision history  
@@ -41,7 +41,7 @@ The Revisions page provides a convenient way to get details of the changes made 
 
 	<img src="_img/wiki/wiki-revision-details-2.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
 	::: moniker range="vsts"
-	For a publish as code wiki page, you'll see similar information, however the **Revert** button is not active. 
+	For a *publish as code wiki* page, you'll see similar information, however the **Revert** button is not active. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Revision page for a publish as code wiki page](_img/wiki/view-history-publish-as-code.png)
@@ -54,6 +54,14 @@ The Revisions page provides a convenient way to get details of the changes made 
 
 Mistakes can happen while updating a wiki page. You can conveniently revert a revision and undo changes done on a wiki page. You can click on the **Revert** button on the revision details page to revert a change on a wiki page.
 
+::: moniker-end
+
+::: moniker range="tfs-2018"
+> [!NOTE]   
+> The **Revert** option is available with TFS 2018.2 and later versions. 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
 <img src="_img/wiki/wiki-revert.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end
