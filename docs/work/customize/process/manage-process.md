@@ -1,5 +1,5 @@
 ---
-title: Manage processes
+title: Create and mange an inherited process 
 titleSuffix: VSTS
 description: Create and apply a process to a team project working in Visual Studio Team Services (VSTS)  
 ms.technology: devops-agile
@@ -14,11 +14,11 @@ ms.date: 03/20/2018
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
 
 
-# Manage processes 
+# Create and manage inherited processes 
 
 [!INCLUDE [temp](../../_shared/process-feature-availability.md)]
 
-You customize your team project work tracking system through a process. The customizations you make are in effect for all teams. ON the otherhand, you configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../settings/about-teams-and-settings.md). A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+You customize your team project work tracking system through a process. The customizations you make are in effect for all teams. On the otherhand, you configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../../../settings/about-teams-and-settings.md). A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
 You'll see two types of processes:
 
@@ -27,7 +27,7 @@ You'll see two types of processes:
 
 In addition, all processes are shared. That is, one or more team projects can use a single process. Instead of customizing a single team project, you customize a process. Changes made to the process automatically update all team projects that use that process. 
 
-Once you've created an inherited process, you can customize it, create team projects based on it, and change existing team projects to use it. 
+Once you've created an inherited process, you can customize it, create team projects based on it, make a copy of it, and change existing team projects to use it. 
 
 For example, as shown in the picture below, you see a list of team projects defined for the *fabrikam* account. The second column shows the process used by each team project. To update the *Fabrikam Fiber* team project, you need to update the *MyAgile* process (which inherits from the Agile system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* team project. You can't customize the *Scrum project*, on the other hand, until you change it to a Scrum inherited process.
 
@@ -51,11 +51,12 @@ To perform any of the following actions, you must be a member of the Project Col
 ##Create an inherited process
 You can create an inherited process from any one of the three system processes: [Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md).   
 
-0. From the Process page, open the &hellip; context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
+0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
 
 	Here, we create an inherited process from the Agile system process.   
 
-	<img src="_img/mprocess-create-inherited-process.png" alt="Process, choose Create inherited process" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Context menu, Choose Create inherited process](_img/process/create-inherited-process.png) 
 
 	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
 
@@ -88,7 +89,8 @@ You can change the process a team project uses from a system process or inherite
 
 	Here we open the menu for the Agile system process:
 
-	<img src="_img/mprocess-change-process-to-core-process-agile.png" alt="Agile process context menu, Choose Change team projects to use Agile" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Agile process context menu, Choose Change team projects to use Agile](_img/process/change-project-to-system-process.png) 
 
 	The system lists only those team projects that are valid for the current process.
 
@@ -101,20 +103,47 @@ You can change the process a team project uses from a system process or inherite
 0. After  you've confirmed that the projects you want to change are correct, click Ok. 
 
 
-
 <a id="create-team-project">  </a>
 ## Create a team project from a process 
 
 0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
-	<img src="_img/mprocess-create-team-project.png" alt="Create a team project from the selected process" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
 
 0. The Create new project page opens. For details, see [Create your team project](../../../accounts/create-team-project.md).
 
+<a id="copy-process">  </a>
+## Copy a process
 
+It's a good practice to test the customizations you make before rolling out the changes to your organization.  To do this, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
+ 
+> [!TIP]    
+> If you make a change to a process that is used by one or more team projects, each team project that uses the process will update immediately to the incremental process change. To bundle your process changes before you roll them out to all team projects, following the  steps outlined next. 
+
+0. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Make a copy of a selected inherited process](_img/process/copy-process.png) 
+
+0. Fill out the dialog with the name of the copied process and choose **Copy process**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Make a copy of a selected inherited process](_img/process/copy-process-dialog.png) 
+	
+0. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
+
+0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change team project to use <process name>**](#migrate) option from the context menu.  
+	<!--- > [!TIP]    
+	> Because custom fields that you add are prefixed with the reference name of the inherited process, we recommend that you add all custom fields to a base inherited process.  --> 
+
+0. Once you have fully tested your customizations, you're ready to roll out your changes to all team projects. To do this, change the process of the team projects which need the new changes. Select the [**Change team project to use <process name>**](#migrate) option from the context menu.  
+
+0.  Disable or delete the original process. 
+ 
 
 <a id="enable-process">  </a>
-##Enable/disable a process
+## Enable/disable a process
 
 To prevent team projects being created from a process, you disable it. You might choose this option when you want to apply several customizations and don't want the process used until they are complete. Or, you might want to retire use of a process in favor of moving team projects to a new process. 
 
@@ -128,11 +157,11 @@ All system processes and newly created inherited processes are enabled by defaul
 <a id="default-process">  </a>
 ## Set the default process
 
-Set a process as the default to have it pre-selected for any additional team projects you plan to create. 
+Set an inherited process as the default to have it pre-selected for any additional team projects you plan to create. 
 
-To set a process as the default, open the &hellip; context menu for the process and choose **Set as default process**. 
+To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
 
-Account owners and Project Collection Administrators can add team projects from the admin Overview page or the [account My Projects page](../../../user-guide/account-home-pages.md). 
+Account owners and Project Collection Administrators can add team projects from the admin **Overview** page or the [account My Projects page](../../../user-guide/account-home-pages.md). 
 
 
 ## Related articles  
@@ -145,7 +174,7 @@ For an overview of what you can customize, see [Customize a process](customize-p
 
 
 <a id="process-naming"></a>
-###Process name restrictions  
+### Process name restrictions  
 Process names must be unique and 128 Unicode characters or less. Also, names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```. 
 
 To rename a process, open the &hellip; context menu for the process and choose **Edit**. 

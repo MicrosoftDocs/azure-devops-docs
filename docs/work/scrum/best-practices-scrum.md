@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/02/2017
 ---
@@ -29,8 +30,8 @@ Also, setting a sprint goal as part of your planning efforts can help the team s
 
 After you've planned your sprint, you may want to [share the plan](../scrum/sprint-planning.md#share) with key stakeholders. 
 
-You can learn more about conducting your sprint planning meeting from these resources: 
-*	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+You can learn more /azure/devops/agile/what-is-scrumm these resources: 
+*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
 *	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 *	[The Scrum Guide](http://www.scrumguides.org/scrum-guide.html)
 *	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
@@ -190,6 +191,6 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-For additional guidance, see:
-*	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+For additional guid/azure/devops/agile/what-is-scrum
+*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

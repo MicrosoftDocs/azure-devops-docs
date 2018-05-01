@@ -35,7 +35,7 @@
   - name: Customization
     href: ../work/customize/index.md
   - name: Scale Agile to large teams
-    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+    href: /azure/devops/agile/scale-agile-large-teams
   - name: Microsoft Teams Integration
     href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
   - name: Integrate with service hooks

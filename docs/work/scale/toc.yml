@@ -70,9 +70,9 @@
   - name: Customization
     href: ../customize/index.md
   - name: Agile culture
-    href: https://www.visualstudio.com/learn/agile-culture/
+    href: /azure/devops/agile/agile-culture
   - name: Scale Agile to large teams
-    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+    href: /azure/devops/agile/scale-agile-large-teams
   - name: Creating productive teams
-    href: https://www.visualstudio.com/learn/productive-teams/
+    href: /azure/devops/agile/productive-teams
 
