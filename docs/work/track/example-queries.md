@@ -1,14 +1,15 @@
 ---
-title: Create managed queries
+title: Create managed queries to generate a list of work items
 titleSuffix: VSTS & TFS 
-description: Track work by creating queries to list items in Visual Studio Team Services & Team Foundation Server 
+description: Track work by creating queries to list work items in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 04/27/2018  
 ---
 
 
@@ -69,6 +70,26 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 > |Links and attachments |Tags |Build and Test fields  |  
 > |-------------|----------|---------|  
 > |-  [All child items of a single epic ](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags ](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
+
+
+::: moniker range="vsts"
+
+> [!div class="mx-tdBreakAll"]  
+> |Team focus |  
+> |-------------| 
+> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)<br/>- [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n) |
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+> [!div class="mx-tdBreakAll"]  
+> |Team focus |  
+> |-------------| 
+> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
+
+::: moniker-end
+
 
 
 ## Related articles

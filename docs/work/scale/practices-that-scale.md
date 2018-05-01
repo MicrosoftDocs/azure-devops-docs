@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/02/2017
 ---
@@ -118,8 +119,8 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Multiple teams](multiple-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaled Agile Framework](scaled-agile-framework.md) 
-- [Scaling Agile to large teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/)
+- [Scaled Agile Framework](scaled-/azure/devops/agile/scale-agile-large-teams
+- [Scaling Agile to large teams] (/azure/devops/agile/scale-agile-large-teams)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

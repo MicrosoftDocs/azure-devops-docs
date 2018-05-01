@@ -141,7 +141,7 @@ Now that you've covered the concepts and considerations of feature flags, you sh
 
 ### How does the VSTS team use feature flags?
 
-Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](https://www.visualstudio.com/learn/progressive-experimentation-feature-flags/) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Visual Studio Team Services (VSTS).
+Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/azure/devops/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Visual Studio Team Services (VSTS).
 
 ### How do the ALM | DevOps Rangers use feature flags?
 
