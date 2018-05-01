@@ -133,9 +133,7 @@ It's a good practice to test the customizations you make before rolling out the 
 	
 0. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
 
-0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change team project to use <process name>**](#migrate) option from the context menu.  
-	<!--- > [!TIP]    
-	> Because custom fields that you add are prefixed with the reference name of the inherited process, we recommend that you add all custom fields to a base inherited process.  --> 
+0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change team project to use <process name>**](#migrate) option from the context menu. 
 
 0. Once you have fully tested your customizations, you're ready to roll out your changes to all team projects. To do this, change the process of the team projects which need the new changes. Select the [**Change team project to use <process name>**](#migrate) option from the context menu.  
 

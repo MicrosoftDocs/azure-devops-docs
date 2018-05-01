@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
 ms.manager: douge
 ms.author: dastahel
-ms.date: 04/18/2018
+ms.date: 05/01/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -57,9 +57,9 @@ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build
 
 You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
 
-::: moniker range=">= tfs-2018"
+::: moniker range="> tfs-2018"
 
-  ### VSTS and TFS 2018
+  ### VSTS
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
@@ -75,9 +75,9 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="<=tfs-2018"
 
-  ### TFS 2017.2
+  ### TFS 2018 and 2017.2
 
 1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
 
@@ -107,9 +107,9 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
-::: moniker range=">= tfs-2018"
+::: moniker range="> tfs-2018"
 
-  ### VSTS and TFS 2018
+  ### VSTS
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
@@ -125,9 +125,9 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="<=tfs-2018"
 
-  ### TFS 2017.2
+  ### TFS 2018 and 2017.2
 
 1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
 
@@ -169,7 +169,7 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 [!INCLUDE [include](../_shared/view-build-summary.md)]
 
-::: moniker range="tfs-2017"
+::: moniker range="<=tfs-2018"
 
 ## Publish your build output
 
