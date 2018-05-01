@@ -2,11 +2,6 @@
     "redirections":
 	[
         {
-            "source_path": "docs/build-release/symbols/index.md",
-            "redirect_url": "/vsts/package/concepts/symbols",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/package/nuget/remove.md",
             "redirect_url": "/vsts/package/unlist-delete",
             "redirect_document_id": false
