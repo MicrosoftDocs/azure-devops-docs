@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 # Utility: Query Work Items
@@ -26,11 +26,9 @@ None
 
 | Parameter | Comments |
 | --- | --- |
-| **Project Name** | Required. Select the project in the current VSTS or TFS account. Defaults to the current project. |
-| **Query** | Required. Select a work item query within the project. Can be a built-in or custom query. |
-| **Threshold (max) number of results** | Required. Default value = 0 |
-| **Threshold (min) number of results** | Required. Default value = 0 |
-| **Tags to filter results on** | Optional. A list of tags that must be present on the work items. |
+| **Query** | Required. Select a work item query within the current project. Can be a built-in or custom query. |
+| **Upper threshold** | Required. Maximum number of matching workitems for the query. Default value = 0 |
+| **Lower threshold** | Required. Minimum number of matching workitems for the query. Default value = 0 |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maximum-threshold_

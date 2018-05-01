@@ -47,8 +47,8 @@
 - name: Journey articles
   items:
     - name: Agile
-      href: https://www.visualstudio.com/learn/what-is-agile/
+      href: /azure/devops/agile/what-is-agile
     - name: Devops
-      href: https://www.visualstudio.com/learn/what-is-devops/
+      href: /azure/devops/what-is-devops
     - name: Git at Scale
-      href: https://www.visualstudio.com/learn/git-at-scale/
+      href: /azure/devops/git/git-at-scale
