@@ -103,7 +103,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+> [New to Git repos? Learn more](/azure/devops/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)

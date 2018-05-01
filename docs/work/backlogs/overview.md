@@ -16,7 +16,7 @@ ms.date: 08/15/2017
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/) for an overview.
+You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
@@ -48,7 +48,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 
 ## Scrum method and tools 
-The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/). 
+The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/agile/what-is-scrum). 
 
 [![Schedule sprints](_img/overview/gs-planning-define-sprints.png)](../scrum/define-sprints.md)[![Plan a sprint](_img/overview/gs-planning-plan-sprint.png)](../scrum/sprint-planning.md)[![Monitor sprint progress](_img/overview/gs-planning-monitor-sprint.png)](../scrum/task-board.md)[![Forecast](_img/overview/gs-planning-forecast.png)](../scrum/forecast.md)
 

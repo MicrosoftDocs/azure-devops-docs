@@ -1,6 +1,5 @@
 ---
-title: User, account management, and server administration documentation
-titleSuffix: VSTS & TFS
+title: VSTS and TFS Documentation | VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
@@ -10,7 +9,6 @@ ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A
 ms.manager: douge 
 ms.author: kaelli 
 ms.date: 02/24/2018
-monikerRange: '>= tfs-2013'
 featureFlags:
 - clicktale 
 ---
@@ -37,7 +35,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/learn/devopsmsft-overview/">
+                <a href="https://docs.microsoft.com/azure/devops">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -163,13 +161,13 @@ featureFlags:
                                                         <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                                        <a class="barLink" href="/azure/devops/git/what-is-git"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                                        <a class="barLink" href="/azure/devops/what-is-devops"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                                        <a class="barLink" href="/azure/devops/agile/what-is-agile"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                                     </li>
                                                 </ul>
                                             </div>

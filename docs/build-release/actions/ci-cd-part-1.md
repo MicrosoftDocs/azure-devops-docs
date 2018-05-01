@@ -506,11 +506,11 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 ### Where can I read articles about DevOps and CI/CD?
 <!-- BEGINSECTION class="md-qanda" -->
 
-[What is Continuous Integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)
+[What is Continuous Integration?](/azure/devops/what-is-continuous-integration)
 
-[What is Continuous Delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)
+[What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)
 
-[What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
+[What is DevOps?](/azure/devops/what-is-devops)
 
 <h3 id="version-control">What kinds of version control can I use</h3>
 

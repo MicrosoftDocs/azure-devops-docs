@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 10/04/2017
 ---
@@ -56,7 +57,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 ## Resources  
 - [Scale & Configure Teams](../../settings/index.md)
-- [Customization](../customize/index.md)
-- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
-- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
-- [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)    
+- [Customization](/azure/devops/agile/agile-culture
+- [Agile culture](/azure/devops/agile/agile-culture)  
+- [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  
+- [Creating productive teams](/azure/devops/agile/productive-teams)    
