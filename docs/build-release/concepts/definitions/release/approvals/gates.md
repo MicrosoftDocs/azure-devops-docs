@@ -9,18 +9,34 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 # Release deployment control using gates 
 
 **VSTS**
 
-Gates allow you to query a range of external services, and wait for a positive input from all of
-them before continuing with a deployment to an environment. When a release is created from a definition
-that contains gates, the deployment stops until the health signals from all the configured services are successful.
+Gates allow automatic collection of health signals from external services, and then
+promote the release when all the signals are successful at the same time or stop the
+deployment on timeout. 
+Typically, gates are used in connection with incident management, problem management,
+change management, monitoring, and external approval systems. 
 
->You may need to enable Gates in your profile [Preview features](../../../../../collaborate/preview-features.md) list. 
+## Scenarios for gates
+
+Some scenarios and use cases for gates are:
+
+  * **Incident and issues management**. Ensure the required status for work items, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment. 
+  * **Seek approvals outside VSTS**. Notify non-VSTS users such as legal approval departments, auditors, or IT managers about a deployment by integrating with approval collaboration systems such as Microsoft Teams or Slack, and waiting for the approval to complete.
+  * **Quality validation**. Query metrics from tests on the build artifacts such as pass rate or code coverage and deploy only if they are within required thresholds.
+  * **Security scan on artifacts**. Ensure security scans such as anti-virus checking, code signing, and policy checking for build artifacts have completed. A gate might initiate the scan and wait for it to complete, or just check for completion.
+  * **User experience relative to baseline**. Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The experience level before the deployment could be considered a baseline.
+  * **Change management**. Wait for change management procedures in a system such as ServiceNow complete before the deployment occurs.
+  * **Infrastructure health**. Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
+
+Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. 
+To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. 
+The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
 ## Define a gate for an environment
 
@@ -28,8 +44,7 @@ that contains gates, the deployment stops until the health signals from all the 
 
    ![Opening the deployment conditions panel](_img/gated-releases-01.png)
 
-1. Specify the **Delay before evaluation** for all the gates
-   you intend to use. This is a time delay at the beginning of the initial gate evaluation 
+1. Specify the required **Delay before evaluation**. This is a time delay at the beginning of gate evaluation 
    process that allows the gates to initialize, stabilize, and begin providing accurate results
    for the current deployment. See [Gate evaluation flows](#eval-examples).
 
@@ -39,40 +54,37 @@ that contains gates, the deployment stops until the health signals from all the 
 
    * For **pre-deployment gates**, the delay would be the time required for all bugs to be logged
      against the artifacts being deployed.  
-   * For **post-deployment gates**, the delay would be the maximum time taken for the deployed app
+   * For **post-deployment gates**, the delay would be the maximum of the time taken for the deployed app
      to reach a steady operational state, the time taken for execution of all the required tests on
-     the deployed environment, and the least time it takes for incidents to be logged after the deployment.<p />
+     the deployed environment, and the time it takes for incidents to be logged after the deployment.<p />
 
-1. Choose **+ Add**, and select the type of release gate you require.
+1. Choose **+ Add** and select the type of release gate you require.
 
-   ![Adding a gate function](_img/gated-releases-02.png)
+   ![Adding a gate function](_img/add-gates.png)
 
-   At present the available gates include:
+   The following gates are provided by default:
 
-   * **Azure function**: Trigger execution of an Azure function and ensure a successful completion.
+   * **Invoke Azure function**: Trigger execution of an Azure function and ensure a successful completion.
      For more details, see [Azure function task](../../../../tasks/utility/azure-function.md).
-   * **Azure monitor**: Observe the configured Azure monitor alert rules for active alerts.
+   * **Query Azure monitor alerts**: Observe the configured Azure monitor alert rules for active alerts.
      For more details, see [Azure monitor task](../../../../tasks/utility/azure-monitor.md).
    * **Invoke REST API**: Make a call to a REST API and continue if it returns a successful response.
      For more details, see [HTTP REST API task](../../../../tasks/utility/http-rest-api.md).
-   * **Work item query**: Ensure the number of matching work items returned from a query is within a threshold.
+   * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
      For more details, see [Work item query task](../../../../tasks/utility/work-item-query.md).
 
-   > Also see the tutorial [Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
-     and the blog post [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/), which includes an example of a gate that uses an Azure function.
-     A [library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) is available to help you create your own custom gate tasks.
-     Notes about authoring a server task can be found on [GitHub](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md).
-
+   You can [create your own gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
+   
 1. Select and enter the required gate arguments, depending on the type of gate you chose.
 
-   ![Setting the arguments for a gate function](_img/gated-releases-03.png)
+   ![Setting the arguments for a gate function](_img/query-workitems.png)
 
-1.  Set the evaluation options that apply to all the gates you added:
+1.  Set the evaluation options that apply to all the gates you've added:
 
-   * **Time between re-evaluation of gates**. The time interval between each evaluation of 
-     all the gates. At each sampling interval, new requests are sent concurrently to each gate
-     for fresh results. The sampling interval must be greater than the longest
-     typical response time of any configured gate to allow time for all responses to be received.     
+   * **Time between re-evaluation of gates**. The time interval between successive evaluations of 
+     the gates. At each sampling interval, new requests are sent concurrently to each gate
+     and the new results are evaluated. It is recommended that the sampling interval is greater than the longest
+     typical response time of the configured gates to allow time for all responses to be received for evaluation.     
 
    * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
      The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
@@ -85,8 +97,6 @@ that contains gates, the deployment stops until the health signals from all the 
 
    ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
    
-   > Watch [this video on Channel 9](https://channel9.msdn.com/Events/Connect/2017/T181) to see gates in action.
-
 ### Gate evaluation flow examples
 
 <a name="eval-examples"></a>The following diagram illustrates the flow of gate evaluation where, after the
@@ -105,12 +115,12 @@ this case, after the timeout period expires, the deployment is rejected.
 1. Open the **Summary** page for your release. As the release executes, the pop-up message when you choose
    the ![info](_img/info-icon.png) icon for an environment indicates the current status of your deployment to each environment.
 
-   ![Gates evaluation during a release](_img/gate-inprogress.png)
+   ![Gates evaluation during a release](_img/waiting-on-delay-before-evaluation.png)
 
 1. Open the **Logs** page for your release. During and after a deployment, it shows comprehensive information
 about the evaluation of all the gates you configured for the release.
 
-   ![Gates log results ](_img/gate-results-view.png)
+   ![Gates log results ](_img/logs-page.png)
 
 ## Related topics
 
@@ -124,5 +134,10 @@ about the evaluation of all the gates you configured for the release.
 
 * [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [Tutorial: Use approvals and gates to control your deployment](../../../../actions/deploy-using-approvals.md)
+* [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
+* [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
+* [Author custom gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
+
 
 [!INCLUDE [rm-help-support-shared](../../../../_shared/rm-help-support-shared.md)]
