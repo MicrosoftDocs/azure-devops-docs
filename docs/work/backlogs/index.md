@@ -77,9 +77,9 @@ Start planning your project by quickly adding user stories or requirements to yo
 - [Scrum](../scrum/index.md)
 - [Queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)   
-- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
-- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
+- [What is Agile?](/azure/devops/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [Agile culture](/azure/devops/agile/agile-culture)  
 
 
 

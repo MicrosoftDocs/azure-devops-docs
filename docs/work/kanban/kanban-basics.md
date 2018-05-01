@@ -10,6 +10,7 @@ ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 --- 
 
@@ -175,7 +176,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end
