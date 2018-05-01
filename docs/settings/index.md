@@ -36,7 +36,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 ## Resources  
 - [Customization](../work/customize/index.md)
-- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
-- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
+- [Agile culture](/azure/devops/agile/agile-culture)  
+- [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  
 - [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)  
 - [Integrate with service hooks](../service-hooks/index.md)  

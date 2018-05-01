@@ -143,7 +143,7 @@ See [the VSTS Git tutorial](tutorial/gitworkflow.md) and the [command reference]
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+> [New to Git repos? Learn more](/azure/devops/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Checkout more steps in the Git workflow](gitquickstart.md)

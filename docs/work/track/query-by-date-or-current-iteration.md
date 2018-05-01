@@ -8,6 +8,7 @@ ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
+monikerRange: '>= tfs-2013'
 ms.date: 03/06/2018  
 ---
 
@@ -21,7 +22,10 @@ For example, you can find work items that were modified in the last 3 days with 
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-In addition, if you connect to VSTS, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
+::: moniker range="vsts"
+In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
+::: moniker-end
+
 
 > [!NOTE]   
 > **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. These two macros only work when run them from the web portal. 
@@ -98,7 +102,8 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
-### VSTS
+
+::: moniker range="vsts"
 
 VSTS now adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
@@ -111,13 +116,19 @@ To change the team parameter the system automatically sets, you choose it by typ
 > [!div class="mx-imgBorder"]
 ![Choose team parameter](_img/query-date-iteration/choose-team-parameter.png)
 
-### TFS 2018 and earlier versions
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro](_img/query-date-iteration/at-current-no-team-specified.png)  
 
+::: moniker-end
+
+
+::: moniker range="vsts"
 
 <a id="current-iteration-plus-minus-n">  </a>
 ## Query for items based on a sliding window of team iterations 
@@ -134,6 +145,7 @@ Here we show how to list all User Stories and Bugs assigned to the  sliding wind
 
 To use this macro, the specified team must have [selected a set of sprints](../scale/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
+::: moniker-end
 
 <a id="date_fields">  </a>
 ## Date and the iteration path fields

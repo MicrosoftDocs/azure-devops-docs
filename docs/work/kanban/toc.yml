@@ -80,6 +80,6 @@
   - name: "Scale & Configure Teams"
     href: ../../settings/index.md
   - name: "What is Agile?"
-    href: https://www.visualstudio.com/learn/what-is-agile/
+    href: /azure/devops/agile/what-is-agile
   - name: "What is Agile development?"
-    href: https://www.visualstudio.com/learn/what-is-agile-development/
+    href: /azure/devops/agile/what-is-agile-development
