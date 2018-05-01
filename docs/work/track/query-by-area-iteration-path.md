@@ -8,7 +8,8 @@ ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-ms.date: 03/06/2018  
+monikerRange: '>= tfs-2013'
+ms.date: 04/27/2018  
 ---
 
 
@@ -26,14 +27,13 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 > [!div class="mx-tdBreakAll"]
 > |Operator     | Use when you want to...| 
 > |-------------|--------------|
-> | **=**           | Specify one, specific area path.  |
-> | **<>**          | Filter out one, specific area path. |
-> | **In**          | Filter for a set of area paths.  |
-> | **Not In**      | Exclude items that are assigned to a set of area paths. |
-> | **Under**       | Specify all paths under a select area path. |
-> | **Not Under**   | Exclude items assigned under a specific area path.  |
+> | **=**           | Specify one specific area or iteration path  |
+> | **<>**          | Filter out one, specific area or iteration path. |
+> | **In**          | Filter for a set of area or iteration paths.  |
+> | **Not In**      | Exclude items that are assigned to a set of area or iteration paths. |
+> | **Under**       | Specify all paths under a select area or iteration path. |
+> | **Not Under**   | Exclude items assigned under a specific area or iteration path.  |
 
-In addition, you can use the @CurrentIteration macro when filtering on the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
@@ -42,21 +42,22 @@ In addition to these operators, you can use the following macros when you select
 > |-------------|--------------|
 > | **@CurrentIteration**        | Specify the current iteration associated with the selected team context.  |
 > | **@CurrentIteration +/- n**  | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
+> | **@TeamAreas**  | Filter items based on area path(s) assigned to a specific team.  |
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for VSTS. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for VSTS. 
 
 ## Query for items assigned under several areas 
 
 You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
  
 > [!div class="mx-imgBorder"]
-![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
+> ![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
 
 Or, you can use the Node Name and **In** to get the same results. 
 
 > [!div class="mx-imgBorder"]
-![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
 
 ## Query for items based on a keyword contained within several area paths   
 
@@ -65,15 +66,27 @@ Using the Node Name field, you can filter on work items assigned to area paths b
 In this example, the filter will return any work items assigned to an area path whose leaf node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
-![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
+> ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
 
 ## Query for items based on the leaf node of the area path 
 
 Another way to filter items based on the area path is to use the Node Name. The Node Name corresponds to the last node within the area path. 
 
 > [!div class="mx-imgBorder"]
-![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
 
+
+
+::: moniker range="vsts"
+<a id="team-area-path" /> 
+## Query for items based on the area path assigned to a team
+
+Use the **@TeamAreas** macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
+
+> [!div class="mx-imgBorder"]
+> ![Query on area paths assigned to a team](_img/query-area-iteration/teamareas-macro-example.png)
+
+::: moniker-end
 
 <a name="field-reference"></a>
 ## Classification field reference 

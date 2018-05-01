@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 10/17/2017
 ---
@@ -19,8 +20,8 @@ As your organization grows, you'll want to make sure that you configure your Agi
 
 > [!NOTE]    
 >This topic describes how to add a team or team members to VSTS and TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
->
->For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](https://www.visualstudio.com/learn/scale-agile-large-teams/) article.
+>/azure/devops/agile/scale-agile-large-teams
+>For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/agile/scale-agile-large-teams) article.
 
 <!---
 In this topic you'll learn:  
