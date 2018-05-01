@@ -22,7 +22,7 @@
     href: ../work/scale/set-team-defaults.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
   - name: Configure team settings
     href: ../work/scale/manage-team-assets.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
-  - name: Set team defaults
+  - name: Switch team context
     href: switch-team-context.md
   - name: "Manage permissions & access"
     href: ../security/set-permissions-access-work-tracking.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
