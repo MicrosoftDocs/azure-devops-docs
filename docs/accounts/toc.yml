@@ -28,8 +28,8 @@
   items:
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
-  - name: External users
-    href: External-users.md
+  - name: Resources for project members
+    href: resources-granted-to-project-members.md
 - name: How-to guides
   items:
   - name: Manage your account

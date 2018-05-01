@@ -152,7 +152,7 @@ It saves a lot of work to make sure that large files stay out of the main reposi
 
 Sometimes, undesirable elements, such as large files, are added to a repository and need to be removed in order to keep the repository clean and lightweight. You can do this by getting your local repository in order using the `git rebase` command, then using the `git push --force` command to overwrite the server repository with your local repository.
 
-> Authors: Edward Fry and Jesse Houwing | Connect with the authors and ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> Authors: Edward Fry and Jesse Houwing | Connect with the authors and ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
 *(c) 2015 Microsoft Corporation. All rights reserved.ÿThis document is
 provided "as-is." Information and views expressed in this document,

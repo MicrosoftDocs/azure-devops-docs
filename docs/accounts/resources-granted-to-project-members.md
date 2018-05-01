@@ -1,7 +1,7 @@
 ---
-title: External users in VSTS
+title: Resources granted to project members in VSTS
 titleSuffix: VSTS
-description: Security and data access considerations when you add an external or outside user
+description: Security and data access considerations when you add a user as a member of a project in VSTS, resources granted, additional groups and scopes, and account-level resources
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
@@ -13,7 +13,7 @@ author: chcomley
 ms.date: 04/19/2018
 monikerRange: 'vsts'
 ---
-# External users in VSTS
+# Assigned resources for project members
 
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
