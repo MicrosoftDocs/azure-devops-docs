@@ -21,7 +21,7 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others. 
 Adopt a branching strategy for your team so that you collaborate better and spend less time managing version control and more time developing code. 
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
 
 ## Keep your branch strategy simple
 
