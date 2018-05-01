@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/04/2016
 ---
@@ -15,8 +16,8 @@ ms.date: 08/04/2016
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-> [!NOTE] 
-> Are you new to Agile? Learn more about [Agile Culture] (https://www.visualstudio.com/learn/agile-culture/) and [Scaling Agile to Large Teams] (https://www.visualstudio.com/learn/scale-agile-large-teams/).
+> [!NOTE] /azure/devops/agile/agile-culture
+> Are you new to Agile? Learn more about [Agile Culture] (/azure/devops/agile/agile-culture) and [Scaling Agile to Large Teams] (/azure/devops/agile/scale-agile-large-teams).
 
 As your team grows, you want your tools to grow with it. And, if you're an enterprise adopting Agile methodologies, you want your Agile tools to support the business objectives of your enterprise.  
 
