@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-> [!NOTE] /azure/devops/agile/agile-culture
+> [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture] (/azure/devops/agile/agile-culture) and [Scaling Agile to Large Teams] (/azure/devops/agile/scale-agile-large-teams).
 
 As your team grows, you want your tools to grow with it. And, if you're an enterprise adopting Agile methodologies, you want your Agile tools to support the business objectives of your enterprise.  
