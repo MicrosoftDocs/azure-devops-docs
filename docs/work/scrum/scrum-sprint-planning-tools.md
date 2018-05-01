@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/19/2017
 ---
@@ -152,8 +153,8 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
-
-- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+/azure/devops/agile/what-is-scrum
+- [What is Scrum?](/azure/devops/agile/what-is-scrum)
 - [Add teams and team members](../scale/multiple-teams.md)  
 - [Define iterations for a project](../customize/set-iteration-paths-sprints.md) 
 - [Configure team settings](../scale/manage-team-assets.md)  

@@ -37,8 +37,9 @@ Here you'll find more resources to support your development efforts with Visual 
 
 *   [Add Continuous Security Validation to your CICD Pipeline](security-validation-cicd-pipeline.md)
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
-*   [Progressively expose your features using feature flags ](phase-features-with-feature-flags.md)
-*   [Progressively expose your releases using deployment rings](phase-rollout-with-rings.md)
+
+*   [Progressively exposure your features using feature flags ](phase-features-with-feature-flags.md)
+*   [Progressively exposure your releases using deployment rings](phase-rollout-with-rings.md)
 
 ##	Security
 
@@ -49,6 +50,6 @@ Here you'll find more resources to support your development efforts with Visual 
 
 Learn more about how we use DevOps and Agile practices at Microsoft, best practices research, lessons learned, and more.
 
-*   [Agile](https://www.visualstudio.com/learn/what-is-agile/)
-*   [DevOps](https://www.visualstudio.com/learn/what-is-devops/)
-*   [Git at Scale](https://www.visualstudio.com/learn/git-at-scale/)
+*   [Agile](/azure/devops/agile/what-is-agile)
+*   [DevOps](/azure/devops/what-is-devops)
+*   [Git at Scale](/azure/devops/git/git-at-scale)
