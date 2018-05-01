@@ -47,9 +47,9 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Resources
 
-- [What is Continuous Integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
-- [What is Continuous Delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
-- [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
+- [What is Continuous Integration?](/azure/devops/what-is-continuous-integration)  
+- [What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)  
+- [What is DevOps?](/azure/devops/what-is-devops)
 - [Build and release in VSTS](../build-release/index.md)
 
 ::: moniker-end

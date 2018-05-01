@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 10/20/2017
 --- 
@@ -148,8 +149,8 @@ The Definition of Done, on the other hand, is about delivering an incremental pi
 
 ## Additional resources
 - [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/) 
-- [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
-- [Agile Culture](https://www.visualstudio.com/learn/agile-culture/)
+- [Walking Through/azure/devops/agile/agile-cultureurces/blog/walking-through-definition-done)
+- [Agile Culture](/azure/devops/agile/agile-culture)
 - [What is Kanban?](http://kanbanblog.com/explained/) 
 - [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
 - [Agile Project Management with Kanban by Eric Brechner](http://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)
