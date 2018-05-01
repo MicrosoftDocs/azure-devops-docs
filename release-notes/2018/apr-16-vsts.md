@@ -10,8 +10,9 @@ In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue 
 
 A new [notification type](#subscribe-to-package-update-notifications) and better support for [NuGet upstream sources](#use-upstream-nuget-packages-from-elsewhere-in-vsts) is also available now in [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-> [!NOTE]
-> The features discussed in this post will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/8OknoSF9w5A?rel=0]
 
 ## Features
 
@@ -21,7 +22,7 @@ A new [notification type](#subscribe-to-package-update-notifications) and better
 
 ### Work
 
-- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-work-in-the-area-paths-of-a-team-with-the-new-@teamareas-macro)
+- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-work-in-the-area-paths-of-a-team-with-the-new-teamareas-macro)
 
 ### Build and Release
 

@@ -256,6 +256,9 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 	![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)
 
+	> [!NOTE]    
+	> The Delete work items confirmation dialog indicates there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
+
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
 4. You can also delete work items from your Kanban or task board. 

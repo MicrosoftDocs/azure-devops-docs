@@ -331,10 +331,6 @@
     items:
     - name: Archive files
       href: tasks/utility/archive-files.md
-    - name: Azure Function
-      href: tasks/utility/azure-function.md
-    - name: Azure Monitor
-      href: tasks/utility/azure-monitor.md
     - name: Batch script
       href: tasks/utility/batch-script.md
     - name: Command line
@@ -359,6 +355,8 @@
       href: tasks/utility/install-apple-certificate.md
     - name: Install Apple Provisioning Profile
       href: tasks/utility/install-apple-provisioning-profile.md
+    - name: Invoke Azure Function
+      href: tasks/utility/azure-function.md
     - name: Invoke REST API
       href: tasks/utility/http-rest-api.md
     - name: Manual Intervention
@@ -369,6 +367,8 @@
       href: tasks/utility/publish-build-artifacts.md
     - name: Publish to Azure Service Bus
       href: tasks/utility/publish-to-azure-service-bus.md
+    - name: Query Azure Monitor Alerts
+      href: tasks/utility/azure-monitor.md
     - name: Query Work Items
       href: tasks/utility/work-item-query.md
     - name: Service Fabric PowerShell

@@ -13,7 +13,7 @@ ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: quickstart
-ms.date: 04/16/2018
+ms.date: 04/30/2018
 ms.author: mlearned
 ms.custom: mvc
 monikerRange: 'vsts'
@@ -109,34 +109,6 @@ The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in 
 1. Select **Commits**.  This view shows code commits associated with the specific deployment. 
 
 1. Select **Logs**.  The logs contain useful information about the deployment process.  They can be viewed both during and after deployments.
-
-## Configure Azure Application Insights monitoring
-
-With Azure Application insights, you can easily monitor your application's performance and usage.  The Azure DevOps project automatically configured an Application Insights resource for your application.  You can further configure various alerts and monitoring capabilities as needed.
-
-1. Navigate to the **Azure DevOps Project** dashboard in the Azure portal.  On the bottom-right of the dashboard, choose the **Application Insights** link for your app.
-
-1. The **Application Insights** blade opens in the Azure portal.  This view contains usage, performance, and availability monitoring information for your app.
-
-    ![Application Insights](_img/azure-devops-project-ruby/appinsights.png) 
-
-1. Select **Time range**, and then choose **Last hour**.  Select **Update** to filter the results.  You now see all activity from the last 60 minutes.  Select the **x** to exit time range.
-
-1. Select **Alerts**, then select **+ Add metric alert**.  
-
-1. Enter a **Name** for the alert.
-
-1. Select the drop-down for **Source Alter on**.  Choose your **App Service resource.**
-
-1. The default alert is for a **server response time greater than 1 second**.  Select the **Metric** drop-down to examine the various alert metrics.  You can easily configure a variety of alerts to improve the monitoring capabilities of your app.
-
-1. Select the check-box for **Notify via Email owners, contributors, and readers**.  Optionally, you can perform additional actions when an alert fires by executing an Azure logic app.
-
-1. Choose **Ok** to create the alert.  In a few moments, the alert appears as active on the dashboard.  **Exit** the Alerts area, and navigate back to the **Application Insights blade**.
-
-1. Select **Availability**, then select **+ Add test**. 
-
-1. Enter a **Test name**, then choose **Create**.  A simple ping test is created to verify the availability of your application.  After a few minutes, test results are available, and the Application Insights dashboard displays an availability status.
 
 ## Clean up resources
 
