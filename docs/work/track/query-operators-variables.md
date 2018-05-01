@@ -8,6 +8,7 @@ ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018  
 ---
 
@@ -300,7 +301,7 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@MyRecentActivity <sup>4</sup></b></td>
+	<td><b>@MyRecentActivity</b> <sup>4</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the team project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
 </td>
 </tr>
@@ -313,15 +314,20 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentMentions <sup>4</sup></b></td>
+	<td><b>@RecentMentions</b> <sup>4</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity <sup>6</sup></b></td>
+	<td><b>@RecentProjectActivity</b> <sup>6</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
+</tr>
+
+<tr>
+	<td>**@TeamAreas** <sup>7</sup> </td>
+	<td>Only use with the Area Path field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause `Area Path=@TeamAreas [Fabrikam Fiber]\Web`. For additional examples, see [Query by area or iteration path](query-by-area-iteration-path.md).</td>
 </tr>
 
 <tr>
@@ -338,8 +344,8 @@ You can use the macros described in the following table to filter your queries b
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
 0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macros are supported for VSTS.
- 
+0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
+0. The **@TeamAreas** macro is supported for VSTS only at this time.
  
 
 <a id="full-text" /> 
@@ -366,6 +372,15 @@ For more information, see [Full-Text Search Queries and Collation Settings](../.
 ::: moniker-end
 
 
+
+## Related articles 
+
+- [About managed queries](example-queries.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+
+[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
+
+
 <!---
 ## Query indexed fields
 
@@ -376,5 +391,3 @@ By default, the following fields are indexed: **Assigned To**, **Created Date**,
 You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).
 
 --> 
-
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
