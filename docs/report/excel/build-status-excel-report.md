@@ -8,6 +8,7 @@ ms.topic: reference
 ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Status Excel Report
@@ -17,6 +18,11 @@ ms.date: 12/30/2016
 
 The Build Status report helps the team track the progress of their builds by showing the number of builds that failed or succeeded for the most recent four weeks.  
   
+
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
+
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
