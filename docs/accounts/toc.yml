@@ -28,7 +28,7 @@
   items:
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
-  - name: Resources for project members
+  - name: Resources granted to project members
     href: resources-granted-to-project-members.md
 - name: How-to guides
   items:
