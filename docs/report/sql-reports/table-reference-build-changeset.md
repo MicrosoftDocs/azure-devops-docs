@@ -8,6 +8,7 @@ description: Uses FactBuildChangeset to query for data about the changesets.
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -17,18 +18,18 @@ ms.date: 10/17/17
 
 You can query for data about the changesets that were incorporated in each build by using FactBuildChangeset and the associated dimension tables.  
   
- For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
+> [!IMPORTANT]  
+> Build tables are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, these tables and the TFS Warehouse for builds won't yield any meaningful data.  
+
+For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
  ![Tables for Changesets in a Build](_img/teamproj_factbuildchangeset.png "TeamProj_FactBuildChangeset")  
   
  FactBuildChangeset is associated with the following dimension tables:  
   
--   DimBuild  
-  
--   DimChangeset  
-  
--   DimPerson  
-  
+-   DimBuild   
+-   DimChangeset    
+-   DimPerson   
 -   DimTeamProject  
   
 ## Related notes
