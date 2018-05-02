@@ -5,7 +5,6 @@ ms.topic: include
 ## Help and support
 
 * See our [troubleshooting](../actions/troubleshooting.md) page.
-
 * Report any problems on [Developer Community](https://developercommunity.visualstudio.com/),
   make suggestions on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services),
   get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services),
