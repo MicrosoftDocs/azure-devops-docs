@@ -8,11 +8,15 @@ ms.topic: reference
 ms.assetid: 60e637b9-4599-4fe5-bff1-e6adade81d9c
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Quality Excel Report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
 
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build definitions for a team project.  
