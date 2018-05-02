@@ -58,6 +58,9 @@ Build reports track the quality of software under development. By defining tests
 </tr>
 </table>
 
+> [!IMPORTANT]  
+> Build reports are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
 
 **Sample build success over time report**  
 
