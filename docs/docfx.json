@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "**/_data/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -28,7 +29,8 @@
         "group": "all",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/_data/**"
         ]
       }
     ],
@@ -43,7 +45,7 @@
       "author": "erickson-doug",
       "ms.author": "douge",
       "ms.date": "07/13/2017",
-      "ms.prod": "vs-devops-alm",
+      "ms.prod": "devops",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
@@ -61,6 +63,9 @@
         "report/sharepoint-dashboards/**": ">= tfs-2013 <= tfs-2017",
         "report/sql-reports/**": ">= tfs-2013 <= tfs-2018",
         "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
+      },
+      "ROBOTS":{
+        "integrate/legacy-apis/**": "NOINDEX,NOFOLLOW"
       }
     },
     "template": [],
