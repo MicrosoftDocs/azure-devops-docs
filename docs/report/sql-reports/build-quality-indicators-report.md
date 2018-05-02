@@ -8,6 +8,7 @@ description: Shows test coverage, code churn, and bug counts for a specified bui
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -19,7 +20,10 @@ ms.date: 10/17/17
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  
   
- Ideally, test rates, bugs, and code churn would all produce the same picture, but they often do not. When you find a discrepancy, you can use the Bug Quality Indicators report to examine the details of a specific build and data series. Because this report combines test results, code coverage from testing, code churn, and bugs, you can view many perspectives at the same time.  
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
+Ideally, test rates, bugs, and code churn would all produce the same picture, but they often do not. When you find a discrepancy, you can use the Bug Quality Indicators report to examine the details of a specific build and data series. Because this report combines test results, code coverage from testing, code churn, and bugs, you can view many perspectives at the same time.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
