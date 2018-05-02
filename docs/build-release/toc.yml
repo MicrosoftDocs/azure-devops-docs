@@ -24,6 +24,8 @@
         href: apps/cd/azure/azure-devops-project-php.md
       - name: Ruby
         href: apps/cd/azure/azure-devops-project-ruby.md
+      - name: Go
+        href: apps/cd/azure/azure-devops-project-go.md 
     - name: Build your app
       items:
       - name: Android
