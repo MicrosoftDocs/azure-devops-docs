@@ -63,6 +63,9 @@
         "report/sharepoint-dashboards/**": ">= tfs-2013 <= tfs-2017",
         "report/sql-reports/**": ">= tfs-2013 <= tfs-2018",
         "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
+      },
+      "ROBOTS":{
+        "integrate/legacy-apis/**": "NOINDEX,NOFOLLOW"
       }
     },
     "template": [],
