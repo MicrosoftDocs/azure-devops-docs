@@ -8,6 +8,7 @@ description: Query for data about how thoroughly source code was covered by the 
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -16,26 +17,24 @@ ms.date: 10/17/17
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-You can query for data about how thoroughly source code was covered by the tests that use specific builds by using FactBuildCoverage and the associated dimension tables.  
-  
- For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
+You can query for data about how thoroughly source code was covered by the tests that use specific builds by using FactBuildCoverage and the associated dimension tables.   
+
+> [!IMPORTANT]  
+> Build tables are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, these tables and the TFS Warehouse for builds won't yield any meaningful data.  
+
+
+For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
  ![Build Coverage Fact Table](_img/teamproj_factbuildcoverage.png "TeamProj_FactBuildCoverage")  
   
  FactBuildCoverage is associated with the following dimension tables:  
   
--   DimAssembly  
-  
--   DimBuild  
-  
--   DimBuildFlavor  
-  
--   DimBuildPlatform  
-  
--   DimCodeElement  
-  
+-   DimAssembly   
+-   DimBuild    
+-   DimBuildFlavor    
+-   DimBuildPlatform    
+-   DimCodeElement    
 -   DimDate  
-  
 -   DimTeamProject  
   
 ## Related notes

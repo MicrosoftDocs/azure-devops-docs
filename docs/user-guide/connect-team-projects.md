@@ -291,7 +291,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 Additional resources you may find of interest: 
 
 - [Work in web portal](work-web-portal.md)  
-- [Work in Team Explorer](work-web-portal.md)  
+- [Work in Team Explorer](work-team-explorer.md)  
 - [Troubleshoot connection](troubleshoot-connection.md)  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  

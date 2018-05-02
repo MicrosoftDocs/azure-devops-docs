@@ -8,6 +8,7 @@ ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -18,7 +19,10 @@ ms.date: 10/17/17
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 
-The Build Summary lists builds and provides information about test results, test coverage, code churn, and quality notes for each build.  
+The Build Summary lists builds and provides information about test results, test coverage, code churn, and quality notes for each build. 
+
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   

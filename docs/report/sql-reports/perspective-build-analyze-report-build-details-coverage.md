@@ -8,6 +8,7 @@ description: View the measures, dimensions, and attributes in the SQL Server Ana
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -16,6 +17,10 @@ ms.date: 10/17/17
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By using the Build perspective, you can view just the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server that pertain to the build process. For example, you can use these measures to determine how many builds are failing and how much of the code changed within a build.  
+
+> [!IMPORTANT]  
+> The Build Measures and perspectives are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, the measures, perspectives,reports, and the TFS Warehouse for builds won't yield any meaningful data.  
+
   
  The Build perspective is based on the relational tables that enable reporting on builds as either a property of the build, code coverage, or a changeset in version control. For more information, see [Build Details tables](table-reference-build-details.md), [Build Project tables](table-reference-build-project.md), [Build Coverage tables](table-reference-build-coverage.md), and [Build Changeset tables](table-reference-build-changeset.md).  
   
@@ -25,15 +30,16 @@ By using the Build perspective, you can view just the measures, dimensions, and 
 By using the Build perspective, you can create reports that answer the following questions:
 
 **Status reports:**  
-- Which builds failed and which builds succeeded?<br />  Which builds reflect a significant number of changes to the code?  
+- Which builds failed and which builds succeeded?  
+- Which builds reflect a significant number of changes to the code?   
 - Which builds are ready to install?  
 
 **Trend reports:**  
 - What is the status of all builds over time?  
 - How much of the code was executed by the tests over time?   
 
->[!NOTE]  
->If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube.
+> [!NOTE]  
+> If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube.
   
    
 <a name="example_trend"></a> 
