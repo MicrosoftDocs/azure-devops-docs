@@ -45,7 +45,9 @@
   - name: Active Directory groups (TFS) 
     href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Security glossary 
-    href: security-glossary.md  
+    href: security-glossary.md
+  - name: Resources granted to project members
+    href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json    
 - name: How-to Guides
   items:
   - name: Add users to your account (VSTS)
