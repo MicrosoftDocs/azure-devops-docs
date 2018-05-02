@@ -25,15 +25,15 @@ Service endpoints are a way for VSTS to connect to external systems or services.
 Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service. 
 Follow this guide to create a new Service Point contribution and leverage it in your extension.
 
-## Tutorial Overview
+## Task overview
 
-This tutorial walks through developing a service endpoint by creating an example extension for VSTS that includes:
+This article walks through developing a service endpoint by creating an example extension for VSTS that includes:
 -	A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
 -	A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
 > Note: Service endpoints created by users will be created at the project level, not the account level. 
 
-The steps involved in completing this tutorial are:
+The steps involved in completing this task are:
 - [Step 1: Creating the extension manifest file](#step1)
 - [Step 2: The build task definition, in the task.json file](#step2)
 
@@ -45,7 +45,7 @@ The steps involved in completing this tutorial are:
 ## Step 1: Create the manifest file: `vss-extension.json`
 The [manifest file](./manifest.md) defines the custom endpoint and links to the task.json manifest for the build task. 
 
-In this tutorial, the manifest file creation is separated into three parts:
+In this article, the manifest file creation is separated into three parts:
 - [Create the basic manifest file](#createbasic)
 - [Add a custom endpoint contribution](#customendpoint)
 - [Add a build task](#buildtask)
@@ -146,6 +146,10 @@ Add the following `contributions` array underneath the `targets` array of the ba
     },
   ],
 ```
+
+> [!NOTE]
+> Below is what your endpoint will look like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
+
 
 If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new Service Endpoint to your VSTS account.
 <img src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
