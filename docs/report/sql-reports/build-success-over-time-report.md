@@ -8,6 +8,7 @@ description: Displays the status of the last build for each build category run f
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -20,6 +21,9 @@ ms.date: 10/17/17
 
 The Build Success Over Time report provides a pictorial version of the Build Summary report. The Build Success Over Time report displays the status of the last build for each build category run for each day. You can use this report to help track the quality of the code that the team is checking in. In addition, for any day on which a build ran, you can view the Build Summary for that day.  
   
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
