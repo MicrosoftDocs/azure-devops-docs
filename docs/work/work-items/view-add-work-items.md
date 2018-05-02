@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**VSTS**  
+**VSTS | TFS 2018.2**  
 
 View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 

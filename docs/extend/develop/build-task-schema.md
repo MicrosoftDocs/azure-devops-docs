@@ -32,7 +32,7 @@ multiple versions in one extension.
 * extensionIcon.png
 * Task1
     * task.json
-    * taskIcon.png
+    * icon.png
     * taskScript.ps1
 
 ### Multiple version layout
@@ -42,20 +42,20 @@ multiple versions in one extension.
 * Task1
     * Task1V1
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
     * Task1V2
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1    
 * Task2
     * Task2V1
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
     * Task2V2
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
                     
 
