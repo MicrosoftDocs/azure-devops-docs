@@ -40,6 +40,337 @@
     href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
   - name: Service hooks events
     href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+  - name: Legacy REST APIs
+    items:
+    - name: Overview
+      href: legacy-apis/overview.md
+    - name: Accounts and profiles
+      href: legacy-apis/shared/overview.md
+      items:
+      - name: Accounts
+        href: legacy-apis/shared/accounts.md
+      - name: Publishers
+        href: legacy-apis/shared/profiles.md
+    - name: Build
+      href: legacy-apis/build/overview.md
+      items:
+      - name: Builds
+        href: legacy-apis/build/builds.md
+      - name: Definition templates
+        href: legacy-apis/build/definition-templates.md
+      - name: Definitions
+        href: legacy-apis/build/definitions.md
+      - name: Tags
+        href: legacy-apis/build/tags.md
+    - name: Chat
+      href: legacy-apis/chat/overview.md
+      items:
+      - name: Messages
+        href: legacy-apis/chat/messages.md
+      - name: Rooms
+        href: legacy-apis/chat/rooms.md
+      - name: Users
+        href: legacy-apis/chat/users.md
+    - name: Dashboards
+      href: legacy-apis/dashboard/overview.md
+      items:
+      - name: Dashboards
+        href: legacy-apis/dashboard/dashboards.md
+      - name: Widgets
+        href: legacy-apis/dashboard/widgets.md
+    - name: Endpoints
+      href: legacy-apis/endpoints/overview.md
+      items:
+      - name: Endpoints
+        href: legacy-apis/endpoints/endpoints.md
+      - name: Endpoint types
+        href: legacy-apis/endpoints/endpoint-types.md
+    - name: Git
+      href: legacy-apis/git/overview.md
+      items:
+      - name: Annotated Tags
+        href: legacy-apis/git/annotatedtags.md
+      - name: Blobs
+        href: legacy-apis/git/blobs.md
+      - name: Commits
+        href: legacy-apis/git/commits.md
+      - name: Diffs
+        href: legacy-apis/git/diffs.md
+      - name: Import requests
+        href: legacy-apis/git/import-requests.md
+      - name: Items
+        href: legacy-apis/git/items.md
+      - name: Pull Requests
+        href: legacy-apis/git/pull-requests/overview.md
+        items:
+        - name: Iterations
+          href: legacy-apis/git/pull-requests/iterations.md
+        - name: Pull requests
+          href: legacy-apis/git/pull-requests/pull-requests.md
+        - name: Reviewers
+          href: legacy-apis/git/pull-requests/reviewers.md
+        - name: Threads
+          href: legacy-apis/git/pull-requests/threads.md
+        - name: Work items
+          href: legacy-apis/git/pull-requests/work-items.md
+      - name: Pushes
+        href: legacy-apis/git/pushes.md
+      - name: Refs
+        href: legacy-apis/git/refs.md
+      - name: Repositories
+        href: legacy-apis/git/repositories.md
+      - name: Stats
+        href: legacy-apis/git/stats.md
+      - name: Trees
+        href: legacy-apis/git/trees.md
+    - name: Hooks
+      href: legacy-apis/hooks/overview.md
+      items:
+      - name: Consumers
+        href: legacy-apis/hooks/consumers.md
+      - name: Publishers
+        href: legacy-apis/hooks/publishers.md
+      - name: Subscriptions
+        href: legacy-apis/hooks/subscriptions.md    
+    - name: Load test
+      href: legacy-apis/load-test/overview.md
+      items:
+      - name: APM applications
+        href: legacy-apis/load-test/apm-applications.md
+      - name: APM counters
+        href: legacy-apis/load-test/apm-counters.md
+      - name: APM plugins
+        href: legacy-apis/load-test/apm-plugins.md
+      - name: Configuration
+        href: legacy-apis/load-test/configuration.md
+      - name: Counter instances
+        href: legacy-apis/load-test/counter-instances.md
+      - name: Counter samples
+        href: legacy-apis/load-test/counter-samples.md
+      - name: Test drops
+        href: legacy-apis/load-test/test-drops.md
+      - name: Test runs
+        href: legacy-apis/load-test/test-runs.md
+      - name: Types
+        href: legacy-apis/load-test/types.md
+    - name: Notification
+      href: legacy-apis/notification/overview.md
+      items:
+      - name: Contracts
+        href: legacy-apis/notification/contracts.md
+      - name: Event types
+        href: legacy-apis/notification/eventtypes.md
+      - name: Subscriptions
+        href: legacy-apis/notification/subscriptions.md
+    - name: Packaging
+      href: legacy-apis/packaging/overview.md
+      items:
+      - name: Feeds
+        href: legacy-apis/packaging/feeds.md
+      - name: Maven
+        href: legacy-apis/packaging/maven.md
+      - name: Npm
+        href: legacy-apis/packaging/npm.md
+      - name: Nuget
+        href: legacy-apis/packaging/nuget.md
+      - name: Packages
+        href: legacy-apis/packaging/packages.md
+      - name: Permissions
+        href: legacy-apis/packaging/permissions.md
+      - name: Polling
+        href: legacy-apis/packaging/polling.md
+      - name: Views
+        href: legacy-apis/packaging/views.md
+    - name: Policy
+      href: legacy-apis/policy/overview.md
+      items:
+      - name: Configurations
+        href: legacy-apis/policy/configurations.md
+      - name: Settings
+        href: legacy-apis/policy/settings.md
+      - name: Types
+        href: legacy-apis/policy/types.md
+    - name: Queues
+      href: legacy-apis/queues/overview.md
+    - name: Release management
+      href: legacy-apis/rm/overview.md
+      items:
+      - name: Approvals
+        href: legacy-apis/rm/approvals.md
+      - name: Contracts
+        href: legacy-apis/rm/contracts.md
+      - name: Definitions
+        href: legacy-apis/rm/definitions.md
+      - name: Releases
+        href: legacy-apis/rm/releases.md
+    - name: Security
+      href: legacy-apis/security/overview.md
+      items:
+      - name: Access Control Entries (ACEs)
+        href: legacy-apis/security/aces.md
+      - name: Access Control Lists (ACLs)
+        href: legacy-apis/security/acls.md
+      - name: Permissions
+        href: legacy-apis/security/permissions.md
+      - name: Security namespaces
+        href: legacy-apis/security/securitynamespaces.md
+      - name: Tokens
+        href: legacy-apis/security/tokens.md
+    - name: Test
+      href: legacy-apis/test/overview.md
+      items:
+      - name: Attachments
+        href: legacy-apis/test/attachments.md
+      - name: Cases
+        href: legacy-apis/test/cases.md
+      - name: Clone operations
+        href: legacy-apis/test/cloneOperations.md
+      - name: Code coverage
+        href: legacy-apis/test/code-coverage.md
+      - name: Configurations
+        href: legacy-apis/test/configurations.md
+      - name: Plans
+        href: legacy-apis/test/plans.md
+      - name: Points
+        href: legacy-apis/test/points.md
+      - name: Result retention settings
+        href: legacy-apis/test/resultretentionsettings.md
+      - name: Results 1.0
+        href: legacy-apis/test/results_1_0.md
+      - name: Results
+        href: legacy-apis/test/results.md
+      - name: Runs
+        href: legacy-apis/test/runs.md
+      - name: Sessions
+        href: legacy-apis/test/sessions.md
+      - name: Suite entries
+        href: legacy-apis/test/suite-entries.md
+      - name: Suites
+        href: legacy-apis/test/suites.md
+      - name: Variables
+        href: legacy-apis/test/variables.md
+    - name: TFS
+      href: legacy-apis/tfs/overview.md
+      items:
+      - name: Contracts
+        href: legacy-apis/tfs/contracts.md
+      - name: Processes
+        href: legacy-apis/tfs/processes.md
+      - name: Project collections
+        href: legacy-apis/tfs/project-collections.md
+      - name: Projects
+        href: legacy-apis/tfs/projects.md
+      - name: Samples
+        href: legacy-apis/tfs/samples.md
+      - name: Teams
+        href: legacy-apis/tfs/teams.md
+    - name: TFVC
+      href: legacy-apis/tfvc/overview.md
+      items:
+      - name: Branches
+        href: legacy-apis/tfvc/branches.md
+      - name: Changesets
+        href: legacy-apis/tfvc/changesets.md
+      - name: Items
+        href: legacy-apis/tfvc/items.md
+      - name: Labels
+        href: legacy-apis/tfvc/labels.md
+      - name: Shelvesets
+        href: legacy-apis/tfvc/shelvesets.md
+    - name: Work item tracking
+      href: legacy-apis/wit/overview.md
+      items:
+      - name: Artifact link types
+        href: legacy-apis/wit/artifactlinktypes.md
+      - name: Artifact URI query
+        href: legacy-apis/wit/artifacturiquery.md
+      - name: Attachments
+        href: legacy-apis/wit/attachments.md
+      - name: Batch
+        href: legacy-apis/wit/batch.md
+      - name: Categories
+        href: legacy-apis/wit/categories.md
+      - name: Classification nodes
+        href: legacy-apis/wit/classification-nodes.md
+      - name: Comments
+        href: legacy-apis/wit/comments.md
+      - name: Fields
+        href: legacy-apis/wit/fields.md
+      - name: History
+        href: legacy-apis/wit/history.md
+      - name: Queries
+        href: legacy-apis/wit/queries.md
+      - name: Recycle Bin
+        href: legacy-apis/wit/recycle-bin.md
+      - name: Relation types
+        href: legacy-apis/wit/relation-types.md
+      - name: Reporting work item links
+        href: legacy-apis/wit/reporting-work-item-links.md
+      - name: Reporting work item revisions
+        href: legacy-apis/wit/reporting-work-item-revisions.md
+      - name: Revisions
+        href: legacy-apis/wit/revisions.md
+      - name: Samples
+        href: legacy-apis/wit/samples.md
+      - name: Tags
+        href: legacy-apis/wit/tags.md
+      - name: Templates
+        href: legacy-apis/wit/templates.md
+      - name: Updates
+        href: legacy-apis/wit/updates.md
+      - name: Work item query language
+        href: legacy-apis/wit/wiql.md
+      - name: Work item types
+        href: legacy-apis/wit/work-item-types.md
+      - name: Work items
+        href: legacy-apis/wit/work-items.md
+    - name: Work
+      href: legacy-apis/work/overview.md
+      items:
+      - name: Backlog configuration
+        href: legacy-apis/work/backlog-configuration.md
+      - name: Boards
+        href: legacy-apis/work/boards.md
+      - name: Capacity
+        href: legacy-apis/work/capacity.md
+      - name: Card fields
+        href: legacy-apis/work/card-fields.md
+      - name: Card rules
+        href: legacy-apis/work/card-rules.md
+      - name: Charts
+        href: legacy-apis/work/charts.md
+      - name: Columns
+        href: legacy-apis/work/columns.md
+      - name: Delivery timeline
+        href: legacy-apis/work/delivery-timeline.md
+      - name: Iterations
+        href: legacy-apis/work/iterations.md
+      - name: Plans
+        href: legacy-apis/work/plans.md
+      - name: Process configuration
+        href: legacy-apis/work/process-configuration.md
+      - name: Rows
+        href: legacy-apis/work/rows.md
+      - name: Team days off
+        href: legacy-apis/work/team-days-off.md
+      - name: Team field values
+        href: legacy-apis/work/team-field-values.md
+      - name: Team settings
+        href: legacy-apis/work/team-settings.md
+    - name: XAML Build
+      href: legacy-apis/xamlbuild/overview.md
+      items:
+      - name: Builds
+        href: legacy-apis/xamlbuild/builds.md
+      - name: Definition
+        href: legacy-apis/xamlbuild/definitions.md
+      - name: Qualities
+        href: legacy-apis/xamlbuild/qualities.md
+      - name: Queues
+        href: legacy-apis/xamlbuild/queues.md
+      - name: Requests
+        href: legacy-apis/xamlbuild/requests.md
+      
 - name: Troubleshooting
   items:
   - name: IIS Basic Authentication and PATs
