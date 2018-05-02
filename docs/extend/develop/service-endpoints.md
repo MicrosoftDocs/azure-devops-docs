@@ -147,7 +147,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
   ],
 ```
 
-> ![NOTE]
+> [!NOTE]
 > Below is what your endpoint will look like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
 
 
