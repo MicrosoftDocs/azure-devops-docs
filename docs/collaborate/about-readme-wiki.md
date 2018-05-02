@@ -114,9 +114,40 @@ Use your team project wiki to share information with other team members. When yo
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://www.visualstudio.com/downloads/). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts"
 
-The following features are supported for the team project wiki you create in VSTS and the indicated TFS version or later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md). 
+The following features are supported for the team project wiki. 
+
+**Provision or create a wiki**
+- [Create a wiki for your team project](wiki-create-repo.md)
+- [Publish code as wiki](publish-repo-to-wiki.md) 
+
+**Work with wiki content**
+
+- [Add and edit wiki pages](add-edit-wiki.md)  
+- [View wiki page history and revert](wiki-view-history.md)
+- [Search Wiki content](search-wiki.md)  
+- [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
+- [Clone and update wiki content offline](wiki-update-offline.md)   
+- [Filter or print Wiki content](filter-print-wiki.md) <sup>1</sup> 
+- [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)   
+
+	*Note:*
+	1. The print feature may not be available from the Firefox web browser. 
+
+**Format wiki content**
+- [Markdown format](markdown-guidance.md)  
+- [HTML tags](markdown-guidance.md#html)  
+- [Insert and resize images](markdown-guidance.md#images) 
+- [Link to work items using #](markdown-guidance.md#link-work-items)     
+- [Attach files](markdown-guidance.md#attach)  
+- [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)  
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+The following features are supported for the team project wiki you create in the indicated TFS version or later versions. To learn more, see [Create a wiki for your team project](wiki-create-repo.md) and [Add and edit wiki pages](add-edit-wiki.md). 
 
 > [!div class="mx-tdBreakAll"]  
 > |Feature | TFS version |  
@@ -131,12 +162,10 @@ The following features are supported for the team project wiki you create in VST
 > |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 | 
 > |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 | 
 > |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 | 
-> |[Wiki search](search-wiki.md) | TFS 2018.2 | 
-> |[Publish code as wiki](publish-repo-to-wiki.md) | Not supported | 
+> |[Wiki search](search-wiki.md) | TFS 2018.2 |  
 
 **Notes:**
 1. This feature may not be available from the Firefox web browser.  
-
 
 ::: moniker-end
 
