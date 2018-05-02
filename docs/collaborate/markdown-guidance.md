@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2015'
 ms.date: 03/06/2018
@@ -421,8 +422,8 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 ## Code highlighting
 
-Highlight suggested code segments using code highlight blocks. 
-To indicate a span of code, wrap it with three backtick quotes (<code> &#96;&#96;&#96;</code>) on a new line at both the start and end of the block.   
+Highlight suggested code segments using code highlight blocks or inline syntax. 
+To indicate a span of code, wrap it with three backtick quotes (<code> &#96;&#96;&#96;</code>) on a new line at both the start and end of the block.   To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>).
 
 **Example:**
 
@@ -436,6 +437,18 @@ $ sudo npm install vsoagent-installer -g
 ```
 $ sudo npm install vsoagent-installer -g
 ```
+
+<br/>
+**Example:**
+
+<pre>
+To install the Microsoft VSTS Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;
+</pre>  
+ 
+<br/>
+**Result:**
+To install the Microsoft VSTS Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`
+
 <br/>
 Within a markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
