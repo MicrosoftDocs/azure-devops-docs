@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 04/26/2018
+ms.date: 05/2/2018
 monikerRange: 'vsts'
 ---
 
@@ -157,7 +157,7 @@ cases, these backups are also replicated in a paired data center to ensure
 we can recover from a data center outage.
 
 In addition, we perform a "soft delete" for account deletion operations. 
-This lets us recover entire accounts for up to 90 days after deletion.
+This lets us recover entire accounts for up to 30 days after deletion.
 
 ### Practice is critical 
 
