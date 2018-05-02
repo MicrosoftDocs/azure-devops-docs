@@ -71,7 +71,7 @@ In this section, you will check that the triggers you need for continuous deploy
    ![Viewing the environment trigger setting](_img/define-multistage-release-process/environment-trigger.png)
 
    Notice that you can also define artifact filters that determine a condition for the release to proceed,
-   and set up a schedule for deployments. You can use can features to, for example, specify a branch from
+   and set up a schedule for deployments. You can use features to, for example, specify a branch from
    which the build artifacts must have been created, or a specific time of day when you know the app will not be heavily used.
    For more information, see [Environment triggers](../concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    in the Release Management documentation.
