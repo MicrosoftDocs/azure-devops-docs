@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
@@ -24,7 +25,7 @@ You can provide guidance to your team in these places using markdown:
 
 ::: moniker range="vsts"   
 - [Team project wiki (provisioned wiki)](add-edit-wiki.md)
-- [Pulbish code as wiki](publish-repo-to-wiki.md)
+- [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)    
 - [Repository Readme files](../git/create-a-readme.md) 
@@ -445,7 +446,10 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 - To apply bold: surround the text with double asterisks `**`.    
 - To apply strikethrough: surround the text with double tilde characters `~~`.   
 
-Combine these elements to apply multiple emphasis to text.    
+Combine these elements to apply multiple emphasis to text. 
+
+> [!NOTE]  
+> There is no markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` will yield <u>underlined text`</u>.
 
 **Example:**
 
@@ -465,7 +469,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 ## Code highlighting
 
 Highlight suggested code segments using code highlight blocks. 
-To indicate a span of code, wrap it with three backtick quotes (<code> &#96;&#96;&#96;</code>) on a new line at both the start and end of the block.   
+To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>). 
 
 **Example:**
 
@@ -479,6 +483,17 @@ $ sudo npm install vsoagent-installer -g
 ```
 $ sudo npm install vsoagent-installer -g
 ```
+<br/>
++**Example:**
++
++<pre>
++To install the Microsoft VSTS Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
++</pre>   
++ 
++<br/>
++**Result:**
++To install the Microsoft VSTS Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`.  
+
 <br/>
 Within a markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
@@ -548,7 +563,7 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker-end
 
-## Special characters
+## Ignore or escape markdown syntax to enter specific or literal characters 
 
 <table width="650px">
 <tbody valign="top">
@@ -645,7 +660,19 @@ In wiki pages, you can also create rich content using HTML tags.
 **Example - Embedded video**
 
 ```HTML
-<video src="<path of the video file>" width=400 controls>
+<video src="path of the video file" width=400 controls>
+</video>
+```
+
+**For example: **  
+```HTML
+<video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
+</video>
+```
+
+Or,  
+```HTML
+<video src="_media/vstswiki_mid.mp4" width=400 controls>
 </video>
 ```
 

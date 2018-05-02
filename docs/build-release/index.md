@@ -33,7 +33,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
 <div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
 <div class="ico48Link"><a href="apps/containers/build.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
-<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.png"><span>Go</span></a></div>
+<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.svg"><span>Go</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
 <div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
@@ -85,9 +85,9 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Resources
 
-- [What is continuous integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
-- [What is continuous delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
-- [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)   
+- [What is continuous integration?](/azure/devops/what-is-continuous-integration)  
+- [What is continuous delivery?](/azure/devops/what-is-continuous-delivery)  
+- [What is DevOps?](/azure/devops/what-is-devops)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
 
 ::: moniker-end

@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Use the **#ID** control to quickly link objects to work items.     
 
 ::: moniker-end
@@ -33,7 +33,7 @@ Use the **#ID** control to quickly link objects to work items.
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Link a pull request to a work item 
 
 When leaving a code comment in a pull request, you can type **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you. 
@@ -47,7 +47,7 @@ To further filter the list, continue entering keywords until you've found a matc
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ## Link to work items in pull requests, comments, and commits
  

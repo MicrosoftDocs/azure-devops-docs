@@ -59,7 +59,7 @@ Commits include the following information:
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
 
-[Learn more about Git history](https://www.visualstudio.com/learn/understand-git-history/) and how to [review history](history.md) to investigate changes made to your code.
+[Learn more about Git history](/azure/devops/git/understand-git-history) and how to [review history](history.md) to investigate changes made to your code.
 
 <a name="stage-your-changes-and-commit"></a>
 

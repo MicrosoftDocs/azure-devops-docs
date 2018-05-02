@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/19/2018
+ms.date: 04/30/2018
 monikerRange: 'vsts'
 ---
 # Add external users to your VSTS account
 
 **VSTS**
 
-If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wants to be able to collaborate with external users, you can invite an external user to your VSTS account. To do so, you must add the identities of your external users to your Azure AD and VSTS accounts. Doing this will also grant the user some additional privileges. Learn more about the [additional account-level resources](external-users.md).
+If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wants to be able to collaborate with external users, you can invite an external user to your VSTS account. To do so, you must add the identities of your external users to your Azure AD and VSTS accounts. Doing this will also grant the user some additional privileges. Learn more about the [additional account-level resources](resources-granted-to-project-members.md).
 
 ## Prerequisites
 
