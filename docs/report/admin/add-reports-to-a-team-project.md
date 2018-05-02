@@ -32,3 +32,6 @@ After completing the sequence of tasks, you'll be able to access the default rep
 TFS SSRS data flow and report architecture
 
 ![TFS SSRS data flow and report architecture](_img/IC658337.png)
+
+> [!IMPORTANT]  
+> Build reports are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.   
