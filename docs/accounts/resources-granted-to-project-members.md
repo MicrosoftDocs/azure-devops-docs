@@ -10,10 +10,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/19/2018
+ms.date: 05/01/2018
 monikerRange: 'vsts'
 ---
-# Assigned resources for project members
+# Resources granted to project members
+
+**VSTS**
 
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.

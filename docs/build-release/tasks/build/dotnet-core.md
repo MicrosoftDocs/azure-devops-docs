@@ -103,17 +103,16 @@ None
             <ul>
                 <li>The packager compiles the .csproj files for packaging.</li>
                 <li>You must specify <strong>Configuration to Package</strong> (see below).</li>
-                <li>You do not have to check in a <a href="#nuspec">.nuspec file</a>. If you do check one in, the packager honors
-                    its settings and replaces tokens such as *$id$* and *$description$*.</li>
+                <li>You do not have to check in a .nuspec file. If you do check one in, the packager honors its settings and replaces tokens such as *$id$* and *$description$*.</li>
             </ul>
             Specify .nuspec files (for example, ```**\*.nuspec```) for more complex projects, such as multi-platform scenarios in which you need to compile and package in separate steps. In this case:
             <ul>
                 <li>The packager does not compile the .csproj files for packaging.</li>
-                <li>Each project is packaged only if it has a <a href="#nuspec">.nuspec file</a> checked in.</li>
+                <li>Each project is packaged only if it has a .nuspec file checked in.</li>
                 <li>The packager does not replace tokens in the .nuspec file (except the <code>&lt;version/&gt;</code> element,
                     see <strong>Use build number to version package</strong>, below). You must supply values for elements
                     such as <code>&lt;id/&gt;</code> and <code>&lt;description/&gt;</code>. The most common way to do this
-                    is to hardcode the values in the <a href="#nuspec">.nuspec file</a>.
+                    is to hardcode the values in the .nuspec file.
                 </li>
             </ul>
            To package a single file, click the <strong>...</strong> button and select the file. To package multiple files, use [file matching patterns](../file-matching-patterns.md). Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.
@@ -148,7 +147,7 @@ None
         <td>Additional build properties</td>
         <td>
             Semicolon delimited list of properties used to build the package. For example, you could replace ```
-            <description>$description$</description>``` in the <a href="#nuspec">.nuspec file</a> this way: ```Description="This is a
+            <description>$description$</description>``` in the .nuspec file this way: ```Description="This is a
             great package"``` Using this argument is equivalent to supplying properties from [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack)
             with the ```-Properties``` option.
         </td>
