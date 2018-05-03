@@ -4,11 +4,11 @@ ms.technology: devops-ecosystem
 title: VSS SDK Reference for Visual Studio Team Services
 description: An overview of the VSS SDK in Visual Studio Team Services Integration
 ms.assetid: 19744f62-02a9-479b-8b9c-e52800e6c24c
-ms.topic: conceptual
 ms.manager: douge
-monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
