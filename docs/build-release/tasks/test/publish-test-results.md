@@ -60,7 +60,7 @@ The build agent must have the following capabilities:
 - task: PublishTestResults@2
   inputs:
 #   testRunner: JUnit # JUnit (default), NUnit, VSTest, XUnit
-#   testResultsFiles: **\TEST-*.xml
+#   testResultsFiles: "**\\TEST-*.xml"
 #   searchFolder: $(System.DefaultWorkingDirectory)
 #   mergeTestResults: false
     testRunTitle:
