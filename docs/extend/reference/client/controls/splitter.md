@@ -4,11 +4,12 @@ description: Use the splitter control to have splitted and resizable containers 
 ms.assetid: FD43DC4F-618E-4F7C-992A-F05734041A50
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.topic: conceptual
 ms.manager: douge
-monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.topic: article
+ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 
