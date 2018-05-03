@@ -4960,6 +4960,11 @@
         "source_path": "docs/billing/extensions.md",
         "redirect_url": "/vsts/marketplace/overview",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "https://www.visualstudio.com/products/visual-studio-dev-essentials-vs.aspx",
+        "redirect_url": "https://www.visualstudio.com/dev-essentials/",
+        "redirect_document_id": false
        }
     ]
 }
