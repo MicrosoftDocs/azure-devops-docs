@@ -4,11 +4,11 @@ description: Use these controls in your extension for VSTS.
 ms.assetid: ccb6413e-ca29-4f3d-8f1d-caf896706b10
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.topic: conceptual
 ms.manager: douge
-monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 
