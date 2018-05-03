@@ -4960,6 +4960,11 @@
         "source_path": "docs/billing/extensions.md",
         "redirect_url": "/vsts/marketplace/overview",
         "redirect_document_id": false
+       },
+       {
+        "source_path": "https://www.visualstudio.com/team-services/support-visual-studio-team-services",
+        "redirect_url": "https://www.visualstudio.com/team-services/support/",
+        "redirect_document_id": false
        }
     ]
 }
