@@ -4,11 +4,12 @@ description: Used to display a toolbar in your app for VSTS.
 ms.assetid: 62A19D22-D6BD-4BC2-8A36-D8E894087449
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.topic: conceptual
 ms.manager: douge
-monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
+ms.topic: article
+ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 
