@@ -7,14 +7,14 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 05/2/2018
+ms.date: 05/3/2018
 monikerRange: 'vsts'
 ---
 
 
 # Data Protection Overview
 
-**VSTS**
+**Microsoft Visual Studio Team Services (VSTS)**
 
 Microsoft Visual Studio Team Services (VSTS) is a cloud-hosted application for
 your development projects, from planning through deployment. Based on
@@ -378,10 +378,11 @@ legitimate reasons.
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws 
 in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. 
 The GDPR's main objective is to strengthen the protection and security of your personal data and 
-will replace the Directive and all local laws relating to it. VSTS is committed to achieving compliance 
-with the GDPR when enforcement begins on May 25, 2018 and is mindful of your own compliance efforts and duties. 
+will replace the Directive and all local laws relating to it. VSTS is relied upon as system of record with strict 
+integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
+These existing obligations supersede nominal delete and retention obligations from GDPR. As such, we do not support GDPR delete requests from within VSTS. 
+We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period).
 To learn more about this new regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
-
 
 ### Data residency and sovereignty
 
@@ -395,7 +396,6 @@ customer data outside of the chosen region. Our backup procedures geo-replicates
 customer data between a second data center within the same region 
 except for accounts located in Brazil, these are replicated to South Central US 
 for disaster recovery purposes.
-
 
 ### Law enforcement access
 
