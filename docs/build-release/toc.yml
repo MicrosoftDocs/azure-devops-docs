@@ -403,6 +403,8 @@
     items:
     - name: CocoaPods
       href: tasks/package/cocoapods.md
+    - name: Conda Environment
+      href: tasks/package/conda-environment.md
     - name: npm
       href: tasks/package/npm.md
     - name: NuGet
