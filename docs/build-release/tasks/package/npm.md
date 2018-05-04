@@ -79,21 +79,19 @@ monikerRange: '>= tfs-2015'
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: Npm@1
   inputs:
-#   command: install # install (default), publish, custom
-    workingDir:
-    verbose:
-    customCommand:
-#   customRegistry: useNpmrc # useNpmrc (default), useFeed
-    customFeed:
-    customEndpoint:
-#   publishRegistry: useExternalRegistry # useExternalRegistry (default), useFeed
-    publishFeed:
-    publishEndpoint:
+    #command: 'install' # Options: install, publish, custom
+    #workingDir: # Optional
+    #verbose: # Optional
+    #customCommand: # Required when command == Custom
+    #customRegistry: 'useNpmrc' # Optional. Options: useNpmrc, useFeed
+    #customFeed: # Required when customRegistry == UseFeed
+    #customEndpoint: # Optional
+    #publishRegistry: 'useExternalRegistry' # Optional. Options: useExternalRegistry, useFeed
+    #publishFeed: # Required when publishRegistry == UseFeed
+    #publishEndpoint: # Required when publishRegistry == UseExternalRegistry
 ```
 
 ::: moniker-end

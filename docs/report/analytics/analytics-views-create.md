@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'vsts'
 ms.date: 04/04/2018

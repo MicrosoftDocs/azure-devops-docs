@@ -44,21 +44,19 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: JavaToolInstaller@0
   inputs:
-#   versionSpec: 1.8
-    jdkArchitectureOption:  # x64, x86
-    jdkSourceOption:  # AzureStorage, LocalDirectory
-    jdkFile:
-    azureResourceManagerEndpoint:
-    azureStorageAccountName:
-    azureContainerName:
-    azureCommonVirtualFile:
-    jdkDestinationDirectory:
-#   cleanDestinationDirectory: true
+    #versionSpec: '1.8' 
+    jdkArchitectureOption: # Options: x64, x86
+    jdkSourceOption: # Options: azureStorage, localDirectory
+    #jdkFile: # Required when jdkSourceOption == LocalDirectory
+    #azureResourceManagerEndpoint: # Required when jdkSourceOption == AzureStorage
+    #azureStorageAccountName: # Required when jdkSourceOption == AzureStorage
+    #azureContainerName: # Required when jdkSourceOption == AzureStorage
+    #azureCommonVirtualFile: # Required when jdkSourceOption == AzureStorage
+    jdkDestinationDirectory: 
+    #cleanDestinationDirectory: true 
 ```
 
 ::: moniker-end

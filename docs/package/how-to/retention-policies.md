@@ -4,6 +4,7 @@ description: Set up policies to automatically delete packages hosted in Visual S
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
+ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual

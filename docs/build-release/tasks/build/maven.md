@@ -93,36 +93,34 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: Maven@2
   inputs:
-#   mavenPomFile: pom.xml
-#   goals: package
-    options:
-#   publishJUnitResults: true
-#   testResultsFiles: **/TEST-*.xml
-    testRunTitle:
-#   codeCoverageToolOption: None # None (default), Cobertura, JaCoCo
-    codeCoverageClassFilter:
-    codeCoverageClassFilesDirectories:
-    codeCoverageSourceDirectories:
-#   codeCoverageFailIfEmpty: false
-#   javaHomeOption: JDKVersion # JDKVersion (default), Path
-#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
-    jdkDirectory:
-#   jdkArchitectureOption: x64 # x86, x64 (default)
-#   mavenVersionOption: Default # Default (default), Path
-    mavenDirectory:
-#   mavenSetM2Home: false
-#   mavenOptions: -Xmx1024m
-#   mavenAuthenticateFeed: true
-#   sonarQubeRunAnalysis: false
-#   sqMavenPluginVersionChoice: latest # latest (default), pom
-#   checkStyleRunAnalysis: false
-#   pmdRunAnalysis: false
-#   findBugsRunAnalysis: false
+    #mavenPomFile: 'pom.xml' 
+    #goals: 'package' # Optional
+    #options: # Optional
+    #publishJUnitResults: true 
+    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
+    #testRunTitle: # Optional
+    #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
+    #codeCoverageClassFilter: # Optional
+    #codeCoverageClassFilesDirectories: # Optional
+    #codeCoverageSourceDirectories: # Optional
+    #codeCoverageFailIfEmpty: false # Optional
+    #javaHomeOption: 'JDKVersion' # Options: jDKVersion, path
+    #jdkVersionOption: 'default' # Optional. Options: default, 1.10, 1.9, 1.8, 1.7, 1.6
+    #jdkDirectory: # Required when javaHomeOption == Path
+    #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
+    #mavenVersionOption: 'Default' # Options: default, path
+    #mavenDirectory: # Required when mavenVersionOption == Path
+    #mavenSetM2Home: false # Required when mavenVersionOption == Path
+    #mavenOptions: '-Xmx1024m' # Optional
+    #mavenAuthenticateFeed: true 
+    #sonarQubeRunAnalysis: false 
+    #sqMavenPluginVersionChoice: 'latest' # Required when sonarQubeRunAnalysis == True# Options: latest, pom
+    #checkStyleRunAnalysis: false # Optional
+    #pmdRunAnalysis: false # Optional
+    #findBugsRunAnalysis: false # Optional
 ```
 
 ::: moniker-end

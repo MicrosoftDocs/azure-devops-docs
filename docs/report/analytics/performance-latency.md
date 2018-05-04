@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Understand how data is updated and time requirements associated with querying the Analytics Service 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 11/13/2017

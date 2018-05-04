@@ -4,6 +4,7 @@ description: Manage SQL Server Reporting Services reports, data warehouse, and a
 ms.assetid: 3D57E047-4922-4B4B-8736-A68B2895E846  
 ms.prod: devops-server
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 08/11/2016

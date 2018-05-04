@@ -41,18 +41,16 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: SSH@0
   inputs:
-    sshEndpoint:
-#   runOptions: commands # commands (default), script, inline
-    commands:
-    scriptPath:
-    inline:
-    args:
-#   failOnStdErr: True
+    sshEndpoint: 
+    #runOptions: 'commands' # Options: commands, script, inline
+    #commands: # Required when runOptions == Commands
+    #scriptPath: # Required when runOptions == Script
+    #inline: # Required when runOptions == Inline
+    #args: # Optional
+    #failOnStdErr: # Optional
 ```
 
 ::: moniker-end

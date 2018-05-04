@@ -3,9 +3,11 @@ title: FAQ for Android Studio with VSTS and TFS
 description: Frequently Asked Questions about Android Studio with VSTS and TFS
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: conceptual
+ms.topic: reference
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'

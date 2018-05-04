@@ -42,16 +42,14 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishCodeCoverageResults@1
   inputs:
-#   codeCoverageTool: JaCoCo # Cobertura, JaCoCo (default)
-    summaryFileLocation:
-    reportDirectory:
-    additionalCodeCoverageFiles:
-#   failIfCoverageEmpty: false
+    #codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
+    summaryFileLocation: 
+    #reportDirectory: # Optional
+    #additionalCodeCoverageFiles: # Optional
+    #failIfCoverageEmpty: false # Optional
 ```
 
 ::: moniker-end

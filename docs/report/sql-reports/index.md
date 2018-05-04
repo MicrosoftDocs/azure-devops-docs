@@ -5,7 +5,6 @@ ms.prod: devops-server
 ms.technology: devops-analytics
 ms.topic: overview
 description: Index to topics for managing the data warehouse, adding reports, and viewing SQL Server reports 
-ms.assetid:  
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/05/2017

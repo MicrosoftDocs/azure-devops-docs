@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 To talk to VSTS feeds, you'll need a token on your local machine that Maven can pick up and pass to VSTS.  
 
 1. Navigate to the feed that you'd like to use and select **Connect to feed**.
