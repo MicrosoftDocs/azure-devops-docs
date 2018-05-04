@@ -46,8 +46,7 @@ Releases (and, in some cases, draft releases) can be created from a release defi
 * By a [continuous deployment trigger](../definitions/release/triggers.md)
   that creates a release when a new version of the source build artifacts is available.
 
-* By using the **Release** command in the UI to create a release manually from the
-  the Releases or the Builds summary.
+* By using the **Release** command in the UI to create a release manually from the Releases or the Builds summary.
 
 * By sending a command over the network to the [REST interface](../../../integrate/index.md).
 
