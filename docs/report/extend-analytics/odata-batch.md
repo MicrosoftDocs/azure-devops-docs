@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Guidelines for extension developers who want to learn how to write good OData queries 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.manager: douge
 ms.reviewer: prprice
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 11/13/2017
 ---

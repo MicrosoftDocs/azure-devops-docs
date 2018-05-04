@@ -82,22 +82,20 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: VSBuild@1
   inputs:
-#   solution: **\*.sln
-#   vsVersion: latest # latest (default), 15.0, 14.0, 12.0, 11.0
-    msbuildArgs:
-    platform:
-    configuration:
-#   clean: false
-#   maximumCpuCount: false
-#   restoreNugetPackages: false
-#   msbuildArchitecture: x86 # x86 (default), x64
-#   logProjectEvents: true
-#   createLogFile: false
+    #solution: '**\*.sln' 
+    #vsVersion: 'latest' # Optional. Options: latest, 15.0, 14.0, 12.0, 11.0
+    #msbuildArgs: # Optional
+    #platform: # Optional
+    #configuration: # Optional
+    #clean: false # Optional
+    #maximumCpuCount: false # Optional
+    #restoreNugetPackages: false # Optional
+    #msbuildArchitecture: 'x86' # Optional. Options: x86, x64
+    #logProjectEvents: true # Optional
+    #createLogFile: false # Optional
 ```
 
 ::: moniker-end

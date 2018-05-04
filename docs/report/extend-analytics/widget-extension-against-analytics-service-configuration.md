@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.assetid: 5B665450-00DB-4F59-9948-BDA0BDF8EEC7
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 11/13/2017
 ---

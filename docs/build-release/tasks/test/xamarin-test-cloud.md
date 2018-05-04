@@ -48,24 +48,22 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: XamarinTestCloud@1
   inputs:
-    appFile:
-    dsymFile:
-    teamApiKey:
-    email:
-    devices:
-#   series: master
-    testAssemblyDirectory:
-#   parallelizationOption: none # none (default), --fixture-chunk, --test-chunk
-#   localeOption: en_US # da_DK, nl_NL, en_GB, en_US (default), fr_FR, de_DE, ja_JP, ru_RU, es_MX, es_ES, user
-    userDefinedLocale:
-#   testCloudFile: **/packages/**/tools/test-cloud.exe
-    optionalArgs:
-#   publishNUnitResults: true
+    appFile: 
+    #dsymFile: # Optional
+    teamApiKey: 
+    email: 
+    devices: 
+    #series: 'master' 
+    testAssemblyDirectory: 
+    #parallelizationOption: 'none' # Options: none, --Fixture-Chunk, --Test-Chunk
+    #localeOption: 'en_US' # Options: da_DK, nl_NL, en_GB, en_US, fr_FR, de_DE, ja_JP, ru_RU, es_MX, es_ES, user
+    #userDefinedLocale: # Optional
+    #testCloudFile: '**/packages/**/tools/test-cloud.exe' 
+    #optionalArgs: # Optional
+    #publishNUnitResults: true # Optional
 ```
 
 ::: moniker-end

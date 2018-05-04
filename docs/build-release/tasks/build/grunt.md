@@ -63,23 +63,21 @@ The build agent must have the following capability:
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: Grunt@0
   inputs:
-#   gruntFile: gruntfile.js
-    targets:
-    arguments:
-    workingDirectory:
-#   gruntCli: node_modules/grunt-cli/bin/grunt
-#   publishJUnitResults: false
-#   testResultsFiles: **/TEST-*.xml
-    testRunTitle:
-#   enableCodeCoverage: false
-#   testFramework: Mocha # Mocha (default), Jasmine
-    srcFiles:
-#   testFiles: test/*.js
+    #gruntFile: 'gruntfile.js' 
+    #targets: # Optional
+    #arguments: # Optional
+    #workingDirectory: # Optional
+    #gruntCli: 'node_modules/grunt-cli/bin/grunt' 
+    #publishJUnitResults: false # Optional
+    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
+    #testRunTitle: # Optional
+    #enableCodeCoverage: false # Optional
+    #testFramework: 'Mocha' # Optional. Options: mocha, jasmine
+    #srcFiles: # Optional
+    #testFiles: 'test/*.js' # Required when enableCodeCoverage == True
 ```
 
 ::: moniker-end

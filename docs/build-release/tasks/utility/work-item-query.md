@@ -41,14 +41,12 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: queryWorkItems@0
   inputs:
-    queryId:
-#   maxThreshold: 0
-#   minThreshold: 0
+    queryId: 
+    #maxThreshold: '0' 
+    #minThreshold: '0' 
 ```
 
 ::: moniker-end

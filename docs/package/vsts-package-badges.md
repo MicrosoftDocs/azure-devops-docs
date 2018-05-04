@@ -1,6 +1,6 @@
 ---
-title: Share your VSTS packages with badges | Visual Studio Team Services
-description: Share your NuGet, npm, or Maven packages from VSTS with badges. 
+title: Share your VSTS packages with badges
+description: Share your NuGet, npm, or Maven packages from VSTS with badges
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.prod: devops
 ms.technology: devops-artifacts

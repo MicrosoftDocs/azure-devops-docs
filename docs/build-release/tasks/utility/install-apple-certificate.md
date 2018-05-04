@@ -42,19 +42,17 @@ xcode
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
-- task: InstallAppleCertificate@1
+- task: InstallAppleCertificate@2
   inputs:
-    certSecureFile:
-    certPwd:
-#   keychain: temp # default, temp (default), custom
-    keychainPassword:
-    customKeychainPath:
-    deleteCert:
-    deleteCustomKeychain:
-    signingIdentity:
+    certSecureFile: 
+    #certPwd: # Optional
+    #keychain: 'temp' # Options: default, temp, custom
+    #keychainPassword: # Required when keychain == Custom || Keychain == Default
+    #customKeychainPath: # Required when keychain == Custom
+    #deleteCert: # Optional
+    #deleteCustomKeychain: # Optional
+    #signingIdentity: # Optional
 ```
 
 ::: moniker-end

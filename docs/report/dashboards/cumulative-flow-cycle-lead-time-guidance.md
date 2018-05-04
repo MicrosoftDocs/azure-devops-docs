@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Process guidance to work with cumulative flow diagrams to improve your     
 ms.prod: devops  
 ms.technology: devops-analytics  
-ms.assetid:  
 ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge

@@ -35,13 +35,11 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: NuGetToolInstaller@0
   inputs:
-#   versionSpec: 4.3.0
-#   checkLatest: false
+    #versionSpec: '4.3.0' 
+    #checkLatest: false # Optional
 ```
 
 ::: moniker-end
