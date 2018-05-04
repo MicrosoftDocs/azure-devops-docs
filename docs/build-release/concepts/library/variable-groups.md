@@ -88,6 +88,9 @@ When you link to a release definition, all the variables in the group are availa
 of that definition. When you link to an environment, the variables from the variable group scoped to that
 environment and are not accessible in the other environments of the same release. 
 
+> [!NOTE]
+> Linking a variable group to a specific environment is available only on VSTS and on TFS 2018 Update 2 and later. 
+
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the definition itself](../definitions/release/variables.md#custom-variables).
 For example, to access the value of a variable named **customer** in a variable group linked to the definition,
