@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### Q: How do I get support for the Visual Studio Marketplace?
 
 A: Depending on the support you need:

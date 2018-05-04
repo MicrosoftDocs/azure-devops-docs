@@ -4,7 +4,7 @@ titleSuffix: VSTS & TFS
 description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
+ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Guidance for working with velocity charts generated for a team or project in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-analytics  
 ms.prod: devops
-ms.assetid: 
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Resolve errors that occur with an Analytics view and Power BI for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 monikerRange: 'vsts'
 ms.date: 04/04/2018

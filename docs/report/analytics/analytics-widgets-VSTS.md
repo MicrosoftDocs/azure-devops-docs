@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 11/13/2017

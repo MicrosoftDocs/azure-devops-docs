@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

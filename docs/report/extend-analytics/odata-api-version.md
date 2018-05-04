@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: How the Analytics service for Visual Studio Team Services manages changes to the OData API  
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid:  
 ms.reviewer: prprice
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 11/13/2017
 ---
