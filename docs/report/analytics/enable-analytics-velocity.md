@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
 ms.date: 11/13/2017

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Publish Maven artifacts to a feed in Package Management to share them with your team and organization.
 
 To publish a Maven artifact, you'll need to have a Maven artifact to publish on your local machine. 

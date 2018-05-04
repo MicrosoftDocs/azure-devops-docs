@@ -46,16 +46,14 @@ Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ServiceFabricPowerShell@1
   inputs:
-    clusterConnection:
-#   ScriptType: FilePath # FilePath (default), InlineScript
-    ScriptPath:
-#   Inline: # You can write your PowerShell scripts inline here. # You can also pass predefined and custom variables to this script using arguments
-    ScriptArguments:
+    clusterConnection: 
+    #scriptType: 'FilePath' # Options: filePath, inlineScript
+    #scriptPath: # Optional
+    #inline: '# You can write your PowerShell scripts inline here. # You can also pass predefined and custom variables to this script using arguments' # Optional
+    #scriptArguments: # Optional
 ```
 
 ::: moniker-end

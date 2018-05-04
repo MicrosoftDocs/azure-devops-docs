@@ -31,7 +31,8 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
-> You can also use a default variable to [run a release in debug mode](#debug-mode).
+> You can view the [current values of all variables](#view-vars) for a release,
+and use a default variable to [run a release in debug mode](#debug-mode).
 
 ## Custom variables
 
@@ -88,6 +89,7 @@ For more details, see [Approvals](approvals/index.md#scenarios).
 
 Information about the execution context is made available to running tasks through default variables. Your tasks and scripts can use these variables to find information about the system, release, environment, or agent they are running in.
 With the exception of **System.Debug**, these variables are read-only and their values are automatically set by the system.
+Some of the most significant variables are described in the following tables.
 
 ### System variables
 
@@ -184,7 +186,7 @@ With the exception of **System.Debug**, these variables are read-only and their 
 [AGENT_ID] -> [2]
 -->
 
-<h3 id="artifact-variables">Artifact variables</h3>
+<h3 id="artifact-variables">General artifact variables</h3>
 
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
@@ -246,6 +248,15 @@ you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 ![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
+
+<a name="view-vars"></a>
+
+### View the current values of all release variables
+
+In the **Logs** page of a release summary, choose the **Initialize Job** step.
+The log pane includes a list of all the variables and their values for this release.
+
+![Viewing the values of the variables in a release](_img/view-variable-values.png)
 
 <a name="debug-mode"></a>
 

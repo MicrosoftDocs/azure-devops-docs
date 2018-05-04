@@ -4,7 +4,7 @@ titleSuffix: TFS 2013
 description: Locate reports in SQL Server Reporting Services after upgrading earlier versions of Team Foundation Server to TFS 2010. 
 ms.prod: devops-server
 ms.technology: devops-analytics
-ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17

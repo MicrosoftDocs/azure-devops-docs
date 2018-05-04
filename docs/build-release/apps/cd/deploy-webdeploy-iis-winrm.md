@@ -58,6 +58,8 @@ For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
 Similarly, do not use an IP address to access the target server(s) when you use HTTP.
 Instead, in both scenarios, use HTTPS.
 
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](https://msdn.microsoft.com/en-us/library/aa384372.aspx).
+
 Follow these steps to configure each target server.
 
 1. Enable File and Printer Sharing. You can do this by executing the

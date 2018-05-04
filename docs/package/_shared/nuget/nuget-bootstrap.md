@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 * Open a PowerShell prompt and `cd` to the root directory of your app's code.
 * Get a copy of nuget.exe to use temporarily. The PowerShell command `Invoke-WebRequest https://dist.nuget.org/win-x86-commandline/latest/nuget.exe -OutFile nuget.exe` makes this easy.
 * In the PowerShell window, run the command `.\nuget.exe install -OutputDirectory packages Microsoft.VisualStudio.Services.NuGet.Bootstrap` to fetch the bootstrapping tools.

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/20/2018
+ms.date: 04/27/2018
 monikerRange: 'vsts'
 ---
 
@@ -55,7 +55,7 @@ And all users must sign in with Microsoft accounts.
 
 ## What do I need to set up an existing VSTS with Azure AD?
 
-You'll need:
+You'll need the following:
 
 * [Ownership of the VSTS account](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
 
@@ -71,15 +71,18 @@ Azure AD to your VSTS account. Learn about
   [Want to use Office 365 Azure AD with VSTS?](faq-azure-access.md#o365aad)
 
 * To add users to Azure AD, you need global administrator permissions for your directory so you can add current VSTS users to that directory.
+
 Otherwise, work with your directory's global administrator to add users.
 Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
 
   To check your permissions, [Sign in to the Azure classic portal](https://manage.windowsazure.com/) with your
   work or school account. Go to your target directory.
 
-  ![Check that you're a global administrator](_img/manage-work-access/azureadadmin.png)
+  ![Check that you're a global administrator](_img/access-with-azure-ad/check-your-role-azure-active-directory.png)
 
-* You must add your Microsoft account to your Azure AD. Although directory membership isn't required to
+* You must add your Microsoft account to your Azure AD.
+
+Although directory membership isn't required to
 connect your VSTS account to Azure AD, this will make sure that you can sign in and
 access your VSTS account after connecting to Azure AD. Otherwise, your Microsoft account will not have access to
 your VSTS account.

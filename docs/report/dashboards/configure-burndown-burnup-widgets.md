@@ -4,7 +4,6 @@ titleSuffix: VSTS
 description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Visual Studio Team Services
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
 ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

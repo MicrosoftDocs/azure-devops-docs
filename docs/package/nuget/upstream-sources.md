@@ -8,7 +8,6 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
-ms.topic: conceptual
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---

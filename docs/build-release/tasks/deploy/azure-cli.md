@@ -69,18 +69,16 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AzureCLI@1
   inputs:
-    azureSubscription:
-#   scriptLocation: scriptPath # inlineScript, scriptPath (default)
-    scriptPath:
-    inlineScript:
-    arguments:
-    workingDirectory:
-#   failOnStandardError: false
+    azureSubscription: 
+    #scriptLocation: 'scriptPath' # Options: inlineScript, scriptPath
+    #scriptPath: # Required when scriptLocation == ScriptPath
+    #inlineScript: # Required when scriptLocation == InlineScript
+    #arguments: # Optional
+    #workingDirectory: # Optional
+    #failOnStandardError: false # Optional
 ```
 
 ::: moniker-end

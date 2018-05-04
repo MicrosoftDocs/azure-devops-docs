@@ -50,23 +50,21 @@ Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powersh
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ServiceFabricComposeDeploy@0
   inputs:
-    clusterConnection:
-#   composeFilePath: **/docker-compose.yml
-#   applicationName: fabric:/Application1
-#   registryCredentials: AzureResourceManagerEndpoint # AzureResourceManagerEndpoint (default), ContainerRegistryEndpoint, UsernamePassword, None
-    dockerRegistryConnection:
-    azureSubscription:
-    registryUserName:
-    registryPassword:
-#   passwordEncrypted: True
-    deployTimeoutSec:
-    removeTimeoutSec:
-    getStatusTimeoutSec:
+    clusterConnection: 
+    #composeFilePath: '**/docker-compose.yml' 
+    #applicationName: 'fabric:/Application1' 
+    #registryCredentials: 'AzureResourceManagerEndpoint' # Options: azureResourceManagerEndpoint, containerRegistryEndpoint, usernamePassword, none
+    #dockerRegistryConnection: # Optional
+    #azureSubscription: # Required when registryCredentials == AzureResourceManagerEndpoint
+    #registryUserName: # Optional
+    #registryPassword: # Optional
+    #passwordEncrypted: # Optional
+    #deployTimeoutSec: # Optional
+    #removeTimeoutSec: # Optional
+    #getStatusTimeoutSec: # Optional
 ```
 
 ::: moniker-end
