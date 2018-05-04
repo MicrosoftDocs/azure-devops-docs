@@ -65,14 +65,12 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CmdLine@2
   inputs:
-#   script: echo Write your commands here
-    workingDirectory:
-#   failOnStderr: false
+    #script: 'echo Write your commands hereecho Use the environment variables input below to pass secret variables to this script' 
+    #workingDirectory: # Optional
+    #failOnStderr: false # Optional
 ```
 
 ::: moniker-end
