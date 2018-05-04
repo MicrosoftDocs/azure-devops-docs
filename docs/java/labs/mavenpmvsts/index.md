@@ -4,8 +4,10 @@ description: Tutorial lab for configuring packagement and building with Maven an
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2018'
 ---

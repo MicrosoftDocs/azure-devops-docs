@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >[!IMPORTANT]  
 >The Power BI.com Visual Studio Team Services (VSTS) Content Pack was deprecated on November 15, 2017. The Content Pack has been deprecated primarily due to the negative impact it has had on VSTS accounts, including throttling end users access. Existing Power BI.com datasets based on the Content Pack are unsupported and you cannot create new data sets, however existing data sets can continue to be refreshed.
 >

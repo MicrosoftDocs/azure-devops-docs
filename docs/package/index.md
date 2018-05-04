@@ -7,7 +7,7 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.date: 08/10/2016
-ms.topic: conceptual
+ms.topic: overview
 layout: LandingPage
 monikerRange: '>= tfs-2017'
 ---

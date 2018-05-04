@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 04/04/2018
 ---

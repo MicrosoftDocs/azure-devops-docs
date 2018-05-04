@@ -4,7 +4,6 @@ titleSuffix: VSTS & TFS
 description: Track team velocity across several sprints using the work tracking datastore velocity chart in Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-analytics  
 ms.prod: devops
-ms.assetid: 
 ms.topic: tutorial
 ms.reviewer: greggboe
 ms.manager: douge

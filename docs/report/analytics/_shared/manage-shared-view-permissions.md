@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 <a id="manage-permissions" />
 
