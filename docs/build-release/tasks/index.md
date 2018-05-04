@@ -89,6 +89,7 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 | ---- | -------- |
+| ![icon](package/_img/conda.png) [Conda Environment](package/conda-environment.md). Create and activate a Conda environment | VSTS |
 | ![icon](package/_img/cocoapods.png) [CocoaPods](package/cocoapods.md). CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install | VSTS, TFS 2015 RTM and newer |
 | ![icon](package/_img/npm.png) [npm](package/npm-install.md). Install npm packages | VSTS, TFS 2015 RTM and newer |
 | ![icon](package/_img/nuget-installer.png) [NuGet Installer](package/nuget-installer.md). Installs and updates missing NuGet packages | VSTS, TFS 2015 RTM and newer |
