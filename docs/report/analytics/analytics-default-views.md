@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Filtered set of data based on the Analytics Service for VSTS which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 04/04/2018

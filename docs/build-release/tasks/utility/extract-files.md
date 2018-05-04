@@ -64,14 +64,12 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ExtractFiles@1
   inputs:
-#   archiveFilePatterns: *.zip
-    destinationFolder:
-#   cleanDestinationFolder: true
+    #archiveFilePatterns: '*.zip' 
+    destinationFolder: 
+    #cleanDestinationFolder: true 
 ```
 
 ::: moniker-end

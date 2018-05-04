@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 To consume NuGet packages from a feed, add the feed's NuGet endpoint as a package source in Visual Studio.
 
 [!INCLUDE [Package Management and Visual Studio 2015](vs2015.md)]

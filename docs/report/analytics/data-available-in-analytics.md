@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Data available for reporting purposes using the Analytics Service for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: greggboe   
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 04/04/2018

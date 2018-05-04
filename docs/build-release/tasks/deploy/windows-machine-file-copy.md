@@ -43,19 +43,17 @@ command-line utility built for fast copying of data.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: WindowsMachineFileCopy@2
   inputs:
-    SourcePath:
-    MachineNames:
-    AdminUserName:
-    AdminPassword:
-    TargetPath:
-#   CleanTargetBeforeCopy: false
-#   CopyFilesInParallel: true
-    AdditionalArguments:
+    sourcePath: 
+    #machineNames: # Optional
+    #adminUserName: # Optional
+    #adminPassword: # Optional
+    targetPath: 
+    #cleanTargetBeforeCopy: false # Optional
+    #copyFilesInParallel: true # Optional
+    #additionalArguments: # Optional
 ```
 
 ::: moniker-end

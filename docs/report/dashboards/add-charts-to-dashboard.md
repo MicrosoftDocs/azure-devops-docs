@@ -4,7 +4,7 @@ titleSuffix: VSTS & TFS
 description: Add system-generated charts or query-based charts to a team dashboard in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'

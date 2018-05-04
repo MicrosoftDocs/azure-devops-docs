@@ -51,18 +51,16 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: InvokeRESTAPI@1
   inputs:
-    serviceConnection:
-#   method: POST # OPTIONS, GET, HEAD, POST (default), PUT, DELETE, TRACE, PATCH
-#   headers: {Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}
-    body:
-    urlSuffix:
-#   waitForCompletion: false # true, false (default)
-    successCriteria:
+    serviceConnection: 
+    #method: 'POST' # Options: oPTIONS, gET, hEAD, pOST, pUT, dELETE, tRACE, pATCH
+    #headers: '{Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
+    #body: # Required when method != GET && Method != HEAD
+    #urlSuffix: # Optional
+    #waitForCompletion: 'false' # Options: true, false
+    #successCriteria: # Optional
 ```
 
 ::: moniker-end

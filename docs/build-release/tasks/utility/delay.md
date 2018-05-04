@@ -36,12 +36,10 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: Delay@1
   inputs:
-#   delayForMinutes: 0
+    #delayForMinutes: '0' 
 ```
 
 ::: moniker-end
