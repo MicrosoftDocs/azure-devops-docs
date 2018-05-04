@@ -234,7 +234,7 @@ resources that are not in your template. By default,
 
 ![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
 
-See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment).
+See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
 <a name="oct12-clitask"></a>
 **Azure CLI task**
