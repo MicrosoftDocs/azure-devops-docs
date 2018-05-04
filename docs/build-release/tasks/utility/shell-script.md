@@ -1,5 +1,5 @@
 ---
-title: Shell script
+title: Shell Script
 description: How to execute a bash script when building code in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Utility: Shell script
+# Utility: Shell Script
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
