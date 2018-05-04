@@ -3,7 +3,6 @@ title: Permissions and access for charts and dashboards
 description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and TFS)
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

@@ -4,6 +4,7 @@ description: Change a process control setting for the data warehouse or analysis
 ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A  
 ms.prod: devops-server
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017

@@ -435,42 +435,42 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: NuGetCommand@2
   inputs:
-#   command: restore # restore (default), pack, push, custom
-#   restoreSolution: **/*.sln
-#   feedsToUse: select # select (default), config
-    vstsFeed:
-#   includeNuGetOrg: true
-    nugetConfigPath:
-    externalFeedCredentials:
-#   noCache: false
-    restoreDirectory:
-#   verbosityRestore: Detailed # Quiet, Normal, Detailed (default)
-#   packagesToPush: $(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg
-#   nuGetFeedType: internal # internal (default), external
-    publishVstsFeed:
-#   allowPackageConflicts: False
-    publishFeedCredentials:
-#   verbosityPush: Detailed # Quiet, Normal, Detailed (default)
-#   packagesToPack: **/*.csproj
-#   configuration: $(BuildConfiguration)
-#   packDestination: $(Build.ArtifactStagingDirectory)
-#   versioningScheme: off # off (default), byPrereleaseNumber, byEnvVar, byBuildNumber
-#   includeReferencedProjects: false
-    versionEnvVar:
-#   majorVersion: 1
-#   minorVersion: 0
-#   patchVersion: 0
-#   packTimezone: utc # utc (default), local
-#   includeSymbols: false
-#   toolPackage: False
-    buildProperties:
-#   verbosityPack: Detailed # Quiet, Normal, Detailed (default)
-    arguments:
+    #command: 'restore' # Options: restore, pack, push, custom
+    #restoreSolution: '**/*.sln' # Required when command == Restore
+    #feedsToUse: 'select' # Options: select, config
+    #vstsFeed: # Required when feedsToUse == Select
+    #includeNuGetOrg: true # Required when feedsToUse == Select
+    #nugetConfigPath: # Required when feedsToUse == Config
+    #externalFeedCredentials: # Optional
+    #noCache: false 
+    #disableParallelProcessing: false 
+    #restoreDirectory: # Optional
+    #verbosityRestore: 'Detailed' # Options: quiet, normal, detailed
+    #packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg' # Required when command == Push
+    #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
+    #publishVstsFeed: # Required when command == Push && NuGetFeedType == Internal
+    #allowPackageConflicts: # Optional
+    #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
+    #verbosityPush: 'Detailed' # Options: quiet, normal, detailed
+    #packagesToPack: '**/*.csproj' # Required when command == Pack
+    #configuration: '$(BuildConfiguration)' # Optional
+    #packDestination: '$(Build.ArtifactStagingDirectory)' # Optional
+    #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
+    #includeReferencedProjects: false # Optional
+    #versionEnvVar: # Required when versioningScheme == ByEnvVar
+    #majorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber
+    #minorVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
+    #patchVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
+    #packTimezone: 'utc' # Required when versioningScheme == ByPrereleaseNumber# Options: utc, local
+    #includeSymbols: false # Optional
+    #toolPackage: # Optional
+    #buildProperties: # Optional
+    #basePath: # Optional
+    #verbosityPack: 'Detailed' # Options: quiet, normal, detailed
+    #arguments: # Required when command == Custom
 ```
 
 ::: moniker-end

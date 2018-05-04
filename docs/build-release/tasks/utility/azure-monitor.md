@@ -43,16 +43,14 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AzureMonitor@0
   inputs:
-    connectedServiceNameARM:
-    ResourceGroupName:
-#   ResourceType: Microsoft.Insights/components # Microsoft.Insights/components (default), Microsoft.Web/sites, Microsoft.Storage/storageAccounts, Microsoft.Compute/virtualMachines
-    resourceName:
-    alertRules:
+    connectedServiceNameARM: 
+    resourceGroupName: 
+    #resourceType: 'Microsoft.Insights/components' # Options: microsoft.Insights/Components, microsoft.Web/Sites, microsoft.Storage/StorageAccounts, microsoft.Compute/VirtualMachines
+    resourceName: 
+    alertRules: 
 ```
 
 ::: moniker-end

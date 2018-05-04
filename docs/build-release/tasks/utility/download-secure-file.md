@@ -40,12 +40,10 @@ Note that if you use two Download Secure File tasks in the same definition with 
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: DownloadSecureFile@1
   inputs:
-    secureFile:
+    secureFile: 
 ```
 
 ::: moniker-end

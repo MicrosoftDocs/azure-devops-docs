@@ -5,7 +5,6 @@ description: Index to topics for integrating or removing integration with ShareP
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: overview
-ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE

@@ -224,40 +224,38 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
-- task: Xcode@4
+- task: Xcode@5
   inputs:
-#   actions: build
-#   configuration: $(Configuration)
-#   sdk: $(SDK)
-#   xcWorkspacePath: **/*.xcodeproj/project.xcworkspace
-    scheme:
-#   xcodeVersion: default # default (default), 8, 9, specifyPath
-    xcodeDeveloperDir:
-#   packageApp: False
-    archivePath:
-#   exportPath: output/$(SDK)/$(Configuration)
-#   exportOptions: auto # auto (default), plist, specify
-#   exportMethod: development
-    exportTeamId:
-    exportOptionsPlist:
-    exportArgs:
-#   signingOption: nosign # nosign (default), default, manual, auto
-    signingIdentity:
-    provisioningProfileUuid:
-    teamId:
-#   destinationPlatformOption: default # default (default), iOS, tvOS, macOS, custom
-    destinationPlatform:
-#   destinationTypeOption: simulators # simulators (default), devices
-#   destinationSimulators: iPhone 7
-    destinationDevices:
-    args:
-    workingDirectory:
-    outputPattern:
-#   useXcpretty: False
-#   publishJUnitResults: False
+    #actions: 'build' 
+    #configuration: '$(Configuration)' # Optional
+    #sdk: '$(SDK)' # Optional
+    #xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace' # Optional
+    #scheme: # Optional
+    #xcodeVersion: 'default' # Optional. Options: 8, 9, default, specifyPath
+    #xcodeDeveloperDir: # Optional
+    #packageApp: false
+    #archivePath: # Optional
+    #exportPath: 'output/$(SDK)/$(Configuration)' # Optional
+    #exportOptions: 'auto' # Optional. Options: auto, plist, specify
+    #exportMethod: 'development' # Required when exportOptions == Specify
+    #exportTeamId: # Optional
+    #exportOptionsPlist: # Required when exportOptions == Plist
+    #exportArgs: # Optional
+    #signingOption: 'nosign' # Optional. Options: nosign, default, manual, auto
+    #signingIdentity: # Optional
+    #provisioningProfileUuid: # Optional
+    #provisioningProfileName: # Optional
+    #teamId: # Optional
+    #destinationPlatformOption: 'default' # Optional. Options: default, iOS, tvOS, macOS, custom
+    #destinationPlatform: # Optional
+    #destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
+    #destinationSimulators: 'iPhone 7' # Optional
+    #destinationDevices: # Optional
+    #args: # Optional
+    #workingDirectory: # Optional
+    #useXcpretty: # Optional
+    #publishJUnitResults: # Optional
 ```
 
 ::: moniker-end

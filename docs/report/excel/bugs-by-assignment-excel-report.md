@@ -10,6 +10,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
+
 # Bugs by Assignment Excel Report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]

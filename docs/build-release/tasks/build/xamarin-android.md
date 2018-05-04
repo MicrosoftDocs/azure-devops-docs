@@ -101,26 +101,24 @@ Select x86 or x64.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: XamarinAndroid@1
   inputs:
-#   projectFile: **/*.csproj
-    target:
-    outputDirectory:
-    configuration:
-#   createAppPackage: true
-#   clean: false
-#   msbuildLocationOption: version # version (default), location
-#   msbuildVersionOption: 15.0 # latest, 15.0 (default), 14.0, 12.0, 4.0
-    msbuildFile:
-#   msbuildArchitectureOption: x86 # x86 (default), x64
-    msbuildArguments:
-#   jdkOption: JDKVersion # JDKVersion (default), Path
-#   jdkVersionOption: default # default (default), 1.9, 1.8, 1.7, 1.6
-    jdkDirectory:
-#   jdkArchitectureOption: x64 # x86, x64 (default)
+    #projectFile: '**/*.csproj' 
+    #target: # Optional
+    #outputDirectory: # Optional
+    #configuration: # Optional
+    #createAppPackage: true # Optional
+    #clean: false # Optional
+    #msbuildLocationOption: 'version' # Optional. Options: version, location
+    #msbuildVersionOption: '15.0' # Optional. Options: latest, 15.0, 14.0, 12.0, 4.0
+    #msbuildFile: # Required when msbuildLocationOption == Location
+    #msbuildArchitectureOption: 'x86' # Optional. Options: x86, x64
+    #msbuildArguments: # Optional
+    #jdkOption: 'JDKVersion' # Options: jDKVersion, path
+    #jdkVersionOption: 'default' # Optional. Options: default, 1.10, 1.9, 1.8, 1.7, 1.6
+    #jdkDirectory: # Required when jdkOption == Path
+    #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
 ```
 
 ::: moniker-end

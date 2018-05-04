@@ -8,6 +8,7 @@ ms.technology: devops-analytics
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 2/8/2018

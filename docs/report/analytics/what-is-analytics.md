@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Understand how you can use the Analytics Service to answer quantitative questions about your projects in Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: greggboe
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 monikerRange: 'vsts'
 ms.date: 04/04/2018

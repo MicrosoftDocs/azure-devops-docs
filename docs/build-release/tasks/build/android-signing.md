@@ -111,20 +111,18 @@ Enter the key password for the alias and keystore file.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AndroidSigning@2
   inputs:
-#   apkFiles: **/*.apk
-#   jarsign: true
-    jarsignerKeystoreFile:
-    jarsignerKeystorePassword:
-    jarsignerKeystoreAlias:
-    jarsignerKeyPassword:
-#   jarsignerArguments: -verbose -sigalg MD5withRSA -digestalg SHA1
-#   zipalign: true
-    zipalignFile:
+    #apkFiles: '**/*.apk' 
+    #jarsign: true # Optional
+    #jarsignerKeystoreFile: # Required when jarsign == True
+    #jarsignerKeystorePassword: # Optional
+    #jarsignerKeystoreAlias: # Optional
+    #jarsignerKeyPassword: # Optional
+    #jarsignerArguments: '-verbose -sigalg MD5withRSA -digestalg SHA1' # Optional
+    #zipalign: true # Optional
+    #zipalignFile: # Optional
 ```
 
 ::: moniker-end
