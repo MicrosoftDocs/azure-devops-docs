@@ -488,7 +488,9 @@
     - name: Copy Files Over SSH
       href: tasks/deploy/copy-files-over-ssh.md
     - name: Docker
-      href: tasks/deploy/docker.md
+      href: tasks/build/Docker.0.md
+    - name: Docker Compose
+      href: tasks/build/DockerCompose.0.md
     - name: Helm Deploy
       href: tasks/deploy/HelmDeploy.0.md
     - name: IIS Web App Deployment on Machine Group
