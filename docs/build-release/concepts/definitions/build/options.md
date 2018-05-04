@@ -28,7 +28,7 @@ Here we explain settings you can change on the build definition **Options** tab.
 
 > **Team Foundation Server (TFS) 2017 Update 1 and older**
 >
-> This section is available under <b>General<b> tab.  
+> This section is available under <b>General<b> tab.
 
 If you specify a description here, it is shown near the name of the build definition when you select it in the Build area of your team project.
 
@@ -36,7 +36,7 @@ If you specify a description here, it is shown near the name of the build defini
 
 If you leave it blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
-### Example  
+### Example
 
 At the time the build is queued:
 
@@ -104,12 +104,12 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. When the **Show url** link appears, click it and copy the URL to your clipboard.
 
-0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}/>```
+0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}"/>```
 
 
 ## Create a work item on failure
 
-If the build process fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type. 
+If the build process fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
 
 You can also select if you want to assign the work item to the requestor. For example, if this is a CI build, and a team member checks in some code that breaks the build, then the work item is assigned to that person.
 
