@@ -3,7 +3,7 @@ title: Install and license Package Management for VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.topic: conceptual
+ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: douge
 ms.author: elbatk

@@ -54,13 +54,11 @@ Arguments that you want to pass to CMake.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CMake@1
   inputs:
-#   workingDirectory: build
-    cmakeArgs:
+    #workingDirectory: 'build' # Optional
+    #cmakeArgs: # Optional
 ```
 
 ::: moniker-end

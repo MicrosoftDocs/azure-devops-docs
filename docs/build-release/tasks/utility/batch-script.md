@@ -62,16 +62,14 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: BatchScript@1
   inputs:
-    filename:
-    arguments:
-#   modifyEnvironment: False
-    workingFolder:
-#   failOnStandardError: false
+    filename: 
+    #arguments: # Optional
+    #modifyEnvironment: False # Optional
+    #workingFolder: # Optional
+    #failOnStandardError: false # Optional
 ```
 
 ::: moniker-end

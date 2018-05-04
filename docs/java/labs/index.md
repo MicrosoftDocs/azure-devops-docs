@@ -4,9 +4,10 @@ description: DevOps with Visual Studio Team Services for Java - Hands-on-Labs
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.assetid:  
+ms.custom: java
 ms.manager: douge
-ms.author:  
+ms.author: douge 
+author: erickson-doug
 ms.date: 01/25/2018
 monikerRange: '>= tfs-2017'
 ---

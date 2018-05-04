@@ -66,16 +66,14 @@ Select if you want this step to fail if any errors are written to the StandardEr
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ShellScript@2
   inputs:
     scriptPath:
-    args:
-#   disableAutoCwd: false
-    cwd:
-#   failOnStandardError: false
+    #args: '' # Optional
+    #disableAutoCwd: false # Optional
+    #cwd: '' # Optional
+    #failOnStandardError: false
 ```
 
 ::: moniker-end

@@ -1,6 +1,7 @@
+---
+ms.topic: include
+---
 
-
- 
 <a id="image-diff"></a>  
 
 >[!NOTE]  

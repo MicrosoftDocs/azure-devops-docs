@@ -4,8 +4,10 @@ description: Tutorial lab for an end-to-end Eclipse workflow with Visual Studio 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---

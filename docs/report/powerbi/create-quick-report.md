@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Quick start helping users to create a trend report using an Anlytics view
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 04/04/2018
 ---

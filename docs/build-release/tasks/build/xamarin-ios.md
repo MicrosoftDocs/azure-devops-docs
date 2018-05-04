@@ -124,30 +124,20 @@ Working directory for the build. If you leave it blank, it is the root of the re
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
-- task: XamariniOS@1
+- task: XamariniOS@2
   inputs:
-#   solutionFile: **/*.sln
-#   configuration: Release
-#   clean: false
-#   packageApp: True
-#   buildForSimulator: false
-#   runNugetRestore: true
-    args:
-    workingDirectory:
-#   buildToolOption: xbuild # xbuild (default), msbuild
-    mdtoolFile:
-#   signingOption: file # file (default), id
-    signingIdentity:
-#   signingUnlockDefaultKeychain: False
-    signingDefaultKeychainPassword:
-    signingProvisioningProfileID:
-    signingP12File:
-    signingP12Password:
-    signingProvisioningProfileFile:
-#   signingRemoveProfile: False
+    #solutionFile: '**/*.sln' 
+    #configuration: 'Release' 
+    #clean: false # Optional
+    packageApp: 
+    #buildForSimulator: false # Optional
+    #runNugetRestore: false 
+    #args: # Optional
+    #workingDirectory: # Optional
+    #mdtoolFile: # Optional
+    #signingIdentity: # Optional
+    #signingProvisioningProfileID: # Optional
 ```
 
 ::: moniker-end

@@ -11,7 +11,6 @@ ms.date: 4/2/2018
 monikerRange: 'vsts'
 ---
 
-
 # Tool: Use Python Version
 
 **VSTS**
@@ -43,14 +42,12 @@ If the task completes successfully, the task's output variable will contain the 
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '>= 3.5'
-#   addToPath: false
-#   architecture: x86 # x86, x64 (default)
+    #versionSpec: '>= 3.3' 
+    #addToPath: true 
+    #architecture: 'x64' # Options: x86, x64
 ```
 
 ::: moniker-end
