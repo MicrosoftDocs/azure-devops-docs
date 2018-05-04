@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot access with Azure Active Directory (Azure AD)
+title: Troubleshoot permissions and access with Azure Active Directory (Azure AD)
 description: Need to understand Azure AD groups or how to add users or connect or disconnect to and from your directory? Read these frequently asked questions (FAQs)
 ms.prod: devops
 ms.technology: devops-accounts

@@ -5,6 +5,7 @@ description: Describes the available functions that the Power BI Data Connector 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
@@ -15,7 +16,7 @@ ms.date: 2/14/2018
 
 # Connect using Power Query and Visual Studio Team Services (VSTS) functions 
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Data Connector for VSTS includes Power Query M functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. This topic will describe the arguments for the functions and how to use them to connect to Analytics. 
 
@@ -93,6 +94,7 @@ This will also inform Power BI that these requests are referencing the same data
 </table>
 
 ### Examples for VSTS.Feed
+
 Use `VSTS.Feed` function to count the number of work items in a project.
 
 1. Create a new blank query and click on "Advanced Editor" in the Power BI Query Editor.
@@ -169,9 +171,11 @@ in
 ```
 
 ## VSTS.Contents
+
 VSTS.Contents is being deprecated and will be removed in an upcoming release. Please use VSTS.AccountContents.  
 
-## VSTS.AccountContents 
+## VSTS.AccountContents
+
 Advanced function which returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.
 
 The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
@@ -240,5 +244,6 @@ This will also inform Power BI that these requests are referencing the same data
 </table>
 
 ## Related articles
+
 * [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)
 * [Power Query (M) Formula Reference - Accessing data functions](https://msdn.microsoft.com/library/mt296615.aspx)

@@ -2928,12 +2928,12 @@
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-powershell.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/deploy/azure-resource-group-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2",
             "redirect_document_id": false
         },
         {

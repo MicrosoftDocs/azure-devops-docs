@@ -4,7 +4,6 @@ titleSuffix: TFS
 description: Configure TFS/SharePoint Integration for TFS 2017 and earlier versions
 ms.prod: devops-server
 ms.technology: devops-analytics
-ms.assetid:
 ms.topic: conceptual 
 ms.manager: douge
 ms.reviewer: greggboe

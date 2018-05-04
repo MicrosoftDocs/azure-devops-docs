@@ -4,6 +4,7 @@ description: Add a report server and upload reports to a team project hosted on 
 ms.assetid: 17C16BE3-6F7D-466F-A3D9-402C79D53768  
 ms.prod: devops-server
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017

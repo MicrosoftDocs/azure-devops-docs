@@ -49,20 +49,18 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CloudLoadTest@1
   inputs:
     connectedServiceName:
-#   TestDrop: $(System.DefaultWorkingDirectory)
+    #TestDrop: $(System.DefaultWorkingDirectory)
     LoadTest:
-#   activeRunSettings: useFile # useFile (default), changeActive
+    #activeRunSettings: useFile # useFile (default), changeActive
     runSettingName:
     testContextParameters:
     TestSettings:
     ThresholdLimit:
-#   MachineType: 0 # 0 (default), 2
+    #MachineType: 0 # 0 (default), 2
 ```
 
 ::: moniker-end

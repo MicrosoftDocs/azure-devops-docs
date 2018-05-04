@@ -5,6 +5,7 @@ description: Manually process the data warehouse and analysis services cube when
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
 ms.prod: devops-server
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 03/14/2018

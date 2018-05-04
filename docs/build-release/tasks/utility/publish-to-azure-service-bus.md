@@ -38,17 +38,15 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishToAzureServiceBus@1
   inputs:
-    azureSubscription:
-    messageBody:
-#   signPayload: false
-    certificateString:
-    signatureKey:
-#   waitForCompletion: false
+    azureSubscription: 
+    #messageBody: # Optional
+    #signPayload: false 
+    #certificateString: # Required when signPayload == True
+    #signatureKey: 'signature' # Optional
+    #waitForCompletion: false 
 ```
 
 ::: moniker-end

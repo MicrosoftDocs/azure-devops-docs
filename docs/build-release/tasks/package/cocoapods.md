@@ -47,14 +47,12 @@ Working directory. If you leave it blank, the working directory is the root of y
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CocoaPods@0
   inputs:
-    workingDirectory:
-#   forceRepoUpdate: False
-    projectDirectory:
+    #workingDirectory: # Optional
+    #forceRepoUpdate: false
+    #projectDirectory: # Optional
 ```
 
 ::: moniker-end
