@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/02/2018
+ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 # Restore your VSTS account
@@ -19,31 +19,33 @@ Your account will be disabled but available for 30 days after you delete it.
 If you change your mind during this time, you can recover your account.
 After 30 days, your account and data are permanently deleted.
 
-You'll need VSTS account owner permissions to restore your VSTS account.
-[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
+## Prerequisites
 
-1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
+* You need to have an account that has been deleted within the last 30 days.
+* You'll need VSTS account owner permissions to restore your VSTS account. [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-account.md#ChooseOrgAcctMSAcct)
+1.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-2. Restore your account.
+	[Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-account.md#ChooseOrgAcctMSAcct)
 
-   ![Next to your deleted account, click Restore](_img/delete-account/restore-account.png)
+2.  Go to the "Accounts Pending Deletion" section at the bottom of your profile page. There you will see a link to restore your account.
 
-   * If your account URL is still available, you can restore it.
+3. Choose **Restore**.
 
-      ![Confirm restoring your account](_img/delete-account/restore-confirm.png)
+	*	If your account URL is still available, you can restore it.
 
-   * If your account URL isn't available, provide a new URL.
+    ![Confirm restoring your account](_img/delete-account/restore-confirm.png)
 
-       ![Rename your deleted account](_img/delete-account/rename-deleted-account.png)
+	*	If your account URL isn't available, provide a new URL.
 
-3.  After you restore your account:
+      ![Rename your deleted account](_img/delete-account/rename-deleted-account.png)
 
-    * If billing was set up for your account, you'll have to set it up again. Just [relink your account](../billing/set-up-billing-for-your-account-vs.md) to an Azure subscription.
+4.  After you restore your account:
 
-    * If your account was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
+    *	If billing was set up for your account, you'll have to set it up again. Just [relink your account](../billing/set-up-billing-for-your-account-vs.md) to an Azure subscription.
 
-   [Need help?](faq-delete-restore-vsts-account.md#get-support)
+    *   If your account was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
+
+    [Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 
