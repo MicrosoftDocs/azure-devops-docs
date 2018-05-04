@@ -111,22 +111,20 @@ Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ServiceFabricUpdateManifests@2
   inputs:
-#   updateType: Manifest versions # Manifest versions (default), Docker image settings
-    applicationPackagePath:
-#   versionSuffix: .$(Build.BuildNumber)
-#   versionBehavior: Append # Append (default), Replace
-#   updateOnlyChanged: false
-    pkgArtifactName:
-#   logAllChanges: true
-#   compareType: LastSuccessful # LastSuccessful (default), Specific
-    buildNumber:
-#   overwriteExistingPkgArtifact: true
-    imageDigestsPath:
+    #updateType: 'Manifest versions' # Options: manifest Versions, docker Image Settings
+    applicationPackagePath: 
+    #versionSuffix: '.$(Build.BuildNumber)' # Required when updateType == Manifest Versions
+    #versionBehavior: 'Append' # Optional. Options: append, replace
+    #updateOnlyChanged: false # Required when updateType == Manifest Versions
+    #pkgArtifactName: # Optional
+    #logAllChanges: true # Optional
+    #compareType: 'LastSuccessful' # Optional. Options: lastSuccessful, specific
+    #buildNumber: # Optional
+    #overwriteExistingPkgArtifact: true # Optional
+    #imageDigestsPath: # Required when updateType == Docker Image Settings
 ```
 
 ::: moniker-end

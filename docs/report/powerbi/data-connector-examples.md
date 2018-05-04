@@ -5,6 +5,7 @@ description: Guidance on developing reports based on examples when using the Pow
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli

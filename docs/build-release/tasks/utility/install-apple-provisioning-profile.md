@@ -42,15 +42,13 @@ xcode
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: InstallAppleProvisioningProfile@1
   inputs:
-#   provisioningProfileLocation: secureFiles # secureFiles (default), sourceRepository
-    provProfileSecureFile:
-    provProfileSourceRepository:
-#   removeProfile: True
+    #provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
+    #provProfileSecureFile: # Required when provisioningProfileLocation == SecureFiles
+    #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
+    #removeProfile: # Optional
 ```
 
 ::: moniker-end

@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 11/13/2017
