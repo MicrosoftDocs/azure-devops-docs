@@ -42,17 +42,15 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish:
-    ArtifactName:
-    publishLocation:  # Container, FilePath
-#   TargetPath: \\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)
-#   Parallel: false
-#   ParallelCount: 8
+    #pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    #artifactName: 'drop' 
+    #publishLocation: 'Container' # Options: container, filePath
+    #targetPath: # Required when publishLocation == FilePath
+    #parallel: false # Optional
+    #parallelCount: # Optional
 ```
 
 ::: moniker-end

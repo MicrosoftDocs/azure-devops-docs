@@ -459,14 +459,18 @@
       href: tasks/deploy/windows-machine-file-copy.md
   - name: Tool tasks
     items:
-    - name: .NET Core Tool Installer
-      href: tasks/tool/net-core-installer.md
     - name: Go Tool Installer
       href: tasks/tool/go-install.md
-    - name: Node Tool Installer
-      href: tasks/tool/node-js.md
     - name: Java Tool Installer
       href: tasks/tool/java-tool-installer.md
+    - name: .NET Core Tool Installer
+      href: tasks/tool/net-core-installer.md
+    - name: Node Tool Installer
+      href: tasks/tool/node-js.md
+    - name: Use Python Version
+      href: tasks/tool/use-python-version.md
+    - name: Use Ruby Version
+      href: tasks/tool/use-ruby-version.md
     - name: VS Test Platform Installer
       href: tasks/tool/visual-studio-installer.md
   - name: File matching patterns

@@ -8,10 +8,9 @@ ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/18/2016
+ms.date: 05/03/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Build and release tasks
 
@@ -35,8 +34,8 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/msbuild.png) [MSBuild](build/msbuild.md). Build with MSBuild | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/net-core-cli.png) [.NET Core CLI](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreCLI). Build, test, and publish using the .NET Core command line  | VSTS, TFS 2018 |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on VSTS and newer versions of TFS. |
-| [SonarQube for MSBuild - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | VSTS, TFS 2015.3 and newer |
-| [SonarQube for MSBuild - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | VSTS, TFS 2015.3 and newer |
+| [SonarQube - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | VSTS, TFS 2015.3 and newer |
+| [SonarQube - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | VSTS, TFS 2015.3 and newer |
 | ![icon](build/_img/visual-studio-build.png) [Visual Studio Build](build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-android.png) [Xamarin.Android](build/xamarin-android.md). Build an Android app with Xamarin | VSTS, TFS 2015 RTM and newer |
 | ![icon](build/_img/xamarin-ios.png) [Xamarin.iOS](build/xamarin-ios.md). Build an iOS app with Xamarin on macOS | VSTS, TFS 2015 RTM and newer |
@@ -48,8 +47,8 @@ monikerRange: '>= tfs-2015'
 | Task | Versions |
 | ---- | -------- |
 | ![icon](utility/_img/archive-files.png) [Archive Files](utility/archive-files.md). Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip. | VSTS, TFS 2017 and newer |
-| ![icon](utility/_img/azure-function.png) [Azure function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | VSTS |
-| ![icon](utility/_img/azure-monitor.png) [Azure monitor](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
+| ![icon](utility/_img/azure-function.png) [Azure Function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | VSTS |
+| ![icon](utility/_img/azure-monitor.png) [Azure Monitor](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
 | ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the environment | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/command-line.png) [Command Line](utility/command-line.md). Run a command line with arguments | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/copy-and-publish-build-artifacts.png) [Copy and Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on VSTS and newer versions of TFS. |
@@ -63,7 +62,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/xcode.png) [Install Apple Certificate](utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | VSTS, TFS 2018 |
 | ![icon](build/_img/xcode.png) [Install Apple Provisioning Profile](utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | VSTS, TFS 2018 |
 | ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | VSTS |
-| ![icon](utility/_img/manual-intervention.png) [Manual intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps. | VSTS |
+| ![icon](utility/_img/manual-intervention.png) [Manual Intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps. | VSTS |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | VSTS, TFS 2015.3 and newer |
 | ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | VSTS |
@@ -123,11 +122,12 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 |------|----------|
-| ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
 | ![icon](tool/_img/go.png) [Go Tool Installer](tool/go-install.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | VSTS |
-| ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/java.png) [Java Tool Installer](tool/java-tool-installer.md). Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks. | VSTS |
+| ![icon](tool/_img/net-core-tool-installer.png) [.NET Core Tool Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/DotNetCoreInstaller). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | VSTS, TFS 2018 |
+| ![icon](tool/_img/node.png) [Node Tool Installer](tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | VSTS |
 | ![icon](tool/_img/python.png) [Use Python Version](tool/use-python-version.md). Selects a version of Python to run on an agent.  Optionally adds it to PATH. | VSTS |
+| ![icon](tool/_img/ruby.png) [Use Ruby Version](tool/use-ruby-version.md). Selects a version of Ruby to run on an agent.  Optionally adds it to PATH. | VSTS |
 | ![icon](tool/_img/visual-studio-installer.png) [Visual Studio Test Platform Installer](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VsTestPlatformToolInstaller). Acquires the Visual Studio Test Platform from nuget.org or the tools cache. | VSTS |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
