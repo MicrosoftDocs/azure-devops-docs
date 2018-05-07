@@ -90,6 +90,10 @@
     href: actions/azure-devops-project-vms.md
   - name: Azure DevOps Project with SQL Database
     href: actions/azure-devops-project-sqldb.md
+  - name: Azure DevOps Project with AKS
+    href: actions/azure-devops-project-aks.md
+  - name: Azure DevOps Project with Service Fabric
+    href: actions/azure-devops-project-servicefabric.md
   - name: Jenkins CI for VSTS Azure CD
     href: actions/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS
