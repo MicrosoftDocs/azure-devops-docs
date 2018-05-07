@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 4/16/2018
+ms.date: 5/7/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -93,6 +93,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
+            <td>Query for empty rich text fields</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Build Ruby apps based on a variety of Ruby versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build, test, and publish Python apps based on a variety of Python versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build Java apps on hosted agents with Java 10</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Leverage improved Xcode build and test output from xcpretty</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Progressively expose and phase deployments using release gates</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Deploy to Azure SQL Database using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Release hybrid applications to Azure Stack</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Control Helm version used in Release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Follow packages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Control who can pull packages from upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Change feed settings without having to manually save</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage test plans using the new Test Plans hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Fix broken links when moving pages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
             <td rowspan="15">[16 Apr 2018](2018/apr-16-vsts.md)</td>
             <td>Find phrases and code with special characters faster</td><td style="background:rgb(232, 232, 232);">*2019*</td>
