@@ -32,6 +32,8 @@
     href: /vsts/build-release/actions/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: CI builds for Git in VSTS
     href: /vsts/build-release/actions/ci-build-git?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+  - name: Deploy apps to Azure App Service with VSTS and CI/CD
+    href: https://docs.microsoft.com/learn/deploy-apps-to-azure/index
 - name: Resources
    - name: Deploy apps to Azure App Service with VSTS and CI/CD 
      href: https://docs.microsoft.com/learn/deploy-apps-to-azure/index 
