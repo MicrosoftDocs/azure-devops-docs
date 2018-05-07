@@ -1,0 +1,94 @@
+- name: Codex Agile Backlogs
+  href: index.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
+- name: Overview
+  items:
+  - name: "Backlogs, boards, & plans"
+    href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: About teams and Codex Agile tools
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: Quickstarts
+  items:
+  - name: Create your backlog
+    href: ../backlogs/create-your-backlog.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: Tutorials
+  items:
+  - name: "Define features & epics"
+    href: ../backlogs/define-features-epics.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Organize your backlog (map or reparent)
+    href: ../backlogs/organize-backlog.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Link work items
+    href: ../backlogs/add-link.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: Concepts
+  items:
+  - name: Groom your backlog
+    href: ../backlogs/best-practices-product-backlog.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: "Backlog items & multi-team ownership"
+    href: ../backlogs/work-multi-team-ownership-backlogs.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Backlog priority or stack rank order
+    href: ../backlogs/stack-rank-backlog-position.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: "Workflow states & state categories"
+    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Work in Excel or Project
+    href: ../backlogs/office/track-work-vsts-tfs.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Schedule projects using Project
+    href: ../backlogs/office/schedule-projects-using-microsoft-project.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Agile glossary
+    href: ../work-items/agile-glossary.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: How-to Guides
+  items:
+  - name: "Filter backlogs & queries"
+    href: ../backlogs/filter-backlogs.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Copy list
+    href: ../backlogs/copy-list.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json  
+  - name: Change column options
+    href: ../backlogs/set-column-options.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Bulk add or modify (Excel)
+    href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: "Create backlog items & tasks (Project)"
+    href: ../backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Storyboard your ideas
+    href: ../backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
+  - name: Add and share storyboard shapes
+    href: ../backlogs/office/add-share-storyboard-shapes.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
+  - name: "Manage permissions & access"
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json
+- name: Troubleshooting
+  items:
+  - name: Fix "Ordering backlog items is disabled"
+    href: ../backlogs/resolve-backlog-reorder-issues.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: "Rollup estimated & actual work using Project"
+    href: ../backlogs/office/rollup-estimated-and-actual-work-using-project.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Resolve Excel data conflicts
+    href: ../backlogs/office/resolve-excel-data-conflicts-publish-refresh.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Resolve Excel data validation errors
+    href: ../backlogs/office/resolve-excel-data-validation-errors.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: Resolve invalid links in an Excel tree list
+    href: ../backlogs/office/resolve-excel-invalid-links-tree-list.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: Reference
+  items:
+  - name: Product backlog controls
+    href: ../backlogs/product-backlog-controls.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json  
+  - name: Backlog keyboard shortcuts
+    href: ../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+  - name: "Permissions & access for work tracking"
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/codeplan-backlogs/toc.json&bc=/vsts/work/codeplan-backlogs/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: Work Items
+    href: ../codeplan-items/index.md?toc=/vsts/work/codeplan-items/toc.json&bc=/vsts/work/codeplan-items/breadcrumb/toc.json 
+  - name: Boards
+    href: ../codeplan-boards/index.md?toc=/vsts/work/codeplan-boards/toc.json&bc=/vsts/work/codeplan-boards/breadcrumb/toc.json 
+  - name: Scrum
+    href: ../codeplan-scrum/index.md?toc=/vsts/work/codeplan-scrum/toc.json&bc=/vsts/work/codeplan-scrum/breadcrumb/toc.json 
+  - name: Queries
+    href: ../codeplan-queries/index.md?toc=/vsts/work/codeplan-queries/toc.json&bc=/vsts/work/codeplan-queries/breadcrumb/toc.json 
+  - name: Process Customization
+    href: ../customize/process/customize-process.md?toc=/vsts/work/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json 
+  - name: What is Agile?
+    href: https://www.visualstudio.com/learn/what-is-agile/
+  - name: What is Agile development?
+    href: https://www.visualstudio.com/learn/what-is-agile-development/
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+  - name: Creating productive teams
+    href: https://www.visualstudio.com/learn/productive-teams/

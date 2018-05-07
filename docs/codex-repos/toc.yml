@@ -1,0 +1,23 @@
+- name: Codex Repos Onboarding Guide
+  href: index.md
+  items:
+  - name: Sign up and invite some teammates 
+    href: sign-up-invite-teammates.md
+  - name: Code with Git
+    href: ../user-guide/code-with-git.md?toc=/vsts/codex-repos/toc.json&bc=/vsts/codex-repos/breadcrumb/toc.json 
+  - name: Code with TFVC
+    href: ../user-guide/code-with-git.md?toc=/vsts/codex-repos/toc.json&bc=/vsts/codex-repos/breadcrumb/toc.json 
+  - name: Default permissions & roles
+    href: ../security/permissions-access.md?toc=/vsts/codex-repos/toc.json&bc=/vsts/codex-repos/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: Codex Agile
+    href: ../codex-agile/index.md
+  - name: Codex Pipelines
+    href: ../codex-pipelines/index.md
+  - name: Navigation Basics
+    href: ../navigation/index.md
+  - name: Account Management
+    href: ../accounts/index.md
+  - name: "Project & Account Settings"
+    href: ../settings/index.md

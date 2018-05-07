@@ -1,0 +1,8 @@
+- name: Azure Codex
+  tocHref: /vsts/
+  topicHref: /vsts/index#pivot=services
+  items: 
+  - name: Codex Repos Onboarding Guide
+    tocHref: /vsts/
+    topicHref: /vsts/codex-repos/index
+

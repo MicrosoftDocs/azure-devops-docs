@@ -1,11 +1,17 @@
-- name: VSTS and TFS 
+- name: Codex
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items:
   - name: New User Guide
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Code
+  - name: Navigation
+    tocHref: /vsts/
+    topicHref: /vsts/navigation/index
+  - name: Public Projects
+    tocHref: /vsts/
+    topicHref: /vsts/public/index
+  - name: Codex Repos
     tocHref: /vsts/git/
     topicHref: /vsts/index#pivot=services&panel=code
     items:
@@ -15,7 +21,7 @@
     - name: TFVC
       tocHref: /vsts/tfvc/
       topicHref: /vsts/tfvc/index
-  - name: "Continuous Integration & Delivery"
+  - name: Codex Pipelines
     tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=delivery
     items:
@@ -31,7 +37,7 @@
     - name: Continuous Testing
       tocHref: /vsts/build-release/
       topicHref: /vsts/build-release/test/index
-  - name: Testing
+  - name: Codex Test
     tocHref: /vsts/manual-test/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
@@ -44,11 +50,11 @@
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Agile
+  - name: Codex Agile
     tocHref: /vsts/work/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: Kanban
+    - name: Boards
       tocHref: /vsts/work/kanban/
       topicHref: /vsts/work/kanban/index
     - name: Backlogs
@@ -69,14 +75,14 @@
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index   
-  - name: Reporting
+  - name: Codex Dashboards
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=reporting
     items:
     - name: Dashboards
       tocHref: /vsts/report/dashboards
       topicHref: /vsts/report/dashboards/index
-    - name: "Analytics (VSTS)"
+    - name: Analytics
       tocHref: /vsts/report/analytics/
       topicHref: /vsts/report/analytics/index
     - name: "Power BI (VSTS)"
@@ -111,7 +117,7 @@
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
-    - name: "Scale & Configure Teams"
+    - name: "Project & Account Settings"
       tocHref: /vsts/settings/
       topicHref: /vsts/settings/index
     - name: Billing

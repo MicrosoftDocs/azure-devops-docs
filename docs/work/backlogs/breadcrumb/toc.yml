@@ -1,4 +1,4 @@
-- name: VSTS and TFS
+- name: CodeX
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: "Backlogs"
-      tocHref: /vsts/
-      topicHref: /vsts/work/backlogs/index
+    - name: Codex Agile Backlogs
+      tocHref: /vsts/work/
+      topicHref: /vsts/work/codeplan-backlogs/index

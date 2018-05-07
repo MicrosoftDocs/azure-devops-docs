@@ -1,0 +1,70 @@
+- name: Codex Agile Scale
+  href: index.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+- name: Overview
+  items:
+  - name: "About teams & Codex Agile tools"
+    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+- name: Quickstarts
+  items:
+  - name: Add and manage dashboards
+    href: ../../report/dashboards/dashboards.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+- name: Tutorials
+  items:
+  - name: Manage portfolios
+    href: ../scale/portfolio-management.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Review team delivery plans
+    href: ../scale/review-team-plans.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Set team favorites
+    href: ../../collaborate/set-favorites.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+- name: Concepts
+  items:
+  - name: Visibility across teams
+    href: ../scale/visibility-across-teams.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Agile culture
+    href: ../scale/agile-culture.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Practices that scale
+    href: ../scale/practices-that-scale.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Team administrator role and permissions
+    href: ../scale/team-administrator-permissions.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json	
+- name: How-to Guides
+  items:
+  - name: Use work item templates
+    href: ../backlogs/work-item-template.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+  - name: Manage team notifications
+    href: ../../collaborate/manage-team-notifications.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json   
+  - name: Configure team settings
+    href: ../scale/manage-team-assets.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+    items:
+    - name: Set team defaults
+      href: ../scale/set-team-defaults.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json  
+    - name: Select backlog levels
+      href: ../customize/select-backlog-navigation-levels.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+    - name: "Show bugs on backlogs & boards"
+      href: ../customize/show-bugs-on-backlog.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+    - name: Set working days
+      href: ../customize/set-working-days.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+  - name: Scaled Agile Framework
+    href: ../scale/scaled-agile-framework.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+  - name: Switch project or team focus
+    href: ../../settings/switch-team-context.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+  - name: "Manage permissions & access"
+    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json 
+  - name:  Delivery plan keyboard shortcuts
+    href: ../scale/delivery-plan-keyboard-shortcuts.md?toc=/vsts/work/codeplan-scale/toc.json&bc=/vsts/work/codeplan-scale/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: "Scale & Configure Teams"
+    href: ../../settings/index.md?toc=/vsts/settings/toc.json&bc=/vsts/settings/breadcrumb/toc.json
+  - name: Process Customization
+    href: ../customize/process/customize-process.md?toc=/vsts/work/settings/toc.json&bc=/vsts/work/settings/breadcrumb/toc.json
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+  - name: Scale Agile to large teams
+    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+  - name: Creating productive teams
+    href: https://www.visualstudio.com/learn/productive-teams/
+

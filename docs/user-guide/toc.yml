@@ -2,34 +2,60 @@
   href: index.md
 - name: Overview
   items:
-  - name: "What is VSTS?"
-    href: what-is-vsts.md
-  - name: Overview of services
+  - name: "What is Azure Codex?"
+    href: what-is-azure-codex.md
+  - name: "What do I get with Azure Codex?
     href: services.md?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: "How do I get Azure Codex?"
+    href:  how-to-get-azure-codex.md
+  - name: "How can I start Azure Codex for free?
+    href:  how-to-start-codex-for-free.md
+  - name: "What are Codex Public Projects?"
+    href:  what-are-codex-public-projects.md
 - name: Quickstarts
   items:
-  - name: Sign up and invite some teammates 
+  - name: Sign up and invite users 
     href: sign-up-invite-teammates.md
-  - name: Code with Git
+  - name: Get a repo
     href: code-with-git.md
-  - name: Set up continuous integration & delivery
+  - name: Start work planning
     href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: "Plan & track work"
+  - name: Start CI/CD pipline
     href: plan-track-work.md 
-  - name: "Add & run manual tests"
+  - name: Start testing code
     href: add-run-manual-tests.md
-  - name: Install a Marketplace extension
+  - name: Get extensions
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: View permissions
+  - name: Start managing artifacts
+    href: 
+  - name: View permissions...remove/redirect?
     href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
+  - name: Set up billing
+    href:
+  - name: Add amins or set permissions
+    href:
   - name: Set favorites
     href: ../collaborate/set-favorites.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Follow work & pull requests
     href: ../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Get started as a Stakeholder
+  - name: Collaborate with Codex
     href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+  - name: Set permissions
+    href:
+  - name: Get started as an admin
+    items:
+    - name: Start project
+      href: 
+    - name: Start backlog
+      href:  
+  - name: Get started as a developer
+    items:
+    - name: Start coding
+      href: 
+    - name: Deploy CI/CD
+      href:  
 - name: Concepts
   items:
   - name: Key concepts 
@@ -38,29 +64,27 @@
     href: source-control.md
   - name: Kanban & Agile tools
     href: ../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Clients & Tools
+  - name: Clients & tools
     href: tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Software development roles
+  - name: Developer roles
     href: roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: "How do VSTS & TFS differ"
-    href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+  - name: Manage artifacts and package
+    href: 
+  - name: VSTS vs. Azure Codex
+    href: about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: What is a Codex project?
+    href:
+  - name: Azure Codex vs. Codex Server
+    href:
+  - name: Licensing and Billing
+    href:
 - name: How-to Guides
   items:
-  - name: Enable preview features
-    href: ../collaborate/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: "Use @mentions to further discussion"
-    href: ../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: "Use #ID to link to work items"
-    href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
-  - name: Navigate using your account home page
+  - name: Home page navigation
     href: account-home-pages.md
-  - name: Go mobile
-    href: ../collaborate/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: Manage your notifications
-    href: ../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: Set your preferences
+  - name: Set preferences
     href: ../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Sign-in to the web or a client
+  - name: Sign in
     href: connect-team-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:
@@ -81,24 +105,18 @@
   - name: Keyboard shortcuts
     href: ../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Markdown guidance
-    href: ../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json   
-  - name: Navigate in the web portal
-    href: work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Navigate in Team Explorer
-    href: work-team-explorer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json    
   - name: FAQs
     href: faqs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Resources
   items:
-  - name: Visual Studio IDE
-    href: https://docs.microsoft.com/visualstudio/
-  - name: Visual Studio Code 
-    href: https://code.visualstudio.com/docs
-  - name: Visual Studio for Mac
-    href: https://docs.microsoft.com/visualstudio/mac
-  - name: Account Management (VSTS)
+  - name: Organization Management (Azure Codex)
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md
   - name: Technical articles
     href: http://visualstudio.com/articles/overview
+  - name: Learn DevOps
+    href: 
+  - name: Codex billing
+    href: 

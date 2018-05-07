@@ -1,11 +1,11 @@
-- name: VSTS and TFS
+- name: CodeX
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Agile
+  - name: Codex Agile
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: Kanban
+    - name: Boards
       tocHref: /vsts/
       topicHref: /vsts/work/kanban/index
