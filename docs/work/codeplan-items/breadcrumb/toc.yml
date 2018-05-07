@@ -1,0 +1,11 @@
+- name: CodeX
+  tocHref: /vsts/
+  topicHref: /vsts/codex-index
+  items: 
+  - name: Codex Agile
+    tocHref: /vsts/work/
+    topicHref: /vsts/codex-index#pivot=services&panel=codeplan
+    items:
+    - name: Codex Agile Work Items
+      tocHref: /vsts/work/
+      topicHref: /vsts/work/codeplan-items/index

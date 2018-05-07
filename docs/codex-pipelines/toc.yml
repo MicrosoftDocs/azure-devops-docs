@@ -1,0 +1,21 @@
+- name: Codex Pipelines Onboarding Guide
+  href: index.md
+  items:
+  - name: Sign up and invite some teammates 
+    href: sign-up-invite-teammates.md
+  - name: Set up continuous integration & delivery
+    href: ../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: Default permissions & roles
+    href: ../security/permissions-access.md?toc=/vsts/codex-agile/toc.json&bc=/vsts/codex-agile/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: Codex Repos
+    href: ../codex-repos/index.md
+  - name: Codex Agile
+    href: ../codex-pipelines/index.md
+  - name: Navigation Basics
+    href: ../navigation/index.md
+  - name: Account Management
+    href: ../accounts/index.md
+  - name: "Project & Account Settings"
+    href: ../settings/index.md

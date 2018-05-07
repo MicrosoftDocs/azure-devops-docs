@@ -1,0 +1,60 @@
+- name: Public Projects
+  href: index.md
+- name: Overview
+  items:
+  - name: What is a public project? 
+    href: about-public-projects.md
+- name: Quickstarts
+  items:
+  - name: Create a public project
+    href: create-public-project.md
+  - name: Make a team project public
+    href: make-project-public.md
+  - name: Download code
+    href: download-code-public.md
+  - name: View and filter work items
+    href: view-filter-work-items-public.md
+  - name: View a project page or dashboard
+    href: view-project-dashboard-public.md
+  - name: View the project Wiki
+    href: view-wiki-public.md 
+- name: Tutorials
+  items:
+  - name: Browse the code base 
+    href: browse-code-public.md
+  - name: Clone a repository
+    href: clone-git-repo-public.md 
+  - name: View build progress  
+  - name: View release progress  
+  - name: View test plans and test results  
+- name: Concepts
+  items:
+  - name: Default roles and access
+    href: default-roles-access-public.md 
+  - name: Recommendations when moving a private project to public 
+    href: recommendations-make-project-public.md
+  - name: Glossary of key terms
+    href: glossary-public.md
+- name: How-to Guides
+  items:
+  - name: Filter basics
+    href: ../work/backlogs/filter-backlogs.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Search the code base
+    href: ../search/code/code-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
+  - name: Search work items
+    href: ../search/workitem/work-item-search.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Work item form controls
+    href: ../work/work-items/work-item-form-controls.md?toc=/vsts/public/toc.json&bc=/vsts/public/breadcrumb/toc.json 
+  - name: Terms of service
+    href: service-limits-public.md 
+- name: Resources
+  items:
+  - name: Git
+    href: ../git/index.md
+  - name: Work items
+    href: ../work/work-items/index.md 
+  - name: VSTS data protection overview
+    href: ../articles/team-services-security-whitepaper.md 
+

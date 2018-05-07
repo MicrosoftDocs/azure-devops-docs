@@ -1,5 +1,5 @@
-- name: Work Items
-  href: index.md
+- name: Codex Agile Work Items
+  href: index.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About work items

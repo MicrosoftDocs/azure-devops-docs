@@ -1,5 +1,5 @@
-- name: Kanban 
-  href: index.md
+- name: Codex Agile Boards 
+  href: index.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About Kanban and Agile project management

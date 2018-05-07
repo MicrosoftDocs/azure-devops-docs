@@ -9,39 +9,35 @@ ms.author: kaelli
 ms.date: 08/18/2017
 monikerRange: '>= tfs-2013'
 ---
-
-
 # New User Guide
 
 **VSTS**
 
-New to Visual Studio Team Services (VSTS)? 
+New to Azure Codex?
 
-We'll walk you through the basics of the web interface and some common tasks.  
+We'll walk you through the basics of the web interface and some common tasks.
 
 <!---
 ## Overview
-[What is VSTS?](what-is-vsts.md)
+[What is Azure Codex?](what-is-azure-codex.md)
 [Overview of services](services.md)
 -->
 
-
 ## 5-Minute Quickstarts
 
-Get started with a free account, share your code using Git, and track your work using a Kanban board.  
+Get started with a free account, share your code using Git, and track your work using a Kanban board.
 
-- [Sign up and invite some teammates](sign-up-invite-teammates.md)  
-- [Code with Git](code-with-git.md)
-- [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Plan & track work](plan-track-work.md)
-
+- [Sign up and invite users](sign-up-invite-teammates.md)  
+- [Get a repo](code-with-git.md)
+- [Start work planning](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Start CI/CD pipeline](plan-track-work.md)
 
 ## Step-by-Step Tutorials
 
+- Set up billing
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Follow work and pull requests](../collaborate/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
- 
 
 ## Concepts
 
@@ -50,15 +46,13 @@ Get started with a free account, share your code using Git, and track your work 
 - [Kanban & Agile tools](../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
 - [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
-- [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
-
+- [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 
 ## Reference
 
 - [Permissions and access](../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Keyboard shortcuts](../collaborate/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Markdown guidance](../collaborate/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-
 
 ## Resources
 

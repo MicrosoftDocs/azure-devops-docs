@@ -1,0 +1,33 @@
+- name: Navigation Basics 
+  href: index.md?toc=/vsts/navigation/toc.json&bc=/vsts/navigation/breadcrumb/toc.json 
+  items:
+  - name: Add an artifact or team 
+    href: create-new-artifact-team.md
+  - name: Work with Favorites 
+    href: work-with-favorites.md     
+  - name: Go to an app, hub, or page 
+    href: go-to-app-hub-page.md   
+  - name: Filter basics 
+    href: filter-basics.md
+  - name: Search your project or repo
+    href: search-basics.md
+  - name: Enable a preview feature 
+    href: enable-preview-feature.md
+  - name: Open another project or repo
+    href: go-to-team-project-repo.md 
+  - name: Configure your project or account
+    href: configure-project-account-settings.md 
+  - name: Glossary of terms
+    href: glossary.md  
+- name: Resources
+  items:
+  - name: Settings 
+    href: ../settings/index.md
+  - name: Dashboards   
+    href: ../report/dashboards/index.md  
+  - name: Wiki 
+    href: ../collaborate/index.md    
+  - name: Search   
+    href: ../search/index.md  
+  - name: Notifications 
+    href: ../notifications/index.md  
