@@ -1,5 +1,5 @@
-- name: Codex Agile Scrum and Sprints
-  href: index.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: Scrum
+  href: index.md
 - name: Overview
   items:
   - name: About Scrum

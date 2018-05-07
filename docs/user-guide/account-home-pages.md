@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017.1**  
 
-> [!NOTE]
+> [!NOTE]  
 > **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
 
 From your account, you gain access to a number of page views that are particularly helpful if you work in several team projects. These pages provide quick access and filter functions to support your work within a single team project or  work you're doing across several projects.  
