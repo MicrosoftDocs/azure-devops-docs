@@ -155,9 +155,6 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
 
-> [!IMPORTANT]
-> There's a known issue that blocks the ability to download artifacts from the triggering build and with the build variables that are part of this feature. We're working on the fix. 
-
 Large products have several components that are dependent on each other. 
 These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
 
