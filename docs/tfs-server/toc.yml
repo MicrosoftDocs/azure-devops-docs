@@ -106,7 +106,7 @@
     - name: Use always-on availability groups
       href: ./install/sql-server/use-always-on-groups.md
     - name: SQL Server Reporting Services reports
-      href: /vsts/report/sql-server/reporting-services-reports?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
+      href: /vsts/report/sql-reports/reporting-services-reports?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
     - name: Add TFS service account to Report Server
       href: ./install/install-2013/add-tfs-svc-acct-report-svr.md
   - name: Install SharePoint
