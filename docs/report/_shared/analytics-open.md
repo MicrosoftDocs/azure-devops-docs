@@ -1,5 +1,6 @@
-
-
+---
+ms.topic: include
+---
 
 <a id="open-analytics">  </a>
 

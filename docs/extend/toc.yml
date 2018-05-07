@@ -126,6 +126,37 @@
       href: reference/client/core-sdk.md
     - name: Client services
       href: reference/client/client-services.md
+    - name: REST clients
+      href: reference/client/rest-clients.md
+      items:
+      - name: BuildHttpClient2_1
+        href: reference/client/api/TFS/Build/RestClient/BuildHttpClient2_1.md
+      - name: BuildHttpClient2_2
+        href: reference/client/api/TFS/Build/RestClient/BuildHttpClient2_2.md
+      - name: CoreHttpClient2_1
+        href: reference/client/api/TFS/Core/RestClient/CoreHttpClient2_1.md
+      - name: CoreHttpClient2_2
+        href: reference/client/api/TFS/Core/RestClient/CoreHttpClient2_2.md
+      - name: TestHttpClient2_1
+        href: reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_1.md
+      - name: TestHttpClient2_2
+        href: reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_2.md
+      - name: GitHttpClient2_1
+        href: reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_1.md
+      - name: GitHttpClient2_2
+        href: reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_2.md
+      - name: TfvcHttpClient2_1
+        href: reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_1.md
+      - name: TfvcHttpClient2_2
+        href: reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_2.md
+      - name: WorkHttpClient2_1
+        href: reference/client/api/TFS/Work/RestClient/WorkHttpClient2_1.md
+      - name: WorkHttpClient2_2
+        href: reference/client/api/TFS/Work/RestClient/WorkHttpClient2_2.md
+      - name: WorkItemTrackingHttpClient2_1
+        href: reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_1.md
+      - name: WorkItemTrackingHttpClient2_2
+        href: reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md
   - name: UI controls
     items:
     - name: Combo

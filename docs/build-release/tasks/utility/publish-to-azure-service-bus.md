@@ -32,23 +32,21 @@ Can be used in only an [agentless phase](../../concepts/process/phases.md#agentl
 | **Wait for Task Completion** | Optional. Set this option to force the task to halt until a response is received. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBus).
+Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
 
 ::: moniker range="vsts"
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishToAzureServiceBus@1
   inputs:
-    azureSubscription:
-    messageBody:
-#   signPayload: false
-    certificateString:
-    signatureKey:
-#   waitForCompletion: false
+    azureSubscription: 
+    #messageBody: # Optional
+    #signPayload: false 
+    #certificateString: # Required when signPayload == True
+    #signatureKey: 'signature' # Optional
+    #waitForCompletion: false 
 ```
 
 ::: moniker-end

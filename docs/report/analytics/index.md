@@ -2,12 +2,12 @@
 title: Analytics Service
 titleSuffix: VSTS
 description: Index to topics for using the Analytics Service on Visual Studio Team Services
-ms.assetid:  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: pantal
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 3/29/2018

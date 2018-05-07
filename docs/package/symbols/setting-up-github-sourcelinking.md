@@ -9,7 +9,6 @@ ms.date: 03/02/2018
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-author: midenn
 monikerRange: '>= tfs-2017'
 ---
 

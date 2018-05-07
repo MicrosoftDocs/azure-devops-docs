@@ -3,10 +3,12 @@ title: Build and deploy Java projects with VSTS
 description: Documentation for building and deploying Java projects with Visual Studio Team Services (VSTS)
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: conceptual
+ms.topic: overview
+ms.custom: java
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 layout: LandingPage
 monikerRange: '>= tfs-2013'

@@ -3,6 +3,7 @@ title: Project portal dashboards | TFS
 description: Use Dashboards to show project data, support investigation, and provide tools for teams to quickly perform common tasks - Team Foundation Server (TFS)
 ms.prod: devops-server
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: d1576274-544b-4100-844a-2895e7acf2e4
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

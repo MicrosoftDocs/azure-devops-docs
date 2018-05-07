@@ -4,9 +4,11 @@ titleSuffix: VSTS
 description: How to generate work item tracking reports for Visual Studio Team Services (VSTS) using the OData Analytics service  
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 11/13/2017
 ---
 

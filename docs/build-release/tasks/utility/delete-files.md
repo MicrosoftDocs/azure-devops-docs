@@ -61,13 +61,11 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: DeleteFiles@1
   inputs:
-    SourceFolder:
-#   Contents: myFileShare
+    #sourceFolder: # Optional
+    #contents: 'myFileShare' 
 ```
 
 ::: moniker-end

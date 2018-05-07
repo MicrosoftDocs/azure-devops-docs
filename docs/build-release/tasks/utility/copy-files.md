@@ -72,17 +72,15 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CopyFiles@2
   inputs:
-    SourceFolder:
-#   Contents: **
-    TargetFolder:
-#   CleanTargetFolder: false
-#   OverWrite: false
-#   flattenFolders: false
+    #sourceFolder: # Optional
+    #contents: '**' 
+    targetFolder: 
+    #cleanTargetFolder: false # Optional
+    #overWrite: false # Optional
+    #flattenFolders: false # Optional
 ```
 
 ::: moniker-end

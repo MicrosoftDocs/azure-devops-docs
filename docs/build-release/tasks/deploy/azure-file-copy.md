@@ -79,34 +79,32 @@ in the firewall, and install the test certificate.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AzureFileCopy@1
   inputs:
-    SourcePath:
-#   azureConnectionType: ConnectedServiceNameARM # ConnectedServiceName, ConnectedServiceNameARM (default)
-    azureClassicSubscription:
-    azureSubscription:
-    Destination:  # AzureBlob, AzureVMs
-    classicStorage:
-    storage:
-    ContainerName:
-    BlobPrefix:
-    cloudService:
-    resourceGroup:
-#   ResourceFilteringMethod: machineNames # machineNames (default), tags
-    MachineNames:
-    vmsAdminUserName:
-    vmsAdminPassword:
-    TargetPath:
-    AdditionalArguments:
-#   enableCopyPrerequisites: false
-#   CopyFilesInParallel: true
-#   CleanTargetBeforeCopy: false
-#   skipCACheck: true
-    outputStorageUri:
-    outputStorageContainerSasToken:
+    sourcePath: 
+    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
+    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
+    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
+    destination: # Options: azureBlob, azureVMs
+    #classicStorage: # Required when azureConnectionType == ConnectedServiceName
+    #storage: # Required when azureConnectionType == ConnectedServiceNameARM
+    #containerName: # Required when destination == AzureBlob
+    #blobPrefix: # Optional
+    #cloudService: # Required when azureConnectionType == ConnectedServiceName && Destination == AzureVMs
+    #resourceGroup: # Required when azureConnectionType == ConnectedServiceNameARM && Destination == AzureVMs
+    #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
+    #machineNames: # Optional
+    #vmsAdminUserName: # Required when destination == AzureVMs
+    #vmsAdminPassword: # Required when destination == AzureVMs
+    #targetPath: # Required when destination == AzureVMs
+    #additionalArguments: # Optional
+    #enableCopyPrerequisites: false # Optional
+    #copyFilesInParallel: true # Optional
+    #cleanTargetBeforeCopy: false # Optional
+    #skipCACheck: true # Optional
+    #outputStorageUri: # Optional
+    #outputStorageContainerSasToken: # Optional
 ```
 
 ::: moniker-end

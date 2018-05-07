@@ -101,14 +101,12 @@ For more details, see [Get started with Azure Key Vault certificates](https://bl
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription:
-    KeyVaultName:
-#   SecretsFilter: * # EditableOptions
+    azureSubscription: 
+    keyVaultName: 
+    #secretsFilter: '*' # Options: editableOptions
 ```
 
 ::: moniker-end
