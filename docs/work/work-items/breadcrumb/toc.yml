@@ -1,8 +1,8 @@
-- name: CodeX
+- name: VSTS and TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Codex Agile
+  - name: Agile
     tocHref: /vsts/work/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:

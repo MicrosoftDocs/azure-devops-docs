@@ -1,1 +1,0 @@
-**VSTS Public Projects**

@@ -1,5 +1,5 @@
-- name: Codex Agile Queries
-  href: index.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+- name: Queries
+  href: index.md
 - name: Overview
   items:
   - name: About managed queries
