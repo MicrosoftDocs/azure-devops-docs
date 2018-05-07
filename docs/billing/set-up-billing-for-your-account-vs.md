@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -21,7 +21,7 @@ This quickstart will help you set up billing for your VSTS account in advance of
 
 **All VSTS services are billed via Azure**, and you are not required to use any other Azure services.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 
@@ -72,6 +72,6 @@ If you'd like to set up billing for your account prior to buying something in th
 
 ## Related articles
 
+* [Billing FAQ](https://docs.microsoft.com/en-us/vsts/billing/vsts-billing-faq?view=vsts)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the subscription](https://docs.microsoft.com/en-us/vsts/billing/change-azure-subscription?view=vsts) for billing.
-* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

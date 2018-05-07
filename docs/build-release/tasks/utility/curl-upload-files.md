@@ -82,20 +82,18 @@ Arguments to pass to cURL.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: cURLUploader@2
   inputs:
-    files:
-#   authType: ServiceEndpoint # ServiceEndpoint (default), UserAndPass
-    serviceEndpoint:
-    username:
-    password:
-    url:
-#   remotePath: /upload/$(Build.BuildId)/
-    options:
-#   redirectStderr: true
+    files: 
+    #authType: 'ServiceEndpoint' # Optional. Options: serviceEndpoint, userAndPass
+    #serviceEndpoint: # Required when authType == ServiceEndpoint
+    #username: # Optional
+    #password: # Optional
+    #url: # Required when authType == UserAndPass
+    #remotePath: 'upload/$(Build.BuildId)/' # Optional
+    #options: # Optional
+    #redirectStderr: true # Optional
 ```
 
 ::: moniker-end

@@ -59,14 +59,12 @@ Xamarin account email address.</td>
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: XamarinComponentRestore@0
   inputs:
-#   solutionFile: **/*.sln
-    email:
-    password:
+    #solutionFile: '**/*.sln' 
+    email: 
+    password: 
 ```
 
 ::: moniker-end

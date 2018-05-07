@@ -63,14 +63,12 @@ Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/mast
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ManualIntervention@8
   inputs:
-    instructions:
-    emailRecipients:
-#   onTimeout: reject # reject (default), resume
+    #instructions: # Optional
+    #emailRecipients: # Optional
+    #onTimeout: 'reject' # Optional. Options: reject, resume
 ```
 
 ::: moniker-end

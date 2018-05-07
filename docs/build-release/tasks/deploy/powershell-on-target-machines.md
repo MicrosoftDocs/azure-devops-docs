@@ -51,23 +51,21 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PowerShellOnTargetMachines@2
   inputs:
-    EnvironmentName:
-    AdminUserName:
-    AdminPassword:
-    Protocol:  # Http, Https
-#   TestCertificate: true
-    ScriptPath:
-    ScriptArguments:
-    InitializationScriptPath:
-    SessionVariables:
-#   RunPowershellInParallel: true
-#   ResourceFilteringMethod: machineNames # machineNames (default), tags
-    MachineNames:
+    environmentName: 
+    #adminUserName: # Optional
+    #adminPassword: # Optional
+    #protocol: # Optional. Options: http, https
+    #testCertificate: true # Optional
+    scriptPath: 
+    #scriptArguments: # Optional
+    #initializationScriptPath: # Optional
+    #sessionVariables: # Optional
+    #runPowershellInParallel: true # Optional
+    #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
+    #machineNames: # Optional
 ```
 
 ::: moniker-end

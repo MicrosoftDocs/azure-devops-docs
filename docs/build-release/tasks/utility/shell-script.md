@@ -1,5 +1,5 @@
 ---
-title: Shell script
+title: Shell Script
 description: How to execute a bash script when building code in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Utility: Shell script
+# Utility: Shell Script
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -66,16 +66,14 @@ Select if you want this step to fail if any errors are written to the StandardEr
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: ShellScript@2
   inputs:
     scriptPath:
-    args:
-#   disableAutoCwd: false
-    cwd:
-#   failOnStandardError: false
+    #args: '' # Optional
+    #disableAutoCwd: false # Optional
+    #cwd: '' # Optional
+    #failOnStandardError: false
 ```
 
 ::: moniker-end

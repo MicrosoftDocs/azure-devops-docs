@@ -142,23 +142,21 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishSymbols@2
   inputs:
-#   SymbolsFolder: $(Build.SourcesDirectory)
-#   SearchPattern: **/bin/**/*.pdb
-#   IndexSources: true
-#   PublishSymbols: true
-    SymbolServerType:   #   (default), TeamServices, FileShare
-    SymbolsPath:
-#   DetailedLog: true
-#   TreatNotIndexedAsWarning: false
-    SymbolsMaximumWaitTime:
-    SymbolsProduct:
-    SymbolsVersion:
-#   SymbolsArtifactName: Symbols_$(BuildConfiguration)
+    #symbolsFolder: '$(Build.SourcesDirectory)' # Optional
+    #searchPattern: '**/bin/**/*.pdb' 
+    #indexSources: true # Optional
+    #publishSymbols: true # Optional
+    #symbolServerType: ' ' # Required when publishSymbols == True# Options:  , teamServices, fileShare
+    #symbolsPath: # Optional
+    #detailedLog: true # Optional
+    #treatNotIndexedAsWarning: false # Optional
+    #symbolsMaximumWaitTime: # Optional
+    #symbolsProduct: # Optional
+    #symbolsVersion: # Optional
+    #symbolsArtifactName: 'Symbols_$(BuildConfiguration)' # Optional
 ```
 
 ::: moniker-end

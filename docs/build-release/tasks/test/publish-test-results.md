@@ -54,19 +54,17 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: PublishTestResults@2
   inputs:
-#   testRunner: JUnit # JUnit (default), NUnit, VSTest, XUnit
-#   testResultsFiles: **\TEST-*.xml
-#   searchFolder: $(System.DefaultWorkingDirectory)
-#   mergeTestResults: false
-    testRunTitle:
-    platform:
-    configuration:
-#   publishRunAttachments: true
+    #testRunner: 'JUnit' # Options: jUnit, nUnit, vSTest, xUnit
+    #testResultsFiles: '**\TEST-*.xml' 
+    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+    #mergeTestResults: false # Optional
+    #testRunTitle: # Optional
+    #platform: # Optional
+    #configuration: # Optional
+    #publishRunAttachments: true # Optional
 ```
 
 ::: moniker-end

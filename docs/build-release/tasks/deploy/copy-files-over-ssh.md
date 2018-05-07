@@ -44,19 +44,17 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint:
-    sourceFolder:
-#   contents: **
-    targetFolder:
-#   cleanTargetFolder: false
-#   overwrite: true
-#   failOnEmptySource: false
-#   flattenFolders: false
+    sshEndpoint: 
+    #sourceFolder: # Optional
+    #contents: '**' 
+    #targetFolder: # Optional
+    #cleanTargetFolder: false # Optional
+    #overwrite: true # Optional
+    #failOnEmptySource: false # Optional
+    #flattenFolders: false # Optional
 ```
 
 ::: moniker-end

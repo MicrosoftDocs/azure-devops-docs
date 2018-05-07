@@ -2,12 +2,12 @@
 title: Extend Analytics with OData
 titleSuffix: VSTS  
 description: Using OData backed Analytics Service for Visual Studio Team Services 
-ms.assetid:  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
 ms.reviewer: pantal
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 monikerRange: 'vsts'
 ms.date: 3/29/2018

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 #### Q: What's the difference between free, preview, and paid extensions? 
 
 Extensions that are available during preview don't incur charges, 

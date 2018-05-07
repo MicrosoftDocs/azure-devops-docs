@@ -88,19 +88,17 @@ None
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: JenkinsQueueJob@2
   inputs:
-    serverEndpoint:
-    jobName:
-#   isMultibranchJob: False
-    multibranchPipelineBranch:
-#   captureConsole: True
-#   capturePipeline: True
-#   isParameterizedJob: False
-    jobParameters:
+    serverEndpoint: 
+    jobName: 
+    #isMultibranchJob: # Optional
+    #multibranchPipelineBranch: # Required when isMultibranchJob == True
+    captureConsole: 
+    #capturePipeline: # Required when captureConsole == True
+    isParameterizedJob: 
+    #jobParameters: # Optional
 ```
 
 ::: moniker-end

@@ -52,19 +52,19 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-(VSTS-only)
-
 ```YAML
 - task: QuickPerfTest@1
   inputs:
-    connectedServiceName:
-    websiteUrl:
-    testName:
-#   vuLoad: 25 # 25 (default), 50, 100, 250
-#   runDuration: 60 # 60 (default), 120, 180, 240, 300
-#   geoLocation: Default # Default (default), East US, East US 2, Central US, West US, North Central US, South Central US, North Europe, West Europe, Southeast Asia, East Asia, Japan East, Japan West, Brazil South, Australia East, Australia Southeast
-#   machineType: 0 # 0 (default), 2
-#   avgResponseTimeThreshold: 0
+    #connectedServiceName: # Optional
+    websiteUrl: 
+    testName: 
+    #vuLoad: '25' # Options: 25, 50, 100, 250
+    #runDuration: '60' # Options: 60, 120, 180, 240, 300
+    #geoLocation: 'Default' # Optional. Options: default, east US, east US 2, central US, west US, north Central US, south Central US, north Europe, west Europe, southeast Asia, east Asia, japan East, japan West, brazil South, australia East, australia Southeast
+    #machineType: '0' # Options: 0, 2
+    #resourceGroupName: # Optional
+    #numOfSelfProvisionedAgents: # Optional
+    #avgResponseTimeThreshold: '0' # Optional
 ```
 
 ::: moniker-end

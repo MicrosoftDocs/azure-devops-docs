@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 1. Navigate to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
 
 1. Select **Connect to feed**:
