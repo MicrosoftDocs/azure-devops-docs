@@ -24,8 +24,12 @@
     href: concepts/views.md
   - name: Upstream sources
     href: concepts/upstream-sources.md
+  - name: Complete graphs
+    href: concepts/package-graph.md
   - name: Symbols
     href: concepts/symbols.md
+  - name: Immutability
+    href: feeds/immutability.md
 - name: How-to
   items:
   - name: Use Package Management in Team Build
@@ -36,8 +40,6 @@
         href: /vsts/build-release/packages/nuget-restore?toc=/vsts/package/toc.json
       - name: Publish Package Management NuGet packages
         href: /vsts/build-release/packages/nuget-pack-publish?toc=/vsts/package/toc.json
-      - name: Set up Jenkins + NuGet
-        href: /vsts/build-release/packages/jenkins?toc=/vsts/package/toc.json
     - name: npm
       items:
       - name: Use Package Management npm packages
@@ -52,14 +54,10 @@
       href: feeds/create-feed.md
     - name: Edit a feed
       href: feeds/edit-feed.md
-    - name: Set permissions (Security)
+    - name: Set permissions and grant access
       href: feeds/feed-permissions.md
     - name: Communicate quality with release views
       href: feeds/views.md
-    - name: Grant access to teams and builds
-      href: feeds/common-identities.md
-    - name: Understand immutability
-      href: feeds/immutability.md
   - name: Use NuGet
     items:
     - name: Publish a NuGet package
@@ -120,6 +118,10 @@
       href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
     - name: Setting up GitHub SourceLinking
       href: symbols/setting-up-github-sourcelinking.md
+  - name: Set up upstream sources
+    href: how-to/set-up-upstream-sources.md
+  - name: Set up Jenkins + NuGet
+    href: /vsts/build-release/packages/jenkins?toc=/vsts/package/toc.json
   - name: Use badges to share your packages
     href: vsts-package-badges.md
   - name: Automatically delete old package versions
