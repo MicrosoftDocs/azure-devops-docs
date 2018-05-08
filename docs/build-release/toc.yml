@@ -90,6 +90,10 @@
     href: actions/azure-devops-project-vms.md
   - name: Azure DevOps Project with SQL Database
     href: actions/azure-devops-project-sqldb.md
+  - name: Azure DevOps Project with AKS
+    href: actions/azure-devops-project-aks.md
+  - name: Azure DevOps Project with Service Fabric
+    href: actions/azure-devops-project-servicefabric.md
   - name: Jenkins CI for VSTS Azure CD
     href: actions/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS
@@ -435,6 +439,8 @@
       href: tasks/package/NpmAuthenticate.0.md
     - name: NuGet
       href: tasks/package/nuget.md
+    - name: PyPI Publisher
+      href: tasks/package/pypi-publisher.md
     - name: Xamarin Component Restore
       href: tasks/package/xamarin-component-restore.md
     - name: Previous versions
