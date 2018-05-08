@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and (in a future sprint) authenticated feeds (i.e. other VSTS feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other VSTS feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
@@ -64,6 +64,34 @@ registry=https://fabrikam.pkgs.visualstudio.com/_packaging/FabrikamFiber/npm/reg
 always-auth=true
 ```
 
+### Order your upstream sources intentionally
+
+If you only use public upstream sources (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+
+If you use multiple VSTS upstream sources, or a mixture of public and VSTS upstream sources, the order of those upstreams is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any VSTS upstream sources, which could contain modified versions of public packages.
+
+In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the VSTS upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
+
+### Use the suggested default view
+
+Upstream sources to VSTS feeds require you to select a *view* of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
+
+## Best practices: feed owners/package producers
+
+To make your feed easily usable as an upstream source to other feeds, consider applying the following best practices to your feed.
+
+<a name="local"></a>
+
+### When in doubt, `@local` is your default view
+
+If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly-created feeds). @local contains all packages uploaded/pushed/published to the feed from a package client (e.g. nuget.exe) *and* all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
+
+If you do use views to communicate release quality, you can set the default view to whichever view contains the packages you want to make available to your consumers.
+
+### Provide a complete graph
+
+Because your consumers require a [complete graph](package-graph.md) to successfully install and consume your package, you should ensure that your [default view](#local) contains one. This is most easily done by connecting to the feed's default view ([NuGet](../nuget/consume.md), [npm](../npm/npmrc.md)) and installing the package you wish to share. You may need to do this once connected to the feed (instead of the feed@view). If the package installs correctly while you're connected to the default view, all of its dependencies are in the view.
+
 <a name="search-order"></a>
 
 ## Determining the package to use: search order
@@ -76,14 +104,6 @@ For package managers that support multiple feeds (like NuGet and Maven), the ord
 
 To take advantage of the determinism provided by upstream sources, you should ensure that your client's configuration file [only references your product feed](#single-feed), and not any other feeds like the public sources.
 
-### Two feeds contain the same package-version: shadowing
-
-Sometimes, two feeds can contain the same package-version. For instance, a user might push `Newtonsoft.Json@10.0.1` to your feed, and the same package already exists on nuget.org. When this happens, the shadowing rules apply.
-
-Shadowing in upstream sources occurs at the package-version level. So, if a user pushes `Newtonsoft.Json@10.0.1` to the feed before the nuget.org upstream source is enabled, all subsequent requests for `Newtonsoft.Json@10.0.1` will receive the feed's copy of the package (regardless of whether the nuget.org upstream source is enabled or disabled or removed). Continuing the example, once the nuget.org upstream source is enabled, the first request for `Newtonsoft.Json@10.0.2` would retrieve that version from nuget.org via the upstream source. The feed will save a copy of version 10.0.2, and subsequent requests for `Newtonsoft.Json@10.0.2` would retrieve that saved copy.
-
-If you're already using an upstream source and you need to push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. Continuing the above example, pushing `Newtonsoft.Json 10.0.2` would not be possible, even if the nuget.org upstream source was disabled, because the feed already contains a saved copy of that package-version. See the [immutability doc](../feeds/immutability.md) for more info.
-
 <a name="saved-packages"></a>
 
 ## Saving packages from upstream sources: continuity
@@ -91,6 +111,12 @@ If you're already using an upstream source and you need to push a package-versio
 When you enable an upstream source, packages installed from the upstream source via the feed will automatically be saved in the feed. These packages could be installed directly from the upstream (e.g. `npm install express`) or they could be installed as part of dependency resolution (e.g. the install of `express` would also save dependencies like `accepts`).
 
 Saving can improve download performance and save network bandwidth, esp. for TFS servers located on internal networks.
+
+## Overriding a package from an upstream source
+
+You can't publish any package-version that already exists in any upstream source enabled on your feed. For instance, if the nuget.org upstream source is enabled you cannot publish `Newtonsoft.Json 10.0.3` because that same package-version is already present on nuget.org.
+
+If you must push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. See the [immutability doc](../feeds/immutability.md) for more info.
 
 <a name="upstream-metadata-cache"></a>
 
