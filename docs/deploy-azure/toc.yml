@@ -18,6 +18,10 @@
       href: /vsts/build-release/apps/cd/azure/azure-devops-project-python?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
     - name: "DevOps Project for PHP"
       href: /vsts/build-release/apps/cd/azure/azure-devops-project-php?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for Ruby"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-ruby?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: "DevOps Project for Go"
+      href: /vsts/build-release/apps/cd/azure/azure-devops-project-go?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Azure Web App"
     href: /vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Windows VM"
@@ -26,8 +30,18 @@
     href: /vsts/build-release/apps/cd/deploy-docker-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: DevOps Project for GitHub
-    href: /vsts/build-release/actions/azure-devops-project-github?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+  - name: Azure DevOps for your app
+    items:
+    - name: DevOps Project for GitHub
+      href: /vsts/build-release/actions/azure-devops-project-github?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: DevOps Project for VMs
+      href: /vsts/build-release/actions/azure-devops-project-vms?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: DevOps Project with SQL Database
+      href: /vsts/build-release/actions/azure-devops-project-sqldb?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: DevOps Project with AKS
+      href: /vsts/build-release/actions/azure-devops-project-aks?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    - name: DevOps Project for Service Fabric
+      href: /vsts/build-release/actions/azure-devops-project-servicefabric?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Set up multi-stage release
     href: /vsts/build-release/actions/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: CI builds for Git in VSTS
@@ -35,8 +49,8 @@
   - name: Deploy apps to Azure App Service with VSTS and CI/CD
     href: https://docs.microsoft.com/learn/deploy-apps-to-azure/index
 - name: Resources
-   - name: Deploy apps to Azure App Service with VSTS and CI/CD 
-     href: https://docs.microsoft.com/learn/deploy-apps-to-azure/index 
   items:
+  - name: Deploy apps to Azure App Service with VSTS and CI/CD 
+    href: https://docs.microsoft.com/learn/deploy-apps-to-azure/index 
   - name: Build and Release
     href: /vsts/build-release
