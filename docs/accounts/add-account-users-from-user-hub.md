@@ -41,7 +41,7 @@ who also get Basic features, and in some cases, additional features with specifi
 
 ## How *access* differs from *permissions*
 
-Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md).
+Access levels control which features are available to users, i.e. the full set of account resources that a user is entitled to access. Permissions then control which of these account resources the user can act on. To learn more, see [Default permissions and access](../security/permissions-access.md).
 
 ## Prerequisites
 

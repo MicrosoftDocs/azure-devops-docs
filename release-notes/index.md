@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 4/16/2018
+ms.date: 5/8/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -27,10 +27,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Git - Filter the pull request list by target branch and labels|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
-|Filtering on the Taskboard|Work|2018.2|
-|New Agile Hubs – Refreshed UI on the core Agile hubs supporting Queries, Backlogs, Boards, Sprints, and Dashboards|Work|2019|
-|Work Items – Markdown support, editing comments|Work|2019|
-|Work Items – Discussion-centric work item form|Work|TBD|
+|Filtering on the Taskboard|Work|2019|
+|New Agile hubs including Boards, Backlogs, and Sprints|Work|2019|
+|Work Item support for Markdown editing|Work|2019|
+|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Updated build summary and log views|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
@@ -64,7 +64,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Items – Cross account linking|Work|TBD|
+|A discussion-centric Work Item form|Work|TBD|
+|Cross account linking for Work Items|Work|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
 |Extend release gates – Test|Release|TBD|
 |Release traceability – Work Item integration|Release|TBD|
@@ -93,6 +94,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
+            <td>Query for empty rich text fields</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Build Ruby apps based on a variety of Ruby versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build, test, and publish Python apps based on a variety of Python versions</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Build Java apps on hosted agents with Java 10</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Leverage improved Xcode build and test output from xcpretty</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Progressively expose and phase deployments using release gates</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Deploy to Azure SQL Database using Azure DevOps Projects</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Release hybrid applications to Azure Stack</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Control Helm version used in Release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Follow packages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Control who can pull packages from upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Change feed settings without having to manually save</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage test plans using the new Test Plans hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Fix broken links when moving pages</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
             <td rowspan="15">[16 Apr 2018](2018/apr-16-vsts.md)</td>
             <td>Find phrases and code with special characters faster</td><td style="background:rgb(232, 232, 232);">*2019*</td>
