@@ -2,6 +2,11 @@
     "redirections":
 	[
         {
+            "source_path": "docs/package/feeds/common-identities.md",
+            "redirect_url": "/vsts/package/feeds/feed-permissions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/package/nuget/remove.md",
             "redirect_url": "/vsts/package/unlist-delete",
             "redirect_document_id": false

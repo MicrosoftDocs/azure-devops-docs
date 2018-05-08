@@ -94,7 +94,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 ```json
 "scripts": {
-    "refreshVSToken ": "vsts-npm-auth -config .npmrc"
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
 }
 ```
 
