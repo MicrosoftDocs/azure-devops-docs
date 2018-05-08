@@ -176,9 +176,11 @@ build.gradle resides:
 |-- gradlew
 |-- gradlew.bat
 ```
-### How do I build an Android project?
+### How do I fix timeouts when downloading dependencies?
 
-[Android Build](android-build.md)
+To fix errors such as `Read timed out` when downloading dependencies, users of Gradle 4.3+ can change the timeout 
+   by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
+   from 10 seconds to 1 minute.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

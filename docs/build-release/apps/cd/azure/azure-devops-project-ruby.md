@@ -13,7 +13,7 @@ ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: quickstart
-ms.date: 04/30/2018
+ms.date: 05/06/2018
 ms.author: mlearned
 ms.custom: mvc
 monikerRange: 'vsts'
@@ -32,7 +32,7 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a **n
 
 1. Sign into the [Microsoft Azure portal](https://portal.azure.com).
 
-1. Choose the **+ New** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
+1. Choose the **Create a resource** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
 
    	![Starting Continuous Delivery](_img/azure-devops-project-ruby/fullbrowser.png)
 
