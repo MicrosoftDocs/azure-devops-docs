@@ -6,7 +6,7 @@ ms.manager: douge
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.date: 04/19/2018
+ms.date: 05/07/2018
 author: mlearned
 monikerRange: 'vsts'
 ---
@@ -21,11 +21,10 @@ You will:
 > [!div class="checklist"]
 > * Create an Azure DevOps project for an ASP.NET App and Azure SQL Database
 > * Configure VSTS and an Azure subscription 
-> * Configure the Azure SQL Server Database
 > * Examine the VSTS CI Build definition
-> * Examine the VSTS CD Release Management definition and configure the SQL password
+> * Examine the VSTS CD Release Management definition
 > * Commit changes to VSTS and automatically deploy to Azure
-> * Configure Azure Application Insights monitoring
+> * Connect to the Azure SQL Server Database 
 > * Clean up resources
 
 ## Prerequisites
@@ -56,33 +55,11 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a **n
 
 1. Select your **Azure subscription**.
 
-1. Select the **Change** link to see additional Azure configuration settings, and identify the **username** in the **Database Server Login Details** section.  **Store** the **username** for future steps in this tutorial.
+1. Optionally, select the **Change** link to see additional Azure configuration settings, and identify the **username** in the **Database Server Login Details** section.  **Store** the **username** for future steps in this tutorial.
  
-1. Exit the Azure configuration area, and choose **Done**.
+1. If you performed the step above, exit the Azure configuration area, and choose **Done**.  Otherwise just select **Done**.
 
-1. It will take several minutes for the process to complete.  A sample ASP.NET application and SQL Server Database Project is set up in a repository in your VSTS account, an Azure SQL Server Database resource is created, a build and release executes, and your application deploys to Azure.  
-
-	Once complete, the Azure DevOps **project dashboard** loads in the Azure portal.  You can also navigate to the **Azure DevOps Project Dashboard** directly from **All resources** in the **Azure Portal**.  
-
-	This dashboard provides visibility into your VSTS **code repository**, **VSTS CI/CD pipeline**, **Azure SQL Database**, and deploys any code changes to your repository.  You can further configure additional options in VSTS.  On the right side of the dashboard, select **Browse** to view your running application.
-
-## Configure the Azure SQL Server Database
-
-The Azure DevOps project dashboard provides a direct link to the management page for the Azure SQL Database resource.  You can configure additional settings for the database, retrieve connection string information, and perform various other database management related tasks.  You also manage the **SQL Server** that hosts the **SQL Database** by performing various actions such as resetting the server login password.
-
-1. From the Azure DevOps Project dashboard, select the **SQL Database** to navigate to the management page for the SQL DB.
-   
-1. Select **Set server firewall**, and then select **+ Add client IP**.  
-
-1. Select **Save**.  You're client IP is now allowed access to the **SQL Server Azure resource**.
-
-1. Navigate back to the **SQL Database** blade. 
-
-1. On the right side of the screen, select the **Server name** to navigate to the configuration page for the **SQL Server**.
-
-1. Select **Reset password**, enter a password for the **SQL Server admin login**, and then select **Save**.  **Keep** this password for future steps in this tutorial.
-
-1. You may now optionally use client tools such as **SQL Server Management Studio** or **Visual Studio** to connect to the Azure SQL Server and Database.  Use the **Server name** property to connect.
+1. It will take several minutes for the process to complete.  Once complete, the Azure DevOps **project dashboard** loads in the Azure portal.  You can also navigate to the **Azure DevOps Project Dashboard** directly from **All resources** in the **Azure Portal**.  On the right side of the dashboard, select **Browse** to view your running application.
 	
 ## Examine the VSTS CI Build definition
 
@@ -108,7 +85,7 @@ The Azure DevOps Project automatically configures a full VSTS CI/CD pipeline in 
 
 1. Select **Retention**.  Based on your scenario, you can specify policies to keep or remove a certain number of builds.
 
-## Examine the VSTS CD Release Management definition and configure the SQL password
+## Examine the VSTS CD Release Management definition
 
 The Azure DevOps Project automatically creates and configures the necessary steps to deploy from your VSTS account to your Azure subscription.  These steps include configuring an Azure service connection to authenticate VSTS to your Azure subscription.  The automation also creates a VSTS Release Definition, and this provides the CD to the Azure.  Follow the steps below to examine more about the VSTS Release Definition.
 
@@ -120,9 +97,9 @@ The Azure DevOps Project automatically creates and configures the necessary step
 
 1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger** **icon** (which appears as a lightning bolt.)  This release definition has an enabled CD trigger.  The trigger initiates a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments will then require manual execution. 
 
-1. On the left-hand side of the browser, select **Variables**. 
+1. The Azure DevOps project set up a random SQL password, and used this password for the release definition.  On the left-hand side of the browser, select **Variables**. 
 
-1. There is a single **Password** variable you need to configure.  To the right of the **Value** text box, select the **padlock** icon.  **Enter** the password you chose earlier for the **SQL Server user**, and then select **Save**.
+1. **Only perform this step if you changed the SQL Server password.**  There is a single **Password** variable.  To the right of the **Value** text box, select the **padlock** icon.  **Enter** the new password, and then select **Save**.
 
 1. On the left-hand side of the browser, select **Tasks**, and then choose your **environment**.  
 
@@ -143,7 +120,7 @@ The Azure DevOps Project automatically creates and configures the necessary step
  > [!NOTE]
  > The steps below test the CI/CD pipeline with a simple text change.  You may optionally make a SQL Server Schema change to the table to test the SQL deploy process.
 
-You're now ready to collaborate with a team on your app with a CI/CD process that automatically deploys your latest work to your web site.  Each change to the VSTS git repo initiates a build in VSTS, and a VSTS Release Management definition executes a deployment to your Azure VM.  Follow the steps below, or use other techniques to commit changes to your repository.  The code changes initiate the CI/CD process and automatically deploys your new changes to the IIS website on the Azure VM.
+You're now ready to collaborate with a team on your app with a CI/CD process that automatically deploys your latest work to your web site.  Each change to the VSTS git repo initiates a build in VSTS, and a VSTS Release Management definition executes a deployment to Azure.  Follow the steps below, or use other techniques to commit changes to your repository.  The code changes initiate the CI/CD process and automatically deploys your new changes to Azure.
 
 1. Select **Code** from the VSTS menu, and navigate to your repository.
 
@@ -155,31 +132,28 @@ You're now ready to collaborate with a team on your app with a CI/CD process tha
 
 1. Once the release completes, **refresh your application** in the browser to verify you see your changes.
 
-## Configure Azure Application Insights monitoring
+## Connect to the Azure SQL Server Database
 
-With Azure Application insights, you can easily monitor your application's performance and usage.  The Azure DevOps project automatically configured an Application Insights resource for your application.  You can further configure various alerts and monitoring capabilities as needed.
+You need appropriate permissions to connect to the Azure SQL Database.
 
-1. Navigate to the **Azure DevOps Project** dashboard in the **Azure portal**.  On the bottom-right of the dashboard, choose the **Application Insights** link for your app.
+1. From the Azure DevOps Project dashboard, select the **SQL Database** to navigate to the management page for the SQL DB.
+   
+1. Select **Set server firewall**, and then select **+ Add client IP**.  
 
-1. The **Application Insights** blade opens in the Azure portal.  This view contains usage, performance, and availability monitoring information for your app.
+1. Select **Save**.  You're client IP is now allowed access to the **SQL Server Azure resource**.
 
-    ![Application Insights](_img/azure-devops-project-github/appinsights.png) 
+1. Navigate back to the **SQL Database** blade. 
 
-1. Select **Time range**, and then choose **Last hour**.  Select **Update** to filter the results.  You now see all activity from the last 60 minutes.  Select the **x** to exit time range.
+1. On the right side of the screen, select the **Server name** to navigate to the configuration page for the **SQL Server**.
 
-1. You can find **Alerts** and several other useful links near the top of the dashboard.  Select **Alerts**, then select **+ Add metric alert**.
+1. Select **Reset password**, enter a password for the **SQL Server admin login**, and then select **Save**.  **Keep** this password for future steps in this tutorial.
 
-1. Enter a **Name** for the alert.
+1. You may now optionally use client tools such as **SQL Server Management Studio** or **Visual Studio** to connect to the Azure SQL Server and Database.  Use the **Server name** property to connect.
 
-1. The default alert is for a **server response time greater than 1 second**.  Select the **Metric** drop-down to examine the various alert metrics.  For example, you can configure **ASP.NET request execution time** for an ASP.NET app.  You can easily configure a variety of alerts to improve the monitoring capabilities of your app.
+   If you did not change the DB username while initially configuring the DevOps Project, your username is the local-part of your email address.  For example, if your email address is johndoe@microsoft.com, your username is johndoe.
 
-1. Select the check-box for **Notify via Email owners, contributors, and readers**.  Optionally, you can perform additional actions when an alert fires by executing an Azure logic app.
-
-1. Choose **Ok** to create the alert.  In a few moments, the alert appears as active on the dashboard.  **Exit** the Alerts area, and navigate back to the **Application Insights blade**.
-
-1. Select **Availability**, then select **+ Add test**. 
-
-1. Enter a **Test name**, then choose **Create**.  This creates  simple ping test to verify the availability of your application.  After a few minutes, test results are available, and the Application Insights dashboard displays an availability status.
+ > [!NOTE]
+ > If you change your password for the SQL login, you need to change the password in the VSTS release definition variable as described in the section **Examine the VSTS CD Release Management definition**
 
 ## Clean up resources
 
@@ -196,13 +170,12 @@ If you are testing, you can clean up resources to avoid accruing billing charges
 You can optionally modify these build and release definitions to meet the needs of your team. You can also use this CI/CD pattern as a template for your other projects.  You learned how to:
 
 > [!div class="checklist"]
-> * Create an Azure DevOps project for an ASP.NET App with Azure SQL Database
+> * Create an Azure DevOps project for an ASP.NET App and Azure SQL Database
 > * Configure VSTS and an Azure subscription 
-> * Configure the Azure SQL Server Database
 > * Examine the VSTS CI Build definition
-> * Examine the VSTS CD Release Management definition and configure the SQL password
+> * Examine the VSTS CD Release Management definition
 > * Commit changes to VSTS and automatically deploy to Azure
-> * Configure Azure Application Insights monitoring
+> * Connect to the Azure SQL Server Database 
 > * Clean up resources
 
 To learn more about the VSTS pipeline see this tutorial:

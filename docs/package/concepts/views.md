@@ -22,6 +22,30 @@ monikerRange: '>= tfs-2017'
 
 Views enable you to share subsets of the package-versions in your feed with consumers. A common use for views is to share package-versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
 
+## Views and upstream sources
+
+Views and upstream sources are designed to work together to make it easy to produce and consume packages at enterprise scale.
+
+<a name="local"></a>
+
+### The `@local` view
+
+All VSTS feeds come with 3 views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. The `@local` view is a special view that's commonly used in [upstream sources](upstream-sources.md).
+
+`@local` contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#saved-packages). If you don't use any other views, `@local` should be your [default view](#default-view). To learn more about why `@local` exists, read the [package graph](package-graph.md) doc.
+
+<a name="default-view"></a>
+
+### Default view
+
+Your VSTS feed must have a default view. When the feed is created, the default view is `@local`. The default view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, read the [package graph](package-graph.md) doc.
+
+<a name="read-only"></a>
+
+### Views cannot save packages from upstream sources
+
+Views are read-only, which means that users connected to a view can only use packages that are published to the feed and packages previously saved from upstream sources by users connected to the feed.
+
 ## Using views to release packages
 
 When creating packages in continuous integration and delivery scenarios, it's important to convey 3 pieces of information: the *nature* of the change, the *risk* of the change, and the *quality* of the package.
