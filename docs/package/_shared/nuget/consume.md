@@ -8,28 +8,20 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 
 <a name="get-nuget-pkg-url"></a>
 
-### Get your feed's NuGet package source URL 
+### Get your feed's NuGet package source URL
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
 ### Windows: Add the feed to your NuGet configuration
 
 1. On the **Tools** menu, select **Options...**.
-
 1. Expand **NuGet Package Manager** and select **Package Sources**.
-
 1. Click the **green plus** in the upper right corner.
-
 1. At the bottom of the dialog, enter the feed's name and the URL you got in the last step.
-
 1. Select **Update**.
-
 1. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), uncheck the **nuget.org** package source.
-
    ![Add new NuGet source](../_img/vs-addsource.png)
-
 1. Select **OK**.
-
 1. [Click here to continue](#consume-packages).
 
 <a name="mac-os"></a>
@@ -66,16 +58,14 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package-ver
 1. In Visual Studio, open the Package Manager Console from Tools > NuGet Package Manager.
 1. Paste the `Install-Package` command into the Package Manager Console and run it.
 
-### Using Visual Studio 2015 or earlier?
-
-You may need to [download and install](https://dist.nuget.org/) the latest NuGet Package Manager extension.
-
-### Using Visual Studio 2013 or earlier?
-
-You'll need to get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.
-
 <a name="use-symbols-to-debug"></a>
 
 ### Use symbols to debug
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers or package names. If [symbols have been published](/vsts/build-release/symbols/index.md) for your packages, [connect Visual Studio to the Symbol Server in Package Management](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
+
+<!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
+
+### Using Visual Studio 2013 or earlier
+
+You'll need to get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.

@@ -65,7 +65,7 @@
         "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
       },
       "ROBOTS":{
-        "integrate/legacy-apis/**": "NOINDEX,NOFOLLOW"
+        "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
       }
     },
     "template": [],

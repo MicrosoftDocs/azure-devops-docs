@@ -439,6 +439,8 @@
       href: tasks/package/NpmAuthenticate.0.md
     - name: NuGet
       href: tasks/package/nuget.md
+    - name: PyPI Publisher
+      href: tasks/package/pypi-publisher.md
     - name: Xamarin Component Restore
       href: tasks/package/xamarin-component-restore.md
     - name: Previous versions

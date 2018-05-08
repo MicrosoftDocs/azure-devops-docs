@@ -85,93 +85,99 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	</tr>
 	<tr>
 	<td>
-	Backlog priority field (Agile, CMMI)
+	Stack rank field (Agile, CMMI)
 	</td>
-	<td>
-	```<FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension"/&gt;     
+	   &lt;HELPTEXT>Work first on items with lower-valued stack rank. Set in triage. 
+	   &lt;/HELPTEXT/&gt;      
+	&lt;/FIELD/&gt; 
+	</code></pre></td>
 	</tr>
+
 	<tr>
 	<td>
-	Stack rank field (Scrum)
+	Backlog priority field (Scrum)
 	</td>
-	<td>
-	```<FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" />```
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt; 
+	</code></pre></td>
 	</tr>
+
 	<tr>
 	<td>
 	Value Area field  
 	</td>
-	<td>
-	```<FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String">  ```  
-	&nbsp;&nbsp;&nbsp;```<REQUIRED />  ```  
-	&nbsp;&nbsp;&nbsp;```<ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Architectural" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Business" />  ```  
-	&nbsp;&nbsp;&nbsp;```</ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;```<DEFAULT from="value" value="Business" />  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>Business = delivers value to a user or another system; Architectural = work to support other stories or components</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"&gt; 
+	   &lt;REQUIRED /&gt;   
+	   &lt;ALLOWEDVALUES&gt;   
+	      &lt;LISTITEM value="Architectural" /&gt;  
+	      &lt;LISTITEM value="Business" /&gt;  
+	      &lt;/ALLOWEDVALUES&gt;  
+	   &lt;DEFAULT from="value" value="Business" /&gt; 
+	   &lt;HELPTEXT>Business = delivers value to a user or another system; Architectural = work to support other stories or components  
+	   &lt;/HELPTEXT&gt;   
+	   &lt;/FIELD&gt; 
+	</code></pre></td>
 	</tr>
 	<tr>
 	<td>
 	Requirement Type field (CMMI)
 	</td>
-	<td>
-	```<FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension">  ```  
-	&nbsp;&nbsp;&nbsp;```<REQUIRED />  ```  
-	&nbsp;&nbsp;&nbsp;```<ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Scenario" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Quality of Service" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Functional" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Operational" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Interface" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Security" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Safety" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Business Objective" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Feature" />  ```  
-	&nbsp;&nbsp;&nbsp;```</ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;```<DEFAULT from="value" value="Functional" />  ```  
-	```</FIELD>  ```  
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension"&gt;  
+	   &lt;REQUIRED /&gt;  
+	   &lt;ALLOWEDVALUES&gt;  
+	      &lt;LISTITEM value="Scenario" /&gt;  
+	      &lt;LISTITEM value="Quality of Service" /&gt;  
+	      &lt;LISTITEM value="Functional" /&gt;  
+	      &lt;LISTITEM value="Operational" /&gt;  
+	      &lt;LISTITEM value="Interface" /&gt;  
+	      &lt;LISTITEM value="Security" /&gt;  
+	      &lt;LISTITEM value="Safety" /&gt;  
+	      &lt;LISTITEM value="Business Objective" /&gt;  
+	      &lt;LISTITEM value="Feature" /&gt;  
+	   &lt;/ALLOWEDVALUES&gt;  
+	   &lt;DEFAULT from="value" value="Functional" /&gt;  
+	&lt;/FIELD&gt;  
+	</code></pre></td>
 	</tr>
 	<tr>
 	<td>
-	```WORKFLOW``` section
+	`WORKFLOW` section
 	</td>
 	<td>
-	<p>Update or verify the ```WORKFLOW``` section as follows: </p>
+	<p>Update or verify the `WORKFLOW` section as follows: </p>
 	<ul>
-	<li>Agile, User Story: Add transitions from ```Active``` to ```Removed``` and ```Resolved``` to ```Removed```; remove rules that populate  ```Activated By``` and ```Activated Date``` fields when state=```Resolved```  </li>
-	<li>Scrum, Product backlog item: Add transition from ```Committed``` to ```Removed``` </li>
+	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
+	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the ```WORKFLOW```, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration ```RequirementBacklog``` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](#edit-processconfig). </p>
 	</td>
 	</tr>
 	<tr>
 	<td>
-	```FORM``` section
+	`FORM` section
 	</td>
 	<td>
 	<p>Add or verify the following fields have been added to the ```FORM``` section: </p>
 	<ul>
-	<li><p>Agile:</p>
-	```<Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
+	<li>Agile:<pre><code>
+	&lt;Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" /&gt;  
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;
+	</code></pre> 
 	</li>
-		<li><p>CMMI:</p>
-	```<Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" />```  
-	```<Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.RequirementType" Label="Type" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
+	<li>CMMI:<pre><code>
+	&lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" /&gt;
+	&lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.RequirementType" Label="Type" LabelPosition="Left" /&gt; 
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;
+	</code></pre> 
 	</li>
-		<li><p>Scrum:</p>
-	```<Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
+		<li>Scrum:<pre><code>
+	&lt;Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" /&gt;  
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt; 
+	</code></pre>  
 	</li>
 	</ul>
 	</td>
@@ -195,17 +201,17 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	<li>Map the end of each workflow state to ```type="Complete"``` </li>
 	<li>Make sure that you have only one State mapped to ```type="Complete"```</li>
 	</ul>
-	For example, add the Pending workflow state:
+	For example, add the Pending workflow state:  
 	```
-	    <States>
-	      <State value="New" type="Proposed" />
-	      <State value="Active" type="InProgress" />
-	      <State value="Pending" type="InProgress" />
-	      <State value="Resolved" type="InProgress" />
-	      <State value="Closed" type="Complete" />
-	    </States>
+	<States>    
+	      <State value="New" type="Proposed" />  
+	      <State value="Active" type="InProgress" />  
+	      <State value="Pending" type="InProgress" />  
+	      <State value="Resolved" type="InProgress" />  
+	      <State value="Closed" type="Complete" />  
+	</States>   
 	```
-5.	Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:  
+5.	Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:   
 	```<WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />```  
 
 6.	Update your team project:  
@@ -233,77 +239,81 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	</tr>
 	<tr>
 	<td>
-	Backlog priority field (Agile, CMMI)
+	Stack rank field(Agile, CMMI)
 	</td>
-	<td>
-	```<FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension"&gt;   
+	   &lt;HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.  
+	   &lt;/HELPTEXT&gt;   
+	&lt;/FIELD&gt;	
+	</code></pre> </td>
 	</tr>
 	<tr>
 	<td>
-	Stack rank field (Scrum)
+	Backlog priority field (Scrum)
 	</td>
-	<td>
-	```<FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" />```
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt;   
+	</code></pre> </td>
 	</tr>
 	<tr>
 	<td>
 	Activity field (Agile, Scrum)
 	</td>
-	<td>
-	```<FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" />```
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt;
+	</code></pre> </td>
 	</tr>
 	<tr>
 	<td>
 	Discipline field (CMMI)
 	</td>
-	<td>
-	```<FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String" reportable="dimension">  ```  
-	&nbsp;&nbsp;&nbsp;```<ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Analysis" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="User Experience" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="User Education" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Development" />  ```  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<LISTITEM value="Test" />  ```  
-	&nbsp;&nbsp;&nbsp;```</ALLOWEDVALUES>  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>The discipline to which the task belongs</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String" reportable="dimension"&gt;  
+	   &lt;ALLOWEDVALUES&gt;  
+	      &lt;LISTITEM value="Analysis" /&gt;    
+	      &lt;LISTITEM value="User Experience" /&gt;    
+	      &lt;LISTITEM value="User Education" /&gt;    
+	      &lt;LISTITEM value="Development" /&gt;    
+	      &lt;LISTITEM value="Test" /&gt;    
+	   &lt;/ALLOWEDVALUES&gt;    
+	&lt;/FIELD&gt;    
+	</code></pre> </td>
 	</tr>
 	<tr>
 	<td>
 	Remaining Work field (all) 
 	</td>
-	<td>
-	```<FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>An estimate of the work remaining to complete the task (in person hours)</HELPTEXT>  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>The discipline to which the task belongs</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum"&gt;    
+	   &lt;HELPTEXT&gt;    
+	   An estimate of the work remaining to complete the task (in person hours)  
+	   &lt;/HELPTEXT&gt;    
+	   &lt;HELPTEXT&gt;The discipline to which the task belongs&lt;/HELPTEXT&gt;    
+	&lt;/FIELD&gt;    
+	</code></pre> </td>
 	</tr>
 	<tr>
 	<tr>
 	<td>
 	Additional scheduling fields (Agile, CMMI)
 	</td>
-	<td>
-	```<FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>The original estimate of work required to complete the task (in person hours)</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	```<FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>An estimate of the work remaining to complete the task (in person hours)</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	```<FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum">  ```  
-	&nbsp;&nbsp;&nbsp;```<HELPTEXT>The work that has been completed for this task (in person hours)</HELPTEXT>  ```  
-	```</FIELD>  ```  
-	```<FIELD name="Start Date" refname="Microsoft.VSTS.Scheduling.StartDate" type="DateTime" reportable="dimension" />  ```  
-	```<FIELD name="Finish Date" refname="Microsoft.VSTS.Scheduling.FinishDate" type="DateTime" reportable="dimension" />  ```  
-	</td>
+	<td><pre><code>
+	&lt;FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum"&gt;    
+	&lt;HELPTEXT&gt; The original estimate of work required to complete the task (in person hours)&lt;/HELPTEXT&gt;    
+	&lt;/FIELD&gt;    
+	&lt;FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum"&gt;    
+	   &lt;HELPTEXT&gt;An estimate of the work remaining to complete the task (in person hours)
+	   &lt;/HELPTEXT&gt;    
+	&lt;/FIELD&gt;    
+	&lt;FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum"&gt;    
+	   &lt;HELPTEXT&gt;    
+	       The work that has been completed for this task (in person hours)  
+	   &lt;HELPTEXT&gt;    
+	&lt;/FIELD&gt;    
+	&lt;FIELD name="Start Date" refname="Microsoft.VSTS.Scheduling.StartDate" type="DateTime" reportable="dimension" /&gt;    
+	&lt;FIELD name="Finish Date" refname="Microsoft.VSTS.Scheduling.FinishDate" type="DateTime" reportable="dimension" /&gt;    
+	</code></pre> </td>
 	</tr>
 	<td>
 	```WORKFLOW``` section
@@ -311,38 +321,38 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	<td>
 	<p>Update or verify the ```WORKFLOW``` section as follows: </p>
 	<ul>
-	<li>Agile, User Story: Add transitions from ```Active``` to ```Removed``` and ```Resolved``` to ```Removed```; remove rules that populate  ```Activated By``` and ```Activated Date``` fields when state=```Resolved```  </li>
-	<li>Scrum, Product backlog item: Add transition from ```Committed``` to ```Removed``` </li>
+	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
+	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the ```WORKFLOW```, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration ```TaskBacklog``` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TaskBacklog` section](#edit-processconfig). </p>
 	</td>
 	</tr>
 	<tr>
 	<td>
-	```FORM``` section
+	`FORM` section
 	</td>
 	<td>
-	<p>Add or verify the following fields have been added to the ```FORM``` section: </p>
+	<p>Add or verify the following fields have been added to the `FORM` section: </p>
 	<ul>
-	<li><p>Agile:</p>
-	```<Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
-	</li>
-		<li><p>CMMI:</p>
-	```<Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
-	</li>
-		<li><p>Scrum:</p>
-	```<Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" />```  
-	```<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />```  
-	</li>
+	<li>Agile:<pre><code>
+	&lt;Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" /&gt;    
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;    
+	</code></pre></li>
+	<li>CMMI:<pre><code>
+	&lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" /&gt;    
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;    
+	</code></pre></li>
+    <li>Scrum:<pre><code>
+	&lt;Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" /&gt;    
+	&lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;    
+	</code></pre></li>
 	</ul>
 	</td>
 	</tr>
 	</tbody>
 	</table>  
 
-4.	Edit the Categories definition. Add the WIT to the Task category. Here we add Service Task.  
+3.	Edit the Categories definition. Add the WIT to the Task category. Here we add Service Task.  
 
 	```
 	 <CATEGORY name="Task Category" refname="Microsoft.TaskCategory">
@@ -362,13 +372,13 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	</ul>
 	For example, add the Blocked workflow state:
 	```
-	    <States>
-	      <State value="New" type="Proposed" />
-	      <State value="Active" type="InProgress" />
-	      <State value="Blocked" type="InProgress" />
-	      <State value="Resolved" type="InProgress" />
-	      <State value="Closed" type="Complete" />
-	    </States>
+    <States>  
+        <State value="New" type="Proposed" />  
+        <State value="Active" type="InProgress" />  
+        <State value="Blocked" type="InProgress" />  
+        <State value="Resolved" type="InProgress" />  
+        <State value="Closed" type="Complete" />  
+    </States>  
 	```
 5.	Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:  
 	```<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Task" />```
@@ -397,10 +407,10 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 3.	Edit the Categories definition. Add the WIT to the Bug Category. Here we add two WITs.  
 
 	```
-	 <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">
-	    <DEFAULTWORKITEMTYPE name="Bug" />
-	    <WORKITEMTYPE name="Service Bug" />
-	    <WORKITEMTYPE name="Feedback" />
+	 <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
+	    <DEFAULTWORKITEMTYPE name="Bug" />  
+	    <WORKITEMTYPE name="Service Bug" />  
+	    <WORKITEMTYPE name="Feedback" />  
 	 </CATEGORY>
 	```
 
@@ -413,19 +423,21 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 	<li>Map the end of each workflow state to ```type="Complete"``` </li>
 	<li>Make sure that you have only one State mapped to ```type="Complete"```</li>
 	</ul>
-	For example, add the Investigate workflow state:
+	For example, add the Investigate workflow state:  
 	```
-	    <States>
-	      <State value="New" type="Proposed" />
-	      <State value="Active" type="InProgress" />
-	      <State value="Investigate" type="InProgress" />
-	      <State value="Resolved" type="InProgress" />
-	      <State value="Closed" type="Complete" />
-	    </States>
+    <States>  
+      <State value="New" type="Proposed" />  
+      <State value="Active" type="InProgress" />  
+      <State value="Investigate" type="InProgress" />  
+      <State value="Resolved" type="InProgress" />  
+      <State value="Closed" type="Complete" />  
+    </States>  
 	```
 5.	Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:  
-	```<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />```
-	```<WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />```
+	```
+	<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />  
+	<WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />  
+	```
 
 6.	Update your team project:  
 	- **Hosted XML:**  [Import your process](import-process/import-process.md).  
@@ -460,18 +472,12 @@ Use the **witadmin** commands to import and export definition files. For details
 
 Use these commands to export and import WITs, categories, and process configuration: 
 
-	witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:TypeName /f:"DirectoryPath\WITDefinitionFile.xml"
-
-	witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"
-
-	witadmin exportcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"
-
-	witadmin importcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"
-
-	witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
-
-	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
-
+	witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:TypeName /f:"DirectoryPath\WITDefinitionFile.xml"  
+	witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"  
+	witadmin exportcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"  
+	witadmin importcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"   
+	witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"  
+	witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"  
 
 ## Related articles  
 We've just shown how to add another WIT to your backlogs or boards. However, if you want to add another WIT to act as a portfolio backlog, see [Add portfolio backlogs](add-portfolio-backlogs.md).
