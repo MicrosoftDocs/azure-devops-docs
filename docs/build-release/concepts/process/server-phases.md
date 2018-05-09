@@ -2,14 +2,14 @@
 title: Server phases in Build and Release Management
 description: Understand server phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 093FD7B8-65F4-40E0-A429-A7944FD2ED9B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: alewis
 author: alewis
 ms.date: 5/3/2018
-monikerRange: ">= tfs-2018"
+monikerRange: '>= tfs-2018'
 ---
 
 # Server phases
