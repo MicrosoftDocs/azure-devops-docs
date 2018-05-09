@@ -30,6 +30,9 @@ Consider using Visual Studio to associate automated tests with a test case when:
   If your test cases are linked to requirements or user stories,
   the results of the test execution can be used to establish the quality of those requirements. 
 
+> **NOTE**: At present you cannot use this procedure to associate MSTest V2 tests or tests written in NUnit and XUnit.
+> Adding this capability is planned for a future release. 
+
 The process to associate an automated test with a test case is:
 
 1. Create a test project containing your automated test.
