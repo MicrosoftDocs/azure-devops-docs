@@ -157,6 +157,13 @@
       href: concepts/process/tasks.md
     - name: Phases
       href: concepts/process/phases.md
+      items: 
+      - name: Server phases
+        href: concepts/process/server-phases.md
+      - name: Deployment group phases
+        href: concepts/process/deployment-group-phases.md
+      - name: Multiple phases
+        href: concepts/process/multiple-phases.md
     - name: Conditions
       href: concepts/process/conditions.md
   - name: Licensing

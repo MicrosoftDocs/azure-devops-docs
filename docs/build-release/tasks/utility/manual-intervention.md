@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
+Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
 ## Arguments
 
