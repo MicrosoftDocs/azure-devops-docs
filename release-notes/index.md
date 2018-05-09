@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 5/7/2018
+ms.date: 5/8/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -27,10 +27,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Git - Filter the pull request list by target branch and labels|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
-|Filtering on the Taskboard|Work|2018.2|
-|New Agile Hubs – Refreshed UI on the core Agile hubs supporting Queries, Backlogs, Boards, Sprints, and Dashboards|Work|2019|
-|Work Items – Markdown support, editing comments|Work|2019|
-|Work Items – Discussion-centric work item form|Work|TBD|
+|Filtering on the Taskboard|Work|2019|
+|New Agile hubs including Boards, Backlogs, and Sprints|Work|2019|
+|Work Item support for Markdown editing|Work|2019|
+|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Updated build summary and log views|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
@@ -64,7 +64,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Work Items – Cross account linking|Work|TBD|
+|A discussion-centric Work Item form|Work|TBD|
+|Cross account linking for Work Items|Work|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
 |Extend release gates – Test|Release|TBD|
 |Release traceability – Work Item integration|Release|TBD|
