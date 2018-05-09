@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 05/08/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -14,6 +14,13 @@ monikerRange: '>= tfs-2015'
 # Deploy to Azure
 
 Visual Studio Team Services (VSTS) is Microsoft's DevOps solution for Azure. The Build and Release services provide streamlined experiences to deploy your apps to one of Azure's many services. These services provide a continuous delivery solution if your code is managed in GitHub, VSTS Git or Team Foundation Version Control, or in one of the other Git servers.
+
+## Azure DevOps Project
+
+The Azure DevOps Project makes it easy to get started on Azure. The DevOps project resource helps you launch your favorite app type on the Azure service of your choice in just a few quick steps from the Azure portal. The DevOps Project sets up everything you need for developing, deploying, and monitoring your application. The DevOps Project dashboard lets you monitor code commits, builds, and deployments, all from a single view in the Azure portal.
+
+> [!div class="nextstepaction"]
+> [Deploy your code with DevOps Project](actions/azure-devops-project-github.md)
 
 ## Web apps
 
