@@ -2,14 +2,14 @@
 title: Deployment group phases in Build and Release Management
 description: Understand deployment group phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: alewis
 author: alewis
 ms.date: 5/3/2018
-monikerRange: ">= tfs-2018"
+monikerRange: '>= tfs-2018'
 ---
 
 # Deployment group phases
