@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/04/2018
+ms.date: 05/08/2018
 monikerRange: 'vsts'
 ---
 # Restore your VSTS account
@@ -29,6 +29,8 @@ After 30 days, your account and data are permanently deleted.
 	[Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-account.md#ChooseOrgAcctMSAcct)
 
 2.  Go to the "Accounts Pending Deletion" section at the bottom of your profile page. There you will see a link to restore your account.
+
+    ![Restore your deleted account](_img/delete-account/restore-account.png)
 
 3. Choose **Restore**.
 
