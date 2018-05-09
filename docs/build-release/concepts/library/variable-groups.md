@@ -78,15 +78,17 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ## Use a variable group
 
-To use a variable group, open the definition, select the **Variables**
-tab, select **Variable groups**, and then choose **Link variable group**. 
+To use a variable group, open your build or release definition, select the **Variables**
+tab, select **Variable groups**, and then choose **Link variable group**.
+In a build definition, you see a list of available groups. In a release definition (as shown below), you
+also see a drop-down list of environments in the definition - you can link the variable group to one or more of these environments.
 
 ![Linking a variable group](_img/link-variable-group.png)
 
-You can link a variable group to a release definition, or to a specific environment in a release definition.
-When you link to a release definition, all the variables in the group are available for use in all environments
-of that definition. When you link to an environment, the variables from the variable group scoped to that
-environment and are not accessible in the other environments of the same release. 
+* In a **build definition**, the variable group is linked to the definition and all the variables in the group are available for use within this definition.
+* In a **release definition**, you can link a variable group to the definition itself, or to a specific environment of the release definition.
+  - If you link to a release definition, all the variables in the group are available for use in the definition and in all environments of that definition.
+  - If you link to one or more environments in a release definition, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release. 
 
 > [!NOTE]
 > Linking a variable group to a specific environment is available only on VSTS and on TFS 2018 Update 2 and later. 
