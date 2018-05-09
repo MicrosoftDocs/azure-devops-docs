@@ -51,7 +51,7 @@ server is available, the tags you assigned to each server, and the latest
 deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
-the deployment group is used in a [Deployment group phase](../../../process/phases.md#deployment-group-phase).
+the deployment group is used in a [Deployment group phase](../../../process/deployment-group-phases.md).
 You manage the security for a deployment group by
 [assigning security roles](../../../agents/pools-queues.md#security).
 
@@ -111,7 +111,7 @@ will see the deployment group you added and you can assign project-specific mach
 
 ## Related topics
 
-* [Run on machine group phase](../../../process/phases.md#deployment-group-phase)
+* [Run on machine group phase](../../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../../../actions/agents/v2-windows.md)
 * [Deploy an agent on macOS](../../../../actions/agents/v2-osx.md)
 * [Deploy an agent on Linux](../../../../actions/agents/v2-linux.md)
