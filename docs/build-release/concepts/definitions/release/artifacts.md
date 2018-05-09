@@ -397,7 +397,7 @@ perform incremental downloads to the agent.
 
 ::: moniker range="< vsts"
 
-You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#agent-props)
+You can, however, instruct Release Management to [skip the automatic download](../../process/phases.md#artifact-download)
 of artifacts to the agent for a specific phase and environment of the deployment if you
 wish. Typically, you will do this when the tasks in that phase do not
 require any artifacts, or if you implement custom code in a task to
@@ -407,7 +407,7 @@ download the artifacts you require.
 
 ::: moniker range="vsts"
 
-In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#agent-props)
+In VSTS, you can, however, [select which artifacts you want to download](../../process/phases.md#artifact-download)
 to the agent for a specific phase and environment of the deployment.
 Typically, you will do this when the tasks in that phase do not
 require all or any of the artifacts, or if you implement custom code
