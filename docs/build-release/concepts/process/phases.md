@@ -8,175 +8,283 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 5/3/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Task phases for builds and releases
+# Phases
 
-**VSTS | TFS 2018 | TFS 2017**
+<a name='agent-phase'></a>
+
+::: moniker range=">= tfs-2018"
+
+You can organize your build or deployment process into phases. Every build or deployment process has at least one phase.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
 
 > [!NOTE]
-> Some of the features described below are not yet available in Build. Some features are not yet available in Release Management. Wherever appropriate, each feature below is tagged to indicate whether it is presently available in Build or Release Management, and whether it is planned to be made available in one or the other.
+> You must install TFS 2018.2 to use phases in build processes. In TFS 2018 RTM you can use phases in release management deployment processes. 
 
-Tasks can run in different **phases**, which effectively represent different execution locations.
+::: moniker-end
 
-By using different task phases in a build or release definition, you can:
+::: moniker range="tfs-2017"
 
-| Activity | Release in VSTS | Release in TFS 2017 | Release in TFS 2018 | Build in VSTS |
-| --- | --- | --- | --- | --- |
-| Partition your deployment process into sections that run on agents and sections that run without an agent | Yes | Yes | Yes | Yes |
-| Partition your build or deployment process into sections where tasks in each section can target a different set of private agents using different demands | Yes | Yes | Yes | Yes |
-| Partition your deployment process into sections where tasks in each section can target a different agent queue | Yes | Yes | Yes | Planned |
-| Introduce a manual intervention task where deployment pauses while an operator carries out manual processes or validates the state of the system before continuing the deployment | Yes | Yes | Yes | No |
-| Switch off downloading of artifacts for sets of tasks that include their own logic for accessing source artifacts, or that do not require access to artifacts, which can reduce execution time and improve deployment efficiency | Yes | Yes | Yes | No |
-| Switch off checking out code for sets of tasks that include their own logic for accessing sources, or that do not require sources, which can reduce build time | No | No | No | Planned |
-| Publish build artifacts in one phase and consume those in subsequent phases | No | No | No | Yes |
-| Run multiple phases in parallel | Planned | Planned | Planned | Planned |
-| Permit access to OAuth tokens for only the tasks that need to interact with VSTS or TFS | Yes | Yes | Yes | Yes |
-| Specify different execution timeouts for different sets of tasks to maximize deployment performance and control | Yes | Yes | Yes | Yes |
-| Specify the conditions under which the tasks in the phase will execute; for example, when a previous phase has failed or when a [custom condition](conditions.md) defined by an expression is true | Yes | No | Yes | Planned |
+You can organize your deployment process into phases. Every deployment process has at least one phase.
 
-![Task phases schematic diagram](_img/phases-01.png)
+::: moniker-end
 
-The task phases you can use are:
+A phase is a series of tasks that run sequentially on the same target.
+At design time in your phase you specify a series of tasks that you want to run on a common target.
+At run time (when either the build or release process is triggered), each phase is dispatched as one or more jobs to its target.
 
-* **[Agent phase](#agent-phase)**. In this phase, tasks are executed on the computer(s) that host the build and release agent.
+::: moniker range="tfs-2017"
 
-* **[Agentless phase](#server-phase)**. In this phase, tasks are orchestrated by and executed on VSTS
-  or TFS. An agentless phase does not require an agent
-  or any target computers.
+> [!NOTE]
+> You must install Update 2 to use phases in TFS 2017, and they are available only in release management deployment processes. 
+> Phases in build definitions are available in VSTS, TFS 2018.2, and newer versions.
 
-* **[Deployment group phase](#deployment-group-phase)**. In this phase, tasks are executed on the computer(s) defined in a
-  [deployment group](../definitions/release/deployment-groups/index.md),
-  each of which hosts the build and release agent. This phase is only applicable to release definitions.
+::: moniker-end
 
-![Add a phase to a release definition](_img/add-phase.png)
+::: moniker range="vsts"
+In a build process, the most common target is an agent. The other kind of target is the VSTS [server](server-phases.md).
+::: moniker-end
 
-By default, tasks you add to a build definition or release definition run in a single default agent phase.
-To add tasks to a specific phase when you have more than one phase in the definition, select the target phase
-and then choose **+**.
+::: moniker range="< vsts"
+In a build process, the most common target is an agent. The other kind of target is the server (your TFS instance).
+::: moniker-end
 
-<a name="agent-props"></a>
-## Agent phase
+In a deployment process, the target can be either an agent, a [deployment group](deployment-group-phases.md), or the server.
 
-An **agent phase** is a way of defining a sequence of tasks that will run on one or more agents.
-At run time, one or more jobs are created to be run on agents that match the demands specified in the phase properties.
+When the target is an agent, the tasks are run on the computer that hosts the agent.
 
-![Specifying agent phase properties](_img/phases-03.png)
+# [Web](#tab/web)
 
-You can configure the following properties for an agent phase:
+When you create a new definition, it starts with a single agent phase. 
+The properties for the agent phase are displayed when you select the agent phase in the editor.
 
-* **Display name:** The name displayed in the agent phase item in the task list.
+# [YAML](#tab/yaml)
 
-* **Queue [Release (VSTS, TFS 2017 and newer), Build (Planned)]:** Use this option to specify the agent queue
-  in which the jobs will run. In the case where multiple jobs are created, all the jobs run on agents within the same agent queue.
+::: moniker range="vsts"
 
-* **Demands:** Use these settings to specify how an agent for
-  executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
-  For more details, see [Capabilities](../agents/agents.md#capabilities).
+The full syntax to specify an agent phase is:
 
-* **Execution plan:** See [Parallel and multiple execution using agent phases](#parallelexec).
+```yaml
 
-* **Skip download of artifacts [Release (TFS 2017 and newer)]:** When used in a release definition, you may choose to skip the
-  [download of artifacts](../definitions/release/artifacts.md#download)
-  during the job execution. Use this option if you want to implement
-  your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
+phases:
+- phase: string
+  queue:
+    name: string
+    demands: string | [ string ]
+    container: string
+    timeoutInMinutes: number
+    cancelTimeoutInMinutes: number
+    parallel: number
+    matrix: { string: { string: string } }
+  steps:
+    - script: echo Hello world
+```
 
-* **Select artifacts to download [Release (VSTS)]:** When used in a release definition, you can choose which of the
-  [artifacts](../definitions/release/artifacts.md#download) will be downloaded
-  during the job execution. Use this option if the tasks in a particular phase rely on only specific artifacts.
+The above syntax is necessary only if you want to define multiple phases or change the properties for a phase. You can skip the phase syntax if you need only a single phase with the standard options. 
+For example, the following YAML file runs a single phase on the Hosted VS2017 queue.
 
-  ![Selecting the artifacts to download](_img/select-artifacts.png)
+```yaml
+steps:
+- script: echo Hello world
+```
 
-* **Allow scripts to access OAuth token [Release (VSTS, TFS 2017 and newer), Build (Planned)]** Use this option if you
-  want to allow tasks running in this phase access to the
-  current VSTS or TFS OAuth security token.
-  This is useful in many scenarios, such as when you need to
-  run a custom PowerShell script that invokes the REST APIs
-  on VSTS - perhaps to create a work item or query a build for information.
+If you want to specify just the queue, you can do that and skip the other properties. For example:
 
-* **Run this phase [Release (VSTS, TFS 2018 Update 2 onwards), Build (Planned)]:** Use this option to run the tasks
-  in the phase only when specific [conditions](conditions.md) are met. Select a predefined
-  condition, or select "custom" and enter an [expression](conditions.md) that evaluates
-  to **true** or **false**. Nested expressions can be used, and the
-  expressions can access variables available in the release definition.
+```yaml
+phases:
+- phase: Run this job on a Linux agent
+  queue: Hosted Linux
+  steps:
+    ...
+```
 
-  ![Conditional phase execution option](_img/conditional-phase.png)
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
 
-* **Timeout:** Use this option if you
-  want to specify the timeout in minutes for jobs in this phase. A zero
-  value for this option means that the timeout is effectively
-  infinite and so, by default, jobs run until they complete or fail.
-  You can also set the timeout for each task individually -
-  see [task control options](tasks.md#controloptions).
+## Demands
+
+Use demands to specify what capabilities an agent must have to run jobs from your phase.
+
+# [Web](#tab/web)
+
+You have the option to specify demands in the definition, in the phases, or both.
+If you specify demands in both the definition and in a phase, the union of the two sets of demands is required for the system to select an agent.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+```yaml
+queue:
+  name: myPrivateAgents
+  demands: agent.os -equals Windows_NT
+steps:
+- script: echo hello world
+```
+
+Or multiple demands:
+
+```yaml
+queue:
+  name: myPrivateAgents
+  demands:
+  - agent.os -equals Darwin
+  - anotherCapability -equals somethingElse
+steps:
+- script: echo hello world
+```
+
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
+
+Learn more about [build and release agent capabilities](../agents/agents.md#capabilities).
+
+## Container image
+
+If you are using YAML, you can specify a Docker container to use for your agent phase. 
+
+# [Web](#tab/web)
+
+Containers are not yet supported in the web editor.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+For example, to run a script in a container:
+
+```yaml
+resources:
+  containers:
+  - container: dev1
+    image: ubuntu:16.04
+phases:
+- phase: phase_container
+  queue:
+    name: default
+    container: dev1
+  steps:
+  - script: printenv
+```
+
+To run your phase as four jobs on four different containers:
+
+```yaml
+resources:
+  containers:
+  - container: dev1
+    image: ubuntu:14.04
+  - container: dev2
+    image: private:ubuntu14
+    endpoint: privatedockerhub
+  - container: dev3
+    image: ubuntu:16.04
+    options: --cpu-count 4
+  - container: dev4
+    image: ubuntu:16.04
+    options: --hostname container-test --ip 192.168.0.1
+    localImage: true
+    env:
+      envVariable1: envValue1
+      envVariable2: envValue2
+phases:
+- phase: phase_container
+  queue:
+    name: default
+    container: $[variables['runtimeContainer']]
+    matrix:
+      container_1:
+        runtimeContainer: dev1
+      container_2:
+        runtimeContainer: dev2
+      container_3:
+        runtimeContainer: dev3
+      container_4:
+        runtimeContainer: dev4
+  steps:
+  - script: printenv
+```
+
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
+
+## Timeouts
+
+To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run. 
+Use the phase timeout setting to specify the limit in minutes for jobs run by this phase. 
+A zero value means that the jobs will run for an effectively unlimited amount of time.
+
+# [Web](#tab/web)
+
+Select the phase and then specify the timeout value. 
+
+On the **Options** tab you can specify default values for all phases in the definition. If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the definition options. If you specify a zero value, then the timeout value from the definition options is used. If the definition value is also set to zero, then there is no timeout.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
+
+```yaml
+queue:
+  timeoutInMinutes: number
+  cancelTimeoutInMinutes: number
+```
+
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
+
+::: moniker range="vsts"
+> Jobs targeting hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+::: moniker-end
+
+> You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). 
 
 <a name="parallelexec"></a>
-### Parallel and multiple execution using agent phases
+## Multi-configuration
 
-You can use multiple agents to run parallel jobs if you configure an agent phase to be **Multi-configuration** or **Multi-agent**.
+From a single phase you can run multiple jobs and multiple agents in parallel. Some examples include:
 
-![Using the parallel execution options](_img/parallel-exec.png)
+* **Multi-configuration builds:** An agent phase can be used in a build definition to build multiple configurations in parallel. For
+  example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../../tasks/build/visual-studio-build.md#multiconfiguration).
+  
+* **Multi-configuration deployments:** An agent phase can be used in an environment of a release definition to run multiple deployment
+  jobs in parallel, for example, to different geographic regions. 
+  
+* **Multi-configuration testing:** An agent phase can be used in a build definition or in an
+  environment of a release definition to run a set of tests in parallel - once for each test configuration. 
+  
+# [Web](#tab/web)
 
-> [!NOTE]
-> These options are available in Release (VSTS, TFS 2017 and newer) and Build (VSTS)
-
-Here are some examples where **multi-configuration** is appropriate:
-
-* **Multiple execution builds:** An agent phase can be used in a
-  build definition to build multiple configurations in parallel. For
-  example, you could build a C++ app for both debug and release
-  configurations on both x86 and x64 platforms. To run multiple jobs,
+To run multiple jobs using multi-configuration option,
   you identify a variable named a **multiplier**, and specify a list
   of values for that multiplier. A separate job is run for each value
-  in the list. For example, you can run two parallel jobs if you
-  define a variable named **BuildConfiguration** with the value
-  `Debug,Release` and specify that variable to be used as a
-  multiplier in the build definition. When you identify two variables
-  to act as a multiplier, each with two values, you effectively
-  create four jobs, one for each combination of values of the two
-  variables. For more details and an example of multi-configuration
-  build, see [Visual Studio Build](../../tasks/build/visual-studio-build.md).
-
-* **Multiple execution deployments:** An agent phase can be used
-  in an environment of a release definition to run multiple deployment
-  jobs in parallel. For example, to configure your application to be
-  load balanced across a site in US and a site in Europe, you can
-  define a variable named **Location** with the value `US,Europe`,
-  and specify that variable to be used as a multiplier in the agent
-  phase of the environment. If two agents are available, both the
-  jobs will be run simultaneously - one with **Location = US**, and
-  another with **Location = Europe**. If only one agent is available,
-  the first job is run, followed by the second job. When a multiplier
-  results in many jobs being created in parallel, you can also specify
-  the maximum number of agents that can be used for parallelism. For
-  example, if **Location** has ten values, you can restrict to five
-  sites being deployed in parallel by specifying **5** for the
-  maximum number of agents.
-
-* **Multiple execution testing:** An agent phase can be used in a build definition or in an
-  environment of a release definition to run a set of tests in
-  parallel - once for each test configuration. For example, to run a
-  suite of web tests, once for each browser, you can define a variable
-  named **Browser** with the value `IE,Chrome,Edge,Firefox` and
-  specify that variable to be used as a multiplier.
-  As the [agent demands](../agents/agents.md#capabilities) are specified only once for an agent phase, all agents
-  should be pre-installed with all the browsers. As with multiple executions
-  deployment, you can specify the maximum number of agents that can
-  be used at the same time for multi-configuration testing.
-
-With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. Here is an example of when you need multi-agent parallelism.
-
-* **Test slicing [Release (TFS2018, VSTS), Build (Planned)]:** An agent phase can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel. To leverage multi-agent parallelism, the tasks in the phase should be smart enough to understand the slice they belong to. The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents. Select **Multi-agent** and specify the number of agents to use.
-
-<a name="multipliers"></a>
-To use **Multipliers** for build or deployment, you must:
+  in the list. To use multipliers for build or deployment, you must:
 
 * Define one or more [variables](../definitions/release/variables.md)
   on the **Variables** tab of the definition or in a [variable group](../library/variable-groups.md).
   Each variable, known in this context as a _multiplier_ variable,
   must be defined as a comma-delimited list of the values you want
-  to pass individualy to the agents.
+  to pass individually to the agents.
 
 * Enter the name of the multiplier variable, without the **$** and parentheses, as the
   value of the **Multipliers** parameter.
@@ -200,89 +308,153 @@ a maximum of four agents at any one time:
 * **Multipliers** = `Location,Browser`
 * **Maximum number of agents** = `4`
 
-<a name="server-phase"></a>
-## Agentless phase
+With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
-<a name="maninterv"></a><a name="invokeapi"></a>
-Use an agentless phase in a build or release definition to run tasks that do
-not require an agent, and execute entirely on the VSTS or TFS.
-Only a few tasks, such as the
-[Manual Intervention](../../tasks/utility/manual-intervention.md)
-and [Invoke REST API](../../tasks/utility/http-rest-api.md)
-tasks, are supported in an agentless phase at present. The properties of
-an agentless phase are similar to those of the [agent phase](#agent-props).
+# [YAML](#tab/yaml)
 
-![Agentless phase properties](_img/phases-05.png)
+::: moniker range="vsts"
 
->At present you can add only one task to each agentless phase in your release definition.
+The `matrix` setting enables a phase to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following phase will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
 
-## Deployment group phase
+```yaml
+phases:
+- phase: Test
+  queue:
+    parallel: 2
+    matrix: 
+      US_IE:
+        Location: US
+        Browser: IE
+      US_Chrome:
+        Location: US
+        Browser: Chrome
+      Europe_Chrome:
+        Location: Europe
+        Browser: Chrome
+```
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
 
->[!NOTE]
-> Deployment group phases can only be used in release definitions. They cannot be used in build definitions.
+## Slicing
 
-Deployment groups make it easy to define groups of target servers for deployment,
-and install the required agent on each one. Tasks that you define in a
-deployment group phase run on some or all of the target servers, depending on
-the arguments you specify for the tasks and the phase itself.
+An agent phase can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel. To leverage slicing, the tasks in the phase should be smart enough to understand the slice they belong to. The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents. Variables `System.SliceNumber` and `System.SliceCount` are added to each job.
 
-You can select specific sets of servers from a deployment group to receive
-the deployment by specifying the machine tags that you have defined for each
-server in the deployment group. For more details, see [Deployment groups](../definitions/release/deployment-groups/index.md).
-You can also use the slider control to specify the proportion of the target servers that the process should
-deploy to at the same time. This ensures that the app running on these servers is
-capable of handling requests while the deployment is taking place.
+# [Web](#tab/web)
 
-![Dependency group properties](_img/depgroup-properties.png)
+Specify the **multi-agent** option on an agent phase to leverage slicing. The job is dispatched as many times as the number of agents you specify, and the variables `System.SliceNumber` and `System.SliceCount` are automatically set in each job.
 
-The timeout, agent download, and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
+# [YAML](#tab/yaml)
 
-## Multiple phases
+::: moniker range="vsts"
 
-You can add multiple phases to a build or release definition, and then add
-tasks to each one by selecting the target phase for the new tasks.
+When `parallel` is specified and `matrix` is not defined, the setting indicates how many jobs to dispatch. Variables `System.SliceNumber` and `System.SliceCount` are added to each job. The variables can then be used within your scripts to divide work among the jobs. See [Parallel and multiple execution using agent phases](#parallelexec).
 
-> Multiple phases can only be used in Release Management in VSTS and TFS 2017 and newer, and in Build in VSTS.
+```yaml
+phases:
+- phase: Test
+  queue:
+    parallel: 2
+```
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
 
-For example, the definition shown below divides the overall release
-execution into separate execution phases by using two agent phases
-and an agentless phase.
+## Phase variables
+If you are using YAML, variables can be specified on the phase. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the environment variable.
 
-![Configuring a manual intervention step](_img/phases-02.png)
+# [Web](#tab/web)
 
-In the example above:
+Phase variables are not yet supported in the web editor.
 
-1. The tasks in the first phase of the release run on an agent
-   and, after this phase is complete, the agent is released.
+# [YAML](#tab/yaml)
 
-1. The agentless phase contains a Manual Intervention task
-   that runs on the VSTS or TFS.
-   It does not execute on, or require, an agent or any target servers.
-   The Manual Intervention task displays its message and waits for a
-   "resume" or "reject" response from the user. In this example, if
-   the configured timeout is reached, the task will
-   automatically reject the deployment (set the timeout in the control options section to zero if
-   you do not want an automated response to be generated).   
+::: moniker range="vsts"
 
-1. If the release is resumed, tasks in the third phase run -
-   possibly on a different agent. If the release is rejected,
-   this phase does not run and the release is marked as failed.
+Here is an example of defining variables in a phase and using them within tasks.
 
-It's important to understand some of the consequences of
-phased execution:
+```yaml
+variables:
+  mySimpleVar: simple var value
+  "my.dotted.var": dotted var value
+  "my var with spaces": var with spaces value
 
-* Each phase may use different
-  agents. You should not assume that the state from an earlier
-  phase is available during subsequent phases.
+steps:
+- script: echo Input macro = $(mySimpleVar). Env var = %MYSIMPLEVAR%
+  condition: eq(variables['agent.os'], 'Windows_NT')
+- script: echo Input macro = $(mySimpleVar). Env var = $MYSIMPLEVAR
+  condition: in(variables['agent.os'], 'Darwin', 'Linux')
+- bash: echo Input macro = $(my.dotted.var). Env var = $MY_DOTTED_VAR
+- powershell: Write-Host "Input macro = $(my var with spaces). Env var = $env:MY_VAR_WITH_SPACES"
+```
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
 
-* The **Continue on Error** and **Always run** options for
-  tasks in each phase do not have any effect on tasks in
-  subsequent phases of the build or release. For example, setting
-  **Always run** on a task at the end of the first phase will
-  not guarantee that tasks in subsequent phases will run.
+<a name="artifact-download"></a>
+## Artifact download
+
+# [Web](#tab/web)
+
+In a release definition, you may choose to skip the
+  [download of artifacts](../definitions/release/artifacts.md#download)
+  during the job execution. Use this option if you want to implement
+  your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
+
+::: moniker range=">=tfs-2018"
+
+Alternatively, You can choose to download specific 
+  [artifacts](../definitions/release/artifacts.md#download) during the job execution in a release. Use this option if the tasks in a particular phase rely on only specific artifacts.
+
+::: moniker-end
+
+# [YAML](#tab/yaml)
+
+These options are not available in YAML.
+
+---
+
+## Access to OAuth token
+
+ You can allow tasks running in this phase to access current VSTS or TFS OAuth security token.
+  The token can be use to authenticate to the VSTS REST API.
+
+# [Web](#tab/web)
+
+Select the **Allow scripts to access OAuth token** option in the control options for the phase.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+OAuth token is always made available to the scripts that run through YAML. Here is an example:
+
+```yaml
+steps:
+- powershell: |
+    $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=4.1-preview"
+    Write-Host "URL: $url"
+    $definition = Invoke-RestMethod -Uri $url -Headers @{
+      Authorization = "Bearer $env:TOKEN"
+    }
+    Write-Host "Definition = $($definition | ConvertTo-Json -Depth 100)"
+  env:
+    TOKEN: $(system.accesstoken)
+```
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+---
 
 ## Related topics
 
-* [Tasks](tasks.md)
-* [Task groups](../library/task-groups.md)
-* [Specify conditions for running a task](conditions.md)
+* [Multiple phases](multiple-phases.md)
+* [Server phases](server-phases.md)
+* [Deployment group phases](deployment-group-phases.md)

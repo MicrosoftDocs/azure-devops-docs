@@ -51,7 +51,7 @@ If you're new to YAML builds, or to VSTS, we suggest you begin learning with eit
 |Pause/disable definition from web editor|Not yet|Yes|
 |Link work items|Not yet|Yes|
 |Create work item on failure|Not yet|Yes|
-|Allow scripts to access OAuth token|Not yet|Yes|
+|Allow scripts to access OAuth token|Yes|Yes|
 |Build job authorization scope|Not yet|Yes|
 |Checkout options: Tag sources, Report build status, Checkout submodules|Not yet|Yes|
 

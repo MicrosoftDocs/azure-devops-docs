@@ -122,7 +122,7 @@ Intervention** task in your pipeline.
    ![Adding an Agentless phase to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
    Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless phase](../concepts/process/phases.md#agentless-phase). 
+   [agentless phase](../concepts/process/server-phases.md). 
 
 1. Choose **+** in the **Agentless phase** bar and add a **Manual Intervention** task to the phase. 
 
