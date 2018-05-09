@@ -62,6 +62,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Scrum?](/azure/devops/agile/what-is-agile-development)
+- [What is Scrum?](/azure/devops/agile/what-is-scrum)
 - [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 
