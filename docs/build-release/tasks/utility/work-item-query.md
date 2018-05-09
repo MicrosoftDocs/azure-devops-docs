@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 ![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
-Can be used in only an [agentless phase](../../concepts/process/phases.md#agentless-phase) of a release definition.
+Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
 None
 

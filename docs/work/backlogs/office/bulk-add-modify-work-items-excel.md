@@ -32,7 +32,7 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test cases or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
+>You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
