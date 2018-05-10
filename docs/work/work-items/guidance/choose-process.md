@@ -17,7 +17,7 @@ ms.date: 03/02/2017
 
 Anytime you create a team project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XMl process models which support customization of team projects through the modification and import of XML definition files. 
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of team projects through the modification and import of XML definition files. 
 
 To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
 

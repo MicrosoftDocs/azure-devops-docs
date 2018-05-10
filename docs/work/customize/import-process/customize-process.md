@@ -290,7 +290,7 @@ For a description of state category and mappings, see [Workflow states and state
 <a id="wit-global-list-definitions"></a>
 ### Global lists
 
-For the Hosted XMl process model, the following limits are placed on global list import: 
+For the Hosted XML process model, the following limits are placed on global list import: 
 - Total of 64 global lists
 - Total of 512 items per list
 - Approximately 10K items can be defined total within all global lists specified across all WITs. 
