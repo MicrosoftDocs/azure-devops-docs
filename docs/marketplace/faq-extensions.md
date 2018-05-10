@@ -94,6 +94,35 @@ For example, the Test Manager extension requires at least Basic access.
 
 *	You assigned all the paid extensions that you bought.
 
+#### Q: Why can't I buy extensions not published by Microsoft?
+
+A: This might happen for these reasons:
+* Restricted countries
+
+  In some countries, you can't use specific Azure subscriptions to buy extensions from non-Microsoft publishers, although you can use those same subscriptions to buy Microsoft extensions. See Who can purchase applications and services sold/provisioned through the Azure Marketplace?
+  
+  If your country is supported in the Azure Marketplace, but not for the extension that you want to purchase, please contact the extension publisher.
+
+* Credit card required
+
+  Unless you have an Enterprise Agreement, you must have a credit card associated with your Azure subscription. For example, you can't use a Pay-As-You-Go subscription that's set up for invoice billing.
+  If you can't use your subscription, try using creating another Pay-As-You-Go Azure subscription with a credit card.
+  >[!NOTE]
+  >If you get this message: "This Azure subscription doesn't have a credit card on file. Please select another subscription", select another subscription, or click Create a new Azure subscription to continue.]
+
+* Enterprise Agreement purchases
+
+  To buy non-Microsoft extensions from the Visual Studio Marketplace, your Azure Enterprise Agreement administrator must enable Azure Marketplace purchases. Go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) >Manage > Enrollment, and enable Azure Marketplace.
+
+  >[!NOTE]
+  If you get this message: "The ordering account is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
+
+* Credit card problems
+  Purchases from non-Microsoft publishers are charged immediately, not at the end of your billing cycle, like Microsoft resources. This means that if your credit card is declined for any reason, your purchase won't be completed. If this happens, try your purchase again, or contact your credit card customer service.
+
+  >[!NOTE] 
+  >If you get this message: "The payment provider declined the transaction. Please check your credit card information", try your purchase again later, or contact your credit card customer service.]
+
 <a name="extension-access"></a>
 
 [!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
