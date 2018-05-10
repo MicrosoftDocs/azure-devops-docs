@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/14/2018  
 ---
 
@@ -210,12 +211,12 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Branch</td>
-<td>Used to link a work item to a build.</td>
+<td>Used to link a work item to a branch.</td>
 </tr>
 
 <tr>
 <td>Build</td>
-<td>Used to link a work item to a branch.</td>
+<td>Used to link a work item to a build.</td>
 </tr>
 
 <tr>
