@@ -2,14 +2,14 @@
 title: Workflow using multiple phases in Build and Release Management
 description: Understand how to configure a workflow using phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 497316D5-F657-4FFF-9F31-6DBEE9408D99
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build
+ms.prod: devops
+ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 5/3/2018
-monikerRange: ">= tfs-2017"
+monikerRange: '>= tfs-2017'
 ---
 
 # Multiple phases
