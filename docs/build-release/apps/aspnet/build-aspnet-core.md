@@ -94,8 +94,6 @@ steps:
 - script: echo hello world 
 ```
 
-This choice also offers parallel processing (fan out and fan in), and the ability to test and debug the process locally.
-
 [Learn more about YAML builds](../../actions/build-yaml.md).
 
 ::: moniker-end
