@@ -92,11 +92,25 @@ using Azure credentials or an Azure management certificate.
 
 *****
 
+<a name="sep-azure-rm-conditions"></a>
+
 <h3 id="sep-azure-rm">Azure Resource Manager service endpoint</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Service Principal Authentication (SPA). The dialog offers two modes:
-automated subscription detection and manual subscription definition.
+
+* **Automated subscription detection**. In this mode, VSTS and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in VSTS or TFS (including Microsoft accounts and School or Work accounts). 
+  If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of VSTS or TFS and sign in again
+  using the appropriate account credentials. For more information, see the [next section](#arm-auto-connect) of this topic.
+
+* **Manual subscription definition**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
+  Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in VSTS or TFS.
+  This is also a useful way to maximize security and limit access.
+  For more information, see the [following section](#arm-manual-connect) of this topic.     
+
+> **NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
+
+<a name="arm-auto-connect"></a>
 
 **Automated subscription detection**. 
 
@@ -105,17 +119,21 @@ You cannot use this version of the dialog to connect to an [Azure Government Clo
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
-| Subscription | Select an existing Azure subscription. [More information](#sep-azure-rm-conditions). |
+| Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md). |
+| Resource Group | If required, restrict the scope to a specific resource group within the subscription. |
 <p />
 
-<a name="sep-azure-rm-existingsp"></a>
 Selecting an existing subscription automatically creates a new Azure
-service principal that is assigned the **Contributor** role and so has
-access to all resources within the subscription. You can edit this service principal in the Azure portal,
-**Subscriptions | Users | Roles** section. For more details, see
+service principal that is assigned the **Contributor** role and so, by default, has
+access to all resources within the subscription. To maximize security when using this connection approach:
+
+* Select the **Resource Group** to which you want to limit access in the dialog (see table above).
+* Edit the service principal that is created in the Azure portal, **Subscriptions | Users | Roles** section afterwards. For more details, see
 [Azure Active Directory for developers](https://docs.microsoft.com/en-gb/azure/active-directory/develop/active-directory-developers-guide).
-Alternatively, you can use the following manual subscription definition approach and then restrict access rights by 
-using a specific service principal.
+* Use the [manual subscription definition](#arm-manual-connect) approach and then restrict access rights by using a specific service principal.
+
+<a name="arm-manual-connect"></a>
+<a name="sep-azure-rm-existingsp"></a>
 
 **Manual subscription definition**
 
@@ -133,35 +151,14 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-createsp). |
 <p />
 
-See [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
-
-**Restricting access rights**
-
-By default, Azure Resource Manager service endpoints that are automatically configured are created with **Contributor** role on the Azure subscription. 
-You can restrict the scope to a specific resource group within the subscription when you create an Azure Resource Manager service endpoint. 
-
- ![service endpoint dialog with resource group scope](_img/rm-endpoint-scope.png)
-
-If you prefer to use an existing service principal that has restricted scope, you must set up the endpoint using the full version of the dialog.
+You will typically use an existing service principal that has restricted scope.
 You can allocate service principal permissions at the subscription level, resource group level, or resource level. For details of how to restrict
 a service principal's access rights by using Role-Based Access Control
 ([RBAC](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-built-in-roles)) roles, see
 [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
-<a name="sep-azure-rm-conditions"></a>
-When you start to create the endpoint, the code interrogates Azure
-for subscriptions that are valid for the credentials you are currently
-signed into VSTS or TFS with. This applies to both Microsoft
-accounts and School or Work accounts. It displays a list of these for
-you to select the one you want to use.
-
-If no subscriptions are shown, or subscriptions other than the one you
-want to use, you must sign out of VSTS or TFS and sign in again
-using the appropriate account credentials. See also
-[Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
-
 <a name="sep-azure-rm-createsp"></a>
-**To use an existing service principal instead of creating a new one:**
+**To use the manual subscription definition dialog:**
 
 1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
    When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
