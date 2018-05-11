@@ -18,15 +18,9 @@ monikerRange: '>= tfs-2017'
 
 In this topic:
 
-::: moniker range="vsts"
-
 * **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < vsts"
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
@@ -40,13 +34,9 @@ In this topic:
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](../../accounts/requirements.md).
 
-::: moniker-end
-
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item Search.
-
-::: moniker range="vsts"
 
 <a name="config-ts"></a>
 ## Install Code Search in VSTS
@@ -61,10 +51,6 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 ## Uninstall Code Search in VSTS
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < vsts"
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
@@ -695,8 +681,6 @@ name of the server where Search is installed:
 1. [Pause all indexing](#pause-index) and see if performance recovers.
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
-
-::: moniker-end
 
 <a name="support"></a>
 
