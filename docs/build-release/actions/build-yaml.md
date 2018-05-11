@@ -42,10 +42,10 @@ If you're new to YAML builds, or to VSTS, we suggest you begin learning with eit
 |TFVC|No|Yes|
 |External Git, Subversion|No|Yes|
 |<center>**Capabilities**</center>|
+|Build in a container|Yes|Not yet|
 |Configuration as code|Yes|No|
-|Fan out and fan in|Yes|Not yet|
+|Fan out and fan in|Yes|Yes|
 |Variables across phases|Yes|Not yet|
-|Test and debug the process locally|Not yet|No|
 |Set environment variables for scripts (useful for secrets)|Yes|Not yet|
 |Badge enabled|Not yet|Yes|
 |Pause/disable definition from web editor|Not yet|Yes|

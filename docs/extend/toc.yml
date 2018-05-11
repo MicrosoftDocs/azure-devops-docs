@@ -6,7 +6,7 @@
       href: ./overview.md
 - name: Quickstarts
   items:
-  - name: Write your first extension
+  - name: Develop a web extension
     href: get-started/node.md
 - name: Samples
   items:
@@ -14,7 +14,7 @@
     href: develop/samples-overview.md
 - name: Concepts
   items:
-  - name: Extension points
+  - name: Extensibility points
     href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
