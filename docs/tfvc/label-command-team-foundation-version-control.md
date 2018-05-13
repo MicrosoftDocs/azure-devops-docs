@@ -27,7 +27,7 @@ To use the **label** command, you must have the **Label** permission set to **Al
 
     tf label labelname[@scope] [/owner:ownername] 
     itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 
-    [/child:(replace|merge)] [/recursive] [login:username,[password]] [/collection:TeamProjectCollectionUrl]	
+    [/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]	
 
 	tf label /delete labelname[@scope] 
     itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
@@ -82,7 +82,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\\<i>UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
