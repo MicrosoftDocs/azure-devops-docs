@@ -130,3 +130,5 @@
   items:
   - name: Collaborate with packages
     href: collaborate-with-packages.md
+  - name: Upgrading a legacy feed
+    href: reference/feed-upgrade-learn-more.md
