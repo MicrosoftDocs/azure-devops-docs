@@ -15,7 +15,6 @@ ms.date: 06/30/2017
 # Choosing the right authentication mechanism
 
 
-
 When writing an application which interfaces with VSTS, you will have to authenticate to gain acess to resources like REST APIs. We understand that VSTS offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
@@ -27,7 +26,7 @@ When writing an application which interfaces with VSTS, you will have to authent
 | Interactive client-side app targeting VSTS and TFS | Client application, that allows user interaction, authenticates VSTS and TFS users | Console application allowing VSTS and TFS users to see assigned bugs |  [Client Library (Interactive and Windows authentication)](/vsts/integrate/get-started/client-libraries/samples#authenticating-team-foundation-server) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DualSupportClientSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../../../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
+| [VSTS Extension](../../../extend/get-started/node.md) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
 
 
