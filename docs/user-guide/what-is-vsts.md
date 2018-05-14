@@ -1,7 +1,6 @@
 ---
-title: Describes the services provided by Visual Studio Team Services 
-titleSuffix: VSTS 
-description: Understand the fundamental services provided by Visual Studio Team Services  
+title: Plan, code, collaborate, and ship your applications faster with VSTS 
+description: What do you get when you sign up to use Visual Studio Team Services   
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
