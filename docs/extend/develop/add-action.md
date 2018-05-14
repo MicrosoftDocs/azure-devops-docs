@@ -18,10 +18,7 @@ In this example, we'll add an action to the query context menu in the work item 
 ## Prerequisites for this article
 
 - You'll need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
-- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about things such as:
-    - **The client SDK: [VSS.sdk.js](../get-started/node.md#client-sdk)**
-    - **The [extension manifest](../get-started/node.md#extension-manifest)**
-    - **General extension file structure**
+- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
 
 ## Update extension manifest file
 
