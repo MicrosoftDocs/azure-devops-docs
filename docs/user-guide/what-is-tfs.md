@@ -1,7 +1,7 @@
 ---
-title: Describes the services provided by Team Foundation Server
+title: Plan, code, collaborate, and ship code with Team Foundation Server   
 titleSuffix: TFS
-description: Understand the services that support Team Foundation Server 
+description: What do you get when you install and use the on-premises Team Foundation Server 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: conceptual
