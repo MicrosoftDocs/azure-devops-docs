@@ -12,8 +12,6 @@ ms.date: 2/1/2018
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
 # Upstream sources
 
 **VSTS** | **TFS 2018** | **TFS 2017**
@@ -112,6 +110,8 @@ When you enable an upstream source, packages installed from the upstream source 
 
 Saving can improve download performance and save network bandwidth, esp. for TFS servers located on internal networks.
 
+<a name="overriding-packages"></a>
+
 ## Overriding a package from an upstream source
 
 You can't publish any package-version that already exists in any upstream source enabled on your feed. For instance, if the nuget.org upstream source is enabled you cannot publish `Newtonsoft.Json 10.0.3` because that same package-version is already present on nuget.org.
@@ -136,30 +136,4 @@ For outages lasting more than 12 hours, which are quite infrequent, you will exp
 
 ## Legacy upstream source information
 
-Older Package Management feeds ("legacy feeds") use an older version of the npmjs.com upstream source and are also unable to use the nuget.org upstream source. 
-
-You can check if your feed is using the legacy upstream sources feature by attempting to [add the nuget.org upstream source](../nuget/upstream-sources.md#existing-feed). If you're unable to do so, your feed is a legacy feed. You can also determine if your feed is a legacy feed using the criteria below:
-
-- **TFS users:** all feeds created using TFS 2018 RTM and earlier are legacy feeds. 
-- **VSTS users** who enabled the **nuget.org upstream source** preview feature: all feeds created before the preview feature was enabled are legacy feeds
-- **VSTS users** who didn't enable the preview feature: all feeds created before the February update are legacy feeds
-
-In a future sprint, you'll be able to upgrade legacy feeds to use the new upstream sources features.
-
-### nuget.org upstream source
-
-Legacy feeds are unable to use the nuget.org upstream source.
-
-### Shadowing
-
-In the legacy npmjs.com upstream source, when a feed with upstreams enabled receives a query (e.g. `npm install lodash`), it will first check for local packages with that package ID. If there is at least one local version of that package ID, the upstream source will not be used. So, for example, if you publish `lodash@1.0.0` and run `npm install lodash@2.0.0`, the request will fail, even if 2.0.0 exists on npmjs.com and upstream sources are enabled.
-
-For the legacy upstream source, shadowing is permanent. So, in the example above, even if you later unpublish `lodash@1.0.0`, requests for any `lodash` version will only check the local feed. 
-
-### Online requirement
-
-When you run an `npm install` command, the feed will check to see if it has a cache of the package(s) requested by the `npm` client. If it does not, it will redirect the client to download the package from npmjs.com directly, and also cache the package in the background. The first client (where client is a developer machine or a build agent) to install a given npm package **will** need Internet access to successfully retrieve the package *or* they will have to run `npm install` twice. The first install will fail but cause the package to be cached; the second install will return the package from the cache.
-
-If you host your own build agents, they do not need access to the Internet for this feature. However, per the limitation above, a developer machine will need to first run `npm install` to cache the package(s) so that they're available to the build agents.
-
-For TFS users, the TFS server must be able to access the `https://registry.npmjs.org` domain in order to cache packages.
+Older Package Management feeds ("legacy feeds") use an older version of the npmjs.com upstream source and are also unable to use the nuget.org upstream source.
