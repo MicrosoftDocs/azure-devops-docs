@@ -60,7 +60,6 @@ choose the technologies and frameworks, then test your changes continuously in a
 
 ## Resources
 
-* [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/)
 * [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630)
 * [Manual and exploratory testing](../../manual-test/index.md)
 * [Load and performance testing](../../load-test/index.md) 
