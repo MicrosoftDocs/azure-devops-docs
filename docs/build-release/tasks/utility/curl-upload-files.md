@@ -1,6 +1,6 @@
 ---
-title: cURL Upload Files
-description: cURL Upload Files in VSTS and TFS 
+title: cURL Upload Files | VSTS or Team Foundation Server
+description: Learn all about how you can use cURL to upload files with supported protocols in VSTS and Team Foundation Server (TFS). 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

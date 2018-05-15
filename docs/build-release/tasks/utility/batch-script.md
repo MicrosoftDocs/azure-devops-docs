@@ -1,6 +1,6 @@
 ---
-title: Batch script
-description: How execute .bat or .cmd scripts when building code in VSTS and Team Foundation Server TFS
+title: Batch script | VSTS or Team Foundation Server
+description: Learn all about how you can execute .bat or .cmd scripts when building your code in VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

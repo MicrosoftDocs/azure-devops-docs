@@ -1,6 +1,6 @@
 ---
 title: Microsoft Release Management 2015 Server and Client Version - Help Contents
-description: Create managed continuous deployment pipelines using Release Management 2015 (server and client version)
+description: Create managed continuous deployment pipelines in VSTS or TFS using Release Management 2015 (server and client version)
 ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
 ms.prod: devops
 ms.technology: devops-cicd

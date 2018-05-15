@@ -1,6 +1,6 @@
 ---
 title: Copy and publish build artifacts
-description: How to copy build artifacts to a staging folder and publish them with VSTS and Team Foundation Server TFS
+description: Learn about how you can copy build artifacts to a staging folder and publish them with VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,6 +1,6 @@
 ---
 title: Deploy a web app from VSTS or TFS to Azure App Services
-description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Microsoft Release Management
+description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Microsoft Release Management in VSTS and TFS
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 ms.prod: devops
 ms.technology: devops-cicd

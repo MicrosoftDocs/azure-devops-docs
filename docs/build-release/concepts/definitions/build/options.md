@@ -1,6 +1,6 @@
 ---
-title: Build definition options
-description: Build options on VSTS and Team Foundation Server
+title: Build definition options | VSTS or Team Foundation Server
+description: Learn about building your code or deploying your software using build options on VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

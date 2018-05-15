@@ -1,6 +1,6 @@
 ---
-title: Deploy an agent on Windows
-description: Use Windows Build and Release agents to build and deploy your Windows and Azure code.
+title: Deploy a build and release agent on Windows
+description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for VSTS and TFS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

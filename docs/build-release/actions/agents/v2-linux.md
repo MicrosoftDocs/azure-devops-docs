@@ -1,6 +1,6 @@
 ---
-title: Deploy an agent on Linux
-description: Deploy an agent on Linux
+title: Deploy a build and release agent on Linux
+description: Learn how you can easily deploy a private build and release agent on Linux for VSTS and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,6 +1,6 @@
 ---
-title: Build your Xcode app
-description: Build and test Xcode projects with VSTS or Team Foundation Server
+title: Build your Xcode app | VSTS or Team Foundation Server
+description: Learn how you can use the continuous integration (CI) process in VSTS or Team Foundation Server (TFS) to build and test Xcode projects
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a

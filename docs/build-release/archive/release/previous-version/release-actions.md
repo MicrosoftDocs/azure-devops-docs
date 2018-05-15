@@ -1,6 +1,6 @@
 ---
 title: Release actions to deploy an app with Release Management
-description: Release actions in VSTS and TFS
+description: Learn about the release actions to define the deployment sequence for an app in VSTS and Team Foundation Server (TFS).
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: devops
 ms.technology: devops-cicd
