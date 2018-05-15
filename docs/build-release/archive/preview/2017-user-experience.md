@@ -1,6 +1,6 @@
 ---
-title: New Build Editor
-description: A preview of a new user experience for Team Foundation Build (TFBuild) on VSTS
+title: New Build Editor | VSTS or Team Foundation Server
+description: Preview this version of a new experience for creating and editing build definitions for Team Foundation Build (TFBuild) on VSTS
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

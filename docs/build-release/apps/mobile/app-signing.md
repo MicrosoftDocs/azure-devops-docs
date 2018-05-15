@@ -1,6 +1,6 @@
 ---
-title: Sign Your Mobile App
-description: Sign your mobile app during CI with VSTS or Team Foundation Server
+title: Sign Your Mobile App During CI | VSTS or Team Foundation Server
+description: How to sign your mobile app during CI with VSTS or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

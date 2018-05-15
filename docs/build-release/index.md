@@ -1,5 +1,5 @@
 ---
-title: CI/CD index to content | VSTS & TFS    
+title: CI/CD index to content for VSTS and Team Foundation Server | VSTS & TFS    
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd

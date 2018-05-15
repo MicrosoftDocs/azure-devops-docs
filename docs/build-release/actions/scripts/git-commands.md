@@ -1,6 +1,6 @@
 ---
 title: Run Git commands in a script
-description: Run a Git command in a build script on Team Foundation Server or VSTS.
+description: Learn how you can run a Git command in a build script for your workflow by using Team Foundation Server (TFS) or VSTS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
