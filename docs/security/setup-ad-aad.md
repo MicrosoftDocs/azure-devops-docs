@@ -38,6 +38,8 @@ Use this topic to access articles that will show you how to:
 * [Connect VSTS account to Azure AD](../accounts/connect-account-to-aad.md)
 * [Disconnect VSTS account from Azure AD](../accounts/disconnect-account-from-aad.md)
 * [Delete users from VSTS connected to Azure AD](../accounts/delete-users-from-services-aad.md)
+* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
+
 
 ## Set up Active Directory for use with TFS
 
@@ -58,4 +60,4 @@ Use these resources to learn about installing Active Directory. Typically, you s
 * [Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS](../billing/set-up-billing-for-your-account-vs.md) 
 * [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
 * [Get started with Azure AD](https://docs.microsoft.com/azure/active-directory/get-started-azure-ad)
-* [Requirements and compatibility](../tfs-server/requirements.md)
+ 
