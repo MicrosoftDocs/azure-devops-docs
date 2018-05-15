@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2017'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/JenkinsQueueJobV2.2.md)]
+
 ## Arguments
 
 <table>
@@ -83,25 +85,6 @@ None
 </tr>
 
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: JenkinsQueueJob@2
-  inputs:
-    serverEndpoint: 
-    jobName: 
-    #isMultibranchJob: # Optional
-    #multibranchPipelineBranch: # Required when isMultibranchJob == True
-    captureConsole: 
-    #capturePipeline: # Required when captureConsole == True
-    isParameterizedJob: 
-    #jobParameters: # Optional
-```
-
-::: moniker-end
 
 ## Team Foundation Server Plug-in
 

@@ -25,6 +25,8 @@ The build agent must have the following capability:
 
  * Apache Ant
 
+[!INCLUDE [temp](../_shared/yaml/ANT.1.md)]
+
 ## Arguments
 
 <table>
@@ -107,33 +109,6 @@ The build agent must have the following capability:
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: Ant@1
-  inputs:
-    #buildFile: 'build.xml' 
-    #options: # Optional
-    #targets: # Optional
-    #publishJUnitResults: true 
-    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
-    #testRunTitle: # Optional
-    #codeCoverageToolOptions: 'None' # Optional. Options: none, cobertura, jaCoCo
-    #codeCoverageClassFilesDirectories: '.' # Required when codeCoverageToolOptions != None
-    #codeCoverageClassFilter: # Optional
-    #codeCoverageSourceDirectories: # Optional
-    #codeCoverageFailIfEmpty: false # Optional
-    #antHomeDirectory: # Optional
-    #javaHomeOption: 'JDKVersion' # Options: jDKVersion, path
-    #jdkVersionOption: 'default' # Optional. Options: default, 1.10, 1.9, 1.8, 1.7, 1.6
-    #jdkUserInputDirectory: # Required when javaHomeOption == Path
-    #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/azuremonitoralerts.png) Configure alerts on available metrics for an Azure resource
 
+[!INCLUDE [temp](../_shared/yaml/AzureMonitorAlertsV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -33,26 +35,6 @@ To add or modify alerts, click on […] button.</td></tr>
 <tr><td>Additional administrator emails</td><td>(Optional) Add additional email addresses separated by semicolons(;) if you want to send email notification to additional people (whether or not you checked the "subscription owners..." box).</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure Monitor Alerts
-# Configure alerts on available metrics for an Azure resource
-- task: AzureMonitorAlerts@0
-  inputs:
-    azureSubscription: 
-    resourceGroupName: 
-    #resourceType: 'Microsoft.Insights/components' # Options: microsoft.Insights/Components, microsoft.Web/Sites, microsoft.Storage/StorageAccounts, microsoft.Compute/VirtualMachines
-    resourceName: 
-    alertRules: 
-    #notifyServiceOwners: # Optional
-    #notifyEmails: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

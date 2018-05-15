@@ -30,6 +30,8 @@ You can install an Apple provisioning profile that is:
 
 xcode
 
+[!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -37,18 +39,3 @@ xcode
 | Provisioning Profile Location (**VSTS**) | Select the location of the provisioning profile to install. The provisioning profile can be uploaded to **Secure Files** or stored in your source repository or a local path on the agent. |
 | Provisioning Profile | Select the provisioning profile that was uploaded to **Secure Files** to install on the macOS agent (or) Select the provisioning profile from the source repository or specify the local path to a provisioning profile on the macOS agent.|
 | Remove Profile After Build | Select to specify that the provisioning profile should be removed from the agent after the build or release is complete. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: InstallAppleProvisioningProfile@1
-  inputs:
-    #provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
-    #provProfileSecureFile: # Required when provisioningProfileLocation == SecureFiles
-    #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
-    #removeProfile: # Optional
-```
-
-::: moniker-end

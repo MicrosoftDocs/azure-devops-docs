@@ -25,6 +25,7 @@ monikerRange: '>= tfs-2015'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/XamarinTestCloud.1.md)]
 
 ## Arguments
 
@@ -44,43 +45,17 @@ None
 | **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: XamarinTestCloud@1
-  inputs:
-    appFile: 
-    #dsymFile: # Optional
-    teamApiKey: 
-    email: 
-    devices: 
-    #series: 'master' 
-    testAssemblyDirectory: 
-    #parallelizationOption: 'none' # Options: none, --Fixture-Chunk, --Test-Chunk
-    #localeOption: 'en_US' # Options: da_DK, nl_NL, en_GB, en_US, fr_FR, de_DE, ja_JP, ru_RU, es_MX, es_ES, user
-    #userDefinedLocale: # Optional
-    #testCloudFile: '**/packages/**/tools/test-cloud.exe' 
-    #optionalArgs: # Optional
-    #publishNUnitResults: true # Optional
-```
-
-::: moniker-end
-
-## Example 
+## Example
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
 
-
 ## Q&A
-<!-- BEGINSECTION class="md-qanda" -->
 
+<!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I add a Xamarin UITest to my solution?
 
 [Adding Xamarin.UITest to a Solution](https://developer.xamarin.com/guides/testcloud/uitest/adding-uitest/)
-
 
 [!INCLUDE [temp](../_shared/qa-minimatch.md)]
 

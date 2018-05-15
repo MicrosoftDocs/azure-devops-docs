@@ -25,7 +25,8 @@ The build agent must have the following capabilities:
 
  * Java JDK 
  
- 
+ [!INCLUDE [temp](../_shared/yaml/AndroidSigning.2.md)]
+
  ## Arguments
 
 <table>
@@ -106,26 +107,6 @@ Enter the key password for the alias and keystore file.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AndroidSigning@2
-  inputs:
-    #apkFiles: '**/*.apk' 
-    #jarsign: true # Optional
-    #jarsignerKeystoreFile: # Required when jarsign == True
-    #jarsignerKeystorePassword: # Optional
-    #jarsignerKeystoreAlias: # Optional
-    #jarsignerKeyPassword: # Optional
-    #jarsignerArguments: '-verbose -sigalg MD5withRSA -digestalg SHA1' # Optional
-    #zipalign: true # Optional
-    #zipalignFile: # Optional
-```
-
-::: moniker-end
 
 ## Related steps
 

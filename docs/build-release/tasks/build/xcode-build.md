@@ -219,7 +219,6 @@ You can specify this argument if you have selected Use xctool and included `test
 
 [Build and test Xcode projects](../../apps/mobile/xcode-ios.md)
 
-
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 

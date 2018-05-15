@@ -19,6 +19,8 @@ monikerRange: '>= tfs-2015'
 
 ![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
 
+[!INCLUDE [temp](../_shared/yaml/BatchScriptV1.1.md)]
+
 ## Arguments
 
 <table>
@@ -57,22 +59,6 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: BatchScript@1
-  inputs:
-    filename: 
-    #arguments: # Optional
-    #modifyEnvironment: False # Optional
-    #workingFolder: # Optional
-    #failOnStandardError: false # Optional
-```
-
-::: moniker-end
 
 ## Example
 

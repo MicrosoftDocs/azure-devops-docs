@@ -12,7 +12,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Xamarin license
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]

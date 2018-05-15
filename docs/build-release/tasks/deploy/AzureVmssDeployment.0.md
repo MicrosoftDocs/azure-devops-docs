@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
 
+[!INCLUDE [temp](../_shared/yaml/AzureVmssDeploymentV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -30,29 +32,6 @@ monikerRange: 'VSTS'
 <tr><td>Skip Archiving custom scripts</td><td>(Optional) By default, this task creates a compressed archive of directory containing custom scripts. This improves performance and reliability while uploading to azure storage. If not selected, archiving will not be done and all files will be inidividually uploaded.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure VM scale set Deployment
-# Deploy Virtual Machine scale set image
-- task: AzureVmssDeployment@0
-  inputs:
-    azureSubscription: 
-    #action: 'Update image' # Options: update Image, configure Application Startup
-    vmssName: 
-    vmssOsType: # Options: windows, linux
-    imageUrl: 
-    #customScriptsDirectory: # Optional
-    #customScript: # Optional
-    #customScriptArguments: # Optional
-    #customScriptsStorageAccount: # Optional
-    #skipArchivingCustomScripts: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

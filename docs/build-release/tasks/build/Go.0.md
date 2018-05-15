@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/go.png) Get, build, test a go application, or run a custom go command.
 
+[!INCLUDE [temp](../_shared/yaml/Go.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -24,23 +26,6 @@ monikerRange: 'VSTS'
 <tr><td>Working Directory</td><td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Go
-# Get, build, test a go application, or run a custom go command.
-- task: Go@0
-  inputs:
-    #command: 'get' # Options: get, build, test, custom
-    #customCommand: # Required when command == Custom
-    #arguments: # Optional
-    workingDirectory: 
-```
-
-::: moniker-end
 
 ## Q&A
 

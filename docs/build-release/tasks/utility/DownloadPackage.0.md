@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/downloadpackage.png) Download a package from a Package Management feed in VSTS or TFS.  Requires the Package Management extension.
 
+[!INCLUDE [temp](../_shared/yaml/DownloadPackageV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -24,23 +26,6 @@ monikerRange: 'VSTS'
 <tr><td>Destination directory</td><td>(Required) Path on the agent machine where the package will be downloaded</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Download Package
-# Download a package from a Package Management feed in VSTS or TFS.  Requires the Package Management extension.
-- task: DownloadPackage@0
-  inputs:
-    feed: 
-    definition: 
-    version: 
-    #downloadPath: '$(System.ArtifactsDirectory)' 
-```
-
-::: moniker-end
 
 ## Q&A
 

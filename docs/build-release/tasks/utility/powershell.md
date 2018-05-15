@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2015'
 
 DotNetFramework
 
+[!INCLUDE [temp](../_shared/yaml/PowerShellV2.2.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -31,25 +33,6 @@ DotNetFramework
 | Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PowerShell@2
-  inputs:
-    #targetType: 'filePath' # Optional. Options: filePath, inline
-    #filePath: # Required when targetType == FilePath
-    #arguments: # Optional
-    #script: '# Write your powershell commands here.Write-Host Hello World# Use the environment variables input below to pass secret variables to this script.' # Required when targetType == Inline
-    #errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
-    #failOnStderr: false # Optional
-    #ignoreLASTEXITCODE: false # Optional
-    #workingDirectory: # Optional
-```
-
-::: moniker-end
 
 ## Examples
 

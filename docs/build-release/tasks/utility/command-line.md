@@ -25,6 +25,8 @@ monikerRange: '>= tfs-2015'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/CmdLineV2.2.md)]
+
 ## Arguments
 
 <table>
@@ -60,20 +62,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CmdLine@2
-  inputs:
-    #script: 'echo Write your commands hereecho Use the environment variables input below to pass secret variables to this script' 
-    #workingDirectory: # Optional
-    #failOnStderr: false # Optional
-```
-
-::: moniker-end
 
 ## Example
 
