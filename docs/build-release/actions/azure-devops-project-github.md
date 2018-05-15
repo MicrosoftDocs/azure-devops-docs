@@ -1,5 +1,5 @@
 ---
-title: Create a CI/CD pipeline for your existing code with the Azure DevOps Project | VSTS Tutorial
+title: Create a CI/CD pipeline for your existing code with Azure DevOps Project | VSTS Tutorial
 description: The DevOps Project makes it easy to get started on Azure. It helps you use your own code and GitHub repository to launch an app on an Azure service of your choice in few quick steps.
 services: vsts
 documentationcenter: vs-devops-build

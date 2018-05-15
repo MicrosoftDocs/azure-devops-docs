@@ -1,6 +1,6 @@
 ---
 title: Set up continuous testing for your builds
-description: Set up continuous testing for your builds in Microsoft VSTS and TFS with a build or release definition 
+description: Set up continuous testing for your builds in Microsoft VSTS and Team Foundation Server (TFS) with a build or release definition 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.prod: devops
 ms.technology: devops-cicd

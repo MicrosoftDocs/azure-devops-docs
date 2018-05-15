@@ -1,6 +1,6 @@
 ---
-title: Node Tool Installer
-description: Node Tool Installer for VSTS and TFS 
+title: Node Tool Installer | VSTS or Team Foundation Server
+description: Learn how to use the Node Tool Installer for VSTS and TFS to find, download, and cache the specified version of Node.js.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

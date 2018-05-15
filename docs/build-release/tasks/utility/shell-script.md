@@ -1,6 +1,6 @@
 ---
-title: Shell Script
-description: How to execute a bash script when building code in VSTS and Team Foundation Server TFS
+title: Shell Script | VSTS or Team Foundation Server
+description: Learn all about how you can execute a bash script when you are building your code in VSTS and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

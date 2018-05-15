@@ -1,5 +1,5 @@
 ---
-title: Gulp build and release task
+title: Gulp build and release task | VSTS or Team Foundation Server
 description: Gulp build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Automatically generate a CI/CD pipeline to deploy an ASP.NET app
-description: Automatically generate a CI/CD pipeline to deploy an ASP.NET app from VSTS or TFS
+description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET app from VSTS or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual

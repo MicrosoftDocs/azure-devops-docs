@@ -1,6 +1,6 @@
 ---
 title: Deploy an agent on Windows for TFS 2015
-description: Use Build and Release agents for TFS 2015 to build or deploy your Windows and Azure applications.
+description: Use Build and Release agents for Team Foundation Server (TFS) 2015 to build or deploy your Windows and Azure applications.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

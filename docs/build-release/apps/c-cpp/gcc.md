@@ -1,6 +1,6 @@
 ---
-title: Build your GCC C/C++ app
-description: Build your GCC C/C++ app with Team Foundation Server and VSTS
+title: Build your GCC C/C++ app | VSTS or Team Foundation Server
+description: Learn how you can use continuous integration in Team Foundation Server (TFS) or VSTS to automatically build your GCC C/C++ app.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
