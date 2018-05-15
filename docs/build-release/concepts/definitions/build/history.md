@@ -1,6 +1,6 @@
 ---
-title: Build definition history
-description: You can learn what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS)
+title: Build definition history | VSTS or Team Foundation Server
+description: Learn about how you can determine what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

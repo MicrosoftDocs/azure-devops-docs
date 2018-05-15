@@ -1,6 +1,6 @@
 ---
 title: CI/CD Concurrent Jobs in Team Services
-description: Build and Release Management concurrent job concepts for Visual Studio Team Services (VSTS)
+description: Learn about using Release Management concurrent job concepts to run concurrent jobs for Visual Studio Team Services (VSTS)
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: devops

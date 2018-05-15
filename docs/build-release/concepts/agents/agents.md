@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
-title: Build and Release Agents
+title: Build and Release Agents | VSTS or Team Foundation Server
 ms.topic: conceptual
-description: Build and Release Agents in VSTS and Team Foundation Server
+description: Learn about building your code or deploying your software using Build and Release Agents in VSTS and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge

@@ -1,6 +1,6 @@
 ---
 title: SSH deployment task for Microsoft VSTS and TFS
-description: SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+description: SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and Team Foundation Server (TFS)
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.prod: devops
 ms.technology: devops-cicd

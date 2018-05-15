@@ -1,6 +1,6 @@
 ---
 title: Use Team Build to install and publish npm packages
-description: Working with npm packages and feeds in Team Build
+description: Learn all about the basics of using Team Build to work with npm packages in Package Management feeds in VSTS or Team Foundation Server 
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
 ms.technology: devops-cicd
