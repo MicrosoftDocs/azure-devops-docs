@@ -316,6 +316,7 @@ Scenarios where you may want to consume Package Management artifacts are:
 
 When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
 You can choose to pick up the latest version of the package, use a specific version, or select the version at the time of release creation.
+During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the phase execution. 
 
 The following features are available when using Package Management sources:
 

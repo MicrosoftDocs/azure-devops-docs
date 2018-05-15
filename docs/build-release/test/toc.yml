@@ -48,8 +48,6 @@
     href: reference-qa.md
 - name: Resources
   items:
-  - name: DevOps Rangers
-    href: https://vsartestreleaseguide.codeplex.com/
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Manual and exploratory testing
