@@ -25,6 +25,8 @@ This task enables you to connect to a remote machine using SSH and run commands 
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
+[!INCLUDE [temp](../_shared/yaml/SshV0.0.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -37,25 +39,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: SSH@0
-  inputs:
-    sshEndpoint: 
-    #runOptions: 'commands' # Options: commands, script, inline
-    #commands: # Required when runOptions == Commands
-    #scriptPath: # Required when runOptions == Script
-    #inline: # Required when runOptions == Inline
-    #args: # Optional
-    #failOnStdErr: # Optional
-```
-
-::: moniker-end
-
-##See also
+## See also
 
 * [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)
 

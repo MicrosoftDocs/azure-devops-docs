@@ -50,6 +50,8 @@ None
   See [Install the Azure CLI](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/).
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevent environment variables are updated.
 
+[!INCLUDE [temp](../_shared/yaml/AzureCLIV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -64,24 +66,6 @@ None
 | **Advanced - Working Directory** | Optional. The working directory in which the script will execute. If not specified, this will be the folder containing the script file. |
 | **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AzureCLI@1
-  inputs:
-    azureSubscription: 
-    #scriptLocation: 'scriptPath' # Options: inlineScript, scriptPath
-    #scriptPath: # Required when scriptLocation == ScriptPath
-    #inlineScript: # Required when scriptLocation == InlineScript
-    #arguments: # Optional
-    #workingDirectory: # Optional
-    #failOnStandardError: false # Optional
-```
-
-::: moniker-end
 
 ## Related tasks
 

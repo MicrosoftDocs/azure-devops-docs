@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 
+[!INCLUDE [temp](../_shared/yaml/DecryptFileV1.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -25,24 +27,6 @@ monikerRange: 'VSTS'
 <tr><td>Working directory</td><td>(Optional) Working directory for decryption. Defaults to the root of the repository.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Decrypt File (OpenSSL)
-# A thin utility task for file decryption using OpenSSL.
-- task: DecryptFile@1
-  inputs:
-    #cipher: 'des3' 
-    inFile: 
-    passphrase: 
-    #outFile: # Optional
-    #workingDirectory: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

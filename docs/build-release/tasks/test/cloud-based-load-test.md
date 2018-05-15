@@ -34,6 +34,8 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+[!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -44,26 +46,6 @@ The build agent must have the following capabilities:
 | **Load test file** | Required. The name of the load test file (such as **myfile.loadtest**) to be executed as part of this task. This allows you to have more than one load test file and choose the one to execute based on the deployment environment or other factors. |
 | **Number of permissible threshold violations** | Optional. The number of critical violations that must occur for the load test to be deemed unsuccessful, aborted, and marked as failed. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CloudLoadTest@1
-  inputs:
-    connectedServiceName:
-    #TestDrop: $(System.DefaultWorkingDirectory)
-    LoadTest:
-    #activeRunSettings: useFile # useFile (default), changeActive
-    runSettingName:
-    testContextParameters:
-    TestSettings:
-    ThresholdLimit:
-    #MachineType: 0 # 0 (default), 2
-```
-
-::: moniker-end
 
 ## Examples
 

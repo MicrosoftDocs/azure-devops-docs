@@ -25,6 +25,8 @@ monikerRange: '>= tfs-2015'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.0.md)]
+
 ## Arguments
 
 <table>
@@ -42,20 +44,6 @@ Working directory. If you leave it blank, the working directory is the root of y
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CocoaPods@0
-  inputs:
-    #workingDirectory: # Optional
-    #forceRepoUpdate: false
-    #projectDirectory: # Optional
-```
-
-::: moniker-end
 
 ## Q & A
 

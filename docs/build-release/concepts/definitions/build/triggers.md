@@ -27,8 +27,6 @@ Select this trigger if you want the build to run whenever someone checks in code
 
 Select this check box if you have a lot of team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
-If you are using batched changes, you can also specify a maximum number of concurrent builds per branch.
-
 > You can batch changes when your code is in Git in the team project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
 
 ### Git filters

@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2015'
 
 curl
 
+[!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.2.md)]
+
 ## Arguments
 
 <table>
@@ -77,26 +79,6 @@ Arguments to pass to cURL.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: cURLUploader@2
-  inputs:
-    files: 
-    #authType: 'ServiceEndpoint' # Optional. Options: serviceEndpoint, userAndPass
-    #serviceEndpoint: # Required when authType == ServiceEndpoint
-    #username: # Optional
-    #password: # Optional
-    #url: # Required when authType == UserAndPass
-    #remotePath: 'upload/$(Build.BuildId)/' # Optional
-    #options: # Optional
-    #redirectStderr: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

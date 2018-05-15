@@ -31,6 +31,8 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
+[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.2.md)]
+
 ## Restore NuGet packages
 
 ### Demands
@@ -109,7 +111,6 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         |-- ConsoleApplication1.csproj
 ```
 
-
 ##### [Build](../../index.md) steps
 
 <table>
@@ -137,6 +138,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 </table>
 
 ## Pack NuGet packages
+
 ### Demands
 
 None
@@ -274,6 +276,8 @@ When you push packages to a Package Management feed, you can also publish symbol
 This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/vsts/integrate/get-started/auth/tfs-basic-auth) for more details.
 
 ## Custom NuGet command
+
+[!INCLUDE [temp](../_shared/yaml/NuGetV0.0.md)]
 
 ### Arguments
 <table>
@@ -430,50 +434,6 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Task version | VSTS                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: NuGetCommand@2
-  inputs:
-    #command: 'restore' # Options: restore, pack, push, custom
-    #restoreSolution: '**/*.sln' # Required when command == Restore
-    #feedsToUse: 'select' # Options: select, config
-    #vstsFeed: # Required when feedsToUse == Select
-    #includeNuGetOrg: true # Required when feedsToUse == Select
-    #nugetConfigPath: # Required when feedsToUse == Config
-    #externalFeedCredentials: # Optional
-    #noCache: false 
-    #disableParallelProcessing: false 
-    #restoreDirectory: # Optional
-    #verbosityRestore: 'Detailed' # Options: quiet, normal, detailed
-    #packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg' # Required when command == Push
-    #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
-    #publishVstsFeed: # Required when command == Push && NuGetFeedType == Internal
-    #allowPackageConflicts: # Optional
-    #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
-    #verbosityPush: 'Detailed' # Options: quiet, normal, detailed
-    #packagesToPack: '**/*.csproj' # Required when command == Pack
-    #configuration: '$(BuildConfiguration)' # Optional
-    #packDestination: '$(Build.ArtifactStagingDirectory)' # Optional
-    #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
-    #includeReferencedProjects: false # Optional
-    #versionEnvVar: # Required when versioningScheme == ByEnvVar
-    #majorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber
-    #minorVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
-    #patchVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
-    #packTimezone: 'utc' # Required when versioningScheme == ByPrereleaseNumber# Options: utc, local
-    #includeSymbols: false # Optional
-    #toolPackage: # Optional
-    #buildProperties: # Optional
-    #basePath: # Optional
-    #verbosityPack: 'Detailed' # Options: quiet, normal, detailed
-    #arguments: # Required when command == Custom
-```
-
-::: moniker-end
 
 ## Q & A
 

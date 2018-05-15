@@ -42,9 +42,9 @@ in the firewall, and install the test certificate.
 
 ## Demands
 
-<ul>
-<li>none</li>
-</ul>
+None
+
+[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.2.md)]
 
 ## Arguments
 
@@ -74,40 +74,6 @@ in the firewall, and install the test certificate.
 | **Output - Storage Container URI** | Optional. The name of a variable that will be updated with the URI of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. |
 | **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AzureFileCopy@1
-  inputs:
-    sourcePath: 
-    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
-    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
-    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
-    destination: # Options: azureBlob, azureVMs
-    #classicStorage: # Required when azureConnectionType == ConnectedServiceName
-    #storage: # Required when azureConnectionType == ConnectedServiceNameARM
-    #containerName: # Required when destination == AzureBlob
-    #blobPrefix: # Optional
-    #cloudService: # Required when azureConnectionType == ConnectedServiceName && Destination == AzureVMs
-    #resourceGroup: # Required when azureConnectionType == ConnectedServiceNameARM && Destination == AzureVMs
-    #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
-    #machineNames: # Optional
-    #vmsAdminUserName: # Required when destination == AzureVMs
-    #vmsAdminPassword: # Required when destination == AzureVMs
-    #targetPath: # Required when destination == AzureVMs
-    #additionalArguments: # Optional
-    #enableCopyPrerequisites: false # Optional
-    #copyFilesInParallel: true # Optional
-    #cleanTargetBeforeCopy: false # Optional
-    #skipCACheck: true # Optional
-    #outputStorageUri: # Optional
-    #outputStorageContainerSasToken: # Optional
-```
-
-::: moniker-end
 
 ## Related tasks
 

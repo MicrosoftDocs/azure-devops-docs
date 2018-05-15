@@ -12,7 +12,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Utility: Update Service Fabric App Versions
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
@@ -26,6 +25,8 @@ specified in the manifest files, in an Azure Service Fabric application package.
 ## Demands
 
 None
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.2.md)]
 
 ## Arguments
 
@@ -106,28 +107,6 @@ None
 </table>
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ServiceFabricUpdateManifests@2
-  inputs:
-    #updateType: 'Manifest versions' # Options: manifest Versions, docker Image Settings
-    applicationPackagePath: 
-    #versionSuffix: '.$(Build.BuildNumber)' # Required when updateType == Manifest Versions
-    #versionBehavior: 'Append' # Optional. Options: append, replace
-    #updateOnlyChanged: false # Required when updateType == Manifest Versions
-    #pkgArtifactName: # Optional
-    #logAllChanges: true # Optional
-    #compareType: 'LastSuccessful' # Optional. Options: lastSuccessful, specific
-    #buildNumber: # Optional
-    #overwriteExistingPkgArtifact: true # Optional
-    #imageDigestsPath: # Required when updateType == Docker Image Settings
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
