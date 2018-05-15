@@ -1,6 +1,6 @@
 ---
-title: CI build Node.js app
-description: Set up a continuous integration (CI) build for your Node.js app in VSTS or Microsoft Team Foundation Server (TFS)
+title: CI build Node.js app | VSTS or Team Foundation Server
+description: Learn how you can set up a continuous integration (CI) build for your Node.js app in VSTS or Microsoft Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

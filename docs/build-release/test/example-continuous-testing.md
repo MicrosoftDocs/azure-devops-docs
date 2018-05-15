@@ -1,6 +1,6 @@
 ---
 title: Continuous integration, test, and deployment tutorial
-description: Continuous integration, test, and deployment example in Microsoft VSTS and TFS with a build or release definition
+description: Continuous integration, test, and deployment example in Microsoft VSTS and Team Foundation Server with a build or release definition
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.prod: devops
 ms.technology: devops-cicd

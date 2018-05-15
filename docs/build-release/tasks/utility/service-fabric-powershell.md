@@ -1,6 +1,6 @@
 ---
-description: Service Fabric PowerShell Utility task
-title: Service Fabric PowerShell build task for use in all your build or release definitions in Microsoft VSTS and TFS 
+title: Service Fabric PowerShell Utility task
+description: Service Fabric PowerShell build task for use in all your build or release definitions in Microsoft VSTS and Team Foundation Server 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: devops
 ms.technology: devops-cicd

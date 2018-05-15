@@ -1,6 +1,6 @@
 ---
-title: Build definition triggers
-description: Specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
+title: Build definition triggers | VSTS or Team Foundation Server
+description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

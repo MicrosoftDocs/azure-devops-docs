@@ -1,6 +1,6 @@
 ---
-title: CocoaPods
-description: How to use CocoaPods packages when building code in VSTS
+title: CocoaPods | VSTS or Team Foundation Server (TFS)
+description: Learn all about how you can use CocoaPods packages when you are building code in VSTS or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

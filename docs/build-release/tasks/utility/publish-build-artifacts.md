@@ -1,6 +1,6 @@
 ---
-title: Publish Build Artifacts
-description: How to publish build artifacts to VSTS, TFS or a file share when building code
+title: Publish Build Artifacts | VSTS or Team Foundation Server
+description: Lear about how you can publish build artifacts to VSTS, Team Foundation Server (TFS), or to a file share when building code
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

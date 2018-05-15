@@ -1,6 +1,6 @@
 ---
-title: NuGet Tool Installer
-description: NuGet Tool Installer
+title: NuGet Tool Installer | VSTS or Team Foundation Server
+description: Learn how to use the NuGet Tool Installer for VSTS and TFS to find, download, and cache the specified version of NuGet.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39

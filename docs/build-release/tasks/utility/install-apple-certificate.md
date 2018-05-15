@@ -1,6 +1,6 @@
 ---
-title: Install Apple Certificate
-description: Install an Apple certificate required to build on a macOS agent on VSTS and Team Foundation Server TFS
+title: Install Apple Certificate | VSTS or Team Foundation Server
+description: Learn how you can install an Apple certificate required to build on a macOS agent on VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
