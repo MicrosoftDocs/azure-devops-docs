@@ -36,6 +36,8 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+[!INCLUDE [temp](../_shared/yaml/PublishTestResults.2.md)]
+
 ## Arguments 
 
 | Argument | Description |
@@ -49,25 +51,6 @@ The build agent must have the following capabilities:
 | **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PublishTestResults@2
-  inputs:
-    #testRunner: 'JUnit' # Options: jUnit, nUnit, vSTest, xUnit
-    #testResultsFiles: '**\TEST-*.xml' 
-    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
-    #mergeTestResults: false # Optional
-    #testRunTitle: # Optional
-    #platform: # Optional
-    #configuration: # Optional
-    #publishRunAttachments: true # Optional
-```
-
-::: moniker-end
 
 ## More Information
 

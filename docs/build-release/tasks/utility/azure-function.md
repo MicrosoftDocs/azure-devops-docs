@@ -22,6 +22,8 @@ monikerRange: '>= tfs-2017'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+[!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.1.md)]
+
 ## Arguments
 
 | Parameter | Comments |
@@ -41,22 +43,3 @@ Succeeds if the function returns success and the response body parsing is succes
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AzureFunction@1
-  inputs:
-    function: 
-    key: 
-    #method: 'POST' # Options: oPTIONS, gET, hEAD, pOST, pUT, dELETE, tRACE, pATCH
-    #headers: '{Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
-    #queryParameters: # Optional
-    #body: # Required when method != GET && Method != HEAD
-    #waitForCompletion: 'false' # Options: true, false
-    #successCriteria: # Optional
-```
-
-::: moniker-end

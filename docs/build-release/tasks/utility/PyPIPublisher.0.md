@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/pypipublisher.png) Publish Python packages to PyPI
 
+[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -30,22 +32,6 @@ Password – password for your PyPI account</td></tr>
 <tr><td>Upload wheel</td><td>(Optional) If checked, then task will additionally build and publish universal wheel (platform independent) of this package. For more information regarding universal wheel [see here](https://packaging.python.org/tutorials/distributing-packages/#wheels).</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# PyPI Publisher
-# Publish Python packages to PyPI
-- task: PyPIPublisher@0
-  inputs:
-    serviceEndpoint: 
-    wd: 
-    #wheel: false # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

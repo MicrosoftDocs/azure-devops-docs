@@ -24,6 +24,7 @@ monikerRange: '>= tfs-2017'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/XamarinComponentRestoreV0.0.md)]
 
 ## Arguments
 
@@ -54,20 +55,6 @@ Xamarin account email address.</td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: XamarinComponentRestore@0
-  inputs:
-    #solutionFile: '**/*.sln' 
-    email: 
-    password: 
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

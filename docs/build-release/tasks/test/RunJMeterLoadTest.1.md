@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
 
+[!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -26,25 +28,6 @@ monikerRange: 'VSTS'
 <tr><td>Run load test using</td><td>(Optional) undefined</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Cloud-based Apache JMeter Load Test
-# Runs the Apache JMeter load test in cloud
-- task: ApacheJMeterLoadTest@1
-  inputs:
-    #connectedServiceName: # Optional
-    testDrop: 
-    #loadTest: 'jmeter.jmx' 
-    #agentCount: '1' # Options: 1, 2, 3, 4, 5
-    #runDuration: '60' # Options: 60, 120, 180, 240, 300
-    #machineType: '0' # Optional. Options: 0, 2
-```
-
-::: moniker-end
 
 ## Q&A
 

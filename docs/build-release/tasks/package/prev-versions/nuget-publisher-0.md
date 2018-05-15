@@ -15,10 +15,11 @@ ms.date: 08/10/2016
 
 ![](../_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
 
-
 ## Demands
 
 None
+
+[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.0.md)]
 
 ## Arguments
 
@@ -64,9 +65,6 @@ None
 [!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
 
-
 ## Examples
 
 [!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
-
-
