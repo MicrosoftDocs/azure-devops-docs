@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/visualstudiotestplatforminstaller.png) Acquires the test platform from nuget.org or the tools cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
 
+[!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -22,21 +24,6 @@ monikerRange: 'VSTS'
 <tr><td>Test Platform Version</td><td>(Required) Specify the version of Visual Studio Test Platform to install on the agent. Available versions can be viewed on <a href="https://www.nuget.org/packages/Microsoft.TestPlatform/">nuget</a>.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Visual Studio Test Platform Installer
-# Acquires the test platform from nuget.org or the tools cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
-- task: VisualStudioTestPlatformInstaller@1
-  inputs:
-    #versionSelector: 'latestPreRelease' # Options: latestPreRelease, specificVersion
-    #testPlatformVersion: # Required when versionSelector == SpecificVersion
-```
-
-::: moniker-end
 
 ## Q&A
 

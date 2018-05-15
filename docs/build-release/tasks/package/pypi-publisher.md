@@ -37,29 +37,15 @@ A generic service connection for a PyPI index.
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
+[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
 ## Arguments
 
 | Argument | Description |
 |----------|-------------|
-| PyPI connection | The generic service endpoint where PyPI server details are present. |
-| Python package path | Python package directory to be published, where setup.py is present. |
-| Upload wheel | If this is selected, the task will additionally build and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) for this package. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PyPIPublisher@0
-  inputs:
-    serviceEndpoint: ''
-    wd: '$(Build.SourcesDirectory)'
-    wheel: 'false'
-```
-
-::: moniker-end
+| PyPI connection | A generic service endpoint for connecting to the package index. |
+| Python package directory | The directory of the Python package to be created and published, where setup.py is present. |
+| Also publish a wheel | Select whether to create and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) package (platform independent) in addition to an sdist package. |
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

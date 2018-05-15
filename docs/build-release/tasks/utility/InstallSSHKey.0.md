@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/installsshkey.png) Install an SSH key prior to a build or release
 
+[!INCLUDE [temp](../_shared/yaml/InstallSSHKeyV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -24,23 +26,6 @@ monikerRange: 'VSTS'
 <tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to `Secure Files` to install on the agent.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Install SSH Key
-# Install an SSH key prior to a build or release
-- task: InstallSSHKey@0
-  inputs:
-    hostName: 
-    sshPublicKey: 
-    #sshPassphrase: # Optional
-    sshKeySecureFile: 
-```
-
-::: moniker-end
 
 ## Q&A
 

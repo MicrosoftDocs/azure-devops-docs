@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2015'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.1.md)]
+
 ## Arguments
 
 <table>
@@ -56,19 +58,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: DeleteFiles@1
-  inputs:
-    #sourceFolder: # Optional
-    #contents: 'myFileShare' 
-```
-
-::: moniker-end
 
 ## Q & A
 

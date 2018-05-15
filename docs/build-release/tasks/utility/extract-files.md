@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2017'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.1.md)]
+
 ## Arguments
 
 <table>
@@ -59,20 +61,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ExtractFiles@1
-  inputs:
-    #archiveFilePatterns: '*.zip' 
-    destinationFolder: 
-    #cleanDestinationFolder: true 
-```
-
-::: moniker-end
 
 ## Q & A
 

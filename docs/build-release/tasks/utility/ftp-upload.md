@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2017'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.1.md)]
+
 ## Arguments
 
 <table>
@@ -64,30 +66,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: FtpUpload@1
-  inputs:
-    #credentialsOption: 'serviceEndpoint' # Options: serviceEndpoint, inputs
-    #serverEndpoint: # Required when credentialsOption == ServiceEndpoint
-    #serverUrl: # Required when credentialsOption == Inputs
-    #username: # Required when credentialsOption == Inputs
-    #password: # Required when credentialsOption == Inputs
-    rootDirectory: 
-    #filePatterns: '**' 
-    #remoteDirectory: '/upload/$(Build.BuildId)/' 
-    #clean: false 
-    #cleanContents: false # Required when clean == False
-    #overwrite: true 
-    #preservePaths: false 
-    #trustSSL: false 
-```
-
-::: moniker-end
 
 ## Q & A
 

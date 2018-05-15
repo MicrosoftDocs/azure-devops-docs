@@ -12,7 +12,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Copy Files
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
@@ -22,6 +21,8 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 None
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.2.md)]
 
 ## Arguments
 
@@ -67,23 +68,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CopyFiles@2
-  inputs:
-    #sourceFolder: # Optional
-    #contents: '**' 
-    targetFolder: 
-    #cleanTargetFolder: false # Optional
-    #overWrite: false # Optional
-    #flattenFolders: false # Optional
-```
-
-::: moniker-end
 
 ## Examples
 

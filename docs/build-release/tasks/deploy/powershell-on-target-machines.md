@@ -29,6 +29,8 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
+[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.3.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -46,29 +48,6 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 | **Advanced - Select Machines By** | Depending on how you want to specify the machines in the group when using the **Filter Criteria** parameter, choose **Machine Names** or **Tags**. |
 | **Advanced - Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}<strong>:</strong>{Value} Example: `Role:DB;OS:Win8.1` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PowerShellOnTargetMachines@2
-  inputs:
-    environmentName: 
-    #adminUserName: # Optional
-    #adminPassword: # Optional
-    #protocol: # Optional. Options: http, https
-    #testCertificate: true # Optional
-    scriptPath: 
-    #scriptArguments: # Optional
-    #initializationScriptPath: # Optional
-    #sessionVariables: # Optional
-    #runPowershellInParallel: true # Optional
-    #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
-    #machineNames: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
