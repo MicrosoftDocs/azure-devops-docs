@@ -189,7 +189,7 @@ sudo ./svc.sh uninstall
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
-When you start the service, it takes a snapshot of your PATH other useful environment variables such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
+When you configure the service, it takes a snapshot of some useful environment variables for your current logon user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
 
 > [!div class="vscom-steps-container" ]
 > 0. &nbsp;
@@ -206,6 +206,8 @@ When you start the service, it takes a snapshot of your PATH other useful enviro
 >  ```bash
 > sudo ./svc.sh start
 >  ```
+
+The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
 
 ### Run instructions before the service starts
 
