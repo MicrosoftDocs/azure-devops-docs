@@ -1,6 +1,6 @@
 ---
 title: Xamarin component restore in VSTS
-description: How to restore Xamarin components for a VSTS solution
+description: Learn all about how you can restore Xamarin components for your specified solution in VSTS or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

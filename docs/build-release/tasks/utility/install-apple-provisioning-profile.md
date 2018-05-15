@@ -1,6 +1,6 @@
 ---
 title: Install Apple Provisioning Profile
-description: Install an Apple provisioning profile required to build on a macOS agent in VSTS and Team Foundation Server TFS
+description: Learn how you can install an Apple provisioning profile required to build on a macOS agent in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

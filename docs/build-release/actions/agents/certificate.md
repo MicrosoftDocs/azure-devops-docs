@@ -1,6 +1,6 @@
 ---
 title: Run the agent with a self-signed certificate
-description: Run the agent with a self-signed certificate
+description: Learn how to run the build and release agent with a self-signed certificate for VSTS and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

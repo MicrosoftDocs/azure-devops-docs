@@ -1,6 +1,6 @@
 ---
 title: Use a PowerShell script to customize your build process
-description: Use a script to customize your build process in VSTS
+description: Learn how you can use a script to customize the build process in your workflow by using Team Foundation Server (TFS) or VSTS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,6 +1,6 @@
 ---
-title: Build your Go app
-description: Build your Go app with Team Foundation Server and VSTS
+title: Build your Go app  | VSTS or Team Foundation Server
+description: Learn how you can use the continuous integration (CI) process in VSTS or TFS to automatically build your Go application
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39

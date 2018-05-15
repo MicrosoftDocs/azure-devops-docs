@@ -1,6 +1,6 @@
 ---
-title: Java Tool Installer
-description: Java Tool Installer for VSTS and TFS 
+title: Java Tool Installer | VSTS or Team Foundation Server
+description: Learn all about how you can use the Java Tool Installer to change the version of Java in VSTS and Team Foundation Server (TFS). 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

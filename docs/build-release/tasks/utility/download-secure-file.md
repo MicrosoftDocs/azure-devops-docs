@@ -1,6 +1,6 @@
 ---
-title: Download Secure File
-description: Download a secure file to a temporary location on the build or release agent
+title: Download Secure File | VSTS or Team Foundation Server
+description: Learn how you can download a secure file to a temporary location on the build or release agent in VSTS and Team Foundation Server
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,5 +1,5 @@
 ---
-title: FTP Upload
+title: FTP Upload | VSTS or Team Foundation Server
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops

@@ -1,7 +1,7 @@
 ---
-title: Set build and release permissions 
+title: Set build and release permissions | VSTS or Team Foundation Server
 titleSuffix: VSTS & TFS
-description: Grant or restrict access to build-release, library, task group, and variable group functions
+description: Grant or restrict access to build-release, library, task group, and variable group functions in VSTS or Team Foundation Server
 ms.assetid:  
 ms.prod: devops
 ms.technology: vs-devops-admin
