@@ -1,6 +1,6 @@
 ---
-title: Deploy an agent on Windows
-description: Use Windows Build and Release agents to build and deploy your Windows and Azure code.
+title: Deploy a build and release agent on Windows
+description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for VSTS and TFS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -161,6 +161,20 @@ The help provides information on authentication alternatives and unattended conf
 ### How do I run the agent behind a web proxy?
 
 [Run the agent behind a web proxy](proxy.md)
+
+::: moniker range="vsts"
+### How do I set different environment variables for each individual agent?
+
+Create a `.env` file under agent's root directory and put environment variables you want to set into the file as following format:
+
+```
+MyEnv0=MyEnvValue0
+MyEnv1=MyEnvValue1
+MyEnv2=MyEnvValue2
+MyEnv3=MyEnvValue3
+MyEnv4=MyEnvValue4
+```
+::: moniker-end
 
 ::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]

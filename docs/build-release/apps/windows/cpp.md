@@ -1,6 +1,6 @@
 ---
-title: Build your Visual C++ app
-description: Build your Visual C++ app with Team Foundation Server and VSTS
+title: Build your Visual C++ app | VSTS or Team Foundation Server
+description: Learn how you can use the continuous integration (CI) process in VSTS or TFS to automatically build your Visual C++ app.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49

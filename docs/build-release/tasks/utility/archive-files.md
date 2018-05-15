@@ -1,6 +1,6 @@
 ---
-title: Archive Files
-description: Create an archive file from a source folder in VSTS and Team Foundation Server TFS  
+title: Archive Files | VSTS or Team Foundation Server
+description: Learn all about how you can use an archive file to then create a source folder in VSTS and Team Foundation Server (TFS).  
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

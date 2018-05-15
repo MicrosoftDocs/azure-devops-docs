@@ -1,6 +1,6 @@
 ---
-title: Conditional task expressions
-description: Write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS)
+title: Conditional task expressions | VSTS or Team Foundation Server
+description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

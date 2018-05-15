@@ -1,8 +1,8 @@
 ---
-title: Build and release permissions
+title: Build and release permissions | VSTS or Team Foundation Server
 titleSuffix: VSTS & TFS
 ms.topic: conceptual
-description: Understand how security is managed for build and release operations  
+description: Understand how permissions and roles are used to securely manage build and release operations in VSTS and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873

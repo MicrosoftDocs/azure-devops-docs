@@ -1,6 +1,6 @@
 ---
-title: CI Build in code using YAML
-description: Define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: CI Build in code using YAML | VSTS or Team Foundation Server
+description: Learn how to define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -37,23 +37,24 @@ If you're new to YAML builds, or to VSTS, we suggest you begin learning with eit
 |Capability|YAML|Web interface|
 |-|-|-|
 |<center>**Repository**</center>|
-|Git and GitHub|Yes|Yes|
 |Bitbucket|Not yet|Yes|
+|Git and GitHub|Yes|Yes|
 |TFVC|No|Yes|
 |External Git, Subversion|No|Yes|
 |<center>**Capabilities**</center>|
-|Build in a container|Yes|Not yet|
-|Configuration as code|Yes|No|
-|Fan out and fan in|Yes|Yes|
-|Variables across phases|Yes|Not yet|
-|Set environment variables for scripts (useful for secrets)|Yes|Not yet|
-|Badge enabled|Not yet|Yes|
-|Pause/disable definition from web editor|Not yet|Yes|
-|Link work items|Not yet|Yes|
-|Create work item on failure|Not yet|Yes|
 |Allow scripts to access OAuth token|Yes|Yes|
+|Badge enabled|Not yet|Yes|
+|Build in a container|Yes|Not yet|
 |Build job authorization scope|Not yet|Yes|
 |Checkout options: Tag sources, Report build status, Checkout submodules|Not yet|Yes|
+|Configuration as code|Yes|No|
+|Create work item on failure|Not yet|Yes|
+|Fan out and fan in|Yes|Yes|
+|Link work items|Not yet|Yes|
+|Pause/disable definition from web editor|Not yet|Yes|
+|Set environment variables for scripts (useful for secrets)|Yes|Not yet|
+|Task groups|No|Yes|
+|Variables across phases|Yes|Not yet|
 
 ## Automatically create a YAML build definition
 

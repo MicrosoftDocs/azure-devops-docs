@@ -1,5 +1,5 @@
 ---
-title: Build your Android app
+title: Build your Android app | VSTS or Team Foundation Server
 description: Build and test Android projects with VSTS or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd

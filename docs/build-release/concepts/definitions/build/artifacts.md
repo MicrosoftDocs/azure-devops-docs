@@ -1,6 +1,6 @@
 ---
-title: Artifacts in Team Build
-description: Understand build artifacts in Team Build for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Artifacts in Team Build | VSTS or Team Foundation Server
+description: Understand build artifacts in Team Build (TFBuild) for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.prod: devops
