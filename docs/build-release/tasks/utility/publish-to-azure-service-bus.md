@@ -22,6 +22,8 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.1.md)]
+
 ## Arguments
 
 | Parameter | Comments |
@@ -33,23 +35,6 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PublishToAzureServiceBus@1
-  inputs:
-    azureSubscription: 
-    #messageBody: # Optional
-    #signPayload: false 
-    #certificateString: # Required when signPayload == True
-    #signatureKey: 'signature' # Optional
-    #waitForCompletion: false 
-```
-
-::: moniker-end
 
 ## Q & A
 

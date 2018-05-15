@@ -21,6 +21,8 @@ monikerRange: 'vsts'
 
 xcode
 
+[!INCLUDE [temp](../_shared/yaml/Xcode.5.md)]
+
 ## Arguments
 
 <table>
@@ -219,46 +221,6 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to V
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: Xcode@5
-  inputs:
-    #actions: 'build' 
-    #configuration: '$(Configuration)' # Optional
-    #sdk: '$(SDK)' # Optional
-    #xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace' # Optional
-    #scheme: # Optional
-    #xcodeVersion: 'default' # Optional. Options: 8, 9, default, specifyPath
-    #xcodeDeveloperDir: # Optional
-    #packageApp: false
-    #archivePath: # Optional
-    #exportPath: 'output/$(SDK)/$(Configuration)' # Optional
-    #exportOptions: 'auto' # Optional. Options: auto, plist, specify
-    #exportMethod: 'development' # Required when exportOptions == Specify
-    #exportTeamId: # Optional
-    #exportOptionsPlist: # Required when exportOptions == Plist
-    #exportArgs: # Optional
-    #signingOption: 'nosign' # Optional. Options: nosign, default, manual, auto
-    #signingIdentity: # Optional
-    #provisioningProfileUuid: # Optional
-    #provisioningProfileName: # Optional
-    #teamId: # Optional
-    #destinationPlatformOption: 'default' # Optional. Options: default, iOS, tvOS, macOS, custom
-    #destinationPlatform: # Optional
-    #destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
-    #destinationSimulators: 'iPhone 7' # Optional
-    #destinationDevices: # Optional
-    #args: # Optional
-    #workingDirectory: # Optional
-    #useXcpretty: # Optional
-    #publishJUnitResults: # Optional
-```
-
-::: moniker-end
 
 ## Example
 

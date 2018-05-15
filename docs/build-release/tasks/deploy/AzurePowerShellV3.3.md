@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
 
+[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV3.3.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -34,30 +36,6 @@ For private agents you can specify preferred version of Azure PowerShell using "
 <tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. The Hosted VS2017 Pool currently supports versions: 2.1.0, 3.8.0, 4.2.1, 5.1.1</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure PowerShell
-# Run a PowerShell script within an Azure environment
-- task: AzurePowerShell@3
-  inputs:
-    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
-    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
-    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
-    #scriptType: 'FilePath' # Optional. Options: filePath, inlineScript
-    #scriptPath: # Optional
-    #inline: '# You can write your azure powershell scripts inline here. # You can also pass predefined and custom variables to this script using arguments' # Optional
-    #scriptArguments: # Optional
-    #errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
-    #failOnStandardError: false # Optional
-    #azurePowerShellVersion: 'OtherVersion' # Optional. Options: latestVersion, otherVersion
-    #preferredAzurePowerShellVersion: # Required when azurePowerShellVersion == OtherVersion
-```
-
-::: moniker-end
 
 ## Q&A
 

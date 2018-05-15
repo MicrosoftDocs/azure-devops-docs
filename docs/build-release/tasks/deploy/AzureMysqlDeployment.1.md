@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
 
+[!INCLUDE [temp](../_shared/yaml/AzureMysqlDeployment.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -33,32 +35,6 @@ monikerRange: 'VSTS'
 <tr><td>Delete Rule After Task Ends</td><td>(Optional) If selected, the added exception for IP addresses of the automation agent will be removed for corresponding Azure Database for MySQL.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure Database for Mysql Deployment
-# This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
-- task: AzureMysqlDeployment@1
-  inputs:
-    azureSubscription: 
-    serverName: 
-    #databaseName: # Optional
-    sqlUsername: 
-    sqlPassword: 
-    #taskNameSelector: 'SqlTaskFile' # Optional. Options: sqlTaskFile, inlineSqlTask
-    #sqlFile: # Required when taskNameSelector == SqlTaskFile
-    #sqlInline: # Required when taskNameSelector == InlineSqlTask
-    #sqlAdditionalArguments: # Optional
-    #ipDetectionMethod: 'AutoDetect' # Options: autoDetect, iPAddressRange
-    #startIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #endIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #deleteFirewallRule: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

@@ -20,6 +20,8 @@ ms.date: 08/10/2016
 
 None
 
+[!INCLUDE [temp](../../_shared/yaml/NuGetPackagerV0.0.md)]
+
 ## Arguments
 
 <table>
@@ -91,7 +93,6 @@ Semicolon delimited list of properties used to build the package. For example, y
 [!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
 [!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
-
 
 ## Examples
 

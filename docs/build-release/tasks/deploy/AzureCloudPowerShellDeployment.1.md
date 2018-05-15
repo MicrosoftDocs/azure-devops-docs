@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/azurecloudpowershelldeployment.png) Deploy an Azure Cloud Service
 
+[!INCLUDE [temp](../_shared/yaml/AzureCloudPowerShellDeployment.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -36,35 +38,6 @@ monikerRange: 'VSTS'
 <tr><td>Affinity group</td><td>(Optional) While creating new service, this affinity group will be considered instead of using service location.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure Cloud Service Deployment
-# Deploy an Azure Cloud Service
-- task: AzureCloudPowerShellDeployment@1
-  inputs:
-    azureClassicSubscription: 
-    storageAccount: 
-    serviceName: 
-    serviceLocation: 
-    csPkg: 
-    csCfg: 
-    #slotName: 'Production' 
-    #deploymentLabel: '$(Build.BuildNumber)' # Optional
-    #appendDateTimeToLabel: false # Optional
-    #allowUpgrade: true 
-    #simultaneousUpgrade: false # Optional
-    #forceUpgrade: false # Optional
-    #diagnosticStorageAccountKeys: # Optional
-    #newServiceCustomCertificates: # Optional
-    #newServiceAdditionalArguments: # Optional
-    #newServiceAffinityGroup: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 
