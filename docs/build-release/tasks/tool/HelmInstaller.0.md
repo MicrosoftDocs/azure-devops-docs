@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/helminstaller.png) Install Helm and Kubernetes on agent machine.
 
+[!INCLUDE [temp](../_shared/yaml/HelmInstallerV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -25,24 +27,6 @@ monikerRange: 'VSTS'
 <tr><td>Check for latest version of kubectl</td><td>(Optional) Check for latest version of kubectl.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Helm tool installer
-# Install Helm and Kubernetes on agent machine.
-- task: HelmInstaller@0
-  inputs:
-    #helmVersion: '2.8.2' 
-    #checkLatestHelmVersion: true # Optional
-    #installKubectl: true 
-    #kubectlVersion: '1.8.9' # Optional
-    #checkLatestKubectl: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

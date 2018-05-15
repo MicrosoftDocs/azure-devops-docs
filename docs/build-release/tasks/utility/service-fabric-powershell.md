@@ -29,6 +29,8 @@ deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShell.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -41,22 +43,6 @@ deploy to a Service Fabric cluster.
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ServiceFabricPowerShell@1
-  inputs:
-    clusterConnection: 
-    #scriptType: 'FilePath' # Options: filePath, inlineScript
-    #scriptPath: # Optional
-    #inline: '# You can write your PowerShell scripts inline here. # You can also pass predefined and custom variables to this script using arguments' # Optional
-    #scriptArguments: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

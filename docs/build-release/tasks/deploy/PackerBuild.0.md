@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/packerbuild.png) Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
 
+[!INCLUDE [temp](../_shared/yaml/PackerBuildV0.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -37,36 +39,6 @@ monikerRange: 'VSTS'
 <tr><td>Image URL</td><td>(Optional) Provide a name for the output variable which will store generated machine image url.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Build Machine Image
-# Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
-- task: PackerBuild@0
-  inputs:
-    #templateType: 'builtin' # Options: builtin, custom
-    #customTemplateLocation: # Required when templateType == Custom
-    #customTemplateParameters: '{}' # Optional
-    connectedServiceName: 
-    location: 
-    storageAccountName: 
-    azureResourceGroup: 
-    #baseImageSource: 'default' # Options: default, customVhd
-    #baseImage: 'MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows' # Required when baseImageSource == Default# Options: microsoftWindowsServer:WindowsServer:2012-R2-Datacenter:Windows, microsoftWindowsServer:WindowsServer:2016-Datacenter:Windows, microsoftWindowsServer:WindowsServer:2012-Datacenter:Windows, microsoftWindowsServer:WindowsServer:2008-R2-SP1:Windows, canonical:UbuntuServer:14.04.4-LTS:Linux, canonical:UbuntuServer:16.04-LTS:Linux, redHat:RHEL:7.2:Linux, redHat:RHEL:6.8:Linux, openLogic:CentOS:7.2:Linux, openLogic:CentOS:6.8:Linux, credativ:Debian:8:Linux, credativ:Debian:7:Linux, sUSE:OpenSUSE-Leap:42.2:Linux, sUSE:SLES:12-SP2:Linux, sUSE:SLES:11-SP4:Linux
-    #customImageUrl: # Required when baseImageSource == CustomVhd
-    #customImageOSType: 'windows' # Required when baseImageSource == CustomVhd# Options: windows, linux
-    packagePath: 
-    deployScriptPath: 
-    #deployScriptArguments: # Optional
-    #additionalBuilderParameters: '{}' # Optional
-    #skipTempFileCleanupDuringVMDeprovision: # Optional
-    #imageUri: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

@@ -22,6 +22,8 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+[!INCLUDE [temp](../_shared/yaml/DelayV1.1.md)]
+
 ## Arguments
 
 | Parameter | Comments |
@@ -31,18 +33,6 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Delay). 
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: Delay@1
-  inputs:
-    #delayForMinutes: '0' 
-```
-
-::: moniker-end
 
 ## Q & A
 

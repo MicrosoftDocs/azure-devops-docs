@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 
+[!INCLUDE [temp](../_shared/yaml/AppCenterDistributeV1.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -33,32 +35,6 @@ monikerRange: 'VSTS'
 <tr><td>Destination ID</td><td>(Optional) ID of the distribution group or store the app will deploy to. Leave it empty to use the default group.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# App Center Distribute
-# Distribute app builds to testers and users via App Center
-- task: AppCenterDistribute@1
-  inputs:
-    serverEndpoint: 
-    appSlug: 
-    appFile: 
-    #symbolsOption: 'Apple' # Optional. Options: apple
-    #symbolsPath: # Optional
-    #symbolsPdbFiles: '**/*.pdb' # Optional
-    #symbolsDsymFiles: # Optional
-    #symbolsMappingTxtFile: # Optional
-    #symbolsIncludeParentDirectory: # Optional
-    #releaseNotesOption: 'input' # Options: input, file
-    #releaseNotesInput: # Required when releaseNotesOption == Input
-    #releaseNotesFile: # Required when releaseNotesOption == File
-    #distributionGroupId: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 
