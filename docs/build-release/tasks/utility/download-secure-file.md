@@ -13,7 +13,6 @@ ms.date: 01/19/2018
 monikerRange: 'vsts'
 ---
 
-
 # Utility: Download Secure File
 
 **VSTS**
@@ -30,20 +29,10 @@ If you use multiple versions of the Download Secure File task in your definition
 
 Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$env:TEMP`.
 
+[!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
 | Secure File | Select the secure file to download to a temporary location on the agent. The file will be cleaned up after the build or release. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: DownloadSecureFile@1
-  inputs:
-    secureFile: 
-```
-
-::: moniker-end

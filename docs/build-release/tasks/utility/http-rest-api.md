@@ -22,6 +22,8 @@ monikerRange: '>= tfs-2017'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+[!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.1.md)]
+
 ## Arguments
 
 | Parameter | Comments |
@@ -46,21 +48,3 @@ pipeline and, optionally, wait for it to be completed.
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: InvokeRESTAPI@1
-  inputs:
-    serviceConnection: 
-    #method: 'POST' # Options: oPTIONS, gET, hEAD, pOST, pUT, dELETE, tRACE, pATCH
-    #headers: '{Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
-    #body: # Required when method != GET && Method != HEAD
-    #urlSuffix: # Optional
-    #waitForCompletion: 'false' # Options: true, false
-    #successCriteria: # Optional
-```
-
-::: moniker-end

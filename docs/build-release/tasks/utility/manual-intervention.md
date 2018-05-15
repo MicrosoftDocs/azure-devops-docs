@@ -22,6 +22,8 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+[!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.8.md)]
+
 ## Arguments
 
 | Parameter | Comments |
@@ -58,17 +60,3 @@ Users with **Manage deployment** permission on the environment can resume or rej
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ManualIntervention@8
-  inputs:
-    #instructions: # Optional
-    #emailRecipients: # Optional
-    #onTimeout: 'reject' # Optional. Options: reject, resume
-```
-
-::: moniker-end

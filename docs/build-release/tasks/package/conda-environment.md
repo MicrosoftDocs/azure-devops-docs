@@ -11,7 +11,6 @@ ms.date: 4/26/2018
 monikerRange: 'vsts'
 ---
 
-
 # Package: Conda Environment
 
 **VSTS**
@@ -42,6 +41,22 @@ None
 * A Microsoft-hosted agent, or a self-hosted agent with Anaconda or Miniconda installed.
 * If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
+::: moniker range="vsts"
+
+## YAML snippet
+
+```YAML
+- task: CondaEnvironment@0
+  inputs:
+    environmentName: env
+    packageSpecs: 'python=2.7'
+#   updateConda: false
+#   createOptions: '--quiet --json'
+#   cleanEnvironment: true
+```
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -55,24 +70,6 @@ None
 |----------|-------------|
 | Environment creation options | Space-delimited list of other options to pass to the `conda create` command. |
 | Clean the environment | Delete the environment and recreate it if it already exists. If not selected, the task will reactivate an existing environment. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: CondaEnvironment@0
-  inputs:
-    environmentName: env
-    packageSpecs: 'python=2.7'
-#   updateConda: false
-#   createOptions: '--quiet --json'
-#   cleanEnvironment: true
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
