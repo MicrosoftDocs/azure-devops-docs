@@ -1,6 +1,6 @@
 ---
-title: Ant build and release task
-description: Build with Apache Ant for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Ant build and release task | VSTS or Team Foundation Server
+description: Learn how to build with Apache Ant for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

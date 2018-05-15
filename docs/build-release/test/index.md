@@ -1,6 +1,6 @@
 ---
 title: Continuous Testing in VSTS and TFS
-description: Continuous testing index and overview in VSTS and TFS 
+description: Learn how to test your changes continuously. Continuous testing index and overview in VSTS and Team Foundation Server (TFS).
 ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8
 ms.prod: devops
 ms.technology: devops-cicd

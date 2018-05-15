@@ -1,6 +1,6 @@
 ---
 title: Restore Package Management NuGet packages in Team Build
-description: Working with feeds in Team Build
+description: Work with feeds in Team Build
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: devops
 ms.technology: devops-cicd

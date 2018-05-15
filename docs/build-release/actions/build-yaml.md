@@ -1,6 +1,6 @@
 ---
-title: CI Build in code using YAML
-description: Define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: CI Build in code using YAML | VSTS or Team Foundation Server
+description: Learn how to define your CI build process in YAML in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

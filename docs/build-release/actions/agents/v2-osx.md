@@ -1,6 +1,6 @@
 ---
-title: Deploy an agent on macOS
-description: Deploy a macOS agent to build and deploy your iOS application.
+title: Deploy a build and release agent on macOS
+description: Learn how to deploy a macOS agent to build and deploy your iOS application for VSTS and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd

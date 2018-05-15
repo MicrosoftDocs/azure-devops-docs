@@ -1,7 +1,7 @@
 ---
 title: Build your .NET desktop app for Windows
 shorttitle: Visual Studio solution
-description: Define a CI process that builds your .NET app on Team Foundation Server and VSTS.
+description: Learn how you can define a continuous integration (CI) process that builds your .NET app on Team Foundation Server and VSTS.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart

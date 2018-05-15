@@ -1,6 +1,6 @@
 ---
-title: Copy Files Over SSH task for VSTS and TFS
-description: Copy Files Over SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+title: Copy Files Over SSH task for use in VSTS and TFS
+description: How to copy Files Over SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 

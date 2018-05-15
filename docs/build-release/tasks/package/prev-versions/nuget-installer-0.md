@@ -1,6 +1,6 @@
 ---
-title: NuGet Installer Version 0.*
-description: How to use NuGet packages when building code in Visual Studio Team Services
+title: NuGet Installer Version 0.* | VSTS or Team Foundation Server
+description: Learn all about how you can use NuGet packages when building code in Visual Studio Team Services and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
