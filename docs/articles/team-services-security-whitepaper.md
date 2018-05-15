@@ -600,7 +600,7 @@ your review and education. These include:
 -   [Developer Services Agreement](http://www.visualstudio.com/support/terms-of-service-vs)
 -   [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
 -   [Azure trust center](http://azure.microsoft.com/support/trust-center/)
--   [Microsoft Security Development Lifecycle](http://www.microsoft.com/security/sdl/)
+-   [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
     
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
