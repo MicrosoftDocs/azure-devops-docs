@@ -26,6 +26,8 @@ monikerRange: '>= tfs-2015'
 
 None
 
+[!INCLUDE [temp](../_shared/yaml/PublishBuildArtifacts.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -37,23 +39,6 @@ None
 | Parallel copy (**VSTS**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | Parallel count (**VSTS**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PublishBuildArtifacts@1
-  inputs:
-    #pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    #artifactName: 'drop' 
-    #publishLocation: 'Container' # Options: container, filePath
-    #targetPath: # Required when publishLocation == FilePath
-    #parallel: false # Optional
-    #parallelCount: # Optional
-```
-
-::: moniker-end
 
 ## Q & A
 

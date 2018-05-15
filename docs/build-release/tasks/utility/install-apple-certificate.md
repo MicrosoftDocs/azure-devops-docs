@@ -26,6 +26,8 @@ You can use this task to install an Apple certificate that is stored as a [secur
 
 xcode
 
+[!INCLUDE [temp](../_shared/yaml/InstallAppleCertificateV2.2.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -37,22 +39,3 @@ xcode
 | Advanced - Delete Certificate from Keychain | Select to delete the certificate from the keychain after the build or release is complete. This option is visible when custom keychain or default keychain are selected. |
 | Advanced - Custom Keychain Path | Full path to a custom keychain file. The keychain will be created if it does not exist. This option is visible when a custom keychain is selected. |
 | Advanced - Delete Custom Keychain | Select to delete the custom keychain from the agent after the build or release is complete. This option is visible when a custom keychain is selected. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: InstallAppleCertificate@2
-  inputs:
-    certSecureFile: 
-    #certPwd: # Optional
-    #keychain: 'temp' # Options: default, temp, custom
-    #keychainPassword: # Required when keychain == Custom || Keychain == Default
-    #customKeychainPath: # Required when keychain == Custom
-    #deleteCert: # Optional
-    #deleteCustomKeychain: # Optional
-    #signingIdentity: # Optional
-```
-
-::: moniker-end

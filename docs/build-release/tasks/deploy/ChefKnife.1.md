@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/chefknife.png) Run Scripts with knife commands on your chef workstation
 
+[!INCLUDE [temp](../_shared/yaml/ChefKnifeV1.1.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -23,22 +25,6 @@ monikerRange: 'VSTS'
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to Script.  Can be either ordinal or named parameters.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Chef Knife
-# Run Scripts with knife commands on your chef workstation
-- task: ChefKnife@1
-  inputs:
-    connectedServiceName: 
-    scriptPath: 
-    #scriptArguments: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

@@ -23,6 +23,8 @@ monikerRange: '>= tfs-2015'
 
 cmake
 
+[!INCLUDE [temp](../_shared/yaml/CMakeV1.1.md)]
+
 ## Arguments
 
 <table>
@@ -49,19 +51,6 @@ Arguments that you want to pass to CMake.
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CMake@1
-  inputs:
-    #workingDirectory: 'build' # Optional
-    #cmakeArgs: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

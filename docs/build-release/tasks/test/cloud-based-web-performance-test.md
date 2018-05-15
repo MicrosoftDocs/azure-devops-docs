@@ -34,6 +34,8 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+[!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -47,27 +49,6 @@ The build agent must have the following capabilities:
 | **Run load test using** | Select **Automatically provisioned agents** if you want the cloud-based load testing service to automatically provision agents for running the load tests. The application URL must be accessible from the Internet.<br />Select **Self-provisioned agents** if you want to test apps behind the firewall. You must provision agents and register them against your VSTS account when using this option. See [Testing private/intranet applications using Cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/). |
 | **Fail test if Avg. Response Time (ms) exceeds** | Specify a threshold for the average response time in milliseconds. If the observed response time during the load test exceeds this threshold, the task will fail. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: QuickPerfTest@1
-  inputs:
-    #connectedServiceName: # Optional
-    websiteUrl: 
-    testName: 
-    #vuLoad: '25' # Options: 25, 50, 100, 250
-    #runDuration: '60' # Options: 60, 120, 180, 240, 300
-    #geoLocation: 'Default' # Optional. Options: default, east US, east US 2, central US, west US, north Central US, south Central US, north Europe, west Europe, southeast Asia, east Asia, japan East, japan West, brazil South, australia East, australia Southeast
-    #machineType: '0' # Options: 0, 2
-    #resourceGroupName: # Optional
-    #numOfSelfProvisionedAgents: # Optional
-    #avgResponseTimeThreshold: '0' # Optional
-```
-
-::: moniker-end
 
 ## More Information
 

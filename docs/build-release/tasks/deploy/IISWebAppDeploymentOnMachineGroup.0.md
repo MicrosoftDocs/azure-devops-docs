@@ -15,6 +15,8 @@ monikerRange: 'VSTS'
 
 ![](_img/iiswebappdeploymentonmachinegroup.png) Deploy a Website or Web Application using WebDeploy
 
+[!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroup.0.md)]
+
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
@@ -31,30 +33,6 @@ monikerRange: 'VSTS'
 <tr><td>JSON variable substitution</td><td>(Optional) Provide new line separated list of JSON files to substitute the variable values. Files names are to be provided relative to the root folder. <br/> To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. <br/> <br/> For example, to replace the value of ‘ConnectionString’ in the sample below, you need to define a variable as ‘Data.DefaultConnection.ConnectionString’ in the build/release definition (or release definition’s environment). <br/> {<br/>&nbsp;&nbsp;"Data": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;"DefaultConnection": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ConnectionString": "Server=(localdb)\SQLEXPRESS;Database=MyDB;Trusted_Connection=True"<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/> Variable Substitution is run after configuration transforms. <br/><br/> Note: Build/Release’s system definition variables are excluded in substitution</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# IIS Web App Deploy
-# Deploy a Website or Web Application using WebDeploy
-- task: IISWebAppDeploymentOnMachineGroup@0
-  inputs:
-    webSiteName: 
-    #virtualApplication: # Optional
-    #package: '$(System.DefaultWorkingDirectory)\**\*.zip' 
-    #setParametersFile: # Optional
-    #removeAdditionalFilesFlag: false # Optional
-    #excludeFilesFromAppDataFlag: false # Optional
-    #takeAppOfflineFlag: false # Optional
-    #additionalArguments: # Optional
-    #xmlTransformation: # Optional
-    #xmlVariableSubstitution: # Optional
-    #jSONFiles: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

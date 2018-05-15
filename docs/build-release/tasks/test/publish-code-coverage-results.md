@@ -28,6 +28,8 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+[!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.1.md)]
+
 ## Arguments
 
 | Argument | Description |
@@ -37,22 +39,6 @@ The build agent must have the following capabilities:
 | **Report Directory** | The path of the code coverage HTML report directory. The report directory is published for subsequent viewing as an artifact of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura` |
 | **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PublishCodeCoverageResults@1
-  inputs:
-    #codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
-    summaryFileLocation: 
-    #reportDirectory: # Optional
-    #additionalCodeCoverageFiles: # Optional
-    #failIfCoverageEmpty: false # Optional
-```
-
-::: moniker-end
 
 ## More Information
 

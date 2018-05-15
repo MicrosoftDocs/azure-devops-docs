@@ -12,7 +12,6 @@ ms.date: 10/12/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Copy and Publish Build Artifacts
 
 **[VSTS](publish-build-artifacts.md) | [TFS 2015.3 and newer](publish-build-artifacts.md) | TFS 2015 RTM | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
@@ -72,7 +71,6 @@ None
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -92,6 +90,5 @@ You can avoid these issues by instead using the [Copy Files step](copy-files.md)
 ::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
-
 
 <!-- ENDSECTION -->
