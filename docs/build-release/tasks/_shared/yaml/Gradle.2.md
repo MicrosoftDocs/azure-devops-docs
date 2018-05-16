@@ -12,7 +12,7 @@
     #options: # Optional
     #tasks: 'build' 
     #publishJUnitResults: true 
-    #testResultsFiles: '**/build/test-results/TEST-*.xml' # Required when publishJUnitResults == True
+    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
     #codeCoverageClassFilesDirectories: 'build/classes/main/' # Required when codeCoverageToolOption == False
