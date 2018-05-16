@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -34,5 +32,3 @@
     #outputFormat: 'json' # Optional. Options: json, yaml
     #kubectlOutput: # Optional
 ```
-
-::: moniker-end

@@ -8,14 +8,18 @@ ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Download Build Artifacts
 
 ![](_img/downloadbuildartifacts.png) Download Build Artifacts
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifacts.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

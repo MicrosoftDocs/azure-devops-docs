@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -39,5 +37,3 @@
     #requireAdditionalDockerComposeFiles: false # Optional
     #currentWorkingDirectory: '$(System.DefaultWorkingDirectory)' # Optional
 ```
-
-::: moniker-end

@@ -46,7 +46,11 @@ This task requires the target computer to have:
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.2.md)]
+
+::: moniker-end
 
 ### Arguments
 

@@ -8,14 +8,18 @@ ms.assetid: CE85A08B-A538-4D2B-8589-1D37A9AB970F
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure SQL Database Deployment
 
 ![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeployment.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

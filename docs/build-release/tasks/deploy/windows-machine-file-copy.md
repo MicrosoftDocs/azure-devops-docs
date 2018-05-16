@@ -23,7 +23,11 @@ PowerShell scripts and PowerShell-DSC modules that are required to
 install the application on Windows Machines. It uses RoboCopy, the 
 command-line utility built for fast copying of data.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/WindowsMachineFileCopyV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

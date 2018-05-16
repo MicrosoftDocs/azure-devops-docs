@@ -8,14 +8,18 @@ ms.assetid: 72A1931B-EFFB-4D2E-8FD8-F8472A07CB62
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure PowerShell
 
 ![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzurePowerShellV3.3.md)]
+
+::: moniker-end
 
 ## Arguments
 

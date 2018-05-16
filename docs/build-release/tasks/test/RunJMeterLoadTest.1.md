@@ -8,14 +8,18 @@ ms.assetid: F20661EB-E0F7-4AFD-9A86-9FE9D1A93382
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Test: Cloud-based Apache JMeter Load Test
 
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -25,7 +25,11 @@ The build agent must have the following capability:
 
  * Apache Ant
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ANT.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

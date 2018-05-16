@@ -23,7 +23,11 @@ monikerRange: '>= tfs-2015'
 
 curl
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

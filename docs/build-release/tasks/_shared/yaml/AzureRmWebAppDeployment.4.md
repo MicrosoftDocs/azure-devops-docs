@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -40,5 +38,3 @@
     #enableXmlVariableSubstitution: # Optional
     #jSONFiles: # Optional
 ```
-
-::: moniker-end

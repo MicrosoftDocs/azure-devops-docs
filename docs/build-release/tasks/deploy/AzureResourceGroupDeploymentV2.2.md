@@ -8,14 +8,18 @@ ms.assetid: 94A74903-F93F-4075-884F-DC11F34058B4
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure Resource Group Deployment
 
 ![](_img/azureresourcegroupdeployment.png) Deploy, start, stop, delete Azure Resource Groups
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

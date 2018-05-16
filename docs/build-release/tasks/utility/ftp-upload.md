@@ -23,7 +23,11 @@ monikerRange: '>= tfs-2017'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/FtpUploadV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

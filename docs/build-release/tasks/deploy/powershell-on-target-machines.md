@@ -29,7 +29,11 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.3.md)]
+
+::: moniker-end
 
 ## Arguments
 
