@@ -8,14 +8,18 @@ ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Package: npm Authenticate (for task runners)
 
 ![](_img/npmauthenticate.png) Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like Gulp and Grunt to authenticate with private registries.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/NpmAuthenticateV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -20,5 +18,3 @@
     #srcFiles: # Optional
     #testFiles: 'test/*.js' # Required when enableCodeCoverage == True
 ```
-
-::: moniker-end

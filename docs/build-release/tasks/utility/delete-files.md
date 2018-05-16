@@ -23,7 +23,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

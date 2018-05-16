@@ -23,9 +23,13 @@ monikerRange: '>= tfs-2015'
 
 The build agent must have the following capabilities:
 
- * Java JDK 
- 
- [!INCLUDE [temp](../_shared/yaml/AndroidSigning.2.md)]
+ * Java JDK
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AndroidSigning.2.md)]
+
+::: moniker-end
 
  ## Arguments
 

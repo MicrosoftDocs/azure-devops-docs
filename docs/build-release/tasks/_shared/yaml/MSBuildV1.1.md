@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -21,5 +19,3 @@
     #logProjectEvents: false # Optional
     #createLogFile: false # Optional
 ```
-
-::: moniker-end

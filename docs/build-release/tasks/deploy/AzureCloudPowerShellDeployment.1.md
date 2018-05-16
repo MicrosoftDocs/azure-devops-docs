@@ -8,14 +8,18 @@ ms.assetid: 2CA8FE15-42EA-4B26-80F1-E0738EC17E89
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure Cloud Service Deployment
 
 ![](_img/azurecloudpowershelldeployment.png) Deploy an Azure Cloud Service
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureCloudPowerShellDeployment.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

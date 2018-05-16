@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -14,5 +12,3 @@
     #archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
     #replaceExistingArchive: true 
 ```
-
-::: moniker-end

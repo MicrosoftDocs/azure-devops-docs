@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -16,5 +14,3 @@
     #copyFilesInParallel: true # Optional
     #additionalArguments: # Optional
 ```
-
-::: moniker-end

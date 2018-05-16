@@ -8,14 +8,18 @@ ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Package and deploy Helm charts
 
 ![](_img/helmdeploy.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/HelmDeployV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

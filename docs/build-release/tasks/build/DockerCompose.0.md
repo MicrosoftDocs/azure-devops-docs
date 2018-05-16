@@ -8,14 +8,18 @@ ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Build: Docker Compose
 
 ![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DockerCompose.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

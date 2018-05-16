@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -20,5 +18,3 @@
     #nuGetAdditionalArgs: # Optional
     #nuGetPath: # Optional
 ```
-
-::: moniker-end

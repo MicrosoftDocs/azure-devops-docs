@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -25,5 +23,3 @@
     #additionalArguments: # Optional
     #additionalArgumentsSql: # Optional
 ```
-
-::: moniker-end

@@ -8,14 +8,18 @@ ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: App Center Distribute
 
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AppCenterDistributeV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
