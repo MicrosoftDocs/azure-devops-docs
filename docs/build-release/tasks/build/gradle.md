@@ -12,14 +12,17 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build: Gradle 
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/gradle.png) Build using a Gradle wrapper script
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/Gradle.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -110,6 +113,10 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Example
+
+[Build your Java app with Gradle](../../apps/java/build-gradle.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

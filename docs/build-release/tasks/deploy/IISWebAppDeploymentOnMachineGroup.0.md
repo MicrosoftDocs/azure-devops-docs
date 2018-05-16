@@ -8,14 +8,18 @@ ms.assetid: 1B467810-6725-4B6D-ACCD-886174C09BBA
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: IIS Web App Deploy
 
 ![](_img/iiswebappdeploymentonmachinegroup.png) Deploy a Website or Web Application using WebDeploy
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroup.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

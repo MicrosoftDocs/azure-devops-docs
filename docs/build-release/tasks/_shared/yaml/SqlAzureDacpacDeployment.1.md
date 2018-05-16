@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -27,5 +25,3 @@
     #endIpAddress: # Required when ipDetectionMethod == IPAddressRange
     #deleteFirewallRule: true # Optional
 ```
-
-::: moniker-end

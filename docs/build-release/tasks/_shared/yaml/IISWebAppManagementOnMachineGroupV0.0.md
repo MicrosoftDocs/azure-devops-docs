@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -66,5 +64,3 @@
     #startStopRecycleAppPoolName: # Required when actionIISApplicationPool == StartAppPool || ActionIISApplicationPool == StopAppPool || ActionIISApplicationPool == RecycleAppPool
     #appCmdCommands: # Optional
 ```
-
-::: moniker-end

@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -10,5 +8,3 @@
     command: 
     arguments: 
 ```
-
-::: moniker-end

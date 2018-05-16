@@ -24,7 +24,11 @@ monikerRange: '>= tfs-2015'
 
 Xamarin.iOS
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/XamariniOSV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

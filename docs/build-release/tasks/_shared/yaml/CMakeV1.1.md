@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -10,5 +8,3 @@
     #workingDirectory: 'build' # Optional
     #cmakeArgs: # Optional
 ```
-
-::: moniker-end

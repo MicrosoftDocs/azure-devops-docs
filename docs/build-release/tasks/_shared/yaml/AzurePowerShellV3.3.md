@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -19,5 +17,3 @@
     #azurePowerShellVersion: 'OtherVersion' # Optional. Options: latestVersion, otherVersion
     #preferredAzurePowerShellVersion: # Required when azurePowerShellVersion == OtherVersion
 ```
-
-::: moniker-end

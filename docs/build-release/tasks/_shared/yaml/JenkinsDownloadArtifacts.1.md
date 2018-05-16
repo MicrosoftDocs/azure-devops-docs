@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -24,5 +22,3 @@
     #containerName: # Required when propagatedArtifacts == True
     #commonVirtualPath: # Optional
 ```
-
-::: moniker-end

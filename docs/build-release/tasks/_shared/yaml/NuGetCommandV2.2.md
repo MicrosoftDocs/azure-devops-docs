@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -41,5 +39,3 @@
     #verbosityPack: 'Detailed' # Options: quiet, normal, detailed
     #arguments: # Required when command == Custom
 ```
-
-::: moniker-end

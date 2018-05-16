@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -37,5 +35,3 @@
     #useXcpretty: # Optional
     #publishJUnitResults: # Optional
 ```
-
-::: moniker-end

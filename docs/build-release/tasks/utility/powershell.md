@@ -23,7 +23,11 @@ monikerRange: '>= tfs-2015'
 
 DotNetFramework
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PowerShellV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

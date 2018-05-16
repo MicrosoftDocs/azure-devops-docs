@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -25,5 +23,3 @@
     #workingDirectory: # Optional
     #runPowershellInParallel: true # Optional
 ```
-
-::: moniker-end

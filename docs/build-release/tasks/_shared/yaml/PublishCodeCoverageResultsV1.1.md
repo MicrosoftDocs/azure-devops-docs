@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -13,5 +11,3 @@
     #additionalCodeCoverageFiles: # Optional
     #failIfCoverageEmpty: false # Optional
 ```
-
-::: moniker-end

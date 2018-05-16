@@ -25,7 +25,11 @@ This task enables you to connect to a remote machine using SSH and run commands 
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/SshV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -39,5 +37,3 @@
     #workingDirectory: '$(System.DefaultWorkingDirectory)' # Optional
     #memory: # Optional
 ```
-
-::: moniker-end
