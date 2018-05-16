@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -16,5 +14,3 @@
     #ignoreLASTEXITCODE: false # Optional
     #workingDirectory: # Optional
 ```
-
-::: moniker-end

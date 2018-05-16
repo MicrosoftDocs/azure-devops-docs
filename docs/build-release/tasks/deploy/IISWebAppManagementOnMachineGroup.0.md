@@ -8,14 +8,18 @@ ms.assetid: 1b2aec60-dc49-11e6-9b76-63056e018cac
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: IIS Web App Manage
 
 ![](_img/iiswebappmanagementonmachinegroup.png) Create or update a Website, Web App, Virtual Directories, and Application Pool
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/IISWebAppManagementOnMachineGroupV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

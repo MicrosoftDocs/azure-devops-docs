@@ -26,7 +26,11 @@ You can use this task to install an Apple certificate that is stored as a [secur
 
 xcode
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleCertificateV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

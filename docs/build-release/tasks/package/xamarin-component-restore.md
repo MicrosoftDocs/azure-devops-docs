@@ -24,7 +24,11 @@ monikerRange: '>= tfs-2017'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/XamarinComponentRestoreV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

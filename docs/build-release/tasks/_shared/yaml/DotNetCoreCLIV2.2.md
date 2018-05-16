@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -40,5 +38,3 @@
     #verbosityPack: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
     workingDirectory: 
 ```
-
-::: moniker-end

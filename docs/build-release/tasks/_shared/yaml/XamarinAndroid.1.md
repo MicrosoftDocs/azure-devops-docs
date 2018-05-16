@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -23,5 +21,3 @@
     #jdkDirectory: # Required when jdkOption == Path
     #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
 ```
-
-::: moniker-end

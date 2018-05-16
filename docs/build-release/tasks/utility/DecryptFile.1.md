@@ -8,14 +8,18 @@ ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Decrypt File (OpenSSL)
 
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DecryptFileV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

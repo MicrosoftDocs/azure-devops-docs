@@ -28,7 +28,11 @@ This task uses a Service Fabric installation to connect and
 deploy to a Service Fabric cluster.  
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricDeploy.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

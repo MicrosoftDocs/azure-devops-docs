@@ -19,7 +19,11 @@ monikerRange: '>= tfs-2015'
 
 ![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/BatchScriptV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

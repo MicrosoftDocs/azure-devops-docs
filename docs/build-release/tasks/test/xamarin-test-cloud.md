@@ -25,7 +25,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/XamarinTestCloud.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

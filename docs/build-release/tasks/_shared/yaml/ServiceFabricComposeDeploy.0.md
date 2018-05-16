@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -20,5 +18,3 @@
     #removeTimeoutSec: # Optional
     #getStatusTimeoutSec: # Optional
 ```
-
-::: moniker-end

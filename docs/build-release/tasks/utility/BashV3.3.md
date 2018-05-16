@@ -8,14 +8,18 @@ ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Bash
 
 ![](_img/bash.png) This is an early preview. Run a Bash script on macOS, Linux, or Windows
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/BashV3.3.md)]
+
+::: moniker-end
 
 ## Arguments
 
