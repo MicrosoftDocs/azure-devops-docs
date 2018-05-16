@@ -114,6 +114,10 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+## Example
+
+[Build your Java app with Gradle](../../apps/java/build-gradle.md)
+
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
