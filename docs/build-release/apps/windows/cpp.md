@@ -117,7 +117,3 @@ https://github.com/adventworks/cpp-sample
 ## View the build summary
 
 [!INCLUDE [include](../_shared/view-build-summary.md)]
-
-## Next steps
-
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
