@@ -22,7 +22,11 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

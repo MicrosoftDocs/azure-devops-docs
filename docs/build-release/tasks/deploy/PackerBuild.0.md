@@ -8,14 +8,18 @@ ms.assetid: 845fd4f4-642d-4694-8514-047948a5a556
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Build Machine Image
 
 ![](_img/packerbuild.png) Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PackerBuildV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

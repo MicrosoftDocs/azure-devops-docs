@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -33,5 +31,3 @@
     #pmdRunAnalysis: false # Optional
     #findBugsRunAnalysis: false # Optional
 ```
-
-::: moniker-end

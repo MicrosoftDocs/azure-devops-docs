@@ -36,7 +36,11 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PublishSymbols.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

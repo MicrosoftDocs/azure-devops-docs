@@ -44,7 +44,11 @@ in the firewall, and install the test certificate.
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

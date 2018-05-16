@@ -8,14 +8,18 @@ ms.assetid: B719DB6C-40A2-4F43-9AFF-827825BAECAE
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Chef
 
 ![](_img/chef.png) Deploy to Chef environments by editing environment attributes
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ChefV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

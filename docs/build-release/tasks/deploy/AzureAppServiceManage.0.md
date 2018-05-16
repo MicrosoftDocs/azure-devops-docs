@@ -8,14 +8,18 @@ ms.assetid: f045e430-8704-11e6-968f-e717e6411619
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure App Service Manage
 
 ![](_img/azureappservicemanage.png) Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureAppServiceManage.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

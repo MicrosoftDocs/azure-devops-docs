@@ -22,7 +22,11 @@ monikerRange: '>= tfs-2017'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ArchiveFilesV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

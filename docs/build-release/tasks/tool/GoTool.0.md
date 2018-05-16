@@ -8,14 +8,18 @@ ms.assetid: 334727F4-9495-4F9D-A391-FC621D671474
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Tool: Go Tool Installer
 
 ![](_img/gotool.png) Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/GoTool.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

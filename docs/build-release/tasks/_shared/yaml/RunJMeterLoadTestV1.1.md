@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -14,5 +12,3 @@
     #runDuration: '60' # Options: 60, 120, 180, 240, 300
     #machineType: '0' # Optional. Options: 0, 2
 ```
-
-::: moniker-end

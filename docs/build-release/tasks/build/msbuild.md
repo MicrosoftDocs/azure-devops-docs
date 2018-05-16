@@ -25,7 +25,11 @@ msbuild
 
 > **VSTS:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/MSBuildV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

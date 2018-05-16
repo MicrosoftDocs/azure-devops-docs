@@ -43,17 +43,7 @@ None
 
 ::: moniker range="vsts"
 
-## YAML snippet
-
-```YAML
-- task: CondaEnvironment@0
-  inputs:
-    environmentName: env
-    packageSpecs: 'python=2.7'
-#   updateConda: false
-#   createOptions: '--quiet --json'
-#   cleanEnvironment: true
-```
+[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.0.md)]
 
 ::: moniker-end
 

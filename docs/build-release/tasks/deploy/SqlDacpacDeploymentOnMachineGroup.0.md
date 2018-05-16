@@ -8,14 +8,18 @@ ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: SQL Server Database Deploy
 
 ![](_img/sqldacpacdeploymentonmachinegroup.png) Deploy to SQL Server Database using DACPAC or SQL scripts
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

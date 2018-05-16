@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -44,5 +42,3 @@
     #rerunFailedTestCasesMaxLimit: '5' # Optional
     #rerunMaxAttempts: '3' # Optional
 ```
-
-::: moniker-end

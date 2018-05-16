@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -14,5 +12,3 @@
     #overWrite: false # Optional
     #flattenFolders: false # Optional
 ```
-
-::: moniker-end

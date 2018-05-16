@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -11,5 +9,3 @@
     #addToPath: true 
     #architecture: 'x64' # Options: x86, x64
 ```
-
-::: moniker-end

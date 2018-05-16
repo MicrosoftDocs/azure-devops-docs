@@ -8,14 +8,18 @@ ms.assetid: 497D490F-EEA7-4F2B-AB94-48D9C1ACDCB1
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure App Service Deploy
 
 ![](_img/azurermwebappdeployment.png) Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureRmWebAppDeployment.4.md)]
+
+::: moniker-end
 
 ## Arguments
 

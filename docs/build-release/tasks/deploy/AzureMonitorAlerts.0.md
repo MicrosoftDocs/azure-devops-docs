@@ -8,14 +8,18 @@ ms.assetid: 1d876d40-9aa7-11e7-905d-f541cc882994
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure Monitor Alerts
 
 ![](_img/azuremonitoralerts.png) Configure alerts on available metrics for an Azure resource
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorAlertsV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
