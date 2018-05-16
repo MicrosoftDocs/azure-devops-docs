@@ -30,7 +30,11 @@ You can install an Apple provisioning profile that is:
 
 xcode
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

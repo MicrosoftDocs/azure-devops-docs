@@ -8,14 +8,18 @@ ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Deploy to Kubernetes
 
 ![](_img/kubernetes.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/Kubernetes.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

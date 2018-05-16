@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -9,5 +7,3 @@
   inputs:
     secureFile: 
 ```
-
-::: moniker-end

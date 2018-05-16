@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -26,5 +24,3 @@
     #outputVariable: # Optional
     #deploymentOutputs: # Optional
 ```
-
-::: moniker-end

@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -22,5 +20,3 @@
     #appInsightsResourceGroupName: # Required when action == Enable Continuous Monitoring
     #applicationInsightsResourceName: # Required when action == Enable Continuous Monitoring
 ```
-
-::: moniker-end

@@ -24,7 +24,11 @@ monikerRange: '>= tfs-2015'
 
 AndroidSDK, MSBuild, Xamarin.Android
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/XamarinAndroid.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -21,5 +19,3 @@
     #preservePaths: false 
     #trustSSL: false 
 ```
-
-::: moniker-end

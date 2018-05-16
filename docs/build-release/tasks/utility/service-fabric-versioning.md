@@ -26,7 +26,11 @@ specified in the manifest files, in an Azure Service Fabric application package.
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

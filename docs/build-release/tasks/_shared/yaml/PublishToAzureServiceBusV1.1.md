@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -14,5 +12,3 @@
     #signatureKey: 'signature' # Optional
     #waitForCompletion: false 
 ```
-
-::: moniker-end

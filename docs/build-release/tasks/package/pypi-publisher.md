@@ -37,7 +37,11 @@ A generic service connection for a PyPI index.
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

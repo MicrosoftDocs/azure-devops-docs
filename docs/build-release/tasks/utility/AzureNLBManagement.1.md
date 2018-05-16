@@ -8,14 +8,18 @@ ms.assetid: e94f1750-a6a8-11e6-be69-bdf37a7b15d8
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Azure Network Load Balancer
 
 ![](_img/azurenlbmanagement.png) Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureNLBManagementV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

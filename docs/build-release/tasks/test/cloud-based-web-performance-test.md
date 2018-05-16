@@ -34,7 +34,11 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

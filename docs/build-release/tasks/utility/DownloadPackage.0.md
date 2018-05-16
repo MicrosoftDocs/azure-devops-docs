@@ -8,14 +8,18 @@ ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Download Package
 
 ![](_img/downloadpackage.png) Download a package from a Package Management feed in VSTS or TFS.  Requires the Package Management extension.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DownloadPackageV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

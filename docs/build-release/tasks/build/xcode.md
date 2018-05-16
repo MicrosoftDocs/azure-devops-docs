@@ -21,7 +21,11 @@ monikerRange: 'vsts'
 
 xcode
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/Xcode.5.md)]
+
+::: moniker-end
 
 ## Arguments
 

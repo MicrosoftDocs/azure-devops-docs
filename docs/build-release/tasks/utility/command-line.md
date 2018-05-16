@@ -25,7 +25,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -31,7 +31,11 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeploy.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
