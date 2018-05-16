@@ -8,14 +8,18 @@ ms.assetid: AD5CD22A-BE4E-48BB-ADCE-181A32432DA5
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Test: App Center Test
 
 ![](_img/appcentertest.png) Test app packages with Visual Studio App Center.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AppCenterTestV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

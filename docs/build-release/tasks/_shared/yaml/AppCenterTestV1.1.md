@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -45,5 +43,3 @@
     #cliFile: # Optional
     #showDebugOutput: # Optional
 ```
-
-::: moniker-end

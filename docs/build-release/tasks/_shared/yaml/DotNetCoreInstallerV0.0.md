@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -10,5 +8,3 @@
     #packageType: 'sdk' # Options: runtime, sdk
     #version: '1.0.4' 
 ```
-
-::: moniker-end

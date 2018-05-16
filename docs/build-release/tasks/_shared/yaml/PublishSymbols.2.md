@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -20,5 +18,3 @@
     #symbolsVersion: # Optional
     #symbolsArtifactName: 'Symbols_$(BuildConfiguration)' # Optional
 ```
-
-::: moniker-end

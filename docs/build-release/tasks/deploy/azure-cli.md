@@ -50,7 +50,11 @@ None
   See [Install the Azure CLI](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/).
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevent environment variables are updated.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureCLIV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

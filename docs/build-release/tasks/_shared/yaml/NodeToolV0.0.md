@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -10,5 +8,3 @@
     #versionSpec: '6.x' 
     #checkLatest: false # Optional
 ```
-
-::: moniker-end

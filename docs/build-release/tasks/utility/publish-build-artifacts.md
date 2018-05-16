@@ -26,7 +26,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PublishBuildArtifacts.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

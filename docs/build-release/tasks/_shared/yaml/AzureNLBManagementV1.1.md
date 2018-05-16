@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -12,5 +10,3 @@
     loadBalancer: 
     action: # Options: disconnect, connect
 ```
-
-::: moniker-end

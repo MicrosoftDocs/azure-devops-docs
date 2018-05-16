@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -32,5 +30,3 @@
     #outputStorageUri: # Optional
     #outputStorageContainerSasToken: # Optional
 ```
-
-::: moniker-end

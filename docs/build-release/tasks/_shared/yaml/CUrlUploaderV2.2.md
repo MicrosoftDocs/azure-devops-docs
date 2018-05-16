@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -17,5 +15,3 @@
     #options: # Optional
     #redirectStderr: true # Optional
 ```
-
-::: moniker-end

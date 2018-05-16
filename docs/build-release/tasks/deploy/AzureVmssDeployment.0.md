@@ -8,14 +8,18 @@ ms.assetid: 4dda660c-b643-4598-a4a2-61080d0002d9
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure VM scale set Deployment
 
 ![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureVmssDeploymentV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

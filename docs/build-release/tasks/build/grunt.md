@@ -25,7 +25,11 @@ The build agent must have the following capability:
 
  * Grunt
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/GruntV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -61,7 +61,11 @@ When you want to access secrets:
 
   - Choose **OK** to save the changes.<p />
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureKeyVault.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

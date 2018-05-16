@@ -8,14 +8,18 @@ ms.assetid: EF087383-EE5E-42C7-9A53-AB56C98420F9
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Test: Visual Studio Test
 
 ![](_img/vstest.png) Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. Tests can be distributed on multiple agents using this task (version 2).
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/VsTest.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -24,7 +24,11 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

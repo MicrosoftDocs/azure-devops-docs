@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -18,5 +16,3 @@
     jdkDestinationDirectory: 
     #cleanDestinationDirectory: true 
 ```
-
-::: moniker-end

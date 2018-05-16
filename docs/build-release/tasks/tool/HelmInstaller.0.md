@@ -8,14 +8,18 @@ ms.assetid: 068D5909-43E6-48C5-9E01-7C8A94816220
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Tool: Helm tool installer
 
 ![](_img/helminstaller.png) Install Helm and Kubernetes on agent machine.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/HelmInstallerV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

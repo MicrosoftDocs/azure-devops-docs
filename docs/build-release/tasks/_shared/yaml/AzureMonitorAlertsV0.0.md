@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -15,5 +13,3 @@
     #notifyServiceOwners: # Optional
     #notifyEmails: # Optional
 ```
-
-::: moniker-end

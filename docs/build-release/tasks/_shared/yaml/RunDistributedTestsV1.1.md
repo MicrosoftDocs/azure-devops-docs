@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -25,5 +23,3 @@
     #testConfigurations: # Optional
     #autMachineGroup: # Optional
 ```
-
-::: moniker-end
