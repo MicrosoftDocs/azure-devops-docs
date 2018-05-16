@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -24,5 +22,3 @@
     #jdkUserInputDirectory: # Required when javaHomeOption == Path
     #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
 ```
-
-::: moniker-end

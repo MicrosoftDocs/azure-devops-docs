@@ -8,14 +8,18 @@ ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Build: .NET Core CLI
 
 ![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DotNetCoreCLIV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 

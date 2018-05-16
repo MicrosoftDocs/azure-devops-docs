@@ -8,14 +8,18 @@ ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Jenkins Download Artifacts
 
 ![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/JenkinsDownloadArtifacts.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

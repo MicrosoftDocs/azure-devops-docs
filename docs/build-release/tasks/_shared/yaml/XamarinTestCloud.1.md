@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -21,5 +19,3 @@
     #optionalArgs: # Optional
     #publishNUnitResults: true # Optional
 ```
-
-::: moniker-end

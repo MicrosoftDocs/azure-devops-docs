@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -14,5 +12,3 @@
     #appPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)' 
     #ipaPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output' 
 ```
-
-::: moniker-end

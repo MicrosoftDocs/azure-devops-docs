@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -38,5 +36,3 @@
     #privatekey: # Required when enableTls == True
     #tillerNamespace: # Optional
 ```
-
-::: moniker-end

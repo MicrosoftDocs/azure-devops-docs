@@ -24,7 +24,11 @@ monikerRange: '>= tfs-2015'
 ### Demands
 [npm](https://nodejs.org/en/download/)
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/NpmV1.1.md)]
+
+::: moniker-end
 
 ### Arguments
 <table>

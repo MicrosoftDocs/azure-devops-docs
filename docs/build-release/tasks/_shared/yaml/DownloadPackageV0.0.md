@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -12,5 +10,3 @@
     version: 
     #downloadPath: '$(System.ArtifactsDirectory)' 
 ```
-
-::: moniker-end

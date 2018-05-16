@@ -27,7 +27,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

@@ -26,7 +26,11 @@ Otherwise, use the latest version of the Xcode task.**
 
 xcode
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/XcodePackageiOSV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

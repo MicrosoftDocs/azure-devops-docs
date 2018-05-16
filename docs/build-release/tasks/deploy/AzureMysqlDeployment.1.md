@@ -8,14 +8,18 @@ ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure Database for Mysql Deployment
 
 ![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/AzureMysqlDeployment.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

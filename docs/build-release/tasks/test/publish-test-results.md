@@ -36,7 +36,11 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PublishTestResults.2.md)]
+
+::: moniker-end
 
 ## Arguments 
 

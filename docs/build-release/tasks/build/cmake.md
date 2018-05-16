@@ -23,7 +23,11 @@ monikerRange: '>= tfs-2015'
 
 cmake
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/CMakeV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 

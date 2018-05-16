@@ -25,7 +25,11 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

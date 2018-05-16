@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -19,5 +17,3 @@
     #overwriteExistingPkgArtifact: true # Optional
     #imageDigestsPath: # Required when updateType == Docker Image Settings
 ```
-
-::: moniker-end

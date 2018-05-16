@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -13,5 +11,3 @@
     #kubectlVersion: '1.8.9' # Optional
     #checkLatestKubectl: true # Optional
 ```
-
-::: moniker-end

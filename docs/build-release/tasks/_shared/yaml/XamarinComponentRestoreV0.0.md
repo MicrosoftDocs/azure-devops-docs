@@ -1,5 +1,3 @@
-::: moniker range="vsts"
-
 ## YAML snippet
 
 ```YAML
@@ -11,5 +9,3 @@
     email: 
     password: 
 ```
-
-::: moniker-end

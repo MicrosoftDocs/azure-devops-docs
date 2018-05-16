@@ -8,14 +8,18 @@ ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Tool: .NET Core Tool Installer
 
 ![](_img/dotnetcoreinstaller.png) Acquires a specific version of .NET Core from internet or the tools cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/DotNetCoreInstallerV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

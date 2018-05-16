@@ -25,7 +25,11 @@ monikerRange: 'vsts'
 
 None
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

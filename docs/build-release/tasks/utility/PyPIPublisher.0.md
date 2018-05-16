@@ -8,14 +8,18 @@ ms.assetid: 2d8a1d60-8ccd-11e7-a792-11ac56e9f553
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: PyPI Publisher
 
 ![](_img/pypipublisher.png) Publish Python packages to PyPI
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 

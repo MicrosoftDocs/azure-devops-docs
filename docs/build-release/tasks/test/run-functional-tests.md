@@ -36,7 +36,11 @@ tests on the build machine.
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.1.md)]
+
+::: moniker-end
 
 ### Arguments
 

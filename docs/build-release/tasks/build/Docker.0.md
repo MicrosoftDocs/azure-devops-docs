@@ -8,14 +8,18 @@ ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Build: Docker
 
 ![](_img/docker.png) Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
 
+::: moniker range="vsts"
+
 [!INCLUDE [temp](../_shared/yaml/Docker.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
