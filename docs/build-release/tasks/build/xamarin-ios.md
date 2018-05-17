@@ -24,6 +24,11 @@ monikerRange: '>= tfs-2015'
 
 Xamarin.iOS
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/XamariniOSV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -120,32 +125,9 @@ Working directory for the build. If you leave it blank, it is the root of the re
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: XamariniOS@2
-  inputs:
-    #solutionFile: '**/*.sln' 
-    #configuration: 'Release' 
-    #clean: false # Optional
-    packageApp: 
-    #buildForSimulator: false # Optional
-    #runNugetRestore: false 
-    #args: # Optional
-    #workingDirectory: # Optional
-    #mdtoolFile: # Optional
-    #signingIdentity: # Optional
-    #signingProvisioningProfileID: # Optional
-```
-
-::: moniker-end
-
-## Example 
+## Example
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
-
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

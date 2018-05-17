@@ -8,12 +8,18 @@ ms.assetid: 334727F4-9495-4F9D-A391-FC621D671474
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Tool: Go Tool Installer
 
 ![](_img/gotool.png) Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/GoTool.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -23,22 +29,6 @@ monikerRange: 'VSTS'
 <tr><td>GOBIN</td><td>(Optional) Value for the GOBIN environment variable.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Go Tool Installer
-# Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
-- task: GoTool@0
-  inputs:
-    #version: '1.10' 
-    #goPath: # Optional
-    #goBin: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

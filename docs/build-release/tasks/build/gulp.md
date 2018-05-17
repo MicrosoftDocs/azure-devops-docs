@@ -1,5 +1,5 @@
 ---
-title: Gulp build and release task
+title: Gulp build and release task | VSTS or Team Foundation Server
 description: Gulp build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -22,6 +22,12 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 gulp
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/GulpV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -60,29 +66,6 @@ gulp
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: Gulp@0
-  inputs:
-    #gulpFile: 'gulpfile.js' 
-    #targets: # Optional
-    #arguments: # Optional
-    #workingDirectory: # Optional
-    #gulpjs: 'node_modules/gulp/bin/gulp.js' 
-    #publishJUnitResults: false # Optional
-    #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
-    #testRunTitle: # Optional
-    #enableCodeCoverage: false 
-    #testFramework: 'Mocha' # Optional. Options: mocha, jasmine
-    #srcFiles: # Optional
-    #testFiles: 'test/*.js' # Required when enableCodeCoverage == True
-```
-
-::: moniker-end
 
 ## Example
 

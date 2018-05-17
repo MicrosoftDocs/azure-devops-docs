@@ -8,12 +8,18 @@ ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure Database for Mysql Deployment
 
 ![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureMysqlDeployment.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -33,32 +39,6 @@ monikerRange: 'VSTS'
 <tr><td>Delete Rule After Task Ends</td><td>(Optional) If selected, the added exception for IP addresses of the automation agent will be removed for corresponding Azure Database for MySQL.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure Database for Mysql Deployment
-# This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
-- task: AzureMysqlDeployment@1
-  inputs:
-    azureSubscription: 
-    serverName: 
-    #databaseName: # Optional
-    sqlUsername: 
-    sqlPassword: 
-    #taskNameSelector: 'SqlTaskFile' # Optional. Options: sqlTaskFile, inlineSqlTask
-    #sqlFile: # Required when taskNameSelector == SqlTaskFile
-    #sqlInline: # Required when taskNameSelector == InlineSqlTask
-    #sqlAdditionalArguments: # Optional
-    #ipDetectionMethod: 'AutoDetect' # Options: autoDetect, iPAddressRange
-    #startIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #endIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #deleteFirewallRule: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

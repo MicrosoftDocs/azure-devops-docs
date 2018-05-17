@@ -8,12 +8,18 @@ ms.assetid: B719DB6C-40A2-4F43-9AFF-827825BAECAE
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Chef
 
 ![](_img/chef.png) Deploy to Chef environments by editing environment attributes
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ChefV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -24,23 +30,6 @@ monikerRange: 'VSTS'
 <tr><td>Wait Time</td><td>(Required) The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Chef
-# Deploy to Chef environments by editing environment attributes
-- task: Chef@1
-  inputs:
-    connectedServiceName: 
-    environment: 
-    attributes: 
-    #chefWaitTime: '30' 
-```
-
-::: moniker-end
 
 ## Q&A
 

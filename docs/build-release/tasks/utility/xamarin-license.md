@@ -1,6 +1,6 @@
 ---
-title: Xamarin license
-description: How to activate or deactivate a Xamarin license when building code in VSTS and Team Foundation Server TFS
+title: Xamarin license | VSTS or Team Foundation Server
+description: Learn how you can activate or deactivate a Xamarin license when building code in VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,7 +11,6 @@ author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Utility: Xamarin license
 

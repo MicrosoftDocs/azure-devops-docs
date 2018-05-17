@@ -1,6 +1,6 @@
 ---
-title: Delete files
-description: How to delete files from a build agent working directory when building code in VSTS and Team Foundation Server TFS
+title: Delete files | VSTS or Team Foundation Server
+description: Learn how you can delete files from a build agent working directory when building code in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,6 +22,12 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -56,19 +62,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: DeleteFiles@1
-  inputs:
-    #sourceFolder: # Optional
-    #contents: 'myFileShare' 
-```
-
-::: moniker-end
 
 ## Q & A
 

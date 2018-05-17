@@ -20,7 +20,15 @@ monikerRange: '>= tfs-2017'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+## Demands
+
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -38,19 +46,3 @@ Succeeds if none of the alert rules are activated at the time of sampling.
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AzureMonitor@0
-  inputs:
-    connectedServiceNameARM: 
-    resourceGroupName: 
-    #resourceType: 'Microsoft.Insights/components' # Options: microsoft.Insights/Components, microsoft.Web/Sites, microsoft.Storage/StorageAccounts, microsoft.Compute/VirtualMachines
-    resourceName: 
-    alertRules: 
-```
-
-::: moniker-end
