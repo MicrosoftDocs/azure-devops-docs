@@ -12,7 +12,7 @@ author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
-# Exoplore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
+# Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
 Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index)) with Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
 
