@@ -52,6 +52,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 * [Azure DevOps Project for Service Fabric](../build-release/actions/azure-devops-project-servicefabric.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Set up multi-stage release](../build-release/actions/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [CI builds for Git in VSTS](../build-release/actions/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [Deploy apps to Azure App Service with VSTS and CI/CD](https://docs.microsoft.com/learn/deploy-apps-to-azure/index)
 
 ## Videos
 
