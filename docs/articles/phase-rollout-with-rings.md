@@ -1,5 +1,5 @@
 ---
-title: Progressively exposure your releases using deployment rings
+title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops

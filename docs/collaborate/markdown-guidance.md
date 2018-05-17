@@ -337,7 +337,7 @@ You can also reference headings within another Markdown file:
 <br/>
 In wiki, you can also reference heading in another page:
 
-<Pre>
+<pre>
 [text to display](/page-name#section-name)
 </pre>
 
