@@ -181,7 +181,7 @@ Moving from a centralized version control system to Git is more than just migrat
 - [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/tfvc/comparison-git-tfvc)
 - [Learn Git](/azure/devops/git/learn-git-with-team-services/)
 - [Ignore file changes with Git](https://docs.microsoft.com/en-us/vsts/git/tutorial/ignore-files?tabs=visual-studio)
-- [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git_)
+- [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
