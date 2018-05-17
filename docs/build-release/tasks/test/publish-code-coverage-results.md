@@ -26,14 +26,15 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 
 ## Arguments
 
-| Argument | Description |
-| -------- | ----------- |
-| **Code Coverage Tool** | Required. The tool with which code coverage results are generated. Currently supported schemas are [Cobertura](http://cobertura.sourceforge.net/xml/coverage-04.dtd) and [JaCoCo](http://www.eclemma.org/jacoco/trunk/coverage/report.dtd). |
-| **Summary File** | Required. The path of the summary file containing code coverage statistics such as line, method, and class coverage. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml` |
-| **Report Directory** | The path of the code coverage HTML report directory. The report directory is published for subsequent viewing as an artifact of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura` |
-| **Additional Files** | The file path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain [minimatch patterns](../file-matching-patterns.md). Example: `$(System.DefaultWorkingDirectory)/**/*.exec` |
-| **Fail when code coverage results are missing** | Fail the task if code coverage did not produce any results to publish. |
-| **Control options** | See [control options](../../concepts/process/tasks.md#controloptions). |
+<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
+<tr><td>Code coverage tool</td><td>(Required) The tool with which code coverage results are generated.</td></tr>
+<tr><td>Summary file</td><td>(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`</td></tr>
+<tr><td>Report directory</td><td>(Optional) Path of the code coverage HTML report directory. The report directory is published for later viewing as an artifact of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura`</td></tr>
+<tr><td>Additional files</td><td>(Optional) File path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/**/*.exec`</td></tr>
+<tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on VSTS and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+</table>
+
 
 ## More Information
 
