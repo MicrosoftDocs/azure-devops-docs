@@ -1,6 +1,6 @@
 ---
-title: Extract Files
-description: Extract files from archives to a target folder using minimatch patterns on VSTS and Team Foundation Server TFS
+title: Extract Files | VSTS or Team Foundation Server
+description: Learn how you can extract files from archives to a target folder using minimatch patterns on VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,6 +22,12 @@ monikerRange: '>= tfs-2017'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -59,20 +65,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ExtractFiles@1
-  inputs:
-    #archiveFilePatterns: '*.zip' 
-    destinationFolder: 
-    #cleanDestinationFolder: true 
-```
-
-::: moniker-end
 
 ## Q & A
 

@@ -28,6 +28,12 @@ This task uses a Service Fabric installation to connect and
 deploy to a Service Fabric cluster.  
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricDeploy.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -38,54 +44,6 @@ deploy to a Service Fabric cluster.
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ServiceFabricDeploy@1
-  inputs:
-    applicationPackagePath: 
-    serviceConnectionName: 
-    #publishProfilePath: # Optional
-    #applicationParameterPath: # Optional
-    #overrideApplicationParameter: false # Optional
-    #compressPackage: false # Optional
-    #useDiffPackage: false # Optional
-    #copyPackageTimeoutSec: # Optional
-    #registerPackageTimeoutSec: # Optional
-    #overwriteBehavior: 'SameAppTypeAndVersion' # Options: always, never, sameAppTypeAndVersion
-    #skipUpgradeSameTypeAndVersion: false # Optional
-    #skipPackageValidation: false # Optional
-    #overridePublishProfileSettings: false # Optional
-    #isUpgrade: true # Optional
-    #unregisterUnusedVersions: true # Optional
-    #upgradeMode: 'Monitored' # Required when overridePublishProfileSettings == True && IsUpgrade == True# Options: monitored, unmonitoredAuto, unmonitoredManual
-    #failureAction: 'Rollback' # Required when overridePublishProfileSettings == True && IsUpgrade == True && UpgradeMode == Monitored# Options: rollback, manual
-    #upgradeReplicaSetCheckTimeoutSec: # Optional
-    #replicaQuorumTimeoutSec: # Optional
-    #timeoutSec: # Optional
-    #forceRestart: false # Optional
-    #healthCheckRetryTimeoutSec: # Optional
-    #healthCheckWaitDurationSec: # Optional
-    #healthCheckStableDurationSec: # Optional
-    #upgradeDomainTimeoutSec: # Optional
-    #considerWarningAsError: false # Optional
-    #defaultServiceTypeHealthPolicy: # Optional
-    #maxPercentUnhealthyDeployedApplications: # Optional
-    #upgradeTimeoutSec: # Optional
-    #serviceTypeHealthPolicyMap: # Optional
-    #configureDockerSettings: false # Optional
-    #registryCredentials: 'AzureResourceManagerEndpoint' # Required when configureDockerSettings == True# Options: azureResourceManagerEndpoint, containerRegistryEndpoint, usernamePassword
-    #dockerRegistryConnection: # Required when configureDockerSettings == True && RegistryCredentials == ContainerRegistryEndpoint
-    #azureSubscription: # Required when configureDockerSettings == True && RegistryCredentials == AzureResourceManagerEndpoint
-    #registryUserName: # Optional
-    #registryPassword: # Optional
-    #passwordEncrypted: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

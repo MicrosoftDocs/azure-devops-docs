@@ -8,12 +8,18 @@ ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Build: .NET Core CLI
 
 ![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DotNetCoreCLIV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -59,51 +65,6 @@ If you choose 'Use the build number', this will use the build number to version 
 <tr><td>Working Directory</td><td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# .NET Core
-# Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
-- task: DotNetCoreCLI@2
-  inputs:
-    #command: 'build' # Options: build, push, pack, publish, restore, run, test, custom
-    #publishWebProjects: true # Required when command == Publish
-    #projects: # Optional
-    #custom: # Required when command == Custom
-    #arguments: # Optional
-    #publishTestResults: true # Optional
-    #zipAfterPublish: true # Optional
-    #modifyOutputPath: true # Optional
-    #feedsToUse: 'select' # Options: select, config
-    #vstsFeed: # Required when feedsToUse == Select
-    #includeNuGetOrg: true # Required when feedsToUse == Select
-    #nugetConfigPath: # Required when feedsToUse == Config
-    #externalFeedCredentials: # Optional
-    #noCache: false 
-    restoreDirectory: 
-    #verbosityRestore: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
-    #packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg' # Required when command == Push
-    #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
-    #publishVstsFeed: # Required when command == Push && NuGetFeedType == Internal
-    #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
-    #packagesToPack: '**/*.csproj' # Required when command == Pack
-    #configuration: '$(BuildConfiguration)' # Optional
-    #packDirectory: '$(Build.ArtifactStagingDirectory)' # Optional
-    #nobuild: false # Optional
-    #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
-    #versionEnvVar: # Required when versioningScheme == ByEnvVar
-    #majorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber
-    #minorVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
-    #patchVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
-    #buildProperties: # Optional
-    #verbosityPack: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
-    workingDirectory: 
-```
-
-::: moniker-end
 
 ## Q&A
 

@@ -8,12 +8,18 @@ ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Decrypt File (OpenSSL)
 
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DecryptFileV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -25,24 +31,6 @@ monikerRange: 'VSTS'
 <tr><td>Working directory</td><td>(Optional) Working directory for decryption. Defaults to the root of the repository.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Decrypt File (OpenSSL)
-# A thin utility task for file decryption using OpenSSL.
-- task: DecryptFile@1
-  inputs:
-    #cipher: 'des3' 
-    inFile: 
-    passphrase: 
-    #outFile: # Optional
-    #workingDirectory: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

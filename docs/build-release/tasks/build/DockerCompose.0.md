@@ -8,12 +8,18 @@ ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Build: Docker Compose
 
 ![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DockerCompose.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -51,50 +57,6 @@ monikerRange: 'VSTS'
 <tr><td>Working Directory</td><td>(Optional) Working directory for the Docker Compose command.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Docker Compose
-# Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
-- task: DockerCompose@0
-  inputs:
-    #containerregistrytype: 'Azure Container Registry' # Options: azure Container Registry, container Registry
-    #dockerRegistryEndpoint: # Optional
-    #azureSubscription: # Optional
-    #azureContainerRegistry: # Optional
-    #dockerComposeFile: '**/docker-compose.yml' 
-    #additionalDockerComposeFiles: # Optional
-    #dockerComposeFileArgs: # Optional
-    #projectName: '$(Build.Repository.Name)' # Optional
-    #qualifyImageNames: true # Optional
-    #action: 'Run a Docker Compose command' # Options: build Services, push Services, run Services, run A Specific Service, lock Services, write Service Image Digests, combine Configuration, run A Docker Compose Command
-    #additionalImageTags: # Optional
-    #includeSourceTags: false # Optional
-    #includeLatestTag: false # Optional
-    #buildImages: true # Optional
-    #serviceName: # Required when action == Run A Specific Service
-    #containerName: # Optional
-    #ports: # Optional
-    #workingDirectory: # Optional
-    #entrypoint: # Optional
-    #containerCommand: # Optional
-    #detached: true # Optional
-    #abortOnContainerExit: true # Optional
-    #imageDigestComposeFile: '$(Build.StagingDirectory)/docker-compose.images.yml' # Required when action == Write Service Image Digests
-    #removeBuildOptions: false # Optional
-    #baseResolveDirectory: # Optional
-    #outputDockerComposeFile: '$(Build.StagingDirectory)/docker-compose.yml' # Required when action == Lock Services || Action == Combine Configuration
-    #dockerComposeCommand: # Required when action == Run A Docker Compose Command
-    #dockerHostEndpoint: # Optional
-    #nopIfNoDockerComposeFile: false # Optional
-    #requireAdditionalDockerComposeFiles: false # Optional
-    #currentWorkingDirectory: '$(System.DefaultWorkingDirectory)' # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

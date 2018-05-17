@@ -8,12 +8,18 @@ ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: Bash
 
 ![](_img/bash.png) This is an early preview. Run a Bash script on macOS, Linux, or Windows
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/BashV3.3.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -26,25 +32,6 @@ monikerRange: 'VSTS'
 <tr><td>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the StandardError stream.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Bash
-# This is an early preview. Run a Bash script on macOS, Linux, or Windows
-- task: Bash@3
-  inputs:
-    #targetType: 'filePath' # Optional. Options: filePath, inline
-    #filePath: # Required when targetType == FilePath
-    #arguments: # Optional
-    #script: '# Write your commands here# Use the environment variables input below to pass secret variables to this script' # Required when targetType == Inline
-    #workingDirectory: # Optional
-    #failOnStderr: false # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

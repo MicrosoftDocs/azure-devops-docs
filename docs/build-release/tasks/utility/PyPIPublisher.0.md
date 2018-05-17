@@ -8,12 +8,18 @@ ms.assetid: 2d8a1d60-8ccd-11e7-a792-11ac56e9f553
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Utility: PyPI Publisher
 
 ![](_img/pypipublisher.png) Publish Python packages to PyPI
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -30,22 +36,6 @@ Password – password for your PyPI account</td></tr>
 <tr><td>Upload wheel</td><td>(Optional) If checked, then task will additionally build and publish universal wheel (platform independent) of this package. For more information regarding universal wheel [see here](https://packaging.python.org/tutorials/distributing-packages/#wheels).</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# PyPI Publisher
-# Publish Python packages to PyPI
-- task: PyPIPublisher@0
-  inputs:
-    serviceEndpoint: 
-    wd: 
-    #wheel: false # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

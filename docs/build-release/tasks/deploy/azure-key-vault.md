@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: Azure Key Vault task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+description: Learn about Azure Key Vault task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
@@ -23,7 +23,7 @@ from an [Azure Key Vault](https://docs.microsoft.com/en-us/rest/api/keyvault/abo
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a definition.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
-## Pre-requisites for the task
+## Pre-requisites
 
 The task has the following pre-requisites:
 
@@ -61,7 +61,13 @@ When you want to access secrets:
 
   - Choose **OK** to save the changes.<p />
 
-### Parameters of the task:
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureKeyVault.1.md)]
+
+::: moniker-end
+
+## Arguments
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -96,20 +102,6 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 ```
 
 For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: AzureKeyVault@1
-  inputs:
-    azureSubscription: 
-    keyVaultName: 
-    #secretsFilter: '*' # Options: editableOptions
-```
-
-::: moniker-end
 
 ## Contact Information
 

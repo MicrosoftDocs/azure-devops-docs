@@ -1,6 +1,6 @@
 ---
 title: Publish To Azure Service Bus task 
-description: Build and release task to send a message to an Azure Service Bus with a build or release definition in VSTS and TFS
+description: Build and release task to send a message to an Azure Service Bus with a build or release definition in VSTS and TFS.
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,6 +22,12 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Parameter | Comments |
@@ -33,23 +39,6 @@ Can be used in only an [agentless phase](../../concepts/process/server-phases.md
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: PublishToAzureServiceBus@1
-  inputs:
-    azureSubscription: 
-    #messageBody: # Optional
-    #signPayload: false 
-    #certificateString: # Required when signPayload == True
-    #signatureKey: 'signature' # Optional
-    #waitForCompletion: false 
-```
-
-::: moniker-end
 
 ## Q & A
 

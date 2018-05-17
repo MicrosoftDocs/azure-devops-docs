@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Builds and Releases
-description: Troubleshooting Team Foundation Build (TFBuild) and Release in Team Foundation Server and VSTS.
+title: Troubleshoot Builds and Releases | VSTS or Team Foundation Server
+description: Learn how you can troubleshoot Team Foundation Build (TFBuild) and Release in Team Foundation Server (TFS) and VSTS.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
