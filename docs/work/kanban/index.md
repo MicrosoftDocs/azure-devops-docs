@@ -101,7 +101,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Backlogs](../backlogs/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item queries](../track/index.md)
-- [Work item custom/azure/devops/agile/what-is-agile
+- [Work item customization](../customize/index.md) 
 - [What is Agile?](/azure/devops/agile/what-is-agile)   
 - [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 
