@@ -1,5 +1,5 @@
 ---
-title: Build variables
+title: Build variables | VSTS or Team Foundation Server
 description: Build variables are name-value pairs defined by you or provided by Build or Release Management. You can use variables as inputs and in your scripts.
 ms.topic: reference
 ms.prod: devops

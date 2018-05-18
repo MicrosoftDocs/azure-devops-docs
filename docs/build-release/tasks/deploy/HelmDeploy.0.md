@@ -8,12 +8,18 @@ ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Package and deploy Helm charts
 
 ![](_img/helmdeploy.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/HelmDeployV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -50,49 +56,6 @@ monikerRange: 'VSTS'
 <tr><td>Tiller namespace</td><td>(Optional) Specify K8 namespace of tiller.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Package and deploy Helm charts
-# Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
-- task: HelmDeploy@0
-  inputs:
-    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection
-    #azureSubscription: # Required when connectionType == Azure Resource Manager
-    #azureResourceGroup: # Required when connectionType == Azure Resource Manager
-    #kubernetesCluster: # Required when connectionType == Azure Resource Manager
-    #kubernetesServiceConnection: # Required when connectionType == Kubernetes Service Connection
-    #namespace: # Optional
-    #command: 'ls' # Options: create, delete, expose, get, init, install, ls, package, rollback, upgrade
-    #chartType: 'Name' # Required when command == Install || Command == Upgrade# Options: name, filePath
-    #chartName: # Required when chartType == Name
-    #chartPath: # Required when chartType == FilePath || Command == Package
-    #chartVersion: # Optional
-    #releaseName: # Optional
-    #overrideValues: # Optional
-    #valueFile: # Optional
-    #destination: '$(Build.ArtifactStagingDirectory)' # Optional
-    #canaryImage: false # Optional
-    #upgradeTiller: true # Optional
-    #updateDependency: false # Optional
-    #save: true # Optional
-    #install: true # Optional
-    #recreate: false # Optional
-    #resetValues: false # Optional
-    #force: false # Optional
-    #waitForExecution: true # Optional
-    #arguments: # Optional
-    #enableTls: false # Optional
-    #caCert: # Required when enableTls == True
-    #certificate: # Required when enableTls == True
-    #privatekey: # Required when enableTls == True
-    #tillerNamespace: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

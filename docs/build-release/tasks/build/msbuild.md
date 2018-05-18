@@ -25,6 +25,12 @@ msbuild
 
 > **VSTS:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/MSBuildV1.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table>
@@ -68,30 +74,6 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: MSBuild@1
-  inputs:
-    #solution: '**/*.sln' 
-    #msbuildLocationMethod: 'version' # Optional. Options: version, location
-    #msbuildVersion: 'latest' # Optional. Options: latest, 15.0, 14.0, 12.0, 4.0
-    #msbuildArchitecture: 'x86' # Optional. Options: x86, x64
-    #msbuildLocation: # Optional
-    #platform: # Optional
-    #configuration: # Optional
-    #msbuildArguments: # Optional
-    #clean: false # Optional
-    #maximumCpuCount: false # Optional
-    #restoreNugetPackages: false # Optional
-    #logProjectEvents: false # Optional
-    #createLogFile: false # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -50,7 +50,6 @@ monikerRange: '>= tfs-2015'
 | ---- | -------- |
 | ![icon](utility/_img/archive-files.png) [Archive Files](utility/archive-files.md). Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip. | VSTS, TFS 2017 and newer |
 | ![icon](utility/_img/azure-function.png) [Azure Function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | VSTS |
-| ![icon](utility/_img/azure-monitor.png) [Azure Monitor](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
 | ![icon](utility/_img/azurenlbmanagement.png) [Azure Network Load Balancer](utility/AzureNLBManagement.1.md).Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool | VSTS |
 | ![icon](utility/_img/bash.png) [Bash](utility/BashV3.3.md). Run a Bash script on macOS, Linux, or Windows | VSTS |
 | ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the environment | VSTS, TFS 2015 RTM and newer |
@@ -75,7 +74,8 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | VSTS, TFS 2015.3 and newer |
 | ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | VSTS |
-| ![icon](utility/_img/pypipublisher.png) [PyPI Publisher](utility/PyPIPublisher.0.md). Create and publish Python packages to a PYthon Package Index. | VSTS |
+| ![icon](utility/_img/pythonscript.png) [Python Script](utility/PythonScriptV0.0.md). Run a Python script. | VSTS |
+| ![icon](utility/_img/azure-monitor.png) [Query Azure Monitor Alerts](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
 | ![icon](utility/_img/query-work-items.png) [Query Work Items](utility/work-item-query.md). Ensure the number of matching items returned by a work item query in within the configured thresholds. | VSTS |
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | VSTS |
 | ![icon](utility/_img/shell-script.png) [Shell Script](utility/shell-script.md). Run a shell script using bash | VSTS, TFS 2015 RTM and newer |
@@ -119,9 +119,9 @@ monikerRange: '>= tfs-2015'
 | ![icon](deploy/_img/azurecloudpowershelldeployment.png) [Azure CLI](deploy/azurecloudpowershelldeployment.1.md). Run a shell or batch script containing Azure CLI commands against an Azure subscription | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-file-copy-icon.png) [Azure File Copy](deploy/azure-file-copy.md). Copy files to Azure blob or VM(s) | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azure-key-vault-icon.png) [Azure Key Vault](deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release definition | VSTS |
+| ![icon](deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts](deploy/AzureMonitorAlerts.0.md). Configure alerts on available metrics for an Azure resource | VSTS |
 | ![icon](deploy/_img/azuremysqldeployment.png) [Azure MySQL Deployment](deploy/AzureMysqlDeployment.1.md). Run your scripts and make changes to your Azure DB for MySQL. | VSTS |
 | ![icon](deploy/_img/azurepowershell.png) [Azure PowerShell](deploy/AzurePowerShellV3.3.md). Run a PowerShell script within an Azure environment | VSTS, TFS 2015 RTM and newer |
-| ![icon](deploy/_img/azuremonitoralerts.png) [Azure App Service Manage](deploy/AzureMonitorAlerts.0.md). Configure alerts on available metrics for an Azure resource | VSTS |
 | ![icon](deploy/_img/azureresourcegroupdeployment.png) [Azure Resource Group Deployment](deploy/AzureResourceGroupDeploymentV2.2.md). Deploy, start, stop, delete Azure Resource Groups | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/SqlAzureDacpacDeployment.png) [Azure SQL Database Deployment](deploy/SqlAzureDacpacDeployment.1.md). Deploy an Azure SQL database using DACPAC or run scripts using SQLCMD | VSTS, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azurevmssdeployment.png) [Azure VMSS Deployment](deploy/AzureVmssDeployment.0.md). Deploy a virtual machine scale set image. | VSTS |

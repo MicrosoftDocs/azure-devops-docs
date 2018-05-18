@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-![icon](_img/pypi-publisher.png) Publish a Python package to PyPI.
+![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.
@@ -37,29 +37,19 @@ A generic service connection for a PyPI index.
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
 |----------|-------------|
-| PyPI connection | The generic service endpoint where PyPI server details are present. |
-| Python package path | Python package directory to be published, where setup.py is present. |
-| Upload wheel | If this is selected, the task will additionally build and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) for this package. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-(VSTS-only)
-
-```YAML
-- task: PyPIPublisher@0
-  inputs:
-    serviceEndpoint: ''
-    wd: '$(Build.SourcesDirectory)'
-    wheel: 'false'
-```
-
-::: moniker-end
+| PyPI connection | A generic service endpoint for connecting to the package index. |
+| Python package directory | The directory of the Python package to be created and published, where setup.py is present. |
+| Also publish a wheel | Select whether to create and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) package (platform independent) in addition to an sdist package. |
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

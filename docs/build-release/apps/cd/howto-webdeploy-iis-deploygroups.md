@@ -1,6 +1,6 @@
 ---
 title: Use IIS Deployment Groups for rolling deployments and databases
-description: Next steps for deploying an app to IIS servers using Deployment Groups
+description: Next steps for deploying an app to IIS servers using Deployment Groups in VSTS or Microsoft Team Foundation Server (TFS)
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.prod: devops
 ms.technology: devops-cicd

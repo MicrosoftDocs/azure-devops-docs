@@ -12,9 +12,10 @@ author: elbatk
 ms.date: 08/19/2016
 ---
 
-# Catalog of Tutorials for developing VSTS Extensions
+# Tutorials for developing VSTS extensions
 
 Because of the diverse nature of extensions, we wanted to provide the right tutorial for you. 
+
 Below you'll find tutorials that cover different types of extensions so that you can learn the basics with a tutorial that's relevant to your goals as a developer. 
 
 <a href="../get-started/node.md" style="text-decoration:none;color:#000000">

@@ -1,6 +1,6 @@
 ---
-title: Batch script
-description: How execute .bat or .cmd scripts when building code in VSTS and Team Foundation Server TFS
+title: Batch script | VSTS or Team Foundation Server
+description: Learn all about how you can execute .bat or .cmd scripts when building your code in VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,6 +18,12 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/BatchScriptV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -57,22 +63,6 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../co
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: BatchScript@1
-  inputs:
-    filename: 
-    #arguments: # Optional
-    #modifyEnvironment: False # Optional
-    #workingFolder: # Optional
-    #failOnStandardError: false # Optional
-```
-
-::: moniker-end
 
 ## Example
 

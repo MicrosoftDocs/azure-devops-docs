@@ -398,8 +398,8 @@
       href: tasks/utility/publish-build-artifacts.md
     - name: Publish to Azure Service Bus
       href: tasks/utility/publish-to-azure-service-bus.md
-    - name: PyPI Publisher
-      href: tasks/utility/PyPIPublisher.0.md
+    - name: Python Script
+      href: tasks/utility/PythonScriptV0.0.md
     - name: Query Azure Monitor Alerts
       href: tasks/utility/azure-monitor.md
     - name: Query Work Items

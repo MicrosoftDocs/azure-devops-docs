@@ -31,6 +31,12 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeploy.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -45,29 +51,6 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
 
 Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ServiceFabricComposeDeploy@0
-  inputs:
-    clusterConnection: 
-    #composeFilePath: '**/docker-compose.yml' 
-    #applicationName: 'fabric:/Application1' 
-    #registryCredentials: 'AzureResourceManagerEndpoint' # Options: azureResourceManagerEndpoint, containerRegistryEndpoint, usernamePassword, none
-    #dockerRegistryConnection: # Optional
-    #azureSubscription: # Required when registryCredentials == AzureResourceManagerEndpoint
-    #registryUserName: # Optional
-    #registryPassword: # Optional
-    #passwordEncrypted: # Optional
-    #deployTimeoutSec: # Optional
-    #removeTimeoutSec: # Optional
-    #getStatusTimeoutSec: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

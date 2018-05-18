@@ -8,12 +8,18 @@ ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: SQL Server Database Deploy
 
 ![](_img/sqldacpacdeploymentonmachinegroup.png) Deploy to SQL Server Database using DACPAC or SQL scripts
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -37,36 +43,6 @@ monikerRange: 'VSTS'
 <tr><td>Additional Arguments</td><td>(Optional) Additional Invoke-Sqlcmd arguments that will be applied when deploying the SQL Server database.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# SQL Server Database Deploy
-# Deploy to SQL Server Database using DACPAC or SQL scripts
-- task: SqlDacpacDeploymentOnMachineGroup@0
-  inputs:
-    #taskType: 'dacpac' # Options: dacpac, sqlQuery, sqlInline
-    #dacpacFile: # Required when taskType == Dacpac
-    #sqlFile: # Required when taskType == SqlQuery
-    #executeInTransaction: false # Optional
-    #exclusiveLock: false # Optional
-    #appLockName: # Required when exclusiveLock == True
-    #inlineSql: # Required when taskType == SqlInline
-    #targetMethod: 'server' # Required when taskType == Dacpac# Options: server, connectionString, publishProfile
-    #serverName: 'localhost' # Required when targetMethod == Server || TaskType == SqlQuery || TaskType == SqlInline
-    #databaseName: # Required when targetMethod == Server || TaskType == SqlQuery || TaskType == SqlInline
-    #authScheme: 'windowsAuthentication' # Required when targetMethod == Server || TaskType == SqlQuery || TaskType == SqlInline# Options: windowsAuthentication, sqlServerAuthentication
-    #sqlUsername: # Required when authScheme == SqlServerAuthentication
-    #sqlPassword: # Required when authScheme == SqlServerAuthentication
-    #connectionString: # Required when targetMethod == ConnectionString
-    #publishProfile: # Optional
-    #additionalArguments: # Optional
-    #additionalArgumentsSql: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

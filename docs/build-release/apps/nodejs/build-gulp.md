@@ -1,6 +1,6 @@
 ---
 title: CI build for a Node.js app with Gulp
-description: Define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS
+description: Learn how you can define a continuous integration (CI) build process for your Node.js app with Gulp in VSTS or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -83,8 +83,6 @@ Choose this option if you want the advantages of configuration as code. This mea
 steps:
 - script: echo hello world 
 ```
-
-This choice also offers parallel processing (fan out and fan in), and the ability to test and debug the process locally.
 
 [Learn more about YAML builds](../../actions/build-yaml.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Download Secure File
-description: Download a secure file to a temporary location on the build or release agent
+title: Download Secure File | VSTS or Team Foundation Server
+description: Learn how you can download a secure file to a temporary location on the build or release agent in VSTS and Team Foundation Server
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,6 @@ ms.reviewer: dastahel
 ms.date: 01/19/2018
 monikerRange: 'vsts'
 ---
-
 
 # Utility: Download Secure File
 
@@ -30,20 +29,14 @@ If you use multiple versions of the Download Secure File task in your definition
 
 Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$env:TEMP`.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.1.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
 | Secure File | Select the secure file to download to a temporary location on the agent. The file will be cleaned up after the build or release. |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: DownloadSecureFile@1
-  inputs:
-    secureFile: 
-```
-
-::: moniker-end

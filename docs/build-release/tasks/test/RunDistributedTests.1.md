@@ -8,12 +8,18 @@ ms.assetid: D353D6A2-E361-4A8F-8D8C-123BEBB71028
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Test: Run Functional Tests
 
 ![](_img/runvisualstudiotestsusingtestagent.png) Deprecated: This task and its companion task (Visual Studio Test Agent Deployment) are deprecated. Use the 'Visual Studio Test' task instead. The VSTest task can run unit as well as functional tests. Run tests on one or more agents using the multi-agent phase setting. Use the 'Visual Studio Test Platform' task to run tests without needing Visual Studio on the agent. VSTest task also brings new capabilities such as automatically rerunning failed tests.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -37,36 +43,6 @@ monikerRange: 'VSTS'
 <tr><td>Application Under Test Machines</td><td>(Optional) Comma separated list of machines or output variable or Machine Group Name on which server processes such as W3WP.exe is running</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Run Functional Tests
-# Deprecated: This task and it’s companion task (Visual Studio Test Agent Deployment) are deprecated. Use the 'Visual Studio Test' task instead. The VSTest task can run unit as well as functional tests. Run tests on one or more agents using the multi-agent phase setting. Use the 'Visual Studio Test Platform' task to run tests without needing Visual Studio on the agent. VSTest task also brings new capabilities such as automatically rerunning failed tests.
-- task: RunVisualStudioTestsusingTestAgent@1
-  inputs:
-    testMachineGroup: 
-    dropLocation: 
-    #testSelection: 'testAssembly' # Options: testAssembly, testPlan
-    #testPlan: # Required when testSelection == TestPlan
-    #testSuite: # Required when testSelection == TestPlan
-    #testConfiguration: # Required when testSelection == TestPlan
-    #sourcefilters: '**\*test*.dll' # Required when testSelection == TestAssembly
-    #testFilterCriteria: # Optional
-    #runSettingsFile: # Optional
-    #overrideRunParams: # Optional
-    #codeCoverageEnabled: false # Optional
-    #customSlicingEnabled: false # Optional
-    #testRunTitle: # Optional
-    #platform: # Optional
-    #configuration: # Optional
-    #testConfigurations: # Optional
-    #autMachineGroup: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

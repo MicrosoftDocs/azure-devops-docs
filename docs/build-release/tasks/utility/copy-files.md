@@ -1,6 +1,6 @@
 ---
-title: Copy Files
-description: How to copy files between folders with match patterns when building code in VSTS and Team Foundation Server TFS
+title: Copy Files | VSTS or Team Foundation Server
+description: Learn how you can copy files between folders with match patterns when building code in VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Copy Files
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
@@ -22,6 +21,12 @@ monikerRange: '>= tfs-2015'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -67,23 +72,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CopyFiles@2
-  inputs:
-    #sourceFolder: # Optional
-    #contents: '**' 
-    targetFolder: 
-    #cleanTargetFolder: false # Optional
-    #overWrite: false # Optional
-    #flattenFolders: false # Optional
-```
-
-::: moniker-end
 
 ## Examples
 

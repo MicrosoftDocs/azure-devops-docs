@@ -25,8 +25,6 @@ For more details, see [Testing with unified agents and phases](../../test/test-w
 
 ::: moniker-end
 
-
-
 ## TFS 2017 and earlier
 
 ![icon](_img/run-functional-tests-icon.png)
@@ -37,6 +35,12 @@ tests on the build machine.
 ### Demands and prerequisites
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.1.md)]
+
+::: moniker-end
 
 ### Arguments
 

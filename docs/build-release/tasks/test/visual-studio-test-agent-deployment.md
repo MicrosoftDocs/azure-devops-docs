@@ -25,8 +25,6 @@ For more details, see [Testing with unified agents and phases](../../test/test-w
 
 ::: moniker-end
 
-
-
 ## TFS 2017 and earlier
 
 ![icon](_img/visual-studio-test-agent-deployment-icon.png)
@@ -47,6 +45,12 @@ This task requires the target computer to have:
 #### Windows Remote Management (WinRM)
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.2.md)]
+
+::: moniker-end
 
 ### Arguments
 
@@ -168,7 +172,3 @@ machines.
 ::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
-
-
-
-

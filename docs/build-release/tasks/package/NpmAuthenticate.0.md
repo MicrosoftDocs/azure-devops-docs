@@ -8,12 +8,18 @@ ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Package: npm Authenticate (for task runners)
 
 ![](_img/npmauthenticate.png) Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like Gulp and Grunt to authenticate with private registries.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/NpmAuthenticateV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -22,21 +28,6 @@ monikerRange: 'VSTS'
 <tr><td>Credentials for registries outside this account/collection</td><td>(Optional) Credentials to use for external registries located in the project's .npmrc. For registries in this account/collection, leave this blank; the build’s credentials are used automatically.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# npm Authenticate (for task runners)
-# Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like Gulp and Grunt to authenticate with private registries.
-- task: npmAuthenticate@0
-  inputs:
-    #workingFile: # Optional
-    #customEndpoint: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

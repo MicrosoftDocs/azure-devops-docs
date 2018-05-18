@@ -1,6 +1,6 @@
 ---
 title: Xamarin component restore in VSTS
-description: How to restore Xamarin components for a VSTS solution
+description: Learn all about how you can restore Xamarin components for your specified solution in VSTS or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,6 +24,11 @@ monikerRange: '>= tfs-2017'
 
 None
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/XamarinComponentRestoreV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -54,20 +59,6 @@ Xamarin account email address.</td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: XamarinComponentRestore@0
-  inputs:
-    #solutionFile: '**/*.sln' 
-    email: 
-    password: 
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

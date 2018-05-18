@@ -6,7 +6,7 @@
       href: ./overview.md
 - name: Quickstarts
   items:
-  - name: Write your first extension
+  - name: Develop a web extension
     href: get-started/node.md
 - name: Samples
   items:
@@ -14,7 +14,7 @@
     href: develop/samples-overview.md
 - name: Concepts
   items:
-  - name: Extension points
+  - name: Extensibility points
     href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
@@ -56,6 +56,8 @@
         href: develop/configure-workitemform-extensions.md
     - name: Call a REST API
       href: develop/call-rest-api.md
+    - name: Extensions for public projects
+      href: develop/public-project.md
     - name: Use a platform UI control
       items:
       - name: Configure

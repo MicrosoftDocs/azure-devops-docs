@@ -16,6 +16,8 @@
     href: get-started-maven.md
 - name: Concepts
   items:
+  - name: Best practices
+    href: concepts/best-practices.md
   - name: Feeds
     href: concepts/feeds.md
     # - name: Deleted packages
@@ -126,7 +128,11 @@
     href: vsts-package-badges.md
   - name: Automatically delete old package versions
     href: how-to/retention-policies.md
+  - name: Follow a package for publish alerts
+    href: how-to/follow-package-notifications.md
 - name: Reference
   items:
   - name: Collaborate with packages
     href: collaborate-with-packages.md
+  - name: Upgrading a legacy feed
+    href: reference/feed-upgrade-learn-more.md
