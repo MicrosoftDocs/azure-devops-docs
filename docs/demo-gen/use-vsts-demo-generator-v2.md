@@ -28,7 +28,8 @@ ms.date: 05/09/2018
 
     ![](_img/choose_template.png)
 
-    > [!NOTE] The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. Other templates include **MyHeathClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD definitions; and **MyShuttle**, which defines a Java app and Azure APp service deployment.
+    > [!NOTE] 
+    > The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. Other templates include **MyHeathClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD definitions; and **MyShuttle**, which defines a Java app and Azure APp service deployment.
     >
     > All four templates provide fictional VSTS users and pre-populated Agile planning andtracking work items and data, along with source code in VSTS Git as well as Build and Release definitions.
 
@@ -44,4 +45,5 @@ ms.date: 05/09/2018
 
     ![](_img/projecthomepage.png)
 
-> [!NOTE] You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
+> [!NOTE] 
+> You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
