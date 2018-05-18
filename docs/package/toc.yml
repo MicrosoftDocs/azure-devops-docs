@@ -16,6 +16,8 @@
     href: get-started-maven.md
 - name: Concepts
   items:
+  - name: Best practices
+    href: concepts/best-practices.md
   - name: Feeds
     href: concepts/feeds.md
     # - name: Deleted packages
