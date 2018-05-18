@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/03/2018
+ms.date: 05/17/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,12 +16,12 @@ ms.date: 05/03/2018
 
 **VSTS**
 
-Normally, the best way to set up billing for your VSTS account is to simply make a purchase. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
-This quickstart will help you set up billing for your VSTS account in advance of making purchases, so that you'll have this in place once you're ready to buy.
+Make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to set up billing for your VSTS account. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+This quickstart will help you set up billing for your VSTS account in advance of making purchases, so that you'll have this in place once you're ready to buy, however the preferred method is to simply make an initial purchase.
 
 **All VSTS services are billed via Azure**, and you are not required to use any other Azure services.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
+If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 
