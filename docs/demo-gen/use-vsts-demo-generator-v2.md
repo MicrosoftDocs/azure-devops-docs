@@ -1,5 +1,5 @@
 ---
-title: Get started with the VSTS Demo Generator
+title: Use VSTS Demo Generator
 description: Use the Visual Studio Team Services Demo Generator V2 to create and populate a demo project
 ms.prod: devops  
 ms.technology: devops-new-user
