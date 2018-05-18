@@ -13,35 +13,35 @@ ms.date: 05/09/2018
 
 # Get started creating and populating demo VSTS projects with the VSTS Demo Generator
 
-1. Browse to VSTS Demo Generator
+1. Browse to the [VSTS Demo Generator site](https://vstsdemogenerator.azurewebsites.net/) by click the link, or copy `https://vstsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
-2. Sign In with your VSTS credentials. If you don't have Team Service account, Click on Get Started for Free to create a VSTS account.
+2. Click **Sign In** and provide your Visual Studio Team Services (VSTS) account login/password. If you don't hav ea VSTS account, Click on **Get Started for Free** to create one and then log in with your new credentials.
 
-![](_img/1.png)
-
-
-3. After you sign in, select Accept to grant the Demo Generatror permissions to access your VSTS accounts .
-
-![](_img/2.png)
-
-4. Select the account you wanted to create the project, provide a name for your project and select the template you want to provision from the '...' button
-
-![](_img/3.png)
-
-5. Some templates may require additional extensions to be installed to your VSTS account. The system will check if these extensions are already installed. A green tick before the extension means that the extension is already installed. If not select check boxes provided to install the extension(s) to your account and click on Create Project button.
-
-> If you want to manually install the extensions, you can click on the extension which will take you to the page on Visual Studio Team Services Marketplace, from where you can install the extension.
-
-![](_img/choose_template.png)
+    ![](_img/1.png)
 
 
+3. After you sign in, select **Accept** to grant the Demo Generator permissions to access your VSTS account.
 
-6. Upon successful creation of a project, you will see a link with the URL to the team project you created.
+    ![](_img/2.png)
 
-![](_img/projectcreated.png)
+4. Select the account you will use to host the project created by the Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
-7. Select the link to navigate to the project and confirm the project was successfully provisioned.
+    ![](_img/choose_template.png)
 
-![](_img/projecthomepage.png)
+    > [!NOTE] The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. Other templates include **MyHeathClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD definitions; and **MyShuttle**, which defines a Java app and Azure APp service deployment.
+    >
+    > All four templates provide fictional VSTS users and pre-populated Agile planning andtracking work items and data, along with source code in VSTS Git as well as Build and Release definitions.
 
-> [!NOTE] You will need to provide your own information such as URLs, user name, password, etc. for the endpoints created. You will need to provide them before you attempt to use them, say in build, release definitions, for example.
+5. Some templates may require additional extensions to be installed to your VSTS account. The demo generation process checks to see if these extensions are already installed. If the extension is already installed, a green check will. If the extension is **not** installed, select check boxes provided to install the extension(s) to your account and click on Create Project button.
+
+> If you want to manually install the extensions,  click on the provided link for a specific extension, which takes you to the extension's page on Visual Studio Team Services Marketplace. From there, you can install the extension.
+
+6. Your project may take a couple minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
+
+    ![](_img/projectcreated.png)
+
+7. Select the link to go to the new demo project and confirm itwas successfully provisioned.
+
+    ![](_img/projecthomepage.png)
+
+> [!NOTE] You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
