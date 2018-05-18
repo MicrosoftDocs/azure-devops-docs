@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-![icon](_img/pypi-publisher.png) Publish a Python package to PyPI.
+![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.

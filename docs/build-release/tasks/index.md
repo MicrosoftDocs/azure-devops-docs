@@ -74,7 +74,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | VSTS, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | VSTS, TFS 2015.3 and newer |
 | ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | VSTS |
-| ![icon](utility/_img/pypipublisher.png) [PyPI Publisher](utility/PyPIPublisher.0.md). Create and publish Python packages to a PYthon Package Index. | VSTS |
+| ![icon](utility/_img/pythonscript.png) [Python Script](utility/PythonScriptV0.0.md). Run a Python script. | VSTS |
 | ![icon](utility/_img/azure-monitor.png) [Query Azure Monitor Alerts](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | VSTS |
 | ![icon](utility/_img/query-work-items.png) [Query Work Items](utility/work-item-query.md). Ensure the number of matching items returned by a work item query in within the configured thresholds. | VSTS |
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | VSTS |
