@@ -26,6 +26,12 @@ Otherwise, use the latest version of the Xcode task.**
 
 xcode
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/XcodePackageiOSV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table>
@@ -80,23 +86,6 @@ Make sure to specify the variable values on the [variables tab](../../concepts/d
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: XcodePackageiOS@0
-  inputs:
-    #appName: 'name.app' 
-    #ipaName: 'name.ipa' 
-    provisioningProfile: 
-    #sdk: 'iphoneos' 
-    #appPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)' 
-    #ipaPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output' 
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

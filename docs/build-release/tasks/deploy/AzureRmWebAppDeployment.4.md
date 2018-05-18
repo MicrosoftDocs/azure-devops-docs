@@ -8,12 +8,18 @@ ms.assetid: 497D490F-EEA7-4F2B-AB94-48D9C1ACDCB1
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure App Service Deploy
 
 ![](_img/azurermwebappdeployment.png) Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/AzureRmWebAppDeployment.4.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -52,51 +58,6 @@ monikerRange: 'VSTS'
 <tr><td>JSON variable substitution</td><td>(Optional) Provide new line separated list of JSON files to substitute the variable values. Files names are to be provided relative to the root folder. <br/> To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. <br/> <br/> For example, to replace the value of ‘ConnectionString’ in the sample below, you need to define a variable as ‘Data.DefaultConnection.ConnectionString’ in the build/release definition (or release definition’s environment). <br/> {<br/>&nbsp;&nbsp;"Data": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;"DefaultConnection": {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ConnectionString": "Server=(localdb)\SQLEXPRESS;Database=MyDB;Trusted_Connection=True"<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/> Variable Substitution is run after configuration transforms. <br/><br/> Note: Build/Release’s system definition variables are excluded in substitution</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure App Service Deploy
-# Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    #connectionType: 'AzureRM' # Options: azureRM, publishProfile
-    #azureSubscription: # Required when connectionType == AzureRM
-    #publishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml' # Required when connectionType == PublishProfile
-    #publishProfilePassword: # Required when connectionType == PublishProfile
-    #appType: 'webApp' # Required when connectionType == AzureRM# Options: webApp, webAppLinux, webAppContainer, functionApp, apiApp, mobileApp
-    #webAppName: # Required when connectionType == AzureRM
-    #deployToSlotOrASE: false # Optional
-    #resourceGroupName: # Required when deployToSlotOrASE == True
-    #slotName: 'production' # Required when deployToSlotOrASE == True
-    #dockerNamespace: # Required when appType == WebAppContainer
-    #dockerRepository: # Required when appType == WebAppContainer
-    #dockerImageTag: # Optional
-    #virtualApplication: # Optional
-    #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip' # Required when connectionType == PublishProfile || WebAppKind == WebApp || WebAppKind == ApiApp || WebAppKind == FunctionApp || WebAppKind == MobileApp || WebAppKind == WebAppLinux
-    #runtimeStack: # Required when appType == WebAppLinux
-    #startupCommand: # Optional
-    #scriptType: # Optional. Options: , inline Script, file Path
-    #inlineScript: ':: You can provide your deployment commands here. One command per line.' # Required when scriptType == Inline Script
-    #scriptPath: # Required when scriptType == File Path
-    #webConfigParameters: # Optional
-    #appSettings: # Optional
-    #configurationSettings: # Optional
-    #takeAppOfflineFlag: true # Optional
-    #useWebDeploy: false # Optional
-    #setParametersFile: # Optional
-    #removeAdditionalFilesFlag: false # Optional
-    #excludeFilesFromAppDataFlag: true # Optional
-    #additionalArguments: '-retryAttempts:6 -retryInterval:10000' # Optional
-    #renameFilesFlag: true # Optional
-    #enableXmlTransform: # Optional
-    #enableXmlVariableSubstitution: # Optional
-    #jSONFiles: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

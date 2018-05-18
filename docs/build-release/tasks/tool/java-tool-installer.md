@@ -1,6 +1,6 @@
 ---
-title: Java Tool Installer
-description: Java Tool Installer for VSTS and TFS 
+title: Java Tool Installer | VSTS or Team Foundation Server
+description: Learn all about how you can use the Java Tool Installer to change the version of Java in VSTS and Team Foundation Server (TFS). 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,6 +24,12 @@ monikerRange: 'vsts'
 
 None
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -39,27 +45,6 @@ None
 | Destination directory | Specify the destination directory into which the JDK should be extracted. |
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
 | Control options | See [Control options](../../concepts/process/tasks.md#controloptions). |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: JavaToolInstaller@0
-  inputs:
-    #versionSpec: '1.8' 
-    jdkArchitectureOption: # Options: x64, x86
-    jdkSourceOption: # Options: azureStorage, localDirectory
-    #jdkFile: # Required when jdkSourceOption == LocalDirectory
-    #azureResourceManagerEndpoint: # Required when jdkSourceOption == AzureStorage
-    #azureStorageAccountName: # Required when jdkSourceOption == AzureStorage
-    #azureContainerName: # Required when jdkSourceOption == AzureStorage
-    #azureCommonVirtualFile: # Required when jdkSourceOption == AzureStorage
-    jdkDestinationDirectory: 
-    #cleanDestinationDirectory: true 
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -18,15 +18,9 @@ monikerRange: '>= tfs-2017'
 
 In this topic:
 
-::: moniker range="vsts"
-
 * **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < vsts"
 
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
@@ -40,13 +34,9 @@ In this topic:
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](../../accounts/requirements.md).
 
-::: moniker-end
-
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item Search.
-
-::: moniker range="vsts"
 
 <a name="config-ts"></a>
 ## Install Code Search in VSTS
@@ -62,15 +52,12 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < vsts"
-
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
 
 Code Search is available in TFS 2017 and later.
 Work Item Search is available in TFS 2017 Update 2 and later.
+Wiki Search is available in TFS 2018 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
 afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
@@ -83,14 +70,14 @@ TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
 you must take into account the existing CPU utlization
-factor due to TFS itself. 
-In most cases you should
-consider configuring Search on a separate server.
+factor due to TFS itself.
+
+**For production environments we recommend you configure Search on a separate server.**
 
 For acceptable performance in multi-user scenarios, consider the 
 following recommendations:
 
-* Less than 250 users with Search co-located on the TFS server:
+* Less than 250 users with Search co-located on the TFS server (typically used for demonstration and trial purposes):
   - Quad core processor, 8 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
@@ -135,6 +122,8 @@ as part of the configuration:
  
 * A modified version of Elasticsearch ships with TFS. 
   Search will work only with this version of Elasticsearch.
+  
+* A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
 
 * The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
@@ -196,10 +185,10 @@ Consider the following when configuring Search:
 * The search index folder should be located on a separate fast hard drive backed by fast storage such
   as Solid State Drive (SSD) or Storage Area Network (SAN) to maximize search performance.
   As a general guide, the Search index for a collection can be a maximum of 35% the size of the collection itself. 
-  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items in that collection.
+  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items and wiki pages in that collection.
 
-* The indexing service and Elasticsearch engine use the account you specify during 
-  installation to create and access the index files. This account must have **Log on as a service**
+* Unless specified, the indexing service and Elasticsearch engine use the network service account during 
+  installation to create and access the index files. If you choose a different account, it must have **Log on as a service**
   permission. 
 
 * Restrict the permissions for the index disk and folder to protect the index
@@ -336,6 +325,12 @@ service was configured on the TFS server that is being upgraded.
 If Search was configured on a remote server, follow
 [these instructions](#separate-server) to update it.
 
+TFS 2018 Update 2 includes updated Search components and Wiki Search. If the Search service was configured in TFS 2017 RTM, Update1, Update2, or TFS 2018 RTM then, during an upgrade, the
+Search service components will be updated automatically if the Search
+service was configured on the TFS server that is being upgraded.
+If Search was configured on a remote server, follow
+[these instructions](#separate-server) to update it. In both cases, all existing content (code files and work items) will be automatically re-indexed to support the updated components after configuration. Depending on the volume of content, this might take some time to complete.
+
 <a name="manage-tfs"></a>
 ## Manage Search in Team Foundation Server
 
@@ -355,7 +350,7 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 > * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
 > * [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
 > * [TFS 2017 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update3)
-> * [TFS 2018 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
+> * [TFS 2018 RTM and Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018RTW)
 
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
@@ -695,8 +690,6 @@ name of the server where Search is installed:
 1. [Pause all indexing](#pause-index) and see if performance recovers.
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
-
-::: moniker-end
 
 <a name="support"></a>
 

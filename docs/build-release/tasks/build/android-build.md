@@ -29,7 +29,6 @@ The build agent must have the following capabilities:
  * Android SDK (with the version number you will build against)
  * Android Support Repository (if referenced by Gradle file)
 
-
  ## Arguments
 
 <table>

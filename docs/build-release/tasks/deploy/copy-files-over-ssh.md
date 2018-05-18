@@ -1,6 +1,6 @@
 ---
-title: Copy Files Over SSH task for VSTS and TFS
-description: Copy Files Over SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+title: Copy Files Over SSH task for use in VSTS and TFS
+description: How to copy Files Over SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
@@ -27,6 +27,12 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -39,25 +45,6 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 | **Advanced - Overwrite** | If this option is selected (the default), existing files in the target folder will be replaced. |
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 
-    #sourceFolder: # Optional
-    #contents: '**' 
-    #targetFolder: # Optional
-    #cleanTargetFolder: false # Optional
-    #overwrite: true # Optional
-    #failOnEmptySource: false # Optional
-    #flattenFolders: false # Optional
-```
-
-::: moniker-end
 
 ## See also
 

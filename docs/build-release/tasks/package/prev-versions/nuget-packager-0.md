@@ -1,6 +1,6 @@
 ---
-title: NuGet Packager Version 0.*
-description: How to produce NuGet packages when building code in Visual Studio Team Services
+title: NuGet Packager Version 0.* | VSTS or Team Foundation Server
+description: Learn all about how you can produce NuGet packages when building code in Visual Studio Team Services and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
@@ -19,6 +19,8 @@ ms.date: 08/10/2016
 ## Demands
 
 None
+
+[!INCLUDE [temp](../../_shared/yaml/NuGetPackagerV0.0.md)]
 
 ## Arguments
 
@@ -91,7 +93,6 @@ Semicolon delimited list of properties used to build the package. For example, y
 [!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
 [!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
-
 
 ## Examples
 

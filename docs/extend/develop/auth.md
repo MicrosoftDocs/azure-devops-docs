@@ -65,15 +65,14 @@ Here is a sample of parsing the token.  First download and store the secret for 
 
 #### .NET Framework
 
-You will need to add 2 references to get this sample to compile.
+You will need to add 1 reference to get this sample to compile.
 
-1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 4.0.2.206221351 of this package.
-2. Right click on the references in your project and select "Add reference". Check *System.IdentityModel* and then click Ok.
+1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.2.2 of this package.
 
 ```
 using System.Collections.Generic;
-using System.IdentityModel.Tokens;
 using System.ServiceModel.Security.Tokens;
+using Microsoft.IdentityModel.Tokens;
 
 namespace TokenSample
 {
@@ -86,10 +85,7 @@ namespace TokenSample
 				
 			var validationParameters = new TokenValidationParameters()
 			{
-				IssuerSigningTokens = new List<BinarySecretSecurityToken>()
-				{
-					new BinarySecretSecurityToken (System.Text.UTF8Encoding.UTF8.GetBytes(secret))
-				},
+				IssuerSigningKey = new SymmetricSecurityKey(System.Text.UTF8Encoding.UTF8.GetBytes(secret)),
 				ValidateIssuer = false,
 				RequireSignedTokens = true,
 				RequireExpirationTime = true,

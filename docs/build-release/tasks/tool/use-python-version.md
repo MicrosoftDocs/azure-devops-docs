@@ -26,6 +26,12 @@ None
 
 This task will fail if no Python versions are found in the tool cache.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -37,20 +43,6 @@ This task will fail if no Python versions are found in the tool cache.
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
 ![output variable](_img/use_python_version_output_variable.png)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: UsePythonVersion@0
-  inputs:
-    #versionSpec: '>= 3.3' 
-    #addToPath: true 
-    #architecture: 'x64' # Options: x86, x64
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

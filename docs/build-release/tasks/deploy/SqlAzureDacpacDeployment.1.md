@@ -8,12 +8,18 @@ ms.assetid: CE85A08B-A538-4D2B-8589-1D37A9AB970F
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Azure SQL Database Deployment
 
 ![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeployment.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -39,38 +45,6 @@ monikerRange: 'VSTS'
 <tr><td>Delete Rule After Task Ends</td><td>(Optional) If selected, then after the task ends, the IP Addresses specified here are deleted from the 'Allowed IP Addresses' list of the Azure SQL Server's Firewall.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Azure SQL Database Deployment
-# Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
-- task: SqlAzureDacpacDeployment@1
-  inputs:
-    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
-    #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
-    #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
-    serverName: 
-    databaseName: 
-    #sqlUsername: # Optional
-    #sqlPassword: # Optional
-    #taskNameSelector: 'DacpacTask' # Optional. Options: dacpacTask, sqlTask, inlineSqlTask
-    #dacpacFile: # Required when taskNameSelector == DacpacTask
-    #sqlFile: # Required when taskNameSelector == SqlTask
-    #sqlInline: # Required when taskNameSelector == InlineSqlTask
-    #publishProfile: # Optional
-    #additionalArguments: # Optional
-    #sqlAdditionalArguments: # Optional
-    #inlineAdditionalArguments: # Optional
-    #ipDetectionMethod: 'AutoDetect' # Options: autoDetect, iPAddressRange
-    #startIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #endIpAddress: # Required when ipDetectionMethod == IPAddressRange
-    #deleteFirewallRule: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

@@ -1,6 +1,6 @@
 ---
-title: Archive Files
-description: Create an archive file from a source folder in VSTS and Team Foundation Server TFS  
+title: Archive Files | VSTS or Team Foundation Server
+description: Learn all about how you can use an archive file to then create a source folder in VSTS and Team Foundation Server (TFS).  
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,6 +21,12 @@ monikerRange: '>= tfs-2017'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ArchiveFilesV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -96,23 +102,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ArchiveFiles@2
-  inputs:
-    #rootFolderOrFile: '$(Build.BinariesDirectory)' 
-    #includeRootFolder: true
-    #archiveType: 'zip' # Options: zip, 7z, tar, wim
-    #tarCompression: 'gz' # Optional. Options: gz, bz2, xz, none
-    #archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
-    #replaceExistingArchive: true 
-```
-
-::: moniker-end
 
 ## Q & A
 

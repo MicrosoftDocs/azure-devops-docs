@@ -8,12 +8,18 @@ ms.assetid: F20661EB-E0F7-4AFD-9A86-9FE9D1A93382
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Test: Cloud-based Apache JMeter Load Test
 
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -26,25 +32,6 @@ monikerRange: 'VSTS'
 <tr><td>Run load test using</td><td>(Optional) undefined</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Cloud-based Apache JMeter Load Test
-# Runs the Apache JMeter load test in cloud
-- task: ApacheJMeterLoadTest@1
-  inputs:
-    #connectedServiceName: # Optional
-    testDrop: 
-    #loadTest: 'jmeter.jmx' 
-    #agentCount: '1' # Options: 1, 2, 3, 4, 5
-    #runDuration: '60' # Options: 60, 120, 180, 240, 300
-    #machineType: '0' # Optional. Options: 0, 2
-```
-
-::: moniker-end
 
 ## Q&A
 

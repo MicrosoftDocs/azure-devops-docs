@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
-title: Agents, pools, and queues
+title: Agents, pools, and queues | VSTS or Team Foundation Server
 ms.topic: conceptual
-description: Agent pools and queues for build and release management in VSTS and Team Foundation Server
+description: Learn about organizing agents into agent pools and queues for build and release management in VSTS and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge

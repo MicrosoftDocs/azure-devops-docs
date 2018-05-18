@@ -8,12 +8,18 @@ ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'VSTS'
+monikerRange: 'vsts'
 ---
 
 # Deploy: Deploy to Kubernetes
 
 ![](_img/kubernetes.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/Kubernetes.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -44,43 +50,6 @@ monikerRange: 'VSTS'
 <tr><td>Output variable name</td><td>(Optional) Name of the variable in which output of the command should be saved.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-# Deploy to Kubernetes
-# Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
-- task: Kubernetes@0
-  inputs:
-    #kubernetesServiceConnection: # Optional
-    #namespace: # Optional
-    #command: 'apply' # Options: apply, create, delete, exec, expose, get, logs, run, set, top
-    #useConfigurationFile: false # Optional
-    #configuration: # Required when useConfigurationFile == True
-    #arguments: # Optional
-    #secretType: 'dockerRegistry' # Options: dockerRegistry, generic
-    #secretArguments: # Optional
-    #containerRegistryType: 'Azure Container Registry' # Required when secretType == DockerRegistry# Options: azure Container Registry, container Registry
-    #dockerRegistryConnection: # Optional
-    #azureSubscription: # Optional
-    #azureContainerRegistry: # Optional
-    #secretName: # Optional
-    #forceUpdate: true # Optional
-    #configMapName: # Optional
-    #forceUpdateConfigMap: false # Optional
-    #configMapArguments: # Optional
-    #versionOrLocation: 'version' # Optional. Options: version, location
-    #versionSpec: '1.7.0' # Optional
-    #checkLatest: false # Optional
-    #specifyLocation: # Required when versionOrLocation == Location
-    #workingDirectory: '$(System.DefaultWorkingDirectory)' # Optional
-    #outputFormat: 'json' # Optional. Options: json, yaml
-    #kubectlOutput: # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 

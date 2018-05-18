@@ -1,6 +1,6 @@
 ---
-title: NuGet Publisher Version 0.*
-description: How to publish NuGet packages when building code in Visual Studio Team Services
+title: NuGet Publisher Version 0.* | VSTS or Team Foundation Server
+description: Learn all about how you can publish NuGet packages when building code in Visual Studio Team Services and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
@@ -15,10 +15,11 @@ ms.date: 08/10/2016
 
 ![](../_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
 
-
 ## Demands
 
 None
+
+[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.0.md)]
 
 ## Arguments
 
@@ -64,9 +65,6 @@ None
 [!INCLUDE [temp](../../_shared/control-options-arguments.md)]
 </table>
 
-
 ## Examples
 
 [!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
-
-

@@ -1,6 +1,6 @@
 ---
-title: CocoaPods
-description: How to use CocoaPods packages when building code in VSTS
+title: CocoaPods | VSTS or Team Foundation Server (TFS)
+description: Learn all about how you can use CocoaPods packages when you are building code in VSTS or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -25,6 +25,12 @@ monikerRange: '>= tfs-2015'
 
 None
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table>
@@ -42,20 +48,6 @@ Working directory. If you leave it blank, the working directory is the root of y
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: CocoaPods@0
-  inputs:
-    #workingDirectory: # Optional
-    #forceRepoUpdate: false
-    #projectDirectory: # Optional
-```
-
-::: moniker-end
 
 ## Q & A
 

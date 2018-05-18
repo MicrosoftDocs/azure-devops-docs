@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/29/2017  
 monikerRange: '>= tfs-2013'
 ---
@@ -17,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
-You can use the WIQL syntax to [define a query as a hyperlink](../work/track/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](https://www.visualstudio.com/docs/integrate/api/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](../work/track/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](https://docs.microsoft.com/rest/api/vsts/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -446,7 +447,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 - [Query fields, operators, values, and variables](../work/track/query-operators-variables.md)  
 - [Field data types and attributes](../work/customize/reference/define-modify-work-item-fields.md) 
-- [Work item query language (REST API)](https://visualstudio.com/integrate/api/wit/wiql.md)  
+- [Work item query language (REST API)](../integrate/previous-apis/wit/wiql.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

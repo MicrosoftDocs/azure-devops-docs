@@ -1,6 +1,6 @@
 ---
-description: Update Service Fabric App Versions task
-title: Update Service Fabric App Versions build task VSTS and TFS 
+title: Update Service Fabric App Versions task
+description: Learn all about how you can update the Service Fabric App Versions build task VSTS and Team Foundation Server (TFS). 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,7 +11,6 @@ author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Utility: Update Service Fabric App Versions
 
@@ -26,6 +25,12 @@ specified in the manifest files, in an Azure Service Fabric application package.
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.2.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -106,28 +111,6 @@ None
 </table>
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: ServiceFabricUpdateManifests@2
-  inputs:
-    #updateType: 'Manifest versions' # Options: manifest Versions, docker Image Settings
-    applicationPackagePath: 
-    #versionSuffix: '.$(Build.BuildNumber)' # Required when updateType == Manifest Versions
-    #versionBehavior: 'Append' # Optional. Options: append, replace
-    #updateOnlyChanged: false # Required when updateType == Manifest Versions
-    #pkgArtifactName: # Optional
-    #logAllChanges: true # Optional
-    #compareType: 'LastSuccessful' # Optional. Options: lastSuccessful, specific
-    #buildNumber: # Optional
-    #overwriteExistingPkgArtifact: true # Optional
-    #imageDigestsPath: # Required when updateType == Docker Image Settings
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

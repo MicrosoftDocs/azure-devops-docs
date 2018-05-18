@@ -20,7 +20,15 @@ monikerRange: '>= tfs-2017'
 
 Can be used in only an [agentless phase](../../concepts/process/server-phases.md) of a release definition.
 
+## Demands
+
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.0.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -36,17 +44,3 @@ Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maxi
 For more information about using this task, see [Approvals and gates overview](../../concepts/definitions/release/approvals/index.md).
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: queryWorkItems@0
-  inputs:
-    queryId: 
-    #maxThreshold: '0' 
-    #minThreshold: '0' 
-```
-
-::: moniker-end

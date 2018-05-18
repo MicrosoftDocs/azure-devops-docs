@@ -1,5 +1,5 @@
 ---
-title: FTP Upload
+title: FTP Upload | VSTS or Team Foundation Server
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on VSTS and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
@@ -22,6 +22,12 @@ monikerRange: '>= tfs-2017'
 ## Demands
 
 None
+
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.1.md)]
+
+::: moniker-end
 
 ## Arguments
 
@@ -64,30 +70,6 @@ None
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: FtpUpload@1
-  inputs:
-    #credentialsOption: 'serviceEndpoint' # Options: serviceEndpoint, inputs
-    #serverEndpoint: # Required when credentialsOption == ServiceEndpoint
-    #serverUrl: # Required when credentialsOption == Inputs
-    #username: # Required when credentialsOption == Inputs
-    #password: # Required when credentialsOption == Inputs
-    rootDirectory: 
-    #filePatterns: '**' 
-    #remoteDirectory: '/upload/$(Build.BuildId)/' 
-    #clean: false 
-    #cleanContents: false # Required when clean == False
-    #overwrite: true 
-    #preservePaths: false 
-    #trustSSL: false 
-```
-
-::: moniker-end
 
 ## Q & A
 

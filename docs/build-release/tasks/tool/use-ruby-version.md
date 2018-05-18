@@ -11,7 +11,6 @@ ms.date: 05/03/2018
 monikerRange: 'vsts'
 ---
 
-
 # Tool: Use Ruby Version
 
 **VSTS**
@@ -27,6 +26,12 @@ None
 
 This task will fail if no Ruby versions are found in the tool cache.
 
+::: moniker range="vsts"
+
+[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 | Argument | Description |
@@ -35,19 +40,6 @@ This task will fail if no Ruby versions are found in the tool cache.
 | Add to PATH | Whether to prepend the retrieved Ruby version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
 
 If the task completes successfully, the task's output variable will contain the directory of the Ruby installation.
-
-::: moniker range="vsts"
-
-## YAML snippet
-
-```YAML
-- task: UseRubyVersion@0
-  inputs:
-    #versionSpec: '>= 2.4' 
-    #addToPath: true # Optional
-```
-
-::: moniker-end
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
