@@ -126,6 +126,8 @@
     href: vsts-package-badges.md
   - name: Automatically delete old package versions
     href: how-to/retention-policies.md
+  - name: Follow a package for publish alerts
+    href: how-to/follow-package-notifications.md
 - name: Reference
   items:
   - name: Collaborate with packages

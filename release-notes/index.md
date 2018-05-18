@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 5/8/2018
+ms.date: 5/18/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -24,7 +24,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
 |Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
 |Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
-|Git - Filter the pull request list by target branch and labels|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
 |Filtering on the Taskboard|Work|2019|
@@ -64,6 +63,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
+|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
+|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |A discussion-centric Work Item form|Work|TBD|
 |Cross account linking for Work Items|Work|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
