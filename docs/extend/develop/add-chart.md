@@ -31,7 +31,7 @@ The following chart types are supported:
 0. Pivot table
 0. Histogram 
 
-> If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples] (https://github.com/Microsoft/vsts-extension-samples).
+> If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/vsts-extension-samples).
 Once downloaded, go to the `charts` folder, then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
 The extension contains sample chart widgets.  
 
