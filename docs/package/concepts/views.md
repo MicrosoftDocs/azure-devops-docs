@@ -54,7 +54,7 @@ When creating packages in continuous integration and delivery scenarios, it's im
 <img alt="A semantic version number: 1.2.3-beta2. The 1.2.3 represents the nature of the change; the -beta2, the risk of the change." src="_img/release-views-quality-nature.png" height="150px">
 </p>
 
-### Asess the nature and risk of changes
+### Assess the nature and risk of changes
 
 Because the nature and the risk of the change both pertain to the *change* itself&mdash;i.e. what you set out to do&mdash;they're both generally known at the outset of the work. You know if you're introducing new features, making updates to existing features, or patching bugs; this is the *nature* of your change. And, you know if you're still making changes to the API surface of your application; this is one facet of the *risk* of your change. Many NuGet users use [Semantic Versioning](http://semver.org) (SemVer) notation to convey these two pieces of information; SemVer is a widely used standard and does a good job of communicating this information.
 
@@ -71,5 +71,3 @@ Release views enable you to communicate the quality of a package after it's been
 <p style="text-align: center;">
 <img alt="With release views, the quality of the change is communicated by the release view, rather than as part of the version number." src="_img/release-views-quality-tags.png" height="150px">
 </p>
-
-Now, [get started](views.md) with release views.
