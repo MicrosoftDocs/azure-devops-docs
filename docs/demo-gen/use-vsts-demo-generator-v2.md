@@ -17,16 +17,19 @@ ms.date: 05/09/2018
 
 2. Click **Sign In** and provide your Visual Studio Team Services (VSTS) account login/password. If you don't hav ea VSTS account, Click on **Get Started for Free** to create one and then log in with your new credentials.
 
-    ![](_img/1.png)
+> [!div class="mx-imgBorder"]
+![Image of VSTS Demo Generator V2 login](_img/1.png)
 
 
 3. After you sign in, select **Accept** to grant the Demo Generator permissions to access your VSTS account.
 
-    ![](_img/2.png)
+> [!div class="mx-imgBorder"]
+![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)
 
 4. Select the account you will use to host the project created by the Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
-    ![](_img/choose_template.png)
+> [!div class="mxImage"]
+![Image of VSTS Demo Generator template selection screen](_img/choose_template.png)
 
     > [!NOTE] 
     > The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. Other templates include **MyHeathClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD definitions; and **MyShuttle**, which defines a Java app and Azure APp service deployment.
@@ -39,11 +42,13 @@ ms.date: 05/09/2018
 
 6. Your project may take a couple minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
 
-    ![](_img/projectcreated.png)
+> [!div class="mxImage"]
+![Image of VSTS Demo Generator project created screen](_img/projectcreated.png)
 
-7. Select the link to go to the new demo project and confirm itwas successfully provisioned.
+7. Select the link to go to the new demo project and confirm it was successfully provisioned.
 
-    ![](_img/projecthomepage.png)
+> [!div class="mxImage"]
+![Image of VSTS Demo Generator provision confirmation screen](_img/projecthomepage.png)
 
 > [!NOTE] 
 > You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
