@@ -247,10 +247,9 @@ Test results published within an environment of a release are
 associated with both the relese and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
-Foundation Build through Release Management, and are still
+Foundation or VSTS Build through Release Management, and are still
 publishing test results, the retention of these results is
-governed by the policy on test results, and is not linked to
-retention of releases.
+governed by the retention of the release they belong to.
 
 <!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
 
