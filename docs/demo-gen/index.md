@@ -15,7 +15,7 @@ ms.date: 05/09/2018
 The Visual Studio Team Services (VSTS) Demo Generator is a service helps you provision projects on your Visual Studio Team Services account with pre-populated sample content that includes source code, work items, iterations, service endpoints, build and release definitions based on a template you choose.
 
 > [!div class="mx-imgBorder"]
-![Add external user to VSTS](_img/3.png)
+![Image of VSTS Demo Generator main screen](_img/3.png)
 
 The purpose of this system is to simplify working with the hands-on-labs, demos and other education material provided by the Microsoft Visual Studio Marketing team.
 

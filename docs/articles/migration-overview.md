@@ -20,15 +20,16 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 
 ## Supported TFS Versions for Import
 
+> [!IMPORTANT] 
+> It can take up to 2-3 weeks after a new RTW version of TFS is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW TFS release.
+
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-* TFS 2018 
 * TFS 2018 Update 1
+* TFS 2018 Update 2
 
 > [!NOTE]
 > The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to VSTS using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
->
-> It can take up to two weeks after a new RTW version of TFS is released for import support to come online for that version.
 
 Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
