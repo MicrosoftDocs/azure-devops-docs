@@ -22,19 +22,22 @@ monikerRange: 'vsts'
 
 ## Use a hosted agent
 
-We provide hosted agents to you in our hosted pools. To use a hosted agent, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select either:
+We provide hosted agents to you in our hosted pools. To use a hosted agent, first decide which queue to use:
 
-* **Hosted VS2017** if your team uses Visual Studio 2017.
+| If your development team uses... | ...then choose this queue |
+|----------------------------------|---------------------------|
+| Visual Studio 2017 | Hosted VS2017 |
+| Development tools on Ubuntu | Hosted Linux |
+| Docker containers | Hosted Linux or Hosted VS2017 |
+| .NET Core | Hosted Linux (optimal) or Hosted VS2017 |
+| Development tools on macOS | Hosted macOS (see notes below) |
+| Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-* **Hosted Linux** if your team uses development tools on Ubuntu.
+Then, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
 
-* **Hosted macOS** if your team uses development tools on macOS.
-
-  This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
-
-  For manual selection of tool versions on this hosted agent, see **Q & A** below.
-
-* **Hosted** if your team uses Visual Studio 2013 or Visual Studio 2015.
+Notes on choosing **Hosted macOS**:
+* This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+* For manual selection of tool versions on this hosted agent, see **Q & A** below.
 
 <h2 id="software">Software</h2>
 
@@ -49,11 +52,9 @@ We update the software on the hosted agents once every month.
 
 Hosted agents:
 
-* Run as a service.
-
 * Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
 
-* Provide 10 GB of storage.
+* Provide at least 10 GB of storage.
 
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
 

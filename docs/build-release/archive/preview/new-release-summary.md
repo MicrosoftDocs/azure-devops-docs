@@ -18,15 +18,18 @@ A new and fully redesigned user experience is available for release progress in 
 To use this page, you simply need to switch it on using one of the on-screen prompts,
 or from the [user profile **Previews** panel](../../../collaborate/preview-features.md#enable-features-for-your-use).
 
-Open the new pipeline view using the link in the toolbar.
+Open the new progress view using the **Release (pipeline view)** link in the toolbar.
 
 ![Opening the Pipeline view](_img/new-release-summary/pipeline-link.png)
 
 The view shows information about the release and the deployment results. 
+Use the links in the pipeline view to see more details. 
 
 ![Opening the Pipeline view](_img/new-release-summary/pipeline-view.png)
 
-Use the links in the pipeline view to see more details.
+To go back to the old view, open the drop-down list from the ellipses (**...**) icon.
+
+![Opening the old view](_img/new-release-summary/old-view.png)
 
 ## Pipeline, artifacts, and environments
 
@@ -59,17 +62,19 @@ Choose the progress indicator for an environment to see the live deployment logs
 
 Choose the test results indicator for an environment to see a summary of test results.
 
+![Test results link](_img/new-release-summary/tests-link.png)
+
 ![Test results](_img/new-release-summary/tests.png)
 
 ## Contribution points and extensions
 
-The new summary supports existing and new extensions through a set of contribution points.
+The new progress view supports existing and new extensions through a set of contribution points.
 
 Extensions that previously appeared in the **Summary** tab menu for a release:
 
 ![Previous Summary tab menu for a release](_img/new-release-summary/old-rel-summary.png) 
 
-... now appear in the menu bar for the new release summary pane:
+... now appear in the menu bar for the new release progress view pane:
 
 ![New Summary tab menu for a release](_img/new-release-summary/new-rel-summary.png) 
 
@@ -79,27 +84,28 @@ Extensions that previously appeared in the **Summary** tab editor toolbar for a 
 
 ... now appear in the drop-down list in the new release editor:
 
-![New Summary tab toolbar for a release](_img/new-release-summary/new-rel-summary-2.png) 
+![New progress view tab toolbar for a release](_img/new-release-summary/new-rel-summary-2.png) 
 
 Extensions that previously appeared in the release summary section for a release:
 
 ![Previous release summary section for a release](_img/new-release-summary/old-rel-summary-3.png) 
 
-... now appear as a section in the new release summary pane:
+... now appear as a section in the new release progress view pane:
 
-![New release summary section for a release](_img/new-release-summary/new-rel-summary-3.png) 
+![New release progress view section for a release](_img/new-release-summary/new-rel-summary-3.png) 
 
 The contribution point in the columns for environments in the **Summary** tab of a release
-is no longer supported. For example, extensions that appeared here:
+is no longer supported. A richer test results summary appears in the environment in pipeline
+view when you choose the test results icon. For example, extensions that appeared here:
 
 ![Previous release summary section for a release](_img/new-release-summary/old-rel-summary-4.png) 
 
-... will not be displayed in the new summary pages. Please let us know by using the 
+... will not be displayed in the new progress view pages. Please let us know by using the 
 **Feedback** section of this topic if you are currently using this contribution point. 
 
-### New contribution points in the release summary
+### New contribution points in the release progress view
 
-The new release summary clearly segregates the entire data into release views and environment views to
+The new release progress view clearly segregates the entire data into release views and environment views to
 provide a much better reporting experience for each environment: 
 
 * The **release-level** view contains the release level information such as the pipeline, release description, release tags, and artifact details.  
@@ -117,7 +123,7 @@ You can use this to expose information for each environment:
  
 ![The new release-level view for a release](_img/new-release-summary/contrib-point-3.png) 
 
-### Migrate an extension for the new release summary
+### Migrate an extension for the new release progress view
  
 To migrate your code from the release level contribution point (the release details summary tab) to the new environment-level
 contribution point (the release environment editor tab): 
@@ -157,7 +163,7 @@ contribution point (the release environment editor tab):
  
 1. Understand the functional changes to the extension model:
 
-   * The `onReleaseChanged` function for the release summary tab contribution supplies the release object.
+   * The `onReleaseChanged` function for the release progress view tab contribution supplies the release object.
      This is called to initially render the extension, or to update it when a change to the release occurs.
      This function is no longer required in the new contribution point. 
  
