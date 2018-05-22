@@ -171,7 +171,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 <a name="xmlvarsubs"></a> 
 ## XML variable substitution
 
-This feature enables you to modify configuration settings in configuration files This feature enables you to modify configuration settings in configuration files (`*.config` files)
+This feature enables you to modify configuration settings in configuration files (`*.config` files)
 inside web packages and XML parameters files (`parameters.xml`).
 In this way, the same package can be configured based on the environment to which it will be deployed.
  
