@@ -2992,18 +2992,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build-release/tasks/package/xamarin-component-restore.md",
+            "redirect_url": "https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build-release/tasks/docs/test/cloud-based-apache-jmeter-load-test.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/docs/test/visual-studio-test.md",
-            "redirect_url": " https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md",
+            "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md",
             "redirect_document_id": false
         },
         {
@@ -3238,92 +3243,92 @@
         },
         {
             "source_path": "docs/test/developer-testing/developer-testing.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/index.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/getting-started/create-unit-tests-menu.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/getting-started/getting-started-with-developer-testing.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/attribute-glossary.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/attribute-glossary",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/attribute-glossary",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/exploration-bounds.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/exploration-bounds",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/exploration-bounds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/getting-started.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/getting-started",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/getting-started",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/index.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/index",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/input-generation.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/input-generation",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/input-generation",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/introduction.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/introduction",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/introduction",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/settings-waterfall.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/settings-waterfall",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/settings-waterfall",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/static-helper-classes.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/static-helper-classes",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/static-helper-classes",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/test-generation.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/test-generation",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/test-generation",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/developer-testing/intellitest-manual/warnings-and-errors.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/intellitest-manual/warnings-and-errors",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/warnings-and-errors",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/lab-management/use-build-or-rm-instead-of-lab-management.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/lab-management/test-machines/install-configure-test-agents.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
             "redirect_document_id": false
         },
         {
@@ -3583,7 +3588,7 @@
         },
         {
             "source_path": "docs/test/test-machines/install-configure-test-agents.md",
-            "redirect_url": " https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+            "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
             "redirect_document_id": false
        },
        {
