@@ -555,8 +555,14 @@ install. This requires multiple steps, depending on whether Code Search is confi
       For TFS 2017 RTM, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
 
       For TFS 2017 Update1 and above, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-2.4.1\bin"`
+
+      For TFS 2018,  `cd "C:\Program Files\Microsoft Team Foundation Server 2018\Search\ES\elasticsearchv5\bin"`
       
-   1. Remove the service: `"service.bat remove"`<p />
+   1. Remove the service: 
+      
+      For TFS 2017 `"service.bat remove"`
+      
+      For TFS 2018 `"elasticsearch-service.bat remove"`
     
 1. Remove Search data:
 
