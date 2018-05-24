@@ -107,6 +107,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget-packager.md)Creates nupkg outputs from csproj or nuspec files | VSTS, TFS 2015.3 and newer |
 | ![icon](package/_img/nuget-publisher.png) [NuGet Publisher](package/nuget-publisher.md). Uploads nupkg files to a nuget server | VSTS, TFS 2015.3 and newer |
 | ![icon](package/_img/pypi-publisher.png) [PyPI Publisher](package/pypi-publisher.md). Publish a Python package to PyPI | VSTS |
+| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore. - deprecated. See [Updating component references to NuGet](https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget) | VSTS, TFS 2015 RTM and newer | VSTS, TFS 2017 and newer |
 
 ## Deploy
 

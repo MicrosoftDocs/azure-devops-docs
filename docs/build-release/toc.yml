@@ -448,6 +448,8 @@
       href: tasks/package/nuget.md
     - name: PyPI Publisher
       href: tasks/package/pypi-publisher.md
+    - name: Xamarin Component Restore
+      href: https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget
     - name: Previous versions
       items:
       - name: NuGet Installer 0.*
