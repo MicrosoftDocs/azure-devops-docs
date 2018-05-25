@@ -80,7 +80,7 @@ for pricing related to their services.
 
 ####Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](http://www.visualstudio.com/integrate/get-started/service-hooks/create-subscription.md).
+A: Yes, see details [here](..//create-subscription.md).
 
 ####Q: Where can I get more information about Flowdock?
 
