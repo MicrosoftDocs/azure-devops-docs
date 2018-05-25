@@ -296,7 +296,7 @@ Both acquisition and sales tab also share the transaction details which gives pu
 ![enhanced publisher experience](_img/06_22_25.png)
 
 ###Setup Power BI Content Pack
-Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [Visualstudio.com](https://docs.microsoft.com/vsts/extend/extension-statistics-powerbi-contentpack). 
+Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [docs.microsoft.com](https://docs.microsoft.com/vsts/extend/extension-statistics-powerbi-contentpack). 
 
 ![extension statistics Power BI content pack](_img/06_22_26.png)
 
