@@ -133,6 +133,9 @@ Aside from the licensing and maintenance cost of a feature flag service, you're 
 * You'll need to identify and remove stale feature flags 
 * Understand and test the implications of flipping a feature flag
 
+> [!TIP]
+> To minimize the costs associated with the use of feature flags, keep feature flags short lived and prevent multiple feature flags from interfering with eachother by affecting the same functionality.
+
 ## Conclusion
 
 Now that you've covered the concepts and considerations of feature flags, you should be confident to explore ways to improve your CI/CD pipelines. While feature flags come at a cost, having a game plan to manage exposed features at run-time is invaluable.
