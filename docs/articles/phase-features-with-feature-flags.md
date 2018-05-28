@@ -153,7 +153,7 @@ As Buck states, “Many feature flags go away and the teams themselves take care
 
 ### Is there a dependency on deployment rings?
 
-No, rings and feature flags are symbiotic. Read [Deature Flags or Rings](https://aka.ms/vsar-rings-flags) for details.
+No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https://aka.ms/vsar-rings-flags) for details.
 
 ## Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
