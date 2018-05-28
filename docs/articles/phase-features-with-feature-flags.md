@@ -134,7 +134,7 @@ Aside from the licensing and maintenance cost of a feature flag service, you're 
 * Understand and test the implications of flipping a feature flag
 
 > [!TIP]
-> To minimize the costs associated with the use of feature flags, keep feature flags short lived and prevent multiple feature flags from interfering with eachother by affecting the same functionality.
+> To minimize the costs associated with the use of feature flags, keep feature flags short lived and prevent multiple feature flags from interfering with each other by affecting the same functionality.
 
 ## Conclusion
 
