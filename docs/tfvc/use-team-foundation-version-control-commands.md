@@ -337,7 +337,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 </div>
 
-<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../build-release/concepts/definitions/build/triggers.md">automated build process<a/>.</p></td>
+<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../pipelines/build/triggers.md">automated build process<a/>.</p></td>
 </tr>
 <tr>
 <td><p>Date and time</p></td>

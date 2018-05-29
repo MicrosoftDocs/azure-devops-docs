@@ -113,7 +113,7 @@
         },
         {
             "source_path": "docs/build-release/archive/preview/release-definition-editor.md",
-            "redirect_url": "/vsts/build-release/actions/work-with-release-definitions",
+            "redirect_url": "/vsts/pipelines/actions/work-with-release-definitions",
             "redirect_document_id": false
         },
         {
@@ -143,7 +143,7 @@
         },
         {
             "source_path": "docs/test/test-redirect-2.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         },
         {
@@ -163,107 +163,107 @@
         },
         {
             "source_path": "docs/build-release/actions/build-yaml-get-started.md",
-            "redirect_url": "/vsts/build-release/actions/build-yaml",
+            "redirect_url": "/vsts/pipelines/actions/build-yaml",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/overview.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/nodejs/build-nodejs-docker.md",
-            "redirect_url": "/vsts/build-release/apps/containers/build-container",
+            "redirect_url": "/vsts/pipelines/apps/containers/build-container",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-            "redirect_url": "/vsts/build-release/apps/containers/build-container",
+            "redirect_url": "/vsts/pipelines/apps/containers/build-container",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
-            "redirect_url": "/vsts/build-release/apps/cd/deploy-cloudservice-cloudservice",
+            "redirect_url": "/vsts/pipelines/apps/cd/deploy-cloudservice-cloudservice",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/aspnet/ci/build-aspnet-4.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/aspnet/ci/build-aspnet-cloudservice.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-cloudservice",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-cloudservice",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/aspnet/ci/build-aspnet-core.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-core",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/aspnet/ci/build-aspnet-dacpac.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-dacpac",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-dacpac",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/apps/node/nodejs-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/nodejs/nodejs-to-azure",
+            "redirect_url": "/vsts/pipelines/apps/nodejs/nodejs-to-azure",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/history.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/history",
+            "redirect_url": "/vsts/pipelines/build/history",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/options.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/repository.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/triggers.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/triggers",
+            "redirect_url": "/vsts/pipelines/build/triggers",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/define/variables.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/get-started/aspnet-4-ci-cd-azure-automatic.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/get-started/aspnet-4-ci-cd-vs-automatic.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/get-started/dot-net.md",
-            "redirect_url": "/vsts/build-release/apps/windows/dot-net",
+            "redirect_url": "/vsts/pipelines/apps/windows/dot-net",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/get-started/java-maven.md",
-            "redirect_url": "/vsts/build-release/apps/java/java-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/java-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/steps/file-matching-patterns.md",
-            "redirect_url": "/vsts/build-release/tasks/file-matching-patterns",
+            "redirect_url": "/vsts/pipelines/tasks/file-matching-patterns",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build/steps/transforms-variable-substitution.md",
-            "redirect_url": "/vsts/build-release/tasks/transforms-variable-substitution",
+            "redirect_url": "/vsts/pipelines/tasks/transforms-variable-substitution",
             "redirect_document_id": false
         },
         {
@@ -493,142 +493,142 @@
         },
         {
             "source_path": "docs/build-release/admin/agents/v1-windows.md",
-            "redirect_url": "/vsts/build-release/actions/agents/v1-windows",
+            "redirect_url": "/vsts/pipelines/agents/v1-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-linux.md",
-            "redirect_url": "/vsts/build-release/actions/agents/v2-linux",
+            "redirect_url": "/vsts/pipelines/agents/v2-linux",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-osx.md",
-            "redirect_url": "/vsts/build-release/actions/agents/v2-osx",
+            "redirect_url": "/vsts/pipelines/agents/v2-osx",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/v2-windows.md",
-            "redirect_url": "/vsts/build-release/actions/agents/v2-windows",
+            "redirect_url": "/vsts/pipelines/agents/v2-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/windows.md",
-            "redirect_url": "/vsts/build-release/actions/agents/v2-windows",
+            "redirect_url": "/vsts/pipelines/agents/v2-windows",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/create.md",
-            "redirect_url": "/vsts/build-release/actions/ci-cd-part-1",
+            "redirect_url": "/vsts/pipelines/get-started-designer",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/aspnet4.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/deploy-aspnet5.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/aspnet-core-to-azure-webapp",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-core-to-azure-webapp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/java.md",
-            "redirect_url": "/vsts/build-release/apps/java/build-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/build-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/secure-certs.md",
-            "redirect_url": "/vsts/build-release/apps/mobile/secure-certs",
+            "redirect_url": "/vsts/pipelines/apps/mobile/secure-certs",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/xamarin.md",
-            "redirect_url": "/vsts/build-release/apps/mobile/xamarin",
+            "redirect_url": "/vsts/pipelines/apps/mobile/xamarin",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/xcode/xcode-projects.md",
-            "redirect_url": "/vsts/build-release/apps/mobile/xcode-ios",
+            "redirect_url": "/vsts/pipelines/apps/mobile/xcode-ios",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/vs/define-build.md",
-            "redirect_url": "/vsts/build-release/apps/windows/dot-net",
+            "redirect_url": "/vsts/pipelines/apps/windows/dot-net",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/universal.md",
-            "redirect_url": "/vsts/build-release/apps/windows/universal",
+            "redirect_url": "/vsts/pipelines/apps/windows/universal",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/2015.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/index.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/index.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/admin.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/xplat.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/agents/hosted-pool.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/admin/hosted-pool.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/agents/hosted-pool.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/hosted-agent-pool.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/general.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/github/index.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/actions/scripts/variables.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/retention.md",
-            "redirect_url": "/vsts/build-release/concepts/policies/retention",
+            "redirect_url": "/vsts/pipelines/policies/retention",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/build/publish-build-artifacts.md",
-            "redirect_url": "/vsts/build-release/tasks/utility/copy-and-publish-build-artifacts",
+            "redirect_url": "/vsts/pipelines/tasks/utility/copy-and-publish-build-artifacts",
             "redirect_document_id": false
         },
         {
@@ -788,82 +788,82 @@
         },
         {
             "source_path": "docs/build-release/apps/aspnet/aspnet4-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-4.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-cloudservice.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-cloudservice",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-cloudservice",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/aspnetcore-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-core",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-core.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-core",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/aspnetcore-docker-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-core-docker",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core-docker",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-dacpac.md",
-            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-dacpac",
+            "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-dacpac",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/java/maven-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/java/build-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/build-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/java/maven.md",
-            "redirect_url": "/vsts/build-release/apps/java/build-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/build-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/cordova/cordova-build.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-build",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/cordova/cordova-build.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-build",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/cordova/cordova-command.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-command",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-command",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/cordova/cordova-command.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-command",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-command",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/azure/nodejs.md",
-            "redirect_url": "/vsts/build-release/archive/apps/nodejs/nodejs-to-azure",
+            "redirect_url": "/vsts/pipelines/archive/apps/nodejs/nodejs-to-azure",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/concepts/definitions/release/release-definition-editor.md",
-            "redirect_url": "/vsts/build-release/archive/preview/release-definition-editor",
+            "redirect_url": "/vsts/pipelines/archive/preview/release-definition-editor",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/feature-overview.md",
-            "redirect_url": "/vsts/build-release/overview",
+            "redirect_url": "/vsts/pipelines/overview",
             "redirect_document_id": false
         },
         {
@@ -878,127 +878,127 @@
         },
         {
             "source_path": "docs/build-release/apps/mobile/cordova-build.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-build",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/mobile/cordova-command.md",
-            "redirect_url": "/vsts/build-release/archive/apps/mobile/cordova-command",
+            "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-command",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/node/nodejs-to-azure.md",
-            "redirect_url": "/vsts/build-release/archive/apps/nodejs/nodejs-to-azure",
+            "redirect_url": "/vsts/pipelines/archive/apps/nodejs/nodejs-to-azure",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp",
+            "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp",
+            "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/build.md",
-            "redirect_url": "/vsts/build-release/tasks/index",
+            "redirect_url": "/vsts/pipelines/tasks/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/history.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/history",
+            "redirect_url": "/vsts/pipelines/build/history",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/options.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/options",
+            "redirect_url": "/vsts/pipelines/build/options",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/repository.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/repository",
+            "redirect_url": "/vsts/pipelines/build/repository",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/triggers.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/triggers",
+            "redirect_url": "/vsts/pipelines/build/triggers",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/define/variables.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/build/variables",
+            "redirect_url": "/vsts/pipelines/build/variables",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/get-started/aspnet-4-ci-cd-azure-automatic.md",
-            "redirect_url": "/vsts/build-release/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+            "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/get-started/aspnet-4-ci-cd-vs-automatic.md",
-            "redirect_url": "/vsts/build-release/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+            "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/get-started/ci-cd-part-1.md",
-            "redirect_url": "/vsts/build-release/actions/ci-cd-part-1",
+            "redirect_url": "/vsts/pipelines/get-started-designer",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/get-started/dot-net.md",
-            "redirect_url": "/vsts/build-release/apps/windows/dot-net",
+            "redirect_url": "/vsts/pipelines/apps/windows/dot-net",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/get-started/java-maven.md",
-            "redirect_url": "/vsts/build-release/apps/java/build-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/build-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/java/quick-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/java/build-maven",
+            "redirect_url": "/vsts/pipelines/apps/java/build-maven",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/apps/nodejs/quick-to-azure.md",
-            "redirect_url": "/vsts/build-release/apps/nodejs/build-gulp",
+            "redirect_url": "/vsts/pipelines/apps/nodejs/build-gulp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/preview/2017-user-experience.md",
-            "redirect_url": "/vsts/build-release/archive/preview/2017-user-experience",
+            "redirect_url": "/vsts/pipelines/archive/preview/2017-user-experience",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/preview/release-definition-editor.md",
-            "redirect_url": "/vsts/build-release/archive/preview/release-definition-editor",
+            "redirect_url": "/vsts/pipelines/archive/preview/release-definition-editor",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/actions/scripts/index.md",
-            "redirect_url": "/vsts/build-release/actions/scripts/powershell",
+            "redirect_url": "/vsts/pipelines/scripts/powershell",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/services/hosted-agent-pool.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/services/hosted-build-controller.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/hosted",
+            "redirect_url": "/vsts/pipelines/agents/hosted",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/support.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/troubleshooting.md",
-            "redirect_url": "/vsts/build-release/actions/troubleshooting",
+            "redirect_url": "/vsts/pipelines/actions/troubleshooting",
             "redirect_document_id": false
         },
         {
@@ -1193,7 +1193,7 @@
         },
         {
             "source_path": "docs/package/build/team-build-npm.md",
-            "redirect_url": "/vsts/build-release/packages/npm?toc=/vsts/package/toc.json",
+            "redirect_url": "/vsts/pipelines/packages/npm?toc=/vsts/package/toc.json",
             "redirect_document_id": false
         },
         {
@@ -1953,42 +1953,42 @@
         },
         {
             "source_path": "docs/build-release/test/continuous-testing.md",
-            "redirect_url": "/vsts/build-release/test/",
+            "redirect_url": "/vsts/pipelines/test/",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/getting-started/continuous-test-java.md",
-            "redirect_url": "/vsts/build-release/test/continuous-test-java",
+            "redirect_url": "/vsts/pipelines/test/continuous-test-java",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/getting-started/continuous-test-selenium.md",
-            "redirect_url": "/vsts/build-release/test/continuous-test-selenium",
+            "redirect_url": "/vsts/pipelines/test/continuous-test-selenium",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/getting-started/getting-started-with-continuous-testing.md",
-            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/getting-started/review-continuous-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
+            "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/review-automated-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
+            "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/set-up-automated-test-environments-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-test-environments-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/test/set-up-automated-testing-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-testing-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-testing-builds",
             "redirect_document_id": false
         },
         {
@@ -2383,112 +2383,112 @@
         },
         {
             "source_path": "docs/release/author-release-definition/more-release-definition.md",
-            "redirect_url": "/vsts/build-release/actions/work-with-release-definitions",
+            "redirect_url": "/vsts/pipelines/actions/work-with-release-definitions",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/author-release-definition/understanding-artifacts.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/release/artifacts",
+            "redirect_url": "/vsts/pipelines/release/artifacts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/author-release-definition/understanding-environments.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/release/environments",
+            "redirect_url": "/vsts/pipelines/release/environments",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/author-release-definition/understanding-tasks.md",
-            "redirect_url": "/vsts/build-release/concepts/process/tasks",
+            "redirect_url": "/vsts/pipelines/concepts/process/tasks",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/contents.md",
-            "redirect_url": "/vsts/build-release/overview",
+            "redirect_url": "/vsts/pipelines/overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/aspnet-core10-azure-web-apps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/aspnet-to-azure-deployment-groups.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/azure-web-apps-and-sql-db.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/azure-web-apps-and-sql-scripts.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/azure-web-apps-from-build-and-release-hubs.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/change-config-azure-cloudservices.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/change-config-azure-webapps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/continuous-to-app-service.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/deployment-slots-webapps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/net-to-azure-cloud-services.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/net-to-azure-vm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/provision-azure-vm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure/provision-devtest-lab.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/azure-web-apps-from-build-and-release-hubs.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/change-config-azure-cloudservices.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/change-config-azure-webapps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/deployment-slots-webapps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
@@ -2498,232 +2498,232 @@
         },
         {
             "source_path": "docs/release/examples/examples-index.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/examples.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/net-to-azure-cloud-services.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/net-to-azure-resource-group-using-iis-sqlserver.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/net-to-azure-resource-group-using-powershell-dsc.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/net-to-azure-vm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/nodejs/node-to-azure-cloud-service.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/nodejs/node-to-azure-webapps.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/nodejs/node-to-win-server.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/other-servers/net-to-vm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/other-servers/net-to-workgroup-vm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/scvmm/restore-vm-in-scvmm.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/examples/vmware/provision-vm-in-vmware.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/azure-rm-endpoint.md",
-            "redirect_url": "/vsts/build-release/actions/azure-rm-endpoint",
+            "redirect_url": "/vsts/pipelines/actions/azure-rm-endpoint",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-tfs.md",
-            "redirect_url": "/vsts/build-release/concepts/licensing/concurrent-pipelines-tfs",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-tfs",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-ts.md",
-            "redirect_url": "/vsts/build-release/concepts/licensing/concurrent-pipelines-ts",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/concurrent-pipelines-vsts.md",
-            "redirect_url": "/vsts/build-release/concepts/licensing/concurrent-pipelines-ts",
+            "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/configure-agents.md",
-            "redirect_url": "/vsts/build-release/concepts/agents/agents",
+            "redirect_url": "/vsts/pipelines/agents/agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/join-preview.md",
-            "redirect_url": "/vsts/build-release/index",
+            "redirect_url": "/vsts/pipelines/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/machine-group-agents.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/release/deployment-groups/index",
+            "redirect_url": "/vsts/pipelines/release/deployment-groups/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/release-notes.md",
-            "redirect_url": "/vsts/build-release/archive/news/rm-archived",
+            "redirect_url": "/vsts/pipelines/archive/news/rm-archived",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/getting-started/understand-rm.md",
-            "redirect_url": "/vsts/build-release/concepts/definitions/release/what-is-release-management",
+            "redirect_url": "/vsts/pipelines/release/what-is-release-management",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/index.md",
-            "redirect_url": "/vsts/build-release/archive/release/index",
+            "redirect_url": "/vsts/pipelines/archive/release/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/managing-releases/create-release.md",
-            "redirect_url": "/vsts/build-release/actions/create-deploy-releases",
+            "redirect_url": "/vsts/pipelines/actions/create-deploy-releases",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/managing-releases/track-release.md",
-            "redirect_url": "/vsts/build-release/actions/view-manage-releases",
+            "redirect_url": "/vsts/pipelines/actions/view-manage-releases",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/overview-rm2013.md",
-            "redirect_url": "/vsts/build-release/archive/release/overview-rm2013",
+            "redirect_url": "/vsts/pipelines/archive/release/overview-rm2013",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/overview-rm2015.md",
-            "redirect_url": "/vsts/build-release/archive/release/overview-rm2015",
+            "redirect_url": "/vsts/pipelines/archive/release/overview-rm2015",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/overview.md",
-            "redirect_url": "/vsts/build-release/overview",
+            "redirect_url": "/vsts/pipelines/overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/add-users-and-groups.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/add-users-and-groups",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/add-users-and-groups",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/config-and-system-variables.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/config-and-system-variables",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/config-and-system-variables",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/deploy-continuously-to-azure.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/deploy-continuously-to-azure",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/deploy-continuously-to-azure",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/install-release-management/connect-to-tfs.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/install-release-management/connect-to-tfs",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/connect-to-tfs",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/install-release-management/install-deployment-agent.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/install-release-management/install-deployment-agent",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/install-deployment-agent",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/install-release-management/install-server-and-client.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/install-release-management/install-server-and-client",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/install-server-and-client",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/install-release-management/system-requirements.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/install-release-management/system-requirements",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/system-requirements",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/install-release-management.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/install-release-management",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/manage-your-release.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/manage-your-release",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/manage-your-release",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/release-actions/release-action-tools.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/release-actions/release-action-tools",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-actions/release-action-tools",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/release-actions.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/release-actions",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-actions",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/release-management-overview.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/release-management-overview",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-management-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/release-with-agents.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/release-with-agents",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-with-agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/release-without-agents.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/release-without-agents",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-without-agents",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/previous-version/trigger-a-release.md",
-            "redirect_url": "/vsts/build-release/archive/release/previous-version/trigger-a-release",
+            "redirect_url": "/vsts/pipelines/archive/release/previous-version/trigger-a-release",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/_shared/previous-version-header.md",
-            "redirect_url": "/vsts/build-release/archive/release/_shared/previous-version-header",
+            "redirect_url": "/vsts/pipelines/archive/release/_shared/previous-version-header",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/_shared/wpfver-back-to-index-shared.md",
-            "redirect_url": "/vsts/build-release/archive/release/_shared/wpfver-back-to-index-shared",
+            "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-back-to-index-shared",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/release/_shared/wpfver-support-shared.md",
-            "redirect_url": "/vsts/build-release/archive/release/_shared/wpfver-support-shared",
+            "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-support-shared",
             "redirect_document_id": false
         },
        {
@@ -2917,41 +2917,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build-release/tasks/deploy/azure-app-service-deploy.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-app-service-manage.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-cloud-service-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-powershell.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-resource-group-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-sql-database-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/deploy/azure-web-app-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/build-release/tasks/deploy/deploy-to-kubernetes.md",
             "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Kubernetes",
             "redirect_document_id": false
@@ -2967,48 +2932,38 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build-release/tasks/deploy/sql-server-database-deployment.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlDacpacDeploymentOnMachineGroup",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/build-release/tasks/package/npm-install.md",
-            "redirect_url": "/vsts/build-release/tasks/package/npm",
+            "redirect_url": "/vsts/pipelines/tasks/package/npm",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/package/nuget-installer.md",
-            "redirect_url": "/vsts/build-release/tasks/package/nuget",
+            "redirect_url": "/vsts/pipelines/tasks/package/nuget",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/package/nuget-packager.md",
-            "redirect_url": "/vsts/build-release/tasks/package/nuget",
+            "redirect_url": "/vsts/pipelines/tasks/package/nuget",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/package/nuget-publisher.md",
-            "redirect_url": "/vsts/build-release/tasks/package/nuget",
+            "redirect_url": "/vsts/pipelines/tasks/package/nuget",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build-release/tasks/package/xamarin-component-restore.md",
+            "source_path": "docs/pipelines/tasks/package/xamarin-component-restore.md",
             "redirect_url": "https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build-release/tasks/docs/test/cloud-based-apache-jmeter-load-test.md",
+            "source_path": "docs/pipelines/tasks/docs/test/cloud-based-apache-jmeter-load-test.md",
             "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
             "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build-release/tasks/docs/test/visual-studio-test.md",
-            "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md",
             "redirect_document_id": false
         },
         {
@@ -3128,7 +3083,7 @@
         },
         {
             "source_path": "docs/test/run-tests-with-builds.md",
-            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
             "redirect_document_id": false
         },
         {
@@ -3143,102 +3098,102 @@
         },
         {
             "source_path": "docs/test/automated-tests/review-automated-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
+            "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/associate-automated-results-with-requirements.md",
-            "redirect_url": "/vsts/build-release/test/associate-automated-results-with-requirements",
+            "redirect_url": "/vsts/pipelines/test/associate-automated-results-with-requirements",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/associate-automated-test-with-test-case.md",
-            "redirect_url": "/vsts/build-release/test/associate-automated-test-with-test-case",
+            "redirect_url": "/vsts/pipelines/test/associate-automated-test-with-test-case",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/continuous-testing.md",
-            "redirect_url": "/vsts/build-release/test/index",
+            "redirect_url": "/vsts/pipelines/test/index",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/example-continuous-testing.md",
-            "redirect_url": "/vsts/build-release/test/example-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/example-continuous-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/index.md",
-            "redirect_url": "/vsts/build-release/test/",
+            "redirect_url": "/vsts/pipelines/test/",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/reference-qa.md",
-            "redirect_url": "/vsts/build-release/test/reference-qa",
+            "redirect_url": "/vsts/pipelines/test/reference-qa",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/review-automated-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
+            "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/run-automated-tests-from-test-hub.md",
-            "redirect_url": "/vsts/build-release/test/run-automated-tests-from-test-hub",
+            "redirect_url": "/vsts/pipelines/test/run-automated-tests-from-test-hub",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/set-up-automated-test-environments-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-test-environments-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/set-up-automated-testing-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-testing-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-testing-builds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/set-up-continuous-test-environments-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-test-environments-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/set-up-continuous-testing-builds.md",
-            "redirect_url": "/vsts/build-release/test/set-up-continuous-testing-builds",
+            "redirect_url": "/vsts/pipelines/test/set-up-continuous-testing-builds",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/test-build.md",
-            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "vsts/build-release/test/test-build.md",
-            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
-            "redirect_url": "/vsts/build-release/test/test-with-unified-agent-and-phases",
+            "redirect_url": "/vsts/pipelines/test/test-with-unified-agent-and-phases",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/getting-started/continuous-test-java.md",
-            "redirect_url": "/vsts/build-release/test/continuous-test-java",
+            "redirect_url": "/vsts/pipelines/test/continuous-test-java",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/getting-started/continuous-test-selenium.md",
-            "redirect_url": "/vsts/build-release/test/continuous-test-selenium",
+            "redirect_url": "/vsts/pipelines/test/continuous-test-selenium",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing.md",
-            "redirect_url": "/vsts/build-release/test/getting-started-with-continuous-testing",
+            "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/test/continuous-testing/getting-started/review-continuous-test-results-after-build.md",
-            "redirect_url": "/vsts/build-release/test/review-continuous-test-results-after-build",
+            "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
             "redirect_document_id": false
         },
         {
@@ -4733,12 +4688,12 @@
        },
        {
         "source_path": "docs/build-release/concepts/definitions/release/approvals/release-gates.md",
-        "redirect_url": "/vsts/build-release/concepts/definitions/release/approvals/index",
+        "redirect_url": "/vsts/pipelines/release/approvals/index",
         "redirect_document_id": false
        },
        {
         "source_path": "docs/build-release/apps/cd/deploy-docker-windowsvm.md",
-        "redirect_url": "/vsts/build-release/apps/cd/deploy-docker-webapp",
+        "redirect_url": "/vsts/pipelines/apps/cd/deploy-docker-webapp",
         "redirect_document_id": false
        },
        {
@@ -4828,12 +4783,12 @@
        },
        {
         "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups.md",
-        "redirect_url": "/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups#create-a-deployment-group",
+        "redirect_url": "/vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups#create-a-deployment-group",
         "redirect_document_id": false
        },
        {
         "source_path": "docs/build-release/actions/debug-deployment-issues.md",
-        "redirect_url": "/vsts/build-release/concepts/definitions/release/variables#debug-mode",
+        "redirect_url": "/vsts/pipelines/release/variables#debug-mode",
         "redirect_document_id": false
        },
        {
@@ -4883,7 +4838,7 @@
        },
        {
         "source_path": "docs/security/set-build-release-permissions.md",
-        "redirect_url": "/vsts/build-release/set-permissions",
+        "redirect_url": "/vsts/pipelines/set-permissions",
         "redirect_document_id": false
        },
        {
@@ -4891,86 +4846,2190 @@
         "redirect_url": "/vsts/accounts/connect-account-to-aad",
         "redirect_document_id": false
        },
-       {
-        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
-        "redirect_url": "/vsts/accounts/connect-account-to-aad",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
-        "redirect_url": "/vsts/accounts/connect-account-to-aad",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
-        "redirect_url": "/vsts/accounts/connect-account-to-aad",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
-        "redirect_url": "/vsts/accounts/connect-account-to-aad",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
-        "redirect_url": "/vsts/accounts/connect-account-to-aad",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/faq-vs-subscriptions.md",
-        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/faq-link-msdn-subscription-org-account.md",
-        "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/faq-azure-billing.md",
-        "redirect_url": "/vsts/billing/vsts-billing-faq",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/faq-billing-setup.md",
-        "redirect_url": "/vsts/billing/vsts-billing-faq",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/faq-pay-for-basic-users.md",
-        "redirect_url": "/vsts/billing/vsts-billing-faq",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/vs-subscriptions/buy-vs-subscriptions.md",
-        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/vs-subscriptions/manage-vs-subscriptions.md",
-        "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/csp/buy-manage-vs-subs.md",
-        "redirect_url": "/visualstudio/subscriptions/vscloud-csp",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-        "redirect_url": "/vsts/billing/change-number-paid-extension-users",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/marketplace/billing-overview.md",
-        "redirect_url": "/vsts/billing/overview",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/billing/extensions.md",
-        "redirect_url": "/vsts/marketplace/overview",
-        "redirect_document_id": false
-       }
-    ]
+    {
+      "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-src.md",
+      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-azure-ad-vsts-account-prep-target.md",
+      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-azure-ad-vsts-account-disconnect.md",
+      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-azure-ad-vsts-account-connect.md",
+      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-azure-ad-vsts-account-reassign-owner.md",
+      "redirect_url": "/vsts/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/faq-vs-subscriptions.md",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/faq-link-msdn-subscription-org-account.md",
+      "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/faq-azure-billing.md",
+      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/faq-billing-setup.md",
+      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/faq-pay-for-basic-users.md",
+      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/vs-subscriptions/buy-vs-subscriptions.md",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/vs-subscriptions/manage-vs-subscriptions.md",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/csp/buy-manage-vs-subs.md",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-csp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
+      "redirect_url": "/vsts/billing/change-number-paid-extension-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/billing-overview.md",
+      "redirect_url": "/vsts/billing/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/extensions.md",
+      "redirect_url": "/vsts/marketplace/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build-release/_shared/begin-create-build-definition.md",
+      "redirect_url": "/vsts/pipelines/_shared/begin-create-build-definition",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/ci-cd-prerequisites-tfs.md",
+      "redirect_url": "/vsts/pipelines/_shared/ci-cd-prerequisites-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/ci-cd-prerequisites-vsts.md",
+      "redirect_url": "/vsts/pipelines/_shared/ci-cd-prerequisites-vsts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/ci-quickstart-intro.md",
+      "redirect_url": "/vsts/pipelines/_shared/ci-quickstart-intro",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/qa-agents.md",
+      "redirect_url": "/vsts/pipelines/_shared/qa-agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/qa-definition-common-all-platforms.md",
+      "redirect_url": "/vsts/pipelines/_shared/qa-definition-common-all-platforms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/qa-versions.md",
+      "redirect_url": "/vsts/pipelines/_shared/qa-versions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/rm-help-support-shared.md",
+      "redirect_url": "/vsts/pipelines/_shared/rm-help-support-shared",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/test-help-support-shared.md",
+      "redirect_url": "/vsts/pipelines/_shared/test-help-support-shared",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version-rm-dev14.md",
+      "redirect_url": "/vsts/pipelines/_shared/version-rm-dev14",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version-team-services.md",
+      "redirect_url": "/vsts/pipelines/_shared/version-team-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version-tfs-2015-rtm.md",
+      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2015-rtm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version-tfs-2015-update.md",
+      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2015-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version-tfs-2017-rtm.md",
+      "redirect_url": "/vsts/pipelines/_shared/version-tfs-2017-rtm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/version.md",
+      "redirect_url": "/vsts/pipelines/_shared/version",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/_shared/web-or-yaml.md",
+      "redirect_url": "/vsts/pipelines/_shared/web-or-yaml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/certificate.md",
+      "redirect_url": "/vsts/pipelines/agents/certificate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/configure-tfs-authentication.md",
+      "redirect_url": "/vsts/pipelines/agents/configure-tfs-authentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/prepare-permissions.md",
+      "redirect_url": "/vsts/pipelines/agents/prepare-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/proxy.md",
+      "redirect_url": "/vsts/pipelines/agents/proxy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/v1-windows.md",
+      "redirect_url": "/vsts/pipelines/agents/v1-windows",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/v2-linux.md",
+      "redirect_url": "/vsts/pipelines/agents/v2-linux",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/v2-osx.md",
+      "redirect_url": "/vsts/pipelines/agents/v2-osx",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/v2-windows.md",
+      "redirect_url": "/vsts/pipelines/agents/v2-windows",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/capabilities.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/capabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/concepts.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/concepts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/qa-no-agent-with-capabilities.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/qa-no-agent-with-capabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/qa-windows-agent-powershell-version.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/qa-windows-agent-powershell-version",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/configure-help-unix.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/configure-help-unix",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/prepare-permissions.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/prepare-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/qa-firewall.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/qa-urls.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-urls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/remove-and-reconfigure-unix.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/remove-and-reconfigure-unix",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/replace-agent.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/replace-agent",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/unix-authentication-types.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/unix-authentication-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/_shared/v2/web-proxy-bypass.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/web-proxy-bypass",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/build-yaml.md",
+      "redirect_url": "/vsts/pipelines/get-started-yaml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/agents/ci-cd-part-1.md",
+      "redirect_url": "/vsts/pipelines/agents/get-started-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/scripts/git-commands.md",
+      "redirect_url": "/vsts/pipelines/scripts/git-commands",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/scripts/powershell.md",
+      "redirect_url": "/vsts/pipelines/scripts/powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/aspnet/aspnetcore-docker-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/java/maven-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/java/maven-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/java/quick-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/java/quick-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/java/_shared/java-web-app-sample-link.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/java/_shared/java-web-app-sample-link",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/java/_shared/java-web-app-sample-qa.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/java/_shared/java-web-app-sample-qa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/mobile/cordova-build.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/mobile/cordova-command.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/mobile/cordova-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/nodejs/nodejs-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/nodejs/nodejs-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/nodejs/quick-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/nodejs/quick-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/browse-to-web-app.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/browse-to-web-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/clean-up-resources.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/clean-up-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/create-azure-web-app.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-azure-web-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/create-azure-windows-vm.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-azure-windows-vm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/create-deployment-group.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/create-deployment-group",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/definition-finish-and-test.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/definition-finish-and-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/import-code-1.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/import-code-1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/import-code-2.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/import-code-2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-1.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-2.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-cd-3.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-cd-3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-1.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-2.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/set-up-ci-3.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/set-up-ci-3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/apps/_shared/vsts-and-azure-setup.md",
+      "redirect_url": "/vsts/pipelines/archive/apps/_shared/vsts-and-azure-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/2015-01.md",
+      "redirect_url": "/vsts/pipelines/archive/news/2015-01",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/2015-02.md",
+      "redirect_url": "/vsts/pipelines/archive/news/2015-02",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/2015.md",
+      "redirect_url": "/vsts/pipelines/archive/news/2015",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/2016.md",
+      "redirect_url": "/vsts/pipelines/archive/news/2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/2017.md",
+      "redirect_url": "/vsts/pipelines/archive/news/2017",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/news/rm-archived.md",
+      "redirect_url": "/vsts/pipelines/archive/news/rm-archived",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/preview/2017-user-experience.md",
+      "redirect_url": "/vsts/pipelines/archive/preview/2017-user-experience",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/preview/new-release-landing-page.md",
+      "redirect_url": "/vsts/pipelines/archive/preview/new-release-landing-page",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/preview/new-release-summary.md",
+      "redirect_url": "/vsts/pipelines/archive/preview/new-release-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/index.md",
+      "redirect_url": "/vsts/pipelines/archive/release/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/overview-rm2013.md",
+      "redirect_url": "/vsts/pipelines/archive/release/overview-rm2013",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/overview-rm2015.md",
+      "redirect_url": "/vsts/pipelines/archive/release/overview-rm2015",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/add-users-and-groups.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/add-users-and-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/config-and-system-variables.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/config-and-system-variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/deploy-continuously-to-azure.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/deploy-continuously-to-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/install-release-management.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/manage-your-release.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/manage-your-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/release-actions.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/release-management-overview.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-management-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/release-with-agents.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-with-agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/release-without-agents.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-without-agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/trigger-a-release.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/trigger-a-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/connect-to-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/install-deployment-agent",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/install-release-management/install-server-and-client.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/install-server-and-client",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/install-release-management/system-requirements.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/install-release-management/system-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/previous-version/release-actions/release-action-tools.md",
+      "redirect_url": "/vsts/pipelines/archive/release/previous-version/release-actions/release-action-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/_shared/previous-version-header.md",
+      "redirect_url": "/vsts/pipelines/archive/release/_shared/previous-version-header",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/_shared/wpfver-back-to-index-shared.md",
+      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-back-to-index-shared",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/archive/release/_shared/wpfver-support-shared.md",
+      "redirect_url": "/vsts/pipelines/archive/release/_shared/wpfver-support-shared",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/agents.md",
+      "redirect_url": "/vsts/pipelines/agents/agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/hosted.md",
+      "redirect_url": "/vsts/pipelines/agents/hosted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/pools-queues.md",
+      "redirect_url": "/vsts/pipelines/agents/pools-queues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/_shared/agent-pools-tab.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/agent-pools-tab",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/_shared/agent-queues-tab.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/agent-queues-tab",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/_shared/hosted-agent-intro.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/hosted-agent-intro",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/agents/_shared/v2/qa-agent-version.md",
+      "redirect_url": "/vsts/pipelines/agents/_shared/v2/qa-agent-version",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/artifacts.md",
+      "redirect_url": "/vsts/pipelines/build/artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/history.md",
+      "redirect_url": "/vsts/pipelines/build/history",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/options.md",
+      "redirect_url": "/vsts/pipelines/build/options",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/repository.md",
+      "redirect_url": "/vsts/pipelines/build/repository",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/triggers.md",
+      "redirect_url": "/vsts/pipelines/build/triggers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/variables.md",
+      "redirect_url": "/vsts/pipelines/build/variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/build-clean-intro.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/build-clean-intro",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/build-clean-variable.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/build-clean-variable",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/label-sources.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/label-sources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-build-artifacts-directory.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/variables-build-artifacts-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-build-sources-directory.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/variables-build-sources-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/build/_shared/variables-invalid-label-characters.md",
+      "redirect_url": "/vsts/pipelines/build/_shared/variables-invalid-label-characters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/artifacts.md",
+      "redirect_url": "/vsts/pipelines/release/artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/env-templates.md",
+      "redirect_url": "/vsts/pipelines/release/env-templates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/environments.md",
+      "redirect_url": "/vsts/pipelines/release/environments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/index.md",
+      "redirect_url": "/vsts/pipelines/release/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/triggers.md",
+      "redirect_url": "/vsts/pipelines/release/triggers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/variables.md",
+      "redirect_url": "/vsts/pipelines/release/variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/what-is-release-management.md",
+      "redirect_url": "/vsts/pipelines/release/what-is-release-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/approvals/approvals.md",
+      "redirect_url": "/vsts/pipelines/release/approvals/approvals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/approvals/gates.md",
+      "redirect_url": "/vsts/pipelines/release/approvals/gates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/approvals/index.md",
+      "redirect_url": "/vsts/pipelines/release/approvals/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md",
+      "redirect_url": "/vsts/pipelines/release/deployment-groups/howto-provision-deployment-group-agents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/index.md",
+      "redirect_url": "/vsts/pipelines/release/deployment-groups/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/azure-stack.md",
+      "redirect_url": "/vsts/pipelines/library/azure-stack",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/government-cloud.md",
+      "redirect_url": "/vsts/pipelines/library/government-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/index.md",
+      "redirect_url": "/vsts/pipelines/library/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/secure-files.md",
+      "redirect_url": "/vsts/pipelines/library/secure-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/service-endpoints.md",
+      "redirect_url": "/vsts/pipelines/library/service-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/task-groups.md",
+      "redirect_url": "/vsts/pipelines/library/task-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/library/variable-groups.md",
+      "redirect_url": "/vsts/pipelines/library/variable-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-tfs.md",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-ts.md",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/policies/permissions.md",
+      "redirect_url": "/vsts/pipelines/policies/permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/policies/retention.md",
+      "redirect_url": "/vsts/pipelines/policies/retention",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/conditions.md",
+      "redirect_url": "/vsts/pipelines/process/conditions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/deployment-group-phases.md",
+      "redirect_url": "/vsts/pipelines/process/deployment-group-phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/multiple-phases.md",
+      "redirect_url": "/vsts/pipelines/process/multiple-phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/phases.md",
+      "redirect_url": "/vsts/pipelines/process/phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/server-phases.md",
+      "redirect_url": "/vsts/pipelines/process/server-phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/tasks.md",
+      "redirect_url": "/vsts/pipelines/process/tasks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/process/_shared/task-run-built-in-conditions.md",
+      "redirect_url": "/vsts/pipelines/process/_shared/task-run-built-in-conditions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/concepts/releases/index.md",
+      "redirect_url": "/vsts/pipelines/release/releases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/index.md",
+      "redirect_url": "/vsts/pipelines/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/overview.md",
+      "redirect_url": "/vsts/pipelines/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/packages/jenkins.md",
+      "redirect_url": "/vsts/pipelines/packages/jenkins",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/packages/maven.md",
+      "redirect_url": "/vsts/pipelines/packages/maven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/packages/npm.md",
+      "redirect_url": "/vsts/pipelines/packages/npm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/packages/nuget-pack-publish.md",
+      "redirect_url": "/vsts/pipelines/packages/nuget-pack-publish",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/packages/nuget-restore.md",
+      "redirect_url": "/vsts/pipelines/packages/nuget-restore",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/symbols/index.md",
+      "redirect_url": "/vsts/pipelines/symbols/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/file-matching-patterns.md",
+      "redirect_url": "/vsts/pipelines/tasks/file-matching-patterns",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/index.md",
+      "redirect_url": "/vsts/pipelines/tasks/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/transforms-variable-substitution.md",
+      "redirect_url": "/vsts/pipelines/tasks/transforms-variable-substitution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/android-build.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/android-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/android-signing.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/android-signing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/ant.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/ant",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/cmake.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/cmake",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/Docker.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/Docker.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/DockerCompose.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/DockerCompose.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/dotnet-core.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/dotnet-core",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/DotNetCoreCLIV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/DotNetCoreCLIV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/Go.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/Go.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/gradle.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/gradle",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/grunt.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/grunt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/gulp.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/gulp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/index-sources-publish-symbols.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/index-sources-publish-symbols",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/jenkins-queue-job.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/jenkins-queue-job",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/maven.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/maven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/msbuild.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/msbuild",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/visual-studio-build.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/visual-studio-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/xamarin-android.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/xamarin-android",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/xamarin-ios.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/xamarin-ios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/xcode-build.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/xcode-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/xcode-package-ios.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/xcode-package-ios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/build/xcode.md",
+      "redirect_url": "/vsts/pipelines/tasks/build/xcode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AppCenterDistribute.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AppCenterDistribute.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/azure-cli.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/azure-file-copy.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-file-copy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/azure-key-vault.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-key-vault",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureAppServiceManage.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureAppServiceManage.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureCloudPowerShellDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureCloudPowerShellDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureMonitorAlerts.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureMonitorAlerts.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureMysqlDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureMysqlDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzurePowerShellV3.3.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzurePowerShellV3.3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureResourceGroupDeploymentV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureResourceGroupDeploymentV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureRmWebAppDeployment.4.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureRmWebAppDeployment.4",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/AzureVmssDeployment.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureVmssDeployment.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/Chef.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/Chef.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/ChefKnife.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/ChefKnife.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/copy-files-over-ssh.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/copy-files-over-ssh",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/HelmDeploy.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/HelmDeploy.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/iis-deploy.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-deploy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/iis-manage.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-manage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/IISWebAppDeploymentOnMachineGroup.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/IISWebAppDeploymentOnMachineGroup.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/IISWebAppManagementOnMachineGroup.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/IISWebAppManagementOnMachineGroup.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/Kubernetes.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/Kubernetes.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/PackerBuild.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/PackerBuild.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/powershell-on-target-machines.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/powershell-on-target-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/service-fabric-compose-deploy.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/service-fabric-compose-deploy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/service-fabric-deploy.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/service-fabric-deploy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/SqlAzureDacpacDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/SqlAzureDacpacDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/SqlDacpacDeploymentOnMachineGroup.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/SqlDacpacDeploymentOnMachineGroup.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/ssh.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/ssh",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/deploy/windows-machine-file-copy.md",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/windows-machine-file-copy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/cocoapods.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/cocoapods",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/conda-environment.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/conda-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/npm.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/npm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/NpmAuthenticate.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/NpmAuthenticate.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/nuget.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/nuget",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/pypi-publisher.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/pypi-publisher",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/prev-versions/nuget-installer-0.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/prev-versions/nuget-installer-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/prev-versions/nuget-packager-0.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/prev-versions/nuget-packager-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/package/prev-versions/nuget-publisher-0.md",
+      "redirect_url": "/vsts/pipelines/tasks/package/prev-versions/nuget-publisher-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/AppCenterTest.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/AppCenterTest.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/cloud-based-load-test.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/cloud-based-load-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/cloud-based-web-performance-test.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/cloud-based-web-performance-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/publish-code-coverage-results.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/publish-code-coverage-results",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/publish-test-results.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/publish-test-results",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/run-functional-tests.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/run-functional-tests",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/RunDistributedTests.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/RunDistributedTests.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/RunJMeterLoadTest.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/RunJMeterLoadTest.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/visual-studio-test-agent-deployment.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/visual-studio-test-agent-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/VsTest.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/VsTest.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/test/xamarin-test-cloud.md",
+      "redirect_url": "/vsts/pipelines/tasks/test/xamarin-test-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/DotNetCoreInstaller.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/DotNetCoreInstaller.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/GoTool.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/GoTool.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/HelmInstaller.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/HelmInstaller.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/java-tool-installer.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/java-tool-installer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/node-js.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/node-js",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/nuget.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/nuget",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/use-python-version.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/use-python-version",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/use-ruby-version.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/use-ruby-version",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/tool/VsTestPlatformToolInstaller.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/tool/VsTestPlatformToolInstaller.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/archive-files.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/archive-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/azure-function.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/azure-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/azure-monitor.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/azure-monitor",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/AzureNLBManagement.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/AzureNLBManagement.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/BashV3.3.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/BashV3.3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/batch-script.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/batch-script",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/command-line.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/command-line",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/copy-and-publish-build-artifacts.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/copy-and-publish-build-artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/copy-files.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/copy-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/curl-upload-files.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/curl-upload-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/DecryptFile.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/DecryptFile.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/delay.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/delay",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/delete-files.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/delete-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/download-secure-file.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/download-secure-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/DownloadBuildArtifacts.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/DownloadBuildArtifacts.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/DownloadPackage.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/DownloadPackage.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/extract-files.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/extract-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/ftp-upload.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/ftp-upload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/http-rest-api.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/http-rest-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/install-apple-certificate.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/install-apple-certificate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/install-apple-provisioning-profile.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/install-apple-provisioning-profile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/InstallSSHKey.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/InstallSSHKey.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/JenkinsDownloadArtifacts.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/JenkinsDownloadArtifacts.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/manual-intervention.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/manual-intervention",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/powershell.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/publish-build-artifacts.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/publish-build-artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/publish-to-azure-service-bus.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/publish-to-azure-service-bus",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/PythonScriptV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/PythonScriptV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/service-fabric-powershell.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/service-fabric-powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/service-fabric-versioning.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/service-fabric-versioning",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/shell-script.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/shell-script",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/work-item-query.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/work-item-query",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/utility/xamarin-license.md",
+      "redirect_url": "/vsts/pipelines/tasks/utility/xamarin-license",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/build-step-common-qa.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/build-step-common-qa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/control-options-arguments-md.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/control-options-arguments-md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/control-options-arguments.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/control-options-arguments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/deploy-winrm-setup.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/deploy-winrm-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/msbuild_architecture_arg.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_architecture_arg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/msbuild_args.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_args",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/msbuild_qa.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_qa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/msbuild_record_project_details_arg.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_record_project_details_arg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/nuget-create-step-examples.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-create-step-examples",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/nuget-step-arguments.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-step-arguments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/nuget-step-qa.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/nuget-step-qa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/qa-minimatch.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-minimatch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/qa-test-azurerg-machine-group.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-azurerg-machine-group",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/qa-test-customize-code-coverage.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-customize-code-coverage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/qa-test-run-settings-file.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-run-settings-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/qa-test-submit-feedback.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/qa-test-submit-feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AndroidSigning.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AndroidSigning.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ANT.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ANT.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AppCenterDistributeV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AppCenterDistributeV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AppCenterTestV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AppCenterTestV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ArchiveFilesV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ArchiveFilesV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureAppServiceManage.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureAppServiceManage.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureCLIV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureCLIV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureCloudPowerShellDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureCloudPowerShellDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFileCopyV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFileCopyV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFileCopyV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFileCopyV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureFunctionV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureFunctionV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureKeyVault.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureKeyVault.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMonitorAlertsV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMonitorAlertsV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMonitorV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMonitorV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureMysqlDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureMysqlDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureNLBManagementV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureNLBManagementV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzurePowerShellV3.3.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzurePowerShellV3.3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureResourceGroupDeploymentV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureResourceGroupDeploymentV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureRmWebAppDeployment.4.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureRmWebAppDeployment.4",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/AzureVmssDeploymentV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/AzureVmssDeploymentV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/BashV3.3.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/BashV3.3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/BatchScriptV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/BatchScriptV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ChefKnifeV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ChefKnifeV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ChefV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ChefV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CMakeV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CMakeV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CmdLineV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CmdLineV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CocoaPodsV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CocoaPodsV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CondaEnvironmentV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CondaEnvironmentV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CopyFilesOverSSHV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CopyFilesOverSSHV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CopyFilesV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CopyFilesV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/CUrlUploaderV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/CUrlUploaderV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DecryptFileV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DecryptFileV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DelayV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DelayV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DeleteFilesV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DeleteFilesV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DeployVisualStudioTestAgentV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DeployVisualStudioTestAgentV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Docker.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Docker.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DockerCompose.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DockerCompose.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DotNetCoreCLIV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DotNetCoreCLIV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DotNetCoreInstallerV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DotNetCoreInstallerV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadBuildArtifacts.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadBuildArtifacts.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadPackageV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadPackageV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/DownloadSecureFileV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/DownloadSecureFileV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ExtractFilesV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ExtractFilesV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/FtpUploadV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/FtpUploadV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Go.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Go.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/GoTool.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GoTool.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Gradle.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Gradle.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/GruntV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GruntV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/GulpV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/GulpV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/HelmDeployV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/HelmDeployV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/HelmInstallerV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/HelmInstallerV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/IISWebAppDeploymentOnMachineGroup.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/IISWebAppDeploymentOnMachineGroup.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/IISWebAppManagementOnMachineGroupV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/IISWebAppManagementOnMachineGroupV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/InstallAppleCertificateV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallAppleCertificateV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/InstallAppleProvisioningProfileV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallAppleProvisioningProfileV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/InstallSSHKeyV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InstallSSHKeyV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/InvokeRestApiV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/InvokeRestApiV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/JavaToolInstallerV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JavaToolInstallerV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/JenkinsDownloadArtifacts.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JenkinsDownloadArtifacts.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/JenkinsQueueJobV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/JenkinsQueueJobV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Kubernetes.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Kubernetes.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ManualInterventionV8.8.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ManualInterventionV8.8",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Maven.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Maven.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/MSBuildV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/MSBuildV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NodeToolV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NodeToolV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NpmAuthenticateV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NpmAuthenticateV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NpmV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NpmV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetCommandV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetCommandV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetPackagerV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetPackagerV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetPublisherV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetPublisherV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetToolInstallerV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetToolInstallerV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/NuGetV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/NuGetV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PackerBuildV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PackerBuildV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellOnTargetMachinesV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellOnTargetMachinesV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PublishBuildArtifacts.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishBuildArtifacts.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PublishCodeCoverageResultsV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishCodeCoverageResultsV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PublishSymbols.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishSymbols.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PublishTestResults.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishTestResults.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PublishToAzureServiceBusV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PublishToAzureServiceBusV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PyPIPublisherV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PyPIPublisherV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/PythonScriptV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PythonScriptV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/QueryWorkItemsV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/QueryWorkItemsV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/QuickPerfTestV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/QuickPerfTestV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/RunDistributedTestsV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunDistributedTestsV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/RunJMeterLoadTestV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunJMeterLoadTestV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/RunLoadTestV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/RunLoadTestV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricComposeDeploy.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricComposeDeploy.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricDeploy.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricDeploy.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricPowerShell.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricPowerShell.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/ServiceFabricUpdateManifestsV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/ServiceFabricUpdateManifestsV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/SqlAzureDacpacDeployment.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SqlAzureDacpacDeployment.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/SshV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/SshV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/UsePythonVersionV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/UsePythonVersionV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/UseRubyVersionV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/UseRubyVersionV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/VSBuildV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VSBuildV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/VsTest.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VsTest.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/VsTestPlatformToolInstallerV1.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/VsTestPlatformToolInstallerV1.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/WindowsMachineFileCopyV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/WindowsMachineFileCopyV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinAndroid.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinAndroid.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinComponentRestoreV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinComponentRestoreV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/XamariniOSV2.2.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamariniOSV2.2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/XamarinTestCloud.1.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XamarinTestCloud.1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/Xcode.5.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/Xcode.5",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/tasks/_shared/yaml/XcodePackageiOSV0.0.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/XcodePackageiOSV0.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/associate-automated-results-with-requirements.md",
+      "redirect_url": "/vsts/pipelines/test/associate-automated-results-with-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/associate-automated-test-with-test-case.md",
+      "redirect_url": "/vsts/pipelines/test/associate-automated-test-with-test-case",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
+      "redirect_url": "/vsts/pipelines/test/collect-screenshots-and-video",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/continuous-test-java.md",
+      "redirect_url": "/vsts/pipelines/test/continuous-test-java",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/continuous-test-selenium.md",
+      "redirect_url": "/vsts/pipelines/test/continuous-test-selenium",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/example-continuous-testing.md",
+      "redirect_url": "/vsts/pipelines/test/example-continuous-testing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/getting-started-with-continuous-testing.md",
+      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/index.md",
+      "redirect_url": "/vsts/pipelines/test/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/overview.md",
+      "redirect_url": "/vsts/pipelines/test/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/reference-qa.md",
+      "redirect_url": "/vsts/pipelines/test/reference-qa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/review-continuous-test-results-after-build.md",
+      "redirect_url": "/vsts/pipelines/test/review-continuous-test-results-after-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/run-automated-tests-from-test-hub.md",
+      "redirect_url": "/vsts/pipelines/test/run-automated-tests-from-test-hub",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/run-automated-tests-with-microsoft-test-manager.md",
+      "redirect_url": "/vsts/pipelines/test/run-automated-tests-with-microsoft-test-manager",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/run-tests-in-parallel.md",
+      "redirect_url": "/vsts/pipelines/test/run-tests-in-parallel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/set-up-continuous-test-environments-builds.md",
+      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/set-up-continuous-testing-builds.md",
+      "redirect_url": "/vsts/pipelines/test/set-up-continuous-testing-builds",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/test-build.md",
+      "redirect_url": "/vsts/pipelines/test/test-build",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/test-impact-analysis.md",
+      "redirect_url": "/vsts/pipelines/test/test-impact-analysis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/test-with-unified-agent-and-phases.md",
+      "redirect_url": "/vsts/pipelines/test/test-with-unified-agent-and-phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/_shared/help-and-support-footer.md",
+      "redirect_url": "/vsts/pipelines/test/_shared/help-and-support-footer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/_shared/paralleltest-maxcpucount.md",
+      "redirect_url": "/vsts/pipelines/test/_shared/paralleltest-maxcpucount",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/_shared/paralleltest-runsettingsmerge.md",
+      "redirect_url": "/vsts/pipelines/test/_shared/paralleltest-runsettingsmerge",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/_shared/version-header-ts-tfs.md",
+      "redirect_url": "/vsts/pipelines/test/_shared/version-header-ts-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/test/_shared/version-header-vs-vsts-tfs.md",
+      "redirect_url": "/vsts/pipelines/test/_shared/version-header-vs-vsts-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/virtual-networks/create-virtual-network.md",
+      "redirect_url": "/vsts/pipelines/targets/create-virtual-network",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/actions/virtual-networks/manage-vms-using-scvmm.md",
+      "redirect_url": "/vsts/pipelines/targets/manage-vms-using-scvmm",
+      "redirect_document_id": true
+    }
+  ]
 }
-

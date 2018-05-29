@@ -52,7 +52,7 @@ When discussions about work items or pull requests include several people&#8212;
 
 ### Use VSTS as a symbol server
 
-VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/build-release/symbols/) for more information.
+VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/pipelines/symbols/) for more information.
 
 This feature was prioritized based on a top [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
 

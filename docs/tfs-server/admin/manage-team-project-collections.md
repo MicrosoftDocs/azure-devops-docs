@@ -368,7 +368,7 @@ In addition, the following objects are managed at the collection level:
     project collections.
 
 -   **Dev-Test-Ops**: 
- -   TFS 2015: [Agent queues](../../build-release/concepts/agents/pools-queues.md)
+ -   TFS 2015: [Agent queues](../../pipelines/agents/pools-queues.md)
  -   TFS 2013: [XAML build controllers](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)
 
 -   **Security**: [Collection-level groups and permissions](../../security/permissions.md).

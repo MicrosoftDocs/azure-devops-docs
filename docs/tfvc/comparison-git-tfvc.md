@@ -167,7 +167,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Builds (automated by TFBuild)</td>
-<td>You can use all [TFBuild](../build-release/overview.md) capabilities to build any combination of content you want within the team project collection.</td>
+<td>You can use all [TFBuild](../pipelines/overview.md) capabilities to build any combination of content you want within the team project collection.</td>
 <td>You can use most TFBuild capabilities to build one team project at a time, and one or more repositories at a time.
 </td>
 </tr>

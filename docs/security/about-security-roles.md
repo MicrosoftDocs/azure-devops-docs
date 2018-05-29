@@ -26,7 +26,7 @@ Many role-based permissions can be set for all artifacts of a specific type in a
 <!---
 You manage the security for the following artifacts and features by adding a user or group to the roles which are described in the following sections. 
 
-[Agent queues](../build-release/set-permissions.md)<br/>- [Agent pools](../build-release/set-permissions.md)<br/>- [Deployment groups](../build-release/set-permissions.md#deployment-group)<br/>- [Deployment pools](../build-release/set-permissions.md#deployment-group) - [Secure files](../build-release/set-permissions.md#library)<br/>- [Service endpoints](../build-release/set-permissions.md)<br/>- [Variable groups](../build-release/set-permissions.md#library)
+[Agent queues](../pipelines/set-permissions.md)<br/>- [Agent pools](../pipelines/set-permissions.md)<br/>- [Deployment groups](../pipelines/set-permissions.md#deployment-group)<br/>- [Deployment pools](../pipelines/set-permissions.md#deployment-group) - [Secure files](../pipelines/set-permissions.md#library)<br/>- [Service endpoints](../pipelines/set-permissions.md)<br/>- [Variable groups](../pipelines/set-permissions.md#library)
 
  
 ##Default role assignments
@@ -36,37 +36,37 @@ By default, all contributors in a team project are members of the User role on e
 
 ## Agent queue security roles
 
-You [add users to the following security roles](../build-release/set-permissions.md) from the project-level admin context, **Agent Queues** page. For information on adding and managing agent queues, see  [Agent pools and queues](../build-release/concepts/agents/pools-queues.md).    
+You [add users to the following security roles](../pipelines/set-permissions.md) from the project-level admin context, **Agent Queues** page. For information on adding and managing agent queues, see  [Agent pools and queues](../pipelines/agents/pools-queues.md).    
 
 [!INCLUDE [temp](_shared/agent-queue-roles.md)]
 
 ## Agent pool security roles
 
-You [add users to the following security roles](../build-release/set-permissions.md) from the collection-level admin context, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools and queues](../build-release/concepts/agents/pools-queues.md). 
+You [add users to the following security roles](../pipelines/set-permissions.md) from the collection-level admin context, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools and queues](../pipelines/agents/pools-queues.md). 
 
 [!INCLUDE [temp](_shared/agent-pool-roles.md)]
 
 ## Deployment group security roles
 
-You [add users to the following roles](../build-release/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/vsts/build-release/concepts/definitions/release/deployment-groups). 
+You [add users to the following roles](../pipelines/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/vsts/pipelines/release/deployment-groups). 
 
 [!INCLUDE [temp](_shared/deployment-group-roles.md)]
 
 ## Deployment pool security roles
 
-You [add users to the following roles](../build-release/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/build-release/concepts/definitions/release/deployment-groups).   
+You [add users to the following roles](../pipelines/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
 
 [!INCLUDE [temp](_shared/deployment-pool-roles.md)]
 
 ## Library asset security roles: Variable groups and secure files
 
-You [add users to a library role](../build-release/set-permissions.md#library) from the user context, **Build and Release** hub. To learn more about using these library assets, see [Variable groups](../build-release/concepts/library/variable-groups.md) and [Secure files](../build-release/concepts/library/secure-files.md)
+You [add users to a library role](../pipelines/set-permissions.md#library) from the user context, **Build and Release** hub. To learn more about using these library assets, see [Variable groups](../pipelines/library/variable-groups.md) and [Secure files](../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](_shared/library-roles.md)]
 
 ## Service endpoint security roles
 
-You [add users to the following roles](../build-release/set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../build-release/concepts/library/service-endpoints.md).
+You [add users to the following roles](../pipelines/set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../pipelines/library/service-endpoints.md).
 
 [!INCLUDE [temp](_shared/service-endpoint-roles.md)]
 
