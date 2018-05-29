@@ -4842,7 +4842,7 @@
     },
     {
       "source_path": "docs/security/set-build-release-permissions.md",
-      "redirect_url": "/vsts/pipelines/set-permissions",
+      "redirect_url": "/vsts/pipelines/policies/set-permissions",
       "redirect_document_id": false
     },
     {
@@ -7328,6 +7328,11 @@
     {
       "source_path": "docs/build-release/actions/define-multistage-release-process.md",
       "redirect_url": "/vsts/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/set-permissions.md",
+      "redirect_url": "/vsts/pipelines/policies/set-permissions",
       "redirect_document_id": true
     }
   ]
