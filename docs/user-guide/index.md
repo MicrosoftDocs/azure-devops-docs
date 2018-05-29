@@ -32,7 +32,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 - [Sign up and invite some teammates](sign-up-invite-teammates.md)  
 - [Code with Git](code-with-git.md)
-- [Set up continuous integration & delivery](../build-release/actions/ci-cd-part-1.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Plan & track work](plan-track-work.md)
 
 

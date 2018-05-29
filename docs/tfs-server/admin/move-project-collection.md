@@ -259,7 +259,7 @@ Once the deployment groups are set up, you can register the agents with the new 
 
 ### To setup deployment groups after moving the collection
 
-Refer to  [Create Deployment Groups](https://docs.microsoft.com/en-us/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
+Refer to  [Create Deployment Groups](https://docs.microsoft.com/en-us/vsts/pipelines/release/deployment-groups/#create-a-deployment-group).
 
 ### Q: How do I move a team project collection that includes Lab Management?
 
