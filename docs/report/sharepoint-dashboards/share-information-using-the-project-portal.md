@@ -2,7 +2,7 @@
 title: Share information using the project portal 
 titleSuffix: TFS
 description: Use the SharePoint project portal to share information with your team 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: douge

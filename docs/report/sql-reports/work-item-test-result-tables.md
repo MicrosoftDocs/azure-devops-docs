@@ -1,7 +1,7 @@
 ---
 title: Work Item Test Result tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Test Result tables to query for data about work items that are linked to test results.

@@ -2,7 +2,7 @@
 title: Code Churn Excel Report  
 description: Understand how many lines of code the team added, deleted, or modified during the most recent four weeks - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 753f0afd-3852-4724-ae3e-a1644f304e00

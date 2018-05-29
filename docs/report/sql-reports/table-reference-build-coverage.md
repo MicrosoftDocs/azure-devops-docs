@@ -1,7 +1,7 @@
 ---
 title: Build Coverage tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.

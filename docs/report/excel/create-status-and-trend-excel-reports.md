@@ -3,7 +3,7 @@ title: Create Excel reports from a work item query
 description: View progress by creating status and trend Excel charts from a flat list query when connecting to a team project on Team Foundation Server    
 ms.assetid: EBBA2C3A-A9F4-4808-B746-5DC0F039EA53  
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge

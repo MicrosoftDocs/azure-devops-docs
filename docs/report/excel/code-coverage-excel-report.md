@@ -2,7 +2,7 @@
 title: Code Coverage Excel Report 
 description: Understand how to use this report to help determine how close parts of the code are to release quality - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bf316d3c-5d74-42d4-90f1-bb411b0bf13d
