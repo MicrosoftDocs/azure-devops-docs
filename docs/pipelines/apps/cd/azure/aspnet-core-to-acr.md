@@ -83,4 +83,4 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 ## Next Steps    
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see this tutorial:
 
-* [Customize CD process](../../../actions/define-multistage-release-process.md)
+* [Customize CD process](../../../release/define-multistage-release-process.md)

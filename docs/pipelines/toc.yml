@@ -77,13 +77,13 @@
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
-    href: actions/ci-build-git.md
+    href: build/ci-build-git.md
   - name: CI builds for GitHub repo
-    href: actions/ci-build-github.md
+    href: build/ci-build-github.md
   - name: Set up multi-stage release
-    href: actions/define-multistage-release-process.md
+    href: release/define-multistage-release-process.md
   - name: Use approvals and gates
-    href: actions/deploy-using-approvals.md
+    href: release/deploy-using-approvals.md
   - name: Azure DevOps Project for GitHub
     href: actions/azure-devops-project-github.md
   - name: Azure DevOps Project for VMs
@@ -95,9 +95,9 @@
   - name: Azure DevOps Project with Service Fabric
     href: actions/azure-devops-project-servicefabric.md
   - name: Jenkins CI for VSTS Azure CD
-    href: actions/integrate-jenkins-vsts-cicd.md
+    href: release/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS
-    href: actions/integrate-jenkins-vsts-aks.md
+    href: release/integrate-jenkins-vsts-aks.md
   - name: Test your app
     href: test/example-continuous-testing.md
 - name: Concepts
@@ -282,7 +282,7 @@
   - name: Migrate
     items:
     - name: Migrate from XAML builds
-      href: actions/migrate-from-xaml-builds.md
+      href: build/migrate-from-xaml-builds.md
     - name: Migrate from Lab Management
       href: targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
@@ -292,11 +292,11 @@
 - name: Troubleshooting
   items:
   - name: Troubleshoot build and release
-    href: actions/troubleshooting.md
+    href: troubleshooting.md
   - name: Debug deployment issues
     href: release/variables.md#debug-mode
   - name: Troubleshoot Azure connections
-    href: actions/azure-rm-endpoint.md
+    href: release/azure-rm-endpoint.md
 - name: Reference
   href: tasks/index.md
   items:

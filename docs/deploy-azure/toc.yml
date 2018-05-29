@@ -43,7 +43,7 @@
     - name: DevOps Project for Service Fabric
       href: /vsts/pipelines/actions/azure-devops-project-servicefabric?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Set up multi-stage release
-    href: /vsts/pipelines/actions/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    href: /vsts/pipelines/release/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: CI builds for Git in VSTS
     href: /vsts/pipelines/actions/ci-build-git?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Deploy apps to Azure App Service with VSTS and CI/CD

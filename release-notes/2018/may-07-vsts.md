@@ -10,8 +10,9 @@ The **Sprint 134 Update** of Visual Studio Team Services (VSTS) brings better su
 
 A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also available to make it easy to demo and learn VSTS using a rich set of sample data and configuration.
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/PdK20jBqaPM?rel=0]
 
 ## Features
 
@@ -175,7 +176,7 @@ The [Demo Generator](https://vstsdemogenerator.azurewebsites.net/) helps you cre
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 
-Check out the [documentation](https://github.com/Microsoft/almvm/tree/master/labs/vsts/VSTSDemoGenerator) for step-by-step instructions for using the Generator.
+Check out the [documentation](https://docs.microsoft.com/vsts/demo-gen) for step-by-step instructions for using the Generator.
 
 ## Next steps and Feedback
 
