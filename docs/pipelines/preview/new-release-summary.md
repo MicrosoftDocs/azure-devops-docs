@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 A new and fully redesigned user experience is available for release progress in VSTS.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
-or from the [user profile **Previews** panel](../../../collaborate/preview-features.md#enable-features-for-your-use).
+or from the [user profile **Previews** panel](../../collaborate/preview-features.md#enable-features-for-your-use).
 
 Open the new progress view using the **Release (pipeline view)** link in the toolbar.
 
@@ -193,4 +193,4 @@ contribution point (the release environment editor tab):
 
 [Download the sample extension code](https://github.com/ankitk94/vsts-environment-tab-extension).
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
