@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 08/11/2016
 ---
@@ -61,7 +62,7 @@ Either choose the context menu for the item that you want to remove and select U
 ##Related notes
 
 - [Define queries](../../work/track/using-queries.md) 
-- [Define builds](../../build-release/overview.md) 
+- [Define builds](../../pipelines/overview.md) 
 - [Test charts](../../manual-test/getting-started/track-test-status.md) 
 
 

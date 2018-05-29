@@ -53,7 +53,7 @@ When you check in changes, you should associate such work items with the changes
 
 -   A team member who looks at the work item can [link directly to the changeset](../work/track/link-work-items-support-traceability.md) to see the work that you did.
 -   A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
--   If you build your changes in your automated build system (for example with a [CI Build](../build-release/concepts/definitions/build/triggers.md) or a [Gated Check-in Build](../build-release/concepts/definitions/build/repository.md) your team members can see in which completed build the task was completed or the bug was fixed.
+-   If you build your changes in your automated build system (for example with a [CI Build](../pipelines/build/triggers.md) or a [Gated Check-in Build](../pipelines/build/repository.md) your team members can see in which completed build the task was completed or the bug was fixed.
 
 To associate work items with your check-in:
 
@@ -93,7 +93,7 @@ In the **Reason** box, explain why you chose to override the policy.
 ### Check in changes to a folder that is controlled by a gated check-in build process
 
  ![Gated Check-in dialog box](_img/check-your-work-team-codebase/IC572351.png)
-If you are checking in changes into version control folders that are controlled by a [gated check-in build process](../build-release/concepts/definitions/build/repository.md), the **Gated Check-in** dialog box appears. For information about how to complete your check-in operation, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
+If you are checking in changes into version control folders that are controlled by a [gated check-in build process](../pipelines/build/repository.md), the **Gated Check-in** dialog box appears. For information about how to complete your check-in operation, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
 
 ## Subscribe to alerts
 

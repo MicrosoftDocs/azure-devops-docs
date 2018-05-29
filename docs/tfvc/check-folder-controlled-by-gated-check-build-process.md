@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-When you check in files to a version control folder that is controlled by a [gated check-in build process](../build-release/concepts/definitions/build/triggers.md), there are some additional steps that you must take to complete the check-in.
+When you check in files to a version control folder that is controlled by a [gated check-in build process](../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 
 ![](_img/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 **Required permissions**
@@ -42,7 +42,7 @@ If the **Gated Check-in** dialog box appears during your check-in, then your cha
 
     -   **Cancel the check-in operation and continue working**: If you do not want to try building your changes yet, choose **Cancel**, and then when the system asks you if you want to delete the shelveset, choose **Yes**.
 
-    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../build-release/actions/ci-cd-part-1.md).
+    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../pipelines/get-started-designer.md).
 
     -   **Proceed with the check-in operation while keeping your changes in your workspace**: To proceed with the check-in operation and continue working with your changes, see [Proceed with the Gated Check-in after Keeping the Changes in Your Workspace](check-folder-controlled-by-gated-check-build-process.md#proceed_and_keep_changes).
 
@@ -106,7 +106,7 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
 #### Other Resources
 
- [Use a gated check-in build process to validate changes](../build-release/concepts/definitions/build/triggers.md) 
+ [Use a gated check-in build process to validate changes](../pipelines/build/triggers.md) 
 
  [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411) 
 

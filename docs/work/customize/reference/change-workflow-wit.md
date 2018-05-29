@@ -5,7 +5,8 @@ description: Add States, Transitions, Reasons, or Actions to customize the workf
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 ms.date: 03/31/2017
@@ -27,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > [!NOTE]  
 > This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../../work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../../backlogs/bulk-modify-work-items.md).
 > 
-> For information about build definition workflows, see [Get started with CI/CD](../../../build-release/actions/ci-cd-part-1.md).
+> For information about build definition workflows, see [Get started with CI/CD](../../../pipelines/get-started-designer.md).
 
 
 [!INCLUDE [temp](../../_shared/update-xml-wit.md)] 

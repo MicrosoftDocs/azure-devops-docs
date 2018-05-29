@@ -7,7 +7,8 @@ ms.technology: devops-collab
 ms.topic: reference
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/18/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -145,7 +146,7 @@ Use these shortcuts when working in Team Explorer.
 <td width="56%">
 <p>**Navigate**</p> 
 **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  
-**Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](../build-release/overview.md)  
+**Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](../pipelines/overview.md)  
 **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../user-guide/connect-team-projects.md)  
 **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](../report/sharepoint-dashboards/share-information-using-the-project-portal.md)  
 **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../git/gitquickstart.md)   

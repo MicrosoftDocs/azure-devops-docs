@@ -7,7 +7,8 @@ ms.topic: reference
 description: Query for data about builds, such as the status and quality.
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
@@ -41,4 +42,4 @@ For information about the measures and dimensions that are associated with these
 -  [Build Success Over Time](build-success-over-time-report.md)   
 -  [Build Summary](build-summary-report.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build-release/overview.md) 
+- [Continuous integration on any platform](../../pipelines/overview.md) 

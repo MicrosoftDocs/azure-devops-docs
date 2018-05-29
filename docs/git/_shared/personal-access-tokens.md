@@ -32,7 +32,7 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 0.  Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes)
 that this token will authorize for **your specific tasks**.
 
-	For example, to create a token to enable a [build and release agent](../../build-release/concepts/agents/agents.md) to authenticate to VSTS or TFS, 
+	For example, to create a token to enable a [build and release agent](../../pipelines/agents/agents.md) to authenticate to VSTS or TFS, 
 	limit your token's scope to **Agent Pools (read, manage)**. 
 
    <!-- <img alt="Select scopes for this token" src="./_img/select-personal-access-token-scopes.png" style="border: 1px solid #CCCCCC" />  -->
