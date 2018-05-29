@@ -2,7 +2,7 @@
 title: Reporting Services Reports
 titleSuffix: TFS
 description: Overview of the reports provided through SQL Server Reports for  Team Foundation Server
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de

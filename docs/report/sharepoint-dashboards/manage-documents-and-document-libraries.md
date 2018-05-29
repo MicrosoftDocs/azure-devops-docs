@@ -2,7 +2,7 @@
 title: Manage documents and document libraries 
 titleSuffix: TFS
 description: Create documents libraries and share to all team members by uploading them to the project portal for the team project - Team Foundation Server 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: douge

@@ -3,7 +3,7 @@ title: Grant permissions to view or create reports
 titleSuffix: TFS
 description: Grant permissions to view or create SQL Server reports configured to support Team Foundation Server
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge

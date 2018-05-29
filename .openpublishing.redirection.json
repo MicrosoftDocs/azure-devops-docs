@@ -4842,7 +4842,7 @@
     },
     {
       "source_path": "docs/security/set-build-release-permissions.md",
-      "redirect_url": "/vsts/pipelines/set-permissions",
+      "redirect_url": "/vsts/pipelines/policies/set-permissions",
       "redirect_document_id": false
     },
     {
@@ -5307,12 +5307,12 @@
     },
     {
       "source_path": "docs/build-release/archive/preview/new-release-landing-page.md",
-      "redirect_url": "/vsts/pipelines/archive/preview/new-release-landing-page",
+      "redirect_url": "/vsts/pipelines/preview/new-release-landing-page",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/archive/preview/new-release-summary.md",
-      "redirect_url": "/vsts/pipelines/archive/preview/new-release-summary",
+      "redirect_url": "/vsts/pipelines/preview/new-release-summary",
       "redirect_document_id": true
     },
     {
@@ -7328,6 +7328,11 @@
     {
       "source_path": "docs/build-release/actions/define-multistage-release-process.md",
       "redirect_url": "/vsts/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/build-release/set-permissions.md",
+      "redirect_url": "/vsts/pipelines/policies/set-permissions",
       "redirect_document_id": true
     }
   ]

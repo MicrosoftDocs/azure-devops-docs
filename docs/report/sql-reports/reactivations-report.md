@@ -1,7 +1,7 @@
 ---
 title: Reactivations Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determines how effectively the team is fixing bugs.

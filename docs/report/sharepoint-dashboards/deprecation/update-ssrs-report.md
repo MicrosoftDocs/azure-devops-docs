@@ -2,7 +2,7 @@
 title: Update SSRS Report
 titleSuffix: TFS
 description: TFS SharePoint integration - Update an SSRS Report on a SharePoint site
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge

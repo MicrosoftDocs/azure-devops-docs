@@ -91,7 +91,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
-- [Build & Release](../pipelines/set-permissions.md)  
+- [Build & Release](../pipelines/policies/set-permissions.md)  
 - [Git](../security/set-git-tfvc-repository-permissions.md)  
 - [TFVC](../security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
@@ -2315,9 +2315,9 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Git branches](../git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Build](../pipelines/set-permissions.md)</li>
+<li>[Build](../pipelines/policies/set-permissions.md)</li>
 <li>[Test](../security/set-project-collection-level-permissions.md))</li>
-<li>[Release](../pipelines/set-permissions.md)</li>
+<li>[Release](../pipelines/policies/set-permissions.md)</li>
 </ul>
 <br/>
 

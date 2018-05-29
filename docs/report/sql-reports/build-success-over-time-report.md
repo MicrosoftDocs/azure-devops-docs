@@ -1,7 +1,7 @@
 ---
 title: Build Success Over Time Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Displays the status of the last build for each build category run for each day - Team Foundation Server  
