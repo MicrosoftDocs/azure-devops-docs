@@ -5,8 +5,10 @@ description: Grant or restrict access to build-release, library, task group, and
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: conceptual
 ms.manager: douge
 ms.author: alewis
+author: andyjlewis
 ms.date: 02/12/18
 monikerRange: '>= tfs-2013'
 ---
