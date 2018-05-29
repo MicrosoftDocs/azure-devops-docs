@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Build and Release** hub of the web portal, either from the user or admin context. 
 
-This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](../set-permissions.md).
+This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](set-permissions.md).
 
 For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../security/about-security-roles.md).
 
@@ -169,19 +169,19 @@ Permissions for library artifacts, such as variable groups and secure files, are
 
 ## Service endpoint security roles
 
-You [add users to the following roles](../set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../library/service-endpoints.md).   
+You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../library/service-endpoints.md).   
 
 [!INCLUDE [temp](../../security/_shared/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
-You [add users to the following roles](../set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
+You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
 
 [!INCLUDE [temp](../../security/_shared/deployment-pool-roles.md)]
 
 
 ## Related notes 
 
-- [Set build and release permissions](../set-permissions.md)
+- [Set build and release permissions](set-permissions.md)
 - [Default permissions and access](../../security/permissions-access.md) 
 - [Permissions and groups reference](../../security/permissions.md) 
