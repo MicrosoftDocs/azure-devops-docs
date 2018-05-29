@@ -126,7 +126,7 @@ about the evaluation of all the gates you configured for the release.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../../tasks/utility/manual-intervention.md)
-* [Use approvals and gates to control your deployment](../../actions/deploy-using-approvals.md)
+* [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
 
@@ -134,7 +134,7 @@ about the evaluation of all the gates you configured for the release.
 
 * [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
-* [Tutorial: Use approvals and gates to control your deployment](../../actions/deploy-using-approvals.md)
+* [Tutorial: Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 

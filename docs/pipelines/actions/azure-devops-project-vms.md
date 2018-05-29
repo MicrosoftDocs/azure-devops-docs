@@ -179,4 +179,4 @@ You can optionally modify these build and release definitions to meet the needs 
 To learn more about the VSTS pipeline see this tutorial:
 
 > [!div class="nextstepaction"]
-> [Customize CD process](define-multistage-release-process.md)
+> [Customize CD process](../release/define-multistage-release-process.md)

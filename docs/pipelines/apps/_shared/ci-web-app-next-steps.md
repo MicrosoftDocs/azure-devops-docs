@@ -10,4 +10,4 @@ You've just put your own CI process in place to automatically build and validate
 
 You can also modify this build definition to meet the needs of your team. To learn more see one of these topics:
 
-* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
+* [CI builds for Git in VSTS](../../build/ci-build-git.md)

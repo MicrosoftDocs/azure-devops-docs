@@ -50,8 +50,8 @@ Learn how to build your app and deploy it to your choice of Azure service.
 * [Azure DevOps Project for SQL Database](../pipelines/actions/azure-devops-project-sqldb.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Azure DevOps Project for AKS](../pipelines/actions/azure-devops-project-aks.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Azure DevOps Project for Service Fabric](../pipelines/actions/azure-devops-project-servicefabric.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [Set up multi-stage release](../pipelines/actions/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [CI builds for Git in VSTS](../pipelines/actions/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [Set up multi-stage release](../pipelines/release/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [CI builds for Git in VSTS](../pipelines/build/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Deploy apps to Azure App Service with VSTS and CI/CD](https://docs.microsoft.com/learn/deploy-apps-to-azure/index)
 
 ## Videos
@@ -74,6 +74,6 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ::: moniker range="tfs-2013"
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../pipelines/actions/migrate-from-xaml-builds.md).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](../pipelines/build/migrate-from-xaml-builds.md).
 
 ::: moniker-end

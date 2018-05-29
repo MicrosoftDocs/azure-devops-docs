@@ -110,7 +110,7 @@
     - name: Configure branch policy for an external service
       href: how-to/pr-status-policy.md
   - name: Define a CI build for your repo
-    href: ../pipelines/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../pipelines/build/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Import a repo from TFVC

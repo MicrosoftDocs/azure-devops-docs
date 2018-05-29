@@ -373,6 +373,6 @@ See [Build and push a Docker image](../containers/build.md).
 
 Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
 
-* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
+* [CI builds for Git in VSTS](../../build/ci-build-git.md)
 
-* [CI builds for GitHub](../../actions/ci-build-github.md)
+* [CI builds for GitHub](../../build/ci-build-github.md)
