@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 A new and fully redesigned user experience is available for release landing page in VSTS.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
-or from the [user profile **Previews** panel](../../../collaborate/preview-features.md#enable-features-for-your-use).
+or from the [user profile **Previews** panel](../../collaborate/preview-features.md#enable-features-for-your-use).
 
 ## Highlights
 
@@ -65,4 +65,4 @@ Use the drop-down menu to create a release or work with the selected definition.
 
 Because this is currently a preview, expect to see changes to the features and layout as development of the page continues. 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
