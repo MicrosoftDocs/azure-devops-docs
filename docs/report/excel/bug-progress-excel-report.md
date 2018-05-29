@@ -2,7 +2,7 @@
 title: Bug Progress Excel Report  
 description: Tracks the team's progress toward resolving Bugs - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 471fb90b-9815-4d26-aa01-7ee293682717

@@ -2,7 +2,7 @@
 title: Bugs dashboard (Agile and CMMI) 
 titleSuffix: TFS
 description: Monitor Bug activity for a team project by using the Bugs dashboard - Team Foundation Server  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ecd05065-521c-451f-acd9-efde10fa1822

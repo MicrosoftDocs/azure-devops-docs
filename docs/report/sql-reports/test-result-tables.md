@@ -1,7 +1,7 @@
 ---
 title: Test Result tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about test results 

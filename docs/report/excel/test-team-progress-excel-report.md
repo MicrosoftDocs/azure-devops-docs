@@ -2,7 +2,7 @@
 title: Test Team Progress Excel Report  
 description: Monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: a7c04739-72c4-4bb9-b857-adb312d50d87

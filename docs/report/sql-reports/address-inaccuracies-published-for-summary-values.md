@@ -1,7 +1,7 @@
 ---
 title: Address inaccuracies published for summary values 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: troubleshooting
 description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
