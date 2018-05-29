@@ -42,7 +42,7 @@ Finally, save your build.
 
 ## Publish a package
 
-To publisn an npm package to a Package Management feed, add the **npm** task. 
+To publish an npm package to a Package Management feed, add the **npm** task. 
 
 First, click **Add build step...**, select the **Package** category, and add the
 **npm** task. Then drag to order the task above any build tasks that require 

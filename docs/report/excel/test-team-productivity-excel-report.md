@@ -2,7 +2,7 @@
 title: Test Team Productivity Excel Report 
 description: Track the overall activity of the team and individual team members in testing the product and finding and reporting bugs.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cd899058-1200-4b1f-8fb2-4cecec8b0c05

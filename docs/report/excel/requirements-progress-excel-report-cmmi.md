@@ -2,7 +2,7 @@
 title: Requirements Progress Excel Report (CMMI)  
 description: Tracks the rate at which the team is implementing requirements.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 45434ab2-3363-4ebd-89ce-95f438c64424

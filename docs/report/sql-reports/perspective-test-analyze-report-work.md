@@ -1,7 +1,7 @@
 ---
 title: Analyze work items and test case data
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Analyze current or historical data for work items and test cases by using Work Item perspective   

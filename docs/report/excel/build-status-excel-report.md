@@ -2,7 +2,7 @@
 title: Build Status Excel Report  
 description: Helps track the progress of builds by showing the number of builds that failed or succeeded - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd

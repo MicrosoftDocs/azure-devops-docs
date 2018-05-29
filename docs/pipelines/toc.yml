@@ -288,7 +288,7 @@
     - name: Use Build & Release for automated testing
       href: https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
   - name: "Set build and release permissions (Security)"
-    href: set-permissions.md 
+    href: policies/set-permissions.md 
 - name: Troubleshooting
   items:
   - name: Troubleshoot build and release

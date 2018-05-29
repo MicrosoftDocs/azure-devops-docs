@@ -1,7 +1,7 @@
 ---
 title: Build Project tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the files and projects that were built and information about those files  

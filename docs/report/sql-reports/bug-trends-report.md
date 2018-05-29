@@ -1,7 +1,7 @@
 ---
 title: Bug Trends Report 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the rate at which your team is discovering and resolving bugs - Team Foundation Server  

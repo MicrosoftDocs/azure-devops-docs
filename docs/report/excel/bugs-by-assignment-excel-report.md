@@ -2,7 +2,7 @@
 title: Bugs by Assignment Excel Report  
 description: Shows the distribution of active Bugs, grouped by priority, to team members - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: c7851b4c-33a2-4536-85d3-ec73c8e2a8b6

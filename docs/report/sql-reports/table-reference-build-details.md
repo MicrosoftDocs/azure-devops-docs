@@ -1,7 +1,7 @@
 ---
 title: Build Details tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about builds, such as the status and quality.

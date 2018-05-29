@@ -1,7 +1,7 @@
 ---
 title: Test dashboard (Agile and CMMI) | TFS
 description: Use test dashboard to monitor test activities, report on progress and find gaps in test coverage.
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 701fd381-fff0-4508-9316-852a45b6afb4

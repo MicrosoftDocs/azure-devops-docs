@@ -19,6 +19,12 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wa
 
 ## Prerequisites
 
+* You must set the policy 'External Guest Access' to 'On' for the account which you would like to invite external users to.
+
+> [!div class="mx-imgBorder"]
+![External Guest Access](_img/add-external-user/aad-guest-policy.png)
+
+
 * You must be a member of the Project Collection Administrators group for the account which you would like to invite external users to.
 
 * The VSTS account, to which you want to invite external users, must allow for external invitations. Go to the account Settings page to confirm.

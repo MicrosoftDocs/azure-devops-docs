@@ -1,7 +1,7 @@
 ---
 title: Build Quality Indicators Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows test coverage, code churn, and bug counts for a specified build definition - Team Foundation Server

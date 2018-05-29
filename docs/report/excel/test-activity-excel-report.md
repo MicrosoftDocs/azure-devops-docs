@@ -2,7 +2,7 @@
 title: Test Activity Excel Report 
 description: Helps monitor the number of manual tests that the team has run over time.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cb950153-2f44-4b0b-afeb-cfb697281930

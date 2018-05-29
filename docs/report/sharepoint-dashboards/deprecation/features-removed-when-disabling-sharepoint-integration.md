@@ -2,7 +2,7 @@
 title: Features removed when disabling SharePoint integration
 titleSuffix: TFS
 description: TFS SharePoint integration - Features removed when disabling SharePoint integration
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge

@@ -2,7 +2,7 @@
 title: Excel reports provided with the Agile process template  
 description: Summary of Agile process template Excel reports for Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 9faa625b-d87b-46a9-96ec-0618fe93db96
