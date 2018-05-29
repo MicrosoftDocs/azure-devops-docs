@@ -61,7 +61,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [Combine email recipients](manage-team-notifications.md) 
 - [New Account Landing page](../user-guide/account-home-pages.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)   
-- [New Release Definition Editor](../pipelines/actions/define-multistage-release-process.md) 
+- [New Release Definition Editor](../pipelines/release/define-multistage-release-process.md) 
 - [New Work Items Hub](../work/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../notifications/manage-personal-notifications.md).   

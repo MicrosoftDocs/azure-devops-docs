@@ -106,7 +106,7 @@ In addition, **Iteration** dates are included to the right of the name so that y
 
 ### Build GitHub pull requests from repository forks
 
-GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/pipelines/actions/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
+GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/pipelines/build/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Configuration for pull request validation of public fork PR builds](_img/129_08.png)

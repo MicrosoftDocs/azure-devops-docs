@@ -122,6 +122,6 @@ The hosted XAML build controller is no longer supported. If you have an account 
 
 > [!TIP]
 >
-> We recommend that you [migrate your XAML builds to new builds](../actions/migrate-from-xaml-builds.md).
+> We recommend that you [migrate your XAML builds to new builds](../build/migrate-from-xaml-builds.md).
 
 <!-- ENDSECTION -->

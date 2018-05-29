@@ -76,7 +76,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    If you chose to use an external Git repository, enter the repository name, branch, and (if required) your credentials.
  
    >If you encounter a service endpoint error while configuring Continuous Delivery, see
-   [Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
+   [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
  
 1. Select **Configure Continuous Delivery** and choose the web application framework
    you used to develop your app. This choice influences the way that Azure Continuous Delivery builds
@@ -217,7 +217,7 @@ may encounter the following known issues:
   
 * If you encounter the error "Failed to create an Azure service connection"
   while deploying to Azure App Service, see
-  [Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
+  [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
   
 * There is a known issue where users are able to see their Visual Studio Team
   Services account information within the [Azure classic portal](https://manage.windowsazure.com/),

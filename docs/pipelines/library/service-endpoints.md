@@ -111,7 +111,7 @@ using Service Principal Authentication (SPA). The dialog offers two modes:
   This is also a useful way to maximize security and limit access.
   For more information, see the [following section](#arm-manual-connect) of this topic.     
 
-> **NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service endpoints](../actions/azure-rm-endpoint.md).
+> **NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md).
 
 <a name="arm-auto-connect"></a>
 
@@ -122,7 +122,7 @@ You cannot use this version of the dialog to connect to an [Azure Government Clo
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
-| Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service endpoints](../actions/azure-rm-endpoint.md). |
+| Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md). |
 | Resource Group | If required, restrict the scope to a specific resource group within the subscription. |
 <p />
 

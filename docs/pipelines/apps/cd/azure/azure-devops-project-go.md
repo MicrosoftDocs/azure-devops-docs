@@ -119,4 +119,4 @@ When no longer needed, you can delete the Azure App service and related resource
 To learn more about modifying the build and release definitions to meet the needs of your team, see this tutorial:
 
 > [!div class="nextstepaction"]
-> [Customize CD process](../../../actions/define-multistage-release-process.md)
+> [Customize CD process](../../../release/define-multistage-release-process.md)

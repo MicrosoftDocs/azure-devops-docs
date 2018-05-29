@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot Build and Release
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](_shared/version.md)]
 
 ## Run commands locally at the command prompt
 It is helpful to narrow whether a build or release failure is the result of a TFS/VSTS product issue (agent or tasks). Build and release failures may also result from external commands.
 
 Check the logs for the exact command-line executed by the failing step. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) step)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
+For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) step)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
@@ -163,7 +163,7 @@ The MSBuild and Visual Studio Build tasks already add `/nr:false` to the argumen
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
 ### MSBuild and /maxcpucount:[n]
 
-By default the build steps such as [MSBuild](../tasks/build/msbuild.md) and [Visual Studio Build](../tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues. 
+By default the build steps such as [MSBuild](tasks/build/msbuild.md) and [Visual Studio Build](tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues. 
 
 Try adding the `/m:1` argument to your build steps to force MSBuild to run only one process at a time.
 

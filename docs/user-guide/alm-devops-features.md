@@ -1215,7 +1215,7 @@ pipelines\tasks\build\_img
 <p>Monitor the status of your release pipelines and track every deployment in each of the environments. Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/actions/define-multistage-release-process.md#monitor-and-track-deployments).</p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/release/define-multistage-release-process.md#monitor-and-track-deployments).</p>
 
 <p><b>Triggers</b></p>
 <p>Automate release deployment by [defining the events that will trigger a release](../pipelines/release/triggers.md#release-triggers).</p>
@@ -2778,7 +2778,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/actions/define-multistage-release-process.md#monitor-and-track-deployments). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/release/define-multistage-release-process.md#monitor-and-track-deployments). </p>
 
 </td>
 </tr>

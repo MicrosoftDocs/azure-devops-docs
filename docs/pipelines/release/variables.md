@@ -280,6 +280,6 @@ release environment, in debug mode. This can help you resolve issues and failure
   and link this variable group to a release definition.
 
 >If you get an error related to an Azure RM service endpoint,
-see [How to: Troubleshoot Azure Resource Manager service endpoints](../actions/azure-rm-endpoint.md).
+see [How to: Troubleshoot Azure Resource Manager service endpoints](azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

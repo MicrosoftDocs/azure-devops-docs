@@ -171,7 +171,7 @@ a simple load test to validate the deployment.
    If you don't see any subscriptions listed, choose the ![Settings](_img/example-continuous-testing/settings-icon.png) icon and, in the 
    **Services** page, create a new **Azure Resource Manager** service endpoint. If you
    have problems creating the connection, see 
-   [Troubleshoot Azure Resource Manager service endpoints](../../pipelines/actions/azure-rm-endpoint.md).
+   [Troubleshoot Azure Resource Manager service endpoints](../../pipelines/release/azure-rm-endpoint.md).
 
    ![Creating an Azure service connection ](_img/example-continuous-testing/example-continuous-testing-44a.png)
 
