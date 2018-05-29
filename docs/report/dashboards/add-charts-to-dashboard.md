@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
@@ -110,7 +111,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/test/getting-started-with-continuous-testing.md).
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017"
 >[!NOTE]  
@@ -131,7 +132,7 @@ Requires TFS 2017.2 or later version.
 
 	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
 
-	Learn more about [reviewing automated test results after a build](../../build-release/test/review-continuous-test-results-after-build.md).  
+	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
 ::: moniker-end
 

@@ -6,7 +6,8 @@ ms.prod: devops-server
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
@@ -67,21 +68,21 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
   
-     For more information, see [Build and Release agents](../../build-release/concepts/agents/agents.md).
+     For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../build-release/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
 -   **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
+     For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   

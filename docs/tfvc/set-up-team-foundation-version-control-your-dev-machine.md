@@ -110,7 +110,7 @@ You've already got an app in progress and you want to begin working on it under 
 
 ## Try this next
 
- [Set up a CI build](../build-release/concepts/definitions/build/triggers.md) 
+ [Set up a CI build](../pipelines/build/triggers.md) 
 
 ## Dig deeper
 

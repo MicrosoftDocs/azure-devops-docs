@@ -7,7 +7,8 @@ ms.topic: reference
 description: Query for data about the files and projects that were built and information about those files  
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
@@ -42,4 +43,4 @@ FactBuildProject is associated with the following dimension tables:
 -  [Build Summary](build-summary-report.md)   
 -  [Build Details tables](table-reference-build-details.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build-release/overview.md)   
+- [Continuous integration on any platform](../../pipelines/overview.md)   

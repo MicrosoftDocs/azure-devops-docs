@@ -106,7 +106,7 @@ In addition, **Iteration** dates are included to the right of the name so that y
 
 ### Build GitHub pull requests from repository forks
 
-GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/build-release/actions/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
+GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/vsts/pipelines/actions/ci-build-github#building-pull-requests-from-repository-forks) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Configuration for pull request validation of public fork PR builds](_img/129_08.png)
@@ -160,10 +160,10 @@ The unified agents approach also allows admins to manage all machines being used
 
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
-* Agents can be [configured for UI testing](/vsts/build-release/concepts/agents/agents#account)
+* Agents can be [configured for UI testing](/vsts/pipelines/agents/agents#account)
 * [Visual Studio Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
 * Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/vsts/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
-* Automated test cases can be [run from the Test hub](/vsts/build-release/test/run-automated-tests-from-test-hub) using the VSTest task
+* Automated test cases can be [run from the Test hub](/vsts/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.
 

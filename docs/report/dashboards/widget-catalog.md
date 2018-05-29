@@ -474,7 +474,7 @@ Configurable widget that you can use to view and track the status of a release d
 -->
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
-To learn more, see [Associate automated test results with requirements](../../build-release/test/associate-automated-results-with-requirements.md). 
+To learn more, see [Associate automated test results with requirements](../../pipelines/test/associate-automated-results-with-requirements.md). 
 
 ---- 
 ::: moniker-end
@@ -496,7 +496,7 @@ Adds a configurable tile that displays the trend of test results, such as passed
 
 From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. 
 
-To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../../build-release/test/review-continuous-test-results-after-build.md). 
+To learn more about creating charts for tracking test results, see [Review continuous test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md). 
 
 ---- 
 ::: moniker-end
