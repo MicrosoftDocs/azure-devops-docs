@@ -93,7 +93,7 @@ The completed build delivers two sets of artifacts.
 * Source folder
 
  ```
-$(Build.ArtifactStagingDirectory)
+$(Build.SourcesDirectory)
 ```
 
 * Contents

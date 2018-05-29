@@ -58,6 +58,8 @@ Hosted agents:
 
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
 
+* Currently utilizing Microsoft Azure General purpose virtual machine sizes [(Standard_DS2_v2 and Standard_DS3_v2)](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
+
 Hosted agents do not offer:
 
 * The ability to log on.
