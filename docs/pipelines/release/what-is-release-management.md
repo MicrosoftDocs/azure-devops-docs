@@ -132,9 +132,9 @@ Simply follow these steps:
 
 1. **[Deploy your Azure Web App quickly and simply](../apps/cd/azure/aspnet-core-to-azure-webapp.md)**
 
-1. **[Set up a multi-stage managed release pipeline](../actions/define-multistage-release-process.md)**
+1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     
-1. **[Manage deployments by using approvals and gates](../actions/deploy-using-approvals.md)**
+1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
 ## Related topics
 

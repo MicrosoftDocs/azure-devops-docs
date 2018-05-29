@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/pipelines/actions/define-multistage-release-process
+redirect_url: /vsts/pipelines/release/define-multistage-release-process
 ---
