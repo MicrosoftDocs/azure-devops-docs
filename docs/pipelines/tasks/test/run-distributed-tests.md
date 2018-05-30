@@ -11,7 +11,7 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Test: Run Functional Tests
+# Test: Run Distributed Tests
 
 ![](_img/runvisualstudiotestsusingtestagent.png) Deprecated: This task and its companion task (Visual Studio Test Agent Deployment) are deprecated. Use the 'Visual Studio Test' task instead. The VSTest task can run unit as well as functional tests. Run tests on one or more agents using the multi-agent phase setting. Use the 'Visual Studio Test Platform' task to run tests without needing Visual Studio on the agent. VSTest task also brings new capabilities such as automatically rerunning failed tests.
 

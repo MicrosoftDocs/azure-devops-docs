@@ -82,8 +82,8 @@ None
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-service-deployment.md)
-* [Azure Web App Deployment](azure-web-app-deployment.md)
+* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

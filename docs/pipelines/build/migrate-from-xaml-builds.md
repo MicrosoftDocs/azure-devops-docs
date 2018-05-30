@@ -195,7 +195,7 @@ Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (f
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
-See [Get started with continuous testing](../test/getting-started-with-continuous-testing.md) and [Visual Studio Test task](../tasks/test/visual-studio-test.md).
+See [Get started with continuous testing](../test/getting-started-with-continuous-testing.md) and [Visual Studio Test task](../tasks/test/vstest.md).
 
 #### Publish Symbols
 

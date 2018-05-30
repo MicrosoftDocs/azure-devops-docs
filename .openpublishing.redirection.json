@@ -2962,12 +2962,12 @@
     },
     {
       "source_path": "docs/pipelines/tasks/docs/test/cloud-based-apache-jmeter-load-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest",
+      "redirect_url": "/vsts/pipelines/tasks/test/run-jmeter-load-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/docs/test/mobile-center-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest",
+      "redirect_url": "/vsts/pipelines/tasks/package/app-center-test",
       "redirect_document_id": false
     },
     {
@@ -3612,7 +3612,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/cloud-based-apache-jmeter-load-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest",
+      "redirect_url": "/vsts/pipelines/tasks/test/run-jmeter-load-test",
       "redirect_document_id": false
     },
     {
@@ -3621,7 +3621,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
+      "source_path": "docs/build-release/tasks/test/vstest.md",
       "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md",
       "redirect_document_id": false
     },
@@ -5747,12 +5747,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/build/Docker.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/build/Docker.0",
+      "redirect_url": "/vsts/pipelines/tasks/build/docker",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/build/DockerCompose.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/build/DockerCompose.0",
+      "redirect_url": "/vsts/pipelines/tasks/build/docker-compose",
       "redirect_document_id": true
     },
     {
@@ -5762,12 +5762,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/build/DotNetCoreCLIV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/build/DotNetCoreCLIV2.2",
+      "redirect_url": "/vsts/pipelines/tasks/build/dotnet-core-cli",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/build/Go.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/build/Go.0",
+      "redirect_url": "/vsts/pipelines/tasks/build/go",
       "redirect_document_id": true
     },
     {
@@ -5837,7 +5837,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AppCenterDistribute.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AppCenterDistribute.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/app-center-distribute",
       "redirect_document_id": true
     },
     {
@@ -5857,52 +5857,52 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureAppServiceManage.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureAppServiceManage.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-app-service-manage",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureCloudPowerShellDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureCloudPowerShellDeployment.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-cloud-powershell-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureMonitorAlerts.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureMonitorAlerts.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-monitor-alerts",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureMysqlDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureMysqlDeployment.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-mysql-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzurePowerShellV3.3.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzurePowerShellV3.3",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-powershell",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureResourceGroupDeploymentV2.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureResourceGroupDeploymentV2.2",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-resource-group-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureRmWebAppDeployment.4.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureRmWebAppDeployment.4",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-rm-web-app-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureVmssDeployment.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/AzureVmssDeployment.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/azure-vmss-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/Chef.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/Chef.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/chef",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/ChefKnife.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/ChefKnife.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/chef-knife",
       "redirect_document_id": true
     },
     {
@@ -5912,37 +5912,27 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/HelmDeploy.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/HelmDeploy.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/helm-deploy",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/iis-deploy.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-deploy",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-web-app-deployment-on-machine-group",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/iis-manage.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-manage",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/deploy/IISWebAppDeploymentOnMachineGroup.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/IISWebAppDeploymentOnMachineGroup.0",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/build-release/tasks/deploy/IISWebAppManagementOnMachineGroup.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/IISWebAppManagementOnMachineGroup.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/iis-web-app-management-on-machine-group",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/Kubernetes.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/Kubernetes.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/kubernetes",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/PackerBuild.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/PackerBuild.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/packer-build",
       "redirect_document_id": true
     },
     {
@@ -5962,12 +5952,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/SqlAzureDacpacDeployment.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/SqlAzureDacpacDeployment.1",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/sql-azure-dacpac-deployment",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/deploy/SqlDacpacDeploymentOnMachineGroup.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/deploy/SqlDacpacDeploymentOnMachineGroup.0",
+      "redirect_url": "/vsts/pipelines/tasks/deploy/sql-dacpac-deployment-on-machine-group",
       "redirect_document_id": true
     },
     {
@@ -5997,7 +5987,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/package/NpmAuthenticate.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/package/NpmAuthenticate.0",
+      "redirect_url": "/vsts/pipelines/tasks/package/npm-authenticate",
       "redirect_document_id": true
     },
     {
@@ -6027,7 +6017,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/AppCenterTest.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/test/AppCenterTest.1",
+      "redirect_url": "/vsts/pipelines/tasks/test/app-center-test",
       "redirect_document_id": true
     },
     {
@@ -6057,12 +6047,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/RunDistributedTests.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/test/RunDistributedTests.1",
+      "redirect_url": "/vsts/pipelines/tasks/test/run-distributed-tests",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/test/RunJMeterLoadTest.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/test/RunJMeterLoadTest.1",
+      "redirect_url": "/vsts/pipelines/tasks/test/run-jmeter-load-test",
       "redirect_document_id": true
     },
     {
@@ -6072,7 +6062,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/VsTest.2.md",
-      "redirect_url": "/vsts/pipelines/tasks/test/VsTest.2",
+      "redirect_url": "/vsts/pipelines/tasks/test/vstest",
       "redirect_document_id": true
     },
     {
@@ -6082,17 +6072,17 @@
     },
     {
       "source_path": "docs/build-release/tasks/tool/DotNetCoreInstaller.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/tool/DotNetCoreInstaller.0",
+      "redirect_url": "/vsts/pipelines/tasks/tool/dotnet-core-tool-installer",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/tool/GoTool.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/tool/GoTool.0",
+      "redirect_url": "/vsts/pipelines/tasks/tool/go-tool",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/tool/HelmInstaller.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/tool/HelmInstaller.0",
+      "redirect_url": "/vsts/pipelines/tasks/tool/helm-installer",
       "redirect_document_id": true
     },
     {
@@ -6122,7 +6112,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/tool/VsTestPlatformToolInstaller.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/tool/VsTestPlatformToolInstaller.1",
+      "redirect_url": "/vsts/pipelines/tasks/tool/vstest-platform-tool-installer",
       "redirect_document_id": true
     },
     {
@@ -6142,12 +6132,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/utility/AzureNLBManagement.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/AzureNLBManagement.1",
+      "redirect_url": "/vsts/pipelines/tasks/utility/azure-nlb-management",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/utility/BashV3.3.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/BashV3.3",
+      "redirect_url": "/vsts/pipelines/tasks/utility/bash",
       "redirect_document_id": true
     },
     {
@@ -6177,7 +6167,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/utility/DecryptFile.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/DecryptFile.1",
+      "redirect_url": "/vsts/pipelines/tasks/utility/decrypt-file",
       "redirect_document_id": true
     },
     {
@@ -6197,12 +6187,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/utility/DownloadBuildArtifacts.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/DownloadBuildArtifacts.0",
+      "redirect_url": "/vsts/pipelines/tasks/utility/download-build-artifacts",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/utility/DownloadPackage.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/DownloadPackage.0",
+      "redirect_url": "/vsts/pipelines/tasks/utility/download-package",
       "redirect_document_id": true
     },
     {
@@ -6232,12 +6222,12 @@
     },
     {
       "source_path": "docs/build-release/tasks/utility/InstallSSHKey.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/InstallSSHKey.0",
+      "redirect_url": "/vsts/pipelines/tasks/utility/install-ssh-key",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/tasks/utility/JenkinsDownloadArtifacts.1.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/JenkinsDownloadArtifacts.1",
+      "redirect_url": "/vsts/pipelines/tasks/utility/jenkins-download-artifacts",
       "redirect_document_id": true
     },
     {
@@ -6262,7 +6252,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/utility/PythonScriptV0.0.md",
-      "redirect_url": "/vsts/pipelines/tasks/utility/PythonScriptV0.0",
+      "redirect_url": "/vsts/pipelines/tasks/utility/python-script",
       "redirect_document_id": true
     },
     {
@@ -7167,7 +7157,7 @@
     },
     {
       "source_path": "docs/build-release/apps/mobile/android.md",
-      "redirect_url": "/vsts/pipelines/apps/mobile/android",
+      "redirect_url": "/vsts/pipelines/languages/android",
       "redirect_document_id": true
     },
     {
