@@ -14,13 +14,13 @@ ms.date: 3/16/2018
 
 # Aggregate work tracking data using the Analytics service   
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
 In this topic you'll learn: 
 
-> [!div class="checklist"]   
+>[!div class="checklist"]
 > * About the OData Aggregation Extension   
 > * How to generate a simple count of work items         
 > * How to use the Aggregation Extension for OData   

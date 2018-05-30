@@ -23,7 +23,7 @@ The second copy function is to copy a multi-selected list of work items to the c
 
 Use this topic to learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Copy or clone a work item, essentially making a duplicate of a work item     
 > * Change the work item type, for example from a bug to a user story 
 > * Copy a list of work items to email or share with others  
@@ -31,7 +31,7 @@ Use this topic to learn how to:
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]Â 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="copy-clone"></a>
 ## Copy or clone a work item   

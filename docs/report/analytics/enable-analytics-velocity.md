@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 
 # Add an Analytics widget to a dashboard
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
  
 The [Analytics Service](what-is-analytics.md) is the reporting platform for Visual Studio Team Services (VSTS). 
 Using Analytics, you and your team can gain new insights into the health and status of your work.
@@ -60,7 +60,7 @@ Congratulations! A new Velocity widget has been added to your dashboard.
 > You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
 
-##  Learn about your teamâ€™s velocity using the Velocity widget 
+##  Learn about your team€™s velocity using the Velocity widget 
 
 The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. You can also compare the work delivered against your plan and track work completed late. Using the Velocity widget, you will be able to answer questions like:
 * On average, what is the velocity of my team?

@@ -21,7 +21,7 @@ Your task board provides a visualization of flow and status of each sprint task.
 
 In this topic you'll learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Use your task board to review progress during daily scrum meetings   
 > * Filter and group work items on your task board         
 > * Update the status of tasks through drag-and-drop   

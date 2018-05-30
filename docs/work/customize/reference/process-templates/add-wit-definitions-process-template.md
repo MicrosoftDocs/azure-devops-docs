@@ -72,17 +72,17 @@ The following example shows how to specify a task that creates the following WIT
       </dependencies>  
       <taskXml>  
       <WORKITEMTYPES>  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewResponse.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Feature.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml" />  
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackResponse.xml" />   
         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\SharedStep.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
-         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
+       <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
       </WORKITEMTYPES>  
       </taskXml>  
 </task>  

@@ -29,7 +29,7 @@ Use your backlogs to plan your project and to:
 *	Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
 Use this topic to learn how to: 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   

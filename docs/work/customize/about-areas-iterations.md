@@ -69,7 +69,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](reference/define-modify-work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Restriction type                 | Restriction                                 | 
 > | -------------------------------- | ------------------------------------------- | 
 > | Node length | Must not contain more than 255 characters | 

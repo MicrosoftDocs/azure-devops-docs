@@ -24,7 +24,7 @@ There are two ways to query for linked work items. The first is the Parent/Child
 
 In this topic you'll learn: 
 
-> [!div class="checklist"]     
+> [!div class="checklist"]
 > * How to construct a query to return hierarchically (parent-child) linked work items
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 
