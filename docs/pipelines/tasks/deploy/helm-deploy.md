@@ -1,5 +1,5 @@
 ---
-title: Package and deploy Helm charts
+title: Package and deploy Helm Charts
 description: Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 ms.topic: reference
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Package and deploy Helm charts
+# Deploy: Package and deploy Helm Charts
 
 ![](_img/helmdeploy.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 

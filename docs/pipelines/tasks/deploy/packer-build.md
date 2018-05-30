@@ -1,6 +1,6 @@
 ---
-title: Build Machine Image
-description: Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
+title: Build packer machine image
+description: Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,7 +11,7 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Build Machine Image
+# Deploy: Build Packer machine image
 
 ![](_img/packerbuild.png) Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
 
