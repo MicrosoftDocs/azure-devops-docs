@@ -162,7 +162,7 @@
     },
     {
       "source_path": "docs/build-release/actions/build-yaml-get-started.md",
-      "redirect_url": "/vsts/pipelines/actions/build-yaml",
+      "redirect_url": "/vsts/pipelines/build/yaml",
       "redirect_document_id": false
     },
     {
@@ -5112,7 +5112,7 @@
     },
     {
       "source_path": "docs/build-release/actions/build-yaml.md",
-      "redirect_url": "/vsts/pipelines/get-started-yaml",
+      "redirect_url": "/vsts/pipelines/build/yaml",
       "redirect_document_id": true
     },
     {
