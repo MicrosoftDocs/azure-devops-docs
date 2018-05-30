@@ -26,10 +26,10 @@ Since this change required an updated to the client, once the upcoming VS 2012 u
 
 We have also updated the [learn](https://www.visualstudio.com/en-us/get-started/) section of the site & added several new articles:
 
-- [Use the Hosted Build Controller](https://www.visualstudio.com/en-us/get-started/hosted-build-controller-vs)
-- [Set up an Ant Build in the Cloud](https://www.visualstudio.com/en-us/get-started/build-your-eclipse-projects-vs)
+- [Use the Hosted Build Controller](https://docs.microsoft.com/vsts/pipelines/agents/hosted?view=vsts)
+- [Set up an Ant Build in the Cloud](https://docs.microsoft.com/vsts/pipelines/tasks/build/ant?view=vsts)
 
-On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](https://www.visualstudio.com/en-us/get-started/build-your-apps-vs) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
+On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](https://docs.microsoft.com/vsts/pipelines/index?view=vsts) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
 
 That’s it for sprint 37. See you again in 3 weeks.
 
