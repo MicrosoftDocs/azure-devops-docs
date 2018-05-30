@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
-VSTS and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)
+VSTS and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 that helps you publish to SQL server.
 However, you may want to perform other SQL server actions
 as part of your release workflow.
