@@ -44,7 +44,7 @@ One benefit of an MSDN subscription is access to Visual Studio Online accounts. 
 
 [Associating your Visual Studio Online benefit with a work account](https://msdn.microsoft.com/subscriptions/dn531048.aspx)
 
-[Which MSDN Subscriptions include the Visual Studio Online benefit](https://www.visualstudio.com/en-us/get-started/assign-licenses-to-users-vs#EligibleMSDNSubscriptions)
+[Which MSDN Subscriptions include the Visual Studio Online benefit](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 
 ##Copy/Paste Shared Parameter Data between VS Online and Excel
 

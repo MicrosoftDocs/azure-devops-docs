@@ -30,15 +30,15 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 
 ::: moniker range="vsts"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-vsts.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
 ::: moniker-end
 
 
@@ -157,7 +157,7 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-Or, you can drag and drop a widget from the catalog onto the dashboard.   Â 
+Or, you can drag and drop a widget from the catalog onto the dashboard.    
 
 ::: moniker-end
 

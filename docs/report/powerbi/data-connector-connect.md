@@ -16,7 +16,7 @@ ms.date: 2/8/2018
 
 # Connect to VSTS with Power BI Data Connector
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 > The VSTS Power BI Data connector works with Analytics Views. For more information read [what are Analytics Views](../analytics/what-are-analytics-views.md).
 
@@ -176,4 +176,4 @@ If the URL you use on a daily basis is "`https://fabrikam-fiber-inc.visualstudio
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)]�

@@ -30,7 +30,7 @@ In a YAML build definition, your CI build process configured as code, which mean
 
 ## Get started
 
-If you're new to YAML builds, or to VSTS, we suggest you begin learning with either our [ASP.NET Core](apps/aspnet/build-aspnet-core.md) or [Node.js](apps/nodejs/build-gulp.md) tutorial.
+If you're new to YAML builds, or to VSTS, we suggest you begin learning with either our [ASP.NET Core](../apps/aspnet/build-aspnet-core.md) or [Node.js](../apps/nodejs/build-gulp.md) tutorial.
 
 ## How do YAML builds compare to web-interface builds?
 
@@ -128,7 +128,7 @@ Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, 
 
 To look up the syntax of the tasks that are built into VSTS and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks. 
 
-For example, if you want to use the [Copy Files](tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFiles and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
+For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFiles and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
 
 ## Learn more
 

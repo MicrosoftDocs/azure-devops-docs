@@ -125,8 +125,8 @@ The following example specifies that the Remaining Work.rdl file will be uploade
 ```XML 
 <taskXml>  
       <ReportingServices>  
-       <reports>  
-         <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
+     <reports>  
+       <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30">  
        <parameters>  
           <parameter name="ExplicitProject" value="" />  
        </parameters>  
@@ -136,7 +136,7 @@ The following example specifies that the Remaining Work.rdl file will be uploade
        </datasources>  
        </report>  
  . . .   
-       </reports>  
+     </reports>  
       </ReportingServices>  
 </taskXml>  
 ```  

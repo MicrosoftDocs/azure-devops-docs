@@ -12,7 +12,7 @@ ms.date: 11/02/2017
 
 # Team Foundation Server Extensions for SharePoint Products
 
-[!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
 
 The Team Foundation Server Extensions for SharePoint Products include site templates to which the process templates for TFS refer when team projects are created. You must install the extensions so that team project portals will appear and function correctly. 
 

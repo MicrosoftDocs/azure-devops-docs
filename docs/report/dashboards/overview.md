@@ -14,7 +14,7 @@ ms.date: 03/23/2018
 
 # Dashboards, charts, & widgets    
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
