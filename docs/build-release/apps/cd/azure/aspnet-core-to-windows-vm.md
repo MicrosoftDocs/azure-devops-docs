@@ -55,7 +55,7 @@ Your code changes automatically appear on your site:
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../../../apps/_shared/create-aspnet-core-build-team-services.md])
+[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../../../apps/_shared/create-aspnet-core-build-team-services.md)])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
