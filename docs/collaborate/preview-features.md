@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level)  |[Preview features per account](#account-level)  |
 > |-------------|----------|
-> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/get-started-yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |
+> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/build/yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
