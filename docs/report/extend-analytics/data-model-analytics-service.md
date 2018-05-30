@@ -35,10 +35,10 @@ The data model contains the following entity sets:
 |Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
 |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
 |Dates | The dates used to filter and group other entities using relationships |  
-|Projects | All VSTS projects|
+|Projects | All projects defined for the account or collection |
 |Process | Backlog information - used to expand or filter work items and work item types|  
-|Tags | All work item tags for each project|  
-|Teams | All VSTS teams|  
+|Tags | All work item tags for each project |  
+|Teams | All teams defined for the project (To add a team, see [Add teams and team members](../../work/scale/multiple-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  

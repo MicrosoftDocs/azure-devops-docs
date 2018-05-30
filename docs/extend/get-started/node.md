@@ -85,7 +85,7 @@ An extension is composed of a set of files, including a required manifest file, 
 				"id": "my-hub",
 				"type": "ms.vss-web.hub",
 				"targets": [
-					"ms.vss-work-web.code-hub-group"
+					"ms.vss-code-web.code-hub-group"
 				],
 				"properties": {
 					"name": "My Hub",
@@ -116,13 +116,24 @@ An extension is composed of a set of files, including a required manifest file, 
 	<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<script src="lib/VSS.SDK.min.js"></script>
+    	<script src="lib/VSS.SDK.min.js"></script>
+    	<style>
+        	body {
+            	background-color: rgb(0, 67, 117);
+            	color: white;
+            	margin: 10px;    
+            	font-family: "Segoe UI VSS (Regular)","-apple-system",BlinkMacSystemFont,"Segoe UI",sans-serif;
+        	}
+    	</style>
+    	<script type="text/javascript">
+        	VSS.init();
+        	VSS.ready(function() {
+            	document.getElementById("name").innerText = VSS.getWebContext().user.name;
+        	});
+    	</script>
 	</head>
-	<body>
-		<script type="text/javascript">
-		VSS.init();
-		</script>
-		<h1>Hello world!</h1>		
+	<body>        
+    	<h1>Hello, <span id="name"></span></h1>
 	</body>
 	</html>
 	```

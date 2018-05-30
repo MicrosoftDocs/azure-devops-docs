@@ -8,7 +8,7 @@ ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: sample
 ms.date: 04/04/2018
 ---
 

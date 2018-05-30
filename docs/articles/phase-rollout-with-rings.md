@@ -1,5 +1,5 @@
 ---
-title: Progressively exposure your releases using deployment rings
+title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
@@ -106,7 +106,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/build-release/concepts/definitions/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
+> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
 
 ## Dealing with monitoring and noise
 
@@ -167,7 +167,7 @@ The ring deployment model allows you to process a hotfix like any other change. 
 
 ### How do you deal with variables that span (shared) release environments?
 
-Refer to [Variables in Release Management](/vsts/build-release/concepts/definitions/release/variables).
+Refer to [Variables in Release Management](/vsts/pipelines/release/variables).
 
 ### How can you manage secrets used by the pipeline?
 

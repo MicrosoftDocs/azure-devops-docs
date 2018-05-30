@@ -1,7 +1,7 @@
 ---
 title: Requirements Progress Report (CMMI) 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by product area and iteration in order of importance.

@@ -16,7 +16,7 @@ You can use the following keyboard shortcuts from the web portal.
 **g,h**&nbsp;&nbsp;&nbsp;Go to the [Dashboards hub](/vsts/report/dashboards/dashboards)<br/>
 **g,w**&nbsp;&nbsp;&nbsp;Go to the [Work hub](/vsts/work/backlogs/overview)<br/>
 **g,c**&nbsp;&nbsp;&nbsp;Go to the [Code hub](/vsts/git/overview)<br/>
-**g,b**&nbsp;&nbsp;&nbsp;Go to the [Build-Release hub](/vsts/build-release/overview)<br/>
+**g,b**&nbsp;&nbsp;&nbsp;Go to the [Build-Release hub](/vsts/pipelines/overview)<br/>
 **g,t**&nbsp;&nbsp;&nbsp;Go to the [Test hub](/vsts/manual-test/index)<br/>
 **g,s**&nbsp;&nbsp;&nbsp;Go to [Settings (Admin context)](/vsts/work/scale/manage-team-assets)<br/>
 

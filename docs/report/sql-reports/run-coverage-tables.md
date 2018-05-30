@@ -1,7 +1,7 @@
 ---
 title: Run Coverage tables 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactRunCoverage to query for data in Team Foundation Server

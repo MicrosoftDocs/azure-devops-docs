@@ -62,7 +62,7 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package-ver
 
 ### Use symbols to debug
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers or package names. If [symbols have been published](/vsts/build-release/symbols/index.md) for your packages, [connect Visual Studio to the Symbol Server in Package Management](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
+Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers or package names. If [symbols have been published](/vsts/pipelines/symbols/index) for your packages, [connect Visual Studio to the Symbol Server in Package Management](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
 
 <!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
 

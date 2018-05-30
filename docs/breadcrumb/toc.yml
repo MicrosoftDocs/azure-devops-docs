@@ -16,21 +16,21 @@
       tocHref: /vsts/tfvc/
       topicHref: /vsts/tfvc/index
   - name: "Continuous Integration & Delivery"
-    tocHref: /vsts/build-release/
+    tocHref: /vsts/pipelines/
     topicHref: /vsts/index#pivot=services&panel=delivery
     items:
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/
       topicHref: /vsts/deploy-azure/index
     - name: Build and Release
-      tocHref: /vsts/build-release/
-      topicHref: /vsts/build-release/index
+      tocHref: /vsts/pipelines/
+      topicHref: /vsts/pipelines/index
     - name: Package Management
       tocHref: /vsts/package/
       topicHref: /vsts/package/index
     - name: Continuous Testing
-      tocHref: /vsts/build-release/
-      topicHref: /vsts/build-release/test/index
+      tocHref: /vsts/pipelines/
+      topicHref: /vsts/pipelines/test/index
   - name: Testing
     tocHref: /vsts/manual-test/
     topicHref: /vsts/index#pivot=services&panel=testing
@@ -68,7 +68,10 @@
       topicHref: /vsts/work/scale/index
   - name: Java 
     tocHref: /vsts/java/
-    topicHref: /vsts/java/index   
+    topicHref: /vsts/java/index 
+  - name: "VSTS Demo Generator"
+    tocHref: /vsts/demo-gen/
+    topicHref: /vsts/demo-gen/index  
   - name: Reporting
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=reporting

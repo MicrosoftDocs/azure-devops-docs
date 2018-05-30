@@ -1,7 +1,7 @@
 ---
 title: Status on All Iterations Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Helps you track the team's performance over successive iterations.

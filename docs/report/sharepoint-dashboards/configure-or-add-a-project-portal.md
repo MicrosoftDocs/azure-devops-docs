@@ -2,7 +2,7 @@
 title: Configure or add a project portal 
 titleSuffix: TFS
 description: How the SharePoint project portal provides access to shared documents, dashboards, and support files-Team Foundation Server  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
 ms.manager: douge

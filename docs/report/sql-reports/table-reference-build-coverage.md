@@ -1,13 +1,14 @@
 ---
 title: Build Coverage tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
@@ -42,4 +43,4 @@ For information about the measures and dimensions that are associated with these
 -  [Code Churn](../excel/code-coverage-excel-report.md)   
 -  [Run Coverage tables](run-coverage-tables.md)    
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build-release/overview.md) 
+- [Continuous integration on any platform](../../pipelines/overview.md) 

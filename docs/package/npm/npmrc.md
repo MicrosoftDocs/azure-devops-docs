@@ -39,7 +39,7 @@ This enables you to share project's **_.npmrc_** with the whole team while keepi
 ## Set up authentication on your dev box
 You should have a project specific **_.npmrc_** containing only your Feed's registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project's **_package.json_**.
 
-> **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [scopes](..//npm/scopes.md) and our new upstream feature (discussed here).
+> **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [scopes](..//npm/scopes.md) and our new [upstream sources feature](../concepts/upstream-sources.md).
 
 ### Windows
 If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
@@ -66,7 +66,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../build-release/actions/_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Team project**, **Repository**, and **Default branch** and select _Continue_
 
@@ -94,7 +94,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
         ![Add task to build definition](../_shared/_img/build-definition/registries-in-my-npmrc.png)
 
-        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../build-release/concepts/library/service-endpoints.md#sep-npm)
+        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/library/service-endpoints.md#sep-npm)
 
     * Registry I select here
 
@@ -109,7 +109,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../build-release/actions/_img/ci-cd/part-1/builds-tab-mine-new-button.png)
+    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Team project**, **Repository**, and **Default branch** and select _Continue_
 
@@ -131,7 +131,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ![Add task to build definition](../_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
-    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../build-release/concepts/library/service-endpoints.md#sep-npm)
+    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 

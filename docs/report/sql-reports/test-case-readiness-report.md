@@ -1,7 +1,7 @@
 ---
 title: Test Case Readiness Report 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determine how many test cases have been defined and are ready to run 

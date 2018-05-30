@@ -73,6 +73,21 @@ These recommendations are guidelines for Team Foundation Server Proxy. Recommend
 | Between 450 and 2,200 users | 2 processors, 2.0 GHz CPU, 2 GB RAM |
 | Between 2,200 and 3,600 users | 4 processors, 2.0 GHz CPU, 2 GB RAM |
 
+<a name="gvfs-proxy-server"></a>
+### Additional requirements for GVFS proxy
+
+The Git Virtual File System (GVFS) proxy feature is I/O-heavy.
+In addition to the basic requirements for the Team Foundation Server Proxy, GVFS proxying requires a fast, large disk to operate efficiently on the repository.
+Recommended hardware is based on the size of the repository that the GVFS proxy will serve.
+
+| **Hardware** | **Recommended value** |
+|---|---|
+| RAM | As large as the tip of a typical branch |
+| Disk space | Four times as large as the repository's entire size |
+| Disk hardware | SSD (Solid State Drive) |
+
+For example, assume a repository has 50GB at the tip of `master` and 200GB of history.
+We recommend 50GB of RAM and 800GB of SSD-based storage.
 
 ## Virtualization
 
@@ -286,14 +301,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../pipelines/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](../build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md)
+[Connect Release Management to TFS](../pipelines/archive/release/previous-version/install-release-management/connect-to-tfs.md)
 
 
 | Component | Sample user logon name (1) | Requirements |
@@ -628,7 +643,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 **TFS 2018 discontinues support for the XAML build system.**
 
-We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
+We've built a brand new [scriptable build system](../pipelines/overview.md) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the XAML build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 
