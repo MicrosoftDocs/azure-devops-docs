@@ -14,7 +14,7 @@ ms.date: 3/29/2018
 
 # Power BI for Visual Studio Team Services (VSTS)
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]Â�
 
 With Power BI, you can quickly generate reports for your VSTS team projects based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md).
 

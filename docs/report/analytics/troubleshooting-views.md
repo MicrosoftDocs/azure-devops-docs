@@ -15,12 +15,12 @@ ms.date: 04/04/2018
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). You manage Analytics views in the web portal for VSTS and then access them with the [Power BI Connector](../powerbi/data-connector-connect.md). 
 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
 ## Resolve size warnings
 

@@ -24,28 +24,28 @@ The Overview page provides access to a default team dashboard which you can cust
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md). Â 
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md). Â 
+> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).  
 ::: moniker-end
 
 
 
 ::: moniker range="vsts"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-vsts.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDEÂ [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]Â 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
 ::: moniker-end
-Â 
+ 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Connect to the web portal for your team project 
@@ -393,7 +393,7 @@ And, you can add a chart to a team dashboard in a similar way.
 ## Add widgets to your dashboard
 
 >[!NOTE]  
-><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.  Â 
+><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
 
 ### Add a widget  
 

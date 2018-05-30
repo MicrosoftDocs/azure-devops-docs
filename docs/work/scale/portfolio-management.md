@@ -19,7 +19,7 @@ Portfolio backlogs provide product owners insight into the work performed by sev
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to support a management view of multiple team progress
 > * How feature teams can focus on their team backlog progress  
 > * How to assign work from a common backlog

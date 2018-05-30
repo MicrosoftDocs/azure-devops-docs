@@ -14,7 +14,7 @@ ms.topic:
 
 # Update Excel Chart after SharePoint integration is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
 
 Excel charts continue to work, even after disabling SharePoint integration. Displaying Excel Charts on SharePoint is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 

@@ -16,7 +16,7 @@ ms.date: 3/29/2018
 #  Extend Analytics with OData (Preview) 
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Using OData, you can directly query the Analytics Service for Visual Studio Team Services (VSTS) from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or the entire Visual Studio Team Services (VSTS) account.   
 

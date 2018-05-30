@@ -76,7 +76,7 @@ To learn more about these and the 20+ other integrations, visit [Visual Studio O
 
 REST APIs for adding, editing, renaming, and deleting files in TF Version Control and Git projects are now available for preview. These JSON-based APIs (which are used by the new quick code editing feature) enable you to create Changeset and Push resources via POST operations. For Git, you can add and update files in an existing branch or create a new branch. You can also rename, move, and delete files. One limitation, which will be addressed in the next deployment, is that these APIs are currently only callable when using basic authentication (not OAuth).
 
-To learn more about these APIs, see [Visual Studio Online REST API Versions and History](https://www.visualstudio.com/en-us/integrate/get-started/get-started-rest-versions-vsi).
+To learn more about these APIs, see [Visual Studio Online REST API Versions and History](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1#where-are-the-earlier-versions-of-rest-apis-before-41).
 
 ##CodeLens for Visual Studio Online in Preview
 
