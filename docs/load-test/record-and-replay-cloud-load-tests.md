@@ -61,7 +61,7 @@ you can represent user scenarios that:
 * Simulate a complete user scenario
 
 If you develop or test web apps, you may already be familiar with the
-[F12 developer tools](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/)
+[F12 developer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)
 in your browser. These enable you carry out a range of tasks from 
 inspecting the HTML, CSS, and JavaScript, to viewing the traffic between 
 the browser and the server. You can use this ability to view traffic 

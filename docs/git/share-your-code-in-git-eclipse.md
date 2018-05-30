@@ -26,7 +26,7 @@ Share your Eclipse project with your team in a VSTS/TFS Git repo.
 
 ## Use Team Explorer Everywhere
 
-[Team Explorer Everywhere](https://www.visualstudio.com/en-us/products/team-explorer-everywhere-vs.aspx) is an [open-source](https://github.com/Microsoft/team-explorer-everywhere) Eclipse plug-in to connect Eclipse to VSTS or Team Foundation Server. If you're working with VSTS/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
+[Team Explorer Everywhere](https://github.com/Microsoft/team-explorer-everywhere) is an open-source Eclipse plug-in to connect Eclipse to VSTS or Team Foundation Server. If you're working with VSTS/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
 
 0. [Install the Team Explorer Everywhere plug-in](/vsts/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse).
 
