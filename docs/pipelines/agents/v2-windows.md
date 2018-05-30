@@ -146,7 +146,9 @@ The help provides information on authentication alternatives and unattended conf
 | TFS version | Agent version |
 |-|-|
 | 2017 RTM | 2.105.7 |
-| 2017.3 | 2.112.0 |
+| 2017.1 | 2.112.0 |
+| 2017.2 | 2.117.2 |
+| 2017.3 | 2.122.1 |
 
 ::: moniker-end
 
