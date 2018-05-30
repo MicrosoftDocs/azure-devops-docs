@@ -58,7 +58,7 @@ will take to execute by running the Estimate command.
 Because of how it works, TfsPreUpgrade.exe requires stable source and target database schemas. As such, it can 
 only be run against TFS 2013 Update 4 and Update 5 databases. If your TFS deployment is not yet on TFS 2013 Update 4 or 5, 
 you will need to upgrade to one of those versions before running TfsPreUpgrade.exe. TFS 2013 Update 5 can be downloaded here: 
-https://www.visualstudio.com/downloads/download-visual-studio-vs.
+https://www.visualstudio.com/downloads/.
 
 ## What does TfsPreUpgrade.exe do?
 TfsPreUpgrade.exe will:
