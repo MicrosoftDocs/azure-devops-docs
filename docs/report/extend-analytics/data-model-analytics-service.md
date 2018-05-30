@@ -16,7 +16,7 @@ ms.date: 2/18/2018
 # Data model for the Analytics Service  
 
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Analytics service data model for Visual Studio Team Services (VSTS) consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
@@ -25,7 +25,7 @@ The Analytics service data model for Visual Studio Team Services (VSTS) consists
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata``` Â 
+>Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -69,7 +69,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three propertiesâ€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
+The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  

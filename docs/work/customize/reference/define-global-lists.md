@@ -146,12 +146,12 @@ To add a global list to a project collection, you can import the following synta
 ```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
        <GLOBALLIST name="NameOfGlobalList">  
-         <LISTITEM value="ListItem1" />  
-         <LISTITEM value="ListItem2" />  
-         <LISTITEM value="ListItem3" />  
-         <LISTITEM value="ListItem4" />  
-         . . .  
-         <LISTITEM value="ListItemN" />  
+       <LISTITEM value="ListItem1" />  
+       <LISTITEM value="ListItem2" />  
+       <LISTITEM value="ListItem3" />  
+       <LISTITEM value="ListItem4" />  
+  . . .  
+       <LISTITEM value="ListItemN" />  
        </GLOBALLIST>  
 </gl:GLOBALLISTS>  
 ```  

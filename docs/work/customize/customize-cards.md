@@ -92,7 +92,7 @@ This feature requires TFS 2015.1 or later versions.
 ### Example styling rules 
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Work items | Criteria |
 > |------------|------------|
 > | High priority items | ```Priority = 1``` |

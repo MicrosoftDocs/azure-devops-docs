@@ -15,15 +15,15 @@ ms.date: 04/04/2018
 
 # Data available from the Analytics Service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). **The Analytics Service is in public preview.** 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
 Currently, you can access the following data from the Analytics Service. This information was last updated: April 4, 2018.
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdBreakAll"]
 > Data | Availability | [Widgets](./analytics-widgets-VSTS.md) > | [OData](../extend-analytics/index.md) | [Power BI](../powerbi/overview.md) |
 > |-|-|-|-|-|
 > | Work Item Tracking | Available Now | Yes | Yes | Yes |
