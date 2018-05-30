@@ -133,6 +133,9 @@ Aside from the licensing and maintenance cost of a feature flag service, you're 
 * You'll need to identify and remove stale feature flags 
 * Understand and test the implications of flipping a feature flag
 
+> [!TIP]
+> To minimize the costs associated with the use of feature flags, keep feature flags short lived and prevent multiple feature flags from interfering with each other by affecting the same functionality.
+
 ## Conclusion
 
 Now that you've covered the concepts and considerations of feature flags, you should be confident to explore ways to improve your CI/CD pipelines. While feature flags come at a cost, having a game plan to manage exposed features at run-time is invaluable.
@@ -153,7 +156,7 @@ As Buck states, “Many feature flags go away and the teams themselves take care
 
 ### Is there a dependency on deployment rings?
 
-No, rings and feature flags are symbiotic. Read [Deature Flags or Rings](https://aka.ms/vsar-rings-flags) for details.
+No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https://aka.ms/vsar-rings-flags) for details.
 
 ## Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)

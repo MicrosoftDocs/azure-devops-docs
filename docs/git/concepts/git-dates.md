@@ -32,11 +32,11 @@ Let's look at a brief example to see these concepts in practice. First we will c
     git add *
     git commit -m "A normal commit message"
 
-Now let's ammend our commit with a different message:
+Now let's amend our commit with a different message:
 
     echo again > file.txt
     git add *
-    git commit --amend -m "An ammended commit"
+    git commit --amend -m "An amended commit"
     
 If we look at our regular log history we would see something like the following:
 

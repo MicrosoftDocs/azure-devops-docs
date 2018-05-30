@@ -126,7 +126,7 @@ So ```{{workitem.fields["System.workItemType"]}}``` becomes ```{{workitem.workIt
 
 ### Placeholder expressions
 
-These placeholders use a (handlebars templates)[http://handlebarsjs.com/]
+These placeholders use a [handlebars templates](http://handlebarsjs.com/)
 implementation that is largely compatible with [Mustache](http://mustache.github.io/mustache.5.html).
 Some useful expressions include
 
