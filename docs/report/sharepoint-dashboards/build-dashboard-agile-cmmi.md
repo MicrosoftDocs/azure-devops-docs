@@ -2,11 +2,12 @@
 title: Build dashboard  (Agile and CMMI) 
 titleSuffix: TFS
 description: Obtain an overview of the development activities that are affecting the quality of the builds - Team Foundation Server  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 9ff71bb8-2e3d-49ae-97c0-5c8bd37c3b93
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
@@ -35,7 +36,7 @@ You can use the Build dashboard to obtain an overview of the development activit
 |--------------|--------------------|-------------------|  
 |![Step 1](_img/procguid_1.png "ProcGuid_1")|Line chart that depicts the percentage of code that was tested by build verification tests (BVT) and other tests over the most recent four weeks.<br /><br /> ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](../excel/code-coverage-excel-report.md)|  
 |![Step 2](_img/procguid_2.png "ProcGuid_2")|Stacked area chart that depicts how many lines of code the team added, removed, and changed in the check-ins before the build within the most recent four weeks.<br /><br /> ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](../excel/code-churn-excel-report.md)|  
-|![Step 3](_img/procguid_3.png "ProcGuid_3")|List of recent builds and their build status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build Not Started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in Progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build Succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build Failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build Stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build Partially Succeeded|[Run, monitor, and manage](../../build-release/overview.md)|  
+|![Step 3](_img/procguid_3.png "ProcGuid_3")|List of recent builds and their build status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build Not Started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in Progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build Succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build Failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build Stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build Partially Succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![Step 4](_img/procguid_4.png "ProcGuid_4")|List of upcoming events derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|Not applicable|  
 |![Step 5](_img/procguid_6.png "ProcGuid_6")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../tfvc/develop-code-manage-pending-changes.md)|  
@@ -45,23 +46,23 @@ You can use the Build dashboard to obtain an overview of the development activit
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
   
-     For more information, see [Build and Release agents](../../build-release/concepts/agents/agents.md).
+     For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../build-release/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
-     For more information, see [Run tests in your build process](../../build-release/test/test-build.md).
+     For more information, see [Run tests in your build process](../../pipelines/test/test-build.md).
   
 -   **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
+     For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  

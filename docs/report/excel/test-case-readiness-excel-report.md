@@ -2,7 +2,7 @@
 title: Test Case Readiness Excel Report  
 description: Use the Test Case Readiness report to help monitor the progress that the team is making toward defining and designing Test Cases.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: faaad500-45da-45c7-8ab2-59d1c6f30c2a

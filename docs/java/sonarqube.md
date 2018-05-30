@@ -19,7 +19,7 @@ Configure a VSTS or TFS Maven or Gradle build task to use SonarQube for code pro
 
 ## Prerequisites
 
- - You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/build-release/apps/cd/azure/azure-devops-project-java).
+ - You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/pipelines/apps/cd/azure/azure-devops-project-java).
  - You have an existing Maven or Gradle build task.
  - You have a [SonarQube server](https://docs.sonarqube.org/display/SONAR/Installing+the+Server) set up to use.
 
@@ -33,7 +33,7 @@ To use your SonarQube server, you need to setup an endpoint connection under the
 
 ## Enabling SonarQube analysis
 
-After setting up a [Maven build task](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/maven) or a [Gradle build task](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/gradle) for your repository, you can enable SonarQube analysis by selecting the option under the **Code Analysis** option in the task. Both build tasks will require you to select a SonarQube endpoint which you should have already configured. Additional information such as project name and project key may be needed depending on the task.
+After setting up a [Maven build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/maven) or a [Gradle build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/gradle) for your repository, you can enable SonarQube analysis by selecting the option under the **Code Analysis** option in the task. Both build tasks will require you to select a SonarQube endpoint which you should have already configured. Additional information such as project name and project key may be needed depending on the task.
 
 > [!div class="mx-imgBorder"]
 ![VSTS VSCode extension login indicator](_img/sonarqube-menu.png)

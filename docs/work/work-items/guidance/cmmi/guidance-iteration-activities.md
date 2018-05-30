@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -44,7 +45,7 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
  Development work for the tests should be included in the tasks that are linked to the product requirement.  
   
 ### Rolling and nightly builds  
- The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/vsts/build-release/index).  
+ The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/vsts/pipelines/index).  
   
 ### Stand-up meeting  
  The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [task board](../../../scrum/task-board.md) or project the [Progress Dashboard](../../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.  

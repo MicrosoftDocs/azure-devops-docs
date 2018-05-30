@@ -61,7 +61,7 @@
     - name: Set Git branch permissions
       href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
     - name: Set build and release permissions
-      href: ../build-release/set-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+      href: ../pipelines/policies/set-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
     - name: Set package feed permissions
       href: ../package/feeds/feed-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
     - name: Set permissions and access for work tracking

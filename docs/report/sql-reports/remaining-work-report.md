@@ -1,7 +1,7 @@
 ---
 title: Remaining Work Report 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work

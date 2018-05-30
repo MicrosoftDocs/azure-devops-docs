@@ -3,7 +3,7 @@ title: Define query as a hyperlink
 titleSuffix: VSTS & TFS
 description: Construct a URL for a query in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
-ms.technology: vs-azure-devops-agile 
+ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
 ms.manager: douge

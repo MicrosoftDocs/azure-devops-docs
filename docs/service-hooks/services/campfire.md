@@ -59,7 +59,7 @@ for pricing related to their services.
 
 ####Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](http://www.visualstudio.com/integrate/get-started/get-started-service-hooks-creating-and-managing-vsi).
+A: Yes, see details [here](../create-subscription.md).
 
 ####Q: Where can I get more information about Campfire?
 

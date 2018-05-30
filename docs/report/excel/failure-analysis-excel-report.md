@@ -2,7 +2,7 @@
 title: Failure Analysis Excel Report 
 description: Use Failure Analysis report to help monitor how many regressions the test team is finding - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 22f98044-e3bb-4e63-80a1-99a95775baa5

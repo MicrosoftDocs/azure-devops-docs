@@ -22,7 +22,7 @@ While you work with your application, Microsoft Test Manager (MTM) can record yo
   
 ## Explore your app  
   
-1. Install [the latest build of your application](../../build-release/index.md). If it's a desktop application, install it on a machine that has MTM. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have MTM.  
+1. Install [the latest build of your application](../../pipelines/index.md). If it's a desktop application, install it on a machine that has MTM. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have MTM.  
   
 1. [Connect MTM to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) if you haven't already. The test plan stores default settings and test results.  
   

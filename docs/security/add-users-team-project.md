@@ -130,7 +130,7 @@ learn how from these topics:
 
 * [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../git/branch-permissions.md)
-* [Set build and release permissions](../build-release/set-permissions.md)
+* [Set build and release permissions](../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
 
 To view permissions for yourself or another user, see [View permissions](../security/view-permissions.md).

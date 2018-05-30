@@ -53,7 +53,7 @@ We are moving our SSH implementation to use Azure Traffic Manager for more effic
 
 ### Generate YAML templates from existing build definitions
 
-Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/build-release/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
+Last month at the [Connect(); 2017 event](https://www.microsoft.com/connectevent) we announced the public preview of [YAML builds](/vsts/pipelines/actions/build-yaml-get-started) that enable you to configure your build process as a YAML file checked in with your code rather than with the graphical build definition editor. We’ve now made it simpler for you to convert your build definitions in the web UI into a YAML file. In the build definition editor for your build, you can select the **Process** tab on the left and then click the **View YAML** link in the pane on the right. Copy the text to the clipboard and check in a file with the contents into your repo. Then configure a new build YAML based build definition that references the checked in file.
 
 This can also be used as a good way to learn YAML quickly. You can create a new build definition using the appropriate template for your app and examine the YAML to understand the mapping between what you’re used to and the new YAML constructs.
 
@@ -74,7 +74,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
 
-To learn more, see [Phases in Build and Release Management](/vsts/build-release/concepts/process/phases).
+To learn more, see [Phases in Build and Release Management](/vsts/pipelines/process/phases).
 
 ### Hide empty contributed sections in build results page
 
@@ -96,7 +96,7 @@ Agents of version 125 or newer are based on ASP.NET Core 2.0. Previously you cou
 
 ### Release trigger for a Package Management artifact
 
-Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/build-release/concepts/definitions/release/triggers#release-triggers) for more information.
+Now you can set a trigger on a **Package Management** artifact in a Release definition so that a new release is automatically created when a new version of the package has been published. See the [documentation for triggers in Release Management](/vsts/pipelines/release/triggers#release-triggers) for more information.
 
 ### Default artifact versions
 

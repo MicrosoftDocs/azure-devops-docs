@@ -2,7 +2,7 @@
 title: Requirement Test Status Excel Report (CMMI)  
 description: Use to determine gaps in test coverage and monitor test progress for each requirement.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 4e5ffafb-82fc-4aaa-b7bb-e5e47b239e7c

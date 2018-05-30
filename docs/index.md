@@ -181,9 +181,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Command-line tool</h3>
+                                                <h3>Tools</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                    <li><a class="barLink" href="demo-gen/index.md"><img src="_img/index/logo_vs-team-services.svg" alt="" />VSTS Demo Generator</a></li>
                                                 </ul>
                                             </div>
                                         </div>

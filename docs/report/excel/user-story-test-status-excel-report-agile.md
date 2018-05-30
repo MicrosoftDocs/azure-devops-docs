@@ -2,7 +2,7 @@
 title: User Story Test Status Excel Report (Agile)  
 description: Determine gaps in test coverage and monitor test progress for each user story.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bb10f6a4-25f0-4fcf-b0f2-789264d3ef27

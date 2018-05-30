@@ -19,7 +19,7 @@ Use Subversion for source control with VSTS or TFS for your Java project.
 
 ## Prerequisites
 
- - You have a VSTS Team Foundation  team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/build-release/apps/cd/azure/azure-devops-project-java). (Note: This will also create a VSTS Git repo, which you do not need to use. We will use the VSTS or TFS Team)
+ - You have a VSTS Team Foundation  team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/pipelines/apps/cd/azure/azure-devops-project-java). (Note: This will also create a VSTS Git repo, which you do not need to use. We will use the VSTS or TFS Team)
  - If you would rather use your own Subversion repository, you'll need the connection details for it and should be prepared to commit a change.
 
 In this guide, you will build a Java project (create a WAR file) using Maven. We will lead you through the steps to: 

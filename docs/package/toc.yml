@@ -16,6 +16,8 @@
     href: get-started-maven.md
 - name: Concepts
   items:
+  - name: Best practices
+    href: concepts/best-practices.md
   - name: Feeds
     href: concepts/feeds.md
     # - name: Deleted packages
@@ -37,17 +39,17 @@
     - name: NuGet
       items:
       - name: Restore Package Management NuGet packages
-        href: /vsts/build-release/packages/nuget-restore?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/packages/nuget-restore?toc=/vsts/package/toc.json
       - name: Publish Package Management NuGet packages
-        href: /vsts/build-release/packages/nuget-pack-publish?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/packages/nuget-pack-publish?toc=/vsts/package/toc.json
     - name: npm
       items:
       - name: Use Package Management npm packages
-        href: /vsts/build-release/packages/npm?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/packages/npm?toc=/vsts/package/toc.json
     - name: Maven
       items:
       - name: Use Package Management Maven packages
-        href: /vsts/build-release/packages/maven?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/packages/maven?toc=/vsts/package/toc.json
   - name: Use feeds
     items:
     - name: Create a feed
@@ -115,17 +117,19 @@
     - name: Use symbols in WinDbg
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
-      href: /vsts/build-release/symbols/index?toc=/vsts/package/toc.json
+      href: /vsts/pipelines/symbols/index?toc=/vsts/package/toc.json
     - name: Setting up GitHub SourceLinking
       href: symbols/setting-up-github-sourcelinking.md
   - name: Set up upstream sources
     href: how-to/set-up-upstream-sources.md
   - name: Set up Jenkins + NuGet
-    href: /vsts/build-release/packages/jenkins?toc=/vsts/package/toc.json
+    href: /vsts/pipelines/packages/jenkins?toc=/vsts/package/toc.json
   - name: Use badges to share your packages
     href: vsts-package-badges.md
   - name: Automatically delete old package versions
     href: how-to/retention-policies.md
+  - name: Follow a package for publish alerts
+    href: how-to/follow-package-notifications.md
 - name: Reference
   items:
   - name: Collaborate with packages

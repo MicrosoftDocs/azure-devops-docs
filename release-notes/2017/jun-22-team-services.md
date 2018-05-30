@@ -159,7 +159,7 @@ Coming soon you’ll see more changes. For example, the following hosted pools (
 > [!IMPORTANT]
 > We’re going to shut down the deprecated hosted XAML build controller on July 1st, 2017. After this shutdown, you’ll no longer be able to use hosted agents to run your XAML builds.
 
-We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](https://www.visualstudio.com/docs/build/actions/migrate-from-xaml-builds).
+We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](https://www.visualstudio.com/docs/pipelines/build/migrate-from-xaml-builds).
 
 However, if you still need to run XAML builds during the migration, then you should set up a private XAML build controller now. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see [I’m looking for the hosted XAML build controller. Where did it go?](https://www.visualstudio.com/en-us/docs/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go)
 
