@@ -38,7 +38,7 @@ automatically with each build.
 * [Run unit tests with your builds](getting-started-with-continuous-testing.md)
 * [Get started with Selenium testing](continuous-test-selenium.md)
 * [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-* [Learn more about test task steps](../tasks/index.md#test)
+* [Learn more about test tasks](../tasks/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 * [Speed up testing with Test Impact Analysis](test-impact-analysis.md)

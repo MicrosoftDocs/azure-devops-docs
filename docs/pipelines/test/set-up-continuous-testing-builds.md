@@ -39,10 +39,10 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    ![Edit build definition](_img/edit-build-definition.png)
    
-1. Choose the **+** icon for the process phase and add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution
-   and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** steps:
+1. Choose the **+** icon for the process phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
+   and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** tasks:
 
-   ![Add File Copy and PowerShell steps](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)
+   ![Add File Copy and PowerShell tasks](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)
 
 1. Add the details to copy your app from its drop location to its test environment:
 
@@ -72,7 +72,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    * Path to the PowerShell script used to deploy your app
 
-   ![Add step to deploy app with PowerShell](_img/set-up-continuous-testing-builds/run-powershell-details.png)
+   ![Add task to deploy app with PowerShell](_img/set-up-continuous-testing-builds/run-powershell-details.png)
 
 1. Save your build definition.
 
@@ -87,7 +87,7 @@ and run tests on platforms that don't have Visual Studio installed by using the
 
 If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
-1. In your build definition, add a **Window Machine File Copy** step with these details to deploy your tests:
+1. In your build definition, add a **Window Machine File Copy** task with these details to deploy your tests:
 
    * Source folder for your tests
 
@@ -99,7 +99,7 @@ If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
    ![Build definition, copy tests](_img/set-up-continuous-testing-builds/copy-tests.png)
 
-1. Add a step with these details to deploy the test agent for running your tests:
+1. Add a task with these details to deploy the test agent for running your tests:
 
    * List of machines where you want to deploy the test agent
 
@@ -115,7 +115,7 @@ If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
 ## Set up your tests to run with your build
 
-1. In your build definition, add a step with these details to run your tests with the test agent:
+1. In your build definition, add a task with these details to run your tests with the test agent:
 
    * List of machines where you want to run your tests
 
