@@ -1,13 +1,14 @@
 ---
 title: Build Changeset tables 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
@@ -36,4 +37,4 @@ For information about the measures and dimensions that are associated with these
 - [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 - [Find and view changesets](../../tfvc/find-view-changesets.md)   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build-release/overview.md) 
+- [Continuous integration on any platform](../../pipelines/overview.md) 

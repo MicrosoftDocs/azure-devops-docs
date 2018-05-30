@@ -748,7 +748,6 @@ To fix this problem, create another load test. Delete the failed test run.
 
 * [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
 * [NORAD Tracks Santa](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/01/23/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website.aspx)
-* [Eovendo - Ad Rating Service](http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000003474)
 
 **Blogs and other references**
 

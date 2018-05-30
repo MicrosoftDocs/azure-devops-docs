@@ -20,7 +20,7 @@ These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 ![Build task catalog for extensions in VSTS](_img/build-task-ext-choose-task.png)
 
 
-To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//build-release/overview.md). 
+To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:

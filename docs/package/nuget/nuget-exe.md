@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 **VSTS**
 
 > [!NOTE]
-> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore) and [publish](/vsts/build-release/packages/nuget-pack-publish) packages. 
+> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/pipelines/packages/nuget-restore) and [publish](/vsts/pipelines/packages/nuget-pack-publish) packages. 
 
 [!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
 

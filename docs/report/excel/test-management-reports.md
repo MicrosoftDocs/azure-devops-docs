@@ -2,7 +2,7 @@
 title: Test Management Reports
 description: Display the team-project information that is stored in the data warehouse.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 9d85d62d-00a2-4c9f-8ad8-d527b13b58f4

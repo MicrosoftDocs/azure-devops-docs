@@ -33,7 +33,7 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
 ## Add upstream sources to existing feed
 
 1. From your feed page, go to **Feed settings**
-2. On the upstream sources tab, if you don't have any upstream sources you will see the below dialog where you can choose "Add upstream source":
+2. On the upstream sources tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_:
 
     ![Add upstreams when no upstreams exist](_img/us-no-upstreams.png)
 
@@ -41,21 +41,29 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
 
     ![Add upstream soures to existing feed](_img/us-upstreams-exist.png)
 
-3. You will see the following menu:
-
-    ![Add upstream sources - choose upstream source type](_img/us-add-new-upstream.png)
-
-    Choose if you'd like to add public sources or VSTS feeds 
+3. You will see the following menu, choose if you'd like to add public sources or VSTS feeds 
 
     > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+
+    ![Add upstream sources - choose upstream source type](_img/us-add-new-upstream.png)
 
     For public sources, choose **npmjs** or **nuget**:
 
     ![Add public upstream sources](_img/us-add-public-source.png)
 
-    For VSTS feeds, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
+    > [!NOTE] 
+    > **Attention Microsoft Users:** For VSTS feeds, the steps are different depending on whether or not your VSTS account is in an organization or not.
+    
+    If your account **isn't** in an organization, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
 
     ![Add VSTS upstream sources](_img/us-add-vsts-source.png)
+
+    If your account **is** in an organization, input the **VSTS feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
+
+    ![Add VSTS upstream sources in an organization](_img/us-add-upstream-organization.png)
+
+### Adding VSTS feeds as upstream sources 
+    
 
 The view we picked is the "default view". The default view is covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default.
 

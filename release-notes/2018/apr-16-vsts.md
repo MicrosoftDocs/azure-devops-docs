@@ -105,7 +105,7 @@ You can now continuously deploy to [Azure Database for MySQL](https://azure.micr
 
 [Helm](https://github.com/kubernetes/helm/) is a tool that streamlines installing and managing Kubernetes applications. It has also gained a lot of popularity and community support in the last year. A Helm task in **Release** is now available for packaging and deploying Helm charts to [Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) or any other Kubernetes cluster.
 
-VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/vsts/build-release/apps/cd/azure/deploy-container-kubernetes?view=vsts) documentation for more information.
+VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/vsts/pipelines/apps/cd/azure/deploy-container-kubernetes?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![helm tasks](_img/133_09.png)

@@ -2,7 +2,7 @@
 title: Components of the SQL Server data warehouse 
 titleSuffix: TFS
 description: Understand the components of the Team Foundation Server data warehouse 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
@@ -43,7 +43,8 @@ The Team Foundation reporting warehouse is a traditional data warehouse consisti
  Each tool describes its contribution to the data warehouse in an XML schema. The schema specifies the fields that are written to the relational database as dimensions, measures, and details. The schema is also mapped directly into the cube.  
   
  The data in the warehouse are stored in a set of tables organized in a star schema. The central table of the star schema is called the fact table, and the related tables represent dimensions. Dimensions provide the means for disaggregating reports into smaller parts. A row in a fact table usually contains either the value of a measure or a foreign key reference to a dimension table. The row represents the current state of every item covered by the fact table. For example, the Work Item fact table has one row for every work item stored in Work Item operational store.  
-  
+ All the date and time information in the warehouse is stored in the configured time zone. This is useful for reporting because you can combine the data from multiple collection databases without worrying about time zone differences or converting from UTC. The time zone is set once when the Warehouse database is created. However, users can change the time zone during a full Warehouse rebuild.
+
  A dimension table stores the set of values that exist for a given dimension. Dimensions may be shared between different fact tables and cubes, and they may be referenced by a single fact table or data cube. A Person dimension, for example, will be referenced by the Work Items fact table for Assigned To, Opened By, Resolved By, and Closed By properties, and it will be referenced by the Code Churn fact table for the Checked In By property.  
   
  Measures are values taken from the operational data. For example, Total Churn is a measure that indicates the number of source code changes in the selected changesets. Count is a special measure in that it can be implicit, as long as there is one record for every item that is counted. The measures defined in a fact table form a measure group in the cube.  

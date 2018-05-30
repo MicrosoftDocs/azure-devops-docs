@@ -2,7 +2,7 @@
 title: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
 titleSuffix: TFS
 description: TFS SharePoint integration - Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge

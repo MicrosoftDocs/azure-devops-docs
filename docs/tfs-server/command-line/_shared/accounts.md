@@ -146,7 +146,7 @@ Use the **Accounts** command to automate changes to the service accounts, databa
 Before you change the domain or workgroup of an account, the account must have the <span sdata="langKeyword" value="Account is sensitive and cannot be delegated"> Account is sensitive and cannot be delegated </span> permission on the application-tier server. For more information, see this page on the Microsoft Web site: [Enabling Delegated Authentication](http://go.microsoft.com/fwlink/?LinkId=98742).
 
 The **Accounts** command supports on-premises TFS deployments. To change the account owner of a VSTS account, 
-see [Change account ownership](http://www.visualstudio.com/get-started/change-account-ownership-vs).
+see [Change account ownership](../../../accounts/change-account-ownership-vs.md).
 
 ### Examples
 

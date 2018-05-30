@@ -301,14 +301,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../pipelines/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](../build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md)
+[Connect Release Management to TFS](../pipelines/archive/release/previous-version/install-release-management/connect-to-tfs.md)
 
 
 | Component | Sample user logon name (1) | Requirements |
@@ -643,7 +643,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 **TFS 2018 discontinues support for the XAML build system.**
 
-We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
+We've built a brand new [scriptable build system](../pipelines/overview.md) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the XAML build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 

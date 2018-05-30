@@ -1,7 +1,7 @@
 ---
 title: Bug Status Report 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 

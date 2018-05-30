@@ -79,6 +79,9 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 	![Navigator dialog, default views](../analytics/_img/default-views/navigator-dialog-default-views.png)
 
+	> [!NOTE]
+	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset.  The data is truncated only for the preview and will not impact the full data refresh.
+
 	Click *Work Items - Today* table and wait for the preview to load.
 	It represents the current state of all Work Items in the project.
 
