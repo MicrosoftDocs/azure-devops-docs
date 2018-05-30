@@ -146,7 +146,7 @@ Here is a description of some of the components of the `task.json` file.
 >[!NOTE]
 >For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./build-task-schema.md)**
 
-You can explore the **[vso-agent-tasks](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)** repository on GitHub for multiple examples ([Grunt](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Grunt) is a good one).        
+You can explore the **[vso-agent-tasks](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)** repository on GitHub for multiple examples ([Grunt](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/GruntV0) is a good one).        
 
 <a name="extensionmanifest" />
 ## Step 2: Create the extension manifest file
