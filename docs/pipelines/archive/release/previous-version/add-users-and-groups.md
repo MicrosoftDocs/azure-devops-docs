@@ -128,7 +128,7 @@ example, you can restrict access based on one or more of the following
 functional user roles. You can define these groups in TFS, AD, or through the 
 Release Management client itself: 
 
-* **Approvers**: These users approve or validate a step or stage during a 
+* **Approvers**: These users approve or validate a task or stage during a 
   release cycle. They need the **Edit Approvals and Environment** permission set 
   for all stage types that they will be required to approve. 
 

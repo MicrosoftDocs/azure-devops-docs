@@ -153,7 +153,7 @@ release definition in Release Management.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the environment, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent steps. The default name of the environment variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the environment variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
 
 1. The next stage is to execute the script you created earlier
    to collect the details of the DevTest Labs VM.
@@ -176,7 +176,7 @@ release definition in Release Management.
    
    >The script collects the values you will require and stores them in 
    environment variables within the release definition so that you can
-   easily refer to them in subsequent task steps.
+   easily refer to them in subsequent tasks.
 
 1. Now you can deploy your app to the new DevTest Labs VM.
    The tasks you will typically use for this are

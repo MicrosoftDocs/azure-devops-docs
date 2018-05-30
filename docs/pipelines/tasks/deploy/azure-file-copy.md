@@ -1,6 +1,6 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure File Copy
-description: VSTS and Team Foundation Server build task step to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
+description: VSTS and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -75,8 +75,8 @@ None
 | **Copy in Parallel** | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes the process to execute in parallel for the copied files. This can considerably reduce the overall time taken. |
 | **Clean Target** | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes all of the files in the destination folder to be deleted before the copy process starts. |
 | **Test Certificate** | Available if you select **Azure VMs** for the **Destination Type** parameter. WinRM requires a certificate for the HTTPS transfer when copying files from the intermediate storage blob into the Azure VMs. If you set use a self-signed certificate, set this option to prevent the process from validating the certificate with a trusted certificate authority (CA). |
-| **Output - Storage Container URI** | Optional. The name of a variable that will be updated with the URI of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. |
-| **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent task steps. By default, the SAS token expires after 4 hours. |
+| **Output - Storage Container URI** | Optional. The name of a variable that will be updated with the URI of the storage container into which the files were copied. Use this variable as an input to subsequent tasks. |
+| **Output - Storage Container SAS Token** | Optional. The name of a variable that will be updated with the Storage Access Security (SAS) token of the storage container into which the files were copied. Use this variable as an input to subsequent tasks. By default, the SAS token expires after 4 hours. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## Related tasks

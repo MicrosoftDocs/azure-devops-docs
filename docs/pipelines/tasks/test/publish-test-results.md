@@ -1,5 +1,5 @@
 ---
-title: VSTS and TFS Build and Test - Publish Test Results step
+title: VSTS and TFS Build and Test - Publish Test Results task
 description: Publish Test Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
 ms.prod: devops

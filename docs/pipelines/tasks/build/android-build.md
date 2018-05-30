@@ -137,6 +137,6 @@ Check if you want the AVD to be deleted upon completion.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Related steps
+## Related tasks
 
 [Android Signing](android-signing.md)

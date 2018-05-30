@@ -77,13 +77,13 @@ None
 
 ### Q: This step didn't produce the outcome I was expecting. How can I fix it?
 
-This step has a couple of known issues:
+This task has a couple of known issues:
 
 * Some minimatch patterns don't work.
 
 * It eliminates the most common root path for all paths matched.
 
-You can avoid these issues by instead using the [Copy Files step](copy-files.md) and the [Publish Build Artifacts step](publish-build-artifacts.md).
+You can avoid these issues by instead using the [Copy Files task](copy-files.md) and the [Publish Build Artifacts task](publish-build-artifacts.md).
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 
