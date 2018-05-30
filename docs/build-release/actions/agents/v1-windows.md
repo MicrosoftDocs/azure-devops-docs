@@ -30,7 +30,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you may ne
 
 Before you begin, make sure your agent machine is prepared with these prerequisites:
 
-* An [operating system that is supported by Visual Studio 2013](http://www.visualstudio.com/products/visual-studio-2013-compatibility-vs) or newer
+* An [operating system that is supported by Visual Studio 2013](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2013-compatibility-vs) or newer
 
 * Visual Studio 2013 or Visual Studio 2015
 
