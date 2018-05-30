@@ -2577,12 +2577,12 @@
     },
     {
       "source_path": "docs/release/getting-started/concurrent-pipelines-ts.md",
-      "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-jobs-vsts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/release/getting-started/concurrent-pipelines-vsts.md",
-      "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-jobs-vsts",
       "redirect_document_id": false
     },
     {
@@ -5617,7 +5617,7 @@
     },
     {
       "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-ts.md",
-      "redirect_url": "/vsts/pipelines/licensing/concurrent-pipelines-ts",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-jobs-vsts",
       "redirect_document_id": true
     },
     {
