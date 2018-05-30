@@ -29,7 +29,7 @@ or when a VSTS build finishes.
 3. If your team project uses Team Foundation version control and not Git, install the [TFS respository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
 
 ## Enable VSTS basic authentication
-1. If you haven't already, enable [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) in your VSTS profile.
+1. If you haven't already, enable [alternate credentials](../../git/auth-overview.md#alternate-credentials) in your VSTS profile.
 Be sure to set a secondary user name because you won't be able to use your email address
 to connect VSTS to Bamboo.
 
@@ -42,7 +42,7 @@ to connect VSTS to Bamboo.
 2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in VSTS.
 The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollection/_git/{team project name}```.
 
-3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) of a VSTS account with read access to the repository. 
+3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](../../git/auth-overview.md#alternate-credentials) of a VSTS account with read access to the repository. 
 
    <img alt="Repository settings with Git selected" src="./_img/bamboo/repository-management-settings.png" style="border: 1px solid #CCCCCC" />
 

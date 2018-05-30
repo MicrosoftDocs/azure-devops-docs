@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 5/18/2018
+ms.date: 5/30/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -96,6 +96,21 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+
+        <tr>
+            <td rowspan="11">[30 May 2018](2018/may-30-vsts.md)</td>
+            <td>Import and export Inherited Processes</td><td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr><td>Customize column options in the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Receive notifications when pull request policies are bypassed</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Favorite a branch from within a pull request</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Visualize release progress</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Run inline or file-based Python scripts in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use Anaconda tools for data science in your pipeline</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Simplify definitions with multiple agentless tasks per phase</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Manage limits on self-hosted, concurrent CI/CD jobs</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
+        <tr><td>Streamline authentication from agent VMs to Azure Resource Manager</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Guard your user account using alternate authentication notifications</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr>
             <td rowspan="15">[7 May 2018](2018/may-07-vsts.md)</td>
             <td>Query for empty rich text fields</td><td style="background:rgb(232, 232, 232);">*2019*</td>
@@ -138,7 +153,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr><td>Perform TFVC commands right from Windows Explorer</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Chain related builds together using build completion triggers</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Scale deployments to VMs using Deployment Groups</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Build applications written in Go</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Extend release gates with task extensions</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
         <tr><td>Use upstream npm packages from elsewhere in VSTS</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
@@ -155,7 +170,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Focus on important work using the Work Items hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Query work across the iteration schedule with +/- @CurrentIteration</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Clarify query iteration schedules with the @CurrentIteration Team parameter</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
+        <tr><td>Improve release times by partially downloading artifacts</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Retain more control of your app by deploying your Azure DevOps Project to a Virtual machine</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Improve code quality with the latest extensions from SonarSource</td><td style="background:rgb(232, 232, 232);">N/A</td></tr>
         <tr><td>Trace GitHub sources to builds using build tags</td><td style="background:rgb(231, 179, 249);">*2018.2*</td></tr>
