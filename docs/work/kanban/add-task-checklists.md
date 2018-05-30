@@ -31,7 +31,7 @@ With task checklists, you continue to enjoy lightweight tracking, while gaining 
 ::: moniker-end
 
 In this topic, you'll learn: 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add a task or set of tasks to a backlog item from your Kanban board  
 > * How to mark a task as done 
 > * How to expand or collapse the task checklist  

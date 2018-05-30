@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 
 # Enter client credentials in Power BI or Excel when connecting to the Analytics Service 
 
-[!INCLUDE¬†[temp](../../_shared/version-vsts-only.md)]¬†
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s).
 
@@ -23,7 +23,7 @@ In general, the order of authentication options should be the following (in orde
 
 ## Azure Active Directory (AAD) 
 
-"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through ‚ÄúOAuth2‚Äù selection when configuring data refresh.
+"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through ÄúOAuth2Äù selection when configuring data refresh.
 
 When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Organizational account as shown here:
 

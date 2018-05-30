@@ -259,7 +259,7 @@ From the **Modeling** tab, choose **New Column** and then relace the default tex
 State Time in Days - In Progress = 
 CALCULATE (
     SUM ( 'View Name'[Date Diff in Days] ),
-    ALLEXCEPT 'View Name', 'View Name'[Work Item Id] ),
+    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
    'View Name'[Date] <= EARLIER('View Name'[Date]),
    'View Name'[State] = "In Progress"
 ) + 0
@@ -374,7 +374,7 @@ From the **Modeling** tab, choose **New Column** and then relace the default tex
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
 State Flow = 
-IF([State Changed], [State Previous], [State]) & " ➡ " & [State]
+IF([State Changed], [State Previous], [State]) & " ž¡ " & [State]
 ```
 
 ## Add *State Change Count* 

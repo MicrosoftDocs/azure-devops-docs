@@ -33,13 +33,13 @@ Customizations you make occur at one of three levels:
 
 Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](about-areas-iterations.md). 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Area path pick lists | Sprint/iteration pick lists |
 > |-------------|----------| 
 > |Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../../user-guide/_img/features/alm-feature-define-sprints.png) |
  
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |Shared queries | Tags | 
 > |-------------|----------| 
 > |Open shared queries or create your own<br/>query using the [query editor](../track/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   

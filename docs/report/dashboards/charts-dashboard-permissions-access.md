@@ -20,7 +20,7 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 
 For an overview of dashboard and chart features, see [Dashboards, charts, & widgets](overview.md). 
 
-[!INCLUDE [temp](../../security/_shared/report.md)]
+[!INCLUDE [temp](../../security/_shared/report.md)]
 
 
 ## Related notes

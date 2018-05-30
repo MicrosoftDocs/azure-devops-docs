@@ -16,7 +16,7 @@ ms.date: 11/13/2017
 
 # Query guidelines for Analytics with OData
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Visual Studio Team Services (VSTS). Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
@@ -322,7 +322,7 @@ To resolve this problem, use the OData batch endpoint as explained in the specif
 
 We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation will fail with the following error message. The only solution is to split queries into multiple requests.
 
-> *The Analytics Service doesnâ€™t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
+> *The Analytics Service doesn€™t support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 <a name="question-41401"></a>
 ### ? AVOID creating very long queries
