@@ -3,7 +3,7 @@ title: Understand the new queries experience
 titleSuffix: VSTS & TFS
 description: Available features provided with the new Queries hub layout in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
-ms.technology: vs-azure-devops-agile 
+ms.technology: devops-agile
 ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC 
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

@@ -53,6 +53,6 @@
   - name: Manual and exploratory testing
     href: ../manual-test/index.md
   - name: Continuous testing
-    href: ../build-release/test/index.md
+    href: ../pipelines/test/index.md
   - name: Unit testing
     href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

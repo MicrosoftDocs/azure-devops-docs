@@ -16,9 +16,9 @@ ms.date: 01/17/2017
 
 # Example reports for Power BI Data Connector
 
-<b>VSTS</b>
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-This document provides guidenace on how to generate the following example reports in Power BI: 
+This document provides guidanace on how to generate the following example reports in Power BI: 
 
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  

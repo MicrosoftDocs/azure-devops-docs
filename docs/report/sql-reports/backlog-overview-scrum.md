@@ -1,7 +1,7 @@
 ---
 title: Backlog overview (Scrum) 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  

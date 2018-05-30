@@ -110,7 +110,7 @@
     - name: Configure branch policy for an external service
       href: how-to/pr-status-policy.md
   - name: Define a CI build for your repo
-    href: ../build-release/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../pipelines/build/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
@@ -150,7 +150,7 @@
   - name: Map TFVC actions to Git
     href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
-    href: ../build-release/concepts/definitions/build/triggers.md
+    href: ../pipelines/build/triggers.md
   - name: Work with tags
     href: how-to/git-tags.md
 - name: Reference

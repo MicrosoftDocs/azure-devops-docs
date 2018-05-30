@@ -1,7 +1,7 @@
 ---
 title: Create a Report Server Project
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: Use SQL Server Report Designer to create a report to track the team's progress by-Team Foundation Server 

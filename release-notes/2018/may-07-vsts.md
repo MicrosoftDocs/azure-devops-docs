@@ -10,8 +10,9 @@ The **Sprint 134 Update** of Visual Studio Team Services (VSTS) brings better su
 
 A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also available to make it easy to demo and learn VSTS using a rich set of sample data and configuration.
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/PdK20jBqaPM?rel=0]
 
 ## Features
 
@@ -90,7 +91,7 @@ The hosted agent machines running Linux, macOS, and Windows now have Java 10 pre
 
 ### Progressively expose and phase deployments using release gates, now generally available
 
-Release gates, which enable data-driven approval of deployments, now becomes generally available! Using release gates, you can specify application health criteria that must be met before a release is promoted to the next environment. All the specified gates are periodically evaluated prior to or after any deployment, until they are all successful. Four types of gates are available out of the box and you can add more gates from the [Marketplace](https://marketplace.visualstudio.com/search?term=tag%3AReleaseGates&target=VSTS&category=All%20categories&sortBy=Relevance). You will be able to audit that all the necessary criteria for a deployment were met. See the [documentation for release gates](/vsts/build-release/concepts/definitions/release/approvals/gates) for more information.
+Release gates, which enable data-driven approval of deployments, now becomes generally available! Using release gates, you can specify application health criteria that must be met before a release is promoted to the next environment. All the specified gates are periodically evaluated prior to or after any deployment, until they are all successful. Four types of gates are available out of the box and you can add more gates from the [Marketplace](https://marketplace.visualstudio.com/search?term=tag%3AReleaseGates&target=VSTS&category=All%20categories&sortBy=Relevance). You will be able to audit that all the necessary criteria for a deployment were met. See the [documentation for release gates](/vsts/pipelines/release/approvals/gates) for more information.
 
 > [!div class="mx-imgBorder"]
 ![Release gates panel](_img/134_09.png)
@@ -99,21 +100,21 @@ Release gates, which enable data-driven approval of deployments, now becomes gen
 
 [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/container-service/), a fully managed Kubernetes service in Azure, can now be targeted when starting a new Node.js, .NET Core, or Java-based app in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/). You can also start with your existing application by bringing your own code. Simply select an application language, a runtime, and then AKS. The DevOps Project will create the AKS cluster and set up a continuous delivery pipeline using Helm Charts.
 
-You can also target [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) for new .NET Core apps in DevOps Projects. This gives you yet another option to get started on a new project that includes a full DevOps pipeline, whether you want to retain the control of a VM, keep the simplicity of a web app, or optimize for high scale. See the tutorial documentation for [AKS](/vsts/build-release/actions/azure-devops-project-aks?view=vsts) and [Service Fabric](/vsts/build-release/actions/azure-devops-project-servicefabric?view=vsts) documentation for more information.
+You can also target [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) for new .NET Core apps in DevOps Projects. This gives you yet another option to get started on a new project that includes a full DevOps pipeline, whether you want to retain the control of a VM, keep the simplicity of a web app, or optimize for high scale. See the tutorial documentation for [AKS](/vsts/pipelines/actions/azure-devops-project-aks?view=vsts) and [Service Fabric](/vsts/pipelines/actions/azure-devops-project-servicefabric?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Select an Azure Service to deploy the application](_img/134_11.png)
 
 ### Deploy to Azure SQL Database using Azure DevOps Projects
 
-[Azure SQL Database](https://azure.microsoft.com/services/sql-database/), a fully managed relational cloud database, can now be targeted in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/), when starting a new .NET app and selecting ASP.NET as runtime. You can add the SQL Database to your .NET app by simply selecting **Add a database**. The DevOps Project will create a sample two-tier, connected application, including a continuous delivery pipeline for both the tiers. See the [tutorial](/vsts/build-release/actions/azure-devops-project-sqldb?view=vsts) documentation for more information.
+[Azure SQL Database](https://azure.microsoft.com/services/sql-database/), a fully managed relational cloud database, can now be targeted in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/), when starting a new .NET app and selecting ASP.NET as runtime. You can add the SQL Database to your .NET app by simply selecting **Add a database**. The DevOps Project will create a sample two-tier, connected application, including a continuous delivery pipeline for both the tiers. See the [tutorial](/vsts/pipelines/actions/azure-devops-project-sqldb?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Add a database](_img/134_10.png)
 
 ### Release hybrid applications to Azure Stack
 
-Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/vsts/build-release/concepts/library/service-endpoints?view=vsts#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/vsts/build-release/concepts/library/azure-stack?view=vsts) documentation for more information.
+Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/vsts/pipelines/library/service-endpoints?view=vsts#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/vsts/pipelines/library/azure-stack?view=vsts) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Connect to Azure](_img/134_08.png)
@@ -175,7 +176,7 @@ The [Demo Generator](https://vstsdemogenerator.azurewebsites.net/) helps you cre
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 
-Check out the [documentation](https://github.com/Microsoft/almvm/tree/master/labs/vsts/VSTSDemoGenerator) for step-by-step instructions for using the Generator.
+Check out the [documentation](https://docs.microsoft.com/vsts/demo-gen) for step-by-step instructions for using the Generator.
 
 ## Next steps and Feedback
 

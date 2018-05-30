@@ -49,7 +49,7 @@ You will only need to make a couple of basic decisions, and when upgrading
 from TFS 2012 or TFS 2013 the settings from your previous deployment will be remembered for you.
 
 By default, the TFS 2015 Express upgrade will install and configure a build agent for the 
-[new TFS 2015 build system](../../build-release/overview.md), and will set it up to start automatically
+[new TFS 2015 build system](../../pipelines/overview.md), and will set it up to start automatically
 so that you can start using it right away after your upgrade. If you do not want to use the 
 new build system, you can uncheck the box to turn the agent off.
 

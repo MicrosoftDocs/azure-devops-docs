@@ -1,5 +1,5 @@
 ---
-title:  Progressively exposure your features using feature flags 
+title:  Progressively expose your features using feature flags 
 description: Explore how to progressively expose your features in production for some or all users 
 ms.prod: devops
 ms.topic: article
