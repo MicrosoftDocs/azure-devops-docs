@@ -94,6 +94,7 @@ If two people are working on the same file at the same time, they must work toge
 Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
 Users must still take care to always pull the latest copy of a binary asset before beginning work.
 0. VSTS currently does not support using SSH in repos with Git LFS tracked files.   
+0. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, [the binary will be committed to the repo](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/34265377-drag-and-drop-lfs-files-into-web-gui) and not the pointers that would be committed via the Git LFS client.
 
 ### File format
 
