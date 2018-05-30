@@ -16,7 +16,7 @@ ms.date: 2/14/2018
 
 # Connect using Power Query and Visual Studio Team Services (VSTS) functions 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Data Connector for VSTS includes Power Query M functions which can be used by query authors. These functions can handle VSTS specific requirements, such as authentication for you. This topic will describe the arguments for the functions and how to use them to connect to Analytics. 
 

@@ -64,7 +64,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
  
 ## Your team, working software and the Definition of Done  
 
-One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
+One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
 
 > *All agile teams must establish what they mean when they say "working software," which is frequently known as the definition of done. At a high level, a piece of functionality is complete only when its features pass all tests and can be operated by an end user. At a minimum, teams must go beyond the unit test level and test at the system level. The best teams also include integration testing, performance testing, and customer acceptance testing in their definition of what it means to be done with a piece of functionality.* &mdash; Jeff Sutherland
 

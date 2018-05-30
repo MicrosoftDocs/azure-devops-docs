@@ -30,7 +30,7 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 In this topic you'll learn:  
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
@@ -38,7 +38,7 @@ In this topic you'll learn:
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
@@ -98,7 +98,7 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]Â 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  

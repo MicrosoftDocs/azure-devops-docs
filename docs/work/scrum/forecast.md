@@ -19,7 +19,7 @@ Teams use the forecast tool to help in their sprint planning efforts. By pluggin
 
 Use this topic to learn: 
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to forecast upcoming sprints     
 > * Required and recommended team activities to support forecasting       
 

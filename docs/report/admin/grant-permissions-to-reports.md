@@ -83,7 +83,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 	![Add member to Tfs_Analysis data reader role](_img/IC665046.png)
 
 > [!IMPORTANT]  
-> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  Â 
+> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.   
 
 
 ##Try this next

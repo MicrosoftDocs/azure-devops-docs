@@ -13,7 +13,7 @@ ms.date: 03/23/2018
 
 # Configure a cumulative flow chart
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
 

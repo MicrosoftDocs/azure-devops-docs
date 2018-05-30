@@ -23,7 +23,7 @@ One of the ways your team can drive their development and stay in sync is to lin
 <!---
 Review this topic to learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to create a new branch or pull request from a work item   
 > * Complete the pull request  
 > * Perform a squash merge  

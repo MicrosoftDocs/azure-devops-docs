@@ -15,10 +15,10 @@ ms.date: 04/06/2016
 
 # Create trend charts
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 
-[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
+[!INCLUDE [temp](../_shared/content-pack-deprecation.md)]  
 
 Trend charts show progress or activity over time. Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity. 
 

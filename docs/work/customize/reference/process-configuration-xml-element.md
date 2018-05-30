@@ -772,7 +772,7 @@ Here we show how it appears in the work item form:
 **Details:**
 - You must specify the color as an eight-digit hexidecimal value, similar to that used for the color defined for a WIT    
 - To add or edit colors, simply reimport your process configuration with the updated property  
-- State colors are defined by name across all work item types, i.e., there is no way to have â€œActive" be one color for User Story and a different color for Bug    
+- State colors are defined by name across all work item types, i.e., there is no way to have "Active" be one color for User Story and a different color for Bug    
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  
 - States with no color defined, and no meta-state mapping will show an empty circle.  
 

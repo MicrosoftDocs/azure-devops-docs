@@ -53,32 +53,32 @@ select @TeamProjectCollectionGuid = pc.ProjectNodeGUID from DimTeamProject p inn
 
 ```  
 select   
-Â Â Â Â d.DateSK  
-Â Â Â  ,wi.System_Title  
-Â Â Â  ,wi.System_Id  
-Â Â Â  ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_CompletedWork),   0) as Total_CompletedWork, -- Finds the total number of hours of completed work.  
+    d.DateSK  
+    ,wi.System_Title  
+    ,wi.System_Id  
+    ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_CompletedWork),   0) as Total_CompletedWork, -- Finds the total number of hours of completed work.  
     coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_OriginalEstimate), 0) as Total_OriginalEstimate --Finds the total number of hours of original estimate.  
-Â Â Â  ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_RemainingWork), 0) as Total_RemainingWork--Finds the total number of hours of remaining work.  
-Â Â Â  ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_StoryPoints), 0) as Total_StoryPoints --Finds the total story points.  
+    ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_RemainingWork), 0) as Total_RemainingWork--Finds the total number of hours of remaining work.  
+    ,coalesce(sum(wih_child.Microsoft_VSTS_Scheduling_StoryPoints), 0) as Total_StoryPoints --Finds the total story points.  
 from  
-Â Â Â  DimDate d  
+    DimDate d  
 cross apply  
-Â Â Â  DimWorkItem wi  
+    DimWorkItem wi  
 cross apply  
-Â Â Â  GetWorkItemsTree(@TeamProjectCollectionGuid, wi.System_Id,        
+    GetWorkItemsTree(@TeamProjectCollectionGuid, wi.System_Id,        
 N'Child', d.DateSK) wit   
-left joinÂ Â Â Â Â Â Â Â Â Â   
-Â Â Â  FactWorkItemHistory wih_childÂ Â    
-Â Â Â Â Â Â Â  on wih_child.WorkItemSK = wit.ChildWorkItemSK  
+left join            
+    FactWorkItemHistory wih_child     
+        on wih_child.WorkItemSK = wit.ChildWorkItemSK  
 where  
-Â Â Â  d.DateSK >= N'2009-09-21 00:00:00.000'   
-Â Â Â Â and d.DateSK <= N'2009-9-30 00:00:00.000'  
-Â Â Â  and wi.TeamProjectSK = @TeamProjectNodeSK   
-Â Â Â  and wi.System_WorkItemType = N'User Story'   
-Â Â Â  and wi.System_ChangedDate <= d.DateSK  
-Â Â Â  and wi.System_RevisedDate > d.DateSK  
-Â Â Â  and wi.System_State = N'Active'  
-Â Â Â  and (wih_child.RecordCount != -1 or wih_child.RecordCount is null)  
+    d.DateSK >= N'2009-09-21 00:00:00.000'   
+    and d.DateSK <= N'2009-9-30 00:00:00.000'  
+    and wi.TeamProjectSK = @TeamProjectNodeSK   
+    and wi.System_WorkItemType = N'User Story'   
+    and wi.System_ChangedDate <= d.DateSK  
+    and wi.System_RevisedDate > d.DateSK  
+    and wi.System_State = N'Active'  
+    and (wih_child.RecordCount != -1 or wih_child.RecordCount is null)  
 group by d.DateSK, wi.System_Id, wi.System_Title  
 ```  
   

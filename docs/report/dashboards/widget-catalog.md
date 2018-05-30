@@ -40,9 +40,9 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
-> |AnalyticsÂ Â |Team-scopedÂ Â |User-focusedÂ |Â Â Build, test, release |Other |
+> |Analytics  |Team-scoped  |User-focused |  Build, test, release |Other |
 > |-------------|----------|---------|---------|---------|
-> |-Â [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release definition overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
+> |- [Burndown chart](#burndown-analytics-widget)<br/>- [Burnup chart](#burnup--analytics-widget)<br/>- [Cumulative flow diagram](#cfd-widget)<br/>- [Cycle time](#cycle-time-widget)<br/>- [Lead time](#lead-time-widget)<br/>- [Velocity](#velocity-widget) |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Release definition overview](#release-definition-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) | 
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Team-scopedÂ Â |User-focusedÂ |Â Â Build, test, release |Other |Â Â 
+> |Team-scoped  |User-focused |  Build, test, release |Other |  
 > |----------|---------|---------|---------|
 > |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget)<br/>- [Chart for test plans](#chart-test-plan-widget)<br/>- [Deployment status](#deployment-status-widget)<br/>- [Requirements quality](#requirements-quality-widget)<br/>- [Test results trend](#test-results-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Embedded web page](#embedded-webpage-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |  
  
@@ -64,7 +64,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
-> |Team-scopedÂ Â |User-focusedÂ |Â Â Build, test, release |Other |Â Â 
+> |Team-scoped  |User-focused |  Build, test, release |Other |  
 > |----------|---------|---------|---------|
 > |- [New Work item](#new-work-item-widget)<br/>- [Other links](#other-links-widget)<br/>- [Pull request](#pull-request-widget)<br/>- [Sprint burndown](#sprint-burndown-widget)<br/>- [Sprint capacity](#sprint-capacity-widget)<br/>- [Sprint overview](#sprint-overview-widget)<br/>- [Team members](#team-members-widget)<br/>- [Team room](#team-room-widget)<br/>- [Work links](#work-links-widget) |- [Assigned to me](#assigned-to-me-widget)<br/>- [Pull request](#pull-request-widget) |- [Chart for build history](#build-history-widget) |- [Code tile](#code-tile-widget)<br/>- [Chart for work items](#chart-wit-widget)<br/>- [Query results](#query-results-widget)<br/>- [Query tile](#query-tile-widget)<br/>- [Markdown](#markdown-widget)<br/>- [Visual Studio Shortcuts](#visual-studio-widget)<br/>- [Welcome](#how-to-widget) |   
 ::: moniker-end
@@ -97,7 +97,7 @@ Requires TFS 2015.1 or later version.
 <!---
 > [!NOTE]  
 > **<b>Feature availability:** Available from VSTS or TFS 2015.2 or later version. 
--->Â Â 
+-->  
 
 Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
 
@@ -123,7 +123,7 @@ Requires TFS 2015.2 or later version.
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS and TFS 2017. Â Â 
+> **Feature availability:** You can access this widget from VSTS and TFS 2017.   
 -->
 
 Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
@@ -144,7 +144,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.  Â Â 
+Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -162,7 +162,7 @@ Work items that you add using this widget are automatically scoped to the team's
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.  Â Â 
+Requires TFS 2015.1 or later version.    
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -302,7 +302,7 @@ To add Analytics widgets to your dashboard, you first need to install the [Analy
 <a id="burndown-analytics-widget"></a>  
 	
 ![Burndown chart widget](_img/widget-burndown-chart.png)  
-Â Â 
+  
 Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
 ----
@@ -310,7 +310,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 ##&nbsp;&nbsp;&nbsp;Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
 
-![Burnup chart widget](_img/widget-burnup-chart.png)  Â Â 
+![Burnup chart widget](_img/widget-burnup-chart.png)    
 
 Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
@@ -345,7 +345,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ##&nbsp;&nbsp;&nbsp;Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
-Â 
+ 
 Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created. 
 
 Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.
@@ -357,7 +357,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
-The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service.Â You can track the velocity for a single team, not multiple teams.    
+The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    
 For additional guidance, see [Velocity](team-velocity.md). 
 
 ----
@@ -380,7 +380,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version. Â 
+> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version.  
 -->
 
 Adds a tile to display a histogram of all builds run for the configured build definition.
@@ -404,8 +404,8 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#test-quality) to add other supported chart types to a dashboard.  Â 
--->Â 
+> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#test-quality) to add other supported chart types to a dashboard.   
+--> 
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
@@ -429,7 +429,7 @@ Requires TFS 2017.2 or later version.
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions. Â 
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions.  
 -->
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
@@ -451,7 +451,7 @@ Requires TFS 2017.1 or later version.
 
 <!---
 > [!NOTE]  
-> **Feature availability:**  You can access this widget from VSTS. Â Â 
+> **Feature availability:**  You can access this widget from VSTS.   
 -->
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
@@ -470,7 +470,7 @@ Configurable widget that you can use to view and track the status of a release d
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017. Â Â 
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 -->
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
@@ -489,7 +489,7 @@ To learn more, see [Associate automated test results with requirements](../../pi
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017. Â Â 
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 -->
 
 Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build definition. 
@@ -527,7 +527,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 
 <!---
 > [!NOTE]  
-> **Feature availability:** For VSTS and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository. Â 
+> **Feature availability:** For VSTS and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
 -->
 
 ::: moniker-end
@@ -538,7 +538,7 @@ Adds a configurable tile to display any type of information, guidance, or links 
 ::: moniker range="tfs-2015"
 Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
 
-Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository. Â Â 
+Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ---- 
@@ -558,7 +558,7 @@ For team admins, supports access to the quick dialog to [add or remove team memb
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.  Â Â 
+Requires TFS 2015.1 or later version.    
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -572,7 +572,7 @@ Requires TFS 2015.1 or later version.  Â Â 
 ![Team room widget](_img/widget-team-room.png)
 
 Provides status and access to [team rooms](../../collaborate/collaborate-in-a-team-room.md). Available for TFS 2015.1 through TFS 2017.2 versions.  
-Â Â 
+  
 Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
 
 > [!NOTE]  
