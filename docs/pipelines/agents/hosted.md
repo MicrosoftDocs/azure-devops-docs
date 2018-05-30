@@ -85,7 +85,7 @@ By default, all project contributors in an account have access to the hosted age
 
 ### I need more agents. What can I do?
 
-A: All VSTS accounts are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent pipelines](../licensing/concurrent-pipelines-ts.md).
+A: All VSTS accounts are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent pipelines](../licensing/concurrent-jobs-vsts.md).
 
 ### I'm looking for the hosted XAML build controller. Where did it go?
 

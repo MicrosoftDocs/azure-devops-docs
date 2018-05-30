@@ -157,7 +157,7 @@ For the last several months, we have disabled concurrency checks for jobs that y
 
 Starting in June, we will gradually re-enable the concurrency checks for self-hosted jobs. Consequently, your builds and deployments may wait longer in the queue if those slots are occupied by other running jobs. The log page in a build or release will indicate this when you are waiting for other jobs to finish.
 
-You can learn more about concurrency limits in the [CI/CD Concurrent Jobs in Team Services](/vsts/pipelines/licensing/concurrent-pipelines-ts) documentation. You can check your concurrency limits in the VSTS by going to Account Settings -> Build and Release -> Resource limits.
+You can learn more about concurrency limits in the [CI/CD Concurrent Jobs in Team Services](/vsts/pipelines/licensing/concurrent-jobs-vsts) documentation. You can check your concurrency limits in the VSTS by going to Account Settings -> Build and Release -> Resource limits.
 
 ### Streamline authentication from agent VMs in Azure to Azure Resource Manager
 

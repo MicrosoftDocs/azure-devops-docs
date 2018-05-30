@@ -170,8 +170,8 @@
     items:
     - name: Pipelines in TFS
       href: licensing/concurrent-pipelines-tfs.md
-    - name: Pipelines in VSTS
-      href: licensing/concurrent-pipelines-ts.md
+    - name: Jobs in VSTS
+      href: licensing/concurrent-jobs-vsts.md
   - name: Library
     href: library/index.md
     items:

@@ -91,7 +91,7 @@ Your VSTS account includes these free amounts:
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-pipelines-ts.md)
+[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-jobs-vsts.md)
 and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
@@ -191,7 +191,7 @@ We're also announcing general availability of Release Management in VSTS. Also, 
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-pipelines-ts.md)
+[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-jobs-vsts.md)
 
 <a name="update-oct12-16"></a>
 ### October 12, 2016 Update (VSTS)
