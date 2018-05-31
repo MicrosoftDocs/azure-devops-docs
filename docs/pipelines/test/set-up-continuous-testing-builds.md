@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
-**NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+**NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
 [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
@@ -80,7 +80,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
 ## Set up test deployment for your build
 
-**NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task to deploy and run
+**NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
 [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
@@ -131,7 +131,7 @@ If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
 ## See also
 
-* [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+* [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 * [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/)
 * [Set up environments for continuous testing with your builds](set-up-continuous-test-environments-builds.md)
 * [Review continuous test results after a build](review-continuous-test-results-after-build.md)
