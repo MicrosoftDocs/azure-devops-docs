@@ -67,7 +67,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 -   [rename](rename-move-files-folders.md) (includes moving items)  
 -   property  
 -   [rollback](roll-back-changesets.md)  
--   [type](../tfs-server/admin/manage-file-types.md#config-file-encodings) (file encoding)  
+-   [type](/tfs/server/admin/manage-file-types.md#config-file-encodings) (file encoding)  
 -   [undelete](delete-restore-files-folders.md)
 
 ### Work with automatically detected changes

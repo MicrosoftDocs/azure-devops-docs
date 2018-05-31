@@ -30,7 +30,7 @@ Get started with VSTS and Java using your IDE and your tools.
  - [Android Studio plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Eclipse plugin](../git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
  - [IntelliJ IDEA plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
- - [Build Android apps](../pipelines/apps/mobile/android.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Build Android apps](../pipelines/languages/android.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Manage Maven packages](../package/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)

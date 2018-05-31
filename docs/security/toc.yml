@@ -43,7 +43,7 @@
   - name: Azure Active Directory groups (VSTS)
     href: ../accounts/access-with-azure-ad.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Active Directory groups (TFS) 
-    href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+    href: /tfs/server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Security glossary 
     href: security-glossary.md
   - name: Resources granted to project members
@@ -121,7 +121,7 @@
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: TFSSecurity command (TFS)
-    href: ../tfs-server/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: /tfs/server/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: REST API, Permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions 
 - name: Resources
@@ -129,7 +129,7 @@
   - name: Account Management (VSTS)
     href: ../accounts/index.md
   - name: Server Administration (TFS) 
-    href: ../tfs-server/index.md
+    href: /tfs/server/index.md
   - name: Authentication guidance for REST APIs
     href: ../integrate/get-started/authentication/authentication-guidance.md
   - name: Security REST APIs

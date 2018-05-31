@@ -53,7 +53,7 @@ with the following versions of TFS:
 **SQL Server:** 
 
 You can use the same SQL Server instance you used for TFS, 
-**[install a new instance](../../../../../tfs-server/install/sql-server/install-sql-server.md)**, 
+**[install a new instance](/tfs/server/install/sql-server/install-sql-server.md)**, 
 or use an instance that matches the following requirements: 
 
 * SQL Server 2016 

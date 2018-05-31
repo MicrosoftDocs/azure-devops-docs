@@ -68,7 +68,7 @@ Wanna try it?
 
 > Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
 
-1. [Get started with TFS](https://docs.microsoft.com/vsts/tfs-server/install/single-server).
+1. [Get started with TFS](https://docs.microsoft.com/tfs/server/install/single-server).
 
 1. [Create a team project](https://docs.microsoft.com/vsts/accounts/create-team-project?view=tfs-2018).
 

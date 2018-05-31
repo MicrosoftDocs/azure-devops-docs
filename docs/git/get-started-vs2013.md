@@ -174,7 +174,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 	
 
 #### Q: How do I create a team project on an on-premises Team Foundation Server?
-* [Set up TFS on a server](../tfs-server/install/get-started.md).
+* [Set up TFS on a server](/tfs/server/install/get-started.md).
 * [Create a team project](../accounts/create-team-project.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitPCW.png)

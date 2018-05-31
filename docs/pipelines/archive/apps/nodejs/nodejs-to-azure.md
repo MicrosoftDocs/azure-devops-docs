@@ -43,9 +43,9 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 <li>Click Empty to start with an empty definition.</li>
 </ol>
 
-### Add the build steps
+### Add the build tasks
 
-On the **Tasks** or **Build** tab, add these steps.
+On the **Tasks** or **Build** tab, add these tasks.
 
 <table>
    <tr>

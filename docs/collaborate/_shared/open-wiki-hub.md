@@ -1,7 +1,7 @@
 
 ## Open the Wiki hub  
 
-Begin by connecting to your team project using a [supported web browser](/vsts/tfs-server/requirements#supported-browsers) and choose the **Wiki** hub.  
+Begin by connecting to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose the **Wiki** hub.  
 
 > [!div class="mx-imgBorder"]  
 > ![Open Wiki hub](/vsts/collaborate/_img/wiki/wiki-connect-browser.png)

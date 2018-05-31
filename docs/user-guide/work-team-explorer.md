@@ -117,7 +117,7 @@ The **Report** page opens the [Reporting Services report site](../report/sql-rep
 
 From the **Document** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your team project has been configured with a SharePoint Products portal.
   
-If your team project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](../tfs-server/admin/config-tfs-resources.md).
+If your team project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/tfs/server/admin/config-tfs-resources.md).
 
 ### Settings page 
 

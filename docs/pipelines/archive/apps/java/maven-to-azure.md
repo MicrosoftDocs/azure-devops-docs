@@ -54,9 +54,9 @@ On the Variables tab, store the data needed to copy files to Azure via FTP. Copy
 
 ![Java deployment build variables](_img/maven-to-azure/azure-java-deployment-variables.png)
 
-### Add build steps
+### Add build tasks
 
-On the Build tab, add these steps:
+On the Build tab, add these tasks:
 
 <table>
    <tr>

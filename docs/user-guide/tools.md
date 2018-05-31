@@ -153,10 +153,10 @@ You can perform many code development and administrative tasks using command lin
 
 - [Git commands](../git/command-prompt.md)
 - [TFVC commands](../tfvc/use-team-foundation-version-control-commands.md)
-- [TFSConfig](../tfs-server/command-line/tfsconfig-cmd.md)
-- [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md)
-- [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)
-- [TFSServiceControl](../tfs-server/command-line/tfsservicecontrol-cmd.md)
+- [TFSConfig](/tfs/server/command-line/tfsconfig-cmd.md)
+- [TFSDeleteProject](/tfs/server/command-line/tfsdeleteproject-cmd.md)
+- [TFSSecurity](/tfs/server/command-line/tfssecurity-cmd.md)
+- [TFSServiceControl](/tfs/server/command-line/tfsservicecontrol-cmd.md)
 - [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 

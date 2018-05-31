@@ -80,7 +80,7 @@ and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 ```
 7.  Select the **Save & queue** menu, and then select **Save & queue**. 
 8.  Choose your **topic branch**.  Select **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
-9.  Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task step.
+9.  Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task.
      
 
 ## Keep code quality high by building your pull requests

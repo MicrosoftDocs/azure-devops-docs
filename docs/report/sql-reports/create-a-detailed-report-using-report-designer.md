@@ -7,7 +7,8 @@ ms.topic: conceptual
 description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -30,8 +31,8 @@ You can track your team's progress more easily by creating reports that contain 
      To install Business Intelligence Development Studio, run the Setup program for SQL Server, and select the **Client Components** check box when you specify the components to install. To install the most recent service pack for SQL Server, see the following page on the Microsoft Web site: [How to obtain the latest service pack for SQL Server 2008](http://go.microsoft.com/fwlink/?LinkID=182174).  
   
 -   You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).  
-  
--   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](../../tfs-server/add-administrator-tfs.md).  
+
+-   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/tfs/server/admin/add-administrator-tfs.md).  
   
 ### To create a report  
   

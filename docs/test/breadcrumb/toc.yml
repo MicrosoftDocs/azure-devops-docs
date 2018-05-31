@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Test
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=testing
+    items:
+    - name: Test
+      tocHref: /vsts/
+      topicHref: /vsts/test/index
