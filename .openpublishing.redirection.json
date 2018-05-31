@@ -5096,7 +5096,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/actions/agents/ci-cd-part-1.md",
+      "source_path": "docs/build-release/actions/ci-cd-part-1.md",
       "redirect_url": "/vsts/pipelines/agents/get-started-designer",
       "redirect_document_id": true
     },
@@ -5599,6 +5599,11 @@
       "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-ts.md",
       "redirect_url": "/vsts/pipelines/licensing/concurrent-jobs-vsts",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/licensing/concurrent-pipelines-ts.md",
+      "redirect_url": "/vsts/pipelines/licensing/concurrent-jobs-vsts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/policies/permissions.md",
