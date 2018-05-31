@@ -194,11 +194,11 @@ You should get a response like this.
 ```
 
 The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
-like [Git blobs](https://visualstudio.com/api/git/blobs.md).
+like [Git blobs](previous-apis/git/blobs.md).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.com/api/overview.md) like [work item tracking](https://visualstudio.com/api/wit/overview.md)
-or [Git](https://visualstudio.com/api/git/overview.md) and get to the resources that you need.
+[API areas](previous-apis/overview.md) like [work item tracking](previous-apis/wit/overview.md)
+or [Git](previous-apis/git/overview.md) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 
