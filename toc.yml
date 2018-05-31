@@ -171,9 +171,9 @@
       href: /docs/setup-admin/team-services/try-additional-features-vs
     - name: Get more features for Team Services
       href: /docs/marketplace/get-vsts-extensions
-    - name: Pricing: Team Services
+    - name: "Pricing: Team Services"
       href: https://www.visualstudio.com/team-services/pricing/
-    - name: Pricing: TFS
+    - name: "Pricing: TFS"
       href: https://www.visualstudio.com/team-services/tfs-pricing/
   - name: Collaborate with Microsoft Teams
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams
