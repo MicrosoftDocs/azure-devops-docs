@@ -105,7 +105,7 @@ after the load tests have run and before the app is swapped from staging to prod
 to pass values as parameters to your test code. For example, in a release that contains
 several environments, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.  
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.  
 
 ![Passing parameters to test code in a build or release pipeline](_img/pass-params-to-test-code.png)
 

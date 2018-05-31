@@ -54,7 +54,7 @@ Parallel Test Execution is **not** supported in the following cases:
 
 Configure a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 in the app source repository for Visual Studio IDE or the CLI, and in VSTS when using
-version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 task.
 
 <a name="runsettings"></a>
@@ -88,7 +88,7 @@ For the CLI, **vstest.console.exe** supports a **/Parallel** command line switch
 ## Enable parallel tests in VSTS with VS Test task v2.x
 
 Enable parallel test execution by setting the **Run Tests in Parallel...** checkbox
-in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.
+in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.
 
 ![Using parallel execution in VSTS](_img/run-tests-in-parallel/parallel-vsts.png)
 
