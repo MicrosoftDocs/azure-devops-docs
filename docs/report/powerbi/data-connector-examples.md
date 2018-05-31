@@ -16,7 +16,7 @@ ms.date: 01/17/2017
 
 # Example reports for Power BI Data Connector
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 This document provides guidanace on how to generate the following example reports in Power BI: 
 

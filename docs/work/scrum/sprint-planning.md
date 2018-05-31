@@ -29,7 +29,7 @@ some or all of the items based on these estimates.
 
 In this topic you'll learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Assign backlog items to a sprint   
 > * Set your team's capacity        
 > * Add tasks to backlog items  

@@ -26,7 +26,7 @@ Use Delivery Plans to ensure your teams are aligned  with your organizational go
 
 In this topic you'll learn:
 
-> [!div class="checklist"]
+>[!div class="checklist"]   
 > - How to review a plan with your teams
 > - How to add and edit a plan
 > - How to add field criteria, customize cards, and add markers

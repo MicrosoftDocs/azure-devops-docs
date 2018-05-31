@@ -15,7 +15,7 @@ ms.date: 3/29/2018
 
 # Analytics (VSTS) 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Visual Studio Team Services (VSTS). 
 

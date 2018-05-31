@@ -20,8 +20,8 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 ::: moniker range=">= tfs-2018"
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Control                  | Function                      |
+> [!div class="mx-tdCol2BreakAll"]
+> |Control                  | Function                      |
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            |  
@@ -34,8 +34,8 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 ::: moniker range="tfs-2017"
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Control                  | Function                      |
+> [!div class="mx-tdCol2BreakAll"]
+> |Control                  | Function                      |
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 
@@ -48,8 +48,8 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-> [!div class="mx-tdCol2BreakAll"]  
-> | Control                  | Function                      |
+> [!div class="mx-tdCol2BreakAll"]
+> |Control                  | Function                      |
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 

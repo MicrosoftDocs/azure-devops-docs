@@ -72,7 +72,7 @@ You might need more concurrent pipelines to use multiple agents at the same time
 
 ::: moniker range="vsts"
 
-* [Concurrent pipelines in VSTS](../licensing/concurrent-pipelines-ts.md)
+* [Concurrent pipelines in VSTS](../licensing/concurrent-jobs-vsts.md)
 
 ::: moniker-end
 

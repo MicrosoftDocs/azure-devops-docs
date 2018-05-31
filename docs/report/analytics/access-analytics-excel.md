@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 
 # Access data through Excel 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can access data through Excel, generate reports and then publish the charts to PowerBI.com or use the Excel file
 as a basis for Power BI reports. At this time you will need to have alternate credentials enabled to access data

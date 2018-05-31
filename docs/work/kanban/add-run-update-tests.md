@@ -21,7 +21,7 @@ Similar to [task checklists](add-task-checklists.md), you can quickly define inl
 
 
 In this topic, you'll learn: 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add inline tests to a backlog item from your Kanban board  
 > * How to run tests and update the status of tests  
 > * How to expand or collapse inline tests   

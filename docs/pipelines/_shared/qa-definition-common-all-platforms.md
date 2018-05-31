@@ -33,7 +33,7 @@ ms.topic: include
 
 ### I selected parallel multi-configuration, but only one build is running at a time.
 
-If you're using VSTS, you might need more concurrent pipelines. See [Concurrent build and release pipelines in VSTS](../licensing/concurrent-pipelines-ts.md).
+If you're using VSTS, you might need more concurrent pipelines. See [Concurrent build and release pipelines in VSTS](../licensing/concurrent-jobs-vsts.md).
 
 
 ### How do I see what has changed in my build definition?
