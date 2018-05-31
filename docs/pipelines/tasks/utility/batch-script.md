@@ -81,7 +81,7 @@ echo BUILD_SOURCESDIRECTORY contents:
 echo Over and out.
 ```
 
-On the Build tab of a build definition, add this step:
+On the Build tab of a build definition, add this task:
 
 <table>
    <tr>

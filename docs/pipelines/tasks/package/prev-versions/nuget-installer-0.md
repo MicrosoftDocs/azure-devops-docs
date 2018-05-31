@@ -17,7 +17,7 @@ ms.date: 08/10/2016
 
 ## Demands
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGetPackages** checkbox in that step.
+If your code depends on NuGet packages, make sure to add this task before your [Visual Studio Build task](../../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGetPackages** checkbox in that task.
 
 ## Arguments
 
@@ -31,7 +31,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 <tr>
 <td>Path to Solution</td>
 <td>
-Copy the value from the **Solution** argument in your [Visual Studio Build step](../../build/visual-studio-build.md) and paste it here.
+Copy the value from the **Solution** argument in your [Visual Studio Build task](../../build/visual-studio-build.md) and paste it here.
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 ```
 
 
-#### Build steps
+#### Build tasks
 
 <table>
 <tr>

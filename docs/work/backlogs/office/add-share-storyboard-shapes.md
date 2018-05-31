@@ -5,7 +5,8 @@ description: Add and share storyboard shapes with members of your team  using th
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c8f3136e-a560-4ea5-83fd-602f89c74155
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 ms.date: 06/22/2017
@@ -22,8 +23,8 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 >The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. You may find storyboard shapes from the links provided in this blog post, [Storyboard shapes extensions being deprecated from Visual Studio Marketplace](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/16/storyboard-shapes-extensions-being-deprecated-from-visual-studio-marketplace/).  
 
 ## Find storyboard shapes and import them  
-  
-0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../../tfs-server/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
+
+0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
   
 0.  If you haven't installed Visual Studio, you'll need to [install Visual Studio Community or other version](https://www.visualstudio.com/downloads/) or  [Team Foundation Server Office® Integration](https://go.microsoft.com/fwlink/?LinkId=832492&clcid=0x409) to install the Storyboarding add-in to PowerPoint.  
   

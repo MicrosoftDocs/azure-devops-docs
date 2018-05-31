@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: overview
 description: Index to topics for managing the data warehouse, adding reports, and viewing SQL Server reports 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/05/2017
 ---
 
@@ -47,5 +48,5 @@ To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](../
 
 ## Resources
 - [SharePoint Integration](../sharepoint-dashboards/index.md)
-- [Server Administration (TFS)](../../tfs-server/index.md)
+- [Server Administration (TFS)](/tfs/server/index.md)
 - [TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)

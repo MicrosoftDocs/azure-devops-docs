@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 ![icon](_img/conda.png) Create and activate a Conda environment.
 
-This task will create a Conda environment and activate it for subsequent build steps.
+This task will create a Conda environment and activate it for subsequent build tasks.
 
 If the task finds an existing environment with the same name, the task will simply reactivate it. This is possible on self-hosted agents. To recreate the environment and reinstall any of its packages, set the "Clean the environment" option.
 
@@ -27,7 +27,7 @@ Running with the "Update to the latest Conda" option will attempt to update Cond
 > Microsoft-hosted agents won't have Conda in their `PATH` by default. You will need to run this task in order to use Conda.
 
 After running this task, `PATH` will contain the binary directory for the activated environment, followed by the binary directories for the Conda installation itself.
-You can run scripts as subsequent build steps that run Python, Conda, or the command-line utilities from other packages you install.
+You can run scripts as subsequent build tasks that run Python, Conda, or the command-line utilities from other packages you install.
 For example, you can run tests with [pytest](https://docs.pytest.org/en/latest/) or upload a package to Anaconda Cloud with the [Anaconda client](https://github.com/Anaconda-Platform/anaconda-client).
 
 > [!TIP]

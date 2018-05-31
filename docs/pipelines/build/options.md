@@ -215,11 +215,11 @@ Whatever value you set here, the **Build job timeout in minutes** limit still ap
 
 ::: moniker-end
 
-Use demands to make sure that the capabilities your build needs are present on the build agents that run it. Demands are asserted automatically by build steps or manually by you.
+Use demands to make sure that the capabilities your build needs are present on the build agents that run it. Demands are asserted automatically by build tasks or manually by you.
 
-### Build step demands
+### Build task demands
 
-Some build steps won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../tasks/build/visual-studio-build.md) step demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes steps](../tasks/index.md) that have demands, they are listed first.
+Some build tasks won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../tasks/build/visual-studio-build.md) task demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes tasks](../tasks/index.md) that have demands, they are listed first.
 
 ### Manually entered demands
 

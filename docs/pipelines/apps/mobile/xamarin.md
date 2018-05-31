@@ -79,7 +79,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
@@ -160,7 +160,7 @@ To be able to configure your own app for iOS release, you need to make the follo
 
 0. Check in your changes.
 
-There's also a known issue that might cause a problem with building your Xamarin.iOS project. For example, in the build log for a Xamarin.iOS build step you might see an errors such as *error : Project reference '../App1/App1.csproj' has invalid or missing guid for metadata 'Project'*.
+There's also a known issue that might cause a problem with building your Xamarin.iOS project. For example, in the build log for a Xamarin.iOS build task you might see an errors such as *error : Project reference '../App1/App1.csproj' has invalid or missing guid for metadata 'Project'*.
 
 To fix this issue:
 

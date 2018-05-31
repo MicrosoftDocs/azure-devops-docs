@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
@@ -30,15 +31,15 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 
 ::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]ï¿½
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]ï¿½
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]ï¿½
 ::: moniker-end
 
 
@@ -46,7 +47,7 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
@@ -157,7 +158,7 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-Or, you can drag and drop a widget from the catalog onto the dashboard.    
+Or, you can drag and drop a widget from the catalog onto the dashboard.   ï¿½
 
 ::: moniker-end
 

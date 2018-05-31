@@ -1,11 +1,13 @@
 ---
-title: TF31002-Unable to connect  titleSuffix: VSTS & TFS 
+title: TF31002-Unable to connect  
+titleSuffix: VSTS & TFS 
 description: Receive the error when you try to connect to VSTS or an on-premises Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -44,15 +46,15 @@ You might receive this error when you try to connect to VSTS or an on-premises T
   
  As an administrator, you should check the event logs for the application-tier server to try to pinpoint the problem. Also, you can use the following table to determine whether the server is misconfigured. In the table, problems that are more likely to occur appear first. Therefore, you should try the resolutions in the order in which they appear so that you increase the chance that you can solve the problem quickly.  
   
-|Problem|Resolution|  
-|-------------|----------------|  
-|The *TFSService* account password has expired or is incorrect.|Many services for Team Foundation Server will stop running when the service account for Team Foundation has expired. For more information, see [Change the service account or password for Team Foundation Server](../../../../tfs-server/admin/change-service-account-password.md).|  
-|The application-tier server for Team Foundation is unavailable.|You should verify whether each required service is running. If a required service is not running, you must restart it. If necessary, set it to start automatically. For more information, see [Stop and start services, application pools, and websites](../../../../tfs-server/admin/stop-start-stuff.md).|  
+|Problem|Resolution|
+|-------------|----------------|
+|The *TFSService* account password has expired or is incorrect.|Many services for Team Foundation Server will stop running when the service account for Team Foundation has expired. For more information, see [Change the service account or password for Team Foundation Server](/tfs/server/admin/change-service-account-password.md).|  
+|The application-tier server for Team Foundation is unavailable.|You should verify whether each required service is running. If a required service is not running, you must restart it. If necessary, set it to start automatically. For more information, see [Stop and start services, application pools, and websites](/tfs/server/admin/stop-start-stuff.md).|  
 |The network is unavailable.|You should verify whether your network is operational.|  
-|A website identity for Team Foundation is configured incorrectly.|You should verify or correct the server binding assignments that are made to websites for Team Foundation. |  
+|A website identity for Team Foundation is configured incorrectly.|You should verify or correct the server binding assignments that are made to websites for Team Foundation. |
 |Access to a website for Team Foundation has been restricted.|You should verify or correct restrictions that are made to those websites that are based on IP addresses and domain names. |  
-|The firewall or ports are configured incorrectly.|You should verify or correct port binding assignments for websites and port assignments for the firewall. First, you should open the administration console for Team Foundation, display the Application Tier page, and review the URL assignments. If necessary, you can click **Change URL** to modify the URL of a website. Next, you should verify the port assignments for Internet Information Services (IIS) and the ports that are allowed through the firewall. For more information, see [Review Server Status and Settings](../../../../tfs-server/admin/stop-start-stuff.md) and [Verify or Correct Port Assignments](../../../../tfs-server/architecture/required-ports.md).|  
+|The firewall or ports are configured incorrectly.|You should verify or correct port binding assignments for websites and port assignments for the firewall. First, you should open the administration console for Team Foundation, display the Application Tier page, and review the URL assignments. If necessary, you can click **Change URL** to modify the URL of a website. Next, you should verify the port assignments for Internet Information Services (IIS) and the ports that are allowed through the firewall. For more information, see [Review Server Status and Settings](/tfs/server/admin/stop-start-stuff.md) and [Verify or Correct Port Assignments](/tfs/server/architecture/required-ports.md).|  
 |Trust relationships between domains are not configured correctly.|If a group of users cannot access Team Foundation Server, you might have trust issues between domains.|  
-|When users connect to different versions of TFS from Visual Studio, for example, they connect to TFS 2012 and then TFS 2008, they can get the TF31002 error.|This can occur because the GUIDs for the TFS 2012 collection are the same as that for TFS 2008. This confuses the local client cache because it tries to maintain the same GUID based local cache for both the 2008 server and the new Project Collection in 2012.<br /><br /> To fix this, you need to run the **TFSConfig ChangeServerID** command. See [TFSConfig ChangeServerID command](../../../../tfs-server/command-line/tfsconfig-cmd.md#changeserverid).|  
+|When users connect to different versions of TFS from Visual Studio, for example, they connect to TFS 2012 and then TFS 2008, they can get the TF31002 error.|This can occur because the GUIDs for the TFS 2012 collection are the same as that for TFS 2008. This confuses the local client cache because it tries to maintain the same GUID based local cache for both the 2008 server and the new Project Collection in 2012.<br /><br /> To fix this, you need to run the **TFSConfig ChangeServerID** command. See [TFSConfig ChangeServerID command](/tfs/server/command-line/tfsconfig-cmd.md#changeserverid).|  
   
  If the previous resolutions do not solve the problem, go to the [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).

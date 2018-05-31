@@ -35,7 +35,7 @@ choose the technologies and frameworks, then test your changes continuously in a
 | <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
 | | |
 
-## Step-by-Step Tutorials
+## Step-by-step Tutorials
 
 * [Run unit tests and load tests as you build and deploy your app](example-continuous-testing.md)
 
