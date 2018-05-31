@@ -1129,8 +1129,7 @@ To install the test controller:
       > service account. For more information about how to switch between these
       > two accounts and how existing environments are updated with the service
       > account, see [How to: Configure the Lab Service
-      > Account](https://msdn.microsoft.com/en-us/library/dd692846(v=vs.120).asp
-      > x).
+      > Account](https://msdn.microsoft.com/en-us/library/dd692846(v=vs.120).aspx).
       >
       > You must configure the user account for each team project collection
       > that you want to configure for Lab Management.
