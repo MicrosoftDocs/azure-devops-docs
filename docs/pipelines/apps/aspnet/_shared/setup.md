@@ -4,7 +4,7 @@
 
 You'll need an account on VSTS. To create one, visit [Sign up for VSTS](https://www.visualstudio.com/vsts/).
 
-You can also use Team Foundation Server (TFS) if your organization requires the use of on-premises servers instead of VSTS, and we'll show some of those details. Also see [Get Started with TFS](/tfs/server/install/get-started.md) for general information.
+You can also use Team Foundation Server (TFS) if your organization requires the use of on-premises servers instead of VSTS, and we'll show some of those details. Also see [Get Started with TFS](/tfs/server/install/get-started) for general information.
 
 ### Set up local version control and a team project
 

@@ -48,5 +48,5 @@ To learn about VSTS/TFS Reporting Roadmap, read [VSTS/TFS Reporting Roadmap](../
 
 ## Resources
 - [SharePoint Integration](../sharepoint-dashboards/index.md)
-- [Server Administration (TFS)](/tfs/server/index.md)
+- [Server Administration (TFS)](/tfs/server/index)
 - [TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)
