@@ -39,7 +39,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Add the Velocity widget to your dashboard 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility.md#supported-browsers). If you need to add a team project, see [Create a team project](../../accounts/create-team-project.md)
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a team project, see [Create a team project](../../accounts/create-team-project.md)
 
 1. Connect to the web portal for your team project and click the Dashboards hub.  
 	![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)

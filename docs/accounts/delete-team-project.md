@@ -44,9 +44,9 @@ Delete a team project from VSTS or from an on-premises deployment of Team Founda
 
 ## Delete a team project from Team Foundation Server (on-premises)
 
-Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/tfs/server/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
+Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/tfs/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
-1.  If you're not a member of one or more of the following administrator groups, [get those permissions now](/tfs/server/admin/add-administrator-tfs.md):
+1.  If you're not a member of one or more of the following administrator groups, [get those permissions now](/tfs/server/admin/add-administrator-tfs):
 
     -   Team Foundation Administrators group (required).
 
@@ -91,4 +91,4 @@ For on-premises deployments, review the status and log files for the delete acti
 
     Review the information about the failure, and then try to delete the project again.
 
-    If partial data remains, you can also use the [TFSDeleteProject](/tfs/server/command-line/tfsdeleteproject-cmd.md) command line tool.
+    If partial data remains, you can also use the [TFSDeleteProject](/tfs/server/command-line/tfsdeleteproject-cmd) command line tool.

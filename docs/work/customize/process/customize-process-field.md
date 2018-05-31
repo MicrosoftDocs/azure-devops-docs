@@ -92,9 +92,8 @@ You can add fields and specify the group and page where they should appear. Also
 
 	Here, we show the Customer Ticket field has been added to the Status group. You may need to refresh your browser to see the changes. 
 
-	<img src="_img/cpfield-bug-form-customized-customer-ticket.png" alt="Bug form, Customer Ticket field added to Details group" style="border: 2px solid #C3C3C3;" />
- 
-
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Details group](_img/cpfield-bug-form-customized-customer-ticket.png) 
 
 <a id="pick-list">  </a>
 ### Add a pick list  
@@ -141,7 +140,8 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 2. The field is added to the first column under all system-defined rich-text fields, but before the Discussion control.   
 
-	<img src="_img/customize-process-field-show-custom-html-field-up1.png" alt="Bug form, Customer request field added to first column in form" style="border: 1px solid #C3C3C3;" />   
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer request field added to first column in form](_img/customize-process-field-show-custom-html-field-up1.png) 
 
 <a id="boolean-field">  </a>
 ### Add a checkbox field  

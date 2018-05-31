@@ -78,7 +78,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
 
-1.  [Add SharePoint products to your deployment](/tfs/server/admin/add-sharepoint-to-tfs.md).  
+1.  [Add SharePoint products to your deployment](/tfs/server/admin/add-sharepoint-to-tfs).  
   
 2.  Verify that you have the following tools, configurations, and permissions.  
   
