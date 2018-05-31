@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 task together with [phases](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
