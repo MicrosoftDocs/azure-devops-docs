@@ -5,7 +5,8 @@ description: Use the TFS web service to increase the size of files you attach fo
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2018'
@@ -35,8 +36,8 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
   
 ## Related articles
-  
-- [Requirements and compatibility, Supported web browsers](../../../tfs-server/requirements.md#supported-browsers)
+
+- [Requirements and compatibility, Supported web browsers](/tfs/server/compatibility.md#supported-browsers)
 
 ### Alternative solutions to increasing the attachment size   
 
