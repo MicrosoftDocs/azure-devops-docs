@@ -45,7 +45,7 @@ On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%progr
 
 | Parameter | Description |
 | --- | --- |
-| **/collection:** *CollectionURL* | Specifies the URI of the team project collection or Visual Studio Team Services (VSTS) account. For example: </br> **On-premises TFS format:** ```http://ServerName:Port/VirtualDirectoryName/CollectionName``` </br> If no virtual directory is used, then the format for the URI is the following: ```http://ServerName:Port/CollectionName```. </br> **VSTS format:** http://AccountName.visualstudio.com.DefaultCollection |
+| **/collection:** *CollectionURL* | Specifies the URI of the team project collection or Visual Studio Team Services (VSTS) account. For example: </br> **On-premises TFS format:** ```http://ServerName:Port/VirtualDirectoryName/CollectionName``` </br> If no virtual directory is used, then the format for the URI is the following: ```http://ServerName:Port/CollectionName```. </br> **VSTS format:** `http://AccountName.visualstudio.com/DefaultCollection` |
 | **/noprompt** | Disables the prompt for confirmation. |
 | **/?** or **help** | Displays help about the command in the Command Prompt window. |
 
