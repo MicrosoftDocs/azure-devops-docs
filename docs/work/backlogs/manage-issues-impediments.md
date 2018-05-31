@@ -29,7 +29,7 @@ In this topic you'll learn:
 >[!div class="checklist"]      
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 ## Add an issue or impediment 
 

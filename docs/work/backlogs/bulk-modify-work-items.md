@@ -98,7 +98,7 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  

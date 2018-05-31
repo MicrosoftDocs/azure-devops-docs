@@ -32,7 +32,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 
 5. Next, select Other > OData Feed and click Connect.  
 
-	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />
 
 6.	Enter the URL in the format into a supported browser:  
 
@@ -40,7 +40,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
-	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
+	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />
 
 	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
@@ -53,7 +53,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 	>[!IMPORTANT]  
 	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load. **Snapshot** tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md)
 
-	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" />
 
 	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
 
@@ -93,4 +93,4 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)]
