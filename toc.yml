@@ -104,7 +104,7 @@
       href: connect/work-web-portal.md
     - name: Work from your account hub
       href: connect/account-home-pages.md
-  - name: Manage users & access (Team Services)
+  - name: Manage users & accessÂ (Team Services)
     items:
     - name: Add and manage users
       href: /team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services
@@ -112,7 +112,7 @@
       href: /team-services/setup-admin/add-administrator-tfs
     - name: Manage permissions
       href: /team-services/setup-admin/tfs/admin/change-permission-levels
-  - name: Manage users & access (TFS)
+  - name: Manage users & accessÂ (TFS)
     items:
     - name: Add users to team projects
       href: /team-services/setup-admin/add-users
