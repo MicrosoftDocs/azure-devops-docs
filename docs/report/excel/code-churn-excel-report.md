@@ -32,7 +32,7 @@ With the Code Churn report, you can analyze how source files are changing over t
 ##  <a name="Data"></a> Data in the Report  
  The team can review the Code Churn report to determine how volatile the code base is and how many lines of code were modified in the previous week. As the following illustration shows, the report provides a stacked area graph of the lines of code that the team added, deleted, or modified in the most recent four weeks.  
   
- ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")  
+ ![Code Churn Report](_img/procguid_codechurn.png)  
   
  This report is based on a PivotChart report that shows the most recent four weeks of data that were captured for code changes and that is stored in the data warehouse. All lines are counted, even lines that contain comments or that are blank.  
   
