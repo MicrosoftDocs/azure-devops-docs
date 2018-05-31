@@ -7,21 +7,21 @@
 - name: Quickstarts
   items:
   - name: Search code
-    href: code/code-search.md
+    href: code-search.md
   - name: Search work items
-    href: workitem/work-item-search.md
+    href: work-item-search.md
 - name: How-to Guides
   items:
   - name: Use Code Search
-    href: code/advanced-search.md
+    href: advanced-code-search-syntax.md
   - name: Use Work Item Search
-    href: workitem/advanced-search-syntax.md
+    href: advanced-work-item-search-syntax.md
   - name: Administer Search
-    href: code/administration.md
+    href: administration.md
 - name: Resources
   items:
   - name: Adhoc vs managed work item queries
-    href: ../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json
+    href: ../../work/track/adhoc-vs-managed-queries.md?toc=/vsts/search/toc.json&bc=/vsts/search/breadcrumb/toc.json
   - name: Code Search Video
     href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
   - name: Code Search on Marketplace
