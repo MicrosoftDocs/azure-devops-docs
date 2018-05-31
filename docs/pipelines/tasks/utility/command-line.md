@@ -69,7 +69,7 @@ None
 
 ## Example
 
-On the Build tab of a build definition, add these steps:
+On the Build tab of a build definition, add these tasks:
 
 <table>
    <tr>

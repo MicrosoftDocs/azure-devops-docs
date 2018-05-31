@@ -178,7 +178,7 @@ The following features are available to Stakeholders from the web portal.
 4. Stakeholders can save queries under My Queries but cannot save under Shared Queries.
 5. Stakeholders can only view and approve releases.
 6. Stakeholders cannot view markdown README files defined for repositories.
-7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).
+7. In order to add users and assign licenses, stakeholders must be added to the [Project Collection Administrators](/tfs/server/admin/add-administrator-tfs.md) group. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).
 8. Stakeholders have read-only permissions to wiki pages. These permissions can't be changed.
 
 ::: moniker-end

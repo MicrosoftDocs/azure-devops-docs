@@ -43,10 +43,10 @@ a selected property setting.
 
 * You can use the unified agent for single machine as well multi-machine distributed execution.
 
-* You no longer need the **Visual Studio Test Agent Deployment** task step.
+* You no longer need the **Visual Studio Test Agent Deployment** task.
   This task is based on WinRM, which imposes several limitations.
 
-* You no longer need any "copy files" task steps because all execution is now local to the
+* You no longer need any "copy files" tasks because all execution is now local to the
   automation agent, and task phases download the artifacts to the target machines automatically.
   There is no requirement to copy test assemblies and their dependencies when running tests remotely
   using the **Run Functional Tests** task.
@@ -119,7 +119,7 @@ from the pool, and the set of tasks in that phase will be distributed across all
 
 In this mode, the Visual Studio Test task runs in a special way. It recognizes that its a multiple agents
 phase, and runs tests in a distributed manner across all the allocated agents. Because other tasks run
-across all agents, any pre- and post-test steps also run equally on all the agents. Therefore, all the
+across all agents, any pre- and post-test tasks also run equally on all the agents. Therefore, all the
 agents are prepared and cleaned up in a consistent manner.
 In addition, test execution does not require all agents to be available at the same time. If some agents
 are busy with another release or build, the phase can still start with the available number of agents
@@ -196,7 +196,7 @@ For more examples, see [Parallel execution using agent phases](../../pipelines/p
 ### Q: Has the Run Functional Tests task also changed?
 
 **A**: No, the Run Functional Tests (RFT) task has not changed. If you are using this task
-you _do_ need the **Deploy Test Agent** task step. Note that, because tasks are replicated
+you _do_ need the **Deploy Test Agent** task. Note that, because tasks are replicated
 in the multiple agents and multiple executions mode, using the Run Functional Tests task in this
 mode will lead to undesirable effects.
 

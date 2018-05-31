@@ -28,7 +28,7 @@ Indexing source code enables you to use your .pdb symbol files to debug an app o
 Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/vsts/package/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/vsts/pipelines/symbols/index).
 
 > [!NOTE]
-> This build step works only:
+> This build task works only:
 > 
 > * For code in Git or TFVC stored in Team Foundation Server (TFS) or VSTS. It does not work for any other type of repository.
 
@@ -122,7 +122,7 @@ None
     </tr>
     <tr>
         <td>Max wait time (min) </td>
-        <td>If you want to set a time limit for this step, specify the number of minutes here. The build fails when the limit
+        <td>If you want to set a time limit for this task, specify the number of minutes here. The build fails when the limit
             is reached. If you leave it blank, limit is 2 hours.</td>
     </tr>
     <tr>

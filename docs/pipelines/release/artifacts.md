@@ -147,7 +147,7 @@ the build definitions in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
-> You must include a **Publish Artifacts** task step in your build
+> You must include a **Publish Artifacts** task in your build
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 

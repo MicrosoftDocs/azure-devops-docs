@@ -1,5 +1,5 @@
 ---
-title: Build and Test - Visual Studio Test Agent Deployment step
+title: Build and Test - Visual Studio Test Agent Deployment task
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: devops
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+[Visual Studio Test](vstest.md)
 task together with [phases](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
@@ -31,7 +31,7 @@ For more details, see [Testing with unified agents and phases](../../test/test-w
 Deploy and configure the test agent to run tests on a set of machines.
 
 The test agent deployed by this task can collect data
-or run distributed tests using the [Visual Studio Test](visual-studio-test.md)
+or run distributed tests using the [Visual Studio Test](vstest.md)
 task.
 
 ### Demands and prerequisites
@@ -126,7 +126,7 @@ The supported options for these scenarios are:
   - Configuring the test agent and running tests as a 
     non-administrator, or by using a service account, is not supported.
   - Running tests for Universal Windows Platform apps is not 
-    supported. Use the [Visual Studio Test task](visual-studio-test.md) 
+    supported. Use the [Visual Studio Test task](vstest.md) 
     to run these tests.
 
 ### Example
@@ -141,7 +141,7 @@ The supported options for these scenarios are:
 
 ### Related tasks
 
-* [Visual Studio Test](visual-studio-test.md)
+* [Visual Studio Test](vstest.md)
 * [Azure File Copy](../deploy/azure-file-copy.md)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)

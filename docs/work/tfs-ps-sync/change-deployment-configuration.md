@@ -5,7 +5,8 @@ description: Understand additional administrative tasks when you change your set
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 962eba84-0c28-4c94-8abc-3cdb9f1df53a
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
 ms.date: 01/12/2017
@@ -43,8 +44,8 @@ ms.date: 01/12/2017
 #### To move all mapped collections to a different instance of TFS  
   
 1.  Move or split the collection.  
-  
-     For more information, see [Manage team project collections](../../tfs-server/admin/manage-team-project-collections.md).  
+
+     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections.md).  
   
 2.  Grant required permissions to the service account for the second instance of Team Foundation Server.  
   
@@ -68,8 +69,8 @@ ms.date: 01/12/2017
     >  By using the **/force** switch, you break all associations between enterprise project plans and team projects that are defined for the collection.  
   
 2.  Move or split the collection.  
-  
-     For more information, see [Manage team project collections](../../tfs-server/admin/manage-team-project-collections.md).  
+
+     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections.md).  
   
 3.  Assign all required permissions.  
   
@@ -82,10 +83,10 @@ ms.date: 01/12/2017
 6.  Use the **/MapPlapToTeamProject** command option to map each plan to the team project that was moved to a different collection.  
   
  For more information, see the following topics:  
-  
--   [Move or clone TFS](../../tfs-server/admin/move-across-domains.md)  
-  
--   [Move TFS to a new domain ( environment move)](../../tfs-server/admin/move-across-domains.md)  
+
+-   [Move or clone TFS](/tfs/server/admin/move-across-domains.md)  
+
+-   [Move TFS to a new domain ( environment move)](/tfs/server/admin/move-across-domains.md)  
   
 -   [Register an instance of PWA](register-pwa.md)  
   
@@ -99,8 +100,8 @@ ms.date: 01/12/2017
 #### To move an instance of Team Foundation Server to which an instance of PWA is mapped  
   
 1.  Move the instance of Team Foundation Server.  
-  
-     For more information, see [Move or clone TFS](../../tfs-server/admin/move-clone-hardware.md).  
+  /tfs/server
+     For more information, see [Move or clone TFS](/tfs/server/admin/move-clone-hardware.md).  
   
 2.  Assign all required permissions.  
   

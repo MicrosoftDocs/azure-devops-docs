@@ -27,7 +27,7 @@ This walkthrough assumes that you've already:
 
 To build a solution that relies on npm packages from Package Management feeds, add the **npm** task. 
 
-First, click **Add build step...**, select the **Package** category, and add the
+First, click **Add build task...**, select the **Package** category, and add the
 **npm** task. Then drag to order the task above any build tasks that require 
 your packages. 
 
@@ -36,7 +36,7 @@ Next, configure these options:
 - **working folder:** Select the folder that contains your `.npmrc`; leave blank if your `.npmrc` is at the root of the repo
 - **npm command:** `install`
 
-![Team Build npm install step configuration](_img/team-build-npm-install.png)
+![Team Build npm install task configuration](_img/team-build-npm-install.png)
 
 Finally, save your build.
 
@@ -44,7 +44,7 @@ Finally, save your build.
 
 To publish an npm package to a Package Management feed, add the **npm** task. 
 
-First, click **Add build step...**, select the **Package** category, and add the
+First, click **Add build task...**, select the **Package** category, and add the
 **npm** task. Then drag to order the task above any build tasks that require 
 your packages. 
 
@@ -53,7 +53,7 @@ Next, configure these options:
 - **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
 - **npm command:** `publish`
 
-![Team Build npm publish step configuration](_img/team-build-npm-publish.png)
+![Team Build npm publish task configuration](_img/team-build-npm-publish.png)
 
 Finally, save your build.
 

@@ -91,10 +91,10 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
 ![Jenkins build environment](_img/jenkins_build_environment.png)
 * Under Build (see screenshot below), follow these steps:
   * Choose **Execute Windows batch command**. In the **Command** box, type `init.cmd`.
-  * Choose **Build a Visual Studio project or solution using MSBuild**. This step should point to msbuild.exe and FabrikamLibrary.sln.
+  * Choose **Build a Visual Studio project or solution using MSBuild**. This task should point to msbuild.exe and FabrikamLibrary.sln.
   * Choose **Execute Windows batch command** again, but this time, use this command: `.tools\VSS.NuGet\nuget pack FabrikamLibrary\FabrikamLibrary.csproj`.
 
-![Jenkins build steps](_img/jenkins_build_steps.png)
+![Jenkins build tasks](_img/jenkins_build_steps.png)
 * Save this build definition and queue a build.
 * The build's Workspace will now contain a .nupkg just like the one you built locally earlier.
 
@@ -103,7 +103,7 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
 
 These are the last walkthrough steps to publish the package to a feed:
 * Edit the build definition in Jenkins.
-* After the last build step (which runs `nuget pack`), add a new **Execute a Windows batch command** build step.
+* After the last build task (which runs `nuget pack`), add a new **Execute a Windows batch command** build task.
 * In the new **Command** box, add these two lines:
   * The first line puts credentials where NuGet can find them: `.tools\VSS.NuGet\nuget sources update -Name "MyGreatFeed" -UserName "%FEEDUSER%" -Password "%FEEDPASS%"`
   * The second line pushes your package using the credentials saved above: `.tools\VSS.NuGet\nuget push *.nupkg -Name "MyGreatFeed" -ApiKey VSS`

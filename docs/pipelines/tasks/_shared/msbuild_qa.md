@@ -2,19 +2,19 @@
 ms.topic: include
 ---
 
-### Should I use the Visual Studio Build step or the MSBuild step?
+### Should I use the Visual Studio Build task or the MSBuild task?
 
-If you are building a solution, in most cases you should use the [Visual Studio Build step](../build/visual-studio-build.md). This step automatically:
+If you are building a solution, in most cases you should use the [Visual Studio Build task](../build/visual-studio-build.md). This task automatically:
 
 * Sets the ```/p:VisualStudioVersion``` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build. 
 
 * Specifies the MSBuild version argument.
 
-In some cases you might need to use the [MSBuild step](../build/msbuild.md). For example, you should use it if you are building code projects apart from a solution.
+In some cases you might need to use the [MSBuild task](../build/msbuild.md). For example, you should use it if you are building code projects apart from a solution.
 
 ### Where can I learn more about MSBuild?
 
-[MSBuild step](../build/msbuild.md)
+[MSBuild task](../build/msbuild.md)
 
 [MSBuild reference](https://msdn.microsoft.com/en-us/library/dd393574.aspx)
 

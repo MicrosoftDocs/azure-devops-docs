@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.manager: douge
 ms.reviewer: greggboe
 ms.topic: conceptual
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/02/2017
 ---
 
@@ -29,4 +30,4 @@ When you create a team project, you have an option to include a SharePoint porta
 
 ## Related notes
 
-- [Configure Team Foundation Server Extensions for SharePoint Products](../../tfs-server/install/sharepoint/setup-remote-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Configure Team Foundation Server Extensions for SharePoint Products](/tfs/server/install/sharepoint/setup-remote-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 

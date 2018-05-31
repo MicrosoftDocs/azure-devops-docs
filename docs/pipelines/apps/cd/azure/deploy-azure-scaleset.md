@@ -50,7 +50,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    earlier and choose **Create**. This creates a new release definition 
    with one default environment.
 
-1. In the new release definition, select **+ Add tasks** and add these task steps:
+1. In the new release definition, select **+ Add tasks** and add these tasks:
 
    * **Build Machine Image**
    * **Azure PowerShell**<p />

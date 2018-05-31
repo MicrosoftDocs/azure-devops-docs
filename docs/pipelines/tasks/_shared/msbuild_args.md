@@ -31,7 +31,7 @@ ms.topic: include
 </tr>
 <tr>
 <td>Restore NuGet Packages</td>
-<td>**(Important)** This option is deprecated. Make sure to clear this checkbox and instead use the [NuGet Installer](../package/nuget.md) build step.</td>
+<td>**(Important)** This option is deprecated. Make sure to clear this checkbox and instead use the [NuGet Installer](../package/nuget.md) build task.</td>
 </tr>
 
 
