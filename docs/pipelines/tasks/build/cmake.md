@@ -61,7 +61,7 @@ Arguments that you want to pass to CMake.
 
 ### How do I enable CMake for hosted agents?
 
-The [hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build step.
+The [hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build task.
 
 <ol>
 <li><p>Open the Agent Pools control panel tab:

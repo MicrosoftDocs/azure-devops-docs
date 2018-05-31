@@ -25,7 +25,7 @@ This walkthrough will cover setting up an existing build to restore NuGet packag
 
 To build a solution that relies on NuGet packages from Package Management feeds, add the **NuGet** task (if one is not already present). 
 
-First, click **Add build step...**, select the **Package** category, and add the **NuGet** task. Then drag to order the task above any build tasks that require your packages. 
+First, click **Add build tasks...**, select the **Package** category, and add the **NuGet** task. Then drag to order the task above any build tasks that require your packages. 
 
 Next, configure these options:
 
@@ -37,7 +37,7 @@ Then, select feeds to use:
 - If you've checked in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single VSTS/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
-![A screenshot of the NuGet step configured as outlined above](_img/restore-pkgs-on-build.png)
+![A screenshot of the NuGet task configured as outlined above](_img/restore-pkgs-on-build.png)
 
 Finally, save your build.
 
@@ -75,9 +75,9 @@ NuGet restore can fail due to a variety of issues. One of the most common issues
 
 If you're using VSTS or the upcoming TFS 2018 release, new template-based builds will work automatically thanks to a new "NuGet Tool Installer" task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
-For existing builds, just add or update a NuGet Tool Installer step to select the version of NuGet for all the subsequent steps. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
+For existing builds, just add or update a NuGet Tool Installer task to select the version of NuGet for all the subsequent tasks. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
-![Build with NuGet Tool Installer step](_img/nuget-tool-installer.jpg)
+![Build with NuGet Tool Installer task](_img/nuget-tool-installer.jpg)
 
 ::: moniker-end 
 
@@ -87,11 +87,11 @@ For existing builds, just add or update a NuGet Tool Installer step to select th
 
 Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2018, there is a recommended workaround to use versions of NuGet > 4.0.0 in Team Build.
 
-1. Add the task, if you haven't already. If you have a "NuGet Restore" step in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a "NuGet" step.
-1. For your NuGet/NuGet Installer step, use the version selector under the task name to select version "0.*".
+1. Add the task, if you haven't already. If you have a "NuGet Restore" task in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a "NuGet" task.
+1. For your NuGet/NuGet Installer task, use the version selector under the task name to select version "0.*".
 1. In the Advanced section, set the NuGet Version to "Custom" and the Path to NuGet.exe as
 $(Build.BinariesDirectory)\nuget.exe
-1. Before your NuGet step, add a "PowerShell" step, select "Inline Script" as the Type, enter this PowerShell script as the Inline Script, and enter "4.3.0" (or any version of NuGet from this list) as the Arguments.
+1. Before your NuGet task, add a "PowerShell" task, select "Inline Script" as the Type, enter this PowerShell script as the Inline Script, and enter "4.3.0" (or any version of NuGet from this list) as the Arguments.
 
 Our thanks to [GitHub user leftler](https://github.com/Microsoft/vsts-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
 

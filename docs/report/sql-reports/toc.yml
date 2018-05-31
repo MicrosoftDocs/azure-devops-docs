@@ -155,6 +155,6 @@
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration (TFS)
-    href: ../../tfs-server/index.md
+    href: /tfs/server/index.md
   - name: TFS - Reporting & Warehouse forum
     href: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting

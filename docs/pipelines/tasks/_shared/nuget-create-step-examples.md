@@ -54,7 +54,7 @@ Make sure you've prepared the build as described [above](#prepare).
 See [Create a feed](../../../package/feeds/create-feed.md).
 
 
-#### [Build](../../index.md) steps
+#### [Build](../../index.md) tasks
 
 <table>
 <tr>
@@ -103,7 +103,7 @@ Make sure you've prepared the build as described [above](#prepare).
 If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 
 
-#### [Build](../../tasks/index.md) steps
+#### [Build](../../tasks/index.md) tasks
 
 
 <table>

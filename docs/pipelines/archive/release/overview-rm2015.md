@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Improve the process of managing the release of your app. 
 Deploy your app to a specific environment for each separate stage. 
-Manage the steps in the process with approvals for each step.
+Manage the tasks in the process with approvals for each task.
 
 * **[Overview](previous-version/release-management-overview.md)**
   - [Install Release Management](previous-version/install-release-management.md)

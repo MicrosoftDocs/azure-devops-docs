@@ -1,6 +1,6 @@
 ---
 title: VSTS and Team Foundation Server Build and Deploy - Azure CLI
-description: VSTS and Team Foundation Server build task step to run a shell or batch script containing Microsoft Azure CLI commands
+description: VSTS and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.prod: devops
 ms.technology: devops-cicd
@@ -74,8 +74,8 @@ None
 ## Related tasks
 
 * [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-service-deployment.md)
-* [Azure Web App Deployment](azure-web-app-deployment.md)
+* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

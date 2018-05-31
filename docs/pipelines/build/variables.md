@@ -27,7 +27,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 | Use | User-defined  | Predefined, all scopes | Predefined, agent scope | Format | Examples and more information |
 |---|---|---|---|---|---|
-| As arguments to build steps | Yes | Yes | Yes | `$(Build.DefinitionName)` | [Command line](../tasks/utility/command-line.md), [Copy files](../tasks/utility/copy-files.md) |
+| As arguments to build tasks | Yes | Yes | Yes | `$(Build.DefinitionName)` | [Command line](../tasks/utility/command-line.md), [Copy files](../tasks/utility/copy-files.md) |
 | Apply a version control label during the build process | Yes | Yes | No | `$(Build.DefinitionName)` | [Repository tab](repository.md) (Git and Team Foundation version control **Label format**) |
 | Customize the build number | Yes | Yes | No  | `$(Build.DefinitionName)` | [Build number format options](options.md) |
 | Environment variable in Windows batch scripts| Yes | Yes | Yes | `%BUILD_DEFINITIONNAME%` | [Batch script ](../tasks/utility/batch-script.md#example) |
@@ -70,9 +70,9 @@ Secret variables are:
 
 * Not returned back to the client. They are automatically masked out of any log output from the build or release.  
 
-* Not decrypted into environment variables. So scripts and programs run by your build steps are not given access by default.
+* Not decrypted into environment variables. So scripts and programs run by your build tasks are not given access by default.
 
-* Decrypted for access by your build steps. So you can use them in password arguments and also pass them explicitly into a script or a program from your build step (for example as `$(password)`).
+* Decrypted for access by your build tasks. So you can use them in password arguments and also pass them explicitly into a script or a program from your build task (for example as `$(password)`).
 
 ### Allow at queue time
 
@@ -94,7 +94,7 @@ If you need more detailed logs to debug build problems, define and set it to `tr
 
 ## Environment variables
 
-You can pass environment variables of the build machine into build steps. For example, on the [Build tab](../tasks/index.md) of a build definition, add this step:
+You can pass environment variables of the build machine into build tasks. For example, on the [Build tab](../tasks/index.md) of a build definition, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
@@ -264,7 +264,7 @@ The local path on the agent where any artifacts are copied to before being pushe
 
 This directory is purged before each new build, so you don't have to clean it up yourself.
 
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../tasks/utility/copy-files.md) and [Publish build artifacts](../tasks/utility/publish-build-artifacts.md) steps. See [Artifacts in Team Build](artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../tasks/utility/copy-files.md) and [Publish build artifacts](../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](artifacts.md).
 
 In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. 
 
@@ -558,7 +558,7 @@ The local path on the agent where any artifacts are copied to before being pushe
 
 This directory is purged before each new build, so you don't have to clean it up yourself.
 
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../tasks/utility/copy-files.md) and [Publish build artifacts](../tasks/utility/publish-build-artifacts.md) steps. See [Artifacts in Team Build](artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../tasks/utility/copy-files.md) and [Publish build artifacts](../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](artifacts.md).
 
 In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. 
 
@@ -743,7 +743,7 @@ The ID of the team project that this build belongs to.
 
 Scope: Agent
 
-Set to `True` if the script is being run by a build step.
+Set to `True` if the script is being run by a build task.
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

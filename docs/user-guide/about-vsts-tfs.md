@@ -54,7 +54,7 @@ Team project collections serve as containers for security and administration in 
 physical database boundaries. They are also used to group related team projects. Finally, team projects 
 are used to encapsulate the assets of individual software projects, including source code, work items, 
 and so on. Learn more about these concepts at 
-[Manage team project collections](../tfs-server/admin/manage-team-project-collections.md). 
+[Manage team project collections](/tfs/server/admin/manage-team-project-collections.md). 
 
 VSTS is slightly different. It currently only has two options for scoping and scaling 
 data&mdash;accounts and team projects. Accounts in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 

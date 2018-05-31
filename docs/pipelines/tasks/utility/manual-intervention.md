@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment steps.
+![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands
 
@@ -40,7 +40,7 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 The **Manual Intervention** task does not perform deployment actions directly.
 Instead, it allows you to pause an active deployment within an environment, typically to perform some
-manual steps or actions, and then continue the automated deployment steps. For example, the user may
+manual steps or actions, and then continue the automated deployment tasks. For example, the user may
 need to edit the details of the current release before continuing; perhaps by entering the values for
 custom variables used by the tasks in the release.
 
