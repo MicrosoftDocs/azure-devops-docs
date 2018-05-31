@@ -3056,28 +3056,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/test/how-long-to-keep-test-results.md",
-      "redirect_url": "/vsts/manual-test/getting-started/how-long-to-keep-test-results",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/test/index.md",
-      "redirect_url": "/vsts/manual-test/index",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/test/load-test-your-app-vs.md",
       "redirect_url": "/vsts/load-test/getting-started-with-performance-testing",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/test/overview.md",
-      "redirect_url": "/vsts/manual-test/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/test/perform-exploratory-tests.md",
-      "redirect_url": "/vsts/manual-test/getting-started/perform-exploratory-tests",
       "redirect_document_id": false
     },
     {
