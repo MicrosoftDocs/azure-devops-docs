@@ -2,10 +2,10 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Testing
+  - name: Test
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
-    - name: "Load Testing"
+    - name: Test
       tocHref: /vsts/
-      topicHref: /vsts/load-test/index
+      topicHref: /vsts/test/index
