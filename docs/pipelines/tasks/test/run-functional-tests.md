@@ -138,7 +138,7 @@ These scenarios are supported for:
 ### Related tasks
 
 * [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
-* [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopy)
+* [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopyV1)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 * [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
