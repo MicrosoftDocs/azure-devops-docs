@@ -97,7 +97,7 @@ Important diagnostics information such as test errors and status messages from t
 
 ####Azure SQL Database Deployment task
 
-Deploy an Azure SQL Database to an existing Azure SQL Server. The Azure SQL Database deployment task now supports both Azure Classic and Azure Resource Manager connection. You can find more details at the [GitHub project](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SqlAzureDacpacDeployment/README.md).
+Deploy an Azure SQL Database to an existing Azure SQL Server. The Azure SQL Database deployment task now supports both Azure Classic and Azure Resource Manager connection. You can find more details at the [GitHub project](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SqlAzureDacpacDeploymentV1/README.md).
 
 ####Delete Test Plan
 

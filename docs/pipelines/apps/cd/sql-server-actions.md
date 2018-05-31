@@ -215,6 +215,6 @@ sqlpackage.exe /Action:Script /?
 
 * [Deploy your database to Azure SQL Database using DACPACs](deploy-dacpac-sqlpackage.md)
 * [Deploy your database to Azure SQL database using SQL scripts](deploy-database-sqlscripts.md)
-* [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)
+* [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
