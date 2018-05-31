@@ -37,7 +37,7 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
   
 ## Related articles
 
-- [Requirements and compatibility, Supported web browsers](/tfs/server/compatibility.md#supported-browsers)
+- [Requirements and compatibility, Supported web browsers](/tfs/server/compatibility#supported-browsers)
 
 ### Alternative solutions to increasing the attachment size   
 

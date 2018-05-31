@@ -45,7 +45,7 @@ ms.date: 01/12/2017
   
 1.  Move or split the collection.  
 
-     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections.md).  
+     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections).  
   
 2.  Grant required permissions to the service account for the second instance of Team Foundation Server.  
   
@@ -70,7 +70,7 @@ ms.date: 01/12/2017
   
 2.  Move or split the collection.  
 
-     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections.md).  
+     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections).  
   
 3.  Assign all required permissions.  
   
@@ -84,9 +84,9 @@ ms.date: 01/12/2017
   
  For more information, see the following topics:  
 
--   [Move or clone TFS](/tfs/server/admin/move-across-domains.md)  
+-   [Move or clone TFS](/tfs/server/admin/move-across-domains)  
 
--   [Move TFS to a new domain ( environment move)](/tfs/server/admin/move-across-domains.md)  
+-   [Move TFS to a new domain ( environment move)](/tfs/server/admin/move-across-domains)  
   
 -   [Register an instance of PWA](register-pwa.md)  
   
@@ -101,7 +101,7 @@ ms.date: 01/12/2017
   
 1.  Move the instance of Team Foundation Server.  
   /tfs/server
-     For more information, see [Move or clone TFS](/tfs/server/admin/move-clone-hardware.md).  
+     For more information, see [Move or clone TFS](/tfs/server/admin/move-clone-hardware).  
   
 2.  Assign all required permissions.  
   

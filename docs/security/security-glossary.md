@@ -89,7 +89,7 @@ SSL is a protocol used to strengthen the security of cloud-hosted and on-premise
 
 SSL is always used to protect VSTS data. To learn more, see [Data Protection Overview](https://docs.microsoft.com/vsts/articles/team-services-security-whitepaper).
 
-For on-premises TFS deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/tfs/server/admin/setup-secure-sockets-layer.md).
+For on-premises TFS deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/tfs/server/admin/setup-secure-sockets-layer).
 
 ## Stakeholder
 

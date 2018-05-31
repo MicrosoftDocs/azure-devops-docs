@@ -34,5 +34,5 @@ You can use the following procedures to save data that users most care about, su
     This process doesn't save any attachments, change history, or links to other artifacts.
 
 If you have Team Foundation Server on-premises, you can easily save data stored for a team project collection 
-by [making a backup of the database](/tfs/server/admin/backup/config-backup-sched-plan.md). You can also 
+by [making a backup of the database](/tfs/server/admin/backup/config-backup-sched-plan). You can also 
 use the same steps as above.

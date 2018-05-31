@@ -56,7 +56,7 @@ If you have a team project already, and want to start coding an application proj
 
 ### TFS
 
-If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/tfs/server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
+If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/tfs/server/admin/add-sharepoint-to-tfs) manually after team project creation. 
 
 > [!NOTE]   
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
@@ -89,7 +89,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
 2.  Ask your TFS administrator about the following resources and get additional permissions as needed:
 
-    -   Which team project collection you should connect to when you create your team project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you work in an enterprise organization and will be supporting hundreds of team projects, you should add all your team projects to a single project collection. If you need to create additional collections, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections.md).
+    -   Which team project collection you should connect to when you create your team project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you work in an enterprise organization and will be supporting hundreds of team projects, you should add all your team projects to a single project collection. If you need to create additional collections, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections).
 
     -   Has SQL Server Analysis Services and SQL Server Reporting Services been configured for the deployment? If so, ask your administrator to [add you as a member of the Team Foundation Content Managers group](../report/admin/grant-permissions-to-reports.md) on the server that hosts SQL Server Reporting Services. Without these permissions, you'll be unable to create a team project.
 

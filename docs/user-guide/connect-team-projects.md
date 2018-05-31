@@ -310,7 +310,7 @@ In addition, you can provide access to stakeholders in your organization who wil
 
 ## Configure Visual Studio to connect to TFS Proxy
 
-If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 
