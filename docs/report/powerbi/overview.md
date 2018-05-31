@@ -61,5 +61,5 @@ Before you get started using Power BI with VSTS, make sure you have completed th
 
 ## Deprecated PowerBI.com Content Pack
 
-In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you wonâ€™t be able to create any new datasets.
+In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won€™t be able to create any new datasets.
 

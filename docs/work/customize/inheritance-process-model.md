@@ -25,13 +25,13 @@ The Inheritance process model provides support for customizing work tracking obj
 
 You can perform the following tasks with the Inheritance process model. 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |Fields  |Pick lists   |   Work item types |
 > |-------------|----------|---------|
 > |- [Add a custom field](process/customize-process-field.md)<br/>- [Add a person-name or Identity field](process/customize-process-field.md#identity)<br/>- [Add a rich-text field](process/customize-process-field.md#html)<br/>- [Add a checkbox (Boolean) field](process/customize-process-field.md#boolean-field)<br/>- [Add rules to a field](process/custom-rules.md)<br/>- [Change a field label](process/customize-process-field.md)<br/>- [Remove a field from a form](process/customize-process-field.md)<br/>- [Add a custom control field](process/custom-controls-process.md)<br/>- [Delete a field](process/customize-process-field.md#delete-field)<br/>- [Review fields](process/customize-process-field.md#review-fields)|- [Area paths](set-area-paths.md)<br/>- [iteration paths](set-iteration-paths-sprints.md)<br/>- [Person-name field (add team members)](../../accounts/add-team-members-vs.md)<br/>- [State or Reason fields](process/customize-process-workflow.md)<br/>- [Add a custom pick list](process/customize-process-form.md)|- [Add a custom field](process/customize-process-field.md)<br/>- [Add a custom WIT](process/customize-process-wit.md)<br/>- [Specify the WIT color](process/customize-process-wit.md)<br/>- [Customize the workflow (States)](process/customize-process-workflow.md)<br/>- [Customize the WIT form](process/customize-process-form.md)<br/>- [Add a custom control](process/custom-controls-process.md)| 
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > | Backlogs | Process |  
 > |----------|---------|   
 > |- [Add custom backlog levels](add-portfolio-backlogs.md)<br/>- [Add a custom WIT to a backlog](process/customize-process-backlogs-boards.md)<br/>- [Show bugs on backlogs/boards](show-bugs-on-backlog.md)|- [Create & manage an inherited process](process/manage-process.md)<br/>- [Customize a process](process/customize-process.md) |

@@ -29,7 +29,7 @@ You can install the agent in any one of these ways:
 For information about agents and pipelines, see:
 
 * [Concurrent pipelines in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
-* [Concurrent pipelines in VSTS](../../licensing/concurrent-pipelines-ts.md).
+* [Concurrent pipelines in VSTS](../../licensing/concurrent-jobs-vsts.md).
 * [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
 
 <a name="runscript"></a>

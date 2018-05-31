@@ -20,7 +20,7 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 Use this topic to learn
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * How to view current and past sprint burndowns 
 > * Required and recommended activities to support sprint burndown    
 

@@ -14,7 +14,7 @@ ms.date: 11/13/2017
 
 # Add configuration to an extension that calls the Analytics Service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 [Access analytics data through a dashboard widget extension](widget-extensions-against-analytics-service.md) describes how to create a chart that pulls a
 pre-determined set of data from the Analytics Service. Rarely will consumers of your extension want to pull just the data

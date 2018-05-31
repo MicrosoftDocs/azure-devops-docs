@@ -144,7 +144,7 @@ Requires TFS 2017.2 or later version.
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
 >[!NOTE]  
-><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard. Â 
+><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 

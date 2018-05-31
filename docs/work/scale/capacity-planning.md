@@ -19,7 +19,7 @@ How much work can your team accomplish in a sprint? Using the capacity planning 
 
 [Sprint planning](../scrum/sprint-planning.md#set-capacity) introduced the basics of setting your team capacity. Here, we go into more detail to address how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Copy capacity from the previous sprint to the current sprint  
 > * Track capacity when performing multiple activities  
 > * Add or remove user accounts from capacity planning for a sprint  

@@ -22,7 +22,7 @@ You can also bulk add and modify work items using [Microsoft Project](create-you
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * Connect to a team project from Excel 
 > * Add or edit work items and publish your changes to TFS or VSTS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
@@ -286,7 +286,7 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp;  
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp; 
 
 
 ### Web portal and Excel access

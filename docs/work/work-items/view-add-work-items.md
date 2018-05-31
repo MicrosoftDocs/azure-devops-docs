@@ -155,7 +155,7 @@ For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?
 
 Use the following three controls to manage your views.
 
-> [!div class="mx-tdBreakAll"]   
+> [!div class="mx-tdBreakAll"]
 > | Control                  | Function                      |
 > |--------------------------|-------------------------------|
 > | ![View options](../_img/icons/view-options-icon.png) | [Set sort order, view completed items](#sort)  | 
