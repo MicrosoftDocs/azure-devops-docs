@@ -263,7 +263,7 @@ featureFlags:
                                     <h3>Admin</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
@@ -940,7 +940,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfs-server/index">
+                                <a href="/tfs/server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -1,6 +1,461 @@
 {
   "redirections": [
     {
+      "source_path": "docs/tfs-server/install/sql-server/sql-server-requirements.md",
+      "redirect_url": "/tfs/server/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/architecture/extend-vs-for-alm.md",
+      "redirect_url": "/tfs/server/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/setup-customize-alerts.md",
+      "redirect_url": "/tfs/server/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/service-account-dependencies-tfs.md",
+      "redirect_url": "/tfs/server/admin/service-account-dependencies-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/config-tfs-resources.md",
+      "redirect_url": "/tfs/server/admin/config-tfs-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/collection-upgrade-failure.md",
+      "redirect_url": "/tfs/server/troubleshooting/collection-upgrade-failure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/tfs-2005-to-2015.md",
+      "redirect_url": "/tfs/server/upgrade/tfs-2005-to-2015",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/run-upgrade-wizard.md",
+      "redirect_url": "/tfs/server/upgrade/run-upgrade-wizard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/backup-and-restore-data.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/backup-and-restore-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/use-same-sharepoint-site.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/use-same-sharepoint-site",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/setup-sql-server.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/setup-sql-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/same-app-tier-hardware.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/same-app-tier-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/new-app-tier-hardware.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/new-app-tier-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade-2013/upgrade-2013-requirements.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/create-tfs-farm.md",
+      "redirect_url": "/tfs/server/install/create-tfs-farm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-2013/config-tfs-advanced.md",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-advanced",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-2013/config-tfs-standard.md",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-standard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-2013/config-tfs-basic.md",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-basic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-2013/install-tfs.md",
+      "redirect_url": "/tfs/server/install/install-2013/install-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/change-deployment.md",
+      "redirect_url": "/tfs/server/admin/change-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/config-ent-sharepoint0710-dashboards.md",
+      "redirect_url": "/tfs/server/admin/config-ent-sharepoint0710-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/modify-remove-access-sharepoint-tfs.md",
+      "redirect_url": "/tfs/server/admin/modify-remove-access-sharepoint-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/add-sharepoint-to-tfs.md",
+      "redirect_url": "/tfs/server/admin/add-sharepoint-to-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sharepoint/move-sharepoint-new-hardware.md",
+      "redirect_url": "/tfs/server/install/sharepoint/move-sharepoint-new-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sharepoint/verify-sharepoint.md",
+      "redirect_url": "/tfs/server/install/sharepoint/verify-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sharepoint/setup-remote-sharepoint.md",
+      "redirect_url": "/tfs/server/install/sharepoint/setup-remote-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sharepoint/install-sharepoint.md",
+      "redirect_url": "/tfs/server/install/sharepoint/install-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sharepoint/config-enterprise-app-def.md",
+      "redirect_url": "/tfs/server/install/sharepoint/config-enterprise-app-def",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/tfsservicecontrol-cmd.md",
+      "redirect_url": "/tfs/server/command-line/tfsservicecontrol-cmd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/tfs-labconfig-cmd.md",
+      "redirect_url": "/tfs/server/command-line/tfs-labconfig-cmd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/tfsdeleteproject-cmd.md",
+      "redirect_url": "/tfs/server/command-line/tfsdeleteproject-cmd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/tfssecurity-cmd.md",
+      "redirect_url": "/tfs/server/command-line/tfssecurity-cmd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/tfsconfig-cmd.md",
+      "redirect_url": "/tfs/server/command-line/tfsconfig-cmd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/architecture/required-ports.md",
+      "redirect_url": "/tfs/server/architecture/required-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/setup-secure-sockets-layer.md",
+      "redirect_url": "/tfs/server/admin/setup-secure-sockets-layer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/change-caching-app-tier.md",
+      "redirect_url": "/tfs/server/admin/change-caching-app-tier",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/manage-file-types.md",
+      "redirect_url": "/tfs/server/admin/manage-file-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/config-lab/scvmm-envs.md",
+      "redirect_url": "/tfs/server/admin/config-lab/scvmm-envs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/stop-start-stuff.md",
+      "redirect_url": "/tfs/server/admin/stop-start-stuff",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/change-service-account-or-password-sql-reporting.md",
+      "redirect_url": "/tfs/server/admin/change-service-account-or-password-sql-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/change-service-account-password.md",
+      "redirect_url": "/tfs/server/admin/change-service-account-password",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/add-administrator-tfs.md",
+      "redirect_url": "/tfs/server/add-administrator-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/setup-ad-groups.md",
+      "redirect_url": "/tfs/server/admin/setup-ad-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/split-team-project-collections.md",
+      "redirect_url": "/tfs/server/admin/split-team-project-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/move-project-collection.md",
+      "redirect_url": "/tfs/server/admin/move-project-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/manage-team-project-collections.md",
+      "redirect_url": "/tfs/server/admin/manage-team-project-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/command-line/open-admin-console.md",
+      "redirect_url": "/tfs/server/command-line/open-admin-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/move-across-domains.md",
+      "redirect_url": "/tfs/server/admin/move-across-domains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/rebuild-client-cache.md",
+      "redirect_url": "/tfs/server/admin/rebuild-client-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/move-clone-hardware.md",
+      "redirect_url": "/tfs/server/admin/move-clone-hardware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/tut-single-svr-reconn-svcs-users.md",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-reconn-svcs-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/tut-single-svr-install-config-tfs.md",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-install-config-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/tut-single-svr-restore-dbs.md",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-restore-dbs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/tut-single-svr-prep-new-hw.md",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-prep-new-hw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/tut-single-svr-home.md",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-home",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/config-backup-sched-plan.md",
+      "redirect_url": "/tfs/server/admin/backup/config-backup-sched-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/restore-lab-management-components.md",
+      "redirect_url": "/tfs/server/admin/backup/restore-lab-management-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/restore-data-different-instance.md",
+      "redirect_url": "/tfs/server/admin/backup/restore-data-different-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/restore-application-tier-server.md",
+      "redirect_url": "/tfs/server/admin/backup/restore-application-tier-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/refresh-data-caches.md",
+      "redirect_url": "/tfs/server/admin/backup/refresh-data-caches",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/manually-backup-tfs.md",
+      "redirect_url": "/tfs/server/admin/backup/manually-backup-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/backup-db-architecture.md",
+      "redirect_url": "/tfs/server/admin/backup/backup-db-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/admin/backup/back-up-restore-tfs.md",
+      "redirect_url": "/tfs/server/admin/backup/back-up-restore-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/walkthrough.md",
+      "redirect_url": "/tfs/server/upgrade/walkthrough",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/express.md",
+      "redirect_url": "/tfs/server/upgrade/express",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/change-product-key.md",
+      "redirect_url": "/tfs/server/upgrade/change-product-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/pre-production.md",
+      "redirect_url": "/tfs/server/upgrade/pre-production",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/pre-upgrade.md",
+      "redirect_url": "/tfs/server/upgrade/pre-upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/clean-up-data.md",
+      "redirect_url": "/tfs/server/upgrade/clean-up-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/get-started.md",
+      "redirect_url": "/tfs/server/upgrade/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-2013/add-tfs-svc-acct-report-svr.md",
+      "redirect_url": "/tfs/server/install/install-2013/add-tfs-svc-acct-report-svr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sql-server/use-always-on-groups.md",
+      "redirect_url": "/tfs/server/install/sql-server/use-always-on-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sql-server/reporting-service-roles.md",
+      "redirect_url": "/tfs/server/install/sql-server/reporting-service-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sql-server/collation-requirements.md",
+      "redirect_url": "/tfs/server/install/sql-server/collation-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/sql-server/install-sql-server.md",
+      "redirect_url": "/tfs/server/install/sql-server/install-sql-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/install-proxy-setup-remote.md",
+      "redirect_url": "/tfs/server/install/install-proxy-setup-remote",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/multiple-server.md",
+      "redirect_url": "/tfs/server/install/multiple-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/dual-server.md",
+      "redirect_url": "/tfs/server/install/dual-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/single-server.md",
+      "redirect_url": "/tfs/server/install/single-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/install/get-started.md",
+      "redirect_url": "/tfs/server/install/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/background-job-agent.md",
+      "redirect_url": "/tfs/server/upgrade/background-job-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/sql-server-databases.md",
+      "redirect_url": "/tfs/server/upgrade/sql-server-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/examples-complex-topo.md",
+      "redirect_url": "/tfs/server/upgrade/examples-complex-topo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/examples-moderate-topo.md",
+      "redirect_url": "/tfs/server/upgrade/examples-moderate-topo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/examples-simple-topo.md",
+      "redirect_url": "/tfs/server/upgrade/examples-simple-topo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/upgrade.md",
+      "redirect_url": "/tfs/server/upgrade/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/upgrade/tfs-concepts.md",
+      "redirect_url": "/tfs/server/upgrade/tfs-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/requirement-changes-tfs16.md",
+      "redirect_url": "/tfs/server/compatibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/requirement-changes-tfs15.md",
+      "redirect_url": "/tfs/server/compatibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/requirements.md",
+      "redirect_url": "/tfs/server/requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/tfs-server/whats-new.md",
+      "redirect_url": "/tfs/server/whats-new",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/package/feeds/common-identities.md",
       "redirect_url": "/vsts/package/feeds/feed-permissions",
       "redirect_document_id": false
@@ -1521,8 +1976,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/admin/backup/backup-db-architecture.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/backup-db-architecture",
+      "source_path": "docs/tfs-server/tfs/admin/backup/backup-db-upgrade.md",
+      "redirect_url": "/vsts/tfs-server/admin/backup/backup-db-upgrade",
       "redirect_document_id": false
     },
     {
@@ -1581,8 +2036,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/admin/backup/tut-single-svr-reconn-svcs-users.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/tut-single-svr-reconn-svcs-users",
+      "source_path": "docs/tfs-server/tfs/admin/.md",
+      "redirect_url": "/vsts/tfs-server/admin/",
       "redirect_document_id": false
     },
     {
@@ -1696,48 +2151,48 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/architecture.md",
-      "redirect_url": "/vsts/tfs-server/architecture/architecture",
+      "source_path": "docs/tfs-server/tfs/upgrade/upgrade.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/upgrade",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/background-job-agent.md",
-      "redirect_url": "/vsts/tfs-server/architecture/background-job-agent",
+      "source_path": "docs/tfs-server/tfs/upgrade/background-job-agent.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/background-job-agent",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/examples-complex-topo.md",
-      "redirect_url": "/vsts/tfs-server/architecture/examples-complex-topo",
+      "source_path": "docs/tfs-server/tfs/upgrade/examples-complex-topo.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/examples-complex-topo",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/examples-moderate-topo.md",
-      "redirect_url": "/vsts/tfs-server/architecture/examples-moderate-topo",
+      "source_path": "docs/tfs-server/tfs/upgrade/examples-moderate-topo.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/examples-moderate-topo",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/examples-simple-topo.md",
-      "redirect_url": "/vsts/tfs-server/architecture/examples-simple-topo",
+      "source_path": "docs/tfs-server/tfs/upgrade/examples-simple-topo.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/examples-simple-topo",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/extend-vs-for-alm.md",
-      "redirect_url": "/vsts/tfs-server/architecture/extend-vs-for-alm",
+      "source_path": "docs/tfs-server/tfs/upgrade/extend-vs-for-alm.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/extend-vs-for-alm",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/required-ports.md",
-      "redirect_url": "/vsts/tfs-server/architecture/required-ports",
+      "source_path": "docs/tfs-server/tfs/upgrade/required-ports.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/required-ports",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/sql-server-databases.md",
-      "redirect_url": "/vsts/tfs-server/architecture/sql-server-databases",
+      "source_path": "docs/tfs-server/tfs/upgrade/sql-server-databases.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/sql-server-databases",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/tfs-server/tfs/architecture/tfs-concepts.md",
-      "redirect_url": "/vsts/tfs-server/architecture/tfs-concepts",
+      "source_path": "docs/tfs-server/tfs/upgrade/tfs-concepts.md",
+      "redirect_url": "/vsts/tfs-server/upgrade/tfs-concepts",
       "redirect_document_id": false
     },
     {
@@ -2972,12 +3427,12 @@
     },
     {
       "source_path": "docs/design/overview.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
       "redirect_document_id": false
     },
     {
@@ -4336,8 +4791,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-upgrade.md",
+      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-upgrade",
       "redirect_document_id": false
     },
     {
@@ -6286,8 +6741,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/tasks/_shared/msbuild_architecture_arg.md",
-      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_architecture_arg",
+      "source_path": "docs/build-release/tasks/_shared/msbuild_upgrade_arg.md",
+      "redirect_url": "/vsts/pipelines/tasks/_shared/msbuild_upgrade_arg",
       "redirect_document_id": true
     },
     {
