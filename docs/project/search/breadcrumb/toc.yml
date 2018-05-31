@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
-    - name: "Search"
+    - name: Search
       tocHref: /vsts/
       topicHref: /vsts/search/index
