@@ -37,7 +37,7 @@
 - name: Tutorials
   items:
   - name: Test from the Kanban board
-    href: ../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
+    href: ../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
   - name: Load test before release
     href: load-test/run-performance-tests-app-before-release.md
 - name: How-to Guides
@@ -47,7 +47,7 @@
     - name: Track test status
       href: track-test-status.md
     - name: Delete test artifacts
-      href: ../work/backlogs/remove-delete-work-items.md?toc=/vsts/test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
+      href: ../work/backlogs/remove-delete-work-items.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
     - name: Perform user acceptance testing
       href: user-acceptance-testing.md
     - name: Test different configurations
@@ -119,7 +119,7 @@
   - name: Load testing FAQs
     href: load-test/reference-qa.md
   - name: Unable to connect
-    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json
+    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
   - name: Default permissions (Security)
     href: manual-test-permissions.md
 - name: Resources

@@ -41,7 +41,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## Step-by-Step Tutorials
 
-* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
+* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## How-to Guides
 
@@ -56,7 +56,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 ## Reference
 
 * [FAQs for manual testing](reference-qa.md)
-* [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
+* [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## Resources
 
