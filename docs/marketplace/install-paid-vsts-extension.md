@@ -70,7 +70,7 @@ To assign extensions, you'll need VSTS [project collection administrator or acco
 
 	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace}(https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 0.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to:
 

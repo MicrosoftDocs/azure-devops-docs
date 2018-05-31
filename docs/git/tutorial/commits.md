@@ -37,7 +37,7 @@ Git tracks file changes in your repo as you work, and separates the files in you
 - Modified files - These files have changes since your last commit, but you haven't yet staged for the next commit.
 - Staged files - These files have changes that will be added to the next commit.   
 
-![Lifecyle of files in your repo between the three states](_img/git_file_status_lifecycle.png)   
+![Lifecycle of files in your repo between the three states](_img/git_file_status_lifecycle.png)   
 
 When you create a commit, only the staged changes and unchanged files are used for the snapshot. 
 Changes to unstaged but modified files are kept, but the commit uses the unmodified version from the previous commit in its snapshot.

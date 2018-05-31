@@ -97,7 +97,7 @@ If you are checking in changes into version control folders that are controlled 
 
 ## Subscribe to alerts
 
-If you want to be notified when someone checks in code in your TFVC team project, you can [subscribe]((https://msdn.microsoft.com/library/ms181334) to receive email alerts. [Here's how]
+If you want to be notified when someone checks in code in your TFVC team project, you can [subscribe](https://msdn.microsoft.com/library/ms181334) to receive email alerts. [Here's how]
 
 ![Alerts page for TFVC team project in web portal](_img/check-your-work-team-codebase/IC720120.png)
 

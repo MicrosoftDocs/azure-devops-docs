@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](tutorial/branches.md).   
 
 >[!IMPORTANT]
-> Users of TFS 2015 and previous will not have the **Branches** tab in the **Code** view. When using those versions, you can reate a new branch in TFS from the **Code** view by selecting the drop-down next to the branch name and then selecting **New branch**.
+> Users of TFS 2015 and previous will not have the **Branches** tab in the **Code** view. When using those versions, you can create a new branch in TFS from the **Code** view by selecting the drop-down next to the branch name and then selecting **New branch**.
 
 
 ## Create a new branch from the web 
