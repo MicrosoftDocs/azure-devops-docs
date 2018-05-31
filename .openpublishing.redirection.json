@@ -5552,7 +5552,7 @@
     },
     {
       "source_path": "docs/build-release/actions/ci-cd-part-1.md",
-      "redirect_url": "/vsts/pipelines/agents/get-started-designer",
+      "redirect_url": "/vsts/pipelines/get-started-designer",
       "redirect_document_id": true
     },
     {

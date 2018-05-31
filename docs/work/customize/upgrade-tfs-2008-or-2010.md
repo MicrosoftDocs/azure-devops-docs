@@ -33,7 +33,7 @@ This option is simpler, but will result in more downtime, especially if your TFS
 * [Run the Configure Features Wizard for TFS 2012 on each team project](configure-features-after-upgrade.md).
 	You need to do this before you upgrade to TFS 2015 so that you'll be able to use the Confugure Features Wizard for TFS 2015.
 * [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
-* [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started.md).
+* [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
 * [Run the Configure Features Wizard for TFS 2015 on each team project](configure-features-after-upgrade.md).
 	Each team project owner can do this when it makes sense. You don't have to configure features for all team projects at this time.
 * [Perform additional configurations for each team project.](additional-configuration-options.md).
@@ -44,7 +44,7 @@ This option is simpler, but will result in more downtime, especially if your TFS
 
 This option is more work, but it will work with customized team projects and it reduces dowbtime because you don't have to upgrade twice.
 
-* [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started.md).
+* [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
 * Manually update each team project:
 	* [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
 	* [Update the Workflow for Agile Team Projects](https://msdn.microsoft.com/library/hh500412.aspx).

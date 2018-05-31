@@ -368,7 +368,7 @@ Team Foundation automatically indexes all long-text fields with a data type of *
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
-For more information, see [Full-Text Search Queries and Collation Settings](/tfs/server/install/sql-server/collation-requirements.md).
+For more information, see [Full-Text Search Queries and Collation Settings](/tfs/server/install/sql-server/collation-requirements).
 
 ::: moniker-end
 

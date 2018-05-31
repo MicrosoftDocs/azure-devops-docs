@@ -118,7 +118,7 @@ For a workaround in which you delete your browser cookies, see the following sup
 
 ## Connect to a TFS with Secure Sockets Layer (SSL) configured
 
-If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](/tfs/server/admin/setup-secure-sockets-layer.md#config-client-computers). 
+If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](/tfs/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 

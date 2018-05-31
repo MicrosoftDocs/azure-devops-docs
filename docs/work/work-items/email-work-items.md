@@ -113,7 +113,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 ![Email work item from on-prem TFS](../track/_img/share-plans-email-work-item-tfs.png)  
 
 > [!NOTE]  
-> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts.md) for the email feature to work.   
+> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.   
 
 
 # [Visual Studio](#tab/visual-studio) 
@@ -161,7 +161,7 @@ If you want to mail a list of all items in the backlog or query, simply click th
 <a id="tfs-portal-email-list" />
 
 > [!NOTE]   
-> Your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts.md) for the email feature to work.  
+> Your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.  
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
     
