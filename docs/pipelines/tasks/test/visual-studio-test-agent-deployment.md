@@ -84,7 +84,7 @@ The supported options for these scenarios are:
 * **Build and release agents**
   - Hosted and on-premises agents are supported.
   - The agent must be able to communicate with all test machines. 
-    If the test machines are on-premises behind a firewall, a VSTS hosted agent
+    If the test machines are on-premises behind a firewall, a VSTS Microsoft-hosted agent
     cannot be used because it will not be able to communicate with the test machines.
   - The agent must have Internet access to download test agents. 
     If this is not the case, the test agent must be manually 

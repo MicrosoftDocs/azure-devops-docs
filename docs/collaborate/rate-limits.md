@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/07/2017
 monikerRange: 'vsts'
 ---
@@ -45,7 +46,7 @@ VSTS users consume many shared resources, and consumption depends on many factor
 
 - Uploading a large number of files to Team Foundation version control or Git typically creates a large amount of load on both an Azure SQL Database and an Azure Storage account.
 - Running a complex work item tracking query will create load on an Azure SQL Database, with the amount of load depending on the number of work items in the VSTS account. 
-- Running a build on a private agent will create load on an Azure SQL Database and on one or more Azure Storage accounts, with the amount of load depending on the amount of version 
+- Running a build on a self-hosted agent will create load on an Azure SQL Database and on one or more Azure Storage accounts, with the amount of load depending on the amount of version 
 control content downloaded, the amount of data logged by the build, and so forth.
 - All operations consume CPU and memory on one or more VSTS application tiers or job agents.
 

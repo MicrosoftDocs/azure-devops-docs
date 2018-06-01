@@ -46,7 +46,7 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
 [Testing private and intranet applications using cloud-based load testing](clt-behind-firewall.md).
 
-Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+Or, you can [run a load test locally using Visual Studio](run-performance-tests-app-before-release.md).
 
 ### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
 
@@ -201,6 +201,11 @@ for the duration of the run. So if you retain 20 cores for 10 minutes, an additi
 * Resource retention is not available for Apache JMeter tests at the present time.
 
 For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/18/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
+
+<a name="deletetests"></a>
+### Q: How do I delete a load test?
+
+**A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the account level.
 
 ----------
 

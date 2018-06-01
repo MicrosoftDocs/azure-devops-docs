@@ -117,7 +117,7 @@ Define the filter criteria for both parent and child work items.
 To find linked children, select Match top-level work items first. To find linked parents, select Match linked work items first.
 
 > [!NOTE]    
->You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
+>You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
 
 <a id="directs-link-query" />
 ## Use direct links to view dependencies

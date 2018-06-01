@@ -186,7 +186,7 @@ Several WITs support the test experience within the web portal Test hub and Test
 
 See the following resources for additional usage and customization information:
 
-- [Test configurations and test variables](../../manual-test/test-different-configurations.md)  
+- [Test configurations and test variables](../../test/test-different-configurations.md)  
 - [Test resolution states](reference/witadmin/tcm-customize-manage-test-experience.md) (TFS)
 - [Failure types](reference/witadmin/tcm-customize-manage-test-experience.md)  
 - [Define the initial test management configuration (process template)](reference/process-templates/define-initial-configuration-test-manager.md)

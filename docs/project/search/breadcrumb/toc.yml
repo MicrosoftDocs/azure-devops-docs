@@ -8,4 +8,4 @@
     items:
     - name: Search
       tocHref: /vsts/
-      topicHref: /vsts/search/index
+      topicHref: /vsts/project/search/index

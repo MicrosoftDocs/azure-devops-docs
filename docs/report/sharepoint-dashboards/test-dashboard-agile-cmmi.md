@@ -21,7 +21,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
  **Requirements**  
   
--   The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+-   The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../test/create-test-cases.md).  
   
 -   Burndown, progress, trend charts, and reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 5](_img/procguid_6.png "ProcGuid_6") do not appear when the server that hosts Analysis Services for the team project is not available.  
   
@@ -55,7 +55,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
 -   Define test cases and user stories or requirements, and create **Tested By** links from test cases to user stories or requirements.  
   
--   [Define test plans, and assign test cases to test plans](../../manual-test/getting-started/create-test-cases.md).  
+-   [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   

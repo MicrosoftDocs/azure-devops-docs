@@ -59,7 +59,7 @@ See [Software development roles](roles.md).
 - [Project Professional](../work/tfs-ps-sync/synchronize-tfs-project-server.md)   
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
-- [Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)
+- [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../feedback/give-feedback.md)  
 
 >[!NOTE]  

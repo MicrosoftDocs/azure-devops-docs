@@ -114,7 +114,7 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](../manual-test/index.md).
+To learn more, see [Testing overview](../test/index.md).
 
 ## Collaboration services
 
@@ -142,8 +142,8 @@ For the latest set of supported services, see [Integrate with service hooks](../
 
 The following services support your DevOps operations.
 
-- Cloud-based build and deployment hosted agents  
-- On-premises private agents to support build and deployment  
+- Cloud-based build and deployment Microsoft-hosted agents  
+- On-premises self-hosted agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
 
 To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).

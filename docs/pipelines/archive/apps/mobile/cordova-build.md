@@ -201,9 +201,9 @@ That's it!
 
 <a name="agentsetup"></a>
 ##In Depth: Private build agent setup
-As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Hosted Agent Pool in VSTS. This allows you to build without setting up a Windows build agent on premise. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for VSTS agents targeted at buillding iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Hosted Agent Pool in VSTS or MacinCloud's special VSTS plan.
+As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Microsoft-hosted agent pool in VSTS. This allows you to build without setting up a Windows build agent on premise. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for VSTS agents targeted at building iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Microsoft-hosted agent pool in VSTS or MacinCloud's special VSTS plan.
 
-If you are not using the VSTS Hosted Agent Pool or MacinCloud's streamlined [VSTS plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/vsts-agent) on Windows or macOS and integrate with either TFS or VSTS. The build machine simply needs to have HTTP access to the server with your TFS collection or VSTS. 
+If you are not using the VSTS Microsoft-hosted agent pool or MacinCloud's streamlined [VSTS plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/vsts-agent) on Windows or macOS and integrate with either TFS or VSTS. The build machine simply needs to have HTTP access to the server with your TFS collection or VSTS. 
 
 ### Custom Agent Setup
 Since the build process we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:

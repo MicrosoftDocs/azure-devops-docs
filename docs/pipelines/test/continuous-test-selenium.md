@@ -165,10 +165,10 @@ to deploy a web app, see [Build and deploy to an Azure Web App](../apps/cd/azure
 
 ## Decide how you will deploy and test your app
 
-You can deploy and test your app using either the Hosted agent in Azure, or a private agent that you install on the target servers.
+You can deploy and test your app using either the Microsoft-hosted agent in Azure, or a self-hosted agent that you install on the target servers.
 
-* When using the **Hosted agent**, you should use the Selenium web drivers that are
-  pre-installed on the hosted agents because they are compatible with the browser versions installed on the hosted agent images. 
+* When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
+  pre-installed on the Microsoft-hosted agents because they are compatible with the browser versions installed on the Microsoft-hosted agent images. 
   The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
 
@@ -177,7 +177,7 @@ You can deploy and test your app using either the Hosted agent in Azure, or a pr
   ```
   <p />
   
-* When using a **private agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
+* When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and Release Agents](../agents/agents.md#account). 
 
 <a name="include-test"></a>

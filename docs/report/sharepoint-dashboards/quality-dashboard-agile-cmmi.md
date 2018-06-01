@@ -33,7 +33,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
  ![Product Quality Dashboard](_img/procguid_dashboard_productquality.png "ProcGuid_Dashboard_ProductQuality")  
   
 > [!NOTE]
->  The **Test Plan Progress** report is available only when the team [creates test plans](../../manual-test/getting-started/create-test-cases.md) and runs tests.  
+>  The **Test Plan Progress** report is available only when the team [creates test plans](../../test/create-test-cases.md) and runs tests.  
 >   
 >  Progress, build, and code charts, reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 6](_img/procguid_6a.png "ProcGuid_6a"), do not appear when the data warehouse for the team project is not available.  
   
@@ -60,7 +60,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
 -   Define test cases and user stories, and create **Tested By** links between test cases and user stories.  
   
--   [Define test plans](../../manual-test/getting-started/create-test-cases.md), and assign test cases to test plans.  
+-   [Define test plans](../../test/create-test-cases.md), and assign test cases to test plans.  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   

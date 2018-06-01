@@ -69,8 +69,8 @@ If you have created WITs that act in similar ways and you want to treat them in 
   
 -   [Code Review Request and Code Review Response](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../../feedback/get-feedback.md)    
--   [Shared Steps and Shared Parameter](../../../manual-test/getting-started/create-test-cases.md)    
--   [Test Plan and Test Suite](../../../manual-test/getting-started/create-a-test-plan.md)  
+-   [Shared Steps and Shared Parameter](../../../test/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../../test/create-a-test-plan.md)  
   
 ### Process configuration  
 Process configuration defines the layout and fields used in the display of the product backlog,  sprint backlogs, and portfolio backlogs. You view these pages through the web portal. Process configuration uses categories to [configure and customize these functions](process-configuration-xml-element.md). Also, note the following restrictions:  

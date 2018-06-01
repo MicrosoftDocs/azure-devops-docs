@@ -234,8 +234,8 @@ Additional topics of interest:
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
 
 If you are working with test plans or test cases, see these topics: 
-- [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
-- [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)   
+- [Create a test plan](../../../test/create-a-test-plan.md)  
+- [Create manual test cases](../../../test/create-test-cases.md)   
 
 
 
