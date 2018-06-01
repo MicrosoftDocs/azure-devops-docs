@@ -85,7 +85,7 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
  <DEFAULT from="value" value="False" />
         <HELPTEXT>Triage work item</HELPTEXT>
-        </FIELD>
+      Â  </FIELD>
 ```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 

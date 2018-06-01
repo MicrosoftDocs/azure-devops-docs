@@ -31,7 +31,7 @@ Use this topic to learn how to:
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
 ## Copy or clone a work item   

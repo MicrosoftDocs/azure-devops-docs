@@ -1,4 +1,4 @@
-﻿The Identities command lists or changes the security identifier (SID) of users and groups in your deployment of TFS.
+The Identities command lists or changes the security identifier (SID) of users and groups in your deployment of TFS.
 You might need to change or update the SID for users and groups in one of the following scenarios:
 
 -   changing the domain of your deployment
