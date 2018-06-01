@@ -53,21 +53,21 @@ You create and manage your queues from the Agent queues tab.
 
 We provide the following agent pools by default:
 
-* **Default** pool: Use it to register [private agents](agents.md) that you've set up.
+* **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
 ::: moniker range="vsts"
 
-* **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on hosted agents, see [Hosted agents](hosted.md).
+* **Hosted** pool (VSTS only): Contains at least one free Microsoft-hosted agent, and also any [Microsoft-hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of Microsoft-hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
 
-* **Hosted VS2017** pool (VSTS only): The **Hosted VS2017** pool is another built-in pool in VSTS. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Hosted agents](hosted.md).
+* **Hosted VS2017** pool (VSTS only): The **Hosted VS2017** pool is another built-in pool in VSTS. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 
 * **Hosted Linux** pool (VSTS only): Enables you to build and release on
-  Linux machines without having to configure a private agent. The agents
+  Linux machines without having to configure a self-hosted agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
 
 * **Hosted macOS** pool (VSTS only): Enables you to build and release on
-  Mac machines without having to configure a private agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+  Mac machines without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
 Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
 

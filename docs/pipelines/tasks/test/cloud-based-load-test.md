@@ -53,7 +53,7 @@ The build agent must have the following capabilities:
 
 ## Examples
 
-* [Load test your app in the cloud](../../../load-test/index.md)
+* [Load test your app in the cloud](../../../test/load-test/index.md)
 * [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information

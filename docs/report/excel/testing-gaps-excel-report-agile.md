@@ -26,7 +26,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
   
 -   **Code Coverage**: Helps the team determine which builds and build assemblies have low or high code coverage.  
   
- The first four reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+ The first four reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
 > [!NOTE]
 >  You can access the Testing Gaps report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
@@ -79,9 +79,9 @@ Teams who are responsible for testing software can use the Testing Gaps report t
   
 |Worksheet report|Required activities|  
 |----------------------|-------------------------|  
-|-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|-   Define test cases and test plans, and assign test cases to the test plans.<br />-   [Run tests](../../manual-test/getting-started/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
+|-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|-   Define test cases and test plans, and assign test cases to the test plans.<br />-   [Run tests](../../test/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
 |-   User Story Status<br />-   User Story Status by Config|-   Define user stories, and link test cases to user stories. The recommended link type to use is **Tested By**.|  
-|-   User Story Status by Config<br />-   Tests Not Executed|-   Define test configurations, and assign to test plans or test suites. For more information, see [Test configurations: specifying test platforms](../../manual-test/test-different-configurations.md).|  
+|-   User Story Status by Config<br />-   Tests Not Executed|-   Define test configurations, and assign to test plans or test suites. For more information, see [Test configurations: specifying test platforms](../../test/test-different-configurations.md).|  
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed<br />-   Code Coverage|-   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.|  
   

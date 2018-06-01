@@ -7,17 +7,17 @@
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 
-    href: /vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json  
+    href: /vsts/test/stakeholder/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json  
   - name: Request feedback (Work tracking)
     href: get-feedback.md  
   - name: Provide feedback (Test & Feedback extension)
-    href: /vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+    href: /vsts/test/stakeholder/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
   - name: Provide feedback (Feedback client)
     href: give-feedback.md
   - name: Track feedback (Test & Feedback extension)
-    href: /vsts/manual-test/stakeholder/track-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+    href: /vsts/test/stakeholder/track-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
   - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
-    href: /vsts/manual-test/stakeholder/voluntary-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+    href: /vsts/test/stakeholder/voluntary-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
   - name: "Set feedback permissions (Security)"
     href: give-permissions-feedback.md
   - name: Enable remote audio capture

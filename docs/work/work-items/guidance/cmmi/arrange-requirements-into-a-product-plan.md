@@ -39,7 +39,7 @@ After you analyze your customer requirements sufficiently to understand what the
   
 -   You can represent these requirements as work items of type requirement, with the Requirement Type field set to Scenario or Quality of Service. For more information, see [Develop requirements](guidance-develop-requirements.md).  
   
--   These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../manual-test/getting-started/create-a-test-plan.md).  
+-   These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../test/create-a-test-plan.md).  
   
 -   [View the backlog](../../../backlogs/create-your-backlog.md) or open the Customer Requirement query to list these requirement work items.  
   

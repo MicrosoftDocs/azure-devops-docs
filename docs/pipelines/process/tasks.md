@@ -109,7 +109,7 @@ Select this check box if you want the task to run even if the build or deploymen
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 
-* Install a tool or runtime on the fly (even on [hosted agents](../agents/hosted.md)) just in time for your CI build.
+* Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
 
 * Validate your app or library against multiple versions of a dependency such as Node.js.
 

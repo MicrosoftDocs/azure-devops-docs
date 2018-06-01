@@ -10,70 +10,52 @@
     href: test/index.md
 - name: Quickstarts
   items:
-    - name: Azure DevOps projects
-      items:
-      - name: ASP.NET Core
-        href: apps/cd/azure/azure-devops-project-aspnetcore.md
-      - name: Node.js
-        href: apps/cd/azure/azure-devops-project-nodejs.md
-      - name: Java
-        href: apps/cd/azure/azure-devops-project-java.md
-      - name: Python
-        href: apps/cd/azure/azure-devops-project-python.md
-      - name: PHP
-        href: apps/cd/azure/azure-devops-project-php.md
-      - name: Ruby
-        href: apps/cd/azure/azure-devops-project-ruby.md
-      - name: Go
-        href: apps/cd/azure/azure-devops-project-go.md 
-    - name: Build your app
-      items:
-      - name: Android
-        href: languages/android.md
-      - name: ASP.NET Core
-        href: apps/aspnet/build-aspnet-core.md
-      - name: ASP.NET
-        href: apps/aspnet/build-aspnet-4.md
-      - name: C/C++ with GCC
-        href: apps/c-cpp/gcc.md
-      - name: C/C++ with VC++
-        href: apps/windows/cpp.md
-      - name: Docker image
-        href: apps/containers/build.md
-      - name: Go
-        href: apps/go/go.md
-      - name: Gradle
-        href: apps/java/build-gradle.md
-      - name: Maven
-        href: apps/java/build-maven.md
-      - name: .NET for Windows
-        href: apps/windows/dot-net.md
-      - name: Node.js
-        href: apps/nodejs/build-gulp.md
-      - name: Universal Windows Platform
-        href: apps/windows/universal.md
-      - name: Xamarin
-        href: apps/mobile/xamarin.md
-      - name: Xcode
-        href: apps/mobile/xcode-ios.md
-    - name: Deploy your app
-      items:
-      - name: Azure Web App
-        href: apps/cd/azure/aspnet-core-to-azure-webapp.md
-      - name: Windows VM
-        href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-      - name: Linux VM
-        href: apps/cd/deploy-linuxvm-deploygroups.md
-      - name: Web App for Containers
-        href: apps/cd/deploy-docker-webapp.md
-    - name: Test your app
-      items:
-      - name: Unit test with builds
-        href: test/getting-started-with-continuous-testing.md
-      - name: UI test with Selenium
-        href: test/continuous-test-selenium.md
-      - name: Review test results
-        href: test/review-continuous-test-results-after-build.md
+    - name: Your first build and release
+      href: get-started-designer.md
+    - name: Build a repo with YAML
+      href: get-started-yaml.md
+    - name: Azure DevOps project
+      href: get-started-azure-devops-project.md
+- name: Languages
+  items: 
+  - name: .NET
+    href: apps/aspnet/build-aspnet-4.md
+  - name: .NET Core
+    href: apps/aspnet/build-aspnet-core.md
+  - name: Android
+    href: languages/android.md
+  - name: C/C++
+    href: apps/windows/cpp.md
+  - name: Docker image
+    href: apps/containers/build.md
+  - name: Go
+    href: apps/go/go.md
+  - name: Java
+    href: apps/java/build-gradle.md
+  - name: JavaScript
+    href: apps/nodejs/build-gulp.md
+  - name: Xamarin
+    href: apps/mobile/xamarin.md
+  - name: Xcode
+    href: apps/mobile/xcode-ios.md
+- name: Targets
+  items:
+  - name: Azure Web App
+    href: apps/cd/azure/aspnet-core-to-azure-webapp.md
+  - name: Windows VM
+    href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+  - name: Linux VM
+    href: apps/cd/deploy-linuxvm-deploygroups.md
+  - name: Web App for Containers
+    href: apps/cd/deploy-docker-webapp.md
+- name: Tests
+  items:
+  - name: Unit test with builds
+    href: test/getting-started-with-continuous-testing.md
+  - name: UI test with Selenium
+    href: test/continuous-test-selenium.md
+  - name: Review test results
+    href: test/review-continuous-test-results-after-build.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -108,7 +90,7 @@
       href: agents/agents.md
     - name: Agent pools and queues
       href: agents/pools-queues.md
-    - name: Hosted agents
+    - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Deployment groups
       href: release/deployment-groups/index.md
@@ -289,6 +271,14 @@
       href: https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
   - name: "Set build and release permissions (Security)"
     href: policies/set-permissions.md 
+  - name: C/C++ with GCC
+    href: apps/c-cpp/gcc.md
+  - name: Maven
+    href: apps/java/build-maven.md
+  - name: .NET for Windows
+    href: apps/windows/dot-net.md
+  - name: Universal Windows Platform
+    href: apps/windows/universal.md
 - name: Troubleshooting
   items:
   - name: Troubleshoot build and release

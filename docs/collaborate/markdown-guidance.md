@@ -308,7 +308,11 @@ For example:
 
 ### Anchor links
 
-Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. 
+Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions: 
+- Punctuation marks and leading white spaces within a file name are ignored
+- Upper case letters are  converted to lower
+- Spaces between letters are converted to dashes (-). 
+
 
 **Example:**
 
@@ -384,12 +388,12 @@ a clear name to description mapping.
 
 **Example:**
 
-<pre>
+```
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
-</pre> 
+```
 
 <br/>
 **Result:**  
@@ -484,15 +488,15 @@ $ sudo npm install vsoagent-installer -g
 $ sudo npm install vsoagent-installer -g
 ```
 <br/>
-+**Example:**
-+
-+<pre>
-+To install the Microsoft VSTS Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
-+</pre>   
-+ 
-+<br/>
-+**Result:**
-+To install the Microsoft VSTS Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`.  
+**Example:**
+
+<pre>
+To install the Microsoft VSTS Cross Platform Build & Release Agent, run the following: &#96;$ sudo npm install vsoagent-installer -g&#96;.
+</pre>   
+
+<br/>
+**Result:**
+To install the Microsoft VSTS Cross Platform Build & Release Agent run the following: `$ sudo npm install vsoagent-installer`.  
 
 <br/>
 Within a markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  

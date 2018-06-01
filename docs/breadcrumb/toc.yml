@@ -32,15 +32,15 @@
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/test/index
   - name: Testing
-    tocHref: /vsts/manual-test/
+    tocHref: /vsts/test/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
     - name: Exploratory & Manual Testing
-      tocHref: /vsts/manual-test/
-      topicHref: /vsts/manual-test/index
+      tocHref: /vsts/test/
+      topicHref: /vsts/test/index
     - name: Load Testing
-      tocHref: /vsts/load-test/
-      topicHref: /vsts/load-test/index
+      tocHref: /vsts/test/load-test/
+      topicHref: /vsts/test/load-test/index
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
@@ -99,8 +99,8 @@
       tocHref: /vsts/collaborate/
       topicHref: /vsts/collaborate/index
     - name: Search
-      tocHref: /vsts/search/
-      topicHref: /vsts/search/index
+      tocHref: /vsts/project/search/
+      topicHref: /vsts/project/search/index
     - name: Feedback
       tocHref: /vsts/feedback/
       topicHref: /vsts/feedback/index

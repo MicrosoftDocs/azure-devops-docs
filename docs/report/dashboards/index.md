@@ -78,7 +78,7 @@ To learn about our reporting solutions, read [VSTS/TFS Reporting Roadmap](../ana
 ## How-to Guides
 - [Add charts to a dashboard](add-charts-to-dashboard.md)  
 - [Configure work item query-based charts](charts.md)
-- [Configure test status, progress, and result charts](../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)  
+- [Configure test status, progress, and result charts](../../test/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)  
 - [Set dashboard permissions](dashboard-permissions.md)  
 
 

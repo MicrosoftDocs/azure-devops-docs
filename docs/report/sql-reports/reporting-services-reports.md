@@ -122,7 +122,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 <b>Test planning and bug tracking activities</b>
 <ol>
 <li>Define test plans and test cases, and update their <b>State</b> as work progresses.</li>
-<li>[Mark the results of each validation step in manual tests](../../manual-test/getting-started/run-manual-tests.md) as either passed or failed.</li>
+<li>[Mark the results of each validation step in manual tests](../../test/run-manual-tests.md) as either passed or failed.</li>
 <li><b>Create bugs</b>, specify the <b>Priority</b> and <b>Severity</b>, assign to a team member, and update the <b>State</b>.</li>
 <li>(Optional) Assign test cases and bugs to areas and iterations to filter reports.</li>
 </ol>

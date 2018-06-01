@@ -404,7 +404,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
 ### Test requirements
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../manual-test/getting-started/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
 
 ![Select the test suite and add a test case](_img/IC793453.png)  
 

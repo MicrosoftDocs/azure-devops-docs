@@ -259,7 +259,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
 > [!NOTE]    
->Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../../manual-test/mtm/guidance-mtm-usage.md). 
+>Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../../test/mtm/guidance-mtm-usage.md). 
  
 
 

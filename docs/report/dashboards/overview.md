@@ -90,7 +90,7 @@ And, just like work item query-based charts, you can add these charts to a dashb
 
 **Sequence for adding test progress and result charts to a dashboard**  
 
-[![Edit query](_img/gs-chart-test-type.png)](../../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+[![Edit query](_img/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
 
