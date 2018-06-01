@@ -29,7 +29,7 @@ Teams who are responsible for testing software can use the Test Team Progress re
   
 -   **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.  
   
- This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../manual-test/index.md).  
+ This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.md).  
   
 > [!NOTE]
 >  You can access the Test Team Progress report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
@@ -41,7 +41,7 @@ Teams who are responsible for testing software can use the Test Team Progress re
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the reports  
- The Test Team Project report presents data that is based on PivotTable reports that access data stored in the data warehouse. The data is derived from the results that are generated when members of the team define test cases and run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md) and [Track your test results](../../manual-test/getting-started/track-test-status.md).  
+ The Test Team Project report presents data that is based on PivotTable reports that access data stored in the data warehouse. The data is derived from the results that are generated when members of the team define test cases and run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../test/run-manual-tests.md) and [Track your test results](../../test/track-test-status.md).  
   
 ### Test case authoring and automation design status  
  The team can use the Test Case Authoring Status report to help monitor the progress that they make toward defining and designing test cases. This report shows a burndown chart of how many test cases were in the design and ready states for the most recent six weeks.  
@@ -119,9 +119,9 @@ Teams who are responsible for testing software can use the Test Team Progress re
 ##  <a name="RequiredActivities"></a> Required activities for monitoring test team progress  
  For the Test Team Progress reports to be useful and accurate, the team must perform the following activities:  
   
--   [Define test cases and test plans](../../manual-test/getting-started/create-test-cases.md), and assign test cases to the test plans.  
+-   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
   
--   [Run tests](../../manual-test/getting-started/run-manual-tests.md).  
+-   [Run tests](../../test/run-manual-tests.md).  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   
@@ -138,7 +138,7 @@ Teams who are responsible for testing software can use the Test Team Progress re
 |----------------------|-------------------------|  
 |-   Test Case Authoring Status<br />-   Automation Design Status|-   Define test cases, and update their **State** from **Design** to **Ready**.|  
 |-   Automation Design Status|-   [Automate test cases](https://msdn.microsoft.com/en-us/library/dd380741.aspx).|  
-|-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   Define test plans and test suites, and assign test cases to test plans and test suites.<br />-   [Run tests](../../manual-test/getting-started/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
+|-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   Define test plans and test suites, and assign test cases to test plans and test suites.<br />-   [Run tests](../../test/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
 |-   Test Case Authoring Status<br />-   Automation Design Status<br />-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
   
 ##  <a name="Updating"></a> Updating and Customizing the Reports  

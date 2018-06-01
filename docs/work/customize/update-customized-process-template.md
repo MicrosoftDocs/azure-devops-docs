@@ -442,7 +442,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Shared Parameters
 	</td>
 	<td>
-	You use Shared Parameter work items to [run tests with different data](../../manual-test/repeat-test-with-different-data.md).   
+	You use Shared Parameter work items to [run tests with different data](../../test/repeat-test-with-different-data.md).   
 	</td>
 	</tr>
 	<tr>

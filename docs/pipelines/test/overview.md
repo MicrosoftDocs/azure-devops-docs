@@ -73,6 +73,6 @@ your app.
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
 * [Get Test Impact Analysis reports](test-impact-analysis.md)
 
-> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Manual and exploratory testing](../../test/index.md), [Load and performance testing](../../test/load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

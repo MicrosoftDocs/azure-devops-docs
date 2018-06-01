@@ -192,7 +192,7 @@ Shared Parameters
 </ul>
 </li>
 <li>[Update ProcessConfiguration](#update-processconfig): Add a work item color for the Shared Parameter to ProcessConfiguration</li>
-<li>[Verify that you can add a shared parameter set or convert to shared parameters](../../manual-test/repeat-test-with-different-data.md). </li>
+<li>[Verify that you can add a shared parameter set or convert to shared parameters](../../test/repeat-test-with-different-data.md). </li>
 </ol>
 </td>
 </tr>

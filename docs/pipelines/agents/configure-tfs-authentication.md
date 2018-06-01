@@ -1,5 +1,5 @@
 ---
-title: Configure TFS authentication for private agents
+title: Configure TFS authentication for self-hosted agents
 description: Configure authentication for all your private build and release agents to connect to your Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
@@ -17,7 +17,7 @@ monikerRange: '< vsts'
 
 **TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
-When you deploy a private agent, you choose how the agent will authenticate to your Team Foundation Server (TFS). Here we'll show you how to configure TFS to enable your agents to use different authentication methods.
+When you deploy a self-hosted agent, you choose how the agent will authenticate to your Team Foundation Server (TFS). Here we'll show you how to configure TFS to enable your agents to use different authentication methods.
 
 ## Log on to your server
 
@@ -59,7 +59,7 @@ Personal access token (PAT) authentication is available in TFS 2015.3 and newer.
 * [macOS agent](v2-osx.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
 * [Ubuntu 16.04 agent](v2-linux.md)
-* [RedHat agent](v2-linux.md)
+* [Red Hat agent](v2-linux.md)
 
 ::: moniker-end
 
@@ -71,6 +71,6 @@ Personal access token (PAT) authentication is available in TFS 2015.3 and newer.
 * [macOS agent](v2-osx.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
 * [Ubuntu 16.04 agent](v2-linux.md)
-* [RedHat agent](v2-linux.md)
+* [Red Hat agent](v2-linux.md)
 
 ::: moniker-end

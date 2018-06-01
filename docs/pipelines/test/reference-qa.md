@@ -272,7 +272,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 builds. It only works in the web-based interface for VSTS and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
-[Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
+[Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
 
@@ -284,9 +284,9 @@ to cater for parallel requests. If sufficient agents are not available,
 runs can still be triggered but releases will be queued for processing
 until agents are available.
 
-* You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
+* You have sufficient concurrent jobs to enable concurrent releases.
+See [Concurrent jobs in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+or [Concurrent jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.

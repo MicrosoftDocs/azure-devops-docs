@@ -133,7 +133,7 @@ Link category: System-defined</p></td>
 <td><p>Microsoft.VSTS.TestCase.SharedParameterReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
-<td>Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../../manual-test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.   
+<td>Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../../test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.   
 </td>
 </tr>
 
@@ -170,7 +170,7 @@ Link category: Process-defined</p></td>
 <td><p>Microsoft.VSTS.TestCase.SharedStepReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
-<td>Use to link test cases with shared steps. You [share steps between test cases](../../../manual-test/mtm/share-steps-between-test-cases.md) to avoid having to create multiple entries of the same sequence of steps. </td>
+<td>Use to link test cases with shared steps. You [share steps between test cases](../../../test/mtm/share-steps-between-test-cases.md) to avoid having to create multiple entries of the same sequence of steps. </td>
 </tr>
 
 </tbody>

@@ -25,9 +25,9 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 * While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-* You will build the sample app for Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use a hosted agent for both. If you use TFS, you will need a private agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a private agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
+* You will build the sample app for Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use a Microsoft-hosted agent for both. If you use TFS, you will need a self-hosted agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a self-hosted agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
 
- |Build | [Hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../agents/v2-windows.md) | On-premises [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent |
+ |Build | [Microsoft-hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../agents/v2-windows.md) | On-premises [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
  | Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
  | Xamarin.iOS | Yes | No | Yes (with Xamarin installed) |

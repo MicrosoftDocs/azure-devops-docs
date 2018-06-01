@@ -390,8 +390,8 @@ To delete test artifacts, the following restrictions and operations apply:
 ## Related articles   
 
 To learn more about managing test artifacts, see: 
-- [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)
-- [Control how long to keep test results](../../manual-test/getting-started/how-long-to-keep-test-results.md) 
+- [Create a test plan](../../test/create-a-test-plan.md)
+- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 

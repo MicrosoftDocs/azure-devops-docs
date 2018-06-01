@@ -122,7 +122,7 @@ steps:
   displayName: Greeting from macOS or Linux machine
  ```
 
-Queue the build on any of our hosted agent pools, including **Hosted VS 2017**, **Hosted Linux** or **Hosted macOS**. You'll get different kinds of greetings from each of these typs of agent.
+Queue the build on any of our Microsoft-hosted agent pools, including **Hosted VS 2017**, **Hosted Linux** or **Hosted macOS**. You'll get different kinds of greetings from each of these typs of agent.
 
 ## Look up tasks
 

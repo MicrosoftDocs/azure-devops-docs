@@ -20,7 +20,7 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
   
  ![Bug for CMMI team project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
   
- For more information about how to create bug work items, see [Run manual tests](../../../../manual-test/getting-started/run-manual-tests.md). As bugs are found, follow the process in this topic to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
+ For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this topic to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
   
 ##  <a name="Triage"></a> Triage bugs  
  Triage meetings should be held at set intervals after the development work and testing have started on the project. How often you hold the meetings and how long they should be depends on your situation.  
@@ -40,7 +40,7 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
 ##  <a name="Fix"></a> Fix bugs  
  After a bug has passed triage and has been prioritized, it should be assigned to a developer for additional investigation.  
   
- The bug work item has a tab for repro steps, which should provide what you need to reproduce the bug. However, you may also be able to use IntelliTrace help you reproduce difficult bugs. For more information about IntelliTrace, see [Tracking test results](../../../../manual-test/getting-started/track-test-status.md).  
+ The bug work item has a tab for repro steps, which should provide what you need to reproduce the bug. However, you may also be able to use IntelliTrace help you reproduce difficult bugs. For more information about IntelliTrace, see [Tracking test results](../../../../test/track-test-status.md).  
   
  After the developer decides on a course of action, they should note their decisions in the bug work item.  
   

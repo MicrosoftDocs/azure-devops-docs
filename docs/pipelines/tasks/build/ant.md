@@ -77,7 +77,7 @@ The build agent must have the following capability:
 <tr>
 <td>Code Coverage Tool</td>
 <td><p>Select the code coverage tool you want to use.</p>
-<p>If you are using the [hosted agents](../../agents/hosted.md), then the tools are set up for you. If you are using on-premises [Windows agent](../../agents/v2-windows.md), then if you select:</p>
+<p>If you are using the [Microsoft-hosted agents](../../agents/hosted.md), then the tools are set up for you. If you are using on-premises [Windows agent](../../agents/v2-windows.md), then if you select:</p>
 <ul>
 <li>JaCoCo, make sure jacocoant.jar is available in lib folder of Ant installation. See [JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/ant.html).</li>
 <li>Cobertura, set up an environment variable COBERTURA_HOME pointing to the Cobertura .jar files location. See [Cobertura](https://github.com/cobertura/cobertura/wiki/Ant-Task-Reference).</li>

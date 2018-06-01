@@ -222,7 +222,7 @@ a simple load test to validate the deployment.
    >For more details about release definitions, see
    [Release Management in VSTS](../../pipelines/release/index.md).
    For more details about load tests and the results, see 
-   [Run URL-based load tests with VSTS](../../load-test/get-started-simple-cloud-load-test.md).
+   [Run URL-based load tests with VSTS](../../test/load-test/get-started-simple-cloud-load-test.md).
 
 <a name="test-failure"></a>
 ## Explore behavior when a test fails

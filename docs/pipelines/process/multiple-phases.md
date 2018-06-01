@@ -19,7 +19,7 @@ You can add multiple [phases](phases.md) to a definition. By using different pha
 ::: moniker range=">=tfs-2018"
 
 * Partition your process into sections targeting different agent queues
-* Partition your process into sections targeting different sets of private agents using different demands
+* Partition your process into sections targeting different sets of self-hosted agents using different demands
 * Partition your process into sections that run on agents and those that run without an agent
 * Publish build artifacts in one phase and consume those in subsequent phases
 * Pause the deployment in the middle using a manual intervention task
@@ -32,7 +32,7 @@ You can add multiple [phases](phases.md) to a definition. By using different pha
 ::: moniker range="tfs-2017"
 
 * Partition your process into sections targeting different agent queues
-* Partition your process into sections targeting different sets of private agents using different demands
+* Partition your process into sections targeting different sets of self-hosted agents using different demands
 * Partition your process into sections that run on agents and those that run without an agent
 * Pause the deployment in the middle using a manual intervention task
 

@@ -26,7 +26,7 @@ You can customize three of the features that are supported in Microsoft Test Man
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
 
 
-Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
+Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
   
  **Requirements**  
   
